@@ -19,8 +19,10 @@ export class Roller2D20 {
     }
 
     parseRoll(roll, rerollIndexes) {
+        let i = 0; // use to track reroll index
         roll.dice.forEach(d => {
             d.results.forEach(r => {
+                console.log(r);
                 let diceSuccess = 0;
                 let diceComplication = 0;
                 if (r.result <= this.successTreshold) {
@@ -37,9 +39,8 @@ export class Roller2D20 {
                     this.dicesRolled.push({ success: diceSuccess, reroll: false, result: r.result, complication: diceComplication });
                 }
                 else {
-                    for (let i = 0; i < rerollIndexes.length; i++) {
-                        this.dicesRolled[rerollIndexes[i]] = { success: diceSuccess, reroll: true, result: r.result, complication: diceComplication };
-                    }
+                    this.dicesRolled[rerollIndexes[i]] = { success: diceSuccess, reroll: true, result: r.result, complication: diceComplication };
+                    i++;
                 }
 
             })
@@ -48,6 +49,7 @@ export class Roller2D20 {
         console.warn(`Rolling ${roll.formula} with scsTr=${this.successTreshold} and crit=${this.critTreshold} getting SUCCESS=${this.successes}`)
         console.log(this.dicesRolled);
         roll.toMessage();
+        this.sendToChat(roll);
     }
 
     async reroll20({ indexes = [0, 2] }) {
@@ -67,6 +69,27 @@ export class Roller2D20 {
         this.dicesRolled.forEach(d => {
             this.successes += d.success;
         });
+    }
+
+    async sendToChat(_roll) {
+        let rollData = {
+            successes: this.successes,
+            results: this.dicesRolled
+        }
+        const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.html", rollData);
+        let chatData = {
+            user: game.user.id,
+            rollMode: game.settings.get("core", "rollMode"),
+            content: html,
+            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+            roll: _roll,
+        };
+        if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
+            chatData.whisper = ChatMessage.getWhisperRecipients("GM");
+        } else if (chatData.rollMode === "selfroll") {
+            chatData.whisper = [game.user];
+        }
+        await ChatMessage.create(chatData);
     }
 
 }
