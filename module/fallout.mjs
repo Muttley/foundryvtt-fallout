@@ -7,6 +7,8 @@ import { FalloutItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { FALLOUT } from "./helpers/config.mjs";
+//Import Roll2D20
+import { Roller2D20 } from "./roller/fo2d20-roller.mjs"
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -19,11 +21,14 @@ Hooks.once('init', async function () {
   game.fallout = {
     FalloutActor,
     FalloutItem,
-    rollItemMacro
+    rollItemMacro,
+    Roller2D20
   };
 
   // Add custom constants for configuration.
   CONFIG.FALLOUT = FALLOUT;
+
+  CONFIG.roller = new Roller2D20();
 
   /**
    * Set an initiative formula for the system

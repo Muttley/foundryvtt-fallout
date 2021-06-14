@@ -31,7 +31,7 @@ export class FalloutActorSheet extends ActorSheet {
     // sheets are the actor object, the data object, whether or not it's
     // editable, the items array, and the effects array.
     const context = super.getData();
-
+    console.warn(context);
     // Use a safe clone of the actor data for further operations.
     const actorData = context.actor.data;
 
