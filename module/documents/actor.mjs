@@ -2,7 +2,7 @@
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
  */
-export class MySystemActor extends Actor {
+export class FalloutActor extends Actor {
 
   /** @override */
   prepareData() {

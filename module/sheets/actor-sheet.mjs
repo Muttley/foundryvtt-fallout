@@ -1,10 +1,10 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../helpers/effects.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class MySystemActorSheet extends ActorSheet {
+export class FalloutActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
@@ -120,7 +120,7 @@ export class MySystemActorSheet extends ActorSheet {
     context.gear = gear;
     context.features = features;
     context.spells = spells;
-   }
+  }
 
   /* -------------------------------------------- */
 
@@ -191,7 +191,7 @@ export class MySystemActorSheet extends ActorSheet {
     delete itemData.data["type"];
 
     // Finally, create the item!
-    return await Item.create(itemData, {parent: this.actor});
+    return await Item.create(itemData, { parent: this.actor });
   }
 
   /**

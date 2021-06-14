@@ -2,7 +2,7 @@
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
  */
-export class MySystemItemSheet extends ItemSheet {
+export class FalloutItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
