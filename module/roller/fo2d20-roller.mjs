@@ -42,7 +42,6 @@ export class Roller2D20 {
                     this.dicesRolled[rerollIndexes[i]] = { success: diceSuccess, reroll: true, result: r.result, complication: diceComplication };
                     i++;
                 }
-
             })
         });
         this.countSuccesses();

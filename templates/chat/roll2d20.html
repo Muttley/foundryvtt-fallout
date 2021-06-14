@@ -4,8 +4,8 @@
         <h4>Successes: {{successes}}</h4>
 
         <div class="dices-result">
-            {{#each results as |result|}}
-            <span>{{result.result}}</span>
+            {{#each results as |dice|}}
+            <span {{#if reroll}}style="color:red" {{/if}}>{{dice.result}}</span>
             {{/each}}
         </div>
     </div>
