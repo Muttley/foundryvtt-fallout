@@ -1,0 +1,22 @@
+{
+  "FALLOUT.AbilityStr": "Strength",
+  "FALLOUT.AbilityCon": "Constitution",
+  "FALLOUT.AbilityDex": "Dexterity",
+  "FALLOUT.AbilityInt": "Intelligence",
+  "FALLOUT.AbilityWis": "Wisdom",
+  "FALLOUT.AbilityCha": "Charisma",
+
+  "FALLOUT.AbilityStrAbbr": "str",
+  "FALLOUT.AbilityConAbbr": "con",
+  "FALLOUT.AbilityDexAbbr": "dex",
+  "FALLOUT.AbilityIntAbbr": "int",
+  "FALLOUT.AbilityWisAbbr": "wis",
+  "FALLOUT.AbilityChaAbbr": "cha",
+
+  "FALLOUT.EffectCreate": "Create Effect",
+  "FALLOUT.EffectToggle": "Toggle Effect",
+  "FALLOUT.EffectEdit": "Edit Effect",
+  "FALLOUT.EffectDelete": "Delete Effect",
+
+  "FALLOUT.Add": "Add"
+}
