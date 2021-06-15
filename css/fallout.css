@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 /* Global styles */
 .window-app {
   font-family: "Roboto", sans-serif;
@@ -20,6 +22,8 @@
 
 .fallout-chat-message .content h2 {
   border: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
 }
 
 .fallout-chat-message .content .dices-result {
@@ -29,6 +33,7 @@
 
 .fallout-chat-message .content .success-plaq {
   margin: 0 20px 0 0;
+  font-family: "Lobster", cursive;
   padding: 10px;
   font-size: 16px;
   background-image: url(../assets/chat/green-placq.webp);
@@ -38,6 +43,7 @@
 
 .fallout-chat-message .content .complication-plaq {
   margin: 2px 0 0 10px;
+  font-family: "Lobster", cursive;
   padding: 14px 10px 10px 10px;
   font-size: 12px;
   background-image: url(../assets/chat/red-placq.webp);
