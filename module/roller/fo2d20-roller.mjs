@@ -1,87 +1,113 @@
 export class Roller2D20 {
-
     dicesRolled = [];
     successTreshold = 0;
     critTreshold = 0;
     complicationTreshold = 20;
     successes = 0;
 
-    async roll20({ dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20 } = {}) {
-        this.dicesRolled = [];
-        this.successes = 0;
-        this.successTreshold = attribute + skill;
-        this.critTreshold = tag ? skill : 1;
-        this.complicationTreshold = complication;
+    static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20 } = {}) {
+        let dicesRolled = [];
+        let successTreshold = attribute + skill;
+        let critTreshold = tag ? skill : 1;
+        let complicationTreshold = complication;
         let formula = `${dicenum}d20`;
         let roll = new Roll(formula);
         await roll.evaluate();
-        this.parseRoll(roll);
+        await Roller2D20.parseD20Roll({
+            rollname: rollname,
+            roll: roll,
+            successTreshold: successTreshold,
+            critTreshold: critTreshold,
+            complicationTreshold: complicationTreshold
+        });
     }
 
-    parseRoll(roll, rerollIndexes) {
-        let i = 0; // use to track reroll index
+    static async parseD20Roll({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] }) {
+        let i = 0;
         roll.dice.forEach(d => {
             d.results.forEach(r => {
-                console.log(r);
                 let diceSuccess = 0;
                 let diceComplication = 0;
-                if (r.result <= this.successTreshold) {
+                if (r.result <= successTreshold) {
                     diceSuccess++;
                 }
-                if (r.result <= this.critTreshold) {
+                if (r.result <= critTreshold) {
                     diceSuccess++;
                 }
-                if (r.result >= this.complicationTreshold) {
+                if (r.result >= complicationTreshold) {
                     diceComplication = 1;
                 }
                 // if there are no rollIndexes sent then it is a new roll. Otherwise it's a re-roll and we should replace dices at given indexes
-                if (!rerollIndexes) {
-                    this.dicesRolled.push({ success: diceSuccess, reroll: false, result: r.result, complication: diceComplication });
+                if (!rerollIndexes.length) {
+                    dicesRolled.push({ success: diceSuccess, reroll: false, result: r.result, complication: diceComplication });
                 }
                 else {
-                    this.dicesRolled[rerollIndexes[i]] = { success: diceSuccess, reroll: true, result: r.result, complication: diceComplication };
+                    dicesRolled[rerollIndexes[i]] = { success: diceSuccess, reroll: true, result: r.result, complication: diceComplication };
                     i++;
                 }
             })
         });
-        this.countSuccesses();
-        console.warn(`Rolling ${roll.formula} with scsTr=${this.successTreshold} and crit=${this.critTreshold} getting SUCCESS=${this.successes}`)
-        console.log(this.dicesRolled);
-        roll.toMessage();
-        this.sendToChat(roll);
-    }
-
-    async reroll20({ indexes = [0, 2] }) {
-        //replace dices in dicesRolled
-        if (!indexes.length) {
-            ui.notifications.notify('Nothing to Reroll');
-        }
-        let numOfDice = indexes.length;
-        let formula = `${numOfDice}d20`;
-        let roll = new Roll(formula);
-        await roll.evaluate();
-        this.parseRoll(roll, indexes);
-    }
-
-    countSuccesses() {
-        this.successes = 0;
-        this.dicesRolled.forEach(d => {
-            this.successes += d.success;
+        //let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
+        //console.warn(successesNum);
+        await Roller2D20.sendToChat({
+            rollname: rollname,
+            roll: roll,
+            successTreshold: successTreshold,
+            critTreshold: critTreshold,
+            complicationTreshold: complicationTreshold,
+            dicesRolled: dicesRolled,
+            rerollIndexes: rerollIndexes
         });
     }
 
-    async sendToChat(_roll) {
+    static async rerollD20({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] } = {}) {
+        if (!rerollIndexes.length) {
+            ui.notifications.notify('Select Dice you want to Reroll');
+            return;
+        }
+        let numOfDice = rerollIndexes.length;
+        let formula = `${numOfDice}d20`;
+        let _roll = new Roll(formula);
+        await _roll.evaluate();
+        await Roller2D20.parseD20Roll({
+            rollname: `${rollname} re-roll`,
+            roll: _roll,
+            successTreshold: successTreshold,
+            critTreshold: critTreshold,
+            complicationTreshold: complicationTreshold,
+            dicesRolled: dicesRolled,
+            rerollIndexes: rerollIndexes
+        });
+
+    }
+
+    static async sendToChat({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] } = {}) {
+        let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
+        let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
         let rollData = {
-            successes: this.successes,
-            results: this.dicesRolled
+            rollname: rollname,
+            successes: successesNum,
+            complications: complicationsNum,
+            results: dicesRolled,
+            successTreshold: successTreshold
         }
         const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.html", rollData);
+        let falloutRoll = {}
+        falloutRoll.rollname = rollname;
+        falloutRoll.dicesRolled = dicesRolled;
+        falloutRoll.successTreshold = successTreshold;
+        falloutRoll.critTreshold = critTreshold;
+        falloutRoll.complicationTreshold = complicationTreshold;
+        falloutRoll.rerollIndexes = rerollIndexes;
+
+
         let chatData = {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
             content: html,
+            flags: { falloutroll: falloutRoll },
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-            roll: _roll,
+            roll: roll,
         };
         if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
             chatData.whisper = ChatMessage.getWhisperRecipients("GM");
@@ -91,4 +117,57 @@ export class Roller2D20 {
         await ChatMessage.create(chatData);
     }
 
+    static getNumOfSuccesses(results) {
+        let s = 0;
+        results.forEach(d => {
+            s += d.success;
+        });
+        return s;
+    }
+
+    static getNumOfComplications(results) {
+        let r = 0;
+        results.forEach(d => {
+            r += d.complication;
+        });
+        return r;
+    }
+
 }
+
+Hooks.on('renderChatMessage', (message, html, data) => {
+    let rrlBtn = html.find('.reroll-button');
+    if (rrlBtn.length > 0) {
+        rrlBtn[0].setAttribute('data-messageId', message._id);
+        rrlBtn.click((el) => {
+            let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
+            let rerollIndex = [];
+            for (let d of selectedDiceForReroll) {
+                rerollIndex.push($(d).data('index'));
+            }
+            if (!rerollIndex.length) {
+                ui.notifications.notify('Select Dice you want to Reroll');
+            }
+            else {
+                let falloutRoll = message.data.flags.falloutroll;
+                Roller2D20.rerollD20({
+                    rollname: falloutRoll.rollname,
+                    rerollIndexes: rerollIndex,
+                    successTreshold: falloutRoll.successTreshold,
+                    critTreshold: falloutRoll.critTreshold,
+                    complicationTreshold: falloutRoll.complicationTreshold,
+                    dicesRolled: falloutRoll.dicesRolled
+                });
+            }
+        })
+    }
+    html.find('.dice-icon').click((el) => {
+        if ($(el.currentTarget).hasClass('reroll'))
+            return;
+        if ($(el.currentTarget).hasClass('dice-selected')) {
+            $(el.currentTarget).removeClass('dice-selected');
+        } else {
+            $(el.currentTarget).addClass('dice-selected')
+        }
+    })
+})

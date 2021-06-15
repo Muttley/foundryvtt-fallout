@@ -10,3 +10,81 @@
     cursor: pointer;
   }
 }
+
+.chat-message{
+  background-image: url(../assets/chat/rec-paper.webp);
+}
+
+.fallout-chat-message{
+  .content{
+    // background-color: rgb(255, 255, 255);
+    // background-image: url(../assets/chat/rec-paper.webp);
+    // background-size:cover;
+    // background-repeat: no-repeat;
+    //border: 1px solid;
+    padding: 5px;
+    h2{
+      border: none;
+    }
+    .dices-result{
+      margin: 5px 0 0 0;
+      height:32px;      
+    }
+    .success-plaq{
+      margin: 0 20px 0 0;
+      padding: 10px;
+      font-size: 16px;
+      background-image: url(../assets/chat/green-placq.webp);
+      background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .complication-plaq{
+      margin: 2px 0 0 10px;
+      padding: 14px 10px 10px 10px;
+      font-size: 12px;
+      background-image: url(../assets/chat/red-placq.webp);
+      background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .dice-icon{
+      cursor: pointer;
+      position: relative;
+      width: 24px;
+      line-height: 24px;
+      float: left;
+      margin-right: 1px;
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-align: center;
+      //-webkit-text-stroke: 1px rgb(255, 255, 255);
+      background-image: url(../assets/chat/d20-white.svg);
+      &.complication{
+        //color: $f-red;
+        background-image: url(../assets/chat/d20-complication.svg);
+        //filter: hue-rotate(30deg);
+      }
+      &.success{
+        //color: $f-green;
+        background-image: url(../assets/chat/d20-success.svg);
+        //filter: hue-rotate(90deg);
+      }
+      &.crit{
+        //color: $f-blue;
+        background-image: url(../assets/chat/d20-crit.svg);
+        //filter: hue-rotate(180deg);
+      }
+      &.reroll{
+        //color: #1d1d1d;
+        //filter: hue-rotate(0deg);
+      }
+      &.dice-selected{
+        font-size: 12px;
+        background-image: url(../assets/chat/d20-grey.svg);
+      }
+    }
+    
+  }  
+}

@@ -1,12 +1,15 @@
-<div class="fallout chat-roll2d20">
-    <div class="border">
-
-        <h4>Successes: {{successes}}</h4>
-
+<div class="fallout-chat-message">
+    <div class="content">
+        <h2>{{rollname}}</h2>
+        <p class="success-plaq">Successes: {{successes}}</p>
+        {{#ifCond complications '>' 0}}
+        <p class="complication-plaq">Complications: {{complications}}</p>
+        {{/ifCond}}
         <div class="dices-result">
             {{#each results as |dice|}}
-            <span {{#if reroll}}style="color:red" {{/if}}>{{dice.result}}</span>
+            <span class="dice-icon{{#if reroll}} reroll{{/if}}{{#ifCond complication '==' 1}} complication{{/ifCond}}{{#ifCond success '==' 1}} success{{/ifCond}}{{#ifCond success '==' 2}} crit{{/ifCond}}" data-index="{{@index}}">{{dice.result}}</span>
             {{/each}}
         </div>
+        <button class="reroll-button">re-roll</button>
     </div>
 </div>

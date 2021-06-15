@@ -10,6 +10,74 @@
   cursor: pointer;
 }
 
+.chat-message {
+  background-image: url(../assets/chat/rec-paper.webp);
+}
+
+.fallout-chat-message .content {
+  padding: 5px;
+}
+
+.fallout-chat-message .content h2 {
+  border: none;
+}
+
+.fallout-chat-message .content .dices-result {
+  margin: 5px 0 0 0;
+  height: 32px;
+}
+
+.fallout-chat-message .content .success-plaq {
+  margin: 0 20px 0 0;
+  padding: 10px;
+  font-size: 16px;
+  background-image: url(../assets/chat/green-placq.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fallout-chat-message .content .complication-plaq {
+  margin: 2px 0 0 10px;
+  padding: 14px 10px 10px 10px;
+  font-size: 12px;
+  background-image: url(../assets/chat/red-placq.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fallout-chat-message .content .dice-icon {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  line-height: 24px;
+  float: left;
+  margin-right: 1px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(../assets/chat/d20-white.svg);
+}
+
+.fallout-chat-message .content .dice-icon.complication {
+  background-image: url(../assets/chat/d20-complication.svg);
+}
+
+.fallout-chat-message .content .dice-icon.success {
+  background-image: url(../assets/chat/d20-success.svg);
+}
+
+.fallout-chat-message .content .dice-icon.crit {
+  background-image: url(../assets/chat/d20-crit.svg);
+}
+
+.fallout-chat-message .content .dice-icon.dice-selected {
+  font-size: 12px;
+  background-image: url(../assets/chat/d20-grey.svg);
+}
+
 .grid,
 .grid-2col {
   display: grid;
