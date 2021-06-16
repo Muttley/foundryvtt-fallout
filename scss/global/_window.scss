@@ -92,3 +92,60 @@
     
   }  
 }
+
+.fallout-dialog{
+  .resource{
+    margin: 0 2px 5px;
+    padding: 0 5px 0 0;
+    background-color: $f-blue;
+    &.tile{
+      background-color: $f-tile;
+    }
+    &.green{
+      background-color: $f-green;
+    }
+    &.red{
+      background-color: $f-red;
+    }
+    .title-label{
+      padding: 5px;      
+      font-family: $font-lobster;      
+      color: white;      
+    }
+    input[type=number]{
+      text-align: center;
+      background-color: beige;
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 5px 20px;
+    margin: 0 2px 5px;
+    background-color: $f-blue-grey-l;
+    li{
+      text-decoration: none;
+      text-align: center;
+      .dice-icon{
+        cursor: pointer;
+        //position: relative;
+        width: 32px;
+        line-height: 32px;
+        //float: none;
+        display: inline-block;
+        margin-right: 1px;
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-align: center;
+        //-webkit-text-stroke: 1px rgb(255, 255, 255);
+        background-image: url(../assets/chat/d20-white.svg);
+        &.marked{
+          color: white;
+          background-image: url(../assets/chat/d20-blue.svg);
+        }
+      }
+    }
+  }  
+}

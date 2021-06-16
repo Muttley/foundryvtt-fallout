@@ -7,9 +7,10 @@ export class Roller2D20 {
 
     static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20 } = {}) {
         let dicesRolled = [];
-        let successTreshold = attribute + skill;
-        let critTreshold = tag ? skill : 1;
-        let complicationTreshold = complication;
+        let successTreshold = parseInt(attribute) + parseInt(skill);
+        console.log(`A:${attribute} + S:${skill} = ${successTreshold}`);
+        let critTreshold = tag ? parseInt(skill) : 1;
+        let complicationTreshold = parseInt(complication);
         let formula = `${dicenum}d20`;
         let roll = new Roll(formula);
         await roll.evaluate();
@@ -135,39 +136,3 @@ export class Roller2D20 {
 
 }
 
-Hooks.on('renderChatMessage', (message, html, data) => {
-    let rrlBtn = html.find('.reroll-button');
-    if (rrlBtn.length > 0) {
-        rrlBtn[0].setAttribute('data-messageId', message._id);
-        rrlBtn.click((el) => {
-            let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
-            let rerollIndex = [];
-            for (let d of selectedDiceForReroll) {
-                rerollIndex.push($(d).data('index'));
-            }
-            if (!rerollIndex.length) {
-                ui.notifications.notify('Select Dice you want to Reroll');
-            }
-            else {
-                let falloutRoll = message.data.flags.falloutroll;
-                Roller2D20.rerollD20({
-                    rollname: falloutRoll.rollname,
-                    rerollIndexes: rerollIndex,
-                    successTreshold: falloutRoll.successTreshold,
-                    critTreshold: falloutRoll.critTreshold,
-                    complicationTreshold: falloutRoll.complicationTreshold,
-                    dicesRolled: falloutRoll.dicesRolled
-                });
-            }
-        })
-    }
-    html.find('.dice-icon').click((el) => {
-        if ($(el.currentTarget).hasClass('reroll'))
-            return;
-        if ($(el.currentTarget).hasClass('dice-selected')) {
-            $(el.currentTarget).removeClass('dice-selected');
-        } else {
-            $(el.currentTarget).addClass('dice-selected')
-        }
-    })
-})

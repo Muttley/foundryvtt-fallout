@@ -9,6 +9,7 @@ import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { FALLOUT } from "./helpers/config.mjs";
 //Import Roll2D20
 import { Roller2D20 } from "./roller/fo2d20-roller.mjs"
+import { Dialog2d20 } from './roller/dialog2d20.js'
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -22,14 +23,12 @@ Hooks.once('init', async function () {
     FalloutActor,
     FalloutItem,
     rollItemMacro,
-    Roller2D20
+    Roller2D20,
+    Dialog2d20
   };
 
   // Add custom constants for configuration.
   CONFIG.FALLOUT = FALLOUT;
-  CONFIG.Roller2D20 = Roller2D20;
-
-  CONFIG.roller = new Roller2D20();
 
   /**
    * Set an initiative formula for the system
@@ -108,6 +107,42 @@ Hooks.once("ready", async function () {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
 });
+Hooks.on('renderChatMessage', (message, html, data) => {
+  let rrlBtn = html.find('.reroll-button');
+  if (rrlBtn.length > 0) {
+    rrlBtn[0].setAttribute('data-messageId', message._id);
+    rrlBtn.click((el) => {
+      let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
+      let rerollIndex = [];
+      for (let d of selectedDiceForReroll) {
+        rerollIndex.push($(d).data('index'));
+      }
+      if (!rerollIndex.length) {
+        ui.notifications.notify('Select Dice you want to Reroll');
+      }
+      else {
+        let falloutRoll = message.data.flags.falloutroll;
+        Roller2D20.rerollD20({
+          rollname: falloutRoll.rollname,
+          rerollIndexes: rerollIndex,
+          successTreshold: falloutRoll.successTreshold,
+          critTreshold: falloutRoll.critTreshold,
+          complicationTreshold: falloutRoll.complicationTreshold,
+          dicesRolled: falloutRoll.dicesRolled
+        });
+      }
+    })
+  }
+  html.find('.dice-icon').click((el) => {
+    if ($(el.currentTarget).hasClass('reroll'))
+      return;
+    if ($(el.currentTarget).hasClass('dice-selected')) {
+      $(el.currentTarget).removeClass('dice-selected');
+    } else {
+      $(el.currentTarget).addClass('dice-selected')
+    }
+  })
+})
 
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */

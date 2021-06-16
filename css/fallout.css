@@ -84,6 +84,67 @@
   background-image: url(../assets/chat/d20-grey.svg);
 }
 
+.fallout-dialog .resource {
+  margin: 0 2px 5px;
+  padding: 0 5px 0 0;
+  background-color: #729eb2;
+}
+
+.fallout-dialog .resource.tile {
+  background-color: #6ea898;
+}
+
+.fallout-dialog .resource.green {
+  background-color: #b4bb5b;
+}
+
+.fallout-dialog .resource.red {
+  background-color: #e37e6c;
+}
+
+.fallout-dialog .resource .title-label {
+  padding: 5px;
+  font-family: "Lobster", cursive;
+  color: white;
+}
+
+.fallout-dialog .resource input[type=number] {
+  text-align: center;
+  background-color: beige;
+}
+
+.fallout-dialog ul {
+  list-style: none;
+  padding: 5px 20px;
+  margin: 0 2px 5px;
+  background-color: #c8d0d4;
+}
+
+.fallout-dialog ul li {
+  text-decoration: none;
+  text-align: center;
+}
+
+.fallout-dialog ul li .dice-icon {
+  cursor: pointer;
+  width: 32px;
+  line-height: 32px;
+  display: inline-block;
+  margin-right: 1px;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(../assets/chat/d20-white.svg);
+}
+
+.fallout-dialog ul li .dice-icon.marked {
+  color: white;
+  background-image: url(../assets/chat/d20-blue.svg);
+}
+
 .grid,
 .grid-2col {
   display: grid;

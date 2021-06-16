@@ -1,0 +1,28 @@
+<div class="fallout-dialog">
+    <div class="flexrow ">
+        <div class="resource flexrow flex-group-left">
+            <p class="title-label">Attribute</p>
+            <input type="number" name="attribute" value="{{attribute}}">
+        </div>
+        <div class="resource flexrow flex-group-left tile">
+            <p class="title-label">Skill</p>
+            <input type="number" name="skill" value="{{skill}}">
+        </div>
+        <div class="resource flexrow flex-group-left green">
+            <p class="title-label">Tag</p>
+            <input type="checkbox" name="tag" {{#ifCond tag '==' true}}checked{{/ifCond}}>
+        </div>
+        <div class="resource flexrow flex-group-left red">
+            <p class="title-label">Compl.</p>
+            <input type="number" name="complication" value="{{complication}}">
+        </div>
+    </div>
+
+    <ul class="flexrow">
+        <li><a class="dice-icon" data-index="1">1</a></li>
+        <li><a class="dice-icon" data-index="2">2</a></li>
+        <li><a class="dice-icon" data-index="3">3</a></li>
+        <li><a class="dice-icon" data-index="4">4</a></li>
+        <li><a class="dice-icon" data-index="5">5</a></li>
+    </ul>
+</div>
