@@ -108,6 +108,7 @@ Hooks.once("ready", async function () {
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
 });
 Hooks.on('renderChatMessage', (message, html, data) => {
+  console.warn(message.data.flags);
   let rrlBtn = html.find('.reroll-button');
   if (rrlBtn.length > 0) {
     rrlBtn[0].setAttribute('data-messageId', message._id);
@@ -122,14 +123,25 @@ Hooks.on('renderChatMessage', (message, html, data) => {
       }
       else {
         let falloutRoll = message.data.flags.falloutroll;
-        Roller2D20.rerollD20({
-          rollname: falloutRoll.rollname,
-          rerollIndexes: rerollIndex,
-          successTreshold: falloutRoll.successTreshold,
-          critTreshold: falloutRoll.critTreshold,
-          complicationTreshold: falloutRoll.complicationTreshold,
-          dicesRolled: falloutRoll.dicesRolled
-        });
+        if (falloutRoll.diceFace == "d20") {
+          Roller2D20.rerollD20({
+            rollname: falloutRoll.rollname,
+            rerollIndexes: rerollIndex,
+            successTreshold: falloutRoll.successTreshold,
+            critTreshold: falloutRoll.critTreshold,
+            complicationTreshold: falloutRoll.complicationTreshold,
+            dicesRolled: falloutRoll.dicesRolled
+          });
+        } else if (falloutRoll.diceFace == "d6") {
+          Roller2D20.rerollD6({
+            rollname: falloutRoll.rollname,
+            rerollIndexes: rerollIndex,
+            dicesRolled: falloutRoll.dicesRolled
+          });
+        } else {
+          ui.notifications.notify('No dice face reckognized');
+        }
+
       }
     })
   }

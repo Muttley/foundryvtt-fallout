@@ -1,0 +1,12 @@
+<div class="fallout-chat-message">
+    <div class="content">
+        <h2>{{rollname}}</h2>
+        <p class="damage-plaq">Damage: {{damage}} | Effects: {{effects}}</p>
+        <div class="dices-result">
+            {{#each results as |dice|}}
+            <span class="dice-icon d6 face-{{dice.face}}{{#if reroll}} reroll{{/if}}{{#ifCond effect '==' 1}} effect{{/ifCond}}" data-index="{{@index}}">&nbsp;</span>
+            {{/each}}
+        </div>
+        <button class="reroll-button">re-roll</button>
+    </div>
+</div>

@@ -8,7 +8,7 @@ export class Roller2D20 {
     static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20 } = {}) {
         let dicesRolled = [];
         let successTreshold = parseInt(attribute) + parseInt(skill);
-        console.log(`A:${attribute} + S:${skill} = ${successTreshold}`);
+        //console.log(`A:${attribute} + S:${skill} = ${successTreshold}`);
         let critTreshold = tag ? parseInt(skill) : 1;
         let complicationTreshold = parseInt(complication);
         let formula = `${dicenum}d20`;
@@ -48,8 +48,6 @@ export class Roller2D20 {
                 }
             })
         });
-        //let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
-        //console.warn(successesNum);
         await Roller2D20.sendToChat({
             rollname: rollname,
             roll: roll,
@@ -79,7 +77,6 @@ export class Roller2D20 {
             dicesRolled: dicesRolled,
             rerollIndexes: rerollIndexes
         });
-
     }
 
     static async sendToChat({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] } = {}) {
@@ -100,8 +97,7 @@ export class Roller2D20 {
         falloutRoll.critTreshold = critTreshold;
         falloutRoll.complicationTreshold = complicationTreshold;
         falloutRoll.rerollIndexes = rerollIndexes;
-
-
+        falloutRoll.diceFace = "d20";
         let chatData = {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
@@ -134,5 +130,97 @@ export class Roller2D20 {
         return r;
     }
 
+    static async rollD6({ rollname = "Roll D6", dicenum = 2 } = {}) {
+        let formula = `${dicenum}d6`;
+        let roll = new Roll(formula);
+        await roll.evaluate();
+        await Roller2D20.parseD6Roll({
+            rollname: rollname,
+            roll: roll
+        });
+    }
+
+    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [] } = {}) {
+        let diceResults = [
+            { result: 1, effect: 0 },
+            { result: 2, effect: 0 },
+            { result: 0, effect: 0 },
+            { result: 0, effect: 0 },
+            { result: 1, effect: 1 },
+            { result: 1, effect: 1 },
+        ];
+        let i = 0;
+        console.warn(roll.dice);
+        roll.dice.forEach(d => {
+            d.results.forEach(r => {
+                let diceResult = diceResults[r.result - 1];
+                diceResult.face = r.result;
+                // if there are no rollIndexes sent then it is a new roll. Otherwise it's a re-roll and we should replace dices at given indexes
+                if (!rerollIndexes.length) {
+                    dicesRolled.push(diceResult);
+                }
+                else {
+                    dicesRolled[rerollIndexes[i]] = diceResult;
+                    i++;
+                }
+            })
+        });
+        await Roller2D20.sendD6ToChat({
+            rollname: rollname,
+            roll: roll,
+            dicesRolled: dicesRolled,
+            rerollIndexes: rerollIndexes
+        });
+    }
+
+    static async rerollD6({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [] } = {}) {
+        if (!rerollIndexes.length) {
+            ui.notifications.notify('Select Dice you want to Reroll');
+            return;
+        }
+        let numOfDice = rerollIndexes.length;
+        let formula = `${numOfDice}d6`;
+        let _roll = new Roll(formula);
+        await _roll.evaluate();
+        await Roller2D20.parseD6Roll({
+            rollname: `${rollname} re-roll`,
+            roll: _roll,
+            dicesRolled: dicesRolled,
+            rerollIndexes: rerollIndexes
+        });
+    }
+
+    static async sendD6ToChat({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [] } = {}) {
+        let damage = dicesRolled.reduce((a, b) => ({ result: a.result + b.result })).result;
+        let effects = dicesRolled.reduce((a, b) => ({ effect: a.effect + b.effect })).effect;
+        let rollData = {
+            rollname: rollname,
+            damage: damage,
+            effects: effects,
+            results: dicesRolled
+        }
+        const html = await renderTemplate("systems/fallout/templates/chat/rollD6.html", rollData);
+        let falloutRoll = {}
+        falloutRoll.rollname = rollname;
+        falloutRoll.dicesRolled = dicesRolled;
+        falloutRoll.damage = damage;
+        falloutRoll.effects = effects;
+        falloutRoll.rerollIndexes = rerollIndexes;
+        falloutRoll.diceFace = "d6";
+        let chatData = {
+            user: game.user.id,
+            rollMode: game.settings.get("core", "rollMode"),
+            content: html,
+            flags: { falloutroll: falloutRoll },
+            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+            roll: roll,
+        };
+        if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
+            chatData.whisper = ChatMessage.getWhisperRecipients("GM");
+        } else if (chatData.rollMode === "selfroll") {
+            chatData.whisper = [game.user];
+        }
+        await ChatMessage.create(chatData);
+    }
 }
 

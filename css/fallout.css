@@ -51,37 +51,84 @@
   background-repeat: no-repeat;
 }
 
+.fallout-chat-message .content .damage-plaq {
+  margin: 0 20px 0 0;
+  font-family: "Lobster", cursive;
+  padding: 10px;
+  font-size: 16px;
+  background-image: url(../assets/chat/yellow-placq.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .fallout-chat-message .content .dice-icon {
   cursor: pointer;
   position: relative;
-  width: 24px;
-  line-height: 24px;
+  width: 28px;
+  line-height: 28px;
   float: left;
   margin-right: 1px;
   background-repeat: no-repeat;
-  background-size: 24px 24px;
+  background-size: 28px 28px;
   font-size: 16px;
   color: black;
   font-weight: bold;
   text-align: center;
+}
+
+.fallout-chat-message .content .dice-icon.d20 {
   background-image: url(../assets/chat/d20-white.svg);
 }
 
-.fallout-chat-message .content .dice-icon.complication {
+.fallout-chat-message .content .dice-icon.d20.complication {
   background-image: url(../assets/chat/d20-complication.svg);
 }
 
-.fallout-chat-message .content .dice-icon.success {
+.fallout-chat-message .content .dice-icon.d20.success {
   background-image: url(../assets/chat/d20-success.svg);
 }
 
-.fallout-chat-message .content .dice-icon.crit {
+.fallout-chat-message .content .dice-icon.d20.crit {
   background-image: url(../assets/chat/d20-crit.svg);
 }
 
+.fallout-chat-message .content .dice-icon.d20.reroll {
+  color: #1d1d1d;
+}
+
+.fallout-chat-message .content .dice-icon.d6 {
+  width: 32px;
+  line-height: 32px;
+  background-size: 32px 32px;
+  margin: 2px;
+}
+
+.fallout-chat-message .content .dice-icon.d6.face-1 {
+  background-image: url(../assets/chat/d1.webp);
+}
+
+.fallout-chat-message .content .dice-icon.d6.face-2 {
+  background-image: url(../assets/chat/d2.webp);
+}
+
+.fallout-chat-message .content .dice-icon.d6.face-3 {
+  background-image: url(../assets/chat/d3.webp);
+}
+
+.fallout-chat-message .content .dice-icon.d6.face-4 {
+  background-image: url(../assets/chat/d4.webp);
+}
+
+.fallout-chat-message .content .dice-icon.d6.face-5 {
+  background-image: url(../assets/chat/d5.webp);
+}
+
+.fallout-chat-message .content .dice-icon.d6.face-6 {
+  background-image: url(../assets/chat/d6.webp);
+}
+
 .fallout-chat-message .content .dice-icon.dice-selected {
-  font-size: 12px;
-  background-image: url(../assets/chat/d20-grey.svg);
+  opacity: 0.45;
 }
 
 .fallout-dialog .resource {

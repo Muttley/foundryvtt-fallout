@@ -40,7 +40,7 @@
       background-image: url(../assets/chat/green-placq.webp);
       background-size:100% 100%;
       background-repeat: no-repeat;
-    }
+    }    
     .complication-plaq{
       margin: 2px 0 0 10px;
       font-family: $font-lobster;
@@ -50,43 +50,73 @@
       background-size:100% 100%;
       background-repeat: no-repeat;
     }
+    .damage-plaq{
+      //color: white;
+      margin: 0 20px 0 0;
+      font-family: $font-lobster;
+      padding: 10px;
+      font-size: 16px;
+      background-image: url(../assets/chat/yellow-placq.webp);
+      background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
     .dice-icon{
       cursor: pointer;
       position: relative;
-      width: 24px;
-      line-height: 24px;
+      width: 28px;
+      line-height: 28px;
       float: left;
       margin-right: 1px;
       background-repeat: no-repeat;
-      background-size: 24px 24px;
+      background-size: 28px 28px;
       font-size: 16px;
       color: rgb(0, 0, 0);
       font-weight: bold;
       text-align: center;
       //-webkit-text-stroke: 1px rgb(255, 255, 255);
-      background-image: url(../assets/chat/d20-white.svg);
-      &.complication{
-        //color: $f-red;
-        background-image: url(../assets/chat/d20-complication.svg);
-        //filter: hue-rotate(30deg);
+      &.d20{
+        background-image: url(../assets/chat/d20-white.svg);
+        &.complication{
+          background-image: url(../assets/chat/d20-complication.svg);
+        }
+        &.success{
+          background-image: url(../assets/chat/d20-success.svg);
+        }
+        &.crit{
+          background-image: url(../assets/chat/d20-crit.svg);
+        }
+        &.reroll{
+          color: #1d1d1d;
+        }        
       }
-      &.success{
-        //color: $f-green;
-        background-image: url(../assets/chat/d20-success.svg);
-        //filter: hue-rotate(90deg);
+
+      &.d6{
+        width: 32px;
+        line-height: 32px;
+        background-size: 32px 32px;
+        margin: 2px;
+        &.face-1{
+          background-image: url(../assets/chat/d1.webp);
+        }
+        &.face-2{
+          background-image: url(../assets/chat/d2.webp);
+        }
+        &.face-3{
+          background-image: url(../assets/chat/d3.webp);
+        }
+        &.face-4{
+          background-image: url(../assets/chat/d4.webp);
+        }
+        &.face-5{
+          background-image: url(../assets/chat/d5.webp);
+        }
+        &.face-6{
+          background-image: url(../assets/chat/d6.webp);
+        }
       }
-      &.crit{
-        //color: $f-blue;
-        background-image: url(../assets/chat/d20-crit.svg);
-        //filter: hue-rotate(180deg);
-      }
-      &.reroll{
-        //color: #1d1d1d;
-        //filter: hue-rotate(0deg);
-      }
-      &.dice-selected{
-        font-size: 12px;
-        background-image: url(../assets/chat/d20-grey.svg);
+
+      &.dice-selected{      
+        opacity: 0.45;
       }
     }
     
