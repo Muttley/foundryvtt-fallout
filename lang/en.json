@@ -1,22 +1,44 @@
 {
   "FALLOUT.AbilityStr": "Strength",
-  "FALLOUT.AbilityCon": "Constitution",
-  "FALLOUT.AbilityDex": "Dexterity",
-  "FALLOUT.AbilityInt": "Intelligence",
-  "FALLOUT.AbilityWis": "Wisdom",
+  "FALLOUT.AbilityPer": "Perception",
+  "FALLOUT.AbilityEnd": "Endurance",
   "FALLOUT.AbilityCha": "Charisma",
+  "FALLOUT.AbilityInt": "Intelligence",
+  "FALLOUT.AbilityAgi": "Agility",
+  "FALLOUT.AbilityLuc": "Luck",
 
   "FALLOUT.AbilityStrAbbr": "str",
-  "FALLOUT.AbilityConAbbr": "con",
-  "FALLOUT.AbilityDexAbbr": "dex",
-  "FALLOUT.AbilityIntAbbr": "int",
-  "FALLOUT.AbilityWisAbbr": "wis",
+  "FALLOUT.AbilityPerAbbr": "per",
+  "FALLOUT.AbilityEndAbbr": "end",
   "FALLOUT.AbilityChaAbbr": "cha",
+  "FALLOUT.AbilityIntAbbr": "int",
+  "FALLOUT.AbilityAgiAbbr": "agi",
+  "FALLOUT.AbilityLucAbbr": "luc",
 
   "FALLOUT.EffectCreate": "Create Effect",
   "FALLOUT.EffectToggle": "Toggle Effect",
   "FALLOUT.EffectEdit": "Edit Effect",
   "FALLOUT.EffectDelete": "Delete Effect",
 
-  "FALLOUT.Add": "Add"
+  "FALLOUT.Add": "Add",
+
+  "FALLOUT.SKILL":{
+    "Athletics":"Athletics",
+    "Barter":"Barter",
+    "Big Guns":"Big Guns",
+    "Energy Weapons":"Energy Weapons",
+    "Explosives":"Explosives",
+    "Lockpick":"Lockpick",
+    "Medicine":"Medicine",
+    "Melee Weapons":"Melee Weapons",
+    "Pilot":"Pilot",
+    "Repair":"Repair",
+    "Science":"Science",
+    "Small Guns":"Small Guns",
+    "Sneak":"Sneak",
+    "Speech":"Speech",
+    "Survival":"Survival",
+    "Throwing":"Throwing",
+    "Unarmed":"Unarmed"
+  }
 }

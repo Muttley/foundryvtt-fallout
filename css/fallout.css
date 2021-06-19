@@ -624,6 +624,17 @@
   text-align: left;
 }
 
+.fallout .items-list .item-skill-value, .fallout .items-list .item-skill-tag {
+  -webkit-box-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+  text-align: center;
+}
+
+.fallout .items-list .item-skill-value input[type=number], .fallout .items-list .item-skill-tag input[type=number] {
+  max-width: 2rem;
+}
+
 .fallout .item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;

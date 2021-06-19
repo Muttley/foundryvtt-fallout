@@ -150,7 +150,6 @@ export class Roller2D20 {
             { result: 1, effect: 1 },
         ];
         let i = 0;
-        console.warn(roll.dice);
         roll.dice.forEach(d => {
             d.results.forEach(r => {
                 let diceResult = diceResults[r.result - 1];

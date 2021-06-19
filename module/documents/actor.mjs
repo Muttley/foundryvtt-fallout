@@ -1,3 +1,5 @@
+import { FalloutItemSheet } from "../sheets/item-sheet.mjs";
+
 /**
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
@@ -44,15 +46,14 @@ export class FalloutActor extends Actor {
    */
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
-
     // Make modifications to data here. For example:
     const data = actorData.data;
 
     // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(data.abilities)) {
-      // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
-    }
+    //for (let [key, ability] of Object.entries(data.attributes)) {
+    // Calculate the modifier using d20 rules.
+    //ability.mod = Math.floor((ability.value - 10) / 2);
+    //}
   }
 
   /**
@@ -84,18 +85,21 @@ export class FalloutActor extends Actor {
    */
   _getCharacterRollData(data) {
     if (this.data.type !== 'character') return;
+    console.warn(data.attributes);
 
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.mod + 4`.
-    if (data.abilities) {
-      for (let [k, v] of Object.entries(data.abilities)) {
+    if (data.attributes) {
+      for (let [k, v] of Object.entries(data.attributes)) {
+        //console.log(k);
+        //console.log(v);
         data[k] = foundry.utils.deepClone(v);
       }
     }
 
     // Add level for easier access, or fall back to 0.
-    if (data.attributes.level) {
-      data.lvl = data.attributes.level.value ?? 0;
+    if (data.level) {
+      data.lvl = data.level.value ?? 0;
     }
   }
 
@@ -106,6 +110,23 @@ export class FalloutActor extends Actor {
     if (this.data.type !== 'npc') return;
 
     // Process additional NPC data here.
+  }
+
+  async _preCreate(data, options, user) {
+    await super._preCreate(data, options, user);
+    //console.warn(CONFIG.FALLOUT.SKILLS);
+    let packSkills = await game.packs.get('fallout.skills').getDocuments();
+    const items = this.items.map(i => i.toObject());
+    packSkills.forEach(s => {
+      items.push(s.toObject());
+    });
+    this.data.update({ items });
+
+
+    //const item = new CONFIG.Item.documentClass({name: 'Foo', type: 'feat'});
+
+    //items.push(item.toObject());
+    //this.data.update({ items });
   }
 
 }

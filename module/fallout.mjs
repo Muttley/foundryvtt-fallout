@@ -35,7 +35,7 @@ Hooks.once('init', async function () {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "1d20 + @abilities.dex.mod",
+    formula: "1d20 + @attributes.dex.mod",
     decimals: 2
   };
 
@@ -70,6 +70,9 @@ Handlebars.registerHelper('concat', function () {
 
 Handlebars.registerHelper('toLowerCase', function (str) {
   return str.toLowerCase();
+});
+Handlebars.registerHelper('toUpperCase', function (str) {
+  return str.toUpperCase();
 });
 
 Handlebars.registerHelper("ifCond", function (v1, operator, v2, options) {
@@ -108,7 +111,6 @@ Hooks.once("ready", async function () {
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
 });
 Hooks.on('renderChatMessage', (message, html, data) => {
-  console.warn(message.data.flags);
   let rrlBtn = html.find('.reroll-button');
   if (rrlBtn.length > 0) {
     rrlBtn[0].setAttribute('data-messageId', message._id);

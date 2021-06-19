@@ -15,7 +15,6 @@ export class Dialog2d20 extends Dialog {
     activateListeners(html) {
         super.activateListeners(html);
         html.ready((e) => {
-            console.warn(`DICE NUMBER ${this.diceNum}`);
             this.markDiceNumber(html, this.diceNum);
         })
         html.on('click', '.dice-icon', (e, i, a) => {
@@ -24,15 +23,10 @@ export class Dialog2d20 extends Dialog {
             this.markDiceNumber(html, this.diceNum);
         });
         html.on('click', '.roll', (event) => {
-            console.log(`DICE NUMBER ${this.diceNum}`);
             let attr = html.find('[name="attribute"]').val();
             let skill = html.find('[name="skill"]').val();
             let complication = html.find('[name="complication"]').val();
             let isTag = html.find('[name="tag"]').is(':checked');
-            console.log(attr);
-            console.log(skill);
-            console.log(complication);
-            console.log(isTag);
             game.fallout.Roller2D20.rollD20({ rollname: "SOME SKILL", dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication })
         });
     }
@@ -40,7 +34,6 @@ export class Dialog2d20 extends Dialog {
     markDiceNumber(html) {
         $(html).find('.dice-icon').removeClass('marked');
         $(html).find(`[data-index="${this.diceNum}"]`).addClass('marked');
-        console.log($(html).find(`[data-index="${this.diceNum}"]`));
     }
 
     static async createDialog({ diceNum = 2, attribute = 0, skill = 0, tag = false, complication = 20 } = {}) {

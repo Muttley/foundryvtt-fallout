@@ -10,20 +10,24 @@ FALLOUT.foobar = {
  * The set of Ability Scores used within the sytem.
  * @type {Object}
  */
- FALLOUT.abilities = {
+FALLOUT.attributes = {
   "str": "FALLOUT.AbilityStr",
-  "dex": "FALLOUT.AbilityDex",
-  "con": "FALLOUT.AbilityCon",
+  "per": "FALLOUT.AbilityPer",
+  "end": "FALLOUT.AbilityEnd",
+  "cha": "FALLOUT.AbilityCha",
   "int": "FALLOUT.AbilityInt",
-  "wis": "FALLOUT.AbilityWis",
-  "cha": "FALLOUT.AbilityCha"
+  "agi": "FALLOUT.AbilityAgi",
+  "luc": "FALLOUT.AbilityLuc"
 };
 
 FALLOUT.abilityAbbreviations = {
   "str": "FALLOUT.AbilityStrAbbr",
-  "dex": "FALLOUT.AbilityDexAbbr",
-  "con": "FALLOUT.AbilityConAbbr",
+  "per": "FALLOUT.AbilityPerAbbr",
+  "end": "FALLOUT.AbilityEndAbbr",
+  "cha": "FALLOUT.AbilityChaAbbr",
   "int": "FALLOUT.AbilityIntAbbr",
-  "wis": "FALLOUT.AbilityWisAbbr",
-  "cha": "FALLOUT.AbilityChaAbbr"
+  "agi": "FALLOUT.AbilityAgiAbbr",
+  "luc": "FALLOUT.AbilityLucAbbr"
 };
+
+FALLOUT.SKILLS = ["Athletics", "Barter", "Big Guns", "Energy Weapons", "Explosives", "Lockpick", "Medicine", "Melee Weapons", "Pilot", "Repair", "Science", "Small Guns", "Sneak", "Speech", "Survival", "Throwing", "Unarmed"];

@@ -1,0 +1,20 @@
+<ol class="items-list">
+  <li class="item skill flexrow items-header">
+    <div class="item-name">Name</div>
+    <div class="item-skill-tag">Tag</div>
+    <div class="item-skill-value">Rank</div>
+  </li>
+  {{#each skills as |item id|}}
+  <li class="item skill flexrow" data-item-id="{{item._id}}">
+    <div class="item-name">
+      <h4>{{item.name}} [{{toUpperCase item.data.defaultAttribute}}]</h4>
+    </div>
+    <div class="item-skill-tag">
+      <input type="checkbox" name="tag" {{#ifCond item.data.tag '==' true}}checked{{/ifCond}}>
+    </div>
+    <div class="item-skill-value">
+      <input type="number" name="value" value="{{item.data.value}}">
+    </div>
+  </li>
+  {{/each}}
+</ol>

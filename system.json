@@ -9,7 +9,15 @@
   "esmodules": ["module/fallout.mjs"],
   "styles": ["css/fallout.css"],
   "scripts": [],
-  "packs": [],
+  "packs": [
+    {
+      "name": "skills",
+      "label": "Skills",
+      "system": "fallout",
+      "path": "./packs/skills.db",
+      "entity": "Item"
+    }
+  ],
   "languages": [
     {
       "lang": "en",

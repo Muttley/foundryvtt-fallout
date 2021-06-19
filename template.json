@@ -13,34 +13,35 @@
           "min": 0,
           "max": 5
         },
+        "level": {
+          "value": 1
+        },
         "biography": ""
       }
     },
     "character": {
-      "templates": ["base"],
+      "templates": ["base"],      
       "attributes": {
-        "level": {
-          "value": 1
-        }
-      },
-      "abilities": {
         "str": {
-          "value": 10
+          "value": 1
         },
-        "dex": {
-          "value": 10
+        "per": {
+          "value": 1
         },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
+        "end": {
+          "value": 1
         },
         "cha": {
-          "value": 10
+          "value": 1
+        },
+        "int": {
+          "value": 1
+        },
+        "agi": {
+          "value": 1
+        },
+        "luc": {
+          "value": 1
         }
       }
     },
@@ -50,10 +51,10 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "skill", "spell"],
     "templates": {
       "base": {
-        "description": ""
+        "description": ""        
       }
     },
     "item": {
@@ -62,8 +63,12 @@
       "weight": 0,
       "formula": "d20 + @str.mod + ceil(@lvl / 2)"
     },
-    "feature": {
-      "templates": ["base"]
+    "skill": {
+      "templates": ["base"],
+      "value":0,
+      "tag":false,
+      "defaultAttribute":"str",
+      "summary":""
     },
     "spell": {
       "templates": ["base"],

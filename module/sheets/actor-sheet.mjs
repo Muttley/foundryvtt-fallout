@@ -11,9 +11,9 @@ export class FalloutActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["fallout", "sheet", "actor"],
       template: "systems/fallout/templates/actor/actor-sheet.html",
-      width: 600,
-      height: 600,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
+      width: 720,
+      height: 780,
+      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
     });
   }
 
@@ -31,7 +31,6 @@ export class FalloutActorSheet extends ActorSheet {
     // sheets are the actor object, the data object, whether or not it's
     // editable, the items array, and the effects array.
     const context = super.getData();
-    console.warn(context);
     // Use a safe clone of the actor data for further operations.
     const actorData = context.actor.data;
 
@@ -51,7 +50,7 @@ export class FalloutActorSheet extends ActorSheet {
     }
 
     // Add roll data for TinyMCE editors.
-    context.rollData = context.actor.getRollData();
+    //context.rollData = context.actor.getRollData();
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
@@ -68,8 +67,9 @@ export class FalloutActorSheet extends ActorSheet {
    */
   _prepareCharacterData(context) {
     // Handle ability scores.
-    for (let [k, v] of Object.entries(context.data.abilities)) {
-      v.label = game.i18n.localize(CONFIG.FALLOUT.abilities[k]) ?? k;
+    for (let [k, v] of Object.entries(context.data.attributes)) {
+      console.log(k, v);
+      v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
     }
   }
 
@@ -83,7 +83,7 @@ export class FalloutActorSheet extends ActorSheet {
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
-    const features = [];
+    const skills = [];
     const spells = {
       0: [],
       1: [],
@@ -104,9 +104,9 @@ export class FalloutActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
-      // Append to features.
-      else if (i.type === 'feature') {
-        features.push(i);
+      // Append to skills.
+      else if (i.type === 'skill') {
+        skills.push(i);
       }
       // Append to spells.
       else if (i.type === 'spell') {
@@ -118,7 +118,17 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Assign and return
     context.gear = gear;
-    context.features = features;
+
+
+
+    skills.sort(function (a, b) {
+      var nameA = a.name.toUpperCase();
+      var nameB = b.name.toUpperCase();
+      return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
+    });
+    context.skills = skills;
+
+
     context.spells = spells;
   }
 
@@ -153,7 +163,7 @@ export class FalloutActorSheet extends ActorSheet {
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
-    // Rollable abilities.
+    // Rollable attributes.
     html.find('.rollable').click(this._onRoll.bind(this));
 
     // Drag events for macros.
@@ -161,6 +171,7 @@ export class FalloutActorSheet extends ActorSheet {
       let handler = ev => this._onDragStart(ev);
       html.find('li.item').each((i, li) => {
         if (li.classList.contains("inventory-header")) return;
+        if (li.classList.contains("skill")) return;
         li.setAttribute("draggable", true);
         li.addEventListener("dragstart", handler, false);
       });
