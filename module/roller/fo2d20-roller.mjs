@@ -13,7 +13,7 @@ export class Roller2D20 {
         let complicationTreshold = parseInt(complication);
         let formula = `${dicenum}d20`;
         let roll = new Roll(formula);
-        await roll.evaluate();
+        await roll.evaluate({ async: true });
         await Roller2D20.parseD20Roll({
             rollname: rollname,
             roll: roll,
@@ -67,7 +67,7 @@ export class Roller2D20 {
         let numOfDice = rerollIndexes.length;
         let formula = `${numOfDice}d20`;
         let _roll = new Roll(formula);
-        await _roll.evaluate();
+        await _roll.evaluate({ async: true });
         await Roller2D20.parseD20Roll({
             rollname: `${rollname} re-roll`,
             roll: _roll,
@@ -133,7 +133,7 @@ export class Roller2D20 {
     static async rollD6({ rollname = "Roll D6", dicenum = 2 } = {}) {
         let formula = `${dicenum}d6`;
         let roll = new Roll(formula);
-        await roll.evaluate();
+        await roll.evaluate({ async: true });
         await Roller2D20.parseD6Roll({
             rollname: rollname,
             roll: roll
@@ -180,7 +180,7 @@ export class Roller2D20 {
         let numOfDice = rerollIndexes.length;
         let formula = `${numOfDice}d6`;
         let _roll = new Roll(formula);
-        await _roll.evaluate();
+        await _roll.evaluate({ async: true });
         await Roller2D20.parseD6Roll({
             rollname: `${rollname} re-roll`,
             roll: _roll,

@@ -149,6 +149,81 @@ export class FalloutActorSheet extends ActorSheet {
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
 
+    // ! SKILLS LISTENERS [clic, right-click, value change, tag ]
+    // Click Skill Item
+    html.find('.skill .item-name').click(ev => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("itemId"));
+      this._onRollSkill(item.name, item.data.data.value, this.actor.data.data.attributes[item.data.data.defaultAttribute].value, item.data.data.tag);
+    });
+    // Change Skill Rank value
+    html.find('.skill .item-skill-value input').change(async (ev) => {
+      let newRank = parseInt($(ev.currentTarget).val());
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("itemId"));
+      let updatedItem = { _id: item.id, data: { value: newRank } };
+      await this.actor.updateEmbeddedDocuments("Item", [updatedItem]);
+    });
+    // Toggle Tag value
+    html.find('.skill .item-skill-tag').click(async (ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("itemId"));
+      let updatedItem = { _id: item.id, data: { tag: !item.data.data.tag } };
+      await this.actor.updateEmbeddedDocuments("Item", [updatedItem]);
+    });
+    let menuSkills = [
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With STR',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'str');
+        },
+      },
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With PER',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'per');
+        },
+      },
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With END',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'end');
+        },
+      },
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With CHA',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'cha');
+        },
+      },
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With INT',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'int');
+        },
+      },
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With AGI',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'agi');
+        },
+      },
+      {
+        icon: '<i class="fas fa-dice"></i>',
+        name: 'Roll With LUC',
+        callback: (t) => {
+          this._onRightClickSkill(t.data("itemId"), 'luc');
+        },
+      }
+    ];
+    new ContextMenu(html.find(".skill"), null, menuSkills);
+
     // Add Inventory Item
     html.find('.item-create').click(this._onItemCreate.bind(this));
 
@@ -203,6 +278,15 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Finally, create the item!
     return await Item.create(itemData, { parent: this.actor });
+  }
+
+  _onRightClickSkill(itemId, attribute) {
+    console.log(itemId);
+    const item = this.actor.items.get(itemId);
+    this._onRollSkill(item.name, item.data.data.value, this.actor.data.data.attributes[attribute].value, item.data.data.tag);
+  }
+  _onRollSkill(skillName, rank, attribute, tag) {
+    game.fallout.Dialog2d20.createDialog({ rollName: skillName, diceNum: 2, attribute: attribute, skill: rank, tag: tag, complication: 20 })
   }
 
   /**

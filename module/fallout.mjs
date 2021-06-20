@@ -113,7 +113,7 @@ Hooks.once("ready", async function () {
 Hooks.on('renderChatMessage', (message, html, data) => {
   let rrlBtn = html.find('.reroll-button');
   if (rrlBtn.length > 0) {
-    rrlBtn[0].setAttribute('data-messageId', message._id);
+    rrlBtn[0].setAttribute('data-messageId', message.id);
     rrlBtn.click((el) => {
       let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
       let rerollIndex = [];
