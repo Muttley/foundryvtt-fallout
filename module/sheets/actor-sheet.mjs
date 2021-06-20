@@ -174,49 +174,49 @@ export class FalloutActorSheet extends ActorSheet {
     let menuSkills = [
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With STR',
+        name: 'Use Strength',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'str');
         },
       },
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With PER',
+        name: 'Use Perception',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'per');
         },
       },
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With END',
+        name: 'Use Endurance',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'end');
         },
       },
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With CHA',
+        name: 'Use Charisma',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'cha');
         },
       },
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With INT',
+        name: 'Use Intelligence',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'int');
         },
       },
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With AGI',
+        name: 'Use Agility',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'agi');
         },
       },
       {
         icon: '<i class="fas fa-dice"></i>',
-        name: 'Roll With LUC',
+        name: 'Use Luck',
         callback: (t) => {
           this._onRightClickSkill(t.data("itemId"), 'luc');
         },

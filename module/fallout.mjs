@@ -10,6 +10,7 @@ import { FALLOUT } from "./helpers/config.mjs";
 //Import Roll2D20
 import { Roller2D20 } from "./roller/fo2d20-roller.mjs"
 import { Dialog2d20 } from './roller/dialog2d20.js'
+import { DialogD6 } from './roller/DialogD6.js'
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -24,7 +25,8 @@ Hooks.once('init', async function () {
     FalloutItem,
     rollItemMacro,
     Roller2D20,
-    Dialog2d20
+    Dialog2d20,
+    DialogD6
   };
 
   // Add custom constants for configuration.
@@ -48,6 +50,8 @@ Hooks.once('init', async function () {
   Actors.registerSheet("fallout", FalloutActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("fallout", FalloutItemSheet, { makeDefault: true });
+
+  //CONFIG.Dice.terms["b"] = FalloutDcDie;
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
@@ -110,6 +114,7 @@ Hooks.once("ready", async function () {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
 });
+
 Hooks.on('renderChatMessage', (message, html, data) => {
   let rrlBtn = html.find('.reroll-button');
   if (rrlBtn.length > 0) {
@@ -207,3 +212,57 @@ function rollItemMacro(itemName) {
   // Trigger the item roll
   return item.roll();
 }
+
+// ! DICE SO NICE
+
+Hooks.once("diceSoNiceReady", (dice3d) => {
+  dice3d.addSystem(
+    { id: "fallout", name: "Fallout 2d20" },
+    true
+  );
+  dice3d.addDicePreset({
+    type: "d6",
+    labels: [
+      "systems/fallout/assets/dice/d1.webp",
+      "systems/fallout/assets/dice/d2.webp",
+      "systems/fallout/assets/dice/d3.webp",
+      "systems/fallout/assets/dice/d4.webp",
+      "systems/fallout/assets/dice/d5.webp",
+      "systems/fallout/assets/dice/d6.webp",
+    ],
+    system: "fallout",
+  });
+  dice3d.addColorset(
+    {
+      name: "fallout",
+      description: "Fallout 2d20",
+      category: "Colors",
+      foreground: "#fcef71",
+      background: "#008cd1",
+      outline: "gray",
+      texture: "none",
+    },
+    "force"
+  );
+});
+
+
+/*
+export class FalloutDcDie extends Die {
+  constructor(termData) {
+    termData.faces = 6;
+    super(termData);
+  }
+  static DENOMINATION = "b";
+  getResultLabel(result) {
+    return {
+      1: '<img src="systems/fallout/assets/dice/d1.webp" />',
+      2: '<img src="systems/fallout/assets/dice/d2.webp" />',
+      3: '<img src="systems/fallout/assets/dice/d3.webp" />',
+      4: '<img src="systems/fallout/assets/dice/d4.webp" />',
+      5: '<img src="systems/fallout/assets/dice/d5.webp" />',
+      6: '<img src="systems/fallout/assets/dice/d6.webp" />',
+    }[result.result];
+  }
+}
+*/
