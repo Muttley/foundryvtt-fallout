@@ -192,6 +192,12 @@
   background-image: url(../assets/chat/d20-blue.svg);
 }
 
+.fallout .window-content {
+  background-image: url(../assets/ui/window-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .grid,
 .grid-2col {
   display: grid;
@@ -480,6 +486,8 @@
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .fallout .fallout.sheet .window-content form {
@@ -538,6 +546,88 @@
 
 .fallout .num-short-3 {
   max-width: 3rem;
+}
+
+.fallout .attributes-list .special-letter {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  padding: 2px 5px;
+  margin-bottom: 5px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.fallout .attributes-list .special-letter .special-number {
+  height: 42px;
+  width: 42px;
+  background-image: url(../assets/ui/cogwheel.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.fallout .attributes-list .special-letter label {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+
+.fallout .attributes-list .special-letter input[type=number] {
+  height: 36px;
+  max-width: 36px;
+  text-align: center;
+  background-color: unset;
+  border: none;
+}
+
+.fallout .attributes-list .attribute:nth-child(odd) .special-number {
+  background-image: url(../assets/ui/cogwheel-rot.svg);
+}
+
+.fallout .attributes-list .attribute:nth-child(1) {
+  background-color: #86aa90;
+}
+
+.fallout .attributes-list .attribute:nth-child(2) {
+  background-color: #8d7c5b;
+}
+
+.fallout .attributes-list .attribute:nth-child(3) {
+  background-color: #4eb9ca;
+}
+
+.fallout .attributes-list .attribute:nth-child(4) {
+  background-color: #e09552;
+}
+
+.fallout .attributes-list .attribute:nth-child(5) {
+  background-color: #b8b4a1;
+}
+
+.fallout .attributes-list .attribute:nth-child(6) {
+  background-color: #dbab96;
+}
+
+.fallout .attributes-list .attribute:nth-child(7) {
+  background-color: #b2abbc;
 }
 
 .fallout .items-header {
@@ -664,17 +754,19 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px groove #eeede0;
+  background: black;
+  border: none;
   font-weight: bold;
 }
 
 .fallout .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
+  color: white;
 }
 
 .fallout .items-list .items-header .item-name {
+  color: white;
   padding-left: 5px;
   text-align: left;
 }

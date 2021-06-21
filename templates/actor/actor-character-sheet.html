@@ -51,18 +51,21 @@
 
     {{!-- Owned skills Tab --}}
     <div class="tab skills" data-group="primary" data-tab="skills">
-      <section class="flexrow">
-        <div class="attributes flexrow">
-          {{#each data.attributes as |ability key|}}
-          {{log ability}}
-          <div class="ability flexcol flex-group-center">
-            <label for="data.attributes.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@attributes.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-            <input type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" />
+      <section class="grid grid-6col">
+        <div class="attributes main grid-span-1">
+
+          <div class="attributes-list">
+            {{#each data.attributes as |ability key|}}
+            <div class="attribute special-letter">
+              <label for="data.attributes.{{key}}.value" class="resource-label align-left" data-label="{{ability.label}}">{{subString ability.label 0 1}}</label>
+              <div class='special-number'>
+                <input type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" />
+              </div>
+
+            </div>
+            {{/each}}
           </div>
-          {{/each}}
         </div>
-      </section>
-      <section class="grid grid-5col">
         <section class="main grid-span-2">
           {{> "systems/fallout/templates/actor/parts/actor-skills.html"}}
         </section>
@@ -70,6 +73,7 @@
           {{> "systems/fallout/templates/actor/parts/actor-perks.html"}}
         </section>
       </section>
+
     </div>
 
     {{!-- Biography Tab --}}

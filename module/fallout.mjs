@@ -79,6 +79,10 @@ Handlebars.registerHelper('toUpperCase', function (str) {
   return str.toUpperCase();
 });
 
+Handlebars.registerHelper('subString', function (str, s, e) {
+  return str.substring(s, e);
+});
+
 Handlebars.registerHelper("ifCond", function (v1, operator, v2, options) {
   switch (operator) {
     case "==":

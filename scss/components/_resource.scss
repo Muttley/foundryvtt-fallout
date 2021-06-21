@@ -20,3 +20,68 @@
  .num-short-3{   
   max-width: 3rem;   
 }
+
+
+.attributes-list{
+  .special-letter{
+    flex-direction: row;
+    display: flex;
+    font-size: 18px;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    justify-content: space-evenly;
+    align-items: center;   
+    .special-number{
+      height:42px;
+      width: 42px;
+      //background-image: url(../assets/ui/cog-white.svg);
+      background-image: url(../assets/ui/cogwheel.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+    }    
+    label{
+      text-align: center;
+      color: white;
+      font-size: 22px;
+    }
+    input[type=number]{
+      height:36px;
+      max-width: 36px;
+      text-align: center;
+      background-color: unset;
+      border: none;
+    }
+  }
+  
+  .attribute:nth-child(odd){
+    .special-number{
+      
+        background-image: url(../assets/ui/cogwheel-rot.svg);
+      
+    }
+  }
+  .attribute:nth-child(1){
+    background-color: $fa-green;
+  }
+  .attribute:nth-child(2){
+    background-color: $fa-brown;
+  }
+  .attribute:nth-child(3){
+    background-color: $fa-blue;
+  }
+  .attribute:nth-child(4){
+    background-color: $fa-orange;
+  }
+  .attribute:nth-child(5){
+    background-color: $fa-grey;
+  }
+  .attribute:nth-child(6){
+    background-color: $fa-punch;
+  }
+  .attribute:nth-child(7){
+    background-color: $fa-purple;
+  }  
+}
