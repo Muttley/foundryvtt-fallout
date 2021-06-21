@@ -60,6 +60,7 @@
     display: flex;
     flex: 0 0 100px;
     justify-content: flex-end;
+    align-items: center;
     a {
       font-size: 12px;
       text-align: center;
@@ -115,8 +116,14 @@
   .item-skill-value, .item-skill-tag{
     flex:0.5;
     text-align: center;
+    padding: 2px 0;
     input[type=number]{
       max-width: 2rem;
+      max-height: 1.3rem;
+    }
+    input[type=checkbox]{
+      width:12px;
+      height:12px;
     }
   }
 }

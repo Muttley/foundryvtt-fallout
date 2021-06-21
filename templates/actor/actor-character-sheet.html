@@ -3,36 +3,28 @@
   {{!-- Sheet Header --}}
   <header class="sheet-header">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
-      {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
-      use both the "grid" and "grid-Ncol" class where "N" can be any number
-      from 1 to 12 and will create that number of columns. --}}
+    <div class="flexrow">
+      <div class="flexcol">
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+        <label for="data.origin" class="resource-label">{{localize "FALLOUT.ORIGIN"}}</label>
+        <input type="text" name="data.origin" value="{{data.origin}}" data-dtype="String" />
+      </div>
+
       <div class="resources grid grid-3col">
-
-        {{!-- "flex-group-center" is also defined in the _grid.scss file
-        and it will add a small amount of padding, a border, and will
-        center all of its child elements content and text. --}}
         <div class="resource flex-group-center">
-          <label for="data.health.value" class="resource-label">{{localize "FALLOUT.SKILL.Big Guns"}}</label>
+          <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.Current XP"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number" />
-            <span> / </span>
-            <input type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number" />
+            <input type="text" name="data.level.currentXP" value="{{data.level.currentXP}}" data-dtype="Number" />
           </div>
         </div>
-
         <div class="resource flex-group-center">
-          <label for="data.power.value" class="resource-label">Power</label>
+          <label for="data.power.value" class="resource-label">{{localize "FALLOUT.LEVEL.Next XP"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="data.power.value" value="{{data.power.value}}" data-dtype="Number" />
-            <span> / </span>
-            <input type="text" name="data.power.max" value="{{data.power.max}}" data-dtype="Number" />
+            <input type="text" name="data.level.nextLevelXP" value="{{data.level.nextLevelXP}}" data-dtype="Number" />
           </div>
         </div>
-
         <div class="resource flex-group-center">
-          <label for="data.level.value" class="resource-label">Level</label>
+          <label for="data.level.value" class="resource-label">{{localize "FALLOUT.LEVEL.Level"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="data.level.value" value="{{data.level.value}}" data-dtype="Number" />
           </div>
@@ -45,11 +37,13 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="skills">skills</a>
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="items">Items</a>
-    <a class="item" data-tab="spells">Spells</a>
-    <a class="item" data-tab="effects">Effects</a>
+    <a class="item" data-tab="status">Status</a>
+    <a class="item" data-tab="skills">Abilities</a>
+    <a class="item" data-tab="weapons">Weapons</a>
+    <a class="item" data-tab="armor">Armor</a>
+    <a class="item" data-tab="gear">Gear</a>
+    <a class="item" data-tab="data">Data</a>
+    <!-- <a class="item" data-tab="effects">Effects</a> -->
   </nav>
 
   {{!-- Sheet Body --}}
@@ -73,8 +67,7 @@
           {{> "systems/fallout/templates/actor/parts/actor-skills.html"}}
         </section>
         <section class="main grid-span-3">
-          {{!-- HERE COPME STATUS --}}
-          <div>STATUS GOES HERE</div>
+          {{> "systems/fallout/templates/actor/parts/actor-perks.html"}}
         </section>
       </section>
     </div>
@@ -87,12 +80,12 @@
 
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="items">
-      {{> "systems/fallout/templates/actor/parts/actor-items.html"}}
+
     </div>
 
     {{!-- Owned Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
-      {{> "systems/fallout/templates/actor/parts/actor-spells.html"}}
+
     </div>
 
     {{!-- Active Effects Tab --}}

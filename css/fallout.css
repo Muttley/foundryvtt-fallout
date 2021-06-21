@@ -384,6 +384,18 @@
   flex: 2;
 }
 
+.flex2 {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.flex3 {
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
 .align-left {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -403,6 +415,12 @@
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
+}
+
+.align-mid {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* Styles limited to fallout sheets */
@@ -445,12 +463,6 @@
   margin-right: 10px;
 }
 
-.fallout .sheet-header .header-fields {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
 .fallout .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
@@ -470,22 +482,62 @@
   flex: 0;
 }
 
-.fallout .sheet-body,
-.fallout .sheet-body .tab,
-.fallout .sheet-body .tab .editor {
+.fallout .fallout.sheet .window-content form {
+  height: 100%;
+  overflow: hidden;
+}
+
+.fallout .fallout.sheet .window-content .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.fallout .fallout.sheet .editor {
   height: 100%;
 }
 
-.fallout .tox .tox-editor-container {
-  background: #fff;
+.fallout .description-field {
+  background: rgba(245, 245, 220, 0.301);
+  padding: 0 5px;
+  border: 1px solid lightgray;
 }
 
-.fallout .tox .tox-edit-area {
-  padding: 0 8px;
+.fallout .description-field .editor {
+  height: 100%;
+}
+
+.fallout * .editor,
+.fallout * .editor-content {
+  min-height: 200px;
 }
 
 .fallout .resource-label {
   font-weight: bold;
+}
+
+.fallout .resource-row {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.fallout .upperC {
+  text-transform: uppercase;
+}
+
+.fallout .lowerC {
+  text-transform: lowercase;
+}
+
+.fallout .text-center {
+  text-align: center;
+}
+
+.fallout .num-short-2 {
+  max-width: 2rem;
+}
+
+.fallout .num-short-3 {
+  max-width: 3rem;
 }
 
 .fallout .items-header {
@@ -561,6 +613,9 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .fallout .items-list .item-controls a {
@@ -629,10 +684,17 @@
   -ms-flex: 0.5;
   flex: 0.5;
   text-align: center;
+  padding: 2px 0;
 }
 
 .fallout .items-list .item-skill-value input[type=number], .fallout .items-list .item-skill-tag input[type=number] {
   max-width: 2rem;
+  max-height: 1.3rem;
+}
+
+.fallout .items-list .item-skill-value input[type=checkbox], .fallout .items-list .item-skill-tag input[type=checkbox] {
+  width: 12px;
+  height: 12px;
 }
 
 .fallout .item-formula {

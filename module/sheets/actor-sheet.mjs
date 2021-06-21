@@ -82,54 +82,36 @@ export class FalloutActorSheet extends ActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
-    const gear = [];
+
     const skills = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: []
-    };
+    const perks = [];
+    const gear = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
       // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-      }
-      // Append to skills.
-      else if (i.type === 'skill') {
+      if (i.type === 'skill') {
         skills.push(i);
       }
-      // Append to spells.
-      else if (i.type === 'spell') {
-        if (i.data.spellLevel != undefined) {
-          spells[i.data.spellLevel].push(i);
-        }
+      // Append to skills.
+      else if (i.type === 'perk') {
+        perks.push(i);
+      }
+      else if (i.type === 'gear') {
+        gear.push(i);
       }
     }
 
     // Assign and return
     context.gear = gear;
-
-
-
     skills.sort(function (a, b) {
       var nameA = a.name.toUpperCase();
       var nameB = b.name.toUpperCase();
       return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
     });
     context.skills = skills;
-
-
-    context.spells = spells;
+    context.perks = perks;
   }
 
   /* -------------------------------------------- */
@@ -223,6 +205,9 @@ export class FalloutActorSheet extends ActorSheet {
       }
     ];
     new ContextMenu(html.find(".skill"), null, menuSkills);
+    // ! END SKILLS
+
+    html.find(".expandable-info").click((event) => this._onItemSummary(event));
 
     // Add Inventory Item
     html.find('.item-create').click(this._onItemCreate.bind(this));
@@ -287,6 +272,30 @@ export class FalloutActorSheet extends ActorSheet {
   }
   _onRollSkill(skillName, rank, attribute, tag) {
     game.fallout.Dialog2d20.createDialog({ rollName: skillName, diceNum: 2, attribute: attribute, skill: rank, tag: tag, complication: 20 })
+  }
+
+  _onItemSummary(event) {
+    event.preventDefault();
+    let li = $(event.currentTarget).parents(".item");
+    let item = this.actor.items.get(li.data("itemId"));
+    console.log(item);
+    let description = item.data.data.description;
+    // Toggle summary
+    if (li.hasClass("expanded")) {
+      let summary = li.children(".item-summary");
+      summary.slideUp(200, () => {
+        summary.remove();
+      });
+    } else {
+      let div = $(
+        `<div class="item-summary"><div class="item-summary-wrapper"><div>${description}</div></div></div>`
+      );
+      //$(div).find(".item-summary-wrapper").append(props);
+      // div.append(props);
+      li.append(div.hide());
+      div.slideDown(200);
+    }
+    li.toggleClass("expanded");
   }
 
   /**

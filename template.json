@@ -2,25 +2,53 @@
   "Actor": {
     "types": ["character", "npc"],
     "templates": {
-      "base": {
+      "base":{
+        "origin":"",
+        "level": {
+          "value": 1,
+          "currentXP":0,
+          "nextLevelXP":0
+        },
+        "biography": "",
+        "description": ""
+      },
+      "derived": {
         "health": {
           "value": 10,
           "min": 0,
-          "max": 10
+          "max": 10,
+          "mod": 0
         },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
+        "defense": {
+          "base": 0,
+          "value": 0,
+          "mod": 0
         },
-        "level": {
-          "value": 1
+        "carryWeight":{
+          "base":"",
+          "value":"",
+          "mod":""
         },
-        "biography": ""
+        "initiative":{
+          "base":0,
+          "value":0,
+          "mod":0
+        },
+        "resistance":{
+          "physical": 0,
+          "energy": 0,
+          "radiation": 0,
+          "poison": 0
+        },
+        "meleeDamage":{
+          "base":0,
+          "value":0,
+          "mod":0
+        }               
       }
     },
     "character": {
-      "templates": ["base"],      
+      "templates": ["base", "derived"],      
       "attributes": {
         "str": {
           "value": 1
@@ -43,7 +71,9 @@
         "luc": {
           "value": 1
         }
-      }
+      },
+      "luckPoints":0,
+      "trait":""
     },
     "npc": {
       "templates": ["base"],
@@ -51,17 +81,21 @@
     }
   },
   "Item": {
-    "types": ["item", "skill", "spell"],
+    "types": ["skill", "perk", "weapon", "weapon_mod"],
     "templates": {
       "base": {
         "description": ""        
+      },
+      "physical": {
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "rarity":0
+      },
+      "equipable": {
+        "equippable": false,
+        "equipped": false
       }
-    },
-    "item": {
-      "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
     },
     "skill": {
       "templates": ["base"],
@@ -70,9 +104,48 @@
       "defaultAttribute":"str",
       "summary":""
     },
-    "spell": {
+    "perk": {
       "templates": ["base"],
-      "spellLevel": 1
+      "rank":{
+        "max":1,
+        "value":0,
+        "levelStart":1,
+        "levelIncrease":0
+      },
+      "requirements": ""
+    },
+    "weapon":{
+      "templates": ["base", "physical", "equipable"],
+      "melee":false,
+      "type": "",
+      "ammo":"",
+      "attribute":"",
+      "skill":"",      
+      "damageType": "",
+      "damageRating": 0,
+      "damageEffect": "",
+      "range": "",
+      "fireRate": 0,
+      "condition": "",
+      "qualities":[],
+      "mods":[{"name":"dada", "info":"some info"}]
+    },
+    "ammo":{
+      "templates": ["base", "physical"],
+      "type":""
+    },
+    "weapon_mod": {
+      "templates": ["base", "physical"],
+      "type": "",
+      "weaponType": "",
+      "effects":{
+        "info":"",  
+        "damageRating": 0,
+        "damageEffect": "",
+        "fireRate": 0
+      },
+      "qualities": "",
+      "perks": ""
     }
   }
 }

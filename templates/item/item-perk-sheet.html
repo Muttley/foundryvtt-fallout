@@ -1,0 +1,44 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+    </div>
+  </header>
+
+  <section>
+    <div class="attributes">
+      {{!-- As you add new fields, add them in here! --}}
+
+      <div class="flexrow resource-row align-mid">
+        <label class="resource-label">Ranks [current/maximum]</label>
+        <span class="flexrow align-mid">
+          <!-- <label class="text-center">current:</label> -->
+          <input class="text-center num-short-3" type="number" name="data.rank.value" value="{{data.rank.value}}">
+          <label class="text-center">/</label>
+          <!-- <label class="text-center">max:</label> -->
+          <input class="text-center num-short-3" type="number" name="data.rank.max" value="{{data.rank.max}}">
+        </span>
+      </div>
+      <div class="flexrow resource-row align-mid">
+        <label class="resource-label">Requirements</label>
+        <input type="text" name="data.requirements" value="{{data.requirements}}">
+      </div>
+      <!-- <div class="flexrow resource-row align-mid">
+        <label class="resource-label">Level [started/increasement]</label>
+        <span class="flexrow">
+          <input class="text-center num-short-3" type="text" name="data.rank.levelStart" value="{{data.rank.levelStart}}">
+          <label class="text-center">/</label>
+          <input class="text-center num-short-3" type="text" name="data.rank.levelIncrease" value="{{data.rank.levelIncrease}}">
+        </span>
+      </div> -->
+      <div class="resource-row resource-label align-mid">
+        <label>Description</label>
+      </div>
+      <div class="description-field">
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+  </section>
+
+</form>

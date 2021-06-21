@@ -5,11 +5,9 @@
  */
 export const preloadHandlebarsTemplates = async function () {
   return loadTemplates([
-
     // Actor partials.
     "systems/fallout/templates/actor/parts/actor-skills.html",
-    "systems/fallout/templates/actor/parts/actor-items.html",
-    "systems/fallout/templates/actor/parts/actor-spells.html",
+    "systems/fallout/templates/actor/parts/actor-perks.html",
     "systems/fallout/templates/actor/parts/actor-effects.html",
   ]);
 };
