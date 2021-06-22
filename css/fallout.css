@@ -1,6 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@font-face {
+  font-family: 'Fallout Icons';
+  src: url("../fonts/Fallout-Icons.eot");
+  src: url("../fonts/Fallout-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/Fallout-Icons.woff") format("woff"), url("../fonts/Fallout-Icons.ttf") format("truetype"), url("../fonts/Fallout-Icons.svg#Fallout-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='fo-']:before {
+  display: inline-block;
+  font-family: 'Fallout Icons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fo-physical:before {
+  content: '\0041';
+}
+
+.fo-energy:before {
+  content: '\0042';
+}
+
+.fo-radiation:before {
+  content: '\0043';
+}
+
+.fo-poison:before {
+  content: '\0044';
+}
+
 /* Global styles */
 .window-app {
   font-family: "Roboto", sans-serif;
@@ -12,6 +46,10 @@
 
 .pad-5 {
   padding: 5px;
+}
+
+.font-size-11 {
+  font-size: 11px;
 }
 
 .rollable:hover, .rollable:focus {
@@ -495,6 +533,7 @@
   -ms-flex: 0;
   flex: 0;
   font-size: 18px;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
@@ -525,6 +564,218 @@
 .fallout * .editor,
 .fallout * .editor-content {
   min-height: 200px;
+}
+
+.fallout .condition-box .pipboy-status-screen {
+  min-width: 300px;
+  max-width: 300px;
+  height: 300px;
+  max-height: 300px;
+  margin: 0 0 20px 0;
+  border: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px;
+}
+
+.fallout .condition-box .pipboy-status-screen .row {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.fallout .condition-box .pipboy-status-screen .cell {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.fallout .condition-box .pipboy-status-screen .r1 .c1 {
+  background-image: url("../assets/ui/pipboy-body/part-1.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r1 .c2.healthy {
+  background-image: url("../assets/ui/pipboy-body/head.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r1 .c2.wounded {
+  background-image: url("../assets/ui/pipboy-body/head-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r1 .c2.crippled {
+  background-image: url("../assets/ui/pipboy-body/head-crippled.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r1 .c3 {
+  background-image: url("../assets/ui/pipboy-body/part-3.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c1.healthy {
+  background-image: url("../assets/ui/pipboy-body/armR.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c1.wounded {
+  background-image: url("../assets/ui/pipboy-body/armR-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c1.crippled {
+  background-image: url("../assets/ui/pipboy-body/crippled_04.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c2.healthy {
+  background-image: url("../assets/ui/pipboy-body/torso.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c2.wounded {
+  background-image: url("../assets/ui/pipboy-body/torso-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c2.crippled {
+  background-image: url("../assets/ui/pipboy-body/crippled_05.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c3.healthy {
+  background-image: url("../assets/ui/pipboy-body/armL.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c3.wounded {
+  background-image: url("../assets/ui/pipboy-body/armL-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c3.crippled {
+  background-image: url("../assets/ui/pipboy-body/crippled_06.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c1.healthy {
+  background-image: url("../assets/ui/pipboy-body/legR.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c1.wounded {
+  background-image: url("../assets/ui/pipboy-body/legR-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c1.crippled {
+  background-image: url("../assets/ui/pipboy-body/crippled_07.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c2.healthy {
+  background-image: url("../assets/ui/pipboy-body/legL.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c2.wounded {
+  background-image: url("../assets/ui/pipboy-body/legL-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c2.crippled {
+  background-image: url("../assets/ui/pipboy-body/crippled_08.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type .resistance-icon {
+  font-size: 1rem;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type .label-value {
+  margin: 0;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 80px;
+  min-height: 20px;
+  background-repeat: no-repeat;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .status.healthy {
+  background-image: url("../assets/ui/pipboy-body/bar-healthy.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .status.wounded {
+  background-image: url("../assets/ui/pipboy-body/bar-wounded.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .status.crippled {
+  background-image: url("../assets/ui/pipboy-body/bar-crippled.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque.head {
+  left: -60px;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque.torso {
+  left: 0px;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque.armR {
+  top: 40px;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque.armL {
+  top: 40px;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque.legR {
+  top: 40px;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque.legL {
+  top: 40px;
+  right: 0px;
 }
 
 .fallout .resource-label {
@@ -754,7 +1005,7 @@
   height: 30px;
   background-size: 30px;
   border: none;
-  margin-right: 5px;
+  margin: 3px 0 0 5px;
 }
 
 .fallout .items-list .item-prop {
@@ -804,6 +1055,10 @@
 .fallout .items-list .item-skill-value input[type=checkbox], .fallout .items-list .item-skill-tag input[type=checkbox] {
   width: 12px;
   height: 12px;
+}
+
+.fallout .item-unequipped {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .fallout .item-formula {

@@ -49,6 +49,14 @@
     "legR": "Leg Right",
     "legL": "Leg Left"
   },
+  "FALLOUT.BODYLOCATION_ABBR":{
+    "head":"H",
+    "torso":"T",
+    "armR": "AR",
+    "armL": "AL",
+    "legR": "LR",
+    "legL": "LL"
+  },
   "FALLOUT.RESISTANCE":{
     "physical": "Physical",
     "energy": "Energy",

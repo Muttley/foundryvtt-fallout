@@ -1,0 +1,107 @@
+{{!-- HEALTH & LUCK --}}
+<div class="flexrow">
+    <div>
+        HEALTH
+    </div>
+    <div>
+        LUCK
+    </div>
+</div>
+
+{{!-- DMG, DEFENSE, INITIATIVE --}}
+<div class="flexrow">
+    <div>
+        DMG BONUS
+    </div>
+    <div>
+        DEFENSE
+    </div>
+    <div>
+        INITIATIVE
+    </div>
+</div>
+
+{{!-- RESISTANCES --}}
+<div class="flexrow">
+    <div>
+        PHYS
+    </div>
+    <div>
+        ENG
+    </div>
+    <div>
+        RAD
+    </div>
+    <div>
+        POISON
+    </div>
+</div>
+
+{{!-- PIP BOY --}}
+<div class="condition-box flexrow">
+    <div>LEFT COLUMNS</div>
+    <div class="pipboy-status-screen">
+        <div class="row r1">
+            <div class="cell c1"></div>
+            <div class="cell c2 head {{data.body_parts.head.status}}">
+                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head keypart="head"}}
+            </div>
+            <div class="cell c3"></div>
+        </div>
+        <div class="row r2">
+            <div class="cell c1 armR {{data.body_parts.armR.status}}">
+                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR keypart="armR"}}
+            </div>
+            <div class="cell c2 torso {{data.body_parts.torso.status}}">
+                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso keypart="torso"}}
+            </div>
+            <div class="cell c3 armL {{data.body_parts.armL.status}}">
+                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL keypart="armL"}}
+            </div>
+        </div>
+        <div class="row r3">
+            <div class="cell c1 legR {{data.body_parts.legR.status}}">
+                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR keypart="legR"}}
+            </div>
+            <div class="cell c2 legL {{data.body_parts.legL.status}}">
+                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL keypart="legL"}}
+            </div>
+        </div>
+    </div>
+
+    <!-- <h3>DEFENSE</h3> -->
+    <div>
+        {{#each data.body_parts as |body_part key|}}
+        <div class="flexcol">
+            <div class="bodypartheader">
+                <h3>
+                    {{localize (concat 'FALLOUT.BODYLOCATION.' key)}} {{body_part.hit.min}}-{{body_part.hit.max}}
+                </h3>
+                <select name="data.body_parts.{{key}}.status">
+                    {{#select body_part.status}}
+                    <option value="healthy">{{localize 'FO2d20.healthy'}}</option>
+                    <option value="wounded">{{localize 'FO2d20.wounded'}}</option>
+                    <option value="crippled">{{localize 'FO2d20.crippled'}}</option>
+                    {{/select}}
+                </select>
+            </div>
+            <div class="flexrow">
+                {{#each body_part.resistance as |resistance_value keyType|}}
+                <div class="defense-type">
+                    <i class="fo-{{keyType}}" title="{{keyType}}"></i>
+                    <input type="text" class="label-value" name="data.body_parts.{{key}}.resistance.{{keyType}}" value="{{resistance_value}}" data-dtype="Number" />
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
+
+{{!-- ENCUMBRANCE AND STAUSES --}}
+<div class="flexrow">
+    <div>
+        ENCUMBRANCE AND STAUSES
+    </div>
+</div>

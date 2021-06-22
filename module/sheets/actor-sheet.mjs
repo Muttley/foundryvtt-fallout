@@ -69,7 +69,6 @@ export class FalloutActorSheet extends ActorSheet {
   _prepareCharacterData(context) {
     // Handle ability scores.
     for (let [k, v] of Object.entries(context.data.attributes)) {
-      console.log(k, v);
       v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
     }
   }
@@ -130,7 +129,6 @@ export class FalloutActorSheet extends ActorSheet {
       { apparelType: 'headgear', list: headgear },
       { apparelType: 'armor', list: armor },
       { apparelType: 'powerArmor', list: powerArmor }];
-    console.warn(context.allApparel);
   }
 
   /* -------------------------------------------- */
@@ -246,7 +244,7 @@ export class FalloutActorSheet extends ActorSheet {
     html.find('.rollable').click(this._onRoll.bind(this));
 
     // Drag events for macros.
-    if (this.actor.owner) {
+    if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
       html.find('li.item').each((i, li) => {
         if (li.classList.contains("inventory-header")) return;

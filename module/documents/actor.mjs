@@ -115,7 +115,6 @@ export class FalloutActor extends Actor {
 
   async _preCreate(data, options, user) {
     await super._preCreate(data, options, user);
-    //console.warn(CONFIG.FALLOUT.SKILLS);
     let packSkills = await game.packs.get('fallout.skills').getDocuments();
     const items = this.items.map(i => i.toObject());
     packSkills.forEach(s => {

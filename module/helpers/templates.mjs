@@ -9,6 +9,8 @@ export const preloadHandlebarsTemplates = async function () {
     "systems/fallout/templates/actor/parts/actor-skills.html",
     "systems/fallout/templates/actor/parts/actor-perks.html",
     "systems/fallout/templates/actor/parts/actor-apparel.html",
+    "systems/fallout/templates/actor/parts/actor-status.html",
     "systems/fallout/templates/actor/parts/actor-effects.html",
+    "systems/fallout/templates/actor/parts/body-status-plaque.html"
   ]);
 };

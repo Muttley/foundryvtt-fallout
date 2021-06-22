@@ -1,0 +1,11 @@
+<div class="status-plaque {{keypart}}" data-bodypart={{keypart}} data-status="{{bodypart.status}}">
+    <div class="status {{bodypart.status}}"></div>
+    <div class="values">
+        {{#each bodypart.resistance as |resistancevalue keyRes|}}
+        <div class="defense-type">
+            <i class="fo-{{keyRes}} resistance-icon" title="{{keyRes}}"></i>
+            <p class="label-value" />{{resistancevalue}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>

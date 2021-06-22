@@ -39,3 +39,12 @@ FALLOUT.APPAREL_TYPE = {
   "headgear": "FALLOUT.APPAREL.headgear",
   "powerArmor": "FALLOUT.APPAREL.powerArmor"
 }
+
+FALLOUT.BodyValues = {
+  "head": "1-2",
+  "torso": "3-8",
+  "armL": "9-11",
+  "armR": "12-14",
+  "lefL": "15-17",
+  "legR": "18-20",
+}

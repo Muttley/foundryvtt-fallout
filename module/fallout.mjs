@@ -110,6 +110,16 @@ Handlebars.registerHelper("ifCond", function (v1, operator, v2, options) {
   }
 });
 
+Handlebars.registerHelper('damageFaIconClass', function (str) {
+  if (str == "physical")
+    return "fas fa-fist-raised";
+  else if (str == "energy")
+    return "fas fa-bolt";
+  else if (str == "radiation")
+    return "fas fa-radiation";
+});
+
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */

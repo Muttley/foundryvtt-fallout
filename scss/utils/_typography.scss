@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-$font-oswald: 'Oswald', sans-serif;
-$font-lobster: 'Lobster', cursive;
-
 
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
+
+$font-oswald: 'Oswald', sans-serif;
+$font-lobster: 'Lobster', cursive;
+
+@font-face {
+    font-family: 'Fallout Icons';
+    src: url('../fonts/Fallout-Icons.eot');
+    src: url('../fonts/Fallout-Icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Fallout-Icons.woff') format('woff'),
+         url('../fonts/Fallout-Icons.ttf') format('truetype'),
+         url('../fonts/Fallout-Icons.svg#Fallout-Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='fo-']:before{
+	display: inline-block;
+   font-family: 'Fallout Icons';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.fo-physical:before{content:'\0041';}
+.fo-energy:before{content:'\0042';}
+.fo-radiation:before{content:'\0043';}
+.fo-poison:before{content:'\0044';}

@@ -81,7 +81,7 @@
         height: 30px;
         background-size: 30px;
         border: none;
-        margin-right: 5px;
+        margin: 3px 0 0 5px;
       }
     }
   }
@@ -131,6 +131,8 @@
     }
   }
 }
+
+.item-unequipped{ color: rgba(0, 0, 0, 0.2);}
 
 /* Example style for FalloutItem (can be removed if not needed) */
 .item-formula {

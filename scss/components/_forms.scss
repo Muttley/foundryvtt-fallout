@@ -37,6 +37,7 @@
 .sheet-tabs {
   flex: 0;
   font-size: 18px;
+  font-family: $font-oswald;
   text-transform: uppercase;
 }
 
@@ -67,4 +68,202 @@
 * .editor,
 * .editor-content {
   min-height: 200px;
+}
+
+// PIPBOY
+.condition-box {
+  .pipboy-status-screen {
+      min-width: 300px;
+      max-width: 300px;
+      height: 300px;
+      max-height: 300px;
+      margin: 0 0 20px 0;
+      border: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 300px;
+      //background-color: black;
+
+      .row {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+      }
+
+      .cell {
+          flex: 1;
+          flex-wrap: wrap;
+          position: relative;          
+      }
+
+      .r1 {
+          .c1 {
+              background-image: url('../assets/ui/pipboy-body/part-1.png');
+          }
+
+          .c2 {
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/head.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/head-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/head-crippled.png');
+              }
+          }
+
+          .c3 {
+              background-image: url('../assets/ui/pipboy-body/part-3.png');
+          }
+      }
+
+      .r2 {
+          .c1 {
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/armR.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/armR-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/crippled_04.png');
+              }
+          }
+
+          .c2 {
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/torso.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/torso-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/crippled_05.png');
+              }
+          }
+
+          .c3 {
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/armL.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/armL-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/crippled_06.png');
+              }
+          }
+      }
+
+      .r3 {
+          .c1 {
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/legR.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/legR-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/crippled_07.png');
+              }
+          }
+
+          .c2 {
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/legL.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/legL-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/crippled_08.png');
+              }
+          }
+      }
+
+      .status-plaque {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          min-width: 80px;
+          .values {
+              display: flex;
+              flex-direction: row;
+              //background-color: $f-blue;
+
+              .defense-type {
+                  display: flex;
+                  flex-direction: column;
+
+                  .resistance-icon {
+                      font-size: 1rem;
+                  }
+
+                  .label-value {
+                      margin: 0;
+                  }
+              }
+          }
+
+          .status {
+              display: flex;
+              flex-direction: row;
+              min-height: 80px;
+              min-height: 20px;
+              background-repeat: no-repeat;
+
+              &.healthy {
+                  background-image: url('../assets/ui/pipboy-body/bar-healthy.png');
+              }
+
+              &.wounded {
+                  background-image: url('../assets/ui/pipboy-body/bar-wounded.png');
+              }
+
+              &.crippled {
+                  background-image: url('../assets/ui/pipboy-body/bar-crippled.png');
+              }
+          }
+
+          &.head {
+              left: -60px;
+          }
+
+          &.torso {
+              left: 0px;
+          }
+
+          &.armR {
+              top: 40px;
+          }
+
+          &.armL {
+              top: 40px;
+          }
+
+          &.legR {
+              top: 40px;
+          }
+
+          &.legL {
+              top: 40px;
+              right: 0px;
+          }
+      }
+  }
 }
