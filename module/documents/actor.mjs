@@ -1,4 +1,5 @@
 import { FalloutItemSheet } from "../sheets/item-sheet.mjs";
+//import { FALLOUT } from "../helpers/config.mjs";
 
 /**
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.

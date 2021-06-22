@@ -2,23 +2,32 @@
   font-weight: bold;
 }
 .resource-row{
-  padding: 5px;
-  margin-bottom: 5px;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+.resource-header{
+  padding: 2px 2px 2px 5px;
+  background-color: black;
+  color:white;
+  text-transform: uppercase;
 }
 .upperC{
   text-transform: uppercase;
  }
- .lowerC{
+.lowerC{
   text-transform: lowercase;
  }
- .text-center{
-   text-align: center;
+.text-center{
+  text-align: center;
  }
- .num-short-2{   
-     max-width: 2rem;   
+.num-short-2{   
+  max-width: 2rem; 
+  text-align: center;
  }
- .num-short-3{   
-  max-width: 3rem;   
+.num-short-3{   
+  max-width: 3rem;
+  text-align: center;   
 }
 
 

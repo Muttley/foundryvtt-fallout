@@ -31,3 +31,11 @@ FALLOUT.abilityAbbreviations = {
 };
 
 FALLOUT.SKILLS = ["Athletics", "Barter", "Big Guns", "Energy Weapons", "Explosives", "Lockpick", "Medicine", "Melee Weapons", "Pilot", "Repair", "Science", "Small Guns", "Sneak", "Speech", "Survival", "Throwing", "Unarmed"];
+
+FALLOUT.APPAREL_TYPE = {
+  "clothing": "FALLOUT.APPAREL.clothing",
+  "outfit": "FALLOUT.APPAREL.outfit",
+  "armor": "FALLOUT.APPAREL.armor",
+  "headgear": "FALLOUT.APPAREL.headgear",
+  "powerArmor": "FALLOUT.APPAREL.powerArmor"
+}

@@ -40,7 +40,7 @@
     <a class="item" data-tab="status">Status</a>
     <a class="item" data-tab="skills">Abilities</a>
     <a class="item" data-tab="weapons">Weapons</a>
-    <a class="item" data-tab="armor">Armor</a>
+    <a class="item" data-tab="apparel">Apparel</a>
     <a class="item" data-tab="gear">Gear</a>
     <a class="item" data-tab="data">Data</a>
     <!-- <a class="item" data-tab="effects">Effects</a> -->
@@ -82,9 +82,9 @@
       {{editor content=data.biography target="data.biography" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="items">
-
+    {{!-- Owned Apparel Tab --}}
+    <div class="tab items" data-group="primary" data-tab="apparel">
+      {{> "systems/fallout/templates/actor/parts/actor-apparel.html"}}
     </div>
 
     {{!-- Owned Spells Tab --}}

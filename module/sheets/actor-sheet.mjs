@@ -54,6 +54,7 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
+    context.FALLOUT = CONFIG.FALLOUT;
 
     return context;
   }
@@ -85,6 +86,7 @@ export class FalloutActorSheet extends ActorSheet {
 
     const skills = [];
     const perks = [];
+    const apparel = [];
     const gear = [];
 
     // Iterate through items, allocating to containers
@@ -97,6 +99,9 @@ export class FalloutActorSheet extends ActorSheet {
       // Append to skills.
       else if (i.type === 'perk') {
         perks.push(i);
+      }
+      else if (i.type === 'apparel') {
+        apparel.push(i);
       }
       else if (i.type === 'gear') {
         gear.push(i);
@@ -112,6 +117,20 @@ export class FalloutActorSheet extends ActorSheet {
     });
     context.skills = skills;
     context.perks = perks;
+    //context.apparel = apparel;
+    let clothing = apparel.filter(a => a.data.appareltype == 'clothing');
+    let outfit = apparel.filter(a => a.data.appareltype == 'outfit');
+    let headgear = apparel.filter(a => a.data.appareltype == 'headgear');
+    let armor = apparel.filter(a => a.data.appareltype == 'armor');
+    let powerArmor = apparel.filter(a => a.data.appareltype == 'powerArmor');
+    //context.newApparel = apparel.filter(a => a.data.appareltype == '' || undefined);
+    context.allApparel = [
+      { apparelType: 'clothing', list: clothing },
+      { apparelType: 'outfit', list: outfit },
+      { apparelType: 'headgear', list: headgear },
+      { apparelType: 'armor', list: armor },
+      { apparelType: 'powerArmor', list: powerArmor }];
+    console.warn(context.allApparel);
   }
 
   /* -------------------------------------------- */
@@ -250,6 +269,7 @@ export class FalloutActorSheet extends ActorSheet {
     const type = header.dataset.type;
     // Grab any data associated with this control.
     const data = duplicate(header.dataset);
+
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
     // Prepare the item object.
@@ -258,6 +278,8 @@ export class FalloutActorSheet extends ActorSheet {
       type: type,
       data: data
     };
+
+    console.warn(itemData)
     // Remove the type from the dataset since it's in the itemData.type prop.
     delete itemData.data["type"];
 

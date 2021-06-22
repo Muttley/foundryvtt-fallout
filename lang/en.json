@@ -40,5 +40,36 @@
     "Survival":"Survival",
     "Throwing":"Throwing",
     "Unarmed":"Unarmed"
+  },
+  "FALLOUT.BODYLOCATION":{
+    "head":"Head",
+    "torso":"Torso",
+    "armR": "Arm Right",
+    "armL": "Arm Left",
+    "legR": "Leg Right",
+    "legL": "Leg Left"
+  },
+  "FALLOUT.RESISTANCE":{
+    "physical": "Physical",
+    "energy": "Energy",
+    "radiation": "Radiation",
+    "poison": "Poison"
+  },
+  "FALLOUT.APPAREL":{
+    "clothing": "Clothing",
+    "outfit": "Outfit",
+    "armor": "Armor",
+    "headgear": "Headgear",
+    "powerArmor": "Power Armor"
+  },
+  "FALLOUT.equipped":"Equipped",
+  "FALLOUT.powered":"Powered",
+  "FALLOUT.HEALTH":{
+    "health":"Health",
+    "max":"Max Health",
+    "current":"Current Health"
+  },
+  "FALLOUT.MODS":{
+    "mods": "Mods"
   }
 }

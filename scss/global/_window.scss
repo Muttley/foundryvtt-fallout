@@ -2,6 +2,13 @@
   font-family: $font-primary;
 }
 
+.pad-2{
+  padding: 2px;
+}
+.pad-5{
+  padding: 5px;
+}
+
 .rollable {
   &:hover,
   &:focus {
