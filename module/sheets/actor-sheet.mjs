@@ -237,6 +237,45 @@ export class FalloutActorSheet extends ActorSheet {
       li.slideUp(200, () => this.render(false));
     });
 
+    // ! INJURIES
+    html.find('.injury-mark').click(async (ev) => {
+      let status = parseInt(ev.currentTarget.dataset["status"]);
+      if (status == 2)
+        return;
+      let index = ev.currentTarget.dataset["index"];
+      let bodypart = ev.currentTarget.dataset["bodypart"];
+      let injuries = this.actor.data.data.body_parts[bodypart].injuries;
+      let newInjuries = [...injuries];
+      //newInjuries[index] = status == 2 ? 2 : status + 1;
+      newInjuries[index] = 2;
+      let newStatus = this._getBodyPartStatus(newInjuries);
+      let _update = {};
+      let _dataInjuries = `data.body_parts.${bodypart}.injuries`;
+      let _dataStatus = `data.body_parts.${bodypart}.status`;
+      _update[_dataInjuries] = newInjuries;
+      _update[_dataStatus] = newStatus;
+      console.log(_update);
+      await this.actor.update(_update);
+    });
+    html.find('.injury-mark').contextmenu(async (ev) => {
+      let status = parseInt(ev.currentTarget.dataset["status"]);
+      if (status == 0)
+        return;
+      let index = ev.currentTarget.dataset["index"];
+      let bodypart = ev.currentTarget.dataset["bodypart"];
+      let injuries = this.actor.data.data.body_parts[bodypart].injuries;
+      let newInjuries = [...injuries];
+      newInjuries[index] = status == 0 ? 0 : status - 1;
+      let newStatus = this._getBodyPartStatus(newInjuries);
+      let _dataInjuries = `data.body_parts.${bodypart}.injuries`;
+      let _dataStatus = `data.body_parts.${bodypart}.status`;
+      let _update = {};
+      _update[_dataInjuries] = newInjuries;
+      _update[_dataStatus] = newStatus;
+      await this.actor.update(_update);
+    });
+    // ! END INJURIES
+
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
@@ -316,6 +355,16 @@ export class FalloutActorSheet extends ActorSheet {
       div.slideDown(200);
     }
     li.toggleClass("expanded");
+  }
+
+  _getBodyPartStatus(injuries) {
+    let maxStatus = Math.max(...injuries);
+    let newStatus = 'healthy';
+    if (maxStatus == 1)
+      newStatus = 'wounded';
+    else if (maxStatus == 2)
+      newStatus = 'crippled';
+    return newStatus;
   }
 
   /**

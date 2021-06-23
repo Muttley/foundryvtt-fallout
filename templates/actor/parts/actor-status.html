@@ -16,7 +16,7 @@
 <div class="condition-box flexrow">
 
     {{!-- LEFT COLUMN --}}
-    <div>
+    <div style="padding-right:30px;">
         <div class="flexrow resource-row align-mid">
             <label class="resource-label">LUCK</label>
             <input class="num-short-2" type="number" name="data.luckPoints" value="{{data.luckPoints}}">
@@ -82,10 +82,8 @@
         </div>
     </div>
 
-
-
     {{!-- RIGHT COLUMN --}}
-    <div>
+    <div style="padding-left:30px;">
         <div class="flexrow resource-row align-mid">
             <label class="resource-label">HEALTH</label>
             <div class="flex-group-right">
@@ -95,16 +93,19 @@
             </div>
         </div>
 
-        <div>
-            <h3>INJURIES</h3>
+        <div class="box">
+            <!-- <div class="box-header">
+                <h3>INJURIES</h3>
+            </div> -->
+
             {{#each data.body_parts as |body_part key|}}
             <div>
-                <div>
+                <div class="body-part-header">
                     <h4> {{localize (concat 'FALLOUT.BODYLOCATION.' key)}} {{body_part.hit.min}}-{{body_part.hit.max}}</h4>
                 </div>
                 <div class="injury-bar">
                     {{#each body_part.injuries as |injury index|}}
-                    <div class="injury-mark" data-bodypart="{{key}}" data-index="{{index}}" data-status="{{injury}}">{{injury}}</div>
+                    <div class="injury-mark condition{{injury}}" data-bodypart="{{key}}" data-index="{{index}}" data-status="{{injury}}">&nbsp;</div>
                     {{/each}}
                 </div>
             </div>
@@ -112,11 +113,7 @@
         </div>
 
 
-
-
-
-
-        {{#each data.body_parts as |body_part key|}}
+        <!-- {{#each data.body_parts as |body_part key|}}
         <div class="flexcol">
             <div class="bodypartheader">
                 <h3>
@@ -139,7 +136,8 @@
                 {{/each}}
             </div>
         </div>
-        {{/each}}
+        {{/each}} -->
+
     </div>
 </div>
 
