@@ -1,5 +1,16 @@
 <div class="status-plaque {{keypart}}" data-bodypart={{keypart}} data-status="{{bodypart.status}}">
-    <div class="status {{bodypart.status}}"></div>
+    <!-- <div class="status {{bodypart.status}}"></div> -->
+
+
+    <p style="color: black;">{{keypart}}</p>
+    <div class="injury-bar">
+        {{#each bodypart.injuries as |injury index|}}
+        <div class="injury-mark condition{{injury}}" data-bodypart="{{../keypart}}" data-index="{{index}}" data-status="{{injury}}">&nbsp;</div>
+        {{/each}}
+    </div>
+
+
+
     <div class="values flexrow">
         {{#each bodypart.resistance as |resistancevalue keyRes|}}
         <div class="defense-type">

@@ -567,10 +567,10 @@
 }
 
 .fallout .condition-box .pipboy-status-screen {
-  min-width: 300px;
-  max-width: 300px;
-  height: 300px;
-  max-height: 300px;
+  min-width: 390px;
+  max-width: 390px;
+  height: 390px;
+  max-height: 390px;
   margin: 0 0 20px 0;
   border: 0;
   padding: 0;
@@ -581,8 +581,8 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-preferred-size: 300px;
-  flex-basis: 300px;
+  -ms-flex-preferred-size: 390px;
+  flex-basis: 390px;
   border: 1px solid;
   border-radius: 6px;
 }
@@ -611,83 +611,109 @@
 }
 
 .fallout .condition-box .pipboy-status-screen .r1 .c1 {
-  background-image: url("../assets/ui/pipboy-body/part-1.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c1.png");
+  background-size: 130px 130px;
+}
+
+.fallout .condition-box .pipboy-status-screen .r1 .c2 {
+  background-size: 130px 130px;
 }
 
 .fallout .condition-box .pipboy-status-screen .r1 .c2.healthy {
-  background-image: url("../assets/ui/pipboy-body/head.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c2.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r1 .c2.wounded {
-  background-image: url("../assets/ui/pipboy-body/head-wounded.png");
+  background-image: url("../assets/ui/pipboy-body/wounded/c2.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r1 .c2.crippled {
-  background-image: url("../assets/ui/pipboy-body/head-crippled.png");
+  background-image: url("../assets/ui/pipboy-body/crippled/c2.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r1 .c3 {
-  background-image: url("../assets/ui/pipboy-body/part-3.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c3.png");
+  background-size: 130px 130px;
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c1 {
+  background-size: 130px 130px;
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c1.healthy {
-  background-image: url("../assets/ui/pipboy-body/armR.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c4.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c1.wounded {
-  background-image: url("../assets/ui/pipboy-body/armR-wounded.png");
+  background-image: url("../assets/ui/pipboy-body/wounded/c4.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c1.crippled {
-  background-image: url("../assets/ui/pipboy-body/crippled_04.png");
+  background-image: url("../assets/ui/pipboy-body/crippled/c4.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c2 {
+  background-size: 130px 130px;
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c2.healthy {
-  background-image: url("../assets/ui/pipboy-body/torso.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c5.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c2.wounded {
-  background-image: url("../assets/ui/pipboy-body/torso-wounded.png");
+  background-image: url("../assets/ui/pipboy-body/wounded/c5.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c2.crippled {
-  background-image: url("../assets/ui/pipboy-body/crippled_05.png");
+  background-image: url("../assets/ui/pipboy-body/crippled/c5.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r2 .c3 {
+  background-size: 130px 130px;
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c3.healthy {
-  background-image: url("../assets/ui/pipboy-body/armL.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c6.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c3.wounded {
-  background-image: url("../assets/ui/pipboy-body/armL-wounded.png");
+  background-image: url("../assets/ui/pipboy-body/wounded/c6.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r2 .c3.crippled {
-  background-image: url("../assets/ui/pipboy-body/crippled_06.png");
+  background-image: url("../assets/ui/pipboy-body/crippled/c6.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c1 {
+  background-size: 195px 130px;
 }
 
 .fallout .condition-box .pipboy-status-screen .r3 .c1.healthy {
-  background-image: url("../assets/ui/pipboy-body/legR.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c7.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r3 .c1.wounded {
-  background-image: url("../assets/ui/pipboy-body/legR-wounded.png");
+  background-image: url("../assets/ui/pipboy-body/wounded/c7.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r3 .c1.crippled {
-  background-image: url("../assets/ui/pipboy-body/crippled_07.png");
+  background-image: url("../assets/ui/pipboy-body/crippled/c7.png");
+}
+
+.fallout .condition-box .pipboy-status-screen .r3 .c2 {
+  background-size: 195px 130px;
 }
 
 .fallout .condition-box .pipboy-status-screen .r3 .c2.healthy {
-  background-image: url("../assets/ui/pipboy-body/legL.png");
+  background-image: url("../assets/ui/pipboy-body/healthy/c8.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r3 .c2.wounded {
-  background-image: url("../assets/ui/pipboy-body/legL-wounded.png");
+  background-image: url("../assets/ui/pipboy-body/wounded/c8.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .r3 .c2.crippled {
-  background-image: url("../assets/ui/pipboy-body/crippled_08.png");
+  background-image: url("../assets/ui/pipboy-body/crippled/c8.png");
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque {
@@ -816,7 +842,6 @@
   display: flex;
   margin-bottom: 5px;
   padding: 1px;
-  background-color: black;
 }
 
 .fallout .injury-bar .injury-mark {
