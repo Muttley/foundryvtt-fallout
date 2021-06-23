@@ -94,7 +94,9 @@
       .cell {
           flex: 1;
           flex-wrap: wrap;
-          position: relative;          
+          position: relative;
+          background-repeat: none;
+         
       }
 
       .r1 {
@@ -266,4 +268,25 @@
           }
       }
   }
+}
+
+.injury-bar{
+    display: flex;
+    //flex-direction: row;
+    //justify-content:space-between;
+    .injury-mark{
+        margin-right: 2px;       
+        border: 1px solid;
+        width:100%;
+        cursor: pointer;
+        &.healty{
+            background-color: white;
+        }
+        &.treated{
+            background-color: orange;
+        }
+        &.opened{
+            background-color: red;
+        }
+    }
 }

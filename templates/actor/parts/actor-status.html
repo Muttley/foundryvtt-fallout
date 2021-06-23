@@ -1,76 +1,121 @@
 {{!-- HEALTH & LUCK --}}
 <div class="flexrow">
-    <div>
-        HEALTH
-    </div>
-    <div>
-        LUCK
-    </div>
+
+
 </div>
 
 {{!-- DMG, DEFENSE, INITIATIVE --}}
 <div class="flexrow">
-    <div>
-        DMG BONUS
-    </div>
-    <div>
-        DEFENSE
-    </div>
-    <div>
-        INITIATIVE
-    </div>
+
 </div>
 
 {{!-- RESISTANCES --}}
-<div class="flexrow">
-    <div>
-        PHYS
-    </div>
-    <div>
-        ENG
-    </div>
-    <div>
-        RAD
-    </div>
-    <div>
-        POISON
-    </div>
-</div>
 
-{{!-- PIP BOY --}}
+
+{{!-- STATUS SCREEN --}}
 <div class="condition-box flexrow">
-    <div>LEFT COLUMNS</div>
-    <div class="pipboy-status-screen">
-        <div class="row r1">
-            <div class="cell c1"></div>
-            <div class="cell c2 head {{data.body_parts.head.status}}">
-                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head keypart="head"}}
-            </div>
-            <div class="cell c3"></div>
+
+    {{!-- LEFT COLUMN --}}
+    <div>
+        <div class="flexrow resource-row align-mid">
+            <label class="resource-label">LUCK</label>
+            <input class="num-short-2" type="number" name="data.luckPoints" value="{{data.luckPoints}}">
         </div>
-        <div class="row r2">
-            <div class="cell c1 armR {{data.body_parts.armR.status}}">
-                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR keypart="armR"}}
+        <div class="flexrow resource-row align-mid">
+            <label class="resource-label">MELEE DAMAGE</label>
+            <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
+        </div>
+        <div class="flexrow resource-row align-mid">
+            <label class="resource-label">DEFENSE</label>
+            <input class="num-short-2" type="number" name="data.defense.base" value="{{data.defense.base}}">
+        </div>
+        <div class="flexrow resource-row align-mid">
+            <label class="resource-label">INITIATIVE</label>
+            <input class="num-short-2" type="number" name="data.initiative.base" value="{{data.initiative.base}}">
+        </div>
+    </div>
+
+    {{!-- MIDDLE COLUMN --}}
+    <div>
+        <div class="flexrow">
+            <div>
+                PHYS
             </div>
-            <div class="cell c2 torso {{data.body_parts.torso.status}}">
-                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso keypart="torso"}}
+            <div>
+                ENG
             </div>
-            <div class="cell c3 armL {{data.body_parts.armL.status}}">
-                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL keypart="armL"}}
+            <div>
+                RAD
+            </div>
+            <div>
+                POISON
             </div>
         </div>
-        <div class="row r3">
-            <div class="cell c1 legR {{data.body_parts.legR.status}}">
-                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR keypart="legR"}}
+        {{!-- PIP BOY --}}
+        <div class="pipboy-status-screen">
+            <div class="row r1">
+                <div class="cell c1"></div>
+                <div class="cell c2 head {{data.body_parts.head.status}}">
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head keypart="head"}}
+                </div>
+                <div class="cell c3"></div>
             </div>
-            <div class="cell c2 legL {{data.body_parts.legL.status}}">
-                {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL keypart="legL"}}
+            <div class="row r2">
+                <div class="cell c1 armR {{data.body_parts.armR.status}}">
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR keypart="armR"}}
+                </div>
+                <div class="cell c2 torso {{data.body_parts.torso.status}}">
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso keypart="torso"}}
+                </div>
+                <div class="cell c3 armL {{data.body_parts.armL.status}}">
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL keypart="armL"}}
+                </div>
+            </div>
+            <div class="row r3">
+                <div class="cell c1 legR {{data.body_parts.legR.status}}">
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR keypart="legR"}}
+                </div>
+                <div class="cell c2 legL {{data.body_parts.legL.status}}">
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL keypart="legL"}}
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- <h3>DEFENSE</h3> -->
+
+
+    {{!-- RIGHT COLUMN --}}
     <div>
+        <div class="flexrow resource-row align-mid">
+            <label class="resource-label">HEALTH</label>
+            <div class="flex-group-right">
+                <input class="num-short-2" type="number" name="data.health.value" value="{{data.health.value}}">
+                <span class="align-mid">/</span>
+                <input class="num-short-2" type="number" name="data.health.max" value="{{data.health.max}}">
+            </div>
+        </div>
+
+        <div>
+            <h3>INJURIES</h3>
+            {{#each data.body_parts as |body_part key|}}
+            <div>
+                <div>
+                    <h4> {{localize (concat 'FALLOUT.BODYLOCATION.' key)}} {{body_part.hit.min}}-{{body_part.hit.max}}</h4>
+                </div>
+                <div class="injury-bar">
+                    {{#each body_part.injuries as |injury index|}}
+                    <div class="injury-mark" data-bodypart="{{key}}" data-index="{{index}}" data-status="{{injury}}">{{injury}}</div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+
+
+
+
+
         {{#each data.body_parts as |body_part key|}}
         <div class="flexcol">
             <div class="bodypartheader">
@@ -96,7 +141,6 @@
         </div>
         {{/each}}
     </div>
-
 </div>
 
 {{!-- ENCUMBRANCE AND STAUSES --}}
