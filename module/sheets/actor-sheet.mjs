@@ -240,14 +240,14 @@ export class FalloutActorSheet extends ActorSheet {
     // ! INJURIES
     html.find('.injury-mark').click(async (ev) => {
       let status = parseInt(ev.currentTarget.dataset["status"]);
-      if (status == 2)
-        return;
+      //if (status == 2)
+      //return;
       let index = ev.currentTarget.dataset["index"];
       let bodypart = ev.currentTarget.dataset["bodypart"];
       let injuries = this.actor.data.data.body_parts[bodypart].injuries;
       let newInjuries = [...injuries];
-      //newInjuries[index] = status == 2 ? 2 : status + 1;
-      newInjuries[index] = 2;
+      newInjuries[index] = status == 2 ? 0 : 2;
+      //newInjuries[index] = 2;
       let newStatus = this._getBodyPartStatus(newInjuries);
       let _update = {};
       let _dataInjuries = `data.body_parts.${bodypart}.injuries`;
@@ -259,13 +259,13 @@ export class FalloutActorSheet extends ActorSheet {
     });
     html.find('.injury-mark').contextmenu(async (ev) => {
       let status = parseInt(ev.currentTarget.dataset["status"]);
-      if (status == 0)
-        return;
+      //if (status == 0)
+      //return;
       let index = ev.currentTarget.dataset["index"];
       let bodypart = ev.currentTarget.dataset["bodypart"];
       let injuries = this.actor.data.data.body_parts[bodypart].injuries;
       let newInjuries = [...injuries];
-      newInjuries[index] = status == 0 ? 0 : status - 1;
+      newInjuries[index] = status == 1 ? 0 : 1;
       let newStatus = this._getBodyPartStatus(newInjuries);
       let _dataInjuries = `data.body_parts.${bodypart}.injuries`;
       let _dataStatus = `data.body_parts.${bodypart}.status`;

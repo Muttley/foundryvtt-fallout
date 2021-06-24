@@ -88,7 +88,7 @@
         display: flex;
         flex-direction: column;
         flex-basis: $screen-size;
-        background-color: #325885;
+        background-color: $f-screen;
         border: 1px solid;
         border-radius: 6px;
 
@@ -226,7 +226,7 @@
             flex-direction: column;
             cursor: pointer;
             min-width: 100px;
-            background-color: #325885;
+            background-color: $f-plaque;
             .values {
                 display: flex;
                 flex-direction: row;
@@ -239,12 +239,12 @@
                     .resistance-icon {
                         font-size: 1rem;
                         text-align: center;
-                        color: white;
+                        color: $f-plaque-text;
                     }
 
                     .label-value {
                         margin: 0;
-                        color: white;
+                        color: $f-plaque-text;
                     }
                 }
             }
@@ -356,15 +356,19 @@
             background-image: none;
         }
         &.condition1 {
-            //background-color: $f-wounded;
+            background-color: $f-wounded;
             background-color: none;
             background-image: url(../assets/ui/sticking-plaster.svg);
-            background-size: cover;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         &.condition2 {
-            //background-color: $f-crippled;
+            background-color: $f-crippled;
             background-image: url(../assets/ui/drop.svg);
-            background-size: cover;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
     :last-child {
@@ -387,11 +391,13 @@
         }
         .wounded {
             background-image: url(../assets/ui/sticking-plaster.svg);
-            background-size: cover;
+            background-size: contain;
+            background-position: center;
         }
         .crippled {
             background-image: url(../assets/ui/drop.svg);
-            background-size: cover;
+            background-size: contain;
+            background-position: center;
         }
     }
     p {

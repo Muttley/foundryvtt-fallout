@@ -23,6 +23,14 @@ $fa-grey: #b8b4a1;
 $fa-punch: #dbab96;
 $fa-purple: #b2abbc;
 
-$f-healthy: #86aa90;
-$f-wounded: #d8903f;
-$f-crippled: #ff0000;
+$f-vault-blue: #325885;
+$f-vault-green: #04dc17;
+
+$f-healthy: $f-vault-green;
+$f-wounded: #ffffff;
+$f-crippled: #ffffff;
+
+$f-screen: $f-vault-blue;
+$f-screen-line: #000000;
+$f-plaque: $f-vault-blue;
+$f-plaque-text: white;

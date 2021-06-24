@@ -872,19 +872,25 @@
 }
 
 .fallout .injury-bar .injury-mark.condition0 {
-  background-color: #86aa90;
+  background-color: #04dc17;
   background-image: none;
 }
 
 .fallout .injury-bar .injury-mark.condition1 {
+  background-color: #ffffff;
   background-color: none;
   background-image: url(../assets/ui/sticking-plaster.svg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fallout .injury-bar .injury-mark.condition2 {
+  background-color: #ffffff;
   background-image: url(../assets/ui/drop.svg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fallout .injury-bar :last-child {
@@ -911,17 +917,19 @@
 }
 
 .fallout .status-help-bar .help-item .healthy {
-  background-color: #86aa90;
+  background-color: #04dc17;
 }
 
 .fallout .status-help-bar .help-item .wounded {
   background-image: url(../assets/ui/sticking-plaster.svg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 .fallout .status-help-bar .help-item .crippled {
   background-image: url(../assets/ui/drop.svg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 .fallout .status-help-bar p {
