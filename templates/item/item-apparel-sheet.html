@@ -71,7 +71,7 @@
                     {{#each data.resistance as |resistance key|}}
                     <div class="flexrow resource-row align-mid">
                         <label for="data.resistance.{{key}}" class="capitalized">{{localize (concat 'FALLOUT.RESISTANCE.'key)}}</label>
-                        <input class="num-short-2" type="text" name="data.resistance.{{key}}" value="{{resistance}}" />
+                        <input class="num-short-2" type="number" name="data.resistance.{{key}}" value="{{resistance}}" />
                     </div>
                     {{/each}}
                 </div>

@@ -71,10 +71,9 @@ export class FalloutActorSheet extends ActorSheet {
     for (let [k, v] of Object.entries(context.data.attributes)) {
       v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
     }
-    console.warn("PREPING SHEET DATA")
+
     let allInjuries = [];
     for (const [key, bp] of Object.entries(this.actor.data.data.body_parts)) {
-      console.warn(bp.injuries)
       allInjuries.push.apply(allInjuries, bp.injuries);
     }
     context.treatedInjuriesCount = allInjuries.filter(i => i == 1).length;
@@ -246,6 +245,13 @@ export class FalloutActorSheet extends ActorSheet {
       li.slideUp(200, () => this.render(false));
     });
 
+    //Toggle Equip Inventory Item
+    html.find(".item-toggle").click(async (ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("item-id"));
+      await this.actor.updateEmbeddedDocuments("Item", [this._toggleEquipped(li.data("item-id"), item)]);
+    });
+
     // ! INJURIES
     html.find('.injury-mark').click(async (ev) => {
       let status = parseInt(ev.currentTarget.dataset["status"]);
@@ -301,6 +307,16 @@ export class FalloutActorSheet extends ActorSheet {
         li.addEventListener("dragstart", handler, false);
       });
     }
+
+    // DON't LET NUMBER FIELDS EMPTY
+    const numInputs = document.querySelectorAll('input[type=number]');
+    numInputs.forEach(function (input) {
+      input.addEventListener('change', function (e) {
+        if (e.target.value == '') {
+          e.target.value = 0
+        }
+      })
+    });
   }
 
   /**
@@ -406,6 +422,17 @@ export class FalloutActorSheet extends ActorSheet {
       });
       return roll;
     }
+  }
+
+  // ON TOGGLE EQUIPPED
+  //Toggle Equipment
+  _toggleEquipped(id, item) {
+    return {
+      _id: id,
+      data: {
+        equipped: !item.data.data.equipped,
+      },
+    };
   }
 
 }

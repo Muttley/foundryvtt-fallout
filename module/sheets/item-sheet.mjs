@@ -64,5 +64,15 @@ export class FalloutItemSheet extends ItemSheet {
     if (!this.isEditable) return;
 
     // Roll handlers, click handlers, etc. would go here.
+
+    // DON't LET NUMBER FIELDS EMPTY
+    const numInputs = document.querySelectorAll('input[type=number]');
+    numInputs.forEach(function (input) {
+      input.addEventListener('change', function (e) {
+        if (e.target.value == '') {
+          e.target.value = 0
+        }
+      })
+    });
   }
 }
