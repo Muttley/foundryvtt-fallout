@@ -82,13 +82,13 @@
         max-width: $screen-size;
         height: $screen-size;
         max-height: $screen-size;
-        margin: 0 0 20px 0;
+        margin: 0 0 5px 0;
         border: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         flex-basis: $screen-size;
-        //background-color: black;
+        background-color: #325885;
         border: 1px solid;
         border-radius: 6px;
 
@@ -225,8 +225,8 @@
             display: flex;
             flex-direction: column;
             cursor: pointer;
-            min-width: 80px;
-            background-color: white;
+            min-width: 100px;
+            background-color: #325885;
             .values {
                 display: flex;
                 flex-direction: row;
@@ -238,11 +238,24 @@
 
                     .resistance-icon {
                         font-size: 1rem;
+                        text-align: center;
+                        color: white;
                     }
 
                     .label-value {
                         margin: 0;
+                        color: white;
                     }
+                }
+            }
+
+            .status-header {
+                margin: 0;
+                padding: 2px 5px;
+                background-color: black;
+                p {
+                    color: white;
+                    margin: 0;
                 }
             }
 
@@ -267,7 +280,8 @@
             }
 
             &.head {
-                left: -60px;
+                left: -80px;
+                top: 10px;
             }
 
             &.torso {
@@ -275,35 +289,39 @@
             }
 
             &.armR {
-                top: 40px;
+                top: 50px;
+                left: 10px;
             }
 
             &.armL {
-                top: 40px;
+                top: 50px;
+                right: 10px;
             }
 
             &.legR {
                 top: 40px;
+                left: 10px;
             }
 
             &.legL {
                 top: 40px;
-                right: 0px;
+                right: 10px;
             }
         }
     }
 }
 .box {
-    padding: 0 5px;
-    //border: 1px solid black;
+    padding: 0 5px 5px 5px;
+    margin-bottom: 15px;
     background-color: white;
 
     .box-header {
         margin: 0 -5px 5px -5px;
-        padding: 5px 5px 0 5px;
+        padding: 5px 5px 2px 5px;
         background-color: rgb(0, 0, 0);
-        h3 {
-            color: white;
+        color: white;
+        * {
+            padding: 0;
             margin: 0;
         }
     }
@@ -334,17 +352,51 @@
         width: 100%;
         cursor: pointer;
         &.condition0 {
-            background-color: $fa-green;
+            background-color: $f-healthy;
+            background-image: none;
         }
         &.condition1 {
-            background-color: $f-blue;
+            //background-color: $f-wounded;
+            background-color: none;
+            background-image: url(../assets/ui/sticking-plaster.svg);
+            background-size: cover;
         }
         &.condition2 {
-            background-color: $f-red;
+            //background-color: $f-crippled;
+            background-image: url(../assets/ui/drop.svg);
+            background-size: cover;
         }
     }
-
     :last-child {
         margin-right: 0;
+    }
+}
+
+.status-help-bar {
+    .help-item {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        .symbol {
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+        }
+        .healthy {
+            background-color: $f-healthy;
+        }
+        .wounded {
+            background-image: url(../assets/ui/sticking-plaster.svg);
+            background-size: cover;
+        }
+        .crippled {
+            background-image: url(../assets/ui/drop.svg);
+            background-size: cover;
+        }
+    }
+    p {
+        font-size: 11px;
+        margin: 0;
+        padding: 0;
     }
 }

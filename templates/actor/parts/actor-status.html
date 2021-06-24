@@ -1,20 +1,4 @@
-{{!-- HEALTH & LUCK --}}
-<div class="flexrow">
-
-
-</div>
-
-{{!-- DMG, DEFENSE, INITIATIVE --}}
-<div class="flexrow">
-
-</div>
-
-{{!-- RESISTANCES --}}
-
-
-{{!-- STATUS SCREEN --}}
 <div class="condition-box flexrow">
-
     {{!-- LEFT COLUMN --}}
     <div style="padding-right:10px;">
         <div class="flexrow resource-row align-mid">
@@ -33,24 +17,46 @@
             <label class="resource-label">INITIATIVE</label>
             <input class="num-short-2" type="number" name="data.initiative.base" value="{{data.initiative.base}}">
         </div>
+        <div class="box">
+            <div class="box-header">
+                <h4>RESISTANCES</h4>
+            </div>
+            <div class="flexcol">
+                <div class="flexrow resource-row">
+                    <label for="data.resistance.physical">PHYS</label>
+                    <input type="number" name="data.resistance.physical" class="num-short-2" value="{{data.resistance.physical}}">
+                </div>
+                <div class="flexrow resource-row">
+                    <label for="data.resistance.energy">ENG</label>
+                    <input type="number" name="data.resistance.energy" class="num-short-2" value="{{data.resistance.energy}}">
+                </div>
+                <div class="flexrow resource-row">
+                    <label for="data.resistance.radiation">RAD</label>
+                    <input type="number" name="data.resistance.radiation" class="num-short-2" value="{{data.resistance.radiation}}">
+                </div>
+                <div class="flexrow resource-row">
+                    <label for="data.resistance.poison">POISON</label>
+                    <input type="number" name="data.resistance.poison" class="num-short-2" value="{{data.resistance.poison}}">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h4>ENCUMBRANCE</h4>
+            </div>
+            <div class="flexcol">
+                <div class="flexrow resource-row">
+                    <label for="">MAX &nbsp;</label>
+                    <input type="number" name="" class="num-short-2" value="">
+                </div>
+                <p>______&nbsp;______&nbsp;______</p>
+                <p>Total:0</p>
+            </div>
+        </div>
     </div>
 
     {{!-- MIDDLE COLUMN --}}
     <div>
-        <div class="flexrow">
-            <div>
-                PHYS
-            </div>
-            <div>
-                ENG
-            </div>
-            <div>
-                RAD
-            </div>
-            <div>
-                POISON
-            </div>
-        </div>
         {{!-- PIP BOY --}}
         <div class="pipboy-status-screen">
             <div class="row r1">
@@ -80,24 +86,69 @@
                 </div>
             </div>
         </div>
+
+        <div class="status-help-bar flexrow">
+            <div class="help-item">
+                <div class="symbol healthy"></div>
+                <p>Healthy</p>
+            </div>
+            <div class="help-item">
+                <div class="symbol wounded"></div>
+                <p>Trated injury</p>
+            </div>
+            <div class="help-item">
+                <div class="symbol crippled"></div>
+                <p>Injury</p>
+            </div>
+        </div>
+        <div class="status-help-bar flexrow">
+            <p>Left Click on boxes to set an Injury | Right Click to treat and heal</p>
+        </div>
     </div>
 
     {{!-- RIGHT COLUMN --}}
     <div style="padding-left:10px;">
-        <div class="flexrow resource-row align-mid">
-            <label class="resource-label">HEALTH</label>
-            <div class="flex-group-right">
+
+        <div class="box">
+            <div class="box-header">
+                <h3>HEALTH</h3>
+            </div>
+            <div class="flexrow align-mid">
                 <input class="num-short-2" type="number" name="data.health.value" value="{{data.health.value}}">
-                <span class="align-mid">/</span>
+                <span class="text-center">/</span>
                 <input class="num-short-2" type="number" name="data.health.max" value="{{data.health.max}}">
             </div>
         </div>
 
         <div class="box">
-            <!-- <div class="box-header">
-                <h3>INJURIES</h3>
-            </div> -->
+            <div class="box-header">
+                <h4>INJURIES</h4>
+            </div>
+            <div class="flexrow">
+                <p>Treated: {{treatedInjuries}}</p>
+                <p>Opened: {{openedInjuries}}</p>
+            </div>
+        </div>
 
+        <div class="box">
+            <div class="box-header">
+                <h4>POWER ARMOR HEALTH</h4>
+            </div>
+            {{#each data.body_parts as |part id|}}
+            <div class="flexrow resource-row">
+                <label>{{localize (concat 'FALLOUT.BODYLOCATION.' id)}}</label>
+                <input class="num-short-2" type="number" name="" value="">
+            </div>
+            {{/each}}
+        </div>
+
+
+
+        <!--<div class="box">
+             <div class="box-header">
+                <h3>INJURIES</h3>
+            </div> 
+            
             {{#each data.body_parts as |body_part key|}}
             <div>
                 <div class="body-part-header">
@@ -109,8 +160,8 @@
                     {{/each}}
                 </div>
             </div>
-            {{/each}}
-        </div>
+            {{/each}} 
+        </div>-->
 
 
         <!-- {{#each data.body_parts as |body_part key|}}
@@ -138,12 +189,5 @@
         </div>
         {{/each}} -->
 
-    </div>
-</div>
-
-{{!-- ENCUMBRANCE AND STAUSES --}}
-<div class="flexrow">
-    <div>
-        ENCUMBRANCE AND STAUSES
     </div>
 </div>

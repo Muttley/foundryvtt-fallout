@@ -119,6 +119,10 @@ Handlebars.registerHelper('damageFaIconClass', function (str) {
     return "fas fa-radiation";
 });
 
+Handlebars.registerHelper('getBodypartValue', function (str) {
+  return CONFIG.FALLOUT.BodyValues[str];
+});
+
 
 /* -------------------------------------------- */
 /*  Ready Hook                                  */

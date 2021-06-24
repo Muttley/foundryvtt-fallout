@@ -45,6 +45,6 @@ FALLOUT.BodyValues = {
   "torso": "3-8",
   "armL": "9-11",
   "armR": "12-14",
-  "lefL": "15-17",
+  "legL": "15-17",
   "legR": "18-20",
 }

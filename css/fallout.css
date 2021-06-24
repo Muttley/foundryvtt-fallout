@@ -571,7 +571,7 @@
   max-width: 390px;
   height: 390px;
   max-height: 390px;
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   border: 0;
   padding: 0;
   display: -webkit-box;
@@ -583,6 +583,7 @@
   flex-direction: column;
   -ms-flex-preferred-size: 390px;
   flex-basis: 390px;
+  background-color: #325885;
   border: 1px solid;
   border-radius: 6px;
 }
@@ -726,8 +727,8 @@
   -ms-flex-direction: column;
   flex-direction: column;
   cursor: pointer;
-  min-width: 80px;
-  background-color: white;
+  min-width: 100px;
+  background-color: #325885;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values {
@@ -752,9 +753,23 @@
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type .resistance-icon {
   font-size: 1rem;
+  text-align: center;
+  color: white;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type .label-value {
+  margin: 0;
+  color: white;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .status-header {
+  margin: 0;
+  padding: 2px 5px;
+  background-color: black;
+}
+
+.fallout .condition-box .pipboy-status-screen .status-plaque .status-header p {
+  color: white;
   margin: 0;
 }
 
@@ -784,7 +799,8 @@
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque.head {
-  left: -60px;
+  left: -80px;
+  top: 10px;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque.torso {
@@ -792,35 +808,40 @@
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque.armR {
-  top: 40px;
+  top: 50px;
+  left: 10px;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque.armL {
-  top: 40px;
+  top: 50px;
+  right: 10px;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque.legR {
   top: 40px;
+  left: 10px;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque.legL {
   top: 40px;
-  right: 0px;
+  right: 10px;
 }
 
 .fallout .box {
-  padding: 0 5px;
+  padding: 0 5px 5px 5px;
+  margin-bottom: 15px;
   background-color: white;
 }
 
 .fallout .box .box-header {
   margin: 0 -5px 5px -5px;
-  padding: 5px 5px 0 5px;
+  padding: 5px 5px 2px 5px;
   background-color: black;
+  color: white;
 }
 
-.fallout .box .box-header h3 {
-  color: white;
+.fallout .box .box-header * {
+  padding: 0;
   margin: 0;
 }
 
@@ -852,18 +873,61 @@
 
 .fallout .injury-bar .injury-mark.condition0 {
   background-color: #86aa90;
+  background-image: none;
 }
 
 .fallout .injury-bar .injury-mark.condition1 {
-  background-color: #729eb2;
+  background-color: none;
+  background-image: url(../assets/ui/sticking-plaster.svg);
+  background-size: cover;
 }
 
 .fallout .injury-bar .injury-mark.condition2 {
-  background-color: #e37e6c;
+  background-image: url(../assets/ui/drop.svg);
+  background-size: cover;
 }
 
 .fallout .injury-bar :last-child {
   margin-right: 0;
+}
+
+.fallout .status-help-bar .help-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.fallout .status-help-bar .help-item .symbol {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
+
+.fallout .status-help-bar .help-item .healthy {
+  background-color: #86aa90;
+}
+
+.fallout .status-help-bar .help-item .wounded {
+  background-image: url(../assets/ui/sticking-plaster.svg);
+  background-size: cover;
+}
+
+.fallout .status-help-bar .help-item .crippled {
+  background-image: url(../assets/ui/drop.svg);
+  background-size: cover;
+}
+
+.fallout .status-help-bar p {
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
 }
 
 .fallout .resource-label {
@@ -873,6 +937,9 @@
 .fallout .resource-row {
   padding: 2px;
   margin-bottom: 2px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .fallout .resource-header {
@@ -946,7 +1013,7 @@
   font-size: 22px;
 }
 
-.fallout .attributes-list .special-letter input[type=number] {
+.fallout .attributes-list .special-letter input[type="number"] {
   height: 36px;
   max-width: 36px;
   text-align: center;

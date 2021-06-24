@@ -1,83 +1,83 @@
 {
-  "FALLOUT.AbilityStr": "Strength",
-  "FALLOUT.AbilityPer": "Perception",
-  "FALLOUT.AbilityEnd": "Endurance",
-  "FALLOUT.AbilityCha": "Charisma",
-  "FALLOUT.AbilityInt": "Intelligence",
-  "FALLOUT.AbilityAgi": "Agility",
-  "FALLOUT.AbilityLuc": "Luck",
+    "FALLOUT.AbilityStr": "Strength",
+    "FALLOUT.AbilityPer": "Perception",
+    "FALLOUT.AbilityEnd": "Endurance",
+    "FALLOUT.AbilityCha": "Charisma",
+    "FALLOUT.AbilityInt": "Intelligence",
+    "FALLOUT.AbilityAgi": "Agility",
+    "FALLOUT.AbilityLuc": "Luck",
 
-  "FALLOUT.AbilityStrAbbr": "str",
-  "FALLOUT.AbilityPerAbbr": "per",
-  "FALLOUT.AbilityEndAbbr": "end",
-  "FALLOUT.AbilityChaAbbr": "cha",
-  "FALLOUT.AbilityIntAbbr": "int",
-  "FALLOUT.AbilityAgiAbbr": "agi",
-  "FALLOUT.AbilityLucAbbr": "luc",
+    "FALLOUT.AbilityStrAbbr": "str",
+    "FALLOUT.AbilityPerAbbr": "per",
+    "FALLOUT.AbilityEndAbbr": "end",
+    "FALLOUT.AbilityChaAbbr": "cha",
+    "FALLOUT.AbilityIntAbbr": "int",
+    "FALLOUT.AbilityAgiAbbr": "agi",
+    "FALLOUT.AbilityLucAbbr": "luc",
 
-  "FALLOUT.EffectCreate": "Create Effect",
-  "FALLOUT.EffectToggle": "Toggle Effect",
-  "FALLOUT.EffectEdit": "Edit Effect",
-  "FALLOUT.EffectDelete": "Delete Effect",
+    "FALLOUT.EffectCreate": "Create Effect",
+    "FALLOUT.EffectToggle": "Toggle Effect",
+    "FALLOUT.EffectEdit": "Edit Effect",
+    "FALLOUT.EffectDelete": "Delete Effect",
 
-  "FALLOUT.Add": "Add",
+    "FALLOUT.Add": "Add",
 
-  "FALLOUT.SKILL":{
-    "Athletics":"Athletics",
-    "Barter":"Barter",
-    "Big Guns":"Big Guns",
-    "Energy Weapons":"Energy Weapons",
-    "Explosives":"Explosives",
-    "Lockpick":"Lockpick",
-    "Medicine":"Medicine",
-    "Melee Weapons":"Melee Weapons",
-    "Pilot":"Pilot",
-    "Repair":"Repair",
-    "Science":"Science",
-    "Small Guns":"Small Guns",
-    "Sneak":"Sneak",
-    "Speech":"Speech",
-    "Survival":"Survival",
-    "Throwing":"Throwing",
-    "Unarmed":"Unarmed"
-  },
-  "FALLOUT.BODYLOCATION":{
-    "head":"Head",
-    "torso":"Torso",
-    "armR": "Arm Right",
-    "armL": "Arm Left",
-    "legR": "Leg Right",
-    "legL": "Leg Left"
-  },
-  "FALLOUT.BODYLOCATION_ABBR":{
-    "head":"H",
-    "torso":"T",
-    "armR": "AR",
-    "armL": "AL",
-    "legR": "LR",
-    "legL": "LL"
-  },
-  "FALLOUT.RESISTANCE":{
-    "physical": "Physical",
-    "energy": "Energy",
-    "radiation": "Radiation",
-    "poison": "Poison"
-  },
-  "FALLOUT.APPAREL":{
-    "clothing": "Clothing",
-    "outfit": "Outfit",
-    "armor": "Armor",
-    "headgear": "Headgear",
-    "powerArmor": "Power Armor"
-  },
-  "FALLOUT.equipped":"Equipped",
-  "FALLOUT.powered":"Powered",
-  "FALLOUT.HEALTH":{
-    "health":"Health",
-    "max":"Max Health",
-    "current":"Current Health"
-  },
-  "FALLOUT.MODS":{
-    "mods": "Mods"
-  }
+    "FALLOUT.SKILL": {
+        "Athletics": "Athletics",
+        "Barter": "Barter",
+        "Big Guns": "Big Guns",
+        "Energy Weapons": "Energy Weapons",
+        "Explosives": "Explosives",
+        "Lockpick": "Lockpick",
+        "Medicine": "Medicine",
+        "Melee Weapons": "Melee Weapons",
+        "Pilot": "Pilot",
+        "Repair": "Repair",
+        "Science": "Science",
+        "Small Guns": "Small Guns",
+        "Sneak": "Sneak",
+        "Speech": "Speech",
+        "Survival": "Survival",
+        "Throwing": "Throwing",
+        "Unarmed": "Unarmed"
+    },
+    "FALLOUT.BODYLOCATION": {
+        "head": "Head",
+        "torso": "Torso",
+        "armR": "Right Arm",
+        "armL": "Left Arm",
+        "legR": "Right Leg",
+        "legL": "Left Leg"
+    },
+    "FALLOUT.BODYLOCATION_ABBR": {
+        "head": "H",
+        "torso": "T",
+        "armR": "AR",
+        "armL": "AL",
+        "legR": "LR",
+        "legL": "LL"
+    },
+    "FALLOUT.RESISTANCE": {
+        "physical": "Physical",
+        "energy": "Energy",
+        "radiation": "Radiation",
+        "poison": "Poison"
+    },
+    "FALLOUT.APPAREL": {
+        "clothing": "Clothing",
+        "outfit": "Outfit",
+        "armor": "Armor",
+        "headgear": "Headgear",
+        "powerArmor": "Power Armor"
+    },
+    "FALLOUT.equipped": "Equipped",
+    "FALLOUT.powered": "Powered",
+    "FALLOUT.HEALTH": {
+        "health": "Health",
+        "max": "Max Health",
+        "current": "Current Health"
+    },
+    "FALLOUT.MODS": {
+        "mods": "Mods"
+    }
 }
