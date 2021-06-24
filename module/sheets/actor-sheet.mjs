@@ -71,6 +71,15 @@ export class FalloutActorSheet extends ActorSheet {
     for (let [k, v] of Object.entries(context.data.attributes)) {
       v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
     }
+    console.warn("PREPING SHEET DATA")
+    let allInjuries = [];
+    for (const [key, bp] of Object.entries(this.actor.data.data.body_parts)) {
+      console.warn(bp.injuries)
+      allInjuries.push.apply(allInjuries, bp.injuries);
+    }
+    context.treatedInjuriesCount = allInjuries.filter(i => i == 1).length;
+    context.openInjuriesCount = allInjuries.filter(i => i == 2).length;
+
   }
 
   /**

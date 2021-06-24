@@ -107,7 +107,7 @@
 
         .r1 {
             .c1 {
-                background-image: url("../assets/ui/pipboy-body/healthy/c1.png");
+                background-image: url("../assets/ui/pipboy-body/healthy/c_01.png");
                 background-size: $cell-wh $cell-wh;
                 //background-image: url("../assets/ui/pipboy-body/part-1.png");
             }
@@ -115,22 +115,22 @@
             .c2 {
                 background-size: $cell-wh $cell-wh;
                 &.healthy {
-                    background-image: url("../assets/ui/pipboy-body/healthy/c2.png");
+                    background-image: url("../assets/ui/pipboy-body/healthy/c_02.png");
 
                     //background-image: url("../assets/ui/pipboy-body/head.png");
                 }
 
                 &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c2.png");
+                    background-image: url("../assets/ui/pipboy-body/wounded/c_02.png");
                 }
 
                 &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c2.png");
+                    background-image: url("../assets/ui/pipboy-body/crippled/c_02.png");
                 }
             }
 
             .c3 {
-                background-image: url("../assets/ui/pipboy-body/healthy/c3.png");
+                background-image: url("../assets/ui/pipboy-body/healthy/c_03.png");
                 background-size: $cell-wh $cell-wh;
                 //background-image: url("../assets/ui/pipboy-body/part-3.png");
             }
@@ -141,15 +141,15 @@
                 background-size: $cell-wh $cell-wh;
                 &.healthy {
                     //background-image: url("../assets/ui/pipboy-body/armR.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c4.png");
+                    background-image: url("../assets/ui/pipboy-body/healthy/c_04.png");
                 }
 
                 &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c4.png");
+                    background-image: url("../assets/ui/pipboy-body/wounded/c_04.png");
                 }
 
                 &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c4.png");
+                    background-image: url("../assets/ui/pipboy-body/crippled/c_04.png");
                 }
             }
 
@@ -157,15 +157,15 @@
                 background-size: $cell-wh $cell-wh;
                 &.healthy {
                     //background-image: url("../assets/ui/pipboy-body/torso.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c5.png");
+                    background-image: url("../assets/ui/pipboy-body/healthy/c_05.png");
                 }
 
                 &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c5.png");
+                    background-image: url("../assets/ui/pipboy-body/wounded/c_05.png");
                 }
 
                 &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c5.png");
+                    background-image: url("../assets/ui/pipboy-body/crippled/c_05.png");
                 }
             }
 
@@ -173,15 +173,15 @@
                 background-size: $cell-wh $cell-wh;
                 &.healthy {
                     //background-image: url("../assets/ui/pipboy-body/armL.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c6.png");
+                    background-image: url("../assets/ui/pipboy-body/healthy/c_06.png");
                 }
 
                 &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c6.png");
+                    background-image: url("../assets/ui/pipboy-body/wounded/c_06.png");
                 }
 
                 &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c6.png");
+                    background-image: url("../assets/ui/pipboy-body/crippled/c_06.png");
                 }
             }
         }
@@ -191,31 +191,31 @@
                 background-size: $cell-w $cell-wh;
                 &.healthy {
                     //background-image: url("../assets/ui/pipboy-body/legR.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c7.png");
+                    background-image: url("../assets/ui/pipboy-body/healthy/c_07.png");
                 }
 
                 &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c7.png");
+                    background-image: url("../assets/ui/pipboy-body/wounded/c_07.png");
                 }
 
                 &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c7.png");
+                    background-image: url("../assets/ui/pipboy-body/crippled/c_07.png");
                 }
             }
 
             .c2 {
                 background-size: $cell-w $cell-wh;
                 &.healthy {
-                    background-image: url("../assets/ui/pipboy-body/healthy/c8.png");
+                    background-image: url("../assets/ui/pipboy-body/healthy/c_08.png");
                     //background-image: url("../assets/ui/pipboy-body/legL.png");
                 }
 
                 &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c8.png");
+                    background-image: url("../assets/ui/pipboy-body/wounded/c_08.png");
                 }
 
                 &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c8.png");
+                    background-image: url("../assets/ui/pipboy-body/crippled/c_08.png");
                 }
             }
         }
