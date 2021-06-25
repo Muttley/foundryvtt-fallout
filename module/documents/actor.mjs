@@ -1,5 +1,3 @@
-import { FalloutItemSheet } from "../sheets/item-sheet.mjs";
-//import { FALLOUT } from "../helpers/config.mjs";
 
 /**
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
@@ -39,6 +37,7 @@ export class FalloutActor extends Actor {
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
     this._prepareCharacterData(actorData);
+    this._prepareRobotData(actorData);
     this._prepareNpcData(actorData);
   }
 
@@ -47,15 +46,14 @@ export class FalloutActor extends Actor {
    */
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
-    // Make modifications to data here. For example:
     const data = actorData.data;
-
     this._calculateBodyResistance(actorData);
-    // Loop through ability scores, and add their modifiers to our sheet output.
-    //for (let [key, ability] of Object.entries(data.attributes)) {
-    // Calculate the modifier using d20 rules.
-    //ability.mod = Math.floor((ability.value - 10) / 2);
-    //}
+  }
+
+  _prepareRobotData(actorData) {
+    if (actorData.type !== 'robot') return;
+    const data = actorData.data;
+    //this._calculateBodyResistance(actorData);
   }
 
   _calculateBodyResistance(actorData) {
@@ -139,36 +137,6 @@ export class FalloutActor extends Actor {
       }
     }
 
-
-
-    console.warn(outfitedLocations);
-
-
-
-    // Check if there is an OUTFIT:
-    // let outfit = actorData.items.find(i => i.type == 'apparel' && i.data.data.appareltype == 'outfit' && i.data.data.equipped);
-    // if (outfit != null) {
-    //   let outfitData = outfit.data.toObject();
-    //   console.warn(outfitData.data.location);
-    //   //return;
-    //   for (let [k, v] of Object.entries(outfitData.data.location)) {
-    //     if (v == true) {
-    //       outfitedLocations[k] = true;
-    //       actorData.data.body_parts[k].resistance.physical = outfitData.data.resistance.physical;
-    //       actorData.data.body_parts[k].resistance.energy = outfitData.data.resistance.energy;
-    //       actorData.data.body_parts[k].resistance.radiation = outfitData.data.resistance.radiation;
-    //     } else {
-    //       if (k !== 'head') {
-    //         outfitedLocations[k] = true;
-    //         actorData.data.body_parts[k].resistance.physical = 0;
-    //         actorData.data.body_parts[k].resistance.energy = 0;
-    //         actorData.data.body_parts[k].resistance.radiation = 0;
-    //       }
-    //     }
-    //   }
-    // }
-    // console.warn(outfitedLocations);
-    // console.warn(actorData.data.body_parts);
   }
 
   /**
@@ -199,13 +167,11 @@ export class FalloutActor extends Actor {
    * Prepare character roll data.
    */
   _getCharacterRollData(data) {
-    if (this.data.type !== 'character') return;
+    if (this.data.type !== 'character' || this.data.type !== 'robot') return;
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.mod + 4`.
     if (data.attributes) {
       for (let [k, v] of Object.entries(data.attributes)) {
-        //console.log(k);
-        //console.log(v);
         data[k] = foundry.utils.deepClone(v);
       }
     }
@@ -226,14 +192,16 @@ export class FalloutActor extends Actor {
   }
 
   async _preCreate(data, options, user) {
-    await super._preCreate(data, options, user);
-    let packSkills = await game.packs.get('fallout.skills').getDocuments();
-    const items = this.items.map(i => i.toObject());
-    packSkills.forEach(s => {
-      items.push(s.toObject());
-    });
-    this.data.update({ items });
-
+    // Add Skills to Characters and Robots
+    if (this.data.type !== 'npc') {
+      await super._preCreate(data, options, user);
+      let packSkills = await game.packs.get('fallout.skills').getDocuments();
+      const items = this.items.map(i => i.toObject());
+      packSkills.forEach(s => {
+        items.push(s.toObject());
+      });
+      this.data.update({ items });
+    }
 
     //const item = new CONFIG.Item.documentClass({name: 'Foo', type: 'feat'});
 

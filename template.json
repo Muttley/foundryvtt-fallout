@@ -1,6 +1,6 @@
 {
     "Actor": {
-        "types": ["character", "npc"],
+        "types": ["character", "robot", "npc"],
         "templates": {
             "base": {
                 "origin": "",
@@ -10,7 +10,33 @@
                     "nextLevelXP": 0
                 },
                 "biography": "",
-                "description": ""
+                "description": "",
+                "trait": ""
+            },
+            "stats": {
+                "attributes": {
+                    "str": {
+                        "value": 1
+                    },
+                    "per": {
+                        "value": 1
+                    },
+                    "end": {
+                        "value": 1
+                    },
+                    "cha": {
+                        "value": 1
+                    },
+                    "int": {
+                        "value": 1
+                    },
+                    "agi": {
+                        "value": 1
+                    },
+                    "luc": {
+                        "value": 1
+                    }
+                }
             },
             "derived": {
                 "health": {
@@ -44,7 +70,8 @@
                     "base": 0,
                     "value": 0,
                     "mod": 0
-                }
+                },
+                "luckPoints": 0
             },
             "body": {
                 "body_parts": {
@@ -130,32 +157,10 @@
             }
         },
         "character": {
-            "templates": ["base", "derived", "body"],
-            "attributes": {
-                "str": {
-                    "value": 1
-                },
-                "per": {
-                    "value": 1
-                },
-                "end": {
-                    "value": 1
-                },
-                "cha": {
-                    "value": 1
-                },
-                "int": {
-                    "value": 1
-                },
-                "agi": {
-                    "value": 1
-                },
-                "luc": {
-                    "value": 1
-                }
-            },
-            "luckPoints": 0,
-            "trait": ""
+            "templates": ["base", "derived", "body", "stats"]
+        },
+        "robot": {
+            "templates": ["base", "derived", "body", "stats"]
         },
         "npc": {
             "templates": ["base"],
@@ -163,7 +168,7 @@
         }
     },
     "Item": {
-        "types": ["skill", "perk", "weapon", "weapon_mod", "apparel"],
+        "types": ["skill", "perk", "weapon", "weapon_mod", "apparel", "robot_armor"],
         "templates": {
             "base": {
                 "description": ""
@@ -266,6 +271,25 @@
                 "current": 0,
                 "list": ""
             }
+        },
+        "robot_armor": {
+            "templates": ["base", "physical", "equipable"],
+            "resistance": {
+                "physical": 0,
+                "energy": 0,
+                "radiation": 0
+            },
+            "location": {
+                "head": false,
+                "torso": true,
+                "armR": false,
+                "armL": false,
+                "legR": false,
+                "legL": false
+            },
+            "perks": "",
+            "carry": 0,
+            "mods": ""
         }
     }
 }

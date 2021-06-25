@@ -2,7 +2,8 @@
     <!-- <div class="status {{bodypart.status}}"></div> -->
 
     <div class="status-header">
-        <p>{{localize (concat 'FALLOUT.BODYLOCATION.' keypart)}}&nbsp;{{getBodypartValue keypart}}</p>
+        {{log actor.type}}
+        <p>{{localize (concat 'FALLOUT.BODYLOCATION.' actor.type '.' keypart)}}&nbsp;{{getBodypartValue keypart}}</p>
     </div>
 
     <div class="injury-bar">

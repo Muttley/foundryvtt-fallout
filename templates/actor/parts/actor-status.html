@@ -127,17 +127,19 @@
             </div>
         </div>
 
+        {{#ifCond actor.type '==' 'character'}}
         <div class="box">
             <div class="box-header">
                 <h4>POWER ARMOR HEALTH</h4>
             </div>
             {{#each data.body_parts as |part id|}}
             <div class="flexrow resource-row">
-                <label>{{localize (concat 'FALLOUT.BODYLOCATION.' id)}}</label>
+                <label>{{localize (concat 'FALLOUT.BODYLOCATION.' ../actor.type '.' id)}}</label>
                 <input class="num-short-2" type="number" name="" value="">
             </div>
             {{/each}}
         </div>
+        {{/ifCond}}
 
 
 

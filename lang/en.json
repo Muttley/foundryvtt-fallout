@@ -41,7 +41,7 @@
         "Throwing": "Throwing",
         "Unarmed": "Unarmed"
     },
-    "FALLOUT.BODYLOCATION": {
+    "FALLOUT.BODYLOCATION.character": {
         "head": "Head",
         "torso": "Torso",
         "armR": "Right Arm",
@@ -49,13 +49,29 @@
         "legR": "Right Leg",
         "legL": "Left Leg"
     },
-    "FALLOUT.BODYLOCATION_ABBR": {
+    "FALLOUT.BODYLOCATION_ABBR.character": {
         "head": "H",
         "torso": "T",
         "armR": "AR",
         "armL": "AL",
         "legR": "LR",
         "legL": "LL"
+    },
+    "FALLOUT.BODYLOCATION.robot": {
+        "head": "Optics",
+        "torso": "Main Body",
+        "armR": "Arm 2",
+        "armL": "Arm 1",
+        "legR": "Thruster",
+        "legL": "Arm 3"
+    },
+    "FALLOUT.BODYLOCATION_ABBR.robot": {
+        "head": "O",
+        "torso": "MB",
+        "armR": "A2",
+        "armL": "A1",
+        "legR": "TH",
+        "legL": "A3"
     },
     "FALLOUT.RESISTANCE": {
         "physical": "Physical",
@@ -79,5 +95,10 @@
     },
     "FALLOUT.MODS": {
         "mods": "Mods"
+    },
+    "FALLOUT.LEVEL": {
+        "Level": "Level",
+        "CurrentXP": "Current XP",
+        "NextXP": "Next Level XP"
     }
 }

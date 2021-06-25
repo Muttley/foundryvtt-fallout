@@ -1,0 +1,32 @@
+<header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+    <div class="flexrow">
+        <div class="flexcol">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+            <label for="data.origin" class="resource-label">{{localize "FALLOUT.ORIGIN"}}</label>
+            <input type="text" name="data.origin" value="{{data.origin}}" data-dtype="String" />
+        </div>
+
+        <div class="resources grid grid-3col">
+            <div class="resource flex-group-center">
+                <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="data.level.currentXP" value="{{data.level.currentXP}}" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="resource flex-group-center">
+                <label for="data.power.value" class="resource-label">{{localize "FALLOUT.LEVEL.NextXP"}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="data.level.nextLevelXP" value="{{data.level.nextLevelXP}}" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="resource flex-group-center">
+                <label for="data.level.value" class="resource-label">{{localize "FALLOUT.LEVEL.Level"}}</label>
+                <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" name="data.level.value" value="{{data.level.value}}" data-dtype="Number" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>

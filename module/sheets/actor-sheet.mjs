@@ -39,7 +39,7 @@ export class FalloutActorSheet extends ActorSheet {
     context.flags = actorData.flags;
 
     // Prepare character data and items.
-    if (actorData.type == 'character') {
+    if (actorData.type == 'character' || actorData.type == 'robot') {
       this._prepareItems(context);
       this._prepareCharacterData(context);
     }

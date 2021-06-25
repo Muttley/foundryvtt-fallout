@@ -22,7 +22,7 @@
             <div class="flexrow flexlarge item-info align-mid">
                 <div class="text-center">
                     {{#each item.data.location as |hasLoc loc|}}
-                    <span class="font-size-11">{{#ifCond hasLoc '==' true}}{{localize (concat "FALLOUT.BODYLOCATION_ABBR." loc)}}&nbsp;{{/ifCond}}</span>
+                    <span class="font-size-11">{{#ifCond hasLoc '==' true}}{{localize (concat "FALLOUT.BODYLOCATION_ABBR." ../../../actor.type "." loc)}}&nbsp;{{/ifCond}}</span>
                     {{/each}}
                 </div>
                 <div class="text-center">
