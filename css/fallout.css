@@ -833,6 +833,18 @@
   background-color: white;
 }
 
+.fallout .box.no-padding {
+  padding: 0;
+}
+
+.fallout .box.no-padding .box-header {
+  margin: 0 0 0 0;
+}
+
+.fallout .box.no-padding div {
+  padding: 5px;
+}
+
 .fallout .box .box-header {
   margin: 0 -5px 5px -5px;
   padding: 5px 5px 2px 5px;
@@ -843,6 +855,14 @@
 .fallout .box .box-header * {
   padding: 0;
   margin: 0;
+}
+
+.fallout .cEven {
+  background-color: #e2efe6;
+}
+
+.fallout .cOdd {
+  background-color: #c3dfcb;
 }
 
 .fallout .body-part-header {
@@ -936,6 +956,11 @@
   font-size: 11px;
   margin: 0;
   padding: 0;
+}
+
+.fallout input[type="text"],
+.fallout input[type="number"] {
+  background-color: #f0f0f0;
 }
 
 .fallout .resource-label {

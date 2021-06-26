@@ -1,6 +1,6 @@
 {
     "Actor": {
-        "types": ["character", "robot", "npc"],
+        "types": ["character", "robot", "npc", "creature"],
         "templates": {
             "base": {
                 "origin": "",
@@ -163,8 +163,67 @@
             "templates": ["base", "derived", "body", "stats"]
         },
         "npc": {
+            "templates": ["base"]
+        },
+        "creature": {
             "templates": ["base"],
-            "cr": 0
+            "powerLevel": "normal",
+            "body": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "mind": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "melee": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "guns": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "other": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "health": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "initiative": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "defense": {
+                "value": 0,
+                "min": 0,
+                "max": 1,
+                "mod": 0
+            },
+            "resistance": {
+                "physical": { "value": 0, "locations": "" },
+                "energy": { "value": 0, "locations": "" },
+                "radiation": { "value": 0, "locations": "" },
+                "poison": { "value": 0, "locations": "" }
+            },
+            "locations": [],
+            "injuries": ""
         }
     },
     "Item": {

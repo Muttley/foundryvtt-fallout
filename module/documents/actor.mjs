@@ -192,9 +192,10 @@ export class FalloutActor extends Actor {
   }
 
   async _preCreate(data, options, user) {
+    await super._preCreate(data, options, user);
+
     // Add Skills to Characters and Robots
     if (this.data.type !== 'npc') {
-      await super._preCreate(data, options, user);
       let packSkills = await game.packs.get('fallout.skills').getDocuments();
       const items = this.items.map(i => i.toObject());
       packSkills.forEach(s => {
@@ -202,11 +203,6 @@ export class FalloutActor extends Actor {
       });
       this.data.update({ items });
     }
-
-    //const item = new CONFIG.Item.documentClass({name: 'Foo', type: 'feat'});
-
-    //items.push(item.toObject());
-    //this.data.update({ items });
   }
 
 }

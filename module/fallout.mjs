@@ -117,6 +117,8 @@ Handlebars.registerHelper('damageFaIconClass', function (str) {
     return "fas fa-bolt";
   else if (str == "radiation")
     return "fas fa-radiation";
+  else if (str == "poison")
+    return "fas fa-biohazard";
 });
 
 Handlebars.registerHelper('getBodypartValue', function (str) {
@@ -265,22 +267,3 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
 });
 
 
-/*
-export class FalloutDcDie extends Die {
-  constructor(termData) {
-    termData.faces = 6;
-    super(termData);
-  }
-  static DENOMINATION = "b";
-  getResultLabel(result) {
-    return {
-      1: '<img src="systems/fallout/assets/dice/d1.webp" />',
-      2: '<img src="systems/fallout/assets/dice/d2.webp" />',
-      3: '<img src="systems/fallout/assets/dice/d3.webp" />',
-      4: '<img src="systems/fallout/assets/dice/d4.webp" />',
-      5: '<img src="systems/fallout/assets/dice/d5.webp" />',
-      6: '<img src="systems/fallout/assets/dice/d6.webp" />',
-    }[result.result];
-  }
-}
-*/

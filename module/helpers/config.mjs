@@ -48,3 +48,23 @@ FALLOUT.BodyValues = {
   "legL": "15-17",
   "legR": "18-20",
 }
+
+
+FALLOUT.powerLevel = {
+  "normal": "normal",
+  "mighty": "mighty",
+  "legendary": "legendary"
+}
+
+FALLOUT.resistanceIcons = {
+  'physical': 'fas fa-fist-raised',
+  'energy': 'fas fa-bolt',
+  'radiation': 'fas fa-radiation',
+  'poison': 'fas fa-biohazard',
+}
+
+// FALLOUT.creatureBodyLocation = {
+//   "name": "",
+//   "resistance": { "physical": 0, "energy": 0, "radiation": 0, "poison": 0 }
+// }
+

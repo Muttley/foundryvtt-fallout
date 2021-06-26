@@ -1,0 +1,121 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    {{> "systems/fallout/templates/actor/parts/actor-header.html"}}
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        {{!-- Default tab is specified in actor-sheet.mjs --}}
+
+        <a class="item" data-tab="skills">Abilities</a>
+        <a class="item" data-tab="data">Data</a>
+        <!-- <a class="item" data-tab="effects">Effects</a> -->
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Owned skills Tab --}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            <section class="grid grid-2col">
+                <div class="left-column">
+                    <div class="flexrow resource-row">
+                        <div class="box no-padding cOdd">
+                            <h3 class="box-header text-center">BODY</h3>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.body.value" value="{{data.body.value}}">
+                            </div>
+                        </div>
+                        <div class="box no-padding cEven" style="margin-right: 5px;">
+                            <h3 class="box-header text-center">MIND</h3>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.mind.value" value="{{data.mind.value}}">
+                            </div>
+                        </div>
+
+                        <div class="box no-padding cOdd">
+                            <h3 class="box-header text-center">MELEE</h3>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.melee.value" value="{{data.melee.value}}">
+                            </div>
+                        </div>
+                        <div class="box no-padding cEven">
+                            <h3 class="box-header text-center">GUNS</h3>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.guns.value" value="{{data.guns.value}}">
+                            </div>
+                        </div>
+                        <div class="box no-padding cOdd">
+                            <h3 class="box-header text-center">OTHER</h3>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.other.value" value="{{data.other.value}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexrow resource-row">
+                        <div class="box no-padding cOdd">
+                            <h4 class="box-header text-center">HP</h4>
+                            <div class="flexrow">
+                                <input class="num-short-3" type="number" name="data.health.value" value="{{data.health.value}}">
+                                <label class="text-center"> / </label>
+                                <input class="num-short-3" type="number" name="data.health.max" value="{{data.health.max}}">
+                            </div>
+                        </div>
+                        <div class="box no-padding cEven">
+                            <h4 class="box-header text-center">INITIATIVE</h4>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.initiative.value" value="{{data.initiative.value}}">
+                            </div>
+                        </div>
+                        <div class="box no-padding cOdd">
+                            <h4 class="box-header text-center">DEFENSE</h4>
+                            <div class="text-center">
+                                <input class="num-short-2" type="number" name="data.defense.value" value="{{data.defense.value}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box no-padding cOdd">
+                        <h4 class="box-header text-center">RESISTANCES</h4>
+                        {{#each data.resistance as |res key|}}
+                        <div class="flexrow resource-row">
+                            <span class="align-mid" style="display: flex;">
+                                <label for="data.resistance.{{key}}.locations" style="margin-right: 5px; width: 20px;" class=""><i class="{{damageFaIconClass key}}"></i></label>
+                                <input type="text" class="flex3" name="data.resistance.{{key}}.locations" value="{{res.locations}}">
+                            </span>
+                            <input type="number" class="num-short-2" name="data.resistance.{{key}}.value" value="{{res.value}}">
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="box no-padding cEven">
+                        <h4 class="box-header text-center">LOCATIONS & INJURIES</h4>
+                        <textarea name="data.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{data.injuries}}</textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="box no-padding cEven">
+                        <h4 class="box-header text-center">ATTACKS</h4>
+                    </div>
+                    <div class="box no-padding cEven">
+                        <h4 class="box-header text-center">SPECIAL ABILITIES</h4>
+                    </div>
+                    <div class="box no-padding cEven">
+                        <h4 class="box-header text-center">INVENTORY</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        {{!-- Biography Tab --}}
+        <div class="tab biography" data-group="primary" data-tab="data">
+            {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
+            {{editor content=data.biography target="data.biography" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Active Effects Tab --}}
+        <!-- <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+            {{> "systems/fallout/templates/actor/parts/actor-effects.html"}}
+        </div> -->
+
+    </section>
+</form>

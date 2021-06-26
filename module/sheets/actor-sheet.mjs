@@ -308,6 +308,9 @@ export class FalloutActorSheet extends ActorSheet {
       });
     }
 
+    // !CRATURES
+
+
     // DON't LET NUMBER FIELDS EMPTY
     const numInputs = document.querySelectorAll('input[type=number]');
     numInputs.forEach(function (input) {
