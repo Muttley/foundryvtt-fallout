@@ -227,7 +227,7 @@
         }
     },
     "Item": {
-        "types": ["skill", "perk", "weapon", "weapon_mod", "apparel", "robot_armor"],
+        "types": ["skill", "perk", "weapon", "weapon_mod", "apparel", "robot_armor", "special_ability"],
         "templates": {
             "base": {
                 "description": ""
@@ -349,6 +349,9 @@
             "perks": "",
             "carry": 0,
             "mods": ""
+        },
+        "special_ability": {
+            "templates": ["base"]
         }
     }
 }
