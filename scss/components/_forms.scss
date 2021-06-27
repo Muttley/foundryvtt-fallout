@@ -320,7 +320,7 @@
         .box-header {
             margin: 0 0 0 0;
         }
-        div {
+        & > div {
             padding: 5px;
         }
     }
@@ -337,10 +337,10 @@
     }
 }
 
-.cEven {
+.bgOdd {
     background-color: $f-list-green-1;
 }
-.cOdd {
+.bgEven {
     background-color: $f-list-green-2;
 }
 

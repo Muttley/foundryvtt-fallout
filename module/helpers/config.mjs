@@ -1,10 +1,5 @@
 export const FALLOUT = {};
 
-// Define constants here, such as:
-/**
- * The set of Ability Scores used within the sytem.
- * @type {Object}
- */
 FALLOUT.attributes = {
   "str": "FALLOUT.AbilityStr",
   "per": "FALLOUT.AbilityPer",
@@ -26,6 +21,17 @@ FALLOUT.abilityAbbreviations = {
 };
 
 FALLOUT.SKILLS = ["Athletics", "Barter", "Big Guns", "Energy Weapons", "Explosives", "Lockpick", "Medicine", "Melee Weapons", "Pilot", "Repair", "Science", "Small Guns", "Sneak", "Speech", "Survival", "Throwing", "Unarmed"];
+FALLOUT.CREATURE = {
+  "skills": {
+    "melee": "FALLOUT.CREATURE.melee",
+    "gun": "FALLOUT.CREATURE.gun",
+    "other": "FALLOUT.CREATURE.other"
+  },
+  "attributes": {
+    "body": "FALLOUT.CREATURE.body",
+    "mind": "FALLOUT.CREATURE.mind",
+  }
+}
 
 FALLOUT.APPAREL_TYPE = {
   "clothing": "FALLOUT.APPAREL.clothing",
@@ -44,7 +50,6 @@ FALLOUT.BodyValues = {
   "legR": "18-20",
 }
 
-
 FALLOUT.powerLevel = {
   "normal": "normal",
   "mighty": "mighty",
@@ -59,15 +64,25 @@ FALLOUT.resistanceIcons = {
 }
 
 FALLOUT.WEAPONS = {
-  "weaponTypes": {
-    "bigGuns": "FALLOUT.WEAPONS.bigGuns",
-    "energyWeapons": "FALLOUT.WEAPONS.energyWeapons",
-    "explosives": "FALLOUT.WEAPONS.explosives",
-    "meleeWeapons": "FALLOUT.WEAPONS.meleeWeapons",
-    "smallWeapons": "FALLOUT.WEAPONS.smallGuns",
-    "throwing": "FALLOUT.WEAPONS.throwing",
-    "unarmed": "FALLOUT.WEAPONS.unarmed",
-    "cratureAttack": "FALLOUT.WEAPONS.creatureAttack"
+  "weaponType": {
+    "bigGuns": "FALLOUT.WEAPONS.weaponType.bigGuns",
+    "energyWeapons": "FALLOUT.WEAPONS.weaponType.energyWeapons",
+    "explosives": "FALLOUT.WEAPONS.weaponType.explosives",
+    "meleeWeapons": "FALLOUT.WEAPONS.weaponType.meleeWeapons",
+    "smallGuns": "FALLOUT.WEAPONS.weaponType.smallGuns",
+    "throwing": "FALLOUT.WEAPONS.weaponType.throwing",
+    "unarmed": "FALLOUT.WEAPONS.weaponType.unarmed",
+    "creatureAttack": "FALLOUT.WEAPONS.weaponType.creatureAttack"
+  },
+  "weaponSkill": {
+    "bigGuns": "Big Guns",
+    "energyWeapons": "Energy Weapons",
+    "explosives": "Explosives",
+    "meleeWeapons": "Melee Weapons",
+    "smallGuns": "Small Guns",
+    "throwing": "Throwing",
+    "unarmed": "Unarmed",
+    "creatureAttack": "Melee"
   },
   "damageType": {
     'physical': 'FALLOUT.WEAPONS.damageType.physical',
@@ -76,10 +91,10 @@ FALLOUT.WEAPONS = {
     'poison': 'FALLOUT.WEAPONS.damageType.poison',
   },
   "range": {
-    "close": "FALLOUT.WEAPONS.RANGE.close",
-    "medium": "FALLOUT.WEAPONS.RANGE.medium",
-    "long": "FALLOUT.WEAPONS.RANGE.long",
-    "extreme": "FALLOUT.WEAPONS.RANGE.extreme"
+    "close": "FALLOUT.RANGE.close",
+    "medium": "FALLOUT.RANGE.medium",
+    "long": "FALLOUT.RANGE.long",
+    "extreme": "FALLOUT.RANGE.extreme"
   }
 }
 

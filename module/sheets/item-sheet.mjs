@@ -46,9 +46,12 @@ export class FalloutItemSheet extends ItemSheet {
     context.data = itemData.data;
     context.flags = itemData.flags;
 
+    context.FALLOUT = CONFIG.FALLOUT;
+
+
     // Prepare Aditional Data
     // if (itemData.type == 'apaprel') {
-    context.apparelTypes = CONFIG.FALLOUT.APPAREL_TYPE;
+    //context.apparelTypes = CONFIG.FALLOUT.APPAREL_TYPE;
     //}
 
     return context;

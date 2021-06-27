@@ -20,32 +20,32 @@
             <section class="grid grid-2col">
                 <div class="left-column">
                     <div class="flexrow resource-row">
-                        <div class="box no-padding cOdd">
+                        <div class="box no-padding bgOdd">
                             <h3 class="box-header text-center">BODY</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.body.value" value="{{data.body.value}}">
                             </div>
                         </div>
-                        <div class="box no-padding cEven" style="margin-right: 5px;">
+                        <div class="box no-padding bgEven" style="margin-right: 5px;">
                             <h3 class="box-header text-center">MIND</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.mind.value" value="{{data.mind.value}}">
                             </div>
                         </div>
 
-                        <div class="box no-padding cOdd">
+                        <div class="box no-padding bgOdd">
                             <h3 class="box-header text-center">MELEE</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.melee.value" value="{{data.melee.value}}">
                             </div>
                         </div>
-                        <div class="box no-padding cEven">
+                        <div class="box no-padding bgEven">
                             <h3 class="box-header text-center">GUNS</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.guns.value" value="{{data.guns.value}}">
                             </div>
                         </div>
-                        <div class="box no-padding cOdd">
+                        <div class="box no-padding bgOdd">
                             <h3 class="box-header text-center">OTHER</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.other.value" value="{{data.other.value}}">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="flexrow resource-row">
-                        <div class="box no-padding cOdd">
+                        <div class="box no-padding bgEven">
                             <h4 class="box-header text-center">HP</h4>
                             <div class="flexrow">
                                 <input class="num-short-3" type="number" name="data.health.value" value="{{data.health.value}}">
@@ -61,20 +61,20 @@
                                 <input class="num-short-3" type="number" name="data.health.max" value="{{data.health.max}}">
                             </div>
                         </div>
-                        <div class="box no-padding cEven">
+                        <div class="box no-padding bgOdd">
                             <h4 class="box-header text-center">INITIATIVE</h4>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.initiative.value" value="{{data.initiative.value}}">
                             </div>
                         </div>
-                        <div class="box no-padding cOdd">
+                        <div class="box no-padding bgEven">
                             <h4 class="box-header text-center">DEFENSE</h4>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.defense.value" value="{{data.defense.value}}">
                             </div>
                         </div>
                     </div>
-                    <div class="box no-padding cOdd">
+                    <div class="box no-padding bgOdd">
                         <h4 class="box-header text-center">RESISTANCES</h4>
                         {{#each data.resistance as |res key|}}
                         <div class="flexrow resource-row">
@@ -86,20 +86,24 @@
                         </div>
                         {{/each}}
                     </div>
-                    <div class="box no-padding cEven">
+                    <div class="box no-padding bgEven">
                         <h4 class="box-header text-center">LOCATIONS & INJURIES</h4>
                         <textarea name="data.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{data.injuries}}</textarea>
                     </div>
                 </div>
 
                 <div>
-                    <div class="box no-padding cEven">
+                    <div class="box no-padding bgOdd">
                         <h4 class="box-header text-center">ATTACKS</h4>
+                        <div>
+                            {{!-- Owned Weapons Tab --}}
+                            {{> "systems/fallout/templates/actor/parts/actor-weapons.html"}}
+                        </div>
                     </div>
-                    <div class="box no-padding cEven">
+                    <div class="box no-padding bgEven">
                         <h4 class="box-header text-center">SPECIAL ABILITIES</h4>
                     </div>
-                    <div class="box no-padding cEven">
+                    <div class="box no-padding bgOdd">
                         <h4 class="box-header text-center">INVENTORY</h4>
                     </div>
                 </div>

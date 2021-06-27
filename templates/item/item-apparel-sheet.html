@@ -50,7 +50,7 @@
                 <label class="resource-label">Armor Type &nbsp;</label>
                 <select name="data.appareltype">
                     {{#select data.appareltype}}
-                    {{#each apparelTypes as |apparelType key |}}
+                    {{#each FALLOUT.APPAREL_TYPE as |apparelType key |}}
                     <option class="capitalized" value="{{key}}">{{localize apparelType}}</option>
                     {{/each}}
                     {{/select}}

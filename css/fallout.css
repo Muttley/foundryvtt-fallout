@@ -395,83 +395,57 @@
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
 
 .flex-group-left {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   text-align: left;
 }
 
 .flex-group-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   text-align: right;
 }
 
 .flexshrink {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
   flex: 0;
 }
 
 .flex-between {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .flexlarge {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
   flex: 2;
 }
 
 .flex2 {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
   flex: 2;
 }
 
 .flex3 {
-  -webkit-box-flex: 3;
-  -ms-flex: 3;
   flex: 3;
 }
 
 .align-left {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   text-align: left;
 }
 
 .align-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   text-align: right;
 }
 
 .align-center {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
 
 .align-mid {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -488,28 +462,16 @@
 }
 
 .fallout .sheet-header {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 auto;
   flex: 0 auto;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
 
 .fallout .sheet-header .profile-img {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
@@ -529,8 +491,6 @@
 }
 
 .fallout .sheet-tabs {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
   flex: 0;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
@@ -574,14 +534,8 @@
   margin: 0 0 5px 0;
   border: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-preferred-size: 390px;
   flex-basis: 390px;
   background-color: #325885;
   border: 1px solid;
@@ -589,23 +543,13 @@
 }
 
 .fallout .condition-box .pipboy-status-screen .row {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 .fallout .condition-box .pipboy-status-screen .cell {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
   background-repeat: none;
@@ -719,12 +663,7 @@
 
 .fallout .condition-box .pipboy-status-screen .status-plaque {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   cursor: pointer;
   min-width: 100px;
@@ -732,22 +671,12 @@
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -774,12 +703,7 @@
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .status {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   min-height: 80px;
   min-height: 20px;
@@ -841,7 +765,7 @@
   margin: 0 0 0 0;
 }
 
-.fallout .box.no-padding div {
+.fallout .box.no-padding > div {
   padding: 5px;
 }
 
@@ -857,11 +781,11 @@
   margin: 0;
 }
 
-.fallout .cEven {
+.fallout .bgOdd {
   background-color: #e2efe6;
 }
 
-.fallout .cOdd {
+.fallout .bgEven {
   background-color: #c3dfcb;
 }
 
@@ -878,8 +802,6 @@
 }
 
 .fallout .injury-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 5px;
   padding: 1px;
@@ -918,15 +840,8 @@
 }
 
 .fallout .status-help-bar .help-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
@@ -970,8 +885,6 @@
 .fallout .resource-row {
   padding: 2px;
   margin-bottom: 2px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1005,21 +918,12 @@
 }
 
 .fallout .attributes-list .special-letter {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 18px;
   padding: 2px 5px;
   margin-bottom: 5px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1029,14 +933,8 @@
   background-image: url(../assets/ui/cogwheel.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1090,8 +988,6 @@
   height: 28px;
   margin: 2px 0;
   padding: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
   border: 2px groove #eeede0;
@@ -1107,8 +1003,6 @@
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1128,18 +1022,12 @@
 }
 
 .fallout .items-list .item-name {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
   flex: 2;
   margin: 0;
   overflow: hidden;
   font-size: 13px;
   text-align: left;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1150,17 +1038,9 @@
 }
 
 .fallout .items-list .item-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
   flex: 0 0 100px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1171,8 +1051,6 @@
 }
 
 .fallout .items-list .item {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
@@ -1187,8 +1065,6 @@
 }
 
 .fallout .items-list .item .item-name .item-image {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 30px;
   flex: 0 0 30px;
   height: 30px;
   background-size: 30px;
@@ -1207,8 +1083,6 @@
   height: 28px;
   margin: 2px 0;
   padding: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background: black;
   border: none;
@@ -1228,8 +1102,6 @@
 }
 
 .fallout .items-list .item-skill-value, .fallout .items-list .item-skill-tag {
-  -webkit-box-flex: 0.5;
-  -ms-flex: 0.5;
   flex: 0.5;
   text-align: center;
   padding: 2px 0;
@@ -1250,8 +1122,6 @@
 }
 
 .fallout .item-formula {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   padding: 0 8px;
 }
@@ -1268,3 +1138,4 @@
 .fallout .effects .item .effect-controls {
   border: none;
 }
+/*# sourceMappingURL=fallout.css.map */

@@ -46,6 +46,13 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Prepare NPC data and items.
     if (actorData.type == 'npc') {
+      this._prepareItems(context)
+      this._prepareItems(context);
+    }
+
+    // Prepare NPC data and items.
+    if (actorData.type == 'creature') {
+      this._prepareItems(context)
       this._prepareItems(context);
     }
 
@@ -94,6 +101,7 @@ export class FalloutActorSheet extends ActorSheet {
     const skills = [];
     const perks = [];
     const apparel = [];
+    const weapons = [];
     const gear = [];
 
     // Iterate through items, allocating to containers
@@ -109,6 +117,9 @@ export class FalloutActorSheet extends ActorSheet {
       }
       else if (i.type === 'apparel') {
         apparel.push(i);
+      }
+      else if (i.type === 'weapon') {
+        weapons.push(i);
       }
       else if (i.type === 'gear') {
         gear.push(i);
@@ -137,6 +148,8 @@ export class FalloutActorSheet extends ActorSheet {
       { apparelType: 'headgear', list: headgear },
       { apparelType: 'armor', list: armor },
       { apparelType: 'powerArmor', list: powerArmor }];
+
+    context.weapons = weapons;
   }
 
   /* -------------------------------------------- */

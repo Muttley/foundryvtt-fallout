@@ -125,6 +125,13 @@ Handlebars.registerHelper('getBodypartValue', function (str) {
   return CONFIG.FALLOUT.BodyValues[str];
 });
 
+Handlebars.registerHelper('isCreaturesWeapon', function (weapon) {
+  if (weapon.data.data.weaponType == "creatureAttack" || weapon.actor?.type == "creature")
+    return true;
+  else
+    return false;
+});
+
 
 /* -------------------------------------------- */
 /*  Ready Hook                                  */

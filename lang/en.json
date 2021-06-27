@@ -100,5 +100,38 @@
         "Level": "Level",
         "CurrentXP": "Current XP",
         "NextXP": "Next Level XP"
+    },
+
+    "FALLOUT.WEAPONS": {
+        "weaponType": {
+            "bigGuns": "Big Guns",
+            "energyWeapons": "Energy Weapons",
+            "explosives": "Explosives",
+            "meleeWeapons": "Melee Weapons",
+            "smallGuns": "Small Guns",
+            "throwing": "Throwing",
+            "unarmed": "Unarmed",
+            "creatureAttack": "Creature Attack"
+        },
+        "damageType": {
+            "physical": "Physical",
+            "energy": "Energy",
+            "radiation": "Radiation",
+            "poison": "Poison"
+        }
+    },
+    "FALLOUT.RANGE": {
+        "close": "C",
+        "medium": "M",
+        "long": "L",
+        "extreme": "E"
+    },
+
+    "FALLOUT.CREATURE": {
+        "body": "Body",
+        "mind": "Mind",
+        "melee": "Melee",
+        "gun": "Gun",
+        "other": "Other"
     }
 }

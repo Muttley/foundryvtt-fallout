@@ -1,34 +1,31 @@
-{{#each allApparel as |apparel index| }}
 <ol class="items-list">
-    <li class="item apparel flexrow items-header">
-        <div class="flexrow flexlarge item-name upperC">{{localize (concat 'FALLOUT.APPAREL.' apparel.apparelType)}}</div>
+    <li class="item weapon flexrow items-header">
+        <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.NAME'}}</div>
         <div class="flexrow flexlarge item-info">
-            <p>Locations</p>
-            <p>Resistances</p>
+            <p>Damage</p>
+            <p>Type</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create item" data-type="apparel" data-appareltype="{{apparel.apparelType}}"><i class="fas fa-plus"></i> {{localize (concat 'FALLOUT.APPAREL.' apparel.apparelType)}}</a>
+            <a class="item-control item-create" title="Create item" data-type="weapon" data-appareltype="{{apparel.apparelType}}"><i class="fas fa-plus"></i> {{localize 'FALLOUT.ADD'}}</a>
         </div>
     </li>
-    {{#each list as |item id|}}
-    <li class="item apparel" data-item-id="{{item._id}}">
+    {{#each weapons as |item id| }}
+    <li class="item weapon" data-item-id="{{item._id}}">
         <div class=" flexrow">
             <div class="item-name flexlarge expandable-info">
                 <div class="item-image">
                     <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
                 </div>
-                <h4 class="resource-label">{{item.name}}</h4>
+                <a>
+                    <h4 class="resource-label">{{item.name}}</h4>
+                </a>
             </div>
             <div class="flexrow flexlarge item-info align-mid">
                 <div class="text-center">
-                    {{#each item.data.location as |hasLoc loc|}}
-                    <span class="font-size-11">{{#ifCond hasLoc '==' true}}{{localize (concat "FALLOUT.BODYLOCATION_ABBR." ../../../actor.type "." loc)}}&nbsp;{{/ifCond}}</span>
-                    {{/each}}
+                    <a>{{item.data.damage.rating}} DC</a>
                 </div>
                 <div class="text-center">
-                    {{#each item.data.resistance as |resValue res|}}
-                    <span><i class="{{damageFaIconClass res}}" title="{{res}}"></i>:{{resValue}}&nbsp;</span>
-                    {{/each}}
+                    {{item.data.damage.damageType}}
                 </div>
             </div>
             <div class=" item-controls">
@@ -42,4 +39,3 @@
     </li>
     {{/each}}
 </ol>
-{{/each}}

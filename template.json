@@ -267,14 +267,20 @@
             "ammo": "",
             "attribute": "",
             "skill": "",
-            "damageType": "",
-            "damageRating": 0,
-            "damageEffect": "",
+            "damage": {
+                "rating": 0,
+                "damageType": "",
+                "effect": ""
+            },
             "range": "",
             "fireRate": 0,
             "condition": "",
             "qualities": [],
-            "mods": []
+            "mods": {
+                "max": 0,
+                "current": 0,
+                "list": ""
+            }
         },
         "ammo": {
             "templates": ["base", "physical"],
