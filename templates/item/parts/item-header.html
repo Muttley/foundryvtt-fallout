@@ -1,0 +1,26 @@
+<header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+        <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+        {{#if data.weight includeZero=true}}
+        <div class="grid grid-4col">
+            <div class="resource">
+                <label class="resource-label">Quantity</label>
+                <input class="num-short-2" type="number" name="data.quantity" value="{{data.quantity}}" data-dtype="Number" />
+            </div>
+            <div class="resource">
+                <label class="resource-label">Weight</label>
+                <input class="num-short-2" type="text" name="data.weight" value="{{data.weight}}" data-dtype="String" />
+            </div>
+            <div class="resource">
+                <label class="resource-label">Cost</label>
+                <input class="num-short-3" type="text" name="data.cost" value="{{data.cost}}" data-dtype="String" />
+            </div>
+            <div class="resource">
+                <label class="resource-label">Rarity</label>
+                <input class="num-short-2" type="number" name="data.rarity" value="{{data.rarity}}" data-dtype="Number" />
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</header>

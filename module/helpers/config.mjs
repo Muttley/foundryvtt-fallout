@@ -1,11 +1,6 @@
 export const FALLOUT = {};
 
 // Define constants here, such as:
-FALLOUT.foobar = {
-  'bas': 'FALLOUT.bas',
-  'bar': 'FALLOUT.bar'
-};
-
 /**
  * The set of Ability Scores used within the sytem.
  * @type {Object}
@@ -63,8 +58,30 @@ FALLOUT.resistanceIcons = {
   'poison': 'fas fa-biohazard',
 }
 
-// FALLOUT.creatureBodyLocation = {
-//   "name": "",
-//   "resistance": { "physical": 0, "energy": 0, "radiation": 0, "poison": 0 }
-// }
+FALLOUT.WEAPONS = {
+  "weaponTypes": {
+    "bigGuns": "FALLOUT.WEAPONS.bigGuns",
+    "energyWeapons": "FALLOUT.WEAPONS.energyWeapons",
+    "explosives": "FALLOUT.WEAPONS.explosives",
+    "meleeWeapons": "FALLOUT.WEAPONS.meleeWeapons",
+    "smallWeapons": "FALLOUT.WEAPONS.smallGuns",
+    "throwing": "FALLOUT.WEAPONS.throwing",
+    "unarmed": "FALLOUT.WEAPONS.unarmed",
+    "cratureAttack": "FALLOUT.WEAPONS.creatureAttack"
+  },
+  "damageType": {
+    'physical': 'FALLOUT.WEAPONS.damageType.physical',
+    'energy': 'FALLOUT.WEAPONS.damageType.energy',
+    'radiation': 'FALLOUT.WEAPONS.damageType.radiation',
+    'poison': 'FALLOUT.WEAPONS.damageType.poison',
+  },
+  "range": {
+    "close": "FALLOUT.WEAPONS.RANGE.close",
+    "medium": "FALLOUT.WEAPONS.RANGE.medium",
+    "long": "FALLOUT.WEAPONS.RANGE.long",
+    "extreme": "FALLOUT.WEAPONS.RANGE.extreme"
+  }
+}
+
+
 
