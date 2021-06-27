@@ -24,7 +24,7 @@ FALLOUT.SKILLS = ["Athletics", "Barter", "Big Guns", "Energy Weapons", "Explosiv
 FALLOUT.CREATURE = {
   "skills": {
     "melee": "FALLOUT.CREATURE.melee",
-    "gun": "FALLOUT.CREATURE.gun",
+    "guns": "FALLOUT.CREATURE.guns",
     "other": "FALLOUT.CREATURE.other"
   },
   "attributes": {

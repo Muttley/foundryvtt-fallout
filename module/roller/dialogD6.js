@@ -13,7 +13,7 @@ export class DialogD6 extends Dialog {
         dialogData.diceNum = diceNum;
         const html = `<div class="flexrow fallout-dialog">
         <div class="flexrow resource" style="padding:5px">
-        <label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="1">
+        <label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="${diceNum}">
         </div>
         </div>`
         let d = new DialogD6(rollName, diceNum, {
@@ -25,7 +25,7 @@ export class DialogD6 extends Dialog {
                     label: "ROLL",
                     callback: (html) => {
                         let diceNum = html.find('.d-number')[0].value;
-                        game.fallout.Roller2D20.rollD6({ rollname: "DC Roll", dicenum: parseInt(diceNum) });
+                        game.fallout.Roller2D20.rollD6({ rollname: rollName, dicenum: parseInt(diceNum) });
                     }
                 }
             },

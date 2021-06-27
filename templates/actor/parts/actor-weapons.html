@@ -12,19 +12,19 @@
     {{#each weapons as |item id| }}
     <li class="item weapon" data-item-id="{{item._id}}">
         <div class=" flexrow">
-            <div class="item-name flexlarge expandable-info">
+            <div class="item-name flexlarge">
                 <div class="item-image">
                     <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
                 </div>
-                <a>
+                <a class="weapon-roll">
                     <h4 class="resource-label">{{item.name}}</h4>
                 </a>
             </div>
-            <div class="flexrow flexlarge item-info align-mid">
+            <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <a>{{item.data.damage.rating}} DC</a>
+                    <a class="weapon-roll-damage">{{item.data.damage.rating}} DC</a>
                 </div>
-                <div class="text-center">
+                <div class="text-center roll-weapon-damage">
                     {{item.data.damage.damageType}}
                 </div>
             </div>

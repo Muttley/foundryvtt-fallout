@@ -307,6 +307,35 @@ export class FalloutActorSheet extends ActorSheet {
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
+    // ! ROLL WEAPON SKILL
+    html.find(".weapon-roll").click((ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("item-id"));
+      let skillName, skill, attribute;
+      if (item.actor?.type == "creature") {
+        skillName = game.i18n.localize(`FALLOUT.CREATURE.${item.data.data.skill}`);
+        skill = item.actor.data.data[item.data.data.skill];
+        attribute = item.actor.data.data[item.data.data.attribute];
+      } else {
+        skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.data.data.weaponType];
+        let skillItem = item.actor.items.find(i => i.name == skillName);
+        skill = skillItem.data.data;
+        attribute = item.actor.data.data.attributes[skill.defaultAttribute];
+      }
+      game.fallout.Dialog2d20.createDialog({ rollName: skillName, diceNum: 2, attribute: attribute.value, skill: skill.value, tag: skill.tag, complication: 20 });
+    });
+
+    // ! ROLL WEAPON DAMAGE
+    html.find(".weapon-roll-damage").click((ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("item-id"));
+      let numOfDice = parseInt(item.data.data.damage.rating);
+      let rollName = item.data.name;
+      console.warn(rollName, numOfDice);
+      game.fallout.DialogD6.createDialog({ rollName: rollName, diceNum: numOfDice });
+    });
+
+
     // Rollable attributes.
     html.find('.rollable').click(this._onRoll.bind(this));
 

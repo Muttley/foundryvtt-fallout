@@ -131,7 +131,7 @@
         "body": "Body",
         "mind": "Mind",
         "melee": "Melee",
-        "gun": "Gun",
+        "guns": "Guns",
         "other": "Other"
     }
 }
