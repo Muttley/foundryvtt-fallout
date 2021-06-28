@@ -39,7 +39,6 @@
 
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
-
       <div class="flexrow resource-row bgOdd">
         <label class="resource-label">Weapon Type</label>
         <select name="data.weaponType">
@@ -104,11 +103,16 @@
       </div>
 
       <div class="flexrow resource-row bgOdd">
+        <label class="resource-label" for="data.fireRate">FIRE RATE</label>
+        <input type="number" name="data.fireRate" value="{{data.fireRate}}">
+      </div>
+
+      <div class="flexrow resource-row bgEven">
         <label class="resource-label" for="data.ammo">Ammo</label>
         <input type="text" name="data.ammo" value="{{data.ammo}}">
       </div>
 
-      <div class="resource-row bgEven">
+      <div class="resource-row">
         <label class="resource-label" for=" data.damage.rating">DAMAGE EFFECTS</label>
         <textarea name="data.damage.effect" rows="4" style="resize: none;">{{data.damage.effect}}</textarea>
       </div>

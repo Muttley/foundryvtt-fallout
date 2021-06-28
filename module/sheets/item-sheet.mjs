@@ -1,3 +1,5 @@
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../helpers/effects.mjs";
+
 /**
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
@@ -46,6 +48,7 @@ export class FalloutItemSheet extends ItemSheet {
     context.data = itemData.data;
     context.flags = itemData.flags;
 
+    context.effects = prepareActiveEffectCategories(this.item.effects);
     context.FALLOUT = CONFIG.FALLOUT;
 
 
@@ -66,7 +69,11 @@ export class FalloutItemSheet extends ItemSheet {
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
 
-    // Roll handlers, click handlers, etc. would go here.
+    // Effects.
+    html.find(".effect-control").click(ev => {
+      if (this.item.isOwned) return ui.notifications.warn("Managing Active Effects within an Owned Item is not currently supported and will be added in a subsequent update.")
+      onManageActiveEffect(ev, this.item)
+    });
 
     // DON't LET NUMBER FIELDS EMPTY
     const numInputs = document.querySelectorAll('input[type=number]');

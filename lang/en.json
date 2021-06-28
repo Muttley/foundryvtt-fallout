@@ -133,5 +133,11 @@
         "melee": "Melee",
         "guns": "Guns",
         "other": "Other"
+    },
+    "FALLOUT.UI": {
+        "Add": "Add",
+        "Name": "Name",
+        "Damage": "Damage",
+        "Type": "Type"
     }
 }

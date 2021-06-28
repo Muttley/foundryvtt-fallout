@@ -17,7 +17,7 @@ export class FalloutActor extends Actor {
   /** @override */
   prepareBaseData() {
     // Data modifications in this step occur before processing embedded
-    // documents or derived data.
+    // documents or derived data.    
   }
 
   /**
@@ -47,6 +47,7 @@ export class FalloutActor extends Actor {
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
     const data = actorData.data;
+    data.carryWeight.base = 150 + (parseInt(this.data.data.attributes.str.value) * 10);
     this._calculateBodyResistance(actorData);
   }
 

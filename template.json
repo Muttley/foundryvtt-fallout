@@ -263,7 +263,7 @@
         "weapon": {
             "templates": ["base", "physical", "equipable"],
             "melee": false,
-            "type": "",
+            "weaponType": "",
             "ammo": "",
             "attribute": "",
             "skill": "",

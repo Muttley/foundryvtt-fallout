@@ -6,6 +6,7 @@
         <a class="item" data-tab="attributes">Attributes</a>
         <a class="item" data-tab="mods">Mods</a>
         <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="effects">Effects</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -38,7 +39,6 @@
 
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
-
             <div class="grid grid-3col">
                 <div class="locations pad-5">
                     <h4 class="resource-header">Locations</h4>
@@ -78,6 +78,11 @@
 
                 </div>
             </div>
+        </div>
+
+        {{!-- Active Effects Tab --}}
+        <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+            {{> "systems/fallout/templates/item/parts/item-effects.html"}}
         </div>
     </section>
 </form>

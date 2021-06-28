@@ -14,10 +14,12 @@
         <a class="item" data-tab="attributes">Attributes</a>
         <a class="item" data-tab="mods">Mods</a>
         <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="effects">Effects</a>
     </nav>
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
+
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
             {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
@@ -83,7 +85,7 @@
                         <input class="input-checkbox" type="checkbox" name="data.equipped" {{checked data.equipped}} data-dtype="Boolean" />
                     </div>
                     {{!-- POWER ARMOR SECTION --}}
-                    {{#ifCond data.type '==' 'powerArmor'}}
+                    {{#ifCond data.appareltype '==' 'powerArmor'}}
                     <h4 class="resource-header">POWER ARMOR</h4>
                     <div>
                         <div class="flexrow resource-row align-mid">
@@ -102,6 +104,11 @@
                     {{/ifCond}}
                 </div>
             </div>
+        </div>
+
+        {{!-- Active Effects Tab --}}
+        <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+            {{> "systems/fallout/templates/item/parts/item-effects.html"}}
         </div>
     </section>
 </form>

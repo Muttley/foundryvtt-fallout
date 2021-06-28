@@ -1,12 +1,12 @@
 <ol class="items-list">
     <li class="item weapon flexrow items-header">
-        <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.NAME'}}</div>
+        <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.Name'}}</div>
         <div class="flexrow flexlarge item-info">
-            <p>Damage</p>
-            <p>Type</p>
+            <p>{{localize 'FALLOUT.UI.Damage'}}</p>
+            <p>{{localize 'FALLOUT.UI.Type'}}</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create item" data-type="weapon" data-appareltype="{{apparel.apparelType}}"><i class="fas fa-plus"></i> {{localize 'FALLOUT.ADD'}}</a>
+            <a class="item-control item-create" title="Create item" data-type="weapon" data-appareltype="{{apparel.apparelType}}"><i class="fas fa-plus"></i> {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
     {{#each weapons as |item id| }}

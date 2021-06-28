@@ -312,6 +312,7 @@ export class FalloutActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
       let skillName, skill, attribute;
+      let rollName = item.name;
       if (item.actor?.type == "creature") {
         skillName = game.i18n.localize(`FALLOUT.CREATURE.${item.data.data.skill}`);
         skill = item.actor.data.data[item.data.data.skill];
@@ -322,7 +323,7 @@ export class FalloutActorSheet extends ActorSheet {
         skill = skillItem.data.data;
         attribute = item.actor.data.data.attributes[skill.defaultAttribute];
       }
-      game.fallout.Dialog2d20.createDialog({ rollName: skillName, diceNum: 2, attribute: attribute.value, skill: skill.value, tag: skill.tag, complication: 20 });
+      game.fallout.Dialog2d20.createDialog({ rollName: rollName, diceNum: 2, attribute: attribute.value, skill: skill.value, tag: skill.tag, complication: 20 });
     });
 
     // ! ROLL WEAPON DAMAGE
@@ -330,6 +331,11 @@ export class FalloutActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
       let numOfDice = parseInt(item.data.data.damage.rating);
+      console.warn(item.data.data.weaponType);
+      if (item.data.data.weaponType == 'meleeWeapons' || item.data.data.weaponType == 'unarmed') {
+        let dmgBonus = this.actor.data.data?.meleeDamage?.base ?? 0
+        numOfDice += dmgBonus;
+      }
       let rollName = item.data.name;
       console.warn(rollName, numOfDice);
       game.fallout.DialogD6.createDialog({ rollName: rollName, diceNum: numOfDice });
@@ -395,7 +401,6 @@ export class FalloutActorSheet extends ActorSheet {
   }
 
   _onRightClickSkill(itemId, attribute) {
-    console.log(itemId);
     const item = this.actor.items.get(itemId);
     this._onRollSkill(item.name, item.data.data.value, this.actor.data.data.attributes[attribute].value, item.data.data.tag);
   }

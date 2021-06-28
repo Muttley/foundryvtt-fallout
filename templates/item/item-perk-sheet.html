@@ -1,16 +1,22 @@
 <form class="{{cssClass}}" autocomplete="off">
-  <!-- <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
-    </div>
-  </header> -->
+
   {{> "systems/fallout/templates/item/parts/item-header.html"}}
 
-  <section>
-    <div class="attributes">
-      {{!-- As you add new fields, add them in here! --}}
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item" data-tab="effects">Effects</a>
+  </nav>
 
+  <section class="sheet-body">
+
+    {{!-- Active Effects Tab --}}
+    <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+      {{> "systems/fallout/templates/item/parts/item-effects.html"}}
+    </div>
+
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div class="flexrow resource-row align-mid">
         <label class="resource-label">Ranks [current/maximum]</label>
         <span class="flexrow align-mid">
@@ -25,14 +31,6 @@
         <label class="resource-label">Requirements</label>
         <input type="text" name="data.requirements" value="{{data.requirements}}">
       </div>
-      <!-- <div class="flexrow resource-row align-mid">
-        <label class="resource-label">Level [started/increasement]</label>
-        <span class="flexrow">
-          <input class="text-center num-short-3" type="text" name="data.rank.levelStart" value="{{data.rank.levelStart}}">
-          <label class="text-center">/</label>
-          <input class="text-center num-short-3" type="text" name="data.rank.levelIncrease" value="{{data.rank.levelIncrease}}">
-        </span>
-      </div> -->
       <div class="resource-row resource-label align-mid">
         <label>Description</label>
       </div>
