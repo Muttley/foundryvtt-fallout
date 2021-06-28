@@ -227,7 +227,7 @@
         }
     },
     "Item": {
-        "types": ["skill", "perk", "weapon", "weapon_mod", "apparel", "robot_armor", "special_ability"],
+        "types": ["skill", "perk", "weapon", "ammo", "weapon_mod", "apparel", "robot_armor", "special_ability"],
         "templates": {
             "base": {
                 "description": ""

@@ -102,6 +102,7 @@ export class FalloutActorSheet extends ActorSheet {
     const perks = [];
     const apparel = [];
     const weapons = [];
+    const ammo = [];
     const gear = [];
 
     // Iterate through items, allocating to containers
@@ -121,6 +122,9 @@ export class FalloutActorSheet extends ActorSheet {
       else if (i.type === 'weapon') {
         weapons.push(i);
       }
+      else if (i.type === 'ammo') {
+        ammo.push(i);
+      }
       else if (i.type === 'gear') {
         gear.push(i);
       }
@@ -135,13 +139,12 @@ export class FalloutActorSheet extends ActorSheet {
     });
     context.skills = skills;
     context.perks = perks;
-    //context.apparel = apparel;
+    context.ammo = ammo;
     let clothing = apparel.filter(a => a.data.appareltype == 'clothing');
     let outfit = apparel.filter(a => a.data.appareltype == 'outfit');
     let headgear = apparel.filter(a => a.data.appareltype == 'headgear');
     let armor = apparel.filter(a => a.data.appareltype == 'armor');
     let powerArmor = apparel.filter(a => a.data.appareltype == 'powerArmor');
-    //context.newApparel = apparel.filter(a => a.data.appareltype == '' || undefined);
     context.allApparel = [
       { apparelType: 'clothing', list: clothing },
       { apparelType: 'outfit', list: outfit },
@@ -166,10 +169,10 @@ export class FalloutActorSheet extends ActorSheet {
     });
 
     // -------------------------------------------------------------
-    // Everything below here is only needed if the sheet is editable
+    // ! Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
 
-    // ! SKILLS LISTENERS [clic, right-click, value change, tag ]
+    // * SKILLS LISTENERS [clic, right-click, value change, tag ]
     // Click Skill Item
     html.find('.skill .item-name').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
@@ -243,14 +246,24 @@ export class FalloutActorSheet extends ActorSheet {
       }
     ];
     new ContextMenu(html.find(".skill"), null, menuSkills);
-    // ! END SKILLS
+    // * END SKILLS
 
+    // * AMMO COUNT UPDATE 
+    html.find('.ammo-quantity').change(async (ev) => {
+      let newQuantity = parseInt($(ev.currentTarget).val());
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("itemId"));
+      let updatedItem = { _id: item.id, data: { quantity: newQuantity } };
+      await this.actor.updateEmbeddedDocuments("Item", [updatedItem]);
+    });
+
+    // * CLICK TO EXPAND
     html.find(".expandable-info").click((event) => this._onItemSummary(event));
 
-    // Add Inventory Item
+    // * Add Inventory Item
     html.find('.item-create').click(this._onItemCreate.bind(this));
 
-    // Delete Inventory Item
+    // * Delete Inventory Item
     html.find('.item-delete').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("itemId"));
@@ -258,14 +271,14 @@ export class FalloutActorSheet extends ActorSheet {
       li.slideUp(200, () => this.render(false));
     });
 
-    //Toggle Equip Inventory Item
+    // * Toggle Equip Inventory Item
     html.find(".item-toggle").click(async (ev) => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
       await this.actor.updateEmbeddedDocuments("Item", [this._toggleEquipped(li.data("item-id"), item)]);
     });
 
-    // ! INJURIES
+    // * INJURIES
     html.find('.injury-mark').click(async (ev) => {
       let status = parseInt(ev.currentTarget.dataset["status"]);
       //if (status == 2)
@@ -302,12 +315,12 @@ export class FalloutActorSheet extends ActorSheet {
       _update[_dataStatus] = newStatus;
       await this.actor.update(_update);
     });
-    // ! END INJURIES
+    // * END INJURIES
 
-    // Active Effect management
+    // * Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
-    // ! ROLL WEAPON SKILL
+    // * ROLL WEAPON SKILL
     html.find(".weapon-roll").click((ev) => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
@@ -326,7 +339,7 @@ export class FalloutActorSheet extends ActorSheet {
       game.fallout.Dialog2d20.createDialog({ rollName: rollName, diceNum: 2, attribute: attribute.value, skill: skill.value, tag: skill.tag, complication: 20 });
     });
 
-    // ! ROLL WEAPON DAMAGE
+    // * ROLL WEAPON DAMAGE
     html.find(".weapon-roll-damage").click((ev) => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
@@ -340,10 +353,6 @@ export class FalloutActorSheet extends ActorSheet {
       console.warn(rollName, numOfDice);
       game.fallout.DialogD6.createDialog({ rollName: rollName, diceNum: numOfDice });
     });
-
-
-    // Rollable attributes.
-    html.find('.rollable').click(this._onRoll.bind(this));
 
     // Drag events for macros.
     if (this.actor.isOwner) {
@@ -359,7 +368,7 @@ export class FalloutActorSheet extends ActorSheet {
     // !CRATURES
 
 
-    // DON't LET NUMBER FIELDS EMPTY
+    // ! DON'T LET NUMBER FIELDS EMPTY
     const numInputs = document.querySelectorAll('input[type=number]');
     numInputs.forEach(function (input) {
       input.addEventListener('change', function (e) {
@@ -382,7 +391,6 @@ export class FalloutActorSheet extends ActorSheet {
     const type = header.dataset.type;
     // Grab any data associated with this control.
     const data = duplicate(header.dataset);
-
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
     // Prepare the item object.
@@ -391,11 +399,8 @@ export class FalloutActorSheet extends ActorSheet {
       type: type,
       data: data
     };
-
-    console.warn(itemData)
     // Remove the type from the dataset since it's in the itemData.type prop.
     delete itemData.data["type"];
-
     // Finally, create the item!
     return await Item.create(itemData, { parent: this.actor });
   }
@@ -412,7 +417,6 @@ export class FalloutActorSheet extends ActorSheet {
     event.preventDefault();
     let li = $(event.currentTarget).parents(".item");
     let item = this.actor.items.get(li.data("itemId"));
-    console.log(item);
     let description = item.data.data.description;
     // Toggle summary
     if (li.hasClass("expanded")) {
@@ -424,8 +428,6 @@ export class FalloutActorSheet extends ActorSheet {
       let div = $(
         `<div class="item-summary"><div class="item-summary-wrapper"><div>${description}</div></div></div>`
       );
-      //$(div).find(".item-summary-wrapper").append(props);
-      // div.append(props);
       li.append(div.hide());
       div.slideDown(200);
     }
@@ -442,40 +444,7 @@ export class FalloutActorSheet extends ActorSheet {
     return newStatus;
   }
 
-  /**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  _onRoll(event) {
-    event.preventDefault();
-    const element = event.currentTarget;
-    const dataset = element.dataset;
-
-    // Handle item rolls.
-    if (dataset.rollType) {
-      if (dataset.rollType == 'item') {
-        const itemId = element.closest('.item').dataset.itemId;
-        const item = this.actor.items.get(itemId);
-        if (item) return item.roll();
-      }
-    }
-
-    // Handle rolls that supply the formula directly.
-    if (dataset.roll) {
-      let label = dataset.label ? `[roll] ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll, this.actor.getRollData()).roll();
-      roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get('core', 'rollMode'),
-      });
-      return roll;
-    }
-  }
-
-  // ON TOGGLE EQUIPPED
-  //Toggle Equipment
+  // Toggle Equipment
   _toggleEquipped(id, item) {
     return {
       _id: id,

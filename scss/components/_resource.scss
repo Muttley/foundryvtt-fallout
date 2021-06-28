@@ -97,3 +97,11 @@ input[type="number"] {
         background-color: $fa-purple;
     }
 }
+
+.ico-dc {
+    min-width: 12px;
+    height: 12px;
+    background-image: url(../assets/ico/dc.webp);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}

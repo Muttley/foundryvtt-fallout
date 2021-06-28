@@ -1,0 +1,14 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{> "systems/fallout/templates/item/parts/item-header.html"}}
+
+
+    <section>
+        {{!-- Attributes Tab --}}
+        <div class="attributes" data-group="primary" data-tab="attributes">
+            <h3>Description</h3>
+            <div class="description-field">
+                {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            </div>
+        </div>
+    </section>
+</form>

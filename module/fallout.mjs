@@ -132,6 +132,16 @@ Handlebars.registerHelper('isCreaturesWeapon', function (weapon) {
     return false;
 });
 
+Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (weapon, actor) {
+  console.warn(weapon)
+  if ((weapon.data.weaponType == "unarmed" || weapon.data.weaponType == "meleeWeapons") && actor?.type != "creature")
+    return true;
+  else
+    return false;
+});
+
+
+
 
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
