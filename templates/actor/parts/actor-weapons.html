@@ -6,7 +6,7 @@
             <p>{{localize 'FALLOUT.UI.Type'}}</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create Weapon" data-type="weapon"></a><i class="fas fa-plus"></i> {{localize 'FALLOUT.UI.Add'}}</a>
+            <a class="item-control item-create" title="Create Weapon" data-type="weapon"><i class="fas fa-plus"></i> {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
     {{#each weapons as |item id| }}
@@ -22,7 +22,7 @@
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <a class="weapon-roll-damage">{{item.data.damage.rating}} <span style="color:blue; font-size: 24px;">&#9632;</span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} + {{../actor.data.data.meleeDamage.base}}MB{{/if}}</a>
+                    <a class="weapon-roll-damage"><strong>{{item.data.damage.rating}}</strong> <span class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} + <strong>{{../actor.data.data.meleeDamage.base}}</strong> <span class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
                 </div>
                 <div class="text-center roll-weapon-damage">
                     {{item.data.damage.damageType}}

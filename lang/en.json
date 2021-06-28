@@ -138,6 +138,7 @@
         "Add": "Add",
         "Name": "Name",
         "Damage": "Damage",
-        "Type": "Type"
+        "Type": "Type",
+        "Quantity": "Quantity"
     }
 }

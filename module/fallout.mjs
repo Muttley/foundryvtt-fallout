@@ -133,7 +133,6 @@ Handlebars.registerHelper('isCreaturesWeapon', function (weapon) {
 });
 
 Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (weapon, actor) {
-  console.warn(weapon)
   if ((weapon.data.weaponType == "unarmed" || weapon.data.weaponType == "meleeWeapons") && actor?.type != "creature")
     return true;
   else
