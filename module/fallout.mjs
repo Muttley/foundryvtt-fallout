@@ -5,12 +5,20 @@ import { FalloutItem } from "./documents/item.mjs";
 import { FalloutActorSheet } from "./sheets/actor-sheet.mjs";
 import { FalloutItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
-import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { FALLOUT } from "./helpers/config.mjs";
+import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
+import { registerHandlebarsHelpers } from "./helpers/handlebars.mjs"
 //Import Roll2D20
 import { Roller2D20 } from "./roller/fo2d20-roller.mjs"
 import { Dialog2d20 } from './roller/dialog2d20.js'
 import { DialogD6 } from './roller/DialogD6.js'
+
+
+
+/* -------------------------------------------- */
+/*  Handlebars Helpers                          */
+/* -------------------------------------------- */
+registerHandlebarsHelpers();
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -51,96 +59,9 @@ Hooks.once('init', async function () {
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("fallout", FalloutItemSheet, { makeDefault: true });
 
-  //CONFIG.Dice.terms["b"] = FalloutDcDie;
-
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
 });
-
-/* -------------------------------------------- */
-/*  Handlebars Helpers                          */
-/* -------------------------------------------- */
-
-// If you need to add Handlebars helpers, here are a few useful examples:
-Handlebars.registerHelper('concat', function () {
-  var outStr = '';
-  for (var arg in arguments) {
-    if (typeof arguments[arg] != 'object') {
-      outStr += arguments[arg];
-    }
-  }
-  return outStr;
-});
-
-Handlebars.registerHelper('toLowerCase', function (str) {
-  return str.toLowerCase();
-});
-Handlebars.registerHelper('toUpperCase', function (str) {
-  return str.toUpperCase();
-});
-
-Handlebars.registerHelper('subString', function (str, s, e) {
-  return str.substring(s, e);
-});
-
-Handlebars.registerHelper("ifCond", function (v1, operator, v2, options) {
-  switch (operator) {
-    case "==":
-      return v1 == v2 ? options.fn(this) : options.inverse(this);
-    case "===":
-      return v1 === v2 ? options.fn(this) : options.inverse(this);
-    case "!=":
-      return v1 != v2 ? options.fn(this) : options.inverse(this);
-    case "!==":
-      return v1 !== v2 ? options.fn(this) : options.inverse(this);
-    case "<":
-      return v1 < v2 ? options.fn(this) : options.inverse(this);
-    case "<=":
-      return v1 <= v2 ? options.fn(this) : options.inverse(this);
-    case ">":
-      return v1 > v2 ? options.fn(this) : options.inverse(this);
-    case ">=":
-      return v1 >= v2 ? options.fn(this) : options.inverse(this);
-    case "&&":
-      return v1 && v2 ? options.fn(this) : options.inverse(this);
-    case "||":
-      return v1 || v2 ? options.fn(this) : options.inverse(this);
-    default:
-      return options.inverse(this);
-  }
-});
-
-Handlebars.registerHelper('damageFaIconClass', function (str) {
-  if (str == "physical")
-    return "fas fa-fist-raised";
-  else if (str == "energy")
-    return "fas fa-bolt";
-  else if (str == "radiation")
-    return "fas fa-radiation";
-  else if (str == "poison")
-    return "fas fa-biohazard";
-});
-
-Handlebars.registerHelper('getBodypartValue', function (str) {
-  return CONFIG.FALLOUT.BodyValues[str];
-});
-
-Handlebars.registerHelper('isCreaturesWeapon', function (weapon) {
-  if (weapon.data.data.weaponType == "creatureAttack" || weapon.actor?.type == "creature")
-    return true;
-  else
-    return false;
-});
-
-Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (weapon, actor) {
-  if ((weapon.data.weaponType == "unarmed" || weapon.data.weaponType == "meleeWeapons") && actor?.type != "creature")
-    return true;
-  else
-    return false;
-});
-
-
-
 
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
@@ -244,12 +165,12 @@ function rollItemMacro(itemName) {
   if (!actor) actor = game.actors.get(speaker.actor);
   const item = actor ? actor.items.find(i => i.name === itemName) : null;
   if (!item) return ui.notifications.warn(`Your controlled Actor does not have an item named ${itemName}`);
-
-  // Trigger the item roll
   return item.roll();
 }
 
-// ! DICE SO NICE
+/* -------------------------------------------- */
+/*  DICE SO NICE                                */
+/* -------------------------------------------- */
 
 Hooks.once("diceSoNiceReady", (dice3d) => {
   dice3d.addSystem(
