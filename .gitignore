@@ -6,5 +6,9 @@
 node_modules/
 npm-debug.log
 
+# Gulp
+package-lock.json
+package.json
+
 # Foundry
 *.lock
