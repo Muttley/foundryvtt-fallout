@@ -167,7 +167,7 @@ export class Roller2D20 {
         });
 
         if(addDice.length){
-            dicesRolled = dicesRolled.concat(addDice);
+            dicesRolled = addDice.concat(dicesRolled);
         }
 
         await Roller2D20.sendD6ToChat({
@@ -200,8 +200,8 @@ export class Roller2D20 {
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
         let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
-        console.warn(falloutRoll);
-        console.warn(newRollName);
+        //console.warn(falloutRoll);
+        //console.warn(newRollName);
         let oldDiceRolled = falloutRoll.dicesRolled;
         await Roller2D20.parseD6Roll({
             rollname: newRollName,
