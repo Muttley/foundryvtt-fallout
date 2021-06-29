@@ -41,7 +41,7 @@
     }
     .dices-result{
       margin: 5px 0 0 0;
-      height:32px;      
+      min-height:32px;      
     }
     .success-plaq{
       margin: 0 20px 0 0;
@@ -73,10 +73,10 @@
     }
     .dice-icon{
       cursor: pointer;
-      position: relative;
-      width: 28px;
+      //position: relative;
+      min-width: 28px;
       line-height: 28px;
-      float: left;
+      //float: left;
       margin-right: 1px;
       background-repeat: no-repeat;
       background-size: 28px 28px;

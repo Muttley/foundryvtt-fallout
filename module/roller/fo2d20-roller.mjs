@@ -140,7 +140,7 @@ export class Roller2D20 {
         });
     }
 
-    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [] } = {}) {
+    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], addDice = [] } = {}) {
         let diceResults = [
             { result: 1, effect: 0 },
             { result: 2, effect: 0 },
@@ -149,6 +149,7 @@ export class Roller2D20 {
             { result: 1, effect: 1 },
             { result: 1, effect: 1 },
         ];
+
         let i = 0;
         roll.dice.forEach(d => {
             d.results.forEach(r => {
@@ -162,8 +163,13 @@ export class Roller2D20 {
                     dicesRolled[rerollIndexes[i]] = diceResult;
                     i++;
                 }
-            })
+            });
         });
+
+        if(addDice.length){
+            dicesRolled = dicesRolled.concat(addDice);
+        }
+
         await Roller2D20.sendD6ToChat({
             rollname: rollname,
             roll: roll,
@@ -186,6 +192,22 @@ export class Roller2D20 {
             roll: _roll,
             dicesRolled: dicesRolled,
             rerollIndexes: rerollIndexes
+        });
+    }
+
+    static async addD6({rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = []}={}){
+        let formula = `${dicenum}d6`;
+        let _roll = new Roll(formula);
+        await _roll.evaluate({ async: true });
+        let newRollName = `${falloutRoll.rollname} added ${dicenum} DC`;
+        console.warn(falloutRoll);
+        console.warn(newRollName);
+        let oldDiceRolled = falloutRoll.dicesRolled;
+        await Roller2D20.parseD6Roll({
+            rollname: newRollName,
+            roll: _roll,
+            dicesRolled: dicesRolled,
+            addDice : oldDiceRolled
         });
     }
 

@@ -2,11 +2,14 @@
     <div class="content">
         <h2>{{rollname}}</h2>
         <p class="damage-plaq">Damage: {{damage}} | Effects: {{effects}}</p>
-        <div class="dices-result">
+        <div class="dices-result" style="display: flex; flex-wrap: wrap;">
             {{#each results as |dice|}}
             <span class="dice-icon d6 face-{{dice.face}}{{#if reroll}} reroll{{/if}}{{#ifCond effect '==' 1}} effect{{/ifCond}}" data-index="{{@index}}">&nbsp;</span>
             {{/each}}
         </div>
-        <button class="reroll-button">re-roll</button>
-    </div>
+       <div class="flexrow">
+        <button class="reroll-button">Re-roll <span class="fo-pip-boy fo-blue"></span></button>
+        <button class="add-button">Add <span class="fo-pip-boy fo-blue"></span></button>
+       </div>
+    </div>  
 </div>

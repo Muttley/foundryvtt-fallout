@@ -77,7 +77,8 @@ Hooks.on('renderChatMessage', (message, html, data) => {
   if (rrlBtn.length > 0) {
     rrlBtn[0].setAttribute('data-messageId', message.id);
     rrlBtn.click((el) => {
-      let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
+      //let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
+      let selectedDiceForReroll = html.find('.dice-selected');
       let rerollIndex = [];
       for (let d of selectedDiceForReroll) {
         rerollIndex.push($(d).data('index'));
@@ -110,14 +111,24 @@ Hooks.on('renderChatMessage', (message, html, data) => {
     })
   }
   html.find('.dice-icon').click((el) => {
-    if ($(el.currentTarget).hasClass('reroll'))
-      return;
+    //if ($(el.currentTarget).hasClass('reroll'))
+      //return;
     if ($(el.currentTarget).hasClass('dice-selected')) {
       $(el.currentTarget).removeClass('dice-selected');
     } else {
       $(el.currentTarget).addClass('dice-selected')
     }
-  })
+  });
+  let addBtn = html.find('.add-button');
+  if (addBtn.length > 0) {
+    addBtn[0].setAttribute('data-messageId', message.id);
+    addBtn.click((ev)=>{
+      let falloutRoll = message.data.flags.falloutroll;
+      game.fallout.DialogD6.createDialog({rollname: falloutRoll.rollname, diceNum:1, falloutRoll:falloutRoll})
+      //console.warn(falloutRoll);
+    });
+  }
+
 })
 
 /* -------------------------------------------- */
