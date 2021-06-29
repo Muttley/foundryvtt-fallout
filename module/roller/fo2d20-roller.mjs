@@ -188,7 +188,7 @@ export class Roller2D20 {
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
         await Roller2D20.parseD6Roll({
-            rollname: `${rollname} re-roll`,
+            rollname: `${rollname} [re-roll]`,
             roll: _roll,
             dicesRolled: dicesRolled,
             rerollIndexes: rerollIndexes
@@ -199,7 +199,7 @@ export class Roller2D20 {
         let formula = `${dicenum}d6`;
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
-        let newRollName = `${falloutRoll.rollname} added ${dicenum} DC`;
+        let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
         console.warn(falloutRoll);
         console.warn(newRollName);
         let oldDiceRolled = falloutRoll.dicesRolled;
