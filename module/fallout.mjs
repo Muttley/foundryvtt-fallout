@@ -129,7 +129,26 @@ Hooks.on('renderChatMessage', (message, html, data) => {
     });
   }
 
-})
+});
+
+
+/* -------------------------------------------- */
+/*  Omit Specific Items on Specific Actors      */
+/* -------------------------------------------- */
+Hooks.on("preCreateItem", (_item)=>{
+  //console.warn(_item?.parent?.type)
+  //console.warn(_item.type)
+  if(_item.parent){
+    if((_item.parent.type!="npc" && _item.parent.type!="creature") && _item.type == "special_ability"){
+      ui.notifications.warn(`ONLY NPCs AND CREATURES CAN HAVE SPECIAL ABILITIES`);
+      return false;
+    }
+    if((_item.parent.type!="character" && _item.parent.type!="robot") && _item.type == "perk"){
+      ui.notifications.warn(`ONLY PLAYERS CAN HAVE PERKS`);
+      return false;
+    }
+  }
+});
 
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */

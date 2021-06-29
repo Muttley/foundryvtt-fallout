@@ -22,18 +22,7 @@
     <div class="tab skills" data-group="primary" data-tab="skills">
       <section class="grid grid-6col">
         <div class="attributes main grid-span-1">
-
-          <div class="attributes-list">
-            {{#each data.attributes as |ability key|}}
-            <div class="attribute special-letter">
-              <label for="data.attributes.{{key}}.value" class="resource-label align-left" data-label="{{ability.label}}">{{subString ability.label 0 1}}</label>
-              <div class='special-number'>
-                <input type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" />
-              </div>
-
-            </div>
-            {{/each}}
-          </div>
+          {{> "systems/fallout/templates/actor/parts/actor-attributes.html"}}
         </div>
         <section class="main grid-span-2">
           {{> "systems/fallout/templates/actor/parts/actor-skills.html"}}

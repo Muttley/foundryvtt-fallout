@@ -1,3 +1,28 @@
 <form class="{{cssClass}}" autocomplete="off">
-    SPEC ABILITY
-</form>
+
+    {{> "systems/fallout/templates/item/parts/item-header.html"}}
+  
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+      <a class="item" data-tab="attributes">Attributes</a>
+      <!-- <a class="item" data-tab="effects">Effects</a> -->
+    </nav>
+  
+    <section class="sheet-body">
+      {{!-- Active Effects Tab --}}
+      <!-- <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+        {{> "systems/fallout/templates/item/parts/item-effects.html"}}
+      </div> -->
+  
+      {{!-- Attributes Tab --}}
+      <div class="tab attributes" data-group="primary" data-tab="attributes">
+        <div class="resource-row resource-label align-mid">
+          <label>Description</label>
+        </div>
+        <div class="description-field">
+          {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        </div>
+      </div>
+    </section>
+  
+  </form>

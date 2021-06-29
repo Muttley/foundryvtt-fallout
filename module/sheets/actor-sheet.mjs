@@ -104,6 +104,7 @@ export class FalloutActorSheet extends ActorSheet {
     const weapons = [];
     const ammo = [];
     const gear = [];
+    const specialAbilities = []
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -127,6 +128,9 @@ export class FalloutActorSheet extends ActorSheet {
       }
       else if (i.type === 'gear') {
         gear.push(i);
+      }
+      else if( i.type === 'special_ability'){
+        specialAbilities.push(i)
       }
     }
 
@@ -153,6 +157,7 @@ export class FalloutActorSheet extends ActorSheet {
       { apparelType: 'powerArmor', list: powerArmor }];
 
     context.weapons = weapons;
+    context.specialAbilities = specialAbilities;
   }
 
   /* -------------------------------------------- */
@@ -329,6 +334,7 @@ export class FalloutActorSheet extends ActorSheet {
       if (item.actor?.type == "creature") {
         skillName = game.i18n.localize(`FALLOUT.CREATURE.${item.data.data.skill}`);
         skill = item.actor.data.data[item.data.data.skill];
+        skill['tag']=true;
         attribute = item.actor.data.data[item.data.data.attribute];
       } else {
         skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.data.data.weaponType];
