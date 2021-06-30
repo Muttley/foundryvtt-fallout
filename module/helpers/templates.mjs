@@ -17,6 +17,7 @@ export const preloadHandlebarsTemplates = async function () {
     "systems/fallout/templates/actor/parts/actor-equipped_apparel.html",
     "systems/fallout/templates/actor/parts/actor-favorite_weapons.html",
     "systems/fallout/templates/actor/parts/actor-conditions.html",
+    "systems/fallout/templates/actor/parts/actor-inventory.html",
     "systems/fallout/templates/actor/parts/actor-special_abilities.html",
     "systems/fallout/templates/actor/parts/body-status-plaque.html",
     "systems/fallout/templates/item/parts/item-header.html",

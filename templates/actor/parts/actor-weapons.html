@@ -6,7 +6,8 @@
             <p>{{localize 'FALLOUT.UI.Type'}}</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create Weapon" data-type="weapon"><i class="fas fa-plus"></i> {{localize 'FALLOUT.UI.Add'}}</a>
+            <a class="item-control item-create" title="Create Weapon" data-type="weapon"><i class="fas fa-plus"></i>
+                {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
     {{#each weapons as |item id| }}
@@ -22,14 +23,18 @@
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <a class="weapon-roll-damage"><strong>{{item.data.damage.rating}}</strong> <span class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} + <strong>{{../actor.data.data.meleeDamage.base}}</strong> <span class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
+                    <a class="weapon-roll-damage"><strong>{{item.data.damage.rating}}</strong> <span
+                            class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} +
+                        <strong>{{../actor.data.data.meleeDamage.base}}</strong> <span
+                            class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
                 </div>
                 <div class="text-center roll-weapon-damage">
                     {{item.data.damage.damageType}}
                 </div>
             </div>
             <div class=" item-controls">
-                <a class="item-control item-favorite {{#unless item.data.favorite}}favorite-start-dim{{/unless}}" title='{{localize "FALLOUT.favorite"}}'>
+                <a class="item-control item-favorite {{#unless item.data.favorite}}favorite-start-dim{{/unless}}"
+                    title='{{localize "FALLOUT.favorite"}}'>
                     <i class="fas fa-star"></i>
                 </a>
                 <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
@@ -39,7 +44,7 @@
     </li>
     {{/each}}
 </ol>
-{{log actor}}
+
 {{#ifCond actor.type '==' 'character'}}
 <ol class="items-list">
     <li class="item weapon flexrow items-header">
@@ -48,7 +53,8 @@
             <p>{{localize 'FALLOUT.UI.Quantity'}}</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create Ammo" data-type="ammo"><i class="fas fa-plus"></i> {{localize 'FALLOUT.UI.Add'}}</a>
+            <a class="item-control item-create" title="Create Ammo" data-type="ammo"><i class="fas fa-plus"></i>
+                {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
     {{#each ammo as |item id| }}
@@ -62,7 +68,8 @@
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <input type="number" class="ammo-quantity num-short-3" name="data.quantity" value="{{item.data.quantity}}">
+                    <input type="number" class="ammo-quantity num-short-3" name="data.quantity"
+                        value="{{item.data.quantity}}">
                 </div>
             </div>
             <div class=" item-controls">

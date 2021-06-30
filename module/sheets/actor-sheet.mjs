@@ -103,6 +103,9 @@ export class FalloutActorSheet extends ActorSheet {
     const apparel = [];
     const weapons = [];
     const ammo = [];
+    const consumables = [];
+    const books_and_magz = [];
+    const miscellany = []
     const gear = [];
     const specialAbilities = []
 
@@ -126,8 +129,14 @@ export class FalloutActorSheet extends ActorSheet {
       else if (i.type === 'ammo') {
         ammo.push(i);
       }
-      else if (i.type === 'gear') {
-        gear.push(i);
+      else if (i.type === 'consumable') {
+        consumables.push(i);
+      }
+      else if (i.type === 'books_and_magz') {
+        books_and_magz.push(i);
+      }
+      else if (i.type === 'miscellany') {
+        miscellany.push(i);
       }
       else if( i.type === 'special_ability'){
         specialAbilities.push(i)
@@ -135,7 +144,7 @@ export class FalloutActorSheet extends ActorSheet {
     }
 
     // Assign and return
-    context.gear = gear;
+    
     skills.sort(function (a, b) {
       var nameA = a.name.toUpperCase();
       var nameB = b.name.toUpperCase();
@@ -158,6 +167,10 @@ export class FalloutActorSheet extends ActorSheet {
 
     context.weapons = weapons;
     context.specialAbilities = specialAbilities;
+
+    context.consumables = consumables;
+    context.books_and_magz = books_and_magz;
+    context.miscellany = miscellany;
   }
 
   /* -------------------------------------------- */

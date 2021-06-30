@@ -76,11 +76,11 @@
           "mod": 0
         },
         "luckPoints": 0,
-        "conditions":{
-          "hunger":0,
-          "thirst":0,
-          "sleep":0,
-          "fatigue":0
+        "conditions": {
+          "hunger": 0,
+          "thirst": 0,
+          "sleep": 0,
+          "fatigue": 0
         }
       },
       "body": {
@@ -307,6 +307,9 @@
       "weapon_mod",
       "apparel",
       "robot_armor",
+      "books_and_magz",
+      "consumable",
+      "miscellany",
       "special_ability"
     ],
     "templates": {
@@ -464,6 +467,35 @@
       "templates": [
         "base"
       ]
+    },
+    "books_and_magz": {
+      "templates": [
+        "base",
+        "physical"
+      ],
+      "issue": "",
+      "perk": "",
+      "learned": true
+    },
+    "consumable": {
+      "templates": [
+        "base",
+        "physical"
+      ],
+      "consumableType": "",
+      "hp": 0,
+      "effect": "",
+      "irradiated": true,
+      "alcoholic": true,
+      "duration": "",
+      "addictive": ""
+    },
+    "miscellany": {
+      "templates": [
+        "base",
+        "physical"
+      ],
+      "effect": ""
     }
   }
 }

@@ -98,5 +98,12 @@ FALLOUT.WEAPONS = {
   }
 }
 
+FALLOUT.consumableTypes = {
+  "food":"FALLOUT.FOOD",
+  "beverage":"FALLOUT.BEVERAGE",
+  "chem":"FALLOUT.CHEM",
+  "other":"FALLOUT.OTHER"
+}
+
 
 

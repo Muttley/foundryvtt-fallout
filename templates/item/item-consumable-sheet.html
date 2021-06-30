@@ -1,0 +1,69 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{> "systems/fallout/templates/item/parts/item-header.html"}}
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="description">Description</a>
+    </nav>
+
+    <section class="sheet-body">
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <div class="flexrow resource-row">
+                <label for="data.consumableType" class="resource-label">Consumable Type</label>
+                {{#select data.consumableType}}
+                <select name="data.consumableType">
+                    {{#each FALLOUT.consumableTypes as |type key|}}
+                    <option value="{{key}}">{{localize type}}</option>
+                    {{/each}}
+                </select>
+                {{/select}}
+            </div>
+            {{!-- FOOD --}}
+            {{#ifCond data.consumableType '==' 'food' }}
+            <div class="flexrow resource-row">
+                <label for="data.hp" class="resource-label">HP Healed</label>
+                <input type="number" name="data.hp" value="{{data.hp}}">
+            </div>
+            <div class="flexrow resource-row">
+                <label for="data.irradiated" class="resource-label">Irradiated</label>
+                <input type="checkbox" name="data.irradiated" {{#ifCond data.irradiated '==' true}}checked{{/ifCond}}>
+            </div>
+            {{/ifCond}}
+            {{#ifCond data.consumableType '==' 'beverage' }}
+            <div class="flexrow resource-row">
+                <label for="data.hp" class="resource-label">HP Healed</label>
+                <input type="number" name="data.hp" value="{{data.hp}}">
+            </div>
+            <div class="flexrow resource-row">
+                <label for="data.irradiated" class="resource-label">Irradiated</label>
+                <input type="checkbox" name="data.irradiated" {{#ifCond data.irradiated '==' true}}checked{{/ifCond}}>
+            </div>
+            <div class="flexrow resource-row">
+                <label for="data.alcoholic" class="resource-label">Alcoholic</label>
+                <input type="checkbox" name="data.alcoholic" {{#ifCond data.alcoholic '==' true}}checked{{/ifCond}}>
+            </div>
+            {{/ifCond}}
+            {{#ifCond data.consumableType '==' 'chem' }}
+            <div class="flexrow resource-row">
+                <label for="data.duration" class="resource-label">Duration</label>
+                <input type="text" name="data.duration" value="{{data.duration}}">
+            </div>
+            <div class="flexrow resource-row">
+                <label for="data.addictive" class="resource-label">Addictive</label>
+                <input type="text" name="data.addictive" value="{{data.addictive}}">
+            </div>
+            {{/ifCond}}
+            <h3 class="resource-label">Effect</h3>
+            <div class="description-field">
+                {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
+            </div>
+        </div>
+
+        {{!-- Description Tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        </div>
+    </section>
+</form>
