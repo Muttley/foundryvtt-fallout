@@ -1,10 +1,18 @@
 <div class="flexrow">
-    <div class="flexcol" style="padding-right: 5px;">
+    <div class="" style="padding-right: 5px;">
         <div class="box">
             <div class="box-header">
                 <h4>CONSUMABLES</h4>
             </div>
             <ol class="items-list">
+                <li class="item consumable flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.CONSUMABLE'}}</div>
+                    <div class="item-controls">
+                        <a class="item-control item-create" title="Create Weapon" data-type="consumable"><i
+                                class="fas fa-plus"></i>
+                            {{localize 'FALLOUT.UI.Add'}}</a>
+                    </div>
+                </li>
                 {{#each consumables as |item id|}}
                 <li class="item skill flexrow" data-item-id="{{item._id}}">
                     <div class="item-name">
@@ -46,7 +54,7 @@
             </ol>
         </div>
     </div>
-    <div class="flexcol">
+    <div class="">
         <div class="box">
             <div class="box-header">
                 <h4>MISCELLANY</h4>

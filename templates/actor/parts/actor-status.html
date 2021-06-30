@@ -1,7 +1,7 @@
 <div class="condition-box flexrow">
     {{!-- LEFT COLUMN --}}
     <div style="padding-right:10px;">
-        <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
+        <!-- <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
             <div>
                 <label class="label"><strong>Luck</strong></label>
                 <label style="font-size: 12px; padding-left: 10px;">Points</label>
@@ -9,8 +9,11 @@
             <div class="special-number">
                 <input type="number" style="font-size: 22px;" name="data.luckPoints" value="{{data.luckPoints}}">
             </div>
-        </div>
+        </div> -->
         <div class="box">
+            <div class="box-header">
+                <h4>DERIVED</h4>
+            </div>
             <div class="flexrow resource-row align-mid">
                 <label class="resource-label">MELEE DAMAGE</label>
                 <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
@@ -24,7 +27,7 @@
                 <input class="num-short-2" type="number" name="data.initiative.base" value="{{data.initiative.base}}">
             </div>
         </div>
-        
+
         <div class="box">
             <div class="box-header">
                 <h4>RESISTANCES</h4>
