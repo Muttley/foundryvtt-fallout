@@ -1,14 +1,12 @@
 <div class="flexrow">
     <div class="" style="padding-right: 5px;">
         <div class="box">
-            <div class="box-header">
-                <h4>CONSUMABLES</h4>
-            </div>
+            
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
                     <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.CONSUMABLE'}}</div>
                     <div class="item-controls">
-                        <a class="item-control item-create" title="Create Weapon" data-type="consumable"><i
+                        <a class="item-control item-create" title="Create Consumable" data-type="consumable"><i
                                 class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
                     </div>
@@ -32,10 +30,16 @@
         </div>
 
         <div class="box">
-            <div class="box-header">
-                <h4>BOOKS AND MAGZ</h4>
-            </div>
+            
             <ol class="items-list">
+                <li class="item books_and_magz flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.BOOKS_AND_MAGZ'}}</div>
+                    <div class="item-controls">
+                        <a class="item-control item-create" title="Create books_and_magz" data-type="books_and_magz"><i
+                                class="fas fa-plus"></i>
+                            {{localize 'FALLOUT.UI.Add'}}</a>
+                    </div>
+                </li>
                 {{#each books_and_magz as |item id|}}
                 <li class="item skill flexrow" data-item-id="{{item._id}}">
                     <div class="item-name">
@@ -56,10 +60,16 @@
     </div>
     <div class="">
         <div class="box">
-            <div class="box-header">
-                <h4>MISCELLANY</h4>
-            </div>
+            
             <ol class="items-list">
+                <li class="item consumable flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.MISCELLANY'}}</div>
+                    <div class="item-controls">
+                        <a class="item-control item-create" title="Create Miscellany" data-type="miscellany"><i
+                                class="fas fa-plus"></i>
+                            {{localize 'FALLOUT.UI.Add'}}</a>
+                    </div>
+                </li>
                 {{#each miscellany as |item id|}}
                 <li class="item skill flexrow" data-item-id="{{item._id}}">
                     <div class="item-name">

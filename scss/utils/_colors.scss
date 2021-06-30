@@ -6,9 +6,6 @@ $c-faint: #c9c7b8;
 $c-beige: #b5b3a4;
 $c-tan: #444;
 
-$c-font-prim:black;
-$c-font-prim-contra:white;
-
 $f-orange: #d8903f;
 $f-green: #b4bb5b;
 $f-blue: #729eb2;
@@ -32,6 +29,11 @@ $f-vault-green: #04dc17;
 $f-healthy: $f-vault-green;
 $f-wounded: $f-vault-blue;
 $f-crippled: $f-vault-blue;
+
+//$c-font-prim: black;
+//$c-font-prim-contra: white;
+$c-font-prim: white;
+$c-font-prim-contra: $f-vault-blue;
 
 $f-screen: $f-vault-blue;
 $f-screen-line: #000000;

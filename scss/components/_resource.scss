@@ -1,7 +1,7 @@
 input[type="text"],
 input[type="number"] {
     background-color: #f0f0f0;
-    color: $c-font-prim;
+    color: black;
 }
 
 .resource-label {
@@ -17,7 +17,7 @@ input[type="number"] {
 .resource-header {
     padding: 2px 2px 2px 5px;
     background-color: black;
-    color: $c-font-prim-contra;
+    color: white;
     text-transform: uppercase;
 }
 .resource-plate-header{
@@ -25,7 +25,7 @@ input[type="number"] {
     margin-bottom: 5px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    color: $c-font-prim-contra;
+    color: white;
     .label{font-family: $font-lobster;font-size: 24px;}
     
     &.plate-1-g{
@@ -107,7 +107,7 @@ input[type="number"] {
         
         label {
             text-align: center;
-            color: $c-font-prim-contra;
+            color: white;
             font-size: 22px;
         }
         

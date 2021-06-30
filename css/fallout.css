@@ -235,8 +235,8 @@
 }
 
 .fallout .window-content {
-  background-image: url(../assets/ui/window-bg.webp);
-  color: black;
+  background-image: none;
+  color: white;
   background-color: #325885;
   background-size: cover;
   background-repeat: no-repeat;
@@ -752,8 +752,8 @@
 .fallout .box {
   padding: 0 5px 5px 5px;
   margin-bottom: 15px;
-  background-color: white;
-  color: black;
+  background-color: #325885;
+  color: white;
 }
 
 .fallout .box.no-padding {
@@ -778,6 +778,7 @@
 .fallout .box .box-header * {
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 .fallout .bgOdd {
@@ -880,7 +881,7 @@
 
 .fallout .resource-label {
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .fallout .resource-row {
@@ -1072,7 +1073,7 @@
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: #444;
+  color: white;
 }
 
 .fallout .items-list .item-list {
