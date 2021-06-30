@@ -313,7 +313,8 @@
 .box {
     padding: 0 5px 5px 5px;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: $c-font-prim-contra;
+    color: $c-font-prim;
 
     &.no-padding {
         padding: 0;
@@ -329,7 +330,7 @@
         margin: 0 -5px 5px -5px;
         padding: 5px 5px 2px 5px;
         background-color: rgb(0, 0, 0);
-        color: white;
+        color: $c-font-prim-contra;
         * {
             padding: 0;
             margin: 0;
@@ -398,28 +399,32 @@
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        .symbol {
-            width: 12px;
-            height: 12px;
-            margin-right: 3px;
-        }
-        .healthy {
-            background-color: $f-healthy;
-        }
-        .wounded {
-            background-image: url(../assets/ui/sticking-plaster.svg);
-            background-size: contain;
-            background-position: center;
-        }
-        .crippled {
-            background-image: url(../assets/ui/drop.svg);
-            background-size: contain;
-            background-position: center;
-        }
+        
     }
     p {
         font-size: 11px;
         margin: 0;
         padding: 0;
+    }
+}
+.symbol {
+    max-width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    flex-basis: 12px;
+    
+    background-size: contain;
+    background-position: center;
+    background-repeat: none;
+
+    &.healthy {
+        background-color: $f-healthy;
+    }
+    &.wounded {
+        background-image: url(../assets/ui/sticking-plaster.svg);
+        
+    }
+    &.crippled {
+        background-image: url(../assets/ui/drop.svg);
     }
 }

@@ -1,22 +1,30 @@
 <div class="condition-box flexrow">
     {{!-- LEFT COLUMN --}}
     <div style="padding-right:10px;">
-        <div class="flexrow resource-row align-mid">
-            <label class="resource-label">LUCK</label>
-            <input class="num-short-2" type="number" name="data.luckPoints" value="{{data.luckPoints}}">
+        <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
+            <div>
+                <label class="label"><strong>Luck</strong></label>
+                <label style="font-size: 12px; padding-left: 10px;">Points</label>
+            </div>
+            <div class="special-number">
+                <input type="number" style="font-size: 22px;" name="data.luckPoints" value="{{data.luckPoints}}">
+            </div>
         </div>
-        <div class="flexrow resource-row align-mid">
-            <label class="resource-label">MELEE DAMAGE</label>
-            <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
+        <div class="box">
+            <div class="flexrow resource-row align-mid">
+                <label class="resource-label">MELEE DAMAGE</label>
+                <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
+            </div>
+            <div class="flexrow resource-row align-mid">
+                <label class="resource-label">DEFENSE</label>
+                <input class="num-short-2" type="number" name="data.defense.base" value="{{data.defense.base}}">
+            </div>
+            <div class="flexrow resource-row align-mid">
+                <label class="resource-label">INITIATIVE</label>
+                <input class="num-short-2" type="number" name="data.initiative.base" value="{{data.initiative.base}}">
+            </div>
         </div>
-        <div class="flexrow resource-row align-mid">
-            <label class="resource-label">DEFENSE</label>
-            <input class="num-short-2" type="number" name="data.defense.base" value="{{data.defense.base}}">
-        </div>
-        <div class="flexrow resource-row align-mid">
-            <label class="resource-label">INITIATIVE</label>
-            <input class="num-short-2" type="number" name="data.initiative.base" value="{{data.initiative.base}}">
-        </div>
+        
         <div class="box">
             <div class="box-header">
                 <h4>RESISTANCES</h4>
@@ -119,7 +127,7 @@
     {{!-- RIGHT COLUMN --}}
     <div style="padding-left:10px;">
 
-        <div class="box">
+        <!-- <div class="box">
             <div class="box-header">
                 <h3>HEALTH</h3>
             </div>
@@ -128,12 +136,28 @@
                 <span class="text-center">/</span>
                 <input class="num-short-3" type="number" name="data.health.max" value="{{data.health.max}}">
             </div>
+        </div> -->
+        <div class="resource-plate-header plate-31-o" style="padding-right: 5px;">
+            <div class="label">
+                <h3 style="margin:0;"><strong>Health</strong></h3>
+            </div>
+            <div class="flexrow align-mid">
+                <input class="num-short-3" type="number" name="data.health.value" value="{{data.health.value}}">
+                <span class="text-center">/</span>
+                <input class="num-short-3" type="number" name="data.health.max" value="{{data.health.max}}">
+            </div>
         </div>
 
-        <div class="box">
+        <!-- <div class="box">
             <div class="box-header flexrow">
                 <h4>INJURIES</h4>
                 <h4>{{openInjuriesCount}}</h4>
+            </div>
+        </div> -->
+        <div class="resource-plate-header plate-3-r">
+            <div class="flexrow">
+                <div class="symbol crippled"></div>
+                <h4 style="margin:0"><strong>INJURIES: {{openInjuriesCount}}</strong></h4>
             </div>
         </div>
 

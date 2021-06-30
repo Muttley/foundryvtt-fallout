@@ -1,10 +1,12 @@
 input[type="text"],
 input[type="number"] {
-    background-color: rgb(240, 240, 240);
+    background-color: #f0f0f0;
+    color: $c-font-prim;
 }
 
 .resource-label {
     font-weight: bold;
+    color: $c-font-prim;
 }
 .resource-row {
     padding: 2px;
@@ -15,8 +17,44 @@ input[type="number"] {
 .resource-header {
     padding: 2px 2px 2px 5px;
     background-color: black;
-    color: white;
+    color: $c-font-prim-contra;
     text-transform: uppercase;
+}
+.resource-plate-header{
+    padding: 5px 0 5px 10px;
+    margin-bottom: 5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: $c-font-prim-contra;
+    .label{font-family: $font-lobster;font-size: 24px;}
+    
+    &.plate-1-g{
+        background-image: url(../assets/ui/plate-header-1-g.svg);
+    }
+    &.plate-2-o{
+        background-image: url(../assets/ui/plate-header-2-o.svg);
+    }
+    &.plate-3-g{
+        background-image: url(../assets/ui/plate-header-3-g.svg);
+    }
+    &.plate-3-b{
+        background-image: url(../assets/ui/plate-header-3-b.svg);
+    }
+    &.plate-3-o{
+        background-image: url(../assets/ui/plate-header-3-o.svg);
+    }
+    &.plate-31-o{
+        background-image: url(../assets/ui/plate-header-31-o.svg);
+    }
+    &.plate-3-r{
+        background-image: url(../assets/ui/plate-header-3-r.svg);
+    }
+    &.plate-4-o{
+        background-image: url(../assets/ui/plate-header-4-o.svg);
+    }
+    &.plate-4-r{
+        background-image: url(../assets/ui/plate-header-4-r.svg);
+    }
 }
 .upperC {
     text-transform: uppercase;
@@ -36,6 +74,27 @@ input[type="number"] {
     text-align: center;
 }
 
+.special-number {
+    height: 42px;
+    width: 42px;
+    //background-image: url(../assets/ui/cog-white.svg);
+    background-image: url(../assets/ui/cogwheel.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type="number"] {
+        height: 36px;
+        max-width: 36px;
+        text-align: center;
+        background-color: unset;
+        border: none;
+        color: black;
+    }
+}
+
 .attributes-list {
     .special-letter {
         flex-direction: row;
@@ -45,29 +104,13 @@ input[type="number"] {
         margin-bottom: 5px;
         justify-content: space-evenly;
         align-items: center;
-        .special-number {
-            height: 42px;
-            width: 42px;
-            //background-image: url(../assets/ui/cog-white.svg);
-            background-image: url(../assets/ui/cogwheel.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        
         label {
             text-align: center;
-            color: white;
+            color: $c-font-prim-contra;
             font-size: 22px;
         }
-        input[type="number"] {
-            height: 36px;
-            max-width: 36px;
-            text-align: center;
-            background-color: unset;
-            border: none;
-        }
+        
     }
 
     .attribute:nth-child(odd) {

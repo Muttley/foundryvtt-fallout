@@ -14,7 +14,6 @@
 [class*=" fo-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "fallout" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -237,6 +236,8 @@
 
 .fallout .window-content {
   background-image: url(../assets/ui/window-bg.webp);
+  color: black;
+  background-color: #325885;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -752,6 +753,7 @@
   padding: 0 5px 5px 5px;
   margin-bottom: 15px;
   background-color: white;
+  color: black;
 }
 
 .fallout .box.no-padding {
@@ -842,41 +844,43 @@
   align-items: baseline;
 }
 
-.fallout .status-help-bar .help-item .symbol {
-  width: 12px;
-  height: 12px;
-  margin-right: 3px;
-}
-
-.fallout .status-help-bar .help-item .healthy {
-  background-color: #04dc17;
-}
-
-.fallout .status-help-bar .help-item .wounded {
-  background-image: url(../assets/ui/sticking-plaster.svg);
-  background-size: contain;
-  background-position: center;
-}
-
-.fallout .status-help-bar .help-item .crippled {
-  background-image: url(../assets/ui/drop.svg);
-  background-size: contain;
-  background-position: center;
-}
-
 .fallout .status-help-bar p {
   font-size: 11px;
   margin: 0;
   padding: 0;
 }
 
+.fallout .symbol {
+  max-width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  flex-basis: 12px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: none;
+}
+
+.fallout .symbol.healthy {
+  background-color: #04dc17;
+}
+
+.fallout .symbol.wounded {
+  background-image: url(../assets/ui/sticking-plaster.svg);
+}
+
+.fallout .symbol.crippled {
+  background-image: url(../assets/ui/drop.svg);
+}
+
 .fallout input[type="text"],
 .fallout input[type="number"] {
   background-color: #f0f0f0;
+  color: black;
 }
 
 .fallout .resource-label {
   font-weight: bold;
+  color: black;
 }
 
 .fallout .resource-row {
@@ -890,6 +894,55 @@
   background-color: black;
   color: white;
   text-transform: uppercase;
+}
+
+.fallout .resource-plate-header {
+  padding: 5px 0 5px 10px;
+  margin-bottom: 5px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.fallout .resource-plate-header .label {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+}
+
+.fallout .resource-plate-header.plate-1-g {
+  background-image: url(../assets/ui/plate-header-1-g.svg);
+}
+
+.fallout .resource-plate-header.plate-2-o {
+  background-image: url(../assets/ui/plate-header-2-o.svg);
+}
+
+.fallout .resource-plate-header.plate-3-g {
+  background-image: url(../assets/ui/plate-header-3-g.svg);
+}
+
+.fallout .resource-plate-header.plate-3-b {
+  background-image: url(../assets/ui/plate-header-3-b.svg);
+}
+
+.fallout .resource-plate-header.plate-3-o {
+  background-image: url(../assets/ui/plate-header-3-o.svg);
+}
+
+.fallout .resource-plate-header.plate-31-o {
+  background-image: url(../assets/ui/plate-header-31-o.svg);
+}
+
+.fallout .resource-plate-header.plate-3-r {
+  background-image: url(../assets/ui/plate-header-3-r.svg);
+}
+
+.fallout .resource-plate-header.plate-4-o {
+  background-image: url(../assets/ui/plate-header-4-o.svg);
+}
+
+.fallout .resource-plate-header.plate-4-r {
+  background-image: url(../assets/ui/plate-header-4-r.svg);
 }
 
 .fallout .upperC {
@@ -914,6 +967,27 @@
   text-align: center;
 }
 
+.fallout .special-number {
+  height: 42px;
+  width: 42px;
+  background-image: url(../assets/ui/cogwheel.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fallout .special-number input[type="number"] {
+  height: 36px;
+  max-width: 36px;
+  text-align: center;
+  background-color: unset;
+  border: none;
+  color: black;
+}
+
 .fallout .attributes-list .special-letter {
   flex-direction: row;
   display: flex;
@@ -924,29 +998,10 @@
   align-items: center;
 }
 
-.fallout .attributes-list .special-letter .special-number {
-  height: 42px;
-  width: 42px;
-  background-image: url(../assets/ui/cogwheel.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .fallout .attributes-list .special-letter label {
   text-align: center;
   color: white;
   font-size: 22px;
-}
-
-.fallout .attributes-list .special-letter input[type="number"] {
-  height: 36px;
-  max-width: 36px;
-  text-align: center;
-  background-color: unset;
-  border: none;
 }
 
 .fallout .attributes-list .attribute:nth-child(odd) .special-number {
