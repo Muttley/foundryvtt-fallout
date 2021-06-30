@@ -49,6 +49,8 @@ export class FalloutActor extends Actor {
     const data = actorData.data;
     data.carryWeight.base = 150 + (parseInt(this.data.data.attributes.str.value) * 10);
     this._calculateBodyResistance(actorData);
+    actorData.data.favoriteWeapons = actorData.items.filter(i=>i.type=='weapon' && i.data.data.favorite);
+    console.warn(actorData.data.favoriteWeapons);
   }
 
   _prepareRobotData(actorData) {
@@ -115,7 +117,7 @@ export class FalloutActor extends Actor {
     if (clothing) {
       for (let [k, v] of Object.entries(clothing.data.data.location)) {
         if (outfitedLocations[k] && v) {
-          outfitedLocations[k].name += ` with ${clothing.name}`;
+          outfitedLocations[k].name += ` over ${clothing.name}`;
           outfitedLocations[k].data.resistance.physical = Math.max(parseInt(outfitedLocations[k].data.resistance.physical), parseInt(clothing.data.data.resistance.physical));
           outfitedLocations[k].data.resistance.energy = Math.max(parseInt(outfitedLocations[k].data.resistance.energy) + parseInt(clothing.data.data.resistance.energy));
           outfitedLocations[k].data.resistance.radiation = Math.max(parseInt(outfitedLocations[k].data.resistance.radiation) + parseInt(clothing.data.data.resistance.radiation));
@@ -138,6 +140,9 @@ export class FalloutActor extends Actor {
       }
     }
 
+    // ADD OUTFITED LIST FOR DISPLAY
+    actorData.data.outfitedLocations = outfitedLocations;
+    
   }
 
   /**

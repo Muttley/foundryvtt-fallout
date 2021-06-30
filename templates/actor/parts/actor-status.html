@@ -24,19 +24,23 @@
             <div class="flexcol">
                 <div class="flexrow resource-row">
                     <label for="data.resistance.physical">PHYS</label>
-                    <input type="number" name="data.resistance.physical" class="num-short-2" value="{{data.resistance.physical}}">
+                    <input type="number" name="data.resistance.physical" class="num-short-2"
+                        value="{{data.resistance.physical}}">
                 </div>
                 <div class="flexrow resource-row">
                     <label for="data.resistance.energy">ENG</label>
-                    <input type="number" name="data.resistance.energy" class="num-short-2" value="{{data.resistance.energy}}">
+                    <input type="number" name="data.resistance.energy" class="num-short-2"
+                        value="{{data.resistance.energy}}">
                 </div>
                 <div class="flexrow resource-row">
                     <label for="data.resistance.radiation">RAD</label>
-                    <input type="number" name="data.resistance.radiation" class="num-short-2" value="{{data.resistance.radiation}}">
+                    <input type="number" name="data.resistance.radiation" class="num-short-2"
+                        value="{{data.resistance.radiation}}">
                 </div>
                 <div class="flexrow resource-row">
                     <label for="data.resistance.poison">POISON</label>
-                    <input type="number" name="data.resistance.poison" class="num-short-2" value="{{data.resistance.poison}}">
+                    <input type="number" name="data.resistance.poison" class="num-short-2"
+                        value="{{data.resistance.poison}}">
                 </div>
             </div>
         </div>
@@ -62,27 +66,33 @@
             <div class="row r1">
                 <div class="cell c1"></div>
                 <div class="cell c2 head {{data.body_parts.head.status}}">
-                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head keypart="head"}}
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head
+                    keypart="head"}}
                 </div>
                 <div class="cell c3"></div>
             </div>
             <div class="row r2">
                 <div class="cell c1 armR {{data.body_parts.armR.status}}">
-                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR keypart="armR"}}
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR
+                    keypart="armR"}}
                 </div>
                 <div class="cell c2 torso {{data.body_parts.torso.status}}">
-                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso keypart="torso"}}
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso
+                    keypart="torso"}}
                 </div>
                 <div class="cell c3 armL {{data.body_parts.armL.status}}">
-                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL keypart="armL"}}
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL
+                    keypart="armL"}}
                 </div>
             </div>
             <div class="row r3">
                 <div class="cell c1 legR {{data.body_parts.legR.status}}">
-                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR keypart="legR"}}
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR
+                    keypart="legR"}}
                 </div>
                 <div class="cell c2 legL {{data.body_parts.legL.status}}">
-                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL keypart="legL"}}
+                    {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL
+                    keypart="legL"}}
                 </div>
             </div>
         </div>
@@ -188,5 +198,18 @@
         </div>
         {{/each}} -->
 
+    </div>
+</div>
+
+{{!-- FAVOURITE ROW // EQUIPPED --}}
+<div class="status footer grid grid-5col">
+    <div class="grid-span-2">
+        {{> "systems/fallout/templates/actor/parts/actor-favorite_weapons.html"}}
+    </div>
+    <div class="grid-span-2">
+        {{> "systems/fallout/templates/actor/parts/actor-equipped_apparel.html"}}
+    </div>
+    <div>
+        {{> "systems/fallout/templates/actor/parts/actor-conditions.html"}}
     </div>
 </div>

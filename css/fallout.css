@@ -1126,6 +1126,10 @@
   color: rgba(0, 0, 0, 0.2);
 }
 
+.fallout .favorite-start-dim {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .fallout .item-formula {
   flex: 0 0 200px;
   padding: 0 8px;

@@ -1,363 +1,469 @@
 {
-    "Actor": {
-        "types": ["character", "robot", "creature"],
-        "templates": {
-            "base": {
-                "origin": "",
-                "level": {
-                    "value": 1,
-                    "currentXP": 0,
-                    "nextLevelXP": 0
-                },
-                "biography": "",
-                "description": "",
-                "trait": ""
-            },
-            "stats": {
-                "attributes": {
-                    "str": {
-                        "value": 1
-                    },
-                    "per": {
-                        "value": 1
-                    },
-                    "end": {
-                        "value": 1
-                    },
-                    "cha": {
-                        "value": 1
-                    },
-                    "int": {
-                        "value": 1
-                    },
-                    "agi": {
-                        "value": 1
-                    },
-                    "luc": {
-                        "value": 1
-                    }
-                }
-            },
-            "derived": {
-                "health": {
-                    "value": 1,
-                    "min": 0,
-                    "max": 1,
-                    "mod": 0
-                },
-                "defense": {
-                    "base": 0,
-                    "value": 0,
-                    "mod": 0
-                },
-                "carryWeight": {
-                    "base": "",
-                    "value": "",
-                    "mod": ""
-                },
-                "initiative": {
-                    "base": 0,
-                    "value": 0,
-                    "mod": 0
-                },
-                "resistance": {
-                    "physical": 0,
-                    "energy": 0,
-                    "radiation": 0,
-                    "poison": 0
-                },
-                "meleeDamage": {
-                    "base": 0,
-                    "value": 0,
-                    "mod": 0
-                },
-                "luckPoints": 0
-            },
-            "body": {
-                "body_parts": {
-                    "head": {
-                        "resistance": {
-                            "physical": 0,
-                            "energy": 0,
-                            "radiation": 0
-                        },
-                        "status": "healthy",
-                        "hit": {
-                            "min": 1,
-                            "max": 2
-                        },
-                        "injuries": [0, 0, 0, 0, 0]
-                    },
-                    "torso": {
-                        "resistance": {
-                            "physical": 0,
-                            "energy": 0,
-                            "radiation": 0
-                        },
-                        "status": "healthy",
-                        "hit": {
-                            "min": 3,
-                            "max": 8
-                        },
-                        "injuries": [0, 0, 0, 0, 0]
-                    },
-                    "armL": {
-                        "resistance": {
-                            "physical": 0,
-                            "energy": 0,
-                            "radiation": 0
-                        },
-                        "status": "healthy",
-                        "hit": {
-                            "min": 9,
-                            "max": 11
-                        },
-                        "injuries": [0, 0, 0, 0, 0]
-                    },
-                    "armR": {
-                        "resistance": {
-                            "physical": 0,
-                            "energy": 0,
-                            "radiation": 0
-                        },
-                        "status": "healthy",
-                        "hit": {
-                            "min": 12,
-                            "max": 14
-                        },
-                        "injuries": [0, 0, 0, 0, 0]
-                    },
-                    "legL": {
-                        "resistance": {
-                            "physical": 0,
-                            "energy": 0,
-                            "radiation": 0
-                        },
-                        "status": "healthy",
-                        "hit": {
-                            "min": 15,
-                            "max": 17
-                        },
-                        "injuries": [0, 0, 0, 0, 0]
-                    },
-                    "legR": {
-                        "resistance": {
-                            "physical": 0,
-                            "energy": 0,
-                            "radiation": 0
-                        },
-                        "status": "healthy",
-                        "hit": {
-                            "min": 18,
-                            "max": 20
-                        },
-                        "injuries": [0, 0, 0, 0, 0]
-                    }
-                }
-            }
+  "Actor": {
+    "types": [
+      "character",
+      "robot",
+      "creature"
+    ],
+    "templates": {
+      "base": {
+        "origin": "",
+        "level": {
+          "value": 1,
+          "currentXP": 0,
+          "nextLevelXP": 0
         },
-        "character": {
-            "templates": ["base", "derived", "body", "stats"]
-        },
-        "robot": {
-            "templates": ["base", "derived", "body", "stats"]
-        },
-        "npc": {
-            "templates": ["base"]
-        },
-        "creature": {
-            "templates": ["base"],
-            "powerLevel": "normal",
-            "body": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "mind": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "melee": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "guns": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "other": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "health": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "initiative": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "defense": {
-                "value": 0,
-                "min": 0,
-                "max": 1,
-                "mod": 0
-            },
-            "resistance": {
-                "physical": { "value": 0, "locations": "" },
-                "energy": { "value": 0, "locations": "" },
-                "radiation": { "value": 0, "locations": "" },
-                "poison": { "value": 0, "locations": "" }
-            },
-            "locations": [],
-            "injuries": ""
+        "biography": "",
+        "description": "",
+        "trait": ""
+      },
+      "stats": {
+        "attributes": {
+          "str": {
+            "value": 1
+          },
+          "per": {
+            "value": 1
+          },
+          "end": {
+            "value": 1
+          },
+          "cha": {
+            "value": 1
+          },
+          "int": {
+            "value": 1
+          },
+          "agi": {
+            "value": 1
+          },
+          "luc": {
+            "value": 1
+          }
         }
+      },
+      "derived": {
+        "health": {
+          "value": 1,
+          "min": 0,
+          "max": 1,
+          "mod": 0
+        },
+        "defense": {
+          "base": 0,
+          "value": 0,
+          "mod": 0
+        },
+        "carryWeight": {
+          "base": "",
+          "value": "",
+          "mod": ""
+        },
+        "initiative": {
+          "base": 0,
+          "value": 0,
+          "mod": 0
+        },
+        "resistance": {
+          "physical": 0,
+          "energy": 0,
+          "radiation": 0,
+          "poison": 0
+        },
+        "meleeDamage": {
+          "base": 0,
+          "value": 0,
+          "mod": 0
+        },
+        "luckPoints": 0,
+        "conditions":{
+          "hunger":0,
+          "thirst":0,
+          "sleep":0,
+          "fatigue":0
+        }
+      },
+      "body": {
+        "body_parts": {
+          "head": {
+            "resistance": {
+              "physical": 0,
+              "energy": 0,
+              "radiation": 0
+            },
+            "status": "healthy",
+            "hit": {
+              "min": 1,
+              "max": 2
+            },
+            "injuries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "torso": {
+            "resistance": {
+              "physical": 0,
+              "energy": 0,
+              "radiation": 0
+            },
+            "status": "healthy",
+            "hit": {
+              "min": 3,
+              "max": 8
+            },
+            "injuries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "armL": {
+            "resistance": {
+              "physical": 0,
+              "energy": 0,
+              "radiation": 0
+            },
+            "status": "healthy",
+            "hit": {
+              "min": 9,
+              "max": 11
+            },
+            "injuries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "armR": {
+            "resistance": {
+              "physical": 0,
+              "energy": 0,
+              "radiation": 0
+            },
+            "status": "healthy",
+            "hit": {
+              "min": 12,
+              "max": 14
+            },
+            "injuries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "legL": {
+            "resistance": {
+              "physical": 0,
+              "energy": 0,
+              "radiation": 0
+            },
+            "status": "healthy",
+            "hit": {
+              "min": 15,
+              "max": 17
+            },
+            "injuries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "legR": {
+            "resistance": {
+              "physical": 0,
+              "energy": 0,
+              "radiation": 0
+            },
+            "status": "healthy",
+            "hit": {
+              "min": 18,
+              "max": 20
+            },
+            "injuries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
     },
-    "Item": {
-        "types": ["skill", "perk", "weapon", "ammo", "weapon_mod", "apparel", "robot_armor", "special_ability"],
-        "templates": {
-            "base": {
-                "description": ""
-            },
-            "physical": {
-                "weight": 0,
-                "cost": 0,
-                "quantity": 1,
-                "rarity": 0
-            },
-            "equipable": {
-                "equippable": false,
-                "equipped": false
-            }
+    "character": {
+      "templates": [
+        "base",
+        "derived",
+        "body",
+        "stats"
+      ]
+    },
+    "robot": {
+      "templates": [
+        "base",
+        "derived",
+        "body",
+        "stats"
+      ]
+    },
+    "npc": {
+      "templates": [
+        "base"
+      ]
+    },
+    "creature": {
+      "templates": [
+        "base"
+      ],
+      "powerLevel": "normal",
+      "body": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "mind": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "melee": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "guns": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "other": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "health": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "initiative": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "defense": {
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "mod": 0
+      },
+      "resistance": {
+        "physical": {
+          "value": 0,
+          "locations": ""
         },
-        "skill": {
-            "templates": ["base"],
-            "value": 0,
-            "tag": false,
-            "defaultAttribute": "str",
-            "summary": ""
+        "energy": {
+          "value": 0,
+          "locations": ""
         },
-        "perk": {
-            "templates": ["base"],
-            "rank": {
-                "max": 1,
-                "value": 0,
-                "levelStart": 1,
-                "levelIncrease": 0
-            },
-            "requirements": ""
+        "radiation": {
+          "value": 0,
+          "locations": ""
         },
-        "weapon": {
-            "templates": ["base", "physical", "equipable"],
-            "melee": false,
-            "weaponType": "",
-            "ammo": "",
-            "attribute": "",
-            "skill": "",
-            "damage": {
-                "rating": 0,
-                "damageType": "",
-                "effect": ""
-            },
-            "range": "",
-            "fireRate": 0,
-            "condition": "",
-            "qualities": [],
-            "mods": {
-                "max": 0,
-                "current": 0,
-                "list": ""
-            }
-        },
-        "ammo": {
-            "templates": ["base", "physical"],
-            "type": ""
-        },
-        "weapon_mod": {
-            "templates": ["base", "physical"],
-            "type": "",
-            "weaponType": "",
-            "effects": {
-                "info": "",
-                "damageRating": 0,
-                "damageEffect": "",
-                "fireRate": 0
-            },
-            "qualities": "",
-            "perks": ""
-        },
-        "apparel": {
-            "templates": ["base", "physical", "equipable"],
-            "appareltype": "",
-            "armorType": "",
-            "powered": "",
-            "damaged": "",
-            "powerStr": 11,
-            "resistance": {
-                "physical": 0,
-                "energy": 0,
-                "radiation": 0
-            },
-            "location": {
-                "head": false,
-                "torso": true,
-                "armR": false,
-                "armL": false,
-                "legR": false,
-                "legL": false
-            },
-            "health": {
-                "value": 0,
-                "min": 0,
-                "max": 0,
-                "mod": 0
-            },
-            "special": "",
-            "mods": {
-                "max": 0,
-                "current": 0,
-                "list": ""
-            },
-            "powerSystems": {
-                "max": 0,
-                "current": 0,
-                "list": ""
-            }
-        },
-        "robot_armor": {
-            "templates": ["base", "physical", "equipable"],
-            "resistance": {
-                "physical": 0,
-                "energy": 0,
-                "radiation": 0
-            },
-            "location": {
-                "head": false,
-                "torso": true,
-                "armR": false,
-                "armL": false,
-                "legR": false,
-                "legL": false
-            },
-            "perks": "",
-            "carry": 0,
-            "mods": ""
-        },
-        "special_ability": {
-            "templates": ["base"]
+        "poison": {
+          "value": 0,
+          "locations": ""
         }
+      },
+      "locations": [],
+      "injuries": ""
     }
+  },
+  "Item": {
+    "types": [
+      "skill",
+      "perk",
+      "weapon",
+      "ammo",
+      "weapon_mod",
+      "apparel",
+      "robot_armor",
+      "special_ability"
+    ],
+    "templates": {
+      "base": {
+        "description": "",
+        "favorite": false
+      },
+      "physical": {
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "rarity": 0
+      },
+      "equipable": {
+        "equippable": false,
+        "equipped": false
+      }
+    },
+    "skill": {
+      "templates": [
+        "base"
+      ],
+      "value": 0,
+      "tag": false,
+      "defaultAttribute": "str",
+      "summary": ""
+    },
+    "perk": {
+      "templates": [
+        "base"
+      ],
+      "rank": {
+        "max": 1,
+        "value": 0,
+        "levelStart": 1,
+        "levelIncrease": 0
+      },
+      "requirements": ""
+    },
+    "weapon": {
+      "templates": [
+        "base",
+        "physical",
+        "equipable"
+      ],
+      "melee": false,
+      "weaponType": "",
+      "ammo": "",
+      "attribute": "",
+      "skill": "",
+      "damage": {
+        "rating": 0,
+        "damageType": "",
+        "effect": ""
+      },
+      "range": "",
+      "fireRate": 0,
+      "condition": "",
+      "qualities": [],
+      "mods": {
+        "max": 0,
+        "current": 0,
+        "list": ""
+      }
+    },
+    "ammo": {
+      "templates": [
+        "base",
+        "physical"
+      ],
+      "type": ""
+    },
+    "weapon_mod": {
+      "templates": [
+        "base",
+        "physical"
+      ],
+      "type": "",
+      "weaponType": "",
+      "effects": {
+        "info": "",
+        "damageRating": 0,
+        "damageEffect": "",
+        "fireRate": 0
+      },
+      "qualities": "",
+      "perks": ""
+    },
+    "apparel": {
+      "templates": [
+        "base",
+        "physical",
+        "equipable"
+      ],
+      "appareltype": "",
+      "armorType": "",
+      "powered": "",
+      "damaged": "",
+      "powerStr": 11,
+      "resistance": {
+        "physical": 0,
+        "energy": 0,
+        "radiation": 0
+      },
+      "location": {
+        "head": false,
+        "torso": true,
+        "armR": false,
+        "armL": false,
+        "legR": false,
+        "legL": false
+      },
+      "health": {
+        "value": 0,
+        "min": 0,
+        "max": 0,
+        "mod": 0
+      },
+      "special": "",
+      "mods": {
+        "max": 0,
+        "current": 0,
+        "list": ""
+      },
+      "powerSystems": {
+        "max": 0,
+        "current": 0,
+        "list": ""
+      }
+    },
+    "robot_armor": {
+      "templates": [
+        "base",
+        "physical",
+        "equipable"
+      ],
+      "resistance": {
+        "physical": 0,
+        "energy": 0,
+        "radiation": 0
+      },
+      "location": {
+        "head": false,
+        "torso": true,
+        "armR": false,
+        "armL": false,
+        "legR": false,
+        "legL": false
+      },
+      "perks": "",
+      "carry": 0,
+      "mods": ""
+    },
+    "special_ability": {
+      "templates": [
+        "base"
+      ]
+    }
+  }
 }

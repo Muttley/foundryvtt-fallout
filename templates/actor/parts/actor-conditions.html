@@ -1,0 +1,19 @@
+<div class="box">
+    <div class="box-header">
+        <h4>CONDITIONS</h4>
+    </div>
+    <div class="box-content">
+        <ol class="items-list">
+            {{#each data.conditions as |item key|}}
+            <li class="item flexrow">
+                <div class="item-name flex3">
+                    <h4 class="resource-label">{{key}}</h4>
+                </div>
+                <div class="text-center">
+                    <input type="number" class="num-short-2" name="data.conditions.{{key}}" value="{{item}}">
+                </div>
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+</div>

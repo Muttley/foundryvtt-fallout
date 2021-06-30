@@ -283,6 +283,14 @@ export class FalloutActorSheet extends ActorSheet {
       await this.actor.updateEmbeddedDocuments("Item", [this._toggleEquipped(li.data("item-id"), item)]);
     });
 
+    // * Toggle Favorite Inventory Item
+    html.find(".item-favorite").click(async (ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("item-id"));
+      console.warn(item.data);
+      await this.actor.updateEmbeddedDocuments("Item", [this._toggleFavorite(li.data("item-id"), item)]);
+    });
+
     // * INJURIES
     html.find('.injury-mark').click(async (ev) => {
       let status = parseInt(ev.currentTarget.dataset["status"]);
@@ -456,6 +464,16 @@ export class FalloutActorSheet extends ActorSheet {
       _id: id,
       data: {
         equipped: !item.data.data.equipped,
+      },
+    };
+  }
+
+  // Toggle Favorite
+  _toggleFavorite(id, item) {
+    return {
+      _id: id,
+      data: {
+        favorite: !item.data.data.favorite,
       },
     };
   }
