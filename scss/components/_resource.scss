@@ -50,9 +50,10 @@ input[type="number"] {
         background-image: url(../assets/ui/plate-header-2-o.svg);
     }
     &.plate-2{
-        @include element-color($fa-punch, 2);
+        @include element-color($fa-purple, 2);
     }
     &.plate-3{
+        //@include element-color($f-blue, 3);
         @include element-color(#254164, 3);
     }
     &.plate-3-g{
