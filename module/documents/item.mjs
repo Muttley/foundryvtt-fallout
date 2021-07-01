@@ -12,6 +12,17 @@ export class FalloutItem extends Item {
     super.prepareData();
   }
 
+  _preCreate(data, options, user){
+    super._preCreate(data, options, user);
+    if(data.type=="weapon"){
+      let flags = {};
+      flags['fallout.weaponQualities'] = duplicate(CONFIG.FALLOUT.WEAPONS.weaponQuality);
+      flags['fallout.damageEffects'] = duplicate(CONFIG.FALLOUT.WEAPONS.damageEffect);
+      console.warn(this.data);
+      this.data.update({ 'flags': flags });
+    }
+  }
+
   /**
    * Prepare a data object which is passed to any Roll formulas which are created related to this Item
    * @private

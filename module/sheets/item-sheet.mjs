@@ -69,6 +69,53 @@ export class FalloutItemSheet extends ItemSheet {
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
 
+    // Weapon Qualities Toggle
+    html.find(".wpn-tag-toggler").click(async (ev) => {
+      let tagEl = $(ev.currentTarget).parent('.wpn-tag');
+      let tagKey = tagEl.data('tagKey');
+      let tagValue = !tagEl.data('tagValue');
+      tagEl.data('tagValue', tagValue);
+      let tagType = tagEl.data('tagType');   
+      let itemId = this.document.data._id;
+      let wpn  = game.items.get(itemId);
+      let flagKey = "";
+      if(tagType=='weaponQuality')
+        flagKey = 'weaponQualities';
+      else if(tagType=='damageEffect')
+        flagKey = 'damageEffects';
+      let flags = duplicate(wpn.getFlag('fallout', flagKey));
+      let box = tagEl.parent('.item-list');
+      $(box.children()).each((q,i)=>{
+        let qu = flags[$(i).data('tagKey')];
+        qu['value'] = $(i).data('tagValue');
+      });
+      await wpn.setFlag('fallout',flagKey, flags);
+    });
+
+    // Tag Rank Change
+    html.find(".wpn-tag-rank").change(async (ev) => {
+      let newRank = $(ev.currentTarget).val();
+      let tagEl = $(ev.currentTarget).parent('.wpn-tag');
+      let tagKey = tagEl.data('tagKey');
+      let tagType = tagEl.data('tagType');   
+      let itemId = this.document.data._id;
+      let wpn  = game.items.get(itemId);
+      let flagKey = "";
+      if(tagType=='weaponQuality')
+        flagKey = 'weaponQualities';
+      else if(tagType=='damageEffect')
+        flagKey = 'damageEffects';
+      let flags = duplicate(wpn.getFlag('fallout', flagKey));
+      let box = tagEl.parent('.item-list');
+      $(box.children()).each((q,i)=>{
+        let qu = flags[$(i).data('tagKey')];
+        console.warn(qu);
+        if(qu['rank']!=null)
+          qu['rank'] = newRank;
+      });
+      await wpn.setFlag('fallout',flagKey, flags);
+    });
+
     // Effects.
     html.find(".effect-control").click(ev => {
       if (this.item.isOwned) return ui.notifications.warn("Managing Active Effects within an Owned Item is not currently supported and will be added in a subsequent update.")

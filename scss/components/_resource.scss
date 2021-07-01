@@ -173,6 +173,13 @@ input[type="number"] {
     }
 }
 
+.weapon-quality-tag,
+.damage-effect-tag {
+    &.active{
+        background-color: yellowgreen;
+    }
+}
+
 .ico-dc {
     min-width: 12px;
     height: 12px;
