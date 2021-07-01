@@ -193,7 +193,7 @@
 
 .fallout .window-content{
   //background-image: url(../assets/ui/window-bg.webp);
-  background-image:none;
+  background-image: $bg-sheet;
   color: $c-font-prim;
   background-color: $f-vault-blue;
   background-size: cover;

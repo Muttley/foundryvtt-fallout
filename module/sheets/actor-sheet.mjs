@@ -179,6 +179,14 @@ export class FalloutActorSheet extends ActorSheet {
   activateListeners(html) {
     super.activateListeners(html);
 
+    // SWITCH TABS
+    html.find('.tab-switch').click((evt) => {
+      evt.preventDefault();
+      const el = evt.currentTarget;
+      const tab = el.dataset.tab;
+      this._tabs[0].activate(tab);
+    });
+
     // Render the item sheet for viewing/editing prior to the editable check.
     html.find('.item-edit').click(ev => {
       const li = $(ev.currentTarget).parents(".item");

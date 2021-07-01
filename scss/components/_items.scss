@@ -74,7 +74,7 @@
     padding: 0 2px; // to align with the header border
     //border-bottom: 1px solid $c-faint;
     border-bottom: 1px solid #637294;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $c-char-itemlist-bg;
     &:last-child { border-bottom: none; }
     .item-name {
       color: $c-dark;

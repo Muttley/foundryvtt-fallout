@@ -1,4 +1,4 @@
-<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+<form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
 
   {{!-- Sheet Header --}}
   {{> "systems/fallout/templates/actor/parts/actor-header.html"}}
@@ -17,7 +17,8 @@
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-
+    
+    
     {{!-- Status Tab --}}
     <div class="tab status" data-group="primary" data-tab="status">
       {{> "systems/fallout/templates/actor/parts/actor-status.html" bodyValues=FALLOUT.BodyValues}}

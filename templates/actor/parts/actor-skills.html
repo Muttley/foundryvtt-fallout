@@ -7,7 +7,7 @@
   {{#each skills as |item id|}}
   <li class="item skill flexrow" data-item-id="{{item._id}}">
     <div class="item-name">
-      <h4><a><span class="resource-label">{{item.name}}</span> [{{toUpperCase item.data.defaultAttribute}}]</a></h4>
+      <h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{toUpperCase item.data.defaultAttribute}}]</a></h4>
     </div>
     <div class="item-skill-tag">
       <input type="checkbox" name="tag" {{#ifCond item.data.tag '==' true}}checked{{/ifCond}}>
