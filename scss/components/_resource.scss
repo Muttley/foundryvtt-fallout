@@ -1,8 +1,23 @@
 input[type="text"],
 input[type="number"] {
-    background-color: #f0f0f0;
-    color: black;
+    // background-color: #f0f0f0;
+    // color: black;
+    background-color: rgba(0,0,0,0.25);
+    color:  $c-font-prim;
+    &.underline {
+        background-color: unset;
+        border: unset;
+        border-bottom: 1px dashed $c-font-prim;
+        color: $c-font-prim;
+        &::placeholder {
+            color: #999;
+        }
+    }
 }
+
+.font-lobster{
+    font-family: $font-lobster;
+};
 
 .resource-label {
     font-weight: bold;
@@ -34,14 +49,21 @@ input[type="number"] {
     &.plate-2-o{
         background-image: url(../assets/ui/plate-header-2-o.svg);
     }
+    &.plate-2{
+        @include element-color($fa-punch, 2);
+    }
+    &.plate-3{
+        @include element-color(#254164, 3);
+    }
     &.plate-3-g{
         background-image: url(../assets/ui/plate-header-3-g.svg);
     }
     &.plate-3-b{
-        background-image: url(../assets/ui/plate-header-3-b.svg);
+        @include element-color(#b1c0d3, 3);
+        //background-image: url(../assets/ui/plate-header-3-b.svg);
     }
     &.plate-3-o{
-        background-image: url(../assets/ui/plate-header-3-o.svg);
+        @include element-color(#7490b3, 3);
     }
     &.plate-31-o{
         background-image: url(../assets/ui/plate-header-31-o.svg);

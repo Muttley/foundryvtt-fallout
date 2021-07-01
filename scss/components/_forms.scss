@@ -89,8 +89,8 @@
         flex-direction: column;
         flex-basis: $screen-size;
         background-color: $f-screen;
-        border: 1px solid;
-        border-radius: 6px;
+        //border: 1px solid;
+        //border-radius: 6px;
 
         .row {
             flex: 1;
@@ -313,7 +313,8 @@
 .box {
     padding: 0 5px 5px 5px;
     margin-bottom: 15px;
-    background-color: $c-font-prim-contra;
+    background-color:#e5e8ea1f;
+    //background-color: $c-font-prim-contra;
     color: $c-font-prim;
 
     &.no-padding {

@@ -139,6 +139,8 @@
         "Name": "Name",
         "Damage": "Damage",
         "Type": "Type",
-        "Quantity": "Quantity"
+        "Quantity": "Quantity",
+        "ORIGIN":"ORIGIN"
     }
+    
 }
