@@ -1,10 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @font-face {
   font-family: "fallout";
-  src: url("../fonts/fallout.eot?8sy694");
-  src: url("../fonts/fallout.eot?8sy694#iefix") format("embedded-opentype"), url("../fonts/fallout.ttf?8sy694") format("truetype"), url("../fonts/fallout?8sy694") format("woff"), url("../fonts/fallout?8sy694#icomoon") format("svg");
+  src: url("../fonts/fallout.ttf") format("truetype"), url("../fonts/fallout.woff") format("woff"), url("../fonts/fallout.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,8 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fo-energy:before {
+  content: "";
+}
+
+.fo-physical:before {
+  content: "";
+}
+
+.fo-poison:before {
+  content: "";
+}
+
+.fo-radiation:before {
+  content: "";
+}
+
 .fo-pip-boy:before {
-  content: "\e900";
+  content: "";
 }
 
 .fo-blue {
@@ -241,8 +257,8 @@
 }
 
 .fallout .window-content {
-  background-image: url(../assets/ui/window-bg.webp);
-  color: black;
+  background-image: url("");
+  color: #eee787;
   background-color: #325885;
   background-size: cover;
   background-repeat: no-repeat;
@@ -545,7 +561,7 @@
   display: flex;
   flex-direction: column;
   flex-basis: 390px;
-  background-color: #fff;
+  background-color: #325885;
 }
 
 .fallout .condition-box .pipboy-status-screen .row {
@@ -673,7 +689,7 @@
   flex-direction: column;
   cursor: pointer;
   min-width: 100px;
-  background-color: #fff;
+  background-color: #325885;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values {
@@ -689,12 +705,12 @@
 .fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type .resistance-icon {
   font-size: 1rem;
   text-align: center;
-  color: black;
+  color: #eee787;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .values .defense-type .label-value {
   margin: 0;
-  color: black;
+  color: #eee787;
 }
 
 .fallout .condition-box .pipboy-status-screen .status-plaque .status-header {
@@ -761,7 +777,7 @@
   padding: 0 5px 5px 5px;
   margin-bottom: 15px;
   background-color: #e5e8ea1f;
-  color: black;
+  color: #eee787;
 }
 
 .fallout .box.no-padding {
@@ -883,16 +899,16 @@
 
 .fallout input[type="text"],
 .fallout input[type="number"] {
-  background-color: #fff;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #eee787;
 }
 
 .fallout input[type="text"].underline,
 .fallout input[type="number"].underline {
   background-color: unset;
   border: unset;
-  border-bottom: 1px dashed black;
-  color: black;
+  border-bottom: 1px dashed #eee787;
+  color: #eee787;
 }
 
 .fallout input[type="text"].underline::placeholder,
@@ -909,12 +925,12 @@
 }
 
 .fallout .color-secondary {
-  color: #1a1a1a;
+  color: rgba(238, 231, 135, 0.61);
 }
 
 .fallout .resource-label {
   font-weight: bold;
-  color: black;
+  color: #eee787;
 }
 
 .fallout .resource-row {
@@ -960,7 +976,7 @@
 }
 
 .fallout .resource-plate-header.plate-3 {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23fff'%20fill-opacity%3D'1'%20stroke%3D'%23000'%20stroke-width%3D'0'%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23000'%20stroke-width%3D'0'%2F%3E%3C%2Fsvg%3E");
   padding: 5px 0 5px 10px;
   margin-bottom: 5px;
   background-size: 100% 100%;
@@ -1135,7 +1151,7 @@
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: black;
+  color: #eee787;
 }
 
 .fallout .items-list .item-list {
@@ -1177,7 +1193,7 @@
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #637294;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .fallout .items-list .item:last-child {
