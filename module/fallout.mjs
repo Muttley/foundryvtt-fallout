@@ -112,7 +112,7 @@ Hooks.on('renderChatMessage', (message, html, data) => {
   }
   html.find('.dice-icon').click((el) => {
     //if ($(el.currentTarget).hasClass('reroll'))
-      //return;
+    //return;
     if ($(el.currentTarget).hasClass('dice-selected')) {
       $(el.currentTarget).removeClass('dice-selected');
     } else {
@@ -122,9 +122,9 @@ Hooks.on('renderChatMessage', (message, html, data) => {
   let addBtn = html.find('.add-button');
   if (addBtn.length > 0) {
     addBtn[0].setAttribute('data-messageId', message.id);
-    addBtn.click((ev)=>{
+    addBtn.click((ev) => {
       let falloutRoll = message.data.flags.falloutroll;
-      game.fallout.DialogD6.createDialog({rollname: falloutRoll.rollname, diceNum:1, falloutRoll:falloutRoll})
+      game.fallout.DialogD6.createDialog({ rollname: falloutRoll.rollname, diceNum: 1, falloutRoll: falloutRoll })
       //console.warn(falloutRoll);
     });
   }
@@ -135,15 +135,15 @@ Hooks.on('renderChatMessage', (message, html, data) => {
 /* -------------------------------------------- */
 /*  Omit Specific Items on Specific Actors      */
 /* -------------------------------------------- */
-Hooks.on("preCreateItem", (_item)=>{
+Hooks.on("preCreateItem", (_item) => {
   //console.warn(_item?.parent?.type)
   //console.warn(_item.type)
-  if(_item.parent){
-    if((_item.parent.type!="npc" && _item.parent.type!="creature") && _item.type == "special_ability"){
+  if (_item.parent) {
+    if ((_item.parent.type != "npc" && _item.parent.type != "creature") && _item.type == "special_ability") {
       ui.notifications.warn(`ONLY NPCs AND CREATURES CAN HAVE SPECIAL ABILITIES`);
       return false;
     }
-    if((_item.parent.type!="character" && _item.parent.type!="robot") && _item.type == "perk"){
+    if ((_item.parent.type != "character" && _item.parent.type != "robot") && _item.type == "perk") {
       ui.notifications.warn(`ONLY PLAYERS CAN HAVE PERKS`);
       return false;
     }
@@ -232,5 +232,15 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
     "force"
   );
 });
+
+// Hooks.on("preCreateItem", (item, createData, options, userId) => {
+//   if (createData.type == "weapon") {
+//     let flags = {};
+//     flags['fallout.weaponQualities'] = duplicate(CONFIG.FALLOUT.WEAPONS.weaponQuality);
+//     flags['fallout.damageEffects'] = duplicate(CONFIG.FALLOUT.WEAPONS.damageEffect);
+//     item.data.update({ 'flags': flags });
+//     console.warn(item);
+//   }
+// });
 
 

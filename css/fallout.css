@@ -806,11 +806,11 @@
 }
 
 .fallout .bgOdd {
-  background-color: #e2efe65d;
+  background-color: #0000002f;
 }
 
 .fallout .bgEven {
-  background-color: #c3dfcb5d;
+  background-color: #0000004f;
 }
 
 .fallout .body-part-header {
@@ -914,6 +914,45 @@
 .fallout input[type="text"].underline::placeholder,
 .fallout input[type="number"].underline::placeholder {
   color: #999;
+}
+
+.fallout select {
+  color: #eee787;
+  background-color: #243f60;
+}
+
+.fallout .toggle-label {
+  padding: 3px;
+  border: 0 solid;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: cadetblue;
+}
+
+.fallout .toggle-label input[type="checkbox"] {
+  display: none;
+}
+
+.fallout .toggle-label label {
+  cursor: pointer;
+}
+
+.fallout .toggle-label.active {
+  color: greenyellow;
+  background-color: black;
+}
+
+.fallout .wpn-tag-toggler {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.fallout input.chk-btn + label:active,
+.fallout input.chk-btn:checked + label {
+  box-shadow: 0px 0px 3px inset;
+  background: #eee;
 }
 
 .fallout .font-lobster {
@@ -1108,11 +1147,6 @@
 
 .fallout .attributes-list .attribute:nth-child(7) {
   background-color: #b2abbc;
-}
-
-.fallout .weapon-quality-tag.active,
-.fallout .damage-effect-tag.active {
-  background-color: yellowgreen;
 }
 
 .fallout .ico-dc {

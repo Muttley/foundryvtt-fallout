@@ -138,13 +138,13 @@ export class FalloutActorSheet extends ActorSheet {
       else if (i.type === 'miscellany') {
         miscellany.push(i);
       }
-      else if( i.type === 'special_ability'){
+      else if (i.type === 'special_ability') {
         specialAbilities.push(i)
       }
     }
 
     // Assign and return
-    
+
     skills.sort(function (a, b) {
       var nameA = a.name.toUpperCase();
       var nameB = b.name.toUpperCase();
@@ -363,7 +363,7 @@ export class FalloutActorSheet extends ActorSheet {
       if (item.actor?.type == "creature") {
         skillName = game.i18n.localize(`FALLOUT.CREATURE.${item.data.data.skill}`);
         skill = item.actor.data.data[item.data.data.skill];
-        skill['tag']=true;
+        skill['tag'] = true;
         attribute = item.actor.data.data[item.data.data.attribute];
       } else {
         skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.data.data.weaponType];
@@ -428,7 +428,7 @@ export class FalloutActorSheet extends ActorSheet {
     const data = duplicate(header.dataset);
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
-    // Prepare the item object.
+    // Prepare the item object.   
     const itemData = {
       name: name,
       type: type,

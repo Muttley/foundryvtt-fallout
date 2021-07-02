@@ -1,189 +1,227 @@
 input[type="text"],
 input[type="number"] {
-    // background-color: #f0f0f0;
-    // color: black;
-    background-color: $c-char-input-bg;
-    color:  $c-char-input;
-    &.underline {
-        background-color: unset;
-        border: unset;
-        border-bottom: 1px dashed $c-font-prim;
-        color: $c-font-prim;
-        &::placeholder {
-            color: #999;
-        }
-    }
+	// background-color: #f0f0f0;
+	// color: black;
+	background-color: $c-char-input-bg;
+	color: $c-char-input;
+	&.underline {
+		background-color: unset;
+		border: unset;
+		border-bottom: 1px dashed $c-font-prim;
+		color: $c-font-prim;
+		&::placeholder {
+			color: #999;
+		}
+	}
 }
 
-.font-lobster{
-    font-family: $font-lobster;
-};
-
-.tab-switch{
-    cursor: pointer;
+select {
+	color: $c-font-prim;
+	background-color: darken($c-font-prim-contra, 10%);
 }
 
-.color-secondary{
-    color: $c-font-sec;
+.toggle-label {
+	input[type="checkbox"] {
+		display: none;
+	}
+	label {
+		cursor: pointer;
+	}
+
+	padding: 3px;
+	border: 0 solid;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: cadetblue;
+	&.active {
+		color: greenyellow;
+		background-color: black;
+	}
+}
+.wpn-tag-toggler {
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+input.chk-btn + label:active,
+input.chk-btn:checked + label {
+	box-shadow: 0px 0px 3px inset;
+	background: #eee;
+}
+
+.font-lobster {
+	font-family: $font-lobster;
+}
+
+.tab-switch {
+	cursor: pointer;
+}
+
+.color-secondary {
+	color: $c-font-sec;
 }
 
 .resource-label {
-    font-weight: bold;
-    color: $c-font-prim;
+	font-weight: bold;
+	color: $c-font-prim;
 }
 .resource-row {
-    padding: 2px;
-    margin-bottom: 2px;
-    align-items: center;
+	padding: 2px;
+	margin-bottom: 2px;
+	align-items: center;
 }
 
 .resource-header {
-    padding: 2px 2px 2px 5px;
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
+	padding: 2px 2px 2px 5px;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
 }
-.resource-plate-header{
-    padding: 5px 0 5px 10px;
-    margin-bottom: 5px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: white;
-    .label{font-family: $font-lobster;font-size: 24px;}
-    
-    &.plate-1-g{
-        background-image: url(../assets/ui/plate-header-1-g.svg);
-    }
-    &.plate-2-o{
-        background-image: url(../assets/ui/plate-header-2-o.svg);
-    }
-    &.plate-2{
-        @include element-color(#605274, 2);
-        //@include element-color($fa-purple, 2);
-    }
-    &.plate-3{
-        //@include element-color($f-blue, 3);
-        @include element-color($c-char-header, 3);
-    }
-    &.plate-3-g{
-        background-image: url(../assets/ui/plate-header-3-g.svg);
-    }
-    &.plate-3-b{
-        @include element-color(#b1c0d3, 3);
-        //background-image: url(../assets/ui/plate-header-3-b.svg);
-    }
-    &.plate-3-o{
-        @include element-color(#7490b3, 3);
-    }
-    &.plate-31-o{
-        background-image: url(../assets/ui/plate-header-31-o.svg);
-    }
-    &.plate-3-r{
-        background-image: url(../assets/ui/plate-header-3-r.svg);
-    }
-    &.plate-4-o{
-        background-image: url(../assets/ui/plate-header-4-o.svg);
-    }
-    &.plate-4-r{
-        background-image: url(../assets/ui/plate-header-4-r.svg);
-    }
+.resource-plate-header {
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: white;
+	.label {
+		font-family: $font-lobster;
+		font-size: 24px;
+	}
+
+	&.plate-1-g {
+		background-image: url(../assets/ui/plate-header-1-g.svg);
+	}
+	&.plate-2-o {
+		background-image: url(../assets/ui/plate-header-2-o.svg);
+	}
+	&.plate-2 {
+		@include element-color(#605274, 2);
+		//@include element-color($fa-purple, 2);
+	}
+	&.plate-3 {
+		//@include element-color($f-blue, 3);
+		@include element-color($c-char-header, 3);
+	}
+	&.plate-3-g {
+		background-image: url(../assets/ui/plate-header-3-g.svg);
+	}
+	&.plate-3-b {
+		@include element-color(#b1c0d3, 3);
+		//background-image: url(../assets/ui/plate-header-3-b.svg);
+	}
+	&.plate-3-o {
+		@include element-color(#7490b3, 3);
+	}
+	&.plate-31-o {
+		background-image: url(../assets/ui/plate-header-31-o.svg);
+	}
+	&.plate-3-r {
+		background-image: url(../assets/ui/plate-header-3-r.svg);
+	}
+	&.plate-4-o {
+		background-image: url(../assets/ui/plate-header-4-o.svg);
+	}
+	&.plate-4-r {
+		background-image: url(../assets/ui/plate-header-4-r.svg);
+	}
 }
 .upperC {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 .lowerC {
-    text-transform: lowercase;
+	text-transform: lowercase;
 }
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 .num-short-2 {
-    max-width: 2rem;
-    text-align: center;
+	max-width: 2rem;
+	text-align: center;
 }
 .num-short-3 {
-    max-width: 3rem;
-    text-align: center;
+	max-width: 3rem;
+	text-align: center;
 }
 
 .special-number {
-    height: 42px;
-    width: 42px;
-    //background-image: url(../assets/ui/cog-white.svg);
-    background-image: url(../assets/ui/cogwheel.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    input[type="number"] {
-        height: 36px;
-        max-width: 36px;
-        text-align: center;
-        background-color: unset;
-        border: none;
-        color: black;
-    }
+	height: 42px;
+	width: 42px;
+	//background-image: url(../assets/ui/cog-white.svg);
+	background-image: url(../assets/ui/cogwheel.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	input[type="number"] {
+		height: 36px;
+		max-width: 36px;
+		text-align: center;
+		background-color: unset;
+		border: none;
+		color: black;
+	}
 }
 
 .attributes-list {
-    .special-letter {
-        flex-direction: row;
-        display: flex;
-        font-size: 18px;
-        padding: 2px 5px;
-        margin-bottom: 5px;
-        justify-content: space-evenly;
-        align-items: center;
-        
-        label {
-            text-align: center;
-            color: white;
-            font-size: 22px;
-        }
-        
-    }
+	.special-letter {
+		flex-direction: row;
+		display: flex;
+		font-size: 18px;
+		padding: 2px 5px;
+		margin-bottom: 5px;
+		justify-content: space-evenly;
+		align-items: center;
 
-    .attribute:nth-child(odd) {
-        .special-number {
-            background-image: url(../assets/ui/cogwheel-rot.svg);
-        }
-    }
-    .attribute:nth-child(1) {
-        background-color: $fa-green;
-    }
-    .attribute:nth-child(2) {
-        background-color: $fa-brown;
-    }
-    .attribute:nth-child(3) {
-        background-color: $fa-blue;
-    }
-    .attribute:nth-child(4) {
-        background-color: $fa-orange;
-    }
-    .attribute:nth-child(5) {
-        background-color: $fa-grey;
-    }
-    .attribute:nth-child(6) {
-        background-color: $fa-punch;
-    }
-    .attribute:nth-child(7) {
-        background-color: $fa-purple;
-    }
+		label {
+			text-align: center;
+			color: white;
+			font-size: 22px;
+		}
+	}
+
+	.attribute:nth-child(odd) {
+		.special-number {
+			background-image: url(../assets/ui/cogwheel-rot.svg);
+		}
+	}
+	.attribute:nth-child(1) {
+		background-color: $fa-green;
+	}
+	.attribute:nth-child(2) {
+		background-color: $fa-brown;
+	}
+	.attribute:nth-child(3) {
+		background-color: $fa-blue;
+	}
+	.attribute:nth-child(4) {
+		background-color: $fa-orange;
+	}
+	.attribute:nth-child(5) {
+		background-color: $fa-grey;
+	}
+	.attribute:nth-child(6) {
+		background-color: $fa-punch;
+	}
+	.attribute:nth-child(7) {
+		background-color: $fa-purple;
+	}
 }
 
-.weapon-quality-tag,
-.damage-effect-tag {
-    &.active{
-        background-color: yellowgreen;
-    }
-}
+// .weapon-quality-tag,
+// .damage-effect-tag {
+// 	&.active {
+// 		background-color: yellowgreen;
+// 	}
+// }
 
 .ico-dc {
-    min-width: 12px;
-    height: 12px;
-    background-image: url(../assets/ico/dc.webp);
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
+	min-width: 12px;
+	height: 12px;
+	background-image: url(../assets/ico/dc.webp);
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
 }

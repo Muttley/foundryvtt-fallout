@@ -82,13 +82,16 @@
 
       <div class="flexrow resource-row bgOdd">
         <label class="resource-label" for="data.damage.damageType">DAMAGE TYPE</label>
-        <select name="data.damage.damageType">
-          {{#select data.damage.damageType}}
-          {{#each FALLOUT.WEAPONS.damageType as |dmgType key|}}
-          <option value="{{key}}">{{localize dmgType}}</option>
+        <div class="grid">
+          {{#each data.damage.damageType as |dmgType key|}}
+          <div class="flexrow toggle-label {{#ifCond dmgType '==' true}}active{{/ifCond}}">
+            <label class="font-size-13">
+              <input class="" type="checkbox" name="data.damage.damageType.{{key}}" {{#ifCond dmgType '==' true}}checked{{/ifCond}}>
+              {{localize (concat 'FALLOUT.WEAPONS.damageType.' key)}} <i class="fo-{{key}}"></i>
+            </label>
+          </div>
           {{/each}}
-          {{/select}}
-        </select>
+        </div>
       </div>
 
       <div class="resource-row flexrow bgEven">
@@ -116,10 +119,11 @@
         <div class="resource-row">
           <label class="resource-label" for=" data.damage.rating">WEAPON QUALITIES</label>
           <div class="grid item-list">
-            {{#each flags.fallout.weaponQualities as |item key|}}
-            <div class="wpn-tag weapon-quality-tag {{#ifCond item.value '==' true}}active{{/ifCond}}" data-tag-key="{{key}}"
-              data-tag-value="{{item.value}}" data-index="{{@index}}" data-tag-type='weaponQuality'>
-              <label class="wpn-tag-toggler">{{item.label}}</label>
+            {{#each data.damage.weaponQuality as |item key|}}
+            <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
+              <label>
+                <input type="checkbox" name="data.damage.weaponQuality.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{item.label}}
+              </label>
             </div>
             {{/each}}
           </div>
@@ -127,15 +131,24 @@
         <div class="resource-row">
           <label class="resource-label" for=" data.damage.rating">DAMAGE EFFECTS</label>
           <div class="grid item-list">
-            {{#each flags.fallout.damageEffects as |item key|}}
-            <div class="wpn-tag damage-effect-tag {{#ifCond item.value '==' true}}active{{/ifCond}}" data-tag-key="{{key}}"
-              data-tag-value="{{item.value}}" data-index="{{@index}}" data-tag-type='damageEffect'>
+            {{#each data.damage.damageEffect as |item key|}}
+            <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
+              <label>
+                <input type="checkbox" name="data.damage.damageEffect.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{item.label}}
+              </label>
+              {{#ifCond key '==' 'piercing'}}
+              <input type="number" name="data.damage.damageEffect.{{key}}.rank" class="num-short-2" value="{{item.rank}}">
+              {{/ifCond}}
+            </div>
+            {{/each}}
+            <!-- {{#each data.damage.damageEffect as |item key|}}
+            <div class="wpn-tag damage-effect-tag toggle-label flex align-mid {{#ifCond item.value '==' true}}active{{/ifCond}}" data-tag-key="{{key}}" data-tag-value="{{item.value}}" data-index="{{@index}}" data-tag-type='damageEffect'>
               <label class="wpn-tag-toggler">{{item.label}}</label>
               {{#ifCond key '==' 'piercing'}}
               <input type="number" class="num-short-2 wpn-tag-rank" value="{{item.rank}}">
               {{/ifCond}}
             </div>
-            {{/each}}
+            {{/each}} -->
           </div>
         </div>
       </div>
