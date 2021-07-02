@@ -1,432 +1,453 @@
 .item-form {
-    font-family: $font-primary;
+	font-family: $font-primary;
 }
 
 .sheet-header {
-    flex: 0 auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-bottom: 10px;
+	flex: 0 auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 10px;
 
-    .profile-img {
-        flex: 0 0 100px;
-        height: 100px;
-        margin-right: 10px;
-    }
+	.profile-img {
+		flex: 0 0 100px;
+		height: 100px;
+		margin-right: 10px;
+	}
 
-    // .header-fields {
-    //   flex: 1;
-    // }
+	// .header-fields {
+	//   flex: 1;
+	// }
 
-    h1.charname {
-        height: 50px;
-        padding: 0px;
-        margin: 5px 0;
-        border-bottom: 0;
-        input {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-        }
-    }
+	h1.charname {
+		height: 50px;
+		padding: 0px;
+		margin: 5px 0;
+		border-bottom: 0;
+		input {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+	}
 }
 
 .sheet-tabs {
-    flex: 0;
-    font-size: 18px;
-    font-family: $font-oswald;
-    text-transform: uppercase;
+	flex: 0;
+	font-size: 18px;
+	font-family: $font-oswald;
+	text-transform: uppercase;
 }
 
 .fallout.sheet .window-content form {
-    height: 100%;
-    overflow: hidden;
+	height: 100%;
+	overflow: hidden;
 }
 
 .fallout.sheet .window-content .tab {
-    height: 100%;
-    overflow-y: auto;
+	height: 100%;
+	overflow-y: auto;
 }
 
 .fallout.sheet .editor {
-    height: 100%;
+	height: 100%;
 }
 
 .description-field {
-    background: rgba(245, 245, 220, 0.301);
-    padding: 0 5px;
-    border: 1px solid lightgray;
-    .editor {
-        height: 100%;
-    }
+	background: rgba(245, 245, 220, 0.301);
+	padding: 0 5px;
+	border: 1px solid lightgray;
+	.editor {
+		height: 100%;
+	}
 }
 
 * .editor,
 * .editor-content {
-    min-height: 200px;
+	min-height: 200px;
 }
 
 // PIPBOY
 .condition-box {
-    // background-color: black;
-    // color: white;
-    // input[type="number"] {
-    //     color: white;
-    // }
+	// background-color: black;
+	// color: white;
+	// input[type="number"] {
+	//     color: white;
+	// }
 
-    .pipboy-status-screen {
-        min-width: $screen-size;
-        max-width: $screen-size;
-        height: $screen-size;
-        max-height: $screen-size;
-        margin: 0 0 5px 0;
-        border: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex-basis: $screen-size;
-        background-color: $c-pipboy-screen;
-        //border: 1px solid;
-        //border-radius: 6px;
+	.pipboy-status-screen {
+		min-width: $screen-size;
+		max-width: $screen-size;
+		height: $screen-size;
+		max-height: $screen-size;
+		margin: 0 0 5px 0;
+		border: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		flex-basis: $screen-size;
+		background-color: $c-pipboy-screen;
+		//border: 1px solid;
+		//border-radius: 6px;
 
-        .row {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-        }
+		.row {
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+		}
 
-        .cell {
-            flex: 1;
-            flex-wrap: wrap;
-            position: relative;
-            background-repeat: none;
-        }
+		.cell {
+			flex: 1;
+			flex-wrap: wrap;
+			position: relative;
+			background-repeat: none;
+		}
 
-        .r1 {
-            .c1 {
-                background-image: url("../assets/ui/pipboy-body/healthy/c_01.png");
-                background-size: $cell-wh $cell-wh;
-                //background-image: url("../assets/ui/pipboy-body/part-1.png");
-            }
+		.r1 {
+			.c1 {
+				background-image: url("../assets/ui/pipboy-body/healthy/c_01.png");
+				background-size: $cell-wh $cell-wh;
+				//background-image: url("../assets/ui/pipboy-body/part-1.png");
+			}
 
-            .c2 {
-                background-size: $cell-wh $cell-wh;
-                &.healthy {
-                    background-image: url("../assets/ui/pipboy-body/healthy/c_02.png");
+			.c2 {
+				background-size: $cell-wh $cell-wh;
+				&.healthy {
+					background-image: url("../assets/ui/pipboy-body/healthy/c_02.png");
 
-                    //background-image: url("../assets/ui/pipboy-body/head.png");
-                }
+					//background-image: url("../assets/ui/pipboy-body/head.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c_02.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/wounded/c_02.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c_02.png");
-                }
-            }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/crippled/c_02.png");
+				}
+			}
 
-            .c3 {
-                background-image: url("../assets/ui/pipboy-body/healthy/c_03.png");
-                background-size: $cell-wh $cell-wh;
-                //background-image: url("../assets/ui/pipboy-body/part-3.png");
-            }
-        }
+			.c3 {
+				background-image: url("../assets/ui/pipboy-body/healthy/c_03.png");
+				background-size: $cell-wh $cell-wh;
+				//background-image: url("../assets/ui/pipboy-body/part-3.png");
+			}
+		}
 
-        .r2 {
-            .c1 {
-                background-size: $cell-wh $cell-wh;
-                &.healthy {
-                    //background-image: url("../assets/ui/pipboy-body/armR.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c_04.png");
-                }
+		.r2 {
+			.c1 {
+				background-size: $cell-wh $cell-wh;
+				&.healthy {
+					//background-image: url("../assets/ui/pipboy-body/armR.png");
+					background-image: url("../assets/ui/pipboy-body/healthy/c_04.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c_04.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/wounded/c_04.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c_04.png");
-                }
-            }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/crippled/c_04.png");
+				}
+			}
 
-            .c2 {
-                background-size: $cell-wh $cell-wh;
-                &.healthy {
-                    //background-image: url("../assets/ui/pipboy-body/torso.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c_05.png");
-                }
+			.c2 {
+				background-size: $cell-wh $cell-wh;
+				&.healthy {
+					//background-image: url("../assets/ui/pipboy-body/torso.png");
+					background-image: url("../assets/ui/pipboy-body/healthy/c_05.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c_05.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/wounded/c_05.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c_05.png");
-                }
-            }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/crippled/c_05.png");
+				}
+			}
 
-            .c3 {
-                background-size: $cell-wh $cell-wh;
-                &.healthy {
-                    //background-image: url("../assets/ui/pipboy-body/armL.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c_06.png");
-                }
+			.c3 {
+				background-size: $cell-wh $cell-wh;
+				&.healthy {
+					//background-image: url("../assets/ui/pipboy-body/armL.png");
+					background-image: url("../assets/ui/pipboy-body/healthy/c_06.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c_06.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/wounded/c_06.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c_06.png");
-                }
-            }
-        }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/crippled/c_06.png");
+				}
+			}
+		}
 
-        .r3 {
-            .c1 {
-                background-size: $cell-w $cell-wh;
-                &.healthy {
-                    //background-image: url("../assets/ui/pipboy-body/legR.png");
-                    background-image: url("../assets/ui/pipboy-body/healthy/c_07.png");
-                }
+		.r3 {
+			.c1 {
+				background-size: $cell-w $cell-wh;
+				&.healthy {
+					//background-image: url("../assets/ui/pipboy-body/legR.png");
+					background-image: url("../assets/ui/pipboy-body/healthy/c_07.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c_07.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/wounded/c_07.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c_07.png");
-                }
-            }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/crippled/c_07.png");
+				}
+			}
 
-            .c2 {
-                background-size: $cell-w $cell-wh;
-                &.healthy {
-                    background-image: url("../assets/ui/pipboy-body/healthy/c_08.png");
-                    //background-image: url("../assets/ui/pipboy-body/legL.png");
-                }
+			.c2 {
+				background-size: $cell-w $cell-wh;
+				&.healthy {
+					background-image: url("../assets/ui/pipboy-body/healthy/c_08.png");
+					//background-image: url("../assets/ui/pipboy-body/legL.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/wounded/c_08.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/wounded/c_08.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/crippled/c_08.png");
-                }
-            }
-        }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/crippled/c_08.png");
+				}
+			}
+		}
 
-        .status-plaque {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-            min-width: 100px;
-            background-color: $f-plaque;
-            .values {
-                display: flex;
-                flex-direction: row;
-                //background-color: $f-blue;
+		.status-plaque {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			cursor: pointer;
+			min-width: 100px;
+			background-color: $f-plaque;
+			.values {
+				display: flex;
+				flex-direction: row;
+				//background-color: $f-blue;
 
-                .defense-type {
-                    display: flex;
-                    flex-direction: column;
+				.defense-type {
+					display: flex;
+					flex-direction: column;
 
-                    .resistance-icon {
-                        font-size: 1rem;
-                        text-align: center;
-                        color: $f-plaque-text;
-                    }
+					.resistance-icon {
+						font-size: 1rem;
+						text-align: center;
+						color: $f-plaque-text;
+					}
 
-                    .label-value {
-                        margin: 0;
-                        color: $f-plaque-text;
-                    }
-                }
-            }
+					.label-value {
+						margin: 0;
+						color: $f-plaque-text;
+					}
+				}
+			}
 
-            .status-header {
-                margin: 0;
-                padding: 2px 5px;
-                background-color: black;
-                p {
-                    color: white;
-                    margin: 0;
-                }
-            }
+			.status-header {
+				margin: 0;
+				padding: 2px 5px;
+				background-color: black;
+				p {
+					color: white;
+					margin: 0;
+				}
+			}
 
-            .status {
-                display: flex;
-                flex-direction: row;
-                min-height: 80px;
-                min-height: 20px;
-                background-repeat: no-repeat;
+			.status {
+				display: flex;
+				flex-direction: row;
+				min-height: 80px;
+				min-height: 20px;
+				background-repeat: no-repeat;
 
-                &.healthy {
-                    background-image: url("../assets/ui/pipboy-body/bar-healthy.png");
-                }
+				&.healthy {
+					background-image: url("../assets/ui/pipboy-body/bar-healthy.png");
+				}
 
-                &.wounded {
-                    background-image: url("../assets/ui/pipboy-body/bar-wounded.png");
-                }
+				&.wounded {
+					background-image: url("../assets/ui/pipboy-body/bar-wounded.png");
+				}
 
-                &.crippled {
-                    background-image: url("../assets/ui/pipboy-body/bar-crippled.png");
-                }
-            }
+				&.crippled {
+					background-image: url("../assets/ui/pipboy-body/bar-crippled.png");
+				}
+			}
 
-            &.head {
-                left: -80px;
-                top: 10px;
-            }
+			&.head {
+				left: -80px;
+				top: 10px;
+			}
 
-            &.torso {
-                left: 0px;
-            }
+			&.torso {
+				left: 0px;
+			}
 
-            &.armR {
-                top: 50px;
-                left: 10px;
-            }
+			&.armR {
+				top: 50px;
+				left: 10px;
+			}
 
-            &.armL {
-                top: 50px;
-                right: 10px;
-            }
+			&.armL {
+				top: 50px;
+				right: 10px;
+			}
 
-            &.legR {
-                top: 40px;
-                left: 10px;
-            }
+			&.legR {
+				top: 40px;
+				left: 10px;
+			}
 
-            &.legL {
-                top: 40px;
-                right: 10px;
-            }
-        }
-    }
+			&.legL {
+				top: 40px;
+				right: 10px;
+			}
+		}
+	}
 }
 .box {
-    padding: 0 5px 5px 5px;
-    margin-bottom: 15px;
-    background-color:#e5e8ea1f;
-    //background-color: $c-font-prim-contra;
-    color: $c-font-prim;
+	padding: 0 5px 5px 5px;
+	margin-bottom: 15px;
+	background-color: #e5e8ea1f;
+	//background-color: $c-font-prim-contra;
+	color: $c-font-prim;
 
-    &.no-padding {
-        padding: 0;
-        .box-header {
-            margin: 0 0 0 0;
-        }
-        & > div {
-            padding: 5px;
-        }
-    }
+	&.no-padding {
+		padding: 0;
+		.box-header {
+			margin: 0 0 0 0;
+		}
+		& > div {
+			padding: 5px;
+		}
+	}
 
-    .box-header {
-        margin: 0 -5px 5px -5px;
-        padding: 5px 5px 2px 5px;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        * {
-            padding: 0;
-            margin: 0;
-            color: white;
-        }
-    }
+	.box-header {
+		margin: 0 -5px 5px -5px;
+		padding: 5px 5px 2px 5px;
+		background-color: rgb(0, 0, 0);
+		color: white;
+		* {
+			padding: 0;
+			margin: 0;
+			color: white;
+		}
+	}
 }
 
 .bgOdd {
-    background-color: $f-list-green-1;
+	background-color: $f-list-green-1;
 }
 .bgEven {
-    background-color: $f-list-green-2;
+	background-color: $f-list-green-2;
 }
 
 .body-part-header {
-    background-color: rgb(43, 22, 41);
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 2px 5px;
-    h4 {
-        margin: 0;
-    }
+	background-color: rgb(43, 22, 41);
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 2px 5px;
+	h4 {
+		margin: 0;
+	}
 }
 
 .injury-bar {
-    display: flex;
-    margin-bottom: 5px;
-    padding: 1px;
-    //background-color: black;
+	display: flex;
+	margin-bottom: 5px;
+	padding: 1px;
+	//background-color: black;
 
-    //flex-direction: row;
-    //justify-content:space-between;
-    .injury-mark {
-        margin-right: 2px;
-        //border: 1px solid;
-        width: 100%;
-        cursor: pointer;
-        &.condition0 {
-            background-color: $f-healthy;
-            background-image: none;
-        }
-        &.condition1 {
-            background-color: $f-wounded;
-            background-color: none;
-            background-image: url(../assets/ui/sticking-plaster.svg);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        &.condition2 {
-            background-color: $f-crippled;
-            background-image: url(../assets/ui/drop.svg);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
-    :last-child {
-        margin-right: 0;
-    }
+	//flex-direction: row;
+	//justify-content:space-between;
+	.injury-mark {
+		margin-right: 2px;
+		//border: 1px solid;
+		width: 100%;
+		cursor: pointer;
+		&.condition0 {
+			background-color: $f-healthy;
+			background-image: none;
+		}
+		&.condition1 {
+			background-color: $f-wounded;
+			background-color: none;
+			background-image: url(../assets/ui/sticking-plaster.svg);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		&.condition2 {
+			background-color: $f-crippled;
+			background-image: url(../assets/ui/drop.svg);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+	:last-child {
+		margin-right: 0;
+	}
 }
 
 .status-help-bar {
-    .help-item {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        
-    }
-    p {
-        font-size: 11px;
-        margin: 0;
-        padding: 0;
-    }
+	.help-item {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	p {
+		font-size: 11px;
+		margin: 0;
+		padding: 0;
+	}
 }
 .symbol {
-    max-width: 12px;
-    height: 12px;
-    margin-right: 3px;
-    flex-basis: 12px;
-    
-    background-size: contain;
-    background-position: center;
-    background-repeat: none;
+	max-width: 12px;
+	height: 12px;
+	margin-right: 3px;
+	flex-basis: 12px;
 
-    &.healthy {
-        background-color: $f-healthy;
-    }
-    &.wounded {
-        background-image: url(../assets/ui/sticking-plaster.svg);
-        
-    }
-    &.crippled {
-        background-image: url(../assets/ui/drop.svg);
-    }
+	background-size: contain;
+	background-position: center;
+	background-repeat: none;
+
+	&.healthy {
+		background-color: $f-healthy;
+	}
+	&.wounded {
+		background-image: url(../assets/ui/sticking-plaster.svg);
+	}
+	&.crippled {
+		background-image: url(../assets/ui/drop.svg);
+	}
+}
+
+.power-armor-status {
+	position: relative;
+	max-width: 136px;
+	height: 180px;
+	.body-part {
+		padding: 5px;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.2);
+		width: 40px;
+		.head {
+			background-color: black;
+			color: white;
+		}
+		.content {
+			text-align: center;
+		}
+
+		input [type="number"] {
+			text-align: center;
+		}
+	}
 }

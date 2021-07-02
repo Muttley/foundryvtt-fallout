@@ -897,6 +897,32 @@
   background-image: url(../assets/ui/drop.svg);
 }
 
+.fallout .power-armor-status {
+  position: relative;
+  max-width: 136px;
+  height: 180px;
+}
+
+.fallout .power-armor-status .body-part {
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40px;
+}
+
+.fallout .power-armor-status .body-part .head {
+  background-color: black;
+  color: white;
+}
+
+.fallout .power-armor-status .body-part .content {
+  text-align: center;
+}
+
+.fallout .power-armor-status .body-part input [type="number"] {
+  text-align: center;
+}
+
 .fallout input[type="text"],
 .fallout input[type="number"] {
   background-color: rgba(0, 0, 0, 0.2);
