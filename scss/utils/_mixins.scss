@@ -1,53 +1,52 @@
 @mixin element-invisible {
-  position: absolute;
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 @mixin hide {
-  display: none;
+	display: none;
 }
 
-
 @function url-friendly-colour($colour) {
-  @return '%23' + str-slice('#{$colour}', 2, -1);
+	@return "%23" + str-slice("#{$colour}", 2, -1);
 }
 
 @mixin element-color($color, $shape) {
-  @if $shape == 2{
-    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%22-1%20-1%20300%20100%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M0%20100l274.1-9.92L300%2013.01%208.51%200%200%20100z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22#{url-friendly-colour($color)}%22%20fill-opacity%3D%221%22%20stroke%3D%22%23000%22%20stroke-width%3D%220%22%2F%3E%3C%2Fsvg%3E");
-  }@else if $shape == 3{
-    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'#{url-friendly-colour($color)}'%20fill-opacity%3D'1'%20stroke%3D'%23000'%20stroke-width%3D'0'%2F%3E%3C%2Fsvg%3E");
-  }
+	@if $shape == 2 {
+		background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%22-1%20-1%20300%20100%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M0%20100l274.1-9.92L300%2013.01%208.51%200%200%20100z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22#{url-friendly-colour($color)}%22%20fill-opacity%3D%221%22%20stroke%3D%22#{url-friendly-colour($color)}%22%20stroke-width%3D%221%22%2F%3E%3C%2Fsvg%3E");
+	} @else if $shape == 3 {
+		background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'#{url-friendly-colour($color)}'%20fill-opacity%3D'1'%20stroke%3D'#{url-friendly-colour($color)}'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
+	}
 
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  
-  //background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	//background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
 }
 
 $currentTheme: "Z";
 
 @mixin isTheme($theme) {
-    @if $theme == $currentTheme {
-        @content;
-    }
+	@if $theme == $currentTheme {
+		@content;
+	}
 }
 
 .wrapper {
-    @include isTheme("Z") {
-    border-top: 10px solid green;
-}  
-    @include isTheme("Y") {
-        border-top: 10px solid blue;
-    }
+	@include isTheme("Z") {
+		border-top: 10px solid green;
+	}
+	@include isTheme("Y") {
+		border-top: 10px solid blue;
+	}
 }

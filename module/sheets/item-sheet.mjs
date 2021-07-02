@@ -75,21 +75,20 @@ export class FalloutItemSheet extends ItemSheet {
       let tagKey = tagEl.data('tagKey');
       let tagValue = !tagEl.data('tagValue');
       tagEl.data('tagValue', tagValue);
-      let tagType = tagEl.data('tagType');   
+      let tagType = tagEl.data('tagType');
       let itemId = this.document.data._id;
-      let wpn  = game.items.get(itemId);
       let flagKey = "";
-      if(tagType=='weaponQuality')
+      if (tagType == 'weaponQuality')
         flagKey = 'weaponQualities';
-      else if(tagType=='damageEffect')
+      else if (tagType == 'damageEffect')
         flagKey = 'damageEffects';
-      let flags = duplicate(wpn.getFlag('fallout', flagKey));
+      let flags = duplicate(this.item.getFlag('fallout', flagKey));
       let box = tagEl.parent('.item-list');
-      $(box.children()).each((q,i)=>{
+      $(box.children()).each((q, i) => {
         let qu = flags[$(i).data('tagKey')];
         qu['value'] = $(i).data('tagValue');
       });
-      await wpn.setFlag('fallout',flagKey, flags);
+      await this.item.setFlag('fallout', flagKey, flags);
     });
 
     // Tag Rank Change
@@ -97,23 +96,23 @@ export class FalloutItemSheet extends ItemSheet {
       let newRank = $(ev.currentTarget).val();
       let tagEl = $(ev.currentTarget).parent('.wpn-tag');
       let tagKey = tagEl.data('tagKey');
-      let tagType = tagEl.data('tagType');   
+      let tagType = tagEl.data('tagType');
       let itemId = this.document.data._id;
-      let wpn  = game.items.get(itemId);
+      //let wpn = game.items.get(itemId);
       let flagKey = "";
-      if(tagType=='weaponQuality')
+      if (tagType == 'weaponQuality')
         flagKey = 'weaponQualities';
-      else if(tagType=='damageEffect')
+      else if (tagType == 'damageEffect')
         flagKey = 'damageEffects';
-      let flags = duplicate(wpn.getFlag('fallout', flagKey));
+      let flags = duplicate(this.item.getFlag('fallout', flagKey));
       let box = tagEl.parent('.item-list');
-      $(box.children()).each((q,i)=>{
+      $(box.children()).each((q, i) => {
         let qu = flags[$(i).data('tagKey')];
         console.warn(qu);
-        if(qu['rank']!=null)
+        if (qu['rank'] != null)
           qu['rank'] = newRank;
       });
-      await wpn.setFlag('fallout',flagKey, flags);
+      await this.item.setFlag('fallout', flagKey, flags);
     });
 
     // Effects.
