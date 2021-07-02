@@ -27,7 +27,11 @@
                         <strong>{{../actor.data.data.meleeDamage.base}}</strong> <span class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
                 </div>
                 <div class="text-center">
-                    <i class="fo-{{item.data.damage.damageType}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' item.data.damage.damageType)}}"></i>
+                    {{#each item.data.damage.damageType as |dt dk|}}
+                    {{#ifCond dt '==' true}}
+                    <i class="fo-{{dk}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' dk)}}"></i>
+                    {{/ifCond}}
+                    {{/each}}
                 </div>
             </div>
             <div class=" item-controls">
