@@ -79,7 +79,25 @@
     <div>
         {{!-- PIP BOY --}}
         <div class="pipboy-status-screen {{actor.type}}">
-            <div class="row r1">
+            <div class="body-part head {{data.body_parts.head.status}}"></div>
+            <div class="body-part torso {{data.body_parts.torso.status}}"></div>
+            <div class="body-part armL {{data.body_parts.armL.status}}"></div>
+            <div class="body-part armR {{data.body_parts.armR.status}}"></div>
+            <div class="body-part legL {{data.body_parts.legL.status}}"></div>
+            <div class="body-part legR {{data.body_parts.legR.status}}"></div>
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head
+            keypart="head"}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso
+            keypart="torso"}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL
+            keypart="armL"}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR
+            keypart="armR"}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL
+            keypart="legL"}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR
+            keypart="legR"}}
+            <!-- <div class="row r1">
                 <div class="cell c1"></div>
                 <div class="cell c2 head {{data.body_parts.head.status}}">
                     {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head
@@ -110,7 +128,7 @@
                     {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL
                     keypart="legL"}}
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="status-help-bar flexrow">
