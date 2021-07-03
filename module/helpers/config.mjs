@@ -40,6 +40,10 @@ FALLOUT.APPAREL_TYPE = {
   "headgear": "FALLOUT.APPAREL.headgear",
   "powerArmor": "FALLOUT.APPAREL.powerArmor"
 }
+FALLOUT.ROBOT_APPAREL_TYPE = {
+  "plating": "FALLOUT.APPAREL.plating",
+  "armor": "FALLOUT.APPAREL.armor"
+}
 
 FALLOUT.BodyValues = {
   "head": "1-2",
@@ -96,42 +100,42 @@ FALLOUT.WEAPONS = {
     "long": "FALLOUT.RANGE.long",
     "extreme": "FALLOUT.RANGE.extreme"
   },
-  "damageEffect":{
-    "burst":{"label":"Burst", "value":false, "description":""},
-    "breaking":{"label":"Breaking", "value":false, "description":""},
-    "persistent":{"label":"Persistent", "value":false, "description":""},
-    "piercing":{"label":"Piercing", "value":false, "rank":1, "description":""},
-    "radioactive":{"label":"Radioactive", "value":false ,"description":""}, 
-    "spread":{"label":"Spread", "value":false, "description":""},
-    "stun":{"label":"Stun", "value":false, "description":""},
-    "vicious":{"label":"Vicious", "value":false, "description":""}
+  "damageEffect": {
+    "burst": { "label": "Burst", "value": false, "description": "" },
+    "breaking": { "label": "Breaking", "value": false, "description": "" },
+    "persistent": { "label": "Persistent", "value": false, "description": "" },
+    "piercing": { "label": "Piercing", "value": false, "rank": 1, "description": "" },
+    "radioactive": { "label": "Radioactive", "value": false, "description": "" },
+    "spread": { "label": "Spread", "value": false, "description": "" },
+    "stun": { "label": "Stun", "value": false, "description": "" },
+    "vicious": { "label": "Vicious", "value": false, "description": "" }
   },
-  "weaponQuality":{
-    "accurate":{"label":"Accurate","value":false, "description":""},
-    "blast":{"label":"Blast","value":false, "description":""},
-    "closeQuarters":{"label":"Close Quarters","value":false, "description":""},
-    "concealed":{"label":"Concealed","value":false, "description":""},
-    "debilitating":{"label":"Debilitating","value":false, "description":""},
-    "gatling":{"label":"Gatling","value":false, "description":""},
-    "inaccurate":{"label":"Inaccurate","value":false, "description":""},
-    "mine":{"label":"Mine","value":false, "description":""},
-    "nightVision":{"label":"Night Vision","value":false, "description":""},
-    "parry":{"label":"Parry","value":false, "description":""},
-    "recon":{"label":"Recon","value":false, "description":""},
-    "reliable":{"label":"Reliable","value":false, "description":""},
-    "suppressed":{"label":"Suppressed","value":false, "description":""},
-    "thrown":{"label":"Thrown","value":false, "description":""},
-    "twoHanded":{"label":"Two-Handed","value":false, "description":""},
-    "unreliable":{"label":"Unreliable","value":false, "description":""}
+  "weaponQuality": {
+    "accurate": { "label": "Accurate", "value": false, "description": "" },
+    "blast": { "label": "Blast", "value": false, "description": "" },
+    "closeQuarters": { "label": "Close Quarters", "value": false, "description": "" },
+    "concealed": { "label": "Concealed", "value": false, "description": "" },
+    "debilitating": { "label": "Debilitating", "value": false, "description": "" },
+    "gatling": { "label": "Gatling", "value": false, "description": "" },
+    "inaccurate": { "label": "Inaccurate", "value": false, "description": "" },
+    "mine": { "label": "Mine", "value": false, "description": "" },
+    "nightVision": { "label": "Night Vision", "value": false, "description": "" },
+    "parry": { "label": "Parry", "value": false, "description": "" },
+    "recon": { "label": "Recon", "value": false, "description": "" },
+    "reliable": { "label": "Reliable", "value": false, "description": "" },
+    "suppressed": { "label": "Suppressed", "value": false, "description": "" },
+    "thrown": { "label": "Thrown", "value": false, "description": "" },
+    "twoHanded": { "label": "Two-Handed", "value": false, "description": "" },
+    "unreliable": { "label": "Unreliable", "value": false, "description": "" }
   }
 
 }
 
 FALLOUT.consumableTypes = {
-  "food":"FALLOUT.FOOD",
-  "beverage":"FALLOUT.BEVERAGE",
-  "chem":"FALLOUT.CHEM",
-  "other":"FALLOUT.OTHER"
+  "food": "FALLOUT.FOOD",
+  "beverage": "FALLOUT.BEVERAGE",
+  "chem": "FALLOUT.CHEM",
+  "other": "FALLOUT.OTHER"
 }
 
 

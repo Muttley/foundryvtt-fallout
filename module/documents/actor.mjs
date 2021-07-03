@@ -44,22 +44,17 @@ export class FalloutActor extends Actor {
   /**
    * Prepare Character type specific data
    */
+
+  // CHARACTER
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
     const data = actorData.data;
     data.carryWeight.base = 150 + (parseInt(this.data.data.attributes.str.value) * 10);
-    this._calculateBodyResistance(actorData);
-    actorData.data.favoriteWeapons = actorData.items.filter(i=>i.type=='weapon' && i.data.data.favorite);
-    console.warn(actorData.data.favoriteWeapons);
+    this._calculateCharacterBodyResistance(actorData);
+    actorData.data.favoriteWeapons = actorData.items.filter(i => i.type == 'weapon' && i.data.data.favorite);
   }
 
-  _prepareRobotData(actorData) {
-    if (actorData.type !== 'robot') return;
-    const data = actorData.data;
-    //this._calculateBodyResistance(actorData);
-  }
-
-  _calculateBodyResistance(actorData) {
+  _calculateCharacterBodyResistance(actorData) {
     const data = actorData.data;
     //  ! CHECK for the OUTFIT
     // Prep Body Locations
@@ -119,15 +114,15 @@ export class FalloutActor extends Actor {
         if (outfitedLocations[k] && v) {
           outfitedLocations[k].name += ` over ${clothing.name}`;
           outfitedLocations[k].data.resistance.physical = Math.max(parseInt(outfitedLocations[k].data.resistance.physical), parseInt(clothing.data.data.resistance.physical));
-          outfitedLocations[k].data.resistance.energy = Math.max(parseInt(outfitedLocations[k].data.resistance.energy) + parseInt(clothing.data.data.resistance.energy));
-          outfitedLocations[k].data.resistance.radiation = Math.max(parseInt(outfitedLocations[k].data.resistance.radiation) + parseInt(clothing.data.data.resistance.radiation));
+          outfitedLocations[k].data.resistance.energy = Math.max(parseInt(outfitedLocations[k].data.resistance.energy), parseInt(clothing.data.data.resistance.energy));
+          outfitedLocations[k].data.resistance.radiation = Math.max(parseInt(outfitedLocations[k].data.resistance.radiation), parseInt(clothing.data.data.resistance.radiation));
         } else if (!outfitedLocations[k] && v) {
           outfitedLocations[k] = duplicate(clothing.data.toObject());
         }
       }
     }
 
-    // ! ADD CHARACTER BONUSES
+    // ! SET BODY PARTS TO OUTFIT ADD CHARACTER BONUSES
     for (let [k, bodyPart] of Object.entries(actorData.data.body_parts)) {
       if (outfitedLocations[k]) {
         bodyPart.resistance.physical = parseInt(outfitedLocations[k].data.resistance.physical) + parseInt(data.resistance.physical);
@@ -142,8 +137,68 @@ export class FalloutActor extends Actor {
 
     // ADD OUTFITED LIST FOR DISPLAY
     actorData.data.outfitedLocations = outfitedLocations;
-    
+
   }
+
+  // ROBOT
+  _prepareRobotData(actorData) {
+    if (actorData.type !== 'robot') return;
+    const data = actorData.data;
+    this._calculateRobotBodyResistance(actorData);
+  }
+
+  _calculateRobotBodyResistance(actorData) {
+    const data = actorData.data;
+    let outfitedLocations = {};
+    for (let [k, v] of Object.entries(game.system.model.Actor.robot.body_parts)) {
+      outfitedLocations[k] = false;
+    }
+
+    // ADD ROBOT ARMOR
+    for (let [k, v] of Object.entries(outfitedLocations)) {
+      if (!v) {
+        let armor = actorData.items.find(i => i.type == 'robot_armor' && i.data.data.appareltype == 'armor' && i.data.data.equipped && i.data.data.location[k] == true);
+        if (armor && !outfitedLocations[k]) {
+          outfitedLocations[k] = duplicate(armor.data.toObject());
+        }
+      }
+    }
+    // ADD PLATING AND RESISTANCE BONUSES
+    let plating = actorData.items.find(i => i.type == 'robot_armor' && i.data.data.appareltype == 'plating' && i.data.data.equipped);
+    if (plating) {
+      for (let [k, v] of Object.entries(plating.data.data.location)) {
+        if (outfitedLocations[k] && v) {
+          outfitedLocations[k].name += ` over ${plating.name}`;
+          outfitedLocations[k].data.resistance.physical = parseInt(outfitedLocations[k].data.resistance.physical) + parseInt(plating.data.data.resistance.physical);
+          outfitedLocations[k].data.resistance.energy = parseInt(outfitedLocations[k].data.resistance.energy) + parseInt(plating.data.data.resistance.energy);
+          outfitedLocations[k].data.resistance.radiation = parseInt(outfitedLocations[k].data.resistance.radiation) + parseInt(plating.data.data.resistance.radiation);
+        } else if (!outfitedLocations[k] && v) {
+          outfitedLocations[k] = duplicate(plating.data.toObject());
+        }
+      }
+    }
+
+    // ! SET BODY PARTS TO OUTFIT AND ADD CHARACTER BONUSES
+    for (let [k, bodyPart] of Object.entries(actorData.data.body_parts)) {
+      if (outfitedLocations[k]) {
+        bodyPart.resistance.physical = parseInt(outfitedLocations[k].data.resistance.physical) + parseInt(data.resistance.physical);
+        bodyPart.resistance.energy = parseInt(outfitedLocations[k].data.resistance.energy) + parseInt(data.resistance.energy);
+        bodyPart.resistance.radiation = parseInt(outfitedLocations[k].data.resistance.radiation) + parseInt(data.resistance.radiation);
+      } else {
+        bodyPart.resistance.physical = parseInt(data.resistance.physical);
+        bodyPart.resistance.energy = parseInt(data.resistance.energy);
+        bodyPart.resistance.radiation = parseInt(data.resistance.radiation);
+      }
+    }
+
+
+    // ADD OUTFITED LIST FOR DISPLAY
+    actorData.data.outfitedLocations = outfitedLocations;
+    console.log(actorData.data.outfitedLocations);
+
+  }
+
+
 
   /**
    * Prepare NPC type specific data.

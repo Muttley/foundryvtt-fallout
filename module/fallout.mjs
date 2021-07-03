@@ -139,6 +139,7 @@ Hooks.on("preCreateItem", (_item) => {
   //console.warn(_item?.parent?.type)
   //console.warn(_item.type)
   if (_item.parent) {
+    // PERKS AND SPECIAL ABILITIES
     if ((_item.parent.type != "npc" && _item.parent.type != "creature") && _item.type == "special_ability") {
       ui.notifications.warn(`ONLY NPCs AND CREATURES CAN HAVE SPECIAL ABILITIES`);
       return false;
@@ -232,15 +233,5 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
     "force"
   );
 });
-
-// Hooks.on("preCreateItem", (item, createData, options, userId) => {
-//   if (createData.type == "weapon") {
-//     let flags = {};
-//     flags['fallout.weaponQualities'] = duplicate(CONFIG.FALLOUT.WEAPONS.weaponQuality);
-//     flags['fallout.damageEffects'] = duplicate(CONFIG.FALLOUT.WEAPONS.damageEffect);
-//     item.data.update({ 'flags': flags });
-//     console.warn(item);
-//   }
-// });
 
 

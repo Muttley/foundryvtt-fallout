@@ -101,6 +101,7 @@ export class FalloutActorSheet extends ActorSheet {
     const skills = [];
     const perks = [];
     const apparel = [];
+    let robotApparel = [];
     const weapons = [];
     const ammo = [];
     const consumables = [];
@@ -122,6 +123,9 @@ export class FalloutActorSheet extends ActorSheet {
       }
       else if (i.type === 'apparel') {
         apparel.push(i);
+      }
+      else if (i.type === 'robot_armor') {
+        robotApparel.push(i);
       }
       else if (i.type === 'weapon') {
         weapons.push(i);
@@ -151,23 +155,29 @@ export class FalloutActorSheet extends ActorSheet {
       return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
     });
     context.skills = skills;
-    context.perks = perks;
-    context.ammo = ammo;
+
     let clothing = apparel.filter(a => a.data.appareltype == 'clothing');
     let outfit = apparel.filter(a => a.data.appareltype == 'outfit');
     let headgear = apparel.filter(a => a.data.appareltype == 'headgear');
     let armor = apparel.filter(a => a.data.appareltype == 'armor');
     let powerArmor = apparel.filter(a => a.data.appareltype == 'powerArmor');
+    let plating = robotApparel.filter(a => a.data.appareltype == 'plating');
+    let robotArmor = robotApparel.filter(a => a.data.appareltype == 'armor');
     context.allApparel = [
       { apparelType: 'clothing', list: clothing },
       { apparelType: 'outfit', list: outfit },
       { apparelType: 'headgear', list: headgear },
       { apparelType: 'armor', list: armor },
-      { apparelType: 'powerArmor', list: powerArmor }];
+      { apparelType: 'powerArmor', list: powerArmor }
+    ];
+    context.allRobotApparel = [
+      { apparelType: 'plating', list: plating },
+      { apparelType: 'armor', list: robotArmor }];
 
+    context.perks = perks;
+    context.ammo = ammo;
     context.weapons = weapons;
     context.specialAbilities = specialAbilities;
-
     context.consumables = consumables;
     context.books_and_magz = books_and_magz;
     context.miscellany = miscellany;

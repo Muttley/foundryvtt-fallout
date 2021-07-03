@@ -389,6 +389,7 @@
 		},
 		"robot_armor": {
 			"templates": ["base", "physical", "equipable"],
+			"appareltype": "",
 			"resistance": {
 				"physical": 0,
 				"energy": 0,
