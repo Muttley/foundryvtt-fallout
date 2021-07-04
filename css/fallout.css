@@ -256,6 +256,35 @@
   background-image: url(../assets/chat/d20-blue.svg);
 }
 
+.fallout .window-content {
+  background-image: url("");
+  padding: 0;
+  color: #eee787;
+  background-color: #325885;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fallout .window-content > form {
+  padding: 8px;
+}
+
+.fallout .window-content > form.character {
+  background-color: #325885;
+}
+
+.fallout .window-content > form.robot {
+  background-color: #325885;
+}
+
+.fallout .window-content > form.npc {
+  background-color: #325885;
+}
+
+.fallout .window-content > form.creature {
+  background-color: #325885;
+}
+
 .grid,
 .grid-2col {
   display: grid;
@@ -471,30 +500,6 @@
   /*  Items Lists                              */
   /* ----------------------------------------- */
   /* Example style for FalloutItem (can be removed if not needed) */
-}
-
-.fallout .window-content {
-  background-image: url("");
-  padding: 0;
-  color: #eee787;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.fallout .window-content .theme-wrapper.character {
-  background-color: #325885;
-}
-
-.fallout .window-content .theme-wrapper.robot {
-  background-color: #325885;
-}
-
-.fallout .window-content .theme-wrapper.npc {
-  background-color: #325885;
-}
-
-.fallout .window-content .theme-wrapper.creature {
-  background-color: #325885;
 }
 
 .fallout .item-form {
