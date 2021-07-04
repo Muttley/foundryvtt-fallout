@@ -13,13 +13,11 @@
     {{#each weapons as |item id| }}
     <li class="item weapon" data-item-id="{{item._id}}">
         <div class=" flexrow">
-            <div class="item-name flexlarge">
+            <div class="item-name flexlarge weapon-roll">
                 <div class="item-image">
                     <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
                 </div>
-                <a class="weapon-roll">
-                    <h4 class="resource-label">{{item.name}}</h4>
-                </a>
+                <a class="resource-label">{{item.name}}</a>
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">

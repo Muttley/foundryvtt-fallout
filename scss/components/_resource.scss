@@ -59,6 +59,12 @@ input.chk-btn:checked + label {
 	cursor: pointer;
 }
 
+.color-prim {
+	color: $c-font-prim;
+}
+.color-prim-contra {
+	color: $c-font-prim-contra;
+}
 .color-secondary {
 	color: $c-font-sec;
 }

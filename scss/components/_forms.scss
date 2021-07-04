@@ -54,6 +54,9 @@
 .fallout.sheet .editor {
 	height: 100%;
 }
+.fallout.sheet .editor .editor-content {
+	height: 100%;
+}
 
 .description-field {
 	background: rgba(245, 245, 220, 0.301);
@@ -64,8 +67,8 @@
 	}
 }
 
-* .editor,
-* .editor-content {
+//* .editor,
+.editor .editor-content {
 	min-height: 200px;
 }
 

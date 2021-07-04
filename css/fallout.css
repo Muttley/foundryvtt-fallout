@@ -535,6 +535,10 @@
   height: 100%;
 }
 
+.fallout .fallout.sheet .editor .editor-content {
+  height: 100%;
+}
+
 .fallout .description-field {
   background: rgba(245, 245, 220, 0.301);
   padding: 0 5px;
@@ -545,8 +549,7 @@
   height: 100%;
 }
 
-.fallout * .editor,
-.fallout * .editor-content {
+.fallout .editor .editor-content {
   min-height: 200px;
 }
 
@@ -1031,6 +1034,14 @@
   cursor: pointer;
 }
 
+.fallout .color-prim {
+  color: #eee787;
+}
+
+.fallout .color-prim-contra {
+  color: #325885;
+}
+
 .fallout .color-secondary {
   color: rgba(238, 231, 135, 0.61);
 }
@@ -1270,9 +1281,11 @@
   text-align: left;
   align-items: center;
   display: flex;
+  min-height: 24px;
 }
 
-.fallout .items-list .item-name h3, .fallout .items-list .item-name h4 {
+.fallout .items-list .item-name h3,
+.fallout .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
@@ -1343,18 +1356,21 @@
   text-align: left;
 }
 
-.fallout .items-list .item-skill-value, .fallout .items-list .item-skill-tag {
+.fallout .items-list .item-skill-value,
+.fallout .items-list .item-skill-tag {
   flex: 0.5;
   text-align: center;
   padding: 2px 0;
 }
 
-.fallout .items-list .item-skill-value input[type=number], .fallout .items-list .item-skill-tag input[type=number] {
+.fallout .items-list .item-skill-value input[type="number"],
+.fallout .items-list .item-skill-tag input[type="number"] {
   max-width: 2rem;
   max-height: 1.3rem;
 }
 
-.fallout .items-list .item-skill-value input[type=checkbox], .fallout .items-list .item-skill-tag input[type=checkbox] {
+.fallout .items-list .item-skill-value input[type="checkbox"],
+.fallout .items-list .item-skill-tag input[type="checkbox"] {
   width: 12px;
   height: 12px;
 }

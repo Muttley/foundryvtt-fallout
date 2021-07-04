@@ -1,23 +1,23 @@
 // Section Header
 .items-header {
-  height: 28px;
-  margin: 2px 0;
-  padding: 0;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border: $border-groove;
-  font-weight: bold;
-  > * {
-    font-size: 14px;
-    text-align: center;
-  }
-  .item-name {
-    font-weight: bold;
-    padding-left: 5px;
-    text-align: left;
-    display: flex;
-    // font-size: 16px;
-  }
+	height: 28px;
+	margin: 2px 0;
+	padding: 0;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.05);
+	border: $border-groove;
+	font-weight: bold;
+	> * {
+		font-size: 14px;
+		text-align: center;
+	}
+	.item-name {
+		font-weight: bold;
+		padding-left: 5px;
+		text-align: left;
+		display: flex;
+		// font-size: 16px;
+	}
 }
 
 /* ----------------------------------------- */
@@ -25,121 +25,130 @@
 /* ----------------------------------------- */
 
 .items-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  color:$c-font-prim;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	color: $c-font-prim;
 
-  // Child lists
-  .item-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+	// Child lists
+	.item-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-  // Item Name
-  .item-name {
-    flex: 2;
-    margin: 0;
-    overflow: hidden;
-    font-size: 13px;
-    text-align: left;
-    align-items: center;
-    display: flex;
-    h3, h4 {
-      margin: 0;
-      white-space: nowrap;
-      overflow-x: hidden;
-    }
-  }
+	// Item Name
+	.item-name {
+		flex: 2;
+		margin: 0;
+		overflow: hidden;
+		font-size: 13px;
+		text-align: left;
+		align-items: center;
+		display: flex;
+		min-height: 24px;
+		h3,
+		h4 {
+			margin: 0;
+			white-space: nowrap;
+			overflow-x: hidden;
+		}
+	}
 
-  // Control Buttons
-  .item-controls {
-    display: flex;
-    flex: 0 0 100px;
-    justify-content: flex-end;
-    align-items: center;
-    a {
-      font-size: 12px;
-      text-align: center;
-      margin: 0 6px;
-    }
-  }
+	// Control Buttons
+	.item-controls {
+		display: flex;
+		flex: 0 0 100px;
+		justify-content: flex-end;
+		align-items: center;
+		a {
+			font-size: 12px;
+			text-align: center;
+			margin: 0 6px;
+		}
+	}
 
-  // Individual Item
-  .item {
-    align-items: center;
-    padding: 0 2px; // to align with the header border
-    //border-bottom: 1px solid $c-faint;
-    border-bottom: 1px solid #637294;
-    background-color: $c-char-itemlist-bg;
-    &:last-child { border-bottom: none; }
-    .item-name {
-      color: $c-dark;
-      .item-image {
-        flex: 0 0 30px;
-        height: 30px;
-        background-size: 30px;
-        border: none;
-        margin: 3px 0 0 5px;
-      }
-    }
-  }
+	// Individual Item
+	.item {
+		align-items: center;
+		padding: 0 2px; // to align with the header border
+		//border-bottom: 1px solid $c-faint;
+		border-bottom: 1px solid #637294;
+		background-color: $c-char-itemlist-bg;
+		&:last-child {
+			border-bottom: none;
+		}
+		.item-name {
+			color: $c-dark;
+			.item-image {
+				flex: 0 0 30px;
+				height: 30px;
+				background-size: 30px;
+				border: none;
+				margin: 3px 0 0 5px;
+			}
+		}
+	}
 
-  .item-prop {
-    text-align: center;
-    border-left: 1px solid #c9c7b8;
-    border-right: 1px solid #c9c7b8;
-    font-size: 12px;
-  }
+	.item-prop {
+		text-align: center;
+		border-left: 1px solid #c9c7b8;
+		border-right: 1px solid #c9c7b8;
+		font-size: 12px;
+	}
 
-  // Section Header
-  .items-header {
-    height: 28px;
-    margin: 2px 0;
-    padding: 0;
-    align-items: center;
-    //background: rgba(0, 0, 0, 0.05);
-    //border: $border-groove;
-    background: rgb(0, 0, 0);
-    border: none;
-    font-weight: bold;
-    > * {
-      font-size: 12px;
-      text-align: center;
-      color: white;
-    }
-    .item-name {
-      color: white;
-      padding-left: 5px;
-      text-align: left;
-      // font-size: 16px;
-    }
-  }
+	// Section Header
+	.items-header {
+		height: 28px;
+		margin: 2px 0;
+		padding: 0;
+		align-items: center;
+		//background: rgba(0, 0, 0, 0.05);
+		//border: $border-groove;
+		background: rgb(0, 0, 0);
+		border: none;
+		font-weight: bold;
+		> * {
+			font-size: 12px;
+			text-align: center;
+			color: white;
+		}
+		.item-name {
+			color: white;
+			padding-left: 5px;
+			text-align: left;
+			// font-size: 16px;
+		}
+	}
 
-  .item-skill-value, .item-skill-tag{
-    flex:0.5;
-    text-align: center;
-    padding: 2px 0;
-    input[type=number]{
-      max-width: 2rem;
-      max-height: 1.3rem;
-    }
-    input[type=checkbox]{
-      width:12px;
-      height:12px;
-    }
-  }
+	.item-skill-value,
+	.item-skill-tag {
+		flex: 0.5;
+		text-align: center;
+		padding: 2px 0;
+		input[type="number"] {
+			max-width: 2rem;
+			max-height: 1.3rem;
+		}
+		input[type="checkbox"] {
+			width: 12px;
+			height: 12px;
+		}
+	}
 }
 
-.item-unequipped{ color: rgba(0, 0, 0, 0.2);}
+.item-unequipped {
+	color: rgba(0, 0, 0, 0.2);
+}
 
-.favorite-start-dim{ color: rgba(0, 0, 0, 0.2);}
+.favorite-start-dim {
+	color: rgba(0, 0, 0, 0.2);
+}
 
 /* Example style for FalloutItem (can be removed if not needed) */
 .item-formula {
-  flex: 0 0 200px;
-  padding: 0 8px;
+	flex: 0 0 200px;
+	padding: 0 8px;
 }

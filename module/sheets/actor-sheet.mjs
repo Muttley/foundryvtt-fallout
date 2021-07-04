@@ -47,13 +47,13 @@ export class FalloutActorSheet extends ActorSheet {
     // Prepare NPC data and items.
     if (actorData.type == 'npc') {
       this._prepareItems(context)
-      this._prepareItems(context);
+
     }
 
-    // Prepare NPC data and items.
+    // Prepare Creature data and items.
     if (actorData.type == 'creature') {
       this._prepareItems(context)
-      this._prepareItems(context);
+
     }
 
     // Add roll data for TinyMCE editors.
@@ -181,6 +181,19 @@ export class FalloutActorSheet extends ActorSheet {
     context.consumables = consumables;
     context.books_and_magz = books_and_magz;
     context.miscellany = miscellany;
+
+    // WRAP INVENTORY DEPENDING ON THE CHARACTER TYPE:
+    // for example put apparel in inventory for all except character.
+
+    if (this.actor.type == 'npc' || this.actor.type == 'creature') {
+      context.inventory = [...consumables, ...books_and_magz, ...miscellany, ...context.inventory, ...apparel, ...robotApparel];
+    }
+    if (this.actor.type == 'character') {
+      context.inventory = [...robotApparel];
+    }
+    if (this.actor.type == 'robot') {
+      context.inventory = [...apparel];
+    }
   }
 
   /* -------------------------------------------- */
@@ -378,7 +391,14 @@ export class FalloutActorSheet extends ActorSheet {
       } else {
         skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.data.data.weaponType];
         let skillItem = item.actor.items.find(i => i.name == skillName);
-        skill = skillItem.data.data;
+        if (skillItem)
+          skill = skillItem.data.data
+        else
+          skill = {
+            "value": 0,
+            "tag": false,
+            "defaultAttribute": "str"
+          };
         attribute = item.actor.data.data.attributes[skill.defaultAttribute];
       }
       game.fallout.Dialog2d20.createDialog({ rollName: rollName, diceNum: 2, attribute: attribute.value, skill: skill.value, tag: skill.tag, complication: 20 });
@@ -411,7 +431,6 @@ export class FalloutActorSheet extends ActorSheet {
     }
 
     // !CRATURES
-
 
     // ! DON'T LET NUMBER FIELDS EMPTY
     const numInputs = document.querySelectorAll('input[type=number]');
