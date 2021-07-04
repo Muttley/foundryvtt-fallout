@@ -245,7 +245,7 @@
 		}
 	},
 	"Item": {
-		"types": ["skill", "perk", "weapon", "ammo", "weapon_mod", "apparel", "robot_armor", "books_and_magz", "consumable", "miscellany", "special_ability"],
+		"types": ["weapon", "weapon_mod", "ammo", "apparel", "robot_armor", "books_and_magz", "consumable", "miscellany", "skill", "perk", "special_ability"],
 		"templates": {
 			"base": {
 				"description": "",

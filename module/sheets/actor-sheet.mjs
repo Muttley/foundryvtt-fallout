@@ -186,7 +186,7 @@ export class FalloutActorSheet extends ActorSheet {
     // for example put apparel in inventory for all except character.
 
     if (this.actor.type == 'npc' || this.actor.type == 'creature') {
-      context.inventory = [...consumables, ...books_and_magz, ...miscellany, ...context.inventory, ...apparel, ...robotApparel];
+      context.inventory = [...consumables, ...books_and_magz, ...miscellany, ...apparel, ...robotApparel];
     }
     if (this.actor.type == 'character') {
       context.inventory = [...robotApparel];
@@ -481,7 +481,13 @@ export class FalloutActorSheet extends ActorSheet {
     event.preventDefault();
     let li = $(event.currentTarget).parents(".item");
     let item = this.actor.items.get(li.data("itemId"));
-    let description = item.data.data.description;
+    let moreInfo = "";
+
+    if (item.data.data.effect != null) {
+      moreInfo = item.data.data.effect;
+    } else {
+      moreInfo = item.data.data.description;
+    }
     // Toggle summary
     if (li.hasClass("expanded")) {
       let summary = li.children(".item-summary");
@@ -490,7 +496,7 @@ export class FalloutActorSheet extends ActorSheet {
       });
     } else {
       let div = $(
-        `<div class="item-summary"><div class="item-summary-wrapper"><div>${description}</div></div></div>`
+        `<div class="item-summary"><div class="item-summary-wrapper"><div>${moreInfo}</div></div></div>`
       );
       li.append(div.hide());
       div.slideDown(200);

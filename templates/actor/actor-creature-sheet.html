@@ -110,6 +110,13 @@
                     </div>
                     <div class="box no-padding bgOdd">
                         <h4 class="box-header text-center">INVENTORY</h4>
+                        <div>
+                            <ol class="items-list">
+                                {{#each inventory as |item id|}}
+                                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
+                                {{/each}}
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </section>

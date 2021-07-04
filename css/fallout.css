@@ -1228,6 +1228,10 @@
   background-color: #b2abbc;
 }
 
+.fallout .item-summary-wrapper {
+  min-height: 20px;
+}
+
 .fallout .ico-dc {
   min-width: 12px;
   height: 12px;
