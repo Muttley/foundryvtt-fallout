@@ -25,6 +25,9 @@ $fa-purple: #b2abbc;
 
 $f-vault-blue: #325885;
 $f-vault-green: #04dc17;
+$f-valut-dark-green: #325885;
+// #444e47;
+//#5a6361
 
 $f-healthy: $f-vault-green;
 $f-wounded: $f-vault-blue;
@@ -47,6 +50,7 @@ $c-font-prim-contra: $f-vault-blue;
 $c-font-sec: hsla(56, 75%, 73%, 0.61);
 $bg-sheet: url("");
 $c-char-header: darken($f-vault-blue, 10%);
+$c-npc-header: darken($f-valut-dark-green, 10%);
 $c-char-itemlist-bg: rgba(0, 0, 0, 0.2);
 $c-char-input-bg: rgba(0, 0, 0, 0.2);
 $c-char-input: $c-font-prim;

@@ -96,6 +96,15 @@ input.chk-btn:checked + label {
 		font-size: 24px;
 	}
 
+	&.character-header,
+	&.robot-header {
+		@include element-color($c-char-header, 3);
+	}
+	&.npc-header,
+	&.creature-header {
+		@include element-color($c-npc-header, 3);
+	}
+
 	&.plate-1-g {
 		background-image: url(../assets/ui/plate-header-1-g.svg);
 	}

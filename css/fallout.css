@@ -219,7 +219,7 @@
   color: white;
 }
 
-.fallout-dialog .resource input[type=number] {
+.fallout-dialog .resource input[type="number"] {
   text-align: center;
   background-color: beige;
 }
@@ -254,14 +254,6 @@
 .fallout-dialog ul li .dice-icon.marked {
   color: white;
   background-image: url(../assets/chat/d20-blue.svg);
-}
-
-.fallout .window-content {
-  background-image: url("");
-  color: #eee787;
-  background-color: #325885;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .grid,
@@ -479,6 +471,30 @@
   /*  Items Lists                              */
   /* ----------------------------------------- */
   /* Example style for FalloutItem (can be removed if not needed) */
+}
+
+.fallout .window-content {
+  background-image: url("");
+  padding: 0;
+  color: #eee787;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fallout .window-content .theme-wrapper.character {
+  background-color: #325885;
+}
+
+.fallout .window-content .theme-wrapper.robot {
+  background-color: #325885;
+}
+
+.fallout .window-content .theme-wrapper.npc {
+  background-color: #325885;
+}
+
+.fallout .window-content .theme-wrapper.creature {
+  background-color: #325885;
 }
 
 .fallout .item-form {
@@ -1075,6 +1091,22 @@
 .fallout .resource-plate-header .label {
   font-family: "Lobster", cursive;
   font-size: 24px;
+}
+
+.fallout .resource-plate-header.character-header, .fallout .resource-plate-header.robot-header {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
+  padding: 5px 0 5px 10px;
+  margin-bottom: 5px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fallout .resource-plate-header.npc-header, .fallout .resource-plate-header.creature-header {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
+  padding: 5px 0 5px 10px;
+  margin-bottom: 5px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .fallout .resource-plate-header.plate-1-g {

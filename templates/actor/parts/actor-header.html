@@ -1,4 +1,4 @@
-<header class="sheet-header resource-plate-header plate-3">
+<header class="sheet-header resource-plate-header {{actor.type}}-header">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
     <div class="flexrow">
         <div class="flexcol">
@@ -10,22 +10,22 @@
         </div>
 
         <div class="resources grid">
-            <div class="flexcol resource-plate-header plate-2">    
+            <div class="flexcol resource-plate-header plate-2">
                 <div class="resource flexrow align-mid">
                     <label for="data.level.value" class="resource-label" style="font-size: 18px; color: white;">{{localize "FALLOUT.LEVEL.Level"}}</label>
-                    <input type="number" style="font-size:18px; max-width:2rem;text-align: center; margin-right: 20px;" name="data.level.value" value="{{data.level.value}}" data-dtype="Number" />    
+                    <input type="number" style="font-size:18px; max-width:2rem;text-align: center; margin-right: 20px;" name="data.level.value" value="{{data.level.value}}" data-dtype="Number" />
                 </div>
             </div>
             <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
                 <div>
-                  <label class="label"><strong>Luck</strong></label>
-                  <label style="font-size: 12px; padding-left: 10px;">Points</label>
+                    <label class="label"><strong>Luck</strong></label>
+                    <label style="font-size: 12px; padding-left: 10px;">Points</label>
                 </div>
                 <div class="special-number">
-                  <input type="number" style="font-size: 22px;" name="data.luckPoints" value="{{data.luckPoints}}">
+                    <input type="number" style="font-size: 22px;" name="data.luckPoints" value="{{data.luckPoints}}">
                 </div>
             </div>
-            <div class="flexrow grid-span-2"style="font-size:12px">
+            <div class="flexrow grid-span-2" style="font-size:12px">
                 <div class="resource flex-group-left">
                     <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
                     <div class="resource-content flexrow flex-center flex-between">

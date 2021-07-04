@@ -1,3 +1,28 @@
+.window-content {
+	//background-image: url(../assets/ui/window-bg.webp);
+
+	background-image: $bg-sheet;
+	padding: 0;
+	color: $c-font-prim;
+	.theme-wrapper {
+		&.character {
+			background-color: $f-vault-blue;
+		}
+		&.robot {
+			background-color: $f-vault-blue;
+		}
+		&.npc {
+			background-color: $f-valut-dark-green;
+		}
+		&.creature {
+			background-color: $f-valut-dark-green;
+		}
+	}
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .item-form {
 	font-family: $font-primary;
 }
