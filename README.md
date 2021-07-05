@@ -54,7 +54,7 @@ Players can then toggle it depending if they are in or out of the Power Armor.
 
 Allowing players to have Power Armor and Armor equipped at the same time on differnt body parts is intentional. Still, when calculating resistances for the body part these will not stack! Only Clothing stacks with other apparel types on the same body part.
 
-_In Some situations GMs might allow that you could be in a power armor frame with only power-armor-torso for example but still recieve "Armor" bonuses on the other parts of your body. Your game table should decide about that and it is up to the players to equipp/unequipp their apparel accordingly._
+_In some situations GMs might allow that you could be in a power armor frame with only power-armor-torso for example but still recieve "Armor" bonuses on the other parts of your body. Your game table should decide about that and it is up to the players to equipp/unequipp their apparel accordingly._
 
 ### Weapon mods and Apparel mods
 
