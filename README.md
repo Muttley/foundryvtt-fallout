@@ -42,6 +42,22 @@
 
 This might change in the future but for now:
 
+### Power Armor Frame
+
+There is no item of this type but you can use Foundry's Active Effect on the character sheet to create one "Passive Effect" with this values:
+
+data.attributes.str.value, Override, 11
+
+Players can then toggle it depending if they are in or out of the Power Armor.
+
+Also,
+
+Allowing players to have Power Armor and Armor/clothing at the same time on differnt body parts is intentional. When calculating resistances for the body part these will not stack! Only Outfits stack with other apparel types.
+
+Some GMs might allow in some situations that you could be in a power armor frame with only power-armor-healmet, but still recieve "clothing' bonuses on the other parts. It is left to the Table to decide about that and it is up to players to accordingly equipp/unequipp their apparel.
+
+### Weapon mods and Apparel mods
+
 Weapon mods and Apparel mods can be added to the character sheet as items.
 To add them to your Weapons and Apparel you will need to write their names in your weapon/aapparel item sheets.
 Since there is no native Foundry support for Items to contain other Items I am looking for some sort of work around, but for now you will need to be a good player and take care of those numbers and effects on your own. Pen and Paper style.
