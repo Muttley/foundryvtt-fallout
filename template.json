@@ -160,6 +160,12 @@
 						"injuries": [0, 0, 0, 0, 0]
 					}
 				}
+			},
+			"valuables": {
+				"currency": {
+					"caps": "",
+					"other": ""
+				}
 			}
 		},
 		"character": {
