@@ -1,5 +1,23 @@
 <div class="flexrow">
+    {{!-- LEFT _________________________________________________________________ --}}
     <div class="" style="padding-right: 5px;">
+        <div class="box">
+            <ol class="items-list">
+                <li class="item consumable flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.ROBOT_MOD'}}</div>
+                    <div class="item-controls">
+                        <a class="item-control item-create" title="Create Consumable" data-type="robot_mod"><i class="fas fa-plus"></i>
+                            {{localize 'FALLOUT.UI.Add'}}</a>
+                    </div>
+                </li>
+                {{#each robot_mods as |item id|}}
+                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item }}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    {{!-- RIGHT _________________________________________________________________ --}}
+    <div class="">
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
@@ -16,7 +34,6 @@
         </div>
 
         <div class="box">
-
             <ol class="items-list">
                 <li class="item books_and_magz flexrow items-header">
                     <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.BOOKS_AND_MAGZ'}}</div>
@@ -30,8 +47,7 @@
                 {{/each}}
             </ol>
         </div>
-    </div>
-    <div class="">
+
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">

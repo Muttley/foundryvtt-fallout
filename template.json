@@ -245,7 +245,20 @@
 		}
 	},
 	"Item": {
-		"types": ["weapon", "weapon_mod", "ammo", "apparel", "robot_armor", "books_and_magz", "consumable", "miscellany", "skill", "perk", "special_ability"],
+		"types": [
+			"weapon",
+			"weapon_mod",
+			"ammo",
+			"apparel",
+			"robot_armor",
+			"robot_mod",
+			"books_and_magz",
+			"consumable",
+			"miscellany",
+			"skill",
+			"perk",
+			"special_ability"
+		],
 		"templates": {
 			"base": {
 				"description": "",
@@ -258,7 +271,7 @@
 				"rarity": 0
 			},
 			"equipable": {
-				"equippable": false,
+				"equippable": true,
 				"equipped": false
 			}
 		},
@@ -406,6 +419,10 @@
 			"perks": "",
 			"carry": 0,
 			"mods": ""
+		},
+		"robot_mod": {
+			"templates": ["base", "physical", "equipable"],
+			"effect": ""
 		},
 		"special_ability": {
 			"templates": ["base"]

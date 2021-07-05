@@ -101,7 +101,8 @@ export class FalloutActorSheet extends ActorSheet {
     const skills = [];
     const perks = [];
     const apparel = [];
-    let robotApparel = [];
+    const robotApparel = [];
+    const robot_mods = [];
     const weapons = [];
     const ammo = [];
     const consumables = [];
@@ -126,6 +127,9 @@ export class FalloutActorSheet extends ActorSheet {
       }
       else if (i.type === 'robot_armor') {
         robotApparel.push(i);
+      }
+      else if (i.type === 'robot_mod') {
+        robot_mods.push(i);
       }
       else if (i.type === 'weapon') {
         weapons.push(i);
@@ -174,6 +178,7 @@ export class FalloutActorSheet extends ActorSheet {
       { apparelType: 'plating', list: plating },
       { apparelType: 'armor', list: robotArmor }];
 
+    context.robot_mods = robot_mods;
     context.perks = perks;
     context.ammo = ammo;
     context.weapons = weapons;
@@ -402,6 +407,20 @@ export class FalloutActorSheet extends ActorSheet {
         attribute = item.actor.data.data.attributes[skill.defaultAttribute];
       }
       game.fallout.Dialog2d20.createDialog({ rollName: rollName, diceNum: 2, attribute: attribute.value, skill: skill.value, tag: skill.tag, complication: 20 });
+    });
+
+    // * POWER ARMOR MONITOR
+    html.find('.power-armor-monitor-helath-value').change((ev) => {
+      const apparelId = $(ev.currentTarget).data('itemId');
+      const newHealthValue = $(ev.currentTarget).val();
+      let apparel = this.actor.items.get(apparelId);
+      if (apparel) {
+        if (apparel.data.data.appareltype = 'powerArmor') {
+          apparel.update({ "data.health.value": newHealthValue });
+          //this.actor.updateEmbeddedDocuments("Item", [{"_id":apparelId, "data.health."}])
+        }
+      }
+
     });
 
     // * ROLL WEAPON DAMAGE

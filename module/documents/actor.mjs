@@ -137,6 +137,7 @@ export class FalloutActor extends Actor {
 
     // ADD OUTFITED LIST FOR DISPLAY
     actorData.data.outfitedLocations = outfitedLocations;
+    console.warn(actorData.data.outfitedLocations);
 
   }
 
@@ -145,6 +146,8 @@ export class FalloutActor extends Actor {
     if (actorData.type !== 'robot') return;
     const data = actorData.data;
     this._calculateRobotBodyResistance(actorData);
+    actorData.data.favoriteWeapons = actorData.items.filter(i => i.type == 'weapon' && i.data.data.favorite);
+    actorData.data.equippedRobotMods = actorData.items.filter(i => i.type == 'robot_mod' && i.data.data.equipped).slice(0, 3);
   }
 
   _calculateRobotBodyResistance(actorData) {
