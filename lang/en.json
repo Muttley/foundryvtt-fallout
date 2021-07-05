@@ -161,6 +161,15 @@
 		"Quantity": "Quantity",
 		"ORIGIN": "ORIGIN",
 		"CarryWeight": "Carry Weight",
-		"Perks": "Perks"
+		"Perks": "Perks",
+		"ROBOT_MODULES": "Robot Modules",
+		"WEAPON_MODS": "Weapon Mods",
+		"APPAREL_MODS": "Apparel Mods",
+		"CONSUMABLES": "Consumables",
+		"BOOKS_AND_MAGZS": "Books and Magazines",
+		"MISCELLANY": "Miscellany",
+		"UNSORTED": "Unsorted",
+		"OTHER": "Other",
+		"CAPS": "Caps"
 	}
 }

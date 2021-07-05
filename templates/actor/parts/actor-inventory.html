@@ -1,11 +1,11 @@
 <div class="flex" style="margin: 5px 0 10px 0; padding: 10px; background-color: black;">
     <span class="flex align-mid" style="flex-basis: 200px; margin-right: 20px;">
-        <label style="color:white"><strong>CAPS:</strong></label>
+        <label style="color:white" class="upperC"><strong>{{localize 'FALLOUT.UI.CAPS'}}:</strong></label>
         <input type="text" class="underline" name="data.currency.caps" value="{{data.currency.caps}}">
     </span>
     <span class="flex align-mid" style="flex-basis: 100%;">
-        <label style="color:white"><strong>OTHER:</strong></label>
-        <input type="text" class="underline" name="data.currency.other" value="{{data.currency.other}}" style="width: 100%;">
+        <label style="color:white" class="upperC"><strong>{{localize 'FALLOUT.UI.OTHER'}}:</strong></label>
+        <input type="text" class="underline" name="data.currency.other" value="{{data.currency.other}}" style="width: 100%;" placeholder="Pre War Money, Gold, New Money, etc.">
     </span>
 </div>
 
@@ -18,7 +18,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.ROBOT_MOD'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.ROBOT_MODULES'}}</div>
                     <div class="item-controls">
                         <a class="item-control item-create" title="Create Robot Module" data-type="robot_mod"><i class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
@@ -35,7 +35,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.WEAPON_MODS'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.WEAPON_MODS'}}</div>
                     <div class="item-controls">
                         <a class="item-control item-create" title="Create Weapon Mod" data-type="weapon_mod"><i class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
@@ -51,7 +51,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.APPAREL_MODS'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.APPAREL_MODS'}}</div>
                     <div class="item-controls">
                         <a class="item-control item-create" title="Create Apparel Mod" data-type="apparel_mod"><i class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
@@ -70,7 +70,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.CONSUMABLE'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.CONSUMABLES'}}</div>
                     <div class="item-controls">
                         <a class="item-control item-create" title="Create Consumable" data-type="consumable"><i class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
@@ -85,7 +85,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item books_and_magz flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.BOOKS_AND_MAGZ'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.BOOKS_AND_MAGZS'}}</div>
                     <div class="item-controls">
                         <a class="item-control item-create" title="Create books_and_magz" data-type="books_and_magz"><i class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
@@ -100,7 +100,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.MISCELLANY'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.MISCELLANY'}}</div>
                     <div class="item-controls">
                         <a class="item-control item-create" title="Create Miscellany" data-type="miscellany"><i class="fas fa-plus"></i>
                             {{localize 'FALLOUT.UI.Add'}}</a>
@@ -115,7 +115,7 @@
         <div class="box">
             <ol class="items-list">
                 <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UNSORTED'}}</div>
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.UNSORTED'}}</div>
                 </li>
                 {{#each inventory as |item id|}}
                 {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
