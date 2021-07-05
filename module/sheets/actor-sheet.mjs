@@ -415,9 +415,8 @@ export class FalloutActorSheet extends ActorSheet {
       const newHealthValue = $(ev.currentTarget).val();
       let apparel = this.actor.items.get(apparelId);
       if (apparel) {
-        if (apparel.data.data.appareltype = 'powerArmor') {
+        if (apparel.data.data.appareltype == 'powerArmor') {
           apparel.update({ "data.health.value": newHealthValue });
-          //this.actor.updateEmbeddedDocuments("Item", [{"_id":apparelId, "data.health."}])
         }
       }
 
