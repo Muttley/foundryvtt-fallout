@@ -2,6 +2,24 @@
     {{!-- LEFT _________________________________________________________________ --}}
     <div class="" style="padding-right: 5px;">
 
+        {{!-- ROBOT MODS --}}
+        {{#ifCond actor.type '==' 'robot'}}
+        <div class="box">
+            <ol class="items-list">
+                <li class="item consumable flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.ROBOT_MOD'}}</div>
+                    <div class="item-controls">
+                        <a class="item-control item-create" title="Create Robot Module" data-type="robot_mod"><i class="fas fa-plus"></i>
+                            {{localize 'FALLOUT.UI.Add'}}</a>
+                    </div>
+                </li>
+                {{#each robot_mods as |item id|}}
+                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item }}
+                {{/each}}
+            </ol>
+        </div>
+        {{/ifCond}}
+
         {{!-- WEAPON MODS --}}
         <div class="box">
             <ol class="items-list">
@@ -34,22 +52,7 @@
             </ol>
         </div>
 
-        {{#ifCond actor.type '==' 'robot'}}
-        <div class="box">
-            <ol class="items-list">
-                <li class="item consumable flexrow items-header">
-                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.ROBOT_MOD'}}</div>
-                    <div class="item-controls">
-                        <a class="item-control item-create" title="Create Robot Module" data-type="robot_mod"><i class="fas fa-plus"></i>
-                            {{localize 'FALLOUT.UI.Add'}}</a>
-                    </div>
-                </li>
-                {{#each robot_mods as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item }}
-                {{/each}}
-            </ol>
-        </div>
-        {{/ifCond}}
+
     </div>
     {{!-- RIGHT _________________________________________________________________ --}}
     <div class="">
