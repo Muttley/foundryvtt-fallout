@@ -18,6 +18,22 @@
             </ol>
         </div>
 
+        {{!-- APPAREL MODS --}}
+        <div class="box">
+            <ol class="items-list">
+                <li class="item consumable flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.APPAREL_MODS'}}</div>
+                    <div class="item-controls">
+                        <a class="item-control item-create" title="Create Apparel Mod" data-type="apparel_mod"><i class="fas fa-plus"></i>
+                            {{localize 'FALLOUT.UI.Add'}}</a>
+                    </div>
+                </li>
+                {{#each apparel_mods as |item id|}}
+                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item }}
+                {{/each}}
+            </ol>
+        </div>
+
         {{#ifCond actor.type '==' 'robot'}}
         <div class="box">
             <ol class="items-list">

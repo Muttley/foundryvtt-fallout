@@ -250,6 +250,7 @@
 			"weapon_mod",
 			"ammo",
 			"apparel",
+			"apparel_mod",
 			"robot_armor",
 			"robot_mod",
 			"books_and_magz",
@@ -405,6 +406,15 @@
 				"current": 0,
 				"list": ""
 			}
+		},
+		"apparel_mod": {
+			"templates": ["base", "physical", "attachable"],
+			"apparelType": "",
+			"location": "",
+			"resistance": { "physical": 0, "energy": 0, "radiation": 0 },
+			"health": { "value": 0 },
+			"effect": "",
+			"perks": ""
 		},
 		"robot_armor": {
 			"templates": ["base", "physical", "equipable"],

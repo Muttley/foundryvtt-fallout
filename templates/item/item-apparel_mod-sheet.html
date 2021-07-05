@@ -1,0 +1,69 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{> "systems/fallout/templates/item/parts/item-header.html"}}
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="description">Description</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <div class="flexrow resource-row">
+                <label class="resource-label">Apparel Type</label>
+                {{#select data.apparelType}}
+                <select name="data.apparelType" id="">
+                    {{#each FALLOUT.APPAREL_TYPE as |item key|}}
+                    <option value="{{key}}">{{localize item}}</option>
+                    {{/each}}
+                </select>
+                {{/select}}
+                <!-- <input type="text" name="data.apparelType" placeholder="Outfit, Armor..." value="{{data.apparelType}}"> -->
+            </div>
+
+            <div class="flexrow resource-row">
+                <label class="resource-label">Resistances: </label>
+                {{#each data.resistance as |item key|}}
+                <div class="flex align-mid">
+                    <label><span class="fo-{{key}}"></span> {{key}} &nbsp;</label>
+                    <input type="number" class="num-short-2" name="data.resistance.{{key}}.value" value="{{item.value}}">
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="flexrow resource-row">
+                <label class="resource-label">Location</label>
+                <input type="text" name="data.location" placeholder="For Armor Upgrades. Leg, Arm, .etc" value="{{data.location}}">
+            </div>
+
+            <div class="flexrow resource-row">
+                <label class="resource-label">Health</label>
+                <input type="number" class="" name="data.health.value" value="{{data.health.value}}">
+            </div>
+
+            <div class="flexrow resource-row">
+                <label class="resource-label">Perks</label>
+                <input type="text" name="data.perks" value="{{data.perks}}">
+            </div>
+
+            <div class="resource-row">
+                <h3 class="resource-label">Effect</h3>
+                <div class="description-field">
+                    {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
+                </div>
+            </div>
+
+        </div>
+
+        {{!-- Description Tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+            {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
+            {{editor content=data.description target="data.description" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
+
+
+    </section>
+</form>
