@@ -47,7 +47,9 @@
     {{/each}}
 </ol>
 
-
+{{#if (or
+(eq actor.type "character")
+(eq actor.type "robot"))}}
 <ol class="items-list">
     <li class="item weapon flexrow items-header">
         <div class="flexrow flexlarge item-name upperC">AMMO {{localize 'FALLOUT.UI.Name'}}</div>
@@ -84,3 +86,4 @@
     </li>
     {{/each}}
 </ol>
+{{/if}}
