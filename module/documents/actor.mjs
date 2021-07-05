@@ -134,11 +134,8 @@ export class FalloutActor extends Actor {
         bodyPart.resistance.radiation = parseInt(data.resistance.radiation);
       }
     }
-
     // ADD OUTFITED LIST FOR DISPLAY
     actorData.data.outfitedLocations = outfitedLocations;
-    console.warn(actorData.data.outfitedLocations);
-
   }
 
   // ROBOT
