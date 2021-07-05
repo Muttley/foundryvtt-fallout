@@ -24,10 +24,13 @@
 
 ## FEATURES
 
--   Status Screen for Characters and Robots
-
-Calculating Resistances depending on the equipped apparel
-
-Marking Injuries on body parts
-
-Calulcatin Encumbrance
+-   Pipboy Screen for Characters and Robots (player sheets)
+-   Calculating Resistances depending on the equipped apparel
+-   Marking Injuries on body parts
+-   Calulcatin Encumbrance
+-   Smart Item Sorting
+-   Adding Melee Bonus to Unarmed and melee weaons
+-   Favorite Weapons
+-   Power Armor Helath Monitor
+-   Robot Modules List quick view
+-   Conditions
