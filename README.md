@@ -27,10 +27,10 @@
 -   Pipboy Screen for Characters and Robots (player sheets)
 -   Calculating Resistances depending on the equipped apparel
 -   Marking Injuries on body parts
--   Calulcatin Encumbrance
+-   Calculating Encumbrance
 -   Smart Item Sorting
 -   Adding Melee Bonus to Unarmed and melee weaons
--   Favorite Weapons
+-   Favorite Weapons List quick view
 -   Power Armor Helath Monitor
 -   Robot Modules List quick view
 -   Conditions
