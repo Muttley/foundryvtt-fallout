@@ -104,6 +104,7 @@ export class FalloutActorSheet extends ActorSheet {
     const robotApparel = [];
     const robot_mods = [];
     const weapons = [];
+    const weapon_mods = [];
     const ammo = [];
     const consumables = [];
     const books_and_magz = [];
@@ -133,6 +134,9 @@ export class FalloutActorSheet extends ActorSheet {
       }
       else if (i.type === 'weapon') {
         weapons.push(i);
+      }
+      else if (i.type === 'weapon_mod') {
+        weapon_mods.push(i);
       }
       else if (i.type === 'ammo') {
         ammo.push(i);
@@ -182,6 +186,7 @@ export class FalloutActorSheet extends ActorSheet {
     context.perks = perks;
     context.ammo = ammo;
     context.weapons = weapons;
+    context.weapon_mods = weapon_mods;
     context.specialAbilities = specialAbilities;
     context.consumables = consumables;
     context.books_and_magz = books_and_magz;
@@ -191,7 +196,9 @@ export class FalloutActorSheet extends ActorSheet {
     // for example put apparel in inventory for all except character.
 
     if (this.actor.type == 'npc' || this.actor.type == 'creature') {
-      context.inventory = [...consumables, ...books_and_magz, ...miscellany, ...apparel, ...robotApparel];
+      context.inventory = context.items.filter(i => {
+        return (i.type !== 'weapon' && i.data.weight != null)
+      });
     }
     if (this.actor.type == 'character') {
       context.inventory = [...robotApparel];

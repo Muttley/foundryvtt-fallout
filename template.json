@@ -273,6 +273,10 @@
 			"equipable": {
 				"equippable": true,
 				"equipped": false
+			},
+			"attachable": {
+				"attachable": true,
+				"attached": false
 			}
 		},
 		"skill": {
@@ -350,10 +354,12 @@
 			"type": ""
 		},
 		"weapon_mod": {
-			"templates": ["base", "physical"],
-			"type": "",
+			"templates": ["base", "physical", "attachable"],
+			"modType": "",
 			"weaponType": "",
-			"effects": {
+			"namePrefix": "",
+			"effect": "",
+			"modEffects": {
 				"info": "",
 				"damageRating": 0,
 				"damageEffect": "",
