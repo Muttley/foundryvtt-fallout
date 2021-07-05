@@ -13,10 +13,11 @@
 -   weapon mod
 -   ammo
 -   apparel
--   apparel_mod
+-   apparel mod
 -   robot armor
+-   robot modules
 -   books and magazines
--   consumables
+-   consumables (food, beverage, chem , other)
 -   miscellany
 -   skill
 -   perk
@@ -28,7 +29,7 @@
 -   Calculating Resistances depending on the equipped apparel
 -   Marking Injuries on body parts
 -   Calculating Encumbrance
--   Smart Item Sorting
+-   Smart Item Sorting by Type
 -   Adding Melee Bonus to Unarmed and melee weaons
 -   Favorite Weapons List quick view
 -   Power Armor Helath Monitor
