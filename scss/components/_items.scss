@@ -139,10 +139,9 @@
 	}
 }
 
-.item-unequipped {
-	color: rgba(0, 0, 0, 0.2);
-}
-
+.item-unequipped,
+.item-unstashed,
+.item-unpowered,
 .favorite-start-dim {
 	color: rgba(0, 0, 0, 0.2);
 }

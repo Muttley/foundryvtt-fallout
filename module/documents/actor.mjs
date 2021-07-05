@@ -7,10 +7,6 @@ export class FalloutActor extends Actor {
 
   /** @override */
   prepareData() {
-    // Prepare data for the actor. Calling the super version of this executes
-    // the following, in order: data reset (to clear active effects),
-    // prepareBaseData(), prepareEmbeddedDocuments() (including active effects),
-    // prepareDerivedData().
     super.prepareData();
   }
 
@@ -49,9 +45,17 @@ export class FalloutActor extends Actor {
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
     const data = actorData.data;
-    data.carryWeight.base = 150 + (parseInt(this.data.data.attributes.str.value) * 10);
     this._calculateCharacterBodyResistance(actorData);
-    actorData.data.favoriteWeapons = actorData.items.filter(i => i.type == 'weapon' && i.data.data.favorite);
+    data.favoriteWeapons = actorData.items.filter(i => i.type == 'weapon' && i.data.data.favorite);
+    // Encumbrance
+    data.carryWeight.base = 150 + (parseInt(this.data.data.attributes.str.value) * 10);
+    data.carryWeight.value = parseInt(data.carryWeight.base) + parseInt(data.carryWeight.mod);
+    data.totalWeight = this._getItemsTotalWeight();
+    data.encumbranceLevel = 0;
+    if (data.totalWeight > data.carryWeight.value) {
+      let dif = data.totalWeight - data.carryWeight.value;
+      data.encumbranceLevel = Math.ceil(dif / 50);
+    }
   }
 
   _calculateCharacterBodyResistance(actorData) {
@@ -145,6 +149,18 @@ export class FalloutActor extends Actor {
     this._calculateRobotBodyResistance(actorData);
     actorData.data.favoriteWeapons = actorData.items.filter(i => i.type == 'weapon' && i.data.data.favorite);
     actorData.data.equippedRobotMods = actorData.items.filter(i => i.type == 'robot_mod' && i.data.data.equipped).slice(0, 3);
+    data.carryWeight.base = 150;
+    let robotArmors = this.items.filter(i => { return i.type == 'robot_armor' });
+    for (let i of robotArmors) {
+      data.carryWeight.base += parseInt(i.data.data.carry);
+    }
+    data.carryWeight.value = parseInt(data.carryWeight.base) + parseInt(data.carryWeight.mod);
+    data.totalWeight = this._getItemsTotalWeight();
+    data.encumbranceLevel = 0;
+    if (data.totalWeight > data.carryWeight.value) {
+      let dif = data.totalWeight - data.carryWeight.value;
+      data.encumbranceLevel = Math.ceil(dif / 50);
+    }
   }
 
   _calculateRobotBodyResistance(actorData) {
@@ -190,11 +206,32 @@ export class FalloutActor extends Actor {
         bodyPart.resistance.radiation = parseInt(data.resistance.radiation);
       }
     }
-
-
     // ADD OUTFITED LIST FOR DISPLAY
     actorData.data.outfitedLocations = outfitedLocations;
-    console.log(actorData.data.outfitedLocations);
+  }
+
+  // Calculate Total Weight Of Items
+  _getItemsTotalWeight() {
+    let physicalItems = this.items.filter(i => {
+      return (!i.data.data.stashed && i.data.data.weight != null)
+    });
+    // remove powered powerArmor pieces for characters
+    if (this.data.type == 'character') {
+      physicalItems = physicalItems.filter(i => {
+        if (i.data.data.appareltype == "powerArmor") {
+          if (!i.data.data.powered)
+            return i;
+        } else {
+          return i;
+        }
+      });
+    }
+    let physicalItemsMap = physicalItems.map(i => i.data.toObject());
+    let totalWeight = 0;
+    for (let i of physicalItemsMap) {
+      totalWeight += parseInt(i.data.weight);
+    }
+    return totalWeight;
 
   }
 

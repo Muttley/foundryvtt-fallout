@@ -97,5 +97,16 @@
                 {{/each}}
             </ol>
         </div>
+
+        <div class="box">
+            <ol class="items-list">
+                <li class="item consumable flexrow items-header">
+                    <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UNSORTED'}}</div>
+                </li>
+                {{#each inventory as |item id|}}
+                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
+                {{/each}}
+            </ol>
+        </div>
     </div>
 </div>

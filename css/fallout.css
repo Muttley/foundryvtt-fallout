@@ -929,6 +929,11 @@
   margin-right: 0;
 }
 
+.fallout .status-help-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .fallout .status-help-bar .help-item {
   display: flex;
   flex-direction: row;
@@ -942,6 +947,7 @@
 }
 
 .fallout .symbol {
+  min-width: 12px;
   max-width: 12px;
   height: 12px;
   margin-right: 3px;
@@ -1416,10 +1422,9 @@
   height: 12px;
 }
 
-.fallout .item-unequipped {
-  color: rgba(0, 0, 0, 0.2);
-}
-
+.fallout .item-unequipped,
+.fallout .item-unstashed,
+.fallout .item-unpowered,
 .fallout .favorite-start-dim {
   color: rgba(0, 0, 0, 0.2);
 }

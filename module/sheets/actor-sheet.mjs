@@ -339,6 +339,21 @@ export class FalloutActorSheet extends ActorSheet {
       li.slideUp(200, () => this.render(false));
     });
 
+    // * Toggle Stash Inventory Item
+    html.find(".item-stash").click(async (ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("item-id"));
+      await this.actor.updateEmbeddedDocuments("Item", [this._toggleStashed(li.data("item-id"), item)]);
+    });
+
+    // * Toggle Power on Power Armor Item
+    html.find(".item-powered").click(async (ev) => {
+      const li = $(ev.currentTarget).parents(".item");
+      const item = this.actor.items.get(li.data("item-id"));
+      await this.actor.updateEmbeddedDocuments("Item", [this._togglePowered(li.data("item-id"), item)]);
+    });
+
+
     // * Toggle Equip Inventory Item
     html.find(".item-toggle").click(async (ev) => {
       const li = $(ev.currentTarget).parents(".item");
@@ -350,7 +365,6 @@ export class FalloutActorSheet extends ActorSheet {
     html.find(".item-favorite").click(async (ev) => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
-      console.warn(item.data);
       await this.actor.updateEmbeddedDocuments("Item", [this._toggleFavorite(li.data("item-id"), item)]);
     });
 
@@ -546,12 +560,32 @@ export class FalloutActorSheet extends ActorSheet {
     return newStatus;
   }
 
+  // Toggle Stashed Item
+  _toggleStashed(id, item) {
+    return {
+      _id: id,
+      data: {
+        stashed: !item.data.data.stashed,
+      },
+    };
+  }
+
   // Toggle Equipment
   _toggleEquipped(id, item) {
     return {
       _id: id,
       data: {
         equipped: !item.data.data.equipped,
+      },
+    };
+  }
+
+  // Toggle Powered
+  _togglePowered(id, item) {
+    return {
+      _id: id,
+      data: {
+        powered: !item.data.data.powered,
       },
     };
   }

@@ -52,7 +52,7 @@ Players can then toggle it depending if they are in or out of the Power Armor.
 
 Also,
 
-Allowing players to have Power Armor and Armor/clothing at the same time on differnt body parts is intentional. When calculating resistances for the body part these will not stack! Only Outfits stack with other apparel types.
+Allowing players to have Power Armor and Armor/clothing at the same time on differnt body parts is intentional. When calculating resistances for the body part these will not stack! Only Clothing stacks with other apparel types on the same body part.
 
 Some GMs might allow in some situations that you could be in a power armor frame with only power-armor-healmet, but still recieve "clothing' bonuses on the other parts. It is left to the game table to decide about that and it is up to players to accordingly equipp/unequipp their apparel.
 

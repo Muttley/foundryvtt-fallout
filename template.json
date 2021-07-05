@@ -51,9 +51,9 @@
 					"mod": 0
 				},
 				"carryWeight": {
-					"base": "",
-					"value": "",
-					"mod": ""
+					"base": 0,
+					"value": 0,
+					"mod": 0
 				},
 				"initiative": {
 					"base": 0,
@@ -269,7 +269,8 @@
 				"weight": 0,
 				"cost": 0,
 				"quantity": 1,
-				"rarity": 0
+				"rarity": 0,
+				"stashed": false
 			},
 			"equipable": {
 				"equippable": true,
