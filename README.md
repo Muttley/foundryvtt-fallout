@@ -25,6 +25,7 @@
 
 ## FEATURES
 
+-   Dice Roller for D20 and DC Rolls. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects
 -   Pipboy Screen for Characters and Robots (player sheets)
 -   Calculating Resistances depending on the equipped apparel
 -   Marking Injuries on body parts
