@@ -71,7 +71,7 @@ export class FalloutActor extends Actor {
     let hasPowerArmor = false;
     for (let [k, v] of Object.entries(outfitedLocations)) {
       if (!v) {
-        let pow = actorData.items.find(i => i.type == 'apparel' && i.data.data.appareltype == 'powerArmor' && i.data.data.equipped && i.data.data.location[k] == true);
+        let pow = actorData.items.find(i => i.type == 'apparel' && i.data.data.appareltype == 'powerArmor' && i.data.data.equipped && i.data.data.powered && i.data.data.location[k] == true);
         if (pow && !outfitedLocations[k]) {
           outfitedLocations[k] = duplicate(pow.data.toObject());
           hasPowerArmor = false;
