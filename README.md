@@ -25,3 +25,9 @@
 ## FEATURES
 
 -   Status Screen for Characters and Robots
+
+Calculating Resistances depending on the equipped apparel
+
+Marking Injuries on body parts
+
+Calulcatin Encumbrance
