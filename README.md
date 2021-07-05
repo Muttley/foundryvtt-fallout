@@ -41,6 +41,7 @@
 ## Disclaimer
 
 This might change in the future but for now:
+
 Weapon mods and Apparel mods can be added to the character sheet as items.
 To add them to your Weapons and Apparel you will need to write their names in your weapon/aapparel item sheets.
 Since there is no native Foundry support for Items to contain other Items I am looking for some sort of work around, but for now you will need to be a good player and take care of those numbers and effects on your own. Pen and Paper style.
