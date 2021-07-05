@@ -98,6 +98,12 @@ export const registerHandlebarsHelpers = function () {
             return false;
     });
 
+    // * Use with #if
+    // {{#if (or 
+    // (eq section1 "foo")
+    //(ne section2 "bar"))}}
+    //.. content
+    //{{/if}}
     Handlebars.registerHelper({
         eq: (v1, v2) => v1 === v2,
         ne: (v1, v2) => v1 !== v2,
