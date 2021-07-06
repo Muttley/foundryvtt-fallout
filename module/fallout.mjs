@@ -163,6 +163,8 @@ Hooks.on("preCreateItem", (_item) => {
  * @returns {Promise}
  */
 async function createItemMacro(data, slot) {
+  ui.notifications.notify('Adding Item Macro: This feature is to be added in the future');
+  return;
   if (data.type !== "Item") return;
   if (!("data" in data)) return ui.notifications.warn("You can only create macro buttons for owned Items");
   const item = data.data;
@@ -190,13 +192,14 @@ async function createItemMacro(data, slot) {
  * @return {Promise}
  */
 function rollItemMacro(itemName) {
-  const speaker = ChatMessage.getSpeaker();
-  let actor;
-  if (speaker.token) actor = game.actors.tokens[speaker.token];
-  if (!actor) actor = game.actors.get(speaker.actor);
-  const item = actor ? actor.items.find(i => i.name === itemName) : null;
-  if (!item) return ui.notifications.warn(`Your controlled Actor does not have an item named ${itemName}`);
-  return item.roll();
+  ui.notifications.notify('To be added in the future');
+  // const speaker = ChatMessage.getSpeaker();
+  // let actor;
+  // if (speaker.token) actor = game.actors.tokens[speaker.token];
+  // if (!actor) actor = game.actors.get(speaker.actor);
+  // const item = actor ? actor.items.find(i => i.name === itemName) : null;
+  // if (!item) return ui.notifications.warn(`Your controlled Actor does not have an item named ${itemName}`);
+  // return item.roll();
 }
 
 /* -------------------------------------------- */

@@ -7,7 +7,7 @@
             {{#each data.outfitedLocations as |item id|}}
             <li class="item apparel flexrow" data-item-id="{{item._id}}">
                 <div class="item-name">
-                    <h4 class="resource-label"><a>{{id}}: {{item.name}}</a></h4>
+                    <h4 class="resource-label"><a><span class='upperC'> {{localize (concat 'FALLOUT.BODYLOCATION.' ../actor.type '.' id)}}</span>: {{item.name}}</a></h4>
                 </div>
             </li>
             {{/each}}

@@ -118,7 +118,8 @@
 	"FALLOUT.LEVEL": {
 		"Level": "Level",
 		"CurrentXP": "Current XP",
-		"NextXP": "Next Level XP"
+		"NextXP": "Next Level XP",
+		"RewardXP": "XP Reward"
 	},
 
 	"FALLOUT.WEAPONS": {

@@ -9,7 +9,7 @@
             </span>
         </div>
 
-        <div class="resources grid">
+        <div class="resources grid right-side">
             <div class="flexcol resource-plate-header plate-2">
                 <div class="resource flexrow align-mid">
                     <label for="data.level.value" class="resource-label" style="font-size: 18px; color: white;">{{localize "FALLOUT.LEVEL.Level"}}</label>
@@ -26,7 +26,8 @@
                 </div>
             </div>
             <div class="flexrow grid-span-2" style="font-size:12px">
-                <div class="resource flex-group-left">
+                {{#if (or (eq actor.type "character") (eq actor.type "robot"))}}
+                <div class="resource flex-group-left" style="padding-right: 10px;">
                     <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
                     <div class="resource-content flexrow flex-center flex-between">
                         <input type="text" class="underline" name="data.level.currentXP" value="{{data.level.currentXP}}" data-dtype="Number" />
@@ -38,6 +39,14 @@
                         <input type="text" class="underline" name="data.level.nextLevelXP" value="{{data.level.nextLevelXP}}" data-dtype="Number" />
                     </div>
                 </div>
+                {{else}}
+                <div class="resource flex-group-left">
+                    <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.RewardXP"}}</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <input type="text" class="underline" name="data.level.currentXP" value="{{data.level.currentXP}}" data-dtype="Number" />
+                    </div>
+                </div>
+                {{/if}}
             </div>
         </div>
     </div>

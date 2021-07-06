@@ -95,7 +95,7 @@
 }
 
 .fallout-chat-message .content .dices-result {
-  margin: 5px 0 0 0;
+  margin: 5px 0 5px 0;
   min-height: 32px;
 }
 
@@ -532,6 +532,7 @@
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
+  border: none;
 }
 
 .fallout .sheet-header h1.charname {
@@ -545,6 +546,10 @@
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+.fallout .sheet-header .right-side {
+  padding: 0 0 0 30px;
 }
 
 .fallout .sheet-tabs {
@@ -858,8 +863,16 @@
   color: #eee787;
 }
 
+.fallout .box.padding5 {
+  padding: 5px 5px 5px 5px;
+}
+
+.fallout .box .items-list .item.items-header {
+  margin-top: 0px !important;
+}
+
 .fallout .box.no-padding {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .fallout .box.no-padding .box-header {

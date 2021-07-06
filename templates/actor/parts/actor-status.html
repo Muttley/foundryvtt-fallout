@@ -30,7 +30,7 @@
 
         <div class="box">
             <div class="box-header">
-                <h4>RESISTANCES</h4>
+                <h4>RESISTANCE GENERAL BONUS</h4>
             </div>
             <div class="flexcol">
                 <div class="flexrow resource-row">
@@ -60,22 +60,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="box">
-            <div class="box-header">
-                <h4>ENCUMBRANCE</h4>
-            </div>
-            <div class="flexcol">
-                <div class="resource-row">
-                    <div class="flex align-mid font-size-11">
-                        <label for="">{{data.carryWeight.base}} .lbs + &nbsp; </label>
-                        <input type="number" name="data.carryWeight.mod" class="num-short-2" value="{{data.carryWeight.mod}}">
-                    </div>
-                    <label for=""> = MAX: &nbsp; {{data.carryWeight.value}} .lbs</label>
-                </div>
-                <p>Encumbrance Level: {{data.encumbranceLevel}}</p>
-                <p>Total: {{data.totalWeight}} .lbs</p>
-            </div>
-        </div> -->
     </div>
 
     {{!-- MIDDLE COLUMN --}}
@@ -174,21 +158,14 @@
                     <label>{{data.outfitedLocations.legR.data.health.max}}</label>
                     <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.legR.data.health.value}}" data-body-location="legR" data-item-id="{{data.outfitedLocations.legR._id}}">
                 </div>
-
             </div>
-            <!-- {{#each data.body_parts as |part id|}}
-            <div class=" flexrow resource-row">
-                    <label>{{localize (concat 'FALLOUT.BODYLOCATION.' ../actor.type '.' id)}}</label>
-                    <input class="num-short-2" type="number" name="" value="">
-                </div>
-                {{/each}} -->
         </div>
         {{/ifCond}}
 
         {{#ifCond actor.type '==' 'robot'}}
         <div class="box">
             <div class="box-header">
-                <h4>MODULES</h4>
+                <h4 class="tab-switch" data-tab="inventory">MODULES</h4>
             </div>
             <div>
                 <ol class="items-list">
@@ -203,57 +180,11 @@
         </div>
         {{/ifCond}}
 
-
-        <!--<div class="box">
-             <div class="box-header">
-                <h3>INJURIES</h3>
-            </div> 
-            
-            {{#each data.body_parts as |body_part key|}}
-            <div>
-                <div class="body-part-header">
-                    <h4> {{localize (concat 'FALLOUT.BODYLOCATION.' key)}} {{body_part.hit.min}}-{{body_part.hit.max}}</h4>
-                </div>
-                <div class="injury-bar">
-                    {{#each body_part.injuries as |injury index|}}
-                    <div class="injury-mark condition{{injury}}" data-bodypart="{{key}}" data-index="{{index}}" data-status="{{injury}}">&nbsp;</div>
-                    {{/each}}
-                </div>
-            </div>
-            {{/each}} 
-        </div>-->
-
-
-        <!-- {{#each data.body_parts as |body_part key|}}
-        <div class="flexcol">
-            <div class="bodypartheader">
-                <h3>
-                    {{localize (concat 'FALLOUT.BODYLOCATION.' key)}} {{body_part.hit.min}}-{{body_part.hit.max}}
-                </h3>
-                <select name="data.body_parts.{{key}}.status">
-                    {{#select body_part.status}}
-                    <option value="healthy">{{localize 'FO2d20.healthy'}}</option>
-                    <option value="wounded">{{localize 'FO2d20.wounded'}}</option>
-                    <option value="crippled">{{localize 'FO2d20.crippled'}}</option>
-                    {{/select}}
-                </select>
-            </div>
-            <div class="flexrow">
-                {{#each body_part.resistance as |resistance_value keyType|}}
-                <div class="defense-type">
-                    <i class="fo-{{keyType}}" title="{{keyType}}"></i>
-                    <input type="text" class="label-value" name="data.body_parts.{{key}}.resistance.{{keyType}}" value="{{resistance_value}}" data-dtype="Number" />
-                </div>
-                {{/each}}
-            </div>
-        </div>
-        {{/each}} -->
-
     </div>
 </div>
 
 {{!-- ENCUMBRANCE --}}
-<div class="box" style="margin-top: 5px; margin-bottom: 0px;">
+<div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">
     <!-- <div class="box-header">
         <h4>ENCUMBRANCE</h4>
     </div> -->
