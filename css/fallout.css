@@ -58,6 +58,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.font-primary {
+  font-family: "Roboto", sans-serif;
+}
+
 .pad-2 {
   padding: 2px;
 }
@@ -105,6 +109,12 @@
   background-repeat: no-repeat;
 }
 
+.fallout-chat-message .content .success-plaq .TN {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
 .fallout-chat-message .content .complication-plaq {
   margin: 2px 0 0 10px;
   font-family: "Lobster", cursive;
@@ -145,6 +155,7 @@
 }
 
 .fallout-chat-message .content .dice-icon.d20.complication {
+  color: honeydew !important;
   background-image: url(../assets/chat/d20-complication.svg);
 }
 
@@ -153,6 +164,7 @@
 }
 
 .fallout-chat-message .content .dice-icon.d20.crit {
+  color: gold !important;
   background-image: url(../assets/chat/d20-crit.svg);
 }
 

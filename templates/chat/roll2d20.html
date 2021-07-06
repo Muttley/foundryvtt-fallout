@@ -1,7 +1,7 @@
 <div class="fallout-chat-message">
     <div class="content">
         <h2>{{rollname}}</h2>
-        <p class="success-plaq">Successes: {{successes}}</p>
+        <p class="success-plaq">Successes: {{successes}} <span class="TN">&nbsp;&nbsp;&nbsp;(TN {{successTreshold}})</span></p>
         {{#ifCond complications '>' 0}}
         <p class="complication-plaq">Complications: {{complications}}</p>
         {{/ifCond}}

@@ -1,4 +1,11 @@
 <ol class="items-list">
+    <li class="item consumable flexrow items-header">
+        <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.SPECIAL_ABILITY'}}</div>
+        <div class="item-controls">
+            <a class="item-control item-create" title="Create Special Ability" data-type="special_ability"><i class="fas fa-plus"></i>
+                {{localize 'FALLOUT.UI.Add'}}</a>
+        </div>
+    </li>
     {{#each specialAbilities as |item id|}}
     {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
     {{/each}}
