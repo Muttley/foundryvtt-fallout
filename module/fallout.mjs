@@ -11,7 +11,7 @@ import { registerHandlebarsHelpers } from "./helpers/handlebars.mjs"
 //Import Roll2D20
 import { Roller2D20 } from "./roller/fo2d20-roller.mjs"
 import { Dialog2d20 } from './roller/dialog2d20.js'
-import { DialogD6 } from './roller/DialogD6.js'
+import { DialogD6 } from './roller/dialogD6.js'
 //AP traker
 import { registerSettings } from './settings.js';
 import { APTracker } from './ap/ap-tracker.mjs'
