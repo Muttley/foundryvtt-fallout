@@ -1,5 +1,4 @@
 export function registerSettings() {
-
     game.settings.register('fallout', 'partyAP', {
         name: 'Party AP',
         scope: 'world',
@@ -14,6 +13,4 @@ export function registerSettings() {
         default: 0,
         type: Number,
     });
-
-
 }

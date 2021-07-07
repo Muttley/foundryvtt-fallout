@@ -44,7 +44,7 @@
 -   Apparel resistances are visible on the pip-boy figure for that specific body part. Resistances on the left of the pip-boy are general bonuses that are getting added to all body parts.
 -   Power Armor needs to be equipped and powered in order to apply it's resistances.
 -   You can drag skills to the NPCs from the included skills compendium.
--   Right click on the Skill name in order to choose a different Attribute to roll with
+-   Right click on the Skill name in order to choose a different Attribute to roll with. This will prop Delete skill on NPCs.(still looking for the right design solution for this)
 -   Characters can't equip robot armor so those are stashed under the GEAR tab. (and vice versa)
 
 ## Disclaimer

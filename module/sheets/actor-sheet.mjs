@@ -262,57 +262,72 @@ export class FalloutActorSheet extends ActorSheet {
       let updatedItem = { _id: item.id, data: { tag: !item.data.data.tag } };
       await this.actor.updateEmbeddedDocuments("Item", [updatedItem]);
     });
-    let menuSkills = [
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Strength',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'str');
+
+    let menuSkills = [];
+    if (this.actor.type != 'npc') {
+      menuSkills = [
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Strength',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'str');
+          },
         },
-      },
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Perception',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'per');
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Perception',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'per');
+          },
         },
-      },
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Endurance',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'end');
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Endurance',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'end');
+          },
         },
-      },
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Charisma',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'cha');
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Charisma',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'cha');
+          },
         },
-      },
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Intelligence',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'int');
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Intelligence',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'int');
+          },
         },
-      },
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Agility',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'agi');
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Agility',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'agi');
+          },
         },
-      },
-      {
-        icon: '<i class="fas fa-dice"></i>',
-        name: 'Use Luck',
-        callback: (t) => {
-          this._onRightClickSkill(t.data("itemId"), 'luc');
-        },
-      }
-    ];
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Use Luck',
+          callback: (t) => {
+            this._onRightClickSkill(t.data("itemId"), 'luc');
+          },
+        }
+      ];
+    }
+    else {
+      menuSkills = [
+        {
+          icon: '<i class="fas fa-dice"></i>',
+          name: 'Delete',
+          callback: (t) => {
+            this._onRightClickDelete(t.data("itemId"));
+          },
+        }]
+    }
+
     new ContextMenu(html.find(".skill"), null, menuSkills);
     // * END SKILLS
 
@@ -332,10 +347,10 @@ export class FalloutActorSheet extends ActorSheet {
     html.find('.item-create').click(this._onItemCreate.bind(this));
 
     // * Delete Inventory Item
-    html.find('.item-delete').click(ev => {
+    html.find('.item-delete').click(async (ev) => {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("itemId"));
-      item.delete();
+      await item.delete();
       li.slideUp(200, () => this.render(false));
     });
 
@@ -513,6 +528,12 @@ export class FalloutActorSheet extends ActorSheet {
     delete itemData.data["type"];
     // Finally, create the item!
     return await Item.create(itemData, { parent: this.actor });
+  }
+
+  async _onRightClickDelete(itemId) {
+    const item = this.actor.items.get(itemId);
+    await item.delete();
+    //li.slideUp(200, () => this.render(false));
   }
 
   _onRightClickSkill(itemId, attribute) {
