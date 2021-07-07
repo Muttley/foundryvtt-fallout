@@ -46,7 +46,6 @@ export class APTracker extends Application {
             const type = $(ev.currentTarget).parents('.ap-resource').attr('data-type');
             const change = $(ev.currentTarget).hasClass('ap-add') ? 1 : -1;
             let currentValue = game.settings.get('fallout', type);
-
             if (parseInt(currentValue) < 10 || parseInt(currentValue) > 0) {
                 let newValue = parseInt(currentValue) + change;
                 APTracker.setAP(type, newValue);
@@ -58,7 +57,6 @@ export class APTracker extends Application {
     static async setAP(type, value) {
         value = Math.round(value);
         if (!game.user.isGM) {
-            // @ts-ignore
             game.socket.emit('system.fallout', {
                 operation: 'setAP',
                 data: { 'value': value, 'type': type },
