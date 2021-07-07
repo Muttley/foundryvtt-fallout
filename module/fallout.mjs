@@ -12,6 +12,9 @@ import { registerHandlebarsHelpers } from "./helpers/handlebars.mjs"
 import { Roller2D20 } from "./roller/fo2d20-roller.mjs"
 import { Dialog2d20 } from './roller/dialog2d20.js'
 import { DialogD6 } from './roller/DialogD6.js'
+//AP traker
+import { registerSettings } from './settings.js';
+import { APTracker } from './ap/ap-tracker.mjs'
 
 
 
@@ -53,6 +56,9 @@ Hooks.once('init', async function () {
   CONFIG.Actor.documentClass = FalloutActor;
   CONFIG.Item.documentClass = FalloutItem;
 
+  // Register custom system settings
+  registerSettings();
+
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("fallout", FalloutActorSheet, { makeDefault: true });
@@ -61,6 +67,9 @@ Hooks.once('init', async function () {
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
+
+
+
 });
 
 /* -------------------------------------------- */
@@ -163,8 +172,11 @@ Hooks.on("preCreateItem", (_item) => {
  * @returns {Promise}
  */
 async function createItemMacro(data, slot) {
-  ui.notifications.notify('Adding Item Macro: This feature is to be added in the future');
-  return;
+  if (data.type == "Item") {
+    ui.notifications.notify('Adding Item Macro: This feature is to be added in the future');
+    return;
+  }
+
   if (data.type !== "Item") return;
   if (!("data" in data)) return ui.notifications.warn("You can only create macro buttons for owned Items");
   const item = data.data;

@@ -171,6 +171,8 @@
 		"MISCELLANY": "Miscellany",
 		"UNSORTED": "Unsorted",
 		"OTHER": "Other",
-		"CAPS": "Caps"
+		"CAPS": "Caps",
+		"SPECIAL_ABILITY": "Special Ability",
+		"INVENTORY": "Inventory"
 	}
 }

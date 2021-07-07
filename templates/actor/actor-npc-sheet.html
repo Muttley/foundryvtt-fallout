@@ -123,22 +123,23 @@
               {{> "systems/fallout/templates/actor/parts/actor-weapons.html"}}
             </div>
           </div>
-          <div class="box no-padding bgEven">
-            <h4 class="box-header text-center">SPECIAL ABILITIES</h4>
-            <div>
-              {{!-- Owned Abilities Tab --}}
-              {{> "systems/fallout/templates/actor/parts/actor-special_abilities.html"}}
-            </div>
+          <div class="resource-row">
+            {{!-- Owned Abilities Tab --}}
+            {{> "systems/fallout/templates/actor/parts/actor-special_abilities.html"}}
           </div>
-          <div class="box no-padding bgOdd">
-            <h4 class="box-header text-center">INVENTORY</h4>
-            <div>
-              <ol class="items-list">
-                {{#each inventory as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
-                {{/each}}
-              </ol>
-            </div>
+          <div class="resource-row">
+            <ol class="items-list">
+              <li class="item consumable flexrow items-header">
+                <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.INVENTORY'}}</div>
+                <div class="item-controls">
+                  <a class="item-control item-create" title="Create Miscellany" data-type="miscellany"><i class="fas fa-plus"></i>
+                    {{localize 'FALLOUT.UI.Add'}}</a>
+                </div>
+              </li>
+              {{#each inventory as |item id|}}
+              {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
+              {{/each}}
+            </ol>
           </div>
         </div>
       </section>

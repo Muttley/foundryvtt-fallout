@@ -16,6 +16,13 @@
 			"system": "fallout",
 			"path": "./packs/skills.db",
 			"entity": "Item"
+		},
+		{
+			"name": "fallout-macros",
+			"label": "Fallout Macros",
+			"system": "fallout",
+			"path": "./packs/fallout-macros.db",
+			"entity": "Macro"
 		}
 	],
 	"languages": [

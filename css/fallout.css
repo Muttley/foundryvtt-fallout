@@ -506,6 +506,58 @@
   align-items: center;
 }
 
+.fallout.ap-tracker {
+  position: absolute;
+  display: block;
+  margin: 5px;
+  bottom: 20px !important;
+  right: 320px !important;
+}
+
+.fallout.ap-tracker .ap-resource {
+  padding: 10px 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.fallout.ap-tracker .ap-resource.gm {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%22-1%20-1%20300%20100%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M0%20100l274.1-9.92L300%2013.01%208.51%200%200%20100z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23325885%22%20fill-opacity%3D%221%22%20stroke%3D%22%23325885%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fallout.ap-tracker .ap-resource.party {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%2386aa90'%20fill-opacity%3D'1'%20stroke%3D'%2386aa90'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fallout.ap-tracker .ap-resource:last-child {
+  margin-bottom: 0;
+}
+
+.fallout.ap-tracker .ap-resource h4 {
+  margin: 0 0 2px 0;
+  color: bisque;
+}
+
+.fallout.ap-tracker .ap-resource input[type="number"] {
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.fallout.ap-tracker .ap-resource .ap-btn {
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 6px;
+}
+
 /* Styles limited to fallout sheets */
 .fallout {
   /* ----------------------------------------- */
@@ -1130,17 +1182,13 @@
 }
 
 .fallout .resource-plate-header.character-header, .fallout .resource-plate-header.robot-header {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .fallout .resource-plate-header.npc-header, .fallout .resource-plate-header.creature-header {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1154,17 +1202,13 @@
 }
 
 .fallout .resource-plate-header.plate-2 {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%22-1%20-1%20300%20100%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M0%20100l274.1-9.92L300%2013.01%208.51%200%200%20100z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23605274%22%20fill-opacity%3D%221%22%20stroke%3D%22%23605274%22%20stroke-width%3D%221%22%2F%3E%3C%2Fsvg%3E");
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22none%22%20viewBox%3D%22-1%20-1%20300%20100%22%20width%3D%22300%22%20height%3D%22100%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M0%20100l274.1-9.92L300%2013.01%208.51%200%200%20100z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23605274%22%20fill-opacity%3D%221%22%20stroke%3D%22%23605274%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .fallout .resource-plate-header.plate-3 {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23243f60'%20fill-opacity%3D'1'%20stroke%3D'%23243f60'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1174,17 +1218,13 @@
 }
 
 .fallout .resource-plate-header.plate-3-b {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23b1c0d3'%20fill-opacity%3D'1'%20stroke%3D'%23b1c0d3'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%23b1c0d3'%20fill-opacity%3D'1'%20stroke%3D'%23b1c0d3'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .fallout .resource-plate-header.plate-3-o {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%237490b3'%20fill-opacity%3D'1'%20stroke%3D'%237490b3'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E");
-  padding: 5px 0 5px 10px;
-  margin-bottom: 5px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20preserveAspectRatio%3D'none'%20viewBox%3D'-1%20-1%20300%20100'%20width%3D'300'%20height%3D'100'%3E%3Cdefs%3E%3Cpath%20d%3D'M13.24%20100l268.5-5.03L300%209.35%200%200l13.24%20100z'%20id%3D'a'%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20fill%3D'%237490b3'%20fill-opacity%3D'1'%20stroke%3D'%237490b3'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

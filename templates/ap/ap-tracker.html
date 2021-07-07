@@ -1,13 +1,26 @@
-<div>
-    <h4>PARTY</h4>
-    <div class="flexrow">
-        <input type="number" class="ap-party">
-        <button class="ap-party-add">Add PARTY</button>
+<div class="fallout ap-tracker">
+    {{#if (eq isGM true)}}
+    <div class="ap-resource gm" data-type="gmAP">
+        <div class="flexcol">
+            <h4>OVERSEER AP</h4>
+        </div>
+        <div class="flexrow">
+            <a class="ap-btn ap-sub">-</a>
+            <input type="number" class="ap-input num-short-3" value={{gmAP}}>
+            <a class="ap-btn ap-add">+</a>
+        </div>
     </div>
-    <h4>GM</h4>
-    <div class="flexrow">
-        <input type="number" class="ap-gm">
-        <button class="ap-gm-add">Add GM</button>
+    {{/if}}
+
+    <div class="ap-resource party" data-type="partyAP">
+        <div class="flexcol">
+            <h4>PARTY AP</h4>
+        </div>
+        <div class="flexrow">
+            <a class="ap-btn ap-sub">-</a>
+            <input type="number" class="ap-input num-short-3" value="{{partyAP}}">
+            <a class="ap-btn ap-add">+</a>
+        </div>
     </div>
 
 </div>
