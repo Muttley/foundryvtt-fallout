@@ -176,5 +176,9 @@
 		"INVENTORY": "Inventory",
 		"stashed": "Stashed",
 		"favorite": "Favorite"
-	}
+	},
+	"FALLOUT.FOOD": "Food",
+	"FALLOUT.BEVERAGE": "Beverage",
+	"FALLOUT.CHEM": "Chem",
+	"FALLOUT.OTHER": "Other"
 }
