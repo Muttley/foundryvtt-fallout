@@ -134,19 +134,17 @@ Hooks.on('renderChatMessage', (message, html, data) => {
     addBtn.click((ev) => {
       let falloutRoll = message.data.flags.falloutroll;
       game.fallout.DialogD6.createDialog({ rollname: falloutRoll.rollname, diceNum: 1, falloutRoll: falloutRoll })
-      //console.warn(falloutRoll);
     });
   }
 
 });
 
 
+
 /* -------------------------------------------- */
 /*  Omit Specific Items on Specific Actors      */
 /* -------------------------------------------- */
 Hooks.on("preCreateItem", (_item) => {
-  //console.warn(_item?.parent?.type)
-  //console.warn(_item.type)
   if (_item.parent) {
     // PERKS AND SPECIAL ABILITIES
     if ((_item.parent.type != "npc" && _item.parent.type != "creature") && _item.type == "special_ability") {

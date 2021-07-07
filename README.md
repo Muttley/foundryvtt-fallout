@@ -47,6 +47,7 @@
 -   You can drag skills to the NPCs from the included skills compendium.
 -   Right click on the Skill name in order to choose a different Attribute to roll with. This will prop Delete skill on NPCs.(still looking for the right design solution for this)
 -   Characters can't equip robot armor so those are stashed under the GEAR tab. (and vice versa)
+-   You can stash items by clicking on the stash icon in the character’s items list.Stashed items do not count against total weight you carry.
 
 ## Disclaimer
 

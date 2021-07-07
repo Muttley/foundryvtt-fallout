@@ -173,6 +173,8 @@
 		"OTHER": "Other",
 		"CAPS": "Caps",
 		"SPECIAL_ABILITY": "Special Ability",
-		"INVENTORY": "Inventory"
+		"INVENTORY": "Inventory",
+		"stashed": "Stashed",
+		"favorite": "Favorite"
 	}
 }

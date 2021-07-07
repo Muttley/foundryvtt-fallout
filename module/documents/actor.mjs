@@ -292,8 +292,17 @@ export class FalloutActor extends Actor {
   async _preCreate(data, options, user) {
     await super._preCreate(data, options, user);
 
+    // Setup Tokens
+    if (this.type === 'character' || this.type === 'robot') {
+      this.data.token.update({ vision: true, actorLink: true, disposition: 1 });
+    }
+
+    if (this.type === 'creature') {
+      this.data.token.update({ disposition: -1 });
+    }
+
     // Add Skills to Characters and Robots
-    if (this.data.type !== 'npc') {
+    if (this.type === 'character' || this.type === 'robot') {
       let packSkills = await game.packs.get('fallout.skills').getDocuments();
       const items = this.items.map(i => i.toObject());
       packSkills.forEach(s => {
