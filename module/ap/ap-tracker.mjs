@@ -46,7 +46,8 @@ export class APTracker extends Application {
             const type = $(ev.currentTarget).parents('.ap-resource').attr('data-type');
             const change = $(ev.currentTarget).hasClass('ap-add') ? 1 : -1;
             let currentValue = game.settings.get('fallout', type);
-            if (parseInt(currentValue) < 10 || parseInt(currentValue) > 0) {
+            let maxAP = game.settings.get('fallout', 'maxAP');
+            if (parseInt(currentValue) < maxAP || parseInt(currentValue) > 0) {
                 let newValue = parseInt(currentValue) + change;
                 APTracker.setAP(type, newValue);
             }
@@ -64,8 +65,10 @@ export class APTracker extends Application {
             return;
         }
 
-        if (value > 10 && type === 'partyAP') {
-            await game.settings.set('fallout', type, 10);
+        let maxAP = game.settings.get('fallout', 'maxAP');
+
+        if (value > maxAP && type === 'partyAP') {
+            await game.settings.set('fallout', type, maxAP);
             APTracker.renderApTracker();
         } else if (value < 0) {
             await game.settings.set('fallout', type, 0);

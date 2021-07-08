@@ -309,6 +309,7 @@
 			"melee": false,
 			"weaponType": "",
 			"ammo": "",
+			"ammoPerShot": 1,
 			"attribute": "",
 			"skill": "",
 			"damage": {

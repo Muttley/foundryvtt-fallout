@@ -13,4 +13,11 @@ export function registerSettings() {
         default: 0,
         type: Number,
     });
+    game.settings.register('fallout', 'maxAP', {
+        name: 'Max AP',
+        scope: 'world',
+        config: true,
+        default: 6,
+        type: Number,
+    });
 }
