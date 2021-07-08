@@ -77,6 +77,14 @@ export class APTracker extends Application {
         }
 
         let maxAP = game.settings.get('fallout', 'maxAP');
+        let partyAP = game.settings.get('fallout', 'partyAP');
+        if (partyAP > value && type === 'maxAP') {
+            await game.settings.set('fallout', 'maxAP', value);
+            await game.settings.set('fallout', 'partyAP', value);
+            APTracker.renderApTracker();
+            game.socket.emit('system.fallout', { operation: 'updateAP' });
+            return;
+        }
 
         if (value > maxAP && type === 'partyAP') {
             await game.settings.set('fallout', type, maxAP);
