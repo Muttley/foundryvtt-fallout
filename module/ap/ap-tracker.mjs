@@ -5,6 +5,7 @@ export class APTracker extends Application {
         }
         super(options);
         APTracker._instance = this;
+        APTracker.closed = true;
         this.data = {};
     }
     // override
@@ -26,6 +27,7 @@ export class APTracker extends Application {
         this.data["isGM"] = game.user.isGM;
         this.data["partyAP"] = game.settings.get('fallout', 'partyAP');
         this.data["gmAP"] = game.settings.get('fallout', 'gmAP');
+        this.data["maxAP"] = game.settings.get('fallout', 'maxAP');
         return this.data;
     }
 
@@ -36,6 +38,11 @@ export class APTracker extends Application {
 
     activateListeners(html) {
         super.activateListeners(html);
+
+        if (APTracker.closed) {
+            html.find('.ap-resource.maxAP-box').css("display", "none");
+        }
+
         html.find('.ap-input').change(ev => {
             const type = $(ev.currentTarget).parents('.ap-resource').attr('data-type');
             const value = ev.target.value;
@@ -53,6 +60,10 @@ export class APTracker extends Application {
             }
 
         });
+
+        html.find('.toggle-maxAp').click(ev => {
+            html.find('.ap-resource.maxAP-box').slideToggle("fast", function () { APTracker.closed = !APTracker.closed });
+        })
     }
 
     static async setAP(type, value) {

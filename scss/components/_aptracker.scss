@@ -10,6 +10,7 @@
 	right: 320px !important;
 
 	.ap-resource {
+		position: relative;
 		padding: 10px 20px;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
@@ -19,6 +20,16 @@
 		}
 		&.party {
 			@include element-color(darken($fa-green, 10%), 3);
+		}
+		&.maxAP-box {
+			@include element-color(darken($f-purple, 10%), 3);
+		}
+
+		.toggle-maxAp {
+			position: absolute;
+			top: 8px;
+			right: 5px;
+			color: beige;
 		}
 
 		margin-bottom: 10px;

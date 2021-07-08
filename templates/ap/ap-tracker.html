@@ -12,7 +12,23 @@
     </div>
     {{/if}}
 
+    {{#if (eq isGM true)}}
+    <div class="ap-resource maxAP-box" data-type="maxAP">
+        <div class="flexcol">
+            <h4>MAX PARTY AP</h4>
+        </div>
+        <div class="flexrow align-mid">
+            <a class="ap-btn ap-sub">-</a>
+            <input type="number" class="ap-input num-short-3" value="{{maxAP}}">
+            <a class="ap-btn ap-add">+</a>
+        </div>
+    </div>
+    {{/if}}
+
     <div class="ap-resource party" data-type="partyAP">
+        {{#if (eq isGM true)}}
+        <a class='toggle-maxAp'><i class="fas fa-cog"></i></a>
+        {{/if}}
         <div class="flexcol">
             <h4>PARTY AP</h4>
         </div>
