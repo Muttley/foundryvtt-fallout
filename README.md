@@ -1,5 +1,7 @@
 # FALLOUT 2d20 by HappySteve
 
+This is a Fallout2D20 unoficial Sheet for Foundry VTT. No content from the books included.
+
 ## ACTOR TYPES
 
 -   CHARACTER
@@ -72,3 +74,9 @@ _In some situations GMs might allow that you could be in a power armor frame wit
 Weapon mods and Apparel mods can be added to the character sheet as items.
 To add them to your Weapons and Apparel you will need to write their names in your weapon/apparel item sheets.
 Since there is no native Foundry support for Items to contain other Items I am looking for some sort of work around, but for now you will need to be a good player and take care of those numbers and effects on your own. Pen and Paper style.
+
+## License
+
+Foundry VTT: Limited License Agreement for module development.
+
+All copyright assets used with explicit consent from Modiphius Entertainment. The fvtt-modiphius developer community holds no claim to underlying copyrighted assets.

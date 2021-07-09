@@ -360,6 +360,7 @@
 		},
 		"ammo": {
 			"templates": ["base", "physical"],
+			"effect": "",
 			"type": ""
 		},
 		"weapon_mod": {
