@@ -1,6 +1,6 @@
 # FALLOUT 2d20 by HappySteve
 
-This is a Fallout2D20 unoficial Sheet for Foundry VTT. No content from the books included.
+This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the books included.
 
 ## ACTOR TYPES
 
