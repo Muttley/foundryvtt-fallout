@@ -1,8 +1,8 @@
 {
 	"name": "fallout",
-	"title": "Fallout 2d20 By HappySteve",
-	"description": "The Fallout 2d20 System for FoundryVTT",
-	"version": "0.1",
+	"title": "Fallout 2d20",
+	"description": "The unoficial Fallout 2d20 System for FoundryVTT",
+	"version": "1.0",
 	"minimumCoreVersion": "0.8.6",
 	"compatibleCoreVersion": "0.8.8",
 	"author": "HappySteve",
