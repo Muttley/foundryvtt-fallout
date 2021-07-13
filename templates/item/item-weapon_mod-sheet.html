@@ -14,13 +14,14 @@
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div class="flexrow resource-row">
         <label class="resource-label">Weapon Type</label>
-        {{#select data.weaponType}}
+        <input type="text" name="data.weaponType" value="{{data.weaponType}}">
+        <!-- {{#select data.weaponType}}
         <select name="data.weaponType" id="">
           {{#each FALLOUT.WEAPONS.weaponType as |item key|}}
           <option value="{{key}}">{{localize item}}</option>
           {{/each}}
         </select>
-        {{/select}}
+        {{/select}} -->
       </div>
 
       <div class="flexrow resource-row">
