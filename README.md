@@ -1,4 +1,4 @@
-# FALLOUT 2d20 by HappySteve
+# FALLOUT 2d20
 
 This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the books included.
 
