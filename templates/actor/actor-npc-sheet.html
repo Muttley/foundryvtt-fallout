@@ -6,8 +6,8 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="skills">Abilities</a>
-    <a class="item" data-tab="data">Data</a>
+    <a class="item" data-tab="skills">{{localize "FALLOUT.TEMPLATES.Abilities"}}</a>
+    <a class="item" data-tab="data">{{localize "FALLOUT.TEMPLATES.Data"}}</a>
     <!-- <a class="item" data-tab="effects">Effects</a> -->
   </nav>
 
@@ -33,7 +33,7 @@
           {{!-- SKILLS --}}
           <div class="flexrow resource-row">
             <div class="box">
-              <div class="box-header text-center">SKILLS</div>
+              <div class="box-header text-center">{{localize "FALLOUT.TEMPLATES.SKILLS"}}</div>
               <div>
                 <ol class="items-list grid">
                   {{#each skills as |item id|}}
@@ -65,13 +65,13 @@
               </div>
             </div>
             <div class="box no-padding bgOdd">
-              <h4 class="box-header text-center">INITIATIVE</h4>
+              <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.INITIATIVE"}}</h4>
               <div class="text-center">
                 <input class="num-short-2" type="number" name="data.initiative.value" value="{{data.initiative.value}}">
               </div>
             </div>
             <div class="box no-padding bgEven">
-              <h4 class="box-header text-center">DEFENSE</h4>
+              <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.DEFENSE"}}</h4>
               <div class="text-center">
                 <input class="num-short-2" type="number" name="data.defense.value" value="{{data.defense.value}}">
               </div>
@@ -81,14 +81,14 @@
           {{!-- CARRY | MELEE BONUS --}}
           <div class="flexrow resource-row">
             <div class="box no-padding bgOdd">
-              <h4 class="box-header text-center">CARRY WEIGHT</h4>
+              <h4 class="box-header text-center">{{localize "FALLOUT.UI.CarryWeight"}}</h4>
               <div class="text-center">
-                <label><input class="num-short-3" type="number" name="data.carryWeight.base" value="{{data.carryWeight.base}}"> lbs.</label>
+                <label><input class="num-short-3" type="number" name="data.carryWeight.base" value="{{data.carryWeight.base}}"> {{localize "FALLOUT.TEMPLATES.lbs"}}</label>
 
               </div>
             </div>
             <div class="box no-padding bgEven">
-              <h4 class="box-header text-center">MELEE BONUS</h4>
+              <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.MELEE_BONUS"}}</h4>
               <div class="text-center">
                 <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
               </div>
@@ -97,7 +97,7 @@
 
           {{!-- RESISTANCES --}}
           <div class="box no-padding bgOdd">
-            <h4 class="box-header text-center">RESISTANCES</h4>
+            <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
             {{#each data.resistance as |res key|}}
             <div class="flexrow resource-row">
               <span class="align-mid" style="display: flex;">
@@ -109,14 +109,14 @@
           </div>
           {{!-- INJURIES --}}
           <div class="box no-padding bgEven">
-            <h4 class="box-header text-center">LOCATIONS & INJURIES</h4>
+            <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
             <textarea class="color-prim" name="data.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{data.injuries}}</textarea>
           </div>
         </div>
         {{!-- RIGHT COLUMN __________________________________________________ --}}
         <div class="right-column">
           <div class="box no-padding bgOdd">
-            <h4 class="box-header text-center">ATTACKS</h4>
+            <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.ATTACKS"}}</h4>
             <div>
               {{!-- Owned Weapons Tab --}}
               {{> "systems/fallout/templates/actor/parts/actor-weapons.html"}}

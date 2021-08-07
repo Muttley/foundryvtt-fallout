@@ -7,8 +7,8 @@
     <nav class="sheet-tabs tabs" data-group="primary">
         {{!-- Default tab is specified in actor-sheet.mjs --}}
 
-        <a class="item" data-tab="skills">Abilities</a>
-        <a class="item" data-tab="data">Data</a>
+        <a class="item" data-tab="skills">{{localize "FALLOUT.TEMPLATES.Abilities"}}</a>
+        <a class="item" data-tab="data">{{localize "FALLOUT.TEMPLATES.Data"}}</a>
         <!-- <a class="item" data-tab="effects">Effects</a> -->
     </nav>
 
@@ -22,32 +22,32 @@
                 <div class="left-column">
                     <div class="flexrow resource-row">
                         <div class="box no-padding bgOdd">
-                            <h3 class="box-header text-center">BODY</h3>
+                            <h3 class="box-header text-center">{{localize "FALLOUT.CREATURE.body"}}</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.body.value" value="{{data.body.value}}">
                             </div>
                         </div>
                         <div class="box no-padding bgEven" style="margin-right: 5px;">
-                            <h3 class="box-header text-center">MIND</h3>
+                            <h3 class="box-header text-center">{{localize "FALLOUT.CREATURE.mind"}}</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.mind.value" value="{{data.mind.value}}">
                             </div>
                         </div>
 
                         <div class="box no-padding bgOdd">
-                            <h3 class="box-header text-center">MELEE</h3>
+                            <h3 class="box-header text-center">{{localize "FALLOUT.CREATURE.melee"}}</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.melee.value" value="{{data.melee.value}}">
                             </div>
                         </div>
                         <div class="box no-padding bgEven">
-                            <h3 class="box-header text-center">GUNS</h3>
+                            <h3 class="box-header text-center">{{localize "FALLOUT.CREATURE.guns"}}</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.guns.value" value="{{data.guns.value}}">
                             </div>
                         </div>
                         <div class="box no-padding bgOdd">
-                            <h3 class="box-header text-center">OTHER</h3>
+                            <h3 class="box-header text-center">{{localize "FALLOUT.CREATURE.other"}}</h3>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.other.value" value="{{data.other.value}}">
                             </div>
@@ -63,20 +63,20 @@
                             </div>
                         </div>
                         <div class="box no-padding bgOdd">
-                            <h4 class="box-header text-center">INITIATIVE</h4>
+                            <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.INITIATIVE"}}</h4>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.initiative.value" value="{{data.initiative.value}}">
                             </div>
                         </div>
                         <div class="box no-padding bgEven">
-                            <h4 class="box-header text-center">DEFENSE</h4>
+                            <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.DEFENSE"}}</h4>
                             <div class="text-center">
                                 <input class="num-short-2" type="number" name="data.defense.value" value="{{data.defense.value}}">
                             </div>
                         </div>
                     </div>
                     <div class="box no-padding bgOdd">
-                        <h4 class="box-header text-center">RESISTANCES</h4>
+                        <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
                         {{#each data.resistance as |res key|}}
                         <div class="flexrow resource-row">
                             <span class="align-mid" style="display: flex;">
@@ -87,14 +87,14 @@
                         {{/each}}
                     </div>
                     <div class="box no-padding bgEven">
-                        <h4 class="box-header text-center">LOCATIONS & INJURIES</h4>
+                        <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
                         <textarea class="color-prim" name="data.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{data.injuries}}</textarea>
                     </div>
                 </div>
                 {{!-- RIGHT COLUMN __________________________________________________ --}}
                 <div>
                     <div class="box no-padding bgOdd">
-                        <h4 class="box-header text-center">ATTACKS</h4>
+                        <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.ATTACKS"}}</h4>
                         <div>
                             {{!-- Owned Weapons Tab --}}
                             {{> "systems/fallout/templates/actor/parts/actor-weapons.html"}}

@@ -1,15 +1,15 @@
 <div class="fallout-chat-message">
     <div class="content">
         <h2>{{rollname}}</h2>
-        <p class="damage-plaq">Damage: {{damage}} | Effects: {{effects}}</p>
+        <p class="damage-plaq">{{localize "FALLOUT.UI.Damage"}}: {{damage}} | {{localize "FALLOUT.TEMPLATES.Effects"}}: {{effects}}</p>
         <div class="dices-result" style="display: flex; flex-wrap: wrap;">
             {{#each results as |dice|}}
             <span class="dice-icon d6 face-{{dice.face}}{{#if reroll}} reroll{{/if}}{{#ifCond effect '==' 1}} effect{{/ifCond}}" data-index="{{@index}}">&nbsp;</span>
             {{/each}}
         </div>
        <div class="flexrow">
-        <button class="reroll-button">Re-roll <span class="fo-pip-boy fo-blue"></span></button>
-        <button class="add-button">Add <span class="fo-pip-boy fo-blue"></span></button>
+        <button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}} <span class="fo-pip-boy fo-blue"></span></button>
+        <button class="add-button">{{localize "FALLOUT.UI.Add"}} <span class="fo-pip-boy fo-blue"></span></button>
        </div>
     </div>  
 </div>

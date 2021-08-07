@@ -6,7 +6,7 @@
             <p>{{localize 'FALLOUT.UI.Type'}}</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create Weapon" data-type="weapon"><i class="fas fa-plus"></i>
+            <a class="item-control item-create" title="{{localize 'FALLOUT.TEMPLATES.Create_Weapon'}}" data-type="weapon"><i class="fas fa-plus"></i>
                 {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
@@ -52,12 +52,12 @@
 (eq actor.type "robot"))}}
 <ol class="items-list">
     <li class="item weapon flexrow items-header">
-        <div class="flexrow flexlarge item-name upperC">AMMO {{localize 'FALLOUT.UI.Name'}}</div>
+        <div class="flexrow flexlarge item-name upperC">{{localize "FALLOUT.TEMPLATES.AMMO"}} {{localize 'FALLOUT.UI.Name'}}</div>
         <div class="flexrow flexlarge item-info">
             <p>{{localize 'FALLOUT.UI.Quantity'}}</p>
         </div>
         <div class="item-controls">
-            <a class="item-control item-create" title="Create Ammo" data-type="ammo"><i class="fas fa-plus"></i>
+            <a class="item-control item-create" title="{{localize 'FALLOUT.TEMPLATES.Create_Ammo'}}" data-type="ammo"><i class="fas fa-plus"></i>
                 {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
@@ -79,8 +79,8 @@
                 <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
                     <i class="fas fa-briefcase"></i>
                 </a>
-                <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
-                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-edit" title="{{localize 'FALLOUT.TEMPLATES.Edit_Item'}}"><i class="fas fa-edit"></i></a>
+                <a class="item-control item-delete" title="{{localize 'FALLOUT.TEMPLATES.Delete_Item'}}"><i class="fas fa-trash"></i></a>
             </div>
         </div>
     </li>

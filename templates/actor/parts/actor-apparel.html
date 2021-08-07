@@ -6,14 +6,14 @@
         <div class="flexrow flexlarge item-info">
             {{#ifCond apparel.apparelType '==' 'powerArmor'}}
             <div class="text-center">
-                <p>Powered</p>
+                <p>{{localize "FALLOUT.powered"}}</p>
             </div>
             {{/ifCond}}
             <div class="text-center flex2">
-                <p>Locations</p>
+                <p>{{localize "FALLOUT.TEMPLATES.Locations"}}</p>
             </div>
             <div class="text-center flex2">
-                <p>Resistances</p>
+                <p>{{localize "FALLOUT.TEMPLATES.Resistances"}}</p>
             </div>
         </div>
         <div class="item-controls">
@@ -68,8 +68,8 @@
     <li class="item apparel flexrow items-header">
         <div class="flexrow flexlarge item-name upperC">{{localize (concat 'FALLOUT.APPAREL.' apparel.apparelType)}}</div>
         <div class="flexrow flexlarge item-info">
-            <p>Locations</p>
-            <p>Resistances</p>
+            <p>{{localize "FALLOUT.TEMPLATES.Locations"}}</p>
+            <p>{{localize "FALLOUT.TEMPLATES.Resistances"}}</p>
         </div>
         <div class="item-controls">
             <a class="item-control item-create" title="Create Robot Armor" data-type="robot_armor" data-appareltype="{{apparel.apparelType}}"><i class="fas fa-plus"></i> {{localize (concat 'FALLOUT.APPAREL.' apparel.apparelType)}}</a>
