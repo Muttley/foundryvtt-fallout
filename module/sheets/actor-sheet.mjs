@@ -268,49 +268,49 @@ export class FalloutActorSheet extends ActorSheet {
       menuSkills = [
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Strength',
+          name: 'FALLOUT.TEMPLATES.Use_Strength',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'str');
           },
         },
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Perception',
+          name: 'FALLOUT.TEMPLATES.Use_Perception',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'per');
           },
         },
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Endurance',
+          name: 'FALLOUT.TEMPLATES.Use_Endurance',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'end');
           },
         },
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Charisma',
+          name: 'FALLOUT.TEMPLATES.Use_Charisma',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'cha');
           },
         },
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Intelligence',
+          name: 'FALLOUT.TEMPLATES.Use_Intelligence',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'int');
           },
         },
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Agility',
+          name: 'FALLOUT.TEMPLATES.Use_Agility',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'agi');
           },
         },
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Use Luck',
+          name: 'FALLOUT.TEMPLATES.Use_Luck',
           callback: (t) => {
             this._onRightClickSkill(t.data("itemId"), 'luc');
           },
@@ -321,7 +321,7 @@ export class FalloutActorSheet extends ActorSheet {
       menuSkills = [
         {
           icon: '<i class="fas fa-dice"></i>',
-          name: 'Delete',
+          name: 'FALLOUT.TEMPLATES.Delete',
           callback: (t) => {
             this._onRightClickDelete(t.data("itemId"));
           },
