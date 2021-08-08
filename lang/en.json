@@ -306,7 +306,13 @@
 		"RANGE": "RANGE",
 		"FIRE_RATE": "FIRE RATE",
 		"WEAPON_QUALITIES": "WEAPON QUALITIES",
-		"DAMAGE_EFFECTS": "DAMAGE EFFECTS"
+		"DAMAGE_EFFECTS": "DAMAGE EFFECTS",
+		"conditions": {
+			"hunger":"hunger",
+			"thirst":"thirst",
+			"sleep":"sleep",
+			"fatigue":"fatigue"
+		}
 	},
 	"FALLOUT.FOOD": "Food",
 	"FALLOUT.BEVERAGE": "Beverage",
