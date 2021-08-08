@@ -5,19 +5,19 @@
         {{#if data.weight includeZero=true}}
         <div class="grid grid-4col">
             <div class="resource">
-                <label class="resource-label">Quantity</label>
+                <label class="resource-label">{{localize "FALLOUT.UI.Quantity"}}</label>
                 <input class="num-short-2" type="number" name="data.quantity" value="{{data.quantity}}" data-dtype="Number" />
             </div>
             <div class="resource">
-                <label class="resource-label">Weight</label>
+                <label class="resource-label">{{localize "FALLOUT.UI.Weight"}}</label>
                 <input class="num-short-2" type="text" name="data.weight" value="{{data.weight}}" data-dtype="String" />
             </div>
             <div class="resource">
-                <label class="resource-label">Cost</label>
+                <label class="resource-label">{{localize "FALLOUT.UI.Cost"}}</label>
                 <input class="num-short-3" type="text" name="data.cost" value="{{data.cost}}" data-dtype="String" />
             </div>
             <div class="resource">
-                <label class="resource-label">Rarity</label>
+                <label class="resource-label">{{localize "FALLOUT.UI.Rarity"}}</label>
                 <input class="num-short-2" type="number" name="data.rarity" value="{{data.rarity}}" data-dtype="Number" />
             </div>
         </div>

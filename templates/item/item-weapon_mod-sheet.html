@@ -3,8 +3,8 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="attributes">Attributes</a>
-    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+    <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -13,7 +13,7 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div class="flexrow resource-row">
-        <label class="resource-label">Weapon Type</label>
+        <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}</label>
         {{#select data.weaponType}}
         <select name="data.weaponType" id="">
           {{#each FALLOUT.WEAPONS.weaponType as |item key|}}
@@ -24,22 +24,22 @@
       </div>
 
       <div class="flexrow resource-row">
-        <label class="resource-label">Mod Type</label>
+        <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Mod_Type"}}</label>
         <input type="text" name="data.modType" placeholder="Receiver Mod, Grip Mod, .etc" value="{{data.modType}}">
       </div>
 
       <div class="flexrow resource-row">
-        <label class="resource-label">Name Prefix</label>
+        <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Name_Prefix"}}</label>
         <input type="text" name="data.namePrefix" value="{{data.namePrefix}}">
       </div>
 
       <div class="flexrow resource-row">
-        <label class="resource-label">Perks</label>
+        <label class="resource-label">{{localize "FALLOUT.UI.Perks"}}</label>
         <input type="text" name="data.perks" value="{{data.perks}}">
       </div>
 
       <div class="resource-row">
-        <h3 class="resource-label">Effect</h3>
+        <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effect"}}</h3>
         <div class="description-field">
           {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
         </div>

@@ -3,8 +3,8 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="attributes">Attributes</a>
-        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+        <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -13,7 +13,7 @@
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="flexrow resource-row">
-                <label class="resource-label">Apparel Type</label>
+                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}</label>
                 {{#select data.apparelType}}
                 <select name="data.apparelType" id="">
                     {{#each FALLOUT.APPAREL_TYPE as |item key|}}
@@ -25,7 +25,7 @@
             </div>
 
             <div class="flexrow resource-row">
-                <label class="resource-label">Resistances: </label>
+                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </label>
                 {{#each data.resistance as |item key|}}
                 <div class="flex align-mid">
                     <label><span class="fo-{{key}}"></span> {{key}} &nbsp;</label>
@@ -35,22 +35,22 @@
             </div>
 
             <div class="flexrow resource-row">
-                <label class="resource-label">Location</label>
+                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Locations"}}</label>
                 <input type="text" name="data.location" placeholder="For Armor Upgrades. Leg, Arm, .etc" value="{{data.location}}">
             </div>
 
             <div class="flexrow resource-row">
-                <label class="resource-label">Health</label>
+                <label class="resource-label">{{localize "FALLOUT.HEALTH.health"}}</label>
                 <input type="number" class="" name="data.health.value" value="{{data.health.value}}">
             </div>
 
             <div class="flexrow resource-row">
-                <label class="resource-label">Perks</label>
+                <label class="resource-label">{{localize "FALLOUT.UI.Perks"}}</label>
                 <input type="text" name="data.perks" value="{{data.perks}}">
             </div>
 
             <div class="resource-row">
-                <h3 class="resource-label">Effect</h3>
+                <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effects"}}</h3>
                 <div class="description-field">
                     {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
                 </div>

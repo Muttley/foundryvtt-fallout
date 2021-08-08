@@ -3,8 +3,8 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="attributes">Attributes</a>
-    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+    <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -19,15 +19,15 @@
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
       <div class="flexrow">
-        <label>Skill Value</label>
+        <label>{{localize "FALLOUT.TEMPLATES.Skill_Value"}}</label>
         <input type="number" name="data.value" value="{{data.value}}">
       </div>
       <div class="flexrow">
-        <label>Skill Tag</label>
+        <label>{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}</label>
         <input type="checkbox" name="data.tag" {{#ifCond data.tag '==' true}}checked{{/ifCond}}>
       </div>
       <div class="flexrow">
-        <label>Default Attribute</label>
+        <label>{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}</label>
         <select name="data.defaultAttribute">
           {{#select data.defaultAttribute}}
           <option value="str">{{localize "FALLOUT.AbilityStr"}}</option>
