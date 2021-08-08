@@ -122,7 +122,7 @@
             {{#each data.damage.weaponQuality as |item key|}}
             <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
               <label>
-                <input type="checkbox" name="data.damage.weaponQuality.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{item.label}}
+                <input type="checkbox" name="data.damage.weaponQuality.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}
               </label>
             </div>
             {{/each}}
@@ -134,7 +134,7 @@
             {{#each data.damage.damageEffect as |item key|}}
             <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
               <label>
-                <input type="checkbox" name="data.damage.damageEffect.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{item.label}}
+                <input type="checkbox" name="data.damage.damageEffect.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
               </label>
               {{#ifCond key '==' 'piercing'}}
               <input type="number" name="data.damage.damageEffect.{{key}}.rank" class="num-short-2" value="{{item.rank}}">
