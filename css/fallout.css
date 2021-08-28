@@ -1362,6 +1362,15 @@
   background-size: 12px 12px;
 }
 
+.fallout a.entity-link {
+  background: #eee787;
+  color: #325885;
+}
+
+.fallout a.entity-link i {
+  color: #325885;
+}
+
 .fallout .items-header {
   height: 28px;
   margin: 2px 0;

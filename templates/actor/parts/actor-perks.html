@@ -7,6 +7,29 @@
     </div>
   </li>
   {{#each perks as |item id|}}
-  {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
+  <li class="item" data-item-id="{{item._id}}">
+    <div class=" flexrow">
+      <div class="item-name expandable-info">
+        <h4><a class="resource-label">{{item.name}}</a></h4>
+      </div>
+      <div class="text-center">
+        <label>{{item.data.rank.value}}</label>
+      </div>
+      <div class="item-controls">
+        {{#ifCond item.data.stashed '!=' null}}
+        <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
+          <i class="fas fa-briefcase"></i>
+        </a>
+        {{/ifCond}}
+        {{#if item.data.equippable}}
+        <a class="item-control item-toggle {{#unless item.data.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
+          <i class="fas fa-tshirt"></i>
+        </a>
+        {{/if}}
+        <a class="item-control item-edit" title="{{localize 'FALLOUT.TEMPLATES.Edit_Item'}}"><i class="fas fa-edit"></i></a>
+        <a class="item-control item-delete" title="{{localize 'FALLOUT.TEMPLATES.Delete_Item'}}"><i class="fas fa-trash"></i></a>
+      </div>
+    </div>
+  </li>
   {{/each}}
 </ol>
