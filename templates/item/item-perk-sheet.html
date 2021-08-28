@@ -4,8 +4,8 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="attributes">Attributes</a>
-    <a class="item" data-tab="effects">Effects</a>
+    <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+    <a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
   </nav>
 
   <section class="sheet-body">
@@ -18,7 +18,7 @@
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       <div class="flexrow resource-row align-mid">
-        <label class="resource-label">Ranks [current/maximum]</label>
+        <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Ranks_current_maximum"}}</label>
         <span class="flexrow align-mid">
           <!-- <label class="text-center">current:</label> -->
           <input class="text-center num-short-3" type="number" name="data.rank.value" value="{{data.rank.value}}">
@@ -28,11 +28,11 @@
         </span>
       </div>
       <div class="flexrow resource-row align-mid">
-        <label class="resource-label">Requirements</label>
+        <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Requirements"}}</label>
         <input type="text" name="data.requirements" value="{{data.requirements}}">
       </div>
       <div class="resource-row resource-label align-mid">
-        <label>Description</label>
+        <label>{{localize "FALLOUT.TEMPLATES.Description"}}</label>
       </div>
       <div class="description-field">
         {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}

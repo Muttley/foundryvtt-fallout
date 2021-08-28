@@ -3,10 +3,10 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="attributes">Attributes</a>
-        <a class="item" data-tab="mods">Mods</a>
-        <a class="item" data-tab="description">Description</a>
-        <a class="item" data-tab="effects">Effects</a>
+        <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+        <a class="item" data-tab="mods">{{localize "FALLOUT.MODS.mods"}}</a>
+        <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
+        <a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -22,12 +22,12 @@
                 <label class="resource-label">{{localize "FALLOUT.MODS.mods"}}</label>
                 <div class="flexrow align-mid">
                     <span>
-                        <label for="data.mods.current">current</label>
+                        <label for="data.mods.current">{{localize "FALLOUT.TEMPLATES.current"}}</label>
                         <input type="number" name="data.mods.current" class="num-short-2" value="{{data.mods.current}}">
                     </span>
                     <span class="text-center">/</span>
                     <span>
-                        <label for="data.mods.max">max</label>
+                        <label for="data.mods.max">{{localize "FALLOUT.TEMPLATES.max"}}</label>
                         <input type="number" name="data.mods.max" class="num-short-2" value="{{data.mods.max}}">
                     </span>
                 </div>
@@ -40,7 +40,7 @@
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="resource-row align-mid">
-                <label class="resource-label">Armor Type &nbsp;</label>
+                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Armor_Type"}} &nbsp;</label>
                 <select name="data.appareltype">
                     {{#select data.appareltype}}
                     {{#each FALLOUT.ROBOT_APPAREL_TYPE as |apparelType key |}}
@@ -52,7 +52,7 @@
             <hr />
             <div class="grid grid-3col">
                 <div class="locations pad-5">
-                    <h4 class="resource-header">Locations</h4>
+                    <h4 class="resource-header">{{localize "FALLOUT.TEMPLATES.Locations"}}</h4>
                     {{#each data.location as |isChecked key|}}
                     <div class="location flexrow align-mid">
                         <label class="checkbox-label">{{localize (concat 'FALLOUT.BODYLOCATION.robot.' key)}}</label>
@@ -61,7 +61,7 @@
                     {{/each}}
                 </div>
                 <div class="resistances pad-5">
-                    <h4 class="resource-header">Resistances</h4>
+                    <h4 class="resource-header">{{localize "FALLOUT.TEMPLATES.Resistances"}}</h4>
                     {{#each data.resistance as |resistance key|}}
                     <div class="flexrow resource-row align-mid">
                         <label for="data.resistance.{{key}}" class="capitalized">{{localize (concat 'FALLOUT.RESISTANCE.'key)}}</label>
@@ -70,18 +70,18 @@
                     {{/each}}
                 </div>
                 <div class="equiped pad-5">
-                    <h4 class="resource-header">GENERAL</h4>
+                    <h4 class="resource-header">{{localize "FALLOUT.TEMPLATES.GENERAL"}}</h4>
                     <div class="flexrow resource-row align-mid">
                         <label class="capitalized checkbox-label">{{localize "FALLOUT.equipped"}}</label>
                         <input class="input-checkbox" type="checkbox" name="data.equipped" {{checked data.equipped}} data-dtype="Boolean" />
                     </div>
 
-                    <h4 class="resource-header">Carry Weight</h4>
+                    <h4 class="resource-header">{{localize "FALLOUT.UI.CarryWeight"}}</h4>
                     <div class="flexrow resource-row align-mid">
                         <label class="capitalized checkbox-label">{{localize "FALLOUT.UI.CarryWeight"}}</label>
                         <input type="number" class="num-short-3" name="data.carry" value="{{data.carry}}">
                     </div>
-                    <h4 class="resource-header">Perks</h4>
+                    <h4 class="resource-header">{{localize "FALLOUT.UI.Perks"}}</h4>
                     <div class="resource-row align-mid">
                         <label class="capitalized checkbox-label">{{localize "FALLOUT.UI.Perks"}}</label>
                         <input type="text" name="data.perks" value="{{data.perks}}">

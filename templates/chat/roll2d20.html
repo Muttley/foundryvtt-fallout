@@ -1,15 +1,15 @@
 <div class="fallout-chat-message">
     <div class="content">
         <h2>{{rollname}}</h2>
-        <p class="success-plaq">Successes: {{successes}} <span class="TN">&nbsp;&nbsp;&nbsp;(TN {{successTreshold}})</span></p>
+        <p class="success-plaq">{{localize "FALLOUT.TEMPLATES.Successes"}}: {{successes}} <span class="TN">&nbsp;&nbsp;&nbsp;({{localize "FALLOUT.TEMPLATES.TN"}} {{successTreshold}})</span></p>
         {{#ifCond complications '>' 0}}
-        <p class="complication-plaq">Complications: {{complications}}</p>
+        <p class="complication-plaq">{{localize "FALLOUT.TEMPLATES.Complications"}}: {{complications}}</p>
         {{/ifCond}}
         <div class="dices-result">
             {{#each results as |dice|}}
             <span class="dice-icon d20{{#if reroll}} reroll{{/if}}{{#ifCond complication '==' 1}} complication{{/ifCond}}{{#ifCond success '==' 1}} success{{/ifCond}}{{#ifCond success '==' 2}} crit{{/ifCond}}" data-index="{{@index}}">{{dice.result}}</span>
             {{/each}}
         </div>
-        <button class="reroll-button">Re-roll</button>
+        <button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}}</button>
     </div>
 </div>

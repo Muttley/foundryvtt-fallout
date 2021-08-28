@@ -101,32 +101,32 @@ FALLOUT.WEAPONS = {
     "extreme": "FALLOUT.RANGE.extreme"
   },
   "damageEffect": {
-    "burst": { "label": "Burst", "value": false, "description": "" },
-    "breaking": { "label": "Breaking", "value": false, "description": "" },
-    "persistent": { "label": "Persistent", "value": false, "description": "" },
-    "piercing": { "label": "Piercing", "value": false, "rank": 1, "description": "" },
-    "radioactive": { "label": "Radioactive", "value": false, "description": "" },
-    "spread": { "label": "Spread", "value": false, "description": "" },
-    "stun": { "label": "Stun", "value": false, "description": "" },
-    "vicious": { "label": "Vicious", "value": false, "description": "" }
+    "burst": { "label": "FALLOUT.WEAPONS.damageEffect.burst", "value": false, "description": "" },
+    "breaking": { "label": "FALLOUT.WEAPONS.damageEffect.breaking", "value": false, "description": "" },
+    "persistent": { "label": "FALLOUT.WEAPONS.damageEffect.persistent", "value": false, "description": "" },
+    "piercing": { "label": "FALLOUT.WEAPONS.damageEffect.piercing", "value": false, "rank": 1, "description": "" },
+    "radioactive": { "label": "FALLOUT.WEAPONS.damageEffect.radioactive", "value": false, "description": "" },
+    "spread": { "label": "FALLOUT.WEAPONS.damageEffect.spread", "value": false, "description": "" },
+    "stun": { "label": "FALLOUT.WEAPONS.damageEffect.stun", "value": false, "description": "" },
+    "vicious": { "label": "FALLOUT.WEAPONS.damageEffect.vicious", "value": false, "description": "" }
   },
   "weaponQuality": {
-    "accurate": { "label": "Accurate", "value": false, "description": "" },
-    "blast": { "label": "Blast", "value": false, "description": "" },
-    "closeQuarters": { "label": "Close Quarters", "value": false, "description": "" },
-    "concealed": { "label": "Concealed", "value": false, "description": "" },
-    "debilitating": { "label": "Debilitating", "value": false, "description": "" },
-    "gatling": { "label": "Gatling", "value": false, "description": "" },
-    "inaccurate": { "label": "Inaccurate", "value": false, "description": "" },
-    "mine": { "label": "Mine", "value": false, "description": "" },
-    "nightVision": { "label": "Night Vision", "value": false, "description": "" },
-    "parry": { "label": "Parry", "value": false, "description": "" },
-    "recon": { "label": "Recon", "value": false, "description": "" },
-    "reliable": { "label": "Reliable", "value": false, "description": "" },
-    "suppressed": { "label": "Suppressed", "value": false, "description": "" },
-    "thrown": { "label": "Thrown", "value": false, "description": "" },
-    "twoHanded": { "label": "Two-Handed", "value": false, "description": "" },
-    "unreliable": { "label": "Unreliable", "value": false, "description": "" }
+    "accurate": { "label": "FALLOUT.WEAPONS.weaponQuality.accurate", "value": false, "description": "" },
+    "blast": { "label": "FALLOUT.WEAPONS.weaponQuality.blast", "value": false, "description": "" },
+    "closeQuarters": { "label": "FALLOUT.WEAPONS.weaponQuality.closeQuarters", "value": false, "description": "" },
+    "concealed": { "label": "FALLOUT.WEAPONS.weaponQuality.concealed", "value": false, "description": "" },
+    "debilitating": { "label": "FALLOUT.WEAPONS.weaponQuality.debilitating", "value": false, "description": "" },
+    "gatling": { "label": "FALLOUT.WEAPONS.weaponQuality.gatling", "value": false, "description": "" },
+    "inaccurate": { "label": "FALLOUT.WEAPONS.weaponQuality.inaccurate", "value": false, "description": "" },
+    "mine": { "label": "FALLOUT.WEAPONS.weaponQuality.mine", "value": false, "description": "" },
+    "nightVision": { "label": "FALLOUT.WEAPONS.weaponQuality.nightVision", "value": false, "description": "" },
+    "parry": { "label": "FALLOUT.WEAPONS.weaponQuality.parry", "value": false, "description": "" },
+    "recon": { "label": "FALLOUT.WEAPONS.weaponQuality.recon", "value": false, "description": "" },
+    "reliable": { "label": "FALLOUT.WEAPONS.weaponQuality.reliable", "value": false, "description": "" },
+    "suppressed": { "label": "FALLOUT.WEAPONS.weaponQuality.suppressed", "value": false, "description": "" },
+    "thrown": { "label": "FALLOUT.WEAPONS.weaponQuality.thrown", "value": false, "description": "" },
+    "twoHanded": { "label": "FALLOUT.WEAPONS.weaponQuality.twoHanded", "value": false, "description": "" },
+    "unreliable": { "label": "FALLOUT.WEAPONS.weaponQuality.unreliable", "value": false, "description": "" }
   }
 
 }
