@@ -2,7 +2,7 @@ V 1.2
 
 -   Merged Rosataker translation improvements.
 -   Bug Fix: show the Perk Rank on the character sheet list.
--   Improvement: Damage Chat Message now displays weapon damage types and weapon damage effects.
+-   Improvement: DC Roll Chat Message now displays weapon damage types and weapon damage effects.
 
 V 1.1
 
