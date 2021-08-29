@@ -5,7 +5,7 @@
             <p class="flexlarge" style="margin: 0;">{{localize "FALLOUT.UI.Damage"}}: {{damage}} | {{localize "FALLOUT.TEMPLATES.Effects"}}: {{effects}}</p>
             <div style="text-align: end;">
                 {{#each weaponDamageTypesList as |damageType|}}
-                <i class="fo-{{damageType}}" title="{{damageType}}"></i>
+                <i class="fo-{{damageType}}" title="{{localize (concat 'FALLOUT.RESISTANCE.' damageType)}}"></i>
                 {{/each}}
             </div>
         </div>

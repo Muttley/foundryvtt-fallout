@@ -224,7 +224,8 @@ export class Roller2D20 {
             for (let de in weapon.data.damage.damageEffect) {
                 if (weapon.data.damage.damageEffect[de].value) {
                     let rank = weapon.data.damage.damageEffect[de].rank ?? "";
-                    let efectLabel = `${de}${rank}`;
+                    let damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
+                    let efectLabel = `${damageEffectLabel}${rank}`;
                     weaponDamageEffectsList.push(efectLabel);
                 }
             }
@@ -235,7 +236,6 @@ export class Roller2D20 {
             damage: damage,
             effects: effects,
             results: dicesRolled,
-            weapon: weapon,
             weaponDamageTypesList: weaponDamageTypesList,
             weaponDamageEffects: weaponDamageEffects
         }
