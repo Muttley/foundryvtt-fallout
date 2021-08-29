@@ -8,7 +8,6 @@ export class Roller2D20 {
     static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20 } = {}) {
         let dicesRolled = [];
         let successTreshold = parseInt(attribute) + parseInt(skill);
-        //console.log(`A:${attribute} + S:${skill} = ${successTreshold}`);
         let critTreshold = tag ? parseInt(skill) : 1;
         let complicationTreshold = parseInt(complication);
         let formula = `${dicenum}d20`;
@@ -130,17 +129,18 @@ export class Roller2D20 {
         return r;
     }
 
-    static async rollD6({ rollname = "Roll D6", dicenum = 2 } = {}) {
+    static async rollD6({ rollname = "Roll D6", dicenum = 2, weapon = null } = {}) {
         let formula = `${dicenum}d6`;
         let roll = new Roll(formula);
         await roll.evaluate({ async: true });
         await Roller2D20.parseD6Roll({
             rollname: rollname,
-            roll: roll
+            roll: roll,
+            weapon: weapon
         });
     }
 
-    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], addDice = [] } = {}) {
+    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], addDice = [], weapon = null } = {}) {
         let diceResults = [
             { result: 1, effect: 0 },
             { result: 2, effect: 0 },
@@ -166,7 +166,7 @@ export class Roller2D20 {
             });
         });
 
-        if(addDice.length){
+        if (addDice.length) {
             dicesRolled = addDice.concat(dicesRolled);
         }
 
@@ -174,11 +174,12 @@ export class Roller2D20 {
             rollname: rollname,
             roll: roll,
             dicesRolled: dicesRolled,
-            rerollIndexes: rerollIndexes
+            rerollIndexes: rerollIndexes,
+            weapon: weapon
         });
     }
 
-    static async rerollD6({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [] } = {}) {
+    static async rerollD6({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], weapon = null } = {}) {
         if (!rerollIndexes.length) {
             ui.notifications.notify('Select Dice you want to Reroll');
             return;
@@ -191,34 +192,52 @@ export class Roller2D20 {
             rollname: `${rollname} [re-roll]`,
             roll: _roll,
             dicesRolled: dicesRolled,
-            rerollIndexes: rerollIndexes
+            rerollIndexes: rerollIndexes,
+            weapon: weapon
         });
     }
 
-    static async addD6({rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = []}={}){
+    static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null } = {}) {
         let formula = `${dicenum}d6`;
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
         let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
-        //console.warn(falloutRoll);
-        //console.warn(newRollName);
         let oldDiceRolled = falloutRoll.dicesRolled;
         await Roller2D20.parseD6Roll({
             rollname: newRollName,
             roll: _roll,
             dicesRolled: dicesRolled,
-            addDice : oldDiceRolled
+            addDice: oldDiceRolled,
+            weapon: weapon
         });
     }
 
-    static async sendD6ToChat({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [] } = {}) {
+    static async sendD6ToChat({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], weapon = null } = {}) {
         let damage = dicesRolled.reduce((a, b) => ({ result: a.result + b.result })).result;
         let effects = dicesRolled.reduce((a, b) => ({ effect: a.effect + b.effect })).effect;
+        let weaponDamageTypesList = [];
+        let weaponDamageEffectsList = [];
+        if (weapon != null) {
+            weaponDamageTypesList = Object.keys(weapon.data.damage.damageType).filter((dt) => {
+                if (weapon.data.damage.damageType[dt]) return dt;
+            });
+            for (let de in weapon.data.damage.damageEffect) {
+                if (weapon.data.damage.damageEffect[de].value) {
+                    let rank = weapon.data.damage.damageEffect[de].rank ?? "";
+                    let efectLabel = `${de}${rank}`;
+                    weaponDamageEffectsList.push(efectLabel);
+                }
+            }
+        }
+        let weaponDamageEffects = weaponDamageEffectsList.join(', ');
         let rollData = {
             rollname: rollname,
             damage: damage,
             effects: effects,
-            results: dicesRolled
+            results: dicesRolled,
+            weapon: weapon,
+            weaponDamageTypesList: weaponDamageTypesList,
+            weaponDamageEffects: weaponDamageEffects
         }
         const html = await renderTemplate("systems/fallout/templates/chat/rollD6.html", rollData);
         let falloutRoll = {}
@@ -232,7 +251,7 @@ export class Roller2D20 {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
             content: html,
-            flags: { falloutroll: falloutRoll },
+            flags: { falloutroll: falloutRoll, weapon: weapon },
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
             roll: roll,
         };

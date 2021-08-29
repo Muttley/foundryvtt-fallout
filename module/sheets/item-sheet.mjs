@@ -108,7 +108,6 @@ export class FalloutItemSheet extends ItemSheet {
       let box = tagEl.parent('.item-list');
       $(box.children()).each((q, i) => {
         let qu = flags[$(i).data('tagKey')];
-        console.warn(qu);
         if (qu['rank'] != null)
           qu['rank'] = newRank;
       });
