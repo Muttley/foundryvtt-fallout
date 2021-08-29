@@ -400,7 +400,6 @@ export class FalloutActorSheet extends ActorSheet {
       let _dataStatus = `data.body_parts.${bodypart}.status`;
       _update[_dataInjuries] = newInjuries;
       _update[_dataStatus] = newStatus;
-      console.log(_update);
       await this.actor.update(_update);
     });
     html.find('.injury-mark').contextmenu(async (ev) => {
@@ -470,14 +469,12 @@ export class FalloutActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("item-id"));
       let numOfDice = parseInt(item.data.data.damage.rating);
-      console.warn(item.data.data.weaponType);
       if (item.data.data.weaponType == 'meleeWeapons' || item.data.data.weaponType == 'unarmed') {
         let dmgBonus = this.actor.data.data?.meleeDamage?.base ?? 0
         numOfDice += dmgBonus;
       }
       let rollName = item.data.name;
-      console.warn(rollName, numOfDice);
-      game.fallout.DialogD6.createDialog({ rollName: rollName, diceNum: numOfDice });
+      game.fallout.DialogD6.createDialog({ rollName: rollName, diceNum: numOfDice, weapon: item.data.toObject() });
     });
 
     // Drag events for macros.

@@ -110,7 +110,8 @@ Hooks.on('renderChatMessage', (message, html, data) => {
           Roller2D20.rerollD6({
             rollname: falloutRoll.rollname,
             rerollIndexes: rerollIndex,
-            dicesRolled: falloutRoll.dicesRolled
+            dicesRolled: falloutRoll.dicesRolled,
+            weapon: message.data.flags.weapon
           });
         } else {
           ui.notifications.notify('No dice face reckognized');
@@ -133,7 +134,8 @@ Hooks.on('renderChatMessage', (message, html, data) => {
     addBtn[0].setAttribute('data-messageId', message.id);
     addBtn.click((ev) => {
       let falloutRoll = message.data.flags.falloutroll;
-      game.fallout.DialogD6.createDialog({ rollname: falloutRoll.rollname, diceNum: 1, falloutRoll: falloutRoll })
+      let weapon = message.data.flags.weapon;
+      game.fallout.DialogD6.createDialog({ rollname: falloutRoll.rollname, diceNum: 1, falloutRoll: falloutRoll, weapon: weapon })
     });
   }
 

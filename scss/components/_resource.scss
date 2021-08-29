@@ -244,3 +244,13 @@ input.chk-btn:checked + label {
 	background-repeat: no-repeat;
 	background-size: 12px 12px;
 }
+
+a {
+	&.entity-link {
+		background: $f-yellow-light;
+		color: $f-vault-blue;
+		i {
+			color: $f-vault-blue;
+		}
+	}
+}

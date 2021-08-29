@@ -10,9 +10,7 @@
     </div>
 
     <div class="values flexrow">
-        {{log bodypart}}
         {{#each bodypart.resistance as |resistancevalue keyRes|}}
-
         <div class="defense-type">
             <i class="fo-{{keyRes}} resistance-icon" title="{{keyRes}}"></i>
             <p class="label-value text-center" />{{resistancevalue}}</p>
