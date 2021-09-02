@@ -1,3 +1,7 @@
+V 1.21
+
+-   Bug Fix: Show robot mod on the character sheet under "unsorted items".
+
 V 1.2
 
 -   Merged Rosataker translation improvements.

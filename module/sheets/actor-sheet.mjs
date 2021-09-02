@@ -208,7 +208,7 @@ export class FalloutActorSheet extends ActorSheet {
       });
     }
     if (this.actor.type == 'character') {
-      context.inventory = [...robotApparel];
+      context.inventory = [...robotApparel, ...robot_mods];
     }
     if (this.actor.type == 'robot') {
       context.inventory = [...apparel];
