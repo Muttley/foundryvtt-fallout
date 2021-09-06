@@ -63,6 +63,42 @@ Hooks.once('init', async function () {
 
   CONFIG.Dice.terms["c"] = DieFalloutDamage;
 
+  Die.MODIFIERS["ef"] = function minResult(modifier) {
+    this.results = this.results.flatMap(result => {
+        if (result.result < 5) {
+            result.active = false;
+            result.discarded = true;
+        } 
+        DiceTerm._applyCount(this.results, '>', 4, {flagSuccess: true});
+        return [result];
+    });
+  }
+  Die.MODIFIERS["sum"] = function minResult(modifier) {
+    this.results = this.results.flatMap(result => {
+        if (result.result == 1 || result.result == 5 || result.result == 6) {
+            result.active = true;
+            result.discarded = false;
+            result.success = true;
+            result.count = 1;
+        }
+        else if (result.result == 2) {
+          result.active = true;
+          result.discarded = false;
+          result.success = true;
+          result.count = 2;
+        }
+        else{
+            result.active = true;
+            result.discarded = true;
+            result.success = false;
+            result.count = 0;
+        }
+
+        //DiceTerm._applyCount(this.results, '>', 4, {flagSuccess: true});
+        return [result];
+    });
+  }
+
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("fallout", FalloutActorSheet, { makeDefault: true });
