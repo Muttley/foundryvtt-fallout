@@ -1,3 +1,8 @@
+V 1.3
+
+-   Added dice term for Combat Die. "/r 1dc"
+
+
 V 1.21
 
 -   Bug Fix: Show robot mod on the character sheet under "unsorted items".

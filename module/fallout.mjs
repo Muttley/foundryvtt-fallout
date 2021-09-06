@@ -15,6 +15,8 @@ import { DialogD6 } from './roller/dialogD6.js'
 //AP traker
 import { registerSettings } from './settings.js';
 import { APTracker } from './ap/ap-tracker.mjs'
+//Dice
+import {DieFalloutDamage} from './roller/damageDie.js'
 
 
 
@@ -58,6 +60,8 @@ Hooks.once('init', async function () {
 
   // Register custom system settings
   registerSettings();
+
+  CONFIG.Dice.terms["c"] = DieFalloutDamage;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
@@ -223,18 +227,7 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
     { id: "fallout", name: "Fallout 2d20" },
     true
   );
-  dice3d.addDicePreset({
-    type: "d6",
-    labels: [
-      "systems/fallout/assets/dice/d1.webp",
-      "systems/fallout/assets/dice/d2.webp",
-      "systems/fallout/assets/dice/d3.webp",
-      "systems/fallout/assets/dice/d4.webp",
-      "systems/fallout/assets/dice/d5.webp",
-      "systems/fallout/assets/dice/d6.webp",
-    ],
-    system: "fallout",
-  });
+  
   dice3d.addColorset(
     {
       name: "fallout",
@@ -244,9 +237,24 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
       background: "#008cd1",
       outline: "gray",
       texture: "none",
-    },
-    "force"
+    }
   );
+
+  dice3d.addDicePreset({
+    type:"dc",
+    labels:[
+      "systems/fallout/assets/dice/d1.webp",
+      "systems/fallout/assets/dice/d2.webp",
+      "systems/fallout/assets/dice/d3.webp",
+      "systems/fallout/assets/dice/d4.webp",
+      "systems/fallout/assets/dice/d5.webp",
+      "systems/fallout/assets/dice/d6.webp",
+    ],
+    system:"fallout",
+    colorset:"fallout"
+  });
+
+
 });
 
 
