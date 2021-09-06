@@ -79,7 +79,7 @@ Hooks.once('init', async function () {
             result.active = true;
             result.discarded = false;
             result.success = true;
-            result.count = result.result;
+            result.count = 1;
         }
         else if (result.result == 2) {
           result.active = true;
