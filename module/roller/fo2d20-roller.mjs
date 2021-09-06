@@ -130,7 +130,7 @@ export class Roller2D20 {
     }
 
     static async rollD6({ rollname = "Roll D6", dicenum = 2, weapon = null } = {}) {
-        let formula = `${dicenum}d6`;
+        let formula = `${dicenum}dc`;
         let roll = new Roll(formula);
         await roll.evaluate({ async: true });
         await Roller2D20.parseD6Roll({
@@ -185,7 +185,7 @@ export class Roller2D20 {
             return;
         }
         let numOfDice = rerollIndexes.length;
-        let formula = `${numOfDice}d6`;
+        let formula = `${numOfDice}dc`;
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
         await Roller2D20.parseD6Roll({
@@ -198,7 +198,7 @@ export class Roller2D20 {
     }
 
     static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null } = {}) {
-        let formula = `${dicenum}d6`;
+        let formula = `${dicenum}dc`;
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
         let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;

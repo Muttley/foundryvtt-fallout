@@ -1,3 +1,10 @@
+V 1.3
+
+-   Added dice term for Combat Die. "/r 1dc"
+-   Added Dice Modifier "ef" to count the effect results (5,6)
+-   Added Dice Modifier "sum" to count the results (1+2+0+0+1+1)
+
+
 V 1.21
 
 -   Bug Fix: Show robot mod on the character sheet under "unsorted items".
