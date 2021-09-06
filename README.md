@@ -28,6 +28,7 @@ This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the book
 ## FEATURES
 
 -   Dice Roller Macros for D20 and DC Rolls. You can find them in the fallout-macros compendium. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects. It can be triggered separately or from the Attributes/Skills/Weapons. (Dice So Nice module supported)
+-   Custom CD roll: "/r 1dc" and modifiers to count the effects ("/r 1dcef") or count total results summed ("/r 1dcsum")
 -   Pipboy Screen for Characters and Robots (player sheets)
 -   Calculating Resistances depending on the equipped apparel
 -   Marking Injuries visually on the body parts
