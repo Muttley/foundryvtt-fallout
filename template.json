@@ -455,6 +455,7 @@
 		"books_and_magz": {
 			"templates": ["base", "physical"],
 			"issue": "",
+			"effect": "",
 			"perk": "",
 			"learned": true
 		},
