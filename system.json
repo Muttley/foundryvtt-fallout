@@ -1,40 +1,44 @@
 {
-	"name": "fallout",
-	"title": "Fallout 2d20",
-	"description": "The unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "1.4",
-	"minimumCoreVersion": "0.8.6",
-	"compatibleCoreVersion": "0.8.9",
-	"author": "HappySteve",
-	"esmodules": ["module/fallout.mjs"],
-	"styles": ["css/fallout.css"],
-	"scripts": [],
-	"packs": [
-		{
-			"name": "skills",
-			"label": "Skills",
-			"system": "fallout",
-			"path": "./packs/skills.db",
-			"entity": "Item"
-		},
-		{
-			"name": "fallout-macros",
-			"label": "Fallout Macros",
-			"system": "fallout",
-			"path": "./packs/fallout-macros.db",
-			"entity": "Macro"
-		}
-	],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "lang/en.json"
-		}
-	],
-	"socket": true,
-	"url": "https://github.com/superseva/fallout",
-	"manifest": "https://raw.githubusercontent.com/superseva/fallout/main/system.json",
-	"download": "https://github.com/superseva/fallout/archive/refs/heads/main.zip",
-	"license": "LICENSE.txt"
+  "name": "fallout",
+  "title": "Fallout 2d20",
+  "description": "The unofficial Fallout 2d20 System for FoundryVTT",
+  "version": "1.5",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.8.9",
+  "author": "HappySteve",
+  "esmodules": [
+    "module/fallout.mjs"
+  ],
+  "styles": [
+    "css/fallout.css"
+  ],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "skills",
+      "label": "Skills",
+      "system": "fallout",
+      "path": "./packs/skills.db",
+      "entity": "Item"
+    },
+    {
+      "name": "fallout-macros",
+      "label": "Fallout Macros",
+      "system": "fallout",
+      "path": "./packs/fallout-macros.db",
+      "entity": "Macro"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/superseva/fallout",
+  "manifest": "https://raw.githubusercontent.com/superseva/fallout/main/system.json",
+  "download": "https://github.com/superseva/fallout/archive/refs/heads/main.zip",
+  "license": "LICENSE.txt"
 }
