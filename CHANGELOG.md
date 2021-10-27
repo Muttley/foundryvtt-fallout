@@ -1,3 +1,7 @@
+V 1.6
+
+- Fixed encumbrance calculation. Now it should include item quantity too.
+
 V 1.5
 
 - Added skill delete option for characters, and blocked skill duplication.
