@@ -1,3 +1,7 @@
+V 1.8
+
+- Added the 'Wear & Tear' field in the weapon sheet. If it is populated the 'wrench' will apear next to the weapon name on the character sheet to remind you that you should fix it.
+
 V 1.7
 
 - Radiation tracker added to the chracter sheet

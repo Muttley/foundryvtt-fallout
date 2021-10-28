@@ -47,6 +47,7 @@ export class FalloutActor extends Actor {
     data.favoriteWeapons = actorData.items.filter(
       (i) => i.type == 'weapon' && i.data.data.favorite,
     )
+    console.warn(data.favoriteWeapons)
     // Encumbrance
     data.carryWeight.base =
       150 + parseInt(this.data.data.attributes.str.value) * 10

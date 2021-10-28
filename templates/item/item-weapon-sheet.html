@@ -86,7 +86,8 @@
           {{#each data.damage.damageType as |dmgType key|}}
           <div class="flexrow toggle-label {{#ifCond dmgType '==' true}}active{{/ifCond}}">
             <label class="font-size-13">
-              <input class="" type="checkbox" name="data.damage.damageType.{{key}}" {{#ifCond dmgType '==' true}}checked{{/ifCond}}>
+              <input class="" type="checkbox" name="data.damage.damageType.{{key}}" {{#ifCond dmgType '=='
+                true}}checked{{/ifCond}}>
               {{localize (concat 'FALLOUT.WEAPONS.damageType.' key)}} <i class="fo-{{key}}"></i>
             </label>
           </div>
@@ -115,29 +116,39 @@
         <input type="text" name="data.ammo" value="{{data.ammo}}">
       </div>
 
+      <div class="flexrow resource-row bgOdd">
+        <label class="resource-label" for="data.tear">{{localize "FALLOUT.TEMPLATES.Tear"}}</label>
+        <input type="text" name="data.tear" value="{{data.tear}}">
+      </div>
+
       <div class="grid">
         <div class="resource-row">
-          <label class="resource-label" for=" data.damage.rating">{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}</label>
+          <label class="resource-label" for=" data.damage.rating">{{localize
+            "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}</label>
           <div class="grid item-list">
             {{#each data.damage.weaponQuality as |item key|}}
             <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
               <label>
-                <input type="checkbox" name="data.damage.weaponQuality.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}
+                <input type="checkbox" name="data.damage.weaponQuality.{{key}}.value" {{#ifCond item.value '=='
+                  true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}
               </label>
             </div>
             {{/each}}
           </div>
         </div>
         <div class="resource-row">
-          <label class="resource-label" for=" data.damage.rating">{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}</label>
+          <label class="resource-label" for=" data.damage.rating">{{localize
+            "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}</label>
           <div class="grid item-list">
             {{#each data.damage.damageEffect as |item key|}}
             <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
               <label>
-                <input type="checkbox" name="data.damage.damageEffect.{{key}}.value" {{#ifCond item.value '==' true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
+                <input type="checkbox" name="data.damage.damageEffect.{{key}}.value" {{#ifCond item.value '=='
+                  true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
               </label>
               {{#ifCond key '==' 'piercing'}}
-              <input type="number" name="data.damage.damageEffect.{{key}}.rank" class="num-short-2" value="{{item.rank}}">
+              <input type="number" name="data.damage.damageEffect.{{key}}.rank" class="num-short-2"
+                value="{{item.rank}}">
               {{/ifCond}}
             </div>
             {{/each}}
