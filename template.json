@@ -378,6 +378,7 @@
       "ammoPerShot": 1,
       "attribute": "",
       "skill": "",
+      "tear": "",
       "damage": {
         "rating": 0,
         "damageType": {
