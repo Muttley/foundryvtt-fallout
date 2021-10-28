@@ -29,25 +29,30 @@
                         <i class="fo-physical"></i>
                         <label for="data.resistance.physical">{{localize "FALLOUT.TEMPLATES.PHYS"}}</label>
                     </span>
-                    <input type="number" name="data.resistance.physical" class="num-short-2" value="{{data.resistance.physical}}">
+                    <input type="number" name="data.resistance.physical" class="num-short-2"
+                        value="{{data.resistance.physical}}">
                 </div>
                 <div class="flexrow resource-row">
-                    <span><i class="fo-energy"></i><label for="data.resistance.energy">{{localize "FALLOUT.TEMPLATES.ENG"}}</label></span>
-                    <input type="number" name="data.resistance.energy" class="num-short-2" value="{{data.resistance.energy}}">
+                    <span><i class="fo-energy"></i><label for="data.resistance.energy">{{localize
+                            "FALLOUT.TEMPLATES.ENG"}}</label></span>
+                    <input type="number" name="data.resistance.energy" class="num-short-2"
+                        value="{{data.resistance.energy}}">
                 </div>
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-radiation"></i>
                         <label for="data.resistance.radiation">{{localize "FALLOUT.TEMPLATES.RAD"}}</label>
                     </span>
-                    <input type="number" name="data.resistance.radiation" class="num-short-2" value="{{data.resistance.radiation}}">
+                    <input type="number" name="data.resistance.radiation" class="num-short-2"
+                        value="{{data.resistance.radiation}}">
                 </div>
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-poison"></i>
                         <label for="data.resistance.poison">{{localize "FALLOUT.TEMPLATES.POISON"}}</label>
                     </span>
-                    <input type="number" name="data.resistance.poison" class="num-short-2" value="{{data.resistance.poison}}">
+                    <input type="number" name="data.resistance.poison" class="num-short-2"
+                        value="{{data.resistance.poison}}">
                 </div>
             </div>
         </div>
@@ -101,18 +106,32 @@
                 <h3 style="margin:0;"><strong>{{localize "FALLOUT.HEALTH.health"}}</strong></h3>
             </div>
             <div class="flexrow align-mid">
-                <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number" name="data.health.value" value="{{data.health.value}}">
+                <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number"
+                    name="data.health.value" value="{{data.health.value}}" min="0">
                 <span class="text-center">/</span>
-                <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number" name="data.health.max" value="{{data.health.max}}">
+                <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number"
+                    name="data.health.max" value="{{data.health.max}}" min="0">
             </div>
         </div>
 
         <div class="resource-plate-header plate-3-r" style="margin-bottom: 10px;">
             <div class="flexrow align-mid">
                 <div class="symbol crippled"></div>
-                <h4 style="margin:0"><strong>{{localize "FALLOUT.TEMPLATES.INJURIES"}}: {{openInjuriesCount}}</strong></h4>
+                <h4 style="margin:0"><strong>{{localize "FALLOUT.TEMPLATES.INJURIES"}}: {{openInjuriesCount}}</strong>
+                </h4>
             </div>
         </div>
+
+        {{#ifCond actor.type '==' 'character'}}
+        <div class="resource-plate-header plate-3-g" style="margin-bottom: 10px;">
+            <div class="flex align-mid">
+                <i class="fo-radiation" style="margin-right: 3px;"></i>
+                <h4 style="margin:0 5px 0 0"><strong>{{localize "FALLOUT.TEMPLATES.RADIATION"}}</strong>
+                </h4><input class="num-short-2" style="font-size:12px; background-color: beige; color: black;"
+                    type="number" name="data.radiation" value="{{data.radiation}}" min="0">
+            </div>
+        </div>
+        {{/ifCond}}
 
         {{#ifCond actor.type '==' 'character'}}
         <div class="box">
@@ -120,34 +139,48 @@
                 <h4 class="tab-switch" data-tab="apparel">{{localize "FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH"}}</h4>
             </div>
             <div class="power-armor-status">
-                <div class="body-part" style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+                <div class="body-part"
+                    style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
                     <label>{{data.outfitedLocations.head.data.health.max}}</label>
-                    <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.head.data.health.value}}" data-body-location="head" data-item-id="{{data.outfitedLocations.head._id}}">
+                    <input class="num-short-2 power-armor-monitor-helath-value" type="number"
+                        value="{{data.outfitedLocations.head.data.health.value}}" data-body-location="head"
+                        data-item-id="{{data.outfitedLocations.head._id}}" min="0">
                 </div>
 
-                <div class="body-part" style="position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 0;top:60px;">
+                <div class="body-part"
+                    style="position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 0;top:60px;">
                     <label>{{data.outfitedLocations.torso.data.health.max}}</label>
-                    <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.torso.data.health.value}}" data-body-location="torso" data-item-id="{{data.outfitedLocations.torso._id}}">
+                    <input class="num-short-2 power-armor-monitor-helath-value" type="number"
+                        value="{{data.outfitedLocations.torso.data.health.value}}" data-body-location="torso"
+                        data-item-id="{{data.outfitedLocations.torso._id}}" min="0">
                 </div>
 
                 <div class=" body-part" style="position: absolute;left: 0;top:50px;">
                     <label>{{data.outfitedLocations.armL.data.health.max}}</label>
-                    <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.armL.data.health.value}}" data-body-location="armL" data-item-id="{{data.outfitedLocations.armL._id}}">
+                    <input class="num-short-2 power-armor-monitor-helath-value" type="number"
+                        value="{{data.outfitedLocations.armL.data.health.value}}" data-body-location="armL"
+                        data-item-id="{{data.outfitedLocations.armL._id}}" min="0">
                 </div>
 
                 <div class=" body-part" style="position: absolute; right: 0; top:50px;">
                     <label>{{data.outfitedLocations.armR.data.health.max}}</label>
-                    <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.armR.data.health.value}}" data-body-location="armR" data-item-id="{{data.outfitedLocations.armR._id}}">
+                    <input class="num-short-2 power-armor-monitor-helath-value" type="number"
+                        value="{{data.outfitedLocations.armR.data.health.value}}" data-body-location="armR"
+                        data-item-id="{{data.outfitedLocations.armR._id}}" min="0">
                 </div>
 
                 <div class=" body-part" style="position: absolute;left: 15px; top:120px;">
                     <label>{{data.outfitedLocations.legL.data.health.max}}</label>
-                    <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.legL.data.health.value}}" data-body-location="legL" data-item-id="{{data.outfitedLocations.legL._id}}">
+                    <input class="num-short-2 power-armor-monitor-helath-value" type="number"
+                        value="{{data.outfitedLocations.legL.data.health.value}}" data-body-location="legL"
+                        data-item-id="{{data.outfitedLocations.legL._id}}" min="0">
                 </div>
 
                 <div class=" body-part" style="position: absolute; right: 15px; top:120px;">
                     <label>{{data.outfitedLocations.legR.data.health.max}}</label>
-                    <input class="num-short-2 power-armor-monitor-helath-value" type="number" value="{{data.outfitedLocations.legR.data.health.value}}" data-body-location="legR" data-item-id="{{data.outfitedLocations.legR._id}}">
+                    <input class="num-short-2 power-armor-monitor-helath-value" type="number"
+                        value="{{data.outfitedLocations.legR.data.health.value}}" data-body-location="legR"
+                        data-item-id="{{data.outfitedLocations.legR._id}}" min="0">
                 </div>
             </div>
         </div>
@@ -180,13 +213,15 @@
         <div class="flex-center">
             <label for="">{{data.carryWeight.base}} .{{localize "FALLOUT.TEMPLATES.lbs"}} + </label>
             <input type="number" name="data.carryWeight.mod" class="num-short-2" value="{{data.carryWeight.mod}}">
-            <label for=""> = {{localize "FALLOUT.TEMPLATES.MAX"}}: {{data.carryWeight.value}} .{{localize "FALLOUT.TEMPLATES.lbs"}}</label>
+            <label for=""> = {{localize "FALLOUT.TEMPLATES.MAX"}}: {{data.carryWeight.value}} .{{localize
+                "FALLOUT.TEMPLATES.lbs"}}</label>
         </div>
         <div class="text-center">
             <label>{{localize "FALLOUT.TEMPLATES.Encumbrance_Level"}}: {{data.encumbranceLevel}}</label>
         </div>
         <div style="text-align: right;">
-            <label>{{localize "FALLOUT.TEMPLATES.Total"}}: {{data.totalWeight}} / {{data.carryWeight.value}} .{{localize "FALLOUT.TEMPLATES.lbs"}}</label>
+            <label>{{localize "FALLOUT.TEMPLATES.Total"}}: {{data.totalWeight}} / {{data.carryWeight.value}} .{{localize
+                "FALLOUT.TEMPLATES.lbs"}}</label>
         </div>
     </div>
 </div>

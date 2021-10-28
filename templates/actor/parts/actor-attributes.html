@@ -4,7 +4,7 @@
     <label for="data.attributes.{{key}}.value" class="resource-label align-left"
       data-label="{{ability.label}}">{{subString ability.label 0 1}}</label>
     <div class='special-number'>
-      <input type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" />
+      <input type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" min="0" />
     </div>
   </div>
   {{/each}}

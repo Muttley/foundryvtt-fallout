@@ -1,3 +1,7 @@
+V 1.7
+
+- Radiation tracker added to the chracter sheet
+
 V 1.6
 
 - Fixed encumbrance calculation. Now it should include item quantity too.
