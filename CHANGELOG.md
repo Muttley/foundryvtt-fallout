@@ -1,3 +1,8 @@
+V 1.9
+
+- Added quantity filed next to the item name/
+- I am still trying to find and fix why sometimes the crit doesn't register and you get a wrong num of successes. I did put some safe measures around it but I still need more test data.
+
 V 1.8
 
 - Added the 'Wear & Tear' field in the weapon sheet. If it is populated the 'wrench' will apear next to the weapon name on the character sheet to remind you that you should fix it.
