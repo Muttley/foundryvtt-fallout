@@ -338,7 +338,7 @@ export class FalloutActorSheet extends ActorSheet {
     // * END SKILLS
 
     // * AMMO COUNT UPDATE
-    html.find('.ammo-quantity').change(async (ev) => {
+    html.find('.item-quantity').change(async (ev) => {
       let newQuantity = parseInt($(ev.currentTarget).val())
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('itemId'))

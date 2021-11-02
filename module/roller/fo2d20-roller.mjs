@@ -1,7 +1,7 @@
 export class Roller2D20 {
     dicesRolled = [];
     successTreshold = 0;
-    critTreshold = 0;
+    critTreshold = 1;
     complicationTreshold = 20;
     successes = 0;
 
@@ -31,6 +31,7 @@ export class Roller2D20 {
                 if (r.result <= successTreshold) {
                     diceSuccess++;
                 }
+                critTreshold = Math.max(critTreshold, 1);
                 if (r.result <= critTreshold) {
                     diceSuccess++;
                 }
