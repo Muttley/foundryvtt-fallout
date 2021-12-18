@@ -2,7 +2,7 @@ V 1.9.1
 
 - Weight of an Item can now be a float. (You can now put for example 0.2 as a weight)
 - Added Qualities and Effects to the Weapon List on the Character Sheet.
-- Fixed total value of the Chalenge Die rolls when you use standard roll formula (/r 1dc).
+- Fixed total value of the Challenge Die rolls when you use standard roll formula (/r 1dc).
 - Fixed quantity box so it doesn't disappear if the quantity is set to zero.
 
 
