@@ -55,7 +55,10 @@
             <span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
             {{#each item.data.damage.damageEffect as |effect key|}}
             {{#if (eq effect.value true)}}
-            <span class="effect hover" data-key="{{key}}">{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}},&nbsp;</span>
+            <span class="effect hover" data-key="{{key}}">
+                {{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
+                {{#if (ne effect.rank undefined)}}{{effect.rank}}{{/if}}
+                ,&nbsp;</span>
             {{/if}}
             {{/each}}
         </div>
