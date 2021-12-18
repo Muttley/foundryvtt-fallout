@@ -5,7 +5,7 @@
     <div class="box-content">
         <ol class="items-list">
             {{#each data.favoriteWeapons as |item id|}}
-            <li class="item favorite-weapon weapon flexrow" data-item-id="{{item._id}}">
+            <li class="item favorite-weapon weapon flexrow" data-item-id="{{item.data._id}}">
                 <div class="item-name flex3">
                     <h4 class="resource-label"><a class="weapon-roll">{{item.name}} {{#if (isWeaponDamaged
                             item.data)}}<i class="fas fa-wrench"></i>{{/if}}</a></h4>

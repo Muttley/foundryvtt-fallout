@@ -17,7 +17,7 @@ import { registerSettings } from './settings.js'
 import { APTracker } from './ap/ap-tracker.mjs'
 //Dice
 import { DieFalloutDamage } from './roller/damageDie.js'
-import { DieFalloutLocation, DieFalloutRobotLocation } from './roller/locationDie.js'
+//import { DieFalloutLocation, DieFalloutRobotLocation } from './roller/locationDie.js'
 
 /* -------------------------------------------- */
 /*  Handlebars Helpers                          */
@@ -60,8 +60,8 @@ Hooks.once('init', async function () {
   registerSettings()
 
   CONFIG.Dice.terms['c'] = DieFalloutDamage
-  CONFIG.Dice.terms['h'] = DieFalloutLocation
-  CONFIG.Dice.terms['r'] = DieFalloutRobotLocation
+  //CONFIG.Dice.terms['h'] = DieFalloutLocation
+  //CONFIG.Dice.terms['r'] = DieFalloutRobotLocation
 
   Die.MODIFIERS['ef'] = function minResult(modifier) {
     this.results = this.results.flatMap((result) => {
@@ -305,62 +305,62 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     colorset: 'fallout',
   })
 
-  dice3d.addDicePreset({
-    type: 'dh',
-    fontScale: 0.9,
-    labels: [
-      'He',
-      'He',
-      'To',
-      'To',
-      'To',
-      'To',
-      'To',
-      'To',
-      'LA',
-      'LA',
-      'LA',
-      'RA',
-      'RA',
-      'RA',
-      'LL',
-      'LL',
-      'LL',
-      'RL',
-      'RL',
-      'RL'
-    ],
-    system: 'fallout',
-    colorset: 'fallout',
-  })
+  // dice3d.addDicePreset({
+  //   type: 'dh',
+  //   fontScale: 0.9,
+  //   labels: [
+  //     'He',
+  //     'He',
+  //     'To',
+  //     'To',
+  //     'To',
+  //     'To',
+  //     'To',
+  //     'To',
+  //     'LA',
+  //     'LA',
+  //     'LA',
+  //     'RA',
+  //     'RA',
+  //     'RA',
+  //     'LL',
+  //     'LL',
+  //     'LL',
+  //     'RL',
+  //     'RL',
+  //     'RL'
+  //   ],
+  //   system: 'fallout',
+  //   colorset: 'fallout',
+  // })
 
-  dice3d.addDicePreset({
-    type: 'dr',
-    fontScale: 0.9,
-    labels: [
-      'Op',
-      'Op',
-      'MB',
-      'MB',
-      'MB',
-      'MB',
-      'MB',
-      'MB',
-      'A1',
-      'A1',
-      'A1',
-      'A2',
-      'A2',
-      'A2',
-      'A3',
-      'A3',
-      'A3',
-      'Th',
-      'Th',
-      'Th'
-    ],
-    system: 'fallout',
-    colorset: 'fallout',
-  })
+  // dice3d.addDicePreset({
+  //   type: 'dr',
+  //   fontScale: 0.9,
+  //   labels: [
+  //     'Op',
+  //     'Op',
+  //     'MB',
+  //     'MB',
+  //     'MB',
+  //     'MB',
+  //     'MB',
+  //     'MB',
+  //     'A1',
+  //     'A1',
+  //     'A1',
+  //     'A2',
+  //     'A2',
+  //     'A2',
+  //     'A3',
+  //     'A3',
+  //     'A3',
+  //     'Th',
+  //     'Th',
+  //     'Th'
+  //   ],
+  //   system: 'fallout',
+  //   colorset: 'fallout',
+  // })
 
 })

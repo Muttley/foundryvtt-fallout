@@ -90,6 +90,15 @@
 				margin: 3px 0 0 5px;
 			}
 		}
+		.item-sub-info{
+			display: flex;
+			padding: 0.313rem;
+			font-family: $font-small;
+			font-size: 0.688rem;
+			font-weight: 400;
+			color: $f-tile;
+			background-color: rgba(0, 0, 0, 0.2);
+		}
 	}
 
 	.item-prop {

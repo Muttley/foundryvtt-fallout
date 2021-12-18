@@ -16,7 +16,6 @@
   "ITEM.TypeSkill": "Skill",
   "ITEM.TypePerk": "Perk",
   "ITEM.TypeSpecial_ability": "Special Ability",
-
   "FALLOUT.AbilityStr": "Strength",
   "FALLOUT.AbilityPer": "Perception",
   "FALLOUT.AbilityEnd": "Endurance",
@@ -24,7 +23,6 @@
   "FALLOUT.AbilityInt": "Intelligence",
   "FALLOUT.AbilityAgi": "Agility",
   "FALLOUT.AbilityLuc": "Luck",
-
   "FALLOUT.AbilityAbbr.str": "str",
   "FALLOUT.AbilityAbbr.per": "per",
   "FALLOUT.AbilityAbbr.end": "end",
@@ -32,14 +30,11 @@
   "FALLOUT.AbilityAbbr.int": "int",
   "FALLOUT.AbilityAbbr.agi": "agi",
   "FALLOUT.AbilityAbbr.luc": "luc",
-
   "FALLOUT.EffectCreate": "Create Effect",
   "FALLOUT.EffectToggle": "Toggle Effect",
   "FALLOUT.EffectEdit": "Edit Effect",
   "FALLOUT.EffectDelete": "Delete Effect",
-
   "FALLOUT.Add": "Add",
-
   "FALLOUT.SKILL": {
     "Athletics": "Athletics",
     "Barter": "Barter",
@@ -121,7 +116,6 @@
     "NextXP": "Next Level XP",
     "RewardXP": "XP Reward"
   },
-
   "FALLOUT.WEAPONS": {
     "weaponType": {
       "bigGuns": "Big Guns",
@@ -174,7 +168,6 @@
     "long": "L",
     "extreme": "E"
   },
-
   "FALLOUT.CREATURE": {
     "body": "Body",
     "mind": "Mind",
@@ -307,6 +300,7 @@
     "RANGE": "RANGE",
     "FIRE_RATE": "FIRE RATE",
     "WEAPON_QUALITIES": "WEAPON QUALITIES",
+    "Qualities": "Qualities",
     "DAMAGE_EFFECTS": "DAMAGE EFFECTS",
     "Tear": "Wear & Tear",
     "Use_Strength": "Use Strength",

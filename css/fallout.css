@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;600&display=swap");
 @font-face {
   font-family: "fallout";
   src: url("../fonts/fallout.ttf") format("truetype"), url("../fonts/fallout.woff") format("woff"), url("../fonts/fallout.svg") format("svg");
@@ -295,6 +296,16 @@
 
 .fallout .window-content > form.creature {
   background-color: #325885;
+}
+
+.dice-tooltip .dice-rolls .roll.max {
+  color: unset;
+  filter: none;
+}
+
+.dice-tooltip .dice-rolls .roll.min {
+  color: unset;
+  filter: none;
 }
 
 .grid,
@@ -1460,6 +1471,16 @@
   background-size: 30px;
   border: none;
   margin: 3px 0 0 5px;
+}
+
+.fallout .items-list .item .item-sub-info {
+  display: flex;
+  padding: 0.313rem;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 0.688rem;
+  font-weight: 400;
+  color: #6ea898;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .fallout .items-list .item-prop {

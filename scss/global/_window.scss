@@ -226,3 +226,12 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.dice-tooltip .dice-rolls .roll.max {
+    color: unset;
+    filter: none;
+}
+.dice-tooltip .dice-rolls .roll.min {
+    color: unset;
+    filter: none;
+}
