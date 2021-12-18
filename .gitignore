@@ -13,3 +13,8 @@ package.json
 
 # Foundry
 *.lock
+
+# Releases and zips
+*.7z
+*.zip
+*.rar
