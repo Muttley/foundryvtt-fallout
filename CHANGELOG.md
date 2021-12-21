@@ -1,3 +1,8 @@
+V 9.0.0
+
+- Bumping the manifest to Foundry v9
+
+
 V 1.9.1
 
 - Weight of an Item can now be a float. (You can now put for example 0.2 as a weight)
