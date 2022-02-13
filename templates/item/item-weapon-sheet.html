@@ -127,7 +127,7 @@
             "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}</label>
           <div class="grid item-list">
             {{#each data.damage.weaponQuality as |item key|}}
-            <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
+            <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}} hover" data-key="{{key}}">
               <label>
                 <input type="checkbox" name="data.damage.weaponQuality.{{key}}.value" {{#ifCond item.value '=='
                   true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}
@@ -141,7 +141,7 @@
             "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}</label>
           <div class="grid item-list">
             {{#each data.damage.damageEffect as |item key|}}
-            <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}}">
+            <div class="flexrow toggle-label {{#ifCond item.value '==' true}}active{{/ifCond}} hover" data-key="{{key}}">
               <label>
                 <input type="checkbox" name="data.damage.damageEffect.{{key}}.value" {{#ifCond item.value '=='
                   true}}checked{{/ifCond}}>{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
