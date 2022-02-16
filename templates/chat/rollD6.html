@@ -9,7 +9,12 @@
                 {{/each}}
             </div>
         </div>
-        <p class="font-size-11" style="padding-left: 10px;">{{weaponDamageEffects}}</p>
+        <!-- <p class="font-size-11" style="padding-left: 10px;">{{weaponDamageEffects}}</p> -->
+        <p class="font-size-11" style="padding-left: 10px;">
+        {{#each weaponDamageEffects as |eff|}}
+        <span title="{{eff.effect}}">{{eff.efectLabel}}</span>
+        {{/each}}
+        </p>
         <div class="dices-result" style="display: flex; flex-wrap: wrap;">
             {{#each results as |dice|}}
             <span class="dice-icon d6 face-{{dice.face}}{{#if reroll}} reroll{{/if}}{{#ifCond effect '==' 1}} effect{{/ifCond}}" data-index="{{@index}}">&nbsp;</span>
