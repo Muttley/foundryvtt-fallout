@@ -1,3 +1,7 @@
+V 9.0.1
+
+- Added mouse hovers for weapon Qualities and Effects. You can change the page numbers for the actual descriptions by creating your own json file and pointing the system to it in the settings.
+
 V 9.0.0
 
 - Bumping the manifest to Foundry v9
