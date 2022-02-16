@@ -217,21 +217,21 @@ export class Roller2D20 {
         let damage = dicesRolled.reduce((a, b) => ({ result: a.result + b.result })).result;
         let effects = dicesRolled.reduce((a, b) => ({ effect: a.effect + b.effect })).effect;
         let weaponDamageTypesList = [];
-        let weaponDamageEffectsList = [];
+        let weaponDamageEffects = [];
         if (weapon != null) {
             weaponDamageTypesList = Object.keys(weapon.data.damage.damageType).filter((dt) => {
                 if (weapon.data.damage.damageType[dt]) return dt;
             });
             for (let de in weapon.data.damage.damageEffect) {
                 if (weapon.data.damage.damageEffect[de].value) {
-                    let rank = weapon.data.damage.damageEffect[de].rank ?? "";
-                    let damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
-                    let efectLabel = `${damageEffectLabel}${rank}`;
-                    weaponDamageEffectsList.push(efectLabel);
+                    const rank = weapon.data.damage.damageEffect[de].rank ?? "";
+                    const damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
+                    const efectLabel = `${damageEffectLabel}${rank}`;
+                    const effectDescription = game.fallout.FOHovers.LIST[ weapon.data.damage.damageEffect[de].label.toLowerCase()];
+                    weaponDamageEffects.push({effect: effectDescription, efectLabel: efectLabel});
                 }
             }
         }
-        let weaponDamageEffects = weaponDamageEffectsList.join(', ');
         let rollData = {
             rollname: rollname,
             damage: damage,

@@ -19,6 +19,8 @@ import { APTracker } from './ap/ap-tracker.mjs'
 import { DieFalloutDamage } from './roller/damageDie.js'
 //import { DieFalloutLocation, DieFalloutRobotLocation } from './roller/locationDie.js'
 
+import {FOHovers} from './helpers/hovers.mjs'
+
 /* -------------------------------------------- */
 /*  Handlebars Helpers                          */
 /* -------------------------------------------- */
@@ -38,6 +40,7 @@ Hooks.once('init', async function () {
     Roller2D20,
     Dialog2d20,
     DialogD6,
+    FOHovers,
   }
 
   // Add custom constants for configuration.
