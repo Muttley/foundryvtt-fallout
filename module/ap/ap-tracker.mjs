@@ -28,6 +28,8 @@ export class APTracker extends Application {
         this.data["partyAP"] = game.settings.get('fallout', 'partyAP');
         this.data["gmAP"] = game.settings.get('fallout', 'gmAP');
         this.data["maxAP"] = game.settings.get('fallout', 'maxAP');
+        this.data["showGMMomentumToPlayers"] = (game.user.isGM || game.settings.get('fallout', 'gmMomentumShowToPlayers')) ? true:false;
+        this.data["maxAppShowToPlayers"] = (game.user.isGM|| game.settings.get('fallout', 'maxAppShowToPlayers')) ? true:false;
         return this.data;
     }
 

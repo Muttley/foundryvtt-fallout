@@ -1,3 +1,9 @@
+V 9.0.2
+
+- Setting added: "Show Overseer's AP To Player"
+- Setting added: "Players Can Setup Party's Max AP"
+
+
 V 9.0.1
 
 - Added mouse hovers for weapon Qualities and Effects. You can change the page numbers for the actual descriptions by creating your own json file and pointing the system to it in the settings.
