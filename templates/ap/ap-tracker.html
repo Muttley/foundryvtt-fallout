@@ -1,18 +1,18 @@
 <div class="fallout ap-tracker">
-    {{#if (eq isGM true)}}
+    {{#if (eq showGMMomentumToPlayers true)}}
     <div class="ap-resource gm" data-type="gmAP">
         <div class="flexcol">
             <h4>{{localize "FALLOUT.TEMPLATES.OVERSEER_AP"}}</h4>
         </div>
         <div class="flexrow align-mid">
-            <a class="ap-btn ap-sub">-</a>
+            <a class="ap-btn {{#if (eq isGM true)}}ap-sub{{/if}}">-</a>
             <input type="number" class="ap-input num-short-3" value={{gmAP}}>
-            <a class="ap-btn ap-add">+</a>
+            <a class="ap-btn {{#if (eq isGM true)}}ap-add{{/if}}">+</a>
         </div>
     </div>
     {{/if}}
 
-    {{#if (eq isGM true)}}
+    {{#if (eq maxAppShowToPlayers true)}}
     <div class="ap-resource maxAP-box" data-type="maxAP">
         <div class="flexcol">
             <h4>{{localize "FALLOUT.TEMPLATES.MAX_PARTY_AP"}}</h4>
@@ -26,7 +26,7 @@
     {{/if}}
 
     <div class="ap-resource party" data-type="partyAP">
-        {{#if (eq isGM true)}}
+        {{#if (eq maxAppShowToPlayers true)}}
         <a class='toggle-maxAp'><i class="fas fa-cog"></i></a>
         {{/if}}
         <div class="flexcol">
