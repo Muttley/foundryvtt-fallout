@@ -1,3 +1,8 @@
+V 9.0.3
+
+- You can send item's details to the chat
+
+
 V 9.0.2
 
 - Setting added: "Show Overseer's AP To Player"

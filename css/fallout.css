@@ -612,17 +612,22 @@
   border: none;
 }
 
-.fallout .sheet-header h1.charname {
+.fallout .sheet-header h1 .charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
 
-.fallout .sheet-header h1.charname input {
+.fallout .sheet-header h1 .charname input {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+.fallout .sheet-header .chaty {
+  cursor: pointer;
+  width: 1.2rem;
 }
 
 .fallout .sheet-header .right-side {

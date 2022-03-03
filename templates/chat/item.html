@@ -1,0 +1,52 @@
+<div class="fallout chat-item">
+    {{#if img}}
+    <div style="text-align: center;">
+        <img class="item-img" src="{{img}}" title="{{name}}" />
+    </div>
+    {{/if}}
+    <div class="item-name">
+        <h3>{{name}}</h3>
+    </div>
+    <p>@Item[{{_id}}]</p>
+    
+    <hr>
+
+    {{#if isWeapon}}
+    <p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE_TYPE"}}:</strong>
+        {{#each data.damage.damageType as |dmgType key|}}
+        {{#if (eq dmgType true)}}
+        {{localize (concat 'FALLOUT.WEAPONS.damageType.' key)}} <i class="fo-{{key}}"></i>
+        {{/if}}  
+        {{/each}}
+    </p>
+
+    <p><strong>{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}:</strong>
+    {{#each data.damage.weaponQuality as |item key|}}
+    {{#if (eq item.value true)}} {{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}, {{/if}}
+    {{/each}}
+    </p>
+    <p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}:</strong>
+        {{#each data.damage.damageEffect as |item key|}}
+        {{#if (eq item.value true)}}
+        {{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
+            {{#if (ne item.rank undefined)}}
+            {{item.rank}}
+            {{/if}},
+        {{/if}}      
+        {{/each}}
+    </p>
+    {{/if}}
+
+    {{#if isPhysical}}
+    <hr>
+    <div class="flexrow" style="font-size: 0.75rem;">
+        <p><strong>{{localize "FALLOUT.UI.Quantity"}}:</strong> {{data.quantity}}</p>
+        <p><strong>{{localize "FALLOUT.UI.Weight"}}:</strong> {{data.weight}}</p>   
+        <p><strong>{{localize "FALLOUT.UI.Cost"}}:</strong> {{data.cost}}</p>
+        <p><strong>{{localize "FALLOUT.UI.Rarity"}}:</strong> {{data.rarity}}</p>  
+    </div>
+    {{/if}}
+
+    <hr>
+    <div class="description">{{{data.description}}}</div>
+</div>

@@ -120,6 +120,11 @@ export class FalloutItemSheet extends ItemSheet {
       onManageActiveEffect(ev, this.item)
     });
 
+    // Send To Chat
+    html.find('.chaty').click(ev=>{
+      this.item.sendToChat();
+    })
+
     // DON't LET NUMBER FIELDS EMPTY
     const numInputs = document.querySelectorAll('input[type=number]');
     numInputs.forEach(function (input) {
