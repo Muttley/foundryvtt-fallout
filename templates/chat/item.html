@@ -1,17 +1,20 @@
 <div class="fallout chat-item">
+    <div class="item-name">
+        <h3>{{name}}</h3>
+    </div>
     {{#if img}}
     <div style="text-align: center;">
         <img class="item-img" src="{{img}}" title="{{name}}" />
     </div>
     {{/if}}
-    <div class="item-name">
-        <h3>{{name}}</h3>
-    </div>
-    <p>@Item[{{_id}}]</p>
+    
+    <!-- <p>@Item[{{_id}}]</p> -->
+
     
     <hr>
-
+    <!-- * WEAPONS * -->
     {{#if isWeapon}}
+    <p><strong>{{localize "FALLOUT.TEMPLATES.WEAPON_TYPE"}}:</strong>{{data.weaponType}}</p>
     <p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE_TYPE"}}:</strong>
         {{#each data.damage.damageType as |dmgType key|}}
         {{#if (eq dmgType true)}}
@@ -19,7 +22,11 @@
         {{/if}}  
         {{/each}}
     </p>
-
+    <p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE"}}:</strong>{{data.damage.rating}}</p>
+    <p><strong>{{localize "FALLOUT.TEMPLATES.RANGE"}}:</strong>{{data.range}}</p>
+    <p><strong>{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}:</strong>{{data.fireRate}}</p>
+    <p><strong>{{localize "FALLOUT.TEMPLATES.AMMO"}}:</strong>{{data.ammo}}</p>
+    <p><strong>{{localize "FALLOUT.TEMPLATES.TEAR"}}:</strong>{{data.tear}}</p>
     <p><strong>{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}:</strong>
     {{#each data.damage.weaponQuality as |item key|}}
     {{#if (eq item.value true)}} {{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}, {{/if}}
@@ -35,6 +42,19 @@
         {{/if}}      
         {{/each}}
     </p>
+    {{/if}}
+    <!-- WEAPONS END -->
+
+    <!-- * MODS TEXT -->
+    {{#if (ne data.mods undefined)}}
+    <p><strong>{{localize "FALLOUT.UI.mods"}}:</strong></p>
+    <p><strong>{{localize "FALLOUT.UI.mods_count"}}:</strong> {{data.mods.current}}/{{data.mods.max}}</p>
+    {{{data.mods.list}}}
+    {{/if}}
+
+    <!-- * EFFECT TEXT -->
+    {{#if (ne data.effect undefined)}}
+    <p><strong>{{localize "FALLOUT.TEMPLATES.EFFECT"}}:</strong>{{{data.effect}}}</p>
     {{/if}}
 
     {{#if isPhysical}}

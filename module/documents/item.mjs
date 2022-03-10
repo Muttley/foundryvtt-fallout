@@ -81,8 +81,10 @@ export class FalloutItem extends Item {
    */
   async sendToChat(){    
     const itemData = duplicate(this.data);
+    //console.warn(this.parent)
     itemData.isPhysical = itemData.data.hasOwnProperty('weight')
     itemData.isWeapon = itemData.type === "weapon";
+    itemData.isWeapon = itemData.type === "armor";
 
 
 
