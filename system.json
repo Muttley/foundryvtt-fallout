@@ -31,11 +31,16 @@
   ],
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
+	    "lang": "en",
+	    "name": "English",
+	    "path": "lang/en.json"
+	  },
+	  {
+	    "lang": "fr",
+	    "name": "français",
+	    "path": "lang/fr.json"
+	  }
+    ],
   "socket": true,
   "url": "https://github.com/superseva/fallout",
   "manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
