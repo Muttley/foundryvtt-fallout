@@ -84,10 +84,8 @@ export class FalloutItem extends Item {
     //console.warn(this.parent)
     itemData.isPhysical = itemData.data.hasOwnProperty('weight')
     itemData.isWeapon = itemData.type === "weapon";
-    itemData.isWeapon = itemData.type === "armor";
-
-
-
+    itemData.isArmor = itemData.type === "armor";
+    itemData.isPerk = itemData.type === "perk";
 
     const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
     const chatData = {
