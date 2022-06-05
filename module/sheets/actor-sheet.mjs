@@ -472,6 +472,7 @@ export class FalloutActorSheet extends ActorSheet {
         skill: skill.value,
         tag: skill.tag,
         complication: 20,
+        rollLocation:true
       })
     })
 

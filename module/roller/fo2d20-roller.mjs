@@ -5,7 +5,7 @@ export class Roller2D20 {
     complicationTreshold = 20;
     successes = 0;
 
-    static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20 } = {}) {
+    static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20, rollLocation = false } = {}) {
         let dicesRolled = [];
         let successTreshold = parseInt(attribute) + parseInt(skill);
         let critTreshold = tag ? parseInt(skill) : 1;
@@ -13,16 +13,29 @@ export class Roller2D20 {
         let formula = `${dicenum}d20`;
         let roll = new Roll(formula);
         await roll.evaluate({ async: true });
+        let hitLocation = undefined;
+
+        if(rollLocation){
+            let hitLocationRoll = await new Roll("1dh").evaluate({ async: true });
+            try{
+            game.dice3d.showForRoll(hitLocationRoll);
+            }catch(err){}
+            console.log(hitLocationRoll.terms[0].getResultLabel(hitLocationRoll.terms[0].results[0])) 
+            hitLocation = hitLocationRoll.terms[0].getResultLabel(hitLocationRoll.terms[0].results[0]);           
+        }
+        
+
         await Roller2D20.parseD20Roll({
             rollname: rollname,
             roll: roll,
             successTreshold: successTreshold,
             critTreshold: critTreshold,
-            complicationTreshold: complicationTreshold
+            complicationTreshold: complicationTreshold,
+            hitLocation:hitLocation
         });
     }
 
-    static async parseD20Roll({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] }) {
+    static async parseD20Roll({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null }) {
         let i = 0;
         roll.dice.forEach(d => {
             d.results.forEach(r => {
@@ -48,6 +61,7 @@ export class Roller2D20 {
                 }
             })
         });
+        console.warn(hitLocation)
         await Roller2D20.sendToChat({
             rollname: rollname,
             roll: roll,
@@ -55,7 +69,8 @@ export class Roller2D20 {
             critTreshold: critTreshold,
             complicationTreshold: complicationTreshold,
             dicesRolled: dicesRolled,
-            rerollIndexes: rerollIndexes
+            rerollIndexes: rerollIndexes,
+            hitLocation:hitLocation
         });
     }
 
@@ -79,15 +94,17 @@ export class Roller2D20 {
         });
     }
 
-    static async sendToChat({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] } = {}) {
+    static async sendToChat({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null } = {}) {
         let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
         let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
+        console.warn(hitLocation)
         let rollData = {
             rollname: rollname,
             successes: successesNum,
             complications: complicationsNum,
             results: dicesRolled,
-            successTreshold: successTreshold
+            successTreshold: successTreshold,
+            hitLocation: hitLocation
         }
         const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.html", rollData);
         let falloutRoll = {}
@@ -98,13 +115,14 @@ export class Roller2D20 {
         falloutRoll.complicationTreshold = complicationTreshold;
         falloutRoll.rerollIndexes = rerollIndexes;
         falloutRoll.diceFace = "d20";
+        falloutRoll.hitLocation= hitLocation;
         let chatData = {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
             content: html,
             flags: { falloutroll: falloutRoll },
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-            roll: roll,
+            roll: roll
         };
         if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
             chatData.whisper = ChatMessage.getWhisperRecipients("GM");
