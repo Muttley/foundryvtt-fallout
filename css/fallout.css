@@ -85,6 +85,12 @@
   background-image: url(../assets/chat/rec-paper.webp);
 }
 
+.dice-tooltip .dice-rolls .roll.d20.diefalloutlocation {
+  width: unset;
+  background-image: none;
+  text-align: left;
+}
+
 .fallout-chat-message .content {
   padding: 5px;
 }
