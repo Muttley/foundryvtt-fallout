@@ -60,12 +60,12 @@
     "torso": "Main Body"
   },
   "FALLOUT.BODYLOCATION.labels": {
-    "armL": "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)",
-    "armR": "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)",
-    "head": "Head | Optics | Head | Head",
-    "legL": "Left Leg | Arm 3 | Left Hind Leg | Legs",
-    "legR": "Right Leg | Thruster | Right Hind Leg | Legs",
-    "torso": "Torso | Main Body | Torso | Torso"
+    "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)": "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)",
+    "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)": "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)",
+    "Head | Optics | Head | Head": "Head | Optics | Head | Head",
+    "Left Leg | Arm 3 | Left Hind Leg | Legs": "Left Leg | Arm 3 | Left Hind Leg | Legs",
+    "Right Leg | Thruster | Right Hind Leg | Legs": "Right Leg | Thruster | Right Hind Leg | Legs",
+    "Torso | Main Body | Torso | Torso": "Torso | Main Body | Torso | Torso"
   },
   "FALLOUT.CHEM": "Chem",
   "FALLOUT.CREATURE": {

@@ -15,26 +15,26 @@ export class DieFalloutLocation extends Die {
     /** @override */
     getResultLabel(result) {
         return {
-            "1": 'head',
-            "2": 'head',
-            "3": 'torso',
-            "4": 'torso',
-            "5": 'torso',
-            "6": 'torso',
-            "7": 'torso',
-            "8": 'torso',
-            "9": 'armL',
-            "10": 'armL',
-            "11": 'armL',
-            "12": 'armR',
-            "13": 'armR',
-            "14": 'armR',
-            "15": 'legL',
-            "16": 'legL',
-            "17": 'legL',
-            "18": 'legR',
-            "19": 'legR',
-            "20": 'legR'
+            "1": 'Head | Optics | Head | Head',
+            "2": 'Head | Optics | Head | Head',
+            "3": 'Torso | Main Body | Torso | Torso',
+            "4": 'Torso | Main Body | Torso | Torso',
+            "5": 'Torso | Main Body | Torso | Torso',
+            "6": 'Torso | Main Body | Torso | Torso',
+            "7": 'Torso | Main Body | Torso | Torso',
+            "8": 'Torso | Main Body | Torso | Torso',
+            "9": 'Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)',
+            "10": 'Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)',
+            "11": 'Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)',
+            "12": 'Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)',
+            "13": 'Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)',
+            "14": 'Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)',
+            "15": 'Left Leg | Arm 3 | Left Hind Leg | Legs',
+            "16": 'Left Leg | Arm 3 | Left Hind Leg | Legs',
+            "17": 'Left Leg | Arm 3 | Left Hind Leg | Legs',
+            "18": 'Right Leg | Thruster | Right Hind Leg | Legs',
+            "19": 'Right Leg | Thruster | Right Hind Leg | Legs',
+            "20": 'Right Leg | Thruster | Right Hind Leg | Legs'
         }[result.result];
     }
 
