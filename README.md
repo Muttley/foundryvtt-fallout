@@ -41,6 +41,7 @@ This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the book
 -   Robot Modules List quick view
 -   Conditions
 -   Action Points trackers for Overseer and the Party
+-   Location Die "1dh"
 
 ## FAQ
 
