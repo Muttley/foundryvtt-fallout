@@ -10,6 +10,9 @@
             <span class="dice-icon d20{{#if reroll}} reroll{{/if}}{{#ifCond complication '==' 1}} complication{{/ifCond}}{{#ifCond success '==' 1}} success{{/ifCond}}{{#ifCond success '==' 2}} crit{{/ifCond}}" data-index="{{@index}}">{{dice.result}}</span>
             {{/each}}
         </div>
+        {{#if (ne hitLocation null)}}
+        <div class="hit-location-label"><strong>{{localize "FALLOUT.TEMPLATES.HitLocationLabel"}} ({{hitLocationResult}})</strong>: {{localize (concat "FALLOUT.BODYLOCATION.labels." hitLocation)}}</div>
+        {{/if}}
         <button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}}</button>
     </div>
 </div>

@@ -1,7 +1,7 @@
 export class Dialog2d20 extends Dialog {
 
 
-    constructor(rollName, diceNum, attribute, skill, tag, complication, dialogData = {}, options = {}) {
+    constructor(rollName, diceNum, attribute, skill, tag, complication, rollLocation, dialogData = {}, options = {}) {
         super(dialogData, options);
         this.rollName = rollName;
         this.diceNum = diceNum;
@@ -9,6 +9,7 @@ export class Dialog2d20 extends Dialog {
         this.skill = skill;
         this.tag = tag;
         this.complication = complication;
+        this.rollLocation = rollLocation;
         this.options.classes = ["dice-icon"];
     }
 
@@ -28,7 +29,7 @@ export class Dialog2d20 extends Dialog {
             let skill = html.find('[name="skill"]').val();
             let complication = html.find('[name="complication"]').val();
             let isTag = html.find('[name="tag"]').is(':checked');
-            game.fallout.Roller2D20.rollD20({ rollname: this.rollName, dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication })
+            game.fallout.Roller2D20.rollD20({ rollname: this.rollName, dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication, rollLocation: this.rollLocation })
         });
     }
 
@@ -37,7 +38,7 @@ export class Dialog2d20 extends Dialog {
         $(html).find(`[data-index="${this.diceNum}"]`).addClass('marked');
     }
 
-    static async createDialog({ rollName = "Roll D20", diceNum = 2, attribute = 0, skill = 0, tag = false, complication = 20 } = {}) {
+    static async createDialog({ rollName = "Roll D20", diceNum = 2, attribute = 0, skill = 0, tag = false, complication = 20, rollLocation=false } = {}) {
         let dialogData = {}
         dialogData.rollName = rollName;
         dialogData.diceNum = diceNum;
@@ -45,8 +46,9 @@ export class Dialog2d20 extends Dialog {
         dialogData.skill = skill;
         dialogData.tag = tag;
         dialogData.complication = complication;
+        dialogData.rollLocation = rollLocation;
         const html = await renderTemplate("systems/fallout/templates/dialogs/dialog2d20.html", dialogData);
-        let d = new Dialog2d20(rollName, diceNum, attribute, skill, tag, complication, {
+        let d = new Dialog2d20(rollName, diceNum, attribute, skill, tag, complication, rollLocation, {
             title: rollName,
             content: html,
             buttons: {

@@ -1,3 +1,10 @@
+V 9.0.3
+
+- Introduced the "Hit Location Die" that is automatically rolled when clicking on the weapon. You can also roll it by using the "h" identifier. (eg. /r 1dh or as inline [[1dh]])
+- Added French translation
+
+
+
 V 9.0.2
 
 - Setting added: "Show Overseer's AP To Player"

@@ -1,10 +1,10 @@
 export class FOHovers{
     static LIST = {}
     static async loadList(){
-        const listLocation = game.settings.get('fallout', 'hoversJsonLocation')
+        const listLocation = await game.settings.get('fallout', 'hoversJsonLocation')
         const jsonFile = await fetch(listLocation)
         const content = await jsonFile.json();
-        FOHovers.LIST = content;
+        FOHovers.LIST = content;  
     }  
 }
 

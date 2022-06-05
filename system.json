@@ -2,7 +2,7 @@
   "name": "fallout",
   "title": "Fallout 2d20",
   "description": "The unofficial Fallout 2d20 System for FoundryVTT",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "author": "HappySteve",
@@ -37,13 +37,13 @@
 	  },
 	  {
 	    "lang": "fr",
-	    "name": "français",
+	    "name": "Français",
 	    "path": "lang/fr.json"
 	  }
     ],
   "socket": true,
   "url": "https://github.com/superseva/fallout",
   "manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
-  "download": "https://github.com/superseva/fallout/releases/download/v9.0.2/fallout.zip",
+  "download": "https://github.com/superseva/fallout/releases/download/v9.0.3/fallout.zip",
   "license": "LICENSE.txt"
 }

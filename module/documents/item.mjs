@@ -40,36 +40,63 @@ export class FalloutItem extends Item {
    * @param {Event} event   The originating click event
    * @private
    */
-  async roll() {
-    const item = this.data;
+  // async roll() {
+  //   const item = this.data;
 
-    // Initialize chat data.
-    const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get('core', 'rollMode');
-    const label = `[${item.type}] ${item.name}`;
+  //   // Initialize chat data.
+  //   const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+  //   const rollMode = game.settings.get('core', 'rollMode');
+  //   const label = `[${item.type}] ${item.name}`;
 
-    // If there's no roll data, send a chat message.
-    if (!this.data.data.formula) {
-      ChatMessage.create({
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: label,
-        content: item.data.description ?? ''
-      });
+  //   // If there's no roll data, send a chat message.
+  //   if (!this.data.data.formula) {
+  //     ChatMessage.create({
+  //       speaker: speaker,
+  //       rollMode: rollMode,
+  //       flavor: label,
+  //       content: item.data.description ?? ''
+  //     });
+  //   }
+  //   // Otherwise, create a roll and send a chat message from it.
+  //   else {
+  //     // Retrieve roll data.
+  //     const rollData = this.getRollData();
+
+  //     // Invoke the roll and submit it to chat.
+  //     const roll = new Roll(rollData.item.formula, rollData).roll();
+  //     roll.toMessage({
+  //       speaker: speaker,
+  //       rollMode: rollMode,
+  //       flavor: label,
+  //     });
+  //     return roll;
+  //   }
+  // }
+
+
+  /**
+   * Handle send to chat clicks.
+   * @param {Event} event   The originating click event
+   * @private
+   */
+  async sendToChat(){    
+    const itemData = duplicate(this.data);
+    itemData.isPhysical = itemData.data.hasOwnProperty('weight')
+    itemData.isWeapon = itemData.type === "weapon";
+    itemData.isArmor = itemData.type === "armor";
+    itemData.isPerk = itemData.type === "perk";
+
+    const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
+    const chatData = {
+        user: game.user.id,
+        rollMode: game.settings.get("core", "rollMode"),
+        content: html,
+    };
+    if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
+        chatData.whisper = ChatMessage.getWhisperIDs("GM");
+    } else if (chatData.rollMode === "selfroll") {
+        chatData.whisper = [game.user];
     }
-    // Otherwise, create a roll and send a chat message from it.
-    else {
-      // Retrieve roll data.
-      const rollData = this.getRollData();
-
-      // Invoke the roll and submit it to chat.
-      const roll = new Roll(rollData.item.formula, rollData).roll();
-      roll.toMessage({
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: label,
-      });
-      return roll;
-    }
+    ChatMessage.create(chatData);
   }
 }

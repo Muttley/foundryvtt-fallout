@@ -30,6 +30,13 @@
 	background-image: url(../assets/chat/rec-paper.webp);
 }
 
+// Hit Die Style
+.dice-tooltip .dice-rolls .roll.d20.diefalloutlocation {
+	width: unset;
+	background-image: none;
+	text-align: left;
+}
+
 .fallout-chat-message {
 	.content {
 		// background-color: rgb(255, 255, 255);
@@ -79,6 +86,10 @@
 			background-image: url(../assets/chat/yellow-placq.webp);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
+		}
+		.hit-location-label{
+			font-size: 0.75rem;
+			padding: 0 0.5rem 0.5rem 0.5rem;
 		}
 		.dice-icon {
 			cursor: pointer;

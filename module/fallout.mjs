@@ -17,7 +17,7 @@ import { registerSettings } from './settings.js'
 import { APTracker } from './ap/ap-tracker.mjs'
 //Dice
 import { DieFalloutDamage } from './roller/damageDie.js'
-//import { DieFalloutLocation, DieFalloutRobotLocation } from './roller/locationDie.js'
+import { DieFalloutLocation, DieFalloutRobotLocation } from './roller/locationDie.js'
 
 import {FOHovers} from './helpers/hovers.mjs'
 
@@ -63,7 +63,7 @@ Hooks.once('init', async function () {
   registerSettings()
 
   CONFIG.Dice.terms['c'] = DieFalloutDamage
-  //CONFIG.Dice.terms['h'] = DieFalloutLocation
+  CONFIG.Dice.terms['h'] = DieFalloutLocation
   //CONFIG.Dice.terms['r'] = DieFalloutRobotLocation
 
   Die.MODIFIERS['ef'] = function minResult(modifier) {
@@ -308,34 +308,34 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     colorset: 'fallout',
   })
 
-  // dice3d.addDicePreset({
-  //   type: 'dh',
-  //   fontScale: 0.9,
-  //   labels: [
-  //     'He',
-  //     'He',
-  //     'To',
-  //     'To',
-  //     'To',
-  //     'To',
-  //     'To',
-  //     'To',
-  //     'LA',
-  //     'LA',
-  //     'LA',
-  //     'RA',
-  //     'RA',
-  //     'RA',
-  //     'LL',
-  //     'LL',
-  //     'LL',
-  //     'RL',
-  //     'RL',
-  //     'RL'
-  //   ],
-  //   system: 'fallout',
-  //   colorset: 'fallout',
-  // })
+  dice3d.addDicePreset({
+    type: 'dh',
+    fontScale: 0.9,
+    labels: [
+      'systems/fallout/assets/dice-locations/head.webp',
+      'systems/fallout/assets/dice-locations/head.webp',
+      'systems/fallout/assets/dice-locations/body.webp',
+      'systems/fallout/assets/dice-locations/body.webp',
+      'systems/fallout/assets/dice-locations/body.webp',
+      'systems/fallout/assets/dice-locations/body.webp',
+      'systems/fallout/assets/dice-locations/body.webp',
+      'systems/fallout/assets/dice-locations/body.webp',
+      'systems/fallout/assets/dice-locations/arm-l.webp',
+      'systems/fallout/assets/dice-locations/arm-l.webp',
+      'systems/fallout/assets/dice-locations/arm-l.webp',
+      'systems/fallout/assets/dice-locations/arm-r.webp',
+      'systems/fallout/assets/dice-locations/arm-r.webp',
+      'systems/fallout/assets/dice-locations/arm-r.webp',
+      'systems/fallout/assets/dice-locations/leg-l.webp',
+      'systems/fallout/assets/dice-locations/leg-l.webp',
+      'systems/fallout/assets/dice-locations/leg-l.webp',
+      'systems/fallout/assets/dice-locations/leg-r.webp',
+      'systems/fallout/assets/dice-locations/leg-r.webp',
+      'systems/fallout/assets/dice-locations/leg-r.webp'
+    ],
+    system: 'fallout',
+    colorset: 'fallout',
+  })
 
   // dice3d.addDicePreset({
   //   type: 'dr',
