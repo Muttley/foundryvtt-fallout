@@ -11,7 +11,7 @@
             {{/each}}
         </div>
         {{#if (ne hitLocation null)}}
-        <div class="hit-location-label">{{localize "FALLOUT.TEMPLATES.HitLocationLabel"}}: {{hitLocation}}</div>
+        <div class="hit-location-label"><strong>{{localize "FALLOUT.TEMPLATES.HitLocationLabel"}} ({{hitLocationResult}})</strong>: {{localize (concat "FALLOUT.BODYLOCATION.labels." hitLocation)}}</div>
         {{/if}}
         <button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}}</button>
     </div>

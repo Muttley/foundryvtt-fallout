@@ -142,6 +142,11 @@
   background-repeat: no-repeat;
 }
 
+.fallout-chat-message .content .hit-location-label {
+  font-size: 0.75rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
 .fallout-chat-message .content .dice-icon {
   cursor: pointer;
   position: relative;
