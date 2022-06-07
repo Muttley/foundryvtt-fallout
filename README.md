@@ -82,3 +82,6 @@ Since there is no native Foundry support for Items to contain other Items I am l
 Foundry VTT: Limited License Agreement for module development.
 
 All copyright assets used with explicit consent from Modiphius Entertainment. The fvtt-modiphius developer community holds no claim to underlying copyrighted assets.
+
+## Thanks to
+- @e4g13 for making new images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13
