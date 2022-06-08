@@ -1,3 +1,8 @@
+V 9.0.5
+
+- Send item details to chat
+
+
 V 9.0.4
 
 - Thanks to @e4g13 for making new images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13
