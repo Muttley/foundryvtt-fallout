@@ -82,9 +82,15 @@ export class FalloutItem extends Item {
   async sendToChat(){    
     const itemData = duplicate(this.data);
     itemData.isPhysical = itemData.data.hasOwnProperty('weight')
+    itemData.isSkill = itemData.type === "skill"
+    itemData.isPerk = itemData.type === "perk"
     itemData.isWeapon = itemData.type === "weapon";
-    itemData.isArmor = itemData.type === "armor";
-    itemData.isPerk = itemData.type === "perk";
+    itemData.isApparel = itemData.type === "apparel";
+    itemData.isWeaponMod = itemData.type === "weapon_mod";
+    itemData.isApparelMod = itemData.type === "apparel_mod";
+    itemData.isConsumable = itemData.type === "consumable";
+    itemData.isBook = itemData.type === "books_and_magz";
+    itemData.isRobotArmor = itemData.type === "robot_armor";
 
     const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
     const chatData = {

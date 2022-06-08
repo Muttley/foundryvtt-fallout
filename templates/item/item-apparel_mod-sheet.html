@@ -29,7 +29,7 @@
                 {{#each data.resistance as |item key|}}
                 <div class="flex align-mid">
                     <label><span class="fo-{{key}}"></span> {{key}} &nbsp;</label>
-                    <input type="number" class="num-short-2" name="data.resistance.{{key}}.value" value="{{item.value}}">
+                    <input type="number" class="num-short-2" name="data.resistance.{{key}}" value="{{item}}">
                 </div>
                 {{/each}}
             </div>
