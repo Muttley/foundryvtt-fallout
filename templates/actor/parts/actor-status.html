@@ -7,15 +7,15 @@
             </div>
             <div class="flexrow resource-row align-mid">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.MELEE_DAMAGE"}}</label>
-                <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
+                <input class="num-short-2" type="number" name="system.meleeDamage.base" value="{{system.meleeDamage.base}}">
             </div>
             <div class="flexrow resource-row align-mid">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.DEFENSE"}}</label>
-                <input class="num-short-2" type="number" name="data.defense.base" value="{{data.defense.base}}">
+                <input class="num-short-2" type="number" name="system.defense.base" value="{{system.defense.base}}">
             </div>
             <div class="flexrow resource-row align-mid">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.INITIATIVE"}}</label>
-                <input class="num-short-2" type="number" name="data.initiative.value" value="{{data.initiative.value}}">
+                <input class="num-short-2" type="number" name="system.initiative.value" value="{{system.initiative.value}}">
             </div>
         </div>
 
@@ -27,32 +27,32 @@
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-physical"></i>
-                        <label for="data.resistance.physical">{{localize "FALLOUT.TEMPLATES.PHYS"}}</label>
+                        <label for="system.resistance.physical">{{localize "FALLOUT.TEMPLATES.PHYS"}}</label>
                     </span>
-                    <input type="number" name="data.resistance.physical" class="num-short-2"
-                        value="{{data.resistance.physical}}">
+                    <input type="number" name="system.resistance.physical" class="num-short-2"
+                        value="{{system.resistance.physical}}">
                 </div>
                 <div class="flexrow resource-row">
-                    <span><i class="fo-energy"></i><label for="data.resistance.energy">{{localize
+                    <span><i class="fo-energy"></i><label for="system.resistance.energy">{{localize
                             "FALLOUT.TEMPLATES.ENG"}}</label></span>
-                    <input type="number" name="data.resistance.energy" class="num-short-2"
-                        value="{{data.resistance.energy}}">
+                    <input type="number" name="system.resistance.energy" class="num-short-2"
+                        value="{{system.resistance.energy}}">
                 </div>
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-radiation"></i>
-                        <label for="data.resistance.radiation">{{localize "FALLOUT.TEMPLATES.RAD"}}</label>
+                        <label for="system.resistance.radiation">{{localize "FALLOUT.TEMPLATES.RAD"}}</label>
                     </span>
-                    <input type="number" name="data.resistance.radiation" class="num-short-2"
-                        value="{{data.resistance.radiation}}">
+                    <input type="number" name="system.resistance.radiation" class="num-short-2"
+                        value="{{system.resistance.radiation}}">
                 </div>
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-poison"></i>
-                        <label for="data.resistance.poison">{{localize "FALLOUT.TEMPLATES.POISON"}}</label>
+                        <label for="system.resistance.poison">{{localize "FALLOUT.TEMPLATES.POISON"}}</label>
                     </span>
-                    <input type="number" name="data.resistance.poison" class="num-short-2"
-                        value="{{data.resistance.poison}}">
+                    <input type="number" name="system.resistance.poison" class="num-short-2"
+                        value="{{system.resistance.poison}}">
                 </div>
             </div>
         </div>
@@ -77,23 +77,23 @@
         </div>
         {{!-- PIP BOY --}}
         <div class="pipboy-status-screen {{actor.type}}">
-            <div class="body-part head {{data.body_parts.head.status}}"></div>
-            <div class="body-part torso {{data.body_parts.torso.status}}"></div>
-            <div class="body-part armL {{data.body_parts.armL.status}}"></div>
-            <div class="body-part armR {{data.body_parts.armR.status}}"></div>
-            <div class="body-part legL {{data.body_parts.legL.status}}"></div>
-            <div class="body-part legR {{data.body_parts.legR.status}}"></div>
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.head
+            <div class="body-part head {{system.body_parts.head.status}}"></div>
+            <div class="body-part torso {{system.body_parts.torso.status}}"></div>
+            <div class="body-part armL {{system.body_parts.armL.status}}"></div>
+            <div class="body-part armR {{system.body_parts.armR.status}}"></div>
+            <div class="body-part legL {{system.body_parts.legL.status}}"></div>
+            <div class="body-part legR {{system.body_parts.legR.status}}"></div>
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.head
             keypart="head"}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.torso
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.torso
             keypart="torso"}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armL
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.armL
             keypart="armL"}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.armR
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.armR
             keypart="armR"}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legL
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.legL
             keypart="legL"}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=data.body_parts.legR
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.legR
             keypart="legR"}}
         </div>
 
@@ -107,10 +107,10 @@
             </div>
             <div class="flexrow align-mid">
                 <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number"
-                    name="data.health.value" value="{{data.health.value}}" min="0">
+                    name="system.health.value" value="{{system.health.value}}" min="0">
                 <span class="text-center">/</span>
                 <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number"
-                    name="data.health.max" value="{{data.health.max}}" min="0">
+                    name="system.health.max" value="{{system.health.max}}" min="0">
             </div>
         </div>
 
@@ -128,7 +128,7 @@
                 <i class="fo-radiation" style="margin-right: 3px;"></i>
                 <h4 style="margin:0 5px 0 0"><strong>{{localize "FALLOUT.TEMPLATES.RADIATION"}}</strong>
                 </h4><input class="num-short-2" style="font-size:12px; background-color: beige; color: black;"
-                    type="number" name="data.radiation" value="{{data.radiation}}" min="0">
+                    type="number" name="system.radiation" value="{{system.radiation}}" min="0">
             </div>
         </div>
         {{/ifCond}}
@@ -196,7 +196,7 @@
                     {{#each data.equippedRobotMods as |item key|}}
                     <li class="item">
                         <h4 style="margin: 0; padding: 2px; background-color: #00000040;">{{item.name}}</h4>
-                        <span class="font-size-11">{{{item.data.data.effect}}}</span>
+                        <span class="font-size-11">{{{item.system.effect}}}</span>
                     </li>
                     {{/each}}
                 </ol>
@@ -211,16 +211,16 @@
 <div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">
     <div class="flexrow align-mid">
         <div class="flex-center">
-            <label for="">{{data.carryWeight.base}} .{{localize "FALLOUT.TEMPLATES.lbs"}} + </label>
-            <input type="number" name="data.carryWeight.mod" class="num-short-2" value="{{data.carryWeight.mod}}">
-            <label for=""> = {{localize "FALLOUT.TEMPLATES.MAX"}}: {{data.carryWeight.value}} .{{localize
+            <label for="">{{system.carryWeight.base}} .{{localize "FALLOUT.TEMPLATES.lbs"}} + </label>
+            <input type="number" name="system.carryWeight.mod" class="num-short-2" value="{{system.carryWeight.mod}}">
+            <label for=""> = {{localize "FALLOUT.TEMPLATES.MAX"}}: {{system.carryWeight.value}} .{{localize
                 "FALLOUT.TEMPLATES.lbs"}}</label>
         </div>
         <div class="text-center">
-            <label>{{localize "FALLOUT.TEMPLATES.Encumbrance_Level"}}: {{data.encumbranceLevel}}</label>
+            <label>{{localize "FALLOUT.TEMPLATES.Encumbrance_Level"}}: {{system.encumbranceLevel}}</label>
         </div>
         <div style="text-align: right;">
-            <label>{{localize "FALLOUT.TEMPLATES.Total"}}: {{data.totalWeight}} / {{data.carryWeight.value}} .{{localize
+            <label>{{localize "FALLOUT.TEMPLATES.Total"}}: {{system.totalWeight}} / {{system.carryWeight.value}} .{{localize
                 "FALLOUT.TEMPLATES.lbs"}}</label>
         </div>
     </div>

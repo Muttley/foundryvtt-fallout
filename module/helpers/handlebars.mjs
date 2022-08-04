@@ -86,7 +86,7 @@ export const registerHandlebarsHelpers = function () {
 
   Handlebars.registerHelper('isCreaturesWeapon', function (weapon) {
     if (
-      weapon.data.data.weaponType == 'creatureAttack' ||
+      weapon.system.weaponType == 'creatureAttack' ||
       weapon.actor?.type == 'creature'
     )
       return true
@@ -98,8 +98,8 @@ export const registerHandlebarsHelpers = function () {
     actor,
   ) {
     if (
-      (weapon.data.weaponType == 'unarmed' ||
-        weapon.data.weaponType == 'meleeWeapons') &&
+      (weapon.weaponType == 'unarmed' ||
+        weapon.weaponType == 'meleeWeapons') &&
       actor?.type != 'creature'
     )
       return true
@@ -107,7 +107,7 @@ export const registerHandlebarsHelpers = function () {
   })
 
   Handlebars.registerHelper('isWeaponDamaged', function (weapon) {
-    if (!weapon.data.tear) return false
+    if (!weapon.tear) return false
     else return true
   })
 

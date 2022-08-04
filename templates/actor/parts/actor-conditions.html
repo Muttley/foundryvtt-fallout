@@ -4,13 +4,13 @@
     </div>
     <div class="box-content">
         <ol class="items-list">
-            {{#each data.conditions as |item key|}}
+            {{#each system.conditions as |item key|}}
             <li class="item flexrow">
                 <div class="item-name flex3">
                     <h4 class="resource-label upperC">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</h4>
                 </div>
                 <div class="text-center">
-                    <input type="number" class="num-short-2" name="data.conditions.{{key}}" value="{{item}}">
+                    <input type="number" class="num-short-2" name="system.conditions.{{key}}" value="{{item}}">
                 </div>
             </li>
             {{/each}}

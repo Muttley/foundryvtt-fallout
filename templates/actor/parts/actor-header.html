@@ -5,8 +5,8 @@
             <h1 class="charname"><input class="underline font-lobster" name="name" type="text" value="{{actor.name}}"
                     placeholder="Name" /></h1>
             <span class="flex align-mid">
-                <!-- <label for="data.origin" class="resource-label">{{localize "FALLOUT.UI.ORIGIN"}}</label> -->
-                <input placeholder="Origin" type="text" class="underline" name="data.origin" value="{{data.origin}}"
+                <!-- <label for="system.origin" class="resource-label">{{localize "FALLOUT.UI.ORIGIN"}}</label> -->
+                <input placeholder="Origin" type="text" class="underline" name="system.origin" value="{{system.origin}}"
                     data-dtype="String" />
             </span>
         </div>
@@ -14,10 +14,10 @@
         <div class="resources grid right-side">
             <div class="flexcol resource-plate-header plate-2">
                 <div class="resource flexrow align-mid">
-                    <label for="data.level.value" class="resource-label"
+                    <label for="system.level.value" class="resource-label"
                         style="font-size: 18px; color: white;">{{localize "FALLOUT.LEVEL.Level"}}</label>
                     <input type="number" style="font-size:18px; max-width:2rem;text-align: center; margin-right: 20px;"
-                        name="data.level.value" value="{{data.level.value}}" data-dtype="Number" min="0" />
+                        name="system.level.value" value="{{system.level.value}}" data-dtype="Number" min="0" />
                 </div>
             </div>
             <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
@@ -26,32 +26,32 @@
                     <label style="font-size: 12px; padding-left: 10px;">{{localize "FALLOUT.TEMPLATES.Points"}}</label>
                 </div>
                 <div class="special-number">
-                    <input type="number" style="font-size: 22px;" name="data.luckPoints" value="{{data.luckPoints}}"
+                    <input type="number" style="font-size: 22px;" name="system.luckPoints" value="{{system.luckPoints}}"
                         min="0">
                 </div>
             </div>
             <div class="flexrow grid-span-2" style="font-size:12px">
                 {{#if (or (eq actor.type "character") (eq actor.type "robot"))}}
                 <div class="resource flex-group-left" style="padding-right: 10px;">
-                    <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
+                    <label for="system.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.CurrentXP"}}</label>
                     <div class="resource-content flexrow flex-center flex-between">
-                        <input type="text" class="underline" name="data.level.currentXP"
-                            value="{{data.level.currentXP}}" data-dtype="Number" />
+                        <input type="text" class="underline" name="system.level.currentXP"
+                            value="{{system.level.currentXP}}" data-dtype="Number" />
                     </div>
                 </div>
                 <div class="resource flex-group-left">
-                    <label for="data.power.value" class="resource-label">{{localize "FALLOUT.LEVEL.NextXP"}}</label>
+                    <label for="system.power.value" class="resource-label">{{localize "FALLOUT.LEVEL.NextXP"}}</label>
                     <div class="resource-content flexrow flex-center flex-between">
-                        <input type="text" class="underline" name="data.level.nextLevelXP"
-                            value="{{data.level.nextLevelXP}}" data-dtype="Number" />
+                        <input type="text" class="underline" name="system.level.nextLevelXP"
+                            value="{{system.level.nextLevelXP}}" data-dtype="Number" />
                     </div>
                 </div>
                 {{else}}
                 <div class="resource flex-group-left">
-                    <label for="data.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.RewardXP"}}</label>
+                    <label for="system.health.value" class="resource-label">{{localize "FALLOUT.LEVEL.RewardXP"}}</label>
                     <div class="resource-content flexrow flex-center flex-between">
-                        <input type="text" class="underline" name="data.level.currentXP"
-                            value="{{data.level.currentXP}}" data-dtype="Number" />
+                        <input type="text" class="underline" name="system.level.currentXP"
+                            value="{{system.level.currentXP}}" data-dtype="Number" />
                     </div>
                 </div>
                 {{/if}}

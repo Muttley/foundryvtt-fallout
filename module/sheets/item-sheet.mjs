@@ -24,16 +24,44 @@ export class FalloutItemSheet extends ItemSheet {
 
     // Alternatively, you could use the following return statement to do a
     // unique item sheet by type, like `weapon-sheet.html`.
-    return `${path}/item-${this.item.data.type}-sheet.html`;
+    return `${path}/item-${this.item.type}-sheet.html`;
   }
 
   /* -------------------------------------------- */
 
   /** @override */
-  getData() {
+  async getData(options) {
     // Retrieve base data structure.
-    const context = super.getData();
+    const context = await super.getData(options);
 
+
+    const item = context.item;
+    const source = item.toObject();
+
+
+    foundry.utils.mergeObject(context, {
+      source: source.system,
+      system: item.system,
+      data: item.system,
+      isEmbedded: item.isEmbedded,
+
+      type: item.type,      
+      flags: item.flags,
+
+      // Enrich HTML description
+      descriptionHTML: await TextEditor.enrichHTML(item.system.description, {
+        secrets: item.isOwner,
+        async: true
+      }),
+
+      FALLOUT: CONFIG.FALLOUT,
+
+      effects: prepareActiveEffectCategories(item.effects)
+    });
+
+
+
+/*
     // Use a safe clone of the item data for further operations.
     const itemData = context.item.data;
 
@@ -50,13 +78,7 @@ export class FalloutItemSheet extends ItemSheet {
 
     context.effects = prepareActiveEffectCategories(this.item.effects);
     context.FALLOUT = CONFIG.FALLOUT;
-
-
-    // Prepare Aditional Data
-    // if (itemData.type == 'apaprel') {
-    //context.apparelTypes = CONFIG.FALLOUT.APPAREL_TYPE;
-    //}
-
+*/
     return context;
   }
 
