@@ -128,4 +128,9 @@ export const registerHandlebarsHelpers = function () {
       return Array.prototype.slice.call(arguments, 0, -1).some(Boolean)
     },
   })
+
+  Handlebars.registerHelper('enrichHtmlHelper', function (rawText){
+    return TextEditor.enrichHTML(rawText, {async: false})
+  })
+
 }
