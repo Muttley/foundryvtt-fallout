@@ -33,8 +33,7 @@ export class FalloutItemSheet extends ItemSheet {
 
     foundry.utils.mergeObject(context, {
       source: source.system,
-      system: item.system,
-      
+      system: item.system,      
       isEmbedded: item.isEmbedded,
       type: item.type,      
       flags: item.flags,      

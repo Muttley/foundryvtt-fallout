@@ -21,11 +21,11 @@
         <div class="left-column">
           {{!-- SPECIAL --}}
           <div class="flexrow resource-row">
-            {{#each data.attributes as |ability key| }}
+            {{#each system.attributes as |ability key| }}
             <div class="box">
               <div class="box-header text-center upperC resource-label">{{subString key 0 1}}</div>
               <div class="flex-center">
-                <input class="text-center" type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}">
+                <input class="text-center" type="number" name="system.attributes.{{key}}.value" value="{{ability.value}}">
               </div>
             </div>
             {{/each}}
@@ -39,13 +39,13 @@
                   {{#each skills as |item id|}}
                   <li class="item skill flexrow" data-item-id="{{item._id}}">
                     <div class="item-name">
-                      <h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{toUpperCase item.data.defaultAttribute}}]</a></h4>
+                      <h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{toUpperCase item.system.defaultAttribute}}]</a></h4>
                     </div>
                     <div class="item-skill-tag">
-                      <input type="checkbox" name="tag" {{#ifCond item.data.tag '==' true}}checked{{/ifCond}}>
+                      <input type="checkbox" name="tag" {{#ifCond item.system.tag '==' true}}checked{{/ifCond}}>
                     </div>
                     <div class="item-skill-value">
-                      <input type="number" class="num-short-2" name="value" value="{{item.data.value}}">
+                      <input type="number" class="num-short-2" name="value" value="{{item.system.value}}">
                     </div>
                   </li>
                   {{/each}}
@@ -59,21 +59,21 @@
             <div class="box no-padding bgEven">
               <h4 class="box-header text-center">HP</h4>
               <div class="flexrow">
-                <input class="num-short-3" type="number" name="data.health.value" value="{{data.health.value}}">
+                <input class="num-short-3" type="number" name="system.health.value" value="{{system.health.value}}">
                 <label class="text-center"> / </label>
-                <input class="num-short-3" type="number" name="data.health.max" value="{{data.health.max}}">
+                <input class="num-short-3" type="number" name="system.health.max" value="{{system.health.max}}">
               </div>
             </div>
             <div class="box no-padding bgOdd">
               <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.INITIATIVE"}}</h4>
               <div class="text-center">
-                <input class="num-short-2" type="number" name="data.initiative.value" value="{{data.initiative.value}}">
+                <input class="num-short-2" type="number" name="system.initiative.value" value="{{system.initiative.value}}">
               </div>
             </div>
             <div class="box no-padding bgEven">
               <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.DEFENSE"}}</h4>
               <div class="text-center">
-                <input class="num-short-2" type="number" name="data.defense.value" value="{{data.defense.value}}">
+                <input class="num-short-2" type="number" name="system.defense.value" value="{{system.defense.value}}">
               </div>
             </div>
           </div>
@@ -83,14 +83,14 @@
             <div class="box no-padding bgOdd">
               <h4 class="box-header text-center">{{localize "FALLOUT.UI.CarryWeight"}}</h4>
               <div class="text-center">
-                <label><input class="num-short-3" type="number" name="data.carryWeight.base" value="{{data.carryWeight.base}}"> {{localize "FALLOUT.TEMPLATES.lbs"}}</label>
+                <label><input class="num-short-3" type="number" name="system.carryWeight.base" value="{{system.carryWeight.base}}"> {{localize "FALLOUT.TEMPLATES.lbs"}}</label>
 
               </div>
             </div>
             <div class="box no-padding bgEven">
               <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.MELEE_BONUS"}}</h4>
               <div class="text-center">
-                <input class="num-short-2" type="number" name="data.meleeDamage.base" value="{{data.meleeDamage.base}}">
+                <input class="num-short-2" type="number" name="system.meleeDamage.base" value="{{system.meleeDamage.base}}">
               </div>
             </div>
           </div>
@@ -98,11 +98,11 @@
           {{!-- RESISTANCES --}}
           <div class="box no-padding bgOdd">
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
-            {{#each data.resistance as |res key|}}
+            {{#each system.resistance as |res key|}}
             <div class="flexrow resource-row">
               <span class="align-mid" style="display: flex;">
-                <label for="data.resistance.{{key}}.locations" style="margin-right: 5px; width: 20px;" class=""><i class="fo-{{key}} resistance-icon" title="physical"></i></label>
-                <input type="text" class="flex3" name="data.resistance.{{key}}.locations" value="{{res.locations}}" placeholder="Body Locations">
+                <label for="system.resistance.{{key}}.locations" style="margin-right: 5px; width: 20px;" class=""><i class="fo-{{key}} resistance-icon" title="physical"></i></label>
+                <input type="text" class="flex3" name="system.resistance.{{key}}.locations" value="{{res.locations}}" placeholder="Body Locations">
               </span>
             </div>
             {{/each}}
@@ -110,7 +110,7 @@
           {{!-- INJURIES --}}
           <div class="box no-padding bgEven">
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
-            <textarea class="color-prim" name="data.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{data.injuries}}</textarea>
+            <textarea class="color-prim" name="system.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{system.injuries}}</textarea>
           </div>
         </div>
         {{!-- RIGHT COLUMN __________________________________________________ --}}

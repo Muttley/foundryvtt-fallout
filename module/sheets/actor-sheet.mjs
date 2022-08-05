@@ -372,7 +372,7 @@ export class FalloutActorSheet extends ActorSheet {
     })
 
     // * CLICK TO EXPAND
-    html.find('.expandable-info').click((event) => this._onItemSummary(event))
+    html.find('.expandable-info').click(async (event) => this._onItemSummary(event))
 
     // * Add Inventory Item
     html.find('.item-create').click(this._onItemCreate.bind(this))
@@ -611,16 +611,22 @@ export class FalloutActorSheet extends ActorSheet {
     })
   }
 
-  _onItemSummary(event) {
+  async _onItemSummary(event) {
     event.preventDefault()
     let li = $(event.currentTarget).parents('.item')
     let item = this.actor.items.get(li.data('itemId'))
     let moreInfo = ''
 
     if (item.system.effect != null) {
-      moreInfo = item.system.effect
+      moreInfo = await TextEditor.enrichHTML(item.system.effect, {
+        secrets: item.isOwner,
+        async: true
+      })
     } else {
-      moreInfo = item.system.description
+      moreInfo = await TextEditor.enrichHTML(item.system.description, {
+        secrets: item.isOwner,
+        async: true
+      })
     }
     // Toggle summary
     if (li.hasClass('expanded')) {
