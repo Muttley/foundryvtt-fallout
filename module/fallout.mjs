@@ -145,7 +145,6 @@ Hooks.on('renderChatMessage', (message, html, data) => {
             dicesRolled: falloutRoll.dicesRolled,
           })
         } else if (falloutRoll.diceFace == 'd6') {
-          console.info(message)
           Roller2D20.rerollD6({
             rollname: falloutRoll.rollname,
             rerollIndexes: rerollIndex,

@@ -22,7 +22,7 @@
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <a class="weapon-roll-damage"><strong>{{item.data.damage.rating}}</strong> <span class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} +
+                    <a class="weapon-roll-damage"><strong>{{item.system.damage.rating}}</strong> <span class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} +
                         <strong>{{../actor.system.meleeDamage.base}}</strong> <span class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
                 </div>
                 <div class="text-center">

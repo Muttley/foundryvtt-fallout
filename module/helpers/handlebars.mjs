@@ -93,17 +93,14 @@ export const registerHandlebarsHelpers = function () {
     else return false
   })
 
-  Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (
-    weapon,
-    actor,
-  ) {
-    if (
-      (weapon.weaponType == 'unarmed' ||
-        weapon.weaponType == 'meleeWeapons') &&
-      actor?.type != 'creature'
-    )
+  Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (weapon, actor)
+  {
+    if ((weapon.system.weaponType == 'unarmed' || weapon.system.weaponType == 'meleeWeapons') &&  actor?.type != 'creature'){
       return true
-    else return false
+    }
+    else {
+      return false
+    }
   })
 
   Handlebars.registerHelper('isWeaponDamaged', function (weapon) {

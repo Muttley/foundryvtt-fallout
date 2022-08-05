@@ -241,15 +241,15 @@ export class Roller2D20 {
         let weaponDamageTypesList = [];
         let weaponDamageEffects = [];
         if (weapon != null) {
-            weaponDamageTypesList = Object.keys(weapon.data.damage.damageType).filter((dt) => {
-                if (weapon.data.damage.damageType[dt]) return dt;
+            weaponDamageTypesList = Object.keys(weapon.system.damage.damageType).filter((dt) => {
+                if (weapon.system.damage.damageType[dt]) return dt;
             });
-            for (let de in weapon.data.damage.damageEffect) {
-                if (weapon.data.damage.damageEffect[de].value) {
-                    const rank = weapon.data.damage.damageEffect[de].rank ?? "";
+            for (let de in weapon.system.damage.damageEffect) {
+                if (weapon.system.damage.damageEffect[de].value) {
+                    const rank = weapon.system.damage.damageEffect[de].rank ?? "";
                     const damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
                     const efectLabel = `${damageEffectLabel}${rank}`;
-                    const effectDescription = game.fallout.FOHovers.LIST[ weapon.data.damage.damageEffect[de].label.toLowerCase()];
+                    const effectDescription = game.fallout.FOHovers.LIST[ weapon.system.damage.damageEffect[de].label.toLowerCase()];
                     weaponDamageEffects.push({effect: effectDescription, efectLabel: efectLabel});
                 }
             }
