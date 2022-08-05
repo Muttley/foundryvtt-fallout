@@ -38,26 +38,20 @@ export class FalloutActor extends Actor {
   // CHARACTER
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return
-    const data = actorData.system
     this._calculateCharacterBodyResistance(actorData)
-    // data.favoriteWeapons = actorData.items.filter(
-    //   (i) => i.type == 'weapon' && i.system.favorite,
-    // )
     // Encumbrance
-    data.carryWeight.base =
-      150 + parseInt(this.system.attributes.str.value) * 10
-    data.carryWeight.value =
-      parseInt(data.carryWeight.base) + parseInt(data.carryWeight.mod)
-    data.totalWeight = this._getItemsTotalWeight()
-    data.encumbranceLevel = 0
-    if (data.totalWeight > data.carryWeight.value) {
-      let dif = data.totalWeight - data.carryWeight.value
-      data.encumbranceLevel = Math.ceil(dif / 50)
+    actorData.system.carryWeight.base = 150 + parseInt(this.system.attributes.str.value) * 10
+    actorData.system.carryWeight.value = parseInt(actorData.system.carryWeight.base) + parseInt(actorData.system.carryWeight.mod)
+    actorData.system.totalWeight = this._getItemsTotalWeight()
+    actorData.system.encumbranceLevel = 0
+    if (actorData.system.totalWeight > actorData.system.carryWeight.value) {
+      let dif = actorData.system.totalWeight - actorData.system.carryWeight.value
+      actorData.system.encumbranceLevel = Math.ceil(dif / 50)
     }
   }
 
   _calculateCharacterBodyResistance(actorData) {
-    const data = actorData.system
+    //const data = actorData.system
     //  ! CHECK for the OUTFIT
     // Prep Body Locations
     let outfitedLocations = {}

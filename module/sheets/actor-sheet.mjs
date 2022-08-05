@@ -237,7 +237,6 @@ export class FalloutActorSheet extends ActorSheet {
     context.favoriteWeapons = context.items.filter(
       (i) => i.type == 'weapon' && i.system.favorite,
     )
-    //console.info(context.favoriteWeapons)
   }
 
   /* -------------------------------------------- */

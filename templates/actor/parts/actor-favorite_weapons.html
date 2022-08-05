@@ -3,9 +3,7 @@
         <h4 class="tab-switch" data-tab="weapons">{{localize "FALLOUT.TEMPLATES.FAVORITE_WEAPONS"}}</h4>
     </div>
     <div class="box-content">
-        {{log favoriteWeapons}}
-        <ol class="items-list">
-            
+        <ol class="items-list">            
             {{#each favoriteWeapons as |item id|}}
             <li class="item favorite-weapon weapon flexrow" data-item-id="{{item._id}}">
                 <div class="item-name flex3">
@@ -16,8 +14,7 @@
                         item.system.damage.rating '+' ../actor.system.meleeDamage.base}} {{else}}
                         {{item.system.damage.rating}} {{/if}}<span class="fo-pip-boy fo-blue"></span></a>
                 </div>
-            </li>
-            
+            </li>            
             {{/each}}
         </ol>
     </div>
