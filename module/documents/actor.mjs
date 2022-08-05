@@ -40,9 +40,9 @@ export class FalloutActor extends Actor {
     if (actorData.type !== 'character') return
     const data = actorData.system
     this._calculateCharacterBodyResistance(actorData)
-    data.favoriteWeapons = actorData.items.filter(
-      (i) => i.type == 'weapon' && i.system.favorite,
-    )
+    // data.favoriteWeapons = actorData.items.filter(
+    //   (i) => i.type == 'weapon' && i.system.favorite,
+    // )
     // Encumbrance
     data.carryWeight.base =
       150 + parseInt(this.system.attributes.str.value) * 10

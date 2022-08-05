@@ -232,6 +232,12 @@ export class FalloutActorSheet extends ActorSheet {
     if (this.actor.type == 'robot') {
       context.inventory = [...apparel]
     }
+
+    // ADD FAVOURITE ITEMS
+    context.favoriteWeapons = context.items.filter(
+      (i) => i.type == 'weapon' && i.system.favorite,
+    )
+    //console.info(context.favoriteWeapons)
   }
 
   /* -------------------------------------------- */
@@ -666,7 +672,7 @@ export class FalloutActorSheet extends ActorSheet {
   _toggleEquipped(id, item) {
     return {
       _id: id,
-      data: {
+      system: {
         equipped: !item.system.equipped,
       },
     }
@@ -676,7 +682,7 @@ export class FalloutActorSheet extends ActorSheet {
   _togglePowered(id, item) {
     return {
       _id: id,
-      data: {
+      system: {
         powered: !item.system.powered,
       },
     }
@@ -686,7 +692,7 @@ export class FalloutActorSheet extends ActorSheet {
   _toggleFavorite(id, item) {
     return {
       _id: id,
-      data: {
+      system: {
         favorite: !item.system.favorite,
       },
     }

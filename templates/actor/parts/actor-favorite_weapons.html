@@ -3,19 +3,21 @@
         <h4 class="tab-switch" data-tab="weapons">{{localize "FALLOUT.TEMPLATES.FAVORITE_WEAPONS"}}</h4>
     </div>
     <div class="box-content">
+        {{log favoriteWeapons}}
         <ol class="items-list">
-            {{#each system.favoriteWeapons as |item id|}}
+            
+            {{#each favoriteWeapons as |item id|}}
             <li class="item favorite-weapon weapon flexrow" data-item-id="{{item._id}}">
                 <div class="item-name flex3">
                     <h4 class="resource-label"><a class="weapon-roll">{{item.name}} {{#if (isWeaponDamaged
                             item.system)}}<i class="fas fa-wrench"></i>{{/if}}</a></h4>
-                </div>
                 <div class="text-center">
-                    <a class="weapon-roll-damage">{{#if (isWeaponUsingMeleeBonus item.system ../actor)}} {{math
+                    <a class="weapon-roll-damage">{{#if (isWeaponUsingMeleeBonus item ../actor)}} {{math
                         item.system.damage.rating '+' ../actor.system.meleeDamage.base}} {{else}}
                         {{item.system.damage.rating}} {{/if}}<span class="fo-pip-boy fo-blue"></span></a>
                 </div>
             </li>
+            
             {{/each}}
         </ol>
     </div>
