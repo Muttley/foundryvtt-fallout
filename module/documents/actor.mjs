@@ -42,10 +42,10 @@ export class FalloutActor extends Actor {
     // Encumbrance
     actorData.system.carryWeight.base = 150 + parseInt(this.system.attributes.str.value) * 10
     actorData.system.carryWeight.value = parseInt(actorData.system.carryWeight.base) + parseInt(actorData.system.carryWeight.mod)
-    actorData.system.totalWeight = this._getItemsTotalWeight()
+    actorData.system.carryWeight.total = this._getItemsTotalWeight()
     actorData.system.encumbranceLevel = 0
-    if (actorData.system.totalWeight > actorData.system.carryWeight.value) {
-      let dif = actorData.system.totalWeight - actorData.system.carryWeight.value
+    if (actorData.system.carryWeight.total > actorData.system.carryWeight.value) {
+      let dif = actorData.system.carryWeight.total - actorData.system.carryWeight.value
       actorData.system.encumbranceLevel = Math.ceil(dif / 50)
     }
   }
@@ -204,12 +204,11 @@ export class FalloutActor extends Actor {
     for (let i of robotArmors) {
       actorData.system.carryWeight.base += parseInt(i.system.carry)
     }
-    actorData.system.carryWeight.value =
-      parseInt(actorData.system.carryWeight.base) + parseInt(actorData.system.carryWeight.mod)
-      actorData.system.totalWeight = this._getItemsTotalWeight()
-      actorData.system.encumbranceLevel = 0
-    if (actorData.system.totalWeight > actorData.system.carryWeight.value) {
-      let dif = actorData.system.totalWeight - actorData.system.carryWeight.value
+    actorData.system.carryWeight.value = parseInt(actorData.system.carryWeight.base) + parseInt(actorData.system.carryWeight.mod)
+    actorData.system.carryWeight.total = this._getItemsTotalWeight()
+    actorData.system.encumbranceLevel = 0
+    if (actorData.system.carryWeight.total > actorData.system.carryWeight.value) {
+      let dif = actorData.system.carryWeight.total - actorData.system.carryWeight.value
       actorData.system.encumbranceLevel = Math.ceil(dif / 50)
     }
   }
@@ -304,7 +303,8 @@ export class FalloutActor extends Actor {
     let physicalItemsMap = physicalItems.map((i) => i.toObject())
     let totalWeight = 0
     for (let i of physicalItemsMap) {
-      totalWeight += parseFloat(i.weight) * parseFloat(i.quantity)
+      totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity)
+      
     }
     return totalWeight
   }
