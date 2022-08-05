@@ -19,11 +19,6 @@ export class FalloutItemSheet extends ItemSheet {
   /** @override */
   get template() {
     const path = "systems/fallout/templates/item";
-    // Return a single sheet for all item types.
-    // return `${path}/item-sheet.html`;
-
-    // Alternatively, you could use the following return statement to do a
-    // unique item sheet by type, like `weapon-sheet.html`.
     return `${path}/item-${this.item.type}-sheet.html`;
   }
 
@@ -33,52 +28,59 @@ export class FalloutItemSheet extends ItemSheet {
   async getData(options) {
     // Retrieve base data structure.
     const context = await super.getData(options);
-
-
     const item = context.item;
     const source = item.toObject();
-
 
     foundry.utils.mergeObject(context, {
       source: source.system,
       system: item.system,
-      data: item.system,
+      
       isEmbedded: item.isEmbedded,
-
       type: item.type,      
-      flags: item.flags,
-
-      // Enrich HTML description
+      flags: item.flags,      
+      FALLOUT: CONFIG.FALLOUT,
+      effects: prepareActiveEffectCategories(item.effects),
       descriptionHTML: await TextEditor.enrichHTML(item.system.description, {
         secrets: item.isOwner,
         async: true
-      }),
-
-      FALLOUT: CONFIG.FALLOUT,
-
-      effects: prepareActiveEffectCategories(item.effects)
+      })
     });
-
-
-
-/*
-    // Use a safe clone of the item data for further operations.
-    const itemData = context.item.data;
-
-    // Retrieve the roll data for TinyMCE editors.
-    context.rollData = {};
-    let actor = this.object?.parent ?? null;
-    if (actor) {
-      context.rollData = actor.getRollData();
+    
+    // Enrich Mods Text
+    if(item.system.mods){
+      foundry.utils.mergeObject(context,{
+        modsListHTML: await TextEditor.enrichHTML(item.system.mods.list, {
+          secrets: item.isOwner,
+          async: true
+        })
+      })
     }
 
-    // Add the actor's data to context.data for easier access, as well as flags.
-    context.data = itemData.data;
-    context.flags = itemData.flags;
-
-    context.effects = prepareActiveEffectCategories(this.item.effects);
-    context.FALLOUT = CONFIG.FALLOUT;
-*/
+    // Enrich Effect Text
+    if(item.system.effect){
+      foundry.utils.mergeObject(context,{
+        effectHTML: await TextEditor.enrichHTML(item.system.effect, {
+          secrets: item.isOwner,
+          async: true
+        })
+      })
+    }
+  /*
+    // V9    
+    // Use a safe clone of the item data for further operations.
+      const itemData = context.item.data;
+      // Retrieve the roll data for TinyMCE editors.
+      context.rollData = {};
+      let actor = this.object?.parent ?? null;
+      if (actor) {
+        context.rollData = actor.getRollData();
+      }
+      // Add the actor's data to context.data for easier access, as well as flags.
+      context.data = itemData.data;
+      context.flags = itemData.flags;
+      context.effects = prepareActiveEffectCategories(this.item.effects);
+      context.FALLOUT = CONFIG.FALLOUT;
+  */
     return context;
   }
 

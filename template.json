@@ -655,7 +655,7 @@
       "issue": "",
       "effect": "",
       "perk": "",
-      "learned": true
+      "learned": false
     },
     "consumable": {
       "templates": [

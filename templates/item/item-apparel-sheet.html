@@ -1,12 +1,5 @@
-{{!-- This template is a fallback for when items don't have more specific templates. --}}
-{{!-- Generally, you'll want to make more specific templates when possible. --}}
+
 <form class="{{cssClass}}" autocomplete="off">
-    <!-- <header class="sheet-header">
-        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
-        <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
-        </div>
-    </header> -->
     {{> "systems/fallout/templates/item/parts/item-header.html"}}
 
     {{!-- Sheet Tab Navigation --}}
@@ -22,7 +15,7 @@
 
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
-            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
 
         {{!-- Mods Tab --}}
@@ -31,18 +24,18 @@
                 <label class="resource-label">{{localize "FALLOUT.MODS.mods"}}</label>
                 <div class="flexrow align-mid">
                     <span>
-                        <label for="data.mods.current">{{localize "FALLOUT.TEMPLATES.current"}}</label>
-                        <input type="number" name="data.mods.current" class="num-short-2" value="{{data.mods.current}}">
+                        <label for="system.mods.current">{{localize "FALLOUT.TEMPLATES.current"}}</label>
+                        <input type="number" name="system.mods.current" class="num-short-2" value="{{system.mods.current}}">
                     </span>
                     <span class="text-center">/</span>
                     <span>
-                        <label for="data.mods.max">{{localize "FALLOUT.TEMPLATES.max"}}</label>
-                        <input type="number" name="data.mods.max" class="num-short-2" value="{{data.mods.max}}">
+                        <label for="system.mods.max">{{localize "FALLOUT.TEMPLATES.max"}}</label>
+                        <input type="number" name="system.mods.max" class="num-short-2" value="{{system.mods.max}}">
                     </span>
                 </div>
             </div>
             <div class="description-field resource-row">
-                {{editor content=data.mods.list target="data.mods.list" button=true owner=owner editable=editable}}
+                {{editor modsListHTML target="system.mods.list" button=true owner=owner editable=editable}}
             </div>
         </div>
 
@@ -50,8 +43,8 @@
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="resource-row align-mid">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Armor_Type"}} &nbsp;</label>
-                <select name="data.appareltype">
-                    {{#select data.appareltype}}
+                <select name="system.appareltype">
+                    {{#select system.appareltype}}
                     {{#each FALLOUT.APPAREL_TYPE as |apparelType key |}}
                     <option class="capitalized" value="{{key}}">{{localize apparelType}}</option>
                     {{/each}}
@@ -62,19 +55,19 @@
             <div class="grid grid-3col">
                 <div class="locations pad-5">
                     <h4 class="resource-header">{{localize "FALLOUT.TEMPLATES.Locations"}}</h4>
-                    {{#each data.location as |isChecked key|}}
+                    {{#each system.location as |isChecked key|}}
                     <div class="location flexrow align-mid">
                         <label class="checkbox-label">{{localize (concat 'FALLOUT.BODYLOCATION.character.' key)}}</label>
-                        <input class="input-checkbox" type="checkbox" name="data.location.{{key}}" {{checked isChecked}} data-dtype="Boolean" />
+                        <input class="input-checkbox" type="checkbox" name="system.location.{{key}}" {{checked isChecked}} data-dtype="Boolean" />
                     </div>
                     {{/each}}
                 </div>
                 <div class="resistances pad-5">
                     <h4 class="resource-header">{{localize "FALLOUT.TEMPLATES.Resistances"}}</h4>
-                    {{#each data.resistance as |resistance key|}}
+                    {{#each system.resistance as |resistance key|}}
                     <div class="flexrow resource-row align-mid">
-                        <label for="data.resistance.{{key}}" class="capitalized">{{localize (concat 'FALLOUT.RESISTANCE.'key)}}</label>
-                        <input class="num-short-2" type="number" name="data.resistance.{{key}}" value="{{resistance}}" />
+                        <label for="system.resistance.{{key}}" class="capitalized">{{localize (concat 'FALLOUT.RESISTANCE.'key)}}</label>
+                        <input class="num-short-2" type="number" name="system.resistance.{{key}}" value="{{resistance}}" />
                     </div>
                     {{/each}}
                 </div>
@@ -82,23 +75,23 @@
                     <h4 class="resource-header">{{localize "FALLOUT.TEMPLATES.GENERAL"}}</h4>
                     <div class="flexrow resource-row align-mid">
                         <label class="capitalized checkbox-label">{{localize "FALLOUT.equipped"}}</label>
-                        <input class="input-checkbox" type="checkbox" name="data.equipped" {{checked data.equipped}} data-dtype="Boolean" />
+                        <input class="input-checkbox" type="checkbox" name="system.equipped" {{checked system.equipped}} data-dtype="Boolean" />
                     </div>
                     {{!-- POWER ARMOR SECTION --}}
-                    {{#ifCond data.appareltype '==' 'powerArmor'}}
+                    {{#ifCond system.appareltype '==' 'powerArmor'}}
                     <h4 class="resource-header">{{localize "FALLOUT.APPAREL.powerArmor"}}</h4>
                     <div>
                         <div class="flexrow resource-row align-mid">
                             <label class="capitalized checkbox-label">{{localize "FALLOUT.HEALTH.health"}}</label>
                             <span class="flex2 align-right">
-                                <input class="num-short-2" type="number" name="data.health.value" value="{{data.health.value}}">
+                                <input class="num-short-2" type="number" name="system.health.value" value="{{system.health.value}}">
                                 <span>/</span>
-                                <input class="num-short-2" type="number" name="data.health.max" value="{{data.health.max}}">
+                                <input class="num-short-2" type="number" name="system.health.max" value="{{system.health.max}}">
                             </span>
                         </div>
                         <div class="flexrow resource-row align-mid">
                             <label class="capitalized checkbox-label">{{localize "FALLOUT.powered"}}</label>
-                            <input class="input-checkbox" type="checkbox" name="data.powered" {{checked data.powered}} data-dtype="Boolean" />
+                            <input class="input-checkbox" type="checkbox" name="system.powered" {{checked system.powered}} data-dtype="Boolean" />
                         </div>
                     </div>
                     {{/ifCond}}

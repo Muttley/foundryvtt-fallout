@@ -12,7 +12,7 @@
 
     {{!-- Description Tab --}}
     <div class="tab description" data-group="primary" data-tab="description">
-      {{editor content=data.description target="data.description" rollData=rollData button=true owner=owner editable=editable}}
+      {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
     {{!-- Attributes Tab --}}
@@ -20,16 +20,16 @@
       {{!-- As you add new fields, add them in here! --}}
       <div class="flexrow">
         <label>{{localize "FALLOUT.TEMPLATES.Skill_Value"}}</label>
-        <input type="number" name="data.value" value="{{data.value}}">
+        <input type="number" name="system.value" value="{{system.value}}">
       </div>
       <div class="flexrow">
         <label>{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}</label>
-        <input type="checkbox" name="data.tag" {{#ifCond data.tag '==' true}}checked{{/ifCond}}>
+        <input type="checkbox" name="system.tag" {{#ifCond system.tag '==' true}}checked{{/ifCond}}>
       </div>
       <div class="flexrow">
         <label>{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}</label>
-        <select name="data.defaultAttribute">
-          {{#select data.defaultAttribute}}
+        <select name="system.defaultAttribute">
+          {{#select system.defaultAttribute}}
           <option value="str">{{localize "FALLOUT.AbilityStr"}}</option>
           <option value="per">{{localize "FALLOUT.AbilityPer"}}</option>
           <option value="end">{{localize "FALLOUT.AbilityEnd"}}</option>
