@@ -44,7 +44,7 @@
         <select name="system.weaponType">
           {{#select system.weaponType}}
           {{#each FALLOUT.WEAPONS.weaponType as |wType key|}}
-          <option value="{{key}}">{{localize wType}}</option>
+          <option class="flo-option" value="{{key}}">{{localize wType}}</option>
           {{/each}}
           {{/select}}
         </select>
@@ -57,7 +57,7 @@
           <select name="system.attribute">
             {{#select system.attribute}}
             {{#each FALLOUT.CREATURE.attributes as |attr key|}}
-            <option value="{{key}}">{{localize attr}}</option>
+            <option class="flo-option" value="{{key}}">{{localize attr}}</option>
             {{/each}}
             {{/select}}
           </select>
@@ -67,7 +67,7 @@
           <select name="system.skill">
             {{#select system.skill}}
             {{#each FALLOUT.CREATURE.skills as |skill key|}}
-            <option value="{{key}}">{{localize skill}}</option>
+            <option class="flo-option" value="{{key}}">{{localize skill}}</option>
             {{/each}}
             {{/select}}
           </select>
@@ -100,7 +100,7 @@
         <select name="system.range">
           {{#select system.range}}
           {{#each FALLOUT.WEAPONS.range as |range key|}}
-          <option value="{{key}}">{{localize range}}</option>
+          <option class="flo-option" value="{{key}}">{{localize range}}</option>
           {{/each}}
           {{/select}}
         </select>

@@ -17,6 +17,7 @@
 		text-align: left;
 		display: flex;
 		// font-size: 16px;
+		border-bottom: none; // remove h3 style from foundry
 	}
 }
 
@@ -49,6 +50,7 @@
 		align-items: center;
 		display: flex;
 		min-height: 24px;
+		border-bottom: none; // remove h3 style from foundry
 		h3,
 		h4 {
 			margin: 0;
@@ -81,6 +83,7 @@
 			border-bottom: none;
 		}
 		.item-name {
+			border-bottom: none; // remove h3 style from foundry
 			color: $c-dark;
 			.item-image {
 				flex: 0 0 30px;
@@ -125,6 +128,7 @@
 			color: white;
 		}
 		.item-name {
+			border-bottom: none; // remove h3 style from foundry
 			color: white;
 			padding-left: 5px;
 			text-align: left;

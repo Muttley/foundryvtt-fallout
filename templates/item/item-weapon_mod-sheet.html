@@ -17,7 +17,7 @@
         {{#select system.weaponType}}
         <select name="system.weaponType" id="">
           {{#each FALLOUT.WEAPONS.weaponType as |item key|}}
-          <option value="{{key}}">{{localize item}}</option>
+          <option class="flo-option" value="{{key}}">{{localize item}}</option>
           {{/each}}
         </select>
         {{/select}}

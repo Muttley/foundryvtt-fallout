@@ -362,7 +362,7 @@
 	}
 
 	&.no-padding {
-		padding: 0 !important;
+		padding: 0 !important;		
 		.box-header {
 			margin: 0 0 0 0;
 		}
@@ -372,6 +372,7 @@
 	}
 
 	.box-header {
+		border-bottom: none; // remove foundry h3 bottom-border
 		margin: 0 -5px 5px -5px;
 		padding: 5px 5px 2px 5px;
 		background-color: rgb(0, 0, 0);
