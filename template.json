@@ -215,7 +215,8 @@
         "base",
         "derived",
         "body",
-        "stats"
+        "stats",
+        "valuables"
       ]
     },
     "robot": {
@@ -223,19 +224,22 @@
         "base",
         "derived",
         "body",
-        "stats"
+        "stats",
+        "valuables"
       ]
     },
     "npc": {
       "templates": [
         "base",
         "derived",
-        "stats"
+        "stats",
+        "valuables"
       ]
     },
     "creature": {
       "templates": [
-        "base"
+        "base",
+        "valuables"
       ],
       "powerLevel": "normal",
       "body": {
