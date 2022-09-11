@@ -44,6 +44,6 @@
   "socket": true,
   "url": "https://github.com/superseva/fallout",
   "manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
-  "download": "https://github.com/superseva/fallout/releases/download/v9.0.5/fallout.zip",
+  "download": "https://github.com/superseva/fallout/releases/download/v9.0.6/fallout.zip",
   "license": "LICENSE.txt"
 }
