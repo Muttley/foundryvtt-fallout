@@ -135,6 +135,12 @@
                     {{localize 'FALLOUT.UI.Add'}}</a>
                 </div>
               </li>
+              <li>
+                <span class="flex align-mid" style="flex-basis: 200px; margin-bottom: 5px;">
+                  <label style="color:white" class="upperC"><strong>{{localize 'FALLOUT.UI.CAPS'}}:</strong></label>
+                  <input type="text" class="underline" name="data.currency.caps" value="{{data.currency.caps}}">
+              </span>
+              </li>
               {{#each inventory as |item id|}}
               {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
               {{/each}}
