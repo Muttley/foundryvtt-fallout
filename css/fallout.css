@@ -309,6 +309,15 @@
   background-color: #325885;
 }
 
+.fallout .window-content .content-link {
+  background: #243f60;
+  border: unset;
+}
+
+.fallout .window-content .content-link .fas {
+  color: #eee787;
+}
+
 .dice-tooltip .dice-rolls .roll.max {
   color: unset;
   filter: none;
@@ -977,6 +986,7 @@
 }
 
 .fallout .box .box-header {
+  border-bottom: none;
   margin: 0 -5px 5px -5px;
   padding: 5px 5px 2px 5px;
   background-color: black;
@@ -1137,6 +1147,12 @@
   background-color: #243f60;
 }
 
+.fallout select .flo-option {
+  color: #eee787;
+  background-color: #243f60;
+  font-family: "Roboto", sans-serif;
+}
+
 .fallout .toggle-label {
   padding: 3px;
   border: 0 solid;
@@ -1192,6 +1208,7 @@
 }
 
 .fallout .resource-label {
+  border-bottom: none;
   font-weight: bold;
   color: #eee787;
 }
@@ -1418,6 +1435,7 @@
   padding-left: 5px;
   text-align: left;
   display: flex;
+  border-bottom: none;
 }
 
 .fallout .items-list {
@@ -1444,6 +1462,7 @@
   align-items: center;
   display: flex;
   min-height: 24px;
+  border-bottom: none;
 }
 
 .fallout .items-list .item-name h3,
@@ -1478,6 +1497,7 @@
 }
 
 .fallout .items-list .item .item-name {
+  border-bottom: none;
   color: #191813;
 }
 
@@ -1523,6 +1543,7 @@
 }
 
 .fallout .items-list .items-header .item-name {
+  border-bottom: none;
   color: white;
   padding-left: 5px;
   text-align: left;

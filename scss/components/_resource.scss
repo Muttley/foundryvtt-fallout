@@ -18,6 +18,11 @@ input[type="number"] {
 select {
 	color: $c-font-prim;
 	background-color: darken($c-font-prim-contra, 10%);
+	.flo-option {
+		color: $c-font-prim;
+		background-color: darken($c-font-prim-contra, 10%);
+		font-family: $font-primary;
+	}
 }
 
 .toggle-label {
@@ -70,6 +75,7 @@ input.chk-btn:checked + label {
 }
 
 .resource-label {
+	border-bottom: none; // remove h3 style from foundry
 	font-weight: bold;
 	color: $c-font-prim;
 }

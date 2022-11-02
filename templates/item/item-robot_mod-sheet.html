@@ -12,13 +12,13 @@
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effect"}}</h3>
             <div class="description-field">
-                {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
+                {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
             </div>
         </div>
 
         {{!-- Description Tab --}}
         <div class="tab description" data-group="primary" data-tab="description">
-            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
     </section>
 </form>

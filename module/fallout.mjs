@@ -120,11 +120,11 @@ Hooks.once('ready', async function () {
 })
 
 Hooks.on('renderChatMessage', (message, html, data) => {
+  
   let rrlBtn = html.find('.reroll-button')
   if (rrlBtn.length > 0) {
     rrlBtn[0].setAttribute('data-messageId', message.id)
-    rrlBtn.click((el) => {
-      //let selectedDiceForReroll = $(el.currentTarget).parent().find('.dice-selected');
+    rrlBtn.click((el) => {      
       let selectedDiceForReroll = html.find('.dice-selected')
       let rerollIndex = []
       for (let d of selectedDiceForReroll) {
@@ -133,7 +133,8 @@ Hooks.on('renderChatMessage', (message, html, data) => {
       if (!rerollIndex.length) {
         ui.notifications.notify('Select Dice you want to Reroll')
       } else {
-        let falloutRoll = message.data.flags.falloutroll
+        
+        let falloutRoll = message.flags.falloutroll
         if (falloutRoll.diceFace == 'd20') {
           Roller2D20.rerollD20({
             rollname: falloutRoll.rollname,
@@ -148,7 +149,7 @@ Hooks.on('renderChatMessage', (message, html, data) => {
             rollname: falloutRoll.rollname,
             rerollIndexes: rerollIndex,
             dicesRolled: falloutRoll.dicesRolled,
-            weapon: message.data.flags.weapon,
+            weapon: message.flags.weapon,
           })
         } else {
           ui.notifications.notify('No dice face reckognized')
@@ -169,8 +170,8 @@ Hooks.on('renderChatMessage', (message, html, data) => {
   if (addBtn.length > 0) {
     addBtn[0].setAttribute('data-messageId', message.id)
     addBtn.click((ev) => {
-      let falloutRoll = message.data.flags.falloutroll
-      let weapon = message.data.flags.weapon
+      let falloutRoll = message.flags.falloutroll
+      let weapon = message.flags.weapon
       game.fallout.DialogD6.createDialog({
         rollname: falloutRoll.rollname,
         diceNum: 1,
@@ -240,7 +241,7 @@ async function createItemMacro(data, slot) {
     return ui.notifications.warn(
       'You can only create macro buttons for owned Items',
     )
-  const item = data.data
+  const item = data
 
   // Create the macro command
   const command = `game.fallout.rollItemMacro("${item.name}");`

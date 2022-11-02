@@ -58,7 +58,9 @@
         "carryWeight": {
           "base": 0,
           "value": 0,
-          "mod": 0
+          "mod": 0,
+          "total": 0,
+          "encumbranceLevel": 0
         },
         "initiative": {
           "base": 0,
@@ -659,7 +661,7 @@
       "issue": "",
       "effect": "",
       "perk": "",
-      "learned": true
+      "learned": false
     },
     "consumable": {
       "templates": [

@@ -27,24 +27,49 @@ export class FalloutActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/fallout/templates/actor/actor-${this.actor.data.type}-sheet.html`
+    return `systems/fallout/templates/actor/actor-${this.actor.type}-sheet.html`
   }
 
   /* -------------------------------------------- */
 
   /** @override */
-  getData() {
-    // Retrieve the data structure from the base sheet. You can inspect or log
-    // the context variable to see the structure, but some key properties for
-    // sheets are the actor object, the data object, whether or not it's
-    // editable, the items array, and the effects array.
-    const context = super.getData()
-    // Use a safe clone of the actor data for further operations.
-    const actorData = context.actor.data
+  async getData(options) {
 
-    // Add the actor's data to context.data for easier access, as well as flags.
-    context.data = actorData.data
-    context.flags = actorData.flags
+    //const context = await super.getData(options)    
+
+    // Use a safe clone of the actor data for further operations.
+    //const actorData = context.actor.data
+    const source = this.actor.toObject();
+    const actorData = this.actor.toObject(false);
+
+
+    const context = {
+      actor: actorData,
+      source: source.system,
+      system: actorData.system,
+      items: actorData.items,      
+      effects: prepareActiveEffectCategories(this.actor.effects),      
+      owner: this.actor.isOwner,
+      limited: this.actor.limited,
+      options: this.options,
+      editable: this.isEditable,
+      type: this.actor.type,      
+      isCharacter: this.actor.type === "character",
+      isRobot: this.actor.type === "robot",
+      isNPC: this.actor.type === "npc",
+      isCreature: this.actor.type === "creature",
+      rollData: this.actor.getRollData.bind(this.actor)
+    }
+
+    // Biography HTML enrichment
+    context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
+      secrets: this.actor.isOwner,
+      rollData: context.rollData,
+      async: true
+    });
+
+    //context.data = actorData.system
+    //context.flags = actorData.flags
 
     // Prepare character data and items.
     if (actorData.type == 'character' || actorData.type == 'robot') {
@@ -81,12 +106,12 @@ export class FalloutActorSheet extends ActorSheet {
    */
   _prepareCharacterData(context) {
     // Handle ability scores.
-    for (let [k, v] of Object.entries(context.data.attributes)) {
+    for (let [k, v] of Object.entries(context.system.attributes)) {
       v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k
     }
 
     let allInjuries = []
-    for (const [key, bp] of Object.entries(this.actor.data.data.body_parts)) {
+    for (const [key, bp] of Object.entries(this.actor.system.body_parts)) {
       allInjuries.push.apply(allInjuries, bp.injuries)
     }
     context.treatedInjuriesCount = allInjuries.filter((i) => i == 1).length
@@ -162,13 +187,13 @@ export class FalloutActorSheet extends ActorSheet {
     })
     context.skills = skills
 
-    let clothing = apparel.filter((a) => a.data.appareltype == 'clothing')
-    let outfit = apparel.filter((a) => a.data.appareltype == 'outfit')
-    let headgear = apparel.filter((a) => a.data.appareltype == 'headgear')
-    let armor = apparel.filter((a) => a.data.appareltype == 'armor')
-    let powerArmor = apparel.filter((a) => a.data.appareltype == 'powerArmor')
-    let plating = robotApparel.filter((a) => a.data.appareltype == 'plating')
-    let robotArmor = robotApparel.filter((a) => a.data.appareltype == 'armor')
+    let clothing = apparel.filter((a) => a.system.appareltype == 'clothing')
+    let outfit = apparel.filter((a) => a.system.appareltype == 'outfit')
+    let headgear = apparel.filter((a) => a.system.appareltype == 'headgear')
+    let armor = apparel.filter((a) => a.system.appareltype == 'armor')
+    let powerArmor = apparel.filter((a) => a.system.appareltype == 'powerArmor')
+    let plating = robotApparel.filter((a) => a.system.appareltype == 'plating')
+    let robotArmor = robotApparel.filter((a) => a.system.appareltype == 'armor')
     context.allApparel = [
       { apparelType: 'clothing', list: clothing },
       { apparelType: 'outfit', list: outfit },
@@ -198,7 +223,7 @@ export class FalloutActorSheet extends ActorSheet {
     // NPC and Creature Inventory = all physical items that are not weapons
     if (this.actor.type == 'npc' || this.actor.type == 'creature') {
       context.inventory = context.items.filter((i) => {
-        return i.type !== 'weapon' && i.data.weight != null
+        return i.type !== 'weapon' && i.system.weight != null
       })
     }
     if (this.actor.type == 'character') {
@@ -207,6 +232,11 @@ export class FalloutActorSheet extends ActorSheet {
     if (this.actor.type == 'robot') {
       context.inventory = [...apparel]
     }
+
+    // ADD FAVOURITE ITEMS
+    context.favoriteWeapons = context.items.filter(
+      (i) => i.type == 'weapon' && i.system.favorite,
+    )
   }
 
   /* -------------------------------------------- */
@@ -241,9 +271,9 @@ export class FalloutActorSheet extends ActorSheet {
       const item = this.actor.items.get(li.data('itemId'))
       this._onRollSkill(
         item.name,
-        item.data.data.value,
-        this.actor.data.data.attributes[item.data.data.defaultAttribute].value,
-        item.data.data.tag,
+        item.system.value,
+        this.actor.system.attributes[item.system.defaultAttribute].value,
+        item.system.tag,
       )
     })
     // Change Skill Rank value
@@ -258,7 +288,7 @@ export class FalloutActorSheet extends ActorSheet {
     html.find('.skill .item-skill-tag').click(async (ev) => {
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('itemId'))
-      let updatedItem = { _id: item.id, data: { tag: !item.data.data.tag } }
+      let updatedItem = { _id: item.id, data: { tag: !item.system.tag } }
       await this.actor.updateEmbeddedDocuments('Item', [updatedItem])
     })
 
@@ -347,7 +377,7 @@ export class FalloutActorSheet extends ActorSheet {
     })
 
     // * CLICK TO EXPAND
-    html.find('.expandable-info').click((event) => this._onItemSummary(event))
+    html.find('.expandable-info').click(async (event) => this._onItemSummary(event))
 
     // * Add Inventory Item
     html.find('.item-create').click(this._onItemCreate.bind(this))
@@ -403,7 +433,7 @@ export class FalloutActorSheet extends ActorSheet {
       //return;
       let index = ev.currentTarget.dataset['index']
       let bodypart = ev.currentTarget.dataset['bodypart']
-      let injuries = this.actor.data.data.body_parts[bodypart].injuries
+      let injuries = this.actor.system.body_parts[bodypart].injuries
       let newInjuries = [...injuries]
       newInjuries[index] = status == 2 ? 0 : 2
       //newInjuries[index] = 2;
@@ -421,7 +451,7 @@ export class FalloutActorSheet extends ActorSheet {
       //return;
       let index = ev.currentTarget.dataset['index']
       let bodypart = ev.currentTarget.dataset['bodypart']
-      let injuries = this.actor.data.data.body_parts[bodypart].injuries
+      let injuries = this.actor.system.body_parts[bodypart].injuries
       let newInjuries = [...injuries]
       newInjuries[index] = status == 1 ? 0 : 1
       let newStatus = this._getBodyPartStatus(newInjuries)
@@ -447,23 +477,23 @@ export class FalloutActorSheet extends ActorSheet {
       let rollName = item.name
       if (item.actor?.type == 'creature') {
         skillName = game.i18n.localize(
-          `FALLOUT.CREATURE.${item.data.data.skill}`,
+          `FALLOUT.CREATURE.${item.system.skill}`,
         )
-        skill = item.actor.data.data[item.data.data.skill]
+        skill = item.actor.system[item.system.skill]
         skill['tag'] = true
-        attribute = item.actor.data.data[item.data.data.attribute]
+        attribute = item.actor.system[item.system.attribute]
       } else {
         skillName =
-          CONFIG.FALLOUT.WEAPONS.weaponSkill[item.data.data.weaponType]
+          CONFIG.FALLOUT.WEAPONS.weaponSkill[item.system.weaponType]
         let skillItem = item.actor.items.find((i) => i.name == skillName)
-        if (skillItem) skill = skillItem.data.data
+        if (skillItem) skill = skillItem.system
         else
           skill = {
             value: 0,
             tag: false,
             defaultAttribute: 'str',
           }
-        attribute = item.actor.data.data.attributes[skill.defaultAttribute]
+        attribute = item.actor.system.attributes[skill.defaultAttribute]
       }
       game.fallout.Dialog2d20.createDialog({
         rollName: rollName,
@@ -482,7 +512,7 @@ export class FalloutActorSheet extends ActorSheet {
       const newHealthValue = $(ev.currentTarget).val()
       let apparel = this.actor.items.get(apparelId)
       if (apparel) {
-        if (apparel.data.data.appareltype == 'powerArmor') {
+        if (apparel.system.appareltype == 'powerArmor') {
           apparel.update({ 'data.health.value': newHealthValue })
         }
       }
@@ -492,19 +522,21 @@ export class FalloutActorSheet extends ActorSheet {
     html.find('.weapon-roll-damage').click((ev) => {
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('item-id'))
-      let numOfDice = parseInt(item.data.data.damage.rating)
+      let numOfDice = parseInt(item.system.damage.rating)
       if (
-        item.data.data.weaponType == 'meleeWeapons' ||
-        item.data.data.weaponType == 'unarmed'
+        item.system.weaponType == 'meleeWeapons' ||
+        item.system.weaponType == 'unarmed'
       ) {
-        let dmgBonus = this.actor.data.data?.meleeDamage?.base ?? 0
+        let dmgBonus = this.actor.system?.meleeDamage?.base ?? 0
         numOfDice += dmgBonus
       }
-      let rollName = item.data.name
+
+      let rollName = item.name;
+
       game.fallout.DialogD6.createDialog({
         rollName: rollName,
         diceNum: numOfDice,
-        weapon: item.data.toObject(),
+        weapon: item.toObject(),
       })
     })
 
@@ -568,9 +600,9 @@ export class FalloutActorSheet extends ActorSheet {
     const item = this.actor.items.get(itemId)
     this._onRollSkill(
       item.name,
-      item.data.data.value,
-      this.actor.data.data.attributes[attribute].value,
-      item.data.data.tag,
+      item.system.value,
+      this.actor.system.attributes[attribute].value,
+      item.system.tag,
     )
   }
   _onRollSkill(skillName, rank, attribute, tag) {
@@ -584,16 +616,22 @@ export class FalloutActorSheet extends ActorSheet {
     })
   }
 
-  _onItemSummary(event) {
+  async _onItemSummary(event) {
     event.preventDefault()
     let li = $(event.currentTarget).parents('.item')
     let item = this.actor.items.get(li.data('itemId'))
     let moreInfo = ''
 
-    if (item.data.data.effect != null) {
-      moreInfo = item.data.data.effect
+    if (item.system.effect != null) {
+      moreInfo = await TextEditor.enrichHTML(item.system.effect, {
+        secrets: item.isOwner,
+        async: true
+      })
     } else {
-      moreInfo = item.data.data.description
+      moreInfo = await TextEditor.enrichHTML(item.system.description, {
+        secrets: item.isOwner,
+        async: true
+      })
     }
     // Toggle summary
     if (li.hasClass('expanded')) {
@@ -624,7 +662,7 @@ export class FalloutActorSheet extends ActorSheet {
     return {
       _id: id,
       data: {
-        stashed: !item.data.data.stashed,
+        stashed: !item.system.stashed,
       },
     }
   }
@@ -633,8 +671,8 @@ export class FalloutActorSheet extends ActorSheet {
   _toggleEquipped(id, item) {
     return {
       _id: id,
-      data: {
-        equipped: !item.data.data.equipped,
+      system: {
+        equipped: !item.system.equipped,
       },
     }
   }
@@ -643,8 +681,8 @@ export class FalloutActorSheet extends ActorSheet {
   _togglePowered(id, item) {
     return {
       _id: id,
-      data: {
-        powered: !item.data.data.powered,
+      system: {
+        powered: !item.system.powered,
       },
     }
   }
@@ -653,8 +691,8 @@ export class FalloutActorSheet extends ActorSheet {
   _toggleFavorite(id, item) {
     return {
       _id: id,
-      data: {
-        favorite: !item.data.data.favorite,
+      system: {
+        favorite: !item.system.favorite,
       },
     }
   }

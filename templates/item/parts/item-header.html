@@ -5,23 +5,23 @@
             <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
             <div class="chaty align-right"><i class="fas fa-comment"></i></div>
         </div>        
-        {{#if data.weight includeZero=true}}
+        {{#if system.weight includeZero=true}}
         <div class="grid grid-4col">
             <div class="resource">
                 <label class="resource-label">{{localize "FALLOUT.UI.Quantity"}}</label>
-                <input class="num-short-2" type="number" name="data.quantity" value="{{data.quantity}}" data-dtype="Number" />
+                <input class="num-short-2" type="number" name="system.quantity" value="{{system.quantity}}" data-dtype="Number" />
             </div>
             <div class="resource">
                 <label class="resource-label">{{localize "FALLOUT.UI.Weight"}}</label>
-                <input class="num-short-2" type="number" name="data.weight" value="{{data.weight}}" data-dtype="Number" />
+                <input class="num-short-2" type="number" name="system.weight" value="{{system.weight}}" data-dtype="Number" />
             </div>
             <div class="resource">
                 <label class="resource-label">{{localize "FALLOUT.UI.Cost"}}</label>
-                <input class="num-short-3" type="text" name="data.cost" value="{{data.cost}}" data-dtype="String" />
+                <input class="num-short-3" type="text" name="system.cost" value="{{system.cost}}" data-dtype="String" />
             </div>
             <div class="resource">
                 <label class="resource-label">{{localize "FALLOUT.UI.Rarity"}}</label>
-                <input class="num-short-2" type="number" name="data.rarity" value="{{data.rarity}}" data-dtype="Number" />
+                <input class="num-short-2" type="number" name="system.rarity" value="{{system.rarity}}" data-dtype="Number" />
             </div>
         </div>
         {{/if}}

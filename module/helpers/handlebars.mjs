@@ -86,28 +86,25 @@ export const registerHandlebarsHelpers = function () {
 
   Handlebars.registerHelper('isCreaturesWeapon', function (weapon) {
     if (
-      weapon.data.data.weaponType == 'creatureAttack' ||
+      weapon.system.weaponType == 'creatureAttack' ||
       weapon.actor?.type == 'creature'
     )
       return true
     else return false
   })
 
-  Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (
-    weapon,
-    actor,
-  ) {
-    if (
-      (weapon.data.weaponType == 'unarmed' ||
-        weapon.data.weaponType == 'meleeWeapons') &&
-      actor?.type != 'creature'
-    )
+  Handlebars.registerHelper('isWeaponUsingMeleeBonus', function (weapon, actor)
+  {
+    if ((weapon.system.weaponType == 'unarmed' || weapon.system.weaponType == 'meleeWeapons') &&  actor?.type != 'creature'){
       return true
-    else return false
+    }
+    else {
+      return false
+    }
   })
 
   Handlebars.registerHelper('isWeaponDamaged', function (weapon) {
-    if (!weapon.data.tear) return false
+    if (!weapon.tear) return false
     else return true
   })
 
@@ -131,4 +128,9 @@ export const registerHandlebarsHelpers = function () {
       return Array.prototype.slice.call(arguments, 0, -1).some(Boolean)
     },
   })
+
+  Handlebars.registerHelper('enrichHtmlHelper', function (rawText){
+    return TextEditor.enrichHTML(rawText, {async: false})
+  })
+
 }

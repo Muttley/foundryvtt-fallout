@@ -30,7 +30,7 @@ export class FalloutItem extends Item {
     // If present, return the actor's roll data.
     if (!this.actor) return null;
     const rollData = this.actor.getRollData();
-    rollData.item = foundry.utils.deepClone(this.data.data);
+    rollData.item = foundry.utils.deepClone(this.system);
 
     return rollData;
   }
@@ -49,7 +49,7 @@ export class FalloutItem extends Item {
   //   const label = `[${item.type}] ${item.name}`;
 
   //   // If there's no roll data, send a chat message.
-  //   if (!this.data.data.formula) {
+  //   if (!this.system.formula) {
   //     ChatMessage.create({
   //       speaker: speaker,
   //       rollMode: rollMode,
@@ -80,17 +80,24 @@ export class FalloutItem extends Item {
    * @private
    */
   async sendToChat(){    
-    const itemData = duplicate(this.data);
-    itemData.isPhysical = itemData.data.hasOwnProperty('weight')
-    itemData.isSkill = itemData.type === "skill"
-    itemData.isPerk = itemData.type === "perk"
-    itemData.isWeapon = itemData.type === "weapon";
-    itemData.isApparel = itemData.type === "apparel";
-    itemData.isWeaponMod = itemData.type === "weapon_mod";
-    itemData.isApparelMod = itemData.type === "apparel_mod";
-    itemData.isConsumable = itemData.type === "consumable";
-    itemData.isBook = itemData.type === "books_and_magz";
-    itemData.isRobotArmor = itemData.type === "robot_armor";
+    
+    const itemData = duplicate(this.system);
+    itemData._id = this._id;
+    itemData.img = this.img;
+    itemData.name = this.name;
+    itemData.type = this.type;
+    itemData.isPhysical = this.system.hasOwnProperty('weight')
+    itemData.isSkill = this.type === "skill"
+    itemData.isPerk = this.type === "perk"
+    itemData.isWeapon = this.type === "weapon";
+    itemData.isApparel = this.type === "apparel";
+    itemData.isWeaponMod = this.type === "weapon_mod";
+    itemData.isApparelMod = this.type === "apparel_mod";
+    itemData.isConsumable = this.type === "consumable";
+    itemData.isBook = this.type === "books_and_magz";
+    itemData.isRobotArmor = this.type === "robot_armor";
+
+console.log(itemData)
 
     const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
     const chatData = {

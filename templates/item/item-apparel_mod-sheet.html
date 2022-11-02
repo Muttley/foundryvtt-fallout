@@ -9,61 +9,58 @@
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
-
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="flexrow resource-row">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}</label>
-                {{#select data.apparelType}}
-                <select name="data.apparelType" id="">
+                {{#select system.apparelType}}
+                <select name="system.apparelType">
                     {{#each FALLOUT.APPAREL_TYPE as |item key|}}
-                    <option value="{{key}}">{{localize item}}</option>
+                    <option class="flo-option" value="{{key}}">{{localize item}}</option>
                     {{/each}}
                 </select>
                 {{/select}}
-                <!-- <input type="text" name="data.apparelType" placeholder="Outfit, Armor..." value="{{data.apparelType}}"> -->
+                <!-- <input type="text" name="system.apparelType" placeholder="Outfit, Armor..." value="{{system.apparelType}}"> -->
             </div>
 
             <div class="flexrow resource-row">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </label>
-                {{#each data.resistance as |item key|}}
+                {{#each system.resistance as |item key|}}
                 <div class="flex align-mid">
                     <label><span class="fo-{{key}}"></span> {{key}} &nbsp;</label>
-                    <input type="number" class="num-short-2" name="data.resistance.{{key}}" value="{{item}}">
+                    <input type="number" class="num-short-2" name="system.resistance.{{key}}" value="{{item}}">
                 </div>
                 {{/each}}
             </div>
 
             <div class="flexrow resource-row">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Locations"}}</label>
-                <input type="text" name="data.location" placeholder="For Armor Upgrades. Leg, Arm, .etc" value="{{data.location}}">
+                <input type="text" name="system.location" placeholder="For Armor Upgrades. Leg, Arm, .etc" value="{{system.location}}">
             </div>
 
             <div class="flexrow resource-row">
                 <label class="resource-label">{{localize "FALLOUT.HEALTH.health"}}</label>
-                <input type="number" class="" name="data.health.value" value="{{data.health.value}}">
+                <input type="number" class="" name="system.health.value" value="{{system.health.value}}">
             </div>
 
             <div class="flexrow resource-row">
                 <label class="resource-label">{{localize "FALLOUT.UI.Perks"}}</label>
-                <input type="text" name="data.perks" value="{{data.perks}}">
+                <input type="text" name="system.perks" value="{{system.perks}}">
             </div>
 
             <div class="resource-row">
                 <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effects"}}</h3>
                 <div class="description-field">
-                    {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
+                    {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
                 </div>
             </div>
-
         </div>
 
         {{!-- Description Tab --}}
         <div class="tab description" data-group="primary" data-tab="description">
             {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
-            {{editor content=data.description target="data.description" rollData=rollData button=true owner=owner editable=editable}}
+            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
-
 
     </section>
 </form>

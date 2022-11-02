@@ -11,22 +11,22 @@
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="flexrow resource-row">
-                <label for="data.issue" class="resource-label">{{localize "FALLOUT.TEMPLATES.Issue"}}</label>
-                <input type="text" name="data.issue" value="{{data.issue}}">
+                <label for="system.issue" class="resource-label">{{localize "FALLOUT.TEMPLATES.Issue"}}</label>
+                <input type="text" name="system.issue" value="{{system.issue}}">
             </div>
             <div class="flexrow align-left resource-row">
-                <label for="data.learned" class="resource-label">{{localize "FALLOUT.TEMPLATES.Learned"}}</label>
-                <input type="checkbox" name="data.learned" {{#ifCond data.learned '==' true}}checked{{/ifCond}}>
+                <label for="system.learned" class="resource-label">{{localize "FALLOUT.TEMPLATES.Learned"}}</label>
+                <input type="checkbox" name="system.learned" {{#ifCond system.learned '==' true}}checked{{/ifCond}}>
             </div>
 
             <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effect"}}</h3>
             <div class="description-field">
-                {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
+                {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
             </div>
         </div>
         {{!-- Description Tab --}}
         <div class="tab description" data-group="primary" data-tab="description">
-            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
     </section>
 </form>

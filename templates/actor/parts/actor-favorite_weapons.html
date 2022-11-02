@@ -3,19 +3,18 @@
         <h4 class="tab-switch" data-tab="weapons">{{localize "FALLOUT.TEMPLATES.FAVORITE_WEAPONS"}}</h4>
     </div>
     <div class="box-content">
-        <ol class="items-list">
-            {{#each data.favoriteWeapons as |item id|}}
-            <li class="item favorite-weapon weapon flexrow" data-item-id="{{item.data._id}}">
-                <div class="item-name flex3">
+        <ol class="items-list">            
+            {{#each favoriteWeapons as |item id|}}
+            <li class="item favorite-weapon weapon flexrow" data-item-id="{{item._id}}">
+                <div class="item-name flex2 flex-between">
                     <h4 class="resource-label"><a class="weapon-roll">{{item.name}} {{#if (isWeaponDamaged
-                            item.data)}}<i class="fas fa-wrench"></i>{{/if}}</a></h4>
+                            item.system)}}<i class="fas fa-wrench"></i>{{/if}}</a></h4>
+                <div class="text-center" style="margin-right: 5px;">
+                    <a class="weapon-roll-damage" style="color:rgb(238, 231, 135)">{{#if (isWeaponUsingMeleeBonus item ../actor)}} 
+                        {{math item.system.damage.rating '+' ../actor.system.meleeDamage.base}} {{else}}
+                        {{item.system.damage.rating}} {{/if}}<span class="fo-pip-boy fo-blue"></span></a>
                 </div>
-                <div class="text-center">
-                    <a class="weapon-roll-damage">{{#if (isWeaponUsingMeleeBonus item.data ../actor)}} {{math
-                        item.data.data.damage.rating '+' ../actor.data.data.meleeDamage.base}} {{else}}
-                        {{item.data.data.damage.rating}} {{/if}}<span class="fo-pip-boy fo-blue"></span></a>
-                </div>
-            </li>
+            </li>            
             {{/each}}
         </ol>
     </div>

@@ -30,27 +30,27 @@
                 <h4 class="resource-label">{{item.name}}</h4>
             </div>
             <div class="flexrow flexlarge item-info align-mid">
-                {{#ifCond item.data.appareltype '==' 'powerArmor'}}
-                <a class="text-center item-control item-powered {{#unless item.data.powered}}item-unpowered{{/unless}}" title='{{localize "FALLOUT.powered"}}'>
+                {{#ifCond item.system.appareltype '==' 'powerArmor'}}
+                <a class="text-center item-control item-powered {{#unless item.system.powered}}item-unpowered{{/unless}}" title='{{localize "FALLOUT.powered"}}'>
                     <i class="fas fa-dot-circle"></i>
                 </a>
                 {{/ifCond}}
                 <div class="text-center flex2">
-                    {{#each item.data.location as |hasLoc loc|}}
+                    {{#each item.system.location as |hasLoc loc|}}
                     <span class="font-size-11">{{#ifCond hasLoc '==' true}}{{localize (concat "FALLOUT.BODYLOCATION_ABBR." ../../../actor.type "." loc)}}&nbsp;{{/ifCond}}</span>
                     {{/each}}
                 </div>
                 <div class="text-center flex2">
-                    {{#each item.data.resistance as |resValue res|}}
+                    {{#each item.system.resistance as |resValue res|}}
                     <span><i class="{{damageFaIconClass res}}" title="{{res}}"></i>:{{resValue}}&nbsp;</span>
                     {{/each}}
                 </div>
             </div>
             <div class=" item-controls">
-                <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
+                <a class="item-control item-stash {{#unless item.system.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
                     <i class="fas fa-briefcase"></i>
                 </a>
-                <a class="item-control item-toggle {{#unless item.data.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
+                <a class="item-control item-toggle {{#unless item.system.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
                     <i class="fas fa-tshirt"></i>
                 </a>
                 <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
@@ -86,21 +86,21 @@
             </div>
             <div class="flexrow flexlarge item-info align-mid">
                 <div class="text-center">
-                    {{#each item.data.location as |hasLoc loc|}}
+                    {{#each item.system.location as |hasLoc loc|}}
                     <span class="font-size-11">{{#ifCond hasLoc '==' true}}{{localize (concat "FALLOUT.BODYLOCATION_ABBR." ../../../actor.type "." loc)}}&nbsp;{{/ifCond}}</span>
                     {{/each}}
                 </div>
                 <div class="text-center">
-                    {{#each item.data.resistance as |resValue res|}}
+                    {{#each item.system.resistance as |resValue res|}}
                     <span><i class="{{damageFaIconClass res}}" title="{{res}}"></i>:{{resValue}}&nbsp;</span>
                     {{/each}}
                 </div>
             </div>
             <div class=" item-controls">
-                <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
+                <a class="item-control item-stash {{#unless item.system.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
                     <i class="fas fa-briefcase"></i>
                 </a>
-                <a class="item-control item-toggle {{#unless item.data.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
+                <a class="item-control item-toggle {{#unless item.system.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
                     <i class="fas fa-tshirt"></i>
                 </a>
                 <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>

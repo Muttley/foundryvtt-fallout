@@ -1,6 +1,6 @@
 <div class="status-plaque {{keypart}}" data-bodypart={{keypart}} data-status="{{bodypart.status}}">
     <div class="status-header">
-        <p title="{{#with (lookup actor.data.data.outfitedLocations [keypart])~}}{{name}}{{/with}}">{{localize (concat 'FALLOUT.BODYLOCATION.' actor.type '.' keypart)}}&nbsp;{{getBodypartValue keypart}}</p>
+        <p title="{{#with (lookup actor.system.outfitedLocations [keypart])~}}{{name}}{{/with}}">{{localize (concat 'FALLOUT.BODYLOCATION.' actor.type '.' keypart)}}&nbsp;{{getBodypartValue keypart}}</p>
     </div>
 
     <div class="injury-bar">

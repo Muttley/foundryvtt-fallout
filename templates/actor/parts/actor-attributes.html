@@ -1,20 +1,11 @@
 <div class="attributes-list">
-  {{#each data.attributes as |ability key|}}
+  {{#each system.attributes as |ability key|}}
   <div class="attribute special-letter">
-    <label for="data.attributes.{{key}}.value" class="resource-label align-left"
+    <label for="system.attributes.{{key}}.value" class="resource-label align-left"
       data-label="{{ability.label}}">{{subString ability.label 0 1}}</label>
     <div class='special-number'>
-      <input type="number" name="data.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" min="0" />
+      <input type="number" name="system.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number" min="0" />
     </div>
   </div>
   {{/each}}
 </div>
-<!-- <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
-  <div>
-    <label class="label"><strong>Luck</strong></label>
-    <label style="font-size: 12px; padding-left: 10px;">Points</label>
-  </div>
-  <div class="special-number">
-    <input type="number" style="font-size: 22px;" name="data.luckPoints" value="{{data.luckPoints}}">
-  </div>
-</div> -->

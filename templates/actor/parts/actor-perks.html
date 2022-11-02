@@ -13,16 +13,16 @@
         <h4><a class="resource-label">{{item.name}}</a></h4>
       </div>
       <div class="text-center">
-        <label>{{item.data.rank.value}}</label>
+        <label>{{item.system.rank.value}}</label>
       </div>
       <div class="item-controls">
-        {{#ifCond item.data.stashed '!=' null}}
-        <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
+        {{#ifCond item.system.stashed '!=' null}}
+        <a class="item-control item-stash {{#unless item.system.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
           <i class="fas fa-briefcase"></i>
         </a>
         {{/ifCond}}
-        {{#if item.data.equippable}}
-        <a class="item-control item-toggle {{#unless item.data.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
+        {{#if item.system.equippable}}
+        <a class="item-control item-toggle {{#unless item.system.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
           <i class="fas fa-tshirt"></i>
         </a>
         {{/if}}

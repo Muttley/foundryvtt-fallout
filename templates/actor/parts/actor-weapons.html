@@ -22,11 +22,11 @@
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <a class="weapon-roll-damage"><strong>{{item.data.damage.rating}}</strong> <span class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} +
-                        <strong>{{../actor.data.data.meleeDamage.base}}</strong> <span class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
+                    <a class="weapon-roll-damage"><strong>{{item.system.damage.rating}}</strong> <span class="fo-pip-boy fo-blue"></span> {{#if (isWeaponUsingMeleeBonus item ../actor)}} +
+                        <strong>{{../actor.system.meleeDamage.base}}</strong> <span class="fo-pip-boy fo-blue"></span> MB{{/if}}</a>
                 </div>
                 <div class="text-center">
-                    {{#each item.data.damage.damageType as |dt dk|}}
+                    {{#each item.system.damage.damageType as |dt dk|}}
                     {{#ifCond dt '==' true}}
                     <i class="fo-{{dk}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' dk)}}"></i>
                     {{/ifCond}}
@@ -34,10 +34,10 @@
                 </div>
             </div>
             <div class=" item-controls">
-                <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
+                <a class="item-control item-stash {{#unless item.system.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
                     <i class="fas fa-briefcase"></i>
                 </a>
-                <a class="item-control item-favorite {{#unless item.data.favorite}}favorite-start-dim{{/unless}}" title='{{localize "FALLOUT.UI.favorite"}}'>
+                <a class="item-control item-favorite {{#unless item.system.favorite}}favorite-start-dim{{/unless}}" title='{{localize "FALLOUT.UI.favorite"}}'>
                     <i class="fas fa-star"></i>
                 </a>
                 <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
@@ -46,14 +46,14 @@
         </div>
         <div class="item-sub-info">
             <span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
-            {{#each item.data.damage.weaponQuality as |quality key|}}
+            {{#each item.system.damage.weaponQuality as |quality key|}}
             {{#if (eq quality.value true)}}
             <span class="quality hover" data-key="{{key}}">{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}},&nbsp;</span>
             {{/if}}
             {{/each}}
             &nbsp;&nbsp;&nbsp;
             <span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
-            {{#each item.data.damage.damageEffect as |effect key|}}
+            {{#each item.system.damage.damageEffect as |effect key|}}
             {{#if (eq effect.value true)}}
             <span class="effect hover" data-key="{{key}}">
                 {{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
@@ -92,11 +92,11 @@
             </div>
             <div class="flexrow flexlarge align-mid">
                 <div class="text-center">
-                    <input type="number" class="item-quantity num-short-3" name="data.quantity" value="{{item.data.quantity}}" min="0">
+                    <input type="number" class="item-quantity num-short-3" name="system.quantity" value="{{item.system.quantity}}" min="0">
                 </div>
             </div>
             <div class=" item-controls">
-                <a class="item-control item-stash {{#unless item.data.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
+                <a class="item-control item-stash {{#unless item.system.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
                     <i class="fas fa-briefcase"></i>
                 </a>
                 <a class="item-control item-edit" title="{{localize 'FALLOUT.TEMPLATES.Edit_Item'}}"><i class="fas fa-edit"></i></a>
