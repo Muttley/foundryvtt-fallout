@@ -1,6 +1,12 @@
+
 v 10.0.0
 
 - Compatibility update for Foundry v10
+
+
+V 9.0.6
+
+- Fixed initial creation of caps and other valuables on Actor (Thanks to Haxxer)
 
 
 V 9.0.5
