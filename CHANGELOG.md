@@ -1,3 +1,8 @@
+v 10.0.0
+
+- Compatibility update for Foundry v10
+
+
 V 9.0.5
 
 - Send item details to chat
