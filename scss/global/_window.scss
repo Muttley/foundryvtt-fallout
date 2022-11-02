@@ -233,6 +233,14 @@
 			background-color: $f-valut-dark-green;
 		}
 	}
+	.content-link{
+		background: darken($f-vault-blue, 10%);
+		border: unset;
+		.fas {
+			color:$c-font-prim;
+		}
+		
+	}
 
 	background-size: cover;
 	background-repeat: no-repeat;

@@ -10,7 +10,7 @@
                     <h4 class="resource-label"><a class="weapon-roll">{{item.name}} {{#if (isWeaponDamaged
                             item.system)}}<i class="fas fa-wrench"></i>{{/if}}</a></h4>
                 <div class="text-center" style="margin-right: 5px;">
-                    <a class="weapon-roll-damage">{{#if (isWeaponUsingMeleeBonus item ../actor)}} 
+                    <a class="weapon-roll-damage" style="color:rgb(238, 231, 135)">{{#if (isWeaponUsingMeleeBonus item ../actor)}} 
                         {{math item.system.damage.rating '+' ../actor.system.meleeDamage.base}} {{else}}
                         {{item.system.damage.rating}} {{/if}}<span class="fo-pip-boy fo-blue"></span></a>
                 </div>

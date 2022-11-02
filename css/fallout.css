@@ -309,6 +309,15 @@
   background-color: #325885;
 }
 
+.fallout .window-content .content-link {
+  background: #243f60;
+  border: unset;
+}
+
+.fallout .window-content .content-link .fas {
+  color: #eee787;
+}
+
 .dice-tooltip .dice-rolls .roll.max {
   color: unset;
   filter: none;
