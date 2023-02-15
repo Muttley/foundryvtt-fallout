@@ -8,42 +8,52 @@
     "verified": "10",
     "maximum": "10"
   },
-  "authors":[{"name":"HappySteve"}] ,
+  "authors": [
+    {
+      "name": "HappySteve",
+      "flags": {}
+    }
+  ],
   "esmodules": [
     "module/fallout.mjs"
   ],
   "styles": [
     "css/fallout.css"
   ],
-  "scripts": [],
   "packs": [
     {
       "name": "skills",
       "label": "Skills",
       "system": "fallout",
-      "path": "./packs/skills.db",
-      "type": "Item"
+      "path": "packs/skills.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "fallout-macros",
       "label": "Fallout Macros",
       "system": "fallout",
-      "path": "./packs/fallout-macros.db",
-      "type": "Macro"
+      "path": "packs/fallout-macros.db",
+      "type": "Macro",
+      "private": false,
+      "flags": {}
     }
   ],
   "languages": [
     {
-	    "lang": "en",
-	    "name": "English",
-	    "path": "lang/en.json"
-	  },
-	  {
-	    "lang": "fr",
-	    "name": "Français",
-	    "path": "lang/fr.json"
-	  }
-    ],
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json",
+      "flags": {}
+    }
+  ],
   "socket": true,
   "url": "https://github.com/superseva/fallout",
   "manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
