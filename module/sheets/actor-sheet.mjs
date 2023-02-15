@@ -35,25 +35,35 @@ export class FalloutActorSheet extends ActorSheet {
   /** @override */
   async getData(options) {
 
-    //const context = await super.getData(options)    
+    //const context = await super.getData(options)
 
     // Use a safe clone of the actor data for further operations.
     //const actorData = context.actor.data
     const source = this.actor.toObject();
     const actorData = this.actor.toObject(false);
 
+    // Sort all items alphabetically for display on the character sheet
+    actorData.items.sort((a, b) => {
+        if (a.name < b.name) {
+            return -1;
+        }
+        if (a.name > b.name) {
+            return 1;
+        }
+        return 0;
+    });
 
     const context = {
       actor: actorData,
       source: source.system,
       system: actorData.system,
-      items: actorData.items,      
-      effects: prepareActiveEffectCategories(this.actor.effects),      
+      items: actorData.items,
+      effects: prepareActiveEffectCategories(this.actor.effects),
       owner: this.actor.isOwner,
       limited: this.actor.limited,
       options: this.options,
       editable: this.isEditable,
-      type: this.actor.type,      
+      type: this.actor.type,
       isCharacter: this.actor.type === "character",
       isRobot: this.actor.type === "robot",
       isNPC: this.actor.type === "npc",
@@ -142,6 +152,7 @@ export class FalloutActorSheet extends ActorSheet {
     const miscellany = []
     const gear = []
     const specialAbilities = []
+
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
