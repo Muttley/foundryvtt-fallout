@@ -31,18 +31,23 @@ export class Dialog2d20 extends Dialog {
             let skill = html.find('[name="skill"]').val();
             let complication = html.find('[name="complication"]').val();
             let isTag = html.find('[name="tag"]').is(':checked');
-            game.fallout.Roller2D20.rollD20({ rollname: this.rollName, dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication, rollLocation: this.rollLocation });
+            game.fallout.Roller2D20.rollD20({ rollname: this.rollName, dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication, rollLocation: this.rollLocation, item: this.item });
             
-            //if this actor != null and this.item has ammo reduce the ammo of actor
-            if(this.actor && this.item?.system.ammo!=""){
-                try{
-                    // TODO - decide the ammout of initial ammo spent (if it is a gattling or something)
-                    let ammoToSpend = 1
-                    if(this.item.system.damage.weaponQuality.gatling.value)
-                        ammoToSpend = 10
-                    this.actor.reduceAmmo(this.item.system.ammo, ammoToSpend)
-                }catch(er){
-                    console.warn(er)
+            //console.warn(this?.actor?.type)
+            if(game.settings.get("fallout", "automaticAmmunitionCalculation")){
+                if(this.actor?.type != "character" && this.actor?.type != "robot")
+                    return;
+                //REDUCE AMMO
+                if(this.actor && this.item?.system.ammo!=""){
+                    try{
+                        // TODO - decide the ammout of initial ammo spent (if it is a gattling or something)
+                        let ammoToSpend = 1
+                        if(this.item.system.damage.weaponQuality.gatling.value)
+                            ammoToSpend = 10
+                        this.actor.reduceAmmo(this.item.system.ammo, ammoToSpend)
+                    }catch(er){
+                        console.warn(er)
+                    }
                 }
             }
         });

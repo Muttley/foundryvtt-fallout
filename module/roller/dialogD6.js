@@ -19,35 +19,40 @@ export class DialogD6 extends Dialog {
 
         html.on('click', '.roll', async (event) => {
             let diceNum = html.find('.d-number')[0].value;
-
             let additionalAmmo = 0;
-
-            if(this.weapon?.system.ammo){
-                let initDmg = this.falloutRoll ? 0 : this.weapon.system.damage.rating
-                additionalAmmo = this.checkAmmo(diceNum, initDmg)
-                if(additionalAmmo<0)
-                    return;
-            }
-            
-            
-            if (!this.falloutRoll){                            
-                game.fallout.Roller2D20.rollD6({ rollname: this.rollName, dicenum: parseInt(diceNum), weapon: this.weapon, actor: this.actor });
-                if(additionalAmmo>0){
-                    let _actor = fromUuidSync(this.actor).actor
-                    if(!_actor)
-                         _actor = fromUuidSync(this.actor)
-                    await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo)
+            // CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
+            if(game.settings.get("fallout", "automaticAmmunitionCalculation")){            
+                if(this.weapon?.system.ammo){
+                    let initDmg = this.falloutRoll ? 0 : this.weapon.system.damage.rating
+                    additionalAmmo = this.checkAmmo(diceNum, initDmg)
+                    if(additionalAmmo<0)
+                        return;
                 }
+            }
+                     
+            if (!this.falloutRoll){                            
+                game.fallout.Roller2D20.rollD6({ rollname: this.rollName, dicenum: parseInt(diceNum), weapon: this.weapon, actor: this.actor });    
             }
             else{
-                game.fallout.Roller2D20.addD6({ rollname: this.rollName, dicenum: parseInt(diceNum), weapon: this.weapon, actor: this.actor, falloutRoll: this.falloutRoll });
-                if(additionalAmmo>0){
-                    let _actor = fromUuidSync(this.actor).actor
-                    if(!_actor)
-                         _actor = fromUuidSync(this.actor)
-                    await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo)
-                }
+                game.fallout.Roller2D20.addD6({ rollname: this.rollName, dicenum: parseInt(diceNum), weapon: this.weapon, actor: this.actor, falloutRoll: this.falloutRoll });    
             }
+            // REDUCE AMMO FOR CHARACTER AND ROBOT
+            if(game.settings.get("fallout", "automaticAmmunitionCalculation")){
+                if(!this.actor)
+                    return;
+
+                let _actor;
+                if(this.actor.startsWith("Actor"))
+                    _actor = fromUuidSync(this.actor)
+                else if(this.actor.startsWith("Scene"))
+                    _actor = fromUuidSync(this.actor).actor;
+                
+                if(_actor.type=="character" || _actor.type=="character"){
+                    if(additionalAmmo>0){
+                        await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo)
+                    }
+                }
+            }            
         })
     }
 
@@ -71,27 +76,7 @@ export class DialogD6 extends Dialog {
         <label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="${diceNum}">
         </div>
         </div>`
-        // let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll,{
-        //     title: rollName,
-        //     content: html,
-        //     buttons: {
-        //         roll: {
-        //             icon: '<i class="fas fa-check"></i>',
-        //             label: "ROLL",
-        //             callback: async (html) => {                       
-        //                 let diceNum = html.find('.d-number')[0].value;
-        //                 if (!falloutRoll){                            
-        //                     game.fallout.Roller2D20.rollD6({ rollname: rollName, dicenum: parseInt(diceNum), weapon: weapon });
-        //                 }
-        //                 else{
-        //                     game.fallout.Roller2D20.addD6({ rollname: rollName, dicenum: parseInt(diceNum), weapon: weapon, falloutRoll: falloutRoll });
-        //                 }
-        //             }
-        //         }
-        //     },
-        //     default: "roll",
-        //     close: () => { },
-        // });
+        
         let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, {
             title: rollName,
             content: html,
@@ -107,38 +92,46 @@ export class DialogD6 extends Dialog {
     }
 
     checkAmmo(diceNum, initDmg){
+        if(!game.settings.get("fallout", "automaticAmmunitionCalculation"))
+            return 0;
         if(!this.actor)
             return 0;
         if(!this.weapon)
             return 0;
         if(this.weapon.system.ammo == "")
             return 0;
+        
 
         //! Check if there is ammo at all
-        let _actor = fromUuidSync(this.actor).actor
-        if(!_actor)
+        let _actor;
+        if(this.actor.startsWith("Actor"))
             _actor = fromUuidSync(this.actor)
+        else if(this.actor.startsWith("Scene"))
+            _actor = fromUuidSync(this.actor).actor
+
+        if(!_actor)
+            return 0;
+        
+        if(_actor.type != "character" && _actor.type != "robot")
+            return 0;
 
         const ammo = _actor.items.find(i => i.name ==this.weapon.system.ammo)
         if(!ammo){
             ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`)
             return -1;
         }
-
         //! Check if there is enough ammo
         const totalDice = parseInt(diceNum);        
         const weaponDmg = parseInt(initDmg);
         let additionalAmmo = Math.max(0, totalDice - weaponDmg);
-        if(this.weapon.system.damage.weaponQuality.gatling.value)
+        if(this.weapon.system.damage.weaponQuality.gatling.value){
             additionalAmmo *=5
-       
+        }       
         if(parseInt(ammo.system.quantity)<additionalAmmo){
             ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`)
             return -1;
         }
 
-        
-        return additionalAmmo;
-        
+        return additionalAmmo;        
     }
 }

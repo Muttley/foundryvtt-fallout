@@ -48,4 +48,12 @@ export function registerSettings() {
         default: false,
         type: Boolean,
     });
+    game.settings.register('fallout', 'automaticAmmunitionCalculation', {
+        name:"Ammunition Calculation",
+        hint:"Automatically reduces the ammo for the weapons that have the ammo name populated. It reduces the ammo on the initial shot (2d20 roll) as well as on the increasing DC in the damage roll or when adding more dice to the DC previously rolled. It takes in to the account Gatling quality but it does not automatically reduce the ammo for the burst effect.",
+        scope: 'world',
+        config: true,
+        default: true,
+        type: Boolean,
+    })
 }
