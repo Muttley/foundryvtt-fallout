@@ -32,14 +32,19 @@ export class DialogD6 extends Dialog {
             
             if (!this.falloutRoll){                            
                 game.fallout.Roller2D20.rollD6({ rollname: this.rollName, dicenum: parseInt(diceNum), weapon: this.weapon, actor: this.actor });
-                if(additionalAmmo>0)
-                    await this.actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo)
+                if(additionalAmmo>0){
+                    let _actor = fromUuidSync(this.actor).actor
+                    if(!_actor)
+                         _actor = fromUuidSync(this.actor)
+                    await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo)
+                }
             }
             else{
                 game.fallout.Roller2D20.addD6({ rollname: this.rollName, dicenum: parseInt(diceNum), weapon: this.weapon, actor: this.actor, falloutRoll: this.falloutRoll });
                 if(additionalAmmo>0){
-                    //! IT ONLY WORKS FOR LINKED ACTORS SINCE THE CHAT MESSAGE TRUCATES ACTOR IN THE FLAGS
-                    const _actor = game.actors.get(this.actor._id)
+                    let _actor = fromUuidSync(this.actor).actor
+                    if(!_actor)
+                         _actor = fromUuidSync(this.actor)
                     await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo)
                 }
             }
@@ -110,7 +115,11 @@ export class DialogD6 extends Dialog {
             return 0;
 
         //! Check if there is ammo at all
-        const ammo = this.actor.items.find(i => i.name ==this.weapon.system.ammo)
+        let _actor = fromUuidSync(this.actor).actor
+        if(!_actor)
+            _actor = fromUuidSync(this.actor)
+
+        const ammo = _actor.items.find(i => i.name ==this.weapon.system.ammo)
         if(!ammo){
             ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`)
             return -1;
@@ -118,8 +127,10 @@ export class DialogD6 extends Dialog {
 
         //! Check if there is enough ammo
         const totalDice = parseInt(diceNum);        
-        const weaponDmg = parseInt(initDmg)
-        const additionalAmmo = Math.max(0, totalDice - weaponDmg)
+        const weaponDmg = parseInt(initDmg);
+        let additionalAmmo = Math.max(0, totalDice - weaponDmg);
+        if(this.weapon.system.damage.weaponQuality.gatling.value)
+            additionalAmmo *=5
        
         if(parseInt(ammo.system.quantity)<additionalAmmo){
             ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`)

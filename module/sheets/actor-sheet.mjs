@@ -482,6 +482,7 @@ export class FalloutActorSheet extends ActorSheet {
 
     // * ROLL WEAPON SKILL
     html.find('.weapon-roll').click((ev) => {
+      
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('item-id'))
       let skillName, skill, attribute
@@ -514,17 +515,21 @@ export class FalloutActorSheet extends ActorSheet {
       - Check if there is at least minimum ammount of that ammo on the actor
       - if there is less ammo than minimum ammount pop up message (NO AMMO) instead of the roll dialog */
 
+      let minAmmoAmount = item.system.damage.weaponQuality.gatling.value ? 10 : 1;
+      console.warn(item.system.damage.weaponQuality.gatling.value)
+
+
       if(item.system.ammo != ""){       
         const ammo = item.actor.items.find(i=>i.name==item.system.ammo)
         if(!ammo){
           ui.notifications.warn(`Ammo ${item.system.ammo} not found`)
           return
         }
-        if(ammo.system.quantity<1){
+        if(ammo.system.quantity<minAmmoAmount){
           ui.notifications.warn(`Not enough ${item.system.ammo} ammo`)
           return
         }
-      }     
+      }      
 
       game.fallout.Dialog2d20.createDialog({
         rollName: rollName,
@@ -554,10 +559,19 @@ export class FalloutActorSheet extends ActorSheet {
 
       let rollName = item.name;
 
+      let actorUUID;
+      let _token = this.actor.token
+      if(_token)
+        actorUUID = this.actor.token.uuid
+      else
+        actorUUID = this.actor.uuid
+
+      console.warn(fromUuidSync(actorUUID).actor)
+
       game.fallout.DialogD6.createDialog({
         rollName: rollName,
         diceNum: numOfDice,
-        actor: this.actor,
+        actor: actorUUID,
         weapon: item,
       })
     })

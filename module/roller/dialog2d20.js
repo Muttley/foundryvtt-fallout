@@ -37,8 +37,13 @@ export class Dialog2d20 extends Dialog {
             if(this.actor && this.item?.system.ammo!=""){
                 try{
                     // TODO - decide the ammout of initial ammo spent (if it is a gattling or something)
-                    this.actor.reduceAmmo(this.item.system.ammo, 1)
-                }catch(er){}
+                    let ammoToSpend = 1
+                    if(this.item.system.damage.weaponQuality.gatling.value)
+                        ammoToSpend = 10
+                    this.actor.reduceAmmo(this.item.system.ammo, ammoToSpend)
+                }catch(er){
+                    console.warn(er)
+                }
             }
         });
     }
