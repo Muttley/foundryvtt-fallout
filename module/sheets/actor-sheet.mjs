@@ -516,8 +516,6 @@ export class FalloutActorSheet extends ActorSheet {
       - if there is less ammo than minimum ammount pop up message (NO AMMO) instead of the roll dialog */
 
       let minAmmoAmount = item.system.damage.weaponQuality.gatling.value ? 10 : 1;
-      console.warn(item.system.damage.weaponQuality.gatling.value)
-
 
       if(item.system.ammo != ""){       
         const ammo = item.actor.items.find(i=>i.name==item.system.ammo)
@@ -566,7 +564,7 @@ export class FalloutActorSheet extends ActorSheet {
       else
         actorUUID = this.actor.uuid
 
-      console.warn(fromUuidSync(actorUUID).actor)
+      //console.warn(fromUuidSync(actorUUID).actor)
 
       game.fallout.DialogD6.createDialog({
         rollName: rollName,
