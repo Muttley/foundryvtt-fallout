@@ -506,6 +506,26 @@ export class FalloutActorSheet extends ActorSheet {
           }
         attribute = item.actor.system.attributes[skill.defaultAttribute]
       }
+      // TODO
+      /* 
+      - console.warn(item.actor.toObject())
+      - console.warn(item.toObject())
+      - Check if weapon has specified ammo
+      - Check if there is at least minimum ammount of that ammo on the actor
+      - if there is less ammo than minimum ammount pop up message (NO AMMO) instead of the roll dialog */
+
+      if(item.system.ammo != ""){       
+        const ammo = item.actor.items.find(i=>i.name==item.system.ammo)
+        if(!ammo){
+          ui.notifications.warn(`Ammo ${item.system.ammo} not found`)
+          return
+        }
+        if(ammo.system.quantity<1){
+          ui.notifications.warn(`Not enough ${item.system.ammo} ammo`)
+          return
+        }
+      }     
+
       game.fallout.Dialog2d20.createDialog({
         rollName: rollName,
         diceNum: 2,
@@ -513,21 +533,11 @@ export class FalloutActorSheet extends ActorSheet {
         skill: skill.value,
         tag: skill.tag,
         complication: 20,
-        rollLocation:true
+        rollLocation:true,
+        actor: this.actor,
+        item: item
       })
-    })
-
-    // * POWER ARMOR MONITOR
-    html.find('.power-armor-monitor-helath-value').change((ev) => {
-      const apparelId = $(ev.currentTarget).data('itemId')
-      const newHealthValue = $(ev.currentTarget).val()
-      let apparel = this.actor.items.get(apparelId)
-      if (apparel) {
-        if (apparel.system.appareltype == 'powerArmor') {
-          apparel.update({ 'data.health.value': newHealthValue })
-        }
-      }
-    })
+    })   
 
     // * ROLL WEAPON DAMAGE
     html.find('.weapon-roll-damage').click((ev) => {
@@ -547,8 +557,21 @@ export class FalloutActorSheet extends ActorSheet {
       game.fallout.DialogD6.createDialog({
         rollName: rollName,
         diceNum: numOfDice,
-        weapon: item.toObject(),
+        actor: this.actor,
+        weapon: item,
       })
+    })
+
+     // * POWER ARMOR MONITOR
+     html.find('.power-armor-monitor-helath-value').change((ev) => {
+      const apparelId = $(ev.currentTarget).data('itemId')
+      const newHealthValue = $(ev.currentTarget).val()
+      let apparel = this.actor.items.get(apparelId)
+      if (apparel) {
+        if (apparel.system.appareltype == 'powerArmor') {
+          apparel.update({ 'data.health.value': newHealthValue })
+        }
+      }
     })
 
     // Drag events for macros.

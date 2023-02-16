@@ -9,10 +9,10 @@ export class FalloutActor extends Actor {
   }
 
   /** @override */
-  prepareBaseData() {
+  //prepareBaseData() {
     // Data modifications in this step occur before processing embedded
     // documents or derived data.
-  }
+  //}
 
   /**
    * @override
@@ -382,6 +382,16 @@ export class FalloutActor extends Actor {
       })
       //this.data.update({ items }) // depricated
       this.updateSource({ items })
+    }
+  }
+
+  // Reduce Ammo
+  async reduceAmmo(ammo = "", ammount = 0){
+    console.log(this._id)
+    const _ammo = this.items.find(i => i.name == ammo);
+    if(_ammo){
+      const newQ = Math.max(0, parseInt(_ammo.system.quantity) - parseInt(ammount))
+      await this.updateEmbeddedDocuments("Item", [{"_id":_ammo._id, "system.quantity":newQ}])
     }
   }
 }
