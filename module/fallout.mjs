@@ -119,8 +119,7 @@ Hooks.once('ready', async function () {
   Hooks.on('hotbarDrop', (bar, data, slot) => createItemMacro(data, slot))
 })
 
-Hooks.on('renderChatMessage', (message, html, data) => {
-  
+Hooks.on('renderChatMessage', (message, html, data) => {  
   let rrlBtn = html.find('.reroll-button')
   if (rrlBtn.length > 0) {
     rrlBtn[0].setAttribute('data-messageId', message.id)
@@ -172,11 +171,13 @@ Hooks.on('renderChatMessage', (message, html, data) => {
     addBtn.click((ev) => {
       let falloutRoll = message.flags.falloutroll
       let weapon = message.flags.weapon
+      let actor = message.flags.actor
       game.fallout.DialogD6.createDialog({
         rollname: falloutRoll.rollname,
         diceNum: 1,
         falloutRoll: falloutRoll,
         weapon: weapon,
+        actor: actor
       })
     })
   }

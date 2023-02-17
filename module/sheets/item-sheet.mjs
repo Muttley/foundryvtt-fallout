@@ -64,22 +64,7 @@ export class FalloutItemSheet extends ItemSheet {
         })
       })
     }
-  /*
-    // V9    
-    // Use a safe clone of the item data for further operations.
-      const itemData = context.item.data;
-      // Retrieve the roll data for TinyMCE editors.
-      context.rollData = {};
-      let actor = this.object?.parent ?? null;
-      if (actor) {
-        context.rollData = actor.getRollData();
-      }
-      // Add the actor's data to context.data for easier access, as well as flags.
-      context.data = itemData.data;
-      context.flags = itemData.flags;
-      context.effects = prepareActiveEffectCategories(this.item.effects);
-      context.FALLOUT = CONFIG.FALLOUT;
-  */
+  
     return context;
   }
 
@@ -120,7 +105,7 @@ export class FalloutItemSheet extends ItemSheet {
       let tagEl = $(ev.currentTarget).parent('.wpn-tag');
       let tagKey = tagEl.data('tagKey');
       let tagType = tagEl.data('tagType');
-      let itemId = this.document.data._id;
+      //let itemId = this.document.data._id;
       //let wpn = game.items.get(itemId);
       let flagKey = "";
       if (tagType == 'weaponQuality')

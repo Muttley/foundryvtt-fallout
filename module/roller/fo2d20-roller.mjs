@@ -5,7 +5,7 @@ export class Roller2D20 {
     complicationTreshold = 20;
     successes = 0;
 
-    static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20, rollLocation = false } = {}) {
+    static async rollD20({ rollname = "Roll xD20", dicenum = 2, attribute = 0, skill = 0, tag = false, difficulty = 1, complication = 20, rollLocation = false, item = null } = {}) {
         let dicesRolled = [];
         let successTreshold = parseInt(attribute) + parseInt(skill);
         let critTreshold = tag ? parseInt(skill) : 1;
@@ -34,11 +34,12 @@ export class Roller2D20 {
             critTreshold: critTreshold,
             complicationTreshold: complicationTreshold,
             hitLocation:hitLocation,
-            hitLocationResult: hitLocationResult
+            hitLocationResult: hitLocationResult,
+            item: item
         });
     }
 
-    static async parseD20Roll({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null, hitLocationResult=null }) {
+    static async parseD20Roll({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null, hitLocationResult=null, item = null }) {
         let i = 0;
         roll.dice.forEach(d => {
             d.results.forEach(r => {
@@ -73,7 +74,8 @@ export class Roller2D20 {
             dicesRolled: dicesRolled,
             rerollIndexes: rerollIndexes,
             hitLocation:hitLocation,
-            hitLocationResult:hitLocationResult
+            hitLocationResult:hitLocationResult,
+            item: item
         });
     }
 
@@ -97,7 +99,7 @@ export class Roller2D20 {
         });
     }
 
-    static async sendToChat({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null, hitLocationResult=null } = {}) {
+    static async sendToChat({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null, hitLocationResult=null, item = null } = {}) {
         let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
         let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
         let rollData = {
@@ -107,7 +109,8 @@ export class Roller2D20 {
             results: dicesRolled,
             successTreshold: successTreshold,
             hitLocation: hitLocation,
-            hitLocationResult:hitLocationResult
+            hitLocationResult:hitLocationResult,
+            item:item
         }
         const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.html", rollData);
         let falloutRoll = {}
@@ -119,7 +122,7 @@ export class Roller2D20 {
         falloutRoll.rerollIndexes = rerollIndexes;
         falloutRoll.diceFace = "d20";
         falloutRoll.hitLocation= hitLocation;
-        falloutRoll.hitLocationResult = hitLocationResult;
+        falloutRoll.hitLocationResult = hitLocationResult;        
         let chatData = {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
@@ -152,18 +155,19 @@ export class Roller2D20 {
         return r;
     }
 
-    static async rollD6({ rollname = "Roll D6", dicenum = 2, weapon = null } = {}) {
+    static async rollD6({ rollname = "Roll D6", dicenum = 2, weapon = null, actor = null } = {}) {
         let formula = `${dicenum}dc`;
         let roll = new Roll(formula);
-        await roll.evaluate({ async: true });
+        await roll.evaluate({ async: true });        
         await Roller2D20.parseD6Roll({
             rollname: rollname,
             roll: roll,
-            weapon: weapon
+            weapon: weapon,
+            actor: actor
         });
     }
 
-    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], addDice = [], weapon = null } = {}) {
+    static async parseD6Roll({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], addDice = [], weapon = null, actor = null } = {}) {
         let diceResults = [
             { result: 1, effect: 0 },
             { result: 2, effect: 0 },
@@ -192,17 +196,18 @@ export class Roller2D20 {
         if (addDice.length) {
             dicesRolled = addDice.concat(dicesRolled);
         }
-
+        
         await Roller2D20.sendD6ToChat({
             rollname: rollname,
             roll: roll,
             dicesRolled: dicesRolled,
             rerollIndexes: rerollIndexes,
-            weapon: weapon
+            weapon: weapon,
+            actor: actor
         });
     }
 
-    static async rerollD6({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], weapon = null } = {}) {
+    static async rerollD6({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], weapon = null, actor = null } = {}) {
         if (!rerollIndexes.length) {
             ui.notifications.notify('Select Dice you want to Reroll');
             return;
@@ -216,11 +221,12 @@ export class Roller2D20 {
             roll: _roll,
             dicesRolled: dicesRolled,
             rerollIndexes: rerollIndexes,
-            weapon: weapon
+            weapon: weapon,
+            actor: actor
         });
     }
 
-    static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null } = {}) {
+    static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null, actor = null } = {}) {
         let formula = `${dicenum}dc`;
         let _roll = new Roll(formula);
         await _roll.evaluate({ async: true });
@@ -231,11 +237,12 @@ export class Roller2D20 {
             roll: _roll,
             dicesRolled: dicesRolled,
             addDice: oldDiceRolled,
-            weapon: weapon
+            weapon: weapon,
+            actor: actor
         });
     }
 
-    static async sendD6ToChat({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], weapon = null } = {}) {
+    static async sendD6ToChat({ rollname = "Roll D6", roll = null, dicesRolled = [], rerollIndexes = [], weapon = null, actor = null } = {}) {
         let damage = dicesRolled.reduce((a, b) => ({ result: a.result + b.result })).result;
         let effects = dicesRolled.reduce((a, b) => ({ effect: a.effect + b.effect })).effect;
         let weaponDamageTypesList = [];
@@ -274,10 +281,11 @@ export class Roller2D20 {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
             content: html,
-            flags: { falloutroll: falloutRoll, weapon: weapon },
+            flags: { falloutroll: falloutRoll, weapon: weapon, actor: actor },
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-            roll: roll,
+            roll: roll
         };
+        
         if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
             chatData.whisper = ChatMessage.getWhisperRecipients("GM");
         } else if (chatData.rollMode === "selfroll") {

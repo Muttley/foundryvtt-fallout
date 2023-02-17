@@ -133,4 +133,26 @@ export const registerHandlebarsHelpers = function () {
     return TextEditor.enrichHTML(rawText, {async: false})
   })
 
+  Handlebars.registerHelper('getWpnQListAsString', function(weapon){
+    if(weapon.type!="weapon")
+      return ""
+
+    let str = ""
+    let title = `<strong>Weapon Qualities</strong>:`;
+    let content = ``;
+    for(let wq in weapon.system.damage.weaponQuality){
+      if(weapon.system.damage.weaponQuality[wq].value){
+        let qualitydescription = game.fallout.FOHovers.LIST[wq].toLowerCase()
+        content += `&nbsp;<span title="${qualitydescription}">${weapon.system.damage.weaponQuality[wq].label}</span>,`;
+      }      
+    }
+    if(content){
+      str = title + content;
+      str = str.slice(0, -1);
+    }else{
+      str = title + " none";
+    }    
+    return str;
+  })
+
 }

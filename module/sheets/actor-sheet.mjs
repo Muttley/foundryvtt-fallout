@@ -292,14 +292,14 @@ export class FalloutActorSheet extends ActorSheet {
       let newRank = parseInt($(ev.currentTarget).val())
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('itemId'))
-      let updatedItem = { _id: item.id, data: { value: newRank } }
+      let updatedItem = { _id: item.id, system: { value: newRank } }
       await this.actor.updateEmbeddedDocuments('Item', [updatedItem])
     })
     // Toggle Tag value
     html.find('.skill .item-skill-tag').click(async (ev) => {
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('itemId'))
-      let updatedItem = { _id: item.id, data: { tag: !item.system.tag } }
+      let updatedItem = { _id: item.id, system: { tag: !item.system.tag } }
       await this.actor.updateEmbeddedDocuments('Item', [updatedItem])
     })
 
@@ -383,7 +383,7 @@ export class FalloutActorSheet extends ActorSheet {
       let newQuantity = parseInt($(ev.currentTarget).val())
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('itemId'))
-      let updatedItem = { _id: item.id, data: { quantity: newQuantity } }
+      let updatedItem = { _id: item.id, system: { quantity: newQuantity } }
       await this.actor.updateEmbeddedDocuments('Item', [updatedItem])
     })
 
@@ -450,8 +450,8 @@ export class FalloutActorSheet extends ActorSheet {
       //newInjuries[index] = 2;
       let newStatus = this._getBodyPartStatus(newInjuries)
       let _update = {}
-      let _dataInjuries = `data.body_parts.${bodypart}.injuries`
-      let _dataStatus = `data.body_parts.${bodypart}.status`
+      let _dataInjuries = `system.body_parts.${bodypart}.injuries`
+      let _dataStatus = `system.body_parts.${bodypart}.status`
       _update[_dataInjuries] = newInjuries
       _update[_dataStatus] = newStatus
       await this.actor.update(_update)
@@ -466,8 +466,8 @@ export class FalloutActorSheet extends ActorSheet {
       let newInjuries = [...injuries]
       newInjuries[index] = status == 1 ? 0 : 1
       let newStatus = this._getBodyPartStatus(newInjuries)
-      let _dataInjuries = `data.body_parts.${bodypart}.injuries`
-      let _dataStatus = `data.body_parts.${bodypart}.status`
+      let _dataInjuries = `system.body_parts.${bodypart}.injuries`
+      let _dataStatus = `system.body_parts.${bodypart}.status`
       let _update = {}
       _update[_dataInjuries] = newInjuries
       _update[_dataStatus] = newStatus
@@ -481,7 +481,7 @@ export class FalloutActorSheet extends ActorSheet {
       .click((ev) => onManageActiveEffect(ev, this.actor))
 
     // * ROLL WEAPON SKILL
-    html.find('.weapon-roll').click((ev) => {
+    html.find('.weapon-roll').click((ev) => {      
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('item-id'))
       let skillName, skill, attribute
@@ -506,6 +506,26 @@ export class FalloutActorSheet extends ActorSheet {
           }
         attribute = item.actor.system.attributes[skill.defaultAttribute]
       }
+      
+      // REDUCE AMMO
+      if(game.settings.get("fallout", "automaticAmmunitionCalculation")){
+        if(this.actor.type == 'character' || this.actor.type == 'robot'){
+          let minAmmoAmount = item.system.damage.weaponQuality.gatling.value ? 10 : 1;
+          if(item.system.ammo != ""){       
+            const ammo = item.actor.items.find(i=>i.name==item.system.ammo)
+            if(!ammo){
+              ui.notifications.warn(`Ammo ${item.system.ammo} not found`)
+              return
+            }
+            if(ammo.system.quantity<minAmmoAmount){
+              ui.notifications.warn(`Not enough ${item.system.ammo} ammo`)
+              return
+            }
+          }
+        }
+      }
+          
+
       game.fallout.Dialog2d20.createDialog({
         rollName: rollName,
         diceNum: 2,
@@ -513,21 +533,11 @@ export class FalloutActorSheet extends ActorSheet {
         skill: skill.value,
         tag: skill.tag,
         complication: 20,
-        rollLocation:true
+        rollLocation:true,
+        actor: this.actor,
+        item: item
       })
-    })
-
-    // * POWER ARMOR MONITOR
-    html.find('.power-armor-monitor-helath-value').change((ev) => {
-      const apparelId = $(ev.currentTarget).data('itemId')
-      const newHealthValue = $(ev.currentTarget).val()
-      let apparel = this.actor.items.get(apparelId)
-      if (apparel) {
-        if (apparel.system.appareltype == 'powerArmor') {
-          apparel.update({ 'data.health.value': newHealthValue })
-        }
-      }
-    })
+    })   
 
     // * ROLL WEAPON DAMAGE
     html.find('.weapon-roll-damage').click((ev) => {
@@ -544,11 +554,33 @@ export class FalloutActorSheet extends ActorSheet {
 
       let rollName = item.name;
 
+      let actorUUID;
+      let _token = this.actor.token
+      if(_token)
+        actorUUID = this.actor.token.uuid
+      else
+        actorUUID = this.actor.uuid
+
+      //console.warn(fromUuidSync(actorUUID).actor)
+
       game.fallout.DialogD6.createDialog({
         rollName: rollName,
         diceNum: numOfDice,
-        weapon: item.toObject(),
+        actor: actorUUID,
+        weapon: item,
       })
+    })
+
+     // * POWER ARMOR MONITOR
+     html.find('.power-armor-monitor-helath-value').change((ev) => {
+      const apparelId = $(ev.currentTarget).data('itemId')
+      const newHealthValue = $(ev.currentTarget).val()
+      let apparel = this.actor.items.get(apparelId)
+      if (apparel) {
+        if (apparel.system.appareltype == 'powerArmor') {
+          apparel.update({ 'system.health.value': newHealthValue })
+        }
+      }
     })
 
     // Drag events for macros.
