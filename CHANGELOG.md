@@ -1,3 +1,9 @@
+v 10.0.1
+
+- Added Ammo Calculation
+- Added Weapon Quality labels in the 2d20 chat message
+- Cleared some old "data" instances
+
 
 v 10.0.0
 

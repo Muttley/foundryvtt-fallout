@@ -50,7 +50,7 @@ export function registerSettings() {
     });
     game.settings.register('fallout', 'automaticAmmunitionCalculation', {
         name:"Ammunition Calculation",
-        hint:"Automatically reduces the ammo for the weapons that have the ammo name populated. It reduces the ammo on the initial shot (2d20 roll) as well as on the increasing DC in the damage roll or when adding more dice to the DC previously rolled. It takes in to the account Gatling quality but it does not automatically reduce the ammo for the burst effect.",
+        hint:"Automatically decreases the ammunition count on the character sheet for weapon Items that have the Ammo field populated. Ammunition is decreased: 1. on the initial shot (d20 roll dialog) 2. when adding more dice to the DC (d6 roll dialog) 3. when adding more dice to a previously-rolled DC result (-Add- button in Chat Dialog). It takes in to the account Gatling (x10 ammo consumed) quality. It does NOT automatically reduce the ammo for the Burst effects, Gun-Fu perk, nor for the Accurate qulity.",
         scope: 'world',
         config: true,
         default: true,
