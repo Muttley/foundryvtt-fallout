@@ -1,3 +1,8 @@
+v 10.0.2
+
+- Adding vicious damage effect in to the weapon damage calculation
+
+
 v 10.0.1
 
 - Added Ammo Calculation
