@@ -387,7 +387,6 @@ export class FalloutActor extends Actor {
 
   // Reduce Ammo
   async reduceAmmo(ammo = "", ammount = 0){
-    console.log(this._id)
     const _ammo = this.items.find(i => i.name == ammo);
     if(_ammo){
       const newQ = Math.max(0, parseInt(_ammo.system.quantity) - parseInt(ammount))

@@ -138,5 +138,27 @@ FALLOUT.consumableTypes = {
   "other": "FALLOUT.OTHER"
 }
 
+FALLOUT.conditions = {
+  "hunger": {
+    "full":0,
+    "sated":1,
+    "peckish": 2,
+    "hungry": 3,
+    "starving": 4
+  },
+  "thirst":{
+    "quenched":0,
+    "hydrated":1,
+    "thirsty":2,
+    "dehydrated":3
+  },
+  "sleep":{
+    "rested":0,
+    "tired":1,
+    "weary":2,
+    "exhausted":3
+  }
+}
+
 
 
