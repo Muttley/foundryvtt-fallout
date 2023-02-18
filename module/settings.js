@@ -56,4 +56,22 @@ export function registerSettings() {
         default: true,
         type: Boolean,
     })
+    game.settings.register('fallout', 'carryBase', {
+        name: "Starting Carry Base in .lb for Characters",
+        hint: "Starting Carry Weight unmodified by STR",
+        scope: "world",
+        config: true,
+        default: 150,
+        type:Number,
+        onChange: debounceReload
+    })
+    game.settings.register('fallout', 'carryBaseRobot', {
+        name: "Starting Carry Base in .lb for Robots",
+        hint: "Starting Carry Weight unmodified by STR",
+        scope: "world",
+        config: true,
+        default: 150,
+        type:Number,
+        onChange: debounceReload
+    })
 }

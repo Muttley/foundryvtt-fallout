@@ -1,7 +1,12 @@
+v 10.0.4
+
+- Added game settting for the initial carry capacity for characters and robots
+
+
 v 10.0.3
 
-- Improved Conditiun status display
-- Added system.complication value (initialy 20). This can be further modify by adding Active Effects
+- Improved Condition status display
+- Added system.complication value (initialy 20). This can be further modified by Active Effects
 - Weapons with unreliable quality now decrease Complication by 1 when you roll 2D20 from the weapon
 
 
