@@ -257,10 +257,15 @@ export class Roller2D20 {
                     const damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
                     const efectLabel = `${damageEffectLabel}${rank}`;
                     const effectDescription = game.fallout.FOHovers.LIST[ weapon.system.damage.damageEffect[de].label.toLowerCase()];
-                    weaponDamageEffects.push({effect: effectDescription, efectLabel: efectLabel});
+                    weaponDamageEffects.push({effect: effectDescription, efectLabel: efectLabel, effectId: de});
                 }
             }
+            // Check for Vicious damage effect and add to damage for each effect rolled
+            if (weaponDamageEffects.find(e => e.effectId === 'vicious')) {
+                damage += effects;
+            }
         }
+
         let rollData = {
             rollname: rollname,
             damage: damage,
