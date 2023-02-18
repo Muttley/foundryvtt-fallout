@@ -2,18 +2,60 @@
     <div class="box-header">
         <h4>{{localize "FALLOUT.TEMPLATES.CONDITIONS"}}</h4>
     </div>
+    
     <div class="box-content">
         <ol class="items-list">
-            {{#each system.conditions as |item key|}}
-            <li class="item flexrow">
-                <div class="item-name flex3">
-                    <h4 class="resource-label upperC">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</h4>
+            <li class="item" style="padding: 0.25rem;">
+                <div class="text-center">
+                    <i class="fa-solid fa-pot-food" title="{{localize (concat 'FALLOUT.TEMPLATES.conditions.hunger')}}"></i>
                 </div>
                 <div class="text-center">
-                    <input type="number" class="num-short-2" name="system.conditions.{{key}}" value="{{item}}">
+                    {{#select system.conditions.hunger}}
+                    <select name="system.conditions.hunger">
+                        {{#each FALLOUT.conditions.hunger as |value key|}}
+                        <option class="flo-option" value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
+                        {{/each}}
+                    </select>
+                    {{/select}}
                 </div>
             </li>
-            {{/each}}
+            <li class="item" style="padding: 0.25rem;">
+                <div class="text-center">
+                    <i class="fa-solid fa-bottle-droplet" title="{{localize (concat 'FALLOUT.TEMPLATES.conditions.thirst')}}"></i>
+                </div>
+                <div class="text-center">
+                    {{#select system.conditions.thirst}}
+                    <select name="system.conditions.thirst">
+                        {{#each FALLOUT.conditions.thirst as |value key|}}
+                        <option class="flo-option" value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
+                        {{/each}}
+                    </select>
+                    {{/select}}
+                </div>
+            </li>
+            <li class="item" style="padding: 0.25rem;">
+                <div class="text-center">
+                    <i class="fa-solid fa-bed" title="{{localize (concat 'FALLOUT.TEMPLATES.conditions.sleep')}}"></i>
+                </div>
+                <div class="text-center">
+                    {{#select system.conditions.sleep}}
+                    <select name="system.conditions.sleep">
+                        {{#each FALLOUT.conditions.sleep as |value key|}}
+                        <option class="flo-option" value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
+                        {{/each}}
+                    </select>
+                    {{/select}}
+                </div>
+            </li>
+
+            <li class="item" style="padding: 0.25rem;">
+                <div class="text-center">
+                    <p class="resource-label upperC text-center" style="margin: 0;">{{localize (concat 'FALLOUT.TEMPLATES.conditions.fatigue')}}</p>
+                </div>
+                <div class="text-center">
+                    <input type="number" class="num-short-2" name="system.conditions.fatigue" value="{{system.conditions.fatigue}}">
+                </div>
+            </li>
         </ol>
     </div>
 </div>

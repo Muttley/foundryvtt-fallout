@@ -494,16 +494,10 @@ export class FalloutActorSheet extends ActorSheet {
         skill['tag'] = true
         attribute = item.actor.system[item.system.attribute]
       } else {
-        skillName =
-          CONFIG.FALLOUT.WEAPONS.weaponSkill[item.system.weaponType]
+        skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.system.weaponType]
         let skillItem = item.actor.items.find((i) => i.name == skillName)
         if (skillItem) skill = skillItem.system
-        else
-          skill = {
-            value: 0,
-            tag: false,
-            defaultAttribute: 'str',
-          }
+        else skill = { value: 0, tag: false, defaultAttribute: 'str'}
         attribute = item.actor.system.attributes[skill.defaultAttribute]
       }
       
@@ -524,7 +518,11 @@ export class FalloutActorSheet extends ActorSheet {
           }
         }
       }
-          
+      
+      // Check for unreliable weapon quality
+      let complication = parseInt(this.actor.system.complication);
+      if(item.system.damage.weaponQuality.unreliable.value)
+        complication-=1;
 
       game.fallout.Dialog2d20.createDialog({
         rollName: rollName,
@@ -532,7 +530,7 @@ export class FalloutActorSheet extends ActorSheet {
         attribute: attribute.value,
         skill: skill.value,
         tag: skill.tag,
-        complication: 20,
+        complication: complication,
         rollLocation:true,
         actor: this.actor,
         item: item
@@ -655,7 +653,7 @@ export class FalloutActorSheet extends ActorSheet {
       attribute: attribute,
       skill: rank,
       tag: tag,
-      complication: 20,
+      complication: parseInt(this.actor.system.complication),
     })
   }
 

@@ -1,3 +1,10 @@
+v 10.0.3
+
+- Improved Conditiun status display
+- Added system.complication value (initialy 20). This can be further modify by adding Active Effects
+- Weapons with unreliable quality now decrease Complication by 1 when you roll 2D20 from the weapon
+
+
 v 10.0.2
 
 - Adding vicious damage effect in to the weapon damage calculation
