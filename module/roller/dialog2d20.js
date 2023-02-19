@@ -31,7 +31,7 @@ export class Dialog2d20 extends Dialog {
             let skill = html.find('[name="skill"]').val();
             let complication = html.find('[name="complication"]').val();
             let isTag = html.find('[name="tag"]').is(':checked');
-            game.fallout.Roller2D20.rollD20({ rollname: this.rollName, dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication, rollLocation: this.rollLocation, item: this.item });
+            game.fallout.Roller2D20.rollD20({ rollname: this.rollName, dicenum: this.diceNum, attribute: attr, skill: skill, tag: isTag, complication: complication, rollLocation: this.rollLocation, item: this.item, actor: this.actor });
             
             //console.warn(this?.actor?.type)
             if(game.settings.get("fallout", "automaticAmmunitionCalculation")){
