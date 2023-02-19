@@ -1,3 +1,8 @@
+v 10.0.5
+
+- Introducing a way to write fallout symbols in to the text fileds. Use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types.
+
+
 v 10.0.4
 
 - Added game settting for the initial carry capacity for characters and robots

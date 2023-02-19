@@ -42,12 +42,13 @@ This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the book
 -   Conditions
 -   Action Points trackers for Overseer and the Party
 -   Location Die "1dh" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
+-   A way to write fallout symbols in the journal entries: use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types. 
 
 ## FAQ
 
 -   Apparel resistances are visible on the pip-boy figure for that specific body part. Resistances on the left of the pip-boy are general bonuses that are added to all body parts.
 -   Power Armor needs to be equipped and powered in order to apply it's resistances.
--   Power Armor frame as an Active Effect `data.attributes.str.value, Override, 11`
+-   Power Armor frame as an Active Effect `system.attributes.str.value, Override, 11`
 -   You can drag skills to the NPCs from the included skills compendium.
 -   Right click on the Skill name in order to choose a different Attribute to roll with. This will prop Delete skill on NPCs.(still looking for the right design solution for this)
 -   Characters can't equip robot armor so those are stashed under the GEAR tab. (and vice versa)
@@ -61,7 +62,7 @@ This might change in the future but for now:
 
 There is no item of this type but you can use Foundry's Active Effect on the character sheet to create one "Passive Effect" with this values:
 
-data.attributes.str.value, Override, 11
+system.attributes.str.value, Override, 11
 
 Players can then toggle it depending if they are in or out of the Power Armor.
 
