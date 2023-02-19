@@ -1,3 +1,8 @@
+v 10.0.6
+
+- Small changes to enable compatibility with the Maestro module
+
+
 v 10.0.5
 
 - Introducing a way to write fallout symbols in to the text fileds. Use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types.
