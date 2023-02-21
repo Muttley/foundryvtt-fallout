@@ -2,7 +2,7 @@
   "id": "fallout",
   "title": "Fallout 2d20",
   "description": "The unofficial Fallout 2d20 System for FoundryVTT",
-  "version": "10.0.6",
+  "version": "10.0.7",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
@@ -57,6 +57,6 @@
   "socket": true,
   "url": "https://github.com/superseva/fallout",
   "manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
-  "download": "https://github.com/superseva/fallout/releases/download/v10.0.6/fallout.zip",
+  "download": "https://github.com/superseva/fallout/releases/download/v10.0.7/fallout.zip",
   "license": "LICENSE.txt"
 }

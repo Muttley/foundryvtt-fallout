@@ -1,3 +1,8 @@
+v 10.0.7
+
+- Small fix in the Enricher initialization
+
+
 v 10.0.6
 
 - Small changes to enable compatibility with the Maestro module

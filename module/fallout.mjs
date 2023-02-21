@@ -66,6 +66,32 @@ Hooks.once('init', async function () {
   CONFIG.Dice.terms['h'] = DieFalloutLocation
   //CONFIG.Dice.terms['r'] = DieFalloutRobotLocation
 
+  CONFIG.TextEditor.enrichers = CONFIG.TextEditor.enrichers.concat([
+    {
+      pattern : /@fos\[(.+?)\]/gm,
+      enricher : async (match, options) => {
+          const span = document.createElement("span");
+          span.style.fontFamily = "fallout"
+          if(match[1]=="DC"){
+            span.innerHTML = ``
+          }
+          else if(match[1]=="PH"){
+            span.innerHTML = ``
+          }
+          else if(match[1]=="EN"){
+            span.innerHTML = ``
+          }
+          else if(match[1]=="PO"){
+            span.innerHTML = ``
+          }
+          else if(match[1]=="RA"){
+            span.innerHTML = ``
+          }                      
+          return span;
+      }
+    }
+  ])
+
   Die.MODIFIERS['ef'] = function minResult(modifier) {
     this.results = this.results.flatMap((result) => {
       if (result.result < 5) {
@@ -98,7 +124,7 @@ Hooks.once('init', async function () {
       //DiceTerm._applyCount(this.results, '>', 4, {flagSuccess: true});
       return [result]
     })
-  }
+  }  
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet)
@@ -108,6 +134,7 @@ Hooks.once('init', async function () {
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates()
+  
 })
 
 /* -------------------------------------------- */
@@ -115,31 +142,7 @@ Hooks.once('init', async function () {
 /* -------------------------------------------- */
 
 Hooks.once('ready', async function () {
-  CONFIG.TextEditor.enrichers = CONFIG.TextEditor.enrichers.concat([
-    {
-      pattern : /@fos\[(.+?)\]/gm,
-      enricher : async (match, options) => {
-          const span = document.createElement("span");
-          span.style.fontFamily = "fallout"
-          if(match[1]=="DC"){
-            span.innerHTML = ``
-          }
-          else if(match[1]=="PH"){
-            span.innerHTML = ``
-          }
-          else if(match[1]=="EN"){
-            span.innerHTML = ``
-          }
-          else if(match[1]=="PO"){
-            span.innerHTML = ``
-          }
-          else if(match[1]=="RA"){
-            span.innerHTML = ``
-          }                      
-          return span;
-      }
-    }
-  ])
+  
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on('hotbarDrop', (bar, data, slot) => createItemMacro(data, slot))
 })
