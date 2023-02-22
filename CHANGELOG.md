@@ -1,3 +1,8 @@
+v 10.0.8
+
+- Added "Ammo Per Shoot" parameter to weapons.
+
+
 v 10.0.7
 
 - Small fix in the Enricher initialization

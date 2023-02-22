@@ -123,9 +123,10 @@ export class DialogD6 extends Dialog {
         //! Check if there is enough ammo
         const totalDice = parseInt(diceNum);        
         const weaponDmg = parseInt(initDmg);
-        let additionalAmmo = Math.max(0, totalDice - weaponDmg);
+        let additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
+        //! Gatling weird shit where you need to add 2DC and spend 10 ammmo...
         if(this.weapon.system.damage.weaponQuality.gatling.value){
-            additionalAmmo *=5
+            additionalAmmo = Math.floor(additionalAmmo * 0.5);
         }       
         if(parseInt(ammo.system.quantity)<additionalAmmo){
             ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`)

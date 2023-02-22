@@ -133,7 +133,7 @@
     "Add_Perk": "Add Perk",
     "Addictive": "Addictive",
     "Alcoholic": "Alcoholic",
-    "AMMO": "AMMO",
+    "AMMO": "AMMO",    
     "Apparel": "Apparel",
     "APPAREL": "APPAREL",
     "Apparel_Type": "Apparel Type",
@@ -332,6 +332,7 @@
     }
   },
   "ITEM.TypeAmmo": "Ammo",
+  "ITEM.AmmoPerShot":"Ammo Per Shot",
   "ITEM.TypeApparel": "Apparel",
   "ITEM.TypeApparel_mod": "Apparel Mod",
   "ITEM.TypeBooks_and_magz": "Book/Magazine",
