@@ -298,10 +298,9 @@ export class FalloutActor extends Actor {
     let physicalItemsMap = physicalItems.map((i) => i.toObject())
     let totalWeight = 0
     for (let i of physicalItemsMap) {
-      totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity)
-      
+      totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity)  
     }
-    return totalWeight
+    return parseFloat(totalWeight.toFixed(2));
   }
 
   /**

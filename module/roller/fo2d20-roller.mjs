@@ -125,13 +125,12 @@ export class Roller2D20 {
         falloutRoll.rerollIndexes = rerollIndexes;
         falloutRoll.diceFace = "d20";
         falloutRoll.hitLocation= hitLocation;
-        falloutRoll.hitLocationResult = hitLocationResult;
-        let speaker;
-        if(actor)
-            speaker = {actor:actor._id}       
+        falloutRoll.hitLocationResult = hitLocationResult;     
         let chatData = {
             user: game.user.id,
-            speaker: speaker,
+            speaker: ChatMessage.getSpeaker({
+                actor: actor,
+              }),
             rollMode: game.settings.get("core", "rollMode"),
             content: html,
             flags: { falloutroll: falloutRoll },

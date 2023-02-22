@@ -504,14 +504,13 @@ export class FalloutActorSheet extends ActorSheet {
       // REDUCE AMMO
       if(game.settings.get("fallout", "automaticAmmunitionCalculation")){
         if(this.actor.type == 'character' || this.actor.type == 'robot'){
-          let minAmmoAmount = item.system.damage.weaponQuality.gatling.value ? 10 : 1;
           if(item.system.ammo != ""){       
             const ammo = item.actor.items.find(i=>i.name==item.system.ammo)
             if(!ammo){
               ui.notifications.warn(`Ammo ${item.system.ammo} not found`)
               return
             }
-            if(ammo.system.quantity<minAmmoAmount){
+            if(ammo.system.quantity<item.system.ammoPerShot){
               ui.notifications.warn(`Not enough ${item.system.ammo} ammo`)
               return
             }
