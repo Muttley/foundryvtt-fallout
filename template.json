@@ -647,7 +647,8 @@
         "physical",
         "equipable"
       ],
-      "effect": ""
+      "effect": "",
+      "perks":""
     },
     "special_ability": {
       "templates": [
