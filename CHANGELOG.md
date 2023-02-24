@@ -1,6 +1,7 @@
 v 10.0.9
 
 - Added "perks" parameter to Robot Mods.
+- Removed the background from the d6 so the color of the die can be customized in Dice So Nice module
 
 
 v 10.0.8
