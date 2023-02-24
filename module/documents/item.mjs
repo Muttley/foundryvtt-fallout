@@ -96,6 +96,7 @@ export class FalloutItem extends Item {
     itemData.isConsumable = this.type === "consumable";
     itemData.isBook = this.type === "books_and_magz";
     itemData.isRobotArmor = this.type === "robot_armor";
+    itemData.isRobotMod = this.type === "robot_mod";
 
     const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
     const chatData = {
@@ -104,7 +105,7 @@ export class FalloutItem extends Item {
         content: html,
     };
     if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-        chatData.whisper = ChatMessage.getWhisperIDs("GM");
+        chatData.whisper = ChatMessage.getWhisperRecipients("GM");
     } else if (chatData.rollMode === "selfroll") {
         chatData.whisper = [game.user];
     }

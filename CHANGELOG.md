@@ -1,3 +1,8 @@
+v 10.0.9
+
+- Added "perks" parameter to Robot Mods.
+
+
 v 10.0.8
 
 - Added "Ammo Per Shoot" parameter to weapons.
