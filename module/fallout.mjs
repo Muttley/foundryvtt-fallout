@@ -335,7 +335,7 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
       'systems/fallout/assets/dice/d6.webp',
     ],
     system: 'fallout',
-    colorset: 'fallout',
+    
   })
 
   dice3d.addDicePreset({
