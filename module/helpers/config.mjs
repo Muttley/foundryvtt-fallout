@@ -45,6 +45,13 @@ FALLOUT.ROBOT_APPAREL_TYPE = {
   "armor": "FALLOUT.APPAREL.armor"
 }
 
+FALLOUT.BodyTypes = {
+  "humanoid": "HUMANOID",
+  "robot":"ROBOT",
+  "quadruped":"QUADRUPED",
+  "flyingInsect":"FLYING_INSECT"
+}
+
 FALLOUT.BodyValues = {
   "head": "1-2",
   "torso": "3-8",

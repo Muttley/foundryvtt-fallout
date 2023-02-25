@@ -75,7 +75,50 @@
                             </div>
                         </div>
                     </div>
+                    {{!-- BODY STATUS --}}
+                    <div class="box no-padding bgOdd flexrow" style="margin-bottom:0.5rem">
+                      <h4 class="box-header text-center">{{localize "FALLOUT.BodyTypes.BodyType"}}</h4>
+                      {{#select system.bodyType}}
+                      <select name="system.bodyType">
+                        {{#each FALLOUT.BodyTypes as |type key|}}
+                        <option value="{{key}}" class="flo-option">{{localize (concat "FALLOUT.BodyTypes." key ".label")}}</option>
+                        {{/each}}
+                      </select>
+                      {{/select}}
+                    </div>
+          
                     <div class="box no-padding bgOdd">
+                      <div style="display: grid; grid-template-columns: 2fr 30% repeat(5, 1fr); background-color: black; padding: 3px 5px">
+                        <div>Roll</div>  
+                        <div>LOCATIONS</div>              
+                        <div class="text-center"><i class="fo-physical resistance-icon" title="physical"></i></div>
+                        <div class="text-center"><i class="fo-energy resistance-icon" title="energy"></i></div>
+                        <div class="text-center"><i class="fo-radiation resistance-icon" title="radiation"></i></div>
+                        <div class="flex align-center"><div style="background-image: url(systems/fallout/assets/ui/drop.svg); width: 1rem; background-repeat: no-repeat">&nbsp;</div></div>
+                        <div class="flex align-center"><div style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat">&nbsp;</div></div>              
+                      </div>
+          
+                      {{#each system.body_parts as |part key|}}
+                      <div style="display: grid; grid-template-columns: 2fr 30% repeat(5, 1fr); padding: 1px 5px">
+                        <div>{{part.hit.min}}-{{part.hit.max}}</div>
+                        <div>{{localize (concat 'FALLOUT.BodyTypes.' ../system.bodyType '.' key)}}</div>
+                        <div><input name="system.body_parts.{{key}}.resistance.physical" type="number" min="0" class="num-short-2" style="border:none; {{colorIfValue part.resistance.physical 0 '0f1b28' 'eee787'}}" value="{{part.resistance.physical}}"></div>
+                        <div><input name="system.body_parts.{{key}}.resistance.energy" type="number" min="0" class="num-short-2" style="border:none; {{colorIfValue part.resistance.energy 0 '0f1b28' 'eee787'}}" value="{{part.resistance.energy}}"></div>
+                        <div><input name="system.body_parts.{{key}}.resistance.radiation" type="number" min="0" class="num-short-2" style="border:none; {{colorIfValue part.resistance.radiation 0 '0f1b28' 'eee787'}}" value="{{part.resistance.radiation}}"></div>
+                        <div><input name="system.body_parts.{{key}}.injuryOpenCount" type="number" min="0" class="num-short-2" style="border:none; {{colorIfValue part.injuryOpenCount 0 '0f1b28' 'ff0000'}}" value="{{part.injuryOpenCount}}"></div>
+                        <div><input name="system.body_parts.{{key}}.injuryTreatedCount" type="number" min="0" class="num-short-2" style="border:none; {{colorIfValue part.injuryTreatedCount 0 '0f1b28' 'a46e30'}}" value="{{part.injuryTreatedCount}}"></div>             
+                      </div>
+                      {{/each}}
+                      <div class="flexrow resource-row">
+                        <span class="align-mid" style="display: flex;">
+                          <label for="system.resistance.poison.locations" style="margin-right: 5px; width: 20px;" class=""><i class="fo-poison resistance-icon" title="poison"></i></label>
+                          <input type="text" class="flex3" name="system.resistance.poison.locations" value="{{system.resistance.poison.locations}}" placeholder="0">
+                        </span>
+                      </div>
+                    </div>
+                    {{!-- END BODY STATUS --}}
+
+                    <!-- <div class="box no-padding bgOdd">
                         <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
                         {{#each system.resistance as |res key|}}
                         <div class="flexrow resource-row">
@@ -89,7 +132,7 @@
                     <div class="box no-padding bgEven">
                         <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
                         <textarea class="color-prim" name="system.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{system.injuries}}</textarea>
-                    </div>
+                    </div> -->
                 </div>
                 {{!-- RIGHT COLUMN __________________________________________________ --}}
                 <div>

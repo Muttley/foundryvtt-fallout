@@ -89,6 +89,7 @@
         "radiation": 0
       },
       "body": {
+        "bodyType":"humanoid",
         "body_parts": {
           "head": {
             "resistance": {
@@ -101,13 +102,9 @@
               "min": 1,
               "max": 2
             },
-            "injuries": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
+            "injuries": [0,0,0,0,0],
+            "injuryOpenCount":0,
+            "injuryTreatedCount":0
           },
           "torso": {
             "resistance": {
@@ -120,13 +117,9 @@
               "min": 3,
               "max": 8
             },
-            "injuries": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
+            "injuries": [0,0,0,0,0],
+            "injuryOpenCount":0,
+            "injuryTreatedCount":0
           },
           "armL": {
             "resistance": {
@@ -139,13 +132,9 @@
               "min": 9,
               "max": 11
             },
-            "injuries": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
+            "injuries": [0,0,0,0,0],
+            "injuryOpenCount":0,
+            "injuryTreatedCount":0
           },
           "armR": {
             "resistance": {
@@ -158,13 +147,9 @@
               "min": 12,
               "max": 14
             },
-            "injuries": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
+            "injuries": [0,0,0,0,0],
+            "injuryOpenCount":0,
+            "injuryTreatedCount":0
           },
           "legL": {
             "resistance": {
@@ -177,13 +162,9 @@
               "min": 15,
               "max": 17
             },
-            "injuries": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
+            "injuries": [0,0,0,0,0],
+            "injuryOpenCount":0,
+            "injuryTreatedCount":0
           },
           "legR": {
             "resistance": {
@@ -196,13 +177,9 @@
               "min": 18,
               "max": 20
             },
-            "injuries": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
+            "injuries": [0,0,0,0,0],
+            "injuryOpenCount":0,
+            "injuryTreatedCount":0
           }
         }
       },
@@ -236,13 +213,15 @@
         "base",
         "derived",
         "stats",
-        "valuables"
+        "valuables",
+        "body"
       ]
     },
     "creature": {
       "templates": [
         "base",
-        "valuables"
+        "valuables",
+        "body"
       ],
       "powerLevel": "normal",
       "body": {

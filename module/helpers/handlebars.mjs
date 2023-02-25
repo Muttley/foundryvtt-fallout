@@ -133,6 +133,11 @@ export const registerHandlebarsHelpers = function () {
     return TextEditor.enrichHTML(rawText, {async: false})
   })
 
+  // coloring input fields
+  Handlebars.registerHelper('colorIfValue', function (num, compare, color, color2){
+    return num==compare?`color:#${color};`:`color:#${color2};`
+  })
+
   Handlebars.registerHelper('getWpnQListAsString', function(weapon){
     if(weapon.type!="weapon")
       return ""
