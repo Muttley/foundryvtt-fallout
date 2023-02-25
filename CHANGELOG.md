@@ -1,3 +1,7 @@
+v 10.1.0
+
+- Added Body Parts with resistances and Injuries to the NPC and Creature sheets
+
 v 10.0.9
 
 - Added "perks" parameter to Robot Mods.
