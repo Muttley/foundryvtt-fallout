@@ -1,6 +1,6 @@
 v 10.1.0
 
-- Added Body Parts with resistances and Injuries to the NPC and Creature sheets
+- Added new Block for Body Parts with resistances and Injuries to the NPC and Creature sheets. Unfortunately there is no way for me to migrate previous data so the resistances and the injuries of NPCs and Creatures must be repopulated.
 
 v 10.0.9
 
