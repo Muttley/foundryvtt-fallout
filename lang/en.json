@@ -67,6 +67,45 @@
     "Right Leg | Thruster | Right Hind Leg | Legs": "Right Leg | Thruster | Right Hind Leg | Legs",
     "Torso | Main Body | Torso | Torso": "Torso | Main Body | Torso | Torso"
   },
+  "FALLOUT.BodyTypes":{
+    "BodyType":"Body Type",
+    "humanoid":{
+      "label":"Humanoid",
+      "head":"Head",
+      "torso":"Torso",
+      "armL": "Arm Left",
+      "armR": "Arm Right",
+      "legL": "Leg Left",
+      "legR": "Leg Right"
+    },
+    "robot":{
+      "label":"Robot",
+      "head":"Optics",
+      "torso":"Main Body",
+      "armL": "Arm 1",
+      "armR": "Arm 2",
+      "legL": "Arm 3",
+      "legR": "Main Body"
+    },
+    "quadruped":{
+      "label":"Quadruped",
+      "head":"Head",
+      "torso":"Torso",
+      "armL": "Left Front Leg",
+      "armR": "Right Front Leg",
+      "legL": "Left Hind Leg",
+      "legR": "Right Hind Leg"
+    },
+    "flyingInsect":{
+      "label":"Flying Insect",
+      "head":"Head",
+      "torso":"Torso",
+      "armL": "Left Wing (as leg)",
+      "armR": "Right Wing (as leg)",
+      "legL": "Legs",
+      "legR": "Legs"
+    }
+  },
   "FALLOUT.CHEM": "Chem",
   "FALLOUT.CREATURE": {
     "body": "Body",

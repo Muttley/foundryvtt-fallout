@@ -30,29 +30,7 @@
             </div>
             {{/each}}
           </div>
-          {{!-- SKILLS --}}
-          <div class="flexrow resource-row">
-            <div class="box">
-              <div class="box-header text-center">{{localize "FALLOUT.TEMPLATES.SKILLS"}}</div>
-              <div>
-                <ol class="items-list grid">
-                  {{#each skills as |item id|}}
-                  <li class="item skill flexrow" data-item-id="{{item._id}}">
-                    <div class="item-name">
-                      <h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{toUpperCase item.system.defaultAttribute}}]</a></h4>
-                    </div>
-                    <div class="item-skill-tag">
-                      <input type="checkbox" name="tag" {{#ifCond item.system.tag '==' true}}checked{{/ifCond}}>
-                    </div>
-                    <div class="item-skill-value">
-                      <input type="number" class="num-short-2" name="value" value="{{item.system.value}}">
-                    </div>
-                  </li>
-                  {{/each}}
-                </ol>
-              </div>
-            </div>
-          </div>
+          
 
           {{!-- HP INIT DEF --}}
           <div class="flexrow resource-row">
@@ -95,8 +73,12 @@
             </div>
           </div>
 
+          {{!-- BODY STATUS --}}
+          {{> "systems/fallout/templates/actor/parts/npc-body.html" FALLOUT=FALLOUT}}
+          {{!-- END BODY STATUS --}}
+
           {{!-- RESISTANCES --}}
-          <div class="box no-padding bgOdd">
+          <!-- <div class="box no-padding bgOdd">
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
             {{#each system.resistance as |res key|}}
             <div class="flexrow resource-row">
@@ -106,15 +88,43 @@
               </span>
             </div>
             {{/each}}
-          </div>
+          </div> -->
           {{!-- INJURIES --}}
-          <div class="box no-padding bgEven">
+          <!-- <div class="box no-padding bgEven">
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
             <textarea class="color-prim" name="system.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{system.injuries}}</textarea>
-          </div>
+          </div> -->
+          
         </div>
+
         {{!-- RIGHT COLUMN __________________________________________________ --}}
         <div class="right-column">
+
+          {{!-- SKILLS --}}
+          <div class="flexrow resource-row">
+            <div class="box">
+              <div class="box-header text-center">{{localize "FALLOUT.TEMPLATES.SKILLS"}}</div>
+              <div>
+                <ol class="items-list grid">
+                  {{#each skills as |item id|}}
+                  <li class="item skill flexrow" data-item-id="{{item._id}}">
+                    <div class="item-name">
+                      <h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{toUpperCase item.system.defaultAttribute}}]</a></h4>
+                    </div>
+                    <div class="item-skill-tag">
+                      <input type="checkbox" name="tag" {{#ifCond item.system.tag '==' true}}checked{{/ifCond}}>
+                    </div>
+                    <div class="item-skill-value">
+                      <input type="number" class="num-short-2" name="value" value="{{item.system.value}}">
+                    </div>
+                  </li>
+                  {{/each}}
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          {{!-- ATTACKS --}}
           <div class="box no-padding bgOdd">
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.ATTACKS"}}</h4>
             <div>

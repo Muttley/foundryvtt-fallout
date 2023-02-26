@@ -75,7 +75,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box no-padding bgOdd">
+                    
+                    {{!-- BODY STATUS --}}
+                    {{> "systems/fallout/templates/actor/parts/npc-body.html" FALLOUT=FALLOUT}}
+                    {{!-- END BODY STATUS --}}
+
+                    <!-- <div class="box no-padding bgOdd">
                         <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
                         {{#each system.resistance as |res key|}}
                         <div class="flexrow resource-row">
@@ -89,7 +94,7 @@
                     <div class="box no-padding bgEven">
                         <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
                         <textarea class="color-prim" name="system.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{system.injuries}}</textarea>
-                    </div>
+                    </div> -->
                 </div>
                 {{!-- RIGHT COLUMN __________________________________________________ --}}
                 <div>
