@@ -21,7 +21,7 @@
 	&:hover,
 	&:focus {
 		color: #000;
-		text-shadow: 0 0 10px rgb(0, 255, 21);
+		text-shadow: 0 0 10px #b4ff06;
 		cursor: pointer;
 	}
 }
@@ -282,7 +282,7 @@
 	}
 	a{
 		&:hover{
-			text-shadow: 0 0 8px #6aff06
+			text-shadow: 0 0 8px #b4ff06
 		}
 	}
 }

@@ -77,7 +77,7 @@
 
 .rollable:hover, .rollable:focus {
   color: #000;
-  text-shadow: 0 0 10px #00ff15;
+  text-shadow: 0 0 10px #b4ff06;
   cursor: pointer;
 }
 
@@ -361,7 +361,7 @@
 }
 
 .chat-item a:hover {
-  text-shadow: 0 0 8px #6aff06;
+  text-shadow: 0 0 8px #b4ff06;
 }
 
 .grid,
@@ -1452,7 +1452,7 @@
 }
 
 .fallout a:hover {
-  text-shadow: 0 0 8px #6aff06;
+  text-shadow: 0 0 8px #b4ff06;
 }
 
 .fallout .items-header {
