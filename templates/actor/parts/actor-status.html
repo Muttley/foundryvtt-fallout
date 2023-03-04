@@ -84,17 +84,17 @@
             <div class="body-part legL {{system.body_parts.legL.status}}"></div>
             <div class="body-part legR {{system.body_parts.legR.status}}"></div>
             {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.head
-            keypart="head"}}
+            keypart="head" apparel=system.outfitedLocations.head.name}}
             {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.torso
-            keypart="torso"}}
+            keypart="torso" apparel=system.outfitedLocations.torso.name}}
             {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.armL
-            keypart="armL"}}
+            keypart="armL" apparel=system.outfitedLocations.armL.name}}
             {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.armR
-            keypart="armR"}}
+            keypart="armR" apparel=system.outfitedLocations.armR.name}}
             {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.legL
-            keypart="legL"}}
+            keypart="legL" apparel=system.outfitedLocations.legL.name}}
             {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.legR
-            keypart="legR"}}
+            keypart="legR" apparel=system.outfitedLocations.legR.name}}
         </div>
 
     </div>
@@ -212,7 +212,7 @@
 <div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">
     <div class="flexrow align-mid">
         <div class="flex-center">
-            <label for="">{{system.carryWeight.value}} .{{localize "FALLOUT.TEMPLATES.lbs"}} + </label>
+            <label for="">{{system.carryWeight.base}} .{{localize "FALLOUT.TEMPLATES.lbs"}} + </label>
             <input type="number" name="system.carryWeight.mod" class="num-short-2" value="{{system.carryWeight.mod}}">
             <label for=""> = {{localize "FALLOUT.TEMPLATES.MAX"}}: {{system.carryWeight.value}} .{{localize
                 "FALLOUT.TEMPLATES.lbs"}}</label>
@@ -233,7 +233,7 @@
         {{> "systems/fallout/templates/actor/parts/actor-favorite_weapons.html"}}
     </div>
     <div class="grid-span-2">
-        {{> "systems/fallout/templates/actor/parts/actor-equipped_apparel.html"}}
+        {{> "systems/fallout/templates/actor/parts/actor-diseases.html"}}
     </div>
     <div>
         {{> "systems/fallout/templates/actor/parts/actor-conditions.html"}}

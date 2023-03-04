@@ -4,7 +4,7 @@
         <input type="number" class="item-quantity num-short-2" name="system.quantity" value="{{item.system.quantity}}" min="0">&nbsp;
         {{/if}}
         <div class="item-name flexlarge expandable-info">
-            <h4><a class="resource-label">{{item.name}}</a></h4>
+            <h4><a class="resource-label">{{item.name}}{{#ifCond extraName '!=' null}}&nbsp;({{extraName}}){{/ifCond}}</a></h4>
         </div>
         <div class="item-controls">
             {{#ifCond item.system.stashed '!=' null}}

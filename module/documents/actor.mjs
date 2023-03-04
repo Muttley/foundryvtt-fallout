@@ -30,6 +30,16 @@ export class FalloutActor extends Actor {
     this._prepareCharacterData()
     this._prepareRobotData()
     this._prepareNpcData()
+
+    // ADD UNOFFICIAL SPEED
+    try{
+      const athletics = this.items.find(i=> i.name.toLowerCase()==='athletics' && i.type==='skill')
+      const athleticsValue = athletics!=undefined? athletics.system.value : 0;
+      this.system.unofficalSpeed = this.system.attributes.agi.value + athleticsValue;
+    }
+    catch(er){
+      
+    }
   }
 
   /**
@@ -41,7 +51,8 @@ export class FalloutActor extends Actor {
     if (this.type !== 'character') return
     this._calculateCharacterBodyResistance()
     // Encumbrance
-    this.system.carryWeight.value = parseInt(this.system.carryWeight.base) + (parseInt(this.system.attributes.str.value) * 10) + parseInt(game.settings.get('fallout', 'carryBase')) + parseInt(this.system.carryWeight.mod)
+    this.system.carryWeight.base = (parseInt(this.system.attributes.str.value) * 10) + parseInt(game.settings.get('fallout', 'carryBase'))
+    this.system.carryWeight.value = this.system.carryWeight.base + parseInt(this.system.carryWeight.mod)    
     this.system.carryWeight.total = this._getItemsTotalWeight()
     this.system.encumbranceLevel = 0
     if (this.system.carryWeight.total > this.system.carryWeight.value) {
@@ -200,7 +211,8 @@ export class FalloutActor extends Actor {
     for (let i of robotArmors) {
       _robotArmorsCarryModifier += parseInt(i.system.carry)
     }
-    this.system.carryWeight.value = parseInt(this.system.carryWeight.base) + _robotArmorsCarryModifier + parseInt(game.settings.get('fallout', 'carryBaseRobot'))  + parseInt(this.system.carryWeight.mod)
+    this.system.carryWeight.base = parseInt(game.settings.get('fallout', 'carryBaseRobot')) + _robotArmorsCarryModifier;
+    this.system.carryWeight.value = parseInt(this.system.carryWeight.base) + parseInt(this.system.carryWeight.mod)
     this.system.carryWeight.total = this._getItemsTotalWeight()
     this.system.encumbranceLevel = 0
     if (this.system.carryWeight.total > this.system.carryWeight.value) {

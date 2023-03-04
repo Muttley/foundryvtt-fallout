@@ -1,3 +1,11 @@
+v 10.1.1
+
+- Fixed encumbrance display.
+- Adding **this.system.unofficalSpeed = Agi + athletics** in derivedData method. This can be used for grided maps and optional grided combat rules.
+- Equipper apparel name now shows when you hover "body part status box" on the status screen
+- Added **disease** item. Replaced Quick Apparel box on Character sheet with the diseases.
+
+
 v 10.1.0
 
 - Added new Block for Body Parts with resistances and Injuries to the NPC and Creature sheets. Unfortunately there is no way for me to migrate previous data so the resistances and the injuries of NPCs and Creatures must be repopulated.

@@ -125,6 +125,11 @@
 
     <!-- * MISCELANY -->
 
+    <!-- * DISEASE -->
+    {{#if isDisease}}
+        <p><strong>{{localize "FALLOUT.TEMPLATES.Duration"}}: </strong>{{duration}}</p>
+    {{/if}}
+
     <!-- * ROBOT ARMOR -->
     {{#if isRobotArmor}}
         <p><strong>{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." appareltype)}}</p>

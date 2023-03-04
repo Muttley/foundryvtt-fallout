@@ -308,7 +308,8 @@
       "miscellany",
       "skill",
       "perk",
-      "special_ability"
+      "special_ability",
+      "disease"
     ],
     "templates": {
       "base": {
@@ -663,6 +664,12 @@
         "physical"
       ],
       "effect": ""
+    },
+    "disease": {
+      "templates": [
+        "base"
+      ],
+      "duration":1
     }
   }
 }
