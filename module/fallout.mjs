@@ -235,6 +235,11 @@ Hooks.on('preCreateItem', (_item) => {
       ui.notifications.warn(`ONLY PLAYERS CAN HAVE PERKS`)
       return false
     }
+    // DISEASE
+    if(_item.parent.type!='character' && _item.type == 'disease'){
+      ui.notifications.warn(`ONLY CHARACTERS CAN HAVE DISEASE`)
+      return false
+    }
     // SKILL DUPLICATES
     if (_item.type == 'skill') {
       const skls = _item.parent.items.find((s) => s.name == _item.name)

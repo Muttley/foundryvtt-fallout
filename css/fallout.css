@@ -329,7 +329,7 @@
 }
 
 .chat-item {
-  background: repeating-linear-gradient(to bottom, #1e3f09 0px, #1e3f09 1px, #327c01 1px, #327c01 2px);
+  background: repeating-linear-gradient(to bottom, #122505 0px, #122505 1px, #235800 1px, #235800 2px);
   color: #6aff06;
   padding: 1rem;
   border-radius: 12px;
@@ -356,7 +356,7 @@
 
 .chat-item .item-name {
   text-align: center;
-  box-shadow: 20px 20px 40px 20px #327c01;
+  box-shadow: 0px 0px 10px 5px #235800;
   text-transform: uppercase;
 }
 

@@ -4,7 +4,8 @@ v 10.1.1
 - Adding **this.system.unofficalSpeed = Agi + athletics** in derivedData method. This can be used for grided maps and optional grided combat rules.
 - Equipper apparel name now shows when you hover "body part status box" on the status screen
 - Added **disease** item. Replaced Quick Apparel box on Character sheet with the diseases.
-
+- Improved the styling of chat messages that detail item's properties
+- Added Português (Brasil) translation
 
 v 10.1.0
 

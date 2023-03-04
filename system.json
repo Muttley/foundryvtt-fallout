@@ -52,6 +52,12 @@
       "name": "Français",
       "path": "lang/fr.json",
       "flags": {}
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-br.json",
+      "flags": {}
     }
   ],
   "socket": true,
