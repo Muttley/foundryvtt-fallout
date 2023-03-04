@@ -2,8 +2,8 @@ v 10.1.1
 
 - Fixed encumbrance display.
 - Adding **this.system.unofficalSpeed = Agi + athletics** in derivedData method. This can be used for grided maps and optional grided combat rules.
-- Equipper apparel name now shows when you hover "body part status box" on the status screen
-- Added **disease** item. Replaced Quick Apparel box on Character sheet with the diseases.
+- Equipped apparel name now shows when you hover "body part status box" on the status screen
+- **Diseases**. Added **disease** item. Those can also have Active effect on them that can be transfered to actors. Replaced Quick Apparel box on Character sheet with the diseases.
 - Improved the styling of chat messages that detail item's properties
 - Added Português (Brasil) translation
 
