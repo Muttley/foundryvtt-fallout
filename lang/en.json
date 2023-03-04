@@ -307,6 +307,7 @@
     "CONSUMABLES": "Consumables",
     "Cost": "Cost",
     "Damage": "Damage",
+    "DISEASES":"Diseases",
     "favorite": "Favorite",
     "INVENTORY": "Inventory",
     "MISCELLANY": "Miscellany",
@@ -315,6 +316,7 @@
     "OTHER": "Other",
     "Perks": "Perks",
     "Quantity": "Quantity",
+    "Qty":"Qty",
     "Rarity": "Rarity",
     "ROBOT_MODULES": "Robot Modules",
     "SPECIAL_ABILITY": "Special Ability",
@@ -383,5 +385,6 @@
   "ITEM.TypeSkill": "Skill",
   "ITEM.TypeSpecial_ability": "Special Ability",
   "ITEM.TypeWeapon": "Weapon",
-  "ITEM.TypeWeapon_mod": "Weapon Mod"
+  "ITEM.TypeWeapon_mod": "Weapon Mod",
+  "ITEM.TypeDisease":"Disease"
 }

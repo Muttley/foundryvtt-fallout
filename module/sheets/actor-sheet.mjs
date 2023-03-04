@@ -101,8 +101,8 @@ export class FalloutActorSheet extends ActorSheet {
     //context.rollData = context.actor.getRollData();
 
     // Prepare active effects
-    context.effects = prepareActiveEffectCategories(this.actor.effects)
-    context.FALLOUT = CONFIG.FALLOUT
+    context.effects = prepareActiveEffectCategories(this.actor.effects);
+    context.FALLOUT = CONFIG.FALLOUT;
 
     return context
   }
@@ -152,6 +152,7 @@ export class FalloutActorSheet extends ActorSheet {
     const miscellany = []
     const gear = []
     const specialAbilities = []
+    const diseases = []
 
 
     // Iterate through items, allocating to containers
@@ -186,6 +187,8 @@ export class FalloutActorSheet extends ActorSheet {
         miscellany.push(i)
       } else if (i.type === 'special_ability') {
         specialAbilities.push(i)
+      }else if (i.type === 'disease') {
+        diseases.push(i)
       }
     }
 
@@ -227,6 +230,7 @@ export class FalloutActorSheet extends ActorSheet {
     context.consumables = consumables
     context.books_and_magz = books_and_magz
     context.miscellany = miscellany
+    context.diseases = diseases
 
     // WRAP INVENTORY DEPENDING ON THE CHARACTER TYPE:
     // for example put apparel in inventory for all except the character actor.

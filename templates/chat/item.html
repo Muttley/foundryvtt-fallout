@@ -1,19 +1,17 @@
 <div class="fallout chat-item">
     
     {{#if img}}
-    {{#if (ne img "icons/svg/item-bag.svg")}}
-    <div style="text-align: center;">
+    <div style="text-align: center; margin-bottom: 0.5rem;">
         <img class="item-img" src="{{img}}" title="{{name}}" />
     </div>
-    {{/if}}
     {{/if}}
 
 
     <div class="item-name">
-        <h3 style="border-bottom: none;"><strong>{{name}}</strong></h3>
+        <h2 style="border-bottom: none;"><strong>{{name}}</strong></h2>
     </div>
     <!-- <p>@Item[{{_id}}]</p> -->    
-    <hr>
+    <!-- <hr> -->
 
     <!-- * SKILL * -->
     {{#if isSkill}}
@@ -125,6 +123,11 @@
 
     <!-- * MISCELANY -->
 
+    <!-- * DISEASE -->
+    {{#if isDisease}}
+        <p><strong>{{localize "FALLOUT.TEMPLATES.Duration"}}: </strong>{{duration}}</p>
+    {{/if}}
+
     <!-- * ROBOT ARMOR -->
     {{#if isRobotArmor}}
         <p><strong>{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." appareltype)}}</p>
@@ -163,8 +166,8 @@
 
     {{#if isPhysical}}
     <hr>
-    <div class="flexrow" style="font-size: 0.75rem;">
-        <p><strong>{{localize "FALLOUT.UI.Quantity"}}:</strong> {{quantity}}</p>
+    <div class="flex flex-between" style="font-size: 0.75rem;">
+        <p><strong>{{localize "FALLOUT.UI.Qty"}}:</strong> {{quantity}}</p>
         <p><strong>{{localize "FALLOUT.UI.Weight"}}:</strong> {{weight}}</p>   
         <p><strong>{{localize "FALLOUT.UI.Cost"}}:</strong> {{cost}}</p>
         <p><strong>{{localize "FALLOUT.UI.Rarity"}}:</strong> {{rarity}}</p>  

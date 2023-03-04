@@ -77,7 +77,7 @@ input.chk-btn:checked + label {
 .resource-label {
 	border-bottom: none; // remove h3 style from foundry
 	font-weight: bold;
-	color: $c-font-prim;
+	color: $c-font-prim;	
 }
 .resource-row {
 	padding: 2px;
@@ -258,5 +258,8 @@ a {
 		i {
 			color: $f-vault-blue;
 		}
+	}
+	&:hover{
+		text-shadow: 0 0 8px #b4ff06
 	}
 }

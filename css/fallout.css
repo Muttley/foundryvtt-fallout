@@ -77,7 +77,7 @@
 
 .rollable:hover, .rollable:focus {
   color: #000;
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 10px #b4ff06;
   cursor: pointer;
 }
 
@@ -326,6 +326,42 @@
 .dice-tooltip .dice-rolls .roll.min {
   color: unset;
   filter: none;
+}
+
+.chat-item {
+  background: repeating-linear-gradient(to bottom, #122505 0px, #122505 1px, #235800 1px, #235800 2px);
+  color: #6aff06;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #38550f;
+}
+
+.chat-item img {
+  width: 50%;
+  background-color: #002508;
+  border-radius: 12px;
+}
+
+.chat-item .content-link {
+  background-color: #002508;
+}
+
+.chat-item .content-link .fas {
+  color: #6aff06;
+}
+
+.chat-item hr {
+  border: 1px solid #327c01;
+}
+
+.chat-item .item-name {
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px #235800;
+  text-transform: uppercase;
+}
+
+.chat-item a:hover {
+  text-shadow: 0 0 8px #b4ff06;
 }
 
 .grid,
@@ -1415,6 +1451,10 @@
   color: #325885;
 }
 
+.fallout a:hover {
+  text-shadow: 0 0 8px #b4ff06;
+}
+
 .fallout .items-header {
   height: 28px;
   margin: 2px 0;
@@ -1470,6 +1510,7 @@
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
+  color: #eee787;
 }
 
 .fallout .items-list .item-controls {

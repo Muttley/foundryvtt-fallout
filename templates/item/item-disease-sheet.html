@@ -1,0 +1,32 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{> "systems/fallout/templates/item/parts/item-header.html"}}
+  
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+      <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+      <a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
+    </nav>
+  
+    <section class="sheet-body">
+      {{!-- Active Effects Tab --}}
+      <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+        {{> "systems/fallout/templates/item/parts/item-effects.html"}}
+      </div>
+  
+      {{!-- Attributes Tab --}}
+      <div class="tab attributes" data-group="primary" data-tab="attributes">
+        <div class="flexrow resource-row">
+            <label for="system.duration" class="resource-label">{{localize "FALLOUT.TEMPLATES.Duration"}}</label>
+            <input type="text" name="system.duration" value="{{system.duration}}">
+        </div>
+        <div class="resource-row resource-label align-mid">
+          <label>{{localize "FALLOUT.TEMPLATES.Effect"}}</label>
+        </div>
+        <div class="description-field">
+          {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
+      </div>
+    </section>
+  
+  </form>

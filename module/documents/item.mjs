@@ -97,6 +97,7 @@ export class FalloutItem extends Item {
     itemData.isBook = this.type === "books_and_magz";
     itemData.isRobotArmor = this.type === "robot_armor";
     itemData.isRobotMod = this.type === "robot_mod";
+    itemData.isDisease = this.type === "disease";
 
     const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
     const chatData = {

@@ -21,7 +21,7 @@
 	&:hover,
 	&:focus {
 		color: #000;
-		text-shadow: 0 0 10px red;
+		text-shadow: 0 0 10px #b4ff06;
 		cursor: pointer;
 	}
 }
@@ -253,4 +253,36 @@
 .dice-tooltip .dice-rolls .roll.min {
     color: unset;
     filter: none;
+}
+
+.chat-item{
+	background: repeating-linear-gradient( to bottom, #122505 0px, #122505 1px, #235800 1px, #235800 2px );
+    color: #6aff06;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid #38550f;
+	img{
+		width: 50%;
+		background-color: rgb(0, 37, 8);
+		border-radius: 12px;
+	}
+	.content-link{
+		background-color: rgb(0, 37, 8);
+		.fas{
+			color: #6aff06;
+		}
+	}
+	hr{
+		border: 1px solid #327c01;
+	}
+	.item-name{
+		text-align: center;
+		box-shadow: 0px 0px 10px 5px #235800;
+		text-transform: uppercase;
+	}
+	a{
+		&:hover{
+			text-shadow: 0 0 8px #b4ff06
+		}
+	}
 }
