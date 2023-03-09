@@ -1,3 +1,10 @@
+v 10.1.2
+
+- Lowering **max** version from **11** back to **10** since there are some problems in Foundry 11
+- Small fix in weapons names (to show if weapon is damaged)
+- Adding images and additional info to the Favorite Weapons Box.
+- Small styling fixes on the character status tab
+
 v 10.1.1
 
 - Fixed encumbrance display.

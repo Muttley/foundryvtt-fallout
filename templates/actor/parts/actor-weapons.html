@@ -17,7 +17,7 @@
                 <div class="item-image">
                     <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
                 </div>
-                <a class="resource-label">{{item.name}} {{#if (isWeaponDamaged item)}}&nbsp;<i class="fas fa-wrench"></i>{{/if}}</a>
+                <a class="resource-label">{{item.name}} {{#if (isWeaponDamaged item.system)}}<i class="fas fa-wrench"></i>{{/if}}</a>
 
             </div>
             <div class="flexrow flexlarge align-mid">

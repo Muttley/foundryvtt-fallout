@@ -1528,7 +1528,7 @@
 
 .fallout .items-list .item {
   align-items: center;
-  padding: 0 2px;
+  padding: 0 5px;
   border-bottom: 1px solid #637294;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -1547,7 +1547,7 @@
   height: 30px;
   background-size: 30px;
   border: none;
-  margin: 3px 0 0 5px;
+  margin: 3px 0 0 0;
 }
 
 .fallout .items-list .item .item-sub-info {
@@ -1558,6 +1558,7 @@
   font-weight: 400;
   color: #6ea898;
   background-color: rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
 }
 
 .fallout .items-list .item-prop {
