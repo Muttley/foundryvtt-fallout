@@ -51,7 +51,7 @@ export class FalloutActor extends Actor {
     if (this.type !== 'character') return
     this._calculateCharacterBodyResistance()
     // Encumbrance
-    this.system.carryWeight.base = (parseInt(this.system.attributes.str.value) * 10) + parseInt(game.settings.get('fallout', 'carryBase'))
+    this.system.carryWeight.base += (parseInt(this.system.attributes.str.value) * 10) + parseInt(game.settings.get('fallout', 'carryBase'))
     this.system.carryWeight.value = this.system.carryWeight.base + parseInt(this.system.carryWeight.mod)    
     this.system.carryWeight.total = this._getItemsTotalWeight()
     this.system.encumbranceLevel = 0
@@ -209,9 +209,11 @@ export class FalloutActor extends Actor {
     })
     let _robotArmorsCarryModifier = 0;
     for (let i of robotArmors) {
-      _robotArmorsCarryModifier += parseInt(i.system.carry)
+      if(i.system.equipped && !i.system.stashed){
+        _robotArmorsCarryModifier += parseInt(i.system.carry)
+      }
     }
-    this.system.carryWeight.base = parseInt(game.settings.get('fallout', 'carryBaseRobot')) + _robotArmorsCarryModifier;
+    this.system.carryWeight.base += parseInt(game.settings.get('fallout', 'carryBaseRobot')) + _robotArmorsCarryModifier;
     this.system.carryWeight.value = parseInt(this.system.carryWeight.base) + parseInt(this.system.carryWeight.mod)
     this.system.carryWeight.total = this._getItemsTotalWeight()
     this.system.encumbranceLevel = 0
