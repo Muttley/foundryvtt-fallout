@@ -1,5 +1,13 @@
 const debounceReload = debounce(() => window.location.reload(), 100)
 export function registerSettings() {
+    game.settings.register('fallout', 'skillsCompendium',{
+        name: "Skills Compendium",
+        hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
+        scope: 'world',
+        config: true,
+        default: 'fallout.skills',
+        type: String
+    });
     game.settings.register('fallout', 'partyAP', {
         name: 'Party AP',
         scope: 'world',
