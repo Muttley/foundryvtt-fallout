@@ -41,6 +41,7 @@ Hooks.once('init', async function () {
     Dialog2d20,
     DialogD6,
     FOHovers,
+    APTracker
   }
 
   // Add custom constants for configuration.
