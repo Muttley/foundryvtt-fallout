@@ -1,3 +1,11 @@
+v 10.1.4
+
+- updated FR translation
+- Added a setting where you can define your custom skill compendium that will be used to populate your newly reated characters with the skills from that compendium.
+- Exposed the APTracker class if you want to make a macro to updte gmAP or partyAP (special request by some users).
+You can now call 
+`await game.fallout.APTracker.setAP("gmAP", 1) or ("partyAP", 1) to set it to the custom value. Change "1" for some value you want. `
+
 v 10.1.3
 
 - removed the **max** Foundry version from the system so you can test it on Foundry V11
