@@ -18,7 +18,3 @@ package.json
 *.7z
 *.zip
 *.rar
-
-# For V11
-fallout-macros/
-skills/
