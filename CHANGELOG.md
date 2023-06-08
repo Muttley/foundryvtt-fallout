@@ -1,3 +1,8 @@
+v 11.0.1
+
+- Foundry v11 compatible
+
+
 v 10.1.5
 
 - Moved the TextEditor.enrichHTML to getData on the sheet
