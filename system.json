@@ -2,10 +2,11 @@
   "id": "fallout",
   "title": "Fallout 2d20",
   "description": "The unofficial Fallout 2d20 System for FoundryVTT",
-  "version": "10.1.5",
+  "version": "11.0.1",
   "compatibility": {
-    "minimum": "10",
-    "verified": "10"
+    "minimum": "11",
+    "verified": "11",
+    "maximum":"11"
   },
   "authors": [
     {
@@ -24,7 +25,7 @@
       "name": "skills",
       "label": "Skills",
       "system": "fallout",
-      "path": "packs/skills.db",
+      "path": "packs/skills",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -33,7 +34,7 @@
       "name": "fallout-macros",
       "label": "Fallout Macros",
       "system": "fallout",
-      "path": "packs/fallout-macros.db",
+      "path": "packs/fallout-macros",
       "type": "Macro",
       "private": false,
       "flags": {}
@@ -62,6 +63,6 @@
   "socket": true,
   "url": "https://github.com/superseva/fallout",
   "manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
-  "download": "https://github.com/superseva/fallout/releases/download/v10.1.5/fallout.zip",
+  "download": "https://github.com/superseva/fallout/releases/download/v11.0.1/fallout.zip",
   "license": "LICENSE.txt"
 }
