@@ -1,3 +1,8 @@
+v 10.1.5
+
+- Moved the TextEditor.enrichHTML to getData on the sheet
+
+
 v 10.1.4
 
 - updated FR translation

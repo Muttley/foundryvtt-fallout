@@ -35,10 +35,7 @@ export class FalloutActorSheet extends ActorSheet {
   /** @override */
   async getData(options) {
 
-    //const context = await super.getData(options)
-
     // Use a safe clone of the actor data for further operations.
-    //const actorData = context.actor.data
     const source = this.actor.toObject();
     const actorData = this.actor.toObject(false);
 
@@ -78,7 +75,6 @@ export class FalloutActorSheet extends ActorSheet {
       async: true
     });
 
-    //context.data = actorData.system
     //context.flags = actorData.flags
 
     // Prepare character data and items.
@@ -99,6 +95,17 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     //context.rollData = context.actor.getRollData();
+    
+    //Prepare Items Enriched Descriptions
+    const itemTypes = ['robot_mod']
+    let itemsEnrichedDescriptions = {};
+    for await(let itm of this.actor.items){
+        if(itemTypes.includes(itm.type)){
+            const descriptionRich = await TextEditor.enrichHTML(itm.system.effect, {async:true})
+            itemsEnrichedDescriptions[itm._id] = descriptionRich;
+        }
+    }
+    context.itemsEnrichedDescriptions = itemsEnrichedDescriptions;
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
@@ -379,7 +386,7 @@ export class FalloutActorSheet extends ActorSheet {
       ]
     }
 
-    new ContextMenu(html.find('.skill'), null, menuSkills)
+    new ContextMenu(html,'.skill', menuSkills)
     // * END SKILLS
 
     // * AMMO COUNT UPDATE
