@@ -137,8 +137,7 @@ FALLOUT.WEAPONS = {
     "twoHanded": { "label": "FALLOUT.WEAPONS.weaponQuality.twoHanded", "value": false, "description": "" },
     "unreliable": { "label": "FALLOUT.WEAPONS.weaponQuality.unreliable", "value": false, "description": "" },
     "limited": { "label": "FALLOUT.WEAPONS.weaponQuality.limited", "value": false, "description": "" },
-    "unstable ": { "label": "FALLOUT.WEAPONS.weaponQuality.unstable", "value": false, "description": "" },
-    "radiation ": { "label": "FALLOUT.WEAPONS.weaponQuality.radiation", "value": false, "description": "" },
+    "unstable_radiation": { "label": "FALLOUT.WEAPONS.weaponQuality.unstable_radiation", "value": false, "description": "" },
     "slow_load ": { "label": "FALLOUT.WEAPONS.weaponQuality.slow_load", "value": false, "description": "" }
   }
 

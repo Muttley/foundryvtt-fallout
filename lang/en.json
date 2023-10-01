@@ -363,8 +363,7 @@
       "twoHanded": "Two-Handed",
       "unreliable": "Unreliable",
       "limited":"Limited",
-      "unstable":"Unstable",
-      "radiation":"Radiation",
+      "unstable_radiation":"Unstable Radiation",
       "slow_load":"Slow Load"
     },
     "weaponType": {

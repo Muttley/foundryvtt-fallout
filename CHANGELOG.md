@@ -1,3 +1,7 @@
+v 11.0.3
+
+- Fixed Unstable radiation weapon quality
+
 v 11.0.2
 
 - Added new weapon qualities and damage effects

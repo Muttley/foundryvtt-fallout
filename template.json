@@ -513,16 +513,11 @@
             "value": false,
             "description": ""
           },
-          "unstable": {
-            "label": "Unstable",
+          "unstable_radiation": {
+            "label": "Unstable Radiation",
             "value": false,
             "description": ""
-          },
-          "radiation": {
-            "label": "Radiation",
-            "value": false,
-            "description": ""
-          },
+          },          
           "slow_load": {
             "label": "Slow Load",
             "value": false,
