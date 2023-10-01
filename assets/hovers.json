@@ -22,5 +22,11 @@
     "suppressed":"pg. 90",
     "thrown":"pg. 90",
     "twoHanded":"pg. 90",
-    "unreliable":"pg. 90"
+    "unreliable":"pg. 90",
+	"arc":" - ",
+	"freeze":" - ",
+	"limited":" - ",
+	"unstable":"  - ",
+	"radiation":"  - ",
+	"slow_load":" - "
 }

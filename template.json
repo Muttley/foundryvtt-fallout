@@ -415,6 +415,16 @@
             "label": "Vicious",
             "value": false,
             "description": ""
+          },
+          "arc": {
+            "label": "Arc",
+            "value": false,
+            "description": ""
+          },
+          "freeze": {
+            "label": "Freeze",
+            "value": false,
+            "description": ""
           }
         },
         "weaponQuality": {
@@ -495,6 +505,26 @@
           },
           "unreliable": {
             "label": "Unreliable",
+            "value": false,
+            "description": ""
+          },
+          "limited": {
+            "label": "Limited",
+            "value": false,
+            "description": ""
+          },
+          "unstable": {
+            "label": "Unstable",
+            "value": false,
+            "description": ""
+          },
+          "radiation": {
+            "label": "Radiation",
+            "value": false,
+            "description": ""
+          },
+          "slow_load": {
+            "label": "Slow Load",
             "value": false,
             "description": ""
           }

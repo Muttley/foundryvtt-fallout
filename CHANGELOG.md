@@ -1,3 +1,9 @@
+v 11.0.2
+
+- Added new weapon qualities and damage effects
+- Added Polish and Deutsch languages
+
+
 v 11.0.1
 
 - Foundry v11 compatible

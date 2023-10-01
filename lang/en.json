@@ -335,7 +335,9 @@
       "radioactive": "Radioactive",
       "spread": "Spread",
       "stun": "Stun",
-      "vicious": "Vicious"
+      "vicious": "Vicious",
+      "arc":"Arc",
+      "freeze":"Freeze"
     },
     "damageType": {
       "energy": "Energy",
@@ -359,7 +361,11 @@
       "suppressed": "Suppressed",
       "thrown": "Thrown",
       "twoHanded": "Two-Handed",
-      "unreliable": "Unreliable"
+      "unreliable": "Unreliable",
+      "limited":"Limited",
+      "unstable":"Unstable",
+      "radiation":"Radiation",
+      "slow_load":"Slow Load"
     },
     "weaponType": {
       "bigGuns": "Big Guns",

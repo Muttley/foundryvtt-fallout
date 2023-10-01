@@ -7,7 +7,7 @@
   {{#each skills as |item id|}}
   <li class="item skill flexrow" data-item-id="{{item._id}}">
     <div class="item-name">
-      <h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{localize (concat
+      <h4><a class="color-secondary"><span class="resource-label upperC">{{localize (concat 'FALLOUT.SKILL.' item.name)}}</span> [{{localize (concat
           'FALLOUT.AbilityAbbr.' item.system.defaultAttribute)}}]</a></h4>
     </div>
     <div class="item-skill-tag">
