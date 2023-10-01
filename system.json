@@ -58,6 +58,18 @@
       "name": "Português (Brasil)",
       "path": "lang/pt-br.json",
       "flags": {}
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json",
+      "flags": {}
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json",
+      "flags": {}
     }
   ],
   "socket": true,
