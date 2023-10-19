@@ -10,8 +10,8 @@ export class FalloutActor extends Actor {
 
   /** @override */
   //prepareBaseData() {
-    // Data modifications in this step occur before processing embedded
-    // documents or derived data.
+  // Data modifications in this step occur before processing embedded
+  // documents or derived data.
   //}
 
   /**
@@ -24,7 +24,7 @@ export class FalloutActor extends Actor {
    * is queried and has a roll executed directly from it).
    */
 
-  prepareDerivedData() { 
+  prepareDerivedData() {
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
     this._prepareCharacterData()
@@ -38,7 +38,7 @@ export class FalloutActor extends Actor {
       this.system.unofficalSpeed = this.system.attributes.agi.value + athleticsValue;
     }
     catch(er){
-      
+
     }
   }
 
@@ -51,8 +51,20 @@ export class FalloutActor extends Actor {
     if (this.type !== 'character') return
     this._calculateCharacterBodyResistance()
     // Encumbrance
-    this.system.carryWeight.base += (parseInt(this.system.attributes.str.value) * 10) + parseInt(game.settings.get('fallout', 'carryBase'))
-    this.system.carryWeight.value = this.system.carryWeight.base + parseInt(this.system.carryWeight.mod)    
+    let strWeight = parseInt(this.system.attributes.str.value);
+    switch(game.settings.get('fallout', 'carryUnit')){
+      case 'lbs':
+        strWeight *= 10;
+        break;
+      case 'kgs':
+        strWeight *= 5;
+        break;
+      default:
+        //
+    }
+
+    this.system.carryWeight.base += strWeight + parseInt(game.settings.get('fallout', 'carryBase'))
+    this.system.carryWeight.value = this.system.carryWeight.base + parseInt(this.system.carryWeight.mod)
     this.system.carryWeight.total = this._getItemsTotalWeight()
     this.system.encumbranceLevel = 0
     if (this.system.carryWeight.total > this.system.carryWeight.value) {
@@ -66,23 +78,23 @@ export class FalloutActor extends Actor {
     // Prep Body Locations
     let outfitedLocations = {}
     for (let [k, v] of Object.entries(
-      game.system.model.Actor.character.body_parts,
+        game.system.model.Actor.character.body_parts,
     )) {
       outfitedLocations[k] = false
     }
-    
+
     // ! CHECK POWER ARMOR PIECES
     let hasPowerArmor = false
     for (let [k, v] of Object.entries(outfitedLocations)) {
       if (!v) {
         let pow = this.items.find(
-          (i) =>
-            i.type == 'apparel' &&
-            i.system.appareltype == 'powerArmor' &&
-            i.system.equipped &&
-            i.system.powered &&
-            i.system.location[k] == true,
-        )        
+            (i) =>
+                i.type == 'apparel' &&
+                i.system.appareltype == 'powerArmor' &&
+                i.system.equipped &&
+                i.system.powered &&
+                i.system.location[k] == true,
+        )
         if (pow && !outfitedLocations[k]) {
           outfitedLocations[k] = duplicate(pow.toObject())
           hasPowerArmor = false
@@ -95,11 +107,11 @@ export class FalloutActor extends Actor {
     for (let [k, v] of Object.entries(outfitedLocations)) {
       if (!v) {
         let armor = this.items.find(
-          (i) =>
-            i.type == 'apparel' &&
-            i.system.appareltype == 'armor' &&
-            i.system.equipped &&
-            i.system.location[k] == true,
+            (i) =>
+                i.type == 'apparel' &&
+                i.system.appareltype == 'armor' &&
+                i.system.equipped &&
+                i.system.location[k] == true,
         )
         if (armor && !outfitedLocations[k]) {
           outfitedLocations[k] = duplicate(armor.toObject())
@@ -110,17 +122,17 @@ export class FalloutActor extends Actor {
 
     // ! CHECK OUTFIT
     if (
-      !outfitedLocations['torso'] &&
-      !outfitedLocations['armR'] &&
-      !outfitedLocations['armL'] &&
-      !outfitedLocations['legL'] &&
-      !outfitedLocations['legR']
+        !outfitedLocations['torso'] &&
+        !outfitedLocations['armR'] &&
+        !outfitedLocations['armL'] &&
+        !outfitedLocations['legL'] &&
+        !outfitedLocations['legR']
     ) {
       let outfit = this.items.find(
-        (i) =>
-          i.type == 'apparel' &&
-          i.system.appareltype == 'outfit' &&
-          i.system.equipped,
+          (i) =>
+              i.type == 'apparel' &&
+              i.system.appareltype == 'outfit' &&
+              i.system.equipped,
       )
       if (outfit) {
         for (let [k, v] of Object.entries(outfit.system.location)) {
@@ -134,10 +146,10 @@ export class FalloutActor extends Actor {
     // ! CHECK HEADGEAR
     if (!outfitedLocations['head']) {
       let headgear = this.items.find(
-        (i) =>
-          i.type == 'apparel' &&
-          i.system.appareltype == 'headgear' &&
-          i.system.equipped,
+          (i) =>
+              i.type == 'apparel' &&
+              i.system.appareltype == 'headgear' &&
+              i.system.equipped,
       )
       if (headgear) {
         outfitedLocations['head'] = duplicate(headgear.toObject())
@@ -146,26 +158,26 @@ export class FalloutActor extends Actor {
 
     // ! ADD CLOTHING VALUES
     let clothing = this.items.find(
-      (i) =>
-        i.type == 'apparel' &&
-        i.system.appareltype == 'clothing' &&
-        i.system.equipped,
+        (i) =>
+            i.type == 'apparel' &&
+            i.system.appareltype == 'clothing' &&
+            i.system.equipped,
     )
     if (clothing) {
       for (let [k, v] of Object.entries(clothing.system.location)) {
         if (outfitedLocations[k] && v) {
           outfitedLocations[k].name += ` over ${clothing.name}`
           outfitedLocations[k].system.resistance.physical = Math.max(
-            parseInt(outfitedLocations[k].system.resistance.physical),
-            parseInt(clothing.system.resistance.physical),
+              parseInt(outfitedLocations[k].system.resistance.physical),
+              parseInt(clothing.system.resistance.physical),
           )
           outfitedLocations[k].system.resistance.energy = Math.max(
-            parseInt(outfitedLocations[k].system.resistance.energy),
-            parseInt(clothing.system.resistance.energy),
+              parseInt(outfitedLocations[k].system.resistance.energy),
+              parseInt(clothing.system.resistance.energy),
           )
           outfitedLocations[k].system.resistance.radiation = Math.max(
-            parseInt(outfitedLocations[k].system.resistance.radiation),
-            parseInt(clothing.system.resistance.radiation),
+              parseInt(outfitedLocations[k].system.resistance.radiation),
+              parseInt(clothing.system.resistance.radiation),
           )
         } else if (!outfitedLocations[k] && v) {
           outfitedLocations[k] = duplicate(clothing.toObject())
@@ -174,23 +186,23 @@ export class FalloutActor extends Actor {
     }
 
     // ! SET BODY PARTS TO OUTFIT ADD CHARACTER BONUSES
-     for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
+    for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
       if (outfitedLocations[k]) {
         bodyPart.resistance.physical =
-          parseInt(outfitedLocations[k].system.resistance.physical) +
-          parseInt(this.system.resistance.physical)
+            parseInt(outfitedLocations[k].system.resistance.physical) +
+            parseInt(this.system.resistance.physical)
         bodyPart.resistance.energy =
-          parseInt(outfitedLocations[k].system.resistance.energy) +
-          parseInt(this.system.resistance.energy)
+            parseInt(outfitedLocations[k].system.resistance.energy) +
+            parseInt(this.system.resistance.energy)
         bodyPart.resistance.radiation =
-          parseInt(outfitedLocations[k].system.resistance.radiation) +
-          parseInt(this.system.resistance.radiation)
+            parseInt(outfitedLocations[k].system.resistance.radiation) +
+            parseInt(this.system.resistance.radiation)
       } else {
         bodyPart.resistance.physical = parseInt(this.system.resistance.physical)
         bodyPart.resistance.energy = parseInt(this.system.resistance.energy)
         bodyPart.resistance.radiation = parseInt(this.system.resistance.radiation)
       }
-     }
+    }
     // ADD OUTFITED LIST FOR DISPLAY
     this.system.outfitedLocations = outfitedLocations
   }
@@ -201,7 +213,7 @@ export class FalloutActor extends Actor {
 
     this._calculateRobotBodyResistance()
     this.system.favoriteWeapons = this.items.filter(
-      (i) => i.type == 'weapon' && i.system.favorite,
+        (i) => i.type == 'weapon' && i.system.favorite,
     )
     this.system.equippedRobotMods = this.items.filter((i) => i.type == 'robot_mod' && i.system.equipped).slice(0, 3)
     let robotArmors = this.items.filter((i) => {
@@ -226,7 +238,7 @@ export class FalloutActor extends Actor {
   _calculateRobotBodyResistance() {
     let outfitedLocations = {}
     for (let [k, v] of Object.entries(
-      game.system.model.Actor.robot.body_parts,
+        game.system.model.Actor.robot.body_parts,
     )) {
       outfitedLocations[k] = false
     }
@@ -235,11 +247,11 @@ export class FalloutActor extends Actor {
     for (let [k, v] of Object.entries(outfitedLocations)) {
       if (!v) {
         let armor = this.items.find(
-          (i) =>
-            i.type == 'robot_armor' &&
-            i.system.appareltype == 'armor' &&
-            i.system.equipped &&
-            i.system.location[k] == true,
+            (i) =>
+                i.type == 'robot_armor' &&
+                i.system.appareltype == 'armor' &&
+                i.system.equipped &&
+                i.system.location[k] == true,
         )
         if (armor && !outfitedLocations[k]) {
           outfitedLocations[k] = duplicate(armor.toObject())
@@ -248,24 +260,24 @@ export class FalloutActor extends Actor {
     }
     // ADD PLATING AND RESISTANCE BONUSES
     let plating = this.items.find(
-      (i) =>
-        i.type == 'robot_armor' &&
-        i.system.appareltype == 'plating' &&
-        i.system.equipped,
+        (i) =>
+            i.type == 'robot_armor' &&
+            i.system.appareltype == 'plating' &&
+            i.system.equipped,
     )
     if (plating) {
       for (let [k, v] of Object.entries(plating.system.location)) {
         if (outfitedLocations[k] && v) {
           outfitedLocations[k].name += ` over ${plating.name}`
           outfitedLocations[k].system.resistance.physical =
-            parseInt(outfitedLocations[k].system.resistance.physical) +
-            parseInt(plating.system.resistance.physical)
+              parseInt(outfitedLocations[k].system.resistance.physical) +
+              parseInt(plating.system.resistance.physical)
           outfitedLocations[k].system.resistance.energy =
-            parseInt(outfitedLocations[k].system.resistance.energy) +
-            parseInt(plating.system.resistance.energy)
+              parseInt(outfitedLocations[k].system.resistance.energy) +
+              parseInt(plating.system.resistance.energy)
           outfitedLocations[k].system.resistance.radiation =
-            parseInt(outfitedLocations[k].system.resistance.radiation) +
-            parseInt(plating.system.resistance.radiation)
+              parseInt(outfitedLocations[k].system.resistance.radiation) +
+              parseInt(plating.system.resistance.radiation)
         } else if (!outfitedLocations[k] && v) {
           outfitedLocations[k] = duplicate(plating.toObject())
         }
@@ -276,14 +288,14 @@ export class FalloutActor extends Actor {
     for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
       if (outfitedLocations[k]) {
         bodyPart.resistance.physical =
-          parseInt(outfitedLocations[k].system.resistance.physical) +
-          parseInt(this.system.resistance.physical)
+            parseInt(outfitedLocations[k].system.resistance.physical) +
+            parseInt(this.system.resistance.physical)
         bodyPart.resistance.energy =
-          parseInt(outfitedLocations[k].system.resistance.energy) +
-          parseInt(this.system.resistance.energy)
+            parseInt(outfitedLocations[k].system.resistance.energy) +
+            parseInt(this.system.resistance.energy)
         bodyPart.resistance.radiation =
-          parseInt(outfitedLocations[k].system.resistance.radiation) +
-          parseInt(this.system.resistance.radiation)
+            parseInt(outfitedLocations[k].system.resistance.radiation) +
+            parseInt(this.system.resistance.radiation)
       } else {
         bodyPart.resistance.physical = parseInt(this.system.resistance.physical)
         bodyPart.resistance.energy = parseInt(this.system.resistance.energy)
@@ -312,7 +324,7 @@ export class FalloutActor extends Actor {
     let physicalItemsMap = physicalItems.map((i) => i.toObject())
     let totalWeight = 0
     for (let i of physicalItemsMap) {
-      totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity)  
+      totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity)
     }
     return parseFloat(totalWeight.toFixed(2));
   }
