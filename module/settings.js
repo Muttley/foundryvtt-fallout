@@ -30,16 +30,16 @@ export function registerSettings() {
         type: Number,
     });
     game.settings.register('fallout', "hoversJsonLocation",{
-		name: "Mouse Hover JSON file",
+        name: "Mouse Hover JSON file",
         hint: "Location of the json file containing the text for qualities and damage effects.",
-		scope: "world",
-		config: true,
-		default: "systems/fallout/assets/hovers.json",		
-		type: String,
+        scope: "world",
+        config: true,
+        default: "systems/fallout/assets/hovers.json",
+        type: String,
         filePicker: true,
         restricted: true,
         onChange: debounceReload
-	});
+    });
     game.settings.register('fallout', 'gmMomentumShowToPlayers', {
         name: 'Show Overseer AP To Players',
         hint: "Shows the Overseer's AP window to everyone. Requires refresh on the players side.",
@@ -64,8 +64,22 @@ export function registerSettings() {
         default: true,
         type: Boolean,
     })
+    game.settings.register('fallout', 'carryUnit', {
+        name: "Weight unit",
+        hint: "The weight calculation formula will be different depending on the unit chosen",
+        scope: "world",
+        config: true,
+        default: "lbs",
+        type:String,
+        choices: {
+            "lbs": "Lbs",
+            "kgs": "Kgs",
+        },
+        onChange: s => {}
+    })
+
     game.settings.register('fallout', 'carryBase', {
-        name: "Starting Carry Base in .lb for Characters",
+        name: "Starting Carry Base for Characters",
         hint: "Starting Carry Weight unmodified by STR",
         scope: "world",
         config: true,
@@ -74,7 +88,7 @@ export function registerSettings() {
         onChange: debounceReload
     })
     game.settings.register('fallout', 'carryBaseRobot', {
-        name: "Starting Carry Base in .lb for Robots",
+        name: "Starting Carry Base for Robots",
         hint: "Starting Carry Weight unmodified by STR",
         scope: "world",
         config: true,

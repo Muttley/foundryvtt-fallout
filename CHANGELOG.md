@@ -1,3 +1,9 @@
+v11.1.0
+
+- Added Weight unit in settings
+- Added some translation fix for french
+- Changed defense on charater to read defense.value instead of defense.base
+
 v 11.0.3
 
 - Fixed Unstable radiation weapon quality

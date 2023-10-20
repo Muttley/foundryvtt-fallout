@@ -41,13 +41,13 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Sort all items alphabetically for display on the character sheet
     actorData.items.sort((a, b) => {
-        if (a.name < b.name) {
-            return -1;
-        }
-        if (a.name > b.name) {
-            return 1;
-        }
-        return 0;
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
     });
 
     const context = {
@@ -95,15 +95,15 @@ export class FalloutActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     //context.rollData = context.actor.getRollData();
-    
+
     //Prepare Items Enriched Descriptions
     const itemTypes = ['robot_mod']
     let itemsEnrichedDescriptions = {};
     for await(let itm of this.actor.items){
-        if(itemTypes.includes(itm.type)){
-            const descriptionRich = await TextEditor.enrichHTML(itm.system.effect, {async:true})
-            itemsEnrichedDescriptions[itm._id] = descriptionRich;
-        }
+      if(itemTypes.includes(itm.type)){
+        const descriptionRich = await TextEditor.enrichHTML(itm.system.effect, {async:true})
+        itemsEnrichedDescriptions[itm._id] = descriptionRich;
+      }
     }
     context.itemsEnrichedDescriptions = itemsEnrichedDescriptions;
 
@@ -257,7 +257,7 @@ export class FalloutActorSheet extends ActorSheet {
 
     // ADD FAVOURITE ITEMS
     context.favoriteWeapons = context.items.filter(
-      (i) => i.type == 'weapon' && i.system.favorite,
+        (i) => i.type == 'weapon' && i.system.favorite,
     )
   }
 
@@ -292,10 +292,10 @@ export class FalloutActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('itemId'))
       this._onRollSkill(
-        item.name,
-        item.system.value,
-        this.actor.system.attributes[item.system.defaultAttribute].value,
-        item.system.tag,
+          item.name,
+          item.system.value,
+          this.actor.system.attributes[item.system.defaultAttribute].value,
+          item.system.tag,
       )
     })
     // Change Skill Rank value
@@ -488,18 +488,18 @@ export class FalloutActorSheet extends ActorSheet {
 
     // * Active Effect management
     html
-      .find('.effect-control')
-      .click((ev) => onManageActiveEffect(ev, this.actor))
+        .find('.effect-control')
+        .click((ev) => onManageActiveEffect(ev, this.actor))
 
     // * ROLL WEAPON SKILL
-    html.find('.weapon-roll').click((ev) => {      
+    html.find('.weapon-roll').click((ev) => {
       const li = $(ev.currentTarget).parents('.item')
       const item = this.actor.items.get(li.data('item-id'))
       let skillName, skill, attribute
       let rollName = item.name
       if (item.actor?.type == 'creature') {
         skillName = game.i18n.localize(
-          `FALLOUT.CREATURE.${item.system.skill}`,
+            `FALLOUT.CREATURE.${item.system.skill}`,
         )
         skill = item.actor.system[item.system.skill]
         skill['tag'] = true
@@ -511,11 +511,11 @@ export class FalloutActorSheet extends ActorSheet {
         else skill = { value: 0, tag: false, defaultAttribute: 'str'}
         attribute = item.actor.system.attributes[skill.defaultAttribute]
       }
-      
+
       // REDUCE AMMO
       if(game.settings.get("fallout", "automaticAmmunitionCalculation")){
         if(this.actor.type == 'character' || this.actor.type == 'robot'){
-          if(item.system.ammo != ""){       
+          if(item.system.ammo != ""){
             const ammo = item.actor.items.find(i=>i.name==item.system.ammo)
             if(!ammo){
               ui.notifications.warn(`Ammo ${item.system.ammo} not found`)
@@ -528,7 +528,7 @@ export class FalloutActorSheet extends ActorSheet {
           }
         }
       }
-      
+
       // Check for unreliable weapon quality
       let complication = parseInt(this.actor.system.complication);
       if(item.system.damage.weaponQuality.unreliable.value)
@@ -545,7 +545,7 @@ export class FalloutActorSheet extends ActorSheet {
         actor: this.actor,
         item: item
       })
-    })   
+    })
 
     // * ROLL WEAPON DAMAGE
     html.find('.weapon-roll-damage').click((ev) => {
@@ -553,8 +553,8 @@ export class FalloutActorSheet extends ActorSheet {
       const item = this.actor.items.get(li.data('item-id'))
       let numOfDice = parseInt(item.system.damage.rating)
       if (
-        item.system.weaponType == 'meleeWeapons' ||
-        item.system.weaponType == 'unarmed'
+          item.system.weaponType == 'meleeWeapons' ||
+          item.system.weaponType == 'unarmed'
       ) {
         let dmgBonus = this.actor.system?.meleeDamage?.base ?? 0
         numOfDice += dmgBonus
@@ -579,8 +579,8 @@ export class FalloutActorSheet extends ActorSheet {
       })
     })
 
-     // * POWER ARMOR MONITOR
-     html.find('.power-armor-monitor-helath-value').change((ev) => {
+    // * POWER ARMOR MONITOR
+    html.find('.power-armor-monitor-helath-value').change((ev) => {
       const apparelId = $(ev.currentTarget).data('itemId')
       const newHealthValue = $(ev.currentTarget).val()
       let apparel = this.actor.items.get(apparelId)
@@ -650,10 +650,10 @@ export class FalloutActorSheet extends ActorSheet {
   _onRightClickSkill(itemId, attribute) {
     const item = this.actor.items.get(itemId)
     this._onRollSkill(
-      item.name,
-      item.system.value,
-      this.actor.system.attributes[attribute].value,
-      item.system.tag,
+        item.name,
+        item.system.value,
+        this.actor.system.attributes[attribute].value,
+        item.system.tag,
     )
   }
   _onRollSkill(skillName, rank, attribute, tag) {
@@ -692,7 +692,7 @@ export class FalloutActorSheet extends ActorSheet {
       })
     } else {
       let div = $(
-        `<div class="item-summary"><div class="item-summary-wrapper"><div>${moreInfo}</div></div></div>`,
+          `<div class="item-summary"><div class="item-summary-wrapper"><div>${moreInfo}</div></div></div>`,
       )
       li.append(div.hide())
       div.slideDown(200)
