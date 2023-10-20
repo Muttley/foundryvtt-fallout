@@ -505,9 +505,7 @@ export class FalloutActorSheet extends ActorSheet {
         skill['tag'] = true
         attribute = item.actor.system[item.system.attribute]
       } else {
-        skillName = game.i18n.localize(
-            `FALLOUT.WEAPONS.weaponType.${item.system.weaponType}`,
-        )
+        skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.system.weaponType]
         let skillItem = item.actor.items.find((i) => i.name == skillName)
         if (skillItem) skill = skillItem.system
         else skill = { value: 0, tag: false, defaultAttribute: 'str'}
