@@ -1,6 +1,6 @@
-# FALLOUT 2d20
+# Fallout 2d20 System for Foundry VTT
 
-This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the books included.
+This is a Fallout 2d20 unofficial Sheet for Foundry VTT. No content from the books included.
 
 ## ACTOR TYPES
 
