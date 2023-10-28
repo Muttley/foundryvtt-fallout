@@ -15,7 +15,7 @@
     }
   ],
   "esmodules": [
-    "fallout.mjs"
+    "fallout-compiled.mjs"
   ],
   "styles": [
     "css/fallout.css"
