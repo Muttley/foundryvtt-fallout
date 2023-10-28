@@ -1,0 +1,21 @@
+{
+	"_id": "UrVd0BmoXkAxmrvv",
+	"_key": "!items!UrVd0BmoXkAxmrvv",
+	"data": {
+		"defaultAttribute": "int",
+		"description": "",
+		"summary": "",
+		"tag": false,
+		"value": 0
+	},
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"name": "Medicine",
+	"permission": {
+		"U6A1xCj2ogp2gdEu": 3,
+		"default": 0
+	},
+	"type": "skill"
+}

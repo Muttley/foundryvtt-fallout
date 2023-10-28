@@ -1,0 +1,21 @@
+{
+	"_id": "5xAG0eRrcvDeJAFk",
+	"_key": "!items!5xAG0eRrcvDeJAFk",
+	"data": {
+		"defaultAttribute": "str",
+		"description": "",
+		"summary": "",
+		"tag": false,
+		"value": 0
+	},
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"name": "Unarmed",
+	"permission": {
+		"U6A1xCj2ogp2gdEu": 3,
+		"default": 0
+	},
+	"type": "skill"
+}
