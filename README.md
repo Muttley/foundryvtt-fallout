@@ -1,3 +1,8 @@
+![GitHub Release](https://img.shields.io/github/release-date/Muttley/foundryvtt-fallout)
+![All Versions](https://img.shields.io/github/downloads/Muttley/foundryvtt-fallout/total)
+![Latest Version](https://img.shields.io/github/downloads/Muttley/foundryvtt-fallout/latest/total)
+![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Ffallout)
+
 # Fallout 2d20 System for Foundry VTT
 
 This is a Fallout 2d20 unofficial Sheet for Foundry VTT. No content from the books included.
