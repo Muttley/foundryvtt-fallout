@@ -1,25 +1,25 @@
 // Import document classes.
-import { FalloutActor } from './documents/actor.mjs'
-import { FalloutItem } from './documents/item.mjs'
+import { FalloutActor } from './src/documents/actor.mjs'
+import { FalloutItem } from './src/documents/item.mjs'
 // Import sheet classes.
-import { FalloutActorSheet } from './sheets/actor-sheet.mjs'
-import { FalloutItemSheet } from './sheets/item-sheet.mjs'
+import { FalloutActorSheet } from './src/sheets/actor-sheet.mjs'
+import { FalloutItemSheet } from './src/sheets/item-sheet.mjs'
 // Import helper/utility classes and constants.
-import { FALLOUT } from './helpers/config.mjs'
-import { preloadHandlebarsTemplates } from './helpers/templates.mjs'
-import { registerHandlebarsHelpers } from './helpers/handlebars.mjs'
+import { FALLOUT } from './src/helpers/config.mjs'
+import { preloadHandlebarsTemplates } from './src/helpers/templates.mjs'
+import { registerHandlebarsHelpers } from './src/helpers/handlebars.mjs'
 //Import Roll2D20
-import { Roller2D20 } from './roller/fo2d20-roller.mjs'
-import { Dialog2d20 } from './roller/dialog2d20.js'
-import { DialogD6 } from './roller/dialogD6.js'
+import { Roller2D20 } from './src/roller/fo2d20-roller.mjs'
+import { Dialog2d20 } from './src/roller/dialog2d20.js'
+import { DialogD6 } from './src/roller/dialogD6.js'
 //AP traker
-import { registerSettings } from './settings.js'
-import { APTracker } from './ap/ap-tracker.mjs'
+import { registerSettings } from './src/settings.js'
+import { APTracker } from './src/ap/ap-tracker.mjs'
 //Dice
-import { DieFalloutDamage } from './roller/damageDie.js'
-import { DieFalloutLocation, DieFalloutRobotLocation } from './roller/locationDie.js'
+import { DieFalloutDamage } from './src/roller/damageDie.js'
+import { DieFalloutLocation, DieFalloutRobotLocation } from './src/roller/locationDie.js'
 
-import {FOHovers} from './helpers/hovers.mjs'
+import {FOHovers} from './src/helpers/hovers.mjs'
 
 /* -------------------------------------------- */
 /*  Handlebars Helpers                          */
@@ -87,7 +87,7 @@ Hooks.once('init', async function () {
           }
           else if(match[1]=="RA"){
             span.innerHTML = ``
-          }                      
+          }
           return span;
       }
     }
@@ -125,7 +125,7 @@ Hooks.once('init', async function () {
       //DiceTerm._applyCount(this.results, '>', 4, {flagSuccess: true});
       return [result]
     })
-  }  
+  }
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet)
@@ -135,23 +135,23 @@ Hooks.once('init', async function () {
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates()
-  
+
 })
 
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
 
-Hooks.once('ready', async function () {  
+Hooks.once('ready', async function () {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on('hotbarDrop', (bar, data, slot) => createItemMacro(data, slot))
 })
 
-Hooks.on('renderChatMessage', (message, html, data) => {  
+Hooks.on('renderChatMessage', (message, html, data) => {
   let rrlBtn = html.find('.reroll-button')
   if (rrlBtn.length > 0) {
     rrlBtn[0].setAttribute('data-messageId', message.id)
-    rrlBtn.click((el) => {      
+    rrlBtn.click((el) => {
       let selectedDiceForReroll = html.find('.dice-selected')
       let rerollIndex = []
       for (let d of selectedDiceForReroll) {
@@ -160,7 +160,7 @@ Hooks.on('renderChatMessage', (message, html, data) => {
       if (!rerollIndex.length) {
         ui.notifications.notify('Select Dice you want to Reroll')
       } else {
-        
+
         let falloutRoll = message.flags.falloutroll
         if (falloutRoll.diceFace == 'd20') {
           Roller2D20.rerollD20({
@@ -340,7 +340,7 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
       'systems/fallout/assets/dice/d6.webp',
     ],
     system: 'fallout',
-    
+
   })
 
   dice3d.addDicePreset({

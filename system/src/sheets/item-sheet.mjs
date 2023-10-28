@@ -33,10 +33,10 @@ export class FalloutItemSheet extends ItemSheet {
 
     foundry.utils.mergeObject(context, {
       source: source.system,
-      system: item.system,      
+      system: item.system,
       isEmbedded: item.isEmbedded,
-      type: item.type,      
-      flags: item.flags,      
+      type: item.type,
+      flags: item.flags,
       FALLOUT: CONFIG.FALLOUT,
       effects: prepareActiveEffectCategories(item.effects),
       descriptionHTML: await TextEditor.enrichHTML(item.system.description, {
@@ -44,7 +44,7 @@ export class FalloutItemSheet extends ItemSheet {
         async: true
       })
     });
-    
+
     // Enrich Mods Text
     if(item.system.mods){
       foundry.utils.mergeObject(context,{
@@ -64,7 +64,7 @@ export class FalloutItemSheet extends ItemSheet {
         })
       })
     }
-  
+
     return context;
   }
 
