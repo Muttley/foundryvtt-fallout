@@ -5,59 +5,64 @@
 
 # Fallout 2d20 System for Foundry VTT
 
-This is a Fallout 2d20 unofficial Sheet for Foundry VTT. No content from the books included.
+This is an unoffical Fallout 2d20 system for Foundry VTT. No content from the books included.
 
 ## ACTOR TYPES
 
--   CHARACTER
--   ROBOT
--   NPC
--   CREATURE
+- Character
+- Creature
+- NPC
+- Robot
 
 ## ITEM TYPES
 
--   weapon
--   weapon mod
--   ammo
--   apparel
--   apparel mod
--   robot armor
--   robot modules
--   books and magazines
--   consumables (food, beverage, chem , other)
--   miscellany
--   skill
--   perk
--   special ability
+- Ammo
+- Apparel
+- Apparel Mod
+- Books and Magazines
+- Consumables (Food, Beverage, Chem, Other)
+- Miscellany
+- Perk
+- Robot Armor
+- Robot Modules
+- Skill
+- Special Ability
+- Weapon
+- Weapon Mod
 
 ## FEATURES
 
--   Dice Roller Macros for D20 and DC Rolls. You can find them in the fallout-macros compendium. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects. It can be triggered separately or from the Attributes/Skills/Weapons. (Dice So Nice module supported)
--   Custom CD roll: "/r 1dc" and modifiers to count the effects ("/r 1dcef") or count total results summed ("/r 1dcsum")
--   Pipboy Screen for Characters and Robots (player sheets)
--   Calculating Resistances depending on the equipped apparel
--   Marking Injuries visually on the body parts
--   Calculating Encumbrance
--   Smart Item Sorting by Type
--   Adding Melee Bonus to Unarmed and melee weapons
--   Automatically switching to Creature Attributes and Skills for Creature Weapons that are of "Creature Attack" Type. Also automatically marks them as Tagged when rolling.
--   Favorite Weapons List quick view
--   Power Armor Health Monitor
--   Robot Modules List quick view
--   Conditions
--   Action Points trackers for Overseer and the Party
--   Location Die "1dh" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
--   A way to write fallout symbols in the journal entries: use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types.
+- Dice Roller Macros for D20 and DC Rolls. You can find them in the fallout-macros compendium. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects. It can be triggered separately or from the Attributes/Skills/Weapons. (Dice So Nice module supported)
+- Custom CD roll: "`/r 1dc`" and modifiers to count the effects ("`/r 1dcef`") or count total results summed ("`/r 1dcsum`")
+- Pipboy Screen for Characters and Robots (player sheets)
+- Calculating Resistances depending on the equipped apparel
+- Marking Injuries visually on the body parts
+- Calculating Encumbrance
+- Smart Item Sorting by Type
+- Adding Melee Bonus to Unarmed and melee weapons
+- Automatically switching to Creature Attributes and Skills for Creature Weapons that are of "Creature Attack" Type. Also automatically marks them as Tagged when rolling.
+- Favorite Weapons List quick view
+- Power Armor Health Monitor
+- Robot Modules List quick view
+- Conditions
+- Action Points trackers for Overseer and the Party
+- Location Die "`1dh`" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
+- A way to write fallout symbols in the journal entries:
+	* `@fos[DC]` for DC die symbol
+	* `@fos[PH]` for Physical damage type
+	* `@fos[EN]` for Energy damage type
+	* `@fos[PO]` for Poison damage type
+	* `@fos[RA]` for Radiation damage type
 
 ## FAQ
 
--   Apparel resistances are visible on the pip-boy figure for that specific body part. Resistances on the left of the pip-boy are general bonuses that are added to all body parts.
--   Power Armor needs to be equipped and powered in order to apply it's resistances.
--   Power Armor frame as an Active Effect `system.attributes.str.value, Override, 11`
--   You can drag skills to the NPCs from the included skills compendium.
--   Right click on the Skill name in order to choose a different Attribute to roll with. This will prop Delete skill on NPCs.(still looking for the right design solution for this)
--   Characters can't equip robot armor so those are stashed under the GEAR tab. (and vice versa)
--   You can stash items by clicking on the stash icon in the character’s items list.Stashed items do not count against total weight you carry.
+- Apparel resistances are visible on the pip-boy figure for that specific body part. Resistances on the left of the pip-boy are general bonuses that are added to all body parts.
+- Power Armor needs to be equipped and powered in order to apply it's resistances.
+- Power Armor frame as an Active Effect `system.attributes.str.value, Override, 11`
+- You can drag skills to the NPCs from the included skills compendium.
+- Right click on the Skill name in order to choose a different Attribute to roll with. This will prop Delete skill on NPCs.(still looking for the right design solution for this)
+- Characters can't equip robot armor so those are stashed under the GEAR tab. (and vice versa)
+- You can stash items by clicking on the stash icon in the character’s items list.Stashed items do not count against total weight you carry.
 
 ## Disclaimer
 
@@ -90,4 +95,5 @@ Foundry VTT: Limited License Agreement for module development.
 All copyright assets used with explicit consent from Modiphius Entertainment. The fvtt-modiphius developer community holds no claim to underlying copyrighted assets.
 
 ## Thanks to
+
 - @e4g13 for making new images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13
