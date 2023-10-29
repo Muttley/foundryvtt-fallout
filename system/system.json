@@ -80,6 +80,6 @@
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
 	"manifest": "https://github.com/Muttley/foundryvtt-fallout/main/system/system.json",
-	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/download/release-11.1.1/shadowdark-release-11.1.1.zip",
+	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/download/release-11.1.1/fallout-release-11.1.1.zip",
 	"license": "LICENSE.txt"
 }
