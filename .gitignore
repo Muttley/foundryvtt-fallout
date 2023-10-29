@@ -1,20 +1,9 @@
-# IDE
-.idea/
-.vs/
-
-# Node Modules
+.vscode/
 node_modules/
-npm-debug.log
+scratch/
+system/css/
+system/i18n/
+system/packs/
 
-# Gulp
-gulpfile.js
-package-lock.json
-package.json
-
-# Foundry
-*.lock
-
-# Releases and zips
-*.7z
-*.zip
-*.rar
+*.code-workspace
+fallout-compiled*

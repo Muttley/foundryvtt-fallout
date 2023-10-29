@@ -1,6 +1,11 @@
-# FALLOUT 2d20
+![GitHub Release](https://img.shields.io/github/release-date/Muttley/foundryvtt-fallout)
+![All Versions](https://img.shields.io/github/downloads/Muttley/foundryvtt-fallout/total)
+![Latest Version](https://img.shields.io/github/downloads/Muttley/foundryvtt-fallout/latest/total)
+![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Ffallout)
 
-This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the books included.
+# Fallout 2d20 System for Foundry VTT
+
+This is a Fallout 2d20 unofficial Sheet for Foundry VTT. No content from the books included.
 
 ## ACTOR TYPES
 
@@ -42,7 +47,7 @@ This is a Fallout2D20 unofficial Sheet for Foundry VTT. No content from the book
 -   Conditions
 -   Action Points trackers for Overseer and the Party
 -   Location Die "1dh" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
--   A way to write fallout symbols in the journal entries: use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types. 
+-   A way to write fallout symbols in the journal entries: use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types.
 
 ## FAQ
 
