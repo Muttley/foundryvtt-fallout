@@ -7,14 +7,14 @@
 
 This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the books is included.
 
-## ACTOR TYPES
+## Actor Types
 
 - Character
 - Creature
 - NPC
 - Robot
 
-## ITEM TYPES
+## Item Types
 
 - Ammo
 - Apparel
@@ -30,7 +30,7 @@ This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the b
 - Weapon
 - Weapon Mod
 
-## FEATURES
+## Features
 
 - Dice Roller Macros for D20 and DC Rolls. You can find them in the fallout-macros compendium. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects. It can be triggered separately or from the Attributes/Skills/Weapons. (Dice So Nice module supported)
 - Custom CD roll: "`/r 1dc`" and modifiers to count the effects ("`/r 1dcef`") or count total results summed ("`/r 1dcsum`")
