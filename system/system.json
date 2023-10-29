@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout 2d20",
 	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.1.2",
+	"version": "11.1.3",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
@@ -90,6 +90,6 @@
 	],
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
-	"manifest": "https://github.com/Muttley/foundryvtt-fallout/main/system/system.json",
-	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/download/release-11.1.2/fallout-release-11.1.2.zip"
+	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
+	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/download/release-11.1.3/fallout-release-11.1.3.zip"
 }
