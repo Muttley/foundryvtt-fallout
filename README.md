@@ -5,7 +5,7 @@
 
 # Fallout 2d20 System for Foundry VTT
 
-This is an unoffical Fallout 2d20 system for Foundry VTT. No content from the books included.
+This is an unoffical Fallout 2d20 system for Foundry VTT. It does not contain any content from the books.
 
 ## ACTOR TYPES
 
