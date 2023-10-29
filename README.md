@@ -47,7 +47,7 @@ This is a Fallout 2d20 unofficial Sheet for Foundry VTT. No content from the boo
 -   Conditions
 -   Action Points trackers for Overseer and the Party
 -   Location Die "1dh" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
--   A way to write fallout symbols in the journal entries: use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types. 
+-   A way to write fallout symbols in the journal entries: use "@fos[DC]" for DC die. Use @fos[PH], @fos[EN], @fos[PO], @fos[RA] for the damage types.
 
 ## FAQ
 
