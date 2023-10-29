@@ -1,3 +1,8 @@
+## v11.2.0
+
+- System migrated to new home and build process
+- Compendiums now contained within a top-level system folder
+
 ## v11.1.0
 
 - Added Weight unit in settings
