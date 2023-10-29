@@ -1,12 +1,11 @@
 {
 	"id": "fallout",
 	"title": "Fallout 2d20",
-	"description": "The unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.1.0",
+	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
+	"version": "11.1.1",
 	"compatibility": {
 		"minimum": "11",
-		"verified": "11",
-		"maximum":"11"
+		"verified": "11"
 	},
 	"authors": [
 		{
@@ -79,8 +78,8 @@
 		}
 	],
 	"socket": true,
-	"url": "https://github.com/superseva/fallout",
-	"manifest": "https://github.com/superseva/fallout/releases/latest/download/system.json",
-	"download": "https://github.com/superseva/fallout/releases/download/v11.1.0/fallout.zip",
+	"url": "https://github.com/Muttley/foundryvtt-fallout",
+	"manifest": "https://github.com/Muttley/foundryvtt-fallout/main/system/system.json",
+	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/download/release-11.1.1/shadowdark-release-11.1.1.zip",
 	"license": "LICENSE.txt"
 }
