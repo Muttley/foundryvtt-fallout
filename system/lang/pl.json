@@ -2,7 +2,7 @@
   "ACTOR.TypeCharacter": "Postać",
   "ACTOR.TypeCreature": "Stworzenie",
   "ACTOR.TypeNpc": "BN",
-  "ACTOR.TypeRobot": "Robot",  
+  "ACTOR.TypeRobot": "Robot",
   "FALLOUT.AbilityAbbr.agi": "ZW",
   "FALLOUT.AbilityAbbr.cha": "CHA",
   "FALLOUT.AbilityAbbr.end": "WT",
@@ -27,6 +27,30 @@
     "powerArmor": "Pancerz wspomagany"
   },
   "FALLOUT.BEVERAGE": "Beverage",
+  "FALLOUT.BODYLOCATION.character": {
+    "armL": "Lewa Ręka",
+    "armR": "Prawa Ręka",
+    "head": "Głowa",
+    "legL": "Lewa Noga",
+    "legR": "Prawa Noga",
+    "torso": "Tłów"
+  },
+  "FALLOUT.BODYLOCATION.labels": {
+    "Head | Optics | Head | Head": "Głowa | Sensory | Głowa | Głowa",
+    "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)": "Lewa Ręka| Ramie 1 | Lewa Przednia Noga| Lewe skrzydło",
+    "Left Leg | Arm 3 | Left Hind Leg | Legs": "Lewa Noga | Silnik | Lewa Tylnia Noga| Odnóża",
+    "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)": "Prawa Ręka| Ramie 2 | Prawa Przednia Noga| Prawe skrzydło",
+    "Right Leg | Thruster | Right Hind Leg | Legs": "Prawa Noga | Silnik | Prawa Tylnia Noga| Odnóża",
+    "Torso | Main Body | Torso | Torso": "Tłów | Korpus | Korpus | Korpus"
+  },
+  "FALLOUT.BODYLOCATION.robot": {
+    "armL": "Ramie 1",
+    "armR": "Ramie 2",
+    "head": "Sensory",
+    "legL": "Ramie 3",
+    "legR": "Silnik",
+    "torso": "Korpus"
+  },
   "FALLOUT.BODYLOCATION_ABBR.character": {
     "armL": "LR",
     "armR": "PR",
@@ -43,67 +67,43 @@
     "legR": "Si",
     "torso": "K"
   },
-  "FALLOUT.BODYLOCATION.character": {
-    "armL": "Lewa Ręka",
-    "armR": "Prawa Ręka",
-    "head": "Głowa",
-    "legL": "Lewa Noga",
-    "legR": "Prawa Noga",
-    "torso": "Tłów"
-  },
-  "FALLOUT.BODYLOCATION.robot": {
-    "armL": "Ramie 1",
-    "armR": "Ramie 2",
-    "head": "Sensory",
-    "legL": "Ramie 3",
-    "legR": "Silnik",
-    "torso": "Korpus"
-  },
-  "FALLOUT.BODYLOCATION.labels": {
-    "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)": "Lewa Ręka| Ramie 1 | Lewa Przednia Noga| Lewe skrzydło",
-    "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)": "Prawa Ręka| Ramie 2 | Prawa Przednia Noga| Prawe skrzydło",
-    "Head | Optics | Head | Head": "Głowa | Sensory | Głowa | Głowa",
-    "Left Leg | Arm 3 | Left Hind Leg | Legs": "Lewa Noga | Silnik | Lewa Tylnia Noga| Odnóża",
-    "Right Leg | Thruster | Right Hind Leg | Legs": "Prawa Noga | Silnik | Prawa Tylnia Noga| Odnóża",
-    "Torso | Main Body | Torso | Torso": "Tłów | Korpus | Korpus | Korpus"
-  },
-  "FALLOUT.BodyTypes":{
-    "BodyType":"Typ ciała",
-    "humanoid":{
-      "label":"Humanoid",
+  "FALLOUT.BodyTypes": {
+    "BodyType": "Typ ciała",
+    "flyingInsect": {
+      "armL": "Lewe skrzydło (jak odnóża)",
+      "armR": "Prawe skrzydło (jak odnóża)",
+      "head": "Głowa",
+      "label": "Latające Insekty",
+      "legL": "Odnóża",
+      "legR": "Odnóża",
+      "torso": "Korpus"
+    },
+    "humanoid": {
       "armL": "Lewa Ręka",
       "armR": "Prawa Ręka",
       "head": "Głowa",
+      "label": "Humanoid",
       "legL": "Lewa Noga",
       "legR": "Prawa Noga",
       "torso": "Tłów"
     },
-    "robot":{
-      "label":"Robot",
+    "quadruped": {
+      "armL": "Lewa Przednia Noga",
+      "armR": "Prawa Przednia Noga",
+      "head": "Głowa",
+      "label": "Czworonogi",
+      "legL": "Lewa Tylnia Noga",
+      "legR": "Prawa Tylnia Noga",
+      "torso": "Korpus"
+    },
+    "robot": {
       "armL": "Ramie 1",
       "armR": "Ramie 2",
       "head": "Sensory",
+      "label": "Robot",
       "legL": "Ramie 3",
       "legR": "Silnik",
       "torso": "Korpus"
-    },
-    "quadruped":{
-      "label":"Czworonogi",
-      "head":"Głowa",
-      "torso":"Korpus",
-      "armL": "Lewa Przednia Noga",
-      "armR": "Prawa Przednia Noga",
-      "legL": "Lewa Tylnia Noga",
-      "legR": "Prawa Tylnia Noga"
-    },
-    "flyingInsect":{
-      "label":"Latające Insekty",
-      "head":"Głowa",
-      "torso":"Korpus",
-      "armL": "Lewe skrzydło (jak odnóża)",
-      "armR": "Prawe skrzydło (jak odnóża)",
-      "legL": "Odnóża",
-      "legR": "Odnóża"
     }
   },
   "FALLOUT.CHEM": "Chemikalia",
@@ -172,9 +172,9 @@
     "Add_Perk": "Dodaj Profit",
     "Addictive": "Uzależniające",
     "Alcoholic": "Alkocholowe",
-    "AMMO": "Amunicja",    
-    "Apparel": "Odzież",
+    "AMMO": "Amunicja",
     "APPAREL": "ODZIEŻ",
+    "Apparel": "Odzież",
     "Apparel_Type": "Typ Odzieży",
     "Armor_Type": "Typ pancerza",
     "ATTACKS": "Ataki",
@@ -182,26 +182,26 @@
     "Attributes": "Cechy",
     "Compl": "Komp.",
     "Complications": "Komplikacje",
-    "conditions": {
-      "fatigue": "Zmęczenie",
-      "hunger": "Głud",
-      "sleep": "Niewyspanie",
-      "thirst": "Pragnienie",
-      "full":"Pełny",
-      "sated":"Syty",
-      "peckish":"Głodnawy",
-      "hungry":"Głodny",
-      "starving":"Głodujący",
-      "quenched":"Opity",
-      "hydrated":"Nawodniony",
-      "thirsty":"Spragniony",
-      "dehydrated":"Odwodniony",
-      "rested":"Wypoczęty",
-      "tired":"Znurzony",
-      "weary":"Zmęczony",
-      "exhausted":"Wyczerpany"
-    },
     "CONDITIONS": "Stany",
+    "conditions": {
+      "dehydrated": "Odwodniony",
+      "exhausted": "Wyczerpany",
+      "fatigue": "Zmęczenie",
+      "full": "Pełny",
+      "hunger": "Głud",
+      "hungry": "Głodny",
+      "hydrated": "Nawodniony",
+      "peckish": "Głodnawy",
+      "quenched": "Opity",
+      "rested": "Wypoczęty",
+      "sated": "Syty",
+      "sleep": "Niewyspanie",
+      "starving": "Głodujący",
+      "thirst": "Pragnienie",
+      "thirsty": "Spragniony",
+      "tired": "Znurzony",
+      "weary": "Zmęczony"
+    },
     "Consumable_Type": "Typy zużywalnych",
     "Create_Ammo": "Stwórz Amunicje",
     "Create_Apparel_Mod": "Stwórz Modyfikacje Odzież",
@@ -236,8 +236,8 @@
     "Gear": "Sprzęt",
     "GENERAL": "Ogólny",
     "Healthy": "Zdrowie",
-    "HitLocationLabel":"Lokalizacja Trafienia",
-    "HP_Healed": "Wyleczone PZ",    
+    "HitLocationLabel": "Lokalizacja Trafienia",
+    "HP_Healed": "Wyleczone PZ",
     "INITIATIVE": "Inicjatywa",
     "INJURIES": "Rany",
     "Injury_Left_Click": "Rana (kliknij lewym)",
@@ -248,8 +248,8 @@
     "Locations": "Lokalizacja",
     "LOCATIONS_INJURIES": "Lokalizacje i rany",
     "Luck": "Szczęście",
-    "max": "max",
     "MAX": "MAX",
+    "max": "max",
     "MAX_PARTY_AP": "Maksymalne Punkty Ackcji Drużyny",
     "MELEE_BONUS": "BONUS OBRAŻEŃ WRĘCZ",
     "MELEE_DAMAGE": "OBRAŻENIA WRĘCZ",
@@ -272,8 +272,8 @@
     "Re_roll": "Przerzut",
     "Requirements": "Wymagania",
     "RESISTANCE_GENERAL_BONUS": "Ogólny bonus odporności",
-    "Resistances": "Odporności",
     "RESISTANCES": "Odporności",
+    "Resistances": "Odporności",
     "Roll_Formula": "Formuła Rzutu",
     "SKILL": "Umiejętność",
     "Skill_Tag": "Specjalizacja",
@@ -307,7 +307,7 @@
     "CONSUMABLES": "Zużywalne",
     "Cost": "Cena",
     "Damage": "Obrażenia",
-    "DISEASES":"Choroby",
+    "DISEASES": "Choroby",
     "favorite": "Ulubiony",
     "INVENTORY": "Ekwipunek",
     "MISCELLANY": "Różności",
@@ -315,8 +315,8 @@
     "ORIGIN": "Pochodzenie",
     "OTHER": "Inne",
     "Perks": "Profity",
+    "Qty": "Ilość",
     "Quantity": "Ilość",
-    "Qty":"Ilość",
     "Rarity": "Rzadkość",
     "ROBOT_MODULES": "Modyfikacje Robotów",
     "SPECIAL_ABILITY": "Zdolności Specjalne",
@@ -372,12 +372,13 @@
       "unarmed": "Bez Broni"
     }
   },
+  "ITEM.AmmoPerShot": "Amunicja na strzał",
   "ITEM.TypeAmmo": "Amunicja",
-  "ITEM.AmmoPerShot":"Amunicja na strzał",
   "ITEM.TypeApparel": "Odzież",
   "ITEM.TypeApparel_mod": "Modyfikacje Odzież",
   "ITEM.TypeBooks_and_magz": "Książki/magazyny",
   "ITEM.TypeConsumable": "Zużywalne",
+  "ITEM.TypeDisease": "Choroby",
   "ITEM.TypeMiscellany": "Różności",
   "ITEM.TypePerk": "Profit",
   "ITEM.TypeRobot_armor": "Pancerz Robota",
@@ -385,6 +386,5 @@
   "ITEM.TypeSkill": "Umiejętność",
   "ITEM.TypeSpecial_ability": "Zdolności Specjalne",
   "ITEM.TypeWeapon": "Broń",
-  "ITEM.TypeWeapon_mod": "Modyfikacje Broni",
-  "ITEM.TypeDisease":"Choroby"
+  "ITEM.TypeWeapon_mod": "Modyfikacje Broni"
 }

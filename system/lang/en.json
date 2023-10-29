@@ -2,7 +2,7 @@
   "ACTOR.TypeCharacter": "Character",
   "ACTOR.TypeCreature": "Creature",
   "ACTOR.TypeNpc": "NPC",
-  "ACTOR.TypeRobot": "Robot",  
+  "ACTOR.TypeRobot": "Robot",
   "FALLOUT.AbilityAbbr.agi": "agi",
   "FALLOUT.AbilityAbbr.cha": "cha",
   "FALLOUT.AbilityAbbr.end": "end",
@@ -27,6 +27,30 @@
     "powerArmor": "Power Armor"
   },
   "FALLOUT.BEVERAGE": "Beverage",
+  "FALLOUT.BODYLOCATION.character": {
+    "armL": "Left Arm",
+    "armR": "Right Arm",
+    "head": "Head",
+    "legL": "Left Leg",
+    "legR": "Right Leg",
+    "torso": "Torso"
+  },
+  "FALLOUT.BODYLOCATION.labels": {
+    "Head | Optics | Head | Head": "Head | Optics | Head | Head",
+    "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)": "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)",
+    "Left Leg | Arm 3 | Left Hind Leg | Legs": "Left Leg | Arm 3 | Left Hind Leg | Legs",
+    "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)": "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)",
+    "Right Leg | Thruster | Right Hind Leg | Legs": "Right Leg | Thruster | Right Hind Leg | Legs",
+    "Torso | Main Body | Torso | Torso": "Torso | Main Body | Torso | Torso"
+  },
+  "FALLOUT.BODYLOCATION.robot": {
+    "armL": "Arm 1",
+    "armR": "Arm 2",
+    "head": "Optics",
+    "legL": "Arm 3",
+    "legR": "Thruster",
+    "torso": "Main Body"
+  },
   "FALLOUT.BODYLOCATION_ABBR.character": {
     "armL": "AL",
     "armR": "AR",
@@ -43,67 +67,43 @@
     "legR": "TH",
     "torso": "MB"
   },
-  "FALLOUT.BODYLOCATION.character": {
-    "armL": "Left Arm",
-    "armR": "Right Arm",
-    "head": "Head",
-    "legL": "Left Leg",
-    "legR": "Right Leg",
-    "torso": "Torso"
-  },
-  "FALLOUT.BODYLOCATION.robot": {
-    "armL": "Arm 1",
-    "armR": "Arm 2",
-    "head": "Optics",
-    "legL": "Arm 3",
-    "legR": "Thruster",
-    "torso": "Main Body"
-  },
-  "FALLOUT.BODYLOCATION.labels": {
-    "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)": "Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)",
-    "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)": "Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)",
-    "Head | Optics | Head | Head": "Head | Optics | Head | Head",
-    "Left Leg | Arm 3 | Left Hind Leg | Legs": "Left Leg | Arm 3 | Left Hind Leg | Legs",
-    "Right Leg | Thruster | Right Hind Leg | Legs": "Right Leg | Thruster | Right Hind Leg | Legs",
-    "Torso | Main Body | Torso | Torso": "Torso | Main Body | Torso | Torso"
-  },
-  "FALLOUT.BodyTypes":{
-    "BodyType":"Body Type",
-    "humanoid":{
-      "label":"Humanoid",
-      "head":"Head",
-      "torso":"Torso",
-      "armL": "Arm Left",
-      "armR": "Arm Right",
-      "legL": "Leg Left",
-      "legR": "Leg Right"
-    },
-    "robot":{
-      "label":"Robot",
-      "head":"Optics",
-      "torso":"Main Body",
-      "armL": "Arm 1",
-      "armR": "Arm 2",
-      "legL": "Arm 3",
-      "legR": "Main Body"
-    },
-    "quadruped":{
-      "label":"Quadruped",
-      "head":"Head",
-      "torso":"Torso",
-      "armL": "Left Front Leg",
-      "armR": "Right Front Leg",
-      "legL": "Left Hind Leg",
-      "legR": "Right Hind Leg"
-    },
-    "flyingInsect":{
-      "label":"Flying Insect",
-      "head":"Head",
-      "torso":"Torso",
+  "FALLOUT.BodyTypes": {
+    "BodyType": "Body Type",
+    "flyingInsect": {
       "armL": "Left Wing (as leg)",
       "armR": "Right Wing (as leg)",
+      "head": "Head",
+      "label": "Flying Insect",
       "legL": "Legs",
-      "legR": "Legs"
+      "legR": "Legs",
+      "torso": "Torso"
+    },
+    "humanoid": {
+      "armL": "Arm Left",
+      "armR": "Arm Right",
+      "head": "Head",
+      "label": "Humanoid",
+      "legL": "Leg Left",
+      "legR": "Leg Right",
+      "torso": "Torso"
+    },
+    "quadruped": {
+      "armL": "Left Front Leg",
+      "armR": "Right Front Leg",
+      "head": "Head",
+      "label": "Quadruped",
+      "legL": "Left Hind Leg",
+      "legR": "Right Hind Leg",
+      "torso": "Torso"
+    },
+    "robot": {
+      "armL": "Arm 1",
+      "armR": "Arm 2",
+      "head": "Optics",
+      "label": "Robot",
+      "legL": "Arm 3",
+      "legR": "Main Body",
+      "torso": "Main Body"
     }
   },
   "FALLOUT.CHEM": "Chem",
@@ -172,9 +172,9 @@
     "Add_Perk": "Add Perk",
     "Addictive": "Addictive",
     "Alcoholic": "Alcoholic",
-    "AMMO": "AMMO",    
-    "Apparel": "Apparel",
+    "AMMO": "AMMO",
     "APPAREL": "APPAREL",
+    "Apparel": "Apparel",
     "Apparel_Type": "Apparel Type",
     "Armor_Type": "Armor Type",
     "ATTACKS": "ATTACKS",
@@ -182,26 +182,26 @@
     "Attributes": "Attributes",
     "Compl": "Compl.",
     "Complications": "Complications",
-    "conditions": {
-      "fatigue": "fatigue",
-      "hunger": "hunger",
-      "sleep": "sleep",
-      "thirst": "thirst",
-      "full":"Full",
-      "sated":"Sated",
-      "peckish":"Peckish",
-      "hungry":"Hungry",
-      "starving":"Starving",
-      "quenched":"Quenched",
-      "hydrated":"Hydrated",
-      "thirsty":"Thirsty",
-      "dehydrated":"Dehydrated",
-      "rested":"Rested",
-      "tired":"Tired",
-      "weary":"Weary",
-      "exhausted":"Exhausted"
-    },
     "CONDITIONS": "CONDITIONS",
+    "conditions": {
+      "dehydrated": "Dehydrated",
+      "exhausted": "Exhausted",
+      "fatigue": "fatigue",
+      "full": "Full",
+      "hunger": "hunger",
+      "hungry": "Hungry",
+      "hydrated": "Hydrated",
+      "peckish": "Peckish",
+      "quenched": "Quenched",
+      "rested": "Rested",
+      "sated": "Sated",
+      "sleep": "sleep",
+      "starving": "Starving",
+      "thirst": "thirst",
+      "thirsty": "Thirsty",
+      "tired": "Tired",
+      "weary": "Weary"
+    },
     "Consumable_Type": "Consumable Type",
     "Create_Ammo": "Create Ammo",
     "Create_Apparel_Mod": "Create Apparel Mod",
@@ -236,8 +236,8 @@
     "Gear": "Gear",
     "GENERAL": "GENERAL",
     "Healthy": "Healthy",
-    "HitLocationLabel":"Hit Location",
-    "HP_Healed": "HP Healed",    
+    "HitLocationLabel": "Hit Location",
+    "HP_Healed": "HP Healed",
     "INITIATIVE": "INITIATIVE",
     "INJURIES": "INJURIES",
     "Injury_Left_Click": "Injury (Left Click)",
@@ -248,8 +248,8 @@
     "Locations": "Locations",
     "LOCATIONS_INJURIES": "LOCATIONS & INJURIES",
     "Luck": "Luck",
-    "max": "max",
     "MAX": "MAX",
+    "max": "max",
     "MAX_PARTY_AP": "MAX PARTY AP",
     "MELEE_BONUS": "MELEE BONUS",
     "MELEE_DAMAGE": "MELEE DAMAGE",
@@ -272,8 +272,8 @@
     "Re_roll": "Re-roll",
     "Requirements": "Requirements",
     "RESISTANCE_GENERAL_BONUS": "RESISTANCE GENERAL BONUS",
-    "Resistances": "Resistances",
     "RESISTANCES": "RESISTANCES",
+    "Resistances": "Resistances",
     "Roll_Formula": "Roll Formula",
     "SKILL": "SKILL",
     "Skill_Tag": "Skill Tag",
@@ -307,7 +307,7 @@
     "CONSUMABLES": "Consumables",
     "Cost": "Cost",
     "Damage": "Damage",
-    "DISEASES":"Diseases",
+    "DISEASES": "Diseases",
     "favorite": "Favorite",
     "INVENTORY": "Inventory",
     "MISCELLANY": "Miscellany",
@@ -315,8 +315,8 @@
     "ORIGIN": "ORIGIN",
     "OTHER": "Other",
     "Perks": "Perks",
+    "Qty": "Qty",
     "Quantity": "Quantity",
-    "Qty":"Qty",
     "Rarity": "Rarity",
     "ROBOT_MODULES": "Robot Modules",
     "SPECIAL_ABILITY": "Special Ability",
@@ -328,16 +328,16 @@
   },
   "FALLOUT.WEAPONS": {
     "damageEffect": {
+      "arc": "Arc",
       "breaking": "Breaking",
       "burst": "Burst",
+      "freeze": "Freeze",
       "persistent": "Persistent",
       "piercing": "Piercing",
       "radioactive": "Radioactive",
       "spread": "Spread",
       "stun": "Stun",
-      "vicious": "Vicious",
-      "arc":"Arc",
-      "freeze":"Freeze"
+      "vicious": "Vicious"
     },
     "damageType": {
       "energy": "Energy",
@@ -353,18 +353,18 @@
       "debilitating": "Debilitating",
       "gatling": "Gatling",
       "inaccurate": "Inaccurate",
+      "limited": "Limited",
       "mine": "Mine",
       "nightVision": "Night Vision",
       "parry": "Parry",
       "recon": "Recon",
       "reliable": "Reliable",
+      "slow_load": "Slow Load",
       "suppressed": "Suppressed",
       "thrown": "Thrown",
       "twoHanded": "Two-Handed",
       "unreliable": "Unreliable",
-      "limited":"Limited",
-      "unstable_radiation":"Unstable Radiation",
-      "slow_load":"Slow Load"
+      "unstable_radiation": "Unstable Radiation"
     },
     "weaponType": {
       "bigGuns": "Big Guns",
@@ -377,12 +377,13 @@
       "unarmed": "Unarmed"
     }
   },
+  "ITEM.AmmoPerShot": "Ammo Per Shot",
   "ITEM.TypeAmmo": "Ammo",
-  "ITEM.AmmoPerShot":"Ammo Per Shot",
   "ITEM.TypeApparel": "Apparel",
   "ITEM.TypeApparel_mod": "Apparel Mod",
   "ITEM.TypeBooks_and_magz": "Book/Magazine",
   "ITEM.TypeConsumable": "Consumable",
+  "ITEM.TypeDisease": "Disease",
   "ITEM.TypeMiscellany": "Miscellany",
   "ITEM.TypePerk": "Perk",
   "ITEM.TypeRobot_armor": "Robot Armor",
@@ -390,6 +391,5 @@
   "ITEM.TypeSkill": "Skill",
   "ITEM.TypeSpecial_ability": "Special Ability",
   "ITEM.TypeWeapon": "Weapon",
-  "ITEM.TypeWeapon_mod": "Weapon Mod",
-  "ITEM.TypeDisease":"Disease"
+  "ITEM.TypeWeapon_mod": "Weapon Mod"
 }
