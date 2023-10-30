@@ -1,4 +1,4 @@
-## v11.x.x
+## v11.2.1
 
 ## Bugfixes
 - [#9] AP Tracker not launching
