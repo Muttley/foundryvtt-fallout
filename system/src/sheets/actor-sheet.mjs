@@ -13,8 +13,8 @@ export class FalloutActorSheet extends ActorSheet {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
 			template: "systems/fallout/templates/actor/actor-sheet.html",
-			width: 720,
-			height: 780,
+			width: 780,
+			height: 930,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",

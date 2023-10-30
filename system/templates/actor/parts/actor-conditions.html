@@ -2,7 +2,7 @@
     <!-- <div class="box-header">
         <h4>{{localize "FALLOUT.TEMPLATES.CONDITIONS"}}</h4>
     </div> -->
-    
+
 
         <ol class="items-list">
             <li class="item consumable flexrow items-header">
@@ -10,10 +10,8 @@
             </li>
 
             <li class="item" style="padding: 0.25rem;">
-                <div class="text-center">
+                <div class="condition-meters text-center">
                     <i class="fa-solid fa-pot-food" title="{{localize (concat 'FALLOUT.TEMPLATES.conditions.hunger')}}"></i>
-                </div>
-                <div class="text-center">
                     {{#select system.conditions.hunger}}
                     <select name="system.conditions.hunger">
                         {{#each FALLOUT.conditions.hunger as |value key|}}
@@ -24,10 +22,8 @@
                 </div>
             </li>
             <li class="item" style="padding: 0.25rem;">
-                <div class="text-center">
+                <div class="condition-meters text-center">
                     <i class="fa-solid fa-bottle-droplet" title="{{localize (concat 'FALLOUT.TEMPLATES.conditions.thirst')}}"></i>
-                </div>
-                <div class="text-center">
                     {{#select system.conditions.thirst}}
                     <select name="system.conditions.thirst">
                         {{#each FALLOUT.conditions.thirst as |value key|}}
@@ -38,10 +34,8 @@
                 </div>
             </li>
             <li class="item" style="padding: 0.25rem;">
-                <div class="text-center">
+                <div class="condition-meters text-center">
                     <i class="fa-solid fa-bed" title="{{localize (concat 'FALLOUT.TEMPLATES.conditions.sleep')}}"></i>
-                </div>
-                <div class="text-center">
                     {{#select system.conditions.sleep}}
                     <select name="system.conditions.sleep">
                         {{#each FALLOUT.conditions.sleep as |value key|}}
