@@ -149,7 +149,9 @@ export class APTracker extends Application {
 Hooks.once("ready", () => {
 	if (APTracker._instance) return;
 
-	new APTracker().renderApTracker();
+	new APTracker();
+
+	APTracker.renderApTracker();
 
 	game.socket.on("system.fallout", ev => {
 		if (ev.operation === "setAP") {
