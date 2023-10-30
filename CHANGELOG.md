@@ -1,3 +1,11 @@
+## v11.2.2
+
+## Bugfixes
+- [#14] NPC / Creature inventory items messed up
+
+## Enhancements
+- [#15] Tidy up hunger/thirst/sleep selector layout
+
 ## v11.2.1
 
 ## Bugfixes
