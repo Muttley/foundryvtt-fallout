@@ -52,17 +52,10 @@ function lintJavascript() {
 }
 export const lint = lintJavascript;
 
-// Wait
-//
-export const wait = async () => {
-	await delay(1500);
-	livereload.reload();
-};
-
 // Watch for file changes and lint when they do
 //
 export async function watchJavascriptUpdates() {
 	livereload.listen();
-	gulp.watch(SRC_LINT_PATHS, gulp.parallel(lint, compile, wait));
+	gulp.watch(SRC_LINT_PATHS, gulp.parallel(lint, compile));
 }
 export const watchUpdates = watchJavascriptUpdates;
