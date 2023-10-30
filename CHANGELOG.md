@@ -1,3 +1,8 @@
+## v11.2.1
+
+## Bugfixes
+- [#9] AP Tracker not launching
+
 ## v11.2.0
 
 - System migrated to new home and build process
