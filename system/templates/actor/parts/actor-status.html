@@ -106,11 +106,13 @@
                 <h3 style="margin:0; border-bottom: none;"><strong>{{localize "FALLOUT.HEALTH.health"}}</strong></h3>
             </div>
             <div class="flexrow align-mid">
+				&nbsp;&nbsp;
                 <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number"
                     name="system.health.value" value="{{system.health.value}}" min="0">
                 <span class="text-center">/</span>
                 <input class="num-short-3" style="font-size:18px; background-color: beige; color: black;" type="number"
                     name="system.health.max" value="{{system.health.max}}" min="0">
+				&nbsp;&nbsp;
             </div>
         </div>
 
@@ -134,7 +136,7 @@
         {{/ifCond}}
 
         {{#ifCond actor.type '==' 'character'}}
-        <div class="box">
+        <div class="box" style="width: 139px; margin-left: 19px;">
             <div class="box-header">
                 <h4 class="tab-switch" data-tab="apparel">{{localize "FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH"}}</h4>
             </div>

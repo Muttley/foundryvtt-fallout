@@ -33,7 +33,7 @@
 				height: 100%;
 				margin: 0;
 			}
-		}		
+		}
 	}
 	.chaty{
 		cursor: pointer;
@@ -362,7 +362,7 @@
 	}
 
 	&.no-padding {
-		padding: 0 !important;		
+		padding: 0 !important;
 		.box-header {
 			margin: 0 0 0 0;
 		}
@@ -480,7 +480,7 @@
 .power-armor-status {
 	position: relative;
 	max-width: 136px;
-	height: 180px;
+	height: 160px;
 	.body-part {
 		padding: 5px;
 		text-align: center;
@@ -498,4 +498,11 @@
 			text-align: center;
 		}
 	}
+}
+
+.condition-meters {
+    display: grid;
+    grid-template-columns: 18px 2fr;
+    align-items: center;
+    column-gap: 8px;
 }
