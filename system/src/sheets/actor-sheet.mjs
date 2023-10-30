@@ -259,7 +259,8 @@ export class FalloutActorSheet extends ActorSheet {
 		// NPC and Creature Inventory = all physical items that are not weapons
 		if (this.actor.type === "npc" || this.actor.type === "creature") {
 			context.inventory = context.items.filter(i => {
-				return i.type !== "weapon" && i.system.weight !== null;
+				const hasWeight = !isNaN(parseInt(i.system.weight ?? null));
+				return i.type !== "weapon" && hasWeight;
 			});
 		}
 		if (this.actor.type === "character") {
