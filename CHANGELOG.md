@@ -1,3 +1,8 @@
+## v11.2.3
+
+### Bugfixes
+- [#17] Item preview/expansion on Actor sheets doesn't display anything
+
 ## v11.2.2
 
 ## Bugfixes
