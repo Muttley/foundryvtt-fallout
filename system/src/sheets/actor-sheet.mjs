@@ -688,7 +688,7 @@ export class FalloutActorSheet extends ActorSheet {
 		let item = this.actor.items.get(li.data("itemId"));
 		let moreInfo = "";
 
-		if (item.system.effect !== null) {
+		if (item.system.effect && item.system.effect !== "") {
 			moreInfo = await TextEditor.enrichHTML(item.system.effect, {
 				secrets: item.isOwner,
 				async: true,
