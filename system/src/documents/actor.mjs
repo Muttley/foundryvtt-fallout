@@ -398,25 +398,32 @@ export class FalloutActor extends Actor {
 
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
-		// TODO SET TOKENS
-		// Setup Tokens
-		// if (this.type === 'character' || this.type === 'robot') {
-		//   this.token.updateSource({ vision: true, actorLink: true, disposition: 1 })
-		// }
-
-		// if (this.type === 'creature') {
-		//   this.token.updateSource({ disposition: -1 })
-		// }
 
 		// Add Skills to Characters and Robots
 		if (this.type === "character" || this.type === "robot") {
-			const skillsCompendium = game.settings.get("fallout", "skillsCompendium");
-			let packSkills = await game.packs.get(skillsCompendium).getDocuments();
-			const items = this.items.map(i => i.toObject());
-			packSkills.forEach(s => {
-				items.push(s.toObject());
-			});
-			this.updateSource({ items });
+			// If the Actor data already contains skill items then this is an
+			// Actor being duplicated and we don't want to touch their
+			// items at all
+			//
+			const alreadyHasSkills = Array.isArray(data.items)
+				&& data.items.filter(i => i.type === "skill").length > 0;
+
+			if (!alreadyHasSkills) {
+				const skillsCompendium = game.settings.get(
+					"fallout", "skillsCompendium"
+				);
+
+				let packSkills =
+					await game.packs.get(skillsCompendium).getDocuments();
+
+				const items = this.items.map(i => i.toObject());
+
+				packSkills.forEach(s => {
+					items.push(s.toObject());
+				});
+
+				this.updateSource({ items });
+			}
 		}
 	}
 
