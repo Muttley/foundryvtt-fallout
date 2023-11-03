@@ -21,8 +21,8 @@ jobs:
       run: |
         TAG=${GITHUB_REF/refs\/tags\//}
         echo ::set-output name=TAG_NAME::$TAG
-        echo ::set-output name=ZIP_NAME::fallout-$TAG.zip
-        echo ::set-output name=RELEASE_DOWNLOAD_URL::https://github.com/${{github.repository}}/releases/download/$TAG/fallout-$TAG.zip
+        echo ::set-output name=ZIP_NAME::fallout.zip
+        echo ::set-output name=RELEASE_DOWNLOAD_URL::https://github.com/${{github.repository}}/releases/latest/download/fallout.zip
         echo ::set-output name=RELEASE_INSTALL_URL::https://github.com/${{github.repository}}/releases/download/$TAG/system.json
         JSON=$(cat ./system/system.json)
         echo ::set-output name=SYSTEM_JSON::${JSON//'%'/'%25'}

@@ -1,3 +1,8 @@
+## v11.2.4
+
+### Bugfixes
+- [#19] Actor skills being overwritten when the Actor is duplicated
+
 ## v11.2.3
 
 ### Bugfixes

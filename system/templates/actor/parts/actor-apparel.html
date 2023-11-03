@@ -42,13 +42,13 @@
                 </div>
                 <div class="text-center flex2">
                     {{#each item.system.resistance as |resValue res|}}
-                    <span><i class="{{damageFaIconClass res}}" title="{{res}}"></i>:{{resValue}}&nbsp;</span>
+                    <span><i class="{{damageFaIconClass res}}" title="{{res}}"></i>&nbsp;{{resValue}}&nbsp;&nbsp;</span>
                     {{/each}}
                 </div>
             </div>
             <div class=" item-controls">
                 <a class="item-control item-stash {{#unless item.system.stashed}}item-unstashed{{/unless}}" title='{{localize "FALLOUT.UI.stashed"}}'>
-                    <i class="fas fa-briefcase"></i>
+                    <i class="fas fa-briefcase"></i>&nbsp;
                 </a>
                 <a class="item-control item-toggle {{#unless item.system.equipped}}item-unequipped{{/unless}}" title='{{localize "FALLOUT.equipped"}}'>
                     <i class="fas fa-tshirt"></i>
