@@ -1,0 +1,334 @@
+ACTOR.TypeCharacter: Personagem
+ACTOR.TypeCreature: Criatura
+ACTOR.TypeNpc: NPC
+ACTOR.TypeRobot: Robô
+FALLOUT.AbilityAbbr.agi: agi
+FALLOUT.AbilityAbbr.cha: cha
+FALLOUT.AbilityAbbr.end: end
+FALLOUT.AbilityAbbr.int: int
+FALLOUT.AbilityAbbr.luc: luc
+FALLOUT.AbilityAbbr.per: per
+FALLOUT.AbilityAbbr.str: str
+FALLOUT.AbilityAgi: Agility
+FALLOUT.AbilityCha: Charisma
+FALLOUT.AbilityEnd: Endurance
+FALLOUT.AbilityInt: Intelligence
+FALLOUT.AbilityLuc: Luck
+FALLOUT.AbilityPer: Perception
+FALLOUT.AbilityStr: Strength
+FALLOUT.Add: Add
+FALLOUT.APPAREL.armor: Armadura
+FALLOUT.APPAREL.clothing: Roupa
+FALLOUT.APPAREL.headgear: Equip. Cabeça
+FALLOUT.APPAREL.outfit: Traje
+FALLOUT.APPAREL.plating: Plating
+FALLOUT.APPAREL.powerArmor: Power Armor
+FALLOUT.BEVERAGE: Bebida
+FALLOUT.BODYLOCATION.character.armL: Braço Esq.
+FALLOUT.BODYLOCATION.character.armR: Braço Dir.
+FALLOUT.BODYLOCATION.character.head: Cabeça
+FALLOUT.BODYLOCATION.character.legL: Perna Esq.
+FALLOUT.BODYLOCATION.character.legR: Perna Dir.
+FALLOUT.BODYLOCATION.character.torso: Torso
+FALLOUT.BODYLOCATION.labels.Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg): Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg)
+FALLOUT.BODYLOCATION.labels.Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg): Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg)
+FALLOUT.BODYLOCATION.labels.Cabeça | Óptica | Cabeça | Cabeça: Cabeça | Óptica | Cabeça | Cabeça
+FALLOUT.BODYLOCATION.labels.Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas: Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas
+FALLOUT.BODYLOCATION.labels.Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas: Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas
+FALLOUT.BODYLOCATION.labels.Torso | Corpo | Torso | Torso: Torso | Corpo | Torso | Torso
+FALLOUT.BODYLOCATION.robot.armL: Braço 1
+FALLOUT.BODYLOCATION.robot.armR: Braço 2
+FALLOUT.BODYLOCATION.robot.head: Óptica
+FALLOUT.BODYLOCATION.robot.legL: Braço 3
+FALLOUT.BODYLOCATION.robot.legR: Propulsor
+FALLOUT.BODYLOCATION.robot.torso: Corpo
+FALLOUT.BODYLOCATION_ABBR.character.armL: AL
+FALLOUT.BODYLOCATION_ABBR.character.armR: AR
+FALLOUT.BODYLOCATION_ABBR.character.head: H
+FALLOUT.BODYLOCATION_ABBR.character.legL: LL
+FALLOUT.BODYLOCATION_ABBR.character.legR: LR
+FALLOUT.BODYLOCATION_ABBR.character.torso: T
+FALLOUT.BODYLOCATION_ABBR.robot.armL: A1
+FALLOUT.BODYLOCATION_ABBR.robot.armR: A2
+FALLOUT.BODYLOCATION_ABBR.robot.head: O
+FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
+FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
+FALLOUT.BODYLOCATION_ABBR.robot.torso: MB
+FALLOUT.BodyTypes.BodyType: Body Type
+FALLOUT.BodyTypes.flyingInsect.armL: Asa Esq. (as leg)
+FALLOUT.BodyTypes.flyingInsect.armR: Asa Dir. (as leg)
+FALLOUT.BodyTypes.flyingInsect.head: Cabeça
+FALLOUT.BodyTypes.flyingInsect.label: Inseto Voador
+FALLOUT.BodyTypes.flyingInsect.legL: Pernas
+FALLOUT.BodyTypes.flyingInsect.legR: Pernas
+FALLOUT.BodyTypes.flyingInsect.torso: Torso
+FALLOUT.BodyTypes.humanoid.armL: Braço Esq.
+FALLOUT.BodyTypes.humanoid.armR: Braço Dir.
+FALLOUT.BodyTypes.humanoid.head: Cabeça
+FALLOUT.BodyTypes.humanoid.label: Humanóide
+FALLOUT.BodyTypes.humanoid.legL: Perna Esq.
+FALLOUT.BodyTypes.humanoid.legR: Perna Dir.
+FALLOUT.BodyTypes.humanoid.torso: Torso
+FALLOUT.BodyTypes.quadruped.armL: Perna Dianteira Esq.
+FALLOUT.BodyTypes.quadruped.armR: Perna Dianteira Dir.
+FALLOUT.BodyTypes.quadruped.head: Cabeça
+FALLOUT.BodyTypes.quadruped.label: Quadrúpede
+FALLOUT.BodyTypes.quadruped.legL: Perna Traseira Esq.
+FALLOUT.BodyTypes.quadruped.legR: Perna Traseira Dir.
+FALLOUT.BodyTypes.quadruped.torso: Torso
+FALLOUT.BodyTypes.robot.armL: Braço 1
+FALLOUT.BodyTypes.robot.armR: Braço 2
+FALLOUT.BodyTypes.robot.head: Óptica
+FALLOUT.BodyTypes.robot.label: Robô
+FALLOUT.BodyTypes.robot.legL: Braço 3
+FALLOUT.BodyTypes.robot.legR: Corpo
+FALLOUT.BodyTypes.robot.torso: Corpo
+FALLOUT.CHEM: Drogas
+FALLOUT.CREATURE.body: Corpo
+FALLOUT.CREATURE.guns: Armas
+FALLOUT.CREATURE.melee: Melee
+FALLOUT.CREATURE.mind: Mente
+FALLOUT.CREATURE.other: Outro
+FALLOUT.EffectCreate: Criar Efeito
+FALLOUT.EffectDelete: Apagar Efeito
+FALLOUT.EffectEdit: Editar Efeito
+FALLOUT.EffectToggle: Alternar Efeito
+FALLOUT.equipped: Equipado
+FALLOUT.FOOD: Comida
+FALLOUT.HEALTH.current: Vida Atual
+FALLOUT.HEALTH.health: Pontos de Vida
+FALLOUT.HEALTH.max: Vida máxima
+FALLOUT.LEVEL.CurrentXP: XP Atual
+FALLOUT.LEVEL.Level: Nível
+FALLOUT.LEVEL.NextXP: XP Prox. Nível
+FALLOUT.LEVEL.RewardXP: Recompensa XP
+FALLOUT.MODS.mods: Mods
+FALLOUT.OTHER: Outro
+FALLOUT.powered: Powered
+FALLOUT.RANGE.close: C
+FALLOUT.RANGE.extreme: E
+FALLOUT.RANGE.long: L
+FALLOUT.RANGE.medium: M
+FALLOUT.RESISTANCE.energy: Energia
+FALLOUT.RESISTANCE.physical: Físico
+FALLOUT.RESISTANCE.poison: Veneno
+FALLOUT.RESISTANCE.radiation: Radiação
+FALLOUT.SKILL.Athletics: Athletics
+FALLOUT.SKILL.Barter: Barter
+FALLOUT.SKILL.Big Guns: Big Guns
+FALLOUT.SKILL.Energy Weapons: Energy Weapons
+FALLOUT.SKILL.Explosives: Explosives
+FALLOUT.SKILL.Lockpick: Lockpick
+FALLOUT.SKILL.Medicine: Medicine
+FALLOUT.SKILL.Melee Weapons: Melee Weapons
+FALLOUT.SKILL.Pilot: Pilot
+FALLOUT.SKILL.Repair: Repair
+FALLOUT.SKILL.Science: Science
+FALLOUT.SKILL.Small Guns: Small Guns
+FALLOUT.SKILL.Sneak: Sneak
+FALLOUT.SKILL.Speech: Speech
+FALLOUT.SKILL.Survival: Survival
+FALLOUT.SKILL.Throwing: Throwing
+FALLOUT.SKILL.Unarmed: Unarmed
+FALLOUT.TEMPLATES.Abilities: Habilidades
+FALLOUT.TEMPLATES.Add_Perk: Add Perk
+FALLOUT.TEMPLATES.Addictive: Viciante
+FALLOUT.TEMPLATES.Alcoholic: Alcoólico
+FALLOUT.TEMPLATES.AMMO: AMMO
+FALLOUT.TEMPLATES.APPAREL: VESTUÁRIO
+FALLOUT.TEMPLATES.Apparel: Vestuário
+FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
+FALLOUT.TEMPLATES.Armor_Type: Tipo de Armadura
+FALLOUT.TEMPLATES.ATTACKS: ATAQUES
+FALLOUT.TEMPLATES.Attribute: Atributo
+FALLOUT.TEMPLATES.Attributes: Atributos
+FALLOUT.TEMPLATES.Compl: Compl.
+FALLOUT.TEMPLATES.Complications: Complicações
+FALLOUT.TEMPLATES.CONDITIONS: CONDIÇÕES
+FALLOUT.TEMPLATES.conditions.dehydrated: Desidratado
+FALLOUT.TEMPLATES.conditions.exhausted: Exausto
+FALLOUT.TEMPLATES.conditions.fatigue: fadiga
+FALLOUT.TEMPLATES.conditions.full: Cheio
+FALLOUT.TEMPLATES.conditions.hunger: fome
+FALLOUT.TEMPLATES.conditions.hungry: Faminto
+FALLOUT.TEMPLATES.conditions.hydrated: Hidratado
+FALLOUT.TEMPLATES.conditions.peckish: Com Fome
+FALLOUT.TEMPLATES.conditions.quenched: Satisfeito
+FALLOUT.TEMPLATES.conditions.rested: Descansado
+FALLOUT.TEMPLATES.conditions.sated: Saciado
+FALLOUT.TEMPLATES.conditions.sleep: sono
+FALLOUT.TEMPLATES.conditions.starving: Morrendo de Fome
+FALLOUT.TEMPLATES.conditions.thirst: sede
+FALLOUT.TEMPLATES.conditions.thirsty: Com Sede
+FALLOUT.TEMPLATES.conditions.tired: Cansado
+FALLOUT.TEMPLATES.conditions.weary: Fraco
+FALLOUT.TEMPLATES.Consumable_Type: Tipo de Consumível
+FALLOUT.TEMPLATES.Create_Ammo: Criar Munição
+FALLOUT.TEMPLATES.Create_Apparel_Mod: Criar Mod de Vestuário
+FALLOUT.TEMPLATES.Create_books_and_magz: Criar Livros/Revistas
+FALLOUT.TEMPLATES.Create_Consumable: Criar Consumível
+FALLOUT.TEMPLATES.Create_Miscellany: Criar Item Geral
+FALLOUT.TEMPLATES.Create_Robot_Module: Criar Mod Robótico
+FALLOUT.TEMPLATES.Create_Special_Ability: Criar Habilidade Especial
+FALLOUT.TEMPLATES.Create_Weapon: Criar Arma
+FALLOUT.TEMPLATES.Create_Weapon_Mod: Criar Mod de Arma
+FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
+FALLOUT.TEMPLATES.Creature_Skill: Skill da Criatura
+FALLOUT.TEMPLATES.current: atual
+FALLOUT.TEMPLATES.DAMAGE: DANO
+FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
+FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
+FALLOUT.TEMPLATES.Data: Data
+FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
+FALLOUT.TEMPLATES.DEFENSE: DEFESA
+FALLOUT.TEMPLATES.Delete: Delete
+FALLOUT.TEMPLATES.Delete_Item: Deletar Item
+FALLOUT.TEMPLATES.DERIVED: SOBRE VOCÊ
+FALLOUT.TEMPLATES.Description: Descrição
+FALLOUT.TEMPLATES.Duration: Duração
+FALLOUT.TEMPLATES.Edit_Item: Editar Item
+FALLOUT.TEMPLATES.Effect: Efeito
+FALLOUT.TEMPLATES.Effects: Efeitos
+FALLOUT.TEMPLATES.Encumbrance_Level: Nível de Peso
+FALLOUT.TEMPLATES.ENG: ENERGIA
+FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMAS FAVORITAS
+FALLOUT.TEMPLATES.FIRE_RATE: CADÊNCIA
+FALLOUT.TEMPLATES.Gear: ITENS
+FALLOUT.TEMPLATES.GENERAL: GENERAL
+FALLOUT.TEMPLATES.Healthy: Saudável
+FALLOUT.TEMPLATES.HitLocationLabel: Hit Location
+FALLOUT.TEMPLATES.HP_Healed: HP Restaurado
+FALLOUT.TEMPLATES.INITIATIVE: INICIATIVA
+FALLOUT.TEMPLATES.INJURIES: FERIDAS
+FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
+FALLOUT.TEMPLATES.Irradiated: Irradiado
+FALLOUT.TEMPLATES.Issue: Issue
+FALLOUT.TEMPLATES.lbs: lbs
+FALLOUT.TEMPLATES.Learned: Aprendido
+FALLOUT.TEMPLATES.Locations: Locais
+FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCAIS & FERIDAS
+FALLOUT.TEMPLATES.Luck: Luck
+FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX_PARTY_AP: AP MÁXIMO DA PARTY
+FALLOUT.TEMPLATES.MELEE_BONUS: Bônus Melee
+FALLOUT.TEMPLATES.MELEE_DAMAGE: DANO CORPO-A-CORPO
+FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
+FALLOUT.TEMPLATES.MODULES: MÓDULOS
+FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
+FALLOUT.TEMPLATES.OVERSEER_AP: AP DO OVERSEER
+FALLOUT.TEMPLATES.PARTY_AP: AP DA PARTY
+FALLOUT.TEMPLATES.PERK: PERK
+FALLOUT.TEMPLATES.PHYS: FÍSICO
+FALLOUT.TEMPLATES.Points: Points
+FALLOUT.TEMPLATES.POISON: VENENO
+FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: VIDA DA POWER ARMOR
+FALLOUT.TEMPLATES.Qualities: Qualidades
+FALLOUT.TEMPLATES.RAD: RADIAÇÃO
+FALLOUT.TEMPLATES.RADIATION: RADIAÇÃO
+FALLOUT.TEMPLATES.RANGE: Alcance
+FALLOUT.TEMPLATES.Rank: Rank
+FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [atual/máximo]
+FALLOUT.TEMPLATES.Re_roll: Re-role
+FALLOUT.TEMPLATES.Requirements: Requisitos
+FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: BÔNUS DE RESISTÊNCIA GERAL
+FALLOUT.TEMPLATES.RESISTANCES: RESISTÊNCIAS
+FALLOUT.TEMPLATES.Resistances: Resistências
+FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
+FALLOUT.TEMPLATES.SKILL: SKILL
+FALLOUT.TEMPLATES.Skill_Tag: Skill Tag
+FALLOUT.TEMPLATES.Skill_Value: Skill Value
+FALLOUT.TEMPLATES.SKILLS: SKILLS
+FALLOUT.TEMPLATES.Source: Fonte
+FALLOUT.TEMPLATES.Status: Status
+FALLOUT.TEMPLATES.Successes: Sucessos
+FALLOUT.TEMPLATES.Tag: Tag
+FALLOUT.TEMPLATES.Tear: Desgaste
+FALLOUT.TEMPLATES.TN: TN
+FALLOUT.TEMPLATES.Total: Total
+FALLOUT.TEMPLATES.Treated_injury_Right_Click: Ferida Tratada (Botão Dir.)
+FALLOUT.TEMPLATES.Use_Agility: Usar Agility
+FALLOUT.TEMPLATES.Use_Charisma: Usar Charisma
+FALLOUT.TEMPLATES.Use_Endurance: Usar Endurance
+FALLOUT.TEMPLATES.Use_Intelligence: Usar Intelligence
+FALLOUT.TEMPLATES.Use_Luck: Usar Luck
+FALLOUT.TEMPLATES.Use_Perception: Usar Perception
+FALLOUT.TEMPLATES.Use_Strength: Usar Strength
+FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALIDADES DA ARMA
+FALLOUT.TEMPLATES.Weapon_Type: Tipo da Arma
+FALLOUT.TEMPLATES.Weapons: Armas
+FALLOUT.UI.Add: Add
+FALLOUT.UI.APPAREL_MODS: Mods Vestuário
+FALLOUT.UI.BOOKS_AND_MAGZS: Livros e Revistas
+FALLOUT.UI.CAPS: Tampas
+FALLOUT.UI.CarryWeight: Carregar Peso
+FALLOUT.UI.CONSUMABLES: Consumíveis
+FALLOUT.UI.Cost: Custo
+FALLOUT.UI.Damage: Dano
+FALLOUT.UI.favorite: Favorito
+FALLOUT.UI.INVENTORY: Inventário
+FALLOUT.UI.MISCELLANY: Geral
+FALLOUT.UI.Name: Nome
+FALLOUT.UI.ORIGIN: ORIGEM
+FALLOUT.UI.OTHER: Outro
+FALLOUT.UI.Perks: Perks
+FALLOUT.UI.Quantity: Quantidade
+FALLOUT.UI.Rarity: Raridade
+FALLOUT.UI.ROBOT_MODULES: Módulos Robóticos
+FALLOUT.UI.SPECIAL_ABILITY: Habilidades Especiais
+FALLOUT.UI.stashed: Stashed
+FALLOUT.UI.Type: Tipo
+FALLOUT.UI.UNSORTED: Não Triado
+FALLOUT.UI.WEAPON_MODS: Mods de Arma
+FALLOUT.UI.Weight: Peso
+FALLOUT.WEAPONS.damageEffect.breaking: Breaking
+FALLOUT.WEAPONS.damageEffect.burst: Burst
+FALLOUT.WEAPONS.damageEffect.persistent: Persistent
+FALLOUT.WEAPONS.damageEffect.piercing: Piercing
+FALLOUT.WEAPONS.damageEffect.radioactive: Radioactive
+FALLOUT.WEAPONS.damageEffect.spread: Spread
+FALLOUT.WEAPONS.damageEffect.stun: Stun
+FALLOUT.WEAPONS.damageEffect.vicious: Vicious
+FALLOUT.WEAPONS.damageType.energy: Energia
+FALLOUT.WEAPONS.damageType.physical: Físico
+FALLOUT.WEAPONS.damageType.poison: Veneno
+FALLOUT.WEAPONS.damageType.radiation: Radiação
+FALLOUT.WEAPONS.weaponQuality.accurate: Accurate
+FALLOUT.WEAPONS.weaponQuality.blast: Blast
+FALLOUT.WEAPONS.weaponQuality.closeQuarters: Close Quarters
+FALLOUT.WEAPONS.weaponQuality.concealed: Concealed
+FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitating
+FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
+FALLOUT.WEAPONS.weaponQuality.inaccurate: Inaccurate
+FALLOUT.WEAPONS.weaponQuality.mine: Mine
+FALLOUT.WEAPONS.weaponQuality.nightVision: Night Vision
+FALLOUT.WEAPONS.weaponQuality.parry: Parry
+FALLOUT.WEAPONS.weaponQuality.recon: Recon
+FALLOUT.WEAPONS.weaponQuality.reliable: Reliable
+FALLOUT.WEAPONS.weaponQuality.suppressed: Suppressed
+FALLOUT.WEAPONS.weaponQuality.thrown: Thrown
+FALLOUT.WEAPONS.weaponQuality.twoHanded: Two-Handed
+FALLOUT.WEAPONS.weaponQuality.unreliable: Unreliable
+FALLOUT.WEAPONS.weaponType.bigGuns: Armas Grandes
+FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
+FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de Energia
+FALLOUT.WEAPONS.weaponType.explosives: Explosivos
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas Brancas
+FALLOUT.WEAPONS.weaponType.smallGuns: Armas
+FALLOUT.WEAPONS.weaponType.throwing: Arremesso
+FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
+ITEM.AmmoPerShot: Ammo Por Tiro
+ITEM.TypeAmmo: Ammo
+ITEM.TypeApparel: Vestuário
+ITEM.TypeApparel_mod: Mod de Vestuário
+ITEM.TypeBooks_and_magz: Livro/Revista
+ITEM.TypeConsumable: Consumível
+ITEM.TypeMiscellany: Miscelâneos
+ITEM.TypePerk: Perk
+ITEM.TypeRobot_armor: Armadura Robótica
+ITEM.TypeRobot_mod: Módulo Robótico
+ITEM.TypeSkill: Skill
+ITEM.TypeSpecial_ability: Habilidade Especial
+ITEM.TypeWeapon: Arma
+ITEM.TypeWeapon_mod: Mod de Arma
+

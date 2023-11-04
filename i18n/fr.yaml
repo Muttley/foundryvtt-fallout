@@ -1,0 +1,337 @@
+ACTOR.TypeCharacter: Personnage
+ACTOR.TypeCreature: Créature
+ACTOR.TypeNpc: PNJ
+ACTOR.TypeRobot: Robot
+FALLOUT.AbilityAbbr.agi: agi
+FALLOUT.AbilityAbbr.cha: cha
+FALLOUT.AbilityAbbr.end: end
+FALLOUT.AbilityAbbr.int: int
+FALLOUT.AbilityAbbr.luc: lcha
+FALLOUT.AbilityAbbr.per: per
+FALLOUT.AbilityAbbr.str: sfor
+FALLOUT.AbilityAgi: Agilité
+FALLOUT.AbilityCha: Charisme
+FALLOUT.AbilityEnd: Endurance
+FALLOUT.AbilityInt: Intelligence
+FALLOUT.AbilityLuc: Légendaire Chance
+FALLOUT.AbilityPer: Perception
+FALLOUT.AbilityStr: Super Force
+FALLOUT.Add: Ajouter
+FALLOUT.APPAREL.armor: Armure
+FALLOUT.APPAREL.clothing: Vêtement
+FALLOUT.APPAREL.headgear: Piece d'Armure
+FALLOUT.APPAREL.outfit: Tenue
+FALLOUT.APPAREL.plating: Couvre-Chef
+FALLOUT.APPAREL.powerArmor: Armure Assistée
+FALLOUT.BEVERAGE: Boissons
+FALLOUT.BODYLOCATION.character.armL: Bras Gauche
+FALLOUT.BODYLOCATION.character.armR: Bras Droit
+FALLOUT.BODYLOCATION.character.head: Tête
+FALLOUT.BODYLOCATION.character.legL: Jambe Gauche
+FALLOUT.BODYLOCATION.character.legR: Jambe Droite
+FALLOUT.BODYLOCATION.character.torso: Buste
+FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Tête | Optique
+FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Bras gauche | Bras 1 | Patte avant gauche | Aile gauche (comme une patte)
+FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Jambe gauche | Bras 3 | Patte arrière gauche | Jambes
+FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Bras droit | Bras 2 | Patte avant droite | Aile droite (comme une patte)
+FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Jambe droite | Propulseur | Patte arrière droite | Jambes
+FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torse | Corps
+FALLOUT.BODYLOCATION.robot.armL: Bras 1
+FALLOUT.BODYLOCATION.robot.armR: Bras 2
+FALLOUT.BODYLOCATION.robot.head: Optique
+FALLOUT.BODYLOCATION.robot.legL: Bras 3
+FALLOUT.BODYLOCATION.robot.legR: Propulseur
+FALLOUT.BODYLOCATION.robot.torso: Corps
+FALLOUT.BODYLOCATION_ABBR.character.armL: BG
+FALLOUT.BODYLOCATION_ABBR.character.armR: BD
+FALLOUT.BODYLOCATION_ABBR.character.head: T
+FALLOUT.BODYLOCATION_ABBR.character.legL: JG
+FALLOUT.BODYLOCATION_ABBR.character.legR: JD
+FALLOUT.BODYLOCATION_ABBR.character.torso: B
+FALLOUT.BODYLOCATION_ABBR.robot.armL: B1
+FALLOUT.BODYLOCATION_ABBR.robot.armR: B2
+FALLOUT.BODYLOCATION_ABBR.robot.head: O
+FALLOUT.BODYLOCATION_ABBR.robot.legL: B3
+FALLOUT.BODYLOCATION_ABBR.robot.legR: PR
+FALLOUT.BODYLOCATION_ABBR.robot.torso: C
+FALLOUT.BodyTypes.BodyType: Type De Corps
+FALLOUT.BodyTypes.flyingInsect.armL: Aile Gauche (comme une patte)
+FALLOUT.BodyTypes.flyingInsect.armR: Aile Droite (comme une patte)
+FALLOUT.BodyTypes.flyingInsect.head: Tête
+FALLOUT.BodyTypes.flyingInsect.label: Insecte Volant
+FALLOUT.BodyTypes.flyingInsect.legL: Pattes
+FALLOUT.BodyTypes.flyingInsect.legR: Pattes
+FALLOUT.BodyTypes.flyingInsect.torso: Torse
+FALLOUT.BodyTypes.humanoid.armL: Bras Gauche
+FALLOUT.BodyTypes.humanoid.armR: Bras Droit
+FALLOUT.BodyTypes.humanoid.head: Tête
+FALLOUT.BodyTypes.humanoid.label: Humanoïde
+FALLOUT.BodyTypes.humanoid.legL: Jambe Gauche
+FALLOUT.BodyTypes.humanoid.legR: Jambe Droite
+FALLOUT.BodyTypes.humanoid.torso: Torse
+FALLOUT.BodyTypes.quadruped.armL: Patte Avant Gauche
+FALLOUT.BodyTypes.quadruped.armR: Patte Avant Droite
+FALLOUT.BodyTypes.quadruped.head: Tête
+FALLOUT.BodyTypes.quadruped.label: Quadrupède
+FALLOUT.BodyTypes.quadruped.legL: Patte Arrière Gauche
+FALLOUT.BodyTypes.quadruped.legR: Patte Arrière Droite
+FALLOUT.BodyTypes.quadruped.torso: Torse
+FALLOUT.BodyTypes.robot.armL: Bras 1
+FALLOUT.BodyTypes.robot.armR: Bras 2
+FALLOUT.BodyTypes.robot.head: Optique
+FALLOUT.BodyTypes.robot.label: Robot
+FALLOUT.BodyTypes.robot.legL: Bras 3
+FALLOUT.BodyTypes.robot.legR: Corps
+FALLOUT.BodyTypes.robot.torso: Corps
+FALLOUT.CHEM: Drogues
+FALLOUT.CREATURE.body: Corps
+FALLOUT.CREATURE.guns: Distance
+FALLOUT.CREATURE.melee: Corps-à-Corps
+FALLOUT.CREATURE.mind: Esprit
+FALLOUT.CREATURE.other: Autres
+FALLOUT.EffectCreate: Créer Effet
+FALLOUT.EffectDelete: Effacer Effet
+FALLOUT.EffectEdit: Editer Effet
+FALLOUT.EffectToggle: Toggle Effect
+FALLOUT.equipped: Equipé
+FALLOUT.FOOD: Nourriture
+FALLOUT.HEALTH.current: PV Actuels
+FALLOUT.HEALTH.health: Points de vie
+FALLOUT.HEALTH.max: PV Max
+FALLOUT.LEVEL.CurrentXP: PE Actuels
+FALLOUT.LEVEL.Level: Niveau
+FALLOUT.LEVEL.NextXP: PE Prochain niveau
+FALLOUT.LEVEL.RewardXP: PE Gagnés
+FALLOUT.MODS.mods: Mods
+FALLOUT.OTHER: Autres
+FALLOUT.powered: Alimenté
+FALLOUT.RANGE.close: C
+FALLOUT.RANGE.extreme: E
+FALLOUT.RANGE.long: L
+FALLOUT.RANGE.medium: M
+FALLOUT.RESISTANCE.energy: Energie
+FALLOUT.RESISTANCE.physical: Balistique
+FALLOUT.RESISTANCE.poison: Poison
+FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.SKILL.Athletics: Athlétisme
+FALLOUT.SKILL.Barter: Troc
+FALLOUT.SKILL.Big Guns: Armes lourdes
+FALLOUT.SKILL.Energy Weapons: Armes à énergie
+FALLOUT.SKILL.Explosives: Explosifs
+FALLOUT.SKILL.Lockpick: Crochetage
+FALLOUT.SKILL.Medicine: Médecine
+FALLOUT.SKILL.Melee Weapons: Armes de CAC
+FALLOUT.SKILL.Pilot: Pilotage
+FALLOUT.SKILL.Repair: Réparation
+FALLOUT.SKILL.Science: Sciences
+FALLOUT.SKILL.Small Guns: Armes légères
+FALLOUT.SKILL.Sneak: Discrétion
+FALLOUT.SKILL.Speech: Discours
+FALLOUT.SKILL.Survival: Survie
+FALLOUT.SKILL.Throwing: Projectiles
+FALLOUT.SKILL.Unarmed: Mains nues
+FALLOUT.TEMPLATES.Abilities: Capacités
+FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
+FALLOUT.TEMPLATES.Addictive: Addictive
+FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
+FALLOUT.TEMPLATES.AMMO: MUN
+FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
+FALLOUT.TEMPLATES.Apparel: Habillement
+FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
+FALLOUT.TEMPLATES.Armor_Type: Type d'Armure
+FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
+FALLOUT.TEMPLATES.Attribute: Attribut
+FALLOUT.TEMPLATES.Attributes: Attributs
+FALLOUT.TEMPLATES.Compl: Compl.
+FALLOUT.TEMPLATES.Complications: Complications
+FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
+FALLOUT.TEMPLATES.conditions.dehydrated: Déshydraté
+FALLOUT.TEMPLATES.conditions.exhausted: Epuisé
+FALLOUT.TEMPLATES.conditions.fatigue: fatigue
+FALLOUT.TEMPLATES.conditions.full: Repu
+FALLOUT.TEMPLATES.conditions.hunger: faim
+FALLOUT.TEMPLATES.conditions.hungry: Faim
+FALLOUT.TEMPLATES.conditions.hydrated: Hydraté
+FALLOUT.TEMPLATES.conditions.peckish: Petit creux
+FALLOUT.TEMPLATES.conditions.quenched: Désaltéré
+FALLOUT.TEMPLATES.conditions.rested: Reposé
+FALLOUT.TEMPLATES.conditions.sated: Rassasié
+FALLOUT.TEMPLATES.conditions.sleep: sommeil
+FALLOUT.TEMPLATES.conditions.starving: Affamé
+FALLOUT.TEMPLATES.conditions.thirst: soif
+FALLOUT.TEMPLATES.conditions.thirsty: Soif
+FALLOUT.TEMPLATES.conditions.tired: Fatigué
+FALLOUT.TEMPLATES.conditions.weary: Ereinté
+FALLOUT.TEMPLATES.Consumable_Type: Type Consommable
+FALLOUT.TEMPLATES.Create_Ammo: Créer Mun
+FALLOUT.TEMPLATES.Create_Apparel_Mod: Créer Mod Habillement
+FALLOUT.TEMPLATES.Create_books_and_magz: Créer livres et magazines
+FALLOUT.TEMPLATES.Create_Consumable: Créer Consommable
+FALLOUT.TEMPLATES.Create_Miscellany: Créer Bric-A-Brac
+FALLOUT.TEMPLATES.Create_Robot_Module: Créer Robot Module
+FALLOUT.TEMPLATES.Create_Special_Ability: Créer capacité Spéciale
+FALLOUT.TEMPLATES.Create_Weapon: Créer Arme
+FALLOUT.TEMPLATES.Create_Weapon_Mod: Créer Mod Arme
+FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
+FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
+FALLOUT.TEMPLATES.current: Actuel
+FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
+FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
+FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
+FALLOUT.TEMPLATES.Data: Donnée
+FALLOUT.TEMPLATES.Default_Attribute: Attribut par défaut
+FALLOUT.TEMPLATES.DEFENSE: DEFENSE
+FALLOUT.TEMPLATES.Delete: Effacer
+FALLOUT.TEMPLATES.Delete_Item: Effacer Objet
+FALLOUT.TEMPLATES.DERIVED: DERIVÉE
+FALLOUT.TEMPLATES.Description: Description
+FALLOUT.TEMPLATES.Duration: Durée
+FALLOUT.TEMPLATES.Edit_Item: Editer Objet
+FALLOUT.TEMPLATES.Effect: Effet
+FALLOUT.TEMPLATES.Effects: Effets
+FALLOUT.TEMPLATES.Encumbrance_Level: Niveau d'Encombrement
+FALLOUT.TEMPLATES.ENG: ENG
+FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMES FAVORITES
+FALLOUT.TEMPLATES.FIRE_RATE: Cadence de Tir
+FALLOUT.TEMPLATES.Gear: Équipement
+FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
+FALLOUT.TEMPLATES.Healthy: Bonne Santé
+FALLOUT.TEMPLATES.HitLocationLabel: Localisation du coup
+FALLOUT.TEMPLATES.HP_Healed: PV guéris
+FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
+FALLOUT.TEMPLATES.INJURIES: BLESSURES
+FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
+FALLOUT.TEMPLATES.Irradiated: Irradié
+FALLOUT.TEMPLATES.Issue: Numéro
+FALLOUT.TEMPLATES.lbs: kgs
+FALLOUT.TEMPLATES.Learned: Appris(e)
+FALLOUT.TEMPLATES.Locations: Localisations
+FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
+FALLOUT.TEMPLATES.Luck: LChance
+FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
+FALLOUT.TEMPLATES.MELEE_BONUS: BONUS CAC
+FALLOUT.TEMPLATES.MELEE_DAMAGE: DÉGÂT CAC
+FALLOUT.TEMPLATES.Mod_Type: Type de Mod
+FALLOUT.TEMPLATES.MODULES: MODULES
+FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
+FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
+FALLOUT.TEMPLATES.PARTY_AP: RÉSERVE GROUPE PA
+FALLOUT.TEMPLATES.PERK: APTITUDE
+FALLOUT.TEMPLATES.PHYS: BAL
+FALLOUT.TEMPLATES.Points: Points
+FALLOUT.TEMPLATES.POISON: POISON
+FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
+FALLOUT.TEMPLATES.Qualities: Qualités
+FALLOUT.TEMPLATES.RAD: RAD
+FALLOUT.TEMPLATES.RADIATION: RADIATION
+FALLOUT.TEMPLATES.RANGE: Portée
+FALLOUT.TEMPLATES.Rank: Rang
+FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
+FALLOUT.TEMPLATES.Re_roll: Relancer
+FALLOUT.TEMPLATES.Requirements: Prérequis
+FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RÉSISTANCE BONUS GÉNÉRAL
+FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
+FALLOUT.TEMPLATES.Resistances: Resistances
+FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
+FALLOUT.TEMPLATES.SKILL: COMPETENCE
+FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
+FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
+FALLOUT.TEMPLATES.SKILLS: COMPETENCES
+FALLOUT.TEMPLATES.Source: Source
+FALLOUT.TEMPLATES.Status: Status
+FALLOUT.TEMPLATES.Successes: Succès
+FALLOUT.TEMPLATES.Tag: Atout
+FALLOUT.TEMPLATES.Tear: Usure
+FALLOUT.TEMPLATES.TN: SR
+FALLOUT.TEMPLATES.Total: Total
+FALLOUT.TEMPLATES.Treated_injury_Right_Click: Traiter une blessure (Clic droit)
+FALLOUT.TEMPLATES.Use_Agility: Utiliser Agilité
+FALLOUT.TEMPLATES.Use_Charisma: Utiliser Charisme
+FALLOUT.TEMPLATES.Use_Endurance: Utiliser Endurance
+FALLOUT.TEMPLATES.Use_Intelligence: Utiliser Intelligence
+FALLOUT.TEMPLATES.Use_Luck: Utiliser Chance
+FALLOUT.TEMPLATES.Use_Perception: Utiliser Perception
+FALLOUT.TEMPLATES.Use_Strength: Utiliser Force
+FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
+FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
+FALLOUT.TEMPLATES.Weapons: Armes
+FALLOUT.UI.Add: Ajouter
+FALLOUT.UI.APPAREL_MODS: Mods Habillement
+FALLOUT.UI.BOOKS_AND_MAGZS: Livres et Magazines
+FALLOUT.UI.CAPS: Capsules
+FALLOUT.UI.CarryWeight: Charge maximale
+FALLOUT.UI.CONSUMABLES: Consommables
+FALLOUT.UI.Cost: Coût
+FALLOUT.UI.Damage: Dégâts
+FALLOUT.UI.DISEASES: Maladies
+FALLOUT.UI.favorite: Favori
+FALLOUT.UI.INVENTORY: Inventaire
+FALLOUT.UI.MISCELLANY: Bric-A-Brac
+FALLOUT.UI.Name: Nom
+FALLOUT.UI.ORIGIN: ORIGINE
+FALLOUT.UI.OTHER: Autre
+FALLOUT.UI.Perks: Aptitudes
+FALLOUT.UI.Qty: Qttés
+FALLOUT.UI.Quantity: Quantité
+FALLOUT.UI.Rarity: Rareté
+FALLOUT.UI.ROBOT_MODULES: Robot Modules
+FALLOUT.UI.SPECIAL_ABILITY: Capacités spéciales
+FALLOUT.UI.stashed: Caché
+FALLOUT.UI.Type: Type
+FALLOUT.UI.UNSORTED: Non trié
+FALLOUT.UI.WEAPON_MODS: Mods Armes
+FALLOUT.UI.Weight: Poids
+FALLOUT.WEAPONS.damageEffect.breaking: Destructeur
+FALLOUT.WEAPONS.damageEffect.burst: Rafale
+FALLOUT.WEAPONS.damageEffect.persistent: Persistant
+FALLOUT.WEAPONS.damageEffect.piercing: Perforant
+FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
+FALLOUT.WEAPONS.damageEffect.spread: Zone
+FALLOUT.WEAPONS.damageEffect.stun: Étourdissant
+FALLOUT.WEAPONS.damageEffect.vicious: Brutal
+FALLOUT.WEAPONS.damageType.energy: énergétiques
+FALLOUT.WEAPONS.damageType.physical: balistiques
+FALLOUT.WEAPONS.damageType.poison: Poison
+FALLOUT.WEAPONS.damageType.radiation: Radiation
+FALLOUT.WEAPONS.weaponQuality.accurate: Précis
+FALLOUT.WEAPONS.weaponQuality.blast: Zone d'impact
+FALLOUT.WEAPONS.weaponQuality.closeQuarters: Combat rapproché
+FALLOUT.WEAPONS.weaponQuality.concealed: Dissimulé
+FALLOUT.WEAPONS.weaponQuality.debilitating: Invalidant
+FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
+FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprécis
+FALLOUT.WEAPONS.weaponQuality.mine: Mine
+FALLOUT.WEAPONS.weaponQuality.nightVision: Vision nocturne
+FALLOUT.WEAPONS.weaponQuality.parry: Parade
+FALLOUT.WEAPONS.weaponQuality.recon: Reco
+FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
+FALLOUT.WEAPONS.weaponQuality.suppressed: Silencieux
+FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
+FALLOUT.WEAPONS.weaponQuality.twoHanded: Deux mains
+FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
+FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
+FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
+FALLOUT.WEAPONS.weaponType.energyWeapons: Armes à énergie
+FALLOUT.WEAPONS.weaponType.explosives: Explosifs
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Armes de CAC
+FALLOUT.WEAPONS.weaponType.smallGuns: Armes légères
+FALLOUT.WEAPONS.weaponType.throwing: Projectiles
+FALLOUT.WEAPONS.weaponType.unarmed: Mains nues
+ITEM.AmmoPerShot: Mun Par Tir
+ITEM.TypeAmmo: Mun
+ITEM.TypeApparel: Habillement
+ITEM.TypeApparel_mod: Mod Habillement
+ITEM.TypeBooks_and_magz: Livre/Magazine
+ITEM.TypeConsumable: Consommable
+ITEM.TypeDisease: Maladie
+ITEM.TypeMiscellany: Bric-A-Brac
+ITEM.TypePerk: Aptitude
+ITEM.TypeRobot_armor: Armure de robot
+ITEM.TypeRobot_mod: Robot Module
+ITEM.TypeSkill: Compétence
+ITEM.TypeSpecial_ability: Capacités spéciales
+ITEM.TypeWeapon: Arme
+ITEM.TypeWeapon_mod: Mod Arme
+
