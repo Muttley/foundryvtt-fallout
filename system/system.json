@@ -83,7 +83,7 @@
 		{
 			"lang": "pt-BR",
 			"name": "Português (Brasil)",
-			"path": "i18n/pt-BR.json",
+			"path": "i18n/pt_BR.json",
 			"flags": {}
 		}
 	],
