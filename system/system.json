@@ -57,33 +57,33 @@
 	],
 	"languages": [
 		{
+			"lang": "de",
+			"name": "Deutsch",
+			"path": "i18n/de.json",
+			"flags": {}
+		},
+		{
 			"lang": "en",
 			"name": "English",
-			"path": "lang/en.json",
+			"path": "i18n/en.json",
 			"flags": {}
 		},
 		{
 			"lang": "fr",
 			"name": "Français",
-			"path": "lang/fr.json",
-			"flags": {}
-		},
-		{
-			"lang": "pt-BR",
-			"name": "Português (Brasil)",
-			"path": "lang/pt-br.json",
+			"path": "i18n/fr.json",
 			"flags": {}
 		},
 		{
 			"lang": "pl",
 			"name": "Polski",
-			"path": "lang/pl.json",
+			"path": "i18n/pl.json",
 			"flags": {}
 		},
 		{
-			"lang": "de",
-			"name": "Deutsch",
-			"path": "lang/de.json",
+			"lang": "pt-BR",
+			"name": "Português (Brasil)",
+			"path": "i18n/pt-BR.json",
 			"flags": {}
 		}
 	],
