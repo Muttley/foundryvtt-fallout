@@ -1,8 +1,4 @@
 
-ACTOR.TypeCharacter: Personagem
-ACTOR.TypeCreature: Criatura
-ACTOR.TypeNpc: NPC
-ACTOR.TypeRobot: Robô
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: end
@@ -43,12 +39,12 @@ FALLOUT.BODYLOCATION.character.head: Cabeça
 FALLOUT.BODYLOCATION.character.legL: Perna Esq.
 FALLOUT.BODYLOCATION.character.legR: Perna Dir.
 FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Cabeça | Óptica | Cabeça | Cabeça
-FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg)
-FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas
-FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg)
-FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas
-FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torso | Corpo | Torso | Torso
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Cabeça | Óptica | Cabeça | Cabeça
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg)
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg)
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Corpo | Torso | Torso
 FALLOUT.BODYLOCATION.robot.armL: Braço 1
 FALLOUT.BODYLOCATION.robot.armR: Braço 2
 FALLOUT.BODYLOCATION.robot.head: Óptica
@@ -319,16 +315,20 @@ FALLOUT.WEAPONS.weaponType.smallGuns: Armas
 FALLOUT.WEAPONS.weaponType.throwing: Arremesso
 FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
 ITEM.AmmoPerShot: Ammo Por Tiro
-ITEM.TypeAmmo: Ammo
-ITEM.TypeApparel_mod: Mod de Vestuário
-ITEM.TypeApparel: Vestuário
-ITEM.TypeBooks_and_magz: Livro/Revista
-ITEM.TypeConsumable: Consumível
-ITEM.TypeMiscellany: Miscelâneos
-ITEM.TypePerk: Perk
-ITEM.TypeRobot_armor: Armadura Robótica
-ITEM.TypeRobot_mod: Módulo Robótico
-ITEM.TypeSkill: Skill
-ITEM.TypeSpecial_ability: Habilidade Especial
-ITEM.TypeWeapon_mod: Mod de Arma
-ITEM.TypeWeapon: Arma
+TYPES.Actor.character: Personagem
+TYPES.Actor.creature: Criatura
+TYPES.Actor.npc: NPC
+TYPES.Actor.robot: Robô
+TYPES.Item.ammo: Ammo
+TYPES.Item.apparenl_mod: Mod de Vestuário
+TYPES.Item.apparenl: Vestuário
+TYPES.Item.books_and_magz: Livro/Revista
+TYPES.Item.consumable: Consumível
+TYPES.Item.miscellany: Miscelâneos
+TYPES.Item.perk: Perk
+TYPES.Item.robot_armor: Armadura Robótica
+TYPES.Item.robot_mod: Módulo Robótico
+TYPES.Item.skill: Skill
+TYPES.Item.special_ability: Habilidade Especial
+TYPES.Item.weapon_mod: Mod de Arma
+TYPES.Item.weapon: Arma

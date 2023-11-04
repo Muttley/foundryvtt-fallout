@@ -1,7 +1,4 @@
-ACTOR.TypeCharacter: Postać
-ACTOR.TypeCreature: Stworzenie
-ACTOR.TypeNpc: BN
-ACTOR.TypeRobot: Robot
+
 FALLOUT.AbilityAbbr.agi: ZW
 FALLOUT.AbilityAbbr.cha: CHA
 FALLOUT.AbilityAbbr.end: WT
@@ -24,24 +21,6 @@ FALLOUT.APPAREL.outfit: Strój
 FALLOUT.APPAREL.plating: Poszycie
 FALLOUT.APPAREL.powerArmor: Pancerz wspomagany
 FALLOUT.BEVERAGE: Beverage
-FALLOUT.BODYLOCATION.character.armL: Lewa Ręka
-FALLOUT.BODYLOCATION.character.armR: Prawa Ręka
-FALLOUT.BODYLOCATION.character.head: Głowa
-FALLOUT.BODYLOCATION.character.legL: Lewa Noga
-FALLOUT.BODYLOCATION.character.legR: Prawa Noga
-FALLOUT.BODYLOCATION.character.torso: Tłów
-FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Głowa | Sensory | Głowa | Głowa
-FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Lewa Ręka| Ramie 1 | Lewa Przednia Noga| Lewe skrzydło
-FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Lewa Noga | Silnik | Lewa Tylnia Noga| Odnóża
-FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Prawa Ręka| Ramie 2 | Prawa Przednia Noga| Prawe skrzydło
-FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Prawa Noga | Silnik | Prawa Tylnia Noga| Odnóża
-FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Tłów | Korpus | Korpus | Korpus
-FALLOUT.BODYLOCATION.robot.armL: Ramie 1
-FALLOUT.BODYLOCATION.robot.armR: Ramie 2
-FALLOUT.BODYLOCATION.robot.head: Sensory
-FALLOUT.BODYLOCATION.robot.legL: Ramie 3
-FALLOUT.BODYLOCATION.robot.legR: Silnik
-FALLOUT.BODYLOCATION.robot.torso: Korpus
 FALLOUT.BODYLOCATION_ABBR.character.armL: LR
 FALLOUT.BODYLOCATION_ABBR.character.armR: PR
 FALLOUT.BODYLOCATION_ABBR.character.head: G
@@ -54,6 +33,24 @@ FALLOUT.BODYLOCATION_ABBR.robot.head: S
 FALLOUT.BODYLOCATION_ABBR.robot.legL: R3
 FALLOUT.BODYLOCATION_ABBR.robot.legR: Si
 FALLOUT.BODYLOCATION_ABBR.robot.torso: K
+FALLOUT.BODYLOCATION.character.armL: Lewa Ręka
+FALLOUT.BODYLOCATION.character.armR: Prawa Ręka
+FALLOUT.BODYLOCATION.character.head: Głowa
+FALLOUT.BODYLOCATION.character.legL: Lewa Noga
+FALLOUT.BODYLOCATION.character.legR: Prawa Noga
+FALLOUT.BODYLOCATION.character.torso: Tłów
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Głowa | Sensory | Głowa | Głowa
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Lewa Ręka| Ramie 1 | Lewa Przednia Noga| Lewe skrzydło
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Lewa Noga | Silnik | Lewa Tylnia Noga| Odnóża
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Prawa Ręka| Ramie 2 | Prawa Przednia Noga| Prawe skrzydło
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Prawa Noga | Silnik | Prawa Tylnia Noga| Odnóża
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Tłów | Korpus | Korpus | Korpus
+FALLOUT.BODYLOCATION.robot.armL: Ramie 1
+FALLOUT.BODYLOCATION.robot.armR: Ramie 2
+FALLOUT.BODYLOCATION.robot.head: Sensory
+FALLOUT.BODYLOCATION.robot.legL: Ramie 3
+FALLOUT.BODYLOCATION.robot.legR: Silnik
+FALLOUT.BODYLOCATION.robot.torso: Korpus
 FALLOUT.BodyTypes.BodyType: Typ ciała
 FALLOUT.BodyTypes.flyingInsect.armL: Lewe skrzydło (jak odnóża)
 FALLOUT.BodyTypes.flyingInsect.armR: Prawe skrzydło (jak odnóża)
@@ -135,9 +132,9 @@ FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
 FALLOUT.TEMPLATES.Addictive: Uzależniające
 FALLOUT.TEMPLATES.Alcoholic: Alkocholowe
 FALLOUT.TEMPLATES.AMMO: Amunicja
-FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
-FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
+FALLOUT.TEMPLATES.Apparel: Odzież
+FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
 FALLOUT.TEMPLATES.Armor_Type: Typ pancerza
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
@@ -170,19 +167,19 @@ FALLOUT.TEMPLATES.Create_Consumable: Stwórz Zużywalne
 FALLOUT.TEMPLATES.Create_Miscellany: Stwórz Różności
 FALLOUT.TEMPLATES.Create_Robot_Module: Stwórz Modyfikcaje Robota
 FALLOUT.TEMPLATES.Create_Special_Ability: Stwórz Zdolność Specjalną
-FALLOUT.TEMPLATES.Create_Weapon: Stwórz Broń
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Stwórz Modyfikacje Broni
+FALLOUT.TEMPLATES.Create_Weapon: Stwórz Broń
 FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętoności Stworza
 FALLOUT.TEMPLATES.current: Obecny
-FALLOUT.TEMPLATES.DAMAGE: Obrażenia
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
+FALLOUT.TEMPLATES.DAMAGE: Obrażenia
 FALLOUT.TEMPLATES.Data: Data
 FALLOUT.TEMPLATES.Default_Attribute: Dobyślne Cechy
 FALLOUT.TEMPLATES.DEFENSE: Obrona
-FALLOUT.TEMPLATES.Delete: Usuń
 FALLOUT.TEMPLATES.Delete_Item: Usuń Przedmiot
+FALLOUT.TEMPLATES.Delete: Usuń
 FALLOUT.TEMPLATES.DERIVED: Pochone
 FALLOUT.TEMPLATES.Description: Opis
 FALLOUT.TEMPLATES.Duration: Czas Trwania
@@ -205,12 +202,12 @@ FALLOUT.TEMPLATES.Irradiated: Napromieniowany
 FALLOUT.TEMPLATES.Issue: Problem
 FALLOUT.TEMPLATES.lbs: lbs
 FALLOUT.TEMPLATES.Learned: Neuczony
-FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
+FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.Luck: Szczęście
-FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX_PARTY_AP: Maksymalne Punkty Ackcji Drużyny
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX: MAX
 FALLOUT.TEMPLATES.MELEE_BONUS: BONUS OBRAŻEŃ WRĘCZ
 FALLOUT.TEMPLATES.MELEE_DAMAGE: OBRAŻENIA WRĘCZ
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
@@ -232,12 +229,12 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Rangi [obecne/maksymalne]
 FALLOUT.TEMPLATES.Re_roll: Przerzut
 FALLOUT.TEMPLATES.Requirements: Wymagania
 FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: Ogólny bonus odporności
-FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Resistances: Odporności
+FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Roll_Formula: Formuła Rzutu
-FALLOUT.TEMPLATES.SKILL: Umiejętność
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
+FALLOUT.TEMPLATES.SKILL: Umiejętność
 FALLOUT.TEMPLATES.SKILLS: Umiejętności
 FALLOUT.TEMPLATES.Source: "Źródło   "
 FALLOUT.TEMPLATES.Status: Status
@@ -320,18 +317,21 @@ FALLOUT.WEAPONS.weaponType.smallGuns: Broń palna
 FALLOUT.WEAPONS.weaponType.throwing: Rzucana
 FALLOUT.WEAPONS.weaponType.unarmed: Bez Broni
 ITEM.AmmoPerShot: Amunicja na strzał
-ITEM.TypeAmmo: Amunicja
-ITEM.TypeApparel: Odzież
-ITEM.TypeApparel_mod: Modyfikacje Odzież
-ITEM.TypeBooks_and_magz: Książki/magazyny
-ITEM.TypeConsumable: Zużywalne
-ITEM.TypeDisease: Choroby
-ITEM.TypeMiscellany: Różności
-ITEM.TypePerk: Profit
-ITEM.TypeRobot_armor: Pancerz Robota
-ITEM.TypeRobot_mod: Modyfikacje Robota
-ITEM.TypeSkill: Umiejętność
-ITEM.TypeSpecial_ability: Zdolności Specjalne
-ITEM.TypeWeapon: Broń
-ITEM.TypeWeapon_mod: Modyfikacje Broni
-
+TYPES.Actor.character: Postać
+TYPES.Actor.creature: Stworzenie
+TYPES.Actor.npc: BN
+TYPES.Actor.robot: Robot
+TYPES.Item.ammo: Amunicja
+TYPES.Item.apparenl_mod: Modyfikacje Odzież
+TYPES.Item.apparenl: Odzież
+TYPES.Item.books_and_magz: Książki/magazyny
+TYPES.Item.consumable: Zużywalne
+TYPES.Item.disease: Choroby
+TYPES.Item.miscellany: Różności
+TYPES.Item.perk: Profit
+TYPES.Item.robot_armor: Pancerz Robota
+TYPES.Item.robot_mod: Modyfikacje Robota
+TYPES.Item.skill: Umiejętność
+TYPES.Item.special_ability: Zdolności Specjalne
+TYPES.Item.weapon_mod: Modyfikacje Broni
+TYPES.Item.weapon: Broń

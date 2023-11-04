@@ -1,8 +1,4 @@
 
-ACTOR.TypeCharacter: Charakter
-ACTOR.TypeCreature: Kreatur
-ACTOR.TypeNpc: NSC
-ACTOR.TypeRobot: Roboter
 FALLOUT.AbilityAbbr.agi: bew
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: aus
@@ -43,12 +39,12 @@ FALLOUT.BODYLOCATION.character.head: Kopf
 FALLOUT.BODYLOCATION.character.legL: Linkes Bein
 FALLOUT.BODYLOCATION.character.legR: Rechtes Bein
 FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Kopf | Optik | Kopf | Kopf
-FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein)
-FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Linkes Bein | Arm 3 | Linkes Hinterbein | Beine
-FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (aks Bein)
-FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Rechtes Bein | Thruster | Rechtes Hinterbein | Beine
-FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torso | Main Body | Torso | Torso
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Kopf | Optik | Kopf | Kopf
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein)
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Linkes Bein | Arm 3 | Linkes Hinterbein | Beine
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (aks Bein)
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Rechtes Bein | Thruster | Rechtes Hinterbein | Beine
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso_MainBody_Torso_Torso
 FALLOUT.BODYLOCATION.robot.armL: Arm 1
 FALLOUT.BODYLOCATION.robot.armR: Arm 2
 FALLOUT.BODYLOCATION.robot.head: Optik
@@ -276,16 +272,20 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Nahkampfwaffen
 FALLOUT.WEAPONS.weaponType.smallGuns: Kleine Waffen
 FALLOUT.WEAPONS.weaponType.throwing: Wurfwaffen
 FALLOUT.WEAPONS.weaponType.unarmed: Waffenlos
-ITEM.TypeAmmo: Munition
-ITEM.TypeApparel_mod: Kleidung Mod
-ITEM.TypeApparel: Kleidung
-ITEM.TypeBooks_and_magz: Buch/Magazin
-ITEM.TypeConsumable: Verbrauchsgegenstand
-ITEM.TypeMiscellany: Verschiedenes
-ITEM.TypePerk: Extra
-ITEM.TypeRobot_armor: Roboterrüstung
-ITEM.TypeRobot_mod: Robotermodul
-ITEM.TypeSkill: Fertigkeit
-ITEM.TypeSpecial_ability: Sonderfähigkeit
-ITEM.TypeWeapon_mod: Waffenmod
-ITEM.TypeWeapon: Waffe
+TYPES.Actor.character: Charakter
+TYPES.Actor.creature: Kreatur
+TYPES.Actor.npc: NSC
+TYPES.Actor.robot: Roboter
+TYPES.Item.ammo: Munition
+TYPES.Item.apparenl_mod: Kleidung Mod
+TYPES.Item.apparenl: Kleidung
+TYPES.Item.books_and_magz: Buch/Magazin
+TYPES.Item.consumable: Verbrauchsgegenstand
+TYPES.Item.miscellany: Verschiedenes
+TYPES.Item.perk: Extra
+TYPES.Item.robot_armor: Roboterrüstung
+TYPES.Item.robot_mod: Robotermodul
+TYPES.Item.skill: Fertigkeit
+TYPES.Item.special_ability: Sonderfähigkeit
+TYPES.Item.weapon_mod: Waffenmod
+TYPES.Item.weapon: Waffe

@@ -1,7 +1,4 @@
-ACTOR.TypeCharacter: Character
-ACTOR.TypeCreature: Creature
-ACTOR.TypeNpc: NPC
-ACTOR.TypeRobot: Robot
+
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: end
@@ -24,24 +21,6 @@ FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Plating
 FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.BEVERAGE: Beverage
-FALLOUT.BODYLOCATION.character.armL: Left Arm
-FALLOUT.BODYLOCATION.character.armR: Right Arm
-FALLOUT.BODYLOCATION.character.head: Head
-FALLOUT.BODYLOCATION.character.legL: Left Leg
-FALLOUT.BODYLOCATION.character.legR: Right Leg
-FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Head | Optics | Head | Head
-FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)
-FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Left Leg | Arm 3 | Left Hind Leg | Legs
-FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)
-FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Right Leg | Thruster | Right Hind Leg | Legs
-FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torso | Main Body | Torso | Torso
-FALLOUT.BODYLOCATION.robot.armL: Arm 1
-FALLOUT.BODYLOCATION.robot.armR: Arm 2
-FALLOUT.BODYLOCATION.robot.head: Optics
-FALLOUT.BODYLOCATION.robot.legL: Arm 3
-FALLOUT.BODYLOCATION.robot.legR: Thruster
-FALLOUT.BODYLOCATION.robot.torso: Main Body
 FALLOUT.BODYLOCATION_ABBR.character.armL: AL
 FALLOUT.BODYLOCATION_ABBR.character.armR: AR
 FALLOUT.BODYLOCATION_ABBR.character.head: H
@@ -54,6 +33,24 @@ FALLOUT.BODYLOCATION_ABBR.robot.head: O
 FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
 FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
 FALLOUT.BODYLOCATION_ABBR.robot.torso: MB
+FALLOUT.BODYLOCATION.character.armL: Left Arm
+FALLOUT.BODYLOCATION.character.armR: Right Arm
+FALLOUT.BODYLOCATION.character.head: Head
+FALLOUT.BODYLOCATION.character.legL: Left Leg
+FALLOUT.BODYLOCATION.character.legR: Right Leg
+FALLOUT.BODYLOCATION.character.torso: Torso
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Head_Optics_Head_Head
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: LeftLeg_Arm3_LeftHindLeg_Legs
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: RightArm_Arm2_RightFrontLeg_RightWingAsLeg
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: RightLeg_Thruster_RightHindLeg_Legs
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso_MainBody_Torso_Torso
+FALLOUT.BODYLOCATION.robot.armL: Arm 1
+FALLOUT.BODYLOCATION.robot.armR: Arm 2
+FALLOUT.BODYLOCATION.robot.head: Optics
+FALLOUT.BODYLOCATION.robot.legL: Arm 3
+FALLOUT.BODYLOCATION.robot.legR: Thruster
+FALLOUT.BODYLOCATION.robot.torso: Main Body
 FALLOUT.BodyTypes.BodyType: Body Type
 FALLOUT.BodyTypes.flyingInsect.armL: Left Wing (as leg)
 FALLOUT.BodyTypes.flyingInsect.armR: Right Wing (as leg)
@@ -135,9 +132,9 @@ FALLOUT.TEMPLATES.Add_Perk: Add Perk
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoholic
 FALLOUT.TEMPLATES.AMMO: AMMO
-FALLOUT.TEMPLATES.APPAREL: APPAREL
-FALLOUT.TEMPLATES.Apparel: Apparel
 FALLOUT.TEMPLATES.Apparel_Type: Apparel Type
+FALLOUT.TEMPLATES.Apparel: Apparel
+FALLOUT.TEMPLATES.APPAREL: APPAREL
 FALLOUT.TEMPLATES.Armor_Type: Armor Type
 FALLOUT.TEMPLATES.ATTACKS: ATTACKS
 FALLOUT.TEMPLATES.Attribute: Attribute
@@ -170,19 +167,19 @@ FALLOUT.TEMPLATES.Create_Consumable: Create Consumable
 FALLOUT.TEMPLATES.Create_Miscellany: Create_Miscellany
 FALLOUT.TEMPLATES.Create_Robot_Module: Create Robot Module
 FALLOUT.TEMPLATES.Create_Special_Ability: Create Special Ability
-FALLOUT.TEMPLATES.Create_Weapon: Create Weapon
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Create Weapon Mod
+FALLOUT.TEMPLATES.Create_Weapon: Create Weapon
 FALLOUT.TEMPLATES.Creature_Attribute: Creature's Attribute
 FALLOUT.TEMPLATES.Creature_Skill: Creature's Skill
 FALLOUT.TEMPLATES.current: current
-FALLOUT.TEMPLATES.DAMAGE: DAMAGE
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: DAMAGE EFFECTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: DAMAGE TYPE
+FALLOUT.TEMPLATES.DAMAGE: DAMAGE
 FALLOUT.TEMPLATES.Data: Data
 FALLOUT.TEMPLATES.Default_Attribute: Default Attribute
 FALLOUT.TEMPLATES.DEFENSE: DEFENSE
-FALLOUT.TEMPLATES.Delete: Delete
 FALLOUT.TEMPLATES.Delete_Item: Delete Item
+FALLOUT.TEMPLATES.Delete: Delete
 FALLOUT.TEMPLATES.DERIVED: DERIVED
 FALLOUT.TEMPLATES.Description: Description
 FALLOUT.TEMPLATES.Duration: Duration
@@ -205,12 +202,12 @@ FALLOUT.TEMPLATES.Irradiated: Irradiated
 FALLOUT.TEMPLATES.Issue: Issue
 FALLOUT.TEMPLATES.lbs: lbs
 FALLOUT.TEMPLATES.Learned: Learned
-FALLOUT.TEMPLATES.Locations: Locations
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCATIONS & INJURIES
+FALLOUT.TEMPLATES.Locations: Locations
 FALLOUT.TEMPLATES.Luck: Luck
-FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PARTY AP
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX: MAX
 FALLOUT.TEMPLATES.MELEE_BONUS: MELEE BONUS
 FALLOUT.TEMPLATES.MELEE_DAMAGE: MELEE DAMAGE
 FALLOUT.TEMPLATES.Mod_Type: Mod Type
@@ -232,12 +229,12 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [current/maximum]
 FALLOUT.TEMPLATES.Re_roll: Re-roll
 FALLOUT.TEMPLATES.Requirements: Requirements
 FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RESISTANCE GENERAL BONUS
-FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Resistances: Resistances
+FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
-FALLOUT.TEMPLATES.SKILL: SKILL
 FALLOUT.TEMPLATES.Skill_Tag: Skill Tag
 FALLOUT.TEMPLATES.Skill_Value: Skill Value
+FALLOUT.TEMPLATES.SKILL: SKILL
 FALLOUT.TEMPLATES.SKILLS: SKILLS
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: Status
@@ -325,18 +322,21 @@ FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
 ITEM.AmmoPerShot: Ammo Per Shot
-ITEM.TypeAmmo: Ammo
-ITEM.TypeApparel: Apparel
-ITEM.TypeApparel_mod: Apparel Mod
-ITEM.TypeBooks_and_magz: Book/Magazine
-ITEM.TypeConsumable: Consumable
-ITEM.TypeDisease: Disease
-ITEM.TypeMiscellany: Miscellany
-ITEM.TypePerk: Perk
-ITEM.TypeRobot_armor: Robot Armor
-ITEM.TypeRobot_mod: Robot Module
-ITEM.TypeSkill: Skill
-ITEM.TypeSpecial_ability: Special Ability
-ITEM.TypeWeapon: Weapon
-ITEM.TypeWeapon_mod: Weapon Mod
-
+TYPES.Actor.character: Character
+TYPES.Actor.creature: Creature
+TYPES.Actor.npc: NPC
+TYPES.Actor.robot: Robot
+TYPES.Item.ammo: Ammo
+TYPES.Item.apparenl_mod: Apparel Mod
+TYPES.Item.apparenl: Apparel
+TYPES.Item.books_and_magz: Book/Magazine
+TYPES.Item.consumable: Consumable
+TYPES.Item.disease: Disease
+TYPES.Item.miscellany: Miscellany
+TYPES.Item.perk: Perk
+TYPES.Item.robot_armor: Robot Armor
+TYPES.Item.robot_mod: Robot Module
+TYPES.Item.skill: Skill
+TYPES.Item.special_ability: Special Ability
+TYPES.Item.weapon_mod: Weapon Mod
+TYPES.Item.weapon: Weapon

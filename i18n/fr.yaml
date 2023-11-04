@@ -1,7 +1,4 @@
-ACTOR.TypeCharacter: Personnage
-ACTOR.TypeCreature: Créature
-ACTOR.TypeNpc: PNJ
-ACTOR.TypeRobot: Robot
+
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: end
@@ -24,24 +21,6 @@ FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Couvre-Chef
 FALLOUT.APPAREL.powerArmor: Armure Assistée
 FALLOUT.BEVERAGE: Boissons
-FALLOUT.BODYLOCATION.character.armL: Bras Gauche
-FALLOUT.BODYLOCATION.character.armR: Bras Droit
-FALLOUT.BODYLOCATION.character.head: Tête
-FALLOUT.BODYLOCATION.character.legL: Jambe Gauche
-FALLOUT.BODYLOCATION.character.legR: Jambe Droite
-FALLOUT.BODYLOCATION.character.torso: Buste
-FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Tête | Optique
-FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Bras gauche | Bras 1 | Patte avant gauche | Aile gauche (comme une patte)
-FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Jambe gauche | Bras 3 | Patte arrière gauche | Jambes
-FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Bras droit | Bras 2 | Patte avant droite | Aile droite (comme une patte)
-FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Jambe droite | Propulseur | Patte arrière droite | Jambes
-FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torse | Corps
-FALLOUT.BODYLOCATION.robot.armL: Bras 1
-FALLOUT.BODYLOCATION.robot.armR: Bras 2
-FALLOUT.BODYLOCATION.robot.head: Optique
-FALLOUT.BODYLOCATION.robot.legL: Bras 3
-FALLOUT.BODYLOCATION.robot.legR: Propulseur
-FALLOUT.BODYLOCATION.robot.torso: Corps
 FALLOUT.BODYLOCATION_ABBR.character.armL: BG
 FALLOUT.BODYLOCATION_ABBR.character.armR: BD
 FALLOUT.BODYLOCATION_ABBR.character.head: T
@@ -54,6 +33,24 @@ FALLOUT.BODYLOCATION_ABBR.robot.head: O
 FALLOUT.BODYLOCATION_ABBR.robot.legL: B3
 FALLOUT.BODYLOCATION_ABBR.robot.legR: PR
 FALLOUT.BODYLOCATION_ABBR.robot.torso: C
+FALLOUT.BODYLOCATION.character.armL: Bras Gauche
+FALLOUT.BODYLOCATION.character.armR: Bras Droit
+FALLOUT.BODYLOCATION.character.head: Tête
+FALLOUT.BODYLOCATION.character.legL: Jambe Gauche
+FALLOUT.BODYLOCATION.character.legR: Jambe Droite
+FALLOUT.BODYLOCATION.character.torso: Buste
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Tête | Optique | Tête | Tête
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Bras gauche | Bras 1 | Patte avant gauche | Aile gauche (comme une patte)
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Jambe gauche | Bras 3 | Patte arrière gauche | Jambes
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Bras droit | Bras 2 | Patte avant droite | Aile droite (comme une patte)
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Jambe droite | Propulseur | Patte arrière droite | Jambes
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torse | Corps | Torse | Torse
+FALLOUT.BODYLOCATION.robot.armL: Bras 1
+FALLOUT.BODYLOCATION.robot.armR: Bras 2
+FALLOUT.BODYLOCATION.robot.head: Optique
+FALLOUT.BODYLOCATION.robot.legL: Bras 3
+FALLOUT.BODYLOCATION.robot.legR: Propulseur
+FALLOUT.BODYLOCATION.robot.torso: Corps
 FALLOUT.BodyTypes.BodyType: Type De Corps
 FALLOUT.BodyTypes.flyingInsect.armL: Aile Gauche (comme une patte)
 FALLOUT.BodyTypes.flyingInsect.armR: Aile Droite (comme une patte)
@@ -135,9 +132,9 @@ FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
-FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
-FALLOUT.TEMPLATES.Apparel: Habillement
 FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
+FALLOUT.TEMPLATES.Apparel: Habillement
+FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
 FALLOUT.TEMPLATES.Armor_Type: Type d'Armure
 FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
@@ -170,19 +167,19 @@ FALLOUT.TEMPLATES.Create_Consumable: Créer Consommable
 FALLOUT.TEMPLATES.Create_Miscellany: Créer Bric-A-Brac
 FALLOUT.TEMPLATES.Create_Robot_Module: Créer Robot Module
 FALLOUT.TEMPLATES.Create_Special_Ability: Créer capacité Spéciale
-FALLOUT.TEMPLATES.Create_Weapon: Créer Arme
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Créer Mod Arme
+FALLOUT.TEMPLATES.Create_Weapon: Créer Arme
 FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
 FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
 FALLOUT.TEMPLATES.current: Actuel
-FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
+FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
 FALLOUT.TEMPLATES.Data: Donnée
 FALLOUT.TEMPLATES.Default_Attribute: Attribut par défaut
 FALLOUT.TEMPLATES.DEFENSE: DEFENSE
-FALLOUT.TEMPLATES.Delete: Effacer
 FALLOUT.TEMPLATES.Delete_Item: Effacer Objet
+FALLOUT.TEMPLATES.Delete: Effacer
 FALLOUT.TEMPLATES.DERIVED: DERIVÉE
 FALLOUT.TEMPLATES.Description: Description
 FALLOUT.TEMPLATES.Duration: Durée
@@ -205,12 +202,12 @@ FALLOUT.TEMPLATES.Irradiated: Irradié
 FALLOUT.TEMPLATES.Issue: Numéro
 FALLOUT.TEMPLATES.lbs: kgs
 FALLOUT.TEMPLATES.Learned: Appris(e)
-FALLOUT.TEMPLATES.Locations: Localisations
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
+FALLOUT.TEMPLATES.Locations: Localisations
 FALLOUT.TEMPLATES.Luck: LChance
-FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX: MAX
 FALLOUT.TEMPLATES.MELEE_BONUS: BONUS CAC
 FALLOUT.TEMPLATES.MELEE_DAMAGE: DÉGÂT CAC
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
@@ -232,12 +229,12 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
 FALLOUT.TEMPLATES.Re_roll: Relancer
 FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RÉSISTANCE BONUS GÉNÉRAL
-FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Resistances: Resistances
+FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
-FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
+FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.SKILLS: COMPETENCES
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: Status
@@ -320,18 +317,21 @@ FALLOUT.WEAPONS.weaponType.smallGuns: Armes légères
 FALLOUT.WEAPONS.weaponType.throwing: Projectiles
 FALLOUT.WEAPONS.weaponType.unarmed: Mains nues
 ITEM.AmmoPerShot: Mun Par Tir
-ITEM.TypeAmmo: Mun
-ITEM.TypeApparel: Habillement
-ITEM.TypeApparel_mod: Mod Habillement
-ITEM.TypeBooks_and_magz: Livre/Magazine
-ITEM.TypeConsumable: Consommable
-ITEM.TypeDisease: Maladie
-ITEM.TypeMiscellany: Bric-A-Brac
-ITEM.TypePerk: Aptitude
-ITEM.TypeRobot_armor: Armure de robot
-ITEM.TypeRobot_mod: Robot Module
-ITEM.TypeSkill: Compétence
-ITEM.TypeSpecial_ability: Capacités spéciales
-ITEM.TypeWeapon: Arme
-ITEM.TypeWeapon_mod: Mod Arme
-
+TYPES.Actor.character: Personnage
+TYPES.Actor.creature: Créature
+TYPES.Actor.npc: PNJ
+TYPES.Actor.robot: Robot
+TYPES.Item.ammo: Mun
+TYPES.Item.apparenl_mod: Mod Habillement
+TYPES.Item.apparenl: Habillement
+TYPES.Item.books_and_magz: Livre/Magazine
+TYPES.Item.consumable: Consommable
+TYPES.Item.disease: Maladie
+TYPES.Item.miscellany: Bric-A-Brac
+TYPES.Item.perk: Aptitude
+TYPES.Item.robot_armor: Armure de robot
+TYPES.Item.robot_mod: Robot Module
+TYPES.Item.skill: Compétence
+TYPES.Item.special_ability: Capacités spéciales
+TYPES.Item.weapon_mod: Mod Arme
+TYPES.Item.weapon: Arme
