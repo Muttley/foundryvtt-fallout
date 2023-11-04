@@ -1,3 +1,4 @@
+
 ACTOR.TypeCharacter: Charakter
 ACTOR.TypeCreature: Kreatur
 ACTOR.TypeNpc: NSC
@@ -24,24 +25,6 @@ FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Beschichtung
 FALLOUT.APPAREL.powerArmor: Energerüstung
 FALLOUT.BEVERAGE: Getränk
-FALLOUT.BODYLOCATION.character.armL: Linker Arm
-FALLOUT.BODYLOCATION.character.armR: Rechter Arm
-FALLOUT.BODYLOCATION.character.head: Kopf
-FALLOUT.BODYLOCATION.character.legL: Linkes Bein
-FALLOUT.BODYLOCATION.character.legR: Rechtes Bein
-FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Kopf | Optik | Kopf | Kopf: Kopf | Optik | Kopf | Kopf
-FALLOUT.BODYLOCATION.labels.Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein): Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein)
-FALLOUT.BODYLOCATION.labels.Linkes Bein | Arm 3 | Linkes Hinterbein | Beine: Linkes Bein | Arm 3 | Linkes Hinterbein | Beine
-FALLOUT.BODYLOCATION.labels.Rechter Arm | Arm 2 | Rechter Vorderbein | Rechter Flügel (als Bein): Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (aks Bein)
-FALLOUT.BODYLOCATION.labels.Rechtes Bein | Thruster | Rechtes Hinterbein | Beine: Rechtes Bein | Thruster | Rechtes Hinterbein | Beine
-FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torso | Main Body | Torso | Torso
-FALLOUT.BODYLOCATION.robot.armL: Arm 1
-FALLOUT.BODYLOCATION.robot.armR: Arm 2
-FALLOUT.BODYLOCATION.robot.head: Optik
-FALLOUT.BODYLOCATION.robot.legL: Arm 3
-FALLOUT.BODYLOCATION.robot.legR: Thruster
-FALLOUT.BODYLOCATION.robot.torso: Main Body
 FALLOUT.BODYLOCATION_ABBR.character.armL: AL
 FALLOUT.BODYLOCATION_ABBR.character.armR: AR
 FALLOUT.BODYLOCATION_ABBR.character.head: K
@@ -54,6 +37,24 @@ FALLOUT.BODYLOCATION_ABBR.robot.head: O
 FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
 FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
 FALLOUT.BODYLOCATION_ABBR.robot.torso: MB
+FALLOUT.BODYLOCATION.character.armL: Linker Arm
+FALLOUT.BODYLOCATION.character.armR: Rechter Arm
+FALLOUT.BODYLOCATION.character.head: Kopf
+FALLOUT.BODYLOCATION.character.legL: Linkes Bein
+FALLOUT.BODYLOCATION.character.legR: Rechtes Bein
+FALLOUT.BODYLOCATION.character.torso: Torso
+FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Kopf | Optik | Kopf | Kopf
+FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein)
+FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Linkes Bein | Arm 3 | Linkes Hinterbein | Beine
+FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (aks Bein)
+FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Rechtes Bein | Thruster | Rechtes Hinterbein | Beine
+FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torso | Main Body | Torso | Torso
+FALLOUT.BODYLOCATION.robot.armL: Arm 1
+FALLOUT.BODYLOCATION.robot.armR: Arm 2
+FALLOUT.BODYLOCATION.robot.head: Optik
+FALLOUT.BODYLOCATION.robot.legL: Arm 3
+FALLOUT.BODYLOCATION.robot.legR: Thruster
+FALLOUT.BODYLOCATION.robot.torso: Main Body
 FALLOUT.CHEM: Chem
 FALLOUT.CREATURE.body: Körper
 FALLOUT.CREATURE.guns: Schusswaffen
@@ -106,9 +107,9 @@ FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
 FALLOUT.TEMPLATES.Addictive: Süchtigmachend
 FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
 FALLOUT.TEMPLATES.AMMO: MUNI
-FALLOUT.TEMPLATES.APPAREL: KLEIDUNG
-FALLOUT.TEMPLATES.Apparel: Kleidung
 FALLOUT.TEMPLATES.Apparel_Type: Kleidungsart
+FALLOUT.TEMPLATES.Apparel: Kleidung
+FALLOUT.TEMPLATES.APPAREL: KLEIDUNG
 FALLOUT.TEMPLATES.Armor_Type: Rüstungsart
 FALLOUT.TEMPLATES.ATTACKS: ANGRIFFE
 FALLOUT.TEMPLATES.Attribute: Eigenschaft
@@ -128,19 +129,19 @@ FALLOUT.TEMPLATES.Create_Consumable: Erstelle Verbrauchsgut
 FALLOUT.TEMPLATES.Create_Miscellany: Erstelle Verschiedenes
 FALLOUT.TEMPLATES.Create_Robot_Module: Erstelle Robotermodul
 FALLOUT.TEMPLATES.Create_Special_Ability: Erstelle Sonderfähigkeit
-FALLOUT.TEMPLATES.Create_Weapon: Erstelle Waffe
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Erstelle Waffenmod
+FALLOUT.TEMPLATES.Create_Weapon: Erstelle Waffe
 FALLOUT.TEMPLATES.Creature_Attribute: Attribut der Kreatur
 FALLOUT.TEMPLATES.Creature_Skill: Fertigkeit der Kreatur
 FALLOUT.TEMPLATES.current: aktuell
-FALLOUT.TEMPLATES.DAMAGE: SCHADEN
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
 FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
+FALLOUT.TEMPLATES.DAMAGE: SCHADEN
 FALLOUT.TEMPLATES.Data: Daten
 FALLOUT.TEMPLATES.Default_Attribute: Standardattribut
 FALLOUT.TEMPLATES.DEFENSE: VERTEIDIGUNG
-FALLOUT.TEMPLATES.Delete: Entfernen
 FALLOUT.TEMPLATES.Delete_Item: Entferne Gegenstand
+FALLOUT.TEMPLATES.Delete: Entfernen
 FALLOUT.TEMPLATES.DERIVED: ABGELEITET
 FALLOUT.TEMPLATES.Description: Beschreibung
 FALLOUT.TEMPLATES.Duration: Dauer
@@ -163,12 +164,12 @@ FALLOUT.TEMPLATES.Irradiated: Verstrahlt
 FALLOUT.TEMPLATES.Issue: Ausgabe
 FALLOUT.TEMPLATES.lbs: Pfund
 FALLOUT.TEMPLATES.Learned: Erlernt
-FALLOUT.TEMPLATES.Locations: Orte
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: ORTE & VERLETZUNGEN
+FALLOUT.TEMPLATES.Locations: Orte
 FALLOUT.TEMPLATES.Luck: Glück
-FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX GRUPPEN AP
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX: MAX
 FALLOUT.TEMPLATES.MELEE_BONUS: NAHKAMPFBONUS
 FALLOUT.TEMPLATES.MELEE_DAMAGE: NAHKAMPFSCHADEN
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
@@ -190,12 +191,12 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
 FALLOUT.TEMPLATES.Re_roll: Wiederholungswurf
 FALLOUT.TEMPLATES.Requirements: Voraussetzungen
 FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RESISTANCE GENERAL BONUS
-FALLOUT.TEMPLATES.RESISTANCES: RESISTENZEN
 FALLOUT.TEMPLATES.Resistances: Resistenzen
+FALLOUT.TEMPLATES.RESISTANCES: RESISTENZEN
 FALLOUT.TEMPLATES.Roll_Formula: Wurfformel
-FALLOUT.TEMPLATES.SKILL: FERTIGKEIT
 FALLOUT.TEMPLATES.Skill_Tag: Spezialfertigkeit
 FALLOUT.TEMPLATES.Skill_Value: Fertigkeitswert
+FALLOUT.TEMPLATES.SKILL: FERTIGKEIT
 FALLOUT.TEMPLATES.SKILLS: FERTIGKEITEN
 FALLOUT.TEMPLATES.Source: Quelle
 FALLOUT.TEMPLATES.Status: Status
@@ -276,8 +277,8 @@ FALLOUT.WEAPONS.weaponType.smallGuns: Kleine Waffen
 FALLOUT.WEAPONS.weaponType.throwing: Wurfwaffen
 FALLOUT.WEAPONS.weaponType.unarmed: Waffenlos
 ITEM.TypeAmmo: Munition
-ITEM.TypeApparel: Kleidung
 ITEM.TypeApparel_mod: Kleidung Mod
+ITEM.TypeApparel: Kleidung
 ITEM.TypeBooks_and_magz: Buch/Magazin
 ITEM.TypeConsumable: Verbrauchsgegenstand
 ITEM.TypeMiscellany: Verschiedenes
@@ -286,6 +287,5 @@ ITEM.TypeRobot_armor: Roboterrüstung
 ITEM.TypeRobot_mod: Robotermodul
 ITEM.TypeSkill: Fertigkeit
 ITEM.TypeSpecial_ability: Sonderfähigkeit
-ITEM.TypeWeapon: Waffe
 ITEM.TypeWeapon_mod: Waffenmod
-
+ITEM.TypeWeapon: Waffe

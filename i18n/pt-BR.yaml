@@ -1,3 +1,4 @@
+
 ACTOR.TypeCharacter: Personagem
 ACTOR.TypeCreature: Criatura
 ACTOR.TypeNpc: NPC
@@ -24,24 +25,6 @@ FALLOUT.APPAREL.outfit: Traje
 FALLOUT.APPAREL.plating: Plating
 FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.BEVERAGE: Bebida
-FALLOUT.BODYLOCATION.character.armL: Braço Esq.
-FALLOUT.BODYLOCATION.character.armR: Braço Dir.
-FALLOUT.BODYLOCATION.character.head: Cabeça
-FALLOUT.BODYLOCATION.character.legL: Perna Esq.
-FALLOUT.BODYLOCATION.character.legR: Perna Dir.
-FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg): Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg)
-FALLOUT.BODYLOCATION.labels.Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg): Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg)
-FALLOUT.BODYLOCATION.labels.Cabeça | Óptica | Cabeça | Cabeça: Cabeça | Óptica | Cabeça | Cabeça
-FALLOUT.BODYLOCATION.labels.Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas: Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas
-FALLOUT.BODYLOCATION.labels.Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas: Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas
-FALLOUT.BODYLOCATION.labels.Torso | Corpo | Torso | Torso: Torso | Corpo | Torso | Torso
-FALLOUT.BODYLOCATION.robot.armL: Braço 1
-FALLOUT.BODYLOCATION.robot.armR: Braço 2
-FALLOUT.BODYLOCATION.robot.head: Óptica
-FALLOUT.BODYLOCATION.robot.legL: Braço 3
-FALLOUT.BODYLOCATION.robot.legR: Propulsor
-FALLOUT.BODYLOCATION.robot.torso: Corpo
 FALLOUT.BODYLOCATION_ABBR.character.armL: AL
 FALLOUT.BODYLOCATION_ABBR.character.armR: AR
 FALLOUT.BODYLOCATION_ABBR.character.head: H
@@ -54,6 +37,24 @@ FALLOUT.BODYLOCATION_ABBR.robot.head: O
 FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
 FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
 FALLOUT.BODYLOCATION_ABBR.robot.torso: MB
+FALLOUT.BODYLOCATION.character.armL: Braço Esq.
+FALLOUT.BODYLOCATION.character.armR: Braço Dir.
+FALLOUT.BODYLOCATION.character.head: Cabeça
+FALLOUT.BODYLOCATION.character.legL: Perna Esq.
+FALLOUT.BODYLOCATION.character.legR: Perna Dir.
+FALLOUT.BODYLOCATION.character.torso: Torso
+FALLOUT.BODYLOCATION.labels.Head | Optics | Head | Head: Cabeça | Óptica | Cabeça | Cabeça
+FALLOUT.BODYLOCATION.labels.Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg): Braço Esq. | Braço 1 | Perna Dianteira Esq. | Asa Esq. (as Leg)
+FALLOUT.BODYLOCATION.labels.Left Leg | Arm 3 | Left Hind Leg | Legs: Perna Esq. | Braço 3 | Perna Traseira Esq. | Pernas
+FALLOUT.BODYLOCATION.labels.Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg): Braço Dir. | Braço 2 | Perna Dianteira Dir. | Asa Dir. (as Leg)
+FALLOUT.BODYLOCATION.labels.Right Leg | Thruster | Right Hind Leg | Legs: Perna Dir. | Propulsor | Perna Traseira Dir. | Pernas
+FALLOUT.BODYLOCATION.labels.Torso | Main Body | Torso | Torso: Torso | Corpo | Torso | Torso
+FALLOUT.BODYLOCATION.robot.armL: Braço 1
+FALLOUT.BODYLOCATION.robot.armR: Braço 2
+FALLOUT.BODYLOCATION.robot.head: Óptica
+FALLOUT.BODYLOCATION.robot.legL: Braço 3
+FALLOUT.BODYLOCATION.robot.legR: Propulsor
+FALLOUT.BODYLOCATION.robot.torso: Corpo
 FALLOUT.BodyTypes.BodyType: Body Type
 FALLOUT.BodyTypes.flyingInsect.armL: Asa Esq. (as leg)
 FALLOUT.BodyTypes.flyingInsect.armR: Asa Dir. (as leg)
@@ -135,9 +136,9 @@ FALLOUT.TEMPLATES.Add_Perk: Add Perk
 FALLOUT.TEMPLATES.Addictive: Viciante
 FALLOUT.TEMPLATES.Alcoholic: Alcoólico
 FALLOUT.TEMPLATES.AMMO: AMMO
-FALLOUT.TEMPLATES.APPAREL: VESTUÁRIO
-FALLOUT.TEMPLATES.Apparel: Vestuário
 FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
+FALLOUT.TEMPLATES.Apparel: Vestuário
+FALLOUT.TEMPLATES.APPAREL: VESTUÁRIO
 FALLOUT.TEMPLATES.Armor_Type: Tipo de Armadura
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
@@ -170,19 +171,19 @@ FALLOUT.TEMPLATES.Create_Consumable: Criar Consumível
 FALLOUT.TEMPLATES.Create_Miscellany: Criar Item Geral
 FALLOUT.TEMPLATES.Create_Robot_Module: Criar Mod Robótico
 FALLOUT.TEMPLATES.Create_Special_Ability: Criar Habilidade Especial
-FALLOUT.TEMPLATES.Create_Weapon: Criar Arma
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Criar Mod de Arma
+FALLOUT.TEMPLATES.Create_Weapon: Criar Arma
 FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
 FALLOUT.TEMPLATES.Creature_Skill: Skill da Criatura
 FALLOUT.TEMPLATES.current: atual
-FALLOUT.TEMPLATES.DAMAGE: DANO
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
+FALLOUT.TEMPLATES.DAMAGE: DANO
 FALLOUT.TEMPLATES.Data: Data
 FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
 FALLOUT.TEMPLATES.DEFENSE: DEFESA
-FALLOUT.TEMPLATES.Delete: Delete
 FALLOUT.TEMPLATES.Delete_Item: Deletar Item
+FALLOUT.TEMPLATES.Delete: Delete
 FALLOUT.TEMPLATES.DERIVED: SOBRE VOCÊ
 FALLOUT.TEMPLATES.Description: Descrição
 FALLOUT.TEMPLATES.Duration: Duração
@@ -205,12 +206,12 @@ FALLOUT.TEMPLATES.Irradiated: Irradiado
 FALLOUT.TEMPLATES.Issue: Issue
 FALLOUT.TEMPLATES.lbs: lbs
 FALLOUT.TEMPLATES.Learned: Aprendido
-FALLOUT.TEMPLATES.Locations: Locais
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCAIS & FERIDAS
+FALLOUT.TEMPLATES.Locations: Locais
 FALLOUT.TEMPLATES.Luck: Luck
-FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX_PARTY_AP: AP MÁXIMO DA PARTY
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX: MAX
 FALLOUT.TEMPLATES.MELEE_BONUS: Bônus Melee
 FALLOUT.TEMPLATES.MELEE_DAMAGE: DANO CORPO-A-CORPO
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
@@ -232,12 +233,12 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [atual/máximo]
 FALLOUT.TEMPLATES.Re_roll: Re-role
 FALLOUT.TEMPLATES.Requirements: Requisitos
 FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: BÔNUS DE RESISTÊNCIA GERAL
-FALLOUT.TEMPLATES.RESISTANCES: RESISTÊNCIAS
 FALLOUT.TEMPLATES.Resistances: Resistências
+FALLOUT.TEMPLATES.RESISTANCES: RESISTÊNCIAS
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
-FALLOUT.TEMPLATES.SKILL: SKILL
 FALLOUT.TEMPLATES.Skill_Tag: Skill Tag
 FALLOUT.TEMPLATES.Skill_Value: Skill Value
+FALLOUT.TEMPLATES.SKILL: SKILL
 FALLOUT.TEMPLATES.SKILLS: SKILLS
 FALLOUT.TEMPLATES.Source: Fonte
 FALLOUT.TEMPLATES.Status: Status
@@ -319,8 +320,8 @@ FALLOUT.WEAPONS.weaponType.throwing: Arremesso
 FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
 ITEM.AmmoPerShot: Ammo Por Tiro
 ITEM.TypeAmmo: Ammo
-ITEM.TypeApparel: Vestuário
 ITEM.TypeApparel_mod: Mod de Vestuário
+ITEM.TypeApparel: Vestuário
 ITEM.TypeBooks_and_magz: Livro/Revista
 ITEM.TypeConsumable: Consumível
 ITEM.TypeMiscellany: Miscelâneos
@@ -329,6 +330,5 @@ ITEM.TypeRobot_armor: Armadura Robótica
 ITEM.TypeRobot_mod: Módulo Robótico
 ITEM.TypeSkill: Skill
 ITEM.TypeSpecial_ability: Habilidade Especial
-ITEM.TypeWeapon: Arma
 ITEM.TypeWeapon_mod: Mod de Arma
-
+ITEM.TypeWeapon: Arma
