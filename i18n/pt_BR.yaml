@@ -1,4 +1,3 @@
-
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: end
@@ -262,6 +261,7 @@ FALLOUT.UI.CarryWeight: Carregar Peso
 FALLOUT.UI.CONSUMABLES: Consumíveis
 FALLOUT.UI.Cost: Custo
 FALLOUT.UI.Damage: Dano
+FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorito
 FALLOUT.UI.INVENTORY: Inventário
 FALLOUT.UI.MISCELLANY: Geral
@@ -269,6 +269,7 @@ FALLOUT.UI.Name: Nome
 FALLOUT.UI.ORIGIN: ORIGEM
 FALLOUT.UI.OTHER: Outro
 FALLOUT.UI.Perks: Perks
+FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Quantidade
 FALLOUT.UI.Rarity: Raridade
 FALLOUT.UI.ROBOT_MODULES: Módulos Robóticos
@@ -278,8 +279,10 @@ FALLOUT.UI.Type: Tipo
 FALLOUT.UI.UNSORTED: Não Triado
 FALLOUT.UI.WEAPON_MODS: Mods de Arma
 FALLOUT.UI.Weight: Peso
+FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst
+FALLOUT.WEAPONS.damageEffect.freeze: Freeze
 FALLOUT.WEAPONS.damageEffect.persistent: Persistent
 FALLOUT.WEAPONS.damageEffect.piercing: Piercing
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactive
@@ -297,15 +300,18 @@ FALLOUT.WEAPONS.weaponQuality.concealed: Concealed
 FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitating
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Inaccurate
+FALLOUT.WEAPONS.weaponQuality.limited: Limited
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.nightVision: Night Vision
 FALLOUT.WEAPONS.weaponQuality.parry: Parry
 FALLOUT.WEAPONS.weaponQuality.recon: Recon
 FALLOUT.WEAPONS.weaponQuality.reliable: Reliable
+FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
 FALLOUT.WEAPONS.weaponQuality.suppressed: Suppressed
 FALLOUT.WEAPONS.weaponQuality.thrown: Thrown
 FALLOUT.WEAPONS.weaponQuality.twoHanded: Two-Handed
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unreliable
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Armas Grandes
 FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de Energia
@@ -324,6 +330,7 @@ TYPES.Item.apparenl_mod: Mod de Vestuário
 TYPES.Item.apparenl: Vestuário
 TYPES.Item.books_and_magz: Livro/Revista
 TYPES.Item.consumable: Consumível
+TYPES.Item.disease: Disease
 TYPES.Item.miscellany: Miscelâneos
 TYPES.Item.perk: Perk
 TYPES.Item.robot_armor: Armadura Robótica
