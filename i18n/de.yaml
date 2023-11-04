@@ -1,4 +1,3 @@
-
 FALLOUT.AbilityAbbr.agi: bew
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: aus
@@ -51,6 +50,35 @@ FALLOUT.BODYLOCATION.robot.head: Optik
 FALLOUT.BODYLOCATION.robot.legL: Arm 3
 FALLOUT.BODYLOCATION.robot.legR: Thruster
 FALLOUT.BODYLOCATION.robot.torso: Main Body
+FALLOUT.BodyTypes.BodyType: Body Type
+FALLOUT.BodyTypes.flyingInsect.armL: Left Wing (as leg)
+FALLOUT.BodyTypes.flyingInsect.armR: Right Wing (as leg)
+FALLOUT.BodyTypes.flyingInsect.head: Head
+FALLOUT.BodyTypes.flyingInsect.label: Flying Insect
+FALLOUT.BodyTypes.flyingInsect.legL: Legs
+FALLOUT.BodyTypes.flyingInsect.legR: Legs
+FALLOUT.BodyTypes.flyingInsect.torso: Torso
+FALLOUT.BodyTypes.humanoid.armL: Arm Left
+FALLOUT.BodyTypes.humanoid.armR: Arm Right
+FALLOUT.BodyTypes.humanoid.head: Head
+FALLOUT.BodyTypes.humanoid.label: Humanoid
+FALLOUT.BodyTypes.humanoid.legL: Leg Left
+FALLOUT.BodyTypes.humanoid.legR: Leg Right
+FALLOUT.BodyTypes.humanoid.torso: Torso
+FALLOUT.BodyTypes.quadruped.armL: Left Front Leg
+FALLOUT.BodyTypes.quadruped.armR: Right Front Leg
+FALLOUT.BodyTypes.quadruped.head: Head
+FALLOUT.BodyTypes.quadruped.label: Quadruped
+FALLOUT.BodyTypes.quadruped.legL: Left Hind Leg
+FALLOUT.BodyTypes.quadruped.legR: Right Hind Leg
+FALLOUT.BodyTypes.quadruped.torso: Torso
+FALLOUT.BodyTypes.robot.armL: Arm 1
+FALLOUT.BodyTypes.robot.armR: Arm 2
+FALLOUT.BodyTypes.robot.head: Optics
+FALLOUT.BodyTypes.robot.label: Robot
+FALLOUT.BodyTypes.robot.legL: Arm 3
+FALLOUT.BodyTypes.robot.legR: Main Body
+FALLOUT.BodyTypes.robot.torso: Main Body
 FALLOUT.CHEM: Chem
 FALLOUT.CREATURE.body: Körper
 FALLOUT.CREATURE.guns: Schusswaffen
@@ -73,7 +101,7 @@ FALLOUT.LEVEL.RewardXP: EP Belohnung
 FALLOUT.MODS.mods: Mods
 FALLOUT.OTHER: Anderes
 FALLOUT.powered: Powered
-FALLOUT.RANGE.close: N
+FALLOUT.RANGE.close: C
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
@@ -113,10 +141,23 @@ FALLOUT.TEMPLATES.Attributes: Eigenschaften
 FALLOUT.TEMPLATES.Compl: Kompl.
 FALLOUT.TEMPLATES.Complications: Komplikationen
 FALLOUT.TEMPLATES.CONDITIONS: ZUSTÄNDE
+FALLOUT.TEMPLATES.conditions.dehydrated: Dehydrated
+FALLOUT.TEMPLATES.conditions.exhausted: Exhausted
 FALLOUT.TEMPLATES.conditions.fatigue: Erschöpfung
+FALLOUT.TEMPLATES.conditions.full: Full
 FALLOUT.TEMPLATES.conditions.hunger: Hunger
+FALLOUT.TEMPLATES.conditions.hungry: Hungry
+FALLOUT.TEMPLATES.conditions.hydrated: Hydrated
+FALLOUT.TEMPLATES.conditions.peckish: Peckish
+FALLOUT.TEMPLATES.conditions.quenched: Quenched
+FALLOUT.TEMPLATES.conditions.rested: Rested
+FALLOUT.TEMPLATES.conditions.sated: Sated
 FALLOUT.TEMPLATES.conditions.sleep: Schlaf
+FALLOUT.TEMPLATES.conditions.starving: Starving
 FALLOUT.TEMPLATES.conditions.thirst: Durst
+FALLOUT.TEMPLATES.conditions.thirsty: Thirsty
+FALLOUT.TEMPLATES.conditions.tired: Tired
+FALLOUT.TEMPLATES.conditions.weary: Weary
 FALLOUT.TEMPLATES.Consumable_Type: Verbrauchsgutart
 FALLOUT.TEMPLATES.Create_Ammo: Erstelle Munition
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Erstelle Kleidungsmod
@@ -220,6 +261,7 @@ FALLOUT.UI.CarryWeight: Aktuelle Tragekapazität
 FALLOUT.UI.CONSUMABLES: Verbrauchsgegenstände
 FALLOUT.UI.Cost: Kosten
 FALLOUT.UI.Damage: Schaden
+FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorit
 FALLOUT.UI.INVENTORY: Inventar
 FALLOUT.UI.MISCELLANY: Verschiedenes
@@ -227,6 +269,7 @@ FALLOUT.UI.Name: Name
 FALLOUT.UI.ORIGIN: HERKUNFT
 FALLOUT.UI.OTHER: Anderes
 FALLOUT.UI.Perks: Extras
+FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Anzahl
 FALLOUT.UI.Rarity: Seltenheit
 FALLOUT.UI.ROBOT_MODULES: Roboter Module
@@ -236,8 +279,10 @@ FALLOUT.UI.Type: Art
 FALLOUT.UI.UNSORTED: Unsortiert
 FALLOUT.UI.WEAPON_MODS: Waffen Mods
 FALLOUT.UI.Weight: Gewicht
+FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Panzerbrechend
 FALLOUT.WEAPONS.damageEffect.burst: Feuerstoß
+FALLOUT.WEAPONS.damageEffect.freeze: Freeze
 FALLOUT.WEAPONS.damageEffect.persistent: Anhaltend
 FALLOUT.WEAPONS.damageEffect.piercing: Durchschlagend
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktiv
@@ -255,15 +300,18 @@ FALLOUT.WEAPONS.weaponQuality.concealed: Verborgen
 FALLOUT.WEAPONS.weaponQuality.debilitating: Schwächend
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Ungenau
+FALLOUT.WEAPONS.weaponQuality.limited: Limited
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.nightVision: Nachtsicht
 FALLOUT.WEAPONS.weaponQuality.parry: Parieren
 FALLOUT.WEAPONS.weaponQuality.recon: Aufklärung
 FALLOUT.WEAPONS.weaponQuality.reliable: Zuverlässig
+FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
 FALLOUT.WEAPONS.weaponQuality.suppressed: Schallgedämpft
 FALLOUT.WEAPONS.weaponQuality.thrown: Geworfen
 FALLOUT.WEAPONS.weaponQuality.twoHanded: Zweihändig
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unzuverlässig
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
@@ -272,6 +320,7 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Nahkampfwaffen
 FALLOUT.WEAPONS.weaponType.smallGuns: Kleine Waffen
 FALLOUT.WEAPONS.weaponType.throwing: Wurfwaffen
 FALLOUT.WEAPONS.weaponType.unarmed: Waffenlos
+ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Charakter
 TYPES.Actor.creature: Kreatur
 TYPES.Actor.npc: NSC
@@ -281,6 +330,7 @@ TYPES.Item.apparenl_mod: Kleidung Mod
 TYPES.Item.apparenl: Kleidung
 TYPES.Item.books_and_magz: Buch/Magazin
 TYPES.Item.consumable: Verbrauchsgegenstand
+TYPES.Item.disease: Disease
 TYPES.Item.miscellany: Verschiedenes
 TYPES.Item.perk: Extra
 TYPES.Item.robot_armor: Roboterrüstung
