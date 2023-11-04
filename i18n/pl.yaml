@@ -1,4 +1,3 @@
-
 FALLOUT.AbilityAbbr.agi: ZW
 FALLOUT.AbilityAbbr.cha: CHA
 FALLOUT.AbilityAbbr.end: WT
@@ -236,7 +235,7 @@ FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
 FALLOUT.TEMPLATES.SKILL: Umiejętność
 FALLOUT.TEMPLATES.SKILLS: Umiejętności
-FALLOUT.TEMPLATES.Source: "Źródło   "
+FALLOUT.TEMPLATES.Source: Źródło   
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Successes: Skukces
 FALLOUT.TEMPLATES.Tag: Specjalizacja
@@ -280,10 +279,12 @@ FALLOUT.UI.Type: Typ
 FALLOUT.UI.UNSORTED: Nieposortowane
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
+FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
+FALLOUT.WEAPONS.damageEffect.freeze: Freeze
 FALLOUT.WEAPONS.damageEffect.persistent: Uporczywe
-FALLOUT.WEAPONS.damageEffect.piercing: "Przeszywające "
+FALLOUT.WEAPONS.damageEffect.piercing: Przeszywające 
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktywne
 FALLOUT.WEAPONS.damageEffect.spread: Rozrzut
 FALLOUT.WEAPONS.damageEffect.stun: Ogłuszające
@@ -294,20 +295,23 @@ FALLOUT.WEAPONS.damageType.poison: Trucizna
 FALLOUT.WEAPONS.damageType.radiation: Radjacja
 FALLOUT.WEAPONS.weaponQuality.accurate: Celna
 FALLOUT.WEAPONS.weaponQuality.blast: Wybuchowa
-FALLOUT.WEAPONS.weaponQuality.closeQuarters: "Zwarcie:"
+FALLOUT.WEAPONS.weaponQuality.closeQuarters: 'Zwarcie:'
 FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Niecelna
+FALLOUT.WEAPONS.weaponQuality.limited: Limited
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.nightVision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
+FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
 FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.twoHanded: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
 FALLOUT.WEAPONS.weaponType.creatureAttack: Atak Stwora
 FALLOUT.WEAPONS.weaponType.energyWeapons: Broń Energetyczna
