@@ -44,7 +44,7 @@ FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Lewa Ręka|
 FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Lewa Noga | Silnik | Lewa Tylnia Noga| Odnóża
 FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Prawa Ręka| Ramie 2 | Prawa Przednia Noga| Prawe skrzydło
 FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Prawa Noga | Silnik | Prawa Tylnia Noga| Odnóża
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Tłów | Korpus | Korpus | Korpus
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Tułów | Korpus | Tułów | Tułów
 FALLOUT.BODYLOCATION.robot.armL: Ramie 1
 FALLOUT.BODYLOCATION.robot.armR: Ramie 2
 FALLOUT.BODYLOCATION.robot.head: Sensory
