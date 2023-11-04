@@ -39,12 +39,12 @@ FALLOUT.BODYLOCATION.character.head: Head
 FALLOUT.BODYLOCATION.character.legL: Left Leg
 FALLOUT.BODYLOCATION.character.legR: Right Leg
 FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Head_Optics_Head_Head
-FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg
-FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: LeftLeg_Arm3_LeftHindLeg_Legs
-FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: RightArm_Arm2_RightFrontLeg_RightWingAsLeg
-FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: RightLeg_Thruster_RightHindLeg_Legs
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso_MainBody_Torso_Torso
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Head | Optics | Head | Head
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Left Leg | Arm 3 | Left Hind Leg | Legs
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Right Leg | Thruster | Right Hind Leg | Legs
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Main Body | Torso | Torso
 FALLOUT.BODYLOCATION.robot.armL: Arm 1
 FALLOUT.BODYLOCATION.robot.armR: Arm 2
 FALLOUT.BODYLOCATION.robot.head: Optics
