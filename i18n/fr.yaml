@@ -1,4 +1,3 @@
-
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: end
@@ -280,8 +279,10 @@ FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Non trié
 FALLOUT.UI.WEAPON_MODS: Mods Armes
 FALLOUT.UI.Weight: Poids
+FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Destructeur
 FALLOUT.WEAPONS.damageEffect.burst: Rafale
+FALLOUT.WEAPONS.damageEffect.freeze: Freeze
 FALLOUT.WEAPONS.damageEffect.persistent: Persistant
 FALLOUT.WEAPONS.damageEffect.piercing: Perforant
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
@@ -299,15 +300,18 @@ FALLOUT.WEAPONS.weaponQuality.concealed: Dissimulé
 FALLOUT.WEAPONS.weaponQuality.debilitating: Invalidant
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprécis
+FALLOUT.WEAPONS.weaponQuality.limited: Limited
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.nightVision: Vision nocturne
 FALLOUT.WEAPONS.weaponQuality.parry: Parade
 FALLOUT.WEAPONS.weaponQuality.recon: Reco
 FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
+FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
 FALLOUT.WEAPONS.weaponQuality.suppressed: Silencieux
 FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
 FALLOUT.WEAPONS.weaponQuality.twoHanded: Deux mains
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armes à énergie
