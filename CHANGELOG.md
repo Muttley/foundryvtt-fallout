@@ -1,6 +1,6 @@
-## v11.2.3
+## v11.2.5
 
-### Chore
+### Chores
 - Translation updates are now all handled via Crowdin to simplify the process of contributing translations.  See here for more details: https://github.com/Muttley/foundryvtt-fallout/wiki/Other-ways-to-contribute#translation
 
 ## v11.2.4
