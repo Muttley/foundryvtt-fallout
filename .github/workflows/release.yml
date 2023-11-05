@@ -1,9 +1,8 @@
 name: Create Release
 
 on:
-  push:
-    tags:
-      - 'release-*'
+  workflow_dispatch:
+    branches: [main]
 
 jobs:
   build:
