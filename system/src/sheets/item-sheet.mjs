@@ -19,7 +19,7 @@ export class FalloutItemSheet extends ItemSheet {
 	/** @override */
 	get template() {
 		const path = "systems/fallout/templates/item";
-		return `${path}/item-${this.item.type}-sheet.html`;
+		return `${path}/item-${this.item.type}-sheet.hbs`;
 	}
 
 	/* -------------------------------------------- */

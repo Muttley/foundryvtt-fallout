@@ -21,7 +21,7 @@ export class APTracker extends Application {
 			id: "ap-tracker-app",
 			popOut: false,
 			resizable: false,
-			template: "systems/fallout/templates/ap/ap-tracker.html",
+			template: "systems/fallout/templates/ap/ap-tracker.hbs",
 			title: "AP Tracker",
 			width: "auto",
 		});

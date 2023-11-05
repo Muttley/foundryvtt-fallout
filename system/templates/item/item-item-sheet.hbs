@@ -1,7 +1,5 @@
-{{!-- This template is a fallback for when items don't have more specific templates. --}}
-{{!-- Generally, you'll want to make more specific templates when possible. --}}
 <form class="{{cssClass}}" autocomplete="off">
-  {{> "systems/fallout/templates/item/parts/item-header.html"}}
+  {{> "systems/fallout/templates/item/parts/item-header.hbs"}}
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
@@ -14,12 +12,17 @@
 
     {{!-- Description Tab --}}
     <div class="tab" data-group="primary" data-tab="description">
+      {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
       {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
+      <div class="resource">
+        <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Roll_Formula"}}</label>
+        <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String" />
+      </div>
     </div>
   </section>
 </form>

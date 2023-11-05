@@ -1,7 +1,7 @@
 <form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
 
     {{!-- Sheet Header --}}
-    {{> "systems/fallout/templates/actor/parts/actor-header.html"}}
+    {{> "systems/fallout/templates/actor/parts/actor-header.hbs"}}
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -75,9 +75,9 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     {{!-- BODY STATUS --}}
-                    {{> "systems/fallout/templates/actor/parts/npc-body.html" FALLOUT=FALLOUT}}
+                    {{> "systems/fallout/templates/actor/parts/npc-body.hbs" FALLOUT=FALLOUT}}
                     {{!-- END BODY STATUS --}}
 
                     <!-- <div class="box no-padding bgOdd">
@@ -102,13 +102,13 @@
                         <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.ATTACKS"}}</h4>
                         <div>
                             {{!-- Owned Weapons Tab --}}
-                            {{> "systems/fallout/templates/actor/parts/actor-weapons.html"}}
+                            {{> "systems/fallout/templates/actor/parts/actor-weapons.hbs"}}
                         </div>
                     </div>
 
                     <div class="resource-row">
                         {{!-- Owned Abilities Tab --}}
-                        {{> "systems/fallout/templates/actor/parts/actor-special_abilities.html"}}
+                        {{> "systems/fallout/templates/actor/parts/actor-special_abilities.hbs"}}
                     </div>
 
                     <div class="resource-row">
@@ -121,7 +121,7 @@
                                 </div>
                             </li>
                             {{#each inventory as |item id|}}
-                            {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
+                            {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item}}
                             {{/each}}
                         </ol>
                     </div>
@@ -139,7 +139,7 @@
 
         {{!-- Active Effects Tab --}}
         <!-- <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-            {{> "systems/fallout/templates/actor/parts/actor-effects.html"}}
+            {{> "systems/fallout/templates/actor/parts/actor-effects.hbs"}}
         </div> -->
 
     </section>

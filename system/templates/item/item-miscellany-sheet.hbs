@@ -1,5 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
-    {{> "systems/fallout/templates/item/parts/item-header.html"}}
+    {{> "systems/fallout/templates/item/parts/item-header.hbs"}}
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -9,15 +9,15 @@
 
     <section class="sheet-body">
         {{!-- Attributes Tab --}}
-        <div class="attributes tab" data-group="primary" data-tab="attributes">
-            <h3 style="border-bottom: none;">Effect</h3>
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effect"}}</h3>
             <div class="description-field">
                 {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
             </div>
         </div>
 
         {{!-- Description Tab --}}
-        <div class="tab" data-group="primary" data-tab="description">
+        <div class="tab description" data-group="primary" data-tab="description">
             {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
     </section>

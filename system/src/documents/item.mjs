@@ -102,7 +102,7 @@ export class FalloutItem extends Item {
 		itemData.name = this.name;
 		itemData.type = this.type;
 
-		const html = await renderTemplate("systems/fallout/templates/chat/item.html", itemData);
+		const html = await renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
 		const chatData = {
 			user: game.user.id,
 			rollMode: game.settings.get("core", "rollMode"),
