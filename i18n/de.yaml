@@ -1,0 +1,341 @@
+FALLOUT.AbilityAbbr.agi: bew
+FALLOUT.AbilityAbbr.cha: cha
+FALLOUT.AbilityAbbr.end: aus
+FALLOUT.AbilityAbbr.int: int
+FALLOUT.AbilityAbbr.luc: glu
+FALLOUT.AbilityAbbr.per: wah
+FALLOUT.AbilityAbbr.str: sta
+FALLOUT.AbilityAgi: Beweglichkeit
+FALLOUT.AbilityCha: Charisma
+FALLOUT.AbilityEnd: Ausdauer
+FALLOUT.AbilityInt: Intelligenz
+FALLOUT.AbilityLuc: Glück
+FALLOUT.AbilityPer: Wahrnehmung
+FALLOUT.AbilityStr: Stärke
+FALLOUT.Add: Add
+FALLOUT.APPAREL.armor: Rüstung
+FALLOUT.APPAREL.clothing: Kleidung
+FALLOUT.APPAREL.headgear: Kopfbedeckung
+FALLOUT.APPAREL.outfit: Outfit
+FALLOUT.APPAREL.plating: Beschichtung
+FALLOUT.APPAREL.powerArmor: Energerüstung
+FALLOUT.BEVERAGE: Getränk
+FALLOUT.BODYLOCATION_ABBR.character.armL: AL
+FALLOUT.BODYLOCATION_ABBR.character.armR: AR
+FALLOUT.BODYLOCATION_ABBR.character.head: K
+FALLOUT.BODYLOCATION_ABBR.character.legL: BL
+FALLOUT.BODYLOCATION_ABBR.character.legR: BR
+FALLOUT.BODYLOCATION_ABBR.character.torso: T
+FALLOUT.BODYLOCATION_ABBR.robot.armL: A1
+FALLOUT.BODYLOCATION_ABBR.robot.armR: A2
+FALLOUT.BODYLOCATION_ABBR.robot.head: O
+FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
+FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
+FALLOUT.BODYLOCATION_ABBR.robot.torso: MB
+FALLOUT.BODYLOCATION.character.armL: Linker Arm
+FALLOUT.BODYLOCATION.character.armR: Rechter Arm
+FALLOUT.BODYLOCATION.character.head: Kopf
+FALLOUT.BODYLOCATION.character.legL: Linkes Bein
+FALLOUT.BODYLOCATION.character.legR: Rechtes Bein
+FALLOUT.BODYLOCATION.character.torso: Torso
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Kopf | Optik | Kopf | Kopf
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein)
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Linkes Bein | Arm 3 | Linkes Hinterbein | Beine
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (aks Bein)
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Rechtes Bein | Thruster | Rechtes Hinterbein | Beine
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso_MainBody_Torso_Torso
+FALLOUT.BODYLOCATION.robot.armL: Arm 1
+FALLOUT.BODYLOCATION.robot.armR: Arm 2
+FALLOUT.BODYLOCATION.robot.head: Optik
+FALLOUT.BODYLOCATION.robot.legL: Arm 3
+FALLOUT.BODYLOCATION.robot.legR: Thruster
+FALLOUT.BODYLOCATION.robot.torso: Main Body
+FALLOUT.BodyTypes.BodyType: Body Type
+FALLOUT.BodyTypes.flyingInsect.armL: Left Wing (as leg)
+FALLOUT.BodyTypes.flyingInsect.armR: Right Wing (as leg)
+FALLOUT.BodyTypes.flyingInsect.head: Head
+FALLOUT.BodyTypes.flyingInsect.label: Flying Insect
+FALLOUT.BodyTypes.flyingInsect.legL: Legs
+FALLOUT.BodyTypes.flyingInsect.legR: Legs
+FALLOUT.BodyTypes.flyingInsect.torso: Torso
+FALLOUT.BodyTypes.humanoid.armL: Arm Left
+FALLOUT.BodyTypes.humanoid.armR: Arm Right
+FALLOUT.BodyTypes.humanoid.head: Head
+FALLOUT.BodyTypes.humanoid.label: Humanoid
+FALLOUT.BodyTypes.humanoid.legL: Leg Left
+FALLOUT.BodyTypes.humanoid.legR: Leg Right
+FALLOUT.BodyTypes.humanoid.torso: Torso
+FALLOUT.BodyTypes.quadruped.armL: Left Front Leg
+FALLOUT.BodyTypes.quadruped.armR: Right Front Leg
+FALLOUT.BodyTypes.quadruped.head: Head
+FALLOUT.BodyTypes.quadruped.label: Quadruped
+FALLOUT.BodyTypes.quadruped.legL: Left Hind Leg
+FALLOUT.BodyTypes.quadruped.legR: Right Hind Leg
+FALLOUT.BodyTypes.quadruped.torso: Torso
+FALLOUT.BodyTypes.robot.armL: Arm 1
+FALLOUT.BodyTypes.robot.armR: Arm 2
+FALLOUT.BodyTypes.robot.head: Optics
+FALLOUT.BodyTypes.robot.label: Robot
+FALLOUT.BodyTypes.robot.legL: Arm 3
+FALLOUT.BodyTypes.robot.legR: Main Body
+FALLOUT.BodyTypes.robot.torso: Main Body
+FALLOUT.CHEM: Chem
+FALLOUT.CREATURE.body: Körper
+FALLOUT.CREATURE.guns: Schusswaffen
+FALLOUT.CREATURE.melee: Nahkampf
+FALLOUT.CREATURE.mind: Geist
+FALLOUT.CREATURE.other: Anderes
+FALLOUT.EffectCreate: Erzeuge Effekt
+FALLOUT.EffectDelete: Entferne Effekt
+FALLOUT.EffectEdit: Bearbeite Effektt
+FALLOUT.EffectToggle: Toggle Effect
+FALLOUT.equipped: Ausgerüstet
+FALLOUT.FOOD: Nahrung
+FALLOUT.HEALTH.current: Aktuelle Gesundheit
+FALLOUT.HEALTH.health: Gesundheit
+FALLOUT.HEALTH.max: Maximale Gesundheit
+FALLOUT.LEVEL.CurrentXP: Aktuelle EP
+FALLOUT.LEVEL.Level: Stufe
+FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
+FALLOUT.LEVEL.RewardXP: EP Belohnung
+FALLOUT.MODS.mods: Mods
+FALLOUT.OTHER: Anderes
+FALLOUT.powered: Powered
+FALLOUT.RANGE.close: C
+FALLOUT.RANGE.extreme: E
+FALLOUT.RANGE.long: L
+FALLOUT.RANGE.medium: M
+FALLOUT.RESISTANCE.energy: Energie
+FALLOUT.RESISTANCE.physical: Körperlich
+FALLOUT.RESISTANCE.poison: Gift
+FALLOUT.RESISTANCE.radiation: Strahlung
+FALLOUT.SKILL.Athletics: Athletik
+FALLOUT.SKILL.Barter: Handel
+FALLOUT.SKILL.Big Guns: Große Waffen
+FALLOUT.SKILL.Energy Weapons: Energiewaffen
+FALLOUT.SKILL.Explosives: Sprengstoffe
+FALLOUT.SKILL.Lockpick: Schlösser knacken
+FALLOUT.SKILL.Medicine: Medizin
+FALLOUT.SKILL.Melee Weapons: Nahkampfwaffen
+FALLOUT.SKILL.Pilot: Pilot
+FALLOUT.SKILL.Repair: Reparatur
+FALLOUT.SKILL.Science: Wissenschaft
+FALLOUT.SKILL.Small Guns: Kleine Waffen
+FALLOUT.SKILL.Sneak: Schleichen
+FALLOUT.SKILL.Speech: Sprache
+FALLOUT.SKILL.Survival: Überleben
+FALLOUT.SKILL.Throwing: Wurfwaffen
+FALLOUT.SKILL.Unarmed: Waffenlos
+FALLOUT.TEMPLATES.Abilities: Extras
+FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
+FALLOUT.TEMPLATES.Addictive: Süchtigmachend
+FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
+FALLOUT.TEMPLATES.AMMO: MUNI
+FALLOUT.TEMPLATES.Apparel_Type: Kleidungsart
+FALLOUT.TEMPLATES.Apparel: Kleidung
+FALLOUT.TEMPLATES.APPAREL: KLEIDUNG
+FALLOUT.TEMPLATES.Armor_Type: Rüstungsart
+FALLOUT.TEMPLATES.ATTACKS: ANGRIFFE
+FALLOUT.TEMPLATES.Attribute: Eigenschaft
+FALLOUT.TEMPLATES.Attributes: Eigenschaften
+FALLOUT.TEMPLATES.Compl: Kompl.
+FALLOUT.TEMPLATES.Complications: Komplikationen
+FALLOUT.TEMPLATES.CONDITIONS: ZUSTÄNDE
+FALLOUT.TEMPLATES.conditions.dehydrated: Dehydrated
+FALLOUT.TEMPLATES.conditions.exhausted: Exhausted
+FALLOUT.TEMPLATES.conditions.fatigue: Erschöpfung
+FALLOUT.TEMPLATES.conditions.full: Full
+FALLOUT.TEMPLATES.conditions.hunger: Hunger
+FALLOUT.TEMPLATES.conditions.hungry: Hungry
+FALLOUT.TEMPLATES.conditions.hydrated: Hydrated
+FALLOUT.TEMPLATES.conditions.peckish: Peckish
+FALLOUT.TEMPLATES.conditions.quenched: Quenched
+FALLOUT.TEMPLATES.conditions.rested: Rested
+FALLOUT.TEMPLATES.conditions.sated: Sated
+FALLOUT.TEMPLATES.conditions.sleep: Schlaf
+FALLOUT.TEMPLATES.conditions.starving: Starving
+FALLOUT.TEMPLATES.conditions.thirst: Durst
+FALLOUT.TEMPLATES.conditions.thirsty: Thirsty
+FALLOUT.TEMPLATES.conditions.tired: Tired
+FALLOUT.TEMPLATES.conditions.weary: Weary
+FALLOUT.TEMPLATES.Consumable_Type: Verbrauchsgutart
+FALLOUT.TEMPLATES.Create_Ammo: Erstelle Munition
+FALLOUT.TEMPLATES.Create_Apparel_Mod: Erstelle Kleidungsmod
+FALLOUT.TEMPLATES.Create_books_and_magz: Erstelle Bücher und Magazine
+FALLOUT.TEMPLATES.Create_Consumable: Erstelle Verbrauchsgut
+FALLOUT.TEMPLATES.Create_Miscellany: Erstelle Verschiedenes
+FALLOUT.TEMPLATES.Create_Robot_Module: Erstelle Robotermodul
+FALLOUT.TEMPLATES.Create_Special_Ability: Erstelle Sonderfähigkeit
+FALLOUT.TEMPLATES.Create_Weapon_Mod: Erstelle Waffenmod
+FALLOUT.TEMPLATES.Create_Weapon: Erstelle Waffe
+FALLOUT.TEMPLATES.Creature_Attribute: Attribut der Kreatur
+FALLOUT.TEMPLATES.Creature_Skill: Fertigkeit der Kreatur
+FALLOUT.TEMPLATES.current: aktuell
+FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
+FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
+FALLOUT.TEMPLATES.DAMAGE: SCHADEN
+FALLOUT.TEMPLATES.Data: Daten
+FALLOUT.TEMPLATES.Default_Attribute: Standardattribut
+FALLOUT.TEMPLATES.DEFENSE: VERTEIDIGUNG
+FALLOUT.TEMPLATES.Delete_Item: Entferne Gegenstand
+FALLOUT.TEMPLATES.Delete: Entfernen
+FALLOUT.TEMPLATES.DERIVED: ABGELEITET
+FALLOUT.TEMPLATES.Description: Beschreibung
+FALLOUT.TEMPLATES.Duration: Dauer
+FALLOUT.TEMPLATES.Edit_Item: Bearbeite Gegenstand
+FALLOUT.TEMPLATES.Effect: Effekt
+FALLOUT.TEMPLATES.Effects: Effekte
+FALLOUT.TEMPLATES.Encumbrance_Level: Tragekapazität
+FALLOUT.TEMPLATES.ENG: ENG
+FALLOUT.TEMPLATES.FAVORITE_WEAPONS: LIEBLINGSWAFFEN
+FALLOUT.TEMPLATES.FIRE_RATE: FEUERRATE
+FALLOUT.TEMPLATES.Gear: Ausrüstung
+FALLOUT.TEMPLATES.GENERAL: GENERELL
+FALLOUT.TEMPLATES.Healthy: Gesund
+FALLOUT.TEMPLATES.HitLocationLabel: Trefferzone
+FALLOUT.TEMPLATES.HP_Healed: Trefferpunkte
+FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
+FALLOUT.TEMPLATES.INJURIES: VERLETZUNGEN
+FALLOUT.TEMPLATES.Injury_Left_Click: Verletzung (Linksklick)
+FALLOUT.TEMPLATES.Irradiated: Verstrahlt
+FALLOUT.TEMPLATES.Issue: Ausgabe
+FALLOUT.TEMPLATES.lbs: Pfund
+FALLOUT.TEMPLATES.Learned: Erlernt
+FALLOUT.TEMPLATES.LOCATIONS_INJURIES: ORTE & VERLETZUNGEN
+FALLOUT.TEMPLATES.Locations: Orte
+FALLOUT.TEMPLATES.Luck: Glück
+FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX GRUPPEN AP
+FALLOUT.TEMPLATES.max: max
+FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.MELEE_BONUS: NAHKAMPFBONUS
+FALLOUT.TEMPLATES.MELEE_DAMAGE: NAHKAMPFSCHADEN
+FALLOUT.TEMPLATES.Mod_Type: Mod Typ
+FALLOUT.TEMPLATES.MODULES: MODULE
+FALLOUT.TEMPLATES.Name_Prefix: Name Präfix
+FALLOUT.TEMPLATES.OVERSEER_AP: SPIELLEITERIN AP
+FALLOUT.TEMPLATES.PARTY_AP: GRUPPE AP
+FALLOUT.TEMPLATES.PERK: EXTRA
+FALLOUT.TEMPLATES.PHYS: PHYS
+FALLOUT.TEMPLATES.Points: Punkte
+FALLOUT.TEMPLATES.POISON: GIFT
+FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: ENERGIERÜSTUNG GESUNDHEIT
+FALLOUT.TEMPLATES.Qualities: Eigenschaften
+FALLOUT.TEMPLATES.RAD: STR
+FALLOUT.TEMPLATES.RADIATION: STRAHLUNG
+FALLOUT.TEMPLATES.RANGE: REICHWEITE
+FALLOUT.TEMPLATES.Rank: Rang
+FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
+FALLOUT.TEMPLATES.Re_roll: Wiederholungswurf
+FALLOUT.TEMPLATES.Requirements: Voraussetzungen
+FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RESISTANCE GENERAL BONUS
+FALLOUT.TEMPLATES.Resistances: Resistenzen
+FALLOUT.TEMPLATES.RESISTANCES: RESISTENZEN
+FALLOUT.TEMPLATES.Roll_Formula: Wurfformel
+FALLOUT.TEMPLATES.Skill_Tag: Spezialfertigkeit
+FALLOUT.TEMPLATES.Skill_Value: Fertigkeitswert
+FALLOUT.TEMPLATES.SKILL: FERTIGKEIT
+FALLOUT.TEMPLATES.SKILLS: FERTIGKEITEN
+FALLOUT.TEMPLATES.Source: Quelle
+FALLOUT.TEMPLATES.Status: Status
+FALLOUT.TEMPLATES.Successes: Erfolge
+FALLOUT.TEMPLATES.Tag: Spez.
+FALLOUT.TEMPLATES.Tear: Abnutzung & Verschleiß
+FALLOUT.TEMPLATES.TN: ZW
+FALLOUT.TEMPLATES.Total: Gesamt
+FALLOUT.TEMPLATES.Treated_injury_Right_Click: Behandelte Verletzung (Rechtsklick)
+FALLOUT.TEMPLATES.Use_Agility: Nutze Beweglichkeit
+FALLOUT.TEMPLATES.Use_Charisma: Nutze Charisma
+FALLOUT.TEMPLATES.Use_Endurance: Nutze Ausdauer
+FALLOUT.TEMPLATES.Use_Intelligence: Nutze Intelligenz
+FALLOUT.TEMPLATES.Use_Luck: Nutze Glück
+FALLOUT.TEMPLATES.Use_Perception: Nutze Wahrnehmung
+FALLOUT.TEMPLATES.Use_Strength: Nutze Stärke
+FALLOUT.TEMPLATES.WEAPON_QUALITIES: WAFFENEIGENSCHAFTEN
+FALLOUT.TEMPLATES.Weapon_Type: Waffenart
+FALLOUT.TEMPLATES.Weapons: Waffen
+FALLOUT.UI.Add: Hinzufügen
+FALLOUT.UI.APPAREL_MODS: Kleidung Mods
+FALLOUT.UI.BOOKS_AND_MAGZS: Bücher und Magazine
+FALLOUT.UI.CAPS: Kronkorken
+FALLOUT.UI.CarryWeight: Aktuelle Tragekapazität
+FALLOUT.UI.CONSUMABLES: Verbrauchsgegenstände
+FALLOUT.UI.Cost: Kosten
+FALLOUT.UI.Damage: Schaden
+FALLOUT.UI.DISEASES: Diseases
+FALLOUT.UI.favorite: Favorit
+FALLOUT.UI.INVENTORY: Inventar
+FALLOUT.UI.MISCELLANY: Verschiedenes
+FALLOUT.UI.Name: Name
+FALLOUT.UI.ORIGIN: HERKUNFT
+FALLOUT.UI.OTHER: Anderes
+FALLOUT.UI.Perks: Extras
+FALLOUT.UI.Qty: Qty
+FALLOUT.UI.Quantity: Anzahl
+FALLOUT.UI.Rarity: Seltenheit
+FALLOUT.UI.ROBOT_MODULES: Roboter Module
+FALLOUT.UI.SPECIAL_ABILITY: Sonderfähigkeit
+FALLOUT.UI.stashed: Verstaut
+FALLOUT.UI.Type: Art
+FALLOUT.UI.UNSORTED: Unsortiert
+FALLOUT.UI.WEAPON_MODS: Waffen Mods
+FALLOUT.UI.Weight: Gewicht
+FALLOUT.WEAPONS.damageEffect.arc: Arc
+FALLOUT.WEAPONS.damageEffect.breaking: Panzerbrechend
+FALLOUT.WEAPONS.damageEffect.burst: Feuerstoß
+FALLOUT.WEAPONS.damageEffect.freeze: Freeze
+FALLOUT.WEAPONS.damageEffect.persistent: Anhaltend
+FALLOUT.WEAPONS.damageEffect.piercing: Durchschlagend
+FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktiv
+FALLOUT.WEAPONS.damageEffect.spread: Streuung
+FALLOUT.WEAPONS.damageEffect.stun: Betäubend
+FALLOUT.WEAPONS.damageEffect.vicious: Verheerend
+FALLOUT.WEAPONS.damageType.energy: Energie
+FALLOUT.WEAPONS.damageType.physical: Physisch
+FALLOUT.WEAPONS.damageType.poison: Gift
+FALLOUT.WEAPONS.damageType.radiation: Strahlung
+FALLOUT.WEAPONS.weaponQuality.accurate: Präzise
+FALLOUT.WEAPONS.weaponQuality.blast: Explosiv
+FALLOUT.WEAPONS.weaponQuality.closeQuarters: Beengte Verhältnisse
+FALLOUT.WEAPONS.weaponQuality.concealed: Verborgen
+FALLOUT.WEAPONS.weaponQuality.debilitating: Schwächend
+FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
+FALLOUT.WEAPONS.weaponQuality.inaccurate: Ungenau
+FALLOUT.WEAPONS.weaponQuality.limited: Limited
+FALLOUT.WEAPONS.weaponQuality.mine: Mine
+FALLOUT.WEAPONS.weaponQuality.nightVision: Nachtsicht
+FALLOUT.WEAPONS.weaponQuality.parry: Parieren
+FALLOUT.WEAPONS.weaponQuality.recon: Aufklärung
+FALLOUT.WEAPONS.weaponQuality.reliable: Zuverlässig
+FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
+FALLOUT.WEAPONS.weaponQuality.suppressed: Schallgedämpft
+FALLOUT.WEAPONS.weaponQuality.thrown: Geworfen
+FALLOUT.WEAPONS.weaponQuality.twoHanded: Zweihändig
+FALLOUT.WEAPONS.weaponQuality.unreliable: Unzuverlässig
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
+FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
+FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
+FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
+FALLOUT.WEAPONS.weaponType.explosives: Sprengstoffe
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Nahkampfwaffen
+FALLOUT.WEAPONS.weaponType.smallGuns: Kleine Waffen
+FALLOUT.WEAPONS.weaponType.throwing: Wurfwaffen
+FALLOUT.WEAPONS.weaponType.unarmed: Waffenlos
+ITEM.AmmoPerShot: Ammo Per Shot
+TYPES.Actor.character: Charakter
+TYPES.Actor.creature: Kreatur
+TYPES.Actor.npc: NSC
+TYPES.Actor.robot: Roboter
+TYPES.Item.ammo: Munition
+TYPES.Item.apparenl_mod: Kleidung Mod
+TYPES.Item.apparenl: Kleidung
+TYPES.Item.books_and_magz: Buch/Magazin
+TYPES.Item.consumable: Verbrauchsgegenstand
+TYPES.Item.disease: Disease
+TYPES.Item.miscellany: Verschiedenes
+TYPES.Item.perk: Extra
+TYPES.Item.robot_armor: Roboterrüstung
+TYPES.Item.robot_mod: Robotermodul
+TYPES.Item.skill: Fertigkeit
+TYPES.Item.special_ability: Sonderfähigkeit
+TYPES.Item.weapon_mod: Waffenmod
+TYPES.Item.weapon: Waffe

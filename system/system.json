@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout 2d20",
 	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.2.4",
+	"version": "11.2.5",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
@@ -46,7 +46,7 @@
 	],
 	"packFolders": [
 		{
-			"name": "Fallout 2d20 System",
+			"name": "Fallout RPG",
 			"sorting": "a",
 			"color": "#293f5f",
 			"packs": [
@@ -57,38 +57,38 @@
 	],
 	"languages": [
 		{
+			"lang": "de",
+			"name": "Deutsch",
+			"path": "i18n/de.json",
+			"flags": {}
+		},
+		{
 			"lang": "en",
 			"name": "English",
-			"path": "lang/en.json",
+			"path": "i18n/en.json",
 			"flags": {}
 		},
 		{
 			"lang": "fr",
 			"name": "Français",
-			"path": "lang/fr.json",
-			"flags": {}
-		},
-		{
-			"lang": "pt-BR",
-			"name": "Português (Brasil)",
-			"path": "lang/pt-br.json",
+			"path": "i18n/fr.json",
 			"flags": {}
 		},
 		{
 			"lang": "pl",
 			"name": "Polski",
-			"path": "lang/pl.json",
+			"path": "i18n/pl.json",
 			"flags": {}
 		},
 		{
-			"lang": "de",
-			"name": "Deutsch",
-			"path": "lang/de.json",
+			"lang": "pt-BR",
+			"name": "Português (Brasil)",
+			"path": "i18n/pt_BR.json",
 			"flags": {}
 		}
 	],
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
-	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
+	"manifest": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/system.json",
 	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip"
 }

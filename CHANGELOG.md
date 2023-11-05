@@ -1,7 +1,12 @@
+## v11.2.3
+
+### Chore
+- Translation updates are now all handled via Crowdin to simplify the process of contributing translations.  See here for more details: https://github.com/Muttley/foundryvtt-fallout/wiki/Other-ways-to-contribute#translation
+
 ## v11.2.4
 
 ### Bugfixes
-- [#19] Actor skills being overwritten when the Actor is duplicated
+- [#19] Actor skills being overwritten when an Actor is duplicated
 
 ## v11.2.3
 
