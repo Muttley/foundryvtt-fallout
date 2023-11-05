@@ -409,9 +409,11 @@ export class FalloutActor extends Actor {
 				&& data.items.filter(i => i.type === "skill").length > 0;
 
 			if (!alreadyHasSkills) {
-				const skillsCompendium = game.settings.get(
+				let skillsCompendium = game.settings.get(
 					"fallout", "skillsCompendium"
 				);
+
+				if (!skillsCompendium) skillsCompendium = "fallout.skills";
 
 				let packSkills =
 					await game.packs.get(skillsCompendium).getDocuments();
