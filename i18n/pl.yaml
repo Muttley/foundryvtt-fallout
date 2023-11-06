@@ -235,7 +235,7 @@ FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
 FALLOUT.TEMPLATES.SKILL: Umiejętność
 FALLOUT.TEMPLATES.SKILLS: Umiejętności
-FALLOUT.TEMPLATES.Source: Źródło   
+FALLOUT.TEMPLATES.Source: Źródło
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Successes: Skukces
 FALLOUT.TEMPLATES.Tag: Specjalizacja
@@ -284,7 +284,7 @@ FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
 FALLOUT.WEAPONS.damageEffect.freeze: Freeze
 FALLOUT.WEAPONS.damageEffect.persistent: Uporczywe
-FALLOUT.WEAPONS.damageEffect.piercing: Przeszywające 
+FALLOUT.WEAPONS.damageEffect.piercing: Przeszywające
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktywne
 FALLOUT.WEAPONS.damageEffect.spread: Rozrzut
 FALLOUT.WEAPONS.damageEffect.stun: Ogłuszające
@@ -326,8 +326,8 @@ TYPES.Actor.creature: Stworzenie
 TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
 TYPES.Item.ammo: Amunicja
-TYPES.Item.apparenl_mod: Modyfikacje Odzież
-TYPES.Item.apparenl: Odzież
+TYPES.Item.apparel_mod: Modyfikacje Odzież
+TYPES.Item.apparel: Odzież
 TYPES.Item.books_and_magz: Książki/magazyny
 TYPES.Item.consumable: Zużywalne
 TYPES.Item.disease: Choroby
