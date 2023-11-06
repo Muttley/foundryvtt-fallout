@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout 2d20",
 	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.2.5",
+	"version": "11.2.6",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"

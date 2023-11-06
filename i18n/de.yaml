@@ -326,8 +326,8 @@ TYPES.Actor.creature: Kreatur
 TYPES.Actor.npc: NSC
 TYPES.Actor.robot: Roboter
 TYPES.Item.ammo: Munition
-TYPES.Item.apparenl_mod: Kleidung Mod
-TYPES.Item.apparenl: Kleidung
+TYPES.Item.apparel_mod: Kleidung Mod
+TYPES.Item.apparel: Kleidung
 TYPES.Item.books_and_magz: Buch/Magazin
 TYPES.Item.consumable: Verbrauchsgegenstand
 TYPES.Item.disease: Disease

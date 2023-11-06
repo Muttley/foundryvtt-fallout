@@ -83,17 +83,17 @@
             <div class="body-part armR {{system.body_parts.armR.status}}"></div>
             <div class="body-part legL {{system.body_parts.legL.status}}"></div>
             <div class="body-part legR {{system.body_parts.legR.status}}"></div>
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.head
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.head
             keypart="head" apparel=system.outfitedLocations.head.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.torso
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.torso
             keypart="torso" apparel=system.outfitedLocations.torso.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.armL
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.armL
             keypart="armL" apparel=system.outfitedLocations.armL.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.armR
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.armR
             keypart="armR" apparel=system.outfitedLocations.armR.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.legL
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.legL
             keypart="legL" apparel=system.outfitedLocations.legL.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.html" bodypart=system.body_parts.legR
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.legR
             keypart="legR" apparel=system.outfitedLocations.legR.name}}
         </div>
 
@@ -232,12 +232,12 @@
 {{!-- FAVOURITE ROW // EQUIPPED --}}
 <div class="status footer grid grid-5col">
     <div class="grid-span-2">
-        {{> "systems/fallout/templates/actor/parts/actor-favorite_weapons.html"}}
+        {{> "systems/fallout/templates/actor/parts/actor-favorite_weapons.hbs"}}
     </div>
     <div class="grid-span-2">
-        {{> "systems/fallout/templates/actor/parts/actor-diseases.html"}}
+        {{> "systems/fallout/templates/actor/parts/actor-diseases.hbs"}}
     </div>
     <div>
-        {{> "systems/fallout/templates/actor/parts/actor-conditions.html"}}
+        {{> "systems/fallout/templates/actor/parts/actor-conditions.hbs"}}
     </div>
 </div>

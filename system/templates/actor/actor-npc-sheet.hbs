@@ -1,7 +1,7 @@
 <form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
 
   {{!-- Sheet Header --}}
-  {{> "systems/fallout/templates/actor/parts/actor-header.html"}}
+  {{> "systems/fallout/templates/actor/parts/actor-header.hbs"}}
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
@@ -30,7 +30,7 @@
             </div>
             {{/each}}
           </div>
-          
+
 
           {{!-- HP INIT DEF --}}
           <div class="flexrow resource-row">
@@ -74,7 +74,7 @@
           </div>
 
           {{!-- BODY STATUS --}}
-          {{> "systems/fallout/templates/actor/parts/npc-body.html" FALLOUT=FALLOUT}}
+          {{> "systems/fallout/templates/actor/parts/npc-body.hbs" FALLOUT=FALLOUT}}
           {{!-- END BODY STATUS --}}
 
           {{!-- RESISTANCES --}}
@@ -94,7 +94,7 @@
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
             <textarea class="color-prim" name="system.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{system.injuries}}</textarea>
           </div> -->
-          
+
         </div>
 
         {{!-- RIGHT COLUMN __________________________________________________ --}}
@@ -129,12 +129,12 @@
             <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.ATTACKS"}}</h4>
             <div>
               {{!-- Owned Weapons Tab --}}
-              {{> "systems/fallout/templates/actor/parts/actor-weapons.html"}}
+              {{> "systems/fallout/templates/actor/parts/actor-weapons.hbs"}}
             </div>
           </div>
           <div class="resource-row">
             {{!-- Owned Abilities Tab --}}
-            {{> "systems/fallout/templates/actor/parts/actor-special_abilities.html"}}
+            {{> "systems/fallout/templates/actor/parts/actor-special_abilities.hbs"}}
           </div>
           <div class="resource-row">
             <ol class="items-list">
@@ -152,7 +152,7 @@
                 </span>
               </li>
               {{#each inventory as |item id|}}
-              {{> "systems/fallout/templates/actor/parts/simple-expandable-item.html" item=item}}
+              {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item}}
               {{/each}}
             </ol>
           </div>
@@ -168,7 +168,7 @@
 
     {{!-- Active Effects Tab --}}
     <!-- <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-      {{> "systems/fallout/templates/actor/parts/actor-effects.html"}}
+      {{> "systems/fallout/templates/actor/parts/actor-effects.hbs"}}
     </div> -->
 
   </section>

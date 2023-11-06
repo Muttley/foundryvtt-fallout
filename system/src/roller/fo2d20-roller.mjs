@@ -144,7 +144,7 @@ export class Roller2D20 {
 			item: item,
 			actor: actor,
 		};
-		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.html", rollData);
+		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
 		let falloutRoll = {};
 		falloutRoll.rollname = rollname;
 		falloutRoll.dicesRolled = dicesRolled;
@@ -321,7 +321,7 @@ export class Roller2D20 {
 			weaponDamageTypesList: weaponDamageTypesList,
 			weaponDamageEffects: weaponDamageEffects,
 		};
-		const html = await renderTemplate("systems/fallout/templates/chat/rollD6.html", rollData);
+		const html = await renderTemplate("systems/fallout/templates/chat/rollD6.hbs", rollData);
 		let falloutRoll = {};
 		falloutRoll.rollname = rollname;
 		falloutRoll.dicesRolled = dicesRolled;

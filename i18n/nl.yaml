@@ -1,18 +1,17 @@
-
-FALLOUT.AbilityAbbr.agi: agi
+FALLOUT.AbilityAbbr.agi: beh
 FALLOUT.AbilityAbbr.cha: cha
-FALLOUT.AbilityAbbr.end: end
+FALLOUT.AbilityAbbr.end: uit
 FALLOUT.AbilityAbbr.int: int
-FALLOUT.AbilityAbbr.luc: luc
-FALLOUT.AbilityAbbr.per: per
-FALLOUT.AbilityAbbr.str: str
-FALLOUT.AbilityAgi: Agility
+FALLOUT.AbilityAbbr.luc: gel
+FALLOUT.AbilityAbbr.per: opl
+FALLOUT.AbilityAbbr.str: kra
+FALLOUT.AbilityAgi: Behendigheid
 FALLOUT.AbilityCha: Charisma
-FALLOUT.AbilityEnd: Endurance
-FALLOUT.AbilityInt: Intelligence
-FALLOUT.AbilityLuc: Luck
-FALLOUT.AbilityPer: Perception
-FALLOUT.AbilityStr: Strength
+FALLOUT.AbilityEnd: Uithoudingsvermogen
+FALLOUT.AbilityInt: Intellect
+FALLOUT.AbilityLuc: Geluk
+FALLOUT.AbilityPer: Oplettendheid
+FALLOUT.AbilityStr: Kracht
 FALLOUT.Add: Add
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
@@ -327,8 +326,8 @@ TYPES.Actor.creature: Creature
 TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robot
 TYPES.Item.ammo: Ammo
-TYPES.Item.apparel_mod: Apparel Mod
-TYPES.Item.apparel: Apparel
+TYPES.Item.apparenl_mod: Apparel Mod
+TYPES.Item.apparenl: Apparel
 TYPES.Item.books_and_magz: Book/Magazine
 TYPES.Item.consumable: Consumable
 TYPES.Item.disease: Disease

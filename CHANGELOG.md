@@ -1,6 +1,16 @@
-## v11.2.3
+## v11.2.6
 
-### Chore
+### Bugfixes
+- [#27] Text for some item sheets seems to be broken
+- [#28] Editing/Deleting items broken due to missing data tag
+- [#29] Encumbrance not being calculated correctly
+
+### Chores
+- Merged Polish translation updates from Crowdin
+
+## v11.2.5
+
+### Chores
 - Translation updates are now all handled via Crowdin to simplify the process of contributing translations.  See here for more details: https://github.com/Muttley/foundryvtt-fallout/wiki/Other-ways-to-contribute#translation
 
 ## v11.2.4

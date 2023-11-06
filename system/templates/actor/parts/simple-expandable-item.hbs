@@ -1,4 +1,4 @@
-<li class="item">
+<li class="item" data-item-id="{{item._id}}">
 	<div class="flexrow">
 		{{#if (ne item.system.quantity undefined)}}
 		<input type="number" class="item-quantity num-short-2" name="system.quantity" value="{{item.system.quantity}}" min="0">&nbsp;

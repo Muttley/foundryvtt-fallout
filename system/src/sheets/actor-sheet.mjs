@@ -12,7 +12,7 @@ export class FalloutActorSheet extends ActorSheet {
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			template: "systems/fallout/templates/actor/actor-sheet.html",
+			template: "systems/fallout/templates/actor/actor-sheet.hbs",
 			width: 780,
 			height: 930,
 			tabs: [
@@ -27,7 +27,7 @@ export class FalloutActorSheet extends ActorSheet {
 
 	/** @override */
 	get template() {
-		return `systems/fallout/templates/actor/actor-${this.actor.type}-sheet.html`;
+		return `systems/fallout/templates/actor/actor-${this.actor.type}-sheet.hbs`;
 	}
 
 	/* -------------------------------------------- */
