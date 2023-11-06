@@ -1,3 +1,13 @@
+## v11.2.6
+
+### Bugfixes
+- [#27] Text for some item sheets seems to be broken
+- [#28] Editing/Deleting items broken due to missing data tag
+- [#29] Encumbrance not being calculated correctly
+
+### Chores
+- Merged Polish translation updates from Crowdin
+
 ## v11.2.5
 
 ### Chores
