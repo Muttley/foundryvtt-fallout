@@ -8,10 +8,10 @@ FALLOUT.AbilityAbbr.str: kra
 FALLOUT.AbilityAgi: Behendigheid
 FALLOUT.AbilityCha: Charisma
 FALLOUT.AbilityEnd: Uithoudingsvermogen
-FALLOUT.AbilityInt: Intelligence
-FALLOUT.AbilityLuc: Luck
-FALLOUT.AbilityPer: Perception
-FALLOUT.AbilityStr: Strength
+FALLOUT.AbilityInt: Intellect
+FALLOUT.AbilityLuc: Geluk
+FALLOUT.AbilityPer: Oplettendheid
+FALLOUT.AbilityStr: Kracht
 FALLOUT.Add: Add
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
