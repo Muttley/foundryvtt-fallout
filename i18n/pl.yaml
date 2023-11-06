@@ -19,7 +19,7 @@ FALLOUT.APPAREL.headgear: Nakrycie glowy
 FALLOUT.APPAREL.outfit: Strój
 FALLOUT.APPAREL.plating: Poszycie
 FALLOUT.APPAREL.powerArmor: Pancerz wspomagany
-FALLOUT.BEVERAGE: Beverage
+FALLOUT.BEVERAGE: Napoje
 FALLOUT.BODYLOCATION_ABBR.character.armL: LR
 FALLOUT.BODYLOCATION_ABBR.character.armR: PR
 FALLOUT.BODYLOCATION_ABBR.character.head: G
@@ -205,8 +205,8 @@ FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.Luck: Szczęście
 FALLOUT.TEMPLATES.MAX_PARTY_AP: Maksymalne Punkty Ackcji Drużyny
-FALLOUT.TEMPLATES.max: max
-FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.max: maks
+FALLOUT.TEMPLATES.MAX: MAKS
 FALLOUT.TEMPLATES.MELEE_BONUS: BONUS OBRAŻEŃ WRĘCZ
 FALLOUT.TEMPLATES.MELEE_DAMAGE: OBRAŻENIA WRĘCZ
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
@@ -311,7 +311,7 @@ FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.twoHanded: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
-FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
 FALLOUT.WEAPONS.weaponType.creatureAttack: Atak Stwora
 FALLOUT.WEAPONS.weaponType.energyWeapons: Broń Energetyczna
