@@ -326,8 +326,8 @@ TYPES.Actor.creature: Criatura
 TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robô
 TYPES.Item.ammo: Ammo
-TYPES.Item.apparel_mod: Mod de Vestuário
-TYPES.Item.apparel: Vestuário
+TYPES.Item.apparel_mod: Apparel Mod
+TYPES.Item.apparel: Apparel
 TYPES.Item.books_and_magz: Livro/Revista
 TYPES.Item.consumable: Consumível
 TYPES.Item.disease: Disease
