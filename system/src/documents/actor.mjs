@@ -329,13 +329,12 @@ export class FalloutActor extends Actor {
 		// remove powered powerArmor pieces for characters
 		if (this.type === "character") {
 			physicalItems = physicalItems.filter(i => {
-				return (i.system.appareltype === "powerArmor" && !i.system.powered);
-				// if (i.system.appareltype === "powerArmor") {
-				// 	if (!i.system.powered) return i;
-				// }
-				// else {
-				// 	return i;
-				// }
+				if (i.system.appareltype === "powerArmor") {
+					return !i.system.powered;
+				}
+				else {
+					return true;
+				}
 			});
 		}
 		let physicalItemsMap = physicalItems.map(i => i.toObject());
