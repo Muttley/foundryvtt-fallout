@@ -326,8 +326,8 @@ TYPES.Actor.creature: Créature
 TYPES.Actor.npc: PNJ
 TYPES.Actor.robot: Robot
 TYPES.Item.ammo: Mun
-TYPES.Item.apparel_mod: Mod Habillement
-TYPES.Item.apparel: Habillement
+TYPES.Item.apparel_mod: Apparel Mod
+TYPES.Item.apparel: Apparel
 TYPES.Item.books_and_magz: Livre/Magazine
 TYPES.Item.consumable: Consommable
 TYPES.Item.disease: Maladie
