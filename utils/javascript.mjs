@@ -1,7 +1,6 @@
 import { rollup } from "rollup";
 import eslint from "gulp-eslint-new";
 import gulp from "gulp";
-import livereload from "gulp-livereload";
 import gulpIf from "gulp-if";
 import mergeStream from "merge-stream";
 import nodeResolve from "@rollup/plugin-node-resolve";
@@ -55,7 +54,6 @@ export const lint = lintJavascript;
 // Watch for file changes and lint when they do
 //
 export async function watchJavascriptUpdates() {
-	livereload.listen();
 	gulp.watch(SRC_LINT_PATHS, gulp.parallel(lint, compile));
 }
 export const watchUpdates = watchJavascriptUpdates;
