@@ -8,7 +8,7 @@
 			"type": "chrome",
 			"request": "launch",
 			"name": "Fallout 2d20 System",
-			"url": "http://localhost:30000",
+			"url": "http://localhost:31001",
 			"webRoot": "${workspaceFolder}/system"
 		}
 	]
