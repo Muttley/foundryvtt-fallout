@@ -3,6 +3,9 @@
 ### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
 
+### Chores
+- [#35] Remove usage of deprecated `ActiveEffect._getSourceName()`
+
 ## v11.2.6
 
 ### Bugfixes
