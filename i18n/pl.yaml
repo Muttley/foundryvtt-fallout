@@ -129,7 +129,7 @@ FALLOUT.SKILL.Unarmed: Bijatyka
 FALLOUT.TEMPLATES.Abilities: Umiejętności
 FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
 FALLOUT.TEMPLATES.Addictive: Uzależniające
-FALLOUT.TEMPLATES.Alcoholic: Alkocholowe
+FALLOUT.TEMPLATES.Alcoholic: Alkoholowe
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
@@ -199,7 +199,7 @@ FALLOUT.TEMPLATES.INJURIES: Rany
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Napromieniowany
 FALLOUT.TEMPLATES.Issue: Problem
-FALLOUT.TEMPLATES.lbs: lbs
+FALLOUT.TEMPLATES.lbs: funtów
 FALLOUT.TEMPLATES.Learned: Neuczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
@@ -295,7 +295,7 @@ FALLOUT.WEAPONS.damageType.poison: Trucizna
 FALLOUT.WEAPONS.damageType.radiation: Radjacja
 FALLOUT.WEAPONS.weaponQuality.accurate: Celna
 FALLOUT.WEAPONS.weaponQuality.blast: Wybuchowa
-FALLOUT.WEAPONS.weaponQuality.closeQuarters: 'Zwarcie:'
+FALLOUT.WEAPONS.weaponQuality.closeQuarters: Zwarcie
 FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
