@@ -16,7 +16,7 @@
                 {{#select system.apparelType}}
                 <select name="system.apparelType">
                     {{#each FALLOUT.APPAREL_TYPE as |item key|}}
-                    <option class="flo-option" value="{{key}}">{{localize item}}</option>
+                    <option value="{{key}}">{{localize item}}</option>
                     {{/each}}
                 </select>
                 {{/select}}

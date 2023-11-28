@@ -511,8 +511,12 @@ export class FalloutActorSheet extends ActorSheet {
 		html.find(".weapon-roll").click(ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("item-id"));
-			let skillName; let skill; let attribute;
+
+			let attribute;
 			let rollName = item.name;
+			let skill;
+			let skillName;
+
 			if (item.actor?.type === "creature") {
 				skillName = game.i18n.localize(
 					`FALLOUT.CREATURE.${item.system.skill}`
@@ -522,33 +526,52 @@ export class FalloutActorSheet extends ActorSheet {
 				attribute = item.actor.system[item.system.attribute];
 			}
 			else {
-				skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[item.system.weaponType];
+				skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[
+					item.system.weaponType
+				];
+
 				let skillItem = item.actor.items.find(i => i.name === skillName);
-				if (skillItem) skill = skillItem.system;
-				else skill = { value: 0, tag: false, defaultAttribute: "str"};
+
+				if (skillItem) {
+					skill = skillItem.system;
+				}
+				else {
+					skill = { value: 0, tag: false, defaultAttribute: "str"};
+				}
+
 				attribute = item.actor.system.attributes[skill.defaultAttribute];
 			}
 
 			// REDUCE AMMO
-			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				if (this.actor.type === "character" || this.actor.type === "robot") {
-					if (item.system.ammo !== "") {
-						const ammo = item.actor.items.find(i => i.name === item.system.ammo);
-						if (!ammo) {
-							ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
-							return;
-						}
-						if (ammo.system.quantity<item.system.ammoPerShot) {
-							ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
-							return;
-						}
-					}
+			const autoCalculateAmmo = game.settings.get(
+				"fallout", "automaticAmmunitionCalculation"
+			);
+
+			const actorCanUseAmmo =
+				["character", "robot"].includes(this.actor.type);
+
+			const ammoPopulated = item.system.ammo !== "";
+
+			if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
+				const ammo = item.actor.items.find(
+					i => i.name === item.system.ammo
+				);
+
+				if (!ammo) {
+					ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
+					return;
+				}
+				if (ammo.system.quantity < item.system.ammoPerShot) {
+					ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
+					return;
 				}
 			}
 
 			// Check for unreliable weapon quality
 			let complication = parseInt(this.actor.system.complication);
-			if (item.system.damage.weaponQuality.unreliable.value) complication-=1;
+			if (item.system.damage.weaponQuality.unreliable.value) {
+				complication -= 1;
+			}
 
 			game.fallout.Dialog2d20.createDialog({
 				rollName: rollName,

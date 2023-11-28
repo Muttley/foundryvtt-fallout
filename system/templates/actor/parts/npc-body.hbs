@@ -1,18 +1,18 @@
   <div class="box no-padding bgOdd">
     <div style="display: grid; grid-template-columns: 2fr 40% repeat(5, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
-      <div class="flex align-mid">#</div>  
+      <div class="flex align-mid">#</div>
       <div>{{#select system.bodyType}}
         <select name="system.bodyType" style="font-size: 0.75rem;">
           {{#each FALLOUT.BodyTypes as |type key|}}
-          <option value="{{key}}" class="flo-option" style="font-size: 0.7;">{{localize (concat "FALLOUT.BodyTypes." key ".label")}}</option>
+          <option value="{{key}}" style="font-size: 0.7;">{{localize (concat "FALLOUT.BodyTypes." key ".label")}}</option>
           {{/each}}
         </select>
-        {{/select}}</div>              
+        {{/select}}</div>
       <div class="flex align-mid align-center"><i class="fo-physical resistance-icon" title="physical"></i></div>
       <div class="flex align-mid align-center"><i class="fo-energy resistance-icon" title="energy"></i></div>
       <div class="flex align-mid align-center"><i class="fo-radiation resistance-icon" title="radiation"></i></div>
       <div class="flex align-mid align-center"><div style="background-image: url(systems/fallout/assets/ui/drop.svg); width: 1rem; background-repeat: no-repeat" title="injury">&nbsp;</div></div>
-      <div class="flex align-mid align-center"><div style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat" title="treated injury">&nbsp;</div></div>              
+      <div class="flex align-mid align-center"><div style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat" title="treated injury">&nbsp;</div></div>
     </div>
 
     {{#each system.body_parts as |part key|}}
@@ -22,7 +22,7 @@
       <div><input name="system.body_parts.{{key}}.resistance.physical" type="number" min="0" class="num-short-2" {{#ifCond part.resistance.physical '>' 0}}style="border:none; color:#eee787; background-color:#325885"{{/ifCond}} {{#ifCond part.resistance.physical '==' 0}}style="border:none; color:#0f1b28;"{{/ifCond}} value="{{part.resistance.physical}}"></div>
       <div><input name="system.body_parts.{{key}}.resistance.energy" type="number" min="0" class="num-short-2" {{#ifCond part.resistance.energy '>' 0}}style="border:none; color:#eee787; background-color:#325885"{{/ifCond}} {{#ifCond part.resistance.energy '==' 0}}style="border:none; color:#0f1b28;"{{/ifCond}} value="{{part.resistance.energy}}"></div>
       <div><input name="system.body_parts.{{key}}.resistance.radiation" type="number" min="0" class="num-short-2" {{#ifCond part.resistance.radiation '>' 0}}style="border:none; color:#eee787; background-color:#325885"{{/ifCond}} {{#ifCond part.resistance.radiation '==' 0}}style="border:none; color:#0f1b28;"{{/ifCond}} value="{{part.resistance.radiation}}"></div>
-      <div><input name="system.body_parts.{{key}}.injuryOpenCount" type="number" min="0" class="num-short-2" {{#ifCond part.injuryOpenCount '!=' 0}}style="border:none; color:white; background-color:#ff0000"{{/ifCond}} {{#ifCond part.injuryOpenCount '==' 0}}style="border:none; color:#0f1b28;"{{/ifCond}} value="{{part.injuryOpenCount}}"></div>             
+      <div><input name="system.body_parts.{{key}}.injuryOpenCount" type="number" min="0" class="num-short-2" {{#ifCond part.injuryOpenCount '!=' 0}}style="border:none; color:white; background-color:#ff0000"{{/ifCond}} {{#ifCond part.injuryOpenCount '==' 0}}style="border:none; color:#0f1b28;"{{/ifCond}} value="{{part.injuryOpenCount}}"></div>
       <div><input name="system.body_parts.{{key}}.injuryTreatedCount" type="number" min="0" class="num-short-2" {{#ifCond part.injuryTreatedCount '!=' 0}}style="border:none; color:white; background-color:#a46e30"{{/ifCond}} {{#ifCond part.injuryTreatedCount '==' 0}}style="border:none; color:#0f1b28;"{{/ifCond}} value="{{part.injuryTreatedCount}}"></div>
     </div>
     {{/each}}

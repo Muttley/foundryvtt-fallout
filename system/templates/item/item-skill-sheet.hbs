@@ -1,46 +1,55 @@
 <form class="{{cssClass}}" autocomplete="off">
-  {{> "systems/fallout/templates/item/parts/item-header.hbs"}}
+	{{> "systems/fallout/templates/item/parts/item-header.hbs"}}
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
-    <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
-  </nav>
+	{{!-- Sheet Tab Navigation --}}
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="attributes">
+			{{localize "FALLOUT.TEMPLATES.Attributes"}}
+		</a>
+		<a class="item" data-tab="description">
+			{{localize "FALLOUT.TEMPLATES.Description"}}
+		</a>
+	</nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
+	{{!-- Sheet Body --}}
+	<section class="sheet-body">
 
-    {{!-- Description Tab --}}
-    <div class="tab description" data-group="primary" data-tab="description">
-      {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-    </div>
+		{{!-- Description Tab --}}
+		<div class="tab description" data-group="primary" data-tab="description">
+			{{editor descriptionHTML
+				button=true
+				editable=editable
+				owner=owner
+				rollData=rollData
+				target="system.description"
+			}}
+		</div>
 
-    {{!-- Attributes Tab --}}
-    <div class="tab attributes" data-group="primary" data-tab="attributes">
-      {{!-- As you add new fields, add them in here! --}}
-      <div class="flexrow">
-        <label>{{localize "FALLOUT.TEMPLATES.Skill_Value"}}</label>
-        <input type="number" name="system.value" value="{{system.value}}">
-      </div>
-      <div class="flexrow">
-        <label>{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}</label>
-        <input type="checkbox" name="system.tag" {{#ifCond system.tag '==' true}}checked{{/ifCond}}>
-      </div>
-      <div class="flexrow">
-        <label>{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}</label>
-        <select name="system.defaultAttribute">
-          {{#select system.defaultAttribute}}
-          <option class="flo-option" value="str">{{localize "FALLOUT.AbilityStr"}}</option>
-          <option class="flo-option" value="per">{{localize "FALLOUT.AbilityPer"}}</option>
-          <option class="flo-option" value="end">{{localize "FALLOUT.AbilityEnd"}}</option>
-          <option class="flo-option" value="cha">{{localize "FALLOUT.AbilityCha"}}</option>
-          <option class="flo-option" value="int">{{localize "FALLOUT.AbilityInt"}}</option>
-          <option class="flo-option" value="agi">{{localize "FALLOUT.AbilityAgi"}}</option>
-          <option class="flo-option" value="luc">{{localize "FALLOUT.AbilityLuc"}}</option>
-          {{/select}}
-        </select>
-      </div>
-    </div>
-  </section>
+		{{!-- Attributes Tab --}}
+		<div class="tab attributes" data-group="primary" data-tab="attributes">
+			<div class="flexrow">
+				<label>{{localize "FALLOUT.TEMPLATES.Skill_Value"}}</label>
+				<input type="number" name="system.value" value="{{system.value}}">
+			</div>
+			<div class="flexrow">
+				<label>{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}</label>
+				<input
+					type="checkbox"
+					name="system.tag"
+					{{#ifCond system.tag '==' true}}checked{{/ifCond}}
+				>
+			</div>
+			<div class="flexrow">
+				<label>{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}</label>
+				<select name="system.defaultAttribute">
+					{{selectOptions FALLOUT.attributes
+						selected=system.defaultAttribute
+						localize=true
+						sort=true
+					}}
+				</select>
+			</div>
+		</div>
+	</section>
 
 </form>

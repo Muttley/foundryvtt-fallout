@@ -12,7 +12,11 @@ export class FalloutItemSheet extends ItemSheet {
 			classes: ["fallout", "sheet", "item"],
 			width: 520,
 			height: 520,
-			tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "attributes" }],
+			tabs: [{
+				navSelector: ".sheet-tabs",
+				contentSelector: ".sheet-body",
+				initial: "attributes",
+			}],
 		});
 	}
 
@@ -65,6 +69,48 @@ export class FalloutItemSheet extends ItemSheet {
 			});
 		}
 
+		if (item.type === "weapon") {
+			context.damageTypes = [];
+			for (const key in CONFIG.FALLOUT.WEAPONS.damageType) {
+				context.damageTypes.push({
+					active: item.system?.damage?.damageType[key] ?? false,
+					key,
+					label: game.i18n.localize(CONFIG.FALLOUT.WEAPONS.damageType[key]),
+				});
+			}
+
+			const weaponQualities = [];
+			for (const key in CONFIG.FALLOUT.WEAPONS.weaponQuality) {
+				weaponQualities.push({
+					active: item.system?.damage?.weaponQuality[key].value ?? false,
+					key,
+					label: game.i18n.localize(CONFIG.FALLOUT.WEAPONS.weaponQuality[key].label),
+				});
+
+				context.weaponQualities = weaponQualities.sort(
+					(a, b) => a.label.localeCompare(b.label)
+				);
+			}
+
+			const damageEffects = [];
+			for (const key in CONFIG.FALLOUT.WEAPONS.damageEffect) {
+				const effect = CONFIG.FALLOUT.WEAPONS.damageEffect[key] ?? {};
+				const itemData = item.system?.damage?.damageEffect[key] ?? {};
+
+				damageEffects.push({
+					active: itemData.value ?? false,
+					hasRanks: effect.hasRanks,
+					key,
+					label: game.i18n.localize(effect.label),
+					rank: effect.hasRanks ? itemData.rank : -1,
+				});
+
+				context.damageEffects = damageEffects.sort(
+					(a, b) => a.label.localeCompare(b.label)
+				);
+			}
+		}
+
 		return context;
 	}
 
@@ -77,49 +123,11 @@ export class FalloutItemSheet extends ItemSheet {
 		// Everything below here is only needed if the sheet is editable
 		if (!this.isEditable) return;
 
-		// Weapon Qualities Toggle
-		html.find(".wpn-tag-toggler").click(async ev => {
-			let tagEl = $(ev.currentTarget).parent(".wpn-tag");
-			// let tagKey = tagEl.data("tagKey");
-			let tagValue = !tagEl.data("tagValue");
-			tagEl.data("tagValue", tagValue);
-			let tagType = tagEl.data("tagType");
-			// let itemId = this.document.data._id;
-			let flagKey = "";
-			if (tagType === "weaponQuality") flagKey = "weaponQualities";
-			else if (tagType === "damageEffect") flagKey = "damageEffects";
-			let flags = duplicate(this.item.getFlag("fallout", flagKey));
-			let box = tagEl.parent(".item-list");
-			$(box.children()).each((q, i) => {
-				let qu = flags[$(i).data("tagKey")];
-				qu.value = $(i).data("tagValue");
-			});
-			await this.item.setFlag("fallout", flagKey, flags);
-		});
-
-		// Tag Rank Change
-		html.find(".wpn-tag-rank").change(async ev => {
-			let newRank = $(ev.currentTarget).val();
-			let tagEl = $(ev.currentTarget).parent(".wpn-tag");
-			// let tagKey = tagEl.data("tagKey");
-			let tagType = tagEl.data("tagType");
-			// let itemId = this.document.data._id;
-			// let wpn = game.items.get(itemId);
-			let flagKey = "";
-			if (tagType === "weaponQuality") flagKey = "weaponQualities";
-			else if (tagType === "damageEffect") flagKey = "damageEffects";
-			let flags = duplicate(this.item.getFlag("fallout", flagKey));
-			let box = tagEl.parent(".item-list");
-			$(box.children()).each((q, i) => {
-				let qu = flags[$(i).data("tagKey")];
-				if (qu.rank != null) qu.rank = newRank;
-			});
-			await this.item.setFlag("fallout", flagKey, flags);
-		});
-
 		// Effects.
 		html.find(".effect-control").click(ev => {
-			if (this.item.isOwned) return ui.notifications.warn("Managing Active Effects within an Owned Item is not currently supported and will be added in a subsequent update.");
+			if (this.item.isOwned) {
+				return ui.notifications.warn("Managing Active Effects within an Owned Item is not currently supported and will be added in a subsequent update.");
+			}
 			onManageActiveEffect(ev, this.item);
 		});
 

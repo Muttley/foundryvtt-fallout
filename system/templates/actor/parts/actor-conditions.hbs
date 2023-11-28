@@ -15,7 +15,7 @@
                     {{#select system.conditions.hunger}}
                     <select name="system.conditions.hunger">
                         {{#each FALLOUT.conditions.hunger as |value key|}}
-                        <option class="flo-option" value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
+                        <option value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
                         {{/each}}
                     </select>
                     {{/select}}
@@ -27,7 +27,7 @@
                     {{#select system.conditions.thirst}}
                     <select name="system.conditions.thirst">
                         {{#each FALLOUT.conditions.thirst as |value key|}}
-                        <option class="flo-option" value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
+                        <option value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
                         {{/each}}
                     </select>
                     {{/select}}
@@ -39,7 +39,7 @@
                     {{#select system.conditions.sleep}}
                     <select name="system.conditions.sleep">
                         {{#each FALLOUT.conditions.sleep as |value key|}}
-                        <option class="flo-option" value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
+                        <option value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
                         {{/each}}
                     </select>
                     {{/select}}

@@ -1,3 +1,8 @@
+## v11.3.0
+
+### Bugfixes
+- [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
+
 ## v11.2.6
 
 ### Bugfixes

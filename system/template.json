@@ -429,99 +429,99 @@
 				},
 				"weaponQuality": {
 					"accurate": {
+						"description": "",
 						"label": "Accurate",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"blast": {
+						"description": "",
 						"label": "Blast",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"closeQuarters": {
+						"description": "",
 						"label": "Close Quarters",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"concealed": {
+						"description": "",
 						"label": "Concealed",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"debilitating": {
+						"description": "",
 						"label": "Debilitating",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"gatling": {
+						"description": "",
 						"label": "Gatling",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"inaccurate": {
+						"description": "",
 						"label": "Inaccurate",
-						"value": false,
-						"description": ""
-					},
-					"mine": {
-						"label": "Mine",
-						"value": false,
-						"description": ""
-					},
-					"nightVision": {
-						"label": "Night Vision",
-						"value": false,
-						"description": ""
-					},
-					"parry": {
-						"label": "Parry",
-						"value": false,
-						"description": ""
-					},
-					"recon": {
-						"label": "Recon",
-						"value": false,
-						"description": ""
-					},
-					"reliable": {
-						"label": "Reliable",
-						"value": false,
-						"description": ""
-					},
-					"suppressed": {
-						"label": "Suppressed",
-						"value": false,
-						"description": ""
-					},
-					"thrown": {
-						"label": "Thrown",
-						"value": false,
-						"description": ""
-					},
-					"twoHanded": {
-						"label": "Two-Handed",
-						"value": false,
-						"description": ""
-					},
-					"unreliable": {
-						"label": "Unreliable",
-						"value": false,
-						"description": ""
+						"value": false
 					},
 					"limited": {
+						"description": "",
 						"label": "Limited",
-						"value": false,
-						"description": ""
+						"value": false
 					},
-					"unstable_radiation": {
-						"label": "Unstable Radiation",
-						"value": false,
-						"description": ""
+					"mine": {
+						"description": "",
+						"label": "Mine",
+						"value": false
+					},
+					"nightVision": {
+						"description": "",
+						"label": "Night Vision",
+						"value": false
+					},
+					"parry": {
+						"description": "",
+						"label": "Parry",
+						"value": false
+					},
+					"recon": {
+						"description": "",
+						"label": "Recon",
+						"value": false
+					},
+					"reliable": {
+						"description": "",
+						"label": "Reliable",
+						"value": false
 					},
 					"slow_load": {
+						"description": "",
 						"label": "Slow Load",
-						"value": false,
-						"description": ""
+						"value": false
+					},
+					"suppressed": {
+						"description": "",
+						"label": "Suppressed",
+						"value": false
+					},
+					"thrown": {
+						"description": "",
+						"label": "Thrown",
+						"value": false
+					},
+					"twoHanded": {
+						"description": "",
+						"label": "Two-Handed",
+						"value": false
+					},
+					"unreliable": {
+						"description": "",
+						"label": "Unreliable",
+						"value": false
+					},
+					"unstable_radiation": {
+						"description": "",
+						"label": "Unstable Radiation",
+						"value": false
 					}
 				}
 			},

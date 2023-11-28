@@ -20,7 +20,6 @@ FALLOUT.abilityAbbreviations = {
 	luc: "FALLOUT.AbilityLucAbbr",
 };
 
-FALLOUT.SKILLS = ["Athletics", "Barter", "Big Guns", "Energy Weapons", "Explosives", "Lockpick", "Medicine", "Melee Weapons", "Pilot", "Repair", "Science", "Small Guns", "Sneak", "Speech", "Survival", "Throwing", "Unarmed"];
 FALLOUT.CREATURE = {
 	skills: {
 		melee: "FALLOUT.CREATURE.melee",
@@ -40,6 +39,7 @@ FALLOUT.APPAREL_TYPE = {
 	headgear: "FALLOUT.APPAREL.headgear",
 	powerArmor: "FALLOUT.APPAREL.powerArmor",
 };
+
 FALLOUT.ROBOT_APPAREL_TYPE = {
 	plating: "FALLOUT.APPAREL.plating",
 	armor: "FALLOUT.APPAREL.armor",
@@ -77,13 +77,13 @@ FALLOUT.resistanceIcons = {
 FALLOUT.WEAPONS = {
 	weaponType: {
 		bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
+		creatureAttack: "FALLOUT.WEAPONS.weaponType.creatureAttack",
 		energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 		explosives: "FALLOUT.WEAPONS.weaponType.explosives",
 		meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",
 		smallGuns: "FALLOUT.WEAPONS.weaponType.smallGuns",
 		throwing: "FALLOUT.WEAPONS.weaponType.throwing",
 		unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
-		creatureAttack: "FALLOUT.WEAPONS.weaponType.creatureAttack",
 	},
 	weaponSkill: {
 		bigGuns: "Big Guns",
@@ -108,16 +108,67 @@ FALLOUT.WEAPONS = {
 		extreme: "FALLOUT.RANGE.extreme",
 	},
 	damageEffect: {
-		burst: { label: "FALLOUT.WEAPONS.damageEffect.burst", value: false, description: "" },
-		breaking: { label: "FALLOUT.WEAPONS.damageEffect.breaking", value: false, description: "" },
-		persistent: { label: "FALLOUT.WEAPONS.damageEffect.persistent", value: false, description: "" },
-		piercing: { label: "FALLOUT.WEAPONS.damageEffect.piercing", value: false, rank: 1, description: "" },
-		radioactive: { label: "FALLOUT.WEAPONS.damageEffect.radioactive", value: false, description: "" },
-		spread: { label: "FALLOUT.WEAPONS.damageEffect.spread", value: false, description: "" },
-		stun: { label: "FALLOUT.WEAPONS.damageEffect.stun", value: false, description: "" },
-		vicious: { label: "FALLOUT.WEAPONS.damageEffect.vicious", value: false, description: "" },
-		arc: {label: "FALLOUT.WEAPONS.damageEffect.arc", value: false, description: ""},
-		freeze: {label: "FALLOUT.WEAPONS.damageEffect.freeze", value: false, description: ""},
+		arc: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.arc",
+			value: false,
+			description: "",
+		},
+		breaking: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.breaking",
+			value: false,
+			description: "",
+		},
+		burst: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.burst",
+			value: false,
+			description: "",
+		},
+		freeze: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.freeze",
+			value: false,
+			description: "",
+		},
+		persistent: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.persistent",
+			value: false,
+			description: "",
+		},
+		piercing: {
+			hasRanks: true,
+			label: "FALLOUT.WEAPONS.damageEffect.piercing",
+			value: false,
+			rank: 1,
+			description: "",
+		},
+		radioactive: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.radioactive",
+			value: false,
+			description: "",
+		},
+		spread: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.spread",
+			value: false,
+			description: "",
+		},
+		stun: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.stun",
+			value: false,
+			description: "",
+		},
+		vicious: {
+			hasRanks: false,
+			label: "FALLOUT.WEAPONS.damageEffect.vicious",
+			value: false,
+			description: "",
+		},
 	},
 	weaponQuality: {
 		accurate: { label: "FALLOUT.WEAPONS.weaponQuality.accurate", value: false, description: "" },
@@ -127,20 +178,19 @@ FALLOUT.WEAPONS = {
 		debilitating: { label: "FALLOUT.WEAPONS.weaponQuality.debilitating", value: false, description: "" },
 		gatling: { label: "FALLOUT.WEAPONS.weaponQuality.gatling", value: false, description: "" },
 		inaccurate: { label: "FALLOUT.WEAPONS.weaponQuality.inaccurate", value: false, description: "" },
+		limited: { label: "FALLOUT.WEAPONS.weaponQuality.limited", value: false, description: "" },
 		mine: { label: "FALLOUT.WEAPONS.weaponQuality.mine", value: false, description: "" },
 		nightVision: { label: "FALLOUT.WEAPONS.weaponQuality.nightVision", value: false, description: "" },
 		parry: { label: "FALLOUT.WEAPONS.weaponQuality.parry", value: false, description: "" },
 		recon: { label: "FALLOUT.WEAPONS.weaponQuality.recon", value: false, description: "" },
 		reliable: { label: "FALLOUT.WEAPONS.weaponQuality.reliable", value: false, description: "" },
+		slow_load: { label: "FALLOUT.WEAPONS.weaponQuality.slow_load", value: false, description: "" },
 		suppressed: { label: "FALLOUT.WEAPONS.weaponQuality.suppressed", value: false, description: "" },
 		thrown: { label: "FALLOUT.WEAPONS.weaponQuality.thrown", value: false, description: "" },
 		twoHanded: { label: "FALLOUT.WEAPONS.weaponQuality.twoHanded", value: false, description: "" },
 		unreliable: { label: "FALLOUT.WEAPONS.weaponQuality.unreliable", value: false, description: "" },
-		limited: { label: "FALLOUT.WEAPONS.weaponQuality.limited", value: false, description: "" },
 		unstable_radiation: { label: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation", value: false, description: "" },
-		"slow_load ": { label: "FALLOUT.WEAPONS.weaponQuality.slow_load", value: false, description: "" },
 	},
-
 };
 
 FALLOUT.consumableTypes = {

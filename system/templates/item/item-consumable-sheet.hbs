@@ -15,7 +15,7 @@
                 {{#select system.consumableType}}
                 <select name="system.consumableType">
                     {{#each FALLOUT.consumableTypes as |type key|}}
-                    <option class="flo-option" value="{{key}}">{{localize type}}</option>
+                    <option value="{{key}}">{{localize type}}</option>
                     {{/each}}
                 </select>
                 {{/select}}

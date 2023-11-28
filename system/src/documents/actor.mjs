@@ -433,7 +433,7 @@ export class FalloutActor extends Actor {
 		const _ammo = this.items.find(i => i.name === ammo);
 		if (_ammo) {
 			const newQ = Math.max(0, parseInt(_ammo.system.quantity) - parseInt(ammount));
-			await this.updateEmbeddedDocuments("Item", [{_id: _ammo._id, "system.quantity": newQ}]);
+			await this.updateEmbeddedDocuments("Item", [{"_id": _ammo._id, "system.quantity": newQ}]);
 		}
 	}
 }
