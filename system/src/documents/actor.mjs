@@ -56,7 +56,9 @@ export class FalloutActor extends Actor {
 	// CHARACTER
 	_prepareCharacterData() {
 		if (this.type !== "character") return;
+
 		this._calculateCharacterBodyResistance();
+
 		// Encumbrance
 		let strWeight = parseInt(this.system.attributes.str.value);
 		switch (game.settings.get("fallout", "carryUnit")) {

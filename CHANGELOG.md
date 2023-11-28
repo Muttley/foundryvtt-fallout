@@ -6,6 +6,7 @@
 ### Chores
 - [#33] Merged Polish language updates from Crowdin
 - [#35] Remove usage of deprecated `ActiveEffect._getSourceName()`
+- [#36] Remove usage of deprecated `ActiveEffect#label`
 
 ## v11.2.6
 
