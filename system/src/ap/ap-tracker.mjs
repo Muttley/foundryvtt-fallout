@@ -97,6 +97,20 @@ export class APTracker extends Application {
 		});
 	}
 
+	static async registerSocketEvents() {
+		fallout.logger.debug("Registering APTracker socket events");
+
+		game.socket.on("system.fallout", ev => {
+			if (ev.operation === "setAP") {
+				if (game.user.isGM) {
+					this.setAP(ev.data.type, ev.data.value);
+				}
+			}
+
+			if (ev.operation === "updateAP") this.updateAP();
+		});
+	}
+
 	static async setAP(type, value) {
 		value = Math.round(value);
 
@@ -145,19 +159,3 @@ export class APTracker extends Application {
 		APTracker.renderApTracker();
 	}
 }
-
-Hooks.once("ready", () => {
-	if (APTracker._instance) return;
-
-	new APTracker();
-
-	APTracker.renderApTracker();
-
-	game.socket.on("system.fallout", ev => {
-		if (ev.operation === "setAP") {
-			if (game.user.isGM) APTracker.setAP(ev.data.type, ev.data.value);
-		}
-
-		if (ev.operation === "updateAP") APTracker.updateAP();
-	});
-});

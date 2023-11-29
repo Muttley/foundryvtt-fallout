@@ -14,25 +14,3 @@ export class FOHovers {
 		FOHovers.LIST = content;
 	}
 }
-
-// INITIALIZE SETTINGS in settings.js
-// allow a path to hovers.json to be changed
-
-// Load JSON List
-Hooks.on("ready", async () => {
-	await fallout.FOHovers.loadList();
-});
-
-Hooks.on("renderActorSheet", (app, html, options) => {
-	html.find(".hover").each(function(i) {
-		const title = fallout.FOHovers.LIST[$(this).data("key")];
-		$(this).prop("title", title);
-	});
-});
-
-Hooks.on("renderItemSheet", (app, html, options) => {
-	html.find(".hover").each(function(i) {
-		const title = fallout.FOHovers.LIST[$(this).data("key")];
-		$(this).prop("title", title);
-	});
-});
