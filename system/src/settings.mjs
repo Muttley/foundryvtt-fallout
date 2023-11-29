@@ -106,4 +106,14 @@ export function registerSettings() {
 		type: Number,
 		onChange: debounceReload,
 	});
+
+	game.settings.register("fallout", "debugEnabled", {
+		name: "Enable/Disable Debug",
+		hint: "Enable or Disable additional debug features",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: true,
+	});
 }

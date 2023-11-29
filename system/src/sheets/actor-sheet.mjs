@@ -7,7 +7,7 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class FalloutActorSheet extends ActorSheet {
+export default class FalloutActorSheet extends ActorSheet {
 	/** @override */
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
@@ -28,6 +28,12 @@ export class FalloutActorSheet extends ActorSheet {
 	/** @override */
 	get template() {
 		return `systems/fallout/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+	}
+
+	/** @inheritdoc */
+	get title() {
+		const type = game.i18n.localize(`TYPES.Actor.${this.actor.type}`);
+		return `[${type}] ${this.actor.name}`;
 	}
 
 	/* -------------------------------------------- */

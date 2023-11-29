@@ -3,7 +3,7 @@
  * is ideal for the Simple system.
  * @extends {Actor}
  */
-export class FalloutActor extends Actor {
+export default class FalloutActor extends Actor {
 	/** @override */
 	prepareData() {
 		super.prepareData();

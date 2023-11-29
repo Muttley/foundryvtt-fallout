@@ -1,3 +1,6 @@
+export const SYSTEM_ID = "fallout";
+export const SYSTEM_NAME = "Fallout 2d20";
+
 export const FALLOUT = {};
 
 FALLOUT.attributes = {
