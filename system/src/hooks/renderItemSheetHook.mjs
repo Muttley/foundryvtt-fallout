@@ -6,7 +6,7 @@ export const renderItemSheetHook = {
 			fallout.logger.debug("Running renderItemSheet hook");
 
 			html.find(".hover").each(function(i) {
-				const title = fallout.FOHovers.LIST[$(this).data("key")];
+				const title = fallout.FalloutHovers.LIST[$(this).data("key")];
 				$(this).prop("title", title);
 			});
 		});

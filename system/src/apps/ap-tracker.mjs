@@ -21,7 +21,7 @@ export class APTracker extends Application {
 			id: "ap-tracker-app",
 			popOut: false,
 			resizable: false,
-			template: "systems/fallout/templates/ap/ap-tracker.hbs",
+			template: "systems/fallout/templates/apps/ap-tracker.hbs",
 			title: "AP Tracker",
 			width: "auto",
 		});
@@ -34,24 +34,19 @@ export class APTracker extends Application {
 		const maxAppShowToPlayers = game.settings.get(
 			"fallout", "maxAppShowToPlayers"
 		);
+		this.data.maxAppShowToPlayers = game.user.isGM || maxAppShowToPlayers;
 
 		const showGMMomentumToPlayers = game.settings.get(
 			"fallout", "gmMomentumShowToPlayers"
 		);
+		this.data.showGMMomentumToPlayers =
+			game.user.isGM || showGMMomentumToPlayers;
 
 		this.data.gmAP = game.settings.get("fallout", "gmAP");
-		this.data.showGMMomentumToPlayers = (game.user.isGM || showGMMomentumToPlayers)
-			? true
-			: false;
+		this.data.maxAP = game.settings.get("fallout", "maxAP");
+		this.data.partyAP = game.settings.get("fallout", "partyAP");
 
 		this.data.isGM = game.user.isGM;
-
-		this.data.maxAP = game.settings.get("fallout", "maxAP");
-		this.data.maxAppShowToPlayers = (game.user.isGM || maxAppShowToPlayers)
-			? true
-			: false;
-
-		this.data.partyAP = game.settings.get("fallout", "partyAP");
 
 		return this.data;
 	}

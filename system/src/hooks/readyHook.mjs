@@ -1,5 +1,3 @@
-import { APTracker } from "../ap/ap-tracker.mjs";
-
 export const readyHook = {
 	attach: () => {
 		fallout.logger.debug("Attaching ready hook");
@@ -10,18 +8,18 @@ export const readyHook = {
 			// Load tooltips
 			//
 			fallout.logger.debug("Loading tooltips");
-			fallout.FOHovers.loadList();
+			fallout.FalloutHovers.loadList();
 
 			// Initialise the AP Tracker
 			//
 			fallout.logger.debug("Initialising APTracker");
 
-			if (APTracker._instance) return;
+			if (fallout.APTracker._instance) return;
 
 			new APTracker();
 
-			APTracker.renderApTracker();
-			APTracker.registerSocketEvents();
+			fallout.APTracker.renderApTracker();
+			fallout.APTracker.registerSocketEvents();
 		});
 	},
 };

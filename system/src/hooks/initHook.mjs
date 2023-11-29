@@ -1,22 +1,22 @@
-import { FALLOUT, SYSTEM_ID, SYSTEM_NAME } from "../helpers/config.mjs";
+import { FALLOUT, SYSTEM_ID, SYSTEM_NAME } from "../config.mjs";
 
-import { APTracker } from "../ap/ap-tracker.mjs";
+import * as documents from "../documents/_module.mjs";
+import * as sheets from "../sheets/_module.mjs";
+
+import { APTracker } from "../apps/ap-tracker.mjs";
 import { Dialog2d20 } from "../roller/dialog2d20.mjs";
 import { DialogD6 } from "../roller/dialogD6.mjs";
 import { DieFalloutDamage } from "../roller/damageDie.mjs";
 import { DieFalloutLocation } from "../roller/locationDie.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
-import { FOHovers } from "../helpers/hovers.mjs";
+import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/fo2d20-roller.mjs";
-
-import * as documents from "../documents/_module.mjs";
-import * as sheets from "../sheets/_module.mjs";
 
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import Logger from "../utils/Logger";
 
-import { preloadHandlebarsTemplates } from "../helpers/templates.mjs";
-import { registerHandlebarsHelpers } from "../helpers/handlebars.mjs";
+import { preloadHandlebarsTemplates } from "../templates.mjs";
+import { registerHandlebarsHelpers } from "../handlebars.mjs";
 import { registerSettings } from "../settings.mjs";
 import { registerTextEditorEnrichers } from "../enrichers.mjs";
 
@@ -35,7 +35,7 @@ export async function initHook() {
 		APTracker,
 		Dialog2d20,
 		DialogD6,
-		FOHovers,
+		FalloutHovers,
 		Roller2D20,
 		logger: Logger,
 		macros: FalloutMacros,

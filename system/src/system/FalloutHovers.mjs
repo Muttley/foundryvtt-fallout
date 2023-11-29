@@ -1,4 +1,4 @@
-export class FOHovers {
+export class FalloutHovers {
 	static LIST = {};
 
 	static async loadList() {
@@ -11,6 +11,6 @@ export class FOHovers {
 			content[key] = qEnriched.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 		}
 		// console.warn(content)
-		FOHovers.LIST = content;
+		this.LIST = content;
 	}
 }

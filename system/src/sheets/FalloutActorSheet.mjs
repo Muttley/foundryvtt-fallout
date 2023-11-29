@@ -1,13 +1,14 @@
 import {
 	onManageActiveEffect,
 	prepareActiveEffectCategories,
-} from "../helpers/effects.mjs";
+} from "../effects.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
 export default class FalloutActorSheet extends ActorSheet {
+
 	/** @override */
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {

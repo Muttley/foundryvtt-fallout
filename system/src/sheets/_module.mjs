@@ -1,2 +1,2 @@
-export {default as FalloutActorSheet} from "./actor-sheet.mjs";
-export {default as FalloutItemSheet} from "./item-sheet.mjs";
+export {default as FalloutActorSheet} from "./FalloutActorSheet.mjs";
+export {default as FalloutItemSheet} from "./FalloutItemSheet.mjs";
