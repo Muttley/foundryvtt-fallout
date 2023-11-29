@@ -1,2 +1,2 @@
-export {default as FalloutActor} from "./actor.mjs";
-export {default as FalloutItem} from "./item.mjs";
+export {default as FalloutActor} from "./FalloutActor.mjs";
+export {default as FalloutItem} from "./FalloutItem.mjs";
