@@ -2,10 +2,10 @@ import { createItemMacro } from "../system/FalloutMacros.mjs";
 
 export const hotbarDropHook = {
 	attach: () => {
-		game.fallout.logger.debug("Hook Attach: hotbarDrop");
+		fallout.logger.debug("Attaching hotbarDrop hook");
 
 		Hooks.on("hotbarDrop", async (bar, data, slot) => {
-			game.fallout.logger.debug("Hook Running: hotbarDrop");
+			fallout.logger.debug("Running hotbarDrop hook");
 
 			if (data.type === "Item") {
 				return await createItemMacro(data, slot);

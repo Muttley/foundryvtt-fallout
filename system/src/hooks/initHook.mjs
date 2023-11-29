@@ -21,7 +21,7 @@ import { registerSettings } from "../settings.mjs";
 import { registerTextEditorEnrichers } from "../enrichers.mjs";
 
 export async function initHook() {
-	console.log(`${SYSTEM_NAME} | Hook Running: init`);
+	console.debug(`${SYSTEM_NAME} | Running init hook`);
 
 	// Add custom constants for configuration.
 	CONFIG.FALLOUT = FALLOUT;

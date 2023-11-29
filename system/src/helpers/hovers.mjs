@@ -20,19 +20,19 @@ export class FOHovers {
 
 // Load JSON List
 Hooks.on("ready", async () => {
-	await game.fallout.FOHovers.loadList();
+	await fallout.FOHovers.loadList();
 });
 
 Hooks.on("renderActorSheet", (app, html, options) => {
 	html.find(".hover").each(function(i) {
-		const title = game.fallout.FOHovers.LIST[$(this).data("key")];
+		const title = fallout.FOHovers.LIST[$(this).data("key")];
 		$(this).prop("title", title);
 	});
 });
 
 Hooks.on("renderItemSheet", (app, html, options) => {
 	html.find(".hover").each(function(i) {
-		const title = game.fallout.FOHovers.LIST[$(this).data("key")];
+		const title = fallout.FOHovers.LIST[$(this).data("key")];
 		$(this).prop("title", title);
 	});
 });

@@ -1,6 +1,8 @@
 export class FalloutChat {
 
 	static async onRenderChatMessage(message, html, data) {
+		fallout.logger.debug("Running renderChatMessage hook");
+
 		const rerollButton = html.find(".reroll-button");
 
 		if (rerollButton.length > 0) {
@@ -23,7 +25,7 @@ export class FalloutChat {
 				let falloutRoll = message.flags.falloutroll;
 
 				if (falloutRoll.diceFace === "d20") {
-					game.fallout.Roller2D20.rerollD20({
+					fallout.Roller2D20.rerollD20({
 						complicationTreshold: falloutRoll.complicationTreshold,
 						critTreshold: falloutRoll.critTreshold,
 						dicesRolled: falloutRoll.dicesRolled,
@@ -33,7 +35,7 @@ export class FalloutChat {
 					});
 				}
 				else if (falloutRoll.diceFace === "d6") {
-					game.fallout.Roller2D20.rerollD6({
+					fallout.Roller2D20.rerollD6({
 						dicesRolled: falloutRoll.dicesRolled,
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,
@@ -65,7 +67,7 @@ export class FalloutChat {
 				const falloutRoll = message.flags.falloutroll;
 				const weapon = message.flags.weapon;
 
-				game.fallout.DialogD6.createDialog({
+				fallout.DialogD6.createDialog({
 					rollname: falloutRoll.rollname,
 					diceNum: 1,
 					falloutRoll: falloutRoll,

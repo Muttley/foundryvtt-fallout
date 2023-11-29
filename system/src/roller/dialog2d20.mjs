@@ -46,7 +46,7 @@ export class Dialog2d20 extends Dialog {
 			let complication = html.find('[name="complication"]').val();
 			let isTag = html.find('[name="tag"]').is(":checked");
 
-			game.fallout.Roller2D20.rollD20({
+			fallout.Roller2D20.rollD20({
 				rollname: this.rollName,
 				dicenum: this.diceNum,
 				attribute: attr,

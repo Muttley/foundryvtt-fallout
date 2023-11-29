@@ -2,7 +2,7 @@
 	"_id": "tesQXaTdi9T8RxJU",
 	"_key": "!macros!tesQXaTdi9T8RxJU",
 	"author": "U6A1xCj2ogp2gdEu",
-	"command": "game.fallout.Dialog2d20.createDialog({diceNum:2, attribute:1, skill:1, tag:false, complication: 20})",
+	"command": "fallout.Dialog2d20.createDialog({diceNum:2, attribute:1, skill:1, tag:false, complication: 20})",
 	"folder": null,
 	"img": "systems/fallout/assets/ui/fallout-d20.svg",
 	"name": "D20 Roller",

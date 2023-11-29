@@ -2,7 +2,7 @@ import { FalloutChat } from "../system/FalloutChat.mjs";
 
 export const renderChatMessageHook = {
 	attach: () => {
-		game.fallout.logger.debug("Hook Attach: renderChatMessage");
+		fallout.logger.debug("Attaching renderChatMessage hook");
 
 		Hooks.on("renderChatMessage", FalloutChat.onRenderChatMessage);
 	},

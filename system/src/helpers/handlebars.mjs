@@ -147,7 +147,7 @@ export const registerHandlebarsHelpers = function() {
 		let content = "";
 		for (let wq in weapon.system.damage.weaponQuality) {
 			if (weapon.system.damage.weaponQuality[wq].value) {
-				let qualitydescription = game.fallout.FOHovers.LIST[wq].toLowerCase();
+				let qualitydescription = fallout.FOHovers.LIST[wq].toLowerCase();
 				content += `&nbsp;<span title="${qualitydescription}">${weapon.system.damage.weaponQuality[wq].label}</span>,`;
 			}
 		}

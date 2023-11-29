@@ -1,5 +1,5 @@
 export function diceSoNiceReadyHook(dice3d) {
-	game.fallout.logger.debug("Hook Running: diceSoNiceReady");
+	fallout.logger.debug("Running diceSoNiceReady hook");
 
 	dice3d.addSystem({ id: "fallout", name: "Fallout 2d20" }, true);
 

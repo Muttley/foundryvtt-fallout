@@ -34,7 +34,7 @@ export class DialogD6 extends Dialog {
 			}
 
 			if (!this.falloutRoll) {
-				game.fallout.Roller2D20.rollD6({
+				fallout.Roller2D20.rollD6({
 					rollname: this.rollName,
 					dicenum: parseInt(diceNum),
 					weapon: this.weapon,
@@ -42,7 +42,7 @@ export class DialogD6 extends Dialog {
 				});
 			}
 			else {
-				game.fallout.Roller2D20.addD6({
+				fallout.Roller2D20.addD6({
 					rollname: this.rollName,
 					dicenum: parseInt(diceNum),
 					weapon: this.weapon,

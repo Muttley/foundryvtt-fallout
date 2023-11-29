@@ -80,7 +80,7 @@
 - Added a setting where you can define your custom skill compendium that will be used to populate your newly created characters with the skills from that compendium.
 - Exposed the APTracker class if you want to make a macro to update gmAP or partyAP (special request by some users).
 You can now call
-`await game.fallout.APTracker.setAP("gmAP", 1) or ("partyAP", 1) to set it to the custom value. Change "1" for some value you want. `
+`await fallout.APTracker.setAP("gmAP", 1) or ("partyAP", 1) to set it to the custom value. Change "1" for some value you want. `
 
 ## v10.1.3
 

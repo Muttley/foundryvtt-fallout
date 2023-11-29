@@ -579,7 +579,7 @@ export default class FalloutActorSheet extends ActorSheet {
 				complication -= 1;
 			}
 
-			game.fallout.Dialog2d20.createDialog({
+			fallout.Dialog2d20.createDialog({
 				rollName: rollName,
 				diceNum: 2,
 				attribute: attribute.value,
@@ -614,7 +614,7 @@ export default class FalloutActorSheet extends ActorSheet {
 
 			// console.warn(fromUuidSync(actorUUID).actor)
 
-			game.fallout.DialogD6.createDialog({
+			fallout.DialogD6.createDialog({
 				rollName: rollName,
 				diceNum: numOfDice,
 				actor: actorUUID,
@@ -701,7 +701,7 @@ export default class FalloutActorSheet extends ActorSheet {
 	}
 
 	_onRollSkill(skillName, rank, attribute, tag) {
-		game.fallout.Dialog2d20.createDialog({
+		fallout.Dialog2d20.createDialog({
 			rollName: skillName,
 			diceNum: 2,
 			attribute: attribute,

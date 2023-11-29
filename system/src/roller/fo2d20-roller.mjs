@@ -296,7 +296,7 @@ export class Roller2D20 {
 					const damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
 					const effectLabel = `${damageEffectLabel}${rank}`;
 
-					const effectDescription = game.fallout.FOHovers.LIST[
+					const effectDescription = fallout.FOHovers.LIST[
 						weapon.system.damage.damageEffect[de].label.toLowerCase()
 					];
 
