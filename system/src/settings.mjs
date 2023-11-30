@@ -1,6 +1,7 @@
 const debounceReload = debounce(() => window.location.reload(), 100);
 
 export function registerSettings() {
+
 	game.settings.register("fallout", "skillsCompendium", {
 		name: "Skills Compendium",
 		hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
@@ -116,4 +117,14 @@ export function registerSettings() {
 		default: false,
 		requiresReload: true,
 	});
+
+	game.settings.register("fallout", "worldSchemaVersion", {
+		name: "Schema Version",
+		hint: "Records the current schema version for the Fallout 2d20 system data. (don't modify this unless you know what you are doing)",
+		scope: "world",
+		config: game.settings.get("fallout", "debugEnabled"),
+		default: 0,
+		type: Number,
+	});
+
 }

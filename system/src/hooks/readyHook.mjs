@@ -1,25 +1,18 @@
+import FalloutMigrationRunner from "../migrations/FalloutMigrationRunner";
+
 export const readyHook = {
 	attach: () => {
 		fallout.logger.debug("Attaching ready hook");
 
-		Hooks.once("ready", () => {
+		Hooks.once("ready", async () => {
 			fallout.logger.debug("Running ready hook");
 
-			// Load tooltips
-			//
-			fallout.logger.debug("Loading tooltips");
+			if (game.user.isGM) {
+				await new FalloutMigrationRunner().run();
+			}
+
+			fallout.APTracker.initialise();
 			fallout.FalloutHovers.loadList();
-
-			// Initialise the AP Tracker
-			//
-			fallout.logger.debug("Initialising APTracker");
-
-			if (fallout.APTracker._instance) return;
-
-			new APTracker();
-
-			fallout.APTracker.renderApTracker();
-			fallout.APTracker.registerSocketEvents();
 		});
 	},
 };

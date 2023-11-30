@@ -51,6 +51,16 @@ export class APTracker extends Application {
 		return this.data;
 	}
 
+	static async initialise() {
+		if (this._instance) return;
+
+		fallout.logger.debug("Initialising APTracker");
+		new APTracker();
+
+		this.renderApTracker();
+		this.registerSocketEvents();
+	}
+
 	static renderApTracker() {
 		if (APTracker._instance) APTracker._instance.render(true);
 	}

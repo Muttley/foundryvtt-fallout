@@ -3,7 +3,8 @@ import { FALLOUT, SYSTEM_ID, SYSTEM_NAME } from "../config.mjs";
 import * as documents from "../documents/_module.mjs";
 import * as sheets from "../sheets/_module.mjs";
 
-import { APTracker } from "../apps/ap-tracker.mjs";
+import { APTracker } from "../apps/APTracker.mjs";
+
 import { Dialog2d20 } from "../roller/dialog2d20.mjs";
 import { DialogD6 } from "../roller/dialogD6.mjs";
 import { DieFalloutDamage } from "../roller/damageDie.mjs";
