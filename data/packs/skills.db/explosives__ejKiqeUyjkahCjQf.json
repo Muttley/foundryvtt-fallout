@@ -1,21 +1,18 @@
 {
 	"_id": "ejKiqeUyjkahCjQf",
 	"_key": "!items!ejKiqeUyjkahCjQf",
-	"data": {
-		"defaultAttribute": "per",
-		"description": "",
-		"summary": "",
-		"tag": false,
-		"value": 0
-	},
 	"effects": [
 	],
 	"folder": null,
 	"img": "systems/fallout/assets/ico/thumb-up.webp",
 	"name": "Explosives",
-	"permission": {
-		"U6A1xCj2ogp2gdEu": 3,
-		"default": 0
+	"system": {
+		"defaultAttribute": "per",
+		"description": "",
+		"favorite": false,
+		"summary": "",
+		"tag": false,
+		"value": 0
 	},
 	"type": "skill"
 }
