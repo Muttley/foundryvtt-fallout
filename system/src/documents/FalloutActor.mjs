@@ -57,9 +57,12 @@ export default class FalloutActor extends Actor {
 	_prepareCharacterData() {
 		if (this.type !== "character") return;
 
+		this._calculateNextLevelXp();
 		this._calculateCharacterBodyResistance();
+		this._calculateEncumbrance();
+	}
 
-		// Encumbrance
+	_calculateEncumbrance() {
 		let strWeight = parseInt(this.system.attributes.str.value);
 		switch (game.settings.get("fallout", "carryUnit")) {
 			case "lbs":
@@ -79,6 +82,7 @@ export default class FalloutActor extends Actor {
 			this.system.carryWeight.base + parseInt(this.system.carryWeight.mod);
 
 		this.system.carryWeight.total = this._getItemsTotalWeight();
+
 		this.system.encumbranceLevel = 0;
 		if (this.system.carryWeight.total > this.system.carryWeight.value) {
 			let dif = this.system.carryWeight.total - this.system.carryWeight.value;
@@ -220,18 +224,39 @@ export default class FalloutActor extends Actor {
 		this.system.outfitedLocations = outfitedLocations;
 	}
 
+	_calculateNextLevelXp() {
+		const currentLevel = parseInt(this.system.level.value);
+
+		let nextLevelXp = 0;
+		if (currentLevel > 0) {
+			const nextLevel = currentLevel + 1;
+
+			nextLevelXp = nextLevel * currentLevel / 2 * 100;
+		}
+
+		this.system.level.nextLevelXP = nextLevelXp;
+	}
+
 	// ROBOT
 	_prepareRobotData() {
 		if (this.type !== "robot") return;
 
+		this._calculateNextLevelXp();
+
 		this._calculateRobotBodyResistance();
+
 		this.system.favoriteWeapons = this.items.filter(
 			i => i.type === "weapon" && i.system.favorite
 		);
-		this.system.equippedRobotMods = this.items.filter(i => i.type === "robot_mod" && i.system.equipped).slice(0, 3);
+
+		this.system.equippedRobotMods = this.items.filter(
+			i => i.type === "robot_mod" && i.system.equipped
+		).slice(0, 3);
+
 		let robotArmors = this.items.filter(i => {
 			return i.type === "robot_armor";
 		});
+
 		let _robotArmorsCarryModifier = 0;
 		for (let i of robotArmors) {
 			if (i.system.equipped && !i.system.stashed) {

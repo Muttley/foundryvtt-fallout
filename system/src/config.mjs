@@ -49,10 +49,10 @@ FALLOUT.ROBOT_APPAREL_TYPE = {
 };
 
 FALLOUT.BodyTypes = {
-	humanoid: "HUMANOID",
-	robot: "ROBOT",
-	quadruped: "QUADRUPED",
-	flyingInsect: "FLYING_INSECT",
+	humanoid: "FALLOUT.BodyTypes.humanoid.label",
+	robot: "FALLOUT.BodyTypes.robot.label",
+	quadruped: "FALLOUT.BodyTypes.quadruped.label",
+	flyingInsect: "FALLOUT.BodyTypes.flyingInsect.label",
 };
 
 FALLOUT.BodyValues = {

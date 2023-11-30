@@ -116,7 +116,6 @@
 				"description": "",
 				"level": {
 					"currentXP": 0,
-					"nextLevelXP": 0,
 					"value": 1
 				},
 				"origin": "",
@@ -125,10 +124,6 @@
 			"body": {
 				"body_parts": {
 					"armL": {
-						"hit": {
-							"max": 11,
-							"min": 9
-						},
 						"injuries": [
 							0,
 							0,
@@ -146,10 +141,6 @@
 						"status": "healthy"
 					},
 					"armR": {
-						"hit": {
-							"max": 14,
-							"min": 12
-						},
 						"injuries": [
 							0,
 							0,
@@ -167,10 +158,6 @@
 						"status": "healthy"
 					},
 					"head": {
-						"hit": {
-							"max": 2,
-							"min": 1
-						},
 						"injuries": [
 							0,
 							0,
@@ -188,10 +175,6 @@
 						"status": "healthy"
 					},
 					"legL": {
-						"hit": {
-							"max": 17,
-							"min": 15
-						},
 						"injuries": [
 							0,
 							0,
@@ -209,10 +192,6 @@
 						"status": "healthy"
 					},
 					"legR": {
-						"hit": {
-							"max": 20,
-							"min": 18
-						},
 						"injuries": [
 							0,
 							0,
@@ -230,10 +209,6 @@
 						"status": "healthy"
 					},
 					"torso": {
-						"hit": {
-							"max": 8,
-							"min": 3
-						},
 						"injuries": [
 							0,
 							0,

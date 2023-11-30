@@ -27,32 +27,62 @@
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-physical"></i>
-                        <label for="system.resistance.physical">{{localize "FALLOUT.TEMPLATES.PHYS"}}</label>
+						&nbsp;
+                        <label for="system.resistance.physical">
+							{{localize "FALLOUT.TEMPLATES.PHYS"}}
+						</label>
                     </span>
-                    <input type="number" name="system.resistance.physical" class="num-short-2"
-                        value="{{system.resistance.physical}}">
+                    <input
+						class="num-short-2"
+						name="system.resistance.physical"
+						type="number"
+                        value="{{system.resistance.physical}}"
+					>
                 </div>
                 <div class="flexrow resource-row">
-                    <span><i class="fo-energy"></i><label for="system.resistance.energy">{{localize
-                            "FALLOUT.TEMPLATES.ENG"}}</label></span>
-                    <input type="number" name="system.resistance.energy" class="num-short-2"
-                        value="{{system.resistance.energy}}">
+                    <span>
+						<i class="fo-energy"></i>
+						&nbsp;
+						<label for="system.resistance.energy">
+							{{localize "FALLOUT.TEMPLATES.ENG"}}
+						</label>
+					</span>
+                    <input
+						class="num-short-2"
+						name="system.resistance.energy"
+						type="number"
+                        value="{{system.resistance.energy}}"
+					>
                 </div>
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-radiation"></i>
-                        <label for="system.resistance.radiation">{{localize "FALLOUT.TEMPLATES.RAD"}}</label>
+						&nbsp;
+                        <label for="system.resistance.radiation">
+							{{localize "FALLOUT.TEMPLATES.RAD"}}
+						</label>
                     </span>
-                    <input type="number" name="system.resistance.radiation" class="num-short-2"
-                        value="{{system.resistance.radiation}}">
+                    <input
+						class="num-short-2"
+						name="system.resistance.radiation"
+						type="number"
+                        value="{{system.resistance.radiation}}"
+					>
                 </div>
                 <div class="flexrow resource-row">
                     <span>
                         <i class="fo-poison"></i>
-                        <label for="system.resistance.poison">{{localize "FALLOUT.TEMPLATES.POISON"}}</label>
+						&nbsp;
+                        <label for="system.resistance.poison">
+							{{localize "FALLOUT.TEMPLATES.POISON"}}
+						</label>
                     </span>
-                    <input type="number" name="system.resistance.poison" class="num-short-2"
-                        value="{{system.resistance.poison}}">
+                    <input
+						class="num-short-2"
+						name="system.resistance.poison"
+						type="number"
+                        value="{{system.resistance.poison}}"
+					>
                 </div>
             </div>
         </div>
@@ -83,18 +113,36 @@
             <div class="body-part armR {{system.body_parts.armR.status}}"></div>
             <div class="body-part legL {{system.body_parts.legL.status}}"></div>
             <div class="body-part legR {{system.body_parts.legR.status}}"></div>
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.head
-            keypart="head" apparel=system.outfitedLocations.head.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.torso
-            keypart="torso" apparel=system.outfitedLocations.torso.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.armL
-            keypart="armL" apparel=system.outfitedLocations.armL.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.armR
-            keypart="armR" apparel=system.outfitedLocations.armR.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.legL
-            keypart="legL" apparel=system.outfitedLocations.legL.name}}
-            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs" bodypart=system.body_parts.legR
-            keypart="legR" apparel=system.outfitedLocations.legR.name}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs"
+				bodypart=system.body_parts.head
+				keypart="head"
+				apparel=system.outfitedLocations.head.name
+			}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs"
+				bodypart=system.body_parts.torso
+				keypart="torso"
+				apparel=system.outfitedLocations.torso.name
+			}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs"
+				bodypart=system.body_parts.armL
+				keypart="armL"
+				apparel=system.outfitedLocations.armL.name
+			}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs"
+				bodypart=system.body_parts.armR
+				keypart="armR"
+				apparel=system.outfitedLocations.armR.name
+			}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs"
+				bodypart=system.body_parts.legL
+				keypart="legL"
+				apparel=system.outfitedLocations.legL.name
+			}}
+            {{> "systems/fallout/templates/actor/parts/body-status-plaque.hbs"
+				bodypart=system.body_parts.legR
+				keypart="legR"
+				apparel=system.outfitedLocations.legR.name
+			}}
         </div>
 
     </div>
