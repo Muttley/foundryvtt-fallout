@@ -98,6 +98,10 @@ FALLOUT.LEVEL.CurrentXP: Obence PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
 FALLOUT.LEVEL.RewardXP: Nagrowa w PD
+FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
+FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
+FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
+FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.OTHER: Inne
 FALLOUT.powered: Wspomagane
