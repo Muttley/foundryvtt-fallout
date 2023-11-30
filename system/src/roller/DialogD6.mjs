@@ -63,7 +63,7 @@ export class DialogD6 extends Dialog {
 					_actor = fromUuidSync(this.actor).actor;
 				}
 
-				if (_actor.type === "character" || _actor.type === "character") {
+				if (_actor.type === "character" || _actor.type === "robot") {
 					if (additionalAmmo > 0) {
 						await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo);
 					}

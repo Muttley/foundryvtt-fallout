@@ -5,13 +5,13 @@ import * as sheets from "../sheets/_module.mjs";
 
 import { APTracker } from "../apps/APTracker.mjs";
 
-import { Dialog2d20 } from "../roller/dialog2d20.mjs";
-import { DialogD6 } from "../roller/dialogD6.mjs";
-import { DieFalloutDamage } from "../roller/damageDie.mjs";
-import { DieFalloutLocation } from "../roller/locationDie.mjs";
+import { Dialog2d20 } from "../roller/Dialog2d20.mjs";
+import { DialogD6 } from "../roller/DialogD6.mjs";
+import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
+import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
 import { FalloutHovers } from "../system/FalloutHovers.mjs";
-import { Roller2D20 } from "../roller/fo2d20-roller.mjs";
+import { Roller2D20 } from "../roller/Roller2D20.mjs";
 
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import Logger from "../utils/Logger";
