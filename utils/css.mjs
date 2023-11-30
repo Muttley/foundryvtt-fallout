@@ -1,7 +1,7 @@
 import gulp from "gulp";
 import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
-import {deleteAsync} from "del";
+import { deleteAsync } from "del";
 
 const sass = gulpSass(dartSass);
 

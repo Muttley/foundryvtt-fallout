@@ -1,5 +1,5 @@
 import gulp from "gulp";
-import {deleteAsync} from "del";
+import { deleteAsync } from "del";
 
 import PackHandler from "./lib/pack-handler.mjs";
 
