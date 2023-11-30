@@ -98,6 +98,10 @@ FALLOUT.LEVEL.CurrentXP: Current XP
 FALLOUT.LEVEL.Level: Level
 FALLOUT.LEVEL.NextXP: Next Level XP
 FALLOUT.LEVEL.RewardXP: XP Reward
+FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
+FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
+FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
+FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
 FALLOUT.OTHER: Other
 FALLOUT.powered: Powered
