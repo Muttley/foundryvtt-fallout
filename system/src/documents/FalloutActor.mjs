@@ -229,16 +229,16 @@ export default class FalloutActor extends Actor {
 		this.system.outfitedLocations = outfitedLocations;
 	}
 
-	_calculateInitiative() {
-		this.system.initiative.value = this.system.attributes.per.value
-			+ this.system.attributes.agi.value
-			+ this.system.initiative.bonus;
-	}
-
 	_calculateDefense() {
 		const defense = this.system.attributes.agi.value <= 8 ? 1 : 2;
 
 		this.system.defense.value = defense + this.system.defense.bonus;
+	}
+
+	_calculateInitiative() {
+		this.system.initiative.value = this.system.attributes.per.value
+			+ this.system.attributes.agi.value
+			+ this.system.initiative.bonus;
 	}
 
 	_calculateMaxHp() {
@@ -269,7 +269,6 @@ export default class FalloutActor extends Actor {
 		this.system.level.nextLevelXP = nextLevelXp;
 	}
 
-	// ROBOT
 	_prepareRobotData() {
 		if (this.type !== "robot") return;
 
