@@ -16,15 +16,14 @@ export default class FalloutActor extends Actor {
 	// }
 
 	/**
-   * @override
-   * Augment the basic actor data with additional dynamic data. Typically,
-   * you'll want to handle most of your calculated/derived data in this step.
-   * Data calculated in this step should generally not exist in template.json
-   * (such as ability modifiers rather than ability scores) and should be
-   * available both inside and outside of character sheets (such as if an actor
-   * is queried and has a roll executed directly from it).
-   */
-
+	* @override
+	* Augment the basic actor data with additional dynamic data. Typically,
+	* you'll want to handle most of your calculated/derived data in this step.
+	* Data calculated in this step should generally not exist in template.json
+	* (such as ability modifiers rather than ability scores) and should be
+	* available both inside and outside of character sheets (such as if an actor
+	* is queried and has a roll executed directly from it).
+	*/
 	prepareDerivedData() {
 		// Make separate methods for each Actor type (character, npc, etc.) to keep
 		// things organized.
@@ -58,6 +57,8 @@ export default class FalloutActor extends Actor {
 		if (this.type !== "character") return;
 
 		this._calculateNextLevelXp();
+		this._calculateMaxHp();
+
 		this._calculateCharacterBodyResistance();
 		this._calculateEncumbrance();
 	}
@@ -224,6 +225,20 @@ export default class FalloutActor extends Actor {
 		this.system.outfitedLocations = outfitedLocations;
 	}
 
+	_calculateMaxHp() {
+		const currentLevel = parseInt(this.system.level.value);
+
+		this.system.health.max = this.system.attributes.end.value
+			+ this.system.attributes.luc.value
+			+ currentLevel - 1
+			- this.system.radiation;
+
+		this.system.health.value = Math.min(
+			this.system.health.value,
+			this.system.health.max
+		);
+	}
+
 	_calculateNextLevelXp() {
 		const currentLevel = parseInt(this.system.level.value);
 
@@ -241,6 +256,7 @@ export default class FalloutActor extends Actor {
 	_prepareRobotData() {
 		if (this.type !== "robot") return;
 
+		this._calculateMaxHp();
 		this._calculateNextLevelXp();
 
 		this._calculateRobotBodyResistance();

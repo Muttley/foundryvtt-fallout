@@ -299,7 +299,7 @@
 			},
 			"valuables": {
 				"currency": {
-					"caps": "",
+					"caps": 0,
 					"other": ""
 				}
 			}

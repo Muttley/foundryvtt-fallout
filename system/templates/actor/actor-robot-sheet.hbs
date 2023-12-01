@@ -1,7 +1,7 @@
 <form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
 
     {{!-- Sheet Header --}}
-    {{> "systems/fallout/templates/actor/parts/actor-header.hbs"}}
+    {{> actor/parts/actor-header}}
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -21,37 +21,37 @@
 
         {{!-- Status Tab --}}
         <div class="tab status" data-group="primary" data-tab="status">
-            {{> "systems/fallout/templates/actor/parts/actor-status.hbs" bodyValues=FALLOUT.BodyValues itemsEnrichedDescriptions=itemsEnrichedDescriptions}}
+            {{> actor/parts/actor-status bodyValues=FALLOUT.BodyValues itemsEnrichedDescriptions=itemsEnrichedDescriptions}}
         </div>
 
         {{!-- Owned skills Tab --}}
         <div class="tab skills" data-group="primary" data-tab="skills">
             <section class="grid grid-6col">
                 <div class="attributes main grid-span-1">
-                    {{> "systems/fallout/templates/actor/parts/actor-attributes.hbs"}}
+                    {{> actor/parts/actor-attributes}}
                 </div>
                 <section class="main grid-span-2">
-                    {{> "systems/fallout/templates/actor/parts/actor-skills.hbs"}}
+                    {{> actor/parts/actor-skills}}
                 </section>
                 <section class="main grid-span-3">
-                    {{> "systems/fallout/templates/actor/parts/actor-perks.hbs"}}
+                    {{> actor/parts/actor-perks}}
                 </section>
             </section>
         </div>
 
         {{!-- Owned Apparel Tab --}}
         <div class="tab items" data-group="primary" data-tab="apparel">
-            {{> "systems/fallout/templates/actor/parts/actor-apparel.hbs"}}
+            {{> actor/parts/actor-apparel}}
         </div>
 
         {{!-- Owned Weapons Tab --}}
         <div class="tab items" data-group="primary" data-tab="weapons">
-            {{> "systems/fallout/templates/actor/parts/actor-weapons.hbs"}}
+            {{> actor/parts/actor-weapons}}
         </div>
 
         {{!-- Inventory Tab --}}
         <div class="tab inventory" data-group="primary" data-tab="inventory">
-            {{> "systems/fallout/templates/actor/parts/actor-inventory.hbs"}}
+            {{> actor/parts/actor-inventory}}
         </div>
 
         {{!-- Biography Tab --}}
@@ -64,7 +64,7 @@
 
         {{!-- Active Effects Tab --}}
         <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-            {{> "systems/fallout/templates/actor/parts/actor-effects.hbs"}}
+            {{> actor/parts/actor-effects}}
         </div>
 
     </section>

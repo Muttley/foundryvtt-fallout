@@ -24,7 +24,7 @@
                     </div>
                 </li>
                 {{#each robot_mods as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item }}
+                {{> actor/parts/simple-expandable-item item=item }}
                 {{/each}}
             </ol>
         </div>
@@ -41,7 +41,7 @@
                     </div>
                 </li>
                 {{#each weapon_mods as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item }}
+                {{> actor/parts/simple-expandable-item item=item }}
                 {{/each}}
             </ol>
         </div>
@@ -57,7 +57,7 @@
                     </div>
                 </li>
                 {{#each apparel_mods as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item }}
+                {{> actor/parts/simple-expandable-item item=item }}
                 {{/each}}
             </ol>
         </div>
@@ -76,7 +76,7 @@
                     </div>
                 </li>
                 {{#each consumables as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item}}
+                {{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>
         </div>
@@ -91,7 +91,7 @@
                     </div>
                 </li>
                 {{#each books_and_magz as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item}}
+                {{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>
         </div>
@@ -106,7 +106,7 @@
                     </div>
                 </li>
                 {{#each miscellany as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item}}
+                {{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>
         </div>
@@ -117,7 +117,7 @@
                     <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.UI.UNSORTED'}}</div>
                 </li>
                 {{#each inventory as |item id|}}
-                {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item}}
+                {{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>
         </div>
