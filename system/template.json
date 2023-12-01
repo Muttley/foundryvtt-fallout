@@ -243,19 +243,15 @@
 					"thirst": 0
 				},
 				"defense": {
-					"base": 0,
-					"mod": 0,
+					"bonus": 0,
 					"value": 0
 				},
 				"health": {
-					"max": 1,
-					"min": 0,
-					"mod": 0,
-					"value": 1
+					"bonus": 0,
+					"value": 0
 				},
 				"initiative": {
-					"base": 0,
-					"mod": 0,
+					"bonus": 0,
 					"value": 0
 				},
 				"luckPoints": 0,

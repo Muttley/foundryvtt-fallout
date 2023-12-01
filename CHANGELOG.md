@@ -137,7 +137,7 @@ You can now call
 ## v10.0.3
 
 - Improved Condition status display
-- Added system.complication value (initialy 20). This can be further modified by Active Effects
+- Added system.complication value (initially 20). This can be further modified by Active Effects
 - Weapons with unreliable quality now decrease Complication by 1 when you roll 2D20 from the weapon
 
 ## v10.0.2

@@ -1,16 +1,21 @@
 import { FalloutUpdateBase } from "../FalloutUpdateBase";
 
-// Cleans up various unused Actor data fields
-//
 export default class Update_231130_1 extends FalloutUpdateBase {
 
 	static version = 231130.1;
 
 
 	async updateActor(actorData) {
-		// This value is auto-calculated now
+		// These values are either unnused or dynamically calculated
 		//
 		const updateData = {
+			"system.defense.-=base": null,
+			"system.defense.-=mod": null,
+			"system.health.-=max": null,
+			"system.health.-=min": null,
+			"system.health.-=mod": null,
+			"system.initiative.-=base": null,
+			"system.initiative.-=mod": null,
 			"system.level.-=nextLevelXP": null,
 		};
 

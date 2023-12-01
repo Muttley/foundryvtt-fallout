@@ -27,6 +27,14 @@ export default class FalloutActor extends Actor {
 	prepareDerivedData() {
 		// Make separate methods for each Actor type (character, npc, etc.) to keep
 		// things organized.
+
+		if (this.type === "character" || this.type === "robot") {
+			this._calculateMaxHp();
+			this._calculateInitiative();
+			this._calculateDefense();
+			this._calculateNextLevelXp();
+		}
+
 		this._prepareCharacterData();
 		this._prepareRobotData();
 		this._prepareNpcData();
@@ -55,10 +63,6 @@ export default class FalloutActor extends Actor {
 	// CHARACTER
 	_prepareCharacterData() {
 		if (this.type !== "character") return;
-
-		this._calculateNextLevelXp();
-		this._calculateMaxHp();
-
 		this._calculateCharacterBodyResistance();
 		this._calculateEncumbrance();
 	}
@@ -225,13 +229,26 @@ export default class FalloutActor extends Actor {
 		this.system.outfitedLocations = outfitedLocations;
 	}
 
+	_calculateInitiative() {
+		this.system.initiative.value = this.system.attributes.per.value
+			+ this.system.attributes.agi.value
+			+ this.system.initiative.bonus;
+	}
+
+	_calculateDefense() {
+		const defense = this.system.attributes.agi.value <= 8 ? 1 : 2;
+
+		this.system.defense.value = defense + this.system.defense.bonus;
+	}
+
 	_calculateMaxHp() {
 		const currentLevel = parseInt(this.system.level.value);
 
 		this.system.health.max = this.system.attributes.end.value
 			+ this.system.attributes.luc.value
 			+ currentLevel - 1
-			- this.system.radiation;
+			- this.system.radiation
+			+ this.system.health.bonus;
 
 		this.system.health.value = Math.min(
 			this.system.health.value,
@@ -255,9 +272,6 @@ export default class FalloutActor extends Actor {
 	// ROBOT
 	_prepareRobotData() {
 		if (this.type !== "robot") return;
-
-		this._calculateMaxHp();
-		this._calculateNextLevelXp();
 
 		this._calculateRobotBodyResistance();
 
