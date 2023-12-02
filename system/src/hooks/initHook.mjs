@@ -14,6 +14,7 @@ import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
 
 import FalloutMacros from "../system/FalloutMacros.mjs";
+import FalloutUtils from "../utils/FalloutUtils.mjs";
 import Logger from "../utils/Logger";
 
 import preloadHandlebarsTemplates from "../templates.mjs";
@@ -40,6 +41,7 @@ export async function initHook() {
 		Roller2D20,
 		logger: Logger,
 		macros: FalloutMacros,
+		utils: FalloutUtils,
 	};
 
 	CONFIG.Combat.initiative = {

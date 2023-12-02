@@ -29,6 +29,15 @@
 	],
 	"packs": [
 		{
+			"name": "system-documentation",
+			"label": "System Documentation",
+			"system": "fallout",
+			"path": "packs/system-documentation",
+			"type": "JournalEntry",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "fallout-macros",
 			"label": "Fallout Macros",
 			"system": "fallout",
@@ -54,7 +63,8 @@
 			"color": "#293f5f",
 			"packs": [
 				"fallout-macros",
-				"skills"
+				"skills",
+				"system-documentation"
 			]
 		}
 	],

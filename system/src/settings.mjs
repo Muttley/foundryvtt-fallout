@@ -127,4 +127,13 @@ export function registerSettings() {
 		type: Number,
 	});
 
+	game.settings.register("fallout", "systemVersion", {
+		name: "System Version",
+		hint: "Records the current Fallout 2d20 system version number (don't modify this unless you know what you are doing)",
+		scope: "world",
+		config: game.settings.get("fallout", "debugEnabled"),
+		default: "",
+		type: String,
+	});
+
 }

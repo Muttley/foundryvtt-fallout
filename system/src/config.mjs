@@ -225,4 +225,6 @@ FALLOUT.conditions = {
 	},
 };
 
-
+FALLOUT.JournalUuids = {
+	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
+};
