@@ -343,3 +343,8 @@ TYPES.Item.skill: Compétence
 TYPES.Item.special_ability: Capacités spéciales
 TYPES.Item.weapon_mod: Mod Arme
 TYPES.Item.weapon: Arme
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.actor.inventory.materials.rare: Rare
