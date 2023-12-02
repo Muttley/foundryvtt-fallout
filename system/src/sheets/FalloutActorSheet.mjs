@@ -414,6 +414,7 @@ export default class FalloutActorSheet extends ActorSheet {
 
 		// * AMMO COUNT UPDATE
 		html.find(".item-quantity").change(async ev => {
+			ev.preventDefault();
 			let newQuantity = parseInt($(ev.currentTarget).val());
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("itemId"));
