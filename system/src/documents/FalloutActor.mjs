@@ -413,11 +413,21 @@ export default class FalloutActor extends Actor {
 				}
 			});
 		}
+
 		let physicalItemsMap = physicalItems.map(i => i.toObject());
+
 		let totalWeight = 0;
+
 		for (let i of physicalItemsMap) {
 			totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity);
 		}
+
+		for (const material of ["common", "uncommon", "rare"]) {
+			totalWeight += this.system.materials[material] ?? 0;
+		}
+
+		totalWeight += (this.system.materials.junk * 2);
+
 		return parseFloat(totalWeight.toFixed(2));
 	}
 

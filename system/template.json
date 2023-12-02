@@ -296,6 +296,12 @@
 				"currency": {
 					"caps": 0,
 					"other": ""
+				},
+				"materials": {
+					"junk": 0,
+					"common": 0,
+					"rare": 0,
+					"uncommon": 0
 				}
 			}
 		}

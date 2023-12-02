@@ -344,3 +344,8 @@ TYPES.Item.skill: Skill
 TYPES.Item.special_ability: Special Ability
 TYPES.Item.weapon_mod: Weapon Mod
 TYPES.Item.weapon: Weapon
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.actor.inventory.materials.rare: Rare
