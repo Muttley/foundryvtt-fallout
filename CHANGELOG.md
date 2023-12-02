@@ -1,5 +1,18 @@
 ## v11.3.0
 
+## Enhancements
+- [#37] The following character sheet fields are now auto-calculated, and have new variables that can be used to adjust them with Active Effects if needed:
+
+	**Defense** (adjusted with `system.defense.bonus`)
+
+	**Max Health** (adjusted with `system.health.bonus`)
+
+	**Initiative** (adjusted with `system.initiative.bonus`)
+
+	**Melee Damage** (adjusted with `system.meleeDamage.bonus`)
+
+	**Next Level XP** (no adjustment available)
+
 ### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
 
@@ -137,7 +150,7 @@ You can now call
 ## v10.0.3
 
 - Improved Condition status display
-- Added system.complication value (initialy 20). This can be further modified by Active Effects
+- Added system.complication value (initially 20). This can be further modified by Active Effects
 - Weapons with unreliable quality now decrease Complication by 1 when you roll 2D20 from the weapon
 
 ## v10.0.2

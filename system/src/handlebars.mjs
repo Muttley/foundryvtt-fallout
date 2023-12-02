@@ -82,8 +82,8 @@ export const registerHandlebarsHelpers = function() {
 		else if (str === "poison") return "fas fa-biohazard";
 	});
 
-	Handlebars.registerHelper("getBodypartValue", function(str) {
-		return CONFIG.FALLOUT.BodyValues[str];
+	Handlebars.registerHelper("fromConfig", function(arg1, arg2) {
+		return CONFIG.FALLOUT[arg1][arg2] ? CONFIG.FALLOUT[arg1][arg2] : arg2;
 	});
 
 	Handlebars.registerHelper("isCreaturesWeapon", function(weapon) {

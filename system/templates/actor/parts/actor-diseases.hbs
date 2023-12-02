@@ -8,7 +8,7 @@
             </div>
         </li>
         {{#each diseases as |item id|}}
-        {{> "systems/fallout/templates/actor/parts/simple-expandable-item.hbs" item=item extraName=item.system.duration}}
+        {{> actor/parts/simple-expandable-item item=item extraName=item.system.duration}}
         {{/each}}
     </ol>
 </div>

@@ -16,7 +16,7 @@ import { Roller2D20 } from "../roller/Roller2D20.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import Logger from "../utils/Logger";
 
-import { preloadHandlebarsTemplates } from "../templates.mjs";
+import preloadHandlebarsTemplates from "../templates.mjs";
 import { registerHandlebarsHelpers } from "../handlebars.mjs";
 import { registerSettings } from "../settings.mjs";
 import { registerTextEditorEnrichers } from "../enrichers.mjs";

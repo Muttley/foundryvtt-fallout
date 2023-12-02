@@ -13,7 +13,7 @@ export class APTracker extends Application {
 		this.data = {};
 	}
 
-	// override
+
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "ap-tracker"],

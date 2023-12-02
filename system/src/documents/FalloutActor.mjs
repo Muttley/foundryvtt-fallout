@@ -16,18 +16,26 @@ export default class FalloutActor extends Actor {
 	// }
 
 	/**
-   * @override
-   * Augment the basic actor data with additional dynamic data. Typically,
-   * you'll want to handle most of your calculated/derived data in this step.
-   * Data calculated in this step should generally not exist in template.json
-   * (such as ability modifiers rather than ability scores) and should be
-   * available both inside and outside of character sheets (such as if an actor
-   * is queried and has a roll executed directly from it).
-   */
-
+	* @override
+	* Augment the basic actor data with additional dynamic data. Typically,
+	* you'll want to handle most of your calculated/derived data in this step.
+	* Data calculated in this step should generally not exist in template.json
+	* (such as ability modifiers rather than ability scores) and should be
+	* available both inside and outside of character sheets (such as if an actor
+	* is queried and has a roll executed directly from it).
+	*/
 	prepareDerivedData() {
 		// Make separate methods for each Actor type (character, npc, etc.) to keep
 		// things organized.
+
+		if (this.type === "character" || this.type === "robot") {
+			this._calculateDefense();
+			this._calculateInitiative();
+			this._calculateMaxHp();
+			this._calculateMeleeDamage();
+			this._calculateNextLevelXp();
+		}
+
 		this._prepareCharacterData();
 		this._prepareRobotData();
 		this._prepareNpcData();
@@ -56,10 +64,11 @@ export default class FalloutActor extends Actor {
 	// CHARACTER
 	_prepareCharacterData() {
 		if (this.type !== "character") return;
-
 		this._calculateCharacterBodyResistance();
+		this._calculateEncumbrance();
+	}
 
-		// Encumbrance
+	_calculateEncumbrance() {
 		let strWeight = parseInt(this.system.attributes.str.value);
 		switch (game.settings.get("fallout", "carryUnit")) {
 			case "lbs":
@@ -79,6 +88,7 @@ export default class FalloutActor extends Actor {
 			this.system.carryWeight.base + parseInt(this.system.carryWeight.mod);
 
 		this.system.carryWeight.total = this._getItemsTotalWeight();
+
 		this.system.encumbranceLevel = 0;
 		if (this.system.carryWeight.total > this.system.carryWeight.value) {
 			let dif = this.system.carryWeight.total - this.system.carryWeight.value;
@@ -220,18 +230,82 @@ export default class FalloutActor extends Actor {
 		this.system.outfitedLocations = outfitedLocations;
 	}
 
-	// ROBOT
+	_calculateDefense() {
+		const defense = this.system.attributes.agi.value <= 8 ? 1 : 2;
+
+		this.system.defense.value = defense + this.system.defense.bonus;
+	}
+
+	_calculateInitiative() {
+		this.system.initiative.value = this.system.attributes.per.value
+			+ this.system.attributes.agi.value
+			+ this.system.initiative.bonus;
+	}
+
+	_calculateMaxHp() {
+		const currentLevel = parseInt(this.system.level.value);
+
+		this.system.health.max = this.system.attributes.end.value
+			+ this.system.attributes.luc.value
+			+ currentLevel - 1
+			- this.system.radiation
+			+ this.system.health.bonus;
+
+		this.system.health.value = Math.min(
+			this.system.health.value,
+			this.system.health.max
+		);
+	}
+
+	_calculateMeleeDamage() {
+		const strength = this.system.attributes.str.value;
+
+		let meleeDamage = 0;
+
+		if (strength <= 8 && strength >= 7) {
+			meleeDamage = 1;
+		}
+		else if (strength <= 10 && strength >= 9) {
+			meleeDamage = 2;
+		}
+		else if (strength >= 11) {
+			meleeDamage = 3;
+		}
+
+		this.system.meleeDamage.value =
+			meleeDamage + this.system.meleeDamage.bonus;
+	}
+
+	_calculateNextLevelXp() {
+		const currentLevel = parseInt(this.system.level.value);
+
+		let nextLevelXp = 0;
+		if (currentLevel > 0) {
+			const nextLevel = currentLevel + 1;
+
+			nextLevelXp = nextLevel * currentLevel / 2 * 100;
+		}
+
+		this.system.level.nextLevelXP = nextLevelXp;
+	}
+
 	_prepareRobotData() {
 		if (this.type !== "robot") return;
 
 		this._calculateRobotBodyResistance();
+
 		this.system.favoriteWeapons = this.items.filter(
 			i => i.type === "weapon" && i.system.favorite
 		);
-		this.system.equippedRobotMods = this.items.filter(i => i.type === "robot_mod" && i.system.equipped).slice(0, 3);
+
+		this.system.equippedRobotMods = this.items.filter(
+			i => i.type === "robot_mod" && i.system.equipped
+		).slice(0, 3);
+
 		let robotArmors = this.items.filter(i => {
 			return i.type === "robot_armor";
 		});
+
 		let _robotArmorsCarryModifier = 0;
 		for (let i of robotArmors) {
 			if (i.system.equipped && !i.system.stashed) {
