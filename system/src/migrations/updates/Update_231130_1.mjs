@@ -17,6 +17,8 @@ export default class Update_231130_1 extends FalloutUpdateBase {
 			"system.initiative.-=base": null,
 			"system.initiative.-=mod": null,
 			"system.level.-=nextLevelXP": null,
+			"system.meleeDamage.-=base": null,
+			"system.meleeDamage.-=mod": null,
 		};
 
 		// This information is no longer needed

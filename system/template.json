@@ -256,8 +256,7 @@
 				},
 				"luckPoints": 0,
 				"meleeDamage": {
-					"base": 0,
-					"mod": 0,
+					"bonus": 0,
 					"value": 0
 				},
 				"radiation": 0,

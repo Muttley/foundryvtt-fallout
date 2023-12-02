@@ -29,9 +29,10 @@ export default class FalloutActor extends Actor {
 		// things organized.
 
 		if (this.type === "character" || this.type === "robot") {
-			this._calculateMaxHp();
-			this._calculateInitiative();
 			this._calculateDefense();
+			this._calculateInitiative();
+			this._calculateMaxHp();
+			this._calculateMeleeDamage();
 			this._calculateNextLevelXp();
 		}
 
@@ -254,6 +255,25 @@ export default class FalloutActor extends Actor {
 			this.system.health.value,
 			this.system.health.max
 		);
+	}
+
+	_calculateMeleeDamage() {
+		const strength = this.system.attributes.str.value;
+
+		let meleeDamage = 0;
+
+		if (strength <= 8 && strength >= 7) {
+			meleeDamage = 1;
+		}
+		else if (strength <= 10 && strength >= 9) {
+			meleeDamage = 2;
+		}
+		else if (strength >= 11) {
+			meleeDamage = 3;
+		}
+
+		this.system.meleeDamage.value =
+			meleeDamage + this.system.meleeDamage.bonus;
 	}
 
 	_calculateNextLevelXp() {

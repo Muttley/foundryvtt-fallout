@@ -9,21 +9,29 @@
                 <div class="item-name flexlarge">
                     <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24" /></div>
                     <a class="resource-label weapon-roll">{{item.name}} {{#if (isWeaponDamaged item.system)}}<i class="fas fa-wrench"></i>{{/if}}
-                    
-                       
+
+
                             {{#each item.system.damage.damageType as |dt dk|}}
                             {{#ifCond dt '==' true}}
                             <i class="fo-{{dk}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' dk)}}"></i>
                             {{/ifCond}}
                             {{/each}}
-                      
-                    
+
+
                     </a>
                 </div>
                 <div class="text-center" style="margin-right: 5px;">
-                    <a class="weapon-roll-damage" style="color:rgb(238, 231, 135)">{{#if (isWeaponUsingMeleeBonus item ../actor)}}
-                        {{math item.system.damage.rating '+' ../actor.system.meleeDamage.base}} {{else}}
-                        {{item.system.damage.rating}} {{/if}}<span class="fo-pip-boy fo-blue"></span></a>
+                    <a
+						class="weapon-roll-damage"
+						style="color:rgb(238, 231, 135)"
+					>
+						{{#if (isWeaponUsingMeleeBonus item ../actor)}}
+                        	{{math item.system.damage.rating '+' ../actor.system.meleeDamage.value}}
+						{{else}}
+                        	{{item.system.damage.rating}}
+						{{/if}}
+						<span class="fo-pip-boy fo-blue"></span>
+					</a>
                 </div>
             </div>
             <div class="item-sub-info">
@@ -43,7 +51,7 @@
                     ,&nbsp;</span>
                 {{/if}}
                 {{/each}}
-            </div>   
+            </div>
         </li>
         {{/each}}
     </ol>

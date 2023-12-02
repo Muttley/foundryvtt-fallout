@@ -597,13 +597,12 @@ export default class FalloutActorSheet extends ActorSheet {
 		html.find(".weapon-roll-damage").click(ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("item-id"));
+
 			let numOfDice = parseInt(item.system.damage.rating);
-			if (
-				item.system.weaponType === "meleeWeapons"
-          || item.system.weaponType === "unarmed"
-			) {
-				let dmgBonus = this.actor.system?.meleeDamage?.base ?? 0;
-				numOfDice += dmgBonus;
+
+			if (["meleeWeapons", "unarmed"].includes(item.system.weaponType)) {
+				let damageBonus = this.actor.system?.meleeDamage?.value ?? 0;
+				numOfDice += damageBonus;
 			}
 
 			let rollName = item.name;
