@@ -9,10 +9,12 @@
 	* **Melee Damage** (adjusted by `system.meleeDamage.bonus`)
 	* **Next Level XP** (no adjustment available)
 
-- [#50] Display the sytsem release notes the first time a world is loaded in a new version of the system
+- [#45] Added Junk, Common, Uncommon and Rare Material numeric fields to character sheet
+- [#50] Display the system release notes the first time a world is loaded in a new version of the system
 
 ### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
+- [#51] Item quantity boxes polluting actor data when altered
 
 ### Chores
 - [#33] Merged Polish language updates from Crowdin

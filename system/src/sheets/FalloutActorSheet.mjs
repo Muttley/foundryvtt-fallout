@@ -88,6 +88,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		if (actorData.type === "character" || actorData.type === "robot") {
 			this._prepareItems(context);
 			this._prepareCharacterData(context);
+
 		}
 
 		// Prepare NPC data and items.
@@ -131,10 +132,10 @@ export default class FalloutActorSheet extends ActorSheet {
    * @return {undefined}
    */
 	_prepareCharacterData(context) {
-		// Handle ability scores.
-		for (let [k, v] of Object.entries(context.system.attributes)) {
-			v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
-		}
+		// // Handle ability scores.
+		// for (let [k, v] of Object.entries(context.system.attributes)) {
+		// 	v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
+		// }
 
 		let allInjuries = [];
 		for (const [, bp] of Object.entries(this.actor.system.body_parts)) {
@@ -142,6 +143,15 @@ export default class FalloutActorSheet extends ActorSheet {
 		}
 		context.treatedInjuriesCount = allInjuries.filter(i => i === 1).length;
 		context.openInjuriesCount = allInjuries.filter(i => i === 2).length;
+
+		context.materials = [];
+		for (const material of ["junk", "common", "uncommon", "rare"]) {
+			context.materials.push({
+				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+				key: `system.materials.${material}`,
+				value: this.actor.system.materials[material] ?? 0,
+			});
+		}
 	}
 
 	/**

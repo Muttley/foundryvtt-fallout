@@ -6,9 +6,11 @@ export default class Update_231130_1 extends FalloutUpdateBase {
 
 
 	async updateActor(actorData) {
-		// These values are either unnused or dynamically calculated
+		// These values are either unnused, dynamically calculated or created
+		// by item pollution
 		//
 		const updateData = {
+			"system.-=quantity": null,
 			"system.defense.-=base": null,
 			"system.defense.-=mod": null,
 			"system.health.-=max": null,
