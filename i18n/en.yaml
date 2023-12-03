@@ -13,6 +13,11 @@ FALLOUT.AbilityInt: Intelligence
 FALLOUT.AbilityLuc: Luck
 FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Strength
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Add: Add
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
@@ -217,8 +222,8 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: MELEE DAMAGE
 FALLOUT.TEMPLATES.Mod_Type: Mod Type
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
-FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
 FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
 FALLOUT.TEMPLATES.PARTY_AP: PARTY AP
 FALLOUT.TEMPLATES.PERK: PERK
 FALLOUT.TEMPLATES.PHYS: PHYS
@@ -344,8 +349,3 @@ TYPES.Item.skill: Skill
 TYPES.Item.special_ability: Special Ability
 TYPES.Item.weapon_mod: Weapon Mod
 TYPES.Item.weapon: Weapon
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
-FALLOUT.actor.inventory.materials.rare: Rare
