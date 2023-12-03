@@ -12,6 +12,11 @@ FALLOUT.AbilityInt: Inteligencja
 FALLOUT.AbilityLuc: SZczęście
 FALLOUT.AbilityPer: Percepcja
 FALLOUT.AbilityStr: Siła
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Add: Dodaj
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
@@ -216,8 +221,8 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: OBRAŻENIA WRĘCZ
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
 FALLOUT.TEMPLATES.MODULES: Modyfikacje
 FALLOUT.TEMPLATES.Name_Prefix: Nazwa Prefixa
-FALLOUT.TEMPLATES.OVERSEER_AP: PA Nadzorcy
 FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.OVERSEER_AP: PA Nadzorcy
 FALLOUT.TEMPLATES.PARTY_AP: PA Drużyny
 FALLOUT.TEMPLATES.PERK: Profity
 FALLOUT.TEMPLATES.PHYS: Fizyczne
@@ -343,8 +348,3 @@ TYPES.Item.skill: Umiejętność
 TYPES.Item.special_ability: Zdolności Specjalne
 TYPES.Item.weapon_mod: Modyfikacje Broni
 TYPES.Item.weapon: Broń
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
-FALLOUT.actor.inventory.materials.rare: Rare

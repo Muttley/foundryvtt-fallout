@@ -12,6 +12,11 @@ FALLOUT.AbilityInt: Intelligenz
 FALLOUT.AbilityLuc: Glück
 FALLOUT.AbilityPer: Wahrnehmung
 FALLOUT.AbilityStr: Stärke
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Add: Add
 FALLOUT.APPAREL.armor: Rüstung
 FALLOUT.APPAREL.clothing: Kleidung
@@ -216,8 +221,8 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: NAHKAMPFSCHADEN
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
 FALLOUT.TEMPLATES.MODULES: MODULE
 FALLOUT.TEMPLATES.Name_Prefix: Name Präfix
-FALLOUT.TEMPLATES.OVERSEER_AP: SPIELLEITERIN AP
 FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.OVERSEER_AP: SPIELLEITERIN AP
 FALLOUT.TEMPLATES.PARTY_AP: GRUPPE AP
 FALLOUT.TEMPLATES.PERK: EXTRA
 FALLOUT.TEMPLATES.PHYS: PHYS
@@ -343,8 +348,3 @@ TYPES.Item.skill: Fertigkeit
 TYPES.Item.special_ability: Sonderfähigkeit
 TYPES.Item.weapon_mod: Waffenmod
 TYPES.Item.weapon: Waffe
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
-FALLOUT.actor.inventory.materials.rare: Rare

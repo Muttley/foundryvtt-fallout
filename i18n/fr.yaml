@@ -12,6 +12,11 @@ FALLOUT.AbilityInt: Intelligence
 FALLOUT.AbilityLuc: Légendaire Chance
 FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Super Force
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Add: Ajouter
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
@@ -216,8 +221,8 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: DÉGÂT CAC
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
-FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
 FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
 FALLOUT.TEMPLATES.PARTY_AP: RÉSERVE GROUPE PA
 FALLOUT.TEMPLATES.PERK: APTITUDE
 FALLOUT.TEMPLATES.PHYS: BAL
@@ -343,8 +348,3 @@ TYPES.Item.skill: Compétence
 TYPES.Item.special_ability: Capacités spéciales
 TYPES.Item.weapon_mod: Mod Arme
 TYPES.Item.weapon: Arme
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
-FALLOUT.actor.inventory.materials.rare: Rare
