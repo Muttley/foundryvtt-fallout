@@ -343,3 +343,8 @@ TYPES.Item.skill: Umiejętność
 TYPES.Item.special_ability: Zdolności Specjalne
 TYPES.Item.weapon_mod: Modyfikacje Broni
 TYPES.Item.weapon: Broń
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.actor.inventory.materials.rare: Rare
