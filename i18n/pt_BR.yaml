@@ -12,6 +12,11 @@ FALLOUT.AbilityInt: Intelligence
 FALLOUT.AbilityLuc: Luck
 FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Strength
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Add: Add
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Roupa
@@ -216,8 +221,8 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: DANO CORPO-A-CORPO
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
-FALLOUT.TEMPLATES.OVERSEER_AP: AP DO OVERSEER
 FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.OVERSEER_AP: AP DO OVERSEER
 FALLOUT.TEMPLATES.PARTY_AP: AP DA PARTY
 FALLOUT.TEMPLATES.PERK: PERK
 FALLOUT.TEMPLATES.PHYS: FÍSICO
@@ -343,8 +348,3 @@ TYPES.Item.skill: Skill
 TYPES.Item.special_ability: Habilidade Especial
 TYPES.Item.weapon_mod: Mod de Arma
 TYPES.Item.weapon: Arma
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
-FALLOUT.actor.inventory.materials.rare: Rare
