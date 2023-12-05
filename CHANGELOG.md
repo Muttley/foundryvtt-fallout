@@ -9,6 +9,7 @@
 	* **Melee Damage** (adjusted by `system.meleeDamage.bonus`)
 	* **Next Level XP** (no adjustment available)
 
+- [#38] Automatically set the initiative for actors added to the combat tracker
 - [#43] Add support for ammo types that have multiple charges/shots per item
 - [#45] Added Junk, Common, Uncommon and Rare Material numeric fields to character sheet
 - [#50] Display the system release notes the first time a world is loaded in a new version of the system
