@@ -140,6 +140,8 @@ FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
 FALLOUT.TEMPLATES.Addictive: Süchtigmachend
 FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
 FALLOUT.TEMPLATES.AMMO: MUNI
+FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
+FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
 FALLOUT.TEMPLATES.Apparel_Type: Kleidungsart
 FALLOUT.TEMPLATES.Apparel: Kleidung
 FALLOUT.TEMPLATES.APPAREL: KLEIDUNG
