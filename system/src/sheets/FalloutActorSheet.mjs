@@ -47,15 +47,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		const actorData = this.actor.toObject(false);
 
 		// Sort all items alphabetically for display on the character sheet
-		actorData.items.sort((a, b) => {
-			if (a.name < b.name) {
-				return -1;
-			}
-			if (a.name > b.name) {
-				return 1;
-			}
-			return 0;
-		});
+		actorData.items.sort((a, b) => a.name.localeCompare(b.name));
 
 		const context = {
 			actor: actorData,
@@ -161,7 +153,7 @@ export default class FalloutActorSheet extends ActorSheet {
    *
    * @return {undefined}
    */
-	_prepareItems(context) {
+	async _prepareItems(context) {
 		// Initialize containers.
 
 		const skills = [];
@@ -205,12 +197,22 @@ export default class FalloutActorSheet extends ActorSheet {
 				robot_mods.push(i);
 			}
 			else if (i.type === "weapon") {
+				if (i.system.ammo !== "") {
+					const [, shotsAvailable] = await this.actor._getAvailableAmmoType(
+						i.system.ammo
+					);
+
+					i.shotsAvailable = shotsAvailable;
+				}
 				weapons.push(i);
 			}
 			else if (i.type === "weapon_mod") {
 				weapon_mods.push(i);
 			}
 			else if (i.type === "ammo") {
+				i.shotsAvailable =
+					((i.system.quantity - 1) * i.system.shots.max) + i.system.shots.current;
+
 				ammo.push(i);
 			}
 			else if (i.type === "consumable") {
@@ -526,7 +528,7 @@ export default class FalloutActorSheet extends ActorSheet {
 			.click(ev => onManageActiveEffect(ev, this.actor));
 
 		// * ROLL WEAPON SKILL
-		html.find(".weapon-roll").click(ev => {
+		html.find(".weapon-roll").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("item-id"));
 
@@ -571,15 +573,16 @@ export default class FalloutActorSheet extends ActorSheet {
 			const ammoPopulated = item.system.ammo !== "";
 
 			if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
-				const ammo = item.actor.items.find(
-					i => i.name === item.system.ammo
+				const [ammo, shotsAvailable] = await this.actor._getAvailableAmmoType(
+					item.system.ammo
 				);
 
 				if (!ammo) {
 					ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
 					return;
 				}
-				if (ammo.system.quantity < item.system.ammoPerShot) {
+
+				if (shotsAvailable < item.system.ammoPerShot) {
 					ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
 					return;
 				}

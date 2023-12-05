@@ -1,58 +1,76 @@
 <div class="box padding5">
-    <ol class="items-list">
-        <li class="item consumable flexrow items-header">
-            <div class="flexrow flexlarge item-name upperC">{{localize 'FALLOUT.TEMPLATES.FAVORITE_WEAPONS'}}</div>
-        </li>
-        {{#each favoriteWeapons as |item id|}}
-        <li class="item favorite-weapon weapon " data-item-id="{{item._id}}">
-            <div class="item-name flex2 flex-between">
-                <div class="item-name flexlarge">
-                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24" /></div>
-                    <a class="resource-label weapon-roll">{{item.name}} {{#if (isWeaponDamaged item.system)}}<i class="fas fa-wrench"></i>{{/if}}
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.FAVORITE_WEAPONS'}}
+			</div>
+		</li>
+		{{#each favoriteWeapons as |item id|}}
+			<li class="item favorite-weapon weapon " data-item-id="{{item._id}}">
+				<div class="item-name flex2 flex-between">
+					<div class="item-name flexlarge">
+						<div class="item-image">
+							<img
+								src="{{item.img}}"
+								title="{{item.name}}"
+								width="24"
+								height="24"
+							/>
+						</div>
+						<a class="resource-label weapon-roll">
+							{{item.name}}
+							{{#if item.shotsAvailable}}
+								<em>({{item.shotsAvailable}})</em>
+							{{/if}}
+							{{#if (isWeaponDamaged item.system)}}
+								<i class="fas fa-wrench"></i>
+							{{/if}}
 
-
-                            {{#each item.system.damage.damageType as |dt dk|}}
-                            {{#ifCond dt '==' true}}
-                            <i class="fo-{{dk}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' dk)}}"></i>
-                            {{/ifCond}}
-                            {{/each}}
-
-
-                    </a>
-                </div>
-                <div class="text-center" style="margin-right: 5px;">
-                    <a
-						class="weapon-roll-damage"
-						style="color:rgb(238, 231, 135)"
-					>
-						{{#if (isWeaponUsingMeleeBonus item ../actor)}}
-                        	{{math item.system.damage.rating '+' ../actor.system.meleeDamage.value}}
-						{{else}}
-                        	{{item.system.damage.rating}}
+							{{#each item.system.damage.damageType as |dt dk|}}
+								{{#ifCond dt '==' true}}
+									<i class="fo-{{dk}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' dk)}}"></i>
+								{{/ifCond}}
+							{{/each}}
+						</a>
+					</div>
+					<div class="text-center" style="margin-right: 5px;">
+						<a
+							class="weapon-roll-damage"
+							style="color:rgb(238, 231, 135)"
+						>
+							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
+								{{math item.system.damage.rating '+' ../actor.system.meleeDamage.value}}
+							{{else}}
+								{{item.system.damage.rating}}
+							{{/if}}
+							<span class="fo-pip-boy fo-blue"></span>
+						</a>
+					</div>
+				</div>
+				<div class="item-sub-info">
+					<span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
+					{{#each item.system.damage.weaponQuality as |quality key|}}
+						{{#if (eq quality.value true)}}
+							<span class="quality hover" data-key="{{key}}">
+								{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}},&nbsp;
+							</span>
 						{{/if}}
-						<span class="fo-pip-boy fo-blue"></span>
-					</a>
-                </div>
-            </div>
-            <div class="item-sub-info">
-                <span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
-                {{#each item.system.damage.weaponQuality as |quality key|}}
-                {{#if (eq quality.value true)}}
-                <span class="quality hover" data-key="{{key}}">{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}},&nbsp;</span>
-                {{/if}}
-                {{/each}}
-                &nbsp;&nbsp;&nbsp;
-                <span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
-                {{#each item.system.damage.damageEffect as |effect key|}}
-                {{#if (eq effect.value true)}}
-                <span class="effect hover" data-key="{{key}}">
-                    {{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
-                    {{#if (ne effect.rank undefined)}}{{effect.rank}}{{/if}}
-                    ,&nbsp;</span>
-                {{/if}}
-                {{/each}}
-            </div>
-        </li>
-        {{/each}}
-    </ol>
+					{{/each}}
+					&nbsp;&nbsp;&nbsp;
+					<span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
+					{{#each item.system.damage.damageEffect as |effect key|}}
+						{{#if (eq effect.value true)}}
+							<span class="effect hover" data-key="{{key}}">
+								{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
+								{{#if (ne effect.rank undefined)}}
+									{{effect.rank}}
+								{{/if}}
+								,&nbsp;
+							</span>
+						{{/if}}
+					{{/each}}
+				</div>
+			</li>
+		{{/each}}
+	</ol>
 </div>

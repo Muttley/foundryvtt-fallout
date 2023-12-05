@@ -65,7 +65,10 @@ export class Dialog2d20 extends Dialog {
 				// REDUCE AMMO
 				if (this.actor && this.item?.system.ammo !== "") {
 					try {
-						this.actor.reduceAmmo(this.item.system.ammo, this.item.system.ammoPerShot);
+						this.actor.reduceAmmo(
+							this.item.system.ammo,
+							this.item.system.ammoPerShot
+						);
 					}
 					catch(er) {
 						console.warn(er);
