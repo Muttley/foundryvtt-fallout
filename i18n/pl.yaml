@@ -140,6 +140,8 @@ FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
 FALLOUT.TEMPLATES.Addictive: Uzależniające
 FALLOUT.TEMPLATES.Alcoholic: Alkoholowe
 FALLOUT.TEMPLATES.AMMO: Amunicja
+FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
+FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
