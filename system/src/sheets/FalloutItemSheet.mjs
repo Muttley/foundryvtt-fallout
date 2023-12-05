@@ -90,6 +90,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 			const weaponQualities = [];
 			for (const key in CONFIG.FALLOUT.WEAPONS.weaponQuality) {
+
 				weaponQualities.push({
 					active: item.system?.damage?.weaponQuality[key].value ?? false,
 					key,

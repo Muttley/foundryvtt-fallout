@@ -40,4 +40,13 @@ export default class Update_231130_1 extends FalloutUpdateBase {
 		return updateData;
 	}
 
+	async updateItem(itemData, actorData) {
+		if (itemData.type !== "ammo") return;
+
+		const updateData = {
+			"system.-=type": null,
+		};
+
+		return updateData;
+	}
 }

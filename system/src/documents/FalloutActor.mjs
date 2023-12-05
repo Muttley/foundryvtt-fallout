@@ -397,6 +397,51 @@ export default class FalloutActor extends Actor {
 		this.system.outfitedLocations = outfitedLocations;
 	}
 
+	async _getAvailableAmmoType(name) {
+		const ammoItems = this.items.filter(
+			i => i.name === name
+		);
+
+		// Ensure we always use the ammo item with the least amount of shots
+		// remaining first.
+		ammoItems.sort((a, b) => {
+			const aTotalShots =
+				((a.system.quantity - 1) * a.system.shots.max) + a.system.shots.current;
+
+			const bTotalShots =
+				((b.system.quantity - 1) * b.system.shots.max) + b.system.shots.current;
+
+			if (aTotalShots > bTotalShots) {
+				return 1;
+			}
+			else if (bTotalShots > aTotalShots) {
+				return -1;
+			}
+			else {
+				return 0;
+			}
+		});
+
+		let shotsAvailable = 0;
+
+		if (ammoItems) {
+			shotsAvailable = ammoItems.reduce(
+				(accumulator, ammoItem) => {
+					const maxShots = ammoItem.system.shots.max;
+					const currentShots = ammoItem.system.shots.current;
+					const reserveQuantity = ammoItem.system.quantity - 1;
+
+					const shots = currentShots + (reserveQuantity * maxShots);
+
+					return accumulator + shots;
+				},
+				0
+			);
+		}
+
+		return [ammoItems, shotsAvailable];
+	}
+
 	// Calculate Total Weight Of Items
 	_getItemsTotalWeight() {
 		let physicalItems = this.items.filter(i => {
@@ -515,11 +560,51 @@ export default class FalloutActor extends Actor {
 	}
 
 	// Reduce Ammo
-	async reduceAmmo(ammo = "", ammount = 0) {
-		const _ammo = this.items.find(i => i.name === ammo);
-		if (_ammo) {
-			const newQ = Math.max(0, parseInt(_ammo.system.quantity) - parseInt(ammount));
-			await this.updateEmbeddedDocuments("Item", [{"_id": _ammo._id, "system.quantity": newQ}]);
+	async reduceAmmo(ammoName="", roundsToUse=0) {
+		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);
+
+		if (shotsAvailable <= 0) return;
+
+		for (const ammoItem of ammoItems) {
+			if (roundsToUse === 0) break;
+
+			const current = ammoItem.system.shots.current;
+			const quantity = ammoItem.system.quantity;
+
+			const max = ammoItem.system.shots.max > 0
+				? ammoItem.system.shots.max
+				: 1;
+
+			const quantityShots = ((quantity - 1) * max) + current;
+
+			let newCurrent = current;
+			let newQuantity = ammoItem.system.quantity;
+
+			if (roundsToUse >= quantityShots) {
+				roundsToUse -= quantityShots;
+
+				this.deleteEmbeddedDocuments("Item", [ammoItem._id]);
+				continue;
+			}
+			else {
+				newCurrent -= roundsToUse;
+
+				if (newCurrent <= 0) {
+					const overflow = Math.abs(newCurrent);
+					const usedQuantity = Math.floor(overflow / max) + 1;
+
+					newQuantity -= usedQuantity;
+					newCurrent = max - (overflow % max);
+				}
+
+				roundsToUse = 0;
+			}
+
+			await this.updateEmbeddedDocuments("Item", [{
+				"_id": ammoItem._id,
+				"system.shots.current": newCurrent,
+				"system.quantity": newQuantity,
+			}]);
 		}
 	}
 }

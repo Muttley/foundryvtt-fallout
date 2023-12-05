@@ -10,10 +10,34 @@
     <section class="sheet-body">
         {{!-- Attributes Tab --}}
         <div class="attributes tab" data-group="primary" data-tab="attributes">
-            <h3 style="border-bottom: none;">Effect</h3>
-            <div class="description-field">
-                {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
-            </div>
+			<div class="flexrow resource-row">
+				<div class="flex align-mid">
+					<label for="system.shots.current">{{localize "FALLOUT.TEMPLATES.Ammo.Current"}}</label>
+					<input
+						class="num-short-2"
+						type="Number"
+						name="system.shots.current"
+						style="margin-left: 8px;"
+						value="{{system.shots.current}}"
+					/>
+				</div>
+				<div class="flex align-mid">
+					<label for="system.shots.max">{{localize "FALLOUT.TEMPLATES.Ammo.Max"}}</label>
+					<input
+						class="num-short-2"
+						type="Number"
+						name="system.shots.max"
+						style="margin-left: 8px;"
+						value="{{system.shots.max}}"
+					/>
+				</div>
+			</div>
+			<div class="resource-row">
+				<h3 style="border-bottom: none;">Effect</h3>
+				<div class="description-field">
+					{{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
+				</div>
+			</div>
         </div>
 
         {{!-- Description Tab --}}

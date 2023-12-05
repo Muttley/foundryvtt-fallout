@@ -9,8 +9,10 @@
 	* **Melee Damage** (adjusted by `system.meleeDamage.bonus`)
 	* **Next Level XP** (no adjustment available)
 
+- [#43] Add support for ammo types that have multiple charges/shots per item
 - [#45] Added Junk, Common, Uncommon and Rare Material numeric fields to character sheet
 - [#50] Display the system release notes the first time a world is loaded in a new version of the system
+- [#55] Show the amount of remaining shots for each favourite weapon on the status page
 
 ### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
