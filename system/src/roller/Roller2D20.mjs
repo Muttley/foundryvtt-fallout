@@ -38,7 +38,7 @@ export class Roller2D20 {
 		}
 
 
-		await Roller2D20.parseD20Roll({
+		const dicesRolled = await Roller2D20.parseD20Roll({
 			rollname: rollname,
 			roll: roll,
 			successTreshold: successTreshold,
@@ -49,6 +49,7 @@ export class Roller2D20 {
 			item: item,
 			actor: actor,
 		});
+		return {roll: roll, dicesRolled: dicesRolled};
 	}
 
 	static async parseD20Roll({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [], hitLocation=null, hitLocationResult=null, item = null, actor = null }) {
@@ -108,6 +109,7 @@ export class Roller2D20 {
 			item: item,
 			actor: actor,
 		});
+		return dicesRolled;
 	}
 
 	static async rerollD20({ rollname = "Roll xD20", roll = null, successTreshold = 0, critTreshold = 1, complicationTreshold = 20, dicesRolled = [], rerollIndexes = [] } = {}) {

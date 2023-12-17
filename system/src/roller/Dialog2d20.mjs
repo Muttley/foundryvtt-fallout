@@ -1,6 +1,5 @@
 export class Dialog2d20 extends Dialog {
 
-
 	constructor(
 		rollName,
 		diceNum,
@@ -25,6 +24,7 @@ export class Dialog2d20 extends Dialog {
 		this.actor = actor;
 		this.item = item;
 		this.options.classes = ["dice-icon"];
+		this.deferred = new Deferred();
 	}
 
 	activateListeners(html) {
@@ -39,43 +39,52 @@ export class Dialog2d20 extends Dialog {
 			this.diceNum = parseInt(index);
 			this.markDiceNumber(html, this.diceNum);
 		});
+		this.data.buttons.roll.callback=this.rollButton.bind(this);
+	}
 
-		html.on("click", ".roll", event => {
-			let attr = html.find('[name="attribute"]').val();
-			let skill = html.find('[name="skill"]').val();
-			let complication = html.find('[name="complication"]').val();
-			let isTag = html.find('[name="tag"]').is(":checked");
+	rollButton() {
+		let attr = this.element.find('[name="attribute"]').val();
+		let skill = this.element.find('[name="skill"]').val();
+		let complication = this.element.find('[name="complication"]').val();
+		let isTag = this.element.find('[name="tag"]').is(":checked");
 
-			fallout.Roller2D20.rollD20({
-				rollname: this.rollName,
-				dicenum: this.diceNum,
-				attribute: attr,
-				skill: skill,
-				tag: isTag,
-				complication: complication,
-				rollLocation: this.rollLocation,
-				item: this.item,
-				actor: this.actor,
-			});
+		this.rolling = true;
+		fallout.Roller2D20.rollD20({
+			rollname: this.rollName,
+			dicenum: this.diceNum,
+			attribute: attr,
+			skill: skill,
+			tag: isTag,
+			complication: complication,
+			rollLocation: this.rollLocation,
+			item: this.item,
+			actor: this.actor,
+		}).then(result => this.deferred.resolve(result));
 
-			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				const actorType = this.actor?.type;
-				if (actorType !== "character" && actorType !== "robot") return;
+		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
+			const actorType = this.actor?.type;
+			if (actorType !== "character" && actorType !== "robot") return;
 
-				// REDUCE AMMO
-				if (this.actor && this.item?.system.ammo !== "") {
-					try {
-						this.actor.reduceAmmo(
-							this.item.system.ammo,
-							this.item.system.ammoPerShot
-						);
-					}
-					catch(er) {
-						console.warn(er);
-					}
+			// REDUCE AMMO
+			if (this.actor && this.item?.system.ammo !== "") {
+				try {
+					this.actor.reduceAmmo(
+						this.item.system.ammo,
+						this.item.system.ammoPerShot
+					);
+				}
+				catch(er) {
+					console.warn(er);
 				}
 			}
-		});
+		}
+	}
+
+	async close(options={}) {
+		super.close(options);
+		if (!this.rolling) {
+			this.deferred.resolve(null);
+		}
 	}
 
 	markDiceNumber(html) {
@@ -119,7 +128,16 @@ export class Dialog2d20 extends Dialog {
 				},
 			}
 		);
-
 		d.render(true);
+		return d.deferred.promise;
+	}
+}
+
+class Deferred {
+	constructor() {
+		this.promise = new Promise((resolve, reject) => {
+			this.reject = reject;
+			this.resolve = resolve;
+		});
 	}
 }
