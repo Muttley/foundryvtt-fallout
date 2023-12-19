@@ -336,6 +336,7 @@ TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie
 TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
+TYPES.Actor.settlement: Settlement
 TYPES.Item.ammo: Amunicja
 TYPES.Item.apparel_mod: Apparel Mod
 TYPES.Item.apparel: Apparel
