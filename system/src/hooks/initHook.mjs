@@ -15,7 +15,7 @@ import { Roller2D20 } from "../roller/Roller2D20.mjs";
 
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
-import Logger from "../utils/Logger";
+import Logger from "../utils/Logger.mjs";
 
 import preloadHandlebarsTemplates from "../templates.mjs";
 import { registerHandlebarsHelpers } from "../handlebars.mjs";
@@ -116,6 +116,20 @@ function registerDocumentSheets() {
 	Actors.unregisterSheet("core", ActorSheet);
 	Items.unregisterSheet("core", ItemSheet);
 
-	Actors.registerSheet("fallout", sheets.FalloutActorSheet, { makeDefault: true });
+	Actors.registerSheet("fallout", sheets.FalloutActorSheet, {
+		types: [
+			"character",
+			"creature",
+			"npc",
+			"robot",
+		],
+		makeDefault: true,
+	});
+
+	Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
+		makeDefault: true,
+		types: ["settlement"],
+	});
+
 	Items.registerSheet("fallout", sheets.FalloutItemSheet, { makeDefault: true });
 }
