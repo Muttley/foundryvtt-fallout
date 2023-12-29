@@ -336,6 +336,7 @@ TYPES.Actor.character: Personagem
 TYPES.Actor.creature: Criatura
 TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robô
+TYPES.Actor.settlement: Settlement
 TYPES.Item.ammo: Ammo
 TYPES.Item.apparel_mod: Apparel Mod
 TYPES.Item.apparel: Apparel
