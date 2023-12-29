@@ -26,6 +26,7 @@
 - [#35] Remove usage of deprecated `ActiveEffect._getSourceName()`
 - [#36] Remove usage of deprecated `ActiveEffect#label`
 - [#46] Implement schema migration tools ready for likely schema changes
+- [#64] Add ability to filter item compendiums by source ready for future work
 
 ---
 

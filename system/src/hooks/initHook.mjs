@@ -12,6 +12,7 @@ import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
 import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
+import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
@@ -35,6 +36,7 @@ export async function initHook() {
 	// accessible in global contexts.
 	globalThis.fallout = {
 		APTracker,
+		compendiums: FalloutCompendiums,
 		Dialog2d20,
 		DialogD6,
 		FalloutHovers,
