@@ -14,6 +14,7 @@
 - [#45] Added Junk, Common, Uncommon and Rare Material numeric fields to character sheet
 - [#50] Display the system release notes the first time a world is loaded in a new version of the system
 - [#55] Show the amount of remaining shots for each favourite weapon on the status page
+- [#59] Added new Trait item and display them on the character sheet along with Perks
 
 ### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet

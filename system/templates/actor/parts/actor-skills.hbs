@@ -4,7 +4,7 @@
 		<div class="item-skill-tag">{{localize "FALLOUT.TEMPLATES.Tag"}}</div>
 		<div class="item-skill-value">{{localize "FALLOUT.TEMPLATES.Rank"}}</div>
 	</li>
-	{{#each skills as |item id|}}
+	{{#each itemsByType.skill as |item id|}}
 		<li class="item skill flexrow" data-item-id="{{item._id}}">
 			<div class="item-name">
 				<h4>

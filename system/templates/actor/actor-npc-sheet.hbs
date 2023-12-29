@@ -127,7 +127,7 @@
 							<div class="box-header text-center">{{localize "FALLOUT.TEMPLATES.SKILLS"}}</div>
 							<div>
 								<ol class="items-list grid">
-									{{#each skills as |item id|}}
+									{{#each itemsByType.skill as |item id|}}
 									<li class="item skill flexrow" data-item-id="{{item._id}}">
 										<div class="item-name">
 											<h4><a class="color-secondary"><span class="resource-label upperC">{{item.name}}</span> [{{toUpperCase item.system.defaultAttribute}}]</a></h4>

@@ -23,6 +23,7 @@ export default async function() {
 		"systems/fallout/templates/actor/parts/actor-skills.hbs",
 		"systems/fallout/templates/actor/parts/actor-special_abilities.hbs",
 		"systems/fallout/templates/actor/parts/actor-status.hbs",
+		"systems/fallout/templates/actor/parts/actor-traits.hbs",
 		"systems/fallout/templates/actor/parts/actor-weapons.hbs",
 		"systems/fallout/templates/actor/parts/body-status-plaque.hbs",
 		"systems/fallout/templates/actor/parts/npc-body.hbs",

@@ -347,6 +347,7 @@
 			"robot_mod",
 			"skill",
 			"special_ability",
+			"trait",
 			"weapon",
 			"weapon_mod"
 		],
@@ -517,6 +518,11 @@
 				"base"
 			]
 		},
+		"trait": {
+			"templates": [
+				"base"
+			]
+		},
 		"templates": {
 			"attachable": {
 				"attachable": true,
@@ -524,7 +530,8 @@
 			},
 			"base": {
 				"description": "",
-				"favorite": false
+				"favorite": false,
+				"source": ""
 			},
 			"equipable": {
 				"equippable": true,

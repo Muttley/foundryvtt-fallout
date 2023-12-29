@@ -7,8 +7,11 @@
                     {{localize 'FALLOUT.UI.Add'}}</a>
             </div>
         </li>
-        {{#each diseases as |item id|}}
-        {{> actor/parts/simple-expandable-item item=item extraName=item.system.duration}}
+        {{#each itemsByTyoe.disease as |item id|}}
+			{{>	actor/parts/simple-expandable-item
+				item=item
+				extraName=item.system.duration
+			}}
         {{/each}}
     </ol>
 </div>

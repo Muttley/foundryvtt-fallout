@@ -6,7 +6,7 @@
       <a class="item-control item-create" title="Create item" data-type="perk"><i class="fas fa-plus"></i> {{localize "FALLOUT.TEMPLATES.Add_Perk"}}</a>
     </div>
   </li>
-  {{#each perks as |item id|}}
+  {{#each itemsByType.perk as |item id|}}
   <li class="item" data-item-id="{{item._id}}">
     <div class=" flexrow">
       <div class="item-name expandable-info">

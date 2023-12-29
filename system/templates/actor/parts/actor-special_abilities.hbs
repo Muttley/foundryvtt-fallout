@@ -6,7 +6,7 @@
                 {{localize 'FALLOUT.UI.Add'}}</a>
         </div>
     </li>
-    {{#each specialAbilities as |item id|}}
+    {{#each itemsByType.special_ability as |item id|}}
     {{> actor/parts/simple-expandable-item item=item}}
     {{/each}}
 </ol>
