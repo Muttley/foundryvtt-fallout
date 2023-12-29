@@ -154,8 +154,6 @@ export default class FalloutActorSheet extends ActorSheet {
    * @return {undefined}
    */
 	async _prepareItems(context) {
-		// Initialize containers.
-
 		const skills = [];
 		const perks = [];
 		const apparel = [];
@@ -168,7 +166,6 @@ export default class FalloutActorSheet extends ActorSheet {
 		const consumables = [];
 		const books_and_magz = [];
 		const miscellany = [];
-		// const gear = [];
 		const specialAbilities = [];
 		const diseases = [];
 
@@ -176,11 +173,18 @@ export default class FalloutActorSheet extends ActorSheet {
 		// Iterate through items, allocating to containers
 		for (let i of context.items) {
 			i.img = i.img || DEFAULT_TOKEN;
-			// Append to gear.
+
 			if (i.type === "skill") {
+				i.localizedName = game.i18n.localize(
+					`FALLOUT.SKILL.${i.name}`
+				);
+
+				i.localizedDefaultAttribute = game.i18n.localize(
+					`FALLOUT.AbilityAbbr.${i.system.defaultAttribute}`
+				);
+
 				skills.push(i);
 			}
-			// Append to skills.
 			else if (i.type === "perk") {
 				perks.push(i);
 			}
@@ -232,13 +236,8 @@ export default class FalloutActorSheet extends ActorSheet {
 			}
 		}
 
-		// Assign and return
+		skills.sort((a, b) => a.localizedName.localeCompare(b.localizedName));
 
-		skills.sort(function(a, b) {
-			let nameA = a.name.toUpperCase();
-			let nameB = b.name.toUpperCase();
-			return nameA < nameB ? -1 : nameA > nameB ? 1 : 0;
-		});
 		context.skills = skills;
 
 		let clothing = apparel.filter(a => a.system.appareltype === "clothing");
@@ -248,6 +247,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		let powerArmor = apparel.filter(a => a.system.appareltype === "powerArmor");
 		let plating = robotApparel.filter(a => a.system.appareltype === "plating");
 		let robotArmor = robotApparel.filter(a => a.system.appareltype === "armor");
+
 		context.allApparel = [
 			{ apparelType: "clothing", list: clothing },
 			{ apparelType: "outfit", list: outfit },
@@ -255,22 +255,23 @@ export default class FalloutActorSheet extends ActorSheet {
 			{ apparelType: "armor", list: armor },
 			{ apparelType: "powerArmor", list: powerArmor },
 		];
+
 		context.allRobotApparel = [
 			{ apparelType: "plating", list: plating },
 			{ apparelType: "armor", list: robotArmor },
 		];
 
-		context.apparel_mods = apparel_mods;
-		context.robot_mods = robot_mods;
-		context.perks = perks;
 		context.ammo = ammo;
-		context.weapons = weapons;
-		context.weapon_mods = weapon_mods;
-		context.specialAbilities = specialAbilities;
-		context.consumables = consumables;
+		context.apparel_mods = apparel_mods;
 		context.books_and_magz = books_and_magz;
-		context.miscellany = miscellany;
+		context.consumables = consumables;
 		context.diseases = diseases;
+		context.miscellany = miscellany;
+		context.perks = perks;
+		context.robot_mods = robot_mods;
+		context.specialAbilities = specialAbilities;
+		context.weapon_mods = weapon_mods;
+		context.weapons = weapons;
 
 		// WRAP INVENTORY DEPENDING ON THE CHARACTER TYPE:
 		// for example put apparel in inventory for all except the character actor.

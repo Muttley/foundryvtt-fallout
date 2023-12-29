@@ -18,6 +18,7 @@
 ### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
 - [#51] Item quantity boxes polluting actor data when altered
+- [#60] Use localized skill names to sort and display alphabetically on Character sheet
 
 ### Chores
 - [#33] Merged Polish language updates from Crowdin
