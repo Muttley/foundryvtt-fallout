@@ -21,6 +21,7 @@
 - [#51] Item quantity boxes polluting actor data when altered
 - [#60] Use localized skill names to sort and display alphabetically on Character sheet
 - [#65] Stash button alignment issue on Character sheet Apparel tab
+- [#66] Power Armor health status showing values when no power armor in use
 
 ### Chores
 - [#33] Merged Polish language updates from Crowdin

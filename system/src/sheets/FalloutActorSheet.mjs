@@ -610,7 +610,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		});
 
 		// * POWER ARMOR MONITOR
-		html.find(".power-armor-monitor-helath-value").change(ev => {
+		html.find(".power-armor-monitor-health-value").change(ev => {
 			const apparelId = $(ev.currentTarget).data("itemId");
 			const newHealthValue = $(ev.currentTarget).val();
 			let apparel = this.actor.items.get(apparelId);
