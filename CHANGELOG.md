@@ -23,6 +23,7 @@
 - [#65] Stash button alignment issue on Character sheet Apparel tab
 - [#66] Power Armor health status showing values when no power armor in use
 - [#68] New Consumable item sheet defaults to Food, but Food parameters not shown until selection changed
+- [#70] Consumable chat card shows irrelevant details
 
 ## Chores
 - [#33] Merged Polish language updates from Crowdin
