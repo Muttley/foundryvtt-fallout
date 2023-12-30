@@ -18,7 +18,7 @@
 			</a>
 		</div>
 	</li>
-	{{#each weapons as |item id| }}
+	{{#each itemsByType.weapon as |item id| }}
 		<li class="item weapon" data-item-id="{{item._id}}">
 			<div class=" flexrow">
 				<div class="item-name flexlarge weapon-roll">
@@ -134,7 +134,7 @@
 				{{localize 'FALLOUT.UI.Add'}}</a>
 		</div>
 	</li>
-	{{#each ammo as |item id| }}
+	{{#each itemsByType.ammo as |item id| }}
 	<li class="item ammo" data-item-id="{{item._id}}">
 		<div class=" flexrow">
 			<div class="item-name flexlarge expandable-info">

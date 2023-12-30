@@ -12,10 +12,11 @@ import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
 import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
+import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
-import Logger from "../utils/Logger";
+import Logger from "../utils/Logger.mjs";
 
 import preloadHandlebarsTemplates from "../templates.mjs";
 import { registerHandlebarsHelpers } from "../handlebars.mjs";
@@ -35,6 +36,7 @@ export async function initHook() {
 	// accessible in global contexts.
 	globalThis.fallout = {
 		APTracker,
+		compendiums: FalloutCompendiums,
 		Dialog2d20,
 		DialogD6,
 		FalloutHovers,
@@ -116,6 +118,20 @@ function registerDocumentSheets() {
 	Actors.unregisterSheet("core", ActorSheet);
 	Items.unregisterSheet("core", ItemSheet);
 
-	Actors.registerSheet("fallout", sheets.FalloutActorSheet, { makeDefault: true });
+	Actors.registerSheet("fallout", sheets.FalloutActorSheet, {
+		types: [
+			"character",
+			"creature",
+			"npc",
+			"robot",
+		],
+		makeDefault: true,
+	});
+
+	Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
+		makeDefault: true,
+		types: ["settlement"],
+	});
+
 	Items.registerSheet("fallout", sheets.FalloutItemSheet, { makeDefault: true });
 }

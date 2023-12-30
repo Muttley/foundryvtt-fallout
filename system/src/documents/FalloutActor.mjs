@@ -99,16 +99,15 @@ export default class FalloutActor extends Actor {
 	_calculateCharacterBodyResistance() {
 		//  ! CHECK for the OUTFIT
 		// Prep Body Locations
-		let outfitedLocations = {};
+		let outfittedLocations = {};
 		for (let [k] of Object.entries(
 			game.system.model.Actor.character.body_parts
 		)) {
-			outfitedLocations[k] = false;
+			outfittedLocations[k] = false;
 		}
 
 		// ! CHECK POWER ARMOR PIECES
-		// let hasPowerArmor = false;
-		for (let [k, v] of Object.entries(outfitedLocations)) {
+		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let pow = this.items.find(
 					i => i.type === "apparel"
@@ -117,16 +116,14 @@ export default class FalloutActor extends Actor {
 						&& i.system.powered
 						&& i.system.location[k] === true
 				);
-				if (pow && !outfitedLocations[k]) {
-					outfitedLocations[k] = duplicate(pow.toObject());
-					// hasPowerArmor = false;
+				if (pow && !outfittedLocations[k]) {
+					outfittedLocations[k] = duplicate(pow.toObject());
 				}
 			}
 		}
 
 		// ! CHECK ARMOR PIECES
-		// let hasArmor = false;
-		for (let [k, v] of Object.entries(outfitedLocations)) {
+		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let armor = this.items.find(
 					i =>
@@ -135,19 +132,18 @@ export default class FalloutActor extends Actor {
                 && i.system.equipped
                 && i.system.location[k] === true
 				);
-				if (armor && !outfitedLocations[k]) {
-					outfitedLocations[k] = duplicate(armor.toObject());
-					// hasArmor = true;
+				if (armor && !outfittedLocations[k]) {
+					outfittedLocations[k] = duplicate(armor.toObject());
 				}
 			}
 		}
 
 		// ! CHECK OUTFIT
-		if (!outfitedLocations.torso
-			&& !outfitedLocations.armR
-			&& !outfitedLocations.armL
-			&& !outfitedLocations.legL
-			&& !outfitedLocations.legR
+		if (!outfittedLocations.torso
+			&& !outfittedLocations.armR
+			&& !outfittedLocations.armL
+			&& !outfittedLocations.legL
+			&& !outfittedLocations.legR
 		) {
 			let outfit = this.items.find(
 				i =>
@@ -158,21 +154,21 @@ export default class FalloutActor extends Actor {
 			if (outfit) {
 				for (let [k, v] of Object.entries(outfit.system.location)) {
 					if (v) {
-						outfitedLocations[k] = duplicate(outfit.toObject());
+						outfittedLocations[k] = duplicate(outfit.toObject());
 					}
 				}
 			}
 		}
 
 		// ! CHECK HEADGEAR
-		if (!outfitedLocations.head) {
+		if (!outfittedLocations.head) {
 			let headgear = this.items.find(i => i.type === "apparel"
 				&& i.system.appareltype === "headgear"
 				&& i.system.equipped
 			);
 
 			if (headgear) {
-				outfitedLocations.head = duplicate(headgear.toObject());
+				outfittedLocations.head = duplicate(headgear.toObject());
 			}
 		}
 
@@ -186,38 +182,38 @@ export default class FalloutActor extends Actor {
 
 		if (clothing) {
 			for (let [k, v] of Object.entries(clothing.system.location)) {
-				if (outfitedLocations[k] && v) {
-					outfitedLocations[k].name += ` over ${clothing.name}`;
-					outfitedLocations[k].system.resistance.physical = Math.max(
-						parseInt(outfitedLocations[k].system.resistance.physical),
+				if (outfittedLocations[k] && v) {
+					outfittedLocations[k].name += ` over ${clothing.name}`;
+					outfittedLocations[k].system.resistance.physical = Math.max(
+						parseInt(outfittedLocations[k].system.resistance.physical),
 						parseInt(clothing.system.resistance.physical)
 					);
-					outfitedLocations[k].system.resistance.energy = Math.max(
-						parseInt(outfitedLocations[k].system.resistance.energy),
+					outfittedLocations[k].system.resistance.energy = Math.max(
+						parseInt(outfittedLocations[k].system.resistance.energy),
 						parseInt(clothing.system.resistance.energy)
 					);
-					outfitedLocations[k].system.resistance.radiation = Math.max(
-						parseInt(outfitedLocations[k].system.resistance.radiation),
+					outfittedLocations[k].system.resistance.radiation = Math.max(
+						parseInt(outfittedLocations[k].system.resistance.radiation),
 						parseInt(clothing.system.resistance.radiation)
 					);
 				}
-				else if (!outfitedLocations[k] && v) {
-					outfitedLocations[k] = duplicate(clothing.toObject());
+				else if (!outfittedLocations[k] && v) {
+					outfittedLocations[k] = duplicate(clothing.toObject());
 				}
 			}
 		}
 
 		// ! SET BODY PARTS TO OUTFIT ADD CHARACTER BONUSES
 		for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
-			if (outfitedLocations[k]) {
+			if (outfittedLocations[k]) {
 				bodyPart.resistance.physical =
-            parseInt(outfitedLocations[k].system.resistance.physical)
+            parseInt(outfittedLocations[k].system.resistance.physical)
             + parseInt(this.system.resistance.physical);
 				bodyPart.resistance.energy =
-            parseInt(outfitedLocations[k].system.resistance.energy)
+            parseInt(outfittedLocations[k].system.resistance.energy)
             + parseInt(this.system.resistance.energy);
 				bodyPart.resistance.radiation =
-            parseInt(outfitedLocations[k].system.resistance.radiation)
+            parseInt(outfittedLocations[k].system.resistance.radiation)
             + parseInt(this.system.resistance.radiation);
 			}
 			else {
@@ -227,7 +223,7 @@ export default class FalloutActor extends Actor {
 			}
 		}
 		// ADD OUTFITED LIST FOR DISPLAY
-		this.system.outfitedLocations = outfitedLocations;
+		this.system.outfittedLocations = outfittedLocations;
 	}
 
 	_calculateDefense() {
@@ -327,15 +323,15 @@ export default class FalloutActor extends Actor {
 	}
 
 	_calculateRobotBodyResistance() {
-		let outfitedLocations = {};
+		let outfittedLocations = {};
 		for (let [k] of Object.entries(
 			game.system.model.Actor.robot.body_parts
 		)) {
-			outfitedLocations[k] = false;
+			outfittedLocations[k] = false;
 		}
 
 		// ADD ROBOT ARMOR
-		for (let [k, v] of Object.entries(outfitedLocations)) {
+		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let armor = this.items.find(i => i.type === "robot_armor"
 					&& i.system.appareltype === "armor"
@@ -343,8 +339,8 @@ export default class FalloutActor extends Actor {
 					&& i.system.location[k] === true
 				);
 
-				if (armor && !outfitedLocations[k]) {
-					outfitedLocations[k] = duplicate(armor.toObject());
+				if (armor && !outfittedLocations[k]) {
+					outfittedLocations[k] = duplicate(armor.toObject());
 				}
 			}
 		}
@@ -356,35 +352,35 @@ export default class FalloutActor extends Actor {
 
 		if (plating) {
 			for (let [k, v] of Object.entries(plating.system.location)) {
-				if (outfitedLocations[k] && v) {
-					outfitedLocations[k].name += ` over ${plating.name}`;
-					outfitedLocations[k].system.resistance.physical =
-              parseInt(outfitedLocations[k].system.resistance.physical)
+				if (outfittedLocations[k] && v) {
+					outfittedLocations[k].name += ` over ${plating.name}`;
+					outfittedLocations[k].system.resistance.physical =
+              parseInt(outfittedLocations[k].system.resistance.physical)
               + parseInt(plating.system.resistance.physical);
-					outfitedLocations[k].system.resistance.energy =
-              parseInt(outfitedLocations[k].system.resistance.energy)
+					outfittedLocations[k].system.resistance.energy =
+              parseInt(outfittedLocations[k].system.resistance.energy)
               + parseInt(plating.system.resistance.energy);
-					outfitedLocations[k].system.resistance.radiation =
-              parseInt(outfitedLocations[k].system.resistance.radiation)
+					outfittedLocations[k].system.resistance.radiation =
+              parseInt(outfittedLocations[k].system.resistance.radiation)
               + parseInt(plating.system.resistance.radiation);
 				}
-				else if (!outfitedLocations[k] && v) {
-					outfitedLocations[k] = duplicate(plating.toObject());
+				else if (!outfittedLocations[k] && v) {
+					outfittedLocations[k] = duplicate(plating.toObject());
 				}
 			}
 		}
 
 		// ! SET BODY PARTS TO OUTFIT AND ADD CHARACTER BONUSES
 		for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
-			if (outfitedLocations[k]) {
+			if (outfittedLocations[k]) {
 				bodyPart.resistance.physical =
-            parseInt(outfitedLocations[k].system.resistance.physical)
+            parseInt(outfittedLocations[k].system.resistance.physical)
             + parseInt(this.system.resistance.physical);
 				bodyPart.resistance.energy =
-            parseInt(outfitedLocations[k].system.resistance.energy)
+            parseInt(outfittedLocations[k].system.resistance.energy)
             + parseInt(this.system.resistance.energy);
 				bodyPart.resistance.radiation =
-            parseInt(outfitedLocations[k].system.resistance.radiation)
+            parseInt(outfittedLocations[k].system.resistance.radiation)
             + parseInt(this.system.resistance.radiation);
 			}
 			else {
@@ -394,7 +390,7 @@ export default class FalloutActor extends Actor {
 			}
 		}
 		// ADD OUTFITED LIST FOR DISPLAY
-		this.system.outfitedLocations = outfitedLocations;
+		this.system.outfittedLocations = outfittedLocations;
 	}
 
 	async _getAvailableAmmoType(name) {

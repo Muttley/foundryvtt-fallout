@@ -124,15 +124,12 @@ export default class FalloutActorSheet extends ActorSheet {
    * @return {undefined}
    */
 	_prepareCharacterData(context) {
-		// // Handle ability scores.
-		// for (let [k, v] of Object.entries(context.system.attributes)) {
-		// 	v.label = game.i18n.localize(CONFIG.FALLOUT.attributes[k]) ?? k;
-		// }
-
 		let allInjuries = [];
+
 		for (const [, bp] of Object.entries(this.actor.system.body_parts)) {
 			allInjuries.push(...bp.injuries);
 		}
+
 		context.treatedInjuriesCount = allInjuries.filter(i => i === 1).length;
 		context.openInjuriesCount = allInjuries.filter(i => i === 2).length;
 
@@ -154,92 +151,78 @@ export default class FalloutActorSheet extends ActorSheet {
    * @return {undefined}
    */
 	async _prepareItems(context) {
-		// Initialize containers.
+		context.itemsByType = {
+			ammo: [],
+			apparel_mod: [],
+			apparel: [],
+			books_and_magz: [],
+			consumable: [],
+			disease: [],
+			miscellany: [],
+			perk: [],
+			robot_armor: [],
+			robot_mod: [],
+			skill: [],
+			special_ability: [],
+			trait: [],
+			weapon_mod: [],
+			weapon: [],
+		};
 
-		const skills = [];
-		const perks = [];
 		const apparel = [];
-		const apparel_mods = [];
 		const robotApparel = [];
-		const robot_mods = [];
-		const weapons = [];
-		const weapon_mods = [];
-		const ammo = [];
-		const consumables = [];
-		const books_and_magz = [];
-		const miscellany = [];
-		// const gear = [];
-		const specialAbilities = [];
-		const diseases = [];
-
 
 		// Iterate through items, allocating to containers
 		for (let i of context.items) {
 			i.img = i.img || DEFAULT_TOKEN;
-			// Append to gear.
-			if (i.type === "skill") {
-				skills.push(i);
-			}
-			// Append to skills.
-			else if (i.type === "perk") {
-				perks.push(i);
-			}
-			else if (i.type === "apparel") {
-				apparel.push(i);
-			}
-			else if (i.type === "apparel_mod") {
-				apparel_mods.push(i);
-			}
-			else if (i.type === "robot_armor") {
-				robotApparel.push(i);
-			}
-			else if (i.type === "robot_mod") {
-				robot_mods.push(i);
-			}
-			else if (i.type === "weapon") {
-				if (i.system.ammo !== "") {
-					const [, shotsAvailable] = await this.actor._getAvailableAmmoType(
-						i.system.ammo
+
+			switch (i.type) {
+				case "ammo":
+					i.shotsAvailable = ((i.system.quantity - 1)
+					* i.system.shots.max
+					) + i.system.shots.current;
+
+					context.itemsByType.ammo.push(i);
+					break;
+				case "apparel":
+					apparel.push(i);
+					break;
+				case "robot_armor":
+					robotApparel.push(i);
+					break;
+				case "skill":
+					i.localizedName = game.i18n.localize(
+						`FALLOUT.SKILL.${i.name}`
 					);
 
-					i.shotsAvailable = shotsAvailable;
-				}
-				weapons.push(i);
-			}
-			else if (i.type === "weapon_mod") {
-				weapon_mods.push(i);
-			}
-			else if (i.type === "ammo") {
-				i.shotsAvailable =
-					((i.system.quantity - 1) * i.system.shots.max) + i.system.shots.current;
+					i.localizedDefaultAttribute = game.i18n.localize(
+						`FALLOUT.AbilityAbbr.${i.system.defaultAttribute}`
+					);
 
-				ammo.push(i);
-			}
-			else if (i.type === "consumable") {
-				consumables.push(i);
-			}
-			else if (i.type === "books_and_magz") {
-				books_and_magz.push(i);
-			}
-			else if (i.type === "miscellany") {
-				miscellany.push(i);
-			}
-			else if (i.type === "special_ability") {
-				specialAbilities.push(i);
-			}
-			else if (i.type === "disease") {
-				diseases.push(i);
+					context.itemsByType.skill.push(i);
+					break;
+				case "weapon":
+					if (i.system.ammo !== "") {
+						const [, shotsAvailable] =
+							await this.actor._getAvailableAmmoType(
+								i.system.ammo
+							);
+
+						i.shotsAvailable = shotsAvailable;
+					}
+					context.itemsByType.weapon.push(i);
+					break;
+				default:
+					if (!Array.isArray(context.itemsByType[i.type])) {
+						context.itemsByType[i.type] = [];
+					}
+					context.itemsByType[i.type].push(i);
 			}
 		}
 
-		// Assign and return
-
-		skills.sort(function(a, b) {
-			let nameA = a.name.toUpperCase();
-			let nameB = b.name.toUpperCase();
-			return nameA < nameB ? -1 : nameA > nameB ? 1 : 0;
-		});
-		context.skills = skills;
+		context.itemsByType.skill.sort(
+			(a, b) => a.localizedName.localeCompare(b.localizedName)
+		);
 
 		let clothing = apparel.filter(a => a.system.appareltype === "clothing");
 		let outfit = apparel.filter(a => a.system.appareltype === "outfit");
@@ -248,6 +231,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		let powerArmor = apparel.filter(a => a.system.appareltype === "powerArmor");
 		let plating = robotApparel.filter(a => a.system.appareltype === "plating");
 		let robotArmor = robotApparel.filter(a => a.system.appareltype === "armor");
+
 		context.allApparel = [
 			{ apparelType: "clothing", list: clothing },
 			{ apparelType: "outfit", list: outfit },
@@ -255,22 +239,11 @@ export default class FalloutActorSheet extends ActorSheet {
 			{ apparelType: "armor", list: armor },
 			{ apparelType: "powerArmor", list: powerArmor },
 		];
+
 		context.allRobotApparel = [
 			{ apparelType: "plating", list: plating },
 			{ apparelType: "armor", list: robotArmor },
 		];
-
-		context.apparel_mods = apparel_mods;
-		context.robot_mods = robot_mods;
-		context.perks = perks;
-		context.ammo = ammo;
-		context.weapons = weapons;
-		context.weapon_mods = weapon_mods;
-		context.specialAbilities = specialAbilities;
-		context.consumables = consumables;
-		context.books_and_magz = books_and_magz;
-		context.miscellany = miscellany;
-		context.diseases = diseases;
 
 		// WRAP INVENTORY DEPENDING ON THE CHARACTER TYPE:
 		// for example put apparel in inventory for all except the character actor.
@@ -283,7 +256,7 @@ export default class FalloutActorSheet extends ActorSheet {
 			});
 		}
 		if (this.actor.type === "character") {
-			context.inventory = [...robotApparel, ...robot_mods];
+			context.inventory = [...robotApparel, ...context.itemsByType.robot_mod];
 		}
 		if (this.actor.type === "robot") {
 			context.inventory = [...apparel];
@@ -637,7 +610,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		});
 
 		// * POWER ARMOR MONITOR
-		html.find(".power-armor-monitor-helath-value").change(ev => {
+		html.find(".power-armor-monitor-health-value").change(ev => {
 			const apparelId = $(ev.currentTarget).data("itemId");
 			const newHealthValue = $(ev.currentTarget).val();
 			let apparel = this.actor.items.get(apparelId);

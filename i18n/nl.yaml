@@ -118,6 +118,8 @@ FALLOUT.RESISTANCE.energy: Energy
 FALLOUT.RESISTANCE.physical: Physical
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
+FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SKILL.Athletics: Athletics
 FALLOUT.SKILL.Barter: Barter
 FALLOUT.SKILL.Big Guns: Big Guns
@@ -135,8 +137,14 @@ FALLOUT.SKILL.Speech: Speech
 FALLOUT.SKILL.Survival: Survival
 FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
+FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
+FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Abilities
 FALLOUT.TEMPLATES.Add_Perk: Add Perk
+FALLOUT.TEMPLATES.Add_Trait: Add Trait
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoholic
 FALLOUT.TEMPLATES.AMMO: AMMO
@@ -254,6 +262,7 @@ FALLOUT.TEMPLATES.Tag: Tag
 FALLOUT.TEMPLATES.Tear: Wear & Tear
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.Total: Total
+FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Treated injury (Right Click)
 FALLOUT.TEMPLATES.Use_Agility: Use Agility
 FALLOUT.TEMPLATES.Use_Charisma: Use Charisma
@@ -336,6 +345,7 @@ TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
 TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robot
+TYPES.Actor.settlement: Settlement
 TYPES.Item.ammo: Ammo
 TYPES.Item.apparel_mod: Apparel Mod
 TYPES.Item.apparel: Apparel
@@ -348,5 +358,6 @@ TYPES.Item.robot_armor: Robot Armor
 TYPES.Item.robot_mod: Robot Module
 TYPES.Item.skill: Skill
 TYPES.Item.special_ability: Special Ability
+TYPES.Item.trait: Trait
 TYPES.Item.weapon_mod: Weapon Mod
 TYPES.Item.weapon: Weapon

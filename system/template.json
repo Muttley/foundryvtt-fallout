@@ -4,7 +4,8 @@
 			"character",
 			"creature",
 			"npc",
-			"robot"
+			"robot",
+			"settlement"
 		],
 		"character": {
 			"templates": [
@@ -108,6 +109,32 @@
 				"stats",
 				"valuables"
 			]
+		},
+		"settlement": {
+			"beds": {
+				"value": 0
+			},
+			"defense": {
+				"value": 0
+			},
+			"food": {
+				"value": 0
+			},
+			"happiness": {
+				"value": 0
+			},
+			"income": {
+				"value": 0
+			},
+			"people": {
+				"value": 0
+			},
+			"power": {
+				"value": 0
+			},
+			"water": {
+				"value": 0
+			}
 		},
 		"templates": {
 			"base": {
@@ -320,6 +347,7 @@
 			"robot_mod",
 			"skill",
 			"special_ability",
+			"trait",
 			"weapon",
 			"weapon_mod"
 		],
@@ -490,6 +518,11 @@
 				"base"
 			]
 		},
+		"trait": {
+			"templates": [
+				"base"
+			]
+		},
 		"templates": {
 			"attachable": {
 				"attachable": true,
@@ -497,7 +530,8 @@
 			},
 			"base": {
 				"description": "",
-				"favorite": false
+				"favorite": false,
+				"source": ""
 			},
 			"equipable": {
 				"equippable": true,

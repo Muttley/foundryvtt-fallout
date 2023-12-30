@@ -118,6 +118,8 @@ FALLOUT.RESISTANCE.energy: Energetyczne
 FALLOUT.RESISTANCE.physical: Fizyczne
 FALLOUT.RESISTANCE.poison: Trucizna
 FALLOUT.RESISTANCE.radiation: Radjacja
+FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
+FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SKILL.Athletics: Atletyka
 FALLOUT.SKILL.Barter: Handel
 FALLOUT.SKILL.Big Guns: Broń ciężka
@@ -135,8 +137,14 @@ FALLOUT.SKILL.Speech: Retoryka
 FALLOUT.SKILL.Survival: Przetrwa ie
 FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
+FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
+FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Umiejętności
 FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
+FALLOUT.TEMPLATES.Add_Trait: Add Trait
 FALLOUT.TEMPLATES.Addictive: Uzależniające
 FALLOUT.TEMPLATES.Alcoholic: Alkoholowe
 FALLOUT.TEMPLATES.AMMO: Amunicja
@@ -254,6 +262,7 @@ FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.Total: Całkowite
+FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę(Kliknij Prawym)
 FALLOUT.TEMPLATES.Use_Agility: Użyj Zwinność
 FALLOUT.TEMPLATES.Use_Charisma: Użyj Charyzmy
@@ -336,6 +345,7 @@ TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie
 TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
+TYPES.Actor.settlement: Settlement
 TYPES.Item.ammo: Amunicja
 TYPES.Item.apparel_mod: Apparel Mod
 TYPES.Item.apparel: Apparel
@@ -348,5 +358,6 @@ TYPES.Item.robot_armor: Pancerz Robota
 TYPES.Item.robot_mod: Modyfikacje Robota
 TYPES.Item.skill: Umiejętność
 TYPES.Item.special_ability: Zdolności Specjalne
+TYPES.Item.trait: Trait
 TYPES.Item.weapon_mod: Modyfikacje Broni
 TYPES.Item.weapon: Broń

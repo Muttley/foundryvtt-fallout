@@ -136,4 +136,14 @@ export function registerSettings() {
 		type: String,
 	});
 
+	game.settings.register("fallout", "sourceFilters", {
+		name: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.title"),
+		hint: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.hint"),
+		config: false,
+		scope: "world",
+		type: Array,
+		requiresReload: true,
+		default: [],
+	});
+
 }

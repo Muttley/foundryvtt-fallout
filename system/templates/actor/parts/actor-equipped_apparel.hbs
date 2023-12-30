@@ -4,7 +4,7 @@
     </div>
     <div class="box-content">
         <ol class="items-list">
-            {{#each system.outfitedLocations as |item id|}}
+            {{#each system.outfittedLocations as |item id|}}
             <li class="item apparel flexrow" data-item-id="{{item._id}}">
                 <div class="item-name">
                     <h4 class="resource-label"><a><span class='upperC'> {{localize (concat 'FALLOUT.BODYLOCATION.' ../actor.type '.' id)}}</span>: {{item.name}}</a></h4>

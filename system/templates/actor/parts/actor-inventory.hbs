@@ -32,7 +32,7 @@
 						</a>
                     </div>
                 </li>
-                {{#each robot_mods as |item id|}}
+                {{#each itemsByType.robot_mod as |item id|}}
 					{{> actor/parts/simple-expandable-item item=item }}
                 {{/each}}
             </ol>
@@ -57,7 +57,7 @@
 						</a>
                     </div>
                 </li>
-                {{#each weapon_mods as |item id|}}
+                {{#each itemsByType.weapon_mod as |item id|}}
 					{{> actor/parts/simple-expandable-item item=item }}
                 {{/each}}
             </ol>
@@ -81,7 +81,7 @@
 						</a>
                     </div>
                 </li>
-                {{#each apparel_mods as |item id|}}
+                {{#each itemsByType.apparel_mod as |item id|}}
 					{{> actor/parts/simple-expandable-item item=item }}
                 {{/each}}
             </ol>
@@ -141,7 +141,7 @@
 						</a>
                     </div>
                 </li>
-                {{#each consumables as |item id|}}
+                {{#each itemsByType.consumable as |item id|}}
 					{{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>
@@ -164,7 +164,7 @@
 						</a>
                     </div>
                 </li>
-                {{#each books_and_magz as |item id|}}
+                {{#each itemsByType.books_and_magz as |item id|}}
 					{{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>
@@ -187,7 +187,7 @@
 						</a>
                     </div>
                 </li>
-                {{#each miscellany as |item id|}}
+                {{#each itemsByType.miscellany as |item id|}}
 					{{> actor/parts/simple-expandable-item item=item}}
                 {{/each}}
             </ol>

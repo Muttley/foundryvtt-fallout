@@ -228,3 +228,11 @@ FALLOUT.conditions = {
 FALLOUT.JournalUuids = {
 	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
 };
+
+FALLOUT.OFFICIAL_SOURCES = {
+	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
+	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
+	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
+	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
+	winter_of_atom: "FALLOUT.SOURCE_TITLE.winter_of_atom",
+};
