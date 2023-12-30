@@ -105,21 +105,23 @@
 			<strong>{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}:</strong>
 			{{localize (toUpperCase (concat "FALLOUT." consumableType))}}
 		</p>
-		{{#ifCond consumableType '===' 'chem'}}
-			<p>
-				<strong>{{localize "FALLOUT.TEMPLATES.Duration"}}:</strong>
-				{{duration}}
-			</p>
-			<p>
-				<strong>{{localize "FALLOUT.TEMPLATES.Addictive"}}:</strong>
-				{{addictive}}
-			</p>
-		{{else}}
-			<p><strong>{{localize "FALLOUT.TEMPLATES.HP_Healed"}}: </strong>{{hp}}</p>
-			{{#ifCond consumableType '===' 'beverage'}}
-				<p><strong>{{localize "FALLOUT.TEMPLATES.Alcoholic"}}: </strong>{{alcoholic}}</p>
+		{{#ifCond consumableType '!==' 'other'}}
+			{{#ifCond consumableType '===' 'chem'}}
+				<p>
+					<strong>{{localize "FALLOUT.TEMPLATES.Duration"}}:</strong>
+					{{duration}}
+				</p>
+				<p>
+					<strong>{{localize "FALLOUT.TEMPLATES.Addictive"}}:</strong>
+					{{addictive}}
+				</p>
+			{{else}}
+				<p><strong>{{localize "FALLOUT.TEMPLATES.HP_Healed"}}: </strong>{{hp}}</p>
+				{{#ifCond consumableType '===' 'beverage'}}
+					<p><strong>{{localize "FALLOUT.TEMPLATES.Alcoholic"}}: </strong>{{alcoholic}}</p>
+				{{/ifCond}}
+				<p><strong>{{localize "FALLOUT.TEMPLATES.Irradiated"}}: </strong>{{irradiated}}</p>
 			{{/ifCond}}
-			<p><strong>{{localize "FALLOUT.TEMPLATES.Irradiated"}}: </strong>{{irradiated}}</p>
 		{{/ifCond}}
 	{{/if}}
 
