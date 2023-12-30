@@ -436,7 +436,7 @@
 		"consumable": {
 			"addictive": "",
 			"alcoholic": true,
-			"consumableType": "",
+			"consumableType": "food",
 			"duration": "",
 			"effect": "",
 			"hp": 0,
