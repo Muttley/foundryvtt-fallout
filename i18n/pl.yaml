@@ -167,6 +167,8 @@ FALLOUT.TEMPLATES.conditions.full: Pełny
 FALLOUT.TEMPLATES.conditions.hunger: Głud
 FALLOUT.TEMPLATES.conditions.hungry: Głodny
 FALLOUT.TEMPLATES.conditions.hydrated: Nawodniony
+FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
 FALLOUT.TEMPLATES.conditions.peckish: Głodnawy
 FALLOUT.TEMPLATES.conditions.quenched: Opity
 FALLOUT.TEMPLATES.conditions.rested: Wypoczęty
@@ -247,7 +249,7 @@ FALLOUT.TEMPLATES.Rank: Rangi
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangi [obecne/maksymalne]
 FALLOUT.TEMPLATES.Re_roll: Przerzut
 FALLOUT.TEMPLATES.Requirements: Wymagania
-FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: Ogólny bonus odporności
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Roll_Formula: Formuła Rzutu
@@ -280,6 +282,7 @@ FALLOUT.UI.BOOKS_AND_MAGZS: książki i magazyny
 FALLOUT.UI.CAPS: Kapsle
 FALLOUT.UI.CarryWeight: Noszony ciężar
 FALLOUT.UI.CONSUMABLES: Zużywalne
+FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Cena
 FALLOUT.UI.Damage: Obrażenia
 FALLOUT.UI.DISEASES: Choroby
