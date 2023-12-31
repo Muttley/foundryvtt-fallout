@@ -442,6 +442,7 @@
 			"effect": "",
 			"hp": 0,
 			"irradiated": false,
+			"radiation": 0,
 			"templates": [
 				"base",
 				"physical"
