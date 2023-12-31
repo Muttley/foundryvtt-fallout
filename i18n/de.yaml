@@ -167,6 +167,8 @@ FALLOUT.TEMPLATES.conditions.full: Full
 FALLOUT.TEMPLATES.conditions.hunger: Hunger
 FALLOUT.TEMPLATES.conditions.hungry: Hungry
 FALLOUT.TEMPLATES.conditions.hydrated: Hydrated
+FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
 FALLOUT.TEMPLATES.conditions.peckish: Peckish
 FALLOUT.TEMPLATES.conditions.quenched: Quenched
 FALLOUT.TEMPLATES.conditions.rested: Rested
@@ -247,7 +249,7 @@ FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
 FALLOUT.TEMPLATES.Re_roll: Wiederholungswurf
 FALLOUT.TEMPLATES.Requirements: Voraussetzungen
-FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RESISTANCE GENERAL BONUS
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistenzen
 FALLOUT.TEMPLATES.RESISTANCES: RESISTENZEN
 FALLOUT.TEMPLATES.Roll_Formula: Wurfformel
@@ -280,6 +282,7 @@ FALLOUT.UI.BOOKS_AND_MAGZS: Bücher und Magazine
 FALLOUT.UI.CAPS: Kronkorken
 FALLOUT.UI.CarryWeight: Aktuelle Tragekapazität
 FALLOUT.UI.CONSUMABLES: Verbrauchsgegenstände
+FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Kosten
 FALLOUT.UI.Damage: Schaden
 FALLOUT.UI.DISEASES: Diseases
