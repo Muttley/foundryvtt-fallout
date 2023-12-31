@@ -555,6 +555,60 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+	async consumeItem(item) {
+		if (this.type !== "character") return false;
+
+		await item.sendToChat(false);
+
+		const newQuantity = item.system.quantity - 1;
+
+		const allUsed = newQuantity <= 0 ? true : false;
+
+		const actorUpdateData = {};
+
+		// TODO Handle healing/intoxication/irradiation/etc
+		const consumableType = item.system.consumableType;
+		if (consumableType !== "other") {
+			if (consumableType !== "chem") {
+				let newHp = this.system.health.value + item.system.hp;
+				const cappedHp = Math.min(newHp, this.system.health.max);
+
+				actorUpdateData["system.health.value"] = cappedHp;
+			}
+
+			if (consumableType === "beverage" && item.system.alcoholic) {
+				let newIntoxication = this.system.conditions.intoxication + 1;
+				actorUpdateData["system.conditions.intoxication"] = newIntoxication;
+
+				// TODO Roll for alcoholic
+			}
+
+			if (consumableType !== "chem" && item.system.irradiated) {
+				// TODO Roll for radiation
+				let irradiated = true;
+
+				if (irradiated) {
+					let newRadiation = this.system.radiation + 1;
+					actorUpdateData["system.radiation"] = newRadiation;
+				}
+
+			}
+		}
+
+		await this.update(actorUpdateData);
+
+		if (allUsed) {
+			await item.delete();
+		}
+		else {
+			await item.update({
+				"system.quantity": newQuantity,
+			});
+		}
+
+		return allUsed;
+	}
+
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
 		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);

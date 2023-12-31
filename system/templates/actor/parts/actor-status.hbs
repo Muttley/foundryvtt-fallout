@@ -45,7 +45,7 @@
 
         <div class="box">
             <div class="box-header">
-                <h4>{{localize "FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS"}}</h4>
+                <h4>{{localize "FALLOUT.TEMPLATES.RESISTANCE_BONUSES"}}</h4>
             </div>
             <div class="flexcol">
                 <div class="flexrow resource-row">
@@ -108,6 +108,37 @@
                         value="{{system.resistance.poison}}"
 					>
                 </div>
+            </div>
+        </div>
+
+       <div class="box">
+            <div class="box-header">
+                <h4>{{localize "FALLOUT.TEMPLATES.CONDITIONS"}}</h4>
+            </div>
+            <div class="flexrow resource-row align-mid">
+                <label class="resource-label upperC">
+					{{localize "FALLOUT.TEMPLATES.conditions.fatigue"}}
+				</label>
+                <input
+					class="num-short-2"
+					type="number"
+					name="system.conditions.fatigue"
+					value="{{system.conditions.fatigue}}"
+				>
+            </div>
+            <div class="flexrow resource-row align-mid">
+                <label
+					class="resource-label upperC"
+					title="{{localize 'FALLOUT.TEMPLATES.conditions.intoxication.tooltip'}}"
+				>
+					{{localize "FALLOUT.TEMPLATES.conditions.intoxication.label"}}
+				</label>
+                <input
+					class="num-short-2"
+					type="number"
+					name="system.conditions.intoxication"
+					value="{{system.conditions.intoxication}}"
+				>
             </div>
         </div>
     </div>

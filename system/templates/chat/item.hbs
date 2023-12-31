@@ -10,6 +10,13 @@
 		<h2 style="border-bottom: none;"><strong>{{name}}</strong></h2>
 	</div>
 
+	{{#ifCond description '!==' ''}}
+		<div class="description">
+			{{{description}}}
+		</div>
+		<hr>
+	{{/ifCond}}
+
 	<!-- * SKILL * -->
 	{{#if isSkill}}
 		<p><strong>{{localize "FALLOUT.TEMPLATES.Skill_Value"}}: </strong>{{value}}</p>
@@ -184,19 +191,16 @@
 		{{/ifCond}}
 	{{/if}}
 
-	{{#ifCond description '!==' ''}}
-		<hr>
-		<div class="description">{{{description}}}</div>
-	{{/ifCond}}
-
 	{{#if isPhysical}}
-		<hr>
-		<div class="flex flex-between" style="font-size: 0.75rem;">
-			<p><strong>{{localize "FALLOUT.UI.Qty"}}:</strong> {{quantity}}</p>
-			<p><strong>{{localize "FALLOUT.UI.Weight"}}:</strong> {{weight}}</p>
-			<p><strong>{{localize "FALLOUT.UI.Cost"}}:</strong> {{cost}}</p>
-			<p><strong>{{localize "FALLOUT.UI.Rarity"}}:</strong> {{rarity}}</p>
-		</div>
+		{{#if showQuantity}}
+			<hr>
+			<div class="flex flex-between" style="font-size: 0.75rem;">
+				<p><strong>{{localize "FALLOUT.UI.Qty"}}:</strong> {{quantity}}</p>
+				<p><strong>{{localize "FALLOUT.UI.Weight"}}:</strong> {{weight}}</p>
+				<p><strong>{{localize "FALLOUT.UI.Cost"}}:</strong> {{cost}}</p>
+				<p><strong>{{localize "FALLOUT.UI.Rarity"}}:</strong> {{rarity}}</p>
+			</div>
+		{{/if}}
 	{{/if}}
 
 	<hr>

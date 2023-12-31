@@ -15,6 +15,7 @@
 - [#50] Display the system release notes the first time a world is loaded in a new version of the system
 - [#55] Show the amount of remaining shots for each favourite weapon on the status page
 - [#59] Added new Trait item and display them on the character sheet along with Perks
+- [#71] Add new Intoxication condition field to track the amount of alcoholic beverages consumed during a session
 
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
@@ -24,6 +25,7 @@
 - [#66] Power Armor health status showing values when no power armor in use
 - [#68] New Consumable item sheet defaults to Food, but Food parameters not shown until selection changed
 - [#70] Consumable chat card shows irrelevant details
+- [#72] Consumable Items' `system.addictive` field should be a numeric
 
 ## Chores
 - [#33] Merged Polish language updates from Crowdin

@@ -29,33 +29,57 @@
 						<label for="system.duration" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.Duration"}}
 						</label>
-						<input type="text" name="system.duration" value="{{system.duration}}">
+						<input
+							name="system.duration"
+							type="text"
+							value="{{system.duration}}"
+						>
 					</div>
 					<div class="flexrow resource-row">
 						<label for="system.addictive" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.Addictive"}}
 						</label>
-						<input type="text" name="system.addictive" value="{{system.addictive}}">
+						<input
+							name="system.addictive"
+							type="number"
+							value="{{system.addictive}}"
+						>
 					</div>
 				{{else}}
 					<div class="flexrow resource-row">
 						<label for="system.hp" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.HP_Healed"}}
 						</label>
-						<input type="number" name="system.hp" value="{{system.hp}}">
+						<input
+							name="system.hp"
+							type="number"
+							value="{{system.hp}}"
+						>
 					</div>
 					<div class="flexrow resource-row">
 						<label for="system.irradiated" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.Irradiated"}}
 						</label>
-						<input type="checkbox" name="system.irradiated" {{#ifCond system.irradiated '==' true}}checked{{/ifCond}}>
+						<input
+							name="system.irradiated"
+							type="checkbox"
+							{{#ifCond system.irradiated '==' true}}
+								checked
+							{{/ifCond}}
+						>
 					</div>
 					{{#ifCond system.consumableType '===' 'beverage' }}
 					<div class="flexrow resource-row">
 							<label for="system.alcoholic" class="resource-label">
 								{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
 							</label>
-							<input type="checkbox" name="system.alcoholic" {{#ifCond system.alcoholic '==' true}}checked{{/ifCond}}>
+							<input
+								name="system.alcoholic"
+								type="checkbox"
+								{{#ifCond system.alcoholic '==' true}}
+									checked
+								{{/ifCond}}
+							>
 						</div>
 					{{/ifCond}}
 				{{/ifCond}}
