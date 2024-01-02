@@ -113,6 +113,8 @@
 			{{localize (toUpperCase (concat "FALLOUT." consumableType))}}
 		</p>
 		{{#ifCond consumableType '!==' 'other'}}
+			<p><strong>{{localize "FALLOUT.TEMPLATES.HP_Healed"}}: </strong>{{hp}}</p>
+			<p><strong>{{localize "FALLOUT.TEMPLATES.Radiation_Healed"}}: </strong>{{radiation}}</p>
 			{{#ifCond consumableType '===' 'chem'}}
 				<p>
 					<strong>{{localize "FALLOUT.TEMPLATES.Duration"}}:</strong>
@@ -122,8 +124,13 @@
 					<strong>{{localize "FALLOUT.TEMPLATES.Addictive"}}:</strong>
 					{{addictive}}
 				</p>
+				{{#if addictive}}
+					<p>
+						<strong>{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}:</strong>
+						{{addiction}}
+					</p>
+				{{/if}}
 			{{else}}
-				<p><strong>{{localize "FALLOUT.TEMPLATES.HP_Healed"}}: </strong>{{hp}}</p>
 				{{#ifCond consumableType '===' 'beverage'}}
 					<p><strong>{{localize "FALLOUT.TEMPLATES.Alcoholic"}}: </strong>{{alcoholic}}</p>
 				{{/ifCond}}

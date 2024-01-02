@@ -17,6 +17,7 @@
 - [#59] Added new Trait item and display them on the character sheet along with Perks
 - [#71] Add new Intoxication condition field to help track the amount of alcoholic beverages consumed during a session
 - [#75] Add Radiation Healed field to Consumable items, as they are all potentially able to heal Radiation damage
+- [#77] Seperate consumable addictive field into a boolean Addictive checkbox and a numeric Addiction Number for clarity
 
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet

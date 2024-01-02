@@ -61,25 +61,27 @@
 						</label>
 						<input
 							name="system.addictive"
-							type="number"
-							value="{{system.addictive}}"
-						>
-					</div>
-				{{else}}
-					<div class="flexrow resource-row">
-						<label for="system.irradiated" class="resource-label">
-							{{localize "FALLOUT.TEMPLATES.Irradiated"}}
-						</label>
-						<input
-							name="system.irradiated"
 							type="checkbox"
-							{{#ifCond system.irradiated '==' true}}
+							{{#ifCond system.addictive '==' true}}
 								checked
 							{{/ifCond}}
 						>
 					</div>
+					{{#if system.addictive}}
+						<div class="flexrow resource-row">
+							<label for="system.addiction" class="resource-label">
+								{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}
+							</label>
+							<input
+								name="system.addiction"
+								type="number"
+								value="{{system.addiction}}"
+							>
+						</div>
+					{{/if}}
+				{{else}}
 					{{#ifCond system.consumableType '===' 'beverage' }}
-					<div class="flexrow resource-row">
+						<div class="flexrow resource-row">
 							<label for="system.alcoholic" class="resource-label">
 								{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
 							</label>
@@ -92,6 +94,18 @@
 							>
 						</div>
 					{{/ifCond}}
+					<div class="flexrow resource-row">
+						<label for="system.irradiated" class="resource-label">
+							{{localize "FALLOUT.TEMPLATES.Irradiated"}}
+						</label>
+						<input
+							name="system.irradiated"
+							type="checkbox"
+							{{#ifCond system.irradiated '==' true}}
+								checked
+							{{/ifCond}}
+						>
+					</div>
 				{{/ifCond}}
 			{{/ifCond}}
 

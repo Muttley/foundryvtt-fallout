@@ -264,6 +264,7 @@
 					"value": 0
 				},
 				"conditions": {
+					"alcoholic": false,
 					"fatigue": 0,
 					"hunger": 0,
 					"intoxication": 0,
@@ -435,7 +436,8 @@
 			]
 		},
 		"consumable": {
-			"addictive": 0,
+			"addiction": 0,
+			"addictive": false,
 			"alcoholic": false,
 			"consumableType": "food",
 			"duration": "",

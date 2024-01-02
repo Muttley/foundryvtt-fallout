@@ -5,6 +5,7 @@ import * as sheets from "../sheets/_module.mjs";
 
 import { APTracker } from "../apps/APTracker.mjs";
 
+import { FalloutChat } from "../system/FalloutChat.mjs";
 import { Dialog2d20 } from "../roller/Dialog2d20.mjs";
 import { DialogD6 } from "../roller/DialogD6.mjs";
 import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
@@ -36,6 +37,7 @@ export async function initHook() {
 	// accessible in global contexts.
 	globalThis.fallout = {
 		APTracker,
+		chat: FalloutChat,
 		compendiums: FalloutCompendiums,
 		Dialog2d20,
 		DialogD6,

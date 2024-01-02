@@ -140,6 +140,18 @@
 					value="{{system.conditions.intoxication}}"
 				>
             </div>
+            <div class="flexrow resource-row align-mid">
+                <label class="resource-label upperC">
+					{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
+				</label>
+				<input
+					name="system.conditions.alcoholic"
+					type="checkbox"
+					{{#if system.conditions.alcoholic}}
+						checked
+					{{/if}}
+				>
+            </div>
         </div>
     </div>
 

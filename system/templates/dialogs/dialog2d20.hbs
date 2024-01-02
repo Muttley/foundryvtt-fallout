@@ -1,28 +1,28 @@
 <div class="fallout-dialog">
-    <div class="flexrow ">
-        <div class="resource flexrow flex-group-left">
-            <p class="title-label">{{localize "FALLOUT.TEMPLATES.Attribute"}}</p>
-            <input type="number" name="attribute" value="{{attribute}}">
-        </div>
-        <div class="resource flexrow flex-group-left tile">
-            <p class="title-label">{{localize "TYPES.Item.skill"}}</p>
-            <input type="number" name="skill" value="{{skill}}">
-        </div>
-        <div class="resource flexrow flex-group-left green">
-            <p class="title-label">{{localize "FALLOUT.TEMPLATES.Tag"}}</p>
-            <input type="checkbox" name="tag" {{#ifCond tag '==' true}}checked{{/ifCond}}>
-        </div>
-        <div class="resource flexrow flex-group-left red">
-            <p class="title-label">{{localize "FALLOUT.TEMPLATES.Compl"}}</p>
-            <input type="number" name="complication" value="{{complication}}">
-        </div>
-    </div>
+	<div class="flexrow ">
+		<div class="resource flexrow flex-group-left">
+			<p class="title-label">{{localize "FALLOUT.TEMPLATES.Attribute"}}</p>
+			<input type="number" name="attribute" value="{{attribute}}">
+		</div>
+		<div class="resource flexrow flex-group-left tile">
+			<p class="title-label">{{localize "TYPES.Item.skill"}}</p>
+			<input type="number" name="skill" value="{{skill}}">
+		</div>
+		<div class="resource flexrow flex-group-left green">
+			<p class="title-label">{{localize "FALLOUT.TEMPLATES.Tag"}}</p>
+			<input type="checkbox" name="tag" {{#ifCond tag '==' true}}checked{{/ifCond}}>
+		</div>
+		<div class="resource flexrow flex-group-left red">
+			<p class="title-label">{{localize "FALLOUT.TEMPLATES.Compl"}}</p>
+			<input type="number" name="complication" value="{{complication}}">
+		</div>
+	</div>
 
-    <ul class="flexrow">
-        <li><a class="dice-icon d20" data-index="1">1</a></li>
-        <li><a class="dice-icon d20" data-index="2">2</a></li>
-        <li><a class="dice-icon d20" data-index="3">3</a></li>
-        <li><a class="dice-icon d20" data-index="4">4</a></li>
-        <li><a class="dice-icon d20" data-index="5">5</a></li>
-    </ul>
+	<ul class="flexrow">
+		<li><a class="dice-icon d20" data-index="1">1</a></li>
+		<li><a class="dice-icon d20" data-index="2">2</a></li>
+		<li><a class="dice-icon d20" data-index="3">3</a></li>
+		<li><a class="dice-icon d20" data-index="4">4</a></li>
+		<li><a class="dice-icon d20" data-index="5">5</a></li>
+	</ul>
 </div>
