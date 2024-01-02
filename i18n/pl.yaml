@@ -9,14 +9,14 @@ FALLOUT.AbilityAgi: Zwinność
 FALLOUT.AbilityCha: Charyzna
 FALLOUT.AbilityEnd: Wytrwałość
 FALLOUT.AbilityInt: Inteligencja
-FALLOUT.AbilityLuc: SZczęście
+FALLOUT.AbilityLuc: Szczęście
 FALLOUT.AbilityPer: Percepcja
 FALLOUT.AbilityStr: Siła
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.rare: Rare
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.actor.inventory.materials.common: Pospolity
+FALLOUT.actor.inventory.materials.junk: Złom
+FALLOUT.actor.inventory.materials.label: Materiały
+FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
+FALLOUT.actor.inventory.materials.uncommon: Rzadki
 FALLOUT.Add: Dodaj
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
@@ -30,7 +30,7 @@ FALLOUT.BODYLOCATION_ABBR.character.armR: PR
 FALLOUT.BODYLOCATION_ABBR.character.head: G
 FALLOUT.BODYLOCATION_ABBR.character.legL: LN
 FALLOUT.BODYLOCATION_ABBR.character.legR: PN
-FALLOUT.BODYLOCATION_ABBR.character.torso: T
+FALLOUT.BODYLOCATION_ABBR.character.torso: K
 FALLOUT.BODYLOCATION_ABBR.robot.armL: R1
 FALLOUT.BODYLOCATION_ABBR.robot.armR: R2
 FALLOUT.BODYLOCATION_ABBR.robot.head: S
@@ -42,13 +42,13 @@ FALLOUT.BODYLOCATION.character.armR: Prawa Ręka
 FALLOUT.BODYLOCATION.character.head: Głowa
 FALLOUT.BODYLOCATION.character.legL: Lewa Noga
 FALLOUT.BODYLOCATION.character.legR: Prawa Noga
-FALLOUT.BODYLOCATION.character.torso: Tłów
+FALLOUT.BODYLOCATION.character.torso: Korpus
 FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Głowa | Sensory | Głowa | Głowa
 FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Lewa Ręka| Ramie 1 | Lewa Przednia Noga| Lewe skrzydło
 FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Lewa Noga | Silnik | Lewa Tylnia Noga| Odnóża
 FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Prawa Ręka| Ramie 2 | Prawa Przednia Noga| Prawe skrzydło
 FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Prawa Noga | Silnik | Prawa Tylnia Noga| Odnóża
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Tułów | Korpus | Tułów | Tułów
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Korpus | Korpus | Korpus | Korpus
 FALLOUT.BODYLOCATION.robot.armL: Ramie 1
 FALLOUT.BODYLOCATION.robot.armR: Ramie 2
 FALLOUT.BODYLOCATION.robot.head: Sensory
@@ -84,14 +84,14 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Ramie 3
 FALLOUT.BodyTypes.robot.legR: Silnik
 FALLOUT.BodyTypes.robot.torso: Korpus
-FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
+FALLOUT.CHAT_MESSAGE.alcoholic.title: Uzależnienie od alkoholu
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHEM: Chemikalia
 FALLOUT.CREATURE.body: Ciało
-FALLOUT.CREATURE.guns: Splówy
-FALLOUT.CREATURE.melee: Boń Biała
+FALLOUT.CREATURE.guns: Broń Palna
+FALLOUT.CREATURE.melee: Broń Biała
 FALLOUT.CREATURE.mind: Umysł
 FALLOUT.CREATURE.other: Inne
 FALLOUT.EffectCreate: Stwórz Efekt
@@ -106,11 +106,11 @@ FALLOUT.HEALTH.max: Maksymalne Zdrowie
 FALLOUT.LEVEL.CurrentXP: Obence PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
-FALLOUT.LEVEL.RewardXP: Nagrowa w PD
-FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
-FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
-FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
-FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
+FALLOUT.LEVEL.RewardXP: Nagoda w PD
+FALLOUT.MIGRATION.begin_migration: Wykonywanie aktualizacji danych dla Fallouta 2d20
+FALLOUT.MIGRATION.begin_schema: Wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
+FALLOUT.MIGRATION.completed_migration: Zakończono aktualizacje danych dla Fallout 2d20
+FALLOUT.MIGRATION.completed_schema: Zakończono wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
 FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.OTHER: Inne
 FALLOUT.powered: Wspomagane
@@ -122,8 +122,8 @@ FALLOUT.RESISTANCE.energy: Energetyczne
 FALLOUT.RESISTANCE.physical: Fizyczne
 FALLOUT.RESISTANCE.poison: Trucizna
 FALLOUT.RESISTANCE.radiation: Radjacja
-FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
-FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
+FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
+FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SKILL.Athletics: Atletyka
 FALLOUT.SKILL.Barter: Handel
 FALLOUT.SKILL.Big Guns: Broń ciężka
@@ -132,29 +132,29 @@ FALLOUT.SKILL.Explosives: Materiały wybuchowe
 FALLOUT.SKILL.Lockpick: Otwieranie zamków
 FALLOUT.SKILL.Medicine: Medycyna
 FALLOUT.SKILL.Melee Weapons: Broń biała
-FALLOUT.SKILL.Pilot: Pilotowanie
+FALLOUT.SKILL.Pilot: Pilotaż
 FALLOUT.SKILL.Repair: Naprawa
 FALLOUT.SKILL.Science: Nauka
 FALLOUT.SKILL.Small Guns: Broń palna
 FALLOUT.SKILL.Sneak: Skradanie się
 FALLOUT.SKILL.Speech: Retoryka
-FALLOUT.SKILL.Survival: Przetrwa ie
+FALLOUT.SKILL.Survival: Przetrwanie
 FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
-FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.core_rulebook: Podręcznik Główny
+FALLOUT.SOURCE_TITLE.quickstart: Szybki start
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Umiejętności
 FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
-FALLOUT.TEMPLATES.Add_Trait: Add Trait
+FALLOUT.TEMPLATES.Add_Trait: Dodaj Atut
 FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Uzależniające
 FALLOUT.TEMPLATES.Alcoholic: Alkoholowe
 FALLOUT.TEMPLATES.AMMO: Amunicja
-FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
-FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
+FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
+FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
@@ -168,12 +168,12 @@ FALLOUT.TEMPLATES.CONDITIONS: Stany
 FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
 FALLOUT.TEMPLATES.conditions.exhausted: Wyczerpany
 FALLOUT.TEMPLATES.conditions.fatigue: Zmęczenie
-FALLOUT.TEMPLATES.conditions.full: Pełny
-FALLOUT.TEMPLATES.conditions.hunger: Głud
+FALLOUT.TEMPLATES.conditions.full: Pełen
+FALLOUT.TEMPLATES.conditions.hunger: Głód
 FALLOUT.TEMPLATES.conditions.hungry: Głodny
 FALLOUT.TEMPLATES.conditions.hydrated: Nawodniony
-FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
-FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
+FALLOUT.TEMPLATES.conditions.intoxication.label: Nietrzeźwość
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: Liczba wypitych napojów alkoholowych
 FALLOUT.TEMPLATES.conditions.peckish: Głodnawy
 FALLOUT.TEMPLATES.conditions.quenched: Opity
 FALLOUT.TEMPLATES.conditions.rested: Wypoczęty
@@ -184,11 +184,11 @@ FALLOUT.TEMPLATES.conditions.thirst: Pragnienie
 FALLOUT.TEMPLATES.conditions.thirsty: Spragniony
 FALLOUT.TEMPLATES.conditions.tired: Znurzony
 FALLOUT.TEMPLATES.conditions.weary: Zmęczony
-FALLOUT.TEMPLATES.Consumable_Type: Typy zużywalnych
+FALLOUT.TEMPLATES.Consumable_Type: Typy przedmiotów jednorazowych
 FALLOUT.TEMPLATES.Create_Ammo: Stwórz Amunicje
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Stwórz Modyfikacje Odzież
 FALLOUT.TEMPLATES.Create_books_and_magz: Stwórz książki i komiksy
-FALLOUT.TEMPLATES.Create_Consumable: Stwórz Zużywalne
+FALLOUT.TEMPLATES.Create_Consumable: Stwórz Przedmioty Jednorazowe
 FALLOUT.TEMPLATES.Create_Miscellany: Stwórz Różności
 FALLOUT.TEMPLATES.Create_Robot_Module: Stwórz Modyfikcaje Robota
 FALLOUT.TEMPLATES.Create_Special_Ability: Stwórz Zdolność Specjalną
@@ -205,7 +205,7 @@ FALLOUT.TEMPLATES.Default_Attribute: Dobyślne Cechy
 FALLOUT.TEMPLATES.DEFENSE: Obrona
 FALLOUT.TEMPLATES.Delete_Item: Usuń Przedmiot
 FALLOUT.TEMPLATES.Delete: Usuń
-FALLOUT.TEMPLATES.DERIVED: Pochone
+FALLOUT.TEMPLATES.DERIVED: POCHODNE
 FALLOUT.TEMPLATES.Description: Opis
 FALLOUT.TEMPLATES.Duration: Czas Trwania
 FALLOUT.TEMPLATES.Edit_Item: Edytuj Przedmiot
@@ -226,7 +226,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Napromieniowany
 FALLOUT.TEMPLATES.Issue: Problem
 FALLOUT.TEMPLATES.lbs: funtów
-FALLOUT.TEMPLATES.Learned: Neuczony
+FALLOUT.TEMPLATES.Learned: Nauczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.Luck: Szczęście
@@ -238,7 +238,7 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: OBRAŻENIA WRĘCZ
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
 FALLOUT.TEMPLATES.MODULES: Modyfikacje
 FALLOUT.TEMPLATES.Name_Prefix: Nazwa Prefixa
-FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.Origin: Pochodzenie
 FALLOUT.TEMPLATES.OVERSEER_AP: PA Nadzorcy
 FALLOUT.TEMPLATES.PARTY_AP: PA Drużyny
 FALLOUT.TEMPLATES.PERK: Profity
@@ -248,14 +248,14 @@ FALLOUT.TEMPLATES.POISON: Trucizna
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: Radiacyjne
-FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
+FALLOUT.TEMPLATES.Radiation_Healed: Napromieniowanie uzdrowione
 FALLOUT.TEMPLATES.RADIATION: Radiacja
 FALLOUT.TEMPLATES.RANGE: Zasięg
 FALLOUT.TEMPLATES.Rank: Rangi
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangi [obecne/maksymalne]
 FALLOUT.TEMPLATES.Re_roll: Przerzut
 FALLOUT.TEMPLATES.Requirements: Wymagania
-FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS ODPORNOŚCI
 FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Roll_Formula: Formuła Rzutu
@@ -270,7 +270,7 @@ FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.Total: Całkowite
-FALLOUT.TEMPLATES.TRAIT: TRAIT
+FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę(Kliknij Prawym)
 FALLOUT.TEMPLATES.Use_Agility: Użyj Zwinność
 FALLOUT.TEMPLATES.Use_Charisma: Użyj Charyzmy
@@ -283,19 +283,19 @@ FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.UI.Add: Dodaj
-FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzierzy
+FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
 FALLOUT.UI.BOOKS_AND_MAGZS: książki i magazyny
 FALLOUT.UI.CAPS: Kapsle
 FALLOUT.UI.CarryWeight: Noszony ciężar
 FALLOUT.UI.CONSUMABLES: Zużywalne
-FALLOUT.UI.Consume: Consume
+FALLOUT.UI.Consume: Użyj
 FALLOUT.UI.Cost: Cena
 FALLOUT.UI.Damage: Obrażenia
 FALLOUT.UI.DISEASES: Choroby
 FALLOUT.UI.favorite: Ulubiony
 FALLOUT.UI.INVENTORY: Ekwipunek
 FALLOUT.UI.MISCELLANY: Różności
-FALLOUT.UI.Name: Imię
+FALLOUT.UI.Name: Nazwa
 FALLOUT.UI.OTHER: Inne
 FALLOUT.UI.Perks: Profity
 FALLOUT.UI.Qty: Ilość
@@ -354,10 +354,10 @@ TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie
 TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
-TYPES.Actor.settlement: Settlement
+TYPES.Actor.settlement: Osada
 TYPES.Item.ammo: Amunicja
-TYPES.Item.apparel_mod: Apparel Mod
-TYPES.Item.apparel: Apparel
+TYPES.Item.apparel_mod: Modyfikacja Odzieży
+TYPES.Item.apparel: Odzież
 TYPES.Item.books_and_magz: Książki/magazyny
 TYPES.Item.consumable: Zużywalne
 TYPES.Item.disease: Choroby
@@ -367,6 +367,6 @@ TYPES.Item.robot_armor: Pancerz Robota
 TYPES.Item.robot_mod: Modyfikacje Robota
 TYPES.Item.skill: Umiejętność
 TYPES.Item.special_ability: Zdolności Specjalne
-TYPES.Item.trait: Trait
+TYPES.Item.trait: Atut
 TYPES.Item.weapon_mod: Modyfikacje Broni
 TYPES.Item.weapon: Broń
