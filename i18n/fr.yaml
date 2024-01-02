@@ -84,6 +84,10 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Bras 3
 FALLOUT.BodyTypes.robot.legR: Corps
 FALLOUT.BodyTypes.robot.torso: Corps
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Drogues
 FALLOUT.CREATURE.body: Corps
 FALLOUT.CREATURE.guns: Distance
@@ -145,6 +149,7 @@ FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
 FALLOUT.TEMPLATES.Add_Trait: Add Trait
+FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
@@ -243,6 +248,7 @@ FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
 FALLOUT.TEMPLATES.Qualities: Qualités
 FALLOUT.TEMPLATES.RAD: RAD
+FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
 FALLOUT.TEMPLATES.RADIATION: RADIATION
 FALLOUT.TEMPLATES.RANGE: Portée
 FALLOUT.TEMPLATES.Rank: Rang
