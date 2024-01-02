@@ -48,7 +48,7 @@ export class Roller2D20 {
 			hitLocationResult = hitLocationRoll.total;
 		}
 
-		await Roller2D20.parseD20Roll({
+		const dicesRolled = await Roller2D20.parseD20Roll({
 			actor: actor,
 			complicationTreshold,
 			critTreshold,
@@ -59,6 +59,7 @@ export class Roller2D20 {
 			rollname: rollname,
 			successTreshold,
 		});
+		return {roll: roll, dicesRolled: dicesRolled};
 	}
 
 	static async parseD20Roll({
@@ -131,6 +132,7 @@ export class Roller2D20 {
 			rollname: rollname,
 			successTreshold: successTreshold,
 		});
+		return dicesRolled;
 	}
 
 	static async rerollD20({
