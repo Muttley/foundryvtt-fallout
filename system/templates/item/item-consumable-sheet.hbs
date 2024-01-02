@@ -1,69 +1,135 @@
 <form class="{{cssClass}}" autocomplete="off">
-    {{> item/parts/item-header}}
+	{{> item/parts/item-header}}
 
-    {{!-- Sheet Tab Navigation --}}
-    <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
-        <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
-    </nav>
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+		<a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
+	</nav>
 
-    <section class="sheet-body">
-        {{!-- Attributes Tab --}}
-        <div class="tab attributes" data-group="primary" data-tab="attributes">
-            <div class="flexrow resource-row">
-                <label for="system.consumableType" class="resource-label">{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}</label>
-                {{#select system.consumableType}}
-                <select name="system.consumableType">
-                    {{#each FALLOUT.consumableTypes as |type key|}}
-                    <option value="{{key}}">{{localize type}}</option>
-                    {{/each}}
-                </select>
-                {{/select}}
-            </div>
-            {{!-- FOOD --}}
-            {{#ifCond system.consumableType '==' 'food' }}
-            <div class="flexrow resource-row">
-                <label for="system.hp" class="resource-label">{{localize "FALLOUT.TEMPLATES.HP_Healed"}}</label>
-                <input type="number" name="system.hp" value="{{system.hp}}">
-            </div>
-            <div class="flexrow resource-row">
-                <label for="system.irradiated" class="resource-label">{{localize "FALLOUT.TEMPLATES.Irradiated"}}</label>
-                <input type="checkbox" name="system.irradiated" {{#ifCond system.irradiated '==' true}}checked{{/ifCond}}>
-            </div>
-            {{/ifCond}}
-            {{#ifCond system.consumableType '==' 'beverage' }}
-            <div class="flexrow resource-row">
-                <label for="system.hp" class="resource-label">{{localize "FALLOUT.TEMPLATES.HP_Healed"}}</label>
-                <input type="number" name="system.hp" value="{{system.hp}}">
-            </div>
-            <div class="flexrow resource-row">
-                <label for="system.irradiated" class="resource-label">{{localize "FALLOUT.TEMPLATES.Irradiated"}}</label>
-                <input type="checkbox" name="system.irradiated" {{#ifCond system.irradiated '==' true}}checked{{/ifCond}}>
-            </div>
-            <div class="flexrow resource-row">
-                <label for="system.alcoholic" class="resource-label">{{localize "FALLOUT.TEMPLATES.Alcoholic"}}</label>
-                <input type="checkbox" name="system.alcoholic" {{#ifCond system.alcoholic '==' true}}checked{{/ifCond}}>
-            </div>
-            {{/ifCond}}
-            {{#ifCond system.consumableType '==' 'chem' }}
-            <div class="flexrow resource-row">
-                <label for="system.duration" class="resource-label">{{localize "FALLOUT.TEMPLATES.Duration"}}</label>
-                <input type="text" name="system.duration" value="{{system.duration}}">
-            </div>
-            <div class="flexrow resource-row">
-                <label for="system.addictive" class="resource-label">{{localize "FALLOUT.TEMPLATES.Addictive"}}</label>
-                <input type="text" name="system.addictive" value="{{system.addictive}}">
-            </div>
-            {{/ifCond}}
-            <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effect"}}</h3>
-            <div class="description-field">
-                {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
-            </div>
-        </div>
+	<section class="sheet-body">
+		<div class="tab attributes" data-group="primary" data-tab="attributes">
+			<div class="flexrow resource-row">
+				<label for="system.consumableType" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}
+				</label>
+				{{#select system.consumableType}}
+					<select name="system.consumableType">
+						{{#each FALLOUT.consumableTypes as |type key|}}
+							<option value="{{key}}">
+								{{localize type}}
+							</option>
+						{{/each}}
+					</select>
+				{{/select}}
+			</div>
 
-        {{!-- Description Tab --}}
-        <div class="tab description" data-group="primary" data-tab="description">
-            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-        </div>
-    </section>
+			{{#ifCond system.consumableType '!==' 'other' }}
+				<div class="flexrow resource-row">
+					<label for="system.hp" class="resource-label">
+						{{localize "FALLOUT.TEMPLATES.HP_Healed"}}
+					</label>
+					<input
+						name="system.hp"
+						type="number"
+						value="{{system.hp}}"
+					>
+				</div>
+				<div class="flexrow resource-row">
+					<label for="system.radiation" class="resource-label">
+						{{localize "FALLOUT.TEMPLATES.Radiation_Healed"}}
+					</label>
+					<input
+						name="system.radiation"
+						type="number"
+						value="{{system.radiation}}"
+					>
+				</div>
+				{{#ifCond system.consumableType '===' 'chem' }}
+					<div class="flexrow resource-row">
+						<label for="system.duration" class="resource-label">
+							{{localize "FALLOUT.TEMPLATES.Duration"}}
+						</label>
+						<input
+							name="system.duration"
+							type="text"
+							value="{{system.duration}}"
+						>
+					</div>
+					<div class="flexrow resource-row">
+						<label for="system.addictive" class="resource-label">
+							{{localize "FALLOUT.TEMPLATES.Addictive"}}
+						</label>
+						<input
+							name="system.addictive"
+							type="checkbox"
+							{{#ifCond system.addictive '==' true}}
+								checked
+							{{/ifCond}}
+						>
+					</div>
+					{{#if system.addictive}}
+						<div class="flexrow resource-row">
+							<label for="system.addiction" class="resource-label">
+								{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}
+							</label>
+							<input
+								name="system.addiction"
+								type="number"
+								value="{{system.addiction}}"
+							>
+						</div>
+					{{/if}}
+				{{else}}
+					{{#ifCond system.consumableType '===' 'beverage' }}
+						<div class="flexrow resource-row">
+							<label for="system.alcoholic" class="resource-label">
+								{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
+							</label>
+							<input
+								name="system.alcoholic"
+								type="checkbox"
+								{{#ifCond system.alcoholic '==' true}}
+									checked
+								{{/ifCond}}
+							>
+						</div>
+					{{/ifCond}}
+					<div class="flexrow resource-row">
+						<label for="system.irradiated" class="resource-label">
+							{{localize "FALLOUT.TEMPLATES.Irradiated"}}
+						</label>
+						<input
+							name="system.irradiated"
+							type="checkbox"
+							{{#ifCond system.irradiated '==' true}}
+								checked
+							{{/ifCond}}
+						>
+					</div>
+				{{/ifCond}}
+			{{/ifCond}}
+
+			<h3 class="resource-label">
+				{{localize "FALLOUT.TEMPLATES.Effect"}}
+			</h3>
+			<div class="description-field">
+				{{editor effectHTML
+					button=true
+					editable=editable
+					owner=owner
+					target="system.effect"
+				}}
+			</div>
+		</div>
+
+		<div class="tab description" data-group="primary" data-tab="description">
+			{{editor descriptionHTML
+				button=true
+				editable=editable
+				owner=owner
+				rollData=rollData
+				target="system.description"
+			}}
+		</div>
+	</section>
 </form>

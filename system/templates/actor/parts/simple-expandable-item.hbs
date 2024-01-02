@@ -21,7 +21,7 @@
 			</h4>
 		</div>
 		<div class="item-controls">
-			{{#ifCond item.system.stashed '!=' null}}
+			{{#ifCond item.system.stashed '!==' null}}
 				<a
 					{{#if item.system.stashed}}
 						class="item-control item-stash"
@@ -31,6 +31,14 @@
 					title='{{localize "FALLOUT.UI.stashed"}}'
 				>
 					<i class="fas fa-briefcase"></i>
+				</a>
+			{{/ifCond}}
+			{{#ifCond item.type '===' 'consumable'}}
+				<a
+					class="item-control item-consume"
+					title='{{localize "FALLOUT.UI.Consume"}}'
+				>
+					<i class="fas {{item.consumeIcon}}"></i>
 				</a>
 			{{/ifCond}}
 			{{#if item.system.equippable}}

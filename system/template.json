@@ -264,8 +264,10 @@
 					"value": 0
 				},
 				"conditions": {
+					"alcoholic": false,
 					"fatigue": 0,
 					"hunger": 0,
+					"intoxication": 0,
 					"sleep": 0,
 					"thirst": 0
 				},
@@ -434,13 +436,15 @@
 			]
 		},
 		"consumable": {
-			"addictive": "",
-			"alcoholic": true,
-			"consumableType": "",
+			"addiction": 0,
+			"addictive": false,
+			"alcoholic": false,
+			"consumableType": "food",
 			"duration": "",
 			"effect": "",
 			"hp": 0,
-			"irradiated": true,
+			"irradiated": false,
+			"radiation": 0,
 			"templates": [
 				"base",
 				"physical"

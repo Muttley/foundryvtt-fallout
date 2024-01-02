@@ -187,6 +187,21 @@ export default class FalloutActorSheet extends ActorSheet {
 				case "apparel":
 					apparel.push(i);
 					break;
+				case "consumable":
+					let consumeIcon = "fa-pizza-slice";
+
+					if (i.system.consumableType === "beverage") {
+						consumeIcon = "fa-mug-hot";
+					}
+
+					if (i.system.consumableType === "chem") {
+						consumeIcon = "fa-flask";
+					}
+
+					i.consumeIcon = consumeIcon;
+
+					context.itemsByType.consumable.push(i);
+					break;
 				case "robot_armor":
 					robotApparel.push(i);
 					break;
@@ -409,6 +424,16 @@ export default class FalloutActorSheet extends ActorSheet {
 
 		// * CLICK TO EXPAND
 		html.find(".expandable-info").click(async event => this._onItemSummary(event));
+
+		//
+		html.find(".item-consume").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("itemId"));
+
+			const allUsed = await this.actor.consumeItem(item);
+
+			if (allUsed) li.slideUp(200, () => this.render(false));
+		});
 
 		// * Add Inventory Item
 		html.find(".item-create").click(this._onItemCreate.bind(this));

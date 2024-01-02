@@ -7,7 +7,7 @@
 	* **Max Health** (adjusted by `system.health.bonus`)
 	* **Initiative** (adjusted by `system.initiative.bonus`)
 	* **Melee Damage** (adjusted by `system.meleeDamage.bonus`)
-	* **Next Level XP** (no adjustment available)
+	* **Next Level XP** (*no adjustment available*)
 
 - [#38] Automatically set the initiative for actors added to the combat tracker
 - [#43] Add support for ammo types that have multiple charges/shots per item
@@ -15,6 +15,9 @@
 - [#50] Display the system release notes the first time a world is loaded in a new version of the system
 - [#55] Show the amount of remaining shots for each favourite weapon on the status page
 - [#59] Added new Trait item and display them on the character sheet along with Perks
+- [#71] Add new Intoxication condition field to help track the amount of alcoholic beverages consumed during a session
+- [#75] Add Radiation Healed field to Consumable items, as they are all potentially able to heal Radiation damage
+- [#77] Seperate consumable addictive field into a boolean Addictive checkbox and a numeric Addiction Number for clarity
 
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
@@ -22,6 +25,10 @@
 - [#60] Use localized skill names to sort and display alphabetically on Character sheet
 - [#65] Stash button alignment issue on Character sheet Apparel tab
 - [#66] Power Armor health status showing values when no power armor in use
+- [#68] New Consumable item sheet defaults to Food, but Food parameters not shown until selection changed
+- [#70] Consumable chat card shows irrelevant details
+- [#72] Consumable `system.addictive` field should be a numeric
+- [#74] Chems are able to heal HP as well, so the field should be available on the item sheet for them
 
 ## Chores
 - [#33] Merged Polish language updates from Crowdin

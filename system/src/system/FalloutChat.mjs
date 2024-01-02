@@ -1,5 +1,44 @@
 export class FalloutChat {
 
+	static async _renderChatMessage(
+		actor,
+		data,
+		template,
+		mode
+	) {
+		const html = await renderTemplate(template, data);
+
+		if (!mode) {
+			mode = game.settings.get("core", "rollMode");
+		}
+
+		const chatData = {
+			user: game.user.id,
+			speaker: ChatMessage.getSpeaker({
+				actor: actor,
+			}),
+			rollMode: mode,
+			content: html,
+			type: CONST.CHAT_MESSAGE_TYPES.OTHER,
+		};
+
+		if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
+			chatData.whisper = ChatMessage.getWhisperRecipients("GM");
+		}
+		else if (chatData.rollMode === "selfroll") {
+			chatData.whisper = [game.user];
+		}
+
+		await ChatMessage.create(chatData);
+	}
+
+	static async renderGeneralMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/general.hbs",
+			mode
+		);
+	}
+
 	static async onRenderChatMessage(message, html, data) {
 		fallout.logger.debug("Running renderChatMessage hook");
 

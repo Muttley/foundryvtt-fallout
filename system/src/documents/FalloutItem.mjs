@@ -80,7 +80,7 @@ export default class FalloutItem extends Item {
    * @param {Event} event   The originating click event
    * @private
    */
-	async sendToChat() {
+	async sendToChat(showQuantity=true) {
 
 		const itemData = duplicate(this.system);
 		itemData._id = this._id;
@@ -100,6 +100,7 @@ export default class FalloutItem extends Item {
 		itemData.isWeaponMod = this.type === "weapon_mod";
 
 		itemData.name = this.name;
+		itemData.showQuantity = showQuantity;
 		itemData.type = this.type;
 
 		const html = await renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);

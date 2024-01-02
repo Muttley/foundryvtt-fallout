@@ -555,6 +555,132 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+	async consumeItem(item) {
+		if (this.type !== "character") return false;
+
+		// await item.sendToChat(false);
+
+		const newQuantity = item.system.quantity - 1;
+
+		const allUsed = newQuantity <= 0 ? true : false;
+
+		const actorUpdateData = {};
+
+		// TODO Handle healing/intoxication/irradiation/etc
+		const consumableType = item.system.consumableType;
+		if (consumableType !== "other") {
+			// Heal HP
+			const hpHeal = item.system.hp ?? 0;
+
+			if (hpHeal > 0) {
+				let newHp = this.system.health.value + hpHeal;
+				const cappedHp = Math.min(newHp, this.system.health.max);
+
+				actorUpdateData["system.health.value"] = cappedHp;
+			}
+
+			// Heal Radiation
+			const radiationHeal = item.system.radiation ?? 0;
+
+			if (radiationHeal > 0) {
+				let newRadiation = this.system.radiation - radiationHeal;
+				const cappedRadiation = Math.max(newRadiation, 0);
+
+				actorUpdateData["system.radiation"] = cappedRadiation;
+			}
+
+			if (consumableType === "beverage" && item.system.alcoholic) {
+
+				let newIntoxication = this.system.conditions.intoxication + 1;
+				actorUpdateData["system.conditions.intoxication"] = newIntoxication;
+
+				// We don't need to roll for alcoholism if we are already an
+				// alcoholic.
+				//
+				// Also, no need to roll a check unless we've had at least two
+				// drinks this session, as that's the minimum possible dice that
+				// can roll the required 2 effects.
+				//
+				if (!this.system.conditions.alcoholic && newIntoxication >= 2) {
+					let formula = `${newIntoxication}dccs>=5`;
+					let roll = new Roll(formula);
+
+					let alcoholicRoll = await roll.evaluate({ async: true });
+					try {
+						game.dice3d.showForRoll(alcoholicRoll);
+					}
+					catch(err) {}
+
+					if (parseInt(roll.result) >= 2) {
+						actorUpdateData["system.conditions.alcoholic"] = true;
+						actorUpdateData["system.conditions.intoxication"] = 1;
+
+						fallout.chat.renderGeneralMessage(
+							this,
+							{
+								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.alcoholic.title"),
+								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.alcoholic.body",
+									{
+										actorName: this.name,
+										itemName: item.name,
+									}
+								),
+							},
+							CONST.DICE_ROLL_MODES.PRIVATE
+						);
+					}
+				}
+			}
+
+			if (consumableType !== "chem" && item.system.irradiated) {
+				let formula = "1dccs>=5";
+				let roll = new Roll(formula);
+
+				let radiationDamageRoll = await roll.evaluate({ async: true });
+				try {
+					game.dice3d.showForRoll(radiationDamageRoll);
+				}
+				catch(err) {}
+
+				if (parseInt(roll.result) > 0) {
+					let newRadiation = this.system.radiation + 1;
+					actorUpdateData["system.radiation"] = newRadiation;
+
+					fallout.chat.renderGeneralMessage(
+						this,
+						{
+							title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
+							body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
+								{
+									actorName: this.name,
+									itemName: item.name,
+								}
+							),
+						},
+						CONST.DICE_ROLL_MODES.PRIVATE
+					);
+				}
+			}
+
+			if (consumableType === "chem" && item.system.addictive) {
+				// TODO Check for addiction
+			}
+		}
+
+		await this.update(actorUpdateData);
+
+		if (allUsed) {
+			await item.delete();
+		}
+		else {
+			await item.update({
+				"system.quantity": newQuantity,
+			});
+		}
+
+		return allUsed;
+	}
+
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
 		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);

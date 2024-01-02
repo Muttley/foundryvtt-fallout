@@ -84,6 +84,10 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Bras 3
 FALLOUT.BodyTypes.robot.legR: Corps
 FALLOUT.BodyTypes.robot.torso: Corps
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Drogues
 FALLOUT.CREATURE.body: Corps
 FALLOUT.CREATURE.guns: Distance
@@ -118,6 +122,8 @@ FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
+FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SKILL.Athletics: Athlétisme
 FALLOUT.SKILL.Barter: Troc
 FALLOUT.SKILL.Big Guns: Armes lourdes
@@ -135,8 +141,15 @@ FALLOUT.SKILL.Speech: Discours
 FALLOUT.SKILL.Survival: Survie
 FALLOUT.SKILL.Throwing: Projectiles
 FALLOUT.SKILL.Unarmed: Mains nues
+FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
+FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
+FALLOUT.TEMPLATES.Add_Trait: Add Trait
+FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
@@ -159,6 +172,8 @@ FALLOUT.TEMPLATES.conditions.full: Repu
 FALLOUT.TEMPLATES.conditions.hunger: faim
 FALLOUT.TEMPLATES.conditions.hungry: Faim
 FALLOUT.TEMPLATES.conditions.hydrated: Hydraté
+FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
 FALLOUT.TEMPLATES.conditions.peckish: Petit creux
 FALLOUT.TEMPLATES.conditions.quenched: Désaltéré
 FALLOUT.TEMPLATES.conditions.rested: Reposé
@@ -233,13 +248,14 @@ FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
 FALLOUT.TEMPLATES.Qualities: Qualités
 FALLOUT.TEMPLATES.RAD: RAD
+FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
 FALLOUT.TEMPLATES.RADIATION: RADIATION
 FALLOUT.TEMPLATES.RANGE: Portée
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
 FALLOUT.TEMPLATES.Re_roll: Relancer
 FALLOUT.TEMPLATES.Requirements: Prérequis
-FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RÉSISTANCE BONUS GÉNÉRAL
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
@@ -254,6 +270,7 @@ FALLOUT.TEMPLATES.Tag: Atout
 FALLOUT.TEMPLATES.Tear: Usure
 FALLOUT.TEMPLATES.TN: SR
 FALLOUT.TEMPLATES.Total: Total
+FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Traiter une blessure (Clic droit)
 FALLOUT.TEMPLATES.Use_Agility: Utiliser Agilité
 FALLOUT.TEMPLATES.Use_Charisma: Utiliser Charisme
@@ -271,6 +288,7 @@ FALLOUT.UI.BOOKS_AND_MAGZS: Livres et Magazines
 FALLOUT.UI.CAPS: Capsules
 FALLOUT.UI.CarryWeight: Charge maximale
 FALLOUT.UI.CONSUMABLES: Consommables
+FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Coût
 FALLOUT.UI.Damage: Dégâts
 FALLOUT.UI.DISEASES: Maladies
@@ -349,5 +367,6 @@ TYPES.Item.robot_armor: Armure de robot
 TYPES.Item.robot_mod: Robot Module
 TYPES.Item.skill: Compétence
 TYPES.Item.special_ability: Capacités spéciales
+TYPES.Item.trait: Trait
 TYPES.Item.weapon_mod: Mod Arme
 TYPES.Item.weapon: Arme
