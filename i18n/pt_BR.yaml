@@ -84,6 +84,10 @@ FALLOUT.BodyTypes.robot.label: Robô
 FALLOUT.BodyTypes.robot.legL: Braço 3
 FALLOUT.BodyTypes.robot.legR: Corpo
 FALLOUT.BodyTypes.robot.torso: Corpo
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Drogas
 FALLOUT.CREATURE.body: Corpo
 FALLOUT.CREATURE.guns: Armas
@@ -145,6 +149,7 @@ FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Habilidades
 FALLOUT.TEMPLATES.Add_Perk: Add Perk
 FALLOUT.TEMPLATES.Add_Trait: Add Trait
+FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Viciante
 FALLOUT.TEMPLATES.Alcoholic: Alcoólico
 FALLOUT.TEMPLATES.AMMO: AMMO
