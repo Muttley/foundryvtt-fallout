@@ -448,7 +448,7 @@
 			"alcoholic": false,
 			"group": "",
 			"consumableType": "food",
-			"duration": "",
+			"duration": "instant",
 			"effect": "",
 			"hp": 0,
 			"irradiated": false,

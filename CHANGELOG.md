@@ -22,6 +22,9 @@
 - [#78] Add new Addiction item type, similar to Disease items, and displayed on the Status screen
 - [#86] Add group field to Consumable items to allow for different items sharing the same addiction name
 - [#87] Add flag to show whether food consumable items count as prepared or not
+- [#88] Switch Chem consumable's Duration field to a drop-down
+
+	* The migration script for this change will attempt to determine which Duration to use, but this will only work for non-abbreviated English language names that match (in a non-case-sensitive way) the names of these durations somewhere in the string.  Any items whose duration can't be migrated will be given the template default of "instant".
 
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet

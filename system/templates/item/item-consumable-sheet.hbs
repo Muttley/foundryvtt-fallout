@@ -59,11 +59,15 @@
 						<label for="system.duration" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.Duration"}}
 						</label>
-						<input
-							name="system.duration"
-							type="text"
-							value="{{system.duration}}"
-						>
+						{{#select system.duration}}
+							<select name="system.duration">
+								{{#each FALLOUT.CHEM_DURATIONS}}
+									<option value="{{@key}}">
+										{{this}}
+									</option>
+								{{/each}}
+							</select>
+						{{/select}}
 					</div>
 					<div class="flexrow resource-row">
 						<label for="system.addictive" class="resource-label">
