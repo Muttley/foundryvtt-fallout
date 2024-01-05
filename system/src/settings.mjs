@@ -108,6 +108,20 @@ export function registerSettings() {
 		onChange: debounceReload,
 	});
 
+	game.settings.register("fallout", "sourceFilters", {
+		name: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.title"),
+		hint: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.hint"),
+		config: false,
+		scope: "world",
+		type: Array,
+		requiresReload: true,
+		default: [],
+	});
+
+	// ----------------
+	//  DEBUG SETTINGS
+	// ----------------
+	//
 	game.settings.register("fallout", "debugEnabled", {
 		name: "Enable/Disable Debug",
 		hint: "Enable or Disable additional debug features",
@@ -134,16 +148,6 @@ export function registerSettings() {
 		config: game.settings.get("fallout", "debugEnabled"),
 		default: "",
 		type: String,
-	});
-
-	game.settings.register("fallout", "sourceFilters", {
-		name: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.title"),
-		hint: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.hint"),
-		config: false,
-		scope: "world",
-		type: Array,
-		requiresReload: true,
-		default: [],
 	});
 
 }

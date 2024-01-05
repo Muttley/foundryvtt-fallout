@@ -378,7 +378,6 @@ export class Roller2D20 {
 		).effect;
 
 		let weaponDamageTypesList = [];
-		let weaponDamageEffects = [];
 
 		if (weapon != null) {
 			weaponDamageTypesList = Object.keys(
@@ -387,26 +386,15 @@ export class Roller2D20 {
 				dt => weapon.system.damage.damageType[dt]
 			);
 
+			// Check for Vicious damage effect and add to damage for each effect
+			// rolled
 			for (let de in weapon.system.damage.damageEffect) {
-				if (weapon.system.damage.damageEffect[de].value) {
-					const rank = weapon.system.damage.damageEffect[de].rank ?? "";
-					const damageEffectLabel = game.i18n.localize(`FALLOUT.WEAPONS.damageEffect.${de}`);
-					const effectLabel = `${damageEffectLabel}${rank}`;
+				const effect = weapon.system.damage.damageEffect[de];
 
-					const effectDescription = fallout.FalloutHovers.LIST[
-						weapon.system.damage.damageEffect[de].label.toLowerCase()
-					];
-
-					weaponDamageEffects.push({
-						effect: effectDescription,
-						efectLabel: effectLabel,
-						effectId: de,
-					});
+				if (effect.value && de === "vicious") {
+					damage += effects;
+					break;
 				}
-			}
-			// Check for Vicious damage effect and add to damage for each effect rolled
-			if (weaponDamageEffects.find(e => e.effectId === "vicious")) {
-				damage += effects;
 			}
 		}
 
@@ -416,7 +404,7 @@ export class Roller2D20 {
 			effects: effects,
 			results: dicesRolled,
 			weaponDamageTypesList,
-			weaponDamageEffects,
+			weapon,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/rollD6.hbs", rollData);
@@ -445,4 +433,3 @@ export class Roller2D20 {
 		await ChatMessage.create(chatData);
 	}
 }
-

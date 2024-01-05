@@ -28,7 +28,10 @@
 
 							{{#each item.system.damage.damageType as |dt dk|}}
 								{{#ifCond dt '==' true}}
-									<i class="fo-{{dk}}" title="{{localize (concat 'FALLOUT.WEAPONS.damageType.' dk)}}"></i>
+									<i
+										class="fo-{{dk}}"
+										title="{{fromConfig "DAMAGE_TYPES" dk}}"
+									></i>
 								{{/ifCond}}
 							{{/each}}
 						</a>
@@ -48,27 +51,11 @@
 					</div>
 				</div>
 				<div class="item-sub-info">
-					<span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
-					{{#each item.system.damage.weaponQuality as |quality key|}}
-						{{#if (eq quality.value true)}}
-							<span class="quality hover" data-key="{{key}}">
-								{{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}},&nbsp;
-							</span>
-						{{/if}}
-					{{/each}}
-					&nbsp;&nbsp;&nbsp;
-					<span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
-					{{#each item.system.damage.damageEffect as |effect key|}}
-						{{#if (eq effect.value true)}}
-							<span class="effect hover" data-key="{{key}}">
-								{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
-								{{#if (ne effect.rank undefined)}}
-									{{effect.rank}}
-								{{/if}}
-								,&nbsp;
-							</span>
-						{{/if}}
-					{{/each}}
+					<strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong>
+					{{{listWeaponQualities item.system.damage.weaponQuality}}}
+					&nbsp;
+					<strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong>
+					{{{listDamageEffects item.system.damage.damageEffect}}}
 				</div>
 			</li>
 		{{/each}}

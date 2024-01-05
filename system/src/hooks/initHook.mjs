@@ -1,5 +1,6 @@
 import { FALLOUT, SYSTEM_ID, SYSTEM_NAME } from "../config.mjs";
 
+import * as apps from "../apps/_module.mjs";
 import * as documents from "../documents/_module.mjs";
 import * as sheets from "../sheets/_module.mjs";
 
@@ -36,6 +37,7 @@ export async function initHook() {
 	// Add utility classes to the global game object so that they're more easily
 	// accessible in global contexts.
 	globalThis.fallout = {
+		apps,
 		APTracker,
 		chat: FalloutChat,
 		compendiums: FalloutCompendiums,

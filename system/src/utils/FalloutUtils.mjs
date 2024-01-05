@@ -9,7 +9,7 @@ export default class FalloutUtils {
 
 			if (systemVersion !== savedVersion) {
 				Hotbar.toggleDocumentSheet(
-					CONFIG.FALLOUT.JournalUuids.releaseNotes
+					CONFIG.FALLOUT.JOURNAL_UUIDS.releaseNotes
 				);
 
 				game.settings.set(

@@ -51,9 +51,9 @@
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Armor_Type"}} &nbsp;</label>
                 <select name="system.appareltype">
                     {{#select system.appareltype}}
-                    {{#each FALLOUT.APPAREL_TYPE as |apparelType key |}}
-                    <option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
-                    {{/each}}
+						{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
+							<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
+						{{/each}}
                     {{/select}}
                 </select>
             </div>

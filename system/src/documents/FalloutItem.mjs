@@ -12,16 +12,6 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 	}
 
-	// async _preCreate(data, options, user) {
-	//   await super._preCreate(data, options, user);
-	//   if (data.type == "weapon") {
-	//     let flags = {};
-	//     flags['fallout.weaponQualities'] = duplicate(CONFIG.FALLOUT.WEAPONS.weaponQuality);
-	//     flags['fallout.damageEffects'] = duplicate(CONFIG.FALLOUT.WEAPONS.damageEffect);
-	//     this.data.update({ 'flags': flags });
-	//   }
-	// }
-
 	/**
 	 * Prepare a data object which is passed to any Roll formulas which are
 	 * created related to this Item
@@ -35,45 +25,6 @@ export default class FalloutItem extends Item {
 
 		return rollData;
 	}
-
-	/**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-	// async roll() {
-	//   const item = this.data;
-
-	//   // Initialize chat data.
-	//   const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-	//   const rollMode = game.settings.get('core', 'rollMode');
-	//   const label = `[${item.type}] ${item.name}`;
-
-	//   // If there's no roll data, send a chat message.
-	//   if (!this.system.formula) {
-	//     ChatMessage.create({
-	//       speaker: speaker,
-	//       rollMode: rollMode,
-	//       flavor: label,
-	//       content: item.data.description ?? ''
-	//     });
-	//   }
-	//   // Otherwise, create a roll and send a chat message from it.
-	//   else {
-	//     // Retrieve roll data.
-	//     const rollData = this.getRollData();
-
-	//     // Invoke the roll and submit it to chat.
-	//     const roll = new Roll(rollData.item.formula, rollData).roll();
-	//     roll.toMessage({
-	//       speaker: speaker,
-	//       rollMode: rollMode,
-	//       flavor: label,
-	//     });
-	//     return roll;
-	//   }
-	// }
-
 
 	/**
    * Handle send to chat clicks.
@@ -103,6 +54,10 @@ export default class FalloutItem extends Item {
 		itemData.showQuantity = showQuantity;
 		itemData.type = this.type;
 
+		if (itemData.isWeapon) {
+			itemData.weaponQualities = this.weaponQualitiesString();
+		}
+
 		const html = await renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
 		const chatData = {
 			user: game.user.id,
@@ -116,5 +71,18 @@ export default class FalloutItem extends Item {
 			chatData.whisper = [game.user];
 		}
 		ChatMessage.create(chatData);
+	}
+
+	weaponQualitiesString() {
+		if (this.type !== "weapon") return "";
+
+		const qualities = [];
+		for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
+			if (this.system.damage?.weaponQuality[key]?.value) {
+				qualities.push(CONFIG.FALLOUT.WEAPON_QUALITIES[key]);
+			}
+		}
+
+		return qualities.join(", ");
 	}
 }

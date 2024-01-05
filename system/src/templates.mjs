@@ -10,6 +10,7 @@
  */
 export default async function() {
 	const partials = [
+		"systems/fallout/templates/actor/parts/actor-addictions.hbs",
 		"systems/fallout/templates/actor/parts/actor-apparel.hbs",
 		"systems/fallout/templates/actor/parts/actor-attributes.hbs",
 		"systems/fallout/templates/actor/parts/actor-conditions.hbs",

@@ -9,13 +9,21 @@ import {
  */
 export default class FalloutActorSheet extends ActorSheet {
 
+	constructor(object, options) {
+		super(object, options);
+
+		if (this.actor.type === "character") {
+			this.chemDoseManager = new fallout.apps.FalloutChemDoses(this.actor);
+		}
+	}
+
 	/** @override */
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
 			template: "systems/fallout/templates/actor/actor-sheet.hbs",
 			width: 780,
-			height: 930,
+			height: 940,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",
@@ -113,6 +121,12 @@ export default class FalloutActorSheet extends ActorSheet {
 		context.effects = prepareActiveEffectCategories(this.actor.effects);
 		context.FALLOUT = CONFIG.FALLOUT;
 
+		// Update the Chem Doses Manager, but don't render it unless it's
+		// already showing
+		if (this.actor.type === "character") {
+			this.chemDoseManager.render(false);
+		}
+
 		return context;
 	}
 
@@ -152,6 +166,7 @@ export default class FalloutActorSheet extends ActorSheet {
    */
 	async _prepareItems(context) {
 		context.itemsByType = {
+			addiction: [],
 			ammo: [],
 			apparel_mod: [],
 			apparel: [],
@@ -225,6 +240,7 @@ export default class FalloutActorSheet extends ActorSheet {
 
 						i.shotsAvailable = shotsAvailable;
 					}
+
 					context.itemsByType.weapon.push(i);
 					break;
 				default:
@@ -544,9 +560,7 @@ export default class FalloutActorSheet extends ActorSheet {
 				attribute = item.actor.system[item.system.attribute];
 			}
 			else {
-				skillName = CONFIG.FALLOUT.WEAPONS.weaponSkill[
-					item.system.weaponType
-				];
+				skillName = CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
 
 				let skillItem = item.actor.items.find(i => i.name === skillName);
 
@@ -656,6 +670,14 @@ export default class FalloutActorSheet extends ActorSheet {
 				li.addEventListener("dragstart", handler, false);
 			});
 		}
+
+		html.find(".manage-session-doses").click(
+			event => {
+				event.preventDefault();
+
+				this.chemDoseManager.render(true);
+			}
+		);
 
 		// !CRATURES
 

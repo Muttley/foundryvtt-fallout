@@ -1,0 +1,34 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+	{{> item/parts/item-header}}
+
+	{{!-- Sheet Tab Navigation --}}
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+		<a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
+	</nav>
+
+	<section class="sheet-body">
+		{{!-- Active Effects Tab --}}
+		<div class="tab effects flexcol" data-group="primary" data-tab="effects">
+			{{> item/parts/item-effects}}
+		</div>
+
+		{{!-- Attributes Tab --}}
+		<div class="tab attributes" data-group="primary" data-tab="attributes">
+			<div class="resource-row resource-label align-mid">
+				<label>{{localize "FALLOUT.TEMPLATES.Effect"}}</label>
+			</div>
+			<div class="description-field">
+				{{editor descriptionHTML
+					button=true
+					editable=editable
+					owner=owner
+					rollData=rollData
+					target="system.description"
+				}}
+			</div>
+		</div>
+	</section>
+
+</form>

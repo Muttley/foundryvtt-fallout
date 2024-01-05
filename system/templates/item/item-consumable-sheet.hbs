@@ -14,13 +14,23 @@
 				</label>
 				{{#select system.consumableType}}
 					<select name="system.consumableType">
-						{{#each FALLOUT.consumableTypes as |type key|}}
+						{{#each FALLOUT.CONSUMABLE_TYPES as |type key|}}
 							<option value="{{key}}">
 								{{localize type}}
 							</option>
 						{{/each}}
 					</select>
 				{{/select}}
+			</div>
+			<div class="flexrow resource-row">
+				<label for="system.consumableGroup" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Consumable_Group"}}
+				</label>
+				<input
+					name="system.consumableGroup"
+					type="text"
+					value="{{system.consumableGroup}}"
+				>
 			</div>
 
 			{{#ifCond system.consumableType '!==' 'other' }}
@@ -106,6 +116,20 @@
 							{{/ifCond}}
 						>
 					</div>
+					{{#ifCond system.consumableType '===' 'food' }}
+						<div class="flexrow resource-row">
+							<label for="system.prepared" class="resource-label">
+								{{localize "FALLOUT.TEMPLATES.Prepared"}}
+							</label>
+							<input
+								name="system.prepared"
+								type="checkbox"
+								{{#ifCond system.prepared '==' true}}
+									checked
+								{{/ifCond}}
+							>
+						</div>
+					{{/ifCond}}
 				{{/ifCond}}
 			{{/ifCond}}
 

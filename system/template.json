@@ -8,6 +8,7 @@
 			"settlement"
 		],
 		"character": {
+			"chemDoses": {},
 			"templates": [
 				"base",
 				"derived",
@@ -337,6 +338,7 @@
 	},
 	"Item": {
 		"types": [
+			"addiction",
 			"ammo",
 			"apparel",
 			"apparel_mod",
@@ -353,6 +355,11 @@
 			"weapon",
 			"weapon_mod"
 		],
+		"addiction": {
+			"templates": [
+				"base"
+			]
+		},
 		"ammo": {
 			"effect": "",
 			"shots": {
@@ -439,11 +446,13 @@
 			"addiction": 0,
 			"addictive": false,
 			"alcoholic": false,
+			"group": "",
 			"consumableType": "food",
 			"duration": "",
 			"effect": "",
 			"hp": 0,
 			"irradiated": false,
+			"prepared": false,
 			"radiation": 0,
 			"templates": [
 				"base",
@@ -557,54 +566,53 @@
 			"damage": {
 				"damageEffect": {
 					"arc": {
-						"description": "",
-						"label": "Arc",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"breaking": {
-						"description": "",
-						"label": "Breaking",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"burst": {
-						"description": "",
-						"label": "Burst",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"freeze": {
-						"description": "",
-						"label": "Freeze",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"persistent": {
-						"description": "",
-						"label": "Persistent",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"piercing": {
-						"description": "",
-						"label": "Piercing",
+						"hasRanks": true,
 						"rank": 1,
 						"value": false
 					},
 					"radioactive": {
-						"description": "",
-						"label": "Radioactive",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"spread": {
-						"description": "",
-						"label": "Spread",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"stun": {
-						"description": "",
-						"label": "Stun",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					},
 					"vicious": {
-						"description": "",
-						"label": "Vicious",
+						"hasRanks": false,
+						"rank": -1,
 						"value": false
 					}
 				},

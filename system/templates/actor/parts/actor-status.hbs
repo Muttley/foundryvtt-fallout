@@ -52,7 +52,7 @@
                     <span>
                         <i class="fo-physical"></i>
 						&nbsp;
-                        <label for="system.resistance.physical">
+                        <label for="system.resistance.physical" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.PHYS"}}
 						</label>
                     </span>
@@ -67,7 +67,7 @@
                     <span>
 						<i class="fo-energy"></i>
 						&nbsp;
-						<label for="system.resistance.energy">
+						<label for="system.resistance.energy" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.ENG"}}
 						</label>
 					</span>
@@ -82,7 +82,7 @@
                     <span>
                         <i class="fo-radiation"></i>
 						&nbsp;
-                        <label for="system.resistance.radiation">
+                        <label for="system.resistance.radiation" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.RAD"}}
 						</label>
                     </span>
@@ -97,7 +97,7 @@
                     <span>
                         <i class="fo-poison"></i>
 						&nbsp;
-                        <label for="system.resistance.poison">
+                        <label for="system.resistance.poison" class="resource-label">
 							{{localize "FALLOUT.TEMPLATES.POISON"}}
 						</label>
                     </span>
@@ -111,48 +111,50 @@
             </div>
         </div>
 
-       <div class="box">
-            <div class="box-header">
-                <h4 class="upperC">{{localize "FALLOUT.TEMPLATES.Status"}}</h4>
-            </div>
-            <div class="flexrow resource-row align-mid">
-                <label class="resource-label upperC">
-					{{localize "FALLOUT.TEMPLATES.conditions.fatigue"}}
-				</label>
-                <input
-					class="num-short-2"
-					type="number"
-					name="system.conditions.fatigue"
-					value="{{system.conditions.fatigue}}"
-				>
-            </div>
-            <div class="flexrow resource-row align-mid">
-                <label
-					class="resource-label upperC"
-					title="{{localize 'FALLOUT.TEMPLATES.conditions.intoxication.tooltip'}}"
-				>
-					{{localize "FALLOUT.TEMPLATES.conditions.intoxication.label"}}
-				</label>
-                <input
-					class="num-short-2"
-					type="number"
-					name="system.conditions.intoxication"
-					value="{{system.conditions.intoxication}}"
-				>
-            </div>
-            <div class="flexrow resource-row align-mid">
-                <label class="resource-label upperC">
-					{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
-				</label>
-				<input
-					name="system.conditions.alcoholic"
-					type="checkbox"
-					{{#if system.conditions.alcoholic}}
-						checked
-					{{/if}}
-				>
-            </div>
-        </div>
+		{{#ifCond actor.type '!==' 'robot'}}
+			<div class="box">
+				<div class="box-header">
+					<h4 class="upperC">{{localize "FALLOUT.TEMPLATES.Status"}}</h4>
+				</div>
+				<div class="flexrow resource-row align-mid">
+					<label class="resource-label upperC">
+						{{localize "FALLOUT.TEMPLATES.conditions.fatigue"}}
+					</label>
+					<input
+						class="num-short-2"
+						type="number"
+						name="system.conditions.fatigue"
+						value="{{system.conditions.fatigue}}"
+					>
+				</div>
+				<div class="flexrow resource-row align-mid">
+					<label
+						class="resource-label upperC"
+						title="{{localize 'FALLOUT.TEMPLATES.conditions.intoxication.tooltip'}}"
+					>
+						{{localize "FALLOUT.TEMPLATES.conditions.intoxication.label"}}
+					</label>
+					<input
+						class="num-short-2"
+						type="number"
+						name="system.conditions.intoxication"
+						value="{{system.conditions.intoxication}}"
+					>
+				</div>
+				<div class="flexrow resource-row align-mid">
+					<label class="resource-label upperC">
+						{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
+					</label>
+					<input
+						name="system.conditions.alcoholic"
+						type="checkbox"
+						{{#if system.conditions.alcoholic}}
+							checked
+						{{/if}}
+					>
+				</div>
+			</div>
+		{{/ifCond}}
     </div>
 
     {{!-- MIDDLE COLUMN --}}
@@ -248,7 +250,7 @@
             </div>
         </div>
 
-        {{#ifCond actor.type '==' 'character'}}
+        {{#ifCond actor.type '===' 'character'}}
 			<div
 				class="resource-plate-header plate-3-g"
 				style="margin-bottom: 10px;"
@@ -391,9 +393,14 @@
         {{> actor/parts/actor-favorite_weapons}}
     </div>
     <div class="grid-span-2">
-        {{> actor/parts/actor-diseases}}
+		{{#ifCond actor.type '!==' 'robot'}}
+			{{> actor/parts/actor-addictions}}
+			{{> actor/parts/actor-diseases}}
+		{{/ifCond}}
     </div>
     <div>
-        {{> actor/parts/actor-conditions}}
+		{{#ifCond actor.type '!==' 'robot'}}
+			{{> actor/parts/actor-conditions}}
+		{{/ifCond}}
     </div>
 </div>

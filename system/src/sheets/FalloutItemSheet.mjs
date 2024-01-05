@@ -14,7 +14,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
 			width: 520,
-			height: 520,
+			height: "auto",
 			tabs: [{
 				navSelector: ".sheet-tabs",
 				contentSelector: ".sheet-body",
@@ -80,21 +80,21 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (item.type === "weapon") {
 			context.damageTypes = [];
-			for (const key in CONFIG.FALLOUT.WEAPONS.damageType) {
+			for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
 				context.damageTypes.push({
 					active: item.system?.damage?.damageType[key] ?? false,
 					key,
-					label: game.i18n.localize(CONFIG.FALLOUT.WEAPONS.damageType[key]),
+					label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
 				});
 			}
 
 			const weaponQualities = [];
-			for (const key in CONFIG.FALLOUT.WEAPONS.weaponQuality) {
+			for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
 
 				weaponQualities.push({
 					active: item.system?.damage?.weaponQuality[key].value ?? false,
 					key,
-					label: game.i18n.localize(CONFIG.FALLOUT.WEAPONS.weaponQuality[key].label),
+					label: CONFIG.FALLOUT.WEAPON_QUALITIES[key],
 				});
 
 				context.weaponQualities = weaponQualities.sort(
@@ -103,17 +103,16 @@ export default class FalloutItemSheet extends ItemSheet {
 			}
 
 			const damageEffects = [];
-			for (const key in CONFIG.FALLOUT.WEAPONS.damageEffect) {
-				const effect = CONFIG.FALLOUT.WEAPONS.damageEffect[key] ?? {};
-				const itemData = item.system?.damage?.damageEffect[key] ?? {};
+			for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
+				const itemData = duplicate(
+					item.system?.damage?.damageEffect[key] ?? {}
+				);
 
-				damageEffects.push({
-					active: itemData.value ?? false,
-					hasRanks: effect.hasRanks,
-					key,
-					label: game.i18n.localize(effect.label),
-					rank: effect.hasRanks ? itemData.rank : -1,
-				});
+				itemData.active = itemData.value ?? false;
+				itemData.key = key;
+				itemData.label = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
+
+				damageEffects.push(itemData);
 
 				context.damageEffects = damageEffects.sort(
 					(a, b) => a.label.localeCompare(b.label)

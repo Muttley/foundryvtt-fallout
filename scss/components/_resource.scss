@@ -149,6 +149,9 @@ input.chk-btn:checked + label {
 		background-image: url(../assets/ui/plate-header-4-r.svg);
 	}
 }
+.capitalize {
+	text-transform: capitalize;
+}
 .upperC {
 	text-transform: uppercase;
 }

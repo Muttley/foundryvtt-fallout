@@ -13,6 +13,52 @@ export const registerHandlebarsHelpers = function() {
 		return outStr;
 	});
 
+	Handlebars.registerHelper("listDamageEffects", function(effects) {
+		const effectsElements = [];
+
+		for (const key in effects) {
+			const effect = effects[key];
+
+			if (!effect.value) continue;
+
+			let effectName = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
+			if (effect.hasRanks) effectName += ` ${effect.rank}`;
+
+			const effectHtml =
+				`<span class="effect hover" data-key="${key}">${effectName}</span>`;
+
+			effectsElements.push(effectHtml);
+		}
+
+		let listString = effectsElements.join(",&nbsp;");
+		listString += ".";
+
+		return listString;
+	});
+
+	Handlebars.registerHelper("listWeaponQualities", function(qualities) {
+		const qualityElements = [];
+
+		for (const key in qualities) {
+			const quality = qualities[key];
+
+			if (!quality.value) continue;
+
+			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
+			if (quality.hasRanks) qualityName += ` ${quality.rank}`;
+
+			const effectHtml =
+				`<span class="effect hover" data-key="${key}">${qualityName}</span>`;
+
+			qualityElements.push(effectHtml);
+		}
+
+		let listString = qualityElements.join(",&nbsp;");
+		listString += ".";
+
+		return listString;
+	});
+
 	Handlebars.registerHelper("toLowerCase", function(str) {
 		return str.toLowerCase();
 	});
@@ -76,10 +122,18 @@ export const registerHandlebarsHelpers = function() {
 	/* -------------------------------------------- */
 
 	Handlebars.registerHelper("damageFaIconClass", function(str) {
-		if (str === "physical") return "fas fa-fist-raised";
-		else if (str === "energy") return "fas fa-bolt";
-		else if (str === "radiation") return "fas fa-radiation";
-		else if (str === "poison") return "fas fa-biohazard";
+		switch (str) {
+			case "physical":
+				return "fas fa-fist-raised";
+			case "energy":
+				return "fas fa-bolt";
+			case "radiation":
+				return "fas fa-radiation";
+			case "poison":
+				return "fas fa-biohazard";
+			default:
+				return "";
+		}
 	});
 
 	Handlebars.registerHelper("fromConfig", function(arg1, arg2) {

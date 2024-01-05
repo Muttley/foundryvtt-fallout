@@ -3,9 +3,8 @@
 		<div class="flex align-mid">#</div>
 		<div>
 			<select name="system.bodyType" style="font-size: 0.75rem;">
-				{{selectOptions FALLOUT.BodyTypes
+				{{selectOptions FALLOUT.BODY_TYPES
 					selected=system.bodyType
-					localize=true
 				}}
 			</select>
 		</div>
@@ -33,7 +32,7 @@
 	{{#each system.body_parts as |part key|}}
 		<div style="display: grid; grid-template-columns: 2fr 40% repeat(5, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
 			<div>
-				{{fromConfig "BodyValues" key}}
+				{{fromConfig "BODY_VALUES" key}}
 			</div>
 			<div>
 				{{localize (concat 'FALLOUT.BodyTypes.' ../system.bodyType '.' key)}}

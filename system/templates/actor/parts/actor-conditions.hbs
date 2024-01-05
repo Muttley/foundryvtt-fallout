@@ -11,7 +11,7 @@
 				<i class="fa-solid fa-pot-food" title="{{localize 'FALLOUT.TEMPLATES.conditions.hunger'}}"></i>
 				{{#select system.conditions.hunger}}
 				<select name="system.conditions.hunger">
-					{{#each FALLOUT.conditions.hunger as |value key|}}
+					{{#each FALLOUT.CONDITIONS.hunger as |value key|}}
 					<option value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
 					{{/each}}
 				</select>
@@ -23,7 +23,7 @@
 				<i class="fa-solid fa-bottle-droplet" title="{{localize 'FALLOUT.TEMPLATES.conditions.thirst'}}"></i>
 				{{#select system.conditions.thirst}}
 				<select name="system.conditions.thirst">
-					{{#each FALLOUT.conditions.thirst as |value key|}}
+					{{#each FALLOUT.CONDITIONS.thirst as |value key|}}
 					<option value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
 					{{/each}}
 				</select>
@@ -35,7 +35,7 @@
 				<i class="fa-solid fa-bed" title="{{localize 'FALLOUT.TEMPLATES.conditions.sleep'}}"></i>
 				{{#select system.conditions.sleep}}
 				<select name="system.conditions.sleep">
-					{{#each FALLOUT.conditions.sleep as |value key|}}
+					{{#each FALLOUT.CONDITIONS.sleep as |value key|}}
 					<option value="{{value}}">{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}</option>
 					{{/each}}
 				</select>

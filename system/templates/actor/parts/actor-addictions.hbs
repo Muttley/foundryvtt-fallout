@@ -1,0 +1,32 @@
+<div class="box padding5">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				<span>
+					<a
+						class="manage-session-doses"
+						data-tooltip="{{localize 'FALLOUT.UI.ChemDoses.tooltip'}}"
+					>
+						<i class="fa-solid fa-tablets"></i>
+					</a>
+					{{localize 'FALLOUT.UI.Addictions'}}
+				</span>
+			</div>
+			<div class="item-controls">
+				<a
+					class="item-control item-create"
+					title="{{localize 'FALLOUT.TEMPLATES.Create_Addiction'}}"
+					data-type="addiction"
+				>
+					<i class="fas fa-plus"></i>
+					{{localize 'FALLOUT.UI.Add'}}
+				</a>
+			</div>
+		</li>
+		{{#each itemsByType.addiction as |item id|}}
+			{{>	actor/parts/simple-expandable-item
+				item=item
+			}}
+		{{/each}}
+	</ol>
+</div>

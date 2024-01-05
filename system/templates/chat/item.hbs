@@ -19,161 +19,170 @@
 
 	<!-- * SKILL * -->
 	{{#if isSkill}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Skill_Value"}}: </strong>{{value}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}: </strong>{{tag}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}: </strong><span style="text-transform: uppercase;">{{defaultAttribute}}</span></p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Skill_Value"}}: </strong>{{value}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}: </strong>{{tag}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}: </strong><span style="text-transform: uppercase;">{{defaultAttribute}}</span></p>
 	{{/if}}
 
 	<!-- * PERK * -->
 	{{#if isPerk}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Rank"}}: </strong>{{rank.value}}/{{rank.max}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Requirements"}}: </strong>{{requirements}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Rank"}}: </strong>{{rank.value}}/{{rank.max}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Requirements"}}: </strong>{{requirements}}</p>
 	{{/if}}
 
 	<!-- * WEAPONS * -->
 	{{#if isWeapon}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}: </strong>{{localize (concat "FALLOUT.WEAPONS.weaponType." weaponType)}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE_TYPE"}}: </strong>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}:</strong>
+			{{fromConfig "WEAPON_TYPES" weaponType}}
+		</p>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE_TYPE"}}:</strong>
 			{{#each damage.damageType as |dmgType key|}}
 				{{#if (eq dmgType true)}}
-					{{localize (concat 'FALLOUT.WEAPONS.damageType.' key)}} <i class="fo-{{key}}"></i>
+					{{fromConfig "DAMAGE_TYPES" key}}
+					<i class="fo-{{key}}"></i>
 				{{/if}}
 			{{/each}}
 		</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE"}}: </strong>{{damage.rating}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.RANGE"}}: </strong>{{range}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}: </strong>{{fireRate}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.AMMO"}}: </strong>{{ammo}}</p>
-		<p><strong style="text-transform: uppercase;">{{localize "FALLOUT.TEMPLATES.Tear"}}: </strong>{{tear}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}: </strong>
-		{{#each damage.weaponQuality as |item key|}}
-			{{#if (eq item.value true)}} {{localize (concat 'FALLOUT.WEAPONS.weaponQuality.' key)}}, {{/if}}
-		{{/each}}
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE"}}:</strong>
+			{{damage.rating}}
 		</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}: </strong>
-			{{#each damage.damageEffect as |item key|}}
-				{{#if (eq item.value true)}}
-				{{localize (concat 'FALLOUT.WEAPONS.damageEffect.' key)}}
-					{{#if (ne item.rank undefined)}}
-						{{item.rank}}
-					{{/if}},
-				{{/if}}
-			{{/each}}
+		<p class="capitalize">
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.RANGE"}}:</strong>
+			{{range}}
+		</p>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}:</strong>
+			{{fireRate}}
+		</p>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.AMMO"}}:</strong>
+			{{ammo}}
+		</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Tear"}}: </strong>{{tear}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}: </strong>{{weaponQualities}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}:</strong>
+			{{{listDamageEffects damage.damageEffect}}}
 		</p>
 	{{/if}}
 	<!-- WEAPONS END -->
 
 	<!-- * APPAREL * -->
 	{{#if isApparel}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong><span style="text-transform: capitalize;">{{localize (concat "FALLOUT.APPAREL." appareltype)}}</span></p>
-		<p><strong>{{localize "FALLOUT.equipped"}}: </strong>{{equipped}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong><span>{{fromConfig "APPAREL_TYPES" appareltype}}</span></p>
+		<p><strong class="upperC">{{localize "FALLOUT.equipped"}}: </strong>{{equipped}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>
 		{{#each location as |location key|}}
 			{{#if location}}{{localize (concat "FALLOUT.BODYLOCATION.character." key)}}, {{/if}}
 		{{/each}}
 		</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
 		<ul>
 		{{#each resistance as |resistance key|}}
 			<li>{{resistance}} {{localize (concat "FALLOUT.RESISTANCE." key)}} <i class="fo-{{key}}"></i></li>
 		{{/each}}
 		</ul>
 		{{#if (eq appareltype "powerArmor")}}
-		<p><strong>{{localize "FALLOUT.HEALTH.health"}}: </strong>{{health.value}} / {{health.max}} </p>
-		<p><strong>{{localize "FALLOUT.powered"}}: </strong>{{powered}} </p>
+		<p><strong class="upperC">{{localize "FALLOUT.HEALTH.health"}}: </strong>{{health.value}} / {{health.max}} </p>
+		<p><strong class="upperC">{{localize "FALLOUT.powered"}}: </strong>{{powered}} </p>
 		{{/if}}
 	{{/if}}
 
 	<!-- * WEAPON MODS -->
 	{{#if isWeaponMod}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}: </strong>{{localize (concat "FALLOUT.WEAPONS.weaponType." weaponType)}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Mod_Type"}}: </strong>{{modType}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Name_Prefix"}}: </strong>{{namePrefix}}</p>
-		<p><strong>{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}:</strong>
+			{{fromConfig "WEAPON_TYPES" weaponType}}
+		</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Mod_Type"}}: </strong>{{modType}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Name_Prefix"}}: </strong>{{namePrefix}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
 	{{/if}}
 
 	<!-- * APPAREL MODS -->
 	{{#if isApparelMod}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." apparelType)}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}: </strong>{{fromConfig "APPAREL_TYPES" appareltype}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
 		<ul>
 			{{#each resistance as |resistance key|}}
 				<li>{{resistance}} {{localize (concat "FALLOUT.RESISTANCE." key)}} <i class="fo-{{key}}"></i></li>
 			{{/each}}
 		</ul>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>{{location}}</p>
-		<p><strong>{{localize "FALLOUT.HEALTH.health"}}: </strong>{{health.value}}</p>
-		<p><strong>{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>{{location}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.HEALTH.health"}}: </strong>{{health.value}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
 	{{/if}}
 
 	<!-- * CONSUMABLES -->
 	{{#if isConsumable}}
 		<p>
-			<strong>{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}:</strong>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}:</strong>
 			{{localize (toUpperCase (concat "FALLOUT." consumableType))}}
 		</p>
 		{{#ifCond consumableType '!==' 'other'}}
-			<p><strong>{{localize "FALLOUT.TEMPLATES.HP_Healed"}}: </strong>{{hp}}</p>
-			<p><strong>{{localize "FALLOUT.TEMPLATES.Radiation_Healed"}}: </strong>{{radiation}}</p>
+			<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.HP_Healed"}}: </strong>{{hp}}</p>
+			<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Radiation_Healed"}}: </strong>{{radiation}}</p>
 			{{#ifCond consumableType '===' 'chem'}}
 				<p>
-					<strong>{{localize "FALLOUT.TEMPLATES.Duration"}}:</strong>
+					<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Duration"}}:</strong>
 					{{duration}}
 				</p>
-				<p>
-					<strong>{{localize "FALLOUT.TEMPLATES.Addictive"}}:</strong>
+				<p class="capitalize">
+					<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Addictive"}}:</strong>
 					{{addictive}}
 				</p>
 				{{#if addictive}}
 					<p>
-						<strong>{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}:</strong>
+						<strong class="upperC">{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}:</strong>
 						{{addiction}}
 					</p>
 				{{/if}}
 			{{else}}
 				{{#ifCond consumableType '===' 'beverage'}}
-					<p><strong>{{localize "FALLOUT.TEMPLATES.Alcoholic"}}: </strong>{{alcoholic}}</p>
+					<p class="capitalize"><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Alcoholic"}}: </strong>{{alcoholic}}</p>
 				{{/ifCond}}
-				<p><strong>{{localize "FALLOUT.TEMPLATES.Irradiated"}}: </strong>{{irradiated}}</p>
+				<p class="capitalize"><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Irradiated"}}: </strong>{{irradiated}}</p>
 			{{/ifCond}}
 		{{/ifCond}}
 	{{/if}}
 
 	<!-- * BOOKS -->
 	{{#if isBook}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Issue"}}: </strong>{{issue}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Learned"}}: </strong>{{learned}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Issue"}}: </strong>{{issue}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Learned"}}: </strong>{{learned}}</p>
 	{{/if}}
 
 	<!-- * MISCELANY -->
 
 	<!-- * DISEASE -->
 	{{#if isDisease}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Duration"}}: </strong>{{duration}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Duration"}}: </strong>{{duration}}</p>
 	{{/if}}
 
 	<!-- * ROBOT ARMOR -->
 	{{#if isRobotArmor}}
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." appareltype)}}</p>
-		<p><strong>{{localize "FALLOUT.equipped"}}: </strong>{{equipped}}</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." appareltype)}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.equipped"}}: </strong>{{equipped}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>
 		{{#each location as |location key|}}
 			{{#if location}}{{localize (concat "FALLOUT.BODYLOCATION.robot." key)}}, {{/if}}
 		{{/each}}
 		</p>
-		<p><strong>{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
 		<ul>
 		{{#each resistance as |resistance key|}}
 			<li>{{resistance}} {{localize (concat "FALLOUT.RESISTANCE." key)}} <i class="fo-{{key}}"></i></li>
 		{{/each}}
 		</ul>
-		<p><strong>{{localize "FALLOUT.UI.CarryWeight"}}: </strong>{{carry}}</p>
-		<p><strong>{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.CarryWeight"}}: </strong>{{carry}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
 	{{/if}}
 
 	<!-- * ROBOT MODULE -->
 	{{#if isRobotMod}}
-	<p><strong>{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
+	<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
 	{{/if}}
 
 	<!-- * ABILITY -->
@@ -181,7 +190,7 @@
 	<!-- * MODS TEXT -->
 	{{#if mods}}
 		<p>
-			<strong style="text-transform: uppercase">
+			<strong class="upperC">
 				{{localize "FALLOUT.MODS.mods"}} {{mods.current}}/{{mods.max}}:
 			</strong>
 		</p>
@@ -192,7 +201,7 @@
 	{{#if effect}}
 		{{#ifCond effect '!==' ''}}
 			<p>
-				<strong>{{localize "FALLOUT.TEMPLATES.Effect"}}:</strong>
+				<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Effect"}}:</strong>
 			</p>
 			{{{effect}}}
 		{{/ifCond}}
@@ -202,10 +211,10 @@
 		{{#if showQuantity}}
 			<hr>
 			<div class="flex flex-between" style="font-size: 0.75rem;">
-				<p><strong>{{localize "FALLOUT.UI.Qty"}}:</strong> {{quantity}}</p>
-				<p><strong>{{localize "FALLOUT.UI.Weight"}}:</strong> {{weight}}</p>
-				<p><strong>{{localize "FALLOUT.UI.Cost"}}:</strong> {{cost}}</p>
-				<p><strong>{{localize "FALLOUT.UI.Rarity"}}:</strong> {{rarity}}</p>
+				<p><strong class="upperC">{{localize "FALLOUT.UI.Qty"}}:</strong> {{quantity}}</p>
+				<p><strong class="upperC">{{localize "FALLOUT.UI.Weight"}}:</strong> {{weight}}</p>
+				<p><strong class="upperC">{{localize "FALLOUT.UI.Cost"}}:</strong> {{cost}}</p>
+				<p><strong class="upperC">{{localize "FALLOUT.UI.Rarity"}}:</strong> {{rarity}}</p>
 			</div>
 		{{/if}}
 	{{/if}}

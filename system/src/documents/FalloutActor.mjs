@@ -558,7 +558,22 @@ export default class FalloutActor extends Actor {
 	async consumeItem(item) {
 		if (this.type !== "character") return false;
 
+		const consumableType = item.system.consumableType;
 		// await item.sendToChat(false);
+		fallout.chat.renderGeneralMessage(
+			this,
+			{
+				title: game.i18n.localize(
+					`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
+					{
+						actorName: this.name,
+						itemName: item.name,
+					}
+				),
+			}
+		);
 
 		const newQuantity = item.system.quantity - 1;
 
@@ -567,7 +582,6 @@ export default class FalloutActor extends Actor {
 		const actorUpdateData = {};
 
 		// TODO Handle healing/intoxication/irradiation/etc
-		const consumableType = item.system.consumableType;
 		if (consumableType !== "other") {
 			// Heal HP
 			const hpHeal = item.system.hp ?? 0;
@@ -663,7 +677,58 @@ export default class FalloutActor extends Actor {
 			}
 
 			if (consumableType === "chem" && item.system.addictive) {
+				const alreadyAddicted = await this.isAddictedToChem(item);
+				console.log(`alreadyAddicted: ${alreadyAddicted}`);
+
 				// TODO Check for addiction
+				const chemId = item.name.slugify();
+				const dosageKey = `system.chemDoses.${chemId}`;
+
+				let	newDosage = this.system.chemDoses[chemId]?.doses ?? 0;
+				newDosage++;
+
+				const addictionNumberExceeded =
+					newDosage >= item.system.addiction;
+
+				if (addictionNumberExceeded && !alreadyAddicted) {
+					let formula = `${newDosage}dccs>=5`;
+					let roll = new Roll(formula);
+
+					let addictedRoll = await roll.evaluate({ async: true });
+					try {
+						game.dice3d.showForRoll(addictedRoll);
+					}
+					catch(err) {}
+
+					if (parseInt(roll.result) >= item.system.addiction) {
+
+						const addictionName = item.system.consumableGroup !== ""
+							? item.system.consumableGroup
+							: item.name;
+
+						fallout.chat.renderGeneralMessage(
+							this,
+							{
+								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.addiction.title"),
+								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.addiction.body",
+									{
+										actorName: this.name,
+										itemName: addictionName,
+									}
+								),
+							},
+							CONST.DICE_ROLL_MODES.PRIVATE
+						);
+					}
+				}
+
+				actorUpdateData[dosageKey] = {
+					addiction: item.system.addiction,
+					doses: newDosage,
+					id: chemId,
+					name: item.name,
+				};
+
 			}
 		}
 
@@ -679,6 +744,20 @@ export default class FalloutActor extends Actor {
 		}
 
 		return allUsed;
+	}
+
+	async isAddictedToChem(item) {
+		const chemName = item.system.consumableGroup !== ""
+			? item.system.consumableGroup
+			: item.name;
+
+		const addiction = this.items.filter(
+			i => i.type === "addiction"
+		).find(
+			i => i.name === chemName
+		);
+
+		return addiction ? true : false;
 	}
 
 	// Reduce Ammo
@@ -728,5 +807,15 @@ export default class FalloutActor extends Actor {
 				"system.quantity": newQuantity,
 			}]);
 		}
+	}
+
+	async resetChemDoses() {
+		const updateData = {};
+
+		for (const chemId in this.system.chemDoses) {
+			updateData[`system.chemDoses.-=${chemId}`] = null;
+		}
+
+		this.update(updateData);
 	}
 }

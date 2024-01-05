@@ -543,3 +543,10 @@
     align-items: center;
     column-gap: 8px;
 }
+
+.chem-doses {
+	background-color: rgba(229, 232, 234, 0.1215686275);
+	color: rgb(238, 231, 135);
+    border: 2px groove var(--color-border-light-highlight);
+    margin: 0 5px 0 0;
+}

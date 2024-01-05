@@ -21,7 +21,7 @@
 				<div class="left-column">
 					{{!-- SPECIAL --}}
 					<div class="flexrow resource-row">
-						{{#each FALLOUT.attributes as |attribute key|}}
+						{{#each FALLOUT.ATTRIBUTES as |attribute key|}}
 							{{> specialAttribute
 								attribute=(lookup ../system.attributes key)
 								key=key

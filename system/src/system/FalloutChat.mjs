@@ -42,6 +42,11 @@ export class FalloutChat {
 	static async onRenderChatMessage(message, html, data) {
 		fallout.logger.debug("Running renderChatMessage hook");
 
+		html.find(".hover").each(function(i) {
+			const title = fallout.FalloutHovers.LIST[$(this).data("key")];
+			$(this).prop("title", title);
+		});
+
 		const rerollButton = html.find(".reroll-button");
 
 		if (rerollButton.length > 0) {

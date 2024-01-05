@@ -15,9 +15,13 @@
 - [#50] Display the system release notes the first time a world is loaded in a new version of the system
 - [#55] Show the amount of remaining shots for each favourite weapon on the status page
 - [#59] Added new Trait item and display them on the character sheet along with Perks
+- [#61] Changes to Dialog2d20 class to help with possible module integrations (thanks to AngryBeaver of Beaver's Crafting fame)
 - [#71] Add new Intoxication condition field to help track the amount of alcoholic beverages consumed during a session
 - [#75] Add Radiation Healed field to Consumable items, as they are all potentially able to heal Radiation damage
 - [#77] Seperate consumable addictive field into a boolean Addictive checkbox and a numeric Addiction Number for clarity
+- [#78] Add new Addiction item type, similar to Disease items, and displayed on the Status screen
+- [#86] Add group field to Consumable items to allow for different items sharing the same addiction name
+- [#87] Add flag to show whether food consumable items count as prepared or not
 
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
@@ -36,6 +40,8 @@
 - [#36] Remove usage of deprecated `ActiveEffect#label`
 - [#46] Implement schema migration tools ready for likely schema changes
 - [#64] Add ability to filter item compendiums by source ready for future work
+- [#79] Merged some corrected Polish translations (thanks to Sanawabicz)
+- [#89] Translate as much as possible of the config at startup
 
 ---
 

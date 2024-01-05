@@ -1,5 +1,5 @@
 <div class="attributes-list">
-	{{#each FALLOUT.attributes as |attribute key|}}
+	{{#each FALLOUT.ATTRIBUTES as |attribute key|}}
 		{{> specialAttribute
 			attributeName=(localize attribute)
 			attribute=(lookup ../system.attributes key)
