@@ -18,6 +18,9 @@ FALLOUT.actor.inventory.materials.label: Materials
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Add: Add
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
+FALLOUT.APP.ChemDoseManager.title: Chem Doses
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
 FALLOUT.APPAREL.headgear: Headgear
@@ -84,11 +87,21 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Arm 3
 FALLOUT.BodyTypes.robot.legR: Main Body
 FALLOUT.BodyTypes.robot.torso: Main Body
+FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
+FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
+FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
+FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
+FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
+FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
+FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Chem
+FALLOUT.ChemDuration.brief: Brief
+FALLOUT.ChemDuration.instant: Instant
+FALLOUT.ChemDuration.lasting: Lasting
 FALLOUT.CREATURE.body: Body
 FALLOUT.CREATURE.guns: Guns
 FALLOUT.CREATURE.melee: Melee
@@ -112,6 +125,11 @@ FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{versi
 FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
+FALLOUT.NPC_TYPES.legendary: Legendary
+FALLOUT.NPC_TYPES.major: Major
+FALLOUT.NPC_TYPES.mighty: Mighty
+FALLOUT.NPC_TYPES.normal: Normal
+FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Other
 FALLOUT.powered: Powered
 FALLOUT.RANGE.close: C
@@ -184,11 +202,14 @@ FALLOUT.TEMPLATES.conditions.thirst: thirst
 FALLOUT.TEMPLATES.conditions.thirsty: Thirsty
 FALLOUT.TEMPLATES.conditions.tired: Tired
 FALLOUT.TEMPLATES.conditions.weary: Weary
-FALLOUT.TEMPLATES.Consumable_Type: Consumable Type
+FALLOUT.TEMPLATES.Consumable_Group: Group
+FALLOUT.TEMPLATES.Consumable_Type: Type
+FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Create Ammo
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Create Apparel Mod
 FALLOUT.TEMPLATES.Create_books_and_magz: Create_books_and_magz
 FALLOUT.TEMPLATES.Create_Consumable: Create Consumable
+FALLOUT.TEMPLATES.Create_Disease: Create Disease
 FALLOUT.TEMPLATES.Create_Miscellany: Create_Miscellany
 FALLOUT.TEMPLATES.Create_Robot_Module: Create Robot Module
 FALLOUT.TEMPLATES.Create_Special_Ability: Create Special Ability
@@ -246,6 +267,7 @@ FALLOUT.TEMPLATES.PHYS: PHYS
 FALLOUT.TEMPLATES.Points: Points
 FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: POWER ARMOR HEALTH
+FALLOUT.TEMPLATES.Prepared: Prepared
 FALLOUT.TEMPLATES.Qualities: Qualities
 FALLOUT.TEMPLATES.RAD: RAD
 FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
@@ -279,14 +301,22 @@ FALLOUT.TEMPLATES.Use_Intelligence: Use Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Use Luck
 FALLOUT.TEMPLATES.Use_Perception: Use Perception
 FALLOUT.TEMPLATES.Use_Strength: Use Strength
+FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: WEAPON QUALITIES
 FALLOUT.TEMPLATES.Weapon_Type: Weapon Type
 FALLOUT.TEMPLATES.Weapons: Weapons
 FALLOUT.UI.Add: Add
+FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
+FALLOUT.UI.AreYouSure: Are You Sure?
 FALLOUT.UI.BOOKS_AND_MAGZS: Books and Magazines
+FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Caps
 FALLOUT.UI.CarryWeight: Carry Weight
+FALLOUT.UI.ChemDoses.ConfirmReset: Reset All Chem Doses
+FALLOUT.UI.ChemDoses.Delete: Delete Chem Doses
+FALLOUT.UI.ChemDoses.title: Chem Doses Taken
+FALLOUT.UI.ChemDoses.tooltip: View Chem Doses Taken
 FALLOUT.UI.CONSUMABLES: Consumables
 FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Cost
@@ -308,6 +338,7 @@ FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
+FALLOUT.UI.Yes: Yes
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst
@@ -355,6 +386,7 @@ TYPES.Actor.creature: Creature
 TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robot
 TYPES.Actor.settlement: Settlement
+TYPES.Item.addiction: Addiction
 TYPES.Item.ammo: Ammo
 TYPES.Item.apparel_mod: Apparel Mod
 TYPES.Item.apparel: Apparel
