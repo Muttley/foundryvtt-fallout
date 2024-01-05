@@ -454,6 +454,7 @@
 			"irradiated": false,
 			"prepared": false,
 			"radiation": 0,
+			"thirstReduction": 1,
 			"templates": [
 				"base",
 				"physical"

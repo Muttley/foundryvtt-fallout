@@ -96,6 +96,16 @@
 				{{else}}
 					{{#ifCond system.consumableType '===' 'beverage' }}
 						<div class="flexrow resource-row">
+							<label for="system.radiation" class="resource-label">
+								{{localize "FALLOUT.TEMPLATES.Thirst_Reduction"}}
+							</label>
+							<input
+								name="system.thirstReduction"
+								type="number"
+								value="{{system.thirstReduction}}"
+							>
+						</div>
+						<div class="flexrow resource-row">
 							<label for="system.alcoholic" class="resource-label">
 								{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
 							</label>

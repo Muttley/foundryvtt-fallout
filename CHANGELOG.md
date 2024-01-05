@@ -26,6 +26,8 @@
 
 	* The migration script for this change will attempt to determine which Duration to use, but this will only work for non-abbreviated English language names that match (in a non-case-sensitive way) the names of these durations somewhere in the string.  Any items whose duration can't be migrated will be given the template default of "instant".
 
+- [#91] Add Thirst Reduction value to Beverage consumables
+
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
 - [#51] Item quantity boxes polluting actor data when altered
