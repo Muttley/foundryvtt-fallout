@@ -112,6 +112,14 @@ FALLOUT.DAMAGE_TYPES = {
 	poison: "FALLOUT.WEAPONS.damageType.poison",
 };
 
+FALLOUT.HUNGER_BY_NUMBER = {
+	0: "FALLOUT.TEMPLATES.conditions.full",
+	1: "FALLOUT.TEMPLATES.conditions.sated",
+	2: "FALLOUT.TEMPLATES.conditions.peckish",
+	3: "FALLOUT.TEMPLATES.conditions.hungry",
+	4: "FALLOUT.TEMPLATES.conditions.starving",
+};
+
 FALLOUT.JOURNAL_UUIDS = {
 	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
 };
@@ -142,6 +150,20 @@ FALLOUT.RANGES = {
 FALLOUT.ROBOT_APPAREL_TYPE = {
 	plating: "FALLOUT.APPAREL.plating",
 	armor: "FALLOUT.APPAREL.armor",
+};
+
+FALLOUT.SLEEP_BY_NUMBER = {
+	0: "FALLOUT.TEMPLATES.conditions.rested",
+	1: "FALLOUT.TEMPLATES.conditions.tired",
+	2: "FALLOUT.TEMPLATES.conditions.weary",
+	3: "FALLOUT.TEMPLATES.conditions.exhausted",
+};
+
+FALLOUT.THIRST_BY_NUMBER = {
+	0: "FALLOUT.TEMPLATES.conditions.quenched",
+	1: "FALLOUT.TEMPLATES.conditions.hydrated",
+	2: "FALLOUT.TEMPLATES.conditions.thirsty",
+	3: "FALLOUT.TEMPLATES.conditions.dehydrated",
 };
 
 FALLOUT.WEAPON_QUALITIES = {

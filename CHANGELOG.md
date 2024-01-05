@@ -16,6 +16,10 @@
 - [#55] Show the amount of remaining shots for each favourite weapon on the status page
 - [#59] Added new Trait item and display them on the character sheet along with Perks
 - [#61] Changes to Dialog2d20 class to help with possible module integrations (thanks to AngryBeaver of Beaver's Crafting fame)
+- [#69] Add ability to consume Consumable items and adjust thirst, hunger, hp, rads, etc. accordingly.
+
+	* This handles HP/Radiation damage healing, Chem addiction rolls, and also adjusts Hunger and Thirst levels appropriately.  Any other effects still need to be handled manually at the moment.
+
 - [#71] Add new Intoxication condition field to help track the amount of alcoholic beverages consumed during a session
 - [#75] Add Radiation Healed field to Consumable items, as they are all potentially able to heal Radiation damage
 - [#77] Seperate consumable addictive field into a boolean Addictive checkbox and a numeric Addiction Number for clarity
@@ -27,6 +31,9 @@
 	* The migration script for this change will attempt to determine which Duration to use, but this will only work for non-abbreviated English language names that match (in a non-case-sensitive way) the names of these durations somewhere in the string.  Any items whose duration can't be migrated will be given the template default of "instant".
 
 - [#91] Add Thirst Reduction value to Beverage consumables
+- [#92] Create new interface for managing the amount of Chem doses a character has taken this session
+
+	* This can be accessed by clicking the "pill" button in the Addictions table list (character sheet Status tab).  If the character already owns an "Addiction" item with the same name as the Chem (or Chem Group for Chems which share the same addiction), then rolls for addiction are no longer made
 
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet

@@ -39,6 +39,13 @@ export class FalloutChat {
 		);
 	}
 
+	static async renderConsumptionMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/consumption.hbs",
+			mode
+		);
+	}
+
 	static async onRenderChatMessage(message, html, data) {
 		fallout.logger.debug("Running renderChatMessage hook");
 

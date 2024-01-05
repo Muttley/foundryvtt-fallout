@@ -559,21 +559,6 @@ export default class FalloutActor extends Actor {
 		if (this.type !== "character") return false;
 
 		const consumableType = item.system.consumableType;
-		// await item.sendToChat(false);
-		fallout.chat.renderGeneralMessage(
-			this,
-			{
-				title: game.i18n.localize(
-					`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
-				),
-				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
-					{
-						actorName: this.name,
-						itemName: item.name,
-					}
-				),
-			}
-		);
 
 		const newQuantity = item.system.quantity - 1;
 
@@ -581,7 +566,6 @@ export default class FalloutActor extends Actor {
 
 		const actorUpdateData = {};
 
-		// TODO Handle healing/intoxication/irradiation/etc
 		if (consumableType !== "other") {
 			// Heal HP
 			const hpHeal = item.system.hp ?? 0;
@@ -732,7 +716,41 @@ export default class FalloutActor extends Actor {
 			}
 		}
 
+		if (consumableType === "beverage") {
+			const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
+			const thirstReduction = item.system.thirstReduction ?? 1;
+
+			actorUpdateData["system.conditions.thirst"] =
+				 Math.max(currentThirst - thirstReduction, 0);
+		}
+
+		if (consumableType === "food") {
+			const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
+			const hungerReduction = item.system.prepared ? 2 : 1;
+
+			actorUpdateData["system.conditions.hunger"] =
+				 Math.max(currentHunger - hungerReduction, 0);
+		}
+
 		await this.update(actorUpdateData);
+
+		fallout.chat.renderConsumptionMessage(
+			this,
+			{
+				title: game.i18n.localize(
+					`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
+					{
+						actorName: this.name,
+						itemName: item.name,
+					}
+				),
+				consumableType,
+				hunger: this.system.conditions.hunger,
+				thirst: this.system.conditions.thirst,
+			}
+		);
 
 		if (allUsed) {
 			await item.delete();
