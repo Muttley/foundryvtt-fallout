@@ -80,21 +80,6 @@
                     {{> actor/parts/npc-body FALLOUT=FALLOUT }}
                     {{!-- END BODY STATUS --}}
 
-                    <!-- <div class="box no-padding bgOdd">
-                        <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.RESISTANCES"}}</h4>
-                        {{#each system.resistance as |res key|}}
-                        <div class="flexrow resource-row">
-                            <span class="align-mid" style="display: flex;">
-                                <label for="system.resistance.{{key}}.locations" style="margin-right: 5px; width: 20px;" class=""><i class="fo-{{key}} resistance-icon" title="physical"></i></label>
-                                <input type="text" class="flex3" name="system.resistance.{{key}}.locations" value="{{res.locations}}" placeholder="Body Locations">
-                            </span>
-                        </div>
-                        {{/each}}
-                    </div>
-                    <div class="box no-padding bgEven">
-                        <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.LOCATIONS_INJURIES"}}</h4>
-                        <textarea class="color-prim" name="system.injuries" rows="8" style="resize: none;" placeholder="You can use this to write locations, their values or critical inuries suffered.(ex. Wing | 2-4 | Injuries: 3 Opened, 2 Treated)">{{system.injuries}}</textarea>
-                    </div> -->
                 </div>
                 {{!-- RIGHT COLUMN __________________________________________________ --}}
                 <div>
@@ -124,6 +109,23 @@
                           	  {{> actor/parts/simple-expandable-item item=item }}
                             {{/each}}
                         </ol>
+						<div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">
+							<div class="flexrow align-mid">
+								<div style="text-align: right;">
+									<label>
+										{{localize "FALLOUT.TEMPLATES.Total"}}:
+										{{system.carryWeight.total}} /
+										<input
+											type="number"
+											name="system.carryWeight.base"
+											class="num-short-2"
+											value="{{system.carryWeight.base}}"
+										>
+										{{localize "FALLOUT.TEMPLATES.lbs"}}
+									</label>
+								</div>
+							</div>
+						</div>
                     </div>
                 </div>
             </section>
@@ -136,11 +138,6 @@
             {{editor biographyHTML target="system.biography" rollData=rollData button=true owner=owner
             editable=editable}}
         </div>
-
-        {{!-- Active Effects Tab --}}
-        <!-- <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-            {{> actor/parts/actor-effects}}
-        </div> -->
 
     </section>
 </form>

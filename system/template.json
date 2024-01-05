@@ -12,6 +12,7 @@
 			"templates": [
 				"base",
 				"derived",
+				"encumbrance",
 				"body",
 				"stats",
 				"valuables"
@@ -89,6 +90,7 @@
 			},
 			"templates": [
 				"base",
+				"encumbrance",
 				"valuables",
 				"body"
 			]
@@ -97,6 +99,7 @@
 			"templates": [
 				"base",
 				"derived",
+				"encumbrance",
 				"stats",
 				"valuables",
 				"body"
@@ -106,6 +109,7 @@
 			"templates": [
 				"base",
 				"derived",
+				"encumbrance",
 				"body",
 				"stats",
 				"valuables"
@@ -257,13 +261,6 @@
 				"bodyType": "humanoid"
 			},
 			"derived": {
-				"carryWeight": {
-					"base": 0,
-					"encumbranceLevel": 0,
-					"mod": 0,
-					"total": 0,
-					"value": 0
-				},
 				"conditions": {
 					"alcoholic": false,
 					"fatigue": 0,
@@ -295,6 +292,15 @@
 					"physical": 0,
 					"poison": 0,
 					"radiation": 0
+				}
+			},
+			"encumbrance": {
+				"carryWeight": {
+					"base": 0,
+					"encumbranceLevel": 0,
+					"mod": 0,
+					"total": 0,
+					"value": 0
 				}
 			},
 			"stats": {

@@ -24,6 +24,10 @@
 - [#75] Add Radiation Healed field to Consumable items, as they are all potentially able to heal Radiation damage
 - [#77] Seperate consumable addictive field into a boolean Addictive checkbox and a numeric Addiction Number for clarity
 - [#78] Add new Addiction item type, similar to Disease items, and displayed on the Status screen
+- [#81] Non-Character weight calculations
+
+	* NPCs and Creatures both now have their inventory weights calculated, and you are now able to set a carry capacity on Creatures
+
 - [#86] Add group field to Consumable items to allow for different items sharing the same addiction name
 - [#87] Add flag to show whether food consumable items count as prepared or not
 - [#88] Switch Chem consumable's Duration field to a drop-down
