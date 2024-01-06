@@ -221,9 +221,10 @@ export default class FalloutActorSheet extends ActorSheet {
 					robotApparel.push(i);
 					break;
 				case "skill":
-					i.localizedName = game.i18n.localize(
-						`FALLOUT.SKILL.${i.name}`
-					);
+					const nameKey = `FALLOUT.SKILL.${i.name}`;
+					i.localizedName = game.i18n.localize(nameKey);
+
+					if (i.localizedName === nameKey) i.localizedName = i.name;
 
 					i.localizedDefaultAttribute = game.i18n.localize(
 						`FALLOUT.AbilityAbbr.${i.system.defaultAttribute}`

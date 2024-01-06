@@ -49,6 +49,7 @@
 - [#70] Consumable chat card shows irrelevant details
 - [#72] Consumable `system.addictive` field should be a numeric
 - [#74] Chems are able to heal HP as well, so the field should be available on the item sheet for them
+- [#93] Custom skill names not displayed correctly due to i18n translation missing
 
 ## Chores
 - [#33] Merged Polish language updates from Crowdin
