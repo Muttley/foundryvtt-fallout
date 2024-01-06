@@ -18,6 +18,9 @@ FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
 FALLOUT.Add: Dodaj
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
+FALLOUT.APP.ChemDoseManager.title: Chem Doses
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie glowy
@@ -84,11 +87,23 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Ramie 3
 FALLOUT.BodyTypes.robot.legR: Silnik
 FALLOUT.BodyTypes.robot.torso: Korpus
+FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
+FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Uzależnienie od alkoholu
+FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
+FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
+FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
+FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
+FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
+FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Thirst Level
+FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHEM: Chemikalia
+FALLOUT.ChemDuration.brief: Brief
+FALLOUT.ChemDuration.instant: Instant
+FALLOUT.ChemDuration.lasting: Lasting
 FALLOUT.CREATURE.body: Ciało
 FALLOUT.CREATURE.guns: Broń Palna
 FALLOUT.CREATURE.melee: Broń Biała
@@ -112,6 +127,11 @@ FALLOUT.MIGRATION.begin_schema: Wdrażanie aktualizacji dla schematu Fallout 2d2
 FALLOUT.MIGRATION.completed_migration: Zakończono aktualizacje danych dla Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Zakończono wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
 FALLOUT.MODS.mods: Modyfikacje
+FALLOUT.NPC_TYPES.legendary: Legendary
+FALLOUT.NPC_TYPES.major: Major
+FALLOUT.NPC_TYPES.mighty: Mighty
+FALLOUT.NPC_TYPES.normal: Normal
+FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Inne
 FALLOUT.powered: Wspomagane
 FALLOUT.RANGE.close: B
@@ -184,11 +204,14 @@ FALLOUT.TEMPLATES.conditions.thirst: Pragnienie
 FALLOUT.TEMPLATES.conditions.thirsty: Spragniony
 FALLOUT.TEMPLATES.conditions.tired: Znurzony
 FALLOUT.TEMPLATES.conditions.weary: Zmęczony
-FALLOUT.TEMPLATES.Consumable_Type: Typy przedmiotów jednorazowych
+FALLOUT.TEMPLATES.Consumable_Group: Group
+FALLOUT.TEMPLATES.Consumable_Type: Type
+FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Stwórz Amunicje
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Stwórz Modyfikacje Odzież
 FALLOUT.TEMPLATES.Create_books_and_magz: Stwórz książki i komiksy
 FALLOUT.TEMPLATES.Create_Consumable: Stwórz Przedmioty Jednorazowe
+FALLOUT.TEMPLATES.Create_Disease: Create Disease
 FALLOUT.TEMPLATES.Create_Miscellany: Stwórz Różności
 FALLOUT.TEMPLATES.Create_Robot_Module: Stwórz Modyfikcaje Robota
 FALLOUT.TEMPLATES.Create_Special_Ability: Stwórz Zdolność Specjalną
@@ -246,6 +269,7 @@ FALLOUT.TEMPLATES.PHYS: Fizyczne
 FALLOUT.TEMPLATES.Points: Punkty
 FALLOUT.TEMPLATES.POISON: Trucizna
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
+FALLOUT.TEMPLATES.Prepared: Prepared
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: Radiacyjne
 FALLOUT.TEMPLATES.Radiation_Healed: Napromieniowanie uzdrowione
@@ -268,6 +292,7 @@ FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Successes: Skukces
 FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
+FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.Total: Całkowite
 FALLOUT.TEMPLATES.TRAIT: ATUT
@@ -279,14 +304,22 @@ FALLOUT.TEMPLATES.Use_Intelligence: Użyj Inteligencji
 FALLOUT.TEMPLATES.Use_Luck: Użyj Szczęścia
 FALLOUT.TEMPLATES.Use_Perception: Użyj Percepcji
 FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
+FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.UI.Add: Dodaj
+FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
+FALLOUT.UI.AreYouSure: Are You Sure?
 FALLOUT.UI.BOOKS_AND_MAGZS: książki i magazyny
+FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Kapsle
 FALLOUT.UI.CarryWeight: Noszony ciężar
+FALLOUT.UI.ChemDoses.ConfirmReset: Reset All Chem Doses
+FALLOUT.UI.ChemDoses.Delete: Delete Chem Doses
+FALLOUT.UI.ChemDoses.title: Chem Doses Taken
+FALLOUT.UI.ChemDoses.tooltip: View Chem Doses Taken
 FALLOUT.UI.CONSUMABLES: Zużywalne
 FALLOUT.UI.Consume: Użyj
 FALLOUT.UI.Cost: Cena
@@ -308,6 +341,7 @@ FALLOUT.UI.Type: Typ
 FALLOUT.UI.UNSORTED: Nieposortowane
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
+FALLOUT.UI.Yes: Yes
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
@@ -355,6 +389,7 @@ TYPES.Actor.creature: Stworzenie
 TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
 TYPES.Actor.settlement: Osada
+TYPES.Item.addiction: Addiction
 TYPES.Item.ammo: Amunicja
 TYPES.Item.apparel_mod: Modyfikacja Odzieży
 TYPES.Item.apparel: Odzież
