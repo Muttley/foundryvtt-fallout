@@ -95,9 +95,9 @@ FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
+FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
 FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Thirst Level
-FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHEM: Chemikalia
@@ -144,6 +144,20 @@ FALLOUT.RESISTANCE.poison: Trucizna
 FALLOUT.RESISTANCE.radiation: Radjacja
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
+FALLOUT.SETTLEMENT_ITEM.CraftingTables: Crafting Tables
+FALLOUT.SETTLEMENT_ITEM.Defense: Defense
+FALLOUT.SETTLEMENT_ITEM.Power: Power
+FALLOUT.SETTLEMENT_ITEM.Room: Room
+FALLOUT.SETTLEMENT_ITEM.Stores: Stores
+FALLOUT.SETTLEMENT_ITEM.Structure: Structure
+FALLOUT.SETTLEMENT.Beds.label: Beds
+FALLOUT.SETTLEMENT.Defense.label: Defense
+FALLOUT.SETTLEMENT.Food.label: Food
+FALLOUT.SETTLEMENT.Happiness.label: Happiness
+FALLOUT.SETTLEMENT.Income.label: Income
+FALLOUT.SETTLEMENT.People.label: People
+FALLOUT.SETTLEMENT.Power.label: Power
+FALLOUT.SETTLEMENT.Water.label: Water
 FALLOUT.SKILL.Athletics: Atletyka
 FALLOUT.SKILL.Barter: Handel
 FALLOUT.SKILL.Big Guns: Broń ciężka
@@ -204,6 +218,7 @@ FALLOUT.TEMPLATES.conditions.thirst: Pragnienie
 FALLOUT.TEMPLATES.conditions.thirsty: Spragniony
 FALLOUT.TEMPLATES.conditions.tired: Znurzony
 FALLOUT.TEMPLATES.conditions.weary: Zmęczony
+FALLOUT.TEMPLATES.ConstructionTime: Construction Time
 FALLOUT.TEMPLATES.Consumable_Group: Group
 FALLOUT.TEMPLATES.Consumable_Type: Type
 FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
@@ -253,6 +268,7 @@ FALLOUT.TEMPLATES.Learned: Nauczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.Luck: Szczęście
+FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: Maksymalne Punkty Ackcji Drużyny
 FALLOUT.TEMPLATES.max: maks
 FALLOUT.TEMPLATES.MAX: MAKS
@@ -285,6 +301,7 @@ FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Roll_Formula: Formuła Rzutu
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
+FALLOUT.TEMPLATES.Skill: Skill
 FALLOUT.TEMPLATES.SKILL: Umiejętność
 FALLOUT.TEMPLATES.SKILLS: Umiejętności
 FALLOUT.TEMPLATES.Source: Źródło   
@@ -297,6 +314,7 @@ FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.Total: Całkowite
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę(Kliknij Prawym)
+FALLOUT.TEMPLATES.Type: Type
 FALLOUT.TEMPLATES.Use_Agility: Użyj Zwinność
 FALLOUT.TEMPLATES.Use_Charisma: Użyj Charyzmy
 FALLOUT.TEMPLATES.Use_Endurance: Użyj Wytrwałości
@@ -397,6 +415,7 @@ TYPES.Item.books_and_magz: Książki/magazyny
 TYPES.Item.consumable: Zużywalne
 TYPES.Item.disease: Choroby
 TYPES.Item.miscellany: Różności
+TYPES.Item.object_or_structure: Object/Structure
 TYPES.Item.perk: Profit
 TYPES.Item.robot_armor: Pancerz Robota
 TYPES.Item.robot_mod: Modyfikacje Robota
