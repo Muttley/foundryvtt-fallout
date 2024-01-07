@@ -116,6 +116,9 @@
 			]
 		},
 		"settlement": {
+			"templates": [
+				"valuables"
+			],
 			"beds": {
 				"value": 0
 			},
@@ -352,6 +355,7 @@
 			"consumable",
 			"disease",
 			"miscellany",
+			"object_or_structure",
 			"perk",
 			"robot_armor",
 			"robot_mod",
@@ -478,6 +482,22 @@
 				"base",
 				"physical"
 			]
+		},
+		"object_or_structure": {
+			"templates": [
+				"base"
+			],
+			"constructionTime": 0,
+			"effect": "",
+			"materials": {
+				"common": 0,
+				"rare": 0,
+				"uncommon": 0
+			},
+			"perks": "",
+			"rarity": "common",
+			"skills": "",
+			"type": "crafting_tables"
 		},
 		"perk": {
 			"rank": {

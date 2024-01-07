@@ -46,6 +46,7 @@ export default class FalloutItem extends Item {
 		itemData.isPhysical = this.system.hasOwnProperty("weight");
 		itemData.isRobotArmor = this.type === "robot_armor";
 		itemData.isRobotMod = this.type === "robot_mod";
+		itemData.isSettlementItem = this.type === "object_or_structure";
 		itemData.isSkill = this.type === "skill";
 		itemData.isWeapon = this.type === "weapon";
 		itemData.isWeaponMod = this.type === "weapon_mod";
@@ -56,6 +57,18 @@ export default class FalloutItem extends Item {
 
 		if (itemData.isWeapon) {
 			itemData.weaponQualities = this.weaponQualitiesString();
+		}
+
+		if (itemData.isSettlementItem) {
+			itemData.itemType = this.system.type;
+
+			itemData.materials = [];
+			for (const material of ["common", "uncommon", "rare"]) {
+				itemData.materials.push({
+					label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+					value: this.system.materials[material] ?? 0,
+				});
+			}
 		}
 
 		const html = await renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);

@@ -29,6 +29,11 @@ export default async function() {
 		"systems/fallout/templates/actor/parts/body-status-plaque.hbs",
 		"systems/fallout/templates/actor/parts/npc-body.hbs",
 		"systems/fallout/templates/actor/parts/simple-expandable-item.hbs",
+		"systems/fallout/templates/actor/settlement/header.hbs",
+		"systems/fallout/templates/actor/settlement/materials.hbs",
+		"systems/fallout/templates/actor/settlement/partials/attribute.hbs",
+		"systems/fallout/templates/actor/settlement/tabs/data.hbs",
+		"systems/fallout/templates/actor/settlement/tabs/status.hbs",
 		"systems/fallout/templates/item/parts/item-effects.hbs",
 		"systems/fallout/templates/item/parts/item-header.hbs",
 	];

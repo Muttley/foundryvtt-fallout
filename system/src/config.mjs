@@ -92,6 +92,12 @@ FALLOUT.CREATURE_SKILLS = {
 	other: "FALLOUT.CREATURE.other",
 };
 
+FALLOUT.CREATURE_TYPES = {
+	normal: "FALLOUT.NPC_TYPES.normal",
+	mighty: "FALLOUT.NPC_TYPES.mighty",
+	legendary: "FALLOUT.NPC_TYPES.legendary",
+};
+
 FALLOUT.DAMAGE_EFFECTS = {
 	arc: "FALLOUT.WEAPONS.damageEffect.arc",
 	breaking: "FALLOUT.WEAPONS.damageEffect.breaking",
@@ -126,8 +132,6 @@ FALLOUT.JOURNAL_UUIDS = {
 
 FALLOUT.NPC_TYPES = {
 	normal: "FALLOUT.NPC_TYPES.normal",
-	mighty: "FALLOUT.NPC_TYPES.mighty",
-	legendary: "FALLOUT.NPC_TYPES.legendary",
 	notable: "FALLOUT.NPC_TYPES.notable",
 	major: "FALLOUT.NPC_TYPES.major",
 };
@@ -147,9 +151,24 @@ FALLOUT.RANGES = {
 	extreme: "FALLOUT.RANGE.extreme",
 };
 
+FALLOUT.RARITIES = {
+	common: "FALLOUT.actor.inventory.materials.common",
+	uncommon: "FALLOUT.actor.inventory.materials.uncommon",
+	rare: "FALLOUT.actor.inventory.materials.rare",
+};
+
 FALLOUT.ROBOT_APPAREL_TYPE = {
 	plating: "FALLOUT.APPAREL.plating",
 	armor: "FALLOUT.APPAREL.armor",
+};
+
+FALLOUT.SETTLEMENT_ITEMS = {
+	crafting_tables: "FALLOUT.SETTLEMENT_ITEM.CraftingTables",
+	defense: "FALLOUT.SETTLEMENT_ITEM.Defense",
+	power: "FALLOUT.SETTLEMENT_ITEM.Power",
+	room: "FALLOUT.SETTLEMENT_ITEM.Room",
+	stores: "FALLOUT.SETTLEMENT_ITEM.Stores",
+	structure: "FALLOUT.SETTLEMENT_ITEM.Structure",
 };
 
 FALLOUT.SLEEP_BY_NUMBER = {

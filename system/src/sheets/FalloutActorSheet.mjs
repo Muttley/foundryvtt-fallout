@@ -21,7 +21,6 @@ export default class FalloutActorSheet extends ActorSheet {
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			template: "systems/fallout/templates/actor/actor-sheet.hbs",
 			width: 780,
 			height: 940,
 			tabs: [
@@ -184,6 +183,8 @@ export default class FalloutActorSheet extends ActorSheet {
 			weapon: [],
 		};
 
+		const inventory = [];
+
 		const apparel = [];
 		const robotApparel = [];
 
@@ -246,9 +247,11 @@ export default class FalloutActorSheet extends ActorSheet {
 					break;
 				default:
 					if (!Array.isArray(context.itemsByType[i.type])) {
-						context.itemsByType[i.type] = [];
+						inventory.push(i);
 					}
-					context.itemsByType[i.type].push(i);
+					else {
+						context.itemsByType[i.type].push(i);
+					}
 			}
 		}
 
@@ -288,10 +291,14 @@ export default class FalloutActorSheet extends ActorSheet {
 			});
 		}
 		if (this.actor.type === "character") {
-			context.inventory = [...robotApparel, ...context.itemsByType.robot_mod];
+			context.inventory = [
+				...robotApparel,
+				...context.itemsByType.robot_mod,
+				...inventory,
+			];
 		}
 		if (this.actor.type === "robot") {
-			context.inventory = [...apparel];
+			context.inventory = [...apparel, ...inventory];
 		}
 
 		// ADD FAVOURITE ITEMS

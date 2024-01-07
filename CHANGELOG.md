@@ -39,6 +39,8 @@
 
 	* This can be accessed by clicking the "pill" button in the Addictions table list (character sheet Status tab).  If the character already owns an "Addiction" item with the same name as the Chem (or Chem Group for Chems which share the same addiction), then rolls for addiction are no longer made
 
+- [#94] Add new item type for settlement Objects and Structures
+
 ## Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
 - [#51] Item quantity boxes polluting actor data when altered

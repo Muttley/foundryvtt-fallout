@@ -101,6 +101,11 @@ input.chk-btn:checked + label {
 	.label {
 		font-family: $font-lobster;
 		font-size: 24px;
+
+		&.center {
+			display: block;
+			text-align: center;
+		}
 	}
 
 	&.character-header,
@@ -108,10 +113,31 @@ input.chk-btn:checked + label {
 		@include element-color($c-char-header, 3);
 	}
 	&.npc-header,
-	&.creature-header {
+	&.creature-header,
+	&.settlement-header {
 		@include element-color($c-npc-header, 3);
 	}
 
+	&.settlement {
+		&-beds {
+			background-image: url(../assets/ui/plate-header-beds.svg);
+		}
+		&-defense {
+			background-image: url(../assets/ui/plate-header-defense.svg);
+		}
+		&-food {
+			background-image: url(../assets/ui/plate-header-food.svg);
+		}
+		&-people {
+			background-image: url(../assets/ui/plate-header-people.svg);
+		}
+		&-power {
+			background-image: url(../assets/ui/plate-header-power.svg);
+		}
+		&-water {
+			background-image: url(../assets/ui/plate-header-water.svg);
+		}
+	}
 	&.plate-1-g {
 		background-image: url(../assets/ui/plate-header-1-g.svg);
 	}

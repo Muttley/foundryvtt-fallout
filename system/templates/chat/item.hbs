@@ -185,7 +185,23 @@
 	<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
 	{{/if}}
 
-	<!-- * ABILITY -->
+	{{#if isSettlementItem}}
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Type"}}: </strong>{{fromConfig "SETTLEMENT_ITEMS" itemType}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.Rarity"}}: </strong>{{fromConfig "RARITIES" rarity}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Skill"}}: </strong>{{skills}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.ConstructionTime"}}: </strong>{{constructionTime}} day/s</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.MaterialsRequired"}}:</strong></p>
+		<ul>
+			{{#each materials}}
+				{{#ifCond this.value ">" 0}}
+					<li>
+						<span>{{this.value}} {{this.label}}</span>
+					</li>
+				{{/ifCond}}
+			{{/each}}
+		</ul>
+	{{/if}}
 
 	<!-- * MODS TEXT -->
 	{{#if mods}}

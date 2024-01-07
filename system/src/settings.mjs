@@ -89,8 +89,8 @@ export function registerSettings() {
 	});
 
 	game.settings.register("fallout", "carryBase", {
-		name: "Starting Carry Base for Characters",
-		hint: "Starting Carry Weight unmodified by STR",
+		name: "Base Carry Weight (Characters)",
+		hint: "The base carry weight for characters before any STR modifiers are applied",
 		scope: "world",
 		config: true,
 		default: 150,
@@ -99,11 +99,21 @@ export function registerSettings() {
 	});
 
 	game.settings.register("fallout", "carryBaseRobot", {
-		name: "Starting Carry Base for Robots",
-		hint: "Starting Carry Weight unmodified by STR",
+		name: "Base Carry Weight (Robots)",
+		hint: "The base carry weight for robots before any STR modifiers are applied",
 		scope: "world",
 		config: true,
 		default: 150,
+		type: Number,
+		onChange: debounceReload,
+	});
+
+	game.settings.register("fallout", "baseSettlementStorage", {
+		name: "Base Storage for Settlements",
+		hint: "The base storage available at settlements before any modifiers from structures are applied",
+		scope: "world",
+		config: true,
+		default: 300,
 		type: Number,
 		onChange: debounceReload,
 	});

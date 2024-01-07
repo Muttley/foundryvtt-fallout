@@ -120,6 +120,18 @@ export default class FalloutItemSheet extends ItemSheet {
 			}
 		}
 
+		if (item.type === "object_or_structure") {
+			// Setup materials
+			context.materials = [];
+			for (const material of ["common", "uncommon", "rare"]) {
+				context.materials.push({
+					label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+					key: `system.materials.${material}`,
+					value: source.system.materials[material] ?? 0,
+				});
+			}
+		}
+
 		return context;
 	}
 

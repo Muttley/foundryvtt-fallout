@@ -1,0 +1,67 @@
+<header class="sheet-header resource-plate-header settlement-header">
+    <img
+		class="profile-img"
+		data-edit="img"
+		height="100"
+		src="{{actor.img}}"
+		title="{{actor.name}}"
+		width="100"
+	/>
+    <div class="flexrow">
+        <div class="flexcol">
+            <h1 class="charname">
+				<input
+					class="underline font-lobster"
+					name="name"
+					style="text-overflow: ellipsis;"
+					type="text"
+					value="{{actor.name}}"
+                    placeholder="Name"
+				/>
+			</h1>
+        </div>
+
+        <div class="resources grid right-side">
+            <div class="flexcol resource-plate-header plate-2">
+                <div class="resource flexrow align-mid">
+                    <label
+						class="label"
+						for="system.happiness.value"
+						style="font-size: 1.2rem;"
+					>
+						{{localize "FALLOUT.SETTLEMENT.Happiness.label"}}
+					</label>
+                    <input
+						data-dtype="Number"
+						min="0"
+                        name="system.happiness.value"
+						style="font-size: 18px; max-width: 2.2rem; text-align: center; margin-right: 10px;"
+						type="number"
+						value="{{system.happiness.value}}"
+					/>
+                </div>
+            </div>
+
+            <div class="flexcol resource-plate-header plate-3-g">
+                <div class="resource flexrow align-mid">
+                    <label
+						class="label"
+						for="system.income.value"
+						style="font-size: 1.2rem;"
+					>
+						{{localize "FALLOUT.SETTLEMENT.Income.label"}}
+					</label>
+                    <input
+						data-dtype="Number"
+                        min="0"
+						name="system.income.value"
+						style="font-size: 18px; max-width: 3rem; text-align: center; margin-right: 10px;"
+						type="number"
+						value="{{system.income.value}}"
+					>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
