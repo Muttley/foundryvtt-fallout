@@ -147,9 +147,9 @@ FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
 FALLOUT.SETTLEMENT_ITEM.Defense: Obrona
 FALLOUT.SETTLEMENT_ITEM.Power: Moc
-FALLOUT.SETTLEMENT_ITEM.Resource: Resource
+FALLOUT.SETTLEMENT_ITEM.Resource: Zasób
 FALLOUT.SETTLEMENT_ITEM.Room: Pokój
-FALLOUT.SETTLEMENT_ITEM.Store: Store
+FALLOUT.SETTLEMENT_ITEM.Store: Sklep
 FALLOUT.SETTLEMENT_ITEM.Structure: Struktura
 FALLOUT.SETTLEMENT.Beds.label: Łóżka
 FALLOUT.SETTLEMENT.Defense.label: Obrona
@@ -311,7 +311,7 @@ FALLOUT.TEMPLATES.SKILLS: Umiejętności
 FALLOUT.TEMPLATES.Source: Źródło   
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Stockpile
-FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
+FALLOUT.TEMPLATES.StructuresAndRooms: Struktury i pomieszczenia
 FALLOUT.TEMPLATES.Successes: Skukces
 FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
