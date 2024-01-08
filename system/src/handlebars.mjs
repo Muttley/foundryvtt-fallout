@@ -30,8 +30,12 @@ export const registerHandlebarsHelpers = function() {
 			effectsElements.push(effectHtml);
 		}
 
-		let listString = effectsElements.join(",&nbsp;");
-		listString += ".";
+		let listString = "";
+
+		if (effectsElements.length > 0) {
+			listString = effectsElements.join(",&nbsp;");
+			listString += ".";
+		}
 
 		return listString;
 	});
@@ -53,8 +57,12 @@ export const registerHandlebarsHelpers = function() {
 			qualityElements.push(effectHtml);
 		}
 
-		let listString = qualityElements.join(",&nbsp;");
-		listString += ".";
+		let listString = "";
+
+		if (qualityElements.length > 0) {
+			listString = qualityElements.join(",&nbsp;");
+			listString += ".";
+		}
 
 		return listString;
 	});
@@ -140,6 +148,10 @@ export const registerHandlebarsHelpers = function() {
 		return CONFIG.FALLOUT[arg1][arg2] ? CONFIG.FALLOUT[arg1][arg2] : arg2;
 	});
 
+	// Handlebars.registerHelper("incrementCounter", function(counter) {
+	// 	return ++counter;
+	// });
+
 	Handlebars.registerHelper("isCreaturesWeapon", function(weapon) {
 		const isCreatureAttack = weapon.system.weaponType === "creatureAttack";
 		const isCreature = weapon.actor?.type === "creature";
@@ -193,24 +205,10 @@ export const registerHandlebarsHelpers = function() {
 			: `color:#${color2};`;
 	});
 
-	Handlebars.registerHelper("getWpnQListAsString", function(weapon) {
-		if (weapon.type !== "weapon") return "";
-
+	Handlebars.registerHelper("levelPadding", function(level) {
 		let str = "";
-		let title = "<strong>Weapon Qualities</strong>:";
-		let content = "";
-		for (let wq in weapon.system.damage.weaponQuality) {
-			if (weapon.system.damage.weaponQuality[wq].value) {
-				let qualitydescription = fallout.FalloutHovers.LIST[wq].toLowerCase();
-				content += `&nbsp;<span title="${qualitydescription}">${weapon.system.damage.weaponQuality[wq].label}</span>,`;
-			}
-		}
-		if (content) {
-			str = title + content;
-			str = str.slice(0, -1);
-		}
-		else {
-			str = `${title} none`;
+		for (let i = 0; i < level; i++) {
+			str += "&nbsp;&nbsp;&nbsp;&nbsp;";
 		}
 		return str;
 	});

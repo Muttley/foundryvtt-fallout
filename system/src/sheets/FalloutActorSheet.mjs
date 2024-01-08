@@ -117,7 +117,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		context.itemsEnrichedDescriptions = itemsEnrichedDescriptions;
 
 		// Prepare active effects
-		context.effects = prepareActiveEffectCategories(this.actor.effects);
+		// context.effects = prepareActiveEffectCategories(this.actor.effects);
 		context.FALLOUT = CONFIG.FALLOUT;
 
 		// Update the Chem Doses Manager, but don't render it unless it's
@@ -189,7 +189,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		const robotApparel = [];
 
 		// Iterate through items, allocating to containers
-		for (let i of context.items) {
+		for (const i of context.items) {
 			i.img = i.img || DEFAULT_TOKEN;
 
 			switch (i.type) {

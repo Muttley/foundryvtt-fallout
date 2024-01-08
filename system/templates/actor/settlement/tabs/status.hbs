@@ -3,37 +3,37 @@
 		{{> actor/settlement/partials/attribute
 			attribute="people"
 			label=(localize "FALLOUT.SETTLEMENT.People.label")
-			value=system.people.value
+			value=system.attributes.people.value
 		}}
 
 		{{> actor/settlement/partials/attribute
 			attribute="food"
 			label=(localize "FALLOUT.SETTLEMENT.Food.label")
-			value=system.food.value
+			value=system.attributes.food.value
 		}}
 
 		{{> actor/settlement/partials/attribute
 			attribute="water"
 			label=(localize "FALLOUT.SETTLEMENT.Water.label")
-			value=system.water.value
+			value=system.attributes.water.value
 		}}
 
 		{{> actor/settlement/partials/attribute
 			attribute="power"
 			label=(localize "FALLOUT.SETTLEMENT.Power.label")
-			value=system.power.value
+			value=system.attributes.power.value
 		}}
 
 		{{> actor/settlement/partials/attribute
 			attribute="defense"
 			label=(localize "FALLOUT.SETTLEMENT.Defense.label")
-			value=system.defense.value
+			value=system.attributes.defense.value
 		}}
 
 		{{> actor/settlement/partials/attribute
 			attribute="beds"
 			label=(localize "FALLOUT.SETTLEMENT.Beds.label")
-			value=system.beds.value
+			value=system.attributes.beds.value
 		}}
 	</div>
 
@@ -41,10 +41,12 @@
 
 		<div>
 			{{!-- Left Side --}}
+			{{> actor/settlement/partials/settlers }}
 		</div>
 
 		<div>
-			{{> actor/settlement/materials }}
+			{{!-- Right Side --}}
+			{{> actor/settlement/partials/structures }}
 		</div>
 
 	</div>

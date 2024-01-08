@@ -163,11 +163,12 @@ FALLOUT.ROBOT_APPAREL_TYPE = {
 };
 
 FALLOUT.SETTLEMENT_ITEMS = {
-	crafting_tables: "FALLOUT.SETTLEMENT_ITEM.CraftingTables",
+	crafting_table: "FALLOUT.SETTLEMENT_ITEM.CraftingTable",
 	defense: "FALLOUT.SETTLEMENT_ITEM.Defense",
 	power: "FALLOUT.SETTLEMENT_ITEM.Power",
+	resource: "FALLOUT.SETTLEMENT_ITEM.Resource",
 	room: "FALLOUT.SETTLEMENT_ITEM.Room",
-	stores: "FALLOUT.SETTLEMENT_ITEM.Stores",
+	store: "FALLOUT.SETTLEMENT_ITEM.Store",
 	structure: "FALLOUT.SETTLEMENT_ITEM.Structure",
 };
 

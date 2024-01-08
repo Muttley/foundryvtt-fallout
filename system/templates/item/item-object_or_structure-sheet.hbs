@@ -12,11 +12,25 @@
 
 		{{!-- Attributes Tab --}}
 		<div class="tab attributes" data-group="primary" data-tab="attributes">
+			{{#if isEmbedded}}
+				<div class="flexrow resource-row">
+					<label class="resource-label">{{localize "FALLOUT.TEMPLATES.ParentItem"}}</label>
+					{{#select system.parentItem}}
+						<select name="system.parentItem">
+							<option value="">&nbsp;</option>
+							{{#each parentChoices}}
+								<option value="{{this.id}}">{{this.name}}</option>
+							{{/each}}
+						</select>
+					{{/select}}
+				</div>
+			{{/if}}
+
 			<div class="flexrow resource-row">
 				<label class="resource-label">{{localize "FALLOUT.TEMPLATES.Type"}}</label>
-				<select name="system.type">
+				<select name="system.itemType">
 					{{selectOptions FALLOUT.SETTLEMENT_ITEMS
-						selected=system.type
+						selected=system.itemType
 					}}
 				</select>
 			</div>

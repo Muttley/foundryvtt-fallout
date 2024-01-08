@@ -3,13 +3,16 @@
  * @extends {Item}
  */
 export default class FalloutItem extends Item {
-	/**
-	 * Augment the basic Item data model with additional dynamic data.
-	 */
-	prepareData() {
-		// As with the actor class, items are documents that can have their data
-		// preparation methods overridden (such as prepareBaseData()).
-		super.prepareData();
+	async deleteSettlementStructure() {
+		if (!this.actor) return null;
+
+		const directDescendants = this.actor.items.filter(
+			i => i.system.parentItem === this._id
+		);
+
+		for (const item of directDescendants) {
+			await item.update({"system.parentItem": ""});
+		}
 	}
 
 	/**
@@ -24,6 +27,15 @@ export default class FalloutItem extends Item {
 		rollData.item = foundry.utils.deepClone(this.system);
 
 		return rollData;
+	}
+
+	/**
+	 * Augment the basic Item data model with additional dynamic data.
+	 */
+	prepareData() {
+		// As with the actor class, items are documents that can have their data
+		// preparation methods overridden (such as prepareBaseData()).
+		super.prepareData();
 	}
 
 	/**
@@ -60,8 +72,6 @@ export default class FalloutItem extends Item {
 		}
 
 		if (itemData.isSettlementItem) {
-			itemData.itemType = this.system.type;
-
 			itemData.materials = [];
 			for (const material of ["common", "uncommon", "rare"]) {
 				itemData.materials.push({

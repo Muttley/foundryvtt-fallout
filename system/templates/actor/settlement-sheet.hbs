@@ -1,18 +1,26 @@
 <form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
 
-	{{> actor/settlement/header }}
+	{{> actor/settlement/partials/header }}
 
 	<nav class="sheet-tabs tabs" data-group="primary">
 		<a class="item" data-tab="status">
 			{{localize "FALLOUT.TEMPLATES.Status"}}
 		</a>
+		<a class="item" data-tab="stockpile">
+			{{localize "FALLOUT.TEMPLATES.Stockpile"}}
+		</a>
 		<a class="item" data-tab="data">
 			{{localize "FALLOUT.TEMPLATES.Data"}}
+		</a>
+		<a class="item" data-tab="effects">
+			{{localize "FALLOUT.TEMPLATES.Effects"}}
 		</a>
 	</nav>
 
 	<section class="sheet-body">
 		{{> actor/settlement/tabs/status }}
+		{{> actor/settlement/tabs/stockpile }}
 		{{> actor/settlement/tabs/data }}
+		{{> actor/parts/actor-effects }}
 	</section>
 </form>

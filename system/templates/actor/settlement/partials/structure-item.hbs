@@ -1,0 +1,34 @@
+<li class="item" data-item-id="{{item._id}}">
+	<div class="flexrow">
+		<div class="item-name flexlarge expandable-info" data-item-id="{{item._id}}">
+			<h4>
+				<a class="resource-label">
+					{{{levelPadding item.depth}}}{{item.name}}
+				</a>
+			</h4>
+		</div>
+		<div class="item-controls">
+			<a
+				class="item-control item-edit"
+				title="{{localize 'FALLOUT.TEMPLATES.Edit_Item'}}"
+			>
+				<i class="fas fa-edit"></i>
+			</a>
+			<a
+				class="item-control item-delete"
+				title="{{localize 'FALLOUT.TEMPLATES.Delete_Item'}}"
+			>
+				<i class="fas fa-trash"></i>
+			</a>
+		</div>
+	</div>
+</li>
+{{#if this.hasChildren}}
+	<li>
+		<ol class="items-list">
+			{{> actor/settlement/partials/structure-items
+				items=this.children
+			}}
+		</ol>
+	</li>
+{{/if}}

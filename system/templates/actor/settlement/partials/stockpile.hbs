@@ -1,0 +1,12 @@
+<div class="box padding5">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.Stockpile'}}
+			</div>
+		</li>
+		{{#each stockpile as |item id|}}
+			{{> actor/parts/simple-expandable-item item=item basicControlsOnly=true}}
+		{{/each}}
+	</ol>
+</div>

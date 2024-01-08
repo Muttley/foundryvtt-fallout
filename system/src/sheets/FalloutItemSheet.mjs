@@ -130,6 +130,41 @@ export default class FalloutItemSheet extends ItemSheet {
 					value: source.system.materials[material] ?? 0,
 				});
 			}
+
+			const __getDescendants = function(output, actor, item) {
+				const descendants = actor.items.filter(
+					i => i.system.parentItem === item._id
+				);
+
+				for (const nextDescendant of descendants) {
+					output.push(nextDescendant);
+					__getDescendants(output, actor, nextDescendant);
+				}
+			};
+
+			if (context.isEmbedded) {
+				const descendants = [];
+				__getDescendants(descendants, this.item.actor, item);
+
+				const possibleParents =
+					await this.item.actor.items.filter(i =>
+						["structure", "room", "store"].includes(i.system.itemType)
+						&& item._id !== i._id
+						&& (!descendants.find(d => d._id === i._id))
+					) ?? [];
+
+				const parentChoices = [];
+				for (const possibleParent of possibleParents) {
+					parentChoices.push({
+						id: possibleParent._id,
+						name: possibleParent.name,
+					});
+				}
+
+				context.parentChoices = parentChoices.sort(
+					(a, b) => a.name.localeCompare(b.name)
+				);
+			}
 		}
 
 		return context;

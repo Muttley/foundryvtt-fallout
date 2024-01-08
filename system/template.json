@@ -119,30 +119,33 @@
 			"templates": [
 				"valuables"
 			],
-			"beds": {
-				"value": 0
+			"attributes": {
+				"beds": {
+					"value": 0
+				},
+				"defense": {
+					"value": 0
+				},
+				"food": {
+					"value": 0
+				},
+				"happiness": {
+					"value": 0
+				},
+				"income": {
+					"value": 0
+				},
+				"people": {
+					"value": 0
+				},
+				"power": {
+					"value": 0
+				},
+				"water": {
+					"value": 0
+				}
 			},
-			"defense": {
-				"value": 0
-			},
-			"food": {
-				"value": 0
-			},
-			"happiness": {
-				"value": 0
-			},
-			"income": {
-				"value": 0
-			},
-			"people": {
-				"value": 0
-			},
-			"power": {
-				"value": 0
-			},
-			"water": {
-				"value": 0
-			}
+			"settlers": []
 		},
 		"templates": {
 			"base": {
@@ -489,15 +492,16 @@
 			],
 			"constructionTime": 0,
 			"effect": "",
+			"itemType": "crafting_tables",
 			"materials": {
 				"common": 0,
 				"rare": 0,
 				"uncommon": 0
 			},
+			"parentItem": "",
 			"perks": "",
 			"rarity": "common",
-			"skills": "",
-			"type": "crafting_tables"
+			"skills": ""
 		},
 		"perk": {
 			"rank": {
