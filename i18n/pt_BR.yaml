@@ -144,11 +144,12 @@ FALLOUT.RESISTANCE.poison: Veneno
 FALLOUT.RESISTANCE.radiation: Radiação
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
-FALLOUT.SETTLEMENT_ITEM.CraftingTables: Crafting Tables
+FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
 FALLOUT.SETTLEMENT_ITEM.Defense: Defense
 FALLOUT.SETTLEMENT_ITEM.Power: Power
+FALLOUT.SETTLEMENT_ITEM.Resource: Resource
 FALLOUT.SETTLEMENT_ITEM.Room: Room
-FALLOUT.SETTLEMENT_ITEM.Stores: Stores
+FALLOUT.SETTLEMENT_ITEM.Store: Store
 FALLOUT.SETTLEMENT_ITEM.Structure: Structure
 FALLOUT.SETTLEMENT.Beds.label: Beds
 FALLOUT.SETTLEMENT.Defense.label: Defense
@@ -232,6 +233,7 @@ FALLOUT.TEMPLATES.Create_Robot_Module: Criar Mod Robótico
 FALLOUT.TEMPLATES.Create_Special_Ability: Criar Habilidade Especial
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Criar Mod de Arma
 FALLOUT.TEMPLATES.Create_Weapon: Criar Arma
+FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
 FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
 FALLOUT.TEMPLATES.Creature_Skill: Skill da Criatura
 FALLOUT.TEMPLATES.current: atual
@@ -279,6 +281,7 @@ FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
 FALLOUT.TEMPLATES.Origin: Origin
 FALLOUT.TEMPLATES.OVERSEER_AP: AP DO OVERSEER
+FALLOUT.TEMPLATES.ParentItem: Parent Item
 FALLOUT.TEMPLATES.PARTY_AP: AP DA PARTY
 FALLOUT.TEMPLATES.PERK: PERK
 FALLOUT.TEMPLATES.PHYS: FÍSICO
@@ -299,6 +302,7 @@ FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistências
 FALLOUT.TEMPLATES.RESISTANCES: RESISTÊNCIAS
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
+FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
 FALLOUT.TEMPLATES.Skill_Tag: Skill Tag
 FALLOUT.TEMPLATES.Skill_Value: Skill Value
 FALLOUT.TEMPLATES.Skill: Skill
@@ -306,6 +310,8 @@ FALLOUT.TEMPLATES.SKILL: SKILL
 FALLOUT.TEMPLATES.SKILLS: SKILLS
 FALLOUT.TEMPLATES.Source: Fonte
 FALLOUT.TEMPLATES.Status: Status
+FALLOUT.TEMPLATES.Stockpile: Stockpile
+FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
 FALLOUT.TEMPLATES.Successes: Sucessos
 FALLOUT.TEMPLATES.Tag: Tag
 FALLOUT.TEMPLATES.Tear: Desgaste
