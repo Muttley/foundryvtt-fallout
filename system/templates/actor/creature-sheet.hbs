@@ -74,7 +74,7 @@
                     </div>
 
                     {{!-- BODY STATUS --}}
-                    {{> actor/parts/npc-body FALLOUT=FALLOUT }}
+                    {{> actor/_shared-partials/npc-body FALLOUT=FALLOUT }}
                     {{!-- END BODY STATUS --}}
 
                 </div>
@@ -84,13 +84,15 @@
                         <h4 class="box-header text-center">{{localize "FALLOUT.TEMPLATES.ATTACKS"}}</h4>
                         <div>
                             {{!-- Owned Weapons Tab --}}
-                            {{> actor/parts/actor-weapons }}
+							{{> actor/_shared-partials/weapons
+								nameLabel=(localize "FALLOUT.TEMPLATES.AttackName")
+							}}
                         </div>
                     </div>
 
                     <div class="resource-row">
                         {{!-- Owned Abilities Tab --}}
-                        {{> actor/parts/actor-special_abilities }}
+                        {{> actor/_shared-partials/special-abilities }}
                     </div>
 
                     <div class="resource-row">

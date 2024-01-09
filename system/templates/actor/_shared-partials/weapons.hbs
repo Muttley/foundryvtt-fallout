@@ -1,0 +1,115 @@
+<ol class="items-list">
+	<li class="item weapon flexrow items-header">
+		<div class="flexrow flexlarge item-name">
+			{{nameLabel}}
+		</div>
+		<div class="flexrow flexlarge item-info">
+			<p>{{localize 'FALLOUT.UI.Damage'}}</p>
+			<p>{{localize 'FALLOUT.UI.Type'}}</p>
+		</div>
+		<div class="item-controls">
+			<a
+				class="item-control item-create"
+				title="{{localize 'FALLOUT.TEMPLATES.Create_Weapon'}}"
+				data-type="weapon"
+			>
+				<i class="fas fa-plus"></i>
+				{{localize 'FALLOUT.UI.Add'}}
+			</a>
+		</div>
+	</li>
+	{{#each itemsByType.weapon as |item id| }}
+		<li class="item weapon" data-item-id="{{item._id}}">
+			<div class=" flexrow">
+				<div class="item-name flexlarge weapon-roll">
+					<div class="item-image">
+						<img
+							src="{{item.img}}"
+							title="{{item.name}}"
+							width="24"
+							height="24"
+						/>
+					</div>
+					<a class="resource-label">
+						{{item.name}}
+						{{#if (isWeaponDamaged item.system)}}
+							<i class="fas fa-wrench"></i>
+						{{/if}}
+					</a>
+				</div>
+				<div class="flexrow flexlarge align-mid">
+					<div class="text-center">
+						<a class="weapon-roll-damage">
+							<strong>
+								{{item.system.damage.rating}}
+							</strong>
+							<span class="fo-pip-boy fo-blue"></span>
+							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
+								+
+								<strong>
+									{{../actor.system.meleeDamage.value}}
+								</strong>
+								<span class="fo-pip-boy fo-blue"></span>
+								MB
+							{{/if}}
+						</a>
+					</div>
+					<div class="text-center">
+						{{#each item.system.damage.damageType as |dt dk|}}
+							{{#ifCond dt '==' true}}
+								<i
+									class="fo-{{dk}}"
+									title="{{fromConfig "DAMAGE_TYPES" dk}}"
+								>
+								</i>
+							{{/ifCond}}
+						{{/each}}
+					</div>
+				</div>
+				<div class="item-controls">
+					{{#unless ../basicControlsOnly}}
+						<a
+							{{#if item.system.stashed}}
+								class="item-control item-stash"
+							{{else}}
+								class="item-control item-stash item-unstashed"
+							{{/if}}
+							title='{{localize "FALLOUT.UI.stashed"}}'
+						>
+							<i class="fas fa-briefcase"></i>
+						</a>
+						<a
+							{{#if item.system.favorite}}
+								class="item-control item-favorite"
+							{{else}}
+								class="item-control item-favorite favorite-start-dim"
+							{{/if}}
+							title='{{localize "FALLOUT.UI.favorite"}}'
+						>
+							<i class="fas fa-star"></i>
+						</a>
+					{{/unless}}
+					<a
+						class="item-control item-edit"
+						title="Edit Item"
+					>
+						<i class="fas fa-edit"></i>
+					</a>
+					<a
+						class="item-control item-delete"
+						title="Delete Item"
+					>
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</div>
+			<div class="item-sub-info">
+				<span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
+				{{{listWeaponQualities item.system.damage.weaponQuality}}}
+				&nbsp;
+				<span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
+				{{{listDamageEffects item.system.damage.damageEffect}}}
+			</div>
+		</li>
+	{{/each}}
+</ol>

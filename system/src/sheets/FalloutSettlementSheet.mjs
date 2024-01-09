@@ -16,17 +16,8 @@ export default class FalloutSettlementSheet extends FalloutActorSheet {
 	async getData(options) {
 		const context = await super.getData(options);
 
-		// Setup materials
-		context.materials = [];
-		for (const material of ["junk", "common", "uncommon", "rare"]) {
-			context.materials.push({
-				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
-				key: `system.materials.${material}`,
-				value: this.actor.system.materials[material] ?? 0,
-			});
-		}
-
 		this._prepareItems(context);
+		this._prepareMaterials(context);
 
 		return context;
 	}

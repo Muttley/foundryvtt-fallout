@@ -5,8 +5,11 @@
 				{{localize 'FALLOUT.TEMPLATES.Stockpile'}}
 			</div>
 		</li>
-		{{#each stockpile as |item id|}}
-			{{> actor/parts/simple-expandable-item item=item basicControlsOnly=true}}
+		{{#each stockpile}}
+			{{> actor/parts/simple-expandable-item
+				item=this
+				basicControlsOnly=true
+			}}
 		{{/each}}
 	</ol>
 	<div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">

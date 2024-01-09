@@ -44,7 +44,10 @@
 
 		{{!-- Owned Weapons Tab --}}
 		<div class="tab items" data-group="primary" data-tab="weapons">
-			{{> actor/parts/actor-weapons }}
+			{{> actor/_shared-partials/weapons
+				nameLabel=(localize "FALLOUT.TEMPLATES.WeaponName")
+			}}
+			{{> actor/_shared-partials/ammo }}
 		</div>
 
 		{{!-- Inventory Tab --}}
