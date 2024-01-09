@@ -144,7 +144,7 @@ FALLOUT.RESISTANCE.poison: Trucizna
 FALLOUT.RESISTANCE.radiation: Radjacja
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
-FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
+FALLOUT.SETTLEMENT_ITEM.CraftingTable: Stół rzemieślniczy
 FALLOUT.SETTLEMENT_ITEM.Defense: Obrona
 FALLOUT.SETTLEMENT_ITEM.Power: Moc
 FALLOUT.SETTLEMENT_ITEM.Resource: Zasób
@@ -233,7 +233,7 @@ FALLOUT.TEMPLATES.Create_Robot_Module: Stwórz Modyfikcaje Robota
 FALLOUT.TEMPLATES.Create_Special_Ability: Stwórz Zdolność Specjalną
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Stwórz Modyfikacje Broni
 FALLOUT.TEMPLATES.Create_Weapon: Stwórz Broń
-FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
+FALLOUT.TEMPLATES.CreateStructuresAndRooms: Stwórz struktury i pomieszczenia
 FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętoności Stworza
 FALLOUT.TEMPLATES.current: Obecny
@@ -281,7 +281,7 @@ FALLOUT.TEMPLATES.MODULES: Modyfikacje
 FALLOUT.TEMPLATES.Name_Prefix: Nazwa Prefixa
 FALLOUT.TEMPLATES.Origin: Pochodzenie
 FALLOUT.TEMPLATES.OVERSEER_AP: PA Nadzorcy
-FALLOUT.TEMPLATES.ParentItem: Parent Item
+FALLOUT.TEMPLATES.ParentItem: Element nadrzędny
 FALLOUT.TEMPLATES.PARTY_AP: PA Drużyny
 FALLOUT.TEMPLATES.PERK: Profity
 FALLOUT.TEMPLATES.PHYS: Fizyczne
@@ -302,7 +302,7 @@ FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS ODPORNOŚCI
 FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Roll_Formula: Formuła Rzutu
-FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
+FALLOUT.TEMPLATES.SettlersAndJobs: Osadnicy i miejsca pracy
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
 FALLOUT.TEMPLATES.Skill: Umiejętność
@@ -310,7 +310,7 @@ FALLOUT.TEMPLATES.SKILL: Umiejętność
 FALLOUT.TEMPLATES.SKILLS: Umiejętności
 FALLOUT.TEMPLATES.Source: Źródło   
 FALLOUT.TEMPLATES.Status: Status
-FALLOUT.TEMPLATES.Stockpile: Stockpile
+FALLOUT.TEMPLATES.Stockpile: Zapasy
 FALLOUT.TEMPLATES.StructuresAndRooms: Struktury i pomieszczenia
 FALLOUT.TEMPLATES.Successes: Skukces
 FALLOUT.TEMPLATES.Tag: Specjalizacja
