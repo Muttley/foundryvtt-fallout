@@ -66,6 +66,35 @@ export default class FalloutSettlementSheet extends ActorSheet {
 			li.slideUp(200, () => this.render(false));
 		});
 
+		html.find(".expandable-info").click(
+			async event => this._onItemSummary(event)
+		);
+
+		// Drag events for macros.
+		if (this.actor.isOwner) {
+			let handler = ev => this._onDragStart(ev);
+			html.find("li.item").each((i, li) => {
+				if (li.classList.contains("inventory-header")) return;
+				li.setAttribute("draggable", true);
+				li.addEventListener("dragstart", handler, false);
+			});
+		}
+
+		// Disable any fields that have been overridden by Active Effects and
+		// add a tooltip explaining why
+		//
+		const overridden = Object.keys(
+			foundry.utils.flattenObject(this.actor.overrides)
+		);
+
+		for (const override of overridden) {
+			html.find(
+				`input[name="${override}"],select[name="${override}"]`
+			).each((i, el) => {
+				el.disabled = true;
+				el.dataset.tooltip = "FALLOUT.Actor.Warnings.ActiveEffectOverride";
+			});
+		}
 	}
 
 	/** @override */
@@ -113,8 +142,48 @@ export default class FalloutSettlementSheet extends ActorSheet {
 		return context;
 	}
 
+	/** @override */
+	async _onDropItem(event, data) {
+		if (!this.actor.isOwner) return false;
+
+		const item = await Item.implementation.fromDropData(data);
+		const source = item.toObject();
+
+		if (this.actor.uuid === item.parent?.uuid) {
+			return this._onSortItem(event, source);
+		}
+
+		if (source.type !== "object_or_structure") {
+			return super._onDropItem(event, data);
+		}
+
+		const dropTarget = event.target.closest("[data-item-id]");
+		if (!dropTarget) return super._onDropItem(event, data);
+
+		const target = this.actor.items.get(dropTarget.dataset.itemId);
+
+		const targetIsCorrectType = target.type === "object_or_structure";
+		const targetIsContainer =
+			["structure", "room", "store"].includes(target.system?.itemType ?? "");
+
+		const sourceIsNotStructure =
+			source.system.itemType !== "structure";
+
+		if (targetIsCorrectType && targetIsContainer && sourceIsNotStructure) {
+			source.system.parentItem = target._id;
+
+			// Create the owned item
+			return this._onDropItemCreate(source);
+		}
+		else {
+			return super._onDropItem(event, data);
+		}
+	}
+
+
 	/**
-   * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
+   * Handle creating a new Owned Item for the actor using initial data defined
+   *  in the HTML dataset
    * @param {Event} event   The originating click event
    * @private
    */
@@ -140,18 +209,113 @@ export default class FalloutSettlementSheet extends ActorSheet {
 		return await Item.create(itemData, { parent: this.actor });
 	}
 
+	async _onItemSummary(event) {
+		event.preventDefault();
+		let li = $(event.currentTarget).parents(".item");
+		let item = this.actor.items.get(li.data("itemId"));
+		let moreInfo = "";
+
+		if (item.system.effect && item.system.effect !== "") {
+			moreInfo = await TextEditor.enrichHTML(item.system.effect, {
+				secrets: item.isOwner,
+				async: true,
+			});
+		}
+		else {
+			moreInfo = await TextEditor.enrichHTML(item.system.description, {
+				secrets: item.isOwner,
+				async: true,
+			});
+		}
+		// Toggle summary
+		if (li.hasClass("expanded")) {
+			let summary = li.children(".item-summary");
+			summary.slideUp(200, () => {
+				summary.remove();
+			});
+		}
+		else {
+			let div = $(
+				`<div class="item-summary"><div class="item-summary-wrapper"><div>${moreInfo}</div></div></div>`
+			);
+			li.append(div.hide());
+			div.slideDown(200);
+		}
+		li.toggleClass("expanded");
+	}
+
+	/** @override */
+	_onSortItem(event, itemData) {
+		const items = this.actor.items;
+
+		const source = items.get(itemData._id);
+
+		const dropTarget = event.target.closest("[data-item-id]");
+		if ( !dropTarget ) {
+			return source.update({
+				"system.parentItem": "",
+			});
+		}
+
+		const target = items.get(dropTarget.dataset.itemId);
+
+		if (source.type === "object_or_structure" && target.type === "object_or_structure") {
+			const targetIsContainerType =
+				["structure", "room", "store"].includes(target.system.itemType);
+
+			const sourceIsNotStructure =
+				source.system.itemType !== "structure";
+
+			if (targetIsContainerType && sourceIsNotStructure) {
+				return source.update({
+					"system.parentItem": target._id,
+				});
+			}
+		}
+
+		return super._onSortItem(event, itemData);
+	}
+
 	async _prepareItems(context) {
 		context.stockpile = [];
-		const settlementItems = [];
+		context.stockpileUsed = 0;
+
+		const groupedSettlementItems = {
+			crafting_table: [],
+			defense: [],
+			power: [],
+			resource: [],
+			room: [],
+			store: [],
+			structure: [],
+			unknown: [],
+		};
 
 		for (const i of context.items) {
 			if (i.type === "object_or_structure") {
-				settlementItems.push(i);
+				if (groupedSettlementItems[i.system.itemType]) {
+					groupedSettlementItems[i.system.itemType].push(i);
+				}
+				else {
+					groupedSettlementItems.unknown.push(i);
+				}
 			}
 			else {
+
 				context.stockpile.push(i);
 			}
 		}
+
+		const settlementItems = [
+			...groupedSettlementItems.structure,
+			...groupedSettlementItems.room,
+			...groupedSettlementItems.store,
+			...groupedSettlementItems.defense,
+			...groupedSettlementItems.power,
+			...groupedSettlementItems.crafting_table,
+			...groupedSettlementItems.resource,
+			...groupedSettlementItems.unknown,
+		];
 
 		for (const i of settlementItems) {
 			i.hasNoParent = i.system.parentItem === "";

@@ -37,8 +37,9 @@ export default class FalloutActor extends Actor {
 		}
 
 		this._prepareCharacterData();
-		this._prepareRobotData();
 		this._prepareNpcData();
+		this._prepareRobotData();
+		this._prepareSettlementData();
 
 		// ADD UNOFFICIAL SPEED
 		try {
@@ -63,7 +64,8 @@ export default class FalloutActor extends Actor {
 
 	// CHARACTER
 	_prepareCharacterData() {
-		if (this.type !== "character") return;
+		if (!["character"].includes(this.type)) return;
+
 		this._calculateCharacterBodyResistance();
 		this._calculateEncumbrance();
 	}
@@ -320,6 +322,18 @@ export default class FalloutActor extends Actor {
 			let dif = this.system.carryWeight.total - this.system.carryWeight.value;
 			this.system.encumbranceLevel = Math.ceil(dif / 50);
 		}
+	}
+
+	_prepareSettlementData() {
+		if (this.type !== "settlement") return;
+
+		this.system.storage.base +=
+			parseInt(game.settings.get("fallout", "baseSettlementStorage"));
+
+		this.system.storage.value =
+			parseInt(this.system.storage.base) + parseInt(this.system.storage.mod);
+
+		this.system.storage.total = this._getItemsTotalWeight();
 	}
 
 	_calculateRobotBodyResistance() {

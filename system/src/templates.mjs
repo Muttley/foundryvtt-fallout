@@ -42,6 +42,7 @@ export default async function() {
 		"systems/fallout/templates/actor/settlement/tabs/stockpile.hbs",
 		"systems/fallout/templates/item/parts/item-effects.hbs",
 		"systems/fallout/templates/item/parts/item-header.hbs",
+		"systems/fallout/templates/item/tabs/effects.hbs",
 	];
 
 	const paths = {};

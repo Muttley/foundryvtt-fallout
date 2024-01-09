@@ -119,33 +119,37 @@
 			"templates": [
 				"valuables"
 			],
-			"attributes": {
-				"beds": {
-					"value": 0
-				},
-				"defense": {
-					"value": 0
-				},
-				"food": {
-					"value": 0
-				},
-				"happiness": {
-					"value": 0
-				},
-				"income": {
-					"value": 0
-				},
-				"people": {
-					"value": 0
-				},
-				"power": {
-					"value": 0
-				},
-				"water": {
-					"value": 0
-				}
+			"beds": {
+				"value": 0
 			},
-			"settlers": []
+			"defense": {
+				"value": 0
+			},
+			"food": {
+				"value": 0
+			},
+			"happiness": {
+				"value": 0
+			},
+			"income": {
+				"value": 0
+			},
+			"people": {
+				"value": 0
+			},
+			"power": {
+				"value": 0
+			},
+			"water": {
+				"value": 0
+			},
+			"settlers": [],
+			"storage": {
+				"base": 0,
+				"mod": 0,
+				"total": 0,
+				"value": 0
+			}
 		},
 		"templates": {
 			"base": {
@@ -492,7 +496,7 @@
 			],
 			"constructionTime": 0,
 			"effect": "",
-			"itemType": "crafting_tables",
+			"itemType": "crafting_table",
 			"materials": {
 				"common": 0,
 				"rare": 0,

@@ -162,6 +162,16 @@ FALLOUT.ROBOT_APPAREL_TYPE = {
 	armor: "FALLOUT.APPAREL.armor",
 };
 
+FALLOUT.SETTLEMENT_ITEM_ICONS = {
+	crafting_table: "fa-solid fa-screwdriver-wrench",
+	defense: "fa-solid fa-shield-halved",
+	power: "fa-solid fa-bolt",
+	resource: "fa-solid fa-box",
+	room: "fa-solid fa-door-open",
+	store: "fa-solid fa-store",
+	structure: "fa-solid fa-building",
+};
+
 FALLOUT.SETTLEMENT_ITEMS = {
 	crafting_table: "FALLOUT.SETTLEMENT_ITEM.CraftingTable",
 	defense: "FALLOUT.SETTLEMENT_ITEM.Defense",

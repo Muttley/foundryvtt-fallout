@@ -5,6 +5,7 @@
 	<nav class="sheet-tabs tabs" data-group="primary">
 		<a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
 		<a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
+		<a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
 	</nav>
 
 	{{!-- Sheet Body --}}
@@ -112,6 +113,7 @@
 			{{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
 		</div>
 
+		{{> item/tabs/effects }}
 
 	</section>
 </form>

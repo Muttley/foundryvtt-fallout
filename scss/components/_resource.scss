@@ -187,13 +187,23 @@ input.chk-btn:checked + label {
 .text-center {
 	text-align: center;
 }
-.num-short-2 {
-	max-width: 2rem;
-	text-align: center;
-}
-.num-short-3 {
-	max-width: 3rem;
-	text-align: center;
+.num-short {
+	&-2 {
+		max-width: 2rem;
+		text-align: center;
+	}
+	&-3 {
+		max-width: 3rem;
+		text-align: center;
+	}
+	&-4 {
+		max-width: 3rem;
+		text-align: center;
+	}
+	&-5 {
+		max-width: 3rem;
+		text-align: center;
+	}
 }
 
 .special-number {
