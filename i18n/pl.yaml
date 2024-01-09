@@ -17,6 +17,7 @@ FALLOUT.actor.inventory.materials.junk: Złom
 FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
+FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
 FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
