@@ -1,131 +1,20 @@
-import {
-	onManageActiveEffect,
-	prepareActiveEffectCategories,
-} from "../effects.mjs";
+import FalloutActorSheet from "./FalloutActorSheet.mjs";
 
-export default class FalloutSettlementSheet extends ActorSheet {
+// import {
+// 	onManageActiveEffect,
+// 	prepareActiveEffectCategories,
+// } from "../effects.mjs";
 
-	/** @override */
-	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
-			classes: ["fallout", "sheet", "actor"],
-			width: 780,
-			height: 940,
-			tabs: [
-				{
-					navSelector: ".sheet-tabs",
-					contentSelector: ".sheet-body",
-					initial: "status",
-				},
-			],
-		});
-	}
+export default class FalloutSettlementSheet extends FalloutActorSheet {
 
 	/** @override */
-	get template() {
-		return "systems/fallout/templates/actor/settlement-sheet.hbs";
-	}
-
-	/** @inheritdoc */
-	get title() {
-		const type = game.i18n.localize(`TYPES.Actor.${this.actor.type}`);
-		return `[${type}] ${this.actor.name}`;
-	}
-
-	/** @override */
-	activateListeners(html) {
-		super.activateListeners(html);
-
-		// -------------------------------------------------------------
-		// ! Everything below here is only needed if the sheet is editable
-		if (!this.isEditable) return;
-
-		// Active Effect management
-		html
-			.find(".effect-control")
-			.click(ev => onManageActiveEffect(ev, this.actor));
-
-		// * Add Inventory Item
-		html.find(".item-create").click(this._onItemCreate.bind(this));
-
-		// Render the item sheet for viewing/editing prior to the editable check.
-		html.find(".item-edit").click(ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("itemId"));
-			item.sheet.render(true);
-		});
-
-		// * Delete Inventory Item
-		html.find(".item-delete").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("itemId"));
-			if (item.type === "object_or_structure") {
-				await item.deleteSettlementStructure();
-			}
-			await item.delete();
-			li.slideUp(200, () => this.render(false));
-		});
-
-		html.find(".expandable-info").click(
-			async event => this._onItemSummary(event)
-		);
-
-		// Drag events for macros.
-		if (this.actor.isOwner) {
-			let handler = ev => this._onDragStart(ev);
-			html.find("li.item").each((i, li) => {
-				if (li.classList.contains("inventory-header")) return;
-				li.setAttribute("draggable", true);
-				li.addEventListener("dragstart", handler, false);
-			});
-		}
-
-		// Disable any fields that have been overridden by Active Effects and
-		// add a tooltip explaining why
-		//
-		const overridden = Object.keys(
-			foundry.utils.flattenObject(this.actor.overrides)
-		);
-
-		for (const override of overridden) {
-			html.find(
-				`input[name="${override}"],select[name="${override}"]`
-			).each((i, el) => {
-				el.disabled = true;
-				el.dataset.tooltip = "FALLOUT.Actor.Warnings.ActiveEffectOverride";
-			});
-		}
+	get initialTab() {
+		return "status";
 	}
 
 	/** @override */
 	async getData(options) {
-		// Use a safe clone of the actor data for further operations.
-		const source = this.actor.toObject();
-		const actorData = this.actor.toObject(false);
-
-		// Sort all items alphabetically for display on the character sheet
-		actorData.items.sort((a, b) => a.name.localeCompare(b.name));
-
-		const context = {
-			actor: actorData,
-			editable: this.isEditable,
-			effects: prepareActiveEffectCategories(this.actor.effects),
-			items: actorData.items,
-			limited: this.actor.limited,
-			options: this.options,
-			owner: this.actor.isOwner,
-			rollData: this.actor.getRollData.bind(this.actor),
-			source: source.system,
-			system: actorData.system,
-			type: this.actor.type,
-		};
-
-		// Biography HTML enrichment
-		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
-			secrets: this.actor.isOwner,
-			rollData: context.rollData,
-			async: true,
-		});
+		const context = await super.getData(options);
 
 		// Setup materials
 		context.materials = [];
@@ -180,69 +69,6 @@ export default class FalloutSettlementSheet extends ActorSheet {
 		}
 	}
 
-
-	/**
-   * Handle creating a new Owned Item for the actor using initial data defined
-   *  in the HTML dataset
-   * @param {Event} event   The originating click event
-   * @private
-   */
-	async _onItemCreate(event) {
-		event.preventDefault();
-		const header = event.currentTarget;
-		// Get the type of item to create.
-		const type = header.dataset.type;
-		// Grab any data associated with this control.
-		const data = duplicate(header.dataset);
-		// Initialize a default name.
-		const typeName = game.i18n.localize(`TYPES.Item.${type}`);
-		const name = `New ${typeName}`;
-		// Prepare the item object.
-		const itemData = {
-			name: name,
-			type: type,
-			data: data,
-		};
-		// Remove the type from the dataset since it's in the itemData.type prop.
-		delete itemData.data.type;
-		// Finally, create the item!
-		return await Item.create(itemData, { parent: this.actor });
-	}
-
-	async _onItemSummary(event) {
-		event.preventDefault();
-		let li = $(event.currentTarget).parents(".item");
-		let item = this.actor.items.get(li.data("itemId"));
-		let moreInfo = "";
-
-		if (item.system.effect && item.system.effect !== "") {
-			moreInfo = await TextEditor.enrichHTML(item.system.effect, {
-				secrets: item.isOwner,
-				async: true,
-			});
-		}
-		else {
-			moreInfo = await TextEditor.enrichHTML(item.system.description, {
-				secrets: item.isOwner,
-				async: true,
-			});
-		}
-		// Toggle summary
-		if (li.hasClass("expanded")) {
-			let summary = li.children(".item-summary");
-			summary.slideUp(200, () => {
-				summary.remove();
-			});
-		}
-		else {
-			let div = $(
-				`<div class="item-summary"><div class="item-summary-wrapper"><div>${moreInfo}</div></div></div>`
-			);
-			li.append(div.hide());
-			div.slideDown(200);
-		}
-		li.toggleClass("expanded");
-	}
 
 	/** @override */
 	_onSortItem(event, itemData) {

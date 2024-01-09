@@ -27,15 +27,19 @@ export default class FalloutActorSheet extends ActorSheet {
 				{
 					navSelector: ".sheet-tabs",
 					contentSelector: ".sheet-body",
-					initial: "skills",
+					initial: this.initialTab,
 				},
 			],
 		});
 	}
 
+	get initialTab() {
+		return "status";
+	}
+
 	/** @override */
 	get template() {
-		return `systems/fallout/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+		return `systems/fallout/templates/actor/${this.actor.type}-sheet.hbs`;
 	}
 
 	/** @inheritdoc */
@@ -698,6 +702,22 @@ export default class FalloutActorSheet extends ActorSheet {
 				}
 			});
 		});
+
+		// Disable any fields that have been overridden by Active Effects and
+		// add a tooltip explaining why
+		//
+		const overridden = Object.keys(
+			foundry.utils.flattenObject(this.actor.overrides)
+		);
+
+		for (const override of overridden) {
+			html.find(
+				`input[name="${override}"],select[name="${override}"]`
+			).each((i, el) => {
+				el.disabled = true;
+				el.dataset.tooltip = "FALLOUT.Actor.Warnings.ActiveEffectOverride";
+			});
+		}
 	}
 
 	/**
