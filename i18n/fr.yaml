@@ -197,7 +197,7 @@ FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
 FALLOUT.TEMPLATES.Apparel: Habillement
 FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
 FALLOUT.TEMPLATES.Armor_Type: Type d'Armure
-FALLOUT.TEMPLATES.AttackName: Attack Name
+FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
 FALLOUT.TEMPLATES.Attributes: Attributs
@@ -229,10 +229,10 @@ FALLOUT.TEMPLATES.Consumable_Type: Type
 FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Créer Mun
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Créer Mod Habillement
-FALLOUT.TEMPLATES.Create_books_and_magz: Créer livres et magazines
+FALLOUT.TEMPLATES.Create_books_and_magz: Create Book/Magazine
 FALLOUT.TEMPLATES.Create_Consumable: Créer Consommable
 FALLOUT.TEMPLATES.Create_Disease: Create Disease
-FALLOUT.TEMPLATES.Create_Miscellany: Créer Bric-A-Brac
+FALLOUT.TEMPLATES.Create_Miscellany: Create Miscellany
 FALLOUT.TEMPLATES.Create_Robot_Module: Créer Robot Module
 FALLOUT.TEMPLATES.Create_Special_Ability: Créer capacité Spéciale
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Créer Mod Arme
@@ -336,6 +336,7 @@ FALLOUT.TEMPLATES.Use_Strength: Utiliser Force
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
 FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
+FALLOUT.TEMPLATES.Weapon: Weapon
 FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Armes
 FALLOUT.UI.Add: Ajouter
