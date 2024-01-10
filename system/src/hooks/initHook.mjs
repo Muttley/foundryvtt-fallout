@@ -127,14 +127,9 @@ function registerDocumentSheets() {
 		types: ["character"],
 	});
 
-	Actors.registerSheet("fallout", sheets.FalloutCreatureSheet, {
-		makeDefault: true,
-		types: ["creature"],
-	});
-
 	Actors.registerSheet("fallout", sheets.FalloutNpcSheet, {
 		makeDefault: true,
-		types: ["npc"],
+		types: ["creature", "npc"],
 	});
 
 	Actors.registerSheet("fallout", sheets.FalloutRobotSheet, {

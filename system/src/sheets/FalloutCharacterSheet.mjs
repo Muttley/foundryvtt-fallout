@@ -17,14 +17,16 @@ export default class FalloutCharacterSheet extends FalloutPlayerCharacterSheet {
 		super.activateListeners(html);
 
 		// * POWER ARMOR MONITOR
-		html.find(".power-armor-monitor-health-value").change(ev => {
-			const apparelId = $(ev.currentTarget).data("itemId");
-			const newHealthValue = $(ev.currentTarget).val();
+		html.find(".power-armor-monitor-health-value").change(event => {
+			event.preventDefault();
+
+			const apparelId = $(event.currentTarget).data("itemId");
+			const newHealthValue = $(event.currentTarget).val();
+
 			let apparel = this.actor.items.get(apparelId);
-			if (apparel) {
-				if (apparel.system.appareltype === "powerArmor") {
-					apparel.update({ "system.health.value": newHealthValue });
-				}
+
+			if (apparel && apparel.system.appareltype === "powerArmor") {
+				apparel.update({ "system.health.value": newHealthValue });
 			}
 		});
 	}

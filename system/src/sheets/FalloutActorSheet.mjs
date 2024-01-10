@@ -293,6 +293,7 @@ export default class FalloutActorSheet extends ActorSheet {
 			let updatedItem = { _id: item.id, system: { value: newRank } };
 			await this.actor.updateEmbeddedDocuments("Item", [updatedItem]);
 		});
+
 		// Toggle Tag value
 		html.find(".skill .item-skill-tag").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
@@ -300,82 +301,6 @@ export default class FalloutActorSheet extends ActorSheet {
 			let updatedItem = { _id: item.id, system: { tag: !item.system.tag } };
 			await this.actor.updateEmbeddedDocuments("Item", [updatedItem]);
 		});
-
-		// let menuSkills = [];
-		// if (this.actor.type !== "npc") {
-		// 	menuSkills = [
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Strength",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "str");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Perception",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "per");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Endurance",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "end");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Charisma",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "cha");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Intelligence",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "int");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Agility",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "agi");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-dice"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Use_Luck",
-		// 			callback: t => {
-		// 				this._onRightClickSkill(t.data("itemId"), "luc");
-		// 			},
-		// 		},
-		// 		{
-		// 			icon: '<i class="fas fa-trash" style="color:red"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Delete",
-		// 			callback: t => {
-		// 				this._onRightClickDelete(t.data("itemId"));
-		// 			},
-		// 		},
-		// 	];
-		// }
-		// else {
-		// 	menuSkills = [
-		// 		{
-		// 			icon: '<i class="fas fa-trash" style="color:red"></i>',
-		// 			name: "FALLOUT.TEMPLATES.Delete",
-		// 			callback: t => {
-		// 				this._onRightClickDelete(t.data("itemId"));
-		// 			},
-		// 		},
-		// 	];
-		// }
-
-		// new ContextMenu(html, ".skill", menuSkills);
-		// // * END SKILLS
 
 		// * AMMO COUNT UPDATE
 		html.find(".item-quantity").change(async ev => {
@@ -524,15 +449,6 @@ export default class FalloutActorSheet extends ActorSheet {
 			});
 		}
 
-		// html.find(".manage-session-doses").click(
-		// 	event => {
-		// 		event.preventDefault();
-
-		// 		this.chemDoseManager.render(true);
-		// 	}
-		// );
-
-		// !CRATURES
 
 		// ! DON'T LET NUMBER FIELDS EMPTY
 		const numInputs = document.querySelectorAll("input[type=number]");
@@ -559,6 +475,10 @@ export default class FalloutActorSheet extends ActorSheet {
 				el.dataset.tooltip = "FALLOUT.Actor.Warnings.ActiveEffectOverride";
 			});
 		}
+
+		html.find("input.derived-value").each((i, el) => {
+			el.dataset.tooltip = "FALLOUT.Actor.Warnings.DerivedValue";
+		});
 	}
 
 	/**
@@ -590,7 +510,6 @@ export default class FalloutActorSheet extends ActorSheet {
 	async _onRightClickDelete(itemId) {
 		const item = this.actor.items.get(itemId);
 		await item.delete();
-		// li.slideUp(200, () => this.render(false));
 	}
 
 	_onRightClickSkill(itemId, attribute) {

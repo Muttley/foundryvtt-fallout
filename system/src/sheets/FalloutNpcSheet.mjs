@@ -9,4 +9,9 @@ export default class FalloutNpcSheet extends FalloutActorSheet {
 	get initialTab() {
 		return "abilities";
 	}
+
+	/** @override */
+	get template() {
+		return "systems/fallout/templates/actor/npc-sheet.hbs";
+	}
 }
