@@ -17,6 +17,8 @@ FALLOUT.actor.inventory.materials.junk: Junk
 FALLOUT.actor.inventory.materials.label: Materials
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
+FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
 FALLOUT.Add: Add
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
@@ -190,10 +192,12 @@ FALLOUT.TEMPLATES.Alcoholic: Alcoólico
 FALLOUT.TEMPLATES.AMMO: AMMO
 FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
+FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
 FALLOUT.TEMPLATES.Apparel: Vestuário
 FALLOUT.TEMPLATES.APPAREL: VESTUÁRIO
 FALLOUT.TEMPLATES.Armor_Type: Tipo de Armadura
+FALLOUT.TEMPLATES.AttackName: Attack Name
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
@@ -260,6 +264,7 @@ FALLOUT.TEMPLATES.GENERAL: GENERAL
 FALLOUT.TEMPLATES.Healthy: Saudável
 FALLOUT.TEMPLATES.HitLocationLabel: Hit Location
 FALLOUT.TEMPLATES.HP_Healed: HP Restaurado
+FALLOUT.TEMPLATES.HP: HP
 FALLOUT.TEMPLATES.INITIATIVE: INICIATIVA
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
 FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
@@ -331,6 +336,7 @@ FALLOUT.TEMPLATES.Use_Strength: Usar Strength
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALIDADES DA ARMA
 FALLOUT.TEMPLATES.Weapon_Type: Tipo da Arma
+FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Armas
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
