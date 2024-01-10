@@ -18,6 +18,7 @@ FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
 FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
+FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
 FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
@@ -191,10 +192,12 @@ FALLOUT.TEMPLATES.Alcoholic: Alkoholik
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
 FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
+FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
 FALLOUT.TEMPLATES.Armor_Type: Typ pancerza
+FALLOUT.TEMPLATES.AttackName: Attack Name
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
@@ -261,6 +264,7 @@ FALLOUT.TEMPLATES.GENERAL: Ogólny
 FALLOUT.TEMPLATES.Healthy: Zdrowie
 FALLOUT.TEMPLATES.HitLocationLabel: Lokalizacja Trafienia
 FALLOUT.TEMPLATES.HP_Healed: Wyleczone PZ
+FALLOUT.TEMPLATES.HP: HP
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
@@ -332,6 +336,7 @@ FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
 FALLOUT.TEMPLATES.Weapon_Qualities: Cechy Broni
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
+FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
