@@ -197,7 +197,7 @@ FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
 FALLOUT.TEMPLATES.Armor_Type: Typ pancerza
-FALLOUT.TEMPLATES.AttackName: Attack Name
+FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
@@ -229,10 +229,10 @@ FALLOUT.TEMPLATES.Consumable_Type: Typ
 FALLOUT.TEMPLATES.Create_Addiction: Stwórz uzależnienie
 FALLOUT.TEMPLATES.Create_Ammo: Stwórz Amunicje
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Stwórz Modyfikacje Odzież
-FALLOUT.TEMPLATES.Create_books_and_magz: Stwórz książki i czasopisma
+FALLOUT.TEMPLATES.Create_books_and_magz: Create Book/Magazine
 FALLOUT.TEMPLATES.Create_Consumable: Stwórz Przedmioty Jednorazowe
 FALLOUT.TEMPLATES.Create_Disease: Stwórz chorobę
-FALLOUT.TEMPLATES.Create_Miscellany: Stwórz Rozmaitości
+FALLOUT.TEMPLATES.Create_Miscellany: Create Miscellany
 FALLOUT.TEMPLATES.Create_Robot_Module: Stwórz Modyfikacje Robota
 FALLOUT.TEMPLATES.Create_Special_Ability: Stwórz Zdolność Specjalną
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Stwórz Modyfikacje Broni
@@ -336,6 +336,7 @@ FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
 FALLOUT.TEMPLATES.Weapon_Qualities: Cechy Broni
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
+FALLOUT.TEMPLATES.Weapon: Weapon
 FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.UI.Add: Dodaj
