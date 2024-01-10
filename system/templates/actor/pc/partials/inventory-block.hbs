@@ -1,0 +1,27 @@
+<div class="box padding5">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{blockTitle}}
+			</div>
+			{{#unless noCreate}}
+				<div class="item-controls">
+					<a
+						class="item-control item-create"
+						data-type="{{type}}"
+						title="{{createTitle}}"
+					>
+						<i class="fas fa-plus"></i>
+						{{localize 'FALLOUT.UI.Add'}}
+					</a>
+				</div>
+			{{/unless}}
+		</li>
+		{{#each items}}
+			{{> actor/_shared-partials/simple-expandable-item
+				isRobot=../isRobot
+				item=this
+			}}
+		{{/each}}
+	</ol>
+</div>

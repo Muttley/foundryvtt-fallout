@@ -7,7 +7,7 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export default class FalloutActorSheet extends ActorSheet {
+export default class FalloutBaseActorSheet extends ActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
@@ -27,6 +27,14 @@ export default class FalloutActorSheet extends ActorSheet {
 
 	get initialTab() {
 		return "status";
+	}
+
+	get ignoredInventoryItems() {
+		return [];
+	}
+
+	get inventorySections() {
+		return [];
 	}
 
 	/** @override */
@@ -54,21 +62,22 @@ export default class FalloutActorSheet extends ActorSheet {
 
 		const context = {
 			actor: actorData,
-			source: source.system,
-			system: actorData.system,
-			items: actorData.items,
+			editable: this.isEditable,
 			effects: prepareActiveEffectCategories(this.actor.effects),
-			owner: this.actor.isOwner,
+			FALLOUT: CONFIG.FALLOUT,
+			isCharacter: this.actor.type === "character",
+			isCreature: this.actor.type === "creature",
+			isNPC: this.actor.type === "npc",
+			isRobot: this.actor.type === "robot",
+			isSettlement: this.actor.type === "settlement",
+			items: actorData.items,
 			limited: this.actor.limited,
 			options: this.options,
-			editable: this.isEditable,
-			type: this.actor.type,
-			isCharacter: this.actor.type === "character",
-			isRobot: this.actor.type === "robot",
-			isNPC: this.actor.type === "npc",
-			isCreature: this.actor.type === "creature",
+			owner: this.actor.isOwner,
 			rollData: this.actor.getRollData.bind(this.actor),
-			FALLOUT: CONFIG.FALLOUT,
+			source: source.system,
+			system: actorData.system,
+			type: this.actor.type,
 		};
 
 		this._prepareItems(context);
@@ -80,88 +89,59 @@ export default class FalloutActorSheet extends ActorSheet {
 			async: true,
 		});
 
-		// Prepare Items Enriched Descriptions
-		const itemTypes = ["robot_mod"];
-		let itemsEnrichedDescriptions = {};
-		for await (let item of this.actor.items) {
-			if (itemTypes.includes(item.type)) {
-				const descriptionRich = await TextEditor.enrichHTML(
-					item.system.effect, {async: true}
-				);
-				itemsEnrichedDescriptions[item._id] = descriptionRich;
-			}
-		}
-		context.itemsEnrichedDescriptions = itemsEnrichedDescriptions;
-
 		return context;
 	}
 
 	/**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
+	 * Organize and classify Items for Character sheets.
+	 *
+	 * @param {Object} actorData The actor to prepare.
+	 *
+	 * @return {undefined}
+	 */
 	async _prepareItems(context) {
-		context.itemsByType = {
-			addiction: [],
-			ammo: [],
-			apparel_mod: [],
-			apparel: [],
-			books_and_magz: [],
-			consumable: [],
-			disease: [],
-			miscellany: [],
-			perk: [],
-			robot_armor: [],
-			robot_mod: [],
-			skill: [],
-			special_ability: [],
-			trait: [],
-			weapon_mod: [],
-			weapon: [],
-		};
+		context.itemsByType = {};
 
-		const inventory = [];
+		// Different Actor types require specific inventory sections which
+		// are filtered from the full list of items
+		//
+		for (const inventorySection of this.inventorySections) {
+			context.itemsByType[inventorySection] = [];
+		}
 
-		const apparel = [];
-		const robotApparel = [];
+		this._getFilteredApparelSections(context);
 
-		// Iterate through items, allocating to containers
+		// Build the inventory and its sections by processing each item,
+		// decorating it where required and storing it in the correct inventory
+		// location
+		//
+		context.inventory = [];
+
 		for (const i of context.items) {
 			i.img = i.img || DEFAULT_TOKEN;
+
+			// Make sure Robots can't equip Character armor, and vice-versa
+			//
+			i.canBeEquipped = i.system.equippable ?? false;
+			if (i.type === "apparel" && this.actor.isRobot) i.canBeEquipped = false;
+			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
 
 			switch (i.type) {
 				case "ammo":
 					i.shotsAvailable = ((i.system.quantity - 1)
 					* i.system.shots.max
 					) + i.system.shots.current;
-
-					context.itemsByType.ammo.push(i);
-					break;
-				case "apparel":
-					apparel.push(i);
 					break;
 				case "consumable":
-					let consumeIcon = "fa-pizza-slice";
-
-					if (i.system.consumableType === "beverage") {
-						consumeIcon = "fa-mug-hot";
-					}
-
-					if (i.system.consumableType === "chem") {
-						consumeIcon = "fa-flask";
-					}
-
-					i.consumeIcon = consumeIcon;
-
-					context.itemsByType.consumable.push(i);
-					break;
-				case "robot_armor":
-					robotApparel.push(i);
+					i.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
+						i.system.consumableType
+					];
 					break;
 				case "skill":
+					// Get the localized name of a skill, if there is no
+					// localization then it is likely a custom skill, in which
+					// case we will just use it's original name
+					//
 					const nameKey = `FALLOUT.SKILL.${i.name}`;
 					i.localizedName = game.i18n.localize(nameKey);
 
@@ -170,8 +150,6 @@ export default class FalloutActorSheet extends ActorSheet {
 					i.localizedDefaultAttribute = game.i18n.localize(
 						`FALLOUT.AbilityAbbr.${i.system.defaultAttribute}`
 					);
-
-					context.itemsByType.skill.push(i);
 					break;
 				case "weapon":
 					if (i.system.ammo !== "") {
@@ -182,70 +160,35 @@ export default class FalloutActorSheet extends ActorSheet {
 
 						i.shotsAvailable = shotsAvailable;
 					}
-
-					context.itemsByType.weapon.push(i);
 					break;
-				default:
-					if (!Array.isArray(context.itemsByType[i.type])) {
-						inventory.push(i);
-					}
-					else {
-						context.itemsByType[i.type].push(i);
-					}
+			}
+
+			// Skip moving this into its own section if it's not going to be
+			// separated into a specific inventory section
+			//
+			// Items that don't have their own section just go into the main
+			// inventory to appear in the "Unsorted" section
+			//
+			// Some inventory items are completely ignored, for example apparel
+			// and robot_armor as these are handled differently
+			//
+			if (this.inventorySections.includes(i.type)) {
+				context.itemsByType[i.type].push(i);
+			}
+			else if (!this.ignoredInventoryItems.includes(i.type)) {
+				context.inventory.push(i);
 			}
 		}
 
+		// Sort skills by their localized name for convenience of non-English
+		// speakers
+		//
 		context.itemsByType.skill.sort(
 			(a, b) => a.localizedName.localeCompare(b.localizedName)
 		);
-
-		let clothing = apparel.filter(a => a.system.appareltype === "clothing");
-		let outfit = apparel.filter(a => a.system.appareltype === "outfit");
-		let headgear = apparel.filter(a => a.system.appareltype === "headgear");
-		let armor = apparel.filter(a => a.system.appareltype === "armor");
-		let powerArmor = apparel.filter(a => a.system.appareltype === "powerArmor");
-		let plating = robotApparel.filter(a => a.system.appareltype === "plating");
-		let robotArmor = robotApparel.filter(a => a.system.appareltype === "armor");
-
-		context.allApparel = [
-			{ apparelType: "clothing", list: clothing },
-			{ apparelType: "outfit", list: outfit },
-			{ apparelType: "headgear", list: headgear },
-			{ apparelType: "armor", list: armor },
-			{ apparelType: "powerArmor", list: powerArmor },
-		];
-
-		context.allRobotApparel = [
-			{ apparelType: "plating", list: plating },
-			{ apparelType: "armor", list: robotArmor },
-		];
-
-		// WRAP INVENTORY DEPENDING ON THE CHARACTER TYPE:
-		// for example put apparel in inventory for all except the character actor.
-
-		// NPC and Creature Inventory = all physical items that are not weapons
-		if (this.actor.type === "npc" || this.actor.type === "creature") {
-			context.inventory = context.items.filter(i => {
-				const hasWeight = !isNaN(parseInt(i.system.weight ?? null));
-				return i.type !== "weapon" && hasWeight;
-			});
-		}
-		if (this.actor.type === "character") {
-			context.inventory = [
-				...robotApparel,
-				...context.itemsByType.robot_mod,
-				...inventory,
-			];
-		}
-		if (this.actor.type === "robot") {
-			context.inventory = [...apparel, ...inventory];
-		}
-
-		// ADD FAVOURITE ITEMS
-		context.favoriteWeapons = context.items.filter(
-			i => i.type === "weapon" && i.system.favorite
-		);
 	}
+
+	_getFilteredApparelSections(context) {}
 
 	/* -------------------------------------------- */
 
@@ -475,17 +418,14 @@ export default class FalloutActorSheet extends ActorSheet {
 				el.dataset.tooltip = "FALLOUT.Actor.Warnings.ActiveEffectOverride";
 			});
 		}
-
-		html.find("input.derived-value").each((i, el) => {
-			el.dataset.tooltip = "FALLOUT.Actor.Warnings.DerivedValue";
-		});
 	}
 
 	/**
-   * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
-   * @param {Event} event   The originating click event
-   * @private
-   */
+	 * Handle creating a new Owned Item for the actor using initial data defined
+	 * in the HTML dataset
+	 * @param {Event} event	 The originating click event
+	 * @private
+	 */
 	async _onItemCreate(event) {
 		event.preventDefault();
 		const header = event.currentTarget;
@@ -568,7 +508,7 @@ export default class FalloutActorSheet extends ActorSheet {
 		li.toggleClass("expanded");
 	}
 
-	_prepareMaterials(context) {
+	async _prepareMaterials(context) {
 		context.materials = [];
 		for (const material of ["junk", "common", "uncommon", "rare"]) {
 			context.materials.push({

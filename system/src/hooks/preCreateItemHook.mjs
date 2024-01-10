@@ -14,17 +14,25 @@ export const preCreateItemHook = {
 				let warningMessage = null;
 
 				switch (item.type) {
-					case "special_ability":
-						if (["creature", "npc"].includes(parentType)) return true;
-						warningMessage = "ONLY NPCs AND CREATURES CAN HAVE SPECIAL ABILITIES";
+					case "addiction":
+						if (parentType === "character") return true;
+						warningMessage = "ONLY CHARACTERS CAN HAVE ADDICTIONS";
+						break;
+					case "disease":
+						if (parentType === "character") return true;
+						warningMessage = "ONLY CHARACTERS CAN HAVE DISEASES";
+						break;
+					case "object_or_structure":
+						if (parentType === "settlement") return true;
+						warningMessage = "ONLY SETTLEMENTS CAN HAVE OBJECTS OR STRUCTURES";
 						break;
 					case "perk":
 						if (["character", "robot"].includes(parentType)) return true;
 						warningMessage = "ONLY PLAYERS CAN HAVE PERKS";
 						break;
-					case "disease":
-						if (parentType === "character") return true;
-						warningMessage = "ONLY CHARACTERS CAN HAVE DISEASES";
+					case "trait":
+						if (["character", "robot"].includes(parentType)) return true;
+						warningMessage = "ONLY PLAYERS CAN HAVE TRAITS";
 						break;
 					case "skill":
 						const correctParentType =
@@ -42,6 +50,10 @@ export const preCreateItemHook = {
 						else if (existingItem) {
 							warningMessage = "THERE IS ALREADY A SKILL WITH THAT NAME";
 						}
+						break;
+					case "special_ability":
+						if (["creature", "npc"].includes(parentType)) return true;
+						warningMessage = "ONLY NPCs AND CREATURES CAN HAVE SPECIAL ABILITIES";
 						break;
 					default:
 				}

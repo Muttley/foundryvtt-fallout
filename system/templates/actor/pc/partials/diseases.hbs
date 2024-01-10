@@ -17,7 +17,7 @@
 			</div>
 		</li>
 		{{#each itemsByType.disease as |item id|}}
-			{{>	actor/parts/simple-expandable-item
+			{{>	actor/_shared-partials/simple-expandable-item
 				item=item
 				extraName=item.system.duration
 			}}

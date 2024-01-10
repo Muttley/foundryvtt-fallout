@@ -4,6 +4,15 @@
  * @extends {Actor}
  */
 export default class FalloutActor extends Actor {
+
+	get isNotRobot() {
+		return !this.isRobot;
+	}
+
+	get isRobot() {
+		return this.type === "robot";
+	}
+
 	/** @override */
 	prepareData() {
 		super.prepareData();

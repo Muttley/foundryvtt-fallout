@@ -81,6 +81,13 @@ FALLOUT.CONSUMABLE_TYPES = {
 	other: "FALLOUT.OTHER",
 };
 
+FALLOUT.CONSUMABLE_USE_ICONS = {
+	food: "fas fa-pizza-slice",
+	beverage: "fas fa-mug-hot",
+	chem: "fas fa-flask",
+	other: "fas fa-pizza-slice",
+};
+
 FALLOUT.CREATURE_ATTRIBUTES = {
 	body: "FALLOUT.CREATURE.body",
 	mind: "FALLOUT.CREATURE.mind",

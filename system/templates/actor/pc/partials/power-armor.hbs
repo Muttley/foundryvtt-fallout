@@ -1,0 +1,43 @@
+<div
+	class="box"
+	style="width: 139px; margin-left: 19px;"
+>
+	<div class="box-header">
+		<h4
+			class="tab-switch upperC"
+			data-tab="apparel"
+		>
+			{{localize "FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH"}}
+		</h4>
+	</div>
+	<div class="power-armor-status">
+		{{#each system.outfittedLocations as |location key|}}
+			{{> powerArmorHealth
+				location=(lookup ../system.outfittedLocations key)
+				key=key
+			}}
+		{{/each}}
+	</div>
+</div>
+
+{{#*inline "powerArmorHealth"}}
+	<div class="body-part {{key}}">
+		<label>
+			{{#ifCond location.system.appareltype '===' 'powerArmor'}}
+				{{location.system.health.max}}
+			{{/ifCond}}
+		</label>
+		<input
+			class="num-short-2 power-armor-monitor-health-value"
+			data-body-location="{{key}}"
+			data-item-id="{{location._id}}"
+			min="0"
+			type="number"
+			{{#ifCond location.system.appareltype '===' 'powerArmor'}}
+				value="{{location.system.health.value}}"
+			{{else}}
+				value=""
+			{{/ifCond}}
+		>
+	</div>
+{{/inline}}

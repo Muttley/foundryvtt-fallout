@@ -1,11 +1,6 @@
-import FalloutActorSheet from "./FalloutActorSheet.mjs";
+import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 
-// import {
-// 	onManageActiveEffect,
-// 	prepareActiveEffectCategories,
-// } from "../effects.mjs";
-
-export default class FalloutSettlementSheet extends FalloutActorSheet {
+export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	get initialTab() {
@@ -16,8 +11,8 @@ export default class FalloutSettlementSheet extends FalloutActorSheet {
 	async getData(options) {
 		const context = await super.getData(options);
 
-		this._prepareItems(context);
-		this._prepareMaterials(context);
+		await this._prepareItems(context);
+		await this._prepareMaterials(context);
 
 		return context;
 	}
@@ -52,7 +47,6 @@ export default class FalloutSettlementSheet extends FalloutActorSheet {
 		if (targetIsCorrectType && targetIsContainer && sourceIsNotStructure) {
 			source.system.parentItem = target._id;
 
-			// Create the owned item
 			return this._onDropItemCreate(source);
 		}
 		else {
@@ -118,7 +112,6 @@ export default class FalloutSettlementSheet extends FalloutActorSheet {
 				}
 			}
 			else {
-
 				context.stockpile.push(i);
 			}
 		}
@@ -150,7 +143,7 @@ export default class FalloutSettlementSheet extends FalloutActorSheet {
 
 		const topLevelItems = settlementItems.filter(i => i.hasNoParent);
 
-		const __calcDepth = function(item, depth) {
+		const __calcDepth = async function(item, depth) {
 			item.depth = depth;
 
 			for (const child of item.children) {

@@ -1,0 +1,54 @@
+<div class="tab status" data-group="primary" data-tab="status">
+	<div class="condition-box flexrow">
+		{{!-- LEFT COLUMN --}}
+		<div style="padding-right:10px;">
+			{{> actor/pc/partials/derived }}
+			{{> actor/pc/partials/resistances }}
+
+			{{#unless isRobot}}
+				{{> actor/pc/partials/statuses }}
+			{{/unless}}
+		</div>
+
+		{{!-- MIDDLE COLUMN --}}
+		{{> actor/pc/partials/pip-boy }}
+
+		{{!-- RIGHT COLUMN --}}
+		<div style="padding-left:10px;">
+			{{> actor/pc/partials/health }}
+
+			{{#unless isRobot}}
+				{{> actor/pc/partials/radiation }}
+			{{/unless}}
+
+			{{> actor/pc/partials/injuries }}
+
+			{{#if isRobot}}
+				{{> actor/pc/partials/robot-mods }}
+			{{else}}
+				{{> actor/pc/partials/power-armor }}
+			{{/if}}
+		</div>
+	</div>
+
+	{{> actor/pc/partials/encumbrance }}
+
+	{{!-- FAVOURITE ROW // EQUIPPED --}}
+	<div class="status footer grid grid-5col">
+		<div class="grid-span-2">
+			{{> actor/pc/partials/favorite-weapons }}
+		</div>
+		<div class="grid-span-2">
+			{{#unless isRobot}}
+				{{> actor/pc/partials/addictions}}
+				{{> actor/pc/partials/diseases}}
+			{{/unless}}
+		</div>
+		<div>
+			{{#unless isRobot}}
+				{{> actor/pc/partials/conditions}}
+			{{/unless}}
+		</div>
+	</div>
+
+</div>

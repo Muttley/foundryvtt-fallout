@@ -1,13 +1,22 @@
-import FalloutActorSheet from "./FalloutActorSheet.mjs";
+import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 
 /**
- * @extends {FalloutActorSheet}
+ * @extends {FalloutBaseActorSheet}
  */
-export default class FalloutNpcSheet extends FalloutActorSheet {
+export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	get initialTab() {
 		return "abilities";
+	}
+
+	/** @override */
+	get inventorySections() {
+		return [
+			"skill",
+			"special_ability",
+			"weapon",
+		];
 	}
 
 	/** @override */

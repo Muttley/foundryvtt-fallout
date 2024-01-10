@@ -1,0 +1,69 @@
+<div class="tab inventory" data-group="primary" data-tab="inventory">
+
+	{{> actor/pc/partials/currency }}
+
+	<div class="flexrow">
+		{{!-- LEFT --}}
+		<div style="padding-right: 5px;">
+
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.APPAREL_MODS")
+				createTitle=(localize "FALLOUT.TEMPLATES.Create_Apparel_Mod")
+				items=itemsByType.apparel_mod
+				type="apparel_mod"
+			}}
+
+			{{#if isRobot}}
+				{{> actor/pc/partials/inventory-block
+					blockTitle=(localize "FALLOUT.UI.ROBOT_MODULES")
+					createTitle=(localize "FALLOUT.TEMPLATES.Create_Robot_Module")
+					items=itemsByType.robot_mod
+					type="robot_mod"
+				}}
+			{{/if}}
+
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.WEAPON_MODS")
+				createTitle=(localize "FALLOUT.TEMPLATES.Create_Weapon_Mod")
+				items=itemsByType.weapon_mod
+				type="weapon_mod"
+			}}
+
+			{{> actor/_shared-partials/materials }}
+
+		</div>
+
+		{{!-- RIGHT --}}
+		<div>
+
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.CONSUMABLES")
+				createTitle=(localize "FALLOUT.TEMPLATES.Create_Consumable")
+				items=itemsByType.consumable
+				type="consumable"
+			}}
+
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.BOOKS_AND_MAGZS")
+				createTitle=(localize "FALLOUT.TEMPLATES.Create_books_and_magz")
+				items=itemsByType.books_and_magz
+				type="books_and_magz"
+			}}
+
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.MISCELLANY")
+				createTitle=(localize "FALLOUT.TEMPLATES.Create_Miscellany")
+				items=itemsByType.miscellany
+				type="miscellany"
+			}}
+
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.UNSORTED")
+				items=inventory
+				noCreate=true
+			}}
+
+		</div>
+
+	</div>
+</div>

@@ -2,15 +2,17 @@
 	<div class="flexrow">
 		{{#if (ne item.system.quantity undefined)}}
 			<input
-				type="number"
 				class="item-quantity num-short-2"
-				{{!-- name="system.quantity" --}}
-				value="{{item.system.quantity}}"
 				min="0"
+				type="number"
+				value="{{item.system.quantity}}"
 			>
 			&nbsp;&nbsp;
 		{{/if}}
-		<div class="item-name flexlarge expandable-info" data-item-id="{{item._id}}">
+		<div
+			class="item-name flexlarge expandable-info"
+			data-item-id="{{item._id}}"
+		>
 			<h4>
 				<a class="resource-label">
 					{{item.name}}
@@ -35,14 +37,16 @@
 					</a>
 				{{/ifCond}}
 				{{#ifCond item.type '===' 'consumable'}}
-					<a
-						class="item-control item-consume"
-						title='{{localize "FALLOUT.UI.Consume"}}'
-					>
-						<i class="fas {{item.consumeIcon}}"></i>
-					</a>
+					{{#unless isRobot}}
+						<a
+							class="item-control item-consume"
+							title='{{localize "FALLOUT.UI.Consume"}}'
+						>
+							<i class="{{item.consumeIcon}}"></i>
+						</a>
+					{{/unless}}
 				{{/ifCond}}
-				{{#if item.system.equippable}}
+				{{#if item.canBeEquipped}}
 					<a
 						{{#if item.system.equipped}}
 							class="item-control item-toggle"

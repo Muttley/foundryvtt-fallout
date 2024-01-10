@@ -13,10 +13,12 @@
 				{{> actor/npc/partials/defense }}
 			</div>
 
-			<div class="flexrow resource-row">
-				{{> actor/npc/partials/carry-weight }}
-				{{> actor/npc/partials/melee-bonus }}
-			</div>
+			{{#if isNPC}}
+				<div class="flexrow resource-row">
+					{{> actor/npc/partials/carry-weight }}
+					{{> actor/npc/partials/melee-bonus }}
+				</div>
+			{{/if}}
 
 			{{> actor/npc/partials/body
 				FALLOUT=FALLOUT

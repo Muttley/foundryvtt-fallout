@@ -1,0 +1,47 @@
+<div
+	class="flex"
+	style="margin: 5px 0 10px 0; padding: 10px; background-color: black;"
+>
+	<span
+		class="flex align-mid"
+		style="flex-basis: 200px; margin-right: 20px;"
+	>
+		<label
+			class="upperC"
+			style="color: white;"
+		>
+			<strong>
+				{{localize 'FALLOUT.UI.CAPS'}}:
+			</strong>
+		</label>
+		<input
+			class="underline"
+			data-dtype="Number"
+			name="system.currency.caps"
+			type="text"
+			value="{{system.currency.caps}}"
+		>
+	</span>
+
+	<span
+		class="flex align-mid"
+		style="flex-basis: 100%;"
+	>
+		<label
+			class="upperC"
+			style="color: white;"
+		>
+			<strong>
+				{{localize 'FALLOUT.UI.OTHER'}}:
+			</strong>
+		</label>
+		<input
+			class="underline"
+			name="system.currency.other"
+			placeholder="Pre War Money, Gold, New Money, etc."
+			style="width: 100%;"
+			type="text"
+			value="{{system.currency.other}}"
+		>
+	</span>
+</div>
