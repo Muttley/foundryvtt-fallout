@@ -17,8 +17,8 @@ FALLOUT.actor.inventory.materials.junk: Złom
 FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
-FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
-FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
+FALLOUT.Actor.Warnings.ActiveEffectOverride: Ta wartość jest modyfikowana przez Aktywny Efekt i nie może być edytowana. Wyłącz efekt, aby ją edytować.
+FALLOUT.Actor.Warnings.DerivedValue: Jest to wartość obliczona automatycznie, nie może być edytowana.
 FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
@@ -49,9 +49,9 @@ FALLOUT.BODYLOCATION.character.legL: Lewa Noga
 FALLOUT.BODYLOCATION.character.legR: Prawa Noga
 FALLOUT.BODYLOCATION.character.torso: Korpus
 FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Głowa | Sensory | Głowa | Głowa
-FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Lewa Ręka | Ramie 1 | Lewa Przednia Noga | Lewe skrzydło
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Lewa Ręka | Ramie 1 | Lewa Przednia Noga | Lewe skrzydło (jako Noga)
 FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Lewa Noga | Silnik | Lewa Tylna Noga | Odnóża
-FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Prawa Ręka | Ramie 2 | Prawa Przednia Noga | Prawe skrzydło
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Prawa Ręka | Ramie 2 | Prawa Przednia Noga | Prawe skrzydło (jako Noga)
 FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Prawa Noga | Silnik | Prawa Tylna Noga | Odnóża
 FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Korpus | Korpus | Korpus | Korpus
 FALLOUT.BODYLOCATION.robot.armL: Ramie 1
@@ -192,12 +192,12 @@ FALLOUT.TEMPLATES.Alcoholic: Alkoholik
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
 FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
-FALLOUT.TEMPLATES.AmmoName: Ammo Name
+FALLOUT.TEMPLATES.AmmoName: Nazwa Amunicji
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
 FALLOUT.TEMPLATES.Armor_Type: Typ pancerza
-FALLOUT.TEMPLATES.Attack: Attack
+FALLOUT.TEMPLATES.Attack: Atak
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
@@ -206,7 +206,7 @@ FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
 FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
 FALLOUT.TEMPLATES.conditions.exhausted: Wyczerpany
-FALLOUT.TEMPLATES.conditions.fatigue: Zmęczenie
+FALLOUT.TEMPLATES.conditions.fatigue: zmęczenie
 FALLOUT.TEMPLATES.conditions.full: Pełen
 FALLOUT.TEMPLATES.conditions.hunger: Głód
 FALLOUT.TEMPLATES.conditions.hungry: Głodny
@@ -264,7 +264,7 @@ FALLOUT.TEMPLATES.GENERAL: Ogólny
 FALLOUT.TEMPLATES.Healthy: Zdrowie
 FALLOUT.TEMPLATES.HitLocationLabel: Lokalizacja Trafienia
 FALLOUT.TEMPLATES.HP_Healed: Wyleczone PZ
-FALLOUT.TEMPLATES.HP: HP
+FALLOUT.TEMPLATES.HP: PZ
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
@@ -336,8 +336,8 @@ FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
 FALLOUT.TEMPLATES.Weapon_Qualities: Cechy Broni
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
-FALLOUT.TEMPLATES.Weapon: Weapon
-FALLOUT.TEMPLATES.WeaponName: Weapon Name
+FALLOUT.TEMPLATES.Weapon: Broń
+FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
