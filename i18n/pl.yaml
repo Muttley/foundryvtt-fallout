@@ -208,7 +208,7 @@ FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
 FALLOUT.TEMPLATES.conditions.exhausted: Wyczerpany
 FALLOUT.TEMPLATES.conditions.fatigue: zmęczenie
 FALLOUT.TEMPLATES.conditions.full: Pełen
-FALLOUT.TEMPLATES.conditions.hunger: Głód
+FALLOUT.TEMPLATES.conditions.hunger: głód
 FALLOUT.TEMPLATES.conditions.hungry: Głodny
 FALLOUT.TEMPLATES.conditions.hydrated: Nawodniony
 FALLOUT.TEMPLATES.conditions.intoxication.label: Nietrzeźwość
@@ -217,9 +217,9 @@ FALLOUT.TEMPLATES.conditions.peckish: Głodnawy
 FALLOUT.TEMPLATES.conditions.quenched: Opity
 FALLOUT.TEMPLATES.conditions.rested: Wypoczęty
 FALLOUT.TEMPLATES.conditions.sated: Syty
-FALLOUT.TEMPLATES.conditions.sleep: Niewyspanie
+FALLOUT.TEMPLATES.conditions.sleep: niewyspanie
 FALLOUT.TEMPLATES.conditions.starving: Głodujący
-FALLOUT.TEMPLATES.conditions.thirst: Pragnienie
+FALLOUT.TEMPLATES.conditions.thirst: pragnienie
 FALLOUT.TEMPLATES.conditions.thirsty: Spragniony
 FALLOUT.TEMPLATES.conditions.tired: Znużony
 FALLOUT.TEMPLATES.conditions.weary: Zmęczony
@@ -240,7 +240,7 @@ FALLOUT.TEMPLATES.Create_Weapon: Stwórz Broń
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Stwórz struktury i pomieszczenia
 FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
-FALLOUT.TEMPLATES.current: Obecny
+FALLOUT.TEMPLATES.current: obecny
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
