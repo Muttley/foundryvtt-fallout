@@ -229,10 +229,10 @@ FALLOUT.TEMPLATES.Consumable_Type: Type
 FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Criar Munição
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Criar Mod de Vestuário
-FALLOUT.TEMPLATES.Create_books_and_magz: Create Book/Magazine
+FALLOUT.TEMPLATES.Create_books_and_magz: Criar Livros/Revistas
 FALLOUT.TEMPLATES.Create_Consumable: Criar Consumível
 FALLOUT.TEMPLATES.Create_Disease: Create Disease
-FALLOUT.TEMPLATES.Create_Miscellany: Create Miscellany
+FALLOUT.TEMPLATES.Create_Miscellany: Criar Item Geral
 FALLOUT.TEMPLATES.Create_Robot_Module: Criar Mod Robótico
 FALLOUT.TEMPLATES.Create_Special_Ability: Criar Habilidade Especial
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Criar Mod de Arma
