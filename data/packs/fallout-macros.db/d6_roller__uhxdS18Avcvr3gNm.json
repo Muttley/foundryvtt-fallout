@@ -2,7 +2,7 @@
 	"_id": "uhxdS18Avcvr3gNm",
 	"_key": "!macros!uhxdS18Avcvr3gNm",
 	"author": "OKzfXIxFsK2wBLYU",
-	"command": "fallout.DialogD6.createDialog({diceNum:2})",
+	"command": "/**\n ***************************************************************\n * This macro can be used to roll one or more Combat Dice.\n **************************************************************/\n\nfallout.DialogD6.createDialog({ diceNum: 1 });",
 	"folder": null,
 	"img": "systems/fallout/assets/chat/d6.webp",
 	"name": "D6 Roller",
