@@ -125,6 +125,10 @@ FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
+FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
+FALLOUT.MACRO.NewSession.name: New Session
+FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
 FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
