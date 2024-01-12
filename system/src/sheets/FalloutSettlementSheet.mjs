@@ -3,19 +3,142 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	/** @override */
+	static get defaultOptions() {
+		return mergeObject(super.defaultOptions, {
+			submitOnChange: true,
+		});
+	}
+
+	/** @override */
 	get initialTab() {
 		return "status";
+	}
+
+	activateListeners(html) {
+		super.activateListeners(html);
+
+		// -------------------------------------------------------------
+		// ! Everything below here is only needed if the sheet is editable
+		if (!this.isEditable) return;
+
+		html.find(".settler-create").click(this._onSettlerCreate.bind(this));
+
+		html.find(".settler-delete").click(async event => {
+			const settlerUuid = $(event.currentTarget).data("settlerId");
+			this._deleteSettler(settlerUuid);
+		});
+		html.find(".settler-open").click(async event => {
+			const settlerUuid = $(event.currentTarget).data("settlerId");
+			const actor = await fromUuid(settlerUuid);
+
+			if (actor) actor.sheet.render(true);
+		});
 	}
 
 	/** @override */
 	async getData(options) {
 		const context = await super.getData(options);
 
-		await this._prepareItems(context);
 		await this._prepareMaterials(context);
+
+		const actions = [];
+		for (const action in CONFIG.FALLOUT.SETTLEMENT_ACTIONS) {
+			actions.push({
+				id: action,
+				name: CONFIG.FALLOUT.SETTLEMENT_ACTIONS[action],
+			});
+		}
+		context.actions = actions.sort((a, b) => a.name.localeCompare(b.name));
+
+		context.candidates = [...context.settlers];
+
+		const playerCharacters = game.actors.filter(
+			a => a.type === "character" && a.hasPlayerOwner
+		);
+
+		for (const character of playerCharacters) {
+			context.candidates.push({
+				uuid: character.uuid,
+				name: character.name,
+			});
+		}
+
+		context.candidates = context.candidates.sort(
+			(a, b) => a.name.localeCompare(b.name)
+		);
 
 		return context;
 	}
+
+
+	async _addSettler(uuid) {
+		const currentSettlers = duplicate(this.actor.system.settlers);
+
+		if (currentSettlers.find(s => s.actorUuid === uuid)) {
+			ui.notifications.warn(
+				game.i18n.format("FALLOUT.Actor.Warnings.NpcAlreadyResident", {
+					settlementName: this.actor.name,
+				})
+			);
+			return;
+		}
+
+		currentSettlers.push({
+			actorUuid: uuid,
+			action: "unnasigned",
+		});
+
+		this.actor.update({
+			"system.settlers": currentSettlers,
+			"system.people.value": currentSettlers.length,
+		});
+	}
+
+
+	async _deleteMissingSettlers(missingSettlers) {
+		const newSettlers = [];
+
+		for (const settler of this.actor.system.settlers) {
+			if (missingSettlers.includes(settler.actorUuid)) continue;
+			newSettlers.push(settler);
+		}
+
+		return this.actor.update({
+			"system.settlers": newSettlers,
+			"system.people.value": newSettlers.length,
+		});
+	}
+
+
+	async _deleteSettler(uuid) {
+		const newSettlers = [];
+
+		for (const settler of this.actor.system.settlers) {
+			if (settler.actorUuid === uuid) continue;
+			newSettlers.push(settler);
+		}
+
+		return this.actor.update({
+			"system.settlers": newSettlers,
+			"system.people.value": newSettlers.length,
+		});
+	}
+
+
+	/** @override */
+	async _onDropActor(event, data) {
+		if (!game.user.isGM) return;
+
+		const droppedActor = data?.uuid ? await fromUuid(data.uuid) : null;
+
+		// Only NPCs can be dropped
+		if (droppedActor.type !== "npc") return;
+
+		if (droppedActor) {
+			this._addSettler(droppedActor.uuid);
+		}
+	}
+
 
 	/** @override */
 	async _onDropItem(event, data) {
@@ -55,6 +178,23 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 	}
 
 
+	async _onSettlerCreate(event) {
+		event.preventDefault();
+
+		const actorData = {
+			name: "New Settler",
+			type: "npc",
+		};
+
+		const newSettler = await Actor.create(actorData);
+
+		if (newSettler) {
+			await this._addSettler(newSettler.uuid);
+			newSettler.sheet.render(true);
+		}
+	}
+
+
 	/** @override */
 	_onSortItem(event, itemData) {
 		const items = this.actor.items;
@@ -88,8 +228,45 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 	}
 
 	async _prepareItems(context) {
+		context.settlers = [];
+		context.settlerActionCounts = {
+			build: 0,
+			business: 0,
+			guard: 0,
+			hunting_and_gathering: 0,
+			scavenging: 0,
+			tend_crops: 0,
+			trade_caravan: 0,
+			unnasigned: 0,
+		};
+
 		context.stockpile = [];
 		context.stockpileUsed = 0;
+
+		const missingSettlers = [];
+		for (const settler of this.actor.system.settlers) {
+			const npcActor = await fromUuid(settler.actorUuid);
+
+			if (npcActor) {
+				context.settlers.push({
+					uuid: settler.actorUuid,
+					name: npcActor.name,
+					actionId: settler.action,
+				});
+
+				context.settlerActionCounts[settler.action]++;
+			}
+			else {
+				missingSettlers.push(settler.actorUuid);
+			}
+		}
+
+		if (missingSettlers.length > 0) {
+			await this._deleteMissingSettlers(missingSettlers);
+		}
+
+		context.settlers.sort((a, b) => a.name.localeCompare(b.name));
+		context.settlers.sort((a, b) => a.actionId.localeCompare(b.actionId));
 
 		const groupedSettlementItems = {
 			crafting_table: [],
@@ -156,5 +333,35 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 		}
 
 		context.settlementObjects = topLevelItems;
+	}
+
+
+	async _updateObject(event, formData) {
+		const settlerActions = {};
+		const re = /^action__(.*)$/;
+
+		for (const dataKey in formData) {
+			const result = dataKey.match(re);
+
+			if (result) {
+				settlerActions[result[1]] = formData[dataKey];
+				delete formData[dataKey];
+			}
+		}
+
+		await this._updateSettlerActions(settlerActions);
+
+		super._updateObject(event, formData);
+	}
+
+
+	async _updateSettlerActions(settlerActions) {
+		const currentSettlers = duplicate(this.actor.system.settlers);
+
+		for (const settler of currentSettlers) {
+			settler.action = settlerActions[settler.actorUuid];
+		}
+
+		return await this.actor.update({"system.settlers": currentSettlers});
 	}
 }

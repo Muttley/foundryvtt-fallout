@@ -1,0 +1,8 @@
+<div class="grid grid-8col">
+	{{#each actions}}
+		{{> actor/settlement/partials/action-tally
+			action=this
+			count=(lookup ../settlerActionCounts this.id)
+		}}
+	{{/each}}
+</div>

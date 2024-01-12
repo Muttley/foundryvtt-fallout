@@ -26,18 +26,19 @@
                 <div class="resource flexrow align-mid">
                     <label
 						class="label"
-						for="system.happiness.value"
+						for="system.happiness.total"
 						style="font-size: 1.2rem;"
 					>
 						{{localize "FALLOUT.SETTLEMENT.Happiness.label"}}
 					</label>
                     <input
 						data-dtype="Number"
-						min="0"
-                        name="system.happiness.value"
+						data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 						style="font-size: 18px; max-width: 2.2rem; text-align: center; margin-right: 10px;"
 						type="number"
-						value="{{system.happiness.value}}"
+						value="{{system.happiness.total}}"
+                        name="system.happiness.total"
+						disabled
 					/>
                 </div>
             </div>

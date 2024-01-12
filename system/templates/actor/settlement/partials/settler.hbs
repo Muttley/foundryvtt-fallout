@@ -1,0 +1,40 @@
+<li class="settler" data-settler-id="{{settler._id}}">
+	<div class="flexrow">
+		<div class="settler-name flexlarge">
+			<h4>
+				<a
+					class="resource-label settler-control settler-open"
+					data-settler-id="{{settler.uuid}}"
+				>
+					{{settler.name}}
+				</a>
+			</h4>
+		</div>
+		<div class="settler-controls">
+			<select
+				data-dtype="String"
+				name="action__{{this.uuid}}"
+				style="font-size: 0.75rem;"
+			>
+				{{#each actions as |action|}}
+					<option
+						value="{{action.id}}"
+						{{#ifCond ../settler.actionId "===" action.id}}
+							selected
+						{{/ifCond}}
+					>
+						{{action.name}}
+					</option>
+				{{/each}}
+			</select>
+			<a
+				class="settler-control settler-delete"
+				data-settler-id="{{settler.uuid}}"
+				title="{{localize 'FALLOUT.TEMPLATES.RemoveSettler'}}"
+			>
+				<i class="fas fa-trash"></i>
+			</a>
+		</div>
+	</div>
+</li>
+

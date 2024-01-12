@@ -1,5 +1,6 @@
 // Section Header
-.items-header {
+.items-header,
+.settlers-header {
 	height: 28px;
 	margin: 2px 0;
 	padding: 0;
@@ -11,7 +12,8 @@
 		font-size: 14px;
 		text-align: center;
 	}
-	.item-name {
+	.item-name,
+	.settler-name {
 		font-weight: bold;
 		padding-left: 5px;
 		text-align: left;
@@ -25,7 +27,8 @@
 /*  Items Lists                              */
 /* ----------------------------------------- */
 
-.items-list {
+.items-list,
+.settlers-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -41,7 +44,8 @@
 	}
 
 	// Item Name
-	.item-name {
+	.item-name,
+	.settler-name {
 		flex: 2;
 		margin: 0;
 		overflow: hidden;
@@ -61,7 +65,8 @@
 	}
 
 	// Control Buttons
-	.item-controls {
+	.item-controls,
+	.settler-controls {
 		display: flex;
 		flex: 0 0 100px;
 		justify-content: flex-end;
@@ -74,7 +79,8 @@
 	}
 
 	// Individual Item
-	.item {
+	.item,
+	.settler {
 		align-items: center;
 		padding: 0 5px; // to align with the header border
 		//border-bottom: 1px solid $c-faint;
@@ -83,7 +89,8 @@
 		&:last-child {
 			border-bottom: none;
 		}
-		.item-name {
+		.item-name,
+		.settler-name {
 			border-bottom: none; // remove h3 style from foundry
 			color: $c-dark;
 			.item-image {
@@ -94,7 +101,8 @@
 				margin: 3px 0 0 0;
 			}
 		}
-		.item-sub-info{
+		.item-sub-info,
+		.settler-sub-info {
 			display: flex;
 			padding: 0.313rem;
 			font-family: $font-small;
@@ -114,7 +122,8 @@
 	}
 
 	// Section Header
-	.items-header {
+	.items-header,
+	.settlers-header {
 		height: 28px;
 		margin: 2px 0;
 		padding: 0;
@@ -129,7 +138,8 @@
 			text-align: center;
 			color: white;
 		}
-		.item-name {
+		.item-name,
+		.settler-name {
 			border-bottom: none; // remove h3 style from foundry
 			color: white;
 			padding-left: 5px;

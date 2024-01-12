@@ -129,15 +129,19 @@
 				"value": 0
 			},
 			"happiness": {
+				"mod": 0,
+				"total": 0,
 				"value": 0
 			},
 			"income": {
 				"value": 0
 			},
+			"leader": "",
 			"people": {
 				"value": 0
 			},
 			"power": {
+				"min": 0,
 				"value": 0
 			},
 			"water": {

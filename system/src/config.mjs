@@ -179,6 +179,28 @@ FALLOUT.SETTLEMENT_ITEM_ICONS = {
 	structure: "fa-solid fa-building",
 };
 
+FALLOUT.SETTLEMENT_ACTION_ICONS = {
+	build: "fa-solid fa-screwdriver-wrench",
+	business: "fa-solid fa-store",
+	guard: "fa-solid fa-shield-halved",
+	hunting_and_gathering: "fa-solid fa-person-rifle",
+	scavenging: "fa-brands fa-searchengin",
+	tend_crops: "fa-solid fa-seedling",
+	trade_caravan: "fa-solid fa-caravan",
+	unnasigned: "fa-regular fa-user",
+};
+
+FALLOUT.SETTLEMENT_ACTIONS = {
+	build: "FALLOUT.SETTLEMENT_ACTION.Build",
+	business: "FALLOUT.SETTLEMENT_ACTION.Business",
+	guard: "FALLOUT.SETTLEMENT_ACTION.Guard",
+	hunting_and_gathering: "FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering",
+	scavenging: "FALLOUT.SETTLEMENT_ACTION.Scavenging",
+	tend_crops: "FALLOUT.SETTLEMENT_ACTION.TendCrops",
+	trade_caravan: "FALLOUT.SETTLEMENT_ACTION.TradeCaravan",
+	unnasigned: "FALLOUT.SETTLEMENT_ACTION.Unnasigned",
+};
+
 FALLOUT.SETTLEMENT_ITEMS = {
 	crafting_table: "FALLOUT.SETTLEMENT_ITEM.CraftingTable",
 	defense: "FALLOUT.SETTLEMENT_ITEM.Defense",

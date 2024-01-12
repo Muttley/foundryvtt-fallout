@@ -4,12 +4,42 @@
 			{{label}}
 		</label>
 	</div>
-	<input
-		data-dtype="Number"
-		min="0"
-		name="system.{{attribute}}.value"
-		style="font-size: 18px; text-align: center;"
-		type="number"
-		value="{{value}}"
-	/>
+	{{#ifCond attribute "===" "people"}}
+		<div class="grid" style="margin: 0; padding: 0; grid-template-columns: 1fr min-content 1fr; font-size: 18px;">
+			<input
+				data-dtype="Number"
+				min="0"
+				name="system.{{attribute}}.value"
+				{{#ifCond data.value ">" data.max}}
+					style="font-size: 18px; text-align: center; color: lightpink;"
+				{{else}}
+					style="font-size: 18px; text-align: center;"
+				{{/ifCond}}
+				type="number"
+				value="{{data.value}}"
+			/>
+			<div style="align-self: center;">/</div>
+			<input
+				data-dtype="Number"
+				style="font-size: 18px; text-align: center;"
+				type="number"
+				data-tooltip="{{rangeError}}"
+				value="{{data.max}}"
+				disabled
+			/>
+		</div>
+	{{else}}
+		<input
+			data-dtype="Number"
+			min="0"
+			name="system.{{attribute}}.value"
+			{{#ifCond data.value "<" data.min}}
+				style="font-size: 18px; text-align: center; color: lightpink;"
+			{{else}}
+				style="font-size: 18px; text-align: center;"
+			{{/ifCond}}
+			type="number"
+			value="{{data.value}}"
+		/>
+	{{/ifCond}}
 </div>

@@ -5,13 +5,34 @@
  */
 export default class FalloutActor extends Actor {
 
+	/**
+	 * Update any settlement sheets that may be linked to the modified Actor
+	 *
+	 * @static
+	 * @param {*} actor
+	 * @param {*} options
+	 * @param {*} userId
+	 */
+	static updateLinkedSettlementSheets(actor, options, userId) {
+		if (!game.user.isGM) return;
+		if (!actor.type === "npc") return;
+
+		const settlements = game.actors.filter(a => a.type === "settlement");
+		for (const settlement of settlements) {
+			settlement.sheet.render(false);
+		}
+	}
+
+
 	get isNotRobot() {
 		return !this.isRobot;
 	}
 
+
 	get isRobot() {
 		return this.type === "robot";
 	}
+
 
 	/** @override */
 	prepareData() {
@@ -341,6 +362,26 @@ export default class FalloutActor extends Actor {
 
 		this.system.storage.value =
 			parseInt(this.system.storage.base) + parseInt(this.system.storage.mod);
+
+		this.system.people.max = 0;
+		if (this.system.leader !== "") {
+			const leader = fromUuidSync(this.system.leader);
+
+			this.system.people.max = parseInt(leader.system.attributes.cha.value) + 10;
+		}
+		const people = this.system.people.value;
+
+		let happiness = 10;
+		for (const attribute of ["beds", "defense", "food", "water"]) {
+			this.system[attribute].min = people;
+			if (this.system[attribute].value < people) happiness--;
+		}
+
+		this.system.happiness.value = happiness;
+		this.system.happiness.total = this.system.happiness.value + this.system.happiness.mod;
+
+		if (this.system.happiness.total < 1) this.system.happiness.total = 1;
+		if (this.system.happiness.total > 20) this.system.happiness.total = 20;
 
 		this.system.storage.total = this._getItemsTotalWeight();
 	}

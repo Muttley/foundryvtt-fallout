@@ -145,12 +145,20 @@ export default class FalloutItemSheet extends ItemSheet {
 				const descendants = [];
 				__getDescendants(descendants, this.item.actor, item);
 
-				const possibleParents =
+				let possibleParents =
 					await this.item.actor.items.filter(i =>
 						["structure", "room", "store"].includes(i.system.itemType)
 						&& item._id !== i._id
 						&& (!descendants.find(d => d._id === i._id))
 					) ?? [];
+
+				if (this.item.system.itemType === "structure") possibleParents = [];
+
+				if (this.item.system.itemType === "room") {
+					possibleParents = possibleParents.filter(
+						i => i.system.itemType === "structure"
+					);
+				}
 
 				const parentChoices = [];
 				for (const possibleParent of possibleParents) {
