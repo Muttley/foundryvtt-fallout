@@ -1,3 +1,8 @@
+# v11.3.1
+
+## Bugfix
+- [#110] Migrations not running correctly
+
 # v11.3.0
 
 ## Enhancements
