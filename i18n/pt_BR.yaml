@@ -19,6 +19,7 @@ FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
 FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
+FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
 FALLOUT.Add: Add
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
@@ -146,6 +147,14 @@ FALLOUT.RESISTANCE.poison: Veneno
 FALLOUT.RESISTANCE.radiation: Radiação
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
+FALLOUT.SETTLEMENT_ACTION.Build: Build
+FALLOUT.SETTLEMENT_ACTION.Business: Business
+FALLOUT.SETTLEMENT_ACTION.Guard: Guard
+FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Hunting and Gathering
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Scavenging
+FALLOUT.SETTLEMENT_ACTION.TendCrops: Tend Crops
+FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Trade Caravan
+FALLOUT.SETTLEMENT_ACTION.Unnasigned: Unnasigned
 FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
 FALLOUT.SETTLEMENT_ITEM.Defense: Defense
 FALLOUT.SETTLEMENT_ITEM.Power: Power
@@ -158,6 +167,7 @@ FALLOUT.SETTLEMENT.Defense.label: Defense
 FALLOUT.SETTLEMENT.Food.label: Food
 FALLOUT.SETTLEMENT.Happiness.label: Happiness
 FALLOUT.SETTLEMENT.Income.label: Income
+FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max with Current Leader
 FALLOUT.SETTLEMENT.People.label: People
 FALLOUT.SETTLEMENT.Power.label: Power
 FALLOUT.SETTLEMENT.Water.label: Water
@@ -237,10 +247,12 @@ FALLOUT.TEMPLATES.Create_Robot_Module: Criar Mod Robótico
 FALLOUT.TEMPLATES.Create_Special_Ability: Criar Habilidade Especial
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Criar Mod de Arma
 FALLOUT.TEMPLATES.Create_Weapon: Criar Arma
+FALLOUT.TEMPLATES.CreateNpc: Create NPC
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
 FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
 FALLOUT.TEMPLATES.Creature_Skill: Skill da Criatura
 FALLOUT.TEMPLATES.current: atual
+FALLOUT.TEMPLATES.CurrentLeader: Current Leader
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
 FALLOUT.TEMPLATES.DAMAGE: DANO
@@ -302,6 +314,7 @@ FALLOUT.TEMPLATES.RANGE: Alcance
 FALLOUT.TEMPLATES.Rank: Rank
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [atual/máximo]
 FALLOUT.TEMPLATES.Re_roll: Re-role
+FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
 FALLOUT.TEMPLATES.Requirements: Requisitos
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistências
