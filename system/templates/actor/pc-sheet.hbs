@@ -1,0 +1,39 @@
+<form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
+
+	{{> actor/_shared-partials/header }}
+
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="status">
+			{{localize "FALLOUT.TEMPLATES.Status"}}
+		</a>
+		<a class="item" data-tab="abilities">
+			{{localize "FALLOUT.TEMPLATES.Abilities"}}
+		</a>
+		<a class="item" data-tab="weapons">
+			{{localize "FALLOUT.TEMPLATES.Weapons"}}
+		</a>
+		<a class="item" data-tab="apparel">
+			{{localize "FALLOUT.TEMPLATES.Apparel"}}
+		</a>
+		<a class="item" data-tab="inventory">
+			{{localize "FALLOUT.TEMPLATES.Gear"}}
+		</a>
+		<a class="item" data-tab="data">
+			{{localize "FALLOUT.TEMPLATES.Data"}}
+		</a>
+		<a class="item" data-tab="effects">
+			{{localize "FALLOUT.TEMPLATES.Effects"}}
+		</a>
+	</nav>
+
+	<section class="sheet-body">
+		{{> actor/pc/tabs/status }}
+		{{> actor/pc/tabs/abilities }}
+		{{> actor/pc/tabs/weapons }}
+		{{> actor/pc/tabs/apparel }}
+		{{> actor/pc/tabs/inventory }}
+		{{> actor/_shared-partials/data-tab }}
+		{{> actor/_shared-partials/effects-tab }}
+	</section>
+
+</form>

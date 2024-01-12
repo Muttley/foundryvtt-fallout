@@ -12,7 +12,18 @@ FALLOUT.AbilityInt: Intelligence
 FALLOUT.AbilityLuc: Légendaire Chance
 FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Super Force
+FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
+FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
+FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
 FALLOUT.Add: Ajouter
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
+FALLOUT.APP.ChemDoseManager.title: Chem Doses
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Piece d'Armure
@@ -79,7 +90,23 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Bras 3
 FALLOUT.BodyTypes.robot.legR: Corps
 FALLOUT.BodyTypes.robot.torso: Corps
+FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
+FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
+FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
+FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
+FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
+FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
+FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Hunger Level
+FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
+FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Thirst Level
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Drogues
+FALLOUT.ChemDuration.brief: Brief
+FALLOUT.ChemDuration.instant: Instant
+FALLOUT.ChemDuration.lasting: Lasting
 FALLOUT.CREATURE.body: Corps
 FALLOUT.CREATURE.guns: Distance
 FALLOUT.CREATURE.melee: Corps-à-Corps
@@ -98,7 +125,20 @@ FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
+FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
+FALLOUT.MACRO.NewSession.name: New Session
+FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
+FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
+FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
+FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
+FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
+FALLOUT.NPC_TYPES.legendary: Legendary
+FALLOUT.NPC_TYPES.major: Major
+FALLOUT.NPC_TYPES.mighty: Mighty
+FALLOUT.NPC_TYPES.normal: Normal
+FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Autres
 FALLOUT.powered: Alimenté
 FALLOUT.RANGE.close: C
@@ -109,6 +149,32 @@ FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
+FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
+FALLOUT.SETTLEMENT_ACTION.Build: Build
+FALLOUT.SETTLEMENT_ACTION.Business: Business
+FALLOUT.SETTLEMENT_ACTION.Guard: Guard
+FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Hunting and Gathering
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Scavenging
+FALLOUT.SETTLEMENT_ACTION.TendCrops: Tend Crops
+FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Trade Caravan
+FALLOUT.SETTLEMENT_ACTION.Unnasigned: Unnasigned
+FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
+FALLOUT.SETTLEMENT_ITEM.Defense: Defense
+FALLOUT.SETTLEMENT_ITEM.Power: Power
+FALLOUT.SETTLEMENT_ITEM.Resource: Resource
+FALLOUT.SETTLEMENT_ITEM.Room: Room
+FALLOUT.SETTLEMENT_ITEM.Store: Store
+FALLOUT.SETTLEMENT_ITEM.Structure: Structure
+FALLOUT.SETTLEMENT.Beds.label: Beds
+FALLOUT.SETTLEMENT.Defense.label: Defense
+FALLOUT.SETTLEMENT.Food.label: Food
+FALLOUT.SETTLEMENT.Happiness.label: Happiness
+FALLOUT.SETTLEMENT.Income.label: Income
+FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max with Current Leader
+FALLOUT.SETTLEMENT.People.label: People
+FALLOUT.SETTLEMENT.Power.label: Power
+FALLOUT.SETTLEMENT.Water.label: Water
 FALLOUT.SKILL.Athletics: Athlétisme
 FALLOUT.SKILL.Barter: Troc
 FALLOUT.SKILL.Big Guns: Armes lourdes
@@ -126,15 +192,26 @@ FALLOUT.SKILL.Speech: Discours
 FALLOUT.SKILL.Survival: Survie
 FALLOUT.SKILL.Throwing: Projectiles
 FALLOUT.SKILL.Unarmed: Mains nues
+FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
+FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
+FALLOUT.TEMPLATES.Add_Trait: Add Trait
+FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
+FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
+FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
+FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
 FALLOUT.TEMPLATES.Apparel: Habillement
 FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
 FALLOUT.TEMPLATES.Armor_Type: Type d'Armure
+FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
 FALLOUT.TEMPLATES.Attributes: Attributs
@@ -148,6 +225,8 @@ FALLOUT.TEMPLATES.conditions.full: Repu
 FALLOUT.TEMPLATES.conditions.hunger: faim
 FALLOUT.TEMPLATES.conditions.hungry: Faim
 FALLOUT.TEMPLATES.conditions.hydrated: Hydraté
+FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
 FALLOUT.TEMPLATES.conditions.peckish: Petit creux
 FALLOUT.TEMPLATES.conditions.quenched: Désaltéré
 FALLOUT.TEMPLATES.conditions.rested: Reposé
@@ -158,19 +237,26 @@ FALLOUT.TEMPLATES.conditions.thirst: soif
 FALLOUT.TEMPLATES.conditions.thirsty: Soif
 FALLOUT.TEMPLATES.conditions.tired: Fatigué
 FALLOUT.TEMPLATES.conditions.weary: Ereinté
-FALLOUT.TEMPLATES.Consumable_Type: Type Consommable
+FALLOUT.TEMPLATES.ConstructionTime: Construction Time
+FALLOUT.TEMPLATES.Consumable_Group: Group
+FALLOUT.TEMPLATES.Consumable_Type: Type
+FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Créer Mun
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Créer Mod Habillement
 FALLOUT.TEMPLATES.Create_books_and_magz: Créer livres et magazines
 FALLOUT.TEMPLATES.Create_Consumable: Créer Consommable
+FALLOUT.TEMPLATES.Create_Disease: Create Disease
 FALLOUT.TEMPLATES.Create_Miscellany: Créer Bric-A-Brac
 FALLOUT.TEMPLATES.Create_Robot_Module: Créer Robot Module
 FALLOUT.TEMPLATES.Create_Special_Ability: Créer capacité Spéciale
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Créer Mod Arme
 FALLOUT.TEMPLATES.Create_Weapon: Créer Arme
+FALLOUT.TEMPLATES.CreateNpc: Create NPC
+FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
 FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
 FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
 FALLOUT.TEMPLATES.current: Actuel
+FALLOUT.TEMPLATES.CurrentLeader: Current Leader
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
@@ -194,6 +280,7 @@ FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
 FALLOUT.TEMPLATES.Healthy: Bonne Santé
 FALLOUT.TEMPLATES.HitLocationLabel: Localisation du coup
 FALLOUT.TEMPLATES.HP_Healed: PV guéris
+FALLOUT.TEMPLATES.HP: HP
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
 FALLOUT.TEMPLATES.INJURIES: BLESSURES
 FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
@@ -204,6 +291,7 @@ FALLOUT.TEMPLATES.Learned: Appris(e)
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
 FALLOUT.TEMPLATES.Locations: Localisations
 FALLOUT.TEMPLATES.Luck: LChance
+FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
@@ -212,37 +300,49 @@ FALLOUT.TEMPLATES.MELEE_DAMAGE: DÉGÂT CAC
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
+FALLOUT.TEMPLATES.Origin: Origin
 FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
+FALLOUT.TEMPLATES.ParentItem: Parent Item
 FALLOUT.TEMPLATES.PARTY_AP: RÉSERVE GROUPE PA
 FALLOUT.TEMPLATES.PERK: APTITUDE
 FALLOUT.TEMPLATES.PHYS: BAL
 FALLOUT.TEMPLATES.Points: Points
 FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
+FALLOUT.TEMPLATES.Prepared: Prepared
 FALLOUT.TEMPLATES.Qualities: Qualités
 FALLOUT.TEMPLATES.RAD: RAD
+FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
 FALLOUT.TEMPLATES.RADIATION: RADIATION
 FALLOUT.TEMPLATES.RANGE: Portée
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
 FALLOUT.TEMPLATES.Re_roll: Relancer
+FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
 FALLOUT.TEMPLATES.Requirements: Prérequis
-FALLOUT.TEMPLATES.RESISTANCE_GENERAL_BONUS: RÉSISTANCE BONUS GÉNÉRAL
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
+FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
+FALLOUT.TEMPLATES.Skill: Skill
 FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.SKILLS: COMPETENCES
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: Status
+FALLOUT.TEMPLATES.Stockpile: Stockpile
+FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
 FALLOUT.TEMPLATES.Successes: Succès
 FALLOUT.TEMPLATES.Tag: Atout
 FALLOUT.TEMPLATES.Tear: Usure
+FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
 FALLOUT.TEMPLATES.TN: SR
 FALLOUT.TEMPLATES.Total: Total
+FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Traiter une blessure (Clic droit)
+FALLOUT.TEMPLATES.Type: Type
 FALLOUT.TEMPLATES.Use_Agility: Utiliser Agilité
 FALLOUT.TEMPLATES.Use_Charisma: Utiliser Charisme
 FALLOUT.TEMPLATES.Use_Endurance: Utiliser Endurance
@@ -250,15 +350,26 @@ FALLOUT.TEMPLATES.Use_Intelligence: Utiliser Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Utiliser Chance
 FALLOUT.TEMPLATES.Use_Perception: Utiliser Perception
 FALLOUT.TEMPLATES.Use_Strength: Utiliser Force
+FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
 FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
+FALLOUT.TEMPLATES.Weapon: Weapon
+FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Armes
 FALLOUT.UI.Add: Ajouter
+FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
+FALLOUT.UI.AreYouSure: Are You Sure?
 FALLOUT.UI.BOOKS_AND_MAGZS: Livres et Magazines
+FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Capsules
 FALLOUT.UI.CarryWeight: Charge maximale
+FALLOUT.UI.ChemDoses.ConfirmReset: Reset All Chem Doses
+FALLOUT.UI.ChemDoses.Delete: Delete Chem Doses
+FALLOUT.UI.ChemDoses.title: Chem Doses Taken
+FALLOUT.UI.ChemDoses.tooltip: View Chem Doses Taken
 FALLOUT.UI.CONSUMABLES: Consommables
+FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Coût
 FALLOUT.UI.Damage: Dégâts
 FALLOUT.UI.DISEASES: Maladies
@@ -266,7 +377,6 @@ FALLOUT.UI.favorite: Favori
 FALLOUT.UI.INVENTORY: Inventaire
 FALLOUT.UI.MISCELLANY: Bric-A-Brac
 FALLOUT.UI.Name: Nom
-FALLOUT.UI.ORIGIN: ORIGINE
 FALLOUT.UI.OTHER: Autre
 FALLOUT.UI.Perks: Aptitudes
 FALLOUT.UI.Qty: Qttés
@@ -279,6 +389,7 @@ FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Non trié
 FALLOUT.UI.WEAPON_MODS: Mods Armes
 FALLOUT.UI.Weight: Poids
+FALLOUT.UI.Yes: Yes
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Destructeur
 FALLOUT.WEAPONS.damageEffect.burst: Rafale
@@ -325,17 +436,21 @@ TYPES.Actor.character: Personnage
 TYPES.Actor.creature: Créature
 TYPES.Actor.npc: PNJ
 TYPES.Actor.robot: Robot
+TYPES.Actor.settlement: Settlement
+TYPES.Item.addiction: Addiction
 TYPES.Item.ammo: Mun
-TYPES.Item.apparel_mod: Mod Habillement
-TYPES.Item.apparel: Habillement
+TYPES.Item.apparel_mod: Apparel Mod
+TYPES.Item.apparel: Apparel
 TYPES.Item.books_and_magz: Livre/Magazine
 TYPES.Item.consumable: Consommable
 TYPES.Item.disease: Maladie
 TYPES.Item.miscellany: Bric-A-Brac
+TYPES.Item.object_or_structure: Object/Structure
 TYPES.Item.perk: Aptitude
 TYPES.Item.robot_armor: Armure de robot
 TYPES.Item.robot_mod: Robot Module
 TYPES.Item.skill: Compétence
 TYPES.Item.special_ability: Capacités spéciales
+TYPES.Item.trait: Trait
 TYPES.Item.weapon_mod: Mod Arme
 TYPES.Item.weapon: Arme

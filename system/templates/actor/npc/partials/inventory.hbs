@@ -1,0 +1,53 @@
+<div class="resource-row">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.UI.INVENTORY'}}
+			</div>
+			<div class="item-controls">
+				<a
+					class="item-control item-create"
+					title="Create Miscellany"
+					data-type="miscellany"
+				>
+					<i class="fas fa-plus"></i>
+					{{localize 'FALLOUT.UI.Add'}}
+				</a>
+			</div>
+		</li>
+		<li>
+			<span
+				class="flex align-mid"
+				style="flex-basis: 200px; margin-bottom: 5px;"
+			>
+				<label
+					style="color:white"
+					class="upperC"
+				>
+					<strong>
+						{{localize 'FALLOUT.UI.CAPS'}}:
+					</strong>
+				</label>
+				<input
+					type="text"
+					class="underline"
+					name="system.currency.caps"
+					value="{{system.currency.caps}}"
+				>
+			</span>
+		</li>
+		{{#each inventory}}
+			{{>
+				actor/_shared-partials/simple-expandable-item
+				item=this
+				basicControlsOnly=true
+			}}
+		{{/each}}
+	</ol>
+	{{#if isCreature}}
+		{{> actor/npc/partials/carried-weight_creature }}
+	{{else}}
+		{{> actor/npc/partials/carried-weight_npc }}
+	{{/if}}
+
+</div>

@@ -173,6 +173,10 @@
 			padding: 5px;
 			font-family: $font-lobster;
 			color: white;
+
+			&.large {
+				font-size: var(--font-size-18);
+			}
 		}
 		input[type="number"] {
 			text-align: center;
@@ -239,7 +243,7 @@
 		.fas {
 			color:$c-font-prim;
 		}
-		
+
 	}
 
 	background-size: cover;

@@ -1,0 +1,56 @@
+<div class="tab status" data-group="primary" data-tab="status">
+	<div class="grid grid-6col">
+		{{> actor/settlement/partials/attribute
+			attribute="people"
+			label=(localize "FALLOUT.SETTLEMENT.People.label")
+			data=system.people
+			rangeError=(localize "FALLOUT.SETTLEMENT.MaxPeople.tooltip")
+		}}
+
+		{{> actor/settlement/partials/attribute
+			attribute="food"
+			label=(localize "FALLOUT.SETTLEMENT.Food.label")
+			data=system.food
+		}}
+
+		{{> actor/settlement/partials/attribute
+			attribute="water"
+			label=(localize "FALLOUT.SETTLEMENT.Water.label")
+			data=system.water
+		}}
+
+		{{> actor/settlement/partials/attribute
+			attribute="power"
+			label=(localize "FALLOUT.SETTLEMENT.Power.label")
+			data=system.power
+		}}
+
+		{{> actor/settlement/partials/attribute
+			attribute="defense"
+			label=(localize "FALLOUT.SETTLEMENT.Defense.label")
+			data=system.defense
+		}}
+
+		{{> actor/settlement/partials/attribute
+			attribute="beds"
+			label=(localize "FALLOUT.SETTLEMENT.Beds.label")
+			data=system.beds
+		}}
+	</div>
+
+	<div class="grid">
+
+		<div>
+			{{!-- Left Side --}}
+			{{> actor/settlement/partials/leader }}
+			{{> actor/settlement/partials/action-tallies }}
+			{{> actor/settlement/partials/settlers }}
+		</div>
+
+		<div>
+			{{!-- Right Side --}}
+			{{> actor/settlement/partials/structures }}
+		</div>
+
+	</div>
+</div>

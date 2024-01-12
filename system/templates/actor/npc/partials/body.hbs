@@ -1,0 +1,110 @@
+<div class="box no-padding bgOdd">
+	<div style="display: grid; grid-template-columns: 2fr 40% repeat(5, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
+		<div class="flex align-mid">#</div>
+		<div>
+			<select name="system.bodyType" style="font-size: 0.75rem;">
+				{{selectOptions FALLOUT.BODY_TYPES
+					selected=system.bodyType
+				}}
+			</select>
+		</div>
+		<div class="flex align-mid align-center">
+			<i class="fo-physical resistance-icon" title="physical"></i>
+		</div>
+		<div class="flex align-mid align-center">
+			<i class="fo-energy resistance-icon" title="energy"></i>
+		</div>
+		<div class="flex align-mid align-center">
+			<i class="fo-radiation resistance-icon" title="radiation"></i>
+		</div>
+		<div class="flex align-mid align-center">
+			<div style="background-image: url(systems/fallout/assets/ui/drop.svg); width: 1rem; background-repeat: no-repeat" title="injury">
+				&nbsp;
+			</div>
+		</div>
+		<div class="flex align-mid align-center">
+			<div style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat" title="treated injury">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+
+	{{#each system.body_parts as |part key|}}
+		<div style="display: grid; grid-template-columns: 2fr 40% repeat(5, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
+			<div>
+				{{fromConfig "BODY_VALUES" key}}
+			</div>
+			<div>
+				{{localize (concat 'FALLOUT.BodyTypes.' ../system.bodyType '.' key)}}
+			</div>
+			{{> bodyPartControl
+				color="#eee787"
+				backgroundColor="#325885"
+				systemPath=(concat "system.body_parts." key ".resistance.physical")
+				value=part.resistance.physical
+			}}
+			{{> bodyPartControl
+				color="#eee787"
+				backgroundColor="#325885"
+				systemPath=(concat "system.body_parts." key ".resistance.energy")
+				value=part.resistance.energy
+			}}
+			{{> bodyPartControl
+				color="#eee787"
+				backgroundColor="#325885"
+				systemPath=(concat "system.body_parts." key ".resistance.radiation")
+				value=part.resistance.radiation
+			}}
+			{{> bodyPartControl
+				color="white"
+				backgroundColor="#ff0000"
+				systemPath=(concat "system.body_parts." key ".injuryOpenCount")
+				value=part.injuryOpenCount
+			}}
+			{{> bodyPartControl
+				color="white"
+				backgroundColor="#a46e30"
+				systemPath=(concat "system.body_parts." key ".injuryTreatedCount")
+				value=part.injuryTreatedCount
+			}}
+		</div>
+	{{/each}}
+
+	<div class="flexrow resource-row">
+		<span
+			class="align-mid"
+			style="display: flex;"
+		>
+			<label
+				for="system.resistance.poison.locations"
+				style="margin-right: 5px; width: 20px;"
+			>
+				<i class="fo-poison resistance-icon" title="poison"></i>
+			</label>
+			<input
+				type="text"
+				class="flex3"
+				name="system.resistance.poison.locations"
+				value="{{system.resistance.poison.locations}}"
+				placeholder="0"
+			>
+		</span>
+	</div>
+</div>
+
+{{#*inline "bodyPartControl"}}
+	<div>
+		<input
+			class="num-short-2 npc-bodypart-control"
+			min="0"
+			name={{systemPath}}
+			{{#ifCond value '>' 0}}
+				style="{{concat 'border: none; color: ' color '; background-color: ' backgroundColor ';'}}"
+			{{else}}
+				style="border:none; color:#0f1b28;"
+			{{/ifCond}}
+			type="number"
+			value="{{value}}"
+		>
+	</div>
+{{/inline}}

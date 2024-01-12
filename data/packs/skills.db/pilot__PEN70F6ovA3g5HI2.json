@@ -1,21 +1,18 @@
 {
 	"_id": "PEN70F6ovA3g5HI2",
 	"_key": "!items!PEN70F6ovA3g5HI2",
-	"data": {
-		"defaultAttribute": "per",
-		"description": "",
-		"summary": "",
-		"tag": false,
-		"value": 0
-	},
 	"effects": [
 	],
 	"folder": null,
 	"img": "systems/fallout/assets/ico/thumb-up.webp",
 	"name": "Pilot",
-	"permission": {
-		"U6A1xCj2ogp2gdEu": 3,
-		"default": 0
+	"system": {
+		"defaultAttribute": "per",
+		"description": "",
+		"favorite": false,
+		"summary": "",
+		"tag": false,
+		"value": 0
 	},
 	"type": "skill"
 }

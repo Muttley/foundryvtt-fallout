@@ -1,6 +1,6 @@
 import gulp from "gulp";
 import yaml from "gulp-yaml";
-import {deleteAsync} from "del";
+import { deleteAsync } from "del";
 
 const LANG_DST_PATH = "./system/i18n";
 const LANG_SRC_PATHS = ["i18n/*.yaml"];

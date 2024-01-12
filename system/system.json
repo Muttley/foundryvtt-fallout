@@ -2,10 +2,13 @@
 	"id": "fallout",
 	"title": "Fallout 2d20",
 	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.2.6",
+	"version": "11.3.0",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
+	},
+	"flags": {
+		"schemaVersion": "240105.1"
 	},
 	"authors": [
 		{
@@ -25,6 +28,15 @@
 		"css/fallout.css"
 	],
 	"packs": [
+		{
+			"name": "system-documentation",
+			"label": "System Documentation",
+			"system": "fallout",
+			"path": "packs/system-documentation",
+			"type": "JournalEntry",
+			"private": false,
+			"flags": {}
+		},
 		{
 			"name": "fallout-macros",
 			"label": "Fallout Macros",
@@ -51,7 +63,8 @@
 			"color": "#293f5f",
 			"packs": [
 				"fallout-macros",
-				"skills"
+				"skills",
+				"system-documentation"
 			]
 		}
 	],
@@ -75,6 +88,12 @@
 			"flags": {}
 		},
 		{
+			"lang": "nl",
+			"name": "Dutch",
+			"path": "i18n/nl.json",
+			"flags": {}
+		},
+		{
 			"lang": "pl",
 			"name": "Polski",
 			"path": "i18n/pl.json",
@@ -89,6 +108,6 @@
 	],
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
-	"manifest": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/system.json",
+	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
 	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip"
 }

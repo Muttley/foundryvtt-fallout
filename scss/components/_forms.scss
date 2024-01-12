@@ -360,6 +360,9 @@
 	.items-list .item.items-header {
 		margin-top: 0px !important;
 	}
+	.settlers-list .settler.settlers-header {
+		margin-top: 0px !important;
+	}
 
 	&.no-padding {
 		padding: 0 !important;
@@ -480,18 +483,55 @@
 .power-armor-status {
 	position: relative;
 	max-width: 136px;
-	height: 160px;
+	height: 172px;
+
 	.body-part {
 		padding: 5px;
 		text-align: center;
 		background-color: rgba(0, 0, 0, 0.2);
 		width: 40px;
-		.head {
-			background-color: black;
-			color: white;
+
+		&.armL {
+			position: absolute;
+			left: 0;
+			top:50px;
 		}
-		.content {
-			text-align: center;
+
+		&.armR {
+			position: absolute;
+			right: 0;
+			top:50px;
+		}
+
+		&.head {
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+
+			left: 0;
+			right: 0;
+		}
+
+		&.legL {
+			position: absolute;
+			left: 15px;
+			top:120px;
+		}
+
+		&.legR {
+			position: absolute;
+			right: 15px;
+			top:120px;
+		}
+
+		&.torso {
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+
+			left: 0;
+			right: 0;
+			top: 60px;
 		}
 
 		input [type="number"] {
@@ -505,4 +545,11 @@
     grid-template-columns: 18px 2fr;
     align-items: center;
     column-gap: 8px;
+}
+
+.chem-doses {
+	background-color: rgba(229, 232, 234, 0.1215686275);
+	color: rgb(238, 231, 135);
+    border: 2px groove var(--color-border-light-highlight);
+    margin: 0 5px 0 0;
 }

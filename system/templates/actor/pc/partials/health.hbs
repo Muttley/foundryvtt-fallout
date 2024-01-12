@@ -1,0 +1,32 @@
+<div
+	class="resource-plate-header plate-31-o" style="padding-right: 5px;"
+>
+	<div class="label">
+		<h3 style="margin:0; border-bottom: none;">
+			<strong>{{localize "FALLOUT.HEALTH.health"}}</strong>
+		</h3>
+	</div>
+	<div
+		class="flexrow align-mid"
+		style="margin-right: 8px; margin-left: 8px; margin-bottom: 4px;"
+	>
+		<input
+			class="num-short-3"
+			style="font-size:18px; background-color: beige; color: black;"
+			type="number"
+			name="system.health.value"
+			value="{{system.health.value}}"
+			min="0"
+		>
+		<span class="text-center">/</span>
+		<input
+			class="num-short-3"
+			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+			style="font-size:18px; background-color: beige; color: black;"
+			type="number"
+			name="system.health.max"
+			value="{{system.health.max}}"
+			min="0" disabled
+		>
+	</div>
+</div>

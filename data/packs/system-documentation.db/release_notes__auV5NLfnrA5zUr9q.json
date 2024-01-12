@@ -1,0 +1,23 @@
+{
+	"_id": "auV5NLfnrA5zUr9q",
+	"_key": "!journal.pages!7650UDxM6aehgB21.auV5NLfnrA5zUr9q",
+	"image": {
+	},
+	"name": "Release Notes",
+	"src": null,
+	"system": {
+	},
+	"text": {
+		"content": "<p><strong>AUTO-GENERATED. DO NOT EDIT.</strong></p>",
+		"format": 1
+	},
+	"title": {
+		"level": 1,
+		"show": false
+	},
+	"type": "text",
+	"video": {
+		"controls": true,
+		"volume": 0.5
+	}
+}

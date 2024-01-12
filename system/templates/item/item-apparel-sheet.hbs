@@ -1,6 +1,6 @@
 
 <form class="{{cssClass}}" autocomplete="off">
-    {{> "systems/fallout/templates/item/parts/item-header.hbs"}}
+    {{> item/parts/item-header}}
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -15,7 +15,13 @@
 
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
-            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+            {{editor descriptionHTML
+				target="system.description"
+				rollData=rollData
+				button=true
+				owner=owner
+				editable=editable
+			}}
         </div>
 
         {{!-- Mods Tab --}}
@@ -45,9 +51,9 @@
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Armor_Type"}} &nbsp;</label>
                 <select name="system.appareltype">
                     {{#select system.appareltype}}
-                    {{#each FALLOUT.APPAREL_TYPE as |apparelType key |}}
-                    <option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
-                    {{/each}}
+						{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
+							<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
+						{{/each}}
                     {{/select}}
                 </select>
             </div>
@@ -101,7 +107,7 @@
 
         {{!-- Active Effects Tab --}}
         <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-            {{> "systems/fallout/templates/item/parts/item-effects.hbs"}}
+            {{> item/parts/item-effects}}
         </div>
     </section>
 </form>

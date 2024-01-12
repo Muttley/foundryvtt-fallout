@@ -1,24 +1,45 @@
 <div class="fallout-chat-message" data-item-id="{{item._id}}">
-    <div class="content">
-        <h2>{{rollname}}</h2>
-        <p class="success-plaq">{{localize "FALLOUT.TEMPLATES.Successes"}}: {{successes}} <span class="TN">&nbsp;&nbsp;&nbsp;({{localize "FALLOUT.TEMPLATES.TN"}} {{successTreshold}})</span></p>
-        {{#ifCond complications '>' 0}}
-        <p class="complication-plaq">{{localize "FALLOUT.TEMPLATES.Complications"}}: {{complications}}</p>
-        {{/ifCond}}
-        <div class="dices-result">
-            {{#each results as |dice|}}
-            <span class="dice-icon d20{{#if reroll}} reroll{{/if}}{{#ifCond complication '==' 1}} complication{{/ifCond}}{{#ifCond success '==' 1}} success{{/ifCond}}{{#ifCond success '==' 2}} crit{{/ifCond}}" data-index="{{@index}}">{{dice.result}}</span>
-            {{/each}}
-        </div>
+	<div class="content">
+		<h2>{{rollname}}</h2>
+		<p class="success-plaq">
+			{{localize "FALLOUT.TEMPLATES.Successes"}}:
+			{{successes}}
+			<span class="TN">
+				&nbsp;&nbsp;&nbsp;({{localize "FALLOUT.TEMPLATES.TN"}} {{successTreshold}})
+			</span>
+		</p>
+		{{#ifCond complications '>' 0}}
+			<p class="complication-plaq">
+				{{localize "FALLOUT.TEMPLATES.Complications"}}: {{complications}}
+			</p>
+		{{/ifCond}}
+		<div class="dices-result">
+			{{#each results as |dice|}}
+				<span
+					class="dice-icon d20{{#if reroll}} reroll{{/if}}{{#ifCond complication '==' 1}} complication{{/ifCond}}{{#ifCond success '==' 1}} success{{/ifCond}}{{#ifCond success '==' 2}} crit{{/ifCond}}"
+					data-index="{{@index}}"
+				>{{dice.result}}</span>
+			{{/each}}
+		</div>
 
-        {{#if (ne item null)}}
-        <div class="hit-location-label" style="color: grey">{{{getWpnQListAsString item}}}</div>
-        {{/if}}
+		{{#if (ne item null)}}
+		<div class="hit-location-label" style="color: grey">
+			<strong>
+				{{localize 'FALLOUT.TEMPLATES.Weapon_Qualities'}}:
+			</strong>
+			{{{listWeaponQualities item.system.damage.weaponQuality}}}
+		</div>
+		{{/if}}
 
-        {{#if (ne hitLocation null)}}
-        <div class="hit-location-label"><strong>{{localize "FALLOUT.TEMPLATES.HitLocationLabel"}} ({{hitLocationResult}})</strong>: {{localize (concat "FALLOUT.BODYLOCATION.labels." hitLocation)}}</div>
-        {{/if}}
-        
-        <button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}}</button>
-    </div>
+		{{#if (ne hitLocation null)}}
+			<div class="hit-location-label">
+				<strong>
+					{{localize "FALLOUT.TEMPLATES.HitLocationLabel"}} ({{hitLocationResult}}):
+				</strong>
+				{{fromConfig "BODY_LOCATION_LABELS" hitLocation}}
+			</div>
+		{{/if}}
+
+		<button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}}</button>
+	</div>
 </div>

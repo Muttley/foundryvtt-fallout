@@ -1,0 +1,47 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<section class="box padding5">
+		<ol class="items-list">
+			<li class="item consumable flexrow items-header">
+				<div class="flexrow flexlarge item-name upperC">
+					{{localize 'FALLOUT.UI.ChemDoses.title'}}
+				</div>
+			</li>
+			{{#each chemDoses}}
+				<li class="item">
+					<div class="flexrow">
+						<input
+							type="number"
+							class="item-quantity num-short-2"
+							name="{{this.id}}"
+							value="{{this.doses}}"
+							min="0"
+						>
+						&nbsp;&nbsp;
+						<div class="item-name flexlarge">
+							<h4>
+								<div class="resource-label">
+									{{this.name}}
+									({{this.addiction}})
+								</div>
+							</h4>
+						</div>
+						<div class="item-controls">
+							<a
+								class="item-control chem-delete"
+								data-chem-id="{{this.id}}"
+								title="{{localize 'FALLOUT.UI.ChemDoses.Delete'}}"
+							>
+								<i class="fas fa-trash"></i>
+							</a>
+						</div>
+					</li>
+			{{/each}}
+		</ol>
+	</section>
+
+	<footer>
+		<button class="chem-doses reset-all-button">
+			<i class="fa-solid fa-rotate-left"></i> {{localize "FALLOUT.APP.ChemDoseManager.ResetAllButton"}}
+		</button>
+	</footer>
+</form>

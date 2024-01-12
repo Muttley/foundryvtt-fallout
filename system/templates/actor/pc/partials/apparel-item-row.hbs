@@ -1,0 +1,93 @@
+<li class="item apparel" data-item-id="{{item._id}}">
+	<div class=" flexrow">
+		<div class="item-name flexlarge expandable-info">
+			<div class="item-image">
+				<img
+					src="{{item.img}}"
+					title="{{item.name}}"
+					width="24"
+					height="24"
+				/>
+			</div>
+			<h4 class="resource-label">
+				{{item.name}}
+			</h4>
+		</div>
+		<div class="flexrow flexlarge item-info align-mid">
+			{{#ifCond item.system.appareltype '===' 'powerArmor'}}
+				<a
+					{{#if item.system.powered}}
+						class="text-center item-control item-powered"
+					{{else}}
+						class="text-center item-control item-powered item-unpowered"
+					{{/if}}
+					title='{{localize "FALLOUT.powered"}}'
+				>
+					<i class="fas fa-dot-circle"></i>
+				</a>
+			{{/ifCond}}
+			<div class="text-center flex2">
+				&nbsp;
+				{{#each item.system.location as |hasLoc loc|}}
+					<span class="font-size-11">
+						{{#ifCond hasLoc '==' true}}
+							{{#if ../isRobot}}
+								{{localize (concat "FALLOUT.BODYLOCATION_ABBR.robot." loc)}}
+							{{else}}
+								{{localize (concat "FALLOUT.BODYLOCATION_ABBR.character." loc)}}
+							{{/if}}
+							&nbsp;
+						{{/ifCond}}
+					</span>
+				{{/each}}
+			</div>
+			<div class="text-center flex2">
+				&nbsp;
+				{{#each item.system.resistance as |resValue res|}}
+					<span>
+						<i class="{{damageFaIconClass res}}" title="{{res}}"></i>
+						{{resValue}}
+						&nbsp;
+					</span>
+				{{/each}}
+			</div>
+		</div>
+		<div class=" item-controls">
+			<a
+				{{#if item.system.stashed}}
+					class="item-control item-stash"
+				{{else}}
+					class="item-control item-stash item-unstashed"
+				{{/if}}
+				title='{{localize "FALLOUT.UI.stashed"}}'
+			>
+				<i class="fas fa-briefcase"></i>
+			</a>
+
+			<a
+				{{#if item.system.equipped}}
+					class="item-control item-toggle"
+				{{else}}
+					class="item-control item-toggle item-unequipped"
+				{{/if}}
+				title='{{localize "FALLOUT.equipped"}}'
+			>
+				<i class="fas fa-tshirt"></i>
+			</a>
+
+			<a
+				class="item-control item-edit"
+				title="Edit Item"
+			>
+				<i class="fas fa-edit"></i>
+			</a>
+
+			<a
+				class="item-control item-delete"
+				title="Delete Item"
+			>
+				<i class="fas fa-trash"></i>
+			</a>
+		</div>
+	</div>
+</li>

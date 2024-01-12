@@ -1,0 +1,26 @@
+<div class="box padding5">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.UI.DISEASES'}}
+			</div>
+			<div class="item-controls">
+				<a
+					class="item-control
+					item-create"
+					title="{{localize 'FALLOUT.TEMPLATES.Create_Disease'}}"
+					data-type="disease"
+				>
+					<i class="fas fa-plus"></i>
+					{{localize 'FALLOUT.UI.Add'}}
+				</a>
+			</div>
+		</li>
+		{{#each itemsByType.disease as |item id|}}
+			{{>	actor/_shared-partials/simple-expandable-item
+				item=item
+				extraName=item.system.duration
+			}}
+		{{/each}}
+	</ol>
+</div>

@@ -1,0 +1,141 @@
+<header class="sheet-header resource-plate-header {{actor.type}}-header">
+    <img
+		class="profile-img"
+		data-edit="img"
+		height="100"
+		src="{{actor.img}}"
+		title="{{actor.name}}"
+		width="100"
+	/>
+    <div class="flexrow">
+        <div class="flexcol">
+            <h1 class="charname">
+				<input
+					class="underline font-lobster"
+					name="name"
+					type="text"
+					value="{{actor.name}}"
+                    placeholder="Name"
+				/>
+			</h1>
+            <span class="flex align-mid">
+                <input
+					class="underline"
+					name="system.origin"
+					placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
+					type="text"
+					value="{{system.origin}}"
+                    data-dtype="String"
+				/>
+            </span>
+        </div>
+
+        <div class="resources grid right-side">
+            <div class="flexcol resource-plate-header plate-2">
+                <div class="resource flexrow align-mid">
+                    <label
+						class="resource-label"
+						for="system.level.value"
+                        style="font-size: 18px; color: white;"
+					>
+						{{localize "FALLOUT.LEVEL.Level"}}
+					</label>
+                    <input
+						data-dtype="Number"
+						min="0"
+						style="font-size:18px; max-width:2rem;text-align: center; margin-right: 20px;"
+						type="number"
+						value="{{system.level.value}}"
+                        name="system.level.value"
+					/>
+                </div>
+            </div>
+
+            <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
+                <div>
+                    <label class="label">
+						<strong>{{localize "FALLOUT.TEMPLATES.Luck"}}</strong>
+					</label>
+                    <label style="font-size: 12px; padding-left: 10px;">
+						{{localize "FALLOUT.TEMPLATES.Points"}}
+					</label>
+                </div>
+                <div class="special-number">
+                    <input
+						name="system.luckPoints"
+						style="font-size: 22px;"
+						type="number"
+						value="{{system.luckPoints}}"
+                        min="0"
+					>
+                </div>
+            </div>
+
+            <div class="flexrow grid-span-2" style="font-size:12px">
+                {{#if (or (eq actor.type "character") (eq actor.type "robot"))}}
+					<div
+						class="resource flex-group-left"
+						style="padding-right: 10px;"
+					>
+						<label
+							class="resource-label"
+							for="system.level.currentXP"
+						>
+							{{localize "FALLOUT.LEVEL.CurrentXP"}}
+						</label>
+
+						<div class="resource-content flexrow flex-center flex-between">
+							<input
+								class="underline"
+								data-dtype="Number"
+								name="system.level.currentXP"
+								type="text"
+								value="{{system.level.currentXP}}"
+							/>
+						</div>
+					</div>
+
+					<div class="resource flex-group-left">
+						<label
+							class="resource-label"
+							for="system.power.value"
+						>
+							{{localize "FALLOUT.LEVEL.NextXP"}}
+						</label>
+
+						<div class="resource-content flexrow flex-center flex-between">
+							<input
+								class="underline"
+								data-dtype="Number"
+								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+								name="system.level.nextLevelXP"
+								type="text"
+								value="{{system.level.nextLevelXP}}"
+								disabled
+							/>
+						</div>
+					</div>
+                {{else}}
+					<div class="resource flex-group-left">
+						<label
+							class="resource-label"
+							for="system.health.value"
+						>
+							{{localize "FALLOUT.LEVEL.RewardXP"}}
+						</label>
+						<div class="resource-content flexrow flex-center flex-between">
+							<input
+								class="underline"
+								data-dtype="Number"
+								name="system.level.currentXP"
+								type="text"
+								value="{{system.level.currentXP}}"
+							/>
+						</div>
+					</div>
+                {{/if}}
+
+            </div>
+        </div>
+    </div>
+</header>

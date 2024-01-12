@@ -1,0 +1,24 @@
+<div class="box padding5">
+	<ol class="settlers-list">
+		<li class="settler consumable flexrow settlers-header">
+			<div class="flexrow flexlarge settler-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.SettlersAndJobs'}}
+			</div>
+			<div class="settler-controls">
+				<a
+					class="settler-control settler-create"
+					title="{{localize 'FALLOUT.TEMPLATES.CreateNpc'}}"
+				>
+					<i class="fas fa-plus"></i>
+					{{localize 'FALLOUT.UI.Add'}}
+				</a>
+			</div>
+		</li>
+		{{#each settlers}}
+			{{> actor/settlement/partials/settler
+				settler=this
+				actions=../actions
+			}}
+		{{/each}}
+	</ol>
+</div>

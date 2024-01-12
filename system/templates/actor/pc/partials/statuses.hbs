@@ -1,0 +1,44 @@
+<div class="box">
+	<div class="box-header">
+		<h4 class="upperC">
+			{{localize "FALLOUT.TEMPLATES.Status"}}
+		</h4>
+	</div>
+	<div class="flexrow resource-row align-mid">
+		<label class="resource-label upperC">
+			{{localize "FALLOUT.TEMPLATES.conditions.fatigue"}}
+		</label>
+		<input
+			class="num-short-2"
+			name="system.conditions.fatigue"
+			type="number"
+			value="{{system.conditions.fatigue}}"
+		>
+	</div>
+	<div class="flexrow resource-row align-mid">
+		<label
+			class="resource-label upperC"
+			title="{{localize 'FALLOUT.TEMPLATES.conditions.intoxication.tooltip'}}"
+		>
+			{{localize "FALLOUT.TEMPLATES.conditions.intoxication.label"}}
+		</label>
+		<input
+			class="num-short-2"
+			type="number"
+			name="system.conditions.intoxication"
+			value="{{system.conditions.intoxication}}"
+		>
+	</div>
+	<div class="flexrow resource-row align-mid">
+		<label class="resource-label upperC">
+			{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
+		</label>
+		<input
+			name="system.conditions.alcoholic"
+			type="checkbox"
+			{{#if system.conditions.alcoholic}}
+				checked
+			{{/if}}
+		>
+	</div>
+</div>

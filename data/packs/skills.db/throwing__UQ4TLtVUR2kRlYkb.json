@@ -1,21 +1,18 @@
 {
 	"_id": "UQ4TLtVUR2kRlYkb",
 	"_key": "!items!UQ4TLtVUR2kRlYkb",
-	"data": {
-		"defaultAttribute": "agi",
-		"description": "",
-		"summary": "",
-		"tag": false,
-		"value": 0
-	},
 	"effects": [
 	],
 	"folder": null,
 	"img": "systems/fallout/assets/ico/thumb-up.webp",
 	"name": "Throwing",
-	"permission": {
-		"U6A1xCj2ogp2gdEu": 3,
-		"default": 0
+	"system": {
+		"defaultAttribute": "agi",
+		"description": "",
+		"favorite": false,
+		"summary": "",
+		"tag": false,
+		"value": 0
 	},
 	"type": "skill"
 }

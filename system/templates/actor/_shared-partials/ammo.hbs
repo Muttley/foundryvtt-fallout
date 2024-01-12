@@ -1,0 +1,81 @@
+<ol class="items-list">
+	<li class="item weapon flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize "FALLOUT.TEMPLATES.AMMO"}}
+		</div>
+		<div class="flexrow flexlarge item-info">
+			<p>{{localize 'FALLOUT.UI.Quantity'}}</p>
+		</div>
+		<div class="item-controls">
+			<a
+				class="item-control item-create"
+				title="{{localize 'FALLOUT.TEMPLATES.Create_Ammo'}}"
+				data-type="ammo"
+			>
+				<i class="fas fa-plus"></i>
+				{{localize 'FALLOUT.UI.Add'}}
+			</a>
+		</div>
+	</li>
+	{{#each itemsByType.ammo}}
+		<li
+			class="item ammo"
+			data-item-id="{{this._id}}"
+		>
+			<div class="flexrow">
+				<div class="item-name flexlarge expandable-info">
+					<div class="item-image">
+						<img
+							src="{{this.img}}"
+							title="{{this.name}}"
+							width="24"
+							height="24"
+						/>
+					</div>
+					<h4 class="resource-label">
+						{{this.name}}
+						{{#ifCond this.system.shots.max ">" 1}}
+							<em>
+								({{this.system.shots.current}}/{{this.system.shots.max}})
+							</em>
+						{{/ifCond}}
+					</h4>
+				</div>
+				<div class="flexrow flexlarge align-mid">
+					<div class="text-center">
+						<input
+							type="number"
+							class="item-quantity num-short-3"
+							value="{{this.system.quantity}}"
+							min="0"
+						>
+					</div>
+				</div>
+				<div class="item-controls">
+					<a
+						{{#if this.system.stashed}}
+							class="item-control item-stash"
+						{{else}}
+							class="item-control item-stash item-unstashed"
+						{{/if}}
+						title='{{localize "FALLOUT.UI.stashed"}}'
+					>
+						<i class="fas fa-briefcase"></i>
+					</a>
+					<a
+						class="item-control item-edit"
+						title="{{localize 'FALLOUT.TEMPLATES.Edit_Item'}}"
+					>
+						<i class="fas fa-edit"></i>
+					</a>
+					<a
+						class="item-control item-delete"
+						title="{{localize 'FALLOUT.TEMPLATES.Delete_Item'}}"
+					>
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</div>
+		</li>
+	{{/each}}
+</ol>

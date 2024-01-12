@@ -1,0 +1,39 @@
+<div class="tab data" data-group="primary" data-tab="abilities">
+	<section class="grid grid-2col">
+		<div class="left-column">
+			{{#if isCreature}}
+				{{> actor/npc/partials/attributes_creature }}
+			{{else}}
+				{{> actor/npc/partials/attributes_npc }}
+			{{/if}}
+
+			<div class="flexrow resource-row">
+				{{> actor/npc/partials/hp }}
+				{{> actor/npc/partials/initiative }}
+				{{> actor/npc/partials/defense }}
+			</div>
+
+			{{#if isNPC}}
+				<div class="flexrow resource-row">
+					{{> actor/npc/partials/carry-weight }}
+					{{> actor/npc/partials/melee-bonus }}
+				</div>
+			{{/if}}
+
+			{{> actor/npc/partials/body
+				FALLOUT=FALLOUT
+			}}
+		</div>
+
+		<div class="right-column">
+			{{#unless isCreature}}
+				{{> actor/npc/partials/skills }}
+			{{/unless}}
+
+			{{> actor/npc/partials/attacks }}
+			{{> actor/npc/partials/special-abilities }}
+			{{> actor/npc/partials/inventory }}
+		</div>
+
+	</section>
+</div>

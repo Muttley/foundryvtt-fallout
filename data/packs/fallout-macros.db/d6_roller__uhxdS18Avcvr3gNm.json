@@ -1,15 +1,11 @@
 {
 	"_id": "uhxdS18Avcvr3gNm",
 	"_key": "!macros!uhxdS18Avcvr3gNm",
-	"author": "U6A1xCj2ogp2gdEu",
-	"command": "game.fallout.DialogD6.createDialog({diceNum:2})",
+	"author": "OKzfXIxFsK2wBLYU",
+	"command": "/**\n ***************************************************************\n * This macro can be used to roll one or more Combat Dice.\n **************************************************************/\n\nfallout.DialogD6.createDialog({ diceNum: 1 });",
 	"folder": null,
 	"img": "systems/fallout/assets/chat/d6.webp",
 	"name": "D6 Roller",
-	"permission": {
-		"U6A1xCj2ogp2gdEu": 3,
-		"default": 0
-	},
 	"scope": "global",
 	"type": "script"
 }

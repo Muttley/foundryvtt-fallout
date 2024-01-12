@@ -1,0 +1,63 @@
+<div class="box padding5">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.FAVORITE_WEAPONS'}}
+			</div>
+		</li>
+		{{#each favoriteWeapons as |item id|}}
+			<li class="item favorite-weapon weapon " data-item-id="{{item._id}}">
+				<div class="item-name flex2 flex-between">
+					<div class="item-name flexlarge">
+						<div class="item-image">
+							<img
+								src="{{item.img}}"
+								title="{{item.name}}"
+								width="24"
+								height="24"
+							/>
+						</div>
+						<a class="resource-label weapon-roll">
+							{{item.name}}
+							{{#if item.shotsAvailable}}
+								<em>({{item.shotsAvailable}})</em>
+							{{/if}}
+							{{#if (isWeaponDamaged item.system)}}
+								<i class="fas fa-wrench"></i>
+							{{/if}}
+
+							{{#each item.system.damage.damageType as |dt dk|}}
+								{{#ifCond dt '==' true}}
+									<i
+										class="fo-{{dk}}"
+										title="{{fromConfig "DAMAGE_TYPES" dk}}"
+									></i>
+								{{/ifCond}}
+							{{/each}}
+						</a>
+					</div>
+					<div class="text-center" style="margin-right: 5px;">
+						<a
+							class="weapon-roll-damage"
+							style="color:rgb(238, 231, 135)"
+						>
+							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
+								{{math item.system.damage.rating '+' ../actor.system.meleeDamage.value}}
+							{{else}}
+								{{item.system.damage.rating}}
+							{{/if}}
+							<span class="fo-pip-boy fo-blue"></span>
+						</a>
+					</div>
+				</div>
+				<div class="item-sub-info">
+					<strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong>
+					{{{listWeaponQualities item.system.damage.weaponQuality}}}
+					&nbsp;
+					<strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong>
+					{{{listDamageEffects item.system.damage.damageEffect}}}
+				</div>
+			</li>
+		{{/each}}
+	</ol>
+</div>

@@ -1,0 +1,11 @@
+<div
+	class="grid grid-8col"
+	style="background-color: rgba(0, 0, 0, 0.2); padding: 6px;"
+>
+	{{#each actions}}
+		{{> actor/settlement/partials/action-tally
+			action=this
+			count=(lookup ../settlerActionCounts this.id)
+		}}
+	{{/each}}
+</div>

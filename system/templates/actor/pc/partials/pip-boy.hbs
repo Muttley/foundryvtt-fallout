@@ -1,0 +1,57 @@
+<div>
+	{{!-- PIP BOY HELP --}}
+	<div class="status-help-bar">
+		<div class="help-item">
+			<span class="symbol healthy"></span>
+			<p>{{localize "FALLOUT.TEMPLATES.Healthy"}}</p>
+		</div>
+		<div class="help-item">
+			<span class="symbol wounded"></span>
+			<p>{{localize "FALLOUT.TEMPLATES.Treated_injury_Right_Click"}}</p>
+		</div>
+		<div class="help-item">
+			<span class="symbol crippled"></span>
+			<p>{{localize "FALLOUT.TEMPLATES.Injury_Left_Click"}}</p>
+		</div>
+	</div>
+	{{!-- PIP BOY --}}
+	<div class="pipboy-status-screen {{actor.type}}">
+		<div class="body-part head {{system.body_parts.head.status}}"></div>
+		<div class="body-part torso {{system.body_parts.torso.status}}"></div>
+		<div class="body-part armL {{system.body_parts.armL.status}}"></div>
+		<div class="body-part armR {{system.body_parts.armR.status}}"></div>
+		<div class="body-part legL {{system.body_parts.legL.status}}"></div>
+		<div class="body-part legR {{system.body_parts.legR.status}}"></div>
+		{{> actor/pc/partials/body-location-status
+			bodypart=system.body_parts.head
+			keypart="head"
+			apparel=system.outfittedLocations.head.name
+		}}
+		{{> actor/pc/partials/body-location-status
+			bodypart=system.body_parts.torso
+			keypart="torso"
+			apparel=system.outfittedLocations.torso.name
+		}}
+		{{> actor/pc/partials/body-location-status
+			bodypart=system.body_parts.armL
+			keypart="armL"
+			apparel=system.outfittedLocations.armL.name
+		}}
+		{{> actor/pc/partials/body-location-status
+			bodypart=system.body_parts.armR
+			keypart="armR"
+			apparel=system.outfittedLocations.armR.name
+		}}
+		{{> actor/pc/partials/body-location-status
+			bodypart=system.body_parts.legL
+			keypart="legL"
+			apparel=system.outfittedLocations.legL.name
+		}}
+		{{> actor/pc/partials/body-location-status
+			bodypart=system.body_parts.legR
+			keypart="legR"
+			apparel=system.outfittedLocations.legR.name
+		}}
+	</div>
+
+</div>
