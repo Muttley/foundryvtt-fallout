@@ -37,8 +37,8 @@ export default class FalloutMigrationRunner {
 		// first set of migrations.  So now need to reset the schema version and
 		// re-apply them
 		//
-		if (this.currentVersion === 0 || systemSchemaVersion === 240105.1) {
-			await game.settings.set("shadowdark", "schemaVersion", -1);
+		if (this.currentVersion === 0 || this.currentVersion === 240105.1) {
+			await game.settings.set("fallout", "worldSchemaVersion", 231130.0);
 		}
 	}
 
