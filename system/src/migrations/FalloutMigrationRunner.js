@@ -37,7 +37,7 @@ export default class FalloutMigrationRunner {
 		// first set of migrations.  So now need to reset the schema version and
 		// re-apply them
 		//
-		if (this.currentVersion === 0 || this.currentVersion === 240105.1) {
+		if (this.currentVersion === 240105.1) {
 			await game.settings.set("fallout", "worldSchemaVersion", 231130.0);
 		}
 	}
@@ -253,7 +253,9 @@ export default class FalloutMigrationRunner {
 		// system value if it has not already been set by a previous data
 		// migration.
 		//
-		if (this.currentVersion < 0) {
+		const currentVersion = this.currentVersion;
+		if (isNaN(parseInt(currentVersion)) || currentVersion < 0) {
+			// Should be a brand new world
 			await game.settings.set(
 				"fallout", "worldSchemaVersion",
 				Number(game.system.flags.schemaVersion)
@@ -275,7 +277,7 @@ export default class FalloutMigrationRunner {
 
 				await this.migrateWorld();
 
-				game.settings.set("fallout", "worldSchemaVersion", migration.version);
+				await game.settings.set("fallout", "worldSchemaVersion", migration.version);
 			}
 		}
 
