@@ -21,7 +21,8 @@ $fo-pip-boy: "\e900";
 
 @font-face {
 	font-family: "#{$fallout-font-family}";
-	src: url("#{$fallout-font-path}/#{$fallout-font-family}.ttf") format("truetype"), url("#{$fallout-font-path}/#{$fallout-font-family}.woff") format("woff"),
+	src: url("#{$fallout-font-path}/#{$fallout-font-family}.ttf") format("truetype"),
+		url("#{$fallout-font-path}/#{$fallout-font-family}.woff") format("woff"),
 		url("#{$fallout-font-path}/#{$fallout-font-family}.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;

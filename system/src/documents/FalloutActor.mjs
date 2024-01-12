@@ -349,8 +349,8 @@ export default class FalloutActor extends Actor {
 		this.system.carryWeight.total = this._getItemsTotalWeight();
 		this.system.encumbranceLevel = 0;
 		if (this.system.carryWeight.total > this.system.carryWeight.value) {
-			let dif = this.system.carryWeight.total - this.system.carryWeight.value;
-			this.system.encumbranceLevel = Math.ceil(dif / 50);
+			let diff = this.system.carryWeight.total - this.system.carryWeight.value;
+			this.system.encumbranceLevel = Math.ceil(diff / 50);
 		}
 	}
 

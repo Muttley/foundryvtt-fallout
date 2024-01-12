@@ -1,6 +1,7 @@
 # v11.3.0
 
 ## Enhancements
+- [#13] Add new Settlement Actor and corresponding sheet
 - [#37] The following character sheet fields are now auto-calculated and have new variables that can be used to adjust them with Active Effects if needed:
 
 	* **Defense** (adjusted by `system.defense.bonus`)
@@ -62,6 +63,7 @@
 - [#64] Add ability to filter item compendiums by source ready for future work
 - [#79] Merged some corrected Polish translations (thanks to Sanawabicz)
 - [#89] Translate as much as possible of the config at startup
+- [#97] Refactor sheet classes to more easily share code without constant type checking
 
 ---
 
