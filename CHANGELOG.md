@@ -29,6 +29,10 @@
 
 	* NPCs and Creatures both now have their inventory weights calculated, and you are now able to set a carry capacity on Creatures
 
+- [#85] Add Macro to start a new game session
+
+	* This is called **"New Session"** and it resets the Party AP to zero, sets the GM AP to the number of players and resets the Intoxication (the number of alcoholic drinks consumed by the player during a session) and Chem Dose counters to zero ready for a new game session
+
 - [#86] Add group field to Consumable items to allow for different items sharing the same addiction name
 - [#87] Add flag to show whether food consumable items count as prepared or not
 - [#88] Switch Chem consumable's Duration field to a drop-down
