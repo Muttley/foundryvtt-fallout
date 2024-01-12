@@ -19,6 +19,7 @@ FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Ta wartość jest modyfikowana przez Aktywny Efekt i nie może być edytowana. Wyłącz efekt, aby ją edytować.
 FALLOUT.Actor.Warnings.DerivedValue: Jest to wartość obliczona automatycznie, nie może być edytowana.
+FALLOUT.Actor.Warnings.NpcAlreadyResident: Ten NPC jest już mieszkańcem {settlementName}
 FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
@@ -124,6 +125,10 @@ FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
 FALLOUT.LEVEL.RewardXP: Nagroda w PD
+FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
+FALLOUT.MACRO.NewSession.name: New Session
+FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
 FALLOUT.MIGRATION.begin_migration: Wykonywanie aktualizacji danych dla Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
 FALLOUT.MIGRATION.completed_migration: Zakończono aktualizacje danych dla Fallout 2d20
@@ -146,6 +151,14 @@ FALLOUT.RESISTANCE.poison: Trucizna
 FALLOUT.RESISTANCE.radiation: Radiacja
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
+FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
+FALLOUT.SETTLEMENT_ACTION.Business: Biznes
+FALLOUT.SETTLEMENT_ACTION.Guard: Strażnik
+FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Polowanie i Zbieractwo
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Szabrowanie
+FALLOUT.SETTLEMENT_ACTION.TendCrops: Pielęgnuj Uprawy
+FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Handluj Karawaną
+FALLOUT.SETTLEMENT_ACTION.Unnasigned: Nieprzypisany
 FALLOUT.SETTLEMENT_ITEM.CraftingTable: Stół rzemieślniczy
 FALLOUT.SETTLEMENT_ITEM.Defense: Obrona
 FALLOUT.SETTLEMENT_ITEM.Power: Moc
@@ -158,6 +171,7 @@ FALLOUT.SETTLEMENT.Defense.label: Obrona
 FALLOUT.SETTLEMENT.Food.label: Jedzenie
 FALLOUT.SETTLEMENT.Happiness.label: Zadowolenie
 FALLOUT.SETTLEMENT.Income.label: Przychód
+FALLOUT.SETTLEMENT.MaxPeople.tooltip: Maksimum z Aktualnym Liderem
 FALLOUT.SETTLEMENT.People.label: Ludność
 FALLOUT.SETTLEMENT.Power.label: Moc
 FALLOUT.SETTLEMENT.Water.label: Woda
@@ -208,7 +222,7 @@ FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
 FALLOUT.TEMPLATES.conditions.exhausted: Wyczerpany
 FALLOUT.TEMPLATES.conditions.fatigue: zmęczenie
 FALLOUT.TEMPLATES.conditions.full: Pełen
-FALLOUT.TEMPLATES.conditions.hunger: Głód
+FALLOUT.TEMPLATES.conditions.hunger: głód
 FALLOUT.TEMPLATES.conditions.hungry: Głodny
 FALLOUT.TEMPLATES.conditions.hydrated: Nawodniony
 FALLOUT.TEMPLATES.conditions.intoxication.label: Nietrzeźwość
@@ -217,9 +231,9 @@ FALLOUT.TEMPLATES.conditions.peckish: Głodnawy
 FALLOUT.TEMPLATES.conditions.quenched: Opity
 FALLOUT.TEMPLATES.conditions.rested: Wypoczęty
 FALLOUT.TEMPLATES.conditions.sated: Syty
-FALLOUT.TEMPLATES.conditions.sleep: Niewyspanie
+FALLOUT.TEMPLATES.conditions.sleep: niewyspanie
 FALLOUT.TEMPLATES.conditions.starving: Głodujący
-FALLOUT.TEMPLATES.conditions.thirst: Pragnienie
+FALLOUT.TEMPLATES.conditions.thirst: pragnienie
 FALLOUT.TEMPLATES.conditions.thirsty: Spragniony
 FALLOUT.TEMPLATES.conditions.tired: Znużony
 FALLOUT.TEMPLATES.conditions.weary: Zmęczony
@@ -237,10 +251,12 @@ FALLOUT.TEMPLATES.Create_Robot_Module: Stwórz Modyfikacje Robota
 FALLOUT.TEMPLATES.Create_Special_Ability: Stwórz Zdolność Specjalną
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Stwórz Modyfikacje Broni
 FALLOUT.TEMPLATES.Create_Weapon: Stwórz Broń
+FALLOUT.TEMPLATES.CreateNpc: Stwórz NPC
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Stwórz struktury i pomieszczenia
 FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
-FALLOUT.TEMPLATES.current: Obecny
+FALLOUT.TEMPLATES.current: obecny
+FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
@@ -302,6 +318,7 @@ FALLOUT.TEMPLATES.RANGE: Zasięg
 FALLOUT.TEMPLATES.Rank: Rangi
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangi [obecne/maksymalne]
 FALLOUT.TEMPLATES.Re_roll: Przerzut
+FALLOUT.TEMPLATES.RemoveSettler: Usuń Osadnika
 FALLOUT.TEMPLATES.Requirements: Wymagania
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS ODPORNOŚCI
 FALLOUT.TEMPLATES.Resistances: Odporności
