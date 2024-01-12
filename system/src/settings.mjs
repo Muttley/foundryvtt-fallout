@@ -147,7 +147,7 @@ export function registerSettings() {
 		hint: "Records the current schema version for the Fallout 2d20 system data. (don't modify this unless you know what you are doing)",
 		scope: "world",
 		config: game.settings.get("fallout", "debugEnabled"),
-		default: 0,
+		default: -1,
 		type: Number,
 	});
 
