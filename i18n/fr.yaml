@@ -199,8 +199,8 @@ FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
-FALLOUT.TEMPLATES.Add_Trait: Add Trait
-FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
+FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
+FALLOUT.TEMPLATES.AddictionNumber: Nombre de dépendance
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
@@ -211,7 +211,7 @@ FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
 FALLOUT.TEMPLATES.Apparel: Habillement
 FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
 FALLOUT.TEMPLATES.Armor_Type: Type d'Armure
-FALLOUT.TEMPLATES.Attack: Attack
+FALLOUT.TEMPLATES.Attack: Attaque
 FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
 FALLOUT.TEMPLATES.Attributes: Attributs
@@ -240,7 +240,7 @@ FALLOUT.TEMPLATES.conditions.weary: Ereinté
 FALLOUT.TEMPLATES.ConstructionTime: Temps de construction
 FALLOUT.TEMPLATES.Consumable_Group: Groupe
 FALLOUT.TEMPLATES.Consumable_Type: Type
-FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
+FALLOUT.TEMPLATES.Create_Addiction: Créer une dépendance
 FALLOUT.TEMPLATES.Create_Ammo: Créer Mun
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Créer Mod Habillement
 FALLOUT.TEMPLATES.Create_books_and_magz: Créer livres et magazines
@@ -320,7 +320,7 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
 FALLOUT.TEMPLATES.Re_roll: Relancer
 FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
 FALLOUT.TEMPLATES.Requirements: Prérequis
-FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
 FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
@@ -331,7 +331,7 @@ FALLOUT.TEMPLATES.Skill: Compétence
 FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.SKILLS: COMPETENCES
 FALLOUT.TEMPLATES.Source: Source
-FALLOUT.TEMPLATES.Status: Status
+FALLOUT.TEMPLATES.Status: État
 FALLOUT.TEMPLATES.Stockpile: Stockpile
 FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
 FALLOUT.TEMPLATES.Successes: Succès
