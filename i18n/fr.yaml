@@ -1,5 +1,5 @@
 FALLOUT.AbilityAbbr.agi: agi
-FALLOUT.AbilityAbbr.cha: cha
+FALLOUT.AbilityAbbr.cha: chr
 FALLOUT.AbilityAbbr.end: end
 FALLOUT.AbilityAbbr.int: int
 FALLOUT.AbilityAbbr.luc: lcha
@@ -13,15 +13,15 @@ FALLOUT.AbilityLuc: Légendaire Chance
 FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Super Force
 FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.label: Materials
+FALLOUT.actor.inventory.materials.junk: Bric-à-brac
+FALLOUT.actor.inventory.materials.label: Composants
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
 FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
 FALLOUT.Add: Ajouter
-FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
 FALLOUT.APP.ChemDoseManager.title: Chem Doses
 FALLOUT.APPAREL.armor: Armure
@@ -104,9 +104,9 @@ FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Thirst Level
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Drogues
-FALLOUT.ChemDuration.brief: Brief
-FALLOUT.ChemDuration.instant: Instant
-FALLOUT.ChemDuration.lasting: Lasting
+FALLOUT.ChemDuration.brief: Brève
+FALLOUT.ChemDuration.instant: Instantanée
+FALLOUT.ChemDuration.lasting: Durable
 FALLOUT.CREATURE.body: Corps
 FALLOUT.CREATURE.guns: Distance
 FALLOUT.CREATURE.melee: Corps-à-Corps
@@ -127,7 +127,7 @@ FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
 FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
-FALLOUT.MACRO.NewSession.name: New Session
+FALLOUT.MACRO.NewSession.name: Nouvelle session
 FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
 FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
@@ -160,21 +160,21 @@ FALLOUT.SETTLEMENT_ACTION.TendCrops: Tend Crops
 FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Trade Caravan
 FALLOUT.SETTLEMENT_ACTION.Unnasigned: Unnasigned
 FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
-FALLOUT.SETTLEMENT_ITEM.Defense: Defense
-FALLOUT.SETTLEMENT_ITEM.Power: Power
+FALLOUT.SETTLEMENT_ITEM.Defense: Défense
+FALLOUT.SETTLEMENT_ITEM.Power: Puissance
 FALLOUT.SETTLEMENT_ITEM.Resource: Resource
 FALLOUT.SETTLEMENT_ITEM.Room: Room
 FALLOUT.SETTLEMENT_ITEM.Store: Store
 FALLOUT.SETTLEMENT_ITEM.Structure: Structure
-FALLOUT.SETTLEMENT.Beds.label: Beds
-FALLOUT.SETTLEMENT.Defense.label: Defense
-FALLOUT.SETTLEMENT.Food.label: Food
-FALLOUT.SETTLEMENT.Happiness.label: Happiness
-FALLOUT.SETTLEMENT.Income.label: Income
+FALLOUT.SETTLEMENT.Beds.label: Lits
+FALLOUT.SETTLEMENT.Defense.label: Défense
+FALLOUT.SETTLEMENT.Food.label: Nourriture
+FALLOUT.SETTLEMENT.Happiness.label: Bonheur
+FALLOUT.SETTLEMENT.Income.label: Revenu
 FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max with Current Leader
 FALLOUT.SETTLEMENT.People.label: People
-FALLOUT.SETTLEMENT.Power.label: Power
-FALLOUT.SETTLEMENT.Water.label: Water
+FALLOUT.SETTLEMENT.Power.label: Puissance
+FALLOUT.SETTLEMENT.Water.label: Eau
 FALLOUT.SKILL.Athletics: Athlétisme
 FALLOUT.SKILL.Barter: Troc
 FALLOUT.SKILL.Big Guns: Armes lourdes
