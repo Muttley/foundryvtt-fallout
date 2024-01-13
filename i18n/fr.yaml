@@ -99,7 +99,7 @@ FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} a consommé {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
 FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Niveau de faim
-FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
+FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
 FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Niveau de soif
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
@@ -115,7 +115,7 @@ FALLOUT.CREATURE.other: Autres
 FALLOUT.EffectCreate: Créer Effet
 FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
-FALLOUT.EffectToggle: Toggle Effect
+FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
 FALLOUT.FOOD: Nourriture
 FALLOUT.HEALTH.current: PV Actuels
@@ -129,10 +129,10 @@ FALLOUT.MACRO.Error.CaughtError: "La macro '{macro}' a échoué avec l'erreur su
 FALLOUT.MACRO.Error.GameMasterRoleRequired: La macro '{macro}' nécessite que vous ayez le rôle d'utilisateur 'Maître de jeu'
 FALLOUT.MACRO.NewSession.name: Nouvelle session
 FALLOUT.MACRO.Success: La macro '{macro}' s'est exécutée avec succès
-FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
+FALLOUT.MIGRATION.begin_migration: Effectuer des mises à niveau de données pour Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Application des mises à jour pour le schéma de Fallout 2d20 v{version}
 FALLOUT.MIGRATION.completed_migration: Mise à jour des données terminée pour Fallout 2d20
-FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
+FALLOUT.MIGRATION.completed_schema: Application des mises à jour terminée pour le schéma Fallout 2d20 v{version}
 FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Légendaire
 FALLOUT.NPC_TYPES.major: Majeur
@@ -149,7 +149,7 @@ FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
-FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
+FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
 FALLOUT.SETTLEMENT_ACTION.Business: Commerce
@@ -192,15 +192,15 @@ FALLOUT.SKILL.Speech: Discours
 FALLOUT.SKILL.Survival: Survie
 FALLOUT.SKILL.Throwing: Projectiles
 FALLOUT.SKILL.Unarmed: Mains nues
-FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.core_rulebook: Livre de base
+FALLOUT.SOURCE_TITLE.quickstart: Démarrage rapide
+FALLOUT.SOURCE_TITLE.rust_devils: "Pack PNJ #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
 FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
-FALLOUT.TEMPLATES.AddictionNumber: Nombre de dépendance
+FALLOUT.TEMPLATES.AddictionNumber: Nombre de dépendances
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
