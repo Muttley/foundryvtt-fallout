@@ -151,14 +151,14 @@ FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
-FALLOUT.SETTLEMENT_ACTION.Build: Build
-FALLOUT.SETTLEMENT_ACTION.Business: Business
-FALLOUT.SETTLEMENT_ACTION.Guard: Guard
-FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Hunting and Gathering
-FALLOUT.SETTLEMENT_ACTION.Scavenging: Scavenging
-FALLOUT.SETTLEMENT_ACTION.TendCrops: Tend Crops
-FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Trade Caravan
-FALLOUT.SETTLEMENT_ACTION.Unnasigned: Unnasigned
+FALLOUT.SETTLEMENT_ACTION.Build: Construction
+FALLOUT.SETTLEMENT_ACTION.Business: Commerce
+FALLOUT.SETTLEMENT_ACTION.Guard: Sécurité
+FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Chasse et cueillette
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Récupération
+FALLOUT.SETTLEMENT_ACTION.TendCrops: Cultures
+FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Caravane commerciale
+FALLOUT.SETTLEMENT_ACTION.Unnasigned: Non assignée
 FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
 FALLOUT.SETTLEMENT_ITEM.Defense: Défense
 FALLOUT.SETTLEMENT_ITEM.Power: Puissance
@@ -172,7 +172,7 @@ FALLOUT.SETTLEMENT.Food.label: Nourriture
 FALLOUT.SETTLEMENT.Happiness.label: Bonheur
 FALLOUT.SETTLEMENT.Income.label: Revenu
 FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max with Current Leader
-FALLOUT.SETTLEMENT.People.label: People
+FALLOUT.SETTLEMENT.People.label: Personnes
 FALLOUT.SETTLEMENT.Power.label: Puissance
 FALLOUT.SETTLEMENT.Water.label: Eau
 FALLOUT.SKILL.Athletics: Athlétisme
@@ -206,7 +206,7 @@ FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
 FALLOUT.TEMPLATES.AMMO: MUN
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
-FALLOUT.TEMPLATES.AmmoName: Ammo Name
+FALLOUT.TEMPLATES.AmmoName: Nom des munitions
 FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
 FALLOUT.TEMPLATES.Apparel: Habillement
 FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
@@ -312,13 +312,13 @@ FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
 FALLOUT.TEMPLATES.Prepared: Prepared
 FALLOUT.TEMPLATES.Qualities: Qualités
 FALLOUT.TEMPLATES.RAD: RAD
-FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
+FALLOUT.TEMPLATES.Radiation_Healed: Radiation guérie
 FALLOUT.TEMPLATES.RADIATION: RADIATION
 FALLOUT.TEMPLATES.RANGE: Portée
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
 FALLOUT.TEMPLATES.Re_roll: Relancer
-FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
+FALLOUT.TEMPLATES.RemoveSettler: Supprimer le colon
 FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
 FALLOUT.TEMPLATES.Resistances: Résistances
