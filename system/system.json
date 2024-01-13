@@ -88,12 +88,6 @@
 			"flags": {}
 		},
 		{
-			"lang": "nl",
-			"name": "Dutch",
-			"path": "i18n/nl.json",
-			"flags": {}
-		},
-		{
 			"lang": "pl",
 			"name": "Polski",
 			"path": "i18n/pl.json",
