@@ -150,7 +150,7 @@ FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
-FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
+FALLOUT.SETTINGS.sourceFilters.title: Filtres des sources de livres
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
 FALLOUT.SETTLEMENT_ACTION.Business: Commerce
 FALLOUT.SETTLEMENT_ACTION.Guard: Sécurité
@@ -302,7 +302,7 @@ FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
 FALLOUT.TEMPLATES.Origin: Origine
 FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
-FALLOUT.TEMPLATES.ParentItem: Parent Item
+FALLOUT.TEMPLATES.ParentItem: Élément parent
 FALLOUT.TEMPLATES.PARTY_AP: RÉSERVE GROUPE PA
 FALLOUT.TEMPLATES.PERK: APTITUDE
 FALLOUT.TEMPLATES.PHYS: BAL
@@ -323,7 +323,6 @@ FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
 FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
-FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
