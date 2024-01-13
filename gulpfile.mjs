@@ -32,7 +32,6 @@ export const build = gulp.parallel(
 
 export const clean = gulp.parallel(
 	css.clean,
-	javascript.clean,
 	lang.clean,
 	packs.clean
 );

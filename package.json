@@ -9,8 +9,7 @@
 		"lang": "gulp compileLang",
 		"lint": "gulp lintJs",
 		"notes": "gulp compileNotes",
-		"packs": "gulp compilePacks",
-		"test": "jest"
+		"packs": "gulp compilePacks"
 	},
 	"devDependencies": {
 		"@rollup/plugin-node-resolve": "^15.2.3",
@@ -28,7 +27,7 @@
 		"markdown": "^0.5.0",
 		"merge-stream": "^2.0.0",
 		"nedb-promises": "^6.2.3",
-		"rollup": "^4.9.2",
+		"rollup": "^4.9.5",
 		"sass": "^1.69.7",
 		"yaml": "^2.3.4",
 		"yargs": "^17.7.2"
