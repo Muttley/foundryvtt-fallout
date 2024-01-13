@@ -1,3 +1,8 @@
+# v11.3.2
+
+## Chores
+- [#113] Merged language updates from Crowdin
+
 # v11.3.1
 
 ## Bugfix
