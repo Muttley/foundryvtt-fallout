@@ -128,7 +128,7 @@ FALLOUT.LEVEL.RewardXP: PE Gagnés
 FALLOUT.MACRO.Error.CaughtError: "La macro '{macro}' a échoué avec l'erreur suivante : {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: La macro '{macro}' nécessite que vous ayez le rôle d'utilisateur 'Maître de jeu'
 FALLOUT.MACRO.NewSession.name: Nouvelle session
-FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
+FALLOUT.MACRO.Success: La macro '{macro}' s'est exécutée avec succès
 FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Application des mises à jour pour le schéma de Fallout 2d20 v{version}
 FALLOUT.MIGRATION.completed_migration: Mise à jour des données terminée pour Fallout 2d20
@@ -369,7 +369,7 @@ FALLOUT.UI.ChemDoses.Delete: Supprimer les doses de drogue
 FALLOUT.UI.ChemDoses.title: Doses de drogue prises
 FALLOUT.UI.ChemDoses.tooltip: Voir les doses de drogue prises
 FALLOUT.UI.CONSUMABLES: Consommables
-FALLOUT.UI.Consume: Consume
+FALLOUT.UI.Consume: Consommer
 FALLOUT.UI.Cost: Coût
 FALLOUT.UI.Damage: Dégâts
 FALLOUT.UI.DISEASES: Maladies
