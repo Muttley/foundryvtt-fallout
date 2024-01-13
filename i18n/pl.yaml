@@ -125,10 +125,10 @@ FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
 FALLOUT.LEVEL.RewardXP: Nagroda w PD
-FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
-FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
-FALLOUT.MACRO.NewSession.name: New Session
-FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
+FALLOUT.MACRO.Error.CaughtError: "Makro '{macro}' nie powiodło się, zwracając następujący błąd: {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: Makro '{macro}' wymaga uprawnień roli 'Mistrza Gry'
+FALLOUT.MACRO.NewSession.name: Nowa Sesja
+FALLOUT.MACRO.Success: Makro '{macro}' zakończone pomyślnie
 FALLOUT.MIGRATION.begin_migration: Wykonywanie aktualizacji danych dla Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
 FALLOUT.MIGRATION.completed_migration: Zakończono aktualizacje danych dla Fallout 2d20
@@ -284,7 +284,7 @@ FALLOUT.TEMPLATES.HP: PZ
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
-FALLOUT.TEMPLATES.Irradiated: Napromieniowany
+FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.Issue: Problem
 FALLOUT.TEMPLATES.lbs: funtów
 FALLOUT.TEMPLATES.Learned: Nauczony
@@ -312,7 +312,7 @@ FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Prepared: Przygotowany
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
-FALLOUT.TEMPLATES.Radiation_Healed: Napromieniowanie uzdrowione
+FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
 FALLOUT.TEMPLATES.RADIATION: RADIACJA
 FALLOUT.TEMPLATES.RANGE: Zasięg
 FALLOUT.TEMPLATES.Rank: Rangi
