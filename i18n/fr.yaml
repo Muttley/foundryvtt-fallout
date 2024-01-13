@@ -150,7 +150,7 @@ FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
-FALLOUT.SETTINGS.sourceFilters.title: Filtres des sources de livres
+FALLOUT.SETTINGS.sourceFilters.title: Filtres de Livres Source
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
 FALLOUT.SETTLEMENT_ACTION.Business: Commerce
 FALLOUT.SETTLEMENT_ACTION.Guard: Sécurité
