@@ -17,7 +17,7 @@ FALLOUT.actor.inventory.materials.junk: Bric-à-brac
 FALLOUT.actor.inventory.materials.label: Composants
 FALLOUT.actor.inventory.materials.rare: Rares
 FALLOUT.actor.inventory.materials.uncommon: Peu fréquents
-FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
+FALLOUT.Actor.Warnings.ActiveEffectOverride: Cette valeur est en cours de modification par un effet actif et ne peut pas être modifiée. Désactivez l'effet pour l'éditer.
 FALLOUT.Actor.Warnings.DerivedValue: Il s'agit d'une valeur calculée automatiquement qui ne peut pas être modifiée.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ce PNJ est déjà un résident de {settlementName}
 FALLOUT.Add: Ajouter
@@ -101,7 +101,7 @@ FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
 FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Niveau de faim
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
 FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Niveau de soif
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
@@ -125,13 +125,13 @@ FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
-FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
-FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
+FALLOUT.MACRO.Error.CaughtError: "La macro '{macro}' a échoué avec l'erreur suivante : {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: La macro '{macro}' nécessite que vous ayez le rôle d'utilisateur 'Maître de jeu'
 FALLOUT.MACRO.NewSession.name: Nouvelle session
 FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
 FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
-FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
-FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
+FALLOUT.MIGRATION.begin_schema: Application des mises à jour pour le schéma de Fallout 2d20 v{version}
+FALLOUT.MIGRATION.completed_migration: Mise à jour des données terminée pour Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Légendaire
@@ -159,19 +159,19 @@ FALLOUT.SETTLEMENT_ACTION.Scavenging: Récupération
 FALLOUT.SETTLEMENT_ACTION.TendCrops: Cultures
 FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Caravane commerciale
 FALLOUT.SETTLEMENT_ACTION.Unnasigned: Non assignée
-FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
+FALLOUT.SETTLEMENT_ITEM.CraftingTable: Établi
 FALLOUT.SETTLEMENT_ITEM.Defense: Défense
 FALLOUT.SETTLEMENT_ITEM.Power: Puissance
-FALLOUT.SETTLEMENT_ITEM.Resource: Resource
-FALLOUT.SETTLEMENT_ITEM.Room: Room
-FALLOUT.SETTLEMENT_ITEM.Store: Store
+FALLOUT.SETTLEMENT_ITEM.Resource: Ressource
+FALLOUT.SETTLEMENT_ITEM.Room: Pièce
+FALLOUT.SETTLEMENT_ITEM.Store: Magasin
 FALLOUT.SETTLEMENT_ITEM.Structure: Structure
 FALLOUT.SETTLEMENT.Beds.label: Lits
 FALLOUT.SETTLEMENT.Defense.label: Défense
 FALLOUT.SETTLEMENT.Food.label: Nourriture
 FALLOUT.SETTLEMENT.Happiness.label: Bonheur
 FALLOUT.SETTLEMENT.Income.label: Revenu
-FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max with Current Leader
+FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max avec le Chef actuel
 FALLOUT.SETTLEMENT.People.label: Personnes
 FALLOUT.SETTLEMENT.Power.label: Puissance
 FALLOUT.SETTLEMENT.Water.label: Eau
@@ -226,7 +226,7 @@ FALLOUT.TEMPLATES.conditions.hunger: faim
 FALLOUT.TEMPLATES.conditions.hungry: Faim
 FALLOUT.TEMPLATES.conditions.hydrated: Hydraté
 FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
-FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: Le nombre de boissons alcoolisées consommées
 FALLOUT.TEMPLATES.conditions.peckish: Petit creux
 FALLOUT.TEMPLATES.conditions.quenched: Désaltéré
 FALLOUT.TEMPLATES.conditions.rested: Reposé
@@ -252,11 +252,11 @@ FALLOUT.TEMPLATES.Create_Special_Ability: Créer capacité Spéciale
 FALLOUT.TEMPLATES.Create_Weapon_Mod: Créer Mod Arme
 FALLOUT.TEMPLATES.Create_Weapon: Créer Arme
 FALLOUT.TEMPLATES.CreateNpc: Créer un PNJ
-FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
+FALLOUT.TEMPLATES.CreateStructuresAndRooms: Créer des structures et des pièces
 FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
 FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
 FALLOUT.TEMPLATES.current: Actuel
-FALLOUT.TEMPLATES.CurrentLeader: Current Leader
+FALLOUT.TEMPLATES.CurrentLeader: Chef actuel
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
@@ -324,7 +324,7 @@ FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
 FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
-FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
+FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
 FALLOUT.TEMPLATES.Skill: Compétence
@@ -332,8 +332,8 @@ FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.SKILLS: COMPETENCES
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: État
-FALLOUT.TEMPLATES.Stockpile: Stockpile
-FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
+FALLOUT.TEMPLATES.Stockpile: Réserve
+FALLOUT.TEMPLATES.StructuresAndRooms: Structures et pièces
 FALLOUT.TEMPLATES.Successes: Succès
 FALLOUT.TEMPLATES.Tag: Atout
 FALLOUT.TEMPLATES.Tear: Usure
@@ -364,7 +364,7 @@ FALLOUT.UI.BOOKS_AND_MAGZS: Livres et Magazines
 FALLOUT.UI.Cancel: Annuler
 FALLOUT.UI.CAPS: Capsules
 FALLOUT.UI.CarryWeight: Charge maximale
-FALLOUT.UI.ChemDoses.ConfirmReset: Reset All Chem Doses
+FALLOUT.UI.ChemDoses.ConfirmReset: Réinitialiser toutes les doses de drogue
 FALLOUT.UI.ChemDoses.Delete: Supprimer les doses de drogue
 FALLOUT.UI.ChemDoses.title: Doses de drogue prises
 FALLOUT.UI.ChemDoses.tooltip: Voir les doses de drogue prises
@@ -445,7 +445,7 @@ TYPES.Item.books_and_magz: Livre/Magazine
 TYPES.Item.consumable: Consommable
 TYPES.Item.disease: Maladie
 TYPES.Item.miscellany: Bric-A-Brac
-TYPES.Item.object_or_structure: Object/Structure
+TYPES.Item.object_or_structure: Objet/Structure
 TYPES.Item.perk: Aptitude
 TYPES.Item.robot_armor: Armure de robot
 TYPES.Item.robot_mod: Module de robot
