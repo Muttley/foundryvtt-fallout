@@ -1,5 +1,10 @@
 # v11.3.3
 
+## Bugfixes
+- [#125] Updating NPC name doesn't get reflected immediately in a related settlement sheet
+
+# v11.3.3
+
 ## Enhancements
 - [#120] Group settlement stockpile items by type
 
