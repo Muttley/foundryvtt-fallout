@@ -23,4 +23,38 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	get template() {
 		return "systems/fallout/templates/actor/npc-sheet.hbs";
 	}
+
+	async getData(options) {
+		const context = await super.getData(options);
+
+		context.settlements = [];
+
+		const settlements = game.actors.filter(a => a.type === "settlement");
+		settlements.sort((a, b) => a.name.localeCompare(b.name));
+
+		for (const settlement of settlements) {
+			context.settlements.push({
+				uuid: settlement.uuid,
+				name: settlement.name,
+			});
+		}
+
+		return context;
+	}
+
+	async _updateObject(event, formData) {
+		const originalSettlement = this.actor.system.settlement.uuid;
+		const newSettlement = formData["system.settlement.uuid"];
+
+		await super._updateObject(event, formData);
+
+		if (originalSettlement !== newSettlement) {
+			for (const uuid of [originalSettlement, newSettlement]) {
+				if (uuid === "") continue;
+				const settlement = await fromUuid(uuid);
+
+				if (settlement) settlement.sheet.render(false);
+			}
+		}
+	}
 }

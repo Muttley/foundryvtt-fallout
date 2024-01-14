@@ -1,0 +1,32 @@
+<div class="resource-row">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize "TYPES.Actor.settlement"}}
+			</div>
+		</li>
+		<li class="settler" data-settler-id="{{settler._id}}">
+			<div class="flexrow">
+				<div>
+					<select
+						data-dtype="String"
+						name="system.settlement.uuid"
+						style="font-size: 0.75rem; width: 100%"
+					>
+						<option value="">&nbsp;</option>
+						{{#each settlements}}
+							<option
+								value="{{this.uuid}}"
+								{{#ifCond ../system.settlement.uuid "===" this.uuid}}
+									selected
+								{{/ifCond}}
+							>
+								{{this.name}}
+							</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>
+		</li>
+	</ol>
+</div>

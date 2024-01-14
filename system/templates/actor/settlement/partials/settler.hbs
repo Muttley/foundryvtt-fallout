@@ -13,13 +13,13 @@
 		<div class="settler-controls">
 			<select
 				data-dtype="String"
-				name="action__{{this.uuid}}"
+				name="action__{{settler.uuid}}"
 				style="font-size: 0.75rem;"
 			>
 				{{#each actions as |action|}}
 					<option
 						value="{{action.id}}"
-						{{#ifCond ../settler.actionId "===" action.id}}
+						{{#ifCond ../settler.system.settlement.action "===" action.id}}
 							selected
 						{{/ifCond}}
 					>

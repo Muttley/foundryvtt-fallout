@@ -6,20 +6,27 @@
 export default class FalloutActor extends Actor {
 
 	/**
-	 * Update any settlement sheets that may be linked to the modified Actor
+	 * Update any settlement sheets that may be linked to the deleted Actor
 	 *
 	 * @static
 	 * @param {*} actor
 	 * @param {*} options
 	 * @param {*} userId
 	 */
-	static updateLinkedSettlementSheets(actor, options, userId) {
+	static async updateLinkedSettlementSheets(actor, options, userId) {
 		if (!game.user.isGM) return;
 		if (!actor.type === "npc") return;
 
-		const settlements = game.actors.filter(a => a.type === "settlement");
-		for (const settlement of settlements) {
-			settlement.sheet.render(false);
+		const settlementUuid = actor.system.settlement.uuid;
+
+		if (settlementUuid === "") return;
+
+		const settlement = await fromUuid(settlementUuid);
+		if (settlement) {
+			if (settlement.system.leader === actor.uuid) {
+				await settlement.update({"system.leader": ""});
+				settlement.sheet.render(false);
+			}
 		}
 	}
 
@@ -369,7 +376,13 @@ export default class FalloutActor extends Actor {
 
 			this.system.people.max = parseInt(leader.system.attributes.cha.value) + 10;
 		}
-		const people = this.system.people.value;
+
+		const settlers = game.actors.filter(a => a.type === "npc"
+			&& a.system.settlement.uuid === this.uuid
+		);
+
+		const people = this.system.people.value =
+			settlers.length + this.system.people.mod;
 
 		let happiness = 10;
 		for (const attribute of ["beds", "defense", "food", "water"]) {

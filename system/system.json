@@ -2,13 +2,13 @@
 	"id": "fallout",
 	"title": "Fallout 2d20",
 	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.3.2",
+	"version": "11.3.3",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
 	},
 	"flags": {
-		"schemaVersion": "240112.1"
+		"schemaVersion": "240114.1"
 	},
 	"authors": [
 		{
@@ -85,12 +85,6 @@
 			"lang": "fr",
 			"name": "Français",
 			"path": "i18n/fr.json",
-			"flags": {}
-		},
-		{
-			"lang": "nl",
-			"name": "Dutch",
-			"path": "i18n/nl.json",
 			"flags": {}
 		},
 		{

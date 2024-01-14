@@ -21,6 +21,7 @@ FALLOUT.actor.inventory.materials.uncommon: Uncommon
 FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
 FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
 FALLOUT.Add: Add
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
@@ -324,7 +325,6 @@ FALLOUT.TEMPLATES.Requirements: Requirements
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
-FALLOUT.TEMPLATES.Roll_Formula: Roll Formula
 FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
 FALLOUT.TEMPLATES.Skill_Tag: Skill Tag
 FALLOUT.TEMPLATES.Skill_Value: Skill Value
