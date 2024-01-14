@@ -12,11 +12,11 @@ FALLOUT.AbilityInt: Intelligence
 FALLOUT.AbilityLuc: Légendaire Chance
 FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Super Force
-FALLOUT.actor.inventory.materials.common: Fréquents
+FALLOUT.actor.inventory.materials.common: Fréquent
 FALLOUT.actor.inventory.materials.junk: Bric-à-brac
 FALLOUT.actor.inventory.materials.label: Composants
-FALLOUT.actor.inventory.materials.rare: Rares
-FALLOUT.actor.inventory.materials.uncommon: Peu fréquents
+FALLOUT.actor.inventory.materials.rare: Rare
+FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Cette valeur est en cours de modification par un effet actif et ne peut pas être modifiée. Désactivez l'effet pour l'éditer.
 FALLOUT.Actor.Warnings.DerivedValue: Il s'agit d'une valeur calculée automatiquement qui ne peut pas être modifiée.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ce PNJ est déjà un résident de {settlementName}
@@ -150,7 +150,7 @@ FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
-FALLOUT.SETTINGS.sourceFilters.title: Filtres des sources de livres
+FALLOUT.SETTINGS.sourceFilters.title: Filtres de Livres Source
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
 FALLOUT.SETTLEMENT_ACTION.Business: Commerce
 FALLOUT.SETTLEMENT_ACTION.Guard: Sécurité
@@ -202,7 +202,7 @@ FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
 FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
 FALLOUT.TEMPLATES.AddictionNumber: Nombre de dépendances
 FALLOUT.TEMPLATES.Addictive: Addictive
-FALLOUT.TEMPLATES.Alcoholic: Alcoolisée
+FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
 FALLOUT.TEMPLATES.AMMO: MUN
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
