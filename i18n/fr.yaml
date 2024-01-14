@@ -20,6 +20,7 @@ FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Cette valeur est en cours de modification par un effet actif et ne peut pas être modifiée. Désactivez l'effet pour l'éditer.
 FALLOUT.Actor.Warnings.DerivedValue: Il s'agit d'une valeur calculée automatiquement qui ne peut pas être modifiée.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ce PNJ est déjà un résident de {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
 FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
