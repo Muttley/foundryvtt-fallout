@@ -30,6 +30,7 @@ export default async function() {
 		"systems/fallout/templates/actor/npc/partials/initiative.hbs",
 		"systems/fallout/templates/actor/npc/partials/inventory.hbs",
 		"systems/fallout/templates/actor/npc/partials/melee-bonus.hbs",
+		"systems/fallout/templates/actor/npc/partials/settlement.hbs",
 		"systems/fallout/templates/actor/npc/partials/skills.hbs",
 		"systems/fallout/templates/actor/npc/partials/special-abilities.hbs",
 		"systems/fallout/templates/actor/npc/tabs/abilities.hbs",

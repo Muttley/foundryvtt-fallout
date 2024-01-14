@@ -1,3 +1,16 @@
+# v11.3.3
+
+## Enhancements
+- [#120] Group settlement stockpile items by type
+
+## Bugfixes
+- [#121] Settler data getting corrupted after adding six or more
+
+## Chores
+- [#118] Merged more language updates from Crowdin
+
+*The French translation is now 100% complete.  Many thanks to Starbuck for their work on this.*
+
 # v11.3.2
 
 ## Chores

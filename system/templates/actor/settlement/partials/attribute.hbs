@@ -8,6 +8,7 @@
 		<div class="grid" style="margin: 0; padding: 0; grid-template-columns: 1fr min-content 1fr; font-size: 18px;">
 			<input
 				data-dtype="Number"
+				data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 				min="0"
 				name="system.{{attribute}}.value"
 				{{#ifCond data.value ">" data.max}}
@@ -17,6 +18,7 @@
 				{{/ifCond}}
 				type="number"
 				value="{{data.value}}"
+				disabled
 			/>
 			<div style="align-self: center;">/</div>
 			<input

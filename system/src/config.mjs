@@ -133,6 +133,26 @@ FALLOUT.HUNGER_BY_NUMBER = {
 	4: "FALLOUT.TEMPLATES.conditions.starving",
 };
 
+FALLOUT.ITEM_TYPES = {
+	addiction: "TYPES.Item.addiction",
+	ammo: "TYPES.Item.ammo",
+	apparel_mod: "TYPES.Item.apparel_mod",
+	apparel: "TYPES.Item.apparel",
+	books_and_magz: "TYPES.Item.books_and_magz",
+	consumable: "TYPES.Item.consumable",
+	disease: "TYPES.Item.disease",
+	miscellany: "TYPES.Item.miscellany",
+	object_or_structure: "TYPES.Item.object_or_structure",
+	perk: "TYPES.Item.perk",
+	robot_armor: "TYPES.Item.robot_armor",
+	robot_mod: "TYPES.Item.robot_mod",
+	skill: "TYPES.Item.skill",
+	special_ability: "TYPES.Item.special_ability",
+	trait: "TYPES.Item.trait",
+	weapon_mod: "TYPES.Item.weapon_mod",
+	weapon: "TYPES.Item.weapon",
+};
+
 FALLOUT.JOURNAL_UUIDS = {
 	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
 };
