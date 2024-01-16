@@ -1,3 +1,8 @@
+# v11.3.4
+
+## Bugfixes
+- [#125] Updating NPC name doesn't get reflected immediately in a related settlement sheet
+
 # v11.3.3
 
 ## Enhancements

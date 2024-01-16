@@ -56,5 +56,9 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 				if (settlement) settlement.sheet.render(false);
 			}
 		}
+		else if (newSettlement !== "") {
+			const settlement = await fromUuid(newSettlement);
+			if (settlement) settlement.sheet.render(false);
+		}
 	}
 }

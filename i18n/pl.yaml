@@ -20,6 +20,7 @@ FALLOUT.actor.inventory.materials.uncommon: Rzadki
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Ta wartość jest modyfikowana przez Aktywny Efekt i nie może być edytowana. Wyłącz efekt, aby ją edytować.
 FALLOUT.Actor.Warnings.DerivedValue: Jest to wartość obliczona automatycznie, nie może być edytowana.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ten NPC jest już mieszkańcem {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Nie można znaleźć osadnika z UUID {uuid}, więc został usunięty z {settlementName}
 FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
