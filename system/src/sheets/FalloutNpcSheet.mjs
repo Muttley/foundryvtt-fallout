@@ -43,6 +43,10 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	}
 
 	async _updateObject(event, formData) {
+		if (this.actor.type !== "settlement") {
+			return super._updateObject(event, formData);
+		}
+
 		const originalSettlement = this.actor.system.settlement.uuid;
 		const newSettlement = formData["system.settlement.uuid"];
 

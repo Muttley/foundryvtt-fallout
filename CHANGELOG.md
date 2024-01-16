@@ -1,3 +1,11 @@
+# v11.3.5
+
+## Bugfixes
+- [#128] Modifying Creature actors fails
+
+## Chores
+- [#127] Merge localization updates from Crowdin
+
 # v11.3.4
 
 ## Bugfixes
