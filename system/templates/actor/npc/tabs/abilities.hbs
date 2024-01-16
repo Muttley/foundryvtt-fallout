@@ -32,7 +32,11 @@
 
 			{{> actor/npc/partials/attacks }}
 			{{> actor/npc/partials/special-abilities }}
-			{{> actor/npc/partials/settlement }}
+
+			{{#unless isCreature}}
+				{{> actor/npc/partials/settlement }}
+			{{/unless}}
+
 			{{> actor/npc/partials/inventory }}
 		</div>
 
