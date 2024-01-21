@@ -472,7 +472,7 @@ export default class FalloutActor extends Actor {
 
 	async _getAvailableAmmoType(name) {
 		const ammoItems = this.items.filter(
-			i => i.name === name
+			i => i.name === name && i.type === "ammo"
 		);
 
 		// Ensure we always use the ammo item with the least amount of shots

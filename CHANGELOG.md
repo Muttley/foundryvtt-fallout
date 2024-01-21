@@ -1,3 +1,8 @@
+# v11.3.6
+
+## Bugfixes
+- [#137] Ammo counting code can incorrectly match non-ammo items
+
 # v11.3.5
 
 ## Bugfixes
