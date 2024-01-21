@@ -80,7 +80,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			type: this.actor.type,
 		};
 
-		this._prepareItems(context);
+		await this._prepareItems(context);
 
 		// Biography HTML enrichment
 		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
