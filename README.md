@@ -98,3 +98,5 @@ All copyright assets used with explicit consent from Modiphius Entertainment. Th
 ## Thanks to
 
 - @e4g13 for making new images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13
+
+- This system uses various icons from [Game-icons.net](https://game-icons.net/), including icons created by **Caro Asercion**, [Delapouite](https://delapouite.com/), [Lorc](https://lorcblog.blogspot.com/) and **Skoll**

@@ -3,6 +3,19 @@
  * @extends {Item}
  */
 export default class FalloutItem extends Item {
+
+	async _preCreate(data, options, user) {
+		await super._preCreate(data, options, user);
+
+		if (data.img) return; // Already had an image set so we won"t change it
+
+		const img = CONFIG.FALLOUT.DEFAULT_ICONS[data.type] ?? undefined;
+
+		if (img) {
+			this.updateSource({img});
+		}
+	}
+
 	async deleteSettlementStructure() {
 		if (!this.actor) return null;
 

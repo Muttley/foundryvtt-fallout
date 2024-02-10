@@ -15,7 +15,7 @@ export default class FalloutActor extends Actor {
 	 */
 	static async updateLinkedSettlementSheets(actor, options, userId) {
 		if (!game.user.isGM) return;
-		if (!actor.type === "npc") return;
+		if (actor.type !== "npc") return;
 
 		const settlementUuid = actor.system.settlement.uuid;
 
@@ -603,6 +603,21 @@ export default class FalloutActor extends Actor {
 
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
+
+		if (!data.img) {
+			const img = CONFIG.FALLOUT.DEFAULT_TOKENS[data.type] ?? undefined;
+
+			if (img) {
+				this.updateSource({
+					img,
+					prototypeToken: {
+						texture: {
+							src: img,
+						},
+					},
+				});
+			}
+		}
 
 		// Add Skills to Characters and Robots
 		if (this.type === "character" || this.type === "robot") {

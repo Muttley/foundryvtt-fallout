@@ -1,3 +1,9 @@
+# v11.4.0
+
+## Enhancements
+- [#149] Add default icons for all item types
+- [#150] Add new default tokens for all actor types
+
 # v11.3.6
 
 ## Bugfixes

@@ -125,6 +125,34 @@ FALLOUT.DAMAGE_TYPES = {
 	poison: "FALLOUT.WEAPONS.damageType.poison",
 };
 
+FALLOUT.DEFAULT_ICONS = {
+	addiction: "systems/fallout/assets/icons/items/addiction.svg",
+	ammo: "systems/fallout/assets/icons/items/ammo.svg",
+	apparel: "systems/fallout/assets/icons/items/apparel.svg",
+	apparel_mod: "systems/fallout/assets/icons/items/apparel_mod.svg",
+	books_and_magz: "systems/fallout/assets/icons/items/books_and_magz.svg",
+	consumable: "systems/fallout/assets/icons/items/consumable.svg",
+	disease: "systems/fallout/assets/icons/items/disease.svg",
+	miscellany: "systems/fallout/assets/icons/items/miscellany.svg",
+	object_or_structure: "systems/fallout/assets/icons/items/object_or_structure.svg",
+	perk: "systems/fallout/assets/icons/items/perk.svg",
+	robot_armor: "systems/fallout/assets/icons/items/robot_armor.svg",
+	robot_mod: "systems/fallout/assets/icons/items/robot_mod.svg",
+	skill: "systems/fallout/assets/icons/items/skill.webp",
+	special_ability: "systems/fallout/assets/icons/items/special_ability.svg",
+	trait: "systems/fallout/assets/icons/items/trait.svg",
+	weapon: "systems/fallout/assets/icons/items/weapon.svg",
+	weapon_mod: "systems/fallout/assets/icons/items/weapon_mod.svg",
+};
+
+FALLOUT.DEFAULT_TOKENS = {
+	character: "systems/fallout/assets/tokens/character.webp",
+	creature: "systems/fallout/assets/tokens/creature.webp",
+	npc: "systems/fallout/assets/tokens/npc.webp",
+	robot: "systems/fallout/assets/tokens/robot.webp",
+	settlement: "systems/fallout/assets/tokens/settlement.webp",
+};
+
 FALLOUT.HUNGER_BY_NUMBER = {
 	0: "FALLOUT.TEMPLATES.conditions.full",
 	1: "FALLOUT.TEMPLATES.conditions.sated",
