@@ -28,19 +28,7 @@ export default class FalloutMigrationRunner {
 	}
 
 	get currentVersion() {
-		return game.settings.get("fallout", "worldSchemaVersion");
-	}
-
-	async fixFuckups() {
-		// A mess up with the schema version checking meant that versions before
-		// the scheme version was stored and migrations performed skipped the
-		// first set of migrations.  So now need to reset the schema version and
-		// re-apply them
-		//
-		const systemJsonSchemaVersion = Number(game.system.flags.schemaVersion);
-		if (systemJsonSchemaVersion === 240112.1 && this.currentVersion === 240105.1) {
-			await game.settings.set("fallout", "worldSchemaVersion", 231130);
-		}
+		return game.settings.get(SYSTEM_ID, "worldSchemaVersion");
 	}
 
 	async migrateCompendium(pack) {
@@ -246,25 +234,17 @@ export default class FalloutMigrationRunner {
 	async run() {
 		fallout.logger.log(`Current schema version ${this.currentVersion}`);
 
-		await this.fixFuckups(); // Doh!
-
 		await this.buildMigrations();
 
-		// Unless you actually set the value, the default is not stored in the
-		// db which causes issues with old schema updates being run unecessarily
-		// on brand new worlds.  So here we set the schemaVersion to the current
-		// system value if it has not already been set by a previous data
-		// migration.
+		// If this is a brand new world then we don't need to do any migrations.
 		//
-		const currentVersion = this.currentVersion;
-		if (currentVersion < 0) {
+		if (game.world.playtime === 0) {
 			// Should be a brand new world
 			await game.settings.set(
-				"fallout", "worldSchemaVersion",
-				Number(game.system.flags.schemaVersion)
+				SYSTEM_ID, "worldSchemaVersion",
+				this.latestVersion
 			);
 		}
-
 
 		if (!this.needsMigration()) return;
 
@@ -279,7 +259,7 @@ export default class FalloutMigrationRunner {
 
 				await this.migrateWorld();
 
-				await game.settings.set("fallout", "worldSchemaVersion", migration.version);
+				await game.settings.set(SYSTEM_ID, "worldSchemaVersion", migration.version);
 			}
 		}
 

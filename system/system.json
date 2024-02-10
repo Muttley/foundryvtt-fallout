@@ -7,9 +7,6 @@
 		"minimum": "11",
 		"verified": "11"
 	},
-	"flags": {
-		"schemaVersion": "240114.1"
-	},
 	"authors": [
 		{
 			"name": "Paul Maskelyne",
