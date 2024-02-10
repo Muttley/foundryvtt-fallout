@@ -63,8 +63,17 @@
 			"color": "#293f5f",
 			"packs": [
 				"fallout-macros",
-				"skills",
 				"system-documentation"
+			],
+			"folders": [
+				{
+					"name": "Items & Abilities",
+					"sorting": "a",
+					"color": "#141c2b",
+					"packs": [
+						"skills"
+					]
+				}
 			]
 		}
 	],
@@ -103,5 +112,6 @@
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
 	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
-	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip"
+	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip",
+	"background": "systems/fallout/assets/images/please-stand-by.webp"
 }
