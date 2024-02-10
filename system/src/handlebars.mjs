@@ -1,5 +1,4 @@
-// import { FALLOUT } from "./config.mjs"
-export const registerHandlebarsHelpers = function() {
+export default function registerHandlebarsHelpers() {
 	/* -------------------------------------------- */
 	/*  GENERAL HELPERS                             */
 	/* -------------------------------------------- */
@@ -213,4 +212,4 @@ export const registerHandlebarsHelpers = function() {
 		return str;
 	});
 
-};
+}

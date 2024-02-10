@@ -1,4 +1,4 @@
-export class FalloutChat {
+export default class FalloutChat {
 
 	static async _renderChatMessage(
 		actor,

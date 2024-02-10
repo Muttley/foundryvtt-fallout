@@ -1,4 +1,4 @@
-export function registerTextEditorEnrichers() {
+export default function registerTextEditorEnrichers() {
 	CONFIG.TextEditor.enrichers = CONFIG.TextEditor.enrichers.concat([
 		{
 			pattern: /@fos\[(.+?)\]/gm,

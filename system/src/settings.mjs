@@ -1,7 +1,4 @@
-const debounceReload = debounce(() => window.location.reload(), 100);
-
-export function registerSettings() {
-
+export default function registerSettings() {
 	// -------------------
 	//  INTERNAL SETTINGS
 	// -------------------
@@ -53,7 +50,7 @@ export function registerSettings() {
 		type: String,
 		filePicker: true,
 		restricted: true,
-		onChange: debounceReload,
+		requiresReload: true,
 	});
 
 	game.settings.register(SYSTEM_ID, "gmMomentumShowToPlayers", {
@@ -104,7 +101,7 @@ export function registerSettings() {
 		config: true,
 		default: 150,
 		type: Number,
-		onChange: debounceReload,
+		requiresReload: true,
 	});
 
 	game.settings.register(SYSTEM_ID, "carryBaseRobot", {
@@ -114,7 +111,7 @@ export function registerSettings() {
 		config: true,
 		default: 150,
 		type: Number,
-		onChange: debounceReload,
+		requiresReload: true,
 	});
 
 	game.settings.register(SYSTEM_ID, "baseSettlementStorage", {
@@ -124,7 +121,7 @@ export function registerSettings() {
 		config: true,
 		default: 300,
 		type: Number,
-		onChange: debounceReload,
+		requiresReload: true,
 	});
 
 	game.settings.register(SYSTEM_ID, "sourceFilters", {
