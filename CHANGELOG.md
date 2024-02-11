@@ -10,6 +10,9 @@
 - [#157] Added Consumable item compendium (137 items)
 - [#161] Added Trait item compendium (10 items)
 
+## Bugfixes
+- [#147] Skill names not localized in skill roll chat messages
+
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
 
 # v11.3.6

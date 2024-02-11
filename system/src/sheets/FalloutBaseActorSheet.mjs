@@ -137,20 +137,6 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 						i.system.consumableType
 					];
 					break;
-				case "skill":
-					// Get the localized name of a skill, if there is no
-					// localization then it is likely a custom skill, in which
-					// case we will just use it's original name
-					//
-					const nameKey = `FALLOUT.SKILL.${i.name}`;
-					i.localizedName = game.i18n.localize(nameKey);
-
-					if (i.localizedName === nameKey) i.localizedName = i.name;
-
-					i.localizedDefaultAttribute = game.i18n.localize(
-						`FALLOUT.AbilityAbbr.${i.system.defaultAttribute}`
-					);
-					break;
 				case "weapon":
 					if (i.system.ammo !== "") {
 						const [, shotsAvailable] =
@@ -221,7 +207,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("itemId"));
 			this._onRollSkill(
-				item.name,
+				item.localizedName,
 				item.system.value,
 				this.actor.system.attributes[item.system.defaultAttribute].value,
 				item.system.tag

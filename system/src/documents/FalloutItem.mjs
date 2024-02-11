@@ -49,6 +49,13 @@ export default class FalloutItem extends Item {
 		// As with the actor class, items are documents that can have their data
 		// preparation methods overridden (such as prepareBaseData()).
 		super.prepareData();
+
+		switch (this.type) {
+			case "skill":
+				this._prepareSkillData();
+				break;
+			default:
+		}
 	}
 
 	/**
@@ -120,5 +127,20 @@ export default class FalloutItem extends Item {
 		}
 
 		return qualities.join(", ");
+	}
+
+	_prepareSkillData() {
+		// Get the localized name of a skill, if there is no
+		// localization then it is likely a custom skill, in which
+		// case we will just use it's original name
+		//
+		const nameKey = `FALLOUT.SKILL.${this.name}`;
+		this.localizedName = game.i18n.localize(nameKey);
+
+		if (this.localizedName === nameKey) this.localizedName = this.name;
+
+		this.localizedDefaultAttribute = game.i18n.localize(
+			`FALLOUT.AbilityAbbr.${this.system.defaultAttribute}`
+		);
 	}
 }
