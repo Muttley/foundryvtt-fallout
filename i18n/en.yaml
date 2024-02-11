@@ -288,7 +288,8 @@ FALLOUT.TEMPLATES.INJURIES: INJURIES
 FALLOUT.TEMPLATES.Injury_Left_Click: Injury (Left Click)
 FALLOUT.TEMPLATES.Irradiated: Irradiated
 FALLOUT.TEMPLATES.Issue: Issue
-FALLOUT.TEMPLATES.lbs: lbs
+FALLOUT.TEMPLATES.kgs: kg
+FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Learned
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCATIONS & INJURIES
 FALLOUT.TEMPLATES.Locations: Locations
@@ -357,6 +358,25 @@ FALLOUT.TEMPLATES.Weapon_Type: Weapon Type
 FALLOUT.TEMPLATES.Weapon: Weapon
 FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Weapons
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 @fos[DC] per AP spent to the attack’s damage. If you gain damage in this way, you may not spend ammunition for extra damage. A weapon cannot be both Accurate and Inaccurate.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "When you make an attack with a Blast weapon, you do not target a single opponent. Instead, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2 (adjusted for range as normal). If you succeed, every creature (and other damageable target) in that zone suffers the weapon’s damage. If you fail, your misplaced attack is less effective: roll only half the weapon’s @fos[DC] to determine the damage inflicted to creatures in the target zone and ignore the weapon’s normal damage effects."
+FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: A Concealed weapon is small, or otherwise easy to hide on your person. Enemies do not spot a Concealed weapon unless you’re wielding it, or if they make a thorough search and succeed at a PER + Survival test with a difficulty of 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: The difficulty of any skill test to treat injuries inflicted by a Debilitating weapon increase by +1.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Ammunition is spent at ten times the normal rate by Gatling weapons: whenever you would spend one shot of ammunition, a Gatling weapon instead spends a burst of 10 shots. Whenever you spend ammunition to increase this weapon’s damage, add +2 @fos[DC] per ten-shot burst (to a maximum number of bursts equal to the weapon’s Fire Rate), rather than +1 @fos[DC] per shot."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: inaccurate
+FALLOUT.TOOLTIPS.WeaponQuality.limited: limited
+FALLOUT.TOOLTIPS.WeaponQuality.mine: mine
+FALLOUT.TOOLTIPS.WeaponQuality.nightVision: nightVision
+FALLOUT.TOOLTIPS.WeaponQuality.parry: parry
+FALLOUT.TOOLTIPS.WeaponQuality.recon: recon
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: reliable
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: slow_load
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: suppressed
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: thrown
+FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: twoHanded
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: unreliable
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: unstable_radiation
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
