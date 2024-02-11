@@ -3,6 +3,10 @@
 ## Enhancements
 - [#149] Add default icons for all item types
 - [#150] Add new default tokens for all actor types
+- [#153] Added Ammunition item compendium (20 items)
+- [#154] Added Apparel item compendium (161 items)
+
+*Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
 
 # v11.3.6
 
