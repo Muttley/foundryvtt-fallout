@@ -1,0 +1,26 @@
+{
+	"_id": "299nvpoTfu1mwKTX",
+	"_key": "!items!299nvpoTfu1mwKTX",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammunition.svg",
+	"name": "5mm Round",
+	"system": {
+		"cost": "1",
+		"description": "<p><span class=\"fontstyle0\">Small-caliber rifle rounds normally used by the military in miniguns. While supplies of these weapons are rare, they&rsquo;re normally found in large quantities. The problem is that the weapons which use them consume ammunition at a prodigious rate, and a full box of 5mm rounds doesn&rsquo;t last long.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10*(12+6dc) # 5mm Round]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 3,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 0.008
+	},
+	"type": "ammo"
+}

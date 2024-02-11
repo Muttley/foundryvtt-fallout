@@ -1,0 +1,26 @@
+{
+	"_id": "UJQaP4A50u2tSG6G",
+	"_key": "!items!UJQaP4A50u2tSG6G",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammunition.svg",
+	"name": ".38 Round",
+	"system": {
+		"cost": "1",
+		"description": "<p><span class=\"fontstyle0\">Small-caliber pistol ammunition designed for double-action revolvers before the Great War. Abundant enough that it is the ammunition of choice for most makeshift firearms, and several more powerful weapons can be modified to accept a .38 cartridge, sacrificing stopping power for availability of ammunition.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10+5dc # .38 Round]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 0,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 0.014
+	},
+	"type": "ammo"
+}

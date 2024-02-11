@@ -1,0 +1,26 @@
+{
+	"_id": "yGiPeDsETWQBjCdT",
+	"_key": "!items!yGiPeDsETWQBjCdT",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammunition.svg",
+	"name": "Railway Spike",
+	"system": {
+		"cost": "1",
+		"description": "<p><span class=\"fontstyle0\">Iron spikes designed for fastening railway tracks in place. Not as easy to find as you might think, given their mundane origins.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 6+3dc # Railway Spike]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 2,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 0.2
+	},
+	"type": "ammo"
+}
