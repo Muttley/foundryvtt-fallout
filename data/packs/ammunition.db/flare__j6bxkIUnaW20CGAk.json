@@ -1,0 +1,26 @@
+{
+	"_id": "j6bxkIUnaW20CGAk",
+	"_key": "!items!j6bxkIUnaW20CGAk",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Flare",
+	"system": {
+		"cost": "1",
+		"description": "<p>A small tube like a shotgun cartridge, containing a chemical which burns brightly when ignited. Fired from a flare gun, which ignites a fuse upon launching: the flare shoots up into the sky, illuminating the area around it and then drifting down on a plume of white smoke. Good for signaling for help, not for much else. </p>\n<p><strong>Quantity Found:</strong> [[/r 2+1dc]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 1,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 0.079
+	},
+	"type": "ammo"
+}

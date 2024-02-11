@@ -26,6 +26,15 @@
 	],
 	"packs": [
 		{
+			"name": "ammunition",
+			"label": "Ammunition",
+			"system": "fallout",
+			"path": "packs/ammunition",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "system-documentation",
 			"label": "System Documentation",
 			"system": "fallout",
@@ -68,6 +77,7 @@
 					"sorting": "a",
 					"color": "#141c2b",
 					"packs": [
+						"ammunition",
 						"skills"
 					]
 				}

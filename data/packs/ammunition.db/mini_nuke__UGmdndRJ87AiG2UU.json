@@ -1,0 +1,26 @@
+{
+	"_id": "UGmdndRJ87AiG2UU",
+	"_key": "!items!UGmdndRJ87AiG2UU",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Mini-Nuke",
+	"system": {
+		"cost": "100",
+		"description": "<p>A small, football-sized tactical nuclear warhead designed to be hurled by a launcher to a safe distance. Mini-Nukes are extremely rare and found only in small quantities.</p>\n<p>The Scavenger perk cannot increase the number of Mini-Nukes found.</p>\n<p><strong>Quantity Found:</strong> [[/r 1+1dc # Mini-Nuke]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 6,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 12
+	},
+	"type": "ammo"
+}

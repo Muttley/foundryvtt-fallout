@@ -1,0 +1,26 @@
+{
+	"_id": "uLju1wShXy2lTQ75",
+	"_key": "!items!uLju1wShXy2lTQ75",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Fusion Core",
+	"system": {
+		"cost": "200",
+		"description": "<p>Pre-War fusion cores are high-grade, long-term nuclear batteries. A single core can power a small building for a long time or provide a lot of power for something very quickly. Most suits of Power Armor accept a fusion core power source, which lasts for several hours of activity. They can also be used as the ammunition supply for a Gatling laser.</p>\n<p>When discovered, a fusion core contains a number of charges equal to 10 plus the user&rsquo;s Science skill (people with more scientific knowledge can utilize the power more efficiently; the Nuclear Physicist perk also adds extra charges, see p.68). How these charges are used or depleted depends on what they&rsquo;re plugged into (see Power Armor, p.123).</p>\n<p>When used as the ammunition for a Gatling laser, each charge a fusion core contains translates to 50 shots for a Gatling laser. As a Gatling weapon, the Gatling laser consumes ammunition ten times as quickly as most weapon (see <span class=\"fontstyle2\">Gatling, p.90).</p>\n<p>The Scavenger perk cannot increase the number of fusion cores found.</p>\n<p><strong>Quantity Found:</strong> [[/r 1 # Fusion Core]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 3,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 4
+	},
+	"type": "ammo"
+}

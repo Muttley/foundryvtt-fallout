@@ -1,0 +1,26 @@
+{
+	"_id": "3fS1WHb3j5bwp6Tx",
+	"_key": "!items!3fS1WHb3j5bwp6Tx",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": ".308 Round",
+	"system": {
+		"cost": "3",
+		"description": "<p>A high-powered rifle round normally used in hunting rifles and some bolt-action pipe rifles. They&rsquo;re a common enough sight in the wastelands that a weapon using .308 rounds is unlikely to run out of ammunition too often.</p>\n<p><strong>Quantity Found: </strong>[[/r 6+3dc # .308 Round]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 1,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 0.041
+	},
+	"type": "ammo"
+}

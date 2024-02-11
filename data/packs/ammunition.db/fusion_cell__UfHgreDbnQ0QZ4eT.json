@@ -1,0 +1,26 @@
+{
+	"_id": "UfHgreDbnQ0QZ4eT",
+	"_key": "!items!UfHgreDbnQ0QZ4eT",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Fusion Cell",
+	"system": {
+		"cost": "3",
+		"description": "<p>A microfusion cell&mdash;or fusion cell&mdash;is a miniaturized fusion reactor used in light energy weapons. They use volatile hydrogen isotopes which undergo fusion when subjected to extreme heat and pressure, and they can explode if exposed to a significant external heat source. Difficult to refuel without the proper facilities, these cells are often simply disposed of when depleted.</p>\n<p>When fusion cell ammunition is found, it is in the form of a single cell containing the number of shots generated.</p>\n<p><strong>Quantity Found:</strong> [[/r 14+7 # Fusion Cell]]</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 2,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"type": "",
+		"weight": 0.028
+	},
+	"type": "ammo"
+}
