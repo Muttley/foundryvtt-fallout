@@ -1,0 +1,57 @@
+{
+	"_id": "LJPWK7ORcA5RbxW3",
+	"_key": "!items!LJPWK7ORcA5RbxW3",
+	"effects": [
+	],
+	"folder": "CP7J0KktKe7LOSyQ",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Light Dog Armor",
+	"system": {
+		"appareltype": "armor",
+		"armorType": "",
+		"cost": "10",
+		"damaged": "",
+		"description": "<p>Characters who have taken the Dogmeat perk (p.63) are accompanied by a trusted canine companion, and they&rsquo;ll probably want to protect Man&rsquo;s Best Friend from the dangers of the wasteland.</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel"
+}

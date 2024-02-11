@@ -1,0 +1,57 @@
+{
+	"_id": "ox97HdnHHfBPNQg5",
+	"_key": "!items!ox97HdnHHfBPNQg5",
+	"effects": [
+	],
+	"folder": "fwE0tDCbJx6ih6Wv",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Raider Left Arm",
+	"system": {
+		"appareltype": "powerArmor",
+		"armorType": "",
+		"cost": 75,
+		"damaged": "",
+		"description": "",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 7,
+			"min": 0,
+			"mod": 0,
+			"value": 7
+		},
+		"location": {
+			"armL": true,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 3,
+			"physical": 4,
+			"radiation": 7
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 16
+	},
+	"type": "apparel"
+}

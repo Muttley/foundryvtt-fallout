@@ -35,6 +35,15 @@
 			"flags": {}
 		},
 		{
+			"name": "apparel",
+			"label": "Apparel",
+			"system": "fallout",
+			"path": "packs/apparel",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "system-documentation",
 			"label": "System Documentation",
 			"system": "fallout",
@@ -78,6 +87,7 @@
 					"color": "#141c2b",
 					"packs": [
 						"ammunition",
+						"apparel",
 						"skills"
 					]
 				}

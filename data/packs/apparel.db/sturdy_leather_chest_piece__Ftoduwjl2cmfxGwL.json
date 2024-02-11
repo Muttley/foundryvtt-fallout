@@ -1,0 +1,57 @@
+{
+	"_id": "Ftoduwjl2cmfxGwL",
+	"_key": "!items!Ftoduwjl2cmfxGwL",
+	"effects": [
+	],
+	"folder": "9NDfhe3GTXdXv3lf",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Sturdy Leather Chest Piece",
+	"system": {
+		"appareltype": "armor",
+		"armorType": "",
+		"cost": "50",
+		"damaged": "",
+		"description": "<p>Made from tanned and treated animal hide, these hardened leather pieces provide modest protection from physical impacts and gunshots, as well as serving to insulate the wearer from fire and other dangerous energies.</p>\n<p>Each piece of leather armor can accept two mods, one of which is a Material, the other of which is an Upgrade. For mods applied to Torso armor, double the weight and cost (this has already been done for Torso Only mods). All Leather Armor Material mods are&nbsp;<span class=\"fontstyle2\">installed with the Repair skill.</p>\n<ul>\n<li><strong>Leather Armor:</strong> Boiled Leather, Girded Leather, Treated Leather, Shadowed Leather, Studded Leather</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 2
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 3,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 10
+	},
+	"type": "apparel"
+}

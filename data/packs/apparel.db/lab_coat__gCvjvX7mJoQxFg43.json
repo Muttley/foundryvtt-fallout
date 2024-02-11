@@ -1,0 +1,57 @@
+{
+	"_id": "gCvjvX7mJoQxFg43",
+	"_key": "!items!gCvjvX7mJoQxFg43",
+	"effects": [
+	],
+	"folder": "FiAqKiTwXAp5BbMw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Lab Coat",
+	"system": {
+		"appareltype": "outfit",
+		"armorType": "",
+		"cost": "10",
+		"damaged": "",
+		"description": "<p>A white coat&mdash;though likely stained or dirty&mdash; intended for use in a laboratory environment. Normally contains a useful number of pockets, and clock or sensor just below the left lapel, where it can be easily checked without having to reach for it&mdash;ideal during delicate scientific work.</p>\n<p><strong>Special:</strong> <span class=\"fontstyle2\">Between the utility of the design, and simply <span class=\"fontstyle3\">feeling <span class=\"fontstyle2\">smarter while wearing one, a lab coat allows you to re-roll a single d20 on one INT <span class=\"fontstyle2\">based skill test you make each scene.</p>\n<p><span class=\"fontstyle2\">A lab coat can be reinforced with Ballistic Weave&nbsp;(see sidebar, p. 126).</p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel"
+}

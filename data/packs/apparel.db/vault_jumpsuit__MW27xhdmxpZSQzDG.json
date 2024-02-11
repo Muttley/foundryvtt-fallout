@@ -1,0 +1,57 @@
+{
+	"_id": "MW27xhdmxpZSQzDG",
+	"_key": "!items!MW27xhdmxpZSQzDG",
+	"effects": [
+	],
+	"folder": "mtR30GikhQq9bCZw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Vault Jumpsuit",
+	"system": {
+		"appareltype": "clothing",
+		"armorType": "",
+		"cost": "20",
+		"damaged": "",
+		"description": "<p>The standard garment for all vault inhabitants, provided by Vault-Tec. A close-fitting blue jumpsuit with a golden-yellow strip running around the neck, down the torso, and along the sleeves. This strip is a metallic foil which aids in heat dissipation and works with the suit&rsquo;s integrated biometric scanners. Each Vault Jumpsuit has a number on the back, signifying which vault it originated from.</p>\n<p>A Vault Jumpsuit can be modified with an additional protective lining, taking one of the mods below. All Vault Jumpsuit mods are&nbsp;<span class=\"fontstyle2\">installed with the Repair skill.</p>\n<ul>\n<li><strong>Vault Jumpsuit:&nbsp;</strong>Insulated Lining, Treated Lining, Resistant Lining, Protective Lining, Shielded Lining</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 1,
+			"physical": 0,
+			"radiation": 2
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel"
+}

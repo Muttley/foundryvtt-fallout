@@ -1,0 +1,57 @@
+{
+	"_id": "7IiuPn4z3VRHUx3L",
+	"_key": "!items!7IiuPn4z3VRHUx3L",
+	"effects": [
+	],
+	"folder": "GyyBHylLqnHs00iA",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "T-60 Helm",
+	"system": {
+		"appareltype": "powerArmor",
+		"armorType": "",
+		"cost": 130,
+		"damaged": "",
+		"description": "",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 10,
+			"min": 0,
+			"mod": 0,
+			"value": 10
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": true,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 4,
+		"resistance": {
+			"energy": 6,
+			"physical": 7,
+			"radiation": 7
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 12
+	},
+	"type": "apparel"
+}

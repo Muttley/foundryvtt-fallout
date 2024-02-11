@@ -1,0 +1,42 @@
+{
+	"_id": "0KmsH72GOOaMHn4f",
+	"_key": "!items!0KmsH72GOOaMHn4f",
+	"effects": [
+	],
+	"folder": "J39WOsgoviJbw4Tq",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Primal Plate (Main Body)",
+	"system": {
+		"appareltype": "plating",
+		"carry": -20,
+		"cost": "20",
+		"description": "<p>Makeshift supplementary armor that can be affixed to a robot&rsquo;s structure to provide extra protection from physical hazards. The bulk and crude design reduce the robot&rsquo;s carrying capacity, however.</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": null,
+			"max": null
+		},
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "robot_armor"
+}

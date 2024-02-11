@@ -1,0 +1,57 @@
+{
+	"_id": "jQRgZVG0L16aU3Uq",
+	"_key": "!items!jQRgZVG0L16aU3Uq",
+	"effects": [
+	],
+	"folder": "FiAqKiTwXAp5BbMw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Hides",
+	"system": {
+		"appareltype": "outfit",
+		"armorType": "",
+		"cost": "13",
+		"damaged": "",
+		"description": "<p>Typically made from the rough hides of a brahmin, radstag, or other large animal, these simple clothes provide a little protection and comfort, but they&rsquo;re no substitute for properly made clothing or armor.</p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel"
+}

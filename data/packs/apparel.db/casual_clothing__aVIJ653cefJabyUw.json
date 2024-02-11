@@ -1,0 +1,57 @@
+{
+	"_id": "aVIJ653cefJabyUw",
+	"_key": "!items!aVIJ653cefJabyUw",
+	"effects": [
+	],
+	"folder": "mtR30GikhQq9bCZw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Casual Clothing",
+	"system": {
+		"appareltype": "clothing",
+		"armorType": "",
+		"cost": "20",
+		"damaged": "",
+		"description": "<p>Simple, lightweight, and easy to move around in, pre-War casual clothing was intended for leisure and light activity.</p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;Wearing casual clothing allows you to re-roll a single d20 on one <span class=\"fontstyle2\">STR or <span class=\"fontstyle2\">AGI based skill test you make each scene, as the clothing is easy to move in.</p>\n<p>Casual clothing can be reinforced with Ballistic Weave (see sidebar, p. 126)</p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel"
+}

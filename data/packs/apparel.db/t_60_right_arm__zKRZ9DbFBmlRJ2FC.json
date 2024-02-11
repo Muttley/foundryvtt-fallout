@@ -1,0 +1,57 @@
+{
+	"_id": "zKRZ9DbFBmlRJ2FC",
+	"_key": "!items!zKRZ9DbFBmlRJ2FC",
+	"effects": [
+	],
+	"folder": "GyyBHylLqnHs00iA",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "T-60 Right Arm",
+	"system": {
+		"appareltype": "powerArmor",
+		"armorType": "",
+		"cost": 170,
+		"damaged": "",
+		"description": "",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 10,
+			"min": 0,
+			"mod": 0,
+			"value": 10
+		},
+		"location": {
+			"armL": false,
+			"armR": true,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 4,
+		"resistance": {
+			"energy": 5,
+			"physical": 6,
+			"radiation": 7
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 15
+	},
+	"type": "apparel"
+}

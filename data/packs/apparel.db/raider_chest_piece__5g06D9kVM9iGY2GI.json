@@ -1,0 +1,57 @@
+{
+	"_id": "5g06D9kVM9iGY2GI",
+	"_key": "!items!5g06D9kVM9iGY2GI",
+	"effects": [
+	],
+	"folder": "fwE0tDCbJx6ih6Wv",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Raider Chest Piece",
+	"system": {
+		"appareltype": "powerArmor",
+		"armorType": "",
+		"cost": 100,
+		"damaged": "",
+		"description": "",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 10,
+			"min": 0,
+			"mod": 0,
+			"value": 10
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 6,
+			"physical": 8,
+			"radiation": 9
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 22
+	},
+	"type": "apparel"
+}

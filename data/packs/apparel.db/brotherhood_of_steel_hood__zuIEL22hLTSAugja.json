@@ -1,0 +1,57 @@
+{
+	"_id": "zuIEL22hLTSAugja",
+	"_key": "!items!zuIEL22hLTSAugja",
+	"effects": [
+	],
+	"folder": "wq5Mhfa0U7SlJgyP",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Brotherhood of Steel Hood",
+	"system": {
+		"appareltype": "headgear",
+		"armorType": "",
+		"cost": "12",
+		"damaged": "",
+		"description": "<p>The matching headpiece for the Brotherhood of Steel uniform, this close-fitting hood was developed before the Great War for wearers of Power Armor. It is designed to plug into the helmet of a suit of Power Armor, providing a closer interface to the armor&rsquo;s systems, as well as containing an earpiece and microphone for the armor&rsquo;s internal radio.</p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": true,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 1,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "apparel"
+}

@@ -1,0 +1,57 @@
+{
+	"_id": "eZjCS1P94hW9NtX5",
+	"_key": "!items!eZjCS1P94hW9NtX5",
+	"effects": [
+	],
+	"folder": "wq5Mhfa0U7SlJgyP",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Welder's Visor",
+	"system": {
+		"appareltype": "headgear",
+		"armorType": "",
+		"cost": "20",
+		"damaged": "",
+		"description": "<p>A reinforced cap with a metal faceplate. The faceplate contains a piece of hardened tinted glass, to protect the eyes when operating welding equipment, and it can be raised and lowered as needed. Brotherhood Scribes and engineers are often seen wearing these, simply because they spend a lot of time working with metal.</p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": true,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel"
+}
