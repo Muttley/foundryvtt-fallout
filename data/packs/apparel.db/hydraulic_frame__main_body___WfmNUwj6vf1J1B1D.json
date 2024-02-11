@@ -1,0 +1,42 @@
+{
+	"_id": "WfmNUwj6vf1J1B1D",
+	"_key": "!items!WfmNUwj6vf1J1B1D",
+	"effects": [
+	],
+	"folder": "FJhVwzslNQppZ9hj",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Hydraulic Frame (Main Body)",
+	"system": {
+		"appareltype": "plating",
+		"carry": 10,
+		"cost": "60",
+		"description": "<p>A specially made set of armor plates which conceal powerful hydraulics which enhance the robot&rsquo;s movements.</p>\n<p>Special: Melee attacks made from arms fitted with a hydraulic frame inflict +1 @fos[DC] damage and gain the Stun damage effect.</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": null,
+			"max": null
+		},
+		"perks": "Armorer 3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "robot_armor"
+}

@@ -1,0 +1,57 @@
+{
+	"_id": "1t9ZfJxVs14n5wTX",
+	"_key": "!items!1t9ZfJxVs14n5wTX",
+	"effects": [
+	],
+	"folder": "wq5Mhfa0U7SlJgyP",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Brotherhood Scribe's Hat",
+	"system": {
+		"appareltype": "headgear",
+		"armorType": "",
+		"cost": "8",
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">This lightweight leather cap and goggles are provided as an accompaniment to the Brotherhood Scribe&rsquo;s Armor, to protect the head from hazardous conditions.</span> </p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": true,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 2,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "apparel"
+}

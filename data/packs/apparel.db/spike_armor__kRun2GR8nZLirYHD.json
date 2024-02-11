@@ -1,0 +1,57 @@
+{
+	"_id": "kRun2GR8nZLirYHD",
+	"_key": "!items!kRun2GR8nZLirYHD",
+	"effects": [
+	],
+	"folder": "FiAqKiTwXAp5BbMw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Spike Armor",
+	"system": {
+		"appareltype": "outfit",
+		"armorType": "",
+		"cost": "65",
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">Layers of leather, with rags, metal plates, lengths of chain, and bars sown into the layers or welded together. Many of the bars protrude outwards, creating a spiky appearance that helps fend off melee attacks, while the layers of metal plates and leather padding protect from hazards and attacks. A hood and helmet add to the protection provided.</span> </p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": true,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 17
+	},
+	"type": "apparel"
+}

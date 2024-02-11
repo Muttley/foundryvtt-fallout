@@ -1,0 +1,57 @@
+{
+	"_id": "Z2wwI1RUjgV9UuzJ",
+	"_key": "!items!Z2wwI1RUjgV9UuzJ",
+	"effects": [
+	],
+	"folder": "mtR30GikhQq9bCZw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Harness",
+	"system": {
+		"appareltype": "clothing",
+		"armorType": "",
+		"cost": "5",
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">A worker&rsquo;s safety harness repurposed to serve as a mount for pieces of armor. Common amongst raiders, who tend to wear the harness without a shirt underneath.</span> </p>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel"
+}

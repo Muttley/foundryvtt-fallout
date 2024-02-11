@@ -1,0 +1,57 @@
+{
+	"_id": "UYhmJZwhnlwIR8fD",
+	"_key": "!items!UYhmJZwhnlwIR8fD",
+	"effects": [
+	],
+	"folder": "9NDfhe3GTXdXv3lf",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Leather Left Arm",
+	"system": {
+		"appareltype": "armor",
+		"armorType": "",
+		"cost": "8",
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">Made from tanned and treated animal hide, these hardened leather pieces provide modest protection from physical impacts and gunshots, as well as serving to insulate the wearer from fire and other dangerous energies.</span></p>\n<p><span class=\"fontstyle0\">Each piece of leather armor can accept two mods, one of which is a Material, the other of which is an Upgrade. For mods applied to Torso armor, double the weight and cost (this has already been done for Torso Only mods). All Leather Armor Material mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>\n<ul>\n<li><span class=\"fontstyle0\"><strong>Leather Armor:</strong> Boiled Leather, Girded Leather, Treated Leather, Shadowed Leather, Studded Leather</span></li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 2
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 2,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel"
+}

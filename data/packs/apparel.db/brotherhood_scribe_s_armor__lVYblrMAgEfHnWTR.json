@@ -1,0 +1,57 @@
+{
+	"_id": "lVYblrMAgEfHnWTR",
+	"_key": "!items!lVYblrMAgEfHnWTR",
+	"effects": [
+	],
+	"folder": "FiAqKiTwXAp5BbMw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Brotherhood Scribe's Armor",
+	"system": {
+		"appareltype": "outfit",
+		"armorType": "",
+		"cost": "20",
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">The Scribes of the Brotherhood of Steel are sometimes required to venture out into the field to make observations or perform research up-close. While only providing limited protection, this garb is sufficient to protect the wearer from danger long enough to allow them to withdraw and seek assistance from someone better equipped.</span> </p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 2,
+		"resistance": {
+			"energy": 2,
+			"physical": 1,
+			"radiation": 2
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel"
+}

@@ -1,0 +1,42 @@
+{
+	"_id": "bCVyhEfW7raPOUnE",
+	"_key": "!items!bCVyhEfW7raPOUnE",
+	"effects": [
+	],
+	"folder": "flViDepzio5SAZsR",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Factory Armor (Thruster)",
+	"system": {
+		"appareltype": "armor",
+		"carry": 0,
+		"cost": "10",
+		"description": "<p>A standardized, factory-made set of armor plating designed to fit any Mister Handy model.</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": null,
+			"max": null
+		},
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "robot_armor"
+}
