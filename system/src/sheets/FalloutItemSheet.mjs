@@ -13,7 +13,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
 			width: 520,
-			height: "auto",
+			height: 520,
 			tabs: [{
 				navSelector: ".sheet-tabs",
 				contentSelector: ".sheet-body",
