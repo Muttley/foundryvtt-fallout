@@ -44,6 +44,15 @@
 			"flags": {}
 		},
 		{
+			"name": "apparel_mods",
+			"label": "Armor & Clothing Mods",
+			"system": "fallout",
+			"path": "packs/apparel_mods",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "system-documentation",
 			"label": "System Documentation",
 			"system": "fallout",
@@ -87,6 +96,7 @@
 					"color": "#141c2b",
 					"packs": [
 						"ammunition",
+						"apparel_mods",
 						"apparel",
 						"skills"
 					]
