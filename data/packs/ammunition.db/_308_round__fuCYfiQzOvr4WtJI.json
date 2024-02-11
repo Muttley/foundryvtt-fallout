@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/icons/items/ammunition.svg",
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": ".308 Round",
 	"system": {
 		"cost": "3",
