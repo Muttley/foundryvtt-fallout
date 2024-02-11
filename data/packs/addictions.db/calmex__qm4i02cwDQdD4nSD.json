@@ -1,0 +1,15 @@
+{
+	"_id": "qm4i02cwDQdD4nSD",
+	"_key": "!items!qm4i02cwDQdD4nSD",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/addiction.svg",
+	"name": "Calmex",
+	"system": {
+		"description": "<p>You suffer complications on <strong>AGI</strong> tests on all rolls of 18 or higher whenever you are not under the effects of Calmex.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "addiction"
+}

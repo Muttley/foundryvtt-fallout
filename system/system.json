@@ -26,6 +26,15 @@
 	],
 	"packs": [
 		{
+			"name": "addictions",
+			"label": "Addictions",
+			"system": "fallout",
+			"path": "packs/addictions",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "ammunition",
 			"label": "Ammunition",
 			"system": "fallout",
@@ -48,6 +57,15 @@
 			"label": "Armor & Clothing Mods",
 			"system": "fallout",
 			"path": "packs/apparel_mods",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "consumables",
+			"label": "Consumables",
+			"system": "fallout",
+			"path": "packs/consumables",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -95,9 +113,11 @@
 					"sorting": "a",
 					"color": "#141c2b",
 					"packs": [
+						"addictions",
 						"ammunition",
 						"apparel_mods",
 						"apparel",
+						"consumables",
 						"skills"
 					]
 				}

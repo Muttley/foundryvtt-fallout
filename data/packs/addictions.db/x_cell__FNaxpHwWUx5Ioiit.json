@@ -1,0 +1,15 @@
+{
+	"_id": "FNaxpHwWUx5Ioiit",
+	"_key": "!items!FNaxpHwWUx5Ioiit",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/addiction.svg",
+	"name": "X-Cell",
+	"system": {
+		"description": "<p>You increase the difficulty of all tests by +1 whenever you are not under the effects of X-Cell.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "addiction"
+}

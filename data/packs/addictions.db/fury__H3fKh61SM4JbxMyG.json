@@ -1,0 +1,15 @@
+{
+	"_id": "H3fKh61SM4JbxMyG",
+	"_key": "!items!H3fKh61SM4JbxMyG",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/addiction.svg",
+	"name": "Fury",
+	"system": {
+		"description": "<p>You increase the difficulty of all <strong>STR</strong> and <strong>PER</strong> tests by +1 whenever you are not under the effects of Fury.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "addiction"
+}
