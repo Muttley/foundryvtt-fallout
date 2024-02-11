@@ -8,8 +8,9 @@
 	"name": "Big Guns",
 	"system": {
 		"defaultAttribute": "end",
-		"description": "",
+		"description": "<p>Big Guns is the skill that describes the training to use large weapons, from Fat Mans to gatling lasers, and everything in between.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Endurance</strong> but could also be used with Strength when you need to brace a weapon, or Agility when precision matters. You use Big Guns with weapons like miniguns, rocket launchers, Fat Mans, and gatling lasers.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

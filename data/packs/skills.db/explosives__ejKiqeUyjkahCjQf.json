@@ -8,8 +8,9 @@
 	"name": "Explosives",
 	"system": {
 		"defaultAttribute": "per",
-		"description": "",
+		"description": "<p>Whether you throw them, place them as a trap, or remotely detonate them, you use the Explosives skill with any kind of explosive device.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Perception</strong> but you can also use Strength to throw a grenade as far as you can, or Agility to try to get close to a mine without setting it off. You use Explosives with frag grenades and mines, Molotov cocktails, Nuka grenades, plasma grenades, pulse grenades, mines, and dynamite.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

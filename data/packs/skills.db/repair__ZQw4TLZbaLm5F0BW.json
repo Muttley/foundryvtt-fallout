@@ -8,8 +8,9 @@
 	"name": "Repair",
 	"system": {
 		"defaultAttribute": "int",
-		"description": "",
+		"description": "<p>Building and repairing items, from guns to buildings, simple traps to complex mechanisms, fall under the Repair skill.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Intelligence</strong> but you might use Strength to get some heavy machinery operating again, or Perception to investigate a problem with an engine. You use Repair to fix and modify weapons, repair robots, craft items from scratch, or build defenses.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

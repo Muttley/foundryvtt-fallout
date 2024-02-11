@@ -8,8 +8,9 @@
 	"name": "Speech",
 	"system": {
 		"defaultAttribute": "cha",
-		"description": "",
+		"description": "<p>The Speech skill covers the techniques you&rsquo;ve learned to communicate with other people, convincing them with strong arguments, or lying to them and not getting caught.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Charisma</strong> but you might use it with Intelligence to write a speech, or Perception to figure out how susceptible your mark might be to your lie. You use Speech to convince people of your arguments, inspire others, or convincingly deceive them.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0
