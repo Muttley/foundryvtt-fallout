@@ -1,0 +1,32 @@
+{
+	"_id": "KgKwCYEKl95sQQZN",
+	"_key": "!items!KgKwCYEKl95sQQZN",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Razorgrain",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "5",
+		"description": "<p><span class=\"fontstyle0\">A tall, fast-growing grass similar to wheat, which can be ground down to make flour for making bread and other staple foods.</span></p>\n<p><span class=\"fontstyle0\">Razorgrain is an ingredient in a few recipes.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

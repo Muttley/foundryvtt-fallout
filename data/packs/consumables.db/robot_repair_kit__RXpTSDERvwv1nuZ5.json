@@ -1,0 +1,33 @@
+{
+	"_id": "RXpTSDERvwv1nuZ5",
+	"_key": "!items!RXpTSDERvwv1nuZ5",
+	"effects": [
+	],
+	"folder": "SI3ySgcRWajbytaR",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Robot Repair Kit",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "other",
+		"cost": "48",
+		"description": "<p>A device which can help to repair and reactivate damaged robots or Power Armor. Most robots have internal self-diagnostic and repair protocols, which are activated when the robot performs repairs or is repaired by someone else. A robot repair kit helps jump-start and accelerate these protocols.</p>\n<ul>\n<li><strong>Use:</strong> A robot repair kit can be used in one of two ways: it can be applied using the Take Chem minor action, healing 4 HP or treating an Injury immediately, or it can be applied as part of a First Aid action, healing 4 HP or treating an Injury in addition to any other healing done. As with any repairs to a robot or Power Armor, this is done using the Repair skill rather than the Medicine skill, but the actions used are otherwise the same.</li>\n</ul>",
+		"duration": "",
+		"effect": "<p>Heal 4 HP to a Robot or Power Armor (see description)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

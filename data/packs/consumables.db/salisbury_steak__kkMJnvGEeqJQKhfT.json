@@ -1,0 +1,32 @@
+{
+	"_id": "kkMJnvGEeqJQKhfT",
+	"_key": "!items!kkMJnvGEeqJQKhfT",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Salisbury Steak",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "20",
+		"description": "<p><span class=\"fontstyle0\">A ready-to-eat meal of ground beef mixed with breadcrumbs, onion, and egg, served with gravy. The meal is pre-packaged, preserved, and sealed for freshness, and requires only heat to be made properly edible again.</span></p>\n<p><span class=\"fontstyle0\">Sometimes,&nbsp;</span><strong><span class=\"fontstyle2\">preserved </span></strong><span class=\"fontstyle0\">boxes of Salisbury Steak can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 5,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

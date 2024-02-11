@@ -1,0 +1,32 @@
+{
+	"_id": "mk8SR0w1UisPaDy1",
+	"_key": "!items!mk8SR0w1UisPaDy1",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Brahmin Milk",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": "15",
+		"description": "<p><span class=\"fontstyle0\">Milk from a brahmin. This drink is a true lifesaver, as it has properties that cleanse radiation poisoning from the body&hellip; at least, if it hasn&rsquo;t spoiled yet.</span> </p>",
+		"duration": "",
+		"effect": "<p>Heals 2 Radiation damage</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 1,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.5
+	},
+	"type": "consumable"
+}

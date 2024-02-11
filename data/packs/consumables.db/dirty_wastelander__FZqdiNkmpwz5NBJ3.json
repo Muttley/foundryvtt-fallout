@@ -1,0 +1,32 @@
+{
+	"_id": "FZqdiNkmpwz5NBJ3",
+	"_key": "!items!FZqdiNkmpwz5NBJ3",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Dirty Wastelander",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "beverage",
+		"cost": "10",
+		"description": "<p><span class=\"fontstyle0\">An extremely potent alcoholic beverage, made from a blend of whiskey, Nuka-Cola, and Mutfruit, which has much the same effect as most alcoholic drinks&hellip; just moreso.</span> </p>",
+		"duration": "",
+		"effect": "<p>Reduce difficulty of all STR tests by 1 and increase difficulty of all INT tests by 2 (in total)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

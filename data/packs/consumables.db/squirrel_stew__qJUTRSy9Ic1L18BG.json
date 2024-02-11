@@ -1,0 +1,32 @@
+{
+	"_id": "qJUTRSy9Ic1L18BG",
+	"_key": "!items!qJUTRSy9Ic1L18BG",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Squirrel Stew",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "24",
+		"description": "<p><span class=\"fontstyle0\">Chunks of squirrel meat, along with carrot, tato, and some bloodleaf, cooked together to create a thick stew. More filling and appetizing than the ingredients individually.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 10,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

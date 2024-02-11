@@ -1,0 +1,32 @@
+{
+	"_id": "cNP3hldtBtuAG5eu",
+	"_key": "!items!cNP3hldtBtuAG5eu",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Softshell Mirelurk Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "22",
+		"description": "<p><span class=\"fontstyle0\">Meat from a softshell mirelurk. Compared to normal mirelurk meat, this is especially tender and flaky, and makes for a much more satisfying food.</span></p>\n<p><span class=\"fontstyle0\">Softshell Mirelurk meat can be cooked to produce Cooked Softshell Meat.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,32 @@
+{
+	"_id": "0lnW7AJMNs7SxdpP",
+	"_key": "!items!0lnW7AJMNs7SxdpP",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Mutt Chops",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "12",
+		"description": "<p><span class=\"fontstyle0\">Cuts of mongrel dog meat cooked to make them more nutritious and edible.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

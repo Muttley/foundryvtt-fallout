@@ -1,0 +1,32 @@
+{
+	"_id": "2Huj9yJeWsIQTrZs",
+	"_key": "!items!2Huj9yJeWsIQTrZs",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Mole Rat Chunks",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "8",
+		"description": "<p><span class=\"fontstyle0\">Pieces of mole rat meat which&rsquo;ve been cooked over a fire. The meat is somewhat tough and chewy, but leaves a feeling of vigor, as if your reserves of stamina have increased.</span> </p>",
+		"duration": "",
+		"effect": "<p>+1 Maximum AP in group pool until the end of the current scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 7,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

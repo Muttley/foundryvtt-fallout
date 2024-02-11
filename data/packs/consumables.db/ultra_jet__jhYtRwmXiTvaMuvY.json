@@ -1,0 +1,33 @@
+{
+	"_id": "jhYtRwmXiTvaMuvY",
+	"_key": "!items!jhYtRwmXiTvaMuvY",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Ultra Jet",
+	"system": {
+		"addiction": 3,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": "67",
+		"description": "<p>An extremely concentrated form of Jet, it is significantly more potent, and affects Ghouls as easily as it does humans due to its potency.</p>\n<p><strong>Ultra Jet Addiction:</strong> A failed addiction roll renders you addicted to Ultra Jet. You increase the difficulty of all AGI tests by +1, and you generate one fewer AP whenever you succeed at a skill test (minimum 0) whenever you are not under the effects of Ultra Jet. This addiction is permanent and cannot be cured by any known means.</p>",
+		"duration": "brief",
+		"effect": "<p>Gain 6 AP immediately (lost if not spent), Extra actions cost 1 less AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

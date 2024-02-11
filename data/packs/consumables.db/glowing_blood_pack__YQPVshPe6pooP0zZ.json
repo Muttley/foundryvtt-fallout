@@ -1,0 +1,32 @@
+{
+	"_id": "YQPVshPe6pooP0zZ",
+	"_key": "!items!YQPVshPe6pooP0zZ",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Glowing Blood Pack",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": "30",
+		"description": "<p><span class=\"fontstyle0\">A blood bag filled with a luminescent green fluid. If you can stomach the acrid, metallic taste, they have potent restorative properties and help protect the body against radiation poisoning for a short while.</span></p>",
+		"duration": "",
+		"effect": "<p>+5 to Radiation damage resistance</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

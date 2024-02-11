@@ -1,0 +1,32 @@
+{
+	"_id": "uPYpLRvtS4R79qW2",
+	"_key": "!items!uPYpLRvtS4R79qW2",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Fancy Lads Snack Cakes (Preserved)",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "18",
+		"description": "<p><span class=\"fontstyle0\">Small, frosted cakes, so laden with sugar and other sweeteners than they&rsquo;re essentially preserved forever. Proclaimed in advertising to be &ldquo;America&rsquo;s Favorite Snackfood&rdquo;, these cakes can be found across the wastelands, in many teeth-achingly sweet varieties.</span></p>\n<p><span class=\"fontstyle0\">Sometimes, <strong>preserved</strong> boxes of Fancy Lads Snack Cakes can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1. <br></span></p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

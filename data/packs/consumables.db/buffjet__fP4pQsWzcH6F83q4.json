@@ -1,0 +1,33 @@
+{
+	"_id": "fP4pQsWzcH6F83q4",
+	"_key": "!items!fP4pQsWzcH6F83q4",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Buffjet",
+	"system": {
+		"addiction": 1,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "Buffout",
+		"consumableType": "chem",
+		"cost": "75",
+		"description": "<p>A potent, if highly addictive mixture of Buffout and Jet, providing a boost to physical prowess, heightened reflexes, and a burst of adrenaline.</p>\n<ul>\n<li><strong>Buffout Addiction:</strong> A failed addiction roll renders you addicted to Buffout. You increase the difficulty of all STR and END tests by +1 whenever you are not under the effects of a type of Buffout (Buffout, Buffjet, or Bufftats).</li>\n</ul>",
+		"duration": "brief",
+		"effect": "<p>Reduce the difficulty of all STR and END tests by 1 (minimum 0). +4 Max HP, Gain 3 AP immediately (lost if not spent)| Extra actions cost 1 less AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

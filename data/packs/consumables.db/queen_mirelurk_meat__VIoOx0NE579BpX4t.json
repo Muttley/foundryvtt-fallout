@@ -1,0 +1,32 @@
+{
+	"_id": "VIoOx0NE579BpX4t",
+	"_key": "!items!VIoOx0NE579BpX4t",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Queen Mirelurk Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "22",
+		"description": "<p><span class=\"fontstyle0\">The meat from a dead mirelurk Queen. This meat can make for a great feast, as it is nutrient rich and incredibly filling, leaving a sense of health and wellbeing in any who eat it, even raw. When cooked, these effects are even more pronounced.</span></p>\n<p><span class=\"fontstyle0\">Queen mirelurk meat can be cooked to produce Mirelurk Queen Steak.</span></p>",
+		"duration": "",
+		"effect": "<p>May re-roll 1d20 on all END tests until end of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 10,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

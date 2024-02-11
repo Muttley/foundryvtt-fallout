@@ -1,0 +1,33 @@
+{
+	"_id": "hWlAJa2j3N2LaiPx",
+	"_key": "!items!hWlAJa2j3N2LaiPx",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Day Tripper",
+	"system": {
+		"addiction": 1,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": "40",
+		"description": "<p>A mild pre-War relaxant and hallucinogen, Day Tripper was favored by Americans seeking a brief escape from reality. The resulting high made users more laid-back and relaxed, while also making them less inclined to exert themselves physically. It was popular amongst many social groups during the stresses of the Great War, food riots, and general societal problems in the years before the bombs fell.</p>\n<ul>\n<li><strong>Day Tripper Addiction:</strong> A failed addiction roll renders you addicted to Day Tripper. You increase the difficulty of all CHA and LCK tests by +1 whenever you are not under the effects of Day Tripper.</li>\n</ul>",
+		"duration": "lasting",
+		"effect": "<p>Reduce the difficulty of CHA and LCK tests by 1 (minimum 0), +1 difficulty to STR tests</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

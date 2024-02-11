@@ -1,0 +1,32 @@
+{
+	"_id": "gg2H82rn5B2SXOrF",
+	"_key": "!items!gg2H82rn5B2SXOrF",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Canned Dog Food",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "6",
+		"description": "<p><span class=\"fontstyle0\">A metal can of processed meat intended to be fed to dogs. Despite being made for dogs, it&rsquo;s entirely edible by humans, and the sealed can keeps the food within preserved and relatively safe to eat for long periods.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

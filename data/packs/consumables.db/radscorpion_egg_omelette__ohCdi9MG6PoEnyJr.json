@@ -1,0 +1,32 @@
+{
+	"_id": "ohCdi9MG6PoEnyJr",
+	"_key": "!items!ohCdi9MG6PoEnyJr",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radscorpion Egg Omelette",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "65",
+		"description": "<p><span class=\"fontstyle0\">Made from a radscorpion egg, these omelettes are highly prized by those who make considerable use of combat drugs, as something about the food cleanses the body to remove chemical dependencies and addictions.</span> </p>",
+		"duration": "",
+		"effect": "<p>Cure all addictions</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 9,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,32 @@
+{
+	"_id": "5uXBOucct2TglTlF",
+	"_key": "!items!5uXBOucct2TglTlF",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Iguana Bits",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "8",
+		"description": "<p><span class=\"fontstyle0\">Chunks of raw iguana meat, in a small can or another sealed container. At least, you </span><span class=\"fontstyle2\">hope </span><span class=\"fontstyle0\">that&rsquo;s iguana meat. You don&rsquo;t see many iguanas around.</span></p>\n<p><span class=\"fontstyle0\">Iguana bits are an ingredient in Iguana on a Stick and Iguana Soup.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

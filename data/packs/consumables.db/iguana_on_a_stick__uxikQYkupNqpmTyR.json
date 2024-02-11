@@ -1,0 +1,32 @@
+{
+	"_id": "uxikQYkupNqpmTyR",
+	"_key": "!items!uxikQYkupNqpmTyR",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Iguana on a Stick",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "33",
+		"description": "<p><span class=\"fontstyle0\">Chunks of iguana meat on a wooden skewer, which have then been cooked. Not the best meal, but it&rsquo;ll do the trick if you&rsquo;re desperate or need to secure the loyalty of a canine companion.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

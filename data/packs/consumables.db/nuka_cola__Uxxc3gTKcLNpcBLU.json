@@ -1,0 +1,33 @@
+{
+	"_id": "Uxxc3gTKcLNpcBLU",
+	"_key": "!items!Uxxc3gTKcLNpcBLU",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Nuka-Cola",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": false,
+		"consumableGroup": "",
+		"consumableType": "beverage",
+		"cost": "20",
+		"description": "<p><span class=\"fontstyle0\">First entering the market in 2044, Nuka-Cola rapidly became the number one soft drink in the United States and was the most popular beverage in the world soon after. A combination of seventeen fruit essences, precisely balanced to enhance the classic cola flavor. Each bottle contains 120% of the recommended daily amount of sugar, and excessive amounts of caffeine, but is also fortified with vitamins, minerals and &ldquo;health tonics&rdquo;. Due to its popularity, it can still be found in vast quantities in the wasteland, and it is still popular even if the bottles are now warm and the carbonated fizz went flat long ago.</span></p>\n<p><span class=\"fontstyle0\">You receive 1 cap upon opening and drinking a bottle of Nuka-Cola.</span> </p>",
+		"duration": "",
+		"effect": "<p>Immediately gain +1 AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 2,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

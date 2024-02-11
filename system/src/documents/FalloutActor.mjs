@@ -756,9 +756,7 @@ export default class FalloutActor extends Actor {
 
 			if (consumableType === "chem" && item.system.addictive) {
 				const alreadyAddicted = await this.isAddictedToChem(item);
-				console.log(`alreadyAddicted: ${alreadyAddicted}`);
 
-				// TODO Check for addiction
 				const chemId = item.name.slugify();
 				const dosageKey = `system.chemDoses.${chemId}`;
 

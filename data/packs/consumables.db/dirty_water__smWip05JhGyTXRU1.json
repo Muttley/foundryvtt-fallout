@@ -1,0 +1,32 @@
+{
+	"_id": "smWip05JhGyTXRU1",
+	"_key": "!items!smWip05JhGyTXRU1",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Dirty Water",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": "5",
+		"description": "<p><span class=\"fontstyle0\">Water, collected from rivers, lakes, swimming pools, and any other unfiltered water source. It&rsquo;s not recommended to drink dirty water without filtering or boiling it, as it contains a fair amount of radiation&hellip; but water is scarce in some places and the choice of clean water isn&rsquo;t always available.</span> </p>",
+		"duration": "",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 2,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.5
+	},
+	"type": "consumable"
+}

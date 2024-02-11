@@ -1,0 +1,33 @@
+{
+	"_id": "7e60Vl5tVoU4MIlJ",
+	"_key": "!items!7e60Vl5tVoU4MIlJ",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Bufftats",
+	"system": {
+		"addiction": 1,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "Buffout",
+		"consumableType": "chem",
+		"cost": "75",
+		"description": "<p>An addictive cocktail of Buffout steroids and Mentats, heightening both physical prowess and awareness.</p>\n<ul>\n<li><strong>Buffout Addiction:</strong> A failed addiction roll renders you addicted to Buffout. You increase the difficulty of all STR and END tests by +1 whenever you are not under the effects of a type of Buffout (Buffout, Buffjet, or Bufftats).</li>\n</ul>",
+		"duration": "lasting",
+		"effect": "<p>Reduce the difficulty of all STR, PER| and END tests by 1 (minimum 0)| +4 Max HP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

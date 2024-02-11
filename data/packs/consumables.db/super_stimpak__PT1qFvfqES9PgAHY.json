@@ -1,0 +1,33 @@
+{
+	"_id": "PT1qFvfqES9PgAHY",
+	"_key": "!items!PT1qFvfqES9PgAHY",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Super Stimpak",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": "90",
+		"description": "<p>A super Stimpak is an enhanced version of the standard Stimpak, with an additional vial of medicine and a leather strap to secure the needle to the patient&rsquo;s arm during treatment. A more potent cocktail of medication is used in a super Stimpak, allowing it to heal much more effectively.</p>\n<ul>\n<li><strong>Use:</strong> A super Stimpak can be used in one of two ways: it can be applied using the Take Chem minor action, healing 8 HP or treating up to two Injuries immediately, or it can be applied as part of a First Aid action, healing 8 HP or treating up to two Injuries in addition to any other healing done.</li>\n</ul>",
+		"duration": "instant",
+		"effect": "<p>Heals 8 HP (see description)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 8,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

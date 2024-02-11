@@ -1,0 +1,32 @@
+{
+	"_id": "HxBsbNa9k0mXE4H7",
+	"_key": "!items!HxBsbNa9k0mXE4H7",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "BlamCo Brand Mac and Cheese (Preserved)",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "10",
+		"description": "<p><span class=\"fontstyle0\">A pre-War fast-food product found in the wasteland many years later. the normally found in brightly colored boxes with an image of the food&mdash;ready-made macaroni and cheese&mdash;on the front.</span></p>\n<p><span class=\"fontstyle0\">Sometimes,&nbsp;</span><span class=\"fontstyle2\"><strong>preserved</strong> </span><span class=\"fontstyle0\">boxes of BlamCo Brand Mac and Cheese can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1.</span> </p>",
+		"duration": "",
+		"effect": "<p>&nbsp;</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}

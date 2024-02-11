@@ -1,0 +1,32 @@
+{
+	"_id": "rj3fi0X9aQNceJF6",
+	"_key": "!items!rj3fi0X9aQNceJF6",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Refreshing Beverage",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": "110",
+		"description": "<p><span class=\"fontstyle0\">A mysterious panacea made from medical supplies, this chemical concoction restores health and cleanses the body of radiation and chemical dependencies. The recipe has spread across the wasteland by word of mouth, but it requires numerous ingredients to produce, so it remains rare.</span> </p>",
+		"duration": "",
+		"effect": "<p>Heals 10 Radiation damage, Cures all addictions</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 11,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 5,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

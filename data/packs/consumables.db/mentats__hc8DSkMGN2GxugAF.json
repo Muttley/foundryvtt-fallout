@@ -1,0 +1,33 @@
+{
+	"_id": "hc8DSkMGN2GxugAF",
+	"_key": "!items!hc8DSkMGN2GxugAF",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Mentats",
+	"system": {
+		"addiction": 3,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "Mentat",
+		"consumableType": "chem",
+		"cost": "50",
+		"description": "<p>Mentats were a popular recreational and performance-enhancing drug before the Great War, which enhance memory and speed mental processes. It was popular amongst students studying for exams, and amongst armchair philosophers and those in jobs requiring intensive thought. The effect lasts only a short time, leaving the user feeling tired and unfocused afterwards, and they are addictive by design, with withdrawal causing migraines and irritability.</p>\n<ul>\n<li><strong>Mentat Addiction:</strong> A failed addiction roll renders you addicted to Mentats. You increase the difficulty of all CHA tests by +1 whenever you are not under the effects of a type of Mentat (ordinary Mentats, or the Berry, Grape, or Orange versions).</li>\n</ul>",
+		"duration": "lasting",
+		"effect": "<p>Re-roll 1d20 on PER and INT tests</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

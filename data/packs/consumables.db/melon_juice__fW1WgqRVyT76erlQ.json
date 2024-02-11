@@ -1,0 +1,33 @@
+{
+	"_id": "fW1WgqRVyT76erlQ",
+	"_key": "!items!fW1WgqRVyT76erlQ",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Melon Juice",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": false,
+		"consumableGroup": "",
+		"consumableType": "beverage",
+		"cost": "6",
+		"description": "<p><span class=\"fontstyle0\">Juice made from pressing the pulp of a melon. A refreshing and healthy drink, which promotes the body&rsquo;s natural healing.</span> </p>",
+		"duration": "",
+		"effect": "<p>Heal 1 HP at the start of each turn</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.5
+	},
+	"type": "consumable"
+}

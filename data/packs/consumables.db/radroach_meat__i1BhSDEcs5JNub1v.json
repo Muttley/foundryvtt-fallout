@@ -1,0 +1,32 @@
+{
+	"_id": "i1BhSDEcs5JNub1v",
+	"_key": "!items!i1BhSDEcs5JNub1v",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radroach Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": "",
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": "3",
+		"description": "<p><span class=\"fontstyle0\">Meat from the mutated, irradiated cockroaches known commonly as radroaches. The meat is mildly radioactive and offers little in the way of nourishment or satisfaction, and it isn&rsquo;t especially appetizing either. Cooking it provides only a marginal improvement.</span></p>\n<p><span class=\"fontstyle0\">Radroach meat can be cooked to make Grilled Radroach.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0
+	},
+	"type": "consumable"
+}
