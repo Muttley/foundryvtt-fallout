@@ -1,0 +1,34 @@
+{
+	"_id": "K63y4mcKxr792XLB",
+	"_key": "!items!K63y4mcKxr792XLB",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Tesla Bracers",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 150,
+		"description": "<p>Installed with the <b>Repair</b> skill</p>",
+		"effect": "<p>While armor is powered, your unarmed attacks inflict +2 @fos[DC] damage and now inflict Energy damage</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Arm",
+		"perks": "Blacksmith 3, Science! 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "FRPz5uD3tZ7hMjir",
+	"_key": "!items!FRPz5uD3tZ7hMjir",
+	"effects": [
+	],
+	"folder": "3txykwrcDDfTdRcH",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Polymer",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "45",
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "ZsGBPsT9kf1lVrFw",
+	"_key": "!items!ZsGBPsT9kf1lVrFw",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Optimized Bracers",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 100,
+		"description": "<p>Installed with the <b>Repair</b> skill</p>",
+		"effect": "<p>While armor is powered, you may spend up to 4 AP on bonus damage for melee attacks </p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Arm",
+		"perks": "Blacksmith 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

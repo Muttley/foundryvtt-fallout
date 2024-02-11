@@ -1,0 +1,34 @@
+{
+	"_id": "XYvAnkqTE6TUIvzs",
+	"_key": "!items!XYvAnkqTE6TUIvzs",
+	"effects": [
+	],
+	"folder": "hX1IhpilWGz9MjVG",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Dense",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "7",
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>+4 to all damage resistances vs Blast weapons</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Torso",
+		"perks": "Armorer 3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

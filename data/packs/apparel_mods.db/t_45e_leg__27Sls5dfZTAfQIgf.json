@@ -1,0 +1,34 @@
+{
+	"_id": "27Sls5dfZTAfQIgf",
+	"_key": "!items!27Sls5dfZTAfQIgf",
+	"effects": [
+	],
+	"folder": "U9QdR1SJ8Q85o6wa",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-45e Leg",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 20,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "3"
+		},
+		"location": "Leg",
+		"perks": "3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 3
+	},
+	"type": "apparel_mod"
+}

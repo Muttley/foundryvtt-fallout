@@ -1,0 +1,34 @@
+{
+	"_id": "WKklumSE0xUCXFmc",
+	"_key": "!items!WKklumSE0xUCXFmc",
+	"effects": [
+	],
+	"folder": "0sZTfWE1J7mKvvnK",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Prism Shielding",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
+		"effect": "<p>+2 damage resistances vs Blast weapons</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Any",
+		"perks": "Science! 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 2
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

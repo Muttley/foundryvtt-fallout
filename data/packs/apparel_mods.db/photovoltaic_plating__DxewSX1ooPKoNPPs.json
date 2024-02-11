@@ -1,0 +1,34 @@
+{
+	"_id": "DxewSX1ooPKoNPPs",
+	"_key": "!items!DxewSX1ooPKoNPPs",
+	"effects": [
+	],
+	"folder": "0sZTfWE1J7mKvvnK",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Photovoltaic Plating",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
+		"effect": "<p>+1 AP at the start of a scene if in direct sunlight (only applies once)</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Any",
+		"perks": "Science! 3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

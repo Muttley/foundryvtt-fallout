@@ -1,0 +1,34 @@
+{
+	"_id": "RrhtyBPhjtENsF6w",
+	"_key": "!items!RrhtyBPhjtENsF6w",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Calibrated Shocks",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 100,
+		"description": "<p>Installed with the <b>Science</b> skill</p>",
+		"effect": "<p>Your carry weight is increased by +50</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Leg",
+		"perks": "Science! 2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

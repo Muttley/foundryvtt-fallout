@@ -1,0 +1,34 @@
+{
+	"_id": "ZHnH96ic3qiVPJ25",
+	"_key": "!items!ZHnH96ic3qiVPJ25",
+	"effects": [
+	],
+	"folder": "BuEsrVQbimoVYlW4",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Stabilized",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "1",
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>When you aim and make a ranged attack, +1 @fos[DC] to the attack's damage</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Arms",
+		"perks": "Armorer 2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

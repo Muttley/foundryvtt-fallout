@@ -1,0 +1,34 @@
+{
+	"_id": "19b26SvJv3xOMCC4",
+	"_key": "!items!19b26SvJv3xOMCC4",
+	"effects": [
+	],
+	"folder": "lLsTAfSqwrufEQub",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-51c Leg",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 13,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "1"
+		},
+		"location": "Leg",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

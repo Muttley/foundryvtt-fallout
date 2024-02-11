@@ -1,0 +1,34 @@
+{
+	"_id": "gySESs8tqQfig1qH",
+	"_key": "!items!gySESs8tqQfig1qH",
+	"effects": [
+	],
+	"folder": "3PYKStGfDNV2sWN9",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Polished Metal",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "40",
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 4,
+			"physical": 4,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

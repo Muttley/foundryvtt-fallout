@@ -1,0 +1,34 @@
+{
+	"_id": "Aqhxp38UDkBJ1EJ0",
+	"_key": "!items!Aqhxp38UDkBJ1EJ0",
+	"effects": [
+	],
+	"folder": "e7NADGE4ZuOSX2mA",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Mk VI Helm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 35,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "3"
+		},
+		"location": "Head",
+		"perks": "3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 3
+	},
+	"type": "apparel_mod"
+}

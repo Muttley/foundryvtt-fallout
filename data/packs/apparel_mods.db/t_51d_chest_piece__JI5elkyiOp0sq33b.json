@@ -1,0 +1,34 @@
+{
+	"_id": "JI5elkyiOp0sq33b",
+	"_key": "!items!JI5elkyiOp0sq33b",
+	"effects": [
+	],
+	"folder": "lLsTAfSqwrufEQub",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-51d Chest Piece",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 27,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "4"
+		},
+		"location": "Torso",
+		"perks": "3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 3
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "Pfh0zvUkSVL49AeL",
+	"_key": "!items!Pfh0zvUkSVL49AeL",
+	"effects": [
+	],
+	"folder": "U9QdR1SJ8Q85o6wa",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-45e Arm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 20,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "3"
+		},
+		"location": "Arm",
+		"perks": "3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 3
+	},
+	"type": "apparel_mod"
+}

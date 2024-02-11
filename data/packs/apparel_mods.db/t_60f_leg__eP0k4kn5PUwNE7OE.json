@@ -1,0 +1,34 @@
+{
+	"_id": "eP0k4kn5PUwNE7OE",
+	"_key": "!items!eP0k4kn5PUwNE7OE",
+	"effects": [
+	],
+	"folder": "OvlGhKtZemOqxcAN",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-60f Leg",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 175,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "4"
+		},
+		"location": "Leg",
+		"perks": "4",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

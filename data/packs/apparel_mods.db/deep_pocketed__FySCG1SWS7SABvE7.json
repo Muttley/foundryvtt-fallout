@@ -1,0 +1,34 @@
+{
+	"_id": "FySCG1SWS7SABvE7",
+	"_key": "!items!FySCG1SWS7SABvE7",
+	"effects": [
+	],
+	"folder": "4o4WqT1kVgccjvmx",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Deep Pocketed",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "5",
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>+20 Carry Weight</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "All Locations",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

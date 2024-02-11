@@ -1,0 +1,34 @@
+{
+	"_id": "f2TJFwW2vfMqrmAY",
+	"_key": "!items!f2TJFwW2vfMqrmAY",
+	"effects": [
+	],
+	"folder": "e7NADGE4ZuOSX2mA",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Mk II Chest Piece",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 14,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "1"
+		},
+		"location": "Torso",
+		"perks": "1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

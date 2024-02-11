@@ -1,0 +1,34 @@
+{
+	"_id": "3d0refqygOWlr08D",
+	"_key": "!items!3d0refqygOWlr08D",
+	"effects": [
+	],
+	"folder": "BuEsrVQbimoVYlW4",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Brawling",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "1",
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>Unarmed attacks inflict +1 @fos[DC] damage</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Arms",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "8fvlLrbWjODf6BCe",
+	"_key": "!items!8fvlLrbWjODf6BCe",
+	"effects": [
+	],
+	"folder": "0sZTfWE1J7mKvvnK",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Lead Plating",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
+		"effect": "<p>+2 Radiation damage resistance</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Any",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 2
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

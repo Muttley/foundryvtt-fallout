@@ -1,0 +1,34 @@
+{
+	"_id": "Oawiwwrdx2ZU0xgA",
+	"_key": "!items!Oawiwwrdx2ZU0xgA",
+	"effects": [
+	],
+	"folder": "Zh7U1bCmTwNjIFm6",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Tempered",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "6",
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "mgzavWT1TZT1qdoR",
+	"_key": "!items!mgzavWT1TZT1qdoR",
+	"effects": [
+	],
+	"folder": "0sZTfWE1J7mKvvnK",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Winterized Coating",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>\n<p>Cannot be installed on <strong>X-01 Power Armor</strong>.</p>",
+		"effect": "<p>+1 Energy damage resistance</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Any",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

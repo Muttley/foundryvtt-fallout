@@ -1,0 +1,34 @@
+{
+	"_id": "Su9jHSoBdvTPSMD8",
+	"_key": "!items!Su9jHSoBdvTPSMD8",
+	"effects": [
+	],
+	"folder": "e7NADGE4ZuOSX2mA",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Mk V Helm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 28,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Head",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

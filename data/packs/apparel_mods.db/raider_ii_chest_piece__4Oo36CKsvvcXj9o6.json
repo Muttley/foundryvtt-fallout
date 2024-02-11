@@ -1,0 +1,34 @@
+{
+	"_id": "4Oo36CKsvvcXj9o6",
+	"_key": "!items!4Oo36CKsvvcXj9o6",
+	"effects": [
+	],
+	"folder": "0DHZb3YEpdbFcvX7",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Raider II Chest Piece",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 10,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "4"
+		},
+		"location": "Torso",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "IIhwRw2S19A9hrEV",
+	"_key": "!items!IIhwRw2S19A9hrEV",
+	"effects": [
+	],
+	"folder": "xPcGgoBMaLSZ2Rxg",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Studded Leather",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": "25",
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 4,
+			"physical": 4,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

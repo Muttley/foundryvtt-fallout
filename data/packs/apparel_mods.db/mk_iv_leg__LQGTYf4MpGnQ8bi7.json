@@ -1,0 +1,34 @@
+{
+	"_id": "LQGTYf4MpGnQ8bi7",
+	"_key": "!items!LQGTYf4MpGnQ8bi7",
+	"effects": [
+	],
+	"folder": "e7NADGE4ZuOSX2mA",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Mk IV Leg",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 30,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Leg",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}
