@@ -1,0 +1,15 @@
+{
+	"_id": "yova9LubVGA18nar",
+	"_key": "!items!yova9LubVGA18nar",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "Necrotic Post-Human",
+	"system": {
+		"description": "<p>You are immune to radiation damage. In fact, you&rsquo;re healed by it&mdash;you regain 1 HP for every 3 points of radiation damage inflicted upon you, and if you rest in an irradiated location, you may re-roll your dice pool when checking if your injuries heal. In addition, Survival becomes a Tag skill, increasing it by 2 ranks.</p>\n<p>You age at a much-decreased rate, and you&rsquo;re probably older than your unmutated companions&mdash;you may even have survived the Great War of 2077&mdash;but you&rsquo;re sterile: &ldquo;the first generation of ghouls is the last&rdquo; as the saying goes. You may face discrimination from &ldquo;smoothskins&rdquo; (humans who aren&rsquo;t ghouls), increasing the difficulty or complication range of Charisma tests depending on your opponent&rsquo;s beliefs.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}

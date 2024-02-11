@@ -1,0 +1,15 @@
+{
+	"_id": "QcZ9c7dzPNVxAzR4",
+	"_key": "!items!QcZ9c7dzPNVxAzR4",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "Small Frame",
+	"system": {
+		"description": "<p>You may re-roll 1d20 on all AGI tests which rely on balance or contortion.</p>\n<p>Your carry weight is 150 + (5 x STR) lbs., rather than 150 + (10 x STR) lbs.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}

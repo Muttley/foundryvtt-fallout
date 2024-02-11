@@ -44,19 +44,19 @@
 			"flags": {}
 		},
 		{
-			"name": "apparel",
-			"label": "Apparel",
+			"name": "apparel_mods",
+			"label": "Armor & Clothing Mods",
 			"system": "fallout",
-			"path": "packs/apparel",
+			"path": "packs/apparel_mods",
 			"type": "Item",
 			"private": false,
 			"flags": {}
 		},
 		{
-			"name": "apparel_mods",
-			"label": "Armor & Clothing Mods",
+			"name": "apparel",
+			"label": "Apparel",
 			"system": "fallout",
-			"path": "packs/apparel_mods",
+			"path": "packs/apparel",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -67,15 +67,6 @@
 			"system": "fallout",
 			"path": "packs/consumables",
 			"type": "Item",
-			"private": false,
-			"flags": {}
-		},
-		{
-			"name": "system-documentation",
-			"label": "System Documentation",
-			"system": "fallout",
-			"path": "packs/system-documentation",
-			"type": "JournalEntry",
 			"private": false,
 			"flags": {}
 		},
@@ -93,6 +84,24 @@
 			"label": "Skills",
 			"system": "fallout",
 			"path": "packs/skills",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "system-documentation",
+			"label": "System Documentation",
+			"system": "fallout",
+			"path": "packs/system-documentation",
+			"type": "JournalEntry",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "traits",
+			"label": "Traits",
+			"system": "fallout",
+			"path": "packs/traits",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -118,7 +127,8 @@
 						"apparel_mods",
 						"apparel",
 						"consumables",
-						"skills"
+						"skills",
+						"traits"
 					]
 				}
 			]

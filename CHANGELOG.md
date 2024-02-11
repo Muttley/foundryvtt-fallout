@@ -8,6 +8,7 @@
 - [#154] Added Apparel item compendium (161 items)
 - [#155] Added Apparel Mods item compendium (161 items)
 - [#157] Added Consumable item compendium (137 items)
+- [#161] Added Trait item compendium (10 items)
 
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
 

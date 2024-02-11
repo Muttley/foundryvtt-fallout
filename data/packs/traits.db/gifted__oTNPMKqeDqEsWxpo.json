@@ -1,0 +1,15 @@
+{
+	"_id": "oTNPMKqeDqEsWxpo",
+	"_key": "!items!oTNPMKqeDqEsWxpo",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "Gifted",
+	"system": {
+		"description": "<p>Choose two S.P.E.C.I.A.L. attributes and increase them by +1 each.</p>\n<p>Your maximum number of Luck points is one fewer than your Luck attribute.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}
