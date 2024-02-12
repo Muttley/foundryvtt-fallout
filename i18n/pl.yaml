@@ -287,8 +287,8 @@ FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.Issue: Problem
-FALLOUT.TEMPLATES.kgs: kg
-FALLOUT.TEMPLATES.lbs: lb
+FALLOUT.TEMPLATES.kgs: Kg
+FALLOUT.TEMPLATES.lbs: Lb
 FALLOUT.TEMPLATES.Learned: Nauczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
@@ -357,25 +357,25 @@ FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
-FALLOUT.TOOLTIPS.WeaponQuality.accurate: If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 @fos[DC] per AP spent to the attack’s damage. If you gain damage in this way, you may not spend ammunition for extra damage. A weapon cannot be both Accurate and Inaccurate.
-FALLOUT.TOOLTIPS.WeaponQuality.blast: "When you make an attack with a Blast weapon, you do not target a single opponent. Instead, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2 (adjusted for range as normal). If you succeed, every creature (and other damageable target) in that zone suffers the weapon’s damage. If you fail, your misplaced attack is less effective: roll only half the weapon’s @fos[DC] to determine the damage inflicted to creatures in the target zone and ignore the weapon’s normal damage effects."
-FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
-FALLOUT.TOOLTIPS.WeaponQuality.concealed: A Concealed weapon is small, or otherwise easy to hide on your person. Enemies do not spot a Concealed weapon unless you’re wielding it, or if they make a thorough search and succeed at a PER + Survival test with a difficulty of 2.
-FALLOUT.TOOLTIPS.WeaponQuality.debilitating: The difficulty of any skill test to treat injuries inflicted by a Debilitating weapon increase by +1.
-FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Ammunition is spent at ten times the normal rate by Gatling weapons: whenever you would spend one shot of ammunition, a Gatling weapon instead spends a burst of 10 shots. Whenever you spend ammunition to increase this weapon’s damage, add +2 @fos[DC] per ten-shot burst (to a maximum number of bursts equal to the weapon’s Fire Rate), rather than +1 @fos[DC] per shot."
-FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: inaccurate
-FALLOUT.TOOLTIPS.WeaponQuality.limited: limited
-FALLOUT.TOOLTIPS.WeaponQuality.mine: mine
-FALLOUT.TOOLTIPS.WeaponQuality.nightVision: nightVision
-FALLOUT.TOOLTIPS.WeaponQuality.parry: parry
-FALLOUT.TOOLTIPS.WeaponQuality.recon: recon
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: reliable
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: slow_load
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: suppressed
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: thrown
-FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: twoHanded
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: unreliable
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: unstable_radiation
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny – rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni."
+FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Broń ma niewielkie rozmiary lub można ją łatwo ukryć. Przeciwnik zdoła ją zauważyć tylko wtedy, kiedy trzymasz ją w dłoni lub cię przeszuka i wykona udany test PER + Przetrwania o trudności 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Trudność testów leczenia ran spowodowanych przez tę broń wzrasta o +1.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Broń zużywa dziesięć razy więcej amunicji niż normalnie – zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni)."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: niecelna
+FALLOUT.TOOLTIPS.WeaponQuality.limited: ograniczona
+FALLOUT.TOOLTIPS.WeaponQuality.mine: mina
+FALLOUT.TOOLTIPS.WeaponQuality.nightVision: noktowizja
+FALLOUT.TOOLTIPS.WeaponQuality.parry: parująca
+FALLOUT.TOOLTIPS.WeaponQuality.recon: zwiadowcza
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: niezawodna
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: wolne_przeładowanie
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: wytłumiona
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: rzucana
+FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: dwuręczna
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: zawodna
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: niestabilna_radiacyjne
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -410,7 +410,7 @@ FALLOUT.UI.UNSORTED: Nieposortowane
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
 FALLOUT.UI.Yes: Yes
-FALLOUT.WEAPONS.damageEffect.arc: Arc
+FALLOUT.WEAPONS.damageEffect.arc: Łuk
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
 FALLOUT.WEAPONS.damageEffect.freeze: Zamrażająca
@@ -431,7 +431,7 @@ FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Niecelna
-FALLOUT.WEAPONS.weaponQuality.limited: Limited
+FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.nightVision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
