@@ -20,7 +20,7 @@ FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Cette valeur est en cours de modification par un effet actif et ne peut pas être modifiée. Désactivez l'effet pour l'éditer.
 FALLOUT.Actor.Warnings.DerivedValue: Il s'agit d'une valeur calculée automatiquement qui ne peut pas être modifiée.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ce PNJ est déjà un résident de {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Impossible de trouver un colon avec l'acteur UUID {uuid} et il a été retiré de {settlementName}
 FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
@@ -357,25 +357,25 @@ FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
 FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
-FALLOUT.TOOLTIPS.WeaponQuality.accurate: If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 @fos[DC] per AP spent to the attack’s damage. If you gain damage in this way, you may not spend ammunition for extra damage. A weapon cannot be both Accurate and Inaccurate.
-FALLOUT.TOOLTIPS.WeaponQuality.blast: "When you make an attack with a Blast weapon, you do not target a single opponent. Instead, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2 (adjusted for range as normal). If you succeed, every creature (and other damageable target) in that zone suffers the weapon’s damage. If you fail, your misplaced attack is less effective: roll only half the weapon’s @fos[DC] to determine the damage inflicted to creatures in the target zone and ignore the weapon’s normal damage effects."
-FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
-FALLOUT.TOOLTIPS.WeaponQuality.concealed: A Concealed weapon is small, or otherwise easy to hide on your person. Enemies do not spot a Concealed weapon unless you’re wielding it, or if they make a thorough search and succeed at a PER + Survival test with a difficulty of 2.
-FALLOUT.TOOLTIPS.WeaponQuality.debilitating: The difficulty of any skill test to treat injuries inflicted by a Debilitating weapon increase by +1.
-FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Ammunition is spent at ten times the normal rate by Gatling weapons: whenever you would spend one shot of ammunition, a Gatling weapon instead spends a burst of 10 shots. Whenever you spend ammunition to increase this weapon’s damage, add +2 @fos[DC] per ten-shot burst (to a maximum number of bursts equal to the weapon’s Fire Rate), rather than +1 @fos[DC] per shot."
-FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: inaccurate
-FALLOUT.TOOLTIPS.WeaponQuality.limited: limited
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quand vous portez une attaque avec une arme à Zone d'impact, vous ne prenez pas pour cible un seul adversaire. Au lieu de cela, choisissez une seule zone dans votre champ de vision et faites le test de compétence approprié pour attaquer, avec une difficulté de base de 2 (ajustée par la portée normalement). Si vous réussissez, toutes les créatures (et autres cibles pouvant subir des dégâts) présentes dans la zone subissent les dégâts de l'arme. Si vous échouez, votre attaque mal ciblée est moins efficace: ne lancez que la moitié des @fos[DC] de l'arme pour déterminer les dégâts infligés aux créatures dans la zone ciblée et ignorez les effets de dégâts normaux de l'arme."
+FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: Une arme de combat rapproché est facile à utiliser à proximité de l'ennemi et ne subit pas d'augmentation de difficulté si elle est employée quand un ennemi est à portée de main.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Une arme avec la qualité Dissimulé est petite ou facile à dissimuler sur vous pour une autre raison. Les ennemis ne voient l'arme que si vous êtes en train de la manier, ou s'ils vous fouillent méthodiquement et réussissent un test de PER + Survie avec une difficulté de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: La difficulté de tout test de compétence pour guérir les blessures infligées par une arme Invalidante augmente de +1.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Les armes Gatling dépensent des munitions à 10 fois le rythme normal ; quand vous devriez dépenser 1 munition, une arme Gatling en dépense une rafale de 10 à la place. Chaque fois que vous dépensez des munitions pour augmenter les dégâts de cette arme, ajoutez +2 @fos[DC] par rafale de 10 (jusqu'à un nombre maximum de rafales égal à la cadence de tir de l'arme) au lieu de +1 @fos[DC] par tir."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: imprécis
+FALLOUT.TOOLTIPS.WeaponQuality.limited: limité
 FALLOUT.TOOLTIPS.WeaponQuality.mine: mine
-FALLOUT.TOOLTIPS.WeaponQuality.nightVision: nightVision
-FALLOUT.TOOLTIPS.WeaponQuality.parry: parry
-FALLOUT.TOOLTIPS.WeaponQuality.recon: recon
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: reliable
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: slow_load
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: suppressed
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: thrown
-FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: twoHanded
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: unreliable
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: unstable_radiation
+FALLOUT.TOOLTIPS.WeaponQuality.nightVision: vision_nocturne
+FALLOUT.TOOLTIPS.WeaponQuality.parry: parade
+FALLOUT.TOOLTIPS.WeaponQuality.recon: reco
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: fiable
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: chargement_lent
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: silencieux
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: lancer
+FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: deux_mains
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: imprévisible
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: radiation_instable
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
