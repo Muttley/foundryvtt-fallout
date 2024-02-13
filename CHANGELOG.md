@@ -10,6 +10,8 @@
 - [#157] Added Consumable item compendium (137 items)
 - [#161] Added Trait item compendium (10 items)
 
+test-signing
+
 ## Bugfixes
 - [#147] Skill names not localized in skill roll chat messages
 
