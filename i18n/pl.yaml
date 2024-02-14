@@ -287,7 +287,8 @@ FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.Issue: Problem
-FALLOUT.TEMPLATES.lbs: funtów
+FALLOUT.TEMPLATES.kgs: Kg
+FALLOUT.TEMPLATES.lbs: Lb
 FALLOUT.TEMPLATES.Learned: Nauczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
@@ -356,6 +357,25 @@ FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny – rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni."
+FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Broń ma niewielkie rozmiary lub można ją łatwo ukryć. Przeciwnik zdoła ją zauważyć tylko wtedy, kiedy trzymasz ją w dłoni lub cię przeszuka i wykona udany test PER + Przetrwania o trudności 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Trudność testów leczenia ran spowodowanych przez tę broń wzrasta o +1.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Broń zużywa dziesięć razy więcej amunicji niż normalnie – zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni)."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: niecelna
+FALLOUT.TOOLTIPS.WeaponQuality.limited: ograniczona
+FALLOUT.TOOLTIPS.WeaponQuality.mine: mina
+FALLOUT.TOOLTIPS.WeaponQuality.nightVision: noktowizja
+FALLOUT.TOOLTIPS.WeaponQuality.parry: parująca
+FALLOUT.TOOLTIPS.WeaponQuality.recon: zwiadowcza
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: niezawodna
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: wolne_przeładowanie
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: wytłumiona
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: rzucana
+FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: dwuręczna
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: zawodna
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: niestabilna_radiacyjne
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -390,7 +410,7 @@ FALLOUT.UI.UNSORTED: Nieposortowane
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
 FALLOUT.UI.Yes: Yes
-FALLOUT.WEAPONS.damageEffect.arc: Arc
+FALLOUT.WEAPONS.damageEffect.arc: Łuk
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
 FALLOUT.WEAPONS.damageEffect.freeze: Zamrażająca
@@ -411,7 +431,7 @@ FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Niecelna
-FALLOUT.WEAPONS.weaponQuality.limited: Limited
+FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.nightVision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca

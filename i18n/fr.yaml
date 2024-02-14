@@ -20,7 +20,7 @@ FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Cette valeur est en cours de modification par un effet actif et ne peut pas être modifiée. Désactivez l'effet pour l'éditer.
 FALLOUT.Actor.Warnings.DerivedValue: Il s'agit d'une valeur calculée automatiquement qui ne peut pas être modifiée.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ce PNJ est déjà un résident de {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Impossible de trouver un colon avec l'acteur UUID {uuid} et il a été retiré de {settlementName}
 FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
@@ -201,7 +201,7 @@ FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
 FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
-FALLOUT.TEMPLATES.AddictionNumber: Nombre de dépendances
+FALLOUT.TEMPLATES.AddictionNumber: Puissance de l'addiction
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
 FALLOUT.TEMPLATES.AMMO: MUN
@@ -287,7 +287,7 @@ FALLOUT.TEMPLATES.INJURIES: BLESSURES
 FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
 FALLOUT.TEMPLATES.Issue: Numéro
-FALLOUT.TEMPLATES.kbs: kg
+FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Appris(e)
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
@@ -323,13 +323,13 @@ FALLOUT.TEMPLATES.Re_roll: Relancer
 FALLOUT.TEMPLATES.RemoveSettler: Supprimer le colon
 FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
-FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Resistances: Résistances
+FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
-FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.Skill: Compétence
+FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.SKILLS: COMPETENCES
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: État
@@ -351,12 +351,31 @@ FALLOUT.TEMPLATES.Use_Intelligence: Utiliser Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Utiliser Chance
 FALLOUT.TEMPLATES.Use_Perception: Utiliser Perception
 FALLOUT.TEMPLATES.Use_Strength: Utiliser Force
-FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
 FALLOUT.TEMPLATES.Weapon_Qualities: Qualités de l'arme
+FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
 FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
 FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quand vous portez une attaque avec une arme à Zone d'impact, vous ne prenez pas pour cible un seul adversaire. Au lieu de cela, choisissez une seule zone dans votre champ de vision et faites le test de compétence approprié pour attaquer, avec une difficulté de base de 2 (ajustée par la portée normalement). Si vous réussissez, toutes les créatures (et autres cibles pouvant subir des dégâts) présentes dans la zone subissent les dégâts de l'arme. Si vous échouez, votre attaque mal ciblée est moins efficace: ne lancez que la moitié des @fos[DC] de l'arme pour déterminer les dégâts infligés aux créatures dans la zone ciblée et ignorez les effets de dégâts normaux de l'arme."
+FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: Une arme de combat rapproché est facile à utiliser à proximité de l'ennemi et ne subit pas d'augmentation de difficulté si elle est employée quand un ennemi est à portée de main.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Une arme avec la qualité Dissimulé est petite ou facile à dissimuler sur vous pour une autre raison. Les ennemis ne voient l'arme que si vous êtes en train de la manier, ou s'ils vous fouillent méthodiquement et réussissent un test de PER + Survie avec une difficulté de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: La difficulté de tout test de compétence pour guérir les blessures infligées par une arme Invalidante augmente de +1.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Les armes Gatling dépensent des munitions à 10 fois le rythme normal ; quand vous devriez dépenser 1 munition, une arme Gatling en dépense une rafale de 10 à la place. Chaque fois que vous dépensez des munitions pour augmenter les dégâts de cette arme, ajoutez +2 @fos[DC] par rafale de 10 (jusqu'à un nombre maximum de rafales égal à la cadence de tir de l'arme) au lieu de +1 @fos[DC] par tir."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: imprécis
+FALLOUT.TOOLTIPS.WeaponQuality.limited: limité
+FALLOUT.TOOLTIPS.WeaponQuality.mine: mine
+FALLOUT.TOOLTIPS.WeaponQuality.nightVision: vision_nocturne
+FALLOUT.TOOLTIPS.WeaponQuality.parry: parade
+FALLOUT.TOOLTIPS.WeaponQuality.recon: reco
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: fiable
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: chargement_lent
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: silencieux
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: lancer
+FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: deux_mains
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: imprévisible
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: radiation_instable
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
