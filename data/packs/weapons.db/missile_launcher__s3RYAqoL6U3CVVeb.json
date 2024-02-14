@@ -1,0 +1,211 @@
+{
+	"_id": "s3RYAqoL6U3CVVeb",
+	"_key": "!items!s3RYAqoL6U3CVVeb",
+	"effects": [
+	],
+	"folder": "zXkvl0ffMYUzEMkw",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Missile Launcher",
+	"system": {
+		"ammo": "Missile",
+		"ammoPerShot": 0,
+		"attribute": "",
+		"condition": "",
+		"cost": "314",
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"breaking": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Breaking",
+					"rank": -1,
+					"value": false
+				},
+				"burst": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Burst",
+					"rank": -1,
+					"value": false
+				},
+				"freeze": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"persistent": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Persistent",
+					"rank": -1,
+					"value": false
+				},
+				"piercing": {
+					"description": "",
+					"hasRanks": true,
+					"label": "Piercing",
+					"rank": 1,
+					"value": false
+				},
+				"radioactive": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Radioactive",
+					"rank": -1,
+					"value": false
+				},
+				"spread": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Spread",
+					"rank": -1,
+					"value": false
+				},
+				"stun": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Stun",
+					"rank": -1,
+					"value": false
+				},
+				"vicious": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Vicious",
+					"rank": -1,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": false,
+				"physical": true,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 11,
+			"weaponQuality": {
+				"accurate": {
+					"description": "",
+					"label": "Accurate",
+					"value": false
+				},
+				"blast": {
+					"description": "",
+					"label": "Blast",
+					"value": true
+				},
+				"closeQuarters": {
+					"description": "",
+					"label": "Close Quarters",
+					"value": false
+				},
+				"concealed": {
+					"description": "",
+					"label": "Concealed",
+					"value": false
+				},
+				"debilitating": {
+					"description": "",
+					"label": "Debilitating",
+					"value": false
+				},
+				"gatling": {
+					"description": "",
+					"label": "Gatling",
+					"value": false
+				},
+				"inaccurate": {
+					"description": "",
+					"label": "Inaccurate",
+					"value": false
+				},
+				"limited": {
+					"description": "",
+					"label": "Limited",
+					"value": false
+				},
+				"mine": {
+					"description": "",
+					"label": "Mine",
+					"value": false
+				},
+				"nightVision": {
+					"description": "",
+					"label": "Night Vision",
+					"value": false
+				},
+				"parry": {
+					"description": "",
+					"label": "Parry",
+					"value": false
+				},
+				"recon": {
+					"description": "",
+					"label": "Recon",
+					"value": false
+				},
+				"reliable": {
+					"description": "",
+					"label": "Reliable",
+					"value": false
+				},
+				"slow_load": {
+					"description": "",
+					"label": "Slow Load",
+					"value": false
+				},
+				"suppressed": {
+					"description": "",
+					"label": "Suppressed",
+					"value": false
+				},
+				"thrown": {
+					"description": "",
+					"label": "Thrown",
+					"value": false
+				},
+				"twoHanded": {
+					"description": "",
+					"label": "Two-Handed",
+					"value": true
+				},
+				"unreliable": {
+					"description": "",
+					"label": "Unreliable",
+					"value": false
+				},
+				"unstable_radiation": {
+					"description": "",
+					"label": "Unstable Radiation",
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">A refined, highly adaptable multipurpose missile weapon introduced into the American arsenal, the modular launcher is smaller and more maneuverable than the earlier model. It consists of the two-part launch tube, firing mechanism, mounting brackets, open battle sights and a mount for a guidance system. It is a breech-loading weapon, reloaded by lifting the front section of the launch tube and sliding the 72mm fin-stabilized missile inside. The rear part of the tube is designed to safely disperse launch gasses, allowing it to be launched from confined spaces. Other forms and designs of Missile Launcher exist across the wastelands, but this form is common enough that most consider it the standard.</span></p>\n<p><span class=\"fontstyle0\">A Missile Launcher can accept one each of the following mods, which are unique to the Missile Launcher and&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">:</span> </p>\n<ul>\n<li><strong><span class=\"fontstyle0\">Barrel:</span></strong><span class=\"fontstyle0\"> Triple Barrel, Quad Barrel</span></li>\n<li><strong><span class=\"fontstyle0\">Sights:</span></strong><span class=\"fontstyle0\"> Scope, Night Vision Scope, Targeting Computer</span></li>\n<li><strong><span class=\"fontstyle0\">Muzzle:</span></strong><span class=\"fontstyle0\"> Bayonet, Stabilizer</span></li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 0,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"quantity": 1,
+		"range": "long",
+		"rarity": 4,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "bigGuns",
+		"weight": 21
+	},
+	"type": "weapon"
+}

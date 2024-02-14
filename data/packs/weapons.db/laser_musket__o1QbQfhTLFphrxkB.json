@@ -1,0 +1,211 @@
+{
+	"_id": "o1QbQfhTLFphrxkB",
+	"_key": "!items!o1QbQfhTLFphrxkB",
+	"effects": [
+	],
+	"folder": "ScE7hQRRuS1o4Kau",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Laser Musket",
+	"system": {
+		"ammo": "Fusion Cell",
+		"ammoPerShot": 2,
+		"attribute": "",
+		"condition": "",
+		"cost": "57",
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"breaking": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Breaking",
+					"rank": -1,
+					"value": false
+				},
+				"burst": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Burst",
+					"rank": -1,
+					"value": false
+				},
+				"freeze": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"persistent": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Persistent",
+					"rank": -1,
+					"value": false
+				},
+				"piercing": {
+					"description": "",
+					"hasRanks": true,
+					"label": "Piercing",
+					"rank": 1,
+					"value": true
+				},
+				"radioactive": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Radioactive",
+					"rank": -1,
+					"value": false
+				},
+				"spread": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Spread",
+					"rank": -1,
+					"value": false
+				},
+				"stun": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Stun",
+					"rank": -1,
+					"value": false
+				},
+				"vicious": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Vicious",
+					"rank": -1,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": true,
+				"physical": false,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 5,
+			"weaponQuality": {
+				"accurate": {
+					"description": "",
+					"label": "Accurate",
+					"value": false
+				},
+				"blast": {
+					"description": "",
+					"label": "Blast",
+					"value": false
+				},
+				"closeQuarters": {
+					"description": "",
+					"label": "Close Quarters",
+					"value": false
+				},
+				"concealed": {
+					"description": "",
+					"label": "Concealed",
+					"value": false
+				},
+				"debilitating": {
+					"description": "",
+					"label": "Debilitating",
+					"value": false
+				},
+				"gatling": {
+					"description": "",
+					"label": "Gatling",
+					"value": false
+				},
+				"inaccurate": {
+					"description": "",
+					"label": "Inaccurate",
+					"value": false
+				},
+				"limited": {
+					"description": "",
+					"label": "Limited",
+					"value": false
+				},
+				"mine": {
+					"description": "",
+					"label": "Mine",
+					"value": false
+				},
+				"nightVision": {
+					"description": "",
+					"label": "Night Vision",
+					"value": false
+				},
+				"parry": {
+					"description": "",
+					"label": "Parry",
+					"value": false
+				},
+				"recon": {
+					"description": "",
+					"label": "Recon",
+					"value": false
+				},
+				"reliable": {
+					"description": "",
+					"label": "Reliable",
+					"value": false
+				},
+				"slow_load": {
+					"description": "",
+					"label": "Slow Load",
+					"value": false
+				},
+				"suppressed": {
+					"description": "",
+					"label": "Suppressed",
+					"value": false
+				},
+				"thrown": {
+					"description": "",
+					"label": "Thrown",
+					"value": false
+				},
+				"twoHanded": {
+					"description": "",
+					"label": "Two-Handed",
+					"value": true
+				},
+				"unreliable": {
+					"description": "",
+					"label": "Unreliable",
+					"value": false
+				},
+				"unstable_radiation": {
+					"description": "",
+					"label": "Unstable Radiation",
+					"value": false
+				}
+			}
+		},
+		"description": "<p>The laser musket is a homemade form of laser rifle, blending advanced technology with strangely primitive mechanisms, popular with militia groups such as the Minutemen. The laser musket must be manually primed, charging the makeshift capacitor through turning a hand-crank on the weapon&rsquo;s rear. While seemingly crude, they can make for potent sniper&rsquo;s weapons, especially with a modified capacitor able to hold a larger charge.</p>\n<p><strong>Special:</strong> Firing a laser musket consumes two shots of ammunition each time it is fired. Each capacitor mod for the laser musket increases both damage and number of shots consumed. You may reduce the number of shots consumed, reducing the damage by -1 @fos[DC] for each shot consumed fewer than normal (to a minimum of 4 @fos[DC] damage and 1 shot consumed).</p>\n<p>A laser musket can accept one each of the following mods:</p>\n<ul>\n<li><strong>Capacitor:</strong> Three-Crank Capacitor, Four-Crank Capacitor, Five-Crank Capacitor, Six-Crank Capacitor</li>\n<li><strong>Barrel:</strong> Long Barrel, Bracketed Barrel, Bracketed Long Barrel</li>\n<li><strong>Stock:</strong> Full Stock</li>\n<li><strong>Sights:</strong> Reflex Sight, Short Scope, Long Scope, Short Night Vision Scope, Long Night Vision Scope, Recon Scope</li>\n<li><strong>Muzzle:</strong> Beam Splitter, Beam Focuser, Gyro Compensating Lens</li>\n</ul>\n<p>The Capacitor mods for the laser musket are unique to laser muskets and installed with the Science skill. They are presented here, rather than later in this chapter.</p>\n<ul>\n<li><strong>Lazer Musket Capacitor:&nbsp;</strong>Three-crank capacitor, Four-crank capacitor, Five-crank capacitor, Six-crank capacitor</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 0,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 6
+		},
+		"quantity": 1,
+		"range": "medium",
+		"rarity": 1,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "energyWeapons",
+		"weight": 13
+	},
+	"type": "weapon"
+}

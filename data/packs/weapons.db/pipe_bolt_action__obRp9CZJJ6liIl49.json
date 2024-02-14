@@ -1,0 +1,211 @@
+{
+	"_id": "obRp9CZJJ6liIl49",
+	"_key": "!items!obRp9CZJJ6liIl49",
+	"effects": [
+	],
+	"folder": "Fvz7mUEk61qB057V",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Pipe Bolt-Action",
+	"system": {
+		"ammo": ".308 Round",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": "30",
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"breaking": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Breaking",
+					"rank": -1,
+					"value": false
+				},
+				"burst": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Burst",
+					"rank": -1,
+					"value": false
+				},
+				"freeze": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"persistent": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Persistent",
+					"rank": -1,
+					"value": false
+				},
+				"piercing": {
+					"description": "",
+					"hasRanks": true,
+					"label": "Piercing",
+					"rank": 1,
+					"value": true
+				},
+				"radioactive": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Radioactive",
+					"rank": -1,
+					"value": false
+				},
+				"spread": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Spread",
+					"rank": -1,
+					"value": false
+				},
+				"stun": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Stun",
+					"rank": -1,
+					"value": false
+				},
+				"vicious": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Vicious",
+					"rank": -1,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": false,
+				"physical": true,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 5,
+			"weaponQuality": {
+				"accurate": {
+					"description": "",
+					"label": "Accurate",
+					"value": false
+				},
+				"blast": {
+					"description": "",
+					"label": "Blast",
+					"value": false
+				},
+				"closeQuarters": {
+					"description": "",
+					"label": "Close Quarters",
+					"value": false
+				},
+				"concealed": {
+					"description": "",
+					"label": "Concealed",
+					"value": false
+				},
+				"debilitating": {
+					"description": "",
+					"label": "Debilitating",
+					"value": false
+				},
+				"gatling": {
+					"description": "",
+					"label": "Gatling",
+					"value": false
+				},
+				"inaccurate": {
+					"description": "",
+					"label": "Inaccurate",
+					"value": false
+				},
+				"limited": {
+					"description": "",
+					"label": "Limited",
+					"value": false
+				},
+				"mine": {
+					"description": "",
+					"label": "Mine",
+					"value": false
+				},
+				"nightVision": {
+					"description": "",
+					"label": "Night Vision",
+					"value": false
+				},
+				"parry": {
+					"description": "",
+					"label": "Parry",
+					"value": false
+				},
+				"recon": {
+					"description": "",
+					"label": "Recon",
+					"value": false
+				},
+				"reliable": {
+					"description": "",
+					"label": "Reliable",
+					"value": false
+				},
+				"slow_load": {
+					"description": "",
+					"label": "Slow Load",
+					"value": false
+				},
+				"suppressed": {
+					"description": "",
+					"label": "Suppressed",
+					"value": false
+				},
+				"thrown": {
+					"description": "",
+					"label": "Thrown",
+					"value": false
+				},
+				"twoHanded": {
+					"description": "",
+					"label": "Two-Handed",
+					"value": false
+				},
+				"unreliable": {
+					"description": "",
+					"label": "Unreliable",
+					"value": true
+				},
+				"unstable_radiation": {
+					"description": "",
+					"label": "Unstable Radiation",
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">A makeshift weapon, normally seen in the hands of those who can&rsquo;t make, buy, or scavenge anything better, pipe guns are crude and somewhat unreliable, but effective enough. Bolt-action pipe guns tend to be chambered for rifle caliber rounds, trading rate-of-fire for power and simplicity.</span></p>\n<p><span class=\"fontstyle0\">A Pipe Bolt-Action can accept one each of the following mods. You may not take both a Grip and a Stock Mod. Any Stock mods add the word &ldquo;Rifle&rdquo; to the end of the weapon&rsquo;s name.</span></p>\n<ul>\n<li><strong>Receiver:</strong> Calibrated, Hardened, Powerful, .38 Receiver, .50 Receiver</li>\n<li><strong>Barrel:</strong> Long Barrel, Ported Barrel, Finned Barrel</li>\n<li><strong>Grip:</strong> Sharpshooter&rsquo;s Grip</li>\n<li><strong>Stock:</strong> Full Stock, Marksman&rsquo;s Stock, RecoilCompensating Stock</li>\n<li><strong>Sights:</strong> Reflex Sight, Short Scope, Long Scope, Short Night Vision Scope, Long Night Vision Scope, Recon Scope</li>\n<li><strong>Muzzle:</strong> Bayonet, Compensator, Muzzle Brake, Suppressor</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 0,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 6
+		},
+		"quantity": 1,
+		"range": "close",
+		"rarity": 0,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "smallGuns",
+		"weight": 3
+	},
+	"type": "weapon"
+}

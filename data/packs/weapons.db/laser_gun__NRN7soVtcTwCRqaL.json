@@ -1,0 +1,211 @@
+{
+	"_id": "NRN7soVtcTwCRqaL",
+	"_key": "!items!NRN7soVtcTwCRqaL",
+	"effects": [
+	],
+	"folder": "ScE7hQRRuS1o4Kau",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Laser Gun",
+	"system": {
+		"ammo": "Fusion Cell",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": "69",
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"breaking": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Breaking",
+					"rank": -1,
+					"value": false
+				},
+				"burst": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Burst",
+					"rank": -1,
+					"value": false
+				},
+				"freeze": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"persistent": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Persistent",
+					"rank": -1,
+					"value": false
+				},
+				"piercing": {
+					"description": "",
+					"hasRanks": true,
+					"label": "Piercing",
+					"rank": 1,
+					"value": true
+				},
+				"radioactive": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Radioactive",
+					"rank": -1,
+					"value": false
+				},
+				"spread": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Spread",
+					"rank": -1,
+					"value": false
+				},
+				"stun": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Stun",
+					"rank": -1,
+					"value": false
+				},
+				"vicious": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Vicious",
+					"rank": -1,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": true,
+				"physical": false,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 3,
+			"weaponQuality": {
+				"accurate": {
+					"description": "",
+					"label": "Accurate",
+					"value": false
+				},
+				"blast": {
+					"description": "",
+					"label": "Blast",
+					"value": false
+				},
+				"closeQuarters": {
+					"description": "",
+					"label": "Close Quarters",
+					"value": true
+				},
+				"concealed": {
+					"description": "",
+					"label": "Concealed",
+					"value": false
+				},
+				"debilitating": {
+					"description": "",
+					"label": "Debilitating",
+					"value": false
+				},
+				"gatling": {
+					"description": "",
+					"label": "Gatling",
+					"value": false
+				},
+				"inaccurate": {
+					"description": "",
+					"label": "Inaccurate",
+					"value": false
+				},
+				"limited": {
+					"description": "",
+					"label": "Limited",
+					"value": false
+				},
+				"mine": {
+					"description": "",
+					"label": "Mine",
+					"value": false
+				},
+				"nightVision": {
+					"description": "",
+					"label": "Night Vision",
+					"value": false
+				},
+				"parry": {
+					"description": "",
+					"label": "Parry",
+					"value": false
+				},
+				"recon": {
+					"description": "",
+					"label": "Recon",
+					"value": false
+				},
+				"reliable": {
+					"description": "",
+					"label": "Reliable",
+					"value": false
+				},
+				"slow_load": {
+					"description": "",
+					"label": "Slow Load",
+					"value": false
+				},
+				"suppressed": {
+					"description": "",
+					"label": "Suppressed",
+					"value": false
+				},
+				"thrown": {
+					"description": "",
+					"label": "Thrown",
+					"value": false
+				},
+				"twoHanded": {
+					"description": "",
+					"label": "Two-Handed",
+					"value": false
+				},
+				"unreliable": {
+					"description": "",
+					"label": "Unreliable",
+					"value": false
+				},
+				"unstable_radiation": {
+					"description": "",
+					"label": "Unstable Radiation",
+					"value": false
+				}
+			}
+		},
+		"description": "<p>Laser guns are high-tech weapons which emit a concentrated beam of coherent, directional light, intense enough to inflict serious damage. They were a relatively new development in the years before the Great War, and thus are not an especially common sight in the wasteland, outside of those groups who&rsquo;ve secured old military weapons caches. Most surviving models of laser gun&mdash;such as the dependable AER9, widely used by the U. S. Army&mdash;use an internal capacitor charged by a microfusion power cell.</p>\n<p>The default profile is for a laser pistol. A laser gun can accept one each of the following mods. Any Stock mods change the weapon to a laser rifle.</p>\n<ul>\n<li><strong>Capacitor:</strong> Photon Exciter, Beta Wave Tuner, Boosted Capacitor, Photon Agitator</li>\n<li><strong>Barrel:</strong> Long Barrel, Automatic Barrel, Sniper Barrel, Improved Barrel</li>\n<li><strong>Grip:</strong> Sharpshooter&rsquo;s Grip</li>\n<li><strong>Stock:</strong> Standard Stock, Marksman&rsquo;s Stock, Recoil Compensating Stock</li>\n<li><strong>Sights:</strong> Reflex Sight, Short Scope, Long Scope, Short Night Vision Scope, Long Night Vision Scope, Recon Scope</li>\n<li><strong>Muzzle:</strong> Beam Splitter, Beam Focuser, Gyro Compensating Lens</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 2,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 6
+		},
+		"quantity": 1,
+		"range": "close",
+		"rarity": 2,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "energyWeapons",
+		"weight": 4
+	},
+	"type": "weapon"
+}

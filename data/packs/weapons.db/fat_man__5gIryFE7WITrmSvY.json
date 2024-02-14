@@ -1,0 +1,211 @@
+{
+	"_id": "5gIryFE7WITrmSvY",
+	"_key": "!items!5gIryFE7WITrmSvY",
+	"effects": [
+	],
+	"folder": "zXkvl0ffMYUzEMkw",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Fat Man",
+	"system": {
+		"ammo": "Mini-Nuke",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": "512",
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"breaking": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Breaking",
+					"rank": -1,
+					"value": true
+				},
+				"burst": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Burst",
+					"rank": -1,
+					"value": false
+				},
+				"freeze": {
+					"hasRanks": false,
+					"rank": -1,
+					"value": false
+				},
+				"persistent": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Persistent",
+					"rank": -1,
+					"value": false
+				},
+				"piercing": {
+					"description": "",
+					"hasRanks": true,
+					"label": "Piercing",
+					"rank": 1,
+					"value": false
+				},
+				"radioactive": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Radioactive",
+					"rank": -1,
+					"value": true
+				},
+				"spread": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Spread",
+					"rank": -1,
+					"value": false
+				},
+				"stun": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Stun",
+					"rank": -1,
+					"value": false
+				},
+				"vicious": {
+					"description": "",
+					"hasRanks": false,
+					"label": "Vicious",
+					"rank": -1,
+					"value": true
+				}
+			},
+			"damageType": {
+				"energy": false,
+				"physical": true,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 21,
+			"weaponQuality": {
+				"accurate": {
+					"description": "",
+					"label": "Accurate",
+					"value": false
+				},
+				"blast": {
+					"description": "",
+					"label": "Blast",
+					"value": true
+				},
+				"closeQuarters": {
+					"description": "",
+					"label": "Close Quarters",
+					"value": false
+				},
+				"concealed": {
+					"description": "",
+					"label": "Concealed",
+					"value": false
+				},
+				"debilitating": {
+					"description": "",
+					"label": "Debilitating",
+					"value": false
+				},
+				"gatling": {
+					"description": "",
+					"label": "Gatling",
+					"value": false
+				},
+				"inaccurate": {
+					"description": "",
+					"label": "Inaccurate",
+					"value": true
+				},
+				"limited": {
+					"description": "",
+					"label": "Limited",
+					"value": false
+				},
+				"mine": {
+					"description": "",
+					"label": "Mine",
+					"value": false
+				},
+				"nightVision": {
+					"description": "",
+					"label": "Night Vision",
+					"value": false
+				},
+				"parry": {
+					"description": "",
+					"label": "Parry",
+					"value": false
+				},
+				"recon": {
+					"description": "",
+					"label": "Recon",
+					"value": false
+				},
+				"reliable": {
+					"description": "",
+					"label": "Reliable",
+					"value": false
+				},
+				"slow_load": {
+					"description": "",
+					"label": "Slow Load",
+					"value": false
+				},
+				"suppressed": {
+					"description": "",
+					"label": "Suppressed",
+					"value": false
+				},
+				"thrown": {
+					"description": "",
+					"label": "Thrown",
+					"value": false
+				},
+				"twoHanded": {
+					"description": "",
+					"label": "Two-Handed",
+					"value": true
+				},
+				"unreliable": {
+					"description": "",
+					"label": "Unreliable",
+					"value": false
+				},
+				"unstable_radiation": {
+					"description": "",
+					"label": "Unstable Radiation",
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">The M42 Nuclear Catapult is a shoulder-fired infantry support weapon which launches compact tactical nuclear warheads&mdash;mini-nukes, each about the size of a football&mdash;over a moderate distance to inflict massive destruction upon the target location.</span> </p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 0,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"quantity": 1,
+		"range": "medium",
+		"rarity": 4,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "bigGuns",
+		"weight": 31
+	},
+	"type": "weapon"
+}

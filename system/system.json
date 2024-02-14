@@ -114,6 +114,15 @@
 			"type": "Item",
 			"private": false,
 			"flags": {}
+		},
+		{
+			"name": "weapons",
+			"label": "Weapons",
+			"system": "fallout",
+			"path": "packs/weapons",
+			"type": "Item",
+			"private": false,
+			"flags": {}
 		}
 	],
 	"packFolders": [
@@ -138,7 +147,8 @@
 						"consumables",
 						"skills",
 						"traits",
-						"weapon_mods"
+						"weapon_mods",
+						"weapons"
 					]
 				}
 			]
