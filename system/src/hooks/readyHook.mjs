@@ -1,4 +1,4 @@
-import FalloutMigrationRunner from "../migrations/FalloutMigrationRunner";
+import FalloutMigrationRunner from "../migrations/FalloutMigrationRunner.mjs";
 
 export const readyHook = {
 	attach: () => {

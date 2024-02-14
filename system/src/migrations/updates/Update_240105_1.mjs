@@ -1,4 +1,4 @@
-import { FalloutUpdateBase } from "../FalloutUpdateBase";
+import { FalloutUpdateBase } from "../FalloutUpdateBase.mjs";
 
 export default class Update_240105_1 extends FalloutUpdateBase {
 
