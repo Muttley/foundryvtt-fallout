@@ -8,7 +8,7 @@
 	"name": "Sneak",
 	"system": {
 		"defaultAttribute": "agi",
-		"description": "<p>he Sneak skill covers stealthy movement and any physical actions you take not to be noticed.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Agility</strong> but you might use it with Perception to find enemies hiding in ambush, or Intelligence to case a building. You use Sneak to move silently or stay hidden.</p>",
+		"description": "<p>The Sneak skill covers stealthy movement and any physical actions you take not to be noticed.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Agility</strong> but you might use it with Perception to find enemies hiding in ambush, or Intelligence to case a building. You use Sneak to move silently or stay hidden.</p>",
 		"favorite": false,
 		"source": "",
 		"summary": "",
