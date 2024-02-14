@@ -8,7 +8,11 @@
 				{{localize "FALLOUT.TEMPLATES.Total"}}:
 				{{system.carryWeight.total}} /
 				{{system.carryWeight.base}}
-				{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{#if useKgs}}
+					{{localize "FALLOUT.TEMPLATES.kgs"}}
+				{{else}}
+					{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{/if}}
 			</label>
 		</div>
 	</div>

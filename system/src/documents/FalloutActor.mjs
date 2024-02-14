@@ -3,6 +3,7 @@
  * is ideal for the Simple system.
  * @extends {Actor}
  */
+
 export default class FalloutActor extends Actor {
 
 	/**
@@ -40,6 +41,9 @@ export default class FalloutActor extends Actor {
 		return this.type === "robot";
 	}
 
+	get useKgs() {
+		return game.settings.get("fallout", "carryUnit") === "kgs";
+	}
 
 	/** @override */
 	prepareData() {
@@ -108,18 +112,12 @@ export default class FalloutActor extends Actor {
 	}
 
 	_calculateEncumbrance() {
-		let strWeight = parseInt(this.system.attributes.str.value);
-		switch (game.settings.get("fallout", "carryUnit")) {
-			case "lbs":
-				strWeight *= 10;
-				break;
-			case "kgs":
-				strWeight *= 5;
-				break;
-			default:
+		let strWeight = parseInt(this.system.attributes.str.value) * 10;
+		if (this.useKgs) {
+			strWeight = Math.round(fallout.utils.lbsToKgs(strWeight));
 		}
 
-		this.system.carryWeight.base += strWeight + parseInt(
+		this.system.carryWeight.base = strWeight + parseInt(
 			game.settings.get("fallout", "carryBase")
 		);
 
@@ -540,11 +538,17 @@ export default class FalloutActor extends Actor {
 			totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity);
 		}
 
+		let materialWeight = 0;
 		for (const material of ["common", "uncommon", "rare"]) {
-			totalWeight += this.system.materials[material] ?? 0;
+			materialWeight += this.system.materials[material] ?? 0;
+		}
+		materialWeight += (this.system.materials.junk * 2);
+
+		if (this.useKgs) {
+			materialWeight = fallout.utils.lbsToKgs(materialWeight);
 		}
 
-		totalWeight += (this.system.materials.junk * 2);
+		totalWeight += materialWeight;
 
 		return parseFloat(totalWeight.toFixed(2));
 	}

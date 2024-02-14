@@ -12,6 +12,7 @@
 
 ## Bugfixes
 - [#147] Skill names not localized in skill roll chat messages
+- [#165] Show correct weight system on encumbrance bar when system is set to Kg
 
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
 

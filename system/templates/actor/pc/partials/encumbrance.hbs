@@ -6,7 +6,11 @@
 		<div class="flex-center">
 			<label>
 				{{system.carryWeight.base}}
-				{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{#if useKgs}}
+					{{localize "FALLOUT.TEMPLATES.kgs"}}
+				{{else}}
+					{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{/if}}
 				+
 			</label>
 			<input
@@ -19,7 +23,11 @@
 				=
 				{{localize "FALLOUT.TEMPLATES.MAX"}}:
 				{{system.carryWeight.value}}
-				{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{#if useKgs}}
+					{{localize "FALLOUT.TEMPLATES.kgs"}}
+				{{else}}
+					{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{/if}}
 			</label>
 		</div>
 		<div class="text-center">
@@ -32,7 +40,11 @@
 			<label>
 				{{localize "FALLOUT.TEMPLATES.Total"}}:
 				{{system.carryWeight.total}} / {{system.carryWeight.value}}
-				{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{#if useKgs}}
+					{{localize "FALLOUT.TEMPLATES.kgs"}}
+				{{else}}
+					{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{/if}}
 			</label>
 		</div>
 	</div>
