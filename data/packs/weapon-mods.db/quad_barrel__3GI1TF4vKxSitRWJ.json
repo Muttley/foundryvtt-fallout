@@ -1,0 +1,34 @@
+{
+	"_id": "3GI1TF4vKxSitRWJ",
+	"_key": "!items!3GI1TF4vKxSitRWJ",
+	"effects": [
+	],
+	"folder": "NFL68qcVw45xA7h0",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Quad Barrel",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "218",
+		"description": "",
+		"effect": "<p>+2 Fire Rate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Missile Launcher Barrel",
+		"namePrefix": "Quad Barrel",
+		"perks": "Gun Nut 3",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 20
+	},
+	"type": "weapon_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "AS0Amn04UTnwJOgG",
+	"_key": "!items!AS0Amn04UTnwJOgG",
+	"effects": [
+	],
+	"folder": "sFnAMjOd2fTxG5bA",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Hooked",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "9",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>An successful attack, spend 2 AP to disarm opponent, knocking one held weapon away</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Pipe Wrench",
+		"namePrefix": "Hooked",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

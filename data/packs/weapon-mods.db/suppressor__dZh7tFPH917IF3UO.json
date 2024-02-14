@@ -1,0 +1,34 @@
+{
+	"_id": "dZh7tFPH917IF3UO",
+	"_key": "!items!dZh7tFPH917IF3UO",
+	"effects": [
+	],
+	"folder": "KFg4RIFxfyGL2Afb",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Suppressor",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "45",
+		"description": "",
+		"effect": "<p>Gain Suppressed</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Muzzle",
+		"namePrefix": "Suppressed",
+		"perks": "Gun Nut 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

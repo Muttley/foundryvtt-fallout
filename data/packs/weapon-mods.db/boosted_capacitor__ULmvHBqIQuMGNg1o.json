@@ -1,0 +1,34 @@
+{
+	"_id": "ULmvHBqIQuMGNg1o",
+	"_key": "!items!ULmvHBqIQuMGNg1o",
+	"effects": [
+	],
+	"folder": "XtgWC9Ev4cxCj2nq",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Boosted Capacitor",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "94",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Gatling Laser Capacitor",
+		"namePrefix": "Boosted",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

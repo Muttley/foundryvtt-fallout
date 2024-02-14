@@ -1,0 +1,34 @@
+{
+	"_id": "8kEOp1jQBdQkbGXu",
+	"_key": "!items!8kEOp1jQBdQkbGXu",
+	"effects": [
+	],
+	"folder": "hLOWqs3EQrgXutZr",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Bracketed Short Barrel",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "6",
+		"description": "",
+		"effect": "<p>Allows the weapon to take a Muzzle mod</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Barrel",
+		"namePrefix": "",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

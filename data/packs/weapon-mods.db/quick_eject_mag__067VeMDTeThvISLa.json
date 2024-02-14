@@ -1,0 +1,34 @@
+{
+	"_id": "067VeMDTeThvISLa",
+	"_key": "!items!067VeMDTeThvISLa",
+	"effects": [
+	],
+	"folder": "x1P0jevw8Gl185wf",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Quick-Eject Mag",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "8",
+		"description": "",
+		"effect": "<p>Gain Reliable</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Magazine",
+		"namePrefix": "Quick",
+		"perks": "Gun Nut 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

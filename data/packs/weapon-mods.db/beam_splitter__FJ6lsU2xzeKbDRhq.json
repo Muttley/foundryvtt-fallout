@@ -1,0 +1,34 @@
+{
+	"_id": "FJ6lsU2xzeKbDRhq",
+	"_key": "!items!FJ6lsU2xzeKbDRhq",
+	"effects": [
+	],
+	"folder": "o6k96ORDTHXKtOxM",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Beam Splitter",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "15",
+		"description": "",
+		"effect": "<p>-1 @fos[DC]</p>\n<p>-1 Fire Rate</p>\n<p>Gain Inaccurate</p>\n<p>Reduce Range by 1 step</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Muzzle",
+		"namePrefix": "Scattered",
+		"perks": "Science! 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

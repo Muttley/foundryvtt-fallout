@@ -1,0 +1,34 @@
+{
+	"_id": "2aqYiSm1nrIYHgoA",
+	"_key": "!items!2aqYiSm1nrIYHgoA",
+	"effects": [
+	],
+	"folder": "KFg4RIFxfyGL2Afb",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Muzzle Break",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "30",
+		"description": "",
+		"effect": "<p>Remove Inaccurate</p>\n<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Muzzle",
+		"namePrefix": "Muzzled",
+		"perks": "Gun Nut 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "H5uajcZl8MICYwfy",
+	"_key": "!items!H5uajcZl8MICYwfy",
+	"effects": [
+	],
+	"folder": "vnStsIp1P4oNrgWt",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Recoil Compensating Stock",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "3",
+		"description": "",
+		"effect": "<p>Gain Two-Handed</p>\n<p>Remove Inaccurate</p>\n<p>+1 Fire Rate</p>\n<p>Remove Close Quarters</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Stock",
+		"namePrefix": "Recoil Compensated",
+		"perks": "Gun Nut 3",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

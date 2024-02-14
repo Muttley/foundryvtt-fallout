@@ -1,0 +1,34 @@
+{
+	"_id": "hVD46UqAqiNB4f57",
+	"_key": "!items!hVD46UqAqiNB4f57",
+	"effects": [
+	],
+	"folder": "h90MorifUQMpngiI",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Heating Coil",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "180",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Change Damage Type to Energy</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Super Sledge",
+		"namePrefix": "Heated",
+		"perks": "Blacksmith 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

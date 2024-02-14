@@ -1,0 +1,34 @@
+{
+	"_id": "WD7u8h2fsH35rD8t",
+	"_key": "!items!WD7u8h2fsH35rD8t",
+	"effects": [
+	],
+	"folder": "8Uav0KQF8s6bGnC5",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Scope",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "143",
+		"description": "",
+		"effect": "<p>Gain Accurate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Sight",
+		"namePrefix": "Scoped",
+		"perks": "Gun Nut 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 6
+	},
+	"type": "weapon_mod"
+}

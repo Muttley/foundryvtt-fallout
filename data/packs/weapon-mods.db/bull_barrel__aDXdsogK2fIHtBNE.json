@@ -1,0 +1,34 @@
+{
+	"_id": "aDXdsogK2fIHtBNE",
+	"_key": "!items!aDXdsogK2fIHtBNE",
+	"effects": [
+	],
+	"folder": "FyM7apyr7UNUi2nF",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Bull Barrel",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "",
+		"effect": "<p>Gain Reliable</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Barrel",
+		"namePrefix": "Bull Barrel",
+		"perks": "Gun Nut 3",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "ybNloPq9nZTqGAur",
+	"_key": "!items!ybNloPq9nZTqGAur",
+	"effects": [
+	],
+	"folder": "ejaQqUkMulo41TKV",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": ".308 Receiver",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "40",
+		"description": "",
+		"effect": "<p>Change damage to 7 @fos[DC]</p>\n<p>Ammo changes to @UUID[Item.i4CuRrtBhO2mWeDz]{.308 Round}</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Receiver",
+		"namePrefix": ".308",
+		"perks": "Gun Nut 4",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 4
+	},
+	"type": "weapon_mod"
+}

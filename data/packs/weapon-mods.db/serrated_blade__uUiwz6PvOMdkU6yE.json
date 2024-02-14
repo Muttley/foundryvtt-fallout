@@ -1,0 +1,34 @@
+{
+	"_id": "uUiwz6PvOMdkU6yE",
+	"_key": "!items!uUiwz6PvOMdkU6yE",
+	"effects": [
+	],
+	"folder": "ybjJSagFeVHIQgRl",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Serrated Blade",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "0",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Switchblade",
+		"namePrefix": "Serrated",
+		"perks": "Blacksmith 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

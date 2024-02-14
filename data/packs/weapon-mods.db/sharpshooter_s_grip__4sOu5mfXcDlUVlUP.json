@@ -1,0 +1,34 @@
+{
+	"_id": "4sOu5mfXcDlUVlUP",
+	"_key": "!items!4sOu5mfXcDlUVlUP",
+	"effects": [
+	],
+	"folder": "enLFbKZ7j9OhhYoD",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Sharpshooter's Grip",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "",
+		"effect": "<p>Remove Inaccurate</p>\n<p>Add Piercing 1</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Grip",
+		"namePrefix": "Sharpshooter's",
+		"perks": "Gun Nut 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

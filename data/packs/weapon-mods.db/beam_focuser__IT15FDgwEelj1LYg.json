@@ -1,0 +1,34 @@
+{
+	"_id": "IT15FDgwEelj1LYg",
+	"_key": "!items!IT15FDgwEelj1LYg",
+	"effects": [
+	],
+	"folder": "wN9h6LxBvefZhQyc",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Beam Focuser",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "22",
+		"description": "",
+		"effect": "<p>Gain Piercing 1</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Gatling Laser Nozzle",
+		"namePrefix": "Focused",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

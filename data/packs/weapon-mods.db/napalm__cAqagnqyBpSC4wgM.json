@@ -1,0 +1,34 @@
+{
+	"_id": "cAqagnqyBpSC4wgM",
+	"_key": "!items!cAqagnqyBpSC4wgM",
+	"effects": [
+	],
+	"folder": "GVZOjd69FugxmDl0",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Napalm",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "59",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Flamer Fuel",
+		"namePrefix": "Napalmer",
+		"perks": "Gun Nut 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 7
+	},
+	"type": "weapon_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "vq6OcwFKhScFr26X",
+	"_key": "!items!vq6OcwFKhScFr26X",
+	"effects": [
+	],
+	"folder": "36UsRm4n8Pr0UaUy",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Serrated Blade",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "25",
+		"description": "",
+		"effect": "<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Sword",
+		"namePrefix": "Serrated",
+		"perks": "Blacksmith 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

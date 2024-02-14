@@ -1,0 +1,34 @@
+{
+	"_id": "yxSF6qdbdO4FYaQb",
+	"_key": "!items!yxSF6qdbdO4FYaQb",
+	"effects": [
+	],
+	"folder": "FyM7apyr7UNUi2nF",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Vented",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "36",
+		"description": "",
+		"effect": "<p>Increase Range by 1 step</p>\n<p>+1 fire rate</p>\n<p>Gain Reliable</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Barrel",
+		"namePrefix": "Vented",
+		"perks": "Gun Nut 4",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

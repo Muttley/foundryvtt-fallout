@@ -1,0 +1,34 @@
+{
+	"_id": "bS7ZxJKZA2JAhPV8",
+	"_key": "!items!bS7ZxJKZA2JAhPV8",
+	"effects": [
+	],
+	"folder": "FsftjyUpE5iKkHY3",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Full Capacitors",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "37",
+		"description": "",
+		"effect": "<p>Gain Vicious</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Capacitor",
+		"namePrefix": "High Capacity",
+		"perks": "Gun Nut 3; Science! 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

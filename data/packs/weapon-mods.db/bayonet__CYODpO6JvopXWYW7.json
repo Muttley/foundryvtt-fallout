@@ -1,0 +1,34 @@
+{
+	"_id": "CYODpO6JvopXWYW7",
+	"_key": "!items!CYODpO6JvopXWYW7",
+	"effects": [
+	],
+	"folder": "KFg4RIFxfyGL2Afb",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Bayonet",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "10",
+		"description": "",
+		"effect": "<p>Melee weapon, deals 4 @fos[DC] Piercing 1 physical damage</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Muzzle",
+		"namePrefix": "Bayoneted",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

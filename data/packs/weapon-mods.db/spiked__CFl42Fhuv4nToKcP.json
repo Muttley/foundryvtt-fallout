@@ -1,0 +1,34 @@
+{
+	"_id": "CFl42Fhuv4nToKcP",
+	"_key": "!items!CFl42Fhuv4nToKcP",
+	"effects": [
+	],
+	"folder": "LTVXHvKPOvOunXCb",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Spiked",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "3",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Piercing 1</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Rolling Pin",
+		"namePrefix": "Spiked",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

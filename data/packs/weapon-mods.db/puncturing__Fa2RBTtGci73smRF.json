@@ -1,0 +1,34 @@
+{
+	"_id": "Fa2RBTtGci73smRF",
+	"_key": "!items!Fa2RBTtGci73smRF",
+	"effects": [
+	],
+	"folder": "sFnAMjOd2fTxG5bA",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Puncturing",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "13",
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>Gain Piercing 1</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Pipe Wrench",
+		"namePrefix": "Puncturing",
+		"perks": "Blacksmith 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

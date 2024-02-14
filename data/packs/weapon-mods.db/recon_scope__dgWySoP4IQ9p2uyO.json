@@ -1,0 +1,34 @@
+{
+	"_id": "dgWySoP4IQ9p2uyO",
+	"_key": "!items!dgWySoP4IQ9p2uyO",
+	"effects": [
+	],
+	"folder": "fMIRovgs2p0cBYIe",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Recon Scope",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "59",
+		"description": "",
+		"effect": "<p>Gain Accurate</p>\n<p>Gain Recon</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Sight",
+		"namePrefix": "Recon",
+		"perks": "Science! 3",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

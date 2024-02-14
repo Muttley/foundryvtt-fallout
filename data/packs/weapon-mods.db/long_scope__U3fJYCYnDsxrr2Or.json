@@ -1,0 +1,34 @@
+{
+	"_id": "U3fJYCYnDsxrr2Or",
+	"_key": "!items!U3fJYCYnDsxrr2Or",
+	"effects": [
+	],
+	"folder": "fMIRovgs2p0cBYIe",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Long Scope",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "29",
+		"description": "",
+		"effect": "<p>Gain Accurate</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Sight",
+		"namePrefix": "Scoped",
+		"perks": "Science! 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

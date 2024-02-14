@@ -1,0 +1,34 @@
+{
+	"_id": "7OZouPhriL9tzrOD",
+	"_key": "!items!7OZouPhriL9tzrOD",
+	"effects": [
+	],
+	"folder": "6nnTrN2wU5QvWzgG",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Puncturing",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "4",
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Piercing 1</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Knuckles",
+		"namePrefix": "Puncturing",
+		"perks": "Blacksmith 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

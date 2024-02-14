@@ -1,0 +1,34 @@
+{
+	"_id": "rTLDO0WUB9euiP9T",
+	"_key": "!items!rTLDO0WUB9euiP9T",
+	"effects": [
+	],
+	"folder": "8Uav0KQF8s6bGnC5",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Targeting Computer",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "293",
+		"description": "",
+		"effect": "<p>When you Aim at a target, the target does not benefit from being in cover, and the bonus for aiming applies to the next attack on any subsequent turn during the scene.</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Missile Launcher Sight",
+		"namePrefix": "Targeting",
+		"perks": "Gun Nut 2; Science! 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 7
+	},
+	"type": "weapon_mod"
+}

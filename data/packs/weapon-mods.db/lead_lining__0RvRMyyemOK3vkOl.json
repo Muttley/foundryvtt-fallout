@@ -1,0 +1,34 @@
+{
+	"_id": "0RvRMyyemOK3vkOl",
+	"_key": "!items!0RvRMyyemOK3vkOl",
+	"effects": [
+	],
+	"folder": "eTtGgz88Aq7NZ7Lt",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Lead Lining",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "7",
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Boxing Glove",
+		"namePrefix": "Lead-Lined",
+		"perks": "Blacksmith 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

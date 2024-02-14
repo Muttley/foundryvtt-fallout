@@ -1,0 +1,34 @@
+{
+	"_id": "rdA0goilCAmpEqWx",
+	"_key": "!items!rdA0goilCAmpEqWx",
+	"effects": [
+	],
+	"folder": "W28sa1G86XSoOGE3",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Electric Signal Carrier Antennae",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": "30",
+		"description": "",
+		"effect": "<p>Change damage to 7 @fos[DC]</p>\n<p>Change damage type to Energy</p>\n<p>Gain Radioactive</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Gamma Gun Muzzle",
+		"namePrefix": "Electrified",
+		"perks": "Science! 4",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}
