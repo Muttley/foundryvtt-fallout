@@ -11,6 +11,7 @@
 - [#161] Added Trait item compendium (10 items)
 
 ## Bugfixes
+- [#144] Add conversion Lbs/Kgs for Materials
 - [#147] Skill names not localized in skill roll chat messages
 - [#165] Show correct weight system on encumbrance bar when system is set to Kg
 
