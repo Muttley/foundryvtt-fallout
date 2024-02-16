@@ -17,6 +17,7 @@
 - [#144] Add conversion Lbs/Kgs for Materials
 - [#147] Skill names not localized in skill roll chat messages
 - [#165] Show correct weight system on encumbrance bar when system is set to Kg
+- [#173] Inline rolls almost unreadable on item chat cards and sheet descriptions
 
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
 
