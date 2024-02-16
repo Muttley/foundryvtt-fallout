@@ -1,0 +1,22 @@
+{
+	"_id": "BoK3Po9WKYHAv4Y9",
+	"_key": "!items!BoK3Po9WKYHAv4Y9",
+	"effects": [
+	],
+	"folder": "hleTGvh4Mq1pZALV",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Guide to Hunting Commies!",
+	"system": {
+		"description": "<p>One attack against an enemy with a lower level than you inflicts +2CD damage</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}
