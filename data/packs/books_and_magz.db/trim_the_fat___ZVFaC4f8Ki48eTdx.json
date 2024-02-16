@@ -1,0 +1,24 @@
+{
+	"_id": "ZVFaC4f8Ki48eTdx",
+	"_key": "!items!ZVFaC4f8Ki48eTdx",
+	"effects": [
+	],
+	"folder": "uxLAl0WJVbJc5bGK",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Trim the Fat!",
+	"system": {
+		"cost": "0",
+		"description": "<p>A pre-War magazine series dedicated to lifestyle and relationships, often covering cultural events, health advice, diet tips, relationship advice, and more.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from <strong>for a single scene</strong>. If you later learn the perk, you may use that benefit constantly. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.siFrRn6TjSmxGKas]{Trim the Fat!}</p>",
+		"effect": "<p>Regain twice as many HP from fruit or vegetables eaten in one scene</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}
