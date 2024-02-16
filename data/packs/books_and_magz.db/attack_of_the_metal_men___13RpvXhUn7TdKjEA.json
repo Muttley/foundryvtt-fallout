@@ -1,0 +1,24 @@
+{
+	"_id": "13RpvXhUn7TdKjEA",
+	"_key": "!items!13RpvXhUn7TdKjEA",
+	"effects": [
+	],
+	"folder": "gvTCVmcQwuzBajUx",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Attack of the Metal Men!",
+	"system": {
+		"cost": "0",
+		"description": "<p>A magazine containing thrilling short stories of daring adventure!</p>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack. This lasts only for a single attack (made or received, respectively), unless the perk is learned, in which case it applies to all attacks.</p>\n<p>@UUID[Compendium.fallout.perks.Item.NNhKS3XzGuAnXNmq]{Attack of the Metal Men!}</p>",
+		"effect": "<p>+2 to Physical and Energy damage resistances vs Robots</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

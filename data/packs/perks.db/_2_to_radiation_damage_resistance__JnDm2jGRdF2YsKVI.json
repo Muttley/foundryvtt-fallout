@@ -1,0 +1,30 @@
+{
+	"_id": "JnDm2jGRdF2YsKVI",
+	"_key": "!items.effects!fMq7BDUKGUIZDOEY.JnDm2jGRdF2YsKVI",
+	"changes": [
+		{
+			"key": "system.resistance.radiation",
+			"mode": 2,
+			"priority": null,
+			"value": "2"
+		}
+	],
+	"description": "",
+	"disabled": false,
+	"duration": {
+		"combat": null,
+		"rounds": null,
+		"seconds": null,
+		"startRound": null,
+		"startTime": null,
+		"startTurn": null,
+		"turns": null
+	},
+	"icon": "icons/svg/aura.svg",
+	"name": "+2 to Radiation damage resistance",
+	"origin": "Item.fMq7BDUKGUIZDOEY",
+	"statuses": [
+	],
+	"tint": null,
+	"transfer": true
+}

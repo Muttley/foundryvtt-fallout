@@ -1,0 +1,30 @@
+{
+	"_id": "IpEtmK7VeFNTeCta",
+	"_key": "!items.effects!LSUSRTgMyqfN1EQx.IpEtmK7VeFNTeCta",
+	"changes": [
+		{
+			"key": "system.resistance.poison",
+			"mode": 2,
+			"priority": null,
+			"value": "2"
+		}
+	],
+	"description": "",
+	"disabled": false,
+	"duration": {
+		"combat": null,
+		"rounds": null,
+		"seconds": null,
+		"startRound": null,
+		"startTime": null,
+		"startTurn": null,
+		"turns": null
+	},
+	"icon": "icons/svg/aura.svg",
+	"name": "+2 to Poison damage resistance",
+	"origin": "Item.LSUSRTgMyqfN1EQx",
+	"statuses": [
+	],
+	"tint": null,
+	"transfer": true
+}

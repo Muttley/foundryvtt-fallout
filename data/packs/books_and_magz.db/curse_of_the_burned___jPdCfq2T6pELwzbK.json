@@ -1,0 +1,24 @@
+{
+	"_id": "jPdCfq2T6pELwzbK",
+	"_key": "!items!jPdCfq2T6pELwzbK",
+	"effects": [
+	],
+	"folder": "gvTCVmcQwuzBajUx",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Curse of the Burned!",
+	"system": {
+		"cost": "0",
+		"description": "<p>A magazine containing thrilling short stories of daring adventure!</p>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack. This lasts only for a single attack (made or received, respectively), unless the perk is learned, in which case it applies to all attacks.</p>\n<p>@UUID[Compendium.fallout.perks.Item.Cx5ysG2Z0XPE6DZn]{Curse of the Burned!}</p>",
+		"effect": "<p>+1 @fos[DC] on attacks vs Ghouls</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

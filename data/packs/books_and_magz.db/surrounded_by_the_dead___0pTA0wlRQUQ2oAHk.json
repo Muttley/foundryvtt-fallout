@@ -1,0 +1,24 @@
+{
+	"_id": "0pTA0wlRQUQ2oAHk",
+	"_key": "!items!0pTA0wlRQUQ2oAHk",
+	"effects": [
+	],
+	"folder": "gvTCVmcQwuzBajUx",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Surrounded by the Dead!",
+	"system": {
+		"cost": "0",
+		"description": "<p>A magazine containing thrilling short stories of daring adventure!</p>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack. This lasts only for a single attack (made or received, respectively), unless the perk is learned, in which case it applies to all attacks.</p>\n<p>@UUID[Compendium.fallout.perks.Item.pk42jPbAVMosmA0k]{Surrounded by the Dead!}</p>",
+		"effect": "<p>+1CD on attacks where you spend one or more Ammunition for bonus damage</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

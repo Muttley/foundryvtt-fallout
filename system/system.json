@@ -62,6 +62,15 @@
 			"flags": {}
 		},
 		{
+			"name": "books_and_magz",
+			"label": "Books & Magazines",
+			"system": "fallout",
+			"path": "packs/books_and_magz",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "consumables",
 			"label": "Consumables",
 			"system": "fallout",
@@ -84,6 +93,15 @@
 			"label": "Skills",
 			"system": "fallout",
 			"path": "packs/skills",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "perks",
+			"label": "Perks",
+			"system": "fallout",
+			"path": "packs/perks",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -144,7 +162,9 @@
 						"ammunition",
 						"apparel_mods",
 						"apparel",
+						"books_and_magz",
 						"consumables",
+						"perks",
 						"skills",
 						"traits",
 						"weapon_mods",
