@@ -8,7 +8,7 @@
 	"name": "Science Gone Mad!",
 	"system": {
 		"cost": "0",
-		"description": "<p>A magazine containing thrilling short stories of daring adventure!</p>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack. This lasts only for a single attack (made or received, respectively), unless the perk is learned, in which case it applies to all attacks.</p>\n<p>@UUID[Compendium.fallout.perks.Item.fDu6KU5u17sqA1hf]{Science Gone Mad!}</p>",
+		"description": "<p>A magazine containing thrilling short stories of daring adventure!</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack. This lasts only for a single attack (made or received, respectively), unless the perk is learned, in which case it applies to all attacks. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.fDu6KU5u17sqA1hf]{Science Gone Mad!}</p>",
 		"effect": "<p>+2 to Energy damage resistance</p>",
 		"favorite": false,
 		"issue": "",

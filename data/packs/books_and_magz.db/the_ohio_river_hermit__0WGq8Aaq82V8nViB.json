@@ -1,0 +1,24 @@
+{
+	"_id": "0WGq8Aaq82V8nViB",
+	"_key": "!items!0WGq8Aaq82V8nViB",
+	"effects": [
+	],
+	"folder": "uCVhOfIjuXEULM3P",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "The Ohio River Hermit",
+	"system": {
+		"cost": "0",
+		"description": "<p>Thrilling, true stories for rugged men! Backwoodsman is a magazine series containing articles and stories about outdoor survival, for people who like to talk about surviving in the wild.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.7vvLcpVth2gMnB7o]{The Ohio River Hermit}</p>",
+		"effect": "<p>Reduce the difficulty of repairing a damaged item by 1 (min. 0)</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

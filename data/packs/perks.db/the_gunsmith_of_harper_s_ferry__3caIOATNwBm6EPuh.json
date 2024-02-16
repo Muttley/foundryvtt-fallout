@@ -1,0 +1,22 @@
+{
+	"_id": "3caIOATNwBm6EPuh",
+	"_key": "!items!3caIOATNwBm6EPuh",
+	"effects": [
+	],
+	"folder": "juv3n8NKi5aCAcep",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "The Gunsmith of Harper’s Ferry",
+	"system": {
+		"description": "<h2>Backwoodsman</h2>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene.</p>\n<ul>\n<li>\n<p>When you find ammo, you find +2CD more shots</p>\n</li>\n</ul>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}
