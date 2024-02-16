@@ -23,5 +23,20 @@ export default function registerTextEditorEnrichers() {
 				return span;
 			},
 		},
+		{
+			pattern: /(\+\d+)CD/gm,
+			enricher: async (match, options) => {
+				const outerSpan = document.createElement("span");
+				outerSpan.innerHTML = `${match[1]}&nbsp;`;
+
+				const span = document.createElement("span");
+				span.style.fontFamily = "fallout";
+				span.innerHTML = "";
+
+				outerSpan.appendChild(span);
+
+				return outerSpan;
+			},
+		},
 	]);
 }

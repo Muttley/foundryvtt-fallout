@@ -11,6 +11,7 @@
 - [#161] Added Trait item compendium (10 items)
 - [#162] Added Weapons item compendium (68 items)
 - [#163] Added Weapon Mods item compendium (145 items)
+- [#171] Add new text enricher to detect +nCD (where n is a number) and format the string with the Combat Dice icon
 
 ## Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials
