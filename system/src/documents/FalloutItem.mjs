@@ -51,10 +51,18 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 
 		switch (this.type) {
+			case "ammo":
+				this._prepareAmmoData();
+				break;
+			case "consumable":
+				this._prepareConsumableData();
+				break;
 			case "skill":
 				this._prepareSkillData();
 				break;
-			default:
+			case "weapon":
+				this._prepareWeaponData();
+				break;
 		}
 	}
 
@@ -129,6 +137,19 @@ export default class FalloutItem extends Item {
 		return qualities.join(", ");
 	}
 
+	_prepareAmmoData() {
+		let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
+		shotsAvailable += this.system.shots.current;
+
+		this.shotsAvailable = shotsAvailable;
+	}
+
+	_prepareConsumableData() {
+		this.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
+			this.system.consumableType
+		];
+	}
+
 	_prepareSkillData() {
 		// Get the localized name of a skill, if there is no
 		// localization then it is likely a custom skill, in which
@@ -143,4 +164,18 @@ export default class FalloutItem extends Item {
 			`FALLOUT.AbilityAbbr.${this.system.defaultAttribute}`
 		);
 	}
+
+	async _prepareWeaponData() {
+		if (!this.actor) return;
+
+		if (this.system.ammo !== "") {
+			const [, shotsAvailable] =
+				await this.actor._getAvailableAmmoType(
+					this.system.ammo
+				);
+
+			this.shotsAvailable = shotsAvailable;
+		}
+	}
+
 }

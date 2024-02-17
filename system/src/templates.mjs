@@ -8,7 +8,7 @@
  * @async
  * @returns {Promise}
  */
-export default async function() {
+export default async function preloadHandlebarsTemplates() {
 	const partials = [
 		"systems/fallout/templates/actor/_shared-partials/ammo.hbs",
 		"systems/fallout/templates/actor/_shared-partials/biography.hbs",

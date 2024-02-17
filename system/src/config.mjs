@@ -275,10 +275,13 @@ FALLOUT.THIRST_BY_NUMBER = {
 
 FALLOUT.WEAPON_QUALITIES = {
 	accurate: "FALLOUT.WEAPONS.weaponQuality.accurate",
+	ammo_hungry_x: "FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x",
 	blast: "FALLOUT.WEAPONS.weaponQuality.blast",
+	bombard: "FALLOUT.WEAPONS.weaponQuality.bombard",
 	close_quarters: "FALLOUT.WEAPONS.weaponQuality.close_quarters",
 	concealed: "FALLOUT.WEAPONS.weaponQuality.concealed",
 	debilitating: "FALLOUT.WEAPONS.weaponQuality.debilitating",
+	delay_x: "FALLOUT.WEAPONS.weaponQuality.delay_x",
 	gatling: "FALLOUT.WEAPONS.weaponQuality.gatling",
 	inaccurate: "FALLOUT.WEAPONS.weaponQuality.inaccurate",
 	limited: "FALLOUT.WEAPONS.weaponQuality.limited",
@@ -319,12 +322,14 @@ FALLOUT.WEAPON_TYPES = {
 
 export async function generateEnrichedTooltips() {
 	CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS = {};
+	CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK = {};
 	for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
 		CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
 			game.i18n.localize(
 				`FALLOUT.TOOLTIPS.WeaponQuality.${key}`
 			)
 		);
+		CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key] = key.endsWith("_x");
 	}
 
 	CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK = {};

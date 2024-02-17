@@ -362,7 +362,7 @@ export default class FalloutActor extends Actor {
 	_prepareSettlementData() {
 		if (this.type !== "settlement") return;
 
-		this.system.storage.base +=
+		this.system.storage.base =
 			parseInt(game.settings.get("fallout", "baseSettlementStorage"));
 
 		this.system.storage.value =

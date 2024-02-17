@@ -24,7 +24,7 @@ export default function registerTextEditorEnrichers() {
 			},
 		},
 		{
-			pattern: /(\+\d+)CD/gm,
+			pattern: /((\+|-)?\d+)\s*(CD|DC)/gm,
 			enricher: async (match, options) => {
 				const outerSpan = document.createElement("span");
 				outerSpan.innerHTML = `${match[1]}&nbsp;`;

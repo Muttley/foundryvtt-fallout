@@ -1,3 +1,5 @@
+import { generateEnrichedTooltips } from "../config.mjs";
+
 export const setupHook = {
 	attach: () => {
 		Hooks.once("setup", () => {
@@ -16,6 +18,8 @@ export const setupHook = {
 					}
 				}
 			}
+
+			generateEnrichedTooltips();
 		});
 	},
 };

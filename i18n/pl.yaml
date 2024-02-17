@@ -359,23 +359,10 @@ FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny – rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni."
-FALLOUT.TOOLTIPS.WeaponQuality.closeQuarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
+FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Broń ma niewielkie rozmiary lub można ją łatwo ukryć. Przeciwnik zdoła ją zauważyć tylko wtedy, kiedy trzymasz ją w dłoni lub cię przeszuka i wykona udany test PER + Przetrwania o trudności 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Trudność testów leczenia ran spowodowanych przez tę broń wzrasta o +1.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Broń zużywa dziesięć razy więcej amunicji niż normalnie – zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni)."
-FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: niecelna
-FALLOUT.TOOLTIPS.WeaponQuality.limited: ograniczona
-FALLOUT.TOOLTIPS.WeaponQuality.mine: mina
-FALLOUT.TOOLTIPS.WeaponQuality.nightVision: noktowizja
-FALLOUT.TOOLTIPS.WeaponQuality.parry: parująca
-FALLOUT.TOOLTIPS.WeaponQuality.recon: zwiadowcza
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: niezawodna
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: wolne_przeładowanie
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: wytłumiona
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: rzucana
-FALLOUT.TOOLTIPS.WeaponQuality.twoHanded: dwuręczna
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: zawodna
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: niestabilna_radiacyjne
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -415,7 +402,7 @@ FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
 FALLOUT.WEAPONS.damageEffect.freeze: Zamrażająca
 FALLOUT.WEAPONS.damageEffect.persistent: Uporczywe
-FALLOUT.WEAPONS.damageEffect.piercing: Przeszywające
+FALLOUT.WEAPONS.damageEffect.piercing_x: Przeszywające
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktywne
 FALLOUT.WEAPONS.damageEffect.spread: Rozrzut
 FALLOUT.WEAPONS.damageEffect.stun: Ogłuszające
@@ -426,21 +413,21 @@ FALLOUT.WEAPONS.damageType.poison: Trucizna
 FALLOUT.WEAPONS.damageType.radiation: Radiacja
 FALLOUT.WEAPONS.weaponQuality.accurate: Celna
 FALLOUT.WEAPONS.weaponQuality.blast: Wybuchowa
-FALLOUT.WEAPONS.weaponQuality.closeQuarters: Zwarcie
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Zwarcie
 FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Niecelna
 FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
-FALLOUT.WEAPONS.weaponQuality.nightVision: Noktowizja
+FALLOUT.WEAPONS.weaponQuality.night_vision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
 FALLOUT.WEAPONS.weaponQuality.slow_load: Wolne przeładowanie
 FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
-FALLOUT.WEAPONS.weaponQuality.twoHanded: Dwuręczna
+FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka

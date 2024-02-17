@@ -1,6 +1,7 @@
 # v11.4.0
 
 ## Enhancements
+- [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
 - [#149] Add default icons for all item types
 - [#150] Add new default tokens for all actor types
 - [#152] Added Addiction item compendium (12 items)
@@ -19,13 +20,23 @@
 - [#165] Show correct weight system on encumbrance bar when system is set to Kg
 - [#173] Inline rolls almost unreadable on item chat cards and sheet descriptions
 
+## Chores
+- [#174] Tidy up Weapon Quality and Damage Effect data in schema
+- [#175] Retire the hovers.json facility as we are allowed to have this information in the i18n files for use in tooltips
+
+	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
+
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
+
+---
 
 # v11.3.6
 
 ## Bugfixes
 - [#137] Ammo counting code can incorrectly match non-ammo items
 - [#138] Character sheet rendered before all data ready
+
+---
 
 # v11.3.5
 
@@ -35,10 +46,14 @@
 ## Chores
 - [#127] Merge localization updates from Crowdin
 
+---
+
 # v11.3.4
 
 ## Bugfixes
 - [#125] Updating NPC name doesn't get reflected immediately in a related settlement sheet
+
+---
 
 # v11.3.3
 
@@ -53,15 +68,21 @@
 
 *The French translation is now 100% complete.  Many thanks to Starbuck for their work on this.*
 
+---
+
 # v11.3.2
 
 ## Chores
 - [#113] Merged language updates from Crowdin
 
+---
+
 # v11.3.1
 
 ## Bugfix
 - [#110] Migrations not running correctly
+
+---
 
 # v11.3.0
 

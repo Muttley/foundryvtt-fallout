@@ -91,7 +91,7 @@ export default function registerSettings() {
 			lbs: "Lbs",
 			kgs: "Kgs",
 		},
-		onChange: s => {},
+		requiresReload: true,
 	});
 
 	game.settings.register(SYSTEM_ID, "carryBase", {
