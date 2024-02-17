@@ -15,69 +15,43 @@
 		"damage": {
 			"damageEffect": {
 				"arc": {
-					"hasRanks": false,
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
 				"breaking": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Breaking",
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
 				"burst": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Burst",
-					"rank": -1,
+					"rank": 0,
 					"value": true
 				},
 				"freeze": {
-					"hasRanks": false,
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
 				"persistent": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Persistent",
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
-				"piercing": {
-					"description": "",
-					"hasRanks": true,
-					"label": "Piercing",
+				"piercing_x": {
 					"rank": 1,
 					"value": false
 				},
 				"radioactive": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Radioactive",
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
 				"spread": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Spread",
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
 				"stun": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Stun",
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				},
 				"vicious": {
-					"description": "",
-					"hasRanks": false,
-					"label": "Vicious",
-					"rank": -1,
+					"rank": 0,
 					"value": false
 				}
 			},
@@ -90,98 +64,60 @@
 			"rating": 3,
 			"weaponQuality": {
 				"accurate": {
-					"description": "",
-					"label": "Accurate",
 					"value": false
 				},
 				"blast": {
-					"description": "",
-					"label": "Blast",
 					"value": false
 				},
-				"closeQuarters": {
-					"description": "",
-					"label": "Close Quarters",
+				"close_quarters": {
 					"value": true
 				},
 				"concealed": {
-					"description": "",
-					"label": "Concealed",
 					"value": false
 				},
 				"debilitating": {
-					"description": "",
-					"label": "Debilitating",
 					"value": false
 				},
 				"gatling": {
-					"description": "",
-					"label": "Gatling",
 					"value": false
 				},
 				"inaccurate": {
-					"description": "",
-					"label": "Inaccurate",
 					"value": true
 				},
 				"limited": {
-					"description": "",
-					"label": "Limited",
 					"value": false
 				},
 				"mine": {
-					"description": "",
-					"label": "Mine",
 					"value": false
 				},
-				"nightVision": {
-					"description": "",
-					"label": "Night Vision",
+				"night_vision": {
 					"value": false
 				},
 				"parry": {
-					"description": "",
-					"label": "Parry",
 					"value": false
 				},
 				"recon": {
-					"description": "",
-					"label": "Recon",
 					"value": false
 				},
 				"reliable": {
-					"description": "",
-					"label": "Reliable",
 					"value": false
 				},
 				"slow_load": {
-					"description": "",
-					"label": "Slow Load",
 					"value": false
 				},
 				"suppressed": {
-					"description": "",
-					"label": "Suppressed",
 					"value": false
 				},
 				"thrown": {
-					"description": "",
-					"label": "Thrown",
 					"value": false
 				},
-				"twoHanded": {
-					"description": "",
-					"label": "Two-Handed",
+				"two_handed": {
 					"value": false
 				},
 				"unreliable": {
-					"description": "",
-					"label": "Unreliable",
 					"value": false
 				},
 				"unstable_radiation": {
-					"description": "",
-					"label": "Unstable Radiation",
 					"value": false
 				}
 			}

@@ -111,7 +111,7 @@ FALLOUT.DAMAGE_EFFECTS = {
 	burst: "FALLOUT.WEAPONS.damageEffect.burst",
 	freeze: "FALLOUT.WEAPONS.damageEffect.freeze",
 	persistent: "FALLOUT.WEAPONS.damageEffect.persistent",
-	piercing: "FALLOUT.WEAPONS.damageEffect.piercing",
+	piercing_x: "FALLOUT.WEAPONS.damageEffect.piercing_x",
 	radioactive: "FALLOUT.WEAPONS.damageEffect.radioactive",
 	spread: "FALLOUT.WEAPONS.damageEffect.spread",
 	stun: "FALLOUT.WEAPONS.damageEffect.stun",
@@ -276,21 +276,21 @@ FALLOUT.THIRST_BY_NUMBER = {
 FALLOUT.WEAPON_QUALITIES = {
 	accurate: "FALLOUT.WEAPONS.weaponQuality.accurate",
 	blast: "FALLOUT.WEAPONS.weaponQuality.blast",
-	closeQuarters: "FALLOUT.WEAPONS.weaponQuality.closeQuarters",
+	close_quarters: "FALLOUT.WEAPONS.weaponQuality.close_quarters",
 	concealed: "FALLOUT.WEAPONS.weaponQuality.concealed",
 	debilitating: "FALLOUT.WEAPONS.weaponQuality.debilitating",
 	gatling: "FALLOUT.WEAPONS.weaponQuality.gatling",
 	inaccurate: "FALLOUT.WEAPONS.weaponQuality.inaccurate",
 	limited: "FALLOUT.WEAPONS.weaponQuality.limited",
 	mine: "FALLOUT.WEAPONS.weaponQuality.mine",
-	nightVision: "FALLOUT.WEAPONS.weaponQuality.nightVision",
+	night_vision: "FALLOUT.WEAPONS.weaponQuality.night_vision",
 	parry: "FALLOUT.WEAPONS.weaponQuality.parry",
 	recon: "FALLOUT.WEAPONS.weaponQuality.recon",
 	reliable: "FALLOUT.WEAPONS.weaponQuality.reliable",
 	slow_load: "FALLOUT.WEAPONS.weaponQuality.slow_load",
 	suppressed: "FALLOUT.WEAPONS.weaponQuality.suppressed",
 	thrown: "FALLOUT.WEAPONS.weaponQuality.thrown",
-	twoHanded: "FALLOUT.WEAPONS.weaponQuality.twoHanded",
+	two_handed: "FALLOUT.WEAPONS.weaponQuality.two_handed",
 	unreliable: "FALLOUT.WEAPONS.weaponQuality.unreliable",
 	unstable_radiation: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation",
 };
@@ -316,3 +316,25 @@ FALLOUT.WEAPON_TYPES = {
 	throwing: "FALLOUT.WEAPONS.weaponType.throwing",
 	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
+
+export async function generateEnrichedTooltips() {
+	CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS = {};
+	for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
+		CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
+			game.i18n.localize(
+				`FALLOUT.TOOLTIPS.WeaponQuality.${key}`
+			)
+		);
+	}
+
+	CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK = {};
+	CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS = [];
+	for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
+		CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key] = await TextEditor.enrichHTML(
+			game.i18n.localize(
+				`FALLOUT.TOOLTIPS.DamageEffect.${key}`
+			)
+		);
+		CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key] = key.endsWith("_x");
+	}
+}
