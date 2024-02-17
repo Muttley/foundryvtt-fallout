@@ -2,15 +2,21 @@
 	<div class="content">
 		<h2>{{title}}</h2>
 		<p>{{body}}</p>
-		<p class="hit-location-label">
-			{{#ifCond consumableType "===" "food"}}
-				<strong>{{localize "FALLOUT.CHAT_MESSAGE.consumed.hunger_level"}}:</strong>
-				{{fromConfig "HUNGER_BY_NUMBER" hunger}}
-			{{/ifCond}}
-			{{#ifCond consumableType "===" "beverage"}}
-				<strong>{{localize "FALLOUT.CHAT_MESSAGE.consumed.thirst_level"}}:</strong>
-				{{fromConfig "THIRST_BY_NUMBER" thirst}}
-			{{/ifCond}}
-		</p>
+		{{#if showHungerAndThirst}}
+			<div style="font-size: 0.75rem;">
+				<div>
+					<strong>
+						{{localize "FALLOUT.CHAT_MESSAGE.consumed.hunger_level"}}:
+					</strong>
+					{{fromConfig "HUNGER_BY_NUMBER" hunger}}
+				</div>
+				<div>
+					<strong>
+						{{localize "FALLOUT.CHAT_MESSAGE.consumed.thirst_level"}}:
+					</strong>
+					{{fromConfig "THIRST_BY_NUMBER" thirst}}
+				</div>
+			</div>
+		{{/if}}
 	</div>
 </div>

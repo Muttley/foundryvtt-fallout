@@ -43,15 +43,13 @@
 							<strong>
 								{{item.system.damage.rating}}
 							</strong>
-							<span class="fo-pip-boy fo-blue"></span>
 							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
 								+
 								<strong>
 									{{../actor.system.meleeDamage.value}}
 								</strong>
-								<span class="fo-pip-boy fo-blue"></span>
-								MB
 							{{/if}}
+							<span class="fo-pip-boy fo-blue"></span>
 						</a>
 					</div>
 					<div class="text-center">

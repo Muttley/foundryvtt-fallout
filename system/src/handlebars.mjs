@@ -33,7 +33,9 @@ export default function registerHandlebarsHelpers() {
 
 		if (effectsElements.length > 0) {
 			listString = effectsElements.join(",&nbsp;");
-			listString += ".";
+		}
+		else {
+			listString = "&mdash;";
 		}
 
 		return listString;
@@ -60,7 +62,9 @@ export default function registerHandlebarsHelpers() {
 
 		if (qualityElements.length > 0) {
 			listString = qualityElements.join(",&nbsp;");
-			listString += ".";
+		}
+		else {
+			listString = "&mdash;";
 		}
 
 		return listString;

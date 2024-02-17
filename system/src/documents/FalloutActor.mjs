@@ -812,9 +812,9 @@ export default class FalloutActor extends Actor {
 			}
 		}
 
-		if (consumableType === "beverage") {
+		if (["beverage", "food"].includes(consumableType)) {
 			const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
-			const thirstReduction = item.system.thirstReduction ?? 1;
+			const thirstReduction = item.system.thirstReduction ?? 0;
 
 			actorUpdateData["system.conditions.thirst"] =
 				 Math.max(currentThirst - thirstReduction, 0);
@@ -842,7 +842,7 @@ export default class FalloutActor extends Actor {
 						itemName: item.name,
 					}
 				),
-				consumableType,
+				showHungerAndThirst: ["beverage", "food"].includes(consumableType),
 				hunger: this.system.conditions.hunger,
 				thirst: this.system.conditions.thirst,
 			}

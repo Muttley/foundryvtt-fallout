@@ -8,8 +8,9 @@
 	"name": "Purified Water",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": false,
+		"consumableGroup": "",
 		"consumableType": "beverage",
 		"cost": "20",
 		"description": "<p><span class=\"fontstyle0\">Water which has been cleansed of any contaminants or radiation. Sometimes found in sealed cans or bottles in the wasteland, but often produced by taking water from other sources and boiling or filtering it. Locations with water pumps tend to tap into uncontaminated aquifers deep underground, giving them a consistent supply of clean water highly sought-after by survivors in the wasteland. In places where water is scarce, access to purified water is a precious commodity.</span> </p>",
@@ -25,7 +26,7 @@
 		"rarity": 1,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 2,
 		"weight": 0.5
 	},
 	"type": "consumable"

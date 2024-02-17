@@ -8,7 +8,7 @@
 	"name": "Grilled Radstag",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
 		"cost": "60",
@@ -25,7 +25,7 @@
 		"rarity": 2,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 0,
 		"weight": 1
 	},
 	"type": "consumable"

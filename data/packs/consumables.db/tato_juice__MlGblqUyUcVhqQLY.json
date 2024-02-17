@@ -8,7 +8,7 @@
 	"name": "Tato Juice",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": false,
 		"consumableType": "beverage",
 		"cost": "7",

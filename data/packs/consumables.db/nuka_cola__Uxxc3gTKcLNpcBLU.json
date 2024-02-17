@@ -8,7 +8,7 @@
 	"name": "Nuka-Cola",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": false,
 		"consumableGroup": "",
 		"consumableType": "beverage",

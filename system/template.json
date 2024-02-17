@@ -482,7 +482,7 @@
 			"irradiated": false,
 			"prepared": false,
 			"radiation": 0,
-			"thirstReduction": 1,
+			"thirstReduction": 0,
 			"templates": [
 				"base",
 				"physical"

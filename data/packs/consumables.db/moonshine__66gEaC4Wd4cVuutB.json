@@ -8,7 +8,7 @@
 	"name": "Moonshine",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "beverage",
 		"cost": "30",

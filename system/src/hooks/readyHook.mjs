@@ -12,8 +12,6 @@ export const readyHook = {
 			}
 
 			fallout.APTracker.initialise();
-			fallout.FalloutHovers.loadList();
-
 			fallout.utils.showNewReleaseNotes();
 		});
 	},

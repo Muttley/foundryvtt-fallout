@@ -8,9 +8,10 @@
 	"name": "Dirty Wastelander",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
-		"consumableType": "beverage",
+		"consumableGroup": "",
+		"consumableType": "food",
 		"cost": "10",
 		"description": "<p><span class=\"fontstyle0\">An extremely potent alcoholic beverage, made from a blend of whiskey, Nuka-Cola, and Mutfruit, which has much the same effect as most alcoholic drinks&hellip; just moreso.</span> </p>",
 		"duration": "",
@@ -25,7 +26,7 @@
 		"rarity": 3,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 0,
 		"weight": 1
 	},
 	"type": "consumable"

@@ -61,9 +61,16 @@
 			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.AMMO"}}:</strong>
 			{{ammo}}
 		</p>
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Tear"}}: </strong>{{tear}}</p>
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}: </strong>{{weaponQualities}}</p>
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}:</strong>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Tear"}}:</strong>
+			{{tear}}
+		</p>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.WEAPON_QUALITIES"}}:</strong>
+			{{{listWeaponQualities damage.weaponQuality}}}
+		</p>
+		<p>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}:</strong>
 			{{{listDamageEffects damage.damageEffect}}}
 		</p>
 	{{/if}}

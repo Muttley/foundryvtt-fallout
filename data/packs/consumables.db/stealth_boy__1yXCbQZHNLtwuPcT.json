@@ -8,7 +8,7 @@
 	"name": "Stealth Boy",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "other",
@@ -26,7 +26,7 @@
 		"rarity": 3,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 0,
 		"weight": 1
 	},
 	"type": "consumable"

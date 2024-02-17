@@ -11,7 +11,7 @@ import { DialogD6 } from "../roller/DialogD6.mjs";
 import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
 import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
-import { FalloutHovers } from "../system/FalloutHovers.mjs";
+// import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
 
 import FalloutChat from "../system/FalloutChat.mjs";
@@ -43,7 +43,7 @@ export async function initHook() {
 		compendiums: FalloutCompendiums,
 		Dialog2d20,
 		DialogD6,
-		FalloutHovers,
+		// FalloutHovers,
 		Roller2D20,
 		logger: Logger,
 		macros: FalloutMacros,

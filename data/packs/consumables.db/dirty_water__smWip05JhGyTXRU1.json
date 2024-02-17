@@ -8,7 +8,7 @@
 	"name": "Dirty Water",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": false,
 		"consumableType": "beverage",
 		"cost": "5",

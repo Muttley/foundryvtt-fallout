@@ -8,8 +8,9 @@
 	"name": "Bloatfly Meat",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": "8",
 		"description": "<p><span class=\"fontstyle0\">A rough chunk of meat cut from the body of a dead Bloatfly. Filling and nutritious, but unappetizing even when cooked.</span></p>\n<p><span class=\"fontstyle0\">Bloatfly meat can be cooked to produce Baked Bloatfly.</span> </p>",
@@ -25,7 +26,7 @@
 		"rarity": 0,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 0,
 		"weight": 0
 	},
 	"type": "consumable"

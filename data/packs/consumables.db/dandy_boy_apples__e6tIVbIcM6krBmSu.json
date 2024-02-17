@@ -8,7 +8,7 @@
 	"name": "Dandy Boy Apples",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
 		"cost": "7",
@@ -25,7 +25,7 @@
 		"rarity": 0,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 0,
 		"weight": 0
 	},
 	"type": "consumable"

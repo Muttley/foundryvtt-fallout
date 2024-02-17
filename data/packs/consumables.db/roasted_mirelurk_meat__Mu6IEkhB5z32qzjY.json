@@ -8,7 +8,7 @@
 	"name": "Roasted Mirelurk Meat",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
 		"cost": "40",
@@ -25,7 +25,7 @@
 		"rarity": 2,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 1,
+		"thirstReduction": 0,
 		"weight": 0
 	},
 	"type": "consumable"

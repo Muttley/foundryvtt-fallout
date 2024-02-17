@@ -1,6 +1,7 @@
 # v11.4.0
 
 ## Enhancements
+- [#143] Allow configuration of thirst reduction on food consumables in order to handle Soups/Stews
 - [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
 - [#149] Add default icons for all item types
 - [#150] Add new default tokens for all actor types

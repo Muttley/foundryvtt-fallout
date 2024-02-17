@@ -8,7 +8,7 @@
 	"name": "Beer",
 	"system": {
 		"addiction": 0,
-		"addictive": "",
+		"addictive": false,
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "beverage",
