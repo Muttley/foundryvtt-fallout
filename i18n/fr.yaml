@@ -323,13 +323,13 @@ FALLOUT.TEMPLATES.Re_roll: Relancer
 FALLOUT.TEMPLATES.RemoveSettler: Supprimer le colon
 FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
-FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Resistances: Résistances
+FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
-FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.Skill: Compétence
+FALLOUT.TEMPLATES.SKILL: COMPETENCE
 FALLOUT.TEMPLATES.SKILLS: COMPETENCES
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: État
@@ -351,18 +351,44 @@ FALLOUT.TEMPLATES.Use_Intelligence: Utiliser Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Utiliser Chance
 FALLOUT.TEMPLATES.Use_Perception: Utiliser Perception
 FALLOUT.TEMPLATES.Use_Strength: Utiliser Force
-FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
 FALLOUT.TEMPLATES.Weapon_Qualities: Qualités de l'arme
+FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALITÉS D'ARME
 FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
 FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
+FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
+FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
+FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
+FALLOUT.TOOLTIPS.DamageEffect.freeze: Enemies hit by this attack will be Frozen if the number of Effects rolled are equal or more than half the target’s END (or half the target’s BODY for Creatures). A Frozen creature cannot take actions on its next turn.
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "If one or more Effects are rolled, the target suffers the weapon’s damage again at the end of their next and subsequent turns, for a number of rounds equal to the number of Effects rolled. The target can spend a major action to make a test to stop persistent damage early, with the difficulty equal to the number of Effects rolled, and the attribute + skill chosen by the GM. Some Persistent weapons may inflict a different type of damage to the weapon, and where this is the case, it will be noted in brackets, for example: Persistent (Poison)."
+FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignore X points of the target’s DR for each Effect rolled, where X is the rating of this damage effect.
+FALLOUT.TOOLTIPS.DamageEffect.radioactive: For every Effect rolled, the target also suffers 1 point of radiation damage. This radiation damage is totalled and applied separately, after a character has suffered the normal damage from the attack.
+FALLOUT.TOOLTIPS.DamageEffect.spread: For each Effect rolled, your attack inflicts one additional hit on the target. Each additional hit inflicts half the rolled damage (rounded down) and hits a random location even if a specific location was targeted for the initial attack.
+FALLOUT.TOOLTIPS.DamageEffect.stun: If one or more Effects are rolled, the target cannot take their normal actions on their next turn. A stunned character or creature can still spend AP to take additional actions as normal.
+FALLOUT.TOOLTIPS.DamageEffect.vicious: The attack inflicts +1 damage for each Effect rolled.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
+FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: The weapon consumes ammo at a much higher rate than other weapons. Each time the weapon is fired, it spends X ammo, rather than 1. In addition, extra damage requires spending X ammo per +1CD, with a maximum number of CD equal to the weapon’s Fire Rate. Additional uses of ammunition, such as the Burst damage effect, also spend X ammo for every 1 ammo that would normally be spent.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quand vous portez une attaque avec une arme à Zone d'impact, vous ne prenez pas pour cible un seul adversaire. Au lieu de cela, choisissez une seule zone dans votre champ de vision et faites le test de compétence approprié pour attaquer, avec une difficulté de base de 2 (ajustée par la portée normalement). Si vous réussissez, toutes les créatures (et autres cibles pouvant subir des dégâts) présentes dans la zone subissent les dégâts de l'arme. Si vous échouez, votre attaque mal ciblée est moins efficace: ne lancez que la moitié des @fos[DC] de l'arme pour déterminer les dégâts infligés aux créatures dans la zone ciblée et ignorez les effets de dégâts normaux de l'arme."
-FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Une arme de combat rapproché est facile à utiliser à proximité de l'ennemi et ne subit pas d'augmentation de difficulté si elle est employée quand un ennemi est à portée de main.
+FALLOUT.TOOLTIPS.WeaponQuality.bombard: "The weapon can deliver a series of explosions over a wide area. This functions identically to the Blast quality, with one addition: When an attack is made with the weapon, you may spend additional ammunition to target additional zones. Each additional zone requires that 2 ammunition be spent, and additional zones must be adjacent to the initial target zone. Ammunition spent to target additional zones is limited by the weapon’s Fire Rate."
+FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Une arme avec la qualité Dissimulé est petite ou facile à dissimuler sur vous pour une autre raison. Les ennemis ne voient l'arme que si vous êtes en train de la manier, ou s'ils vous fouillent méthodiquement et réussissent un test de PER + Survie avec une difficulté de 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: La difficulté de tout test de compétence pour guérir les blessures infligées par une arme Invalidante augmente de +1.
+FALLOUT.TOOLTIPS.WeaponQuality.delay_x: The weapon operates on a timer or fuse, and will not detonate immediately. A Thrown Delay weapon can be thrown normally to the target location, while other Delay weapons may be placed in their desired location. A Delay (1) weapon detonates at the start of the first round after it is thrown or otherwise triggered. A Delay (2) weapon detonates at the start of the round after that, and so on.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Les armes Gatling dépensent des munitions à 10 fois le rythme normal ; quand vous devriez dépenser 1 munition, une arme Gatling en dépense une rafale de 10 à la place. Chaque fois que vous dépensez des munitions pour augmenter les dégâts de cette arme, ajoutez +2 @fos[DC] par rafale de 10 (jusqu'à un nombre maximum de rafales égal à la cadence de tir de l'arme) au lieu de +1 @fos[DC] par tir."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: When making an attack with an Inaccurate weapon, you gain no benefit from the Aim minor action. A weapon may not be both Accurate and Inaccurate.
+FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to make an attack at its ideal range.
+FALLOUT.TOOLTIPS.WeaponQuality.mine: When a Mine is placed onto a surface and primed, it becomes a dangerous object, inflicting its damage upon anyone who comes within Reach of it (and upon additional characters, if it has the Blast quality).
+FALLOUT.TOOLTIPS.WeaponQuality.night_vision: The sights of a weapon with Night Vision have been made to allow you to see more clearly in the dark. When you Aim with a Night Vision weapon, you ignore any increase in the difficulty of an attack due to darkness.
+FALLOUT.TOOLTIPS.WeaponQuality.parry: When an enemy attempts a melee attack against you, and you are wielding a Parry weapon, you may spend 1 AP to add +1 to your Defense against that attack.
+FALLOUT.TOOLTIPS.WeaponQuality.recon: When you Aim with a Recon weapon, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
+FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
@@ -402,7 +428,7 @@ FALLOUT.WEAPONS.damageEffect.breaking: Destructeur
 FALLOUT.WEAPONS.damageEffect.burst: Rafale
 FALLOUT.WEAPONS.damageEffect.freeze: Gel
 FALLOUT.WEAPONS.damageEffect.persistent: Persistant
-FALLOUT.WEAPONS.damageEffect.piercing_x: Perforant
+FALLOUT.WEAPONS.damageEffect.piercing_x: Piercing
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
 FALLOUT.WEAPONS.damageEffect.spread: Zone
 FALLOUT.WEAPONS.damageEffect.stun: Étourdissant
@@ -412,22 +438,25 @@ FALLOUT.WEAPONS.damageType.physical: balistiques
 FALLOUT.WEAPONS.damageType.poison: Poison
 FALLOUT.WEAPONS.damageType.radiation: Radiation
 FALLOUT.WEAPONS.weaponQuality.accurate: Précis
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
 FALLOUT.WEAPONS.weaponQuality.blast: Zone d'impact
-FALLOUT.WEAPONS.weaponQuality.close_quarters: Combat rapproché
+FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
 FALLOUT.WEAPONS.weaponQuality.concealed: Dissimulé
 FALLOUT.WEAPONS.weaponQuality.debilitating: Invalidant
+FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprécis
 FALLOUT.WEAPONS.weaponQuality.limited: Limité
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
-FALLOUT.WEAPONS.weaponQuality.night_vision: Vision nocturne
+FALLOUT.WEAPONS.weaponQuality.night_vision: Night Vision
 FALLOUT.WEAPONS.weaponQuality.parry: Parade
 FALLOUT.WEAPONS.weaponQuality.recon: Reco
 FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
 FALLOUT.WEAPONS.weaponQuality.slow_load: Chargement lent
 FALLOUT.WEAPONS.weaponQuality.suppressed: Silencieux
 FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
-FALLOUT.WEAPONS.weaponQuality.two_handed: Deux mains
+FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
