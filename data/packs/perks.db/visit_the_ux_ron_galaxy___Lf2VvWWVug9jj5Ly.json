@@ -1,0 +1,22 @@
+{
+	"_id": "Lf2VvWWVug9jj5Ly",
+	"_key": "!items!Lf2VvWWVug9jj5Ly",
+	"effects": [
+	],
+	"folder": "y6eI37QhWZMaqeyZ",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Visit the Ux-Ron Galaxy!",
+	"system": {
+		"description": "<p>Spend 1 Luck point to avoid all Energy damage from a single attack</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}
