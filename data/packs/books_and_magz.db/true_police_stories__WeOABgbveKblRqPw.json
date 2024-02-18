@@ -1,0 +1,25 @@
+{
+	"_id": "WeOABgbveKblRqPw",
+	"_key": "!items!WeOABgbveKblRqPw",
+	"effects": [
+	],
+	"folder": "Yz1YYU8QjGg1Lrdb",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "True Police Stories",
+	"system": {
+		"cost": "0",
+		"description": "<p>True Police Stories was a pre-War pulp magazine boasting &ldquo;20 pages&mdash;a single issue&rdquo; that was dedicated to editorialized stories on famous criminal investigations and busts of the time.</p>\n<ul>\n<li><strong>Perk:</strong> Once, when you roll the damage of an attack, you may spend a Luck point to turn up to three @fos[DC] to any face, rather than rolling them. If you learn this perk, you may do this once per scene.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.DC6xyEVANOUPyy1I]{True Police Stories}</p>",
+		"effect": "<p>Once, when you roll the damage of an attack, you may spend a Luck point to turn up to three @fos[DC] to any face, rather than rolling them.</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

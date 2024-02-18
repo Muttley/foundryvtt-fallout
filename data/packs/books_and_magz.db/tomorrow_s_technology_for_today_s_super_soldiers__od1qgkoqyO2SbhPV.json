@@ -1,0 +1,25 @@
+{
+	"_id": "od1qgkoqyO2SbhPV",
+	"_key": "!items!od1qgkoqyO2SbhPV",
+	"effects": [
+	],
+	"folder": "KhW0UE056TAgf0NU",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Tomorrow's Technology for Today's Super Soldiers",
+	"system": {
+		"cost": "0",
+		"description": "<p>An informational magazine covering topics such as rocket science, robotics, laser technology, and other cutting-edge fields of science and technology.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.eTkUS79PttpiHVm0]{Tomorrow's Technology for Today's Super Soldiers}</p>",
+		"effect": "<p>After spending a fusion core charge, you may spend 1 Luck point: if you do so the charge is not spent</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "Tesla Science Magazine",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

@@ -1,0 +1,25 @@
+{
+	"_id": "Xh4PnVNi5xJrCtZr",
+	"_key": "!items!Xh4PnVNi5xJrCtZr",
+	"effects": [
+	],
+	"folder": "KhW0UE056TAgf0NU",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Rocket Science for Toddlers",
+	"system": {
+		"cost": "0",
+		"description": "<p>An informational magazine covering topics such as rocket science, robotics, laser technology, and other cutting-edge fields of science and technology.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.3gc78PRC1se8qefU]{Rocket Science for Toddlers}</p>",
+		"effect": "<p>+2CD damage inflicted by one attack with a Blast weapon</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "Tesla Science Magazine",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}
