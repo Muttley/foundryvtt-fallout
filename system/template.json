@@ -69,7 +69,6 @@
 				"mod": 0,
 				"value": 0
 			},
-			"powerLevel": "normal",
 			"resistance": {
 				"energy": {
 					"locations": "",
@@ -92,7 +91,8 @@
 				"base",
 				"encumbrance",
 				"valuables",
-				"body"
+				"body",
+				"npc_shared"
 			]
 		},
 		"npc": {
@@ -103,7 +103,8 @@
 				"settler",
 				"stats",
 				"valuables",
-				"body"
+				"body",
+				"npc_shared"
 			]
 		},
 		"robot": {
@@ -317,6 +318,9 @@
 					"total": 0,
 					"value": 0
 				}
+			},
+			"npc_shared": {
+				"category": "normal"
 			},
 			"settler": {
 				"settlement": {

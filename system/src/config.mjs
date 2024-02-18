@@ -99,7 +99,7 @@ FALLOUT.CREATURE_SKILLS = {
 	other: "FALLOUT.CREATURE.other",
 };
 
-FALLOUT.CREATURE_TYPES = {
+FALLOUT.CREATURE_CATEGORIES = {
 	normal: "FALLOUT.NPC_TYPES.normal",
 	mighty: "FALLOUT.NPC_TYPES.mighty",
 	legendary: "FALLOUT.NPC_TYPES.legendary",
@@ -185,7 +185,7 @@ FALLOUT.JOURNAL_UUIDS = {
 	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
 };
 
-FALLOUT.NPC_TYPES = {
+FALLOUT.NPC_CATEGORIES = {
 	normal: "FALLOUT.NPC_TYPES.normal",
 	notable: "FALLOUT.NPC_TYPES.notable",
 	major: "FALLOUT.NPC_TYPES.major",

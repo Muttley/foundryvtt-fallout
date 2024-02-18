@@ -2,6 +2,60 @@ const LBS_TO_KGS = 0.4535924;
 
 export default class FalloutUtils {
 
+	static calculateXpReward(level=1, type="normal") {
+		if (level <= 0) return 0;
+
+		let base;
+		let levelAdjust;
+		let perLevel;
+
+		switch (type) {
+			case "normal":
+				perLevel = 7;
+
+				if (level < 8) {
+					base = 10;
+					levelAdjust = 1;
+				}
+				else {
+					base = 60;
+					levelAdjust = 8;
+				}
+
+				break;
+			case "mighty":
+			case "notable":
+				perLevel = 14;
+
+				if (level < 8) {
+					base = 20;
+					levelAdjust = 1;
+				}
+				else {
+					base = 120;
+					levelAdjust = 8;
+				}
+
+				break;
+			case "legendary":
+			case "major":
+				perLevel = 21;
+
+				if (level < 8) {
+					base = 30;
+					levelAdjust = 1;
+				}
+				else {
+					base = 180;
+					levelAdjust = 8;
+				}
+
+				break;
+		}
+
+		return base + (perLevel * (level - levelAdjust));
+	}
+
 	static lbsToKgs(value) {
 		return value * LBS_TO_KGS;
 	}

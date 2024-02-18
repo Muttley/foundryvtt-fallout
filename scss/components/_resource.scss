@@ -7,6 +7,7 @@ input[type="number"] {
 	&.underline {
 		background-color: unset;
 		border: unset;
+		text-overflow: ellipsis;
 		border-bottom: 1px dashed $c-font-prim;
 		color: $c-font-prim;
 		&::placeholder {

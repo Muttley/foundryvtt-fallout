@@ -45,6 +45,7 @@ export default class FalloutActor extends Actor {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
 
+
 	/** @override */
 	prepareData() {
 		super.prepareData();

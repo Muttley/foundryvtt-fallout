@@ -19,14 +19,33 @@
 				/>
 			</h1>
             <span class="flex align-mid">
-                <input
-					class="underline"
-					name="system.origin"
-					placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
-					type="text"
-					value="{{system.origin}}"
-                    data-dtype="String"
-				/>
+				<div>
+					<input
+						class="underline"
+						name="system.origin"
+						placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
+						type="text"
+						value="{{system.origin}}"
+						data-dtype="String"
+					/>
+				</div>
+				{{#if hasCategory}}
+					<div>
+						{{#select system.category}}
+							<select name="system.category">
+								{{#if isCreature}}
+									{{#each FALLOUT.CREATURE_CATEGORIES as |item key|}}
+										<option value="{{key}}">{{localize item}}</option>
+									{{/each}}
+								{{else}}
+									{{#each FALLOUT.NPC_CATEGORIES as |item key|}}
+										<option value="{{key}}">{{localize item}}</option>
+									{{/each}}
+								{{/if}}
+							</select>
+						{{/select}}
+					</div>
+				{{/if}}
             </span>
         </div>
 

@@ -33,7 +33,6 @@ export default class Update_231230_1 extends FalloutUpdateBase {
 						itemName: itemData.name,
 					}
 				);
-
 			}
 
 			ui.notifications.warn(message, {permanent: true});

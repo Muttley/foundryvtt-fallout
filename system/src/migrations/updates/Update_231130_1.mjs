@@ -4,7 +4,6 @@ export default class Update_231130_1 extends FalloutUpdateBase {
 
 	static version = 231130.1;
 
-
 	async updateActor(actorData) {
 		// These values are either unnused, dynamically calculated or created
 		// by item pollution
