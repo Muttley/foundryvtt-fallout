@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "The Lair of the Virgin Eaters",
 	"system": {
-		"cost": "0",
+		"cost": "100",
 		"description": "<p>A series of comic books published by Hubris Comics before the Great War. The comics depict the actionpacked adventures of the title character in a prehistoric world.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from <strong>once</strong>. If you ater learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.KEpm4gH8RvMjhpoO]{The Lair of the Virgin Eaters}</p>",
 		"effect": "<p>Gain +10 Carry weight for one scene</p>",
 		"favorite": false,
@@ -16,7 +16,7 @@
 		"perk": "",
 		"publication": "Grognak the Barbarian",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": 3,
 		"source": "",
 		"stashed": false,
 		"weight": 0

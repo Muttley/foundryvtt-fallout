@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "Avoid Those Pesky Gun Laws!",
 	"system": {
-		"cost": "0",
+		"cost": "100",
 		"description": "<p>A magazine series catering to weapons enthusiasts, with articles dedicated to hunting, weapons, gun law, and the portrayal of practical use of firearms.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.Zl8Mt7ll7IqbgFq2]{Avoid Those Pesky Gun Laws!}</p>",
 		"effect": "<p>When you salvage a weapon, gain 2 AP which may only be spent to salvage additional units of materials</p>",
 		"favorite": false,
@@ -16,7 +16,7 @@
 		"perk": "",
 		"publication": "Guns and Bullets",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": 3,
 		"source": "",
 		"stashed": false,
 		"weight": 0

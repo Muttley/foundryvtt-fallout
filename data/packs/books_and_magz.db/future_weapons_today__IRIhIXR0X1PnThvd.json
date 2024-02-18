@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "Future Weapons Today",
 	"system": {
-		"cost": "0",
+		"cost": "100",
 		"description": "<p>A magazine for enthusiasts of energy weaponry, featuring articles on new technologies, reviews of new weapons, and true stories about energy weapons in action.</p>\n<ul>\n<li><strong>Perk:</strong> Once, when you make an attack with an Energy Weapon, you may overcharge it. Increase the damage by +2CD for that attack. The weapon cannot be used to make an attack in the turn after an overcharged attack as it cools down. If you later learn this perk, you may overcharge an Energy Weapon once per scene.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.LJXpGjoI1HYU6Heb]{Future Weapons Today}</p>",
 		"effect": "<p>Once, when you make an attack with an Energy Weapon, you may overcharge it. Increase the damage by +2CD for that attack. The weapon cannot be used to make an attack in the turn after an overcharged attack as it cools down.</p>",
 		"favorite": false,
@@ -16,7 +16,7 @@
 		"perk": "",
 		"publication": "",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": 3,
 		"source": "",
 		"stashed": false,
 		"weight": 0
