@@ -1,0 +1,22 @@
+{
+	"_id": "nWVbU3dqMxeoxPoT",
+	"_key": "!items!nWVbU3dqMxeoxPoT",
+	"effects": [
+	],
+	"folder": "yqwsUbSI5liyBtpj",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "FH 5-09 Look Better in Black",
+	"system": {
+		"description": "<p>Once, when using a Stealth Boy, it lasts for one additional turn</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

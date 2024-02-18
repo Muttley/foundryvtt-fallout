@@ -1,0 +1,25 @@
+{
+	"_id": "vAtCC2CaGrGOgnSL",
+	"_key": "!items!vAtCC2CaGrGOgnSL",
+	"effects": [
+	],
+	"folder": "u8hGyjsUyuO3xszc",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "FH 5-10 Tiptoe Through the Tulips",
+	"system": {
+		"cost": "0",
+		"description": "<p>The U.S. Covert Operations Manual is a training handbook produced by the Department of the Army to train its personnel in the art of subterfuge. The manuals were not intended for public circulation and were marked &ldquo;Authorized Eyes Only.&rdquo; This hasn&rsquo;t stopped them being found, read, and scattered across the wastelands.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.xBewaCbKbQO5BQKp]{FH 5-10 Tiptoe Through the Tulips}</p>",
+		"effect": "<p>When you spend a Luck point to re-roll a d20 on an AGI test, instead count that die as if it had rolled a 1</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "U.S. Covert Operations Manual",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}
