@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "15",
+		"cost": 15,
 		"description": "<p><span class=\"fontstyle0\">A piece of Bloatfly meat, cooked with dry heat. The resultant food is unappetizing but filling and helps absorb radioactive contamination in the body for a while after eating.</span> </p>",
 		"duration": "",
 		"effect": "<p>+2 Radiation damage resistance</p>\n<p>&nbsp;</p>",

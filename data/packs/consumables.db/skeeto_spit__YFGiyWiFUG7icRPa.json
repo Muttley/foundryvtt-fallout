@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "chem",
-		"cost": "40",
+		"cost": 40,
 		"description": "<p>Derived from the secretions of a Bloodbug, and the curative properties of some wasteland plants, Skeeto Spit is a wasteland remedy which dulls the user&rsquo;s ability to feel pain. It&rsquo;s effective, lasts a reasonable amount of time, and is non-addictive, but it normally has to be homemade as it isn&rsquo;t generally produced in large quantities.</p>",
 		"duration": "lasting",
 		"effect": "<p>+2 Max HP</p>",

@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": "10mm Round",
 	"system": {
-		"cost": "2",
+		"cost": 2,
 		"description": "<p><span class=\"fontstyle0\">One of the most common types of pistol round found in the wastelands, manufactured in vast quantities before the Great War to accompany the large numbers of 10mm pistols they were producing as sidearms for soldiers, and as personal defense weapons for civilians.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 8+4dc # 10mm Round]]</p>",
 		"effect": "",
 		"favorite": false,

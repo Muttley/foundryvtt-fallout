@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "30",
+		"cost": 30,
 		"description": "",
 		"effect": "<p>Melee weapon</p>\n<p>Deals 4 @fos[DC] Piercing 1 physical damage</p>\n<p>&nbsp;</p>",
 		"favorite": false,

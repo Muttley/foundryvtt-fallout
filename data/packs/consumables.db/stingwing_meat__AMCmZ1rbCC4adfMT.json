@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "30",
+		"cost": 30,
 		"description": "<p><span class=\"fontstyle0\">Meat taken from the body of a stingwing, a mutated scorpionfly with a nasty sting. Doesn&rsquo;t look especially tasty, but it cooks reasonably well once you&rsquo;ve pried the exoskeleton off.</span></p>\n<p><span class=\"fontstyle0\">Stingwing meat can be cooked to create Stingwing Filet.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

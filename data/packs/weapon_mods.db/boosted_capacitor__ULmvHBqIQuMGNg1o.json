@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "94",
+		"cost": 94,
 		"description": "",
 		"effect": "<p>+1 @fos[DC]</p>\n<p>&nbsp;</p>",
 		"favorite": false,

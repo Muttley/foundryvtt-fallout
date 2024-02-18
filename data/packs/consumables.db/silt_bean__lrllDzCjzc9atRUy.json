@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "6",
+		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">Growing from the vine of a silt bean plant, silt beans are red-brown pods of legumes growing in the wilderness. They&rsquo;re not easily cultivated for farming, though many have tried. The beans are an ingredient in a few recipes, such as radstag stew.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

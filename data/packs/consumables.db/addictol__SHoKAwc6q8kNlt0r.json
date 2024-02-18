@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "chem",
-		"cost": "125",
+		"cost": 125,
 		"description": "<p>A powerful and effective pre-War medicine which cleanses the body of the effects of addiction and the withdrawal symptoms that accompany it. It doesn&rsquo;t, however, prevent subsequent addictions, especially in the cases of long-term or habitual drug abuse. It can take some time to work, especially in severe cases, and tends to have a few side-effects, such as nausea and dizziness, while it is taking effect.</p>",
 		"duration": "instant",
 		"effect": "<p>Removes all addictions</p>",

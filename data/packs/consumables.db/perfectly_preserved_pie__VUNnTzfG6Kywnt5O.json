@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "20",
+		"cost": 20,
 		"description": "<p><span class=\"fontstyle0\">Contained within the storage of a Port-A-Diner, this slice of fruit pie has been shielded from the radioactive environment since before the Great War, meaning that isn&rsquo;t irradiated at all. Copious quantities of preservatives were used in making the pie, so it&rsquo;s still as edible as it was the day it was made.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

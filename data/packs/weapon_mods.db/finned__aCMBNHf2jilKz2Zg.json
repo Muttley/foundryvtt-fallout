@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "15",
+		"cost": 15,
 		"description": "",
 		"effect": "<p>+1 @fos[DC] damage</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
 		"favorite": false,

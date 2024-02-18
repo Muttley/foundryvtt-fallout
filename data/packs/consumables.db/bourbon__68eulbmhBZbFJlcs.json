@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "beverage",
-		"cost": "7",
+		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">A distinctly American type of whiskey, bourbon is a barrel-aged, distilled spirit made mainly of corn. PreWar, those who favored it tended to get a reputation as being tough or rugged.</span> </p>",
 		"duration": "",
 		"effect": "<p>Reroll 1d20 on END tests</p>",

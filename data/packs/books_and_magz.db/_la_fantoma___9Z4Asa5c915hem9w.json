@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "¡La Fantoma!",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>An issue of a pre-War comic book, detailing the adventures of &iexcl;La Fantoma!, a master of stealth and infiltration.</p>\n<ul>\n<li><strong>Perk:</strong> When you succeed at a <strong>Sneak</strong> test to avoid notice, you may spend 1 AP to create a distraction somewhere within Medium range; the character who failed the opposed test to detect you heads towards the distraction you created. If you learn this perk, you may use it once per scene.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.wUoc5IDZQ0ye1TDw]{&iexcl;La Fantoma!}</p>",
 		"effect": "<p>When you succeed at a&nbsp;<strong>Sneak</strong> test to avoid notice, you may spend 1 AP to create a distraction somewhere within Medium range; the character who failed the opposed test to detect you heads towards the distraction you created.</p>",
 		"favorite": false,

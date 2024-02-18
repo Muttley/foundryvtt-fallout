@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "50",
+		"cost": 50,
 		"description": "",
 		"effect": "<p>Gain Accurate</p>\n<p>Gain Night Vision</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
 		"favorite": false,

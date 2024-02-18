@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "10",
+		"cost": 10,
 		"description": "<p><span class=\"fontstyle0\">A can containing a complete meal: beans stewed in a tomato sauce with chunks of cured pork belly. The tin may be slightly rusted, and the label has partly fallen off due to age and water damage, but the contents are still as edible as ever, though moreso if warmed up first.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "U.S. Army Goes to Space",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>An informational magazine covering topics such as rocket science, robotics, laser technology, and other cutting-edge fields of science and technology.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.lkAJKVOfU1DfjLU9]{U.S. Army Goes to Space}</p>",
 		"effect": "<p>On a single attack with an Energy weapon, you inflict a Critical Hit if you inflict 3 or more damage after damage resistance (rather than the normal 5 or more damage)</p>",
 		"favorite": false,

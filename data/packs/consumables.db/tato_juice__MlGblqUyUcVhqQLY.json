@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": false,
 		"consumableType": "beverage",
-		"cost": "7",
+		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">Juice made from pressing Tatos. Despite the unpleasant taste, Tato juice is a fine way to prepare for vigorous action, as it allows the drinker to dig more deeply into reserves of stamina and push themselves further.</span> </p>",
 		"duration": "",
 		"effect": "<p>Group AP pool can hold 1 AP more than normal</p>",

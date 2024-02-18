@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "5",
+		"cost": 5,
 		"description": "",
 		"effect": "<p>Melee weapon,</p>\n<p>Deals @fos[DC] of Physical damage equal to Fire Rate</p>\n<p>&nbsp;</p>",
 		"favorite": false,

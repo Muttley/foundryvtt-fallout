@@ -12,7 +12,7 @@
 		"alcoholic": false,
 		"consumableGroup": "",
 		"consumableType": "beverage",
-		"cost": "8",
+		"cost": 8,
 		"description": "<p><span class=\"fontstyle0\">Juice made from pressing the pulp of a mutfruit. A sharp and invigorating drink, which wakes up the mind and helps get the body moving.</span> </p>",
 		"duration": "",
 		"effect": "<p>Reroll 1d20 on all AGI tests</p>",

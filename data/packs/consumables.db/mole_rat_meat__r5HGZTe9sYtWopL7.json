@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "5",
+		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A chunk of meat taken from a dead mole rat.</span></p>\n<p><span class=\"fontstyle0\">Mole rat meat can be cooked to make Mole Rat Chunks.</span></p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

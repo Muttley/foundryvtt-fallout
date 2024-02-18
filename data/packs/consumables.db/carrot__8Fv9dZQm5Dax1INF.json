@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "3",
+		"cost": 3,
 		"description": "<p><span class=\"fontstyle0\">A slightly mutated form of the common, orange root vegetable. Easy enough to grow in decent quantities, and useful for a variety of recipes, small wasteland farms often include a few carrot patches.</span></p>\n<p><span class=\"fontstyle0\">Carrot is a component of several different recipes for food items. Carrots grown in non-irradiated conditions (such as within vaults or similar locations) are not irradiated but increase their rarity by +1.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

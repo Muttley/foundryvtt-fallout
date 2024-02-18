@@ -12,7 +12,7 @@
 		"alcoholic": false,
 		"consumableGroup": "",
 		"consumableType": "beverage",
-		"cost": "50",
+		"cost": 50,
 		"description": "<p><span class=\"fontstyle0\">A blood bag filled with discolored&mdash;often green&mdash; blood-like fluid. About as useful a beverage as a normal blood pack, but highly irradiated.</span></p>\n<ul>\n<li><span class=\"fontstyle3\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Roll 2 @fos[DC]</span><span class=\"fontstyle4\">&nbsp;</span><span class=\"fontstyle0\">when determining if the drink </span><span class=\"fontstyle0\">inflicts Radiation damage, rather than 1 @fos[DC]</span><span class=\"fontstyle0\">. You </span><span class=\"fontstyle0\">suffer 1 Radiation damage, ignoring damage resistance, for each Effect rolled.</span> </li>\n</ul>",
 		"duration": "",
 		"effect": "<p>Roll 2 @fos[DC] rather than 1 for determining Radiation damage when consumed</p>",

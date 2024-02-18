@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "22",
+		"cost": 22,
 		"description": "",
 		"effect": "<p>+1 @fos[DC]</p>\n<p>On a successful attack, spend 2 AP to disarm opponent, knocking one held weapon away.</p>\n<p>&nbsp;</p>",
 		"favorite": false,

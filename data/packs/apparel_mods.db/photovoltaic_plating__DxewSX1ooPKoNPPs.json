@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "10",
+		"cost": 10,
 		"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
 		"effect": "<p>+1 AP at the start of a scene if in direct sunlight (only applies once)</p>",
 		"favorite": false,

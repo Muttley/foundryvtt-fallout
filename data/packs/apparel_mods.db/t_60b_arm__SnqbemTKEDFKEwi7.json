@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "35",
+		"cost": 35,
 		"description": "",
 		"effect": "",
 		"favorite": false,

@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "33",
+		"cost": 33,
 		"description": "<p><span class=\"fontstyle0\">Chunks of iguana meat on a wooden skewer, which have then been cooked. Not the best meal, but it&rsquo;ll do the trick if you&rsquo;re desperate or need to secure the loyalty of a canine companion.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

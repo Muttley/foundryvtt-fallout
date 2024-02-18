@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": ".50 Round",
 	"system": {
-		"cost": "4",
+		"cost": 4,
 		"description": "<p><span class=\"fontstyle0\">Large, high-powered, high-performance rounds used only in the most powerful rifles. These rounds were normally used for heavy machine guns and anti-materiel rifles pre-War, so supplies of them tend to be scarce unless there&rsquo;s a military base nearby. A shot from one of these will make a mess of anything it hits, but you need to make every shot count.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 4+2dc # .50 Round]]</p>",
 		"effect": "",
 		"favorite": false,

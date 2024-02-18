@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "12",
+		"cost": 12,
 		"description": "<p><span class=\"fontstyle0\">Cuts of mongrel dog meat cooked to make them more nutritious and edible.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

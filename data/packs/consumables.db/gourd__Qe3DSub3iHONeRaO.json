@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "6",
+		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">A large edible fruit, which is fleshy with a hard skin, like a pumpkin. The pulp inside can be scooped out and eaten or used in cooking, while the outer skin is often carved and used as decoration.</span></p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "other",
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>This delivery mechanism allows the contents of a super Stimpak to be dispersed into an aerosol cloud, providing a burst of medicinal vapor over a small area.</p>\n<ul>\n<li><strong>Use:</strong> When deployed, using the Interact minor action, it produces a cloud which immediately heals 4 HP on everyone (other than robots) within Close range. One super Stimpak is consumed every time the Stimpak diffuser is used.</li>\n</ul>",
 		"duration": "Instant",
 		"effect": "<p>Heals 4 HP to all within Close range</p>",

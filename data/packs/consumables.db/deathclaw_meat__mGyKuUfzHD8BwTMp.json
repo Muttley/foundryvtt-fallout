@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "110",
+		"cost": 110,
 		"description": "<p><span class=\"fontstyle0\">A cut of meat from a deathclaw. Dangerous to obtain, as it can only be taken from a dead deathclaw or someone who killed a deathclaw, but valuable as they can be extremely nutritious, especially when properly prepared.</span></p>\n<p><span class=\"fontstyle0\">Deathclaw meat can be cooked to produce deathclaw steak.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

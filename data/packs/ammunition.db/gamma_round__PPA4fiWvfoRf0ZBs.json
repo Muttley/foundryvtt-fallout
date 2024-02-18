@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": "Gamma Round",
 	"system": {
-		"cost": "10",
+		"cost": 10,
 		"description": "<p><span class=\"fontstyle0\">A large, plastic-coated battery, capable of containing the charge needed to power a Gamma Gun.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 4+2dc # Gamma Round]]</p>",
 		"effect": "",
 		"favorite": false,

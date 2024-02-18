@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "Massachusetts Surgical Journal",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>A periodical medical journal originating from preWar Massachusetts, a region now known as the Commonwealth. It contains detailed discussions of advances in medical science and technology, published studies on unusual diseases, and a host of other useful medical knowledge.</p>\n<p><strong>Perk:</strong> Once, when you provide medical attention to another character and assist their END + Survival test to heal Injuries, you may treat your assistance die as if it had rolled a 1. If you learn this perk, you may do this once per session.</p>\n<p>@UUID[Compendium.fallout.perks.Item.scI8HRzH0QjDb1bh]{Massachusetts Surgical Journal}</p>",
 		"effect": "<p>Once, when you provide medical attention to another character and assist their <strong>END + Survival </strong>test to heal Injuries, you may treat your assistance die as if it had rolled a 1.&nbsp;</p>",
 		"favorite": false,

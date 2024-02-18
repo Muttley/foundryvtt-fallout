@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "FH 5-06 Squeaky Floorboard, Sudden Death",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>The U.S. Covert Operations Manual is a training handbook produced by the Department of the Army to train its personnel in the art of subterfuge. The manuals were not intended for public circulation and were marked &ldquo;Authorized Eyes Only.&rdquo; This hasn&rsquo;t stopped them being found, read, and scattered across the wastelands.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.DHdPahzQ9HMZ0FXb]{FH 5-06 Squeaky Floorboard, Sudden Death}</p>",
 		"effect": "<p>Once, when you suffer one or more Complications on a Sneak test, ignore the complications</p>",
 		"favorite": false,

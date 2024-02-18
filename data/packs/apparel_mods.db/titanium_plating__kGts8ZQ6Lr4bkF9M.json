@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "10",
+		"cost": 10,
 		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
 		"effect": "<p>+1 HP to Armor Piece (+2 to Torso)</p>",
 		"favorite": false,

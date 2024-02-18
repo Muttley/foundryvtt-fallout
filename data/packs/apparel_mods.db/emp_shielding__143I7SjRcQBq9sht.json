@@ -10,7 +10,7 @@
 		"apparelType": "clothing",
 		"attachable": true,
 		"attached": false,
-		"cost": "20",
+		"cost": 20,
 		"description": "",
 		"effect": "<p>+2 Energy damage resistance</p>",
 		"favorite": false,

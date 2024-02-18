@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "food",
-		"cost": "10",
+		"cost": 10,
 		"description": "<p><span class=\"fontstyle0\">An extremely potent alcoholic beverage, made from a blend of whiskey, Nuka-Cola, and Mutfruit, which has much the same effect as most alcoholic drinks&hellip; just moreso.</span> </p>",
 		"duration": "",
 		"effect": "<p>Reduce difficulty of all STR tests by 1 and increase difficulty of all INT tests by 2 (in total)</p>",

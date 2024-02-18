@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "35",
+		"cost": 35,
 		"description": "<p><span class=\"fontstyle0\">A cooked piece of stingwing meat. Not the most appetizing of foods, but surprisingly useful for those surviving in the wastelands, as it can sharpen the senses and make you feel more aware of your surroundings.</span> </p>",
 		"duration": "",
 		"effect": "<p>May re-roll 1d20 on all PER tests until end of next scene</p>\n<p>&nbsp;</p>",

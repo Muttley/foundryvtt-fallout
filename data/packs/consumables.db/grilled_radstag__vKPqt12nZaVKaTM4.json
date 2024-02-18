@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "60",
+		"cost": 60,
 		"description": "<p><span class=\"fontstyle0\">A grilled rack of ribs from a radstag. Easy enough to make when you&rsquo;ve got the main ingredient&mdash;radstag meat&mdash;but tasty and satisfying enough that your burdens feel a little lighter once you&rsquo;ve finished eating.</span> </p>",
 		"duration": "",
 		"effect": "<p>Carry weight increases by +25 until end of next scene</p>\n<p>&nbsp;</p>",

@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "beverage",
-		"cost": "5",
+		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">An alcoholic beverage made from the fermentation of grape juice. There are numerous pre-War vintages to be found across the wasteland, often collected by the wealthy before the bombs fell, and a survivor who stumbles across an intact wine cellar can enjoy a drunken stupor for weeks or months.</span> </p>",
 		"duration": "",
 		"effect": "<p>Immediately gain +1 AP</p>",

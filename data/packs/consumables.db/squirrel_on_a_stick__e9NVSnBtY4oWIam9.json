@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "15",
+		"cost": 15,
 		"description": "<p><span class=\"fontstyle0\">Chunks of squirrel meat skewered on a thin piece of wood for cooking, and then roasted over an open flame. Not enough meat for a decent meal, but certainly enough for a snack.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

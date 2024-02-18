@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "13",
+		"cost": 13,
 		"description": "",
 		"effect": "<p>+2 @fos[DC]</p>\n<p>Gain Piercing 1</p>\n<p>&nbsp;</p>",
 		"favorite": false,

@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "10",
+		"cost": 10,
 		"description": "<p><span class=\"fontstyle0\">A pre-War fast-food product found in the wasteland many years later. the normally found in brightly colored boxes with an image of the food&mdash;ready-made macaroni and cheese&mdash;on the front.</span></p>\n<p><span class=\"fontstyle0\">Sometimes,&nbsp;</span><span class=\"fontstyle2\"><strong>preserved</strong> </span><span class=\"fontstyle0\">boxes of BlamCo Brand Mac and Cheese can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1.</span> </p>",
 		"duration": "",
 		"effect": "<p>&nbsp;</p>\n<p>&nbsp;</p>",

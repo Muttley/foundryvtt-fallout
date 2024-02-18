@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "food",
-		"cost": "28",
+		"cost": 28,
 		"description": "<p><span class=\"fontstyle0\">A slab of meat from the two-headed mutant cattle that roam the wastelands. Not massively dissimilar to beef from before the War, though somewhat radioactive due to coming from a mutant animal.</span></p>\n<p><span class=\"fontstyle0\">Can be cooked to produce ribeye steak.</span> </p>",
 		"duration": "",
 		"effect": "<p>&nbsp;</p>\n<p>&nbsp;</p>",

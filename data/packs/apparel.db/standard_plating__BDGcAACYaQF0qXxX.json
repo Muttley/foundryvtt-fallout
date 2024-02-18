@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "plating",
 		"carry": 0,
-		"cost": "0",
+		"cost": 0,
 		"description": "<p>The default factory plating provided with all brandnew Mister Handy models. This has no cost, as it&rsquo;s the default which a Mister Handy character begins with most of the time.</p>",
 		"equippable": true,
 		"equipped": false,

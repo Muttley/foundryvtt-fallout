@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "An Experience to Remember",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>A pre-War magazine series dedicated to lifestyle and relationships, often covering cultural events, health advice, diet tips, relationship advice, and more.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from <strong>for a single scene</strong>. If you later learn the perk, you may use that benefit constantly. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.4iTCNKydcsh3PHwY]{An Experience to Remember}</p>",
 		"effect": "<p>Choose one other Magazine perk you have previously used but not learned; that now takes effect</p>",
 		"favorite": false,

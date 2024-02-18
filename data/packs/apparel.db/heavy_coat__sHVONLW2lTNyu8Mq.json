@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "outfit",
 		"armorType": "",
-		"cost": "20",
+		"cost": 20,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A long, heavy-weight coat&mdash;a leather duster, a trenchcoat, or similar&mdash;ideal for protecting you from the harsh elements. Provides a bit of protection against physical harm, extreme heat, and even covers well enough to keep a little radiation out.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong> </span><span class=\"fontstyle0\">Wearing a heavy coat allows you to re-roll a single d20 on one </span><span class=\"fontstyle2\">END</span><span class=\"fontstyle0\">-based skill test you make each scene, as it helps protect you from harsh conditions.</span></p>\n<p><span class=\"fontstyle0\">A heavy coat can be reinforced with Ballistic Weave (see sidebar, p. 126).</span></p>\n<p>&nbsp;</p>",
 		"equippable": true,

@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "360",
+		"cost": 360,
 		"description": "",
 		"effect": "<p>+2 @fos[DC]</p>\n<p>Gain Stun</p>\n<p>Change Damage Type to Energy</p>\n<p>&nbsp;</p>",
 		"favorite": false,

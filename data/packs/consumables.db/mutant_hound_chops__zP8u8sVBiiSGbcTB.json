@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "12",
+		"cost": 12,
 		"description": "<p><span class=\"fontstyle0\">A piece of mutant hound meat cooked to make it safer to eat. For reasons unknown, once cooked, the meat helps absorb radiation already in the body, lessening the effects of radiation poisoning. This effect doesn&rsquo;t compare to proper anti-radiation meds like RadAway, but it can be useful to have a few on hand to soak up the radiation you picked up during an excursion.</span> </p>",
 		"duration": "",
 		"effect": "<p>Heals 2 Radiation damage</p>\n<p>&nbsp;</p>",

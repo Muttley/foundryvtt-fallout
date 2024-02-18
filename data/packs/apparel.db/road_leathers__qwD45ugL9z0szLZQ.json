@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "clothing",
 		"armorType": "",
-		"cost": "5",
+		"cost": 5,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A leather jacket, leather pants, and a set of motorcycle boots. Often decorated with metallic studs, these soft leather items provide modest protection against physical hazards such as an involuntary dismount from a motorbike, while still being reasonably comfortable in any temperate or cold climate.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,

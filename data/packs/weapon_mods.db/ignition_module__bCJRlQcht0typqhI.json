@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "130",
+		"cost": 130,
 		"description": "",
 		"effect": "<p>Gain Persistent (Energy)</p>\n<p>&nbsp;</p>",
 		"favorite": false,

@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "outfit",
 		"armorType": "",
-		"cost": "12",
+		"cost": 12,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A versatile outfit favored by mechanics and other tinkerers; the coveralls are designed to protect both from hard, dirty work with machinery. Comes with heavy gloves to protect the hands, and a utility belt to hold a range of tools and other useful items.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Utility Coveralls increase the wearer&rsquo;s maximum carry weight by +5.</span> </p>",
 		"equippable": true,

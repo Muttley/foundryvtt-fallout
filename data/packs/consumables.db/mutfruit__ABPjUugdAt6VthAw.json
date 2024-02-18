@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "8",
+		"cost": 8,
 		"description": "<p><span class=\"fontstyle0\">Pronounced &ldquo;mute-fruit&rdquo;, and short for mutated fruit, mutfruit is a mutated form of apple, which comes in several different varieties depending on where you are. These different varieties are cultivated for their sweet flavor, their use in cooking, and even medicinal properties in some rare cases.</span></p>\n<p><span class=\"fontstyle0\">Mutfruit is part of a few different recipes, including being turned into Mutfruit Juice.</span></p>\n<p><span class=\"fontstyle0\">Mutfruits grown in non-irradiated conditions (such as within vaults or similar locations) are not irradiated but increase their rarity by +1.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

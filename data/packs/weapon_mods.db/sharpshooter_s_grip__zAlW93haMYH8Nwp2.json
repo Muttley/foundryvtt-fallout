@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "10",
+		"cost": 10,
 		"description": "",
 		"effect": "<p>Remove Inaccurate</p>\n<p>Add Piercing 1</p>\n<p>&nbsp;</p>",
 		"favorite": false,

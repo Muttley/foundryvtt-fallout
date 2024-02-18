@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "The Future of Hunting?",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>A magazine series catering to weapons enthusiasts, with articles dedicated to hunting, weapons, gun law, and the portrayal of practical use of firearms.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.kBFXBzcatoT884Je]{The Future of Hunting?}</p>",
 		"effect": "<p>One attack against Robots inflicts +2CD damage</p>",
 		"favorite": false,

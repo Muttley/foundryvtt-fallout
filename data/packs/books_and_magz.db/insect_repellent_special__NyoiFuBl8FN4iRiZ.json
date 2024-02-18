@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "Insect Repellent Special",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>The Wasteland Survival Guide is another post-War series of instructional magazines, written and illustrated with crude pen drawings. It has been copied and distributed across the wastelands but can most commonly be found in settlements near to the Capital Wasteland.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.qxfqtIIZynyM2qIj]{Insect Repellent Special}</p>",
 		"effect": "<p>Increase all damage resistances by +2 vs an attack from an Insect</p>",
 		"favorite": false,

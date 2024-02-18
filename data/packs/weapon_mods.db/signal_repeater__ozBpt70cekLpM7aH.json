@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "60",
+		"cost": 60,
 		"description": "",
 		"effect": "<p>+2 Fire Rate</p>\n<p>Gain Burst</p>\n<p>Remove Blast</p>\n<p>&nbsp;</p>",
 		"favorite": false,

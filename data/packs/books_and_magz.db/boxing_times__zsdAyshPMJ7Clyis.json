@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "Boxing Times",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>A pre-War magazine aimed at fans of boxing, often containing features on noteworthy or up-and-coming boxers, discussions of technique and equipment, and in-depth reporting on the sport.</p>\n<ul>\n<li><strong>Perk:</strong> Once, when you succeed at an Unarmed attack, if you spend any AP to increase the damage you dealt, you may add the Stun damage effect to your attack. If you later learn this perk, you may use this on any successful Unarmed attack.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.9rp4u6tgFbJk9GRT]{Boxing Times}</p>",
 		"effect": "<p>Once, when you succeed at an Unarmed attack, if you spend any AP to increase the damage you dealt, you may add the Stun damage effect to your attack.</p>",
 		"favorite": false,

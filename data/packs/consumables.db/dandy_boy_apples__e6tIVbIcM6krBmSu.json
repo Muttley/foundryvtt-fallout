@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "7",
+		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">Candied apples produced by the Dandy Boy company. An extremely sweet fruit-based snack packaged in a cardboard box. Normally well-preserved due to the high sugar content, boxes of these can still be found in the ruins of convenience stores and groceries across the wasteland, and in the possession of people who&rsquo;ve recently raided said ruined convenience stores and groceries.</span></p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

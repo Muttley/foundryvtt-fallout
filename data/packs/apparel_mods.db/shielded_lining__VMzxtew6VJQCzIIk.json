@@ -10,7 +10,7 @@
 		"apparelType": "clothing",
 		"attachable": true,
 		"attached": false,
-		"cost": "50",
+		"cost": 50,
 		"description": "",
 		"effect": "",
 		"favorite": false,

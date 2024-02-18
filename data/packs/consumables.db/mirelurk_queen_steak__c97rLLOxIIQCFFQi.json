@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "130",
+		"cost": 130,
 		"description": "<p><span class=\"fontstyle0\">The rare, nutrient-rich meat of a mirelurk Queen, when properly prepared, can fortify the body and provide a surge of health and vitality, making you feel healthier and more resilient for a while after eating.</span> </p>",
 		"duration": "",
 		"effect": "<p>Reduce the difficulty of all END tests by 1 until the end of the next scene</p>\n<p>&nbsp;</p>",

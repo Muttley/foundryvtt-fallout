@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "35",
+		"cost": 35,
 		"description": "<p><span class=\"fontstyle0\">Flakes and fragments of mirelurk meat, mixed with mirelurk egg to bind it together into a patty and then cooked. In addition to some modest nutritional value, eating mirelurk cake allows you to survive underwater for longer.</span></p>",
 		"duration": "",
 		"effect": "<p>Can breathe underwater until end of next scene</p>\n<p>&nbsp;</p>",

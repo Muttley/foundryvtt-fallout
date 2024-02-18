@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "10",
+		"cost": 10,
 		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>\n<p>Cannot be installed on <strong>X-01 Power Armor</strong>.</p>",
 		"effect": "<p>+1 Energy damage resistance</p>",
 		"favorite": false,

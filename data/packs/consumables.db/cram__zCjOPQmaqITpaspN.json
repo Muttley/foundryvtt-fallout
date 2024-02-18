@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "25",
+		"cost": 25,
 		"description": "<p><span class=\"fontstyle0\">A tin of processed meat produced in vast quantities pre-War to address food shortages and serve as a meat ration for soldiers. The tin, with an easy-open pull tab, helps keep the contents preserved for long periods, making Cram more useful for survivalists and those scavenging for food.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

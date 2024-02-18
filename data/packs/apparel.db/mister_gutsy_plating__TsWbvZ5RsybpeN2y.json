@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "plating",
 		"carry": -10,
-		"cost": "0",
+		"cost": 0,
 		"description": "<p>Like the standard plating, but with better thermal absorption properties to reinforce it against energy weaponry, this is the standard plating for a Mister Gutsy. It is the default for all Mister Handy characters who select the Mister Gutsy starting package.</p>",
 		"equippable": true,
 		"equipped": false,

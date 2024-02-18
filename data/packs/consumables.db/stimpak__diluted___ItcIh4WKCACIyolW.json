@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "chem",
-		"cost": "30",
+		"cost": 30,
 		"description": "",
 		"duration": "instant",
 		"effect": "<p>Heals 2 HP (see description)</p>",

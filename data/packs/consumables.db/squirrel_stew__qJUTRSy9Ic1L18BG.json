@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "24",
+		"cost": 24,
 		"description": "<p><span class=\"fontstyle0\">Chunks of squirrel meat, along with carrot, tato, and some bloodleaf, cooked together to create a thick stew. More filling and appetizing than the ingredients individually.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

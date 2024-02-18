@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
 	"name": "Tales of a Junktown Jerky Vendor",
 	"system": {
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>One example of a post-War magazine, Tales of a Junktown Jerky Vendor is a collection of short, handmade books written by an unknown vendor of jerky from Junktown. Copies have spread across the wasteland and can be found from California (near Junktown itself) to the Commonwealth.</p>\n<ul>\n<li><strong>Perk:</strong> Once, when you succeed or fail at a Barter test to haggle on the price of a trade, you may spend 1 Luck point to shift the price 10% in your favor. If you learn this Perk, you may do this on any Barter test to&nbsp;haggle, though you must spend one additional Luck point each extra time you use it during a session (1 for the first time, 2 for the second, 3 for the third, etc.).</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.Qf4PBCvZdSvPAeX7]{Tales of a Junktown Jerky Vendor}</p>",
 		"effect": "<p>Once, when you succeed or fail at a Barter test to haggle on the price of a trade, you may spend 1 Luck point to shift the price 10% in your favor.</p>",
 		"favorite": false,

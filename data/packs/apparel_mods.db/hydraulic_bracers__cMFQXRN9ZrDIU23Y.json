@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>Installed with the <b>Repair</b> skill</p>",
 		"effect": "<p>While armor is powered, your unarmed attacks inflict +2 @fos[DC] damage </p>",
 		"favorite": false,

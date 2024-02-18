@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "40",
+		"cost": 40,
 		"description": "<p><span class=\"fontstyle0\">A grilled piece of meat from a brahmin. The closest thing to a pre-War steak you&rsquo;re likely to find, a good piece of grilled brahmin makes for a satisfying meal.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

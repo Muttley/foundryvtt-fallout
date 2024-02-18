@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "80",
+		"cost": 80,
 		"description": "<p><span class=\"fontstyle0\">An omelette made from a deathclaw egg. In addition to being highly nutritious, it stimulates the natural healing processes of the body, allowing a person to recover more quickly from harm for a while after eating.</span> </p>",
 		"duration": "",
 		"effect": "<p>If next scene is combat, regain 1HP at the start of each turn</p>\n<p>&nbsp;</p>",

@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "armor",
 		"carry": 0,
-		"cost": "20",
+		"cost": 20,
 		"description": "<p>A standardized, factory-made set of armor plating designed to fit any Mister Handy model.</p>",
 		"equippable": true,
 		"equipped": false,

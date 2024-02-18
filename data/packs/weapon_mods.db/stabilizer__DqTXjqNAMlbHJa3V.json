@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "60",
+		"cost": 60,
 		"description": "",
 		"effect": "<p>Gain Piercing 1</p>\n<p>&nbsp;</p>",
 		"favorite": false,

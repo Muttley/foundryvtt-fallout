@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "20",
+		"cost": 20,
 		"description": "<p><span class=\"fontstyle0\">A simple cup of noodle soup.Moderately filling and thirst-quenching, and simple enough to make if you can find the ingredients.</span></p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

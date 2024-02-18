@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "18",
+		"cost": 18,
 		"description": "<p><span class=\"fontstyle0\">A piece of Bloodbug meat cooked over an open flame. If you can stand to eat it, and can ignore the aftertaste, it&rsquo;s reasonably nutritious and even leaves a feeling of renewed vigor and health for a while after eating.</span> </p>",
 		"duration": "",
 		"effect": "<p>Max HP +3 until end of following scene</p>\n<p>&nbsp;</p>",

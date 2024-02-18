@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "31",
+		"cost": 31,
 		"description": "",
 		"effect": "<p>-1 @fos[DC]</p>\n<p>Gain Spread</p>\n<p>Gain Inaccurate</p>\n<p>&nbsp;</p>",
 		"favorite": false,

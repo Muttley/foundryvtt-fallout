@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "21",
+		"cost": 21,
 		"description": "<p><span class=\"fontstyle0\">A soup made with carrot and iguana bits. A more satisfying meal than any of the ingredients would have been alone.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

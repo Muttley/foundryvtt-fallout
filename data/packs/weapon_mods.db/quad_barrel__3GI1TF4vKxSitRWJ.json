@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "218",
+		"cost": 218,
 		"description": "",
 		"effect": "<p>+2 Fire Rate</p>\n<p>&nbsp;</p>",
 		"favorite": false,

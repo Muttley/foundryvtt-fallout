@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "8",
+		"cost": 8,
 		"description": "<p><span class=\"fontstyle0\">Chunks of raw iguana meat, in a small can or another sealed container. At least, you </span><span class=\"fontstyle2\">hope </span><span class=\"fontstyle0\">that&rsquo;s iguana meat. You don&rsquo;t see many iguanas around.</span></p>\n<p><span class=\"fontstyle0\">Iguana bits are an ingredient in Iguana on a Stick and Iguana Soup.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

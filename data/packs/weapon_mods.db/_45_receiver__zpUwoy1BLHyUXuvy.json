@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "19",
+		"cost": 19,
 		"description": "",
 		"effect": "<p>Change damage to 4 @fos[DC]</p>\n<p>+1 fire rate</p>\n<p>Ammo changes to @UUID[Item.sNuUqfuwQTubAOi4]{.45 Round}</p>\n<p>&nbsp;</p>",
 		"favorite": false,

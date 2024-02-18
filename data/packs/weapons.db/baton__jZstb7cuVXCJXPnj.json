@@ -11,7 +11,7 @@
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
-		"cost": "15",
+		"cost": 15,
 		"damage": {
 			"damageEffect": {
 				"arc": {

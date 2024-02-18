@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": false,
 		"consumableType": "beverage",
-		"cost": "110",
+		"cost": 110,
 		"description": "<p><span class=\"fontstyle0\">A mysterious panacea made from medical supplies, this chemical concoction restores health and cleanses the body of radiation and chemical dependencies. The recipe has spread across the wasteland by word of mouth, but it requires numerous ingredients to produce, so it remains rare.</span> </p>",
 		"duration": "",
 		"effect": "<p>Heals 10 Radiation damage, Cures all addictions</p>",

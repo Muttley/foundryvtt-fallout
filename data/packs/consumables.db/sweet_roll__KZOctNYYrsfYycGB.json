@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "9",
+		"cost": 9,
 		"description": "<p><span class=\"fontstyle0\">A small, sweetened pastry or baked confection normally made as a treat for children or people who need a bit of cheering up.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "180",
+		"cost": 180,
 		"description": "",
 		"effect": "<p>+1 @fos[DC]</p>\n<p>Change Damage Type to Energy</p>\n<p>&nbsp;</p>",
 		"favorite": false,

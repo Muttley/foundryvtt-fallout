@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "82",
+		"cost": 82,
 		"description": "",
 		"effect": "<p>+1 @fos[DC] damage</p>\n<p>Gain Vicious</p>\n<p>&nbsp;</p>",
 		"favorite": false,

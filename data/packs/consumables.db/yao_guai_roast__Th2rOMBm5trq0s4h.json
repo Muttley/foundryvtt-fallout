@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "110",
+		"cost": 110,
 		"description": "<p><span class=\"fontstyle0\">A roasted piece of Yao Guai meat cooked with carrot and tato. An extremely filling and satisfying meal, and many have claimed that it heightens their killer instinct and ability to inflict harm for a while after eating.</span></p>",
 		"duration": "",
 		"effect": "<p>+2 @fos[DC] to melee attacks until end of next scene</p>\n<p>&nbsp;</p>",

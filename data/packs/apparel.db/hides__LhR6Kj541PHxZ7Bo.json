@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "outfit",
 		"armorType": "",
-		"cost": "13",
+		"cost": 13,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">Typically made from the rough hides of a brahmin, radstag, or other large animal, these simple clothes provide a little protection and comfort, but they&rsquo;re no substitute for properly made clothing or armor.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,

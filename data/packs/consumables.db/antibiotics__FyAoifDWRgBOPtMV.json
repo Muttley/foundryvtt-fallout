@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "chem",
-		"cost": "75",
+		"cost": 75,
 		"description": "<p>A dose of potent, broad-spectrum antibiotics that&rsquo;ll help clear out pretty much any infection or disease. Taking too many can be damaging to health overall, but these are rare enough that taking too many is rarely a problem.</p>",
 		"duration": "instant",
 		"effect": "<p>Cures all illnesses</p>",

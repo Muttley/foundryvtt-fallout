@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "13",
+		"cost": 13,
 		"description": "<p><span class=\"fontstyle0\">A simple soup made with carrot and tato. A reasonably filling meal, sating both hunger and thirst, while also helping to fortify the body against radiation poisoning for a while.</span> </p>",
 		"duration": "",
 		"effect": "<p>+2 Radiation damage resistance until end of next scene</p>\n<p>&nbsp;</p>",

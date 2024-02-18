@@ -10,7 +10,7 @@
 		"apparelType": "armor",
 		"attachable": true,
 		"attached": false,
-		"cost": "15",
+		"cost": 15,
 		"description": "",
 		"effect": "",
 		"favorite": false,

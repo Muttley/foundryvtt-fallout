@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "25",
+		"cost": 25,
 		"description": "",
 		"effect": "<p>+1 Fire Rate</p>\n<p>Remove Inaccurate</p>\n<p>&nbsp;</p>",
 		"favorite": false,

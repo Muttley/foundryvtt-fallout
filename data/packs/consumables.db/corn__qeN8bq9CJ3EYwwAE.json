@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "6",
+		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">A highly versatile crop cultivated across the Americas for centuries. Corn remains largely unchanged by the War, and it remains a staple of wasteland agriculture.</span></p>\n<p><span class=\"fontstyle0\">Corn grown in non-irradiated conditions (such as within vaults or similar locations) is not irradiated but increases its rarity by +1. In addition to its use as food, corn is a main ingredient in vegetable starch, which can be used to make adhesives for crafting.</span> </p>",
 		"duration": "",
 		"effect": "<p></p>\n<p>&nbsp;</p>",

@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "30",
+		"cost": 30,
 		"description": "<p><span class=\"fontstyle0\">An omelette made from a mirelurk egg. In addition to their nutritional value, when properly prepared, these omelettes can leave you feeling energized and ready for action.</span> </p>",
 		"duration": "",
 		"effect": "<p>Immediately add 2 AP to the group pool</p>\n<p>&nbsp;</p>",

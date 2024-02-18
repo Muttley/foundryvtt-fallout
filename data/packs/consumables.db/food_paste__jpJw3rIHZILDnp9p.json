@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "0",
+		"cost": 0,
 		"description": "<p><span class=\"fontstyle0\">In the years before the Great War, several charter schools across America entered an experimental program: The Nutritional Alternative Paste Program (NAPP). Developed by Vault-Tec in conjunction with the Federal Government, this supplied participating schools with a supply of food paste, fortified with vitamins, minerals and all the nutrients a growing body needs, and which would remain unspoiled for over a century.</span></p>\n<p><span class=\"fontstyle0\">The paste is a flavorless mush, garish pink in color, and may have unknown long-term effects on psychology or physiology. It does, however, make the body healthier after consumption.</span> </p>",
 		"duration": "",
 		"effect": "<p>May re-roll 1d20 on all END tests until end of next scene</p>\n<p>&nbsp;</p>",

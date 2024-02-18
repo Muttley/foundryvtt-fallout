@@ -12,7 +12,7 @@
 		"alcoholic": false,
 		"consumableGroup": "",
 		"consumableType": "beverage",
-		"cost": "6",
+		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">Juice made from pressing the pulp of a melon. A refreshing and healthy drink, which promotes the body&rsquo;s natural healing.</span> </p>",
 		"duration": "",
 		"effect": "<p>Heal 1 HP at the start of each turn</p>",

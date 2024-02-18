@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "130",
+		"cost": 130,
 		"description": "<p><span class=\"fontstyle0\">A slab of cooked deathclaw meat. Sufficiently filling and nutritious that it could easily be your only meal for the day, while also leaving you feeling fitter and stronger for a while after eating.</span> </p>",
 		"duration": "",
 		"effect": "<p>May re-roll 1d20 on all STR tests until end of next scene</p>\n<p>&nbsp;</p>",

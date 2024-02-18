@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "100",
+		"cost": 100,
 		"description": "<p>Installed with the <b>Science</b> skill</p>",
 		"effect": "<p>Re-roll addiction roll for addictive chems while armor is powered</p>",
 		"favorite": false,

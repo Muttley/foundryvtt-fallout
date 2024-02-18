@@ -10,7 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
-		"cost": "10",
+		"cost": 10,
 		"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
 		"effect": "<p>+2 damage resistances vs Blast weapons</p>",
 		"favorite": false,

@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "65",
+		"cost": 65,
 		"description": "<p><span class=\"fontstyle0\">Made from a radscorpion egg, these omelettes are highly prized by those who make considerable use of combat drugs, as something about the food cleanses the body to remove chemical dependencies and addictions.</span> </p>",
 		"duration": "",
 		"effect": "<p>Cure all addictions</p>\n<p>&nbsp;</p>",

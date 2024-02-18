@@ -9,7 +9,7 @@
 	"system": {
 		"appareltype": "clothing",
 		"armorType": "",
-		"cost": "5",
+		"cost": 5,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A worker&rsquo;s safety harness repurposed to serve as a mount for pieces of armor. Common amongst raiders, who tend to wear the harness without a shirt underneath.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,

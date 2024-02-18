@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "5",
+		"cost": 5,
 		"description": "",
 		"effect": "<p>May re-roll hit location die</p>\n<p>&nbsp;</p>",
 		"favorite": false,

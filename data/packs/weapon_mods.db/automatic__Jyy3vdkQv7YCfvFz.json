@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "30",
+		"cost": 30,
 		"description": "",
 		"effect": "<p>-1 @fos[DC] damage</p>\n<p>+2 fire rate</p>\n<p>Gain Burst</p>\n<p>Gain Inaccurate</p>",
 		"favorite": false,

@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "30",
+		"cost": 30,
 		"description": "",
 		"effect": "<p>Change damage to 7 @fos[DC]</p>\n<p>Change damage type to Energy</p>\n<p>Gain Radioactive</p>\n<p>&nbsp;</p>",
 		"favorite": false,

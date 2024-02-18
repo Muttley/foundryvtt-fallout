@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "90",
+		"cost": 90,
 		"description": "<p><span class=\"fontstyle0\">A rack of ribs made with Yao Guai meat. Yao Guai ribs are both a satisfying meal and inspire a sense of invincibility, while also boosting your tolerance for pain for a short while.</span> </p>",
 		"duration": "",
 		"effect": "<p>+2 Physical damage resistance until end of next scene</p>\n<p>&nbsp;</p>",

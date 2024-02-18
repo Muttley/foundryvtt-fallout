@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": "Railway Spike",
 	"system": {
-		"cost": "1",
+		"cost": 1,
 		"description": "<p><span class=\"fontstyle0\">Iron spikes designed for fastening railway tracks in place. Not as easy to find as you might think, given their mundane origins.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 6+3dc # Railway Spike]]</p>",
 		"effect": "",
 		"favorite": false,

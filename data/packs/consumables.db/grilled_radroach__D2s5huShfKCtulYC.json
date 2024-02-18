@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "food",
-		"cost": "7",
+		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">A grilled chunk of meat taken from a radroach. Not especially appetizing, especially if you know where it came from, but sufficiently nutritious and filling for those with few other choices.</span></p>",
 		"duration": "",
 		"effect": "",

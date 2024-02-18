@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "3",
+		"cost": 3,
 		"description": "",
 		"effect": "<p>Gain Two-Handed</p>\n<p>Remove Inaccurate</p>\n<p>+1 Fire Rate</p>\n<p>Remove Close Quarters</p>\n<p>&nbsp;</p>",
 		"favorite": false,

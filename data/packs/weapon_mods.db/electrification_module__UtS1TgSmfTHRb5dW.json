@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "70",
+		"cost": 70,
 		"description": "",
 		"effect": "<p>Gain Vicious</p>\n<p>Change damage type to Energy</p>\n<p>&nbsp;</p>",
 		"favorite": false,

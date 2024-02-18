@@ -11,7 +11,7 @@
 		"addictive": false,
 		"alcoholic": true,
 		"consumableType": "beverage",
-		"cost": "5",
+		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A triple-distilled alcoholic beverage made using grain mash. Pre-War versions were created across the United States and beyond. Some wasteland distilleries exist producing post-War versions using corn and razorgrain.</span> </p>",
 		"duration": "",
 		"effect": "<p>Reroll up to two d20 on STR tests (in total)</p>",

@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "",
 		"consumableType": "chem",
-		"cost": "60",
+		"cost": 60,
 		"description": "<p>X-cell was a general-purpose performance enhancer still being developed before the Great War. Development was never finished, but prototype versions were distributed through the black market and by scavengers after the War. It enhances all aspects of a user&rsquo;s abilities for a few minutes, but it is extremely addictive, and the withdrawal symptoms are as far-reaching as the effects.</p>\n<p><strong>X-Cell Addiction:</strong> A failed addiction roll renders you addicted to X-Cell. You increase the difficulty of all tests by +1 whenever you are not under the effects of X-Cell.</p>",
 		"duration": "instant",
 		"effect": "<p>First d20 bought on all tests is free</p>",

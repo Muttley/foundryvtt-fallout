@@ -12,7 +12,7 @@
 		"alcoholic": true,
 		"consumableGroup": "Psycho",
 		"consumableType": "chem",
-		"cost": "70",
+		"cost": 70,
 		"description": "<p>A cocktail of Psycho and Mentats. The heightened awareness granted by the Mentats and the aggression and pain insensitivity somewhat cancel one another out, but the resultant effects are a short period of high aggression, enhanced sensory acuity, and boosted pain tolerance.</p>\n<ul>\n<li><strong>Psycho Addiction:</strong> A failed addiction roll renders you addicted to Psycho. You increase the difficulty of all STR tests by +1 and suffer +1 @fos[DC] damage from all physical attacks whenever you are not under the effects of a type of Psycho (ordinary Psycho, Psycho Jet, Psychobuff, or Psychotats).</li>\n</ul>",
 		"duration": "lasting",
 		"effect": "<p>+2 @fos[DC] damage to all attacks,+2 Physical damage resistance|Reduce difficulty of PER tests by 1 (min. 0)</p>",

@@ -9,7 +9,7 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": "10",
+		"cost": 10,
 		"description": "",
 		"effect": "<p>Increase Range by 1 step</p>",
 		"favorite": false,
