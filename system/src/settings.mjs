@@ -1,3 +1,5 @@
+import { SYSTEM_ID } from "./config.mjs";
+
 export default function registerSettings() {
 	// -------------------
 	//  INTERNAL SETTINGS
@@ -150,7 +152,7 @@ export default function registerSettings() {
 
 	game.settings.register(SYSTEM_ID, "worldSchemaVersion", {
 		name: "Schema Version",
-		hint: "Records the current schema version for the Fallout 2d20 system data. (don't modify this unless you know what you are doing)",
+		hint: "Records the current schema version for the Fallout RPG system data. (don't modify this unless you know what you are doing)",
 		scope: "world",
 		config: game.settings.get(SYSTEM_ID, "debugEnabled"),
 		default: -1,
@@ -159,11 +161,20 @@ export default function registerSettings() {
 
 	game.settings.register(SYSTEM_ID, "systemVersion", {
 		name: "System Version",
-		hint: "Records the current Fallout 2d20 system version number (don't modify this unless you know what you are doing)",
+		hint: "Records the current Fallout RPG system version number (don't modify this unless you know what you are doing)",
 		scope: "world",
 		config: game.settings.get(SYSTEM_ID, "debugEnabled"),
 		default: "",
 		type: String,
 	});
 
+	game.settings.register(SYSTEM_ID, "migrateSystemCompendiums", {
+		name: "Migrate System Compendiums",
+		hint: "Perform data migration on the built in Fallout RPG system compendiums (don't modify this unless you know what you are doing)",
+		scope: "world",
+		type: Boolean,
+		config: game.settings.get(SYSTEM_ID, "debugEnabled"),
+		default: false,
+		requiresReload: true,
+	});
 }

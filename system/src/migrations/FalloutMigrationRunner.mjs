@@ -1,3 +1,4 @@
+import { SYSTEM_ID } from "../config.mjs";
 import * as migrations from "./updates/_module.mjs";
 
 export default class FalloutMigrationRunner {
@@ -120,10 +121,18 @@ export default class FalloutMigrationRunner {
 		await this.currentMigrationTask.updateSettings();
 	}
 
+	get migrateSystemCompendiumsEnbabled() {
+		return game.settings.get(SYSTEM_ID, "migrateSystemCompendiums");
+	}
+
 	async migrateWorldCompendiums() {
 		for (let pack of game.packs) {
-			// don't migrate system packs
-			if (pack.metadata.packageType !== "world") continue;
+			// Don't migrate system packs unless the proper debug setting is
+			// enabled
+			//
+			if (!this.migrateSystemCompendiumsEnbabled) {
+				if (pack.metadata.packageType !== "world") continue;
+			}
 
 			await this.migrateCompendium(pack);
 		}
