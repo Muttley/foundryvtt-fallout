@@ -1,6 +1,10 @@
 # v11.4.0
 
 ## Enhancements
+- [#141] Add ability to specify Normal, Mighty/Notable, Legendary/Major categories on Creature and NPC sheets
+
+	* The migration script will attempt to work out which category an NPC should be by correlating its level and XP reward.  If that's not possible a warning message will prompt you so you can manually check individual NPC sheets and set the correct category.
+
 - [#143] Allow configuration of thirst reduction on food consumables in order to handle Soups/Stews
 - [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
 - [#149] Add default icons for all item types
