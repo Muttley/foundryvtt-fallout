@@ -1,7 +1,7 @@
 {
 	"id": "fallout",
-	"title": "Fallout 2d20",
-	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
+	"title": "Fallout: The Roleplaying Game",
+	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
 	"version": "11.3.6",
 	"compatibility": {
 		"minimum": "11",

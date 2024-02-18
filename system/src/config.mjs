@@ -1,5 +1,5 @@
 export const SYSTEM_ID = "fallout";
-export const SYSTEM_NAME = "Fallout 2d20";
+export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
