@@ -560,8 +560,10 @@ export default class FalloutActor extends Actor {
 	_prepareNpcData() {
 		if (!["creature", "npc"].includes(this.type)) return;
 
-		// Make modifications to data here. For example:
-		this.system.xp = this.system.cr * this.system.cr * 100;
+		this.system.level.rewardXP = fallout.utils.calculateXpReward(
+			this.system.level.value,
+			this.system.category
+		);
 
 		this.system.carryWeight.total = this._getItemsTotalWeight();
 	}

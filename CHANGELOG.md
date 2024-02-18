@@ -5,6 +5,10 @@
 
 	* The migration script will attempt to work out which category an NPC should be by correlating its level and XP reward.  If that's not possible a warning message will prompt you so you can manually check individual NPC sheets and set the correct category.
 
+- [#142] Auto-calculate XP reward for NPCs
+
+	* This field is now read-only and autocalculated from the Creature or NPC's Level and Category
+
 - [#143] Allow configuration of thirst reduction on food consumables in order to handle Soups/Stews
 - [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
 - [#149] Add default icons for all item types

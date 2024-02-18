@@ -117,7 +117,7 @@
 					<div class="resource flex-group-left">
 						<label
 							class="resource-label"
-							for="system.power.value"
+							for="system.level.nextLevelXP"
 						>
 							{{localize "FALLOUT.LEVEL.NextXP"}}
 						</label>
@@ -138,7 +138,7 @@
 					<div class="resource flex-group-left">
 						<label
 							class="resource-label"
-							for="system.health.value"
+							for="system.level.rewardXP"
 						>
 							{{localize "FALLOUT.LEVEL.RewardXP"}}
 						</label>
@@ -146,9 +146,11 @@
 							<input
 								class="underline"
 								data-dtype="Number"
-								name="system.level.currentXP"
+								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+								name="system.level.rewardXP"
 								type="text"
-								value="{{system.level.currentXP}}"
+								value="{{system.level.rewardXP}}"
+								disabled
 							/>
 						</div>
 					</div>

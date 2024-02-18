@@ -2,14 +2,14 @@ const LBS_TO_KGS = 0.4535924;
 
 export default class FalloutUtils {
 
-	static calculateXpReward(level=1, type="normal") {
+	static calculateXpReward(level=1, category="normal") {
 		if (level <= 0) return 0;
 
 		let base;
 		let levelAdjust;
 		let perLevel;
 
-		switch (type) {
+		switch (category) {
 			case "normal":
 				perLevel = 7;
 
