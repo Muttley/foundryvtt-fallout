@@ -3,30 +3,91 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
-        <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
+        <a
+			class="item"
+			data-tab="attributes"
+		>
+			{{localize "FALLOUT.TEMPLATES.Attributes"}}
+		</a>
+        <a
+			class="item"
+			data-tab="description"
+		>
+			{{localize "FALLOUT.TEMPLATES.Description"}}
+		</a>
     </nav>
 
     <section class="sheet-body">
         {{!-- Attributes Tab --}}
-        <div class="tab attributes" data-group="primary" data-tab="attributes">
+        <div
+			class="tab attributes"
+			data-group="primary"
+			data-tab="attributes"
+		>
             <div class="flexrow resource-row">
-                <label for="system.issue" class="resource-label">{{localize "FALLOUT.TEMPLATES.Issue"}}</label>
-                <input type="text" name="system.issue" value="{{system.issue}}">
-            </div>
-            <div class="flexrow align-left resource-row">
-                <label for="system.learned" class="resource-label">{{localize "FALLOUT.TEMPLATES.Learned"}}</label>
-                <input type="checkbox" name="system.learned" {{#ifCond system.learned '==' true}}checked{{/ifCond}}>
+                <label for="system.issue" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Publication"}}
+				</label>
+                <input
+					name="system.publication"
+					type="text"
+					value="{{system.publication}}"
+				>
             </div>
 
-            <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effect"}}</h3>
+            {{!-- <div class="flexrow resource-row">
+                <label for="system.issue" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Issue"}}
+				</label>
+                <input
+					name="system.issue"
+					type="text"
+					value="{{system.issue}}"
+				>
+            </div> --}}
+
+            <div class="flexrow align-left resource-row">
+                <label
+					class="resource-label"
+					for="system.learned"
+				>
+					{{localize "FALLOUT.TEMPLATES.Learned"}}
+				</label>
+                <input
+					name="system.learned"
+					type="checkbox"
+					{{#if system.learned}}
+						checked
+					{{/if}}
+				>
+            </div>
+
+            <h3 class="resource-label">
+				{{localize "FALLOUT.TEMPLATES.Effect"}}
+			</h3>
             <div class="description-field">
-                {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
+                {{editor effectHTML
+					button=true
+					editable=editable
+					owner=owner
+					target="system.effect"
+				}}
             </div>
         </div>
+
         {{!-- Description Tab --}}
-        <div class="tab description" data-group="primary" data-tab="description">
-            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+        <div
+			class="tab description"
+			data-group="primary"
+			data-tab="description"
+		>
+            {{editor descriptionHTML
+				button=true
+				editable=editable
+				owner=owner
+				rollData=rollData
+				target="system.description"
+			}}
         </div>
     </section>
 </form>

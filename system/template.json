@@ -465,6 +465,7 @@
 			"issue": "",
 			"learned": false,
 			"perk": "",
+			"publication": "",
 			"templates": [
 				"base",
 				"physical"
