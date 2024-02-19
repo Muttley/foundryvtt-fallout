@@ -312,7 +312,7 @@ FALLOUT.TEMPLATES.Points: Punkty
 FALLOUT.TEMPLATES.POISON: TRUCIZNA
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Prepared: Przygotowany
-FALLOUT.TEMPLATES.Publication: Publication
+FALLOUT.TEMPLATES.Publication: Publikacja
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
 FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
@@ -358,38 +358,38 @@ FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
-FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
-FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
-FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
-FALLOUT.TOOLTIPS.DamageEffect.freeze: Enemies hit by this attack will be Frozen if the number of Effects rolled are equal or more than half the target’s END (or half the target’s BODY for Creatures). A Frozen creature cannot take actions on its next turn.
-FALLOUT.TOOLTIPS.DamageEffect.persistent: "If one or more Effects are rolled, the target suffers the weapon’s damage again at the end of their next and subsequent turns, for a number of rounds equal to the number of Effects rolled. The target can spend a major action to make a test to stop persistent damage early, with the difficulty equal to the number of Effects rolled, and the attribute + skill chosen by the GM. Some Persistent weapons may inflict a different type of damage to the weapon, and where this is the case, it will be noted in brackets, for example: Persistent (Poison)."
-FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignore X points of the target’s DR for each Effect rolled, where X is the rating of this damage effect.
-FALLOUT.TOOLTIPS.DamageEffect.radioactive: For every Effect rolled, the target also suffers 1 point of radiation damage. This radiation damage is totalled and applied separately, after a character has suffered the normal damage from the attack.
-FALLOUT.TOOLTIPS.DamageEffect.spread: For each Effect rolled, your attack inflicts one additional hit on the target. Each additional hit inflicts half the rolled damage (rounded down) and hits a random location even if a specific location was targeted for the initial attack.
-FALLOUT.TOOLTIPS.DamageEffect.stun: If one or more Effects are rolled, the target cannot take their normal actions on their next turn. A stunned character or creature can still spend AP to take additional actions as normal.
-FALLOUT.TOOLTIPS.DamageEffect.vicious: The attack inflicts +1 damage for each Effect rolled.
+FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
+FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
+FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.
+FALLOUT.TOOLTIPS.DamageEffect.freeze: Wrogowie uderzeni przez ten atak będą Zamarznięci, jeśli liczba wykrytych efektów jest równa lub większa niż połowa WT celu (lub połowa docelowego Ciało dla Stworzeń). Zamrożone stworzenie, nie może podjąć działań na następnej turze.
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "Jeżeli uzyskałeś na kościach 1 lub więcej Efektów, przeciwnik ponownie otrzymuje obrażenia od broni pod koniec swoich kolejnych tur, łącznie tyle razy, ile wyrzuciłeś Efektów. Powstrzymanie tego Efektu obrażeń wymaga wykonania przez przeciwnika w akcji głównej testu o trudności równej liczbie wyrzuconych przez ciebie Efektów; kombinację atrybutu i umiejętności dla tego testu określa MG. Czasami broń z tym Efektem obrażeń zadaje obrażenia innego rodzaju. W takich przypadkach jest to dopisane w nawiasie – na przykład Uporczywe (toksyczne)."
+FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Za każdy uzyskany na kościach Efekt ignorujesz X punktów Odporności przeciwnika gdzie X to poziom tego Efektu dla danej broni.
+FALLOUT.TOOLTIPS.DamageEffect.radioactive: Za każdy uzyskany na kościach Efekt cel otrzymuje dodatkowo 1 punkt obrażeń radiacyjnych. Te obrażenia są sumowane i uwzględniane osobno, po normalnych obrażeniach wynikających z ataku.
+FALLOUT.TOOLTIPS.DamageEffect.spread: Za każdy uzyskany na kościach Efekt trafiasz przeciwnika po raz kolejny. Każde z tych dodatkowych trafień zadaje połowę pierwotnie wyrzuconych obrażeń (zaokrąglonych w dół) i trafia w losową lokalizację, nawet jeśli przy pierwszym ataku zadeklarowałeś celowanie.
+FALLOUT.TOOLTIPS.DamageEffect.stun: Jeżeli uzyskałeś na kościach co najmniej 1 Efekt, przeciwnik zostaje ogłuszony i nie może w swojej następnej turze wykonać normalnych akcji. Może jednak wydać Punkty Akcji, żeby wykonywać akcje dodatkowe.
+FALLOUT.TOOLTIPS.DamageEffect.vicious: Za każdy uzyskany na kościach Efekt zadane obrażenia zostają zwiększone o +1.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
-FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: The weapon consumes ammo at a much higher rate than other weapons. Each time the weapon is fired, it spends X ammo, rather than 1. In addition, extra damage requires spending X ammo per +1CD, with a maximum number of CD equal to the weapon’s Fire Rate. Additional uses of ammunition, such as the Burst damage effect, also spend X ammo for every 1 ammo that would normally be spent.
+FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: Broń zużywa amunicję znacznie szybciej niż inne bronie. Za każdym razem, gdy strzelasz z broni, zużywa ona X amunicji zamiast 1. Dodatkowo, obrażenia wymagają wydania X amunicji na każdy +1KW, z maksymalną liczbą CD równą szybkostrzelności broni. Dodatkowe użycie amunicji, takie jak efekt obrażeń Seria, również wymaga X amunicji na każde 1 amunicji, która byłaby normalnie wydana.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny – rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni."
-FALLOUT.TOOLTIPS.WeaponQuality.bombard: "The weapon can deliver a series of explosions over a wide area. This functions identically to the Blast quality, with one addition: When an attack is made with the weapon, you may spend additional ammunition to target additional zones. Each additional zone requires that 2 ammunition be spent, and additional zones must be adjacent to the initial target zone. Ammunition spent to target additional zones is limited by the weapon’s Fire Rate."
-FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
+FALLOUT.TOOLTIPS.WeaponQuality.bombard: "Broń może doprowadzić do serii wybuchów na szerokim obszarze. Funkcja ta działa identycznie jak cecha broni Wybuchowa z dodatkiem jednego: kiedy wykonywany jest atak bronią, możesz wydać dodatkową amunicję na wybrane dodatkowe strefy. Każda dodatkowa strefa wymaga spędzenia 2 amunicji, a dodatkowe strefy muszą być przyległe do początkowej strefy. Amunicja wydana na wybranie dodatkowych stref jest ograniczona szybkostrzelności broni."
+FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Broń ma niewielkie rozmiary lub można ją łatwo ukryć. Przeciwnik zdoła ją zauważyć tylko wtedy, kiedy trzymasz ją w dłoni lub cię przeszuka i wykona udany test PER + Przetrwania o trudności 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Trudność testów leczenia ran spowodowanych przez tę broń wzrasta o +1.
-FALLOUT.TOOLTIPS.WeaponQuality.delay_x: The weapon operates on a timer or fuse, and will not detonate immediately. A Thrown Delay weapon can be thrown normally to the target location, while other Delay weapons may be placed in their desired location. A Delay (1) weapon detonates at the start of the first round after it is thrown or otherwise triggered. A Delay (2) weapon detonates at the start of the round after that, and so on.
+FALLOUT.TOOLTIPS.WeaponQuality.delay_x: Broń działa na timer lub bezpiecznik i nie wybucha natychmiast. Broń Opóźnioną można normalnie rzucić w wybrane miejsce, podczas gdy inną broń opóźniającą można umieścić w wybranym miejscu. Broń opóźniająca (1) wybucha na początku pierwszej rundy po rzuceniu lub uruchomieniu w inny sposób. Broń opóźniająca (2) wybucha na początku następnej rundy i tak dalej.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Broń zużywa dziesięć razy więcej amunicji niż normalnie – zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni)."
-FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: When making an attack with an Inaccurate weapon, you gain no benefit from the Aim minor action. A weapon may not be both Accurate and Inaccurate.
-FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to make an attack at its ideal range.
-FALLOUT.TOOLTIPS.WeaponQuality.mine: When a Mine is placed onto a surface and primed, it becomes a dangerous object, inflicting its damage upon anyone who comes within Reach of it (and upon additional characters, if it has the Blast quality).
-FALLOUT.TOOLTIPS.WeaponQuality.night_vision: The sights of a weapon with Night Vision have been made to allow you to see more clearly in the dark. When you Aim with a Night Vision weapon, you ignore any increase in the difficulty of an attack due to darkness.
-FALLOUT.TOOLTIPS.WeaponQuality.parry: When an enemy attempts a melee attack against you, and you are wielding a Parry weapon, you may spend 1 AP to add +1 to your Defense against that attack.
-FALLOUT.TOOLTIPS.WeaponQuality.recon: When you Aim with a Recon weapon, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack.
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
-FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Kiedy atakujesz taką bronią, nie odnosisz żadnych korzyści z pomniejszej akcji celowania. Broń nie może być jednocześnie Celna i Niecelna.
+FALLOUT.TOOLTIPS.WeaponQuality.limited: Ograniczona broń może być użyta tylko do ataku w idealnym zasięgu.
+FALLOUT.TOOLTIPS.WeaponQuality.mine: Położona w jakimś miejscu i aktywowana staje się niebezpieczna i zadaje obrażenia dowolnej istocie, która znajdzie się w jej zasięgu bezpośrednim (oraz innym istotom, jeśli ma cechę Wybuchowa).
+FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Luneta broni posiada moduł noktowizyjny pozwalający wyraźniej widzieć w ciemnościach. Kiedy wykonujesz pomniejszą akcję celowania, ignorujesz modyfikatory do trudności ataku, które wynikają z ciemności.
+FALLOUT.TOOLTIPS.WeaponQuality.parry: Kiedy przeciwnik wykonuje atak wręcz, a ty dzierżysz w dłoni taką broń, możesz wydać 1 PA, żeby uzyskać przeciwko temu atakowi +1 do Obrony.
+FALLOUT.TOOLTIPS.WeaponQuality.recon: Kiedy wykonujesz pomniejszą akcję celowania, możesz oznaczyć cel. Następny sojusznik, który go zaatakuje, może przerzucić w teście ataku 1k20.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: Kiedy używasz tej broni, podczas każdego starcia możesz zignorować pierwszą komplikację, którą wyrzucisz na kościach. Broń nie może być jednocześnie Zawodna i Niezawodna.
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: Broń przeładowuje się szczególnie powoli. Po wystrzeleniu tej broni, musisz wykonać mniejszą akcję, aby przeładować broń, zanim zostanie ponownie wystrzelona.
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Kiedy używasz takiej broni, a przeciwnik nie zdaje sobie sprawy z twojej obecności, nie zauważa twojego ataku, chyba że sam jest jego celem lub wykona udany test PER + Przetrwania o trudności 2.
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: Dla broni Rzucanej (B) optymalnym dystansem ataku jest bliski. Dla broni Rzucanej (Ś) optymalnym dystansem ataku jest średni. Taki atak wymaga testu ZW + Rzucania.
+FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią skutecznie posługiwać. Jeśli używasz tylko jednej ręki, trudność testów ataku wzrasta o +2.
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: To nigdy nie było przeznaczone do użycia jako broń ręczna. Kiedy atakujesz bronią, każda komplikacja, którą zadajesz, zadaje 2KW obrażeń od promieniowania w wyniku radioaktywnego sprzężenia zwrotnego. Broń nie może posiadać zarówno stabilnego, jak i niestabilnego promieniowania.
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -429,7 +429,7 @@ FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
 FALLOUT.WEAPONS.damageEffect.freeze: Zamrażająca
 FALLOUT.WEAPONS.damageEffect.persistent: Uporczywe
-FALLOUT.WEAPONS.damageEffect.piercing_x: Piercing
+FALLOUT.WEAPONS.damageEffect.piercing_x: Przeszywające
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktywne
 FALLOUT.WEAPONS.damageEffect.spread: Rozrzut
 FALLOUT.WEAPONS.damageEffect.stun: Ogłuszające
@@ -439,25 +439,25 @@ FALLOUT.WEAPONS.damageType.physical: Fizyczne
 FALLOUT.WEAPONS.damageType.poison: Trucizna
 FALLOUT.WEAPONS.damageType.radiation: Radiacja
 FALLOUT.WEAPONS.weaponQuality.accurate: Celna
-FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Amunicjo-Żerna
 FALLOUT.WEAPONS.weaponQuality.blast: Wybuchowa
-FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
-FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
+FALLOUT.WEAPONS.weaponQuality.bombard: Bombardująca
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Zwarcie
 FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
-FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
+FALLOUT.WEAPONS.weaponQuality.delay_x: Opóźniona
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Niecelna
 FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
-FALLOUT.WEAPONS.weaponQuality.night_vision: Night Vision
+FALLOUT.WEAPONS.weaponQuality.night_vision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
 FALLOUT.WEAPONS.weaponQuality.slow_load: Wolne przeładowanie
 FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
-FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
+FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
