@@ -89,10 +89,10 @@
 			"flags": {}
 		},
 		{
-			"name": "skills",
-			"label": "Skills",
+			"name": "miscellany",
+			"label": "Miscellany",
 			"system": "fallout",
-			"path": "packs/skills",
+			"path": "packs/miscellany",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -102,6 +102,15 @@
 			"label": "Perks",
 			"system": "fallout",
 			"path": "packs/perks",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "skills",
+			"label": "Skills",
+			"system": "fallout",
+			"path": "packs/skills",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -164,6 +173,7 @@
 						"apparel",
 						"books_and_magz",
 						"consumables",
+						"miscellany",
 						"perks",
 						"skills",
 						"traits",

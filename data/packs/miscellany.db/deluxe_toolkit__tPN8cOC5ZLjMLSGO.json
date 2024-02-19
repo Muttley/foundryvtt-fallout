@@ -1,0 +1,21 @@
+{
+	"_id": "tPN8cOC5ZLjMLSGO",
+	"_key": "!items!tPN8cOC5ZLjMLSGO",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Deluxe Toolkit",
+	"system": {
+		"cost": 150,
+		"description": "<p>A heavy, but still technically portable, handled metal box containing an assortment of tools of different shapes, sizes, and functions, for opening and repairing a variety of mechanical and electronic devices. Having the right tool at your disposal can make most routine repairs simpler and can even allow you to attempt more ambitious projects away from the comforts of home.</p>",
+		"effect": "<p>Reduce the difficulty of Repair tests by 1 (minimum 0), May attempt Repair tests which normally require a workbench or similar at +1 difficulty</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 20
+	},
+	"type": "miscellany"
+}
