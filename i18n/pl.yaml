@@ -312,7 +312,7 @@ FALLOUT.TEMPLATES.Points: Punkty
 FALLOUT.TEMPLATES.POISON: TRUCIZNA
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Prepared: Przygotowany
-FALLOUT.TEMPLATES.Publication: Publication
+FALLOUT.TEMPLATES.Publication: Publikacja
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
 FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
@@ -380,16 +380,16 @@ FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Broń zużywa dziesięć razy więcej a
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Kiedy atakujesz taką bronią, nie odnosisz żadnych korzyści z pomniejszej akcji celowania. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Ograniczona broń może być użyta tylko do ataku w idealnym zasięgu.
 FALLOUT.TOOLTIPS.WeaponQuality.mine: Położona w jakimś miejscu i aktywowana staje się niebezpieczna i zadaje obrażenia dowolnej istocie, która znajdzie się w jej zasięgu bezpośrednim (oraz innym istotom, jeśli ma cechę Wybuchowa).
-FALLOUT.TOOLTIPS.WeaponQuality.night_vision: The sights of a weapon with Night Vision have been made to allow you to see more clearly in the dark. When you Aim with a Night Vision weapon, you ignore any increase in the difficulty of an attack due to darkness.
-FALLOUT.TOOLTIPS.WeaponQuality.parry: When an enemy attempts a melee attack against you, and you are wielding a Parry weapon, you may spend 1 AP to add +1 to your Defense against that attack.
-FALLOUT.TOOLTIPS.WeaponQuality.recon: When you Aim with a Recon weapon, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack.
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
-FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
+FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Luneta broni posiada moduł noktowizyjny pozwalający wyraźniej widzieć w ciemnościach. Kiedy wykonujesz pomniejszą akcję celowania, ignorujesz modyfikatory do trudności ataku, które wynikają z ciemności.
+FALLOUT.TOOLTIPS.WeaponQuality.parry: Kiedy przeciwnik wykonuje atak wręcz, a ty dzierżysz w dłoni taką broń, możesz wydać 1 PA, żeby uzyskać przeciwko temu atakowi +1 do Obrony.
+FALLOUT.TOOLTIPS.WeaponQuality.recon: Kiedy wykonujesz pomniejszą akcję celowania, możesz oznaczyć cel. Następny sojusznik, który go zaatakuje, może przerzucić w teście ataku 1k20.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: Kiedy używasz tej broni, podczas każdego starcia możesz zignorować pierwszą komplikację, którą wyrzucisz na kościach. Broń nie może być jednocześnie Zawodna i Niezawodna.
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: Broń przeładowuje się szczególnie powoli. Po wystrzeleniu tej broni, musisz wykonać mniejszą akcję, aby przeładować broń, zanim zostanie ponownie wystrzelona.
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Kiedy używasz takiej broni, a przeciwnik nie zdaje sobie sprawy z twojej obecności, nie zauważa twojego ataku, chyba że sam jest jego celem lub wykona udany test PER + Przetrwania o trudności 2.
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: Dla broni Rzucanej (B) optymalnym dystansem ataku jest bliski. Dla broni Rzucanej (Ś) optymalnym dystansem ataku jest średni. Taki atak wymaga testu ZW + Rzucania.
+FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią skutecznie posługiwać. Jeśli używasz tylko jednej ręki, trudność testów ataku wzrasta o +2.
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: To nigdy nie było przeznaczone do użycia jako broń ręczna. Kiedy atakujesz bronią, każda komplikacja, którą zadajesz, zadaje 2KW obrażeń od promieniowania w wyniku radioaktywnego sprzężenia zwrotnego. Broń nie może posiadać zarówno stabilnego, jak i niestabilnego promieniowania.
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -439,9 +439,9 @@ FALLOUT.WEAPONS.damageType.physical: Fizyczne
 FALLOUT.WEAPONS.damageType.poison: Trucizna
 FALLOUT.WEAPONS.damageType.radiation: Radiacja
 FALLOUT.WEAPONS.weaponQuality.accurate: Celna
-FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Amunicjo-Żerna
 FALLOUT.WEAPONS.weaponQuality.blast: Wybuchowa
-FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
+FALLOUT.WEAPONS.weaponQuality.bombard: Bombardująca
 FALLOUT.WEAPONS.weaponQuality.close_quarters: Zwarcie
 FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
