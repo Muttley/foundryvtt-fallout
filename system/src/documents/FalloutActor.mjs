@@ -665,6 +665,8 @@ export default class FalloutActor extends Actor {
 
 		const allUsed = newQuantity <= 0 ? true : false;
 
+		const currentWorldTime = game.time.worldTime;
+
 		const actorUpdateData = {};
 
 		if (consumableType !== "other") {
@@ -819,6 +821,11 @@ export default class FalloutActor extends Actor {
 			const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
 			const thirstReduction = item.system.thirstReduction ?? 0;
 
+			if (thirstReduction > 0) {
+				actorUpdateData["system.conditions.lastChanged.thirst"] =
+					currentWorldTime;
+			}
+
 			actorUpdateData["system.conditions.thirst"] =
 				 Math.max(currentThirst - thirstReduction, 0);
 		}
@@ -826,6 +833,9 @@ export default class FalloutActor extends Actor {
 		if (consumableType === "food") {
 			const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
 			const hungerReduction = item.system.prepared ? 2 : 1;
+
+			actorUpdateData["system.conditions.lastChanged.hunger"] =
+				currentWorldTime;
 
 			actorUpdateData["system.conditions.hunger"] =
 				 Math.max(currentHunger - hungerReduction, 0);

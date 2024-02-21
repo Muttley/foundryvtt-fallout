@@ -281,6 +281,11 @@
 					"alcoholic": false,
 					"fatigue": 0,
 					"hunger": 0,
+					"lastChanged": {
+						"hunger": 0,
+						"sleep": 0,
+						"thirst": 0
+					},
 					"intoxication": 0,
 					"sleep": 0,
 					"thirst": 0
