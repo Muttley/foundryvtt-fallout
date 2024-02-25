@@ -247,11 +247,17 @@ export class Roller2D20 {
 
 	static async rollD6({
 		actor = null,
-		dicenum = 2,
+		diceNum = 2,
 		rollname = "Roll D6",
 		weapon = null,
+		otherdmgdice=0,
+		firerateamo=0,
 	}={}) {
-		let formula = `${dicenum}dc`;
+		let dmgmod=parseInt(firerateamo);
+		if (weapon.system.damage.weaponQuality.gatling.value) {
+			dmgmod = 2 * dmgmod;
+		}
+		let formula = `${diceNum+otherdmgdice+dmgmod}dc`;
 		let roll = new Roll(formula);
 
 		await roll.evaluate({ async: true });
@@ -261,6 +267,9 @@ export class Roller2D20 {
 			roll: roll,
 			weapon: weapon,
 			actor: actor,
+			diceNum: diceNum,
+			otherdmgdice: otherdmgdice,
+			firerateamo: firerateamo,
 		});
 	}
 
@@ -272,6 +281,9 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll D6",
 		weapon = null,
+		diceNum =0,
+		otherdmgdice =0,
+		firerateamo=0,
 	}={}) {
 		let diceResults = [
 			{ result: 1, effect: 0 },
@@ -311,6 +323,9 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			weapon: weapon,
+			otherdmgdice: otherdmgdice,
+			diceNum: diceNum,
+			firerateamo: firerateamo,
 		});
 	}
 
@@ -368,6 +383,9 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll D6",
 		weapon = null,
+		otherdmgdice,
+		diceNum,
+		firerateamo,
 	}={}) {
 		let damage = dicesRolled.reduce(
 			(a, b) => ({ result: a.result + b.result })
@@ -405,6 +423,9 @@ export class Roller2D20 {
 			results: dicesRolled,
 			weaponDamageTypesList,
 			weapon,
+			diceNum: diceNum,
+			other: otherdmgdice,
+			firerateamo: firerateamo,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/rollD6.hbs", rollData);
@@ -415,7 +436,21 @@ export class Roller2D20 {
 		falloutRoll.effects = effects;
 		falloutRoll.rerollIndexes = rerollIndexes;
 		falloutRoll.diceFace = "d6";
+		falloutRoll.diceNum = diceNum;
+		falloutRoll.otherdmgdice = otherdmgdice;
+		falloutRoll.firerateamo = firerateamo;
+		const weapondmgdice = game.i18n.localize("FALLOUT.Weapondamagedice");
+		let additionaludesamo="";
+		console.log(weapon);
+		if ( weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed") {
+			additionaludesamo=game.i18n.localize("FALLOUT.Additionalmeledmg");
+		}
+		else {
+			additionaludesamo=game.i18n.localize("FALLOUT.Additionalamo");
+		}
+		const bonusdmg=game.i18n.localize("FALLOUT.Bonusdmg");
 		let chatData = {
+			flavor: `${weapondmgdice}: ${diceNum}<br>`+`${additionaludesamo}: ${firerateamo}<br>`+`${bonusdmg}: ${otherdmgdice}`,
 			user: game.user.id,
 			rollMode: game.settings.get("core", "rollMode"),
 			content: html,

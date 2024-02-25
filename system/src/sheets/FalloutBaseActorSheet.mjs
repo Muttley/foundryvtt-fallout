@@ -343,6 +343,8 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				diceNum: numOfDice,
 				actor: actorUUID,
 				weapon: item,
+				otherdmgdice: 0,
+				firerateamo: 0,
 			});
 		});
 
