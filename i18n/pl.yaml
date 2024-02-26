@@ -1,7 +1,3 @@
- FALLOUT.Weapondamagedice: Kości obrażeń broni
-  FALLOUT.Additionalamo: Dodatkowe kości obrażeń za użytą amunicje
-  FALLOUT.Bonusdmg: Dodatkowe kości obrażeń
-  FALLOUT.Additionalmeledmg: Dodatkowe obrażenia za drużunowe PA
 FALLOUT.AbilityAbbr.agi: ZW
 FALLOUT.AbilityAbbr.cha: CHA
 FALLOUT.AbilityAbbr.end: WT
@@ -26,6 +22,8 @@ FALLOUT.Actor.Warnings.DerivedValue: Jest to wartość obliczona automatycznie, 
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ten NPC jest już mieszkańcem {settlementName}
 FALLOUT.Actor.Warnings.NpcMissing: Nie można znaleźć osadnika z UUID {uuid}, więc został usunięty z {settlementName}
 FALLOUT.Add: Dodaj
+FALLOUT.Additionalamo: Dodatkowe kości obrażeń za użytą amunicje
+FALLOUT.Additionalmeledmg: Dodatkowe obrażenia za drużunowe PA
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
 FALLOUT.APP.ChemDoseManager.title: Dawki środków chemicznych
@@ -95,6 +93,7 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Ramie 3
 FALLOUT.BodyTypes.robot.legR: Silnik
 FALLOUT.BodyTypes.robot.torso: Korpus
+FALLOUT.Bonusdmg: Dodatkowe kości obrażeń
 FALLOUT.CHAT_MESSAGE.addiction.body: {actorName} zostaje uzależniony od {itemName}
 FALLOUT.CHAT_MESSAGE.addiction.title: Uzależnienie od środków chemicznych
 FALLOUT.CHAT_MESSAGE.alcoholic.body: {actorName} przez picie {itemName} stał się alkoholikiem
@@ -472,6 +471,7 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Broń Biała
 FALLOUT.WEAPONS.weaponType.smallGuns: Broń palna
 FALLOUT.WEAPONS.weaponType.throwing: Rzucana
 FALLOUT.WEAPONS.weaponType.unarmed: Bez Broni
+FALLOUT.Weapondamagedice: Kości obrażeń broni
 ITEM.AmmoPerShot: Amunicja na strzał
 TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie

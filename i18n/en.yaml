@@ -1,8 +1,4 @@
 
-FALLOUT.Weapondamagedice: Weapond damage dices
-FALLOUT.Additionalamo: Additionali damage dice from used amo
-FALLOUT.Bonusdmg: Additional damage dice
-FALLOUT.Additionalmeledmg: Additional damage dice from party AP
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: cha
 FALLOUT.AbilityAbbr.end: end
@@ -27,6 +23,8 @@ FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that canno
 FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
 FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
 FALLOUT.Add: Add
+FALLOUT.Additionalamo: Additionali damage dice from used amo
+FALLOUT.Additionalmeledmg: Additional damage dice from party AP
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
 FALLOUT.APP.ChemDoseManager.title: Chem Doses
@@ -96,6 +94,7 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Arm 3
 FALLOUT.BodyTypes.robot.legR: Main Body
 FALLOUT.BodyTypes.robot.torso: Main Body
+FALLOUT.Bonusdmg: Additional damage dice
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
 FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
@@ -473,6 +472,7 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
 FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
+FALLOUT.Weapondamagedice: Weapond damage dices
 ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
