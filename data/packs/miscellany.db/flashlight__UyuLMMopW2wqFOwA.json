@@ -1,0 +1,21 @@
+{
+	"_id": "UyuLMMopW2wqFOwA",
+	"_key": "!items!UyuLMMopW2wqFOwA",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Flashlight",
+	"system": {
+		"cost": 100,
+		"description": "<p>A sturdy, battery-operated light source that can easily be directed to points of interest. Long-lasting, high-capacity batteries keep the light working for a long time.</p>",
+		"effect": "<p>Generates bright light in a single zone within Medium range; the user may choose which zone is illuminated</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "miscellany"
+}

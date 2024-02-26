@@ -1,0 +1,21 @@
+{
+	"_id": "tJzODq60DVEMlpF9",
+	"_key": "!items!tJzODq60DVEMlpF9",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Doctor's Bag",
+	"system": {
+		"cost": 300,
+		"description": "<p>A well-stocked bag of medical supplies and useful tools for the science of healing. A bit cumbersome to haul around, but the people whose lives you save will thank you for the effort.</p>\n<p>A doctor&rsquo;s bag may also contain one-use medical supplies like Stimpaks, purified water, and RadAway. These are tracked and used separately.</p>",
+		"effect": "<p>Reduce the difficulty of Medicine tests by 1 (minimum 0), When providing long-term care, allows care of up to 2 additional patients</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 10
+	},
+	"type": "miscellany"
+}
