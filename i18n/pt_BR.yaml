@@ -194,9 +194,10 @@ FALLOUT.SKILL.Survival: Survival
 FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
 FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Habilidades
 FALLOUT.TEMPLATES.Add_Perk: Add Perk
