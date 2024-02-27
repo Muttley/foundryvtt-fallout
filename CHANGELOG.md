@@ -22,6 +22,7 @@
 - [#161] Added Trait item compendium (10 items)
 - [#162] Added Weapons item compendium (68 items)
 - [#163] Added Weapon Mods item compendium (145 items)
+- [#169] Allow settlement job assignment numbers to be modified by Active Effects
 - [#171] Add new text enricher to detect +/-nCD or +/-nDc (where +/- is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
 
 ## Bugfixes

@@ -209,7 +209,10 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	async _prepareItems(context) {
 		context.settlers = [];
-		context.settlerActionCounts = {
+
+		const assignments = duplicate(this.actor.system.assignments ?? {});
+
+		context.settlerActionCounts = mergeObject({
 			build: 0,
 			business: 0,
 			guard: 0,
@@ -218,7 +221,7 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 			tend_crops: 0,
 			trade_caravan: 0,
 			unnasigned: 0,
-		};
+		}, assignments);
 
 		context.stockpile = [];
 		context.stockpileUsed = 0;
