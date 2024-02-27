@@ -24,7 +24,7 @@
 - [#163] Added Weapon Mods item compendium (145 items)
 - [#169] Allow settlement job assignment numbers to be modified by Active Effects
 
-	The following keys can be used to adjust the number of job assignments in a settlement:
+	* The following keys can be used to adjust the number of job assignments in a settlement:
 	~~~
 	system.assignments.build
 	system.assignments.business
@@ -50,6 +50,8 @@
 - [#175] Retire the hovers.json facility as we are allowed to have this information in the i18n files for use in tooltips
 
 	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
+
+- [#184] Deprecate the "Mouse Hover JSON file" setting
 
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
 
