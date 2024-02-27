@@ -42,19 +42,6 @@ export default function registerSettings() {
 		type: String,
 	});
 
-
-	game.settings.register(SYSTEM_ID, "hoversJsonLocation", {
-		name: "Mouse Hover JSON file",
-		hint: "Location of the json file containing the text for qualities and damage effects.",
-		scope: "world",
-		config: true,
-		default: "systems/fallout/assets/hovers.json",
-		type: String,
-		filePicker: true,
-		restricted: true,
-		requiresReload: true,
-	});
-
 	game.settings.register(SYSTEM_ID, "gmMomentumShowToPlayers", {
 		name: "Show Overseer AP To Players",
 		hint: "Shows the Overseer's AP window to everyone. Requires refresh on the players side.",
@@ -126,6 +113,9 @@ export default function registerSettings() {
 		requiresReload: true,
 	});
 
+	// TODO Implement sourceFilters fully once background items and character
+	// creation are implemented
+	//
 	game.settings.register(SYSTEM_ID, "sourceFilters", {
 		name: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.title"),
 		hint: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.hint"),
