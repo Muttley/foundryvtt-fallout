@@ -1,8 +1,10 @@
 # Useful Active Effect Keys
 
-This document lists various useful data keys that can be used to adjust values with Active Effects if needed.
+This document lists various useful data keys that can be used to adjust values
+with Active Effects if needed.
 
-It is not meant to be an expansive list, and only covers some of the more useful keys.
+It is not meant to be an expansive list, and only covers some of the more useful
+keys.
 
 ## Characters & Robots
 
