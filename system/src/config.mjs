@@ -193,9 +193,10 @@ FALLOUT.NPC_CATEGORIES = {
 
 FALLOUT.OFFICIAL_SOURCES = {
 	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
-	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
+	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
+	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
 	winter_of_atom: "FALLOUT.SOURCE_TITLE.winter_of_atom",
 };
 

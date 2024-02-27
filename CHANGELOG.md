@@ -37,6 +37,7 @@
 	~~~
 
 - [#171] Add new text enricher to detect +/-nCD or +/-nDc (where +/- is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
+- [#172] Added Miscellany item compendium (19 items)
 
 ## Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials
