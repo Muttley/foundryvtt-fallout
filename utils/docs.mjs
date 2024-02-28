@@ -6,17 +6,13 @@ import stringify from "json-stable-stringify-pretty";
 const docs = [
 	{
 		src: "./CHANGELOG.md",
-		dst: "./data/packs/system-documentation.db/release_notes__auV5NLfnrA5zUr9q.json",
+		dst: "./data/packs/system_documentation.db/release_notes__auV5NLfnrA5zUr9q.json",
 	},
 	{
 		src: "./data/docs/active-effects.md",
-		dst: "./data/packs/system-documentation.db/active_effects__c3srsy3XNwoUiMC8.json",
+		dst: "./data/packs/system_documentation.db/active_effects__c3srsy3XNwoUiMC8.json",
 	},
 ];
-
-// const NOTES_SRC_PATH = "./CHANGELOG.md";
-// const JOURNAL_JSON =
-// 	"./data/packs/system-documentation.db/release_notes__auV5NLfnrA5zUr9q.json";
 
 function compileDocs(cb) {
 	for (const doc of docs) {
