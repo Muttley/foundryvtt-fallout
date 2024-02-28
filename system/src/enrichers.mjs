@@ -3,39 +3,53 @@ export default function registerTextEditorEnrichers() {
 		{
 			pattern: /@fos\[(.+?)\]/gm,
 			enricher: async (match, options) => {
-				const span = document.createElement("span");
-				span.style.fontFamily = "fallout";
-				if (match[1] === "DC") {
-					span.innerHTML = "";
+				const i = document.createElement("i");
+
+				switch (match[1]) {
+					case "CD":
+					case "DC":
+						i.classList.add("fo-pip-boy");
+						break;
+					case "CDC":
+					case "DCC":
+						i.classList.add("fo-pip-boy", "fo-blue");
+						break;
+					case "EN":
+						i.classList.add("fo-energy");
+						break;
+					case "PH":
+						i.classList.add("fo-physical");
+						break;
+					case "PO":
+						i.classList.add("fo-poison");
+						break;
+					case "RA":
+						i.classList.add("fo-radiation");
+						break;
 				}
-				else if (match[1] === "PH") {
-					span.innerHTML = "";
-				}
-				else if (match[1] === "EN") {
-					span.innerHTML = "";
-				}
-				else if (match[1] === "PO") {
-					span.innerHTML = "";
-				}
-				else if (match[1] === "RA") {
-					span.innerHTML = "";
-				}
-				return span;
+
+				return i;
 			},
 		},
 		{
-			pattern: /((\+|-)?\d+)\s*(CD|DC)/gm,
+			pattern: /((\+|-)?\d+)?\s*(CDC?|DCC?)/gm,
 			enricher: async (match, options) => {
-				const outerSpan = document.createElement("span");
-				outerSpan.innerHTML = `${match[1]}&nbsp;`;
+				const i = document.createElement("i");
+				i.classList.add("fo-pip-boy");
 
-				const span = document.createElement("span");
-				span.style.fontFamily = "fallout";
-				span.innerHTML = "";
+				if (["CDC", "DCC"].includes(match[3])) {
+					i.classList.add("fo-blue");
+				}
 
-				outerSpan.appendChild(span);
-
-				return outerSpan;
+				if (match[1]) {
+					const outerSpan = document.createElement("span");
+					outerSpan.innerHTML = `${match[1]}&nbsp;`;
+					outerSpan.appendChild(i);
+					return outerSpan;
+				}
+				else {
+					return i;
+				}
 			},
 		},
 	]);
