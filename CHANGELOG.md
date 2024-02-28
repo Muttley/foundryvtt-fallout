@@ -38,6 +38,7 @@
 
 - [#171] Add new text enricher to detect +/-nCD or +/-nDc (where +/- is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
 - [#172] Added Miscellany item compendium (19 items)
+- [#178] Added Robot Modules item compendium (13 items)
 
 ## Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials
@@ -48,9 +49,7 @@
 ## Chores
 - [#174] Tidy up Weapon Quality and Damage Effect data in schema
 - [#175] Retire the hovers.json facility as we are allowed to have this information in the i18n files for use in tooltips
-
 	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
-
 - [#184] Deprecate the "Mouse Hover JSON file" setting
 
 *Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*

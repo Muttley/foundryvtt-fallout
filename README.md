@@ -4,9 +4,9 @@
 [![Crowdin](https://badges.crowdin.net/foundryvtt-fallout/localized.svg)](https://crowdin.com/project/foundryvtt-fallout)
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Ffallout)
 
-# Fallout 2d20 System for Foundry VTT
+# Fallout: The Roleplaying Game for Foundry VTT
 
-This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the books is included.
+This is an unoffical Fallout 2d20 system for Foundry VTT.
 
 ## Actor Types
 
@@ -14,9 +14,11 @@ This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the b
 - Creature
 - NPC
 - Robot
+- Settlement
 
 ## Item Types
 
+- Addiction
 - Ammo
 - Apparel
 - Apparel Mod
@@ -28,11 +30,26 @@ This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the b
 - Robot Modules
 - Skill
 - Special Ability
+- Trait
 - Weapon
 - Weapon Mod
 
 ## Features
 
+- The following compendiums containing items from the core rulebook are included with the kind permission of Modiphius Entertainment:
+	* Addictions item compendium (12 items)
+	* Ammunition item compendium (20 items)
+	* Apparel item compendium (161 items)
+	* Apparel Mods item compendium (161 items)
+	* Books and Magazines item compendium (95 items)
+	* Consumables item compendium (137 items)
+	* Miscellany item compendium (19 items)
+	* Perks item compendium (# items)
+	* Robot Modules item compendium (13 items)
+	* Skills item compendium (17 items)
+	* Traits item compendium (10 items)
+	* Weapon Mods item compendium (145 items)
+	* Weapons item compendium (68 items)
 - Dice Roller Macros for D20 and DC Rolls. You can find them in the fallout-macros compendium. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects. It can be triggered separately or from the Attributes/Skills/Weapons. (Dice So Nice module supported)
 - Custom CD roll: "`/r 1dc`" and modifiers to count the effects ("`/r 1dcef`") or count total results summed ("`/r 1dcsum`")
 - Pipboy Screen for Characters and Robots (player sheets)
@@ -49,7 +66,7 @@ This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the b
 - Action Points trackers for Overseer and the Party
 - Location Die "`1dh`" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
 - A way to write fallout symbols in the journal entries:
-	* `@fos[DC]` for DC die symbol
+	* `@fos[DC]` or `@fos[CD]` for DC (Pip-Boy) die symbol
 	* `@fos[PH]` for Physical damage type
 	* `@fos[EN]` for Energy damage type
 	* `@fos[PO]` for Poison damage type

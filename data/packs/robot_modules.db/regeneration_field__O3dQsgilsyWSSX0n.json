@@ -1,0 +1,24 @@
+{
+	"_id": "O3dQsgilsyWSSX0n",
+	"_key": "!items!O3dQsgilsyWSSX0n",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+	"name": "Regeneration Field",
+	"system": {
+		"cost": 125,
+		"description": "<p>An experimental technology designed to provide aid to injured people where extensive medical care is in short supply, the robot is fitted with a device which projects a restorative signal over a short distance which stimulates the human body&rsquo;s natural healing processes.</p>",
+		"effect": "<p>Outside of combat, allies regain 2 HP at the start of each scene you are present within</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"perks": "Robotics Expert 2, Science! 2",
+		"quantity": 1,
+		"rarity": 5,
+		"source": "",
+		"stashed": false,
+		"weight": -25
+	},
+	"type": "robot_mod"
+}
