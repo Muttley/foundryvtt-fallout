@@ -80,10 +80,10 @@
 			"flags": {}
 		},
 		{
-			"name": "fallout-macros",
+			"name": "fallout_macros",
 			"label": "Fallout Macros",
 			"system": "fallout",
-			"path": "packs/fallout-macros",
+			"path": "packs/fallout_macros",
 			"type": "Macro",
 			"private": false,
 			"flags": {}
@@ -107,6 +107,15 @@
 			"flags": {}
 		},
 		{
+			"name": "robot_modules",
+			"label": "Robot Modules",
+			"system": "fallout",
+			"path": "packs/robot_modules",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "skills",
 			"label": "Skills",
 			"system": "fallout",
@@ -116,10 +125,10 @@
 			"flags": {}
 		},
 		{
-			"name": "system-documentation",
+			"name": "system_documentation",
 			"label": "System Documentation",
 			"system": "fallout",
-			"path": "packs/system-documentation",
+			"path": "packs/system_documentation",
 			"type": "JournalEntry",
 			"private": false,
 			"flags": {}
@@ -158,8 +167,8 @@
 			"sorting": "a",
 			"color": "#293f5f",
 			"packs": [
-				"fallout-macros",
-				"system-documentation"
+				"fallout_macros",
+				"system_documentation"
 			],
 			"folders": [
 				{
@@ -175,6 +184,7 @@
 						"consumables",
 						"miscellany",
 						"perks",
+						"robot_modules",
 						"skills",
 						"traits",
 						"weapon_mods",
