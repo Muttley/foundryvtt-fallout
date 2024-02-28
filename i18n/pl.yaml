@@ -25,6 +25,12 @@ FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
 FALLOUT.APP.ChemDoseManager.title: Dawki środków chemicznych
+FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
+FALLOUT.APP.PartySleep.description: How Long?
+FALLOUT.APP.PartySleep.hour: 1 hour
+FALLOUT.APP.PartySleep.hours: "{length} hours"
+FALLOUT.APP.PartySleep.safe_location: Location Safe?
+FALLOUT.APP.PartySleep.title: Party Sleep
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
@@ -194,10 +200,10 @@ FALLOUT.SKILL.Survival: Przetrwanie
 FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
 FALLOUT.SOURCE_TITLE.core_rulebook: Podręcznik Główny
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "Pakiet BN #2: Pozostałości Enklawy"
+FALLOUT.SOURCE_TITLE.rust_devils: "Pakiet BN #1: Rdzawe Diabły"
 FALLOUT.SOURCE_TITLE.settlers_guide: Przewodnik Osadnika
-FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
+FALLOUT.SOURCE_TITLE.wanderers_guide: Przewodnik Wędrowca
 FALLOUT.SOURCE_TITLE.winter_of_atom: Atomowa Zima
 FALLOUT.TEMPLATES.Abilities: Umiejętności
 FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
@@ -359,6 +365,7 @@ FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
+FALLOUT.TEMPLATES.WellRested: Well Rested
 FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.

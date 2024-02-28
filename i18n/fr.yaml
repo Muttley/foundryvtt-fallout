@@ -25,6 +25,12 @@ FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
+FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
+FALLOUT.APP.PartySleep.description: How Long?
+FALLOUT.APP.PartySleep.hour: 1 hour
+FALLOUT.APP.PartySleep.hours: "{length} hours"
+FALLOUT.APP.PartySleep.safe_location: Location Safe?
+FALLOUT.APP.PartySleep.title: Party Sleep
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Piece d'Armure
@@ -359,6 +365,7 @@ FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
 FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
+FALLOUT.TEMPLATES.WellRested: Well Rested
 FALLOUT.TOOLTIPS.DamageEffect.arc: Chaque Effet obtenu permet de toucher une cible supplémentaire à courte portée de la cible initiale. Chaque cible supplémentaire subit la moitié des dégâts (arrondi au supérieur). Mais contrairement à En rafale, cela ne coute pas de munitions supplémentaires.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Pour chaque Effet obtenu sur le jet de dégâts, réduisez de 1 le nombre de @fos[DC] d'abri fournis par un abri, de manière permanente. Si la cible n'a pas d'abri, réduisez de 1 la résistance aux dégâts sur la localisation touchée, selon le type de dégâts de l'arme (les dégâts balistiques réduisent la résistance aux dégâts balistiques et les dégâts énergétiques réduisent la résistance aux dégâts énergétiques).
 FALLOUT.TOOLTIPS.DamageEffect.burst: L'attaque peut toucher une cible supplémentaire à portée courte de la cible principale pour chaque Effet obtenu sur le jet de dégâts. Chaque cible supplémentaire coûte 1 munition de plus.
