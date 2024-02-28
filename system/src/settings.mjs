@@ -33,15 +33,6 @@ export default function registerSettings() {
 	//  PUBLIC SETTINGS
 	// -----------------
 	//
-	game.settings.register(SYSTEM_ID, "skillsCompendium", {
-		name: "Skills Compendium",
-		hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
-		scope: "world",
-		config: true,
-		default: "fallout.skills",
-		type: String,
-	});
-
 	game.settings.register(SYSTEM_ID, "gmMomentumShowToPlayers", {
 		name: "Show Overseer AP To Players",
 		hint: "Shows the Overseer's AP window to everyone. Requires refresh on the players side.",
@@ -63,6 +54,15 @@ export default function registerSettings() {
 	game.settings.register(SYSTEM_ID, "automaticAmmunitionCalculation", {
 		name: "Ammunition Calculation",
 		hint: "Automatically decreases the ammunition count on the character sheet for weapon Items that have the Ammo field populated. Ammunition is decreased: 1. on the initial shot (d20 roll dialog) 2. when adding more dice to the DC (d6 roll dialog) 3. when adding more dice to a previously-rolled DC result (-Add- button in Chat Dialog). It takes in to the account Gatling (x10 ammo consumed) quality. It does NOT automatically reduce the ammo for the Burst effects, Gun-Fu perk, nor for the Accurate qulity.",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
+
+	game.settings.register(SYSTEM_ID, "conditionsSkipMissingPlayers", {
+		name: "Conditions Skip Missing Players",
+		hint: "Skip characters owned by players who are not logged in when changing party condition levels.",
 		scope: "world",
 		config: true,
 		default: true,
@@ -124,6 +124,15 @@ export default function registerSettings() {
 		type: Array,
 		requiresReload: true,
 		default: [],
+	});
+
+	game.settings.register(SYSTEM_ID, "skillsCompendium", {
+		name: "Skills Compendium",
+		hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
+		scope: "world",
+		config: true,
+		default: "fallout.skills",
+		type: String,
 	});
 
 	// ----------------

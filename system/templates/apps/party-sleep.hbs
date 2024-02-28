@@ -1,0 +1,36 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<div class="flexrow resource-row align-mid">
+		<label class="resource-label">
+			{{localize "FALLOUT.APP.PartySleep.description"}}
+		</label>
+		<input
+			id="lengthOfSleep"
+			max="24"
+			min="1"
+			name="lengthOfSleep"
+			type="range"
+			value="{{lengthOfSleep}}"
+			autofocus
+		/>
+	</div>
+	<div class="flexrow resource-row align-mid">
+		<label class="resource-label">
+			{{localize "FALLOUT.APP.PartySleep.safe_location"}}
+		</label>
+		<input
+			id="safeLocation"
+			name="safeLocation"
+			type="checkbox"
+		>
+	</div>
+	<div class="dialog-inputs">
+		<button class="fallout-button" id="sleepSubmitButton">
+			<i class="fa-solid fa-bed"></i>
+			{{#ifCond lengthOfSleep '>' 1}}
+				{{localize "FALLOUT.APP.PartySleep.hours" length=lengthOfSleep}}
+			{{else}}
+				{{localize "FALLOUT.APP.PartySleep.hour"}}
+			{{/ifCond}}
+		</button>
+	</div>
+</form>

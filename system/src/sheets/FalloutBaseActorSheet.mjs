@@ -14,7 +14,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
 			width: 780,
-			height: 940,
+			height: 970,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",

@@ -41,6 +41,10 @@ export default class FalloutActor extends Actor {
 		return this.type === "robot";
 	}
 
+	get isWellRested() {
+		return this.type === "character" && this.system.conditions.wellRested;
+	}
+
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -284,6 +288,11 @@ export default class FalloutActor extends Actor {
 			+ currentLevel - 1
 			- this.system.radiation
 			+ this.system.health.bonus;
+
+		if (this.isWellRested) {
+			this.system.health.value += 2;
+			this.system.health.max += 2;
+		}
 
 		this.system.health.value = Math.min(
 			this.system.health.value,
@@ -887,6 +896,25 @@ export default class FalloutActor extends Actor {
 		return addiction ? true : false;
 	}
 
+	ownerIsOnline() {
+		const onlineUsers = game.users.filter(
+			user => !user.isGM && user.active
+		);
+
+		let hasActiveOwner = false;
+
+		for (const user of onlineUsers) {
+			if (actor.ownership[user._id] === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+				|| actor.ownership.default === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+			) {
+				hasActiveOwner = true;
+				break;
+			}
+		}
+
+		return hasActiveOwner;
+	}
+
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
 		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);
@@ -944,5 +972,34 @@ export default class FalloutActor extends Actor {
 		}
 
 		this.update(updateData);
+	}
+
+	async _sleep(hours, safe=false) {
+		const currentSleepStatus = this.system.conditions?.sleep ?? 0;
+
+		let newFatigue = this.system.conditions?.fatigue ?? 0;
+		let newSleepStatus = currentSleepStatus;
+		let newWellRested = false;
+
+		if (hours >= 8 && safe) newWellRested = true;
+		if (hours >= 6) {
+			newSleepStatus = CONFIG.FALLOUT.CONDITIONS.sleep.rested;
+			newFatigue = 0;
+		}
+		else if (hours >= 1) {
+			if (newSleepStatus > 0) newSleepStatus--;
+		}
+
+		await this.update({
+			"system.conditions.fatigue": newFatigue,
+			"system.conditions.lastChanged.sleep": game.time.worldTime,
+			"system.conditions.sleep": newSleepStatus,
+			"system.conditions.wellRested": newWellRested,
+		});
+	}
+
+	async sleep(hours, safe=false) {
+		// TODO Handle using Simple Calendar here if needed
+		return await this._sleep(hours, safe);
 	}
 }

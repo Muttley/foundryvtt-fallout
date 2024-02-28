@@ -46,6 +46,13 @@ export default class FalloutChat {
 		);
 	}
 
+	static async renderPartySleepMessage(data, mode) {
+		this._renderChatMessage(null, data,
+			"systems/fallout/templates/chat/party-sleep.hbs",
+			mode
+		);
+	}
+
 	static async onRenderChatMessage(message, html, data) {
 		fallout.logger.debug("Running renderChatMessage hook");
 

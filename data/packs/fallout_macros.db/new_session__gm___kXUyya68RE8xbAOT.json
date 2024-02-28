@@ -1,0 +1,11 @@
+{
+	"_id": "kXUyya68RE8xbAOT",
+	"_key": "!macros!kXUyya68RE8xbAOT",
+	"author": "rXFK9o74so92otWM",
+	"command": "/**\n ***************************************************************\n * This macro can be used to launch the Party Sleep tool which\n * allows the GM to trigger sleep periods for all player\n * characters.\n *\n * This tool performs the following:\n *\n *    - Adjusts the current sleep/fatigue levels of all player\n *      characters depending on the amount of sleep chosen.\n *\n *    - Applies/Resets the Well Rested bonus if appropriate.\n *\n *    - If the \"Conditions Skip Missing Players\" system setting\n *      is checked, only characters which have a currently\n *      logged in owner are updated.\n *\n * NOTE: Only users with the Game Master user role can run this\n * macro.\n **************************************************************/\n\nfallout.macros.partySleep();",
+	"folder": null,
+	"img": "systems/fallout/assets/icons/macro/new-session.svg",
+	"name": "New Session (GM)",
+	"scope": "global",
+	"type": "script"
+}
