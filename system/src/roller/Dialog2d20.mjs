@@ -57,7 +57,36 @@ export class Dialog2d20 extends Dialog {
 			}
 			this.apmanagment(html, numberofdice);
 		});
-		this.data.buttons.roll.callback=this.rollButton.bind(this);
+		html.on("click", () => {
+			let ap = game.settings.get("fallout", "partyAP");
+			this.element.find('[name="current_ap"]').val(ap);
+			let numberofdice = 0;
+			for (let i = 2; i <= 5; i++) {
+				const diceElement =this.element.find(`[data-index="${i}"]`);
+				const containsMarked = diceElement.hasClass("marked");
+				if (containsMarked) {
+					numberofdice = i;
+				}
+			}
+			this.apmanagment(html, numberofdice);
+		});
+
+
+		this.data.buttons.roll.callback = () => {
+			let ap = game.settings.get("fallout", "partyAP");
+			this.element.find('[name="current_ap"]').val(ap);
+			let numberofdice = 0;
+			for (let i = 2; i <= 5; i++) {
+				const diceElement =this.element.find(`[data-index="${i}"]`);
+				const containsMarked = diceElement.hasClass("marked");
+				if (containsMarked) {
+					numberofdice = i;
+				}
+			}
+			this.apmanagment(html, numberofdice);
+			this.rollButton(this);
+		};
+
 		this.data.buttons.help.callback=this.AssistanceButton.bind(this);
 	}
 
@@ -66,8 +95,8 @@ export class Dialog2d20 extends Dialog {
 		let skill = this.element.find('[name="skill"]').val();
 		let complication = this.element.find('[name="complication"]').val();
 		let isTag = this.element.find('[name="tag"]').is(":checked");
-		let spendap = this.element.find('[name="spend_ap"]').val();
-		let bgmap = parseInt(this.element.find('[name="by_from_gm"]').val());
+		let apspend = this.element.find('[name="spend_ap"]').val();
+		let apbuy = parseInt(this.element.find('[name="by_from_gm"]').val());
 		this.rolling = true;
 		let numberofdice = 0;
 		for (let i = 2; i <= 5; i++) {
@@ -87,19 +116,21 @@ export class Dialog2d20 extends Dialog {
 			rollLocation: this.rollLocation,
 			item: this.item,
 			actor: this.actor,
+			apspend: apspend,
+			apbuy: apbuy,
 		}).then(result => this.deferred.resolve(result));
 
 		let ap = game.settings.get("fallout", "partyAP");
 		let gmap = parseInt(game.settings.get("fallout", "gmAP"));
 
-		if (bgmap>0) {
+		if (apbuy>0) {
 			ap = 0;
 			fallout.APTracker.setAP("partyAP", ap);
-			let givegmap = bgmap + gmap;
+			let givegmap = apbuy + gmap;
 			fallout.APTracker.setAP("gmAP", givegmap);
 		}
 		else {
-			let leftpartyap = ap - spendap;
+			let leftpartyap = ap - apspend;
 			fallout.APTracker.setAP("partyAP", leftpartyap);
 		}
 		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
@@ -125,6 +156,8 @@ export class Dialog2d20 extends Dialog {
 		let attr = this.element.find('[name="attribute"]').val();
 		let skill = this.element.find('[name="skill"]').val();
 		let complication = this.element.find('[name="complication"]').val();
+		let apbuy = this.element.find('[name="by_from_gm"]').val();
+		let apspend = this.element.find('[name="spend_ap"]').val();
 		let isTag = this.element.find('[name="tag"]').is(":checked");
 		this.rolling = true;
 		fallout.Roller2D20.rollD20({
@@ -137,6 +170,8 @@ export class Dialog2d20 extends Dialog {
 			rollLocation: this.rollLocation,
 			item: this.item,
 			actor: this.actor,
+			apspend: apspend,
+			apbuy: apbuy,
 		}).then(result => this.deferred.resolve(result));
 
 		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
@@ -244,6 +279,7 @@ export class Dialog2d20 extends Dialog {
 		let apcostd = 0;
 		let left = 0;
 		let numberofdice = 0;
+		let ap =this.element.find('[name="current_ap"]').val();
 		for (let i = 2; i <= 5; i++) {
 			const diceElement = $(html).find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
@@ -263,11 +299,11 @@ export class Dialog2d20 extends Dialog {
 					break;
 				case 4:
 					apcostd = 1;
-					left = this.ap - apcostd;
+					left = ap - apcostd;
 					break;
 				case 5:
 					apcostd = 3;
-					left = this.ap - apcostd;
+					left = ap - apcostd;
 					break;
 			}
 		}
@@ -279,25 +315,26 @@ export class Dialog2d20 extends Dialog {
 					break;
 				case 3:
 					apcostd = 1;
-					left = this.ap - apcostd;
+					left = ap - apcostd;
 					break;
 				case 4:
 					apcostd = 3;
-					left = this.ap - apcostd;
+					left = ap - apcostd;
 					break;
 				case 5:
 					apcostd = 6;
-					left = this.ap - apcostd;
+					left = ap - apcostd;
 					break;
 			}
 		}
 		if (left<0) {
 			const part1 = game.i18n.localize("FALLOUT.Not_Enough");
 			const part2 = game.i18n.localize("FALLOUT.TEMPLATES.PARTY_AP");
-
-
-			ui.notifications.warn(`${part1} ${part2}` );
-			$(html).find('[name="spend_ap"]').val(this.ap);
+			const warexist =ui.notifications.active.length;
+			if (warexist === 0) {
+				ui.notifications.warn(`${part1} ${part2}`);
+			}
+			$(html).find('[name="spend_ap"]').val(ap);
 			$(html).find('[name="by_from_gm"]').val(-1*left);
 		}
 		else {
