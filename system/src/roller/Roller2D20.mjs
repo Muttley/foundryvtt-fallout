@@ -20,6 +20,8 @@ export class Roller2D20 {
 		rollname = "Roll xD20",
 		skill = 0,
 		tag = false,
+		apspend = 0,
+		apbuy = 0,
 	}={}) {
 		// let dicesRolled = [];
 		let successTreshold = parseInt(attribute) + parseInt(skill);
@@ -58,6 +60,8 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			successTreshold,
+			apspend: apspend,
+			apbuy: apbuy,
 		});
 		return {roll: roll, dicesRolled: dicesRolled};
 	}
@@ -74,6 +78,8 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll xD20",
 		successTreshold = 0,
+		apspend = 0,
+		apbuy = 0,
 	}={}) {
 		let i = 0;
 		roll.dice.forEach(d => {
@@ -131,6 +137,8 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			successTreshold: successTreshold,
+			apspend: apspend,
+			apbuy: apbuy,
 		});
 		return dicesRolled;
 	}
@@ -178,6 +186,8 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll xD20",
 		successTreshold = 0,
+		apspend = 0,
+		apbuy = 0,
 	}={}) {
 		let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
 		let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
@@ -192,6 +202,8 @@ export class Roller2D20 {
 			hitLocationResult: hitLocationResult,
 			item: item,
 			actor: actor,
+			apspend: apspend,
+			apbuy: apbuy,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
@@ -206,12 +218,24 @@ export class Roller2D20 {
 		falloutRoll.diceFace = "d20";
 		falloutRoll.hitLocation= hitLocation;
 		falloutRoll.hitLocationResult = hitLocationResult;
-
+		falloutRoll.apspend = apspend;
+		falloutRoll.apbuy = apbuy;
+		const part1 = game.i18n.localize("FALLOUT.Buy_from_Overseer");
+		const part2 = game.i18n.localize("FALLOUT.Spend_AP");
+		let fla;
+		if (dicesRolled.length !== 1) {
+			// eslint-disable-next-line no-unused-vars
+			 fla =`${part2}: ${apspend}<br>${part1}: ${apbuy}`;
+		}
+		else {
+			fla ="";
+		}
 		let chatData = {
 			user: game.user.id,
 			speaker: ChatMessage.getSpeaker({
 				actor: actor,
 			}),
+			flavor: fla,
 			rollMode: game.settings.get("core", "rollMode"),
 			content: html,
 			flags: { falloutroll: falloutRoll },
@@ -450,6 +474,7 @@ export class Roller2D20 {
 		}
 		const bonusdmg=game.i18n.localize("FALLOUT.Bonusdmg");
 		let chatData = {
+			// eslint-disable-next-line no-useless-concat
 			flavor: `${weapondmgdice}: ${diceNum}<br>`+`${additionaludesamo}: ${firerateamo}<br>`+`${bonusdmg}: ${otherdmgdice}`,
 			user: game.user.id,
 			rollMode: game.settings.get("core", "rollMode"),

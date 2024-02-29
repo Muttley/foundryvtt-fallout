@@ -185,11 +185,24 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		html.find(".skill .item-name").click(ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("itemId"));
+			let ap = 0;
+			let gmap = 0;
+			let apcost=0;
+			if (this.actor.type === "creature" && this.actor.type === "npc") {
+				ap = game.settings.get("fallout", "gmAP");
+			}
+			else {
+				ap = parseInt(game.settings.get("fallout", "partyAP"));
+				gmap = parseInt(game.settings.get("fallout", "gmAP"));
+			}
 			this._onRollSkill(
 				item.localizedName,
 				item.system.value,
 				this.actor.system.attributes[item.system.defaultAttribute].value,
-				item.system.tag
+				item.system.tag,
+				ap,
+				gmap,
+				apcost
 			);
 		});
 
@@ -243,6 +256,16 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		html.find(".weapon-roll").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("item-id"));
+			let ap = 0;
+			let gmap = 0;
+			let apcost=0;
+			if (this.actor.type === "creature" && this.actor.type === "npc") {
+				ap = game.settings.get("fallout", "gmAP");
+			}
+			else {
+				ap = parseInt(game.settings.get("fallout", "partyAP"));
+				gmap = parseInt(game.settings.get("fallout", "gmAP"));
+			}
 
 			let attribute;
 			let rollName = item.name;
@@ -304,6 +327,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				complication -= 1;
 			}
 
+
 			fallout.Dialog2d20.createDialog({
 				rollName: rollName,
 				diceNum: 2,
@@ -314,6 +338,9 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				rollLocation: true,
 				actor: this.actor,
 				item: item,
+				ap: ap,
+				gmap: gmap,
+				apcost: apcost,
 			});
 		});
 
@@ -429,13 +456,17 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		);
 	}
 
-	_onRollSkill(skillName, rank, attribute, tag) {
+	_onRollSkill(skillName, rank, attribute, tag, ap, gmap, apcost) {
 		fallout.Dialog2d20.createDialog({
 			rollName: skillName,
 			diceNum: 2,
 			attribute: attribute,
 			skill: rank,
 			tag: tag,
+			ap: ap,
+			gmap: gmap,
+			apcost: apcost,
+			actor: this.actor,
 			complication: parseInt(this.actor.system.complication),
 		});
 	}

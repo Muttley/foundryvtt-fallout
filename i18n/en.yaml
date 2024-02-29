@@ -23,8 +23,8 @@ FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that canno
 FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
 FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
 FALLOUT.Add: Add
-FALLOUT.Additionalamo: Additionali damage dice from used amo
-FALLOUT.Additionalmeledmg: Additional damage dice from party AP
+FALLOUT.Additionalamo: Additional damage dice
+FALLOUT.Additionalmeledmg: Additional damage dice for party AP
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
 FALLOUT.APP.ChemDoseManager.title: Chem Doses
@@ -34,6 +34,7 @@ FALLOUT.APPAREL.headgear: Headgear
 FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Plating
 FALLOUT.APPAREL.powerArmor: Power Armor
+FALLOUT.ASSISTANCE: Assistance
 FALLOUT.BEVERAGE: Beverage
 FALLOUT.BODYLOCATION_ABBR.character.armL: AL
 FALLOUT.BODYLOCATION_ABBR.character.armR: AR
@@ -94,7 +95,8 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Arm 3
 FALLOUT.BodyTypes.robot.legR: Main Body
 FALLOUT.BodyTypes.robot.torso: Main Body
-FALLOUT.Bonusdmg: Additional damage dice
+FALLOUT.Bonusdmg: Additionad damage dice
+FALLOUT.Buy_from_Overseer: Buy from Overseer
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
 FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
@@ -122,6 +124,7 @@ FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
+FALLOUT.FREED20: Free additional dice
 FALLOUT.FOOD: Food
 FALLOUT.HEALTH.current: Current Health
 FALLOUT.HEALTH.health: Health
@@ -139,6 +142,7 @@ FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{versi
 FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
+FALLOUT.Not_Enough: Not enough
 FALLOUT.NPC_TYPES.legendary: Legendary
 FALLOUT.NPC_TYPES.major: Major
 FALLOUT.NPC_TYPES.mighty: Mighty
@@ -146,14 +150,19 @@ FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Other
 FALLOUT.powered: Powered
+FALLOUT.PAYAP1: Pay 1AP
+FALLOUT.PAYAP3: Pay 3AP
+FALLOUT.PAYAP6: Pay 6AP
 FALLOUT.RANGE.close: C
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
+FALLOUT.REGULAR: Regular
 FALLOUT.RESISTANCE.energy: Energy
 FALLOUT.RESISTANCE.physical: Physical
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.Roll: Roll
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SETTLEMENT_ACTION.Build: Build
@@ -197,6 +206,7 @@ FALLOUT.SKILL.Speech: Speech
 FALLOUT.SKILL.Survival: Survival
 FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
+FALLOUT.Spend_AP: Spend AP
 FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
@@ -428,6 +438,7 @@ FALLOUT.UI.UNSORTED: Unsorted
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
 FALLOUT.UI.Yes: Yes
+FALLOUT.Weapondamagedice: Damage dice from weapon
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst
@@ -472,7 +483,6 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
 FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
-FALLOUT.Weapondamagedice: Weapond damage dices
 ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature

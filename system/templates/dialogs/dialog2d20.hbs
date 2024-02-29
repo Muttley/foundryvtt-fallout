@@ -1,28 +1,47 @@
 <div class="fallout-dialog">
-	<div class="flexrow ">
+    <div class="flexrow ">
+        <div class="resource flexrow flex-group-left">
+            <p class="title-label">{{localize "FALLOUT.TEMPLATES.Attribute"}}</p>
+            <input type="number" name="attribute" value="{{attribute}}">
+        </div>
+        <div class="resource flexrow flex-group-left tile">
+            <p class="title-label">{{localize "TYPES.Item.skill"}}</p>
+            <input type="number" name="skill" value="{{skill}}">
+        </div>
+        <div class="resource flexrow flex-group-left green">
+            <p class="title-label">{{localize "FALLOUT.TEMPLATES.Tag"}}</p>
+            <input type="checkbox" name="tag" {{#ifCond tag '==' true}}checked{{/ifCond}}>
+        </div>
+        <div class="resource flexrow flex-group-left red">
+            <p class="title-label">{{localize "FALLOUT.TEMPLATES.Compl"}}</p>
+            <input type="number" name="complication" value="{{complication}}">
+        </div>
+		<div class="resource flexrow flex-group-left yellow">
+            <p class="title-label">{{localize "FALLOUT.FREED20"}}</p>
+            <input type="checkbox" name="freed20">
+        </div>
+    </div>
+
+
+    <ul class="flexrow"  name="currentap">
+        <li name="2d20"><label></label><br><a class="dice-icon d20 " data-index="2">2</a></li>
+        <li><label></label><br><a class="dice-icon d20 " data-index="3">3</a></li>
+        <li><label></label><br><a class="dice-icon d20" data-index="4">4</a></li>
+        <li><label></label><br><a class="dice-icon d20" data-index="5">5</a></li>
+    </ul>
+<div class="flexrow ">
 		<div class="resource flexrow flex-group-left">
-			<p class="title-label">{{localize "FALLOUT.TEMPLATES.Attribute"}}</p>
-			<input type="number" name="attribute" value="{{attribute}}">
-		</div>
-		<div class="resource flexrow flex-group-left tile">
-			<p class="title-label">{{localize "TYPES.Item.skill"}}</p>
-			<input type="number" name="skill" value="{{skill}}">
-		</div>
-		<div class="resource flexrow flex-group-left green">
-			<p class="title-label">{{localize "FALLOUT.TEMPLATES.Tag"}}</p>
-			<input type="checkbox" name="tag" {{#ifCond tag '==' true}}checked{{/ifCond}}>
-		</div>
-		<div class="resource flexrow flex-group-left red">
-			<p class="title-label">{{localize "FALLOUT.TEMPLATES.Compl"}}</p>
-			<input type="number" name="complication" value="{{complication}}">
-		</div>
+            <p class="title-label">{{localize "FALLOUT.TEMPLATES.PARTY_AP"}}</p>
+            <input type="number" name="current_ap" value="{{ap}}">
+        </div>
+		<div class="resource flexrow flex-group-left">
+            <p class="title-label">{{localize "FALLOUT.Spend_AP"}}</p>
+            <input type="number" name="spend_ap" value="{{apcost}}">
+        </div>
+		<div class="resource flexrow flex-group-left">
+            <p class="title-label">{{localize "FALLOUT.Buy_from_Overseer"}}</p>
+            <input type="number" name="by_from_gm" value="0">
+        </div>
 	</div>
 
-	<ul class="flexrow">
-		<li><a class="dice-icon d20" data-index="1">1</a></li>
-		<li><a class="dice-icon d20" data-index="2">2</a></li>
-		<li><a class="dice-icon d20" data-index="3">3</a></li>
-		<li><a class="dice-icon d20" data-index="4">4</a></li>
-		<li><a class="dice-icon d20" data-index="5">5</a></li>
-	</ul>
 </div>

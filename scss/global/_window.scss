@@ -29,6 +29,13 @@
 .chat-message {
 	background-image: url(../assets/chat/rec-paper.webp);
 }
+.dialog-button.help {
+    width: 260px;
+}
+
+.dialog-button.roll {
+    width: 260px;
+}
 
 // Hit Die Style
 .dice-tooltip .dice-rolls .roll.d20.diefalloutlocation {

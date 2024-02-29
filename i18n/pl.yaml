@@ -426,7 +426,8 @@ FALLOUT.UI.Type: Typ
 FALLOUT.UI.UNSORTED: Nieposortowane
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
-FALLOUT.UI.Yes: Yes
+FALLOUT.UI.Yes: Tak
+FALLOUT.Weapondamagedice: Kości obrażeń broni
 FALLOUT.WEAPONS.damageEffect.arc: Łuk
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
@@ -471,7 +472,6 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Broń Biała
 FALLOUT.WEAPONS.weaponType.smallGuns: Broń palna
 FALLOUT.WEAPONS.weaponType.throwing: Rzucana
 FALLOUT.WEAPONS.weaponType.unarmed: Bez Broni
-FALLOUT.Weapondamagedice: Kości obrażeń broni
 ITEM.AmmoPerShot: Amunicja na strzał
 TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie
