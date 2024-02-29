@@ -94,18 +94,18 @@ FALLOUT.BodyTypes.robot.legL: Ramie 3
 FALLOUT.BodyTypes.robot.legR: Silnik
 FALLOUT.BodyTypes.robot.torso: Korpus
 FALLOUT.Bonusdmg: Dodatkowe kości obrażeń
-FALLOUT.CHAT_MESSAGE.addiction.body: {actorName} zostaje uzależniony od {itemName}
+FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} zostaje uzależniony od {itemName}"
 FALLOUT.CHAT_MESSAGE.addiction.title: Uzależnienie od środków chemicznych
-FALLOUT.CHAT_MESSAGE.alcoholic.body: {actorName} przez picie {itemName} stał się alkoholikiem
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Uzależnienie od alkoholu
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Zużyte napoje
-FALLOUT.CHAT_MESSAGE.consumed.body: {actorName} zużył {itemName}
+FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} zużył {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Zjedzone jedzenie
 FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Poziom głodu
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
 FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Poziom pragnienia
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: {actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHEM: Chemikalia
 FALLOUT.ChemDuration.brief: Krótkotrwały
@@ -129,8 +129,8 @@ FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
 FALLOUT.LEVEL.RewardXP: Nagroda w PD
-FALLOUT.MACRO.Error.CaughtError: Makro '{macro}' nie powiodło się, zwracając następujący błąd: {error}
-FALLOUT.MACRO.Error.GameMasterRoleRequired: Makro '{macro}' wymaga uprawnień roli 'Mistrza Gry'
+FALLOUT.MACRO.Error.CaughtError: "Makro '{macro}' nie powiodło się, zwracając następujący błąd: {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: Makro '{macro}' wymaga uprawnień roli 'Mistrza Gry
 FALLOUT.MACRO.NewSession.name: Nowa Sesja
 FALLOUT.MACRO.Success: Makro '{macro}' zakończone pomyślnie
 FALLOUT.MIGRATION.begin_migration: Wykonywanie aktualizacji danych dla Fallout 2d20
@@ -362,10 +362,10 @@ FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
-FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
+FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o 1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń - fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.
 FALLOUT.TOOLTIPS.DamageEffect.freeze: Wrogowie uderzeni przez ten atak będą Zamarznięci, jeśli liczba wykrytych efektów jest równa lub większa niż połowa WT celu (lub połowa docelowego Ciało dla Stworzeń). Zamrożone stworzenie, nie może podjąć działań na następnej turze.
-FALLOUT.TOOLTIPS.DamageEffect.persistent: Jeżeli uzyskałeś na kościach 1 lub więcej Efektów, przeciwnik ponownie otrzymuje obrażenia od broni pod koniec swoich kolejnych tur, łącznie tyle razy, ile wyrzuciłeś Efektów. Powstrzymanie tego Efektu obrażeń wymaga wykonania przez przeciwnika w akcji głównej testu o trudności równej liczbie wyrzuconych przez ciebie Efektów; kombinację atrybutu i umiejętności dla tego testu określa MG. Czasami broń z tym Efektem obrażeń zadaje obrażenia innego rodzaju. W takich przypadkach jest to dopisane w nawiasie – na przykład Uporczywe (toksyczne).
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "Jeżeli uzyskałeś na kościach 1 lub więcej Efektów, przeciwnik ponownie otrzymuje obrażenia od broni pod koniec swoich kolejnych tur, łącznie tyle razy, ile wyrzuciłeś Efektów. Powstrzymanie tego Efektu obrażeń wymaga wykonania przez przeciwnika w akcji głównej testu o trudności równej liczbie wyrzuconych przez ciebie Efektów; kombinację atrybutu i umiejętności dla tego testu określa MG. Czasami broń z tym Efektem obrażeń zadaje obrażenia innego rodzaju. W takich przypadkach jest to dopisane w nawiasie - na przykład Uporczywe (toksyczne)."
 FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Za każdy uzyskany na kościach Efekt ignorujesz X punktów Odporności przeciwnika gdzie X to poziom tego Efektu dla danej broni.
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Za każdy uzyskany na kościach Efekt cel otrzymuje dodatkowo 1 punkt obrażeń radiacyjnych. Te obrażenia są sumowane i uwzględniane osobno, po normalnych obrażeniach wynikających z ataku.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Za każdy uzyskany na kościach Efekt trafiasz przeciwnika po raz kolejny. Każde z tych dodatkowych trafień zadaje połowę pierwotnie wyrzuconych obrażeń (zaokrąglonych w dół) i trafia w losową lokalizację, nawet jeśli przy pierwszym ataku zadeklarowałeś celowanie.
@@ -373,13 +373,13 @@ FALLOUT.TOOLTIPS.DamageEffect.stun: Jeżeli uzyskałeś na kościach co najmniej
 FALLOUT.TOOLTIPS.DamageEffect.vicious: Za każdy uzyskany na kościach Efekt zadane obrażenia zostają zwiększone o +1.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: Broń zużywa amunicję znacznie szybciej niż inne bronie. Za każdym razem, gdy strzelasz z broni, zużywa ona X amunicji zamiast 1. Dodatkowo, obrażenia wymagają wydania X amunicji na każdy +1KW, z maksymalną liczbą CD równą szybkostrzelności broni. Dodatkowe użycie amunicji, takie jak efekt obrażeń Seria, również wymaga X amunicji na każde 1 amunicji, która byłaby normalnie wydana.
-FALLOUT.TOOLTIPS.WeaponQuality.blast: Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny – rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni.
-FALLOUT.TOOLTIPS.WeaponQuality.bombard: Broń może doprowadzić do serii wybuchów na szerokim obszarze. Funkcja ta działa identycznie jak cecha broni Wybuchowa z dodatkiem jednego: kiedy wykonywany jest atak bronią, możesz wydać dodatkową amunicję na wybrane dodatkowe strefy. Każda dodatkowa strefa wymaga spędzenia 2 amunicji, a dodatkowe strefy muszą być przyległe do początkowej strefy. Amunicja wydana na wybranie dodatkowych stref jest ograniczona szybkostrzelności broni.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny - rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni."
+FALLOUT.TOOLTIPS.WeaponQuality.bombard: "Broń może doprowadzić do serii wybuchów na szerokim obszarze. Funkcja ta działa identycznie jak cecha broni Wybuchowa z dodatkiem jednego: kiedy wykonywany jest atak bronią, możesz wydać dodatkową amunicję na wybrane dodatkowe strefy. Każda dodatkowa strefa wymaga spędzenia 2 amunicji, a dodatkowe strefy muszą być przyległe do początkowej strefy. Amunicja wydana na wybranie dodatkowych stref jest ograniczona szybkostrzelności broni."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Broń ma niewielkie rozmiary lub można ją łatwo ukryć. Przeciwnik zdoła ją zauważyć tylko wtedy, kiedy trzymasz ją w dłoni lub cię przeszuka i wykona udany test PER + Przetrwania o trudności 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Trudność testów leczenia ran spowodowanych przez tę broń wzrasta o +1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: Broń działa na timer lub bezpiecznik i nie wybucha natychmiast. Broń Opóźnioną można normalnie rzucić w wybrane miejsce, podczas gdy inną broń opóźniającą można umieścić w wybranym miejscu. Broń opóźniająca (1) wybucha na początku pierwszej rundy po rzuceniu lub uruchomieniu w inny sposób. Broń opóźniająca (2) wybucha na początku następnej rundy i tak dalej.
-FALLOUT.TOOLTIPS.WeaponQuality.gatling: Broń zużywa dziesięć razy więcej amunicji niż normalnie – zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni).
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: Broń zużywa dziesięć razy więcej amunicji niż normalnie - zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni).
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Kiedy atakujesz taką bronią, nie odnosisz żadnych korzyści z pomniejszej akcji celowania. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Ograniczona broń może być użyta tylko do ataku w idealnym zasięgu.
 FALLOUT.TOOLTIPS.WeaponQuality.mine: Położona w jakimś miejscu i aktywowana staje się niebezpieczna i zadaje obrażenia dowolnej istocie, która znajdzie się w jej zasięgu bezpośrednim (oraz innym istotom, jeśli ma cechę Wybuchowa).
