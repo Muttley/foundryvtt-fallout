@@ -30,15 +30,15 @@
         <li><label></label><br><a class="dice-icon d20" data-index="5">5</a></li>
     </ul>
 <div class="flexrow ">
-		<div class="resource flexrow flex-group-left">
+		<div class="resource flexrow flex-group-left" name="party_ap">
             <p class="title-label">{{localize "FALLOUT.TEMPLATES.PARTY_AP"}}</p>
             <input type="number" name="current_ap" value="{{ap}}">
         </div>
-		<div class="resource flexrow flex-group-left">
+		<div class="resource flexrow flex-group-left" name="spend_ap">
             <p class="title-label">{{localize "FALLOUT.Spend_AP"}}</p>
             <input type="number" name="spend_ap" value="{{apcost}}">
         </div>
-		<div class="resource flexrow flex-group-left">
+		<div class="resource flexrow flex-group-left" name="buy_from_gm">
             <p class="title-label">{{localize "FALLOUT.Buy_from_Overseer"}}</p>
             <input type="number" name="by_from_gm" value="0">
         </div>

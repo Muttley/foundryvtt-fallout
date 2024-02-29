@@ -20,7 +20,7 @@ export class DialogD6 extends Dialog {
 		//     await this.checkAmmo(html)
 		// })
 
-		html.on("click", ".roll", async event => {
+		html.on("click", ".rolldamage", async event => {
 			let diceNum = html.find(".d-number")[0].value;
 			let otherdmgdice = html.find(".otherd-number")[0].value;
 			let firerateamo =html.find('[name="firerateamo"] option:selected').val();
@@ -128,9 +128,9 @@ export class DialogD6 extends Dialog {
 			title: rollName,
 			content: html,
 			buttons: {
-				roll: {
+				rolldamage: {
 					icon: '<i class="fas fa-check"></i>',
-					label: "ROLL",
+					label: game.i18n.localize("FALLOUT.Roll"),
 				},
 			},
 			close: () => { },

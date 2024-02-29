@@ -124,8 +124,8 @@ FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
-FALLOUT.FREED20: Free additional dice
 FALLOUT.FOOD: Food
+FALLOUT.FREED20: Free additional dice
 FALLOUT.HEALTH.current: Current Health
 FALLOUT.HEALTH.health: Health
 FALLOUT.HEALTH.max: Max Health
@@ -149,10 +149,10 @@ FALLOUT.NPC_TYPES.mighty: Mighty
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Other
-FALLOUT.powered: Powered
 FALLOUT.PAYAP1: Pay 1AP
 FALLOUT.PAYAP3: Pay 3AP
 FALLOUT.PAYAP6: Pay 6AP
+FALLOUT.powered: Powered
 FALLOUT.RANGE.close: C
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
@@ -206,12 +206,13 @@ FALLOUT.SKILL.Speech: Speech
 FALLOUT.SKILL.Survival: Survival
 FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
-FALLOUT.Spend_AP: Spend AP
 FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
+FALLOUT.Spend_AP: Spend AP
+FALLOUT.Spend_Overseer_AP: Spend Overseer AP
 FALLOUT.TEMPLATES.Abilities: Abilities
 FALLOUT.TEMPLATES.Add_Perk: Add Perk
 FALLOUT.TEMPLATES.Add_Trait: Add Trait
@@ -483,6 +484,7 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
 FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
+FALLOUT.With: with
 ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
