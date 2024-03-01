@@ -311,6 +311,27 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		}
 	}
 
+	_onSubmit(event) {
+		if (!this.isEditable) return;
+		if (this.actor.type !== "character") return super._onSubmit(event);
+
+		const updateData = this._getSubmitData();
+
+		// Update the lastChanged timestamp any changed conditions
+		//
+		const currentTime = game.time.worldTime;
+		for (const condition of ["hunger", "thirst", "sleep"]) {
+			const currentValue = this.actor.system.conditions[condition];
+			const newValue = updateData[`system.conditions.${condition}`];
+
+			if (newValue !== currentValue) {
+				updateData[`system.conditions.lastChanged.${condition}`] = currentTime;
+			}
+		}
+
+		this.actor.update(updateData);
+	}
+
 
 	// Toggle Stashed Item
 	_toggleStashed(id, item) {

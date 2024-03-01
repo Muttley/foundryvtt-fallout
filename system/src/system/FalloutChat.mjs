@@ -39,6 +39,13 @@ export default class FalloutChat {
 		);
 	}
 
+	static async renderConditionChangeMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/condition-change.hbs",
+			mode
+		);
+	}
+
 	static async renderConsumptionMessage(actor, data, mode) {
 		this._renderChatMessage(actor, data,
 			"systems/fallout/templates/chat/consumption.hbs",

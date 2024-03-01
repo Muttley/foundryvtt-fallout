@@ -1,5 +1,3 @@
-import { SYSTEM_ID } from "./config.mjs";
-
 export default function registerSettings() {
 	// -------------------
 	//  INTERNAL SETTINGS
@@ -58,6 +56,24 @@ export default function registerSettings() {
 		config: true,
 		default: true,
 		type: Boolean,
+	});
+
+	game.settings.register(SYSTEM_ID, "syncConditionsWithWorldClock", {
+		name: "Sync Conditions with World Clock",
+		hint: "If enabled player Hunger, Thirst and Rested conditions will be synced with game time. For this to work fully you must have installed/enabled a 3rd party world time module, such as Simple Calendar, which can be used to adjust the game time.  Otherwise time will only be advanced by the Party Sleep tool.",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
+
+	game.settings.register(SYSTEM_ID, "maxConditionCheckTimeJump", {
+		name: "Max Time Jump (hours)",
+		hint: "If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time.",
+		scope: "world",
+		config: true,
+		default: 13,
+		type: Number,
 	});
 
 	game.settings.register(SYSTEM_ID, "conditionsSkipMissingPlayers", {

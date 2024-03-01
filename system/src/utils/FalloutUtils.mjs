@@ -56,6 +56,17 @@ export default class FalloutUtils {
 		return base + (perLevel * (level - levelAdjust));
 	}
 
+	static checkForTimeJump(lastChange) {
+		const maxConditionCheckTimeJump = game.settings.get(
+			SYSTEM_ID, "maxConditionCheckTimeJump"
+		);
+
+		const maxTimeSkip =
+			maxConditionCheckTimeJump * CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+
+		return Math.abs(game.time.worldTime - lastChange) > maxTimeSkip;
+	}
+
 	static lbsToKgs(value) {
 		return value * LBS_TO_KGS;
 	}

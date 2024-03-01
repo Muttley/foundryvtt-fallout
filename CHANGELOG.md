@@ -25,21 +25,33 @@
 - [#169] Allow settlement job assignment numbers to be modified by Active Effects
 
 	* The following keys can be used to adjust the number of job assignments in a settlement:
-	~~~
-	system.assignments.build
-	system.assignments.business
-	system.assignments.guard
-	system.assignments.hunting_and_gathering
-	system.assignments.scavenging
-	system.assignments.tend_crops
-	system.assignments.trade_caravan
-	system.assignments.unnasigned
-	~~~
+		~~~
+		system.assignments.build
+		system.assignments.business
+		system.assignments.guard
+		system.assignments.hunting_and_gathering
+		system.assignments.scavenging
+		system.assignments.tend_crops
+		system.assignments.trade_caravan
+		system.assignments.unnasigned
+		~~~
 
 - [#171] Add new text enricher to detect +/-nCD or +/-nDc (where +/- is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
 - [#172] Added Miscellany item compendium (19 items)
 - [#178] Added Robot Modules item compendium (13 items)
 - [#186] Create GM interface for triggering party sleep durations.  This can be launched with the new `Party Sleep (GM)` macro provided
+- [#188] Automatic condition tracker tied to World time
+
+	* When enabled in the system settings, Character's belonging to players will have their Hunger, Thirst and Sleep values adjusted automatically based on the passing with time in the world. **NOTE:** Your players will *really* have to be on the ball with managing their food & drink resources with this enabled
+	* Without any modules installed, only the Party Sleep tool will advance world time
+	* If you have the Simple Calendar (or similar) module installed, the GM can adjust world time and have the character's condition statuses update following the core rules (p.190)
+	* There are three new system settings that can be used to adjust this behaviour:
+
+		- **Sync Conditions with World Clock**: This enables you to toggle on/off the automatic condition updates
+		- **Max Time Jump (hours)**: If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time. This ensures that no unexpected spikes in Fatigue are added to characters
+		- **Conditions Skip Missing Players**: If this is checked, only characters who's player owner is current online and logged in will have their conditions adjusted
+
+	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefull be added at a later date
 
 ## Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials

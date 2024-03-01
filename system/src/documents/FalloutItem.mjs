@@ -1,7 +1,3 @@
-/**
- * Extend the basic Item with some very simple modifications.
- * @extends {Item}
- */
 export default class FalloutItem extends Item {
 
 	async _preCreate(data, options, user) {

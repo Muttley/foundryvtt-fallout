@@ -282,9 +282,9 @@
 					"fatigue": 0,
 					"hunger": 0,
 					"lastChanged": {
-						"hunger": 0,
-						"sleep": 0,
-						"thirst": 0
+						"hunger": -1,
+						"sleep": -1,
+						"thirst": -1
 					},
 					"intoxication": 0,
 					"sleep": 0,

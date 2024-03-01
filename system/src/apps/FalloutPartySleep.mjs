@@ -5,7 +5,7 @@ export default class FalloutPartySleep extends Application {
 	constructor(object, options={}) {
 		super(object, options);
 
-		this.lengthOfSleep = 8;
+		this.lengthOfSleep = 6;
 		this.safeLocation = false;
 	}
 
@@ -123,10 +123,19 @@ export default class FalloutPartySleep extends Application {
 
 		const newRestedStatus = [];
 
+		// Flag these actors as sleeping to avoid spurious sleep condition
+		// changes while we're processing the sleep period
+		//
+		for (const actor of actors) {
+			actor.isSleeping = true;
+		}
+
+		await game.time.advance(this.lengthOfSleep * 60 * 60);
+
 		for (const actor of actors) {
 			let hasActiveOwner = true;
 
-			if (skipMissingPlayers) hasActiveOwner = actor.ownerIsOnline();
+			if (skipMissingPlayers) hasActiveOwner = actor.ownerIsOnline;
 
 			if (hasActiveOwner) {
 				await actor.sleep(this.lengthOfSleep, this.safeLocation);
@@ -145,6 +154,13 @@ export default class FalloutPartySleep extends Application {
 					`The owner of ${actor.name} is not online so they will not sleep.`
 				);
 			}
+		}
+
+		// Sleeping period over, so we can now process sleep changes again if
+		// required
+		//
+		for (const actor of actors) {
+			actor.isSleeping = false;
 		}
 
 		fallout.chat.renderPartySleepMessage({

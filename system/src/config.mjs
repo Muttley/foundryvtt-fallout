@@ -3,6 +3,15 @@ export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
+// Some consts used for timing purposes
+//
+FALLOUT.ONE_HOUR_IN_SECONDS = 60 * 60;
+FALLOUT.TWO_HOURS_IN_SECONDS = 60 * 60 * 2;
+FALLOUT.FOUR_HOURS_IN_SECONDS = 60 * 60 * 4;
+FALLOUT.EIGHT_HOURS_IN_SECONDS = 60 * 60 * 8;
+FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
+FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
+
 FALLOUT.APPAREL_TYPES = {
 	clothing: "FALLOUT.APPAREL.clothing",
 	outfit: "FALLOUT.APPAREL.outfit",

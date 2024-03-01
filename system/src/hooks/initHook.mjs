@@ -11,11 +11,10 @@ import { DialogD6 } from "../roller/DialogD6.mjs";
 import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
 import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
-// import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
-
 import FalloutChat from "../system/FalloutChat.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
+import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
 import Logger from "../utils/Logger.mjs";
@@ -37,6 +36,7 @@ export async function initHook() {
 	// Add utility classes to the global game object so that they're more easily
 	// accessible in global contexts.
 	globalThis.fallout = {
+		conditionTracker: new FalloutConditionTracker(),
 		apps,
 		APTracker,
 		chat: FalloutChat,
