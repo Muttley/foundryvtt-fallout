@@ -32,7 +32,7 @@ export default function registerTextEditorEnrichers() {
 			},
 		},
 		{
-			pattern: /((\+|-)?\d+)?\s*(CDC?|DCC?)/gm,
+			pattern: /((\+|-)?\d+)?\s*(CD|DC)[DC]?/gm,
 			enricher: async (match, options) => {
 				const i = document.createElement("i");
 				i.classList.add("fo-pip-boy");
