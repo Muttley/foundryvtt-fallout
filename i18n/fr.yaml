@@ -101,13 +101,17 @@ FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} devient dépendant au {itemNam
 FALLOUT.CHAT_MESSAGE.addiction.title: Addiction à la drogue
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} devient alcoolique en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Dépendance à l'alcool
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} est maintenant..."
+FALLOUT.CHAT_MESSAGE.condition-change.title: Changement de condition
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Niveau de fatigue
+FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Niveau de faim
+FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Niveau de sommeil
+FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Niveau de soif
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Boisson consommée
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} a consommé {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
-FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Niveau de faim
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
-FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Niveau de soif
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHEM: Drogues
