@@ -14,7 +14,7 @@
 
 This community contributed and maintained system for playing [Fallout: The Roleplaying Game][1] with the [Foundry VTT][2] virtual tabletop software has been produced with the explicit consent of [Modiphius Entertainment][3].
 
-All copyright assets included in the system are used with the explicit consent of [Modiphius Entertainment][3]. The **Fallout** developer community holds no claim to these underlying copyrighted assets.
+All copyright assets included in the system are used with the explicit consent of [Modiphius Entertainment][3]. The system developers hold no claims to these underlying copyrighted assets.
 
 *Many thanks to Modiphius for allowing the inclusion of many player facing item compendiums which contain various classes of item from the core rulebook. Their generosity means the system comes with compendiums containing 1031 items from the core rulebook.*
 
@@ -129,7 +129,7 @@ Since there is no native Foundry support for Items to contain other Items I am l
 
 Foundry VTT: Limited License Agreement for module development.
 
-All copyright assets used with explicit consent from Modiphius Entertainment. The fvtt-modiphius developer community holds no claim to underlying copyrighted assets.
+All copyright assets used with explicit consent from Modiphius Entertainment. The system developers hold no claims to underlying copyrighted assets.
 
 ## Thanks to
 
