@@ -1,0 +1,22 @@
+{
+	"_id": "ugnoJLCjVbVsAqOj",
+	"_key": "!items!ugnoJLCjVbVsAqOj",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Gunslinger",
+	"system": {
+		"description": "<p>When you make an attack with a onehanded ranged weapon with a Fire Rate of 2 or lower, you increase the weapon&rsquo;s damage by +1CD per rank. In addition, you may re-roll the hit location die. Each time you take this perk, the level requirement increases by 4.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 2,
+			"value": 0
+		},
+		"requirements": "AGI 7, Level 2+",
+		"source": ""
+	},
+	"type": "perk"
+}

@@ -1,0 +1,22 @@
+{
+	"_id": "NMrJsMFjSLAYtHAU",
+	"_key": "!items!NMrJsMFjSLAYtHAU",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Hacker",
+	"system": {
+		"description": "<p>The difficulty of skill tests to hack computers is decreased by 1, to a minimum of 0.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "INT 8",
+		"source": ""
+	},
+	"type": "perk"
+}
