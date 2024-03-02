@@ -191,7 +191,7 @@ FALLOUT.ITEM_TYPES = {
 };
 
 FALLOUT.JOURNAL_UUIDS = {
-	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
+	releaseNotes: "Compendium.fallout.system_documentation.JournalEntry.7650UDxM6aehgB21",
 };
 
 FALLOUT.NPC_CATEGORIES = {
