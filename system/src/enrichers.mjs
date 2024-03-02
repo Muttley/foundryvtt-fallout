@@ -32,24 +32,21 @@ export default function registerTextEditorEnrichers() {
 			},
 		},
 		{
-			pattern: /((\+|-)?\d+)?\s*(CD|DC)[DC]?/gm,
+			pattern: /((\+|-)?\d+)?\s?D?(CD|DC)[CD]?/g,
 			enricher: async (match, options) => {
 				const i = document.createElement("i");
 				i.classList.add("fo-pip-boy");
 
-				if (["CDC", "DCC"].includes(match[3])) {
-					i.classList.add("fo-blue");
-				}
-
+				const outerSpan = document.createElement("span");
 				if (match[1]) {
-					const outerSpan = document.createElement("span");
 					outerSpan.innerHTML = `${match[1]}&nbsp;`;
 					outerSpan.appendChild(i);
-					return outerSpan;
 				}
 				else {
-					return i;
+					outerSpan.innerHTML = "&nbsp;";
+					outerSpan.appendChild(i);
 				}
+				return outerSpan;
 			},
 		},
 	]);
