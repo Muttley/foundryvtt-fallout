@@ -13,12 +13,14 @@
 - [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
 - [#149] Add default icons for all item types
 - [#150] Add new default tokens for all actor types
+- [#151] Add compendiums containing items from the core rulebook
 - [#152] Added Addiction item compendium (12 items)
 - [#153] Added Ammunition item compendium (20 items)
 - [#154] Added Apparel item compendium (161 items)
 - [#155] Added Apparel Mods item compendium (161 items)
 - [#156] Added Books and Magazines item compendium (95 items)
 - [#157] Added Consumable item compendium (137 items)
+- [#158] Create Perks item compendium (190 items)
 - [#161] Added Trait item compendium (10 items)
 - [#162] Added Weapons item compendium (68 items)
 - [#163] Added Weapon Mods item compendium (145 items)
@@ -65,7 +67,7 @@
 	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
 - [#184] Deprecate the "Mouse Hover JSON file" setting
 
-*Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
+*Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook. Thanks to their generosity the system now comes with compendiums containing 1031 items from the core rulebook.*
 
 ---
 
