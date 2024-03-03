@@ -22,7 +22,7 @@ export const initiativeHooks = {
 			let newInitiative = updateData.system?.initiative?.value ?? null;
 
 			const updateInititive = Number.isInteger(parseInt(newInitiative))
-				|| Object.hasOwn(updateData.system, "attributes");
+				|| Object.hasOwn(updateData.system ?? {}, "attributes");
 
 			if (updateInititive) {
 				for (const combat of game.combats) {

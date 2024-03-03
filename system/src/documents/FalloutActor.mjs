@@ -688,6 +688,17 @@ export default class FalloutActor extends Actor {
 				this.updateSource({ items });
 			}
 		}
+
+		// Seed the lastUsed timestamp for consumables
+		if (this.type === "character") {
+			const currentWorldTime = game.time.worldTime;
+
+			this.updateSource({
+				"system.conditions.lastChanged.hunger": currentWorldTime,
+				"system.conditions.lastChanged.sleep": currentWorldTime,
+				"system.conditions.lastChanged.thirst": currentWorldTime,
+			});
+		}
 	}
 
 	async _updateHunger() {
