@@ -38,7 +38,7 @@
 		system.assignments.unnasigned
 		~~~
 
-- [#171] Add new text enricher to detect +/-nCD or +/-nDc (where +/- is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
+- [#171] Add new text enricher to detect `+/-nCD` or `+/-nDC` (where `+/-` is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
 - [#172] Added Miscellany item compendium (19 items)
 - [#178] Added Robot Modules item compendium (13 items)
 - [#186] Create GM interface for triggering party sleep durations.  This can be launched with the new `Party Sleep (GM)` macro provided
