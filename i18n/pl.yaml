@@ -101,8 +101,9 @@ FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} zostaje uzależniony od {itemN
 FALLOUT.CHAT_MESSAGE.addiction.title: Uzależnienie od środków chemicznych
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Uzależnienie od alkoholu
-FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now..."
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now {hungerLevel}, {thirstLevel} and {sleepLevel}"
 FALLOUT.CHAT_MESSAGE.condition-change.title: Condition Change
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Your fatigue has increased by +{level} due to your {condition} level
 FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Fatigue Level
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
@@ -111,6 +112,7 @@ FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Zużyte napoje
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} zużył {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Zjedzone jedzenie
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
