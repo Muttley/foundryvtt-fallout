@@ -1,0 +1,33 @@
+{
+	"_id": "1yXCbQZHNLtwuPcT",
+	"_key": "!items!1yXCbQZHNLtwuPcT",
+	"effects": [
+	],
+	"folder": "SI3ySgcRWajbytaR",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Stealth Boy",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "other",
+		"cost": 100,
+		"description": "<p>One of the most interesting technologies developed before the War, the Stealth Boy 3001 is a compact device which generates a modulating refraction field which transmits light from one side of the field to the other. The result is near-perfect active camouflage, ranging from a sort of distorted transparency when moving to almost total invisibility when stationary.</p>\n<p>The Stealth Boy was reverse engineered from captured Chinese Stealth Armor during the War, and while the technology was never perfected&mdash;even the most advanced Stealth Boy consumes its battery in around 30 seconds&mdash;it was still seen to be reliable enough for service.</p>\n<p>Long-term use of Stealth Boy technology has been observed to cause permanent neurological changes, resulting in paranoid delusions, hallucinations, and other mental changes.</p>\n<ul>\n<li><strong>Use:</strong> A Stealth Boy is activated using the Interact minor action. Once active, the device functions for three full turns: your current turn, your next turn, and your turn after that, after which, it ceases to function and is junk. When activated, a Stealth Boy renders you and the equipment you are carrying nearly invisible. Enemies add +2 to the difficulty of all tests to spot you; they may still hear you or notice your presence in other ways if they&rsquo;re looking hard enough. In addition, even if you have been detected, the invisibility increases your Defense by +2.</li>\n</ul>",
+		"duration": "",
+		"effect": "<p>Invisibility (see description)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

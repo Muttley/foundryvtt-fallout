@@ -13,7 +13,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
 			width: 520,
-			height: "auto",
+			height: 520,
 			tabs: [{
 				navSelector: ".sheet-tabs",
 				contentSelector: ".sheet-body",
@@ -44,17 +44,18 @@ export default class FalloutItemSheet extends ItemSheet {
 		const source = item.toObject();
 
 		foundry.utils.mergeObject(context, {
-			source: source.system,
-			system: item.system,
-			isEmbedded: item.isEmbedded,
-			type: item.type,
-			flags: item.flags,
-			FALLOUT: CONFIG.FALLOUT,
-			effects: prepareActiveEffectCategories(item.effects),
 			descriptionHTML: await TextEditor.enrichHTML(item.system.description, {
 				secrets: item.isOwner,
 				async: true,
 			}),
+			effects: prepareActiveEffectCategories(item.effects),
+			FALLOUT: CONFIG.FALLOUT,
+			flags: item.flags,
+			isEmbedded: item.isEmbedded,
+			source: source.system,
+			system: item.system,
+			type: item.type,
+			useKgs: game.settings.get("fallout", "carryUnit") === "kgs",
 		});
 
 		// Enrich Mods Text
@@ -89,34 +90,33 @@ export default class FalloutItemSheet extends ItemSheet {
 
 			const weaponQualities = [];
 			for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
-
 				weaponQualities.push({
 					active: item.system?.damage?.weaponQuality[key].value ?? false,
+					hasRank: CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key],
+					rank: item.system?.damage?.weaponQuality[key].rank,
 					key,
 					label: CONFIG.FALLOUT.WEAPON_QUALITIES[key],
 				});
-
-				context.weaponQualities = weaponQualities.sort(
-					(a, b) => a.label.localeCompare(b.label)
-				);
 			}
+
+			context.weaponQualities = weaponQualities.sort(
+				(a, b) => a.label.localeCompare(b.label)
+			);
 
 			const damageEffects = [];
 			for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
-				const itemData = duplicate(
-					item.system?.damage?.damageEffect[key] ?? {}
-				);
-
-				itemData.active = itemData.value ?? false;
-				itemData.key = key;
-				itemData.label = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
-
-				damageEffects.push(itemData);
-
-				context.damageEffects = damageEffects.sort(
-					(a, b) => a.label.localeCompare(b.label)
-				);
+				damageEffects.push({
+					active: item.system?.damage?.damageEffect[key].value ?? false,
+					hasRank: CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key],
+					rank: item.system?.damage?.damageEffect[key].rank,
+					key,
+					label: CONFIG.FALLOUT.DAMAGE_EFFECTS[key],
+				});
 			}
+
+			context.damageEffects = damageEffects.sort(
+				(a, b) => a.label.localeCompare(b.label)
+			);
 		}
 
 		if (item.type === "object_or_structure") {

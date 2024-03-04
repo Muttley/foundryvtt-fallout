@@ -1,0 +1,22 @@
+{
+	"_id": "4iTCNKydcsh3PHwY",
+	"_key": "!items!4iTCNKydcsh3PHwY",
+	"effects": [
+	],
+	"folder": "254i0e4Wc0Rhv6gc",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "An Experience to Remember",
+	"system": {
+		"description": "<p>Choose one other Magazine perk you have previously used but not learned; that now takes effect</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

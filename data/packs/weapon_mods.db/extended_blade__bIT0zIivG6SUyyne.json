@@ -1,0 +1,34 @@
+{
+	"_id": "bIT0zIivG6SUyyne",
+	"_key": "!items!bIT0zIivG6SUyyne",
+	"effects": [
+	],
+	"folder": "tECAlH9Iqv1vJ3i6",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Extended Blade",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 25,
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Ripper",
+		"namePrefix": "Extended",
+		"perks": "Blacksmith 3",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 3
+	},
+	"type": "weapon_mod"
+}

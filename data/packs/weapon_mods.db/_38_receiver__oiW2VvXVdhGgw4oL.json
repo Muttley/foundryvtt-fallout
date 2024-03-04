@@ -1,0 +1,34 @@
+{
+	"_id": "oiW2VvXVdhGgw4oL",
+	"_key": "!items!oiW2VvXVdhGgw4oL",
+	"effects": [
+	],
+	"folder": "ejaQqUkMulo41TKV",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": ".38 Receiver",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 20,
+		"description": "",
+		"effect": "<p>Change damage to 4 @fos[DC]</p>\n<p>Ammo changes to @UUID[Item.YthgQHCfKPTHC3I9]{.38 Round}</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Receiver",
+		"namePrefix": ".38",
+		"perks": "Gun Nut 4",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 3
+	},
+	"type": "weapon_mod"
+}

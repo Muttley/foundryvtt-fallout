@@ -1,0 +1,32 @@
+{
+	"_id": "Mu6IEkhB5z32qzjY",
+	"_key": "!items!Mu6IEkhB5z32qzjY",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Roasted Mirelurk Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 40,
+		"description": "<p><span class=\"fontstyle0\">A cooked portion of meat from a mirelurk. Though not to the same extent as the softshell meat, roasted mirelurk meat invigorates the body and mind and leaves you ready for action.</span> </p>",
+		"duration": "",
+		"effect": "<p>Gain +1 AP at start of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 8,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

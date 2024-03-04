@@ -1,7 +1,16 @@
 export const SYSTEM_ID = "fallout";
-export const SYSTEM_NAME = "Fallout 2d20";
+export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
+
+// Some consts used for timing purposes
+//
+FALLOUT.ONE_HOUR_IN_SECONDS = 60 * 60;
+FALLOUT.TWO_HOURS_IN_SECONDS = 60 * 60 * 2;
+FALLOUT.FOUR_HOURS_IN_SECONDS = 60 * 60 * 4;
+FALLOUT.EIGHT_HOURS_IN_SECONDS = 60 * 60 * 8;
+FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
+FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
 
 FALLOUT.APPAREL_TYPES = {
 	clothing: "FALLOUT.APPAREL.clothing",
@@ -99,7 +108,7 @@ FALLOUT.CREATURE_SKILLS = {
 	other: "FALLOUT.CREATURE.other",
 };
 
-FALLOUT.CREATURE_TYPES = {
+FALLOUT.CREATURE_CATEGORIES = {
 	normal: "FALLOUT.NPC_TYPES.normal",
 	mighty: "FALLOUT.NPC_TYPES.mighty",
 	legendary: "FALLOUT.NPC_TYPES.legendary",
@@ -111,7 +120,7 @@ FALLOUT.DAMAGE_EFFECTS = {
 	burst: "FALLOUT.WEAPONS.damageEffect.burst",
 	freeze: "FALLOUT.WEAPONS.damageEffect.freeze",
 	persistent: "FALLOUT.WEAPONS.damageEffect.persistent",
-	piercing: "FALLOUT.WEAPONS.damageEffect.piercing",
+	piercing_x: "FALLOUT.WEAPONS.damageEffect.piercing_x",
 	radioactive: "FALLOUT.WEAPONS.damageEffect.radioactive",
 	spread: "FALLOUT.WEAPONS.damageEffect.spread",
 	stun: "FALLOUT.WEAPONS.damageEffect.stun",
@@ -123,6 +132,34 @@ FALLOUT.DAMAGE_TYPES = {
 	energy: "FALLOUT.WEAPONS.damageType.energy",
 	radiation: "FALLOUT.WEAPONS.damageType.radiation",
 	poison: "FALLOUT.WEAPONS.damageType.poison",
+};
+
+FALLOUT.DEFAULT_ICONS = {
+	addiction: "systems/fallout/assets/icons/items/addiction.svg",
+	ammo: "systems/fallout/assets/icons/items/ammo.svg",
+	apparel: "systems/fallout/assets/icons/items/apparel.svg",
+	apparel_mod: "systems/fallout/assets/icons/items/apparel_mod.svg",
+	books_and_magz: "systems/fallout/assets/icons/items/books_and_magz.svg",
+	consumable: "systems/fallout/assets/icons/items/consumable.svg",
+	disease: "systems/fallout/assets/icons/items/disease.svg",
+	miscellany: "systems/fallout/assets/icons/items/miscellany.svg",
+	object_or_structure: "systems/fallout/assets/icons/items/object_or_structure.svg",
+	perk: "systems/fallout/assets/icons/items/perk.svg",
+	robot_armor: "systems/fallout/assets/icons/items/robot_armor.svg",
+	robot_mod: "systems/fallout/assets/icons/items/robot_mod.svg",
+	skill: "systems/fallout/assets/icons/items/skill.webp",
+	special_ability: "systems/fallout/assets/icons/items/special_ability.svg",
+	trait: "systems/fallout/assets/icons/items/trait.svg",
+	weapon: "systems/fallout/assets/icons/items/weapon.svg",
+	weapon_mod: "systems/fallout/assets/icons/items/weapon_mod.svg",
+};
+
+FALLOUT.DEFAULT_TOKENS = {
+	character: "systems/fallout/assets/tokens/character.webp",
+	creature: "systems/fallout/assets/tokens/creature.webp",
+	npc: "systems/fallout/assets/tokens/npc.webp",
+	robot: "systems/fallout/assets/tokens/robot.webp",
+	settlement: "systems/fallout/assets/tokens/settlement.webp",
 };
 
 FALLOUT.HUNGER_BY_NUMBER = {
@@ -154,10 +191,10 @@ FALLOUT.ITEM_TYPES = {
 };
 
 FALLOUT.JOURNAL_UUIDS = {
-	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
+	releaseNotes: "Compendium.fallout.system_documentation.JournalEntry.7650UDxM6aehgB21",
 };
 
-FALLOUT.NPC_TYPES = {
+FALLOUT.NPC_CATEGORIES = {
 	normal: "FALLOUT.NPC_TYPES.normal",
 	notable: "FALLOUT.NPC_TYPES.notable",
 	major: "FALLOUT.NPC_TYPES.major",
@@ -165,9 +202,10 @@ FALLOUT.NPC_TYPES = {
 
 FALLOUT.OFFICIAL_SOURCES = {
 	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
-	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
+	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
+	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
 	winter_of_atom: "FALLOUT.SOURCE_TITLE.winter_of_atom",
 };
 
@@ -247,22 +285,25 @@ FALLOUT.THIRST_BY_NUMBER = {
 
 FALLOUT.WEAPON_QUALITIES = {
 	accurate: "FALLOUT.WEAPONS.weaponQuality.accurate",
+	ammo_hungry_x: "FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x",
 	blast: "FALLOUT.WEAPONS.weaponQuality.blast",
-	closeQuarters: "FALLOUT.WEAPONS.weaponQuality.closeQuarters",
+	bombard: "FALLOUT.WEAPONS.weaponQuality.bombard",
+	close_quarters: "FALLOUT.WEAPONS.weaponQuality.close_quarters",
 	concealed: "FALLOUT.WEAPONS.weaponQuality.concealed",
 	debilitating: "FALLOUT.WEAPONS.weaponQuality.debilitating",
+	delay_x: "FALLOUT.WEAPONS.weaponQuality.delay_x",
 	gatling: "FALLOUT.WEAPONS.weaponQuality.gatling",
 	inaccurate: "FALLOUT.WEAPONS.weaponQuality.inaccurate",
 	limited: "FALLOUT.WEAPONS.weaponQuality.limited",
 	mine: "FALLOUT.WEAPONS.weaponQuality.mine",
-	nightVision: "FALLOUT.WEAPONS.weaponQuality.nightVision",
+	night_vision: "FALLOUT.WEAPONS.weaponQuality.night_vision",
 	parry: "FALLOUT.WEAPONS.weaponQuality.parry",
 	recon: "FALLOUT.WEAPONS.weaponQuality.recon",
 	reliable: "FALLOUT.WEAPONS.weaponQuality.reliable",
 	slow_load: "FALLOUT.WEAPONS.weaponQuality.slow_load",
 	suppressed: "FALLOUT.WEAPONS.weaponQuality.suppressed",
 	thrown: "FALLOUT.WEAPONS.weaponQuality.thrown",
-	twoHanded: "FALLOUT.WEAPONS.weaponQuality.twoHanded",
+	two_handed: "FALLOUT.WEAPONS.weaponQuality.two_handed",
 	unreliable: "FALLOUT.WEAPONS.weaponQuality.unreliable",
 	unstable_radiation: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation",
 };
@@ -288,3 +329,27 @@ FALLOUT.WEAPON_TYPES = {
 	throwing: "FALLOUT.WEAPONS.weaponType.throwing",
 	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
+
+export async function generateEnrichedTooltips() {
+	CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS = {};
+	CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK = {};
+	for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
+		CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
+			game.i18n.localize(
+				`FALLOUT.TOOLTIPS.WeaponQuality.${key}`
+			)
+		);
+		CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key] = key.endsWith("_x");
+	}
+
+	CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK = {};
+	CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS = [];
+	for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
+		CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key] = await TextEditor.enrichHTML(
+			game.i18n.localize(
+				`FALLOUT.TOOLTIPS.DamageEffect.${key}`
+			)
+		);
+		CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key] = key.endsWith("_x");
+	}
+}

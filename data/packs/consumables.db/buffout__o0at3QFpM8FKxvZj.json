@@ -1,0 +1,33 @@
+{
+	"_id": "o0at3QFpM8FKxvZj",
+	"_key": "!items!o0at3QFpM8FKxvZj",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Buffout",
+	"system": {
+		"addiction": 2,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "Buffout",
+		"consumableType": "chem",
+		"cost": 45,
+		"description": "<p>A powerful and quick-acting steroid which gained popularity with athletes prior to the Great War. For a few minutes, it makes one stronger and tougher.</p>\n<ul>\n<li><strong>Buffout Addiction:</strong> A failed addiction roll renders you addicted to Buffout. You increase the difficulty of all STR and END tests by +1 whenever you are not under the effects of a type of Buffout (Buffout, Buffjet, or Bufftats).</li>\n</ul>",
+		"duration": "lasting",
+		"effect": "<p>Re-roll 1d20 on all STR and END tests, +3 Max HP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

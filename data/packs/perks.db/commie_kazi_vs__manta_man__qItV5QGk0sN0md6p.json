@@ -1,0 +1,22 @@
+{
+	"_id": "qItV5QGk0sN0md6p",
+	"_key": "!items!qItV5QGk0sN0md6p",
+	"effects": [
+	],
+	"folder": "y6eI37QhWZMaqeyZ",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Commie-Kazi vs. Manta Man",
+	"system": {
+		"description": "<p>Spend 1 Luck point to avoid all damage from a Blast weapon</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

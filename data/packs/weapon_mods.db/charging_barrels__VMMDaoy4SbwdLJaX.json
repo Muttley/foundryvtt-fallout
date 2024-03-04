@@ -1,0 +1,34 @@
+{
+	"_id": "VMMDaoy4SbwdLJaX",
+	"_key": "!items!VMMDaoy4SbwdLJaX",
+	"effects": [
+	],
+	"folder": "lpSNN96iDLstljDg",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Charging Barrels",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 357,
+		"description": "",
+		"effect": "<p>+4 @fos[DC]</p>\n<p>-3 Fire Rate</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Gatling Laser Barrel",
+		"namePrefix": "Charging",
+		"perks": "Science! 4",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 10
+	},
+	"type": "weapon_mod"
+}

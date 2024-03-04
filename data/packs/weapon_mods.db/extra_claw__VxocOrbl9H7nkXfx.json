@@ -1,0 +1,34 @@
+{
+	"_id": "VxocOrbl9H7nkXfx",
+	"_key": "!items!VxocOrbl9H7nkXfx",
+	"effects": [
+	],
+	"folder": "wvK8aoD30P5a8IN6",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Extra Claw",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 22,
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>On a successful attack, spend 2 AP to disarm opponent, knocking one held weapon away.</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Deathclaw Gauntlet",
+		"namePrefix": "Large",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "unarmed",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

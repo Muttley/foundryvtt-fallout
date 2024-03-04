@@ -1,0 +1,25 @@
+{
+	"_id": "ZTVTUHilc84UzoRP",
+	"_key": "!items!ZTVTUHilc84UzoRP",
+	"effects": [
+	],
+	"folder": "Yz1YYU8QjGg1Lrdb",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Duck and Cover!",
+	"system": {
+		"cost": 100,
+		"description": "<p>A pre-War book about the manufacture, use, and disarming of explosives.</p>\n<ul>\n<li>Perk: Once, when you are affected by a Blast weapon, you may choose to fall prone (p.25). If you do so, you add +3 to all damage resistances against the damage caused by that Blast. If you later learn this perk, you may use whenever you are affected by a Blast weapon by spending 1 AP.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.gD1wycvvp1ivtXdY]{Duck and Cover!}</p>",
+		"effect": "<p>Once, when you are affected by a Blast weapon, you may choose to fall prone (p.25). If you do so, you add +3 to all damage resistances against the damage caused by that Blast.</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "",
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

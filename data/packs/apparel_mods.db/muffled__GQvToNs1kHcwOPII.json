@@ -1,0 +1,34 @@
+{
+	"_id": "GQvToNs1kHcwOPII",
+	"_key": "!items!GQvToNs1kHcwOPII",
+	"effects": [
+	],
+	"folder": "a6NtcgmV821A7tRN",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Muffled",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 2,
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>Re-roll 1d20 on Stealth tests</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Legs",
+		"perks": "Armorer 2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "apparel_mod"
+}

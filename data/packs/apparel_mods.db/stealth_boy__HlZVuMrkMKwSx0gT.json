@@ -1,0 +1,34 @@
+{
+	"_id": "HlZVuMrkMKwSx0gT",
+	"_key": "!items!HlZVuMrkMKwSx0gT",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Stealth Boy",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 100,
+		"description": "<p>Installed with the <b>Science</b> skill</p>",
+		"effect": "<p>You may activate a Stealth Boy (p.171) once per scene by spending 1 charge</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Torso",
+		"perks": "Science! 4",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

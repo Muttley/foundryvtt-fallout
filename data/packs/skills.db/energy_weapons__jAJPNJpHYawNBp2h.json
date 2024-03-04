@@ -4,12 +4,13 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"img": "systems/fallout/assets/icons/items/skill.webp",
 	"name": "Energy Weapons",
 	"system": {
 		"defaultAttribute": "per",
-		"description": "",
+		"description": "<p>Energy Weapons is the skill to use any time you fire energy-based firearms like laser guns, plasma guns, gauss weaponry, and any other small arm that fires a bolt of energy.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Perception</strong> but could be used with Intelligence if you were trying to modify and repair an energy weapon, or Agility when you are trying to disarm a trap that uses an energy weapon. You use Energy Weapons with weapons like laser pistols, plasma rifles, the gauss rifle, the microwave emitter, or a laser musket.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

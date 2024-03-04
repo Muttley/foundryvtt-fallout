@@ -1,0 +1,34 @@
+{
+	"_id": "41rymX7pm90tz0V8",
+	"_key": "!items!41rymX7pm90tz0V8",
+	"effects": [
+	],
+	"folder": "ejaQqUkMulo41TKV",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Powerful",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 25,
+		"description": "",
+		"effect": "<p>+2 @fos[DC] damage</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Receiver",
+		"namePrefix": "Powerful",
+		"perks": "Gun Nut 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

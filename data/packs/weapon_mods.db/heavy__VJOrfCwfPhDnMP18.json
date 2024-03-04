@@ -1,0 +1,34 @@
+{
+	"_id": "VJOrfCwfPhDnMP18",
+	"_key": "!items!VJOrfCwfPhDnMP18",
+	"effects": [
+	],
+	"folder": "r7pwoBfbx25tl1L6",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Heavy",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 11,
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Lead Pipe",
+		"namePrefix": "Heavy",
+		"perks": "Blacksmith 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

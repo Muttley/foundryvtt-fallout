@@ -1,0 +1,34 @@
+{
+	"_id": "p0DwgxYf9LqKdtD2",
+	"_key": "!items!p0DwgxYf9LqKdtD2",
+	"effects": [
+	],
+	"folder": "nFPmNkzi1jEUkhZm",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Insulated Lining",
+	"system": {
+		"apparelType": "clothing",
+		"attachable": true,
+		"attached": false,
+		"cost": 10,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "0wIVX8zUon56LDsB",
+	"_key": "!items!0wIVX8zUon56LDsB",
+	"effects": [
+	],
+	"folder": "Zh7U1bCmTwNjIFm6",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Welded",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 3,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

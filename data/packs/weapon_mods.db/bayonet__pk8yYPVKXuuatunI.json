@@ -1,0 +1,34 @@
+{
+	"_id": "pk8yYPVKXuuatunI",
+	"_key": "!items!pk8yYPVKXuuatunI",
+	"effects": [
+	],
+	"folder": "Htqdrwq1W92U4qPP",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Bayonet",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 30,
+		"description": "",
+		"effect": "<p>Melee weapon</p>\n<p>Deals 4 @fos[DC] Piercing 1 physical damage</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Missile Launcher Muzzle",
+		"namePrefix": "Bayoneted Shredding",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

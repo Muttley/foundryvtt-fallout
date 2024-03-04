@@ -6,24 +6,23 @@ import * as sheets from "../sheets/_module.mjs";
 
 import { APTracker } from "../apps/APTracker.mjs";
 
-import { FalloutChat } from "../system/FalloutChat.mjs";
 import { Dialog2d20 } from "../roller/Dialog2d20.mjs";
 import { DialogD6 } from "../roller/DialogD6.mjs";
 import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
 import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
-import { FalloutHovers } from "../system/FalloutHovers.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
+import FalloutChat from "../system/FalloutChat.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
-
+import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
 import Logger from "../utils/Logger.mjs";
 
 import preloadHandlebarsTemplates from "../templates.mjs";
-import { registerHandlebarsHelpers } from "../handlebars.mjs";
-import { registerSettings } from "../settings.mjs";
-import { registerTextEditorEnrichers } from "../enrichers.mjs";
+import registerHandlebarsHelpers from "../handlebars.mjs";
+import registerSettings from "../settings.mjs";
+import registerTextEditorEnrichers from "../enrichers.mjs";
 
 export async function initHook() {
 	console.debug(`${SYSTEM_NAME} | Running init hook`);
@@ -37,13 +36,14 @@ export async function initHook() {
 	// Add utility classes to the global game object so that they're more easily
 	// accessible in global contexts.
 	globalThis.fallout = {
+		conditionTracker: new FalloutConditionTracker(),
 		apps,
 		APTracker,
 		chat: FalloutChat,
 		compendiums: FalloutCompendiums,
 		Dialog2d20,
 		DialogD6,
-		FalloutHovers,
+		// FalloutHovers,
 		Roller2D20,
 		logger: Logger,
 		macros: FalloutMacros,

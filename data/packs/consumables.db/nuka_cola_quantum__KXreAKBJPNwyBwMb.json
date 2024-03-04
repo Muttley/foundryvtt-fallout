@@ -1,0 +1,32 @@
+{
+	"_id": "KXreAKBJPNwyBwMb",
+	"_key": "!items!KXreAKBJPNwyBwMb",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Nuka-Cola Quantum",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": 50,
+		"description": "<p><span class=\"fontstyle0\">Introduced the same day the bombs fell, and thus difficult to find, Nuka-Cola Quantum was the newest flavor of Nuka-Cola to be released to the public, with twice the calories, twice the carbohydrates, twice, the caffeine, and twice the taste. The drink&rsquo;s distinctive blue glow comes from the (safe for human consumption) isotope additive developed by beverageers working with the United States military. Most bottles found were from special pre-release batches sent to chosen retailers or found in trucks in the process of shipping the product. The drink&rsquo;s effects are extremely potent.</span></p>\n<p><span class=\"fontstyle0\">You receive 1 cap upon opening and drinking a bottle of Nuka-Cola Quantum.</span> </p>",
+		"duration": "",
+		"effect": "<p>Immediately gain +5 AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 10,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 5,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,32 @@
+{
+	"_id": "vo4udlZQUOjzx402",
+	"_key": "!items!vo4udlZQUOjzx402",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Crispy Squirrel Bits",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 6,
+		"description": "<p><span class=\"fontstyle0\">Chunks of squirrel meat, which have been fried until crispy, often found held together on a skewer. An easy way to get a little nutrition, and not so heavy a meal that it weighs you down while you digest it.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

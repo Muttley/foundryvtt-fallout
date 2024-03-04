@@ -1,0 +1,34 @@
+{
+	"_id": "RR7Vs2f9fJxRK7nq",
+	"_key": "!items!RR7Vs2f9fJxRK7nq",
+	"effects": [
+	],
+	"folder": "U9QdR1SJ8Q85o6wa",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-45c Arm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 10,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Arm",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

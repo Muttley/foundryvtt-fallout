@@ -1,0 +1,22 @@
+{
+	"_id": "Zl8Mt7ll7IqbgFq2",
+	"_key": "!items!Zl8Mt7ll7IqbgFq2",
+	"effects": [
+	],
+	"folder": "hleTGvh4Mq1pZALV",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Avoid Those Pesky Gun Laws!",
+	"system": {
+		"description": "<p>When you salvage a weapon, gain 2 AP which may only be spent to salvage additional units of materials</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

@@ -1,0 +1,22 @@
+{
+	"_id": "lkAJKVOfU1DfjLU9",
+	"_key": "!items!lkAJKVOfU1DfjLU9",
+	"effects": [
+	],
+	"folder": "zY0rwlqXY0Yb7tFp",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "U.S. Army Goes to Space",
+	"system": {
+		"description": "<p>On a single attack with an Energy weapon, you inflict a Critical Hit if you inflict 3 or more damage after damage resistance (rather than the normal 5 or more damage)</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

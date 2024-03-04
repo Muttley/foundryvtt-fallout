@@ -1,0 +1,21 @@
+{
+	"_id": "M7QQFcLD08YuKOqE",
+	"_key": "!items!M7QQFcLD08YuKOqE",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Pack Brahmin",
+	"system": {
+		"cost": 200,
+		"description": "<p>A large, two-headed mutant female cow used as a pack animal. The brahmin&rsquo;s profile is on p.341, and they can carry up to 500 lbs. of weight.</p>\n<p>The brahmin can also be milked once a day, requiring an AGI + Survival test with a difficulty of 1. Success means the brahmin produces one brahmin milk (p.161), plus one extra for each AP spent (maximum 5 brahmin milk). A brahmin also produces 2CD units of fertilizer (uncommon material) each day.</p>",
+		"effect": "<p>A mutant cow that carries heavy loads and produces milk and fertilizer</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "miscellany"
+}

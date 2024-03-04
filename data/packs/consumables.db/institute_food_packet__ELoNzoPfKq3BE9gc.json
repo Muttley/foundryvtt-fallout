@@ -1,0 +1,32 @@
+{
+	"_id": "ELoNzoPfKq3BE9gc",
+	"_key": "!items!ELoNzoPfKq3BE9gc",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Institute Food Packet",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 10,
+		"description": "<p><span class=\"fontstyle0\">A small white box of food marked with the symbol of the Institute. Each box contains enriched ration bars filled with essential nutrients. Each ration bar contains your daily requirements of forty different vitamins, minerals, and nutrients, which are listed on the back of the box.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 5,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

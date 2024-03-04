@@ -1,0 +1,32 @@
+{
+	"_id": "r5HGZTe9sYtWopL7",
+	"_key": "!items!r5HGZTe9sYtWopL7",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Mole Rat Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 5,
+		"description": "<p><span class=\"fontstyle0\">A chunk of meat taken from a dead mole rat.</span></p>\n<p><span class=\"fontstyle0\">Mole rat meat can be cooked to make Mole Rat Chunks.</span></p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 5,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "qH24ODPdUtNy87vp",
+	"_key": "!items!qH24ODPdUtNy87vp",
+	"effects": [
+	],
+	"folder": "U9QdR1SJ8Q85o6wa",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-45c Helm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 6,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Head",
+		"perks": "1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

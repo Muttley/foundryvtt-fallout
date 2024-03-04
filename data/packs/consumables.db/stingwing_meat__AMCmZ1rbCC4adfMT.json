@@ -1,0 +1,32 @@
+{
+	"_id": "AMCmZ1rbCC4adfMT",
+	"_key": "!items!AMCmZ1rbCC4adfMT",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Stingwing Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 30,
+		"description": "<p><span class=\"fontstyle0\">Meat taken from the body of a stingwing, a mutated scorpionfly with a nasty sting. Doesn&rsquo;t look especially tasty, but it cooks reasonably well once you&rsquo;ve pried the exoskeleton off.</span></p>\n<p><span class=\"fontstyle0\">Stingwing meat can be cooked to create Stingwing Filet.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 8,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

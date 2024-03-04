@@ -1,0 +1,32 @@
+{
+	"_id": "wiBxvaJTsmYQuAof",
+	"_key": "!items!wiBxvaJTsmYQuAof",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radscorpion Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 55,
+		"description": "<p><span class=\"fontstyle0\">Meat taken from inside the carapace of a radscorpion, normally form the tail or one of the legs where it&rsquo;s easier to get to. Difficult to obtain, as it requires killing a radscorpion or taking it from something that killed a radscorpion.</span></p>\n<p><span class=\"fontstyle0\">Radscorpion meat can be cooked to make Radscorpion Steak.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 9,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

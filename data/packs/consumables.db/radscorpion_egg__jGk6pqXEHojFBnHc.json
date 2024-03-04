@@ -1,0 +1,32 @@
+{
+	"_id": "jGk6pqXEHojFBnHc",
+	"_key": "!items!jGk6pqXEHojFBnHc",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radscorpion Egg",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 48,
+		"description": "<p><span class=\"fontstyle0\">The egg of a radscorpion. Not easy to get hold of, as they tend to be found in places where there are radscorpions.</span></p>\n<p><span class=\"fontstyle0\">Radscorpion Eggs can be used to make Radscorpion Egg Omelette.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,22 @@
+{
+	"_id": "1KDDs6qPimKnwL9r",
+	"_key": "!items!1KDDs6qPimKnwL9r",
+	"effects": [
+	],
+	"folder": "wLlEWSMEFaVWTQ5E",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "What Sorcery is This?",
+	"system": {
+		"description": "<p>Gain +2 Energy damage resistance against one attack</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

@@ -1,0 +1,34 @@
+{
+	"_id": "DQwdlCs54hWqQaZa",
+	"_key": "!items!DQwdlCs54hWqQaZa",
+	"effects": [
+	],
+	"folder": "CX42aHQ083WuWVzF",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Gunner Sight",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 68,
+		"description": "",
+		"effect": "<p>Remove Inaccurate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Minigun Sight",
+		"namePrefix": "Tactical",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

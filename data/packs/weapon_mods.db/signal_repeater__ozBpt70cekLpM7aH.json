@@ -1,0 +1,34 @@
+{
+	"_id": "ozBpt70cekLpM7aH",
+	"_key": "!items!ozBpt70cekLpM7aH",
+	"effects": [
+	],
+	"folder": "W28sa1G86XSoOGE3",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Signal Repeater",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 60,
+		"description": "",
+		"effect": "<p>+2 Fire Rate</p>\n<p>Gain Burst</p>\n<p>Remove Blast</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Gamma Gun Muzzle",
+		"namePrefix": "Automatic",
+		"perks": "Science! 4",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

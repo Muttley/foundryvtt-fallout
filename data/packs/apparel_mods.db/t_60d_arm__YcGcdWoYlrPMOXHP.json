@@ -1,0 +1,34 @@
+{
+	"_id": "YcGcdWoYlrPMOXHP",
+	"_key": "!items!YcGcdWoYlrPMOXHP",
+	"effects": [
+	],
+	"folder": "OvlGhKtZemOqxcAN",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-60d Arm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 105,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Arm",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

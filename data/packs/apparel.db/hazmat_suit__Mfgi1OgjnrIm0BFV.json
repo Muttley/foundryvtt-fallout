@@ -1,0 +1,57 @@
+{
+	"_id": "Mfgi1OgjnrIm0BFV",
+	"_key": "!items!Mfgi1OgjnrIm0BFV",
+	"effects": [
+	],
+	"folder": "FiAqKiTwXAp5BbMw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Hazmat Suit",
+	"system": {
+		"appareltype": "outfit",
+		"armorType": "",
+		"cost": 0,
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">A completely enclosed suit for handling hazardous materials. The materials a hazmat suit is made from don&rsquo;t stand up well to violence; but wearing one of these renders you basically immune to radiation.</span> </p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "apparel"
+}

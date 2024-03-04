@@ -1,0 +1,22 @@
+{
+	"_id": "SFhtHQk4lztiJ8gw",
+	"_key": "!items!SFhtHQk4lztiJ8gw",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Meltdown",
+	"system": {
+		"description": "<p>When you kill an enemy with an energy weapon, they explode. Roll a number of DDCD equal to half the weapon&rsquo;s damage rating (round down). For each Effect rolled, one creature within Close range of the exploding enemy (starting with the closest) suffers energy damage equal to the total rolled on the DDCD.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "PER 10",
+		"source": ""
+	},
+	"type": "perk"
+}

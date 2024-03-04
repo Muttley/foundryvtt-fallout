@@ -1,0 +1,57 @@
+{
+	"_id": "XzEQFrZXE4OPNs3g",
+	"_key": "!items!XzEQFrZXE4OPNs3g",
+	"effects": [
+	],
+	"folder": "FiAqKiTwXAp5BbMw",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Engineer's Armor",
+	"system": {
+		"appareltype": "outfit",
+		"armorType": "",
+		"cost": 15,
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">Worn by Brotherhood engineers and those who style themselves as similar, this outfit consists of a protective jacket, heavy canvas or leather gauntlets, and a vest and toolbelt covered in pouches. It provides protection against the hazards of using power tools in a workshop but isn&rsquo;t really armor fit for the battlefield.</span> </p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": true,
+			"armR": true,
+			"head": false,
+			"legL": true,
+			"legR": true,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel"
+}

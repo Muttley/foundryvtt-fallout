@@ -1,0 +1,22 @@
+{
+	"_id": "nOpsl2puqWzQJT4t",
+	"_key": "!items!nOpsl2puqWzQJT4t",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Master Thief",
+	"system": {
+		"description": "<p>When you are attempting to pick a lock or pickpocket somebody, the difficulty of the opponent&rsquo;s skill test to detect you increases by +1.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "PER 8, AGI 9",
+		"source": ""
+	},
+	"type": "perk"
+}

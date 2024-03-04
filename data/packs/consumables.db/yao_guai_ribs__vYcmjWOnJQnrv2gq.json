@@ -1,0 +1,32 @@
+{
+	"_id": "vYcmjWOnJQnrv2gq",
+	"_key": "!items!vYcmjWOnJQnrv2gq",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Yao Guai Ribs",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 90,
+		"description": "<p><span class=\"fontstyle0\">A rack of ribs made with Yao Guai meat. Yao Guai ribs are both a satisfying meal and inspire a sense of invincibility, while also boosting your tolerance for pain for a short while.</span> </p>",
+		"duration": "",
+		"effect": "<p>+2 Physical damage resistance until end of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 13,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

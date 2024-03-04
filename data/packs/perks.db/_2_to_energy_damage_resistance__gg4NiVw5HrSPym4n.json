@@ -1,0 +1,30 @@
+{
+	"_id": "gg4NiVw5HrSPym4n",
+	"_key": "!items.effects!fDu6KU5u17sqA1hf.gg4NiVw5HrSPym4n",
+	"changes": [
+		{
+			"key": "system.resistance.energy",
+			"mode": 2,
+			"priority": null,
+			"value": "2"
+		}
+	],
+	"description": "",
+	"disabled": false,
+	"duration": {
+		"combat": null,
+		"rounds": null,
+		"seconds": null,
+		"startRound": null,
+		"startTime": null,
+		"startTurn": null,
+		"turns": null
+	},
+	"icon": "icons/svg/aura.svg",
+	"name": "+2 to Energy damage resistance",
+	"origin": "Item.fDu6KU5u17sqA1hf",
+	"statuses": [
+	],
+	"tint": null,
+	"transfer": true
+}

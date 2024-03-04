@@ -1,0 +1,34 @@
+{
+	"_id": "5gXCZXtJ4E9Blg97",
+	"_key": "!items!5gXCZXtJ4E9Blg97",
+	"effects": [
+	],
+	"folder": "IEE570d0qQIojCKB",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Gunner Sight",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 5,
+		"description": "",
+		"effect": "<p>May re-roll hit location die</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Junk Jet Sight",
+		"namePrefix": "Tactical",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

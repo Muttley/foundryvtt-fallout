@@ -1,0 +1,34 @@
+{
+	"_id": "9FlKDaWEsEDXBCMP",
+	"_key": "!items!9FlKDaWEsEDXBCMP",
+	"effects": [
+	],
+	"folder": "sZsnd4w6meoCfPDE",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Laminated",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 5,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

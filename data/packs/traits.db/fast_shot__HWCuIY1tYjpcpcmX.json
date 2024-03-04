@@ -1,0 +1,15 @@
+{
+	"_id": "HWCuIY1tYjpcpcmX",
+	"_key": "!items!HWCuIY1tYjpcpcmX",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "Fast Shot",
+	"system": {
+		"description": "<p>If you take a second major action in combat, and use it to make a ranged attack, the additional major action only costs 1 AP, rather than 2.</p>\n<p>You cannot benefit from the Aim minor action&mdash;you&rsquo;re too impatient.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}

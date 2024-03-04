@@ -1,0 +1,34 @@
+{
+	"_id": "5eT7jnRBQdbsVQmN",
+	"_key": "!items!5eT7jnRBQdbsVQmN",
+	"effects": [
+	],
+	"folder": "BGxwoJXEELKGsKXk",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Four-Crank Capacitor",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 8,
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>Consumes 4 shots per attack</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Laser Musket Capacitor",
+		"namePrefix": "Four-Crank",
+		"perks": "Science! 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

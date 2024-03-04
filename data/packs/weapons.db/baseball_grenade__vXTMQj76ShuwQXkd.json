@@ -1,0 +1,178 @@
+{
+	"_id": "vXTMQj76ShuwQXkd",
+	"_key": "!items!vXTMQj76ShuwQXkd",
+	"effects": [
+	],
+	"folder": "RwWkQc5BwplK8JXh",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Baseball Grenade",
+	"system": {
+		"ammo": "",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": 40,
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"rank": 0,
+					"value": false
+				},
+				"breaking": {
+					"rank": 0,
+					"value": false
+				},
+				"burst": {
+					"rank": 0,
+					"value": false
+				},
+				"freeze": {
+					"rank": 0,
+					"value": false
+				},
+				"persistent": {
+					"rank": 0,
+					"value": false
+				},
+				"piercing_x": {
+					"rank": 1,
+					"value": false
+				},
+				"radioactive": {
+					"rank": 0,
+					"value": false
+				},
+				"spread": {
+					"rank": 0,
+					"value": false
+				},
+				"stun": {
+					"rank": 0,
+					"value": false
+				},
+				"vicious": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": false,
+				"physical": true,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 5,
+			"weaponQuality": {
+				"accurate": {
+					"rank": 0,
+					"value": false
+				},
+				"ammo_hungry_x": {
+					"rank": 1,
+					"value": false
+				},
+				"blast": {
+					"rank": 0,
+					"value": true
+				},
+				"bombard": {
+					"rank": 0,
+					"value": false
+				},
+				"close_quarters": {
+					"rank": 0,
+					"value": false
+				},
+				"concealed": {
+					"rank": 0,
+					"value": false
+				},
+				"debilitating": {
+					"rank": 0,
+					"value": false
+				},
+				"delay_x": {
+					"rank": 1,
+					"value": false
+				},
+				"gatling": {
+					"rank": 0,
+					"value": false
+				},
+				"inaccurate": {
+					"rank": 0,
+					"value": false
+				},
+				"limited": {
+					"rank": 0,
+					"value": false
+				},
+				"mine": {
+					"rank": 0,
+					"value": false
+				},
+				"night_vision": {
+					"rank": 0,
+					"value": false
+				},
+				"parry": {
+					"rank": 0,
+					"value": false
+				},
+				"recon": {
+					"rank": 0,
+					"value": false
+				},
+				"reliable": {
+					"rank": 0,
+					"value": false
+				},
+				"slow_load": {
+					"rank": 0,
+					"value": false
+				},
+				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"thrown": {
+					"rank": 0,
+					"value": true
+				},
+				"two_handed": {
+					"rank": 0,
+					"value": false
+				},
+				"unreliable": {
+					"rank": 0,
+					"value": false
+				},
+				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">Little more than a hollowed-out baseball filled with an improvised explosive mixture, these grenades are crude, low-tech, and easy to make, dealing a moderate amount of damage to those within the blast.</span> </p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 0,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"quantity": 1,
+		"range": "medium",
+		"rarity": 1,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "explosives",
+		"weight": 1
+	},
+	"type": "weapon"
+}

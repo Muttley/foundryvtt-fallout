@@ -19,14 +19,33 @@
 				/>
 			</h1>
             <span class="flex align-mid">
-                <input
-					class="underline"
-					name="system.origin"
-					placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
-					type="text"
-					value="{{system.origin}}"
-                    data-dtype="String"
-				/>
+				<div>
+					<input
+						class="underline"
+						name="system.origin"
+						placeholder="{{localize 'FALLOUT.TEMPLATES.Origin'}}"
+						type="text"
+						value="{{system.origin}}"
+						data-dtype="String"
+					/>
+				</div>
+				{{#if hasCategory}}
+					<div>
+						{{#select system.category}}
+							<select name="system.category">
+								{{#if isCreature}}
+									{{#each FALLOUT.CREATURE_CATEGORIES as |item key|}}
+										<option value="{{key}}">{{localize item}}</option>
+									{{/each}}
+								{{else}}
+									{{#each FALLOUT.NPC_CATEGORIES as |item key|}}
+										<option value="{{key}}">{{localize item}}</option>
+									{{/each}}
+								{{/if}}
+							</select>
+						{{/select}}
+					</div>
+				{{/if}}
             </span>
         </div>
 
@@ -98,7 +117,7 @@
 					<div class="resource flex-group-left">
 						<label
 							class="resource-label"
-							for="system.power.value"
+							for="system.level.nextLevelXP"
 						>
 							{{localize "FALLOUT.LEVEL.NextXP"}}
 						</label>
@@ -107,11 +126,13 @@
 							<input
 								class="underline"
 								data-dtype="Number"
-								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 								name="system.level.nextLevelXP"
 								type="text"
 								value="{{system.level.nextLevelXP}}"
-								disabled
+								{{#unless disableAutoXpTarget}}
+									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+									disabled
+								{{/unless}}
 							/>
 						</div>
 					</div>
@@ -119,7 +140,7 @@
 					<div class="resource flex-group-left">
 						<label
 							class="resource-label"
-							for="system.health.value"
+							for="system.level.rewardXP"
 						>
 							{{localize "FALLOUT.LEVEL.RewardXP"}}
 						</label>
@@ -127,9 +148,13 @@
 							<input
 								class="underline"
 								data-dtype="Number"
-								name="system.level.currentXP"
+								name="system.level.rewardXP"
 								type="text"
-								value="{{system.level.currentXP}}"
+								value="{{system.level.rewardXP}}"
+								{{#unless disableAutoXpReward}}
+									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+									disabled
+								{{/unless}}
 							/>
 						</div>
 					</div>

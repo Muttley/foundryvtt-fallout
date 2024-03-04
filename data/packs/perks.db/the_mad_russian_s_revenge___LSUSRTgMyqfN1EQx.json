@@ -1,0 +1,23 @@
+{
+	"_id": "LSUSRTgMyqfN1EQx",
+	"_key": "!items!LSUSRTgMyqfN1EQx",
+	"effects": [
+		"IpEtmK7VeFNTeCta"
+	],
+	"folder": "1a7bhclgdtaboOtS",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "The Mad Russian's Revenge!",
+	"system": {
+		"description": "<h2>Astoundingly Awesome Tales</h2>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack.</p>\n<ul>\n<li>+2 to Poison damage resistance</li>\n</ul>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

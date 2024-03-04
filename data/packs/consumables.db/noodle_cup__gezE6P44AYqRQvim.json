@@ -1,0 +1,32 @@
+{
+	"_id": "gezE6P44AYqRQvim",
+	"_key": "!items!gezE6P44AYqRQvim",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Noodle Cup",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 20,
+		"description": "<p><span class=\"fontstyle0\">A simple cup of noodle soup.Moderately filling and thirst-quenching, and simple enough to make if you can find the ingredients.</span></p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,42 @@
+{
+	"_id": "UCJpZzvuttkA0QgE",
+	"_key": "!items!UCJpZzvuttkA0QgE",
+	"effects": [
+	],
+	"folder": "Ybtur3G9WUsIk8jW",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Serrated Plate (Arm 3)",
+	"system": {
+		"appareltype": "plating",
+		"carry": -10,
+		"cost": 15,
+		"description": "<p>Makeshift armor plating with jagged, serrated edges. Like primal plate, but more hazardous to those who would do the robot ill, as the sharp protrusions can lead to injury.</p>\n<p><strong>Special:</strong> When a melee attack is made against a location fitted with serrated plate, and the attacker suffers a complication, then the attacker suffers 2 @fos[DC] Persistent (Physical) damage. In addition, melee attacks made using arms fitted with serrated plate gain the Persistent (Physical) damage effect.</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": true,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": null,
+			"max": null
+		},
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "robot_armor"
+}

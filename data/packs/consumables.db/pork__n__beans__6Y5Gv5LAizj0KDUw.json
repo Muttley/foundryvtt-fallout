@@ -1,0 +1,32 @@
+{
+	"_id": "6Y5Gv5LAizj0KDUw",
+	"_key": "!items!6Y5Gv5LAizj0KDUw",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Pork 'n' Beans",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 10,
+		"description": "<p><span class=\"fontstyle0\">A can containing a complete meal: beans stewed in a tomato sauce with chunks of cured pork belly. The tin may be slightly rusted, and the label has partly fallen off due to age and water damage, but the contents are still as edible as ever, though moreso if warmed up first.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

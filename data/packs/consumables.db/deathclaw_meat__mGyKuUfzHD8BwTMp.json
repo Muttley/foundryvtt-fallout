@@ -1,0 +1,32 @@
+{
+	"_id": "mGyKuUfzHD8BwTMp",
+	"_key": "!items!mGyKuUfzHD8BwTMp",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Deathclaw Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 110,
+		"description": "<p><span class=\"fontstyle0\">A cut of meat from a deathclaw. Dangerous to obtain, as it can only be taken from a dead deathclaw or someone who killed a deathclaw, but valuable as they can be extremely nutritious, especially when properly prepared.</span></p>\n<p><span class=\"fontstyle0\">Deathclaw meat can be cooked to produce deathclaw steak.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 9,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

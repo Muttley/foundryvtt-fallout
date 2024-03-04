@@ -1,0 +1,42 @@
+{
+	"_id": "KIeIEy9kJXroD5wH",
+	"_key": "!items!KIeIEy9kJXroD5wH",
+	"effects": [
+	],
+	"folder": "vwoJVEtBEVfwEart",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Voltaic Frame (Optics)",
+	"system": {
+		"appareltype": "plating",
+		"carry": 10,
+		"cost": 20,
+		"description": "<p>A specially made set of armor plates fitted with additional conduits and capacitors to bolster the effectiveness of energy weaponry.</p>\n<p><strong>Special:</strong> Any of the robot&rsquo;s attacks which deal energy damage inflict +1 @fos[DC] if the robot is fitted with any voltaic frame armor. This bonus increases by +1 @fos[DC] for every two additional locations fitted with Voltaic Frame (so +2 @fos[DC] for 3 pieces, or +3 @fos[DC] for 5 or more pieces)</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": true,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": null,
+			"max": null
+		},
+		"perks": "Armorer 2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "robot_armor"
+}

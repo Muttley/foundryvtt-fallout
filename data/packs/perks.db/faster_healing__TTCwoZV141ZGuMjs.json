@@ -1,0 +1,22 @@
+{
+	"_id": "TTCwoZV141ZGuMjs",
+	"_key": "!items!TTCwoZV141ZGuMjs",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Faster Healing",
+	"system": {
+		"description": "<p>When you make an END + Survival test to heal your own injuries, the first additional d20 you buy is free. The normal maximum of 5d20 still applies.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "END 6, not a robot",
+		"source": ""
+	},
+	"type": "perk"
+}

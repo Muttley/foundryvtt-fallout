@@ -1,0 +1,34 @@
+{
+	"_id": "zpUwoy1BLHyUXuvy",
+	"_key": "!items!zpUwoy1BLHyUXuvy",
+	"effects": [
+	],
+	"folder": "ejaQqUkMulo41TKV",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": ".45 Receiver",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 19,
+		"description": "",
+		"effect": "<p>Change damage to 4 @fos[DC]</p>\n<p>+1 fire rate</p>\n<p>Ammo changes to @UUID[Item.sNuUqfuwQTubAOi4]{.45 Round}</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Receiver",
+		"namePrefix": ".45",
+		"perks": "Gun Nut 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

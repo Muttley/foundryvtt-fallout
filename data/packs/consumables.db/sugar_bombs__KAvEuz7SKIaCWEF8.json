@@ -1,0 +1,32 @@
+{
+	"_id": "KAvEuz7SKIaCWEF8",
+	"_key": "!items!KAvEuz7SKIaCWEF8",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Sugar Bombs",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 11,
+		"description": "<p><span class=\"fontstyle0\">A pre-War breakfast cereal with &ldquo;explosive great taste&rdquo;, the box contains little cereal shapes resembling stylized atomic bombs coated in copious amounts of sugar. Some boxes claim to contain a prize inside.</span></p>\n<p><span class=\"fontstyle0\">Sometimes,&nbsp;</span><span class=\"fontstyle2\"><em>preserved</em> </span><span class=\"fontstyle0\">boxes of Sugar Bombs can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1.</span> </p>",
+		"duration": "",
+		"effect": "<p>Gain +1 AP at start of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

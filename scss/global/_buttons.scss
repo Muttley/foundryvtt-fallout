@@ -1,0 +1,11 @@
+.fallout-button {
+	background: #293f5f;
+    border-color: black;
+    color: $c-font-prim;
+	text-transform: capitalize;
+
+	&:hover {
+    	outline: none;
+    	box-shadow: 0 0 5px $c-font-prim;
+	}
+}

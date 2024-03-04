@@ -1,0 +1,33 @@
+{
+	"_id": "ItcIh4WKCACIyolW",
+	"_key": "!items!ItcIh4WKCACIyolW",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Stimpak (Diluted)",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": 30,
+		"description": "",
+		"duration": "instant",
+		"effect": "<p>Heals 2 HP (see description)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 2,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

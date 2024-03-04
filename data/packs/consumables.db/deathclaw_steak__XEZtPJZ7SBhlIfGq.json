@@ -1,0 +1,32 @@
+{
+	"_id": "XEZtPJZ7SBhlIfGq",
+	"_key": "!items!XEZtPJZ7SBhlIfGq",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Deathclaw Steak",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 130,
+		"description": "<p><span class=\"fontstyle0\">A slab of cooked deathclaw meat. Sufficiently filling and nutritious that it could easily be your only meal for the day, while also leaving you feeling fitter and stronger for a while after eating.</span> </p>",
+		"duration": "",
+		"effect": "<p>May re-roll 1d20 on all STR tests until end of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 14,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,15 @@
+{
+	"_id": "6ZJOHvTML67QyE5E",
+	"_key": "!items!6ZJOHvTML67QyE5E",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/addiction.svg",
+	"name": "Psycho",
+	"system": {
+		"description": "<p>You increase the difficulty of all <strong>STR</strong> tests by +1 and suffer +1 @fos[DC] damage from all physical attacks whenever you are not under the effects of a type of Psycho (ordinary Psycho, Psycho Jet, Psychobuff, or Psychotats).</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "addiction"
+}

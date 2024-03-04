@@ -1,0 +1,34 @@
+{
+	"_id": "R6Z0Qp7iPfeZr0lp",
+	"_key": "!items!R6Z0Qp7iPfeZr0lp",
+	"effects": [
+	],
+	"folder": "e7NADGE4ZuOSX2mA",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Mk IV Arm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 30,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Arm",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

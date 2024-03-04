@@ -1,0 +1,57 @@
+{
+	"_id": "hKGbIZhOnncmk7UT",
+	"_key": "!items!hKGbIZhOnncmk7UT",
+	"effects": [
+	],
+	"folder": "wq5Mhfa0U7SlJgyP",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Casual Hat",
+	"system": {
+		"appareltype": "headgear",
+		"armorType": "",
+		"cost": 15,
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">A simple, lightweight hat, normally with a peak or brim to keep the sunlight out of the wearer&rsquo;s eyes.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">A character wearing a casual hat ignores any difficulty increases caused by extremely bright light.</span> <br><br></p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": true,
+			"legL": false,
+			"legR": false,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "apparel"
+}

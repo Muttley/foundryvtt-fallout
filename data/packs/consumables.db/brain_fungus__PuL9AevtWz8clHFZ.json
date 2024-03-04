@@ -1,0 +1,32 @@
+{
+	"_id": "PuL9AevtWz8clHFZ",
+	"_key": "!items!PuL9AevtWz8clHFZ",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Brain Fungus",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 6,
+		"description": "<p><span class=\"fontstyle0\">An off-white mushroom which resembles a brain, and which tends to be found in clusters growing in dark, dank corners. Slightly irradiated due simply to growing in the wastelands, but otherwise harmless, despite its slightly alarming name and appearance.</span></p>\n<p><span class=\"fontstyle0\">Brain fungus is an ingredient in Mentats.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

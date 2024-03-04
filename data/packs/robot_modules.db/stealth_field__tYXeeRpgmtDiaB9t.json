@@ -1,0 +1,24 @@
+{
+	"_id": "tYXeeRpgmtDiaB9t",
+	"_key": "!items!tYXeeRpgmtDiaB9t",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+	"name": "Stealth Field",
+	"system": {
+		"cost": 50,
+		"description": "<p>Based on the same technology as the Stealth Boy, the robot produces a low-level refraction field which bends and displaces light, camouflaging itself and those nearby. The lower intensity camouflage allows the field to last far longer without burning out the components of the device or draining the robot&rsquo;s power supply, but it cannot provide true invisibility.</p>",
+		"effect": "<p>&nbsp;Allies within Close range may re-roll 1d20 on Stealth tests</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"perks": "Robotics Expert 1",
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": -20
+	},
+	"type": "robot_mod"
+}

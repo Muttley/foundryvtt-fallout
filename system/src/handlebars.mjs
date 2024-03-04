@@ -1,5 +1,4 @@
-// import { FALLOUT } from "./config.mjs"
-export const registerHandlebarsHelpers = function() {
+export default function registerHandlebarsHelpers() {
 	/* -------------------------------------------- */
 	/*  GENERAL HELPERS                             */
 	/* -------------------------------------------- */
@@ -22,7 +21,7 @@ export const registerHandlebarsHelpers = function() {
 			if (!effect.value) continue;
 
 			let effectName = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
-			if (effect.hasRanks) effectName += ` ${effect.rank}`;
+			if (effect.hasRank) effectName += ` ${effect.rank}`;
 
 			const effectHtml =
 				`<span class="effect hover" data-key="${key}">${effectName}</span>`;
@@ -34,7 +33,9 @@ export const registerHandlebarsHelpers = function() {
 
 		if (effectsElements.length > 0) {
 			listString = effectsElements.join(",&nbsp;");
-			listString += ".";
+		}
+		else {
+			listString = "&mdash;";
 		}
 
 		return listString;
@@ -49,7 +50,7 @@ export const registerHandlebarsHelpers = function() {
 			if (!quality.value) continue;
 
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
-			if (quality.hasRanks) qualityName += ` ${quality.rank}`;
+			if (quality.hasRank) qualityName += ` ${quality.rank}`;
 
 			const effectHtml =
 				`<span class="effect hover" data-key="${key}">${qualityName}</span>`;
@@ -61,7 +62,9 @@ export const registerHandlebarsHelpers = function() {
 
 		if (qualityElements.length > 0) {
 			listString = qualityElements.join(",&nbsp;");
-			listString += ".";
+		}
+		else {
+			listString = "&mdash;";
 		}
 
 		return listString;
@@ -213,4 +216,4 @@ export const registerHandlebarsHelpers = function() {
 		return str;
 	});
 
-};
+}

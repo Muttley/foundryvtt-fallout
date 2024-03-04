@@ -1,0 +1,34 @@
+{
+	"_id": "S8t6WX5aWZl3rXqT",
+	"_key": "!items!S8t6WX5aWZl3rXqT",
+	"effects": [
+	],
+	"folder": "h90MorifUQMpngiI",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Stun Pack",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 360,
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>Gain Stun</p>\n<p>Change Damage Type to Energy</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Super Sledge",
+		"namePrefix": "Stunning",
+		"perks": "Blacksmith 3, Science! 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

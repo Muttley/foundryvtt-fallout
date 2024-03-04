@@ -1,0 +1,33 @@
+{
+	"_id": "R9JlPSqlCfooNqFz",
+	"_key": "!items!R9JlPSqlCfooNqFz",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Rad-X (Diluted)",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": 25,
+		"description": "<p>A preventative medicine for those intending to enter areas with heightened risk of radiation exposure. A dose can help you resist the effects of radiation, especially when combined with other protective measures. Due to scarcity, it is often found diluted, reducing the effectiveness of a dose but allowing limited supplies to last longer. Diluted Rad-X is about half as effective, but easier to find.</p>",
+		"duration": "lasting",
+		"effect": "<p>+3 Radiation damage resistance</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

@@ -1,0 +1,178 @@
+{
+	"_id": "mRB3W7wrHDbWhb9i",
+	"_key": "!items!mRB3W7wrHDbWhb9i",
+	"effects": [
+	],
+	"folder": "Fvz7mUEk61qB057V",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "10mm Pistol",
+	"system": {
+		"ammo": "10mm Round",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": 50,
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"rank": 0,
+					"value": false
+				},
+				"breaking": {
+					"rank": 0,
+					"value": false
+				},
+				"burst": {
+					"rank": 0,
+					"value": false
+				},
+				"freeze": {
+					"rank": 0,
+					"value": false
+				},
+				"persistent": {
+					"rank": 0,
+					"value": false
+				},
+				"piercing_x": {
+					"rank": 1,
+					"value": false
+				},
+				"radioactive": {
+					"rank": 0,
+					"value": false
+				},
+				"spread": {
+					"rank": 0,
+					"value": false
+				},
+				"stun": {
+					"rank": 0,
+					"value": false
+				},
+				"vicious": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": false,
+				"physical": true,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 4,
+			"weaponQuality": {
+				"accurate": {
+					"rank": 0,
+					"value": false
+				},
+				"ammo_hungry_x": {
+					"rank": 1,
+					"value": false
+				},
+				"blast": {
+					"rank": 0,
+					"value": false
+				},
+				"bombard": {
+					"rank": 0,
+					"value": false
+				},
+				"close_quarters": {
+					"rank": 0,
+					"value": true
+				},
+				"concealed": {
+					"rank": 0,
+					"value": false
+				},
+				"debilitating": {
+					"rank": 0,
+					"value": false
+				},
+				"delay_x": {
+					"rank": 1,
+					"value": false
+				},
+				"gatling": {
+					"rank": 0,
+					"value": false
+				},
+				"inaccurate": {
+					"rank": 0,
+					"value": false
+				},
+				"limited": {
+					"rank": 0,
+					"value": false
+				},
+				"mine": {
+					"rank": 0,
+					"value": false
+				},
+				"night_vision": {
+					"rank": 0,
+					"value": false
+				},
+				"parry": {
+					"rank": 0,
+					"value": false
+				},
+				"recon": {
+					"rank": 0,
+					"value": false
+				},
+				"reliable": {
+					"rank": 0,
+					"value": true
+				},
+				"slow_load": {
+					"rank": 0,
+					"value": false
+				},
+				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"thrown": {
+					"rank": 0,
+					"value": false
+				},
+				"two_handed": {
+					"rank": 0,
+					"value": false
+				},
+				"unreliable": {
+					"rank": 0,
+					"value": false
+				},
+				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">Small, dependable, reasonably powerful, and </span><span class=\"fontstyle0\">widely available, the 10mm pistol has been a staple of wasteland combat since the bombs first fell. Its versatility and potential for customization mean that a well-looked-after 10mm pistol will keep its owner safe for a long time.</span></p>\n<p><span class=\"fontstyle0\">A 10mm Pistol can accept one each of the following mods:</span></p>\n<ul>\n<li><span class=\"fontstyle0\"><span class=\"fontstyle3\"><strong>Receiver:</strong> </span>Calibrated, Hardened, Automatic, Hair </span><span class=\"fontstyle0\">Trigger, Powerful, Advanced</span></li>\n<li><span class=\"fontstyle0\"><span class=\"fontstyle3\"><strong>Barrel:</strong> </span>Long Barrel, Ported Barrel</span></li>\n<li><span class=\"fontstyle0\"><span class=\"fontstyle3\"><strong>Grip:</strong> </span>Comfort Grip, Sharpshooter&rsquo;s Grip</span></li>\n<li><span class=\"fontstyle0\"><span class=\"fontstyle3\"><strong>Magazine:</strong> </span>Large Magazine, Quick-Eject Magazine, </span><span class=\"fontstyle0\">Large Quick-Eject Magazine</span></li>\n<li><strong>Sights:</strong> <span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">Reflex Sight, Recon Scope</span></li>\n<li><strong>Muzzle:</strong> <span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">Compensator, Suppressor</span></li>\n</ul>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 2,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 6
+		},
+		"quantity": 1,
+		"range": "close",
+		"rarity": 1,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "smallGuns",
+		"weight": 4
+	},
+	"type": "weapon"
+}

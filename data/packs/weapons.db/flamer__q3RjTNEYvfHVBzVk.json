@@ -1,0 +1,178 @@
+{
+	"_id": "q3RjTNEYvfHVBzVk",
+	"_key": "!items!q3RjTNEYvfHVBzVk",
+	"effects": [
+	],
+	"folder": "zXkvl0ffMYUzEMkw",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Flamer",
+	"system": {
+		"ammo": "Flamer Fuel",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": 137,
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"rank": 0,
+					"value": false
+				},
+				"breaking": {
+					"rank": 0,
+					"value": false
+				},
+				"burst": {
+					"rank": 0,
+					"value": true
+				},
+				"freeze": {
+					"rank": 0,
+					"value": false
+				},
+				"persistent": {
+					"rank": 0,
+					"value": true
+				},
+				"piercing_x": {
+					"rank": 1,
+					"value": false
+				},
+				"radioactive": {
+					"rank": 0,
+					"value": false
+				},
+				"spread": {
+					"rank": 0,
+					"value": true
+				},
+				"stun": {
+					"rank": 0,
+					"value": false
+				},
+				"vicious": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": true,
+				"physical": false,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 3,
+			"weaponQuality": {
+				"accurate": {
+					"rank": 0,
+					"value": false
+				},
+				"ammo_hungry_x": {
+					"rank": 1,
+					"value": false
+				},
+				"blast": {
+					"rank": 0,
+					"value": false
+				},
+				"bombard": {
+					"rank": 0,
+					"value": false
+				},
+				"close_quarters": {
+					"rank": 0,
+					"value": false
+				},
+				"concealed": {
+					"rank": 0,
+					"value": false
+				},
+				"debilitating": {
+					"rank": 0,
+					"value": true
+				},
+				"delay_x": {
+					"rank": 1,
+					"value": false
+				},
+				"gatling": {
+					"rank": 0,
+					"value": false
+				},
+				"inaccurate": {
+					"rank": 0,
+					"value": true
+				},
+				"limited": {
+					"rank": 0,
+					"value": false
+				},
+				"mine": {
+					"rank": 0,
+					"value": false
+				},
+				"night_vision": {
+					"rank": 0,
+					"value": false
+				},
+				"parry": {
+					"rank": 0,
+					"value": false
+				},
+				"recon": {
+					"rank": 0,
+					"value": false
+				},
+				"reliable": {
+					"rank": 0,
+					"value": false
+				},
+				"slow_load": {
+					"rank": 0,
+					"value": false
+				},
+				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"thrown": {
+					"rank": 0,
+					"value": false
+				},
+				"two_handed": {
+					"rank": 0,
+					"value": true
+				},
+				"unreliable": {
+					"rank": 0,
+					"value": false
+				},
+				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">A flamethrower, or flamer, is a weapon which sprays an ignited fuel mixture over an area, essentially creating a jet of flame that can burn or ignite targets at a distance. Ideal for clearing dead foliage, irritating vermin, and fortified bunkers!</span></p>\n<p><span class=\"fontstyle0\">A flamer can accept one each of the following mods, which are unique to Flamers and&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">:</span></p>\n<ul>\n<li><strong><span class=\"fontstyle0\">Fuel:&nbsp;</span></strong><span class=\"fontstyle0\">Napalm</span></li>\n<li><strong><span class=\"fontstyle0\">Barrel:</span></strong><span class=\"fontstyle0\"> Long Barrel</span></li>\n<li><strong><span class=\"fontstyle0\">Propellant Tank:</span></strong><span class=\"fontstyle0\"> Large Tank, Huge Tank</span></li>\n<li><strong><span class=\"fontstyle0\">Nozzle:</span></strong><span class=\"fontstyle0\"> Compression Nozzle, Vaporization Nozzle</span></li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 4,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 4
+		},
+		"quantity": 1,
+		"range": "medium",
+		"rarity": 3,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "bigGuns",
+		"weight": 16
+	},
+	"type": "weapon"
+}

@@ -1,0 +1,32 @@
+{
+	"_id": "rzdZZUKOl7QaMRPt",
+	"_key": "!items!rzdZZUKOl7QaMRPt",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radscorpion Steak",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 65,
+		"description": "<p><span class=\"fontstyle0\">A cooked slab of radscorpion meat. The process of cooking the meat has reduced the radiation within below dangerous levels and enhanced the nutritional value. Further, eating Radscorpion Steak heightens your resistance to extreme heat for a while.</span> </p>",
+		"duration": "",
+		"effect": "<p>+2 Energy damage resistance until end of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 12,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

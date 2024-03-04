@@ -1,0 +1,34 @@
+{
+	"_id": "8F9G1Cg2OmluAbG1",
+	"_key": "!items!8F9G1Cg2OmluAbG1",
+	"effects": [
+	],
+	"folder": "hX1IhpilWGz9MjVG",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Pneumatic",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 9,
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>Stun damage effect requires 2+ Effects to be rolled to affect you</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Torso",
+		"perks": "Armorer 4",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

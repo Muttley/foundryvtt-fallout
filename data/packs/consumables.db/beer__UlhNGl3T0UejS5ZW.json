@@ -1,0 +1,33 @@
+{
+	"_id": "UlhNGl3T0UejS5ZW",
+	"_key": "!items!UlhNGl3T0UejS5ZW",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Beer",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "beverage",
+		"cost": 5,
+		"description": "<p><span class=\"fontstyle0\">One of the oldest beverages created by humans, beer is a carbonated alcoholic drink made from fermented cereal grains, popular pre-War to relax after a hard day&rsquo;s work or during a sunny afternoon. Ale, beer, lager, stout, and a variety of similar beverages all have distinct combinations of ingredients, and each have their own proponents, but the effects are largely the same.</span></p>\n<p><span class=\"fontstyle0\">You receive 1 cap upon opening and drinking a bottle of beer.</span></p>",
+		"duration": "",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

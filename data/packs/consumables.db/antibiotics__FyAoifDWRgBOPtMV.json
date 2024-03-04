@@ -1,0 +1,33 @@
+{
+	"_id": "FyAoifDWRgBOPtMV",
+	"_key": "!items!FyAoifDWRgBOPtMV",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Antibiotics",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": 75,
+		"description": "<p>A dose of potent, broad-spectrum antibiotics that&rsquo;ll help clear out pretty much any infection or disease. Taking too many can be damaging to health overall, but these are rare enough that taking too many is rarely a problem.</p>",
+		"duration": "instant",
+		"effect": "<p>Cures all illnesses</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

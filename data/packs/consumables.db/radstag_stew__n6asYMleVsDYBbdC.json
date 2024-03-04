@@ -1,0 +1,32 @@
+{
+	"_id": "n6asYMleVsDYBbdC",
+	"_key": "!items!n6asYMleVsDYBbdC",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radstag Stew",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 60,
+		"description": "<p><span class=\"fontstyle0\">Strips of radstag meat, with vegetables and some alcohol, cooked to make a thick, hearty stew. Filling and satisfying, the stew also help fortify the body, making you more resistant to extreme heat for a while.</span> </p>",
+		"duration": "",
+		"effect": "<p>+3 Energy damage resistance until end of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 12,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

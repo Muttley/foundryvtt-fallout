@@ -1,0 +1,15 @@
+{
+	"_id": "3W3LSN9wwD48gaaL",
+	"_key": "!items!3W3LSN9wwD48gaaL",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "Forced Evolution",
+	"system": {
+		"description": "<p>Your initial Strength and Endurance attributes are increased by +2 each, and your maximum Strength and Endurance are increased to 12, but your maximum Intelligence and Charisma are both reduced to 6. You may not have more than 4 ranks in any skill. You are completely immune to radiation and poison damage.</p>\n<p>You stand over seven feet tall, and your body is bulky and muscular. Your skin is green, yellow, or grey, regardless of what color it was when you were human. You do not seem to age, but you are sterile.&nbsp;You can only wear armor which has been made to fit a super mutant.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}

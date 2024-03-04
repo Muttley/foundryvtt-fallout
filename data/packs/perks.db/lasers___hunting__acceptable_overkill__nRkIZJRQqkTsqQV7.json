@@ -1,0 +1,22 @@
+{
+	"_id": "nRkIZJRQqkTsqQV7",
+	"_key": "!items!nRkIZJRQqkTsqQV7",
+	"effects": [
+	],
+	"folder": "hleTGvh4Mq1pZALV",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Lasers & Hunting: Acceptable Overkill",
+	"system": {
+		"description": "<p>One attack with a Laser weapon gains the Vicious damage effect if it didn&rsquo;t already have it</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

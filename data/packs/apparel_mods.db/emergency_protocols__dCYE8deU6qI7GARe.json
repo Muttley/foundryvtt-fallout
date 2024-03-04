@@ -1,0 +1,34 @@
+{
+	"_id": "dCYE8deU6qI7GARe",
+	"_key": "!items!dCYE8deU6qI7GARe",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Emergency Protocols",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 100,
+		"description": "<p>Installed with the <b>Science</b> skill</p>",
+		"effect": "<p>While armor is powered, if your current HP is below 1/4 of your maximum, add +1 to Defense and +3 to all damage resistances</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Torso",
+		"perks": "Science! 4",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

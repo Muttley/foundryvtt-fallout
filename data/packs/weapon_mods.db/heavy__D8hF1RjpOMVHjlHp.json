@@ -1,0 +1,34 @@
+{
+	"_id": "D8hF1RjpOMVHjlHp",
+	"_key": "!items!D8hF1RjpOMVHjlHp",
+	"effects": [
+	],
+	"folder": "sFnAMjOd2fTxG5bA",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Heavy",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 12,
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Pipe Wrench",
+		"namePrefix": "Weighted",
+		"perks": "Blacksmith 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 7
+	},
+	"type": "weapon_mod"
+}

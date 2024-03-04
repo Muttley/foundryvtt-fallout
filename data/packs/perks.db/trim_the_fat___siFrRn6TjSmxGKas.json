@@ -1,0 +1,22 @@
+{
+	"_id": "siFrRn6TjSmxGKas",
+	"_key": "!items!siFrRn6TjSmxGKas",
+	"effects": [
+	],
+	"folder": "254i0e4Wc0Rhv6gc",
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Trim the Fat!",
+	"system": {
+		"description": "<p>Regain twice as many HP from fruit or vegetables eaten in one scene</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "",
+		"source": ""
+	},
+	"type": "perk"
+}

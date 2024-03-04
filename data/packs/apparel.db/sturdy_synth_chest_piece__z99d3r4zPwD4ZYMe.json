@@ -1,0 +1,57 @@
+{
+	"_id": "z99d3r4zPwD4ZYMe",
+	"_key": "!items!z99d3r4zPwD4ZYMe",
+	"effects": [
+	],
+	"folder": "176Oq05QvOKBoPuA",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Sturdy Synth Chest Piece",
+	"system": {
+		"appareltype": "armor",
+		"armorType": "",
+		"cost": 125,
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">Developed by The Institute, Synth armor is distinctive and provides excellent protection, especially from energy weapons, but can only really be found within the Commonwealth and other locations where Institute synths travel. The rarity of its manufacture means that it&rsquo;s hard to acquire for anyone not on good terms with the Institute, and expensive even then.</span></p>\n<p><span class=\"fontstyle0\">Each piece of Synth armor other than helmets can accept two mods, one of which is a Material, the other of which is an Upgrade. Synth helmets may only accept a Material mod. For mods applied to Torso armor, double the weight and cost (this has already been done for Torso Only mods). All Synth Armor Material mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span> </p>\n<ul>\n<li><span class=\"fontstyle0\"><strong>Synth Amor:</strong> Laminated, Resin, Microcarbon, Nanofilament</span></li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 2
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 4,
+		"resistance": {
+			"energy": 4,
+			"physical": 3,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 12
+	},
+	"type": "apparel"
+}

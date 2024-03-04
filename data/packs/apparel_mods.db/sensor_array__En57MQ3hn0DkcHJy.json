@@ -1,0 +1,34 @@
+{
+	"_id": "En57MQ3hn0DkcHJy",
+	"_key": "!items!En57MQ3hn0DkcHJy",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Sensor Array",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 100,
+		"description": "<p>Installed with the <b>Science</b> skill</p>",
+		"effect": "<p>Re-roll 1d20 on all PER tests while armor is powered</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Head",
+		"perks": "Science! 3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

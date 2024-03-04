@@ -1,8 +1,85 @@
+# v11.4.0
+
+## Enhancements
+- [#141] Add ability to specify Normal, Mighty/Notable, Legendary/Major categories on Creature and NPC sheets
+
+	* The migration script will attempt to work out which category an NPC should be by correlating its level and XP reward.  If that's not possible a warning message will prompt you so you can manually check individual NPC sheets and set the correct category.
+
+- [#142] Auto-calculate XP reward for NPCs
+
+	* This field is now read-only and autocalculated from the Creature or NPC's Level and Category
+
+- [#143] Allow configuration of thirst reduction on food consumables in order to handle Soups/Stews
+- [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
+- [#149] Add default icons for all item types
+- [#150] Add new default tokens for all actor types
+- [#151] Add compendiums containing items from the core rulebook
+- [#152] Added Addiction item compendium (12 items)
+- [#153] Added Ammunition item compendium (20 items)
+- [#154] Added Apparel item compendium (161 items)
+- [#155] Added Apparel Mods item compendium (161 items)
+- [#156] Added Books and Magazines item compendium (95 items)
+- [#157] Added Consumable item compendium (137 items)
+- [#158] Create Perks item compendium (190 items)
+- [#161] Added Trait item compendium (10 items)
+- [#162] Added Weapons item compendium (68 items)
+- [#163] Added Weapon Mods item compendium (145 items)
+- [#169] Allow settlement job assignment numbers to be modified by Active Effects
+
+	* The following keys can be used to adjust the number of job assignments in a settlement:
+		~~~
+		system.assignments.build
+		system.assignments.business
+		system.assignments.guard
+		system.assignments.hunting_and_gathering
+		system.assignments.scavenging
+		system.assignments.tend_crops
+		system.assignments.trade_caravan
+		system.assignments.unnasigned
+		~~~
+
+- [#171] Add new text enricher to detect `+/-nCD` or `+/-nDC` (where `+/-` is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
+- [#172] Added Miscellany item compendium (19 items)
+- [#178] Added Robot Modules item compendium (13 items)
+- [#186] Create GM interface for triggering party sleep durations.  This can be launched with the new `Party Sleep (GM)` macro provided
+- [#188] Automatic condition tracker tied to World time
+
+	* When enabled in the system settings, Character's belonging to players will have their Hunger, Thirst and Sleep values adjusted automatically based on the passing with time in the world. **NOTE:** Your players will *really* have to be on the ball with managing their food & drink resources with this enabled
+	* Without any modules installed, only the Party Sleep tool will advance world time
+	* If you have the Simple Calendar (or similar) module installed, the GM can adjust world time and have the character's condition statuses update following the core rules (p.190)
+	* There are three new system settings that can be used to adjust this behaviour:
+
+		- **Sync Conditions with World Clock**: This enables you to toggle on/off the automatic condition updates
+		- **Max Time Jump (hours)**: If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time. This ensures that no unexpected spikes in Fatigue are added to characters
+		- **Conditions Skip Missing Players**: If this is checked, only characters who's player owner is current online and logged in will have their conditions adjusted
+
+	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefull be added at a later date
+
+- [#191] Give ability to disable automatic XP calculation for people who wish to homebrew the level break points
+
+## Bugfixes
+- [#144] Add conversion Lbs/Kgs for Materials
+- [#147] Skill names not localized in skill roll chat messages
+- [#165] Show correct weight system on encumbrance bar when system is set to Kg
+- [#173] Inline rolls almost unreadable on item chat cards and sheet descriptions
+
+## Chores
+- [#174] Tidy up Weapon Quality and Damage Effect data in schema
+- [#175] Retire the hovers.json facility as we are allowed to have this information in the i18n files for use in tooltips
+	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
+- [#184] Deprecate the "Mouse Hover JSON file" setting
+
+*Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook. Thanks to their generosity the system now comes with compendiums containing 1031 items from the core rulebook.*
+
+---
+
 # v11.3.6
 
 ## Bugfixes
 - [#137] Ammo counting code can incorrectly match non-ammo items
 - [#138] Character sheet rendered before all data ready
+
+---
 
 # v11.3.5
 
@@ -12,10 +89,14 @@
 ## Chores
 - [#127] Merge localization updates from Crowdin
 
+---
+
 # v11.3.4
 
 ## Bugfixes
 - [#125] Updating NPC name doesn't get reflected immediately in a related settlement sheet
+
+---
 
 # v11.3.3
 
@@ -30,15 +111,21 @@
 
 *The French translation is now 100% complete.  Many thanks to Starbuck for their work on this.*
 
+---
+
 # v11.3.2
 
 ## Chores
 - [#113] Merged language updates from Crowdin
 
+---
+
 # v11.3.1
 
 ## Bugfix
 - [#110] Migrations not running correctly
+
+---
 
 # v11.3.0
 

@@ -1,0 +1,57 @@
+{
+	"_id": "jv0C9MAbuq1t9wkX",
+	"_key": "!items!jv0C9MAbuq1t9wkX",
+	"effects": [
+	],
+	"folder": "FpqJV7XpK8RYAC0Q",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "X-01 Right Leg",
+	"system": {
+		"appareltype": "powerArmor",
+		"armorType": "",
+		"cost": 200,
+		"damaged": "",
+		"description": "",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 12,
+			"min": 0,
+			"mod": 0,
+			"value": 12
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": true,
+			"torso": false
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 5,
+		"resistance": {
+			"energy": 6,
+			"physical": 7,
+			"radiation": 7
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 15
+	},
+	"type": "apparel"
+}

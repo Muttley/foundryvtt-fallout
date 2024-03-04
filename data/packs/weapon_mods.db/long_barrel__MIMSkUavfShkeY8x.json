@@ -1,0 +1,34 @@
+{
+	"_id": "MIMSkUavfShkeY8x",
+	"_key": "!items!MIMSkUavfShkeY8x",
+	"effects": [
+	],
+	"folder": "hLOWqs3EQrgXutZr",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Long Barrel",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 20,
+		"description": "",
+		"effect": "<p>Remove Close Quarters</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Barrel",
+		"namePrefix": "Long",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

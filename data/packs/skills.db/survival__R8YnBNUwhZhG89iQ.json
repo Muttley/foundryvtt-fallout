@@ -4,12 +4,13 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"img": "systems/fallout/assets/icons/items/skill.webp",
 	"name": "Survival",
 	"system": {
 		"defaultAttribute": "end",
-		"description": "",
+		"description": "<p>The Survival skill covers all manner of practical bush craft, like hunting, foraging, fishing, building makeshift shelters, and lighting fires.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Endurance</strong> but you might also use it with Perception to figure out how long you have until nightfall, or Charisma to charm animals. You might use Survival to build a base camp, or test your resilience against malnourishment or dehydration.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

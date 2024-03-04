@@ -1,0 +1,22 @@
+{
+	"_id": "j5SfukNzX12lRmwB",
+	"_key": "!items!j5SfukNzX12lRmwB",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Barbarian",
+	"system": {
+		"description": "<p>Your physical Damage Resistance increases on all hit locations based on your STR. You do not gain this benefit while wearing Power Armor.</p>\n<ul>\n<li><strong>STR 7&ndash;8:</strong> +1 physical DR</li>\n<li><strong>STR 9&ndash;10:</strong> +2 physical DR</li>\n<li><strong>STR 11+:</strong> +3 physical DR</li>\n</ul>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "STR 7, Level 4+, not a robot",
+		"source": ""
+	},
+	"type": "perk"
+}

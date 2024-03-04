@@ -1,0 +1,34 @@
+{
+	"_id": "e7ySHkXMm9o7Aovi",
+	"_key": "!items!e7ySHkXMm9o7Aovi",
+	"effects": [
+	],
+	"folder": "hX1IhpilWGz9MjVG",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Asbestos Lining",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 3,
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "<p>Ignore Energy damage from the Persistent damage effect</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Torso",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

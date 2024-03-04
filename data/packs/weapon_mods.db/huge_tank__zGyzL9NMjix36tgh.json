@@ -1,0 +1,34 @@
+{
+	"_id": "zGyzL9NMjix36tgh",
+	"_key": "!items!zGyzL9NMjix36tgh",
+	"effects": [
+	],
+	"folder": "tlpxRn1lrDjGWNDh",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Huge Tank",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 34,
+		"description": "",
+		"effect": "<p>+2 Fire Rate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Flamer Propellant Tank",
+		"namePrefix": "Max. Capactiy",
+		"perks": "Gun Nut 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 6
+	},
+	"type": "weapon_mod"
+}

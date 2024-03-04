@@ -1,4 +1,4 @@
-export class FalloutChat {
+export default class FalloutChat {
 
 	static async _renderChatMessage(
 		actor,
@@ -39,6 +39,13 @@ export class FalloutChat {
 		);
 	}
 
+	static async renderConditionChangeMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/condition-change.hbs",
+			mode
+		);
+	}
+
 	static async renderConsumptionMessage(actor, data, mode) {
 		this._renderChatMessage(actor, data,
 			"systems/fallout/templates/chat/consumption.hbs",
@@ -46,13 +53,15 @@ export class FalloutChat {
 		);
 	}
 
+	static async renderPartySleepMessage(data, mode) {
+		this._renderChatMessage(null, data,
+			"systems/fallout/templates/chat/party-sleep.hbs",
+			mode
+		);
+	}
+
 	static async onRenderChatMessage(message, html, data) {
 		fallout.logger.debug("Running renderChatMessage hook");
-
-		html.find(".hover").each(function(i) {
-			const title = fallout.FalloutHovers.LIST[$(this).data("key")];
-			$(this).prop("title", title);
-		});
 
 		const rerollButton = html.find(".reroll-button");
 

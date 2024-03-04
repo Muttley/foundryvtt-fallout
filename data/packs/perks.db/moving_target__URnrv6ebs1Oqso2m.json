@@ -1,0 +1,22 @@
+{
+	"_id": "URnrv6ebs1Oqso2m",
+	"_key": "!items!URnrv6ebs1Oqso2m",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Moving Target",
+	"system": {
+		"description": "<p>When you take the Sprint action, your Defense increases by +1 until the start of your next turn.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "AGI 6",
+		"source": ""
+	},
+	"type": "perk"
+}

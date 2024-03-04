@@ -1,0 +1,34 @@
+{
+	"_id": "sX2oKETLQ733d01Z",
+	"_key": "!items!sX2oKETLQ733d01Z",
+	"effects": [
+	],
+	"folder": "lLsTAfSqwrufEQub",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "T-51d Helm",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 12,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": "2"
+		},
+		"location": "Head",
+		"perks": "2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

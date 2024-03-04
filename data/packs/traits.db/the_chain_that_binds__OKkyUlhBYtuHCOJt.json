@@ -1,0 +1,15 @@
+{
+	"_id": "OKkyUlhBYtuHCOJt",
+	"_key": "!items!OKkyUlhBYtuHCOJt",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "The Chain that Binds",
+	"system": {
+		"description": "<p>You gain one additional Tag skill, which must be one of Energy Weapons, Science, or Repair.</p>\n<p>As a member of the Brotherhood of Steel, you are bound by the chain of command: The Chain that Binds. You must carry out the orders of your immediate superiors, and you are responsible for your subordinate siblings. If you do not carry out your duty, you are expelled from the Brotherhood and your technology will be reclaimed&mdash;by any means necessary.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}

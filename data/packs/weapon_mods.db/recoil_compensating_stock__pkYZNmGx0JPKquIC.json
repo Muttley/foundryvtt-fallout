@@ -1,0 +1,34 @@
+{
+	"_id": "pkYZNmGx0JPKquIC",
+	"_key": "!items!pkYZNmGx0JPKquIC",
+	"effects": [
+	],
+	"folder": "nngcMvpqtEWovvJx",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Recoil Compensating Stock",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 40,
+		"description": "",
+		"effect": "<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Junk Jet Stock",
+		"namePrefix": "Recoil Compensated",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "bigGuns",
+		"weight": 2
+	},
+	"type": "weapon_mod"
+}

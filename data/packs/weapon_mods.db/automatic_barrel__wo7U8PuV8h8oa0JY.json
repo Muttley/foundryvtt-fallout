@@ -1,0 +1,34 @@
+{
+	"_id": "wo7U8PuV8h8oa0JY",
+	"_key": "!items!wo7U8PuV8h8oa0JY",
+	"effects": [
+	],
+	"folder": "hLOWqs3EQrgXutZr",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Automatic Barrel",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 24,
+		"description": "",
+		"effect": "<p>-1 @fos[DC]</p>\n<p>Remove Close Quarters</p>\n<p>Increase Range by 1 step</p>\n<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Barrel",
+		"namePrefix": "Automatic",
+		"perks": "Science! 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

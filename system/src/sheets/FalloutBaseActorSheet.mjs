@@ -14,7 +14,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
 			width: 780,
-			height: 940,
+			height: 970,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",
@@ -65,12 +65,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			editable: this.isEditable,
 			effects: prepareActiveEffectCategories(this.actor.effects),
 			FALLOUT: CONFIG.FALLOUT,
+			hasCategory: ["creature", "npc"].includes(this.actor.type),
 			isCharacter: this.actor.type === "character",
 			isCreature: this.actor.type === "creature",
 			isNPC: this.actor.type === "npc",
 			isRobot: this.actor.type === "robot",
 			isSettlement: this.actor.type === "settlement",
-			items: actorData.items,
+			items: this.actor.items,
 			limited: this.actor.limited,
 			options: this.options,
 			owner: this.actor.isOwner,
@@ -78,6 +79,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			source: source.system,
 			system: actorData.system,
 			type: this.actor.type,
+			useKgs: this.actor.useKgs,
 		};
 
 		await this._prepareItems(context);
@@ -125,43 +127,6 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			i.canBeEquipped = i.system.equippable ?? false;
 			if (i.type === "apparel" && this.actor.isRobot) i.canBeEquipped = false;
 			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
-
-			switch (i.type) {
-				case "ammo":
-					i.shotsAvailable = ((i.system.quantity - 1)
-					* i.system.shots.max
-					) + i.system.shots.current;
-					break;
-				case "consumable":
-					i.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
-						i.system.consumableType
-					];
-					break;
-				case "skill":
-					// Get the localized name of a skill, if there is no
-					// localization then it is likely a custom skill, in which
-					// case we will just use it's original name
-					//
-					const nameKey = `FALLOUT.SKILL.${i.name}`;
-					i.localizedName = game.i18n.localize(nameKey);
-
-					if (i.localizedName === nameKey) i.localizedName = i.name;
-
-					i.localizedDefaultAttribute = game.i18n.localize(
-						`FALLOUT.AbilityAbbr.${i.system.defaultAttribute}`
-					);
-					break;
-				case "weapon":
-					if (i.system.ammo !== "") {
-						const [, shotsAvailable] =
-							await this.actor._getAvailableAmmoType(
-								i.system.ammo
-							);
-
-						i.shotsAvailable = shotsAvailable;
-					}
-					break;
-			}
 
 			// Skip moving this into its own section if it's not going to be
 			// separated into a specific inventory section
@@ -221,7 +186,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("itemId"));
 			this._onRollSkill(
-				item.name,
+				item.localizedName,
 				item.system.value,
 				this.actor.system.attributes[item.system.defaultAttribute].value,
 				item.system.tag

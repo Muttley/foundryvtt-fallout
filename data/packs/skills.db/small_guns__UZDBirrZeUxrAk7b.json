@@ -4,12 +4,13 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"img": "systems/fallout/assets/icons/items/skill.webp",
 	"name": "Small Guns",
 	"system": {
 		"defaultAttribute": "agi",
-		"description": "",
+		"description": "<p>The Small Guns skill describes your accuracy and working knowledge of single-shot and automatic pistols, rifles, and shotguns.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Agility</strong> but you might use it with Charisma to hold someone at gunpoint or Endurance to remain trained on a target. You use Small Guns to make ranged attacks in combat with pistols, rifles, and shotguns.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

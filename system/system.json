@@ -1,19 +1,16 @@
 {
 	"id": "fallout",
-	"title": "Fallout 2d20",
-	"description": "The Unofficial Fallout 2d20 System for FoundryVTT",
-	"version": "11.3.6",
+	"title": "Fallout: The Roleplaying Game",
+	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
+	"version": "11.4.0",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
 	},
-	"flags": {
-		"schemaVersion": "240114.1"
-	},
 	"authors": [
 		{
 			"name": "Paul Maskelyne",
-			"discord": "Muttley#3296",
+			"discord": "muttley",
 			"email": "mu77ley@gmail.com",
 			"mastodon": "@muttley@dice.camp"
 		},
@@ -29,20 +26,92 @@
 	],
 	"packs": [
 		{
-			"name": "system-documentation",
-			"label": "System Documentation",
+			"name": "addictions",
+			"label": "Addictions",
 			"system": "fallout",
-			"path": "packs/system-documentation",
-			"type": "JournalEntry",
+			"path": "packs/addictions",
+			"type": "Item",
 			"private": false,
 			"flags": {}
 		},
 		{
-			"name": "fallout-macros",
+			"name": "ammunition",
+			"label": "Ammunition",
+			"system": "fallout",
+			"path": "packs/ammunition",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "apparel_mods",
+			"label": "Armor & Clothing Mods",
+			"system": "fallout",
+			"path": "packs/apparel_mods",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "apparel",
+			"label": "Apparel",
+			"system": "fallout",
+			"path": "packs/apparel",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "books_and_magz",
+			"label": "Books & Magazines",
+			"system": "fallout",
+			"path": "packs/books_and_magz",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "consumables",
+			"label": "Consumables",
+			"system": "fallout",
+			"path": "packs/consumables",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "fallout_macros",
 			"label": "Fallout Macros",
 			"system": "fallout",
-			"path": "packs/fallout-macros",
+			"path": "packs/fallout_macros",
 			"type": "Macro",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "miscellany",
+			"label": "Miscellany",
+			"system": "fallout",
+			"path": "packs/miscellany",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "perks",
+			"label": "Perks",
+			"system": "fallout",
+			"path": "packs/perks",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "robot_modules",
+			"label": "Robot Modules",
+			"system": "fallout",
+			"path": "packs/robot_modules",
+			"type": "Item",
 			"private": false,
 			"flags": {}
 		},
@@ -54,6 +123,42 @@
 			"type": "Item",
 			"private": false,
 			"flags": {}
+		},
+		{
+			"name": "system_documentation",
+			"label": "System Documentation",
+			"system": "fallout",
+			"path": "packs/system_documentation",
+			"type": "JournalEntry",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "traits",
+			"label": "Traits",
+			"system": "fallout",
+			"path": "packs/traits",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "weapon_mods",
+			"label": "Weapon Mods",
+			"system": "fallout",
+			"path": "packs/weapon_mods",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "weapons",
+			"label": "Weapons",
+			"system": "fallout",
+			"path": "packs/weapons",
+			"type": "Item",
+			"private": false,
+			"flags": {}
 		}
 	],
 	"packFolders": [
@@ -62,9 +167,30 @@
 			"sorting": "a",
 			"color": "#293f5f",
 			"packs": [
-				"fallout-macros",
-				"skills",
-				"system-documentation"
+				"fallout_macros",
+				"system_documentation"
+			],
+			"folders": [
+				{
+					"name": "Items & Abilities",
+					"sorting": "a",
+					"color": "#141c2b",
+					"packs": [
+						"addictions",
+						"ammunition",
+						"apparel_mods",
+						"apparel",
+						"books_and_magz",
+						"consumables",
+						"miscellany",
+						"perks",
+						"robot_modules",
+						"skills",
+						"traits",
+						"weapon_mods",
+						"weapons"
+					]
+				}
 			]
 		}
 	],
@@ -103,5 +229,6 @@
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
 	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
-	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip"
+	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip",
+	"background": "systems/fallout/assets/images/please-stand-by.webp"
 }

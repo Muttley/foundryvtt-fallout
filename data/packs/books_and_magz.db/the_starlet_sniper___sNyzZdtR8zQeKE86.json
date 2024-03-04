@@ -1,0 +1,25 @@
+{
+	"_id": "sNyzZdtR8zQeKE86",
+	"_key": "!items!sNyzZdtR8zQeKE86",
+	"effects": [
+	],
+	"folder": "gvTCVmcQwuzBajUx",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "The Starlet Sniper!",
+	"system": {
+		"cost": 100,
+		"description": "<p>A magazine containing thrilling short stories of daring adventure!</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack. This lasts only for a single attack (made or received, respectively), unless the perk is learned, in which case it applies to all attacks. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.x6hpmUJFDTD3Iw82]{The Starlet Sniper!}</p>",
+		"effect": "<p>+1CD on attacks with Accurate weapons</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "Astoundingly Awesome Tales",
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

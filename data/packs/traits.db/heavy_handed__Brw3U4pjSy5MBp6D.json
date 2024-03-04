@@ -1,0 +1,15 @@
+{
+	"_id": "Brw3U4pjSy5MBp6D",
+	"_key": "!items!Brw3U4pjSy5MBp6D",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/trait.svg",
+	"name": "Heavy Handed",
+	"system": {
+		"description": "<p>Your Melee Damage bonus increases by +1 @fos[DC]</p>\n<p>Your melee and unarmed attacks suffer a complication on a 19 or 20, rather than only a 20.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "trait"
+}

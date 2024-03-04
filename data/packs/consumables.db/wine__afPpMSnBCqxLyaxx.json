@@ -1,0 +1,32 @@
+{
+	"_id": "afPpMSnBCqxLyaxx",
+	"_key": "!items!afPpMSnBCqxLyaxx",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Wine",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "beverage",
+		"cost": 5,
+		"description": "<p><span class=\"fontstyle0\">An alcoholic beverage made from the fermentation of grape juice. There are numerous pre-War vintages to be found across the wasteland, often collected by the wealthy before the bombs fell, and a survivor who stumbles across an intact wine cellar can enjoy a drunken stupor for weeks or months.</span> </p>",
+		"duration": "",
+		"effect": "<p>Immediately gain +1 AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

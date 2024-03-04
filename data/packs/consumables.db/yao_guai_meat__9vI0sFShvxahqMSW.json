@@ -1,0 +1,32 @@
+{
+	"_id": "9vI0sFShvxahqMSW",
+	"_key": "!items!9vI0sFShvxahqMSW",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Yao Guai Meat",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 85,
+		"description": "<p><span class=\"fontstyle0\">Another dangerous meat to obtain, Yao Guai meat comes from the bodies of slain Yao Guai, a ferocious mutated form of bear that roams the wastelands. The meat is highly prized and nutritious, though still irradiated if consumed raw.</span></p>\n<p><span class=\"fontstyle0\">Yao Guai meat can be cooked to make Yao Guai Ribs or Yao Guai Roast.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 9,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

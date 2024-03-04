@@ -1,0 +1,34 @@
+{
+	"_id": "gI1rYMmsXnPOqctB",
+	"_key": "!items!gI1rYMmsXnPOqctB",
+	"effects": [
+	],
+	"folder": "Zh7U1bCmTwNjIFm6",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Hardened",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 9,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

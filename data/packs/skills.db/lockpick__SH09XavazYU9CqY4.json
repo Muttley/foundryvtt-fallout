@@ -4,12 +4,13 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"img": "systems/fallout/assets/icons/items/skill.webp",
 	"name": "Lockpick",
 	"system": {
 		"defaultAttribute": "per",
-		"description": "",
+		"description": "<p>The Lockpick skill reflects your knowledge of manipulating physical locks and opening them without a key.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Perception</strong> but could be used with Agility, or Strength if you&rsquo;re trying to force a door open without breaking the lock. You might use Lockpick to break into a safe, or open a locked door.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

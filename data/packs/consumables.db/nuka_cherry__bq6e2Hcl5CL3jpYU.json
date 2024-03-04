@@ -1,0 +1,32 @@
+{
+	"_id": "bq6e2Hcl5CL3jpYU",
+	"_key": "!items!bq6e2Hcl5CL3jpYU",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Nuka-Cherry",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": 40,
+		"description": "<p><span class=\"fontstyle0\">Produced by the Nuka-Cola Corporation after it bought the patent for a rival beverage, Merle&rsquo;s Very Cherry Soda, Nuka-Cherry is a blend of the typical beloved Nuka-Cola recipe with a distinctive cherry flavoring and a bright red color. The refreshing taste and high sugar and caffeine contents of the drink make it an ideal pick-me-up for those needing a burst of energy.</span></p>\n<p><span class=\"fontstyle0\">You receive 1 cap upon opening and drinking a bottle of Nuka-Cherry.</span> </p>",
+		"duration": "",
+		"effect": "<p>Immediately gain +2 AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

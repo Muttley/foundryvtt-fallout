@@ -1,0 +1,34 @@
+{
+	"_id": "hWUuQFc4H82qxPec",
+	"_key": "!items!hWUuQFc4H82qxPec",
+	"effects": [
+	],
+	"folder": "sZsnd4w6meoCfPDE",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Resin",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 10,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

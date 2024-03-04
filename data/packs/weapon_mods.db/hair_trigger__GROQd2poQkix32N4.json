@@ -1,0 +1,34 @@
+{
+	"_id": "GROQd2poQkix32N4",
+	"_key": "!items!GROQd2poQkix32N4",
+	"effects": [
+	],
+	"folder": "ejaQqUkMulo41TKV",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Hair Trigger",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 20,
+		"description": "",
+		"effect": "<p>+1 fire rate</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Receiver",
+		"namePrefix": "Hair Trigger",
+		"perks": "Gun Nut 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

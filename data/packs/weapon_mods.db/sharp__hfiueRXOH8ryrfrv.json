@@ -1,0 +1,34 @@
+{
+	"_id": "hfiueRXOH8ryrfrv",
+	"_key": "!items!hfiueRXOH8ryrfrv",
+	"effects": [
+	],
+	"folder": "gRas49gTV8CDZ4hJ",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Sharp",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 7,
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Baseball Bat",
+		"namePrefix": "Sharp",
+		"perks": "",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

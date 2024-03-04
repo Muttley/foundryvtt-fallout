@@ -1,0 +1,32 @@
+{
+	"_id": "qvvShn56H3E1bb1O",
+	"_key": "!items!qvvShn56H3E1bb1O",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Baked Bloatfly",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 15,
+		"description": "<p><span class=\"fontstyle0\">A piece of Bloatfly meat, cooked with dry heat. The resultant food is unappetizing but filling and helps absorb radioactive contamination in the body for a while after eating.</span> </p>",
+		"duration": "",
+		"effect": "<p>+2 Radiation damage resistance</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 6,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

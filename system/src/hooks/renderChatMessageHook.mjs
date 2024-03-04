@@ -1,4 +1,4 @@
-import { FalloutChat } from "../system/FalloutChat.mjs";
+import FalloutChat from "../system/FalloutChat.mjs";
 
 export const renderChatMessageHook = {
 	attach: () => {

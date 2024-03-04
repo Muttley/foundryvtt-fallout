@@ -1,0 +1,178 @@
+{
+	"_id": "uyx46lw2PXh08m1P",
+	"_key": "!items!uyx46lw2PXh08m1P",
+	"effects": [
+	],
+	"folder": "zXkvl0ffMYUzEMkw",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Gatling Laser",
+	"system": {
+		"ammo": "Fusion Core",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": 804,
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"rank": 0,
+					"value": false
+				},
+				"breaking": {
+					"rank": 0,
+					"value": false
+				},
+				"burst": {
+					"rank": 0,
+					"value": true
+				},
+				"freeze": {
+					"rank": 0,
+					"value": false
+				},
+				"persistent": {
+					"rank": 0,
+					"value": false
+				},
+				"piercing_x": {
+					"rank": 1,
+					"value": true
+				},
+				"radioactive": {
+					"rank": 0,
+					"value": false
+				},
+				"spread": {
+					"rank": 0,
+					"value": false
+				},
+				"stun": {
+					"rank": 0,
+					"value": false
+				},
+				"vicious": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": true,
+				"physical": false,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 3,
+			"weaponQuality": {
+				"accurate": {
+					"rank": 0,
+					"value": false
+				},
+				"ammo_hungry_x": {
+					"rank": 1,
+					"value": false
+				},
+				"blast": {
+					"rank": 0,
+					"value": false
+				},
+				"bombard": {
+					"rank": 0,
+					"value": false
+				},
+				"close_quarters": {
+					"rank": 0,
+					"value": false
+				},
+				"concealed": {
+					"rank": 0,
+					"value": false
+				},
+				"debilitating": {
+					"rank": 0,
+					"value": false
+				},
+				"delay_x": {
+					"rank": 1,
+					"value": false
+				},
+				"gatling": {
+					"rank": 0,
+					"value": true
+				},
+				"inaccurate": {
+					"rank": 0,
+					"value": true
+				},
+				"limited": {
+					"rank": 0,
+					"value": false
+				},
+				"mine": {
+					"rank": 0,
+					"value": false
+				},
+				"night_vision": {
+					"rank": 0,
+					"value": false
+				},
+				"parry": {
+					"rank": 0,
+					"value": false
+				},
+				"recon": {
+					"rank": 0,
+					"value": false
+				},
+				"reliable": {
+					"rank": 0,
+					"value": false
+				},
+				"slow_load": {
+					"rank": 0,
+					"value": false
+				},
+				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"thrown": {
+					"rank": 0,
+					"value": false
+				},
+				"two_handed": {
+					"rank": 0,
+					"value": true
+				},
+				"unreliable": {
+					"rank": 0,
+					"value": false
+				},
+				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">A high rate-of-fire laser weapon, the Gatling laser uses several rotating barrels fired in quick succession to produce a devastating fusillade of laser pulses. While the individual laser pulses lack in stopping power, the sheer mass of them can wear down almost any target. Gatling lasers can operate from any sufficient power source, and while fusion cells can be used to power them, the rate-of-fire means that they are often quickly expended. Most users instead rely on a larger power source, such as a fusion core.</span></p>\n<p><span class=\"fontstyle0\">A Gatling laser can accept one each of the following mods which are <span class=\"fontstyle2\">installed with the Science skill</span>. These resemble some common Energy Weapon mods, but</span><span class=\"fontstyle0\">&nbsp;somewhat larger and slightly different in effect due to the Gatling laser&rsquo;s size. <br></span></p>\n<ul>\n<li><strong>Capacitor:</strong> Photon Exciter, Beta Wave Tuner, Boosted Capacitor, Photon Agitator</li>\n<li><strong>Barrel:</strong> Charging Barrels</li>\n<li><strong>Sight:</strong> Reflex Sight</li>\n<li><strong>Nozzle:</strong> Beam Focuser</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 6,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 4
+		},
+		"quantity": 1,
+		"range": "medium",
+		"rarity": 3,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "bigGuns",
+		"weight": 19
+	},
+	"type": "weapon"
+}

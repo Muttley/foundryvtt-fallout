@@ -1,0 +1,33 @@
+{
+	"_id": "860ofdvpufUzSqE7",
+	"_key": "!items!860ofdvpufUzSqE7",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Stimpak",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableGroup": "",
+		"consumableType": "chem",
+		"cost": 50,
+		"description": "<p>A stimulation delivery package, or Stimpak, is a form of fast-acting medication used to bolster the body&rsquo;s own healing and recuperative ability, and countless millions were produced for household and workplace first aid kits, hospitals, clinics, and other places. A wonder of pre-War science, a Stimpak is a single-use syringe filled with a variety of potent healing agents, stimulants, and painkillers, and can be applied in an intravenous or intramuscular fashion: literally stick it anywhere and it&rsquo;ll work. Even so, it a Stimpak is most effective when applied by an Auto-Doc or someone with medical training alongside other treatment.</p>\n<p>Sometimes encountered in a diluted form, reducing its effectiveness as the user is only taking a partial dose. Diluted Stimpaks are only about half as effective, but they&rsquo;re easier to find.</p>\n<ul>\n<li><strong>Use:</strong> A Stimpak can be used in one of two ways: it can be applied using the Take Chem minor action, healing 4 HP or treating an Injury immediately, or it can be applied as part of a First Aid action, healing 4 HP or treating an Injury in addition to any other healing done. Diluted Stimpaks work in the same way, but only heal 2 HP, though they can still treat Injuries as normal.</li>\n</ul>",
+		"duration": "instant",
+		"effect": "<p>Heals 4 HP (see description)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 4,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

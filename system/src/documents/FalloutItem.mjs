@@ -1,8 +1,17 @@
-/**
- * Extend the basic Item with some very simple modifications.
- * @extends {Item}
- */
 export default class FalloutItem extends Item {
+
+	async _preCreate(data, options, user) {
+		await super._preCreate(data, options, user);
+
+		if (data.img) return; // Already had an image set so we won"t change it
+
+		const img = CONFIG.FALLOUT.DEFAULT_ICONS[data.type] ?? undefined;
+
+		if (img) {
+			this.updateSource({img});
+		}
+	}
+
 	async deleteSettlementStructure() {
 		if (!this.actor) return null;
 
@@ -36,6 +45,21 @@ export default class FalloutItem extends Item {
 		// As with the actor class, items are documents that can have their data
 		// preparation methods overridden (such as prepareBaseData()).
 		super.prepareData();
+
+		switch (this.type) {
+			case "ammo":
+				this._prepareAmmoData();
+				break;
+			case "consumable":
+				this._prepareConsumableData();
+				break;
+			case "skill":
+				this._prepareSkillData();
+				break;
+			case "weapon":
+				this._prepareWeaponData();
+				break;
+		}
 	}
 
 	/**
@@ -108,4 +132,46 @@ export default class FalloutItem extends Item {
 
 		return qualities.join(", ");
 	}
+
+	_prepareAmmoData() {
+		let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
+		shotsAvailable += this.system.shots.current;
+
+		this.shotsAvailable = shotsAvailable;
+	}
+
+	_prepareConsumableData() {
+		this.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
+			this.system.consumableType
+		];
+	}
+
+	_prepareSkillData() {
+		// Get the localized name of a skill, if there is no
+		// localization then it is likely a custom skill, in which
+		// case we will just use it's original name
+		//
+		const nameKey = `FALLOUT.SKILL.${this.name}`;
+		this.localizedName = game.i18n.localize(nameKey);
+
+		if (this.localizedName === nameKey) this.localizedName = this.name;
+
+		this.localizedDefaultAttribute = game.i18n.localize(
+			`FALLOUT.AbilityAbbr.${this.system.defaultAttribute}`
+		);
+	}
+
+	async _prepareWeaponData() {
+		if (!this.actor) return;
+
+		if (this.system.ammo !== "") {
+			const [, shotsAvailable] =
+				await this.actor._getAvailableAmmoType(
+					this.system.ammo
+				);
+
+			this.shotsAvailable = shotsAvailable;
+		}
+	}
+
 }

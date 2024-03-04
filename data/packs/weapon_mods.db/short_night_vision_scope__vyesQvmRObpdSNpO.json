@@ -1,0 +1,34 @@
+{
+	"_id": "vyesQvmRObpdSNpO",
+	"_key": "!items!vyesQvmRObpdSNpO",
+	"effects": [
+	],
+	"folder": "Brw4U78MHdGIsy7A",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Short Night Vision Scope",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 38,
+		"description": "",
+		"effect": "<p>Gain Accurate</p>\n<p>Gain Night Vision</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Sight",
+		"namePrefix": "Night Vision",
+		"perks": "Science! 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "smallGuns",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

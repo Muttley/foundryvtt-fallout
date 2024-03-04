@@ -1,0 +1,32 @@
+{
+	"_id": "pGaN2EDIWl3lUsrx",
+	"_key": "!items!pGaN2EDIWl3lUsrx",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Vodka",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "beverage",
+		"cost": 5,
+		"description": "<p><span class=\"fontstyle0\">A clear distilled alcoholic beverage, made from fermented rye, wheat, potatoes, or sugar beet molasses, typically imported from the Soviet Union Pre-War.</span> </p>",
+		"duration": "",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 2,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

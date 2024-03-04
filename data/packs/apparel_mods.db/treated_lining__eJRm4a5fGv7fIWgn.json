@@ -1,0 +1,34 @@
+{
+	"_id": "eJRm4a5fGv7fIWgn",
+	"_key": "!items!eJRm4a5fGv7fIWgn",
+	"effects": [
+	],
+	"folder": "nFPmNkzi1jEUkhZm",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Treated Lining",
+	"system": {
+		"apparelType": "clothing",
+		"attachable": true,
+		"attached": false,
+		"cost": 20,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 2",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 0,
+			"radiation": 1
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

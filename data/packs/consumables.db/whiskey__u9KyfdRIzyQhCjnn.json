@@ -1,0 +1,32 @@
+{
+	"_id": "u9KyfdRIzyQhCjnn",
+	"_key": "!items!u9KyfdRIzyQhCjnn",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Whiskey",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "beverage",
+		"cost": 5,
+		"description": "<p><span class=\"fontstyle0\">A triple-distilled alcoholic beverage made using grain mash. Pre-War versions were created across the United States and beyond. Some wasteland distilleries exist producing post-War versions using corn and razorgrain.</span> </p>",
+		"duration": "",
+		"effect": "<p>Reroll up to two d20 on STR tests (in total)</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 1
+	},
+	"type": "consumable"
+}

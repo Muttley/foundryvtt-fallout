@@ -1,0 +1,34 @@
+{
+	"_id": "X7M3lII0wjlKV7l3",
+	"_key": "!items!X7M3lII0wjlKV7l3",
+	"effects": [
+	],
+	"folder": "YtRXRKCnP8THWkTL",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Photon Agitator",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 35,
+		"description": "",
+		"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Vicious</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Capacitor",
+		"namePrefix": "Agitated",
+		"perks": "Science! 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

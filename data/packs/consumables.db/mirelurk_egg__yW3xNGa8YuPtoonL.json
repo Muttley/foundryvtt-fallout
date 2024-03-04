@@ -1,0 +1,32 @@
+{
+	"_id": "yW3xNGa8YuPtoonL",
+	"_key": "!items!yW3xNGa8YuPtoonL",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Mirelurk Egg",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 0,
+		"description": "<p><span class=\"fontstyle0\">Eggs found in mirelurk nests. Normally found in clutches of 2-3, these eggs hatch into mirelurk hatchlings if left undisturbed.</span></p>\n<p><span class=\"fontstyle0\">Mirelurk eggs are a key ingredient of both Mirelurk Egg Omelette and Mirelurk Cake.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

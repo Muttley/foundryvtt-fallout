@@ -1,0 +1,34 @@
+{
+	"_id": "GDI7gRGYrMxEpm99",
+	"_key": "!items!GDI7gRGYrMxEpm99",
+	"effects": [
+	],
+	"folder": "Zh7U1bCmTwNjIFm6",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Buttressed",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"cost": 12,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 4,
+			"physical": 4,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 3
+	},
+	"type": "apparel_mod"
+}

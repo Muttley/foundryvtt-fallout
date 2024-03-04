@@ -1,0 +1,32 @@
+{
+	"_id": "vKPqt12nZaVKaTM4",
+	"_key": "!items!vKPqt12nZaVKaTM4",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Grilled Radstag",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 60,
+		"description": "<p><span class=\"fontstyle0\">A grilled rack of ribs from a radstag. Easy enough to make when you&rsquo;ve got the main ingredient&mdash;radstag meat&mdash;but tasty and satisfying enough that your burdens feel a little lighter once you&rsquo;ve finished eating.</span> </p>",
+		"duration": "",
+		"effect": "<p>Carry weight increases by +25 until end of next scene</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 11,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 1
+	},
+	"type": "consumable"
+}

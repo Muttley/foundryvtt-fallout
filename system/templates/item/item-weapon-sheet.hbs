@@ -211,8 +211,12 @@
 					<div class="grid item-list">
 						{{#each weaponQualities}}
 							<div
-								class="flexrow toggle-label {{#if this.active}}active{{/if}} hover"
-								data-key="{{key}}"
+								{{#if this.active}}
+									class="flexrow toggle-label active"
+								{{else}}
+									class="flexrow toggle-label"
+								{{/if}}
+								data-tooltip="{{fromConfig "WEAPON_QUALITY_TOOLTIPS" this.key}}"
 							>
 								<label style="align-self: center;">
 									<input
@@ -224,6 +228,15 @@
 									>
 									{{this.label}}
 								</label>
+								{{#if this.hasRank}}
+									<input
+										class="num-short-2"
+										name="system.damage.weaponQuality.{{this.key}}.rank"
+										type="number"
+										value="{{this.rank}}"
+									>
+								{{/if}}
+
 							</div>
 						{{/each}}
 					</div>
@@ -238,24 +251,30 @@
 					<div class="grid item-list">
 						{{#each damageEffects}}
 							<div
-								class="flexrow toggle-label {{#if this.active}}active{{/if}} hover"
-								data-key="{{this.key}}"
+								{{#if this.active}}
+									class="flexrow toggle-label active"
+								{{else}}
+									class="flexrow toggle-label"
+								{{/if}}
+								{{!-- data-key-type="effect" --}}
+								{{!-- data-key="{{this.key}}" --}}
+								data-tooltip="{{fromConfig "DAMAGE_EFFECT_TOOLTIPS" this.key}}"
 							>
 								<label style="align-self: center;">
 									<input
-										type="checkbox"
 										name="system.damage.damageEffect.{{this.key}}.value"
+										type="checkbox"
 										{{#if this.active}}
 											checked
 										{{/if}}
 									>
 									{{this.label}}
 								</label>
-								{{#if this.hasRanks}}
+								{{#if this.hasRank}}
 									<input
-										type="number"
-										name="system.damage.damageEffect.{{this.key}}.rank"
 										class="num-short-2"
+										name="system.damage.damageEffect.{{this.key}}.rank"
+										type="number"
 										value="{{this.rank}}"
 									>
 								{{/if}}

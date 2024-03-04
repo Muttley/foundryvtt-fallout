@@ -54,6 +54,20 @@ export default class FalloutMacros {
 		}
 	}
 
+	static async partySleep() {
+		const macroName = game.i18n.localize("FALLOUT.APP.PartySleep.title");
+
+		if (!game.user.isGM) {
+			return ui.notifications.error(
+				game.i18n.format("FALLOUT.MACRO.Error.GameMasterRoleRequired", {
+					macro: macroName,
+				})
+			);
+		}
+		else {
+			return new fallout.apps.FalloutPartySleep().render(true);
+		}
+	}
 }
 
 export async function createItemMacro(data, slot) {

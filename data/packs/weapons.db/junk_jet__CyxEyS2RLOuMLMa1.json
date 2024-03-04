@@ -1,0 +1,178 @@
+{
+	"_id": "CyxEyS2RLOuMLMa1",
+	"_key": "!items!CyxEyS2RLOuMLMa1",
+	"effects": [
+	],
+	"folder": "zXkvl0ffMYUzEMkw",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Junk Jet",
+	"system": {
+		"ammo": "Anything",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": 285,
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"rank": 0,
+					"value": false
+				},
+				"breaking": {
+					"rank": 0,
+					"value": false
+				},
+				"burst": {
+					"rank": 0,
+					"value": false
+				},
+				"freeze": {
+					"rank": 0,
+					"value": false
+				},
+				"persistent": {
+					"rank": 0,
+					"value": false
+				},
+				"piercing_x": {
+					"rank": 1,
+					"value": false
+				},
+				"radioactive": {
+					"rank": 0,
+					"value": false
+				},
+				"spread": {
+					"rank": 0,
+					"value": false
+				},
+				"stun": {
+					"rank": 0,
+					"value": false
+				},
+				"vicious": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": false,
+				"physical": true,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 6,
+			"weaponQuality": {
+				"accurate": {
+					"rank": 0,
+					"value": false
+				},
+				"ammo_hungry_x": {
+					"rank": 1,
+					"value": false
+				},
+				"blast": {
+					"rank": 0,
+					"value": false
+				},
+				"bombard": {
+					"rank": 0,
+					"value": false
+				},
+				"close_quarters": {
+					"rank": 0,
+					"value": false
+				},
+				"concealed": {
+					"rank": 0,
+					"value": false
+				},
+				"debilitating": {
+					"rank": 0,
+					"value": false
+				},
+				"delay_x": {
+					"rank": 1,
+					"value": false
+				},
+				"gatling": {
+					"rank": 0,
+					"value": false
+				},
+				"inaccurate": {
+					"rank": 0,
+					"value": false
+				},
+				"limited": {
+					"rank": 0,
+					"value": false
+				},
+				"mine": {
+					"rank": 0,
+					"value": false
+				},
+				"night_vision": {
+					"rank": 0,
+					"value": false
+				},
+				"parry": {
+					"rank": 0,
+					"value": false
+				},
+				"recon": {
+					"rank": 0,
+					"value": false
+				},
+				"reliable": {
+					"rank": 0,
+					"value": false
+				},
+				"slow_load": {
+					"rank": 0,
+					"value": false
+				},
+				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"thrown": {
+					"rank": 0,
+					"value": false
+				},
+				"two_handed": {
+					"rank": 0,
+					"value": true
+				},
+				"unreliable": {
+					"rank": 0,
+					"value": false
+				},
+				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				}
+			}
+		},
+		"description": "<p><span class=\"fontstyle0\">The Junk Jet is a makeshift heavy weapon which fires anything. Any items loaded into the weapon&rsquo;s hopper are hurled with deadly force from the business end of the gun. Naturally, this makes it quite useful in situations where random junk is abundant but actual ammunition is scarce.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">When you fire the Junk Jet, choose any item you are currently carrying; that item is fired by the gun. Choose one additional item for each additional shot of ammunition spent by the attack. Items must be small enough to be held in one hand and loaded into the hopper. At the end of the scene, you may roll 1 @fos[DC]<span class=\"fontstyle2\">&nbsp;</span>for each item fired from the Junk Jet; on an Effect, that item survived the attack and can be reclaimed.</span></p>\n<p><span class=\"fontstyle0\">A Junk Jet can accept one each of the following mods, which are distinct to the Junk Jet and&nbsp;<span class=\"fontstyle3\">installed with the Repair skill</span>:</span></p>\n<ul>\n<li><strong><span class=\"fontstyle0\">Barrel:</span></strong><span class=\"fontstyle0\"> Long Barrel</span></li>\n<li><strong><span class=\"fontstyle0\">Stock:</span></strong><span class=\"fontstyle0\"> Recoil Compensating Stock</span></li>\n<li><strong><span class=\"fontstyle0\">Sight:</span></strong><span class=\"fontstyle0\"> Gunner Sight</span></li>\n<li><strong><span class=\"fontstyle0\">Muzzle:</span></strong><span class=\"fontstyle0\"> Electrification Module, Ignition Module</span></li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 1,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 4
+		},
+		"quantity": 1,
+		"range": "medium",
+		"rarity": 3,
+		"skill": "",
+		"source": "",
+		"stashed": false,
+		"tear": "",
+		"weaponType": "bigGuns",
+		"weight": 30
+	},
+	"type": "weapon"
+}

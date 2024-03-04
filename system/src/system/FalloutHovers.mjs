@@ -4,7 +4,7 @@ export class FalloutHovers {
 	static async loadList() {
 		fallout.logger.debug("Loading tooltips");
 
-		const listLocation = await game.settings.get("fallout", "hoversJsonLocation");
+		const listLocation = await game.settings.get(SYSTEM_ID, "hoversJsonLocation");
 		const jsonFile = await fetch(listLocation);
 		const content = await jsonFile.json();
 

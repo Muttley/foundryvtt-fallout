@@ -9,19 +9,22 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
     - name: Install Dependencies
       run: npm ci
+
+    - name: Build Generated Docs
+      run: npm run docs
 
     - name: Build
       run: |
@@ -39,9 +42,10 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: false
-        name: release-${{ env.systemVersion }}
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: './system/system.json, ./fallout.zip'
+        draft: false
+        makeLatest: false
+        name: release-${{ env.systemVersion }}
+        prerelease: true
         tag: release-${{ env.systemVersion }}
+        token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,15 @@
+{
+	"_id": "EeIPWWTVBMinJmJC",
+	"_key": "!items!EeIPWWTVBMinJmJC",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/addiction.svg",
+	"name": "Day Tripper",
+	"system": {
+		"description": "<p>You increase the difficulty of all <strong>CHA</strong> and <strong>LCK</strong> tests by +1 whenever you are not under the effects of Day Tripper.</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "addiction"
+}

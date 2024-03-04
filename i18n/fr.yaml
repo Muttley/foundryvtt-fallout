@@ -20,14 +20,20 @@ FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Cette valeur est en cours de modification par un effet actif et ne peut pas être modifiée. Désactivez l'effet pour l'éditer.
 FALLOUT.Actor.Warnings.DerivedValue: Il s'agit d'une valeur calculée automatiquement qui ne peut pas être modifiée.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ce PNJ est déjà un résident de {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Impossible de trouver un colon avec l'acteur UUID {uuid} et il a été retiré de {settlementName}
 FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
+FALLOUT.APP.PartySleep.chat_message: Le groupe dort pendant {duration}.
+FALLOUT.APP.PartySleep.description: Combien de temps ?
+FALLOUT.APP.PartySleep.hour: 1 heure
+FALLOUT.APP.PartySleep.hours: "{length} heures"
+FALLOUT.APP.PartySleep.safe_location: Endroit sécurisé ?
+FALLOUT.APP.PartySleep.title: Sommeil du groupe
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
-FALLOUT.APPAREL.headgear: Piece d'Armure
+FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Couvre-Chef
 FALLOUT.APPAREL.powerArmor: Armure Assistée
@@ -95,13 +101,19 @@ FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} devient dépendant au {itemNam
 FALLOUT.CHAT_MESSAGE.addiction.title: Addiction à la drogue
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} devient alcoolique en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Dépendance à l'alcool
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now {hungerLevel}, {thirstLevel} and {sleepLevel}"
+FALLOUT.CHAT_MESSAGE.condition-change.title: Changement de condition
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Your fatigue has increased by +{level} due to your {condition} level
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Niveau de fatigue
+FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Niveau de faim
+FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Niveau de sommeil
+FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Niveau de soif
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Boisson consommée
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} a consommé {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
-FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Niveau de faim
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
-FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Niveau de soif
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHEM: Drogues
@@ -194,14 +206,15 @@ FALLOUT.SKILL.Survival: Survie
 FALLOUT.SKILL.Throwing: Projectiles
 FALLOUT.SKILL.Unarmed: Mains nues
 FALLOUT.SOURCE_TITLE.core_rulebook: Livre de base
-FALLOUT.SOURCE_TITLE.quickstart: Démarrage rapide
-FALLOUT.SOURCE_TITLE.rust_devils: "Pack PNJ #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "Pack PNJ #2 : Vestiges de l'Enclave"
+FALLOUT.SOURCE_TITLE.rust_devils: "Pack PNJ #1 : Les Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude
 FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
-FALLOUT.TEMPLATES.AddictionNumber: Nombre de dépendances
+FALLOUT.TEMPLATES.AddictionNumber: Puissance de l'addiction
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
 FALLOUT.TEMPLATES.AMMO: MUN
@@ -287,7 +300,8 @@ FALLOUT.TEMPLATES.INJURIES: BLESSURES
 FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
 FALLOUT.TEMPLATES.Issue: Numéro
-FALLOUT.TEMPLATES.lbs: kgs
+FALLOUT.TEMPLATES.kgs: kg
+FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Appris(e)
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
 FALLOUT.TEMPLATES.Locations: Localisations
@@ -311,6 +325,7 @@ FALLOUT.TEMPLATES.Points: Points
 FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
 FALLOUT.TEMPLATES.Prepared: Préparé
+FALLOUT.TEMPLATES.Publication: Publication
 FALLOUT.TEMPLATES.Qualities: Qualités
 FALLOUT.TEMPLATES.RAD: RAD
 FALLOUT.TEMPLATES.Radiation_Healed: Radiation guérie
@@ -356,6 +371,39 @@ FALLOUT.TEMPLATES.Weapon_Type: Type d'Arme
 FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
+FALLOUT.TEMPLATES.WellRested: Bien Reposé
+FALLOUT.TOOLTIPS.DamageEffect.arc: Chaque Effet obtenu permet de toucher une cible supplémentaire à courte portée de la cible initiale. Chaque cible supplémentaire subit la moitié des dégâts (arrondi au supérieur). Mais contrairement à En rafale, cela ne coute pas de munitions supplémentaires.
+FALLOUT.TOOLTIPS.DamageEffect.breaking: Pour chaque Effet obtenu sur le jet de dégâts, réduisez de 1 le nombre de @fos[DC] d'abri fournis par un abri, de manière permanente. Si la cible n'a pas d'abri, réduisez de 1 la résistance aux dégâts sur la localisation touchée, selon le type de dégâts de l'arme (les dégâts balistiques réduisent la résistance aux dégâts balistiques et les dégâts énergétiques réduisent la résistance aux dégâts énergétiques).
+FALLOUT.TOOLTIPS.DamageEffect.burst: L'attaque peut toucher une cible supplémentaire à portée courte de la cible principale pour chaque Effet obtenu sur le jet de dégâts. Chaque cible supplémentaire coûte 1 munition de plus.
+FALLOUT.TOOLTIPS.DamageEffect.freeze: Les ennemis touchés par cette attaque sont gelés si le nombre d'Effets est égal ou supérieur à la moitié de l'Endurance de la cible (ou la moitié du Corps pour une créature). Une créature gelée ne peut pas entreprendre d'action lors de son prochain tour.
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "Si vous obtenez un ou plusieurs Effets, la cible subit de nouveau les dégâts de l'arme à la fin de son tour suivant et de ses tours ultérieurs, pendant un nombre de rounds égal au nombre d'Effets obtenus sur le jet de dégâts. Un personnage peut consacrer une action capitale à faire un test pour arrêter les dégâts persistants plus rapidement ; la difficulté de ce test est égal au nombre d'Effets obtenus sur le jet de dégâts, l'attribut S. P. E. C. I. A. L. et la compétence utilisées sont déterminés par le MJ. Certaines armes possédant l'Effet Persistant peuvent infliger un type de dégâts persistants différent du type de dégâts de l'arme. Si tel est le cas, ce type est indiqué entre parenthèses, par exemple Persistant (Poison)."
+FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignorez X points de résistance aux dégâts de la cible pour chaque Effet sur le jet de dégâts, X étant égal à la valeur de cet effet de dégâts.
+FALLOUT.TOOLTIPS.DamageEffect.radioactive: Pour chaque Effet obtenu sur le jet de dégâts, la cible subit également 1 point de dégâts de radiation. Ces dégâts de radiation sont calculés et appliqués séparément, après qu'un personnage a subi les dégâts normaux de l'attaque.
+FALLOUT.TOOLTIPS.DamageEffect.spread: Pour chaque Effet obtenu sur le jet de dégâts, votre attaque inflige un coup supplémentaire à la cible. Chaque coup supplémentaire inflige la moitié des dégâts obtenus sur le jet (arrondi à l'inférieur) et touche une localisation au hasard même si une localisation spécifique était ciblée par l'attaque initiale.
+FALLOUT.TOOLTIPS.DamageEffect.stun: Si vous obtenez un ou plusieurs Effets sur le jet de dégâts, la cible perd ses actions normales à son tour suivant. Une créature ou un personnage étourdi peut toujours dépenser des PA pour effectuer des actions supplémentaires normalement.
+FALLOUT.TOOLTIPS.DamageEffect.vicious: L'attaque inflige +1 point de dégâts pour chaque Effet obtenu sur le jet de dégâts.
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
+FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: L'arme utilise beaucoup plus de munitions que la plupart des armes. A chaque tir l'arme dépense X munitions à la place d'une seule. De plus chaque tir supplémentaire coute X munitions toujours limité par la cadence de tir. Cela compte également pour En Rafale.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quand vous portez une attaque avec une arme à Zone d'impact, vous ne prenez pas pour cible un seul adversaire. Au lieu de cela, choisissez une seule zone dans votre champ de vision et faites le test de compétence approprié pour attaquer, avec une difficulté de base de 2 (ajustée par la portée normalement). Si vous réussissez, toutes les créatures (et autres cibles pouvant subir des dégâts) présentes dans la zone subissent les dégâts de l'arme. Si vous échouez, votre attaque mal ciblée est moins efficace: ne lancez que la moitié des @fos[DC] de l'arme pour déterminer les dégâts infligés aux créatures dans la zone ciblée et ignorez les effets de dégâts normaux de l'arme."
+FALLOUT.TOOLTIPS.WeaponQuality.bombard: "L'arme délivre une série d'explosions sur une grande zone. Cela fonctionne comme la qualité Zone d'impact à une exception près : vous pouvez dépenser 2 munitions pour cibler une zone supplémentaire adjacente. Le tout limité par la cadence de tir."
+FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Une arme de combat rapproché est facile à utiliser à proximité de l'ennemi et ne subit pas d'augmentation de difficulté si elle est employée quand un ennemi est à portée de main.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Une arme avec la qualité Dissimulé est petite ou facile à dissimuler sur vous pour une autre raison. Les ennemis ne voient l'arme que si vous êtes en train de la manier, ou s'ils vous fouillent méthodiquement et réussissent un test de PER + Survie avec une difficulté de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: La difficulté de tout test de compétence pour guérir les blessures infligées par une arme Invalidante augmente de +1.
+FALLOUT.TOOLTIPS.WeaponQuality.delay_x: L'arme fonctionne avec une minuterie ou une mèche. Il faut les placer à un endroit spécifique. Une arme avec délai(1) explose au début du prochain tour. Une arme avec délai(2) explose deux tours après.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Les armes Gatling dépensent des munitions à 10 fois le rythme normal ; quand vous devriez dépenser 1 munition, une arme Gatling en dépense une rafale de 10 à la place. Chaque fois que vous dépensez des munitions pour augmenter les dégâts de cette arme, ajoutez +2 @fos[DC] par rafale de 10 (jusqu'à un nombre maximum de rafales égal à la cadence de tir de l'arme) au lieu de +1 @fos[DC] par tir."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Quand vous portez une attaque avec une arme Imprécise, vous ne pouvez pas gagner les bénéfices de l'action mineure viser. Une arme ne peut pas être à la fois Précise et Imprécise.
+FALLOUT.TOOLTIPS.WeaponQuality.limited: L'arme ne peut que s'utiliser à sa portée idéale.
+FALLOUT.TOOLTIPS.WeaponQuality.mine: Quand une Mine est placée sur une surface et armée, elle devient un objet dangereux qui inflige ses dégâts à quiconque arrive à portée de main de l'engin (et à des personnages supplémentaires si elle possède la qualité Zone d'impact).
+FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Le viseur d'une arme à Vision nocturne est conçu pour vous permettre de voir plus clairement dans l'obscurité. Quand vous visez avec une arme à Vision nocturne, votre attaque ignore toute augmentation de difficulté causée par l'obscurité.
+FALLOUT.TOOLTIPS.WeaponQuality.parry: Quand un ennemi tente une attaque de corps à corps contre vous, si vous maniez une arme de Parade, vous pouvez dépenser 1 PA pour ajouter +1 à votre Défense contre cette attaque.
+FALLOUT.TOOLTIPS.WeaponQuality.recon: Quand vous visez avec une arme de Reco, vous pouvez marquer la cible que vous avez visée. Le prochain allié qui attaque cette cible peut relancer 1d20 sur son attaque.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: Pendant chaque rencontre de combat, une arme Fiable ignore la première complication que vous obtenez sur un test pour utiliser cette arme. Une arme ne peut pas être à la fois Fiable et Imprévisible.
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: L'arme se charge très lentement. Après avoir tiré avec, il vous faut utiliser une action mineure pour la recharger afin de pouvoir tirer à nouveau.
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Si un ennemi n'a pas conscience de votre présence quand vous attaquez avec une arme Silencieuse, il ne remarque l'attaque que s'il en est la cible ou s'il réussit un test de PER+Survie avec une difficulté de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: Une arme de Lancer (C) peut être projetée en portant une attaque à distance avec une portée optimale courte. Une arme de Lancer (M) peut être projetée en portant une attaque à distance avec une portée optimale moyenne. Vous faites un test d'AGI+Projectiles pour attaquer avec l'arme, selon le type d'arme.
+FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Une arme à Deux mains doit être maniée à deux mains pour être utilisée efficacement ; tenter d'attaquer avec une arme à Deux mains dans une seule main augmente la difficulté de +2.
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quand vous portez une attaque avec une arme Imprévisible, augmentez la marge de complication de l'attaque de 1. Une arme ne peut pas être à la fois Fiable et Imprévisible.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Cette arme n'a jamais été conçu pour être utilisée comme arme de poing. Lorsque vous attaquez avec, la moindre complication vous inflige 2DC de dégâts dû au retour de radiation. Une arme ne peut pas être à la fois Fiable et Radiation instable.
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
@@ -395,7 +443,7 @@ FALLOUT.WEAPONS.damageEffect.breaking: Destructeur
 FALLOUT.WEAPONS.damageEffect.burst: Rafale
 FALLOUT.WEAPONS.damageEffect.freeze: Gel
 FALLOUT.WEAPONS.damageEffect.persistent: Persistant
-FALLOUT.WEAPONS.damageEffect.piercing: Perforant
+FALLOUT.WEAPONS.damageEffect.piercing_x: Perforant
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
 FALLOUT.WEAPONS.damageEffect.spread: Zone
 FALLOUT.WEAPONS.damageEffect.stun: Étourdissant
@@ -405,22 +453,25 @@ FALLOUT.WEAPONS.damageType.physical: balistiques
 FALLOUT.WEAPONS.damageType.poison: Poison
 FALLOUT.WEAPONS.damageType.radiation: Radiation
 FALLOUT.WEAPONS.weaponQuality.accurate: Précis
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Dévoreuse de munitions
 FALLOUT.WEAPONS.weaponQuality.blast: Zone d'impact
-FALLOUT.WEAPONS.weaponQuality.closeQuarters: Combat rapproché
+FALLOUT.WEAPONS.weaponQuality.bombard: Bombardement
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Combat rapproché
 FALLOUT.WEAPONS.weaponQuality.concealed: Dissimulé
 FALLOUT.WEAPONS.weaponQuality.debilitating: Invalidant
+FALLOUT.WEAPONS.weaponQuality.delay_x: Délai
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprécis
 FALLOUT.WEAPONS.weaponQuality.limited: Limité
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
-FALLOUT.WEAPONS.weaponQuality.nightVision: Vision nocturne
+FALLOUT.WEAPONS.weaponQuality.night_vision: Vision nocturne
 FALLOUT.WEAPONS.weaponQuality.parry: Parade
 FALLOUT.WEAPONS.weaponQuality.recon: Reco
 FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
 FALLOUT.WEAPONS.weaponQuality.slow_load: Chargement lent
 FALLOUT.WEAPONS.weaponQuality.suppressed: Silencieux
 FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
-FALLOUT.WEAPONS.weaponQuality.twoHanded: Deux mains
+FALLOUT.WEAPONS.weaponQuality.two_handed: Deux mains
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes

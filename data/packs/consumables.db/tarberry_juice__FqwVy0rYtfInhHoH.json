@@ -1,0 +1,32 @@
+{
+	"_id": "FqwVy0rYtfInhHoH",
+	"_key": "!items!FqwVy0rYtfInhHoH",
+	"effects": [
+	],
+	"folder": "ajMustngwNZwFiQS",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Tarberry Juice",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"consumableType": "beverage",
+		"cost": 5,
+		"description": "<p><span class=\"fontstyle0\">Juice made from pressing tarberries. Drinking Tarberry juice has a potent stimulant effect, making the drinker energetic and ready for action.</span> </p>",
+		"duration": "",
+		"effect": "<p>Immediately gain +6 AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 1,
+		"weight": 0.5
+	},
+	"type": "consumable"
+}

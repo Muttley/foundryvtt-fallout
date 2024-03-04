@@ -1,0 +1,25 @@
+{
+	"_id": "8nJBGtcrUsO2hUDG",
+	"_key": "!items!8nJBGtcrUsO2hUDG",
+	"effects": [
+	],
+	"folder": "Yz1YYU8QjGg1Lrdb",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Meeting People",
+	"system": {
+		"cost": 100,
+		"description": "<p>A magazine aimed at those who lack social grace. Meeting People magazine advertises itself as a primer for social interaction, giving tips on how to find and make friends, dating advice, and guidance on building confidence and spotting social cues.</p>\n<ul>\n<li><strong>Perk:</strong> Once, when you roll one or more complications on a Speech test, you may ignore those complications. If you learn this perk, you may do this once per scene.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.tKQ4oQiQxWoM10p6]{Meeting People}</p>",
+		"effect": "<p>Once, when you roll one or more complications on a Speech test, you may ignore those complications.</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "",
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

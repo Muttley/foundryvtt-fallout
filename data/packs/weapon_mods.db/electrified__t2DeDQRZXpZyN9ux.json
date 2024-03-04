@@ -1,0 +1,34 @@
+{
+	"_id": "t2DeDQRZXpZyN9ux",
+	"_key": "!items!t2DeDQRZXpZyN9ux",
+	"effects": [
+	],
+	"folder": "pzodZYsC8tEPTWGH",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Electrified",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 30,
+		"description": "",
+		"effect": "<p>+2 @fos[DC]</p>\n<p>Damage type becomes Energy</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Baton",
+		"namePrefix": "Shock",
+		"perks": "Blacksmith 2, Science! 1",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "meleeWeapons",
+		"weight": 0
+	},
+	"type": "weapon_mod"
+}

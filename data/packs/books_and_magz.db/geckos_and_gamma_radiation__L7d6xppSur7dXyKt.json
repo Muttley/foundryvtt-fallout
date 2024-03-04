@@ -1,0 +1,25 @@
+{
+	"_id": "L7d6xppSur7dXyKt",
+	"_key": "!items!L7d6xppSur7dXyKt",
+	"effects": [
+	],
+	"folder": "KhW0UE056TAgf0NU",
+	"img": "systems/fallout/assets/icons/items/books_and_magz.svg",
+	"name": "Geckos and Gamma Radiation",
+	"system": {
+		"cost": 100,
+		"description": "<p>An informational magazine covering topics such as rocket science, robotics, laser technology, and other cutting-edge fields of science and technology.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.kYMZ1knDNl0hLeI8]{Geckos and Gamma Radiation}</p>",
+		"effect": "<p>+2CD damage inflicted on one attack against a Mutated creature</p>",
+		"favorite": false,
+		"issue": "",
+		"learned": false,
+		"perk": "",
+		"publication": "Tesla Science Magazine",
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "books_and_magz"
+}

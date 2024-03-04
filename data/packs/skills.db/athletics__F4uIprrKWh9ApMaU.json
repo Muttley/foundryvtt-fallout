@@ -4,12 +4,13 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"img": "systems/fallout/assets/icons/items/skill.webp",
 	"name": "Athletics",
 	"system": {
 		"defaultAttribute": "str",
-		"description": "",
+		"description": "<p>Athletics describes your ability to apply your physical strength and agility, know your limits, but also how to focus during physical exertion.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Strength</strong> but it can also be used with Agility or Endurance when facing physical adversity. You might use Athletics when trying to push, pull, or lift objects, jump, climb, swim, or run.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

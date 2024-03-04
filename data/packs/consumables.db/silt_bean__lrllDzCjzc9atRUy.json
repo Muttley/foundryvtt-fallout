@@ -1,0 +1,32 @@
+{
+	"_id": "lrllDzCjzc9atRUy",
+	"_key": "!items!lrllDzCjzc9atRUy",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Silt Bean",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 6,
+		"description": "<p><span class=\"fontstyle0\">Growing from the vine of a silt bean plant, silt beans are red-brown pods of legumes growing in the wilderness. They&rsquo;re not easily cultivated for farming, though many have tried. The beans are an ingredient in a few recipes, such as radstag stew.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

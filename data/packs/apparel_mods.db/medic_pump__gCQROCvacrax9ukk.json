@@ -1,0 +1,34 @@
+{
+	"_id": "gCQROCvacrax9ukk",
+	"_key": "!items!gCQROCvacrax9ukk",
+	"effects": [
+	],
+	"folder": "JpQJNevV3gGYvAgY",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Medic Pump",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"cost": 100,
+		"description": "<p>Installed with the <b>Science</b> skill</p>",
+		"effect": "<p>While armor is powered, when yourHP are reduced to below 1/2 of your maximum, you immediately use a Stimpak, regaining 3 HP or treating one Injury.</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"location": "Torso",
+		"perks": "Science! 4",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

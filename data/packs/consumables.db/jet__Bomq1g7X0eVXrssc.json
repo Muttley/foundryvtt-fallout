@@ -1,0 +1,33 @@
+{
+	"_id": "Bomq1g7X0eVXrssc",
+	"_key": "!items!Bomq1g7X0eVXrssc",
+	"effects": [
+	],
+	"folder": "n3Q9X70ZsFFCTZqu",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Jet",
+	"system": {
+		"addiction": 2,
+		"addictive": true,
+		"alcoholic": true,
+		"consumableGroup": "Jet",
+		"consumableType": "chem",
+		"cost": 50,
+		"description": "<p>Jet is an inhaled stimulant which creates an altered state of consciousness where time appears to slow, heightening reflexes and allowing the user to act more quickly during a moment of crisis.</p>\n<ul>\n<li><strong>Jet Addiction:</strong> A failed addiction roll renders you addicted to Jet. You increase the difficulty of all AGI tests by +1 whenever you are not under the effects of a type of Jet (Jet, or Jet Fuel; Ultra Jet has a different addiction effect)</li>\n</ul>",
+		"duration": "brief",
+		"effect": "<p>Extra actions cost 1 less AP</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

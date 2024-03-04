@@ -1,0 +1,34 @@
+{
+	"_id": "uWW6Yc9ZzjBHnlrz",
+	"_key": "!items!uWW6Yc9ZzjBHnlrz",
+	"effects": [
+	],
+	"folder": "hLOWqs3EQrgXutZr",
+	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+	"name": "Flamer Barrel",
+	"system": {
+		"attachable": true,
+		"attached": false,
+		"cost": 35,
+		"description": "",
+		"effect": "<p>-2 @fos[DC]</p>\n<p>+2 Fire Rate</p>\n<p>Gain Burst</p>\n<p>Reduce Range by 1 step</p>\n<p>Gain Inaccurate</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"modEffects": {
+			"damageEffect": "",
+			"damageRating": 0,
+			"fireRate": 0,
+			"info": ""
+		},
+		"modType": "Barrel",
+		"namePrefix": "Thrower",
+		"perks": "Science! 2",
+		"qualities": "",
+		"quantity": 1,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"weaponType": "energyWeapons",
+		"weight": 1
+	},
+	"type": "weapon_mod"
+}

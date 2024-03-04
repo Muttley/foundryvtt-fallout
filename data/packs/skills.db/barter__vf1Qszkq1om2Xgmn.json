@@ -4,12 +4,13 @@
 	"effects": [
 	],
 	"folder": null,
-	"img": "systems/fallout/assets/ico/thumb-up.webp",
+	"img": "systems/fallout/assets/icons/items/skill.webp",
 	"name": "Barter",
 	"system": {
 		"defaultAttribute": "cha",
-		"description": "",
+		"description": "<p>Barter describes your skill with money: how savvy you are with your wealth, how easily you can make deals, or how easily you can negotiate someone down on price.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Charisma</strong> but could also be used with Perception to see how willing someone might be to change their demands, or Intelligence to know the true caps value of something. You might use Barter trying to buy or sell items, or negotiate the cost of a service.</p>",
 		"favorite": false,
+		"source": "",
 		"summary": "",
 		"tag": false,
 		"value": 0

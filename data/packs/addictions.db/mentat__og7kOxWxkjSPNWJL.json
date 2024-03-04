@@ -1,0 +1,15 @@
+{
+	"_id": "og7kOxWxkjSPNWJL",
+	"_key": "!items!og7kOxWxkjSPNWJL",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/addiction.svg",
+	"name": "Mentat",
+	"system": {
+		"description": "<p>You increase the difficulty of all <strong>CHA</strong> tests by +1 whenever you are not under the effects of a type of Mentat (ordinary Mentats, or the Berry, Grape, or Orange versions).</p>",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "addiction"
+}

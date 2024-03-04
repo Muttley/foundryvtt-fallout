@@ -1,0 +1,32 @@
+{
+	"_id": "qeN8bq9CJ3EYwwAE",
+	"_key": "!items!qeN8bq9CJ3EYwwAE",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Corn",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"consumableType": "food",
+		"cost": 6,
+		"description": "<p><span class=\"fontstyle0\">A highly versatile crop cultivated across the Americas for centuries. Corn remains largely unchanged by the War, and it remains a staple of wasteland agriculture.</span></p>\n<p><span class=\"fontstyle0\">Corn grown in non-irradiated conditions (such as within vaults or similar locations) is not irradiated but increases its rarity by +1. In addition to its use as food, corn is a main ingredient in vegetable starch, which can be used to make adhesives for crafting.</span> </p>",
+		"duration": "",
+		"effect": "<p></p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 3,
+		"irradiated": true,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

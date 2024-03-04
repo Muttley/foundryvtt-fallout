@@ -1,0 +1,57 @@
+{
+	"_id": "Yq8LSP8WI8hkaeIh",
+	"_key": "!items!Yq8LSP8WI8hkaeIh",
+	"effects": [
+	],
+	"folder": "dBQ4u6XRzzhELaHq",
+	"img": "systems/fallout/assets/icons/items/apparel.svg",
+	"name": "Metal Chest Piece",
+	"system": {
+		"appareltype": "armor",
+		"armorType": "",
+		"cost": 40,
+		"damaged": "",
+		"description": "<p><span class=\"fontstyle0\">Shaped metal plating held together&mdash;and held on&mdash; with leather or cloth straps, which provide decent protection from physical impacts such as melee attacks and gunshots, but less protection against energy attacks, as the metal plating conducts heat.</span></p>\n<p><span class=\"fontstyle0\">Each piece of Metal armor other than helmets can accept two mods, one of which is a Material, the other of which is an Upgrade. Metal helmets may only accept a Material mod. For mods applied to Torso armor, double the weight and cost (this has already been done for Torso Only mods). All Metal Armor Material mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span> </p>\n<ul>\n<li><span class=\"fontstyle0\"><strong>Metal Armor:</strong> Painted Metal, Enameled Metal, Shadowed Metal, Alloyed Metal, Polished Metal</span></li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"health": {
+			"max": 0,
+			"min": 0,
+			"mod": 0,
+			"value": 0
+		},
+		"location": {
+			"armL": false,
+			"armR": false,
+			"head": false,
+			"legL": false,
+			"legR": false,
+			"torso": true
+		},
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 2
+		},
+		"powerStr": 11,
+		"powerSystems": {
+			"current": 0,
+			"list": "",
+			"max": 0
+		},
+		"powered": "",
+		"quantity": 1,
+		"rarity": 1,
+		"resistance": {
+			"energy": 1,
+			"physical": 2,
+			"radiation": 0
+		},
+		"source": "",
+		"special": "",
+		"stashed": false,
+		"weight": 6
+	},
+	"type": "apparel"
+}
