@@ -352,6 +352,12 @@ export default class FalloutActor extends Actor {
 	}
 
 	_calculateNextLevelXp() {
+		const disableAutoXpTarget = game.settings.get(
+			SYSTEM_ID, "disableAutoXpTarget"
+		);
+
+		if (disableAutoXpTarget) return;
+
 		const currentLevel = parseInt(this.system.level.value);
 
 		let nextLevelXp = 0;
@@ -600,6 +606,12 @@ export default class FalloutActor extends Actor {
    */
 	_prepareNpcData() {
 		if (!["creature", "npc"].includes(this.type)) return;
+
+		const disableAutoXpReward = game.settings.get(
+			SYSTEM_ID, "disableAutoXpReward"
+		);
+
+		if (disableAutoXpReward) return;
 
 		this.system.level.rewardXP = fallout.utils.calculateXpReward(
 			this.system.level.value,

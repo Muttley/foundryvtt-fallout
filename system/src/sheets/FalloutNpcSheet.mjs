@@ -27,6 +27,10 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	async getData(options) {
 		const context = await super.getData(options);
 
+		context.disableAutoXpReward = game.settings.get(
+			SYSTEM_ID, "disableAutoXpReward"
+		);
+
 		context.settlements = [];
 
 		const settlements = game.actors.filter(a => a.type === "settlement");

@@ -55,6 +55,8 @@
 
 	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefull be added at a later date
 
+- [#191] Give ability to disable automatic XP calculation for people who wish to homebrew the level break points
+
 ## Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials
 - [#147] Skill names not localized in skill roll chat messages

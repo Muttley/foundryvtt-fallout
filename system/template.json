@@ -164,6 +164,8 @@
 				"description": "",
 				"level": {
 					"currentXP": 0,
+					"nextLevelXP": 0,
+					"rewardXP": 0,
 					"value": 1
 				},
 				"origin": "",

@@ -219,6 +219,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		await this._prepareMaterials(context);
 		await this._prepareRobotModDescriptions(context);
 
+		context.disableAutoXpTarget = game.settings.get(
+			SYSTEM_ID, "disableAutoXpTarget"
+		);
+
 		this._updateChemDoseManager();
 
 		// ADD FAVOURITE ITEMS

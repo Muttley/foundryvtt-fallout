@@ -85,6 +85,10 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	// -----------------------------------
+	//  HOMEBREW / CUSTOMISATION SETTINGS
+	// -----------------------------------
+	//
 	game.settings.register(SYSTEM_ID, "carryUnit", {
 		name: "Weight unit",
 		hint: "The weight calculation formula will be different depending on the unit chosen",
@@ -128,6 +132,30 @@ export default function registerSettings() {
 		type: Number,
 		requiresReload: true,
 	});
+
+	game.settings.register(SYSTEM_ID, "disableAutoXpTarget", {
+		name: "Disable Auto-calculated Player Level XP",
+		hint: "By default the system will auto-calculate the next level target XP for player characters based on the core rulebook.  Check this if would prefer to populate these values manually.",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: true,
+	});
+
+	game.settings.register(SYSTEM_ID, "disableAutoXpReward", {
+		name: "Disable Auto-calculated NPC XP Reward",
+		hint: "By default the system will auto-calculate the XP reward level of an NPC based on the core rulebook.  Check this if would prefer to populate these values manually.",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: true,
+	});
+
+	// ------------------
+	// GENERAL SETTINGS
+	// ------------------
 
 	// TODO Implement sourceFilters fully once background items and character
 	// creation are implemented
