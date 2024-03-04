@@ -3,47 +3,42 @@
 		<h2>{{title}}</h2>
 		<p>{{body}}</p>
 		<div style="font-size: 0.75rem;">
-			{{#if hungerChanged}}
-				<div>
-					<strong>
-						{{localize "FALLOUT.CHAT_MESSAGE.conditions.hunger_level"}}:
-					</strong>
-					{{fromConfig "HUNGER_BY_NUMBER" hunger}}
-					{{#ifCond hungerFatigueChange ">" 0}}
-						(+{{hungerFatigueChange}} {{localize 'FALLOUT.TEMPLATES.conditions.fatigue'}})
-					{{/ifCond}}
-				</div>
-			{{/if}}
-			{{#if thirstChanged}}
-				<div>
-					<strong>
-						{{localize "FALLOUT.CHAT_MESSAGE.conditions.thirst_level"}}:
-					</strong>
-					{{fromConfig "THIRST_BY_NUMBER" thirst}}
-					{{#ifCond thirstFatigueChange ">" 0}}
-						(+{{thirstFatigueChange}} {{localize 'FALLOUT.TEMPLATES.conditions.fatigue'}})
-					{{/ifCond}}
-				</div>
-			{{/if}}
-			{{#if sleepChanged}}
-				<div>
-					<strong>
-						{{localize "FALLOUT.CHAT_MESSAGE.conditions.sleep_level"}}:
-					</strong>
-					{{fromConfig "SLEEP_BY_NUMBER" sleep}}
-					{{#ifCond sleepFatigueChange ">" 0}}
-						(+{{sleepFatigueChange}} {{localize 'FALLOUT.TEMPLATES.conditions.fatigue'}})
-					{{/ifCond}}
-				</div>
-			{{/if}}
 			{{#if fatigueChanged}}
 				<div>
+					{{#ifCond hungerFatigueChange ">" 0}}
+						<p><em>
+							{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_change"
+								level=hungerFatigueChange
+								condition=(localize "FALLOUT.TEMPLATES.conditions.hunger")
+							}}
+						</em></p>
+					{{/ifCond}}
+					{{#ifCond thirstFatigueChange ">" 0}}
+						<p><em>
+							{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_change"
+								level=thirstFatigueChange
+								condition=(localize "FALLOUT.TEMPLATES.conditions.thirst")
+							}}
+						</em></p>
+					{{/ifCond}}
+					{{#ifCond sleepFatigueChange ">" 0}}
+						<p><em>
+							{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_change"
+								level=sleepFatigueChange
+								condition=(localize "FALLOUT.TEMPLATES.conditions.sleep")
+							}}
+						</em></p>
+					{{/ifCond}}
+				</div>
+			{{/if}}
+			<div>
+				<p>
 					<strong>
 						{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_level"}}:
 					</strong>
 					{{fatigue}}
-				</div>
-			{{/if}}
+				</p>
+			</div>
 		</div>
 	</div>
 </div>

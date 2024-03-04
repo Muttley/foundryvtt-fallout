@@ -109,7 +109,7 @@ export default class FalloutPartySleep extends Application {
 	}
 
 	async _applyPartySleep() {
-		fallout.logger.debug(`The party sleeps for ${this.lengthOfSleep} hours`);
+		fallout.logger.debug(`Party Sleep: The party sleeps for ${this.lengthOfSleep} hours`);
 
 		const actors = game.actors.filter(
 			a => a.hasPlayerOwner && a.type === "character"
@@ -123,22 +123,42 @@ export default class FalloutPartySleep extends Application {
 
 		const newRestedStatus = [];
 
+		const hasActiveFatigue = {};
+
 		// Flag these actors as sleeping to avoid spurious sleep condition
 		// changes while we're processing the sleep period
 		//
 		for (const actor of actors) {
 			actor.isSleeping = true;
+
+			const hungerFatigue = actor.system.conditions.hunger
+				>= CONFIG.FALLOUT.CONDITIONS.hunger.starving;
+
+			const thirstFatigue = actor.system.conditions.thirst
+				>= CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated;
+
+			const activeEffectFatigue = actor.isFieldOverridden(
+				"system.conditions.fatigue"
+			);
+
+			hasActiveFatigue[actor._id] =
+				hungerFatigue || thirstFatigue || activeEffectFatigue;
+
 		}
 
 		await game.time.advance(this.lengthOfSleep * 60 * 60);
 
 		for (const actor of actors) {
-			let hasActiveOwner = true;
+			let actorCanBeProcessed = true;
 
-			if (skipMissingPlayers) hasActiveOwner = actor.ownerIsOnline;
+			if (skipMissingPlayers) actorCanBeProcessed = actor.ownerIsOnline;
 
-			if (hasActiveOwner) {
-				await actor.sleep(this.lengthOfSleep, this.safeLocation);
+			if (actorCanBeProcessed) {
+				await actor.sleep(
+					this.lengthOfSleep,
+					this.safeLocation,
+					hasActiveFatigue[actor._id]
+				);
 
 				const newSleep = actor.system.conditions?.sleep ?? 0;
 
@@ -151,15 +171,10 @@ export default class FalloutPartySleep extends Application {
 			}
 			else {
 				fallout.logger.debug(
-					`The owner of ${actor.name} is not online so they will not sleep.`
+					`Party Sleep: The owner of ${actor.name} is not online so they will not sleep.`
 				);
 			}
-		}
 
-		// Sleeping period over, so we can now process sleep changes again if
-		// required
-		//
-		for (const actor of actors) {
 			actor.isSleeping = false;
 		}
 

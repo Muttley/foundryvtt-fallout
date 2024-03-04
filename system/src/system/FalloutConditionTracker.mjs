@@ -12,7 +12,7 @@ export default class FalloutConditionTracker {
 		return game.settings.get(SYSTEM_ID, "syncConditionsWithWorldClock");
 	}
 
-	_checkConditions() {
+	_checkConditions(worldTime) {
 		fallout.logger.debug("Condition Tracker: running checks");
 
 		const actors = game.actors.filter(
@@ -37,7 +37,7 @@ export default class FalloutConditionTracker {
 			}
 
 			fallout.logger.log(`Condition Tracker: checking conditions for character ${actor.name}`);
-			actor.checkConditions();
+			actor.checkConditions(worldTime);
 		}
 	}
 
@@ -49,7 +49,7 @@ export default class FalloutConditionTracker {
 
 		if (secondsSinceLastTick >= this.updateIntervalSecs) {
 			this.lastWorldTime = worldTime;
-			this._checkConditions();
+			this._checkConditions(worldTime);
 		}
 	}
 }

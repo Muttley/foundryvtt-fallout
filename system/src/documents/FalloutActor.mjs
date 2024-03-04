@@ -74,6 +74,13 @@ export default class FalloutActor extends Actor {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
 
+	isFieldOverridden(fieldName) {
+		const overridden = Object.keys(
+			foundry.utils.flattenObject(this.overrides)
+		);
+
+		return overridden.includes(fieldName);
+	}
 
 	/** @override */
 	prepareData() {
@@ -602,6 +609,22 @@ export default class FalloutActor extends Actor {
 		this.system.carryWeight.total = this._getItemsTotalWeight();
 	}
 
+	getLastConditionChanges() {
+		return {
+			hunger: this.system.conditions.lastChange.hunger,
+			sleep: this.system.conditions.lastChange.sleep,
+			thirst: this.system.conditions.lastChange.thirst,
+		};
+	}
+
+	setLastConditionChanges(lastChanges) {
+		this.updateSource({
+			"system.conditions.lastChange.hunger": lastChanges.hunger,
+			"system.conditions.lastChange.sleep": lastChanges.sleep,
+			"system.conditions.lastChange.thirst": lastChanges.thirst,
+		});
+	}
+
 	/**
    * Override getRollData() that's supplied to rolls.
    */
@@ -701,19 +724,13 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
-	async _updateHunger() {
-		const currentWorldTime = game.time.worldTime;
+	async _updateHunger(currentWorldTime) {
 		let lastChange = this.system.conditions?.lastChanged?.hunger;
 
-		if (lastChange === -1) {
-			this.updateSource({"system.conditions.lastChanged.hunger": currentWorldTime});
-			lastChange = game.time.worldTime;
-		}
-
-		let timeElapsed = currentWorldTime - lastChange;
+		let timeElapsed = currentWorldTime - Math.abs(lastChange);
 		let changed = false;
 
-		if (timeElapsed <= 0) return changed;
+		if (lastChange < 0 || timeElapsed <= 0) return changed;
 
 		let hunger = this.system.conditions.hunger;
 		let fatigue = this.system.conditions.fatigue;
@@ -809,16 +826,10 @@ export default class FalloutActor extends Actor {
 		return changed;
 	}
 
-	async _updateThirst() {
-		const currentWorldTime = game.time.worldTime;
+	async _updateThirst(currentWorldTime) {
 		let lastChange = this.system.conditions?.lastChanged?.thirst;
 
-		if (lastChange === -1) {
-			this.updateSource({"system.conditions.lastChanged.hunger": currentWorldTime});
-			lastChange = game.time.worldTime;
-		}
-
-		let timeElapsed = currentWorldTime - lastChange;
+		let timeElapsed = currentWorldTime - Math.abs(lastChange);
 		let changed = false;
 
 		if (timeElapsed <= 0) return changed;
@@ -905,16 +916,10 @@ export default class FalloutActor extends Actor {
 		return changed;
 	}
 
-	async _updateSleep() {
-		const currentWorldTime = game.time.worldTime;
+	async _updateSleep(currentWorldTime) {
 		let lastChange = this.system.conditions?.lastChanged?.sleep;
 
-		if (lastChange === -1) {
-			this.updateSource({"system.conditions.lastChanged.hunger": currentWorldTime});
-			lastChange = game.time.worldTime;
-		}
-
-		let timeElapsed = currentWorldTime - lastChange;
+		let timeElapsed = currentWorldTime - Math.abs(lastChange);
 		let changed = false;
 
 		if (timeElapsed <= 0) return changed;
@@ -923,7 +928,17 @@ export default class FalloutActor extends Actor {
 		let fatigue = this.system.conditions.fatigue;
 
 		let keepChecking = true;
+		const maxIterations = 10;
+		let iterations = 0;
 		while (keepChecking) {
+			iterations++;
+			if (iterations > maxIterations) {
+				fallout.logger.error(`Condition Tracker: [Sleep] Actor ${this.name} exceeded maximum iterations.`);
+				console.log(`currentWorldTime: ${currentWorldTime}`);
+				console.log(`timeElapsed: ${timeElapsed}`);
+				fallout.logger.error(this.system.conditions);
+				break;
+			}
 			switch (sleep) {
 				case CONFIG.FALLOUT.CONDITIONS.sleep.rested:
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
@@ -1002,36 +1017,20 @@ export default class FalloutActor extends Actor {
 		return changed;
 	}
 
-	async checkConditions() {
-		const maxChange = Math.max(
-			this.system.conditions.lastChanged.hunger,
-			this.system.conditions.lastChanged.thirst,
-			this.system.conditions.lastChanged.sleep
-		);
-
-		if (fallout.utils.checkForTimeJump(maxChange)) {
-			fallout.logger.log(`Condition Tracker: ${this.name} max time jump exceeded, resetting condition lastChange values`);
-
-			const newTime = game.time.worldTime;
-
-			return this.updateSource({
-				"system.conditions.lastChanged.hunger": newTime,
-				"system.conditions.lastChanged.sleep": newTime,
-				"system.conditions.lastChanged.thirst": newTime,
-			});
-		}
+	async checkConditions(currentWorldTime) {
+		await this._checkForConditionTimeJumps(currentWorldTime);
 
 		let currentFatigue = this.system.conditions.fatigue;
-		const hungerChanged = await this._updateHunger();
+		const hungerChanged = await this._updateHunger(currentWorldTime);
 		const hungerFatigueChange = this.system.conditions.fatigue - currentFatigue;
 
 		currentFatigue = this.system.conditions.fatigue;
-		const thirstChanged = await this._updateThirst();
+		const thirstChanged = await this._updateThirst(currentWorldTime);
 		const thirstFatigueChange = this.system.conditions.fatigue - currentFatigue;
 
 		let sleepChanged = false;
 		currentFatigue = this.system.conditions.fatigue;
-		if (!this.isSleeping) sleepChanged = await this._updateSleep();
+		if (!this.isSleeping) sleepChanged = await this._updateSleep(currentWorldTime);
 		const sleepFatigueChange = this.system.conditions.fatigue - currentFatigue;
 
 		const fatigueChanged = hungerFatigueChange > 0 || thirstFatigueChange > 0;
@@ -1042,22 +1041,39 @@ export default class FalloutActor extends Actor {
 					"FALLOUT.CHAT_MESSAGE.condition-change.title"
 				),
 				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.condition-change.body",
-					{ actorName: this.name }
+					{
+						actorName: this.name,
+						hungerLevel: CONFIG.FALLOUT.HUNGER_BY_NUMBER[this.system.conditions.hunger],
+						thirstLevel: CONFIG.FALLOUT.THIRST_BY_NUMBER[this.system.conditions.thirst],
+						sleepLevel: CONFIG.FALLOUT.SLEEP_BY_NUMBER[this.system.conditions.sleep],
+					}
 				),
 				fatigue: this.system.conditions.fatigue,
 				fatigueChanged,
-				hunger: this.system.conditions.hunger,
-				hungerChanged,
 				hungerFatigueChange,
-				sleep: this.system.conditions.sleep,
-				sleepChanged,
 				sleepFatigueChange,
-				thirst: this.system.conditions.thirst,
-				thirstChanged,
 				thirstFatigueChange,
 			};
 
 			fallout.chat.renderConditionChangeMessage(this, chatData);
+		}
+	}
+
+	async _checkForConditionTimeJumps(currentWorldTime) {
+		const updateData = {};
+		for (const condition of ["hunger", "sleep", "thirst"]) {
+			const wasTimeJump = fallout.utils.checkForTimeJump(
+				this.system.conditions.lastChanged[condition]
+			);
+
+			if (wasTimeJump) {
+				fallout.logger.log(`Condition Tracker: ${this.name} max time jump exceeded for ${condition}, updating lastChange value`);
+				const key = `system.conditions.lastChanged.${condition}`;
+				updateData[key] = currentWorldTime;
+			}
+		}
+		if (!foundry.utils.isEmpty(updateData)) {
+			await this.updateSource(updateData);
 		}
 	}
 
@@ -1222,28 +1238,39 @@ export default class FalloutActor extends Actor {
 			}
 		}
 
+		const isFull = this.system.conditions.hunger === 0;
+
 		if (["beverage", "food"].includes(consumableType)) {
-			const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
-			const thirstReduction = item.system.thirstReduction ?? 0;
+			if (!(consumableType === "food" && isFull)) {
+				const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
+				const thirstReduction = item.system.thirstReduction ?? 0;
 
-			if (thirstReduction > 0) {
-				actorUpdateData["system.conditions.lastChanged.thirst"] =
-					currentWorldTime;
+				if (thirstReduction > 0) {
+					actorUpdateData["system.conditions.lastChanged.thirst"] =
+						currentWorldTime;
+				}
+
+				actorUpdateData["system.conditions.thirst"] =
+					Math.max(currentThirst - thirstReduction, 0);
 			}
-
-			actorUpdateData["system.conditions.thirst"] =
-				 Math.max(currentThirst - thirstReduction, 0);
 		}
 
 		if (consumableType === "food") {
-			const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
-			const hungerReduction = item.system.prepared ? 2 : 1;
+			if (isFull) {
+				ui.notifications.warn(
+					game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
+				);
+			}
+			else {
+				const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
+				const hungerReduction = item.system.prepared ? 2 : 1;
 
-			actorUpdateData["system.conditions.lastChanged.hunger"] =
-				currentWorldTime;
+				actorUpdateData["system.conditions.lastChanged.hunger"] =
+					currentWorldTime;
 
-			actorUpdateData["system.conditions.hunger"] =
-				 Math.max(currentHunger - hungerReduction, 0);
+				actorUpdateData["system.conditions.hunger"] =
+					Math.max(currentHunger - hungerReduction, 0);
+			}
 		}
 
 		await this.update(actorUpdateData);
@@ -1352,17 +1379,28 @@ export default class FalloutActor extends Actor {
 		this.update(updateData);
 	}
 
-	async sleep(hours, safe=false) {
+	async sleep(hours, safe, hasActiveFatigue) {
 		const currentSleepStatus = this.system.conditions?.sleep ?? 0;
 
-		let newFatigue = this.system.conditions?.fatigue ?? 0;
+		if (hasActiveFatigue) {
+			fallout.logger.debug(
+				`Party Sleep: Actor ${this.name} has currently active fatigue sources`
+			);
+		}
+
+		let currentFatigue = this.system.conditions?.fatigue ?? 0;
+		let newFatigue = currentFatigue;
+
 		let newSleepStatus = currentSleepStatus;
 		let newWellRested = false;
 
 		if (hours >= 8 && safe) newWellRested = true;
+
 		if (hours >= 6) {
 			newSleepStatus = CONFIG.FALLOUT.CONDITIONS.sleep.rested;
-			newFatigue = 0;
+
+			// If there are active fatigue states we don't reset fatgue to zero
+			newFatigue = hasActiveFatigue ? currentFatigue : 0;
 		}
 		else if (hours >= 1) {
 			if (newSleepStatus > 0) newSleepStatus--;
