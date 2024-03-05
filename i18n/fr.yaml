@@ -396,10 +396,13 @@ FALLOUT.TOOLTIPS.WeaponQuality.limited: L'arme ne peut que s'utiliser à sa port
 FALLOUT.TOOLTIPS.WeaponQuality.mine: Quand une Mine est placée sur une surface et armée, elle devient un objet dangereux qui inflige ses dégâts à quiconque arrive à portée de main de l'engin (et à des personnages supplémentaires si elle possède la qualité Zone d'impact).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Le viseur d'une arme à Vision nocturne est conçu pour vous permettre de voir plus clairement dans l'obscurité. Quand vous visez avec une arme à Vision nocturne, votre attaque ignore toute augmentation de difficulté causée par l'obscurité.
 FALLOUT.TOOLTIPS.WeaponQuality.parry: Quand un ennemi tente une attaque de corps à corps contre vous, si vous maniez une arme de Parade, vous pouvez dépenser 1 PA pour ajouter +1 à votre Défense contre cette attaque.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: L'engin explosif est placé à un endroit spécifique , prêt à exploser grâce à l'effet Délai (X) ou Télécommandé. Cela nécessite un test de PER+Explosifs de difficulté 1 ou de difficulté 2 si la personne a subit une attaque depuis son dernier tour. Un échec et rien n'explose ou cela explose directement si complication. Un succès et la bombe explose correctement.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: L'arme en question possède un gros recul lors du tir, ce qui pourrait être trop pour les utilisateurs les plus faibles. Si le score de FOR de l'utilisateur est inférieur à X, l'attaque voit sa difficulté augmenter de 1. Cette contrainte peut être ignorée en tenant l'arme à deux mains ou si l'arme demande déjà deux mains en la plaçant contre un objet solide ou sur un bipied.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: Quand vous visez avec une arme de Reco, vous pouvez marquer la cible que vous avez visée. Le prochain allié qui attaque cette cible peut relancer 1d20 sur son attaque.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: Pendant chaque rencontre de combat, une arme Fiable ignore la première complication que vous obtenez sur un test pour utiliser cette arme. Une arme ne peut pas être à la fois Fiable et Imprévisible.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: L'arme se charge très lentement. Après avoir tiré avec, il vous faut utiliser une action mineure pour la recharger afin de pouvoir tirer à nouveau.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Si un ennemi n'a pas conscience de votre présence quand vous attaquez avec une arme Silencieuse, il ne remarque l'attaque que s'il en est la cible ou s'il réussit un test de PER+Survie avec une difficulté de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.surge: L'arme fait beaucoup plus de dégâts sur les robots ou contre les Armures Assistées. L'arme gagne l'effet Brutal contre les robots, les ennemis en Armure Assistée et d'autres cibles mécaniques ou électroniques (comme les tourelles).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: Une arme de Lancer (C) peut être projetée en portant une attaque à distance avec une portée optimale courte. Une arme de Lancer (M) peut être projetée en portant une attaque à distance avec une portée optimale moyenne. Vous faites un test d'AGI+Projectiles pour attaquer avec l'arme, selon le type d'arme.
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Une arme à Deux mains doit être maniée à deux mains pour être utilisée efficacement ; tenter d'attaquer avec une arme à Deux mains dans une seule main augmente la difficulté de +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quand vous portez une attaque avec une arme Imprévisible, augmentez la marge de complication de l'attaque de 1. Une arme ne peut pas être à la fois Fiable et Imprévisible.
@@ -466,15 +469,19 @@ FALLOUT.WEAPONS.weaponQuality.limited: Limité
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.night_vision: Vision nocturne
 FALLOUT.WEAPONS.weaponQuality.parry: Parade
+FALLOUT.WEAPONS.weaponQuality.placed: Placé
+FALLOUT.WEAPONS.weaponQuality.recoil_x: Recul
 FALLOUT.WEAPONS.weaponQuality.recon: Reco
 FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
 FALLOUT.WEAPONS.weaponQuality.slow_load: Chargement lent
 FALLOUT.WEAPONS.weaponQuality.suppressed: Silencieux
+FALLOUT.WEAPONS.weaponQuality.surge: Surtension
 FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
 FALLOUT.WEAPONS.weaponQuality.two_handed: Deux mains
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
+FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armes à énergie
 FALLOUT.WEAPONS.weaponType.explosives: Explosifs
