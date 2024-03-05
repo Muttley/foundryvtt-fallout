@@ -5,6 +5,7 @@
 
 ## Bugfixes
 - [#196] Added missing Placed, Recoil and Surge weapon qualities
+- [#199] Soups, Stews and Noodle Cup missing thirst reduction value
 
 ---
 

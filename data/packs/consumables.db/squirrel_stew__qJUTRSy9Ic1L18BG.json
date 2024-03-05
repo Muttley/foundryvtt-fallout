@@ -25,7 +25,7 @@
 		"rarity": 2,
 		"source": "",
 		"stashed": false,
-		"thirstReduction": 0,
+		"thirstReduction": 1,
 		"weight": 1
 	},
 	"type": "consumable"
