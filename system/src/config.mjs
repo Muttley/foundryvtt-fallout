@@ -298,10 +298,13 @@ FALLOUT.WEAPON_QUALITIES = {
 	mine: "FALLOUT.WEAPONS.weaponQuality.mine",
 	night_vision: "FALLOUT.WEAPONS.weaponQuality.night_vision",
 	parry: "FALLOUT.WEAPONS.weaponQuality.parry",
+	placed: "FALLOUT.WEAPONS.weaponQuality.placed",
+	recoil_x: "FALLOUT.WEAPONS.weaponQuality.recoil_x",
 	recon: "FALLOUT.WEAPONS.weaponQuality.recon",
 	reliable: "FALLOUT.WEAPONS.weaponQuality.reliable",
 	slow_load: "FALLOUT.WEAPONS.weaponQuality.slow_load",
 	suppressed: "FALLOUT.WEAPONS.weaponQuality.suppressed",
+	surge: "FALLOUT.WEAPONS.weaponQuality.surge",
 	thrown: "FALLOUT.WEAPONS.weaponQuality.thrown",
 	two_handed: "FALLOUT.WEAPONS.weaponQuality.two_handed",
 	unreliable: "FALLOUT.WEAPONS.weaponQuality.unreliable",
@@ -310,6 +313,7 @@ FALLOUT.WEAPON_QUALITIES = {
 
 FALLOUT.WEAPON_SKILLS = {
 	bigGuns: "Big Guns",
+	bows: "Athletics",
 	energyWeapons: "Energy Weapons",
 	explosives: "Explosives",
 	meleeWeapons: "Melee Weapons",
@@ -321,6 +325,7 @@ FALLOUT.WEAPON_SKILLS = {
 
 FALLOUT.WEAPON_TYPES = {
 	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
+	bows: "FALLOUT.WEAPONS.weaponType.bows",
 	creatureAttack: "FALLOUT.WEAPONS.weaponType.creatureAttack",
 	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 	explosives: "FALLOUT.WEAPONS.weaponType.explosives",

@@ -1,3 +1,19 @@
+# v11.4.1
+
+## Enhancements
+- [#197] Added new Bows weapon category
+
+## Bugfixes
+- [#196] Added missing Placed, Recoil and Surge weapon qualities
+- [#198] Apparel Missing Info
+- [#199] Soups, Stews and Noodle Cup missing thirst reduction value
+- [#202] Craftable foods missing the Prepared flag
+- [#203] Raider Armor missing individual pieces
+- [#204] Apparel that can have the Ballistic Weave mod have max mod set to "0" instead of "1"
+- [#205] All Power Armor pieces are missing descriptions
+
+---
+
 # v11.4.0
 
 ## Enhancements
@@ -53,7 +69,7 @@
 		- **Max Time Jump (hours)**: If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time. This ensures that no unexpected spikes in Fatigue are added to characters
 		- **Conditions Skip Missing Players**: If this is checked, only characters who's player owner is current online and logged in will have their conditions adjusted
 
-	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefull be added at a later date
+	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefully be added at a later date
 
 - [#191] Give ability to disable automatic XP calculation for people who wish to homebrew the level break points
 

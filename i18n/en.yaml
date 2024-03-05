@@ -397,10 +397,13 @@ FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to mak
 FALLOUT.TOOLTIPS.WeaponQuality.mine: When a Mine is placed onto a surface and primed, it becomes a dangerous object, inflicting its damage upon anyone who comes within Reach of it (and upon additional characters, if it has the Blast quality).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: The sights of a weapon with Night Vision have been made to allow you to see more clearly in the dark. When you Aim with a Night Vision weapon, you ignore any increase in the difficulty of an attack due to darkness.
 FALLOUT.TOOLTIPS.WeaponQuality.parry: When an enemy attempts a melee attack against you, and you are wielding a Parry weapon, you may spend 1 AP to add +1 to your Defense against that attack.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: When you Aim with a Recon weapon, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
+FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
@@ -467,15 +470,19 @@ FALLOUT.WEAPONS.weaponQuality.limited: Limited
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.night_vision: Night Vision
 FALLOUT.WEAPONS.weaponQuality.parry: Parry
+FALLOUT.WEAPONS.weaponQuality.placed: Placed
+FALLOUT.WEAPONS.weaponQuality.recoil_x: Recoil
 FALLOUT.WEAPONS.weaponQuality.recon: Recon
 FALLOUT.WEAPONS.weaponQuality.reliable: Reliable
 FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
 FALLOUT.WEAPONS.weaponQuality.suppressed: Suppressed
+FALLOUT.WEAPONS.weaponQuality.surge: Surge
 FALLOUT.WEAPONS.weaponQuality.thrown: Thrown
 FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unreliable
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Big Guns
+FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Creature Attack
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energy Weapons
 FALLOUT.WEAPONS.weaponType.explosives: Explosives
