@@ -7,6 +7,7 @@
 - [#196] Added missing Placed, Recoil and Surge weapon qualities
 - [#199] Soups, Stews and Noodle Cup missing thirst reduction value
 - [#202] Craftable foods missing the Prepared flag
+- [#203] Raider Armor missing individual pieces
 
 ---
 
