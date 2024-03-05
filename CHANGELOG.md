@@ -1,3 +1,10 @@
+# v11.4.1
+
+## Bugfixes
+- [#196] Added missing Placed, Recoil and Surge weapon qualities
+
+---
+
 # v11.4.0
 
 ## Enhancements
