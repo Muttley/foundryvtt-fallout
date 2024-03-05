@@ -1,5 +1,8 @@
 # v11.4.1
 
+## Enhancements
+- [#197] Added new Bows weapon category
+
 ## Bugfixes
 - [#196] Added missing Placed, Recoil and Surge weapon qualities
 
