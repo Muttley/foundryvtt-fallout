@@ -396,10 +396,13 @@ FALLOUT.TOOLTIPS.WeaponQuality.limited: Ograniczona broń może być użyta tylk
 FALLOUT.TOOLTIPS.WeaponQuality.mine: Położona w jakimś miejscu i aktywowana staje się niebezpieczna i zadaje obrażenia dowolnej istocie, która znajdzie się w jej zasięgu bezpośrednim (oraz innym istotom, jeśli ma cechę Wybuchowa).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Luneta broni posiada moduł noktowizyjny pozwalający wyraźniej widzieć w ciemnościach. Kiedy wykonujesz pomniejszą akcję celowania, ignorujesz modyfikatory do trudności ataku, które wynikają z ciemności.
 FALLOUT.TOOLTIPS.WeaponQuality.parry: Kiedy przeciwnik wykonuje atak wręcz, a ty dzierżysz w dłoni taką broń, możesz wydać 1 PA, żeby uzyskać przeciwko temu atakowi +1 do Obrony.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: Kiedy wykonujesz pomniejszą akcję celowania, możesz oznaczyć cel. Następny sojusznik, który go zaatakuje, może przerzucić w teście ataku 1k20.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: Kiedy używasz tej broni, podczas każdego starcia możesz zignorować pierwszą komplikację, którą wyrzucisz na kościach. Broń nie może być jednocześnie Zawodna i Niezawodna.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: Broń przeładowuje się szczególnie powoli. Po wystrzeleniu tej broni, musisz wykonać mniejszą akcję, aby przeładować broń, zanim zostanie ponownie wystrzelona.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Kiedy używasz takiej broni, a przeciwnik nie zdaje sobie sprawy z twojej obecności, nie zauważa twojego ataku, chyba że sam jest jego celem lub wykona udany test PER + Przetrwania o trudności 2.
+FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: Dla broni Rzucanej (B) optymalnym dystansem ataku jest bliski. Dla broni Rzucanej (Ś) optymalnym dystansem ataku jest średni. Taki atak wymaga testu ZW + Rzucania.
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią skutecznie posługiwać. Jeśli używasz tylko jednej ręki, trudność testów ataku wzrasta o +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
@@ -466,10 +469,13 @@ FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.night_vision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
+FALLOUT.WEAPONS.weaponQuality.placed: Placed
+FALLOUT.WEAPONS.weaponQuality.recoil_x: Recoil
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
 FALLOUT.WEAPONS.weaponQuality.slow_load: Wolne przeładowanie
 FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
+FALLOUT.WEAPONS.weaponQuality.surge: Surge
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
