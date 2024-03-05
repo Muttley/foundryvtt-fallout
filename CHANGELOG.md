@@ -53,7 +53,7 @@
 		- **Max Time Jump (hours)**: If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time. This ensures that no unexpected spikes in Fatigue are added to characters
 		- **Conditions Skip Missing Players**: If this is checked, only characters who's player owner is current online and logged in will have their conditions adjusted
 
-	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefull be added at a later date
+	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefully be added at a later date
 
 - [#191] Give ability to disable automatic XP calculation for people who wish to homebrew the level break points
 
