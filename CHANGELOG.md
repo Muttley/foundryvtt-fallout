@@ -9,6 +9,7 @@
 - [#202] Craftable foods missing the Prepared flag
 - [#203] Raider Armor missing individual pieces
 - [#204] Apparel that can have the Ballistic Weave mod have max mod set to "0" instead of "1"
+- [#205] All Power Armor pieces are missing descriptions
 
 ---
 
