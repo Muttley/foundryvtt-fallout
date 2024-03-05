@@ -8,6 +8,7 @@
 - [#199] Soups, Stews and Noodle Cup missing thirst reduction value
 - [#202] Craftable foods missing the Prepared flag
 - [#203] Raider Armor missing individual pieces
+- [#204] Apparel that can have the Ballistic Weave mod have max mod set to "0" instead of "1"
 
 ---
 
