@@ -20,6 +20,8 @@ export class Roller2D20 {
 		rollname = "Roll xD20",
 		skill = 0,
 		tag = false,
+		apspend = 0,
+		apbuy = 0,
 	}={}) {
 		// let dicesRolled = [];
 		let successTreshold = parseInt(attribute) + parseInt(skill);
@@ -58,6 +60,8 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			successTreshold,
+			apspend: apspend,
+			apbuy: apbuy,
 		});
 		return {roll: roll, dicesRolled: dicesRolled};
 	}
@@ -74,6 +78,8 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll xD20",
 		successTreshold = 0,
+		apspend = 0,
+		apbuy = 0,
 	}={}) {
 		let i = 0;
 		roll.dice.forEach(d => {
@@ -131,6 +137,8 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			successTreshold: successTreshold,
+			apspend: apspend,
+			apbuy: apbuy,
 		});
 		return dicesRolled;
 	}
@@ -178,6 +186,8 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll xD20",
 		successTreshold = 0,
+		apspend = 0,
+		apbuy = 0,
 	}={}) {
 		let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
 		let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
@@ -192,6 +202,8 @@ export class Roller2D20 {
 			hitLocationResult: hitLocationResult,
 			item: item,
 			actor: actor,
+			apspend: apspend,
+			apbuy: apbuy,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
@@ -206,12 +218,24 @@ export class Roller2D20 {
 		falloutRoll.diceFace = "d20";
 		falloutRoll.hitLocation= hitLocation;
 		falloutRoll.hitLocationResult = hitLocationResult;
-
+		falloutRoll.apspend = apspend;
+		falloutRoll.apbuy = apbuy;
+		const part1 = game.i18n.localize("FALLOUT.Buy_from_Overseer");
+		const part2 = game.i18n.localize("FALLOUT.Spend_AP");
+		let fla;
+		if (dicesRolled.length !== 1) {
+			// eslint-disable-next-line no-unused-vars
+			 fla =`${part2}: ${apspend}<br>${part1}: ${apbuy}`;
+		}
+		else {
+			fla ="";
+		}
 		let chatData = {
 			user: game.user.id,
 			speaker: ChatMessage.getSpeaker({
 				actor: actor,
 			}),
+			flavor: fla,
 			rollMode: game.settings.get("core", "rollMode"),
 			content: html,
 			flags: { falloutroll: falloutRoll },
@@ -247,11 +271,17 @@ export class Roller2D20 {
 
 	static async rollD6({
 		actor = null,
-		dicenum = 2,
+		diceNum = 2,
 		rollname = "Roll D6",
 		weapon = null,
+		otherdmgdice=0,
+		firerateamo=0,
 	}={}) {
-		let formula = `${dicenum}dc`;
+		let dmgmod=parseInt(firerateamo);
+		if (weapon.system.damage.weaponQuality.gatling.value) {
+			dmgmod = 2 * dmgmod;
+		}
+		let formula = `${diceNum+otherdmgdice+dmgmod}dc`;
 		let roll = new Roll(formula);
 
 		await roll.evaluate({ async: true });
@@ -261,6 +291,9 @@ export class Roller2D20 {
 			roll: roll,
 			weapon: weapon,
 			actor: actor,
+			diceNum: diceNum,
+			otherdmgdice: otherdmgdice,
+			firerateamo: firerateamo,
 		});
 	}
 
@@ -272,6 +305,9 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll D6",
 		weapon = null,
+		diceNum =0,
+		otherdmgdice =0,
+		firerateamo=0,
 	}={}) {
 		let diceResults = [
 			{ result: 1, effect: 0 },
@@ -311,6 +347,9 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			weapon: weapon,
+			otherdmgdice: otherdmgdice,
+			diceNum: diceNum,
+			firerateamo: firerateamo,
 		});
 	}
 
@@ -368,6 +407,9 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll D6",
 		weapon = null,
+		otherdmgdice,
+		diceNum,
+		firerateamo,
 	}={}) {
 		let damage = dicesRolled.reduce(
 			(a, b) => ({ result: a.result + b.result })
@@ -405,6 +447,9 @@ export class Roller2D20 {
 			results: dicesRolled,
 			weaponDamageTypesList,
 			weapon,
+			diceNum: diceNum,
+			other: otherdmgdice,
+			firerateamo: firerateamo,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/rollD6.hbs", rollData);
@@ -415,7 +460,22 @@ export class Roller2D20 {
 		falloutRoll.effects = effects;
 		falloutRoll.rerollIndexes = rerollIndexes;
 		falloutRoll.diceFace = "d6";
+		falloutRoll.diceNum = diceNum;
+		falloutRoll.otherdmgdice = otherdmgdice;
+		falloutRoll.firerateamo = firerateamo;
+		const weapondmgdice = game.i18n.localize("FALLOUT.Weapondamagedice");
+		let additionaludesamo="";
+		console.log(weapon);
+		if ( weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed") {
+			additionaludesamo=game.i18n.localize("FALLOUT.Additionalmeledmg");
+		}
+		else {
+			additionaludesamo=game.i18n.localize("FALLOUT.Additionalamo");
+		}
+		const bonusdmg=game.i18n.localize("FALLOUT.Bonusdmg");
 		let chatData = {
+			// eslint-disable-next-line no-useless-concat
+			flavor: `${weapondmgdice}: ${diceNum}<br>`+`${additionaludesamo}: ${firerateamo}<br>`+`${bonusdmg}: ${otherdmgdice}`,
 			user: game.user.id,
 			rollMode: game.settings.get("core", "rollMode"),
 			content: html,
