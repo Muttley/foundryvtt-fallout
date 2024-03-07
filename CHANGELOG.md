@@ -1,3 +1,10 @@
+# v11.4.2
+
+## Bugfixes
+- [#212] Missing material consumables: Asbestos, Bloatfly Gland, Blood Sac, Bloodleaf, Glowing Fungus, Hubflower, Radscorpion Stinger, Stingwing Barb
+
+---
+
 # v11.4.1
 
 ## Enhancements
