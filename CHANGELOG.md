@@ -1,3 +1,13 @@
+# v11.4.3
+
+## Bugfixes
+- [#221] Sort owned items on Creature/NPC sheets
+
+## Chores
+- [#218] Merged i18n changes from Crowdin
+
+---
+
 # v11.4.2
 
 ## Enhancements

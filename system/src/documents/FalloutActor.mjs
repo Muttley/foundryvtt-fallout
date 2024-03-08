@@ -122,7 +122,7 @@ export default class FalloutActor extends Actor {
 		// ADD UNOFFICIAL SPEED
 		try {
 			const athletics = this.items.find(
-				i => i.name.toLowerCase() === "athletics" && i.type==="skill"
+				i => i.name.toLowerCase() === "athletics" && i.type === "skill"
 			);
 
 			const athleticsValue = athletics !== undefined
