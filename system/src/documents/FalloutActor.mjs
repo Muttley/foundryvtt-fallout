@@ -680,20 +680,30 @@ export default class FalloutActor extends Actor {
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
-		if (!data.img) {
-			const img = CONFIG.FALLOUT.DEFAULT_TOKENS[data.type] ?? undefined;
+		const prototypeToken = {
+			actorLink: false,
+			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
+			name: data.name, // Set token name to actor name
+			texture: duplicate(this.prototypeToken.texture),
+		};
 
-			if (img) {
-				this.updateSource({
-					img,
-					prototypeToken: {
-						texture: {
-							src: img,
-						},
-					},
-				});
+		if (["character", "robot", "settlement"].includes(data.type)) {
+			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
+			prototypeToken.actorLink = true;
+		}
+
+		const update = {prototypeToken};
+		if (!data.img) {
+			const image = CONFIG.FALLOUT.DEFAULT_TOKENS[data.type] ?? undefined;
+
+			if (image) {
+				update.img = image;
+				update.prototypeToken.texture = {
+					src: image,
+				};
 			}
 		}
+
 
 		// Add Skills to Characters and Robots
 		if (this.type === "character" || this.type === "robot") {
@@ -714,21 +724,21 @@ export default class FalloutActor extends Actor {
 				let packSkills =
 					await game.packs.get(skillsCompendium).getDocuments();
 
-				const items = this.items.map(i => i.toObject());
+				update.items = this.items.map(i => i.toObject());
 
 				packSkills.forEach(s => {
-					items.push(s.toObject());
+					update.items.push(s.toObject());
 				});
-
-				this.updateSource({ items });
 			}
 		}
+
+		await this.updateSource(update);
 
 		// Seed the lastUsed timestamp for consumables
 		if (this.type === "character") {
 			const currentWorldTime = game.time.worldTime;
 
-			this.updateSource({
+			await this.updateSource({
 				"system.conditions.lastChanged.hunger": currentWorldTime,
 				"system.conditions.lastChanged.sleep": currentWorldTime,
 				"system.conditions.lastChanged.thirst": currentWorldTime,

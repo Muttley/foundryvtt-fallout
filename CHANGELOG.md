@@ -1,5 +1,8 @@
 # v11.4.3
 
+## Enhancements
+- [#220] Default Character, Robot and Settlement actor types to have linked actor data by default
+
 ## Bugfixes
 - [#221] Sort owned items on Creature/NPC sheets
 
