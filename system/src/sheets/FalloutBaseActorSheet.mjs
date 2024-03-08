@@ -223,6 +223,8 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * CLICK TO EXPAND
 		html.find(".expandable-info").click(async event => this._onItemSummary(event));
 
+		html.find(".immune-toggle").click(this._onImmunityToggle.bind(this));
+
 		// * Add Inventory Item
 		html.find(".item-create").click(this._onItemCreate.bind(this));
 
@@ -384,6 +386,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			});
 		}
 	}
+
+	async _onImmunityToggle(event) {
+		event.preventDefault();
+		const immunityType = $(event.currentTarget).data("immunityType");
+		this.actor._toggleImmunity(immunityType);
+	}
+
 
 	/**
 	 * Handle creating a new Owned Item for the actor using initial data defined

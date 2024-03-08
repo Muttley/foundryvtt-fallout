@@ -35,33 +35,79 @@
 		</div>
 		<div class="flexrow resource-row">
 			<span>
-				<i class="fo-radiation"></i>
+				<a
+					class="immune-toggle"
+					data-immunity-type="radiation"
+				>
+					<i
+						class="fo-radiation"
+						data-tooltip="{{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}}"
+						{{#if system.immunities.radiation}}
+							style="color: darkgray";
+						{{/if}}
+					></i>
+				</a>
 				&nbsp;
 				<label for="system.resistance.radiation" class="resource-label">
 					{{localize "FALLOUT.TEMPLATES.RAD"}}
 				</label>
 			</span>
-			<input
-				class="num-short-2"
-				name="system.resistance.radiation"
-				type="number"
-				value="{{system.resistance.radiation}}"
-			>
+			{{#if system.immunities.radiation}}
+				<input
+					class="num-short-2"
+					data-tooltip="{{localize 'FALLOUT.RESISTANCE.Immunity.radiation'}}"
+					data-dtype="String"
+					type="text"
+					style="font-size: 30px;"
+					value="&infin;"
+					disabled
+				>
+			{{else}}
+				<input
+					class="num-short-2"
+					name="system.resistance.radiation"
+					type="number"
+					value="{{system.resistance.radiation}}"
+				>
+			{{/if}}
 		</div>
 		<div class="flexrow resource-row">
 			<span>
-				<i class="fo-poison"></i>
+				<a
+					class="immune-toggle"
+					data-immunity-type="poison"
+				>
+					<i
+						class="fo-poison"
+						data-tooltip="{{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}}"
+						{{#if system.immunities.poison}}
+							style="color: darkgray";
+						{{/if}}
+					></i>
+				</a>
 				&nbsp;
 				<label for="system.resistance.poison" class="resource-label">
 					{{localize "FALLOUT.TEMPLATES.POISON"}}
 				</label>
 			</span>
-			<input
-				class="num-short-2"
-				name="system.resistance.poison"
-				type="number"
-				value="{{system.resistance.poison}}"
-			>
+			{{#if system.immunities.poison}}
+				<input
+					class="num-short-2"
+					data-tooltip="{{localize 'FALLOUT.RESISTANCE.Immunity.poison'}}"
+					data-dtype="String"
+					type="text"
+					style="font-size: 30px;"
+					value="&infin;"
+					disabled
+				>
+			{{else}}
+				<input
+					class="num-short-2"
+					name="system.resistance.poison"
+					type="number"
+					value="{{system.resistance.poison}}"
+				>
+			{{/if}}
 		</div>
 	</div>
 </div>

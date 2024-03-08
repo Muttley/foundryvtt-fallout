@@ -736,6 +736,15 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+	async _toggleImmunity(type) {
+		if (!["poison", "radiation"].includes(type)) return;
+
+		const currentValue = this.system.immunities[type];
+		const updateData = {};
+		updateData[`system.immunities.${type}`] = !currentValue;
+		this.update(updateData);
+	}
+
 	async _updateHunger(currentWorldTime) {
 		let lastChange = this.system.conditions?.lastChanged?.hunger;
 
