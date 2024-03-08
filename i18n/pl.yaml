@@ -158,10 +158,13 @@ FALLOUT.RANGE.close: B
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: D
 FALLOUT.RANGE.medium: Ś
-FALLOUT.RESISTANCE.energy: Energetyczne
-FALLOUT.RESISTANCE.physical: Fizyczne
-FALLOUT.RESISTANCE.poison: Trucizna
-FALLOUT.RESISTANCE.radiation: Radiacja
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
+FALLOUT.RESISTANCE.energy: Energy DR
+FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
+FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
+FALLOUT.RESISTANCE.physical: Physical DR
+FALLOUT.RESISTANCE.poison: Poison DR
+FALLOUT.RESISTANCE.radiation: Radiation DR
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
@@ -296,6 +299,7 @@ FALLOUT.TEMPLATES.HitLocationLabel: Lokalizacja Trafienia
 FALLOUT.TEMPLATES.HP_Healed: Wyleczone PZ
 FALLOUT.TEMPLATES.HP: PZ
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
+FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
@@ -357,6 +361,7 @@ FALLOUT.TEMPLATES.TN: CEL
 FALLOUT.TEMPLATES.Total: Całkowite
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
+FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
 FALLOUT.TEMPLATES.Type: Typ
 FALLOUT.TEMPLATES.Use_Agility: Użyj Zwinności
 FALLOUT.TEMPLATES.Use_Charisma: Użyj Charyzmy
