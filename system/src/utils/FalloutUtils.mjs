@@ -67,6 +67,25 @@ export default class FalloutUtils {
 		return Math.abs(game.time.worldTime - lastChange) > maxTimeSkip;
 	}
 
+	static getLocalizedSkillAttribute(skill) {
+		return game.i18n.localize(
+			`FALLOUT.AbilityAbbr.${skill.system.defaultAttribute}`
+		);
+	}
+
+	static getLocalizedSkillName(skill) {
+		// Get the localized name of a skill, if there is no
+		// localization then it is likely a custom skill, in which
+		// case we will just use it's original name
+		//
+		const nameKey = `FALLOUT.SKILL.${skill.name}`;
+		let localizedName = game.i18n.localize(nameKey);
+
+		if (localizedName === nameKey) localizedName = this.name;
+
+		return localizedName;
+	}
+
 	static lbsToKgs(value) {
 		return value * LBS_TO_KGS;
 	}

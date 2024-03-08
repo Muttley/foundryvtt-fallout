@@ -119,7 +119,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		//
 		context.inventory = [];
 
-		for (const i of context.items) {
+		for (const i of context.actor.items) {
 			i.img = i.img || DEFAULT_TOKEN;
 
 			// Make sure Robots can't equip Character armor, and vice-versa
@@ -127,7 +127,10 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			i.canBeEquipped = i.system.equippable ?? false;
 			if (i.type === "apparel" && this.actor.isRobot) i.canBeEquipped = false;
 			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
-
+			if (i.type === "skill") {
+				i.localizedName = fallout.utils.getLocalizedSkillName(i);
+				i.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(i);
+			}
 			// Skip moving this into its own section if it's not going to be
 			// separated into a specific inventory section
 			//

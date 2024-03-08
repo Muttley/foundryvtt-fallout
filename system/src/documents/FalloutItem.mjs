@@ -147,18 +147,8 @@ export default class FalloutItem extends Item {
 	}
 
 	_prepareSkillData() {
-		// Get the localized name of a skill, if there is no
-		// localization then it is likely a custom skill, in which
-		// case we will just use it's original name
-		//
-		const nameKey = `FALLOUT.SKILL.${this.name}`;
-		this.localizedName = game.i18n.localize(nameKey);
-
-		if (this.localizedName === nameKey) this.localizedName = this.name;
-
-		this.localizedDefaultAttribute = game.i18n.localize(
-			`FALLOUT.AbilityAbbr.${this.system.defaultAttribute}`
-		);
+		this.localizedName = fallout.utils.getLocalizedSkillName(this);
+		this.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(this);
 	}
 
 	async _prepareWeaponData() {
