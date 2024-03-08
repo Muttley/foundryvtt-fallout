@@ -1,3 +1,14 @@
+# v11.4.2
+
+## Enhancements
+- [#213] Add ability to toggle Radiation and Poison immunity on character and NPC sheets by clicking the Radiation or Poison icon in the resistance section character sheets.
+
+## Bugfixes
+- [#212] Missing material consumables: Asbestos, Bloatfly Gland, Blood Sac, Bloodleaf, Glowing Fungus, Hubflower, Radscorpion Stinger, Stingwing Barb
+- [#216] Don't show "undefined" if an out of date Weapon Quality or Damage Effect still exists in Weapon item
+
+---
+
 # v11.4.1
 
 ## Enhancements

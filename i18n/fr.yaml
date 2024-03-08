@@ -158,10 +158,13 @@ FALLOUT.RANGE.close: C
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
-FALLOUT.RESISTANCE.energy: Energie
-FALLOUT.RESISTANCE.physical: Balistique
-FALLOUT.RESISTANCE.poison: Poison
-FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
+FALLOUT.RESISTANCE.energy: Energy DR
+FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
+FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
+FALLOUT.RESISTANCE.physical: Physical DR
+FALLOUT.RESISTANCE.poison: Poison DR
+FALLOUT.RESISTANCE.radiation: Radiation DR
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
 FALLOUT.SETTINGS.sourceFilters.title: Filtres de Livres Source
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
@@ -296,6 +299,7 @@ FALLOUT.TEMPLATES.HitLocationLabel: Localisation du coup
 FALLOUT.TEMPLATES.HP_Healed: PV guéris
 FALLOUT.TEMPLATES.HP: PV
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
+FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: BLESSURES
 FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
@@ -357,6 +361,7 @@ FALLOUT.TEMPLATES.TN: SR
 FALLOUT.TEMPLATES.Total: Total
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Traiter une blessure (Clic droit)
+FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
 FALLOUT.TEMPLATES.Type: Type
 FALLOUT.TEMPLATES.Use_Agility: Utiliser Agilité
 FALLOUT.TEMPLATES.Use_Charisma: Utiliser Charisme
@@ -481,7 +486,7 @@ FALLOUT.WEAPONS.weaponQuality.two_handed: Deux mains
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
-FALLOUT.WEAPONS.weaponType.bows: Bows
+FALLOUT.WEAPONS.weaponType.bows: Arcs
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armes à énergie
 FALLOUT.WEAPONS.weaponType.explosives: Explosifs

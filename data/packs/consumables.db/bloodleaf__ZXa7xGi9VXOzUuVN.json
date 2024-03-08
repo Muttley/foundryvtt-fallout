@@ -1,0 +1,33 @@
+{
+	"_id": "ZXa7xGi9VXOzUuVN",
+	"_key": "!items!ZXa7xGi9VXOzUuVN",
+	"effects": [
+	],
+	"folder": "OFqB0R4AxJwkje7w",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Bloodleaf",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"consumableGroup": "",
+		"consumableType": "other",
+		"cost": 5,
+		"description": "",
+		"duration": "instant",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

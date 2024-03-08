@@ -159,10 +159,13 @@ FALLOUT.RANGE.close: C
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
-FALLOUT.RESISTANCE.energy: Energy
-FALLOUT.RESISTANCE.physical: Physical
-FALLOUT.RESISTANCE.poison: Poison
-FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
+FALLOUT.RESISTANCE.energy: Energy DR
+FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
+FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
+FALLOUT.RESISTANCE.physical: Physical DR
+FALLOUT.RESISTANCE.poison: Poison DR
+FALLOUT.RESISTANCE.radiation: Radiation DR
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SETTLEMENT_ACTION.Build: Build
@@ -297,6 +300,7 @@ FALLOUT.TEMPLATES.HitLocationLabel: Hit Location
 FALLOUT.TEMPLATES.HP_Healed: HP Healed
 FALLOUT.TEMPLATES.HP: HP
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
+FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: INJURIES
 FALLOUT.TEMPLATES.Injury_Left_Click: Injury (Left Click)
 FALLOUT.TEMPLATES.Irradiated: Irradiated
@@ -358,6 +362,7 @@ FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.Total: Total
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Treated injury (Right Click)
+FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
 FALLOUT.TEMPLATES.Type: Type
 FALLOUT.TEMPLATES.Use_Agility: Use Agility
 FALLOUT.TEMPLATES.Use_Charisma: Use Charisma

@@ -276,7 +276,11 @@
 						"status": "healthy"
 					}
 				},
-				"bodyType": "humanoid"
+				"bodyType": "humanoid",
+				"immunities": {
+					"poison": false,
+					"radiation": false
+				}
 			},
 			"derived": {
 				"conditions": {

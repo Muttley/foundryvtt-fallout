@@ -16,6 +16,8 @@ export default function registerHandlebarsHelpers() {
 		const effectsElements = [];
 
 		for (const key in effects) {
+			if (!CONFIG.FALLOUT.DAMAGE_EFFECTS.hasOwnProperty(key)) continue;
+
 			const effect = effects[key];
 
 			if (!effect.value) continue;
@@ -45,6 +47,8 @@ export default function registerHandlebarsHelpers() {
 		const qualityElements = [];
 
 		for (const key in qualities) {
+			if (!CONFIG.FALLOUT.WEAPON_QUALITIES.hasOwnProperty(key)) continue;
+
 			const quality = qualities[key];
 
 			if (!quality.value) continue;
