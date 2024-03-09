@@ -274,7 +274,16 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 					skill = { value: 0, tag: false, defaultAttribute: "str"};
 				}
 
-				attribute = item.actor.system.attributes[skill.defaultAttribute];
+				const attributeOverride = CONFIG.FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE[
+					item.system.weaponType
+				];
+
+				if (attributeOverride) {
+					attribute = item.actor.system.attributes[attributeOverride];
+				}
+				else {
+					attribute = item.actor.system.attributes[skill.defaultAttribute];
+				}
 			}
 
 			// REDUCE AMMO

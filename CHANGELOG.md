@@ -1,3 +1,10 @@
+# v11.4.4
+
+## Bugfixes
+- [#226] Bows using STR attribute when they should use AGI
+
+---
+
 # v11.4.3
 
 ## Enhancements
