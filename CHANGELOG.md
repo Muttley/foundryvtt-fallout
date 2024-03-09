@@ -3,6 +3,7 @@
 ## Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
+- [#231] Default item sheet width needs to be larger as Quantity label wrapping
 
 ## Chores
 - [#230] Merged i18n changes from Crowdin
