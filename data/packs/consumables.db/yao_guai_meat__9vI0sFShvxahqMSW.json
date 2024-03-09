@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 85,
 		"description": "<p><span class=\"fontstyle0\">Another dangerous meat to obtain, Yao Guai meat comes from the bodies of slain Yao Guai, a ferocious mutated form of bear that roams the wastelands. The meat is highly prized and nutritious, though still irradiated if consumed raw.</span></p>\n<p><span class=\"fontstyle0\">Yao Guai meat can be cooked to make Yao Guai Ribs or Yao Guai Roast.</span> </p>",

@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">A mutated hybrid of the pre-War tomato and potato plants, with the stem and reddish skin of the former and the brownish flesh of the latter. Tatos provide decent nutrition, but taste disgusting. However, they&rsquo;re relatively easy to grow and thus are a staple of wasteland agriculture and is an ingredient in a variety of recipes.</span> </p>",

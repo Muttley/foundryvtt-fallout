@@ -147,6 +147,19 @@
 				{{/ifCond}}
 			{{/ifCond}}
 
+			<div class="flexrow resource-row">
+				<label for="system.butchery" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Butchery"}}
+				</label>
+				<input
+					name="system.butchery"
+					type="checkbox"
+					{{#ifCond system.butchery '==' true}}
+						checked
+					{{/ifCond}}
+				>
+			</div>
+
 			<h3 class="resource-label">
 				{{localize "FALLOUT.TEMPLATES.Effect"}}
 			</h3>

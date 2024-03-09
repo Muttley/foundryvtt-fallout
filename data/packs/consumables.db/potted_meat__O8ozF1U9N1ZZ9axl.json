@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 25,
 		"description": "<p><span class=\"fontstyle0\">A small metal tin of mixed processed meat, typically containing mixtures of meat from brahmin, radstags, mole rats, mongrel dogs, and anything else the maker can get their hands on (some of which may not be fit for human consumption).</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Roll 2 @fos[DC]</span><span class=\"fontstyle3\">&nbsp;</span><span class=\"fontstyle0\">when determining if the food inflicts Radiation damage, rather than 1 @fos[DC]</span><span class=\"fontstyle0\">. You suffer 1 Radiation damage, ignoring damage resistance, for each Effect rolled.</span></p>",

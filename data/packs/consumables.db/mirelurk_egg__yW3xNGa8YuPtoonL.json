@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 0,
 		"description": "<p><span class=\"fontstyle0\">Eggs found in mirelurk nests. Normally found in clutches of 2-3, these eggs hatch into mirelurk hatchlings if left undisturbed.</span></p>\n<p><span class=\"fontstyle0\">Mirelurk eggs are a key ingredient of both Mirelurk Egg Omelette and Mirelurk Cake.</span> </p>",

@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">Small purple berries of the Tarberry plant, a watergrown crop similar to pre-War cranberries. A useful ingredient in several recipes, but difficult to cultivate in any location without a decent supply of reasonably clean water. Communities able to grow tarberries often need to protect their crop from raiders.</span></p>",
