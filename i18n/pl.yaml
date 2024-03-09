@@ -25,12 +25,12 @@ FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
 FALLOUT.APP.ChemDoseManager.title: Dawki środków chemicznych
-FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
-FALLOUT.APP.PartySleep.description: How Long?
-FALLOUT.APP.PartySleep.hour: 1 hour
-FALLOUT.APP.PartySleep.hours: "{length} hours"
-FALLOUT.APP.PartySleep.safe_location: Location Safe?
-FALLOUT.APP.PartySleep.title: Party Sleep
+FALLOUT.APP.PartySleep.chat_message: Drużyna śpi przez {duration}.
+FALLOUT.APP.PartySleep.description: Jak długo?
+FALLOUT.APP.PartySleep.hour: 1 godzina
+FALLOUT.APP.PartySleep.hours: "{length} godzin"
+FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
+FALLOUT.APP.PartySleep.title: Drużyna Śpi
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
@@ -101,18 +101,18 @@ FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} zostaje uzależniony od {itemN
 FALLOUT.CHAT_MESSAGE.addiction.title: Uzależnienie od środków chemicznych
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Uzależnienie od alkoholu
-FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now {hungerLevel}, {thirstLevel} and {sleepLevel}"
-FALLOUT.CHAT_MESSAGE.condition-change.title: Condition Change
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Your fatigue has increased by +{level} due to your {condition} level
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Fatigue Level
-FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
-FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
-FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} jest teraz {hungerLevel}, {thirstLevel} oraz {sleepLevel}"
+FALLOUT.CHAT_MESSAGE.condition-change.title: Zmiana warunków
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Twoje zmęczenie wzrosło o +{level} ze względu na Twój poziom {condition}
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Poziom zmęczenia
+FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Poziom głodu
+FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Poziom snu
+FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Poziom pragnienia
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Zużyte napoje
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} zużył {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Zjedzone jedzenie
-FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Jesteś już pełen i nie możesz zjeść więcej
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
@@ -158,13 +158,13 @@ FALLOUT.RANGE.close: B
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: D
 FALLOUT.RANGE.medium: Ś
-FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
-FALLOUT.RESISTANCE.energy: Energy DR
-FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
-FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
-FALLOUT.RESISTANCE.physical: Physical DR
-FALLOUT.RESISTANCE.poison: Poison DR
-FALLOUT.RESISTANCE.radiation: Radiation DR
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Kliknij, aby przełączyć odporność
+FALLOUT.RESISTANCE.energy: RO Energetycznych
+FALLOUT.RESISTANCE.Immunity.poison: Niewrażliwość na obrażenia od trucizn
+FALLOUT.RESISTANCE.Immunity.radiation: Niewrażliwość na obrażenia od promieniowania
+FALLOUT.RESISTANCE.physical: Ro Fizycznych
+FALLOUT.RESISTANCE.poison: RO Trucizn
+FALLOUT.RESISTANCE.radiation: RO Radiacyjnych
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
@@ -299,7 +299,7 @@ FALLOUT.TEMPLATES.HitLocationLabel: Lokalizacja Trafienia
 FALLOUT.TEMPLATES.HP_Healed: Wyleczone PZ
 FALLOUT.TEMPLATES.HP: PZ
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
-FALLOUT.TEMPLATES.Injuries: Injuries
+FALLOUT.TEMPLATES.Injuries: Urazy
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
@@ -361,7 +361,7 @@ FALLOUT.TEMPLATES.TN: CEL
 FALLOUT.TEMPLATES.Total: Całkowite
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
-FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
+FALLOUT.TEMPLATES.TreatedInjuries: Leczone Urazy
 FALLOUT.TEMPLATES.Type: Typ
 FALLOUT.TEMPLATES.Use_Agility: Użyj Zwinności
 FALLOUT.TEMPLATES.Use_Charisma: Użyj Charyzmy
@@ -376,7 +376,7 @@ FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
-FALLOUT.TEMPLATES.WellRested: Well Rested
+FALLOUT.TEMPLATES.WellRested: Dobrze Wypoczęty
 FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.
