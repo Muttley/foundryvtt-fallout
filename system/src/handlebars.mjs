@@ -23,7 +23,7 @@ export default function registerHandlebarsHelpers() {
 			if (!effect.value) continue;
 
 			let effectName = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
-			if (effect.hasRank) effectName += ` ${effect.rank}`;
+			if (effect.rank > 0) effectName += ` ${effect.rank}`;
 
 			const effectHtml =
 				`<span class="effect hover" data-key="${key}">${effectName}</span>`;
@@ -54,7 +54,7 @@ export default function registerHandlebarsHelpers() {
 			if (!quality.value) continue;
 
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
-			if (quality.hasRank) qualityName += ` ${quality.rank}`;
+			if (quality.rank > 0) qualityName += ` ${quality.rank}`;
 
 			const effectHtml =
 				`<span class="effect hover" data-key="${key}">${qualityName}</span>`;

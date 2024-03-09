@@ -1,6 +1,7 @@
 # v11.4.4
 
 ## Bugfixes
+- [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
 
 ---
