@@ -173,13 +173,37 @@
 			<div class="flexrow resource-row bgEven">
 				<label class="resource-label" for="system.ammo">
 					{{localize "TYPES.Item.ammo"}}
+					{{#if ammoUuid}}
+						<a
+							class="content-link"
+							draggable="true"
+							data-uuid="{{ammoUuid}}"
+							data-type="Item"
+							data-tooltip="Ammo Item"
+							aria-describedby="tooltip"
+						><i class="fas fa-suitcase"></i></a>
+					{{/if}}
 				</label>
-				<input
+				<select name="system.ammo" data-dtype="String">
+					<option value="">&mdash;</option>
+					{{#each ammoTypes}}
+						<option
+							value="{{this}}"
+							{{#ifCond ../system.ammo "===" this}}
+								selected
+							{{/ifCond}}
+						>
+							{{this}}
+						</option>
+					{{/each}}
+				</select>
+				{{!-- <input
 					type="text"
 					name="system.ammo"
 					value="{{system.ammo}}"
-				>
+				> --}}
 			</div>
+
 
 			<div class="flexrow resource-row bgOdd">
 				<label class="resource-label" for="system.ammo">

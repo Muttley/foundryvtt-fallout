@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Molotov Cocktail",
 	"system": {
-		"ammo": "",
+		"ammo": "Molotov Cocktail",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
@@ -119,6 +119,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 1,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -132,6 +140,10 @@
 					"value": false
 				},
 				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"surge": {
 					"rank": 0,
 					"value": false
 				},
@@ -153,7 +165,7 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">Consisting of a glass bottle&mdash;normally from an alcoholic beverage&mdash;containing a flammable fuel mixture, a bit of motor oil to help it spread, and an alcohol-soaked rag stuffed in the top to act as a wick. When used, the wick is ignited and the bottle hurled at the target; the breaking bottle spreads the agitated mixture, which quickly ignites begins to burn anything in the vicinity. Cheap and effective.</span> </p>",
+		"description": "<p><span class=\"fontstyle0\">Consisting of a glass bottle&mdash;normally from an alcoholic beverage&mdash;containing a flammable fuel mixture, a bit of motor oil to help it spread, and an alcohol-soaked rag stuffed in the top to act as a wick. When used, the wick is ignited and the bottle hurled at the target; the breaking bottle spreads the agitated mixture, which quickly ignites begins to burn anything in the vicinity. Cheap and effective.</span></p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -172,7 +184,7 @@
 		"stashed": false,
 		"tear": "",
 		"weaponType": "explosives",
-		"weight": 1
+		"weight": 0
 	},
 	"type": "weapon"
 }

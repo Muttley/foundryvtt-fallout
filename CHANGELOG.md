@@ -1,12 +1,16 @@
-# v11.4.4
+# v11.5.0
 
 ## Enhancements
-- [#227] Added 10mm Auto Pistol, Buzz-Saw, Flamer, Laser Emitter and Pincer robot arm attachment weapons,
+- [#227] Added 10mm Auto Pistol, Buzz-Saw, Flamer, Laser Emitter and Pincer robot arm attachment weapons
+- [#229] Add ammo items for thrown and explosive weapons
+- [#233] Make weapon ammo a select option from available ammo types in compendiums
+- [#234] Add draggable item shortcut for configured ammo on weapon sheet
+
 
 ## Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
-- [#231] Default item sheet width needs to be larger as Quantity label wrapping
+- [#231] Default item sheet width needs to be wider as Quantity label wrapping
 
 ## Chores
 - [#230] Merged i18n changes from Crowdin

@@ -79,6 +79,21 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		if (item.type === "weapon") {
+			const ammo = await fallout.compendiums.ammo();
+
+			context.ammoUuid = ammo.find(
+				a => a.name === this.item.system.ammo
+			)?.uuid ?? "";
+
+
+			let ammoTypes = [];
+			for (const ammoType of ammo) {
+				ammoTypes.push(ammoType.name);
+			}
+			ammoTypes = [...new Set(ammoTypes)]; // de-dupe
+
+			context.ammoTypes = ammoTypes.sort((a, b) => a.localeCompare(b));
+
 			context.damageTypes = [];
 			for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
 				context.damageTypes.push({

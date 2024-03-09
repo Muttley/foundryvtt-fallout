@@ -68,6 +68,10 @@ export default class FalloutCompendiums {
 		}
 	}
 
+	static async ammo(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "ammo", filterSources);
+	}
+
 	static async skills(filterSources=true) {
 		return FalloutCompendiums._documents("Item", "skill", filterSources);
 	}

@@ -1,0 +1,25 @@
+{
+	"_id": "XNBEI7ZW5HSaKSGr",
+	"_key": "!items!XNBEI7ZW5HSaKSGr",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Baseball Grenade",
+	"system": {
+		"cost": 40,
+		"description": "<p>Little more than a hollowed-out baseball filled with an improvised explosive mixture, these grenades are crude, low-tech, and easy to make, dealing a moderate amount of damage to those within the blast.</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 1,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "ammo"
+}

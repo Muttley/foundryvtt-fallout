@@ -1,0 +1,25 @@
+{
+	"_id": "GFEb3DpZFEB99owZ",
+	"_key": "!items!GFEb3DpZFEB99owZ",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Bottlecap Mine",
+	"system": {
+		"cost": 75,
+		"description": "<p><span class=\"fontstyle0\">The Bottlecap mine is crudely put together, yet a formidable explosive. Bottlecap mines are constructed from a simple container such as a lunchbox, filled with bottle caps and a crude explosive mixture, and </span><span class=\"fontstyle0\">fitted with a sensor and a detonator. The explosive force hurls the caps over a wide area at such speed that they are essentially shrapnel.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">when constructing a Bottlecap mine, you may add extra bottlecaps; every 10 caps added increases the damage by +1 @fos[DC]</span><span class=\"fontstyle0\">. When the mine detonates, roll the damage rating a second time: the total rolled is the number of intact caps found in the zone where the mine detonated.</span> <br><br></p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 2,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "ammo"
+}
