@@ -4,6 +4,9 @@
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
 
+## Chores
+- [#230] Merged i18n changes from Crowdin
+
 ---
 
 # v11.4.3
