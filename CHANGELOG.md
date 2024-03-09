@@ -1,5 +1,8 @@
 # v11.4.4
 
+## Enhancements
+- [#227] Added 10mm Auto Pistol, Buzz-Saw, Flamer, Laser Emitter and Pincer robot arm attachment weapons,
+
 ## Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
