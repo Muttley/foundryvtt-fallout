@@ -25,6 +25,13 @@
 				"mod": 0,
 				"value": 0
 			},
+			"butchery": {
+				"common": 0,
+				"details": "",
+				"rare": 0,
+				"tn": 0,
+				"uncommon": 0
+			},
 			"defense": {
 				"max": 1,
 				"min": 0,
@@ -491,6 +498,7 @@
 			"addiction": 0,
 			"addictive": false,
 			"alcoholic": false,
+			"butchery": false,
 			"group": "",
 			"consumableType": "food",
 			"duration": "instant",
