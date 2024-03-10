@@ -6,11 +6,11 @@
 - [#233] Make weapon ammo a select option from available ammo types in compendiums
 - [#234] Add draggable item shortcut for configured ammo on weapon sheet
 
-
 ## Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
 - [#231] Default item sheet width needs to be wider as Quantity label wrapping
+- [#236] Actor sheets containing items with NaN values for quantity or weight break encumbrance display and calculation
 
 ## Chores
 - [#230] Merged i18n changes from Crowdin

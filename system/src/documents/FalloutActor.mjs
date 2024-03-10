@@ -31,6 +31,15 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+	get isCreature() {
+		return this.type === "creature";
+	}
+
+
+	get isNotCreature() {
+		return !this.isCreature;
+	}
+
 
 	get isNotRobot() {
 		return !this.isRobot;
@@ -577,13 +586,30 @@ export default class FalloutActor extends Actor {
 				}
 			});
 		}
+		else if (this.isCreature) {
+			// remove butchery items from calculation
+			physicalItems = physicalItems.filter(i => {
+				if (i.type === "consumable") {
+					return !i.system.butchery;
+				}
+				else {
+					return true;
+				}
+			});
+		}
 
 		let physicalItemsMap = physicalItems.map(i => i.toObject());
 
 		let totalWeight = 0;
 
 		for (let i of physicalItemsMap) {
-			totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity);
+			let itemWeight = parseFloat(i.system.weight);
+			itemWeight = isNaN(itemWeight) ? 0 : itemWeight;
+
+			let itemQuantity = parseFloat(i.system.quantity);
+			itemQuantity = isNaN(itemQuantity) ? 0 : itemQuantity;
+
+			totalWeight += itemWeight * itemQuantity;
 		}
 
 		let materialWeight = 0;
@@ -618,7 +644,12 @@ export default class FalloutActor extends Actor {
 			this.system.category
 		);
 
-		this.system.carryWeight.total = this._getItemsTotalWeight();
+		if (this.isCreature) {
+			this.system.carryWeight.total = this._getItemsTotalWeight();
+		}
+		else {
+			this._calculateEncumbrance();
+		}
 	}
 
 	getLastConditionChanges() {

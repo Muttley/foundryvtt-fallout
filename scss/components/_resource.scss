@@ -189,6 +189,10 @@ input.chk-btn:checked + label {
 	text-align: center;
 }
 .num-short {
+	&-1 {
+		max-width: 1rem;
+		text-align: center;
+	}
 	&-2 {
 		max-width: 2rem;
 		text-align: center;
@@ -198,11 +202,11 @@ input.chk-btn:checked + label {
 		text-align: center;
 	}
 	&-4 {
-		max-width: 3rem;
+		max-width: 4rem;
 		text-align: center;
 	}
 	&-5 {
-		max-width: 3rem;
+		max-width: 5rem;
 		text-align: center;
 	}
 }

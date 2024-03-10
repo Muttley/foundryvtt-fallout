@@ -104,6 +104,10 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 	async _prepareItems(context) {
 		context.itemsByType = {};
 
+		if (this.actor.isCreature) {
+			context.butcheryItems = [];
+		}
+
 		// Different Actor types require specific inventory sections which
 		// are filtered from the full list of items
 		//
@@ -131,6 +135,14 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				i.localizedName = fallout.utils.getLocalizedSkillName(i);
 				i.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(i);
 			}
+
+			if (i.type === "consumable" && this.actor.isCreature) {
+				if (i.system.butchery) {
+					context.butcheryItems.push(i);
+					continue;
+				}
+			}
+
 			// Skip moving this into its own section if it's not going to be
 			// separated into a specific inventory section
 			//
@@ -425,12 +437,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		const itemData = {
 			name: name,
 			type: type,
-			data: data,
+			system: data,
 		};
 		// Remove the type from the dataset since it's in the itemData.type prop.
-		delete itemData.data.type;
+		delete itemData.system.type;
 		// Finally, create the item!
-		return await Item.create(itemData, { parent: this.actor });
+		const newItem = await Item.create(itemData, { parent: this.actor });
+		if (newItem) newItem.sheet.render(true);
 	}
 
 	async _onRightClickDelete(itemId) {
@@ -492,6 +505,17 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			div.slideDown(200);
 		}
 		li.toggleClass("expanded");
+	}
+
+	async _prepareButcheryMaterials(context) {
+		context.materials = [];
+		for (const material of ["common", "uncommon", "rare"]) {
+			context.materials.push({
+				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+				key: `system.butchery.${material}`,
+				value: this.actor.system.butchery[material] ?? 0,
+			});
+		}
 	}
 
 	async _prepareMaterials(context) {

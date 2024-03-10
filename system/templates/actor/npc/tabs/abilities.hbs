@@ -37,6 +37,10 @@
 				{{> actor/npc/partials/settlement }}
 			{{/unless}}
 
+			{{#if isCreature}}
+				{{> actor/npc/partials/butchery }}
+			{{/if}}
+
 			{{> actor/npc/partials/inventory }}
 		</div>
 

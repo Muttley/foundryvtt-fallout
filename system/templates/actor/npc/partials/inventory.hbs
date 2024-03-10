@@ -1,6 +1,6 @@
 <div class="resource-row">
 	<ol class="items-list">
-		<li class="item consumable flexrow items-header">
+		<li class="consumable flexrow items-header">
 			<div class="flexrow flexlarge item-name upperC">
 				{{localize 'FALLOUT.UI.INVENTORY'}}
 			</div>
@@ -15,7 +15,14 @@
 				</a>
 			</div>
 		</li>
-		<li>
+		{{#each inventory}}
+			{{>
+				actor/_shared-partials/simple-expandable-item
+				item=this
+				basicControlsOnly=true
+			}}
+		{{/each}}
+		{{!-- <li>
 			<span
 				class="flex align-mid"
 				style="flex-basis: 200px; margin-bottom: 5px;"
@@ -35,14 +42,7 @@
 					value="{{system.currency.caps}}"
 				>
 			</span>
-		</li>
-		{{#each inventory}}
-			{{>
-				actor/_shared-partials/simple-expandable-item
-				item=this
-				basicControlsOnly=true
-			}}
-		{{/each}}
+		</li> --}}
 	</ol>
 	{{#if isCreature}}
 		{{> actor/npc/partials/carried-weight_creature }}
