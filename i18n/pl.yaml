@@ -275,6 +275,7 @@ FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
 FALLOUT.TEMPLATES.current: obecny
 FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
+FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
@@ -331,6 +332,7 @@ FALLOUT.TEMPLATES.POISON: TRUCIZNA
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Prepared: Przygotowany
 FALLOUT.TEMPLATES.Publication: Publikacja
+FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
 FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
@@ -359,7 +361,6 @@ FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.Thirst_Reduction: Redukcja pragnienia
 FALLOUT.TEMPLATES.TN: CEL
-FALLOUT.TEMPLATES.Total: Całkowite
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
 FALLOUT.TEMPLATES.TreatedInjuries: Leczone Urazy
