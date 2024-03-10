@@ -17,6 +17,7 @@
 - [#226] Bows using STR attribute when they should use AGI
 - [#231] Default item sheet width needs to be wider as Quantity label wrapping
 - [#236] Actor sheets containing items with NaN values for quantity or weight break encumbrance display and calculation
+- [#237] Magazines chat message not displaying the Publication and still displaying which Issue
 
 ## Chores
 - [#230] Merged i18n changes from Crowdin
