@@ -83,6 +83,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		};
 
 		await this._prepareItems(context);
+		await this._prepareMaterials(context);
 
 		// Biography HTML enrichment
 		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
@@ -507,20 +508,26 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		li.toggleClass("expanded");
 	}
 
-	async _prepareButcheryMaterials(context) {
-		context.materials = [];
-		for (const material of ["common", "uncommon", "rare"]) {
-			context.materials.push({
-				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
-				key: `system.butchery.${material}`,
-				value: this.actor.system.butchery[material] ?? 0,
-			});
-		}
-	}
+	// async _prepareButcheryMaterials(context) {
+	// 	context.materials = [];
+	// 	for (const material of ["common", "uncommon", "rare"]) {
+	// 		context.materials.push({
+	// 			label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+	// 			key: `system.butchery.${material}`,
+	// 			value: this.actor.system.butchery[material] ?? 0,
+	// 		});
+	// 	}
+	// }
 
 	async _prepareMaterials(context) {
 		context.materials = [];
-		for (const material of ["junk", "common", "uncommon", "rare"]) {
+		let materials = ["common", "uncommon", "rare"];
+
+		if (this.actor.isNotCreature) {
+			materials = ["junk", ...materials];
+		}
+
+		for (const material of materials) {
 			context.materials.push({
 				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
 				key: `system.materials.${material}`,

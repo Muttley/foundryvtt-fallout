@@ -1,5 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
-	{{> item/parts/item-header}}
+	{{> item/_shared-partials/header}}
 
 	{{!-- Sheet Tab Navigation --}}
 	<nav class="sheet-tabs tabs" data-group="primary">
@@ -113,7 +113,7 @@
 			{{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
 		</div>
 
-		{{> item/tabs/effects }}
+		{{> item/_shared-partials/effects-tab }}
 
 	</section>
 </form>

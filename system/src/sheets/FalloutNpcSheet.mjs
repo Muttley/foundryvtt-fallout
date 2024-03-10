@@ -34,9 +34,12 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	async getData(options) {
 		const context = await super.getData(options);
 
-		if (this.actor.isCreature) {
-			await this._prepareButcheryMaterials(context);
-		}
+		// if (this.actor.isCreature) {
+		// 	await this._prepareButcheryMaterials(context);
+		// }
+		// else {
+		// 	await this._prepareMaterials(context);
+		// }
 
 		context.disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"

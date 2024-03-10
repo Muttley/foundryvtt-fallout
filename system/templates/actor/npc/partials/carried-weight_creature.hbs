@@ -6,24 +6,32 @@
 		class="flexrow align-mid"
 		style="margin: 5px; padding: 5px;"
 	>
-		<div class="flexrow align-mid">
-			<div style="text-align: right;">
-				<label>
-					{{localize "FALLOUT.TEMPLATES.Total"}}:
-					{{system.carryWeight.total}} /
-					<input
-						type="number"
-						name="system.carryWeight.base"
-						class="num-short-2"
-						value="{{system.carryWeight.base}}"
-					>
-					{{#if useKgs}}
-						{{localize "FALLOUT.TEMPLATES.kgs"}}
-					{{else}}
-						{{localize "FALLOUT.TEMPLATES.lbs"}}
-					{{/if}}
-				</label>
-			</div>
+		<span>
+			<label>
+				{{localize 'FALLOUT.UI.CAPS'}}
+				<input
+					type="text"
+					class="num-short-3"
+					name="system.currency.caps"
+					value="{{system.currency.caps}}"
+				>
+			</label>
+		</span>
+		<div style="text-align: right;">
+			<label>
+				{{system.carryWeight.total}} /
+				<input
+					type="number"
+					name="system.carryWeight.base"
+					class="num-short-2"
+					value="{{system.carryWeight.base}}"
+				>
+				{{#if useKgs}}
+					{{localize "FALLOUT.TEMPLATES.kgs"}}
+				{{else}}
+					{{localize "FALLOUT.TEMPLATES.lbs"}}
+				{{/if}}
+			</label>
 		</div>
 	</div>
 </div>

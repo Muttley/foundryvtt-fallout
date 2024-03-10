@@ -23,6 +23,8 @@
 			{{> actor/npc/partials/body
 				FALLOUT=FALLOUT
 			}}
+
+			{{> actor/npc/partials/special-abilities }}
 		</div>
 
 		<div class="right-column">
@@ -31,7 +33,6 @@
 			{{/unless}}
 
 			{{> actor/npc/partials/attacks }}
-			{{> actor/npc/partials/special-abilities }}
 
 			{{#unless isCreature}}
 				{{> actor/npc/partials/settlement }}

@@ -25,12 +25,7 @@
 				"mod": 0,
 				"value": 0
 			},
-			"butchery": {
-				"common": 0,
-				"rare": 0,
-				"tn": 0,
-				"uncommon": 0
-			},
+			"butchery": 0,
 			"defense": {
 				"max": 1,
 				"min": 0,
