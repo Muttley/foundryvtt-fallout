@@ -13,7 +13,7 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("listDamageEffects", function(effects) {
-		const effectsElements = [];
+		const elements = [];
 
 		for (const key in effects) {
 			if (!CONFIG.FALLOUT.DAMAGE_EFFECTS.hasOwnProperty(key)) continue;
@@ -25,16 +25,21 @@ export default function registerHandlebarsHelpers() {
 			let effectName = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
 			if (effect.rank > 0) effectName += ` ${effect.rank}`;
 
-			const effectHtml =
-				`<span class="effect hover" data-key="${key}">${effectName}</span>`;
+			const tooltip = CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key];
 
-			effectsElements.push(effectHtml);
+			const resultHtml = document.createElement("span");
+			resultHtml.classList.add("effect", "hover");
+			resultHtml.dataset.key = key;
+			resultHtml.dataset.tooltip = tooltip;
+			resultHtml.innerHTML = effectName;
+
+			elements.push(resultHtml.outerHTML);
 		}
 
 		let listString = "";
 
-		if (effectsElements.length > 0) {
-			listString = effectsElements.join(",&nbsp;");
+		if (elements.length > 0) {
+			listString = elements.join(",&nbsp;");
 		}
 		else {
 			listString = "&mdash;";
@@ -44,7 +49,7 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("listWeaponQualities", function(qualities) {
-		const qualityElements = [];
+		const elements = [];
 
 		for (const key in qualities) {
 			if (!CONFIG.FALLOUT.WEAPON_QUALITIES.hasOwnProperty(key)) continue;
@@ -56,16 +61,21 @@ export default function registerHandlebarsHelpers() {
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
 			if (quality.rank > 0) qualityName += ` ${quality.rank}`;
 
-			const effectHtml =
-				`<span class="effect hover" data-key="${key}">${qualityName}</span>`;
+			const tooltip = CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key];
 
-			qualityElements.push(effectHtml);
+			const resultHtml = document.createElement("span");
+			resultHtml.classList.add("effect", "hover");
+			resultHtml.dataset.key = key;
+			resultHtml.dataset.tooltip = tooltip;
+			resultHtml.innerHTML = qualityName;
+
+			elements.push(resultHtml.outerHTML);
 		}
 
 		let listString = "";
 
-		if (qualityElements.length > 0) {
-			listString = qualityElements.join(",&nbsp;");
+		if (elements.length > 0) {
+			listString = elements.join(",&nbsp;");
 		}
 		else {
 			listString = "&mdash;";
