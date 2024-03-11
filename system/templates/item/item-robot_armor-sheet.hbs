@@ -1,5 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
-    {{> item/parts/item-header}}
+    {{> item/_shared-partials/header}}
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -92,8 +92,6 @@
         </div>
 
         {{!-- Active Effects Tab --}}
-        <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-            {{> item/parts/item-effects}}
-        </div>
+		{{> item/_shared-partials/effects-tab}}
     </section>
 </form>

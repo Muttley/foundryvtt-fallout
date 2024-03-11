@@ -25,6 +25,12 @@
 				"mod": 0,
 				"value": 0
 			},
+			"butchery": {
+				"common": 0,
+				"rare": 0,
+				"tn": 0,
+				"uncommon": 0
+			},
 			"defense": {
 				"max": 1,
 				"min": 0,
@@ -105,7 +111,8 @@
 				"valuables",
 				"body",
 				"npc_shared"
-			]
+			],
+			"wealth": 1
 		},
 		"robot": {
 			"templates": [
@@ -410,6 +417,7 @@
 				"current": 1,
 				"max": 1
 			},
+			"quantityRoll": "",
 			"templates": [
 				"base",
 				"physical"
@@ -491,6 +499,7 @@
 			"addiction": 0,
 			"addictive": false,
 			"alcoholic": false,
+			"butchery": false,
 			"group": "",
 			"consumableType": "food",
 			"duration": "instant",
@@ -738,7 +747,7 @@
 						"value": false
 					},
 					"recoil_x": {
-						"rank": 0,
+						"rank": 1,
 						"value": false
 					},
 					"recon": {

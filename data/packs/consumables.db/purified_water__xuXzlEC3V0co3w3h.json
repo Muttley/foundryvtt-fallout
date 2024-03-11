@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableGroup": "",
 		"consumableType": "beverage",
 		"cost": 20,

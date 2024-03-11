@@ -1,0 +1,26 @@
+{
+	"_id": "y6YpnHYB8wgHhnj1",
+	"_key": "!items!y6YpnHYB8wgHhnj1",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Pulse Mine",
+	"system": {
+		"cost": 100,
+		"description": "<p>The mine consists of a powerful EMP device wired to a proximity fuse and then secured inside a heavy metal casing. While only mildly harmful to organic targets, these mines deal severe damage to robotic enemies, stunning or even permanently disabling them.</p>\n<p><strong>Special:</strong> Pulse mines only inflict damage to robots, synths, Power Armor (though not the wearer within) and other mechanical or technological targets. Any computers in the blast are also damaged by the grenade. Against any other target, pulse mines inflict 0 damage.</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"quantityRoll": "1",
+		"rarity": 3,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 0.5
+	},
+	"type": "ammo"
+}

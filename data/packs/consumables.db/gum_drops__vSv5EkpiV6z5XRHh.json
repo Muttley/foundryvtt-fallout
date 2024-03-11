@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A pre-War confection, gum drops are small drops of congealed gelatin sweetened and flavored with a variety of overpowering flavors. The most common variety to survive the War, ironically, were labelled as radioactive for their powerful sour flavor. Long years sat in cupboards and on shelves has made this more literal, however.</span> </p>",

@@ -25,12 +25,12 @@ FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
 FALLOUT.APP.ChemDoseManager.title: Dawki środków chemicznych
-FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
-FALLOUT.APP.PartySleep.description: How Long?
-FALLOUT.APP.PartySleep.hour: 1 hour
-FALLOUT.APP.PartySleep.hours: "{length} hours"
-FALLOUT.APP.PartySleep.safe_location: Location Safe?
-FALLOUT.APP.PartySleep.title: Party Sleep
+FALLOUT.APP.PartySleep.chat_message: Drużyna śpi przez {duration}.
+FALLOUT.APP.PartySleep.description: Jak długo?
+FALLOUT.APP.PartySleep.hour: 1 godzina
+FALLOUT.APP.PartySleep.hours: "{length} godzin"
+FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
+FALLOUT.APP.PartySleep.title: Drużyna Śpi
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
@@ -101,18 +101,18 @@ FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} zostaje uzależniony od {itemN
 FALLOUT.CHAT_MESSAGE.addiction.title: Uzależnienie od środków chemicznych
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Uzależnienie od alkoholu
-FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now {hungerLevel}, {thirstLevel} and {sleepLevel}"
-FALLOUT.CHAT_MESSAGE.condition-change.title: Condition Change
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Your fatigue has increased by +{level} due to your {condition} level
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Fatigue Level
-FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
-FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
-FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} jest teraz {hungerLevel}, {thirstLevel} oraz {sleepLevel}"
+FALLOUT.CHAT_MESSAGE.condition-change.title: Zmiana warunków
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Twoje zmęczenie wzrosło o +{level} ze względu na Twój poziom {condition}
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Poziom zmęczenia
+FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Poziom głodu
+FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Poziom snu
+FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Poziom pragnienia
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Zużyte napoje
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} zużył {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Zjedzone jedzenie
-FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Jesteś już pełen i nie możesz zjeść więcej
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
@@ -125,6 +125,14 @@ FALLOUT.CREATURE.guns: Dystans
 FALLOUT.CREATURE.melee: Wręcz
 FALLOUT.CREATURE.mind: Umysł
 FALLOUT.CREATURE.other: Inne
+FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
+FALLOUT.dialog.roll_ammo.button.create: Create New
+FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
+FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
+FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_ammo.title: Roll Ammunition
+FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
 FALLOUT.EffectCreate: Stwórz Efekt
 FALLOUT.EffectDelete: Usuń Efekt
 FALLOUT.EffectEdit: Edytuj Efekt
@@ -158,13 +166,13 @@ FALLOUT.RANGE.close: B
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: D
 FALLOUT.RANGE.medium: Ś
-FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
-FALLOUT.RESISTANCE.energy: Energy DR
-FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
-FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
-FALLOUT.RESISTANCE.physical: Physical DR
-FALLOUT.RESISTANCE.poison: Poison DR
-FALLOUT.RESISTANCE.radiation: Radiation DR
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Kliknij, aby przełączyć odporność
+FALLOUT.RESISTANCE.energy: RO Energetycznych
+FALLOUT.RESISTANCE.Immunity.poison: Niewrażliwość na obrażenia od trucizn
+FALLOUT.RESISTANCE.Immunity.radiation: Niewrażliwość na obrażenia od promieniowania
+FALLOUT.RESISTANCE.physical: Ro Fizycznych
+FALLOUT.RESISTANCE.poison: RO Trucizn
+FALLOUT.RESISTANCE.radiation: RO Radiacyjnych
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
@@ -223,6 +231,7 @@ FALLOUT.TEMPLATES.Alcoholic: Alkoholik
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
 FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
 FALLOUT.TEMPLATES.AmmoName: Nazwa Amunicji
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
@@ -232,6 +241,7 @@ FALLOUT.TEMPLATES.Attack: Atak
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
+FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.Compl: Komp.
 FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
@@ -274,6 +284,7 @@ FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
 FALLOUT.TEMPLATES.current: obecny
 FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
+FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
@@ -299,7 +310,7 @@ FALLOUT.TEMPLATES.HitLocationLabel: Lokalizacja Trafienia
 FALLOUT.TEMPLATES.HP_Healed: Wyleczone PZ
 FALLOUT.TEMPLATES.HP: PZ
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
-FALLOUT.TEMPLATES.Injuries: Injuries
+FALLOUT.TEMPLATES.Injuries: Urazy
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
@@ -330,6 +341,7 @@ FALLOUT.TEMPLATES.POISON: TRUCIZNA
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Prepared: Przygotowany
 FALLOUT.TEMPLATES.Publication: Publikacja
+FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
 FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
@@ -358,10 +370,9 @@ FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.Thirst_Reduction: Redukcja pragnienia
 FALLOUT.TEMPLATES.TN: CEL
-FALLOUT.TEMPLATES.Total: Całkowite
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
-FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
+FALLOUT.TEMPLATES.TreatedInjuries: Leczone Urazy
 FALLOUT.TEMPLATES.Type: Typ
 FALLOUT.TEMPLATES.Use_Agility: Użyj Zwinności
 FALLOUT.TEMPLATES.Use_Charisma: Użyj Charyzmy
@@ -370,13 +381,14 @@ FALLOUT.TEMPLATES.Use_Intelligence: Użyj Inteligencji
 FALLOUT.TEMPLATES.Use_Luck: Użyj Szczęścia
 FALLOUT.TEMPLATES.Use_Perception: Użyj Percepcji
 FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
+FALLOUT.TEMPLATES.Wealth: Wealth
 FALLOUT.TEMPLATES.Weapon_Qualities: Cechy Broni
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
 FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
-FALLOUT.TEMPLATES.WellRested: Well Rested
+FALLOUT.TEMPLATES.WellRested: Dobrze Wypoczęty
 FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.
@@ -439,6 +451,7 @@ FALLOUT.UI.Qty: Ilość
 FALLOUT.UI.Quantity: Ilość
 FALLOUT.UI.Rarity: Rzadkość
 FALLOUT.UI.ROBOT_MODULES: Modyfikacje Robotów
+FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Zdolności Specjalne
 FALLOUT.UI.stashed: Schowane
 FALLOUT.UI.Type: Typ

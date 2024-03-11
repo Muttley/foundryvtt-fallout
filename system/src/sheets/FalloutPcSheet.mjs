@@ -216,7 +216,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		const context = await super.getData(options);
 
 		await this._prepareCharacterData(context);
-		await this._prepareMaterials(context);
+		// await this._prepareMaterials(context);
 		await this._prepareRobotModDescriptions(context);
 
 		context.disableAutoXpTarget = game.settings.get(

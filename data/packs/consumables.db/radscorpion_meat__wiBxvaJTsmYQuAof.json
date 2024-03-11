@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 55,
 		"description": "<p><span class=\"fontstyle0\">Meat taken from inside the carapace of a radscorpion, normally form the tail or one of the legs where it&rsquo;s easier to get to. Difficult to obtain, as it requires killing a radscorpion or taking it from something that killed a radscorpion.</span></p>\n<p><span class=\"fontstyle0\">Radscorpion meat can be cooked to make Radscorpion Steak.</span> </p>",

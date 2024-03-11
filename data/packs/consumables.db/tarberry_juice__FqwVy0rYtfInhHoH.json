@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">Juice made from pressing tarberries. Drinking Tarberry juice has a potent stimulant effect, making the drinker energetic and ready for action.</span> </p>",

@@ -1,0 +1,26 @@
+{
+	"_id": "HfxmSvkJEHmqneek",
+	"_key": "!items!HfxmSvkJEHmqneek",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Nuka Grenade",
+	"system": {
+		"cost": 100,
+		"description": "<p><span class=\"fontstyle0\">A tiny, handheld tactical nuclear weapon, a Nuka Grenade is extremely dangerous to use&mdash;dropping one is ill-advised&mdash;but devastatingly effective, comparable to the mini-nukes used by the Fat Man launcher.</span></p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"quantityRoll": "1",
+		"rarity": 4,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "ammo"
+}

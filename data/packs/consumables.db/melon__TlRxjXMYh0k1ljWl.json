@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">A large, green, juicy fruit with a hard outer rind. Melons are grown in wasteland farms, or found growing wild in the wasteland. Either way, once cut open they&rsquo;re often very satisfying, sating hunger and quenching thirst all in one go.</span></p>\n<p><span class=\"fontstyle0\">Melons grown in non-irradiated conditions (such as within vaults or similar locations) are not irradiated but increase their rarity by +1.</span> </p>",

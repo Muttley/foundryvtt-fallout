@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 3,
 		"description": "<p><span class=\"fontstyle0\">Meat from the mutated, irradiated cockroaches known commonly as radroaches. The meat is mildly radioactive and offers little in the way of nourishment or satisfaction, and it isn&rsquo;t especially appetizing either. Cooking it provides only a marginal improvement.</span></p>\n<p><span class=\"fontstyle0\">Radroach meat can be cooked to make Grilled Radroach.</span> </p>",

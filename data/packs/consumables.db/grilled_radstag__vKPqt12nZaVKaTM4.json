@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 60,

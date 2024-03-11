@@ -83,6 +83,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		};
 
 		await this._prepareItems(context);
+		await this._prepareMaterials(context);
 
 		// Biography HTML enrichment
 		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
@@ -103,6 +104,10 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 	 */
 	async _prepareItems(context) {
 		context.itemsByType = {};
+
+		if (this.actor.isCreature) {
+			context.butcheryItems = [];
+		}
 
 		// Different Actor types require specific inventory sections which
 		// are filtered from the full list of items
@@ -131,6 +136,14 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				i.localizedName = fallout.utils.getLocalizedSkillName(i);
 				i.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(i);
 			}
+
+			if (i.type === "consumable" && this.actor.isCreature) {
+				if (i.system.butchery) {
+					context.butcheryItems.push(i);
+					continue;
+				}
+			}
+
 			// Skip moving this into its own section if it's not going to be
 			// separated into a specific inventory section
 			//
@@ -274,7 +287,16 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 					skill = { value: 0, tag: false, defaultAttribute: "str"};
 				}
 
-				attribute = item.actor.system.attributes[skill.defaultAttribute];
+				const attributeOverride = CONFIG.FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE[
+					item.system.weaponType
+				];
+
+				if (attributeOverride) {
+					attribute = item.actor.system.attributes[attributeOverride];
+				}
+				else {
+					attribute = item.actor.system.attributes[skill.defaultAttribute];
+				}
 			}
 
 			// REDUCE AMMO
@@ -416,12 +438,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		const itemData = {
 			name: name,
 			type: type,
-			data: data,
+			system: data,
 		};
 		// Remove the type from the dataset since it's in the itemData.type prop.
-		delete itemData.data.type;
+		delete itemData.system.type;
 		// Finally, create the item!
-		return await Item.create(itemData, { parent: this.actor });
+		const newItem = await Item.create(itemData, { parent: this.actor });
+		if (newItem) newItem.sheet.render(true);
 	}
 
 	async _onRightClickDelete(itemId) {
@@ -485,16 +508,27 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		li.toggleClass("expanded");
 	}
 
+	async _prepareButcheryMaterials(context) {
+		context.butcheryMaterials = [];
+
+		for (const material of ["common", "uncommon", "rare"]) {
+			context.butcheryMaterials.push({
+				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+				key: `system.butchery.${material}`,
+				value: this.actor.system.butchery[material] ?? 0,
+			});
+		}
+	}
+
 	async _prepareMaterials(context) {
-		context.materials = [];
+		context.inventoryMaterials = [];
+
 		for (const material of ["junk", "common", "uncommon", "rare"]) {
-			context.materials.push({
+			context.inventoryMaterials.push({
 				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
 				key: `system.materials.${material}`,
 				value: this.actor.system.materials[material] ?? 0,
 			});
 		}
 	}
-
-
 }

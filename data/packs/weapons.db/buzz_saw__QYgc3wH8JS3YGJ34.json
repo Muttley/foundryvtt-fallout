@@ -1,17 +1,17 @@
 {
-	"_id": "CUzd1Yn5rxgPckR3",
-	"_key": "!items!CUzd1Yn5rxgPckR3",
+	"_id": "QYgc3wH8JS3YGJ34",
+	"_key": "!items!QYgc3wH8JS3YGJ34",
 	"effects": [
 	],
-	"folder": "8HBxoFI4IGjaL6eX",
+	"folder": "wuijs0qVP74GkECb",
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
-	"name": "Serrated Combat Knife",
+	"name": "Buzz-Saw",
 	"system": {
 		"ammo": "",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
-		"cost": 25,
+		"cost": 0,
 		"damage": {
 			"damageEffect": {
 				"arc": {
@@ -32,7 +32,7 @@
 				},
 				"persistent": {
 					"rank": 0,
-					"value": true
+					"value": false
 				},
 				"piercing_x": {
 					"rank": 1,
@@ -61,7 +61,7 @@
 				"poison": false,
 				"radiation": false
 			},
-			"rating": 4,
+			"rating": 3,
 			"weaponQuality": {
 				"accurate": {
 					"rank": 0,
@@ -119,6 +119,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 0,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -132,6 +140,10 @@
 					"value": false
 				},
 				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"surge": {
 					"rank": 0,
 					"value": false
 				},
@@ -153,26 +165,26 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">For both fighting and for utility uses, soldiers&mdash;and those who seek to emulate soldiers&mdash;frequently carry knives. The Combat Knife found across the wastelands is normally of the same type as was issued to U.S. Army soldiers during the Great War, a single-edged </span><span class=\"fontstyle0\">blade with a clipped point. The weapon is lightweight and sturdy, and intended for heavy use.</span></p>\n<p><span class=\"fontstyle0\">Combat Knives can accept one of the following mods which are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">:</span> </p>\n<ul>\n<li><strong>Combat Knife:&nbsp;</strong>Serrated Blade, Stealth Blade</li>\n</ul>\n<p>&nbsp;</p>",
+		"description": "<p><strong>Arm Attachment:</strong> You can cut objects and make melee attacks with a circular saw. The buzz-saw inflicts 3 CD Piercing 1 physical damage.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
 		"fireRate": 0,
 		"melee": false,
 		"mods": {
-			"current": 1,
-			"list": "<p>@UUID[Compendium.fallout-data.weapon-mods.Item.8vD290wQWVa8qlbm]{Serrated Blade}</p>",
-			"max": 1
+			"current": 0,
+			"list": "",
+			"max": 0
 		},
 		"quantity": 1,
 		"range": "close",
-		"rarity": 1,
+		"rarity": 0,
 		"skill": "",
 		"source": "",
 		"stashed": false,
 		"tear": "",
 		"weaponType": "meleeWeapons",
-		"weight": 1
+		"weight": 0
 	},
 	"type": "weapon"
 }

@@ -23,21 +23,20 @@
 			{{> actor/npc/partials/body
 				FALLOUT=FALLOUT
 			}}
-		</div>
-
-		<div class="right-column">
-			{{#unless isCreature}}
-				{{> actor/npc/partials/skills }}
-			{{/unless}}
-
-			{{> actor/npc/partials/attacks }}
-			{{> actor/npc/partials/special-abilities }}
 
 			{{#unless isCreature}}
 				{{> actor/npc/partials/settlement }}
 			{{/unless}}
+		</div>
 
-			{{> actor/npc/partials/inventory }}
+		<div class="right-column">
+			{{> actor/npc/partials/attacks }}
+
+			{{#if isCreature}}
+				{{> actor/npc/partials/special-abilities }}
+			{{else}}
+				{{> actor/npc/partials/skills }}
+			{{/if}}
 		</div>
 
 	</section>

@@ -311,6 +311,10 @@ FALLOUT.WEAPON_QUALITIES = {
 	unstable_radiation: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation",
 };
 
+FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {
+	bows: "agi",
+};
+
 FALLOUT.WEAPON_SKILLS = {
 	bigGuns: "Big Guns",
 	bows: "Athletics",

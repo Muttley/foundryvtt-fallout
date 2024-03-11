@@ -125,6 +125,14 @@ FALLOUT.CREATURE.guns: Armas
 FALLOUT.CREATURE.melee: Melee
 FALLOUT.CREATURE.mind: Mente
 FALLOUT.CREATURE.other: Outro
+FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
+FALLOUT.dialog.roll_ammo.button.create: Create New
+FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
+FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
+FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_ammo.title: Roll Ammunition
+FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
 FALLOUT.EffectCreate: Criar Efeito
 FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
@@ -223,6 +231,7 @@ FALLOUT.TEMPLATES.Alcoholic: Alcoólico
 FALLOUT.TEMPLATES.AMMO: AMMO
 FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
 FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
 FALLOUT.TEMPLATES.Apparel: Vestuário
@@ -232,6 +241,7 @@ FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
+FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complicações
 FALLOUT.TEMPLATES.CONDITIONS: CONDIÇÕES
@@ -274,6 +284,7 @@ FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
 FALLOUT.TEMPLATES.Creature_Skill: Skill da Criatura
 FALLOUT.TEMPLATES.current: atual
 FALLOUT.TEMPLATES.CurrentLeader: Current Leader
+FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
 FALLOUT.TEMPLATES.DAMAGE: DANO
@@ -330,6 +341,7 @@ FALLOUT.TEMPLATES.POISON: VENENO
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: VIDA DA POWER ARMOR
 FALLOUT.TEMPLATES.Prepared: Prepared
 FALLOUT.TEMPLATES.Publication: Publication
+FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
 FALLOUT.TEMPLATES.Qualities: Qualidades
 FALLOUT.TEMPLATES.RAD: RADIAÇÃO
 FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
@@ -358,7 +370,6 @@ FALLOUT.TEMPLATES.Tag: Tag
 FALLOUT.TEMPLATES.Tear: Desgaste
 FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
 FALLOUT.TEMPLATES.TN: TN
-FALLOUT.TEMPLATES.Total: Total
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Ferida Tratada (Botão Dir.)
 FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
@@ -370,6 +381,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Usar Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Usar Luck
 FALLOUT.TEMPLATES.Use_Perception: Usar Perception
 FALLOUT.TEMPLATES.Use_Strength: Usar Strength
+FALLOUT.TEMPLATES.Wealth: Wealth
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALIDADES DA ARMA
 FALLOUT.TEMPLATES.Weapon_Type: Tipo da Arma
@@ -439,6 +451,7 @@ FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Quantidade
 FALLOUT.UI.Rarity: Raridade
 FALLOUT.UI.ROBOT_MODULES: Módulos Robóticos
+FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Habilidades Especiais
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Tipo
