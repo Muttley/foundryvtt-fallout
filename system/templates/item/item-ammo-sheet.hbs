@@ -31,6 +31,26 @@
 						value="{{system.shots.max}}"
 					/>
 				</div>
+				{{#if isGM}}
+					<div class="flex align-mid">
+						<label
+							for="system.quantityRoll"
+							style="flex: 0 0 auto;"
+						>
+							{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
+								<a class="ammo-quantity-roll">
+									<i class="fa-solid fa-dice"></i>
+								</a>
+						</label>
+						<input
+							type="text"
+							data-dtype="String"
+							name="system.quantityRoll"
+							style="margin-left: 8px;"
+							value="{{system.quantityRoll}}"
+						/>
+					</div>
+				{{/if}}
 			</div>
 			<div class="resource-row">
 				<h3 style="border-bottom: none;">Effect</h3>

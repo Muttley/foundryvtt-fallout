@@ -508,33 +508,27 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		li.toggleClass("expanded");
 	}
 
-	// async _prepareButcheryMaterials(context) {
-	// 	context.materials = [];
-	// 	for (const material of ["common", "uncommon", "rare"]) {
-	// 		context.materials.push({
-	// 			label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
-	// 			key: `system.butchery.${material}`,
-	// 			value: this.actor.system.butchery[material] ?? 0,
-	// 		});
-	// 	}
-	// }
+	async _prepareButcheryMaterials(context) {
+		context.butcheryMaterials = [];
+
+		for (const material of ["common", "uncommon", "rare"]) {
+			context.butcheryMaterials.push({
+				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+				key: `system.butchery.${material}`,
+				value: this.actor.system.butchery[material] ?? 0,
+			});
+		}
+	}
 
 	async _prepareMaterials(context) {
-		context.materials = [];
-		let materials = ["common", "uncommon", "rare"];
+		context.inventoryMaterials = [];
 
-		if (this.actor.isNotCreature) {
-			materials = ["junk", ...materials];
-		}
-
-		for (const material of materials) {
-			context.materials.push({
+		for (const material of ["junk", "common", "uncommon", "rare"]) {
+			context.inventoryMaterials.push({
 				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
 				key: `system.materials.${material}`,
 				value: this.actor.system.materials[material] ?? 0,
 			});
 		}
 	}
-
-
 }

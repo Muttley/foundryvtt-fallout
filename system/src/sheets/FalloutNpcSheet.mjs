@@ -6,6 +6,13 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 	/** @override */
+	static get defaultOptions() {
+		return mergeObject(super.defaultOptions, {
+			height: "auto",
+		});
+	}
+
+	/** @override */
 	get initialTab() {
 		return "abilities";
 	}
@@ -34,12 +41,9 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	async getData(options) {
 		const context = await super.getData(options);
 
-		// if (this.actor.isCreature) {
-		// 	await this._prepareButcheryMaterials(context);
-		// }
-		// else {
-		// 	await this._prepareMaterials(context);
-		// }
+		if (this.actor.isCreature) {
+			await this._prepareButcheryMaterials(context);
+		}
 
 		context.disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"
@@ -73,7 +77,7 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		}
 		catch(err) {}
 
-		const caps = parseInt(roll.result);
+		const caps = parseInt(roll.total);
 
 		this.actor.update({"system.currency.caps": caps});
 	}

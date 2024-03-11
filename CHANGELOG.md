@@ -11,6 +11,7 @@
 - [#239] Add location to specify Wealth level on NPC sheet
 - [#240] Make it easy to roll Caps owned from an NPC's Wealth rating
 - [#241] Move weapon Qualities/Effects to their own tab
+- [#245] Show the hover tooltips for Weapon Qualities and Damage Effects on all sheets and chat messages
 
 ## Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
@@ -18,9 +19,10 @@
 - [#231] Default item sheet width needs to be wider as Quantity label wrapping
 - [#236] Actor sheets containing items with NaN values for quantity or weight break encumbrance display and calculation
 - [#237] Magazines chat message not displaying the Publication and still displaying which Issue
+- [#247] No icon to consume consumables
 
 ## Chores
-- [#230] Merged i18n changes from Crowdin
+- Merged various i18n changes from Crowdin
 
 ---
 

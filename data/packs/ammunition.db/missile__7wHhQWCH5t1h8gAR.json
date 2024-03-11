@@ -12,6 +12,7 @@
 		"effect": "",
 		"favorite": false,
 		"quantity": 1,
+		"quantityRoll": "2+1dc",
 		"rarity": 3,
 		"shots": {
 			"current": 1,

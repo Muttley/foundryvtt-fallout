@@ -9,10 +9,10 @@
 					data-dtype="Number"
 					data-tooltip="Butchery Check TN"
 					min="0"
-					name="system.butchery"
+					name="system.butchery.tn"
 					style="color: unset; height: auto;"
 					type="number"
-					value="{{system.butchery}}"
+					value="{{system.butchery.tn}}"
 				>
 			</div>
 			<div class="item-controls">
@@ -26,29 +26,6 @@
 				</a>
 			</div>
 		</li>
-		<div class="box">
-			<ol class="items-list">
-				{{#each materials}}
-					{{>
-						actor/_shared-partials/material
-						material=this
-					}}
-				{{/each}}
-			</ol>
-		</div>
-
-		{{!-- <div
-			style="margin: 0; padding: 0; margin-bottom: 2px; padding-left: 5px; padding-right: 5px;"
-			class="box flexrow"
-		>
-			{{#each materials}}
-				{{>
-					actor/_shared-partials/material
-					material=this
-				}}
-			{{/each}}
-		</div> --}}
-
 		{{#each butcheryItems}}
 			{{>
 				actor/_shared-partials/simple-expandable-item
