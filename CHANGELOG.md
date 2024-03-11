@@ -12,6 +12,8 @@
 - [#240] Make it easy to roll Caps owned from an NPC's Wealth rating
 - [#241] Move weapon Qualities/Effects to their own tab
 - [#245] Show the hover tooltips for Weapon Qualities and Damage Effects on all sheets and chat messages
+- [#248] Add ability to specify quantity roll formula on Ammo items
+- [#249] Add ability to roll new Ammo quantities directly from the Ammo item sheet
 
 ## Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
