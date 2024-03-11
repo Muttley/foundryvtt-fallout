@@ -125,6 +125,14 @@ FALLOUT.CREATURE.guns: Schusswaffen
 FALLOUT.CREATURE.melee: Nahkampf
 FALLOUT.CREATURE.mind: Geist
 FALLOUT.CREATURE.other: Anderes
+FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
+FALLOUT.dialog.roll_ammo.button.create: Create New
+FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
+FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
+FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_ammo.title: Roll Ammunition
+FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
 FALLOUT.EffectCreate: Erzeuge Effekt
 FALLOUT.EffectDelete: Entferne Effekt
 FALLOUT.EffectEdit: Bearbeite Effektt
@@ -223,6 +231,7 @@ FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
 FALLOUT.TEMPLATES.AMMO: MUNI
 FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
 FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Type: Kleidungsart
 FALLOUT.TEMPLATES.Apparel: Kleidung
@@ -442,6 +451,7 @@ FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Anzahl
 FALLOUT.UI.Rarity: Seltenheit
 FALLOUT.UI.ROBOT_MODULES: Roboter Module
+FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Sonderfähigkeit
 FALLOUT.UI.stashed: Verstaut
 FALLOUT.UI.Type: Art
