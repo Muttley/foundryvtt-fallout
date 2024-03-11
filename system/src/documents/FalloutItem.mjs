@@ -141,7 +141,7 @@ export default class FalloutItem extends Item {
 	}
 
 	_prepareConsumableData() {
-		this.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
+		this.system.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
 			this.system.consumableType
 		];
 	}
