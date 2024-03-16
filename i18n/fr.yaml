@@ -125,7 +125,7 @@ FALLOUT.CREATURE.guns: Distance
 FALLOUT.CREATURE.melee: Corps-à-Corps
 FALLOUT.CREATURE.mind: Esprit
 FALLOUT.CREATURE.other: Autres
-FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
+FALLOUT.dialog.roll_ammo.button.chat: Envoyer dans la conversation
 FALLOUT.dialog.roll_ammo.button.create: Create New
 FALLOUT.dialog.roll_ammo.button.update: Update Item
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
@@ -451,7 +451,7 @@ FALLOUT.UI.Qty: Qttés
 FALLOUT.UI.Quantity: Quantité
 FALLOUT.UI.Rarity: Rareté
 FALLOUT.UI.ROBOT_MODULES: Modules de robot
-FALLOUT.UI.Special_Abilities: Special Abilities
+FALLOUT.UI.Special_Abilities: Capacités spéciales
 FALLOUT.UI.SPECIAL_ABILITY: Capacités spéciales
 FALLOUT.UI.stashed: Caché
 FALLOUT.UI.Type: Type
