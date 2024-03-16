@@ -1,3 +1,10 @@
+# v11.6.0
+
+## Bugfixes
+- [#258] Typo on weapons mod tab
+
+---
+
 # v11.5.0
 
 ## Enhancements
