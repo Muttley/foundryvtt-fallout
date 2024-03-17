@@ -193,6 +193,7 @@
 						"resistance": {
 							"energy": 0,
 							"physical": 0,
+							"poison": 0,
 							"radiation": 0
 						},
 						"status": "healthy"
@@ -210,6 +211,7 @@
 						"resistance": {
 							"energy": 0,
 							"physical": 0,
+							"poison": 0,
 							"radiation": 0
 						},
 						"status": "healthy"
@@ -227,6 +229,7 @@
 						"resistance": {
 							"energy": 0,
 							"physical": 0,
+							"poison": 0,
 							"radiation": 0
 						},
 						"status": "healthy"
@@ -244,6 +247,7 @@
 						"resistance": {
 							"energy": 0,
 							"physical": 0,
+							"poison": 0,
 							"radiation": 0
 						},
 						"status": "healthy"
@@ -261,6 +265,7 @@
 						"resistance": {
 							"energy": 0,
 							"physical": 0,
+							"poison": 0,
 							"radiation": 0
 						},
 						"status": "healthy"
@@ -278,6 +283,7 @@
 						"resistance": {
 							"energy": 0,
 							"physical": 0,
+							"poison": 0,
 							"radiation": 0
 						},
 						"status": "healthy"

@@ -1,5 +1,8 @@
 # v11.6.0
 
+# Enhancements
+- [#254] Creature & NPC Poison DR can have locational values
+
 ## Bugfixes
 - [#258] Typo on weapons mod tab
 
