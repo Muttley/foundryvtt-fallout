@@ -2,9 +2,13 @@
 
 # Enhancements
 - [#254] Creature & NPC Poison DR can have locational values
+	* The system will attempt to migrate existing Poison DR values, but it is advisable to check all NPC/Creature NPCs t
 
 ## Bugfixes
 - [#258] Typo on weapons mod tab
+
+## Chores
+- [#259] Merged French translation updates from Crowdin
 
 ---
 
