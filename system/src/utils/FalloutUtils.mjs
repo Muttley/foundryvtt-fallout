@@ -81,7 +81,7 @@ export default class FalloutUtils {
 		const nameKey = `FALLOUT.SKILL.${skill.name}`;
 		let localizedName = game.i18n.localize(nameKey);
 
-		if (localizedName === nameKey) localizedName = this.name;
+		if (localizedName === nameKey) localizedName = skill.name;
 
 		return localizedName;
 	}

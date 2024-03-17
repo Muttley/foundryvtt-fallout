@@ -6,6 +6,7 @@
 
 ## Bugfixes
 - [#258] Typo on weapons mod tab
+- [#260] Custom skill name localization failing and only displaying "FALLOUTUTILS" instead of name
 
 ## Chores
 - [#259] Merged French translation updates from Crowdin
