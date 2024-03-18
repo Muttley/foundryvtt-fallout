@@ -129,10 +129,10 @@ FALLOUT.dialog.roll_ammo.button.chat: Envoyer dans la conversation
 FALLOUT.dialog.roll_ammo.button.create: Créer nouvelle
 FALLOUT.dialog.roll_ammo.button.update: Mettre à jour l'objet
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
-FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
-FALLOUT.dialog.roll_ammo.title: Roll Ammunition
-FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
+FALLOUT.dialog.roll_ammo.chat.details: Cela affichera le résultat du jet de munitions sous forme de message dans le chat.
+FALLOUT.dialog.roll_ammo.create.details: Ceci va créer un nouvel objet de munition avec la quantité lancée. Si l'objet à partir duquel vous roulez appartient à un acteur, le nouvel objet sera créé dans l'inventaire de cet acteur.
+FALLOUT.dialog.roll_ammo.title: Lancer de munitions
+FALLOUT.dialog.roll_ammo.update.details: Cela va mettre à jour la munition avec un nouveau lancer de quantité de munitions.
 FALLOUT.EffectCreate: Créer Effet
 FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
@@ -231,7 +231,7 @@ FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
 FALLOUT.TEMPLATES.AMMO: MUN
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
-FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Lancer de quantité
 FALLOUT.TEMPLATES.AmmoName: Nom des munitions
 FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
 FALLOUT.TEMPLATES.Apparel: Habillement
