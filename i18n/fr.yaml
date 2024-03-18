@@ -126,8 +126,8 @@ FALLOUT.CREATURE.melee: Corps-à-Corps
 FALLOUT.CREATURE.mind: Esprit
 FALLOUT.CREATURE.other: Autres
 FALLOUT.dialog.roll_ammo.button.chat: Envoyer dans la conversation
-FALLOUT.dialog.roll_ammo.button.create: Create New
-FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.button.create: Créer nouvelle
+FALLOUT.dialog.roll_ammo.button.update: Mettre à jour l'objet
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
 FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
 FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
