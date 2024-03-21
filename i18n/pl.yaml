@@ -125,11 +125,11 @@ FALLOUT.CREATURE.guns: Dystans
 FALLOUT.CREATURE.melee: Wręcz
 FALLOUT.CREATURE.mind: Umysł
 FALLOUT.CREATURE.other: Inne
-FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
-FALLOUT.dialog.roll_ammo.button.create: Create New
-FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.button.chat: Wyślij na czat
+FALLOUT.dialog.roll_ammo.button.create: Utwórz nowy
+FALLOUT.dialog.roll_ammo.button.update: Aktualizuj przedmiot
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
+FALLOUT.dialog.roll_ammo.chat.details: Spowoduje to wysłanie listy amunicji jako wiadomości na czacie.
 FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
 FALLOUT.dialog.roll_ammo.title: Roll Ammunition
 FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
