@@ -1,6 +1,7 @@
 # v11.6.0
 
 # Enhancements
+- [#244] Add support for Minion NPC type
 - [#254] Creature & NPC Poison DR can have locational values
 	* The system will attempt to migrate existing Poison DR values, but as it was a free text field and there is no way of known what format people may have used, it is advisable to check all NPC/Creature NPCs to ensure the Poison DR values are correct.
 
@@ -10,6 +11,7 @@
 
 ## Chores
 - [#259] Merged French translation updates from Crowdin
+- [#262] Merged French and Polish translation updates from Crowdin
 
 ---
 
