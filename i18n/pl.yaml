@@ -158,6 +158,7 @@ FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.NPC_TYPES.legendary: Legendarny
 FALLOUT.NPC_TYPES.major: Główny
 FALLOUT.NPC_TYPES.mighty: Potężny
+FALLOUT.NPC_TYPES.minion: Minion
 FALLOUT.NPC_TYPES.normal: Normalny
 FALLOUT.NPC_TYPES.notable: Znaczący
 FALLOUT.OTHER: Inne
@@ -242,6 +243,7 @@ FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
 FALLOUT.TEMPLATES.Butchery: Mięso
+FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Compl: Komp.
 FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
@@ -355,6 +357,8 @@ FALLOUT.TEMPLATES.Requirements: Wymagania
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS ODPORNOŚCI
 FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
+FALLOUT.TEMPLATES.Salvage: Salvage
+FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
 FALLOUT.TEMPLATES.SettlersAndJobs: Osadnicy i miejsca pracy
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
