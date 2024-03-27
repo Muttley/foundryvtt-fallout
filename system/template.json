@@ -93,6 +93,9 @@
 					"value": 0
 				}
 			},
+			"salvage": {
+				"tn": 0
+			},
 			"templates": [
 				"base",
 				"encumbrance",
