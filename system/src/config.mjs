@@ -109,6 +109,7 @@ FALLOUT.CREATURE_SKILLS = {
 };
 
 FALLOUT.CREATURE_CATEGORIES = {
+	minion: "FALLOUT.NPC_TYPES.minion",
 	normal: "FALLOUT.NPC_TYPES.normal",
 	mighty: "FALLOUT.NPC_TYPES.mighty",
 	legendary: "FALLOUT.NPC_TYPES.legendary",
@@ -195,6 +196,7 @@ FALLOUT.JOURNAL_UUIDS = {
 };
 
 FALLOUT.NPC_CATEGORIES = {
+	minion: "FALLOUT.NPC_TYPES.minion",
 	normal: "FALLOUT.NPC_TYPES.normal",
 	notable: "FALLOUT.NPC_TYPES.notable",
 	major: "FALLOUT.NPC_TYPES.major",
