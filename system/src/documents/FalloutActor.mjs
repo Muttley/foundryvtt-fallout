@@ -331,7 +331,6 @@ export default class FalloutActor extends Actor {
 			+ this.system.health.bonus;
 
 		if (this.isWellRested) {
-			this.system.health.value += 2;
 			this.system.health.max += 2;
 		}
 
