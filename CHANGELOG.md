@@ -10,6 +10,7 @@
 ## Bugfixes
 - [#258] Typo on weapons mod tab
 - [#260] Custom skill name localization failing and only displaying "FALLOUTUTILS" instead of name
+- [#266] Attacking with Fire Rate does not work properly with ammunition charges
 - [#270] Well Rested bonus causes issues with setting current health value
 
 ## Chores
