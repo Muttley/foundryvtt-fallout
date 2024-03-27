@@ -1,9 +1,26 @@
 <div class="resource-row">
 	<ol class="items-list">
 		<li class="consumable flexrow items-header">
-			<div class="flexrow flexlarge item-name upperC">
-				{{localize 'FALLOUT.UI.INVENTORY'}}
-			</div>
+			{{#if isCreature}}
+				<div class="flexrow flexlarge item-name upperC">
+					{{localize 'FALLOUT.TEMPLATES.Salvage'}}
+					&nbsp;&nbsp;
+					<input
+						class="num-short-2"
+						data-dtype="Number"
+						data-tooltip="{{localize 'FALLOUT.TEMPLATES.SalvageTooltip'}}"
+						min="0"
+						name="system.salvage.tn"
+						style="color: unset; height: auto;"
+						type="number"
+						value="{{system.salvage.tn}}"
+					>
+				</div>
+			{{else}}
+				<div class="flexrow flexlarge item-name upperC">
+					{{localize 'FALLOUT.UI.INVENTORY'}}
+				</div>
+			{{/if}}
 			<div class="item-controls">
 				<a
 					class="item-control item-create"

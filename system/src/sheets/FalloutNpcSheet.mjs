@@ -83,26 +83,42 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	}
 
 	async _updateObject(event, formData) {
-		if (this.actor.type !== "settlement") {
-			return super._updateObject(event, formData);
-		}
+		if (this.actor.type === "settlement") {
+			const originalSettlement = this.actor.system.settlement.uuid;
+			const newSettlement = formData["system.settlement.uuid"];
 
-		const originalSettlement = this.actor.system.settlement.uuid;
-		const newSettlement = formData["system.settlement.uuid"];
+			await super._updateObject(event, formData);
 
-		await super._updateObject(event, formData);
+			if (originalSettlement !== newSettlement) {
+				for (const uuid of [originalSettlement, newSettlement]) {
+					if (uuid === "") continue;
+					const settlement = await fromUuid(uuid);
 
-		if (originalSettlement !== newSettlement) {
-			for (const uuid of [originalSettlement, newSettlement]) {
-				if (uuid === "") continue;
-				const settlement = await fromUuid(uuid);
-
+					if (settlement) settlement.sheet.render(false);
+				}
+			}
+			else if (newSettlement !== "") {
+				const settlement = await fromUuid(newSettlement);
 				if (settlement) settlement.sheet.render(false);
 			}
 		}
-		else if (newSettlement !== "") {
-			const settlement = await fromUuid(newSettlement);
-			if (settlement) settlement.sheet.render(false);
+		else {
+			for (const resistanceType of ["energy", "physical", "poison", "radiation"]) {
+				const key = `_all_${resistanceType}`;
+				const val = formData[key] ?? null;
+
+				if (val !== null && val >= 0) {
+					// Update all locations
+					for (const bodyPart in this.actor.system.body_parts) {
+						const bodyPartKey = `system.body_parts.${bodyPart}.resistance.${resistanceType}`;
+						formData[bodyPartKey] = val;
+					}
+				}
+
+				delete formData[key];
+			}
+
+			return super._updateObject(event, formData);
 		}
 	}
 }

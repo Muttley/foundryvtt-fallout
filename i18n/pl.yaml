@@ -125,14 +125,14 @@ FALLOUT.CREATURE.guns: Dystans
 FALLOUT.CREATURE.melee: Wręcz
 FALLOUT.CREATURE.mind: Umysł
 FALLOUT.CREATURE.other: Inne
-FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
-FALLOUT.dialog.roll_ammo.button.create: Create New
-FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.button.chat: Wyślij na czat
+FALLOUT.dialog.roll_ammo.button.create: Utwórz nowy
+FALLOUT.dialog.roll_ammo.button.update: Aktualizuj przedmiot
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
-FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
-FALLOUT.dialog.roll_ammo.title: Roll Ammunition
-FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
+FALLOUT.dialog.roll_ammo.chat.details: Spowoduje to wysłanie listy amunicji jako wiadomości na czacie.
+FALLOUT.dialog.roll_ammo.create.details: Spowoduje to utworzenie nowy przedmiot Amunicji z wylosowaną ilością. Jeśli przedmiot, z którego losujesz, jest własnością aktora, nowy przedmiot zostanie utworzony w jego ekwipunku.
+FALLOUT.dialog.roll_ammo.title: Losuj Amunicję
+FALLOUT.dialog.roll_ammo.update.details: To zaktualizuje ten przedmiot amunicji o nowo wyrzuconą ilość amunicji.
 FALLOUT.EffectCreate: Stwórz Efekt
 FALLOUT.EffectDelete: Usuń Efekt
 FALLOUT.EffectEdit: Edytuj Efekt
@@ -158,6 +158,7 @@ FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.NPC_TYPES.legendary: Legendarny
 FALLOUT.NPC_TYPES.major: Główny
 FALLOUT.NPC_TYPES.mighty: Potężny
+FALLOUT.NPC_TYPES.minion: Minion
 FALLOUT.NPC_TYPES.normal: Normalny
 FALLOUT.NPC_TYPES.notable: Znaczący
 FALLOUT.OTHER: Inne
@@ -228,10 +229,11 @@ FALLOUT.TEMPLATES.Add_Trait: Dodaj Atut
 FALLOUT.TEMPLATES.AddictionNumber: Liczba uzależnień
 FALLOUT.TEMPLATES.Addictive: Uzależniające
 FALLOUT.TEMPLATES.Alcoholic: Alkoholik
+FALLOUT.TEMPLATES.AllLocations: All Locations
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
 FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
-FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Losowanie Ilości
 FALLOUT.TEMPLATES.AmmoName: Nazwa Amunicji
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
@@ -241,7 +243,8 @@ FALLOUT.TEMPLATES.Attack: Atak
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
-FALLOUT.TEMPLATES.Butchery: Butchery
+FALLOUT.TEMPLATES.Butchery: Mięso
+FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Compl: Komp.
 FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
@@ -284,7 +287,7 @@ FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
 FALLOUT.TEMPLATES.current: obecny
 FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
-FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
+FALLOUT.TEMPLATES.Damage_Effects: Efekty obrażeń
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
@@ -341,7 +344,7 @@ FALLOUT.TEMPLATES.POISON: TRUCIZNA
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: Zdrowie Pancerza Wspomaganego
 FALLOUT.TEMPLATES.Prepared: Przygotowany
 FALLOUT.TEMPLATES.Publication: Publikacja
-FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
+FALLOUT.TEMPLATES.Qualities_and_Effects: Ilość i Efekty
 FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
 FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
@@ -355,6 +358,8 @@ FALLOUT.TEMPLATES.Requirements: Wymagania
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS ODPORNOŚCI
 FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
+FALLOUT.TEMPLATES.Salvage: Salvage
+FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
 FALLOUT.TEMPLATES.SettlersAndJobs: Osadnicy i miejsca pracy
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
@@ -381,7 +386,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Użyj Inteligencji
 FALLOUT.TEMPLATES.Use_Luck: Użyj Szczęścia
 FALLOUT.TEMPLATES.Use_Perception: Użyj Percepcji
 FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
-FALLOUT.TEMPLATES.Wealth: Wealth
+FALLOUT.TEMPLATES.Wealth: Bogactwo
 FALLOUT.TEMPLATES.Weapon_Qualities: Cechy Broni
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
 FALLOUT.TEMPLATES.Weapon_Type: Typy Broni
@@ -413,13 +418,13 @@ FALLOUT.TOOLTIPS.WeaponQuality.limited: Ograniczona broń może być użyta tylk
 FALLOUT.TOOLTIPS.WeaponQuality.mine: Położona w jakimś miejscu i aktywowana staje się niebezpieczna i zadaje obrażenia dowolnej istocie, która znajdzie się w jej zasięgu bezpośrednim (oraz innym istotom, jeśli ma cechę Wybuchowa).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Luneta broni posiada moduł noktowizyjny pozwalający wyraźniej widzieć w ciemnościach. Kiedy wykonujesz pomniejszą akcję celowania, ignorujesz modyfikatory do trudności ataku, które wynikają z ciemności.
 FALLOUT.TOOLTIPS.WeaponQuality.parry: Kiedy przeciwnik wykonuje atak wręcz, a ty dzierżysz w dłoni taką broń, możesz wydać 1 PA, żeby uzyskać przeciwko temu atakowi +1 do Obrony.
-FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
-FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: Urządzenie wybuchowe umieszcza się w określonym miejscu i przygotowuje do detonacji, często z jakością Opóźnienie (X) lub Zdalną. Umieszczenie materiału wybuchowego wymaga testu PER + Materiały wybuchowe o trudności 1; wzrasta do 2, jeśli zostałeś zaatakowany od ostatniej tury. Porażka oznacza, że bomba nie została prawidłowo podłożona i nie wybuchnie (lub, jeśli wyrzucono komplikację, mogła zostać nieprawidłowo ustawiona i może wybuchnąć nieoczekiwanie). Sukces oznacza, że bomba została prawidłowo ustawiona.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: Ta broń ma szczególnie gwałtowne „kopnięcie” podczas strzelania, co może być zbyt duże dla słabszych użytkowników. Jeśli wartość SI użytkownika jest mniejsza niż X, wówczas wszystkie ataki tą bronią zwiększają trudność o 1. Możesz zignorować ten efekt, jeśli dzierżysz broń dwuręczną lub jeśli broń jest już dwuręczna, opierając ją o solidny przedmiot lub dwójnóg.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: Kiedy wykonujesz pomniejszą akcję celowania, możesz oznaczyć cel. Następny sojusznik, który go zaatakuje, może przerzucić w teście ataku 1k20.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: Kiedy używasz tej broni, podczas każdego starcia możesz zignorować pierwszą komplikację, którą wyrzucisz na kościach. Broń nie może być jednocześnie Zawodna i Niezawodna.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: Broń przeładowuje się szczególnie powoli. Po wystrzeleniu tej broni, musisz wykonać mniejszą akcję, aby przeładować broń, zanim zostanie ponownie wystrzelona.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Kiedy używasz takiej broni, a przeciwnik nie zdaje sobie sprawy z twojej obecności, nie zauważa twojego ataku, chyba że sam jest jego celem lub wykona udany test PER + Przetrwania o trudności 2.
-FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
+FALLOUT.TOOLTIPS.WeaponQuality.surge: Broń ta jest szczególnie szkodliwa dla maszyn takich jak roboty i pancerze wspomagane. Broń zyskuje efekt Okrutnych obrażeń przeciwko robotom, wrogom w pancerzu wspomaganym i innym celom mechanicznym lub elektronicznym (takim jak wieżyczki).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: Dla broni Rzucanej (B) optymalnym dystansem ataku jest bliski. Dla broni Rzucanej (Ś) optymalnym dystansem ataku jest średni. Taki atak wymaga testu ZW + Rzucania.
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią skutecznie posługiwać. Jeśli używasz tylko jednej ręki, trudność testów ataku wzrasta o +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
@@ -451,7 +456,7 @@ FALLOUT.UI.Qty: Ilość
 FALLOUT.UI.Quantity: Ilość
 FALLOUT.UI.Rarity: Rzadkość
 FALLOUT.UI.ROBOT_MODULES: Modyfikacje Robotów
-FALLOUT.UI.Special_Abilities: Special Abilities
+FALLOUT.UI.Special_Abilities: Zdolności Specjalne
 FALLOUT.UI.SPECIAL_ABILITY: Zdolności Specjalne
 FALLOUT.UI.stashed: Schowane
 FALLOUT.UI.Type: Typ
@@ -488,7 +493,7 @@ FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.night_vision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
 FALLOUT.WEAPONS.weaponQuality.placed: Placed
-FALLOUT.WEAPONS.weaponQuality.recoil_x: Recoil
+FALLOUT.WEAPONS.weaponQuality.recoil_x: Odrzut
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
 FALLOUT.WEAPONS.weaponQuality.slow_load: Wolne przeładowanie
@@ -499,7 +504,7 @@ FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
-FALLOUT.WEAPONS.weaponType.bows: Bows
+FALLOUT.WEAPONS.weaponType.bows: Łuki
 FALLOUT.WEAPONS.weaponType.creatureAttack: Atak Stwora
 FALLOUT.WEAPONS.weaponType.energyWeapons: Broń Energetyczna
 FALLOUT.WEAPONS.weaponType.explosives: Materiały wybuchowe

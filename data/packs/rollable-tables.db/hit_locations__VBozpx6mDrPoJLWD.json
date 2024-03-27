@@ -1,0 +1,19 @@
+{
+	"_id": "VBozpx6mDrPoJLWD",
+	"_key": "!tables!VBozpx6mDrPoJLWD",
+	"description": "",
+	"displayRoll": true,
+	"folder": null,
+	"formula": "1d20",
+	"img": "icons/svg/d20-grey.svg",
+	"name": "Hit Locations",
+	"replacement": true,
+	"results": [
+		"WiJbHypU7xXaZ2iB",
+		"FqHLxwXaurc9gx1N",
+		"unWEgdMAMaErlz6o",
+		"yys9TXxU4iwUXrhU",
+		"XuaiLuTuVyZGPblY",
+		"FtAj4aQg8WmwsnIs"
+	]
+}

@@ -18,9 +18,15 @@
 			</a>
 		{{/if}}
 
-		<a class="item" data-tab="gear">
-			{{localize "FALLOUT.TEMPLATES.Gear"}}
-		</a>
+		{{#if isCreature}}
+			<a class="item" data-tab="gear">
+				{{localize "FALLOUT.TEMPLATES.Salvage"}}
+			</a>
+		{{else}}
+			<a class="item" data-tab="gear">
+				{{localize "FALLOUT.TEMPLATES.Gear"}}
+			</a>
+		{{/if}}
 
 		<a class="item" data-tab="data">
 			{{localize "FALLOUT.TEMPLATES.Data"}}

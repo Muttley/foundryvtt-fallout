@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout: The Roleplaying Game",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "11.5.0",
+	"version": "11.6.0",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
@@ -116,6 +116,15 @@
 			"flags": {}
 		},
 		{
+			"name": "rollable-tables",
+			"label": "Rollable Tables",
+			"system": "fallout",
+			"path": "packs/rollable-tables",
+			"type": "RollTable",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "skills",
 			"label": "Skills",
 			"system": "fallout",
@@ -168,6 +177,7 @@
 			"color": "#293f5f",
 			"packs": [
 				"fallout_macros",
+				"rollable-tables",
 				"system_documentation"
 			],
 			"folders": [

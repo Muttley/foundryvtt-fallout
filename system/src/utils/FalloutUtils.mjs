@@ -10,6 +10,7 @@ export default class FalloutUtils {
 		let perLevel;
 
 		switch (category) {
+			case "minion":
 			case "normal":
 				perLevel = 7;
 
@@ -53,7 +54,11 @@ export default class FalloutUtils {
 				break;
 		}
 
-		return base + (perLevel * (level - levelAdjust));
+		let xpReward = base + (perLevel * (level - levelAdjust));
+
+		if (category === "minion") xpReward = Math.round(xpReward / 3);
+
+		return xpReward;
 	}
 
 	static checkForTimeJump(lastChange) {
@@ -81,7 +86,7 @@ export default class FalloutUtils {
 		const nameKey = `FALLOUT.SKILL.${skill.name}`;
 		let localizedName = game.i18n.localize(nameKey);
 
-		if (localizedName === nameKey) localizedName = this.name;
+		if (localizedName === nameKey) localizedName = skill.name;
 
 		return localizedName;
 	}

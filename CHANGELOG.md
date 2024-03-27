@@ -1,3 +1,24 @@
+# v11.6.0
+
+# Enhancements
+- [#244] Add support for Minion NPC type
+- [#254] Creature & NPC Poison DR can have locational values
+	* The system will attempt to migrate existing Poison DR values, but as it was a free text field and there is no way of knowing the format people have used, it is advisable to check all NPC/Creature NPCs to ensure the Poison DR values are correct.
+- [#255] Add shortcuts to fill whole DR column at once for Creatures / NPCs who have the same DR for all locations
+- [#273] Add Salvage TN field to Creature sheets and rename Gear tab to Salvage
+
+## Bugfixes
+- [#258] Typo on weapons mod tab
+- [#260] Custom skill name localization failing and only displaying "FALLOUTUTILS" instead of name
+- [#266] Attacking with Fire Rate does not work properly with ammunition charges
+- [#270] Well Rested bonus causes issues with setting current health value
+
+## Chores
+- [#259] Merged French translation updates from Crowdin
+- [#262] Merged French and Polish translation updates from Crowdin
+
+---
+
 # v11.5.0
 
 ## Enhancements
