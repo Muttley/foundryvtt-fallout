@@ -109,49 +109,37 @@
 		</div>
 	{{/each}}
 
-	{{!-- <div class="flexrow resource-row">
-		<span
-			class="align-mid"
-			style="display: flex;"
-		>
-			<label
-				for="system.resistance.poison.locations"
-				style="margin-right: 5px; width: 20px; font-size: 20px;"
-			>
-				<a
-					class="immune-toggle"
-					data-immunity-type="poison"
-				>
-					<i
-						class="fo-poison resistance-icon"
-						{{#if system.immunities.poison}}
-							style="color: darkgray";
-						{{/if}}
-						data-tooltip="{{localize 'FALLOUT.RESISTANCE.poison'}} ({{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}})"
-					></i>
-				</a>
-			</label>
-			{{#if system.immunities.poison}}
-				<input
-					type="text"
-					data-dtype="String"
-					class="flex3"
-					style="text-align: center; font-style: italic; font-size: 12px;"
-					value="{{localize 'FALLOUT.RESISTANCE.Immunity.poison'}}"
-					disabled
-				>
-			{{else}}
-				<input
-					type="number"
-					data-dtype="Number"
-					class="flex3"
-					name="system.resistance.poison.value"
-					value="{{system.resistance.poison.value}}"
-					placeholder="0"
-				>
-			{{/if}}
-		</span>
-	</div> --}}
+	{{!-- Controls to set all locations to the same value --}}
+	<div style="display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
+		<div></div>
+		<div><em>{{localize 'FALLOUT.TEMPLATES.AllLocations'}}</em></div>
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath="_all_physical"
+			value=null
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath="_all_energy"
+			value=null
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath="_all_radiation"
+			value=null
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath="_all_poison"
+			value=null
+		}}
+		<div></div>
+		<div></div>
+	</div>
 </div>
 
 {{#*inline "bodyPartControl"}}
