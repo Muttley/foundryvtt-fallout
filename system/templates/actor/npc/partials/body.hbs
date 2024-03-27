@@ -1,5 +1,5 @@
 <div class="box no-padding bgOdd">
-	<div style="font-size: 16px; display: grid; grid-template-columns: 2fr 40% repeat(5, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
+	<div style="font-size: 16px; display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
 		<div class="flex align-mid">#</div>
 		<div>
 			<select name="system.bodyType" style="font-size: 0.75rem;">
@@ -29,6 +29,20 @@
 			</a>
 		</div>
 		<div class="flex align-mid align-center">
+			<a
+				class="immune-toggle"
+				data-immunity-type="poison"
+			>
+				<i
+					class="fo-poison resistance-icon"
+					data-tooltip="{{localize 'FALLOUT.RESISTANCE.poison'}} ({{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}})"
+					{{#if system.immunities.poison}}
+						style="color: darkgray";
+					{{/if}}
+				></i>
+			</a>
+		</div>
+		<div class="flex align-mid align-center">
 			<div
 				style="background-image: url(systems/fallout/assets/ui/drop.svg); width: 1rem; background-repeat: no-repeat"
 				data-tooltip="{{localize 'FALLOUT.TEMPLATES.Injuries'}}"
@@ -47,7 +61,7 @@
 	</div>
 
 	{{#each system.body_parts as |part key|}}
-		<div style="display: grid; grid-template-columns: 2fr 40% repeat(5, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
+		<div style="display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
 			<div>
 				{{fromConfig "BODY_VALUES" key}}
 			</div>
@@ -74,6 +88,13 @@
 				immune=../system.immunities.radiation
 			}}
 			{{> bodyPartControl
+				color="#eee787"
+				backgroundColor="#325885"
+				systemPath=(concat "system.body_parts." key ".resistance.poison")
+				value=part.resistance.poison
+				immune=../system.immunities.poison
+			}}
+			{{> bodyPartControl
 				color="white"
 				backgroundColor="#ff0000"
 				systemPath=(concat "system.body_parts." key ".injuryOpenCount")
@@ -88,7 +109,7 @@
 		</div>
 	{{/each}}
 
-	<div class="flexrow resource-row">
+	{{!-- <div class="flexrow resource-row">
 		<span
 			class="align-mid"
 			style="display: flex;"
@@ -130,7 +151,7 @@
 				>
 			{{/if}}
 		</span>
-	</div>
+	</div> --}}
 </div>
 
 {{#*inline "bodyPartControl"}}

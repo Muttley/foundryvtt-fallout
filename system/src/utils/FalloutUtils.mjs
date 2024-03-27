@@ -10,6 +10,7 @@ export default class FalloutUtils {
 		let perLevel;
 
 		switch (category) {
+			case "minion":
 			case "normal":
 				perLevel = 7;
 
@@ -53,7 +54,11 @@ export default class FalloutUtils {
 				break;
 		}
 
-		return base + (perLevel * (level - levelAdjust));
+		let xpReward = base + (perLevel * (level - levelAdjust));
+
+		if (category === "minion") xpReward = Math.round(xpReward / 3);
+
+		return xpReward;
 	}
 
 	static checkForTimeJump(lastChange) {
