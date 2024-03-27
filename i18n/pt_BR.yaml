@@ -229,6 +229,7 @@ FALLOUT.TEMPLATES.Add_Trait: Add Trait
 FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Viciante
 FALLOUT.TEMPLATES.Alcoholic: Alcoólico
+FALLOUT.TEMPLATES.AllLocations: All Locations
 FALLOUT.TEMPLATES.AMMO: AMMO
 FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
