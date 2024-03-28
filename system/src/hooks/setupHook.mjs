@@ -1,4 +1,7 @@
-import { generateEnrichedTooltips } from "../config.mjs";
+import {
+	discoverAvailableAmmoTypes,
+	generateEnrichedTooltips,
+} from "../config.mjs";
 
 export const setupHook = {
 	attach: () => {
@@ -20,6 +23,7 @@ export const setupHook = {
 			}
 
 			generateEnrichedTooltips();
+			discoverAvailableAmmoTypes();
 		});
 	},
 };
