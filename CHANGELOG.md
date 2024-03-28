@@ -1,3 +1,11 @@
+# v11.6.1
+
+# Enhancements
+- [#280] Cache available Ammo items in compendiums at startup to improve performance on slow systems with large amounts of compendium items
+	* This will mean that if you add a new ammo item type it won't be available on Weapon item sheets until the system is reloaded.
+
+---
+
 # v11.6.0
 
 # Enhancements

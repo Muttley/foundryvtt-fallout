@@ -341,6 +341,20 @@ FALLOUT.WEAPON_TYPES = {
 	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
 
+export async function discoverAvailableAmmoTypes() {
+	const ammo = await fallout.compendiums.ammo();
+
+	CONFIG.FALLOUT.AMMO_BY_UUID = {};
+	let ammoTypes = [];
+	for (const ammoType of ammo) {
+		ammoTypes.push(ammoType.name);
+		CONFIG.FALLOUT.AMMO_BY_UUID[ammoType.uuid] = ammoType.name;
+	}
+	ammoTypes = [...new Set(ammoTypes)]; // de-dupe
+
+	CONFIG.FALLOUT.AMMO_TYPES = ammoTypes.sort((a, b) => a.localeCompare(b));
+}
+
 export async function generateEnrichedTooltips() {
 	CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS = {};
 	CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK = {};
