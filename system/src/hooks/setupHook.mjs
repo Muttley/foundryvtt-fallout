@@ -6,6 +6,9 @@ import {
 export const setupHook = {
 	attach: () => {
 		Hooks.once("setup", () => {
+
+			fallout.moduleArt.registerModuleArt();
+
 			// Go through the CONFIG object and attempt to localize any Strings
 			// up front
 			for (const obj in CONFIG.FALLOUT) {

@@ -133,6 +133,24 @@ export default class FalloutItem extends Item {
 		return qualities.join(", ");
 	}
 
+	/** @inheritdoc */
+	_initializeSource(source, options={}) {
+		source = super._initializeSource(source, options);
+
+		if (!source._id || !options.pack || fallout.moduleArt.suppressArt) {
+			return source;
+		}
+
+		const uuid = `Compendium.${options.pack}.${source._id}`;
+
+		const art = fallout.moduleArt.map.get(uuid);
+
+		if (art?.img) {
+			if (art.img) source.img = art.img;
+		}
+		return source;
+	}
+
 	_prepareAmmoData() {
 		let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
 		shotsAvailable += this.system.shots.current;
