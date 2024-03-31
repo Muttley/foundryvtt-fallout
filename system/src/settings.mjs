@@ -1,3 +1,5 @@
+import { FalloutModuleArtConfig } from "./apps/FalloutModuleArtConfig.mjs";
+
 export default function registerSettings() {
 	// -------------------
 	//  INTERNAL SETTINGS
@@ -25,6 +27,32 @@ export default function registerSettings() {
 		config: false,
 		default: 6,
 		type: Number,
+	});
+
+	// -----------------
+	//  DYNAMIC ARTWORK
+	// -----------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "moduleArtConfiguration", {
+		name: "Module-provided Art",
+		label: "Configure Art",
+		hint: "Configure which module-provided art should be used",
+		icon: "fa-solid fa-palette",
+		type: FalloutModuleArtConfig,
+		restricted: true,
+	});
+
+
+	game.settings.register(SYSTEM_ID, "moduleArtConfiguration", {
+		name: "Module Art Configuration",
+		scope: "world",
+		config: false,
+		type: Object,
+		default: {
+			fallout: {
+				items: true,
+			},
+		},
 	});
 
 	// -----------------

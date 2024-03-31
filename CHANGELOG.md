@@ -1,3 +1,10 @@
+# v11.7.0
+
+# Enhancements
+- [#269] Add ability to map your own images onto core compendium items
+
+---
+
 # v11.6.1
 
 # Enhancements
