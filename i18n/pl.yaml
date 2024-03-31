@@ -31,6 +31,8 @@ FALLOUT.APP.PartySleep.hour: 1 godzina
 FALLOUT.APP.PartySleep.hours: "{length} godzin"
 FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
 FALLOUT.APP.PartySleep.title: Drużyna Śpi
+FALLOUT.APP.ModuleArtConfig.items: Items
+FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
@@ -456,6 +458,7 @@ FALLOUT.UI.Qty: Ilość
 FALLOUT.UI.Quantity: Ilość
 FALLOUT.UI.Rarity: Rzadkość
 FALLOUT.UI.ROBOT_MODULES: Modyfikacje Robotów
+FALLOUT.UI.SaveChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Zdolności Specjalne
 FALLOUT.UI.SPECIAL_ABILITY: Zdolności Specjalne
 FALLOUT.UI.stashed: Schowane
