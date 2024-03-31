@@ -3,6 +3,12 @@
 # Enhancements
 - [#269] Add ability to map your own images onto core compendium items
 
+An example custom module which is pre-configured with various empty compendiums and set up for item image mapping can be downloaded from here:
+
+https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.0.0
+
+This can be used to help bootstrap your own custom data for Fallout.
+
 ---
 
 # v11.6.1
