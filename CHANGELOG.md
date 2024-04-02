@@ -3,6 +3,12 @@
 ## Enhancements
 - [#290] Default new character SPECIAL to 5 as those are the defaults for character creation
 
+## Bugs
+- [#291] Remove bogus "Boxing Times (Copy)" from compendiums
+
+## Chores
+- [#289] Merge Polish translation updates from Crowdin
+
 ---
 
 # v11.7.0
