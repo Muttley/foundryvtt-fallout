@@ -31,8 +31,8 @@ FALLOUT.APP.PartySleep.hour: 1 godzina
 FALLOUT.APP.PartySleep.hours: "{length} godzin"
 FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
 FALLOUT.APP.PartySleep.title: Drużyna Śpi
-FALLOUT.APP.ModuleArtConfig.items: Items
-FALLOUT.APP.ModuleArtConfig.title: Configure Art
+FALLOUT.APP.ModuleArtConfig.items: Przedmioty
+FALLOUT.APP.ModuleArtConfig.title: Ustaw obrazy
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
@@ -160,7 +160,7 @@ FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.NPC_TYPES.legendary: Legendarny
 FALLOUT.NPC_TYPES.major: Główny
 FALLOUT.NPC_TYPES.mighty: Potężny
-FALLOUT.NPC_TYPES.minion: Minion
+FALLOUT.NPC_TYPES.minion: Sługus
 FALLOUT.NPC_TYPES.normal: Normalny
 FALLOUT.NPC_TYPES.notable: Znaczący
 FALLOUT.OTHER: Inne
@@ -231,7 +231,7 @@ FALLOUT.TEMPLATES.Add_Trait: Dodaj Atut
 FALLOUT.TEMPLATES.AddictionNumber: Liczba uzależnień
 FALLOUT.TEMPLATES.Addictive: Uzależniające
 FALLOUT.TEMPLATES.Alcoholic: Alkoholik
-FALLOUT.TEMPLATES.AllLocations: All Locations
+FALLOUT.TEMPLATES.AllLocations: Wszystkie lokacje
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
 FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
@@ -246,7 +246,7 @@ FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
 FALLOUT.TEMPLATES.Butchery: Mięso
-FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
+FALLOUT.TEMPLATES.ButcheryTooltip: PT testu rzeźnictwa
 FALLOUT.TEMPLATES.Compl: Komp.
 FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
@@ -360,8 +360,8 @@ FALLOUT.TEMPLATES.Requirements: Wymagania
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS ODPORNOŚCI
 FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
-FALLOUT.TEMPLATES.Salvage: Salvage
-FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
+FALLOUT.TEMPLATES.Salvage: Odzyskiwanie
+FALLOUT.TEMPLATES.SalvageTooltip: PT testu odzyskiwania
 FALLOUT.TEMPLATES.SettlersAndJobs: Osadnicy i miejsca pracy
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
@@ -458,7 +458,7 @@ FALLOUT.UI.Qty: Ilość
 FALLOUT.UI.Quantity: Ilość
 FALLOUT.UI.Rarity: Rzadkość
 FALLOUT.UI.ROBOT_MODULES: Modyfikacje Robotów
-FALLOUT.UI.SaveChanges: Save Changes
+FALLOUT.UI.SaveChanges: Zapisz zmiany
 FALLOUT.UI.Special_Abilities: Zdolności Specjalne
 FALLOUT.UI.SPECIAL_ABILITY: Zdolności Specjalne
 FALLOUT.UI.stashed: Schowane
