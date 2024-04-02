@@ -313,7 +313,7 @@ export class Roller2D20 {
 			weapon: weapon,
 		});
 
-        return dicesRolled;
+		return dicesRolled;
 	}
 
 	static async rerollD6({
