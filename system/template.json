@@ -359,25 +359,25 @@
 			"stats": {
 				"attributes": {
 					"agi": {
-						"value": 1
+						"value": 5
 					},
 					"cha": {
-						"value": 1
+						"value": 5
 					},
 					"end": {
-						"value": 1
+						"value": 5
 					},
 					"int": {
-						"value": 1
+						"value": 5
 					},
 					"luc": {
-						"value": 1
+						"value": 5
 					},
 					"per": {
-						"value": 1
+						"value": 5
 					},
 					"str": {
-						"value": 1
+						"value": 5
 					}
 				}
 			},
