@@ -42,6 +42,7 @@ export class DialogD6 extends Dialog {
 					actor: this.actor,
 					otherdmgdice: parseInt(otherdmgdice),
 					firerateamo: parseInt(firerateamo),
+
 				});
 			}
 			else {

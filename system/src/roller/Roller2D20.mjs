@@ -222,10 +222,16 @@ export class Roller2D20 {
 		falloutRoll.apbuy = apbuy;
 		const part1 = game.i18n.localize("FALLOUT.Buy_from_Overseer");
 		const part2 = game.i18n.localize("FALLOUT.Spend_AP");
+		const part3 = game.i18n.localize("FALLOUT.Spend_Overseer_AP");
 		let fla;
 		if (dicesRolled.length !== 1) {
 			// eslint-disable-next-line no-unused-vars
-			 fla =`${part2}: ${apspend}<br>${part1}: ${apbuy}`;
+			if (actor.type === ("charakter" || "robot")) {
+				fla =`${part2}: ${apspend}<br>${part1}: ${apbuy}`;
+			}
+			else {
+				fla =`${part3}: ${apspend}`;
+			}
 		}
 		else {
 			fla ="";
@@ -286,7 +292,7 @@ export class Roller2D20 {
 
 		await roll.evaluate({ async: true });
 
-		await Roller2D20.parseD6Roll({
+		return Roller2D20.parseD6Roll({
 			rollname: rollname,
 			roll: roll,
 			weapon: weapon,
@@ -351,6 +357,7 @@ export class Roller2D20 {
 			diceNum: diceNum,
 			firerateamo: firerateamo,
 		});
+		return dicesRolled;
 	}
 
 	static async rerollD6({
@@ -371,7 +378,7 @@ export class Roller2D20 {
 
 		await _roll.evaluate({ async: true });
 
-		return await Roller2D20.parseD6Roll({
+		return  Roller2D20.parseD6Roll({
 			actor: actor,
 			dicesRolled: dicesRolled,
 			rerollIndexes: rerollIndexes,
@@ -390,7 +397,7 @@ export class Roller2D20 {
 		let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
 		let oldDiceRolled = falloutRoll.dicesRolled;
 
-		return await Roller2D20.parseD6Roll({
+		return  Roller2D20.parseD6Roll({
 			rollname: newRollName,
 			roll: _roll,
 			dicesRolled: dicesRolled,
