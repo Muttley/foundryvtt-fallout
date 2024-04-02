@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">An off-white mushroom which resembles a brain, and which tends to be found in clusters growing in dark, dank corners. Slightly irradiated due simply to growing in the wastelands, but otherwise harmless, despite its slightly alarming name and appearance.</span></p>\n<p><span class=\"fontstyle0\">Brain fungus is an ingredient in Mentats.</span> </p>",

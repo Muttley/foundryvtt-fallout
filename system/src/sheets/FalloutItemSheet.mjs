@@ -12,8 +12,8 @@ export default class FalloutItemSheet extends ItemSheet {
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
-			width: 520,
-			height: 520,
+			width: 590,
+			height: "auto",
 			tabs: [{
 				navSelector: ".sheet-tabs",
 				contentSelector: ".sheet-body",
@@ -52,6 +52,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			FALLOUT: CONFIG.FALLOUT,
 			flags: item.flags,
 			isEmbedded: item.isEmbedded,
+			isGM: game.user.isGM,
 			source: source.system,
 			system: item.system,
 			type: item.type,
@@ -79,6 +80,14 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		if (item.type === "weapon") {
+			for (const [uuid, name] of Object.entries(CONFIG.FALLOUT.AMMO_BY_UUID)) {
+				if (name === this.item.system.ammo) {
+					context.ammoUuid = uuid;
+					break;
+				}
+			}
+			context.ammoTypes = CONFIG.FALLOUT.AMMO_TYPES;
+
 			context.damageTypes = [];
 			for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
 				context.damageTypes.push({
@@ -186,6 +195,8 @@ export default class FalloutItemSheet extends ItemSheet {
 		// Everything below here is only needed if the sheet is editable
 		if (!this.isEditable) return;
 
+		html.find(".ammo-quantity-roll").click(this._rollAmmoQuantity.bind(this));
+
 		// Effects.
 		html.find(".effect-control").click(ev => {
 			if (this.item.isOwned) {
@@ -208,5 +219,84 @@ export default class FalloutItemSheet extends ItemSheet {
 				}
 			});
 		});
+	}
+
+	async _rollAmmoQuantity(event) {
+		if (this.item.type !== "ammo") return;
+
+		event.preventDefault();
+
+		if (this.item.system.quantityRoll === "") {
+			return ui.notifications.warn(`No roll formula set on Ammo item ${this.item.name}`);
+		}
+
+
+		const content = await renderTemplate(
+			"systems/fallout/templates/dialogs/roll-ammo.hbs"
+		);
+
+		const dialogData = {
+			title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
+			content,
+			buttons: {
+				create: {
+					label: game.i18n.localize("FALLOUT.dialog.roll_ammo.button.create"),
+					callback: () => "create",
+				},
+				update: {
+					label: game.i18n.localize("FALLOUT.dialog.roll_ammo.button.update"),
+					callback: () => "update",
+				},
+				chat: {
+					label: game.i18n.localize("FALLOUT.dialog.roll_ammo.button.chat"),
+					callback: () => "chat",
+				},
+			},
+			close: () => null,
+			default: "update",
+		};
+
+		const mode = await Dialog.wait(dialogData);
+
+		if (mode) {
+			const formula = this.item.system.quantityRoll;
+
+			const roll = new Roll(formula);
+			const quantityRoll = await roll.evaluate({ async: true });
+
+			try {
+				await game.dice3d.showForRoll(quantityRoll);
+			}
+			catch(err) {}
+
+			const quantity = parseInt(roll.total);
+
+			switch (mode) {
+				case "update":
+					return this.item.update({"system.quantity": quantity});
+				case "create":
+					const data = this.item.toObject();
+					data.system.quantity = quantity;
+					if (this.item.actor) {
+						return this.item.actor.createEmbeddedDocuments("Item", [data]);
+					}
+					else {
+						return Item.create(data);
+					}
+				case "chat":
+					return fallout.chat.renderGeneralMessage(
+						this,
+						{
+							title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
+							body: game.i18n.format("FALLOUT.dialog.roll_ammo.chat.body",
+								{
+									ammoName: this.item.name,
+									quantity,
+								}
+							),
+						}
+					);
+			}
+		}
 	}
 }

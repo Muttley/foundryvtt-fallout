@@ -1,0 +1,37 @@
+<div class="resource-row">
+	<ol class="items-list">
+		<li class="consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.Butchery'}}
+				&nbsp;&nbsp;
+				<input
+					class="num-short-2"
+					data-dtype="Number"
+					data-tooltip="{{localize 'FALLOUT.TEMPLATES.ButcheryTooltip'}}"
+					min="0"
+					name="system.butchery.tn"
+					style="color: unset; height: auto;"
+					type="number"
+					value="{{system.butchery.tn}}"
+				>
+			</div>
+			<div class="item-controls">
+				<a
+					class="item-control item-create"
+					data-type="consumable"
+					title="Create Consumable"
+				>
+					<i class="fas fa-plus"></i>
+					{{localize 'FALLOUT.UI.Add'}}
+				</a>
+			</div>
+		</li>
+		{{#each butcheryItems}}
+			{{>
+				actor/_shared-partials/simple-expandable-item
+				item=this
+				basicControlsOnly=true
+			}}
+		{{/each}}
+	</ol>
+</div>

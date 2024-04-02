@@ -286,7 +286,7 @@ export class Roller2D20 {
 
 		await roll.evaluate({ async: true });
 
-		await Roller2D20.parseD6Roll({
+		return Roller2D20.parseD6Roll({
 			rollname: rollname,
 			roll: roll,
 			weapon: weapon,
@@ -351,6 +351,8 @@ export class Roller2D20 {
 			diceNum: diceNum,
 			firerateamo: firerateamo,
 		});
+
+        return dicesRolled;
 	}
 
 	static async rerollD6({
@@ -371,7 +373,7 @@ export class Roller2D20 {
 
 		await _roll.evaluate({ async: true });
 
-		return await Roller2D20.parseD6Roll({
+		return Roller2D20.parseD6Roll({
 			actor: actor,
 			dicesRolled: dicesRolled,
 			rerollIndexes: rerollIndexes,
@@ -390,7 +392,7 @@ export class Roller2D20 {
 		let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
 		let oldDiceRolled = falloutRoll.dicesRolled;
 
-		return await Roller2D20.parseD6Roll({
+		return Roller2D20.parseD6Roll({
 			rollname: newRollName,
 			roll: _roll,
 			dicesRolled: dicesRolled,

@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 20,
 		"description": "<p><span class=\"fontstyle0\">A packet of freeze-dried powdered mashed potato still sealed inside its cardboard box. Just add water!</span></p>\n<p><span class=\"fontstyle0\">Sometimes, preserved boxes of InstaMash can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1.</span> </p>",

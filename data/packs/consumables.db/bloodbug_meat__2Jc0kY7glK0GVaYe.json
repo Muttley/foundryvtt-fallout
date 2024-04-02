@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 8,
 		"description": "<p><span class=\"fontstyle0\">A chunk of bloody meat from a Bloodbug, a large and aggressive mutant mosquito that normally preys on livestock and other large animals.</span></p>\n<p><span class=\"fontstyle0\">Bloodbug meat can be cooked to produce Bloodbug steak.</span> </p>",

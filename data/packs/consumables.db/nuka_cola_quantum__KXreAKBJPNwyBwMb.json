@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 50,
 		"description": "<p><span class=\"fontstyle0\">Introduced the same day the bombs fell, and thus difficult to find, Nuka-Cola Quantum was the newest flavor of Nuka-Cola to be released to the public, with twice the calories, twice the carbohydrates, twice, the caffeine, and twice the taste. The drink&rsquo;s distinctive blue glow comes from the (safe for human consumption) isotope additive developed by beverageers working with the United States military. Most bottles found were from special pre-release batches sent to chosen retailers or found in trucks in the process of shipping the product. The drink&rsquo;s effects are extremely potent.</span></p>\n<p><span class=\"fontstyle0\">You receive 1 cap upon opening and drinking a bottle of Nuka-Cola Quantum.</span> </p>",

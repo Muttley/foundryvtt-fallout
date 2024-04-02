@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 22,
 		"description": "<p><span class=\"fontstyle0\">The meat from a dead mirelurk Queen. This meat can make for a great feast, as it is nutrient rich and incredibly filling, leaving a sense of health and wellbeing in any who eat it, even raw. When cooked, these effects are even more pronounced.</span></p>\n<p><span class=\"fontstyle0\">Queen mirelurk meat can be cooked to produce Mirelurk Queen Steak.</span></p>",

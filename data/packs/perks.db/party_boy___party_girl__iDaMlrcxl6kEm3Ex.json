@@ -1,0 +1,22 @@
+{
+	"_id": "iDaMlrcxl6kEm3Ex",
+	"_key": "!items!iDaMlrcxl6kEm3Ex",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Party Boy / Party Girl",
+	"system": {
+		"description": "<p>You cannot become addicted to alcoholic drinks, and whenever you drink an alcoholic drink, you heal +2 HP.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "END 6, CHA 7",
+		"source": ""
+	},
+	"type": "perk"
+}

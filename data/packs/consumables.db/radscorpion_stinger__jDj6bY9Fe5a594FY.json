@@ -1,0 +1,34 @@
+{
+	"_id": "jDj6bY9Fe5a594FY",
+	"_key": "!items!jDj6bY9Fe5a594FY",
+	"effects": [
+	],
+	"folder": "OFqB0R4AxJwkje7w",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radscorpion Stinger",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"butchery": true,
+		"consumableGroup": "",
+		"consumableType": "other",
+		"cost": 30,
+		"description": "",
+		"duration": "instant",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 0,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.5
+	},
+	"type": "consumable"
+}

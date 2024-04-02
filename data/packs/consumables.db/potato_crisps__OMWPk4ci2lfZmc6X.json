@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">A can of salted or flavored potato chips, sealed in an inert environment for freshness. A common snack pre-War, you can still find the odd pack of these in most places where people lived or worked.</span> </p>",

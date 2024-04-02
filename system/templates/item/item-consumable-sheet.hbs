@@ -1,5 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
-	{{> item/parts/item-header}}
+	{{> item/_shared-partials/header}}
 
 	<nav class="sheet-tabs tabs" data-group="primary">
 		<a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
@@ -146,6 +146,19 @@
 					{{/ifCond}}
 				{{/ifCond}}
 			{{/ifCond}}
+
+			<div class="flexrow resource-row">
+				<label for="system.butchery" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Butchery"}}
+				</label>
+				<input
+					name="system.butchery"
+					type="checkbox"
+					{{#ifCond system.butchery '==' true}}
+						checked
+					{{/ifCond}}
+				>
+			</div>
 
 			<h3 class="resource-label">
 				{{localize "FALLOUT.TEMPLATES.Effect"}}

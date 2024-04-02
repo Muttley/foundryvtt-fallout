@@ -1,7 +1,3 @@
-/**
- * Extend the basic Item with some very simple modifications.
- * @extends {Item}
- */
 export default class FalloutItem extends Item {
 
 	async _preCreate(data, options, user) {
@@ -137,6 +133,24 @@ export default class FalloutItem extends Item {
 		return qualities.join(", ");
 	}
 
+	/** @inheritdoc */
+	_initializeSource(source, options={}) {
+		source = super._initializeSource(source, options);
+
+		if (!source._id || !options.pack || fallout.moduleArt.suppressArt) {
+			return source;
+		}
+
+		const uuid = `Compendium.${options.pack}.${source._id}`;
+
+		const art = fallout.moduleArt.map.get(uuid);
+
+		if (art?.img) {
+			if (art.img) source.img = art.img;
+		}
+		return source;
+	}
+
 	_prepareAmmoData() {
 		let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
 		shotsAvailable += this.system.shots.current;
@@ -145,24 +159,14 @@ export default class FalloutItem extends Item {
 	}
 
 	_prepareConsumableData() {
-		this.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
+		this.system.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
 			this.system.consumableType
 		];
 	}
 
 	_prepareSkillData() {
-		// Get the localized name of a skill, if there is no
-		// localization then it is likely a custom skill, in which
-		// case we will just use it's original name
-		//
-		const nameKey = `FALLOUT.SKILL.${this.name}`;
-		this.localizedName = game.i18n.localize(nameKey);
-
-		if (this.localizedName === nameKey) this.localizedName = this.name;
-
-		this.localizedDefaultAttribute = game.i18n.localize(
-			`FALLOUT.AbilityAbbr.${this.system.defaultAttribute}`
-		);
+		this.localizedName = fallout.utils.getLocalizedSkillName(this);
+		this.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(this);
 	}
 
 	async _prepareWeaponData() {

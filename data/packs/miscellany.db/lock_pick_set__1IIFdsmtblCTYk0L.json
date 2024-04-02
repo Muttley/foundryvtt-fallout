@@ -1,0 +1,21 @@
+{
+	"_id": "1IIFdsmtblCTYk0L",
+	"_key": "!items!1IIFdsmtblCTYk0L",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Lock Pick Set",
+	"system": {
+		"cost": 150,
+		"description": "<p>A rolled-up leather case containing an assortment of picks and tension wrenches for opening mechanical locks, as an alternative to the cruder &ldquo;screwdriver and bobby pins&rdquo; method. Sturdier than the improvised method, but a set can become useless if too many of the picks or wrenches break.</p>",
+		"effect": "<p>Reduces difficulty of Lockpick tests by 1 (minimum 0), After 3 complications, the set is broken</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "miscellany"
+}

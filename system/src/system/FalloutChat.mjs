@@ -39,9 +39,23 @@ export default class FalloutChat {
 		);
 	}
 
+	static async renderConditionChangeMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/condition-change.hbs",
+			mode
+		);
+	}
+
 	static async renderConsumptionMessage(actor, data, mode) {
 		this._renderChatMessage(actor, data,
 			"systems/fallout/templates/chat/consumption.hbs",
+			mode
+		);
+	}
+
+	static async renderPartySleepMessage(data, mode) {
+		this._renderChatMessage(null, data,
+			"systems/fallout/templates/chat/party-sleep.hbs",
 			mode
 		);
 	}
@@ -85,7 +99,7 @@ export default class FalloutChat {
 						dicesRolled: falloutRoll.dicesRolled,
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,
-						actor: message.flags.actor,
+            actor: message.flags.actor,
 						weapon: message.flags.weapon,
 					});
 				}

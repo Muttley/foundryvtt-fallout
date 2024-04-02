@@ -1,0 +1,24 @@
+{
+	"_id": "jvM19NhHpkDowa8W",
+	"_key": "!items!jvM19NhHpkDowa8W",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+	"name": "Sensor Array",
+	"system": {
+		"cost": 50,
+		"description": "<p>Additional sensor modules and sensory processing systems accompany the robot&rsquo;s normal optical and auditory sensors, allowing it to perceive the world in more detail and in more ways than normal eyes and ears can.</p>",
+		"effect": "<p>Re-roll 1d20 on all PER tests, May attempt PER tests to detect things which cannot normally be detected by the naked eye, such as radiation</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"perks": "Robotics Expert 1",
+		"quantity": 1,
+		"rarity": 3,
+		"source": "",
+		"stashed": false,
+		"weight": -15
+	},
+	"type": "robot_mod"
+}

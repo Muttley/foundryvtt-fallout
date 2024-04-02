@@ -5,10 +5,10 @@
 		"build": "gulp build",
 		"clean": "gulp clean",
 		"css": "gulp compileCss",
+		"docs": "gulp compileDocs",
 		"export": "./utils/smelter.mjs unpack -i leveldb -s system/packs -d ./data/packs",
 		"lang": "gulp compileLang",
 		"lint": "gulp lintJs",
-		"notes": "gulp compileNotes",
 		"packs": "gulp compilePacks"
 	},
 	"devDependencies": {
@@ -27,9 +27,9 @@
 		"markdown": "^0.5.0",
 		"merge-stream": "^2.0.0",
 		"nedb-promises": "^6.2.3",
-		"rollup": "^4.12.0",
+		"rollup": "^4.12.1",
 		"sass": "^1.71.1",
-		"yaml": "^2.3.4",
+		"yaml": "^2.4.1",
 		"yargs": "^17.7.2"
 	}
 }

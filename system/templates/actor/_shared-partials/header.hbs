@@ -126,11 +126,13 @@
 							<input
 								class="underline"
 								data-dtype="Number"
-								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 								name="system.level.nextLevelXP"
 								type="text"
 								value="{{system.level.nextLevelXP}}"
-								disabled
+								{{#unless disableAutoXpTarget}}
+									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+									disabled
+								{{/unless}}
 							/>
 						</div>
 					</div>
@@ -146,11 +148,13 @@
 							<input
 								class="underline"
 								data-dtype="Number"
-								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 								name="system.level.rewardXP"
 								type="text"
 								value="{{system.level.rewardXP}}"
-								disabled
+								{{#unless disableAutoXpReward}}
+									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+									disabled
+								{{/unless}}
 							/>
 						</div>
 					</div>

@@ -10,6 +10,7 @@
 		"addiction": 2,
 		"addictive": true,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableGroup": "Psycho",
 		"consumableType": "chem",
 		"cost": 50,

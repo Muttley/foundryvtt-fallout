@@ -1,0 +1,44 @@
+<div class="fallout-chat-message">
+	<div class="content">
+		<h2>{{title}}</h2>
+		<p>{{body}}</p>
+		<div style="font-size: 0.75rem;">
+			{{#if fatigueChanged}}
+				<div>
+					{{#ifCond hungerFatigueChange ">" 0}}
+						<p><em>
+							{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_change"
+								level=hungerFatigueChange
+								condition=(localize "FALLOUT.TEMPLATES.conditions.hunger")
+							}}
+						</em></p>
+					{{/ifCond}}
+					{{#ifCond thirstFatigueChange ">" 0}}
+						<p><em>
+							{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_change"
+								level=thirstFatigueChange
+								condition=(localize "FALLOUT.TEMPLATES.conditions.thirst")
+							}}
+						</em></p>
+					{{/ifCond}}
+					{{#ifCond sleepFatigueChange ">" 0}}
+						<p><em>
+							{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_change"
+								level=sleepFatigueChange
+								condition=(localize "FALLOUT.TEMPLATES.conditions.sleep")
+							}}
+						</em></p>
+					{{/ifCond}}
+				</div>
+			{{/if}}
+			<div>
+				<p>
+					<strong>
+						{{localize "FALLOUT.CHAT_MESSAGE.conditions.fatigue_level"}}:
+					</strong>
+					{{fatigue}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

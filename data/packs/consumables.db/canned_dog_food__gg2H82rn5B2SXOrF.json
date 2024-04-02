@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 6,
 		"description": "<p><span class=\"fontstyle0\">A metal can of processed meat intended to be fed to dogs. Despite being made for dogs, it&rsquo;s entirely edible by humans, and the sealed can keeps the food within preserved and relatively safe to eat for long periods.</span> </p>",

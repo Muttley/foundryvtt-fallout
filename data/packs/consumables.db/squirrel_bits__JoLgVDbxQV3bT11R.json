@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 4,
 		"description": "<p><span class=\"fontstyle0\">A few scraps and chunks of squirrel meat. Squirrels, not being especially large creatures, do not have much meat on them.</span></p>\n<p><span class=\"fontstyle0\">Squirrel bits can be cooked to make Crispy Squirrel Bits, Squirrel on a Stick, or Squirrel Stew.</span> </p>",

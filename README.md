@@ -4,19 +4,35 @@
 [![Crowdin](https://badges.crowdin.net/foundryvtt-fallout/localized.svg)](https://crowdin.com/project/foundryvtt-fallout)
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Ffallout)
 
-# Fallout 2d20 System for Foundry VTT
+# Fallout: The Roleplaying Game for Foundry VTT
 
-This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the books is included.
+*In 2077, the storm of nuclear war reduced most of the planet to cinders. From the ashes of nuclear devastation, a new civilization will struggle to arise. A civilization you will shape.*
 
-## Actor Types
+*How will you re-shape the world? Will you join with a plucky band of survivors to fight off all-comers and carve out your own settlement? Will you team up with pre-existing factions like the Brotherhood of Steel or Super Mutants to enforce your own ideals on the Wasteland? Ghoul or robot, paladin or raider, it’s your choice - and the consequences are yours. Welcome to the Wasteland. Welcome to the world of Fallout.*
+
+---
+
+This community contributed and maintained system for playing [Fallout: The Roleplaying Game][1] with the [Foundry VTT][2] virtual tabletop software has been produced with the explicit consent of [Modiphius Entertainment][3].
+
+All copyright assets included in the system are used with the explicit consent of [Modiphius Entertainment][3]. The system developers hold no claims to these underlying copyrighted assets.
+
+*Many thanks to Modiphius for allowing the inclusion of many player facing item compendiums which contain various classes of item from the core rulebook. Their generosity means the system comes with compendiums containing 1031 items from the core rulebook.*
+
+---
+
+## System Features
+
+### Actor Types
 
 - Character
 - Creature
 - NPC
 - Robot
+- Settlement
 
-## Item Types
+### Item Types
 
+- Addiction
 - Ammo
 - Apparel
 - Apparel Mod
@@ -28,12 +44,32 @@ This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the b
 - Robot Modules
 - Skill
 - Special Ability
+- Trait
 - Weapon
 - Weapon Mod
 
-## Features
+### Features
 
+- The following compendiums containing items from the core rulebook are included with the kind permission of Modiphius Entertainment:
+	* Addictions item compendium (12 items)
+	* Ammunition item compendium (20 items)
+	* Apparel item compendium (161 items)
+	* Apparel Mods item compendium (161 items)
+	* Books and Magazines item compendium (95 items)
+	* Consumables item compendium (137 items)
+	* Miscellany item compendium (19 items)
+	* Perks item compendium (190 items)
+	* Robot Modules item compendium (13 items)
+	* Skills item compendium (17 items)
+	* Traits item compendium (10 items)
+	* Weapon Mods item compendium (145 items)
+	* Weapons item compendium (68 items)
 - Dice Roller Macros for D20 and DC Rolls. You can find them in the fallout-macros compendium. Includes Re-roll and Add Dice options. Calculates the number of successes/damage/effects. It can be triggered separately or from the Attributes/Skills/Weapons. (Dice So Nice module supported)
+- Ability to consume Consumable items and have thirst, hunger, hp, rads, etc. adjusted accordingly.
+	* Addiction and Alchoholism checks are automatically rolled when the correct type of items are consumed.
+- Hunger, thirst, sleep and fatigue levels can be automatically updated with the in-game world time.
+	* Without any modules installed, only the Party Sleep tool will advance world time
+	* If you have the Simple Calendar (or similar) module installed, the GM can adjust world time and have the character's condition statuses update following the core rules (p.190)
 - Custom CD roll: "`/r 1dc`" and modifiers to count the effects ("`/r 1dcef`") or count total results summed ("`/r 1dcsum`")
 - Pipboy Screen for Characters and Robots (player sheets)
 - Calculating Resistances depending on the equipped apparel
@@ -49,7 +85,7 @@ This is an unoffical Fallout 2d20 system for Foundry VTT.  No content from the b
 - Action Points trackers for Overseer and the Party
 - Location Die "`1dh`" (Thanks to @e4g13 for making images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13)
 - A way to write fallout symbols in the journal entries:
-	* `@fos[DC]` for DC die symbol
+	* `@fos[DC]` or `@fos[CD]` for DC (Pip-Boy) die symbol
 	* `@fos[PH]` for Physical damage type
 	* `@fos[EN]` for Energy damage type
 	* `@fos[PO]` for Poison damage type
@@ -93,10 +129,14 @@ Since there is no native Foundry support for Items to contain other Items I am l
 
 Foundry VTT: Limited License Agreement for module development.
 
-All copyright assets used with explicit consent from Modiphius Entertainment. The fvtt-modiphius developer community holds no claim to underlying copyrighted assets.
+All copyright assets used with explicit consent from Modiphius Entertainment. The system developers hold no claims to underlying copyrighted assets.
 
 ## Thanks to
 
 - @e4g13 for making new images for the location die. Check out his cool fallout maps on http://www.patreon.com/e4g13
 
 - This system uses various icons from [Game-icons.net](https://game-icons.net/), including icons created by **Caro Asercion**, [Delapouite](https://delapouite.com/), [Lorc](https://lorcblog.blogspot.com/) and **Skoll**
+
+[1]: https://www.modiphius.net/pages/fallout-the-roleplaying-game
+[2]: https://foundryvtt.com
+[3]: https://www.modiphius.net

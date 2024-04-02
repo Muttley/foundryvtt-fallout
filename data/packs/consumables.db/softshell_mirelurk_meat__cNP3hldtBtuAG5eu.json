@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 22,
 		"description": "<p><span class=\"fontstyle0\">Meat from a softshell mirelurk. Compared to normal mirelurk meat, this is especially tender and flaky, and makes for a much more satisfying food.</span></p>\n<p><span class=\"fontstyle0\">Softshell Mirelurk meat can be cooked to produce Cooked Softshell Meat.</span> </p>",

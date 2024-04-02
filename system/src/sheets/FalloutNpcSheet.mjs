@@ -6,6 +6,13 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 	/** @override */
+	static get defaultOptions() {
+		return mergeObject(super.defaultOptions, {
+			height: "auto",
+		});
+	}
+
+	/** @override */
 	get initialTab() {
 		return "abilities";
 	}
@@ -24,8 +31,23 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		return "systems/fallout/templates/actor/npc-sheet.hbs";
 	}
 
+	/** @override */
+	activateListeners(html) {
+		super.activateListeners(html);
+
+		html.find(".roll-wealth").click(this._onRollWealth.bind(this));
+	}
+
 	async getData(options) {
 		const context = await super.getData(options);
+
+		if (this.actor.isCreature) {
+			await this._prepareButcheryMaterials(context);
+		}
+
+		context.disableAutoXpReward = game.settings.get(
+			SYSTEM_ID, "disableAutoXpReward"
+		);
 
 		context.settlements = [];
 
@@ -42,27 +64,61 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		return context;
 	}
 
-	async _updateObject(event, formData) {
-		if (this.actor.type !== "settlement") {
-			return super._updateObject(event, formData);
+	async _onRollWealth(event) {
+		event.preventDefault();
+		const wealthLevel = Math.max(1, this.actor.system.wealth ?? 1);
+
+		const formula = `${wealthLevel}d20`;
+		const roll = new Roll(formula);
+
+		const wealthRoll = await roll.evaluate({ async: true });
+		try {
+			await game.dice3d.showForRoll(wealthRoll);
 		}
+		catch(err) {}
 
-		const originalSettlement = this.actor.system.settlement.uuid;
-		const newSettlement = formData["system.settlement.uuid"];
+		const caps = parseInt(roll.total);
 
-		await super._updateObject(event, formData);
+		this.actor.update({"system.currency.caps": caps});
+	}
 
-		if (originalSettlement !== newSettlement) {
-			for (const uuid of [originalSettlement, newSettlement]) {
-				if (uuid === "") continue;
-				const settlement = await fromUuid(uuid);
+	async _updateObject(event, formData) {
+		if (this.actor.type === "settlement") {
+			const originalSettlement = this.actor.system.settlement.uuid;
+			const newSettlement = formData["system.settlement.uuid"];
 
+			await super._updateObject(event, formData);
+
+			if (originalSettlement !== newSettlement) {
+				for (const uuid of [originalSettlement, newSettlement]) {
+					if (uuid === "") continue;
+					const settlement = await fromUuid(uuid);
+
+					if (settlement) settlement.sheet.render(false);
+				}
+			}
+			else if (newSettlement !== "") {
+				const settlement = await fromUuid(newSettlement);
 				if (settlement) settlement.sheet.render(false);
 			}
 		}
-		else if (newSettlement !== "") {
-			const settlement = await fromUuid(newSettlement);
-			if (settlement) settlement.sheet.render(false);
+		else {
+			for (const resistanceType of ["energy", "physical", "poison", "radiation"]) {
+				const key = `_all_${resistanceType}`;
+				const val = formData[key] ?? null;
+
+				if (val !== null && val >= 0) {
+					// Update all locations
+					for (const bodyPart in this.actor.system.body_parts) {
+						const bodyPartKey = `system.body_parts.${bodyPart}.resistance.${resistanceType}`;
+						formData[bodyPartKey] = val;
+					}
+				}
+
+				delete formData[key];
+			}
+
+			return super._updateObject(event, formData);
 		}
 	}
 }

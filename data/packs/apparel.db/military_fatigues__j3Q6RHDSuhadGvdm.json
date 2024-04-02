@@ -32,7 +32,7 @@
 		"mods": {
 			"current": 0,
 			"list": "",
-			"max": 0
+			"max": 1
 		},
 		"powerStr": 11,
 		"powerSystems": {
@@ -40,7 +40,7 @@
 			"list": "",
 			"max": 0
 		},
-		"powered": "",
+		"powered": false,
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {
