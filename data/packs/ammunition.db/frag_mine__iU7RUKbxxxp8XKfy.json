@@ -1,0 +1,26 @@
+{
+	"_id": "iU7RUKbxxxp8XKfy",
+	"_key": "!items!iU7RUKbxxxp8XKfy",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Frag Mine",
+	"system": {
+		"cost": 50,
+		"description": "<p><span class=\"fontstyle0\">Similar in design and construction to a frag grenade, a fragmentation mine is instead placed on the ground and uses a pressure plate or proximity sensor to trigger detonation when someone gets too close.</span></p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"quantityRoll": "1",
+		"rarity": 2,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "ammo"
+}

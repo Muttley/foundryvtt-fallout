@@ -1,0 +1,24 @@
+{
+	"_id": "Lz3mYiqbDM43eRBV",
+	"_key": "!items!Lz3mYiqbDM43eRBV",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+	"name": "Tesla Coils",
+	"system": {
+		"cost": 100,
+		"description": "<p>A collection of antennae on the robot&rsquo;s outer surface allow it to direct electrical discharges over a short distance to nearby aggressors. The partially directed nature of these discharges mean that allies are not at risk of more than a mild shock, while enemies may suffer severe electrical burns.</p>",
+		"effect": "<p>Can turn on or off at the start of a turn, While on, all enemies within Reach suffer 4CD Piercing 1, Stun Energy damage at the end of the robot&rsquo;s turn</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"perks": "Robotics Expert 2, Science! 1",
+		"quantity": 1,
+		"rarity": 5,
+		"source": "",
+		"stashed": false,
+		"weight": -25
+	},
+	"type": "robot_mod"
+}

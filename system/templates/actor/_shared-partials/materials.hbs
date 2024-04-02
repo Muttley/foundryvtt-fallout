@@ -6,25 +6,10 @@
 			</div>
 		</li>
 		{{#each materials}}
-			<li style="padding: 0 5px; border-bottom: 1px solid #637294; background-color: rgba(0, 0, 0, 0.2);">
-				<div class="flexrow">
-					<input
-						type="number"
-						class="num-short-3"
-						name="{{this.key}}"
-						value="{{this.value}}"
-						min="0"
-					>
-					&nbsp;&nbsp;
-					<div class="item-name flexlarge">
-						<h4>
-							<p class="resource-label">
-								{{this.label}}
-							</p>
-						</h4>
-					</div>
-				</div>
-			</li>
+			{{>
+				actor/_shared-partials/material
+				material=this
+			}}
 		{{/each}}
 	</ol>
 </div>

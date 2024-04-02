@@ -1,0 +1,14 @@
+{
+	"_id": "FqHLxwXaurc9gx1N",
+	"_key": "!tables.results!VBozpx6mDrPoJLWD.FqHLxwXaurc9gx1N",
+	"documentId": null,
+	"drawn": false,
+	"img": "icons/svg/d20-black.svg",
+	"range": [
+		3,
+		8
+	],
+	"text": "Torso",
+	"type": 0,
+	"weight": 1
+}

@@ -1,0 +1,21 @@
+{
+	"_id": "h4ft10mkGXOGNaW3",
+	"_key": "!items!h4ft10mkGXOGNaW3",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Holotags",
+	"system": {
+		"cost": 5,
+		"description": "<p>A small, durable, identifying item used by the Brotherhood of Steel. Holotags contain information to identify their wearer in case of death. They also act as a &ldquo;black box&rdquo; data recorder for a suit of Power Armor, providing the Brotherhood record of the deeds of their fallen warriors. Though not especially valuable by themselves, the Brotherhood often pays a reward to any who bring in holotags they find.</p>",
+		"effect": "<p>Identifies the fallen</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 2,
+		"source": "",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "miscellany"
+}

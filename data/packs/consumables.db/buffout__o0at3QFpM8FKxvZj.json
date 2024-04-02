@@ -10,6 +10,7 @@
 		"addiction": 2,
 		"addictive": true,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableGroup": "Buffout",
 		"consumableType": "chem",
 		"cost": 45,

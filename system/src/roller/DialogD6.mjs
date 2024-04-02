@@ -28,7 +28,12 @@ export class DialogD6 extends Dialog {
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
 				if (this.weapon?.system.ammo) {
-					additionalAmmo = this.checkAmmo(firerateamo);
+
+					let initDmg = this.falloutRoll
+						? 0
+						: this.weapon.system.damage.rating;
+
+					additionalAmmo = await this.checkAmmo(diceNum, initDmg);
 
 					if (additionalAmmo < 0) return;
 				}
@@ -140,7 +145,8 @@ export class DialogD6 extends Dialog {
 	}
 
 
-	checkAmmo(firerateamo) {
+	async checkAmmo(diceNum, initDmg) {
+
 		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
 
 		if (!this.actor) return 0;
@@ -166,23 +172,31 @@ export class DialogD6 extends Dialog {
 		if (this.weapon.system.weaponType !== "meleeWeapons" && this.weapon.system.weaponType !== "unarmed") {
 			const ammo = _actor.items.find(i => i.name === this.weapon.system.ammo);
 
-			if (!ammo) {
-				ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`);
-				return -1;
-			}
-			// Check if there is enough ammo
-			// eslint-disable-next-line max-len, no-mixed-operators
-			 additionalAmmo = this.weapon.system.ammoPerShot + (parseInt(firerateamo)) * this.weapon.system.ammoPerShot;
+		const [ammoItems, shotsAvailable] =
+			await _actor._getAvailableAmmoType(
+				this.weapon.system.ammo
+			);
 
-			// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
-			if (this.weapon.system.damage.weaponQuality.gatling.value) {
-				// eslint-disable-next-line max-len, no-mixed-operators
-				additionalAmmo = this.weapon.system.ammoPerShot + 10 * this.weapon.system.ammoPerShot * (parseInt(firerateamo));
-			}
-			if (parseInt(ammo.system.quantity)<additionalAmmo) {
-				ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`);
-				return -1;
-			}
+		if (!ammoItems) {
+			ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`);
+			return -1;
+		}
+
+		// Check if there is enough ammo
+		const totalDice = parseInt(diceNum);
+		const weaponDmg = parseInt(initDmg);
+
+		let additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
+
+		// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
+		if (this.weapon.system.damage.weaponQuality.gatling.value) {
+			additionalAmmo = Math.floor(additionalAmmo * 0.5);
+		}
+
+		if (shotsAvailable < additionalAmmo) {
+			ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`);
+			return -1;
+
 		}
 		return additionalAmmo;
 	}

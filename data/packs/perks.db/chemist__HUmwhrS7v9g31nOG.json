@@ -1,0 +1,22 @@
+{
+	"_id": "HUmwhrS7v9g31nOG",
+	"_key": "!items!HUmwhrS7v9g31nOG",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Chemist",
+	"system": {
+		"description": "<p>Chems you create last twice as long as normal (see p.164). In addition, you unlock chems recipes that have this perk as a requirement.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "INT 7",
+		"source": ""
+	},
+	"type": "perk"
+}

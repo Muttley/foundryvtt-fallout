@@ -1,10 +1,10 @@
-/**
- * Extend the base Actor document by defining a custom roll data structure which
- * is ideal for the Simple system.
- * @extends {Actor}
- */
-
 export default class FalloutActor extends Actor {
+
+	constructor(object, options={}) {
+		super(object, options);
+
+		this.isSleeping = false;
+	}
 
 	/**
 	 * Update any settlement sheets that may be linked to the deleted Actor
@@ -31,6 +31,15 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+	get isCreature() {
+		return this.type === "creature";
+	}
+
+
+	get isNotCreature() {
+		return !this.isCreature;
+	}
+
 
 	get isNotRobot() {
 		return !this.isRobot;
@@ -41,10 +50,46 @@ export default class FalloutActor extends Actor {
 		return this.type === "robot";
 	}
 
+
+	get isWellRested() {
+		return this.type === "character" && this.system.conditions.wellRested;
+	}
+
+	get ownerIsOffline() {
+		return !this.ownerIsOnline;
+	}
+
+	get ownerIsOnline() {
+		const onlineUsers = game.users.filter(
+			user => !user.isGM && user.active
+		);
+
+		let hasActiveOwner = false;
+
+		for (const user of onlineUsers) {
+			if (actor.ownership[user._id] === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+				|| actor.ownership.default === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+			) {
+				hasActiveOwner = true;
+				break;
+			}
+		}
+
+		return hasActiveOwner;
+	}
+
+
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
 
+	isFieldOverridden(fieldName) {
+		const overridden = Object.keys(
+			foundry.utils.flattenObject(this.overrides)
+		);
+
+		return overridden.includes(fieldName);
+	}
 
 	/** @override */
 	prepareData() {
@@ -86,7 +131,7 @@ export default class FalloutActor extends Actor {
 		// ADD UNOFFICIAL SPEED
 		try {
 			const athletics = this.items.find(
-				i => i.name.toLowerCase() === "athletics" && i.type==="skill"
+				i => i.name.toLowerCase() === "athletics" && i.type === "skill"
 			);
 
 			const athleticsValue = athletics !== undefined
@@ -285,6 +330,10 @@ export default class FalloutActor extends Actor {
 			- this.system.radiation
 			+ this.system.health.bonus;
 
+		if (this.isWellRested) {
+			this.system.health.max += 2;
+		}
+
 		this.system.health.value = Math.min(
 			this.system.health.value,
 			this.system.health.max
@@ -311,6 +360,12 @@ export default class FalloutActor extends Actor {
 	}
 
 	_calculateNextLevelXp() {
+		const disableAutoXpTarget = game.settings.get(
+			SYSTEM_ID, "disableAutoXpTarget"
+		);
+
+		if (disableAutoXpTarget) return;
+
 		const currentLevel = parseInt(this.system.level.value);
 
 		let nextLevelXp = 0;
@@ -530,13 +585,30 @@ export default class FalloutActor extends Actor {
 				}
 			});
 		}
+		else if (this.isCreature) {
+			// remove butchery items from calculation
+			physicalItems = physicalItems.filter(i => {
+				if (i.type === "consumable") {
+					return !i.system.butchery;
+				}
+				else {
+					return true;
+				}
+			});
+		}
 
 		let physicalItemsMap = physicalItems.map(i => i.toObject());
 
 		let totalWeight = 0;
 
 		for (let i of physicalItemsMap) {
-			totalWeight += parseFloat(i.system.weight) * parseFloat(i.system.quantity);
+			let itemWeight = parseFloat(i.system.weight);
+			itemWeight = isNaN(itemWeight) ? 0 : itemWeight;
+
+			let itemQuantity = parseFloat(i.system.quantity);
+			itemQuantity = isNaN(itemQuantity) ? 0 : itemQuantity;
+
+			totalWeight += itemWeight * itemQuantity;
 		}
 
 		let materialWeight = 0;
@@ -560,12 +632,39 @@ export default class FalloutActor extends Actor {
 	_prepareNpcData() {
 		if (!["creature", "npc"].includes(this.type)) return;
 
+		const disableAutoXpReward = game.settings.get(
+			SYSTEM_ID, "disableAutoXpReward"
+		);
+
+		if (disableAutoXpReward) return;
+
 		this.system.level.rewardXP = fallout.utils.calculateXpReward(
 			this.system.level.value,
 			this.system.category
 		);
 
-		this.system.carryWeight.total = this._getItemsTotalWeight();
+		if (this.isCreature) {
+			this.system.carryWeight.total = this._getItemsTotalWeight();
+		}
+		else {
+			this._calculateEncumbrance();
+		}
+	}
+
+	getLastConditionChanges() {
+		return {
+			hunger: this.system.conditions.lastChange.hunger,
+			sleep: this.system.conditions.lastChange.sleep,
+			thirst: this.system.conditions.lastChange.thirst,
+		};
+	}
+
+	setLastConditionChanges(lastChanges) {
+		this.updateSource({
+			"system.conditions.lastChange.hunger": lastChanges.hunger,
+			"system.conditions.lastChange.sleep": lastChanges.sleep,
+			"system.conditions.lastChange.thirst": lastChanges.thirst,
+		});
 	}
 
 	/**
@@ -611,20 +710,30 @@ export default class FalloutActor extends Actor {
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
-		if (!data.img) {
-			const img = CONFIG.FALLOUT.DEFAULT_TOKENS[data.type] ?? undefined;
+		const prototypeToken = {
+			actorLink: false,
+			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
+			name: data.name, // Set token name to actor name
+			texture: duplicate(this.prototypeToken.texture),
+		};
 
-			if (img) {
-				this.updateSource({
-					img,
-					prototypeToken: {
-						texture: {
-							src: img,
-						},
-					},
-				});
+		if (["character", "robot", "settlement"].includes(data.type)) {
+			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
+			prototypeToken.actorLink = true;
+		}
+
+		const update = {prototypeToken};
+		if (!data.img) {
+			const image = CONFIG.FALLOUT.DEFAULT_TOKENS[data.type] ?? undefined;
+
+			if (image) {
+				update.img = image;
+				update.prototypeToken.texture = {
+					src: image,
+				};
 			}
 		}
+
 
 		// Add Skills to Characters and Robots
 		if (this.type === "character" || this.type === "robot") {
@@ -645,14 +754,387 @@ export default class FalloutActor extends Actor {
 				let packSkills =
 					await game.packs.get(skillsCompendium).getDocuments();
 
-				const items = this.items.map(i => i.toObject());
+				update.items = this.items.map(i => i.toObject());
 
 				packSkills.forEach(s => {
-					items.push(s.toObject());
+					update.items.push(s.toObject());
 				});
-
-				this.updateSource({ items });
 			}
+		}
+
+		await this.updateSource(update);
+
+		// Seed the lastUsed timestamp for consumables
+		if (this.type === "character") {
+			const currentWorldTime = game.time.worldTime;
+
+			await this.updateSource({
+				"system.conditions.lastChanged.hunger": currentWorldTime,
+				"system.conditions.lastChanged.sleep": currentWorldTime,
+				"system.conditions.lastChanged.thirst": currentWorldTime,
+			});
+		}
+	}
+
+	async _toggleImmunity(type) {
+		if (!["poison", "radiation"].includes(type)) return;
+
+		const currentValue = this.system.immunities[type];
+		const updateData = {};
+		updateData[`system.immunities.${type}`] = !currentValue;
+		this.update(updateData);
+	}
+
+	async _updateHunger(currentWorldTime) {
+		let lastChange = this.system.conditions?.lastChanged?.hunger;
+
+		let timeElapsed = currentWorldTime - Math.abs(lastChange);
+		let changed = false;
+
+		if (lastChange < 0 || timeElapsed <= 0) return changed;
+
+		let hunger = this.system.conditions.hunger;
+		let fatigue = this.system.conditions.fatigue;
+
+		let keepChecking = true;
+		while (keepChecking) {
+			switch (hunger) {
+				case CONFIG.FALLOUT.CONDITIONS.hunger.full:
+					if (timeElapsed >= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Full > Sated`);
+						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.sated;
+						lastChange += CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.hunger.sated:
+					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Sated > Peckish`);
+						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.peckish;
+						lastChange += CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.hunger.peckish:
+					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Peckish > Hungry`);
+						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.hungry;
+						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.hunger.hungry:
+					if (timeElapsed >= CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS) {
+						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.starving;
+						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Hungry > Starving`);
+						if (!this.isSleeping) {
+							fallout.logger.debug(
+								`Condition Tracker: [Hunger] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
+							);
+							fatigue++;
+						}
+						lastChange += CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.hunger.starving:
+					if (timeElapsed >= CONFIG.FALLOUT.ONE_DAY_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Starving`);
+						if (!this.isSleeping) {
+							fallout.logger.debug(
+								`Condition Tracker: [Hunger] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
+							);
+							fatigue++;
+						}
+						lastChange += CONFIG.FALLOUT.ONE_DAY_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.ONE_DAY_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				default:
+					keepChecking = false;
+			}
+		}
+
+		if (changed) {
+			await this.update({
+				"system.conditions.lastChanged.hunger": lastChange,
+				"system.conditions.hunger": hunger,
+				"system.conditions.fatigue": fatigue,
+
+			});
+		}
+
+		return changed;
+	}
+
+	async _updateThirst(currentWorldTime) {
+		let lastChange = this.system.conditions?.lastChanged?.thirst;
+
+		let timeElapsed = currentWorldTime - Math.abs(lastChange);
+		let changed = false;
+
+		if (timeElapsed <= 0) return changed;
+
+		let thirst = this.system.conditions.thirst;
+		let fatigue = this.system.conditions.fatigue;
+
+		let keepChecking = true;
+		while (keepChecking) {
+			switch (thirst) {
+				case CONFIG.FALLOUT.CONDITIONS.thirst.quenched:
+					if (timeElapsed >= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Quenched > Hydrated`);
+						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.hydrated;
+						lastChange += CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.thirst.hydrated:
+					if (timeElapsed >= CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Hydrated > Thirsty`);
+						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.thirsty;
+						lastChange += CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.thirst.thirsty:
+					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Thirsty > Dehydrated`);
+						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated;
+						if (!this.isSleeping) {
+							fallout.logger.debug(
+								`Condition Tracker: [Thirst] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
+							);
+							fatigue++;
+						}
+						lastChange += CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated:
+					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Dehydrated`);
+						if (!this.isSleeping) {
+							fallout.logger.debug(
+								`Condition Tracker: [Thirst] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
+							);
+							fatigue++;
+						}
+						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				default:
+					keepChecking = false;
+			}
+		}
+
+		if (changed) {
+			await this.update({
+				"system.conditions.lastChanged.thirst": lastChange,
+				"system.conditions.thirst": thirst,
+				"system.conditions.fatigue": fatigue,
+
+			});
+		}
+
+		return changed;
+	}
+
+	async _updateSleep(currentWorldTime) {
+		let lastChange = this.system.conditions?.lastChanged?.sleep;
+
+		let timeElapsed = currentWorldTime - Math.abs(lastChange);
+		let changed = false;
+
+		if (timeElapsed <= 0) return changed;
+
+		let sleep = this.system.conditions.sleep;
+		let fatigue = this.system.conditions.fatigue;
+
+		let keepChecking = true;
+		const maxIterations = 10;
+		let iterations = 0;
+		while (keepChecking) {
+			iterations++;
+			if (iterations > maxIterations) {
+				fallout.logger.error(`Condition Tracker: [Sleep] Actor ${this.name} exceeded maximum iterations.`);
+				console.log(`currentWorldTime: ${currentWorldTime}`);
+				console.log(`timeElapsed: ${timeElapsed}`);
+				fallout.logger.error(this.system.conditions);
+				break;
+			}
+			switch (sleep) {
+				case CONFIG.FALLOUT.CONDITIONS.sleep.rested:
+					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Rested > Tired`);
+						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.tired;
+						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.sleep.tired:
+					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Tired > Weary`);
+						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.weary;
+						if (!this.isSleeping) fatigue++;
+						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.sleep.weary:
+					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Weary > Exhausted`);
+						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.exhausted;
+						if (!this.isSleeping) {
+							fallout.logger.debug(
+								`Condition Tracker: [Sleep] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
+							);
+							fatigue++;
+						}
+						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				case CONFIG.FALLOUT.CONDITIONS.sleep.exhausted:
+					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
+						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Exhausted`);
+						if (!this.isSleeping) {
+							fallout.logger.debug(
+								`Condition Tracker: [Sleep] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
+							);
+							fatigue++;
+						}
+						lastChange += CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+						changed = true;
+						timeElapsed -= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
+					}
+					else {
+						keepChecking = false;
+					}
+					break;
+				default:
+					keepChecking = false;
+			}
+		}
+
+		if (changed) {
+			await this.update({
+				"system.conditions.lastChanged.sleep": lastChange,
+				"system.conditions.sleep": sleep,
+				"system.conditions.fatigue": fatigue,
+
+			});
+		}
+
+		return changed;
+	}
+
+	async checkConditions(currentWorldTime) {
+		await this._checkForConditionTimeJumps(currentWorldTime);
+
+		let currentFatigue = this.system.conditions.fatigue;
+		const hungerChanged = await this._updateHunger(currentWorldTime);
+		const hungerFatigueChange = this.system.conditions.fatigue - currentFatigue;
+
+		currentFatigue = this.system.conditions.fatigue;
+		const thirstChanged = await this._updateThirst(currentWorldTime);
+		const thirstFatigueChange = this.system.conditions.fatigue - currentFatigue;
+
+		let sleepChanged = false;
+		currentFatigue = this.system.conditions.fatigue;
+		if (!this.isSleeping) sleepChanged = await this._updateSleep(currentWorldTime);
+		const sleepFatigueChange = this.system.conditions.fatigue - currentFatigue;
+
+		const fatigueChanged = hungerFatigueChange > 0 || thirstFatigueChange > 0;
+
+		if (hungerChanged || thirstChanged || sleepChanged) {
+			const chatData = {
+				title: game.i18n.localize(
+					"FALLOUT.CHAT_MESSAGE.condition-change.title"
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.condition-change.body",
+					{
+						actorName: this.name,
+						hungerLevel: CONFIG.FALLOUT.HUNGER_BY_NUMBER[this.system.conditions.hunger],
+						thirstLevel: CONFIG.FALLOUT.THIRST_BY_NUMBER[this.system.conditions.thirst],
+						sleepLevel: CONFIG.FALLOUT.SLEEP_BY_NUMBER[this.system.conditions.sleep],
+					}
+				),
+				fatigue: this.system.conditions.fatigue,
+				fatigueChanged,
+				hungerFatigueChange,
+				sleepFatigueChange,
+				thirstFatigueChange,
+			};
+
+			fallout.chat.renderConditionChangeMessage(this, chatData);
+		}
+	}
+
+	async _checkForConditionTimeJumps(currentWorldTime) {
+		const updateData = {};
+		for (const condition of ["hunger", "sleep", "thirst"]) {
+			const wasTimeJump = fallout.utils.checkForTimeJump(
+				this.system.conditions.lastChanged[condition]
+			);
+
+			if (wasTimeJump) {
+				fallout.logger.log(`Condition Tracker: ${this.name} max time jump exceeded for ${condition}, updating lastChange value`);
+				const key = `system.conditions.lastChanged.${condition}`;
+				updateData[key] = currentWorldTime;
+			}
+		}
+		if (!foundry.utils.isEmpty(updateData)) {
+			await this.updateSource(updateData);
 		}
 	}
 
@@ -817,28 +1299,39 @@ export default class FalloutActor extends Actor {
 			}
 		}
 
+		const isFull = this.system.conditions.hunger === 0;
+
 		if (["beverage", "food"].includes(consumableType)) {
-			const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
-			const thirstReduction = item.system.thirstReduction ?? 0;
+			if (!(consumableType === "food" && isFull)) {
+				const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
+				const thirstReduction = item.system.thirstReduction ?? 0;
 
-			if (thirstReduction > 0) {
-				actorUpdateData["system.conditions.lastChanged.thirst"] =
-					currentWorldTime;
+				if (thirstReduction > 0) {
+					actorUpdateData["system.conditions.lastChanged.thirst"] =
+						currentWorldTime;
+				}
+
+				actorUpdateData["system.conditions.thirst"] =
+					Math.max(currentThirst - thirstReduction, 0);
 			}
-
-			actorUpdateData["system.conditions.thirst"] =
-				 Math.max(currentThirst - thirstReduction, 0);
 		}
 
 		if (consumableType === "food") {
-			const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
-			const hungerReduction = item.system.prepared ? 2 : 1;
+			if (isFull) {
+				ui.notifications.warn(
+					game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
+				);
+			}
+			else {
+				const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
+				const hungerReduction = item.system.prepared ? 2 : 1;
 
-			actorUpdateData["system.conditions.lastChanged.hunger"] =
-				currentWorldTime;
+				actorUpdateData["system.conditions.lastChanged.hunger"] =
+					currentWorldTime;
 
-			actorUpdateData["system.conditions.hunger"] =
-				 Math.max(currentHunger - hungerReduction, 0);
+				actorUpdateData["system.conditions.hunger"] =
+					Math.max(currentHunger - hungerReduction, 0);
+			}
 		}
 
 		await this.update(actorUpdateData);
@@ -886,6 +1379,7 @@ export default class FalloutActor extends Actor {
 
 		return addiction ? true : false;
 	}
+
 
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
@@ -944,5 +1438,40 @@ export default class FalloutActor extends Actor {
 		}
 
 		this.update(updateData);
+	}
+
+	async sleep(hours, safe, hasActiveFatigue) {
+		const currentSleepStatus = this.system.conditions?.sleep ?? 0;
+
+		if (hasActiveFatigue) {
+			fallout.logger.debug(
+				`Party Sleep: Actor ${this.name} has currently active fatigue sources`
+			);
+		}
+
+		let currentFatigue = this.system.conditions?.fatigue ?? 0;
+		let newFatigue = currentFatigue;
+
+		let newSleepStatus = currentSleepStatus;
+		let newWellRested = false;
+
+		if (hours >= 8 && safe) newWellRested = true;
+
+		if (hours >= 6) {
+			newSleepStatus = CONFIG.FALLOUT.CONDITIONS.sleep.rested;
+
+			// If there are active fatigue states we don't reset fatgue to zero
+			newFatigue = hasActiveFatigue ? currentFatigue : 0;
+		}
+		else if (hours >= 1) {
+			if (newSleepStatus > 0) newSleepStatus--;
+		}
+
+		await this.update({
+			"system.conditions.fatigue": newFatigue,
+			"system.conditions.lastChanged.sleep": game.time.worldTime,
+			"system.conditions.sleep": newSleepStatus,
+			"system.conditions.wellRested": newWellRested,
+		});
 	}
 }

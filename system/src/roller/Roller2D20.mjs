@@ -357,6 +357,7 @@ export class Roller2D20 {
 			diceNum: diceNum,
 			firerateamo: firerateamo,
 		});
+
 		return dicesRolled;
 	}
 

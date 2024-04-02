@@ -1,0 +1,23 @@
+<div class="fallout-chat-message">
+	<div class="content">
+		<h2>{{title}}</h2>
+		<p>{{body}}</p>
+		<div style="font-size: 0.75rem;">
+			{{#each actors}}
+				<div>
+					<strong>
+						{{this.name}}:
+					</strong>
+					{{#if wellRested}}
+						{{localize 'FALLOUT.TEMPLATES.WellRested'}}
+					{{else}}
+						{{this.sleep}}
+					{{/if}}
+					{{#ifCond this.fatigue '>' 0}}
+						({{this.fatigue}} {{localize 'FALLOUT.TEMPLATES.conditions.fatigue'}})
+					{{/ifCond}}
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

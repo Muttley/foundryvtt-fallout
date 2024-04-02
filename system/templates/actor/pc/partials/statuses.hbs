@@ -41,4 +41,16 @@
 			{{/if}}
 		>
 	</div>
+	<div class="flexrow resource-row align-mid">
+		<label class="resource-label upperC">
+			{{localize "FALLOUT.TEMPLATES.WellRested"}}
+		</label>
+		<input
+			name="system.conditions.wellRested"
+			type="checkbox"
+			{{#if system.conditions.wellRested}}
+				checked
+			{{/if}}
+		>
+	</div>
 </div>

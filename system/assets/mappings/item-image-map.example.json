@@ -1,0 +1,4552 @@
+{
+	"fallout.addictions": {
+		"6ZJOHvTML67QyE5E": {
+			"__ITEM_NAME__": "Psycho",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"EeIPWWTVBMinJmJC": {
+			"__ITEM_NAME__": "Day Tripper",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"FGEnNecZjnkaE7iR": {
+			"__ITEM_NAME__": "Overdrive",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"FNaxpHwWUx5Ioiit": {
+			"__ITEM_NAME__": "X-Cell",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"GYX8KWLwfQqmwghq": {
+			"__ITEM_NAME__": "Jet",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"H3fKh61SM4JbxMyG": {
+			"__ITEM_NAME__": "Fury",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"Ltcs4vrQZGNQLiCM": {
+			"__ITEM_NAME__": "Med-X",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"MBli9nmbRGQ55TcI": {
+			"__ITEM_NAME__": "Ultra Jet",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"QjNUilhnH8Q6y4UZ": {
+			"__ITEM_NAME__": "Daddy-O",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"T00wacU0YaptZoq1": {
+			"__ITEM_NAME__": "Buffout",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"og7kOxWxkjSPNWJL": {
+			"__ITEM_NAME__": "Mentat",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		},
+		"qm4i02cwDQdD4nSD": {
+			"__ITEM_NAME__": "Calmex",
+			"img": "systems/fallout/assets/icons/items/addiction.svg"
+		}
+	},
+	"fallout.ammunition": {
+		"0Ci0Jcpuca6rSqkL": {
+			"__ITEM_NAME__": "Flamer Fuel",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"1Mku27VQTcwBCwOF": {
+			"__ITEM_NAME__": "10mm Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"299nvpoTfu1mwKTX": {
+			"__ITEM_NAME__": "5mm Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"7iEwQEnDwjtbdVtO": {
+			"__ITEM_NAME__": "Tomahawk",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"7wHhQWCH5t1h8gAR": {
+			"__ITEM_NAME__": "Missile",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"8Nb7SLycyuoqg1fR": {
+			"__ITEM_NAME__": "Frag Grenade",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"9DjIa4OVZOUAZ00i": {
+			"__ITEM_NAME__": "Fusion Core",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"GFEb3DpZFEB99owZ": {
+			"__ITEM_NAME__": "Bottlecap Mine",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"HTHVoUBhAzf3CTuI": {
+			"__ITEM_NAME__": "Syringer Ammo",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"HfxmSvkJEHmqneek": {
+			"__ITEM_NAME__": "Nuka Grenade",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"J72UfCpxbBpYr6W5": {
+			"__ITEM_NAME__": "5.56mm Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"K5VQLz4YU7eZIkAF": {
+			"__ITEM_NAME__": "Flare",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"LU7KBGxaG1tbAfWi": {
+			"__ITEM_NAME__": "Javelin",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"NNo8trd22HbRFNq7": {
+			"__ITEM_NAME__": "Plasma Grenade",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"Oc7xNpMREJ8N5u3v": {
+			"__ITEM_NAME__": "Fusion Cell",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"PPA4fiWvfoRf0ZBs": {
+			"__ITEM_NAME__": "Gamma Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"PZWO5Wj3kzBXCJJM": {
+			"__ITEM_NAME__": "Shotgun Shell",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"UJQaP4A50u2tSG6G": {
+			"__ITEM_NAME__": ".38 Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"VBJiFg5GpSOzyENW": {
+			"__ITEM_NAME__": ".45 Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"XNBEI7ZW5HSaKSGr": {
+			"__ITEM_NAME__": "Baseball Grenade",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"aYG2QbgizqTfxAiy": {
+			"__ITEM_NAME__": "Plasma Cartridge",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"cZPDBjJXa2hCjW0K": {
+			"__ITEM_NAME__": "2mm Electromagnetic Cartridge",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"fuCYfiQzOvr4WtJI": {
+			"__ITEM_NAME__": ".308 Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"fuOyxoTGbly9a6EQ": {
+			"__ITEM_NAME__": "Pulse Grenade",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"gpthlPtWrerYP7Kn": {
+			"__ITEM_NAME__": "Mini-Nuke",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"iU7RUKbxxxp8XKfy": {
+			"__ITEM_NAME__": "Frag Mine",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"jWCRfNLJiUbPrdx7": {
+			"__ITEM_NAME__": "Molotov Cocktail",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"kxgO3CwKpqR9lYLS": {
+			"__ITEM_NAME__": ".44 Magnum Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"mHatIy0FNJtYZxtU": {
+			"__ITEM_NAME__": ".50 Round",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"nGBqWiOLVKDuAWSx": {
+			"__ITEM_NAME__": "Plasma Mine",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"rhvOWFv5OTZi98n5": {
+			"__ITEM_NAME__": "Nuke Mine",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"v9KdoO4ClPflFB9c": {
+			"__ITEM_NAME__": "Throwing Knife",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"y6YpnHYB8wgHhnj1": {
+			"__ITEM_NAME__": "Pulse Mine",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		},
+		"yGiPeDsETWQBjCdT": {
+			"__ITEM_NAME__": "Railway Spike",
+			"img": "systems/fallout/assets/icons/items/ammo.svg"
+		}
+	},
+	"fallout.apparel_mods": {
+		"0wIVX8zUon56LDsB": {
+			"__ITEM_NAME__": "Welded",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"143I7SjRcQBq9sht": {
+			"__ITEM_NAME__": "EMP Shielding",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"19b26SvJv3xOMCC4": {
+			"__ITEM_NAME__": "T-51c Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"1QSjzncDxrx59OUf": {
+			"__ITEM_NAME__": "Mk VI ChestPiece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"20FKglk8LkB8A1c0": {
+			"__ITEM_NAME__": "Mk IV Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"27Sls5dfZTAfQIgf": {
+			"__ITEM_NAME__": "T-45e Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"2SqnqGHd7D3y4O5E": {
+			"__ITEM_NAME__": "Rad Scrubber",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"3d0refqygOWlr08D": {
+			"__ITEM_NAME__": "Brawling",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"3wSPEqbGcAysqqaq": {
+			"__ITEM_NAME__": "T-45e Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"42Qe82QKBhubp9xU": {
+			"__ITEM_NAME__": "Targeting HUD",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"4OR9FcaH6xrrKpBo": {
+			"__ITEM_NAME__": "Treated Leather",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"4Oo36CKsvvcXj9o6": {
+			"__ITEM_NAME__": "Raider II Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"4S9R2wqowQKgJ3q5": {
+			"__ITEM_NAME__": "Mk III Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"5b56DVzDm2X2ueX4": {
+			"__ITEM_NAME__": "T-51f Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"6HktMjmw1GkHhudw": {
+			"__ITEM_NAME__": "Resistant Lining",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"6OY0YUH32cpkcCuH": {
+			"__ITEM_NAME__": "T-45b Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"6qONvqbWs9mgnwZ2": {
+			"__ITEM_NAME__": "Raider II Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"7B2xH72N9Xpe5HV0": {
+			"__ITEM_NAME__": "T-45f Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"7KURZ8oGIgDt6YxK": {
+			"__ITEM_NAME__": "T-45b Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"8CQVJWspeg2CQmHI": {
+			"__ITEM_NAME__": "T-60e Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"8F9G1Cg2OmluAbG1": {
+			"__ITEM_NAME__": "Pneumatic",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"8JID23VwOdXqwESb": {
+			"__ITEM_NAME__": "Ballistic Weave Mk II",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"8Z8lfXud9r26HHkZ": {
+			"__ITEM_NAME__": "T-45d Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"8ctHjfdxTRHeBlXp": {
+			"__ITEM_NAME__": "Raider II Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"8fvlLrbWjODf6BCe": {
+			"__ITEM_NAME__": "Lead Plating",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"908vI94cQ4wdtSaI": {
+			"__ITEM_NAME__": "Tesla Coils",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"9FlKDaWEsEDXBCMP": {
+			"__ITEM_NAME__": "Laminated",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"AKhF3AMqHuvZ1STc": {
+			"__ITEM_NAME__": "T-45b Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Aqhxp38UDkBJ1EJ0": {
+			"__ITEM_NAME__": "Mk VI Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"CY6POFBbU0qeLsHG": {
+			"__ITEM_NAME__": "Shadowed Leather",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"DSrje3suQ5wYyMYp": {
+			"__ITEM_NAME__": "Reinforced",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"DtPOAGbxzkA9Ypyj": {
+			"__ITEM_NAME__": "T-45d Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"DxewSX1ooPKoNPPs": {
+			"__ITEM_NAME__": "Photovoltaic Plating",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"EBkTneYU3Usezhgt": {
+			"__ITEM_NAME__": "Shadowed",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"EGyC3Cs5bYfGmIbh": {
+			"__ITEM_NAME__": "T-51e Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"EYNQabnyteOkkeoP": {
+			"__ITEM_NAME__": "Shadowed Metal",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"En57MQ3hn0DkcHJy": {
+			"__ITEM_NAME__": "Sensor Array",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"EoYPJPrpfi9ZRDy5": {
+			"__ITEM_NAME__": "T-60c Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"FRPz5uD3tZ7hMjir": {
+			"__ITEM_NAME__": "Polymer",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"FheuMFwO0W6c9nGf": {
+			"__ITEM_NAME__": "T-60e Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Fi4sOOvTpfCKlBVS": {
+			"__ITEM_NAME__": "Kinetic Dynamo",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Fov5IU0CbgDuZUuO": {
+			"__ITEM_NAME__": "Blood Cleanser",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"FySCG1SWS7SABvE7": {
+			"__ITEM_NAME__": "Deep Pocketed",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"G1BevsRBcrOLIkSf": {
+			"__ITEM_NAME__": "T-45d Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"GDI7gRGYrMxEpm99": {
+			"__ITEM_NAME__": "Buttressed",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"GQvToNs1kHcwOPII": {
+			"__ITEM_NAME__": "Muffled",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"GZr9XRGzDiWvXMla": {
+			"__ITEM_NAME__": "T-60b Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"HYslGbiJZcpnqQdh": {
+			"__ITEM_NAME__": "T-51b Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"HdcX4nu2ZKYDf9hG": {
+			"__ITEM_NAME__": "Jetpack",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"HlZVuMrkMKwSx0gT": {
+			"__ITEM_NAME__": "Stealth Boy",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"IIhwRw2S19A9hrEV": {
+			"__ITEM_NAME__": "Studded Leather",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"ItcCB3lRheDwUokU": {
+			"__ITEM_NAME__": "T-51c Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"JCala9JIwLsgpDig": {
+			"__ITEM_NAME__": "Reactive Plates",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"JI5elkyiOp0sq33b": {
+			"__ITEM_NAME__": "T-51d Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"JpGZrBzUJTLieuRJ": {
+			"__ITEM_NAME__": "Explosive Vent",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"K63y4mcKxr792XLB": {
+			"__ITEM_NAME__": "Tesla Bracers",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"KRuKJ0eR46ZycdGM": {
+			"__ITEM_NAME__": "Pocketed",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"LBXtsM7QHqmo4gnH": {
+			"__ITEM_NAME__": "T-51e Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"LQGTYf4MpGnQ8bi7": {
+			"__ITEM_NAME__": "Mk IV Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"LXuDtTGg54qdcwsX": {
+			"__ITEM_NAME__": "T-60d Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"MYF3miuCrGR3jUjb": {
+			"__ITEM_NAME__": "T-45b Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"NKMOWl7fiN0nIl1G": {
+			"__ITEM_NAME__": "Girded Leather",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Oawiwwrdx2ZU0xgA": {
+			"__ITEM_NAME__": "Tempered",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"PCloS69pzVlT1gUM": {
+			"__ITEM_NAME__": "Mk IV ChestPiece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Pfh0zvUkSVL49AeL": {
+			"__ITEM_NAME__": "T-45e Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"QXgVEVm7Ttp4UFpS": {
+			"__ITEM_NAME__": "BioCommMesh",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"R0OekXuLrtHf0j8f": {
+			"__ITEM_NAME__": "Ballistic Weave",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"R6Z0Qp7iPfeZr0lp": {
+			"__ITEM_NAME__": "Mk IV Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"R7MSARmaFbVPiunS": {
+			"__ITEM_NAME__": "Welded Rebar",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"RR7Vs2f9fJxRK7nq": {
+			"__ITEM_NAME__": "T-45c Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"RrhtyBPhjtENsF6w": {
+			"__ITEM_NAME__": "Calibrated Shocks",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"RsBNLi8xBR14JKwj": {
+			"__ITEM_NAME__": "T-51e Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"RvH2R9EpAEtwzfsp": {
+			"__ITEM_NAME__": "Cushioned",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"SnqbemTKEDFKEwi7": {
+			"__ITEM_NAME__": "T-60b Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Su9jHSoBdvTPSMD8": {
+			"__ITEM_NAME__": "Mk V Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"VL3DtHbWeTyr8Kjb": {
+			"__ITEM_NAME__": "T-51b Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"VMzxtew6VJQCzIIk": {
+			"__ITEM_NAME__": "Shielded Lining",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"VWq6f7jz0J0TRGUS": {
+			"__ITEM_NAME__": "Mk VI Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Vr2IfyQOyGYvS3sn": {
+			"__ITEM_NAME__": "Weighted",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"WBODl13DtVwIr7KL": {
+			"__ITEM_NAME__": "T-60b Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"WKklumSE0xUCXFmc": {
+			"__ITEM_NAME__": "Prism Shielding",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"WQ9FY8kJaZyYOshD": {
+			"__ITEM_NAME__": "T-51d Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"XYvAnkqTE6TUIvzs": {
+			"__ITEM_NAME__": "Dense",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"Xm3NOI9pHqcAOiar": {
+			"__ITEM_NAME__": "T-45f Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"YSEXVlKztyVBQ0f4": {
+			"__ITEM_NAME__": "T-51b Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"YcGcdWoYlrPMOXHP": {
+			"__ITEM_NAME__": "T-60d Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"YsLy9bVbtP056YN7": {
+			"__ITEM_NAME__": "Mk III Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"YswtxgeapixbJdL6": {
+			"__ITEM_NAME__": "Mk III Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"ZHnH96ic3qiVPJ25": {
+			"__ITEM_NAME__": "Stabilized",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"ZiNEsPVsZJflvKVh": {
+			"__ITEM_NAME__": "T-60e Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"ZsGBPsT9kf1lVrFw": {
+			"__ITEM_NAME__": "Optimized Bracers",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"ae5urfGJTUVqw7C6": {
+			"__ITEM_NAME__": "Mk V Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"bCszZlE3SxSa2e1G": {
+			"__ITEM_NAME__": "T-51f Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"bGnNLaG7QGVNRLmT": {
+			"__ITEM_NAME__": "T-51c Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"cMFQXRN9ZrDIU23Y": {
+			"__ITEM_NAME__": "Hydraulic Bracers",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"d0avgvGTDFSOEcMP": {
+			"__ITEM_NAME__": "Enameled Metal",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"dCYE8deU6qI7GARe": {
+			"__ITEM_NAME__": "Emergency Protocols",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"dVYTLN7YCoy2g97C": {
+			"__ITEM_NAME__": "T-60c Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"dZdw4Kj5WZ3Y01Lh": {
+			"__ITEM_NAME__": "T-51b Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"e7ySHkXMm9o7Aovi": {
+			"__ITEM_NAME__": "Asbestos Lining",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"eJRm4a5fGv7fIWgn": {
+			"__ITEM_NAME__": "Treated Lining",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"eP0k4kn5PUwNE7OE": {
+			"__ITEM_NAME__": "T-60f Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"ew9m8xT2GbnWCHeu": {
+			"__ITEM_NAME__": "Ballistic Weave Mk V",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"f2TJFwW2vfMqrmAY": {
+			"__ITEM_NAME__": "Mk II Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"fGvLq6Ku80a5cTSg": {
+			"__ITEM_NAME__": "Ballistic Weave Mk IV",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"gCQROCvacrax9ukk": {
+			"__ITEM_NAME__": "Medic Pump",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"gI1rYMmsXnPOqctB": {
+			"__ITEM_NAME__": "Hardened",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"gVTTVLDe6xQMbv5K": {
+			"__ITEM_NAME__": "Protective Lining",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"gW3K5z7MFRZoBDQa": {
+			"__ITEM_NAME__": "Fiberglass",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"gujEG9KDg5dMAUsY": {
+			"__ITEM_NAME__": "T-45c Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"gySESs8tqQfig1qH": {
+			"__ITEM_NAME__": "Polished Metal",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"hWUuQFc4H82qxPec": {
+			"__ITEM_NAME__": "Resin",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"hZZpdrBclyd6MzHk": {
+			"__ITEM_NAME__": "Raider II Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"hqDB2ZzF92HmuN64": {
+			"__ITEM_NAME__": "T-60f Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"i4FIoiiBSSxvToiZ": {
+			"__ITEM_NAME__": "T-51f Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"i9dDeSF3mXAeJgEZ": {
+			"__ITEM_NAME__": "T-51f Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"igmcUhE1lEq2NPcP": {
+			"__ITEM_NAME__": "T-60d Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"iiIFQHQgzaPihtGA": {
+			"__ITEM_NAME__": "T-60f Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"iigJa7Sxwi1um5tb": {
+			"__ITEM_NAME__": "Ultra Light Build",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"j49aEIpiBTjvbGbO": {
+			"__ITEM_NAME__": "T-45f Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"jDw4c8ElBglnHYHP": {
+			"__ITEM_NAME__": "T-60e Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"jQN0cvQRoPLzNwi5": {
+			"__ITEM_NAME__": "Mk III Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"kGts8ZQ6Lr4bkF9M": {
+			"__ITEM_NAME__": "Titanium Plating",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"kRuMVjqK0tr5aZDY": {
+			"__ITEM_NAME__": "Ballistic Weave Mk III",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"kcEI3V2j23v89jGT": {
+			"__ITEM_NAME__": "Mk V Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"l0RhqycI1tg5viug": {
+			"__ITEM_NAME__": "Painted Metal",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"lRwdket2A4FxBzpQ": {
+			"__ITEM_NAME__": "Lead Lined",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"lX3JRbJLh0mYyQJd": {
+			"__ITEM_NAME__": "Microcarbon",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"mgzavWT1TZT1qdoR": {
+			"__ITEM_NAME__": "Winterized Coating",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"nbeJXBz0LccZvmJP": {
+			"__ITEM_NAME__": "T-60c Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"nrkgX6ccemqUDUb1": {
+			"__ITEM_NAME__": "Mk V Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"oO7frtQFoeNU9yl8": {
+			"__ITEM_NAME__": "Aerodynamic",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"owac6l9MM0H8RoLF": {
+			"__ITEM_NAME__": "T-51e Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"p0DwgxYf9LqKdtD2": {
+			"__ITEM_NAME__": "Insulated Lining",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"pZ2FIyhKvuL7EPT0": {
+			"__ITEM_NAME__": "Overdrive Servos",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"plJeCoLSGJIVzF69": {
+			"__ITEM_NAME__": "Alloyed Metal",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"q48esitA3U4tmuXT": {
+			"__ITEM_NAME__": "Padded",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"qH24ODPdUtNy87vp": {
+			"__ITEM_NAME__": "T-45c Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"qIO7j6PYi4ocPi9h": {
+			"__ITEM_NAME__": "Mk II Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"qWlZAyV7iemeqrmU": {
+			"__ITEM_NAME__": "T-45e Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"qp17f82dYxaR8fGw": {
+			"__ITEM_NAME__": "T-45d Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"qwU5VY4f3vsx4i6z": {
+			"__ITEM_NAME__": "Mk II Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"r1vFai9QqhzIhXiA": {
+			"__ITEM_NAME__": "T-51c Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"sWsqLIvepWlGgTtY": {
+			"__ITEM_NAME__": "Boiled Leather",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"sX2oKETLQ733d01Z": {
+			"__ITEM_NAME__": "T-51d Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"suU2pnzcO5KYUF9N": {
+			"__ITEM_NAME__": "Mk II Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"t2wGFT9GqqzS3Qt9": {
+			"__ITEM_NAME__": "Core Assembly",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"tWP01ABVj2P3dPak": {
+			"__ITEM_NAME__": "Nanofilament",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"uQYF58G4PuexOVGS": {
+			"__ITEM_NAME__": "T-60f Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"v6Y7ypBdjXorV8ek": {
+			"__ITEM_NAME__": "T-45f Arm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"vCzArLcyEN25Awf3": {
+			"__ITEM_NAME__": "Lighter Build",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"vHVe3ysJaNtHLOTS": {
+			"__ITEM_NAME__": "T-60c Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"vSd1iRQkY71KJirx": {
+			"__ITEM_NAME__": "T-51d Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"vuySzeWEI174mwLc": {
+			"__ITEM_NAME__": "Motion-Assist Servos",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"wLaFI7WPiiBEFiN9": {
+			"__ITEM_NAME__": "T-45c Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"wchyh9LXoAUTHYKT": {
+			"__ITEM_NAME__": "Braced",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"x0fAswh4AE8aeWJW": {
+			"__ITEM_NAME__": "T-60d Helm",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"xwgy9oa25Drcpk1w": {
+			"__ITEM_NAME__": "T-60b Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"zALOB7gLXndAThjj": {
+			"__ITEM_NAME__": "Internal Database",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"zX0aUfac1HnsEvZO": {
+			"__ITEM_NAME__": "Rusty Knuckles",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		},
+		"zt3R2qkvtmgV3WLH": {
+			"__ITEM_NAME__": "Mk VI Leg",
+			"img": "systems/fallout/assets/icons/items/apparel_mod.svg"
+		}
+	},
+	"fallout.apparel": {
+		"0d7qFZHVsWYFhFoI": {
+			"__ITEM_NAME__": "Actuated Frame (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"17SJL8PoJweKD216": {
+			"__ITEM_NAME__": "Heavy Leather Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"1INSoLtiLJ9carIR": {
+			"__ITEM_NAME__": "Metal Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"1UDHhxbyQuOtX9EH": {
+			"__ITEM_NAME__": "Sturdy Leather Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"1kOtnBKd9CjpYOHW": {
+			"__ITEM_NAME__": "Heavy Raider Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"1t9ZfJxVs14n5wTX": {
+			"__ITEM_NAME__": "Brotherhood Scribe's Hat",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"2B6NdSIDwwqjTqZn": {
+			"__ITEM_NAME__": "Primal Plate (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"2RZM0aGaGT2bYY0l": {
+			"__ITEM_NAME__": "Medium Dog Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"3K2oXJT9AJviSub3": {
+			"__ITEM_NAME__": "T-45 Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"3UDbwGcAdrC2eEvd": {
+			"__ITEM_NAME__": "Utility Coveralls",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"5922ioSDVB2hnY72": {
+			"__ITEM_NAME__": "Voltaic Frame (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"5T8HTf7E0y1Mu9Zu": {
+			"__ITEM_NAME__": "T-45 Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"6GQTHH3zEYZdMSQk": {
+			"__ITEM_NAME__": "Heavy Leather Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"6sBpDpcwfP4yRDaf": {
+			"__ITEM_NAME__": "Sturdy Metal Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"71Syqx4X35IjLNdc": {
+			"__ITEM_NAME__": "X-01 Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"74x1Ud7U3UdJkNG5": {
+			"__ITEM_NAME__": "Synth Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"7dmvo8Xlhqt5ZrCa": {
+			"__ITEM_NAME__": "Sturdy Metal Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"7jDRCZhKskZtGDNI": {
+			"__ITEM_NAME__": "Raider Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"82hgjmzTXmd4VdEs": {
+			"__ITEM_NAME__": "X-01 Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"8EDm7MYx0I9F1MR7": {
+			"__ITEM_NAME__": "Heavy Metal Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"8Try1WliRR1U2s5z": {
+			"__ITEM_NAME__": "Sturdy Combat Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"8clrDybuYV1mobB9": {
+			"__ITEM_NAME__": "Sturdy Leather Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"8jzwxVjy2Me2QUua": {
+			"__ITEM_NAME__": "Vault-Tec Security Armor (Complete)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"9EqSrg7jA5qcLniC": {
+			"__ITEM_NAME__": "Primal Plate (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"9F62PApg0a3qLdBi": {
+			"__ITEM_NAME__": "Sturdy Synth Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"9Joxg8p3lwcIDyYn": {
+			"__ITEM_NAME__": "Combat Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"AYWFgC8JcoSbQIHK": {
+			"__ITEM_NAME__": "Heavy Combat Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"BDGcAACYaQF0qXxX": {
+			"__ITEM_NAME__": "Standard Plating",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"BNhFyx4TZM8NoOoN": {
+			"__ITEM_NAME__": "Hard Hat",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"BeGAdzye5MeP3kUO": {
+			"__ITEM_NAME__": "T-51 Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Bw8LJy7nJMkiXcBo": {
+			"__ITEM_NAME__": "Factory Armor (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ByXJVAAdbklXkx4F": {
+			"__ITEM_NAME__": "Actuated Frame (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"C5I8RYOlLIq7prve": {
+			"__ITEM_NAME__": "Dog Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"C5ifa1Dx7rIxx65I": {
+			"__ITEM_NAME__": "Raider Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"CCrzErrpyLp7Ruz4": {
+			"__ITEM_NAME__": "Raider Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"CiIPyniHdWUcmTWD": {
+			"__ITEM_NAME__": "Combat Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"D8Y0T7cpVY4XgXWq": {
+			"__ITEM_NAME__": "Hydraulic Frame (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"DEpvfGFbc6KIebfH": {
+			"__ITEM_NAME__": "Brotherhood of Steel Uniform",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"DacGyxZmdShxIBTi": {
+			"__ITEM_NAME__": "Heavy Metal Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Dk9UjvjZexa8J0U8": {
+			"__ITEM_NAME__": "Hood or Cowl",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"DxWJxT0MuxkbCofe": {
+			"__ITEM_NAME__": "Tough Clothing",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Dz2dC6613RP6KqA9": {
+			"__ITEM_NAME__": "Sturdy Metal Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Ece0BCI67om6qF2y": {
+			"__ITEM_NAME__": "Heavy Metal Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Ey3twO4uaBQugVLc": {
+			"__ITEM_NAME__": "Heavy Synth Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"F0EnePOunzae56lJ": {
+			"__ITEM_NAME__": "Serrated Plate (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"F15SCdqO8m3rhpkc": {
+			"__ITEM_NAME__": "Raider Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"FMIxSD1qOjPkn1NB": {
+			"__ITEM_NAME__": "Sturdy Combat Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Fn3CiQjQCfE9IMy4": {
+			"__ITEM_NAME__": "Raider Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"GELhqQk4utDnWXmE": {
+			"__ITEM_NAME__": "Heavy Combat Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"HClBdbJwrzkUCuZZ": {
+			"__ITEM_NAME__": "Sturdy Leather Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"HYNVUjwQxMO4KXIe": {
+			"__ITEM_NAME__": "Actuated Frame (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"HoENHW1I1IwXWvbr": {
+			"__ITEM_NAME__": "Sturdy Metal Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"I2KcUoQK3ZNCZ4F4": {
+			"__ITEM_NAME__": "Sturdy Leather Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"IONsTORca0MOKJgh": {
+			"__ITEM_NAME__": "T-45 Helm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"IU0gtAAG6EOwvSXA": {
+			"__ITEM_NAME__": "Voltaic Frame (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ItAAKsRwZQEbmwIF": {
+			"__ITEM_NAME__": "Factory Armor (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"JDKYtZyqEV2lQvFx": {
+			"__ITEM_NAME__": "Hydraulic Frame (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"JTHWr7cr6HeS2mN5": {
+			"__ITEM_NAME__": "Raider Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"JoAG6npPBsUrc4ox": {
+			"__ITEM_NAME__": "Heavy Combat Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"KHaYrUpFfR6ieQu9": {
+			"__ITEM_NAME__": "Sturdy Synth Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"KIeIEy9kJXroD5wH": {
+			"__ITEM_NAME__": "Voltaic Frame (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"KLN1PeBwMBoPhlCd": {
+			"__ITEM_NAME__": "T-45 Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"KSd9eiC0XaVlIXkN": {
+			"__ITEM_NAME__": "Raider Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"KecolhJEc6uRNCDP": {
+			"__ITEM_NAME__": "Sturdy Combat Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Kf577cR3G6pb7Mkt": {
+			"__ITEM_NAME__": "Noxious Plate (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"LLnQeNnD1C4zlqXv": {
+			"__ITEM_NAME__": "Actuated Frame (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"LVtFl6zabIs1mrcb": {
+			"__ITEM_NAME__": "Sturdy Raider Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"LhR6Kj541PHxZ7Bo": {
+			"__ITEM_NAME__": "Hides",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Luele6U32M5YDKlj": {
+			"__ITEM_NAME__": "Army Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"MIbiWiYfApYYj1ft": {
+			"__ITEM_NAME__": "Serrated Plate (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"MOmIwergCNwfesgP": {
+			"__ITEM_NAME__": "Toxic Plate (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"MPPkcoTlL9Ccu92E": {
+			"__ITEM_NAME__": "Heavy Metal Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Mfgi1OgjnrIm0BFV": {
+			"__ITEM_NAME__": "Hazmat Suit",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"MmpO0xvqhLs7Z5v6": {
+			"__ITEM_NAME__": "Synth Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"MoUxwJnXAhE0g8Vx": {
+			"__ITEM_NAME__": "Heavy Metal Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"NJm96SJKxbdONtKU": {
+			"__ITEM_NAME__": "X-01 Helm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Nss40H02BrRolRLM": {
+			"__ITEM_NAME__": "Combat Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"O0JqnMYioFaGTVbM": {
+			"__ITEM_NAME__": "Synth Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"OXTYwe4rWp0n9xVC": {
+			"__ITEM_NAME__": "Light Dog Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"OkcwSvkgUoyWp5s1": {
+			"__ITEM_NAME__": "Hydraulic Frame (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"QBX0JeYQ35RQR7N8": {
+			"__ITEM_NAME__": "Hydraulic Frame (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"QX9YgFGANsHkpTQd": {
+			"__ITEM_NAME__": "Drifter Outfit",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Qe00ZMs3pujwwgjs": {
+			"__ITEM_NAME__": "Primal Plate (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Qefc7PpsmKmkFs0r": {
+			"__ITEM_NAME__": "Heavy Combat Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"QqkYk9XZKuzQvFFb": {
+			"__ITEM_NAME__": "Heavy Metal Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"R5C2M6PVdPyW65pt": {
+			"__ITEM_NAME__": "Heavy Leather Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"R5svV8jJwgZSd2So": {
+			"__ITEM_NAME__": "Sturdy Combat Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"RDjyaSvAT6HzfEBn": {
+			"__ITEM_NAME__": "Primal Plate (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"RWHypmbHATEbfGdU": {
+			"__ITEM_NAME__": "Formal Clothing",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"RuledpduIJ0kiNAN": {
+			"__ITEM_NAME__": "Vault-Tec Security Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"SEh4XYH6BXZDNAOk": {
+			"__ITEM_NAME__": "Heavy Synth Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"SVyJbXzmGVpfRPZq": {
+			"__ITEM_NAME__": "Leather Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"SbGvygde4xeHRGJt": {
+			"__ITEM_NAME__": "Heavy Leather Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"SfpbSl7s62PyLVD1": {
+			"__ITEM_NAME__": "Serrated Plate (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ShuSwxf2xbRbpn9D": {
+			"__ITEM_NAME__": "Noxious Plate (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"TMaT9gY04hSW3fF8": {
+			"__ITEM_NAME__": "Sturdy Raider Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"TiGee8uaRs4twpOK": {
+			"__ITEM_NAME__": "Sack Hood",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"TsWbvZ5RsybpeN2y": {
+			"__ITEM_NAME__": "Mister Gutsy Plating",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"U38QzZYOaKw1oC3h": {
+			"__ITEM_NAME__": "Raider Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"UCJpZzvuttkA0QgE": {
+			"__ITEM_NAME__": "Serrated Plate (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"UUBwEiScNx5pNBiE": {
+			"__ITEM_NAME__": "Heavy Synth Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"UYhmJZwhnlwIR8fD": {
+			"__ITEM_NAME__": "Leather Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"UYuniDcNwxokqGHW": {
+			"__ITEM_NAME__": "Leather Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Uc0qmDLuWKDmnR4O": {
+			"__ITEM_NAME__": "Sturdy Metal Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"UolcghI8rwVUXpam": {
+			"__ITEM_NAME__": "Sturdy Raider Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"VQ5yHv7pOivssCrT": {
+			"__ITEM_NAME__": "Sturdy Synth Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"VbocpE9suK7meAfY": {
+			"__ITEM_NAME__": "T-51 Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"VcWcoUmXcFk6rOka": {
+			"__ITEM_NAME__": "T-60 Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"VgbaAYRw7EgisEiA": {
+			"__ITEM_NAME__": "Serrated Plate (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"WaHiQ6eWFNacsUJ3": {
+			"__ITEM_NAME__": "Factory Armor (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"WeHTP6Gw6Sr6HN8N": {
+			"__ITEM_NAME__": "Formal Hat",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"WfmNUwj6vf1J1B1D": {
+			"__ITEM_NAME__": "Hydraulic Frame (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"X1lZVeTRwlll5KDL": {
+			"__ITEM_NAME__": "Sturdy Metal Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"X9cMnQidJyiDg29B": {
+			"__ITEM_NAME__": "T-51 Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"XCxUCHrYFRdsgCqk": {
+			"__ITEM_NAME__": "Raider Helm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"XJ3mQc6tGsm9Q12N": {
+			"__ITEM_NAME__": "X-01 Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Xd2p6XdKQuDkXVqQ": {
+			"__ITEM_NAME__": "Synth Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"XzEQFrZXE4OPNs3g": {
+			"__ITEM_NAME__": "Engineer's Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"YJBboQPnSQFg8kgp": {
+			"__ITEM_NAME__": "Gas Mask",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"YYbLmTtpw4LbcQZP": {
+			"__ITEM_NAME__": "T-51 Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"YZyjpoAFfRJDvufP": {
+			"__ITEM_NAME__": "Heavy Raider Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Yq8LSP8WI8hkaeIh": {
+			"__ITEM_NAME__": "Metal Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"Z2wwI1RUjgV9UuzJ": {
+			"__ITEM_NAME__": "Harness",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ZhmOXmBcKKxcPEv8": {
+			"__ITEM_NAME__": "T-51 Helm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ZyjXbSyiFKjT20iR": {
+			"__ITEM_NAME__": "Heavy Raider Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"aA9RTmukDKwJd59o": {
+			"__ITEM_NAME__": "Heavy Raider Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"aOmUGU0KhxIusQzy": {
+			"__ITEM_NAME__": "Vault Jumpsuit",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"acP42rzsrff1QOU2": {
+			"__ITEM_NAME__": "Toxic Plate (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"agLROEPeyQHPmptB": {
+			"__ITEM_NAME__": "Hydraulic Frame (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ai8sQG55s9dcHrH2": {
+			"__ITEM_NAME__": "Voltaic Frame (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"bCVyhEfW7raPOUnE": {
+			"__ITEM_NAME__": "Factory Armor (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"bjYeD4BiCQS4kEGu": {
+			"__ITEM_NAME__": "Factory Armor (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"bkqZSzYTzimVzixK": {
+			"__ITEM_NAME__": "Heavy Synth Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"c7bdRUlaii4Yn8oH": {
+			"__ITEM_NAME__": "Voltaic Frame (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"c7zZXvkqJBtTSTsh": {
+			"__ITEM_NAME__": "Heavy Synth Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"cWQkvo0MZ17HuKE4": {
+			"__ITEM_NAME__": "Heavy Combat Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"cdwX7EVolnIWRaZi": {
+			"__ITEM_NAME__": "Lab Coat",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"crVLXWXaVEkAIOG9": {
+			"__ITEM_NAME__": "Combat Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ctWJbJpYQ9Q30TWc": {
+			"__ITEM_NAME__": "T-60 Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"eBkpFQgUgEY577D8": {
+			"__ITEM_NAME__": "Factory Armor (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"eFk2o4BJK1wcWTDN": {
+			"__ITEM_NAME__": "Sturdy Raider Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"f23UwUVmMqA60No3": {
+			"__ITEM_NAME__": "Leather Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"f51NNsrFdLVVsNqJ": {
+			"__ITEM_NAME__": "Noxious Plate (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"fEynmIak6yIuBFXW": {
+			"__ITEM_NAME__": "Combat Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"feCOuP7GQkP0kHFW": {
+			"__ITEM_NAME__": "Combat Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"fqiqy8TsiH2y4ZW4": {
+			"__ITEM_NAME__": "Sturdy Combat Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"g3Y0zWDI9VUNoUWK": {
+			"__ITEM_NAME__": "T-51 Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"g5Y59atwvxDXMvoE": {
+			"__ITEM_NAME__": "Sturdy Leather Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"g81eSQdioCxlp7Dm": {
+			"__ITEM_NAME__": "Noxious Plate (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"giRILdjCelBn3rjL": {
+			"__ITEM_NAME__": "T-60 Helm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"gqnFXfaRTRmuiUKr": {
+			"__ITEM_NAME__": "Metal Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"gyQbcEzyP00f1OZt": {
+			"__ITEM_NAME__": "Heavy Metal Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"hKGbIZhOnncmk7UT": {
+			"__ITEM_NAME__": "Casual Hat",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"hLHlZT5mDbRSzXOp": {
+			"__ITEM_NAME__": "Leather Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"hNlPV160j8Uk9qAZ": {
+			"__ITEM_NAME__": "Actuated Frame (Arm 1)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"i3ORYuQ06JEuR1Sg": {
+			"__ITEM_NAME__": "Primal Plate (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"j3Q6RHDSuhadGvdm": {
+			"__ITEM_NAME__": "Military Fatigues",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"j4paWkmIghe0FS59": {
+			"__ITEM_NAME__": "Heavy Synth Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"jDM5n3gg5yoS2dx3": {
+			"__ITEM_NAME__": "Sturdy Combat Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"jRNRzVKtIkwZ0zN7": {
+			"__ITEM_NAME__": "T-60 Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"jnjGlz8wOI3b2brm": {
+			"__ITEM_NAME__": "Brotherhood of Steel Fatigues",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"jrSZkw346rKVnTfc": {
+			"__ITEM_NAME__": "X-01 Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"jv0C9MAbuq1t9wkX": {
+			"__ITEM_NAME__": "X-01 Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"kA4GLtGmdIoqMmPP": {
+			"__ITEM_NAME__": "Sturdy Combat Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"kRun2GR8nZLirYHD": {
+			"__ITEM_NAME__": "Spike Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"l2R15upfww3XvNHA": {
+			"__ITEM_NAME__": "Actuated Frame (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"lVYblrMAgEfHnWTR": {
+			"__ITEM_NAME__": "Brotherhood Scribe's Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"lW7UmLaX9cJtuYIV": {
+			"__ITEM_NAME__": "Raider Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"lp5ZpYjbFhe8IUcx": {
+			"__ITEM_NAME__": "Armor Frame",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"mGCVgHtv7btlXFcj": {
+			"__ITEM_NAME__": "Casual Clothing",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"mHzuqe2DaDduUxJs": {
+			"__ITEM_NAME__": "Metal Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"mqCbnQQasrmkZsvU": {
+			"__ITEM_NAME__": "Factory Storage Armor (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"nFohkafKN9JdtaY9": {
+			"__ITEM_NAME__": "Sturdy Synth Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"nu0CMwCsoeJfTVUx": {
+			"__ITEM_NAME__": "Heavy Leather Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"oSfwWZHqhaoBlJlG": {
+			"__ITEM_NAME__": "Metal Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"oVvBb3T24ydKgaiy": {
+			"__ITEM_NAME__": "Sturdy Leather Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"oXFQizWTeO3HB4GA": {
+			"__ITEM_NAME__": "Primal Plate (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ot5oxDDNH4Fg18Id": {
+			"__ITEM_NAME__": "Heavy Synth Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"otpTV8rjo98GRwZw": {
+			"__ITEM_NAME__": "Synth Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"p6isTJnOmQhUGLck": {
+			"__ITEM_NAME__": "Toxic Plate (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"q13iMNcRH0zc729C": {
+			"__ITEM_NAME__": "Toxic Plate (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qAnuaudKfDpd72Sl": {
+			"__ITEM_NAME__": "Voltaic Frame (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qEljKwu1UzA9BoL6": {
+			"__ITEM_NAME__": "Raider Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qhSyguZQ4a8wqYpn": {
+			"__ITEM_NAME__": "Heavy Raider Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qlSLcOpcqCUgyb8V": {
+			"__ITEM_NAME__": "T-45 Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qo1Ronb9wh7MnpXI": {
+			"__ITEM_NAME__": "Sturdy Metal Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qqDWrw8j82P7DPc9": {
+			"__ITEM_NAME__": "T-45 Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"qwD45ugL9z0szLZQ": {
+			"__ITEM_NAME__": "Road Leathers",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"rCNWvE2OVtQErwSa": {
+			"__ITEM_NAME__": "Heavy Raider Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"rJkPrPBc1LmIFMKu": {
+			"__ITEM_NAME__": "Synth Helmet",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"rzaHjoMSp3xL2dUF": {
+			"__ITEM_NAME__": "Sturdy Synth Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"sEsSb1c3LzdTMpM2": {
+			"__ITEM_NAME__": "Sturdy Raider Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"sGXPYqACKtkrBAhx": {
+			"__ITEM_NAME__": "Metal Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"sHVONLW2lTNyu8Mq": {
+			"__ITEM_NAME__": "Heavy Coat",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"srvcceooKSoDZ9oH": {
+			"__ITEM_NAME__": "Sturdy Raider Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"tG3w6b6Bx5jFpeSW": {
+			"__ITEM_NAME__": "Sturdy Synth Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"tH4nPzaOhBjnfmpC": {
+			"__ITEM_NAME__": "Noxious Plate (Optics)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"th5iQbnAiLsKzIVV": {
+			"__ITEM_NAME__": "Raider Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"uC3L44Jd1lpnTteV": {
+			"__ITEM_NAME__": "Leather Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"uK2iQe7F74HQwsNs": {
+			"__ITEM_NAME__": "Heavy Dog Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"uQyolHk8smMTNe0H": {
+			"__ITEM_NAME__": "Combat Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"v55iaviJCqWOVY2Q": {
+			"__ITEM_NAME__": "Heavy Leather Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"vWq7tmY6iChl2g2t": {
+			"__ITEM_NAME__": "Cage Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"vinehrp26vkj6pQj": {
+			"__ITEM_NAME__": "Brotherhood of Steel Hood",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"vqETiW7Kb0SgXV43": {
+			"__ITEM_NAME__": "Serrated Plate (Arm 2)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"wGGosbG83Om5a1ac": {
+			"__ITEM_NAME__": "Toxic Plate (Arm 3)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"wS4PyRQOedMKih10": {
+			"__ITEM_NAME__": "Toxic Plate (Main Body)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"x9NMj9JoWYEOJdDs": {
+			"__ITEM_NAME__": "Metal Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"xEiw9lX3nYE1uoT0": {
+			"__ITEM_NAME__": "Welder's Visor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"xeg9hpAU6eauic3p": {
+			"__ITEM_NAME__": "Heavy Combat Right Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"y8xpvgAazNCC0qua": {
+			"__ITEM_NAME__": "Synth Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"yWyTsnEUgTIAwldJ": {
+			"__ITEM_NAME__": "Noxious Plate (Thruster)",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"ylQsJrmkFumlUEeC": {
+			"__ITEM_NAME__": "Vault-Tec Security Armor",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"z5Qy6X4pCeRPEWUs": {
+			"__ITEM_NAME__": "T-60 Left Arm",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"z99d3r4zPwD4ZYMe": {
+			"__ITEM_NAME__": "Sturdy Synth Chest Piece",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"zZa8B73OW8EyQoMu": {
+			"__ITEM_NAME__": "T-60 Right Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		},
+		"zkC1k0Z55VIsnYKA": {
+			"__ITEM_NAME__": "Heavy Combat Left Leg",
+			"img": "systems/fallout/assets/icons/items/apparel.svg"
+		}
+	},
+	"fallout.books_and_magz": {
+		"05H6aksyvOateBtf": {
+			"__ITEM_NAME__": "What Is Plasma, Anyway?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"0GXqsrMeNMoA9iCS": {
+			"__ITEM_NAME__": "Farming the Wastes",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"0QyGlHy565YJcdMI": {
+			"__ITEM_NAME__": "Programmer's Digest",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"0WGq8Aaq82V8nViB": {
+			"__ITEM_NAME__": "The Ohio River Hermit",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"0pTA0wlRQUQ2oAHk": {
+			"__ITEM_NAME__": "Surrounded by the Dead!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"116TjNgfBwkNOSF6": {
+			"__ITEM_NAME__": "Guide to Hunting Commies!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"13RpvXhUn7TdKjEA": {
+			"__ITEM_NAME__": "Attack of the Metal Men!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"1bOiFImI3fM9CaIJ": {
+			"__ITEM_NAME__": "Giant Insects Invade!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"2RauaAfTO24MIsP2": {
+			"__ITEM_NAME__": "FH 5-05 Who Goes There?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"4jcc9O3jIgAhUulK": {
+			"__ITEM_NAME__": "The Moon: A Communist Doomsday Device?!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"4lu6hamyxERQzWNa": {
+			"__ITEM_NAME__": "Bobby Pins: More Effective Than Lockpicks?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"4yO3TrAohgWDMhDI": {
+			"__ITEM_NAME__": "FH 5-04 Not the Soldiers You’re Looking For",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"5Y5Dkh9W0XRFfpQV": {
+			"__ITEM_NAME__": "U.S. Army Goes to Space",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"5k41CcVoWDkABFcI": {
+			"__ITEM_NAME__": "Down Home Cookin'",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"6rHaK2QtsSPGvSpJ": {
+			"__ITEM_NAME__": "Deadly Lasers!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"78JHpLZz5rQeTMP9": {
+			"__ITEM_NAME__": "Cometh the Trickster",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"8nJBGtcrUsO2hUDG": {
+			"__ITEM_NAME__": "Meeting People",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"8uCaW6rs4fwDWJUF": {
+			"__ITEM_NAME__": "Advice from Married Men",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"9UgvihjW0x2I5vn9": {
+			"__ITEM_NAME__": "In the Bosom of the Corsair Queen",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"9W6IRymdpOZXKmHG": {
+			"__ITEM_NAME__": "FH 5-06 Squeaky Floorboard, Sudden Death",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"9Z4Asa5c915hem9w": {
+			"__ITEM_NAME__": "¡La Fantoma!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"9hZXkRhoJIX47mWS": {
+			"__ITEM_NAME__": "Nightmare in the Garden",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"AJEifHfxya4EViFy": {
+			"__ITEM_NAME__": "Bear-Proofing your Campsite",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"CYfpl0Gt0KEq1CcJ": {
+			"__ITEM_NAME__": "Commie-Kazi vs. Manta Man",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"CndyqCypQg50fKrr": {
+			"__ITEM_NAME__": "Giant Super Weapons!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"DBYRYX03IcO2aTQG": {
+			"__ITEM_NAME__": "The Future of Hunting?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"ECXYCwNy7GKVavV3": {
+			"__ITEM_NAME__": "10 Number 1 Hits!!! Rock-o-bot Takes the Nation by Storm!!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"EIzEOJH0iP4JzWnw": {
+			"__ITEM_NAME__": "The Bright Side of Radiation Poisoning",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"FQDIJeABc0a1g7Nt": {
+			"__ITEM_NAME__": "Massachusetts Surgical Journal",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"G88aHNSeg4SvaCo9": {
+			"__ITEM_NAME__": "The Lair of the Virgin Eaters",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"GUbEJnFDx9p0CvbD": {
+			"__ITEM_NAME__": "Locksmith Certification Special — Pass with Flying Colors",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"Hb3AdW5QaAHVDlNZ": {
+			"__ITEM_NAME__": "Will Robots Rule the World?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"IB9mafYkrD1E7EuV": {
+			"__ITEM_NAME__": "Tales of a Junktown Jerky Vendor",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"IRIhIXR0X1PnThvd": {
+			"__ITEM_NAME__": "Future Weapons Today",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"IgqLkMbelsAnYC9q": {
+			"__ITEM_NAME__": "Trapped in the Dimension of the Pterror-dactyls",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"J86ayEuqmagF9OH0": {
+			"__ITEM_NAME__": "Rise of the Mutants!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"KE1PFFcFheyQriDU": {
+			"__ITEM_NAME__": "FH 5-01 Whistling in the Dark",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"L7d6xppSur7dXyKt": {
+			"__ITEM_NAME__": "Geckos and Gamma Radiation",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"LATCQmWWljVCwMnt": {
+			"__ITEM_NAME__": "An Experience to Remember",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"M32bIhaLlqXttW9q": {
+			"__ITEM_NAME__": "Open Any Lock in 5 Seconds Flat",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"MsXLDa4RZ0UHMT2J": {
+			"__ITEM_NAME__": "Art of the Tomahawk",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"NyoiFuBl8FN4iRiZ": {
+			"__ITEM_NAME__": "Insect Repellent Special",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"PKilL8to3SDZHUAU": {
+			"__ITEM_NAME__": "The Secretary Charmer",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"S71PQOPJq2vV0pH8": {
+			"__ITEM_NAME__": "Lost in the Snows of Lust",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"UvPtfBpiOmAmiKg2": {
+			"__ITEM_NAME__": "Little Guns for Little Ladies",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"V8SOn4RCMzgkx4u0": {
+			"__ITEM_NAME__": "Jungle of the Bat-Babies",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"WeOABgbveKblRqPw": {
+			"__ITEM_NAME__": "True Police Stories",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"Xh4PnVNi5xJrCtZr": {
+			"__ITEM_NAME__": "Rocket Science for Toddlers",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"YFSFj5moNn7KNnT8": {
+			"__ITEM_NAME__": "Talk Yourself Sober",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"YVmBhcEYI0eLLDM8": {
+			"__ITEM_NAME__": "Mysteries of the Master Key Exposed!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"ZHve7VSwmsyHRjom": {
+			"__ITEM_NAME__": "Confessions of a Housebreaker",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"ZTVTUHilc84UzoRP": {
+			"__ITEM_NAME__": "Duck and Cover!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"ZVFaC4f8Ki48eTdx": {
+			"__ITEM_NAME__": "Trim the Fat!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"fYekpImbXPFZgNkz": {
+			"__ITEM_NAME__": "Carnivorous Rabbits of Appalachia",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"fYy1RCAJMGPRO9WJ": {
+			"__ITEM_NAME__": "Plasma: The Weapon of Tomorrow",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"h5GN8irnNWKC3xMD": {
+			"__ITEM_NAME__": "The Appalachia Squirrel Massacre",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"hCRQEWSkpgvFluXe": {
+			"__ITEM_NAME__": "Beware the Man Handler",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"hQmjix9JtmveUaBz": {
+			"__ITEM_NAME__": "Water Aerobics for Ghouls",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"hhLOBbowNeo4VSDe": {
+			"__ITEM_NAME__": "Demon Slaves, Demon Sands",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"iiFcIlhklIMxjaoC": {
+			"__ITEM_NAME__": "The Mad Russian's Revenge!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"jKcPooNmifCreXOn": {
+			"__ITEM_NAME__": "Future of Warfare?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"jPdCfq2T6pELwzbK": {
+			"__ITEM_NAME__": "Curse of the Burned!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"l04nHOGBarXy6rxt": {
+			"__ITEM_NAME__": "Self Defense Secrets",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"lHCsUY3S6twO3Fjb": {
+			"__ITEM_NAME__": "FH 5-09 Look Better in Black",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"lc4MTpvhDkQ7ApOS": {
+			"__ITEM_NAME__": "Coupon Spectacular",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"m6XUFT8MYFsgAvyH": {
+			"__ITEM_NAME__": "FH 5-08 Bushes, Boxes, and Beehives: Camouflage Special",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"mBOgGCUFastqsi1c": {
+			"__ITEM_NAME__": "Fixin' Things",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"mPUq6ivdAuHbxor6": {
+			"__ITEM_NAME__": "FH 5-03 Facepaint Fundamentals",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"mT0Wf89P2UGLZ83y": {
+			"__ITEM_NAME__": "Street Guns of Detroit",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"mT6qkeV6xTG1pnex": {
+			"__ITEM_NAME__": "Attack of the Fishmen!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"mbkQ1d1IQjlSE6HG": {
+			"__ITEM_NAME__": "Hardy as a Sasquatch",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"n5iAbo8IerJqOQNR": {
+			"__ITEM_NAME__": "Enter Maula: War Maiden of Mars",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"oR7Yb9XMHc1Yn49v": {
+			"__ITEM_NAME__": "What Sorcery is This?",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"od1qgkoqyO2SbhPV": {
+			"__ITEM_NAME__": "Tomorrow's Technology for Today's Super Soldiers",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"ouvM5DNPcc9nqgIw": {
+			"__ITEM_NAME__": "FH 5-07 Getting the Drop on the Communists",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"qJ0xswPVJhHeBwLT": {
+			"__ITEM_NAME__": "Lasers & Hunting: Acceptable Overkill",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"qcEZIWmadDggAT8K": {
+			"__ITEM_NAME__": "Avoid Those Pesky Gun Laws!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"qx4yMqnLv4ZI6Ppx": {
+			"__ITEM_NAME__": "Blood on the Harp",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"rV3tvVvTmDGs7E0t": {
+			"__ITEM_NAME__": "FH 5-02 Urban Camouflage",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"rzLGWCVR5aHjEyFy": {
+			"__ITEM_NAME__": "Hunting in the Wastes",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"sJuyumHFWHrT4Kr0": {
+			"__ITEM_NAME__": "The Gunsmith of Harper’s Ferry",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"sNyzZdtR8zQeKE86": {
+			"__ITEM_NAME__": "The Starlet Sniper!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"szFJr7G3Z8XuW5rk": {
+			"__ITEM_NAME__": "Visit the Ux-Ron Galaxy!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"szr8VmfdWra3zwXO": {
+			"__ITEM_NAME__": "Dr. Brainwash and His Army of De-Capitalists!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"uCmxHbctgoe8jQDo": {
+			"__ITEM_NAME__": "Homesteading Horror",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"uizbEBbI5Jl1tjeI": {
+			"__ITEM_NAME__": "Life Long Best Friends!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"usR2XUJr38Er8QCh": {
+			"__ITEM_NAME__": "I Married a Robot",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"vAtCC2CaGrGOgnSL": {
+			"__ITEM_NAME__": "FH 5-10 Tiptoe Through the Tulips",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"vcIgVqypELu1vP9C": {
+			"__ITEM_NAME__": "Fatherless Cur!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"xBhJROt39tupLIhb": {
+			"__ITEM_NAME__": "Who Can Stop the Unstoppable Grog-Na-Rok?!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"xT9LvN0vcacln4pN": {
+			"__ITEM_NAME__": "Nuke-the-Man!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"yjknvThwoDmQwU3M": {
+			"__ITEM_NAME__": "Take Aim, Army Style",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"yqeVKyCZWStLXitm": {
+			"__ITEM_NAME__": "Get Off My Lawn",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"zpcKGtIDvZn8Z1ut": {
+			"__ITEM_NAME__": "Science Gone Mad!",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		},
+		"zsdAyshPMJ7Clyis": {
+			"__ITEM_NAME__": "Boxing Times",
+			"img": "systems/fallout/assets/icons/items/books_and_magz.svg"
+		}
+	},
+	"fallout.consumables": {
+		"0lnW7AJMNs7SxdpP": {
+			"__ITEM_NAME__": "Mutt Chops",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"1nJywTHNkuT8JGT4": {
+			"__ITEM_NAME__": "Blood Sac",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"1yXCbQZHNLtwuPcT": {
+			"__ITEM_NAME__": "Stealth Boy",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"28PbGcZHEDssWMfB": {
+			"__ITEM_NAME__": "X-Cell",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"2Huj9yJeWsIQTrZs": {
+			"__ITEM_NAME__": "Mole Rat Chunks",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"2Jc0kY7glK0GVaYe": {
+			"__ITEM_NAME__": "Bloodbug Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"2xM0ZATPyWbbrfja": {
+			"__ITEM_NAME__": "Salisbury Steak (Preserved)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"3ZJaIPmXe788xhiz": {
+			"__ITEM_NAME__": "Jet Fuel",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"483yLfgB6kJ0lWvD": {
+			"__ITEM_NAME__": "Hubflower",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"4Z3zGSnBGJcgR5c2": {
+			"__ITEM_NAME__": "Tato",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"5uXBOucct2TglTlF": {
+			"__ITEM_NAME__": "Iguana Bits",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"66gEaC4Wd4cVuutB": {
+			"__ITEM_NAME__": "Moonshine",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"68eulbmhBZbFJlcs": {
+			"__ITEM_NAME__": "Bourbon",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"69jE7Uteh1NARMBL": {
+			"__ITEM_NAME__": "Blood Pack",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"6Y5Gv5LAizj0KDUw": {
+			"__ITEM_NAME__": "Pork 'n' Beans",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"72L3DVPU3uiGPpNm": {
+			"__ITEM_NAME__": "Glowing Fungus",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"7MwNIxhzzbQUGbX4": {
+			"__ITEM_NAME__": "Mongrel Dog Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"7e60Vl5tVoU4MIlJ": {
+			"__ITEM_NAME__": "Bufftats",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"860ofdvpufUzSqE7": {
+			"__ITEM_NAME__": "Stimpak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"8Fv9dZQm5Dax1INF": {
+			"__ITEM_NAME__": "Carrot",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"8Ju0FLCWLvXs5zXw": {
+			"__ITEM_NAME__": "Mirelurk Cake",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"8pR2J9OAo0Mtx0D4": {
+			"__ITEM_NAME__": "Deathclaw Omelette",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"9vI0sFShvxahqMSW": {
+			"__ITEM_NAME__": "Yao Guai Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ABPjUugdAt6VthAw": {
+			"__ITEM_NAME__": "Mutfruit",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"AMCmZ1rbCC4adfMT": {
+			"__ITEM_NAME__": "Stingwing Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"AcJArmB6p1XrVWL9": {
+			"__ITEM_NAME__": "Healing Salve",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Anqgdr6ITj1TUFuj": {
+			"__ITEM_NAME__": "Mutfruit Juice",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Bomq1g7X0eVXrssc": {
+			"__ITEM_NAME__": "Jet",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Bvn11vBFx1OnUoJr": {
+			"__ITEM_NAME__": "Tarberry",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"C9aDwtqBulwGksyh": {
+			"__ITEM_NAME__": "RadAway (Diluted)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"D2s5huShfKCtulYC": {
+			"__ITEM_NAME__": "Grilled Radroach",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Dh09YQNclfQtitwT": {
+			"__ITEM_NAME__": "Mutant Hound Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ELoNzoPfKq3BE9gc": {
+			"__ITEM_NAME__": "Institute Food Packet",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Efc2oDGC3pdttSJF": {
+			"__ITEM_NAME__": "Orange Mentats",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"FZqdiNkmpwz5NBJ3": {
+			"__ITEM_NAME__": "Dirty Wastelander",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"FqwVy0rYtfInhHoH": {
+			"__ITEM_NAME__": "Tarberry Juice",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"FyAoifDWRgBOPtMV": {
+			"__ITEM_NAME__": "Antibiotics",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"HxBsbNa9k0mXE4H7": {
+			"__ITEM_NAME__": "BlamCo Brand Mac and Cheese (Preserved)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ItcIh4WKCACIyolW": {
+			"__ITEM_NAME__": "Stimpak (Diluted)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"JjjhTOQLnB2htZe0": {
+			"__ITEM_NAME__": "Mirelurk Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"JoLgVDbxQV3bT11R": {
+			"__ITEM_NAME__": "Squirrel Bits",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"KAvEuz7SKIaCWEF8": {
+			"__ITEM_NAME__": "Sugar Bombs",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"KXreAKBJPNwyBwMb": {
+			"__ITEM_NAME__": "Nuka-Cola Quantum",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"KZOctNYYrsfYycGB": {
+			"__ITEM_NAME__": "Sweet Roll",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"KgKwCYEKl95sQQZN": {
+			"__ITEM_NAME__": "Razorgrain",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"MN5XQI0NJPPPlmsj": {
+			"__ITEM_NAME__": "Rad-X",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"MPGzjHEzGF9yW97k": {
+			"__ITEM_NAME__": "Fury",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"MW9UpIocnupsmcFt": {
+			"__ITEM_NAME__": "Calmex",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"MlGblqUyUcVhqQLY": {
+			"__ITEM_NAME__": "Tato Juice",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Mu6IEkhB5z32qzjY": {
+			"__ITEM_NAME__": "Roasted Mirelurk Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"NE0ZUJrG0TMiG5f9": {
+			"__ITEM_NAME__": "Psychobuff",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"NPNBKxo6yByOIuQs": {
+			"__ITEM_NAME__": "Sugar Bombs (Preserved)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"O8ozF1U9N1ZZ9axl": {
+			"__ITEM_NAME__": "Potted Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"OMWPk4ci2lfZmc6X": {
+			"__ITEM_NAME__": "Potato Crisps",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"PCTsMsjBtQzvc1aD": {
+			"__ITEM_NAME__": "Radstag Hide",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"PT1qFvfqES9PgAHY": {
+			"__ITEM_NAME__": "Super Stimpak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"PVf7RRNJLAIY2b2t": {
+			"__ITEM_NAME__": "Irradiated Blood",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"PuL9AevtWz8clHFZ": {
+			"__ITEM_NAME__": "Brain Fungus",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Qe3DSub3iHONeRaO": {
+			"__ITEM_NAME__": "Gourd",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"R9JlPSqlCfooNqFz": {
+			"__ITEM_NAME__": "Rad-X (Diluted)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"RXpTSDERvwv1nuZ5": {
+			"__ITEM_NAME__": "Robot Repair Kit",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"RcNc9VxnJn25PmUF": {
+			"__ITEM_NAME__": "Overdrive",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"RkEPnMsHQmgy4olE": {
+			"__ITEM_NAME__": "Berry Mentats",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"SHoKAwc6q8kNlt0r": {
+			"__ITEM_NAME__": "Addictol",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Th2rOMBm5trq0s4h": {
+			"__ITEM_NAME__": "Yao Guai Roast",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"TlRxjXMYh0k1ljWl": {
+			"__ITEM_NAME__": "Melon",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"UMI1gGwZLhCGTFVK": {
+			"__ITEM_NAME__": "Daddy-O",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"UlhNGl3T0UejS5ZW": {
+			"__ITEM_NAME__": "Beer",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"Uxxc3gTKcLNpcBLU": {
+			"__ITEM_NAME__": "Nuka-Cola",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"VIoOx0NE579BpX4t": {
+			"__ITEM_NAME__": "Queen Mirelurk Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"VUNnTzfG6Kywnt5O": {
+			"__ITEM_NAME__": "Perfectly Preserved Pie",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"VszpkDVgQA22ZCmx": {
+			"__ITEM_NAME__": "Radstag Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"WU676EmpwjUR59Cg": {
+			"__ITEM_NAME__": "Stingwing Filet",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"XEZtPJZ7SBhlIfGq": {
+			"__ITEM_NAME__": "Deathclaw Steak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"YFGiyWiFUG7icRPa": {
+			"__ITEM_NAME__": "Skeeto Spit",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"YQPVshPe6pooP0zZ": {
+			"__ITEM_NAME__": "Glowing Blood Pack",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"YbjXflCRhEgdvW0p": {
+			"__ITEM_NAME__": "Stimpak Diffuser",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ZXa7xGi9VXOzUuVN": {
+			"__ITEM_NAME__": "Bloodleaf",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"aLYfeWM0Uxv7H1Ax": {
+			"__ITEM_NAME__": "Brahmin Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"afPpMSnBCqxLyaxx": {
+			"__ITEM_NAME__": "Wine",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"bq6e2Hcl5CL3jpYU": {
+			"__ITEM_NAME__": "Nuka-Cherry",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"c97rLLOxIIQCFFQi": {
+			"__ITEM_NAME__": "Mirelurk Queen Steak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"cNP3hldtBtuAG5eu": {
+			"__ITEM_NAME__": "Softshell Mirelurk Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"dwRYe59wr0CAurtm": {
+			"__ITEM_NAME__": "Stingwing Barb",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"e6tIVbIcM6krBmSu": {
+			"__ITEM_NAME__": "Dandy Boy Apples",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"e9NVSnBtY4oWIam9": {
+			"__ITEM_NAME__": "Squirrel on a Stick",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"eH5lYeN88g16VbYT": {
+			"__ITEM_NAME__": "Rum",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"fP4pQsWzcH6F83q4": {
+			"__ITEM_NAME__": "Buffjet",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"fW1WgqRVyT76erlQ": {
+			"__ITEM_NAME__": "Melon Juice",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"g2KCQ2KwunOMVBh8": {
+			"__ITEM_NAME__": "BlamCo Brand Mac and Cheese",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"gKcwpsDkmmUMmxP9": {
+			"__ITEM_NAME__": "Bloatfly Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"gezE6P44AYqRQvim": {
+			"__ITEM_NAME__": "Noodle Cup",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"gg2H82rn5B2SXOrF": {
+			"__ITEM_NAME__": "Canned Dog Food",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"gpsiVMF0IkQQiy6A": {
+			"__ITEM_NAME__": "Bloodbug Steak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"hWlAJa2j3N2LaiPx": {
+			"__ITEM_NAME__": "Day Tripper",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"hc8DSkMGN2GxugAF": {
+			"__ITEM_NAME__": "Mentats",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"i1BhSDEcs5JNub1v": {
+			"__ITEM_NAME__": "Radroach Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"jC25W4O796xzZr0O": {
+			"__ITEM_NAME__": "Iguana Soup",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"jDj6bY9Fe5a594FY": {
+			"__ITEM_NAME__": "Radscorpion Stinger",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"jGk6pqXEHojFBnHc": {
+			"__ITEM_NAME__": "Radscorpion Egg",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"jhYtRwmXiTvaMuvY": {
+			"__ITEM_NAME__": "Ultra Jet",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"joFpcSrCDtsWQxme": {
+			"__ITEM_NAME__": "InstaMash",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"jpJw3rIHZILDnp9p": {
+			"__ITEM_NAME__": "Food Paste",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"kVf8NhlrDSjJHFYo": {
+			"__ITEM_NAME__": "Bloatfly Gland",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"kkMJnvGEeqJQKhfT": {
+			"__ITEM_NAME__": "Salisbury Steak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"lrllDzCjzc9atRUy": {
+			"__ITEM_NAME__": "Silt Bean",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"mGyKuUfzHD8BwTMp": {
+			"__ITEM_NAME__": "Deathclaw Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"mk8SR0w1UisPaDy1": {
+			"__ITEM_NAME__": "Brahmin Milk",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"n6asYMleVsDYBbdC": {
+			"__ITEM_NAME__": "Radstag Stew",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"nMvfzS3mTgqejqh2": {
+			"__ITEM_NAME__": "Ribeye Steak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"nOUCuf8jnEhLJkcJ": {
+			"__ITEM_NAME__": "Vegetable Soup",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"nhavbYpdWvlnL7tR": {
+			"__ITEM_NAME__": "Fancy Lads Snack Cakes",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"o0at3QFpM8FKxvZj": {
+			"__ITEM_NAME__": "Buffout",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ohCdi9MG6PoEnyJr": {
+			"__ITEM_NAME__": "Radscorpion Egg Omelette",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"pGaN2EDIWl3lUsrx": {
+			"__ITEM_NAME__": "Vodka",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"pV3wtJn1fqwTcBMj": {
+			"__ITEM_NAME__": "Med-X",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"qJUTRSy9Ic1L18BG": {
+			"__ITEM_NAME__": "Squirrel Stew",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"qeN8bq9CJ3EYwwAE": {
+			"__ITEM_NAME__": "Corn",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"qvvShn56H3E1bb1O": {
+			"__ITEM_NAME__": "Baked Bloatfly",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"r464WdcRwusnzFtm": {
+			"__ITEM_NAME__": "Psycho",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"r5HGZTe9sYtWopL7": {
+			"__ITEM_NAME__": "Mole Rat Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"rj3fi0X9aQNceJF6": {
+			"__ITEM_NAME__": "Refreshing Beverage",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"rzdZZUKOl7QaMRPt": {
+			"__ITEM_NAME__": "Radscorpion Steak",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"smWip05JhGyTXRU1": {
+			"__ITEM_NAME__": "Dirty Water",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"u3cKPD3k6CLScHVC": {
+			"__ITEM_NAME__": "Mirelurk Egg Omelette",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"u9KyfdRIzyQhCjnn": {
+			"__ITEM_NAME__": "Whiskey",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"uPYpLRvtS4R79qW2": {
+			"__ITEM_NAME__": "Fancy Lads Snack Cakes (Preserved)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ue9pFVAT1prcq70t": {
+			"__ITEM_NAME__": "Grape Mentats",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"ukyP2t9KtJiQ7uP6": {
+			"__ITEM_NAME__": "Psycho Jet",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"uxikQYkupNqpmTyR": {
+			"__ITEM_NAME__": "Iguana on a Stick",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"vDzTAi2iRrZ5XTcc": {
+			"__ITEM_NAME__": "RadAway",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"vKPqt12nZaVKaTM4": {
+			"__ITEM_NAME__": "Grilled Radstag",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"vSv5EkpiV6z5XRHh": {
+			"__ITEM_NAME__": "Gum Drops",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"vYcmjWOnJQnrv2gq": {
+			"__ITEM_NAME__": "Yao Guai Ribs",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"vo4udlZQUOjzx402": {
+			"__ITEM_NAME__": "Crispy Squirrel Bits",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"wiBxvaJTsmYQuAof": {
+			"__ITEM_NAME__": "Radscorpion Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"wvr60yBKV9FfAMOv": {
+			"__ITEM_NAME__": "Deathclaw Egg",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"xQxEHsZuVRSR1yeB": {
+			"__ITEM_NAME__": "Asbestos",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"xTlLPA95S9y3Neqk": {
+			"__ITEM_NAME__": "Yum-Yum Deviled Eggs",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"xgOqumIzZGxJgMOX": {
+			"__ITEM_NAME__": "Psychotats",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"xqBDl5Gnc7Q335BN": {
+			"__ITEM_NAME__": "Cooked Softshell Meat",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"xuXzlEC3V0co3w3h": {
+			"__ITEM_NAME__": "Purified Water",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"yW3xNGa8YuPtoonL": {
+			"__ITEM_NAME__": "Mirelurk Egg",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"yqGACHwwNS8DBo4B": {
+			"__ITEM_NAME__": "InstaMash (Preserved)",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"zCjOPQmaqITpaspN": {
+			"__ITEM_NAME__": "Cram",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		},
+		"zP8u8sVBiiSGbcTB": {
+			"__ITEM_NAME__": "Mutant Hound Chops",
+			"img": "systems/fallout/assets/icons/items/consumable.svg"
+		}
+	},
+	"fallout.miscellany": {
+		"17BGbljBgFJ3IUS4": {
+			"__ITEM_NAME__": "Bobby Pin",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"180k1U9dkW1ub7bH": {
+			"__ITEM_NAME__": "Holotape Player",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"1IIFdsmtblCTYk0L": {
+			"__ITEM_NAME__": "Lock Pick Set",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"1wxcXIYvgK4GTYUf": {
+			"__ITEM_NAME__": "Multi-Tool",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"2RPjtHdYZ4YAT38a": {
+			"__ITEM_NAME__": "Backpack, Small",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"Fkgwa1FrCdfQPvhl": {
+			"__ITEM_NAME__": "Pip-Boy",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"KBFbae9bid01j20J": {
+			"__ITEM_NAME__": "Lantern",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"M5XB3Upu9SpAINY2": {
+			"__ITEM_NAME__": "Radio",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"M7QQFcLD08YuKOqE": {
+			"__ITEM_NAME__": "Pack Brahmin",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"TchIjLRrOkHx44rk": {
+			"__ITEM_NAME__": "Geiger Counter",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"TyM9dMuF2apvJdIW": {
+			"__ITEM_NAME__": "Signal Flare",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"UyuLMMopW2wqFOwA": {
+			"__ITEM_NAME__": "Flashlight",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"WY4ifZBy6XUHesiv": {
+			"__ITEM_NAME__": "Electronic Lockpicker",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"WyjtxDmxyBdGcD6n": {
+			"__ITEM_NAME__": "First Aid Kit",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"YaLiZAL7RIksO9Sc": {
+			"__ITEM_NAME__": "Backpack, Large",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"h4ft10mkGXOGNaW3": {
+			"__ITEM_NAME__": "Holotags",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"tJzODq60DVEMlpF9": {
+			"__ITEM_NAME__": "Doctor's Bag",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"tPN8cOC5ZLjMLSGO": {
+			"__ITEM_NAME__": "Deluxe Toolkit",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		},
+		"vOXz7dt1WUCZu2Al": {
+			"__ITEM_NAME__": "Torch",
+			"img": "systems/fallout/assets/icons/items/miscellany.svg"
+		}
+	},
+	"fallout.perks": {
+		"1KDDs6qPimKnwL9r": {
+			"__ITEM_NAME__": "What Sorcery is This?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"1aIYFwFQGic2zHjK": {
+			"__ITEM_NAME__": "Down Home Cookin'",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"2UGzU0qmtozi4QZK": {
+			"__ITEM_NAME__": "Quick Hands",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"35g6izwF0LhTPGMO": {
+			"__ITEM_NAME__": "Dr. Brainwash and His Army of De-Capitalists!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"3bfAQcNKzjD0aOJ8": {
+			"__ITEM_NAME__": "Black Widow / Lady Killer",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"3caIOATNwBm6EPuh": {
+			"__ITEM_NAME__": "The Gunsmith of Harper’s Ferry",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"3gc78PRC1se8qefU": {
+			"__ITEM_NAME__": "Rocket Science for Toddlers",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"422BCVbfcp5q8M8I": {
+			"__ITEM_NAME__": "Blacksmith",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"49AOicQFjlfIKNUe": {
+			"__ITEM_NAME__": "Chem Resistant",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"4QXLYHaB9WGmGVY1": {
+			"__ITEM_NAME__": "Tag!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"4iTCNKydcsh3PHwY": {
+			"__ITEM_NAME__": "An Experience to Remember",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"4uNzMc2WNqMYZEuW": {
+			"__ITEM_NAME__": "Junktown Jerky Vendor",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"51j1AqLl4zHqoVsN": {
+			"__ITEM_NAME__": "Comprehension",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"56snTc6VYoTJqCMi": {
+			"__ITEM_NAME__": "Blood on the Harp",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"5FSxhtSwphd72BS1": {
+			"__ITEM_NAME__": "Hardy as a Sasquatch",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"5r60cyfjkvkYlTvs": {
+			"__ITEM_NAME__": "Dodger",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"5rxzpSKhciVgbmzP": {
+			"__ITEM_NAME__": "FH 5-07 Getting the Drop on the Communists",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"5tgqF87DaXrrz59x": {
+			"__ITEM_NAME__": "Bear-Proofing your Campsite",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"6U2ulr6F0lUbJoYl": {
+			"__ITEM_NAME__": "Slayer",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"6UWfRLqNydpXobqM": {
+			"__ITEM_NAME__": "Strong Back",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"6VAkIp310dSGvCj7": {
+			"__ITEM_NAME__": "Dogmeat",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"6XStNgfUJG92au27": {
+			"__ITEM_NAME__": "Homesteading Horror",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"6b46sO6gPyRRziMy": {
+			"__ITEM_NAME__": "Get Off My Lawn",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"7gsRBEPt328MaEyI": {
+			"__ITEM_NAME__": "Fixin' Things",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"7heg2KN3JXIllHT2": {
+			"__ITEM_NAME__": "Who Can Stop the Unstoppable Grog-Na-Rok?!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"7vvLcpVth2gMnB7o": {
+			"__ITEM_NAME__": "The Ohio River Hermit",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"82n08gxPWsoaLlvK": {
+			"__ITEM_NAME__": "Ninja",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"9KkBBnH3N7yhEeMB": {
+			"__ITEM_NAME__": "Adrenalin Rush",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"9LAlQMlnpZ2lYqKV": {
+			"__ITEM_NAME__": "Will Robots Rule the World?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"9rp4u6tgFbJk9GRT": {
+			"__ITEM_NAME__": "Boxing Times",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"9uBD2OLMA2YtE3ST": {
+			"__ITEM_NAME__": "Attack of the Fishmen!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"A0UTRQ94MdLa3v2i": {
+			"__ITEM_NAME__": "Basher",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"AVB1RZC2w05dkUbZ": {
+			"__ITEM_NAME__": "FH 5-02 Urban Camouflage",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"B5AHVLoXVF8buanM": {
+			"__ITEM_NAME__": "Advice from Married Men",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"BKTkXhJHSgVjdsKT": {
+			"__ITEM_NAME__": "Cap Collector",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"BSi2qWkBGOJKFFED": {
+			"__ITEM_NAME__": "The Bright Side of Radiation Poisoning",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Ba5yPRdNAvjM5StI": {
+			"__ITEM_NAME__": "Gun Nut",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"BoK3Po9WKYHAv4Y9": {
+			"__ITEM_NAME__": "Guide to Hunting Commies!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"BvqY6Zk4bfPSpIj7": {
+			"__ITEM_NAME__": "Beware the Man Handler",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"C2pRfk15zpFV3sgG": {
+			"__ITEM_NAME__": "Nightmare in the Garden",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"CaZiVRLhAUoxj0en": {
+			"__ITEM_NAME__": "Terrifying Presence",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Cx5ysG2Z0XPE6DZn": {
+			"__ITEM_NAME__": "Curse of the Burned!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"DC6xyEVANOUPyy1I": {
+			"__ITEM_NAME__": "True Police Stories",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"DHdPahzQ9HMZ0FXb": {
+			"__ITEM_NAME__": "FH 5-06 Squeaky Floorboard, Sudden Death",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"DlJVCaT4RLT38Kgs": {
+			"__ITEM_NAME__": "Finesse",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"E3vqYT7JvmyDeFyU": {
+			"__ITEM_NAME__": "Pharma Farma",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"E6eCO6Hq6gb4KGmQ": {
+			"__ITEM_NAME__": "Ricochet",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"EQjZHUxYinodOU6G": {
+			"__ITEM_NAME__": "Armorer",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"EYZgPc9OM7qsPpT1": {
+			"__ITEM_NAME__": "Mysterious Stranger",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Epn0E2yMAxTmSOFX": {
+			"__ITEM_NAME__": "Paralyzing Palm",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"FHMZ8ohO5uegkBHL": {
+			"__ITEM_NAME__": "Demon Slaves, Demon Sands",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"FLW7Fx5HVaIxuekh": {
+			"__ITEM_NAME__": "Heave Ho!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"FXbX2ktBJkb6uFIG": {
+			"__ITEM_NAME__": "Solar Powered",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"FgiFIu2LmrckPy5Y": {
+			"__ITEM_NAME__": "Jungle of the Bat-Babies",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"GiPKNxmrkWA2k76W": {
+			"__ITEM_NAME__": "Robotics Expert",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Gn880XN7Auhdop6S": {
+			"__ITEM_NAME__": "Rise of the Mutants!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"H27K9ike953ZIyRl": {
+			"__ITEM_NAME__": "Nuke-the-Man!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"H6W082nVJtDeSthQ": {
+			"__ITEM_NAME__": "Commando",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"H6x4BnrUSmI33dwZ": {
+			"__ITEM_NAME__": "Piercing Strike",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"HUmwhrS7v9g31nOG": {
+			"__ITEM_NAME__": "Chemist",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"I7DFjAhnEzDZmdL7": {
+			"__ITEM_NAME__": "Art of the Tomahawk",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"IVL33DFzxdmpj143": {
+			"__ITEM_NAME__": "Animal Friend",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"JGsQpE2E1zseUEdM": {
+			"__ITEM_NAME__": "Giant Super Weapons!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"JHMLajHU7sioJT9v": {
+			"__ITEM_NAME__": "Awareness",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Jip3JdMpV9HTHujn": {
+			"__ITEM_NAME__": "Talk Yourself Sober",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"KEpm4gH8RvMjhpoO": {
+			"__ITEM_NAME__": "The Lair of the Virgin Eaters",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"LJXpGjoI1HYU6Heb": {
+			"__ITEM_NAME__": "Future Weapons Today",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"LSUSRTgMyqfN1EQx": {
+			"__ITEM_NAME__": "The Mad Russian's Revenge!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Lf2VvWWVug9jj5Ly": {
+			"__ITEM_NAME__": "Visit the Ux-Ron Galaxy!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"LzDGf5TGlzcOBgFd": {
+			"__ITEM_NAME__": "Healer",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"MKt5lgPvnlrnMV9S": {
+			"__ITEM_NAME__": "Cometh the Trickster",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"MsNkQ2J8T75NE3uJ": {
+			"__ITEM_NAME__": "What Is Plasma, Anyway?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"NMrJsMFjSLAYtHAU": {
+			"__ITEM_NAME__": "Hacker",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"NNhKS3XzGuAnXNmq": {
+			"__ITEM_NAME__": "Attack of the Metal Men!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Nc22rM5RB37dOPcO": {
+			"__ITEM_NAME__": "Center Mass",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Nei43KlUxbHLw6MI": {
+			"__ITEM_NAME__": "Gun Fu",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"OIVq6l91X8x6r6zi": {
+			"__ITEM_NAME__": "Enter Maula: War Maiden of Mars",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"OL6ocnHhOZW4mxns": {
+			"__ITEM_NAME__": "Toughness",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"P3SMmJulZT5OyArI": {
+			"__ITEM_NAME__": "Intense Training",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"P5eJ7NOJMV8r9cHo": {
+			"__ITEM_NAME__": "Big Leagues",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"PBp0DOgO6fmob9LU": {
+			"__ITEM_NAME__": "Future of Warfare?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"PCA8zoHuaLjnsF7g": {
+			"__ITEM_NAME__": "Confessions of a Housebreaker",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"PtWvAVSdwEPjeRb3": {
+			"__ITEM_NAME__": "Skilled",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Q6MhXT1qvcpX6fxU": {
+			"__ITEM_NAME__": "Bobby Pins: More Effective Than Lockpicks?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Qf4PBCvZdSvPAeX7": {
+			"__ITEM_NAME__": "Tales of a Junktown Jerky Vendor",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"RhITTHDy13MufCZy": {
+			"__ITEM_NAME__": "Pathfinder",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"RkftnkHGKVnz6URN": {
+			"__ITEM_NAME__": "Rifleman",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"SFhtHQk4lztiJ8gw": {
+			"__ITEM_NAME__": "Meltdown",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"SKyP3uQ4CQCcdKZs": {
+			"__ITEM_NAME__": "Life Long Best Friends!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"SbayR4I8JCyymq0a": {
+			"__ITEM_NAME__": "Plasma: The Weapon of Tomorrow",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"SfcMrqZU78wIJQ0r": {
+			"__ITEM_NAME__": "Shotgun Surgeon",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"SihEoKZZ7VgRmxgK": {
+			"__ITEM_NAME__": "Infiltrator",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"T3vX1fP7cSG5v0zh": {
+			"__ITEM_NAME__": "Fast Metabolism",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"TFJbnmRbE7cisziV": {
+			"__ITEM_NAME__": "Rad Resistance",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"TTCwoZV141ZGuMjs": {
+			"__ITEM_NAME__": "Faster Healing",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"TmIh9ecBP1YvDwdF": {
+			"__ITEM_NAME__": "Farming the Wastes",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"TzAVKNEtdWWgfx4u": {
+			"__ITEM_NAME__": "Pain Train",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"U8yM23ldUGYYtta1": {
+			"__ITEM_NAME__": "Blitz",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"URnrv6ebs1Oqso2m": {
+			"__ITEM_NAME__": "Moving Target",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"UzRkuAJkvYqK8jrl": {
+			"__ITEM_NAME__": "Science!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"VTtncpMUhGBxjmlQ": {
+			"__ITEM_NAME__": "Daring Nature",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Vk0RIc9X6HaypmwJ": {
+			"__ITEM_NAME__": "Entomologist",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"VrMFCFltA2MKaCcH": {
+			"__ITEM_NAME__": "Trapped in the Dimension of the Pterror-dactyls",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"VtCwIMtash7XcwxP": {
+			"__ITEM_NAME__": "Laser Commander",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Xrh0LthwODfn0McZ": {
+			"__ITEM_NAME__": "Better Criticals",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Xz1V9etWzTtwt5x5": {
+			"__ITEM_NAME__": "Quick Draw",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Y7s5hBuYxnIYz4T4": {
+			"__ITEM_NAME__": "Snakeater",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"YDRoA6dGjWXy06hf": {
+			"__ITEM_NAME__": "Grim Reaper's Sprint",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"YLA9JETKbkkHd3uz": {
+			"__ITEM_NAME__": "Concentrated Fire",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"YUHxXpiMFWmEtbXB": {
+			"__ITEM_NAME__": "Little Guns for Little Ladies",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"YeQmWe6K2QMAEaep": {
+			"__ITEM_NAME__": "Deadly Lasers!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"YrVruOKk8Wy2YOc9": {
+			"__ITEM_NAME__": "Inspirational",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"Zl8Mt7ll7IqbgFq2": {
+			"__ITEM_NAME__": "Avoid Those Pesky Gun Laws!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"aNO3ZBQmBGS9A94C": {
+			"__ITEM_NAME__": "Pyromaniac",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"beJfGkUq386Kw4Sj": {
+			"__ITEM_NAME__": "10 Number 1 Hits!!! Rock-o-bot Takes the Nation by Storm!!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"bzXcVbZZtHhGCcOs": {
+			"__ITEM_NAME__": "In the Bosom of the Corsair Queen",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"cCrLiQ8zNWW3LAC6": {
+			"__ITEM_NAME__": "Action Boy / Girl",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"cJGae8CyPIfp6tj7": {
+			"__ITEM_NAME__": "Sniper",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"cPjofC2nJegzoPXS": {
+			"__ITEM_NAME__": "FH 5-01 Whistling in the Dark",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"dIQkAZGEzdR8j2BB": {
+			"__ITEM_NAME__": "Scrapper",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"disfFslU7fhYTIlC": {
+			"__ITEM_NAME__": "The Secretary Charmer",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"dx2dkCtFBWb5kukV": {
+			"__ITEM_NAME__": "Mysteries of the Master Key Exposed!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"e4HPClvz4fA06tUc": {
+			"__ITEM_NAME__": "Pickpocket",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"eTkUS79PttpiHVm0": {
+			"__ITEM_NAME__": "Tomorrow's Technology for Today's Super Soldiers",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"fDu6KU5u17sqA1hf": {
+			"__ITEM_NAME__": "Science Gone Mad!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"fGZ6h4VtddiXvpZ3": {
+			"__ITEM_NAME__": "Size Matters",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"fMU0zfQYyhkwZ6Ck": {
+			"__ITEM_NAME__": "Medic",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"fMq7BDUKGUIZDOEY": {
+			"__ITEM_NAME__": "Giant Insects Invade!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"fhBw3zhOo6EuZy2j": {
+			"__ITEM_NAME__": "Smooth Talker",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"g6qVETrGj3ide6hr": {
+			"__ITEM_NAME__": "FH 5-04 Not the Soldiers You’re Looking For",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"gD1wycvvp1ivtXdY": {
+			"__ITEM_NAME__": "Duck and Cover!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"gbPgHoavxEEaYC4j": {
+			"__ITEM_NAME__": "Nerd Rage!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"grJRadyKsz8Eu0cJ": {
+			"__ITEM_NAME__": "Coupon Spectacular",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"iDaMlrcxl6kEm3Ex": {
+			"__ITEM_NAME__": "Party Boy / Party Girl",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"iMnBN75TTp1DuKzk": {
+			"__ITEM_NAME__": "Light Step",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"iQofqWEFwGokog1G": {
+			"__ITEM_NAME__": "Street Guns of Detroit",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"j4XUYfEZwmvkfXBe": {
+			"__ITEM_NAME__": "Scoundrel",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"j5SfukNzX12lRmwB": {
+			"__ITEM_NAME__": "Barbarian",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"jhef5zecOk3vQhGy": {
+			"__ITEM_NAME__": "Bloody Mess",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"jqGwYM88awxTPn46": {
+			"__ITEM_NAME__": "Night Person",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"kBFXBzcatoT884Je": {
+			"__ITEM_NAME__": "The Future of Hunting?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"kQD85MOcz1B4KHsV": {
+			"__ITEM_NAME__": "The Appalachia Squirrel Massacre",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"kYMZ1knDNl0hLeI8": {
+			"__ITEM_NAME__": "Geckos and Gamma Radiation",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"l9jhloiw4Sylv6Y3": {
+			"__ITEM_NAME__": "FH 5-08 Bushes, Boxes, and Beehives: Camouflage Special",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"lZ0REnexDQeH2cmK": {
+			"__ITEM_NAME__": "FH 5-05 Who Goes There?",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"lkAJKVOfU1DfjLU9": {
+			"__ITEM_NAME__": "U.S. Army Goes to Space",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"mU5YvUEtBshgRPFD": {
+			"__ITEM_NAME__": "Iron Fist",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"mrgLpKa5RkDmIWHq": {
+			"__ITEM_NAME__": "Open Any Lock in 5 Seconds Flat",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"myJS8tB5FHk3Jo65": {
+			"__ITEM_NAME__": "Refractor",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"nOpsl2puqWzQJT4t": {
+			"__ITEM_NAME__": "Master Thief",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"nRkIZJRQqkTsqQV7": {
+			"__ITEM_NAME__": "Lasers & Hunting: Acceptable Overkill",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"nWVbU3dqMxeoxPoT": {
+			"__ITEM_NAME__": "FH 5-09 Look Better in Black",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"oRB1ZIvzhsUMElSc": {
+			"__ITEM_NAME__": "Take Aim, Army Style",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"p8cH2qolrlrnLKIt": {
+			"__ITEM_NAME__": "Hunting in the Wastes",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"pIGqn3CdOhsyQyhx": {
+			"__ITEM_NAME__": "Lost in the Snows of Lust",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"pk42jPbAVMosmA0k": {
+			"__ITEM_NAME__": "Surrounded by the Dead!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"qItV5QGk0sN0md6p": {
+			"__ITEM_NAME__": "Commie-Kazi vs. Manta Man",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"qrXcBKc5MX1lTmKa": {
+			"__ITEM_NAME__": "Steady Aim",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"qxfqtIIZynyM2qIj": {
+			"__ITEM_NAME__": "Insect Repellent Special",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"rgbJvLDrwi7d6nrr": {
+			"__ITEM_NAME__": "Boxing Times (Copy)",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"sWkveVPjKk45QqwF": {
+			"__ITEM_NAME__": "Fatherless Cur!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"scI8HRzH0QjDb1bh": {
+			"__ITEM_NAME__": "Massachusetts Surgical Journal",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"siFrRn6TjSmxGKas": {
+			"__ITEM_NAME__": "Trim the Fat!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"tKQ4oQiQxWoM10p6": {
+			"__ITEM_NAME__": "Meeting People",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"tdm3ETgFN8PA7ZE0": {
+			"__ITEM_NAME__": "Adamantium Skeleton",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"trdF2qUBRHrj3YNW": {
+			"__ITEM_NAME__": "Jury Rigging",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"ugnoJLCjVbVsAqOj": {
+			"__ITEM_NAME__": "Gunslinger",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"ureiid51WVHnCcSG": {
+			"__ITEM_NAME__": "Demolition Expert",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"vYiPt2jg7x1f0NTl": {
+			"__ITEM_NAME__": "FH 5-03 Facepaint Fundamentals",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"w1Vn3NXOGw30Hi13": {
+			"__ITEM_NAME__": "Life Giver",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"wC8TgVkF6OhFY9XR": {
+			"__ITEM_NAME__": "Ghost",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"wE5dyJKCl7gysWci": {
+			"__ITEM_NAME__": "Lead Belly",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"wUoc5IDZQ0ye1TDw": {
+			"__ITEM_NAME__": "¡La Fantoma!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"wwIthL6FW1dIq1MU": {
+			"__ITEM_NAME__": "Carnivorous Rabbits of Appalachia",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"x6hpmUJFDTD3Iw82": {
+			"__ITEM_NAME__": "The Starlet Sniper!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xBewaCbKbQO5BQKp": {
+			"__ITEM_NAME__": "FH 5-10 Tiptoe Through the Tulips",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xRA5ktVoyWDHRy8N": {
+			"__ITEM_NAME__": "Locksmith Certification Special — Pass with Flying Colors",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xTNbBLx2nxvf1mIE": {
+			"__ITEM_NAME__": "Can Do!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xXZcXGsZY6g4QkTl": {
+			"__ITEM_NAME__": "Water Aerobics for Ghouls",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xfBuEJQHYAmds5XG": {
+			"__ITEM_NAME__": "I Married a Robot",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xmOWzjBpDXRfPa9Y": {
+			"__ITEM_NAME__": "Programmer's Digest",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"xwXPepqdLzr8uPMX": {
+			"__ITEM_NAME__": "Cautious Nature",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"yXOy24286aAjL5ID": {
+			"__ITEM_NAME__": "Self Defense Secrets",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"ycaluMjkY5xApFFl": {
+			"__ITEM_NAME__": "Mister Sandman",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"z1OueIn6GiTrDVw7": {
+			"__ITEM_NAME__": "Aquaboy / Aquagirl",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"zB82J3WJ7ld01RYR": {
+			"__ITEM_NAME__": "Hunter",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"zQpZJuiwAC8Zk9a0": {
+			"__ITEM_NAME__": "Fortune Finder",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"zXQUHfk3g9d7WDG1": {
+			"__ITEM_NAME__": "Scrounger",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"zZg9mSTuufYGzSib": {
+			"__ITEM_NAME__": "The Moon: A Communist Doomsday Device?!",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		},
+		"zlPvWlAVWezHiFXX": {
+			"__ITEM_NAME__": "Nuclear Physicist",
+			"img": "systems/fallout/assets/icons/items/perk.svg"
+		}
+	},
+	"fallout.robot_modules": {
+		"J6X12IWC3TuYbb64": {
+			"__ITEM_NAME__": "Diagnosis Mod",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"Lz3mYiqbDM43eRBV": {
+			"__ITEM_NAME__": "Tesla Coils",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"O3dQsgilsyWSSX0n": {
+			"__ITEM_NAME__": "Regeneration Field",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"VWsI4akT5mdNCcci": {
+			"__ITEM_NAME__": "Lockpick Module",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"ZgOppC2XynIyM1bg": {
+			"__ITEM_NAME__": "Hazard Detection Mod",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"a1R1RTaNUfdDmEeS": {
+			"__ITEM_NAME__": "Recon Sensors",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"bzUxVWw6gLP5ZgNq": {
+			"__ITEM_NAME__": "Integral Boiler Mod",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"haxyBQO6QGu0KOGj": {
+			"__ITEM_NAME__": "Hacking Mod",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"hk5GDwOsxYVsudxG": {
+			"__ITEM_NAME__": "Resistance Field",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"jvM19NhHpkDowa8W": {
+			"__ITEM_NAME__": "Sensor Array",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"myLKlpSjf9nqNpTN": {
+			"__ITEM_NAME__": "Radiation Coils",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"tYXeeRpgmtDiaB9t": {
+			"__ITEM_NAME__": "Stealth Field",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		},
+		"vDsRqWBeKLVgq57P": {
+			"__ITEM_NAME__": "Behavioral Analysis Mod",
+			"img": "systems/fallout/assets/icons/items/robot_mod.svg"
+		}
+	},
+	"fallout.skills": {
+		"5xAG0eRrcvDeJAFk": {
+			"__ITEM_NAME__": "Unarmed",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"F4uIprrKWh9ApMaU": {
+			"__ITEM_NAME__": "Athletics",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"G3mN15diMiTCDZ0U": {
+			"__ITEM_NAME__": "Science",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"HEegw2EUmmEzfdDM": {
+			"__ITEM_NAME__": "Sneak",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"PEN70F6ovA3g5HI2": {
+			"__ITEM_NAME__": "Pilot",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"R8YnBNUwhZhG89iQ": {
+			"__ITEM_NAME__": "Survival",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"SH09XavazYU9CqY4": {
+			"__ITEM_NAME__": "Lockpick",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"UQ4TLtVUR2kRlYkb": {
+			"__ITEM_NAME__": "Throwing",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"UZDBirrZeUxrAk7b": {
+			"__ITEM_NAME__": "Small Guns",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"UrVd0BmoXkAxmrvv": {
+			"__ITEM_NAME__": "Medicine",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"ZQw4TLZbaLm5F0BW": {
+			"__ITEM_NAME__": "Repair",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"dOTrlwZ60XWqegQA": {
+			"__ITEM_NAME__": "Speech",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"ejKiqeUyjkahCjQf": {
+			"__ITEM_NAME__": "Explosives",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"jAJPNJpHYawNBp2h": {
+			"__ITEM_NAME__": "Energy Weapons",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"kCGaEuF27yXyE04i": {
+			"__ITEM_NAME__": "Melee Weapons",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"p3GhRmIwrYTJmuhr": {
+			"__ITEM_NAME__": "Big Guns",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		},
+		"vf1Qszkq1om2Xgmn": {
+			"__ITEM_NAME__": "Barter",
+			"img": "systems/fallout/assets/icons/items/skill.webp"
+		}
+	},
+	"fallout.traits": {
+		"3W3LSN9wwD48gaaL": {
+			"__ITEM_NAME__": "Forced Evolution",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"Brw3U4pjSy5MBp6D": {
+			"__ITEM_NAME__": "Heavy Handed",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"DwEuDupvvq0jPL4g": {
+			"__ITEM_NAME__": "Educated",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"GGY5C3vOlzctf76N": {
+			"__ITEM_NAME__": "Mister Handy Robot",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"HWCuIY1tYjpcpcmX": {
+			"__ITEM_NAME__": "Fast Shot",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"OKkyUlhBYtuHCOJt": {
+			"__ITEM_NAME__": "The Chain that Binds",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"QcZ9c7dzPNVxAzR4": {
+			"__ITEM_NAME__": "Small Frame",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"XbVNgNTQ9MLaAWEx": {
+			"__ITEM_NAME__": "Vault Kid",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"oTNPMKqeDqEsWxpo": {
+			"__ITEM_NAME__": "Gifted",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		},
+		"yova9LubVGA18nar": {
+			"__ITEM_NAME__": "Necrotic Post-Human",
+			"img": "systems/fallout/assets/icons/items/trait.svg"
+		}
+	},
+	"fallout.weapon_mods": {
+		"067VeMDTeThvISLa": {
+			"__ITEM_NAME__": "Quick-Eject Mag",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"0RvRMyyemOK3vkOl": {
+			"__ITEM_NAME__": "Lead Lining",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"20d7BlwbNESRwXC9": {
+			"__ITEM_NAME__": "Deep Dish",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"2aqYiSm1nrIYHgoA": {
+			"__ITEM_NAME__": "Muzzle Break",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"2bv9B55Mk73ypTCZ": {
+			"__ITEM_NAME__": "Stun Pack",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"3GI1TF4vKxSitRWJ": {
+			"__ITEM_NAME__": "Quad Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"41rymX7pm90tz0V8": {
+			"__ITEM_NAME__": "Powerful",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"49zfOfotginM01u8": {
+			"__ITEM_NAME__": "Puncturing",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"4c34BzfVex4YKgA3": {
+			"__ITEM_NAME__": "Calibrated",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"4hbEFa5bvVFUlMBO": {
+			"__ITEM_NAME__": "Bladed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"4sOu5mfXcDlUVlUP": {
+			"__ITEM_NAME__": "Sharpshooter's Grip",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"5TezV1CMuZiRXrKU": {
+			"__ITEM_NAME__": "Photon Agitator",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"5eT7jnRBQdbsVQmN": {
+			"__ITEM_NAME__": "Four-Crank Capacitor",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"5gXCZXtJ4E9Blg97": {
+			"__ITEM_NAME__": "Gunner Sight",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"6hh0Evmfv0N8kX81": {
+			"__ITEM_NAME__": "Capactor Boosting Coil",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"6oW2tdrYzdu0klW4": {
+			"__ITEM_NAME__": "Tri-Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"7OZouPhriL9tzrOD": {
+			"__ITEM_NAME__": "Puncturing",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"7hxh0xRNMyflfbJp": {
+			"__ITEM_NAME__": "Serrated Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"8kEOp1jQBdQkbGXu": {
+			"__ITEM_NAME__": "Bracketed Short Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"8nHC8z4vEY4yX7bM": {
+			"__ITEM_NAME__": "Full Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"AMOEO5RXltJZM8kz": {
+			"__ITEM_NAME__": "Reflex Sight",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"AS0Amn04UTnwJOgG": {
+			"__ITEM_NAME__": "Hooked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"Ac56Ox5nVHcJ8PIA": {
+			"__ITEM_NAME__": "Ported",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"BX0Ox0ZdWJBDNsVl": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"CFl42Fhuv4nToKcP": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"CMVHMX7fGVSi9SzJ": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"CYODpO6JvopXWYW7": {
+			"__ITEM_NAME__": "Bayonet",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"D8hF1RjpOMVHjlHp": {
+			"__ITEM_NAME__": "Heavy",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"DQwdlCs54hWqQaZa": {
+			"__ITEM_NAME__": "Gunner Sight",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"DqTXjqNAMlbHJa3V": {
+			"__ITEM_NAME__": "Stabilizer",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"DzJyQzGFhcMKPyRG": {
+			"__ITEM_NAME__": "Electrified Serrated Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"EFY7drbYyPo1zGOh": {
+			"__ITEM_NAME__": "Shredder",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"EuJw4xP1fRt5hdCy": {
+			"__ITEM_NAME__": "Sharp",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"FJ6lsU2xzeKbDRhq": {
+			"__ITEM_NAME__": "Beam Splitter",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"Fa2RBTtGci73smRF": {
+			"__ITEM_NAME__": "Puncturing",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"G1qWroic6MwSgnnp": {
+			"__ITEM_NAME__": "Bracketed Long Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"G6FJ1gEgiS2553IN": {
+			"__ITEM_NAME__": "Stun Pack",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"GFJP4TRDRaOQoOe8": {
+			"__ITEM_NAME__": "Serrated Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"GROQd2poQkix32N4": {
+			"__ITEM_NAME__": "Hair Trigger",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"H5uajcZl8MICYwfy": {
+			"__ITEM_NAME__": "Recoil Compensating Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"IT15FDgwEelj1LYg": {
+			"__ITEM_NAME__": "Beam Focuser",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"Iec8KCIeHqCk886z": {
+			"__ITEM_NAME__": "Sawed-Off",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"J4QJRw5GkCdMirdr": {
+			"__ITEM_NAME__": "Extra Heavy",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"Jyy3vdkQv7YCfvFz": {
+			"__ITEM_NAME__": "Automatic",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"KkRxsFbFTL89H3Ra": {
+			"__ITEM_NAME__": "Triple Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"LANB6wzhO8pIEsxK": {
+			"__ITEM_NAME__": "Puncturing",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"M2Tl0fVG6LzG9wtj": {
+			"__ITEM_NAME__": "Sharp",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"MIMSkUavfShkeY8x": {
+			"__ITEM_NAME__": "Long Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"MvrQv0wg5FE6j7TR": {
+			"__ITEM_NAME__": "Heating Coil",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"Noh6VL5rCdM73QuX": {
+			"__ITEM_NAME__": "Comfort Grip",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"OIr7YaCzlNRUM8Oq": {
+			"__ITEM_NAME__": "Gyro Compensating Lens",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"QOvb0xmQA91HIs8S": {
+			"__ITEM_NAME__": "Improved Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"QgUHARJjhqOXBP7u": {
+			"__ITEM_NAME__": "Snubnose",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"QostVNNHMRLN7mhi": {
+			"__ITEM_NAME__": "Splitter",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"RpKbC7YEiI2c8h1N": {
+			"__ITEM_NAME__": "Accelerated Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"RyggZv9PwKChzJwB": {
+			"__ITEM_NAME__": "Long",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"S8t6WX5aWZl3rXqT": {
+			"__ITEM_NAME__": "Stun Pack",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"SBiPJoDN1jWmENgs": {
+			"__ITEM_NAME__": "Barbed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"SoqIXVkZsUGhfofi": {
+			"__ITEM_NAME__": "Puncturing",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"TQN26Hjy3pxpkrzT": {
+			"__ITEM_NAME__": "Curved Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"TxOsscfkniBk2a85": {
+			"__ITEM_NAME__": "Short Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"U3fJYCYnDsxrr2Or": {
+			"__ITEM_NAME__": "Long Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ULmvHBqIQuMGNg1o": {
+			"__ITEM_NAME__": "Boosted Capacitor",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"UtS1TgSmfTHRb5dW": {
+			"__ITEM_NAME__": "Electrification Module",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"VJOrfCwfPhDnMP18": {
+			"__ITEM_NAME__": "Heavy",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"VMMDaoy4SbwdLJaX": {
+			"__ITEM_NAME__": "Charging Barrels",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"VvTZfUz7HZMu3eAq": {
+			"__ITEM_NAME__": "Stealth Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"VxocOrbl9H7nkXfx": {
+			"__ITEM_NAME__": "Extra Claw",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"WD7u8h2fsH35rD8t": {
+			"__ITEM_NAME__": "Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"X7M3lII0wjlKV7l3": {
+			"__ITEM_NAME__": "Photon Agitator",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"XShTCPVSPhRDhMBo": {
+			"__ITEM_NAME__": ".50 Receiver",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"aCMBNHf2jilKz2Zg": {
+			"__ITEM_NAME__": "Finned",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"aDXdsogK2fIHtBNE": {
+			"__ITEM_NAME__": "Bull Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"aKnqi2PPZyD6qLGe": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"bCJRlQcht0typqhI": {
+			"__ITEM_NAME__": "Ignition Module",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"bIT0zIivG6SUyyne": {
+			"__ITEM_NAME__": "Extended Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"bIxeUpjoKTniv7P7": {
+			"__ITEM_NAME__": "Barbed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"bRV8rXkptjU6mz9Y": {
+			"__ITEM_NAME__": "Full Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"bS7ZxJKZA2JAhPV8": {
+			"__ITEM_NAME__": "Full Capacitors",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"bhpEF2ZReAacz7NI": {
+			"__ITEM_NAME__": "Long Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"brS0allrFP0vQ5Ac": {
+			"__ITEM_NAME__": "Bladed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"cAqagnqyBpSC4wgM": {
+			"__ITEM_NAME__": "Napalm",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"cs76CKLMxYAzhNhb": {
+			"__ITEM_NAME__": "Long Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"d00JoA8hC0XcVnlc": {
+			"__ITEM_NAME__": "Extra Flame Jets",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"dZh7tFPH917IF3UO": {
+			"__ITEM_NAME__": "Suppressor",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"dgWySoP4IQ9p2uyO": {
+			"__ITEM_NAME__": "Recon Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"dh2R5SMlhGBmDuAU": {
+			"__ITEM_NAME__": "Large Magazine",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"e1ycQYWvjDktlxvu": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"eakJcz2neDjGIWWP": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"egIL4wuvntMHhlqr": {
+			"__ITEM_NAME__": "Compensator",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"fTMm3IipqcnU6tm4": {
+			"__ITEM_NAME__": "Sharp",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"frKj2bS1FVy8Ny3O": {
+			"__ITEM_NAME__": "Spiked",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"fyaQkFSXyexqZc0u": {
+			"__ITEM_NAME__": "Short Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"hPa4NWlG4PcbM3E2": {
+			"__ITEM_NAME__": "Night Vision Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"hVD46UqAqiNB4f57": {
+			"__ITEM_NAME__": "Heating Coil",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"hfiueRXOH8ryrfrv": {
+			"__ITEM_NAME__": "Sharp",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"hzqISjGQIiMI1ZP7": {
+			"__ITEM_NAME__": "Beta Wave Tuner",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ihEGX2Ame6p1WW82": {
+			"__ITEM_NAME__": "Five-Crank Capacitor",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"iiF3omvvTgVv5LoP": {
+			"__ITEM_NAME__": "Shielded Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"inrCFrHdrIQrEXf1": {
+			"__ITEM_NAME__": "Photon Exciter",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"iqpxSXwVu0d13y7j": {
+			"__ITEM_NAME__": "Barbed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"jFCFFp1zj7awhWpN": {
+			"__ITEM_NAME__": "Sniper Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"mcjlBsMoWIiiNoVw": {
+			"__ITEM_NAME__": "Photon Exciter",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"mzi2nNJcbhMEnWIE": {
+			"__ITEM_NAME__": "Beam Focuser",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"nBQq6MTdf40kleS5": {
+			"__ITEM_NAME__": "Long Night Vision Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"nGgcu0NLeLIbc3Pi": {
+			"__ITEM_NAME__": "Automatic Piston",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"oiW2VvXVdhGgw4oL": {
+			"__ITEM_NAME__": ".38 Receiver",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ol8d48kNa9veV1kv": {
+			"__ITEM_NAME__": "Puncturing",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"op1VoOjGnziZ2S8V": {
+			"__ITEM_NAME__": "Standard Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ozBpt70cekLpM7aH": {
+			"__ITEM_NAME__": "Signal Repeater",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"p0r6B1DzWapL4wU5": {
+			"__ITEM_NAME__": "Advanced",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"pk8yYPVKXuuatunI": {
+			"__ITEM_NAME__": "Bayonet",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"pkYZNmGx0JPKquIC": {
+			"__ITEM_NAME__": "Recoil Compensating Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"pxflsyihN3fjKgYq": {
+			"__ITEM_NAME__": "Recoil Compensating Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"qASlWkpHosmgn97l": {
+			"__ITEM_NAME__": "Reflex Sight",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"rTLDO0WUB9euiP9T": {
+			"__ITEM_NAME__": "Targeting Computer",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"rdA0goilCAmpEqWx": {
+			"__ITEM_NAME__": "Electric Signal Carrier Antennae",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"rh3GtWKomZnQpS1H": {
+			"__ITEM_NAME__": "Reflex Sight",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"s1TJG5B9uGwUVZJg": {
+			"__ITEM_NAME__": "Compression Nozzle",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"t2DeDQRZXpZyN9ux": {
+			"__ITEM_NAME__": "Electrified",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"uOWSNksbDqlUOhJN": {
+			"__ITEM_NAME__": "Bladed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"uUiwz6PvOMdkU6yE": {
+			"__ITEM_NAME__": "Serrated Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"uWW6Yc9ZzjBHnlrz": {
+			"__ITEM_NAME__": "Flamer Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ueMDFFORXGGfNuYb": {
+			"__ITEM_NAME__": "Three-Crank Capacitor",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"vQ2PsttSdFUUDpN2": {
+			"__ITEM_NAME__": "Large Tank",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"vd2lBLBAJXhwijay": {
+			"__ITEM_NAME__": "Electrified Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"vq6OcwFKhScFr26X": {
+			"__ITEM_NAME__": "Serrated Blade",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"vyesQvmRObpdSNpO": {
+			"__ITEM_NAME__": "Short Night Vision Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"wQSPWsdrMfYqPAMO": {
+			"__ITEM_NAME__": "Heavy",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"wUd5pTA33zRH1AWW": {
+			"__ITEM_NAME__": "Short Night Vision Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"wWjvfUfknZOxxJlt": {
+			"__ITEM_NAME__": "Hardened",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"wo7U8PuV8h8oa0JY": {
+			"__ITEM_NAME__": "Automatic Barrel",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"wvsSsznT8GDmdoUa": {
+			"__ITEM_NAME__": "Long Night Vision Scope",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"x7XsKzM5Iyisd9lA": {
+			"__ITEM_NAME__": "Large Quick-Eject Mag",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"xBtUynQ88d6dGQgL": {
+			"__ITEM_NAME__": "Bladed",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"xg5FEwwagDUpedcL": {
+			"__ITEM_NAME__": "Beta Wave Tuner",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"xhKCtkvzwtowzx9K": {
+			"__ITEM_NAME__": "Vaporization Nozzle",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"yK9zc6hPHk1IRq01": {
+			"__ITEM_NAME__": "Chain-Wrapped",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ybNloPq9nZTqGAur": {
+			"__ITEM_NAME__": ".308 Receiver",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"yxSF6qdbdO4FYaQb": {
+			"__ITEM_NAME__": "Vented",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"zAlW93haMYH8Nwp2": {
+			"__ITEM_NAME__": "Sharpshooter's Grip",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"zGyzL9NMjix36tgh": {
+			"__ITEM_NAME__": "Huge Tank",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"zbzoOm7wspRTM8PJ": {
+			"__ITEM_NAME__": "Marksman's Stock",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"zpUwoy1BLHyUXuvy": {
+			"__ITEM_NAME__": ".45 Receiver",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		},
+		"ztDgncL17xwZiN9p": {
+			"__ITEM_NAME__": "Six-Crank Capacitor",
+			"img": "systems/fallout/assets/icons/items/weapon_mod.svg"
+		}
+	},
+	"fallout.weapons": {
+		"1bgEBl5eFgkcDxmL": {
+			"__ITEM_NAME__": "Walking Cane",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"244Kf3MVUhEQQGsw": {
+			"__ITEM_NAME__": "Submachine Gun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"3CZ7jbXV7I5z757E": {
+			"__ITEM_NAME__": "Frag Grenade",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"3wCThKbCsMgAdrSg": {
+			"__ITEM_NAME__": "Syringer",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"4YCB81rMWJSZcgRI": {
+			"__ITEM_NAME__": "Bottlecap Mine",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"5TAOMd3GGpapiM6Q": {
+			"__ITEM_NAME__": "Minigun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"5gIryFE7WITrmSvY": {
+			"__ITEM_NAME__": "Fat Man",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"61inErKDohHmHoAV": {
+			"__ITEM_NAME__": "Throwing Knives",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"66p1lQmwPXZINPKn": {
+			"__ITEM_NAME__": "Rolling Pin",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"6xbkky55saFOXZSk": {
+			"__ITEM_NAME__": "Combat Knife",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"75n1EFSJw8xxti6s": {
+			"__ITEM_NAME__": "Flamer",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"7lXJbtwhMJwqp40D": {
+			"__ITEM_NAME__": "Pool Cue",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"8RVrftHzFootwBD5": {
+			"__ITEM_NAME__": "Shishkebab",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"9wxUVAnr3YsD3Uol": {
+			"__ITEM_NAME__": "Nuke Mine",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ADp33L4FN7QcbCJy": {
+			"__ITEM_NAME__": "Super Sledge",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"Ai4EeSDZl48zoJoL": {
+			"__ITEM_NAME__": "Frag Mine",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"AjqE0fT244w92onq": {
+			"__ITEM_NAME__": "Plasma Mine",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"As1o8LGO3CIaY2mD": {
+			"__ITEM_NAME__": "Nuka Grenade",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"CKolMtDxOzC8QdSD": {
+			"__ITEM_NAME__": "Board",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"CUlCBsWk1qipT1Ff": {
+			"__ITEM_NAME__": "Combat Shotgun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"CyxEyS2RLOuMLMa1": {
+			"__ITEM_NAME__": "Junk Jet",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"DnWvHyfz74QnnnGv": {
+			"__ITEM_NAME__": "Boxing Glove",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ECuihimhpmedOziD": {
+			"__ITEM_NAME__": "Gamma Gun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"Ee4TwfZnYmCF8CDE": {
+			"__ITEM_NAME__": "Gauss Rifle",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"EktSYEw86GEcqHeE": {
+			"__ITEM_NAME__": "Ripper",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"LCUp8GGg6nyJ8wa9": {
+			"__ITEM_NAME__": "Pulse Grenade",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"M4xWjxuABTWOefg2": {
+			"__ITEM_NAME__": "Plasma Gun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"M9xO5ZKoGsqbPxWr": {
+			"__ITEM_NAME__": "Sword",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"NRN7soVtcTwCRqaL": {
+			"__ITEM_NAME__": "Laser Gun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"NXjKSH1aRmZkq5PJ": {
+			"__ITEM_NAME__": "Molotov Cocktail",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"OF1614SY9gYdGnjI": {
+			"__ITEM_NAME__": "Handy Rock",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"Pdmfy50DEM5oB9js": {
+			"__ITEM_NAME__": "Tire Iron",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"PiFmAFrgnIJqwkNw": {
+			"__ITEM_NAME__": "Pipe Gun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"QYgc3wH8JS3YGJ34": {
+			"__ITEM_NAME__": "Buzz-Saw",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"QuYxQccl5EHdXTcT": {
+			"__ITEM_NAME__": "Unarmed Strike",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"VBDdPeRHrRcaZhGn": {
+			"__ITEM_NAME__": "Deathclaw Gauntlet",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"VFRfwbor9PwEKdRZ": {
+			"__ITEM_NAME__": "Pincer",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"Xq6k6PuQQbneO6w0": {
+			"__ITEM_NAME__": "Lead Pipe",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ZN2h6VGlcHQKzveB": {
+			"__ITEM_NAME__": "Assault Rifle",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"aIMdoy67zhbaYcQG": {
+			"__ITEM_NAME__": "Power Fist",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"bKHsUZI6Z6xrAEHg": {
+			"__ITEM_NAME__": "10mm Auto Pistol",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"bpbgoX9mNr23pFHR": {
+			"__ITEM_NAME__": "Hunting Rifle",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ccLXYRUueArLgLst": {
+			"__ITEM_NAME__": "Heavy Incinerator",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"d0qmxHsuKN14qmua": {
+			"__ITEM_NAME__": "Baseball Bat",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"eILamwepNIAhOY0J": {
+			"__ITEM_NAME__": "Pulse Mine",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ehsLCAMtk39LFHVa": {
+			"__ITEM_NAME__": "Pipe Wrench",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"fJI5l0xbl26ylvTI": {
+			"__ITEM_NAME__": "Institute Laser",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"iUh6c0EcJfZil9cZ": {
+			"__ITEM_NAME__": "Railway Rifle",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ijD12AylGdTDshsy": {
+			"__ITEM_NAME__": "Switchblade",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"iodz4xm3QDXNuhxf": {
+			"__ITEM_NAME__": "Javelin",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"jZstb7cuVXCJXPnj": {
+			"__ITEM_NAME__": "Baton",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ldIbeCgUhfS2AVHV": {
+			"__ITEM_NAME__": "Pipe Revolver",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"mRB3W7wrHDbWhb9i": {
+			"__ITEM_NAME__": "10mm Pistol",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"mmmxQfbZxwNWA45f": {
+			"__ITEM_NAME__": "Aluminum Baseball Bat",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"nZ7XeE2gQy2EEgWH": {
+			"__ITEM_NAME__": "Flare Gun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"o1QbQfhTLFphrxkB": {
+			"__ITEM_NAME__": "Laser Musket",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"obRp9CZJJ6liIl49": {
+			"__ITEM_NAME__": "Pipe Bolt-Action",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"pSshPAISbTrdooAk": {
+			"__ITEM_NAME__": "Gun Bash",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"pYMfuytsOCR3mxW8": {
+			"__ITEM_NAME__": "Tomahawk",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"ppzmY6xo2f66TmMC": {
+			"__ITEM_NAME__": "Laser Emitter",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"q3RjTNEYvfHVBzVk": {
+			"__ITEM_NAME__": "Flamer",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"qRc6hN6zHdrsZ0nd": {
+			"__ITEM_NAME__": "Combat Rifle",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"s3RYAqoL6U3CVVeb": {
+			"__ITEM_NAME__": "Missile Launcher",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"tNyHslvLL11qSlhc": {
+			"__ITEM_NAME__": "Double-Barrel Shotgun",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"tWhlezJ5cgDZ7SQO": {
+			"__ITEM_NAME__": "Gun Bash (1H)",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"tedK8NNLvjIQf4wm": {
+			"__ITEM_NAME__": "Plasma Grenade",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"uGNGa0KBcJq3YFvc": {
+			"__ITEM_NAME__": "Machete",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"uyx46lw2PXh08m1P": {
+			"__ITEM_NAME__": "Gatling Laser",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"vXTMQj76ShuwQXkd": {
+			"__ITEM_NAME__": "Baseball Grenade",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"wqNw0xItJ29W24sm": {
+			"__ITEM_NAME__": ".44 Pistol",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"yB39echbNG7KpWny": {
+			"__ITEM_NAME__": "Knuckles",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		},
+		"yrLghAxk6uynbFaq": {
+			"__ITEM_NAME__": "Sledgehammer",
+			"img": "systems/fallout/assets/icons/items/weapon.svg"
+		}
+	}
+}

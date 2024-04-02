@@ -1,0 +1,21 @@
+{
+	"_id": "vOXz7dt1WUCZu2Al",
+	"_key": "!items!vOXz7dt1WUCZu2Al",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Torch",
+	"system": {
+		"cost": 10,
+		"description": "<p>A long branch or length of scrap metal, with a head wrapped in cloth soaked in a flammable liquid such as alcohol or gasoline. A decent enough improvised light source, and reusable to an extent.</p>",
+		"effect": "<p>Generates bright light within close range until the end of the current scene, Requires an INT + Survival test to light, difficulty 1, +1 for each previous use</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 1,
+		"source": "",
+		"stashed": false,
+		"weight": 1
+	},
+	"type": "miscellany"
+}

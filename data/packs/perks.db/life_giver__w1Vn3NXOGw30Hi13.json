@@ -1,0 +1,22 @@
+{
+	"_id": "w1Vn3NXOGw30Hi13",
+	"_key": "!items!w1Vn3NXOGw30Hi13",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Life Giver",
+	"system": {
+		"description": "<p>Increase your maximum health points by your Endurance rank. Each time you take this perk, the level requirement increases by 5.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 5,
+			"value": 0
+		},
+		"requirements": "Level 5+",
+		"source": ""
+	},
+	"type": "perk"
+}

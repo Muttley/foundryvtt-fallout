@@ -40,7 +40,7 @@
 			"list": "",
 			"max": 0
 		},
-		"powered": "",
+		"powered": false,
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {

@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 40,
 		"description": "<p><span class=\"fontstyle0\">Produced by the Nuka-Cola Corporation after it bought the patent for a rival beverage, Merle&rsquo;s Very Cherry Soda, Nuka-Cherry is a blend of the typical beloved Nuka-Cola recipe with a distinctive cherry flavoring and a bright red color. The refreshing taste and high sugar and caffeine contents of the drink make it an ideal pick-me-up for those needing a burst of energy.</span></p>\n<p><span class=\"fontstyle0\">You receive 1 cap upon opening and drinking a bottle of Nuka-Cherry.</span> </p>",

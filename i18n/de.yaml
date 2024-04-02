@@ -25,6 +25,14 @@ FALLOUT.Add: Add
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
 FALLOUT.APP.ChemDoseManager.title: Chem Doses
+FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
+FALLOUT.APP.PartySleep.description: How Long?
+FALLOUT.APP.PartySleep.hour: 1 hour
+FALLOUT.APP.PartySleep.hours: "{length} hours"
+FALLOUT.APP.PartySleep.safe_location: Location Safe?
+FALLOUT.APP.PartySleep.title: Party Sleep
+FALLOUT.APP.ModuleArtConfig.items: Items
+FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APPAREL.armor: Rüstung
 FALLOUT.APPAREL.clothing: Kleidung
 FALLOUT.APPAREL.headgear: Kopfbedeckung
@@ -95,13 +103,19 @@ FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}
 FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now {hungerLevel}, {thirstLevel} and {sleepLevel}"
+FALLOUT.CHAT_MESSAGE.condition-change.title: Condition Change
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Your fatigue has increased by +{level} due to your {condition} level
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Fatigue Level
+FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
+FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
+FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
-FALLOUT.CHAT_MESSAGE.consumed.hunger_level: Hunger Level
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
-FALLOUT.CHAT_MESSAGE.consumed.thirst_level: Thirst Level
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes 1 radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHEM: Chem
@@ -113,6 +127,14 @@ FALLOUT.CREATURE.guns: Schusswaffen
 FALLOUT.CREATURE.melee: Nahkampf
 FALLOUT.CREATURE.mind: Geist
 FALLOUT.CREATURE.other: Anderes
+FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
+FALLOUT.dialog.roll_ammo.button.create: Create New
+FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
+FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
+FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_ammo.title: Roll Ammunition
+FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
 FALLOUT.EffectCreate: Erzeuge Effekt
 FALLOUT.EffectDelete: Entferne Effekt
 FALLOUT.EffectEdit: Bearbeite Effektt
@@ -138,6 +160,7 @@ FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Legendary
 FALLOUT.NPC_TYPES.major: Major
 FALLOUT.NPC_TYPES.mighty: Mighty
+FALLOUT.NPC_TYPES.minion: Minion
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Anderes
@@ -146,10 +169,13 @@ FALLOUT.RANGE.close: C
 FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
-FALLOUT.RESISTANCE.energy: Energie
-FALLOUT.RESISTANCE.physical: Körperlich
-FALLOUT.RESISTANCE.poison: Gift
-FALLOUT.RESISTANCE.radiation: Strahlung
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
+FALLOUT.RESISTANCE.energy: Energy DR
+FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
+FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
+FALLOUT.RESISTANCE.physical: Physical DR
+FALLOUT.RESISTANCE.poison: Poison DR
+FALLOUT.RESISTANCE.radiation: Radiation DR
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SETTLEMENT_ACTION.Build: Build
@@ -194,9 +220,10 @@ FALLOUT.SKILL.Survival: Überleben
 FALLOUT.SKILL.Throwing: Wurfwaffen
 FALLOUT.SKILL.Unarmed: Waffenlos
 FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
+FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Extras
 FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
@@ -204,9 +231,11 @@ FALLOUT.TEMPLATES.Add_Trait: Add Trait
 FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
 FALLOUT.TEMPLATES.Addictive: Süchtigmachend
 FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
+FALLOUT.TEMPLATES.AllLocations: All Locations
 FALLOUT.TEMPLATES.AMMO: MUNI
 FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
 FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Type: Kleidungsart
 FALLOUT.TEMPLATES.Apparel: Kleidung
@@ -216,6 +245,8 @@ FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ANGRIFFE
 FALLOUT.TEMPLATES.Attribute: Eigenschaft
 FALLOUT.TEMPLATES.Attributes: Eigenschaften
+FALLOUT.TEMPLATES.Butchery: Butchery
+FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Compl: Kompl.
 FALLOUT.TEMPLATES.Complications: Komplikationen
 FALLOUT.TEMPLATES.CONDITIONS: ZUSTÄNDE
@@ -258,6 +289,7 @@ FALLOUT.TEMPLATES.Creature_Attribute: Attribut der Kreatur
 FALLOUT.TEMPLATES.Creature_Skill: Fertigkeit der Kreatur
 FALLOUT.TEMPLATES.current: aktuell
 FALLOUT.TEMPLATES.CurrentLeader: Current Leader
+FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
 FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
 FALLOUT.TEMPLATES.DAMAGE: SCHADEN
@@ -283,6 +315,7 @@ FALLOUT.TEMPLATES.HitLocationLabel: Trefferzone
 FALLOUT.TEMPLATES.HP_Healed: Trefferpunkte
 FALLOUT.TEMPLATES.HP: HP
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
+FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: VERLETZUNGEN
 FALLOUT.TEMPLATES.Injury_Left_Click: Verletzung (Linksklick)
 FALLOUT.TEMPLATES.Irradiated: Verstrahlt
@@ -313,6 +346,7 @@ FALLOUT.TEMPLATES.POISON: GIFT
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: ENERGIERÜSTUNG GESUNDHEIT
 FALLOUT.TEMPLATES.Prepared: Prepared
 FALLOUT.TEMPLATES.Publication: Publication
+FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
 FALLOUT.TEMPLATES.Qualities: Eigenschaften
 FALLOUT.TEMPLATES.RAD: STR
 FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
@@ -326,6 +360,8 @@ FALLOUT.TEMPLATES.Requirements: Voraussetzungen
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistenzen
 FALLOUT.TEMPLATES.RESISTANCES: RESISTENZEN
+FALLOUT.TEMPLATES.Salvage: Salvage
+FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
 FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
 FALLOUT.TEMPLATES.Skill_Tag: Spezialfertigkeit
 FALLOUT.TEMPLATES.Skill_Value: Fertigkeitswert
@@ -341,9 +377,9 @@ FALLOUT.TEMPLATES.Tag: Spez.
 FALLOUT.TEMPLATES.Tear: Abnutzung & Verschleiß
 FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
 FALLOUT.TEMPLATES.TN: ZW
-FALLOUT.TEMPLATES.Total: Gesamt
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Behandelte Verletzung (Rechtsklick)
+FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
 FALLOUT.TEMPLATES.Type: Type
 FALLOUT.TEMPLATES.Use_Agility: Nutze Beweglichkeit
 FALLOUT.TEMPLATES.Use_Charisma: Nutze Charisma
@@ -352,12 +388,14 @@ FALLOUT.TEMPLATES.Use_Intelligence: Nutze Intelligenz
 FALLOUT.TEMPLATES.Use_Luck: Nutze Glück
 FALLOUT.TEMPLATES.Use_Perception: Nutze Wahrnehmung
 FALLOUT.TEMPLATES.Use_Strength: Nutze Stärke
+FALLOUT.TEMPLATES.Wealth: Wealth
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: WAFFENEIGENSCHAFTEN
 FALLOUT.TEMPLATES.Weapon_Type: Waffenart
 FALLOUT.TEMPLATES.Weapon: Weapon
 FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Waffen
+FALLOUT.TEMPLATES.WellRested: Well Rested
 FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
 FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
@@ -382,10 +420,13 @@ FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to mak
 FALLOUT.TOOLTIPS.WeaponQuality.mine: When a Mine is placed onto a surface and primed, it becomes a dangerous object, inflicting its damage upon anyone who comes within Reach of it (and upon additional characters, if it has the Blast quality).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: The sights of a weapon with Night Vision have been made to allow you to see more clearly in the dark. When you Aim with a Night Vision weapon, you ignore any increase in the difficulty of an attack due to darkness.
 FALLOUT.TOOLTIPS.WeaponQuality.parry: When an enemy attempts a melee attack against you, and you are wielding a Parry weapon, you may spend 1 AP to add +1 to your Defense against that attack.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: When you Aim with a Recon weapon, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
+FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
@@ -417,6 +458,8 @@ FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Anzahl
 FALLOUT.UI.Rarity: Seltenheit
 FALLOUT.UI.ROBOT_MODULES: Roboter Module
+FALLOUT.UI.SaveChanges: Save Changes
+FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Sonderfähigkeit
 FALLOUT.UI.stashed: Verstaut
 FALLOUT.UI.Type: Art
@@ -452,15 +495,19 @@ FALLOUT.WEAPONS.weaponQuality.limited: Limited
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.night_vision: Night Vision
 FALLOUT.WEAPONS.weaponQuality.parry: Parieren
+FALLOUT.WEAPONS.weaponQuality.placed: Placed
+FALLOUT.WEAPONS.weaponQuality.recoil_x: Recoil
 FALLOUT.WEAPONS.weaponQuality.recon: Aufklärung
 FALLOUT.WEAPONS.weaponQuality.reliable: Zuverlässig
 FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
 FALLOUT.WEAPONS.weaponQuality.suppressed: Schallgedämpft
+FALLOUT.WEAPONS.weaponQuality.surge: Surge
 FALLOUT.WEAPONS.weaponQuality.thrown: Geworfen
 FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unzuverlässig
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
+FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
 FALLOUT.WEAPONS.weaponType.explosives: Sprengstoffe

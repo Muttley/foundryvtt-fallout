@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 50,
 		"description": "<p><span class=\"fontstyle0\">A piece of meat cut from the body of a dead radstag. It&rsquo;s bulky but can produce nutritious and satisfying meals.</span></p>\n<p><span class=\"fontstyle0\">Radstag meat can be cooked to make Grilled Radstag or used as an ingredient to make Radstag Stew.</span> </p>",

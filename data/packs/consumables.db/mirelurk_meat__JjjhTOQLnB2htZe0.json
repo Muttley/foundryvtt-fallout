@@ -10,6 +10,8 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": true,
+		"consumableGroup": "",
 		"consumableType": "food",
 		"cost": 18,
 		"description": "<p><span class=\"fontstyle0\">The meat from dead mirelurks. This tends to be tougher and of poorer quality than the meat which comes from the weaker softshell mirelurk, but it is still entirely edible.</span></p>\n<p><span class=\"fontstyle0\">Mirelurk meat is a key ingredient in Mirelurk Cake and can be cooked to produce roasted mirelurk meat.</span> </p>",

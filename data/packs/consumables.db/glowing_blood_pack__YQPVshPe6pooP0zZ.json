@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 30,
 		"description": "<p><span class=\"fontstyle0\">A blood bag filled with a luminescent green fluid. If you can stomach the acrid, metallic taste, they have potent restorative properties and help protect the body against radiation poisoning for a short while.</span></p>",

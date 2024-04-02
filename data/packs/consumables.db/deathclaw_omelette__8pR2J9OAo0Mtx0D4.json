@@ -1,0 +1,34 @@
+{
+	"_id": "8pR2J9OAo0Mtx0D4",
+	"_key": "!items!8pR2J9OAo0Mtx0D4",
+	"effects": [
+	],
+	"folder": "9QCCOyxmiCDBRWbX",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Deathclaw Omelette",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": true,
+		"butchery": false,
+		"consumableGroup": "",
+		"consumableType": "food",
+		"cost": 80,
+		"description": "<p><span class=\"fontstyle0\">An omelette made from a deathclaw egg. In addition to being highly nutritious, it stimulates the natural healing processes of the body, allowing a person to recover more quickly from harm for a while after eating.</span> </p>",
+		"duration": "",
+		"effect": "<p>If next scene is combat, regain 1HP at the start of each turn</p>\n<p>&nbsp;</p>",
+		"favorite": false,
+		"group": "",
+		"hp": 11,
+		"irradiated": false,
+		"prepared": true,
+		"quantity": 1,
+		"radiation": 0,
+		"rarity": 4,
+		"source": "",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0
+	},
+	"type": "consumable"
+}

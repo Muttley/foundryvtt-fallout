@@ -1,0 +1,33 @@
+<form>
+	{{#each config}}
+		<div
+			class="form-group-stacked"
+			style="flex-wrap: nowrap; justify-content: space-between;"
+			data-id="{{id}}"
+		>
+			<label style="flex: 1 0 auto;">
+				{{label}}
+			</label>
+			<div
+				class="form-fields"
+				style="flex: 0 0 auto; display: flex; gap: .5rem;"
+			>
+				<label style="display: flex; align-items: center;">
+					{{localize "FALLOUT.APP.ModuleArtConfig.items"}}
+					<input
+						style="width: 16px; height: 16px;"
+						type="checkbox"
+						name="{{id}}.items"
+						{{checked items}}
+					>
+				</label>
+			</div>
+		</div>
+	{{/each}}
+	<footer class="sheet-footer flexrow">
+		<button type="submit">
+			<i class="far fa-save"></i>
+			{{localize "FALLOUT.UI.SaveChanges"}}
+		</button>
+	</footer>
+</form>

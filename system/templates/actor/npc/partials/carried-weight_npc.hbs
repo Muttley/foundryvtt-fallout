@@ -2,18 +2,46 @@
 	class="box no-padding"
 	style="margin-top: 5px; margin-bottom: 0px;"
 >
-	<div class="flexrow align-mid">
-		<div style="text-align: right;">
+	<div
+		class="flexrow align-mid"
+		style="margin: 5px; padding: 5px;"
+	>
+		<span>
 			<label>
-				{{localize "FALLOUT.TEMPLATES.Total"}}:
-				{{system.carryWeight.total}} /
-				{{system.carryWeight.base}}
-				{{#if useKgs}}
-					{{localize "FALLOUT.TEMPLATES.kgs"}}
-				{{else}}
-					{{localize "FALLOUT.TEMPLATES.lbs"}}
-				{{/if}}
+				<a
+					class="roll-wealth"
+					data-tooltip="Roll Caps"
+				>
+					<i class="fa-solid fa-coins"></i>
+				</a>
+				{{localize 'FALLOUT.TEMPLATES.Wealth'}}
+				<input
+					type="text"
+					class="num-short-2"
+					name="system.wealth"
+					value="{{system.wealth}}"
+				>
 			</label>
+		</span>
+		<span>
+			<label>
+				{{localize 'FALLOUT.UI.CAPS'}}
+				<input
+					type="text"
+					class="num-short-3"
+					name="system.currency.caps"
+					value="{{system.currency.caps}}"
+				>
+			</label>
+		</span>
+		<div style="text-align: right;">
+			{{system.carryWeight.total}} /
+			{{system.carryWeight.base}}
+			{{#if useKgs}}
+				{{localize "FALLOUT.TEMPLATES.kgs"}}
+			{{else}}
+				{{localize "FALLOUT.TEMPLATES.lbs"}}
+			{{/if}}
 		</div>
 	</div>
 </div>
