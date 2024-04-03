@@ -31,8 +31,8 @@ FALLOUT.APP.PartySleep.hour: 1 heure
 FALLOUT.APP.PartySleep.hours: "{length} heures"
 FALLOUT.APP.PartySleep.safe_location: Endroit sécurisé ?
 FALLOUT.APP.PartySleep.title: Sommeil du groupe
-FALLOUT.APP.ModuleArtConfig.items: Items
-FALLOUT.APP.ModuleArtConfig.title: Configure Art
+FALLOUT.APP.ModuleArtConfig.items: Objets
+FALLOUT.APP.ModuleArtConfig.title: Configurer l'illustration
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Couvre-chefs
@@ -160,7 +160,7 @@ FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Légendaire
 FALLOUT.NPC_TYPES.major: Majeur
 FALLOUT.NPC_TYPES.mighty: Redoutable
-FALLOUT.NPC_TYPES.minion: Minion
+FALLOUT.NPC_TYPES.minion: PNJ de second plan
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Autres
@@ -231,7 +231,7 @@ FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
 FALLOUT.TEMPLATES.AddictionNumber: Puissance de l'addiction
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
-FALLOUT.TEMPLATES.AllLocations: All Locations
+FALLOUT.TEMPLATES.AllLocations: Toutes les localisations
 FALLOUT.TEMPLATES.AMMO: MUN
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
@@ -246,7 +246,7 @@ FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
 FALLOUT.TEMPLATES.Attributes: Attributs
 FALLOUT.TEMPLATES.Butchery: Dépeçage
-FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
+FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
@@ -360,8 +360,8 @@ FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
 FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
-FALLOUT.TEMPLATES.Salvage: Salvage
-FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
+FALLOUT.TEMPLATES.Salvage: Récupération
+FALLOUT.TEMPLATES.SalvageTooltip: Contrôle SR Récupération
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
