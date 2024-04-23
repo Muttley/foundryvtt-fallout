@@ -8,6 +8,7 @@
 
 ## Chores
 - [#289] Merge Polish translation updates from Crowdin
+- [#292] Merge French translation updates from Crowdin
 
 ---
 
