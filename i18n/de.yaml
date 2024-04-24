@@ -12,24 +12,24 @@ FALLOUT.AbilityInt: Intelligenz
 FALLOUT.AbilityLuc: Glück
 FALLOUT.AbilityPer: Wahrnehmung
 FALLOUT.AbilityStr: Stärke
-FALLOUT.actor.inventory.materials.common: Common
+FALLOUT.actor.inventory.materials.common: Gewöhnlich
 FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.rare: Rare
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
-FALLOUT.Actor.Warnings.ActiveEffectOverride: This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.
-FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
-FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
-FALLOUT.Add: Add
-FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
-FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
-FALLOUT.APP.ChemDoseManager.title: Chem Doses
-FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
-FALLOUT.APP.PartySleep.description: How Long?
-FALLOUT.APP.PartySleep.hour: 1 hour
-FALLOUT.APP.PartySleep.hours: "{length} hours"
-FALLOUT.APP.PartySleep.safe_location: Location Safe?
+FALLOUT.actor.inventory.materials.label: Materialien
+FALLOUT.actor.inventory.materials.rare: Selten
+FALLOUT.actor.inventory.materials.uncommon: Ungewöhnlich
+FALLOUT.Actor.Warnings.ActiveEffectOverride: Der Wert wird durch einen aktiven Effekt modifiziert und kann nicht bearbeitet werden. Deaktiviere den Effekt, um ihn zu bearbeiten.
+FALLOUT.Actor.Warnings.DerivedValue: Dies ist ein automatisch berechneter Wert der nicht bearbeitet werden kann.
+FALLOUT.Actor.Warnings.NpcAlreadyResident: Der NPC ist bereits Bewohner von {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Ein Siedler mit Akteur UUID {uuid} wurde nicht gefunden so, dass er aus {settlementName} entfernt wurde
+FALLOUT.Add: Hinzufügen
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Alles zurücksetzen
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Alle Chem Dosen zurücksetzen
+FALLOUT.APP.ChemDoseManager.title: Chem Dosen
+FALLOUT.APP.PartySleep.chat_message: Die Gruppe schläft {duration}.
+FALLOUT.APP.PartySleep.description: Wie lange?
+FALLOUT.APP.PartySleep.hour: 1 Stunde
+FALLOUT.APP.PartySleep.hours: "{length} Stunden"
+FALLOUT.APP.PartySleep.safe_location: Ist der Standort gesichert?
 FALLOUT.APP.PartySleep.title: Party Sleep
 FALLOUT.APP.ModuleArtConfig.items: Items
 FALLOUT.APP.ModuleArtConfig.title: Configure Art
