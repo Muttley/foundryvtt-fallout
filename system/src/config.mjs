@@ -332,7 +332,6 @@ FALLOUT.WEAPON_SKILLS = {
 FALLOUT.WEAPON_TYPES = {
 	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
 	bows: "FALLOUT.WEAPONS.weaponType.bows",
-	creatureAttack: "FALLOUT.WEAPONS.weaponType.creatureAttack",
 	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
 	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",

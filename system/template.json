@@ -644,6 +644,8 @@
 			"ammoPerShot": 1,
 			"attribute": "",
 			"condition": "",
+			"creatureAttribute": "",
+			"creatureSkill": "",
 			"damage": {
 				"damageEffect": {
 					"arc": {
@@ -693,7 +695,7 @@
 					"poison": false,
 					"radiation": false
 				},
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,

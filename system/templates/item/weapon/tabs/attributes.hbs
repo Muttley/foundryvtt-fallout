@@ -4,13 +4,14 @@
 			{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}
 		</label>
 		<select name="system.weaponType">
+			<option value="">&mdash;</option>
 			{{selectOptions FALLOUT.WEAPON_TYPES
 				selected=system.weaponType
 			}}
 		</select>
 	</div>
 
-	{{#if (isCreaturesWeapon item)}}
+	{{#if isOwnedByCreature}}
 		<div class="resource-row grid bgOdd">
 			<div class="flexrow align-mid">
 				<label
@@ -19,9 +20,10 @@
 				>
 					{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
 				</label>
-				<select name="system.attribute">
+				<select name="system.creatureAttribute">
+					<option value="">&mdash;</option>
 					{{selectOptions FALLOUT.CREATURE_ATTRIBUTES
-						selected=system.attribute
+						selected=system.creatureAttribute
 					}}
 				</select>
 			</div>
@@ -32,9 +34,10 @@
 				>
 					{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
 				</label>
-				<select name="system.skill">
+				<select name="system.creatureSkill">
+					<option value="">&mdash;</option>
 					{{selectOptions FALLOUT.CREATURE_SKILLS
-						selected=system.skill
+						selected=system.creatureSkill
 					}}
 				</select>
 			</div>
@@ -46,8 +49,9 @@
 			{{localize "FALLOUT.TEMPLATES.DAMAGE"}}
 		</label>
 		<input
-			type="number"
+			data-dtype="Number"
 			name="system.damage.rating"
+			type="number"
 			value="{{system.damage.rating}}"
 		>
 	</div>

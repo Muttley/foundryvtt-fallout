@@ -265,20 +265,25 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			let attribute;
 			let rollName = item.name;
 			let skill;
-			let skillName;
 
-			if (item.actor?.type === "creature") {
-				skillName = game.i18n.localize(
-					`FALLOUT.CREATURE.${item.system.skill}`
-				);
-				skill = item.actor.system[item.system.skill];
+			if (item.isOwnedByCreature) {
+				const creatureAttribute = item.system.creatureAttribute ?? "";
+				const creatureSkill = item.system.creatureSkill ?? "";
+
+				if (creatureSkill === "" || creatureAttribute === "") {
+					return ui.notifications.warn(
+						game.i18n.localize("FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration")
+					);
+				}
+
+				attribute = item.actor.system[creatureAttribute];
+
+				skill = item.actor.system[creatureSkill];
 				skill.tag = true;
-				attribute = item.actor.system[item.system.attribute];
 			}
 			else {
-				skillName = CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
-
-				let skillItem = item.actor.items.find(i => i.name === skillName);
+				const skillName = CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+				const skillItem = item.actor.items.find(i => i.name === skillName);
 
 				if (skillItem) {
 					skill = skillItem.system;
@@ -354,6 +359,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			if (["meleeWeapons", "unarmed"].includes(item.system.weaponType)) {
 				let damageBonus = this.actor.system?.meleeDamage?.value ?? 0;
 				numOfDice += damageBonus;
+			}
+
+			if (numOfDice <= 0) {
+				return ui.notifications.warn(
+					game.i18n.localize("FALLOUT.ERRORS.ThisWeaponDoesNoDamage")
+				);
 			}
 
 			let rollName = item.name;

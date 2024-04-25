@@ -126,6 +126,8 @@ export default class FalloutItemSheet extends ItemSheet {
 			context.damageEffects = damageEffects.sort(
 				(a, b) => a.label.localeCompare(b.label)
 			);
+
+			context.isOwnedByCreature = item.isOwnedByCreature;
 		}
 
 		if (item.type === "object_or_structure") {
