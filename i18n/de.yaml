@@ -164,7 +164,7 @@ FALLOUT.NPC_TYPES.minion: Begleiter
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Bemerkenswert
 FALLOUT.OTHER: Anderes
-FALLOUT.powered: Powered
+FALLOUT.powered: Angetrieben
 FALLOUT.RANGE.close: "N"
 FALLOUT.RANGE.extreme: X
 FALLOUT.RANGE.long: L
@@ -228,7 +228,7 @@ FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Extras
 FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
 FALLOUT.TEMPLATES.Add_Trait: Merkmal hinzuf
-FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
+FALLOUT.TEMPLATES.AddictionNumber: Suchtwert
 FALLOUT.TEMPLATES.Addictive: Süchtigmachend
 FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
 FALLOUT.TEMPLATES.AllLocations: Alle Standorte
@@ -409,28 +409,28 @@ FALLOUT.TOOLTIPS.DamageEffect.vicious: Der Angriff verursacht +1 Schaden für je
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Wenn du die Nebenaktion Zielen ausführst, bevor du mit einer Präzisen Waffe angreifst, darfst du bis zu 3 AP ausgeben, um +1 @fos[DC] pro ausgegebenen AP zum Schaden des Angriffs hinzuzufügen. Wenn du den Schaden auf diese Weise erhöhst, kannst du keine Munition für zusätzlichen Schaden ausgeben. Eine Waffe kann nicht gleichzeitig Präzise und Ungenau sein.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: "Diese Waffe verschießt ihre Munition in einer deutlich höheren Feuerrate wie normale Waffen: Wann immer \ndu einen Schuss Munition ausgeben würdest, verschießt sie stattdessen eine Serie von X Schüssen. Wann immer du X Munition ausgibst, um den Schaden dieser Waffe zu erhöhen, füge +1CD (bis zu einer maximalen Anzahl an Feuerstößen, die der Feuerrate der Waffe entspricht) hinzu. Zusätzliche Verwendung von Munition, wie beim Streuschaden Effekt, verbraucht X Munition für jede 1 Munition die normalerweise verwendet wird."
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Wenn du einen Angriff mit einer Explosivwaffe ausführst, zielst du nicht auf einen einzelnen Gegner. Stattdessen wählst du eine einzelne Zone, die du sehen kannst, und legst die entsprechende Fertigkeitsprobe für den Angriff ab, mit einer grundlegenden Schwierigkeit von 2 (wie üblich an die Reichweite angepasst). Wenn du erfolgreich bist, erleidet jede Kreatur (sowie alle sonstigen Ziele, die Schaden erleiden können) in dieser Zone den Schaden der Waffe. Wenn du scheiterst, ist dein fehlgegangener Angriff weniger wirksam: würfle nur die Hälfte der @fos[DC] Waffe, um den Schaden zu bestimmen, den die Kreaturen in der Zielzone erleiden, und ignoriere die normalen Schadenseffekte der Waffe."
-FALLOUT.TOOLTIPS.WeaponQuality.bombard: "The weapon can deliver a series of explosions over a wide area. This functions identically to the Blast quality, with one addition: When an attack is made with the weapon, you may spend additional ammunition to target additional zones. Each additional zone requires that 2 ammunition be spent, and additional zones must be adjacent to the initial target zone. Ammunition spent to target additional zones is limited by the weapon’s Fire Rate."
+FALLOUT.TOOLTIPS.WeaponQuality.bombard: "Die Waffe kann eine Reihe von Explosionen in einem großen Bereich auslösen. Die Funktionsweise ist identisch mit der der Explosionsqualität, mit einem Zusatz: Bei einem Angriff mit der Waffe kann man zusätzliche Munition ausgeben, um weitere Zonen zu treffen. Für jede zusätzliche Zone müssen 2 Stück Munition ausgegeben werden, und die zusätzlichen Zonen müssen an die ursprüngliche Zielzone angrenzen. Die Munition, die für zusätzliche Zonen ausgegeben wird, ist durch die Feuerrate der Waffe begrenzt."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Eine Waffe für beengte Verhältnisse ist leicht auf kurze Distanz zu verwenden und erleidet keine Schwierigkeitserhöhung, wenn sie in Armlänge zu einem Gegner eingesetzt wird.
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Eine Verborgene Waffe ist klein oder anderweitig leicht an der eigenen Person zu verstecken. Feinde entdecken eine Verborgene Waffe nicht, solange du sie nicht in der Hand hältst. Sie können sie entdecken, wenn sie eine gründliche Suche durchführen und eine erfolgreiche Probe auf WAH + Überleben mit einer Schwierigkeit von 2 ablegen.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Die Schwierigkeit einer Fertigkeitsprobe zur Behandlung von Verletzungen, die durch eine schwächende Waffe verursacht wurden, ist um +1 erhöht.
-FALLOUT.TOOLTIPS.WeaponQuality.delay_x: The weapon operates on a timer or fuse, and will not detonate immediately. A Thrown Delay weapon can be thrown normally to the target location, while other Delay weapons may be placed in their desired location. A Delay (1) weapon detonates at the start of the first round after it is thrown or otherwise triggered. A Delay (2) weapon detonates at the start of the round after that, and so on.
+FALLOUT.TOOLTIPS.WeaponQuality.delay_x: Die Waffe arbeitet mit einem Timer oder einer Zündschnur und wird nicht sofort gezündet. Eine geworfene Verzögerungswaffe kann normal zum Zielort geworfen werden, während andere Verzögerungswaffen am gewünschten Ort platziert werden können. Eine Verzögerungswaffe (1) detoniert zu Beginn der ersten Runde, nachdem sie geworfen oder anderweitig ausgelöst wurde. Eine Delay (2)-Waffe detoniert zu Beginn der darauf folgenden Runde usw.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Gatling-Waffen verschießen ihre Munition mit dem Zehnfachen der normalen Feuerrate: Wann immer du einen Schuss Munition ausgeben würdest, verschießt eine Gatling-Waffe stattdessen eine Serie von 10 Schüssen. Wann immer du Munition ausgibst, um den Schaden dieser Waffe zu erhöhen, füge +2 @fos[DC] pro Zehn-Schuss-Salve hinzu (bis zu einer maximalen Anzahl an Feuerstößen, die der Feuerrate der Waffe entspricht), statt der üblichen +1 @fos[DC] pro Schuss."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Wenn du einen Angriff mit einer Ungenauen Waffe ausführst, erhältst du keinen Vorteil durch die Nebenaktion Zielen. Eine Waffe kann nicht gleichzeitig Präzise und Ungenau sein.
-FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to make an attack at its ideal range.
+FALLOUT.TOOLTIPS.WeaponQuality.limited: Eine begrenzte Waffe kann nur für einen Angriff in ihrer idealen Reichweite verwendet werden.
 FALLOUT.TOOLTIPS.WeaponQuality.mine: Wenn eine Mine auf eine Fläche gelegt und scharfgemacht wird, wird sie zu einem gefährlichen Objekt, das seinen Schaden jedem zufügt, der sich ihr auf Armlänge nähert (sowie auch zusätzlichen Charakteren, wenn sie die Eigenschaft Explosiv besitzt).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Das Visier einer Waffe mit Nachtsicht wurde entwickelt, um damit in der Dunkelheit deutlich besser zu sehen. Wenn du mit einer Waffe mit Nachtsicht die Nebenaktion Zielen ausführst, ignorierst du jedwede Erhöhung der Schwierigkeit eines Angriffs aufgrund von Dunkelheit.
 FALLOUT.TOOLTIPS.WeaponQuality.parry: Wenn ein Gegner einen Nahkampfangriff gegen dich ausführt und du eine Waffe mit Parieren führst, kannst du 1 AP ausgeben, um deine Verteidigung gegen diesen Angriff um +1 zu erhöhen.
-FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
-FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: Der Sprengsatz wird an einem bestimmten Ort platziert und zur Detonation gebracht, oft entweder mit der Qualität Verzögerung (X) oder mit der Qualität Fernzündung. Das Platzieren des Sprengstoffs erfordert einen PER + Sprengstoff-Probe mit einer Schwierigkeit von 1; diese erhöht sich auf 2, wenn du seit deinem letzten Zug angegriffen wurdest. Ein Fehlschlag bedeutet, dass die Bombe nicht richtig platziert wurde und nicht detonieren wird (oder, wenn eine Komplikation gewürfelt wird, möglicherweise falsch platziert wurde und unerwartet detonieren wird). Erfolg bedeutet, dass die Bombe richtig platziert wurde.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: Diese Waffe hat einen besonders heftigen " Rückstoß ", wenn sie feuert, was für schwächere Benutzer zu viel sein könnte. Wenn der STR-Wert des Benutzers kleiner als X ist, erhöht sich der Schwierigkeitsgrad aller Angriffe mit der Waffe um 1. Du kannst diesen Effekt ignorieren, wenn du die Waffe beidhändig führst, oder wenn die Waffe bereits beidhändig ist, indem du sie gegen einen festen Gegenstand oder ein Zweibein stemmst.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: Wenn du mit einer Waffe mit Aufklärung die Nebenaktion Zielen ausführst, kannst du das Ziel markieren, auf das du gezielt hast. Der nächste Verbündete, der dieses Ziel angreift, darf bei seinem Angriff einen W20 neu würfeln.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: Während jeder Kampfbegegnung ignoriert eine Zuverlässige Waffe die erste Komplikation, die du bei einer Probe würfelst, um diese Waffe zu benutzen. Eine Waffe kann nicht gleichzeitig Zuverlässig und Unzuverlässig sein.
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: Die Waffe wird besonders langsam geladen. Nachdem diese Waffe abgefeuert wurde, musst du eine kleine Aktion ausgeben, um die Waffe nachzuladen, bevor sie wieder abgefeuert werden kann.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Sofern ein Gegner sich deiner nicht bewusst ist, wenn du mit einer Schallgedämpften Waffe angreifst, wird er den Angriff nicht bemerken, es sei denn, er ist das Ziel oder er besteht eine Probe auf WAH + Überleben mit einer Schwierigkeit von 2.
-FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
+FALLOUT.TOOLTIPS.WeaponQuality.surge: Die Waffe ist besonders schädlich für Maschinen wie Roboter und Powerrüstungen. Die Waffe erhält den Effekt "Vicious" gegen Roboter, Feinde in Power-Rüstung und andere mechanische oder elektronische Ziele (wie Geschütztürme).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: Eine Waffe mit Geworfen (N) kann als Fernkampfangriff mit einer idealen Reichweite von Nah geworfen werden. Eine Waffe mit Geworfen (M) kann als Fernkampfangriff mit einer idealen Reichweite von Mittel geworfen werden.
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Eine Zweihändige Waffe muss in zwei Händen gehalten werden, um effektiv genutzt werden zu können. Wenn du versuchst, eine Zweihändige Waffe mit nur einer Hand zu führen, erhöht sich die Schwierigkeit des Angriffs um +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Wenn du einen Angriff mit einer Unzuverlässigen Waffe ausführst, erhöht sich der Komplikationsbereich des Angriffs um 1. Eine Waffe kann nicht gleichzeitig Zuverlässig und Unzuverlässig sein.
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Diese Waffe war nie als Handwaffe gedacht. Wenn du mit einer Waffe angreifst, fügt dir jede Komplikation 2DC Strahlungsschaden durch radioaktive Rückstrahlung zu. Eine Waffe darf nicht gleichzeitig über zuverlässige und unstabile Strahlung verfügen.
 FALLOUT.UI.Add: Hinzufügen
 FALLOUT.UI.Addictions: Sucht
 FALLOUT.UI.APPAREL_MODS: Kleidung Mods
@@ -467,10 +467,10 @@ FALLOUT.UI.UNSORTED: Unsortiert
 FALLOUT.UI.WEAPON_MODS: Waffen Mods
 FALLOUT.UI.Weight: Gewicht
 FALLOUT.UI.Yes: Yes
-FALLOUT.WEAPONS.damageEffect.arc: Arc
+FALLOUT.WEAPONS.damageEffect.arc: Bogen
 FALLOUT.WEAPONS.damageEffect.breaking: Panzerbrechend
 FALLOUT.WEAPONS.damageEffect.burst: Feuerstoß
-FALLOUT.WEAPONS.damageEffect.freeze: Freeze
+FALLOUT.WEAPONS.damageEffect.freeze: Einfrieren
 FALLOUT.WEAPONS.damageEffect.persistent: Anhaltend
 FALLOUT.WEAPONS.damageEffect.piercing_x: Durchschlagend
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktiv
@@ -482,16 +482,16 @@ FALLOUT.WEAPONS.damageType.physical: Physisch
 FALLOUT.WEAPONS.damageType.poison: Gift
 FALLOUT.WEAPONS.damageType.radiation: Strahlung
 FALLOUT.WEAPONS.weaponQuality.accurate: Präzise
-FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Munitions-Hungrig
 FALLOUT.WEAPONS.weaponQuality.blast: Explosiv
-FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
+FALLOUT.WEAPONS.weaponQuality.bombard: Bombardement
 FALLOUT.WEAPONS.weaponQuality.close_quarters: Beengte Verhältnisse
 FALLOUT.WEAPONS.weaponQuality.concealed: Verborgen
 FALLOUT.WEAPONS.weaponQuality.debilitating: Schwächend
-FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
+FALLOUT.WEAPONS.weaponQuality.delay_x: Verzögerung
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Ungenau
-FALLOUT.WEAPONS.weaponQuality.limited: Limited
+FALLOUT.WEAPONS.weaponQuality.limited: Eingeschränkt
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.night_vision: Nachtsicht
 FALLOUT.WEAPONS.weaponQuality.parry: Parieren
@@ -499,15 +499,15 @@ FALLOUT.WEAPONS.weaponQuality.placed: Platziert
 FALLOUT.WEAPONS.weaponQuality.recoil_x: Rückstoß
 FALLOUT.WEAPONS.weaponQuality.recon: Aufklärung
 FALLOUT.WEAPONS.weaponQuality.reliable: Zuverlässig
-FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
+FALLOUT.WEAPONS.weaponQuality.slow_load: Langsames Nachladen
 FALLOUT.WEAPONS.weaponQuality.suppressed: Schallgedämpft
-FALLOUT.WEAPONS.weaponQuality.surge: Surge
+FALLOUT.WEAPONS.weaponQuality.surge: Schub
 FALLOUT.WEAPONS.weaponQuality.thrown: Geworfen
 FALLOUT.WEAPONS.weaponQuality.two_handed: Zweihändig
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unzuverlässig
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Instabile Strahlung
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
-FALLOUT.WEAPONS.weaponType.bows: Bows
+FALLOUT.WEAPONS.weaponType.bows: Bögen
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
 FALLOUT.WEAPONS.weaponType.explosives: Sprengstoffe
