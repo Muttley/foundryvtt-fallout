@@ -1,3 +1,10 @@
+# v11.8.1
+
+## Bugs
+- [#307] Update release to latest compedium data
+
+---
+
 # v11.8.0
 
 ## Enhancements

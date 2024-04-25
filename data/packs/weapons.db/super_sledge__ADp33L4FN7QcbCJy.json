@@ -12,6 +12,8 @@
 		"attribute": "",
 		"condition": "",
 		"cost": 180,
+		"creatureAttribute": "body",
+		"creatureSkill": "melee",
 		"damage": {
 			"damageEffect": {
 				"arc": {
