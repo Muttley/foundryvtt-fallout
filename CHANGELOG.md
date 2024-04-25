@@ -1,6 +1,27 @@
+# v11.8.0
+
+## Enhancements
+- [#283] Display Fire Rate outside of Weapon Item
+- [#290] Default new character SPECIAL to 5 as those are the defaults for character creation
+- [#300] Automatically detect that a weapon is owned by a Creature and not an NPC to simplify configuration
+- [#303] Improve error feedback when trying to use a misconfigured weapon
+
+## Bugs
+- [#291] Remove bogus "Boxing Times (Copy)" from compendiums
+- [#302] Creature Attribute and Creature Skill weapon settings can appear configured when they're not
+
+## Chores
+- [#289] Merge Polish translation updates from Crowdin
+- [#292] Merge French translation updates from Crowdin
+- [#299] Merge German translation updates from Crowdin
+
+*Many thanks to VTTom for their work on the German translations which now have 100% coverage at time of writing.*
+
+---
+
 # v11.7.0
 
-# Enhancements
+## Enhancements
 - [#269] Add ability to map your own images onto core compendium items
 
 An example custom module which is pre-configured with various empty compendiums and set up for item image mapping can be downloaded from here:
@@ -13,7 +34,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.6.1
 
-# Enhancements
+## Enhancements
 - [#280] Cache available Ammo items in compendiums at startup to improve performance on slow systems with large amounts of compendium items
 	* This will mean that if you add a new ammo item type it won't be available on Weapon item sheets until the system is reloaded.
 
@@ -21,7 +42,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.6.0
 
-# Enhancements
+## Enhancements
 - [#244] Add support for Minion NPC type
 - [#254] Creature & NPC Poison DR can have locational values
 	* The system will attempt to migrate existing Poison DR values, but as it was a free text field and there is no way of knowing the format people have used, it is advisable to check all NPC/Creature NPCs to ensure the Poison DR values are correct.

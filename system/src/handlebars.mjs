@@ -169,12 +169,12 @@ export default function registerHandlebarsHelpers() {
 	// 	return ++counter;
 	// });
 
-	Handlebars.registerHelper("isCreaturesWeapon", function(weapon) {
-		const isCreatureAttack = weapon.system.weaponType === "creatureAttack";
-		const isCreature = weapon.actor?.type === "creature";
+	// Handlebars.registerHelper("isCreaturesWeapon", function(weapon) {
+	// 	const isCreatureAttack = weapon.system.weaponType === "creatureAttack";
+	// 	const isCreature = weapon.actor?.type === "creature";
 
-		return (isCreatureAttack || isCreature);
-	});
+	// 	return (isCreatureAttack || isCreature);
+	// });
 
 	Handlebars.registerHelper("isWeaponUsingMeleeBonus", function(weapon, actor) {
 		if ((weapon.system.weaponType === "unarmed" || weapon.system.weaponType === "meleeWeapons") &&  actor?.type !== "creature") {

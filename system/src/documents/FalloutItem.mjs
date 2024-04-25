@@ -1,5 +1,9 @@
 export default class FalloutItem extends Item {
 
+	get isOwnedByCreature() {
+		return this.isOwned && this.actor.type === "creature";
+	}
+
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 

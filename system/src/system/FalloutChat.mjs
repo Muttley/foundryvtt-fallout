@@ -99,6 +99,7 @@ export default class FalloutChat {
 						dicesRolled: falloutRoll.dicesRolled,
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,
+						actor: message.flags.actor,
 						weapon: message.flags.weapon,
 					});
 				}

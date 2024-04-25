@@ -126,6 +126,8 @@ export default class FalloutItemSheet extends ItemSheet {
 			context.damageEffects = damageEffects.sort(
 				(a, b) => a.label.localeCompare(b.label)
 			);
+
+			context.isOwnedByCreature = item.isOwnedByCreature;
 		}
 
 		if (item.type === "object_or_structure") {
@@ -219,6 +221,29 @@ export default class FalloutItemSheet extends ItemSheet {
 				}
 			});
 		});
+	}
+
+	_onSubmit(event) {
+		if (this.item.type === "weapon") {
+			const updateData = this._getSubmitData();
+
+			const weaponType = updateData["system.weaponType"];
+			if (weaponType !== this.item.system.weaponType) {
+				updateData["system.creatureAttribute"] =
+					CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE[
+						weaponType
+					];
+				updateData["system.creatureSkill"] =
+					CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL[
+						weaponType
+					];
+			}
+
+			this.item.update(updateData);
+		}
+		else {
+			super._onSubmit(event);
+		}
 	}
 
 	async _rollAmmoQuantity(event) {

@@ -25,14 +25,14 @@ FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
+FALLOUT.APP.ModuleArtConfig.items: Objets
+FALLOUT.APP.ModuleArtConfig.title: Configurer l'illustration
 FALLOUT.APP.PartySleep.chat_message: Le groupe dort pendant {duration}.
 FALLOUT.APP.PartySleep.description: Combien de temps ?
 FALLOUT.APP.PartySleep.hour: 1 heure
 FALLOUT.APP.PartySleep.hours: "{length} heures"
 FALLOUT.APP.PartySleep.safe_location: Endroit sécurisé ?
 FALLOUT.APP.PartySleep.title: Sommeil du groupe
-FALLOUT.APP.ModuleArtConfig.items: Items
-FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Couvre-chefs
@@ -140,6 +140,8 @@ FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
 FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
+FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Nourriture
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
@@ -160,7 +162,7 @@ FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Légendaire
 FALLOUT.NPC_TYPES.major: Majeur
 FALLOUT.NPC_TYPES.mighty: Redoutable
-FALLOUT.NPC_TYPES.minion: Minion
+FALLOUT.NPC_TYPES.minion: PNJ de second plan
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Autres
@@ -231,7 +233,7 @@ FALLOUT.TEMPLATES.Add_Trait: Ajouter un trait
 FALLOUT.TEMPLATES.AddictionNumber: Puissance de l'addiction
 FALLOUT.TEMPLATES.Addictive: Addictive
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
-FALLOUT.TEMPLATES.AllLocations: All Locations
+FALLOUT.TEMPLATES.AllLocations: Toutes les localisations
 FALLOUT.TEMPLATES.AMMO: MUN
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
@@ -246,7 +248,7 @@ FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
 FALLOUT.TEMPLATES.Attributes: Attributs
 FALLOUT.TEMPLATES.Butchery: Dépeçage
-FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
+FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
@@ -307,6 +309,7 @@ FALLOUT.TEMPLATES.Effects: Effets
 FALLOUT.TEMPLATES.Encumbrance_Level: Niveau d'Encombrement
 FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMES FAVORITES
+FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
 FALLOUT.TEMPLATES.FIRE_RATE: Cadence de Tir
 FALLOUT.TEMPLATES.Gear: Équipement
 FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
@@ -360,8 +363,8 @@ FALLOUT.TEMPLATES.Requirements: Prérequis
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RÉSISTANCE
 FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
-FALLOUT.TEMPLATES.Salvage: Salvage
-FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
+FALLOUT.TEMPLATES.Salvage: Récupération
+FALLOUT.TEMPLATES.SalvageTooltip: Contrôle SR Récupération
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
@@ -458,7 +461,7 @@ FALLOUT.UI.Qty: Qttés
 FALLOUT.UI.Quantity: Quantité
 FALLOUT.UI.Rarity: Rareté
 FALLOUT.UI.ROBOT_MODULES: Modules de robot
-FALLOUT.UI.SaveChanges: Save Changes
+FALLOUT.UI.SaveChanges: Sauvegarder les modifications
 FALLOUT.UI.Special_Abilities: Capacités spéciales
 FALLOUT.UI.SPECIAL_ABILITY: Capacités spéciales
 FALLOUT.UI.stashed: Caché
@@ -474,7 +477,7 @@ FALLOUT.WEAPONS.damageEffect.freeze: Gel
 FALLOUT.WEAPONS.damageEffect.persistent: Persistant
 FALLOUT.WEAPONS.damageEffect.piercing_x: Perforant
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
-FALLOUT.WEAPONS.damageEffect.spread: Zone
+FALLOUT.WEAPONS.damageEffect.spread: De zone
 FALLOUT.WEAPONS.damageEffect.stun: Étourdissant
 FALLOUT.WEAPONS.damageEffect.vicious: Brutal
 FALLOUT.WEAPONS.damageType.energy: énergétiques
