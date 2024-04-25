@@ -25,14 +25,14 @@ FALLOUT.Add: Add
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
 FALLOUT.APP.ChemDoseManager.title: Chem Doses
+FALLOUT.APP.ModuleArtConfig.items: Items
+FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
 FALLOUT.APP.PartySleep.description: How Long?
 FALLOUT.APP.PartySleep.hour: 1 hour
 FALLOUT.APP.PartySleep.hours: "{length} hours"
 FALLOUT.APP.PartySleep.safe_location: Location Safe?
 FALLOUT.APP.PartySleep.title: Party Sleep
-FALLOUT.APP.ModuleArtConfig.items: Items
-FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Roupa
 FALLOUT.APPAREL.headgear: Equip. Cabeça
@@ -140,6 +140,8 @@ FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
 FALLOUT.EffectToggle: Alternar Efeito
 FALLOUT.equipped: Equipado
+FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Comida
 FALLOUT.HEALTH.current: Vida Atual
 FALLOUT.HEALTH.health: Pontos de Vida
@@ -307,6 +309,7 @@ FALLOUT.TEMPLATES.Effects: Efeitos
 FALLOUT.TEMPLATES.Encumbrance_Level: Nível de Peso
 FALLOUT.TEMPLATES.ENG: ENERGIA
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMAS FAVORITAS
+FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
 FALLOUT.TEMPLATES.FIRE_RATE: CADÊNCIA
 FALLOUT.TEMPLATES.Gear: ITENS
 FALLOUT.TEMPLATES.GENERAL: GENERAL
