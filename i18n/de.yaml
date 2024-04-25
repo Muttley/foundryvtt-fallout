@@ -423,7 +423,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.parry: Wenn ein Gegner einen Nahkampfangriff gege
 FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
 FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
 FALLOUT.TOOLTIPS.WeaponQuality.recon: Wenn du mit einer Waffe mit Aufklärung die Nebenaktion Zielen ausführst, kannst du das Ziel markieren, auf das du gezielt hast. Der nächste Verbündete, der dieses Ziel angreift, darf bei seinem Angriff einen W20 neu würfeln.
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: Während jeder Kampfbegegnung ignoriert eine Zuverlässige Waffe die erste Komplikation, die du bei einer Probe würfelst, um diese Waffe zu benutzen. Eine Waffe kann nicht gleichzeitig Zuverlässig und Unzuverlässig sein.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Sofern ein Gegner sich deiner nicht bewusst ist, wenn du mit einer Schallgedämpften Waffe angreifst, wird er den Angriff nicht bemerken, es sei denn, er ist das Ziel oder er besteht eine Probe auf WAH + Überleben mit einer Schwierigkeit von 2.
 FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
@@ -432,7 +432,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Eine Zweihändige Waffe muss in zwei 
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Wenn du einen Angriff mit einer Unzuverlässigen Waffe ausführst, erhöht sich der Komplikationsbereich des Angriffs um 1. Eine Waffe kann nicht gleichzeitig Zuverlässig und Unzuverlässig sein.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.UI.Add: Hinzufügen
-FALLOUT.UI.Addictions: Addictions
+FALLOUT.UI.Addictions: Sucht
 FALLOUT.UI.APPAREL_MODS: Kleidung Mods
 FALLOUT.UI.AreYouSure: Bist du sicher?
 FALLOUT.UI.BOOKS_AND_MAGZS: Bücher und Magazine
@@ -485,7 +485,7 @@ FALLOUT.WEAPONS.weaponQuality.accurate: Präzise
 FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
 FALLOUT.WEAPONS.weaponQuality.blast: Explosiv
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
-FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Beengte Verhältnisse
 FALLOUT.WEAPONS.weaponQuality.concealed: Verborgen
 FALLOUT.WEAPONS.weaponQuality.debilitating: Schwächend
 FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
