@@ -326,7 +326,28 @@ FALLOUT.WEAPON_SKILLS = {
 	smallGuns: "Small Guns",
 	throwing: "Throwing",
 	unarmed: "Unarmed",
-	creatureAttack: "Melee",
+};
+
+FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE = {
+	bigGuns: "body",
+	bows: "body",
+	energyWeapons: "body",
+	explosives: "body",
+	meleeWeapons: "body",
+	smallGuns: "body",
+	throwing: "body",
+	unarmed: "body",
+};
+
+FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL = {
+	bigGuns: "guns",
+	bows: "guns",
+	energyWeapons: "guns",
+	explosives: "melee",
+	meleeWeapons: "melee",
+	smallGuns: "guns",
+	throwing: "guns",
+	unarmed: "melee",
 };
 
 FALLOUT.WEAPON_TYPES = {
