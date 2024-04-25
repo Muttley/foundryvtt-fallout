@@ -1,6 +1,7 @@
 # v11.8.0
 
 ## Enhancements
+- [#283] Display Fire Rate outside of Weapon Item
 - [#290] Default new character SPECIAL to 5 as those are the defaults for character creation
 - [#300] Automatically detect that a weapon is owned by a Creature and not an NPC to simplify configuration
 - [#303] Improve error feedback when trying to use a misconfigured weapon
