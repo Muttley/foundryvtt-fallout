@@ -12,6 +12,8 @@
 		"attribute": "",
 		"condition": "",
 		"cost": 144,
+		"creatureAttribute": "body",
+		"creatureSkill": "guns",
 		"damage": {
 			"damageEffect": {
 				"arc": {
