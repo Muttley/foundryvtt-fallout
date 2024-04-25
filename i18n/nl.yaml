@@ -25,14 +25,14 @@ FALLOUT.Add: Add
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
 FALLOUT.APP.ChemDoseManager.title: Chem Doses
+FALLOUT.APP.ModuleArtConfig.items: Items
+FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
 FALLOUT.APP.PartySleep.description: How Long?
 FALLOUT.APP.PartySleep.hour: 1 hour
 FALLOUT.APP.PartySleep.hours: "{length} hours"
 FALLOUT.APP.PartySleep.safe_location: Location Safe?
 FALLOUT.APP.PartySleep.title: Party Sleep
-FALLOUT.APP.ModuleArtConfig.items: Items
-FALLOUT.APP.ModuleArtConfig.title: Configure Art
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
 FALLOUT.APPAREL.headgear: Headgear
@@ -140,6 +140,8 @@ FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
+FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Food
 FALLOUT.HEALTH.current: Current Health
 FALLOUT.HEALTH.health: Health
@@ -285,8 +287,8 @@ FALLOUT.TEMPLATES.Create_Weapon_Mod: Create Weapon Mod
 FALLOUT.TEMPLATES.Create_Weapon: Create Weapon
 FALLOUT.TEMPLATES.CreateNpc: Create NPC
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
-FALLOUT.TEMPLATES.Creature_Attribute: Creature's Attribute
-FALLOUT.TEMPLATES.Creature_Skill: Creature's Skill
+FALLOUT.TEMPLATES.Creature_Attribute: Creature Attribute
+FALLOUT.TEMPLATES.Creature_Skill: Creature Skill
 FALLOUT.TEMPLATES.current: current
 FALLOUT.TEMPLATES.CurrentLeader: Current Leader
 FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
@@ -307,6 +309,7 @@ FALLOUT.TEMPLATES.Effects: Effects
 FALLOUT.TEMPLATES.Encumbrance_Level: Encumbrance Level
 FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: FAVORITE WEAPONS
+FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
 FALLOUT.TEMPLATES.FIRE_RATE: FIRE RATE
 FALLOUT.TEMPLATES.Gear: Gear
 FALLOUT.TEMPLATES.GENERAL: GENERAL
