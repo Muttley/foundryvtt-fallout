@@ -287,8 +287,8 @@ FALLOUT.TEMPLATES.Create_Weapon_Mod: Créer Mod Arme
 FALLOUT.TEMPLATES.Create_Weapon: Créer Arme
 FALLOUT.TEMPLATES.CreateNpc: Créer un PNJ
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Créer des structures et des pièces
-FALLOUT.TEMPLATES.Creature_Attribute: Creature Attribute
-FALLOUT.TEMPLATES.Creature_Skill: Creature Skill
+FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
+FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
 FALLOUT.TEMPLATES.current: Actuel
 FALLOUT.TEMPLATES.CurrentLeader: Chef actuel
 FALLOUT.TEMPLATES.Damage_Effects: Effets de dégâts
