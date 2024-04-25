@@ -287,8 +287,8 @@ FALLOUT.TEMPLATES.Create_Weapon_Mod: Stwórz Modyfikacje Broni
 FALLOUT.TEMPLATES.Create_Weapon: Stwórz Broń
 FALLOUT.TEMPLATES.CreateNpc: Stwórz NPC
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Stwórz struktury i pomieszczenia
-FALLOUT.TEMPLATES.Creature_Attribute: Creature Attribute
-FALLOUT.TEMPLATES.Creature_Skill: Creature Skill
+FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
+FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
 FALLOUT.TEMPLATES.current: obecny
 FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
 FALLOUT.TEMPLATES.Damage_Effects: Efekty obrażeń
