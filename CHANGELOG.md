@@ -2,13 +2,19 @@
 
 ## Enhancements
 - [#290] Default new character SPECIAL to 5 as those are the defaults for character creation
+- [#300] Automatically detect that a weapon is owned by a Creature and not an NPC to simplify configuration
+- [#303] Improve error feedback when trying to use a misconfigured weapon
 
 ## Bugs
 - [#291] Remove bogus "Boxing Times (Copy)" from compendiums
+- [#302] Creature Attribute and Creature Skill weapon settings can appear configured when they're not
 
 ## Chores
 - [#289] Merge Polish translation updates from Crowdin
 - [#292] Merge French translation updates from Crowdin
+- [#299] Merge German translation updates from Crowdin
+
+*Many thanks to VTTom for their work on the German translations which now have 100% coverage at time of writing.*
 
 ---
 
