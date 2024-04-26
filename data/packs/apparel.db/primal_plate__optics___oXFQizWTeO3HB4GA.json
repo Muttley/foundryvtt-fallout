@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Primal Plate (Optics)",
 	"system": {
-		"appareltype": "plating",
+		"apparelType": "plating",
 		"carry": -10,
 		"cost": 10,
 		"description": "<p>Makeshift supplementary armor that can be affixed to a robot&rsquo;s structure to provide extra protection from physical hazards. The bulk and crude design reduce the robot&rsquo;s carrying capacity, however.</p>",

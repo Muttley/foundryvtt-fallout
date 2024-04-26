@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Hood or Cowl",
 	"system": {
-		"appareltype": "headgear",
-		"armorType": "",
+		"apparelType": "headgear",
 		"cost": 5,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A cloth or leather covering for the head and neck. Provides a little protection from the elements, and easily combined with a mask or kerchief to cover the mouth and nose to keep dust and fumes out. Handy in the wasteland if you&rsquo;re caught outside without better protection.</span> </p>\n<p>&nbsp;</p>",

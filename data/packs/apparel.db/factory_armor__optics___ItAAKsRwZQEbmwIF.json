@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Factory Armor (Optics)",
 	"system": {
-		"appareltype": "armor",
+		"apparelType": "armor",
 		"carry": 0,
 		"cost": 10,
 		"description": "<p>A standardized, factory-made set of armor plating designed to fit any Mister Handy model.</p>",

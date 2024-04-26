@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Hazmat Suit",
 	"system": {
-		"appareltype": "outfit",
-		"armorType": "",
+		"apparelType": "outfit",
 		"cost": 0,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A completely enclosed suit for handling hazardous materials. The materials a hazmat suit is made from don&rsquo;t stand up well to violence; but wearing one of these renders you basically immune to radiation.</span> </p>",

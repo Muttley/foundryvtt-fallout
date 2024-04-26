@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Factory Storage Armor (Main Body)",
 	"system": {
-		"appareltype": "armor",
+		"apparelType": "armor",
 		"carry": 20,
 		"cost": 25,
 		"description": "<p>A factory-made set of standard armor which also provides additional storage compartments to increase a robot&rsquo;s carrying capacity.</p>",

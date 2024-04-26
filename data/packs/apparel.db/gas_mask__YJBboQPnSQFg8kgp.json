@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Gas Mask",
 	"system": {
-		"appareltype": "headgear",
-		"armorType": "",
+		"apparelType": "headgear",
 		"cost": 10,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A rubber and leather mask with a plastic visor, which fits with an air-tight seal over the face. The front of the mask contains a filter which cleanses the air of contaminants like dust and gas.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong> </span><span class=\"fontstyle0\">the gas mask provides +3 Poison damage resistance against any airborne or gaseous poisons and prevents the wearer from being affected by any effects relating to gas or dust. Add +1 to the difficulty of all </span><span class=\"fontstyle2\"><strong>Speech</strong> </span><span class=\"fontstyle0\">tests while wearing a gas mask, as it muffles your speech.</span></p>\n<p>&nbsp;</p>",

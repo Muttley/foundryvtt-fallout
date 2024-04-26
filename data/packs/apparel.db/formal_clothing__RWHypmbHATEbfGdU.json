@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Formal Clothing",
 	"system": {
-		"appareltype": "outfit",
-		"armorType": "",
+		"apparelType": "outfit",
 		"cost": 30,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A nice suit, a pretty dress, or some other kind of fancy, tailored clothing. Designed to be more flattering than functional, formal clothing is helpful when you need to impress someone, and is often prized as a sign of&nbsp;status, presenting the appearance of someone who doesn&rsquo;t need to worry about their own safety.</span></p>\n<p><span class=\"fontstyle0\"><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span>Wearing formal clothing allows you to re-roll a single d20 on one <span class=\"fontstyle2\">CHA</span>-based skill test you make each scene, as the clothing helps you make a good first impression.</span></p>\n<p><span class=\"fontstyle0\">Formal clothing can be reinforced with Ballistic Weave&nbsp;</span><span class=\"fontstyle0\">(see sidebar, p. 126).</span></p>\n<p>&nbsp;</p>",
