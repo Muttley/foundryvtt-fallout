@@ -140,8 +140,8 @@ FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
 FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
-FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
+FALLOUT.ERRORS.ThisWeaponDoesNoDamage: Le nombre total de dés de combat à lancer doit être supérieur à zéro.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
 FALLOUT.FOOD: Nourriture
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
@@ -309,7 +309,7 @@ FALLOUT.TEMPLATES.Effects: Effets
 FALLOUT.TEMPLATES.Encumbrance_Level: Niveau d'Encombrement
 FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMES FAVORITES
-FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
+FALLOUT.TEMPLATES.Fire_Rate: Cadence de Tir
 FALLOUT.TEMPLATES.FIRE_RATE: Cadence de Tir
 FALLOUT.TEMPLATES.Gear: Équipement
 FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
