@@ -244,6 +244,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * Add Inventory Item
 		html.find(".item-create").click(this._onItemCreate.bind(this));
 
+		html.find(
+			".find-from-compendium"
+		).each((i, el) => {
+			el.title = game.i18n.localize("FALLOUT.Form.SelectCompendiumItem.tooltip");
+		});
+		html.find(".find-from-compendium").click(this._onFindFromCompendium.bind(this));
+
 		// * Delete Inventory Item
 		html.find(".item-delete").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
@@ -429,6 +436,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		this.actor._toggleImmunity(immunityType);
 	}
 
+
+	async _onFindFromCompendium(event) {
+		event.preventDefault();
+		const itemType = event.currentTarget.dataset.type;
+		new fallout.ItemSelector(this.actor, {itemType}).render(true);
+	}
 
 	/**
 	 * Handle creating a new Owned Item for the actor using initial data defined

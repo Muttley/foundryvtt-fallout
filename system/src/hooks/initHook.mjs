@@ -15,8 +15,10 @@ import { Roller2D20 } from "../roller/Roller2D20.mjs";
 import FalloutChat from "../system/FalloutChat.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
+import FalloutLoading from "../apps/FalloutLoading.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
+import ItemSelector from "../apps/CompendiumItemSelectors/ItemSelector.mjs";
 import Logger from "../utils/Logger.mjs";
 
 import preloadHandlebarsTemplates from "../templates.mjs";
@@ -43,6 +45,8 @@ export async function initHook() {
 		conditionTracker: new FalloutConditionTracker(),
 		Dialog2d20,
 		DialogD6,
+		FalloutLoading,
+		ItemSelector,
 		logger: Logger,
 		macros: FalloutMacros,
 		moduleArt: new FalloutModuleArt(),

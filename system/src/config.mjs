@@ -13,10 +13,10 @@ FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
 FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
 
 FALLOUT.APPAREL_TYPES = {
-	clothing: "FALLOUT.APPAREL.clothing",
-	outfit: "FALLOUT.APPAREL.outfit",
 	armor: "FALLOUT.APPAREL.armor",
+	clothing: "FALLOUT.APPAREL.clothing",
 	headgear: "FALLOUT.APPAREL.headgear",
+	outfit: "FALLOUT.APPAREL.outfit",
 	powerArmor: "FALLOUT.APPAREL.powerArmor",
 };
 
@@ -225,8 +225,8 @@ FALLOUT.RARITIES = {
 };
 
 FALLOUT.ROBOT_APPAREL_TYPE = {
-	plating: "FALLOUT.APPAREL.plating",
 	armor: "FALLOUT.APPAREL.armor",
+	plating: "FALLOUT.APPAREL.plating",
 };
 
 FALLOUT.SETTLEMENT_ITEM_ICONS = {

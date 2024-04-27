@@ -10,9 +10,9 @@ input[type="number"] {
 		text-overflow: ellipsis;
 		border-bottom: 1px dashed $c-font-prim;
 		color: $c-font-prim;
-		&::placeholder {
-			color: #999;
-		}
+	}
+	&::placeholder {
+		color: #999;
 	}
 }
 

@@ -49,8 +49,9 @@
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="resource-row align-mid">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Armor_Type"}} &nbsp;</label>
-                <select name="system.appareltype">
-                    {{#select system.appareltype}}
+                <select name="system.apparelType">
+                    {{#select system.apparelType}}
+						<option value="">&mdash;</option>
 						{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
 							<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
 						{{/each}}
@@ -84,7 +85,7 @@
                         <input class="input-checkbox" type="checkbox" name="system.equipped" {{checked system.equipped}} data-dtype="Boolean" />
                     </div>
                     {{!-- POWER ARMOR SECTION --}}
-                    {{#ifCond system.appareltype '==' 'powerArmor'}}
+                    {{#ifCond system.apparelType '==' 'powerArmor'}}
                     <h4 class="resource-header">{{localize "FALLOUT.APPAREL.powerArmor"}}</h4>
                     <div>
                         <div class="flexrow resource-row align-mid">

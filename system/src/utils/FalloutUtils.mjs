@@ -95,6 +95,12 @@ export default class FalloutUtils {
 		return value * LBS_TO_KGS;
 	}
 
+	static async sleep(millisecs=1000) {
+		return new Promise((resolve, reject) => {
+  			setTimeout(resolve, millisecs);
+		});
+	}
+
 	// If this is a new release, show the release notes to the GM the first time
 	// they login
 	static async showNewReleaseNotes() {

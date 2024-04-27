@@ -68,8 +68,118 @@ export default class FalloutCompendiums {
 		}
 	}
 
+	static async addictions(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "addiction", filterSources);
+	}
+
 	static async ammo(filterSources=true) {
 		return FalloutCompendiums._documents("Item", "ammo", filterSources);
+	}
+
+	static async apparel_mods(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "apparel_mod", filterSources);
+	}
+
+	static async apparel(subtypes=[], filterSources=true) {
+		const noSubtypes = subtypes.length === 0;
+
+		const documents = await FalloutCompendiums._documents("Item", "apparel", filterSources);
+
+		if (noSubtypes) {
+			return documents;
+		}
+		else {
+			const filteredDocuments = documents.filter(
+				document => subtypes.includes(document.system.apparelType)
+			);
+
+			// re-create the collection from the filtered Items
+			const filteredCollection = new Collection();
+			for (let d of filteredDocuments) {
+				filteredCollection.set(d.id, d);
+			}
+
+			return filteredCollection;
+		}
+	}
+
+	static async armor(filterSources=true) {
+		return FalloutCompendiums.apparel(["armor"], filterSources);
+	}
+
+	static async armor_robot(filterSources=true) {
+		return FalloutCompendiums.robot_armor(["armor"], filterSources);
+	}
+
+	static async books_and_magz(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "books_and_magz", filterSources);
+	}
+
+	static async clothing(filterSources=true) {
+		return FalloutCompendiums.apparel(["clothing"], filterSources);
+	}
+
+	static async consumables(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "consumable", filterSources);
+	}
+
+	static async diseases(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "disease", filterSources);
+	}
+
+	static async headgear(filterSources=true) {
+		return FalloutCompendiums.apparel(["headgear"], filterSources);
+	}
+
+	static async miscellany(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "miscellany", filterSources);
+	}
+
+	static async npcs(filterSources=true) {
+		return FalloutCompendiums._documents("Actor", "npc", filterSources);
+	}
+
+	static async outfit(filterSources=true) {
+		return FalloutCompendiums.apparel(["outfit"], filterSources);
+	}
+
+	static async plating_robot(filterSources=true) {
+		return FalloutCompendiums.robot_armor(["plating"], filterSources);
+	}
+
+	static async perks(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "perk", filterSources);
+	}
+
+	static async powerArmor(filterSources=true) {
+		return FalloutCompendiums.apparel(["powerArmor"], filterSources);
+	}
+
+	static async robot_armor(subtypes=[], filterSources=true) {
+		const noSubtypes = subtypes.length === 0;
+
+		const documents = await FalloutCompendiums._documents("Item", "robot_armor", filterSources);
+
+		if (noSubtypes) {
+			return documents;
+		}
+		else {
+			const filteredDocuments = documents.filter(
+				document => subtypes.includes(document.system.apparelType)
+			);
+
+			// re-create the collection from the filtered Items
+			const filteredCollection = new Collection();
+			for (let d of filteredDocuments) {
+				filteredCollection.set(d.id, d);
+			}
+
+			return filteredCollection;
+		}
+	}
+
+	static async robot_mods(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "robot_mod", filterSources);
 	}
 
 	static async skills(filterSources=true) {
@@ -110,6 +220,26 @@ export default class FalloutCompendiums {
 		return CONFIG.FALLOUT.ALL_SOURCES.sort(
 			(a, b) => a.name.localeCompare(b.name)
 		);
+	}
+
+	static async special_abilities(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "special_ability", filterSources);
+	}
+
+	static async structures(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "object_or_structure", filterSources);
+	}
+
+	static async traits(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "trait", filterSources);
+	}
+
+	static async weapon_mods(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "weapon_mod", filterSources);
+	}
+
+	static async weapons(filterSources=true) {
+		return FalloutCompendiums._documents("Item", "weapon", filterSources);
 	}
 
 }

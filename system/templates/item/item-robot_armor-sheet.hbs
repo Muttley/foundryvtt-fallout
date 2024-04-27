@@ -41,9 +41,10 @@
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             <div class="resource-row align-mid">
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Armor_Type"}} &nbsp;</label>
-                <select name="system.appareltype">
-                    {{#select system.appareltype}}
-                    {{#each FALLOUT.ROBOT_APPAREL_TYPE as |apparelType key |}}
+                <select name="system.apparelType">
+                    {{#select system.apparelType}}
+					<option value="">&mdash;</option>
+                    {{#each FALLOUT.ROBOT_APPAREL_TYPE as |apparelType key|}}
                     <option class="capitalized" value="{{key}}">{{localize apparelType}}</option>
                     {{/each}}
                     {{/select}}

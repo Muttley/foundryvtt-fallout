@@ -53,7 +53,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 			let apparel = this.actor.items.get(apparelId);
 
-			if (apparel && apparel.system.appareltype === "powerArmor") {
+			if (apparel && apparel.system.apparelType === "powerArmor") {
 				apparel.update({ "system.health.value": newHealthValue });
 			}
 		});
@@ -282,7 +282,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			const list = context.items.filter(
 				i => i.type === type
 			).filter(
-				i => i.system.appareltype === subType
+				i => i.system.apparelType === subType
 			);
 
 			return {

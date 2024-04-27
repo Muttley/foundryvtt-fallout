@@ -194,7 +194,7 @@ export default class FalloutActor extends Actor {
 			if (!v) {
 				let pow = this.items.find(
 					i => i.type === "apparel"
-						&& i.system.appareltype === "powerArmor"
+						&& i.system.apparelType === "powerArmor"
 						&& i.system.equipped
 						&& i.system.powered
 						&& i.system.location[k] === true
@@ -211,7 +211,7 @@ export default class FalloutActor extends Actor {
 				let armor = this.items.find(
 					i =>
 						i.type === "apparel"
-                && i.system.appareltype === "armor"
+                && i.system.apparelType === "armor"
                 && i.system.equipped
                 && i.system.location[k] === true
 				);
@@ -231,7 +231,7 @@ export default class FalloutActor extends Actor {
 			let outfit = this.items.find(
 				i =>
 					i.type === "apparel"
-              && i.system.appareltype === "outfit"
+              && i.system.apparelType === "outfit"
               && i.system.equipped
 			);
 			if (outfit) {
@@ -246,7 +246,7 @@ export default class FalloutActor extends Actor {
 		// ! CHECK HEADGEAR
 		if (!outfittedLocations.head) {
 			let headgear = this.items.find(i => i.type === "apparel"
-				&& i.system.appareltype === "headgear"
+				&& i.system.apparelType === "headgear"
 				&& i.system.equipped
 			);
 
@@ -259,7 +259,7 @@ export default class FalloutActor extends Actor {
 		let clothing = this.items.find(
 			i =>
 				i.type === "apparel"
-            && i.system.appareltype === "clothing"
+            && i.system.apparelType === "clothing"
             && i.system.equipped
 		);
 
@@ -465,7 +465,7 @@ export default class FalloutActor extends Actor {
 		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let armor = this.items.find(i => i.type === "robot_armor"
-					&& i.system.appareltype === "armor"
+					&& i.system.apparelType === "armor"
 					&& i.system.equipped
 					&& i.system.location[k] === true
 				);
@@ -477,7 +477,7 @@ export default class FalloutActor extends Actor {
 		}
 		// ADD PLATING AND RESISTANCE BONUSES
 		let plating = this.items.find(i => i.type === "robot_armor"
-            && i.system.appareltype === "plating"
+            && i.system.apparelType === "plating"
             && i.system.equipped
 		);
 
@@ -577,7 +577,7 @@ export default class FalloutActor extends Actor {
 		// remove powered powerArmor pieces for characters
 		if (this.type === "character") {
 			physicalItems = physicalItems.filter(i => {
-				if (i.system.appareltype === "powerArmor") {
+				if (i.system.apparelType === "powerArmor") {
 					return !i.system.powered;
 				}
 				else {
