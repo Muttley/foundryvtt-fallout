@@ -25,6 +25,8 @@ FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
+FALLOUT.APP.Loading.body: Searching the Wastelands...
+FALLOUT.APP.Loading.title: Loading
 FALLOUT.APP.ModuleArtConfig.items: Objets
 FALLOUT.APP.ModuleArtConfig.title: Configurer l'illustration
 FALLOUT.APP.PartySleep.chat_message: Le groupe dort pendant {duration}.
@@ -143,6 +145,12 @@ FALLOUT.equipped: Equipé
 FALLOUT.ERRORS.ThisWeaponDoesNoDamage: Le nombre total de dés de combat à lancer doit être supérieur à zéro.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
 FALLOUT.FOOD: Nourriture
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
+FALLOUT.Form.SelectCompendiumItem.prompt: Select Item...
+FALLOUT.Form.SelectCompendiumItem.title: Choose Items
+FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
+FALLOUT.Form.SelectItem.title: Choose {type}
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
