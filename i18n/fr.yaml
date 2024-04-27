@@ -26,7 +26,7 @@ FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
 FALLOUT.APP.Loading.body: Searching the Wastelands...
-FALLOUT.APP.Loading.title: Loading
+FALLOUT.APP.Loading.title: Chargement
 FALLOUT.APP.ModuleArtConfig.items: Objets
 FALLOUT.APP.ModuleArtConfig.title: Configurer l'illustration
 FALLOUT.APP.PartySleep.chat_message: Le groupe dort pendant {duration}.
@@ -147,10 +147,10 @@ FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attri
 FALLOUT.FOOD: Nourriture
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
-FALLOUT.Form.SelectCompendiumItem.prompt: Select Item...
-FALLOUT.Form.SelectCompendiumItem.title: Choose Items
+FALLOUT.Form.SelectCompendiumItem.prompt: Sélectionner un objet...
+FALLOUT.Form.SelectCompendiumItem.title: Choisir objets
 FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
-FALLOUT.Form.SelectItem.title: Choose {type}
+FALLOUT.Form.SelectItem.title: Choisir {type}
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
