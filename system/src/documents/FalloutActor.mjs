@@ -1141,6 +1141,8 @@ export default class FalloutActor extends Actor {
 	async consumeItem(item) {
 		if (this.type !== "character") return false;
 
+		let consumed = true;
+
 		const consumableType = item.system.consumableType;
 
 		const newQuantity = item.system.quantity - 1;
@@ -1318,6 +1320,8 @@ export default class FalloutActor extends Actor {
 
 		if (consumableType === "food") {
 			if (isFull) {
+				consumed = false;
+
 				ui.notifications.warn(
 					game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
 				);
@@ -1354,16 +1358,21 @@ export default class FalloutActor extends Actor {
 			}
 		);
 
-		if (allUsed) {
-			await item.delete();
+		if (consumed) {
+			if (allUsed) {
+				await item.delete();
+			}
+			else {
+				await item.update({
+					"system.quantity": newQuantity,
+				});
+			}
+
+			return allUsed;
 		}
 		else {
-			await item.update({
-				"system.quantity": newQuantity,
-			});
+			return false;
 		}
-
-		return allUsed;
 	}
 
 	async isAddictedToChem(item) {

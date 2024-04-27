@@ -7,6 +7,9 @@
 
 - [#317] Add Diseases item compendium (20 items)
 
+## Bugs
+- [#320] Food item deleted or quantity reduced even though unable to eat as full
+
 ## Chores
 - [#310] Merge French translation updates from Crowdin
 - [#313] Remove unused armorType field from apparel item schema
