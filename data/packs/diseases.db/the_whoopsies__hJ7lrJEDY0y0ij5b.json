@@ -1,0 +1,16 @@
+{
+	"_id": "hJ7lrJEDY0y0ij5b",
+	"_key": "!items!hJ7lrJEDY0y0ij5b",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "The Whoopsies",
+	"system": {
+		"description": "<p>Must spend twice as many Luck points to gain an Effect</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

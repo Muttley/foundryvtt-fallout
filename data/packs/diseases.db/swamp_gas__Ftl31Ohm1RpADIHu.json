@@ -1,0 +1,16 @@
+{
+	"_id": "Ftl31Ohm1RpADIHu",
+	"_key": "!items!Ftl31Ohm1RpADIHu",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Swamp Gas",
+	"system": {
+		"description": "<p>CHA tests suffer +1 difficulty</p>",
+		"duration": "1",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

@@ -1,0 +1,16 @@
+{
+	"_id": "3TRX2F8Xik5lQFZD",
+	"_key": "!items!3TRX2F8Xik5lQFZD",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Buzz Brain",
+	"system": {
+		"description": "<p>INT tests suffer +1 difficulty</p>",
+		"duration": 4,
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

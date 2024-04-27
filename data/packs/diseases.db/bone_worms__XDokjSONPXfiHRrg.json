@@ -1,0 +1,16 @@
+{
+	"_id": "XDokjSONPXfiHRrg",
+	"_key": "!items!XDokjSONPXfiHRrg",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Bone Worms",
+	"system": {
+		"description": "<p>Attacks against you which hit your arms or legs inflict +4CD damage</p>",
+		"duration": "1",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

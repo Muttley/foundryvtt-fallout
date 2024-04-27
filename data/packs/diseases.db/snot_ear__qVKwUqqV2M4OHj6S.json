@@ -1,0 +1,16 @@
+{
+	"_id": "qVKwUqqV2M4OHj6S",
+	"_key": "!items!qVKwUqqV2M4OHj6S",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Snot Ear",
+	"system": {
+		"description": "<p>PER tests suffer +1 difficulty</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

@@ -1,0 +1,16 @@
+{
+	"_id": "aZZ0jSTJ9byWllxy",
+	"_key": "!items!aZZ0jSTJ9byWllxy",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Rad Worms",
+	"system": {
+		"description": "<p>Whenever you suffer Radiation damage, add +2 to the amount suffered</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

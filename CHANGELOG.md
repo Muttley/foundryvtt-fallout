@@ -1,3 +1,16 @@
+# v11.9.0
+
+## Enhancements
+- [#317] Add Diseases item compendium (20 items)
+
+## Chores
+- [#310] Merge French translation updates from Crowdin
+- [#313] Remove unused armorType field from apparel item schema
+- [#314] Rename appareltype field in apparel item schema to apparelType for field name consistency purposes
+- [#315] Rename appareltype field in robot_armor item schema to apparelType for field name consistency purposes
+
+---
+
 # v11.8.1
 
 ## Bugs

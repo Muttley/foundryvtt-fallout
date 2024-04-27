@@ -1,0 +1,16 @@
+{
+	"_id": "fQlyzYWzV5a2qkvO",
+	"_key": "!items!fQlyzYWzV5a2qkvO",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Needle Spine",
+	"system": {
+		"description": "<p>-10 Carry Weight</p>",
+		"duration": "1",
+		"favorite": false,
+		"source": ""
+	},
+	"type": "disease"
+}

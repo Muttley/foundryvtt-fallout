@@ -71,6 +71,15 @@
 			"flags": {}
 		},
 		{
+			"name": "diseases",
+			"label": "Diseases",
+			"system": "fallout",
+			"path": "packs/diseases",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "consumables",
 			"label": "Consumables",
 			"system": "fallout",
@@ -192,6 +201,7 @@
 						"apparel",
 						"books_and_magz",
 						"consumables",
+						"diseases",
 						"miscellany",
 						"perks",
 						"robot_modules",
