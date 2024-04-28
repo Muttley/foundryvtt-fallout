@@ -191,10 +191,10 @@ export default class FalloutCompendiums {
 			return CONFIG.FALLOUT.ALL_SOURCES;
 		}
 
-		CONFIG.FALLOUT.ALL_SOURCES = [];
+		const allSources = [];
 
 		for (const source of Object.keys(CONFIG.FALLOUT.OFFICIAL_SOURCES)) {
-			CONFIG.FALLOUT.ALL_SOURCES.push({
+			allSources.push({
 				uuid: source,
 				name: game.i18n.localize(
 					CONFIG.FALLOUT.OFFICIAL_SOURCES[source]
@@ -205,10 +205,11 @@ export default class FalloutCompendiums {
 		for (const module of game.modules) {
 			if (!module.active) continue;
 
-			const moduleSources = module.flags?.fallout?.sources ?? {};
+			const flags = module.flags?.[module.id];
+			const moduleSources = flags?.["fallout-sources"] ?? {};
 
 			for (const moduleSource of Object.keys(moduleSources)) {
-				CONFIG.FALLOUT.ALL_SOURCES.push({
+				allSources.push({
 					uuid: moduleSource,
 					name: game.i18n.localize(
 						moduleSources[moduleSource]
@@ -217,9 +218,11 @@ export default class FalloutCompendiums {
 			}
 		}
 
-		return CONFIG.FALLOUT.ALL_SOURCES.sort(
+		CONFIG.FALLOUT.ALL_SOURCES = allSources.sort(
 			(a, b) => a.name.localeCompare(b.name)
 		);
+
+		return CONFIG.FALLOUT.ALL_SOURCES;
 	}
 
 	static async special_abilities(filterSources=true) {

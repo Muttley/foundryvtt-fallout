@@ -59,6 +59,8 @@ export default class FalloutItemSheet extends ItemSheet {
 			useKgs: game.settings.get("fallout", "carryUnit") === "kgs",
 		});
 
+		context.allSources = await fallout.compendiums.sources();
+
 		// Enrich Mods Text
 		if (item.system.mods) {
 			foundry.utils.mergeObject(context, {

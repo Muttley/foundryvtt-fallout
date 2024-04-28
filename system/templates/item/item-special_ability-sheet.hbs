@@ -1,28 +1,29 @@
 <form class="{{cssClass}}" autocomplete="off">
 
-    {{> item/_shared-partials/header}}
+	{{> item/_shared-partials/header}}
 
-    {{!-- Sheet Tab Navigation --}}
-    <nav class="sheet-tabs tabs" data-group="primary">
-      <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
-      <!-- <a class="item" data-tab="effects">Effects</a> -->
-    </nav>
+	{{!-- Sheet Tab Navigation --}}
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
+		<a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
+		<a class="item" data-tab="source">{{localize "FALLOUT.TEMPLATES.Source"}}</a>
+	</nav>
 
-    <section class="sheet-body">
-      {{!-- Active Effects Tab --}}
-      <!-- <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-        {{> item/_shared-partials/effects-tab}}
-      </div> -->
+	<section class="sheet-body">
+		{{!-- Active Effects Tab --}}
+		{{> item/_shared-partials/effects-tab}}
 
-      {{!-- Attributes Tab --}}
-      <div class="tab attributes" data-group="primary" data-tab="attributes">
-        <div class="resource-row resource-label align-mid">
-          <label>{{localize "FALLOUT.TEMPLATES.Description"}}</label>
-        </div>
-        <div class="description-field">
-          {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-        </div>
-      </div>
-    </section>
+		{{!-- Attributes Tab --}}
+		<div class="tab attributes" data-group="primary" data-tab="attributes">
+			<div class="resource-row resource-label align-mid">
+				<label>{{localize "FALLOUT.TEMPLATES.Description"}}</label>
+			</div>
+			<div class="description-field">
+				{{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+			</div>
+		</div>
 
-  </form>
+		{{> item/_shared-partials/source}}
+	</section>
+
+</form>

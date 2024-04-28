@@ -8,6 +8,10 @@
 	Selecting one of these items from the list will add it to the Actor's inventory.
 
 - [#317] Add Diseases item compendium (20 items)
+- [#324] On all items add ability to specify which source book they came from
+- [#325] Add the ability to add custom book sources via module flags
+
+	* The example Fallout custom data module has been updated with an example of how to add new sources to your own content modules: https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.1.0
 
 ## Bugs
 - [#320] Food item deleted or quantity reduced even though unable to eat as full
