@@ -1,0 +1,63 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+	<div class="form-group">
+		<p>{{localize "FALLOUT.Form.SourceFilters.hint"}}</p>
+	</div>
+	<div class="form-group" style="width: 100%; text-align: center;">
+		{{#if hasSelectedSources}}
+			<p>
+				<em>{{localize "FALLOUT.Form.SourceFilters.TheseUsed"}}</em>
+			</p>
+		{{else}}
+			<p>
+				<em>{{localize "FALLOUT.Form.SourceFilters.AllUsed"}}</em>
+			</p>
+		{{/if}}
+	</div>
+	<div class="form-group stacked" style="width: 100%;">
+		{{#each selectedSources}}
+			<div style="padding-bottom: 4px; padding-top: 4px;">
+				<a
+					class="fake-uuid-link"
+					data-type="Item"
+					data-uuid="{{this.uuid}}"
+					title="Item"
+				>
+					<i
+						class="delete-choice fas fa-delete-right"
+						data-uuid="{{this.uuid}}"
+					></i>
+					{{this.name}}
+				</a>
+			</div>
+		{{/each}}
+		<div style="padding-top: 8px;">
+			<input
+				{{!--
+					list name needs to be unique and match the one used in the
+					datalist below.  Using the item id plus the system data key field
+					here should be unique enough
+				--}}
+				data-choices-key="{{config.choicesKey}}"
+				data-is-item="{{config.isItem}}"
+				list="source_filter_list"
+				name="sourceName"
+				placeholder="{{localize "FALLOUT.Form.SourceFilters.prompt"}}"
+				type="text"
+				value=""
+			/>
+			<datalist id="source_filter_list">
+				{{#each unselectedSources}}
+					<option
+						data-uuid="{{this.uuid}}"
+						value="{{this.name}}"
+					></option>
+				{{/each}}
+			</datalist>
+		</div>
+	</div>
+	<div class="form-group" style="width: 100%;">
+        <button type="submit">
+            <i class="fas fa-save"></i> {{localize 'FALLOUT.UI.SaveChanges'}}
+        </button>
+	</div>
+</form>

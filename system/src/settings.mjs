@@ -113,6 +113,21 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	// ----------------
+	//  SOURCE FILTERS
+	// ----------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "sources", {
+		name: "Source Filter",
+		hint: "If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums. Items with no Source set will always be included.",
+		label: "Configure Source Filter",
+		icon: "fa-solid fa-book",
+		type: fallout.apps.SourceFilterSettings,
+		restricted: true,
+	});
+	fallout.apps.SourceFilterSettings.registerSetting();
+
+
 	// -----------------------------------
 	//  HOMEBREW / CUSTOMISATION SETTINGS
 	// -----------------------------------

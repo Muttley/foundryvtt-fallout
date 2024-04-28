@@ -317,3 +317,28 @@
 		}
 	}
 }
+
+.fake-uuid-link {
+	background: #DDD;
+	padding: 1px 4px;
+	border: 1px solid var(--color-border-dark-tertiary);
+	margin: 4px;
+	border-radius: 2px;
+	white-space: nowrap;
+	word-break: break-all;
+
+	&:hover {
+		cursor: auto;
+		text-shadow: none;
+	}
+}
+
+.delete-choice {
+	color: darkred;
+
+	&:hover {
+		text-shadow: 0 0 4px red;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}
