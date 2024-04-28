@@ -1,7 +1,9 @@
 # v11.9.0
 
 ## Enhancements
+- [#311] Add weapon ranges to character/npc/creature sheets
 - [#316] Add ability to quickly search and add filtered items from compendiums to an Actor sheet
+
 	* Each Item section on character now has a new control icon (magnifying glass) which when clicked will open a list of Items from all compendiums, filtered by the specific type for the section.  You can start typing the name of the item you wish to add in the input, and it will filter anything that matches.
 	Selecting one of these items from the list will add it to the Actor's inventory.
 

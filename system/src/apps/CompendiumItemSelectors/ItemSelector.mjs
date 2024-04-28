@@ -45,6 +45,44 @@ export default class ItemSelector extends CompendiumItemSelector {
 		);
 	}
 
+	async decorateName(item) {
+		switch (item.type) {
+			case "apparel_mod": {
+				const apparelType = CONFIG.FALLOUT.APPAREL_TYPES[
+					item.system.apparelType
+				];
+
+				return `${item.name} (${apparelType})`;
+			}
+			case "books_and_magz": {
+				if (item.system.publication !== "") {
+					return `${item.system.publication}: ${item.name}`;
+				}
+				else {
+					return `${item.name}`;
+				}
+			}
+			case "consumable": {
+				const consumableType = CONFIG.FALLOUT.CONSUMABLE_TYPES[
+					item.system.consumableType
+				];
+
+				return `${item.name} (${consumableType})`;
+			}
+			case "weapon": {
+				const weaponType = CONFIG.FALLOUT.WEAPON_TYPES[item.system.weaponType];
+				return `${item.name} (${weaponType})`;
+			}
+			case "weapon_mod": {
+				const weaponType = CONFIG.FALLOUT.WEAPON_TYPES[item.system.weaponType];
+				const modType = item.system.modType;
+				return `${item.name} (${weaponType}, ${modType})`;
+			}
+			default:
+				return super.decorateName(item);
+		}
+	}
+
 	async getAvailableItems() {
 		switch (this.itemType) {
 			case "addiction":

@@ -24,14 +24,35 @@
 
 		{{#if (ne item null)}}
 		<div class="hit-location-label" style="color: grey">
-			<strong>
-				{{localize 'FALLOUT.TEMPLATES.Weapon_Qualities'}}:
-			</strong>
-			{{{listWeaponQualities item.system.damage.weaponQuality}}}
-			<strong>
-				{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
-			</strong>
-			{{item.system.fireRate}}
+			<span>
+				<strong>
+					{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
+				</strong>
+				{{{listWeaponQualities item.system.damage.weaponQuality}}}
+			</span>
+
+			<span>
+				<strong>
+					{{localize 'FALLOUT.TEMPLATES.Effects'}}:
+				</strong>
+				{{{listDamageEffects item.system.damage.damageEffect}}}
+			</span>
+
+			{{#ifCond item.system.ammo '!==' ""}}
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
+					</strong>
+					{{item.system.fireRate}}
+				</span>
+			{{/ifCond}}
+
+			<span>
+				<strong>
+					{{localize 'FALLOUT.TEMPLATES.Range'}}:
+				</strong>
+				{{fromConfig "RANGES" item.system.range}}
+			</span>
 		</div>
 		{{/if}}
 

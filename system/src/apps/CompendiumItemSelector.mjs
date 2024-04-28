@@ -49,13 +49,21 @@ export default class CompendiumItemSelector extends FormApplication {
 	async _getAvailableItems() {
 		const loadingDialog = new fallout.FalloutLoading().render(true);
 
-		this.availableItems = await this.getAvailableItems() ?? [];
-
+		const availableItems = await this.getAvailableItems() ?? [];
 		this.itemsLoaded = true;
 
-		const itemsAvailable = this.availableItems?.size > 0 ?? false;
+		const itemsAvailable = availableItems?.size > 0 ?? false;
 
-		if (!itemsAvailable) {
+		if (itemsAvailable) {
+			for (const item of availableItems) {
+				item.decoratedName = await this.decorateName(item);
+			}
+
+			this.availableItems = Array.from(availableItems).sort(
+				(a, b) => a.decoratedName.localeCompare(b.decoratedName)
+			);
+		}
+		else {
 			ui.notifications.warn(
 				game.i18n.localize("FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound")
 			);
@@ -70,6 +78,12 @@ export default class CompendiumItemSelector extends FormApplication {
 		html.find(".remove-item").click(event => this._onRemoveItem(event));
 
 		super.activateListeners(html);
+	}
+
+	async decorateName(item) {
+		// By default we just use the name, but this can be overriden by each
+		// selector class if needed
+		return item.name;
 	}
 
 	async getCurrentItemData() {
@@ -147,7 +161,7 @@ export default class CompendiumItemSelector extends FormApplication {
 		const currentItemCount = this.currentItemUuids.length;
 		if (this.maxChoices === 1 && currentItemCount === 1 && formData["item-selected"] !== "") {
 			for (const item of this.availableItems) {
-				if (item.name === formData["item-selected"]) {
+				if (item.decoratedName === formData["item-selected"]) {
 					newUuids = [item.uuid];
 					break;
 				}
@@ -157,7 +171,7 @@ export default class CompendiumItemSelector extends FormApplication {
 		}
 		else if (this.maxChoices === 0 || this.maxChoices > currentItemCount) {
 			for (const item of this.availableItems) {
-				if (item.name === formData["item-selected"]) {
+				if (item.decoratedName === formData["item-selected"]) {
 					newUuids.push(item.uuid);
 					break;
 				}
