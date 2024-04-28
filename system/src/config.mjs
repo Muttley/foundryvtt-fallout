@@ -203,8 +203,14 @@ FALLOUT.NPC_CATEGORIES = {
 };
 
 FALLOUT.OFFICIAL_SOURCES = {
+	aat_fully_operational: "FALLOUT.SOURCE_TITLE.aat_fully_operational",
+	aat_hunted: "FALLOUT.SOURCE_TITLE.aat_hunted",
+	aat_orange_sky: "FALLOUT.SOURCE_TITLE.aat_orange_sky",
+	aat_skull_canyon: "FALLOUT.SOURCE_TITLE.aat_skull_canyon",
 	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
 	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
+	gm_toolkit: "FALLOUT.SOURCE_TITLE.gm_toolkit",
+	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
 	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",

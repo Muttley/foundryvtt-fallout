@@ -16,7 +16,7 @@
 			"value": 0
 		},
 		"requirements": "STR 9, END 7, Level 1+",
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "perk"
 }

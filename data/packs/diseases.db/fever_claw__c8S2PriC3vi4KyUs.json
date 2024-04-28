@@ -10,7 +10,7 @@
 		"description": "<p>Your ranged attacks inflict 2CD less damage (minimum 1CD)</p>",
 		"duration": 1,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

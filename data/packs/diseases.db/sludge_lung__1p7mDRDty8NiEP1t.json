@@ -10,7 +10,7 @@
 		"description": "<p>Gain 1 Fatigue; you can only save AP into group pool if there are 3 orfewer AP saved</p>",
 		"duration": 4,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

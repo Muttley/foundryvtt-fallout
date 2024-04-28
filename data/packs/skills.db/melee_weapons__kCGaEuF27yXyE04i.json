@@ -10,7 +10,7 @@
 		"defaultAttribute": "str",
 		"description": "<p>The Melee Weapons skill describes how able you are to inflict damage and deflect blows with one-handed and two-handed melee weapons.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Strength</strong> but you might use Agility to parry a melee attack, or Charisma to threaten someone. You use Melee Weapons to make melee attacks in combat.</p>",
 		"favorite": false,
-		"source": "",
+		"source": "core_rulebook",
 		"summary": "",
 		"tag": false,
 		"value": 0

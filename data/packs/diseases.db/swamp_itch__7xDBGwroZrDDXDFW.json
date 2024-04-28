@@ -10,7 +10,7 @@
 		"description": "<p>AGI tests suffer +1 difficulty</p>",
 		"duration": 1,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

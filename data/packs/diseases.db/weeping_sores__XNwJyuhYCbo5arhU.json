@@ -10,7 +10,7 @@
 		"description": "<p>Whenever you suffer Physical damage, you suffer +1 Physical damage at the start of your next turn, ignoring damage resistance</p>",
 		"duration": 3,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

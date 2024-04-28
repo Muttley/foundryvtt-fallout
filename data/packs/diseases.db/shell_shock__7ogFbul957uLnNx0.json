@@ -10,7 +10,7 @@
 		"description": "<p>Whenever you suffer an Injury, lose 1 AP from the group pool (if possible)</p>",
 		"duration": "3",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

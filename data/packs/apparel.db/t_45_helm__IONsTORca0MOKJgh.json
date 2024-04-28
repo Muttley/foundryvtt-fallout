@@ -47,7 +47,7 @@
 			"physical": 6,
 			"radiation": 7
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 12

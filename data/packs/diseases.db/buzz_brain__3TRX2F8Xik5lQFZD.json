@@ -10,7 +10,7 @@
 		"description": "<p>INT tests suffer +1 difficulty</p>",
 		"duration": 4,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

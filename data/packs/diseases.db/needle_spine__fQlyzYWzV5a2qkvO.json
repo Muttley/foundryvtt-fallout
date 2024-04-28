@@ -10,7 +10,7 @@
 		"description": "<p>-10 Carry Weight</p>",
 		"duration": "1",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

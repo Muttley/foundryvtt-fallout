@@ -10,7 +10,7 @@
 		"description": "<p>END tests suffer +1 difficulty</p>",
 		"duration": 3,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

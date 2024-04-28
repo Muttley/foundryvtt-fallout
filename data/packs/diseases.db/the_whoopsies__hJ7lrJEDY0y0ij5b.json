@@ -10,7 +10,7 @@
 		"description": "<p>Must spend twice as many Luck points to gain an Effect</p>",
 		"duration": 1,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

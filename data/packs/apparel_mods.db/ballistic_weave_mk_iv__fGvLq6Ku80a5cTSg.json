@@ -26,7 +26,7 @@
 			"physical": 5,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 0
 	},

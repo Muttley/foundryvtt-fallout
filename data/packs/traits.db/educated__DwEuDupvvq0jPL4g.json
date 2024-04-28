@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p>You have one additional tag skill.</p>\n<p>When you fail a skill test using a skill other than a tag skill, the GM gains 1 AP.</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "trait"
 }

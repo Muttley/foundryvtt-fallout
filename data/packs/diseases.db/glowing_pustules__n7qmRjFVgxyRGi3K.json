@@ -10,7 +10,7 @@
 		"description": "<p>Whenever you suffer an Injury, anyone within Reach suffers 1CD Radiation damage</p>",
 		"duration": 1,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

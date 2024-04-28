@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p>You suffer complications on <strong>AGI</strong> tests on all rolls of 18 or higher whenever you are not under the effects of Calmex.</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "addiction"
 }

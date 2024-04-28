@@ -10,7 +10,7 @@
 		"description": "<p>Whenever you suffer Radiation damage, add +2 to the amount suffered</p>",
 		"duration": 1,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

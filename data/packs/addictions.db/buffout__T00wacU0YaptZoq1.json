@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p>You increase the difficulty of all <strong>STR</strong> and <strong>END</strong> tests by +1 whenever you are not under the effects of a type of Buffout (Buffout, Buffjet, or Bufftats).</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "addiction"
 }

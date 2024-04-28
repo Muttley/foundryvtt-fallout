@@ -10,7 +10,7 @@
 		"description": "<p>Attacks against you inflict +2CD damage</p>",
 		"duration": 1,
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "disease"
 }

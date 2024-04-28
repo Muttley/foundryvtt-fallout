@@ -16,7 +16,7 @@
 			"value": 0
 		},
 		"requirements": "PER 6, LCK 6",
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "perk"
 }
