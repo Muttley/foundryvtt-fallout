@@ -151,6 +151,11 @@ FALLOUT.Form.SelectCompendiumItem.prompt: Sélectionner un objet...
 FALLOUT.Form.SelectCompendiumItem.title: Choisir objets
 FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
 FALLOUT.Form.SelectItem.title: Choisir {type}
+FALLOUT.Form.SourceFilters.AllUsed: All sources are currently allowed
+FALLOUT.Form.SourceFilters.hint: If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums.
+FALLOUT.Form.SourceFilters.prompt: Select Source...
+FALLOUT.Form.SourceFilters.TheseUsed: Only the following sources will be allowed
+FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
