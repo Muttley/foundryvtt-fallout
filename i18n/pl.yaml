@@ -119,7 +119,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Zjedzone jedzenie
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Jesteś już pełen i nie możesz zjeść więcej
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje 1 obrażenie radiacyjne po spożyciu {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHEM: Chemikalia
 FALLOUT.ChemDuration.brief: Krótkotrwały
