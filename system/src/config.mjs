@@ -361,6 +361,7 @@ FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL = {
 FALLOUT.WEAPON_TYPES = {
 	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
 	bows: "FALLOUT.WEAPONS.weaponType.bows",
+	custom: "FALLOUT.WEAPONS.weaponType.custom",
 	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
 	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",

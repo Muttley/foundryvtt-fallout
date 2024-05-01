@@ -291,7 +291,20 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				skill.tag = true;
 			}
 			else {
-				const skillName = CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+				const skillName = item.system.weaponType === "custom"
+					? item.system.skill ?? ""
+					: CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+
+				const customAttribute = item.system.weaponType === "custom"
+					? item.system.attribute ?? ""
+					: false;
+
+				if (skillName === "") {
+					return ui.notifications.error(
+						game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponSkill")
+					);
+				}
+
 				const skillItem = item.actor.items.find(i => i.name === skillName);
 
 				if (skillItem) {
@@ -305,11 +318,20 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 					item.system.weaponType
 				];
 
-				if (attributeOverride) {
+				if (customAttribute) {
+					attribute = item.actor.system.attributes[customAttribute];
+				}
+				else if (attributeOverride) {
 					attribute = item.actor.system.attributes[attributeOverride];
 				}
 				else {
 					attribute = item.actor.system.attributes[skill.defaultAttribute];
+				}
+
+				if (!attribute) {
+					return ui.notifications.error(
+						game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponAttribute")
+					);
 				}
 			}
 

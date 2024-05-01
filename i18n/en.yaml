@@ -149,6 +149,8 @@ FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
 FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Food
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
@@ -316,6 +318,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Creature Attribute
 FALLOUT.TEMPLATES.Creature_Skill: Creature Skill
 FALLOUT.TEMPLATES.current: current
 FALLOUT.TEMPLATES.CurrentLeader: Current Leader
+FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
+FALLOUT.TEMPLATES.CustomSkill: Custom Skill
 FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: DAMAGE EFFECTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: DAMAGE TYPE
@@ -538,6 +542,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Big Guns
 FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Creature Attack
+FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energy Weapons
 FALLOUT.WEAPONS.weaponType.explosives: Explosives
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons

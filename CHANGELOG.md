@@ -1,6 +1,14 @@
 # v11.9.0
 
 ## Enhancements
+- [#182] Allow weapons to be configured to use custom skills
+
+	* A new "Custom" weapon type has been added which when selected allows you to specify which skill to use, and optionally override the attribute to be used with that skill.  In order to become available for selection custom skills must exist in a compendium.
+
+- [#256] Add a setting to select what compendium items are auto-retrieved from
+
+	* In the settings you can now specify which book sources should be used by the system when pulling items from the compendiums for all sections of the interface which do this.
+
 - [#275] Add the ability to make an availability luck roll from the character sheet
 
 	* This is triggered by clicking the cross-fingers icon in the Luck section of the character sheet header, and it will roll using your Luck SPECIAL score.
