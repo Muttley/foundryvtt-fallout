@@ -1,0 +1,12 @@
+<form class="{{cssClass}}" autocomplete="off">
+	{{#each itemTypes}}
+		<button
+			class="fallout-button find-from-compendium"
+			data-type="{{this.key}}"
+			style="margin: 2px;"
+		>
+			<i class="fa-solid fa-book"></i>
+			{{this.name}}
+		</button>
+	{{/each}}
+</form>

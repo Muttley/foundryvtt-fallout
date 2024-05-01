@@ -93,6 +93,8 @@ export default class ItemSelector extends CompendiumItemSelector {
 				return await fallout.compendiums.apparel_mods();
 			case "armor":
 				return await fallout.compendiums.armor();
+			case "apparel":
+				return await fallout.compendiums.apparel();
 			case "armor_robot":
 				return await fallout.compendiums.armor_robot();
 			case "books_and_magz":
@@ -117,6 +119,8 @@ export default class ItemSelector extends CompendiumItemSelector {
 				return await fallout.compendiums.plating_robot();
 			case "powerArmor":
 				return await fallout.compendiums.powerArmor();
+			case "robot_armor":
+				return await fallout.compendiums.robot_armor();
 			case "robot_mod":
 				return await fallout.compendiums.robot_mods();
 			case "skill":

@@ -1,5 +1,7 @@
 export default class CompendiumItemSelector extends FormApplication {
 
+	availableItems = [];
+
 	closeOnSelection = false;
 
 	maxChoices = 0;
@@ -123,7 +125,7 @@ export default class CompendiumItemSelector extends FormApplication {
 			uuid: this.uuid,
 		};
 
-		// Don"t include already selected items
+		// Don't include already selected items
 		for (const item of this.availableItems) {
 			if (!this.currentItemUuids.includes(item.uuid)) {
 				context.itemChoices.push(item);

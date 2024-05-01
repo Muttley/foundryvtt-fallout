@@ -251,6 +251,8 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		});
 		html.find(".find-from-compendium").click(this._onFindFromCompendium.bind(this));
 
+		html.find(".find-any-from-compendium").click(this._onFindAnyFromCompendium.bind(this));
+
 		// * Delete Inventory Item
 		html.find(".item-delete").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
@@ -436,11 +438,15 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		this.actor._toggleImmunity(immunityType);
 	}
 
+	async _onFindAnyFromCompendium(event) {
+		event.preventDefault();
+		new fallout.apps.ItemTypeMenu(this.actor).render(true);
+	}
 
 	async _onFindFromCompendium(event) {
 		event.preventDefault();
 		const itemType = event.currentTarget.dataset.type;
-		new fallout.ItemSelector(this.actor, {itemType}).render(true);
+		new fallout.apps.ItemSelector(this.actor, {itemType}).render(true);
 	}
 
 	/**
