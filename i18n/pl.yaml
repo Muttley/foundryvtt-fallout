@@ -42,6 +42,9 @@ FALLOUT.APPAREL.headgear: Nakrycie głowy
 FALLOUT.APPAREL.outfit: Strój
 FALLOUT.APPAREL.plating: Poszycie
 FALLOUT.APPAREL.powerArmor: Pancerz wspomagany
+FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
+FALLOUT.AvailabilityRoll.result.title: Availability Roll
+FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
 FALLOUT.BEVERAGE: Napoje
 FALLOUT.BODYLOCATION_ABBR.character.armL: LR
 FALLOUT.BODYLOCATION_ABBR.character.armR: PR
