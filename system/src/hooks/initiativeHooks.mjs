@@ -7,6 +7,8 @@ export const initiativeHooks = {
 
 			if (!game.user.isGM) return;
 
+			if (game.settings.get(SYSTEM_ID, "useVariableInitiative")) return;
+
 			combatant.combat.setInitiative(
 				combatant._id,
 				combatant.actor?.system?.initiative?.value ?? 0
@@ -18,6 +20,8 @@ export const initiativeHooks = {
 		Hooks.on("updateActor", (actor, updateData, options, userId) => {
 			if (!game.user.isGM) return;
 			if (!actor.inCombat) return;
+
+			if (game.settings.get(SYSTEM_ID, "useVariableInitiative")) return;
 
 			let newInitiative = updateData.system?.initiative?.value ?? null;
 

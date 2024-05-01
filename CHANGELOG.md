@@ -13,6 +13,10 @@
 
 	* This is triggered by clicking the cross-fingers icon in the Luck section of the character sheet header, and it will roll using your Luck SPECIAL score.
 
+- [#294] Add option to use Variable Initiative
+
+	* Currently this cannot handle any situational advantage that the Gamemaster may give to one side or the other, so if needed this will have to be handled manually.
+
 - [#311] Add weapon ranges to character/npc/creature sheets
 - [#316] Add ability to quickly search and add filtered items from compendiums to an Actor sheet
 

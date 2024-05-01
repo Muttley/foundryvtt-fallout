@@ -20,6 +20,7 @@ import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
 import Logger from "../utils/Logger.mjs";
 
+
 import preloadHandlebarsTemplates from "../templates.mjs";
 import registerHandlebarsHelpers from "../handlebars.mjs";
 import registerSettings from "../settings.mjs";
@@ -52,12 +53,13 @@ export async function initHook() {
 		utils: FalloutUtils,
 	};
 
+	registerSettings();
+
+	const useVariableInitiative = game.settings.get(SYSTEM_ID, "useVariableInitiative");
 	CONFIG.Combat.initiative = {
-		formula: "@initiative.value",
+		formula: useVariableInitiative ? "(@initiative.value)dc" : "@initiative.value",
 		decimals: 0,
 	};
-
-	registerSettings();
 
 	registerDocumentClasses();
 	registerDocumentSheets();

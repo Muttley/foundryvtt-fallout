@@ -113,6 +113,16 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	game.settings.register(SYSTEM_ID, "useVariableInitiative", {
+		name: "Use Variable Initiative",
+		hint: "If enabled the Variable Initiative method as detailed in the Gamemaster's Guide will be used instead of the base game's fixed initiative method.",
+		scope: "world",
+		config: true,
+		default: false,
+		type: Boolean,
+		requiresReload: true,
+	});
+
 	// ----------------
 	//  SOURCE FILTERS
 	// ----------------

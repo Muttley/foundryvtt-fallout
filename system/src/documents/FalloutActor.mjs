@@ -46,6 +46,11 @@ export default class FalloutActor extends Actor {
 	}
 
 
+	get isPlayerCharacter() {
+		return ["character", "robot"].includes(this.type);
+	}
+
+
 	get isRobot() {
 		return this.type === "robot";
 	}
