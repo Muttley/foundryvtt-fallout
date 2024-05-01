@@ -25,8 +25,8 @@ FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
-FALLOUT.APP.ItemTypeMenu.title: Select Item Type
-FALLOUT.APP.Loading.body: Searching the Wastelands...
+FALLOUT.APP.ItemTypeMenu.title: Sélectionner le type d'objet
+FALLOUT.APP.Loading.body: Recherche dans les Terres Désolées...
 FALLOUT.APP.Loading.title: Chargement
 FALLOUT.APP.ModuleArtConfig.items: Objets
 FALLOUT.APP.ModuleArtConfig.title: Configurer l'illustration
@@ -42,9 +42,9 @@ FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Couvre-Chef
 FALLOUT.APPAREL.powerArmor: Armure Assistée
-FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
-FALLOUT.AvailabilityRoll.result.title: Availability Roll
-FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
+FALLOUT.AvailabilityRoll.result.body: La rareté maximale disponible est de {rarity}
+FALLOUT.AvailabilityRoll.result.title: Lancer de disponibilité
+FALLOUT.AvailabilityRoll.tooltip: Lancé pour la disponibilité
 FALLOUT.BEVERAGE: Boissons
 FALLOUT.BODYLOCATION_ABBR.character.armL: BG
 FALLOUT.BODYLOCATION_ABBR.character.armR: BD
@@ -122,9 +122,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Vous êtes déjà rassasié et ne pouvez plus manger
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} a résisté aux dégâts de radiations {baseRadDamage} en consommant {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux radiations
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
@@ -149,19 +149,21 @@ FALLOUT.EffectEdit: Editer Effet
 FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
 FALLOUT.ERRORS.ThisWeaponDoesNoDamage: Le nombre total de dés de combat à lancer doit être supérieur à zéro.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
 FALLOUT.FOOD: Nourriture
-FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
-FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Vous ne pouvez sélectionner qu'un maximum de {maxChoices} de ce type d'objet.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Impossible de trouver des objets du bon type dans les compendiums disponibles.
 FALLOUT.Form.SelectCompendiumItem.prompt: Sélectionner un objet...
 FALLOUT.Form.SelectCompendiumItem.title: Choisir objets
-FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
+FALLOUT.Form.SelectCompendiumItem.tooltip: Ajouter à partir des Compendiums
 FALLOUT.Form.SelectItem.title: Choisir {type}
-FALLOUT.Form.SourceFilters.AllUsed: All sources are currently allowed
-FALLOUT.Form.SourceFilters.hint: If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums.
-FALLOUT.Form.SourceFilters.prompt: Select Source...
-FALLOUT.Form.SourceFilters.TheseUsed: Only the following sources will be allowed
-FALLOUT.Form.SourceFilters.title: Source Filters
+FALLOUT.Form.SourceFilters.AllUsed: Toutes les sources sont actuellement autorisées
+FALLOUT.Form.SourceFilters.hint: Si elle est remplie, seules les sources incluses dans cette liste seront utilisées par n'importe quelle partie du système qui tire automatiquement les éléments des Compendiums.
+FALLOUT.Form.SourceFilters.prompt: Sélectionner la source...
+FALLOUT.Form.SourceFilters.TheseUsed: Seules les sources suivantes seront autorisées
+FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
@@ -316,6 +318,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
 FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
 FALLOUT.TEMPLATES.current: Actuel
 FALLOUT.TEMPLATES.CurrentLeader: Chef actuel
+FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
+FALLOUT.TEMPLATES.CustomSkill: Custom Skill
 FALLOUT.TEMPLATES.Damage_Effects: Effets de dégâts
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
@@ -538,6 +542,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
 FALLOUT.WEAPONS.weaponType.bows: Arcs
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
+FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armes à énergie
 FALLOUT.WEAPONS.weaponType.explosives: Explosifs
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Armes de CAC
