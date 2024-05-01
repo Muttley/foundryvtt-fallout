@@ -119,7 +119,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Vous êtes déjà rassasié et ne pouvez plus manger
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève

@@ -119,7 +119,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem verbraucht
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Essen verbaucht
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Du bist bereits voll und kannst nicht mehr essen
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Sonstiges verbraucht
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} bekommt 1 Strahlenschaden durch Verbrauch von {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
 FALLOUT.CHEM: Chem
 FALLOUT.ChemDuration.brief: Flüchtig
