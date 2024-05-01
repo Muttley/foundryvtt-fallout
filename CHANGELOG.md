@@ -1,3 +1,8 @@
+# v11.9.2
+
+## Bugs
+- [#339] Source filtering not working correctly
+
 # v11.9.1
 
 ## Bugs
