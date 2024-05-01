@@ -149,6 +149,8 @@ FALLOUT.EffectEdit: Bearbeite Effektt
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
 FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Nahrung
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
@@ -316,6 +318,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Attribut der Kreatur
 FALLOUT.TEMPLATES.Creature_Skill: Fertigkeit der Kreatur
 FALLOUT.TEMPLATES.current: aktuell
 FALLOUT.TEMPLATES.CurrentLeader: Aktueller Anführer
+FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
+FALLOUT.TEMPLATES.CustomSkill: Custom Skill
 FALLOUT.TEMPLATES.Damage_Effects: Schadens-Effekte
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
 FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
@@ -538,6 +542,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Instabile Strahlung
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
 FALLOUT.WEAPONS.weaponType.bows: Bögen
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
+FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
 FALLOUT.WEAPONS.weaponType.explosives: Sprengstoffe
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Nahkampfwaffen

@@ -149,6 +149,8 @@ FALLOUT.EffectEdit: Editar Efeito
 FALLOUT.EffectToggle: Alternar Efeito
 FALLOUT.equipped: Equipado
 FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Comida
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
@@ -316,6 +318,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
 FALLOUT.TEMPLATES.Creature_Skill: Skill da Criatura
 FALLOUT.TEMPLATES.current: atual
 FALLOUT.TEMPLATES.CurrentLeader: Current Leader
+FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
+FALLOUT.TEMPLATES.CustomSkill: Custom Skill
 FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
@@ -538,6 +542,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
 FALLOUT.WEAPONS.weaponType.bigGuns: Armas Grandes
 FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
+FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de Energia
 FALLOUT.WEAPONS.weaponType.explosives: Explosivos
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas Brancas
