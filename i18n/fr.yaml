@@ -42,6 +42,9 @@ FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Couvre-Chef
 FALLOUT.APPAREL.powerArmor: Armure Assistée
+FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
+FALLOUT.AvailabilityRoll.result.title: Availability Roll
+FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
 FALLOUT.BEVERAGE: Boissons
 FALLOUT.BODYLOCATION_ABBR.character.armL: BG
 FALLOUT.BODYLOCATION_ABBR.character.armR: BD
