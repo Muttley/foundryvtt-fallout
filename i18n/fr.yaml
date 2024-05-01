@@ -25,6 +25,7 @@ FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
+FALLOUT.APP.ItemTypeMenu.title: Select Item Type
 FALLOUT.APP.Loading.body: Searching the Wastelands...
 FALLOUT.APP.Loading.title: Chargement
 FALLOUT.APP.ModuleArtConfig.items: Objets

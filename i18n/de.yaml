@@ -25,6 +25,7 @@ FALLOUT.Add: Hinzufügen
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Alles zurücksetzen
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Alle Chem Dosen zurücksetzen
 FALLOUT.APP.ChemDoseManager.title: Chem Dosen
+FALLOUT.APP.ItemTypeMenu.title: Select Item Type
 FALLOUT.APP.Loading.body: Searching the Wastelands...
 FALLOUT.APP.Loading.title: Loading
 FALLOUT.APP.ModuleArtConfig.items: Gegenstände
