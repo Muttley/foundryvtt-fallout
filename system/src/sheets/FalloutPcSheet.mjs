@@ -45,6 +45,11 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 
+		html.find(".availability-roll").click(async event => {
+			event.preventDefault();
+			this.actor.rollAvailabilityCheck();
+		});
+
 		html.find(".power-armor-monitor-health-value").change(event => {
 			event.preventDefault();
 

@@ -1477,6 +1477,30 @@ export default class FalloutActor extends Actor {
 		this.update(updateData);
 	}
 
+	async rollAvailabilityCheck() {
+		const luckDice = this.system.attributes?.luc?.value ?? 1;
+
+		const formula = `${luckDice}dccs>=5`;
+		let roll = new Roll(formula);
+
+		let availabilityRoll = await roll.evaluate({ async: true });
+		try {
+			game.dice3d.showForRoll(availabilityRoll);
+		}
+		catch(err) {}
+
+		const rarity = parseInt(roll.result);
+
+		fallout.chat.renderGeneralMessage(
+			this,
+			{
+				title: game.i18n.localize("FALLOUT.AvailabilityRoll.result.title"),
+				body: game.i18n.format("FALLOUT.AvailabilityRoll.result.body", {rarity}),
+			},
+			CONST.DICE_ROLL_MODES.PRIVATE
+		);
+	}
+
 	async sleep(hours, safe, hasActiveFatigue) {
 		const currentSleepStatus = this.system.conditions?.sleep ?? 0;
 

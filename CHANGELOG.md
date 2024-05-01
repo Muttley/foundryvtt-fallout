@@ -1,6 +1,10 @@
 # v11.9.0
 
 ## Enhancements
+- [#275] Add the ability to make an availability luck roll from the character sheet
+
+	* This is triggered by clicking the cross-fingers icon in the Luck section of the character sheet header, and it will roll using your Luck SPECIAL score.
+
 - [#311] Add weapon ranges to character/npc/creature sheets
 - [#316] Add ability to quickly search and add filtered items from compendiums to an Actor sheet
 

@@ -72,6 +72,14 @@
 
             <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
                 <div>
+					{{#if isCharacter}}
+						<a
+							class="availability-roll"
+							data-tooltip="{{localize 'FALLOUT.AvailabilityRoll.tooltip'}}"
+						>
+							<i class="fa-light fa-hand-fingers-crossed fa-lg"></i>
+						</a>
+					{{/if}}
                     <label class="label">
 						<strong>{{localize "FALLOUT.TEMPLATES.Luck"}}</strong>
 					</label>
