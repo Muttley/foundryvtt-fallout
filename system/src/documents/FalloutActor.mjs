@@ -1218,6 +1218,8 @@ export default class FalloutActor extends Actor {
 			}
 
 			if (consumableType !== "chem" && item.system.irradiated) {
+				const baseRadDamage = CONFIG.FALLOUT.CONSUMABLE_RAD_DAMAGE;
+
 				let formula = "1dccs>=5";
 				let roll = new Roll(formula);
 
@@ -1228,22 +1230,47 @@ export default class FalloutActor extends Actor {
 				catch(err) {}
 
 				if (parseInt(roll.result) > 0) {
-					let newRadiation = this.system.radiation + 1;
-					actorUpdateData["system.radiation"] = newRadiation;
+					const radResistance = this.system.resistance?.radiation ?? 0;
+					const radsTaken = Math.max(0, baseRadDamage - radResistance);
 
-					fallout.chat.renderGeneralMessage(
-						this,
-						{
-							title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
-							body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
-								{
-									actorName: this.name,
-									itemName: item.name,
-								}
-							),
-						},
-						CONST.DICE_ROLL_MODES.PRIVATE
-					);
+					const newRadiation = this.system.immunities.radiation
+						? 0
+						: this.system.radiation + radsTaken;
+
+					if (newRadiation > 0) {
+						actorUpdateData["system.radiation"] = newRadiation;
+
+						fallout.chat.renderGeneralMessage(
+							this,
+							{
+								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
+								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
+									{
+										actorName: this.name,
+										itemName: item.name,
+										radsTaken,
+									}
+								),
+							},
+							CONST.DICE_ROLL_MODES.PRIVATE
+						);
+					}
+					else {
+						fallout.chat.renderGeneralMessage(
+							this,
+							{
+								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title"),
+								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body",
+									{
+										actorName: this.name,
+										baseRadDamage,
+										itemName: item.name,
+									}
+								),
+							},
+							CONST.DICE_ROLL_MODES.PRIVATE
+						);
+					}
 				}
 			}
 
@@ -1340,25 +1367,26 @@ export default class FalloutActor extends Actor {
 
 		await this.update(actorUpdateData);
 
-		fallout.chat.renderConsumptionMessage(
-			this,
-			{
-				title: game.i18n.localize(
-					`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
-				),
-				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
-					{
-						actorName: this.name,
-						itemName: item.name,
-					}
-				),
-				showHungerAndThirst: ["beverage", "food"].includes(consumableType),
-				hunger: this.system.conditions.hunger,
-				thirst: this.system.conditions.thirst,
-			}
-		);
 
 		if (consumed) {
+			fallout.chat.renderConsumptionMessage(
+				this,
+				{
+					title: game.i18n.localize(
+						`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
+					),
+					body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
+						{
+							actorName: this.name,
+							itemName: item.name,
+						}
+					),
+					showHungerAndThirst: ["beverage", "food"].includes(consumableType),
+					hunger: this.system.conditions.hunger,
+					thirst: this.system.conditions.thirst,
+				}
+			);
+
 			if (allUsed) {
 				await item.delete();
 			}

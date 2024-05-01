@@ -14,6 +14,7 @@
 	* The example Fallout custom data module has been updated with an example of how to add new sources to your own content modules: https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.1.0
 
 ## Bugs
+- [#267] Actors should not take radiation damage from consumables if they are immune, and if not immune the amount of rads taken should be adjusted by an actor's base resistance.
 - [#320] Food item deleted or quantity reduced even though unable to eat as full
 
 ## Chores
