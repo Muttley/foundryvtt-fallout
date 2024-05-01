@@ -1,3 +1,10 @@
+# v11.9.1
+
+## Bugs
+- [#336] Sleep processing fails due to error in player online checks
+
+---
+
 # v11.9.0
 
 ## Enhancements
