@@ -72,8 +72,8 @@ export default class FalloutActor extends Actor {
 		let hasActiveOwner = false;
 
 		for (const user of onlineUsers) {
-			if (actor.ownership[user._id] === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
-				|| actor.ownership.default === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+			if (this.ownership[user._id] === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+				|| this.ownership.default === CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
 			) {
 				hasActiveOwner = true;
 				break;
