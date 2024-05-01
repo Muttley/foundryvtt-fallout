@@ -244,6 +244,15 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * Add Inventory Item
 		html.find(".item-create").click(this._onItemCreate.bind(this));
 
+		html.find(
+			".find-from-compendium"
+		).each((i, el) => {
+			el.title = game.i18n.localize("FALLOUT.Form.SelectCompendiumItem.tooltip");
+		});
+		html.find(".find-from-compendium").click(this._onFindFromCompendium.bind(this));
+
+		html.find(".find-any-from-compendium").click(this._onFindAnyFromCompendium.bind(this));
+
 		// * Delete Inventory Item
 		html.find(".item-delete").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
@@ -282,7 +291,20 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				skill.tag = true;
 			}
 			else {
-				const skillName = CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+				const skillName = item.system.weaponType === "custom"
+					? item.system.skill ?? ""
+					: CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+
+				const customAttribute = item.system.weaponType === "custom"
+					? item.system.attribute ?? ""
+					: false;
+
+				if (skillName === "") {
+					return ui.notifications.error(
+						game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponSkill")
+					);
+				}
+
 				const skillItem = item.actor.items.find(i => i.name === skillName);
 
 				if (skillItem) {
@@ -296,11 +318,20 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 					item.system.weaponType
 				];
 
-				if (attributeOverride) {
+				if (customAttribute) {
+					attribute = item.actor.system.attributes[customAttribute];
+				}
+				else if (attributeOverride) {
 					attribute = item.actor.system.attributes[attributeOverride];
 				}
 				else {
 					attribute = item.actor.system.attributes[skill.defaultAttribute];
+				}
+
+				if (!attribute) {
+					return ui.notifications.error(
+						game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponAttribute")
+					);
 				}
 			}
 
@@ -429,6 +460,16 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		this.actor._toggleImmunity(immunityType);
 	}
 
+	async _onFindAnyFromCompendium(event) {
+		event.preventDefault();
+		new fallout.apps.ItemTypeMenu(this.actor).render(true);
+	}
+
+	async _onFindFromCompendium(event) {
+		event.preventDefault();
+		const itemType = event.currentTarget.dataset.type;
+		new fallout.apps.ItemSelector(this.actor, {itemType}).render(true);
+	}
 
 	/**
 	 * Handle creating a new Owned Item for the actor using initial data defined

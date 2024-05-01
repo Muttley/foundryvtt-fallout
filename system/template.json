@@ -433,8 +433,7 @@
 			]
 		},
 		"apparel": {
-			"appareltype": "",
-			"armorType": "",
+			"apparelType": "",
 			"damaged": "",
 			"health": {
 				"max": 0,
@@ -448,7 +447,7 @@
 				"head": false,
 				"legL": false,
 				"legR": false,
-				"torso": true
+				"torso": false
 			},
 			"mods": {
 				"current": 0,
@@ -566,7 +565,7 @@
 			]
 		},
 		"robot_armor": {
-			"appareltype": "",
+			"apparelType": "",
 			"carry": 0,
 			"location": {
 				"armL": false,
@@ -574,7 +573,7 @@
 				"head": false,
 				"legL": false,
 				"legR": false,
-				"torso": true
+				"torso": false
 			},
 			"mods": "",
 			"perks": "",

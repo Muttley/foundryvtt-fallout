@@ -1,59 +1,65 @@
-<div class="flexrow resource-row">
-	<div class="box">
-		<div class="box-header text-center">
-			{{localize "FALLOUT.TEMPLATES.SKILLS"}}
-		</div>
-		<div>
-			<ol class="items-list">
-				{{#each itemsByType.skill}}
-					<li
-						class="item skill flexrow"
-						data-item-id="{{this._id}}"
+<div class="resource-row">
+	<ol class="items-list">
+		<li class="consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize "FALLOUT.TEMPLATES.SKILLS"}}
+			</div>
+			<div class="item-controls">
+				<a
+					class="find-from-compendium"
+					data-type="skill"
+				>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</a>
+			</div>
+		</li>
+		{{#each itemsByType.skill}}
+			<li
+				class="item skill flexrow"
+				data-item-id="{{this._id}}"
+			>
+				<div class="item-name">
+					<h4>
+						<a class="color-secondary">
+							<span class="resource-label upperC">
+								{{this.name}}
+							</span>
+							[{{toUpperCase this.system.defaultAttribute}}]
+						</a>
+					</h4>
+				</div>
+				<div
+					class="item-skill-tag"
+					style="flex-basis: content;"
+				>
+					<input
+						type="checkbox"
+						name="tag"
+						{{#if this.system.tag}}
+							checked
+						{{/if}}
 					>
-						<div class="item-name">
-							<h4>
-								<a class="color-secondary">
-									<span class="resource-label upperC">
-										{{this.name}}
-									</span>
-									[{{toUpperCase this.system.defaultAttribute}}]
-								</a>
-							</h4>
-						</div>
-						<div
-							class="item-skill-tag"
-							style="flex-basis: content;"
-						>
-							<input
-								type="checkbox"
-								name="tag"
-								{{#if this.system.tag}}
-									checked
-								{{/if}}
-							>
-						</div>
-						<div class="item-skill-value">
-							<input
-								type="number"
-								class="num-short-2"
-								name="value"
-								value="{{this.system.value}}"
-							>
-						</div>
-						<div
-							class="item-controls"
-							style="flex-basis: content;"
-						>
-							<a
-								class="item-control item-delete"
-								title="{{localize 'FALLOUT.TEMPLATES.Delete_Item'}}"
-							>
-								<i class="fas fa-trash"></i>
-							</a>
-						</div>
-					</li>
-				{{/each}}
-			</ol>
-		</div>
-	</div>
+				</div>
+				<div class="item-skill-value">
+					<input
+						type="number"
+						class="num-short-2"
+						name="value"
+						value="{{this.system.value}}"
+					>
+				</div>
+				<div
+					class="item-controls"
+					style="flex-basis: content;"
+				>
+					<a
+						class="item-control item-delete"
+						title="{{localize 'FALLOUT.TEMPLATES.Delete_Item'}}"
+					>
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</li>
+		{{/each}}
+	</ol>
 </div>

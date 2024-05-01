@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout: The Roleplaying Game",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "11.8.1",
+	"version": "11.9.0",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
@@ -66,6 +66,15 @@
 			"label": "Books & Magazines",
 			"system": "fallout",
 			"path": "packs/books_and_magz",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
+			"name": "diseases",
+			"label": "Diseases",
+			"system": "fallout",
+			"path": "packs/diseases",
 			"type": "Item",
 			"private": false,
 			"flags": {}
@@ -192,6 +201,7 @@
 						"apparel",
 						"books_and_magz",
 						"consumables",
+						"diseases",
 						"miscellany",
 						"perks",
 						"robot_modules",

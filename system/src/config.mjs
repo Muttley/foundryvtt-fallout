@@ -12,11 +12,13 @@ FALLOUT.EIGHT_HOURS_IN_SECONDS = 60 * 60 * 8;
 FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
 FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
 
+FALLOUT.CONSUMABLE_RAD_DAMAGE = 1;
+
 FALLOUT.APPAREL_TYPES = {
-	clothing: "FALLOUT.APPAREL.clothing",
-	outfit: "FALLOUT.APPAREL.outfit",
 	armor: "FALLOUT.APPAREL.armor",
+	clothing: "FALLOUT.APPAREL.clothing",
 	headgear: "FALLOUT.APPAREL.headgear",
+	outfit: "FALLOUT.APPAREL.outfit",
 	powerArmor: "FALLOUT.APPAREL.powerArmor",
 };
 
@@ -203,8 +205,14 @@ FALLOUT.NPC_CATEGORIES = {
 };
 
 FALLOUT.OFFICIAL_SOURCES = {
+	aat_fully_operational: "FALLOUT.SOURCE_TITLE.aat_fully_operational",
+	aat_hunted: "FALLOUT.SOURCE_TITLE.aat_hunted",
+	aat_orange_sky: "FALLOUT.SOURCE_TITLE.aat_orange_sky",
+	aat_skull_canyon: "FALLOUT.SOURCE_TITLE.aat_skull_canyon",
 	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
 	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
+	gm_toolkit: "FALLOUT.SOURCE_TITLE.gm_toolkit",
+	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
 	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
@@ -225,8 +233,8 @@ FALLOUT.RARITIES = {
 };
 
 FALLOUT.ROBOT_APPAREL_TYPE = {
-	plating: "FALLOUT.APPAREL.plating",
 	armor: "FALLOUT.APPAREL.armor",
+	plating: "FALLOUT.APPAREL.plating",
 };
 
 FALLOUT.SETTLEMENT_ITEM_ICONS = {
@@ -353,6 +361,7 @@ FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL = {
 FALLOUT.WEAPON_TYPES = {
 	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
 	bows: "FALLOUT.WEAPONS.weaponType.bows",
+	custom: "FALLOUT.WEAPONS.weaponType.custom",
 	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
 	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",

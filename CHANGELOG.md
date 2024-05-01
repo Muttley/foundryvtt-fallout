@@ -1,3 +1,46 @@
+# v11.9.0
+
+## Enhancements
+- [#182] Allow weapons to be configured to use custom skills
+
+	* A new "Custom" weapon type has been added which when selected allows you to specify which skill to use, and optionally override the attribute to be used with that skill.  In order to become available for selection custom skills must exist in a compendium.
+
+- [#256] Add a setting to select what compendium items are auto-retrieved from
+
+	* In the settings you can now specify which book sources should be used by the system when pulling items from the compendiums for all sections of the interface which do this.
+
+- [#275] Add the ability to make an availability luck roll from the character sheet
+
+	* This is triggered by clicking the cross-fingers icon in the Luck section of the character sheet header, and it will roll using your Luck SPECIAL score.
+
+- [#294] Add option to use Variable Initiative
+
+	* Currently this cannot handle any situational advantage that the Gamemaster may give to one side or the other, so if needed this will have to be handled manually.
+
+- [#311] Add weapon ranges to character/npc/creature sheets
+- [#316] Add ability to quickly search and add filtered items from compendiums to an Actor sheet
+
+	* Each Item section on character now has a new control icon (magnifying glass) which when clicked will open a list of Items from all compendiums, filtered by the specific type for the section.  You can start typing the name of the item you wish to add in the input, and it will filter anything that matches.
+	Selecting one of these items from the list will add it to the Actor's inventory.
+
+- [#317] Add Diseases item compendium (20 items)
+- [#324] On all items add ability to specify which source book they came from
+- [#325] Add the ability to add custom book sources via module flags
+
+	* The example Fallout custom data module has been updated with an example of how to add new sources to your own content modules: https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.1.0
+
+## Bugs
+- [#267] Actors should not take radiation damage from consumables if they are immune, and if not immune the amount of rads taken should be adjusted by an actor's base resistance.
+- [#320] Food item deleted or quantity reduced even though unable to eat as full
+
+## Chores
+- [#310] Merge French translation updates from Crowdin
+- [#313] Remove unused armorType field from apparel item schema
+- [#314] Rename appareltype field in apparel item schema to apparelType for field name consistency purposes
+- [#315] Rename appareltype field in robot_armor item schema to apparelType for field name consistency purposes
+
+---
+
 # v11.8.1
 
 ## Bugs

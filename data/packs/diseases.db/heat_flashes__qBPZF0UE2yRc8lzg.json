@@ -1,0 +1,16 @@
+{
+	"_id": "qBPZF0UE2yRc8lzg",
+	"_key": "!items!qBPZF0UE2yRc8lzg",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Heat Flashes",
+	"system": {
+		"description": "<p>END tests suffer +1 difficulty</p>",
+		"duration": 3,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

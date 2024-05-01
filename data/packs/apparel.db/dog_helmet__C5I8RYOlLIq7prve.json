@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Dog Helmet",
 	"system": {
-		"appareltype": "armor",
-		"armorType": "",
+		"apparelType": "armor",
 		"cost": 7,
 		"damaged": "",
 		"description": "<p>Characters who have taken the Dogmeat perk (p.63) are accompanied by a trusted canine companion, and they&rsquo;ll probably want to protect Man&rsquo;s Best Friend from the dangers of the wasteland.</p>",
@@ -48,7 +47,7 @@
 			"physical": 2,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 1

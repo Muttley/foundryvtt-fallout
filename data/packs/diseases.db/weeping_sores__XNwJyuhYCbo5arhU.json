@@ -1,0 +1,16 @@
+{
+	"_id": "XNwJyuhYCbo5arhU",
+	"_key": "!items!XNwJyuhYCbo5arhU",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Weeping Sores",
+	"system": {
+		"description": "<p>Whenever you suffer Physical damage, you suffer +1 Physical damage at the start of your next turn, ignoring damage resistance</p>",
+		"duration": 3,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

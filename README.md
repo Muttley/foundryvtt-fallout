@@ -38,6 +38,7 @@ All copyright assets included in the system are used with the explicit consent o
 - Apparel Mod
 - Books and Magazines
 - Consumables (Food, Beverage, Chem, Other)
+- Disease
 - Miscellany
 - Perk
 - Robot Armor
@@ -57,6 +58,7 @@ All copyright assets included in the system are used with the explicit consent o
 	* Apparel Mods item compendium (161 items)
 	* Books and Magazines item compendium (95 items)
 	* Consumables item compendium (137 items)
+	* Disease item compendium (20 items)
 	* Miscellany item compendium (19 items)
 	* Perks item compendium (190 items)
 	* Robot Modules item compendium (13 items)

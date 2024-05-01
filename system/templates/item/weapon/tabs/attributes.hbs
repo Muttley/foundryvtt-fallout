@@ -11,6 +11,39 @@
 		</select>
 	</div>
 
+	{{#ifCond system.weaponType "===" "custom"}}
+		<div class="resource-row grid bgOdd">
+			<div class="flexrow align-mid">
+				<label
+					class="resource-label upperC"
+					for="system.attribute"
+				>
+					{{localize "FALLOUT.TEMPLATES.CustomAttribute"}}
+				</label>
+				<select name="system.attribute">
+					<option value="">&mdash;</option>
+					{{selectOptions FALLOUT.ATTRIBUTES
+						selected=system.attribute
+					}}
+				</select>
+			</div>
+			<div class="flexrow align-mid">
+				<label
+					class="resource-label upperC"
+					for="system.skill"
+				>
+					{{localize "FALLOUT.TEMPLATES.CustomSkill"}}
+				</label>
+				<select name="system.skill">
+					<option value="">&mdash;</option>
+					{{selectOptions availableSkills
+						selected=system.skill
+					}}
+				</select>
+			</div>
+		</div>
+	{{/ifCond}}
+
 	{{#if isOwnedByCreature}}
 		<div class="resource-row grid bgOdd">
 			<div class="flexrow align-mid">

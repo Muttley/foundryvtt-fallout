@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Drifter Outfit",
 	"system": {
-		"appareltype": "outfit",
-		"armorType": "",
+		"apparelType": "outfit",
 		"cost": 35,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A leather trenchcoat, sturdy hide gloves and boots, a pair of jeans, and a shirt make for an outfit that&rsquo;s hard wearing but comfortable for long periods of time, and warm enough on the open road to suit those who wander the wastelands.</span> </p>",
@@ -48,7 +47,7 @@
 			"physical": 1,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 10

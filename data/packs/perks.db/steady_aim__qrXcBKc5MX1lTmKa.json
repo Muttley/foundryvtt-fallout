@@ -16,7 +16,7 @@
 			"value": 0
 		},
 		"requirements": "STR 8, AGI 7",
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "perk"
 }

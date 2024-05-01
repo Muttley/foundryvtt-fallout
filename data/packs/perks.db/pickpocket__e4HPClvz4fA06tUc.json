@@ -16,7 +16,7 @@
 			"value": 0
 		},
 		"requirements": "PER 8, AGI 8, Level 1+",
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "perk"
 }

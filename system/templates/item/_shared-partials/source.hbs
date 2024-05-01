@@ -1,0 +1,20 @@
+<div class="tab source" data-group="primary" data-tab="source">
+	<div class="flexrow resource-row bgOdd">
+		<label class="resource-label upperC">
+			{{localize "FALLOUT.TEMPLATES.Source"}}
+		</label>
+		<select name="system.source">
+			<option value="">&mdash;</option>
+			{{#each allSources}}
+				<option
+					value="{{this.uuid}}"
+					{{#ifCond ../item.system.source "===" this.uuid}}
+						selected
+					{{/ifCond}}
+				>
+					{{this.name}}
+				</option>
+			{{/each}}
+		</select>
+	</div>
+</div>

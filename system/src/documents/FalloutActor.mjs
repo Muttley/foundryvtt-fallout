@@ -46,6 +46,11 @@ export default class FalloutActor extends Actor {
 	}
 
 
+	get isPlayerCharacter() {
+		return ["character", "robot"].includes(this.type);
+	}
+
+
 	get isRobot() {
 		return this.type === "robot";
 	}
@@ -194,7 +199,7 @@ export default class FalloutActor extends Actor {
 			if (!v) {
 				let pow = this.items.find(
 					i => i.type === "apparel"
-						&& i.system.appareltype === "powerArmor"
+						&& i.system.apparelType === "powerArmor"
 						&& i.system.equipped
 						&& i.system.powered
 						&& i.system.location[k] === true
@@ -211,7 +216,7 @@ export default class FalloutActor extends Actor {
 				let armor = this.items.find(
 					i =>
 						i.type === "apparel"
-                && i.system.appareltype === "armor"
+                && i.system.apparelType === "armor"
                 && i.system.equipped
                 && i.system.location[k] === true
 				);
@@ -231,7 +236,7 @@ export default class FalloutActor extends Actor {
 			let outfit = this.items.find(
 				i =>
 					i.type === "apparel"
-              && i.system.appareltype === "outfit"
+              && i.system.apparelType === "outfit"
               && i.system.equipped
 			);
 			if (outfit) {
@@ -246,7 +251,7 @@ export default class FalloutActor extends Actor {
 		// ! CHECK HEADGEAR
 		if (!outfittedLocations.head) {
 			let headgear = this.items.find(i => i.type === "apparel"
-				&& i.system.appareltype === "headgear"
+				&& i.system.apparelType === "headgear"
 				&& i.system.equipped
 			);
 
@@ -259,7 +264,7 @@ export default class FalloutActor extends Actor {
 		let clothing = this.items.find(
 			i =>
 				i.type === "apparel"
-            && i.system.appareltype === "clothing"
+            && i.system.apparelType === "clothing"
             && i.system.equipped
 		);
 
@@ -465,7 +470,7 @@ export default class FalloutActor extends Actor {
 		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let armor = this.items.find(i => i.type === "robot_armor"
-					&& i.system.appareltype === "armor"
+					&& i.system.apparelType === "armor"
 					&& i.system.equipped
 					&& i.system.location[k] === true
 				);
@@ -477,7 +482,7 @@ export default class FalloutActor extends Actor {
 		}
 		// ADD PLATING AND RESISTANCE BONUSES
 		let plating = this.items.find(i => i.type === "robot_armor"
-            && i.system.appareltype === "plating"
+            && i.system.apparelType === "plating"
             && i.system.equipped
 		);
 
@@ -577,7 +582,7 @@ export default class FalloutActor extends Actor {
 		// remove powered powerArmor pieces for characters
 		if (this.type === "character") {
 			physicalItems = physicalItems.filter(i => {
-				if (i.system.appareltype === "powerArmor") {
+				if (i.system.apparelType === "powerArmor") {
 					return !i.system.powered;
 				}
 				else {
@@ -1141,6 +1146,8 @@ export default class FalloutActor extends Actor {
 	async consumeItem(item) {
 		if (this.type !== "character") return false;
 
+		let consumed = true;
+
 		const consumableType = item.system.consumableType;
 
 		const newQuantity = item.system.quantity - 1;
@@ -1216,6 +1223,8 @@ export default class FalloutActor extends Actor {
 			}
 
 			if (consumableType !== "chem" && item.system.irradiated) {
+				const baseRadDamage = CONFIG.FALLOUT.CONSUMABLE_RAD_DAMAGE;
+
 				let formula = "1dccs>=5";
 				let roll = new Roll(formula);
 
@@ -1226,22 +1235,47 @@ export default class FalloutActor extends Actor {
 				catch(err) {}
 
 				if (parseInt(roll.result) > 0) {
-					let newRadiation = this.system.radiation + 1;
-					actorUpdateData["system.radiation"] = newRadiation;
+					const radResistance = this.system.resistance?.radiation ?? 0;
+					const radsTaken = Math.max(0, baseRadDamage - radResistance);
 
-					fallout.chat.renderGeneralMessage(
-						this,
-						{
-							title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
-							body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
-								{
-									actorName: this.name,
-									itemName: item.name,
-								}
-							),
-						},
-						CONST.DICE_ROLL_MODES.PRIVATE
-					);
+					const newRadiation = this.system.immunities.radiation
+						? 0
+						: this.system.radiation + radsTaken;
+
+					if (newRadiation > 0) {
+						actorUpdateData["system.radiation"] = newRadiation;
+
+						fallout.chat.renderGeneralMessage(
+							this,
+							{
+								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
+								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
+									{
+										actorName: this.name,
+										itemName: item.name,
+										radsTaken,
+									}
+								),
+							},
+							CONST.DICE_ROLL_MODES.PRIVATE
+						);
+					}
+					else {
+						fallout.chat.renderGeneralMessage(
+							this,
+							{
+								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title"),
+								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body",
+									{
+										actorName: this.name,
+										baseRadDamage,
+										itemName: item.name,
+									}
+								),
+							},
+							CONST.DICE_ROLL_MODES.PRIVATE
+						);
+					}
 				}
 			}
 
@@ -1318,6 +1352,8 @@ export default class FalloutActor extends Actor {
 
 		if (consumableType === "food") {
 			if (isFull) {
+				consumed = false;
+
 				ui.notifications.warn(
 					game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
 				);
@@ -1336,34 +1372,40 @@ export default class FalloutActor extends Actor {
 
 		await this.update(actorUpdateData);
 
-		fallout.chat.renderConsumptionMessage(
-			this,
-			{
-				title: game.i18n.localize(
-					`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
-				),
-				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
-					{
-						actorName: this.name,
-						itemName: item.name,
-					}
-				),
-				showHungerAndThirst: ["beverage", "food"].includes(consumableType),
-				hunger: this.system.conditions.hunger,
-				thirst: this.system.conditions.thirst,
-			}
-		);
 
-		if (allUsed) {
-			await item.delete();
+		if (consumed) {
+			fallout.chat.renderConsumptionMessage(
+				this,
+				{
+					title: game.i18n.localize(
+						`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
+					),
+					body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
+						{
+							actorName: this.name,
+							itemName: item.name,
+						}
+					),
+					showHungerAndThirst: ["beverage", "food"].includes(consumableType),
+					hunger: this.system.conditions.hunger,
+					thirst: this.system.conditions.thirst,
+				}
+			);
+
+			if (allUsed) {
+				await item.delete();
+			}
+			else {
+				await item.update({
+					"system.quantity": newQuantity,
+				});
+			}
+
+			return allUsed;
 		}
 		else {
-			await item.update({
-				"system.quantity": newQuantity,
-			});
+			return false;
 		}
-
-		return allUsed;
 	}
 
 	async isAddictedToChem(item) {
@@ -1438,6 +1480,30 @@ export default class FalloutActor extends Actor {
 		}
 
 		this.update(updateData);
+	}
+
+	async rollAvailabilityCheck() {
+		const luckDice = this.system.attributes?.luc?.value ?? 1;
+
+		const formula = `${luckDice}dccs>=5`;
+		let roll = new Roll(formula);
+
+		let availabilityRoll = await roll.evaluate({ async: true });
+		try {
+			game.dice3d.showForRoll(availabilityRoll);
+		}
+		catch(err) {}
+
+		const rarity = parseInt(roll.result);
+
+		fallout.chat.renderGeneralMessage(
+			this,
+			{
+				title: game.i18n.localize("FALLOUT.AvailabilityRoll.result.title"),
+				body: game.i18n.format("FALLOUT.AvailabilityRoll.result.body", {rarity}),
+			},
+			CONST.DICE_ROLL_MODES.PRIVATE
+		);
 	}
 
 	async sleep(hours, safe, hasActiveFatigue) {

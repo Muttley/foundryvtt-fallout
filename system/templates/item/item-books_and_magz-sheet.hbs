@@ -15,6 +15,8 @@
 		>
 			{{localize "FALLOUT.TEMPLATES.Description"}}
 		</a>
+
+		<a class="item" data-tab="source">{{localize "FALLOUT.TEMPLATES.Source"}}</a>
     </nav>
 
     <section class="sheet-body">
@@ -89,5 +91,7 @@
 				target="system.description"
 			}}
         </div>
+
+		{{> item/_shared-partials/source}}
     </section>
 </form>

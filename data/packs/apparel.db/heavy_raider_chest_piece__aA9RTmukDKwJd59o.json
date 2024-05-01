@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Heavy Raider Chest Piece",
 	"system": {
-		"appareltype": "armor",
-		"armorType": "",
+		"apparelType": "armor",
 		"cost": 48,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">Makeshift armor employed by raiders and other cutthroat types across the wastes. It varies considerably in quality and appearance but tends to be made of scrap metal rudely battered into shape, reinforced by metal bars, wire, and leather straps. This barbaric appearance is often bolstered by grisly trophies such as skulls or other body parts.</span></p>\n<p><span class=\"fontstyle0\">Each piece of raider armor can accept two mods, one of which is a Material, the other of which is an Upgrade. For mods applied to Torso armor, double the weight and cost (this has already been done for Torso Only mods). Super mutant characters may only wear Raider armor. All Raider Armor Material mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>\n<ul>\n<li><strong><span class=\"fontstyle0\">Raider</span><span class=\"fontstyle0\"> Armor:&nbsp;</span></strong><span class=\"fontstyle0\">Welded, Tempered, Hardened, Buttressed</span></li>\n</ul>\n<p>&nbsp;</p>",
@@ -48,7 +47,7 @@
 			"physical": 3,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 17

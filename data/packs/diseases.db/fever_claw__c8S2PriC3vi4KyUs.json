@@ -1,0 +1,16 @@
+{
+	"_id": "c8S2PriC3vi4KyUs",
+	"_key": "!items!c8S2PriC3vi4KyUs",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Fever Claw",
+	"system": {
+		"description": "<p>Your ranged attacks inflict 2CD less damage (minimum 1CD)</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

@@ -25,7 +25,7 @@
 		"quantity": 1,
 		"radiation": 0,
 		"rarity": 3,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 1,
 		"weight": 1

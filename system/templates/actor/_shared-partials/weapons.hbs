@@ -16,11 +16,17 @@
 				<i class="fas fa-plus"></i>
 				{{localize 'FALLOUT.UI.Add'}}
 			</a>
+			<a
+				class="find-from-compendium"
+				data-type="weapon"
+			>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
 		</div>
 	</li>
 	{{#each itemsByType.weapon as |item id| }}
 		<li class="item weapon" data-item-id="{{item._id}}">
-			<div class=" flexrow">
+			<div class="flexrow">
 				<div class="item-name flexlarge weapon-roll">
 					<div class="item-image">
 						<img
@@ -33,6 +39,7 @@
 					<a class="resource-label">
 						{{item.name}}
 						{{#if (isWeaponDamaged item.system)}}
+							&nbsp;
 							<i class="fas fa-wrench"></i>
 						{{/if}}
 					</a>
@@ -102,14 +109,38 @@
 				</div>
 			</div>
 			<div class="item-sub-info">
-				<span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
-				{{{listWeaponQualities item.system.damage.weaponQuality}}}
-				&nbsp;
-				<span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
-				{{{listDamageEffects item.system.damage.damageEffect}}}
-				&nbsp;
-				<span><strong>{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:&nbsp;</strong></span>
-				{{item.system.fireRate}}
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
+					</strong>
+					{{{listWeaponQualities item.system.damage.weaponQuality}}}
+					|&nbsp;
+				</span>
+
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Effects'}}:
+					</strong>
+					{{{listDamageEffects item.system.damage.damageEffect}}}
+					|&nbsp;
+				</span>
+
+				{{#ifCond item.system.ammo '!==' ""}}
+					<span>
+						<strong>
+							{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
+						</strong>
+						{{item.system.fireRate}}
+						|&nbsp;
+					</span>
+				{{/ifCond}}
+
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Range'}}:
+					</strong>
+					{{fromConfig "RANGES" item.system.range}}
+				</span>
 			</div>
 		</li>
 	{{/each}}

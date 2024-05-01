@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Factory Armor (Arm 2)",
 	"system": {
-		"appareltype": "armor",
+		"apparelType": "armor",
 		"carry": 0,
 		"cost": 10,
 		"description": "<p>A standardized, factory-made set of armor plating designed to fit any Mister Handy model.</p>",
@@ -34,7 +34,7 @@
 			"physical": 1,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 0
 	},

@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Casual Hat",
 	"system": {
-		"appareltype": "headgear",
-		"armorType": "",
+		"apparelType": "headgear",
 		"cost": 15,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A simple, lightweight hat, normally with a peak or brim to keep the sunlight out of the wearer&rsquo;s eyes.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">A character wearing a casual hat ignores any difficulty increases caused by extremely bright light.</span> <br><br></p>",
@@ -48,7 +47,7 @@
 			"physical": 0,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 0

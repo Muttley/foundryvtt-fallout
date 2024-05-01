@@ -1,0 +1,16 @@
+{
+	"_id": "HJ4CUAzStbNZM2gE",
+	"_key": "!items!HJ4CUAzStbNZM2gE",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Dysentery",
+	"system": {
+		"description": "<p>Halves time at each step of thirst track</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

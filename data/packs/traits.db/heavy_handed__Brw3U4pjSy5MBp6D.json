@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p>Your Melee Damage bonus increases by +1 @fos[DC]</p>\n<p>Your melee and unarmed attacks suffer a complication on a 19 or 20, rather than only a 20.</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "trait"
 }

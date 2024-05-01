@@ -113,6 +113,31 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	game.settings.register(SYSTEM_ID, "useVariableInitiative", {
+		name: "Use Variable Initiative",
+		hint: "If enabled the Variable Initiative method as detailed in the Gamemaster's Guide will be used instead of the base game's fixed initiative method.",
+		scope: "world",
+		config: true,
+		default: false,
+		type: Boolean,
+		requiresReload: true,
+	});
+
+	// ----------------
+	//  SOURCE FILTERS
+	// ----------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "sources", {
+		name: "Source Filter",
+		hint: "If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums. Items with no Source set will always be included.",
+		label: "Configure Source Filter",
+		icon: "fa-solid fa-book",
+		type: fallout.apps.SourceFilterSettings,
+		restricted: true,
+	});
+	fallout.apps.SourceFilterSettings.registerSetting();
+
+
 	// -----------------------------------
 	//  HOMEBREW / CUSTOMISATION SETTINGS
 	// -----------------------------------

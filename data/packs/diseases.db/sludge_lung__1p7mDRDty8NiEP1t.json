@@ -1,0 +1,16 @@
+{
+	"_id": "1p7mDRDty8NiEP1t",
+	"_key": "!items!1p7mDRDty8NiEP1t",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Sludge Lung",
+	"system": {
+		"description": "<p>Gain 1 Fatigue; you can only save AP into group pool if there are 3 orfewer AP saved</p>",
+		"duration": 4,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

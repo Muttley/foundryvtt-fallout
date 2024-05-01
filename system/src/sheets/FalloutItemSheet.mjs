@@ -12,7 +12,7 @@ export default class FalloutItemSheet extends ItemSheet {
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
-			width: 590,
+			width: 600,
 			height: "auto",
 			tabs: [{
 				navSelector: ".sheet-tabs",
@@ -58,6 +58,8 @@ export default class FalloutItemSheet extends ItemSheet {
 			type: item.type,
 			useKgs: game.settings.get("fallout", "carryUnit") === "kgs",
 		});
+
+		context.allSources = await fallout.compendiums.sources();
 
 		// Enrich Mods Text
 		if (item.system.mods) {
@@ -128,6 +130,22 @@ export default class FalloutItemSheet extends ItemSheet {
 			);
 
 			context.isOwnedByCreature = item.isOwnedByCreature;
+
+			const allSkills = await fallout.compendiums.skills();
+			context.availableSkills = {};
+
+			let availableSkillNames = [];
+			for (const skill of allSkills) {
+				availableSkillNames.push(skill.name);
+			}
+
+			availableSkillNames = availableSkillNames.sort(
+				(a, b) => a.localeCompare(b)
+			);
+
+			for (const skillName of availableSkillNames) {
+				context.availableSkills[skillName] = skillName;
+			}
 		}
 
 		if (item.type === "object_or_structure") {

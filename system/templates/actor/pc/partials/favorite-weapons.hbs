@@ -51,14 +51,38 @@
 					</div>
 				</div>
 				<div class="item-sub-info">
-					<strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong>
-					{{{listWeaponQualities item.system.damage.weaponQuality}}}
-					&nbsp;
-					<strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong>
-					{{{listDamageEffects item.system.damage.damageEffect}}}
-					&nbsp;
-					<span><strong>{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:&nbsp;</strong></span>
-					{{item.system.fireRate}}
+					<span>
+						<strong>
+							{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
+						</strong>
+						{{{listWeaponQualities item.system.damage.weaponQuality}}}
+						|&nbsp;
+					</span>
+
+					<span>
+						<strong>
+							{{localize 'FALLOUT.TEMPLATES.Effects'}}:
+						</strong>
+						{{{listDamageEffects item.system.damage.damageEffect}}}
+						|&nbsp;
+					</span>
+
+					{{#ifCond item.system.ammo '!==' ""}}
+						<span>
+							<strong>
+								{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
+							</strong>
+							{{item.system.fireRate}}&nbsp;
+						</span>
+						|&nbsp;
+					{{/ifCond}}
+
+					<span>
+						<strong>
+							{{localize 'FALLOUT.TEMPLATES.Range'}}:
+						</strong>
+						{{fromConfig "RANGES" item.system.range}}
+					</span>
 				</div>
 			</li>
 		{{/each}}

@@ -16,7 +16,7 @@
 			"value": 0
 		},
 		"requirements": "STR 6, CHA 8, Level 3+",
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "perk"
 }

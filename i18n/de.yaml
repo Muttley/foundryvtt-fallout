@@ -25,6 +25,9 @@ FALLOUT.Add: Hinzufügen
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Alles zurücksetzen
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Alle Chem Dosen zurücksetzen
 FALLOUT.APP.ChemDoseManager.title: Chem Dosen
+FALLOUT.APP.ItemTypeMenu.title: Select Item Type
+FALLOUT.APP.Loading.body: Searching the Wastelands...
+FALLOUT.APP.Loading.title: Loading
 FALLOUT.APP.ModuleArtConfig.items: Gegenstände
 FALLOUT.APP.ModuleArtConfig.title: Assets konfigurieren
 FALLOUT.APP.PartySleep.chat_message: Die Gruppe schläft {duration}.
@@ -39,6 +42,9 @@ FALLOUT.APPAREL.headgear: Kopfbedeckung
 FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Beschichtung
 FALLOUT.APPAREL.powerArmor: Energerüstung
+FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
+FALLOUT.AvailabilityRoll.result.title: Availability Roll
+FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
 FALLOUT.BEVERAGE: Getränk
 FALLOUT.BODYLOCATION_ABBR.character.armL: AL
 FALLOUT.BODYLOCATION_ABBR.character.armR: AR
@@ -116,7 +122,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem verbraucht
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Essen verbaucht
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Du bist bereits voll und kannst nicht mehr essen
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Sonstiges verbraucht
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} bekommt 1 Strahlenschaden durch Verbrauch von {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
 FALLOUT.CHEM: Chem
 FALLOUT.ChemDuration.brief: Flüchtig
@@ -141,8 +149,21 @@ FALLOUT.EffectEdit: Bearbeite Effektt
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
 FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Nahrung
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
+FALLOUT.Form.SelectCompendiumItem.prompt: Select Item...
+FALLOUT.Form.SelectCompendiumItem.title: Choose Items
+FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
+FALLOUT.Form.SelectItem.title: Choose {type}
+FALLOUT.Form.SourceFilters.AllUsed: All sources are currently allowed
+FALLOUT.Form.SourceFilters.hint: If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums.
+FALLOUT.Form.SourceFilters.prompt: Select Source...
+FALLOUT.Form.SourceFilters.TheseUsed: Only the following sources will be allowed
+FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Aktuelle Gesundheit
 FALLOUT.HEALTH.health: Gesundheit
 FALLOUT.HEALTH.max: Maximale Gesundheit
@@ -221,8 +242,14 @@ FALLOUT.SKILL.Speech: Sprache
 FALLOUT.SKILL.Survival: Überleben
 FALLOUT.SKILL.Throwing: Wurfwaffen
 FALLOUT.SKILL.Unarmed: Waffenlos
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
 FALLOUT.SOURCE_TITLE.core_rulebook: Grundregelwerk
 FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
+FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
@@ -291,6 +318,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Attribut der Kreatur
 FALLOUT.TEMPLATES.Creature_Skill: Fertigkeit der Kreatur
 FALLOUT.TEMPLATES.current: aktuell
 FALLOUT.TEMPLATES.CurrentLeader: Aktueller Anführer
+FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
+FALLOUT.TEMPLATES.CustomSkill: Custom Skill
 FALLOUT.TEMPLATES.Damage_Effects: Schadens-Effekte
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
 FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
@@ -354,6 +383,7 @@ FALLOUT.TEMPLATES.Qualities: Eigenschaften
 FALLOUT.TEMPLATES.RAD: STR
 FALLOUT.TEMPLATES.Radiation_Healed: Strahlung geheilt
 FALLOUT.TEMPLATES.RADIATION: STRAHLUNG
+FALLOUT.TEMPLATES.Range: Range
 FALLOUT.TEMPLATES.RANGE: REICHWEITE
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
@@ -512,6 +542,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Instabile Strahlung
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
 FALLOUT.WEAPONS.weaponType.bows: Bögen
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
+FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
 FALLOUT.WEAPONS.weaponType.explosives: Sprengstoffe
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Nahkampfwaffen

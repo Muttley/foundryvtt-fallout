@@ -15,9 +15,11 @@ import { Roller2D20 } from "../roller/Roller2D20.mjs";
 import FalloutChat from "../system/FalloutChat.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
+import FalloutLoading from "../apps/FalloutLoading.mjs";
 import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
 import Logger from "../utils/Logger.mjs";
+
 
 import preloadHandlebarsTemplates from "../templates.mjs";
 import registerHandlebarsHelpers from "../handlebars.mjs";
@@ -43,6 +45,7 @@ export async function initHook() {
 		conditionTracker: new FalloutConditionTracker(),
 		Dialog2d20,
 		DialogD6,
+		FalloutLoading,
 		logger: Logger,
 		macros: FalloutMacros,
 		moduleArt: new FalloutModuleArt(),
@@ -50,12 +53,13 @@ export async function initHook() {
 		utils: FalloutUtils,
 	};
 
+	registerSettings();
+
+	const useVariableInitiative = game.settings.get(SYSTEM_ID, "useVariableInitiative");
 	CONFIG.Combat.initiative = {
-		formula: "@initiative.value",
+		formula: useVariableInitiative ? "(@initiative.value)dc" : "@initiative.value",
 		decimals: 0,
 	};
-
-	registerSettings();
 
 	registerDocumentClasses();
 	registerDocumentSheets();

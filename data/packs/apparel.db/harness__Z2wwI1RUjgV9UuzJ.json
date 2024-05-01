@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Harness",
 	"system": {
-		"appareltype": "clothing",
-		"armorType": "",
+		"apparelType": "clothing",
 		"cost": 5,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A worker&rsquo;s safety harness repurposed to serve as a mount for pieces of armor. Common amongst raiders, who tend to wear the harness without a shirt underneath.</span> </p>\n<p>&nbsp;</p>",
@@ -48,7 +47,7 @@
 			"physical": 0,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 1

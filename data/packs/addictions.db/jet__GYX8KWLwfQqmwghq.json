@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p><span class=\"fontstyle0\">You increase the difficulty of all </span><span class=\"fontstyle2\"><strong>AGI</strong> </span><span class=\"fontstyle0\">tests by +1 whenever you are not under the effects of a type of Jet (Jet, or Jet Fuel; Ultra Jet has a different addiction effect).</span>&nbsp;</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "addiction"
 }

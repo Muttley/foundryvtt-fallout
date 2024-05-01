@@ -182,7 +182,7 @@
 		"range": "close",
 		"rarity": 2,
 		"skill": "",
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"tear": "",
 		"weaponType": "energyWeapons",

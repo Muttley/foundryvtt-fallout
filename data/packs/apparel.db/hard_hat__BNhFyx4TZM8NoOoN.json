@@ -7,8 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Hard Hat",
 	"system": {
-		"appareltype": "headgear",
-		"armorType": "",
+		"apparelType": "headgear",
 		"cost": 15,
 		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A light metal or plastic hat intended to protect the head from bumps and collisions in a busy industrial workplace or construction site. Not really intended to protect from combat, but if you&rsquo;re lacking a helmet, a hard had is better than nothing.</span> </p>\n<p>&nbsp;</p>",
@@ -48,7 +47,7 @@
 			"physical": 2,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"special": "",
 		"stashed": false,
 		"weight": 0

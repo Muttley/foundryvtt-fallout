@@ -16,7 +16,7 @@
 			"value": 0
 		},
 		"requirements": "PER 10",
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "perk"
 }

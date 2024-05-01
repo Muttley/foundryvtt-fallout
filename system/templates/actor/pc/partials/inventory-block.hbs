@@ -4,7 +4,13 @@
 			<div class="flexrow flexlarge item-name upperC">
 				{{blockTitle}}
 			</div>
-			{{#unless noCreate}}
+			{{#if noCreate}}
+				<div class="item-controls">
+					<a class="find-any-from-compendium">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</a>
+				</div>
+			{{else}}
 				<div class="item-controls">
 					<a
 						class="item-control item-create"
@@ -14,8 +20,14 @@
 						<i class="fas fa-plus"></i>
 						{{localize 'FALLOUT.UI.Add'}}
 					</a>
+					<a
+						class="find-from-compendium"
+						data-type="{{type}}"
+					>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</a>
 				</div>
-			{{/unless}}
+			{{/if}}
 		</li>
 		{{#each items}}
 			{{> actor/_shared-partials/simple-expandable-item

@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p>You may re-roll 1d20 on all AGI tests which rely on balance or contortion.</p>\n<p>Your carry weight is 150 + (5 x STR) lbs., rather than 150 + (10 x STR) lbs.</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "trait"
 }

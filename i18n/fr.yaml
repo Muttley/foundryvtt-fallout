@@ -25,6 +25,9 @@ FALLOUT.Add: Ajouter
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Tout réinitialiser
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Réinitialiser toutes les doses de drogue
 FALLOUT.APP.ChemDoseManager.title: Doses de drogue
+FALLOUT.APP.ItemTypeMenu.title: Sélectionner le type d'objet
+FALLOUT.APP.Loading.body: Recherche dans les Terres Désolées...
+FALLOUT.APP.Loading.title: Chargement
 FALLOUT.APP.ModuleArtConfig.items: Objets
 FALLOUT.APP.ModuleArtConfig.title: Configurer l'illustration
 FALLOUT.APP.PartySleep.chat_message: Le groupe dort pendant {duration}.
@@ -39,6 +42,9 @@ FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Couvre-Chef
 FALLOUT.APPAREL.powerArmor: Armure Assistée
+FALLOUT.AvailabilityRoll.result.body: La rareté maximale disponible est de {rarity}
+FALLOUT.AvailabilityRoll.result.title: Lancer de disponibilité
+FALLOUT.AvailabilityRoll.tooltip: Lancé pour la disponibilité
 FALLOUT.BEVERAGE: Boissons
 FALLOUT.BODYLOCATION_ABBR.character.armL: BG
 FALLOUT.BODYLOCATION_ABBR.character.armR: BD
@@ -116,7 +122,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Vous êtes déjà rassasié et ne pouvez plus manger
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation en consommant {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} a résisté aux dégâts de radiations {baseRadDamage} en consommant {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux radiations
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit 1 dégât de radiation {radsTaken} en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
@@ -140,9 +148,22 @@ FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
 FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
-FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
+FALLOUT.ERRORS.ThisWeaponDoesNoDamage: Le nombre total de dés de combat à lancer doit être supérieur à zéro.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
 FALLOUT.FOOD: Nourriture
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Vous ne pouvez sélectionner qu'un maximum de {maxChoices} de ce type d'objet.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Impossible de trouver des objets du bon type dans les compendiums disponibles.
+FALLOUT.Form.SelectCompendiumItem.prompt: Sélectionner un objet...
+FALLOUT.Form.SelectCompendiumItem.title: Choisir objets
+FALLOUT.Form.SelectCompendiumItem.tooltip: Ajouter à partir des Compendiums
+FALLOUT.Form.SelectItem.title: Choisir {type}
+FALLOUT.Form.SourceFilters.AllUsed: Toutes les sources sont actuellement autorisées
+FALLOUT.Form.SourceFilters.hint: Si elle est remplie, seules les sources incluses dans cette liste seront utilisées par n'importe quelle partie du système qui tire automatiquement les éléments des Compendiums.
+FALLOUT.Form.SourceFilters.prompt: Sélectionner la source...
+FALLOUT.Form.SourceFilters.TheseUsed: Seules les sources suivantes seront autorisées
+FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
@@ -221,8 +242,14 @@ FALLOUT.SKILL.Speech: Discours
 FALLOUT.SKILL.Survival: Survie
 FALLOUT.SKILL.Throwing: Projectiles
 FALLOUT.SKILL.Unarmed: Mains nues
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
 FALLOUT.SOURCE_TITLE.core_rulebook: Livre de base
 FALLOUT.SOURCE_TITLE.enclave_remnants: "Pack PNJ #2 : Vestiges de l'Enclave"
+FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
 FALLOUT.SOURCE_TITLE.rust_devils: "Pack PNJ #1 : Les Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
@@ -291,6 +318,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Attributs Créature
 FALLOUT.TEMPLATES.Creature_Skill: Compétences Créature
 FALLOUT.TEMPLATES.current: Actuel
 FALLOUT.TEMPLATES.CurrentLeader: Chef actuel
+FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
+FALLOUT.TEMPLATES.CustomSkill: Custom Skill
 FALLOUT.TEMPLATES.Damage_Effects: Effets de dégâts
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
@@ -309,7 +338,7 @@ FALLOUT.TEMPLATES.Effects: Effets
 FALLOUT.TEMPLATES.Encumbrance_Level: Niveau d'Encombrement
 FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMES FAVORITES
-FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
+FALLOUT.TEMPLATES.Fire_Rate: Cadence de Tir
 FALLOUT.TEMPLATES.FIRE_RATE: Cadence de Tir
 FALLOUT.TEMPLATES.Gear: Équipement
 FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
@@ -354,6 +383,7 @@ FALLOUT.TEMPLATES.Qualities: Qualités
 FALLOUT.TEMPLATES.RAD: RAD
 FALLOUT.TEMPLATES.Radiation_Healed: Radiation guérie
 FALLOUT.TEMPLATES.RADIATION: RADIATION
+FALLOUT.TEMPLATES.Range: Portée
 FALLOUT.TEMPLATES.RANGE: Portée
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
@@ -512,6 +542,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
 FALLOUT.WEAPONS.weaponType.bows: Arcs
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
+FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armes à énergie
 FALLOUT.WEAPONS.weaponType.explosives: Explosifs
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Armes de CAC

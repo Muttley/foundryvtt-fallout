@@ -1,0 +1,16 @@
+{
+	"_id": "1KIjuiaRJb7XlBO1",
+	"_key": "!items!1KIjuiaRJb7XlBO1",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Blood Worms",
+	"system": {
+		"description": "<p>Attacks against you inflict +2CD damage</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}
