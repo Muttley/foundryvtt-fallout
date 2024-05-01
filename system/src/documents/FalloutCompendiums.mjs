@@ -36,7 +36,7 @@ export default class FalloutCompendiums {
 		if (sourcesSet) {
 			docs = docs.filter(
 				d => {
-					const source = d.system?.source?.title ?? "";
+					const source = d.system?.source ?? "";
 					return source === "" || sources.includes(source);
 				}
 			);
