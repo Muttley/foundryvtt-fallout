@@ -1,3 +1,13 @@
+# v11.9.3
+
+## Enhancements
+- [#343] Add additional logging around compendium filtering to help with debugging issues
+
+## Chores
+- [#342] Merge French translation updates from Crowdin
+
+---
+
 # v11.9.2
 
 ## Bugs

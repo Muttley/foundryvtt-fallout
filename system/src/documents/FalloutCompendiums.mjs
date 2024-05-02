@@ -8,11 +8,26 @@ export default class FalloutCompendiums {
 		return collection;
 	 }
 
-	static async _documents(type, subtype=null, filterSources=true, fields=[]) {
+	static async _documents(type, subtype=null, filterSources=true) {
 		let sources = [];
+
+		if (subtype === null) {
+			fallout.logger.debug(`[FalloutCompendiums] Collecting '${type}' objects from compendiums`);
+		}
+		else {
+			fallout.logger.debug(`[FalloutCompendiums] Collecting '${type}' objects with subtype '${subtype}' from compendiums`);
+		}
 
 		if (filterSources === true) {
 			sources = game.settings.get("fallout", "sourceFilters") ?? [];
+
+			if (sources.length > 0) {
+				fallout.logger.debug("[FalloutCompendiums] Compendium documents will be filtered by source");
+				fallout.logger.debug(`[FalloutCompendiums] ${sources.length} source filters currently configured:`, sources.join(", "));
+			}
+			else {
+				fallout.logger.debug("[FalloutCompendiums] No source filters have been configured");
+			}
 		}
 
 		const sourcesSet = sources.length > 0;
@@ -22,7 +37,7 @@ export default class FalloutCompendiums {
 		for (let pack of game.packs) {
 			if (pack.metadata.type !== type) continue;
 
-			let documents = await pack.getIndex({fields});
+			let documents = await pack.getIndex({fields: ["system"]});
 
 			if (subtype !== null) {
 				documents = documents.filter(d => d.type === subtype);
@@ -33,6 +48,8 @@ export default class FalloutCompendiums {
 			}
 		}
 
+		fallout.logger.debug(`[FalloutCompendiums] ${docs.length} total documents found`);
+
 		if (sourcesSet) {
 			docs = docs.filter(
 				d => {
@@ -40,12 +57,24 @@ export default class FalloutCompendiums {
 					return source === "" || sources.includes(source);
 				}
 			);
+
+			fallout.logger.debug(`[FalloutCompendiums] ${docs.length} documents remain after applying source filters`);
+		}
+		else {
+			fallout.logger.debug("[FalloutCompendiums] Compendium documents will unfiltered");
 		}
 
-		// Dedupe and sort the list alphabetically
-		docs = Array.from(new Set(docs)).sort((a, b) => a.name.localeCompare(b.name));
+		// De-duplicate and sort the list alphabetically
+		if (docs.length > 0) {
+			fallout.logger.debug("[FalloutCompendiums] De-duplicating and sorting documents");
 
-		// return new collection
+			docs = Array.from(new Set(docs)).sort(
+				(a, b) => a.name.localeCompare(b.name)
+			);
+		}
+
+		fallout.logger.debug(`[FalloutCompendiums] ${docs.length} documents being returned`);
+
 		return this._collectionFromArray(docs);
 	}
 
@@ -58,9 +87,7 @@ export default class FalloutCompendiums {
 	}
 
 	static async apparel_mods(filterSources=true) {
-		return FalloutCompendiums._documents(
-			"Item", "apparel_mod", filterSources, ["system.apparelType"]
-		);
+		return FalloutCompendiums._documents("Item", "apparel_mod", filterSources);
 	}
 
 	static async apparel(subtypes=[], filterSources=true) {
@@ -71,7 +98,7 @@ export default class FalloutCompendiums {
 		}
 		else {
 			const documents = await FalloutCompendiums._documents(
-				"Item", "apparel", filterSources, ["system.apparelType"]
+				"Item", "apparel", filterSources
 			);
 
 			return this._collectionFromArray(documents.filter(document =>
@@ -89,9 +116,7 @@ export default class FalloutCompendiums {
 	}
 
 	static async books_and_magz(filterSources=true) {
-		return FalloutCompendiums._documents(
-			"Item", "books_and_magz", filterSources, ["system.publication"]
-		);
+		return FalloutCompendiums._documents("Item", "books_and_magz", filterSources);
 	}
 
 	static async clothing(filterSources=true) {
@@ -99,9 +124,7 @@ export default class FalloutCompendiums {
 	}
 
 	static async consumables(filterSources=true) {
-		return FalloutCompendiums._documents(
-			"Item", "consumable", filterSources, ["system.consumableType"]
-		);
+		return FalloutCompendiums._documents("Item", "consumable", filterSources);
 	}
 
 	static async diseases(filterSources=true) {
@@ -144,7 +167,7 @@ export default class FalloutCompendiums {
 		}
 		else {
 			const documents = await FalloutCompendiums._documents(
-				"Item", "robot_armor", filterSources, ["system.apparelType"]
+				"Item", "robot_armor", filterSources
 			);
 
 			return this._collectionFromArray(
@@ -179,6 +202,7 @@ export default class FalloutCompendiums {
 			});
 		}
 
+		let moduleSourceCount = 0;
 		for (const module of game.modules) {
 			if (!module.active) continue;
 
@@ -186,14 +210,20 @@ export default class FalloutCompendiums {
 			const moduleSources = flags?.["fallout-sources"] ?? {};
 
 			for (const moduleSource of Object.keys(moduleSources)) {
+				moduleSourceCount++;
+
+				const name = game.i18n.localize(moduleSources[moduleSource]);
+
+				fallout.logger.debug(`[FalloutCompendiums] Adding source '${name}' with id '${moduleSource} from module '${module.id}'`);
+
 				allSources.push({
+					name,
 					uuid: moduleSource,
-					name: game.i18n.localize(
-						moduleSources[moduleSource]
-					),
 				});
 			}
 		}
+
+		fallout.logger.debug(`[FalloutCompendiums] ${moduleSourceCount} custom source/s found in enabled modules`);
 
 		CONFIG.FALLOUT.ALL_SOURCES = allSources.sort(
 			(a, b) => a.name.localeCompare(b.name)
@@ -215,15 +245,11 @@ export default class FalloutCompendiums {
 	}
 
 	static async weapon_mods(filterSources=true) {
-		return FalloutCompendiums._documents(
-			"Item", "weapon_mod", filterSources, ["system.modType", "system.weaponType"]
-		);
+		return FalloutCompendiums._documents("Item", "weapon_mod", filterSources);
 	}
 
 	static async weapons(filterSources=true) {
-		return FalloutCompendiums._documents(
-			"Item", "weapon", filterSources, ["system.weaponType"]
-		);
+		return FalloutCompendiums._documents("Item", "weapon", filterSources);
 	}
 
 }
