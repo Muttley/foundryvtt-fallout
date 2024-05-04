@@ -66,6 +66,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			effects: prepareActiveEffectCategories(this.actor.effects),
 			FALLOUT: CONFIG.FALLOUT,
 			hasCategory: ["creature", "npc"].includes(this.actor.type),
+			isPlayerCharacter: ["character", "robot"].includes(this.actor.type),
 			isCharacter: this.actor.type === "character",
 			isCreature: this.actor.type === "creature",
 			isNPC: this.actor.type === "npc",
