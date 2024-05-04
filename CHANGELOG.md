@@ -1,3 +1,12 @@
+# v11.9.4
+
+## Bugs
+- [#347] Availability Roll trigger not available on Robot character sheet
+- [#350] Don't show the Luck points field on Creatures as they don't have them
+- [#351] NPC has no default max HP set
+
+---
+
 # v11.9.3
 
 ## Enhancements
