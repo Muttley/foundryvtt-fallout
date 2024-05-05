@@ -20,7 +20,6 @@ import FalloutMacros from "../system/FalloutMacros.mjs";
 import FalloutUtils from "../utils/FalloutUtils.mjs";
 import Logger from "../utils/Logger.mjs";
 
-
 import preloadHandlebarsTemplates from "../templates.mjs";
 import registerHandlebarsHelpers from "../handlebars.mjs";
 import registerSettings from "../settings.mjs";

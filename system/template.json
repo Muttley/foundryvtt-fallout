@@ -319,6 +319,7 @@
 				},
 				"health": {
 					"bonus": 0,
+					"max": 0,
 					"value": 0
 				},
 				"initiative": {
