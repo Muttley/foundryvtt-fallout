@@ -4,12 +4,23 @@
 	</h4>
 	<div class="text-center">
 		<label>
-			<input
-				class="num-short-3"
-				type="number"
-				name="system.carryWeight.base"
-				value="{{system.carryWeight.base}}"
-			>
+			{{system.carryWeight.base}}
+			{{#if useKgs}}
+				{{localize "FALLOUT.TEMPLATES.kgs"}}
+			{{else}}
+				{{localize "FALLOUT.TEMPLATES.lbs"}}
+			{{/if}}
+			+
+		</label>
+		<input
+			type="number"
+			name="system.carryWeight.mod"
+			class="num-short-3"
+			value="{{system.carryWeight.mod}}"
+		>
+		<label>
+			=
+			{{system.carryWeight.value}}
 			{{#if useKgs}}
 				{{localize "FALLOUT.TEMPLATES.kgs"}}
 			{{else}}

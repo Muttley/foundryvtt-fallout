@@ -1,5 +1,8 @@
 # v11.9.4
 
+## Enhancent
+- [#352] Add the ability to easily adjust an NPC's calculated Carry Weight on the NPC sheet
+
 ## Bugs
 - [#347] Availability Roll trigger not available on Robot character sheet
 - [#350] Don't show the Luck points field on Creatures as they don't have them
