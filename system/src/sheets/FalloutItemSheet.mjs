@@ -305,7 +305,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			const formula = this.item.system.quantityRoll;
 
 			const roll = new Roll(formula);
-			const quantityRoll = await roll.evaluate({ async: true });
+			const quantityRoll = await roll.evaluate();
 
 			try {
 				await game.dice3d.showForRoll(quantityRoll);

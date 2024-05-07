@@ -10,6 +10,8 @@
 - [#360] The {{select}} handlebars helper is deprecated
 - [#361] globalThis.randomID must now be accessed via foundry.utils.randomID
 - [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances
+- [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES
+- [#364] The async option for Roll#evaluate has been removed
 
 ---
 

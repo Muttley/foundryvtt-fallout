@@ -1195,7 +1195,7 @@ export default class FalloutActor extends Actor {
 					let formula = `${newIntoxication}dccs>=5`;
 					let roll = new Roll(formula);
 
-					let alcoholicRoll = await roll.evaluate({ async: true });
+					let alcoholicRoll = await roll.evaluate();
 					try {
 						game.dice3d.showForRoll(alcoholicRoll);
 					}
@@ -1228,7 +1228,7 @@ export default class FalloutActor extends Actor {
 				let formula = "1dccs>=5";
 				let roll = new Roll(formula);
 
-				let radiationDamageRoll = await roll.evaluate({ async: true });
+				let radiationDamageRoll = await roll.evaluate();
 				try {
 					game.dice3d.showForRoll(radiationDamageRoll);
 				}
@@ -1295,7 +1295,7 @@ export default class FalloutActor extends Actor {
 					let formula = `${newDosage}dccs>=5`;
 					let roll = new Roll(formula);
 
-					let addictedRoll = await roll.evaluate({ async: true });
+					let addictedRoll = await roll.evaluate();
 					try {
 						game.dice3d.showForRoll(addictedRoll);
 					}
@@ -1488,7 +1488,7 @@ export default class FalloutActor extends Actor {
 		const formula = `${luckDice}dccs>=5`;
 		let roll = new Roll(formula);
 
-		let availabilityRoll = await roll.evaluate({ async: true });
+		let availabilityRoll = await roll.evaluate();
 		try {
 			game.dice3d.showForRoll(availabilityRoll);
 		}
