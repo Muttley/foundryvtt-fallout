@@ -8,7 +8,7 @@ export default class FalloutChemDoses extends FormApplication {
 
 	/** @inheritdoc */
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "chem-doses"],
 			height: "auto",
 			resizable: true,

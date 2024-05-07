@@ -10,7 +10,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 	/** @override */
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
 			width: 600,
 			height: "auto",

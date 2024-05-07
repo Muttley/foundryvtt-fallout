@@ -8,7 +8,7 @@ export default class CompendiumItemSelector extends FormApplication {
 
 	itemsLoaded = false;
 
-	uuid = randomID();
+	uuid = foundry.utils.randomID();
 
 	constructor(object={}, options={}) {
 		super(object, options);

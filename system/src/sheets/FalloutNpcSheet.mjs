@@ -7,7 +7,7 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			height: "auto",
 		});
 	}

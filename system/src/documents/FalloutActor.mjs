@@ -97,9 +97,9 @@ export default class FalloutActor extends Actor {
 	}
 
 	/** @override */
-	prepareData() {
-		super.prepareData();
-	}
+	// prepareData() {
+	// 	super.prepareData();
+	// }
 
 	/** @override */
 	// prepareBaseData() {
@@ -189,7 +189,7 @@ export default class FalloutActor extends Actor {
 		// Prep Body Locations
 		let outfittedLocations = {};
 		for (let [k] of Object.entries(
-			game.system.model.Actor.character.body_parts
+			this.system.body_parts
 		)) {
 			outfittedLocations[k] = false;
 		}
@@ -205,7 +205,7 @@ export default class FalloutActor extends Actor {
 						&& i.system.location[k] === true
 				);
 				if (pow && !outfittedLocations[k]) {
-					outfittedLocations[k] = duplicate(pow.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(pow.toObject());
 				}
 			}
 		}
@@ -221,7 +221,7 @@ export default class FalloutActor extends Actor {
                 && i.system.location[k] === true
 				);
 				if (armor && !outfittedLocations[k]) {
-					outfittedLocations[k] = duplicate(armor.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(armor.toObject());
 				}
 			}
 		}
@@ -242,7 +242,7 @@ export default class FalloutActor extends Actor {
 			if (outfit) {
 				for (let [k, v] of Object.entries(outfit.system.location)) {
 					if (v) {
-						outfittedLocations[k] = duplicate(outfit.toObject());
+						outfittedLocations[k] = foundry.utils.duplicate(outfit.toObject());
 					}
 				}
 			}
@@ -256,7 +256,7 @@ export default class FalloutActor extends Actor {
 			);
 
 			if (headgear) {
-				outfittedLocations.head = duplicate(headgear.toObject());
+				outfittedLocations.head = foundry.utils.duplicate(headgear.toObject());
 			}
 		}
 
@@ -286,7 +286,7 @@ export default class FalloutActor extends Actor {
 					);
 				}
 				else if (!outfittedLocations[k] && v) {
-					outfittedLocations[k] = duplicate(clothing.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(clothing.toObject());
 				}
 			}
 		}
@@ -476,7 +476,7 @@ export default class FalloutActor extends Actor {
 				);
 
 				if (armor && !outfittedLocations[k]) {
-					outfittedLocations[k] = duplicate(armor.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(armor.toObject());
 				}
 			}
 		}
@@ -501,7 +501,7 @@ export default class FalloutActor extends Actor {
               + parseInt(plating.system.resistance.radiation);
 				}
 				else if (!outfittedLocations[k] && v) {
-					outfittedLocations[k] = duplicate(plating.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(plating.toObject());
 				}
 			}
 		}
@@ -719,7 +719,7 @@ export default class FalloutActor extends Actor {
 			actorLink: false,
 			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
 			name: data.name, // Set token name to actor name
-			texture: duplicate(this.prototypeToken.texture),
+			texture: foundry.utils.duplicate(this.prototypeToken.texture),
 		};
 
 		if (["character", "robot", "settlement"].includes(data.type)) {

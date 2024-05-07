@@ -1,7 +1,7 @@
 export default class FalloutLoading extends Application {
 
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout"],
 			resizable: false,
 			width: "auto",

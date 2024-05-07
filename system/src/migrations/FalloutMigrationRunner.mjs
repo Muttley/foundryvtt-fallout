@@ -84,12 +84,12 @@ export default class FalloutMigrationRunner {
 				// if the token is linked or has no actor, we don"t need to do anything
 				if (token.actorLink || !game.actors.has(token.actorId)) continue;
 
-				const actorData = duplicate(game.actors.get(token.actorId));
+				const actorData = foundry.utils.duplicate(game.actors.get(token.actorId));
 
 				const delta = token.delta;
 
 				if (delta?.system) {
-					actorData.system = mergeObject(
+					actorData.system = foundry.utils.mergeObject(
 						actorData.system,
 						delta.system,
 						{inplace: false}

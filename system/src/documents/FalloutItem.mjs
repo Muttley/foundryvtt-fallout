@@ -73,7 +73,7 @@ export default class FalloutItem extends Item {
    */
 	async sendToChat(showQuantity=true) {
 
-		const itemData = duplicate(this.system);
+		const itemData = foundry.utils.duplicate(this.system);
 		itemData._id = this._id;
 		itemData.img = this.img;
 

@@ -3,6 +3,14 @@
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect
 
+## Chore
+- [#357] Ensure there are no compatibility issues with Foundry V12
+- [#358] globalThis.mergeObject must now be accessed via foundry.utils.mergeObject
+- [#359] globalThis.duplicate must now be accessed via foundry.utils.duplicate
+- [#360] The {{select}} handlebars helper is deprecated
+- [#361] globalThis.randomID must now be accessed via foundry.utils.randomID
+- [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances
+
 ---
 
 # v11.9.4
