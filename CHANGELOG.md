@@ -1,3 +1,10 @@
+# v11.10.0
+
+## Bugs
+- [#356] Laser Gun Damage Value Incorrect
+
+---
+
 # v11.9.4
 
 ## Enhancent
