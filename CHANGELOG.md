@@ -2,6 +2,7 @@
 
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect
+- [#365] Typo in description of all Grognak the Barbarian magazines
 
 ## Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12
