@@ -4,6 +4,9 @@
 - [#356] Laser Gun Damage Value Incorrect
 - [#365] Typo in description of all Grognak the Barbarian magazines
 - [#368] 10mm Auto Pistol price and weight wrong
+- [#369] Weapon Wear & Tear should be a numeric value
+
+	* The upgrade process will attempt to migrate existing values, but if a non-empty, non-numeric string is found will default to a value of 1
 
 ## Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12

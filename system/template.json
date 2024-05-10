@@ -808,7 +808,7 @@
 			},
 			"range": "",
 			"skill": "",
-			"tear": "",
+			"tear": 0,
 			"templates": [
 				"base",
 				"physical",

@@ -184,7 +184,7 @@
 		"skill": "",
 		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "unarmed",
 		"weight": 0
 	},
