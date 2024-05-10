@@ -212,6 +212,11 @@ export default class FalloutItemSheet extends ItemSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 
+		// Send To Chat
+		html.find(".chaty").click(ev => {
+			this.item.sendToChat();
+		});
+
 		// Everything below here is only needed if the sheet is editable
 		if (!this.isEditable) return;
 
@@ -223,11 +228,6 @@ export default class FalloutItemSheet extends ItemSheet {
 				return ui.notifications.warn("Managing Active Effects within an Owned Item is not currently supported and will be added in a subsequent update.");
 			}
 			onManageActiveEffect(ev, this.item);
-		});
-
-		// Send To Chat
-		html.find(".chaty").click(ev => {
-			this.item.sendToChat();
 		});
 
 		// DON't LET NUMBER FIELDS EMPTY

@@ -1,5 +1,8 @@
 # v11.10.0
 
+## Enhancement
+- [#370] Allow posting items to chat even if they're not current;y editable (for example, locked compendium items)
+
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect
 - [#365] Typo in description of all Grognak the Barbarian magazines
