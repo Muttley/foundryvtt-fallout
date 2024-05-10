@@ -352,6 +352,7 @@ FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
 FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
 FALLOUT.TEMPLATES.Issue: Issue
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
