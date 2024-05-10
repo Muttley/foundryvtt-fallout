@@ -3,6 +3,7 @@
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect
 - [#365] Typo in description of all Grognak the Barbarian magazines
+- [#368] 10mm Auto Pistol price and weight wrong
 
 ## Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12
