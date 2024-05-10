@@ -24,6 +24,7 @@
 		"prepared": true,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 4,
 		"source": "core_rulebook",
 		"stashed": false,

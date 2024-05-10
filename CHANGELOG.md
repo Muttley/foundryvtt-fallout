@@ -1,6 +1,7 @@
 # v11.10.0
 
 ## Enhancement
+- [#334] Add a setting to consumables to specify the amount of rad damage CD that are rolled when consuming it
 - [#367] Add option to automatically reduce weapon damage by wear and tear rate and refuse to fire if broken
 
 	* New option called "Apply Wear and Tear to Weapon Damage" added and is enabled by default.  This will automatically reduce the damage of a weapon by the amount of wear and tear, and a weapon will become unusable once the base damage is reduced to zero by wear and tear.

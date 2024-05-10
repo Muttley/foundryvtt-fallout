@@ -85,6 +85,7 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/item/_shared-partials/effects-tab.hbs",
 		"systems/fallout/templates/item/_shared-partials/header.hbs",
 		"systems/fallout/templates/item/_shared-partials/source.hbs",
+		"systems/fallout/templates/item/consumable/tabs/attributes.hbs",
 		"systems/fallout/templates/item/weapon/tabs/attributes.hbs",
 		"systems/fallout/templates/item/weapon/tabs/mods.hbs",
 		"systems/fallout/templates/item/weapon/tabs/qualities-and-effects.hbs",

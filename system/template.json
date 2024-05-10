@@ -517,6 +517,7 @@
 			"irradiated": false,
 			"prepared": false,
 			"radiation": 0,
+			"radiationDamage": 1,
 			"thirstReduction": 0,
 			"templates": [
 				"base",
