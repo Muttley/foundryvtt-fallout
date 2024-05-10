@@ -148,7 +148,7 @@ FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
 FALLOUT.EffectToggle: Alternar Efeito
 FALLOUT.equipped: Equipado
-FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
@@ -274,6 +274,7 @@ FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
+FALLOUT.TEMPLATES.Base_Damage: Base Damage
 FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Compl: Compl.
@@ -351,6 +352,7 @@ FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
 FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
 FALLOUT.TEMPLATES.Issue: Issue
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -362,8 +364,8 @@ FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: AP MÁXIMO DA PARTY
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.MELEE_BONUS: Bônus Melee
-FALLOUT.TEMPLATES.MELEE_DAMAGE: DANO CORPO-A-CORPO
+FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
+FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
@@ -468,6 +470,7 @@ FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Mods Vestuário
 FALLOUT.UI.AreYouSure: Are You Sure?
+FALLOUT.UI.BaseDamage: Base Damage
 FALLOUT.UI.BOOKS_AND_MAGZS: Livros e Revistas
 FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Tampas
