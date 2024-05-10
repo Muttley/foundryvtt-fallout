@@ -461,7 +461,7 @@ export default class FalloutActor extends Actor {
 	_calculateRobotBodyResistance() {
 		let outfittedLocations = {};
 		for (let [k] of Object.entries(
-			game.system.model.Actor.robot.body_parts
+			this.system.body_parts
 		)) {
 			outfittedLocations[k] = false;
 		}
