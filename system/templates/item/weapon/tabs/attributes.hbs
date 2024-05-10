@@ -138,14 +138,17 @@
 	<div class="flexrow resource-row bgEven">
 		<label class="resource-label upperC" for="system.ammo">
 			{{localize "TYPES.Item.ammo"}}
-			{{#if ammoUuid}}
+			{{#if weaponAmmo}}
 				<a
-					class="content-link"
-					draggable="true"
-					data-uuid="{{ammoUuid}}"
-					data-type="Item"
-					data-tooltip="Ammo Item"
 					aria-describedby="tooltip"
+					class="content-link"
+					data-id="{{weaponAmmo._id}}"
+					data-link
+					data-pack="{{weaponAmmo.pack}}"
+					data-tooltip="Ammo Item"
+					data-type="Item"
+					data-uuid="{{weaponAmmo.uuid}}"
+					draggable="true"
 				><i class="fas fa-suitcase"></i></a>
 			{{/if}}
 		</label>

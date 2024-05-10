@@ -1,7 +1,41 @@
 export default class FalloutItem extends Item {
 
+	get currentWeaponDamage() {
+		if (this.type !== "weapon") return undefined;
+
+		let damageDice = parseInt(this.system.damage?.rating ?? 0);
+
+		if (["meleeWeapons", "unarmed"].includes(this.system.weaponType)) {
+			let damageBonus = this.actor.system?.meleeDamage?.value ?? 0;
+			damageDice += damageBonus;
+		}
+
+		if (game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) {
+			let wearAndTear = Number(this.system.tear);
+			if (isNaN(wearAndTear)) wearAndTear = 0;
+
+			damageDice -= wearAndTear;
+		}
+
+		return damageDice;
+	}
+
 	get isOwnedByCreature() {
 		return this.isOwned && this.actor.type === "creature";
+	}
+
+	get isWeaponBroken() {
+		if (this.type !== "weapon") return false;
+		if (!game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) return false;
+
+		let damageDice = parseInt(this.system.damage?.rating ?? 0);
+
+		let wearAndTear = Number(this.system.tear);
+		if (isNaN(wearAndTear)) wearAndTear = 0;
+
+		damageDice -= wearAndTear;
+
+		return damageDice <= 0;
 	}
 
 	async _preCreate(data, options, user) {

@@ -82,9 +82,11 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		if (item.type === "weapon") {
+			context.isWeaponBroken = this.item.isWeaponBroken;
+
 			for (const [uuid, name] of Object.entries(CONFIG.FALLOUT.AMMO_BY_UUID)) {
 				if (name === this.item.system.ammo) {
-					context.ammoUuid = uuid;
+					context.weaponAmmo = await fromUuid(uuid);
 					break;
 				}
 			}

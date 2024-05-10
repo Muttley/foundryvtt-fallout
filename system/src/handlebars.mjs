@@ -165,6 +165,10 @@ export default function registerHandlebarsHelpers() {
 		return CONFIG.FALLOUT[arg1][arg2] ? CONFIG.FALLOUT[arg1][arg2] : arg2;
 	});
 
+	Handlebars.registerHelper("fromSettings", function(arg1) {
+		return game.settings.get(SYSTEM_ID, arg1);
+	});
+
 	// Handlebars.registerHelper("incrementCounter", function(counter) {
 	// 	return ++counter;
 	// });

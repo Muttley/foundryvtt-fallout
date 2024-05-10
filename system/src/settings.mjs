@@ -86,6 +86,15 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	game.settings.register(SYSTEM_ID, "applyWearAndTearToWeaponDamage", {
+		name: "Apply Wear and Tear to Weapon Damage",
+		hint: "Automatically decrease weapon damage dice by the amount of Wear and Tear on the weapon. Weapons become broken if their Base Damage, minus any Wear and Tear, is reduced to zero.",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
+
 	game.settings.register(SYSTEM_ID, "syncConditionsWithWorldClock", {
 		name: "Sync Conditions with World Clock",
 		hint: "If enabled player Hunger, Thirst and Rested conditions will be synced with game time. For this to work fully you must have installed/enabled a 3rd party world time module, such as Simple Calendar, which can be used to adjust the game time.  Otherwise time will only be advanced by the Party Sleep tool.",

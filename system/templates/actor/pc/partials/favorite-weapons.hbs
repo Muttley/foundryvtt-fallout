@@ -22,30 +22,19 @@
 							{{#if item.shotsAvailable}}
 								<em>({{item.shotsAvailable}})</em>
 							{{/if}}
+							&nbsp;
 							{{#if (isWeaponDamaged item.system)}}
 								<i class="fas fa-wrench"></i>
 							{{/if}}
-
-							{{#each item.system.damage.damageType as |dt dk|}}
-								{{#ifCond dt '==' true}}
-									<i
-										class="fo-{{dk}}"
-										title="{{fromConfig "DAMAGE_TYPES" dk}}"
-									></i>
-								{{/ifCond}}
-							{{/each}}
 						</a>
 					</div>
 					<div class="text-center" style="margin-right: 5px;">
 						<a
 							class="weapon-roll-damage"
+							data-tooltip="{{{item.damageTooltip}}}"
 							style="color:rgb(238, 231, 135)"
 						>
-							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
-								{{math item.system.damage.rating '+' ../actor.system.meleeDamage.value}}
-							{{else}}
-								{{item.system.damage.rating}}
-							{{/if}}
+							{{item.currentWeaponDamage}}
 							<span class="fo-pip-boy fo-blue"></span>
 						</a>
 					</div>
@@ -82,7 +71,18 @@
 							{{localize 'FALLOUT.TEMPLATES.Range'}}:
 						</strong>
 						{{fromConfig "RANGES" item.system.range}}
+						|&nbsp;
 					</span>
+
+					{{#each item.system.damage.damageType as |dt dk|}}
+						{{#ifCond dt '==' true}}
+							<i
+								class="fo-{{dk}}"
+								style="line-height: 1.4;"
+								title="{{fromConfig "DAMAGE_TYPES" dk}}"
+							></i>
+						{{/ifCond}}
+					{{/each}}
 				</div>
 			</li>
 		{{/each}}

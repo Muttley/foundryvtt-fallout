@@ -1,7 +1,13 @@
 # v11.10.0
 
 ## Enhancement
+- [#367] Add option to automatically reduce weapon damage by wear and tear rate and refuse to fire if broken
+
+	* New option called "Apply Wear and Tear to Weapon Damage" added and is enabled by default.  This will automatically reduce the damage of a weapon by the amount of wear and tear, and a weapon will become unusable once the base damage is reduced to zero by wear and tear.
+
 - [#370] Allow posting items to chat even if they're not current;y editable (for example, locked compendium items)
+- [#371] Reduce interface clutter by only showing the current damage of a weapon
+- [#373] Make the favourite weapons list more readable by moving the damage type into the additional data
 
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect
@@ -10,6 +16,8 @@
 - [#369] Weapon Wear & Tear should be a numeric value
 
 	* The upgrade process will attempt to migrate existing values, but if a non-empty, non-numeric string is found will default to a value of 1
+
+- [#372] Available ammo for a weapon missing from favourite and main weapons list
 
 ## Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12

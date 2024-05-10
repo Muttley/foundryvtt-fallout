@@ -34,7 +34,7 @@ export class Roller2D20 {
 		let hitLocationResult = undefined;
 
 		if (rollLocation) {
-			let hitLocationRoll = await new Roll("1dh").evaluate({ async: true });
+			let hitLocationRoll = await new Roll("1dh").evaluate();
 			// try initiating Dice So Nice Roll
 			try {
 				game.dice3d.showForRoll(hitLocationRoll);
