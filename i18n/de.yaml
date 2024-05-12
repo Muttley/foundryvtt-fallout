@@ -167,6 +167,12 @@ FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Aktuelle Gesundheit
 FALLOUT.HEALTH.health: Gesundheit
 FALLOUT.HEALTH.max: Maximale Gesundheit
+FALLOUT.Item.PowerArmor.Attach: Attach
+FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
+FALLOUT.Item.PowerArmor.Frame: Frame
+FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
 FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
@@ -193,12 +199,12 @@ FALLOUT.RANGE.extreme: X
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Klicken, um Immunität umzuschalten
-FALLOUT.RESISTANCE.energy: Energie SR
+FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.Immunity.poison: Immun gegen Giftschaden
 FALLOUT.RESISTANCE.Immunity.radiation: Immun gegen Strahlungsschaden
-FALLOUT.RESISTANCE.physical: Phys. SR
-FALLOUT.RESISTANCE.poison: Gift SR
-FALLOUT.RESISTANCE.radiation: Strahlungs SR
+FALLOUT.RESISTANCE.physical: Körperlich
+FALLOUT.RESISTANCE.poison: Gift
+FALLOUT.RESISTANCE.radiation: Strahlung
 FALLOUT.SETTINGS.sourceFilters.hint: Wenn diese Option aktiviert ist, werden nur die in dieser Liste enthaltenen Buchquellen an den entsprechenden Stellen zur Auswahl angeboten. Items, bei denen keine Buchquelle angegeben ist, sind immer verfügbar.
 FALLOUT.SETTINGS.sourceFilters.title: Buchquellen-Filter
 FALLOUT.SETTLEMENT_ACTION.Build: Erstelle

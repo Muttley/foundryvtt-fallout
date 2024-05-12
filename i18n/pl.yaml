@@ -167,6 +167,12 @@ FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Obecne zdrowie
 FALLOUT.HEALTH.health: Zdrowie
 FALLOUT.HEALTH.max: Maksymalne Zdrowie
+FALLOUT.Item.PowerArmor.Attach: Attach
+FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
+FALLOUT.Item.PowerArmor.Frame: Frame
+FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
 FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
@@ -193,12 +199,12 @@ FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: D
 FALLOUT.RANGE.medium: Ś
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Kliknij, aby przełączyć odporność
-FALLOUT.RESISTANCE.energy: RO Energetycznych
+FALLOUT.RESISTANCE.energy: Energetyczne
 FALLOUT.RESISTANCE.Immunity.poison: Niewrażliwość na obrażenia od trucizn
 FALLOUT.RESISTANCE.Immunity.radiation: Niewrażliwość na obrażenia od promieniowania
-FALLOUT.RESISTANCE.physical: Ro Fizycznych
-FALLOUT.RESISTANCE.poison: RO Trucizn
-FALLOUT.RESISTANCE.radiation: RO Radiacyjnych
+FALLOUT.RESISTANCE.physical: Fizyczne
+FALLOUT.RESISTANCE.poison: Trucizna
+FALLOUT.RESISTANCE.radiation: Radiacja
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
