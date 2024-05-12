@@ -201,8 +201,10 @@ export default class FalloutActor extends Actor {
 					i => i.type === "apparel"
 						&& i.system.apparelType === "powerArmor"
 						&& i.system.equipped
-						&& i.system.powered
+						&& i.system.powerArmor.powered
+						&& i.system.powerArmor.isFrame === false
 						&& i.system.location[k] === true
+						&& i.system.stashed === false
 				);
 				if (pow && !outfittedLocations[k]) {
 					outfittedLocations[k] = foundry.utils.duplicate(pow.toObject());
@@ -214,11 +216,11 @@ export default class FalloutActor extends Actor {
 		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let armor = this.items.find(
-					i =>
-						i.type === "apparel"
-                && i.system.apparelType === "armor"
-                && i.system.equipped
-                && i.system.location[k] === true
+					i => i.type === "apparel"
+						&& i.system.apparelType === "armor"
+						&& i.system.equipped
+						&& i.system.location[k] === true
+						&& i.system.stashed === false
 				);
 				if (armor && !outfittedLocations[k]) {
 					outfittedLocations[k] = foundry.utils.duplicate(armor.toObject());
@@ -583,7 +585,7 @@ export default class FalloutActor extends Actor {
 		if (this.type === "character") {
 			physicalItems = physicalItems.filter(i => {
 				if (i.system.apparelType === "powerArmor") {
-					return !i.system.powered;
+					return !i.system.powerArmor.powered;
 				}
 				else {
 					return true;

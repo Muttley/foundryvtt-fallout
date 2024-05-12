@@ -273,8 +273,46 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * Delete Inventory Item
 		html.find(".item-delete").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("itemId"));
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			if (item.type === "apparel" && item.system.powerArmor.isFrame) {
+				const attachedItems = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === itemId
+				);
+
+				const updateData = [];
+
+				for (const attachedItem of attachedItems) {
+					updateData.push({
+						"_id": attachedItem._id,
+						"system.powerArmor.frameId": "",
+					});
+				}
+
+				if (updateData.length > 0) {
+					await Item.updateDocuments(updateData, {parent: this.actor});
+
+					if (this.actor.type === "character") {
+						this.actor._calculateCharacterBodyResistance();
+					}
+				}
+			}
+
 			await item.delete();
+
+			const frames = this.actor.items.filter(i =>
+				i.type === "apparel"
+					&& i.system.apparelType === "powerArmor"
+					&& i.system.powerArmor.isFrame
+			);
+
+			for (const frame of frames) {
+				frame.sheet.render(false);
+			}
+
 			li.slideUp(200, () => this.render(false));
 		});
 

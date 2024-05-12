@@ -1,0 +1,21 @@
+<ol class="items-list">
+	<li class="item apparel flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize "FALLOUT.Item.PowerArmor.Pieces"}}
+		</div>
+		<div class="flexrow flexlarge item-info">
+			<div class="text-center flex2">
+				<p>{{localize "FALLOUT.TEMPLATES.Locations"}}</p>
+			</div>
+			<div class="text-center flex2">
+				<p>{{localize "FALLOUT.TEMPLATES.Resistances"}}</p>
+			</div>
+		</div>
+		<div class="item-controls"></div>
+	</li>
+	{{#each powerArmorPieces}}
+		{{> item/apparel/_partials/power-armor-piece
+			item=this
+		}}
+	{{/each}}
+</ol>

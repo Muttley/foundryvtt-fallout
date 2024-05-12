@@ -164,6 +164,7 @@
 	}
 }
 
+.item-unattached,
 .item-unequipped,
 .item-unstashed,
 .item-unpowered,
@@ -175,4 +176,9 @@
 .item-formula {
 	flex: 0 0 200px;
 	padding: 0 8px;
+}
+
+.power-armor-parts {
+	display: grid;
+	grid-template-columns: min-content auto;
 }

@@ -2,13 +2,22 @@
 
 ## Enhancement
 - [#334] Add a setting to consumables to specify the amount of rad damage CD that are rolled when consuming it
+- [#348] Improve the way Power Armor is handled on the sheets
+
+	* You can now optionally attach Power Armor items to a base "Armor Frame" item (this can be found in the core compendiums).
+	* This is done by editing the frame item and using the Frame tab to select/deselect which power armor items owned by the actor are attached.
+	* The frame and any attached items will be grouped together at the top of the inventory section, and each attached piece will show a "plug" icon to show they attached to a base frame.
+	* All attached items will also share Power, Equipped and Stashed settings so that using these controls on any item in the group will modify the value on all items.
+
 - [#367] Add option to automatically reduce weapon damage by wear and tear rate and refuse to fire if broken
 
 	* New option called "Apply Wear and Tear to Weapon Damage" added and is enabled by default.  This will automatically reduce the damage of a weapon by the amount of wear and tear, and a weapon will become unusable once the base damage is reduced to zero by wear and tear.
 
-- [#370] Allow posting items to chat even if they're not current;y editable (for example, locked compendium items)
+- [#370] Allow posting items to chat even if they're not currently editable (for example, locked compendium items)
 - [#371] Reduce interface clutter by only showing the current damage of a weapon
 - [#373] Make the favourite weapons list more readable by moving the damage type into the additional data
+- [#375] Stashing an item in your inventory should also unequip it
+- [#376] Equipping an item in your inventory should also unstash it
 
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect

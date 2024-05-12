@@ -71,37 +71,151 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		// * Toggle Stash Inventory Item
 		html.find(".item-stash").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
-			await this.actor.updateEmbeddedDocuments("Item", [
-				this._toggleStashed(li.data("item-id"), item),
-			]);
+			const attachedToId = li.data("item-attached") ?? "";
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			const newValue = !item.system.stashed;
+
+			const isFrame = item.system.powerArmor?.isFrame ?? false;
+
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
+
+				const updateData = [{
+					"_id": myFrameId,
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				}];
+
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
+
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.stashed": newValue,
+						"system.equipped": newValue ? false : item.system.equipped,
+					});
+				}
+
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				});
+			}
 		});
 
 		// * Toggle Power on Power Armor Item
 		html.find(".item-powered").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
-			await this.actor.updateEmbeddedDocuments("Item", [
-				this._togglePowered(li.data("item-id"), item),
-			]);
+
+			const attachedToId = li.data("item-attached") ?? "";
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			const newValue = !item.system.powerArmor.powered;
+
+			const isFrame = item.system.powerArmor.isFrame;
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
+
+				const updateData = [{
+					"_id": myFrameId,
+					"system.powerArmor.powered": newValue,
+				}];
+
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
+
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.powerArmor.powered": newValue,
+					});
+				}
+
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.powerArmor.powered": newValue,
+				});
+			}
 		});
 
 		// * Toggle Equip Inventory Item
 		html.find(".item-toggle").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
-			await this.actor.updateEmbeddedDocuments("Item", [
-				this._toggleEquipped(li.data("item-id"), item),
-			]);
+
+			const attachedToId = li.data("item-attached") ?? "";
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			const newValue = !item.system.equipped;
+
+			const isFrame = item.system.powerArmor?.isFrame ?? false;
+
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
+
+				const updateData = [{
+					"_id": myFrameId,
+					"system.equipped": newValue,
+					"system.stashed": newValue ? false : item.system.stashed,
+				}];
+
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
+
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.equipped": newValue,
+						"system.stashed": newValue ? false : item.system.stashed,
+					});
+				}
+
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.equipped": newValue,
+					"system.stashed": newValue ? false : item.system.stashed,
+				});
+			}
 		});
 
 		// * Toggle Favorite Inventory Item
 		html.find(".item-favorite").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("item-id"));
-			await this.actor.updateEmbeddedDocuments("Item", [
-				this._toggleFavorite(li.data("item-id"), item),
-			]);
+
+			item.update({"system.favorite": !item.system.favorite});
 		});
 
 		// * INJURIES
@@ -318,6 +432,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 				)
 			);
 		}
+
+		if (this.actor.isNotRobot) {
+			this._preparePowerArmor(context);
+		}
 	}
 
 	_onSubmit(event) {
@@ -341,45 +459,46 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		this.actor.update(updateData);
 	}
 
-
-	// Toggle Stashed Item
-	_toggleStashed(id, item) {
-		return {
-			_id: id,
-			data: {
-				stashed: !item.system.stashed,
-			},
+	// Goes through all power armor in an inventory and if necessary groups them
+	// by frame so they can be displayed together easily
+	//
+	_preparePowerArmor(context) {
+		context.powerArmor = {
+			frames: [],
+			framePieces: {},
+			pieces: [],
 		};
-	}
 
-	// Toggle Equipment
-	_toggleEquipped(id, item) {
-		return {
-			_id: id,
-			system: {
-				equipped: !item.system.equipped,
-			},
-		};
-	}
+		const allPowerArmor = context.allApparel.find(
+			group => group.apparelType === "powerArmor"
+		).list;
 
-	// Toggle Powered
-	_togglePowered(id, item) {
-		return {
-			_id: id,
-			system: {
-				powered: !item.system.powered,
-			},
-		};
-	}
+		context.powerArmor.frames = allPowerArmor.filter(
+			i => i.system.powerArmor.isFrame
+		);
 
-	// Toggle Favorite
-	_toggleFavorite(id, item) {
-		return {
-			_id: id,
-			system: {
-				favorite: !item.system.favorite,
-			},
-		};
+		let newPowerArmorList = [];
+
+		for (const frame of context.powerArmor.frames) {
+			newPowerArmorList.push(
+				frame,
+				...allPowerArmor.filter(
+					i => i.system.powerArmor.frameId === frame._id
+				)
+			);
+		}
+
+		newPowerArmorList = [
+			...newPowerArmorList,
+			...allPowerArmor.filter(
+				i => i.system.powerArmor.frameId === ""
+					&& !i.system.powerArmor.isFrame
+			),
+		];
+
+		context.allApparel.find(
+			group => group.apparelType === "powerArmor"
+		).list = newPowerArmorList;
 	}
 
 	async _updateChemDoseManager() {

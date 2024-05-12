@@ -81,131 +81,164 @@ export default class FalloutItemSheet extends ItemSheet {
 			});
 		}
 
-		if (item.type === "weapon") {
-			context.isWeaponBroken = this.item.isWeaponBroken;
+		if (item.type === "apparel" && this.item.isOwned) {
+			let availablePieces = foundry.utils.duplicate(
+				this.item.actor.items.filter(
+					i => i.system.apparelType === "powerArmor"
+						&& (i.system.powerArmor.frameId === ""
+							|| i.system.powerArmor.frameId === this.item._id
+						)
+						&& !i.system.powerArmor.isFrame
+				)
+			);
 
-			for (const [uuid, name] of Object.entries(CONFIG.FALLOUT.AMMO_BY_UUID)) {
-				if (name === this.item.system.ammo) {
-					context.weaponAmmo = await fromUuid(uuid);
-					break;
+			availablePieces = availablePieces.sort(
+				(a, b) => a.name.localeCompare(b.name)
+			);
+
+			availablePieces = availablePieces.sort(
+				(a, b) => {
+					const aIsAttached = a.system.powerArmor.frameId === item._id;
+					const bIsAttached = b.system.powerArmor.frameId === item._id;
+
+					return (bIsAttached ? 1 : 0) - (aIsAttached ? 1 : 0);
 				}
-			}
-			context.ammoTypes = CONFIG.FALLOUT.AMMO_TYPES;
-
-			context.damageTypes = [];
-			for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
-				context.damageTypes.push({
-					active: item.system?.damage?.damageType[key] ?? false,
-					key,
-					label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
-				});
-			}
-
-			const weaponQualities = [];
-			for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
-				weaponQualities.push({
-					active: item.system?.damage?.weaponQuality[key].value ?? false,
-					hasRank: CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key],
-					rank: item.system?.damage?.weaponQuality[key].rank,
-					key,
-					label: CONFIG.FALLOUT.WEAPON_QUALITIES[key],
-				});
-			}
-
-			context.weaponQualities = weaponQualities.sort(
-				(a, b) => a.label.localeCompare(b.label)
 			);
 
-			const damageEffects = [];
-			for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
-				damageEffects.push({
-					active: item.system?.damage?.damageEffect[key].value ?? false,
-					hasRank: CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key],
-					rank: item.system?.damage?.damageEffect[key].rank,
-					key,
-					label: CONFIG.FALLOUT.DAMAGE_EFFECTS[key],
-				});
-			}
+			context.powerArmorPieces = availablePieces;
+		}
 
-			context.damageEffects = damageEffects.sort(
-				(a, b) => a.label.localeCompare(b.label)
-			);
-
-			context.isOwnedByCreature = item.isOwnedByCreature;
-
-			const allSkills = await fallout.compendiums.skills();
-			context.availableSkills = {};
-
-			let availableSkillNames = [];
-			for (const skill of allSkills) {
-				availableSkillNames.push(skill.name);
-			}
-
-			availableSkillNames = availableSkillNames.sort(
-				(a, b) => a.localeCompare(b)
-			);
-
-			for (const skillName of availableSkillNames) {
-				context.availableSkills[skillName] = skillName;
-			}
+		if (item.type === "weapon") {
+			await this.getWeaponData(context, item);
 		}
 
 		if (item.type === "object_or_structure") {
 			// Setup materials
-			context.materials = [];
-			for (const material of ["common", "uncommon", "rare"]) {
-				context.materials.push({
-					label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
-					key: `system.materials.${material}`,
-					value: source.system.materials[material] ?? 0,
-				});
-			}
-
-			const __getDescendants = function(output, actor, item) {
-				const descendants = actor.items.filter(
-					i => i.system.parentItem === item._id
-				);
-
-				for (const nextDescendant of descendants) {
-					output.push(nextDescendant);
-					__getDescendants(output, actor, nextDescendant);
-				}
-			};
-
-			if (context.isEmbedded) {
-				const descendants = [];
-				__getDescendants(descendants, this.item.actor, item);
-
-				let possibleParents =
-					await this.item.actor.items.filter(i =>
-						["structure", "room", "store"].includes(i.system.itemType)
-						&& item._id !== i._id
-						&& (!descendants.find(d => d._id === i._id))
-					) ?? [];
-
-				if (this.item.system.itemType === "structure") possibleParents = [];
-
-				if (this.item.system.itemType === "room") {
-					possibleParents = possibleParents.filter(
-						i => i.system.itemType === "structure"
-					);
-				}
-
-				const parentChoices = [];
-				for (const possibleParent of possibleParents) {
-					parentChoices.push({
-						id: possibleParent._id,
-						name: possibleParent.name,
-					});
-				}
-
-				context.parentChoices = parentChoices.sort(
-					(a, b) => a.name.localeCompare(b.name)
-				);
-			}
+			await this.getObjectOrStructureData(context, source, item);
 		}
 
 		return context;
+	}
+
+	async getObjectOrStructureData(context, source, item) {
+		context.materials = [];
+		for (const material of ["common", "uncommon", "rare"]) {
+			context.materials.push({
+				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+				key: `system.materials.${material}`,
+				value: source.system.materials[material] ?? 0,
+			});
+		}
+
+		const __getDescendants = function(output, actor, item) {
+			const descendants = actor.items.filter(
+				i => i.system.parentItem === item._id
+			);
+
+			for (const nextDescendant of descendants) {
+				output.push(nextDescendant);
+				__getDescendants(output, actor, nextDescendant);
+			}
+		};
+
+		if (context.isEmbedded) {
+			const descendants = [];
+			__getDescendants(descendants, this.item.actor, item);
+
+			let possibleParents = await this.item.actor.items.filter(i => ["structure", "room", "store"].includes(i.system.itemType)
+				&& item._id !== i._id
+				&& (!descendants.find(d => d._id === i._id))
+			) ?? [];
+
+			if (this.item.system.itemType === "structure") possibleParents = [];
+
+			if (this.item.system.itemType === "room") {
+				possibleParents = possibleParents.filter(
+					i => i.system.itemType === "structure"
+				);
+			}
+
+			const parentChoices = [];
+			for (const possibleParent of possibleParents) {
+				parentChoices.push({
+					id: possibleParent._id,
+					name: possibleParent.name,
+				});
+			}
+
+			context.parentChoices = parentChoices.sort(
+				(a, b) => a.name.localeCompare(b.name)
+			);
+		}
+	}
+
+	async getWeaponData(context, item) {
+		context.isWeaponBroken = this.item.isWeaponBroken;
+
+		for (const [uuid, name] of Object.entries(CONFIG.FALLOUT.AMMO_BY_UUID)) {
+			if (name === this.item.system.ammo) {
+				context.weaponAmmo = await fromUuid(uuid);
+				break;
+			}
+		}
+		context.ammoTypes = CONFIG.FALLOUT.AMMO_TYPES;
+
+		context.damageTypes = [];
+		for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
+			context.damageTypes.push({
+				active: item.system?.damage?.damageType[key] ?? false,
+				key,
+				label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
+			});
+		}
+
+		const weaponQualities = [];
+		for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
+			weaponQualities.push({
+				active: item.system?.damage?.weaponQuality[key].value ?? false,
+				hasRank: CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key],
+				rank: item.system?.damage?.weaponQuality[key].rank,
+				key,
+				label: CONFIG.FALLOUT.WEAPON_QUALITIES[key],
+			});
+		}
+
+		context.weaponQualities = weaponQualities.sort(
+			(a, b) => a.label.localeCompare(b.label)
+		);
+
+		const damageEffects = [];
+		for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
+			damageEffects.push({
+				active: item.system?.damage?.damageEffect[key].value ?? false,
+				hasRank: CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key],
+				rank: item.system?.damage?.damageEffect[key].rank,
+				key,
+				label: CONFIG.FALLOUT.DAMAGE_EFFECTS[key],
+			});
+		}
+
+		context.damageEffects = damageEffects.sort(
+			(a, b) => a.label.localeCompare(b.label)
+		);
+
+		context.isOwnedByCreature = item.isOwnedByCreature;
+
+		const allSkills = await fallout.compendiums.skills();
+		context.availableSkills = {};
+
+		let availableSkillNames = [];
+		for (const skill of allSkills) {
+			availableSkillNames.push(skill.name);
+		}
+
+		availableSkillNames = availableSkillNames.sort(
+			(a, b) => a.localeCompare(b)
+		);
+
+		for (const skillName of availableSkillNames) {
+			context.availableSkills[skillName] = skillName;
+		}
 	}
 
 	/* -------------------------------------------- */
@@ -240,6 +273,38 @@ export default class FalloutItemSheet extends ItemSheet {
 					e.target.value = 0;
 				}
 			});
+		});
+
+		html.find(".item-attach").click(async event => {
+			event.preventDefault();
+
+			const li = $(event.currentTarget).parents(".item");
+
+			const itemId = li.data("itemId");
+			const item = this.actor.items.get(itemId);
+
+			const newFrameId = item.system.powerArmor.frameId === ""
+				? this.item._id
+				: "";
+
+			await item.update({
+				"system.equipped": this.item.system.equipped,
+				"system.powerArmor.frameId": newFrameId,
+				"system.powerArmor.powered": this.item.system.powerArmor.powered,
+				"system.stashed": this.item.system.stashed,
+			});
+
+			const frames = this.actor.items.filter(i =>
+				i.type === "apparel"
+					&& i.system.apparelType === "powerArmor"
+					&& i.system.powerArmor.isFrame
+			);
+
+			for (const frame of frames) {
+				frame.sheet.render(false);
+			}
+
+			this.actor.sheet.render(false);
 		});
 	}
 
