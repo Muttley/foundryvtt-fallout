@@ -199,12 +199,12 @@ FALLOUT.RANGE.extreme: X
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Klicken, um Immunität umzuschalten
-FALLOUT.RESISTANCE.energy: Energy
+FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.Immunity.poison: Immun gegen Giftschaden
 FALLOUT.RESISTANCE.Immunity.radiation: Immun gegen Strahlungsschaden
-FALLOUT.RESISTANCE.physical: Physical
-FALLOUT.RESISTANCE.poison: Poison
-FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.RESISTANCE.physical: Körperlich
+FALLOUT.RESISTANCE.poison: Gift
+FALLOUT.RESISTANCE.radiation: Strahlung
 FALLOUT.SETTINGS.sourceFilters.hint: Wenn diese Option aktiviert ist, werden nur die in dieser Liste enthaltenen Buchquellen an den entsprechenden Stellen zur Auswahl angeboten. Items, bei denen keine Buchquelle angegeben ist, sind immer verfügbar.
 FALLOUT.SETTINGS.sourceFilters.title: Buchquellen-Filter
 FALLOUT.SETTLEMENT_ACTION.Build: Erstelle
