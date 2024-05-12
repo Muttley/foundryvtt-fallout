@@ -18,6 +18,7 @@
 - [#373] Make the favourite weapons list more readable by moving the damage type into the additional data
 - [#375] Stashing an item in your inventory should also unequip it
 - [#376] Equipping an item in your inventory should also unstash it
+- [#377] Provide a built in Macro to open the Scavenging Help web tool
 
 ## Bugs
 - [#356] Laser Gun Damage Value Incorrect
@@ -38,6 +39,8 @@
 - [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances
 - [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES
 - [#364] The async option for Roll#evaluate has been removed
+
+*Many thanks to **Erik H** for kindly allowing us to link to his scavenging help tool.*
 
 ---
 
