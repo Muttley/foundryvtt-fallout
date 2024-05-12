@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "headgear",
 		"cost": 20,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A helmet made of metal, plastic, and light ceramics, designed to protect a soldier&rsquo;s head from shrapnel. The helmet is lined with supportive padding to ensure a secure fit.</span> </p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 0
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 3
 	},

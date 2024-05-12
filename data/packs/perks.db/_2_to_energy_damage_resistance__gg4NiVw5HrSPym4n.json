@@ -20,11 +20,14 @@
 		"startTurn": null,
 		"turns": null
 	},
-	"icon": "icons/svg/aura.svg",
+	"img": "icons/svg/aura.svg",
 	"name": "+2 to Energy damage resistance",
 	"origin": "Item.fDu6KU5u17sqA1hf",
 	"statuses": [
 	],
-	"tint": null,
-	"transfer": true
+	"system": {
+	},
+	"tint": "#ffffff",
+	"transfer": true,
+	"type": "base"
 }

@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "powerArmor",
 		"cost": 250,
-		"damaged": "",
 		"description": "<p>Developed shortly after the U.S. Army&rsquo;s victory in Anchorage, the T-60 series of Power Armor was designed as the next generation of armor to replace the T-51. It was in the process of being issued to U.S. Army units serving domestically when the bombs dropped, meaning that large quantities were still in storage awaiting deployment. As a result, stockpiles of the armor have been claimed by the Brotherhood of Steel, and Brotherhood soldiers in T-60 armor has become an iconic feature of their presence in a region.</p>\n<p>Each piece of T-60 Power Armor can accept three mods: an upgrade mod, one plating mod, and a system. All Unique T-60 Power Armor Upgrade Mods are installed with the Repair Skill.</p>\n<p><strong>Unique T-60 Power Armor Upgrade Mods:</strong> T-60b, T-60c, T-60d, T-60e, T-60f</p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 2
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 4,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 9
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 20
 	},

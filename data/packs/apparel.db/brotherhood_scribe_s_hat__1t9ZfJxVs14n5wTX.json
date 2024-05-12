@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "headgear",
 		"cost": 8,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">This lightweight leather cap and goggles are provided as an accompaniment to the Brotherhood Scribe&rsquo;s Armor, to protect the head from hazardous conditions.</span> </p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 2,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 0
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 0
 	},

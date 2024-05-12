@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "clothing",
 		"cost": 12,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A simple, hard-wearing shirt, jacket, pants, and set of combat boots designed to be worn by military personnel before the Great War. These garments are designed to be worn in unpleasant conditions, and have numerous pockets for carrying useful items, so an intact set is a decent find.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Wearing military fatigues allows you to re-roll a single d20 on one </span><span class=\"fontstyle2\">STR </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\">AGI </span><span class=\"fontstyle0\">based skill test you make each scene, as the fatigues are easy to move in.</span></p>\n<p><span class=\"fontstyle0\">Military fatigues can be reinforced with Ballistic Weave (see sidebar, p. 126)</span></p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 1
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 0
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 3
 	},
