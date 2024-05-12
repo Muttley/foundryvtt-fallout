@@ -199,12 +199,12 @@ FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: D
 FALLOUT.RANGE.medium: Ś
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Kliknij, aby przełączyć odporność
-FALLOUT.RESISTANCE.energy: Energy
+FALLOUT.RESISTANCE.energy: Energetyczne
 FALLOUT.RESISTANCE.Immunity.poison: Niewrażliwość na obrażenia od trucizn
 FALLOUT.RESISTANCE.Immunity.radiation: Niewrażliwość na obrażenia od promieniowania
-FALLOUT.RESISTANCE.physical: Physical
-FALLOUT.RESISTANCE.poison: Poison
-FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.RESISTANCE.physical: Fizyczne
+FALLOUT.RESISTANCE.poison: Trucizna
+FALLOUT.RESISTANCE.radiation: Radiacja
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
