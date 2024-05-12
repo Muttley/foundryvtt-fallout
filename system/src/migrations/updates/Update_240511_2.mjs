@@ -8,7 +8,7 @@ export default class Update_240511_2 extends FalloutUpdateBase {
 		if (itemData.type !== "apparel") return;
 
 		const updateData = {
-			"system.powerArmor.frameId": "",
+			"system.powerArmor.-=attachedItems": null,
 		};
 
 		return updateData;
