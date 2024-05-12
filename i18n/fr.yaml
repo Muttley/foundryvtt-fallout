@@ -167,6 +167,12 @@ FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
+FALLOUT.Item.PowerArmor.Attach: Attach
+FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
+FALLOUT.Item.PowerArmor.Frame: Frame
+FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
 FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
@@ -193,12 +199,12 @@ FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Activer/Désactiver l'immunité
-FALLOUT.RESISTANCE.energy: Énergie RD
+FALLOUT.RESISTANCE.energy: Energy
 FALLOUT.RESISTANCE.Immunity.poison: Immunisé aux dégâts de poison
 FALLOUT.RESISTANCE.Immunity.radiation: Immunisé aux dégâts de radiation
-FALLOUT.RESISTANCE.physical: Balistique RD
-FALLOUT.RESISTANCE.poison: Poison RD
-FALLOUT.RESISTANCE.radiation: Radiation RD
+FALLOUT.RESISTANCE.physical: Physical
+FALLOUT.RESISTANCE.poison: Poison
+FALLOUT.RESISTANCE.radiation: Radiation
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
 FALLOUT.SETTINGS.sourceFilters.title: Filtres de Livres Source
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
