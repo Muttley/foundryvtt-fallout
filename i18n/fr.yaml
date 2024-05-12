@@ -199,10 +199,10 @@ FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Activer/Désactiver l'immunité
-FALLOUT.RESISTANCE.energy: Energy
+FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.Immunity.poison: Immunisé aux dégâts de poison
 FALLOUT.RESISTANCE.Immunity.radiation: Immunisé aux dégâts de radiation
-FALLOUT.RESISTANCE.physical: Physical
+FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
