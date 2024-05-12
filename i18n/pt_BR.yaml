@@ -199,12 +199,12 @@ FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
-FALLOUT.RESISTANCE.energy: Energy
+FALLOUT.RESISTANCE.energy: Energia
 FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
 FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
-FALLOUT.RESISTANCE.physical: Physical
-FALLOUT.RESISTANCE.poison: Poison
-FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.RESISTANCE.physical: Físico
+FALLOUT.RESISTANCE.poison: Veneno
+FALLOUT.RESISTANCE.radiation: Radiação
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SETTLEMENT_ACTION.Build: Build
