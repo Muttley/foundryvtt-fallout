@@ -149,8 +149,8 @@ FALLOUT.EffectEdit: Editer Effet
 FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
 FALLOUT.ERRORS.ThisWeaponIsBroken: Cette arme est cassée et ne peut plus être utilisée.
-FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
-FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Impossible de déterminer l'attribut à utiliser pour cette arme.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Impossible de déterminer la compétence à utiliser pour cette arme.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
 FALLOUT.FOOD: Nourriture
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Vous ne pouvez sélectionner qu'un maximum de {maxChoices} de ce type d'objet.
@@ -370,8 +370,8 @@ FALLOUT.TEMPLATES.MaterialsRequired: Composants requis
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
-FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
+FALLOUT.TEMPLATES.Melee_Bonus: Bonus de Mêlée
+FALLOUT.TEMPLATES.Melee_Damage: Dégâts de Mêlée
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
@@ -476,7 +476,7 @@ FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
 FALLOUT.UI.AreYouSure: Êtes-vous sûr ?
-FALLOUT.UI.BaseDamage: Base Damage
+FALLOUT.UI.BaseDamage: Dégâts de base
 FALLOUT.UI.BOOKS_AND_MAGZS: Livres et Magazines
 FALLOUT.UI.Cancel: Annuler
 FALLOUT.UI.CAPS: Capsules
