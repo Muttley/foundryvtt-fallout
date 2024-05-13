@@ -2,7 +2,7 @@
 	"_id": "lmGJG3z8DxT2od4N",
 	"_key": "!macros!lmGJG3z8DxT2od4N",
 	"author": "o8zsiuAwMiOtkmvl",
-	"command": "/**\n ***************************************************************\n * This macro can be used to open a window to the Scavenging\n * Help website.\n *\n * Many thanks to Erik H, author of the Scavenging Help website,\n * for his kind permission to include this macro.\n **************************************************************/\n\nnew FrameViewer(\n\t\"https://rpg-tools.erikh.se/fallout/scavtool/\",\n\t{\n\t\ttitle: \"Fallout 2d20 - Scavenging Help\",\n\t}\n).render(true);",
+	"command": "/**\n ***************************************************************\n * This macro can be used to open a window to the Scavenging\n * Help website.\n *\n * Many thanks to MrAtoni, author of the Scavenging Help website,\n * for his kind permission to include this macro.\n **************************************************************/\n\nnew FrameViewer(\n\t\"https://rpg-tools.erikh.se/fallout/scavtool/\",\n\t{\n\t\ttitle: \"Fallout 2d20 - Scavenging Help\",\n\t}\n).render(true);",
 	"folder": null,
 	"img": "systems/fallout/assets/icons/macro/spanner.svg",
 	"name": "Open Scavenging Help Website",

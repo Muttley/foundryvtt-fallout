@@ -40,7 +40,7 @@
 - [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES
 - [#364] The async option for Roll#evaluate has been removed
 
-*Many thanks to **Erik H** for kindly allowing us to link to his scavenging help tool.*
+*Many thanks to **MrAtoni** for kindly allowing us to link to his scavenging help tool.*
 
 ---
 

@@ -3,7 +3,7 @@
  * This macro can be used to open a window to the Scavenging
  * Help website.
  *
- * Many thanks to Erik H, author of the Scavenging Help website,
+ * Many thanks to MrAtoni, author of the Scavenging Help website,
  * for his kind permission to include this macro.
  **************************************************************/
 
