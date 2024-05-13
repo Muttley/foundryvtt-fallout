@@ -1,5 +1,5 @@
 <ol class="items-list">
-	<li class="item weapon flexrow items-header">
+	<li class="weapon flexrow items-header">
 		<div class="flexrow flexlarge item-name upperC">
 			{{nameLabel}}
 		</div>
@@ -16,11 +16,17 @@
 				<i class="fas fa-plus"></i>
 				{{localize 'FALLOUT.UI.Add'}}
 			</a>
+			<a
+				class="find-from-compendium"
+				data-type="weapon"
+			>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
 		</div>
 	</li>
 	{{#each itemsByType.weapon as |item id| }}
 		<li class="item weapon" data-item-id="{{item._id}}">
-			<div class=" flexrow">
+			<div class="flexrow">
 				<div class="item-name flexlarge weapon-roll">
 					<div class="item-image">
 						<img
@@ -32,23 +38,22 @@
 					</div>
 					<a class="resource-label">
 						{{item.name}}
+						{{#if item.shotsAvailable}}
+							<em>({{item.shotsAvailable}})</em>
+						{{/if}}
 						{{#if (isWeaponDamaged item.system)}}
+							&nbsp;
 							<i class="fas fa-wrench"></i>
 						{{/if}}
 					</a>
 				</div>
 				<div class="flexrow flexlarge align-mid">
 					<div class="text-center">
-						<a class="weapon-roll-damage">
-							<strong>
-								{{item.system.damage.rating}}
-							</strong>
-							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
-								+
-								<strong>
-									{{../actor.system.meleeDamage.value}}
-								</strong>
-							{{/if}}
+						<a
+							class="weapon-roll-damage"
+							data-tooltip="{{{item.damageTooltip}}}"
+						>
+							{{item.currentWeaponDamage}}
 							<span class="fo-pip-boy fo-blue"></span>
 						</a>
 					</div>
@@ -102,11 +107,38 @@
 				</div>
 			</div>
 			<div class="item-sub-info">
-				<span><strong>{{localize 'FALLOUT.TEMPLATES.Qualities'}}:&nbsp;</strong></span>
-				{{{listWeaponQualities item.system.damage.weaponQuality}}}
-				&nbsp;
-				<span><strong>{{localize 'FALLOUT.TEMPLATES.Effects'}}:&nbsp;</strong></span>
-				{{{listDamageEffects item.system.damage.damageEffect}}}
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
+					</strong>
+					{{{listWeaponQualities item.system.damage.weaponQuality}}}
+					|&nbsp;
+				</span>
+
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Effects'}}:
+					</strong>
+					{{{listDamageEffects item.system.damage.damageEffect}}}
+					|&nbsp;
+				</span>
+
+				{{#ifCond item.system.ammo '!==' ""}}
+					<span>
+						<strong>
+							{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
+						</strong>
+						{{item.system.fireRate}}
+						|&nbsp;
+					</span>
+				{{/ifCond}}
+
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Range'}}:
+					</strong>
+					{{fromConfig "RANGES" item.system.range}}
+				</span>
 			</div>
 		</li>
 	{{/each}}

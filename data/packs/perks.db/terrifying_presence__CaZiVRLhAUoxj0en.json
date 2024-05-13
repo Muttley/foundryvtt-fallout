@@ -1,0 +1,22 @@
+{
+	"_id": "CaZiVRLhAUoxj0en",
+	"_key": "!items!CaZiVRLhAUoxj0en",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Terrifying Presence",
+	"system": {
+		"description": "<p>When you make a Speech test to threaten or scare someone, you may re-roll 1d20.</p>\n<p>At rank 2, you may use a major action in combat to threaten an enemy within Medium range, using a STR + Speech test with a difficulty of 2. If you succeed, that enemy must move away from you during their next turn (though they can take any other actions they wish). Each time you take this perk, the level requirement increases by 5.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 2,
+			"value": 0
+		},
+		"requirements": "STR 6, CHA 8, Level 3+",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

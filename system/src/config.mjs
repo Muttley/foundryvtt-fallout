@@ -3,11 +3,22 @@ export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
+// Some consts used for timing purposes
+//
+FALLOUT.ONE_HOUR_IN_SECONDS = 60 * 60;
+FALLOUT.TWO_HOURS_IN_SECONDS = 60 * 60 * 2;
+FALLOUT.FOUR_HOURS_IN_SECONDS = 60 * 60 * 4;
+FALLOUT.EIGHT_HOURS_IN_SECONDS = 60 * 60 * 8;
+FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
+FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
+
+FALLOUT.DEFAULT_CONSUMABLE_RAD_DICE = 1;
+
 FALLOUT.APPAREL_TYPES = {
-	clothing: "FALLOUT.APPAREL.clothing",
-	outfit: "FALLOUT.APPAREL.outfit",
 	armor: "FALLOUT.APPAREL.armor",
+	clothing: "FALLOUT.APPAREL.clothing",
 	headgear: "FALLOUT.APPAREL.headgear",
+	outfit: "FALLOUT.APPAREL.outfit",
 	powerArmor: "FALLOUT.APPAREL.powerArmor",
 };
 
@@ -100,6 +111,7 @@ FALLOUT.CREATURE_SKILLS = {
 };
 
 FALLOUT.CREATURE_CATEGORIES = {
+	minion: "FALLOUT.NPC_TYPES.minion",
 	normal: "FALLOUT.NPC_TYPES.normal",
 	mighty: "FALLOUT.NPC_TYPES.mighty",
 	legendary: "FALLOUT.NPC_TYPES.legendary",
@@ -182,20 +194,28 @@ FALLOUT.ITEM_TYPES = {
 };
 
 FALLOUT.JOURNAL_UUIDS = {
-	releaseNotes: "Compendium.fallout.system-documentation.JournalEntry.7650UDxM6aehgB21",
+	releaseNotes: "Compendium.fallout.system_documentation.JournalEntry.7650UDxM6aehgB21",
 };
 
 FALLOUT.NPC_CATEGORIES = {
+	minion: "FALLOUT.NPC_TYPES.minion",
 	normal: "FALLOUT.NPC_TYPES.normal",
 	notable: "FALLOUT.NPC_TYPES.notable",
 	major: "FALLOUT.NPC_TYPES.major",
 };
 
 FALLOUT.OFFICIAL_SOURCES = {
+	aat_fully_operational: "FALLOUT.SOURCE_TITLE.aat_fully_operational",
+	aat_hunted: "FALLOUT.SOURCE_TITLE.aat_hunted",
+	aat_orange_sky: "FALLOUT.SOURCE_TITLE.aat_orange_sky",
+	aat_skull_canyon: "FALLOUT.SOURCE_TITLE.aat_skull_canyon",
 	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
-	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
+	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
+	gm_toolkit: "FALLOUT.SOURCE_TITLE.gm_toolkit",
+	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
+	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
 	winter_of_atom: "FALLOUT.SOURCE_TITLE.winter_of_atom",
 };
 
@@ -213,8 +233,8 @@ FALLOUT.RARITIES = {
 };
 
 FALLOUT.ROBOT_APPAREL_TYPE = {
-	plating: "FALLOUT.APPAREL.plating",
 	armor: "FALLOUT.APPAREL.armor",
+	plating: "FALLOUT.APPAREL.plating",
 };
 
 FALLOUT.SETTLEMENT_ITEM_ICONS = {
@@ -288,30 +308,60 @@ FALLOUT.WEAPON_QUALITIES = {
 	mine: "FALLOUT.WEAPONS.weaponQuality.mine",
 	night_vision: "FALLOUT.WEAPONS.weaponQuality.night_vision",
 	parry: "FALLOUT.WEAPONS.weaponQuality.parry",
+	placed: "FALLOUT.WEAPONS.weaponQuality.placed",
+	recoil_x: "FALLOUT.WEAPONS.weaponQuality.recoil_x",
 	recon: "FALLOUT.WEAPONS.weaponQuality.recon",
 	reliable: "FALLOUT.WEAPONS.weaponQuality.reliable",
 	slow_load: "FALLOUT.WEAPONS.weaponQuality.slow_load",
 	suppressed: "FALLOUT.WEAPONS.weaponQuality.suppressed",
+	surge: "FALLOUT.WEAPONS.weaponQuality.surge",
 	thrown: "FALLOUT.WEAPONS.weaponQuality.thrown",
 	two_handed: "FALLOUT.WEAPONS.weaponQuality.two_handed",
 	unreliable: "FALLOUT.WEAPONS.weaponQuality.unreliable",
 	unstable_radiation: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation",
 };
 
+FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {
+	bows: "agi",
+};
+
 FALLOUT.WEAPON_SKILLS = {
 	bigGuns: "Big Guns",
+	bows: "Athletics",
 	energyWeapons: "Energy Weapons",
 	explosives: "Explosives",
 	meleeWeapons: "Melee Weapons",
 	smallGuns: "Small Guns",
 	throwing: "Throwing",
 	unarmed: "Unarmed",
-	creatureAttack: "Melee",
+};
+
+FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE = {
+	bigGuns: "body",
+	bows: "body",
+	energyWeapons: "body",
+	explosives: "body",
+	meleeWeapons: "body",
+	smallGuns: "body",
+	throwing: "body",
+	unarmed: "body",
+};
+
+FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL = {
+	bigGuns: "guns",
+	bows: "guns",
+	energyWeapons: "guns",
+	explosives: "melee",
+	meleeWeapons: "melee",
+	smallGuns: "guns",
+	throwing: "guns",
+	unarmed: "melee",
 };
 
 FALLOUT.WEAPON_TYPES = {
 	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
-	creatureAttack: "FALLOUT.WEAPONS.weaponType.creatureAttack",
+	bows: "FALLOUT.WEAPONS.weaponType.bows",
+	custom: "FALLOUT.WEAPONS.weaponType.custom",
 	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
 	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",
@@ -319,6 +369,20 @@ FALLOUT.WEAPON_TYPES = {
 	throwing: "FALLOUT.WEAPONS.weaponType.throwing",
 	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
+
+export async function discoverAvailableAmmoTypes() {
+	const ammo = await fallout.compendiums.ammo();
+
+	CONFIG.FALLOUT.AMMO_BY_UUID = {};
+	let ammoTypes = [];
+	for (const ammoType of ammo) {
+		ammoTypes.push(ammoType.name);
+		CONFIG.FALLOUT.AMMO_BY_UUID[ammoType.uuid] = ammoType.name;
+	}
+	ammoTypes = [...new Set(ammoTypes)]; // de-dupe
+
+	CONFIG.FALLOUT.AMMO_TYPES = ammoTypes.sort((a, b) => a.localeCompare(b));
+}
 
 export async function generateEnrichedTooltips() {
 	CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS = {};

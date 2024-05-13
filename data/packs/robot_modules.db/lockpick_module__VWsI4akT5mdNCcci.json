@@ -1,0 +1,24 @@
+{
+	"_id": "VWsI4akT5mdNCcci",
+	"_key": "!items!VWsI4akT5mdNCcci",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+	"name": "Lockpick Module",
+	"system": {
+		"cost": 5,
+		"description": "<p>In addition to a catalogue of locking mechanisms and their known weaknesses and configurations, this module refits a manipulator claw with a hidden set of locksmith&rsquo;s tools in an articulated mount, allowing the robot to pick locks without needing to handle tools directly.</p>",
+		"effect": "<p>Reduce the difficulty of Lockpick tests by 1 (min. 0), Does not need bobby pins or other lockpicking tools</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"perks": "",
+		"quantity": 1,
+		"rarity": 2,
+		"source": "core_rulebook",
+		"stashed": false,
+		"weight": -5
+	},
+	"type": "robot_mod"
+}

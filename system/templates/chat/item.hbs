@@ -70,7 +70,7 @@
 			{{{listWeaponQualities damage.weaponQuality}}}
 		</p>
 		<p>
-			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE_EFFECTS"}}:</strong>
+			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Damage_Effects"}}:</strong>
 			{{{listDamageEffects damage.damageEffect}}}
 		</p>
 	{{/if}}
@@ -78,7 +78,7 @@
 
 	<!-- * APPAREL * -->
 	{{#if isApparel}}
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong><span>{{fromConfig "APPAREL_TYPES" appareltype}}</span></p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong><span>{{fromConfig "APPAREL_TYPES" apparelType}}</span></p>
 		<p><strong class="upperC">{{localize "FALLOUT.equipped"}}: </strong>{{equipped}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>
 		{{#each location as |location key|}}
@@ -91,9 +91,9 @@
 			<li>{{resistance}} {{localize (concat "FALLOUT.RESISTANCE." key)}} <i class="fo-{{key}}"></i></li>
 		{{/each}}
 		</ul>
-		{{#if (eq appareltype "powerArmor")}}
+		{{#if (eq apparelType "powerArmor")}}
 		<p><strong class="upperC">{{localize "FALLOUT.HEALTH.health"}}: </strong>{{health.value}} / {{health.max}} </p>
-		<p><strong class="upperC">{{localize "FALLOUT.powered"}}: </strong>{{powered}} </p>
+		<p><strong class="upperC">{{localize "FALLOUT.powered"}}: </strong>{{powerArmor.powered}} </p>
 		{{/if}}
 	{{/if}}
 
@@ -110,7 +110,7 @@
 
 	<!-- * APPAREL MODS -->
 	{{#if isApparelMod}}
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}: </strong>{{fromConfig "APPAREL_TYPES" appareltype}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}: </strong>{{fromConfig "APPAREL_TYPES" apparelType}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </strong> </p>
 		<ul>
 			{{#each resistance as |resistance key|}}
@@ -157,7 +157,7 @@
 
 	<!-- * BOOKS -->
 	{{#if isBook}}
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Issue"}}: </strong>{{issue}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Publication"}}: </strong>{{publication}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Learned"}}: </strong>{{learned}}</p>
 	{{/if}}
 
@@ -170,7 +170,7 @@
 
 	<!-- * ROBOT ARMOR -->
 	{{#if isRobotArmor}}
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." appareltype)}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Armor_Type"}}: </strong>{{localize (concat "FALLOUT.APPAREL." apparelType)}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.equipped"}}: </strong>{{equipped}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Locations"}}: </strong>
 		{{#each location as |location key|}}

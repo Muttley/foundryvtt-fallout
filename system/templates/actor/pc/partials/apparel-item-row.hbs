@@ -1,5 +1,11 @@
-<li class="item apparel" data-item-id="{{item._id}}">
-	<div class=" flexrow">
+<li
+	class="item apparel"
+	{{#if item.system.powerArmor.frameId}}
+		data-item-attached="{{item.system.powerArmor.frameId}}"
+	{{/if}}
+	data-item-id="{{item._id}}"
+>
+	<div class="flexrow">
 		<div class="item-name flexlarge expandable-info">
 			<div class="item-image">
 				<img
@@ -10,13 +16,21 @@
 				/>
 			</div>
 			<h4 class="resource-label">
+				{{#if item.system.powerArmor.frameId}}
+					&nbsp;
+					<i
+						class="fa-solid fa-plug"
+						data-tooltip="{{localize 'FALLOUT.Item.PowerArmor.AttachedToFrame'}}"
+					></i>
+					&nbsp;
+				{{/if}}
 				{{item.name}}
 			</h4>
 		</div>
 		<div class="flexrow flexlarge item-info align-mid">
-			{{#ifCond item.system.appareltype '===' 'powerArmor'}}
+			{{#ifCond item.system.apparelType '===' 'powerArmor'}}
 				<a
-					{{#if item.system.powered}}
+					{{#if item.system.powerArmor.powered}}
 						class="text-center item-control item-powered"
 					{{else}}
 						class="text-center item-control item-powered item-unpowered"

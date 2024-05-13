@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 20,
 		"description": "<p><span class=\"fontstyle0\">Hard-boiled eggs stuffed with a spicy filling, which were preserved and sealed for freshness before the Great War.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 0,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 0,
 		"weight": 0

@@ -1,4 +1,4 @@
-import { SYSTEM_ID } from "./config.mjs";
+import { FalloutModuleArtConfig } from "./apps/FalloutModuleArtConfig.mjs";
 
 export default function registerSettings() {
 	// -------------------
@@ -30,31 +30,35 @@ export default function registerSettings() {
 	});
 
 	// -----------------
+	//  DYNAMIC ARTWORK
+	// -----------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "moduleArtConfiguration", {
+		name: "Module-provided Art",
+		label: "Configure Art",
+		hint: "Configure which module-provided art should be used",
+		icon: "fa-solid fa-palette",
+		type: FalloutModuleArtConfig,
+		restricted: true,
+	});
+
+
+	game.settings.register(SYSTEM_ID, "moduleArtConfiguration", {
+		name: "Module Art Configuration",
+		scope: "world",
+		config: false,
+		type: Object,
+		default: {
+			fallout: {
+				items: true,
+			},
+		},
+	});
+
+	// -----------------
 	//  PUBLIC SETTINGS
 	// -----------------
 	//
-	game.settings.register(SYSTEM_ID, "skillsCompendium", {
-		name: "Skills Compendium",
-		hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
-		scope: "world",
-		config: true,
-		default: "fallout.skills",
-		type: String,
-	});
-
-
-	game.settings.register(SYSTEM_ID, "hoversJsonLocation", {
-		name: "Mouse Hover JSON file",
-		hint: "Location of the json file containing the text for qualities and damage effects.",
-		scope: "world",
-		config: true,
-		default: "systems/fallout/assets/hovers.json",
-		type: String,
-		filePicker: true,
-		restricted: true,
-		requiresReload: true,
-	});
-
 	game.settings.register(SYSTEM_ID, "gmMomentumShowToPlayers", {
 		name: "Show Overseer AP To Players",
 		hint: "Shows the Overseer's AP window to everyone. Requires refresh on the players side.",
@@ -82,6 +86,71 @@ export default function registerSettings() {
 		type: Boolean,
 	});
 
+	game.settings.register(SYSTEM_ID, "applyWearAndTearToWeaponDamage", {
+		name: "Apply Wear and Tear to Weapon Damage",
+		hint: "Automatically decrease weapon damage dice by the amount of Wear and Tear on the weapon. Weapons become broken if their Base Damage, minus any Wear and Tear, is reduced to zero.",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
+
+	game.settings.register(SYSTEM_ID, "syncConditionsWithWorldClock", {
+		name: "Sync Conditions with World Clock",
+		hint: "If enabled player Hunger, Thirst and Rested conditions will be synced with game time. For this to work fully you must have installed/enabled a 3rd party world time module, such as Simple Calendar, which can be used to adjust the game time.  Otherwise time will only be advanced by the Party Sleep tool.",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
+
+	game.settings.register(SYSTEM_ID, "maxConditionCheckTimeJump", {
+		name: "Max Time Jump (hours)",
+		hint: "If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time.",
+		scope: "world",
+		config: true,
+		default: 13,
+		type: Number,
+	});
+
+	game.settings.register(SYSTEM_ID, "conditionsSkipMissingPlayers", {
+		name: "Conditions Skip Missing Players",
+		hint: "Skip characters owned by players who are not logged in when changing party condition levels.",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
+
+	game.settings.register(SYSTEM_ID, "useVariableInitiative", {
+		name: "Use Variable Initiative",
+		hint: "If enabled the Variable Initiative method as detailed in the Gamemaster's Guide will be used instead of the base game's fixed initiative method.",
+		scope: "world",
+		config: true,
+		default: false,
+		type: Boolean,
+		requiresReload: true,
+	});
+
+	// ----------------
+	//  SOURCE FILTERS
+	// ----------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "sources", {
+		name: "Source Filter",
+		hint: "If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums. Items with no Source set will always be included.",
+		label: "Configure Source Filter",
+		icon: "fa-solid fa-book",
+		type: fallout.apps.SourceFilterSettings,
+		restricted: true,
+	});
+	fallout.apps.SourceFilterSettings.registerSetting();
+
+
+	// -----------------------------------
+	//  HOMEBREW / CUSTOMISATION SETTINGS
+	// -----------------------------------
+	//
 	game.settings.register(SYSTEM_ID, "carryUnit", {
 		name: "Weight unit",
 		hint: "The weight calculation formula will be different depending on the unit chosen",
@@ -126,6 +195,33 @@ export default function registerSettings() {
 		requiresReload: true,
 	});
 
+	game.settings.register(SYSTEM_ID, "disableAutoXpTarget", {
+		name: "Disable Auto-calculated Player Level XP",
+		hint: "By default the system will auto-calculate the next level target XP for player characters based on the core rulebook.  Check this if would prefer to populate these values manually.",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: true,
+	});
+
+	game.settings.register(SYSTEM_ID, "disableAutoXpReward", {
+		name: "Disable Auto-calculated NPC XP Reward",
+		hint: "By default the system will auto-calculate the XP reward level of an NPC based on the core rulebook.  Check this if would prefer to populate these values manually.",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: true,
+	});
+
+	// ------------------
+	// GENERAL SETTINGS
+	// ------------------
+
+	// TODO Implement sourceFilters fully once background items and character
+	// creation are implemented
+	//
 	game.settings.register(SYSTEM_ID, "sourceFilters", {
 		name: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.title"),
 		hint: game.i18n.localize("FALLOUT.SETTINGS.sourceFilters.hint"),
@@ -134,6 +230,15 @@ export default function registerSettings() {
 		type: Array,
 		requiresReload: true,
 		default: [],
+	});
+
+	game.settings.register(SYSTEM_ID, "skillsCompendium", {
+		name: "Skills Compendium",
+		hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
+		scope: "world",
+		config: true,
+		default: "fallout.skills",
+		type: String,
 	});
 
 	// ----------------

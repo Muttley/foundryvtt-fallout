@@ -1,10 +1,11 @@
 <form class="{{cssClass}}" autocomplete="off">
-    {{> item/parts/item-header}}
+    {{> item/_shared-partials/header}}
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
         <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
         <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
+		<a class="item" data-tab="source">{{localize "FALLOUT.TEMPLATES.Source"}}</a>
     </nav>
 
     <section class="sheet-body">
@@ -20,5 +21,7 @@
         <div class="tab description" data-group="primary" data-tab="description">
             {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
+
+		{{> item/_shared-partials/source}}
     </section>
 </form>

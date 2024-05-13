@@ -7,11 +7,13 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Throwing Knives",
 	"system": {
-		"ammo": "",
+		"ammo": "Throwing Knife",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
 		"cost": 10,
+		"creatureAttribute": "body",
+		"creatureSkill": "guns",
 		"damage": {
 			"damageEffect": {
 				"arc": {
@@ -119,6 +121,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 1,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -134,6 +144,10 @@
 				"suppressed": {
 					"rank": 0,
 					"value": true
+				},
+				"surge": {
+					"rank": 0,
+					"value": false
 				},
 				"thrown": {
 					"rank": 0,
@@ -153,7 +167,7 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">A small, sharp knife, specially balanced for throwing. Normally made of a lightweight metal, with the grip hollowed out to reduce weight. They do little damage by themselves, but are light, quiet, and quick to handle.</span> </p>",
+		"description": "<p><span class=\"fontstyle0\">A small, sharp knife, specially balanced for throwing. Normally made of a lightweight metal, with the grip hollowed out to reduce weight. They do little damage by themselves, but are light, quiet, and quick to handle.</span></p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -168,9 +182,9 @@
 		"range": "close",
 		"rarity": 1,
 		"skill": "",
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "throwing",
 		"weight": 0
 	},

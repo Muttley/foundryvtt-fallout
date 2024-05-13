@@ -1,0 +1,86 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+	<div class="resource-row align-mid">
+		<label class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Armor_Type"}}
+			&nbsp;
+		</label>
+		<select name="system.apparelType">
+			{{#select system.apparelType}}
+				<option value="">&mdash;</option>
+				{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
+					<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
+				{{/each}}
+			{{/select}}
+		</select>
+	</div>
+
+	<hr />
+
+	<div class="grid grid-3col">
+		<div class="locations pad-5">
+			<h4 class="resource-header">
+				{{localize "FALLOUT.TEMPLATES.Locations"}}
+			</h4>
+			{{#each system.location as |isChecked key|}}
+				<div class="location flexrow align-mid">
+					<label class="checkbox-label">
+						{{localize (concat 'FALLOUT.BODYLOCATION.character.' key)}}
+					</label>
+					<input
+						class="input-checkbox"
+						data-dtype="Boolean"
+						name="system.location.{{key}}"
+						type="checkbox"
+						{{checked isChecked}}
+					/>
+				</div>
+			{{/each}}
+		</div>
+
+		<div class="resistances pad-5">
+			<h4 class="resource-header">
+				{{localize "FALLOUT.TEMPLATES.Resistances"}}
+			</h4>
+			{{#each system.resistance as |resistance key|}}
+				<div class="flexrow resource-row align-mid">
+					<label
+						class="capitalized"
+						for="system.resistance.{{key}}"
+					>
+						{{localize (concat 'FALLOUT.RESISTANCE.'key)}}
+					</label>
+					<input
+						class="num-short-2"
+						data-dtype="Number"
+						name="system.resistance.{{key}}"
+						type="number"
+						value="{{resistance}}"
+					/>
+				</div>
+			{{/each}}
+		</div>
+
+		<div class="equipped pad-5">
+			<h4 class="resource-header">
+				{{localize "FALLOUT.TEMPLATES.GENERAL"}}
+			</h4>
+
+			<div class="flexrow resource-row align-mid">
+				<label class="capitalized checkbox-label">
+					{{localize "FALLOUT.equipped"}}
+				</label>
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.equipped"
+					type="checkbox"
+					{{checked system.equipped}}
+				/>
+			</div>
+
+			{{#ifCond system.apparelType '===' 'powerArmor'}}
+				{{> item/apparel/_partials/power-armor}}
+			{{/ifCond}}
+		</div>
+	</div>
+</div>

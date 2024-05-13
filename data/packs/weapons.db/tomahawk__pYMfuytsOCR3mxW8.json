@@ -7,11 +7,13 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Tomahawk",
 	"system": {
-		"ammo": "",
+		"ammo": "Tomahawk",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
 		"cost": 15,
+		"creatureAttribute": "body",
+		"creatureSkill": "guns",
 		"damage": {
 			"damageEffect": {
 				"arc": {
@@ -119,6 +121,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 1,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -134,6 +144,10 @@
 				"suppressed": {
 					"rank": 0,
 					"value": true
+				},
+				"surge": {
+					"rank": 0,
+					"value": false
 				},
 				"thrown": {
 					"rank": 0,
@@ -153,7 +167,7 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">A small, short-handled axe, akin to a small hatchet. Less subtle than a throwing knife, a hurled tomahawk can certainly make an impression in an enemy.</span> </p>",
+		"description": "<p><span class=\"fontstyle0\">A small, short-handled axe, akin to a small hatchet. Less subtle than a throwing knife, a hurled tomahawk can certainly make an impression in an enemy.</span></p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -168,9 +182,9 @@
 		"range": "close",
 		"rarity": 2,
 		"skill": "",
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "throwing",
 		"weight": 0
 	},

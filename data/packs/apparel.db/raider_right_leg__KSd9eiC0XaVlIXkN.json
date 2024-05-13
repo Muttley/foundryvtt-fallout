@@ -7,11 +7,9 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Raider Right Leg",
 	"system": {
-		"appareltype": "powerArmor",
-		"armorType": "",
+		"apparelType": "powerArmor",
 		"cost": 75,
-		"damaged": "",
-		"description": "",
+		"description": "<p>Makeshift armor pieces made from scrap metal and salvaged Power Armor parts too damaged to undergo proper repair. Due to the improvised nature of its design, raider Power Armor is relatively weak compared to its fully functional counterparts.</p>\n<p>Each piece of Raider Power Armor can accept two mods: an upgrade mod and a system mod. All Unique Raider Power Upgrade Mods are installed with the Repair Skill.</p>\n<p>Raider Power Armor can make use of all the normal system mods (p.144) except for Tesla Arms, and may also use the following system mod which is installed with the Repair Skill:</p>\n<ul>\n<li><strong>Unique Raider Power Armor Upgrade Mods:</strong> Raider II</li>\n<li><strong>Unique Raider Power Armor System Mod:</strong> Welded Rebar</li>\n</ul>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -32,15 +30,13 @@
 		"mods": {
 			"current": 0,
 			"list": "",
-			"max": 0
+			"max": 2
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": "",
 		"quantity": 1,
 		"rarity": 2,
 		"resistance": {
@@ -48,8 +44,7 @@
 			"physical": 4,
 			"radiation": 7
 		},
-		"source": "",
-		"special": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 17
 	},

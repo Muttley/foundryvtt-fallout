@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 69,
 		"description": "<p><span class=\"fontstyle0\">A large egg laid by a deathclaw. Dangerous to obtain, as deathclaws lay them and hatch from them, but potentially valuable as they can be used in a few recipes which produce highly nutritious food.</span></p>\n<p><span class=\"fontstyle0\">A deathclaw egg is a key ingredient in deathclaw omelettes.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 3,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 0,
 		"weight": 0

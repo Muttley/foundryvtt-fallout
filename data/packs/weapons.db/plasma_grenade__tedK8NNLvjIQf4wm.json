@@ -7,11 +7,13 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Plasma Grenade",
 	"system": {
-		"ammo": "",
+		"ammo": "Plasma Grenade",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
 		"cost": 135,
+		"creatureAttribute": "body",
+		"creatureSkill": "melee",
 		"damage": {
 			"damageEffect": {
 				"arc": {
@@ -119,6 +121,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 1,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -132,6 +142,10 @@
 					"value": false
 				},
 				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"surge": {
 					"rank": 0,
 					"value": false
 				},
@@ -153,7 +167,7 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">A canister containing chemicals which are rapidly transformed into superheated ionized gas&mdash;or plasma&mdash;upon detonation. The blast of a plasma grenade generates vast amounts of heat which more than makes up for the lack of shrapnel or concussive shockwaves.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong> </span><span class=\"fontstyle0\">Plasma grenades inflict both physical and energy damage. Roll damage as normal, and then reduce the total by whichever of the target&rsquo;s damage resistances is lower out of Physical or Energy.</span> <br><br></p>",
+		"description": "<p><span class=\"fontstyle0\">A canister containing chemicals which are rapidly transformed into superheated ionized gas&mdash;or plasma&mdash;upon detonation. The blast of a plasma grenade generates vast amounts of heat which more than makes up for the lack of shrapnel or concussive shockwaves.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong> </span><span class=\"fontstyle0\">Plasma grenades inflict both physical and energy damage. Roll damage as normal, and then reduce the total by whichever of the target&rsquo;s damage resistances is lower out of Physical or Energy.</span></p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -168,9 +182,9 @@
 		"range": "medium",
 		"rarity": 3,
 		"skill": "",
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "explosives",
 		"weight": 0
 	},

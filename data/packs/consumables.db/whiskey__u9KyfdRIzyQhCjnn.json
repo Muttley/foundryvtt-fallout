@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A triple-distilled alcoholic beverage made using grain mash. Pre-War versions were created across the United States and beyond. Some wasteland distilleries exist producing post-War versions using corn and razorgrain.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 3,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 1,
 		"weight": 1

@@ -9,7 +9,7 @@
 	"system": {
 		"description": "<p>You increase the difficulty of all <strong>AGI</strong> tests by +1, and suffer +1 @fos[DC] additional damage from all physical attacks whenever you are not under the effects of Med-X.</p>",
 		"favorite": false,
-		"source": ""
+		"source": "core_rulebook"
 	},
 	"type": "addiction"
 }

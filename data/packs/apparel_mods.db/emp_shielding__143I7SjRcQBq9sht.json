@@ -3,7 +3,7 @@
 	"_key": "!items!143I7SjRcQBq9sht",
 	"effects": [
 	],
-	"folder": "e7NADGE4ZuOSX2mA",
+	"folder": "mMrg0X7SR8UJDXyE",
 	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
 	"name": "EMP Shielding",
 	"system": {
@@ -26,7 +26,7 @@
 			"physical": 0,
 			"radiation": 0
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 1
 	},

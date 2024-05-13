@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 9,
 		"description": "<p><span class=\"fontstyle0\">A small, sweetened pastry or baked confection normally made as a treat for children or people who need a bit of cheering up.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 1,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 0,
 		"weight": 0

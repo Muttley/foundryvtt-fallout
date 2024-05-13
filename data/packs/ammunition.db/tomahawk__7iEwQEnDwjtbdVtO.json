@@ -1,0 +1,26 @@
+{
+	"_id": "7iEwQEnDwjtbdVtO",
+	"_key": "!items!7iEwQEnDwjtbdVtO",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Tomahawk",
+	"system": {
+		"cost": 15,
+		"description": "<p>A small, short-handled axe, akin to a small hatchet. Less subtle than a throwing knife, a hurled tomahawk can certainly make an impression in an enemy.</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"quantityRoll": "1",
+		"rarity": 2,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "core_rulebook",
+		"stashed": false,
+		"weight": 0.7
+	},
+	"type": "ammo"
+}

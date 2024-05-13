@@ -1,0 +1,192 @@
+{
+	"_id": "ppzmY6xo2f66TmMC",
+	"_key": "!items!ppzmY6xo2f66TmMC",
+	"effects": [
+	],
+	"folder": "wuijs0qVP74GkECb",
+	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"name": "Laser Emitter",
+	"system": {
+		"ammo": "Fusion Cell",
+		"ammoPerShot": 1,
+		"attribute": "",
+		"condition": "",
+		"cost": 69,
+		"creatureAttribute": "body",
+		"creatureSkill": "guns",
+		"damage": {
+			"damageEffect": {
+				"arc": {
+					"rank": 0,
+					"value": false
+				},
+				"breaking": {
+					"rank": 0,
+					"value": false
+				},
+				"burst": {
+					"rank": 0,
+					"value": false
+				},
+				"freeze": {
+					"rank": 0,
+					"value": false
+				},
+				"persistent": {
+					"rank": 0,
+					"value": false
+				},
+				"piercing_x": {
+					"rank": 1,
+					"value": true
+				},
+				"radioactive": {
+					"rank": 0,
+					"value": false
+				},
+				"spread": {
+					"rank": 0,
+					"value": false
+				},
+				"stun": {
+					"rank": 0,
+					"value": false
+				},
+				"vicious": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"damageType": {
+				"energy": true,
+				"physical": false,
+				"poison": false,
+				"radiation": false
+			},
+			"rating": 3,
+			"weaponQuality": {
+				"accurate": {
+					"rank": 0,
+					"value": false
+				},
+				"ammo_hungry_x": {
+					"rank": 1,
+					"value": false
+				},
+				"blast": {
+					"rank": 0,
+					"value": false
+				},
+				"bombard": {
+					"rank": 0,
+					"value": false
+				},
+				"close_quarters": {
+					"rank": 0,
+					"value": true
+				},
+				"concealed": {
+					"rank": 0,
+					"value": false
+				},
+				"debilitating": {
+					"rank": 0,
+					"value": false
+				},
+				"delay_x": {
+					"rank": 1,
+					"value": false
+				},
+				"gatling": {
+					"rank": 0,
+					"value": false
+				},
+				"inaccurate": {
+					"rank": 0,
+					"value": false
+				},
+				"limited": {
+					"rank": 0,
+					"value": false
+				},
+				"mine": {
+					"rank": 0,
+					"value": false
+				},
+				"night_vision": {
+					"rank": 0,
+					"value": false
+				},
+				"parry": {
+					"rank": 0,
+					"value": false
+				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 0,
+					"value": false
+				},
+				"recon": {
+					"rank": 0,
+					"value": false
+				},
+				"reliable": {
+					"rank": 0,
+					"value": false
+				},
+				"slow_load": {
+					"rank": 0,
+					"value": false
+				},
+				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"surge": {
+					"rank": 0,
+					"value": false
+				},
+				"thrown": {
+					"rank": 0,
+					"value": false
+				},
+				"two_handed": {
+					"rank": 0,
+					"value": false
+				},
+				"unreliable": {
+					"rank": 0,
+					"value": false
+				},
+				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				}
+			}
+		},
+		"description": "<p><strong>Arm Attachment:</strong> You can cut objects or make ranged attacks using a laser (see laser gun, p.101).</p>\n<p>Laser guns are high-tech weapons which emit a concentrated beam of coherent, directional light, intense enough to inflict serious damage. They were a relatively new development in the years before the Great War, and thus are not an especially common sight in the wasteland, outside of those groups who&rsquo;ve secured old military weapons caches. Most surviving models of laser gun&mdash;such as the dependable AER9, widely used by the U. S. Army&mdash;use an internal capacitor charged by a microfusion power cell.</p>\n<p>The default profile is for a laser pistol. A laser gun can accept one each of the following mods. Any Stock mods change the weapon to a laser rifle.</p>\n<ul>\n<li><strong>Capacitor:</strong> Photon Exciter, Beta Wave Tuner, Boosted Capacitor, Photon Agitator</li>\n<li><strong>Barrel:</strong> Long Barrel, Automatic Barrel, Sniper Barrel, Improved Barrel</li>\n<li><strong>Grip:</strong> Sharpshooter&rsquo;s Grip</li>\n<li><strong>Stock:</strong> Standard Stock, Marksman&rsquo;s Stock, Recoil Compensating Stock</li>\n<li><strong>Sights:</strong> Reflex Sight, Short Scope, Long Scope, Short Night Vision Scope, Long Night Vision Scope, Recon Scope</li>\n<li><strong>Muzzle:</strong> Beam Splitter, Beam Focuser, Gyro Compensating Lens</li>\n</ul>\n<p>&nbsp;</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"fireRate": 2,
+		"melee": false,
+		"mods": {
+			"current": 0,
+			"list": "",
+			"max": 6
+		},
+		"quantity": 1,
+		"range": "close",
+		"rarity": 2,
+		"skill": "",
+		"source": "core_rulebook",
+		"stashed": false,
+		"tear": 0,
+		"weaponType": "energyWeapons",
+		"weight": 4
+	},
+	"type": "weapon"
+}

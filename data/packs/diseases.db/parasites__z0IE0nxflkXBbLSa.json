@@ -1,0 +1,16 @@
+{
+	"_id": "z0IE0nxflkXBbLSa",
+	"_key": "!items!z0IE0nxflkXBbLSa",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Parasites",
+	"system": {
+		"description": "<p>Halves time at each step of hunger track</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

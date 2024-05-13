@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 30,
 		"description": "<p><span class=\"fontstyle0\">Largely a slang term for high-proof distilled spirits produced in illicit or makeshift manner. Due to their unorthodox and improvised origins, moonshine can be dangerous to consume, often contaminated with dangerous chemicals. The stuff that doesn&rsquo;t kill you&hellip; will probably render you insensible and impervious to pain if it doesn&rsquo;t knock you out entirely.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 3,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 1,
 		"weight": 0.5

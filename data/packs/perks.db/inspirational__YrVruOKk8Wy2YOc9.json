@@ -1,0 +1,22 @@
+{
+	"_id": "YrVruOKk8Wy2YOc9",
+	"_key": "!items!YrVruOKk8Wy2YOc9",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Inspirational",
+	"system": {
+		"description": "<p>Because you lead by example, the maximum number of AP the group may save is increased by 1.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "CHA 8",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

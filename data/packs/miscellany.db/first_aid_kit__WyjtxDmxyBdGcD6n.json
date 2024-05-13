@@ -1,0 +1,21 @@
+{
+	"_id": "WyjtxDmxyBdGcD6n",
+	"_key": "!items!WyjtxDmxyBdGcD6n",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "First Aid Kit",
+	"system": {
+		"cost": 200,
+		"description": "<p>A pack full of bandages, antiseptic spray, and other tools useful in helping clean and bind injuries in the field. First aid kits also often come with Stimpaks and RadAway, but these are used and tracked separately</p>",
+		"effect": "<p>Heal +2 HP upon succeeding at the First Aid action</p>",
+		"favorite": false,
+		"quantity": 1,
+		"rarity": 2,
+		"source": "core_rulebook",
+		"stashed": false,
+		"weight": 4
+	},
+	"type": "miscellany"
+}

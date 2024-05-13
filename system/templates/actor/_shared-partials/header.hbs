@@ -70,25 +70,37 @@
                 </div>
             </div>
 
-            <div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
-                <div>
-                    <label class="label">
-						<strong>{{localize "FALLOUT.TEMPLATES.Luck"}}</strong>
-					</label>
-                    <label style="font-size: 12px; padding-left: 10px;">
-						{{localize "FALLOUT.TEMPLATES.Points"}}
-					</label>
-                </div>
-                <div class="special-number">
-                    <input
-						name="system.luckPoints"
-						style="font-size: 22px;"
-						type="number"
-						value="{{system.luckPoints}}"
-                        min="0"
-					>
-                </div>
-            </div>
+			{{#if isCreature}}
+				<div></div>
+			{{else}}
+				<div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
+					<div>
+						{{#if isPlayerCharacter}}
+							<a
+								class="availability-roll"
+								data-tooltip="{{localize 'FALLOUT.AvailabilityRoll.tooltip'}}"
+							>
+								<i class="fa-light fa-hand-fingers-crossed fa-lg"></i>
+							</a>
+						{{/if}}
+						<label class="label">
+							<strong>{{localize "FALLOUT.TEMPLATES.Luck"}}</strong>
+						</label>
+						<label style="font-size: 12px; padding-left: 10px;">
+							{{localize "FALLOUT.TEMPLATES.Points"}}
+						</label>
+					</div>
+					<div class="special-number">
+						<input
+							name="system.luckPoints"
+							style="font-size: 22px;"
+							type="number"
+							value="{{system.luckPoints}}"
+							min="0"
+						>
+					</div>
+				</div>
+			{{/if}}
 
             <div class="flexrow grid-span-2" style="font-size:12px">
                 {{#if (or (eq actor.type "character") (eq actor.type "robot"))}}
@@ -122,15 +134,17 @@
 							{{localize "FALLOUT.LEVEL.NextXP"}}
 						</label>
 
-						<div class="resource-content flexrow flex-center flex-between">
+						<div class="resource-content flexrow flex-center flex-between" style="width: 70%;">
 							<input
 								class="underline"
 								data-dtype="Number"
-								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 								name="system.level.nextLevelXP"
 								type="text"
 								value="{{system.level.nextLevelXP}}"
-								disabled
+								{{#unless disableAutoXpTarget}}
+									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+									disabled
+								{{/unless}}
 							/>
 						</div>
 					</div>
@@ -142,15 +156,17 @@
 						>
 							{{localize "FALLOUT.LEVEL.RewardXP"}}
 						</label>
-						<div class="resource-content flexrow flex-center flex-between">
+						<div class="resource-content flexrow flex-center flex-between" style="width: 85%">
 							<input
 								class="underline"
 								data-dtype="Number"
-								data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 								name="system.level.rewardXP"
 								type="text"
 								value="{{system.level.rewardXP}}"
-								disabled
+								{{#unless disableAutoXpReward}}
+									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+									disabled
+								{{/unless}}
 							/>
 						</div>
 					</div>

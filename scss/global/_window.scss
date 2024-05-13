@@ -17,15 +17,6 @@
 	font-size: 11px;
 }
 
-// .rollable {
-// 	&:hover,
-// 	&:focus {
-// 		color: #000;
-// 		text-shadow: 0 0 10px #b4ff06;
-// 		cursor: pointer;
-// 	}
-// }
-
 .chat-message {
 	background-image: url(../assets/chat/rec-paper.webp);
 }
@@ -39,11 +30,6 @@
 
 .fallout-chat-message {
 	.content {
-		// background-color: rgb(255, 255, 255);
-		// background-image: url(../assets/chat/rec-paper.webp);
-		// background-size:cover;
-		// background-repeat: no-repeat;
-		//border: 1px solid;
 		padding: 5px;
 		h2 {
 			border: none;
@@ -104,7 +90,7 @@
 			color: rgb(0, 0, 0);
 			font-weight: bold;
 			text-align: center;
-			//-webkit-text-stroke: 1px rgb(255, 255, 255);
+
 			&.d20 {
 				background-image: url(../assets/chat/d20-white.svg);
 				&.complication {
@@ -332,23 +318,27 @@
 	}
 }
 
-// a.inline-roll.roll {
-//     background: #6aa0d8;
-//     padding: 1px 4px;
-//     border: 1px solid #3a5884;
-//     border-radius: 2px;
-//     white-space: nowrap;
-//     word-break: break-all;
-//     color: #fffab6;
-//     font-weight: 500;
+.fake-uuid-link {
+	background: #DDD;
+	padding: 1px 4px;
+	border: 1px solid var(--color-border-dark-tertiary);
+	margin: 4px;
+	border-radius: 2px;
+	white-space: nowrap;
+	word-break: break-all;
 
+	&:hover {
+		cursor: auto;
+		text-shadow: none;
+	}
+}
 
-// 	&:hover {
-// 		text-shadow: 0 0 10px #b5cfe9;
-// 	}
+.delete-choice {
+	color: darkred;
 
-// 	i {
-// 		color: #3a5884;
-// 	}
-// }
-
+	&:hover {
+		text-shadow: 0 0 4px red;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}

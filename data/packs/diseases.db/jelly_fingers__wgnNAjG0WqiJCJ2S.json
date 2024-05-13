@@ -1,0 +1,16 @@
+{
+	"_id": "wgnNAjG0WqiJCJ2S",
+	"_key": "!items!wgnNAjG0WqiJCJ2S",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Jelly Fingers",
+	"system": {
+		"description": "<p>Attempting a ranged attack requires spending 1 AP</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

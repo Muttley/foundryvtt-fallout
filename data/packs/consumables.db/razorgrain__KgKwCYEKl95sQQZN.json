@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A tall, fast-growing grass similar to wheat, which can be ground down to make flour for making bread and other staple foods.</span></p>\n<p><span class=\"fontstyle0\">Razorgrain is an ingredient in a few recipes.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 1,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 0,
 		"weight": 0

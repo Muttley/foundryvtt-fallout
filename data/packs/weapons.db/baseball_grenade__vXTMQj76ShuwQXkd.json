@@ -7,11 +7,13 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Baseball Grenade",
 	"system": {
-		"ammo": "",
+		"ammo": "Baseball Grenade",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
 		"cost": 40,
+		"creatureAttribute": "body",
+		"creatureSkill": "melee",
 		"damage": {
 			"damageEffect": {
 				"arc": {
@@ -119,6 +121,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 1,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -132,6 +142,10 @@
 					"value": false
 				},
 				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"surge": {
 					"rank": 0,
 					"value": false
 				},
@@ -153,7 +167,7 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">Little more than a hollowed-out baseball filled with an improvised explosive mixture, these grenades are crude, low-tech, and easy to make, dealing a moderate amount of damage to those within the blast.</span> </p>",
+		"description": "<p><span class=\"fontstyle0\">Little more than a hollowed-out baseball filled with an improvised explosive mixture, these grenades are crude, low-tech, and easy to make, dealing a moderate amount of damage to those within the blast.</span></p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -168,11 +182,11 @@
 		"range": "medium",
 		"rarity": 1,
 		"skill": "",
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "explosives",
-		"weight": 1
+		"weight": 0
 	},
 	"type": "weapon"
 }

@@ -11,6 +11,7 @@
 @import "global/window";
 @import "global/grid";
 @import "global/flex";
+@import "global/buttons";
 @import "components/aptracker";
 
 /* Styles limited to fallout sheets */
@@ -19,4 +20,9 @@
 	@import "components/resource";
 	@import "components/items";
 	@import "components/effects";
+}
+
+.fallout.sheet.item {
+	min-height: 560px;
+	min-width: 580px;
 }

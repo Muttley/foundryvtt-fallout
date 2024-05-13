@@ -1,3 +1,266 @@
+# v11.10.0
+
+## Enhancement
+- [#334] Add a setting to consumables to specify the amount of rad damage CD that are rolled when consuming it
+- [#348] Improve the way Power Armor is handled on the sheets
+
+	* You can now optionally attach Power Armor items to a base "Armor Frame" item (this can be found in the core compendiums).
+	* This is done by editing the frame item and using the Frame tab to select/deselect which power armor items owned by the actor are attached.
+	* The frame and any attached items will be grouped together at the top of the inventory section, and each attached piece will show a "plug" icon to show they attached to a base frame.
+	* All attached items will also share Power, Equipped and Stashed settings so that using these controls on any item in the group will modify the value on all items.
+
+- [#367] Add option to automatically reduce weapon damage by wear and tear rate and refuse to fire if broken
+
+	* New option called "Apply Wear and Tear to Weapon Damage" added and is enabled by default.  This will automatically reduce the damage of a weapon by the amount of wear and tear, and a weapon will become unusable once the base damage is reduced to zero by wear and tear.
+
+- [#370] Allow posting items to chat even if they're not currently editable (for example, locked compendium items)
+- [#371] Reduce interface clutter by only showing the current damage of a weapon
+- [#373] Make the favourite weapons list more readable by moving the damage type into the additional data
+- [#375] Stashing an item in your inventory should also unequip it
+- [#376] Equipping an item in your inventory should also unstash it
+- [#377] Provide a built in Macro to open the Scavenging Help web tool
+
+## Bugs
+- [#356] Laser Gun Damage Value Incorrect
+- [#365] Typo in description of all Grognak the Barbarian magazines
+- [#368] 10mm Auto Pistol price and weight wrong
+- [#369] Weapon Wear & Tear should be a numeric value
+
+	* The upgrade process will attempt to migrate existing values, but if a non-empty, non-numeric string is found will default to a value of 1
+
+- [#372] Available ammo for a weapon missing from favourite and main weapons list
+
+## Chore
+- [#357] Ensure there are no compatibility issues with Foundry V12
+- [#358] globalThis.mergeObject must now be accessed via foundry.utils.mergeObject
+- [#359] globalThis.duplicate must now be accessed via foundry.utils.duplicate
+- [#360] The {{select}} handlebars helper is deprecated
+- [#361] globalThis.randomID must now be accessed via foundry.utils.randomID
+- [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances
+- [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES
+- [#364] The async option for Roll#evaluate has been removed
+
+*Many thanks to **Erik H** for kindly allowing us to link to his scavenging help tool.*
+
+---
+
+# v11.9.4
+
+## Enhancent
+- [#352] Add the ability to easily adjust an NPC's calculated Carry Weight on the NPC sheet
+
+## Bugs
+- [#347] Availability Roll trigger not available on Robot character sheet
+- [#350] Don't show the Luck points field on Creatures as they don't have them
+- [#351] NPC has no default max HP set
+
+---
+
+# v11.9.3
+
+## Enhancements
+- [#343] Add additional logging around compendium filtering to help with debugging issues
+
+## Chores
+- [#342] Merge French translation updates from Crowdin
+
+---
+
+# v11.9.2
+
+## Bugs
+- [#339] Source filtering not working correctly
+
+# v11.9.1
+
+## Bugs
+- [#336] Sleep processing fails due to error in player online checks
+
+---
+
+# v11.9.0
+
+## Enhancements
+- [#182] Allow weapons to be configured to use custom skills
+
+	* A new "Custom" weapon type has been added which when selected allows you to specify which skill to use, and optionally override the attribute to be used with that skill.  In order to become available for selection custom skills must exist in a compendium.
+
+- [#256] Add a setting to select what compendium items are auto-retrieved from
+
+	* In the settings you can now specify which book sources should be used by the system when pulling items from the compendiums for all sections of the interface which do this.
+
+- [#275] Add the ability to make an availability luck roll from the character sheet
+
+	* This is triggered by clicking the cross-fingers icon in the Luck section of the character sheet header, and it will roll using your Luck SPECIAL score.
+
+- [#294] Add option to use Variable Initiative
+
+	* Currently this cannot handle any situational advantage that the Gamemaster may give to one side or the other, so if needed this will have to be handled manually.
+
+- [#311] Add weapon ranges to character/npc/creature sheets
+- [#316] Add ability to quickly search and add filtered items from compendiums to an Actor sheet
+
+	* Each Item section on character now has a new control icon (magnifying glass) which when clicked will open a list of Items from all compendiums, filtered by the specific type for the section.  You can start typing the name of the item you wish to add in the input, and it will filter anything that matches.
+	Selecting one of these items from the list will add it to the Actor's inventory.
+
+- [#317] Add Diseases item compendium (20 items)
+- [#324] On all items add ability to specify which source book they came from
+- [#325] Add the ability to add custom book sources via module flags
+
+	* The example Fallout custom data module has been updated with an example of how to add new sources to your own content modules: https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.1.0
+
+## Bugs
+- [#267] Actors should not take radiation damage from consumables if they are immune, and if not immune the amount of rads taken should be adjusted by an actor's base resistance.
+- [#320] Food item deleted or quantity reduced even though unable to eat as full
+
+## Chores
+- [#310] Merge French translation updates from Crowdin
+- [#313] Remove unused armorType field from apparel item schema
+- [#314] Rename appareltype field in apparel item schema to apparelType for field name consistency purposes
+- [#315] Rename appareltype field in robot_armor item schema to apparelType for field name consistency purposes
+
+---
+
+# v11.8.1
+
+## Bugs
+- [#307] Update release to latest compedium data
+
+---
+
+# v11.8.0
+
+## Enhancements
+- [#283] Display Fire Rate outside of Weapon Item
+- [#290] Default new character SPECIAL to 5 as those are the defaults for character creation
+- [#300] Automatically detect that a weapon is owned by a Creature and not an NPC to simplify configuration
+- [#303] Improve error feedback when trying to use a misconfigured weapon
+
+## Bugs
+- [#291] Remove bogus "Boxing Times (Copy)" from compendiums
+- [#302] Creature Attribute and Creature Skill weapon settings can appear configured when they're not
+
+## Chores
+- [#289] Merge Polish translation updates from Crowdin
+- [#292] Merge French translation updates from Crowdin
+- [#299] Merge German translation updates from Crowdin
+
+*Many thanks to VTTom for their work on the German translations which now have 100% coverage at time of writing.*
+
+---
+
+# v11.7.0
+
+## Enhancements
+- [#269] Add ability to map your own images onto core compendium items
+
+An example custom module which is pre-configured with various empty compendiums and set up for item image mapping can be downloaded from here:
+
+https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.0.0
+
+This can be used to help bootstrap your own custom data for Fallout.
+
+---
+
+# v11.6.1
+
+## Enhancements
+- [#280] Cache available Ammo items in compendiums at startup to improve performance on slow systems with large amounts of compendium items
+	* This will mean that if you add a new ammo item type it won't be available on Weapon item sheets until the system is reloaded.
+
+---
+
+# v11.6.0
+
+## Enhancements
+- [#244] Add support for Minion NPC type
+- [#254] Creature & NPC Poison DR can have locational values
+	* The system will attempt to migrate existing Poison DR values, but as it was a free text field and there is no way of knowing the format people have used, it is advisable to check all NPC/Creature NPCs to ensure the Poison DR values are correct.
+- [#255] Add shortcuts to fill whole DR column at once for Creatures / NPCs who have the same DR for all locations
+- [#273] Add Salvage TN field to Creature sheets and rename Gear tab to Salvage
+
+## Bugfixes
+- [#258] Typo on weapons mod tab
+- [#260] Custom skill name localization failing and only displaying "FALLOUTUTILS" instead of name
+- [#266] Attacking with Fire Rate does not work properly with ammunition charges
+- [#270] Well Rested bonus causes issues with setting current health value
+
+## Chores
+- [#259] Merged French translation updates from Crowdin
+- [#262] Merged French and Polish translation updates from Crowdin
+
+---
+
+# v11.5.0
+
+## Enhancements
+- [#222] Add Butchery section to Creature sheet
+- [#227] Added 10mm Auto Pistol, Buzz-Saw, Flamer, Laser Emitter and Pincer robot arm attachment weapons
+- [#229] Add ammo items for thrown and explosive weapons
+- [#232] When adding a new item to a actor sheet with the add controls, auto-open the newly created item for editing
+- [#233] Make weapon ammo a select option from available ammo types in compendiums
+- [#234] Add draggable item shortcut for configured ammo on weapon sheet
+- [#238] Tidy up the caps display on NPC sheets
+- [#239] Add location to specify Wealth level on NPC sheet
+- [#240] Make it easy to roll Caps owned from an NPC's Wealth rating
+- [#241] Move weapon Qualities/Effects to their own tab
+- [#245] Show the hover tooltips for Weapon Qualities and Damage Effects on all sheets and chat messages
+- [#248] Add ability to specify quantity roll formula on Ammo items
+- [#249] Add ability to roll new Ammo quantities directly from the Ammo item sheet
+
+## Bugfixes
+- [#225] Weapon Qualities and Damage Effects not showing number in chat
+- [#226] Bows using STR attribute when they should use AGI
+- [#231] Default item sheet width needs to be wider as Quantity label wrapping
+- [#236] Actor sheets containing items with NaN values for quantity or weight break encumbrance display and calculation
+- [#237] Magazines chat message not displaying the Publication and still displaying which Issue
+- [#247] No icon to consume consumables
+
+## Chores
+- Merged various i18n changes from Crowdin
+
+---
+
+# v11.4.3
+
+## Enhancements
+- [#220] Default Character, Robot and Settlement actor types to have linked actor data by default
+
+## Bugfixes
+- [#221] Sort owned items on Creature/NPC sheets
+
+## Chores
+- [#218] Merged i18n changes from Crowdin
+
+---
+
+# v11.4.2
+
+## Enhancements
+- [#213] Add ability to toggle Radiation and Poison immunity on character and NPC sheets by clicking the Radiation or Poison icon in the resistance section character sheets.
+
+## Bugfixes
+- [#212] Missing material consumables: Asbestos, Bloatfly Gland, Blood Sac, Bloodleaf, Glowing Fungus, Hubflower, Radscorpion Stinger, Stingwing Barb
+- [#216] Don't show "undefined" if an out of date Weapon Quality or Damage Effect still exists in Weapon item
+
+---
+
+# v11.4.1
+
+## Enhancements
+- [#197] Added new Bows weapon category
+
+## Bugfixes
+- [#196] Added missing Placed, Recoil and Surge weapon qualities
+- [#198] Apparel Missing Info
+- [#199] Soups, Stews and Noodle Cup missing thirst reduction value
+- [#202] Craftable foods missing the Prepared flag
+- [#203] Raider Armor missing individual pieces
+- [#204] Apparel that can have the Ballistic Weave mod have max mod set to "0" instead of "1"
+- [#205] All Power Armor pieces are missing descriptions
+
+---
+
 # v11.4.0
 
 ## Enhancements
@@ -13,16 +276,49 @@
 - [#145] Add new Weapon Qualities from Fallout Wanderer's Guide
 - [#149] Add default icons for all item types
 - [#150] Add new default tokens for all actor types
+- [#151] Add compendiums containing items from the core rulebook
 - [#152] Added Addiction item compendium (12 items)
 - [#153] Added Ammunition item compendium (20 items)
 - [#154] Added Apparel item compendium (161 items)
 - [#155] Added Apparel Mods item compendium (161 items)
 - [#156] Added Books and Magazines item compendium (95 items)
 - [#157] Added Consumable item compendium (137 items)
+- [#158] Create Perks item compendium (190 items)
 - [#161] Added Trait item compendium (10 items)
 - [#162] Added Weapons item compendium (68 items)
 - [#163] Added Weapon Mods item compendium (145 items)
-- [#171] Add new text enricher to detect +/-nCD or +/-nDc (where +/- is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
+- [#169] Allow settlement job assignment numbers to be modified by Active Effects
+
+	* The following keys can be used to adjust the number of job assignments in a settlement:
+		~~~
+		system.assignments.build
+		system.assignments.business
+		system.assignments.guard
+		system.assignments.hunting_and_gathering
+		system.assignments.scavenging
+		system.assignments.tend_crops
+		system.assignments.trade_caravan
+		system.assignments.unnasigned
+		~~~
+
+- [#171] Add new text enricher to detect `+/-nCD` or `+/-nDC` (where `+/-` is an optional symbol, and `n` is a number) and format the string with the Combat Dice icon
+- [#172] Added Miscellany item compendium (19 items)
+- [#178] Added Robot Modules item compendium (13 items)
+- [#186] Create GM interface for triggering party sleep durations.  This can be launched with the new `Party Sleep (GM)` macro provided
+- [#188] Automatic condition tracker tied to World time
+
+	* When enabled in the system settings, Character's belonging to players will have their Hunger, Thirst and Sleep values adjusted automatically based on the passing with time in the world. **NOTE:** Your players will *really* have to be on the ball with managing their food & drink resources with this enabled
+	* Without any modules installed, only the Party Sleep tool will advance world time
+	* If you have the Simple Calendar (or similar) module installed, the GM can adjust world time and have the character's condition statuses update following the core rules (p.190)
+	* There are three new system settings that can be used to adjust this behaviour:
+
+		- **Sync Conditions with World Clock**: This enables you to toggle on/off the automatic condition updates
+		- **Max Time Jump (hours)**: If the game time changes by more than this amount of hours in one step, then ignore it and set the last Hunger, Thirst and Sleep timestamps to the new time. This ensures that no unexpected spikes in Fatigue are added to characters
+		- **Conditions Skip Missing Players**: If this is checked, only characters who's player owner is current online and logged in will have their conditions adjusted
+
+	* **NOTE:** There is currently no automation around any diseases that adjust the condition time steps. This will hopefully be added at a later date
+
+- [#191] Give ability to disable automatic XP calculation for people who wish to homebrew the level break points
 
 ## Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials
@@ -33,10 +329,10 @@
 ## Chores
 - [#174] Tidy up Weapon Quality and Damage Effect data in schema
 - [#175] Retire the hovers.json facility as we are allowed to have this information in the i18n files for use in tooltips
-
 	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
+- [#184] Deprecate the "Mouse Hover JSON file" setting
 
-*Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook.*
+*Many thanks to Modiphius for allowing the inclusion of player facing item compendiums which contain various classes of item from the core rulebook. Thanks to their generosity the system now comes with compendiums containing 1031 items from the core rulebook.*
 
 ---
 

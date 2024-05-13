@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">Water, collected from rivers, lakes, swimming pools, and any other unfiltered water source. It&rsquo;s not recommended to drink dirty water without filtering or boiling it, as it contains a fair amount of radiation&hellip; but water is scarce in some places and the choice of clean water isn&rsquo;t always available.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 0,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 1,
 		"weight": 0.5

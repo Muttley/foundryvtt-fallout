@@ -1,3 +1,4 @@
+import { conditionTrackerHook } from "../hooks/conditionTrackerHook.mjs";
 import { hotbarDropHook } from "../hooks/hotbarDropHook.mjs";
 import { initiativeHooks } from "../hooks/initiativeHooks.mjs";
 import { preCreateItemHook } from "../hooks/preCreateItemHook.mjs";
@@ -11,6 +12,7 @@ export const FalloutHooks = {
 		fallout.logger.debug("Attaching hooks");
 
 		const listeners = [
+			conditionTrackerHook,
 			hotbarDropHook,
 			initiativeHooks,
 			preCreateItemHook,

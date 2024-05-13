@@ -4,7 +4,7 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			submitOnChange: true,
 		});
 	}
@@ -209,7 +209,10 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	async _prepareItems(context) {
 		context.settlers = [];
-		context.settlerActionCounts = {
+
+		const assignments = foundry.utils.duplicate(this.actor.system.assignments ?? {});
+
+		context.settlerActionCounts = foundry.utils.mergeObject({
 			build: 0,
 			business: 0,
 			guard: 0,
@@ -218,7 +221,7 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 			tend_crops: 0,
 			trade_caravan: 0,
 			unnasigned: 0,
-		};
+		}, assignments);
 
 		context.stockpile = [];
 		context.stockpileUsed = 0;

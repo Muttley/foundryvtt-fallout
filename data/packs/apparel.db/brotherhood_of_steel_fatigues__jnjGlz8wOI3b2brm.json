@@ -7,10 +7,8 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Brotherhood of Steel Fatigues",
 	"system": {
-		"appareltype": "outfit",
-		"armorType": "",
+		"apparelType": "outfit",
 		"cost": 20,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A set of basic, hard-wearing gear for Brotherhood of Steel personnel, consisting of a military sweater, pants, gloves, combat boots, and military webbing, and emblazoned with Brotherhood insignia denoting rank and role. The color of the uniform also denotes certain specializations: medics wear a version with a white sweater, while flight personnel wear navy blue.</span></p>\n<p><span class=\"fontstyle0\">Though not intended for use in combat, these fatigues are hardwearing and resilient enough to provide a little protection against hazards.</span> </p>",
 		"equippable": true,
 		"equipped": false,
@@ -34,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": "",
 		"quantity": 1,
 		"rarity": 3,
 		"resistance": {
@@ -48,8 +44,7 @@
 			"physical": 2,
 			"radiation": 2
 		},
-		"source": "",
-		"special": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 4
 	},

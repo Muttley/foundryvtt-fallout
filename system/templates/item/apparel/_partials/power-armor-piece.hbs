@@ -1,0 +1,53 @@
+<li class="item apparel" data-item-id="{{item._id}}">
+	<div class=" flexrow">
+		<div class="item-name flexlarge expandable-info">
+			<div class="item-image">
+				<img
+					src="{{item.img}}"
+					title="{{item.name}}"
+					width="24"
+					height="24"
+				/>
+			</div>
+			<h4 class="resource-label">
+				{{item.name}}
+			</h4>
+		</div>
+		<div class="flexrow flexlarge item-info align-mid">
+			<div class="text-center flex2">
+				&nbsp;
+				{{#each item.system.location as |hasLoc loc|}}
+					<span class="font-size-11">
+						{{#ifCond hasLoc '==' true}}
+							{{localize (concat "FALLOUT.BODYLOCATION_ABBR.character." loc)}}
+							&nbsp;
+						{{/ifCond}}
+					</span>
+				{{/each}}
+			</div>
+			<div class="text-center flex2">
+				&nbsp;
+				{{#each item.system.resistance as |resValue res|}}
+					<span>
+						<i class="{{damageFaIconClass res}}" title="{{res}}"></i>
+						{{resValue}}
+						&nbsp;
+					</span>
+				{{/each}}
+			</div>
+		</div>
+		<div class="item-controls">
+			<a
+				{{#ifCond item.system.powerArmor.frameId "!==" ""}}
+					class="item-control item-attach"
+					data-tooltip="{{localize 'FALLOUT.Item.PowerArmor.Attached'}}"
+				{{else}}
+					class="item-control item-attach item-unattached"
+					data-tooltip="{{localize 'FALLOUT.Item.PowerArmor.Attach'}}"
+				{{/ifCond}}
+			>
+				<i class="fa-solid fa-plug"></i>
+			</a>
+		</div>
+	</div>
+</li>

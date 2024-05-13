@@ -23,7 +23,7 @@
 {{#*inline "powerArmorHealth"}}
 	<div class="body-part {{key}}">
 		<label>
-			{{#ifCond location.system.appareltype '===' 'powerArmor'}}
+			{{#ifCond location.system.apparelType '===' 'powerArmor'}}
 				{{location.system.health.max}}
 			{{/ifCond}}
 		</label>
@@ -33,7 +33,7 @@
 			data-item-id="{{location._id}}"
 			min="0"
 			type="number"
-			{{#ifCond location.system.appareltype '===' 'powerArmor'}}
+			{{#ifCond location.system.apparelType '===' 'powerArmor'}}
 				value="{{location.system.health.value}}"
 			{{else}}
 				value=""

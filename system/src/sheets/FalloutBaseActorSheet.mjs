@@ -11,10 +11,10 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
 			width: 780,
-			height: 940,
+			height: 970,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",
@@ -66,6 +66,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			effects: prepareActiveEffectCategories(this.actor.effects),
 			FALLOUT: CONFIG.FALLOUT,
 			hasCategory: ["creature", "npc"].includes(this.actor.type),
+			isPlayerCharacter: ["character", "robot"].includes(this.actor.type),
 			isCharacter: this.actor.type === "character",
 			isCreature: this.actor.type === "creature",
 			isNPC: this.actor.type === "npc",
@@ -83,6 +84,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		};
 
 		await this._prepareItems(context);
+		await this._prepareMaterials(context);
 
 		// Biography HTML enrichment
 		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
@@ -104,6 +106,10 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 	async _prepareItems(context) {
 		context.itemsByType = {};
 
+		if (this.actor.isCreature) {
+			context.butcheryItems = [];
+		}
+
 		// Different Actor types require specific inventory sections which
 		// are filtered from the full list of items
 		//
@@ -119,14 +125,41 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		//
 		context.inventory = [];
 
-		for (const i of context.items) {
+		for (const i of context.actor.items) {
 			i.img = i.img || DEFAULT_TOKEN;
 
 			// Make sure Robots can't equip Character armor, and vice-versa
 			//
 			i.canBeEquipped = i.system.equippable ?? false;
 			if (i.type === "apparel" && this.actor.isRobot) i.canBeEquipped = false;
+
+			if (i.type === "consumable" && this.actor.isCreature) {
+				if (i.system.butchery) {
+					context.butcheryItems.push(i);
+					continue;
+				}
+			}
+
 			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
+
+			if (i.type === "skill") {
+				i.localizedName = fallout.utils.getLocalizedSkillName(i);
+				i.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(i);
+			}
+
+			if (i.type === "weapon") {
+				const weapon = this.actor.items.find(item => item._id === i._id);
+				i.currentWeaponDamage = weapon.currentWeaponDamage;
+				i.shotsAvailable = weapon.shotsAvailable;
+
+				i.damageTooltip = await renderTemplate(
+					"systems/fallout/templates/ui/weapon-damage-tooltip.hbs",
+					{
+						actor: this.actor,
+						item: i,
+					}
+				);
+			}
 
 			// Skip moving this into its own section if it's not going to be
 			// separated into a specific inventory section
@@ -223,14 +256,63 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * CLICK TO EXPAND
 		html.find(".expandable-info").click(async event => this._onItemSummary(event));
 
+		html.find(".immune-toggle").click(this._onImmunityToggle.bind(this));
+
 		// * Add Inventory Item
 		html.find(".item-create").click(this._onItemCreate.bind(this));
+
+		html.find(
+			".find-from-compendium"
+		).each((i, el) => {
+			el.title = game.i18n.localize("FALLOUT.Form.SelectCompendiumItem.tooltip");
+		});
+		html.find(".find-from-compendium").click(this._onFindFromCompendium.bind(this));
+
+		html.find(".find-any-from-compendium").click(this._onFindAnyFromCompendium.bind(this));
 
 		// * Delete Inventory Item
 		html.find(".item-delete").click(async ev => {
 			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("itemId"));
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			if (item.type === "apparel" && item.system.powerArmor.isFrame) {
+				const attachedItems = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === itemId
+				);
+
+				const updateData = [];
+
+				for (const attachedItem of attachedItems) {
+					updateData.push({
+						"_id": attachedItem._id,
+						"system.powerArmor.frameId": "",
+					});
+				}
+
+				if (updateData.length > 0) {
+					await Item.updateDocuments(updateData, {parent: this.actor});
+
+					if (this.actor.type === "character") {
+						this.actor._calculateCharacterBodyResistance();
+					}
+				}
+			}
+
 			await item.delete();
+
+			const frames = this.actor.items.filter(i =>
+				i.type === "apparel"
+					&& i.system.apparelType === "powerArmor"
+					&& i.system.powerArmor.isFrame
+			);
+
+			for (const frame of frames) {
+				frame.sheet.render(false);
+			}
+
 			li.slideUp(200, () => this.render(false));
 		});
 
@@ -240,111 +322,10 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			.click(ev => onManageActiveEffect(ev, this.actor));
 
 		// * ROLL WEAPON SKILL
-		html.find(".weapon-roll").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
-
-			let attribute;
-			let rollName = item.name;
-			let skill;
-			let skillName;
-
-			if (item.actor?.type === "creature") {
-				skillName = game.i18n.localize(
-					`FALLOUT.CREATURE.${item.system.skill}`
-				);
-				skill = item.actor.system[item.system.skill];
-				skill.tag = true;
-				attribute = item.actor.system[item.system.attribute];
-			}
-			else {
-				skillName = CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
-
-				let skillItem = item.actor.items.find(i => i.name === skillName);
-
-				if (skillItem) {
-					skill = skillItem.system;
-				}
-				else {
-					skill = { value: 0, tag: false, defaultAttribute: "str"};
-				}
-
-				attribute = item.actor.system.attributes[skill.defaultAttribute];
-			}
-
-			// REDUCE AMMO
-			const autoCalculateAmmo = game.settings.get(
-				"fallout", "automaticAmmunitionCalculation"
-			);
-
-			const actorCanUseAmmo =
-				["character", "robot"].includes(this.actor.type);
-
-			const ammoPopulated = item.system.ammo !== "";
-
-			if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
-				const [ammo, shotsAvailable] = await this.actor._getAvailableAmmoType(
-					item.system.ammo
-				);
-
-				if (!ammo) {
-					ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
-					return;
-				}
-
-				if (shotsAvailable < item.system.ammoPerShot) {
-					ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
-					return;
-				}
-			}
-
-			// Check for unreliable weapon quality
-			let complication = parseInt(this.actor.system.complication);
-			if (item.system.damage.weaponQuality.unreliable.value) {
-				complication -= 1;
-			}
-
-			fallout.Dialog2d20.createDialog({
-				rollName: rollName,
-				diceNum: 2,
-				attribute: attribute.value,
-				skill: skill.value,
-				tag: skill.tag,
-				complication: complication,
-				rollLocation: true,
-				actor: this.actor,
-				item: item,
-			});
-		});
+		html.find(".weapon-roll").click(async event => this._onWeaponRoll(event));
 
 		// * ROLL WEAPON DAMAGE
-		html.find(".weapon-roll-damage").click(ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
-
-			let numOfDice = parseInt(item.system.damage.rating);
-
-			if (["meleeWeapons", "unarmed"].includes(item.system.weaponType)) {
-				let damageBonus = this.actor.system?.meleeDamage?.value ?? 0;
-				numOfDice += damageBonus;
-			}
-
-			let rollName = item.name;
-
-			let actorUUID;
-			let _token = this.actor.token;
-			if (_token) actorUUID = this.actor.token.uuid;
-			else actorUUID = this.actor.uuid;
-
-			// console.warn(fromUuidSync(actorUUID).actor)
-
-			fallout.DialogD6.createDialog({
-				rollName: rollName,
-				diceNum: numOfDice,
-				actor: actorUUID,
-				weapon: item,
-			});
-		});
+		html.find(".weapon-roll-damage").click(async event => this._onWeaponDamageRoll(event));
 
 		// Drag events for macros.
 		if (this.actor.isOwner) {
@@ -385,6 +366,23 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		}
 	}
 
+	async _onImmunityToggle(event) {
+		event.preventDefault();
+		const immunityType = $(event.currentTarget).data("immunityType");
+		this.actor._toggleImmunity(immunityType);
+	}
+
+	async _onFindAnyFromCompendium(event) {
+		event.preventDefault();
+		new fallout.apps.ItemTypeMenu(this.actor).render(true);
+	}
+
+	async _onFindFromCompendium(event) {
+		event.preventDefault();
+		const itemType = event.currentTarget.dataset.type;
+		new fallout.apps.ItemSelector(this.actor, {itemType}).render(true);
+	}
+
 	/**
 	 * Handle creating a new Owned Item for the actor using initial data defined
 	 * in the HTML dataset
@@ -397,19 +395,20 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// Get the type of item to create.
 		const type = header.dataset.type;
 		// Grab any data associated with this control.
-		const data = duplicate(header.dataset);
+		const data = foundry.utils.duplicate(header.dataset);
 		// Initialize a default name.
 		const name = `New ${type.capitalize()}`;
 		// Prepare the item object.
 		const itemData = {
 			name: name,
 			type: type,
-			data: data,
+			system: data,
 		};
 		// Remove the type from the dataset since it's in the itemData.type prop.
-		delete itemData.data.type;
+		delete itemData.system.type;
 		// Finally, create the item!
-		return await Item.create(itemData, { parent: this.actor });
+		const newItem = await Item.create(itemData, { parent: this.actor });
+		if (newItem) newItem.sheet.render(true);
 	}
 
 	async _onRightClickDelete(itemId) {
@@ -473,16 +472,175 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		li.toggleClass("expanded");
 	}
 
+	async _onWeaponDamageRoll(event) {
+		const li = $(event.currentTarget).parents(".item");
+		const item = this.actor.items.get(li.data("item-id"));
+
+		const numOfDice = item.currentWeaponDamage;
+
+		if (item.isWeaponBroken) {
+			return ui.notifications.warn(
+				game.i18n.localize("FALLOUT.ERRORS.ThisWeaponIsBroken")
+			);
+		}
+
+		let rollName = item.name;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
+			weapon: item,
+		});
+	}
+
+	async _onWeaponRoll(event) {
+		const li = $(event.currentTarget).parents(".item");
+		const item = this.actor.items.get(li.data("item-id"));
+
+		if (item.isWeaponBroken) {
+			return ui.notifications.warn(
+				game.i18n.localize("FALLOUT.ERRORS.ThisWeaponIsBroken")
+			);
+		}
+
+		let attribute;
+		let rollName = item.name;
+		let skill;
+
+		if (item.isOwnedByCreature) {
+			const creatureAttribute = item.system.creatureAttribute ?? "";
+			const creatureSkill = item.system.creatureSkill ?? "";
+
+			if (creatureSkill === "" || creatureAttribute === "") {
+				return ui.notifications.warn(
+					game.i18n.localize("FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration")
+				);
+			}
+
+			attribute = item.actor.system[creatureAttribute];
+
+			skill = item.actor.system[creatureSkill];
+			skill.tag = true;
+		}
+		else {
+			const skillName = item.system.weaponType === "custom"
+				? item.system.skill ?? ""
+				: CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+
+			const customAttribute = item.system.weaponType === "custom"
+				? item.system.attribute ?? ""
+				: false;
+
+			if (skillName === "") {
+				return ui.notifications.error(
+					game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponSkill")
+				);
+			}
+
+			const skillItem = item.actor.items.find(i => i.name === skillName);
+
+			if (skillItem) {
+				skill = skillItem.system;
+			}
+			else {
+				skill = { value: 0, tag: false, defaultAttribute: "str"};
+			}
+
+			const attributeOverride = CONFIG.FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE[
+				item.system.weaponType
+			];
+
+			if (customAttribute) {
+				attribute = item.actor.system.attributes[customAttribute];
+			}
+			else if (attributeOverride) {
+				attribute = item.actor.system.attributes[attributeOverride];
+			}
+			else {
+				attribute = item.actor.system.attributes[skill.defaultAttribute];
+			}
+
+			if (!attribute) {
+				return ui.notifications.error(
+					game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponAttribute")
+				);
+			}
+		}
+
+		// REDUCE AMMO
+		const autoCalculateAmmo = game.settings.get(
+			"fallout", "automaticAmmunitionCalculation"
+		);
+
+		const actorCanUseAmmo =
+			["character", "robot"].includes(this.actor.type);
+
+		const ammoPopulated = item.system.ammo !== "";
+
+		if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
+			const [ammo, shotsAvailable] = await this.actor._getAvailableAmmoType(
+				item.system.ammo
+			);
+
+			if (!ammo) {
+				ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
+				return;
+			}
+
+			if (shotsAvailable < item.system.ammoPerShot) {
+				ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
+				return;
+			}
+		}
+
+		// Check for unreliable weapon quality
+		let complication = parseInt(this.actor.system.complication);
+		if (item.system.damage.weaponQuality.unreliable.value) {
+			complication -= 1;
+		}
+
+		fallout.Dialog2d20.createDialog({
+			rollName: rollName,
+			diceNum: 2,
+			attribute: attribute.value,
+			skill: skill.value,
+			tag: skill.tag,
+			complication: complication,
+			rollLocation: true,
+			actor: this.actor,
+			item: item,
+		});
+	}
+
+	async _prepareButcheryMaterials(context) {
+		context.butcheryMaterials = [];
+
+		for (const material of ["common", "uncommon", "rare"]) {
+			context.butcheryMaterials.push({
+				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
+				key: `system.butchery.${material}`,
+				value: this.actor.system.butchery[material] ?? 0,
+			});
+		}
+	}
+
 	async _prepareMaterials(context) {
-		context.materials = [];
+		context.inventoryMaterials = [];
+
 		for (const material of ["junk", "common", "uncommon", "rare"]) {
-			context.materials.push({
+			context.inventoryMaterials.push({
 				label: game.i18n.localize(`FALLOUT.actor.inventory.materials.${material}`),
 				key: `system.materials.${material}`,
 				value: this.actor.system.materials[material] ?? 0,
 			});
 		}
 	}
-
-
 }

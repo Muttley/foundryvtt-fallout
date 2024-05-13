@@ -7,10 +7,8 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Medium Dog Armor",
 	"system": {
-		"appareltype": "armor",
-		"armorType": "",
+		"apparelType": "armor",
 		"cost": 15,
-		"damaged": "",
 		"description": "<p>Characters who have taken the Dogmeat perk (p.63) are accompanied by a trusted canine companion, and they&rsquo;ll probably want to protect Man&rsquo;s Best Friend from the dangers of the wasteland.</p>",
 		"equippable": true,
 		"equipped": false,
@@ -34,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": "",
 		"quantity": 1,
 		"rarity": 2,
 		"resistance": {
@@ -48,8 +44,7 @@
 			"physical": 2,
 			"radiation": 0
 		},
-		"source": "",
-		"special": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 2
 	},

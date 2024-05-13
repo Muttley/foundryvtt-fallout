@@ -1,0 +1,35 @@
+{
+	"_id": "xQxEHsZuVRSR1yeB",
+	"_key": "!items!xQxEHsZuVRSR1yeB",
+	"effects": [
+	],
+	"folder": "OFqB0R4AxJwkje7w",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Asbestos",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"butchery": false,
+		"consumableGroup": "",
+		"consumableType": "other",
+		"cost": 6,
+		"description": "",
+		"duration": "instant",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"radiationDamage": 1,
+		"rarity": 0,
+		"source": "core_rulebook",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 0.1
+	},
+	"type": "consumable"
+}

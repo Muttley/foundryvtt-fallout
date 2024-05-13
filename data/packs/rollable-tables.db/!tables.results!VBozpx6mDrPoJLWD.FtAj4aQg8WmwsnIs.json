@@ -1,0 +1,14 @@
+{
+	"_id": "FtAj4aQg8WmwsnIs",
+	"_key": "!tables.results!VBozpx6mDrPoJLWD.FtAj4aQg8WmwsnIs",
+	"documentId": null,
+	"drawn": false,
+	"img": "icons/svg/d20-black.svg",
+	"range": [
+		18,
+		20
+	],
+	"text": "Right Leg",
+	"type": "text",
+	"weight": 1
+}

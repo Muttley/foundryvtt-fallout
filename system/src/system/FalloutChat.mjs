@@ -12,6 +12,8 @@ export default class FalloutChat {
 			mode = game.settings.get("core", "rollMode");
 		}
 
+		const messageStyles = fallout.utils.getMessageStyles();
+
 		const chatData = {
 			user: game.user.id,
 			speaker: ChatMessage.getSpeaker({
@@ -19,15 +21,17 @@ export default class FalloutChat {
 			}),
 			rollMode: mode,
 			content: html,
-			type: CONST.CHAT_MESSAGE_TYPES.OTHER,
+			type: messageStyles.OTHER,
 		};
 
-		if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-			chatData.whisper = ChatMessage.getWhisperRecipients("GM");
-		}
-		else if (chatData.rollMode === "selfroll") {
-			chatData.whisper = [game.user];
-		}
+		ChatMessage.applyRollMode(chatData, mode);
+
+		// if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
+		// 	chatData.whisper = ChatMessage.getWhisperRecipients("GM");
+		// }
+		// else if (chatData.rollMode === "selfroll") {
+		// 	chatData.whisper = [game.user];
+		// }
 
 		await ChatMessage.create(chatData);
 	}
@@ -39,9 +43,23 @@ export default class FalloutChat {
 		);
 	}
 
+	static async renderConditionChangeMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/condition-change.hbs",
+			mode
+		);
+	}
+
 	static async renderConsumptionMessage(actor, data, mode) {
 		this._renderChatMessage(actor, data,
 			"systems/fallout/templates/chat/consumption.hbs",
+			mode
+		);
+	}
+
+	static async renderPartySleepMessage(data, mode) {
+		this._renderChatMessage(null, data,
+			"systems/fallout/templates/chat/party-sleep.hbs",
 			mode
 		);
 	}
@@ -82,6 +100,7 @@ export default class FalloutChat {
 				}
 				else if (falloutRoll.diceFace === "d6") {
 					fallout.Roller2D20.rerollD6({
+						actor: message.flags.actor,
 						dicesRolled: falloutRoll.dicesRolled,
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,

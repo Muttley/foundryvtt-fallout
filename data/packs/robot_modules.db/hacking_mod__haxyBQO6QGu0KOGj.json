@@ -1,0 +1,24 @@
+{
+	"_id": "haxyBQO6QGu0KOGj",
+	"_key": "!items!haxyBQO6QGu0KOGj",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/robot_mod.svg",
+	"name": "Hacking Mod",
+	"system": {
+		"cost": 25,
+		"description": "<p>In addition to a library of decryption software and known software flaws, the hacking module fits the robot with an external interface jack, allowing them to connect directly to a computer and interface with it directly. Ideal for robots whose manipulator claws are poorly suited to operating a keyboard.</p>",
+		"effect": "<p>Reduces the difficulty of Science tests to hack into locked computer systems by 1 (min. 0)</p>",
+		"equippable": true,
+		"equipped": false,
+		"favorite": false,
+		"perks": "",
+		"quantity": 1,
+		"rarity": 2,
+		"source": "core_rulebook",
+		"stashed": false,
+		"weight": 0
+	},
+	"type": "robot_mod"
+}

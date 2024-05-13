@@ -27,7 +27,7 @@ export class DialogD6 extends Dialog {
 						? 0
 						: this.weapon.system.damage.rating;
 
-					additionalAmmo = this.checkAmmo(diceNum, initDmg);
+					additionalAmmo = await this.checkAmmo(diceNum, initDmg);
 
 					if (additionalAmmo < 0) return;
 				}
@@ -109,7 +109,7 @@ export class DialogD6 extends Dialog {
 		d.render(true);
 	}
 
-	checkAmmo(diceNum, initDmg) {
+	async checkAmmo(diceNum, initDmg) {
 		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
 
 		if (!this.actor) return 0;
@@ -131,9 +131,12 @@ export class DialogD6 extends Dialog {
 
 		if (_actor.type !== "character" && _actor.type !== "robot") return 0;
 
-		const ammo = _actor.items.find(i => i.name === this.weapon.system.ammo);
+		const [ammoItems, shotsAvailable] =
+			await _actor._getAvailableAmmoType(
+				this.weapon.system.ammo
+			);
 
-		if (!ammo) {
+		if (!ammoItems) {
 			ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`);
 			return -1;
 		}
@@ -148,7 +151,8 @@ export class DialogD6 extends Dialog {
 		if (this.weapon.system.damage.weaponQuality.gatling.value) {
 			additionalAmmo = Math.floor(additionalAmmo * 0.5);
 		}
-		if (parseInt(ammo.system.quantity)<additionalAmmo) {
+
+		if (shotsAvailable < additionalAmmo) {
 			ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`);
 			return -1;
 		}

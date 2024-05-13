@@ -7,11 +7,13 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Pulse Grenade",
 	"system": {
-		"ammo": "",
+		"ammo": "Pulse Grenade",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"condition": "",
 		"cost": 100,
+		"creatureAttribute": "body",
+		"creatureSkill": "melee",
 		"damage": {
 			"damageEffect": {
 				"arc": {
@@ -119,6 +121,14 @@
 					"rank": 0,
 					"value": false
 				},
+				"placed": {
+					"rank": 0,
+					"value": false
+				},
+				"recoil_x": {
+					"rank": 1,
+					"value": false
+				},
 				"recon": {
 					"rank": 0,
 					"value": false
@@ -132,6 +142,10 @@
 					"value": false
 				},
 				"suppressed": {
+					"rank": 0,
+					"value": false
+				},
+				"surge": {
 					"rank": 0,
 					"value": false
 				},
@@ -153,7 +167,7 @@
 				}
 			}
 		},
-		"description": "<p><span class=\"fontstyle0\">Pulse grenades emit a burst of electromagnetism which inflicts massive damage to machines&mdash;such as robots, synths, and Power Armor&mdash;within the vicinity, while leaving living creatures unharmed.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Pulse grenades only inflict damage to robots, synths, Power Armor (though not the wearer within) and other mechanical or technological targets. Any computers in the blast are also damaged by the grenade. Against any other target, Pulse grenades inflict 0 damage.</span> <br><br></p>",
+		"description": "<p><span class=\"fontstyle0\">Pulse grenades emit a burst of electromagnetism which inflicts massive damage to machines&mdash;such as robots, synths, and Power Armor&mdash;within the vicinity, while leaving living creatures unharmed.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Pulse grenades only inflict damage to robots, synths, Power Armor (though not the wearer within) and other mechanical or technological targets. Any computers in the blast are also damaged by the grenade. Against any other target, Pulse grenades inflict 0 damage.</span></p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
@@ -168,9 +182,9 @@
 		"range": "medium",
 		"rarity": 3,
 		"skill": "",
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "explosives",
 		"weight": 0
 	},

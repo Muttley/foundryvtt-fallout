@@ -1,0 +1,16 @@
+{
+	"_id": "7ogFbul957uLnNx0",
+	"_key": "!items!7ogFbul957uLnNx0",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Shell Shock",
+	"system": {
+		"description": "<p>Whenever you suffer an Injury, lose 1 AP from the group pool (if possible)</p>",
+		"duration": "3",
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

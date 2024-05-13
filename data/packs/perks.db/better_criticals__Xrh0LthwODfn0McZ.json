@@ -1,0 +1,22 @@
+{
+	"_id": "Xrh0LthwODfn0McZ",
+	"_key": "!items!Xrh0LthwODfn0McZ",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Better Criticals",
+	"system": {
+		"description": "<p>When you inflict one or more points of damage to an enemy, you may spend 1 Luck Point to automatically inflict a critical hit, causing an injury.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "LCK 9",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

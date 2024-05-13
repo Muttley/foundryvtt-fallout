@@ -1,0 +1,35 @@
+{
+	"_id": "PCTsMsjBtQzvc1aD",
+	"_key": "!items!PCTsMsjBtQzvc1aD",
+	"effects": [
+	],
+	"folder": "OFqB0R4AxJwkje7w",
+	"img": "systems/fallout/assets/icons/items/consumable.svg",
+	"name": "Radstag Hide",
+	"system": {
+		"addiction": 0,
+		"addictive": false,
+		"alcoholic": false,
+		"butchery": true,
+		"consumableGroup": "",
+		"consumableType": "other",
+		"cost": 8,
+		"description": "",
+		"duration": "instant",
+		"effect": "",
+		"favorite": false,
+		"group": "",
+		"hp": 0,
+		"irradiated": false,
+		"prepared": false,
+		"quantity": 1,
+		"radiation": 0,
+		"radiationDamage": 1,
+		"rarity": 0,
+		"source": "core_rulebook",
+		"stashed": false,
+		"thirstReduction": 0,
+		"weight": 2
+	},
+	"type": "consumable"
+}

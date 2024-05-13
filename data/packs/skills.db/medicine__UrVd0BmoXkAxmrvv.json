@@ -10,7 +10,7 @@
 		"defaultAttribute": "int",
 		"description": "<p>Medicine is the skill that covers all medical application and knowledge, from first aid to pharmacology, surgery, and healing radiation poisoning.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Intelligence</strong>, but you might use Agility to perform surgery, or Charisma to counsel a companion. You use Medicine to stabilize your companions in combat, and help heal their injuries.</p>",
 		"favorite": false,
-		"source": "",
+		"source": "core_rulebook",
 		"summary": "",
 		"tag": false,
 		"value": 0

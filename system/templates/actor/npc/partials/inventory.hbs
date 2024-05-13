@@ -1,9 +1,26 @@
 <div class="resource-row">
 	<ol class="items-list">
-		<li class="item consumable flexrow items-header">
-			<div class="flexrow flexlarge item-name upperC">
-				{{localize 'FALLOUT.UI.INVENTORY'}}
-			</div>
+		<li class="consumable flexrow items-header">
+			{{#if isCreature}}
+				<div class="flexrow flexlarge item-name upperC">
+					{{localize 'FALLOUT.TEMPLATES.Salvage'}}
+					&nbsp;&nbsp;
+					<input
+						class="num-short-2"
+						data-dtype="Number"
+						data-tooltip="{{localize 'FALLOUT.TEMPLATES.SalvageTooltip'}}"
+						min="0"
+						name="system.salvage.tn"
+						style="color: unset; height: auto;"
+						type="number"
+						value="{{system.salvage.tn}}"
+					>
+				</div>
+			{{else}}
+				<div class="flexrow flexlarge item-name upperC">
+					{{localize 'FALLOUT.UI.INVENTORY'}}
+				</div>
+			{{/if}}
 			<div class="item-controls">
 				<a
 					class="item-control item-create"
@@ -13,28 +30,10 @@
 					<i class="fas fa-plus"></i>
 					{{localize 'FALLOUT.UI.Add'}}
 				</a>
+				<a class="find-any-from-compendium">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</a>
 			</div>
-		</li>
-		<li>
-			<span
-				class="flex align-mid"
-				style="flex-basis: 200px; margin-bottom: 5px;"
-			>
-				<label
-					style="color:white"
-					class="upperC"
-				>
-					<strong>
-						{{localize 'FALLOUT.UI.CAPS'}}:
-					</strong>
-				</label>
-				<input
-					type="text"
-					class="underline"
-					name="system.currency.caps"
-					value="{{system.currency.caps}}"
-				>
-			</span>
 		</li>
 		{{#each inventory}}
 			{{>

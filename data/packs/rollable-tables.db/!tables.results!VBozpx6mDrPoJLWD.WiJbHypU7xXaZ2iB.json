@@ -1,0 +1,14 @@
+{
+	"_id": "WiJbHypU7xXaZ2iB",
+	"_key": "!tables.results!VBozpx6mDrPoJLWD.WiJbHypU7xXaZ2iB",
+	"documentId": null,
+	"drawn": false,
+	"img": "icons/svg/d20-black.svg",
+	"range": [
+		1,
+		2
+	],
+	"text": "Head",
+	"type": "text",
+	"weight": 1
+}

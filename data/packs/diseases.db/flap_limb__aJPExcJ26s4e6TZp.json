@@ -1,0 +1,16 @@
+{
+	"_id": "aJPExcJ26s4e6TZp",
+	"_key": "!items!aJPExcJ26s4e6TZp",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Flap Limb",
+	"system": {
+		"description": "<p>STR tests suffer +1 difficulty</p>",
+		"duration": 4,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

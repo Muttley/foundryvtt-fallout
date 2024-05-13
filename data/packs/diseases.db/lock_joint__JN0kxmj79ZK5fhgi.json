@@ -1,0 +1,16 @@
+{
+	"_id": "JN0kxmj79ZK5fhgi",
+	"_key": "!items!JN0kxmj79ZK5fhgi",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/disease.svg",
+	"name": "Lock Joint",
+	"system": {
+		"description": "<p>Attempting a melee attack requires spending 1 AP</p>",
+		"duration": 1,
+		"favorite": false,
+		"source": "core_rulebook"
+	},
+	"type": "disease"
+}

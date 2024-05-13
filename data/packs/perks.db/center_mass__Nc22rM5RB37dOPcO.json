@@ -1,0 +1,22 @@
+{
+	"_id": "Nc22rM5RB37dOPcO",
+	"_key": "!items!Nc22rM5RB37dOPcO",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Center Mass",
+	"system": {
+		"description": "<p>When you make a ranged attack, you may choose to strike your target&rsquo;s Torso location (or equivalent, for creatures that use a different location table) without increasing the difficulty of the attack. In addition, you may re-roll 1d20 when making the test for your attack.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "AGI 7",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

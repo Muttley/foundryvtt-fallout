@@ -1,0 +1,22 @@
+{
+	"_id": "P3SMmJulZT5OyArI",
+	"_key": "!items!P3SMmJulZT5OyArI",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Intense Training",
+	"system": {
+		"description": "<p>Increase any one S.P.E.C.I.A.L attribute by 1 rank. As usual, your S.P.E.C.I.A.L attributes cannot be increased beyond 10 using this method. Each time you take this perk, the level requirement increases by 2.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 10,
+			"value": 0
+		},
+		"requirements": "Level 2+",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 8,
 		"description": "<p><span class=\"fontstyle0\">A liquor made from fermenting then distilling sugarcane molasses. Rum has strong historic ties to naval and maritime traditions, though there are few boats left that ply the irradiated seas, so it turns up often in coastal regions, particularly near to old harbors and ports.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 2,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 1,
 		"weight": 1

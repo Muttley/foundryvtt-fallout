@@ -10,6 +10,7 @@
 		"addiction": 2,
 		"addictive": true,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableGroup": "Buffout",
 		"consumableType": "chem",
 		"cost": 45,
@@ -23,8 +24,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 2,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 0,
 		"weight": 0.1

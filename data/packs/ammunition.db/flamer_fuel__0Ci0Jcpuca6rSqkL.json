@@ -12,12 +12,13 @@
 		"effect": "",
 		"favorite": false,
 		"quantity": 1,
+		"quantityRoll": "12+6dc",
 		"rarity": 2,
 		"shots": {
 			"current": 1,
 			"max": 1
 		},
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"type": "",
 		"weight": 0.009

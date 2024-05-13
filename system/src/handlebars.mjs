@@ -13,26 +13,33 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("listDamageEffects", function(effects) {
-		const effectsElements = [];
+		const elements = [];
 
 		for (const key in effects) {
+			if (!CONFIG.FALLOUT.DAMAGE_EFFECTS.hasOwnProperty(key)) continue;
+
 			const effect = effects[key];
 
 			if (!effect.value) continue;
 
 			let effectName = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
-			if (effect.hasRank) effectName += ` ${effect.rank}`;
+			if (effect.rank > 0) effectName += ` ${effect.rank}`;
 
-			const effectHtml =
-				`<span class="effect hover" data-key="${key}">${effectName}</span>`;
+			const tooltip = CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key];
 
-			effectsElements.push(effectHtml);
+			const resultHtml = document.createElement("span");
+			resultHtml.classList.add("effect", "hover");
+			resultHtml.dataset.key = key;
+			resultHtml.dataset.tooltip = tooltip;
+			resultHtml.innerHTML = effectName;
+
+			elements.push(resultHtml.outerHTML);
 		}
 
 		let listString = "";
 
-		if (effectsElements.length > 0) {
-			listString = effectsElements.join(",&nbsp;");
+		if (elements.length > 0) {
+			listString = elements.join(",&nbsp;");
 		}
 		else {
 			listString = "&mdash;";
@@ -42,26 +49,33 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("listWeaponQualities", function(qualities) {
-		const qualityElements = [];
+		const elements = [];
 
 		for (const key in qualities) {
+			if (!CONFIG.FALLOUT.WEAPON_QUALITIES.hasOwnProperty(key)) continue;
+
 			const quality = qualities[key];
 
 			if (!quality.value) continue;
 
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
-			if (quality.hasRank) qualityName += ` ${quality.rank}`;
+			if (quality.rank > 0) qualityName += ` ${quality.rank}`;
 
-			const effectHtml =
-				`<span class="effect hover" data-key="${key}">${qualityName}</span>`;
+			const tooltip = CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key];
 
-			qualityElements.push(effectHtml);
+			const resultHtml = document.createElement("span");
+			resultHtml.classList.add("effect", "hover");
+			resultHtml.dataset.key = key;
+			resultHtml.dataset.tooltip = tooltip;
+			resultHtml.innerHTML = qualityName;
+
+			elements.push(resultHtml.outerHTML);
 		}
 
 		let listString = "";
 
-		if (qualityElements.length > 0) {
-			listString = qualityElements.join(",&nbsp;");
+		if (elements.length > 0) {
+			listString = elements.join(",&nbsp;");
 		}
 		else {
 			listString = "&mdash;";
@@ -151,16 +165,20 @@ export default function registerHandlebarsHelpers() {
 		return CONFIG.FALLOUT[arg1][arg2] ? CONFIG.FALLOUT[arg1][arg2] : arg2;
 	});
 
+	Handlebars.registerHelper("fromSettings", function(arg1) {
+		return game.settings.get(SYSTEM_ID, arg1);
+	});
+
 	// Handlebars.registerHelper("incrementCounter", function(counter) {
 	// 	return ++counter;
 	// });
 
-	Handlebars.registerHelper("isCreaturesWeapon", function(weapon) {
-		const isCreatureAttack = weapon.system.weaponType === "creatureAttack";
-		const isCreature = weapon.actor?.type === "creature";
+	// Handlebars.registerHelper("isCreaturesWeapon", function(weapon) {
+	// 	const isCreatureAttack = weapon.system.weaponType === "creatureAttack";
+	// 	const isCreature = weapon.actor?.type === "creature";
 
-		return (isCreatureAttack || isCreature);
-	});
+	// 	return (isCreatureAttack || isCreature);
+	// });
 
 	Handlebars.registerHelper("isWeaponUsingMeleeBonus", function(weapon, actor) {
 		if ((weapon.system.weaponType === "unarmed" || weapon.system.weaponType === "meleeWeapons") &&  actor?.type !== "creature") {
@@ -214,6 +232,13 @@ export default function registerHandlebarsHelpers() {
 			str += "&nbsp;&nbsp;&nbsp;&nbsp;";
 		}
 		return str;
+	});
+
+	Handlebars.registerHelper("select", function(selected, options) {
+		const escapedValue = RegExp.escape(Handlebars.escapeExpression(selected));
+		const rgx = new RegExp(` value=["']${escapedValue}["']`);
+		const html = options.fn(this);
+		return html.replace(rgx, "$& selected");
 	});
 
 }

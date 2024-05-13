@@ -1,0 +1,22 @@
+{
+	"_id": "fMU0zfQYyhkwZ6Ck",
+	"_key": "!items!fMU0zfQYyhkwZ6Ck",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Medic",
+	"system": {
+		"description": "<p>When you use the First Aid action to try to treat an injury, you can re-roll 1d20.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "INT 8",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

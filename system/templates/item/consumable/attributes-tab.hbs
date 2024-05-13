@@ -1,0 +1,184 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+	<div class="flexrow resource-row">
+		<label for="system.consumableType" class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}
+		</label>
+		{{#select system.consumableType}}
+			<select name="system.consumableType">
+				{{#each FALLOUT.CONSUMABLE_TYPES as |type key|}}
+					<option value="{{key}}">
+						{{localize type}}
+					</option>
+				{{/each}}
+			</select>
+		{{/select}}
+	</div>
+
+	<div class="flexrow resource-row">
+		<label for="system.consumableGroup" class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Consumable_Group"}}
+		</label>
+		<input
+			name="system.consumableGroup"
+			type="text"
+			value="{{system.consumableGroup}}"
+		>
+	</div>
+
+	{{#ifCond system.consumableType '!==' 'other' }}
+		<div class="flexrow resource-row">
+			<label for="system.hp" class="resource-label">
+				{{localize "FALLOUT.TEMPLATES.HP_Healed"}}
+			</label>
+			<input
+				name="system.hp"
+				type="number"
+				value="{{system.hp}}"
+			>
+		</div>
+
+		<div class="flexrow resource-row">
+			<label for="system.radiation" class="resource-label">
+				{{localize "FALLOUT.TEMPLATES.Radiation_Healed"}}
+			</label>
+			<input
+				name="system.radiation"
+				type="number"
+				value="{{system.radiation}}"
+			>
+		</div>
+
+		{{#ifCond system.consumableType '===' 'chem' }}
+			<div class="flexrow resource-row">
+				<label for="system.duration" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Duration"}}
+				</label>
+				{{#select system.duration}}
+					<select name="system.duration">
+						{{#each FALLOUT.CHEM_DURATIONS}}
+							<option value="{{@key}}">
+								{{this}}
+							</option>
+						{{/each}}
+					</select>
+				{{/select}}
+			</div>
+			<div class="flexrow resource-row">
+				<label for="system.addictive" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Addictive"}}
+				</label>
+				<input
+					name="system.addictive"
+					type="checkbox"
+					{{#if system.addictive}}
+						checked
+					{{/if}}
+				>
+			</div>
+			{{#if system.addictive}}
+				<div class="flexrow resource-row">
+					<label for="system.addiction" class="resource-label">
+						{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}
+					</label>
+					<input
+						name="system.addiction"
+						type="number"
+						value="{{system.addiction}}"
+					>
+				</div>
+			{{/if}}
+		{{else}}
+			<div class="flexrow resource-row">
+				<label for="system.radiation" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Thirst_Reduction"}}
+				</label>
+				<input
+					name="system.thirstReduction"
+					type="number"
+					value="{{system.thirstReduction}}"
+				>
+			</div>
+
+			{{#if system.irradiated}}
+				<div class="flexrow resource-row">
+					<label for="system.radiationDamage" class="resource-label">
+						{{localize "FALLOUT.TEMPLATES.IrradiatedDamageDice"}}
+					</label>
+					<input
+						name="system.radiationDamage"
+						type="number"
+						value="{{system.radiationDamage}}"
+					>
+				</div>
+			{{/if}}
+
+			{{#ifCond system.consumableType '===' 'beverage' }}
+				<div class="flexrow resource-row">
+					<label for="system.alcoholic" class="resource-label">
+						{{localize "FALLOUT.TEMPLATES.Alcoholic"}}
+					</label>
+					<input
+						name="system.alcoholic"
+						type="checkbox"
+						{{#ifCond system.alcoholic '==' true}}
+							checked
+						{{/ifCond}}
+					>
+				</div>
+			{{/ifCond}}
+
+			<div class="flexrow resource-row">
+				<label for="system.irradiated" class="resource-label">
+					{{localize "FALLOUT.TEMPLATES.Irradiated"}}
+				</label>
+				<input
+					name="system.irradiated"
+					type="checkbox"
+					{{#ifCond system.irradiated '==' true}}
+						checked
+					{{/ifCond}}
+				>
+			</div>
+
+			{{#ifCond system.consumableType '===' 'food' }}
+				<div class="flexrow resource-row">
+					<label for="system.prepared" class="resource-label">
+						{{localize "FALLOUT.TEMPLATES.Prepared"}}
+					</label>
+					<input
+						name="system.prepared"
+						type="checkbox"
+						{{#ifCond system.prepared '==' true}}
+							checked
+						{{/ifCond}}
+					>
+				</div>
+			{{/ifCond}}
+		{{/ifCond}}
+	{{/ifCond}}
+
+	<div class="flexrow resource-row">
+		<label for="system.butchery" class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Butchery"}}
+		</label>
+		<input
+			name="system.butchery"
+			type="checkbox"
+			{{#ifCond system.butchery '==' true}}
+				checked
+			{{/ifCond}}
+		>
+	</div>
+
+	<h3 class="resource-label">
+		{{localize "FALLOUT.TEMPLATES.Effect"}}
+	</h3>
+	<div class="description-field">
+		{{editor effectHTML
+			button=true
+			editable=editable
+			owner=owner
+			target="system.effect"
+		}}
+	</div>
+</div>

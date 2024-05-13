@@ -1,8 +1,42 @@
-/**
- * Extend the basic Item with some very simple modifications.
- * @extends {Item}
- */
 export default class FalloutItem extends Item {
+
+	get currentWeaponDamage() {
+		if (this.type !== "weapon") return undefined;
+
+		let damageDice = parseInt(this.system.damage?.rating ?? 0);
+
+		if (["meleeWeapons", "unarmed"].includes(this.system.weaponType)) {
+			let damageBonus = this.actor.system?.meleeDamage?.value ?? 0;
+			damageDice += damageBonus;
+		}
+
+		if (game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) {
+			let wearAndTear = Number(this.system.tear);
+			if (isNaN(wearAndTear)) wearAndTear = 0;
+
+			damageDice -= wearAndTear;
+		}
+
+		return damageDice;
+	}
+
+	get isOwnedByCreature() {
+		return this.isOwned && this.actor.type === "creature";
+	}
+
+	get isWeaponBroken() {
+		if (this.type !== "weapon") return false;
+		if (!game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) return false;
+
+		let damageDice = parseInt(this.system.damage?.rating ?? 0);
+
+		let wearAndTear = Number(this.system.tear);
+		if (isNaN(wearAndTear)) wearAndTear = 0;
+
+		damageDice -= wearAndTear;
+
+		return damageDice <= 0;
+	}
 
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
@@ -73,7 +107,7 @@ export default class FalloutItem extends Item {
    */
 	async sendToChat(showQuantity=true) {
 
-		const itemData = duplicate(this.system);
+		const itemData = foundry.utils.duplicate(this.system);
 		itemData._id = this._id;
 		itemData.img = this.img;
 
@@ -137,6 +171,24 @@ export default class FalloutItem extends Item {
 		return qualities.join(", ");
 	}
 
+	/** @inheritdoc */
+	_initializeSource(source, options={}) {
+		source = super._initializeSource(source, options);
+
+		if (!source._id || !options.pack || fallout.moduleArt.suppressArt) {
+			return source;
+		}
+
+		const uuid = `Compendium.${options.pack}.${source._id}`;
+
+		const art = fallout.moduleArt.map.get(uuid);
+
+		if (art?.img) {
+			if (art.img) source.img = art.img;
+		}
+		return source;
+	}
+
 	_prepareAmmoData() {
 		let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
 		shotsAvailable += this.system.shots.current;
@@ -145,24 +197,14 @@ export default class FalloutItem extends Item {
 	}
 
 	_prepareConsumableData() {
-		this.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
+		this.system.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
 			this.system.consumableType
 		];
 	}
 
 	_prepareSkillData() {
-		// Get the localized name of a skill, if there is no
-		// localization then it is likely a custom skill, in which
-		// case we will just use it's original name
-		//
-		const nameKey = `FALLOUT.SKILL.${this.name}`;
-		this.localizedName = game.i18n.localize(nameKey);
-
-		if (this.localizedName === nameKey) this.localizedName = this.name;
-
-		this.localizedDefaultAttribute = game.i18n.localize(
-			`FALLOUT.AbilityAbbr.${this.system.defaultAttribute}`
-		);
+		this.localizedName = fallout.utils.getLocalizedSkillName(this);
+		this.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(this);
 	}
 
 	async _prepareWeaponData() {

@@ -1,18 +1,17 @@
 <form class="{{cssClass}}" autocomplete="off">
 
-	{{> item/parts/item-header}}
+	{{> item/_shared-partials/header}}
 
 	{{!-- Sheet Tab Navigation --}}
 	<nav class="sheet-tabs tabs" data-group="primary">
 		<a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
 		<a class="item" data-tab="effects">{{localize "FALLOUT.TEMPLATES.Effects"}}</a>
+		<a class="item" data-tab="source">{{localize "FALLOUT.TEMPLATES.Source"}}</a>
 	</nav>
 
 	<section class="sheet-body">
 		{{!-- Active Effects Tab --}}
-		<div class="tab effects flexcol" data-group="primary" data-tab="effects">
-			{{> item/parts/item-effects}}
-		</div>
+		{{> item/_shared-partials/effects-tab}}
 
 		{{!-- Attributes Tab --}}
 		<div class="tab attributes" data-group="primary" data-tab="attributes">
@@ -29,6 +28,8 @@
 				}}
 			</div>
 		</div>
+
+		{{> item/_shared-partials/source}}
 	</section>
 
 </form>

@@ -21,12 +21,22 @@
 			<div class="item-controls">
 				<a
 					class="item-control item-create"
-					data-appareltype="{{apparelType}}"
+					data-apparel-type="{{apparelType}}"
 					data-type="apparel"
 					title="Create item"
 				>
 					<i class="fas fa-plus"></i>
-					{{localize (concat 'FALLOUT.APPAREL.' apparelType)}}
+					{{localize 'FALLOUT.UI.Add'}}
+				</a>
+				<a
+					class="find-from-compendium"
+					{{#if ../isRobot}}
+						data-type="{{apparelType}}_robot"
+					{{else}}
+						data-type="{{apparelType}}"
+					{{/if}}
+				>
+					<i class="fa-solid fa-magnifying-glass"></i>
 				</a>
 			</div>
 		</li>

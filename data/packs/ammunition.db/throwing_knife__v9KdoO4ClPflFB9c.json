@@ -1,0 +1,26 @@
+{
+	"_id": "v9KdoO4ClPflFB9c",
+	"_key": "!items!v9KdoO4ClPflFB9c",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/ammo.svg",
+	"name": "Throwing Knife",
+	"system": {
+		"cost": 10,
+		"description": "<p>A small, sharp knife, specially balanced for throwing. Normally made of a lightweight metal, with the grip hollowed out to reduce weight. They do little damage by themselves, but are light, quiet, and quick to handle.</p>",
+		"effect": "",
+		"favorite": false,
+		"quantity": 1,
+		"quantityRoll": "1",
+		"rarity": 1,
+		"shots": {
+			"current": 1,
+			"max": 1
+		},
+		"source": "core_rulebook",
+		"stashed": false,
+		"weight": 0.25
+	},
+	"type": "ammo"
+}

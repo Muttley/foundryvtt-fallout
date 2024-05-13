@@ -1,0 +1,22 @@
+{
+	"_id": "ycaluMjkY5xApFFl",
+	"_key": "!items!ycaluMjkY5xApFFl",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/perk.svg",
+	"name": "Mister Sandman",
+	"system": {
+		"description": "<p>When you make a sneak attack with a silenced or suppressed weapon, the damage is increased by +2CD. You cannot gain this benefit while in Power Armor.</p>",
+		"favorite": false,
+		"rank": {
+			"levelIncrease": 0,
+			"levelStart": 1,
+			"max": 1,
+			"value": 0
+		},
+		"requirements": "AGI 9",
+		"source": "core_rulebook"
+	},
+	"type": "perk"
+}

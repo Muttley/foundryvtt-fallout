@@ -4,6 +4,11 @@
 			<div class="flexrow flexlarge item-name upperC">
 				{{localize 'FALLOUT.TEMPLATES.Stockpile'}}
 			</div>
+			<div class="item-controls">
+				<a class="find-any-from-compendium">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</a>
+			</div>
 		</li>
 		{{#each stockpile}}
 			{{> actor/_shared-partials/simple-expandable-item
@@ -35,7 +40,6 @@
 			</div>
 			<div style="text-align: right;">
 				<label>
-					{{localize "FALLOUT.TEMPLATES.Total"}}:
 					{{system.storage.total}} / {{system.storage.value}}
 					{{localize "FALLOUT.TEMPLATES.lbs"}}
 				</label>

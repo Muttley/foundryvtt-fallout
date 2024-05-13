@@ -7,10 +7,8 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Sack Hood",
 	"system": {
-		"appareltype": "headgear",
-		"armorType": "",
+		"apparelType": "headgear",
 		"cost": 5,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A tough fabric hood made from a burlap or canvas sack. Provides a little protection from dust and fumes and radiation by covering the whole head. Conveniently, it has eyeholes cut out, and some versions add in some form of makeshift breathing apparatus, though the effectiveness of these is dubious at best.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
 		"equipped": false,
@@ -34,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": "",
 		"quantity": 1,
 		"rarity": 0,
 		"resistance": {
@@ -48,8 +44,7 @@
 			"physical": 0,
 			"radiation": 2
 		},
-		"source": "",
-		"special": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 1
 	},

@@ -10,7 +10,7 @@
 		"defaultAttribute": "str",
 		"description": "<p>The Unarmed skill covers your ability to fight with your fists.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is <strong>Strength</strong> but you might also use Agility, or Charisma when threatening or intimidating someone. You use the Unarmed skill to make unarmed attacks in combat.</p>",
 		"favorite": false,
-		"source": "",
+		"source": "core_rulebook",
 		"summary": "",
 		"tag": false,
 		"value": 0

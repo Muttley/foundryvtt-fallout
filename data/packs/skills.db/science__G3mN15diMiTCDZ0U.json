@@ -10,7 +10,7 @@
 		"defaultAttribute": "int",
 		"description": "<p>The Science skill covers academic and practical knowledge, but is practically applied in the wasteland through computer coding, robotic programming, and brewing chems.</p>\n<p>Its default S.P.E.C.I.A.L. attribute is&nbsp;<strong>Intelligence</strong> but you might use it with Perception to observe a test subject, or Charisma to convince people of something using your scientific knowledge. You use Science to hack computers, brew chems, and solve problems with science!</p>",
 		"favorite": false,
-		"source": "",
+		"source": "core_rulebook",
 		"summary": "",
 		"tag": false,
 		"value": 0

@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": true,
+		"butchery": false,
 		"consumableType": "food",
 		"cost": 18,
 		"description": "<p><span class=\"fontstyle0\">Small, frosted cakes, so laden with sugar and other sweeteners than they&rsquo;re essentially preserved forever. Proclaimed in advertising to be &ldquo;America&rsquo;s Favorite Snackfood&rdquo;, these cakes can be found across the wastelands, in many teeth-achingly sweet varieties.</span></p>\n<p><span class=\"fontstyle0\">Sometimes, <strong>preserved</strong> boxes of Fancy Lads Snack Cakes can be found. These are identical to the listed version, but are not irradiated, and increase their rarity by +1. <br></span></p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 1,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 0,
 		"weight": 0

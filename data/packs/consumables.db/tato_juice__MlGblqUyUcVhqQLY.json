@@ -10,6 +10,7 @@
 		"addiction": 0,
 		"addictive": false,
 		"alcoholic": false,
+		"butchery": false,
 		"consumableType": "beverage",
 		"cost": 7,
 		"description": "<p><span class=\"fontstyle0\">Juice made from pressing Tatos. Despite the unpleasant taste, Tato juice is a fine way to prepare for vigorous action, as it allows the drinker to dig more deeply into reserves of stamina and push themselves further.</span> </p>",
@@ -22,8 +23,9 @@
 		"prepared": false,
 		"quantity": 1,
 		"radiation": 0,
+		"radiationDamage": 1,
 		"rarity": 3,
-		"source": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"thirstReduction": 1,
 		"weight": 0.5

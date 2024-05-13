@@ -6,7 +6,9 @@ export default class Logger {
 			this.DEBUG_ENABLED = game.settings.get(SYSTEM_ID, "debugEnabled");
 		}
 
-		if (this.DEBUG_ENABLED) console.debug(`${SYSTEM_NAME} |`, ...args);
+		if (this.DEBUG_ENABLED) {
+			console.debug(`${SYSTEM_NAME} |`, ...args);
+		}
 	}
 
 	static error(...args) {

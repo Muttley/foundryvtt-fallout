@@ -7,10 +7,8 @@
 	"img": "systems/fallout/assets/icons/items/apparel.svg",
 	"name": "Road Leathers",
 	"system": {
-		"appareltype": "clothing",
-		"armorType": "",
+		"apparelType": "clothing",
 		"cost": 5,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A leather jacket, leather pants, and a set of motorcycle boots. Often decorated with metallic studs, these soft leather items provide modest protection against physical hazards such as an involuntary dismount from a motorbike, while still being reasonably comfortable in any temperate or cold climate.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
 		"equipped": false,
@@ -34,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": "",
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {
@@ -48,8 +44,7 @@
 			"physical": 1,
 			"radiation": 0
 		},
-		"source": "",
-		"special": "",
+		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 1
 	},
