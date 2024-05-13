@@ -148,7 +148,7 @@ FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
 FALLOUT.EffectToggle: Activer/Désactiver l'effet
 FALLOUT.equipped: Equipé
-FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
+FALLOUT.ERRORS.ThisWeaponIsBroken: Cette arme est cassée et ne peut plus être utilisée.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
@@ -172,7 +172,7 @@ FALLOUT.Item.PowerArmor.Attached: Attached
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
-FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
+FALLOUT.Item.PowerArmor.Pieces: Pièces d'Armure Assistée
 FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
@@ -280,7 +280,7 @@ FALLOUT.TEMPLATES.Attack: Attaque
 FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
 FALLOUT.TEMPLATES.Attribute: Attribut
 FALLOUT.TEMPLATES.Attributes: Attributs
-FALLOUT.TEMPLATES.Base_Damage: Base Damage
+FALLOUT.TEMPLATES.Base_Damage: Dégâts de base
 FALLOUT.TEMPLATES.Butchery: Dépeçage
 FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
 FALLOUT.TEMPLATES.Compl: Compl.
