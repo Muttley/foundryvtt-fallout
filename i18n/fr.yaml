@@ -176,11 +176,11 @@ FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
-FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
-FALLOUT.Item.PowerArmor.Frame: Frame
-FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Attach: Connecte
+FALLOUT.Item.PowerArmor.Attached: Connecté
+FALLOUT.Item.PowerArmor.AttachedToFrame: Connecté au châssis
+FALLOUT.Item.PowerArmor.Frame: Châssis
+FALLOUT.Item.PowerArmor.IsFrame: Est le châssis
 FALLOUT.Item.PowerArmor.Pieces: Pièces d'Armure Assistée
 FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
@@ -367,7 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Blessures
 FALLOUT.TEMPLATES.INJURIES: BLESSURES
 FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
-FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Dés de dégâts de radiation
 FALLOUT.TEMPLATES.Issue: Numéro
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
