@@ -1,3 +1,59 @@
+# v11.10.0
+
+## Enhancement
+- [#334] Add a setting to consumables to specify the amount of rad damage CD that are rolled when consuming it
+- [#348] Improve the way Power Armor is handled on the sheets
+
+	* You can now optionally attach Power Armor items to a base "Armor Frame" item (this can be found in the core compendiums).
+	* This is done by editing the frame item and using the Frame tab to select/deselect which power armor items owned by the actor are attached.
+	* The frame and any attached items will be grouped together at the top of the inventory section, and each attached piece will show a "plug" icon to show they attached to a base frame.
+	* All attached items will also share Power, Equipped and Stashed settings so that using these controls on any item in the group will modify the value on all items.
+
+- [#366] Add tool to simplify the breaking down of Junk items
+
+	* This can be launched from the Gear tab of the character sheet, there is a new item control button next to the Junk inventory item.
+	* This tool also checks to see what levels of the Salvage perk you have and handles the salvage process accordingly.
+	* GMs can right-click on a salvage results card and select to "Advance Game Time" by the amount detailed on the result chat card.
+
+- [#367] Add option to automatically reduce weapon damage by wear and tear rate and refuse to fire if broken
+
+	* New option called "Apply Wear and Tear to Weapon Damage" added and is enabled by default.  This will automatically reduce the damage of a weapon by the amount of wear and tear, and a weapon will become unusable once the base damage is reduced to zero by wear and tear.
+
+- [#370] Allow posting items to chat even if they're not currently editable (for example, locked compendium items)
+- [#371] Reduce interface clutter by only showing the current damage of a weapon
+- [#373] Make the favourite weapons list more readable by moving the damage type into the additional data
+- [#375] Stashing an item in your inventory should also unequip it
+- [#376] Equipping an item in your inventory should also unstash it
+- [#377] Provide a built in Macro to open the Scavenging Help web tool
+
+## Bugs
+- [#356] Laser Gun Damage Value Incorrect
+- [#365] Typo in description of all Grognak the Barbarian magazines
+- [#368] 10mm Auto Pistol price and weight wrong
+- [#369] Weapon Wear & Tear should be a numeric value
+
+	* The upgrade process will attempt to migrate existing values, but if a non-empty, non-numeric string is found will default to a value of 1
+
+- [#372] Available ammo for a weapon missing from favourite and main weapons list
+- [#384] Available shots calculation not updated immediately a new ammo items is added to the character
+
+## Chore
+- [#357] Ensure there are no compatibility issues with Foundry V12
+- [#358] globalThis.mergeObject must now be accessed via foundry.utils.mergeObject *(Foundry v12 compatibility)*
+- [#359] globalThis.duplicate must now be accessed via foundry.utils.duplicate *(Foundry v12 compatibility)*
+- [#360] The {{select}} handlebars helper is deprecated *(Foundry v12 compatibility)*
+- [#361] globalThis.randomID must now be accessed via foundry.utils.randomID *(Foundry v12 compatibility)*
+- [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances *(Foundry v12 compatibility)*
+- [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES *(Foundry v12 compatibility)*
+- [#364] The async option for Roll#evaluate has been removed *(Foundry v12 compatibility)*
+- [#379] Merge French translation updates from Crowdin
+- [#381] ActiveEffect#icon has been migrated to ActiveEffect#img *(Foundry v12 compatibility)*
+- [#383] Global "Die" is now namespaced under foundry.dice.terms.Die *(Foundry v12 compatibility)*
+
+*Many thanks to **MrAtoni** for kindly allowing us to link to his scavenging help tool.*
+
+---
+
 # v11.9.4
 
 ## Enhancent

@@ -44,38 +44,36 @@
 		</div>
 	{{/ifCond}}
 
-	{{#if isOwnedByCreature}}
-		<div class="resource-row grid bgOdd">
-			<div class="flexrow align-mid">
-				<label
-					class="resource-label upperC"
-					for="system.attribute"
-				>
-					{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
-				</label>
-				<select name="system.creatureAttribute">
-					<option value="">&mdash;</option>
-					{{selectOptions FALLOUT.CREATURE_ATTRIBUTES
-						selected=system.creatureAttribute
-					}}
-				</select>
-			</div>
-			<div class="flexrow align-mid">
-				<label
-					class="resource-label upperC"
-					for="system.skill"
-				>
-					{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
-				</label>
-				<select name="system.creatureSkill">
-					<option value="">&mdash;</option>
-					{{selectOptions FALLOUT.CREATURE_SKILLS
-						selected=system.creatureSkill
-					}}
-				</select>
-			</div>
+	<div class="resource-row grid bgOdd">
+		<div class="flexrow align-mid">
+			<label
+				class="resource-label upperC"
+				for="system.attribute"
+			>
+				{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
+			</label>
+			<select name="system.creatureAttribute">
+				<option value="">&mdash;</option>
+				{{selectOptions FALLOUT.CREATURE_ATTRIBUTES
+					selected=system.creatureAttribute
+				}}
+			</select>
 		</div>
-	{{/if}}
+		<div class="flexrow align-mid">
+			<label
+				class="resource-label upperC"
+				for="system.skill"
+			>
+				{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
+			</label>
+			<select name="system.creatureSkill">
+				<option value="">&mdash;</option>
+				{{selectOptions FALLOUT.CREATURE_SKILLS
+					selected=system.creatureSkill
+				}}
+			</select>
+		</div>
+	</div>
 
 	<div class="resource-row flexrow bgEven">
 		<label class="resource-label upperC" for="system.damage.rating">
@@ -128,6 +126,7 @@
 			{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}
 		</label>
 		<input
+			data-dtype="Number"
 			type="number"
 			name="system.fireRate"
 			value="{{system.fireRate}}"
@@ -137,14 +136,17 @@
 	<div class="flexrow resource-row bgEven">
 		<label class="resource-label upperC" for="system.ammo">
 			{{localize "TYPES.Item.ammo"}}
-			{{#if ammoUuid}}
+			{{#if weaponAmmo}}
 				<a
-					class="content-link"
-					draggable="true"
-					data-uuid="{{ammoUuid}}"
-					data-type="Item"
-					data-tooltip="Ammo Item"
 					aria-describedby="tooltip"
+					class="content-link"
+					data-id="{{weaponAmmo._id}}"
+					data-link
+					data-pack="{{weaponAmmo.pack}}"
+					data-tooltip="Ammo Item"
+					data-type="Item"
+					data-uuid="{{weaponAmmo.uuid}}"
+					draggable="true"
 				><i class="fas fa-suitcase"></i></a>
 			{{/if}}
 		</label>
@@ -168,6 +170,7 @@
 			{{localize "ITEM.AmmoPerShot"}}
 		</label>
 		<input
+			data-dtype="Number"
 			type="number"
 			name="system.ammoPerShot"
 			value="{{system.ammoPerShot}}"
@@ -179,8 +182,9 @@
 			{{localize "FALLOUT.TEMPLATES.Tear"}}
 		</label>
 		<input
-			type="text"
+			data-dtype="Number"
 			name="system.tear"
+			type="number"
 			value="{{system.tear}}"
 		>
 	</div>

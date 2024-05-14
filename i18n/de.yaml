@@ -14,6 +14,7 @@ FALLOUT.AbilityPer: Wahrnehmung
 FALLOUT.AbilityStr: Stärke
 FALLOUT.actor.inventory.materials.common: Gewöhnlich
 FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
 FALLOUT.actor.inventory.materials.label: Materialien
 FALLOUT.actor.inventory.materials.rare: Selten
 FALLOUT.actor.inventory.materials.uncommon: Ungewöhnlich
@@ -36,6 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 Stunde
 FALLOUT.APP.PartySleep.hours: "{length} Stunden"
 FALLOUT.APP.PartySleep.safe_location: Ist der Standort gesichert?
 FALLOUT.APP.PartySleep.title: Gruppenrast
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.start: Start Salvaging
+FALLOUT.APP.SalvageJunk.time: This will take {time}
+FALLOUT.APP.SalvageJunk.title: Salvage Junk
 FALLOUT.APPAREL.armor: Rüstung
 FALLOUT.APPAREL.clothing: Kleidung
 FALLOUT.APPAREL.headgear: Kopfbedeckung
@@ -126,6 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHEM: Chem
 FALLOUT.ChemDuration.brief: Flüchtig
 FALLOUT.ChemDuration.instant: Augenblicklich
@@ -148,7 +157,7 @@ FALLOUT.EffectDelete: Entferne Effekt
 FALLOUT.EffectEdit: Bearbeite Effektt
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
-FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
@@ -167,6 +176,12 @@ FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Aktuelle Gesundheit
 FALLOUT.HEALTH.health: Gesundheit
 FALLOUT.HEALTH.max: Maximale Gesundheit
+FALLOUT.Item.PowerArmor.Attach: Attach
+FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
+FALLOUT.Item.PowerArmor.Frame: Frame
+FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
 FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
@@ -193,12 +208,12 @@ FALLOUT.RANGE.extreme: X
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Klicken, um Immunität umzuschalten
-FALLOUT.RESISTANCE.energy: Energie SR
+FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.Immunity.poison: Immun gegen Giftschaden
 FALLOUT.RESISTANCE.Immunity.radiation: Immun gegen Strahlungsschaden
-FALLOUT.RESISTANCE.physical: Phys. SR
-FALLOUT.RESISTANCE.poison: Gift SR
-FALLOUT.RESISTANCE.radiation: Strahlungs SR
+FALLOUT.RESISTANCE.physical: Körperlich
+FALLOUT.RESISTANCE.poison: Gift
+FALLOUT.RESISTANCE.radiation: Strahlung
 FALLOUT.SETTINGS.sourceFilters.hint: Wenn diese Option aktiviert ist, werden nur die in dieser Liste enthaltenen Buchquellen an den entsprechenden Stellen zur Auswahl angeboten. Items, bei denen keine Buchquelle angegeben ist, sind immer verfügbar.
 FALLOUT.SETTINGS.sourceFilters.title: Buchquellen-Filter
 FALLOUT.SETTLEMENT_ACTION.Build: Erstelle
@@ -274,6 +289,7 @@ FALLOUT.TEMPLATES.Attack: Angriff
 FALLOUT.TEMPLATES.ATTACKS: ANGRIFFE
 FALLOUT.TEMPLATES.Attribute: Eigenschaft
 FALLOUT.TEMPLATES.Attributes: Eigenschaften
+FALLOUT.TEMPLATES.Base_Damage: Base Damage
 FALLOUT.TEMPLATES.Butchery: Gemetzel
 FALLOUT.TEMPLATES.ButcheryTooltip: Gemetzel Probe TN
 FALLOUT.TEMPLATES.Compl: Kompl.
@@ -351,6 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Verletzungen
 FALLOUT.TEMPLATES.INJURIES: VERLETZUNGEN
 FALLOUT.TEMPLATES.Injury_Left_Click: Verletzung (Linksklick)
 FALLOUT.TEMPLATES.Irradiated: Verstrahlt
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
 FALLOUT.TEMPLATES.Issue: Ausgabe
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -358,12 +375,13 @@ FALLOUT.TEMPLATES.Learned: Erlernt
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: ORTE & VERLETZUNGEN
 FALLOUT.TEMPLATES.Locations: Orte
 FALLOUT.TEMPLATES.Luck: Glück
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
 FALLOUT.TEMPLATES.MaterialsRequired: Benötigte Materialien
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX GRUPPEN AP
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.MELEE_BONUS: NAHKAMPFBONUS
-FALLOUT.TEMPLATES.MELEE_DAMAGE: NAHKAMPFSCHADEN
+FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
+FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
 FALLOUT.TEMPLATES.MODULES: MODULE
 FALLOUT.TEMPLATES.Name_Prefix: Name Präfix
@@ -409,6 +427,7 @@ FALLOUT.TEMPLATES.Successes: Erfolge
 FALLOUT.TEMPLATES.Tag: Spez.
 FALLOUT.TEMPLATES.Tear: Abnutzung & Verschleiß
 FALLOUT.TEMPLATES.Thirst_Reduction: Durstreduzierung
+FALLOUT.TEMPLATES.TimeTaken: Time Taken
 FALLOUT.TEMPLATES.TN: ZW
 FALLOUT.TEMPLATES.TRAIT: BESONDERHEITEN
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Behandelte Verletzung (Rechtsklick)
@@ -429,6 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Waffe
 FALLOUT.TEMPLATES.WeaponName: Waffenname
 FALLOUT.TEMPLATES.Weapons: Waffen
 FALLOUT.TEMPLATES.WellRested: Gut ausgeruht
+FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Für jeden gewürfelten Effekt wird ein zusätzliches Ziel in naher Reichweite vom Hauptziel getroffen. Jedes zusätzliche Ziel erleidet den halben Schaden (aufgerundet). Im Gegensatz zur Streuung, kostet es dies keine zusätzliche Munition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: 'Für jeden gewürfelten Effekt wird die Anzahl der @fos[DC], die die Deckung eines Ziels bietet, permanent um –1 reduziert. Befindet sich das Ziel nicht in Deckung, reduziere stattdessen die SR der getroffenen Trefferstelle um –1, gemäß der Schadensart der Waffe (sprich: Physischer Schaden reduziert nur Physische Schadensresistenz, Energieschaden reduziert nur Energie Schadensresistenz usw.).'
 FALLOUT.TOOLTIPS.DamageEffect.burst: Für jeden gewürfelten Effekt verursacht dein Angriff beim Ziel einen zusätzlichen Treffer. Jeder zusätzliche Treffer verursacht die Hälfte des gewürfelten Schadens (abgerundet) und trifft eine zufällige Trefferstelle, auch wenn eine bestimmte Stelle das Ziel des ursprünglichen Angriffs war.
@@ -468,6 +493,7 @@ FALLOUT.UI.Add: Hinzufügen
 FALLOUT.UI.Addictions: Sucht
 FALLOUT.UI.APPAREL_MODS: Kleidung Mods
 FALLOUT.UI.AreYouSure: Bist du sicher?
+FALLOUT.UI.BaseDamage: Base Damage
 FALLOUT.UI.BOOKS_AND_MAGZS: Bücher und Magazine
 FALLOUT.UI.Cancel: Abbrechen
 FALLOUT.UI.CAPS: Kronkorken

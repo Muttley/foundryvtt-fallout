@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "armor",
 		"cost": 7,
-		"damaged": "",
 		"description": "<p>Characters who have taken the Dogmeat perk (p.63) are accompanied by a trusted canine companion, and they&rsquo;ll probably want to protect Man&rsquo;s Best Friend from the dangers of the wasteland.</p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 2,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 0
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 1
 	},

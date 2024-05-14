@@ -20,11 +20,14 @@
 		"startTurn": null,
 		"turns": null
 	},
-	"icon": "icons/svg/aura.svg",
+	"img": "icons/svg/aura.svg",
 	"name": "+2 to Poison damage resistance",
 	"origin": "Item.LSUSRTgMyqfN1EQx",
 	"statuses": [
 	],
-	"tint": null,
-	"transfer": true
+	"system": {
+	},
+	"tint": "#ffffff",
+	"transfer": true,
+	"type": "base"
 }

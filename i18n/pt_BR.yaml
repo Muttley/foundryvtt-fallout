@@ -14,6 +14,7 @@ FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Strength
 FALLOUT.actor.inventory.materials.common: Common
 FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
 FALLOUT.actor.inventory.materials.label: Materials
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Uncommon
@@ -36,6 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 hour
 FALLOUT.APP.PartySleep.hours: "{length} hours"
 FALLOUT.APP.PartySleep.safe_location: Location Safe?
 FALLOUT.APP.PartySleep.title: Party Sleep
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.start: Start Salvaging
+FALLOUT.APP.SalvageJunk.time: This will take {time}
+FALLOUT.APP.SalvageJunk.title: Salvage Junk
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Roupa
 FALLOUT.APPAREL.headgear: Equip. Cabeça
@@ -126,6 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHEM: Drogas
 FALLOUT.ChemDuration.brief: Brief
 FALLOUT.ChemDuration.instant: Instant
@@ -148,7 +157,7 @@ FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
 FALLOUT.EffectToggle: Alternar Efeito
 FALLOUT.equipped: Equipado
-FALLOUT.ERRORS.ThisWeaponDoesNoDamage: The total number of damage dice to roll must be greater than zero.
+FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
@@ -167,6 +176,12 @@ FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Vida Atual
 FALLOUT.HEALTH.health: Pontos de Vida
 FALLOUT.HEALTH.max: Vida máxima
+FALLOUT.Item.PowerArmor.Attach: Attach
+FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
+FALLOUT.Item.PowerArmor.Frame: Frame
+FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
 FALLOUT.LEVEL.CurrentXP: XP Atual
 FALLOUT.LEVEL.Level: Nível
 FALLOUT.LEVEL.NextXP: XP Prox. Nível
@@ -193,12 +208,12 @@ FALLOUT.RANGE.extreme: E
 FALLOUT.RANGE.long: L
 FALLOUT.RANGE.medium: M
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
-FALLOUT.RESISTANCE.energy: Energy DR
+FALLOUT.RESISTANCE.energy: Energia
 FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
 FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
-FALLOUT.RESISTANCE.physical: Physical DR
-FALLOUT.RESISTANCE.poison: Poison DR
-FALLOUT.RESISTANCE.radiation: Radiation DR
+FALLOUT.RESISTANCE.physical: Físico
+FALLOUT.RESISTANCE.poison: Veneno
+FALLOUT.RESISTANCE.radiation: Radiação
 FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
 FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
 FALLOUT.SETTLEMENT_ACTION.Build: Build
@@ -274,6 +289,7 @@ FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
+FALLOUT.TEMPLATES.Base_Damage: Base Damage
 FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Compl: Compl.
@@ -351,6 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
 FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
 FALLOUT.TEMPLATES.Issue: Issue
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -358,12 +375,13 @@ FALLOUT.TEMPLATES.Learned: Aprendido
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCAIS & FERIDAS
 FALLOUT.TEMPLATES.Locations: Locais
 FALLOUT.TEMPLATES.Luck: Luck
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
 FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: AP MÁXIMO DA PARTY
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.MELEE_BONUS: Bônus Melee
-FALLOUT.TEMPLATES.MELEE_DAMAGE: DANO CORPO-A-CORPO
+FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
+FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
@@ -409,6 +427,7 @@ FALLOUT.TEMPLATES.Successes: Sucessos
 FALLOUT.TEMPLATES.Tag: Tag
 FALLOUT.TEMPLATES.Tear: Desgaste
 FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
+FALLOUT.TEMPLATES.TimeTaken: Time Taken
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Ferida Tratada (Botão Dir.)
@@ -429,6 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Weapon
 FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Armas
 FALLOUT.TEMPLATES.WellRested: Well Rested
+FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
 FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
@@ -468,6 +493,7 @@ FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Mods Vestuário
 FALLOUT.UI.AreYouSure: Are You Sure?
+FALLOUT.UI.BaseDamage: Base Damage
 FALLOUT.UI.BOOKS_AND_MAGZS: Livros e Revistas
 FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Tampas

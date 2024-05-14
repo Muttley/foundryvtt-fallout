@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "outfit",
 		"cost": 20,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">The Scribes of the Brotherhood of Steel are sometimes required to venture out into the field to make observations or perform research up-close. While only providing limited protection, this garb is sufficient to protect the wearer from danger long enough to allow them to withdraw and seek assistance from someone better equipped.</span> </p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 2,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 2
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 4
 	},

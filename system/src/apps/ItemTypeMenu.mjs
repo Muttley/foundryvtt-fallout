@@ -20,7 +20,7 @@ export default class ItemTypeMenu extends Application {
 	}
 
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout"],
 			resizable: false,
 			width: 100,

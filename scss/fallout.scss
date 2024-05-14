@@ -21,3 +21,8 @@
 	@import "components/items";
 	@import "components/effects";
 }
+
+.fallout.sheet.item {
+	min-height: 560px;
+	min-width: 580px;
+}

@@ -1,0 +1,20 @@
+<strong>
+	{{localize "FALLOUT.UI.BaseDamage"}}:
+</strong>
+{{item.system.damage.rating}}
+
+{{#if (isWeaponUsingMeleeBonus item actor)}}
+	<br>
+	<strong>
+		{{localize "FALLOUT.TEMPLATES.Melee_Bonus"}}:
+	</strong>
+	+{{actor.system.meleeDamage.value}}
+{{/if}}
+
+{{#if (fromSettings "applyWearAndTearToWeaponDamage")}}
+	{{#ifCond item.system.tear ">" 0}}
+		<br>
+		<strong>{{localize "FALLOUT.TEMPLATES.Tear"}}:</strong>
+		-{{item.system.tear}}
+	{{/ifCond}}
+{{/if}}

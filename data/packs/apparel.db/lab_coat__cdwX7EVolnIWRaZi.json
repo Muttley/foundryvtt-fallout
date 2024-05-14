@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "outfit",
 		"cost": 10,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A white coat&mdash;though likely stained or dirty&mdash; intended for use in a laboratory environment. Normally contains a useful number of pockets, and clock or sensor just below the left lapel, where it can be easily checked without having to reach for it&mdash;ideal during delicate scientific work.</span> </p>\n<p><span class=\"fontstyle0\"><strong>Special:</strong> </span><span class=\"fontstyle2\">Between the utility of the design, and simply </span><span class=\"fontstyle3\">feeling </span><span class=\"fontstyle2\">smarter while wearing one, a lab coat allows you to re-roll a single d20 on one </span><span class=\"fontstyle0\">INT </span><span class=\"fontstyle2\">based skill test you make each scene.</span></p>\n<p><span class=\"fontstyle2\">A lab coat can be reinforced with Ballistic Weave&nbsp;<span class=\"fontstyle0\">(see sidebar, p. 126).</span></span></p>\n<p>&nbsp;</p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 1
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 0
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 2
 	},

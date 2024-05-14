@@ -15,5 +15,15 @@
 				</p>
 			</h4>
 		</div>
+		<div class="item-controls">
+			{{#ifCond material.key "===" "system.materials.junk"}}
+				<a
+					class="item-control salvage-junk"
+					title='{{localize "FALLOUT.actor.inventory.materials.junkSalvageControl"}}'
+				>
+					<i class="fa-solid fa-screwdriver-wrench"></i>
+				</a>
+			{{/ifCond}}
+		</div>
 	</div>
 </li>

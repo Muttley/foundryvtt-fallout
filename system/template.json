@@ -435,7 +435,6 @@
 		},
 		"apparel": {
 			"apparelType": "",
-			"damaged": "",
 			"health": {
 				"max": 0,
 				"min": 0,
@@ -455,19 +454,16 @@
 				"list": "",
 				"max": 0
 			},
-			"powered": "",
-			"powerStr": 11,
-			"powerSystems": {
-				"current": 0,
-				"list": "",
-				"max": 0
+			"powerArmor": {
+				"frameId": "",
+				"isFrame": false,
+				"powered": false
 			},
 			"resistance": {
 				"energy": 0,
 				"physical": 0,
 				"radiation": 0
 			},
-			"special": "",
 			"templates": [
 				"base",
 				"physical",
@@ -517,6 +513,7 @@
 			"irradiated": false,
 			"prepared": false,
 			"radiation": 0,
+			"radiationDamage": 1,
 			"thirstReduction": 0,
 			"templates": [
 				"base",
@@ -808,7 +805,7 @@
 			},
 			"range": "",
 			"skill": "",
-			"tear": "",
+			"tear": 0,
 			"templates": [
 				"base",
 				"physical",

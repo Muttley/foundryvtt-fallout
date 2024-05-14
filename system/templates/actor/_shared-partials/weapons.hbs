@@ -38,6 +38,9 @@
 					</div>
 					<a class="resource-label">
 						{{item.name}}
+						{{#if item.shotsAvailable}}
+							<em>({{item.shotsAvailable}})</em>
+						{{/if}}
 						{{#if (isWeaponDamaged item.system)}}
 							&nbsp;
 							<i class="fas fa-wrench"></i>
@@ -46,16 +49,11 @@
 				</div>
 				<div class="flexrow flexlarge align-mid">
 					<div class="text-center">
-						<a class="weapon-roll-damage">
-							<strong>
-								{{item.system.damage.rating}}
-							</strong>
-							{{#if (isWeaponUsingMeleeBonus item ../actor)}}
-								+
-								<strong>
-									{{../actor.system.meleeDamage.value}}
-								</strong>
-							{{/if}}
+						<a
+							class="weapon-roll-damage"
+							data-tooltip="{{{item.damageTooltip}}}"
+						>
+							{{item.currentWeaponDamage}}
 							<span class="fo-pip-boy fo-blue"></span>
 						</a>
 					</div>

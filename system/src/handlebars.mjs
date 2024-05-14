@@ -2,6 +2,12 @@ export default function registerHandlebarsHelpers() {
 	/* -------------------------------------------- */
 	/*  GENERAL HELPERS                             */
 	/* -------------------------------------------- */
+	Handlebars.registerHelper("activeEffectIcon", effect => {
+		return fallout.utils.foundryMinVersion(12)
+			? effect.img
+			: effect.icon;
+	});
+
 	Handlebars.registerHelper("concat", function() {
 		let outStr = "";
 		for (let arg in arguments) {
@@ -165,6 +171,10 @@ export default function registerHandlebarsHelpers() {
 		return CONFIG.FALLOUT[arg1][arg2] ? CONFIG.FALLOUT[arg1][arg2] : arg2;
 	});
 
+	Handlebars.registerHelper("fromSettings", function(arg1) {
+		return game.settings.get(SYSTEM_ID, arg1);
+	});
+
 	// Handlebars.registerHelper("incrementCounter", function(counter) {
 	// 	return ++counter;
 	// });
@@ -228,6 +238,13 @@ export default function registerHandlebarsHelpers() {
 			str += "&nbsp;&nbsp;&nbsp;&nbsp;";
 		}
 		return str;
+	});
+
+	Handlebars.registerHelper("select", function(selected, options) {
+		const escapedValue = RegExp.escape(Handlebars.escapeExpression(selected));
+		const rgx = new RegExp(` value=["']${escapedValue}["']`);
+		const html = options.fn(this);
+		return html.replace(rgx, "$& selected");
 	});
 
 }

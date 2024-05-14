@@ -3,29 +3,29 @@
 		<label class="resource-label">
 			{{localize "FALLOUT.MODS.mods"}}
 		</label>
-		<div class="flexrow align-mid">
+		<div class="flexrow align-right">
 			<span>
 				<label for="system.mods.current">
 					{{localize "FALLOUT.TEMPLATES.current"}}
 				</label>
 				<input
 					class="num-short-2"
+					data-dtype="Number"
 					name="system.mods.current"
 					type="number"
 					value="{{system.mods.current}}"
 				>
-			</span>
-			<span class="text-center">/</span>
-			<span>
+				/
+				<input
+					class="num-short-2"
+					data-dtype="Number"
+					name="system.mods.max"
+					type="number"
+					value="{{system.mods.max}}"
+				>
 				<label for="system.mods.max">
 					{{localize "FALLOUT.TEMPLATES.max"}}
 				</label>
-				<input
-					type="number"
-					name="system.mods.max"
-					class="num-short-2"
-					value="{{system.mods.max}}"
-				>
 			</span>
 		</div>
 	</div>

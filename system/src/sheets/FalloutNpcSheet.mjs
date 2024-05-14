@@ -7,7 +7,7 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
-		return mergeObject(super.defaultOptions, {
+		return foundry.utils.mergeObject(super.defaultOptions, {
 			height: "auto",
 		});
 	}
@@ -71,7 +71,7 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		const formula = `${wealthLevel}d20`;
 		const roll = new Roll(formula);
 
-		const wealthRoll = await roll.evaluate({ async: true });
+		const wealthRoll = await roll.evaluate();
 		try {
 			await game.dice3d.showForRoll(wealthRoll);
 		}

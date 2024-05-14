@@ -83,7 +83,6 @@ export default class FalloutActor extends Actor {
 		return hasActiveOwner;
 	}
 
-
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -96,16 +95,18 @@ export default class FalloutActor extends Actor {
 		return overridden.includes(fieldName);
 	}
 
-	/** @override */
-	prepareData() {
-		super.prepareData();
-	}
+	// Returns the current perk level, or zero if the player doesn't have the
+	// perk (or can't have perks)
+	//
+	perkLevel(perkName) {
+		if (!["character", "robot"].includes(this.type)) return 0;
 
-	/** @override */
-	// prepareBaseData() {
-	// Data modifications in this step occur before processing embedded
-	// documents or derived data.
-	// }
+		const perk = this.items.find(i => i.type === "perk"
+			&& i.name.toLowerCase() === perkName.toLowerCase()
+		);
+
+		return perk?.system?.rank?.value ?? 0;
+	}
 
 	/**
 	* @override
@@ -189,7 +190,7 @@ export default class FalloutActor extends Actor {
 		// Prep Body Locations
 		let outfittedLocations = {};
 		for (let [k] of Object.entries(
-			game.system.model.Actor.character.body_parts
+			this.system.body_parts
 		)) {
 			outfittedLocations[k] = false;
 		}
@@ -201,11 +202,13 @@ export default class FalloutActor extends Actor {
 					i => i.type === "apparel"
 						&& i.system.apparelType === "powerArmor"
 						&& i.system.equipped
-						&& i.system.powered
+						&& i.system.powerArmor.powered
+						&& i.system.powerArmor.isFrame === false
 						&& i.system.location[k] === true
+						&& i.system.stashed === false
 				);
 				if (pow && !outfittedLocations[k]) {
-					outfittedLocations[k] = duplicate(pow.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(pow.toObject());
 				}
 			}
 		}
@@ -214,14 +217,14 @@ export default class FalloutActor extends Actor {
 		for (let [k, v] of Object.entries(outfittedLocations)) {
 			if (!v) {
 				let armor = this.items.find(
-					i =>
-						i.type === "apparel"
-                && i.system.apparelType === "armor"
-                && i.system.equipped
-                && i.system.location[k] === true
+					i => i.type === "apparel"
+						&& i.system.apparelType === "armor"
+						&& i.system.equipped
+						&& i.system.location[k] === true
+						&& i.system.stashed === false
 				);
 				if (armor && !outfittedLocations[k]) {
-					outfittedLocations[k] = duplicate(armor.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(armor.toObject());
 				}
 			}
 		}
@@ -242,7 +245,7 @@ export default class FalloutActor extends Actor {
 			if (outfit) {
 				for (let [k, v] of Object.entries(outfit.system.location)) {
 					if (v) {
-						outfittedLocations[k] = duplicate(outfit.toObject());
+						outfittedLocations[k] = foundry.utils.duplicate(outfit.toObject());
 					}
 				}
 			}
@@ -256,7 +259,7 @@ export default class FalloutActor extends Actor {
 			);
 
 			if (headgear) {
-				outfittedLocations.head = duplicate(headgear.toObject());
+				outfittedLocations.head = foundry.utils.duplicate(headgear.toObject());
 			}
 		}
 
@@ -286,7 +289,7 @@ export default class FalloutActor extends Actor {
 					);
 				}
 				else if (!outfittedLocations[k] && v) {
-					outfittedLocations[k] = duplicate(clothing.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(clothing.toObject());
 				}
 			}
 		}
@@ -461,7 +464,7 @@ export default class FalloutActor extends Actor {
 	_calculateRobotBodyResistance() {
 		let outfittedLocations = {};
 		for (let [k] of Object.entries(
-			game.system.model.Actor.robot.body_parts
+			this.system.body_parts
 		)) {
 			outfittedLocations[k] = false;
 		}
@@ -476,7 +479,7 @@ export default class FalloutActor extends Actor {
 				);
 
 				if (armor && !outfittedLocations[k]) {
-					outfittedLocations[k] = duplicate(armor.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(armor.toObject());
 				}
 			}
 		}
@@ -501,7 +504,7 @@ export default class FalloutActor extends Actor {
               + parseInt(plating.system.resistance.radiation);
 				}
 				else if (!outfittedLocations[k] && v) {
-					outfittedLocations[k] = duplicate(plating.toObject());
+					outfittedLocations[k] = foundry.utils.duplicate(plating.toObject());
 				}
 			}
 		}
@@ -529,7 +532,7 @@ export default class FalloutActor extends Actor {
 		this.system.outfittedLocations = outfittedLocations;
 	}
 
-	async _getAvailableAmmoType(name) {
+	_getAvailableAmmoType(name) {
 		const ammoItems = this.items.filter(
 			i => i.name === name && i.type === "ammo"
 		);
@@ -583,7 +586,7 @@ export default class FalloutActor extends Actor {
 		if (this.type === "character") {
 			physicalItems = physicalItems.filter(i => {
 				if (i.system.apparelType === "powerArmor") {
-					return !i.system.powered;
+					return !i.system.powerArmor.powered;
 				}
 				else {
 					return true;
@@ -719,7 +722,7 @@ export default class FalloutActor extends Actor {
 			actorLink: false,
 			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
 			name: data.name, // Set token name to actor name
-			texture: duplicate(this.prototypeToken.texture),
+			texture: foundry.utils.duplicate(this.prototypeToken.texture),
 		};
 
 		if (["character", "robot", "settlement"].includes(data.type)) {
@@ -1154,6 +1157,8 @@ export default class FalloutActor extends Actor {
 
 		const allUsed = newQuantity <= 0 ? true : false;
 
+		const isFull = this.system.conditions.hunger === 0;
+
 		const currentWorldTime = game.time.worldTime;
 
 		const actorUpdateData = {};
@@ -1195,7 +1200,7 @@ export default class FalloutActor extends Actor {
 					let formula = `${newIntoxication}dccs>=5`;
 					let roll = new Roll(formula);
 
-					let alcoholicRoll = await roll.evaluate({ async: true });
+					let alcoholicRoll = await roll.evaluate();
 					try {
 						game.dice3d.showForRoll(alcoholicRoll);
 					}
@@ -1223,58 +1228,62 @@ export default class FalloutActor extends Actor {
 			}
 
 			if (consumableType !== "chem" && item.system.irradiated) {
-				const baseRadDamage = CONFIG.FALLOUT.CONSUMABLE_RAD_DAMAGE;
+				if (!(consumableType === "food" && isFull)) {
+					const radDice = item.system.radiationDamage
+						?? CONFIG.FALLOUT.DEFAULT_CONSUMABLE_RAD_DICE;
 
-				let formula = "1dccs>=5";
-				let roll = new Roll(formula);
+					let formula = `${radDice}dccs>=5`;
+					let roll = new Roll(formula);
 
-				let radiationDamageRoll = await roll.evaluate({ async: true });
-				try {
-					game.dice3d.showForRoll(radiationDamageRoll);
-				}
-				catch(err) {}
-
-				if (parseInt(roll.result) > 0) {
-					const radResistance = this.system.resistance?.radiation ?? 0;
-					const radsTaken = Math.max(0, baseRadDamage - radResistance);
-
-					const newRadiation = this.system.immunities.radiation
-						? 0
-						: this.system.radiation + radsTaken;
-
-					if (newRadiation > 0) {
-						actorUpdateData["system.radiation"] = newRadiation;
-
-						fallout.chat.renderGeneralMessage(
-							this,
-							{
-								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
-								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
-									{
-										actorName: this.name,
-										itemName: item.name,
-										radsTaken,
-									}
-								),
-							},
-							CONST.DICE_ROLL_MODES.PRIVATE
-						);
+					let radiationDamageRoll = await roll.evaluate();
+					try {
+						game.dice3d.showForRoll(radiationDamageRoll);
 					}
-					else {
-						fallout.chat.renderGeneralMessage(
-							this,
-							{
-								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title"),
-								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body",
-									{
-										actorName: this.name,
-										baseRadDamage,
-										itemName: item.name,
-									}
-								),
-							},
-							CONST.DICE_ROLL_MODES.PRIVATE
-						);
+					catch(err) {}
+
+					const baseRadDamage = parseInt(roll.result);
+					if (baseRadDamage > 0) {
+						const radResistance = this.system.resistance?.radiation ?? 0;
+						const radsTaken = Math.max(0, baseRadDamage - radResistance);
+
+						const newRadiation = this.system.immunities.radiation
+							? 0
+							: this.system.radiation + radsTaken;
+
+						if (newRadiation > 0) {
+							actorUpdateData["system.radiation"] = newRadiation;
+
+							fallout.chat.renderGeneralMessage(
+								this,
+								{
+									title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
+									body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body",
+										{
+											actorName: this.name,
+											itemName: item.name,
+											radsTaken,
+										}
+									),
+								},
+								CONST.DICE_ROLL_MODES.PRIVATE
+							);
+						}
+						else {
+							fallout.chat.renderGeneralMessage(
+								this,
+								{
+									title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title"),
+									body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body",
+										{
+											actorName: this.name,
+											baseRadDamage,
+											itemName: item.name,
+										}
+									),
+								},
+								CONST.DICE_ROLL_MODES.PRIVATE
+							);
+						}
 					}
 				}
 			}
@@ -1295,7 +1304,7 @@ export default class FalloutActor extends Actor {
 					let formula = `${newDosage}dccs>=5`;
 					let roll = new Roll(formula);
 
-					let addictedRoll = await roll.evaluate({ async: true });
+					let addictedRoll = await roll.evaluate();
 					try {
 						game.dice3d.showForRoll(addictedRoll);
 					}
@@ -1332,8 +1341,6 @@ export default class FalloutActor extends Actor {
 
 			}
 		}
-
-		const isFull = this.system.conditions.hunger === 0;
 
 		if (["beverage", "food"].includes(consumableType)) {
 			if (!(consumableType === "food" && isFull)) {
@@ -1425,7 +1432,7 @@ export default class FalloutActor extends Actor {
 
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
-		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);
+		const [ammoItems, shotsAvailable] = this._getAvailableAmmoType(ammoName);
 
 		if (shotsAvailable <= 0) return;
 
@@ -1488,7 +1495,7 @@ export default class FalloutActor extends Actor {
 		const formula = `${luckDice}dccs>=5`;
 		let roll = new Roll(formula);
 
-		let availabilityRoll = await roll.evaluate({ async: true });
+		let availabilityRoll = await roll.evaluate();
 		try {
 			game.dice3d.showForRoll(availabilityRoll);
 		}

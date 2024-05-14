@@ -63,7 +63,7 @@
 				"poison": false,
 				"radiation": false
 			},
-			"rating": 3,
+			"rating": 4,
 			"weaponQuality": {
 				"accurate": {
 					"rank": 0,
@@ -184,7 +184,7 @@
 		"skill": "",
 		"source": "core_rulebook",
 		"stashed": false,
-		"tear": "",
+		"tear": 0,
 		"weaponType": "energyWeapons",
 		"weight": 4
 	},

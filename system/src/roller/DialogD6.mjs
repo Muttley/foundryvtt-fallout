@@ -132,7 +132,7 @@ export class DialogD6 extends Dialog {
 		if (_actor.type !== "character" && _actor.type !== "robot") return 0;
 
 		const [ammoItems, shotsAvailable] =
-			await _actor._getAvailableAmmoType(
+			_actor._getAvailableAmmoType(
 				this.weapon.system.ammo
 			);
 

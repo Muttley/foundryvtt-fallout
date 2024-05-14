@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "headgear",
 		"cost": 5,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A cloth or leather covering for the head and neck. Provides a little protection from the elements, and easily combined with a mask or kerchief to cover the mouth and nose to keep dust and fumes out. Handy in the wasteland if you&rsquo;re caught outside without better protection.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 0
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 1,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 1
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 2
 	},

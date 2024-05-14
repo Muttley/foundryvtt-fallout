@@ -9,7 +9,6 @@
 	"system": {
 		"apparelType": "headgear",
 		"cost": 15,
-		"damaged": "",
 		"description": "<p><span class=\"fontstyle0\">A smart-looking hat, that&rsquo;ll look the part adorning your head during a business engagement or formal event. Or just because you like how it looks and it keeps the sun off your face. Many examples are somewhat battered and worn from neglect and ill-use, but they&rsquo;re still functional.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong> </span><span class=\"fontstyle0\">Wearing a formal hat allows you to re-roll a single d20 on one </span><span class=\"fontstyle2\"><strong>CHA</strong>-</span><span class=\"fontstyle0\">based skill test you make each scene, as it helps you make a good first impression.</span></p>\n<p><span class=\"fontstyle0\">Formal hats can be reinforced with Ballistic Weave (see sidebar).</span></p>\n<p>&nbsp;</p>",
 		"equippable": true,
 		"equipped": false,
@@ -33,13 +32,11 @@
 			"list": "",
 			"max": 1
 		},
-		"powerStr": 11,
-		"powerSystems": {
-			"current": 0,
-			"list": "",
-			"max": 0
+		"powerArmor": {
+			"frameId": "",
+			"isFrame": false,
+			"powered": false
 		},
-		"powered": false,
 		"quantity": 1,
 		"rarity": 2,
 		"resistance": {
@@ -48,7 +45,6 @@
 			"radiation": 0
 		},
 		"source": "core_rulebook",
-		"special": "",
 		"stashed": false,
 		"weight": 0
 	},
