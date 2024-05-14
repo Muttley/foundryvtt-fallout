@@ -1,3 +1,13 @@
+# v11.10.1
+
+## Bugs
+- [#389] Dice So Nice stopped showing for most rolls
+
+## Chores
+- [#387] Merge French translation updates from Crowdin
+
+---
+
 # v11.10.0
 
 ## Enhancement
@@ -35,7 +45,7 @@
 	* The upgrade process will attempt to migrate existing values, but if a non-empty, non-numeric string is found will default to a value of 1
 
 - [#372] Available ammo for a weapon missing from favourite and main weapons list
-- [#384] Available shots calculation not updated immediately a new ammo items is added to the character
+- [#384] Available shots calculation not updated immediately a new ammo item is added to the character
 
 ## Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12
