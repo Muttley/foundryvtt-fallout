@@ -532,7 +532,7 @@ export default class FalloutActor extends Actor {
 		this.system.outfittedLocations = outfittedLocations;
 	}
 
-	async _getAvailableAmmoType(name) {
+	_getAvailableAmmoType(name) {
 		const ammoItems = this.items.filter(
 			i => i.name === name && i.type === "ammo"
 		);
@@ -1432,7 +1432,7 @@ export default class FalloutActor extends Actor {
 
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
-		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);
+		const [ammoItems, shotsAvailable] = this._getAvailableAmmoType(ammoName);
 
 		if (shotsAvailable <= 0) return;
 

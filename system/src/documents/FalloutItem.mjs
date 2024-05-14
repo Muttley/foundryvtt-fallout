@@ -38,6 +38,28 @@ export default class FalloutItem extends Item {
 		return damageDice <= 0;
 	}
 
+	get shotsAvailable() {
+		if (!this.actor) return null;
+
+		if (this.type === "ammo") {
+			let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
+			shotsAvailable += this.system.shots.current;
+
+			return shotsAvailable;
+		}
+		else if (this.type === "weapon" && this.system.ammo !== "") {
+			const [, shotsAvailable] =
+				this.actor._getAvailableAmmoType(
+					this.system.ammo
+				);
+
+			return shotsAvailable;
+		}
+		else {
+			return null;
+		}
+	}
+
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
@@ -85,18 +107,18 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 
 		switch (this.type) {
-			case "ammo":
-				this._prepareAmmoData();
-				break;
+			// case "ammo":
+			// 	this._prepareAmmoData();
+			// 	break;
 			case "consumable":
 				this._prepareConsumableData();
 				break;
 			case "skill":
 				this._prepareSkillData();
 				break;
-			case "weapon":
-				this._prepareWeaponData();
-				break;
+			// case "weapon":
+			// 	this._prepareWeaponData();
+			// 	break;
 		}
 	}
 
@@ -189,13 +211,6 @@ export default class FalloutItem extends Item {
 		return source;
 	}
 
-	_prepareAmmoData() {
-		let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
-		shotsAvailable += this.system.shots.current;
-
-		this.shotsAvailable = shotsAvailable;
-	}
-
 	_prepareConsumableData() {
 		this.system.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[
 			this.system.consumableType
@@ -205,19 +220,6 @@ export default class FalloutItem extends Item {
 	_prepareSkillData() {
 		this.localizedName = fallout.utils.getLocalizedSkillName(this);
 		this.localizedDefaultAttribute = fallout.utils.getLocalizedSkillAttribute(this);
-	}
-
-	async _prepareWeaponData() {
-		if (!this.actor) return;
-
-		if (this.system.ammo !== "") {
-			const [, shotsAvailable] =
-				await this.actor._getAvailableAmmoType(
-					this.system.ammo
-				);
-
-			this.shotsAvailable = shotsAvailable;
-		}
 	}
 
 }
