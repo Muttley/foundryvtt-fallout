@@ -318,14 +318,11 @@ export class DialogD6 extends Dialog {
 		let additionalAmmo = "0";
 		if (this.weapon.system.weaponType !== "meleeWeapons" && this.weapon.system.weaponType !== "unarmed") {
 			// eslint-disable-next-line linebreak-style
-			const [ammoItems, shotsAvailable] =	await _actor._getAvailableAmmoType(this.weapon.system.ammo);
 			if (!ammoItems) {
 				ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`);
 				return -1;
 			}
 			// Check if there is enough ammo
-			const totalDice = parseInt(diceNum);
-
 			// eslint-disable-next-line semi
 			const weaponDmg = parseInt(initDmg);
 			additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
