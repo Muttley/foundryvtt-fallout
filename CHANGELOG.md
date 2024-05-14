@@ -46,6 +46,8 @@
 - [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES *(Foundry v12 compatibility)*
 - [#364] The async option for Roll#evaluate has been removed *(Foundry v12 compatibility)*
 - [#379] Merge French translation updates from Crowdin
+- [#381] ActiveEffect#icon has been migrated to ActiveEffect#img *(Foundry v12 compatibility)*
+- [#383] Global "Die" is now namespaced under foundry.dice.terms.Die *(Foundry v12 compatibility)*
 
 *Many thanks to **MrAtoni** for kindly allowing us to link to his scavenging help tool.*
 

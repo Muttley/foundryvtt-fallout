@@ -77,8 +77,12 @@ function registerDiceSettings() {
 	CONFIG.Dice.terms.c = DieFalloutDamage;
 	CONFIG.Dice.terms.h = DieFalloutLocation;
 
+	const dieModifiers = fallout.utils.foundryMinVersion(12)
+		? foundry.dice.terms.Die.MODIFIERS
+		: Die.MODIFIERS;
+
 	// eslint-disable-next-line func-names
-	Die.MODIFIERS.ef = function minResult(modifier) {
+	dieModifiers.ef = function minResult(modifier) {
 		this.results = this.results.flatMap(result => {
 			if (result.result < 5) {
 				result.active = false;
@@ -90,7 +94,7 @@ function registerDiceSettings() {
 	};
 
 	// eslint-disable-next-line func-names
-	Die.MODIFIERS.sum = function minResult(modifier) {
+	dieModifiers.sum = function minResult(modifier) {
 		this.results = this.results.flatMap(result => {
 			if (result.result === 1 || result.result === 5 || result.result === 6) {
 				result.active = true;
