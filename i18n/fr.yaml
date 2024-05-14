@@ -14,6 +14,7 @@ FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Super Force
 FALLOUT.actor.inventory.materials.common: Fréquent
 FALLOUT.actor.inventory.materials.junk: Bric-à-brac
+FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
 FALLOUT.actor.inventory.materials.label: Composants
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
@@ -36,6 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 heure
 FALLOUT.APP.PartySleep.hours: "{length} heures"
 FALLOUT.APP.PartySleep.safe_location: Endroit sécurisé ?
 FALLOUT.APP.PartySleep.title: Sommeil du groupe
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.start: Start Salvaging
+FALLOUT.APP.SalvageJunk.time: This will take {time}
+FALLOUT.APP.SalvageJunk.title: Salvage Junk
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Couvre-chefs
@@ -126,6 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} a ré
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux radiations
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dégâts de radiation de {radsTaken} en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
 FALLOUT.ChemDuration.instant: Instantanée
@@ -366,6 +375,7 @@ FALLOUT.TEMPLATES.Learned: Appris(e)
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
 FALLOUT.TEMPLATES.Locations: Localisations
 FALLOUT.TEMPLATES.Luck: LChance
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
 FALLOUT.TEMPLATES.MaterialsRequired: Composants requis
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
 FALLOUT.TEMPLATES.max: max
@@ -417,6 +427,7 @@ FALLOUT.TEMPLATES.Successes: Succès
 FALLOUT.TEMPLATES.Tag: Atout
 FALLOUT.TEMPLATES.Tear: Usure
 FALLOUT.TEMPLATES.Thirst_Reduction: Réduction de la soif
+FALLOUT.TEMPLATES.TimeTaken: Time Taken
 FALLOUT.TEMPLATES.TN: SR
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Traiter une blessure (Clic droit)
@@ -437,6 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
 FALLOUT.TEMPLATES.WellRested: Bien Reposé
+FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Chaque Effet obtenu permet de toucher une cible supplémentaire à courte portée de la cible initiale. Chaque cible supplémentaire subit la moitié des dégâts (arrondi au supérieur). Mais contrairement à En rafale, cela ne coute pas de munitions supplémentaires.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Pour chaque Effet obtenu sur le jet de dégâts, réduisez de 1 le nombre de @fos[DC] d'abri fournis par un abri, de manière permanente. Si la cible n'a pas d'abri, réduisez de 1 la résistance aux dégâts sur la localisation touchée, selon le type de dégâts de l'arme (les dégâts balistiques réduisent la résistance aux dégâts balistiques et les dégâts énergétiques réduisent la résistance aux dégâts énergétiques).
 FALLOUT.TOOLTIPS.DamageEffect.burst: L'attaque peut toucher une cible supplémentaire à portée courte de la cible principale pour chaque Effet obtenu sur le jet de dégâts. Chaque cible supplémentaire coûte 1 munition de plus.
