@@ -14,6 +14,7 @@ FALLOUT.AbilityPer: Percepcja
 FALLOUT.AbilityStr: Siła
 FALLOUT.actor.inventory.materials.common: Pospolity
 FALLOUT.actor.inventory.materials.junk: Złom
+FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
 FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
@@ -36,6 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 godzina
 FALLOUT.APP.PartySleep.hours: "{length} godzin"
 FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
 FALLOUT.APP.PartySleep.title: Drużyna Śpi
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.start: Start Salvaging
+FALLOUT.APP.SalvageJunk.time: This will take {time}
+FALLOUT.APP.SalvageJunk.title: Salvage Junk
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
@@ -126,6 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHEM: Chemikalia
 FALLOUT.ChemDuration.brief: Krótkotrwały
 FALLOUT.ChemDuration.instant: Natychmiastowy
@@ -366,6 +375,7 @@ FALLOUT.TEMPLATES.Learned: Nauczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.Luck: Szczęście
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
 FALLOUT.TEMPLATES.MaterialsRequired: Wymagane materiały
 FALLOUT.TEMPLATES.MAX_PARTY_AP: Maksymalne PA Drużyny
 FALLOUT.TEMPLATES.max: maks
@@ -417,6 +427,7 @@ FALLOUT.TEMPLATES.Successes: Sukcesy
 FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.Thirst_Reduction: Redukcja pragnienia
+FALLOUT.TEMPLATES.TimeTaken: Time Taken
 FALLOUT.TEMPLATES.TN: CEL
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
@@ -437,6 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.TEMPLATES.WellRested: Dobrze Wypoczęty
+FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.
