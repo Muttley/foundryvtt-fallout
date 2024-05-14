@@ -14,6 +14,7 @@ FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Strength
 FALLOUT.actor.inventory.materials.common: Common
 FALLOUT.actor.inventory.materials.junk: Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
 FALLOUT.actor.inventory.materials.label: Materials
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Uncommon
@@ -36,6 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 hour
 FALLOUT.APP.PartySleep.hours: "{length} hours"
 FALLOUT.APP.PartySleep.safe_location: Location Safe?
 FALLOUT.APP.PartySleep.title: Party Sleep
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.start: Start Salvaging
+FALLOUT.APP.SalvageJunk.time: This will take {time}
+FALLOUT.APP.SalvageJunk.title: Salvage Junk
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
 FALLOUT.APPAREL.headgear: Headgear
@@ -126,6 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHEM: Chem
 FALLOUT.ChemDuration.brief: Brief
 FALLOUT.ChemDuration.instant: Instant
@@ -366,6 +375,7 @@ FALLOUT.TEMPLATES.Learned: Learned
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCATIONS & INJURIES
 FALLOUT.TEMPLATES.Locations: Locations
 FALLOUT.TEMPLATES.Luck: Luck
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
 FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PARTY AP
 FALLOUT.TEMPLATES.max: max
@@ -417,6 +427,7 @@ FALLOUT.TEMPLATES.Successes: Successes
 FALLOUT.TEMPLATES.Tag: Tag
 FALLOUT.TEMPLATES.Tear: Wear & Tear
 FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
+FALLOUT.TEMPLATES.TimeTaken: Time Taken
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Treated injury (Right Click)
@@ -437,6 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Weapon
 FALLOUT.TEMPLATES.WeaponName: Weapon Name
 FALLOUT.TEMPLATES.Weapons: Weapons
 FALLOUT.TEMPLATES.WellRested: Well Rested
+FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
 FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.

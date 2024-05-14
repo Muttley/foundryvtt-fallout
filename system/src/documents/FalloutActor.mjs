@@ -83,7 +83,6 @@ export default class FalloutActor extends Actor {
 		return hasActiveOwner;
 	}
 
-
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -96,16 +95,18 @@ export default class FalloutActor extends Actor {
 		return overridden.includes(fieldName);
 	}
 
-	/** @override */
-	// prepareData() {
-	// 	super.prepareData();
-	// }
+	// Returns the current perk level, or zero if the player doesn't have the
+	// perk (or can't have perks)
+	//
+	perkLevel(perkName) {
+		if (!["character", "robot"].includes(this.type)) return 0;
 
-	/** @override */
-	// prepareBaseData() {
-	// Data modifications in this step occur before processing embedded
-	// documents or derived data.
-	// }
+		const perk = this.items.find(i => i.type === "perk"
+			&& i.name.toLowerCase() === perkName.toLowerCase()
+		);
+
+		return perk?.system?.rank?.value ?? 0;
+	}
 
 	/**
 	* @override

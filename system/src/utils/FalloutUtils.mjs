@@ -108,6 +108,64 @@ export default class FalloutUtils {
 		return value * LBS_TO_KGS;
 	}
 
+	static minsToString(mins) {
+		const MINS_PER_DAY = 1440;
+		const MINS_PER_HOUR = 60;
+
+		const stringParts = [];
+
+		if (mins >= MINS_PER_DAY) {
+			const days = Math.floor(mins / MINS_PER_DAY);
+			mins -= (days * MINS_PER_DAY);
+
+			if (days > 1) {
+				stringParts.push(
+					game.i18n.format("FALLOUT.TIME.DAYS_PLURAL", {days})
+				);
+			}
+			else {
+				stringParts.push(
+					game.i18n.format("FALLOUT.TIME.DAYS_SINGULAR", {days})
+				);
+			}
+		}
+
+		if (mins >= MINS_PER_HOUR) {
+			const hours = Math.floor(mins / MINS_PER_HOUR);
+			mins -= (hours * MINS_PER_HOUR);
+
+			if (hours > 1) {
+				stringParts.push(
+					game.i18n.format("FALLOUT.TIME.HOURS_PLURAL", {hours})
+				);
+			}
+			else {
+				stringParts.push(
+					game.i18n.format("FALLOUT.TIME.HOURS_SINGULAR", {hours})
+				);
+			}
+		}
+
+		if (mins === 0 || mins > 1) {
+			stringParts.push(
+				game.i18n.format("FALLOUT.TIME.MINUTES_PLURAL", {mins})
+			);
+		}
+		else {
+			stringParts.push(
+				game.i18n.format("FALLOUT.TIME.MINUTES_PLURAL", {mins})
+			);
+		}
+
+		return stringParts.join(", ");
+	}
+
+	static playDiceSound() {
+		const sounds = [CONFIG.sounds.dice];
+		const src = sounds[0];
+		game.audio.play(src);
+	}
+
 	static async sleep(millisecs=1000) {
 		return new Promise((resolve, reject) => {
   			setTimeout(resolve, millisecs);

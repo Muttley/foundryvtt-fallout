@@ -1,0 +1,58 @@
+<div class="fallout-chat-message">
+	<div class="content">
+		<h2>
+			{{localize "FALLOUT.APP.SalvageJunk.title"}}
+			{{#ifCond junkToProcess ">" 1}}
+				x {{junkToProcess}}
+			{{/ifCond}}
+		</h2>
+		<div class="hit-location-label" style="color: grey">
+			<span>
+				<strong>
+					{{localize "FALLOUT.TEMPLATES.TimeTaken"}}:
+				</strong>
+				{{timeToSalvage}}
+			</span>
+		</div>
+		<div>
+			<p class="success-plaq">
+				{{localize "FALLOUT.TEMPLATES.Successes"}}: {{repair.successes}}
+				<span class="TN">
+					&nbsp;&nbsp;&nbsp;({{localize "FALLOUT.TEMPLATES.TN"}} {{config.tn}})
+				</span>
+			</p>
+			{{#ifCond repair.complications '>' 0}}
+				<p class="complication-plaq">
+					{{localize "FALLOUT.TEMPLATES.Complications"}}: {{repair.complications}}
+				</p>
+			{{/ifCond}}
+		</div>
+		<br>
+		<div style="font-size: 0.75rem;">
+			<h3>
+				{{localize "FALLOUT.TEMPLATES.MaterialsRecoverd"}}
+				{{#ifCond config.scrapper ">" 0}}
+					({{localize "FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper"}}
+					{{config.scrapper}})
+				{{/ifCond}}
+			</h3>
+			<div>
+				<strong>
+					{{localize "FALLOUT.actor.inventory.materials.common"}}:
+				</strong>
+				{{materials.common}},
+				<strong>
+					{{localize "FALLOUT.actor.inventory.materials.uncommon"}}:
+				</strong>
+				{{materials.uncommon}},
+				<strong>
+					{{localize "FALLOUT.actor.inventory.materials.rare"}}:
+				</strong>
+				{{materials.rare}}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
