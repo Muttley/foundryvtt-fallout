@@ -325,6 +325,10 @@ export class DialogD6 extends Dialog {
 			// Check if there is enough ammo
 			// eslint-disable-next-line semi
 			const weaponDmg = parseInt(initDmg);
+			const [ammoItems, shotsAvailable] =
+			_actor._getAvailableAmmoType(
+				this.weapon.system.ammo
+			);
 			additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
 			// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
 			if (this.weapon.system.damage.weaponQuality.gatling.value) {
