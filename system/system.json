@@ -248,7 +248,7 @@
 	],
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
-	"manifest": "https://raw.githubusercontent.com/bb46003/foundryvtt-fallout/develop/system/system.json",
-	"download": "https://github.com/bb46003/foundryvtt-fallout/archive/refs/heads/develop.zip",
+	"https":"//raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
+	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip",
 	"background": "systems/fallout/assets/images/please-stand-by.webp"
 }
