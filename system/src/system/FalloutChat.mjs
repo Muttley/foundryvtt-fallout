@@ -96,6 +96,7 @@ export default class FalloutChat {
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,
 						successTreshold: falloutRoll.successTreshold,
+						actor: message.speaker.actor,
 					});
 				}
 				else if (falloutRoll.diceFace === "d6") {

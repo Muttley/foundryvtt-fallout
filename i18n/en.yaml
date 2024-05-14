@@ -495,6 +495,7 @@ FALLOUT.UI.CONSUMABLES: Consumables
 FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Cost
 FALLOUT.UI.Damage: Damage
+FALLOUT.UI.DICE: Dice
 FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.FREED20: Free additional dice
@@ -502,6 +503,8 @@ FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
 FALLOUT.UI.Name: Name
 FALLOUT.UI.Not_Enough: Not Enough
+FALLOUT.UI.NUMOFDTOREROLLLUCK: How many dice you want to re-roll using luck
+FALLOUT.UI.NUMOFDTOREROLL: How many dice you want to re-roll not using luck
 FALLOUT.UI.OTHER: Other
 FALLOUT.UI.Perks: Perks
 FALLOUT.UI.Qty: Qty
@@ -521,6 +524,7 @@ FALLOUT.UI.Spend_Overseer_AP: Spend Overseer AP
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
+FALLOUT.UI.USINGLUCK: Using luck
 FALLOUT.UI.Weapondamagedice: Damage dice from weapon
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight

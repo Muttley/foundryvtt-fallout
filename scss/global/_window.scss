@@ -349,9 +349,11 @@
 		cursor: pointer;
 	}
 }
-select.fire-rate-select {
+select.fire-rate-select,
+select.non-spend-luck,
+select.spend-luck {
 	background: beige;
-  }
+}
   .pulsing-text {
     animation: pulse 1s infinite alternate;
 	color: red;
