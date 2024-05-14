@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: Perception
 FALLOUT.AbilityStr: Super Force
 FALLOUT.actor.inventory.materials.common: Fréquent
 FALLOUT.actor.inventory.materials.junk: Bric-à-brac
-FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Récupération du Bric-à-brac
 FALLOUT.actor.inventory.materials.label: Composants
 FALLOUT.actor.inventory.materials.rare: Rare
 FALLOUT.actor.inventory.materials.uncommon: Peu fréquent
@@ -37,13 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 heure
 FALLOUT.APP.PartySleep.hours: "{length} heures"
 FALLOUT.APP.PartySleep.safe_location: Endroit sécurisé ?
 FALLOUT.APP.PartySleep.title: Sommeil du groupe
-FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
-FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
-FALLOUT.APP.SalvageJunk.start: Start Salvaging
-FALLOUT.APP.SalvageJunk.time: This will take {time}
-FALLOUT.APP.SalvageJunk.title: Salvage Junk
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Temps de jeu avancé
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Vous n'avez pas de Bric-à-brac à récupérer
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Temps de jeu avancé de {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Récupération de {amount} Bric-à-brac
+FALLOUT.APP.SalvageJunk.start: Commencer la récupération
+FALLOUT.APP.SalvageJunk.time: Cela prendra {time}
+FALLOUT.APP.SalvageJunk.title: Récupération du Bric-à-brac
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Couvre-chefs
@@ -176,11 +176,11 @@ FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
-FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
-FALLOUT.Item.PowerArmor.Frame: Frame
-FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.Attach: Connecte
+FALLOUT.Item.PowerArmor.Attached: Connecté
+FALLOUT.Item.PowerArmor.AttachedToFrame: Connecté au châssis
+FALLOUT.Item.PowerArmor.Frame: Châssis
+FALLOUT.Item.PowerArmor.IsFrame: Est le châssis
 FALLOUT.Item.PowerArmor.Pieces: Pièces d'Armure Assistée
 FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
@@ -367,7 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Blessures
 FALLOUT.TEMPLATES.INJURIES: BLESSURES
 FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
-FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Dés de dégâts de radiation
 FALLOUT.TEMPLATES.Issue: Numéro
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -375,7 +375,7 @@ FALLOUT.TEMPLATES.Learned: Appris(e)
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCALISATIONS & BLESSURES
 FALLOUT.TEMPLATES.Locations: Localisations
 FALLOUT.TEMPLATES.Luck: LChance
-FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
+FALLOUT.TEMPLATES.MaterialsRecoverd: Matériaux récupérés
 FALLOUT.TEMPLATES.MaterialsRequired: Composants requis
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
 FALLOUT.TEMPLATES.max: max
@@ -427,7 +427,7 @@ FALLOUT.TEMPLATES.Successes: Succès
 FALLOUT.TEMPLATES.Tag: Atout
 FALLOUT.TEMPLATES.Tear: Usure
 FALLOUT.TEMPLATES.Thirst_Reduction: Réduction de la soif
-FALLOUT.TEMPLATES.TimeTaken: Time Taken
+FALLOUT.TEMPLATES.TimeTaken: Temps pris
 FALLOUT.TEMPLATES.TN: SR
 FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Traiter une blessure (Clic droit)
@@ -448,10 +448,10 @@ FALLOUT.TEMPLATES.Weapon: Arme
 FALLOUT.TEMPLATES.WeaponName: Nom de l'arme
 FALLOUT.TEMPLATES.Weapons: Armes
 FALLOUT.TEMPLATES.WellRested: Bien Reposé
-FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
-FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
-FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
-FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
+FALLOUT.TIME.DAYS_PLURAL: "{days} Jours"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Jour"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Heures"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Heure"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Chaque Effet obtenu permet de toucher une cible supplémentaire à courte portée de la cible initiale. Chaque cible supplémentaire subit la moitié des dégâts (arrondi au supérieur). Mais contrairement à En rafale, cela ne coute pas de munitions supplémentaires.
