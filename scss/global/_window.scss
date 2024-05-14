@@ -1,7 +1,11 @@
 .window-app {
 	font-family: $font-primary;
-}
 
+}
+.window-app  .flexrow.fallout-dialog {
+    overflow-y: visible;
+    overflow-x: visible;
+}
 .font-primary {
 	font-family: $font-primary;
 }
@@ -146,6 +150,9 @@
 		margin: 0 2px 5px;
 		padding: 0 5px 0 0;
 		background-color: $f-blue;
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: repeat(6, auto);
 		&.tile {
 			background-color: $f-tile;
 		}
@@ -341,4 +348,27 @@
 		background-color: transparent;
 		cursor: pointer;
 	}
+}
+select.fire-rate-select {
+	background: beige;
+  }
+  .pulsing-text {
+    animation: pulse 1s infinite alternate;
+	color: red;
+	padding: 5px;
+    font-family: "Lobster", cursive;
+	text-align: center;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+.flexrow.resource.pulsing {
+    grid-column: 1 / -1;
+	place-self: center;
 }

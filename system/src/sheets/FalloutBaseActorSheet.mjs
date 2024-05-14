@@ -218,11 +218,25 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		html.find(".skill .item-name").click(ev => {
 			const li = $(ev.currentTarget).parents(".item");
 			const item = this.actor.items.get(li.data("itemId"));
+			let ap = 0;
+			let gmap = 0;
+			let apcost=0;
+			if (this.actor.type === "creature" && this.actor.type === "npc") {
+				ap = game.settings.get("fallout", "gmAP");
+			}
+			else {
+				ap = parseInt(game.settings.get("fallout", "partyAP"));
+				gmap = parseInt(game.settings.get("fallout", "gmAP"));
+			}
 			this._onRollSkill(
 				item.localizedName,
 				item.system.value,
 				this.actor.system.attributes[item.system.defaultAttribute].value,
-				item.system.tag
+				item.system.tag,
+				ap,
+				gmap,
+				apcost,
+				this.actor
 			);
 		});
 
@@ -426,13 +440,17 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		);
 	}
 
-	_onRollSkill(skillName, rank, attribute, tag) {
+	_onRollSkill(skillName, rank, attribute, tag, ap, gmap, apcost) {
 		fallout.Dialog2d20.createDialog({
 			rollName: skillName,
 			diceNum: 2,
 			attribute: attribute,
 			skill: rank,
 			tag: tag,
+			ap: ap,
+			gmap: gmap,
+			apcost: apcost,
+			actor: this.actor,
 			complication: parseInt(this.actor.system.complication),
 		});
 	}
@@ -492,12 +510,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		else actorUUID = this.actor.uuid;
 
 		// console.warn(fromUuidSync(actorUUID).actor)
-
 		fallout.DialogD6.createDialog({
 			rollName: rollName,
 			diceNum: numOfDice,
 			actor: actorUUID,
 			weapon: item,
+			otherdmgdice: 0,
+			firerateamo: 0,
 		});
 	}
 
@@ -580,9 +599,17 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			"fallout", "automaticAmmunitionCalculation"
 		);
 
-		const actorCanUseAmmo =
-			["character", "robot"].includes(this.actor.type);
+		let actorCanUseAmmo = true;
+		const autoCalculateAmmoGM = game.settings.get(
+			"fallout", "automaticAmmunitionCalculationGM"
+		);
+		if (autoCalculateAmmoGM === true) {
+			 actorCanUseAmmo = true;
 
+		}
+		else {
+			 actorCanUseAmmo =	["character", "robot"].includes(this.actor.type);
+		}
 		const ammoPopulated = item.system.ammo !== "";
 
 		if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
@@ -594,8 +621,14 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
 				return;
 			}
-
-			if (shotsAvailable < item.system.ammoPerShot) {
+			let usedammo = 0;
+			if (item.system.damage.weaponQuality.gatling.value === true) {
+				 usedammo = item.system.ammoPerShot*10;
+			}
+			else {
+				 usedammo = item.system.ammoPerShot;
+			}
+			if (shotsAvailable < usedammo ) {
 				ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
 				return;
 			}

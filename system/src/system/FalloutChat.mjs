@@ -132,7 +132,7 @@ export default class FalloutChat {
 				const falloutRoll = message.flags.falloutroll;
 				const weapon = message.flags.weapon;
 
-				fallout.DialogD6.createDialog({
+				fallout.DialogD6.addcreateDialog({
 					rollname: falloutRoll.rollname,
 					diceNum: 1,
 					falloutRoll: falloutRoll,

@@ -246,11 +246,18 @@ export class Roller2D20 {
 
 	static async rollD6({
 		actor = null,
-		dicenum = 2,
+		diceNum = 2,
 		rollname = "Roll D6",
 		weapon = null,
+		otherdmgdice = 0,
+		firerateamo = 0,
 	}={}) {
-		let formula = `${dicenum}dc`;
+		const isgatling = weapon.system.damage.weaponQuality.gatling.value;
+		if (isgatling === true) {
+			firerateamo = firerateamo *2;
+		}
+		const totalCD = firerateamo+ otherdmgdice+diceNum;
+		let formula = `${totalCD}dc`;
 		let roll = new Roll(formula);
 
 		await roll.evaluate();
@@ -343,13 +350,14 @@ export class Roller2D20 {
 		});
 	}
 
-	static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null, actor = null } = {}) {
-		let formula = `${dicenum}dc`;
+	static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null, actor = null, otherdmgdice = 0, firerateamo = 0} = {}) {
+		const totalCD = firerateamo+ otherdmgdice;
+		let formula = `${totalCD}dc`;
 		let _roll = new Roll(formula);
 
 		await _roll.evaluate({ async: true });
 
-		let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
+		let newRollName = `${falloutRoll.rollname} [+ ${totalCD} DC]`;
 		let oldDiceRolled = falloutRoll.dicesRolled;
 
 		return Roller2D20.parseD6Roll({

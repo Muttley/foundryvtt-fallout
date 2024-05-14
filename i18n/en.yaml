@@ -474,10 +474,16 @@ FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unrel
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
+FALLOUT.UI.Additionalamo: Additional damage dice from firerate
+FALLOUT.UI.Additionalmeledmg: Additional damage dice for party AP
+FALLOUT.UI.AdditionalmeledmgOverseer: Additional damage dice for overseer AP
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
 FALLOUT.UI.AreYouSure: Are You Sure?
+FALLOUT.UI.ASSISTANCE: Assistance
 FALLOUT.UI.BaseDamage: Base Damage
+FALLOUT.UI.Bonusdmg: Additionad damage dice
 FALLOUT.UI.BOOKS_AND_MAGZS: Books and Magazines
+FALLOUT.UI.Buy_from_Overseer: Buy from Overseer
 FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Caps
 FALLOUT.UI.CarryWeight: Carry Weight
@@ -491,23 +497,34 @@ FALLOUT.UI.Cost: Cost
 FALLOUT.UI.Damage: Damage
 FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
+FALLOUT.UI.FREED20: Free additional dice
 FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
 FALLOUT.UI.Name: Name
+FALLOUT.UI.Not_Enough: Not Enough
 FALLOUT.UI.OTHER: Other
 FALLOUT.UI.Perks: Perks
 FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Quantity
 FALLOUT.UI.Rarity: Rarity
+FALLOUT.UI.REGULAR: Regular
+FALLOUT.UI.PAYAP1: Pay 1AP
+FALLOUT.UI.PAYAP3: Pay 3AP
+FALLOUT.UI.PAYAP6: Pay 6AP
 FALLOUT.UI.ROBOT_MODULES: Robot Modules
+FALLOUT.UI.Roll: Roll
 FALLOUT.UI.SaveChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Special Ability
+FALLOUT.UI.Spend_AP: Spend AP
+FALLOUT.UI.Spend_Overseer_AP: Spend Overseer AP
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
+FALLOUT.UI.Weapondamagedice: Damage dice from weapon
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
+FALLOUT.UI.With: With
 FALLOUT.UI.Yes: Yes
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking

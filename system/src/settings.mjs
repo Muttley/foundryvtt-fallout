@@ -85,6 +85,14 @@ export default function registerSettings() {
 		default: true,
 		type: Boolean,
 	});
+	game.settings.register(SYSTEM_ID, "automaticAmmunitionCalculationGM", {
+		name: "Ammunition Calculation for GM",
+		hint: "Same like Ammunition Calculation but for NPC",
+		scope: "world",
+		config: true,
+		default: true,
+		type: Boolean,
+	});
 
 	game.settings.register(SYSTEM_ID, "applyWearAndTearToWeaponDamage", {
 		name: "Apply Wear and Tear to Weapon Damage",

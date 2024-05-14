@@ -474,10 +474,16 @@ FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, 
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: To nigdy nie było przeznaczone do użycia jako broń ręczna. Kiedy atakujesz bronią, każda komplikacja, którą zadajesz, zadaje 2KW obrażeń od promieniowania w wyniku radioaktywnego sprzężenia zwrotnego. Broń nie może posiadać zarówno stabilnego, jak i niestabilnego promieniowania.
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
+FALLOUT.UI.Additionalamo: Dodatkowe kości obrażeń z szybkoszczelność
+FALLOUT.UI.Additionalmeledmg: Dodatkowe kości obrażeń za PA Drużyny
+FALLOUT.UI.AdditionalmeledmgOverseer: Dodatkowe kości obrażeń za PA Nadzorcy
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
 FALLOUT.UI.AreYouSure: Jesteś pewien?
-FALLOUT.UI.BaseDamage: Base Damage
+FALLOUT.UI.ASSISTANCE: Pomoc
+FALLOUT.UI.BaseDamage: Kośći obrażeń broni
+FALLOUT.UI.Bonusdmg: Dodatkowe kości obrażeń
 FALLOUT.UI.BOOKS_AND_MAGZS: Książki i Czasopisma
+FALLOUT.UI.Buy_from_Overseer: Kup PA od Nadzordy
 FALLOUT.UI.Cancel: Anuluj
 FALLOUT.UI.CAPS: Kapsle
 FALLOUT.UI.CarryWeight: Noszony ciężar
@@ -491,23 +497,34 @@ FALLOUT.UI.Cost: Cena
 FALLOUT.UI.Damage: Obrażenia
 FALLOUT.UI.DISEASES: Choroby
 FALLOUT.UI.favorite: Ulubiony
+FALLOUT.UI.FREED20: Darmowa dodatkowa kość
 FALLOUT.UI.INVENTORY: Ekwipunek
 FALLOUT.UI.MISCELLANY: Rozmaitości
 FALLOUT.UI.Name: Nazwa
+FALLOUT.UI.Not_Enough: Nie wystarczająco
 FALLOUT.UI.OTHER: Inne
 FALLOUT.UI.Perks: Profity
 FALLOUT.UI.Qty: Ilość
 FALLOUT.UI.Quantity: Ilość
 FALLOUT.UI.Rarity: Rzadkość
+FALLOUT.UI.REGULAR: Podstawowy
+FALLOUT.UI.PAYAP1: Wydaj 1 PA
+FALLOUT.UI.PAYAP3: Wydaj 3 PA
+FALLOUT.UI.PAYAP6: Wydaj 6 PA
 FALLOUT.UI.ROBOT_MODULES: Modyfikacje Robotów
+FALLOUT.UI.Roll: Rzuć
 FALLOUT.UI.SaveChanges: Zapisz zmiany
 FALLOUT.UI.Special_Abilities: Zdolności Specjalne
 FALLOUT.UI.SPECIAL_ABILITY: Zdolności Specjalne
+FALLOUT.UI.Spend_AP: Wydaj PA
+FALLOUT.UI.Spend_Overseer_AP: Wydaj PA Nazorcy
 FALLOUT.UI.stashed: Schowane
 FALLOUT.UI.Type: Typ
 FALLOUT.UI.UNSORTED: Nieposortowane
+FALLOUT.UI.Weapondamagedice: Kości obrażeń z bronii
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
+FALLOUT.UI.With: Z
 FALLOUT.UI.Yes: Yes
 FALLOUT.WEAPONS.damageEffect.arc: Łuk
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
