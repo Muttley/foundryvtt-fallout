@@ -30,6 +30,11 @@ export class Roller2D20 {
 
 		await roll.evaluate();
 
+		try {
+			game.dice3d.showForRoll(roll);
+		}
+		catch(err) {}
+
 		let hitLocation = undefined;
 		let hitLocationResult = undefined;
 
@@ -153,7 +158,12 @@ export class Roller2D20 {
 		let formula = `${numOfDice}d20`;
 		let _roll = new Roll(formula);
 
-		await _roll.evaluate({ async: true });
+		await _roll.evaluate();
+
+		try {
+			game.dice3d.showForRoll(_roll);
+		}
+		catch(err) {}
 
 		await Roller2D20.parseD20Roll({
 			rollname: `${rollname} re-roll`,
@@ -255,6 +265,11 @@ export class Roller2D20 {
 
 		await roll.evaluate();
 
+		try {
+			game.dice3d.showForRoll(roll);
+		}
+		catch(err) {}
+
 		return Roller2D20.parseD6Roll({
 			rollname: rollname,
 			roll: roll,
@@ -331,7 +346,12 @@ export class Roller2D20 {
 		let formula = `${numOfDice}dc`;
 		let _roll = new Roll(formula);
 
-		await _roll.evaluate({ async: true });
+		await _roll.evaluate();
+
+		try {
+			game.dice3d.showForRoll(_roll);
+		}
+		catch(err) {}
 
 		return Roller2D20.parseD6Roll({
 			actor: actor,
@@ -347,7 +367,12 @@ export class Roller2D20 {
 		let formula = `${dicenum}dc`;
 		let _roll = new Roll(formula);
 
-		await _roll.evaluate({ async: true });
+		await _roll.evaluate();
+
+		try {
+			game.dice3d.showForRoll(roll);
+		}
+		catch(err) {}
 
 		let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
 		let oldDiceRolled = falloutRoll.dicesRolled;
