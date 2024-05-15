@@ -300,11 +300,14 @@ export class DialogD6 extends Dialog {
 	}
 
 	async checkAmmo(diceNum, initDmg) {
-
 		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
+
 		if (!this.actor) return 0;
+
 		if (!this.weapon) return 0;
+
 		if (this.weapon.system.ammo === "") return 0;
+
 		// Check if there is ammo at all
 		let _actor;
 		if (this.actor.startsWith("Actor")) {
@@ -313,8 +316,9 @@ export class DialogD6 extends Dialog {
 		else if (this.actor.startsWith("Scene")) {
 			_actor = fromUuidSync(this.actor).actor;
 		}
+
 		if (!_actor) return 0;
-		// eslint-disable-next-line eqeqeq
+
 		if (_actor.type !== "character" && _actor.type !== "robot") return 0;
 		let additionalAmmo = "0";
 		if (this.weapon.system.weaponType !== "meleeWeapons" && this.weapon.system.weaponType !== "unarmed") {
@@ -326,7 +330,6 @@ export class DialogD6 extends Dialog {
 			}
 			// Check if there is enough ammo
 			const totalDice = parseInt(diceNum);
-
 			// eslint-disable-next-line semi
 			const weaponDmg = parseInt(initDmg);
 			additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
@@ -337,7 +340,6 @@ export class DialogD6 extends Dialog {
 			if (this.weapon.system.damage.weaponQuality.gatling.value === true) {
 				additionalAmmo = additionalAmmo*10;
 			}
-
 			if (shotsAvailable < additionalAmmo) {
 				ui.notifications.warn(`Not enough ${this.weapon.system.ammo} ammo`);
 				return -1;
