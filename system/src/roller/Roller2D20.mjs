@@ -507,6 +507,7 @@ export class reroll extends Dialog {
 				const part3 = game.i18n.localize("FALLOUT.TEMPLATES.Points");
 				ui.notifications.warn(`${part1} ${part2} ${part3}`);
 				html.find(".spend-luck")[0].selectedIndex = 0;
+				html.find(".spend-luck").trigger("change");
 
 			}
 		});
