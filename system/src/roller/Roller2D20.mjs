@@ -487,18 +487,23 @@ export class reroll extends Dialog {
 		super.activateListeners(html);
 		html.on("change", ".spend-luck", event =>  {
 			let usedluckpoints = 0;
+			let rerolleddice = 0;
 			if (this.rolltype === 6) {
 				usedluckpoints = Math.ceil(parseInt($(event.currentTarget).val())/ 3);
+				rerolleddice = parseInt($(event.currentTarget).val());
 			}
 			else {
 				usedluckpoints = parseInt($(event.currentTarget).val());
+				rerolleddice = usedluckpoints;
 			}
 			const nonSpendLuck = html.find(".non-spend-luck");
+			const nonSpendLucknumofdice = parseInt($(nonSpendLuck).val());
 			nonSpendLuck.empty();
-			for (let i = 0; i <= this.numOfDice - usedluckpoints; i++) {
+			for (let i = 0; i <= this.numOfDice - rerolleddice; i++) {
 				const adjustedValue = Math.max(0, i);
 				const selected = i === 0 ? "selected" : "";
 				nonSpendLuck.append(`<option value="${adjustedValue}" ${selected}>${adjustedValue}</option>`);
+				nonSpendLuck[0].selectedIndex = nonSpendLucknumofdice;
 			}
 			const avaliableluck = this.actor.system.luckPoints;
 			if (usedluckpoints > avaliableluck) {
@@ -514,11 +519,13 @@ export class reroll extends Dialog {
 		html.on("change", ".non-spend-luck", event => {
 			const freedicetoreroll = parseInt($(event.currentTarget).val());
 			const SpendLuck = html.find(".spend-luck");
+			const spendLucknumofdice = html.find(".spend-luck").val();
 			SpendLuck.empty(); // Clear existing options
 			for (let i = 0; i <= this.numOfDice - freedicetoreroll; i++) {
 				const adjustedValue = Math.max(0, i);
 				const selected = i === 0 ? "selected" : "";
 				SpendLuck.append(`<option value="${adjustedValue}" ${selected}>${adjustedValue}</option>`);
+				SpendLuck[0].selectedIndex = spendLucknumofdice;
 			}
 		});
 		html.on("click", ".dialog-button.spendluk", () => {
