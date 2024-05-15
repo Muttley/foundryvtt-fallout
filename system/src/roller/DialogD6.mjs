@@ -300,6 +300,7 @@ export class DialogD6 extends Dialog {
 	}
 
 	async checkAmmo(diceNum, initDmg) {
+
 		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
 		if (!this.actor) return 0;
 		if (!this.weapon) return 0;
