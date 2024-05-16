@@ -101,9 +101,11 @@ export default class FalloutActor extends Actor {
 	perkLevel(perkName) {
 		if (!["character", "robot"].includes(this.type)) return 0;
 
-		const perk = this.items.find(i => i.type === "perk"
-			&& i.name.toLowerCase() === perkName.toLowerCase()
-		);
+		const perk = this.items.find(i => {
+			const hasBabeleTranslation = i.flags?.babele?.hasTranslation === true;
+			const nameToCompare = hasBabeleTranslation ? i.flags.babele.originalName : i.name;
+			return i.type === "perk" && nameToCompare.toLowerCase() === perkName.toLowerCase();
+		});
 
 		return perk?.system?.rank?.value ?? 0;
 	}
