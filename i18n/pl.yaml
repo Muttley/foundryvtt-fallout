@@ -233,7 +233,7 @@ FALLOUT.SETTLEMENT.Power.label: Moc
 FALLOUT.SETTLEMENT.Water.label: Woda
 FALLOUT.SKILL.Athletics: Atletyka
 FALLOUT.SKILL.Barter: Handel
-FALLOUT.SKILL.Big Guns: Broń ciężka
+FALLOUT.SKILL.Big Guns: Broń Ciężka
 FALLOUT.SKILL.Energy Weapons: Broń Energetyczna
 FALLOUT.SKILL.Explosives: Materiały wybuchowe
 FALLOUT.SKILL.Lockpick: Otwieranie zamków
@@ -323,7 +323,7 @@ FALLOUT.TEMPLATES.CreateNpc: Stwórz NPC
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Stwórz struktury i pomieszczenia
 FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
-FALLOUT.TEMPLATES.current: obecny
+FALLOUT.TEMPLATES.current: Obecny
 FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
 FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
 FALLOUT.TEMPLATES.CustomSkill: Custom Skill
@@ -565,8 +565,8 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
-FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
-FALLOUT.WEAPONS.weaponType.bows: Łuki
+FALLOUT.WEAPONS.weaponType.bigGuns: Broń Ciężka
+FALLOUT.WEAPONS.weaponType.bows: Atletyka
 FALLOUT.WEAPONS.weaponType.creatureAttack: Atak Stwora
 FALLOUT.WEAPONS.weaponType.custom: Custom
 FALLOUT.WEAPONS.weaponType.energyWeapons: Broń Energetyczna
@@ -574,7 +574,7 @@ FALLOUT.WEAPONS.weaponType.explosives: Materiały wybuchowe
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Broń Biała
 FALLOUT.WEAPONS.weaponType.smallGuns: Broń palna
 FALLOUT.WEAPONS.weaponType.throwing: Rzucana
-FALLOUT.WEAPONS.weaponType.unarmed: Bez Broni
+FALLOUT.WEAPONS.weaponType.unarmed: Bijatyka
 ITEM.AmmoPerShot: Amunicja na strzał
 TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie

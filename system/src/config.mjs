@@ -326,14 +326,14 @@ FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {
 };
 
 FALLOUT.WEAPON_SKILLS = {
-	bigGuns: "Big Guns",
-	bows: "Athletics",
-	energyWeapons: "Energy Weapons",
-	explosives: "Explosives",
-	meleeWeapons: "Melee Weapons",
-	smallGuns: "Small Guns",
-	throwing: "Throwing",
-	unarmed: "Unarmed",
+	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
+	bows: "FALLOUT.WEAPONS.weaponType.bows",
+	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
+	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
+	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",
+	smallGuns: "FALLOUT.WEAPONS.weaponType.smallGuns",
+	throwing: "FALLOUT.WEAPONS.weaponType.throwing",
+	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
 
 FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE = {
@@ -372,7 +372,6 @@ FALLOUT.WEAPON_TYPES = {
 
 export async function discoverAvailableAmmoTypes() {
 	const ammo = await fallout.compendiums.ammo();
-
 	CONFIG.FALLOUT.AMMO_BY_UUID = {};
 	let ammoTypes = [];
 	for (const ammoType of ammo) {
