@@ -327,7 +327,7 @@ FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {
 
 FALLOUT.WEAPON_SKILLS = {
 	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
-	bows: "FALLOUT.WEAPONS.weaponType.bows",
+	bows: "FALLOUT.SKILL.Athletics",
 	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
 	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
 	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",
