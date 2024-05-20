@@ -1,3 +1,13 @@
+# v11.10.1
+
+## Bugs
+- [#389] Dice So Nice stopped showing for most rolls
+
+## Chores
+- [#387] Merge French translation updates from Crowdin
+
+---
+
 # v11.10.0
 
 ## Enhancement
@@ -8,6 +18,12 @@
 	* This is done by editing the frame item and using the Frame tab to select/deselect which power armor items owned by the actor are attached.
 	* The frame and any attached items will be grouped together at the top of the inventory section, and each attached piece will show a "plug" icon to show they attached to a base frame.
 	* All attached items will also share Power, Equipped and Stashed settings so that using these controls on any item in the group will modify the value on all items.
+
+- [#366] Add tool to simplify the breaking down of Junk items
+
+	* This can be launched from the Gear tab of the character sheet, there is a new item control button next to the Junk inventory item.
+	* This tool also checks to see what levels of the Salvage perk you have and handles the salvage process accordingly.
+	* GMs can right-click on a salvage results card and select to "Advance Game Time" by the amount detailed on the result chat card.
 
 - [#367] Add option to automatically reduce weapon damage by wear and tear rate and refuse to fire if broken
 
@@ -29,18 +45,22 @@
 	* The upgrade process will attempt to migrate existing values, but if a non-empty, non-numeric string is found will default to a value of 1
 
 - [#372] Available ammo for a weapon missing from favourite and main weapons list
+- [#384] Available shots calculation not updated immediately a new ammo item is added to the character
 
 ## Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12
-- [#358] globalThis.mergeObject must now be accessed via foundry.utils.mergeObject
-- [#359] globalThis.duplicate must now be accessed via foundry.utils.duplicate
-- [#360] The {{select}} handlebars helper is deprecated
-- [#361] globalThis.randomID must now be accessed via foundry.utils.randomID
-- [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances
-- [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES
-- [#364] The async option for Roll#evaluate has been removed
+- [#358] globalThis.mergeObject must now be accessed via foundry.utils.mergeObject *(Foundry v12 compatibility)*
+- [#359] globalThis.duplicate must now be accessed via foundry.utils.duplicate *(Foundry v12 compatibility)*
+- [#360] The {{select}} handlebars helper is deprecated *(Foundry v12 compatibility)*
+- [#361] globalThis.randomID must now be accessed via foundry.utils.randomID *(Foundry v12 compatibility)*
+- [#362] game.system.model.Actor.character.body_parts no longer accessible when checking resistances *(Foundry v12 compatibility)*
+- [#363] CONST.CHAT_MESSAGE_TYPES is deprecated in favor of CONST.CHAT_MESSAGE_STYLES *(Foundry v12 compatibility)*
+- [#364] The async option for Roll#evaluate has been removed *(Foundry v12 compatibility)*
+- [#379] Merge French translation updates from Crowdin
+- [#381] ActiveEffect#icon has been migrated to ActiveEffect#img *(Foundry v12 compatibility)*
+- [#383] Global "Die" is now namespaced under foundry.dice.terms.Die *(Foundry v12 compatibility)*
 
-*Many thanks to **Erik H** for kindly allowing us to link to his scavenging help tool.*
+*Many thanks to **MrAtoni** for kindly allowing us to link to his scavenging help tool.*
 
 ---
 

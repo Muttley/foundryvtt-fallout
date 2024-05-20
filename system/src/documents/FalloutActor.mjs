@@ -83,7 +83,6 @@ export default class FalloutActor extends Actor {
 		return hasActiveOwner;
 	}
 
-
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -96,16 +95,18 @@ export default class FalloutActor extends Actor {
 		return overridden.includes(fieldName);
 	}
 
-	/** @override */
-	// prepareData() {
-	// 	super.prepareData();
-	// }
+	// Returns the current perk level, or zero if the player doesn't have the
+	// perk (or can't have perks)
+	//
+	perkLevel(perkName) {
+		if (!["character", "robot"].includes(this.type)) return 0;
 
-	/** @override */
-	// prepareBaseData() {
-	// Data modifications in this step occur before processing embedded
-	// documents or derived data.
-	// }
+		const perk = this.items.find(i => i.type === "perk"
+			&& i.name.toLowerCase() === perkName.toLowerCase()
+		);
+
+		return perk?.system?.rank?.value ?? 0;
+	}
 
 	/**
 	* @override
@@ -531,7 +532,7 @@ export default class FalloutActor extends Actor {
 		this.system.outfittedLocations = outfittedLocations;
 	}
 
-	async _getAvailableAmmoType(name) {
+	_getAvailableAmmoType(name) {
 		const ammoItems = this.items.filter(
 			i => i.name === name && i.type === "ammo"
 		);
@@ -1431,7 +1432,7 @@ export default class FalloutActor extends Actor {
 
 	// Reduce Ammo
 	async reduceAmmo(ammoName="", roundsToUse=0) {
-		const [ammoItems, shotsAvailable] = await this._getAvailableAmmoType(ammoName);
+		const [ammoItems, shotsAvailable] = this._getAvailableAmmoType(ammoName);
 
 		if (shotsAvailable <= 0) return;
 

@@ -345,6 +345,7 @@ export class DialogD6 extends Dialog {
 				return -1;
 			}
 			return additionalAmmo;
+
 		}
 	}
 

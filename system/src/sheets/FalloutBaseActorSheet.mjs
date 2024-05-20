@@ -613,7 +613,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		const ammoPopulated = item.system.ammo !== "";
 
 		if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
-			const [ammo, shotsAvailable] = await this.actor._getAvailableAmmoType(
+			const [ammo, shotsAvailable] = this.actor._getAvailableAmmoType(
 				item.system.ammo
 			);
 

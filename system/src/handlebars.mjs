@@ -2,6 +2,12 @@ export default function registerHandlebarsHelpers() {
 	/* -------------------------------------------- */
 	/*  GENERAL HELPERS                             */
 	/* -------------------------------------------- */
+	Handlebars.registerHelper("activeEffectIcon", effect => {
+		return fallout.utils.foundryMinVersion(12)
+			? effect.img
+			: effect.icon;
+	});
+
 	Handlebars.registerHelper("concat", function() {
 		let outStr = "";
 		for (let arg in arguments) {

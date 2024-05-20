@@ -1,0 +1,30 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<section class="box padding5">
+		<p class="text-center">
+			{{localize "FALLOUT.APP.SalvageJunk.selectedAmount"
+				amount=junkToProcess
+			}}
+		</p>
+		<p class="text-center">
+			{{localize "FALLOUT.APP.SalvageJunk.time"
+				time=timeToProcess
+			}}
+		</p>
+		<div class="dialog-inputs">
+			<input
+				type="range"
+				name="junkToProcess"
+				min="{{minJunk}}"
+				max="{{maxJunk}}"
+				value="{{junkToProcess}}"
+				autofocus
+			>
+		</div>
+	</section>
+
+	<footer>
+		<button class="fallout-button start-salvaging-button">
+			<i class="fa-solid fa-screwdriver-wrench"></i> {{localize "FALLOUT.APP.SalvageJunk.start"}}
+		</button>
+	</footer>
+</form>

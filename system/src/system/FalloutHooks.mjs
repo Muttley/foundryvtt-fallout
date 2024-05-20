@@ -1,4 +1,5 @@
 import { conditionTrackerHook } from "../hooks/conditionTrackerHook.mjs";
+import { getChatLogEntryContextHook } from "../hooks/getChatLogEntryContextHook.mjs";
 import { hotbarDropHook } from "../hooks/hotbarDropHook.mjs";
 import { initiativeHooks } from "../hooks/initiativeHooks.mjs";
 import { preCreateItemHook } from "../hooks/preCreateItemHook.mjs";
@@ -13,6 +14,7 @@ export const FalloutHooks = {
 
 		const listeners = [
 			conditionTrackerHook,
+			getChatLogEntryContextHook,
 			hotbarDropHook,
 			initiativeHooks,
 			preCreateItemHook,

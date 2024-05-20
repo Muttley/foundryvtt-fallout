@@ -117,8 +117,23 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		});
 
 		// * Toggle Power on Power Armor Item
-		html.find(".item-powered").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
+		html.find(".salvage-junk").click(async event => {
+			event.preventDefault();
+
+			if (this.actor.system.materials.junk > 0) {
+				return new fallout.apps.SalvageJunk(this.actor).render(true);
+			}
+			else {
+				return ui.notifications.warn(
+					game.i18n.localize("FALLOUT.APP.SalvageJunk.error.noJunkToSalvage"),
+					{permanent: false}
+				);
+			}
+		});
+
+		html.find(".item-powered").click(async event => {
+			event.preventDefault();
+			const li = $(event.currentTarget).parents(".item");
 
 			const attachedToId = li.data("item-attached") ?? "";
 
@@ -162,8 +177,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		});
 
 		// * Toggle Equip Inventory Item
-		html.find(".item-toggle").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
+		html.find(".item-toggle").click(async event => {
+			event.preventDefault();
+
+			const li = $(event.currentTarget).parents(".item");
 
 			const attachedToId = li.data("item-attached") ?? "";
 
