@@ -326,14 +326,14 @@ FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {
 };
 
 FALLOUT.WEAPON_SKILLS = {
-	bigGuns: "FALLOUT.WEAPONS.weaponType.bigGuns",
+	bigGuns: "FALLOUT.SKILL.Big Guns",
 	bows: "FALLOUT.SKILL.Athletics",
-	energyWeapons: "FALLOUT.WEAPONS.weaponType.energyWeapons",
-	explosives: "FALLOUT.WEAPONS.weaponType.explosives",
-	meleeWeapons: "FALLOUT.WEAPONS.weaponType.meleeWeapons",
-	smallGuns: "FALLOUT.WEAPONS.weaponType.smallGuns",
-	throwing: "FALLOUT.WEAPONS.weaponType.throwing",
-	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
+	energyWeapons: "FALLOUT.SKILL.Energy Weapons",
+	explosives: "FALLOUT.SKILL.Explosives",
+	meleeWeapons: "FALLOUT.SKILL.Melee Weapons",
+	smallGuns: "FALLOUT.SKILL.Small Guns",
+	throwing: "FALLOUT.SKILL.Throwing",
+	unarmed: "FALLOUT.SKILL.Unarmed",
 };
 
 FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE = {
