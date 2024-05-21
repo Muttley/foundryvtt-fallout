@@ -1,6 +1,7 @@
 # v11.11.0
 
 #### Enhancements
+- [#402] Add carry capacity to all gear tabs
 - [#403] Add CSS styling for Journal entries
 - [#405] Dynamically link original ticket URL when generating Release Notes document
 - [#408] Add min-width to Actor sheets to avoid the layout breaking when shrunk too small
