@@ -2,4 +2,24 @@
 	{{> actor/pc/partials/apparel
 		apparelGroups=allApparel
 	}}
+	<div class="box no-padding"	style="margin-top: 5px; margin-bottom: 0px;">
+		<div class="flexrow align-mid">
+			<div class="text-center">
+				<label>
+					{{localize "FALLOUT.TEMPLATES.Encumbrance_Level"}}:
+					{{system.encumbranceLevel}}
+				</label>
+			</div>
+			<div style="text-align: center;">
+				<label>
+					{{system.carryWeight.total}} / {{system.carryWeight.value}}
+					{{#if useKgs}}
+						{{localize "FALLOUT.TEMPLATES.kgs"}}
+					{{else}}
+						{{localize "FALLOUT.TEMPLATES.lbs"}}
+					{{/if}}
+				</label>
+			</div>
+		</div>
+	</div>
 </div>
