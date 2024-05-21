@@ -10,9 +10,13 @@
 #### Bugs
 - [#397] Dice So Nice only show for the player who rolls
 - [#404] Bogus permission error when closing Item from locked compendium
+- [#411] When scrapping junk, unable to locate Scrapper perk by name for people using Babele to translate compendium items.
 
 #### Chores
 - [#399] Merge French translation updates from Crowdin
+- [#406] Merge French and Polish translation updates from Crowdin
+
+*Many thanks to **extazz17** for contributed fixes in this build*
 
 ---
 

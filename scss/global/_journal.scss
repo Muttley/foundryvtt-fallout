@@ -1,7 +1,3 @@
-.sheet.journal-entry {
-	--sidebar-width-expanded: 200px;
-}
-
 .system-fallout .sheet.journal-entry .journal-entry-content {
 	background: url(../assets/ui/journal/journal-bg.webp);
 };
@@ -25,34 +21,20 @@
 {
 
 	a.content-link,
-	i {
+	a.content-link i {
 		background-color: $f-vault-blue;
 		color: $c-font-prim;
 	}
 
 	aside {
-		background: rgba(28, 63, 125, 0.2);
-		border-radius: 16px;
-		outline-style: solid;
-		outline-width: 6px;
-		outline-color: rgb(28, 63, 125);
-		outline-offset: -8px;
-		padding: 16px;
-		margin: 32px 32px 16px 32px;
-
-		p {
-			font-size: 1.2em;
-		}
-	}
-
-	blockquote {
 		border: none;
 		background-color: rgb(246, 227, 205);
 		padding: 8px;
-		margin: 32px 16px 16px 16px;
+		margin: 16px;
+		margin-bottom: 26px;
 		box-shadow: -8px 10px rgb(219, 140, 61);
 
-		.blockquote-title {
+		.aside-title {
 			display: contents;
 			background: none;
 			font-weight: 700;
@@ -64,6 +46,18 @@
 		}
 	}
 
+	blockquote {
+		border: none;
+		background-color: rgb(182, 219, 198);
+		padding: 8px;
+		margin: 16px;
+
+		p {
+			font-size: 1.15em;
+			font-style: italic;
+		}
+	}
+
 	footer {
 		background-color: rgb(28, 63, 125);
 		border-radius: 16px;
@@ -72,6 +66,7 @@
 		outline-offset: -8px;
 		padding: 20px;
 		color: white;
+		margin: 16px;
 
 		h1 {
 			background: none;
@@ -137,7 +132,7 @@
 
 	ul {
 		list-style-type: square;
-		margin-left: 4px;
+		margin: 0.5em 0.5em 1.5em;
 
 		li::marker {
 			color: #ca9e0f;
@@ -147,7 +142,7 @@
 
 	ol {
 		list-style-type: decimal;
-		margin-left: 4px;
+		margin: 0.5em 0.5em 1.5em;
 
 		li::marker {
 			font-size: unset;
@@ -169,11 +164,14 @@
 
 	table {
 		border: none;
+		margin-bottom: 1em;
+		margin-top: 1em;
 
 		caption {
 			text-align: left;
 			font-weight: bold;
 			font-size: 1.2em;
+			margin-bottom: 0.5em;
 		}
 
 		tbody {
@@ -199,7 +197,6 @@
 		}
 	}
 
-
 	.fo-energy,
 	.fo-physical,
 	.fo-pip-boy,
@@ -213,5 +210,30 @@
 	.fo-pip-boy {
 		background-color: $c-font-prim;
 		color: $f-vault-blue;
+	}
+
+	section {
+		.reveal {
+			float: right;
+		}
+
+		.secret {
+			background: rgba(125, 28, 28, 0.2);
+			border: 3px solid;
+			padding: 4px;
+			border-color: rgb(125, 28, 28);
+			border-radius: 8px;
+			padding: 8px;
+			margin: 16px;
+
+			p {
+				font-size: 1.2em;
+			}
+		}
+
+		.revealed {
+			border-color: rgb(28, 125, 34);
+			background: rgba(28, 125, 34, 0.2);
+		}
 	}
 }
