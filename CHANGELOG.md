@@ -3,6 +3,10 @@
 #### Enhancements
 - [#403] Add CSS styling for Journal entries
 
+#### Bugs
+- [#397] Dice So Nice only show for the player who rolls
+- [#404] Bogus permission error when closing Item from locked compendium
+
 #### Chores
 - [#399] Merge French translation updates from Crowdin
 
