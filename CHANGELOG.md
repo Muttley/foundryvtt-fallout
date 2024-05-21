@@ -3,6 +3,9 @@
 #### Enhancements
 - [#403] Add CSS styling for Journal entries
 
+#### Chores
+- [#399] Merge French translation updates from Crowdin
+
 ---
 
 # v11.10.1
