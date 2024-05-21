@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: Percepcja
 FALLOUT.AbilityStr: Siła
 FALLOUT.actor.inventory.materials.common: Pospolity
 FALLOUT.actor.inventory.materials.junk: Złom
-FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Odzyskaj śmieci
 FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
@@ -26,9 +26,9 @@ FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
 FALLOUT.APP.ChemDoseManager.title: Dawki środków chemicznych
-FALLOUT.APP.ItemTypeMenu.title: Select Item Type
-FALLOUT.APP.Loading.body: Searching the Wastelands...
-FALLOUT.APP.Loading.title: Loading
+FALLOUT.APP.ItemTypeMenu.title: Wybierz typ przedmiotu
+FALLOUT.APP.Loading.body: Przeszukiwanie pustkowi...
+FALLOUT.APP.Loading.title: Wczytywanie
 FALLOUT.APP.ModuleArtConfig.items: Przedmioty
 FALLOUT.APP.ModuleArtConfig.title: Ustaw obrazy
 FALLOUT.APP.PartySleep.chat_message: Drużyna śpi przez {duration}.
@@ -37,7 +37,7 @@ FALLOUT.APP.PartySleep.hour: 1 godzina
 FALLOUT.APP.PartySleep.hours: "{length} godzin"
 FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
 FALLOUT.APP.PartySleep.title: Drużyna Śpi
-FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Zaawansowany Czas Gry
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
 FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
