@@ -1,3 +1,10 @@
+# v11.11.1
+
+#### Bugs
+- [#417] Unable to modify items
+
+---
+
 # v11.11.0
 
 #### Enhancements
