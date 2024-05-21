@@ -23,7 +23,6 @@ function compileDocs(cb) {
 		// Dynamically add links to ticket numbers:
 		//
 		// Matches: [#389]
-		//
 		// Outputs: [**[#389](https://github.com/Muttley/foundryvtt-fallout/issues/389)**]
 		//
 		const enhancedSource = source.replace(
