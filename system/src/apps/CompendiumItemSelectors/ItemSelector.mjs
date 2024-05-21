@@ -148,7 +148,23 @@ export default class ItemSelector extends CompendiumItemSelector {
 		if (uuid !== "") {
 			const item = await fromUuid(uuid);
 			const itemData = item.toObject();
-			this.object.createEmbeddedDocuments("Item", [itemData]);
+			const oldflag = itemData.flags;
+			if (oldflag !== undefined) {
+				itemData.flags = {
+					core: {
+						sourceID: uuid,
+					},
+					...oldflag,
+				};
+			}
+			else {
+				itemData.flags = {
+					core: {
+						sourceID: uuid,
+					},
+				};
+			}
+			await this.object.createEmbeddedDocuments("Item", [itemData]);
 		}
 	}
 }
