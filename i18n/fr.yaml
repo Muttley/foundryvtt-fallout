@@ -48,7 +48,7 @@ FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
-FALLOUT.APPAREL.plating: Couvre-Chef
+FALLOUT.APPAREL.plating: Blindage
 FALLOUT.APPAREL.powerArmor: Armure Assistée
 FALLOUT.AvailabilityRoll.result.body: La rareté maximale disponible est de {rarity}
 FALLOUT.AvailabilityRoll.result.title: Lancer de disponibilité
@@ -134,7 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} a ré
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux radiations
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dégâts de radiation de {radsTaken} en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
-FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Recycleur
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
 FALLOUT.ChemDuration.instant: Instantanée
