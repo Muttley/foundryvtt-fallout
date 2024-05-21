@@ -183,6 +183,42 @@
 			},
 			"body": {
 				"body_parts": {
+					"head": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"torso": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
 					"armL": {
 						"injuries": [
 							0,
@@ -202,24 +238,6 @@
 						"status": "healthy"
 					},
 					"armR": {
-						"injuries": [
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						"injuryOpenCount": 0,
-						"injuryTreatedCount": 0,
-						"resistance": {
-							"energy": 0,
-							"physical": 0,
-							"poison": 0,
-							"radiation": 0
-						},
-						"status": "healthy"
-					},
-					"head": {
 						"injuries": [
 							0,
 							0,
@@ -272,25 +290,8 @@
 							"radiation": 0
 						},
 						"status": "healthy"
-					},
-					"torso": {
-						"injuries": [
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						"injuryOpenCount": 0,
-						"injuryTreatedCount": 0,
-						"resistance": {
-							"energy": 0,
-							"physical": 0,
-							"poison": 0,
-							"radiation": 0
-						},
-						"status": "healthy"
 					}
+
 				},
 				"bodyType": "humanoid",
 				"immunities": {
@@ -442,12 +443,12 @@
 				"value": 0
 			},
 			"location": {
+				"head": false,
+				"torso": false,
 				"armL": false,
 				"armR": false,
-				"head": false,
 				"legL": false,
-				"legR": false,
-				"torso": false
+				"legR": false
 			},
 			"mods": {
 				"current": 0,
