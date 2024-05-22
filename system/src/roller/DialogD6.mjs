@@ -42,11 +42,12 @@ export class DialogD6 extends Dialog {
 				});
 			}
 			else {
+				let _actor = game.actors.get(this.actor._id);
 				fallout.Roller2D20.addD6({
 					rollname: this.rollName,
 					dicenum: parseInt(diceNum),
 					weapon: this.weapon,
-					actor: this.actor,
+					actor: _actor,
 					falloutRoll: this.falloutRoll,
 				});
 			}
@@ -55,13 +56,7 @@ export class DialogD6 extends Dialog {
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
 				if (!this.actor) return;
 
-				let _actor;
-				if (this.actor.startsWith("Actor")) {
-					_actor = fromUuidSync(this.actor);
-				}
-				else if (this.actor.startsWith("Scene")) {
-					_actor = fromUuidSync(this.actor).actor;
-				}
+				let _actor = game.actors.get(this.actor._id);
 
 				if (_actor.type === "character" || _actor.type === "robot") {
 					if (additionalAmmo > 0) {
@@ -119,13 +114,7 @@ export class DialogD6 extends Dialog {
 		if (this.weapon.system.ammo === "") return 0;
 
 		// Check if there is ammo at all
-		let _actor;
-		if (this.actor.startsWith("Actor")) {
-			_actor = fromUuidSync(this.actor);
-		}
-		else if (this.actor.startsWith("Scene")) {
-			_actor = fromUuidSync(this.actor).actor;
-		}
+		let _actor=game.actors.get(this.actor._id);
 
 		if (!_actor) return 0;
 

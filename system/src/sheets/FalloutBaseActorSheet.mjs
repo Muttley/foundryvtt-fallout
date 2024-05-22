@@ -434,6 +434,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			skill: rank,
 			tag: tag,
 			complication: parseInt(this.actor.system.complication),
+			actor: this.actor,
 		});
 	}
 
@@ -486,17 +487,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		let rollName = item.name;
 
-		let actorUUID;
-		let _token = this.actor.token;
-		if (_token) actorUUID = this.actor.token.uuid;
-		else actorUUID = this.actor.uuid;
-
 		// console.warn(fromUuidSync(actorUUID).actor)
 
 		fallout.DialogD6.createDialog({
 			rollName: rollName,
 			diceNum: numOfDice,
-			actor: actorUUID,
+			actor: this.actor,
 			weapon: item,
 		});
 	}

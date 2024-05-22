@@ -96,11 +96,12 @@ export default class FalloutChat {
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,
 						successTreshold: falloutRoll.successTreshold,
+						actor: message.speaker.actor,
 					});
 				}
 				else if (falloutRoll.diceFace === "d6") {
 					fallout.Roller2D20.rerollD6({
-						actor: message.flags.actor,
+						actor: message.speaker.actor,
 						dicesRolled: falloutRoll.dicesRolled,
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,

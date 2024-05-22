@@ -141,6 +141,7 @@ export class Roller2D20 {
 	}
 
 	static async rerollD20({
+		actor = null,
 		complicationTreshold = 20,
 		critTreshold = 1,
 		dicesRolled = [],
@@ -153,8 +154,12 @@ export class Roller2D20 {
 			ui.notifications.notify("Select Dice you want to Reroll");
 			return;
 		}
-
+		const actordata = game.actors.get(actor);
 		let numOfDice = rerollIndexes.length;
+		if (actordata.type === "character" || actordata.type === "robot") {
+			const rolltype = 20;
+			numOfDice = await reroll.spendluck({actordata, numOfDice, rolltype});
+		}
 		let formula = `${numOfDice}d20`;
 		let _roll = new Roll(formula);
 
@@ -173,6 +178,7 @@ export class Roller2D20 {
 			complicationTreshold: complicationTreshold,
 			dicesRolled: dicesRolled,
 			rerollIndexes: rerollIndexes,
+			actor: actordata,
 		});
 	}
 
@@ -269,7 +275,6 @@ export class Roller2D20 {
 			game.dice3d.showForRoll(roll);
 		}
 		catch(err) {}
-
 		return Roller2D20.parseD6Roll({
 			rollname: rollname,
 			roll: roll,
@@ -343,6 +348,11 @@ export class Roller2D20 {
 			return;
 		}
 		let numOfDice = rerollIndexes.length;
+		const actordata = game.actors.get(actor);
+		if (actordata.type === "character" || actordata.type === "robot") {
+			const rolltype = 6;
+			numOfDice = await reroll.spendluck({actordata, numOfDice, rolltype});
+		}
 		let formula = `${numOfDice}dc`;
 		let _roll = new Roll(formula);
 
@@ -354,7 +364,7 @@ export class Roller2D20 {
 		catch(err) {}
 
 		return Roller2D20.parseD6Roll({
-			actor: actor,
+			actor: actordata,
 			dicesRolled: dicesRolled,
 			rerollIndexes: rerollIndexes,
 			roll: _roll,
@@ -431,6 +441,7 @@ export class Roller2D20 {
 			rollname,
 			weapon,
 			weaponDamageTypesList,
+			actor,
 		};
 
 		const html = await renderTemplate(
@@ -445,6 +456,7 @@ export class Roller2D20 {
 		falloutRoll.effects = effects;
 		falloutRoll.rerollIndexes = rerollIndexes;
 		falloutRoll.rollname = rollname;
+		falloutRoll.actor = actor;
 
 		const flags = {
 			actor,
@@ -454,9 +466,10 @@ export class Roller2D20 {
 
 		let chatData = {
 			content: html,
-			flags,
+			flags: flags,
 			roll,
 			rollMode: game.settings.get("core", "rollMode"),
+			speaker: ChatMessage.getSpeaker({actor: actor}),
 			user: game.user.id,
 		};
 
@@ -469,5 +482,128 @@ export class Roller2D20 {
 		// 	chatData.whisper = [game.user];
 		// }
 		await ChatMessage.create(chatData);
+	}
+}
+export class reroll extends Dialog {
+	constructor(
+		actordata,
+		numOfDice,
+		rolltype,
+		dialogData={},
+		options={}
+	) {
+		super(dialogData, options);
+		this.actor = actordata;
+		this.numOfDice = numOfDice;
+		this.rolltype = rolltype;
+	}
+
+	activateListeners(html) {
+		super.activateListeners(html);
+		html.on("change", ".spend-luck", event =>  {
+			let usedluckpoints = 0;
+			if (this.rolltype === 6) {
+				usedluckpoints = Math.ceil(parseInt($(event.currentTarget).val())/ 3);
+			}
+			else {
+				usedluckpoints = parseInt($(event.currentTarget).val());
+			}
+			const nonSpendLuck = html.find(".non-spend-luck");
+			const nonSpendLucknumofdice = parseInt($(nonSpendLuck).val());
+			nonSpendLuck.empty();
+			for (let i = 0; i <= this.numOfDice - usedluckpoints; i++) {
+				const adjustedValue = Math.max(0, i);
+				const selected = i === 0 ? "selected" : "";
+				nonSpendLuck.append(`<option value="${adjustedValue}" ${selected}>${adjustedValue}</option>`);
+				nonSpendLuck[0].selectedIndex = nonSpendLucknumofdice;
+			}
+			const avaliableluck = this.actor.system.luckPoints;
+			if (usedluckpoints > avaliableluck) {
+				const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
+				const part2 = game.i18n.localize("FALLOUT.AbilityLuc");
+				const part3 = game.i18n.localize("FALLOUT.TEMPLATES.Points");
+				ui.notifications.warn(`${part1} ${part2} ${part3}`);
+				html.find(".spend-luck")[0].selectedIndex = 0;
+				html.find(".spend-luck").trigger("change");
+
+			}
+		});
+		html.on("change", ".non-spend-luck", event => {
+			const freedicetoreroll = parseInt($(event.currentTarget).val());
+			const SpendLuck = html.find(".spend-luck");
+			const spendLucknumofdice =  parseInt($(SpendLuck).val());
+			SpendLuck.empty(); // Clear existing options
+			for (let i = 0; i <= this.numOfDice - freedicetoreroll; i++) {
+				const adjustedValue = Math.max(0, i);
+				const selected = i === 0 ? "selected" : "";
+				SpendLuck.append(`<option value="${adjustedValue}" ${selected}>${adjustedValue}</option>`);
+				SpendLuck[0].selectedIndex = spendLucknumofdice;
+			}
+		});
+
+	}
+
+	static async spendluck({actordata, numOfDice, rolltype }) {
+		return new Promise((resolve, reject) => {
+			const textnumberofdicetorerollluck = game.i18n.localize("FALLOUT.UI.NUMOFDTOREROLLLUCK");
+			const textnumberofdicetoreroll = game.i18n.localize("FALLOUT.UI.NUMOFDTOREROLL");
+			let optionsHtml = "";
+			for (let i = 0; i <= numOfDice; i++) {
+				if (i===0) {
+					optionsHtml += `<option value="${i}" selected>${i}</option>`;
+				}
+				else {
+					optionsHtml += `<option value="${i}">${i}</option>`;
+				}
+			}
+			const html = `
+			<div class="flexrow fallout-dialog">
+				<div class="flexrow resource" style="padding:5px">
+					<label class="title-label">${textnumberofdicetorerollluck}</label>
+					<select class="spend-luck" name="spend-luck">
+            			${optionsHtml}
+        			</select>
+					<label class="title-label">${textnumberofdicetoreroll}</label>
+					<select class="non-spend-luck" name="non-spend-luc">
+            			${optionsHtml}
+        			</select>
+				</div>
+			</div>`;
+			// eslint-disable-next-line max-len
+			let d = new reroll(actordata, numOfDice, rolltype, {
+				title: "spend luck",
+				content: html,
+				buttons: {
+					spendluk: {
+						icon: '<i class="fas fa-check"></i>',
+						label: "Re-Roll",
+						callback: html => {
+							const spendLuckValue = parseInt(html.find(".spend-luck").val());
+							const nonSpendLuckValue = parseInt(html.find(".non-spend-luck").val());
+							const numberofdicetoreroll = spendLuckValue + nonSpendLuckValue;
+
+							const actor = actordata;
+							const currentLuckPoints = actor.system.luckPoints;
+
+							let usedLuckPoints = 0;
+							if (rolltype === 6) {
+								usedLuckPoints = spendLuckValue / 3;
+								usedLuckPoints = Math.ceil(usedLuckPoints);
+							}
+							else {
+								usedLuckPoints = spendLuckValue;
+							}
+
+							const newLuckPoints = currentLuckPoints - usedLuckPoints;
+							actor.update({ "system.luckPoints": newLuckPoints });
+
+							resolve(numberofdicetoreroll);
+						},
+					},
+				},
+				close: () => { },
+			});
+			d.render(true);
+		});
 	}
 }
