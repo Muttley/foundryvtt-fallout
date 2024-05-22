@@ -343,6 +343,23 @@
 	}
 }
 
+
+.encumbrance {
+	background-color: rgb(79, 105, 144);
+	color: rgb(238, 231, 135);
+
+    margin: 0;
+
+	padding: unset;
+	padding-left: 24px;
+	padding-right: 24px;
+
+    position: absolute;
+    bottom: 0;
+
+	width: 100%;
+}
+luck_automation
 select.fire-rate-select,
 select.non-spend-luck,
 select.spend-luck {

@@ -30,10 +30,11 @@ export class Roller2D20 {
 
 		await roll.evaluate();
 
-		try {
-			game.dice3d.showForRoll(roll);
-		}
-		catch(err) {}
+		this.showDiceSoNice(roll);
+		// try {
+		// 	game.dice3d.showForRoll(roll, game.user, true);
+		// }
+		// catch(err) {}
 
 		let hitLocation = undefined;
 		let hitLocationResult = undefined;
@@ -41,10 +42,11 @@ export class Roller2D20 {
 		if (rollLocation) {
 			let hitLocationRoll = await new Roll("1dh").evaluate();
 			// try initiating Dice So Nice Roll
-			try {
-				game.dice3d.showForRoll(hitLocationRoll);
-			}
-			catch(err) {}
+			this.showDiceSoNice(hitLocationRoll);
+			// try {
+			// 	game.dice3d.showForRoll(hitLocationRoll, game.user, true);
+			// }
+			// catch(err) {}
 
 			hitLocation = hitLocationRoll.terms[0].getResultLabel(
 				hitLocationRoll.terms[0].results[0]
@@ -165,10 +167,11 @@ export class Roller2D20 {
 
 		await _roll.evaluate();
 
-		try {
-			game.dice3d.showForRoll(_roll);
-		}
-		catch(err) {}
+		this.showDiceSoNice(_roll);
+		// try {
+		// 	game.dice3d.showForRoll(_roll, game.user, true);
+		// }
+		// catch(err) {}
 
 		await Roller2D20.parseD20Roll({
 			rollname: `${rollname} re-roll`,
@@ -199,15 +202,15 @@ export class Roller2D20 {
 		let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
 
 		let rollData = {
-			rollname,
-			successes: successesNum,
+			actor: actor,
 			complications: complicationsNum,
-			results: dicesRolled,
-			successTreshold,
 			hitLocation: hitLocation,
 			hitLocationResult: hitLocationResult,
 			item: item,
-			actor: actor,
+			results: dicesRolled,
+			rollname,
+			successes: successesNum,
+			successTreshold,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
@@ -271,10 +274,14 @@ export class Roller2D20 {
 
 		await roll.evaluate();
 
-		try {
-			game.dice3d.showForRoll(roll);
-		}
-		catch(err) {}
+
+		this.showDiceSoNice(roll);
+		// try {
+		// 	game.dice3d.showForRoll(roll, game.user, true);
+		// }
+		// catch(err) {}
+
+
 		return Roller2D20.parseD6Roll({
 			rollname: rollname,
 			roll: roll,
@@ -358,10 +365,11 @@ export class Roller2D20 {
 
 		await _roll.evaluate();
 
-		try {
-			game.dice3d.showForRoll(_roll);
-		}
-		catch(err) {}
+		this.showDiceSoNice(_roll);
+		// try {
+		// 	game.dice3d.showForRoll(_roll, game.user, true);
+		// }
+		// catch(err) {}
 
 		return Roller2D20.parseD6Roll({
 			actor: actordata,
@@ -379,10 +387,11 @@ export class Roller2D20 {
 
 		await _roll.evaluate();
 
-		try {
-			game.dice3d.showForRoll(roll);
-		}
-		catch(err) {}
+		this.showDiceSoNice(_roll);
+		// try {
+		// 	game.dice3d.showForRoll(roll, game.user, true);
+		// }
+		// catch(err) {}
 
 		let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
 		let oldDiceRolled = falloutRoll.dicesRolled;
@@ -464,16 +473,21 @@ export class Roller2D20 {
 			weapon,
 		};
 
-		let chatData = {
+		const { whisper, blind } = this.getRollModeSettings();
+
+		const chatData = {
+			blind,
 			content: html,
 			flags: flags,
 			roll,
 			rollMode: game.settings.get("core", "rollMode"),
 			speaker: ChatMessage.getSpeaker({actor: actor}),
 			user: game.user.id,
+			whisper,
 		};
 
-		ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
+
+		// ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
 
 		// if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
 		// 	chatData.whisper = ChatMessage.getWhisperRecipients("GM");
@@ -482,6 +496,56 @@ export class Roller2D20 {
 		// 	chatData.whisper = [game.user];
 		// }
 		await ChatMessage.create(chatData);
+	}
+
+	/**
+	 * Add support for the Dice So Nice module
+	 * @param {Object} roll
+	 * @param {String} rollMode
+	 */
+	static async showDiceSoNice(roll) {
+		if (game.modules.get("dice-so-nice")
+			&& game.modules.get("dice-so-nice").active
+		) {
+			const { whisper, blind } = Roller2D20.getRollModeSettings();
+
+			await game.dice3d.showForRoll(roll, game.user, true, whisper, blind);
+		}
+	}
+
+	static getRollModeSettings() {
+		const rollMode = game.settings.get("core", "rollMode");
+
+		let blind = false;
+		let whisper = null;
+
+		switch (rollMode) {
+			case "blindroll": {
+				blind = true;
+			}
+			case "gmroll": {
+				const gmList = game.users.filter(user => user.isGM);
+				const gmIDList = [];
+				gmList.forEach(gm => gmIDList.push(gm.id));
+				whisper = gmIDList;
+				break;
+			}
+			case "roll": {
+				const userList = game.users.filter(user => user.active);
+				const userIDList = [];
+				userList.forEach(user => userIDList.push(user.id));
+				whisper = userIDList;
+				break;
+			}
+			case "selfroll": {
+				whisper = [game.user.id];
+				break;
+			}
+			default: {
+				break;
+			}
+		}
+		return { whisper, blind };
 	}
 }
 export class reroll extends Dialog {

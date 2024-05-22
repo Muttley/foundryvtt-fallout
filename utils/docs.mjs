@@ -3,6 +3,8 @@ import { markdown } from "markdown";
 
 import stringify from "json-stable-stringify-pretty";
 
+const issueUrl = "https://github.com/Muttley/foundryvtt-fallout/issues"
+
 const docs = [
 	{
 		src: "./CHANGELOG.md",
@@ -17,7 +19,18 @@ const docs = [
 function compileDocs(cb) {
 	for (const doc of docs) {
 		const source = fs.readFileSync(doc.src, "utf8");
-		const html = markdown.toHTML(source, "Maruku");
+
+		// Dynamically add links to ticket numbers:
+		//
+		// Matches: [#389]
+		// Outputs: [**[#389](https://github.com/Muttley/foundryvtt-fallout/issues/389)**]
+		//
+		const enhancedSource = source.replace(
+			/\[#(\d+)\]/g,
+			`[**[#$1](${issueUrl}/$1)**]`
+		);
+
+		const html = markdown.toHTML(enhancedSource, "Maruku");
 
 		const journalJson = fs.readFileSync(doc.dst, "utf8");
 		const journal = JSON.parse(journalJson);
@@ -31,4 +44,5 @@ function compileDocs(cb) {
 
 	cb();
 }
+
 export const compile = compileDocs;

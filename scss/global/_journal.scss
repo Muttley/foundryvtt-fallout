@@ -1,0 +1,240 @@
+.system-fallout .sheet.journal-entry .journal-entry-content {
+	background: url(../assets/ui/journal/journal-bg.webp);
+};
+
+.system-fallout .journal-sheet .journal-header input[type="text"] {
+	background: none;
+	border: none;
+	border-radius: 0;
+}
+
+.system-fallout .journal-sheet .journal-header .title {
+	font-family: $font-kaushan;
+	font-weight: bold;
+	color: black;
+	font-size: 2.2em;
+	font-style: bold;
+	text-transform: uppercase;
+}
+
+.system-fallout .sheet.journal-entry .journal-entry-page
+{
+
+	a.content-link,
+	a.content-link i {
+		background-color: $f-vault-blue;
+		color: $c-font-prim;
+	}
+
+	aside {
+		border: none;
+		padding: 8px;
+		margin: 16px;
+		margin-bottom: 26px;
+
+		background-color: rgb(246, 227, 205);
+		box-shadow: -8px 10px rgb(219, 140, 61);
+
+		.aside-title {
+			display: contents;
+			background: none;
+			font-weight: 700;
+			text-transform: none;
+			font-size: 2.6em;
+
+			color: rgb(219, 140, 61);
+			font-family: $font-blockquote-header;
+		}
+	}
+
+	blockquote {
+		border: none;
+		background-color: rgb(182, 219, 198);
+		padding: 8px;
+		margin: 16px;
+
+		p {
+			font-size: 1.15em;
+			font-style: italic;
+		}
+	}
+
+	footer {
+		background-color: rgb(28, 63, 125);
+		border-radius: 16px;
+		outline-style: dashed;
+		outline-width: 2px;
+		outline-offset: -8px;
+		padding: 20px;
+		color: white;
+		margin: 16px;
+
+		h1 {
+			background: none;
+			color: rgb(252, 229, 61);
+			font-family: $font-oswald;
+			font-weight: 700;
+			font-size: 2.2em;
+		}
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: $font-oswald;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: black;
+		border: none;
+		margin: 0 0 0.5rem;
+		padding: 0;
+	}
+
+	h1, h2 {
+		font-family: $font-kaushan;
+		font-size: 1.8em;
+		color: white;
+		border: none;
+
+		max-width: max-content;
+		min-width: 66%;
+
+		padding-left: 4px;
+		padding-right: 50px;
+	}
+
+	h1 {
+		background: url(../assets/ui/journal/h1-background.svg) no-repeat;
+		background-size: cover;
+	}
+
+	h2 {
+		background: url(../assets/ui/journal/h2-background.svg) no-repeat;
+		background-size: cover;
+	}
+
+	h3 {
+		font-size: 1.6em;
+		border-bottom: 1px solid #000000;
+		border-top: 1px solid #000000;
+		padding: 4px 0px 4px 4px;
+		margin-top: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1.4em;
+	}
+
+	h5 {
+		font-size: 1.2em;
+	}
+
+	img {
+		border: none;
+	}
+
+	ul {
+		list-style-type: square;
+		margin: 0.5em 0.5em 1.5em;
+
+		li::marker {
+			color: #ca9e0f;
+			font-size: 1.4em;
+		}
+	}
+
+	ol {
+		list-style-type: decimal;
+		margin: 0.5em 0.5em 1.5em;
+
+		li::marker {
+			font-size: unset;
+			color: black;
+			font-weight: bold;
+		}
+
+		ul li::marker {
+			color: #ca9e0f;
+			font-size: 1.4em;
+		}
+
+	}
+
+	p {
+		font-style: normal;
+		font-size: 1.1em;
+	}
+
+	table {
+		border: none;
+		margin-bottom: 1em;
+		margin-top: 1em;
+
+		caption {
+			text-align: left;
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 0.5em;
+		}
+
+		tbody {
+			tr:nth-child(even) {
+				background-color: rgb(241, 204, 165);
+			}
+
+			tr:nth-child(odd) {
+				background-color: rgb(246, 227, 205)
+			}
+
+			tr:first-child {
+				background: black;
+				text-transform: uppercase;
+				color:white;
+				font-weight: bold;
+			}
+		}
+
+		td {
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+	}
+
+	.fo-energy,
+	.fo-physical,
+	.fo-pip-boy,
+	.fo-poison,
+	.fo-radiation {
+		background: none;
+		color: black;
+		font-size: 1.4em;
+	}
+
+	.fo-pip-boy {
+		background-color: $c-font-prim;
+		color: $f-vault-blue;
+	}
+
+	section {
+		.reveal {
+			float: right;
+		}
+
+		.secret {
+			background: rgba(125, 28, 28, 0.2);
+			border: 3px solid;
+			padding: 4px;
+			border-color: rgb(125, 28, 28);
+			border-radius: 8px;
+			padding: 8px;
+			margin: 16px;
+
+			p {
+				font-size: 1.2em;
+			}
+		}
+
+		.revealed {
+			border-color: rgb(28, 125, 34);
+			background: rgba(28, 125, 34, 0.2);
+		}
+	}
+}
