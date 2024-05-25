@@ -309,6 +309,8 @@ export default class FalloutItemSheet extends ItemSheet {
 	}
 
 	_onSubmit(event) {
+		if (!this.isEditable) return;
+
 		if (this.item.type === "weapon") {
 			const updateData = this._getSubmitData();
 

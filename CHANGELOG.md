@@ -1,16 +1,45 @@
+# v11.11.1
+
+#### Bugs
+- [#417] Unable to modify items
+
+---
+
+# v11.11.0
+
+#### Enhancements
+- [#388] Hit locations order on creature/npc sheets
+- [#402] Add carry capacity to all gear tabs
+- [#403] Add CSS styling for Journal entries
+- [#405] Dynamically link original ticket URL when generating Release Notes document
+- [#408] Add min-width to Actor sheets to avoid the layout breaking when shrunk too small
+
+#### Bugs
+- [#397] Dice So Nice only show for the player who rolls
+- [#404] Bogus permission error when closing Item from locked compendium
+- [#411] When scrapping junk, unable to locate Scrapper perk by name for people using Babele to translate compendium items.
+
+#### Chores
+- [#399] Merge French translation updates from Crowdin
+- [#406] Merge French and Polish translation updates from Crowdin
+
+*Many thanks to **extazz17** for contributed fixes in this build*
+
+---
+
 # v11.10.1
 
-## Bugs
+#### Bugs
 - [#389] Dice So Nice stopped showing for most rolls
 
-## Chores
+#### Chores
 - [#387] Merge French translation updates from Crowdin
 
 ---
 
 # v11.10.0
 
-## Enhancement
+#### Enhancement
 - [#334] Add a setting to consumables to specify the amount of rad damage CD that are rolled when consuming it
 - [#348] Improve the way Power Armor is handled on the sheets
 
@@ -36,7 +65,7 @@
 - [#376] Equipping an item in your inventory should also unstash it
 - [#377] Provide a built in Macro to open the Scavenging Help web tool
 
-## Bugs
+#### Bugs
 - [#356] Laser Gun Damage Value Incorrect
 - [#365] Typo in description of all Grognak the Barbarian magazines
 - [#368] 10mm Auto Pistol price and weight wrong
@@ -47,7 +76,7 @@
 - [#372] Available ammo for a weapon missing from favourite and main weapons list
 - [#384] Available shots calculation not updated immediately a new ammo item is added to the character
 
-## Chore
+#### Chore
 - [#357] Ensure there are no compatibility issues with Foundry V12
 - [#358] globalThis.mergeObject must now be accessed via foundry.utils.mergeObject *(Foundry v12 compatibility)*
 - [#359] globalThis.duplicate must now be accessed via foundry.utils.duplicate *(Foundry v12 compatibility)*
@@ -66,10 +95,10 @@
 
 # v11.9.4
 
-## Enhancent
+#### Enhancent
 - [#352] Add the ability to easily adjust an NPC's calculated Carry Weight on the NPC sheet
 
-## Bugs
+#### Bugs
 - [#347] Availability Roll trigger not available on Robot character sheet
 - [#350] Don't show the Luck points field on Creatures as they don't have them
 - [#351] NPC has no default max HP set
@@ -78,29 +107,29 @@
 
 # v11.9.3
 
-## Enhancements
+#### Enhancements
 - [#343] Add additional logging around compendium filtering to help with debugging issues
 
-## Chores
+#### Chores
 - [#342] Merge French translation updates from Crowdin
 
 ---
 
 # v11.9.2
 
-## Bugs
+#### Bugs
 - [#339] Source filtering not working correctly
 
 # v11.9.1
 
-## Bugs
+#### Bugs
 - [#336] Sleep processing fails due to error in player online checks
 
 ---
 
 # v11.9.0
 
-## Enhancements
+#### Enhancements
 - [#182] Allow weapons to be configured to use custom skills
 
 	* A new "Custom" weapon type has been added which when selected allows you to specify which skill to use, and optionally override the attribute to be used with that skill.  In order to become available for selection custom skills must exist in a compendium.
@@ -129,11 +158,11 @@
 
 	* The example Fallout custom data module has been updated with an example of how to add new sources to your own content modules: https://github.com/Muttley/foundryvtt-fallout-custom-module/releases/tag/v1.1.0
 
-## Bugs
+#### Bugs
 - [#267] Actors should not take radiation damage from consumables if they are immune, and if not immune the amount of rads taken should be adjusted by an actor's base resistance.
 - [#320] Food item deleted or quantity reduced even though unable to eat as full
 
-## Chores
+#### Chores
 - [#310] Merge French translation updates from Crowdin
 - [#313] Remove unused armorType field from apparel item schema
 - [#314] Rename appareltype field in apparel item schema to apparelType for field name consistency purposes
@@ -143,24 +172,24 @@
 
 # v11.8.1
 
-## Bugs
+#### Bugs
 - [#307] Update release to latest compedium data
 
 ---
 
 # v11.8.0
 
-## Enhancements
+#### Enhancements
 - [#283] Display Fire Rate outside of Weapon Item
 - [#290] Default new character SPECIAL to 5 as those are the defaults for character creation
 - [#300] Automatically detect that a weapon is owned by a Creature and not an NPC to simplify configuration
 - [#303] Improve error feedback when trying to use a misconfigured weapon
 
-## Bugs
+#### Bugs
 - [#291] Remove bogus "Boxing Times (Copy)" from compendiums
 - [#302] Creature Attribute and Creature Skill weapon settings can appear configured when they're not
 
-## Chores
+#### Chores
 - [#289] Merge Polish translation updates from Crowdin
 - [#292] Merge French translation updates from Crowdin
 - [#299] Merge German translation updates from Crowdin
@@ -171,7 +200,7 @@
 
 # v11.7.0
 
-## Enhancements
+#### Enhancements
 - [#269] Add ability to map your own images onto core compendium items
 
 An example custom module which is pre-configured with various empty compendiums and set up for item image mapping can be downloaded from here:
@@ -184,7 +213,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.6.1
 
-## Enhancements
+#### Enhancements
 - [#280] Cache available Ammo items in compendiums at startup to improve performance on slow systems with large amounts of compendium items
 	* This will mean that if you add a new ammo item type it won't be available on Weapon item sheets until the system is reloaded.
 
@@ -192,20 +221,20 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.6.0
 
-## Enhancements
+#### Enhancements
 - [#244] Add support for Minion NPC type
 - [#254] Creature & NPC Poison DR can have locational values
 	* The system will attempt to migrate existing Poison DR values, but as it was a free text field and there is no way of knowing the format people have used, it is advisable to check all NPC/Creature NPCs to ensure the Poison DR values are correct.
 - [#255] Add shortcuts to fill whole DR column at once for Creatures / NPCs who have the same DR for all locations
 - [#273] Add Salvage TN field to Creature sheets and rename Gear tab to Salvage
 
-## Bugfixes
+#### Bugfixes
 - [#258] Typo on weapons mod tab
 - [#260] Custom skill name localization failing and only displaying "FALLOUTUTILS" instead of name
 - [#266] Attacking with Fire Rate does not work properly with ammunition charges
 - [#270] Well Rested bonus causes issues with setting current health value
 
-## Chores
+#### Chores
 - [#259] Merged French translation updates from Crowdin
 - [#262] Merged French and Polish translation updates from Crowdin
 
@@ -213,7 +242,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.5.0
 
-## Enhancements
+#### Enhancements
 - [#222] Add Butchery section to Creature sheet
 - [#227] Added 10mm Auto Pistol, Buzz-Saw, Flamer, Laser Emitter and Pincer robot arm attachment weapons
 - [#229] Add ammo items for thrown and explosive weapons
@@ -228,7 +257,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 - [#248] Add ability to specify quantity roll formula on Ammo items
 - [#249] Add ability to roll new Ammo quantities directly from the Ammo item sheet
 
-## Bugfixes
+#### Bugfixes
 - [#225] Weapon Qualities and Damage Effects not showing number in chat
 - [#226] Bows using STR attribute when they should use AGI
 - [#231] Default item sheet width needs to be wider as Quantity label wrapping
@@ -236,30 +265,30 @@ This can be used to help bootstrap your own custom data for Fallout.
 - [#237] Magazines chat message not displaying the Publication and still displaying which Issue
 - [#247] No icon to consume consumables
 
-## Chores
+#### Chores
 - Merged various i18n changes from Crowdin
 
 ---
 
 # v11.4.3
 
-## Enhancements
+#### Enhancements
 - [#220] Default Character, Robot and Settlement actor types to have linked actor data by default
 
-## Bugfixes
+#### Bugfixes
 - [#221] Sort owned items on Creature/NPC sheets
 
-## Chores
+#### Chores
 - [#218] Merged i18n changes from Crowdin
 
 ---
 
 # v11.4.2
 
-## Enhancements
+#### Enhancements
 - [#213] Add ability to toggle Radiation and Poison immunity on character and NPC sheets by clicking the Radiation or Poison icon in the resistance section character sheets.
 
-## Bugfixes
+#### Bugfixes
 - [#212] Missing material consumables: Asbestos, Bloatfly Gland, Blood Sac, Bloodleaf, Glowing Fungus, Hubflower, Radscorpion Stinger, Stingwing Barb
 - [#216] Don't show "undefined" if an out of date Weapon Quality or Damage Effect still exists in Weapon item
 
@@ -267,10 +296,10 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.4.1
 
-## Enhancements
+#### Enhancements
 - [#197] Added new Bows weapon category
 
-## Bugfixes
+#### Bugfixes
 - [#196] Added missing Placed, Recoil and Surge weapon qualities
 - [#198] Apparel Missing Info
 - [#199] Soups, Stews and Noodle Cup missing thirst reduction value
@@ -283,7 +312,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.4.0
 
-## Enhancements
+#### Enhancements
 - [#141] Add ability to specify Normal, Mighty/Notable, Legendary/Major categories on Creature and NPC sheets
 
 	* The migration script will attempt to work out which category an NPC should be by correlating its level and XP reward.  If that's not possible a warning message will prompt you so you can manually check individual NPC sheets and set the correct category.
@@ -340,13 +369,13 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 - [#191] Give ability to disable automatic XP calculation for people who wish to homebrew the level break points
 
-## Bugfixes
+#### Bugfixes
 - [#144] Add conversion Lbs/Kgs for Materials
 - [#147] Skill names not localized in skill roll chat messages
 - [#165] Show correct weight system on encumbrance bar when system is set to Kg
 - [#173] Inline rolls almost unreadable on item chat cards and sheet descriptions
 
-## Chores
+#### Chores
 - [#174] Tidy up Weapon Quality and Damage Effect data in schema
 - [#175] Retire the hovers.json facility as we are allowed to have this information in the i18n files for use in tooltips
 	* If you are able, please help out with translating these new tooltips (and other strings) via the [Crowdin Project](https://crowdin.com/project/foundryvtt-fallout).
@@ -358,7 +387,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.3.6
 
-## Bugfixes
+#### Bugfixes
 - [#137] Ammo counting code can incorrectly match non-ammo items
 - [#138] Character sheet rendered before all data ready
 
@@ -366,30 +395,30 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.3.5
 
-## Bugfixes
+#### Bugfixes
 - [#128] Modifying Creature actors fails
 
-## Chores
+#### Chores
 - [#127] Merge localization updates from Crowdin
 
 ---
 
 # v11.3.4
 
-## Bugfixes
+#### Bugfixes
 - [#125] Updating NPC name doesn't get reflected immediately in a related settlement sheet
 
 ---
 
 # v11.3.3
 
-## Enhancements
+#### Enhancements
 - [#120] Group settlement stockpile items by type
 
-## Bugfixes
+#### Bugfixes
 - [#121] Settler data getting corrupted after adding six or more
 
-## Chores
+#### Chores
 - [#118] Merged more language updates from Crowdin
 
 *The French translation is now 100% complete.  Many thanks to Starbuck for their work on this.*
@@ -398,21 +427,21 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.3.2
 
-## Chores
+#### Chores
 - [#113] Merged language updates from Crowdin
 
 ---
 
 # v11.3.1
 
-## Bugfix
+#### Bugfix
 - [#110] Migrations not running correctly
 
 ---
 
 # v11.3.0
 
-## Enhancements
+#### Enhancements
 - [#13] Add new Settlement Actor and corresponding sheet
 - [#37] The following character sheet fields are now auto-calculated and have new variables that can be used to adjust them with Active Effects if needed:
 
@@ -459,7 +488,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 - [#94] Add new item type for settlement Objects and Structures
 - [#99] Lock and add tooltips to sheet fields that are being overridden by active effects
 
-## Bugfixes
+#### Bugfixes
 - [#34] Weapon Qualities and Damage Effects should be displayed in (localised) alphabetical order on Weapon item sheet
 - [#51] Item quantity boxes polluting actor data when altered
 - [#60] Use localized skill names to sort and display alphabetically on Character sheet
@@ -471,7 +500,7 @@ This can be used to help bootstrap your own custom data for Fallout.
 - [#74] Chems are able to heal HP as well, so the field should be available on the item sheet for them
 - [#93] Custom skill names not displayed correctly due to i18n translation missing
 
-## Chores
+#### Chores
 - [#33] Merged Polish language updates from Crowdin
 - [#35] Remove usage of deprecated `ActiveEffect._getSourceName()`
 - [#36] Remove usage of deprecated `ActiveEffect#label`
@@ -485,33 +514,33 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.2.6
 
-## Bugfixes
+#### Bugfixes
 - [#27] Text for some item sheets seems to be broken
 - [#28] Editing/Deleting items broken due to missing data tag
 - [#29] Encumbrance not being calculated correctly
 
-## Chores
+#### Chores
 - Merged Polish translation updates from Crowdin
 
 ---
 
 # v11.2.5
 
-## Chores
+#### Chores
 - Translation updates are now all handled via Crowdin to simplify the process of contributing translations.  See here for more details: https://github.com/Muttley/foundryvtt-fallout/wiki/Other-ways-to-contribute#translation
 
 ---
 
 # v11.2.4
 
-## Bugfixes
+#### Bugfixes
 - [#19] Actor skills being overwritten when an Actor is duplicated
 
 ---
 
 # v11.2.3
 
-## Bugfixes
+#### Bugfixes
 - [#17] Item preview/expansion on Actor sheets doesn't display anything
 
 ---
