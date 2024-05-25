@@ -163,14 +163,19 @@ export class Roller2D20 {
 		let non_spend_luck_value = 0;
 		const actordata = game.actors.get(actor);
 		let numOfDice = rerollIndexes.length;
+		let flavor = null;
 		if (actordata.type === "character" || actordata.type === "robot") {
 			const rolltype = 20;
 			// eslint-disable-next-line max-len
 			({number_of_dice_to_reroll, used_luck_points, non_spend_luck_value } = await reroll.spendLuck({ actordata, numOfDice, rolltype }));
+			flavor = `${game.i18n.localize("FALLOUT.UI.YOU_RE-ROLL")} ${number_of_dice_to_reroll} ${game.i18n.localize("FALLOUT.UI.DICE")}\n${game.i18n.localize("FALLOUT.UI.SPENDING")} ${used_luck_points} ${game.i18n.localize("FALLOUT.UI.LUCK_POINT")}k\n ${game.i18n.localize("FALLOUT.UI.AND_YOU_RE-ROLL")} ${non_spend_luck_value} ${game.i18n.localize("FALLOUT.UI.DICE_WITOUT_LUCK")}`;
+
+		}
+		else {
+			number_of_dice_to_reroll = numOfDice;
 		}
 		let formula = `${number_of_dice_to_reroll}d20`;
 		let _roll = new Roll(formula);
-		const flavor = `${game.i18n.localize("FALLOUT.UI.YOU_RE-ROLL")} ${number_of_dice_to_reroll} ${game.i18n.localize("FALLOUT.UI.DICE")}\n${game.i18n.localize("FALLOUT.UI.SPENDING")} ${used_luck_points} ${game.i18n.localize("FALLOUT.UI.LUCK_POINT")}k\n ${game.i18n.localize("FALLOUT.UI.AND_YOU_RE-ROLL")} ${non_spend_luck_value} ${game.i18n.localize("FALLOUT.UI.DICE_WITOUT_LUCK")}`;
 
 		await _roll.evaluate();
 
@@ -373,15 +378,20 @@ export class Roller2D20 {
 		let spend_luck_value = 0;
 		let used_luck_points = 0;
 		let non_spend_luck_value = 0;
+		let flavor = null;
 
 		if (actordata.type === "character" || actordata.type === "robot") {
 			const rolltype = 6;
 			// eslint-disable-next-line max-len
 			({number_of_dice_to_reroll, spend_luck_value, used_luck_points, non_spend_luck_value } = await reroll.spendLuck({ actordata, numOfDice, rolltype }));
+			flavor = `${game.i18n.localize("FALLOUT.UI.YOU_RE-ROLL")} ${spend_luck_value} ${game.i18n.localize("FALLOUT.UI.DICE")}\n${game.i18n.localize("FALLOUT.UI.SPENDING")} ${used_luck_points} ${game.i18n.localize("FALLOUT.UI.LUCK_POINT")}k\n ${game.i18n.localize("FALLOUT.UI.AND_YOU_RE-ROLL")} ${non_spend_luck_value} ${game.i18n.localize("FALLOUT.UI.DICE_WITOUT_LUCK")}`;
+
+		}
+		else {
+			number_of_dice_to_reroll = numOfDice;
 		}
 		let formula = `${number_of_dice_to_reroll}dc`;
 		let _roll = new Roll(formula);
-		const flavor = `${game.i18n.localize("FALLOUT.UI.YOU_RE-ROLL")} ${spend_luck_value} ${game.i18n.localize("FALLOUT.UI.DICE")}\n${game.i18n.localize("FALLOUT.UI.SPENDING")} ${used_luck_points} ${game.i18n.localize("FALLOUT.UI.LUCK_POINT")}k\n ${game.i18n.localize("FALLOUT.UI.AND_YOU_RE-ROLL")} ${non_spend_luck_value} ${game.i18n.localize("FALLOUT.UI.DICE_WITOUT_LUCK")}`;
 		await _roll.evaluate();
 
 		this.showDiceSoNice(_roll);
