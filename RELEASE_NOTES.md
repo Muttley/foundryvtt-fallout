@@ -1,11 +1,14 @@
 # v11.11.2
 
 #### Bugs
+- [#423] Weapon Skills not being translated correctly in the config file
 
 #### Chores
 - [#420] Merge **Portuguese, Brazilian** and **Polish** translation updates from Crowdin
 
 *Many thanks to <insert_name_here> for briging the **Portuguese, Brazilian** translation up to 93% complete.*
+
+*Many thanks to **bartek6199** for contributed fixes in this release*
 
 ---
 
@@ -205,7 +208,7 @@
 - [#292] Merge French translation updates from Crowdin
 - [#299] Merge German translation updates from Crowdin
 
-*Many thanks to VTTom for their work on the German translations which now have 100% coverage at time of writing.*
+*Many thanks to **VTTom** for their work on the German translations which now have 100% coverage at time of writing.*
 
 ---
 
