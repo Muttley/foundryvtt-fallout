@@ -1,3 +1,14 @@
+# v11.11.2
+
+#### Bugs
+
+#### Chores
+- [#420] Merge **Portuguese, Brazilian** and **Polish** translation updates from Crowdin
+
+*Many thanks to <insert_name_here> for briging the **Portuguese, Brazilian** translation up to 93% complete.*
+
+---
+
 # v11.11.1
 
 #### Bugs
