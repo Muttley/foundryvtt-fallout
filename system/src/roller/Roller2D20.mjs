@@ -216,7 +216,7 @@ export class Roller2D20 {
 			hitLocation: hitLocation,
 			hitLocationResult: hitLocationResult,
 			item: item,
-			actor: actor,
+			successesNum: successesNum,
 			flavor: flavor,
 		};
 
