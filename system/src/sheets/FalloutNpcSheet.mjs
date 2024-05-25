@@ -98,10 +98,8 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		const roll = new Roll(formula);
 
 		const wealthRoll = await roll.evaluate();
-		try {
-			await game.dice3d.showForRoll(wealthRoll);
-		}
-		catch(err) {}
+
+		await fallout.Roller2D20.showDiceSoNice(wealthRoll);
 
 		const caps = parseInt(roll.total);
 
