@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: Percepcja
 FALLOUT.AbilityStr: Siła
 FALLOUT.actor.inventory.materials.common: Pospolity
 FALLOUT.actor.inventory.materials.junk: Złom
-FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Odzyskaj śmieci
 FALLOUT.actor.inventory.materials.label: Materiały
 FALLOUT.actor.inventory.materials.rare: Bardzo rzadki
 FALLOUT.actor.inventory.materials.uncommon: Rzadki
@@ -26,9 +26,9 @@ FALLOUT.Add: Dodaj
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Resetuj wszystko
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Zresetuj wszystkie dawki środków chemicznych
 FALLOUT.APP.ChemDoseManager.title: Dawki środków chemicznych
-FALLOUT.APP.ItemTypeMenu.title: Select Item Type
-FALLOUT.APP.Loading.body: Searching the Wastelands...
-FALLOUT.APP.Loading.title: Loading
+FALLOUT.APP.ItemTypeMenu.title: Wybierz typ przedmiotu
+FALLOUT.APP.Loading.body: Przeszukiwanie pustkowi...
+FALLOUT.APP.Loading.title: Wczytywanie
 FALLOUT.APP.ModuleArtConfig.items: Przedmioty
 FALLOUT.APP.ModuleArtConfig.title: Ustaw obrazy
 FALLOUT.APP.PartySleep.chat_message: Drużyna śpi przez {duration}.
@@ -37,22 +37,22 @@ FALLOUT.APP.PartySleep.hour: 1 godzina
 FALLOUT.APP.PartySleep.hours: "{length} godzin"
 FALLOUT.APP.PartySleep.safe_location: Bezpieczna lokacja?
 FALLOUT.APP.PartySleep.title: Drużyna Śpi
-FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
-FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
-FALLOUT.APP.SalvageJunk.start: Start Salvaging
-FALLOUT.APP.SalvageJunk.time: This will take {time}
-FALLOUT.APP.SalvageJunk.title: Salvage Junk
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Przyspiesz Czas Gry
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Nie masz żadnych śmieci do odzyskania
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Czas gry przyśpieszony o {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Odzyskano {amount} Śmieci
+FALLOUT.APP.SalvageJunk.start: Rozpocznij odzyskiwanie
+FALLOUT.APP.SalvageJunk.time: Zajmie Ci to {time}
+FALLOUT.APP.SalvageJunk.title: Odzyskaj śmieci
 FALLOUT.APPAREL.armor: Pancerz
 FALLOUT.APPAREL.clothing: Odzież
 FALLOUT.APPAREL.headgear: Nakrycie głowy
 FALLOUT.APPAREL.outfit: Strój
 FALLOUT.APPAREL.plating: Poszycie
 FALLOUT.APPAREL.powerArmor: Pancerz wspomagany
-FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
-FALLOUT.AvailabilityRoll.result.title: Availability Roll
-FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
+FALLOUT.AvailabilityRoll.result.body: Maksymalna dostępna rzadkość to {rarity}
+FALLOUT.AvailabilityRoll.result.title: Rzut na dostępność
+FALLOUT.AvailabilityRoll.tooltip: Rzut w celu ustalenia dostępności
 FALLOUT.BEVERAGE: Napoje
 FALLOUT.BODYLOCATION_ABBR.character.armL: LR
 FALLOUT.BODYLOCATION_ABBR.character.armR: PR
@@ -130,11 +130,11 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Zjedzone jedzenie
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Jesteś już pełen i nie możesz zjeść więcej
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} oparł się {baseRadDamage} obrażeniom od promieniowania po spożyciu {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiacja odparta
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje {radsTaken} obrażeń od radiacji po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
-FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Złomiarz
 FALLOUT.CHEM: Chemikalia
 FALLOUT.ChemDuration.brief: Krótkotrwały
 FALLOUT.ChemDuration.instant: Natychmiastowy
@@ -157,31 +157,31 @@ FALLOUT.EffectDelete: Usuń Efekt
 FALLOUT.EffectEdit: Edytuj Efekt
 FALLOUT.EffectToggle: Zaznacz Efekt
 FALLOUT.equipped: Wyposażone
-FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
-FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
-FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
+FALLOUT.ERRORS.ThisWeaponIsBroken: Ta broń jest uszkodzona i nie może być już używana.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Nie można określić atrybutu używanego dla tej broni.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Nie można określić atrybutu używanego dla tej broni.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Ta broń nie posiada Atrybutu Stworzenia i/lub Umiejętności Stworzenia.
 FALLOUT.FOOD: Jedzenie
-FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
-FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
-FALLOUT.Form.SelectCompendiumItem.prompt: Select Item...
-FALLOUT.Form.SelectCompendiumItem.title: Choose Items
-FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
-FALLOUT.Form.SelectItem.title: Choose {type}
-FALLOUT.Form.SourceFilters.AllUsed: All sources are currently allowed
-FALLOUT.Form.SourceFilters.hint: If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums.
-FALLOUT.Form.SourceFilters.prompt: Select Source...
-FALLOUT.Form.SourceFilters.TheseUsed: Only the following sources will be allowed
-FALLOUT.Form.SourceFilters.title: Source Filters
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Możesz wybrać maksymalnie {maxChoices} przedmiotów tego typu.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Nie można znaleźć przedmiotów odpowiedniego typu w dostępnych kompendiach.
+FALLOUT.Form.SelectCompendiumItem.prompt: Wybierz Przedmiot...
+FALLOUT.Form.SelectCompendiumItem.title: Wybierz Przedmioty
+FALLOUT.Form.SelectCompendiumItem.tooltip: Dodaj z Kompendiów
+FALLOUT.Form.SelectItem.title: Wybierz {type}
+FALLOUT.Form.SourceFilters.AllUsed: Wszystkie źródła są obecnie dozwolone
+FALLOUT.Form.SourceFilters.hint: Jeśli lista jest wypełniona, tylko źródła z tej listy będą używane przez jakąkolwiek część systemu, która automatycznie pobiera przedmioty z kompendiów.
+FALLOUT.Form.SourceFilters.prompt: Wybierz Źródło...
+FALLOUT.Form.SourceFilters.TheseUsed: Dozwolone będą tylko następujące źródła
+FALLOUT.Form.SourceFilters.title: Filtry źródeł
 FALLOUT.HEALTH.current: Obecne zdrowie
 FALLOUT.HEALTH.health: Zdrowie
 FALLOUT.HEALTH.max: Maksymalne Zdrowie
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
-FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
-FALLOUT.Item.PowerArmor.Frame: Frame
-FALLOUT.Item.PowerArmor.IsFrame: Is Frame
-FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
+FALLOUT.Item.PowerArmor.Attach: Dołącz
+FALLOUT.Item.PowerArmor.Attached: Dołączone
+FALLOUT.Item.PowerArmor.AttachedToFrame: Dołączone do Ramy
+FALLOUT.Item.PowerArmor.Frame: Rama
+FALLOUT.Item.PowerArmor.IsFrame: Jest Ramą
+FALLOUT.Item.PowerArmor.Pieces: Elementy Pancerza Wspomaganego
 FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
@@ -257,14 +257,14 @@ FALLOUT.SKILL.Speech: Retoryka
 FALLOUT.SKILL.Survival: Przetrwanie
 FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Showdown in Skull Canyon #2: W Pełni Operacyjny"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Niesamowicie Niesłychane Opowieści #: Polowanie!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Niesamowicie Niesłychane Opowieści #1: Pomarańczowe Niebo"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Niesamowicie Niesłychane Opowieści #3: Pojedynek w Kanionie Czaszek"
 FALLOUT.SOURCE_TITLE.core_rulebook: Podręcznik Główny
 FALLOUT.SOURCE_TITLE.enclave_remnants: "Pakiet BN #2: Pozostałości Enklawy"
-FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
+FALLOUT.SOURCE_TITLE.gm_toolkit: "Zestaw Narzędzi Mistrza Gry"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Paczka Map #1: Krypta"
 FALLOUT.SOURCE_TITLE.rust_devils: "Pakiet BN #1: Rdzawe Diabły"
 FALLOUT.SOURCE_TITLE.settlers_guide: Przewodnik Osadnika
 FALLOUT.SOURCE_TITLE.wanderers_guide: Przewodnik Wędrowca
@@ -289,7 +289,7 @@ FALLOUT.TEMPLATES.Attack: Atak
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
-FALLOUT.TEMPLATES.Base_Damage: Base Damage
+FALLOUT.TEMPLATES.Base_Damage: Obrażenia Podstawowe
 FALLOUT.TEMPLATES.Butchery: Mięso
 FALLOUT.TEMPLATES.ButcheryTooltip: PT testu rzeźnictwa
 FALLOUT.TEMPLATES.Compl: Komp.
@@ -334,8 +334,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Cechy Stwora
 FALLOUT.TEMPLATES.Creature_Skill: Umiejętności Stworzenia
 FALLOUT.TEMPLATES.current: obecny
 FALLOUT.TEMPLATES.CurrentLeader: Aktualny Lider
-FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
-FALLOUT.TEMPLATES.CustomSkill: Custom Skill
+FALLOUT.TEMPLATES.CustomAttribute: Atrybut niestandardowy
+FALLOUT.TEMPLATES.CustomSkill: Umiejętność niestandardowy
 FALLOUT.TEMPLATES.Damage_Effects: Efekty obrażeń
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
@@ -354,7 +354,7 @@ FALLOUT.TEMPLATES.Effects: Efekty
 FALLOUT.TEMPLATES.Encumbrance_Level: Poziom Przeciążenia
 FALLOUT.TEMPLATES.ENG: ENERGETYCZNE
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: Ulubiona Broń
-FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
+FALLOUT.TEMPLATES.Fire_Rate: Szybkostrzelność
 FALLOUT.TEMPLATES.FIRE_RATE: Szybkostrzelność
 FALLOUT.TEMPLATES.Gear: Sprzęt
 FALLOUT.TEMPLATES.GENERAL: Ogólny
@@ -367,7 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Urazy
 FALLOUT.TEMPLATES.INJURIES: RANY
 FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
-FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Kości obrażeń od radiacji
 FALLOUT.TEMPLATES.Issue: Problem
 FALLOUT.TEMPLATES.kgs: Kg
 FALLOUT.TEMPLATES.lbs: Lb
@@ -375,13 +375,13 @@ FALLOUT.TEMPLATES.Learned: Nauczony
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: Lokalizacje i rany
 FALLOUT.TEMPLATES.Locations: Lokalizacja
 FALLOUT.TEMPLATES.Luck: Szczęście
-FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
+FALLOUT.TEMPLATES.MaterialsRecoverd: Odzyskane materiały
 FALLOUT.TEMPLATES.MaterialsRequired: Wymagane materiały
 FALLOUT.TEMPLATES.MAX_PARTY_AP: Maksymalne PA Drużyny
 FALLOUT.TEMPLATES.max: maks
 FALLOUT.TEMPLATES.MAX: MAKS
-FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
-FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
+FALLOUT.TEMPLATES.Melee_Bonus: Bonus do walki wręcz
+FALLOUT.TEMPLATES.Melee_Damage: Obrażenia Wręcz
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
 FALLOUT.TEMPLATES.MODULES: Modyfikacje
 FALLOUT.TEMPLATES.Name_Prefix: Element nazwy
@@ -401,7 +401,7 @@ FALLOUT.TEMPLATES.Qualities: Jakość
 FALLOUT.TEMPLATES.RAD: RADIACYJNE
 FALLOUT.TEMPLATES.Radiation_Healed: Wyleczone napromieniowanie
 FALLOUT.TEMPLATES.RADIATION: RADIACJA
-FALLOUT.TEMPLATES.Range: Range
+FALLOUT.TEMPLATES.Range: Zasięg
 FALLOUT.TEMPLATES.RANGE: Zasięg
 FALLOUT.TEMPLATES.Rank: Rangi
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangi [obecne/maksymalne]
@@ -427,7 +427,7 @@ FALLOUT.TEMPLATES.Successes: Sukcesy
 FALLOUT.TEMPLATES.Tag: Specjalizacja
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.Thirst_Reduction: Redukcja pragnienia
-FALLOUT.TEMPLATES.TimeTaken: Time Taken
+FALLOUT.TEMPLATES.TimeTaken: Czas wykonania
 FALLOUT.TEMPLATES.TN: CEL
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
@@ -448,12 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Broń
 FALLOUT.TEMPLATES.WeaponName: Nazwa Broni
 FALLOUT.TEMPLATES.Weapons: Bronie
 FALLOUT.TEMPLATES.WellRested: Dobrze Wypoczęty
-FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
-FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
-FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
-FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
-FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
-FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
+FALLOUT.TIME.DAYS_PLURAL: "{days} Dni"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Dzień"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Godziny"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Godzina"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minut"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minuta"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Każdy efekt automatycznie uderza w jeden dodatkowy cel w bliskim zasięgu głównego celu. Każdy dodatkowy cel traci o połowę więcej uszkodzeń (zaokrąglonych w górę). W przeciwieństwie do Rozrzutu nie kosztuje to dodatkowej amunicji.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Za każdy uzyskany na kościach Efekt zmniejsz na stałe o –1 liczbę @fos[DC], jaką zapewnia celowi osłona. Jeśli wróg jej nie posiada, zmniejsz o 1 Odporność trafionej lokalizacji zgodnie z rodzajem zadanych obrażeń – fizyczne obrażenia zmniejszają Odporność fizyczną i tak dalej.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Atak uderza o jeden dodatkowy cel w bliskim dystansie podstawowego celu dla każdego z wprowadzonych efektów. Każdy dodatkowy cel zużywa 1 dodatkową jednostkę amunicji z broni.
@@ -493,7 +493,7 @@ FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
 FALLOUT.UI.AreYouSure: Jesteś pewien?
-FALLOUT.UI.BaseDamage: Base Damage
+FALLOUT.UI.BaseDamage: Obrażenia Podstawowe
 FALLOUT.UI.BOOKS_AND_MAGZS: Książki i Czasopisma
 FALLOUT.UI.Cancel: Anuluj
 FALLOUT.UI.CAPS: Kapsle
@@ -554,13 +554,13 @@ FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.night_vision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
-FALLOUT.WEAPONS.weaponQuality.placed: Placed
+FALLOUT.WEAPONS.weaponQuality.placed: Umieszczona
 FALLOUT.WEAPONS.weaponQuality.recoil_x: Odrzut
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
 FALLOUT.WEAPONS.weaponQuality.slow_load: Wolne przeładowanie
 FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
-FALLOUT.WEAPONS.weaponQuality.surge: Surge
+FALLOUT.WEAPONS.weaponQuality.surge: Zryw
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
@@ -568,7 +568,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
 FALLOUT.WEAPONS.weaponType.bows: Łuki
 FALLOUT.WEAPONS.weaponType.creatureAttack: Atak Stwora
-FALLOUT.WEAPONS.weaponType.custom: Custom
+FALLOUT.WEAPONS.weaponType.custom: Niestandardowy
 FALLOUT.WEAPONS.weaponType.energyWeapons: Broń Energetyczna
 FALLOUT.WEAPONS.weaponType.explosives: Materiały wybuchowe
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Broń Biała

@@ -1,6 +1,9 @@
 <div class="fallout-chat-message" data-item-id="{{item._id}}">
 	<div class="content">
 		<h2>{{rollname}}</h2>
+		{{#if flavor}}
+			<p class="flavor-paragraph-d20">{{flavor}}</p>
+		{{/if}}
 		<p class="success-plaq">
 			{{localize "FALLOUT.TEMPLATES.Successes"}}:
 			{{successes}}

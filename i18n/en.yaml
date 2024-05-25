@@ -506,19 +506,22 @@ FALLOUT.UI.CONSUMABLES: Consumables
 FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Cost
 FALLOUT.UI.Damage: Damage
-FALLOUT.UI.NUMOFDTOREROLLLUCK: How many dice you want to re-roll using luck
-FALLOUT.UI.NUMOFDTOREROLL: How many dice you want to re-roll not using luck
+FALLOUT.UI.DICE: dice
+FALLOUT.UI.DICE_WITOUT_LUCK: dice without spending luck
 FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
 FALLOUT.UI.Name: Name
 FALLOUT.UI.Not_Enough: Not Enough
+FALLOUT.UI.LUCK_POINT: luck point
 FALLOUT.UI.OTHER: Other
 FALLOUT.UI.Perks: Perks
 FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Quantity
 FALLOUT.UI.Rarity: Rarity
+FALLOUT.UI.REROLL_WITH_LUCK_COUNT: How many dice you want to re-roll using luck
+FALLOUT.UI.REROLL_COUNT: How many dice you want to re-roll not using luck
 FALLOUT.UI.ROBOT_MODULES: Robot Modules
 FALLOUT.UI.SaveChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Special Abilities
@@ -526,10 +529,13 @@ FALLOUT.UI.SPECIAL_ABILITY: Special Ability
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
-FALLOUT.UI.USINGLUCK: Using luck
+FALLOUT.UI.USING_LUCK: Using luck
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
 FALLOUT.UI.Yes: Yes
+FALLOUT.UI.YOU_RE-ROLL: You re-roll
+FALLOUT.UI.AND_YOU_RE-ROLL: and You re-roll
+FALLOUT.UI.SPENDING: spending
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst

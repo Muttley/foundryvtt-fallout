@@ -247,4 +247,17 @@ export default function registerHandlebarsHelpers() {
 		return html.replace(rgx, "$& selected");
 	});
 
+	Handlebars.registerHelper("rerollOptions", function(numOfDice) {
+		let optionsHtml="";
+		for (let i = 0; i <= numOfDice; i++) {
+			if (i===0) {
+				optionsHtml += `<option value="${i}" selected>${i}</option>`;
+			}
+			else {
+				optionsHtml += `<option value="${i}">${i}</option>`;
+			}
+		}
+		return optionsHtml;
+	});
+
 }
