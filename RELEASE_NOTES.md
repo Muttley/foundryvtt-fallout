@@ -10,7 +10,7 @@
 
 *Many thanks to **Leo Tusi** for providing a massive update to the **Portuguese, Brazilian** translation data.*
 
-*Many thanks to **bartek6199** for contributed fixes in this release*
+*Many thanks to **Bartek** for contributed fixes in this release*
 
 ---
 
