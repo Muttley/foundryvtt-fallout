@@ -3,7 +3,7 @@ import { markdown } from "markdown";
 
 import stringify from "json-stable-stringify-pretty";
 
-const issueUrl = "https://github.com/Muttley/foundryvtt-fallout/issues"
+const issueUrl = "https://github.com/Muttley/foundryvtt-fallout/issues";
 
 const docs = [
 	{

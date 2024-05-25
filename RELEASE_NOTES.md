@@ -1,6 +1,7 @@
 # v11.11.2
 
 #### Bugs
+- [#422] Fusion Cell "quantity found" roll shortcut incorrect in Ammo Item description
 - [#423] Weapon Skills not being translated correctly in the config file
 - [#424] Encumbrance floating bar can make other character sheet items inaccessible
 
