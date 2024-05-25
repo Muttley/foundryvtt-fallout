@@ -1,3 +1,19 @@
+# v11.11.2
+
+#### Bugs
+- [#422] Fusion Cell "quantity found" roll shortcut incorrect in Ammo Item description
+- [#423] Weapon Skills not being translated correctly in the config file
+- [#424] Encumbrance floating bar can make other character sheet items inaccessible
+
+#### Chores
+- [#420] Merge **Portuguese, Brazilian** and **Polish** translation updates from Crowdin
+
+*Many thanks to **Leo Tusi** for providing a massive update to the **Portuguese, Brazilian** translation data.*
+
+*Many thanks to **Bartek** for contributed fixes in this release*
+
+---
+
 # v11.11.1
 
 #### Bugs
@@ -194,7 +210,7 @@
 - [#292] Merge French translation updates from Crowdin
 - [#299] Merge German translation updates from Crowdin
 
-*Many thanks to VTTom for their work on the German translations which now have 100% coverage at time of writing.*
+*Many thanks to **VTTom** for their work on the German translations which now have 100% coverage at time of writing.*
 
 ---
 

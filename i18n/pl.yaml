@@ -257,14 +257,14 @@ FALLOUT.SKILL.Speech: Retoryka
 FALLOUT.SKILL.Survival: Przetrwanie
 FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Showdown in Skull Canyon #2: W Pełni Operacyjny"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Niesamowicie Niesłychane Opowieści #: Polowanie!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Niesamowicie Niesłychane Opowieści #1: Pomarańczowe Niebo"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Niesamowicie Niesłychane Opowieści #3: Pojedynek w Kanionie Czaszek"
 FALLOUT.SOURCE_TITLE.core_rulebook: Podręcznik Główny
 FALLOUT.SOURCE_TITLE.enclave_remnants: "Pakiet BN #2: Pozostałości Enklawy"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Zestaw Narzędzi Mistrza Gry"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Paczka Map #1: Krypta"
 FALLOUT.SOURCE_TITLE.rust_devils: "Pakiet BN #1: Rdzawe Diabły"
 FALLOUT.SOURCE_TITLE.settlers_guide: Przewodnik Osadnika
 FALLOUT.SOURCE_TITLE.wanderers_guide: Przewodnik Wędrowca
@@ -554,13 +554,13 @@ FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
 FALLOUT.WEAPONS.weaponQuality.night_vision: Noktowizja
 FALLOUT.WEAPONS.weaponQuality.parry: Parująca
-FALLOUT.WEAPONS.weaponQuality.placed: Placed
+FALLOUT.WEAPONS.weaponQuality.placed: Umieszczona
 FALLOUT.WEAPONS.weaponQuality.recoil_x: Odrzut
 FALLOUT.WEAPONS.weaponQuality.recon: Zwiadowcza
 FALLOUT.WEAPONS.weaponQuality.reliable: Niezawodna
 FALLOUT.WEAPONS.weaponQuality.slow_load: Wolne przeładowanie
 FALLOUT.WEAPONS.weaponQuality.suppressed: Wytłumiona
-FALLOUT.WEAPONS.weaponQuality.surge: Surge
+FALLOUT.WEAPONS.weaponQuality.surge: Zryw
 FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna

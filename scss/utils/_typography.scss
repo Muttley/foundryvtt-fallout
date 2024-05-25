@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 $font-primary: "Roboto", sans-serif;
 $font-secondary: "Roboto", sans-serif;
 $font-small:'Encode Sans', sans-serif;
 $font-journal-header: "Kaushan Script", cursive;
 $font-blockquote-header: "Dancing Script", cursive;
+$font-fixed: "Share Tech Mono", monospace;
 
-$font-oswald: "Oswald", sans-serif;
-$font-lobster: "Lobster", cursive;
-$font-kaushan: "Kaushan Script", cursive;
 $font-dancing-script: "Dancing Script", cursive;
+$font-kaushan: "Kaushan Script", cursive;
+$font-lobster: "Lobster", cursive;
+$font-oswald: "Oswald", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-share-tech: "Share Tech Mono", monospace;
 
 $fallout-font-family: "fallout" !default;
 $fallout-font-path: "../assets/fonts" !default;

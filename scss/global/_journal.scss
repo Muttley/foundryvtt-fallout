@@ -59,6 +59,10 @@
 		}
 	}
 
+	code {
+		font-family: $font-fixed;
+	}
+
 	footer {
 		background-color: rgb(28, 63, 125);
 		border-radius: 16px;
@@ -116,7 +120,7 @@
 		border-bottom: 1px solid #000000;
 		border-top: 1px solid #000000;
 		padding: 4px 0px 4px 4px;
-		margin-top: 1.5rem;
+		margin-top: 1rem;
 	}
 
 	h4 {

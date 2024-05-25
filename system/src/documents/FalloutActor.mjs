@@ -137,20 +137,15 @@ export default class FalloutActor extends Actor {
 		this._prepareSettlementData();
 
 		// ADD UNOFFICIAL SPEED
-		try {
-			const athletics = this.items.find(
-				i => i.name.toLowerCase() === "athletics" && i.type === "skill"
-			);
+		const athletics = this.items.find(
+			i => i.name.toLowerCase() === "athletics" && i.type === "skill"
+		);
 
-			const athleticsValue = athletics !== undefined
-				? athletics.system.value
-				: 0;
+		const athleticsValue = athletics !== undefined
+			? athletics.system.value
+			: 0;
 
-			this.system.unofficalSpeed = this.system.attributes.agi.value + athleticsValue;
-		}
-		catch(er) {
-
-		}
+		this.system.unofficalSpeed = this.system.attributes.agi.value + athleticsValue;
 	}
 
 	/**
@@ -1203,10 +1198,8 @@ export default class FalloutActor extends Actor {
 					let roll = new Roll(formula);
 
 					let alcoholicRoll = await roll.evaluate();
-					try {
-						game.dice3d.showForRoll(alcoholicRoll);
-					}
-					catch(err) {}
+
+					fallout.Roller2D20.showDiceSoNice(alcoholicRoll);
 
 					if (parseInt(roll.result) >= 2) {
 						actorUpdateData["system.conditions.alcoholic"] = true;
@@ -1238,10 +1231,8 @@ export default class FalloutActor extends Actor {
 					let roll = new Roll(formula);
 
 					let radiationDamageRoll = await roll.evaluate();
-					try {
-						game.dice3d.showForRoll(radiationDamageRoll);
-					}
-					catch(err) {}
+
+					fallout.Roller2D20.showDiceSoNice(radiationDamageRoll);
 
 					const baseRadDamage = parseInt(roll.result);
 					if (baseRadDamage > 0) {
@@ -1307,10 +1298,8 @@ export default class FalloutActor extends Actor {
 					let roll = new Roll(formula);
 
 					let addictedRoll = await roll.evaluate();
-					try {
-						game.dice3d.showForRoll(addictedRoll);
-					}
-					catch(err) {}
+
+					fallout.Roller2D20.showDiceSoNice(addictedRoll);
 
 					if (parseInt(roll.result) >= item.system.addiction) {
 
@@ -1498,10 +1487,8 @@ export default class FalloutActor extends Actor {
 		let roll = new Roll(formula);
 
 		let availabilityRoll = await roll.evaluate();
-		try {
-			game.dice3d.showForRoll(availabilityRoll);
-		}
-		catch(err) {}
+
+		fallout.Roller2D20.showDiceSoNice(availabilityRoll);
 
 		const rarity = parseInt(roll.result);
 
