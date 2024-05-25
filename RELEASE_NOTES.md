@@ -8,7 +8,7 @@
 #### Chores
 - [#420] Merge **Portuguese, Brazilian** and **Polish** translation updates from Crowdin
 
-*Many thanks to <insert_name_here> for briging the **Portuguese, Brazilian** translation up to 93% complete.*
+*Many thanks to **Leo Tusi** for providing a massive update to the **Portuguese, Brazilian** translation data.*
 
 *Many thanks to **bartek6199** for contributed fixes in this release*
 
