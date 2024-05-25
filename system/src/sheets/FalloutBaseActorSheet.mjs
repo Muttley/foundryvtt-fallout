@@ -13,8 +13,8 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			width: 750,
-			height: 915,
+			width: 760,
+			height: 955,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",

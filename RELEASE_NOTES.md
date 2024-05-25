@@ -2,6 +2,7 @@
 
 #### Bugs
 - [#423] Weapon Skills not being translated correctly in the config file
+- [#424] Encumbrance floating bar can make other character sheet items inaccessible
 
 #### Chores
 - [#420] Merge **Portuguese, Brazilian** and **Polish** translation updates from Crowdin
