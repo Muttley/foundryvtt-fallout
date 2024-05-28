@@ -1,3 +1,8 @@
+# v11.11.3
+
+#### Bugs
+- [#428] Rolling weapon attacks broken when using a non-English language setting
+
 # v11.11.2
 
 #### Bugs
