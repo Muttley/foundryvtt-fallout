@@ -38,7 +38,7 @@ FALLOUT.APP.PartySleep.hours: "{length} Stunden"
 FALLOUT.APP.PartySleep.safe_location: Ist der Standort gesichert?
 FALLOUT.APP.PartySleep.title: Gruppenrast
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Spielzeit vorspulen
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: du hast keinen Müll zum verwerten
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Du hast keinen Müll zum verwerten
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Spielzeit um {time} vorgespult
 FALLOUT.APP.SalvageJunk.selectedAmount: Verwerte {amount} Müll
 FALLOUT.APP.SalvageJunk.start: Starte Verwerten
