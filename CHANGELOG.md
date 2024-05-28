@@ -2,6 +2,12 @@
 
 #### Bugs
 - [#428] Rolling weapon attacks broken when using a non-English language setting
+- [#430] Character sheet not fully visible on low-resolution displays due to min-height CSS setting
+
+#### Chores
+- [#429] Merge German translation updates from Crowdin
+
+---
 
 # v11.11.2
 
