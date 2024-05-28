@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: P Percepção
 FALLOUT.AbilityStr: S Força
 FALLOUT.actor.inventory.materials.common: Comum
 FALLOUT.actor.inventory.materials.junk: Lixo
-FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
+FALLOUT.actor.inventory.materials.junkSalvageControl: Sucatear Lixo
 FALLOUT.actor.inventory.materials.label: Materiais
 FALLOUT.actor.inventory.materials.rare: Raro
 FALLOUT.actor.inventory.materials.uncommon: Incomum
@@ -23,9 +23,9 @@ FALLOUT.Actor.Warnings.DerivedValue: Este é um valor calculado automaticamente 
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Esse PNJ já é um residente de {settlementName}
 FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
 FALLOUT.Add: Adicionar
-FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
-FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
-FALLOUT.APP.ChemDoseManager.title: Chem Doses
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Restaurar Tudo
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Redefinir Doses de Droga
+FALLOUT.APP.ChemDoseManager.title: Doses de Droga
 FALLOUT.APP.ItemTypeMenu.title: Selecionar Tipo de Item
 FALLOUT.APP.Loading.body: Buscando nos Ermos...
 FALLOUT.APP.Loading.title: Carregando
@@ -37,13 +37,13 @@ FALLOUT.APP.PartySleep.hour: 1 hora
 FALLOUT.APP.PartySleep.hours: "{length} horas"
 FALLOUT.APP.PartySleep.safe_location: O Local é Seguro?
 FALLOUT.APP.PartySleep.title: Descanso do Grupo
-FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
-FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
-FALLOUT.APP.SalvageJunk.start: Start Salvaging
-FALLOUT.APP.SalvageJunk.time: This will take {time}
-FALLOUT.APP.SalvageJunk.title: Salvage Junk
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Avançar Tempo do Jogo
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Você não tem lixo para sucatear
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Tempo do jogo avançou {time}
+FALLOUT.APP.SalvageJunk.selectedAmount: Sucateando {amount} Lixo
+FALLOUT.APP.SalvageJunk.start: Começar a Sucatear
+FALLOUT.APP.SalvageJunk.time: Isso levará {time}
+FALLOUT.APP.SalvageJunk.title: Sucatear Lixo
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Roupa
 FALLOUT.APPAREL.headgear: Equip. Cabeça
@@ -134,7 +134,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radiação
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dano de Radiação
-FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
 FALLOUT.CHEM: Drogas
 FALLOUT.ChemDuration.brief: Curto
 FALLOUT.ChemDuration.instant: Instantâneo
@@ -157,7 +157,7 @@ FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
 FALLOUT.EffectToggle: Alternar Efeito
 FALLOUT.equipped: Equipado
-FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
+FALLOUT.ERRORS.ThisWeaponIsBroken: Esta arma está quebrada e não pode mais ser usada.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o Atributo usado nessa arma.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Artibuto e/ou Habilidade de Criatura especificada.
@@ -176,12 +176,12 @@ FALLOUT.Form.SourceFilters.title: Filtrar Fontes
 FALLOUT.HEALTH.current: Vida Atual
 FALLOUT.HEALTH.health: Pontos de Vida
 FALLOUT.HEALTH.max: Vida máxima
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.PowerArmor.Attach: Anexar
+FALLOUT.Item.PowerArmor.Attached: Anexado
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
-FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
+FALLOUT.Item.PowerArmor.Pieces: Peças de Armadura Potente
 FALLOUT.LEVEL.CurrentXP: XP Atual
 FALLOUT.LEVEL.Level: Nível
 FALLOUT.LEVEL.NextXP: XP Prox. Nível
@@ -228,7 +228,7 @@ FALLOUT.SETTLEMENT_ITEM.CraftingTable: Mesa de Trabalho
 FALLOUT.SETTLEMENT_ITEM.Defense: Defesa
 FALLOUT.SETTLEMENT_ITEM.Power: Energia
 FALLOUT.SETTLEMENT_ITEM.Resource: Recurso
-FALLOUT.SETTLEMENT_ITEM.Room: Room
+FALLOUT.SETTLEMENT_ITEM.Room: Quarto
 FALLOUT.SETTLEMENT_ITEM.Store: Store
 FALLOUT.SETTLEMENT_ITEM.Structure: Estrutura
 FALLOUT.SETTLEMENT.Beds.label: Camas
@@ -257,18 +257,18 @@ FALLOUT.SKILL.Speech: Lábia
 FALLOUT.SKILL.Survival: Sobrevivência
 FALLOUT.SKILL.Throwing: Arremesso
 FALLOUT.SKILL.Unarmed: Desarmado
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
-FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
-FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
-FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
-FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Totalmente Operacional"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Caçados!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Céus Alaranjados"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Confronto em Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: Livro de Regras Básico
+FALLOUT.SOURCE_TITLE.enclave_remnants: "Complemento de PNJs #2: Restos da Enclave"
+FALLOUT.SOURCE_TITLE.gm_toolkit: "Ferramentas de Mestre"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Pacote de Mapas #1: Refúgio"
+FALLOUT.SOURCE_TITLE.rust_devils: "Complemento de PNJs #1: Os Rust Devils"
+FALLOUT.SOURCE_TITLE.settlers_guide: Livro Guia dos Colonos
+FALLOUT.SOURCE_TITLE.wanderers_guide: Livro Guia dos Andarilhos
+FALLOUT.SOURCE_TITLE.winter_of_atom: Inverno de Átom
 FALLOUT.TEMPLATES.Abilities: Habilidades
 FALLOUT.TEMPLATES.Add_Perk: Adicionar Talento
 FALLOUT.TEMPLATES.Add_Trait: Adicionar Traço
@@ -289,7 +289,7 @@ FALLOUT.TEMPLATES.Attack: Ataque
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
-FALLOUT.TEMPLATES.Base_Damage: Base Damage
+FALLOUT.TEMPLATES.Base_Damage: Dano Base
 FALLOUT.TEMPLATES.Butchery: Talhar
 FALLOUT.TEMPLATES.ButcheryTooltip: Número Alvo de Talhar
 FALLOUT.TEMPLATES.Compl: Compl.
@@ -340,7 +340,7 @@ FALLOUT.TEMPLATES.Damage_Effects: Efeitos de Dano
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
 FALLOUT.TEMPLATES.DAMAGE: DANO
-FALLOUT.TEMPLATES.Data: Data
+FALLOUT.TEMPLATES.Data: Dados
 FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
 FALLOUT.TEMPLATES.DEFENSE: DEFESA
 FALLOUT.TEMPLATES.Delete_Item: Deletar Item
@@ -367,7 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Feridas
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
 FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
-FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Dados de Dano de Radiação
 FALLOUT.TEMPLATES.Issue: Problema
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -375,13 +375,13 @@ FALLOUT.TEMPLATES.Learned: Aprendido
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCAIS & FERIDAS
 FALLOUT.TEMPLATES.Locations: Locais
 FALLOUT.TEMPLATES.Luck: Sorte
-FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materiais Recuperados
 FALLOUT.TEMPLATES.MaterialsRequired: Materiais Necessários
 FALLOUT.TEMPLATES.MAX_PARTY_AP: PA MÁXIMO DO GRUPO
 FALLOUT.TEMPLATES.max: máx
 FALLOUT.TEMPLATES.MAX: MÁX
-FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
-FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
+FALLOUT.TEMPLATES.Melee_Bonus: Bônus Corpo a Corpo
+FALLOUT.TEMPLATES.Melee_Damage: Dano Corpo a Corpo
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Modificação
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Prefixos
@@ -427,7 +427,7 @@ FALLOUT.TEMPLATES.Successes: Sucessos
 FALLOUT.TEMPLATES.Tag: Marcada
 FALLOUT.TEMPLATES.Tear: Desgaste
 FALLOUT.TEMPLATES.Thirst_Reduction: Redução da Sede
-FALLOUT.TEMPLATES.TimeTaken: Time Taken
+FALLOUT.TEMPLATES.TimeTaken: Tempo Gasto
 FALLOUT.TEMPLATES.TN: NA
 FALLOUT.TEMPLATES.TRAIT: TRAÇO
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Ferida Tratada (Botão Dir.)
@@ -448,12 +448,12 @@ FALLOUT.TEMPLATES.Weapon: Arma
 FALLOUT.TEMPLATES.WeaponName: Nome da Arma
 FALLOUT.TEMPLATES.Weapons: Armas
 FALLOUT.TEMPLATES.WellRested: Bem Descansado
-FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
-FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
-FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
-FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
-FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
-FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
+FALLOUT.TIME.DAYS_PLURAL: "{days} Dias"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Dia"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Horas"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hora"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutos"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minutos"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional sofre metade do dano rolado (arredondado para cima). Diferente da Rajada, isso não custa munção adicional.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Por cada Efeito rolado, reduz o número de @fos[DC] que a cobertura fornece ao alvo em 1, permanentemente. Se o alvo não está em cobertura, reduza a RD do local atingido em 1, dependendo do dano que a arma inflinge.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional gasta 1 munição adicional da arma.
@@ -493,7 +493,7 @@ FALLOUT.UI.Add: Adicionar
 FALLOUT.UI.Addictions: Vícios
 FALLOUT.UI.APPAREL_MODS: Modificações de Vestuário
 FALLOUT.UI.AreYouSure: Você Tem Certeza?
-FALLOUT.UI.BaseDamage: Base Damage
+FALLOUT.UI.BaseDamage: Dano Base
 FALLOUT.UI.BOOKS_AND_MAGZS: Livros e Revistas
 FALLOUT.UI.Cancel: Cancelar
 FALLOUT.UI.CAPS: Tampinhas
@@ -578,7 +578,7 @@ FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
 ITEM.AmmoPerShot: Munição Por Tiro
 TYPES.Actor.character: Personagem
 TYPES.Actor.creature: Criatura
-TYPES.Actor.npc: NPC
+TYPES.Actor.npc: NPJ
 TYPES.Actor.robot: Robô
 TYPES.Actor.settlement: Assentamento
 TYPES.Item.addiction: Vício
