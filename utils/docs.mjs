@@ -7,7 +7,7 @@ const issueUrl = "https://github.com/Muttley/foundryvtt-fallout/issues";
 
 const docs = [
 	{
-		src: "./RELEASE_NOTES.md",
+		src: "./CHANGELOG.md",
 		dst: "./data/packs/system_documentation.db/release_notes__auV5NLfnrA5zUr9q.json",
 	},
 	{
