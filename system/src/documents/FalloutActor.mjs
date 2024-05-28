@@ -719,12 +719,15 @@ export default class FalloutActor extends Actor {
 			actorLink: false,
 			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
 			name: data.name, // Set token name to actor name
+			sight: {
+				enabled: true,
+			},
 			texture: foundry.utils.duplicate(this.prototypeToken.texture),
 		};
 
 		if (["character", "robot", "settlement"].includes(data.type)) {
-			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
 			prototypeToken.actorLink = true;
+			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
 		}
 
 		const update = {prototypeToken};
