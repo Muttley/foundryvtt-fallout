@@ -574,15 +574,15 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.2.2
 
-# Bugfixes
+#### Bugfixes
 - [#14] NPC / Creature inventory items messed up
 
-# Enhancements
+#### Enhancements
 - [#15] Tidy up hunger/thirst/sleep selector layout
 
 ---
 
-# v11.2.1
+#### v11.2.1
 
 # Bugfixes
 - [#9] AP Tracker not launching
