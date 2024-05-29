@@ -21,7 +21,7 @@ FALLOUT.actor.inventory.materials.uncommon: Incomum
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Esse valor está sendo modificado por um Efeito Ativo e não pode ser editado. Desative o Efeito para editá-lo.
 FALLOUT.Actor.Warnings.DerivedValue: Este é um valor calculado automaticamente que não pode ser editado.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Esse PNJ já é um residente de {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Um colono com a Ator UUID {uuid} não pôde ser encontrado então foi removido do {settlementName}
 FALLOUT.Add: Adicionar
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Restaurar Tudo
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Redefinir Doses de Droga
@@ -178,9 +178,9 @@ FALLOUT.HEALTH.health: Pontos de Vida
 FALLOUT.HEALTH.max: Vida máxima
 FALLOUT.Item.PowerArmor.Attach: Anexar
 FALLOUT.Item.PowerArmor.Attached: Anexado
-FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
+FALLOUT.Item.PowerArmor.AttachedToFrame: Anexado ao Chassi
 FALLOUT.Item.PowerArmor.Frame: Chassi
-FALLOUT.Item.PowerArmor.IsFrame: Is Frame
+FALLOUT.Item.PowerArmor.IsFrame: É Chassi
 FALLOUT.Item.PowerArmor.Pieces: Peças de Armadura Potente
 FALLOUT.LEVEL.CurrentXP: XP Atual
 FALLOUT.LEVEL.Level: Nível
