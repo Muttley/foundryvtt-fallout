@@ -179,7 +179,7 @@ FALLOUT.HEALTH.max: Vida máxima
 FALLOUT.Item.PowerArmor.Attach: Anexar
 FALLOUT.Item.PowerArmor.Attached: Anexado
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
-FALLOUT.Item.PowerArmor.Frame: Frame
+FALLOUT.Item.PowerArmor.Frame: Chassi
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
 FALLOUT.Item.PowerArmor.Pieces: Peças de Armadura Potente
 FALLOUT.LEVEL.CurrentXP: XP Atual
@@ -229,7 +229,7 @@ FALLOUT.SETTLEMENT_ITEM.Defense: Defesa
 FALLOUT.SETTLEMENT_ITEM.Power: Energia
 FALLOUT.SETTLEMENT_ITEM.Resource: Recurso
 FALLOUT.SETTLEMENT_ITEM.Room: Quarto
-FALLOUT.SETTLEMENT_ITEM.Store: Store
+FALLOUT.SETTLEMENT_ITEM.Store: Loja
 FALLOUT.SETTLEMENT_ITEM.Structure: Estrutura
 FALLOUT.SETTLEMENT.Beds.label: Camas
 FALLOUT.SETTLEMENT.Defense.label: Defesa
