@@ -1,3 +1,10 @@
+# v11.11.4
+
+#### Bugs
+- [#436] Unable to alter max AP setting if you reduce it to zero
+
+---
+
 # v11.11.3
 
 #### Bugs
