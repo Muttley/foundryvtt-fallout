@@ -3,6 +3,9 @@
 #### Bugs
 - [#436] Unable to alter max AP setting if you reduce it to zero
 
+#### Chores
+- [#433] Merge new German and Portuguese/Brazilian translation updates from Crowdin
+
 ---
 
 # v11.11.3
