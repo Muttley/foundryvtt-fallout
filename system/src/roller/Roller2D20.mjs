@@ -434,6 +434,7 @@ export class Roller2D20 {
 			flags,
 			roll,
 			rollMode: game.settings.get("core", "rollMode"),
+			speaker: ChatMessage.getSpeaker({actor: actor}),
 			user: game.user.id,
 			whisper,
 		};

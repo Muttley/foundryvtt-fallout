@@ -1,3 +1,14 @@
+# v11.11.4
+
+#### Bugs
+- [#434] Skills on NPC sheet aren't correctly translated
+- [#436] Unable to alter max AP setting if you reduce it to zero
+
+#### Chores
+- [#433] Merge new German and Portuguese/Brazilian translation updates from Crowdin
+
+---
+
 # v11.11.3
 
 #### Bugs
@@ -574,15 +585,15 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.2.2
 
-# Bugfixes
+#### Bugfixes
 - [#14] NPC / Creature inventory items messed up
 
-# Enhancements
+#### Enhancements
 - [#15] Tidy up hunger/thirst/sleep selector layout
 
 ---
 
-# v11.2.1
+#### v11.2.1
 
 # Bugfixes
 - [#9] AP Tracker not launching

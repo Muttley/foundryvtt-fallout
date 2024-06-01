@@ -136,16 +136,22 @@ export default class FalloutActor extends Actor {
 		this._prepareRobotData();
 		this._prepareSettlementData();
 
-		// ADD UNOFFICIAL SPEED
-		const athletics = this.items.find(
-			i => i.name.toLowerCase() === "athletics" && i.type === "skill"
-		);
+		if (["character", "npc", "robot"].includes(this.type)) {
+			const athletics = this.items.find(
+				i => i.name.toLowerCase() === "athletics" && i.type === "skill"
+			);
 
-		const athleticsValue = athletics !== undefined
-			? athletics.system.value
-			: 0;
+			const athleticsValue = athletics !== undefined
+				? athletics.system.value
+				: 0;
 
-		this.system.unofficalSpeed = this.system.attributes.agi.value + athleticsValue;
+			this.system.unofficalSpeed =
+				this.system.attributes.agi.value + athleticsValue;
+		}
+		else if (this.type === "creature") {
+			this.system.unofficalSpeed =
+				this.system.body.value + this.system.body.mod;
+		}
 	}
 
 	/**
