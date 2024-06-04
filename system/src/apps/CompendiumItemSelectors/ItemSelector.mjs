@@ -78,6 +78,10 @@ export default class ItemSelector extends CompendiumItemSelector {
 				const modType = item.system.modType;
 				return `${item.name} (${weaponType}, ${modType})`;
 			}
+			case "skill": {
+				const localizeName = fallout.utils.getLocalizedSkillName(item);
+				return `${localizeName}`;
+			}
 			default:
 				return super.decorateName(item);
 		}
