@@ -11,7 +11,7 @@ export class Dialog2d20 extends Dialog {
 		actor,
 		item,
 		ap,
-		apcost,
+		apCost,
 		dialogData={},
 		options={}
 	) {
@@ -26,7 +26,7 @@ export class Dialog2d20 extends Dialog {
 		this.actor = actor;
 		this.item = item;
 		this.ap = ap;
-		this.apcost = apcost;
+		this.apCost = apCost;
 		this.options.classes = ["dice-icon"];
 		this.deferred = new Deferred();
 	}
@@ -37,9 +37,9 @@ export class Dialog2d20 extends Dialog {
 		html.ready(e => {
 			this.markDiceNumber(html, this.diceNum);
 			if (this.actor.type !== "character" && this.actor.type !== "robot") {
-				this.gmroll(html);
+				this.gmRoll(html);
 			}
-			this.freed20(html);
+			this.freeD20(html);
 		});
 
 		html.on("click", ".dice-icon", (e, i, a) => {
@@ -47,28 +47,28 @@ export class Dialog2d20 extends Dialog {
 			this.diceNum = parseInt(index);
 			this.markDiceNumber(html, this.diceNum);
 			if (this.actor.type === ("character" || "robot")) {
-				this.apmanagment(html);
+				this.apManagment(html);
 			}
 			else {
-				this.gmapmanagment(html);
+				this.gmApManagment(html);
 			}
 
 		});
 		html.on("click", '[name="freed20"]', () => {
-			this.freed20(html);
-			let numberofdice = 0;
+			this.freeD20(html);
+			let numberOfDice = 0;
 			for (let i = 2; i <= 5; i++) {
 				const diceElement =this.element.find(`[data-index="${i}"]`);
 				const containsMarked = diceElement.hasClass("marked");
 				if (containsMarked) {
-					numberofdice = i;
+					numberOfDice = i;
 				}
 			}
 			if (this.actor.type === ("character" || "robot")) {
-				this.apmanagment(html, numberofdice);
+				this.apManagment(html, numberOfDice);
 			}
 			else {
-				this.gmapmanagment(html, numberofdice);
+				this.gmApManagment(html, numberOfDice);
 			}
 
 		});
@@ -76,12 +76,12 @@ export class Dialog2d20 extends Dialog {
 			if (this.actor.type === ("character" || "robot")) {
 				let ap = game.settings.get("fallout", "partyAP");
 				this.element.find('[name="current_ap"]').val(ap);
-				this.apmanagment(html);
+				this.apManagment(html);
 			}
 			else {
 				let ap = game.settings.get("fallout", "gmAP");
 				this.element.find('[name="current_ap"]').val(ap);
-				this.gmapmanagment(html);
+				this.gmApManagment(html);
 			}
 		});
 
@@ -90,12 +90,12 @@ export class Dialog2d20 extends Dialog {
 			if (this.actor.type === ("character" || "robot")) {
 				let ap = game.settings.get("fallout", "partyAP");
 				this.element.find('[name="current_ap"]').val(ap);
-				this.apmanagment(html);
+				this.apManagment(html);
 			}
 			else {
 				let ap = game.settings.get("fallout", "gmAP");
 				this.element.find('[name="current_ap"]').val(ap);
-				this.gmapmanagment(html);
+				this.gmApManagment(html);
 			}
 
 			this.rollButton(this);
@@ -109,20 +109,20 @@ export class Dialog2d20 extends Dialog {
 		let skill = this.element.find('[name="skill"]').val();
 		let complication = this.element.find('[name="complication"]').val();
 		let isTag = this.element.find('[name="tag"]').is(":checked");
-		let apspend = this.element.find('[name="spend_ap"]').val();
-		let apbuy = parseInt(this.element.find('[name="by_from_gm"]').val());
+		let apSpend = this.element.find('[name="spend_ap"]').val();
+		let apBuy = parseInt(this.element.find('[name="by_from_gm"]').val());
 		this.rolling = true;
-		let numberofdice = 0;
+		let numberOfDice = 0;
 		for (let i = 2; i <= 5; i++) {
 			const diceElement =this.element.find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
 			if (containsMarked) {
-				numberofdice = i;
+				numberOfDice = i;
 			}
 		}
 		fallout.Roller2D20.rollD20({
 			rollname: this.rollName,
-			dicenum: numberofdice,
+			dicenum: numberOfDice,
 			attribute: attr,
 			skill: skill,
 			tag: isTag,
@@ -130,28 +130,28 @@ export class Dialog2d20 extends Dialog {
 			rollLocation: this.rollLocation,
 			item: this.item,
 			actor: this.actor,
-			apspend: apspend,
-			apbuy: apbuy,
+			apSpend: apSpend,
+			apBuy: apBuy,
 		}).then(result => this.deferred.resolve(result));
 
 		let ap = game.settings.get("fallout", "partyAP");
-		let gmap = parseInt(game.settings.get("fallout", "gmAP"));
+		let gmAP = parseInt(game.settings.get("fallout", "gmAP"));
 
-		if (apbuy>0) {
+		if (apBuy>0) {
 			ap = 0;
 			fallout.APTracker.setAP("partyAP", ap);
-			let givegmap = apbuy + gmap;
-			fallout.APTracker.setAP("gmAP", givegmap);
+			let giveGmAP = apBuy + gmAP;
+			fallout.APTracker.setAP("gmAP", giveGmAP);
 		}
 		else {
 			// eslint-disable-next-line no-lonely-if
 			if (this.actor.type === ("character" || "robot")) {
-				let leftpartyap = ap - apspend;
-				fallout.APTracker.setAP("partyAP", leftpartyap);
+				let leftPartyAp = ap - apSpend;
+				fallout.APTracker.setAP("partyAP", leftPartyAp);
 			}
 			else {
-				let leftpartyap = gmap - apspend;
-				fallout.APTracker.setAP("gmAP", leftpartyap);
+				let leftPartyAp = gmAP - apSpend;
+				fallout.APTracker.setAP("gmAP", leftPartyAp);
 			}
 
 		}
@@ -185,8 +185,8 @@ export class Dialog2d20 extends Dialog {
 		let attr = this.element.find('[name="attribute"]').val();
 		let skill = this.element.find('[name="skill"]').val();
 		let complication = this.element.find('[name="complication"]').val();
-		let apbuy = this.element.find('[name="by_from_gm"]').val();
-		let apspend = this.element.find('[name="spend_ap"]').val();
+		let apBuy = 0;
+		let apSpend = 0;
 		let isTag = this.element.find('[name="tag"]').is(":checked");
 		this.rolling = true;
 		let nameroll = "";
@@ -206,8 +206,8 @@ export class Dialog2d20 extends Dialog {
 			rollLocation: this.rollLocation,
 			item: this.item,
 			actor: this.actor,
-			apspend: apspend,
-			apbuy: apbuy,
+			apSpend: apSpend,
+			apBuy: apBuy,
 		}).then(result => this.deferred.resolve(result));
 
 		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
@@ -243,42 +243,42 @@ export class Dialog2d20 extends Dialog {
 		}
 	}
 
-	markDiceNumber(html, numberofdice, gmerror) {
-		let nextdice;
-		let markeddice = 0;
+	markDiceNumber(html, numberOfDice, gmError) {
+		let nextDice;
+		let markedDice = 0;
 		for (let i = 2; i <= 5; i++) {
 			const diceElement =this.element.find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
 			if (containsMarked) {
-				markeddice = i;
+				markedDice = i;
 			}
 		}
-		if ((numberofdice === 2 || ($(html).find('[name="freed20"]').is(":checked") && numberofdice === 3)) && markeddice === numberofdice) {
-			const diceElement = $(html).find(`[data-index="${numberofdice}"]`);
+		if ((numberOfDice === 2 || ($(html).find('[name="freed20"]').is(":checked") && numberOfDice === 3)) && markedDice === numberOfDice) {
+			const diceElement = $(html).find(`[data-index="${numberOfDice}"]`);
 			diceElement.addClass("marked");
 		 }
 		else {
-			const currentdice = $(html).find(`[data-index="${numberofdice}"]`).hasClass("marked");
-			if (numberofdice+1 >5) {
-				nextdice = false;
+			const currentdice = $(html).find(`[data-index="${numberOfDice}"]`).hasClass("marked");
+			if (numberOfDice+1 >5) {
+				nextDice = false;
 			}
 			else {
-				nextdice = $(html).find(`[data-index="${numberofdice + 1}"]`).hasClass("marked");
+				nextDice = $(html).find(`[data-index="${numberOfDice + 1}"]`).hasClass("marked");
 			}
 			for (let i = 2; i <= 5; i++) {
 				const diceElement = $(html).find(`[data-index="${i}"]`);
 				if (i<=this.diceNum && currentdice === false) {
 					diceElement.addClass("marked");
 				}
-				if (i> this.diceNum && nextdice === true) {
+				if (i> this.diceNum && nextDice === true) {
 					diceElement.removeClass("marked");
 				}
-				if (i === this.diceNum && nextdice === false && currentdice === true) {
+				if (i === this.diceNum && nextDice === false && currentdice === true) {
 					diceElement.removeClass("marked");
 				}
 			}
 		}
-		if (gmerror) {
+		if (gmError) {
 			let i = 0;
 			if ($(html).find('[name="freed20"]').is(":checked") ) {
 				i = 4;
@@ -295,25 +295,25 @@ export class Dialog2d20 extends Dialog {
 	}
 
 
-	freed20(html) {
+	freeD20(html) {
 		const regular = game.i18n.localize("FALLOUT.UI.REGULAR");
 		const pay1ap = game.i18n.localize("FALLOUT.UI.PAYAP1");
 		const pay3ap = game.i18n.localize("FALLOUT.UI.PAYAP3");
 		const pay6ap = game.i18n.localize("FALLOUT.UI.PAYAP6");
 		const li2d20 = document.querySelector('[name="2d20"]');
-		let numberofdice = 0;
+		let numberOfDice = 0;
 		for (let i = 2; i <= 5; i++) {
 			const diceElement =this.element.find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
 			if (containsMarked) {
-				numberofdice = i;
+				numberOfDice = i;
 			}
 		}
 
 		if ($(html).find('[name="freed20"]').is(":checked")) {
 			li2d20.style.display = "none";
 			$(html).find("ul[name='currentap'] li:nth-child(2) label").text(regular);
-			if (numberofdice === 2) {
+			if (numberOfDice === 2) {
 				$(html).find("[data-index= 3]").addClass("marked");
 			}
 			$(html).find("ul[name='currentap'] li:nth-child(3) label").text(pay1ap);
@@ -325,62 +325,62 @@ export class Dialog2d20 extends Dialog {
 			$(html).find("ul[name='currentap'] li:nth-child(2) label").text(pay1ap);
 			$(html).find("ul[name='currentap'] li:nth-child(3) label").text(pay3ap);
 			$(html).find("ul[name='currentap'] li:nth-child(4) label").text(pay6ap);
-			if (numberofdice === 3) {
+			if (numberOfDice === 3) {
 				$(html).find("[data-index= 3]").removeClass("marked");
 			}
 
 		}
 	}
 
-	apmanagment(html) {
-		let apcostd = 0;
+	apManagment(html) {
+		let apCost = 0;
 		let left = 0;
-		let numberofdice = 0;
+		let numberOfDice = 0;
 		let ap =this.element.find('[name="current_ap"]').val();
 		for (let i = 2; i <= 5; i++) {
 			const diceElement = $(html).find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
 			if (containsMarked) {
-				numberofdice = i;
+				numberOfDice = i;
 			}
 		}
 		if ($(html).find('[name="freed20"]').is(":checked")) {
-			switch (numberofdice) {
+			switch (numberOfDice) {
 				case 2:
-					apcostd = 0;
+					apCost = 0;
 					$(html).find('[name="by_from_gm"]').val(0);
 					break;
 				case 3:
-					apcostd = 0;
+					apCost = 0;
 					$(html).find('[name="by_from_gm"]').val(0);
 					break;
 				case 4:
-					apcostd = 1;
-					left = ap - apcostd;
+					apCost = 1;
+					left = ap - apCost;
 					break;
 				case 5:
-					apcostd = 3;
-					left = ap - apcostd;
+					apCost = 3;
+					left = ap - apCost;
 					break;
 			}
 		}
 		else {
-			switch (numberofdice) {
+			switch (numberOfDice) {
 				case 2:
-					apcostd = 0;
+					apCost = 0;
 					$(html).find('[name="by_from_gm"]').val(0);
 					break;
 				case 3:
-					apcostd = 1;
-					left = ap - apcostd;
+					apCost = 1;
+					left = ap - apCost;
 					break;
 				case 4:
-					apcostd = 3;
-					left = ap - apcostd;
+					apCost = 3;
+					left = ap - apCost;
 					break;
 				case 5:
-					apcostd = 6;
-					left = ap - apcostd;
+					apCost = 6;
+					left = ap - apCost;
 					break;
 			}
 		}
@@ -395,88 +395,88 @@ export class Dialog2d20 extends Dialog {
 			$(html).find('[name="by_from_gm"]').val(-1*left);
 		}
 		else {
-			$(html).find('[name="spend_ap"]').val(apcostd);
+			$(html).find('[name="spend_ap"]').val(apCost);
 			$(html).find('[name="by_from_gm"]').val(0);
 		}
 	}
 
-	gmapmanagment(html) {
-		let apcostd = 0;
+	gmApManagment(html) {
+		let apCost = 0;
 		let left = 0;
-		let numberofdice = 0;
+		let numberOfDice = 0;
 		let ap =this.element.find('[name="current_ap"]').val();
 		for (let i = 2; i <= 5; i++) {
 			const diceElement = $(html).find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
 			if (containsMarked) {
-				numberofdice = i;
+				numberOfDice = i;
 			}
 		}
 		if ($(html).find('[name="freed20"]').is(":checked")) {
-			switch (numberofdice) {
+			switch (numberOfDice) {
 				case 2:
-					apcostd = 0;
+					apCost = 0;
 					break;
 				case 3:
-					apcostd = 0;
+					apCost = 0;
 					break;
 				case 4:
-					apcostd = 1;
-					left = ap - apcostd;
+					apCost = 1;
+					left = ap - apCost;
 					break;
 				case 5:
-					apcostd = 3;
-					left = ap - apcostd;
+					apCost = 3;
+					left = ap - apCost;
 					break;
 			}
 		}
 		else {
-			switch (numberofdice) {
+			switch (numberOfDice) {
 				case 2:
-					apcostd = 0;
+					apCost = 0;
 					break;
 				case 3:
-					apcostd = 1;
-					left = ap - apcostd;
+					apCost = 1;
+					left = ap - apCost;
 					break;
 				case 4:
-					apcostd = 3;
-					left = ap - apcostd;
+					apCost = 3;
+					left = ap - apCost;
 					break;
 				case 5:
-					apcostd = 6;
-					left = ap - apcostd;
+					apCost = 6;
+					left = ap - apCost;
 					break;
 			}
 		}
 		if (left<0) {
 			const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
 			const part2 = game.i18n.localize("FALLOUT.TEMPLATES.OVERSEER_AP");
-			const warexist =ui.notifications.active.length;
-			if (warexist === 0) {
+			const warExist =ui.notifications.active.length;
+			if (warExist === 0) {
 				ui.notifications.warn(`${part1} ${part2}`);
 			}
-			let numberofdice = 2;
-			let gmerror = true;
-			this.markDiceNumber(html, numberofdice, gmerror);
+			let numberOfDice = 2;
+			let gmError = true;
+			this.markDiceNumber(html, numberOfDice, gmError);
 		}
 		else {
-			$(html).find('[name="spend_ap"]').val(apcostd);
+			$(html).find('[name="spend_ap"]').val(apCost);
 		}
 
 	}
 
-	gmroll(html) {
+	gmRoll(html) {
 		const divbuy = document.querySelector('[name="buy_from_gm"]');
 		divbuy.style.display = "none";
-		let gmap = game.settings.get("fallout", "gmAP");
-		this.element.find('[name="current_ap"]').val(gmap);
+		let gmAP = game.settings.get("fallout", "gmAP");
+		this.element.find('[name="current_ap"]').val(gmAP);
 		$(html).find('[name="party_ap"] .title-label').text(game.i18n.localize("FALLOUT.TEMPLATES.OVERSEER_AP"));
 		$(html).find('[name="spend_ap"] .title-label').text(game.i18n.localize("FALLOUT.UI.Spend_Overseer_AP"));
 	}
 
 
-	static async  createDialog({ rollName = "Roll D20", diceNum = 2, attribute = 0, skill = 0, tag = false, complication = 20, rollLocation=false, actor=null, item=null, ap = 0, apcost = 0 } = {}) {
+	static async  createDialog({ rollName = "Roll D20", diceNum = 2, attribute = 0, skill = 0, tag = false, complication = 20, rollLocation=false, actor=null, item=null, ap = 0, apCost = 0 } = {}) {
 		let dialogData = {};
 
 		dialogData.rollName = rollName;
@@ -489,7 +489,7 @@ export class Dialog2d20 extends Dialog {
 		dialogData.actor = actor;
 		dialogData.item = item;
 		dialogData.ap = ap;
-		dialogData.apcost = apcost;
+		dialogData.apCost = apCost;
 		const html = await renderTemplate("systems/fallout/templates/dialogs/dialog2d20.hbs", dialogData);
 
 		let d = new Dialog2d20(
@@ -503,7 +503,7 @@ export class Dialog2d20 extends Dialog {
 			actor,
 			item,
 			ap,
-			apcost,
+			apCost,
 			{
 				title: rollName,
 				content: html,
@@ -520,7 +520,7 @@ export class Dialog2d20 extends Dialog {
 				},
 			}
 		);
-		d.render(true, {width: 550, height: 290});
+		d.render(true, {width: 620, height: 320});
 		return d.deferred.promise;
 	}
 

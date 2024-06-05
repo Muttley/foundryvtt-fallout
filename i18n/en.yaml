@@ -491,14 +491,14 @@ FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unrel
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
-FALLOUT.UI.Additionalamo: Additional damage dice from firerate
-FALLOUT.UI.Additionalmeledmg: Additional damage dice for party AP
-FALLOUT.UI.AdditionalmeledmgOverseer: Additional damage dice for overseer AP
+FALLOUT.UI.Additional_amo: Additional damage dice from firerate
+FALLOUT.UI.Additional_mele_dmg: Additional damage dice for party AP
+FALLOUT.UI.Additional_mele_dmg_overseer: Additional damage dice for overseer AP
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
-FALLOUT.UI.AreYouSure: Are You Sure?
+FALLOUT.UI.Are_You_Sure: Are You Sure?
 FALLOUT.UI.ASSISTANCE: Assistance
-FALLOUT.UI.BaseDamage: Base Damage
-FALLOUT.UI.Bonusdmg: Additionad damage dice
+FALLOUT.UI.Base_damage: Base Damage
+FALLOUT.UI.Bonus_dmg: Additionad damage dice
 FALLOUT.UI.BOOKS_AND_MAGZS: Books and Magazines
 FALLOUT.UI.Buy_from_Overseer: Buy from Overseer
 FALLOUT.UI.Cancel: Cancel
@@ -530,15 +530,16 @@ FALLOUT.UI.PAYAP3: Pay 3AP
 FALLOUT.UI.PAYAP6: Pay 6AP
 FALLOUT.UI.ROBOT_MODULES: Robot Modules
 FALLOUT.UI.Roll: Roll
-FALLOUT.UI.SaveChanges: Save Changes
+FALLOUT.UI.Save_SChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Special Ability
+FALLOUT.UI.SPENT: Spent
 FALLOUT.UI.Spend_AP: Spend AP
 FALLOUT.UI.Spend_Overseer_AP: Spend Overseer AP
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
-FALLOUT.UI.Weapondamagedice: Damage dice from weapon
+FALLOUT.UI.Weapon_damage_dice: Damage dice from weapon
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
 FALLOUT.UI.With: With

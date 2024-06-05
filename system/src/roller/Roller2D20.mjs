@@ -20,6 +20,8 @@ export class Roller2D20 {
 		rollname = "Roll xD20",
 		skill = 0,
 		tag = false,
+		apSpend = 0,
+		apBuy = 0,
 	}={}) {
 		// let dicesRolled = [];
 		let successTreshold = parseInt(attribute) + parseInt(skill);
@@ -27,7 +29,9 @@ export class Roller2D20 {
 		let complicationTreshold = parseInt(complication);
 		let formula = `${dicenum}d20`;
 		let roll = new Roll(formula);
-
+		apSpend = parseInt(apSpend);
+		apBuy = parseInt(apBuy);
+		let flavor = "";
 		await roll.evaluate();
 
 		try {
@@ -52,6 +56,21 @@ export class Roller2D20 {
 
 			hitLocationResult = hitLocationRoll.total;
 		}
+		if (apSpend !== 0 || apBuy !== 0) {
+			let part1 = game.i18n.localize("FALLOUT.UI.SPENT");
+			let part2 =game.i18n.localize("FALLOUT.TEMPLATES.PARTY_AP");
+			let part3 = "";
+			let part4= "";
+
+			if (actor.type !== "character" && actor.type !== "robot") {
+				part2 = game.i18n.localize("FALLOUT.TEMPLATES.OVERSEER_AP");
+			}
+			if (apBuy !== 0) {
+				part3 = `\n ${game.i18n.localize("FALLOUT.UI.Buy_from_Overseer")}`;
+				part4 = apBuy;
+			}
+			flavor = `${part1} ${apSpend} ${part2} ${part3} ${part4}`;
+		}
 
 		const dicesRolled = await Roller2D20.parseD20Roll({
 			actor: actor,
@@ -62,6 +81,7 @@ export class Roller2D20 {
 			item: item,
 			roll: roll,
 			rollname: rollname,
+			flavor: flavor,
 			successTreshold,
 		});
 		return {roll: roll, dicesRolled: dicesRolled};
@@ -79,6 +99,7 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll xD20",
 		successTreshold = 0,
+		flavor = "",
 	}={}) {
 		let i = 0;
 		roll.dice.forEach(d => {
@@ -136,6 +157,7 @@ export class Roller2D20 {
 			roll: roll,
 			rollname: rollname,
 			successTreshold: successTreshold,
+			flavor: flavor,
 		});
 		return dicesRolled;
 	}
@@ -188,6 +210,7 @@ export class Roller2D20 {
 		roll = null,
 		rollname = "Roll xD20",
 		successTreshold = 0,
+		flavor = "",
 	}={}) {
 		let successesNum = Roller2D20.getNumOfSuccesses(dicesRolled);
 		let complicationsNum = Roller2D20.getNumOfComplications(dicesRolled);
@@ -202,6 +225,7 @@ export class Roller2D20 {
 			hitLocationResult: hitLocationResult,
 			item: item,
 			actor: actor,
+			flavor: flavor,
 		};
 
 		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
@@ -216,6 +240,7 @@ export class Roller2D20 {
 		falloutRoll.rerollIndexes = rerollIndexes;
 		falloutRoll.rollname = rollname;
 		falloutRoll.successTreshold = successTreshold;
+		falloutRoll.flavor = flavor;
 
 		let chatData = {
 			content: html,
@@ -224,6 +249,7 @@ export class Roller2D20 {
 			rollMode: game.settings.get("core", "rollMode"),
 			speaker: ChatMessage.getSpeaker({actor: actor}),
 			user: game.user.id,
+
 		};
 
 		ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));

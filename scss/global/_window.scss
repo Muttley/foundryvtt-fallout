@@ -141,6 +141,17 @@
 			&.dice-selected {
 				opacity: 0.45;
 			}
+
+		}
+		.flavor-text {
+			margin: 0 0 0 0;
+			font-family: "Lobster", cursive, cursive;
+			padding: 8px;
+			font-size: 15px;
+			background-image: url(../assets/chat/yellow-placq.webp);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			display: flex;
 		}
 	}
 }
@@ -149,10 +160,14 @@
 	.resource {
 		margin: 0 2px 5px;
 		padding: 0 5px 0 0;
-		background-color: $f-blue;
+		background-color: #729eb2;
 		display: grid;
 		grid-template-rows: auto auto;
-		grid-template-columns: repeat(6, auto);
+		grid-template-columns: repeat(2,auto);
+		justify-content: space-evenly;
+		align-content: center;
+		align-items: center;
+		justify-items: center;
 		&.tile {
 			background-color: $f-tile;
 		}
@@ -174,6 +189,7 @@
 		input[type="number"] {
 			text-align: center;
 			background-color: beige;
+			width: 30px;
 		}
 	}
 	ul {
