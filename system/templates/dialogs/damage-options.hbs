@@ -1,0 +1,11 @@
+<div class="flexrow fallout-dialog">
+		<div class="flexrow resource" style="padding:5px">
+		<label class="title-label">{{localize "FALLOUT.UI.Weapon_damage_dice"}}</label><input type="number" class="d-number" value="{{diceNum}}" disabled>
+		<label class="title-label">{{additionalUdesAmo}}</label>
+        <select class="fire-rate-select" name="fireRateAmo">
+        {{#for fireRate}}
+            <option value="{{this}}">{{this}}</option>
+        {{/for}}
+        </select>
+		<label class="title-label">{{localize "FALLOUT.UI.Bonus_dmg"}}</label><input type="number" class="otherd-number" value="{{otherDmgDice}}" >
+		</div>`

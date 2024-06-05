@@ -285,14 +285,14 @@ export class Roller2D20 {
 		diceNum = 2,
 		rollname = "Roll D6",
 		weapon = null,
-		otherdmgdice = 0,
-		firerateamo = 0,
+		otherDmgDice = 0,
+		fireRateAmo = 0,
 	}={}) {
 		const isgatling = weapon.system.damage.weaponQuality.gatling.value;
 		if (isgatling === true) {
-			firerateamo = firerateamo *2;
+			fireRateAmo = fireRateAmo *2;
 		}
-		const totalCD = firerateamo+ otherdmgdice+diceNum;
+		const totalCD = fireRateAmo+ otherDmgDice+diceNum;
 		let formula = `${totalCD}dc`;
 		let roll = new Roll(formula);
 
@@ -396,8 +396,8 @@ export class Roller2D20 {
 		});
 	}
 
-	static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null, actor = null, otherdmgdice = 0, firerateamo = 0} = {}) {
-		const totalCD = firerateamo+ otherdmgdice;
+	static async addD6({ rollname = "Roll D6", dicenum = 2, falloutRoll = null, dicesRolled = [], weapon = null, actor = null, otherDmgDice = 0, fireRateAmo = 0} = {}) {
+		const totalCD = fireRateAmo+ otherDmgDice;
 		let formula = `${totalCD}dc`;
 		let _roll = new Roll(formula);
 

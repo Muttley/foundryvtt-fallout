@@ -2,15 +2,15 @@
 /* eslint-disable max-len */
 export class DialogD6 extends Dialog {
 	// eslint-disable-next-line max-len
-	constructor(rollName, diceNum, actor, weapon, falloutRoll, otherdmgdice, firerateamo, dialogData = {}, options = {}) {
+	constructor(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, dialogData = {}, options = {}) {
 		super(dialogData, options);
 		this.rollName = rollName;
 		this.diceNum = diceNum;
 		this.actor = actor;
 		this.weapon = weapon;
 		this.falloutRoll = falloutRoll;
-		this.otherdmgdice = otherdmgdice;
-		this.firerateamo = firerateamo;
+		this.otherDmgDice = otherDmgDice;
+		this.fireRateAmo = fireRateAmo;
 		this.options.classes = ["dice-icon"];
 	}
 
@@ -28,16 +28,16 @@ export class DialogD6 extends Dialog {
 			if (isaddl !== 0) {
 				CDnumber = html.find(".d-number")[0].value;
 			}
-			let otherdmgdice = html.find(".otherd-number")[0].value;
-			let firerateamo =html.find('[name="firerateamo"] option:selected').val();
+			let otherDmgDice = html.find(".otherd-number")[0].value;
+			let fireRateAmo =html.find('[name="fireRateAmo"] option:selected').val();
 			if (!this.falloutRoll) {
 				fallout.Roller2D20.rollD6({
 					rollname: this.rollName,
 					diceNum: parseInt(CDnumber),
 					weapon: this.weapon,
 					actor: this.actor,
-					otherdmgdice: parseInt(otherdmgdice),
-					firerateamo: parseInt(firerateamo),
+					otherDmgDice: parseInt(otherDmgDice),
+					fireRateAmo: parseInt(fireRateAmo),
 
 				});
 			}
@@ -48,8 +48,8 @@ export class DialogD6 extends Dialog {
 					weapon: this.weapon,
 					actor: this.actor,
 					falloutRoll: this.falloutRoll,
-					otherdmgdice: parseInt(otherdmgdice),
-					firerateamo: parseInt(firerateamo),
+					otherDmgDice: parseInt(otherDmgDice),
+					fireRateAmo: parseInt(fireRateAmo),
 				});
 			}
 			// REDUCE AMMO FOR CHARACTER AND ROBOT
@@ -68,24 +68,24 @@ export class DialogD6 extends Dialog {
 					// eslint-disable-next-line eqeqeq
 					// reduce party AP when use to increase damage in melee
 					if (this.weapon.system.weaponType === "meleeWeapons" || this.weapon.system.weaponType === "unarmed") {
-						const currentpartyap= game.settings.get("fallout", "partyAP");
-						const newpartyap=currentpartyap-parseInt(firerateamo);
-						const overseerap = game.settings.get("fallout", "gmAP");
-						if (newpartyap<0) {
+						const currentPartyAp= game.settings.get("fallout", "partyAP");
+						const newPartyAp=currentPartyAp-parseInt(fireRateAmo);
+						const overseerAp = game.settings.get("fallout", "gmAP");
+						if (newPartyAp<0) {
 							fallout.APTracker.setAP("partyAP", 0);
-							const newoverseerap = overseerap - newpartyap;
-							fallout.APTracker.setAP("gmAP", newoverseerap);
+							const newoverseerAp = overseerAp - newPartyAp;
+							fallout.APTracker.setAP("gmAP", newoverseerAp);
 						}
 						else {
-							fallout.APTracker.setAP("partyAP", newpartyap);
+							fallout.APTracker.setAP("partyAP", newPartyAp);
 						}
 
 					}
 
 					// reduce amo wehn firrerate is used
 					else {
-						if (firerateamo > 0) {
-							this.reduceadditionalAmmo(firerateamo, this.weapon, _actor);
+						if (fireRateAmo > 0) {
+							this.reduceAdditionalAmmo(fireRateAmo, this.weapon, _actor);
 						}
 					}
 
@@ -94,14 +94,14 @@ export class DialogD6 extends Dialog {
 					// eslint-disable-next-line eqeqeq
 					// reduce party AP when use to increase damage in melee
 					if (this.weapon.system.weaponType === "meleeWeapons" || this.weapon.system.weaponType === "unarmed") {
-						const currentoverseerap= game.settings.get("fallout", "gmAP");
-						const newoverseerap=currentoverseerap-parseInt(firerateamo);
-						fallout.APTracker.setAP("gmAP", newoverseerap);
+						const currentoverseerAp= game.settings.get("fallout", "gmAP");
+						const newoverseerAp=currentoverseerAp-parseInt(fireRateAmo);
+						fallout.APTracker.setAP("gmAP", newoverseerAp);
 					}
 
 					else {
-						if (firerateamo > 0) {
-							this.reduceadditionalAmmo(firerateamo, this.weapon, _actor);
+						if (fireRateAmo > 0) {
+							this.reduceAdditionalAmmo(fireRateAmo, this.weapon, _actor);
 						}
 					}
 
@@ -113,14 +113,14 @@ export class DialogD6 extends Dialog {
 			const actorId = this.actor.split(".")[1];
 			const actortype= game.actors.get(actorId).type;
 			const weapontype = this.weapon.system.weaponType;
-			let firerateamo = html.find('[name="firerateamo"] option:selected').val();
+			let fireRateAmo = html.find('[name="fireRateAmo"] option:selected').val();
 			if (weapontype === "meleeWeapons" || weapontype === "unarmed") {
 				if (actortype !== "character" && actortype !== "robot") {
 					const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
 					const part2 = game.i18n.localize("FALLOUT.TEMPLATES.OVERSEER_AP");
 					const pulsingContainer = document.querySelector(".flexrow.resource.pulsing");
-					const currentoverseerap = game.settings.get("fallout", "gmAP");
-					if (firerateamo > currentoverseerap) {
+					const currentoverseerAp = game.settings.get("fallout", "gmAP");
+					if (fireRateAmo > currentoverseerAp) {
 						if (!pulsingContainer) {
 							const pulsingHTML = `<div class="flexrow resource pulsing" style="padding:5px">
 												<div class="pulsing-text">
@@ -136,14 +136,14 @@ export class DialogD6 extends Dialog {
 					}
 				}
 				else {
-					const currentpartyap = game.settings.get("fallout", "partyAP");
+					const currentPartyAp = game.settings.get("fallout", "partyAP");
 					const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
 					const part2 = game.i18n.localize("FALLOUT.TEMPLATES.PARTY_AP");
 					const part3 = game.i18n.localize("FALLOUT.UI.Buy_from_Overseer");
 					const pulsingContainer = document.querySelector(".flexrow.resource.pulsing");
 
-					if (firerateamo > currentpartyap) {
-						const buyap = parseInt(firerateamo) - currentpartyap;
+					if (fireRateAmo > currentPartyAp) {
+						const buyap = parseInt(fireRateAmo) - currentPartyAp;
 						if (!pulsingContainer) {
 							const pulsingHTML = `<div class="flexrow resource pulsing" style="padding:5px">
 											<div class="pulsing-text">
@@ -151,6 +151,9 @@ export class DialogD6 extends Dialog {
 											</div>
 										</div>`;
 							html.find(".otherd-number").after(pulsingHTML);
+							const selector = `.app.window-app.dice-icon[data-appid="${this.appId}"]`;
+							const element = document.querySelector(selector);
+							element.style.height = "230px";
 						}
 						else {
 							pulsingContainer.remove();
@@ -160,15 +163,21 @@ export class DialogD6 extends Dialog {
 											</div>
 										</div>`;
 							html.find(".otherd-number").after(pulsingHTML);
+							const selector = `.app.window-app.dice-icon[data-appid="${this.appId}"]`;
+							const element = document.querySelector(selector);
+							element.style.height = "230px";
 						}
 					}
 					else if (pulsingContainer) {
 						pulsingContainer.remove();
+						const selector = `.app.window-app.dice-icon[data-appid="${this.appId}"]`;
+						const element = document.querySelector(selector);
+						element.style.height = "184px";
 					}
 				}
 			}
 			else {
-				const usedamo = await this.checkfirerate(this.weapon, game.actors.get(actorId), firerateamo);
+				const usedamo = await this.checkfireRate(this.weapon, game.actors.get(actorId), fireRateAmo);
 				if (usedamo === 1) {
 					const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
 					const part2 = game.i18n.localize("TYPES.Item.ammo");
@@ -187,7 +196,7 @@ export class DialogD6 extends Dialog {
 
 	}
 
-	static async createDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor= null, weapon = null, otherdmgdice = 0, firerateamo = 0} = {}) {
+	static async createDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor= null, weapon = null, otherDmgDice = 0, fireRateAmo = 0} = {}) {
 		let dialogData = {};
 		dialogData.rollName = rollName;
 		dialogData.diceNum = diceNum;
@@ -196,41 +205,28 @@ export class DialogD6 extends Dialog {
 		dialogData.actor = actor;
 		const actorId = dialogData.actor.split(".")[1];
 		const actortype= game.actors.get(actorId).type;
-		let firerate=weapon.system.fireRate;
-		const weapondmgdice = game.i18n.localize("FALLOUT.UI.Weapondamagedice");
-		const bonusdmg=game.i18n.localize("FALLOUT.UI.Bonusdmg");
-		let additionaludesamo="";
+		let fireRate=weapon.system.fireRate;
+		let additionalUdesAmo="";
 		if ((actortype!== "character" && actortype !== "robot") && (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed")) {
-			firerate= 3;
-			additionaludesamo=game.i18n.localize("FALLOUT.UI.AdditionalmeledmgOverseer");
+			fireRate= 3;
+			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg_overseer");
 		}
 		else if (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed") {
-			firerate= 3;
-			additionaludesamo=game.i18n.localize("FALLOUT.UI.Additionalmeledmg");
+			fireRate= 3;
+			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg");
 		}
 		else {
-			additionaludesamo=game.i18n.localize("FALLOUT.UI.Additionalamo");
+			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_amo");
 		}
-		let optionsHtml = "";
-		for (let i = 0; i <= firerate; i++) {
-			if (i===0) {
-				optionsHtml += `<option value="${i}" selected>${i}</option>`;
-			}
-			else {
-				optionsHtml += `<option value="${i}">${i}</option>`;
-			}
-		}
-		const html = `<div class="flexrow fallout-dialog">
-		<div class="flexrow resource" style="padding:5px">
-		<label class="title-label">${weapondmgdice}</label><input type="number" class="d-number" value="${diceNum}" disabled>
-		<label class="title-label">${additionaludesamo}</label>
-        <select class="fire-rate-select" name="firerateamo">
-            ${optionsHtml}
-        </select>
-		<label class="title-label">${bonusdmg}</label><input type="number" class="otherd-number" value="${otherdmgdice}" >
-		</div>`;
+		let dialogDataDmg ={};
+		dialogDataDmg.additionalUdesAmo = additionalUdesAmo;
+		dialogDataDmg.fireRate = fireRate;
+		dialogDataDmg.diceNum = diceNum;
+		dialogDataDmg.otherDmgDice = 0;
+		const html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
+
 		// eslint-disable-next-line max-len
-		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherdmgdice, firerateamo, {
+		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, {
 			title: rollName,
 			content: html,
 			buttons: {
@@ -244,7 +240,7 @@ export class DialogD6 extends Dialog {
 		d.render(true);
 	}
 
-	static async addcreateDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor= null, weapon = null, otherdmgdice = 0, firerateamo = 0} = {}) {
+	static async addcreateDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor= null, weapon = null, otherDmgDice = 0, fireRateAmo = 0} = {}) {
 		let dialogData = {};
 		dialogData.rollName = rollName;
 		dialogData.diceNum = diceNum;
@@ -253,39 +249,27 @@ export class DialogD6 extends Dialog {
 		dialogData.actor = actor;
 		const actorId = dialogData.actor.split(".")[1];
 		const actortype= game.actors.get(actorId).type;
-		let firerate=weapon.system.fireRate;
-		const bonusdmg=game.i18n.localize("FALLOUT.UI.Bonusdmg");
-		let additionaludesamo="";
+		let fireRate=weapon.system.fireRate;
+		let additionalUdesAmo="";
 		if ((actortype!== "character" && actortype !== "robot") && (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed")) {
-			firerate= 3;
-			additionaludesamo=game.i18n.localize("FALLOUT.UI.AdditionalmeledmgOverseer");
+			fireRate= 3;
+			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg_overseer");
 		}
 		else if (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed") {
-			firerate= 3;
-			additionaludesamo=game.i18n.localize("FALLOUT.UI.Additionalmeledmg");
+			fireRate= 3;
+			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg");
 		}
 		else {
-			additionaludesamo=game.i18n.localize("FALLOUT.UI.Additionalamo");
+			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_amo");
 		}
-		let optionsHtml = "";
-		for (let i = 0; i <= firerate; i++) {
-			if (i===0) {
-				optionsHtml += `<option value="${i}" selected>${i}</option>`;
-			}
-			else {
-				optionsHtml += `<option value="${i}">${i}</option>`;
-			}
-		}
-		const html = `<div class="flexrow fallout-dialog">
-		<div class="flexrow resource" style="padding:5px">
-		<label class="title-label">${additionaludesamo}</label>
-        <select class="fire-rate-select" name="firerateamo">
-            ${optionsHtml}
-        </select>
-		<label class="title-label">${bonusdmg}</label><input type="number" class="otherd-number" value="${otherdmgdice}" >
-		</div>`;
+		let dialogDataDmg ={};
+		dialogDataDmg.additionalUdesAmo = additionalUdesAmo;
+		dialogDataDmg.fireRate = fireRate;
+		dialogDataDmg.diceNum = diceNum;
+		const html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
+
 		// eslint-disable-next-line max-len
-		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherdmgdice, firerateamo, {
+		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, {
 			title: rollName,
 			content: html,
 			buttons: {
@@ -349,11 +333,11 @@ export class DialogD6 extends Dialog {
 		}
 	}
 
-	async checkfirerate(weapon, actor, firerate) {
+	async checkfireRate(weapon, actor, fireRate) {
 		const ammoPerShot = weapon.system.ammoPerShot;
 		const isgatling = weapon.system.damage.weaponQuality.gatling.value;
 		const ammountofamo = await actor._getAvailableAmmoType(weapon.system.ammo);
-		let usedammo = ammoPerShot*parseInt(firerate);
+		let usedammo = ammoPerShot*parseInt(fireRate);
 		if (isgatling === true) {
 			usedammo = 10*usedammo;
 		}
@@ -365,7 +349,7 @@ export class DialogD6 extends Dialog {
 		}
 	}
 
-	async reduceadditionalAmmo(firarateamo, weapon, actor) {
+	async reduceAdditionalAmmo(firarateamo, weapon, actor) {
 		const [ammoItem, shotsAvailable] = await actor._getAvailableAmmoType(weapon.system.ammo);
 		const ammoPerShot = weapon.system.ammoPerShot;
 		const isgatling = weapon.system.damage.weaponQuality.gatling.value;

@@ -246,5 +246,10 @@ export default function registerHandlebarsHelpers() {
 		const html = options.fn(this);
 		return html.replace(rgx, "$& selected");
 	});
+	Handlebars.registerHelper("for", function(n, block) {
+		let additionalAmmo = "";
+		for (let i = 0; i <= n; ++i) additionalAmmo += block.fn(i);
+		return additionalAmmo;
+	});
 
 }
