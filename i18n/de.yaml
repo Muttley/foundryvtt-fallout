@@ -13,8 +13,8 @@ FALLOUT.AbilityLuc: Glück
 FALLOUT.AbilityPer: Wahrnehmung
 FALLOUT.AbilityStr: Stärke
 FALLOUT.actor.inventory.materials.common: Gewöhnlich
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
+FALLOUT.actor.inventory.materials.junk: Müll
+FALLOUT.actor.inventory.materials.junkSalvageControl: Verwerte Müll
 FALLOUT.actor.inventory.materials.label: Materialien
 FALLOUT.actor.inventory.materials.rare: Selten
 FALLOUT.actor.inventory.materials.uncommon: Ungewöhnlich
@@ -26,9 +26,9 @@ FALLOUT.Add: Hinzufügen
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Alles zurücksetzen
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Alle Chem Dosen zurücksetzen
 FALLOUT.APP.ChemDoseManager.title: Chem Dosen
-FALLOUT.APP.ItemTypeMenu.title: Select Item Type
-FALLOUT.APP.Loading.body: Searching the Wastelands...
-FALLOUT.APP.Loading.title: Loading
+FALLOUT.APP.ItemTypeMenu.title: gegenstand Typ auswählen
+FALLOUT.APP.Loading.body: Durchsuche das Ödland...
+FALLOUT.APP.Loading.title: Lade
 FALLOUT.APP.ModuleArtConfig.items: Gegenstände
 FALLOUT.APP.ModuleArtConfig.title: Assets konfigurieren
 FALLOUT.APP.PartySleep.chat_message: Die Gruppe schläft {duration}.
@@ -37,22 +37,22 @@ FALLOUT.APP.PartySleep.hour: 1 Stunde
 FALLOUT.APP.PartySleep.hours: "{length} Stunden"
 FALLOUT.APP.PartySleep.safe_location: Ist der Standort gesichert?
 FALLOUT.APP.PartySleep.title: Gruppenrast
-FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
-FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
-FALLOUT.APP.SalvageJunk.start: Start Salvaging
-FALLOUT.APP.SalvageJunk.time: This will take {time}
-FALLOUT.APP.SalvageJunk.title: Salvage Junk
+FALLOUT.APP.SalvageJunk.AdvanceGameTime: Spielzeit vorspulen
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Du hast keinen Müll zum verwerten
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Spielzeit um {time} vorgespult
+FALLOUT.APP.SalvageJunk.selectedAmount: Verwerte {amount} Müll
+FALLOUT.APP.SalvageJunk.start: Starte Verwerten
+FALLOUT.APP.SalvageJunk.time: Das benötigt {time}
+FALLOUT.APP.SalvageJunk.title: Verwerte Müll
 FALLOUT.APPAREL.armor: Rüstung
 FALLOUT.APPAREL.clothing: Kleidung
 FALLOUT.APPAREL.headgear: Kopfbedeckung
 FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Beschichtung
-FALLOUT.APPAREL.powerArmor: Energerüstung
-FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
-FALLOUT.AvailabilityRoll.result.title: Availability Roll
-FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
+FALLOUT.APPAREL.powerArmor: Powerrüstung
+FALLOUT.AvailabilityRoll.result.body: Maximal verfügbare Seltenheit {rarity}
+FALLOUT.AvailabilityRoll.result.title: Verfügbarkeits-Wurf
+FALLOUT.AvailabilityRoll.tooltip: Würfle für Verfügbarkeit
 FALLOUT.BEVERAGE: Getränk
 FALLOUT.BODYLOCATION_ABBR.character.armL: AL
 FALLOUT.BODYLOCATION_ABBR.character.armR: AR
@@ -130,9 +130,9 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem verbraucht
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Essen verbaucht
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Du bist bereits voll und kannst nicht mehr essen
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Sonstiges verbraucht
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} widerstnad {baseRadDamage} Strahlungsschaden aus dem Konsum von {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Strahlung widerstanden
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} nimmt {radsTaken} Strahlungsschaden aus dem Konsum von {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHEM: Chem
@@ -157,31 +157,31 @@ FALLOUT.EffectDelete: Entferne Effekt
 FALLOUT.EffectEdit: Bearbeite Effektt
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
-FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
-FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
-FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
+FALLOUT.ERRORS.ThisWeaponIsBroken: Diese Waffe ist kaputt und kann nicht länger genutzt werden.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Attribut für die Waffe kann nicht ermittelt werden.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Fertigkeit für die Waffe kann nicht ermittelt werden.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Kreaturen-Attribut und/oder Kreaturen-Fertigkeit für diese Waffe nicht definiert.
 FALLOUT.FOOD: Nahrung
-FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
-FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
-FALLOUT.Form.SelectCompendiumItem.prompt: Select Item...
-FALLOUT.Form.SelectCompendiumItem.title: Choose Items
-FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
-FALLOUT.Form.SelectItem.title: Choose {type}
-FALLOUT.Form.SourceFilters.AllUsed: All sources are currently allowed
-FALLOUT.Form.SourceFilters.hint: If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums.
-FALLOUT.Form.SourceFilters.prompt: Select Source...
-FALLOUT.Form.SourceFilters.TheseUsed: Only the following sources will be allowed
-FALLOUT.Form.SourceFilters.title: Source Filters
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Du kanns maximal {maxChoices} dieses Gegenstand-Typs auswählen.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Kann keine Gegenstände des Typs in den Verfügbaren Kompendien finden.
+FALLOUT.Form.SelectCompendiumItem.prompt: Gegenstand auswählen ...
+FALLOUT.Form.SelectCompendiumItem.title: Gegestände wählen
+FALLOUT.Form.SelectCompendiumItem.tooltip: AUs Kompendium hinzufügen
+FALLOUT.Form.SelectItem.title: Wähle {type}
+FALLOUT.Form.SourceFilters.AllUsed: Alle Quellen sind erlaubt
+FALLOUT.Form.SourceFilters.hint: Nur Quellen in dieser Liste werden beim automatischen Hinzufügen von Gegenständen aus Kompendien berücksichtigt.
+FALLOUT.Form.SourceFilters.prompt: Quelle wählen ...
+FALLOUT.Form.SourceFilters.TheseUsed: nur die folgenden Quellen sind erlaubt
+FALLOUT.Form.SourceFilters.title: Quellen Filter
 FALLOUT.HEALTH.current: Aktuelle Gesundheit
 FALLOUT.HEALTH.health: Gesundheit
 FALLOUT.HEALTH.max: Maximale Gesundheit
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
-FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
-FALLOUT.Item.PowerArmor.Frame: Frame
-FALLOUT.Item.PowerArmor.IsFrame: Is Frame
-FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
+FALLOUT.Item.PowerArmor.Attach: Hinzufügen
+FALLOUT.Item.PowerArmor.Attached: Hinzugefügt
+FALLOUT.Item.PowerArmor.AttachedToFrame: An Powerrüstung-Gestell befestigt
+FALLOUT.Item.PowerArmor.Frame: Powerrüstung-Gestell
+FALLOUT.Item.PowerArmor.IsFrame: Ist ein Powerrüstung-Gestell
+FALLOUT.Item.PowerArmor.Pieces: Powerrrüstungsteile
 FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
@@ -263,12 +263,12 @@ FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colo
 FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
 FALLOUT.SOURCE_TITLE.core_rulebook: Grundregelwerk
 FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
-FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
+FALLOUT.SOURCE_TITLE.gm_toolkit: "Werkzeuge der Spielleiterin"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
-FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
+FALLOUT.SOURCE_TITLE.winter_of_atom: Winter des Atoms
 FALLOUT.TEMPLATES.Abilities: Extras
 FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
 FALLOUT.TEMPLATES.Add_Trait: Merkmal hinzuf
@@ -289,7 +289,7 @@ FALLOUT.TEMPLATES.Attack: Angriff
 FALLOUT.TEMPLATES.ATTACKS: ANGRIFFE
 FALLOUT.TEMPLATES.Attribute: Eigenschaft
 FALLOUT.TEMPLATES.Attributes: Eigenschaften
-FALLOUT.TEMPLATES.Base_Damage: Base Damage
+FALLOUT.TEMPLATES.Base_Damage: Grundschaden
 FALLOUT.TEMPLATES.Butchery: Gemetzel
 FALLOUT.TEMPLATES.ButcheryTooltip: Gemetzel Probe TN
 FALLOUT.TEMPLATES.Compl: Kompl.
@@ -334,8 +334,8 @@ FALLOUT.TEMPLATES.Creature_Attribute: Attribut der Kreatur
 FALLOUT.TEMPLATES.Creature_Skill: Fertigkeit der Kreatur
 FALLOUT.TEMPLATES.current: aktuell
 FALLOUT.TEMPLATES.CurrentLeader: Aktueller Anführer
-FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
-FALLOUT.TEMPLATES.CustomSkill: Custom Skill
+FALLOUT.TEMPLATES.CustomAttribute: Benutzerdefiniertes Attribut
+FALLOUT.TEMPLATES.CustomSkill: Benutzerdefinierte Fertigkeit
 FALLOUT.TEMPLATES.Damage_Effects: Schadens-Effekte
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
 FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
@@ -354,7 +354,7 @@ FALLOUT.TEMPLATES.Effects: Effekte
 FALLOUT.TEMPLATES.Encumbrance_Level: Tragekapazität
 FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: LIEBLINGSWAFFEN
-FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
+FALLOUT.TEMPLATES.Fire_Rate: Feuerrate
 FALLOUT.TEMPLATES.FIRE_RATE: FEUERRATE
 FALLOUT.TEMPLATES.Gear: Ausrüstung
 FALLOUT.TEMPLATES.GENERAL: GENERELL
@@ -367,7 +367,7 @@ FALLOUT.TEMPLATES.Injuries: Verletzungen
 FALLOUT.TEMPLATES.INJURIES: VERLETZUNGEN
 FALLOUT.TEMPLATES.Injury_Left_Click: Verletzung (Linksklick)
 FALLOUT.TEMPLATES.Irradiated: Verstrahlt
-FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Verstrahlter Schaden Würfel
 FALLOUT.TEMPLATES.Issue: Ausgabe
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -375,25 +375,25 @@ FALLOUT.TEMPLATES.Learned: Erlernt
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: ORTE & VERLETZUNGEN
 FALLOUT.TEMPLATES.Locations: Orte
 FALLOUT.TEMPLATES.Luck: Glück
-FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
+FALLOUT.TEMPLATES.MaterialsRecoverd: Gewonnene Materialien
 FALLOUT.TEMPLATES.MaterialsRequired: Benötigte Materialien
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX GRUPPEN AP
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
-FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
+FALLOUT.TEMPLATES.Melee_Bonus: Nahkampfbonus
+FALLOUT.TEMPLATES.Melee_Damage: Nahkampfschaden
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
 FALLOUT.TEMPLATES.MODULES: MODULE
-FALLOUT.TEMPLATES.Name_Prefix: Name Präfix
+FALLOUT.TEMPLATES.Name_Prefix: Namespräfix
 FALLOUT.TEMPLATES.Origin: Herkunft
 FALLOUT.TEMPLATES.OVERSEER_AP: SPIELLEITERIN AP
-FALLOUT.TEMPLATES.ParentItem: Übergeordnetes Item
+FALLOUT.TEMPLATES.ParentItem: Übergeordneter Gegenstand
 FALLOUT.TEMPLATES.PARTY_AP: GRUPPE AP
 FALLOUT.TEMPLATES.PERK: EXTRA
 FALLOUT.TEMPLATES.PHYS: PHYS
 FALLOUT.TEMPLATES.Points: Punkte
 FALLOUT.TEMPLATES.POISON: GIFT
-FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: ENERGIERÜSTUNG GESUNDHEIT
+FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: POWERRÜSTUNG GESUNDHEIT
 FALLOUT.TEMPLATES.Prepared: Vorbereitet
 FALLOUT.TEMPLATES.Publication: Publikation
 FALLOUT.TEMPLATES.Qualities_and_Effects: Qualitäten & Effekte
@@ -401,7 +401,7 @@ FALLOUT.TEMPLATES.Qualities: Eigenschaften
 FALLOUT.TEMPLATES.RAD: STR
 FALLOUT.TEMPLATES.Radiation_Healed: Strahlung geheilt
 FALLOUT.TEMPLATES.RADIATION: STRAHLUNG
-FALLOUT.TEMPLATES.Range: Range
+FALLOUT.TEMPLATES.Range: Reichweite
 FALLOUT.TEMPLATES.RANGE: REICHWEITE
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
@@ -427,7 +427,7 @@ FALLOUT.TEMPLATES.Successes: Erfolge
 FALLOUT.TEMPLATES.Tag: Spez.
 FALLOUT.TEMPLATES.Tear: Abnutzung & Verschleiß
 FALLOUT.TEMPLATES.Thirst_Reduction: Durstreduzierung
-FALLOUT.TEMPLATES.TimeTaken: Time Taken
+FALLOUT.TEMPLATES.TimeTaken: Dauer
 FALLOUT.TEMPLATES.TN: ZW
 FALLOUT.TEMPLATES.TRAIT: BESONDERHEITEN
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Behandelte Verletzung (Rechtsklick)
@@ -448,16 +448,16 @@ FALLOUT.TEMPLATES.Weapon: Waffe
 FALLOUT.TEMPLATES.WeaponName: Waffenname
 FALLOUT.TEMPLATES.Weapons: Waffen
 FALLOUT.TEMPLATES.WellRested: Gut ausgeruht
-FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
-FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
-FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
-FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
-FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
-FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
+FALLOUT.TIME.DAYS_PLURAL: "{days} Tage"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Tag"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Stunden"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Stunde"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minuten"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minuten"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Für jeden gewürfelten Effekt wird ein zusätzliches Ziel in naher Reichweite vom Hauptziel getroffen. Jedes zusätzliche Ziel erleidet den halben Schaden (aufgerundet). Im Gegensatz zur Streuung, kostet es dies keine zusätzliche Munition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: 'Für jeden gewürfelten Effekt wird die Anzahl der @fos[DC], die die Deckung eines Ziels bietet, permanent um –1 reduziert. Befindet sich das Ziel nicht in Deckung, reduziere stattdessen die SR der getroffenen Trefferstelle um –1, gemäß der Schadensart der Waffe (sprich: Physischer Schaden reduziert nur Physische Schadensresistenz, Energieschaden reduziert nur Energie Schadensresistenz usw.).'
 FALLOUT.TOOLTIPS.DamageEffect.burst: Für jeden gewürfelten Effekt verursacht dein Angriff beim Ziel einen zusätzlichen Treffer. Jeder zusätzliche Treffer verursacht die Hälfte des gewürfelten Schadens (abgerundet) und trifft eine zufällige Trefferstelle, auch wenn eine bestimmte Stelle das Ziel des ursprünglichen Angriffs war.
-FALLOUT.TOOLTIPS.DamageEffect.freeze: Feinde, die von diesem Angriff getroffen werden, werden eingefroren, wenn die Anzahl der Effekte gleich oder mehr als die Hälfte des ENDs des Ziels ist (oder die Hälfte des Bodys des Ziels für Kreaturen). Eine gefrorene Kreatur kann in ihrem nächsten Zug keine Aktionen durchführen.
+FALLOUT.TOOLTIPS.DamageEffect.freeze: Feinde, die von diesem Angriff getroffen werden, werden eingefroren, wenn die Anzahl der Effekte gleich oder mehr als die Hälfte der AUS des Ziels ist (oder die Hälfte des BODY einer Kreatur). Ein eingefrorenes Wesen kann in ihrem nächsten Zug keine Aktionen durchführen.
 FALLOUT.TOOLTIPS.DamageEffect.persistent: "Wenn ein oder mehrere Effekte gewürfelt werden, erleidet das Ziel am Ende seiner nächsten und nachfolgenden Züge erneut den Schaden der Waffe, für eine Anzahl Runden in Höhe der Anzahl der gewürfelten Effekte. Das Ziel kann eine Hauptaktion ausgeben, um eine Probe abzulegen, um anhaltenden Schaden frühzeitig aufzuheben, wobei die Schwierigkeit der Anzahl der gewürfelten Effekte entspricht und die Kombination Attribut + Fertigkeit von der SL gewählt werden. Einige anhaltende Waffen können eine andere Schadensart verursachen als die Waffe selbst; wenn dies der Fall ist, wird es in Klammern vermerkt, zum Beispiel: Anhaltend (Gift)."
 FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignoriere X Punkte der SR des Ziels für jeden gewürfelten Effekt, wobei X dem Wert dieses Schadenseffekts entspricht.
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Für jeden gewürfelten Effekt erleidet das Ziel zusätzlich 1 Punkt Strahlungsschaden. Dieser Strahlungsschaden wird summiert und gesondert berechnet, nachdem der Charakter den normalen Schaden durch den Angriff erlitten hat.
@@ -493,7 +493,7 @@ FALLOUT.UI.Add: Hinzufügen
 FALLOUT.UI.Addictions: Sucht
 FALLOUT.UI.APPAREL_MODS: Kleidung Mods
 FALLOUT.UI.AreYouSure: Bist du sicher?
-FALLOUT.UI.BaseDamage: Base Damage
+FALLOUT.UI.BaseDamage: Grundschaden
 FALLOUT.UI.BOOKS_AND_MAGZS: Bücher und Magazine
 FALLOUT.UI.Cancel: Abbrechen
 FALLOUT.UI.CAPS: Kronkorken
@@ -527,11 +527,11 @@ FALLOUT.UI.WEAPON_MODS: Waffen Mods
 FALLOUT.UI.Weight: Gewicht
 FALLOUT.UI.Yes: Yes
 FALLOUT.WEAPONS.damageEffect.arc: Bogen
-FALLOUT.WEAPONS.damageEffect.breaking: Panzerbrechend
+FALLOUT.WEAPONS.damageEffect.breaking: Durchschlagend
 FALLOUT.WEAPONS.damageEffect.burst: Feuerstoß
 FALLOUT.WEAPONS.damageEffect.freeze: Einfrieren
 FALLOUT.WEAPONS.damageEffect.persistent: Anhaltend
-FALLOUT.WEAPONS.damageEffect.piercing_x: Durchschlagend
+FALLOUT.WEAPONS.damageEffect.piercing_x: Panzerbrechend
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktiv
 FALLOUT.WEAPONS.damageEffect.spread: Streuung
 FALLOUT.WEAPONS.damageEffect.stun: Betäubend
@@ -568,7 +568,7 @@ FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Instabile Strahlung
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
 FALLOUT.WEAPONS.weaponType.bows: Bögen
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
-FALLOUT.WEAPONS.weaponType.custom: Custom
+FALLOUT.WEAPONS.weaponType.custom: Benutzerdefiniert
 FALLOUT.WEAPONS.weaponType.energyWeapons: Energiewaffen
 FALLOUT.WEAPONS.weaponType.explosives: Sprengstoffe
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Nahkampfwaffen

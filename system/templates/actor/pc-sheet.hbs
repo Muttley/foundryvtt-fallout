@@ -26,7 +26,7 @@
 		</a>
 	</nav>
 
-	<section class="sheet-body">
+	<section class="sheet-body" style="position: relative;">
 		{{> actor/pc/tabs/status }}
 		{{> actor/pc/tabs/abilities }}
 		{{> actor/pc/tabs/weapons }}
@@ -34,6 +34,9 @@
 		{{> actor/pc/tabs/inventory }}
 		{{> actor/_shared-partials/data-tab }}
 		{{> actor/_shared-partials/effects-tab }}
+
+		{{!-- Floating element shown on all tabs --}}
+		{{> actor/pc/partials/encumbrance }}
 	</section>
 
 </form>

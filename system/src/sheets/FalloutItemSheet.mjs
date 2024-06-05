@@ -309,6 +309,8 @@ export default class FalloutItemSheet extends ItemSheet {
 	}
 
 	_onSubmit(event) {
+		if (!this.isEditable) return;
+
 		if (this.item.type === "weapon") {
 			const updateData = this._getSubmitData();
 
@@ -374,10 +376,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			const roll = new Roll(formula);
 			const quantityRoll = await roll.evaluate();
 
-			try {
-				await game.dice3d.showForRoll(quantityRoll);
-			}
-			catch(err) {}
+			await fallout.Roller2D20.showDiceSoNice(quantityRoll);
 
 			const quantity = parseInt(roll.total);
 
