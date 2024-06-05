@@ -1,7 +1,6 @@
 /* eslint-disable no-lonely-if */
 /* eslint-disable max-len */
 export class DialogD6 extends Dialog {
-	// eslint-disable-next-line max-len
 	constructor(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, dialogData = {}, options = {}) {
 		super(dialogData, options);
 		this.rollName = rollName;
@@ -64,8 +63,6 @@ export class DialogD6 extends Dialog {
 					_actor = fromUuidSync(this.actor).actor;
 				}
 				if (_actor.type === "character" || _actor.type === "robot") {
-
-					// eslint-disable-next-line eqeqeq
 					// reduce party AP when use to increase damage in melee
 					if (this.weapon.system.weaponType === "meleeWeapons" || this.weapon.system.weaponType === "unarmed") {
 						const currentPartyAp= game.settings.get("fallout", "partyAP");
@@ -91,7 +88,6 @@ export class DialogD6 extends Dialog {
 
 				}
 				else {
-					// eslint-disable-next-line eqeqeq
 					// reduce party AP when use to increase damage in melee
 					if (this.weapon.system.weaponType === "meleeWeapons" || this.weapon.system.weaponType === "unarmed") {
 						const currentoverseerAp= game.settings.get("fallout", "gmAP");
@@ -224,8 +220,6 @@ export class DialogD6 extends Dialog {
 		dialogDataDmg.diceNum = diceNum;
 		dialogDataDmg.otherDmgDice = 0;
 		const html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
-
-		// eslint-disable-next-line max-len
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, {
 			title: rollName,
 			content: html,
@@ -267,8 +261,6 @@ export class DialogD6 extends Dialog {
 		dialogDataDmg.fireRate = fireRate;
 		dialogDataDmg.diceNum = diceNum;
 		const html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
-
-		// eslint-disable-next-line max-len
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, {
 			title: rollName,
 			content: html,
@@ -306,7 +298,6 @@ export class DialogD6 extends Dialog {
 		if (_actor.type !== "character" && _actor.type !== "robot") return 0;
 		let additionalAmmo = "0";
 		if (this.weapon.system.weaponType !== "meleeWeapons" && this.weapon.system.weaponType !== "unarmed") {
-			// eslint-disable-next-line linebreak-style
 			const [ammoItems, shotsAvailable] =	await _actor._getAvailableAmmoType(this.weapon.system.ammo);
 			if (!ammoItems) {
 				ui.notifications.warn(`Ammo ${this.weapon.system.ammo} not found`);
@@ -314,7 +305,6 @@ export class DialogD6 extends Dialog {
 			}
 			// Check if there is enough ammo
 			const totalDice = parseInt(diceNum);
-			// eslint-disable-next-line semi
 			const weaponDmg = parseInt(initDmg);
 			additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
 			// Gatling weird shit where you need to add 2DC and spend 10 ammmo...

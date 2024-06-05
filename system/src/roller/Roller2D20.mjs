@@ -211,7 +211,6 @@ export class Roller2D20 {
 			hitLocation: hitLocation,
 			hitLocationResult: hitLocationResult,
 			item: item,
-			actor: actor,
 			flavor: flavor,
 			results: dicesRolled,
 			rollname,
