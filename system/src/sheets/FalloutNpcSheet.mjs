@@ -8,7 +8,16 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	/** @override */
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
-			height: "auto",
+			classes: ["fallout", "sheet", "npc"],
+			width: 750,
+			height: 785,
+			tabs: [
+				{
+					navSelector: ".sheet-tabs",
+					contentSelector: ".sheet-body",
+					initial: this.initialTab,
+				},
+			],
 		});
 	}
 
@@ -41,6 +50,23 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	async getData(options) {
 		const context = await super.getData(options);
 
+		const bodyPartData = this.actor.system.body_parts;
+
+		context.bodyParts = [];
+		for (const part in CONFIG.FALLOUT.BODY_VALUES) {
+			const name = game.i18n.localize(
+				`FALLOUT.BodyTypes.${this.actor.system.bodyType}.${part}`
+			);
+			context.bodyParts.push({
+				name: name,
+				roll: CONFIG.FALLOUT.BODY_VALUES[part],
+				basePath: `system.body_parts.${part}`,
+				resistanceValues: bodyPartData[part].resistance,
+				injuryOpenCount: bodyPartData[part].injuryOpenCount ?? 0,
+				injuryTreatedCount: bodyPartData[part].injuryTreatedCount ?? 0,
+			});
+		}
+
 		if (this.actor.isCreature) {
 			await this._prepareButcheryMaterials(context);
 		}
@@ -72,10 +98,8 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		const roll = new Roll(formula);
 
 		const wealthRoll = await roll.evaluate();
-		try {
-			await game.dice3d.showForRoll(wealthRoll);
-		}
-		catch(err) {}
+
+		await fallout.Roller2D20.showDiceSoNice(wealthRoll);
 
 		const caps = parseInt(roll.total);
 

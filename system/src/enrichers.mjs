@@ -40,12 +40,13 @@ export default function registerTextEditorEnrichers() {
 				const outerSpan = document.createElement("span");
 				if (match[1]) {
 					outerSpan.innerHTML = `${match[1]}&nbsp;`;
-					outerSpan.appendChild(i);
 				}
-				else {
+				else if (match[0].charAt(0) === " ") {
 					outerSpan.innerHTML = "&nbsp;";
-					outerSpan.appendChild(i);
 				}
+
+				outerSpan.appendChild(i);
+
 				return outerSpan;
 			},
 		},

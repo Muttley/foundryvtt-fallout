@@ -9,8 +9,6 @@ export class APTracker extends Application {
 
 		APTracker._instance = this;
 		APTracker.closed = true;
-
-		this.data = {};
 	}
 
 
@@ -27,43 +25,6 @@ export class APTracker extends Application {
 		});
 	}
 
-	// override
-	getData() {
-		super.getData();
-
-		const maxAppShowToPlayers = game.settings.get(
-			"fallout", "maxAppShowToPlayers"
-		);
-		this.data.maxAppShowToPlayers = game.user.isGM || maxAppShowToPlayers;
-
-		const showGMMomentumToPlayers = game.settings.get(
-			"fallout", "gmMomentumShowToPlayers"
-		);
-		this.data.showGMMomentumToPlayers =
-			game.user.isGM || showGMMomentumToPlayers;
-
-		this.data.gmAP = game.settings.get("fallout", "gmAP");
-		this.data.maxAP = game.settings.get("fallout", "maxAP");
-		this.data.partyAP = game.settings.get("fallout", "partyAP");
-
-		this.data.isGM = game.user.isGM;
-
-		return this.data;
-	}
-
-	static async initialise() {
-		if (this._instance) return;
-
-		fallout.logger.debug("Initialising APTracker");
-		new APTracker();
-
-		this.renderApTracker();
-		this.registerSocketEvents();
-	}
-
-	static renderApTracker() {
-		if (APTracker._instance) APTracker._instance.render(true);
-	}
 
 	activateListeners(html) {
 		super.activateListeners(html);
@@ -81,18 +42,12 @@ export class APTracker extends Application {
 
 		html.find(".ap-add, .ap-sub").click(ev => {
 			const type = $(ev.currentTarget).parents(".ap-resource").attr("data-type");
-
 			const change = $(ev.currentTarget).hasClass("ap-add") ? 1 : -1;
 
-			const currentValue = game.settings.get("fallout", type);
+			const currentValue = game.settings.get(SYSTEM_ID, type);
+			const newValue = parseInt(currentValue) + change;
 
-			const maxAP = game.settings.get("fallout", "maxAP");
-
-			if (parseInt(currentValue) < maxAP || parseInt(currentValue) > 0) {
-				const newValue = parseInt(currentValue) + change;
-				APTracker.setAP(type, newValue);
-			}
-
+			APTracker.setAP(type, newValue);
 		});
 
 		html.find(".toggle-maxAp").click(ev => {
@@ -102,10 +57,66 @@ export class APTracker extends Application {
 		});
 	}
 
+
+	static async adjustAP(type, diff) {
+		if (!game.user.isGM) {
+			game.socket.emit("system.fallout", {
+				operation: "adjustAP",
+				data: { diff, type },
+			});
+			return;
+		}
+
+		diff = Math.round(diff);
+
+		let momentum = game.settings.get(SYSTEM_ID, type);
+		momentum += diff;
+
+		this.setAP(type, momentum);
+	}
+
+
+	getData() {
+		const data = {
+			gmAP: game.settings.get(SYSTEM_ID, "gmAP"),
+			isGM: game.user.isGM,
+			maxAP: game.settings.get(SYSTEM_ID, "maxAP"),
+			partyAP: game.settings.get(SYSTEM_ID, "partyAP"),
+		};
+
+		data.showGMMomentumToPlayers = game.user.isGM
+			? true
+			: game.settings.get(SYSTEM_ID, "gmMomentumShowToPlayers");
+
+		data.maxAppShowToPlayers = game.user.isGM
+			? true
+			: game.settings.get(SYSTEM_ID, "maxAppShowToPlayers");
+
+		return data;
+	}
+
+
+	static async initialise() {
+		if (this._instance) return;
+
+		fallout.logger.debug("Initialising APTracker");
+		new APTracker();
+
+		this.renderApTracker();
+		this.registerSocketEvents();
+	}
+
+
 	static async registerSocketEvents() {
 		fallout.logger.debug("Registering APTracker socket events");
 
 		game.socket.on("system.fallout", ev => {
+			if (ev.operation === "adjustAP") {
+				if (game.user.isGM) {
+					this.adjustAP(ev.data.type, ev.data.diff);
+				}
+			}
+
 			if (ev.operation === "setAP") {
 				if (game.user.isGM) {
 					this.setAP(ev.data.type, ev.data.value);
@@ -116,9 +127,13 @@ export class APTracker extends Application {
 		});
 	}
 
-	static async setAP(type, value) {
-		value = Math.round(value);
 
+	static renderApTracker() {
+		if (APTracker._instance) APTracker._instance.render(true);
+	}
+
+
+	static async setAP(type, value) {
 		if (!game.user.isGM) {
 			game.socket.emit("system.fallout", {
 				operation: "setAP",
@@ -127,38 +142,30 @@ export class APTracker extends Application {
 			return;
 		}
 
-		let maxAP = game.settings.get("fallout", "maxAP");
-		let partyAP = game.settings.get("fallout", "partyAP");
+		value = Math.round(value);
+		value = Math.max(0, value);
 
-		if (partyAP > value && type === "maxAP") {
-			await game.settings.set("fallout", "maxAP", value);
-			await game.settings.set("fallout", "partyAP", value);
+		const maxAP = await game.settings.get(SYSTEM_ID, "maxAP");
 
-			APTracker.renderApTracker();
+		if (type === "partyAP") value = Math.min(value, maxAP);
 
-			game.socket.emit("system.fallout", { operation: "updateAP" });
-			return;
+		if (type === "maxAP") {
+			const currentPartyAP =
+				await game.settings.get(SYSTEM_ID, "partyAP");
+
+			const newPartyAP = Math.min(value, currentPartyAP);
+
+			await game.settings.set(SYSTEM_ID, "partyAP", newPartyAP);
 		}
 
-		if (value > maxAP && type === "partyAP") {
-			await game.settings.set("fallout", type, maxAP);
+		await game.settings.set(SYSTEM_ID, type, value);
 
-			APTracker.renderApTracker();
-		}
-		else if (value < 0) {
-			await game.settings.set("fallout", type, 0);
-
-			APTracker.renderApTracker();
-		}
-		else {
-			await game.settings.set("fallout", type, value);
-
-			APTracker.renderApTracker();
-		}
+		APTracker.renderApTracker();
 
 		// emit socket event for the players to update
 		game.socket.emit("system.fallout", { operation: "updateAP" });
 	}
+
 
 	static updateAP() {
 		APTracker.renderApTracker();

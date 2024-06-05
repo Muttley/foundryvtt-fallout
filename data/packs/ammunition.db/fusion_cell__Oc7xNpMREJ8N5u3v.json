@@ -8,7 +8,7 @@
 	"name": "Fusion Cell",
 	"system": {
 		"cost": 3,
-		"description": "<p><span class=\"fontstyle0\">A microfusion cell&mdash;or fusion cell&mdash;is a miniaturized fusion reactor used in light energy weapons. They use volatile hydrogen isotopes which undergo fusion when subjected to extreme heat and pressure, and they can explode if exposed to a significant external heat source. Difficult to refuel without the proper facilities, these cells are often simply disposed of when depleted.</span></p>\n<p><span class=\"fontstyle0\">When fusion cell ammunition is found, it is in the form of a single cell containing the number of shots generated.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 14+7 # Fusion Cell]]</p>",
+		"description": "<p><span class=\"fontstyle0\">A microfusion cell&mdash;or fusion cell&mdash;is a miniaturized fusion reactor used in light energy weapons. They use volatile hydrogen isotopes which undergo fusion when subjected to extreme heat and pressure, and they can explode if exposed to a significant external heat source. Difficult to refuel without the proper facilities, these cells are often simply disposed of when depleted.</span></p>\n<p><span class=\"fontstyle0\">When fusion cell ammunition is found, it is in the form of a single cell containing the number of shots generated.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 14+7dc # Fusion Cell]]</p>",
 		"effect": "",
 		"favorite": false,
 		"quantity": 1,

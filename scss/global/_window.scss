@@ -365,26 +365,21 @@
 		cursor: pointer;
 	}
 }
-select.fire-rate-select {
-	background: beige;
-  }
-  .pulsing-text {
-    animation: pulse 1s infinite alternate;
-	color: red;
-	padding: 5px;
-    font-family: "Lobster", cursive;
-	text-align: center;
-}
 
-@keyframes pulse {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0.5;
-    }
-}
-.flexrow.resource.pulsing {
-    grid-column: 1 / -1;
-	place-self: center;
+
+.encumbrance {
+	background-color: rgb(79, 105, 144);
+	color: rgb(238, 231, 135);
+
+    margin: 0;
+
+	padding: unset;
+	padding-left: 24px;
+	padding-right: 24px;
+
+    position: absolute;
+    bottom: 0;
+
+	width: 100%;
+
 }
