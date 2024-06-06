@@ -131,6 +131,7 @@ export default class FalloutChat {
 				const actor = message.flags.actor;
 				const falloutRoll = message.flags.falloutroll;
 				const weapon = message.flags.weapon;
+				const otherDmgDice = 0;
 
 				fallout.DialogD6.addcreateDialog({
 					rollname: falloutRoll.rollname,
@@ -138,6 +139,7 @@ export default class FalloutChat {
 					falloutRoll: falloutRoll,
 					weapon: weapon,
 					actor: actor,
+					otherDmgDice: otherDmgDice,
 				});
 			});
 		}

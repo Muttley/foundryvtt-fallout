@@ -27,8 +27,15 @@ export class DialogD6 extends Dialog {
 			if (isaddl !== 0) {
 				CDnumber = html.find(".d-number")[0].value;
 			}
-			let otherDmgDice = html.find(".otherd-number")[0].value;
-			let fireRateAmo =html.find('[name="fireRateAmo"] option:selected').val();
+			const isMacor = html.find(".otherd-number").length;
+			let fireRateAmo = 0;
+			let otherDmgDice = 0;
+
+			if (isMacor !== 0) {
+				otherDmgDice = html.find(".otherd-number")[0].value;
+				fireRateAmo =html.find('[name="fireRateAmo"] option:selected').val();
+			}
+
 			if (!this.falloutRoll) {
 				fallout.Roller2D20.rollD6({
 					rollname: this.rollName,
@@ -110,6 +117,7 @@ export class DialogD6 extends Dialog {
 			const actortype= game.actors.get(actorId).type;
 			const weapontype = this.weapon.system.weaponType;
 			let fireRateAmo = html.find('[name="fireRateAmo"] option:selected').val();
+
 			if (weapontype === "meleeWeapons" || weapontype === "unarmed") {
 				if (actortype !== "character" && actortype !== "robot") {
 					const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
@@ -125,10 +133,16 @@ export class DialogD6 extends Dialog {
 											</div>`;
 							html.find(".otherd-number").after(pulsingHTML);
 							html.find(".fire-rate-select")[0].selectedIndex = 0;
+							const selector = `.app.window-app.dice-icon[data-appid="${this.appId}"]`;
+							const element = document.querySelector(selector);
+							element.style.height = "230px";
 						}
 					}
 					else if (pulsingContainer) {
 						pulsingContainer.remove();
+						const selector = `.app.window-app.dice-icon[data-appid="${this.appId}"]`;
+						const element = document.querySelector(selector);
+						element.style.height = "184px";
 					}
 				}
 				else {
@@ -172,13 +186,16 @@ export class DialogD6 extends Dialog {
 					}
 				}
 			}
+
 			else {
-				const usedamo = await this.checkfireRate(this.weapon, game.actors.get(actorId), fireRateAmo);
-				if (usedamo === 1) {
-					const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
-					const part2 = game.i18n.localize("TYPES.Item.ammo");
-					ui.notifications.warn(`${part1} ${part2}`);
-					html.find(".fire-rate-select")[0].selectedIndex = 0;
+				if ((game.settings.get(SYSTEM_ID, "automaticAmmunitionCalculationGM") && (actortype !== "character" && actortype !== "robot")) || (game.settings.get(SYSTEM_ID, "automaticAmmunitionCalculation") && (actortype === "character" || actortype === "robot"))) {
+					const usedamo = await this.checkfireRate(this.weapon, game.actors.get(actorId), fireRateAmo);
+					if (usedamo === 1) {
+						const part1 = game.i18n.localize("FALLOUT.UI.Not_Enough");
+						const part2 = game.i18n.localize("TYPES.Item.ammo");
+						ui.notifications.warn(`${part1} ${part2}`);
+						html.find(".fire-rate-select")[0].selectedIndex = 0;
+					}
 				}
 			}
 		});
@@ -199,27 +216,33 @@ export class DialogD6 extends Dialog {
 		dialogData.falloutRoll = falloutRoll;
 		dialogData.weapon = weapon;
 		dialogData.actor = actor;
-		const actorId = dialogData.actor.split(".")[1];
-		const actortype= game.actors.get(actorId).type;
-		let fireRate=weapon.system.fireRate;
-		let additionalUdesAmo="";
-		if ((actortype!== "character" && actortype !== "robot") && (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed")) {
-			fireRate= 3;
-			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg_overseer");
-		}
-		else if (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed") {
-			fireRate= 3;
-			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg");
+		let html;
+		if (actor !== null) {
+			const actorId = dialogData.actor.split(".")[1];
+			const actortype= game.actors.get(actorId).type;
+			let fireRate=weapon.system.fireRate;
+			let additionalUdesAmo="";
+			if ((actortype!== "character" && actortype !== "robot") && (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed")) {
+				fireRate= 3;
+				additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg_overseer");
+			}
+			else if (weapon.system.weaponType === "meleeWeapons" || weapon.system.weaponType === "unarmed") {
+				fireRate= 3;
+				additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_mele_dmg");
+			}
+			else {
+				additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_amo");
+			}
+			let dialogDataDmg ={};
+			dialogDataDmg.additionalUdesAmo = additionalUdesAmo;
+			dialogDataDmg.fireRate = fireRate;
+			dialogDataDmg.diceNum = diceNum;
+			dialogDataDmg.otherDmgDice = 0;
+			html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
 		}
 		else {
-			additionalUdesAmo=game.i18n.localize("FALLOUT.UI.Additional_amo");
+			 html =  await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
 		}
-		let dialogDataDmg ={};
-		dialogDataDmg.additionalUdesAmo = additionalUdesAmo;
-		dialogDataDmg.fireRate = fireRate;
-		dialogDataDmg.diceNum = diceNum;
-		dialogDataDmg.otherDmgDice = 0;
-		const html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, {
 			title: rollName,
 			content: html,
@@ -260,6 +283,7 @@ export class DialogD6 extends Dialog {
 		dialogDataDmg.additionalUdesAmo = additionalUdesAmo;
 		dialogDataDmg.fireRate = fireRate;
 		dialogDataDmg.diceNum = diceNum;
+		dialogDataDmg.otherDmgDice = otherDmgDice;
 		const html =  await renderTemplate("systems/fallout/templates/dialogs/damage-options.hbs", dialogDataDmg);
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, otherDmgDice, fireRateAmo, {
 			title: rollName,

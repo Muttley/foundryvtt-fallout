@@ -272,9 +272,11 @@ export class Roller2D20 {
 		otherDmgDice = 0,
 		fireRateAmo = 0,
 	}={}) {
-		const isgatling = weapon.system.damage.weaponQuality.gatling.value;
-		if (isgatling === true) {
-			fireRateAmo = fireRateAmo *2;
+		if (actor !== null) {
+			const isGatling = weapon.system.damage.weaponQuality.gatling.value;
+			if (isGatling === true) {
+				fireRateAmo = fireRateAmo *2;
+			}
 		}
 		const totalCD = fireRateAmo+ otherDmgDice+diceNum;
 		let formula = `${totalCD}dc`;

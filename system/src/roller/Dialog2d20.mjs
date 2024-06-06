@@ -1,3 +1,5 @@
+import { SYSTEM_ID } from "../config.mjs";
+
 export class Dialog2d20 extends Dialog {
 
 	constructor(
@@ -35,22 +37,34 @@ export class Dialog2d20 extends Dialog {
 		super.activateListeners(html);
 
 		html.ready(e => {
-			this.markDiceNumber(html, this.diceNum);
-			if (this.actor.type !== "character" && this.actor.type !== "robot") {
-				this.gmRoll(html);
+			this.markDiceNumber(html, this.diceNum, this.actor);
+			if (this.actor !== null) {
+				if (this.actor.type !== "character" && this.actor.type !== "robot") {
+					this.gmRoll(html);
+				}
+				this.freeD20(html);
 			}
-			this.freeD20(html);
 		});
 
 		html.on("click", ".dice-icon", (e, i, a) => {
 			let index = e.currentTarget.dataset.index;
 			this.diceNum = parseInt(index);
-			this.markDiceNumber(html, this.diceNum);
-			if (this.actor.type === ("character" || "robot")) {
-				this.apManagment(html);
+			const gmError = false;
+			if (this.actor !== null) {
+				this.markDiceNumber(html, this.diceNum, gmError, this.actor);
+				if (this.actor.type === ("character" || "robot")) {
+					this.apManagment(html);
+				}
+				else {
+					this.gmApManagment(html);
+				}
+
 			}
 			else {
-				this.gmApManagment(html);
+				let index = e.currentTarget.dataset.index;
+				this.diceNum = parseInt(index);
+				const gmError = false;
+				this.markDiceNumber(html, this.diceNum, gmError, this.actor);
 			}
 
 		});
@@ -73,35 +87,38 @@ export class Dialog2d20 extends Dialog {
 
 		});
 		html.on("click", () => {
-			if (this.actor.type === ("character" || "robot")) {
-				let ap = game.settings.get("fallout", "partyAP");
-				this.element.find('[name="current_ap"]').val(ap);
-				this.apManagment(html);
-			}
-			else {
-				let ap = game.settings.get("fallout", "gmAP");
-				this.element.find('[name="current_ap"]').val(ap);
-				this.gmApManagment(html);
+			if (this.actor !== null) {
+				if (this.actor.type === ("character" || "robot")) {
+					let ap = game.settings.get(SYSTEM_ID, "partyAP");
+					this.element.find('[name="current_ap"]').val(ap);
+					this.apManagment(html);
+				}
+				else {
+					let ap = game.settings.get(SYSTEM_ID, "gmAP");
+					this.element.find('[name="current_ap"]').val(ap);
+					this.gmApManagment(html);
+				}
 			}
 		});
 
 
 		this.data.buttons.roll.callback = () => {
-			if (this.actor.type === ("character" || "robot")) {
-				let ap = game.settings.get("fallout", "partyAP");
-				this.element.find('[name="current_ap"]').val(ap);
-				this.apManagment(html);
+			if (this.actor !== null) {
+				if (this.actor.type === ("character" || "robot")) {
+					let ap = game.settings.get(SYSTEM_ID, "partyAP");
+					this.element.find('[name="current_ap"]').val(ap);
+					this.apManagment(html);
+				}
+				else {
+					let ap = game.settings.get(SYSTEM_ID, "gmAP");
+					this.element.find('[name="current_ap"]').val(ap);
+					this.gmApManagment(html);
+				}
+				this.rollButton(this);
+				this.data.buttons.help.callback=this.AssistanceButton.bind(this);
 			}
-			else {
-				let ap = game.settings.get("fallout", "gmAP");
-				this.element.find('[name="current_ap"]').val(ap);
-				this.gmApManagment(html);
-			}
-
 			this.rollButton(this);
 		};
-
-		this.data.buttons.help.callback=this.AssistanceButton.bind(this);
 	}
 
 	rollButton() {
@@ -109,11 +126,18 @@ export class Dialog2d20 extends Dialog {
 		let skill = this.element.find('[name="skill"]').val();
 		let complication = this.element.find('[name="complication"]').val();
 		let isTag = this.element.find('[name="tag"]').is(":checked");
-		let apSpend = this.element.find('[name="spend_ap"]').val();
-		let apBuy = parseInt(this.element.find('[name="by_from_gm"]').val());
+		let apSpend = this.element.find('[name="spend_ap"]').val() || 0;
+		let apBuy = parseInt(this.element.find('[name="by_from_gm"]').val()) || 0;
 		this.rolling = true;
 		let numberOfDice = 0;
-		for (let i = 2; i <= 5; i++) {
+		let i = 0;
+		if (this.actor === null) {
+			i = 1;
+		}
+		else {
+			i = 2;
+		}
+		for (i; i <= 5; i++) {
 			const diceElement =this.element.find(`[data-index="${i}"]`);
 			const containsMarked = diceElement.hasClass("marked");
 			if (containsMarked) {
@@ -133,49 +157,50 @@ export class Dialog2d20 extends Dialog {
 			apSpend: apSpend,
 			apBuy: apBuy,
 		}).then(result => this.deferred.resolve(result));
+		if (this.actor !== null) {
+			let ap = game.settings.get(SYSTEM_ID, "partyAP");
+			let gmAP = parseInt(game.settings.get(SYSTEM_ID, "gmAP"));
 
-		let ap = game.settings.get("fallout", "partyAP");
-		let gmAP = parseInt(game.settings.get("fallout", "gmAP"));
-
-		if (apBuy>0) {
-			ap = 0;
-			fallout.APTracker.setAP("partyAP", ap);
-			let giveGmAP = apBuy + gmAP;
-			fallout.APTracker.setAP("gmAP", giveGmAP);
-		}
-		else {
-			// eslint-disable-next-line no-lonely-if
-			if (this.actor.type === ("character" || "robot")) {
-				let leftPartyAp = ap - apSpend;
-				fallout.APTracker.setAP("partyAP", leftPartyAp);
+			if (apBuy>0) {
+				ap = 0;
+				fallout.APTracker.setAP("partyAP", ap);
+				let giveGmAP = apBuy + gmAP;
+				fallout.APTracker.setAP("gmAP", giveGmAP);
 			}
 			else {
-				let leftPartyAp = gmAP - apSpend;
-				fallout.APTracker.setAP("gmAP", leftPartyAp);
-			}
-
-		}
-		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-
-			// REDUCE AMMO
-			if (this.actor && this.item?.system.ammo !== "" ) {
-				try {
-					if (this.item.system.damage.weaponQuality.gatling.value === true) {
-						this.actor.reduceAmmo(
-							this.item.system.ammo,
-							this.item.system.ammoPerShot*10
-						);
-
-					}
-					else {
-						this.actor.reduceAmmo(
-							this.item.system.ammo,
-							this.item.system.ammoPerShot
-						);
-					}
+			// eslint-disable-next-line no-lonely-if
+				if (this.actor.type === ("character" || "robot")) {
+					let leftPartyAp = ap - apSpend;
+					fallout.APTracker.setAP("partyAP", leftPartyAp);
 				}
-				catch(er) {
-					console.warn(er);
+				else {
+					let leftPartyAp = gmAP - apSpend;
+					fallout.APTracker.setAP("gmAP", leftPartyAp);
+				}
+
+			}
+			if (game.settings.get(SYSTEM_ID, "automaticAmmunitionCalculation")) {
+			// REDUCE AMMO
+				if (this.actor && this.item?.system.ammo !== "" ) {
+					try {
+						if (this.item.system.damage.weaponQuality.gatling.value === true) {
+							this.actor.reduceAmmo(
+								this.item.system.ammo,
+								this.item.system.ammoPerShot*10
+							);
+
+						}
+						else {
+							this.actor.reduceAmmo(
+								this.item.system.ammo,
+								this.item.system.ammoPerShot
+							);
+						}
+					}
+					catch(er) {
+						console.warn(er);
+					}
+
 				}
 			}
 		}
@@ -210,7 +235,7 @@ export class Dialog2d20 extends Dialog {
 			apBuy: apBuy,
 		}).then(result => this.deferred.resolve(result));
 
-		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
+		if (game.settings.get(SYSTEM_ID, "automaticAmmunitionCalculation")) {
 
 			// REDUCE AMMO
 			if (this.actor && this.item?.system.ammo !== "") {
@@ -243,54 +268,61 @@ export class Dialog2d20 extends Dialog {
 		}
 	}
 
-	markDiceNumber(html, numberOfDice, gmError) {
-		let nextDice;
-		let markedDice = 0;
-		for (let i = 2; i <= 5; i++) {
-			const diceElement =this.element.find(`[data-index="${i}"]`);
-			const containsMarked = diceElement.hasClass("marked");
-			if (containsMarked) {
-				markedDice = i;
-			}
-		}
-		if ((numberOfDice === 2 || ($(html).find('[name="freed20"]').is(":checked") && numberOfDice === 3)) && markedDice === numberOfDice) {
-			const diceElement = $(html).find(`[data-index="${numberOfDice}"]`);
-			diceElement.addClass("marked");
-		 }
-		else {
-			const currentdice = $(html).find(`[data-index="${numberOfDice}"]`).hasClass("marked");
-			if (numberOfDice+1 >5) {
-				nextDice = false;
-			}
-			else {
-				nextDice = $(html).find(`[data-index="${numberOfDice + 1}"]`).hasClass("marked");
-			}
+	markDiceNumber(html, numberOfDice, gmError, actor) {
+		if (actor !== null) {
+			let nextDice;
+			let markedDice = 0;
 			for (let i = 2; i <= 5; i++) {
-				const diceElement = $(html).find(`[data-index="${i}"]`);
-				if (i<=this.diceNum && currentdice === false) {
-					diceElement.addClass("marked");
-				}
-				if (i> this.diceNum && nextDice === true) {
-					diceElement.removeClass("marked");
-				}
-				if (i === this.diceNum && nextDice === false && currentdice === true) {
-					diceElement.removeClass("marked");
+				const diceElement =this.element.find(`[data-index="${i}"]`);
+				const containsMarked = diceElement.hasClass("marked");
+				if (containsMarked) {
+					markedDice = i;
 				}
 			}
-		}
-		if (gmError) {
-			let i = 0;
-			if ($(html).find('[name="freed20"]').is(":checked") ) {
-				i = 4;
-			}
+			if ((numberOfDice === 2 || ($(html).find('[name="freed20"]').is(":checked") && numberOfDice === 3)) && markedDice === numberOfDice) {
+				const diceElement = $(html).find(`[data-index="${numberOfDice}"]`);
+				diceElement.addClass("marked");
+		 }
 			else {
-				i = 3;
-			}
-			for (i; i <= 5; i++) {
-				const diceElement = $(html).find(`[data-index="${i}"]`);
-				diceElement.removeClass("marked");
+				const currentdice = $(html).find(`[data-index="${numberOfDice}"]`).hasClass("marked");
+				if (numberOfDice+1 >5) {
+					nextDice = false;
+				}
+				else {
+					nextDice = $(html).find(`[data-index="${numberOfDice + 1}"]`).hasClass("marked");
+				}
+				for (let i = 2; i <= 5; i++) {
+					const diceElement = $(html).find(`[data-index="${i}"]`);
+					if (i<=this.diceNum && currentdice === false) {
+						diceElement.addClass("marked");
+					}
+					if (i> this.diceNum && nextDice === true) {
+						diceElement.removeClass("marked");
+					}
+					if (i === this.diceNum && nextDice === false && currentdice === true) {
+						diceElement.removeClass("marked");
+					}
+				}
 			}
 
+			if (gmError) {
+				let i = 0;
+				if ($(html).find('[name="freed20"]').is(":checked") ) {
+					i = 4;
+				}
+				else {
+					i = 3;
+				}
+				for (i; i <= 5; i++) {
+					const diceElement = $(html).find(`[data-index="${i}"]`);
+					diceElement.removeClass("marked");
+				}
+
+			}
+		}
+		else {
+			$(html).find(".dice-icon").removeClass("marked");
+			$(html).find(`[data-index="${this.diceNum}"]`).addClass("marked");
 		}
 	}
 
@@ -456,9 +488,6 @@ export class Dialog2d20 extends Dialog {
 			if (warExist === 0) {
 				ui.notifications.warn(`${part1} ${part2}`);
 			}
-			let numberOfDice = 2;
-			let gmError = true;
-			this.markDiceNumber(html, numberOfDice, gmError);
 		}
 		else {
 			$(html).find('[name="spend_ap"]').val(apCost);
@@ -469,7 +498,7 @@ export class Dialog2d20 extends Dialog {
 	gmRoll(html) {
 		const divbuy = document.querySelector('[name="buy_from_gm"]');
 		divbuy.style.display = "none";
-		let gmAP = game.settings.get("fallout", "gmAP");
+		let gmAP = game.settings.get(SYSTEM_ID, "gmAP");
 		this.element.find('[name="current_ap"]').val(gmAP);
 		$(html).find('[name="party_ap"] .title-label').text(game.i18n.localize("FALLOUT.TEMPLATES.OVERSEER_AP"));
 		$(html).find('[name="spend_ap"] .title-label').text(game.i18n.localize("FALLOUT.UI.Spend_Overseer_AP"));
@@ -490,37 +519,72 @@ export class Dialog2d20 extends Dialog {
 		dialogData.item = item;
 		dialogData.ap = ap;
 		dialogData.apCost = apCost;
-		const html = await renderTemplate("systems/fallout/templates/dialogs/dialog2d20.hbs", dialogData);
-
-		let d = new Dialog2d20(
-			rollName,
-			diceNum,
-			attribute,
-			skill,
-			tag,
-			complication,
-			rollLocation,
-			actor,
-			item,
-			ap,
-			apCost,
-			{
-				title: rollName,
-				content: html,
-				buttons: {
-					roll: {
-						icon: '<i class="fas fa-check"></i>',
-						label: game.i18n.localize("FALLOUT.UI.Roll"),
+		let html;
+		let dialogWidth;
+		let dialogHeight;
+		let d;
+		if (actor !== null) {
+			html = await renderTemplate("systems/fallout/templates/dialogs/dialog2d20.hbs", dialogData);
+			dialogWidth = 620;
+			dialogHeight = 320;
+			d = new Dialog2d20(
+				rollName,
+				diceNum,
+				attribute,
+				skill,
+				tag,
+				complication,
+				rollLocation,
+				actor,
+				item,
+				ap,
+				apCost,
+				{
+					title: rollName,
+					content: html,
+					buttons: {
+						roll: {
+							icon: '<i class="fas fa-check"></i>',
+							label: game.i18n.localize("FALLOUT.UI.Roll"),
+						},
+						help: {
+							icon: '<i class="fas fa-check"></i>',
+							label: game.i18n.localize("FALLOUT.UI.ASSISTANCE"),
+						},
 					},
-					help: {
-						icon: '<i class="fas fa-check"></i>',
-						label: game.i18n.localize("FALLOUT.UI.ASSISTANCE"),
+				}
+			);
+		}
+		else {
+			html = await renderTemplate("systems/fallout/templates/dialogs/simple-dialog2d20.hbs", dialogData);
+			dialogWidth = 500;
+			dialogHeight = 180;
+			d = new Dialog2d20(
+				rollName,
+				diceNum,
+				attribute,
+				skill,
+				tag,
+				complication,
+				rollLocation,
+				actor,
+				item,
+				ap,
+				apCost,
+				{
+					title: rollName,
+					content: html,
+					buttons: {
+						roll: {
+							icon: '<i class="fas fa-check"></i>',
+							label: game.i18n.localize("FALLOUT.UI.Roll"),
+						},
 					},
+				}
+			);
+		}
 
-				},
-			}
-		);
-		d.render(true, {width: 620, height: 320});
+		d.render(true, {width: dialogWidth, height: dialogHeight});
 		return d.deferred.promise;
 	}
 

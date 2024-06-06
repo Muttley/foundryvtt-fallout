@@ -365,6 +365,29 @@
 		cursor: pointer;
 	}
 }
+select.fire-rate-select {
+	background: beige;
+  }
+  .pulsing-text {
+    animation: pulse 1s infinite alternate;
+	color: red;
+	padding: 5px;
+    font-family: "Lobster", cursive;
+	text-align: center;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+.flexrow.resource.pulsing {
+    grid-column: 1 / -1;
+	place-self: center;
+}
 
 
 .encumbrance {
