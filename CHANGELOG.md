@@ -4,6 +4,8 @@
 - [#443] When deleting scrappable items, ask the player if they want to turn them into junk
 - [#444] Allow relevant items to be flagged as junk and have the scrapping tool always use them first if available
 
+	* The following items can be be flagged as being Junk items and if they are will be used as part of the salvage process: Apparel Mod, Apparel, Miscellany, Robot Armor, Robot Module, Weapon Mod, Weapon
+
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory
 
