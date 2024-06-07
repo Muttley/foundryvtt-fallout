@@ -2,6 +2,7 @@
 
 #### Enhancements
 - [#443] When deleting scrappable items, ask the player if they want to turn them into junk
+- [#444] Allow relevant items to be flagged as junk and have the scrapping tool always use them first if available
 
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory

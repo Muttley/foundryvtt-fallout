@@ -5,6 +5,9 @@
 			{{#ifCond junkToProcess ">" 1}}
 				x {{junkToProcess}}
 			{{/ifCond}}
+			{{#ifCond junkedItems ">" 0}}
+				({{junkedItems}} {{localize "FALLOUT.APP.SalvageJunk.Items"}})
+			{{/ifCond}}
 		</h2>
 		<div class="hit-location-label" style="color: grey">
 			<span>

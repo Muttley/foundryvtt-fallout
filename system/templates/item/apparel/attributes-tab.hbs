@@ -78,6 +78,19 @@
 				/>
 			</div>
 
+			<div class="flexrow resource-row align-mid">
+				<label class="capitalized checkbox-label">
+					{{localize "FALLOUT.actor.inventory.materials.junk"}}
+				</label>
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.isJunk"
+					type="checkbox"
+					{{checked system.isJunk}}
+				/>
+			</div>
+
 			{{#ifCond system.apparelType '===' 'powerArmor'}}
 				{{> item/apparel/_partials/power-armor}}
 			{{/ifCond}}

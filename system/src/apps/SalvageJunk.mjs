@@ -5,8 +5,13 @@ export default class SalvageJunk extends FormApplication {
 		this.actor = object;
 
 		this.maxJunk = this.actor.system?.materials?.junk ?? 0;
+		this.maxJunk += this.actor.items.filter(
+			i => i.system.canBeScrapped && i.system.isJunk
+		).length;
+
 		this.minJunk = this.maxJunk > 0 ? 1 : 0;
 
+		this.junkedItems = 0;
 		this.junkToProcess = this.minJunk;
 	}
 
@@ -62,6 +67,19 @@ export default class SalvageJunk extends FormApplication {
 	}
 
 	async _onStartSalvaging() {
+		const junkItems = this.actor.items.filter(
+			i => i.system.canBeScrapped && i.system.isJunk
+		);
+
+		this.junkedItems = 0;
+		for (const junkItem of junkItems) {
+			if (this.junkedItems >= this.junkToProcess) break;
+
+			this.junkedItems++;
+
+			junkItem.delete();
+		}
+
 		const skillItem = this.actor.items.find(i => i.name === "Repair");
 
 		const intelligence = this.actor?.system?.attributes?.int?.value ?? 0;
@@ -141,6 +159,7 @@ export default class SalvageJunk extends FormApplication {
 		rollData.materials = await this._performMaterialRolls(config, rollData);
 
 		rollData.junkToProcess = this.junkToProcess;
+		rollData.junkedItems = this.junkedItems;
 		rollData.type = "salvage-junk";
 		rollData.timeToSalvage = this.timeToSalvageDisplay(this.junkToProcess);
 		rollData.timeToSalvageMins = this.timeToSalvage(this.junkToProcess);
@@ -148,7 +167,7 @@ export default class SalvageJunk extends FormApplication {
 		// Update the actor
 		const actorMaterials = this.actor.system.materials;
 
-		actorMaterials.junk -= this.junkToProcess;
+		actorMaterials.junk -= (this.junkToProcess - this.junkedItems);
 		actorMaterials.common += rollData.materials.common;
 		actorMaterials.uncommon += rollData.materials.uncommon;
 		actorMaterials.rare += rollData.materials.rare;

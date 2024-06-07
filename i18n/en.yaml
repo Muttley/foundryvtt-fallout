@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Party Sleep
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Start Salvaging
 FALLOUT.APP.SalvageJunk.time: This will take {time}
 FALLOUT.APP.SalvageJunk.title: Salvage Junk
