@@ -141,6 +141,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			}
 
 			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
+			if (i.type === "robot_mod" && this.actor.isNotRobot) i.canBeEquipped = false;
 
 			if (i.type === "skill") {
 				i.localizedName = fallout.utils.getLocalizedSkillName(i);
@@ -176,6 +177,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			else if (!this.ignoredInventoryItems.includes(i.type)) {
 				context.inventory.push(i);
 			}
+
 		}
 
 		// Sort skills by their localized name for convenience of non-English

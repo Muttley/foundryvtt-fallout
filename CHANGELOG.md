@@ -1,3 +1,11 @@
+# v11.12.0
+
+#### Bugs
+- [#438] Owned Robot Mods do not display in Character sheet inventory
+
+#### Chores
+- [#440] Merge new Polish translation updates from Crowdin
+
 # v11.11.4
 
 #### Bugs
