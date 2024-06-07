@@ -1,5 +1,8 @@
 # v11.12.0
 
+#### Enhancements
+- [#443] When deleting scrappable items, ask the player if they want to turn them into junk
+
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory
 

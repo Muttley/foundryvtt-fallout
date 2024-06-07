@@ -84,14 +84,14 @@ export default class FalloutChemDoses extends FormApplication {
 				content: html,
 				buttons: {
 					Yes: {
-						icon: "<i class=\"fa fa-check\"></i>",
+						icon: '<i class="fa fa-check"></i>',
 						label: `${game.i18n.localize("FALLOUT.UI.Yes")}`,
 						callback: async () => {
 							this.actor.resetChemDoses();
 						},
 					},
 					Cancel: {
-						icon: "<i class=\"fa fa-times\"></i>",
+						icon: '<i class="fa fa-times"></i>',
 						label: `${game.i18n.localize("FALLOUT.UI.Cancel")}`,
 					},
 				},

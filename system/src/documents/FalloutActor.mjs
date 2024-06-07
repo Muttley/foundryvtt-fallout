@@ -87,6 +87,11 @@ export default class FalloutActor extends Actor {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
 
+	incrementJunk() {
+		const newJunk = this.system.materials.junk + 1;
+		this.update({"system.materials.junk": newJunk});
+	}
+
 	isFieldOverridden(fieldName) {
 		const overridden = Object.keys(
 			foundry.utils.flattenObject(this.overrides)

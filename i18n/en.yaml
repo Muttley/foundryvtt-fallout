@@ -369,6 +369,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Injury (Left Click)
 FALLOUT.TEMPLATES.Irradiated: Irradiated
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
 FALLOUT.TEMPLATES.Issue: Issue
+FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Learned
@@ -506,6 +507,8 @@ FALLOUT.UI.CONSUMABLES: Consumables
 FALLOUT.UI.Consume: Consume
 FALLOUT.UI.Cost: Cost
 FALLOUT.UI.Damage: Damage
+FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.INVENTORY: Inventory

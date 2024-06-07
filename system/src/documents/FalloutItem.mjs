@@ -1,5 +1,17 @@
 export default class FalloutItem extends Item {
 
+	get canBeScrapped() {
+		return [
+			"apparel",
+			"apparel_mod",
+			"miscellany",
+			"robot_armor",
+			"robot_mod",
+			"weapon",
+			"weapon_mod",
+		].includes(this.type);
+	}
+
 	get currentWeaponDamage() {
 		if (this.type !== "weapon") return undefined;
 
