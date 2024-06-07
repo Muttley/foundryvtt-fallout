@@ -369,6 +369,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Kości obrażeń od radiacji
 FALLOUT.TEMPLATES.Issue: Problem
+FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: Kg
 FALLOUT.TEMPLATES.lbs: Lb
 FALLOUT.TEMPLATES.Learned: Nauczony
@@ -506,6 +507,8 @@ FALLOUT.UI.CONSUMABLES: Jednorazowe
 FALLOUT.UI.Consume: Użyj
 FALLOUT.UI.Cost: Cena
 FALLOUT.UI.Damage: Obrażenia
+FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Choroby
 FALLOUT.UI.favorite: Ulubiony
 FALLOUT.UI.INVENTORY: Ekwipunek
