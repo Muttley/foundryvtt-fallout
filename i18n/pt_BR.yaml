@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Descanso do Grupo
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Avançar Tempo do Jogo
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Você não tem lixo para sucatear
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Tempo do jogo avançou {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Sucateando {amount} Lixo
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Começar a Sucatear
 FALLOUT.APP.SalvageJunk.time: Isso levará {time}
 FALLOUT.APP.SalvageJunk.title: Sucatear Lixo
