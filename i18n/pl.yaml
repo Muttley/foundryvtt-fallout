@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Drużyna Śpi
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Przyspiesz Czas Gry
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Nie masz żadnych śmieci do odzyskania
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Czas gry przyśpieszony o {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Odzyskano {amount} Śmieci
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Rozpocznij odzyskiwanie
 FALLOUT.APP.SalvageJunk.time: Zajmie Ci to {time}
 FALLOUT.APP.SalvageJunk.title: Odzyskaj śmieci
