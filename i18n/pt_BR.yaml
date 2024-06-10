@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: P Percepção
 FALLOUT.AbilityStr: S Força
 FALLOUT.actor.inventory.materials.common: Comum
 FALLOUT.actor.inventory.materials.junk: Lixo
-FALLOUT.actor.inventory.materials.junkSalvageControl: Sucatear Lixo
+FALLOUT.actor.inventory.materials.junkSalvageControl: Reciclar Sucata
 FALLOUT.actor.inventory.materials.label: Materiais
 FALLOUT.actor.inventory.materials.rare: Raro
 FALLOUT.actor.inventory.materials.uncommon: Incomum
@@ -38,13 +38,13 @@ FALLOUT.APP.PartySleep.hours: "{length} horas"
 FALLOUT.APP.PartySleep.safe_location: O Local é Seguro?
 FALLOUT.APP.PartySleep.title: Descanso do Grupo
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Avançar Tempo do Jogo
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Você não tem lixo para sucatear
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Você não tem sucata para reciclar
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Tempo do jogo avançou {time}
-FALLOUT.APP.SalvageJunk.Items: Items
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
-FALLOUT.APP.SalvageJunk.start: Começar a Sucatear
+FALLOUT.APP.SalvageJunk.Items: Itens
+FALLOUT.APP.SalvageJunk.selectedAmount: Reciclando {amount} de {max} Sucata
+FALLOUT.APP.SalvageJunk.start: Começar a Reciclar
 FALLOUT.APP.SalvageJunk.time: Isso levará {time}
-FALLOUT.APP.SalvageJunk.title: Sucatear Lixo
+FALLOUT.APP.SalvageJunk.title: Reciclar Lixo
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Roupa
 FALLOUT.APPAREL.headgear: Equip. Cabeça
@@ -370,7 +370,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Dados de Dano de Radiação
 FALLOUT.TEMPLATES.Issue: Problema
-FALLOUT.TEMPLATES.Junk: Junk
+FALLOUT.TEMPLATES.Junk: Sucata
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Aprendido
@@ -508,8 +508,8 @@ FALLOUT.UI.CONSUMABLES: Consumíveis
 FALLOUT.UI.Consume: Consumir
 FALLOUT.UI.Cost: Custo
 FALLOUT.UI.Damage: Dano
-FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
-FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
+FALLOUT.UI.DeleteOrJunk.message: Gostaria de Deletar ou Sucatear este item?
+FALLOUT.UI.DeleteOrJunk.title: Deletar ou Sucatear?
 FALLOUT.UI.DISEASES: Doenças
 FALLOUT.UI.favorite: Favorito
 FALLOUT.UI.INVENTORY: Inventário
