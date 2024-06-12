@@ -152,7 +152,7 @@ export default class ItemSelector extends CompendiumItemSelector {
 			if (oldflag !== undefined) {
 				itemData.flags = {
 					core: {
-						sourceID: uuid,
+						sourceId: uuid,
 					},
 					...oldflag,
 				};
@@ -160,7 +160,7 @@ export default class ItemSelector extends CompendiumItemSelector {
 			else {
 				itemData.flags = {
 					core: {
-						sourceID: uuid,
+						sourceId: uuid,
 					},
 				};
 			}
