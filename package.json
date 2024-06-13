@@ -16,10 +16,10 @@
 		"chalk": "^5.3.0",
 		"classic-level": "^1.4.1",
 		"del": "^7.1.0",
-		"eslint": "^9.3.0",
+		"eslint": "^9.4.0",
 		"glob": "^10.4.1",
 		"gulp": "^5.0.0",
-		"gulp-eslint-new": "^2.0.0",
+		"gulp-eslint-new": "^2.1.0",
 		"gulp-if": "^3.0.0",
 		"gulp-sass": "^5.1.0",
 		"gulp-yaml": "^2.0.4",
@@ -29,8 +29,8 @@
 		"merge-stream": "^2.0.0",
 		"nedb-promises": "^6.2.3",
 		"rollup": "^4.18.0",
-		"sass": "^1.77.2",
-		"yaml": "^2.4.2",
+		"sass": "^1.77.5",
+		"yaml": "^2.4.5",
 		"yargs": "^17.7.2"
 	}
 }
