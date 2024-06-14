@@ -28,7 +28,7 @@
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </label>
                 {{#each system.resistance as |item key|}}
                 <div class="flex align-mid">
-                    <label><span class="fo-{{key}}"></span> {{key}} &nbsp;</label>
+                    <label><span class="fo-{{key}}"></span> {{#localizeKey key}}{{/localizeKey}} &nbsp;</label>
                     <input type="number" class="num-short-2" name="system.resistance.{{key}}" value="{{item}}">
                 </div>
                 {{/each}}

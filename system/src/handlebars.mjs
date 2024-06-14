@@ -247,4 +247,17 @@ export default function registerHandlebarsHelpers() {
 		return html.replace(rgx, "$& selected");
 	});
 
+	Handlebars.registerHelper("localizeKey", function(key) {
+		let type = key;
+		switch (type) {
+			case "energy":
+				return game.i18n.localize("FALLOUT.RESISTANCE.energy");
+			case "physical":
+				return game.i18n.localize("FALLOUT.RESISTANCE.physical");
+			case "radiation":
+				return game.i18n.localize("FALLOUT.RESISTANCE.radiation");
+		}
+	});
+
+
 }
