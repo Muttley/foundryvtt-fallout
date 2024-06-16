@@ -6,6 +6,8 @@
 
 	* The following items can be be flagged as being Junk items and if they are will be used as part of the salvage process: Apparel Mod, Apparel, Miscellany, Robot Armor, Robot Module, Weapon Mod, Weapon
 
+- [#454] Populate the compendiumSource field when adding items to actors via ItemSelectors to aid with Babele translations
+
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory
 - [#452] Resistence labels not correctly localized on Apparel Mod item sheet

@@ -151,6 +151,7 @@ export default class ItemSelector extends CompendiumItemSelector {
 		if (uuid !== "") {
 			const item = await fromUuid(uuid);
 			const itemData = item.toObject();
+			itemData._stats.compendiumSource = uuid;
 			this.object.createEmbeddedDocuments("Item", [itemData]);
 		}
 	}
