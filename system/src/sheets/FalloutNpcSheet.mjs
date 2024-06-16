@@ -8,7 +8,16 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	/** @override */
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
-			height: "auto",
+			classes: ["fallout", "sheet", "npc"],
+			width: 750,
+			height: 785,
+			tabs: [
+				{
+					navSelector: ".sheet-tabs",
+					contentSelector: ".sheet-body",
+					initial: this.initialTab,
+				},
+			],
 		});
 	}
 
@@ -89,10 +98,8 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		const roll = new Roll(formula);
 
 		const wealthRoll = await roll.evaluate();
-		try {
-			await game.dice3d.showForRoll(wealthRoll);
-		}
-		catch(err) {}
+
+		await fallout.Roller2D20.showDiceSoNice(wealthRoll);
 
 		const caps = parseInt(roll.total);
 

@@ -467,7 +467,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			]
 		},
 		"apparel_mod": {
@@ -486,7 +487,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"attachable"
+				"attachable",
+				"scrappable"
 			]
 		},
 		"books_and_magz": {
@@ -530,7 +532,8 @@
 			"effect": "",
 			"templates": [
 				"base",
-				"physical"
+				"physical",
+				"scrappable"
 			]
 		},
 		"object_or_structure": {
@@ -583,7 +586,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			]
 		},
 		"robot_mod": {
@@ -592,7 +596,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			]
 		},
 		"skill": {
@@ -634,6 +639,10 @@
 				"rarity": 0,
 				"stashed": false,
 				"weight": 0
+			},
+			"scrappable": {
+				"canBeScrapped": true,
+				"isJunk": false
 			}
 		},
 		"weapon": {
@@ -809,7 +818,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			],
 			"weaponType": ""
 		},
@@ -828,7 +838,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"attachable"
+				"attachable",
+				"scrappable"
 			],
 			"weaponType": ""
 		}

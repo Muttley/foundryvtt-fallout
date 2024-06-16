@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Drużyna Śpi
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Przyspiesz Czas Gry
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Nie masz żadnych śmieci do odzyskania
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Czas gry przyśpieszony o {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Odzyskano {amount} Śmieci
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Rozpocznij odzyskiwanie
 FALLOUT.APP.SalvageJunk.time: Zajmie Ci to {time}
 FALLOUT.APP.SalvageJunk.title: Odzyskaj śmieci
@@ -369,6 +370,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Kości obrażeń od radiacji
 FALLOUT.TEMPLATES.Issue: Problem
+FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: Kg
 FALLOUT.TEMPLATES.lbs: Lb
 FALLOUT.TEMPLATES.Learned: Nauczony
@@ -506,6 +508,8 @@ FALLOUT.UI.CONSUMABLES: Jednorazowe
 FALLOUT.UI.Consume: Użyj
 FALLOUT.UI.Cost: Cena
 FALLOUT.UI.Damage: Obrażenia
+FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Choroby
 FALLOUT.UI.favorite: Ulubiony
 FALLOUT.UI.INVENTORY: Ekwipunek
@@ -574,7 +578,7 @@ FALLOUT.WEAPONS.weaponType.explosives: Materiały wybuchowe
 FALLOUT.WEAPONS.weaponType.meleeWeapons: Broń Biała
 FALLOUT.WEAPONS.weaponType.smallGuns: Broń palna
 FALLOUT.WEAPONS.weaponType.throwing: Rzucana
-FALLOUT.WEAPONS.weaponType.unarmed: Bez Broni
+FALLOUT.WEAPONS.weaponType.unarmed: Bijatyka
 ITEM.AmmoPerShot: Amunicja na strzał
 TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie

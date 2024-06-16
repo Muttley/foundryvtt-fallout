@@ -23,11 +23,18 @@
 	@import "components/effects";
 }
 
+.fallout.sheet.actor {
+	min-width: 760px;
+}
+
+.fallout.sheet.creature {
+	min-width: 690px;
+}
+
 .fallout.sheet.item {
-	min-height: 560px;
 	min-width: 580px;
 }
 
-.fallout.sheet.actor {
-	min-width: 760px
+.fallout.sheet.npc {
+	min-width: 750px;
 }

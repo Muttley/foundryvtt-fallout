@@ -1,3 +1,58 @@
+# v11.12.0
+
+#### Enhancements
+- [#443] When deleting scrappable items, ask the player if they want to turn them into junk
+- [#444] Allow relevant items to be flagged as junk and have the scrapping tool always use them first if available
+
+	* The following items can be be flagged as being Junk items and if they are will be used as part of the salvage process: Apparel Mod, Apparel, Miscellany, Robot Armor, Robot Module, Weapon Mod, Weapon
+
+#### Bugs
+- [#438] Owned Robot Mods do not display in Character sheet inventory
+- [#452] Resistence labels not correctly localized on Apparel Mod item sheet
+- [#453] Not using localized Skill names in Item Selector interface
+
+#### Chores
+- [#440] Merge new Polish translation updates from Crowdin
+- [#450] Merge new Portuguese/Brazilian translation updates from Crowdin
+
+# v11.11.4
+
+#### Bugs
+- [#434] Skills on NPC sheet aren't correctly translated
+- [#436] Unable to alter max AP setting if you reduce it to zero
+
+#### Chores
+- [#433] Merge new German and Portuguese/Brazilian translation updates from Crowdin
+
+---
+
+# v11.11.3
+
+#### Bugs
+- [#428] Rolling weapon attacks broken when using a non-English language setting
+- [#430] Character sheet not fully visible on low-resolution displays due to min-height CSS setting
+
+#### Chores
+- [#429] Merge German translation updates from Crowdin
+
+---
+
+# v11.11.2
+
+#### Bugs
+- [#422] Fusion Cell "quantity found" roll shortcut incorrect in Ammo Item description
+- [#423] Weapon Skills not being translated correctly in the config file
+- [#424] Encumbrance floating bar can make other character sheet items inaccessible
+
+#### Chores
+- [#420] Merge **Portuguese, Brazilian** and **Polish** translation updates from Crowdin
+
+*Many thanks to **Leo Tusi** for providing a massive update to the **Portuguese, Brazilian** translation data.*
+
+*Many thanks to **Bartek** for contributed fixes in this release*
+
+---
+
 # v11.11.1
 
 #### Bugs
@@ -194,7 +249,7 @@
 - [#292] Merge French translation updates from Crowdin
 - [#299] Merge German translation updates from Crowdin
 
-*Many thanks to VTTom for their work on the German translations which now have 100% coverage at time of writing.*
+*Many thanks to **VTTom** for their work on the German translations which now have 100% coverage at time of writing.*
 
 ---
 
@@ -547,15 +602,15 @@ This can be used to help bootstrap your own custom data for Fallout.
 
 # v11.2.2
 
-# Bugfixes
+#### Bugfixes
 - [#14] NPC / Creature inventory items messed up
 
-# Enhancements
+#### Enhancements
 - [#15] Tidy up hunger/thirst/sleep selector layout
 
 ---
 
-# v11.2.1
+#### v11.2.1
 
 # Bugfixes
 - [#9] AP Tracker not launching

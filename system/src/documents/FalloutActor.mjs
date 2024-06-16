@@ -87,6 +87,11 @@ export default class FalloutActor extends Actor {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
 
+	incrementJunk() {
+		const newJunk = this.system.materials.junk + 1;
+		this.update({"system.materials.junk": newJunk});
+	}
+
 	isFieldOverridden(fieldName) {
 		const overridden = Object.keys(
 			foundry.utils.flattenObject(this.overrides)
@@ -136,8 +141,7 @@ export default class FalloutActor extends Actor {
 		this._prepareRobotData();
 		this._prepareSettlementData();
 
-		// ADD UNOFFICIAL SPEED
-		try {
+		if (["character", "npc", "robot"].includes(this.type)) {
 			const athletics = this.items.find(
 				i => i.name.toLowerCase() === "athletics" && i.type === "skill"
 			);
@@ -146,10 +150,12 @@ export default class FalloutActor extends Actor {
 				? athletics.system.value
 				: 0;
 
-			this.system.unofficalSpeed = this.system.attributes.agi.value + athleticsValue;
+			this.system.unofficalSpeed =
+				this.system.attributes.agi.value + athleticsValue;
 		}
-		catch(er) {
-
+		else if (this.type === "creature") {
+			this.system.unofficalSpeed =
+				this.system.body.value + this.system.body.mod;
 		}
 	}
 
@@ -724,12 +730,15 @@ export default class FalloutActor extends Actor {
 			actorLink: false,
 			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
 			name: data.name, // Set token name to actor name
+			sight: {
+				enabled: true,
+			},
 			texture: foundry.utils.duplicate(this.prototypeToken.texture),
 		};
 
 		if (["character", "robot", "settlement"].includes(data.type)) {
-			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
 			prototypeToken.actorLink = true;
+			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
 		}
 
 		const update = {prototypeToken};
@@ -1203,10 +1212,8 @@ export default class FalloutActor extends Actor {
 					let roll = new Roll(formula);
 
 					let alcoholicRoll = await roll.evaluate();
-					try {
-						game.dice3d.showForRoll(alcoholicRoll);
-					}
-					catch(err) {}
+
+					fallout.Roller2D20.showDiceSoNice(alcoholicRoll);
 
 					if (parseInt(roll.result) >= 2) {
 						actorUpdateData["system.conditions.alcoholic"] = true;
@@ -1238,10 +1245,8 @@ export default class FalloutActor extends Actor {
 					let roll = new Roll(formula);
 
 					let radiationDamageRoll = await roll.evaluate();
-					try {
-						game.dice3d.showForRoll(radiationDamageRoll);
-					}
-					catch(err) {}
+
+					fallout.Roller2D20.showDiceSoNice(radiationDamageRoll);
 
 					const baseRadDamage = parseInt(roll.result);
 					if (baseRadDamage > 0) {
@@ -1307,10 +1312,8 @@ export default class FalloutActor extends Actor {
 					let roll = new Roll(formula);
 
 					let addictedRoll = await roll.evaluate();
-					try {
-						game.dice3d.showForRoll(addictedRoll);
-					}
-					catch(err) {}
+
+					fallout.Roller2D20.showDiceSoNice(addictedRoll);
 
 					if (parseInt(roll.result) >= item.system.addiction) {
 
@@ -1498,10 +1501,8 @@ export default class FalloutActor extends Actor {
 		let roll = new Roll(formula);
 
 		let availabilityRoll = await roll.evaluate();
-		try {
-			game.dice3d.showForRoll(availabilityRoll);
-		}
-		catch(err) {}
+
+		fallout.Roller2D20.showDiceSoNice(availabilityRoll);
 
 		const rarity = parseInt(roll.result);
 

@@ -28,7 +28,11 @@
                 <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </label>
                 {{#each system.resistance as |item key|}}
                 <div class="flex align-mid">
-                    <label><span class="fo-{{key}}"></span> {{key}} &nbsp;</label>
+                    <label>
+						<span class="fo-{{key}}"></span>
+						{{localize (concat "FALLOUT.RESISTANCE." key)}}
+						&nbsp;
+					</label>
                     <input type="number" class="num-short-2" name="system.resistance.{{key}}" value="{{item}}">
                 </div>
                 {{/each}}
@@ -47,6 +51,19 @@
             <div class="flexrow resource-row">
                 <label class="resource-label">{{localize "FALLOUT.UI.Perks"}}</label>
                 <input type="text" name="system.perks" value="{{system.perks}}">
+            </div>
+
+            <div class="flexrow resource-row">
+				<label class="resource-label">
+					{{localize "FALLOUT.actor.inventory.materials.junk"}}
+				</label>
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.isJunk"
+					type="checkbox"
+					{{checked system.isJunk}}
+				/>
             </div>
 
             <div class="resource-row">

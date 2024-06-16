@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Sommeil du groupe
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Temps de jeu avancé
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Vous n'avez pas de Bric-à-brac à récupérer
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Temps de jeu avancé de {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Récupération de {amount} Bric-à-brac
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Commencer la récupération
 FALLOUT.APP.SalvageJunk.time: Cela prendra {time}
 FALLOUT.APP.SalvageJunk.title: Récupération du Bric-à-brac
@@ -369,6 +370,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Dés de dégâts de radiation
 FALLOUT.TEMPLATES.Issue: Numéro
+FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Appris(e)
@@ -506,6 +508,8 @@ FALLOUT.UI.CONSUMABLES: Consommables
 FALLOUT.UI.Consume: Consommer
 FALLOUT.UI.Cost: Coût
 FALLOUT.UI.Damage: Dégâts
+FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Maladies
 FALLOUT.UI.favorite: Favori
 FALLOUT.UI.INVENTORY: Inventaire

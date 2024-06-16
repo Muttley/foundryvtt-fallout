@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Party Sleep
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Advance Game Time
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} Junk
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Start Salvaging
 FALLOUT.APP.SalvageJunk.time: This will take {time}
 FALLOUT.APP.SalvageJunk.title: Salvage Junk
@@ -369,6 +370,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Injury (Left Click)
 FALLOUT.TEMPLATES.Irradiated: Irradiated
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
 FALLOUT.TEMPLATES.Issue: Issue
+FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Learned
@@ -508,6 +510,8 @@ FALLOUT.UI.Cost: Cost
 FALLOUT.UI.Damage: Damage
 FALLOUT.UI.DICE: dice
 FALLOUT.UI.DICE_WITOUT_LUCK: dice without spending luck
+FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.INVENTORY: Inventory

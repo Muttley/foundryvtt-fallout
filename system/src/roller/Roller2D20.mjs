@@ -21,7 +21,6 @@ export class Roller2D20 {
 		skill = 0,
 		tag = false,
 	}={}) {
-		// let dicesRolled = [];
 		let successTreshold = parseInt(attribute) + parseInt(skill);
 		let critTreshold = tag ? parseInt(skill) : 1;
 		let complicationTreshold = parseInt(complication);
@@ -31,10 +30,6 @@ export class Roller2D20 {
 		await roll.evaluate();
 
 		this.showDiceSoNice(roll);
-		// try {
-		// 	game.dice3d.showForRoll(roll, game.user, true);
-		// }
-		// catch(err) {}
 
 		let hitLocation = undefined;
 		let hitLocationResult = undefined;
@@ -43,10 +38,6 @@ export class Roller2D20 {
 			let hitLocationRoll = await new Roll("1dh").evaluate();
 			// try initiating Dice So Nice Roll
 			this.showDiceSoNice(hitLocationRoll);
-			// try {
-			// 	game.dice3d.showForRoll(hitLocationRoll, game.user, true);
-			// }
-			// catch(err) {}
 
 			hitLocation = hitLocationRoll.terms[0].getResultLabel(
 				hitLocationRoll.terms[0].results[0]
@@ -180,10 +171,6 @@ export class Roller2D20 {
 		await _roll.evaluate();
 
 		this.showDiceSoNice(_roll);
-		// try {
-		// 	game.dice3d.showForRoll(_roll, game.user, true);
-		// }
-		// catch(err) {}
 
 		await Roller2D20.parseD20Roll({
 			rollname: `${rollname} re-roll`,
@@ -253,13 +240,6 @@ export class Roller2D20 {
 
 		ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
 
-		// if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-		// 	chatData.whisper = ChatMessage.getWhisperRecipients("GM");
-		// }
-		// else if (chatData.rollMode === "selfroll") {
-		// 	chatData.whisper = [game.user];
-		// }
-
 		await ChatMessage.create(chatData);
 	}
 
@@ -292,10 +272,6 @@ export class Roller2D20 {
 
 
 		this.showDiceSoNice(roll);
-		// try {
-		// 	game.dice3d.showForRoll(roll, game.user, true);
-		// }
-		// catch(err) {}
 
 
 		return Roller2D20.parseD6Roll({
@@ -395,10 +371,6 @@ export class Roller2D20 {
 		await _roll.evaluate();
 
 		this.showDiceSoNice(_roll);
-		// try {
-		// 	game.dice3d.showForRoll(_roll, game.user, true);
-		// }
-		// catch(err) {}
 
 		return Roller2D20.parseD6Roll({
 			actor: actordata,
@@ -418,10 +390,6 @@ export class Roller2D20 {
 		await _roll.evaluate();
 
 		this.showDiceSoNice(_roll);
-		// try {
-		// 	game.dice3d.showForRoll(roll, game.user, true);
-		// }
-		// catch(err) {}
 
 		let newRollName = `${falloutRoll.rollname} [+ ${dicenum} DC]`;
 		let oldDiceRolled = falloutRoll.dicesRolled;
@@ -519,15 +487,6 @@ export class Roller2D20 {
 			whisper,
 		};
 
-
-		// ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
-
-		// if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-		// 	chatData.whisper = ChatMessage.getWhisperRecipients("GM");
-		// }
-		// else if (chatData.rollMode === "selfroll") {
-		// 	chatData.whisper = [game.user];
-		// }
 		await ChatMessage.create(chatData);
 	}
 
