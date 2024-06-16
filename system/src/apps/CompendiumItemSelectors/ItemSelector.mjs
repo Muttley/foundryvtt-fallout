@@ -69,6 +69,9 @@ export default class ItemSelector extends CompendiumItemSelector {
 
 				return `${item.name} (${consumableType})`;
 			}
+			case "skill": {
+				return fallout.utils.getLocalizedSkillName(item);
+			}
 			case "weapon": {
 				const weaponType = CONFIG.FALLOUT.WEAPON_TYPES[item.system.weaponType];
 				return `${item.name} (${weaponType})`;
