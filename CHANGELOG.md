@@ -8,6 +8,7 @@
 
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory
+- [#452] Resistence labels not correctly localized on Apparel Mod item sheet
 
 #### Chores
 - [#440] Merge new Polish translation updates from Crowdin
