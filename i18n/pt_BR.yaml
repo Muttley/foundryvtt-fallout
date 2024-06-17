@@ -310,7 +310,9 @@ FALLOUT.TEMPLATES.AllLocations: Todas as Áreas
 FALLOUT.TEMPLATES.AMMO: MUNIÇÃO
 FALLOUT.TEMPLATES.Ammo.Current: Tiros Restantes
 FALLOUT.TEMPLATES.Ammo.Max: Tiros por Item
+FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Rolar Quantidade
+FALLOUT.TEMPLATES.Ammo.Shots: Shots
 FALLOUT.TEMPLATES.AmmoName: Nome da Munição
 FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
 FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
