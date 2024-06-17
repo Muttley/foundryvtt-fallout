@@ -163,6 +163,11 @@ FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Impossible de déterminer l'att
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Impossible de déterminer la compétence à utiliser pour cette arme.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Cette arme n'a pas d'attribut ou de compétence de créature spécifiée.
 FALLOUT.FOOD: Nourriture
+FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
+FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
+FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
+FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
+FALLOUT.Form.ScavengingSettings.title: Scavenging Settings
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Vous ne pouvez sélectionner qu'un maximum de {maxChoices} de ce type d'objet.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Impossible de trouver des objets du bon type dans les compendiums disponibles.
 FALLOUT.Form.SelectCompendiumItem.prompt: Sélectionner un objet...
@@ -187,6 +192,17 @@ FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
+FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
+FALLOUT.LOCATION_CATEGORY.commercial: Commercial
+FALLOUT.LOCATION_CATEGORY.custom: Custom
+FALLOUT.LOCATION_CATEGORY.industry: Industry
+FALLOUT.LOCATION_CATEGORY.medical: Medical
+FALLOUT.LOCATION_CATEGORY.military: Military
+FALLOUT.LOCATION_CATEGORY.residential: Residential
+FALLOUT.LOCATION_SCALE.average: Average
+FALLOUT.LOCATION_SCALE.large: Large
+FALLOUT.LOCATION_SCALE.small: Small
+FALLOUT.LOCATION_SCALE.tiny: Tiny
 FALLOUT.MACRO.Error.CaughtError: "La macro '{macro}' a échoué avec l'erreur suivante : {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: La macro '{macro}' nécessite que vous ayez le rôle d'utilisateur 'Maître de jeu'
 FALLOUT.MACRO.NewSession.name: Nouvelle session
@@ -215,6 +231,19 @@ FALLOUT.RESISTANCE.Immunity.radiation: Immunisé aux dégâts de radiation
 FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
+FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Ammunition
+FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armor
+FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Beverages
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chems
+FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Clothing
+FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
+FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
+FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
+FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
+FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
+FALLOUT.SEARCHED_DEGREE.untouched: Untouched (D0)
 FALLOUT.SETTINGS.sourceFilters.hint: Si elles sont renseignées, seules les sources provenant des livres seront incluses dans cette liste et pourront être sélectionnées aux endroits pertinents. Les éléments sans source provenant des livres définis seront toujours disponibles.
 FALLOUT.SETTINGS.sourceFilters.title: Filtres de Livres Source
 FALLOUT.SETTLEMENT_ACTION.Build: Construction
@@ -266,6 +295,7 @@ FALLOUT.SOURCE_TITLE.core_rulebook: Livre de base
 FALLOUT.SOURCE_TITLE.enclave_remnants: "Pack PNJ #2 : Vestiges de l'Enclave"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Kit du meneur de jeu"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Pack de Carte #1 : Abri"
+FALLOUT.SOURCE_TITLE.quickstart: Quickstart
 FALLOUT.SOURCE_TITLE.rust_devils: "Pack PNJ #1 : Les Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
@@ -280,12 +310,14 @@ FALLOUT.TEMPLATES.AllLocations: Toutes les localisations
 FALLOUT.TEMPLATES.AMMO: MUN
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
+FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Lancer de quantité
+FALLOUT.TEMPLATES.Ammo.Shots: Shots
 FALLOUT.TEMPLATES.AmmoName: Nom des munitions
+FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
 FALLOUT.TEMPLATES.Apparel_Type: Type d'Habillement
 FALLOUT.TEMPLATES.Apparel: Habillement
 FALLOUT.TEMPLATES.APPAREL: HABILLEMENT
-FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, .etc
 FALLOUT.TEMPLATES.Armor_Type: Type d'Armure
 FALLOUT.TEMPLATES.Attack: Attaque
 FALLOUT.TEMPLATES.ATTACKS: ATTAQUES
@@ -294,6 +326,7 @@ FALLOUT.TEMPLATES.Attributes: Attributs
 FALLOUT.TEMPLATES.Base_Damage: Dégâts de base
 FALLOUT.TEMPLATES.Butchery: Dépeçage
 FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
+FALLOUT.TEMPLATES.Category: Category
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
@@ -345,10 +378,12 @@ FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
 FALLOUT.TEMPLATES.Data: Donnée
 FALLOUT.TEMPLATES.Default_Attribute: Attribut par défaut
 FALLOUT.TEMPLATES.DEFENSE: DEFENSE
+FALLOUT.TEMPLATES.Degree: Degree
 FALLOUT.TEMPLATES.Delete_Item: Effacer Objet
 FALLOUT.TEMPLATES.Delete: Effacer
 FALLOUT.TEMPLATES.DERIVED: DERIVÉE
 FALLOUT.TEMPLATES.Description: Description
+FALLOUT.TEMPLATES.Details: Details
 FALLOUT.TEMPLATES.Duration: Durée
 FALLOUT.TEMPLATES.Edit_Item: Editer Objet
 FALLOUT.TEMPLATES.Effect: Effet
@@ -358,6 +393,7 @@ FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMES FAVORITES
 FALLOUT.TEMPLATES.Fire_Rate: Cadence de Tir
 FALLOUT.TEMPLATES.FIRE_RATE: Cadence de Tir
+FALLOUT.TEMPLATES.FoundItems: Found Items
 FALLOUT.TEMPLATES.Gear: Équipement
 FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
 FALLOUT.TEMPLATES.Healthy: Bonne Santé
@@ -371,6 +407,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Dés de dégâts de radiation
 FALLOUT.TEMPLATES.Issue: Numéro
+FALLOUT.TEMPLATES.Items: Items
 FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -388,6 +425,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Dégâts de Mêlée
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
+FALLOUT.TEMPLATES.Notes: Notes
 FALLOUT.TEMPLATES.Origin: Origine
 FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
 FALLOUT.TEMPLATES.ParentItem: Élément parent
@@ -416,6 +454,7 @@ FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Salvage: Récupération
 FALLOUT.TEMPLATES.SalvageTooltip: Contrôle SR Récupération
+FALLOUT.TEMPLATES.Scale: Scale
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
@@ -585,6 +624,7 @@ TYPES.Actor.character: Personnage
 TYPES.Actor.creature: Créature
 TYPES.Actor.npc: PNJ
 TYPES.Actor.robot: Robot
+TYPES.Actor.scavenging_location: Scavenging Location
 TYPES.Actor.settlement: Colonie
 TYPES.Item.addiction: Dépendance
 TYPES.Item.ammo: Mun
