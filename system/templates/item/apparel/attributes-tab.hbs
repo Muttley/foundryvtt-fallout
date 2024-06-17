@@ -6,7 +6,6 @@
 		</label>
 		<select name="system.apparelType">
 			{{#select system.apparelType}}
-				<option value="">&mdash;</option>
 				{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
 					<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
 				{{/each}}

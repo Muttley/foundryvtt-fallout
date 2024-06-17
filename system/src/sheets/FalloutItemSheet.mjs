@@ -370,42 +370,6 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		const mode = await Dialog.wait(dialogData);
 
-		if (mode) {
-			const formula = this.item.system.quantityRoll;
-
-			const roll = new Roll(formula);
-			const quantityRoll = await roll.evaluate();
-
-			await fallout.Roller2D20.showDiceSoNice(quantityRoll);
-
-			const quantity = parseInt(roll.total);
-
-			switch (mode) {
-				case "update":
-					return this.item.update({"system.quantity": quantity});
-				case "create":
-					const data = this.item.toObject();
-					data.system.quantity = quantity;
-					if (this.item.actor) {
-						return this.item.actor.createEmbeddedDocuments("Item", [data]);
-					}
-					else {
-						return Item.create(data);
-					}
-				case "chat":
-					return fallout.chat.renderGeneralMessage(
-						this,
-						{
-							title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
-							body: game.i18n.format("FALLOUT.dialog.roll_ammo.chat.body",
-								{
-									ammoName: this.item.name,
-									quantity,
-								}
-							),
-						}
-					);
-			}
-		}
+		if (mode) await this.item.rollAmmoQuantity(mode);
 	}
 }
