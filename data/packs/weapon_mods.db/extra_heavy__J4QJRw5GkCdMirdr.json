@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 22,
 		"description": "",
 		"effect": "<p>+3 @fos[DC]</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

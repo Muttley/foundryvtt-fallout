@@ -8,6 +8,7 @@
 	"name": "Hides",
 	"system": {
 		"apparelType": "outfit",
+		"canBeScrapped": true,
 		"cost": 13,
 		"description": "<p><span class=\"fontstyle0\">Typically made from the rough hides of a brahmin, radstag, or other large animal, these simple clothes provide a little protection and comfort, but they&rsquo;re no substitute for properly made clothing or armor.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

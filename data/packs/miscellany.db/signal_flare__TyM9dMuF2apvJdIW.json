@@ -7,10 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/miscellany.svg",
 	"name": "Signal Flare",
 	"system": {
+		"canBeScrapped": true,
 		"cost": 10,
 		"description": "<p>A small pyrotechnic device which burns brightly, generating a bright light for a short while. They&rsquo;re also extremely hot and can be used to ignite flammable substances and materials if placed close enough.</p>\n<p>These are larger and bulkier than the flares fired from a flare gun.</p>",
 		"effect": "<p>Generates bright light within close range until the end of the current scene, One use only</p>",
 		"favorite": false,
+		"isJunk": false,
 		"quantity": 1,
 		"rarity": 1,
 		"source": "core_rulebook",

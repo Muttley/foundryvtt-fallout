@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 500,
 		"description": "<p>Installed with the <b>Repair</b> skill</p>",
 		"effect": "<p>When you move you may activate a jetpack by spending 1 charge; this allows you to move one additional zone (horizontally or vertically) or gain enough height for an impact landing</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Torso",
 		"perks": "Armorer 4, Science! 4",
 		"quantity": 1,

@@ -10,6 +10,7 @@
 		"ammo": "Nuke Mine",
 		"ammoPerShot": 1,
 		"attribute": "",
+		"canBeScrapped": true,
 		"condition": "",
 		"cost": 100,
 		"creatureAttribute": "body",
@@ -172,6 +173,7 @@
 		"equipped": false,
 		"favorite": false,
 		"fireRate": 0,
+		"isJunk": false,
 		"melee": false,
 		"mods": {
 			"current": 0,

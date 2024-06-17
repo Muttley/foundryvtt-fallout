@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 143,
 		"description": "",
 		"effect": "<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

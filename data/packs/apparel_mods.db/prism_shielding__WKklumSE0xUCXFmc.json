@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 10,
 		"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
 		"effect": "<p>+2 damage resistances vs Blast weapons</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Any",
 		"perks": "Science! 1",
 		"quantity": 1,

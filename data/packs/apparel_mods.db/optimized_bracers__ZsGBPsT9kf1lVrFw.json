@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 100,
 		"description": "<p>Installed with the <b>Repair</b> skill</p>",
 		"effect": "<p>While armor is powered, you may spend up to 4 AP on bonus damage for melee attacks </p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Arm",
 		"perks": "Blacksmith 1",
 		"quantity": 1,

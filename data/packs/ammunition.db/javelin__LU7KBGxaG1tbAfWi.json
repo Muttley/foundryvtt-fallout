@@ -11,6 +11,7 @@
 		"description": "<p>A short spear, not typically sturdy enough for close-in fighting, a javelin can be thrown a considerable distance.</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "1",
 		"rarity": 1,

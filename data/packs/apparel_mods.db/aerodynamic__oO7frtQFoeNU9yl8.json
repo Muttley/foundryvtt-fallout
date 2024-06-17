@@ -10,6 +10,7 @@
 		"apparelType": "armor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 1,
 		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
 		"effect": "<p>May spend up to 4 AP on bonus damage for melee attacks</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Arms",
 		"perks": "Armorer 3",
 		"quantity": 1,

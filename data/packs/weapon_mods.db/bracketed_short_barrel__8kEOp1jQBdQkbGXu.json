@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 6,
 		"description": "",
 		"effect": "<p>Allows the weapon to take a Muzzle mod</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

@@ -8,6 +8,7 @@
 	"name": "Casual Clothing",
 	"system": {
 		"apparelType": "clothing",
+		"canBeScrapped": true,
 		"cost": 20,
 		"description": "<p><span class=\"fontstyle0\">Simple, lightweight, and easy to move around in, pre-War casual clothing was intended for leisure and light activity.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Wearing casual clothing allows you to re-roll a single d20 on one </span><span class=\"fontstyle2\">STR </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\">AGI </span><span class=\"fontstyle0\">based skill test you make each scene, as the clothing is easy to move in.</span></p>\n<p><span class=\"fontstyle0\">Casual clothing can be reinforced with Ballistic Weave (see sidebar, p. 126)</span></p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

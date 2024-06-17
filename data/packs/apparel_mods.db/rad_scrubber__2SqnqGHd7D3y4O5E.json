@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 100,
 		"description": "<p>Installed with the <b>Science</b> skill</p>",
 		"effect": "<p>Ignore radiation from Irradiated food or drink consumed while armor is powered</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Head",
 		"perks": "Science! 2",
 		"quantity": 1,

@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 22,
 		"description": "",
 		"effect": "<p>Gain Piercing 1</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

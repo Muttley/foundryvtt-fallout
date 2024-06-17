@@ -8,6 +8,7 @@
 	"name": "Hard Hat",
 	"system": {
 		"apparelType": "headgear",
+		"canBeScrapped": true,
 		"cost": 15,
 		"description": "<p><span class=\"fontstyle0\">A light metal or plastic hat intended to protect the head from bumps and collisions in a busy industrial workplace or construction site. Not really intended to protect from combat, but if you&rsquo;re lacking a helmet, a hard had is better than nothing.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

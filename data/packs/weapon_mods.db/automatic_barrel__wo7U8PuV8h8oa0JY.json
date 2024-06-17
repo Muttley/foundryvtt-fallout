@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 24,
 		"description": "",
 		"effect": "<p>-1 @fos[DC]</p>\n<p>Remove Close Quarters</p>\n<p>Increase Range by 1 step</p>\n<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

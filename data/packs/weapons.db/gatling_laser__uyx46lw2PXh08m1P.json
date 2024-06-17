@@ -10,6 +10,7 @@
 		"ammo": "Fusion Core",
 		"ammoPerShot": 1,
 		"attribute": "",
+		"canBeScrapped": true,
 		"condition": "",
 		"cost": 804,
 		"creatureAttribute": "body",
@@ -172,6 +173,7 @@
 		"equipped": false,
 		"favorite": false,
 		"fireRate": 6,
+		"isJunk": false,
 		"melee": false,
 		"mods": {
 			"current": 0,

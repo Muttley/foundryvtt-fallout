@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 50,
 		"description": "<p>Installed with the <b>Repair</b> skill</p>",
 		"effect": "<p>Your unarmed attacks gain the Persistent damage effect</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Arm",
 		"perks": "Blacksmith 1",
 		"quantity": 1,

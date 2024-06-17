@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">Plasma weapons draw power and fuel from a plasma cartridge, a combination of fusion cell to power the weapon, and a capsule containing a stable version of the chemical which becomes the plasma which the weapon fires.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10_5dc # Plasma Cartridge]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "10+5dc",
 		"rarity": 4,

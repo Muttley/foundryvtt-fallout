@@ -8,6 +8,7 @@
 	"name": "Vault-Tec Security Armor",
 	"system": {
 		"apparelType": "armor",
+		"canBeScrapped": true,
 		"cost": 16,
 		"description": "<p><span class=\"fontstyle0\">Consisting of a long bulletproof apron and shoulder pads, plus an accompanying shock-resistant helmet, this armor was issued in small quantities to every vault for those vault-dwellers chosen to act as security personnel. It provides modest protection and isn&rsquo;t especially bulky, but it is unlikely to stand up to heavy combat, simply because vaults were expected to be controlled environments, lacking in the heavy armaments found outside.</span> </p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

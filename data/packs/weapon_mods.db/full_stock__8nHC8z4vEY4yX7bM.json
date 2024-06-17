@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 10,
 		"description": "",
 		"effect": "<p>Gain Two-Handed</p>\n<p>Gain Piercing 1</p>\n<p>Remove Close Quarters</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

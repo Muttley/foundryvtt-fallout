@@ -8,6 +8,7 @@
 	"name": "Road Leathers",
 	"system": {
 		"apparelType": "clothing",
+		"canBeScrapped": true,
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A leather jacket, leather pants, and a set of motorcycle boots. Often decorated with metallic studs, these soft leather items provide modest protection against physical hazards such as an involuntary dismount from a motorbike, while still being reasonably comfortable in any temperate or cold climate.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

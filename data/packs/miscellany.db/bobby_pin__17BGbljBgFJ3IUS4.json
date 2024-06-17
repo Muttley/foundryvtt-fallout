@@ -7,10 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/miscellany.svg",
 	"name": "Bobby Pin",
 	"system": {
+		"canBeScrapped": true,
 		"cost": 1,
 		"description": "<p>A flexible double-pronged hairpin, made of metal or plastic, they were used before the Great War to hold hair in place. They&rsquo;re also useful for picking locks if you know how.</p>",
 		"effect": "<p>Reduces difficulty of Lockpick tests by 1 (minimum 1), One bobby pin breaks per complication rolled</p>",
 		"favorite": false,
+		"isJunk": false,
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",

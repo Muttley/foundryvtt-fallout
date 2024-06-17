@@ -8,6 +8,7 @@
 	"name": "Harness",
 	"system": {
 		"apparelType": "clothing",
+		"canBeScrapped": true,
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A worker&rsquo;s safety harness repurposed to serve as a mount for pieces of armor. Common amongst raiders, who tend to wear the harness without a shirt underneath.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

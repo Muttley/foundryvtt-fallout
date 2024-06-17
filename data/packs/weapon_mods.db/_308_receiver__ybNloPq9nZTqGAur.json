@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 40,
 		"description": "",
 		"effect": "<p>Change damage to 7 @fos[DC]</p>\n<p>Ammo changes to @UUID[Item.i4CuRrtBhO2mWeDz]{.308 Round}</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

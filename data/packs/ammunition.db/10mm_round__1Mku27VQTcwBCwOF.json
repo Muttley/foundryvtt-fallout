@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">One of the most common types of pistol round found in the wastelands, manufactured in vast quantities before the Great War to accompany the large numbers of 10mm pistols they were producing as sidearms for soldiers, and as personal defense weapons for civilians.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 8+4dc # 10mm Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "8+4dc",
 		"rarity": 0,

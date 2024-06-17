@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">Similar in design and construction to a frag grenade, a fragmentation mine is instead placed on the ground and uses a pressure plate or proximity sensor to trigger detonation when someone gets too close.</span></p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "1",
 		"rarity": 2,

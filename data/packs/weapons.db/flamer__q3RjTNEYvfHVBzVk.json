@@ -10,6 +10,7 @@
 		"ammo": "Flamer Fuel",
 		"ammoPerShot": 1,
 		"attribute": "",
+		"canBeScrapped": true,
 		"condition": "",
 		"cost": 137,
 		"creatureAttribute": "body",
@@ -172,6 +173,7 @@
 		"equipped": false,
 		"favorite": false,
 		"fireRate": 4,
+		"isJunk": false,
 		"melee": false,
 		"mods": {
 			"current": 0,

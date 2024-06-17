@@ -8,6 +8,7 @@
 	"name": "Hazmat Suit",
 	"system": {
 		"apparelType": "outfit",
+		"canBeScrapped": true,
 		"cost": 0,
 		"description": "<p><span class=\"fontstyle0\">A completely enclosed suit for handling hazardous materials. The materials a hazmat suit is made from don&rsquo;t stand up well to violence; but wearing one of these renders you basically immune to radiation.</span> </p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

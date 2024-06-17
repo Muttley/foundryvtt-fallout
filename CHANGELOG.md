@@ -9,6 +9,7 @@
 - [#454] Populate the compendiumSource field when adding items to actors via ItemSelectors to aid with Babele translations
 - [#459] Add ability to flag Ammo items as being multishot
 - [#460] Ammo quantity roller should update shot count for multishot ammo now they're identifiable
+- [#461] Flag existing ammo items in compendiums as multishot where necessary
 
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory

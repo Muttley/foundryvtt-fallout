@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 31,
 		"description": "",
 		"effect": "<p>-1 @fos[DC]</p>\n<p>Gain Spread</p>\n<p>Gain Inaccurate</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

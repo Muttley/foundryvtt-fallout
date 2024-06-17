@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">The 2mm Electromagnetic Cartridge is a self-contained magazine containing high-velocity ferromagnetic projectiles and the battery pack necessary to power the gauss weapon they are fired from.</span></p>\n<p><span class=\"fontstyle0\">This ammunition is not found loose, but in magazines containing the number of shots generated (and sufficient battery charge to power the weapon for those shots).</span></p>\n<p><strong>Quantity Found:</strong> [[/r 6+3dc # 2mm Electromagnetic Cartridge]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": true,
 		"quantity": 1,
 		"quantityRoll": "6+3dc",
 		"rarity": 5,

@@ -10,6 +10,7 @@
 		"apparelType": "clothing",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 50,
 		"description": "",
 		"effect": "",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "",
 		"perks": "Armorer 4; Science! 4",
 		"quantity": 1,

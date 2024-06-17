@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">A decent round which combines reasonable stopping power with manageable recoil and decent accuracy. It&rsquo;s used by a few different weapons found commonly in the wastelands and isn&rsquo;t too scarce.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 8+4dc # .45 Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "8+4dc",
 		"rarity": 2,

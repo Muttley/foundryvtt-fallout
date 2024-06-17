@@ -8,12 +8,14 @@
 	"name": "Toxic Plate (Optics)",
 	"system": {
 		"apparelType": "plating",
+		"canBeScrapped": true,
 		"carry": -10,
 		"cost": 15,
 		"description": "<p>Makeshift armor made with irradiated metal plating, dangerous to living creatures nearby.</p>\n<p><strong>Special:</strong> When a melee attack is made against a location fitted with toxic plate, and the attacker suffers a complication, then the attacker suffers 2 @fos[DC] Radiation damage. In addition, melee attacks made using arms fitted with serrated plate gain the Radioactive damage effect.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

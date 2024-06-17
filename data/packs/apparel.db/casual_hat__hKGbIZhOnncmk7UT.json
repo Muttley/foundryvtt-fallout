@@ -8,6 +8,7 @@
 	"name": "Casual Hat",
 	"system": {
 		"apparelType": "headgear",
+		"canBeScrapped": true,
 		"cost": 15,
 		"description": "<p><span class=\"fontstyle0\">A simple, lightweight hat, normally with a peak or brim to keep the sunlight out of the wearer&rsquo;s eyes.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">A character wearing a casual hat ignores any difficulty increases caused by extremely bright light.</span> <br><br></p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

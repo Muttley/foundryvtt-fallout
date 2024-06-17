@@ -8,6 +8,7 @@
 	"name": "Engineer's Armor",
 	"system": {
 		"apparelType": "outfit",
+		"canBeScrapped": true,
 		"cost": 15,
 		"description": "<p><span class=\"fontstyle0\">Worn by Brotherhood engineers and those who style themselves as similar, this outfit consists of a protective jacket, heavy canvas or leather gauntlets, and a vest and toolbelt covered in pouches. It provides protection against the hazards of using power tools in a workshop but isn&rsquo;t really armor fit for the battlefield.</span> </p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

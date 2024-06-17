@@ -8,6 +8,7 @@
 	"name": "Sack Hood",
 	"system": {
 		"apparelType": "headgear",
+		"canBeScrapped": true,
 		"cost": 5,
 		"description": "<p><span class=\"fontstyle0\">A tough fabric hood made from a burlap or canvas sack. Provides a little protection from dust and fumes and radiation by covering the whole head. Conveniently, it has eyeholes cut out, and some versions add in some form of makeshift breathing apparatus, though the effectiveness of these is dubious at best.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,
