@@ -1,0 +1,22 @@
+<form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
+
+	{{> actor/scavenging_location/partials/header }}
+
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="details">
+			{{localize "FALLOUT.TEMPLATES.Details"}}
+		</a>
+		<a class="item" data-tab="items">
+			{{localize "FALLOUT.TEMPLATES.FoundItems"}}
+		</a>
+		<a class="item" data-tab="notes">
+			{{localize "FALLOUT.TEMPLATES.Notes"}}
+		</a>
+	</nav>
+
+	<section class="sheet-body">
+		{{> actor/scavenging_location/tabs/details }}
+		{{> actor/scavenging_location/tabs/items }}
+		{{> actor/scavenging_location/tabs/notes }}
+	</section>
+</form>

@@ -1,6 +1,11 @@
 # v11.12.0
 
 #### Enhancements
+- [#257] Add support for scavenging locations
+
+	* These are a new Actor class which allows you to place them on a scene and allow the players to interact with them using Item Piles, etc. once the scavenging results have been calculated
+	* Includes new game settings which allow you to both specify the default RollTable to use for each category, and to filter available RollTables by compendium
+
 - [#443] When deleting scrappable items, ask the player if they want to turn them into junk
 - [#444] Allow relevant items to be flagged as junk and have the scrapping tool always use them first if available
 

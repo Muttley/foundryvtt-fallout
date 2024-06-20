@@ -1,0 +1,49 @@
+<tr>
+	<td>
+		<strong>
+			{{label}}
+		</strong>
+	</td>
+	<td style="text-align: center;">
+		<select name="system.item_types.{{category}}.table">
+			<option value="">&mdash;</option>
+			{{selectOptions tables
+				selected=values.table
+				sort=true
+			}}
+		</select>
+	</td>
+	<td style="text-align: center;">
+		<input
+			class="num-short-2"
+			data-dtype="Number"
+			type="number"
+			name="system.item_types.{{category}}.min"
+			value="{{values.min}}"
+		/>
+	</td>
+	<td style="text-align: center;">
+		<input
+			class="num-short-2"
+			data-dtype="Number"
+			type="number"
+			name="system.item_types.{{category}}.max"
+			value="{{values.max}}"
+		/>
+	</td>
+	<td style="text-align: center;">
+		<div>
+			<input
+				class="num-short-2"
+				data-dtype="Number"
+				type="number"
+				min="0"
+				max="{{values.maxSpend}}"
+				name="system.item_types.{{category}}.spend"
+				value="{{values.spend}}"
+			/>
+			<em>(max {{values.maxSpend}})</em>
+		</div>
+	</td>
+</tr>
+

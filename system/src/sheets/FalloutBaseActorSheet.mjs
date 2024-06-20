@@ -87,11 +87,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		await this._prepareMaterials(context);
 
 		// Biography HTML enrichment
-		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
-			secrets: this.actor.isOwner,
-			rollData: context.rollData,
-			async: true,
-		});
+		if (context.system.biography) {
+			context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
+				secrets: this.actor.isOwner,
+				rollData: context.rollData,
+				async: true,
+			});
+		}
 
 		return context;
 	}
@@ -183,9 +185,11 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// Sort skills by their localized name for convenience of non-English
 		// speakers
 		//
-		context.itemsByType.skill.sort(
-			(a, b) => a.localizedName.localeCompare(b.localizedName)
-		);
+		if (context.itemsByType.skill) {
+			context.itemsByType.skill.sort(
+				(a, b) => a.localizedName.localeCompare(b.localizedName)
+			);
+		}
 	}
 
 	_getFilteredApparelSections(context) {}

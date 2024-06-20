@@ -29,6 +29,10 @@ export default function registerSettings() {
 		type: Number,
 	});
 
+	// ====================
+	//  SETTINGS SUB-MENUS
+	// ====================
+
 	// -----------------
 	//  DYNAMIC ARTWORK
 	// -----------------
@@ -42,7 +46,6 @@ export default function registerSettings() {
 		restricted: true,
 	});
 
-
 	game.settings.register(SYSTEM_ID, "moduleArtConfiguration", {
 		name: "Module Art Configuration",
 		scope: "world",
@@ -54,6 +57,34 @@ export default function registerSettings() {
 			},
 		},
 	});
+
+	// ---------------------
+	//  SCAVENGING SETTINGS
+	// ---------------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "scavenging", {
+		name: "Scavenging Settings",
+		hint: "Configuration settings related to the roll tables used for Scavenging Locations",
+		label: "Configure Scavenging Settings",
+		icon: "fa-solid fa-magnifying-glass",
+		type: fallout.apps.ScavengingTableSettings,
+		restricted: true,
+	});
+	fallout.apps.ScavengingTableSettings.registerSetting();
+
+	// ----------------
+	//  SOURCE FILTERS
+	// ----------------
+	//
+	game.settings.registerMenu(SYSTEM_ID, "sources", {
+		name: "Source Filter",
+		hint: "If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums. Items with no Source set will always be included.",
+		label: "Configure Source Filter",
+		icon: "fa-solid fa-book",
+		type: fallout.apps.SourceFilterSettings,
+		restricted: true,
+	});
+	fallout.apps.SourceFilterSettings.registerSetting();
 
 	// -----------------
 	//  PUBLIC SETTINGS
@@ -131,20 +162,6 @@ export default function registerSettings() {
 		type: Boolean,
 		requiresReload: true,
 	});
-
-	// ----------------
-	//  SOURCE FILTERS
-	// ----------------
-	//
-	game.settings.registerMenu(SYSTEM_ID, "sources", {
-		name: "Source Filter",
-		hint: "If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums. Items with no Source set will always be included.",
-		label: "Configure Source Filter",
-		icon: "fa-solid fa-book",
-		type: fallout.apps.SourceFilterSettings,
-		restricted: true,
-	});
-	fallout.apps.SourceFilterSettings.registerSetting();
 
 
 	// -----------------------------------

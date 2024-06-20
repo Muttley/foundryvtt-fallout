@@ -1,0 +1,81 @@
+<div class="tab details" data-group="primary" data-tab="details">
+	<div class="grid grid-2col">
+		{{!-- Left Column --}}
+		<div>
+			<div class="flexrow resource-row bgOdd">
+				<label class="resource-label upperC">
+					{{localize "FALLOUT.TEMPLATES.Category"}}
+				</label>
+				<select name="system.category">
+					<option value="">
+						{{localize "FALLOUT.LOCATION_CATEGORY.custom"}}
+					</option>
+					{{selectOptions FALLOUT.LOCATION_CATEGORY
+						selected=system.category
+					}}
+				</select>
+			</div>
+
+			<div class="flexrow resource-row bgEven">
+				<label class="resource-label upperC">
+					{{localize "FALLOUT.TEMPLATES.Scale"}}
+				</label>
+				<select name="system.scale">
+					{{selectOptions FALLOUT.LOCATION_SCALE
+						selected=system.scale
+					}}
+				</select>
+			</div>
+
+			<div class="flexrow resource-row bgOdd">
+				<label class="resource-label upperC">
+					{{localize "FALLOUT.UI.CapsRoll"}}
+				</label>
+				<input data-dtype="String" name="system.caps_roll" type="text" value="{{system.caps_roll}}">
+			</div>
+
+		</div>
+
+		{{!-- Right Column --}}
+		<div>
+			<div class="flexrow resource-row bgEven">
+				<label class="resource-label upperC">
+					{{localize "FALLOUT.LEVEL.Level"}}
+				</label>
+				<input data-dtype="Number" name="system.level" type="number" value="{{system.level}}">
+			</div>
+
+			<div class="flexrow resource-row bgOdd">
+				<label class="resource-label upperC">
+					{{localize "FALLOUT.TEMPLATES.Degree"}}
+				</label>
+				<select name="system.degree">
+					{{selectOptions FALLOUT.SEARCHED_DEGREE
+						selected=system.degree
+					}}
+				</select>
+			</div>
+
+			<div class="flexrow resource-row bgEven">
+				<label class="resource-label upperC">
+					{{localize "FALLOUT.UI.PreWarMoneyRoll"}}
+				</label>
+				<input data-dtype="String" name="system.prewar_roll" type="text" value="{{system.prewar_roll}}">
+			</div>
+
+		</div>
+	</div>
+
+	{{> actor/scavenging_location/partials/categories }}
+
+	<div class="grid grid-2cols dialog-inputs">
+		<button class="fallout-button" id="scavengeLocationButton">
+			<i class="fa-solid fa-magnifying-glass"></i>
+			{{localize "FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation"}}
+		</button>
+		<button class="fallout-button" id="clearScavengingResults">
+			<i class="fa-solid fa-rotate-left"></i>
+			{{localize "FALLOUT.SCAVENGING_LOCATION.Button.ClearResults"}}
+		</button>
+	</div>
+</div>

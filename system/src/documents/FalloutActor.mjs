@@ -50,7 +50,6 @@ export default class FalloutActor extends Actor {
 		return ["character", "robot"].includes(this.type);
 	}
 
-
 	get isRobot() {
 		return this.type === "robot";
 	}
@@ -726,6 +725,8 @@ export default class FalloutActor extends Actor {
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
+		const update = {};
+
 		const prototypeToken = {
 			actorLink: false,
 			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
@@ -741,7 +742,12 @@ export default class FalloutActor extends Actor {
 			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.FRIENDLY;
 		}
 
-		const update = {prototypeToken};
+		if (data.type === "scavenging_location") {
+			prototypeToken.disposition = CONST.TOKEN_DISPOSITIONS.NEUTRAL;
+		}
+
+		update.prototypeToken = prototypeToken;
+
 		if (!data.img) {
 			const image = CONFIG.FALLOUT.DEFAULT_TOKENS[data.type] ?? undefined;
 
@@ -793,6 +799,22 @@ export default class FalloutActor extends Actor {
 				"system.conditions.lastChanged.thirst": currentWorldTime,
 			});
 		}
+
+		if (this.type === "scavenging_location") {
+			const categoryTableDefaults = game.settings.get(
+				SYSTEM_ID, "scavengingCategoryTables"
+			) ?? {};
+
+			const scavengingLocationUpdate = {};
+
+			for (const category of Object.keys(categoryTableDefaults)) {
+				const key = `system.item_types.${category}.table`;
+				scavengingLocationUpdate[key] =	categoryTableDefaults[category];
+			}
+
+			await this.updateSource(scavengingLocationUpdate);
+		}
+
 	}
 
 	async _toggleImmunity(type) {

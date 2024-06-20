@@ -21,7 +21,9 @@
 {
 
 	a.content-link,
-	a.content-link i {
+	a.content-link i,
+	a.inline-roll,
+	a.inline-roll i {
 		background-color: $f-vault-blue;
 		color: $c-font-prim;
 	}

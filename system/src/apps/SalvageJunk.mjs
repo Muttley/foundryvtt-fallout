@@ -103,6 +103,8 @@ export default class SalvageJunk extends FormApplication {
 		let rollInstance = new Roll(`${diceToRoll}dc`);
 		let salvageRoll = await rollInstance.roll();
 
+		await fallout.Roller2D20.showDiceSoNice(salvageRoll);
+
 		const results = {
 			common: 0,
 			uncommon: 0,
@@ -140,6 +142,8 @@ export default class SalvageJunk extends FormApplication {
 
 		let rollInstance = new Roll(`${numDice}d20cs<=${config.tn}cf>=20`);
 		let salvageRoll = await rollInstance.roll();
+
+		await fallout.Roller2D20.showDiceSoNice(salvageRoll);
 
 		salvageRoll.terms[0].results.forEach(roll => {
 			const critical = roll.result <= config.critSuccess;

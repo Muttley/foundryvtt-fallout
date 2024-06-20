@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<th>Category</th>
+		<th>RollTable</th>
+		<th>Min</th>
+		<th>Max</th>
+		<th>
+			<a class="reset-ap-spend" data-tooltip="Reset AP Spend">
+				<i class="fa-solid fa-rotate-left"></i>
+			</a>
+			AP Spend
+		</th>
+	</tr>
+
+	{{#each FALLOUT.SCAVENGING_ITEM_TYPES as |name key|}}
+		{{> actor/scavenging_location/partials/category
+			category=key
+			label=name
+			tables=../itemTables
+			values=(lookup ../system.item_types key)
+		}}
+	{{/each}}
+
+</table>

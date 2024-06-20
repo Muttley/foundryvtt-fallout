@@ -401,7 +401,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 		context.itemsEnrichedDescriptions = {};
 
-		for await (let item of context.itemsByType.robot_mod) {
+		for (let item of context.itemsByType.robot_mod ?? []) {
 			const descriptionRich = await TextEditor.enrichHTML(
 				item.system.effect, {async: true}
 			);

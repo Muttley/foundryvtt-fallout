@@ -136,6 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resiste
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
 FALLOUT.CHEM: Chem
 FALLOUT.ChemDuration.brief: Brief
 FALLOUT.ChemDuration.instant: Instant
@@ -203,6 +205,10 @@ FALLOUT.LOCATION_SCALE.average: Average
 FALLOUT.LOCATION_SCALE.large: Large
 FALLOUT.LOCATION_SCALE.small: Small
 FALLOUT.LOCATION_SCALE.tiny: Tiny
+FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
+FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
+FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
 FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
 FALLOUT.MACRO.NewSession.name: New Session
@@ -240,6 +246,11 @@ FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
 FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
 FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
@@ -312,7 +323,6 @@ FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
 FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
-FALLOUT.TEMPLATES.Ammo.Shots: Shots
 FALLOUT.TEMPLATES.AmmoName: Ammo Name
 FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
 FALLOUT.TEMPLATES.Apparel_Type: Apparel Type
@@ -539,6 +549,7 @@ FALLOUT.UI.BaseDamage: Base Damage
 FALLOUT.UI.BOOKS_AND_MAGZS: Books and Magazines
 FALLOUT.UI.Cancel: Cancel
 FALLOUT.UI.CAPS: Caps
+FALLOUT.UI.CapsRoll: Caps Roll
 FALLOUT.UI.CarryWeight: Carry Weight
 FALLOUT.UI.ChemDoses.ConfirmReset: Reset All Chem Doses
 FALLOUT.UI.ChemDoses.Delete: Delete Chem Doses
@@ -557,6 +568,7 @@ FALLOUT.UI.MISCELLANY: Miscellany
 FALLOUT.UI.Name: Name
 FALLOUT.UI.OTHER: Other
 FALLOUT.UI.Perks: Perks
+FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
 FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Quantity
 FALLOUT.UI.Rarity: Rarity

@@ -129,6 +129,10 @@
 			]
 		},
 		"scavenging_location": {
+			"templates": [
+				"valuables"
+			],
+			"caps_roll": "",
 			"category": "",
 			"complications": "",
 			"degree": "untouched",
@@ -202,6 +206,7 @@
 			"level": 0,
 			"notes": "",
 			"obstacles": "",
+			"prewar_roll": "",
 			"scale": "tiny"
 		},
 		"settlement": {
