@@ -136,6 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radia
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dano de Radiação
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
 FALLOUT.CHEM: Drogas
 FALLOUT.ChemDuration.brief: Curto
 FALLOUT.ChemDuration.instant: Instantâneo
@@ -203,6 +205,10 @@ FALLOUT.LOCATION_SCALE.average: Average
 FALLOUT.LOCATION_SCALE.large: Large
 FALLOUT.LOCATION_SCALE.small: Small
 FALLOUT.LOCATION_SCALE.tiny: Tiny
+FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
+FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
+FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
 FALLOUT.MACRO.Error.CaughtError: "O macro '{macro}' falhou pois apresenta o seguinte erro: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: O macro '{macro}' necessita que você tenha o cargo de Mestre
 FALLOUT.MACRO.NewSession.name: Nova Sessão
@@ -240,6 +246,11 @@ FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
 FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
 FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
@@ -312,7 +323,6 @@ FALLOUT.TEMPLATES.Ammo.Current: Tiros Restantes
 FALLOUT.TEMPLATES.Ammo.Max: Tiros por Item
 FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Rolar Quantidade
-FALLOUT.TEMPLATES.Ammo.Shots: Shots
 FALLOUT.TEMPLATES.AmmoName: Nome da Munição
 FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
 FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
@@ -539,6 +549,7 @@ FALLOUT.UI.BaseDamage: Dano Base
 FALLOUT.UI.BOOKS_AND_MAGZS: Livros e Revistas
 FALLOUT.UI.Cancel: Cancelar
 FALLOUT.UI.CAPS: Tampinhas
+FALLOUT.UI.CapsRoll: Caps Roll
 FALLOUT.UI.CarryWeight: Peso da Carga
 FALLOUT.UI.ChemDoses.ConfirmReset: Repor Doses Químicas
 FALLOUT.UI.ChemDoses.Delete: Deletar Doses Químicas
@@ -557,6 +568,7 @@ FALLOUT.UI.MISCELLANY: Geral
 FALLOUT.UI.Name: Nome
 FALLOUT.UI.OTHER: Outro
 FALLOUT.UI.Perks: Talentos
+FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
 FALLOUT.UI.Qty: Qnt
 FALLOUT.UI.Quantity: Quantidade
 FALLOUT.UI.Rarity: Raridade
