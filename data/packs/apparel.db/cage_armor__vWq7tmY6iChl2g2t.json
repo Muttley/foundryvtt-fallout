@@ -8,6 +8,7 @@
 	"name": "Cage Armor",
 	"system": {
 		"apparelType": "outfit",
+		"canBeScrapped": true,
 		"cost": 110,
 		"description": "<p><span class=\"fontstyle0\">Heavy leather clothing, reinforced with rags, metal plates, chains, and bars. Like spike armor (p.128), the metalwork creates a rough cage of rebar around the head and torso, providing extra protection. Normally worn with a hood and helmet.</span> </p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 70,
 		"description": "",
 		"effect": "",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": "5"
 		},
+		"isJunk": false,
 		"location": "Torso",
 		"perks": "5",
 		"quantity": 1,

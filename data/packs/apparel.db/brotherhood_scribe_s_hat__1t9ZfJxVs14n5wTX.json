@@ -8,6 +8,7 @@
 	"name": "Brotherhood Scribe's Hat",
 	"system": {
 		"apparelType": "headgear",
+		"canBeScrapped": true,
 		"cost": 8,
 		"description": "<p><span class=\"fontstyle0\">This lightweight leather cap and goggles are provided as an accompaniment to the Brotherhood Scribe&rsquo;s Armor, to protect the head from hazardous conditions.</span> </p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

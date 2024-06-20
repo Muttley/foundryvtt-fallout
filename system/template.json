@@ -5,6 +5,7 @@
 			"creature",
 			"npc",
 			"robot",
+			"scavenging_location",
 			"settlement"
 		],
 		"character": {
@@ -126,6 +127,87 @@
 				"stats",
 				"valuables"
 			]
+		},
+		"scavenging_location": {
+			"templates": [
+				"valuables"
+			],
+			"caps_roll": "",
+			"category": "",
+			"complications": "",
+			"degree": "untouched",
+			"hazards": "",
+			"inhabitants": "",
+			"item_types": {
+				"ammunition": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"armor": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"beverages": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"chems": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"clothing": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"food": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"junk": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"other": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				},
+				"weapons": {
+					"max": 0,
+					"maxSpend": 0,
+					"min": 0,
+					"spend": 0,
+					"table": ""
+				}
+			},
+			"level": 0,
+			"notes": "",
+			"obstacles": "",
+			"prewar_roll": "",
+			"scale": "tiny"
 		},
 		"settlement": {
 			"templates": [
@@ -427,6 +509,7 @@
 				"current": 1,
 				"max": 1
 			},
+			"multishot": false,
 			"quantityRoll": "",
 			"templates": [
 				"base",
@@ -434,7 +517,7 @@
 			]
 		},
 		"apparel": {
-			"apparelType": "",
+			"apparelType": "armor",
 			"health": {
 				"max": 0,
 				"min": 0,
@@ -467,7 +550,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			]
 		},
 		"apparel_mod": {
@@ -486,7 +570,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"attachable"
+				"attachable",
+				"scrappable"
 			]
 		},
 		"books_and_magz": {
@@ -530,7 +615,8 @@
 			"effect": "",
 			"templates": [
 				"base",
-				"physical"
+				"physical",
+				"scrappable"
 			]
 		},
 		"object_or_structure": {
@@ -583,7 +669,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			]
 		},
 		"robot_mod": {
@@ -592,7 +679,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			]
 		},
 		"skill": {
@@ -634,6 +722,10 @@
 				"rarity": 0,
 				"stashed": false,
 				"weight": 0
+			},
+			"scrappable": {
+				"canBeScrapped": true,
+				"isJunk": false
 			}
 		},
 		"weapon": {
@@ -809,7 +901,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"equipable"
+				"equipable",
+				"scrappable"
 			],
 			"weaponType": ""
 		},
@@ -828,7 +921,8 @@
 			"templates": [
 				"base",
 				"physical",
-				"attachable"
+				"attachable",
+				"scrappable"
 			],
 			"weaponType": ""
 		}

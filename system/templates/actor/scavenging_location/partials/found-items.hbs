@@ -1,0 +1,20 @@
+<div class="box padding5">
+	<ol class="items-list">
+		<li class="item consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.Items'}}
+			</div>
+			<div class="item-controls">
+				<a class="find-any-from-compendium">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</a>
+			</div>
+		</li>
+		{{#each inventory}}
+			{{> actor/_shared-partials/simple-expandable-item
+				item=this
+				basicControlsOnly=true
+			}}
+		{{/each}}
+	</ol>
+</div>

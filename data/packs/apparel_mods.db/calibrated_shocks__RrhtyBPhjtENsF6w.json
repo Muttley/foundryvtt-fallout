@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 100,
 		"description": "<p>Installed with the <b>Science</b> skill</p>",
 		"effect": "<p>Your carry weight is increased by +50</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Leg",
 		"perks": "Science! 2",
 		"quantity": 1,

@@ -6,7 +6,6 @@
 		</label>
 		<select name="system.apparelType">
 			{{#select system.apparelType}}
-				<option value="">&mdash;</option>
 				{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
 					<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
 				{{/each}}
@@ -75,6 +74,19 @@
 					name="system.equipped"
 					type="checkbox"
 					{{checked system.equipped}}
+				/>
+			</div>
+
+			<div class="flexrow resource-row align-mid">
+				<label class="capitalized checkbox-label">
+					{{localize "FALLOUT.actor.inventory.materials.junk"}}
+				</label>
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.isJunk"
+					type="checkbox"
+					{{checked system.isJunk}}
 				/>
 			</div>
 

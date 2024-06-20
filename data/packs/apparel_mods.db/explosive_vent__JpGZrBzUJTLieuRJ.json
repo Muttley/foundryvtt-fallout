@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 100,
 		"description": "<p>Installed with the <b>Science</b> skill</p>",
 		"effect": "<p>While the armor is powered, when you land from a height, you inflict 4 @fos[DC] damage to all creatures and damageable objects within Close range</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Leg",
 		"perks": "Science! 3",
 		"quantity": 1,

@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">A highly flammable chemical mixture designed to be used in a flamer. The quality of flamer fuel varies, but most tend to be a viscous substance that stays burning at a high temperature or a long duration, to make for an effective weapon.</span></p>\n<p><span class=\"fontstyle0\">When flamer fuel is found, it is in the form of a canister containing enough fuel for the number of shots generated.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 12+6dc # Flamer Fuel]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "12+6dc",
 		"rarity": 2,

@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">A large, plastic-coated battery, capable of containing the charge needed to power a Gamma Gun.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 4+2dc # Gamma Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "4+2dc",
 		"rarity": 2,

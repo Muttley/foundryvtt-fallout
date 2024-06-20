@@ -8,6 +8,7 @@
 	"name": "Spike Armor",
 	"system": {
 		"apparelType": "outfit",
+		"canBeScrapped": true,
 		"cost": 65,
 		"description": "<p><span class=\"fontstyle0\">Layers of leather, with rags, metal plates, lengths of chain, and bars sown into the layers or welded together. Many of the bars protrude outwards, creating a spiky appearance that helps fend off melee attacks, while the layers of metal plates and leather padding protect from hazards and attacks. A hood and helmet add to the protection provided.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": true,
 			"armR": true,

@@ -40,7 +40,8 @@ FALLOUT.APP.PartySleep.title: Gruppenrast
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Spielzeit vorspulen
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Du hast keinen Müll zum verwerten
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Spielzeit um {time} vorgespult
-FALLOUT.APP.SalvageJunk.selectedAmount: Verwerte {amount} Müll
+FALLOUT.APP.SalvageJunk.Items: Items
+FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Starte Verwerten
 FALLOUT.APP.SalvageJunk.time: Das benötigt {time}
 FALLOUT.APP.SalvageJunk.title: Verwerte Müll
@@ -135,6 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Strahlung widerst
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} nimmt {radsTaken} Strahlungsschaden aus dem Konsum von {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
 FALLOUT.CHEM: Chem
 FALLOUT.ChemDuration.brief: Flüchtig
 FALLOUT.ChemDuration.instant: Augenblicklich
@@ -162,6 +165,11 @@ FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Attribut für die Waffe kann ni
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Fertigkeit für die Waffe kann nicht ermittelt werden.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Kreaturen-Attribut und/oder Kreaturen-Fertigkeit für diese Waffe nicht definiert.
 FALLOUT.FOOD: Nahrung
+FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
+FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
+FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
+FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
+FALLOUT.Form.ScavengingSettings.title: Scavenging Settings
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Du kanns maximal {maxChoices} dieses Gegenstand-Typs auswählen.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Kann keine Gegenstände des Typs in den Verfügbaren Kompendien finden.
 FALLOUT.Form.SelectCompendiumItem.prompt: Gegenstand auswählen ...
@@ -186,6 +194,21 @@ FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
 FALLOUT.LEVEL.RewardXP: EP Belohnung
+FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
+FALLOUT.LOCATION_CATEGORY.commercial: Commercial
+FALLOUT.LOCATION_CATEGORY.custom: Custom
+FALLOUT.LOCATION_CATEGORY.industry: Industry
+FALLOUT.LOCATION_CATEGORY.medical: Medical
+FALLOUT.LOCATION_CATEGORY.military: Military
+FALLOUT.LOCATION_CATEGORY.residential: Residential
+FALLOUT.LOCATION_SCALE.average: Average
+FALLOUT.LOCATION_SCALE.large: Large
+FALLOUT.LOCATION_SCALE.small: Small
+FALLOUT.LOCATION_SCALE.tiny: Tiny
+FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
+FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
+FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
 FALLOUT.MACRO.Error.CaughtError: "Das '{macro}' ist mit dem folgenden Fehler fehlgeschlagen: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: Das '{macro}' Makro benötigt die Gamemaster Rolle
 FALLOUT.MACRO.NewSession.name: Neue Sitzung
@@ -214,6 +237,24 @@ FALLOUT.RESISTANCE.Immunity.radiation: Immun gegen Strahlungsschaden
 FALLOUT.RESISTANCE.physical: Körperlich
 FALLOUT.RESISTANCE.poison: Gift
 FALLOUT.RESISTANCE.radiation: Strahlung
+FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Ammunition
+FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armor
+FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Beverages
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chems
+FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Clothing
+FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
+FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
+FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
+FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
+FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
+FALLOUT.SEARCHED_DEGREE.untouched: Untouched (D0)
 FALLOUT.SETTINGS.sourceFilters.hint: Wenn diese Option aktiviert ist, werden nur die in dieser Liste enthaltenen Buchquellen an den entsprechenden Stellen zur Auswahl angeboten. Items, bei denen keine Buchquelle angegeben ist, sind immer verfügbar.
 FALLOUT.SETTINGS.sourceFilters.title: Buchquellen-Filter
 FALLOUT.SETTLEMENT_ACTION.Build: Erstelle
@@ -265,6 +306,7 @@ FALLOUT.SOURCE_TITLE.core_rulebook: Grundregelwerk
 FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Werkzeuge der Spielleiterin"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
+FALLOUT.SOURCE_TITLE.quickstart: Quickstart
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
@@ -279,8 +321,10 @@ FALLOUT.TEMPLATES.AllLocations: Alle Standorte
 FALLOUT.TEMPLATES.AMMO: MUNI
 FALLOUT.TEMPLATES.Ammo.Current: Verbleibende Schüsse
 FALLOUT.TEMPLATES.Ammo.Max: Schüsse je Item
+FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Anzahl Würfeln
 FALLOUT.TEMPLATES.AmmoName: Munitionsname
+FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
 FALLOUT.TEMPLATES.Apparel_Type: Kleidungsart
 FALLOUT.TEMPLATES.Apparel: Kleidung
 FALLOUT.TEMPLATES.APPAREL: KLEIDUNG
@@ -292,6 +336,7 @@ FALLOUT.TEMPLATES.Attributes: Eigenschaften
 FALLOUT.TEMPLATES.Base_Damage: Grundschaden
 FALLOUT.TEMPLATES.Butchery: Gemetzel
 FALLOUT.TEMPLATES.ButcheryTooltip: Gemetzel Probe TN
+FALLOUT.TEMPLATES.Category: Category
 FALLOUT.TEMPLATES.Compl: Kompl.
 FALLOUT.TEMPLATES.Complications: Komplikationen
 FALLOUT.TEMPLATES.CONDITIONS: ZUSTÄNDE
@@ -343,10 +388,12 @@ FALLOUT.TEMPLATES.DAMAGE: SCHADEN
 FALLOUT.TEMPLATES.Data: Daten
 FALLOUT.TEMPLATES.Default_Attribute: Standardattribut
 FALLOUT.TEMPLATES.DEFENSE: VERTEIDIGUNG
+FALLOUT.TEMPLATES.Degree: Degree
 FALLOUT.TEMPLATES.Delete_Item: Entferne Gegenstand
 FALLOUT.TEMPLATES.Delete: Entfernen
 FALLOUT.TEMPLATES.DERIVED: ABGELEITET
 FALLOUT.TEMPLATES.Description: Beschreibung
+FALLOUT.TEMPLATES.Details: Details
 FALLOUT.TEMPLATES.Duration: Dauer
 FALLOUT.TEMPLATES.Edit_Item: Bearbeite Gegenstand
 FALLOUT.TEMPLATES.Effect: Effekt
@@ -356,6 +403,7 @@ FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: LIEBLINGSWAFFEN
 FALLOUT.TEMPLATES.Fire_Rate: Feuerrate
 FALLOUT.TEMPLATES.FIRE_RATE: FEUERRATE
+FALLOUT.TEMPLATES.FoundItems: Found Items
 FALLOUT.TEMPLATES.Gear: Ausrüstung
 FALLOUT.TEMPLATES.GENERAL: GENERELL
 FALLOUT.TEMPLATES.Healthy: Gesund
@@ -369,6 +417,8 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Verletzung (Linksklick)
 FALLOUT.TEMPLATES.Irradiated: Verstrahlt
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Verstrahlter Schaden Würfel
 FALLOUT.TEMPLATES.Issue: Ausgabe
+FALLOUT.TEMPLATES.Items: Items
+FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Erlernt
@@ -385,6 +435,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Nahkampfschaden
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
 FALLOUT.TEMPLATES.MODULES: MODULE
 FALLOUT.TEMPLATES.Name_Prefix: Namespräfix
+FALLOUT.TEMPLATES.Notes: Notes
 FALLOUT.TEMPLATES.Origin: Herkunft
 FALLOUT.TEMPLATES.OVERSEER_AP: SPIELLEITERIN AP
 FALLOUT.TEMPLATES.ParentItem: Übergeordneter Gegenstand
@@ -413,6 +464,7 @@ FALLOUT.TEMPLATES.Resistances: Resistenzen
 FALLOUT.TEMPLATES.RESISTANCES: RESISTENZEN
 FALLOUT.TEMPLATES.Salvage: Verwerten
 FALLOUT.TEMPLATES.SalvageTooltip: Ausschlachten Probe TN
+FALLOUT.TEMPLATES.Scale: Scale
 FALLOUT.TEMPLATES.SettlersAndJobs: Siedler und Aufgaben
 FALLOUT.TEMPLATES.Skill_Tag: Spezialfertigkeit
 FALLOUT.TEMPLATES.Skill_Value: Fertigkeitswert
@@ -497,6 +549,7 @@ FALLOUT.UI.BaseDamage: Grundschaden
 FALLOUT.UI.BOOKS_AND_MAGZS: Bücher und Magazine
 FALLOUT.UI.Cancel: Abbrechen
 FALLOUT.UI.CAPS: Kronkorken
+FALLOUT.UI.CapsRoll: Caps Roll
 FALLOUT.UI.CarryWeight: Aktuelle Tragekapazität
 FALLOUT.UI.ChemDoses.ConfirmReset: Alle Chem Dosen zurücksetzen
 FALLOUT.UI.ChemDoses.Delete: Chem Dosen löschen
@@ -506,6 +559,8 @@ FALLOUT.UI.CONSUMABLES: Verbrauchsgegenstände
 FALLOUT.UI.Consume: Verbrauchen
 FALLOUT.UI.Cost: Kosten
 FALLOUT.UI.Damage: Schaden
+FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Krankheiten
 FALLOUT.UI.favorite: Favorit
 FALLOUT.UI.INVENTORY: Inventar
@@ -513,6 +568,7 @@ FALLOUT.UI.MISCELLANY: Verschiedenes
 FALLOUT.UI.Name: Name
 FALLOUT.UI.OTHER: Anderes
 FALLOUT.UI.Perks: Extras
+FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
 FALLOUT.UI.Qty: Menge
 FALLOUT.UI.Quantity: Anzahl
 FALLOUT.UI.Rarity: Seltenheit
@@ -580,6 +636,7 @@ TYPES.Actor.character: Charakter
 TYPES.Actor.creature: Kreatur
 TYPES.Actor.npc: NSC
 TYPES.Actor.robot: Roboter
+TYPES.Actor.scavenging_location: Scavenging Location
 TYPES.Actor.settlement: Siedlung
 TYPES.Item.addiction: Abhängigkeit
 TYPES.Item.ammo: Munition

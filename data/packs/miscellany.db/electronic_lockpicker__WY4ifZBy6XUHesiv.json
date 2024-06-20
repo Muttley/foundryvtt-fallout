@@ -7,10 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/miscellany.svg",
 	"name": "Electronic Lockpicker",
 	"system": {
+		"canBeScrapped": true,
 		"cost": 375,
 		"description": "<p>Difficult to find in the wasteland, the Wattz Electronics Micromanipulator electronic lockpick is a potent tool that can pick mechanical and electronic locks more efficiently than a person can alone. However, they&rsquo;re delicate, and can break down if misused.</p>",
 		"effect": "<p>Reduces difficulty of Lockpick tests by 2 (minimum 0), Ignores first complication rolled, Breaks if two or more complications are rolled at once</p>",
 		"favorite": false,
+		"isJunk": false,
 		"quantity": 1,
 		"rarity": 4,
 		"source": "core_rulebook",

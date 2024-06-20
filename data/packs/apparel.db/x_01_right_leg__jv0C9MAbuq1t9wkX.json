@@ -8,6 +8,7 @@
 	"name": "X-01 Right Leg",
 	"system": {
 		"apparelType": "powerArmor",
+		"canBeScrapped": true,
 		"cost": 200,
 		"description": "<p>Developed shortly before the bombs fell, the X-01 series of Power Armor was still in the prototype stages at the end of the Great War. Work was completed by remnants of the U.S. military after the bombs dropped. It offers superior protection to earlier models of Power Armor, but it has never been manufactured in large quantities, making it especially rare.</p>\n<p>Each piece of X-01 Power Armor can accept three mods: an upgrade mod, one plating mod, and a system. All Unique X-01 Power Armor Upgrade Mods are installed with the Repair Skill.</p>\n<p>X-01 Power Armor can make use of all the normal system mods (p.144) and all the normal plating mods apart from Winterized, and may also use the following plating mod, which is installed with the Repair skill:</p>\n<ul>\n<li><strong>Unique X-01 Power Armor Upgrade Mods:</strong> Mk II, Mk III, Mk IV, Mk V, Mk VI</li>\n<li><strong>Unique X-01 Power Armor Plating Mod:</strong> EMP Shielding</li>\n</ul>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 12
 		},
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

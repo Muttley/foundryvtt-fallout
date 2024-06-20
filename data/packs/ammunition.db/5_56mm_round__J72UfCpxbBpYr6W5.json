@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">A lightweight, Accurate rifle round normally used in assault rifles. Developed centuries ago for the U.S. Army&rsquo;s standard rifle of the era, 5.56mm rounds remained in production and use right up until the end of the Great War, and if you know where to look they&rsquo;re easy enough to find.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 8+4dc # 5.56mm Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "8+4dc",
 		"rarity": 3,

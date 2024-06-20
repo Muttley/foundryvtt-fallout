@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">Small-caliber pistol ammunition designed for double-action revolvers before the Great War. Abundant enough that it is the ammunition of choice for most makeshift firearms, and several more powerful weapons can be modified to accept a .38 cartridge, sacrificing stopping power for availability of ammunition.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10+5dc # .38 Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "10+5dc",
 		"rarity": 0,

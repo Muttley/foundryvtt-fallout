@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">The powerful .44 Magnum round was originally developed for revolvers. Its excellent stopping power makes it well suited for any inhabitant of the wasteland needing a round capable of stopping monsters, human or otherwise. All this is limited mainly by the scarcity of these rounds.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 4+2dc # .44 Magnum Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "4+2dc",
 		"rarity": 3,

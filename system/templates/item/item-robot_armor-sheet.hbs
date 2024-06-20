@@ -89,6 +89,18 @@
                         <input type="text" name="system.perks" value="{{system.perks}}">
                     </div>
 
+					<div class="flexrow resource-row">
+						<label class="resource-label">
+							{{localize "FALLOUT.actor.inventory.materials.junk"}}
+						</label>
+						<input
+							class="input-checkbox"
+							data-dtype="Boolean"
+							name="system.isJunk"
+							type="checkbox"
+							{{checked system.isJunk}}
+						/>
+					</div>
                 </div>
             </div>
         </div>

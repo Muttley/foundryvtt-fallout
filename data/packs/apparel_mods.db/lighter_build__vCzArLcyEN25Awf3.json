@@ -10,6 +10,7 @@
 		"apparelType": "armor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 1,
 		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
 		"effect": "",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "All Locations",
 		"perks": "",
 		"quantity": 1,

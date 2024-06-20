@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">Small-caliber rifle rounds normally used by the military in miniguns. While supplies of these weapons are rare, they&rsquo;re normally found in large quantities. The problem is that the weapons which use them consume ammunition at a prodigious rate, and a full box of 5mm rounds doesn&rsquo;t last long.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10*(12+6dc) # 5mm Round]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "10*12+6dc",
 		"rarity": 3,

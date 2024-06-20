@@ -9,10 +9,12 @@
 	"system": {
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 36,
 		"description": "",
 		"effect": "<p>Increase Range by 1 step</p>\n<p>+1 fire rate</p>\n<p>Gain Reliable</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
 		"favorite": false,
+		"isJunk": false,
 		"modEffects": {
 			"damageEffect": "",
 			"damageRating": 0,

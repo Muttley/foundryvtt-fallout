@@ -8,6 +8,7 @@
 	"name": "Brotherhood of Steel Hood",
 	"system": {
 		"apparelType": "headgear",
+		"canBeScrapped": true,
 		"cost": 12,
 		"description": "<p><span class=\"fontstyle0\">The matching headpiece for the Brotherhood of Steel uniform, this close-fitting hood was developed before the Great War for wearers of Power Armor. It is designed to plug into the helmet of a suit of Power Armor, providing a closer interface to the armor&rsquo;s systems, as well as containing an earpiece and microphone for the armor&rsquo;s internal radio.</span> </p>\n<p>&nbsp;</p>",
 		"equippable": true,
@@ -19,6 +20,7 @@
 			"mod": 0,
 			"value": 0
 		},
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

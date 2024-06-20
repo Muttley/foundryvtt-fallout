@@ -87,11 +87,13 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		await this._prepareMaterials(context);
 
 		// Biography HTML enrichment
-		context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
-			secrets: this.actor.isOwner,
-			rollData: context.rollData,
-			async: true,
-		});
+		if (context.system.biography) {
+			context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
+				secrets: this.actor.isOwner,
+				rollData: context.rollData,
+				async: true,
+			});
+		}
 
 		return context;
 	}
@@ -141,6 +143,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			}
 
 			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
+			if (i.type === "robot_mod" && this.actor.isNotRobot) i.canBeEquipped = false;
 
 			if (i.type === "skill") {
 				i.localizedName = fallout.utils.getLocalizedSkillName(i);
@@ -176,14 +179,17 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			else if (!this.ignoredInventoryItems.includes(i.type)) {
 				context.inventory.push(i);
 			}
+
 		}
 
 		// Sort skills by their localized name for convenience of non-English
 		// speakers
 		//
-		context.itemsByType.skill.sort(
-			(a, b) => a.localizedName.localeCompare(b.localizedName)
-		);
+		if (context.itemsByType.skill) {
+			context.itemsByType.skill.sort(
+				(a, b) => a.localizedName.localeCompare(b.localizedName)
+			);
+		}
 	}
 
 	_getFilteredApparelSections(context) {}
@@ -272,48 +278,50 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		// * Delete Inventory Item
 		html.find(".item-delete").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
+			event.preventDefault();
 
+			const me = this;
+
+			const li = $(ev.currentTarget).parents(".item");
 			const itemId = li.data("item-id") ?? "";
 			const item = this.actor.items.get(itemId);
 
-			if (item.type === "apparel" && item.system.powerArmor.isFrame) {
-				const attachedItems = this.actor.items.filter(
-					i => i.type === "apparel"
-						&& i.system.powerArmor.frameId === itemId
+			if (item.canBeScrapped) {
+				const html = await renderTemplate(
+					"systems/fallout/templates/dialogs/delete-or-junk.hbs"
 				);
 
-				const updateData = [];
-
-				for (const attachedItem of attachedItems) {
-					updateData.push({
-						"_id": attachedItem._id,
-						"system.powerArmor.frameId": "",
-					});
-				}
-
-				if (updateData.length > 0) {
-					await Item.updateDocuments(updateData, {parent: this.actor});
-
-					if (this.actor.type === "character") {
-						this.actor._calculateCharacterBodyResistance();
-					}
-				}
+				const dialog = new Dialog({
+					title: `${game.i18n.localize("FALLOUT.UI.DeleteOrJunk.title")}`,
+					content: html,
+					buttons: {
+						Delete: {
+							icon: '<i class="fa fa-trash"></i>',
+							label: `${game.i18n.localize("FALLOUT.TEMPLATES.Delete")}`,
+							callback: async () => {
+								await me._onItemDelete(item);
+								li.slideUp(200, () => me.render(false));
+							},
+						},
+						Junk: {
+							icon: '<i class="fa fa-screwdriver-wrench"></i>',
+							label: `${game.i18n.localize("FALLOUT.TEMPLATES.Junk")}`,
+							callback: async () => {
+								me.actor.incrementJunk();
+								await me._onItemDelete(item);
+								li.slideUp(200, () => me.render(false));
+							},
+						},
+					},
+					default: "Delete",
+				});
+				dialog.render(true);
+			}
+			else {
+				await this._onItemDelete(item);
+				li.slideUp(200, () => this.render(false));
 			}
 
-			await item.delete();
-
-			const frames = this.actor.items.filter(i =>
-				i.type === "apparel"
-					&& i.system.apparelType === "powerArmor"
-					&& i.system.powerArmor.isFrame
-			);
-
-			for (const frame of frames) {
-				frame.sheet.render(false);
-			}
-
-			li.slideUp(200, () => this.render(false));
 		});
 
 		// * Active Effect management
@@ -409,6 +417,46 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// Finally, create the item!
 		const newItem = await Item.create(itemData, { parent: this.actor });
 		if (newItem) newItem.sheet.render(true);
+	}
+
+	async _onItemDelete(item) {
+		if (item.type === "apparel" && item.system.powerArmor.isFrame) {
+			const attachedItems = this.actor.items.filter(
+				i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === itemId
+			);
+
+			const updateData = [];
+
+			for (const attachedItem of attachedItems) {
+				updateData.push({
+					"_id": attachedItem._id,
+					"system.powerArmor.frameId": "",
+				});
+			}
+
+			if (updateData.length > 0) {
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (this.actor.type === "character") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+		}
+
+		await item.delete();
+
+		const frames = this.actor.items.filter(i =>
+			i.type === "apparel"
+					&& i.system.apparelType === "powerArmor"
+					&& i.system.powerArmor.isFrame
+		);
+
+		for (const frame of frames) {
+			frame.sheet.render(false);
+		}
+
+
 	}
 
 	async _onRightClickDelete(itemId) {

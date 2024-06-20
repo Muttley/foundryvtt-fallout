@@ -144,6 +144,11 @@ function registerDocumentSheets() {
 		types: ["character", "robot"],
 	});
 
+	Actors.registerSheet("fallout", sheets.FalloutScavengingLocationSheet, {
+		makeDefault: true,
+		types: ["scavenging_location"],
+	});
+
 	Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
 		makeDefault: true,
 		types: ["settlement"],

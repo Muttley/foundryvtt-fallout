@@ -22,7 +22,7 @@
 		"irradiated": false,
 		"prepared": false,
 		"quantity": 1,
-		"radiation": 0,
+		"radiation": 2,
 		"radiationDamage": 1,
 		"rarity": 2,
 		"source": "core_rulebook",

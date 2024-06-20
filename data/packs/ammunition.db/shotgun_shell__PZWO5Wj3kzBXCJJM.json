@@ -11,6 +11,7 @@
 		"description": "<p><span class=\"fontstyle0\">The standard shotgun shell found in the wastelands is a 12 gauge 2 3/4&rdquo; cartridge filled with #0 buckshot. Relatively easy to find, those living in the wastes often keep a shotgun handy for close encounters.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 6+3dc # Shotgun Shell]]</p>",
 		"effect": "",
 		"favorite": false,
+		"multishot": false,
 		"quantity": 1,
 		"quantityRoll": "6+3dc",
 		"rarity": 1,

@@ -1,0 +1,23 @@
+{
+	"_id": "O9gGqJE0CfsOYccB",
+	"_key": "!items!O9gGqJE0CfsOYccB",
+	"effects": [
+	],
+	"folder": null,
+	"img": "systems/fallout/assets/icons/items/miscellany.svg",
+	"name": "Junk",
+	"system": {
+		"canBeScrapped": true,
+		"cost": 2,
+		"description": "<p>Junk items have little immediate benefit, beyond amusement or nostalgia, but they&rsquo;re still potentially valuable for the materials they&rsquo;re made from.</p>\n<p>Junk items have no rules effect on their own. Their only effect is to be found and broken down into useful materials, which can be used for crafting and repairing other items.</p>\n<p>When you find junk while scavenging, roll 2d20. That is the quantity of junk items you scavenge. Junk items have a weight of 2 and are worth 2 caps each in trade. You may spend 1 Luck point to increase the number of junk items scavenged by an amount equal to your <strong>LCK</strong> score.</p>\n<p>You can salvage materials from junk items and from other items you wish to dispose of to use them later for repairs and for crafting. Salvage requires that you have appropriate tools or facilities, such as a workbench.</p>",
+		"effect": "",
+		"favorite": false,
+		"isJunk": true,
+		"quantity": 1,
+		"rarity": 0,
+		"source": "core_rulebook",
+		"stashed": false,
+		"weight": 2
+	},
+	"type": "miscellany"
+}

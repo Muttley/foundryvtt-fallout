@@ -182,6 +182,25 @@ export default class FalloutCompendiums {
 		return FalloutCompendiums._documents("Item", "robot_mod", filterSources);
 	}
 
+	static async rolltables(filterSources=true) {
+		return FalloutCompendiums._documents("RollTable", null, false);
+	}
+
+	static async scavengingRolltables() {
+		const compendiumId = game.settings.get(SYSTEM_ID, "scavengingCompendium") ?? "";
+
+		if (compendiumId !== "") {
+			const compendium = game.packs.get(compendiumId);
+
+			let documents = await compendium.getIndex({fields: ["system"]});
+
+			return documents.contents;
+		}
+		else {
+			return this.rolltables();
+		}
+	}
+
 	static async skills(filterSources=true) {
 		return FalloutCompendiums._documents("Item", "skill", filterSources);
 	}

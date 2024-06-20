@@ -8,12 +8,14 @@
 	"name": "Actuated Frame (Arm 2)",
 	"system": {
 		"apparelType": "plating",
+		"canBeScrapped": true,
 		"carry": 10,
 		"cost": 15,
 		"description": "<p>A specially made set of armor plates fitted with actuators and motive systems which aid the robot&rsquo;s actions.</p>\n<p><strong>Special:</strong> Melee attacks made from arms fitted with an actuated frame inflict +1 @fos[DC] damage. If the robot&rsquo;s Thruster is fitted with an actuated frame, it may make both a Move minor action and a Sprint major action in the same turn.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": true,

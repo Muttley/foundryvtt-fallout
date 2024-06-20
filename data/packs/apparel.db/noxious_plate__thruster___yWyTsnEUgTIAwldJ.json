@@ -8,12 +8,14 @@
 	"name": "Noxious Plate (Thruster)",
 	"system": {
 		"apparelType": "plating",
+		"canBeScrapped": true,
 		"carry": -10,
 		"cost": 15,
 		"description": "<p>Makeshift armor coated in toxic materials which are hazardous to the health of any who seeks to inflict harm upon the robot or its companions.</p>\n<p><strong>Special:</strong> When a melee attack is made against a location fitted with noxious plate, and the attacker suffers a complication, then the attacker suffers 2 @fos[DC] Persistent (Poison) damage. In addition, melee attacks made using arms fitted with serrated plate gain the Persistent (Poison) damage effect.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

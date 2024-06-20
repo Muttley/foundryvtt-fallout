@@ -8,12 +8,14 @@
 	"name": "Factory Armor (Arm 2)",
 	"system": {
 		"apparelType": "armor",
+		"canBeScrapped": true,
 		"carry": 0,
 		"cost": 10,
 		"description": "<p>A standardized, factory-made set of armor plating designed to fit any Mister Handy model.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": true,

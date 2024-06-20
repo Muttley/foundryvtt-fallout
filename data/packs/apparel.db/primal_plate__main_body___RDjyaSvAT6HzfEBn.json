@@ -8,12 +8,14 @@
 	"name": "Primal Plate (Main Body)",
 	"system": {
 		"apparelType": "plating",
+		"canBeScrapped": true,
 		"carry": -20,
 		"cost": 20,
 		"description": "<p>Makeshift supplementary armor that can be affixed to a robot&rsquo;s structure to provide extra protection from physical hazards. The bulk and crude design reduce the robot&rsquo;s carrying capacity, however.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

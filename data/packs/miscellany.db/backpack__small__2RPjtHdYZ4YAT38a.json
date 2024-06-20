@@ -7,10 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/miscellany.svg",
 	"name": "Backpack, Small",
 	"system": {
+		"canBeScrapped": true,
 		"cost": 30,
 		"description": "<p>Available in a few different sizes, backpacks are invaluable for carrying larger quantities of items around. Most characters are assumed to be carrying items in pockets, belt pouches, and assorted bags and sacks, but a proper backpack helps carry items more easily and more efficiently. At least, if you don&rsquo;t have a pack brahmin or something else to carry your burdens.</p>",
 		"effect": "<p>Wearer adds +5xSTR to maximum Carry weight</p>",
 		"favorite": false,
+		"isJunk": false,
 		"quantity": 1,
 		"rarity": 1,
 		"source": "core_rulebook",

@@ -10,6 +10,7 @@
 		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 100,
 		"description": "<p>Installed with the <b>Science</b> skill</p>",
 		"effect": "<p>You may activate a Stealth Boy (p.171) once per scene by spending 1 charge</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Torso",
 		"perks": "Science! 4",
 		"quantity": 1,

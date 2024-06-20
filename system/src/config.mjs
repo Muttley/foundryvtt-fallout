@@ -163,6 +163,7 @@ FALLOUT.DEFAULT_TOKENS = {
 	creature: "systems/fallout/assets/tokens/creature.webp",
 	npc: "systems/fallout/assets/tokens/npc.webp",
 	robot: "systems/fallout/assets/tokens/robot.webp",
+	scavenging_location: "systems/fallout/assets/tokens/scavenging_location.webp",
 	settlement: "systems/fallout/assets/tokens/settlement.webp",
 };
 
@@ -198,6 +199,110 @@ FALLOUT.JOURNAL_UUIDS = {
 	releaseNotes: "Compendium.fallout.system_documentation.JournalEntry.7650UDxM6aehgB21",
 };
 
+FALLOUT.ITEM_UUIDS = {
+	junk: "Compendium.fallout.miscellany.Item.O9gGqJE0CfsOYccB",
+	prewar_money: "Compendium.fallout.miscellany.Item.opho9zlvwqcLUPcK",
+};
+
+FALLOUT.SCAVENGING_LOCATION_DATA = {
+	agriculture: {
+		ammunition: 0,
+		armor: 0,
+		beverages: 1,
+		chems: 0,
+		clothing: 0,
+		food: 3,
+		junk: 1,
+		other: 1,
+		weapons: 0,
+	},
+	commercial: {
+		ammunition: 0,
+		armor: 0,
+		beverages: 1,
+		chems: 0,
+		clothing: 0,
+		food: 1,
+		junk: 2,
+		other: 2,
+		weapons: 0,
+	},
+	industry: {
+		ammunition: 0,
+		armor: 1,
+		beverages: 1,
+		chems: 0,
+		clothing: 1,
+		food: 0,
+		junk: 2,
+		other: 1,
+		weapons: 0,
+	},
+	medical: {
+		ammunition: 0,
+		armor: 0,
+		beverages: 0,
+		chems: 2,
+		clothing: 1,
+		food: 0,
+		junk: 2,
+		other: 1,
+		weapons: 0,
+	},
+	military: {
+		ammunition: 1,
+		armor: 1,
+		beverages: 0,
+		chems: 0,
+		clothing: 1,
+		food: 0,
+		junk: 0,
+		other: 2,
+		weapons: 1,
+	},
+	residential: {
+		ammunition: 0,
+		armor: 0,
+		beverages: 1,
+		chems: 0,
+		clothing: 1,
+		food: 1,
+		junk: 2,
+		other: 1,
+		weapons: 0,
+	},
+};
+
+FALLOUT.LOCATION_CATEGORY = {
+	agriculture: "FALLOUT.LOCATION_CATEGORY.agriculture",
+	commercial: "FALLOUT.LOCATION_CATEGORY.commercial",
+	industry: "FALLOUT.LOCATION_CATEGORY.industry",
+	medical: "FALLOUT.LOCATION_CATEGORY.medical",
+	military: "FALLOUT.LOCATION_CATEGORY.military",
+	residential: "FALLOUT.LOCATION_CATEGORY.residential",
+};
+
+FALLOUT.LOCATION_SCALE = {
+	tiny: "FALLOUT.LOCATION_SCALE.tiny",
+	small: "FALLOUT.LOCATION_SCALE.small",
+	average: "FALLOUT.LOCATION_SCALE.average",
+	large: "FALLOUT.LOCATION_SCALE.large",
+};
+
+FALLOUT.LOCATION_TIME_TAKEN = {
+	tiny: "FALLOUT.LOCATION_TIME_TAKEN.tiny",
+	small: "FALLOUT.LOCATION_TIME_TAKEN.small",
+	average: "FALLOUT.LOCATION_TIME_TAKEN.average",
+	large: "FALLOUT.LOCATION_TIME_TAKEN.large",
+};
+
+FALLOUT.LOCATION_SCALE_MULTIPLIER = {
+	tiny: 1,
+	small: 2,
+	average: 3,
+	large: 4,
+};
+
 FALLOUT.NPC_CATEGORIES = {
 	minion: "FALLOUT.NPC_TYPES.minion",
 	normal: "FALLOUT.NPC_TYPES.normal",
@@ -214,6 +319,7 @@ FALLOUT.OFFICIAL_SOURCES = {
 	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
 	gm_toolkit: "FALLOUT.SOURCE_TITLE.gm_toolkit",
 	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
+	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
 	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
@@ -236,6 +342,39 @@ FALLOUT.RARITIES = {
 FALLOUT.ROBOT_APPAREL_TYPE = {
 	armor: "FALLOUT.APPAREL.armor",
 	plating: "FALLOUT.APPAREL.plating",
+};
+
+FALLOUT.SCAVENGING_ITEM_TYPES = {
+	ammunition: "FALLOUT.SCAVENGING_ITEM_TYPE.ammunition",
+	armor: "FALLOUT.SCAVENGING_ITEM_TYPE.armor",
+	beverages: "FALLOUT.SCAVENGING_ITEM_TYPE.beverages",
+	chems: "FALLOUT.SCAVENGING_ITEM_TYPE.chems",
+	clothing: "FALLOUT.SCAVENGING_ITEM_TYPE.clothing",
+	food: "FALLOUT.SCAVENGING_ITEM_TYPE.food",
+	junk: "FALLOUT.SCAVENGING_ITEM_TYPE.junk",
+	other: "FALLOUT.SCAVENGING_ITEM_TYPE.other",
+	weapons: "FALLOUT.SCAVENGING_ITEM_TYPE.weapons",
+};
+
+FALLOUT.SEARCHED_DEGREE = {
+	untouched: "FALLOUT.SEARCHED_DEGREE.untouched",
+	partly_searched: "FALLOUT.SEARCHED_DEGREE.partly_searched",
+	mostly_searched: "FALLOUT.SEARCHED_DEGREE.mostly_searched",
+	heavily_searched: "FALLOUT.SEARCHED_DEGREE.heavily_searched",
+};
+
+FALLOUT.SEARCHED_DEGREE_REDUCTION = {
+	untouched: 2,
+	partly_searched: 3,
+	mostly_searched: 4,
+	heavily_searched: 5,
+};
+
+FALLOUT.SEARCHED_DEGREE_DIFFICULTY = {
+	untouched: 0,
+	partly_searched: 1,
+	mostly_searched: 2,
+	heavily_searched: 3,
 };
 
 FALLOUT.SETTLEMENT_ITEM_ICONS = {

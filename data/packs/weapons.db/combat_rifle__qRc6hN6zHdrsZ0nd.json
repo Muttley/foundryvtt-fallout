@@ -10,6 +10,7 @@
 		"ammo": ".45 Round",
 		"ammoPerShot": 1,
 		"attribute": "",
+		"canBeScrapped": true,
 		"condition": "",
 		"cost": 117,
 		"creatureAttribute": "body",
@@ -172,6 +173,7 @@
 		"equipped": false,
 		"favorite": false,
 		"fireRate": 2,
+		"isJunk": false,
 		"melee": false,
 		"mods": {
 			"current": 0,

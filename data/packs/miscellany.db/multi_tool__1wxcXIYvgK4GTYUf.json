@@ -7,10 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/miscellany.svg",
 	"name": "Multi-Tool",
 	"system": {
+		"canBeScrapped": true,
 		"cost": 100,
 		"description": "<p>A handy little device, containing a set of pliers, some wire cutters, a variety of small wrenches and screw drivers, and other small tools, all built into a single tool. Different parts fold out of the handles as needed. Ideal for someone who needs basic tools but is still travelling light.</p>",
 		"effect": "<p>Reduce the difficulty of Repair tests by 1 (minimum 0)</p>",
 		"favorite": false,
+		"isJunk": false,
 		"quantity": 1,
 		"rarity": 2,
 		"source": "core_rulebook",

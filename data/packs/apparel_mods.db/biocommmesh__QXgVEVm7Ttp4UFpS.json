@@ -10,6 +10,7 @@
 		"apparelType": "armor",
 		"attachable": true,
 		"attached": false,
+		"canBeScrapped": true,
 		"cost": 9,
 		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
 		"effect": "<p>Chems last twice as long</p>",
@@ -17,6 +18,7 @@
 		"health": {
 			"value": 0
 		},
+		"isJunk": false,
 		"location": "Torso",
 		"perks": "Armorer 4, Science! 2",
 		"quantity": 1,

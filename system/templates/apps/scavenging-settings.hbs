@@ -1,0 +1,32 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+	<h3>{{localize "FALLOUT.Form.ScavengingCompendium.title"}}</h3>
+	<p>
+		<em>{{localize "FALLOUT.Form.ScavengingCompendium.hint"}}</em>
+	</p>
+	<div class="form-group">
+		<select name="scavenging_compendium">
+			<option value=""></option>
+			{{selectOptions compendiums
+				selected=selectedCompendium
+				sort=true
+			}}
+		</select>
+	</div>
+	<br>
+	<h3>{{localize "FALLOUT.Form.ScavengingCategoryTables.title"}}</h3>
+	<p>
+		<em>{{localize "FALLOUT.Form.ScavengingCategoryTables.hint"}}</em>
+	</p>
+	{{#each FALLOUT.SCAVENGING_ITEM_TYPES as |name key|}}
+		<div class="form-group">
+			<label><strong>{{name}}</strong></label>
+			<select name="{{key}}">
+				<option value=""></option>
+				{{selectOptions ../tables
+					selected=(lookup ../selectedTables key)
+					sort=true
+				}}
+			</select>
+		</div>
+	{{/each}}
+</form>

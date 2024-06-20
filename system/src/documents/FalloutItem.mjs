@@ -122,6 +122,52 @@ export default class FalloutItem extends Item {
 		}
 	}
 
+	async rollAmmoQuantity(mode) {
+		const formula = this.system.quantityRoll;
+
+		const roll = new Roll(formula);
+		const quantityRoll = await roll.evaluate();
+
+		await fallout.Roller2D20.showDiceSoNice(quantityRoll);
+
+		const quantity = parseInt(roll.total);
+
+		switch (mode) {
+			case "update":
+				const update = {};
+				if (this.system.multishot) {
+					update["system.shots.current"] = quantity;
+					update["system.shots.max"] = quantity;
+				}
+				else {
+					update["system.quantity"] = quantity;
+				}
+				return this.update(update);
+			case "create":
+				const data = this.toObject();
+				data.system.quantity = quantity;
+				if (this.actor) {
+					return this.actor.createEmbeddedDocuments("Item", [data]);
+				}
+				else {
+					return Item.create(data);
+				}
+			case "chat":
+				return fallout.chat.renderGeneralMessage(
+					this,
+					{
+						title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
+						body: game.i18n.format("FALLOUT.dialog.roll_ammo.chat.body",
+							{
+								ammoName: this.name,
+								quantity,
+							}
+						),
+					}
+				);
+		}
+	}
+
 	/**
    * Handle send to chat clicks.
    * @param {Event} event   The originating click event

@@ -8,12 +8,14 @@
 	"name": "Hydraulic Frame (Main Body)",
 	"system": {
 		"apparelType": "plating",
+		"canBeScrapped": true,
 		"carry": 10,
 		"cost": 60,
 		"description": "<p>A specially made set of armor plates which conceal powerful hydraulics which enhance the robot&rsquo;s movements.</p>\n<p>Special: Melee attacks made from arms fitted with a hydraulic frame inflict +1 @fos[DC] damage and gain the Stun damage effect.</p>",
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
+		"isJunk": false,
 		"location": {
 			"armL": false,
 			"armR": false,

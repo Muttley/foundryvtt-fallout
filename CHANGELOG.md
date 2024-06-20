@@ -1,3 +1,37 @@
+# v11.12.0
+
+#### Enhancements
+- [#257] Add support for scavenging locations
+
+	* These are a new Actor class which allows you to place them on a scene and allow the players to interact with them using Item Piles, etc. once the scavenging results have been calculated
+	* Includes new game settings which allow you to both specify the default RollTable to use for each category, and to filter available RollTables by compendium
+
+- [#443] When deleting scrappable items, ask the player if they want to turn them into junk
+- [#444] Allow relevant items to be flagged as junk and have the scrapping tool always use them first if available
+
+	* The following items can be be flagged as being Junk items and if they are will be used as part of the salvage process: Apparel Mod, Apparel, Miscellany, Robot Armor, Robot Module, Weapon Mod, Weapon
+
+- [#454] Populate the compendiumSource field when adding items to actors via ItemSelectors to aid with Babele translations
+- [#459] Add ability to flag Ammo items as being multishot
+- [#460] Ammo quantity roller should update shot count for multishot ammo now they're identifiable
+- [#461] Flag existing ammo items in compendiums as multishot where necessary
+- [#462] Add Pre-War Money item to Miscellany compendium
+- [#463] Add generic Junk item to Miscellany compendium
+
+#### Bugs
+- [#438] Owned Robot Mods do not display in Character sheet inventory
+- [#452] Resistence labels not correctly localized on Apparel Mod item sheet
+- [#453] Not using localized Skill names in Item Selector interface
+- [#455] Missing localization of placeholder in apparel mod
+- [#466] Brahmin Milk item missing its radiation recovery value
+
+#### Chores
+- [#435] Deprecate the custom Skill compendium config now Skills are dynamically translated
+- [#440] Merge new Polish translation updates from Crowdin
+- [#450] Merge new Portuguese/Brazilian translation updates from Crowdin
+
+---
+
 # v11.11.4
 
 #### Bugs
