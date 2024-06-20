@@ -249,15 +249,6 @@ export default function registerSettings() {
 		default: [],
 	});
 
-	game.settings.register(SYSTEM_ID, "skillsCompendium", {
-		name: "Skills Compendium",
-		hint: "Compendium of skills to be used at character's creation. World compendiums should start with the 'world' prefix (ex. world.my-skills). The default compendium is 'fallout.skills'.",
-		scope: "world",
-		config: true,
-		default: "fallout.skills",
-		type: String,
-	});
-
 	// ----------------
 	//  DEBUG SETTINGS
 	// ----------------

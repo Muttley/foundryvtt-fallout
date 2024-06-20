@@ -26,6 +26,7 @@
 - [#466] Brahmin Milk item missing its radiation recovery value
 
 #### Chores
+- [#435] Deprecate the custom Skill compendium config now Skills are dynamically translated
 - [#440] Merge new Polish translation updates from Crowdin
 - [#450] Merge new Portuguese/Brazilian translation updates from Crowdin
 
