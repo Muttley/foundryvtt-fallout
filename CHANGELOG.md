@@ -1,3 +1,10 @@
+# v11.12.1
+
+#### Bugs
+- [#470] Scavenging gets stuck in a loop if no valid items to draw
+
+---
+
 # v11.12.0
 
 #### Enhancements

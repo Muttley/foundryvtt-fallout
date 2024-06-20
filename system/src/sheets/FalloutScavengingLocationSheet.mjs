@@ -129,11 +129,8 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 		const items = [];
 
-		const avoidDuplicates = false;
-
 		if (table) {
-			let itemsToDraw = count;
-			while (itemsToDraw > 0) {
+			for (let i = 0; i < count; i++) {
 				const draw = await table.draw({displayChat: false});
 				const result = draw.results.find(r => r.type === "pack");
 
@@ -146,11 +143,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 					result.documentId,
 				].join(".");
 
-				if (avoidDuplicates && this.drawItemsLut[itemUuid]) continue;
-
 				this.drawItemsLut[itemUuid] = true;
-
-				itemsToDraw--;
 
 				const item = await fromUuid(itemUuid);
 
