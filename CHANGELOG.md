@@ -10,12 +10,15 @@
 - [#459] Add ability to flag Ammo items as being multishot
 - [#460] Ammo quantity roller should update shot count for multishot ammo now they're identifiable
 - [#461] Flag existing ammo items in compendiums as multishot where necessary
+- [#462] Add Pre-War Money item to Miscellany compendium
+- [#463] Add generic Junk item to Miscellany compendium
 
 #### Bugs
 - [#438] Owned Robot Mods do not display in Character sheet inventory
 - [#452] Resistence labels not correctly localized on Apparel Mod item sheet
 - [#453] Not using localized Skill names in Item Selector interface
 - [#455] Missing localization of placeholder in apparel mod
+- [#466] Brahmin Milk item missing its radiation recovery value
 
 #### Chores
 - [#440] Merge new Polish translation updates from Crowdin
