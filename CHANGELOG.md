@@ -30,6 +30,8 @@
 - [#440] Merge new Polish translation updates from Crowdin
 - [#450] Merge new Portuguese/Brazilian translation updates from Crowdin
 
+---
+
 # v11.11.4
 
 #### Bugs
