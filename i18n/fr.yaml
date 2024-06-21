@@ -195,18 +195,18 @@ FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
 FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
-FALLOUT.LOCATION_CATEGORY.commercial: Commercial
-FALLOUT.LOCATION_CATEGORY.custom: Custom
-FALLOUT.LOCATION_CATEGORY.industry: Industry
-FALLOUT.LOCATION_CATEGORY.medical: Medical
-FALLOUT.LOCATION_CATEGORY.military: Military
-FALLOUT.LOCATION_CATEGORY.residential: Residential
-FALLOUT.LOCATION_SCALE.average: Average
-FALLOUT.LOCATION_SCALE.large: Large
-FALLOUT.LOCATION_SCALE.small: Small
-FALLOUT.LOCATION_SCALE.tiny: Tiny
+FALLOUT.LOCATION_CATEGORY.commercial: Commerciale
+FALLOUT.LOCATION_CATEGORY.custom: Personnalisée
+FALLOUT.LOCATION_CATEGORY.industry: Industrielle
+FALLOUT.LOCATION_CATEGORY.medical: Médicale
+FALLOUT.LOCATION_CATEGORY.military: Militaire
+FALLOUT.LOCATION_CATEGORY.residential: Résidentiel
+FALLOUT.LOCATION_SCALE.average: Moyenne
+FALLOUT.LOCATION_SCALE.large: Grande
+FALLOUT.LOCATION_SCALE.small: Petite
+FALLOUT.LOCATION_SCALE.tiny: Minuscule
 FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
-FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 heures
 FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
 FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
 FALLOUT.MACRO.Error.CaughtError: "La macro '{macro}' a échoué avec l'erreur suivante : {error}"
@@ -237,19 +237,19 @@ FALLOUT.RESISTANCE.Immunity.radiation: Immunisé aux dégâts de radiation
 FALLOUT.RESISTANCE.physical: Balistique
 FALLOUT.RESISTANCE.poison: Poison
 FALLOUT.RESISTANCE.radiation: Radiation
-FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Ammunition
-FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armor
-FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Beverages
-FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chems
-FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Clothing
-FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
-FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
-FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
-FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
-FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
-FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
-FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Munitions
+FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armure
+FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Boissons
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Drogues
+FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Vêtements
+FALLOUT.SCAVENGING_ITEM_TYPE.food: Nourriture
+FALLOUT.SCAVENGING_ITEM_TYPE.junk: Bric-à-brac
+FALLOUT.SCAVENGING_ITEM_TYPE.other: Autres
+FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armes
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Effacer les résultats
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Lieu de récupération
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Tous les résultats de récupération ont été effacés.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Effacer les résultats de récupération
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
@@ -336,7 +336,7 @@ FALLOUT.TEMPLATES.Attributes: Attributs
 FALLOUT.TEMPLATES.Base_Damage: Dégâts de base
 FALLOUT.TEMPLATES.Butchery: Dépeçage
 FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
-FALLOUT.TEMPLATES.Category: Category
+FALLOUT.TEMPLATES.Category: Catégorie
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
@@ -388,12 +388,12 @@ FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
 FALLOUT.TEMPLATES.Data: Donnée
 FALLOUT.TEMPLATES.Default_Attribute: Attribut par défaut
 FALLOUT.TEMPLATES.DEFENSE: DEFENSE
-FALLOUT.TEMPLATES.Degree: Degree
+FALLOUT.TEMPLATES.Degree: Degré
 FALLOUT.TEMPLATES.Delete_Item: Effacer Objet
 FALLOUT.TEMPLATES.Delete: Effacer
 FALLOUT.TEMPLATES.DERIVED: DERIVÉE
 FALLOUT.TEMPLATES.Description: Description
-FALLOUT.TEMPLATES.Details: Details
+FALLOUT.TEMPLATES.Details: Détails
 FALLOUT.TEMPLATES.Duration: Durée
 FALLOUT.TEMPLATES.Edit_Item: Editer Objet
 FALLOUT.TEMPLATES.Effect: Effet
@@ -403,7 +403,7 @@ FALLOUT.TEMPLATES.ENG: ENG
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMES FAVORITES
 FALLOUT.TEMPLATES.Fire_Rate: Cadence de Tir
 FALLOUT.TEMPLATES.FIRE_RATE: Cadence de Tir
-FALLOUT.TEMPLATES.FoundItems: Found Items
+FALLOUT.TEMPLATES.FoundItems: Objets trouvés
 FALLOUT.TEMPLATES.Gear: Équipement
 FALLOUT.TEMPLATES.GENERAL: GÉNÉRAL
 FALLOUT.TEMPLATES.Healthy: Bonne Santé
@@ -417,8 +417,8 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Blessure (Clic gauche)
 FALLOUT.TEMPLATES.Irradiated: Irradié
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Dés de dégâts de radiation
 FALLOUT.TEMPLATES.Issue: Numéro
-FALLOUT.TEMPLATES.Items: Items
-FALLOUT.TEMPLATES.Junk: Junk
+FALLOUT.TEMPLATES.Items: Objets
+FALLOUT.TEMPLATES.Junk: Bric-à-brac
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Appris(e)
@@ -464,7 +464,7 @@ FALLOUT.TEMPLATES.Resistances: Résistances
 FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
 FALLOUT.TEMPLATES.Salvage: Récupération
 FALLOUT.TEMPLATES.SalvageTooltip: Contrôle SR Récupération
-FALLOUT.TEMPLATES.Scale: Scale
+FALLOUT.TEMPLATES.Scale: Échelle
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill_Tag: Atout personnel
 FALLOUT.TEMPLATES.Skill_Value: Valeur Compétence
@@ -549,7 +549,7 @@ FALLOUT.UI.BaseDamage: Dégâts de base
 FALLOUT.UI.BOOKS_AND_MAGZS: Livres et Magazines
 FALLOUT.UI.Cancel: Annuler
 FALLOUT.UI.CAPS: Capsules
-FALLOUT.UI.CapsRoll: Caps Roll
+FALLOUT.UI.CapsRoll: Lancer de capsules
 FALLOUT.UI.CarryWeight: Charge maximale
 FALLOUT.UI.ChemDoses.ConfirmReset: Réinitialiser toutes les doses de drogue
 FALLOUT.UI.ChemDoses.Delete: Supprimer les doses de drogue
@@ -559,8 +559,8 @@ FALLOUT.UI.CONSUMABLES: Consommables
 FALLOUT.UI.Consume: Consommer
 FALLOUT.UI.Cost: Coût
 FALLOUT.UI.Damage: Dégâts
-FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
-FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
+FALLOUT.UI.DeleteOrJunk.message: Voulez-vous supprimer ou recycler cet objet ?
+FALLOUT.UI.DeleteOrJunk.title: Supprimer ou recycler ?
 FALLOUT.UI.DISEASES: Maladies
 FALLOUT.UI.favorite: Favori
 FALLOUT.UI.INVENTORY: Inventaire
@@ -568,7 +568,7 @@ FALLOUT.UI.MISCELLANY: Bric-A-Brac
 FALLOUT.UI.Name: Nom
 FALLOUT.UI.OTHER: Autre
 FALLOUT.UI.Perks: Aptitudes
-FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
+FALLOUT.UI.PreWarMoneyRoll: Lancer d'argent d'avant-guerre
 FALLOUT.UI.Qty: Qttés
 FALLOUT.UI.Quantity: Quantité
 FALLOUT.UI.Rarity: Rareté
@@ -636,7 +636,7 @@ TYPES.Actor.character: Personnage
 TYPES.Actor.creature: Créature
 TYPES.Actor.npc: PNJ
 TYPES.Actor.robot: Robot
-TYPES.Actor.scavenging_location: Scavenging Location
+TYPES.Actor.scavenging_location: Lieu de récupération
 TYPES.Actor.settlement: Colonie
 TYPES.Item.addiction: Dépendance
 TYPES.Item.ammo: Mun
