@@ -1,3 +1,13 @@
+# v11.12.2
+
+#### Compatibility
+- [#474] Scavenging Locations not finding results when running in Foundry v11
+
+#### Chores
+- [#473] Merge new French translation updates from Crowdin
+
+---
+
 # v11.12.1
 
 #### Bugs
