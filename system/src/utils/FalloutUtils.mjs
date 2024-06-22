@@ -104,6 +104,12 @@ export default class FalloutUtils {
 		return messageStyles;
 	}
 
+	static isCompendiumTableResult(result) {
+		return this.foundryMinVersion(12)
+			? result.type === "pack"
+			: result.type === CONST.TABLE_RESULT_TYPES.COMPENDIUM;
+	}
+
 	static lbsToKgs(value) {
 		return value * LBS_TO_KGS;
 	}

@@ -132,8 +132,10 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 		if (table) {
 			for (let i = 0; i < count; i++) {
 				const draw = await table.draw({displayChat: false});
-				const result = draw.results.find(r => r.type === "pack");
-
+				const result = draw.results.find(
+					// TODO remove use of this method once v11 support dropped
+					r => fallout.utils.isCompendiumTableResult(r)
+				);
 
 				if (!result) continue;
 
