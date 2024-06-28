@@ -40,8 +40,8 @@ FALLOUT.APP.PartySleep.title: Drużyna Śpi
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Przyspiesz Czas Gry
 FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: Nie masz żadnych śmieci do odzyskania
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Czas gry przyśpieszony o {time}
-FALLOUT.APP.SalvageJunk.Items: Items
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
+FALLOUT.APP.SalvageJunk.Items: Przedmioty
+FALLOUT.APP.SalvageJunk.selectedAmount: Rozbierasz {amount} z {max} śmieci
 FALLOUT.APP.SalvageJunk.start: Rozpocznij odzyskiwanie
 FALLOUT.APP.SalvageJunk.time: Zajmie Ci to {time}
 FALLOUT.APP.SalvageJunk.title: Odzyskaj śmieci
@@ -136,8 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiacja odparta
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje {radsTaken} obrażeń od radiacji po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Złomiarz
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} została oszabrowana, zajęło to {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Szabrowanie lokacji
 FALLOUT.CHEM: Chemikalia
 FALLOUT.ChemDuration.brief: Krótkotrwały
 FALLOUT.ChemDuration.instant: Natychmiastowy
@@ -165,11 +165,11 @@ FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Nie można określić atrybutu 
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Nie można określić atrybutu używanego dla tej broni.
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Ta broń nie posiada Atrybutu Stworzenia i/lub Umiejętności Stworzenia.
 FALLOUT.FOOD: Jedzenie
-FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
-FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
-FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
-FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
-FALLOUT.Form.ScavengingSettings.title: Scavenging Settings
+FALLOUT.Form.ScavengingCategoryTables.hint: Tutaj możesz określić domyślne tabele do użycia dla każdej kategorii wyników szabrowania.
+FALLOUT.Form.ScavengingCategoryTables.title: Domyślna kategoria tabel
+FALLOUT.Form.ScavengingCompendium.hint: Jeśli zaznaczone, tylko tabele przechowywane w określonym kompendium będą dostępne do wyboru jako źródła wyników szabrowania.
+FALLOUT.Form.ScavengingCompendium.title: Kompendium szabrowania
+FALLOUT.Form.ScavengingSettings.title: Ustawienia szabrowania
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Możesz wybrać maksymalnie {maxChoices} przedmiotów tego typu.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Nie można znaleźć przedmiotów odpowiedniego typu w dostępnych kompendiach.
 FALLOUT.Form.SelectCompendiumItem.prompt: Wybierz Przedmiot...
@@ -194,21 +194,21 @@ FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
 FALLOUT.LEVEL.RewardXP: Nagroda w PD
-FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
-FALLOUT.LOCATION_CATEGORY.commercial: Commercial
-FALLOUT.LOCATION_CATEGORY.custom: Custom
-FALLOUT.LOCATION_CATEGORY.industry: Industry
-FALLOUT.LOCATION_CATEGORY.medical: Medical
-FALLOUT.LOCATION_CATEGORY.military: Military
-FALLOUT.LOCATION_CATEGORY.residential: Residential
-FALLOUT.LOCATION_SCALE.average: Average
-FALLOUT.LOCATION_SCALE.large: Large
-FALLOUT.LOCATION_SCALE.small: Small
-FALLOUT.LOCATION_SCALE.tiny: Tiny
-FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
-FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
-FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
-FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
+FALLOUT.LOCATION_CATEGORY.agriculture: Rolniczy
+FALLOUT.LOCATION_CATEGORY.commercial: Handlowy
+FALLOUT.LOCATION_CATEGORY.custom: Dowolny
+FALLOUT.LOCATION_CATEGORY.industry: Przemysłowy
+FALLOUT.LOCATION_CATEGORY.medical: Medyczny
+FALLOUT.LOCATION_CATEGORY.military: Wojskowy
+FALLOUT.LOCATION_CATEGORY.residential: Mieszkalny
+FALLOUT.LOCATION_SCALE.average: Średnia
+FALLOUT.LOCATION_SCALE.large: Duża
+FALLOUT.LOCATION_SCALE.small: Mała
+FALLOUT.LOCATION_SCALE.tiny: Niewielka
+FALLOUT.LOCATION_TIME_TAKEN.average: 30 minut
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 godziny
+FALLOUT.LOCATION_TIME_TAKEN.small: 10 minut
+FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minuta
 FALLOUT.MACRO.Error.CaughtError: "Makro '{macro}' nie powiodło się, zwracając następujący błąd: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: Makro '{macro}' wymaga uprawnień roli 'Mistrza Gry'
 FALLOUT.MACRO.NewSession.name: Nowa Sesja
@@ -237,24 +237,24 @@ FALLOUT.RESISTANCE.Immunity.radiation: Niewrażliwość na obrażenia od promien
 FALLOUT.RESISTANCE.physical: Fizyczne
 FALLOUT.RESISTANCE.poison: Trucizna
 FALLOUT.RESISTANCE.radiation: Radiacja
-FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Ammunition
-FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armor
-FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Beverages
-FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chems
-FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Clothing
-FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
-FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
-FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
-FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
-FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
-FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
-FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
-FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
-FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
-FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
-FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
-FALLOUT.SEARCHED_DEGREE.untouched: Untouched (D0)
+FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Amunicja
+FALLOUT.SCAVENGING_ITEM_TYPE.armor: Pancerz
+FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Napoje
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chemikalia
+FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Odzież
+FALLOUT.SCAVENGING_ITEM_TYPE.food: Jedzenie
+FALLOUT.SCAVENGING_ITEM_TYPE.junk: Śmieci
+FALLOUT.SCAVENGING_ITEM_TYPE.other: Inne
+FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Bronie
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Wyczyść wyniki
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Oszabruj lokacje
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Wszystkie wyniki szabrowania zostały wyczyszczone.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Wyczyść wyniki szabrowania
+FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Żadna tabela przedmiotów nie została ustawiona dla przedmiotów typu {category}.
+FALLOUT.SEARCHED_DEGREE.heavily_searched: Mocno rozszabrowane (T3)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: W większości rozszabrowane(T2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Częściowo rozszabrowane(T1)
+FALLOUT.SEARCHED_DEGREE.untouched: Nietknięte(D0)
 FALLOUT.SETTINGS.sourceFilters.hint: Jeśli zostaną wypełnione, w odpowiednich miejscach do wyboru będą dostępne wyłącznie źródła książek zawarte na tej liście. Elementy bez zestawu źródła książki będą zawsze dostępne.
 FALLOUT.SETTINGS.sourceFilters.title: Filtry źródeł książek
 FALLOUT.SETTLEMENT_ACTION.Build: Wybuduj
@@ -306,7 +306,7 @@ FALLOUT.SOURCE_TITLE.core_rulebook: Podręcznik Główny
 FALLOUT.SOURCE_TITLE.enclave_remnants: "Pakiet BN #2: Pozostałości Enklawy"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Zestaw Narzędzi Mistrza Gry"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Paczka Map #1: Krypta"
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.quickstart: Szybki start
 FALLOUT.SOURCE_TITLE.rust_devils: "Pakiet BN #1: Rdzawe Diabły"
 FALLOUT.SOURCE_TITLE.settlers_guide: Przewodnik Osadnika
 FALLOUT.SOURCE_TITLE.wanderers_guide: Przewodnik Wędrowca
@@ -321,10 +321,10 @@ FALLOUT.TEMPLATES.AllLocations: Wszystkie lokacje
 FALLOUT.TEMPLATES.AMMO: Amunicja
 FALLOUT.TEMPLATES.Ammo.Current: Pozostałe Strzały
 FALLOUT.TEMPLATES.Ammo.Max: Liczba strzałów na przedmiot
-FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
+FALLOUT.TEMPLATES.Ammo.Multishot: Wielopociskowy
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Losowanie Ilości
 FALLOUT.TEMPLATES.AmmoName: Nazwa Amunicji
-FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
+FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: Dla ulepszeń pancerza np. Nóg, Ramię itp.
 FALLOUT.TEMPLATES.Apparel_Type: Typ Odzieży
 FALLOUT.TEMPLATES.Apparel: Odzież
 FALLOUT.TEMPLATES.APPAREL: ODZIEŻ
@@ -336,7 +336,7 @@ FALLOUT.TEMPLATES.Attributes: Cechy
 FALLOUT.TEMPLATES.Base_Damage: Obrażenia Podstawowe
 FALLOUT.TEMPLATES.Butchery: Mięso
 FALLOUT.TEMPLATES.ButcheryTooltip: PT testu rzeźnictwa
-FALLOUT.TEMPLATES.Category: Category
+FALLOUT.TEMPLATES.Category: Kategoria
 FALLOUT.TEMPLATES.Compl: Komp.
 FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
@@ -388,12 +388,12 @@ FALLOUT.TEMPLATES.DAMAGE: Obrażenia
 FALLOUT.TEMPLATES.Data: Informacje
 FALLOUT.TEMPLATES.Default_Attribute: Domyślne Cechy
 FALLOUT.TEMPLATES.DEFENSE: OBRONA
-FALLOUT.TEMPLATES.Degree: Degree
+FALLOUT.TEMPLATES.Degree: Stopnie
 FALLOUT.TEMPLATES.Delete_Item: Usuń Przedmiot
 FALLOUT.TEMPLATES.Delete: Usuń
 FALLOUT.TEMPLATES.DERIVED: POCHODNE
 FALLOUT.TEMPLATES.Description: Opis
-FALLOUT.TEMPLATES.Details: Details
+FALLOUT.TEMPLATES.Details: Szczegóły
 FALLOUT.TEMPLATES.Duration: Czas Trwania
 FALLOUT.TEMPLATES.Edit_Item: Edytuj Przedmiot
 FALLOUT.TEMPLATES.Effect: Efekt
@@ -403,7 +403,7 @@ FALLOUT.TEMPLATES.ENG: ENERGETYCZNE
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: Ulubiona Broń
 FALLOUT.TEMPLATES.Fire_Rate: Szybkostrzelność
 FALLOUT.TEMPLATES.FIRE_RATE: Szybkostrzelność
-FALLOUT.TEMPLATES.FoundItems: Found Items
+FALLOUT.TEMPLATES.FoundItems: Znalezione przedmioty
 FALLOUT.TEMPLATES.Gear: Sprzęt
 FALLOUT.TEMPLATES.GENERAL: Ogólny
 FALLOUT.TEMPLATES.Healthy: Zdrowie
@@ -417,7 +417,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Rana (kliknij lewym)
 FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Kości obrażeń od radiacji
 FALLOUT.TEMPLATES.Issue: Problem
-FALLOUT.TEMPLATES.Items: Items
+FALLOUT.TEMPLATES.Items: Przedmioty
 FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: Kg
 FALLOUT.TEMPLATES.lbs: Lb
