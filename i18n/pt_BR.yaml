@@ -136,8 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radia
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dano de Radiação
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi vasculhado, levando {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Sucateando Local
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Pilhando Local
 FALLOUT.CHEM: Drogas
 FALLOUT.ChemDuration.brief: Curto
 FALLOUT.ChemDuration.instant: Instantâneo
@@ -165,11 +165,11 @@ FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Artibuto e/ou Habilidade de Criatura especificada.
 FALLOUT.FOOD: Comida
-FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode especificar as Tabelas para serem usadas para cada categoria de resultado de sucateamento.
+FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode especificar as Tabelas para serem usadas para cada categoria de resultado de pilhagem.
 FALLOUT.Form.ScavengingCategoryTables.title: Tabelas de Categoria Padrão
-FALLOUT.Form.ScavengingCompendium.hint: Se selecionado apenas as tabelas de rolagem armazenadas no compêndio especificado estarão disponíveis para seleção como fontes de resultado de Sucateamento.
-FALLOUT.Form.ScavengingCompendium.title: Compêndio de Sucateamento
-FALLOUT.Form.ScavengingSettings.title: Configurações de Sucateamento
+FALLOUT.Form.ScavengingCompendium.hint: Se selecionado apenas as tabelas de rolagem armazenadas no compêndio especificado estarão disponíveis para seleção como fontes de resultado de Pilhagem.
+FALLOUT.Form.ScavengingCompendium.title: Compêndio de Pilhagem
+FALLOUT.Form.ScavengingSettings.title: Configurações de Pilhagem
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Você só pode selecionar um máximo de {maxChoices} desse tipo de Item.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Não foi possível achar itens do tipo correto nos compendios disponíveis.
 FALLOUT.Form.SelectCompendiumItem.prompt: Selecione Itens...
@@ -247,9 +247,9 @@ FALLOUT.SCAVENGING_ITEM_TYPE.junk: Sucata
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Outro
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armas
 FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Limpar Resultados
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Sucatear Local
-FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados de sucateamento foram limpos.
-FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Sucateamento
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Pilhar Local
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados de pilhagem foram limpos.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Pilhagem
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Nenhuma tabela de itens foi definida para itens do tipo {category}.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Pesadamente Vasculhado (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Majoritariamente Vasculhado (D2)
@@ -261,7 +261,7 @@ FALLOUT.SETTLEMENT_ACTION.Build: Construir
 FALLOUT.SETTLEMENT_ACTION.Business: Negócios
 FALLOUT.SETTLEMENT_ACTION.Guard: Guarda
 FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Caça e Coleta
-FALLOUT.SETTLEMENT_ACTION.Scavenging: Vasculhar Lixo
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Pilhando
 FALLOUT.SETTLEMENT_ACTION.TendCrops: Cultivo
 FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Caravana de Comércio
 FALLOUT.SETTLEMENT_ACTION.Unnasigned: Sem Função
@@ -636,7 +636,7 @@ TYPES.Actor.character: Personagem
 TYPES.Actor.creature: Criatura
 TYPES.Actor.npc: NPJ
 TYPES.Actor.robot: Robô
-TYPES.Actor.scavenging_location: Local de Sucateamento
+TYPES.Actor.scavenging_location: Local de Pilhagem
 TYPES.Actor.settlement: Assentamento
 TYPES.Item.addiction: Vício
 TYPES.Item.ammo: Munição
