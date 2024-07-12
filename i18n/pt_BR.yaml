@@ -316,7 +316,7 @@ FALLOUT.TEMPLATES.Add_Perk: Adicionar Talento
 FALLOUT.TEMPLATES.Add_Trait: Adicionar Traço
 FALLOUT.TEMPLATES.AddictionNumber: Número de Vício
 FALLOUT.TEMPLATES.Addictive: Viciante
-FALLOUT.TEMPLATES.Alcoholic: Alcoólatra
+FALLOUT.TEMPLATES.Alcoholic: "Alcoólatra\n"
 FALLOUT.TEMPLATES.AllLocations: Todas as Áreas
 FALLOUT.TEMPLATES.AMMO: MUNIÇÃO
 FALLOUT.TEMPLATES.Ammo.Current: Tiros Restantes
