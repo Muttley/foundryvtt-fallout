@@ -1,3 +1,11 @@
+# v11.13.0
+
+#### Chores
+- [#478] Merge new French, Polish and Portuguese/Brazilian translation updates from Crowdin
+- [#485] Global Die deprecated, should now be accessed as foundry.dice.terms.Die
+
+---
+
 # v11.12.2
 
 #### Compatibility
