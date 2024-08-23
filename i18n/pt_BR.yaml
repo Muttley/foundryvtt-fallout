@@ -13,7 +13,7 @@ FALLOUT.AbilityLuc: L Sorte
 FALLOUT.AbilityPer: P Percepção
 FALLOUT.AbilityStr: S Força
 FALLOUT.actor.inventory.materials.common: Comum
-FALLOUT.actor.inventory.materials.junk: Lixo
+FALLOUT.actor.inventory.materials.junk: Sucata
 FALLOUT.actor.inventory.materials.junkSalvageControl: Reciclar Sucata
 FALLOUT.actor.inventory.materials.label: Materiais
 FALLOUT.actor.inventory.materials.rare: Raro
@@ -136,8 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radia
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dano de Radiação
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Pilhando Local
 FALLOUT.CHEM: Drogas
 FALLOUT.ChemDuration.brief: Curto
 FALLOUT.ChemDuration.instant: Instantâneo
@@ -165,11 +165,11 @@ FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Artibuto e/ou Habilidade de Criatura especificada.
 FALLOUT.FOOD: Comida
-FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
-FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
-FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
-FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
-FALLOUT.Form.ScavengingSettings.title: Scavenging Settings
+FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode especificar as Tabelas para serem usadas para cada categoria de resultado de pilhagem.
+FALLOUT.Form.ScavengingCategoryTables.title: Tabelas de Categoria Padrão
+FALLOUT.Form.ScavengingCompendium.hint: Se selecionado apenas as tabelas de rolagem armazenadas no compêndio especificado estarão disponíveis para seleção como fontes de resultado de Pilhagem.
+FALLOUT.Form.ScavengingCompendium.title: Compêndio de Pilhagem
+FALLOUT.Form.ScavengingSettings.title: Configurações de Pilhagem
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Você só pode selecionar um máximo de {maxChoices} desse tipo de Item.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Não foi possível achar itens do tipo correto nos compendios disponíveis.
 FALLOUT.Form.SelectCompendiumItem.prompt: Selecione Itens...
@@ -194,21 +194,21 @@ FALLOUT.LEVEL.CurrentXP: XP Atual
 FALLOUT.LEVEL.Level: Nível
 FALLOUT.LEVEL.NextXP: XP Prox. Nível
 FALLOUT.LEVEL.RewardXP: Recompensa XP
-FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
-FALLOUT.LOCATION_CATEGORY.commercial: Commercial
-FALLOUT.LOCATION_CATEGORY.custom: Custom
-FALLOUT.LOCATION_CATEGORY.industry: Industry
-FALLOUT.LOCATION_CATEGORY.medical: Medical
-FALLOUT.LOCATION_CATEGORY.military: Military
-FALLOUT.LOCATION_CATEGORY.residential: Residential
-FALLOUT.LOCATION_SCALE.average: Average
-FALLOUT.LOCATION_SCALE.large: Large
-FALLOUT.LOCATION_SCALE.small: Small
-FALLOUT.LOCATION_SCALE.tiny: Tiny
-FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
-FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
-FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
-FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
+FALLOUT.LOCATION_CATEGORY.agriculture: Agricultura
+FALLOUT.LOCATION_CATEGORY.commercial: Comércio
+FALLOUT.LOCATION_CATEGORY.custom: Personalizado
+FALLOUT.LOCATION_CATEGORY.industry: Industrial
+FALLOUT.LOCATION_CATEGORY.medical: Médico
+FALLOUT.LOCATION_CATEGORY.military: Militar
+FALLOUT.LOCATION_CATEGORY.residential: Residencial
+FALLOUT.LOCATION_SCALE.average: Médio
+FALLOUT.LOCATION_SCALE.large: Grande
+FALLOUT.LOCATION_SCALE.small: Pequeno
+FALLOUT.LOCATION_SCALE.tiny: Minúsculo
+FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutos
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 horas
+FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutos
+FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minuto
 FALLOUT.MACRO.Error.CaughtError: "O macro '{macro}' falhou pois apresenta o seguinte erro: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: O macro '{macro}' necessita que você tenha o cargo de Mestre
 FALLOUT.MACRO.NewSession.name: Nova Sessão
@@ -237,31 +237,31 @@ FALLOUT.RESISTANCE.Immunity.radiation: Imunidade a Radiação
 FALLOUT.RESISTANCE.physical: RD Física
 FALLOUT.RESISTANCE.poison: RD Veneno
 FALLOUT.RESISTANCE.radiation: RD Radiação
-FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Ammunition
-FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armor
-FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Beverages
-FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chems
-FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Clothing
-FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
-FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
-FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
-FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
-FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
-FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
-FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
-FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
-FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
-FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
-FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
-FALLOUT.SEARCHED_DEGREE.untouched: Untouched (D0)
+FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Munição
+FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armadura
+FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Bebidas
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Drogas
+FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Roupas
+FALLOUT.SCAVENGING_ITEM_TYPE.food: Comida
+FALLOUT.SCAVENGING_ITEM_TYPE.junk: Sucata
+FALLOUT.SCAVENGING_ITEM_TYPE.other: Outro
+FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armas
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Limpar Resultados
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Pilhar Local
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados de pilhagem foram limpos.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Pilhagem
+FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Nenhuma tabela de itens foi definida para itens do tipo {category}.
+FALLOUT.SEARCHED_DEGREE.heavily_searched: Pesadamente Vasculhado (D3)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: Majoritariamente Vasculhado (D2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Parcialmente Vasculhado (D1)
+FALLOUT.SEARCHED_DEGREE.untouched: Intocado (D0)
 FALLOUT.SETTINGS.sourceFilters.hint: Somente livros fonte inclusos nessa lista estarão disponíveis para seleção em lugares relevantes. Itens sem livro fonte estarão sempre disponíveis.
 FALLOUT.SETTINGS.sourceFilters.title: Filtros de Livros Fonte
 FALLOUT.SETTLEMENT_ACTION.Build: Construir
 FALLOUT.SETTLEMENT_ACTION.Business: Negócios
 FALLOUT.SETTLEMENT_ACTION.Guard: Guarda
 FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Caça e Coleta
-FALLOUT.SETTLEMENT_ACTION.Scavenging: Vasculhar Lixo
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Pilhando
 FALLOUT.SETTLEMENT_ACTION.TendCrops: Cultivo
 FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Caravana de Comércio
 FALLOUT.SETTLEMENT_ACTION.Unnasigned: Sem Função
@@ -306,7 +306,7 @@ FALLOUT.SOURCE_TITLE.core_rulebook: Livro de Regras Básico
 FALLOUT.SOURCE_TITLE.enclave_remnants: "Complemento de PNJs #2: Restos da Enclave"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Ferramentas de Mestre"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Pacote de Mapas #1: Refúgio"
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
+FALLOUT.SOURCE_TITLE.quickstart: Início Rápido
 FALLOUT.SOURCE_TITLE.rust_devils: "Complemento de PNJs #1: Os Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Livro Guia dos Colonos
 FALLOUT.SOURCE_TITLE.wanderers_guide: Livro Guia dos Andarilhos
@@ -316,15 +316,15 @@ FALLOUT.TEMPLATES.Add_Perk: Adicionar Talento
 FALLOUT.TEMPLATES.Add_Trait: Adicionar Traço
 FALLOUT.TEMPLATES.AddictionNumber: Número de Vício
 FALLOUT.TEMPLATES.Addictive: Viciante
-FALLOUT.TEMPLATES.Alcoholic: Alcoólatra
+FALLOUT.TEMPLATES.Alcoholic: "Alcoólatra\n"
 FALLOUT.TEMPLATES.AllLocations: Todas as Áreas
 FALLOUT.TEMPLATES.AMMO: MUNIÇÃO
 FALLOUT.TEMPLATES.Ammo.Current: Tiros Restantes
 FALLOUT.TEMPLATES.Ammo.Max: Tiros por Item
-FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
+FALLOUT.TEMPLATES.Ammo.Multishot: Tiro Múltiplo
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Rolar Quantidade
 FALLOUT.TEMPLATES.AmmoName: Nome da Munição
-FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
+FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: Para Melhorias de Armadura. Perna, Braço, etc.
 FALLOUT.TEMPLATES.Apparel_Type: Tipo do Vestuário
 FALLOUT.TEMPLATES.Apparel: Vestuário
 FALLOUT.TEMPLATES.APPAREL: VESTUÁRIO
@@ -336,7 +336,7 @@ FALLOUT.TEMPLATES.Attributes: Atributos
 FALLOUT.TEMPLATES.Base_Damage: Dano Base
 FALLOUT.TEMPLATES.Butchery: Talhar
 FALLOUT.TEMPLATES.ButcheryTooltip: Número Alvo de Talhar
-FALLOUT.TEMPLATES.Category: Category
+FALLOUT.TEMPLATES.Category: Categoria
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complicações
 FALLOUT.TEMPLATES.CONDITIONS: CONDIÇÕES
@@ -388,12 +388,12 @@ FALLOUT.TEMPLATES.DAMAGE: DANO
 FALLOUT.TEMPLATES.Data: Dados
 FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
 FALLOUT.TEMPLATES.DEFENSE: DEFESA
-FALLOUT.TEMPLATES.Degree: Degree
+FALLOUT.TEMPLATES.Degree: Grau
 FALLOUT.TEMPLATES.Delete_Item: Deletar Item
 FALLOUT.TEMPLATES.Delete: Deletar
 FALLOUT.TEMPLATES.DERIVED: SOBRE VOCÊ
 FALLOUT.TEMPLATES.Description: Descrição
-FALLOUT.TEMPLATES.Details: Details
+FALLOUT.TEMPLATES.Details: Detalhes
 FALLOUT.TEMPLATES.Duration: Duração
 FALLOUT.TEMPLATES.Edit_Item: Editar Item
 FALLOUT.TEMPLATES.Effect: Efeito
@@ -403,7 +403,7 @@ FALLOUT.TEMPLATES.ENG: ENERGIA
 FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMAS FAVORITAS
 FALLOUT.TEMPLATES.Fire_Rate: Cadência de Tiro
 FALLOUT.TEMPLATES.FIRE_RATE: CADÊNCIA
-FALLOUT.TEMPLATES.FoundItems: Found Items
+FALLOUT.TEMPLATES.FoundItems: Itens Encontrados
 FALLOUT.TEMPLATES.Gear: ITENS
 FALLOUT.TEMPLATES.GENERAL: GERAL
 FALLOUT.TEMPLATES.Healthy: Saudável
@@ -417,7 +417,7 @@ FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Dados de Dano de Radiação
 FALLOUT.TEMPLATES.Issue: Problema
-FALLOUT.TEMPLATES.Items: Items
+FALLOUT.TEMPLATES.Items: Itens
 FALLOUT.TEMPLATES.Junk: Sucata
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
@@ -435,7 +435,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Dano Corpo a Corpo
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Modificação
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Prefixos
-FALLOUT.TEMPLATES.Notes: Notes
+FALLOUT.TEMPLATES.Notes: Anotações
 FALLOUT.TEMPLATES.Origin: Origem
 FALLOUT.TEMPLATES.OVERSEER_AP: PA DO MESTRE
 FALLOUT.TEMPLATES.ParentItem: Item Originário
@@ -464,7 +464,7 @@ FALLOUT.TEMPLATES.Resistances: Resistências
 FALLOUT.TEMPLATES.RESISTANCES: RESISTÊNCIAS
 FALLOUT.TEMPLATES.Salvage: Sucatear
 FALLOUT.TEMPLATES.SalvageTooltip: NA de Sucatear
-FALLOUT.TEMPLATES.Scale: Scale
+FALLOUT.TEMPLATES.Scale: Escala
 FALLOUT.TEMPLATES.SettlersAndJobs: Colonos e Profissões
 FALLOUT.TEMPLATES.Skill_Tag: Habilidade Marcada
 FALLOUT.TEMPLATES.Skill_Value: Valor da Habilidade
@@ -549,7 +549,7 @@ FALLOUT.UI.BaseDamage: Dano Base
 FALLOUT.UI.BOOKS_AND_MAGZS: Livros e Revistas
 FALLOUT.UI.Cancel: Cancelar
 FALLOUT.UI.CAPS: Tampinhas
-FALLOUT.UI.CapsRoll: Caps Roll
+FALLOUT.UI.CapsRoll: Rolar Tampinhas
 FALLOUT.UI.CarryWeight: Peso da Carga
 FALLOUT.UI.ChemDoses.ConfirmReset: Repor Doses Químicas
 FALLOUT.UI.ChemDoses.Delete: Deletar Doses Químicas
@@ -568,7 +568,7 @@ FALLOUT.UI.MISCELLANY: Geral
 FALLOUT.UI.Name: Nome
 FALLOUT.UI.OTHER: Outro
 FALLOUT.UI.Perks: Talentos
-FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
+FALLOUT.UI.PreWarMoneyRoll: Rolar Dinheiro Pré-Guerra
 FALLOUT.UI.Qty: Qnt
 FALLOUT.UI.Quantity: Quantidade
 FALLOUT.UI.Rarity: Raridade
@@ -636,7 +636,7 @@ TYPES.Actor.character: Personagem
 TYPES.Actor.creature: Criatura
 TYPES.Actor.npc: NPJ
 TYPES.Actor.robot: Robô
-TYPES.Actor.scavenging_location: Scavenging Location
+TYPES.Actor.scavenging_location: Local de Pilhagem
 TYPES.Actor.settlement: Assentamento
 TYPES.Item.addiction: Vício
 TYPES.Item.ammo: Munição

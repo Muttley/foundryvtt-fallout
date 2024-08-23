@@ -136,7 +136,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux r
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dégâts de radiation de {radsTaken} en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Recycleur
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} a été nettoyé, prenant{time}"
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} a été nettoyé, prenant {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Lieu de récupération
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
@@ -247,7 +247,7 @@ FALLOUT.SCAVENGING_ITEM_TYPE.junk: Bric-à-brac
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Autres
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armes
 FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Effacer les résultats
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Lieu de récupération
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Fouille du lieu
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Tous les résultats de récupération ont été effacés.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Effacer les résultats de récupération
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Aucune table d'objet n'a été définie pour la {category} d'objets.
