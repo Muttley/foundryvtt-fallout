@@ -437,7 +437,7 @@ FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Prefixos
 FALLOUT.TEMPLATES.Notes: Anotações
 FALLOUT.TEMPLATES.Origin: Origem
-FALLOUT.TEMPLATES.OVERSEER_AP: PA DO MESTRE
+FALLOUT.TEMPLATES.OVERSEER_AP: PA DO SUPERVISOR
 FALLOUT.TEMPLATES.ParentItem: Item Originário
 FALLOUT.TEMPLATES.PARTY_AP: PA MÁXIMO DO GRUPO
 FALLOUT.TEMPLATES.PERK: TALENTO
@@ -510,7 +510,7 @@ FALLOUT.TOOLTIPS.DamageEffect.arc: Cada Efeito rolado automaticamente acerta um 
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Por cada Efeito rolado, reduz o número de @fos[DC] que a cobertura fornece ao alvo em 1, permanentemente. Se o alvo não está em cobertura, reduza a RD do local atingido em 1, dependendo do dano que a arma inflinge.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional gasta 1 munição adicional da arma.
 FALLOUT.TOOLTIPS.DamageEffect.freeze: Inimigos acertados pelo ataque serão Congeladosse o número de Efeitos rolados for igual ou maior que metade que o Vigor do alvo (ou Corpo para Criaturas). Uma criatura Congelada não pode realizar ações no seu próximo turno.
-FALLOUT.TOOLTIPS.DamageEffect.persistent: "Se um ou mais efeitos forem rolados, o alvo sofre o dano da arma novamente no final de seus próximos turno, por um número de rodadas igual ao número de Efeitos rolados. O avlo pode gastar uma Ação Maior para fazer um teste para parar o dano persistente antecipadamente, com a dificuldade igual a quantidade de Efeitos rolados, e o Atributo + Habildiade escolhido pelo Mestre."
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "Se um ou mais efeitos forem rolados, o alvo sofre o dano da arma novamente no final de seus próximos turno, por um número de rodadas igual ao número de Efeitos rolados. O alvo pode gastar uma Ação Maior para fazer um teste para parar o dano persistente antecipadamente, com a dificuldade igual a quantidade de Efeitos rolados, e o Atributo + Habildiade escolhido pelo Mestre. Algumas armas Persistentes podem infligir um tipo diferente de dano da arma e, quando for o caso, será indicado entre colchetes, por exemplo: Persistente (Veneno)."
 FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignora X pontos da RD do alvo para cada Efeito rolado, onde X é o nível desse efeito de dano.
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Por cada Efeito rolado, o alvo também sofre 1 ponto de dano de radiação. Esse dano de radiação é rolado e aplicado separadamente, logo após o alvo sofrer o dano normal do ataque.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque inflige um acerto adicional no alvo. Cada acerto adicional inflige metade do dano rolado (arredondado para baixo) e atinge um local aleatório, mesmo que um local específico tenha sido alvo do ataque inicial.
