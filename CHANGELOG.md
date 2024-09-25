@@ -2,6 +2,7 @@
 
 #### Enhancements
 - [#490] Round Actor caps in order to play better with fractional values created when using Item Piles merchants
+- [#491] Allow Active Effects to be added to Miscellany items
 
 #### Bugs
 - [#487] Hazmat Suit is missing cost/weight/rarity values
