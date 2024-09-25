@@ -114,6 +114,12 @@ export default class FalloutActor extends Actor {
 		return perk?.system?.rank?.value ?? 0;
 	}
 
+	prepareData() {
+		super.prepareData();
+
+		this.system.currency.caps = Math.round(this.system.currency.caps);
+	}
+
 	/**
 	* @override
 	* Augment the basic actor data with additional dynamic data. Typically,
