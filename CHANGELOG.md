@@ -6,6 +6,7 @@
 
 #### Bugs
 - [#487] Hazmat Suit is missing cost/weight/rarity values
+- [#488] Well rested doesn't modify current HP level correctly after party sleep
 
 #### Chores
 - [#478] Merge new French, Polish and Portuguese/Brazilian translation updates from Crowdin

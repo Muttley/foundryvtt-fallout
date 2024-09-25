@@ -45,6 +45,9 @@ export default class FalloutActor extends Actor {
 		return !this.isRobot;
 	}
 
+	get isNotWellRested() {
+		return !this.isWellRested;
+	}
 
 	get isPlayerCharacter() {
 		return ["character", "robot"].includes(this.type);
@@ -53,7 +56,6 @@ export default class FalloutActor extends Actor {
 	get isRobot() {
 		return this.type === "robot";
 	}
-
 
 	get isWellRested() {
 		return this.type === "character" && this.system.conditions.wellRested;
@@ -1565,11 +1567,17 @@ export default class FalloutActor extends Actor {
 			if (newSleepStatus > 0) newSleepStatus--;
 		}
 
-		await this.update({
+		const updateData = {
 			"system.conditions.fatigue": newFatigue,
 			"system.conditions.lastChanged.sleep": game.time.worldTime,
 			"system.conditions.sleep": newSleepStatus,
 			"system.conditions.wellRested": newWellRested,
-		});
+		};
+
+		if (newWellRested && this.isNotWellRested) {
+			updateData["system.health.value"] = this.system.health.value + 2;
+		}
+
+		await this.update(updateData);
 	}
 }
