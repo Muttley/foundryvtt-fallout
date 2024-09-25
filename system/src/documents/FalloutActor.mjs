@@ -1194,6 +1194,14 @@ export default class FalloutActor extends Actor {
 
 		const isFull = this.system.conditions.hunger === 0;
 
+		if (consumableType === "food" && isFull) {
+			ui.notifications.warn(
+				game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
+			);
+
+			return false;
+		}
+
 		const currentWorldTime = game.time.worldTime;
 
 		const actorUpdateData = {};
@@ -1387,27 +1395,17 @@ export default class FalloutActor extends Actor {
 		}
 
 		if (consumableType === "food") {
-			if (isFull) {
-				consumed = false;
+			const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
+			const hungerReduction = item.system.prepared ? 2 : 1;
 
-				ui.notifications.warn(
-					game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
-				);
-			}
-			else {
-				const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
-				const hungerReduction = item.system.prepared ? 2 : 1;
+			actorUpdateData["system.conditions.lastChanged.hunger"] =
+				currentWorldTime;
 
-				actorUpdateData["system.conditions.lastChanged.hunger"] =
-					currentWorldTime;
-
-				actorUpdateData["system.conditions.hunger"] =
-					Math.max(currentHunger - hungerReduction, 0);
-			}
+			actorUpdateData["system.conditions.hunger"] =
+				Math.max(currentHunger - hungerReduction, 0);
 		}
 
 		await this.update(actorUpdateData);
-
 
 		if (consumed) {
 			fallout.chat.renderConsumptionMessage(
