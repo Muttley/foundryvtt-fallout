@@ -28,23 +28,26 @@ select {
 }
 
 .toggle-label {
-	input[type="checkbox"] {
-		display: none;
-	}
-	label {
-		cursor: pointer;
-	}
-
 	padding: 3px;
 	border: 0 solid;
 	border-radius: 4px;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: cadetblue;
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	label {
+		cursor: pointer;
+	}
+
 	&.active {
 		color: greenyellow;
 		background-color: black;
 	}
 }
+
 .wpn-tag-toggler {
 	cursor: pointer;
 	padding: 0;

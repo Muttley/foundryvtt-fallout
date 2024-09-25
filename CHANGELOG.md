@@ -4,6 +4,7 @@
 - [#478] Merge new French, Polish and Portuguese/Brazilian translation updates from Crowdin
 - [#485] Global Die deprecated, should now be accessed as foundry.dice.terms.Die
 - [#486] Merge new Portuguese/Brazilian translation updates from Crowdin
+- [#489] Sass's behavior for declarations that appear after nested rules will be changing
 
 ---
 

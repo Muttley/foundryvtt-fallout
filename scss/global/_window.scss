@@ -208,6 +208,10 @@
 	padding: 0;
 	color: $c-font-prim;
 	background-color: $f-vault-blue;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
 	& > form {
 		padding: 8px;
 		&.character {
@@ -223,6 +227,7 @@
 			background-color: $f-valut-dark-green;
 		}
 	}
+
 	.content-link{
 		background: darken($f-vault-blue, 10%);
 		border: unset;
@@ -231,10 +236,6 @@
 		}
 
 	}
-
-	background-size: cover;
-	background-repeat: no-repeat;
-
 
 	a.inline-roll.roll {
 		background: #4c93d2;
