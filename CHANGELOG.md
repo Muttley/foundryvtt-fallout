@@ -3,6 +3,9 @@
 #### Enhancements
 - [#490] Round Actor caps in order to play better with fractional values created when using Item Piles merchants
 
+#### Bugs
+- [#487] Hazmat Suit is missing cost/weight/rarity values
+
 #### Chores
 - [#478] Merge new French, Polish and Portuguese/Brazilian translation updates from Crowdin
 - [#485] Global Die deprecated, should now be accessed as foundry.dice.terms.Die

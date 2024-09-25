@@ -9,7 +9,7 @@
 	"system": {
 		"apparelType": "outfit",
 		"canBeScrapped": true,
-		"cost": 0,
+		"cost": 85,
 		"description": "<p><span class=\"fontstyle0\">A completely enclosed suit for handling hazardous materials. The materials a hazmat suit is made from don&rsquo;t stand up well to violence; but wearing one of these renders you basically immune to radiation.</span> </p>",
 		"equippable": true,
 		"equipped": false,
@@ -40,7 +40,7 @@
 			"powered": false
 		},
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": 3,
 		"resistance": {
 			"energy": 0,
 			"physical": 0,
@@ -48,7 +48,7 @@
 		},
 		"source": "core_rulebook",
 		"stashed": false,
-		"weight": 0
+		"weight": 5
 	},
 	"type": "apparel"
 }
