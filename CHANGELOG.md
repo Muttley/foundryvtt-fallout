@@ -5,6 +5,7 @@
 - [#491] Allow Active Effects to be added to Miscellany items
 
 #### Bugs
+- [#482] Robot Mods not appearing in their own section on a PC sheet
 - [#484] Food is healing even if a character is full
 - [#487] Hazmat Suit is missing cost/weight/rarity values
 - [#488] Well rested doesn't modify current HP level correctly after party sleep
