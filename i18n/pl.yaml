@@ -134,6 +134,7 @@ FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Jesteś już pełen i nie możesz 
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} oparł się {baseRadDamage} obrażeniom od promieniowania po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiacja odparta
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
