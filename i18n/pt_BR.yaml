@@ -125,6 +125,7 @@ FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Nível de Fadiga
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Nível de Fome
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Nível de Sono
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nível de Sede
+FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumiu {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga Consumida
@@ -135,6 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radiação
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dano de Radiação
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Pilhando Local
@@ -209,8 +212,12 @@ FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutos
 FALLOUT.LOCATION_TIME_TAKEN.large: 2 horas
 FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutos
 FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minuto
+FALLOUT.MACRO.DrinkDirtyWater.name: Drink Dirty Water
 FALLOUT.MACRO.Error.CaughtError: "O macro '{macro}' falhou pois apresenta o seguinte erro: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: O macro '{macro}' necessita que você tenha o cargo de Mestre
+FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
+FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
+FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
 FALLOUT.MACRO.NewSession.name: Nova Sessão
 FALLOUT.MACRO.Success: O macro '{macro}' foi usado com sucesso
 FALLOUT.MIGRATION.begin_migration: Realizando atualizações de arquivos para Fallout 2d20
