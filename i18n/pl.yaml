@@ -125,6 +125,7 @@ FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Poziom zmęczenia
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Poziom głodu
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Poziom snu
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Poziom pragnienia
+FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Zużyte napoje
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} zużył {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Zużyte środki chemiczne
@@ -133,8 +134,9 @@ FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Jesteś już pełen i nie możesz 
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Zużyte inne
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} oparł się {baseRadDamage} obrażeniom od promieniowania po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiacja odparta
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} otrzymuje {radsTaken} obrażeń od radiacji po spożyciu {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Złomiarz
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} została oszabrowana, zajęło to {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Szabrowanie lokacji
@@ -209,8 +211,12 @@ FALLOUT.LOCATION_TIME_TAKEN.average: 30 minut
 FALLOUT.LOCATION_TIME_TAKEN.large: 2 godziny
 FALLOUT.LOCATION_TIME_TAKEN.small: 10 minut
 FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minuta
+FALLOUT.MACRO.DrinkDirtyWater.name: Drink Dirty Water
 FALLOUT.MACRO.Error.CaughtError: "Makro '{macro}' nie powiodło się, zwracając następujący błąd: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: Makro '{macro}' wymaga uprawnień roli 'Mistrza Gry'
+FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
+FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
+FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
 FALLOUT.MACRO.NewSession.name: Nowa Sesja
 FALLOUT.MACRO.Success: Makro '{macro}' zakończone pomyślnie
 FALLOUT.MIGRATION.begin_migration: Wykonywanie aktualizacji danych dla Fallout 2d20
