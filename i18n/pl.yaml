@@ -418,7 +418,7 @@ FALLOUT.TEMPLATES.Irradiated: Skażony
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Kości obrażeń od radiacji
 FALLOUT.TEMPLATES.Issue: Problem
 FALLOUT.TEMPLATES.Items: Przedmioty
-FALLOUT.TEMPLATES.Junk: Junk
+FALLOUT.TEMPLATES.Junk: Śmieci
 FALLOUT.TEMPLATES.kgs: Kg
 FALLOUT.TEMPLATES.lbs: Lb
 FALLOUT.TEMPLATES.Learned: Nauczony
@@ -435,7 +435,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Obrażenia Wręcz
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
 FALLOUT.TEMPLATES.MODULES: Modyfikacje
 FALLOUT.TEMPLATES.Name_Prefix: Element nazwy
-FALLOUT.TEMPLATES.Notes: Notes
+FALLOUT.TEMPLATES.Notes: Notatki
 FALLOUT.TEMPLATES.Origin: Pochodzenie
 FALLOUT.TEMPLATES.OVERSEER_AP: PA Nadzorcy
 FALLOUT.TEMPLATES.ParentItem: Element nadrzędny
@@ -464,7 +464,7 @@ FALLOUT.TEMPLATES.Resistances: Odporności
 FALLOUT.TEMPLATES.RESISTANCES: Odporności
 FALLOUT.TEMPLATES.Salvage: Odzyskiwanie
 FALLOUT.TEMPLATES.SalvageTooltip: PT testu odzyskiwania
-FALLOUT.TEMPLATES.Scale: Scale
+FALLOUT.TEMPLATES.Scale: Skala
 FALLOUT.TEMPLATES.SettlersAndJobs: Osadnicy i miejsca pracy
 FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
 FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
@@ -559,8 +559,8 @@ FALLOUT.UI.CONSUMABLES: Jednorazowe
 FALLOUT.UI.Consume: Użyj
 FALLOUT.UI.Cost: Cena
 FALLOUT.UI.Damage: Obrażenia
-FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
-FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
+FALLOUT.UI.DeleteOrJunk.message: Czy chcesz usunąć lub zezłomować ten przedmiot?
+FALLOUT.UI.DeleteOrJunk.title: Usunąć czy zezłomować?
 FALLOUT.UI.DISEASES: Choroby
 FALLOUT.UI.favorite: Ulubiony
 FALLOUT.UI.INVENTORY: Ekwipunek
@@ -636,7 +636,7 @@ TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie
 TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
-TYPES.Actor.scavenging_location: Scavenging Location
+TYPES.Actor.scavenging_location: Szabruj lokacje
 TYPES.Actor.settlement: Osada
 TYPES.Item.addiction: Uzależnienie
 TYPES.Item.ammo: Amunicja
