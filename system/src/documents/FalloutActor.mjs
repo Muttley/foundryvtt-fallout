@@ -1442,6 +1442,98 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+	async drinkDirtyWater() {
+		if (this.type !== "character") return false;
+
+		const currentWorldTime = game.time.worldTime;
+
+		const actorUpdateData = {};
+
+		let newHp = this.system.health.value + 2;
+		const cappedHp = Math.min(newHp, this.system.health.max);
+
+		actorUpdateData["system.health.value"] = cappedHp;
+
+		const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
+		const thirstReduction = 1;
+
+		actorUpdateData["system.conditions.lastChanged.thirst"] =
+			currentWorldTime;
+
+		actorUpdateData["system.conditions.thirst"] =
+			Math.max(currentThirst - thirstReduction, 0);
+
+		let formula = "1dccs>=5";
+		let roll = new Roll(formula);
+
+		let radiationDamageRoll = await roll.evaluate();
+
+		fallout.Roller2D20.showDiceSoNice(radiationDamageRoll);
+
+		const baseRadDamage = parseInt(roll.result);
+		if (baseRadDamage > 0) {
+			const radResistance = this.system.resistance?.radiation ?? 0;
+			const radsTaken = Math.max(0, baseRadDamage - radResistance);
+
+			const newRadiation = this.system.immunities.radiation
+				? 0
+				: this.system.radiation + radsTaken;
+
+			if (newRadiation > 0) {
+				actorUpdateData["system.radiation"] = newRadiation;
+
+				fallout.chat.renderGeneralMessage(
+					this,
+					{
+						title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
+						body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body",
+							{
+								actorName: this.name,
+								radsTaken,
+							}
+						),
+					},
+					CONST.DICE_ROLL_MODES.PRIVATE
+				);
+			}
+			else {
+				fallout.chat.renderGeneralMessage(
+					this,
+					{
+						title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title"),
+						body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body",
+							{
+								actorName: this.name,
+								baseRadDamage,
+								itemName: item.name,
+							}
+						),
+					},
+					CONST.DICE_ROLL_MODES.PRIVATE
+				);
+			}
+		}
+
+		await this.update(actorUpdateData);
+
+		fallout.chat.renderConsumptionMessage(
+			this,
+			{
+				title: game.i18n.localize(
+					"FALLOUT.CHAT_MESSAGE.consumed.beverage.title"
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body",
+					{
+						actorName: this.name,
+					}
+				),
+				showHungerAndThirst: true,
+				hunger: this.system.conditions.hunger,
+				thirst: this.system.conditions.thirst,
+			}
+		);
+	}
+
 	async isAddictedToChem(item) {
 		const chemName = item.system.consumableGroup !== ""
 			? item.system.consumableGroup

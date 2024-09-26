@@ -1,0 +1,11 @@
+{
+	"_id": "xzZthgPmhdrqggHJ",
+	"_key": "!macros!xzZthgPmhdrqggHJ",
+	"author": "o8zsiuAwMiOtkmvl",
+	"command": "/**\n ***************************************************************\n * This macro can be used to have a character drink dirty water\n * from the environment rather than by using a Dirty Water\n * consumable item from their inventory.\n *\n * When a GM runs this macro, it will use the currently\n * selected character token.\n *\n * When a player runs this macro, it will use their assigned\n * primary character.\n **************************************************************/\n\nfallout.macros.drinkDirtyWater();",
+	"folder": null,
+	"img": "systems/fallout/assets/icons/macro/drink-dirty-water.svg",
+	"name": "Drink Dirty Water",
+	"scope": "global",
+	"type": "script"
+}

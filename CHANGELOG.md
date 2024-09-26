@@ -1,6 +1,10 @@
 # v11.13.0
 
 #### Enhancements
+- [#481] Add Macro for Consuming Dirty Water From the Environment
+
+	* This is called **"Drink Dirty Water"** and for players will consume Dirty Water for their assigned default character.  For GMs it will consume Dirty Water for the selected token.
+
 - [#490] Round Actor caps in order to play better with fractional values created when using Item Piles merchants
 - [#491] Allow Active Effects to be added to Miscellany items
 
@@ -15,7 +19,7 @@
 - [#485] Global Die deprecated, should now be accessed as foundry.dice.terms.Die
 - [#486] Merge new Portuguese/Brazilian translation updates from Crowdin
 - [#489] Sass's behavior for declarations that appear after nested rules will be changing
-- [#478] Merge new Polish translation updates from Crowdin
+- [#492] Merge new Polish translation updates from Crowdin
 - [#495] Remove Use of Deprecated Sass darken() Method
 
 ---

@@ -125,6 +125,7 @@ FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Fatigue Level
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
+FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
@@ -133,8 +134,9 @@ FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot ea
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
@@ -209,8 +211,12 @@ FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
 FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
 FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
 FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
+FALLOUT.MACRO.DrinkDirtyWater.name: Drink Dirty Water
 FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
+FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
+FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
+FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
 FALLOUT.MACRO.NewSession.name: New Session
 FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
 FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
