@@ -22,6 +22,8 @@
 - [#492] Merge new Polish translation updates from Crowdin
 - [#495] Remove Use of Deprecated Sass darken() Method
 
+**NOTE:** This release marks the end of support for FoundryVTT v11 and requires FoundryVTT v12
+
 ---
 
 # v11.12.2
