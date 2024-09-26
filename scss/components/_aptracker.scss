@@ -2,10 +2,6 @@
 	position: absolute;
 	display: block;
 	margin: 5px;
-	//padding: 10px;
-	//border: 1px solid black;
-	//border-radius: 12px;
-	//background-color: $f-vault-blue;
 	bottom: 20px !important;
 	right: 320px !important;
 
@@ -15,15 +11,17 @@
 		margin-bottom: 10px;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		//color: white;
+
 		&.gm {
-			@include element-color($f-vault-blue, 2);
+			@include element-color($c-action-points-gm, 2);
 		}
-		&.party {
-			@include element-color(darken($fa-green, 10%), 3);
-		}
+
 		&.maxAP-box {
-			@include element-color(darken($f-purple, 10%), 3);
+			@include element-color($c-action-points-max, 3);
+		}
+
+		&.party {
+			@include element-color($c-action-points-party, 3);
 		}
 
 		.toggle-maxAp {
@@ -36,10 +34,12 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
 		h4 {
 			margin: 0 0 2px 0;
 			color: bisque;
 		}
+
 		input[type="number"] {
 			margin: 0 5px;
 			font-size: 16px;

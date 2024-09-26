@@ -214,22 +214,17 @@
 
 	& > form {
 		padding: 8px;
-		&.character {
-			background-color: $f-vault-blue;
-		}
+
+		&.character,
+		&.creature,
+		&.npc,
 		&.robot {
 			background-color: $f-vault-blue;
-		}
-		&.npc {
-			background-color: $f-valut-dark-green;
-		}
-		&.creature {
-			background-color: $f-valut-dark-green;
 		}
 	}
 
 	.content-link{
-		background: darken($f-vault-blue, 10%);
+		background: $f-vault-dark-blue;
 		border: unset;
 		.fas {
 			color:$c-font-prim;

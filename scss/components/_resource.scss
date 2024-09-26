@@ -18,11 +18,11 @@ input[type="number"] {
 
 select {
 	color: $c-font-prim;
-	background-color: darken($c-font-prim-contra, 10%);
+	background-color: $c-font-prim-contra;
 
 	option {
 		color: $c-font-prim;
-		background-color: darken($c-font-prim-contra, 10%);
+		background-color: $c-font-prim-contra;
 		font-family: $font-primary;
 	}
 }
