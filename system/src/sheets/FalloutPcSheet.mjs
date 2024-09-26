@@ -28,6 +28,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			"disease",
 			"miscellany",
 			"perk",
+			"robot_mod",
 			"skill",
 			"trait",
 			"weapon_mod",

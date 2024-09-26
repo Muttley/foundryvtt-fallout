@@ -125,6 +125,7 @@ FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Niveau de fatigue
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Niveau de faim
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Niveau de sommeil
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Niveau de soif
+FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Boisson consommée
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} a consommé {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
@@ -135,8 +136,10 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} a ré
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux radiations
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dégâts de radiation de {radsTaken} en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Recycleur
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} a été nettoyé, prenant{time}"
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} a été nettoyé, prenant {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Lieu de récupération
 FALLOUT.CHEM: Drogues
 FALLOUT.ChemDuration.brief: Brève
@@ -209,8 +212,12 @@ FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
 FALLOUT.LOCATION_TIME_TAKEN.large: 2 heures
 FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
 FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
+FALLOUT.MACRO.DrinkDirtyWater.name: Drink Dirty Water
 FALLOUT.MACRO.Error.CaughtError: "La macro '{macro}' a échoué avec l'erreur suivante : {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: La macro '{macro}' nécessite que vous ayez le rôle d'utilisateur 'Maître de jeu'
+FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
+FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
+FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
 FALLOUT.MACRO.NewSession.name: Nouvelle session
 FALLOUT.MACRO.Success: La macro '{macro}' s'est exécutée avec succès
 FALLOUT.MIGRATION.begin_migration: Effectuer des mises à niveau de données pour Fallout 2d20
@@ -247,7 +254,7 @@ FALLOUT.SCAVENGING_ITEM_TYPE.junk: Bric-à-brac
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Autres
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armes
 FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Effacer les résultats
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Lieu de récupération
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Fouille du lieu
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Tous les résultats de récupération ont été effacés.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Effacer les résultats de récupération
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Aucune table d'objet n'a été définie pour la {category} d'objets.

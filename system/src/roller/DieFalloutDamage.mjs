@@ -1,4 +1,4 @@
-export class DieFalloutDamage extends Die {
+export class DieFalloutDamage extends foundry.dice.terms.Die {
 	constructor(termData) {
 		termData.faces = 6;
 		super(termData);

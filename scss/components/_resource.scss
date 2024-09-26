@@ -18,33 +18,36 @@ input[type="number"] {
 
 select {
 	color: $c-font-prim;
-	background-color: darken($c-font-prim-contra, 10%);
+	background-color: $c-font-prim-contra;
 
 	option {
 		color: $c-font-prim;
-		background-color: darken($c-font-prim-contra, 10%);
+		background-color: $c-font-prim-contra;
 		font-family: $font-primary;
 	}
 }
 
 .toggle-label {
-	input[type="checkbox"] {
-		display: none;
-	}
-	label {
-		cursor: pointer;
-	}
-
 	padding: 3px;
 	border: 0 solid;
 	border-radius: 4px;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: cadetblue;
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	label {
+		cursor: pointer;
+	}
+
 	&.active {
 		color: greenyellow;
 		background-color: black;
 	}
 }
+
 .wpn-tag-toggler {
 	cursor: pointer;
 	padding: 0;

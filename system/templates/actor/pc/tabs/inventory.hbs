@@ -13,14 +13,12 @@
 				type="apparel_mod"
 			}}
 
-			{{#if isRobot}}
-				{{> actor/pc/partials/inventory-block
-					blockTitle=(localize "FALLOUT.UI.ROBOT_MODULES")
-					createTitle=(localize "FALLOUT.TEMPLATES.Create_Robot_Module")
-					items=itemsByType.robot_mod
-					type="robot_mod"
-				}}
-			{{/if}}
+			{{> actor/pc/partials/inventory-block
+				blockTitle=(localize "FALLOUT.UI.ROBOT_MODULES")
+				createTitle=(localize "FALLOUT.TEMPLATES.Create_Robot_Module")
+				items=itemsByType.robot_mod
+				type="robot_mod"
+			}}
 
 			{{> actor/pc/partials/inventory-block
 				blockTitle=(localize "FALLOUT.UI.WEAPON_MODS")

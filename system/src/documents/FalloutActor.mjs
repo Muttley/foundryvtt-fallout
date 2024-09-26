@@ -45,6 +45,9 @@ export default class FalloutActor extends Actor {
 		return !this.isRobot;
 	}
 
+	get isNotWellRested() {
+		return !this.isWellRested;
+	}
 
 	get isPlayerCharacter() {
 		return ["character", "robot"].includes(this.type);
@@ -53,7 +56,6 @@ export default class FalloutActor extends Actor {
 	get isRobot() {
 		return this.type === "robot";
 	}
-
 
 	get isWellRested() {
 		return this.type === "character" && this.system.conditions.wellRested;
@@ -112,6 +114,12 @@ export default class FalloutActor extends Actor {
 		});
 
 		return perk?.system?.rank?.value ?? 0;
+	}
+
+	prepareData() {
+		super.prepareData();
+
+		this.system.currency.caps = Math.round(this.system.currency.caps);
 	}
 
 	/**
@@ -1186,6 +1194,14 @@ export default class FalloutActor extends Actor {
 
 		const isFull = this.system.conditions.hunger === 0;
 
+		if (consumableType === "food" && isFull) {
+			ui.notifications.warn(
+				game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
+			);
+
+			return false;
+		}
+
 		const currentWorldTime = game.time.worldTime;
 
 		const actorUpdateData = {};
@@ -1379,27 +1395,17 @@ export default class FalloutActor extends Actor {
 		}
 
 		if (consumableType === "food") {
-			if (isFull) {
-				consumed = false;
+			const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
+			const hungerReduction = item.system.prepared ? 2 : 1;
 
-				ui.notifications.warn(
-					game.i18n.localize("FALLOUT.CHAT_MESSAGE.consumed.food.warn_full")
-				);
-			}
-			else {
-				const currentHunger = parseInt(this.system.conditions.hunger) ?? 0;
-				const hungerReduction = item.system.prepared ? 2 : 1;
+			actorUpdateData["system.conditions.lastChanged.hunger"] =
+				currentWorldTime;
 
-				actorUpdateData["system.conditions.lastChanged.hunger"] =
-					currentWorldTime;
-
-				actorUpdateData["system.conditions.hunger"] =
-					Math.max(currentHunger - hungerReduction, 0);
-			}
+			actorUpdateData["system.conditions.hunger"] =
+				Math.max(currentHunger - hungerReduction, 0);
 		}
 
 		await this.update(actorUpdateData);
-
 
 		if (consumed) {
 			fallout.chat.renderConsumptionMessage(
@@ -1434,6 +1440,98 @@ export default class FalloutActor extends Actor {
 		else {
 			return false;
 		}
+	}
+
+	async drinkDirtyWater() {
+		if (this.type !== "character") return false;
+
+		const currentWorldTime = game.time.worldTime;
+
+		const actorUpdateData = {};
+
+		let newHp = this.system.health.value + 2;
+		const cappedHp = Math.min(newHp, this.system.health.max);
+
+		actorUpdateData["system.health.value"] = cappedHp;
+
+		const currentThirst = parseInt(this.system.conditions.thirst) ?? 0;
+		const thirstReduction = 1;
+
+		actorUpdateData["system.conditions.lastChanged.thirst"] =
+			currentWorldTime;
+
+		actorUpdateData["system.conditions.thirst"] =
+			Math.max(currentThirst - thirstReduction, 0);
+
+		let formula = "1dccs>=5";
+		let roll = new Roll(formula);
+
+		let radiationDamageRoll = await roll.evaluate();
+
+		fallout.Roller2D20.showDiceSoNice(radiationDamageRoll);
+
+		const baseRadDamage = parseInt(roll.result);
+		if (baseRadDamage > 0) {
+			const radResistance = this.system.resistance?.radiation ?? 0;
+			const radsTaken = Math.max(0, baseRadDamage - radResistance);
+
+			const newRadiation = this.system.immunities.radiation
+				? 0
+				: this.system.radiation + radsTaken;
+
+			if (newRadiation > 0) {
+				actorUpdateData["system.radiation"] = newRadiation;
+
+				fallout.chat.renderGeneralMessage(
+					this,
+					{
+						title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title"),
+						body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body",
+							{
+								actorName: this.name,
+								radsTaken,
+							}
+						),
+					},
+					CONST.DICE_ROLL_MODES.PRIVATE
+				);
+			}
+			else {
+				fallout.chat.renderGeneralMessage(
+					this,
+					{
+						title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title"),
+						body: game.i18n.format("FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body",
+							{
+								actorName: this.name,
+								baseRadDamage,
+								itemName: item.name,
+							}
+						),
+					},
+					CONST.DICE_ROLL_MODES.PRIVATE
+				);
+			}
+		}
+
+		await this.update(actorUpdateData);
+
+		fallout.chat.renderConsumptionMessage(
+			this,
+			{
+				title: game.i18n.localize(
+					"FALLOUT.CHAT_MESSAGE.consumed.beverage.title"
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body",
+					{
+						actorName: this.name,
+					}
+				),
+				showHungerAndThirst: true,
+				hunger: this.system.conditions.hunger,
+				thirst: this.system.conditions.thirst,
+			}
+		);
 	}
 
 	async isAddictedToChem(item) {
@@ -1559,11 +1657,17 @@ export default class FalloutActor extends Actor {
 			if (newSleepStatus > 0) newSleepStatus--;
 		}
 
-		await this.update({
+		const updateData = {
 			"system.conditions.fatigue": newFatigue,
 			"system.conditions.lastChanged.sleep": game.time.worldTime,
 			"system.conditions.sleep": newSleepStatus,
 			"system.conditions.wellRested": newWellRested,
-		});
+		};
+
+		if (newWellRested && this.isNotWellRested) {
+			updateData["system.health.value"] = this.system.health.value + 2;
+		}
+
+		await this.update(updateData);
 	}
 }
