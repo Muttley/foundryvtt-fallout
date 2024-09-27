@@ -149,6 +149,7 @@ FALLOUT.DEFAULT_ICONS = {
 	disease: "systems/fallout/assets/icons/items/disease.svg",
 	miscellany: "systems/fallout/assets/icons/items/miscellany.svg",
 	object_or_structure: "systems/fallout/assets/icons/items/object_or_structure.svg",
+	origin: "systems/fallout/assets/icons/items/origin.svg",
 	perk: "systems/fallout/assets/icons/items/perk.svg",
 	robot_armor: "systems/fallout/assets/icons/items/robot_armor.svg",
 	robot_mod: "systems/fallout/assets/icons/items/robot_mod.svg",

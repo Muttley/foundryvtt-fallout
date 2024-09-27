@@ -662,6 +662,7 @@ TYPES.Item.consumable: Consumable
 TYPES.Item.disease: Disease
 TYPES.Item.miscellany: Miscellany
 TYPES.Item.object_or_structure: Object/Structure
+TYPES.Item.origin: Origin
 TYPES.Item.perk: Perk
 TYPES.Item.robot_armor: Robot Armor
 TYPES.Item.robot_mod: Robot Module
