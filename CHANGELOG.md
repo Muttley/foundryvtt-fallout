@@ -8,6 +8,7 @@
 
 #### Chores
 - [#499] Merge new French translation updates from Crowdin
+- [#506] Update source titles to include newly released books/PDFs
 
 ---
 

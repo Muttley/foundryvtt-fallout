@@ -305,16 +305,20 @@ FALLOUT.SKILL.Speech: Speech
 FALLOUT.SKILL.Survival: Survival
 FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
