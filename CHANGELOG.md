@@ -1,3 +1,10 @@
+# v11.14.0
+
+#### Enhancements
+- [#503] Add the Quickstart Rules and "Machine Frequency" adventure to the system *(many thanks to Modiphius for allowing us to include this material)*
+
+---
+
 # v11.13.0
 
 #### Enhancements

@@ -71,6 +71,15 @@
 			"flags": {}
 		},
 		{
+			"name": "consumables",
+			"label": "Consumables",
+			"system": "fallout",
+			"path": "packs/consumables",
+			"type": "Item",
+			"private": false,
+			"flags": {}
+		},
+		{
 			"name": "diseases",
 			"label": "Diseases",
 			"system": "fallout",
@@ -80,11 +89,11 @@
 			"flags": {}
 		},
 		{
-			"name": "consumables",
-			"label": "Consumables",
+			"name": "fallout_adventures",
+			"label": "Fallout Adventures",
 			"system": "fallout",
-			"path": "packs/consumables",
-			"type": "Item",
+			"path": "packs/fallout_adventures",
+			"type": "Adventure",
 			"private": false,
 			"flags": {}
 		},
@@ -125,10 +134,10 @@
 			"flags": {}
 		},
 		{
-			"name": "rollable-tables",
+			"name": "rollable_tables",
 			"label": "Rollable Tables",
 			"system": "fallout",
-			"path": "packs/rollable-tables",
+			"path": "packs/rollable_tables",
 			"type": "RollTable",
 			"private": false,
 			"flags": {}
@@ -185,8 +194,9 @@
 			"sorting": "a",
 			"color": "#293f5f",
 			"packs": [
+				"fallout_adventures",
 				"fallout_macros",
-				"rollable-tables",
+				"rollable_tables",
 				"system_documentation"
 			],
 			"folders": [
