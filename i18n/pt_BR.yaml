@@ -305,16 +305,20 @@ FALLOUT.SKILL.Speech: Lábia
 FALLOUT.SKILL.Survival: Sobrevivência
 FALLOUT.SKILL.Throwing: Arremesso
 FALLOUT.SKILL.Unarmed: Desarmado
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Totalmente Operacional"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Caçados!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Céus Alaranjados"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Confronto em Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: Livro de Regras Básico
-FALLOUT.SOURCE_TITLE.enclave_remnants: "Complemento de PNJs #2: Restos da Enclave"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Ferramentas de Mestre"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Pacote de Mapas #1: Refúgio"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.quickstart: Início Rápido
-FALLOUT.SOURCE_TITLE.rust_devils: "Complemento de PNJs #1: Os Rust Devils"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Livro Guia dos Colonos
 FALLOUT.SOURCE_TITLE.wanderers_guide: Livro Guia dos Andarilhos
 FALLOUT.SOURCE_TITLE.winter_of_atom: Inverno de Átom
@@ -522,6 +526,7 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignora X pontos da RD do alvo para cad
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Por cada Efeito rolado, o alvo também sofre 1 ponto de dano de radiação. Esse dano de radiação é rolado e aplicado separadamente, logo após o alvo sofrer o dano normal do ataque.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque inflige um acerto adicional no alvo. Cada acerto adicional inflige metade do dano rolado (arredondado para baixo) e atinge um local aleatório, mesmo que um local específico tenha sido alvo do ataque inicial.
 FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá realizar suas ações normais no próximo turno. Um personagem ou criatura atordoada ainda pode gastar PA para realizar ações adicionais normalmente.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano por cada Efeito rolado.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você realizar a Ação Menor de Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 @fos[DC] por PA gasto ao dano do ataque. Se você adicionar dano dessa maneira, você não pode gastar munição para adicionar mais dano. Uma arma não pode ser Precisa e Imprecisa.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: A arma consome munição a uma taxa muito maior do que outras armas. Cada vez que a arma é disparada, ela gasta X munição, em vez de 1. Além disso, dano extra requer gastar X munição por +1CD, com um número máximo de CD igual à Cadência de Tiro da arma. Usos adicionais de munição, como o efeito de dano Rajada, também gastam X munição para cada 1 munição que normalmente seria gasta.
@@ -548,6 +553,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: Uma arma de Arremesso (C) pode ser arreme
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Uma arma de Duas Mãos deve ser usada com as duas mãos; tentar atacar com uma arma de Duas Mãos com apenas uma mão aumentará a dificulade em +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quando você faz um ataque com uma arma Não Confiável, aumente o alcance de complicação do ataque em 1. Uma arma pode não ser Confiável e Não Confiável.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Isso nunca foi projetado para ser usado como uma arma portátil. Ao atacar com uma arma dessas, cada complicação inflinge em você 2DC de dano de radiação. Uma arma pode não ser Radioativamente Instável e Confiável.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
 FALLOUT.UI.Add: Adicionar
 FALLOUT.UI.Addictions: Vícios
 FALLOUT.UI.APPAREL_MODS: Modificações de Vestuário
@@ -598,6 +604,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Perfuração
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioativo
 FALLOUT.WEAPONS.damageEffect.spread: Propagação
 FALLOUT.WEAPONS.damageEffect.stun: Atordoar
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
 FALLOUT.WEAPONS.damageEffect.vicious: Cruel
 FALLOUT.WEAPONS.damageType.energy: Energia
 FALLOUT.WEAPONS.damageType.physical: Físico
@@ -628,6 +635,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Arremessável
 FALLOUT.WEAPONS.weaponQuality.two_handed: Duas Mãos
 FALLOUT.WEAPONS.weaponQuality.unreliable: Não Confiável
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radioativamente Instável
+FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
 FALLOUT.WEAPONS.weaponType.bigGuns: Armas Grandes
 FALLOUT.WEAPONS.weaponType.bows: Arcos
 FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
