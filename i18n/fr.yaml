@@ -305,16 +305,20 @@ FALLOUT.SKILL.Speech: Discours
 FALLOUT.SKILL.Survival: Survie
 FALLOUT.SKILL.Throwing: Projectiles
 FALLOUT.SKILL.Unarmed: Mains nues
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2 : Totalement Opérationnel"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4 : Traqué !"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1 : Un ciel couleur d'orange"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3 : Confrontation à Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: Livre de base
-FALLOUT.SOURCE_TITLE.enclave_remnants: "Pack PNJ #2 : Vestiges de l'Enclave"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Kit du meneur de jeu"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Pack de Carte #1 : Abri"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.quickstart: Démarrage rapide
-FALLOUT.SOURCE_TITLE.rust_devils: "Pack PNJ #1 : Les Rust Devils"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
@@ -522,6 +526,7 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignorez X points de résistance aux d�
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Pour chaque Effet obtenu sur le jet de dégâts, la cible subit également 1 point de dégâts de radiation. Ces dégâts de radiation sont calculés et appliqués séparément, après qu'un personnage a subi les dégâts normaux de l'attaque.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Pour chaque Effet obtenu sur le jet de dégâts, votre attaque inflige un coup supplémentaire à la cible. Chaque coup supplémentaire inflige la moitié des dégâts obtenus sur le jet (arrondi à l'inférieur) et touche une localisation au hasard même si une localisation spécifique était ciblée par l'attaque initiale.
 FALLOUT.TOOLTIPS.DamageEffect.stun: Si vous obtenez un ou plusieurs Effets sur le jet de dégâts, la cible perd ses actions normales à son tour suivant. Une créature ou un personnage étourdi peut toujours dépenser des PA pour effectuer des actions supplémentaires normalement.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: L'attaque inflige +1 point de dégâts pour chaque Effet obtenu sur le jet de dégâts.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: L'arme utilise beaucoup plus de munitions que la plupart des armes. A chaque tir l'arme dépense X munitions à la place d'une seule. De plus chaque tir supplémentaire coute X munitions toujours limité par la cadence de tir. Cela compte également pour En Rafale.
@@ -548,6 +553,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: Une arme de Lancer (C) peut être projet�
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Une arme à Deux mains doit être maniée à deux mains pour être utilisée efficacement ; tenter d'attaquer avec une arme à Deux mains dans une seule main augmente la difficulté de +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quand vous portez une attaque avec une arme Imprévisible, augmentez la marge de complication de l'attaque de 1. Une arme ne peut pas être à la fois Fiable et Imprévisible.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Cette arme n'a jamais été conçu pour être utilisée comme arme de poing. Lorsque vous attaquez avec, la moindre complication vous inflige 2DC de dégâts dû au retour de radiation. Une arme ne peut pas être à la fois Fiable et Radiation instable.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
@@ -598,6 +604,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Perforant
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
 FALLOUT.WEAPONS.damageEffect.spread: De zone
 FALLOUT.WEAPONS.damageEffect.stun: Étourdissant
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
 FALLOUT.WEAPONS.damageEffect.vicious: Brutal
 FALLOUT.WEAPONS.damageType.energy: énergétiques
 FALLOUT.WEAPONS.damageType.physical: balistiques
@@ -628,6 +635,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
 FALLOUT.WEAPONS.weaponQuality.two_handed: Deux mains
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
+FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
 FALLOUT.WEAPONS.weaponType.bows: Arcs
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature

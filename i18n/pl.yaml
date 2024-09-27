@@ -305,16 +305,20 @@ FALLOUT.SKILL.Speech: Retoryka
 FALLOUT.SKILL.Survival: Przetrwanie
 FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Showdown in Skull Canyon #2: W Pełni Operacyjny"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Niesamowicie Niesłychane Opowieści #: Polowanie!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Niesamowicie Niesłychane Opowieści #1: Pomarańczowe Niebo"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Niesamowicie Niesłychane Opowieści #3: Pojedynek w Kanionie Czaszek"
-FALLOUT.SOURCE_TITLE.core_rulebook: Podręcznik Główny
-FALLOUT.SOURCE_TITLE.enclave_remnants: "Pakiet BN #2: Pozostałości Enklawy"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Zestaw Narzędzi Mistrza Gry"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Paczka Map #1: Krypta"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.quickstart: Szybki start
-FALLOUT.SOURCE_TITLE.rust_devils: "Pakiet BN #1: Rdzawe Diabły"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Przewodnik Osadnika
 FALLOUT.SOURCE_TITLE.wanderers_guide: Przewodnik Wędrowca
 FALLOUT.SOURCE_TITLE.winter_of_atom: Atomowa Zima
@@ -522,6 +526,7 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Za każdy uzyskany na kościach Efekt 
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Za każdy uzyskany na kościach Efekt cel otrzymuje dodatkowo 1 punkt obrażeń radiacyjnych. Te obrażenia są sumowane i uwzględniane osobno, po normalnych obrażeniach wynikających z ataku.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Za każdy uzyskany na kościach Efekt trafiasz przeciwnika po raz kolejny. Każde z tych dodatkowych trafień zadaje połowę pierwotnie wyrzuconych obrażeń (zaokrąglonych w dół) i trafia w losową lokalizację, nawet jeśli przy pierwszym ataku zadeklarowałeś celowanie.
 FALLOUT.TOOLTIPS.DamageEffect.stun: Jeżeli uzyskałeś na kościach co najmniej 1 Efekt, przeciwnik zostaje ogłuszony i nie może w swojej następnej turze wykonać normalnych akcji. Może jednak wydać Punkty Akcji, żeby wykonywać akcje dodatkowe.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: Za każdy uzyskany na kościach Efekt zadane obrażenia zostają zwiększone o +1.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: Broń zużywa amunicję znacznie szybciej niż inne bronie. Za każdym razem, gdy strzelasz z broni, zużywa ona X amunicji zamiast 1. Dodatkowo, obrażenia wymagają wydania X amunicji na każdy +1KW, z maksymalną liczbą CD równą szybkostrzelności broni. Dodatkowe użycie amunicji, takie jak efekt obrażeń Seria, również wymaga X amunicji na każde 1 amunicji, która byłaby normalnie wydana.
@@ -548,6 +553,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: Dla broni Rzucanej (B) optymalnym dystans
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią skutecznie posługiwać. Jeśli używasz tylko jednej ręki, trudność testów ataku wzrasta o +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: To nigdy nie było przeznaczone do użycia jako broń ręczna. Kiedy atakujesz bronią, każda komplikacja, którą zadajesz, zadaje 2KW obrażeń od promieniowania w wyniku radioaktywnego sprzężenia zwrotnego. Broń nie może posiadać zarówno stabilnego, jak i niestabilnego promieniowania.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -598,6 +604,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Przeszywające
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktywne
 FALLOUT.WEAPONS.damageEffect.spread: Rozrzut
 FALLOUT.WEAPONS.damageEffect.stun: Ogłuszające
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
 FALLOUT.WEAPONS.damageEffect.vicious: Brutalne
 FALLOUT.WEAPONS.damageType.energy: Energetyczne
 FALLOUT.WEAPONS.damageType.physical: Fizyczne
@@ -628,6 +635,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Rzucana
 FALLOUT.WEAPONS.weaponQuality.two_handed: Dwuręczna
 FALLOUT.WEAPONS.weaponQuality.unreliable: Zawodna
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Niestabilne promieniowanie
+FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
 FALLOUT.WEAPONS.weaponType.bigGuns: Broń ciężka
 FALLOUT.WEAPONS.weaponType.bows: Łuki
 FALLOUT.WEAPONS.weaponType.creatureAttack: Atak Stwora
