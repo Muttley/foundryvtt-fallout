@@ -464,6 +464,7 @@ FALLOUT.WEAPON_QUALITIES = {
 	two_handed: "FALLOUT.WEAPONS.weaponQuality.two_handed",
 	unreliable: "FALLOUT.WEAPONS.weaponQuality.unreliable",
 	unstable_radiation: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation",
+	wrangle: "FALLOUT.WEAPONS.weaponQuality.wrangle",
 };
 
 FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {

@@ -553,6 +553,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a r
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
@@ -634,6 +635,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Thrown
 FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unreliable
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
+FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
 FALLOUT.WEAPONS.weaponType.bigGuns: Big Guns
 FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Creature Attack
