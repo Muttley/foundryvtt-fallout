@@ -305,16 +305,20 @@ FALLOUT.SKILL.Speech: Sprache
 FALLOUT.SKILL.Survival: Überleben
 FALLOUT.SKILL.Throwing: Wurfwaffen
 FALLOUT.SKILL.Unarmed: Waffenlos
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: Grundregelwerk
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Werkzeuge der Spielleiterin"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter des Atoms
@@ -522,6 +526,7 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignoriere X Punkte der SR des Ziels f�
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Für jeden gewürfelten Effekt erleidet das Ziel zusätzlich 1 Punkt Strahlungsschaden. Dieser Strahlungsschaden wird summiert und gesondert berechnet, nachdem der Charakter den normalen Schaden durch den Angriff erlitten hat.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Für jeden gewürfelten Effekt verursacht dein Angriff beim Ziel einen zusätzlichen Treffer. Jeder zusätzliche Treffer verursacht die Hälfte des gewürfelten Schadens (abgerundet) und trifft eine zufällige Trefferstelle, auch wenn eine bestimmte Stelle das Ziel des ursprünglichen Angriffs war.
 FALLOUT.TOOLTIPS.DamageEffect.stun: Wenn ein oder mehrere Effekte gewürfelt werden, kann das Ziel in seinem nächsten Zug nicht seine normalen Aktionen ausführen. Ein betäubter Charakter oder eine betäubte Kreatur kann immer noch AP ausgeben, um wie üblich zusätzliche Aktionen auszuführen.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: Der Angriff verursacht +1 Schaden für jeden gewürfelten Effekt.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Wenn du die Nebenaktion Zielen ausführst, bevor du mit einer Präzisen Waffe angreifst, darfst du bis zu 3 AP ausgeben, um +1 @fos[DC] pro ausgegebenen AP zum Schaden des Angriffs hinzuzufügen. Wenn du den Schaden auf diese Weise erhöhst, kannst du keine Munition für zusätzlichen Schaden ausgeben. Eine Waffe kann nicht gleichzeitig Präzise und Ungenau sein.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: 'Diese Waffe verschießt ihre Munition in einer deutlich höheren Feuerrate wie normale Waffen: Wann immer du einen Schuss Munition ausgeben würdest, verschießt sie stattdessen eine Serie von X Schüssen. Wann immer du X Munition ausgibst, um den Schaden dieser Waffe zu erhöhen, füge +1CD (bis zu einer maximalen Anzahl an Feuerstößen, die der Feuerrate der Waffe entspricht) hinzu. Zusätzliche Verwendung von Munition, wie beim Streuschaden Effekt, verbraucht X Munition für jede 1 Munition die normalerweise verwendet wird.'
@@ -548,6 +553,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: Eine Waffe mit Geworfen (N) kann als Fern
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Eine Zweihändige Waffe muss in zwei Händen gehalten werden, um effektiv genutzt werden zu können. Wenn du versuchst, eine Zweihändige Waffe mit nur einer Hand zu führen, erhöht sich die Schwierigkeit des Angriffs um +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Wenn du einen Angriff mit einer Unzuverlässigen Waffe ausführst, erhöht sich der Komplikationsbereich des Angriffs um 1. Eine Waffe kann nicht gleichzeitig Zuverlässig und Unzuverlässig sein.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Diese Waffe war nie als Handwaffe gedacht. Wenn du mit einer Waffe angreifst, fügt dir jede Komplikation 2DC Strahlungsschaden durch radioaktive Rückstrahlung zu. Eine Waffe darf nicht gleichzeitig über zuverlässige und unstabile Strahlung verfügen.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
 FALLOUT.UI.Add: Hinzufügen
 FALLOUT.UI.Addictions: Sucht
 FALLOUT.UI.APPAREL_MODS: Kleidung Mods
@@ -598,6 +604,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Panzerbrechend
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktiv
 FALLOUT.WEAPONS.damageEffect.spread: Streuung
 FALLOUT.WEAPONS.damageEffect.stun: Betäubend
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
 FALLOUT.WEAPONS.damageEffect.vicious: Verheerend
 FALLOUT.WEAPONS.damageType.energy: Energie
 FALLOUT.WEAPONS.damageType.physical: Physisch
@@ -628,6 +635,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Geworfen
 FALLOUT.WEAPONS.weaponQuality.two_handed: Zweihändig
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unzuverlässig
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Instabile Strahlung
+FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
 FALLOUT.WEAPONS.weaponType.bigGuns: Große Waffen
 FALLOUT.WEAPONS.weaponType.bows: Bögen
 FALLOUT.WEAPONS.weaponType.creatureAttack: Kreaturenangriff
