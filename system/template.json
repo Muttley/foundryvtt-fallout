@@ -773,6 +773,10 @@
 						"rank": 0,
 						"value": false
 					},
+					"tranquilize_x": {
+						"rank": 1,
+						"value": false
+					},
 					"vicious": {
 						"rank": 0,
 						"value": false

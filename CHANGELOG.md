@@ -2,6 +2,7 @@
 
 #### Enhancements
 - [#503] Add the Quickstart Rules and "Machine Frequency" adventure to the system *(many thanks to Modiphius for allowing us to include this material)*
+- [#504] Add new Tranquilize X weapon effect
 
 #### Bugs
 - [#500] Knuckles missing weight value

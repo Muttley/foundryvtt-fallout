@@ -128,6 +128,7 @@ FALLOUT.DAMAGE_EFFECTS = {
 	radioactive: "FALLOUT.WEAPONS.damageEffect.radioactive",
 	spread: "FALLOUT.WEAPONS.damageEffect.spread",
 	stun: "FALLOUT.WEAPONS.damageEffect.stun",
+	tranquilize_x: "FALLOUT.WEAPONS.damageEffect.tranquilize_x",
 	vicious: "FALLOUT.WEAPONS.damageEffect.vicious",
 };
 
