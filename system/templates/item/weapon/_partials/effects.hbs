@@ -1,0 +1,36 @@
+<div class="resource-row"></div>
+	<label class="resource-label upperC">
+		{{localize "FALLOUT.TEMPLATES.Damage_Effects"}}
+	</label>
+	<div class="grid grid-4col item-list">
+		{{#each damageEffects}}
+			<div
+				{{#if this.active}}
+					class="flexrow toggle-label active"
+				{{else}}
+					class="flexrow toggle-label"
+				{{/if}}
+				data-tooltip="{{fromConfig "DAMAGE_EFFECT_TOOLTIPS" this.key}}"
+			>
+				<label style="align-self: center;">
+					<input
+						name="system.damage.damageEffect.{{this.key}}.value"
+						type="checkbox"
+						{{#if this.active}}
+							checked
+						{{/if}}
+					>
+					{{this.label}}
+				</label>
+				{{#if this.hasRank}}
+					<input
+						class="num-short-2"
+						name="system.damage.damageEffect.{{this.key}}.rank"
+						type="number"
+						value="{{this.rank}}"
+					>
+				{{/if}}
+			</div>
+		{{/each}}
+	</div>
+</div>
