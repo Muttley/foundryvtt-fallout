@@ -25,7 +25,7 @@ export default class FalloutItemSheet extends ItemSheet {
 	/** @override */
 	get template() {
 		const path = "systems/fallout/templates/item";
-		return `${path}/item-${this.item.type}-sheet.hbs`;
+		return `${path}/${this.item.type}-sheet.hbs`;
 	}
 
 	/** @inheritdoc */
