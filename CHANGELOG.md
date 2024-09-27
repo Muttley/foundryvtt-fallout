@@ -6,6 +6,9 @@
 #### Bugs
 - [#500] Knuckles missing weight value
 
+#### Chores
+- [#499] Merge new French translation updates from Crowdin
+
 ---
 
 # v11.13.0
