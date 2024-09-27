@@ -53,6 +53,10 @@
 					"rank": 0,
 					"value": false
 				},
+				"tranquilize_x": {
+					"rank": 1,
+					"value": false
+				},
 				"vicious": {
 					"rank": 0,
 					"value": false
@@ -163,6 +167,10 @@
 					"value": false
 				},
 				"unstable_radiation": {
+					"rank": 0,
+					"value": false
+				},
+				"wrangle": {
 					"rank": 0,
 					"value": false
 				}

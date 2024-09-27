@@ -94,6 +94,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -206,6 +210,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -302,6 +310,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -416,6 +428,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -512,6 +528,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -624,6 +644,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -1285,6 +1309,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -1395,6 +1423,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -1681,6 +1713,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -1791,6 +1827,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -2267,6 +2307,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -2377,6 +2421,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -3011,6 +3059,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -3123,6 +3175,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -3220,6 +3276,10 @@
 								"stun": {
 									"rank": 0,
 									"value": true
+								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
 								},
 								"vicious": {
 									"rank": 0,
@@ -3333,6 +3393,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -3429,6 +3493,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -3541,6 +3609,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -4232,6 +4304,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -4342,6 +4418,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -4628,6 +4708,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -4738,6 +4822,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -5212,6 +5300,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -5322,6 +5414,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -6543,6 +6639,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -6653,6 +6753,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -6753,6 +6857,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -6865,6 +6973,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -6961,6 +7073,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -7073,6 +7189,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -8580,6 +8700,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -8692,6 +8816,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -8788,6 +8916,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -8902,6 +9034,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -8998,6 +9134,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -9110,6 +9250,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -10797,6 +10941,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -10907,6 +11055,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -11007,6 +11159,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -11119,6 +11275,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -11215,6 +11375,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -11327,6 +11491,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -11470,6 +11638,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -11580,6 +11752,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -13013,6 +13189,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -13125,6 +13305,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -13223,6 +13407,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -13335,6 +13523,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -14866,6 +15058,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -14978,6 +15174,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -15074,6 +15274,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -15188,6 +15392,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -15284,6 +15492,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -15398,6 +15610,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -15494,6 +15710,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -15606,6 +15826,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -17015,6 +17239,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -17127,6 +17355,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -17223,6 +17455,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -17337,6 +17573,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -17433,6 +17673,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -17547,6 +17791,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -17645,6 +17893,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -17759,6 +18011,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -17855,6 +18111,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -17967,6 +18227,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -18819,6 +19083,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -18929,6 +19197,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -19408,6 +19680,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -19518,6 +19794,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -20148,6 +20428,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -20258,6 +20542,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -20858,6 +21146,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -20970,6 +21262,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -21068,6 +21364,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -21180,6 +21480,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -22191,6 +22495,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -22301,6 +22609,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -22936,6 +23248,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -23048,6 +23364,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -23144,6 +23464,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -23258,6 +23582,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -23354,6 +23682,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -23468,6 +23800,10 @@
 								"unstable_radiation": {
 									"rank": 0,
 									"value": false
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": false
 								}
 							}
 						},
@@ -23564,6 +23900,10 @@
 								},
 								"stun": {
 									"rank": 0,
+									"value": false
+								},
+								"tranquilize_x": {
+									"rank": 1,
 									"value": false
 								},
 								"vicious": {
@@ -23676,6 +24016,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -24599,6 +24943,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -24709,6 +25057,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
@@ -24910,6 +25262,10 @@
 									"rank": 0,
 									"value": false
 								},
+								"tranquilize_x": {
+									"rank": 1,
+									"value": false
+								},
 								"vicious": {
 									"rank": 0,
 									"value": false
@@ -25020,6 +25376,10 @@
 									"value": false
 								},
 								"unstable_radiation": {
+									"rank": 0,
+									"value": false
+								},
+								"wrangle": {
 									"rank": 0,
 									"value": false
 								}
