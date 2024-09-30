@@ -1,6 +1,6 @@
 <div class="tab attributes" data-group="primary" data-tab="attributes">
 	<div class="resource-row align-mid">
-		<label class="resource-label">
+		<label class="field-label">
 			{{localize "FALLOUT.TEMPLATES.Armor_Type"}}
 			&nbsp;
 		</label>
@@ -16,13 +16,13 @@
 	<hr />
 
 	<div class="grid grid-3col">
-		<div class="locations pad-5">
+		<div class="pad-5">
 			<h4 class="resource-header">
 				{{localize "FALLOUT.TEMPLATES.Locations"}}
 			</h4>
 			{{#each system.location as |isChecked key|}}
-				<div class="location flexrow align-mid">
-					<label class="checkbox-label">
+				<div class="flexrow resource-row align-mid">
+					<label class="field-label">
 						{{localize (concat 'FALLOUT.BODYLOCATION.character.' key)}}
 					</label>
 					<input
@@ -43,7 +43,7 @@
 			{{#each system.resistance as |resistance key|}}
 				<div class="flexrow resource-row align-mid">
 					<label
-						class="capitalized"
+						class="field-label"
 						for="system.resistance.{{key}}"
 					>
 						{{localize (concat 'FALLOUT.RESISTANCE.'key)}}
@@ -65,7 +65,7 @@
 			</h4>
 
 			<div class="flexrow resource-row align-mid">
-				<label class="capitalized checkbox-label">
+				<label class="field-label">
 					{{localize "FALLOUT.equipped"}}
 				</label>
 				<input
@@ -78,7 +78,7 @@
 			</div>
 
 			<div class="flexrow resource-row align-mid">
-				<label class="capitalized checkbox-label">
+				<label class="field-label">
 					{{localize "FALLOUT.actor.inventory.materials.junk"}}
 				</label>
 				<input
@@ -91,6 +91,7 @@
 			</div>
 
 			{{#ifCond system.apparelType '===' 'powerArmor'}}
+				<br>
 				{{> item/apparel/_partials/power-armor}}
 			{{/ifCond}}
 		</div>

@@ -1,0 +1,51 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+	<div class="flexrow resource-row">
+			<label for="system.duration" class="field-label">
+				{{localize "FALLOUT.TEMPLATES.DaysInfected"}}
+			</label>
+			<input
+				type="text"
+				name="system.daysInfected"
+				value="{{system.daysInfected}}"
+			/>
+	</div>
+
+	<div class="flexrow resource-row">
+			<label for="system.duration" class="field-label">
+				{{localize "FALLOUT.TEMPLATES.Duration"}}
+			</label>
+			<input
+				type="text"
+				name="system.duration"
+				value="{{system.duration}}"
+			/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.InfectionActive"}}
+		</label>
+		<input
+			class="input-checkbox"
+			data-dtype="Boolean"
+			name="system.infectionActive"
+			type="checkbox"
+			{{checked system.infectionActive}}
+		/>
+	</div>
+
+	<div class="resource-row resource-label align-mid">
+		<h3 class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Effect"}}
+		</h3>
+	</div>
+	<div class="description-field">
+		{{editor descriptionHTML
+			button=true
+			editable=editable
+			owner=owner
+			rollData=rollData
+			target="system.description"
+		}}
+	</div>
+</div>

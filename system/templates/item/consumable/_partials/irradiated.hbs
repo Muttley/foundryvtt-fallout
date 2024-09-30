@@ -1,0 +1,12 @@
+<div class="flexrow resource-row">
+	<label for="system.irradiated" class="field-label">
+		{{localize "FALLOUT.TEMPLATES.Irradiated"}}
+	</label>
+	<input
+		name="system.irradiated"
+		type="checkbox"
+		{{#ifCond system.irradiated '==' true}}
+			checked
+		{{/ifCond}}
+	>
+</div>

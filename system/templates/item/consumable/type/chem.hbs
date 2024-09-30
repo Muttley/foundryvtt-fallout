@@ -1,0 +1,6 @@
+{{#ifCond system.consumableType '===' 'chem' }}
+	{{> item/consumable/_partials/hp-healed}}
+	{{> item/consumable/_partials/radiation-healed}}
+	{{> item/consumable/_partials/duration}}
+	{{> item/consumable/_partials/addictive}}
+{{/ifCond}}

@@ -1,0 +1,38 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}
+		</label>
+
+		<select name="system.defaultAttribute">
+			{{selectOptions FALLOUT.ATTRIBUTES
+				selected=system.defaultAttribute
+				sort=true
+			}}
+		</select>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Rank"}}
+		</label>
+		<input
+			name="system.value"
+			type="number"
+			value="{{system.value}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Tagged"}}
+		</label>
+
+		<input
+			type="checkbox"
+			name="system.tag"
+			{{checked system.tag}}
+		>
+	</div>
+
+</div>

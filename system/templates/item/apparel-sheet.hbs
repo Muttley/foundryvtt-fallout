@@ -1,4 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
+
     {{> item/_shared-partials/header}}
 
     <nav class="sheet-tabs tabs" data-group="primary">
@@ -15,12 +16,15 @@
         <a class="item" data-tab="mods">
 			{{localize "FALLOUT.MODS.mods"}}
 		</a>
+
         <a class="item" data-tab="description">
 			{{localize "FALLOUT.TEMPLATES.Description"}}
 		</a>
+
         <a class="item" data-tab="effects">
 			{{localize "FALLOUT.TEMPLATES.Effects"}}
 		</a>
+
 		<a class="item" data-tab="source">
 			{{localize "FALLOUT.TEMPLATES.Source"}}
 		</a>
@@ -38,4 +42,5 @@
 		{{> item/_shared-partials/effects-tab}}
 		{{> item/_shared-partials/source}}
     </section>
+
 </form>

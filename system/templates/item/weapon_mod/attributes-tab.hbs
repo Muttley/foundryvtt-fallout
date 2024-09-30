@@ -1,0 +1,79 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}
+		</label>
+
+		<select name="system.weaponType">
+			{{selectOptions FALLOUT.WEAPON_TYPES
+				selected=system.weaponType
+			}}
+		</select>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Mod_Type"}}
+		</label>
+
+		<input
+			name="system.modType"
+			placeholder="Receiver Mod, Grip Mod, .etc"
+			type="text"
+			value="{{system.modType}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Name_Prefix"}}
+		</label>
+
+		<input
+			name="system.namePrefix"
+			type="text"
+			value="{{system.namePrefix}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.UI.Perks"}}
+		</label>
+
+		<input
+			type="text"
+			name="system.perks"
+			value="{{system.perks}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.actor.inventory.materials.junk"}}
+		</label>
+		<input
+			class="input-checkbox"
+			data-dtype="Boolean"
+			name="system.isJunk"
+			type="checkbox"
+			{{checked system.isJunk}}
+		/>
+	</div>
+
+	<div class="resource-row">
+		<h3 class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Effect"}}
+		</h3>
+		<div class="description-field">
+			{{editor effectHTML
+				target="system.effect"
+				button=true
+				owner=owner
+				editable=editable
+			}}
+		</div>
+	</div>
+
+</div>

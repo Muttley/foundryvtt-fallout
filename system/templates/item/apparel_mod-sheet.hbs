@@ -1,85 +1,25 @@
 <form class="{{cssClass}}" autocomplete="off">
+
     {{> item/_shared-partials/header}}
 
-    {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="attributes">{{localize "FALLOUT.TEMPLATES.Attributes"}}</a>
-        <a class="item" data-tab="description">{{localize "FALLOUT.TEMPLATES.Description"}}</a>
-		<a class="item" data-tab="source">{{localize "FALLOUT.TEMPLATES.Source"}}</a>
+        <a class="item" data-tab="attributes">
+			{{localize "FALLOUT.TEMPLATES.Attributes"}}
+		</a>
+
+        <a class="item" data-tab="description">
+			{{localize "FALLOUT.TEMPLATES.Description"}}
+		</a>
+
+		<a class="item" data-tab="source">
+			{{localize "FALLOUT.TEMPLATES.Source"}}
+		</a>
     </nav>
 
-    {{!-- Sheet Body --}}
     <section class="sheet-body">
-        {{!-- Attributes Tab --}}
-        <div class="tab attributes" data-group="primary" data-tab="attributes">
-            <div class="flexrow resource-row">
-                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}</label>
-                {{#select system.apparelType}}
-                <select name="system.apparelType">
-                    {{#each FALLOUT.APPAREL_TYPES as |item key|}}
-                    <option value="{{key}}">{{localize item}}</option>
-                    {{/each}}
-                </select>
-                {{/select}}
-                <!-- <input type="text" name="system.apparelType" placeholder="Outfit, Armor..." value="{{system.apparelType}}"> -->
-            </div>
-
-            <div class="flexrow resource-row">
-                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Resistances"}}: </label>
-                {{#each system.resistance as |item key|}}
-                <div class="flex align-mid">
-                    <label>
-						<span class="fo-{{key}}"></span>
-						{{localize (concat "FALLOUT.RESISTANCE." key)}}
-						&nbsp;
-					</label>
-                    <input type="number" class="num-short-2" name="system.resistance.{{key}}" value="{{item}}">
-                </div>
-                {{/each}}
-            </div>
-
-            <div class="flexrow resource-row">
-                <label class="resource-label">{{localize "FALLOUT.TEMPLATES.Locations"}}</label>
-                <input type="text" name="system.location" class="localization" placeholder="{{localize "FALLOUT.TEMPLATES.Apparel_Mod_Placeholder"}}" value="{{system.location}}">
-            </div>
-
-            <div class="flexrow resource-row">
-                <label class="resource-label">{{localize "FALLOUT.HEALTH.health"}}</label>
-                <input type="number" class="" name="system.health.value" value="{{system.health.value}}">
-            </div>
-
-            <div class="flexrow resource-row">
-                <label class="resource-label">{{localize "FALLOUT.UI.Perks"}}</label>
-                <input type="text" name="system.perks" value="{{system.perks}}">
-            </div>
-
-            <div class="flexrow resource-row">
-				<label class="resource-label">
-					{{localize "FALLOUT.actor.inventory.materials.junk"}}
-				</label>
-				<input
-					class="input-checkbox"
-					data-dtype="Boolean"
-					name="system.isJunk"
-					type="checkbox"
-					{{checked system.isJunk}}
-				/>
-            </div>
-
-            <div class="resource-row">
-                <h3 class="resource-label">{{localize "FALLOUT.TEMPLATES.Effects"}}</h3>
-                <div class="description-field">
-                    {{editor effectHTML target="system.effect" button=true owner=owner editable=editable}}
-                </div>
-            </div>
-        </div>
-
-        {{!-- Description Tab --}}
-        <div class="tab description" data-group="primary" data-tab="description">
-            {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
-            {{editor descriptionHTML target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-        </div>
-
+		{{> item/apparel_mod/attributes-tab}}
+		{{> item/_shared-partials/description-tab}}
 		{{> item/_shared-partials/source}}
     </section>
+
 </form>

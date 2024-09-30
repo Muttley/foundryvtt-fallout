@@ -1,6 +1,6 @@
 <div class="tab attributes" data-group="primary" data-tab="attributes">
-	<div class="flexrow resource-row bgOdd">
-		<label class="resource-label upperC">
+	<div class="flexrow resource-row">
+		<label class="field-label">
 			{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}
 		</label>
 		<select name="system.weaponType">
@@ -11,73 +11,71 @@
 		</select>
 	</div>
 
+	<div class="resource-row flexrow">
+
+		<label
+			class="field-label"
+			for="system.attribute"
+		>
+			{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
+		</label>
+		<select name="system.creatureAttribute">
+			<option value="">&mdash;</option>
+			{{selectOptions FALLOUT.CREATURE_ATTRIBUTES
+				selected=system.creatureAttribute
+			}}
+		</select>
+	</div>
+	<div class="resource-row flexrow">
+		<label
+			class="field-label"
+			for="system.skill"
+		>
+			{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
+		</label>
+		<select name="system.creatureSkill">
+			<option value="">&mdash;</option>
+			{{selectOptions FALLOUT.CREATURE_SKILLS
+				selected=system.creatureSkill
+			}}
+		</select>
+	</div>
+
+
 	{{#ifCond system.weaponType "===" "custom"}}
-		<div class="resource-row grid bgOdd">
-			<div class="flexrow align-mid">
-				<label
-					class="resource-label upperC"
-					for="system.attribute"
-				>
-					{{localize "FALLOUT.TEMPLATES.CustomAttribute"}}
-				</label>
-				<select name="system.attribute">
-					<option value="">&mdash;</option>
-					{{selectOptions FALLOUT.ATTRIBUTES
-						selected=system.attribute
-					}}
-				</select>
-			</div>
-			<div class="flexrow align-mid">
-				<label
-					class="resource-label upperC"
-					for="system.skill"
-				>
-					{{localize "FALLOUT.TEMPLATES.CustomSkill"}}
-				</label>
-				<select name="system.skill">
-					<option value="">&mdash;</option>
-					{{selectOptions availableSkills
-						selected=system.skill
-					}}
-				</select>
-			</div>
+		<div class="resource-row flexrow">
+			<label
+				class="field-label"
+				for="system.attribute"
+			>
+				{{localize "FALLOUT.TEMPLATES.CustomAttribute"}}
+			</label>
+			<select name="system.attribute">
+				<option value="">&mdash;</option>
+				{{selectOptions FALLOUT.ATTRIBUTES
+					selected=system.attribute
+				}}
+			</select>
+		</div>
+		<div class="resource-row flexrow">
+			<label
+				class="field-label"
+				for="system.skill"
+			>
+				{{localize "FALLOUT.TEMPLATES.CustomSkill"}}
+			</label>
+			<select name="system.skill">
+				<option value="">&mdash;</option>
+				{{selectOptions availableSkills
+					selected=system.skill
+				}}
+			</select>
 		</div>
 	{{/ifCond}}
 
-	<div class="resource-row grid bgOdd">
-		<div class="flexrow align-mid">
-			<label
-				class="resource-label upperC"
-				for="system.attribute"
-			>
-				{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
-			</label>
-			<select name="system.creatureAttribute">
-				<option value="">&mdash;</option>
-				{{selectOptions FALLOUT.CREATURE_ATTRIBUTES
-					selected=system.creatureAttribute
-				}}
-			</select>
-		</div>
-		<div class="flexrow align-mid">
-			<label
-				class="resource-label upperC"
-				for="system.skill"
-			>
-				{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
-			</label>
-			<select name="system.creatureSkill">
-				<option value="">&mdash;</option>
-				{{selectOptions FALLOUT.CREATURE_SKILLS
-					selected=system.creatureSkill
-				}}
-			</select>
-		</div>
-	</div>
-
-	<div class="resource-row flexrow bgEven">
-		<label class="resource-label upperC" for="system.damage.rating">
-			{{localize "FALLOUT.TEMPLATES.DAMAGE"}}
+	<div class="resource-row flexrow">
+		<label class="field-label" for="system.damage.rating">
+			{{localize "FALLOUT.UI.BaseDamage"}}
 		</label>
 		<input
 			data-dtype="Number"
@@ -87,8 +85,8 @@
 		>
 	</div>
 
-	<div class="flexrow resource-row bgOdd">
-		<label class="resource-label upperC" for="system.damage.damageType">
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.damage.damageType">
 			{{localize "FALLOUT.TEMPLATES.DAMAGE_TYPE"}}
 		</label>
 		<div class="grid">
@@ -110,8 +108,8 @@
 		</div>
 	</div>
 
-	<div class="resource-row flexrow bgEven">
-		<label class="resource-label upperC" for="system.range">
+	<div class="resource-row flexrow">
+		<label class="field-label" for="system.range">
 			{{localize "FALLOUT.TEMPLATES.RANGE"}}
 		</label>
 		<select name="system.range">
@@ -121,20 +119,8 @@
 		</select>
 	</div>
 
-	<div class="flexrow resource-row bgOdd">
-		<label class="resource-label upperC" for="system.fireRate">
-			{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}
-		</label>
-		<input
-			data-dtype="Number"
-			type="number"
-			name="system.fireRate"
-			value="{{system.fireRate}}"
-		>
-	</div>
-
-	<div class="flexrow resource-row bgEven">
-		<label class="resource-label upperC" for="system.ammo">
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.ammo">
 			{{localize "TYPES.Item.ammo"}}
 			{{#if weaponAmmo}}
 				<a
@@ -165,20 +151,34 @@
 		</select>
 	</div>
 
-	<div class="flexrow resource-row bgOdd">
-		<label class="resource-label upperC" for="system.ammo">
-			{{localize "ITEM.AmmoPerShot"}}
-		</label>
-		<input
-			data-dtype="Number"
-			type="number"
-			name="system.ammoPerShot"
-			value="{{system.ammoPerShot}}"
-		>
-	</div>
+	{{#if weaponAmmo}}
+		<div class="flexrow resource-row">
+			<label class="field-label" for="system.ammo">
+				{{localize "ITEM.AmmoPerShot"}}
+			</label>
+			<input
+				data-dtype="Number"
+				type="number"
+				name="system.ammoPerShot"
+				value="{{system.ammoPerShot}}"
+			>
+		</div>
 
-	<div class="flexrow resource-row bgEven">
-		<label class="resource-label upperC" for="system.tear">
+		<div class="flexrow resource-row">
+			<label class="field-label" for="system.fireRate">
+				{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}
+			</label>
+			<input
+				data-dtype="Number"
+				type="number"
+				name="system.fireRate"
+				value="{{system.fireRate}}"
+			>
+		</div>
+	{{/if}}
+
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.tear">
 			{{localize "FALLOUT.TEMPLATES.Tear"}}
 		</label>
 		<input
@@ -189,19 +189,17 @@
 		>
 	</div>
 
-	<div class="flexrow resource-row bgOdd">
-		<div class="flexrow resource-row">
-			<label class="resource-label upperC">
-				{{localize "FALLOUT.actor.inventory.materials.junk"}}
-			</label>
-			<input
-				class="input-checkbox"
-				data-dtype="Boolean"
-				name="system.isJunk"
-				type="checkbox"
-				{{checked system.isJunk}}
-			/>
-		</div>
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.actor.inventory.materials.junk"}}
+		</label>
+		<input
+			class="input-checkbox"
+			data-dtype="Boolean"
+			name="system.isJunk"
+			type="checkbox"
+			{{checked system.isJunk}}
+		/>
 	</div>
 
 </div>

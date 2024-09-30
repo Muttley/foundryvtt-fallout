@@ -1,0 +1,12 @@
+<div class="flexrow resource-row">
+	<label for="system.prepared" class="field-label">
+		{{localize "FALLOUT.TEMPLATES.Prepared"}}
+	</label>
+	<input
+		name="system.prepared"
+		type="checkbox"
+		{{#ifCond system.prepared '==' true}}
+			checked
+		{{/ifCond}}
+	>
+</div>

@@ -1,0 +1,15 @@
+<div class="flexrow resource-row">
+	<label for="system.duration" class="field-label">
+		{{localize "FALLOUT.TEMPLATES.Duration"}}
+	</label>
+
+	{{#select system.duration}}
+		<select name="system.duration">
+			{{#each FALLOUT.CHEM_DURATIONS}}
+				<option value="{{@key}}">
+					{{this}}
+				</option>
+			{{/each}}
+		</select>
+	{{/select}}
+</div>

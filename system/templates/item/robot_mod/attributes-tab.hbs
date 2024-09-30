@@ -1,0 +1,42 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.UI.Perks"}}
+		</label>
+		<input
+			name="system.perks"
+			type="text"
+			value="{{system.perks}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.actor.inventory.materials.junk"}}
+		</label>
+
+		<input
+			class="input-checkbox"
+			data-dtype="Boolean"
+			name="system.isJunk"
+			type="checkbox"
+			{{checked system.isJunk}}
+		/>
+	</div>
+
+	<div class="resource-row">
+		<h3 class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Effect"}}
+		</h3>
+		<div class="description-field">
+			{{editor effectHTML
+				target="system.effect"
+				button=true
+				owner=owner
+				editable=editable
+			}}
+		</div>
+	</div>
+
+</div>

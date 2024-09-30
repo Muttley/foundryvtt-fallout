@@ -1,0 +1,129 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+
+	<div class="resource-row align-mid">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Armor_Type"}}&nbsp;
+		</label>
+
+		<select name="system.apparelType">
+			{{#select system.apparelType}}
+				<option value="">
+					&mdash;
+				</option>
+
+				{{#each FALLOUT.ROBOT_APPAREL_TYPE as |apparelType key|}}
+					<option value="{{key}}">
+						{{localize apparelType}}
+					</option>
+				{{/each}}
+			{{/select}}
+		</select>
+	</div>
+
+	<hr />
+
+	<div class="grid grid-3col">
+		<div class="locations">
+			<h4 class="resource-header">
+				{{localize "FALLOUT.TEMPLATES.Locations"}}
+			</h4>
+
+			{{#each system.location as |isChecked key|}}
+				<div class="flexrow resource-row align-mid">
+					<label class="field-label">
+						{{localize (concat 'FALLOUT.BODYLOCATION.robot.' key)}}
+					</label>
+
+					<input
+						class="input-checkbox"
+						data-dtype="Boolean"
+						name="system.location.{{key}}"
+						type="checkbox"
+						{{checked isChecked}}
+					/>
+				</div>
+			{{/each}}
+		</div>
+
+		<div class="resistances">
+			<h4 class="resource-header">
+				{{localize "FALLOUT.TEMPLATES.Resistances"}}
+			</h4>
+
+			{{#each system.resistance as |resistance key|}}
+				<div class="flexrow resource-row align-mid">
+					<label for="system.resistance.{{key}}" class="field-label">
+						{{localize (concat 'FALLOUT.RESISTANCE.'key)}}
+					</label>
+
+					<input
+						class="num-short-2"
+						name="system.resistance.{{key}}"
+						type="number"
+						value="{{resistance}}"
+					/>
+				</div>
+			{{/each}}
+		</div>
+
+		<div class="equipped">
+			<h4 class="resource-header">
+				{{localize "FALLOUT.TEMPLATES.GENERAL"}}
+			</h4>
+
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.UI.CarryWeight"}}
+				</label>
+
+				<input
+					type="number"
+					class="num-short-3"
+					name="system.carry"
+					value="{{system.carry}}"
+				/>
+			</div>
+
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.equipped"}}
+				</label>
+
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.equipped"
+					type="checkbox"
+					{{checked system.equipped}}
+				/>
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label">
+					{{localize "FALLOUT.actor.inventory.materials.junk"}}
+				</label>
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.isJunk"
+					type="checkbox"
+					{{checked system.isJunk}}
+				/>
+			</div>
+
+			<div class="resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.UI.Perks"}}
+				</label>
+
+				<input
+					type="text"
+					name="system.perks"
+					value="{{system.perks}}"
+				/>
+			</div>
+
+		</div>
+	</div>
+
+</div>
