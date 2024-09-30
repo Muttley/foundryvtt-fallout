@@ -233,10 +233,10 @@ FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Bemerkenswert
 FALLOUT.OTHER: Anderes
 FALLOUT.powered: Angetrieben
-FALLOUT.RANGE.close: "N"
-FALLOUT.RANGE.extreme: X
-FALLOUT.RANGE.long: L
-FALLOUT.RANGE.medium: M
+FALLOUT.RANGE.close: Close
+FALLOUT.RANGE.extreme: Extreme
+FALLOUT.RANGE.long: Long
+FALLOUT.RANGE.medium: Medium
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Klicken, um Immunität umzuschalten
 FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.Immunity.poison: Immun gegen Giftschaden
@@ -344,7 +344,6 @@ FALLOUT.TEMPLATES.Attack: Angriff
 FALLOUT.TEMPLATES.ATTACKS: ANGRIFFE
 FALLOUT.TEMPLATES.Attribute: Eigenschaft
 FALLOUT.TEMPLATES.Attributes: Eigenschaften
-FALLOUT.TEMPLATES.Base_Damage: Grundschaden
 FALLOUT.TEMPLATES.Butchery: Gemetzel
 FALLOUT.TEMPLATES.ButcheryTooltip: Gemetzel Probe TN
 FALLOUT.TEMPLATES.Category: Category
@@ -397,6 +396,8 @@ FALLOUT.TEMPLATES.DAMAGE_EFFECTS: SCHADENSEFFEKTE
 FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
 FALLOUT.TEMPLATES.DAMAGE: SCHADEN
 FALLOUT.TEMPLATES.Data: Daten
+FALLOUT.TEMPLATES.DaysInfected: Days Infected
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.Default_Attribute: Standardattribut
 FALLOUT.TEMPLATES.DEFENSE: VERTEIDIGUNG
 FALLOUT.TEMPLATES.Degree: Degree
@@ -405,6 +406,7 @@ FALLOUT.TEMPLATES.Delete: Entfernen
 FALLOUT.TEMPLATES.DERIVED: ABGELEITET
 FALLOUT.TEMPLATES.Description: Beschreibung
 FALLOUT.TEMPLATES.Details: Details
+FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Dauer
 FALLOUT.TEMPLATES.Edit_Item: Bearbeite Gegenstand
 FALLOUT.TEMPLATES.Effect: Effekt
@@ -421,6 +423,7 @@ FALLOUT.TEMPLATES.Healthy: Gesund
 FALLOUT.TEMPLATES.HitLocationLabel: Trefferzone
 FALLOUT.TEMPLATES.HP_Healed: Trefferpunkte
 FALLOUT.TEMPLATES.HP: TP
+FALLOUT.TEMPLATES.InfectionActive: Infection Active
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
 FALLOUT.TEMPLATES.Injuries: Verletzungen
 FALLOUT.TEMPLATES.INJURIES: VERLETZUNGEN
@@ -467,6 +470,7 @@ FALLOUT.TEMPLATES.Range: Reichweite
 FALLOUT.TEMPLATES.RANGE: REICHWEITE
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
+FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Wiederholungswurf
 FALLOUT.TEMPLATES.RemoveSettler: Siedler entfernen
 FALLOUT.TEMPLATES.Requirements: Voraussetzungen
@@ -477,17 +481,15 @@ FALLOUT.TEMPLATES.Salvage: Verwerten
 FALLOUT.TEMPLATES.SalvageTooltip: Ausschlachten Probe TN
 FALLOUT.TEMPLATES.Scale: Scale
 FALLOUT.TEMPLATES.SettlersAndJobs: Siedler und Aufgaben
-FALLOUT.TEMPLATES.Skill_Tag: Spezialfertigkeit
-FALLOUT.TEMPLATES.Skill_Value: Fertigkeitswert
 FALLOUT.TEMPLATES.Skill: Fertigkeit
-FALLOUT.TEMPLATES.SKILL: FERTIGKEIT
-FALLOUT.TEMPLATES.SKILLS: FERTIGKEITEN
+FALLOUT.TEMPLATES.Skills: Skills
 FALLOUT.TEMPLATES.Source: Quelle
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Vorrat
 FALLOUT.TEMPLATES.StructuresAndRooms: Strukturen und Räume
 FALLOUT.TEMPLATES.Successes: Erfolge
 FALLOUT.TEMPLATES.Tag: Spez.
+FALLOUT.TEMPLATES.Tagged: Tagged
 FALLOUT.TEMPLATES.Tear: Abnutzung & Verschleiß
 FALLOUT.TEMPLATES.Thirst_Reduction: Durstreduzierung
 FALLOUT.TEMPLATES.TimeTaken: Dauer
@@ -662,6 +664,7 @@ TYPES.Item.consumable: Verbrauchsgegenstand
 TYPES.Item.disease: Krankheit
 TYPES.Item.miscellany: Verschiedenes
 TYPES.Item.object_or_structure: Objekt/Struktur
+TYPES.Item.origin: Origin
 TYPES.Item.perk: Extra
 TYPES.Item.robot_armor: Roboterrüstung
 TYPES.Item.robot_mod: Robotermodul
