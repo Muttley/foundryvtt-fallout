@@ -1,149 +1,147 @@
-<div class="box no-padding bgOdd">
-	<div style="font-size: 16px; display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
-		<div class="flex align-mid">#</div>
+<div style="font-size: 16px; display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
+	<div class="flex align-mid">#</div>
+	<div>
+		<select name="system.bodyType" style="font-size: 0.75rem;">
+			{{selectOptions FALLOUT.BODY_TYPES
+				selected=system.bodyType
+			}}
+		</select>
+	</div>
+	<div class="flex align-mid align-center">
+		<i class="fo-physical resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.physical'}}"></i>
+	</div>
+	<div class="flex align-mid align-center">
+		<i class="fo-energy resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.energy'}}"></i>
+	</div>
+	<div class="flex align-mid align-center">
+		<a
+			class="immune-toggle"
+			data-immunity-type="radiation"
+		>
+			<i
+				class="fo-radiation resistance-icon"
+				data-tooltip="{{localize 'FALLOUT.RESISTANCE.radiation'}} ({{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}})"
+				{{#if system.immunities.radiation}}
+					style="color: darkgray";
+				{{/if}}
+			></i>
+		</a>
+	</div>
+	<div class="flex align-mid align-center">
+		<a
+			class="immune-toggle"
+			data-immunity-type="poison"
+		>
+			<i
+				class="fo-poison resistance-icon"
+				data-tooltip="{{localize 'FALLOUT.RESISTANCE.poison'}} ({{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}})"
+				{{#if system.immunities.poison}}
+					style="color: darkgray";
+				{{/if}}
+			></i>
+		</a>
+	</div>
+	<div class="flex align-mid align-center">
+		<div
+			style="background-image: url(systems/fallout/assets/ui/drop.svg); width: 1rem; background-repeat: no-repeat"
+			data-tooltip="{{localize 'FALLOUT.TEMPLATES.Injuries'}}"
+		>
+			&nbsp;
+		</div>
+	</div>
+	<div class="flex align-mid align-center">
+		<div
+			style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat"
+			data-tooltip="{{localize 'FALLOUT.TEMPLATES.TreatedInjuries'}}"
+		>
+			&nbsp;
+		</div>
+	</div>
+</div>
+
+{{#each bodyParts}}
+	<div class="bodypart-row" style="display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
 		<div>
-			<select name="system.bodyType" style="font-size: 0.75rem;">
-				{{selectOptions FALLOUT.BODY_TYPES
-					selected=system.bodyType
-				}}
-			</select>
+			{{this.roll}}
 		</div>
-		<div class="flex align-mid align-center">
-			<i class="fo-physical resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.physical'}}"></i>
+		<div>
+			{{this.name}}
 		</div>
-		<div class="flex align-mid align-center">
-			<i class="fo-energy resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.energy'}}"></i>
-		</div>
-		<div class="flex align-mid align-center">
-			<a
-				class="immune-toggle"
-				data-immunity-type="radiation"
-			>
-				<i
-					class="fo-radiation resistance-icon"
-					data-tooltip="{{localize 'FALLOUT.RESISTANCE.radiation'}} ({{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}})"
-					{{#if system.immunities.radiation}}
-						style="color: darkgray";
-					{{/if}}
-				></i>
-			</a>
-		</div>
-		<div class="flex align-mid align-center">
-			<a
-				class="immune-toggle"
-				data-immunity-type="poison"
-			>
-				<i
-					class="fo-poison resistance-icon"
-					data-tooltip="{{localize 'FALLOUT.RESISTANCE.poison'}} ({{localize 'FALLOUT.RESISTANCE.ClickToToggleImmunity'}})"
-					{{#if system.immunities.poison}}
-						style="color: darkgray";
-					{{/if}}
-				></i>
-			</a>
-		</div>
-		<div class="flex align-mid align-center">
-			<div
-				style="background-image: url(systems/fallout/assets/ui/drop.svg); width: 1rem; background-repeat: no-repeat"
-				data-tooltip="{{localize 'FALLOUT.TEMPLATES.Injuries'}}"
-			>
-				&nbsp;
-			</div>
-		</div>
-		<div class="flex align-mid align-center">
-			<div
-				style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat"
-				data-tooltip="{{localize 'FALLOUT.TEMPLATES.TreatedInjuries'}}"
-			>
-				&nbsp;
-			</div>
-		</div>
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath=(concat this.basePath ".resistance.physical")
+			value=this.resistanceValues.physical
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath=(concat this.basePath ".resistance.energy")
+			value=this.resistanceValues.energy
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath=(concat this.basePath ".resistance.radiation")
+			value=this.resistanceValues.radiation
+			immune=../system.immunities.radiation
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath=(concat this.basePath ".resistance.poison")
+			value=this.resistanceValues.poison
+			immune=../system.immunities.poison
+		}}
+		{{> bodyPartControl
+			color="white"
+			backgroundColor="#ff0000"
+			systemPath=(concat this.basePath ".injuryOpenCount")
+			value=this.injuryOpenCount
+		}}
+		{{> bodyPartControl
+			color="white"
+			backgroundColor="#a46e30"
+			systemPath=(concat this.basePath ".injuryTreatedCount")
+			value=this.injuryTreatedCount
+		}}
 	</div>
+{{/each}}
 
-	{{#each bodyParts}}
-		<div style="display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
-			<div>
-				{{this.roll}}
-			</div>
-			<div>
-				{{this.name}}
-			</div>
-			{{> bodyPartControl
-				color="#eee787"
-				backgroundColor="#325885"
-				systemPath=(concat this.basePath ".resistance.physical")
-				value=this.resistanceValues.physical
-			}}
-			{{> bodyPartControl
-				color="#eee787"
-				backgroundColor="#325885"
-				systemPath=(concat this.basePath ".resistance.energy")
-				value=this.resistanceValues.energy
-			}}
-			{{> bodyPartControl
-				color="#eee787"
-				backgroundColor="#325885"
-				systemPath=(concat this.basePath ".resistance.radiation")
-				value=this.resistanceValues.radiation
-				immune=../system.immunities.radiation
-			}}
-			{{> bodyPartControl
-				color="#eee787"
-				backgroundColor="#325885"
-				systemPath=(concat this.basePath ".resistance.poison")
-				value=this.resistanceValues.poison
-				immune=../system.immunities.poison
-			}}
-			{{> bodyPartControl
-				color="white"
-				backgroundColor="#ff0000"
-				systemPath=(concat this.basePath ".injuryOpenCount")
-				value=this.injuryOpenCount
-			}}
-			{{> bodyPartControl
-				color="white"
-				backgroundColor="#a46e30"
-				systemPath=(concat this.basePath ".injuryTreatedCount")
-				value=this.injuryTreatedCount
-			}}
-		</div>
-	{{/each}}
-
-	{{!-- Controls to set all locations to the same value --}}
-	<div style="display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6)">
-		<div></div>
-		<div><em>{{localize 'FALLOUT.TEMPLATES.AllLocations'}}</em></div>
-		{{> bodyPartControl
-			color="#eee787"
-			backgroundColor="rgba(0, 0, 0, 0.2)"
-			systemPath="_all_physical"
-			forceColors=true
-			value=null
-		}}
-		{{> bodyPartControl
-			color="#eee787"
-			backgroundColor="rgba(0, 0, 0, 0.2)"
-			systemPath="_all_energy"
-			forceColors=true
-			value=null
-		}}
-		{{> bodyPartControl
-			color="#eee787"
-			backgroundColor="rgba(0, 0, 0, 0.2)"
-			systemPath="_all_radiation"
-			forceColors=true
-			value=null
-		}}
-		{{> bodyPartControl
-			color="#eee787"
-			backgroundColor="rgba(0, 0, 0, 0.2)"
-			systemPath="_all_poison"
-			forceColors=true
-			value=null
-		}}
-		<div></div>
-		<div></div>
-	</div>
+{{!-- Controls to set all locations to the same value --}}
+<div class="bodypart-row" style="display: grid; grid-template-columns: 2fr 40% repeat(6, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
+	<div></div>
+	<div><em>{{localize 'FALLOUT.TEMPLATES.AllLocations'}}</em></div>
+	{{> bodyPartControl
+		color="#eee787"
+		backgroundColor="rgba(0, 0, 0, 0.2)"
+		systemPath="_all_physical"
+		forceColors=true
+		value=null
+	}}
+	{{> bodyPartControl
+		color="#eee787"
+		backgroundColor="rgba(0, 0, 0, 0.2)"
+		systemPath="_all_energy"
+		forceColors=true
+		value=null
+	}}
+	{{> bodyPartControl
+		color="#eee787"
+		backgroundColor="rgba(0, 0, 0, 0.2)"
+		systemPath="_all_radiation"
+		forceColors=true
+		value=null
+	}}
+	{{> bodyPartControl
+		color="#eee787"
+		backgroundColor="rgba(0, 0, 0, 0.2)"
+		systemPath="_all_poison"
+		forceColors=true
+		value=null
+	}}
+	<div></div>
+	<div></div>
 </div>
 
 {{#*inline "bodyPartControl"}}

@@ -13,7 +13,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			width: 760,
+			width: 795,
 			height: 955,
 			tabs: [
 				{
@@ -63,7 +63,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		const context = {
 			actor: actorData,
 			editable: this.isEditable,
-			effects: prepareActiveEffectCategories(this.actor.effects),
+			effects: prepareActiveEffectCategories(this.actor.allApplicableEffects()),
 			FALLOUT: CONFIG.FALLOUT,
 			hasCategory: ["creature", "npc"].includes(this.actor.type),
 			isPlayerCharacter: ["character", "robot"].includes(this.actor.type),

@@ -7,7 +7,7 @@ export default class FalloutCreatureSheet extends FalloutNpcSheet {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "creature"],
 			width: 690,
-			height: 630,
+			height: 635,
 		});
 	}
 }

@@ -607,7 +607,9 @@
 			]
 		},
 		"disease": {
+			"daysInfected": 0,
 			"duration": 1,
+			"infectionActive": false,
 			"templates": [
 				"base"
 			]
@@ -676,7 +678,6 @@
 				"legR": false,
 				"torso": false
 			},
-			"mods": "",
 			"perks": "",
 			"resistance": {
 				"energy": 0,

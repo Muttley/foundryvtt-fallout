@@ -1,5 +1,5 @@
-<div class="tab data" data-group="primary" data-tab="abilities">
-	<section class="grid grid-2col">
+<div class="tab abilities" data-group="primary" data-tab="abilities">
+	<section class="grid grid-2col" style="margin: 0;">
 		<div class="left-column">
 			{{#if isCreature}}
 				{{> actor/npc/partials/attributes_creature }}
@@ -30,12 +30,15 @@
 		</div>
 
 		<div class="right-column">
-			{{> actor/npc/partials/attacks }}
+			{{> actor/_shared-partials/weapons
+				nameLabel=(localize "FALLOUT.TEMPLATES.Attack")
+				basicControlsOnly=true
+			}}
 
 			{{#if isCreature}}
 				{{> actor/npc/partials/special-abilities }}
 			{{else}}
-				{{> actor/npc/partials/skills }}
+				{{> actor/_shared-partials/skills}}
 			{{/if}}
 		</div>
 

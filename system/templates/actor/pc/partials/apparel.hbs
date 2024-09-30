@@ -1,9 +1,8 @@
 {{#each apparelGroups}}
 	<ol class="items-list">
-		<li class="item apparel flexrow items-header">
+		<li class="apparel flexrow items-header">
 			<div class="flexrow flexlarge item-name upperC">
 				{{localize (concat 'FALLOUT.APPAREL.' apparelType)}}
-
 			</div>
 			<div class="flexrow flexlarge item-info">
 				{{#ifCond apparelType '===' 'powerArmor'}}

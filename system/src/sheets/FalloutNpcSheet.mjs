@@ -10,7 +10,7 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "npc"],
 			width: 750,
-			height: 785,
+			height: 790,
 			tabs: [
 				{
 					navSelector: ".sheet-tabs",

@@ -1,52 +1,49 @@
-<div class="resource-row">
-	<ol class="items-list">
-		<li class="consumable flexrow items-header">
-			{{#if isCreature}}
-				<div class="flexrow flexlarge item-name upperC">
-					{{localize 'FALLOUT.TEMPLATES.Salvage'}}
-					&nbsp;&nbsp;
-					<input
-						class="num-short-2"
-						data-dtype="Number"
-						data-tooltip="{{localize 'FALLOUT.TEMPLATES.SalvageTooltip'}}"
-						min="0"
-						name="system.salvage.tn"
-						style="color: unset; height: auto;"
-						type="number"
-						value="{{system.salvage.tn}}"
-					>
-				</div>
-			{{else}}
-				<div class="flexrow flexlarge item-name upperC">
-					{{localize 'FALLOUT.UI.INVENTORY'}}
-				</div>
-			{{/if}}
-			<div class="item-controls">
-				<a
-					class="item-control item-create"
-					title="Create Miscellany"
-					data-type="miscellany"
+<ol class="items-list">
+	<li class="consumable flexrow items-header">
+		{{#if isCreature}}
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.Salvage'}}
+				&nbsp;&nbsp;
+				<input
+					class="num-short-2"
+					data-dtype="Number"
+					data-tooltip="{{localize 'FALLOUT.TEMPLATES.SalvageTooltip'}}"
+					min="0"
+					name="system.salvage.tn"
+					style="color: unset; height: auto;"
+					type="number"
+					value="{{system.salvage.tn}}"
 				>
-					<i class="fas fa-plus"></i>
-					{{localize 'FALLOUT.UI.Add'}}
-				</a>
-				<a class="find-any-from-compendium">
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</a>
 			</div>
-		</li>
-		{{#each inventory}}
-			{{>
-				actor/_shared-partials/simple-expandable-item
-				item=this
-				basicControlsOnly=true
-			}}
-		{{/each}}
-	</ol>
-	{{#if isCreature}}
-		{{> actor/npc/partials/carried-weight_creature }}
-	{{else}}
-		{{> actor/npc/partials/carried-weight_npc }}
-	{{/if}}
-
-</div>
+		{{else}}
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.UI.INVENTORY'}}
+			</div>
+		{{/if}}
+		<div class="item-controls">
+			<a
+				class="item-control item-create"
+				title="Create Miscellany"
+				data-type="miscellany"
+			>
+				<i class="fas fa-plus"></i>
+				{{localize 'FALLOUT.UI.Add'}}
+			</a>
+			<a class="find-any-from-compendium">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+		</div>
+	</li>
+	{{#each inventory}}
+		{{>
+			actor/_shared-partials/simple-expandable-item
+			item=this
+			basicControlsOnly=true
+		}}
+	{{/each}}
+</ol>
+{{#if isCreature}}
+	{{> actor/npc/partials/carried-weight_creature }}
+{{else}}
+	{{> actor/npc/partials/carried-weight_npc }}
+{{/if}}

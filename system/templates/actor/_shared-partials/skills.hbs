@@ -1,0 +1,26 @@
+<ol class="items-list">
+	<li class="flexrow items-header">
+		<div class="item-name upperC">{{localize "FALLOUT.TEMPLATES.Skill"}}</div>
+		<div class="item-skill-tag">{{localize "FALLOUT.TEMPLATES.Tag"}}</div>
+		<div class="item-skill-value">{{localize "FALLOUT.TEMPLATES.Rank"}}</div>
+	</li>
+	{{#each itemsByType.skill as |item id|}}
+	<li class="item skill flexrow" data-item-id="{{item._id}}">
+		<div class="item-name">
+			<h4>
+				<a class="color-secondary">
+					<span class="resource-label upperC">
+						{{item.localizedName}}
+					</span> [{{item.localizedDefaultAttribute}}]
+				</a>
+			</h4>
+		</div>
+		<div class="item-skill-tag">
+			<input type="checkbox" name="tag" {{#ifCond item.system.tag '==' true}}checked{{/ifCond}}>
+		</div>
+		<div class="item-skill-value">
+			<input type="number" class="num-short-2" name="value" value="{{item.system.value}}" min="0">
+		</div>
+	</li>
+	{{/each}}
+</ol>

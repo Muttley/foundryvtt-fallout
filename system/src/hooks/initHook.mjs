@@ -60,6 +60,8 @@ export async function initHook() {
 		decimals: 0,
 	};
 
+	CONFIG.ActiveEffect.legacyTransferral = false;
+
 	registerDocumentClasses();
 	registerDocumentSheets();
 

@@ -19,9 +19,9 @@
 
 	<!-- * SKILL * -->
 	{{#if isSkill}}
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Skill_Value"}}: </strong>{{value}}</p>
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Skill_Tag"}}: </strong>{{tag}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Default_Attribute"}}: </strong><span style="text-transform: uppercase;">{{defaultAttribute}}</span></p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Rank"}}: </strong>{{value}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Tagged"}}: </strong>{{tag}}</p>
 	{{/if}}
 
 	<!-- * PERK * -->
@@ -46,7 +46,7 @@
 			{{/each}}
 		</p>
 		<p>
-			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.DAMAGE"}}:</strong>
+			<strong class="upperC">{{localize "FALLOUT.UI.BaseDamage"}}:</strong>
 			{{damage.rating}}
 		</p>
 		<p class="capitalize">

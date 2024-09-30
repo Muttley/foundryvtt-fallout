@@ -8,10 +8,19 @@ export function onManageActiveEffect(event, owner) {
 
 	const a = event.currentTarget;
 	const li = a.closest("li");
+	const effectId = li.dataset.effectId;
 
-	const effect = li.dataset.effectId
-		? owner.effects.get(li.dataset.effectId)
-		: null;
+	let effect = null;
+	if (owner.documentName === "Actor") {
+		effect = effectId
+			? owner.allApplicableEffects().find(effect => effect.id === effectId)
+			: null;
+	}
+	else if (owner.documentName === "Item") {
+		effect = effectId
+			? owner.transferredEffects.find(effect => effect.id === effectId)
+			: null;
+	}
 
 	switch (a.dataset.action) {
 		case "create":

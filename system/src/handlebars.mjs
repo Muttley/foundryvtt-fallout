@@ -18,6 +18,18 @@ export default function registerHandlebarsHelpers() {
 		return outStr;
 	});
 
+	Handlebars.registerHelper("diseaseStatus", function(disease) {
+		if (disease.system.infectionActive) {
+			return game.i18n.format("FALLOUT.TEMPLATES.DiseaseProgress", {
+				day: disease.system.daysInfected,
+				days: disease.system.duration,
+			});
+		}
+		else {
+			return game.i18n.localize("FALLOUT.TEMPLATES.DiseaseIncubating");
+		}
+	});
+
 	Handlebars.registerHelper("listDamageEffects", function(effects) {
 		const elements = [];
 

@@ -48,7 +48,7 @@ export default class FalloutItemSheet extends ItemSheet {
 				secrets: item.isOwner,
 				async: true,
 			}),
-			effects: prepareActiveEffectCategories(item.effects),
+			effects: prepareActiveEffectCategories(item.transferredEffects),
 			FALLOUT: CONFIG.FALLOUT,
 			flags: item.flags,
 			isEmbedded: item.isEmbedded,
