@@ -9,9 +9,12 @@
 
 	* Disease items now contain fields for tracking whether they are active (character experiencing symptoms), and how many days the infection has been active for.
 
+- [#513] Indicate on hit location model when an actor is immune to radiation or poison
+
 #### Bugs
 - [#500] Knuckles missing weight value
 - [#510] Addictions and Diseases should not show stash controls
+- [#512] Fix inconsistent typography between different item sheets
 
 #### Chores
 - [#499] Merge new French translation updates from Crowdin

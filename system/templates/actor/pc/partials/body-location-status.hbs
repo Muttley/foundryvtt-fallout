@@ -26,9 +26,13 @@
 					class="fo-{{keyRes}} resistance-icon"
 					title="{{keyRes}}"
 				></i>
-				<p class="label-value text-center">
-					{{resistancevalue}}
-				</p>
+				{{#if (lookup ../system.immunities keyRes)}}
+					<i class="text-center fa-regular fa-infinity" style="margin-top: 2px;"></i>
+				{{else}}
+					<p class="label-value text-center">
+						{{resistancevalue}}
+					</p>
+				{{/if}}
 			</div>
         {{/each}}
     </div>
