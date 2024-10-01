@@ -233,10 +233,10 @@ FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notável
 FALLOUT.OTHER: Outro
 FALLOUT.powered: Energizado
-FALLOUT.RANGE.close: C
-FALLOUT.RANGE.extreme: E
-FALLOUT.RANGE.long: L
-FALLOUT.RANGE.medium: M
+FALLOUT.RANGE.close: Close
+FALLOUT.RANGE.extreme: Extreme
+FALLOUT.RANGE.long: Long
+FALLOUT.RANGE.medium: Medium
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Clique para alternar Imunidade
 FALLOUT.RESISTANCE.energy: RD Energia
 FALLOUT.RESISTANCE.Immunity.poison: Imunidade a Veneno
@@ -344,7 +344,6 @@ FALLOUT.TEMPLATES.Attack: Ataque
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
-FALLOUT.TEMPLATES.Base_Damage: Dano Base
 FALLOUT.TEMPLATES.Butchery: Talhar
 FALLOUT.TEMPLATES.ButcheryTooltip: Número Alvo de Talhar
 FALLOUT.TEMPLATES.Category: Categoria
@@ -397,6 +396,8 @@ FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
 FALLOUT.TEMPLATES.DAMAGE: DANO
 FALLOUT.TEMPLATES.Data: Dados
+FALLOUT.TEMPLATES.DaysInfected: Days Infected
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
 FALLOUT.TEMPLATES.DEFENSE: DEFESA
 FALLOUT.TEMPLATES.Degree: Grau
@@ -405,6 +406,7 @@ FALLOUT.TEMPLATES.Delete: Deletar
 FALLOUT.TEMPLATES.DERIVED: SOBRE VOCÊ
 FALLOUT.TEMPLATES.Description: Descrição
 FALLOUT.TEMPLATES.Details: Detalhes
+FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Duração
 FALLOUT.TEMPLATES.Edit_Item: Editar Item
 FALLOUT.TEMPLATES.Effect: Efeito
@@ -421,6 +423,7 @@ FALLOUT.TEMPLATES.Healthy: Saudável
 FALLOUT.TEMPLATES.HitLocationLabel: Local do Acerto
 FALLOUT.TEMPLATES.HP_Healed: PV Restaurado
 FALLOUT.TEMPLATES.HP: PV
+FALLOUT.TEMPLATES.InfectionActive: Infection Active
 FALLOUT.TEMPLATES.INITIATIVE: INICIATIVA
 FALLOUT.TEMPLATES.Injuries: Feridas
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
@@ -467,6 +470,7 @@ FALLOUT.TEMPLATES.Range: Alcance
 FALLOUT.TEMPLATES.RANGE: Alcance
 FALLOUT.TEMPLATES.Rank: Ranque
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ranques [atual/máximo]
+FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Re-rolar
 FALLOUT.TEMPLATES.RemoveSettler: Remover Colono
 FALLOUT.TEMPLATES.Requirements: Requisitos
@@ -477,17 +481,15 @@ FALLOUT.TEMPLATES.Salvage: Sucatear
 FALLOUT.TEMPLATES.SalvageTooltip: NA de Sucatear
 FALLOUT.TEMPLATES.Scale: Escala
 FALLOUT.TEMPLATES.SettlersAndJobs: Colonos e Profissões
-FALLOUT.TEMPLATES.Skill_Tag: Habilidade Marcada
-FALLOUT.TEMPLATES.Skill_Value: Valor da Habilidade
 FALLOUT.TEMPLATES.Skill: Habilidade
-FALLOUT.TEMPLATES.SKILL: HABILIDADE
-FALLOUT.TEMPLATES.SKILLS: HABILIDADES
+FALLOUT.TEMPLATES.Skills: Skills
 FALLOUT.TEMPLATES.Source: Fonte
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Estoque
 FALLOUT.TEMPLATES.StructuresAndRooms: Estruturas e Quartos
 FALLOUT.TEMPLATES.Successes: Sucessos
 FALLOUT.TEMPLATES.Tag: Marcada
+FALLOUT.TEMPLATES.Tagged: Tagged
 FALLOUT.TEMPLATES.Tear: Desgaste
 FALLOUT.TEMPLATES.Thirst_Reduction: Redução da Sede
 FALLOUT.TEMPLATES.TimeTaken: Tempo Gasto
@@ -662,6 +664,7 @@ TYPES.Item.consumable: Consumível
 TYPES.Item.disease: Doença
 TYPES.Item.miscellany: Geral
 TYPES.Item.object_or_structure: Objeto/Estrutura
+TYPES.Item.origin: Origin
 TYPES.Item.perk: Talento
 TYPES.Item.robot_armor: Armadura Robótica
 TYPES.Item.robot_mod: Módulo Robótico

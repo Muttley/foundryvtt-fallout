@@ -233,10 +233,10 @@ FALLOUT.NPC_TYPES.normal: Normalny
 FALLOUT.NPC_TYPES.notable: Znaczący
 FALLOUT.OTHER: Inne
 FALLOUT.powered: Wspomagane
-FALLOUT.RANGE.close: B
-FALLOUT.RANGE.extreme: E
-FALLOUT.RANGE.long: D
-FALLOUT.RANGE.medium: Ś
+FALLOUT.RANGE.close: Close
+FALLOUT.RANGE.extreme: Extreme
+FALLOUT.RANGE.long: Long
+FALLOUT.RANGE.medium: Medium
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Kliknij, aby przełączyć odporność
 FALLOUT.RESISTANCE.energy: Energetyczne
 FALLOUT.RESISTANCE.Immunity.poison: Niewrażliwość na obrażenia od trucizn
@@ -344,7 +344,6 @@ FALLOUT.TEMPLATES.Attack: Atak
 FALLOUT.TEMPLATES.ATTACKS: Ataki
 FALLOUT.TEMPLATES.Attribute: Cecha
 FALLOUT.TEMPLATES.Attributes: Cechy
-FALLOUT.TEMPLATES.Base_Damage: Obrażenia Podstawowe
 FALLOUT.TEMPLATES.Butchery: Mięso
 FALLOUT.TEMPLATES.ButcheryTooltip: PT testu rzeźnictwa
 FALLOUT.TEMPLATES.Category: Kategoria
@@ -397,6 +396,8 @@ FALLOUT.TEMPLATES.DAMAGE_EFFECTS: Efekty Obrażeń
 FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
 FALLOUT.TEMPLATES.Data: Informacje
+FALLOUT.TEMPLATES.DaysInfected: Days Infected
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.Default_Attribute: Domyślne Cechy
 FALLOUT.TEMPLATES.DEFENSE: OBRONA
 FALLOUT.TEMPLATES.Degree: Stopnie
@@ -405,6 +406,7 @@ FALLOUT.TEMPLATES.Delete: Usuń
 FALLOUT.TEMPLATES.DERIVED: POCHODNE
 FALLOUT.TEMPLATES.Description: Opis
 FALLOUT.TEMPLATES.Details: Szczegóły
+FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Czas Trwania
 FALLOUT.TEMPLATES.Edit_Item: Edytuj Przedmiot
 FALLOUT.TEMPLATES.Effect: Efekt
@@ -421,6 +423,7 @@ FALLOUT.TEMPLATES.Healthy: Zdrowie
 FALLOUT.TEMPLATES.HitLocationLabel: Lokalizacja Trafienia
 FALLOUT.TEMPLATES.HP_Healed: Wyleczone PZ
 FALLOUT.TEMPLATES.HP: PZ
+FALLOUT.TEMPLATES.InfectionActive: Infection Active
 FALLOUT.TEMPLATES.INITIATIVE: INICJATYWA
 FALLOUT.TEMPLATES.Injuries: Urazy
 FALLOUT.TEMPLATES.INJURIES: RANY
@@ -467,6 +470,7 @@ FALLOUT.TEMPLATES.Range: Zasięg
 FALLOUT.TEMPLATES.RANGE: Zasięg
 FALLOUT.TEMPLATES.Rank: Rangi
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangi [obecne/maksymalne]
+FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Przerzut
 FALLOUT.TEMPLATES.RemoveSettler: Usuń Osadnika
 FALLOUT.TEMPLATES.Requirements: Wymagania
@@ -477,17 +481,15 @@ FALLOUT.TEMPLATES.Salvage: Odzyskiwanie
 FALLOUT.TEMPLATES.SalvageTooltip: PT testu odzyskiwania
 FALLOUT.TEMPLATES.Scale: Skala
 FALLOUT.TEMPLATES.SettlersAndJobs: Osadnicy i miejsca pracy
-FALLOUT.TEMPLATES.Skill_Tag: Specjalizacja
-FALLOUT.TEMPLATES.Skill_Value: Poziom Umiejętności
 FALLOUT.TEMPLATES.Skill: Umiejętność
-FALLOUT.TEMPLATES.SKILL: Umiejętność
-FALLOUT.TEMPLATES.SKILLS: Umiejętności
+FALLOUT.TEMPLATES.Skills: Skills
 FALLOUT.TEMPLATES.Source: Źródło
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Zapasy
 FALLOUT.TEMPLATES.StructuresAndRooms: Struktury i pomieszczenia
 FALLOUT.TEMPLATES.Successes: Sukcesy
 FALLOUT.TEMPLATES.Tag: Specjalizacja
+FALLOUT.TEMPLATES.Tagged: Tagged
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.Thirst_Reduction: Redukcja pragnienia
 FALLOUT.TEMPLATES.TimeTaken: Czas wykonania
@@ -662,6 +664,7 @@ TYPES.Item.consumable: Jednorazowe
 TYPES.Item.disease: Choroby
 TYPES.Item.miscellany: Rozmaitości
 TYPES.Item.object_or_structure: Obiekt/Struktura
+TYPES.Item.origin: Origin
 TYPES.Item.perk: Profit
 TYPES.Item.robot_armor: Pancerz Robota
 TYPES.Item.robot_mod: Modyfikacje Robota
