@@ -1,0 +1,12 @@
+<div class="flexrow fallout-dialog">
+				<div class="flexrow resource" style="padding:5px">
+					<label class="title-label">{{localize "FALLOUT.UI.REROLL_WITH_LUCK_COUNT"}}</label>
+					<select class="spend-luck" name="spend-luck">
+            			{{#rerollOptions numOfDice}} {{/rerollOptions}}
+        			</select>
+					<label class="title-label">{{localize "FALLOUT.UI.REROLL_COUNT"}}</label>
+					<select class="non-spend-luck" name="non-spend-luc">
+            			{{#rerollOptions numOfDice}} {{/rerollOptions}}
+        			</select>
+				</div>
+			</div>

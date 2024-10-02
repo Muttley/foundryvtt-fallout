@@ -1,6 +1,9 @@
 <div class="fallout-chat-message">
 	<div class="content">
 		<h2>{{rollname}}</h2>
+		{{#if flavor}}
+			<p class="flavor-paragraph">{{flavor}}</p>
+		{{/if}}
 		<div class="damage-plaq flexrow">
 			<p class="flexlarge" style="margin: 0;">
 				{{localize "FALLOUT.UI.Damage"}}: {{damage}} |
