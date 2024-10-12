@@ -23,6 +23,7 @@ usageMatchRegex:
   - "[^\\w\\d]ui\\.notifications\\.warn\\(['\"`]({key})['\"`],\\s{\\s*.*\\slocalize: true\\s*.*}"
   - "[^\\w\\d]ui\\.notifications\\.error\\(['\"`]({key})['\"`],\\s{\\s*.*\\slocalize: true\\s*.*}"
   - "\\{\\{\\s*localize\\s+[\"']({key})['\"]\\}\\}"
+  - "\\(\\s*localize\\s+[\"']({key})['\"]\\)"
   - "\\{\\{[\\w\\.\\s\\=]*\\(localize\\s+[\"']({key})['\"]\\)[\\w\\.\\s\\=]*\\}\\}"
   - "name:\\s+[\"'](SETTINGS.{key})[\"']"
   - "hint:\\s+[\"'](SETTINGS.{key})[\"']"
