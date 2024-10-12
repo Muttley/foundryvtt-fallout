@@ -125,7 +125,7 @@ FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Nível de Fadiga
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Nível de Fome
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Nível de Sono
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nível de Sede
-FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
+FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumiu Água Suja"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumiu {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga Consumida
@@ -136,8 +136,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resis
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radiação
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dano de Radiação
-FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
-FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resistiu {baseRadDamage} dano de radiação ao consumir Água Suja"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recebe {radsTaken} dano de radiação ao consumir Água Suja"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Pilhando Local
@@ -212,12 +212,12 @@ FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutos
 FALLOUT.LOCATION_TIME_TAKEN.large: 2 horas
 FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutos
 FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minuto
-FALLOUT.MACRO.DrinkDirtyWater.name: Drink Dirty Water
+FALLOUT.MACRO.DrinkDirtyWater.name: Beber Água Suja
 FALLOUT.MACRO.Error.CaughtError: "O macro '{macro}' falhou pois apresenta o seguinte erro: {error}"
 FALLOUT.MACRO.Error.GameMasterRoleRequired: O macro '{macro}' necessita que você tenha o cargo de Mestre
-FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
-FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
-FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
+FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: Para executar este macro jogadores devem ter um caractere atribuído.
+FALLOUT.MACRO.Error.NoTokensSelected: Você deve ter pelo menos um token selecionado ao executar este macro.
+FALLOUT.MACRO.Error.TooManyTokensSelected: Você só pode ter um máximo de {max} tokens selecionados ao executar este macro.
 FALLOUT.MACRO.NewSession.name: Nova Sessão
 FALLOUT.MACRO.Success: O macro '{macro}' foi usado com sucesso
 FALLOUT.MIGRATION.begin_migration: Realizando atualizações de arquivos para Fallout 2d20
@@ -233,10 +233,10 @@ FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notável
 FALLOUT.OTHER: Outro
 FALLOUT.powered: Energizado
-FALLOUT.RANGE.close: Close
-FALLOUT.RANGE.extreme: Extreme
-FALLOUT.RANGE.long: Long
-FALLOUT.RANGE.medium: Medium
+FALLOUT.RANGE.close: Curto
+FALLOUT.RANGE.extreme: Extremo
+FALLOUT.RANGE.long: Longo
+FALLOUT.RANGE.medium: Médio
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Clique para alternar Imunidade
 FALLOUT.RESISTANCE.energy: RD Energia
 FALLOUT.RESISTANCE.Immunity.poison: Imunidade a Veneno
@@ -305,20 +305,20 @@ FALLOUT.SKILL.Speech: Lábia
 FALLOUT.SKILL.Survival: Sobrevivência
 FALLOUT.SKILL.Throwing: Arremesso
 FALLOUT.SKILL.Unarmed: Desarmado
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
-FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Contos Impressionantemente Incríveis, Edição No. 2 - Totalmente Operacional"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Contos Impressionantemente Incríveis, Edição No. 4 - Caçado!"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Contos Impressionantemente Incríveis, Edição #1-4 - Edição Bônus #5 dentro!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Contos Impressionantemente Incríveis, Edição No. 1 - Céu Alaranjado"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Contos Impressionantemente Incríveis, Edição No. 3 - Confronto em Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: O RPG"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "Pacote de NPC #2 - Remanescentes da Enclave"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Ferramentas de Mestre"
-FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
-FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "Pacote de NPC - Heróis de Hollywood"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Pacote de Mapa 1 - Refúgio"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Pacote de Mapa 2 - Locais dos Ermos"
 FALLOUT.SOURCE_TITLE.quickstart: Início Rápido
-FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "Pacote de NPC #3 - Patrulheiros de Reilly"
+FALLOUT.SOURCE_TITLE.rust_devils: "Pacote de NPC #1 - Os Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Livro Guia dos Colonos
 FALLOUT.SOURCE_TITLE.wanderers_guide: Livro Guia dos Andarilhos
 FALLOUT.SOURCE_TITLE.winter_of_atom: Inverno de Átom
@@ -396,8 +396,8 @@ FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
 FALLOUT.TEMPLATES.DAMAGE: DANO
 FALLOUT.TEMPLATES.Data: Dados
-FALLOUT.TEMPLATES.DaysInfected: Days Infected
-FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
+FALLOUT.TEMPLATES.DaysInfected: Dias Infectado
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubando
 FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
 FALLOUT.TEMPLATES.DEFENSE: DEFESA
 FALLOUT.TEMPLATES.Degree: Grau
@@ -406,7 +406,7 @@ FALLOUT.TEMPLATES.Delete: Deletar
 FALLOUT.TEMPLATES.DERIVED: SOBRE VOCÊ
 FALLOUT.TEMPLATES.Description: Descrição
 FALLOUT.TEMPLATES.Details: Detalhes
-FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
+FALLOUT.TEMPLATES.DiseaseProgress: Dia {day} de {days}
 FALLOUT.TEMPLATES.Duration: Duração
 FALLOUT.TEMPLATES.Edit_Item: Editar Item
 FALLOUT.TEMPLATES.Effect: Efeito
@@ -423,7 +423,7 @@ FALLOUT.TEMPLATES.Healthy: Saudável
 FALLOUT.TEMPLATES.HitLocationLabel: Local do Acerto
 FALLOUT.TEMPLATES.HP_Healed: PV Restaurado
 FALLOUT.TEMPLATES.HP: PV
-FALLOUT.TEMPLATES.InfectionActive: Infection Active
+FALLOUT.TEMPLATES.InfectionActive: Infecção Ativa
 FALLOUT.TEMPLATES.INITIATIVE: INICIATIVA
 FALLOUT.TEMPLATES.Injuries: Feridas
 FALLOUT.TEMPLATES.INJURIES: FERIDAS
@@ -470,7 +470,7 @@ FALLOUT.TEMPLATES.Range: Alcance
 FALLOUT.TEMPLATES.RANGE: Alcance
 FALLOUT.TEMPLATES.Rank: Ranque
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ranques [atual/máximo]
-FALLOUT.TEMPLATES.Ranks: Ranks
+FALLOUT.TEMPLATES.Ranks: Ranques
 FALLOUT.TEMPLATES.Re_roll: Re-rolar
 FALLOUT.TEMPLATES.RemoveSettler: Remover Colono
 FALLOUT.TEMPLATES.Requirements: Requisitos
@@ -482,14 +482,14 @@ FALLOUT.TEMPLATES.SalvageTooltip: NA de Sucatear
 FALLOUT.TEMPLATES.Scale: Escala
 FALLOUT.TEMPLATES.SettlersAndJobs: Colonos e Profissões
 FALLOUT.TEMPLATES.Skill: Habilidade
-FALLOUT.TEMPLATES.Skills: Skills
+FALLOUT.TEMPLATES.Skills: Habilidades
 FALLOUT.TEMPLATES.Source: Fonte
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Estoque
 FALLOUT.TEMPLATES.StructuresAndRooms: Estruturas e Quartos
 FALLOUT.TEMPLATES.Successes: Sucessos
 FALLOUT.TEMPLATES.Tag: Marcada
-FALLOUT.TEMPLATES.Tagged: Tagged
+FALLOUT.TEMPLATES.Tagged: Marcado
 FALLOUT.TEMPLATES.Tear: Desgaste
 FALLOUT.TEMPLATES.Thirst_Reduction: Redução da Sede
 FALLOUT.TEMPLATES.TimeTaken: Tempo Gasto
@@ -606,7 +606,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Perfuração
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioativo
 FALLOUT.WEAPONS.damageEffect.spread: Propagação
 FALLOUT.WEAPONS.damageEffect.stun: Atordoar
-FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilizante
 FALLOUT.WEAPONS.damageEffect.vicious: Cruel
 FALLOUT.WEAPONS.damageType.energy: Energia
 FALLOUT.WEAPONS.damageType.physical: Físico
@@ -664,7 +664,7 @@ TYPES.Item.consumable: Consumível
 TYPES.Item.disease: Doença
 TYPES.Item.miscellany: Geral
 TYPES.Item.object_or_structure: Objeto/Estrutura
-TYPES.Item.origin: Origin
+TYPES.Item.origin: Origem
 TYPES.Item.perk: Talento
 TYPES.Item.robot_armor: Armadura Robótica
 TYPES.Item.robot_mod: Módulo Robótico
