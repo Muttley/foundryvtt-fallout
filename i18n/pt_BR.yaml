@@ -528,7 +528,7 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignora X pontos da RD do alvo para cad
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Por cada Efeito rolado, o alvo também sofre 1 ponto de dano de radiação. Esse dano de radiação é rolado e aplicado separadamente, logo após o alvo sofrer o dano normal do ataque.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque inflige um acerto adicional no alvo. Cada acerto adicional inflige metade do dano rolado (arredondado para baixo) e atinge um local aleatório, mesmo que um local específico tenha sido alvo do ataque inicial.
 FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá realizar suas ações normais no próximo turno. Um personagem ou criatura atordoada ainda pode gastar PA para realizar ações adicionais normalmente.
-FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante inflingir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste VIG + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de HP ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano por cada Efeito rolado.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você realizar a Ação Menor de Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 @fos[DC] por PA gasto ao dano do ataque. Se você adicionar dano dessa maneira, você não pode gastar munição para adicionar mais dano. Uma arma não pode ser Precisa e Imprecisa.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: A arma consome munição a uma taxa muito maior do que outras armas. Cada vez que a arma é disparada, ela gasta X munição, em vez de 1. Além disso, dano extra requer gastar X munição por +1CD, com um número máximo de CD igual à Cadência de Tiro da arma. Usos adicionais de munição, como o efeito de dano Rajada, também gastam X munição para cada 1 munição que normalmente seria gasta.
@@ -555,7 +555,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: Uma arma de Arremesso (C) pode ser arreme
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Uma arma de Duas Mãos deve ser usada com as duas mãos; tentar atacar com uma arma de Duas Mãos com apenas uma mão aumentará a dificulade em +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quando você faz um ataque com uma arma Não Confiável, aumente o alcance de complicação do ataque em 1. Uma arma pode não ser Confiável e Não Confiável.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Isso nunca foi projetado para ser usado como uma arma portátil. Ao atacar com uma arma dessas, cada complicação inflinge em você 2DC de dano de radiação. Uma arma pode não ser Radioativamente Instável e Confiável.
-FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Se um ataque com uma arma com Laçar for bem-sucedido, você pode gastar 2 PA para mover o alvo para até uma zona. Nas rodadas subsequentes, você ou o alvo, podem tentar um teste FOR ou AGI + Atletismo para mover o personagem no outro extremo do laço ou se libertar.
 FALLOUT.UI.Add: Adicionar
 FALLOUT.UI.Addictions: Vícios
 FALLOUT.UI.APPAREL_MODS: Modificações de Vestuário
@@ -637,7 +637,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Arremessável
 FALLOUT.WEAPONS.weaponQuality.two_handed: Duas Mãos
 FALLOUT.WEAPONS.weaponQuality.unreliable: Não Confiável
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radioativamente Instável
-FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
+FALLOUT.WEAPONS.weaponQuality.wrangle: Laçar
 FALLOUT.WEAPONS.weaponType.bigGuns: Armas Grandes
 FALLOUT.WEAPONS.weaponType.bows: Arcos
 FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
