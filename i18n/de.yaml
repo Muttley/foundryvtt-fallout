@@ -20,13 +20,13 @@ FALLOUT.actor.inventory.materials.rare: Selten
 FALLOUT.actor.inventory.materials.uncommon: Ungewöhnlich
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Der Wert wird durch einen aktiven Effekt modifiziert und kann nicht bearbeitet werden. Deaktiviere den Effekt, um ihn zu bearbeiten.
 FALLOUT.Actor.Warnings.DerivedValue: Dies ist ein automatisch berechneter Wert der nicht bearbeitet werden kann.
-FALLOUT.Actor.Warnings.NpcAlreadyResident: Der NPC ist bereits Bewohner von {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: Ein Siedler mit Akteur UUID {uuid} wurde nicht gefunden so, dass er aus {settlementName} entfernt wurde
+FALLOUT.Actor.Warnings.NpcAlreadyResident: Der NSC ist bereits Bewohner von {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: Ein Siedler mit Akteur UUID {uuid} wurde nicht gefunden, und wurde deshalb aus {settlementName} entfernt
 FALLOUT.Add: Hinzufügen
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Alles zurücksetzen
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Alle Chem Dosen zurücksetzen
 FALLOUT.APP.ChemDoseManager.title: Chem Dosen
-FALLOUT.APP.ItemTypeMenu.title: gegenstand Typ auswählen
+FALLOUT.APP.ItemTypeMenu.title: Gegenstandstyp auswählen
 FALLOUT.APP.Loading.body: Durchsuche das Ödland...
 FALLOUT.APP.Loading.title: Lade
 FALLOUT.APP.ModuleArtConfig.items: Gegenstände
@@ -51,7 +51,7 @@ FALLOUT.APPAREL.headgear: Kopfbedeckung
 FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Beschichtung
 FALLOUT.APPAREL.powerArmor: Powerrüstung
-FALLOUT.AvailabilityRoll.result.body: Maximal verfügbare Seltenheit {rarity}
+FALLOUT.AvailabilityRoll.result.body: Die maximal verfügbare Seltenheit ist {rarity}
 FALLOUT.AvailabilityRoll.result.title: Verfügbarkeits-Wurf
 FALLOUT.AvailabilityRoll.tooltip: Würfle für Verfügbarkeit
 FALLOUT.BEVERAGE: Getränk
@@ -65,8 +65,8 @@ FALLOUT.BODYLOCATION_ABBR.robot.armL: A1
 FALLOUT.BODYLOCATION_ABBR.robot.armR: A2
 FALLOUT.BODYLOCATION_ABBR.robot.head: O
 FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
-FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
-FALLOUT.BODYLOCATION_ABBR.robot.torso: KH
+FALLOUT.BODYLOCATION_ABBR.robot.legR: S
+FALLOUT.BODYLOCATION_ABBR.robot.torso: HK
 FALLOUT.BODYLOCATION.character.armL: Linker Arm
 FALLOUT.BODYLOCATION.character.armR: Rechter Arm
 FALLOUT.BODYLOCATION.character.head: Kopf
@@ -76,9 +76,9 @@ FALLOUT.BODYLOCATION.character.torso: Rumpf
 FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Kopf | Optik | Kopf | Kopf
 FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Linker Arm | Arm 1 | Linkes Vorderbein | Linker Flügel (als Bein)
 FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Linkes Bein | Arm 3 | Linkes Hinterbein | Beine
-FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (aks Bein)
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Rechter Arm | Arm 2 | Rechtes Vorderbein | Rechter Flügel (als Bein)
 FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Rechtes Bein | Thruster | Rechtes Hinterbein | Beine
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso_MainBody_Torso_Torso
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Rumpf_Hauptkörper_Rumpf_Rumpf
 FALLOUT.BODYLOCATION.robot.armL: Arm 1
 FALLOUT.BODYLOCATION.robot.armR: Arm 2
 FALLOUT.BODYLOCATION.robot.head: Optik
@@ -94,7 +94,7 @@ FALLOUT.BodyTypes.flyingInsect.legL: Beine
 FALLOUT.BodyTypes.flyingInsect.legR: Beine
 FALLOUT.BodyTypes.flyingInsect.torso: Rumpf
 FALLOUT.BodyTypes.humanoid.armL: Arm links
-FALLOUT.BodyTypes.humanoid.armR: Arm Rechts
+FALLOUT.BodyTypes.humanoid.armR: Arm rechts
 FALLOUT.BodyTypes.humanoid.head: Kopf
 FALLOUT.BodyTypes.humanoid.label: Mensch
 FALLOUT.BodyTypes.humanoid.legL: Bein links
@@ -114,14 +114,14 @@ FALLOUT.BodyTypes.robot.label: Roboter
 FALLOUT.BodyTypes.robot.legL: Arm 3
 FALLOUT.BodyTypes.robot.legR: Hauptkörper
 FALLOUT.BodyTypes.robot.torso: Hauptkörper
-FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} wird abhängig von {itemName}"
+FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} wird von {itemName} abhängig"
 FALLOUT.CHAT_MESSAGE.addiction.title: Chem Sucht
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} wird aus dem Konsum von {itemName} ein Alkoholiker"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Alkoholabhängigkeit
 FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} ist jetzt {hungerLevel}, {thirstLevel} und {sleepLevel}"
 FALLOUT.CHAT_MESSAGE.condition-change.title: Zustandsänderung
 FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Deine Ermüdung hat sich aufgrund deines {condition} Levels um +{level} erhöht
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Erschöpfungzustand
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Erschöpfungszustand
 FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hungerzustand
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Schlafzustand
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Durstzustand
@@ -129,12 +129,12 @@ FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} trank schmutziges W
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Getränk verbraucht
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} verbrauchte {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem verbraucht
-FALLOUT.CHAT_MESSAGE.consumed.food.title: Essen verbaucht
-FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Du bist bereits voll und kannst nicht mehr essen
+FALLOUT.CHAT_MESSAGE.consumed.food.title: Essen gegessen
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Du bist bereits satt und kannst nichts mehr essen
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Sonstiges verbraucht
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} widerstnad {baseRadDamage} Strahlungsschaden aus dem Konsum von {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} widerstand {baseRadDamage} Strahlungsschaden aus dem Konsum von {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Strahlung widerstanden
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} nimmt {radsTaken} Strahlungsschaden aus dem Konsum von {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} nimmt aus dem Konsum von {itemName} {radsTaken} Strahlungsschaden"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} widerstand {baseRadDamage} Strahlungsschaden aus dem Trinken von schmutzigem Wasser"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} erhält {radsTaken} Strahlungsschaden aus dem Trinken von schmutzigem Wasser"
@@ -156,11 +156,11 @@ FALLOUT.dialog.roll_ammo.button.update: Item aktualisieren
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
 FALLOUT.dialog.roll_ammo.chat.details: Dies wird das Ergebnis der Munition als Chat-Nachricht veröffentlichen.
 FALLOUT.dialog.roll_ammo.create.details: Dies wird einen neuen Munitionsgegenstand erstellen, mit zufällig gewürfelter Menge. Wenn der Gegenstand von dem gewürfelt wird, einem Akteur gehört, wird der neue Gegenstand im Inventar erstellt.
-FALLOUT.dialog.roll_ammo.title: Würfle Munition
+FALLOUT.dialog.roll_ammo.title: Munition würfeln
 FALLOUT.dialog.roll_ammo.update.details: Dies wird die Munition mit der gewürfelten Menge updaten.
-FALLOUT.EffectCreate: Erzeuge Effekt
-FALLOUT.EffectDelete: Entferne Effekt
-FALLOUT.EffectEdit: Bearbeite Effektt
+FALLOUT.EffectCreate: Effekt erzeugen
+FALLOUT.EffectDelete: Effekt entfernen
+FALLOUT.EffectEdit: Effekt bearbeiten
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
 FALLOUT.ERRORS.ThisWeaponIsBroken: Diese Waffe ist kaputt und kann nicht länger genutzt werden.
@@ -173,11 +173,11 @@ FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
 FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
 FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Plünder-Einstellungen
-FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Du kanns maximal {maxChoices} dieses Gegenstand-Typs auswählen.
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Du kannst maximal {maxChoices} dieses Gegenstand-Typs auswählen.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Kann keine Gegenstände des Typs in den Verfügbaren Kompendien finden.
 FALLOUT.Form.SelectCompendiumItem.prompt: Gegenstand auswählen ...
-FALLOUT.Form.SelectCompendiumItem.title: Gegestände wählen
-FALLOUT.Form.SelectCompendiumItem.tooltip: AUs Kompendium hinzufügen
+FALLOUT.Form.SelectCompendiumItem.title: Gegenstände wählen
+FALLOUT.Form.SelectCompendiumItem.tooltip: Aus Kompendium hinzufügen
 FALLOUT.Form.SelectItem.title: Wähle {type}
 FALLOUT.Form.SourceFilters.AllUsed: Alle Quellen sind erlaubt
 FALLOUT.Form.SourceFilters.hint: Nur Quellen in dieser Liste werden beim automatischen Hinzufügen von Gegenständen aus Kompendien berücksichtigt.
@@ -575,7 +575,7 @@ FALLOUT.UI.Consume: Verbrauchen
 FALLOUT.UI.Cost: Kosten
 FALLOUT.UI.Damage: Schaden
 FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
-FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
+FALLOUT.UI.DeleteOrJunk.title: Löschen oder verschrotten?
 FALLOUT.UI.DISEASES: Krankheiten
 FALLOUT.UI.favorite: Favorit
 FALLOUT.UI.INVENTORY: Inventar
@@ -583,7 +583,7 @@ FALLOUT.UI.MISCELLANY: Verschiedenes
 FALLOUT.UI.Name: Name
 FALLOUT.UI.OTHER: Anderes
 FALLOUT.UI.Perks: Extras
-FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
+FALLOUT.UI.PreWarMoneyRoll: Rolle Vorkriegsgeld
 FALLOUT.UI.Qty: Menge
 FALLOUT.UI.Quantity: Anzahl
 FALLOUT.UI.Rarity: Seltenheit
@@ -606,7 +606,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Panzerbrechend
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioaktiv
 FALLOUT.WEAPONS.damageEffect.spread: Streuung
 FALLOUT.WEAPONS.damageEffect.stun: Betäubend
-FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Betäubend
 FALLOUT.WEAPONS.damageEffect.vicious: Verheerend
 FALLOUT.WEAPONS.damageType.energy: Energie
 FALLOUT.WEAPONS.damageType.physical: Physisch
@@ -653,7 +653,7 @@ TYPES.Actor.character: Charakter
 TYPES.Actor.creature: Kreatur
 TYPES.Actor.npc: NSC
 TYPES.Actor.robot: Roboter
-TYPES.Actor.scavenging_location: Scavenging Location
+TYPES.Actor.scavenging_location: Schauplatz
 TYPES.Actor.settlement: Siedlung
 TYPES.Item.addiction: Abhängigkeit
 TYPES.Item.ammo: Munition
@@ -664,7 +664,7 @@ TYPES.Item.consumable: Verbrauchsgegenstand
 TYPES.Item.disease: Krankheit
 TYPES.Item.miscellany: Verschiedenes
 TYPES.Item.object_or_structure: Objekt/Struktur
-TYPES.Item.origin: Origin
+TYPES.Item.origin: Herkunft
 TYPES.Item.perk: Extra
 TYPES.Item.robot_armor: Roboterrüstung
 TYPES.Item.robot_mod: Robotermodul
