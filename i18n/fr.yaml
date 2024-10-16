@@ -470,7 +470,7 @@ FALLOUT.TEMPLATES.Range: Portée
 FALLOUT.TEMPLATES.RANGE: Portée
 FALLOUT.TEMPLATES.Rank: Rang
 FALLOUT.TEMPLATES.Ranks_current_maximum: Rangs [actuel/maximum]
-FALLOUT.TEMPLATES.Ranks: Ranks
+FALLOUT.TEMPLATES.Ranks: Rangs
 FALLOUT.TEMPLATES.Re_roll: Relancer
 FALLOUT.TEMPLATES.RemoveSettler: Supprimer le colon
 FALLOUT.TEMPLATES.Requirements: Prérequis
@@ -482,14 +482,14 @@ FALLOUT.TEMPLATES.SalvageTooltip: Contrôle SR Récupération
 FALLOUT.TEMPLATES.Scale: Échelle
 FALLOUT.TEMPLATES.SettlersAndJobs: Colons et tâches
 FALLOUT.TEMPLATES.Skill: Compétence
-FALLOUT.TEMPLATES.Skills: Skills
+FALLOUT.TEMPLATES.Skills: Compétences
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: État
 FALLOUT.TEMPLATES.Stockpile: Réserve
 FALLOUT.TEMPLATES.StructuresAndRooms: Structures et pièces
 FALLOUT.TEMPLATES.Successes: Succès
 FALLOUT.TEMPLATES.Tag: Atout
-FALLOUT.TEMPLATES.Tagged: Tagged
+FALLOUT.TEMPLATES.Tagged: Personnels
 FALLOUT.TEMPLATES.Tear: Usure
 FALLOUT.TEMPLATES.Thirst_Reduction: Réduction de la soif
 FALLOUT.TEMPLATES.TimeTaken: Temps pris
@@ -528,7 +528,7 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignorez X points de résistance aux d�
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: Pour chaque Effet obtenu sur le jet de dégâts, la cible subit également 1 point de dégâts de radiation. Ces dégâts de radiation sont calculés et appliqués séparément, après qu'un personnage a subi les dégâts normaux de l'attaque.
 FALLOUT.TOOLTIPS.DamageEffect.spread: Pour chaque Effet obtenu sur le jet de dégâts, votre attaque inflige un coup supplémentaire à la cible. Chaque coup supplémentaire inflige la moitié des dégâts obtenus sur le jet (arrondi à l'inférieur) et touche une localisation au hasard même si une localisation spécifique était ciblée par l'attaque initiale.
 FALLOUT.TOOLTIPS.DamageEffect.stun: Si vous obtenez un ou plusieurs Effets sur le jet de dégâts, la cible perd ses actions normales à son tour suivant. Une créature ou un personnage étourdi peut toujours dépenser des PA pour effectuer des actions supplémentaires normalement.
-FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Les armes ayant l'effet Tranquilisant infligent des dégâts mais n'infligent pas de blessures. Si une attaque avec une arme Tranquilisant inflige suffisamment de dégâts pour causer des blessures, au lieu de cela, la cible blessée doit réussir un test END + Survie ou Corps + AUTRE avec une difficulté de X. S'ils réussissent, l'attaque n'a pas d'autre effet, s'ils échouent, ils sont rendus inconscients pendant 1 heure. Si une cible est réduite à 0 PV en même temps qu'elle subirait une blessure, ils échouent automatiquement au test et sont rendus inconscients pendant 1 heure au lieu de tout autre effet. Les personnages immunisés contre les dégâts de posion ou en Armure Assistée complète sont immunisés contre cet effet.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: L'attaque inflige +1 point de dégâts pour chaque Effet obtenu sur le jet de dégâts.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: L'arme utilise beaucoup plus de munitions que la plupart des armes. A chaque tir l'arme dépense X munitions à la place d'une seule. De plus chaque tir supplémentaire coute X munitions toujours limité par la cadence de tir. Cela compte également pour En Rafale.
@@ -555,7 +555,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: Une arme de Lancer (C) peut être projet�
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Une arme à Deux mains doit être maniée à deux mains pour être utilisée efficacement ; tenter d'attaquer avec une arme à Deux mains dans une seule main augmente la difficulté de +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quand vous portez une attaque avec une arme Imprévisible, augmentez la marge de complication de l'attaque de 1. Une arme ne peut pas être à la fois Fiable et Imprévisible.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Cette arme n'a jamais été conçu pour être utilisée comme arme de poing. Lorsque vous attaquez avec, la moindre complication vous inflige 2DC de dégâts dû au retour de radiation. Une arme ne peut pas être à la fois Fiable et Radiation instable.
-FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Si une attaque avec une arme Bataille est réussie, vous pouvez dépenser 2 PA pour déplacer la cible d'une zone. Lors des tours suivants, vous ou la cible, peut essayer un test d'opposition de FOR ou AGI + Athlétisme pour déplacer le personnage à l'autre extrémité du lasso ou se libérer.
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
@@ -606,7 +606,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Perforant
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
 FALLOUT.WEAPONS.damageEffect.spread: De zone
 FALLOUT.WEAPONS.damageEffect.stun: Étourdissant
-FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquillisant
 FALLOUT.WEAPONS.damageEffect.vicious: Brutal
 FALLOUT.WEAPONS.damageType.energy: énergétiques
 FALLOUT.WEAPONS.damageType.physical: balistiques
@@ -637,7 +637,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
 FALLOUT.WEAPONS.weaponQuality.two_handed: Deux mains
 FALLOUT.WEAPONS.weaponQuality.unreliable: Imprévisible
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiation instable
-FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
+FALLOUT.WEAPONS.weaponQuality.wrangle: Bataille
 FALLOUT.WEAPONS.weaponType.bigGuns: Armes lourdes
 FALLOUT.WEAPONS.weaponType.bows: Arcs
 FALLOUT.WEAPONS.weaponType.creatureAttack: Attaque Créature
@@ -664,7 +664,7 @@ TYPES.Item.consumable: Consommable
 TYPES.Item.disease: Maladie
 TYPES.Item.miscellany: Bric-A-Brac
 TYPES.Item.object_or_structure: Objet/Structure
-TYPES.Item.origin: Origin
+TYPES.Item.origin: Origine
 TYPES.Item.perk: Aptitude
 TYPES.Item.robot_armor: Armure de robot
 TYPES.Item.robot_mod: Module de robot
