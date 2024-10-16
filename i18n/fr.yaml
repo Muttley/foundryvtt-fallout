@@ -233,10 +233,10 @@ FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Autres
 FALLOUT.powered: Alimenté
-FALLOUT.RANGE.close: Close
-FALLOUT.RANGE.extreme: Extreme
-FALLOUT.RANGE.long: Long
-FALLOUT.RANGE.medium: Medium
+FALLOUT.RANGE.close: Courte
+FALLOUT.RANGE.extreme: Extrême
+FALLOUT.RANGE.long: Longue
+FALLOUT.RANGE.medium: Moyenne
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Activer/Désactiver l'immunité
 FALLOUT.RESISTANCE.energy: Energie
 FALLOUT.RESISTANCE.Immunity.poison: Immunisé aux dégâts de poison
@@ -396,8 +396,8 @@ FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFFETS DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TYPE DÉGÂTS
 FALLOUT.TEMPLATES.DAMAGE: DÉGÂTS
 FALLOUT.TEMPLATES.Data: Donnée
-FALLOUT.TEMPLATES.DaysInfected: Days Infected
-FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
+FALLOUT.TEMPLATES.DaysInfected: Jours infectés
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubation
 FALLOUT.TEMPLATES.Default_Attribute: Attribut par défaut
 FALLOUT.TEMPLATES.DEFENSE: DEFENSE
 FALLOUT.TEMPLATES.Degree: Degré
@@ -406,7 +406,7 @@ FALLOUT.TEMPLATES.Delete: Effacer
 FALLOUT.TEMPLATES.DERIVED: DERIVÉE
 FALLOUT.TEMPLATES.Description: Description
 FALLOUT.TEMPLATES.Details: Détails
-FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
+FALLOUT.TEMPLATES.DiseaseProgress: Jour {day} de {days}
 FALLOUT.TEMPLATES.Duration: Durée
 FALLOUT.TEMPLATES.Edit_Item: Editer Objet
 FALLOUT.TEMPLATES.Effect: Effet
@@ -423,7 +423,7 @@ FALLOUT.TEMPLATES.Healthy: Bonne Santé
 FALLOUT.TEMPLATES.HitLocationLabel: Localisation du coup
 FALLOUT.TEMPLATES.HP_Healed: PV guéris
 FALLOUT.TEMPLATES.HP: PV
-FALLOUT.TEMPLATES.InfectionActive: Infection Active
+FALLOUT.TEMPLATES.InfectionActive: Infection Actuelle
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
 FALLOUT.TEMPLATES.Injuries: Blessures
 FALLOUT.TEMPLATES.INJURIES: BLESSURES
