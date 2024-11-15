@@ -118,6 +118,19 @@ FALLOUT.CREATURE_CATEGORIES = {
 	legendary: "FALLOUT.NPC_TYPES.legendary",
 };
 
+FALLOUT.VEHICLE_ATTRIBUTES = {
+	body: "FALLOUT.VEHICLE.body",
+	mind: "FALLOUT.VEHICLE.mind",
+};
+
+FALLOUT.VEHICLE_CATEGORIES = {
+	bus: "FALLOUT.VEHICLE_TYPES.bus",
+	carTruck: "FALLOUT.VEHICLE_TYPES.carTruck",
+	motorcycle: "FALLOUT.VEHICLE_TYPES.motorcycle",
+	sportsCar: "FALLOUT.VEHICLE_TYPES.sportsCar",
+	vertibird: "FALLOUT.VEHICLE_TYPES.vertibird",
+};
+
 FALLOUT.DAMAGE_EFFECTS = {
 	arc: "FALLOUT.WEAPONS.damageEffect.arc",
 	breaking: "FALLOUT.WEAPONS.damageEffect.breaking",

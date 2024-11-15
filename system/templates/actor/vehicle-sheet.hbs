@@ -1,0 +1,45 @@
+<form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
+
+	{{> actor/_shared-partials/header }}
+
+	{{!-- Sheet Tab Navigation --}}
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="abilities">
+			{{localize "FALLOUT.TEMPLATES.Abilities"}}
+		</a>
+
+		{{#if isCreature}}
+			<a class="item" data-tab="butchery">
+				{{localize "FALLOUT.TEMPLATES.Butchery"}}
+			</a>
+		{{else}}
+			<a class="item" data-tab="special-abilities">
+				{{localize "FALLOUT.UI.Special_Abilities"}}
+			</a>
+		{{/if}}
+
+		{{#if isCreature}}
+			<a class="item" data-tab="gear">
+				{{localize "FALLOUT.TEMPLATES.Salvage"}}
+			</a>
+		{{else}}
+			<a class="item" data-tab="gear">
+				{{localize "FALLOUT.TEMPLATES.Gear"}}
+			</a>
+		{{/if}}
+
+		<a class="item" data-tab="data">
+			{{localize "FALLOUT.TEMPLATES.Data"}}
+		</a>
+	</nav>
+
+	{{!-- Sheet Body --}}
+	<section class="sheet-body">
+		{{> actor/npc/tabs/abilities }}
+		{{> actor/npc/tabs/butchery }}
+		{{> actor/npc/tabs/special-abilities }}
+		{{> actor/npc/tabs/gear }}
+		{{> actor/_shared-partials/data-tab }}
+	</section>
+</form>
+

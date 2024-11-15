@@ -6,7 +6,8 @@
 			"npc",
 			"robot",
 			"scavenging_location",
-			"settlement"
+			"settlement",
+			"vehicle"
 		],
 		"character": {
 			"chemDoses": {},
@@ -17,6 +18,110 @@
 				"body",
 				"stats",
 				"valuables"
+			]
+		},
+		"vehicle": {
+			"scale": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"health": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"cover": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"zone_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"travel_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"passengers": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"impact": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"injuries": "",
+			"locations": [],
+			"resistance": {
+				"energy": {
+					"locations": "",
+					"value": 0
+				},
+				"physical": {
+					"locations": "",
+					"value": 0
+				}
+			},
+			"salvage": {
+				"tn": 0
+			},
+			"vehicleQuality": {
+				"cargo": {
+					"rank": 25,
+					"value": false
+				},
+				"cumbersome": {
+					"rank": 0,
+					"value": false
+				},
+				"enclosed": {
+					"rank": 0,
+					"value": false
+				},
+				"exposed": {
+					"rank": 0,
+					"value": false
+				},
+				"high_performance": {
+					"rank": 0,
+					"value": false
+				},
+				"rugged": {
+					"rank": 0,
+					"value": false
+				},
+				"single_seat": {
+					"rank": 0,
+					"value": false
+				},
+				"flying": {
+					"rank": 1,
+					"value": false
+				},
+				"watercraft": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"templates": [
+				"base",
+				"encumbrance",
+				"valuables",
+				"body",
+				"npc_shared"
 			]
 		},
 		"creature": {

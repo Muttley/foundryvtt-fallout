@@ -231,6 +231,11 @@ FALLOUT.NPC_TYPES.mighty: Poderoso
 FALLOUT.NPC_TYPES.minion: Lacaio
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notável
+FALLOUT.VEHICLE_TYPES.bus: Bus
+FALLOUT.VEHICLE_TYPES.carTruck: Car\Truck
+FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
+FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
 FALLOUT.OTHER: Outro
 FALLOUT.powered: Energizado
 FALLOUT.RANGE.close: Curto
