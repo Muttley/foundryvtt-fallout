@@ -4,20 +4,31 @@
 			{{#if isCreature}}
 				{{> actor/npc/partials/attributes_creature }}
 			{{else}}
-				{{> actor/npc/partials/attributes_npc }}
+				{{#if isVehicle}}
+					{{> actor/npc/partials/attributes_vehicle }}
+				{{else}}
+					{{> actor/npc/partials/attributes_npc }}
+				{{/if}}
 			{{/if}}
 
-			<div class="flexrow resource-row">
-				{{> actor/npc/partials/hp }}
-				{{> actor/npc/partials/initiative }}
-				{{> actor/npc/partials/defense }}
-			</div>
+			{{#if isVehicle}}
+				<div class="flexrow resource-row">
+					{{> actor/npc/partials/hp }}
+					{{> actor/npc/partials/speed }}
+				</div>
+			{{else}}
+				<div class="flexrow resource-row">
+					{{> actor/npc/partials/hp }}
+					{{> actor/npc/partials/initiative }}
+					{{> actor/npc/partials/defense }}
+				</div>
+			{{/if}}
 
 			{{#if isNPC}}
-				<div class="flexrow resource-row">
-					{{> actor/npc/partials/carry-weight }}
-					{{> actor/npc/partials/melee-bonus }}
-				</div>
+			<div class="flexrow resource-row">
+				{{> actor/npc/partials/carry-weight }}
+				{{> actor/npc/partials/melee-bonus }}
+			</div>
 			{{/if}}
 
 			{{> actor/npc/partials/body
@@ -25,7 +36,9 @@
 			}}
 
 			{{#unless isCreature}}
-				{{> actor/npc/partials/settlement }}
+			{{#unless isVehicle}}
+			{{> actor/npc/partials/settlement }}
+			{{/unless}}
 			{{/unless}}
 		</div>
 

@@ -120,7 +120,7 @@
 				"base",
 				"encumbrance",
 				"valuables",
-				"body",
+				"body_vehicle",
 				"npc_shared"
 			]
 		},
@@ -600,6 +600,143 @@
 					"common": 0,
 					"rare": 0,
 					"uncommon": 0
+				}
+			},
+			"body_vehicle": {
+				"body_parts": {
+					"chassis": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"engine": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"wheelFL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"wheelFR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRL1": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRR1": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRL2": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRR2": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0
+						},
+						"status": "healthy"
+					}
+				},
+				"bodyType": "humanoid",
+				"immunities": {
+					"poison": false,
+					"radiation": false
 				}
 			}
 		}

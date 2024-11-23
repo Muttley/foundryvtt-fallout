@@ -234,12 +234,6 @@ FALLOUT.NPC_TYPES.mighty: Mighty
 FALLOUT.NPC_TYPES.minion: Minion
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
-FALLOUT.NPC_TYPES.armored: Armored
-FALLOUT.VEHICLE_TYPES.bus: Bus
-FALLOUT.VEHICLE_TYPES.carTruck: Car\Truck
-FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
-FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
-FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
 FALLOUT.OTHER: Other
 FALLOUT.powered: Powered
 FALLOUT.RANGE.close: Close
@@ -600,12 +594,25 @@ FALLOUT.UI.ROBOT_MODULES: Robot Modules
 FALLOUT.UI.SaveChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Special Ability
+FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
 FALLOUT.UI.Yes: Yes
+FALLOUT.VEHICLE_TYPES.armored: Armored
+FALLOUT.VEHICLE_TYPES.bus: Bus
+FALLOUT.VEHICLE_TYPES.carTruck: Car\Truck
+FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
+FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
+FALLOUT.VEHICLE.zone_speed: Zone
+FALLOUT.VEHICLE.travel_speed: Travel
+FALLOUT.VEHICLE.scale: Scale
+FALLOUT.VEHICLE.cover: Cover
+FALLOUT.VEHICLE.impact: Impact
+FALLOUT.VEHICLE.passengers: Passengers
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst
@@ -662,6 +669,7 @@ TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
 TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robot
+TYPES.Actor.vehicle: Vehicle
 TYPES.Actor.scavenging_location: Scavenging Location
 TYPES.Actor.settlement: Settlement
 TYPES.Item.addiction: Addiction

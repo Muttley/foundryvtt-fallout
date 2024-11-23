@@ -119,8 +119,12 @@ FALLOUT.CREATURE_CATEGORIES = {
 };
 
 FALLOUT.VEHICLE_ATTRIBUTES = {
-	body: "FALLOUT.VEHICLE.body",
-	mind: "FALLOUT.VEHICLE.mind",
+	zone_speed: "FALLOUT.VEHICLE.zone_speed",
+	travel_speed: "FALLOUT.VEHICLE.travel_speed",
+	scale: "FALLOUT.VEHICLE.scale",
+	cover: "FALLOUT.VEHICLE.cover",
+	impact: "FALLOUT.VEHICLE.impact",
+	passengers: "FALLOUT.VEHICLE.passengers",
 };
 
 FALLOUT.VEHICLE_CATEGORIES = {
@@ -129,6 +133,42 @@ FALLOUT.VEHICLE_CATEGORIES = {
 	motorcycle: "FALLOUT.VEHICLE_TYPES.motorcycle",
 	sportsCar: "FALLOUT.VEHICLE_TYPES.sportsCar",
 	vertibird: "FALLOUT.VEHICLE_TYPES.vertibird",
+};
+
+FALLOUT.VEHICLE_CARTRUCK_VALUES = {
+	head: "1-2",
+	torso: "3-8",
+	armL: "9-11",
+	armR: "12-14",
+	legL: "15-17",
+	legR: "18-20",
+};
+
+FALLOUT.VEHICLE_MOTORCYCLE_VALUES = {
+	head: "1-2",
+	torso: "3-8",
+	armL: "9-11",
+	armR: "12-14",
+	legL: "15-17",
+	legR: "18-20",
+};
+
+FALLOUT.VEHICLE_SPORTSCAR_VALUES = {
+	head: "1-2",
+	torso: "3-8",
+	armL: "9-11",
+	armR: "12-14",
+	legL: "15-17",
+	legR: "18-20",
+};
+
+FALLOUT.VEHICLE_VERTIBIRD_VALUES = {
+	head: "1-2",
+	torso: "3-8",
+	armL: "9-11",
+	armR: "12-14",
+	legL: "15-17",
+	legR: "18-20",
 };
 
 FALLOUT.DAMAGE_EFFECTS = {

@@ -40,6 +40,13 @@ export default class FalloutActor extends Actor {
 		return !this.isCreature;
 	}
 
+	get isVehicle() {
+		return this.type === "vehicle";
+	}
+
+	get isNotVehicle() {
+		return !this.isVehicle;
+	}
 
 	get isNotRobot() {
 		return !this.isRobot;
@@ -666,7 +673,7 @@ export default class FalloutActor extends Actor {
 			this.system.category
 		);
 
-		if (this.isCreature) {
+		if (this.isCreature || this.isVehicle) {
 			this.system.carryWeight.total = this._getItemsTotalWeight();
 		}
 		else {

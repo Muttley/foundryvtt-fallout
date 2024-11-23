@@ -72,6 +72,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			isNPC: this.actor.type === "npc",
 			isRobot: this.actor.type === "robot",
 			isSettlement: this.actor.type === "settlement",
+			isVehicle: this.actor.type === "vehicle",
 			items: this.actor.items,
 			limited: this.actor.limited,
 			options: this.options,
@@ -335,6 +336,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * ROLL WEAPON DAMAGE
 		html.find(".weapon-roll-damage").click(async event => this._onWeaponDamageRoll(event));
 
+		// * ROLL VEHICLE COVER
+		html.find(".vehicle-cover").click(async event => this._onVehicleCoverRoll(event));
+
+		// * ROLL VEHICLE IMPACT
+		html.find(".vehicle-impact").click(async event => this._onVehicleImpactRoll(event));
+
 		// Drag events for macros.
 		if (this.actor.isOwner) {
 			let handler = ev => this._onDragStart(ev);
@@ -546,6 +553,46 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			diceNum: numOfDice,
 			actor: actorUUID,
 			weapon: item,
+		});
+	}
+
+	async _onVehicleCoverRoll(event) {
+
+		const numOfDice = this.actor.system.cover.value;
+
+		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.cover")}`;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
+		});
+	}
+
+	async _onVehicleImpactRoll(event) {
+
+		const numOfDice = this.actor.system.impact.value;
+
+		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.impact")}`;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
 		});
 	}
 

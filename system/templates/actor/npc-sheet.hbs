@@ -13,9 +13,11 @@
 				{{localize "FALLOUT.TEMPLATES.Butchery"}}
 			</a>
 		{{else}}
-			<a class="item" data-tab="special-abilities">
-				{{localize "FALLOUT.UI.Special_Abilities"}}
-			</a>
+			{{#if isNotVehicle}}
+				<a class="item" data-tab="special-abilities">
+					{{localize "FALLOUT.UI.Special_Abilities"}}
+				</a>
+			{{/if}}
 		{{/if}}
 
 		{{#if isCreature}}
