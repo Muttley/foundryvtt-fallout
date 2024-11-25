@@ -71,6 +71,10 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 			await this._prepareButcheryMaterials(context);
 		}
 
+		if (this.actor.isVehicle) {
+			await this._getVehicleQualities(context, this.actor);
+		}
+
 		context.disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"
 		);
@@ -143,6 +147,20 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 			}
 
 			return super._updateObject(event, formData);
+		}
+	}
+
+	async _getVehicleQualities(context, actor) {
+
+		const vehicleQualities = [];
+		for (const key in CONFIG.FALLOUT.VEHICLE_QUALITIES) {
+			vehicleQualities.push({
+				active: actor.system?.vehicleQuality[key].value ?? false,
+				hasRank: CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK[key],
+				rank: actor.system?.vehicleQuality[key].rank,
+				key,
+				label: CONFIG.FALLOUT.VEHICLE_QUALITIES[key],
+			});
 		}
 	}
 }

@@ -492,6 +492,18 @@ FALLOUT.THIRST_BY_NUMBER = {
 	3: "FALLOUT.TEMPLATES.conditions.dehydrated",
 };
 
+FALLOUT.VEHICLE_QUALITIES = {
+	cargo_x: "FALLOUT.VEHICLE.vehicleQuality.cargo_x",
+	cumbersome: "FALLOUT.VEHICLE.vehicleQuality.cumbersome",
+	enclosed: "FALLOUT.VEHICLE.vehicleQuality.enclosed",
+	exposed: "FALLOUT.VEHICLE.vehicleQuality.exposed",
+	high_performance: "FALLOUT.VEHICLE.vehicleQuality.high_performance",
+	rugged: "FALLOUT.VEHICLE.vehicleQuality.rugged",
+	single_seat: "FALLOUT.VEHICLE.vehicleQuality.single_seat",
+	flying: "FALLOUT.VEHICLE.vehicleQuality.flying",
+	watercraft: "FALLOUT.VEHICLE.vehicleQuality.watercraft",
+};
+
 FALLOUT.WEAPON_QUALITIES = {
 	accurate: "FALLOUT.WEAPONS.weaponQuality.accurate",
 	ammo_hungry_x: "FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x",
@@ -594,6 +606,17 @@ export async function generateEnrichedTooltips() {
 			)
 		);
 		CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key] = key.endsWith("_x");
+	}
+
+	CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS = {};
+	CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK = {};
+	for (const key in CONFIG.FALLOUT.VEHICLE_QUALITIES) {
+		CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
+			game.i18n.localize(
+				`FALLOUT.TOOLTIPS.VehicleQuality.${key}`
+			)
+		);
+		CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK[key] = key.endsWith("_x");
 	}
 
 	CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK = {};

@@ -51,7 +51,11 @@
 			{{#if isCreature}}
 				{{> actor/npc/partials/special-abilities }}
 			{{else}}
-				{{> actor/_shared-partials/skills}}
+				{{#if isVehicle}}
+					{{> actor/vehicle/partials/qualities}}
+				{{else}}
+					{{> actor/_shared-partials/skills}}
+				{{/if}}
 			{{/if}}
 		</div>
 

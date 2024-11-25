@@ -79,7 +79,7 @@
 				"tn": 0
 			},
 			"vehicleQuality": {
-				"cargo": {
+				"cargo_x": {
 					"rank": 25,
 					"value": false
 				},

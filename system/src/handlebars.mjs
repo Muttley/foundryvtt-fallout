@@ -187,6 +187,10 @@ export default function registerHandlebarsHelpers() {
 		return game.settings.get(SYSTEM_ID, arg1);
 	});
 
+	Handlebars.registerHelper("log", function(something) {
+		console.log(something);
+	});
+
 	// Handlebars.registerHelper("incrementCounter", function(counter) {
 	// 	return ++counter;
 	// });

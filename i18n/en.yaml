@@ -508,6 +508,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Use Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Use Luck
 FALLOUT.TEMPLATES.Use_Perception: Use Perception
 FALLOUT.TEMPLATES.Use_Strength: Use Strength
+FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
 FALLOUT.TEMPLATES.Wealth: Wealth
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: WEAPON QUALITIES
@@ -533,6 +534,15 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: For each Effect rolled, your attack inflic
 FALLOUT.TOOLTIPS.DamageEffect.stun:  If one or more Effects are rolled, the target cannot take their normal actions on their next turn. A stunned character or creature can still spend AP to take additional actions as normal.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x:  Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: The attack inflicts +1 damage for each Effect rolled.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1. 
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
+FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 @fos[DC] per AP spent to the attack’s damage. If you gain damage in this way, you may not spend ammunition for extra damage. A weapon cannot be both Accurate and Inaccurate.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: The weapon consumes ammo at a much higher rate than other weapons. Each time the weapon is fired, it spends X ammo, rather than 1. In addition, extra damage requires spending X ammo per +1CD, with a maximum number of CD equal to the weapon’s Fire Rate. Additional uses of ammunition, such as the Burst damage effect, also spend X ammo for every 1 ammo that would normally be spent.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "When you make an attack with a Blast weapon, you do not target a single opponent. Instead, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2 (adjusted for range as normal). If you succeed, every creature (and other damageable target) in that zone suffers the weapon’s damage. If you fail, your misplaced attack is less effective: roll only half the weapon’s @fos[DC] to determine the damage inflicted to creatures in the target zone and ignore the weapon’s normal damage effects."
@@ -613,6 +623,15 @@ FALLOUT.VEHICLE.scale: Scale
 FALLOUT.VEHICLE.cover: Cover
 FALLOUT.VEHICLE.impact: Impact
 FALLOUT.VEHICLE.passengers: Passengers
+FALLOUT.VEHICLE.vehicleQuality.cargo_x: Cargo
+FALLOUT.VEHICLE.vehicleQuality.cumbersome: Cumbersome
+FALLOUT.VEHICLE.vehicleQuality.enclosed: Enclosed
+FALLOUT.VEHICLE.vehicleQuality.exposed: Exposed
+FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
+FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
+FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
+FALLOUT.VEHICLE.vehicleQuality.flying: Flying
+FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst

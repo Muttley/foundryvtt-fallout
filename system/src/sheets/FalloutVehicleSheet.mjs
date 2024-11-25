@@ -10,4 +10,10 @@ export default class FalloutVehicleSheet extends FalloutNpcSheet {
 			height: 710,
 		});
 	}
+
+	/** @override */
+	get template() {
+		return "systems/fallout/templates/actor/vehicle-sheet.hbs";
+	}
+
 }

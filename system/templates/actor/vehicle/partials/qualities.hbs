@@ -1,0 +1,33 @@
+<div class="resource-row">
+	<div class="box no-padding">
+		<h4 class="box-header text-center upperC">
+			{{localize "FALLOUT.TEMPLATES.VEHICLE_QUALITIES"}}
+		</h4>
+	</div>
+	<div class="grid grid-2col item-list">
+		{{#each vehicleQualities}}
+		<div {{#if this.active}}
+				class="flexrow toggle-label active"
+			{{else}}
+				class="flexrow toggle-label"
+			{{/if}}
+			data-tooltip="{{fromConfig "VEHICLE_QUALITY_TOOLTIPS" this.key}}"
+			 >
+			<label style="align-self: center;">
+				<input type="checkbox"
+						name="system.vehicleQuality.{{this.key}}.value"
+						{{#if this.active}}
+							checked
+						{{/if}}>
+				{{this.label}}
+			</label>
+			{{#if this.hasRank}}
+			<input class="num-short-2"
+					name="system.vehicleQuality.{{this.key}}.rank"
+					type="number"
+					value="{{this.rank}}">
+			{{/if}}
+		</div>
+		{{/each}}
+	</div>
+</div>
