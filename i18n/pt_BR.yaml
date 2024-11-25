@@ -193,6 +193,9 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: Anexado ao Chassi
 FALLOUT.Item.PowerArmor.Frame: Chassi
 FALLOUT.Item.PowerArmor.IsFrame: É Chassi
 FALLOUT.Item.PowerArmor.Pieces: Peças de Armadura Potente
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.LEVEL.CurrentXP: XP Atual
 FALLOUT.LEVEL.Level: Nível
 FALLOUT.LEVEL.NextXP: XP Prox. Nível
