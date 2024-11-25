@@ -7,7 +7,7 @@
 - [#505] Add new Wrangle weapon quality
 - [#509] Improve Disease item schema
 
-	* Disease items now contain fields for tracking whether they are active (character experiencing symptoms), and how many days the infection has been active for.
+	* Disease items now contain fields for tracking whether they are active (character experiencing symptoms), and how many days the infection has been active for as well as the duration.
 
 - [#513] Indicate on hit location model when an actor is immune to radiation or poison
 

@@ -81,43 +81,72 @@ export default class FalloutItemSheet extends ItemSheet {
 			});
 		}
 
-		if (item.type === "apparel" && this.item.isOwned) {
-			let availablePieces = foundry.utils.duplicate(
-				this.item.actor.items.filter(
-					i => i.system.apparelType === "powerArmor"
-						&& (i.system.powerArmor.frameId === ""
-							|| i.system.powerArmor.frameId === this.item._id
-						)
-						&& !i.system.powerArmor.isFrame
-				)
-			);
-
-			availablePieces = availablePieces.sort(
-				(a, b) => a.name.localeCompare(b.name)
-			);
-
-			availablePieces = availablePieces.sort(
-				(a, b) => {
-					const aIsAttached = a.system.powerArmor.frameId === item._id;
-					const bIsAttached = b.system.powerArmor.frameId === item._id;
-
-					return (bIsAttached ? 1 : 0) - (aIsAttached ? 1 : 0);
-				}
-			);
-
-			context.powerArmorPieces = availablePieces;
-		}
-
-		if (item.type === "weapon") {
-			await this.getWeaponData(context, item);
-		}
-
-		if (item.type === "object_or_structure") {
-			// Setup materials
-			await this.getObjectOrStructureData(context, source, item);
+		// Gather any additional data required for specific item types
+		switch (item.type) {
+			case "apparel":
+				await this.getPowerArmorPieceData(context);
+				break;
+			case "object_or_structure":
+				await this.getObjectOrStructureData(context, source, item);
+				break;
+			case "origin":
+				await this.getOriginSelectorConfigs(context);
+				break;
+			case "weapon":
+				await this.getWeaponData(context, item);
+				break;
+			default:
 		}
 
 		return context;
+	}
+
+	async getPowerArmorPieceData(context) {
+		if (!this.item.isOwned) return;
+
+		let availablePieces = foundry.utils.duplicate(
+			this.item.actor.items.filter(
+				i => i.system.apparelType === "powerArmor"
+					&& (i.system.powerArmor.frameId === ""
+						|| i.system.powerArmor.frameId === this.item._id
+					)
+					&& !i.system.powerArmor.isFrame
+			)
+		);
+
+		availablePieces = availablePieces.sort(
+			(a, b) => a.name.localeCompare(b.name)
+		);
+
+		availablePieces = availablePieces.sort(
+			(a, b) => {
+				const aIsAttached = a.system.powerArmor.frameId === item._id;
+				const bIsAttached = b.system.powerArmor.frameId === item._id;
+
+				return (bIsAttached ? 1 : 0) - (aIsAttached ? 1 : 0);
+			}
+		);
+
+		context.powerArmorPieces = availablePieces;
+	}
+
+	async getOriginSelectorConfigs(context) {
+
+		const [fixedTraits, availableFixedTraits] =
+			await fallout.utils.getDedupedSelectedItems(
+				await fallout.compendiums.traits(),
+				this.item.system.traits.fixed ?? []
+			);
+
+		context.traitSelectionConfig = {
+			availableItems: availableFixedTraits,
+			choicesKey: "traits.fixed",
+			isItem: true,
+			label: game.i18n.localize("FALLOUT.Item.Origin.Traits.label"),
+			name: "system.traits.fixed",
+			prompt: game.i18n.localize("FALLOUT.Item.Origin.Traits.prompt"),
+			selectedItems: fixedTraits,
+		};
 	}
 
 	async getObjectOrStructureData(context, source, item) {
@@ -308,28 +337,97 @@ export default class FalloutItemSheet extends ItemSheet {
 		});
 	}
 
+	async _onChangeChoiceList(event, choicesKey, isItem) {
+		const options = event.target.list.options;
+		const value = event.target.value;
+
+		let uuid = null;
+		for (const option of options) {
+			if (option.value === value) {
+				uuid = option.getAttribute("data-uuid");
+				break;
+			}
+		}
+
+		if (uuid === null) return;
+
+		// handles cases where choicesKey is nested property.
+		let currentChoices = choicesKey
+			.split(".")
+			.reduce((obj, path) => obj ? obj[path]: [], this.item.system);
+
+		if (currentChoices.includes(uuid)) return; // No duplicates
+
+		currentChoices.push(uuid);
+
+		const choiceItems = [];
+		for (const itemUuid of currentChoices) {
+			if (isItem) {
+				choiceItems.push(await fromUuid(itemUuid));
+			}
+			else {
+				choiceItems.push(itemUuid);
+			}
+		}
+
+		if (isItem) {
+			choiceItems.sort((a, b) => a.name.localeCompare(b.name));
+		}
+		else {
+			choiceItems.sort((a, b) => a.localeCompare(b));
+		}
+
+		const sortedChoiceUuids = isItem
+			? choiceItems.map(item => item.uuid)
+			: choiceItems;
+
+		return this.item.update({[event.target.name]: sortedChoiceUuids});
+	}
+
+	async _onChangeInput(event) {
+		const choicesKey = $(event.currentTarget).data("choices-key");
+		const isItem = $(event.currentTarget).data("is-item") === "true";
+		if (event.target.list && choicesKey) {
+			return await this._onChangeChoiceList(event, choicesKey, isItem);
+		}
+
+		await super._onChangeInput(event);
+	}
+
 	_onSubmit(event) {
 		if (!this.isEditable) return;
 
-		if (this.item.type === "weapon") {
-			const updateData = this._getSubmitData();
+		switch (this.item.type) {
+			case "origin": {
+				const updateData = this._getSubmitData();
 
-			const weaponType = updateData["system.weaponType"];
-			if (weaponType !== this.item.system.weaponType) {
-				updateData["system.creatureAttribute"] =
-					CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE[
-						weaponType
-					];
-				updateData["system.creatureSkill"] =
-					CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL[
-						weaponType
-					];
+				delete updateData["system.traits.fixed"];
+				delete updateData["system.traits.selectOptions"];
+				delete updateData["system.traits"];
+
+				this.item.update(updateData);
+				break;
 			}
+			case "weapon": {
+				const updateData = this._getSubmitData();
 
-			this.item.update(updateData);
-		}
-		else {
-			super._onSubmit(event);
+				const weaponType = updateData["system.weaponType"];
+				if (weaponType !== this.item.system.weaponType) {
+					updateData["system.creatureAttribute"] =
+						CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE[
+							weaponType
+						];
+					updateData["system.creatureSkill"] =
+						CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL[
+							weaponType
+						];
+				}
+
+				this.item.update(updateData);
+				break;
+			}
+			default:
+				super._onSubmit(event);
 		}
 	}
 

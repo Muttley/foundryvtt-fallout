@@ -1,49 +1,47 @@
-<div class="box padding3">
-	<ol class="items-list">
-		<li class="item consumable flexrow items-header">
-			<div class="flexrow flexlarge item-name upperC">
-				{{localize 'FALLOUT.TEMPLATES.Stockpile'}}
-			</div>
-			<div class="item-controls">
-				<a class="find-any-from-compendium">
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</a>
-			</div>
-		</li>
-		{{#each stockpile}}
-			{{> actor/_shared-partials/simple-expandable-item
-				item=this
-				basicControlsOnly=true
-			}}
-		{{/each}}
-	</ol>
-	<div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">
-		<div class="flexrow align-mid">
-			<div class="flex-center">
-				<label>
-					{{system.storage.base}}
-					{{localize "FALLOUT.TEMPLATES.lbs"}}
-					+
-				</label>
-				<input
-					type="number"
-					name="system.storage.mod"
-					class="num-short num-short-3"
-					value="{{system.storage.mod}}"
-				>
-				<label>
-					=
-					{{localize "FALLOUT.TEMPLATES.MAX"}}:
-					{{system.storage.value}}
-					{{localize "FALLOUT.TEMPLATES.lbs"}}
-				</label>
-			</div>
-			<div style="text-align: right;">
-				<label>
-					{{system.storage.total}} / {{system.storage.value}}
-					{{localize "FALLOUT.TEMPLATES.lbs"}}
-				</label>
-			</div>
+<ol class="items-list">
+	<li class="flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize 'FALLOUT.TEMPLATES.Stockpile'}}
+		</div>
+		<div class="item-controls">
+			<a class="find-any-from-compendium">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+		</div>
+	</li>
+	{{#each stockpile}}
+		{{> actor/_shared-partials/simple-expandable-item
+			item=this
+			basicControlsOnly=true
+		}}
+	{{/each}}
+</ol>
+<div class="box no-padding" style="margin-top: 5px; margin-bottom: 0px;">
+	<div class="flexrow align-mid">
+		<div class="flex-center">
+			<label>
+				{{system.storage.base}}
+				{{localize "FALLOUT.TEMPLATES.lbs"}}
+				+
+			</label>
+			<input
+				type="number"
+				name="system.storage.mod"
+				class="num-short num-short-3"
+				value="{{system.storage.mod}}"
+			>
+			<label>
+				=
+				{{localize "FALLOUT.TEMPLATES.MAX"}}:
+				{{system.storage.value}}
+				{{localize "FALLOUT.TEMPLATES.lbs"}}
+			</label>
+		</div>
+		<div style="text-align: right;">
+			<label>
+				{{system.storage.total}} / {{system.storage.value}}
+				{{localize "FALLOUT.TEMPLATES.lbs"}}
+			</label>
 		</div>
 	</div>
 </div>

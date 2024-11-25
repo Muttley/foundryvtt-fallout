@@ -1,28 +1,26 @@
-<div class="box padding3">
-	<ol class="items-list">
-		<li class="item consumable flexrow items-header">
-			<div class="flexrow flexlarge item-name upperC">
-				{{localize 'FALLOUT.TEMPLATES.StructuresAndRooms'}}
-			</div>
-			<div class="item-controls">
-				<a
-					class="item-control item-create"
-					title="{{localize 'FALLOUT.TEMPLATES.CreateStructuresAndRooms'}}"
-					data-type="object_or_structure"
-				>
-					<i class="fas fa-plus"></i>
-					{{localize 'FALLOUT.UI.Add'}}
-				</a>
-				<a
-					class="find-from-compendium"
-					data-type="object_or_structure"
-				>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</a>
-			</div>
-		</li>
-		{{> actor/settlement/partials/structure-items
-			items=settlementObjects
-		}}
-	</ol>
-</div>
+<ol class="items-list">
+	<li class="flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize 'FALLOUT.TEMPLATES.StructuresAndRooms'}}
+		</div>
+		<div class="item-controls">
+			<a
+				class="item-control item-create"
+				title="{{localize 'FALLOUT.TEMPLATES.CreateStructuresAndRooms'}}"
+				data-type="object_or_structure"
+			>
+				<i class="fas fa-plus"></i>
+				{{localize 'FALLOUT.UI.Add'}}
+			</a>
+			<a
+				class="find-from-compendium"
+				data-type="object_or_structure"
+			>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+		</div>
+	</li>
+	{{> actor/settlement/partials/structure-items
+		items=settlementObjects
+	}}
+</ol>
