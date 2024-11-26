@@ -5,6 +5,7 @@
 - [#503] Add the Quickstart Rules and "Machine Frequency" adventure to the system *(many thanks to Modiphius for allowing us to include this material)*
 - [#504] Add new Tranquilize X weapon effect
 - [#505] Add new Wrangle weapon quality
+- [#508] Pre-populate new NPCs with all Skills
 - [#509] Improve Disease item schema
 
 	* Disease items now contain fields for tracking whether they are active (character experiencing symptoms), and how many days the infection has been active for as well as the duration.

@@ -767,9 +767,8 @@ export default class FalloutActor extends Actor {
 			}
 		}
 
-
-		// Add Skills to Characters and Robots
-		if (this.type === "character" || this.type === "robot") {
+		// Add Skills to Characters, NPCs and Robots
+		if (this.type !== "creature") {
 			// If the Actor data already contains skill items then this is an
 			// Actor being duplicated and we don't want to touch their
 			// items at all
