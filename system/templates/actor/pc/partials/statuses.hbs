@@ -36,9 +36,7 @@
 		<input
 			name="system.conditions.alcoholic"
 			type="checkbox"
-			{{#if system.conditions.alcoholic}}
-				checked
-			{{/if}}
+			{{checked system.conditions.alcoholic}}
 		>
 	</div>
 	<div class="flexrow resource-row align-mid">
@@ -48,9 +46,7 @@
 		<input
 			name="system.conditions.wellRested"
 			type="checkbox"
-			{{#if system.conditions.wellRested}}
-				checked
-			{{/if}}
+			{{checked system.conditions.wellRested}}
 		>
 	</div>
 </div>

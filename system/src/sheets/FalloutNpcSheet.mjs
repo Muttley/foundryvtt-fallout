@@ -36,11 +36,6 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 	}
 
 	/** @override */
-	get template() {
-		return "systems/fallout/templates/actor/npc-sheet.hbs";
-	}
-
-	/** @override */
 	activateListeners(html) {
 		super.activateListeners(html);
 

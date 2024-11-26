@@ -1,7 +1,7 @@
 <div class="tab abilities" data-group="primary" data-tab="abilities">
 	<section class="grid-2-columns">
 		<div class="left-column">
-			{{> actor/npc/partials/attributes}}
+			{{> actor/creature/partials/attributes }}
 
 			<div class="flexrow resource-row">
 				{{> actor/_shared-partials/npc_hp }}
@@ -9,16 +9,9 @@
 				{{> actor/_shared-partials/npc_defense }}
 			</div>
 
-			<div class="flexrow resource-row">
-				{{> actor/npc/partials/carry-weight }}
-				{{> actor/npc/partials/melee-bonus }}
-			</div>
-
 			{{> actor/_shared-partials/npc_body
 				FALLOUT=FALLOUT
 			}}
-
-			{{> actor/npc/partials/settlement }}
 		</div>
 
 		<div class="right-column">
