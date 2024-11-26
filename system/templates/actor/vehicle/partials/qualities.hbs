@@ -4,7 +4,7 @@
 			{{localize "FALLOUT.TEMPLATES.VEHICLE_QUALITIES"}}
 		</h4>
 	</div>
-	<div class="grid grid-2col item-list">
+	<div class="grid grid-1col item-list">
 		{{#each vehicleQualities}}
 		<div {{#if this.active}}
 				class="flexrow toggle-label active"
@@ -22,7 +22,7 @@
 				{{this.label}}
 			</label>
 			{{#if this.hasRank}}
-			<input class="num-short-2"
+			<input class="num-short-3"
 					name="system.vehicleQuality.{{this.key}}.rank"
 					type="number"
 					value="{{this.rank}}">

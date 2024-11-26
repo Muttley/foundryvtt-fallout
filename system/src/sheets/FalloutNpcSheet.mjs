@@ -162,5 +162,9 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 				label: CONFIG.FALLOUT.VEHICLE_QUALITIES[key],
 			});
 		}
+
+		context.vehicleQualities = vehicleQualities.sort(
+			(a, b) => a.label.localeCompare(b.label)
+		);
 	}
 }
