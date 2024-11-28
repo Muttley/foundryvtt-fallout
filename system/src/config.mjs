@@ -128,6 +128,8 @@ FALLOUT.VEHICLE_ATTRIBUTES = {
 };
 
 FALLOUT.VEHICLE_CATEGORIES = {
+	apc: "FALLOUT.VEHICLE_TYPES.apc",
+	armored: "FALLOUT.VEHICLE_TYPES.armored",
 	bus: "FALLOUT.VEHICLE_TYPES.bus",
 	carTruck: "FALLOUT.VEHICLE_TYPES.carTruck",
 	motorcycle: "FALLOUT.VEHICLE_TYPES.motorcycle",
@@ -135,40 +137,71 @@ FALLOUT.VEHICLE_CATEGORIES = {
 	vertibird: "FALLOUT.VEHICLE_TYPES.vertibird",
 };
 
+
 FALLOUT.VEHICLE_CARTRUCK_VALUES = {
-	head: "1-2",
-	torso: "3-8",
-	armL: "9-11",
-	armR: "12-14",
-	legL: "15-17",
-	legR: "18-20",
+	chassis: "1-8",
+	wheelFL: "9-10",
+	wheelFR: "11-12",
+	engine: "13-16",
+	wheelRL: "17-18",
+	wheelRR: "19-20",
 };
 
 FALLOUT.VEHICLE_MOTORCYCLE_VALUES = {
-	head: "1-2",
-	torso: "3-8",
-	armL: "9-11",
-	armR: "12-14",
-	legL: "15-17",
-	legR: "18-20",
+	chassis: "1-7",
+	wheelF: "8-11",
+	engine: "12-16",
+	wheelR: "17-20",
 };
 
 FALLOUT.VEHICLE_SPORTSCAR_VALUES = {
-	head: "1-2",
-	torso: "3-8",
-	armL: "9-11",
-	armR: "12-14",
-	legL: "15-17",
-	legR: "18-20",
+	chassis: "1-7",
+	wheelFL: "8-9",
+	wheelFR: "10-11",
+	engine: "12-16",
+	wheelRL: "17-18",
+	wheelRR: "19-20",
+};
+
+FALLOUT.VEHICLE_BUS_VALUES = {
+	chassis: "1-8",
+	wheelFL: "9-10",
+	wheelFR: "11-12",
+	engine: "13-16",
+	wheelRL1: "17",
+	wheelRR1: "18",
+	wheelRL2: "19",
+	wheelRR2: "20",
+};
+
+FALLOUT.VEHICLE_ARMORED_VALUES = {
+	chassis: "1-8",
+	wheelFL: "9-10",
+	wheelFR: "11-12",
+	engine: "13-16",
+	wheelRL: "17-18",
+	wheelRR: "19-20",
+};
+
+FALLOUT.VEHICLE_APC_VALUES = {
+	chassis: "1-10",
+	wheelFL: "11",
+	wheelFR: "12",
+	engine: "13-16",
+	wheelML: "17",
+	wheelMR: "18",
+	wheelRL: "19",
+	wheelRR: "20",
 };
 
 FALLOUT.VEHICLE_VERTIBIRD_VALUES = {
-	head: "1-2",
-	torso: "3-8",
-	armL: "9-11",
-	armR: "12-14",
-	legL: "15-17",
-	legR: "18-20",
+	engineL: "1-2",
+	engineR: "3-4",
+	chassis: "5-10",
+	wingL: "11-13",
+	wingR: "14-16",
+	weaponNG: "17-18",
+	weaponDG: "19-20",
 };
 
 FALLOUT.DAMAGE_EFFECTS = {

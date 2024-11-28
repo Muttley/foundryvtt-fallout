@@ -616,7 +616,9 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -632,7 +634,81 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"engineL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"engineR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelF": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -648,7 +724,9 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -664,7 +742,97 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy",
+						"wheelFR": {
+							"injuries": [
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"injuryOpenCount": 0,
+							"injuryTreatedCount": 0,
+							"resistance": {
+								"energy": 0,
+								"physical": 0
+							},
+							"status": "healthy"
+						}
+					},
+					"wheelML": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelMR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -680,7 +848,9 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -696,7 +866,9 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -712,7 +884,9 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					},
@@ -728,15 +902,89 @@
 						"injuryTreatedCount": 0,
 						"resistance": {
 							"energy": 0,
-							"physical": 0
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wingL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wingR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"weaponNG": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"weaponDG": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
 						},
 						"status": "healthy"
 					}
 				},
-				"bodyType": "humanoid",
+				"bodyType": "carTruck",
 				"immunities": {
-					"poison": false,
-					"radiation": false
+					"poison": true,
+					"radiation": true
 				}
 			}
 		}

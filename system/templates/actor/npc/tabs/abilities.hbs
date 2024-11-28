@@ -2,38 +2,45 @@
 	<section class="grid-2-columns">
 		<div class="left-column">
 			{{#if isCreature}}
-				{{> actor/npc/partials/attributes_creature }}
+			{{> actor/npc/partials/attributes_creature }}
 			{{else}}
-				{{#if isVehicle}}
-					{{> actor/npc/partials/attributes_vehicle }}
-				{{else}}
-					{{> actor/npc/partials/attributes_npc }}
-				{{/if}}
+			{{#if isVehicle}}
+			{{> actor/npc/partials/attributes_vehicle }}
+			{{else}}
+			{{> actor/npc/partials/attributes_npc }}
+			{{/if}}
 			{{/if}}
 
 			{{#if isVehicle}}
-				<div class="flexrow resource-row">
-					{{> actor/npc/partials/hp }}
-					{{> actor/npc/partials/speed }}
-				</div>
-			{{else}}
-				<div class="flexrow resource-row">
-					{{> actor/npc/partials/hp }}
-					{{> actor/npc/partials/initiative }}
-					{{> actor/npc/partials/defense }}
-				</div>
-			{{/if}}
-
-			{{#if isNPC}}
 			<div class="flexrow resource-row">
-				{{> actor/npc/partials/carry-weight }}
-				{{> actor/npc/partials/melee-bonus }}
+				{{> actor/npc/partials/hp }}
+				{{> actor/npc/partials/speed }}
+			</div>
+			{{else}}
+			<div class="flexrow resource-row">
+				{{> actor/npc/partials/hp }}
+				{{> actor/npc/partials/initiative }}
+				{{> actor/npc/partials/defense }}
 			</div>
 			{{/if}}
 
-			{{> actor/npc/partials/body
-				FALLOUT=FALLOUT
-			}}
+			{{#if isNPC}}
+				<div class="flexrow resource-row">
+					{{> actor/npc/partials/carry-weight }}
+					{{> actor/npc/partials/melee-bonus }}
+				</div>
+			{{/if}}
+
+			{{#if isVehicle}}
+				{{log "here"}}
+				{{> actor/vehicle/partials/body
+					FALLOUT=FALLOUT
+				}}
+			{{else}}
+				{{> actor/npc/partials/body
+					FALLOUT=FALLOUT
+				}}
+			{{/if}}
 
 			{{#unless isCreature}}
 			{{#unless isVehicle}}

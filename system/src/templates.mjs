@@ -92,6 +92,7 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/actor/settlement/tabs/status.hbs",
 		"systems/fallout/templates/actor/settlement/tabs/stockpile.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/header.hbs",
+		"systems/fallout/templates/actor/vehicle/partials/body.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/qualities.hbs",
 		"systems/fallout/templates/item/_shared-partials/choice-selector.hbs",
 		"systems/fallout/templates/item/_shared-partials/description-tab.hbs",

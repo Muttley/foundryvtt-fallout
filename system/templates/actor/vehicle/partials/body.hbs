@@ -1,0 +1,116 @@
+<div style="font-size: 16px; display: grid; grid-template-columns: 1fr 50% repeat(2, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
+
+	<style>
+		.vehicle-hit-location .item-image img {
+			transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+		}
+
+		.vehicle-hit-location .item-image:hover img {
+			transform: scale(1.1); /* Slightly enlarge the image */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for the raised effect */
+		}
+	</style>
+
+	<div class="flex align-mid">
+		#
+		<a class="vehicle-hit-location" style="padding-left: 10px;">
+			<div class="item-image">
+				<img src="systems/fallout/assets/icons/macro/d20-roller.svg" title="Hit Location" width="24" height="24">
+			</div>
+		</a>
+	</div>
+	<div>
+		<select name="system.bodyType" style="font-size: 0.75rem;">
+			{{selectOptions FALLOUT.VEHICLE_CATEGORIES
+				selected=system.bodyType
+			}}
+		</select>
+	</div>
+	<div class="flex align-mid align-center">
+		<i class="fo-physical resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.physical'}}"></i>
+	</div>
+	<div class="flex align-mid align-center">
+		<i class="fo-energy resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.energy'}}"></i>
+	</div>
+</div>
+
+{{#each bodyParts}}
+	<div class="bodypart-row" style="display: grid; grid-template-columns: 1fr 50% repeat(2, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
+		<div>
+			{{this.roll}}
+		</div>
+		<div>
+			{{this.name}}
+		</div>
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath=(concat this.basePath ".resistance.physical")
+			value=this.resistanceValues.physical
+		}}
+		{{> bodyPartControl
+			color="#eee787"
+			backgroundColor="#325885"
+			systemPath=(concat this.basePath ".resistance.energy")
+			value=this.resistanceValues.energy
+		}}
+	</div>
+{{/each}}
+
+{{!-- Controls to set all locations to the same value --}}
+<div class="bodypart-row" style="display: grid; grid-template-columns: 1fr 50% repeat(2, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
+	<div></div>
+	<div><em>{{localize 'FALLOUT.TEMPLATES.AllLocations'}}</em></div>
+	{{> bodyPartControl
+		color="#eee787"
+		backgroundColor="rgba(0, 0, 0, 0.2)"
+		systemPath="_all_physical"
+		forceColors=true
+		value=null
+	}}
+	{{> bodyPartControl
+		color="#eee787"
+		backgroundColor="rgba(0, 0, 0, 0.2)"
+		systemPath="_all_energy"
+		forceColors=true
+		value=null
+	}}
+	<div></div>
+	<div></div>
+</div>
+
+{{#*inline "bodyPartControl"}}
+	<div style="display: flex; justify-content: center;">
+		<input
+			class="num-short-2 npc-bodypart-control"
+			{{#if forceColors}}
+				min="0"
+				name={{systemPath}}
+				style="{{concat 'border: none; color: ' color '; background-color: ' backgroundColor ';'}}"
+				data-dtype="Number"
+				type="number"
+				value="{{value}}"
+				placeholder="&mdash;"
+			{{else}}
+				{{#if immune}}
+					style="{{concat 'border: none; color: ' color '; background-color: ' backgroundColor '; font-size: 24px;' }}"
+					data-dtype="String"
+					type="text"
+					value="&infin;"
+					disabled
+				{{else}}
+					min="0"
+					name={{systemPath}}
+					{{#ifCond value '>' 0}}
+						style="{{concat 'border: none; color: ' color '; background-color: ' backgroundColor ';'}}"
+					{{else}}
+						style="border:none; color:#0f1b28;"
+					{{/ifCond}}
+					data-dtype="Number"
+					type="number"
+					value="{{value}}"
+				{{/if}}
+			{{/if}}
+		>
+	</div>
+{{/inline}}
