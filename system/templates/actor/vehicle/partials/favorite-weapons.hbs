@@ -1,0 +1,88 @@
+<ol class="items-list">
+	<li class="consumable flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize 'FALLOUT.TEMPLATES.FAVORITE_WEAPONS'}}
+		</div>
+	</li>
+	{{#each favoriteWeapons as |item id|}}
+		<li class="item favorite-weapon weapon " data-item-id="{{item._id}}">
+			<div class="item-name flex2 flex-between">
+				<div class="item-name flexlarge">
+					<div class="item-image">
+						<img
+							src="{{item.img}}"
+							title="{{item.name}}"
+							width="24"
+							height="24"
+						/>
+					</div>
+					<a class="resource-label weapon-roll">
+						{{item.name}}
+						{{#if item.shotsAvailable}}
+							<em>({{item.shotsAvailable}})</em>
+						{{/if}}
+						&nbsp;
+						{{#if (isWeaponDamaged item.system)}}
+							<i class="fas fa-wrench"></i>
+						{{/if}}
+					</a>
+				</div>
+				<div class="text-center" style="margin-right: 5px;">
+					<a
+						class="weapon-roll-damage"
+						data-tooltip="{{{item.damageTooltip}}}"
+						style="color:rgb(238, 231, 135)"
+					>
+						{{item.currentWeaponDamage}}
+						<span class="fo-pip-boy fo-blue"></span>
+					</a>
+				</div>
+			</div>
+			<div class="item-sub-info">
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
+					</strong>
+					{{{listWeaponQualities item.system.damage.weaponQuality}}}
+					|&nbsp;
+				</span>
+
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Effects'}}:
+					</strong>
+					{{{listDamageEffects item.system.damage.damageEffect}}}
+					|&nbsp;
+				</span>
+
+				{{#ifCond item.system.ammo '!==' ""}}
+					<span>
+						<strong>
+							{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
+						</strong>
+						{{item.system.fireRate}}&nbsp;
+					</span>
+					|&nbsp;
+				{{/ifCond}}
+
+				<span>
+					<strong>
+						{{localize 'FALLOUT.TEMPLATES.Range'}}:
+					</strong>
+					{{fromConfig "RANGES" item.system.range}}
+					|&nbsp;
+				</span>
+
+				{{#each item.system.damage.damageType as |dt dk|}}
+					{{#ifCond dt '==' true}}
+						<i
+							class="fo-{{dk}}"
+							style="line-height: 1.4;"
+							title="{{fromConfig "DAMAGE_TYPES" dk}}"
+						></i>
+					{{/ifCond}}
+				{{/each}}
+			</div>
+		</li>
+	{{/each}}
+</ol>
