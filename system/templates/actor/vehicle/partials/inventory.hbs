@@ -1,0 +1,25 @@
+<ol class="items-list">
+	<li class="consumable flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize 'FALLOUT.UI.INVENTORY'}}
+		</div>
+		<div class="item-controls">
+			<a class="item-control item-create"
+			   title="Create Miscellany"
+			   data-type="miscellany">
+				<i class="fas fa-plus"></i>
+				{{localize 'FALLOUT.UI.Add'}}
+			</a>
+			<a class="find-any-from-compendium">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+		</div>
+	</li>
+	{{#each inventory}}
+	{{>	actor/_shared-partials/simple-expandable-item
+			item=this
+			basicControlsOnly=true
+	}}
+	{{/each}}
+</ol>
+{{> actor/vehicle/partials/carried-weight }}
