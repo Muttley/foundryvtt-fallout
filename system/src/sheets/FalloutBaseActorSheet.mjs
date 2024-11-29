@@ -342,9 +342,6 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// * ROLL VEHICLE IMPACT
 		html.find(".vehicle-impact").click(async event => this._onVehicleImpactRoll(event));
 
-		// * ROLL VEHICLE HIT LOCATION
-		html.find(".vehicle-hit-location").click(async event => this._onVehicleHitLocationRoll(event));
-
 		// Drag events for macros.
 		if (this.actor.isOwner) {
 			let handler = ev => this._onDragStart(ev);
