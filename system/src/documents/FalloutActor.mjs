@@ -660,7 +660,7 @@ export default class FalloutActor extends Actor {
    * Prepare NPC type specific data.
    */
 	_prepareNpcData() {
-		if (!["creature", "npc"].includes(this.type)) return;
+		if (!["creature", "npc", "vehicle"].includes(this.type)) return;
 
 		const disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"
@@ -679,6 +679,16 @@ export default class FalloutActor extends Actor {
 		else {
 			this._calculateEncumbrance();
 		}
+
+		if (this.isVehicle) {
+			if (this.system.vehicleQuality.cargo_x.value) {
+				this.system.carryWeight.base = this.system.vehicleQuality.cargo_x.rank;
+			}
+			else {
+				this.system.carryWeight.base = 0;
+			}
+		}
+
 	}
 
 	getLastConditionChanges() {
