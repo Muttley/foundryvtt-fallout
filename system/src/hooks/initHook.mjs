@@ -9,6 +9,7 @@ import { Dialog2d20 } from "../roller/Dialog2d20.mjs";
 import { DialogD6 } from "../roller/DialogD6.mjs";
 import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
 import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
+import { DieFalloutVehicleLocation } from "../roller/DieFalloutVehicleLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
 import { FalloutModuleArt } from "../utils/FalloutModuleArt.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
@@ -78,6 +79,7 @@ export async function initHook() {
 function registerDiceSettings() {
 	CONFIG.Dice.terms.c = DieFalloutDamage;
 	CONFIG.Dice.terms.h = DieFalloutLocation;
+	CONFIG.Dice.terms.h += DieFalloutVehicleLocation;
 
 	const dieModifiers = fallout.utils.foundryMinVersion(12)
 		? foundry.dice.terms.Die.MODIFIERS
