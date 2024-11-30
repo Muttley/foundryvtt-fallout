@@ -38,67 +38,71 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		return "systems/fallout/templates/actor/vehicle-sheet.hbs";
 	}
 
-	 /** @override */
-	 activateListeners(html) {
-		 super.activateListeners(html);
+	/** @override */
+	activateListeners(html) {
+		super.activateListeners(html);
 
-		 // * Toggle Favorite Inventory Item
-		 html.find(".item-favorite").click(async ev => {
-			 const li = $(ev.currentTarget).parents(".item");
-			 const item = this.actor.items.get(li.data("item-id"));
+		// * Toggle Favorite Inventory Item
+		html.find(".item-favorite").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("item-id"));
 
-			 item.update({ "system.favorite": !item.system.favorite });
-		 });
+			item.update({ "system.favorite": !item.system.favorite });
+		});
 
 
-		 // * Toggle Stash Inventory Item
-		 html.find(".item-stash").click(async ev => {
-			 const li = $(ev.currentTarget).parents(".item");
-			 const attachedToId = li.data("item-attached") ?? "";
+		// * Toggle Stash Inventory Item
+		html.find(".item-stash").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const attachedToId = li.data("item-attached") ?? "";
 
-			 const itemId = li.data("item-id") ?? "";
-			 const item = this.actor.items.get(itemId);
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
 
-			 const newValue = !item.system.stashed;
+			const newValue = !item.system.stashed;
 
-			 const isFrame = item.system.powerArmor?.isFrame ?? false;
+			const isFrame = item.system.powerArmor?.isFrame ?? false;
 
-			 if (attachedToId !== "" || isFrame) {
-				 const myFrameId = isFrame ? itemId : attachedToId;
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
 
-				 const updateData = [{
-					 "_id": myFrameId,
-					 "system.stashed": newValue,
-					 "system.equipped": newValue ? false : item.system.equipped,
-				 }];
+				const updateData = [{
+					"_id": myFrameId,
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				}];
 
-				 const attachments = this.actor.items.filter(
-					 i => i.type === "apparel"
-						 && i.system.powerArmor.frameId === myFrameId
-				 ).map(i => i._id);
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
 
-				 for (const attachmentId of attachments) {
-					 updateData.push({
-						 "_id": attachmentId,
-						 "system.stashed": newValue,
-						 "system.equipped": newValue ? false : item.system.equipped,
-					 });
-				 }
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.stashed": newValue,
+						"system.equipped": newValue ? false : item.system.equipped,
+					});
+				}
 
-				 await Item.updateDocuments(updateData, { parent: this.actor });
+				await Item.updateDocuments(updateData, { parent: this.actor });
 
-				 if (item.type === "apparel") {
-					 this.actor._calculateCharacterBodyResistance();
-				 }
-			 }
-			 else {
-				 item.update({
-					 "system.stashed": newValue,
-					 "system.equipped": newValue ? false : item.system.equipped,
-				 });
-			 }
-		 });
-	 }
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				});
+			}
+		});
+
+		// * ROLL WEAPON SKILL
+		html.find(".vehicle-weapon-roll").click(async event => this._onVehicleWeaponRoll(event));
+
+	}
 
 	async getData(options) {
 		const context = await super.getData(options);
@@ -211,6 +215,163 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		context.vehicleQualities = vehicleQualities.sort(
 			(a, b) => a.label.localeCompare(b.label)
 		);
+	}
+
+	async _onVehicleWeaponRoll(event) {
+		const li = $(event.currentTarget).parents(".item");
+		const item = this.actor.items.get(li.data("item-id"));
+
+		if (item.isWeaponBroken) {
+			return ui.notifications.warn(
+				game.i18n.localize("FALLOUT.ERRORS.ThisWeaponIsBroken")
+			);
+		}
+
+		let attribute;
+		let rollName = item.name;
+		let skill;
+
+		let actor = await this._getVehicleActor();
+
+		if (actor) if (actor.type === "creature") {
+			const creatureAttribute = item.system.creatureAttribute ?? "";
+			const creatureSkill = item.system.creatureSkill ?? "";
+
+			if (creatureSkill === "" || creatureAttribute === "") {
+				return ui.notifications.warn(
+					game.i18n.localize("FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration")
+				);
+			}
+
+			attribute = actor.system[creatureAttribute];
+
+			skill = actor.system[creatureSkill];
+			skill.tag = true;
+		}
+		else if (actor.type === "vehicle") {
+			attribute = { value: 0 };
+			skill = { value: 0, tag: false, defaultAttribute: "str" };
+		}
+		else {
+			const skillName = item.system.weaponType === "custom"
+				? item.system.skill ?? ""
+				: CONFIG.FALLOUT.WEAPON_SKILLS[item.system.weaponType];
+
+			const customAttribute = item.system.weaponType === "custom"
+				? item.system.attribute ?? ""
+				: false;
+
+			if (skillName === "") {
+				return ui.notifications.error(
+					game.i18n.localize("FALLOUT.ERRORS.UnableToDetermineWeaponSkill")
+				);
+			}
+
+			const skillItem = actor.items.find(i => i.name === skillName);
+
+			if (skillItem) {
+				skill = skillItem.system;
+			}
+			else {
+				skill = { value: 0, tag: false, defaultAttribute: "str" };
+			}
+
+			const attributeOverride = CONFIG.FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE[
+				item.system.weaponType
+			];
+
+			if (customAttribute) {
+				attribute = actor.system.attributes[customAttribute];
+			}
+			else if (attributeOverride) {
+				attribute = actor.system.attributes[attributeOverride];
+			}
+			else {
+				attribute = actor.system.attributes[skill.defaultAttribute];
+			}
+
+			if (!attribute) {
+				attribute = { value: 0 };
+			}
+		}
+		else {
+			attribute = { value: 0 };
+			skill = { value: 0, tag: false, defaultAttribute: "str" };
+		}
+
+		// REDUCE AMMO
+		const autoCalculateAmmo = game.settings.get(
+			"fallout", "automaticAmmunitionCalculation"
+		);
+
+		const actorCanUseAmmo =
+			["character", "robot", "vehicle"].includes(this.actor.type);
+
+		const ammoPopulated = item.system.ammo !== "";
+
+		if (autoCalculateAmmo && actorCanUseAmmo && ammoPopulated) {
+			const [ammo, shotsAvailable] = this.actor._getAvailableAmmoType(
+				item.system.ammo
+			);
+
+			if (!ammo) {
+				ui.notifications.warn(`Ammo ${item.system.ammo} not found`);
+				return;
+			}
+
+			if (shotsAvailable < item.system.ammoPerShot) {
+				ui.notifications.warn(`Not enough ${item.system.ammo} ammo`);
+				return;
+			}
+		}
+
+		// Check for unreliable weapon quality
+		let complication = parseInt(this.actor.system.complication);
+		if (item.system.damage.weaponQuality.unreliable.value) {
+			complication -= 1;
+		}
+
+		fallout.Dialog2d20.createDialog({
+			rollName: rollName,
+			diceNum: 2,
+			attribute: attribute.value,
+			skill: skill.value,
+			tag: skill.tag,
+			complication: complication,
+			rollLocation: true,
+			actor: this.actor,
+			item: item,
+		});
+	}
+
+	async _getVehicleActor() {
+		let actor = null;
+
+		if (game.user.isGM) {
+			const controlledTokenCount = canvas.tokens.controlled.length;
+			if (controlledTokenCount > 0) {
+				if (controlledTokenCount !== 1) {
+					ui.notifications.warn(
+						game.i18n.format("FALLOUT.MACRO.Error.TooManyTokensSelected", {
+							max: 1,
+						})
+					);
+				}
+				else {
+					actor = canvas.tokens.controlled[0].actor;
+				}
+			}
+		}
+		else if (game.user.character) {
+			actor = game.user.character;
+		}
+		else {
+			ui.notifications.warn(
+				game.i18n.format("FALLOUT.MACRO.Error.NoPLayerCharacterAssigned")
+			);
+		}
+
+		return actor;
 	}
 
 }
