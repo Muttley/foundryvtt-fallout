@@ -193,6 +193,9 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: Dołączone do Ramy
 FALLOUT.Item.PowerArmor.Frame: Rama
 FALLOUT.Item.PowerArmor.IsFrame: Jest Ramą
 FALLOUT.Item.PowerArmor.Pieces: Elementy Pancerza Wspomaganego
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom

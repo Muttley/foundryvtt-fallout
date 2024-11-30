@@ -8,12 +8,12 @@
 			{{localize "FALLOUT.TEMPLATES.Abilities"}}
 		</a>
 
-		<a class="item" data-tab="skills">
-			{{localize "FALLOUT.TEMPLATES.Skills"}}
+		<a class="item" data-tab="butchery">
+			{{localize "FALLOUT.TEMPLATES.Butchery"}}
 		</a>
 
 		<a class="item" data-tab="gear">
-			{{localize "FALLOUT.TEMPLATES.Gear"}}
+			{{localize "FALLOUT.TEMPLATES.Salvage"}}
 		</a>
 
 		<a class="item" data-tab="data">
@@ -23,9 +23,9 @@
 
 	{{!-- Sheet Body --}}
 	<section class="sheet-body">
-		{{> actor/npc/tabs/abilities }}
-		{{> actor/npc/tabs/skills }}
-		{{> actor/npc/tabs/gear }}
+		{{> actor/creature/tabs/abilities }}
+		{{> actor/creature/tabs/butchery }}
+		{{> actor/creature/tabs/salvage }}
 		{{> actor/_shared-partials/data-tab }}
 	</section>
 </form>

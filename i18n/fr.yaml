@@ -193,6 +193,9 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: Connecté au châssis
 FALLOUT.Item.PowerArmor.Frame: Châssis
 FALLOUT.Item.PowerArmor.IsFrame: Est le châssis
 FALLOUT.Item.PowerArmor.Pieces: Pièces d'Armure Assistée
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau

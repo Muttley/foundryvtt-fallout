@@ -193,6 +193,9 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: An Powerrüstung-Gestell befestigt
 FALLOUT.Item.PowerArmor.Frame: Powerrüstung-Gestell
 FALLOUT.Item.PowerArmor.IsFrame: Ist ein Powerrüstung-Gestell
 FALLOUT.Item.PowerArmor.Pieces: Powerrrüstungsteile
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe

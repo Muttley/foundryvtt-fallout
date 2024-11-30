@@ -187,6 +187,9 @@ FALLOUT.Form.SourceFilters.title: Filtrar Fontes
 FALLOUT.HEALTH.current: Vida Atual
 FALLOUT.HEALTH.health: Pontos de Vida
 FALLOUT.HEALTH.max: Vida máxima
+FALLOUT.Item.Origin.FixedTraits.label: Traço Fixo
+FALLOUT.Item.Origin.Traits.label: Traços de Origem
+FALLOUT.Item.Origin.Traits.prompt: Selecionar Traço...
 FALLOUT.Item.PowerArmor.Attach: Anexar
 FALLOUT.Item.PowerArmor.Attached: Anexado
 FALLOUT.Item.PowerArmor.AttachedToFrame: Anexado ao Chassi
@@ -402,7 +405,6 @@ FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
 FALLOUT.TEMPLATES.DAMAGE: DANO
 FALLOUT.TEMPLATES.Data: Dados
 FALLOUT.TEMPLATES.DaysInfected: Dias Infectado
-FALLOUT.TEMPLATES.DiseaseIncubating: Incubando
 FALLOUT.TEMPLATES.Default_Attribute: Atributo Padrão
 FALLOUT.TEMPLATES.DEFENSE: DEFESA
 FALLOUT.TEMPLATES.Degree: Grau
@@ -411,6 +413,7 @@ FALLOUT.TEMPLATES.Delete: Deletar
 FALLOUT.TEMPLATES.DERIVED: SOBRE VOCÊ
 FALLOUT.TEMPLATES.Description: Descrição
 FALLOUT.TEMPLATES.Details: Detalhes
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubando
 FALLOUT.TEMPLATES.DiseaseProgress: Dia {day} de {days}
 FALLOUT.TEMPLATES.Duration: Duração
 FALLOUT.TEMPLATES.Edit_Item: Editar Item
