@@ -1,6 +1,6 @@
-<div style="font-size: 16px; display: grid; grid-template-columns: 1fr 50% repeat(2, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
+<div style="font-size: 16px; display: grid; grid-template-columns: 1fr 39% repeat(4, 1fr); background-color: black; padding: 3px 5px; margin-bottom: 3px; color:white">
 
-	<style>
+	<!--<style>
 		.vehicle-hit-location .item-image img {
 			transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 		}
@@ -9,7 +9,7 @@
 			transform: scale(1.1); /* Slightly enlarge the image */
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for the raised effect */
 		}
-	</style>
+	</style>-->
 
 	<div class="flex align-mid">
 		#
@@ -21,7 +21,8 @@
 	</div>
 	<div>
 		<select name="system.bodyType" style="font-size: 0.75rem;">
-			{{selectOptions FALLOUT.VEHICLE_CATEGORIES
+			{{
+selectOptions FALLOUT.VEHICLE_CATEGORIES
 				selected=system.bodyType
 			}}
 		</select>
@@ -32,16 +33,25 @@
 	<div class="flex align-mid align-center">
 		<i class="fo-energy resistance-icon" data-tooltip="{{localize 'FALLOUT.RESISTANCE.energy'}}"></i>
 	</div>
+	<div class="flex align-mid align-center">
+		<i class="fa-solid fa-screwdriver-wrench" data-tooltip="{{localize 'FALLOUT.TEMPLATES.Injuries'}}"></i>
+	</div>
+	<div class="flex align-mid align-center">
+		<div style="background-image: url(systems/fallout/assets/ui/sticking-plaster.svg); width: 1rem; background-repeat: no-repeat"
+			 data-tooltip="{{localize 'FALLOUT.TEMPLATES.TreatedInjuries'}}">
+			&nbsp;
+		</div>
+	</div>
 </div>
 
 {{#each bodyParts}}
-	<div class="bodypart-row" style="display: grid; grid-template-columns: 1fr 50% repeat(2, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
-		<div>
-			{{this.roll}}
-		</div>
-		<div>
-			{{this.name}}
-		</div>
+<div class="bodypart-row" style="display: grid; grid-template-columns: 1fr 40% repeat(4, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
+	<div>
+		{{this.roll}}
+	</div>
+	<div>
+		{{this.name}}
+	</div>
 		{{> bodyPartControl
 			color="#eee787"
 			backgroundColor="#325885"
@@ -54,11 +64,23 @@
 			systemPath=(concat this.basePath ".resistance.energy")
 			value=this.resistanceValues.energy
 		}}
+		{{> bodyPartControl
+			color="white"
+			backgroundColor="#ff0000"
+			systemPath=(concat this.basePath ".injuryOpenCount")
+			value=this.injuryOpenCount
+		}}
+		{{> bodyPartControl
+			color="white"
+			backgroundColor="#a46e30"
+			systemPath=(concat this.basePath ".injuryTreatedCount")
+			value=this.injuryTreatedCount
+		}}
 	</div>
 {{/each}}
 
 {{!-- Controls to set all locations to the same value --}}
-<div class="bodypart-row" style="display: grid; grid-template-columns: 1fr 50% repeat(2, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
+<div class="bodypart-row" style="display: grid; grid-template-columns: 1fr 40% repeat(4, 1fr); padding: 1px 5px; color:rgba(255, 255, 255, 0.6); align-items: center;">
 	<div></div>
 	<div><em>{{localize 'FALLOUT.TEMPLATES.AllLocations'}}</em></div>
 	{{> bodyPartControl
@@ -80,7 +102,7 @@
 </div>
 
 {{#*inline "bodyPartControl"}}
-	<div style="display: flex; justify-content: center;">
+	<div>
 		<input
 			class="num-short-2 npc-bodypart-control"
 			{{#if forceColors}}
