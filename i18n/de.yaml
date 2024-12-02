@@ -234,11 +234,6 @@ FALLOUT.NPC_TYPES.mighty: Mächtig
 FALLOUT.NPC_TYPES.minion: Begleiter
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Bemerkenswert
-FALLOUT.VEHICLE_TYPES.bus: Bus
-FALLOUT.VEHICLE_TYPES.carTruck: Car\Truck
-FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
-FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
-FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
 FALLOUT.OTHER: Anderes
 FALLOUT.powered: Angetrieben
 FALLOUT.RANGE.close: Nah
