@@ -168,6 +168,7 @@ FALLOUT.DEFAULT_TOKENS = {
 	robot: "systems/fallout/assets/tokens/robot.webp",
 	scavenging_location: "systems/fallout/assets/tokens/scavenging_location.webp",
 	settlement: "systems/fallout/assets/tokens/settlement.webp",
+	vehicle: "systems/fallout/assets/tokens/vehicle.webp",
 };
 
 FALLOUT.HUNGER_BY_NUMBER = {
