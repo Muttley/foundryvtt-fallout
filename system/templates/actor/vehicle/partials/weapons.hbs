@@ -27,7 +27,10 @@
 	{{#each itemsByType.weapon as |item id| }}
 		<li class="item weapon" data-item-id="{{item._id}}">
 			<div class="flexrow">
-				<div class="item-name flexlarge vehicle-weapon-roll">
+				<div
+					data-action="roll-vehicle-weapon-attack"
+					class="item-name flexlarge"
+				>
 					<div class="item-image">
 						<img
 							src="{{item.img}}"

@@ -325,9 +325,64 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		});
 
+		// * Toggle Favorite Inventory Item
+		html.find(".item-favorite").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("item-id"));
+
+			item.update({"system.favorite": !item.system.favorite});
+		});
+
+		// * Toggle Stash Inventory Item
+		html.find(".item-stash").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const attachedToId = li.data("item-attached") ?? "";
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			const newValue = !item.system.stashed;
+
+			const isFrame = item.system.powerArmor?.isFrame ?? false;
+
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
+
+				const updateData = [{
+					"_id": myFrameId,
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				}];
+
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
+
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.stashed": newValue,
+						"system.equipped": newValue ? false : item.system.equipped,
+					});
+				}
+
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				});
+			}
+		});
+
 		// * Active Effect management
-		html
-			.find(".effect-control")
+		html.find(".effect-control")
 			.click(ev => onManageActiveEffect(ev, this.actor));
 
 		// * ROLL WEAPON SKILL
@@ -335,15 +390,6 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		// * ROLL WEAPON DAMAGE
 		html.find(".weapon-roll-damage").click(async event => this._onWeaponDamageRoll(event));
-
-		// * ROLL VEHICLE COVER
-		html.find(".vehicle-cover").click(async event => this._onVehicleCoverRoll(event));
-
-		// * ROLL VEHICLE IMPACT
-		html.find(".vehicle-impact").click(async event => this._onVehicleImpactRoll(event));
-
-		// * ROLL VEHICLE HIT LOCATION
-		html.find(".vehicle-hit-location").click(async event => this._onVehicleHitLocationRoll(event));
 
 		// Drag events for macros.
 		if (this.actor.isOwner) {

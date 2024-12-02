@@ -68,54 +68,6 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			this.chemDoseManager.render(true);
 		});
 
-		// * Toggle Stash Inventory Item
-		html.find(".item-stash").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const attachedToId = li.data("item-attached") ?? "";
-
-			const itemId = li.data("item-id") ?? "";
-			const item = this.actor.items.get(itemId);
-
-			const newValue = !item.system.stashed;
-
-			const isFrame = item.system.powerArmor?.isFrame ?? false;
-
-			if (attachedToId !== "" || isFrame) {
-				const myFrameId = isFrame ? itemId : attachedToId;
-
-				const updateData = [{
-					"_id": myFrameId,
-					"system.stashed": newValue,
-					"system.equipped": newValue ? false : item.system.equipped,
-				}];
-
-				const attachments = this.actor.items.filter(
-					i => i.type === "apparel"
-						&& i.system.powerArmor.frameId === myFrameId
-				).map(i => i._id);
-
-				for (const attachmentId of attachments) {
-					updateData.push({
-						"_id": attachmentId,
-						"system.stashed": newValue,
-						"system.equipped": newValue ? false : item.system.equipped,
-					});
-				}
-
-				await Item.updateDocuments(updateData, {parent: this.actor});
-
-				if (item.type === "apparel") {
-					this.actor._calculateCharacterBodyResistance();
-				}
-			}
-			else {
-				item.update({
-					"system.stashed": newValue,
-					"system.equipped": newValue ? false : item.system.equipped,
-				});
-			}
-		});
-
 		// * Toggle Power on Power Armor Item
 		html.find(".salvage-junk").click(async event => {
 			event.preventDefault();
@@ -225,14 +177,6 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 					"system.stashed": newValue ? false : item.system.stashed,
 				});
 			}
-		});
-
-		// * Toggle Favorite Inventory Item
-		html.find(".item-favorite").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
-
-			item.update({"system.favorite": !item.system.favorite});
 		});
 
 		// * INJURIES
@@ -410,6 +354,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			context.itemsEnrichedDescriptions[item._id] = descriptionRich;
 		}
 	}
+
 
 	_getFilteredApparelSections(context) {
 		context.allApparel = [];

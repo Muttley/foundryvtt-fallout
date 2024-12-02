@@ -42,65 +42,17 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 	activateListeners(html) {
 		super.activateListeners(html);
 
-		// * Toggle Favorite Inventory Item
-		html.find(".item-favorite").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const item = this.actor.items.get(li.data("item-id"));
+		html.find("[data-action='roll-vehicle-cover']").click(
+			async event => this._onVehicleCoverRoll(event)
+		);
 
-			item.update({ "system.favorite": !item.system.favorite });
-		});
+		html.find("[data-action='roll-vehicle-impact']").click(
+			async event => this._onVehicleImpactRoll(event)
+		);
 
-
-		// * Toggle Stash Inventory Item
-		html.find(".item-stash").click(async ev => {
-			const li = $(ev.currentTarget).parents(".item");
-			const attachedToId = li.data("item-attached") ?? "";
-
-			const itemId = li.data("item-id") ?? "";
-			const item = this.actor.items.get(itemId);
-
-			const newValue = !item.system.stashed;
-
-			const isFrame = item.system.powerArmor?.isFrame ?? false;
-
-			if (attachedToId !== "" || isFrame) {
-				const myFrameId = isFrame ? itemId : attachedToId;
-
-				const updateData = [{
-					"_id": myFrameId,
-					"system.stashed": newValue,
-					"system.equipped": newValue ? false : item.system.equipped,
-				}];
-
-				const attachments = this.actor.items.filter(
-					i => i.type === "apparel"
-						&& i.system.powerArmor.frameId === myFrameId
-				).map(i => i._id);
-
-				for (const attachmentId of attachments) {
-					updateData.push({
-						"_id": attachmentId,
-						"system.stashed": newValue,
-						"system.equipped": newValue ? false : item.system.equipped,
-					});
-				}
-
-				await Item.updateDocuments(updateData, { parent: this.actor });
-
-				if (item.type === "apparel") {
-					this.actor._calculateCharacterBodyResistance();
-				}
-			}
-			else {
-				item.update({
-					"system.stashed": newValue,
-					"system.equipped": newValue ? false : item.system.equipped,
-				});
-			}
-		});
-
-		// * ROLL WEAPON SKILL
-		html.find(".vehicle-weapon-roll").click(async event => this._onVehicleWeaponRoll(event));
+		html.find("[data-action='roll-vehicle-weapon-attack']").click(
+			async event => this._onVehicleWeaponRoll(event)
+		);
 
 	}
 
@@ -231,9 +183,15 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		let rollName = item.name;
 		let skill;
 
-		let actor = await this._getVehicleActor();
+		let actor = await fallout.utils.getActorForUser();
 
-		if (actor) if (actor.type === "creature") {
+		if (!actor || actor.type === "vehicle") {
+			return ui.notifications.warn(
+				game.i18n.localize("FALLOUT.ERRORS.NoUsableCharacterFound")
+			);
+		}
+
+		if (actor.type === "creature") {
 			const creatureAttribute = item.system.creatureAttribute ?? "";
 			const creatureSkill = item.system.creatureSkill ?? "";
 
@@ -247,10 +205,6 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 
 			skill = actor.system[creatureSkill];
 			skill.tag = true;
-		}
-		else if (actor.type === "vehicle") {
-			attribute = { value: 0 };
-			skill = { value: 0, tag: false, defaultAttribute: "str" };
 		}
 		else {
 			const skillName = item.system.weaponType === "custom"
@@ -293,10 +247,6 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 			if (!attribute) {
 				attribute = { value: 0 };
 			}
-		}
-		else {
-			attribute = { value: 0 };
-			skill = { value: 0, tag: false, defaultAttribute: "str" };
 		}
 
 		// REDUCE AMMO
@@ -342,36 +292,6 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 			actor: this.actor,
 			item: item,
 		});
-	}
-
-	async _getVehicleActor() {
-		let actor = null;
-
-		if (game.user.isGM) {
-			const controlledTokenCount = canvas.tokens.controlled.length;
-			if (controlledTokenCount > 0) {
-				if (controlledTokenCount !== 1) {
-					ui.notifications.warn(
-						game.i18n.format("FALLOUT.MACRO.Error.TooManyTokensSelected", {
-							max: 1,
-						})
-					);
-				}
-				else {
-					actor = canvas.tokens.controlled[0].actor;
-				}
-			}
-		}
-		else if (game.user.character) {
-			actor = game.user.character;
-		}
-		else {
-			ui.notifications.warn(
-				game.i18n.format("FALLOUT.MACRO.Error.NoPLayerCharacterAssigned")
-			);
-		}
-
-		return actor;
 	}
 
 }

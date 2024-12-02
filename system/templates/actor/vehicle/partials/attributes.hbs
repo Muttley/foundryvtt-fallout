@@ -6,10 +6,13 @@
 		</div>
 	</div>
 	<div class="box no-padding bgEven">
-		<h4 class="box-header text-center upperC">{{localize "FALLOUT.VEHICLE.cover"}}</h4>
+		<h4 class="box-header text-center upperC">
+			{{localize "FALLOUT.VEHICLE.cover"}}
+		</h4>
 		<div class="text-center">
 			<input class="num-short-2" type="number" name="system.cover.value" value="{{system.cover.value}}">
-			<a class="vehicle-cover">
+			&nbsp;
+			<a data-action="roll-vehicle-cover">
 				<span class="fo-pip-boy fo-blue"></span>
 			</a>
 		</div>
@@ -18,7 +21,8 @@
 		<h4 class="box-header text-center upperC">{{localize "FALLOUT.VEHICLE.impact"}}</h4>
 		<div class="text-center">
 			<input class="num-short-2" type="number" name="system.impact.value" value="{{system.impact.value}}">
-			<a class="vehicle-impact">
+			&nbsp;
+			<a data-action="roll-vehicle-impact">
 				<span class="fo-pip-boy fo-blue"></span>
 			</a>
 		</div>
