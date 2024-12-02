@@ -114,6 +114,26 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Ramie 3
 FALLOUT.BodyTypes.robot.legR: Silnik
 FALLOUT.BodyTypes.robot.torso: Korpus
+FALLOUT.BodyTypes.vehicle.chassis: Chassis
+FALLOUT.BodyTypes.vehicle.engine: Engine
+FALLOUT.BodyTypes.vehicle.engineL: Left Engine
+FALLOUT.BodyTypes.vehicle.engineR: Right Engine
+FALLOUT.BodyTypes.vehicle.weaponDG: Weapon (Door Gun)
+FALLOUT.BodyTypes.vehicle.weaponNG: Weapon (Nose Guns)
+FALLOUT.BodyTypes.vehicle.wheelF: Front Wheel
+FALLOUT.BodyTypes.vehicle.wheelFL: Front Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelFR: Front Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelML: Middle Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelMR: Middle Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelR: Rear Wheel
+FALLOUT.BodyTypes.vehicle.wheelRL: Rear Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelRL1: Rear Left Wheel 1
+FALLOUT.BodyTypes.vehicle.wheelRL2: Rear Left Wheel 2
+FALLOUT.BodyTypes.vehicle.wheelRR: Rear Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelRR1: Rear Right Wheel 1
+FALLOUT.BodyTypes.vehicle.wheelRR2: Rear Right Wheel 2
+FALLOUT.BodyTypes.vehicle.wingL: Left Wing
+FALLOUT.BodyTypes.vehicle.wingR: Right Wing
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} zostaje uzależniony od {itemName}"
 FALLOUT.CHAT_MESSAGE.addiction.title: Uzależnienie od środków chemicznych
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} przez picie {itemName} stał się alkoholikiem"
@@ -163,6 +183,9 @@ FALLOUT.EffectDelete: Usuń Efekt
 FALLOUT.EffectEdit: Edytuj Efekt
 FALLOUT.EffectToggle: Zaznacz Efekt
 FALLOUT.equipped: Wyposażone
+FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
+FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
+FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
 FALLOUT.ERRORS.ThisWeaponIsBroken: Ta broń jest uszkodzona i nie może być już używana.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Nie można określić atrybutu używanego dla tej broni.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Nie można określić atrybutu używanego dla tej broni.
@@ -187,15 +210,15 @@ FALLOUT.Form.SourceFilters.title: Filtry źródeł
 FALLOUT.HEALTH.current: Obecne zdrowie
 FALLOUT.HEALTH.health: Zdrowie
 FALLOUT.HEALTH.max: Maksymalne Zdrowie
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.Item.PowerArmor.Attach: Dołącz
 FALLOUT.Item.PowerArmor.Attached: Dołączone
 FALLOUT.Item.PowerArmor.AttachedToFrame: Dołączone do Ramy
 FALLOUT.Item.PowerArmor.Frame: Rama
 FALLOUT.Item.PowerArmor.IsFrame: Jest Ramą
 FALLOUT.Item.PowerArmor.Pieces: Elementy Pancerza Wspomaganego
-FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
-FALLOUT.Item.Origin.Traits.label: Origin Traits
-FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
@@ -310,6 +333,7 @@ FALLOUT.SKILL.Throwing: Rzucanie
 FALLOUT.SKILL.Unarmed: Bijatyka
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
 FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
 FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
 FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
@@ -400,7 +424,6 @@ FALLOUT.TEMPLATES.DAMAGE_TYPE: Typy Obrażeń
 FALLOUT.TEMPLATES.DAMAGE: Obrażenia
 FALLOUT.TEMPLATES.Data: Informacje
 FALLOUT.TEMPLATES.DaysInfected: Days Infected
-FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.Default_Attribute: Domyślne Cechy
 FALLOUT.TEMPLATES.DEFENSE: OBRONA
 FALLOUT.TEMPLATES.Degree: Stopnie
@@ -409,6 +432,7 @@ FALLOUT.TEMPLATES.Delete: Usuń
 FALLOUT.TEMPLATES.DERIVED: POCHODNE
 FALLOUT.TEMPLATES.Description: Opis
 FALLOUT.TEMPLATES.Details: Szczegóły
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Czas Trwania
 FALLOUT.TEMPLATES.Edit_Item: Edytuj Przedmiot
@@ -508,6 +532,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Użyj Inteligencji
 FALLOUT.TEMPLATES.Use_Luck: Użyj Szczęścia
 FALLOUT.TEMPLATES.Use_Perception: Użyj Percepcji
 FALLOUT.TEMPLATES.Use_Strength: Użyj Siły
+FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
 FALLOUT.TEMPLATES.Wealth: Bogactwo
 FALLOUT.TEMPLATES.Weapon_Qualities: Cechy Broni
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: CECHY BRONI
@@ -533,8 +558,18 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Za każdy uzyskany na kościach Efekt traf
 FALLOUT.TOOLTIPS.DamageEffect.stun: Jeżeli uzyskałeś na kościach co najmniej 1 Efekt, przeciwnik zostaje ogłuszony i nie może w swojej następnej turze wykonać normalnych akcji. Może jednak wydać Punkty Akcji, żeby wykonywać akcje dodatkowe.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: Za każdy uzyskany na kościach Efekt zadane obrażenia zostają zwiększone o +1.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
+FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: Broń zużywa amunicję znacznie szybciej niż inne bronie. Za każdym razem, gdy strzelasz z broni, zużywa ona X amunicji zamiast 1. Dodatkowo, obrażenia wymagają wydania X amunicji na każdy +1KW, z maksymalną liczbą CD równą szybkostrzelności broni. Dodatkowe użycie amunicji, takie jak efekt obrażeń Seria, również wymaga X amunicji na każde 1 amunicji, która byłaby normalnie wydana.
+FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Kiedy wykonujesz atak taką bronią, nie wybierasz pojedynczego celu, lecz jedną strefę w zasięgu wzroku. Wykonujesz atak o trudności 2 z uwzględnieniem normalnych modyfikatorów dystansowych. Udany test sprawia, że każda istota w tej strefie (oraz każdy inny cel, który da się zniszczyć) otrzymuje obrażenia. Nieudany test powoduje, że pudłujesz i atak jest mniej skuteczny – rzucasz połową kości @fos[DC], żeby ustalić liczbę obrażeń zadanych wszystkim istotom w strefie rażenia i ignorujesz normalne Efekty obrażeń broni."
 FALLOUT.TOOLTIPS.WeaponQuality.bombard: "Broń może doprowadzić do serii wybuchów na szerokim obszarze. Funkcja ta działa identycznie jak cecha broni Wybuchowa z dodatkiem jednego: kiedy wykonywany jest atak bronią, możesz wydać dodatkową amunicję na wybrane dodatkowe strefy. Każda dodatkowa strefa wymaga spędzenia 2 amunicji, a dodatkowe strefy muszą być przyległe do początkowej strefy. Amunicja wydana na wybranie dodatkowych stref jest ograniczona szybkostrzelności broni."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Broń jest poręczna w zasięgu bezpośrednim i nie zwiększa na nim trudności testów ataku.
@@ -594,12 +629,35 @@ FALLOUT.UI.ROBOT_MODULES: Modyfikacje Robotów
 FALLOUT.UI.SaveChanges: Zapisz zmiany
 FALLOUT.UI.Special_Abilities: Zdolności Specjalne
 FALLOUT.UI.SPECIAL_ABILITY: Zdolności Specjalne
+FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Schowane
 FALLOUT.UI.Type: Typ
 FALLOUT.UI.UNSORTED: Nieposortowane
 FALLOUT.UI.WEAPON_MODS: Modyfikacje Broni
 FALLOUT.UI.Weight: Waga
 FALLOUT.UI.Yes: Yes
+FALLOUT.VEHICLE_TYPES.apc: APC
+FALLOUT.VEHICLE_TYPES.armored: Armored
+FALLOUT.VEHICLE_TYPES.bus: Bus
+FALLOUT.VEHICLE_TYPES.carTruck: Car/Truck
+FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
+FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
+FALLOUT.VEHICLE.cover: Cover
+FALLOUT.VEHICLE.impact: Impact
+FALLOUT.VEHICLE.passengers: Passengers
+FALLOUT.VEHICLE.scale: Scale
+FALLOUT.VEHICLE.travel_speed: Travel
+FALLOUT.VEHICLE.vehicleQuality.cargo_x: Cargo
+FALLOUT.VEHICLE.vehicleQuality.cumbersome: Cumbersome
+FALLOUT.VEHICLE.vehicleQuality.enclosed: Enclosed
+FALLOUT.VEHICLE.vehicleQuality.exposed: Exposed
+FALLOUT.VEHICLE.vehicleQuality.flying: Flying
+FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
+FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
+FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
+FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
+FALLOUT.VEHICLE.zone_speed: Zone
 FALLOUT.WEAPONS.damageEffect.arc: Łuk
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
@@ -617,6 +675,7 @@ FALLOUT.WEAPONS.damageType.poison: Trucizna
 FALLOUT.WEAPONS.damageType.radiation: Radiacja
 FALLOUT.WEAPONS.weaponQuality.accurate: Celna
 FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Amunicjo-Żerna
+FALLOUT.WEAPONS.weaponQuality.aquatic: Aquatic
 FALLOUT.WEAPONS.weaponQuality.blast: Wybuchowa
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombardująca
 FALLOUT.WEAPONS.weaponQuality.close_quarters: Zwarcie
@@ -658,6 +717,7 @@ TYPES.Actor.npc: BN
 TYPES.Actor.robot: Robot
 TYPES.Actor.scavenging_location: Szabruj lokacje
 TYPES.Actor.settlement: Osada
+TYPES.Actor.vehicle: Vehicle
 TYPES.Item.addiction: Uzależnienie
 TYPES.Item.ammo: Amunicja
 TYPES.Item.apparel_mod: Modyfikacja Odzieży
