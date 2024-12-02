@@ -1,0 +1,28 @@
+<div class="tab abilities" data-group="primary" data-tab="abilities">
+	<section class="grid-2-columns">
+		<div class="left-column">
+
+			{{> actor/vehicle/partials/attributes}}
+
+
+			<div class="flexrow resource-row">
+				{{> actor/_shared-partials/npc_hp }}
+				{{> actor/vehicle/partials/speed }}
+			</div>
+
+
+			{{> actor/vehicle/partials/body
+					FALLOUT=FALLOUT
+			}}
+		</div>
+
+		<div class="right-column">
+			{{> actor/vehicle/partials/favorite-weapons
+				nameLabel=(localize "FALLOUT.TEMPLATES.Attack")
+			}}
+
+			{{> actor/vehicle/partials/qualities}}
+		</div>
+
+	</section>
+</div>

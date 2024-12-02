@@ -48,13 +48,51 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		const bodyPartData = this.actor.system.body_parts;
 
 		context.bodyParts = [];
-		for (const part in CONFIG.FALLOUT.BODY_VALUES) {
+
+		let bodyType = "humanoid";
+		let valueConfig = {};
+
+		if (this.actor.isVehicle) {
+			bodyType = "vehicle";
+			switch (this.actor.system.bodyType) {
+				case "apc":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_APC_VALUES;
+					break;
+				case "armored":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_ARMORED_VALUES;
+					break;
+				case "bus":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_BUS_VALUES;
+					break;
+				case "carTruck":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_CARTRUCK_VALUES;
+					break;
+				case "motorcycle":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_MOTORCYCLE_VALUES;
+					break;
+				case "sportsCar":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_SPORTSCAR_VALUES;
+					break;
+				case "vertibird":
+					valueConfig = CONFIG.FALLOUT.VEHICLE_VERTIBIRD_VALUES;
+					break;
+				default:
+					valueConfig = CONFIG.FALLOUT.VEHICLE_CARTRUCK_VALUES;
+			}
+		}
+		else {
+			bodyType = this.actor.system.bodyType;
+			valueConfig = CONFIG.FALLOUT.BODY_VALUES;
+		}
+
+
+		for (const part in valueConfig) {
 			const name = game.i18n.localize(
-				`FALLOUT.BodyTypes.${this.actor.system.bodyType}.${part}`
+				`FALLOUT.BodyTypes.${bodyType}.${part}`
 			);
 			context.bodyParts.push({
 				name: name,
-				roll: CONFIG.FALLOUT.BODY_VALUES[part],
+				roll: valueConfig[part],
 				basePath: `system.body_parts.${part}`,
 				resistanceValues: bodyPartData[part].resistance,
 				injuryOpenCount: bodyPartData[part].injuryOpenCount ?? 0,
@@ -64,6 +102,10 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 		if (this.actor.isCreature) {
 			await this._prepareButcheryMaterials(context);
+		}
+
+		if (this.actor.isVehicle) {
+			await this._getVehicleQualities(context, this.actor);
 		}
 
 		context.disableAutoXpReward = game.settings.get(
@@ -139,5 +181,23 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 
 			return super._updateObject(event, formData);
 		}
+	}
+
+	async _getVehicleQualities(context, actor) {
+
+		const vehicleQualities = [];
+		for (const key in CONFIG.FALLOUT.VEHICLE_QUALITIES) {
+			vehicleQualities.push({
+				active: actor.system?.vehicleQuality[key].value ?? false,
+				hasRank: CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK[key],
+				rank: actor.system?.vehicleQuality[key].rank,
+				key,
+				label: CONFIG.FALLOUT.VEHICLE_QUALITIES[key],
+			});
+		}
+
+		context.vehicleQualities = vehicleQualities.sort(
+			(a, b) => a.label.localeCompare(b.label)
+		);
 	}
 }

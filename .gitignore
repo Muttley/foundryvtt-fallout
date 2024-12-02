@@ -7,3 +7,4 @@ system/packs/
 
 *.code-workspace
 fallout-compiled*
+/.vs

@@ -77,6 +77,45 @@ export default class FalloutUtils {
 		return majorVersion >= version;
 	}
 
+	// Attempts to get the current actor for a user.  If the current user is the
+	// GM then the currently selected token actor will be used if possible,
+	// otherwise
+	static async getActorForUser() {
+		let actor = null;
+
+		if (game.user.isGM) {
+			const controlledTokenCount = canvas.tokens.controlled.length;
+			if (controlledTokenCount > 0) {
+				if (controlledTokenCount !== 1) {
+					ui.notifications.warn(
+						game.i18n.format("FALLOUT.MACRO.Error.TooManyTokensSelected", {
+							max: 1,
+						})
+					);
+				}
+				else {
+					actor = canvas.tokens.controlled[0].actor;
+				}
+			}
+			else {
+				ui.notifications.warn(
+					game.i18n.format("FALLOUT.ERRORS.NoCharacterTokenSelected")
+				);
+			}
+		}
+		else if (game.user.character) {
+			actor = game.user.character;
+		}
+		else {
+			ui.notifications.warn(
+				game.i18n.format("FALLOUT.ERRORS.NoPLayerCharacterAssigned")
+			);
+		}
+
+		return actor;
+	}
+
+
 	/**
 	 * Creates de-duplicated lists of Selected and Unselected Items.
 	 *
