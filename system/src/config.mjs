@@ -317,6 +317,7 @@ FALLOUT.NPC_CATEGORIES = {
 FALLOUT.OFFICIAL_SOURCES = {
 	aat_fully_operational: "FALLOUT.SOURCE_TITLE.aat_fully_operational",
 	aat_hunted: "FALLOUT.SOURCE_TITLE.aat_hunted",
+	aat_into_the_abyss: "FALLOUT.SOURCE_TITLE.aat_into_the_abyss",
 	aat_one_to_four: "FALLOUT.SOURCE_TITLE.aat_one_to_four",
 	aat_orange_sky: "FALLOUT.SOURCE_TITLE.aat_orange_sky",
 	aat_skull_canyon: "FALLOUT.SOURCE_TITLE.aat_skull_canyon",

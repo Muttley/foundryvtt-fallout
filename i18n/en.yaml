@@ -183,6 +183,9 @@ FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
+FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
+FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
+FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
 FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
@@ -330,6 +333,7 @@ FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
 FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
 FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
 FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"

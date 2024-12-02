@@ -1,6 +1,10 @@
 # v11.14.0
 
 #### Enhancements
+- [#166] Add new Vehicle Actor and corresponding sheet *(Many thanks to QckSilverDragon for contributing this code)*
+
+	* When using Weapons from a Vehicle Actor sheet, the player's assigned main character attribute/skill/tag values will be used.  For a GM player the attribute/skill/tag of the Actor linked to the currently selected Token will be used instead.
+
 - [#502] Allow Traits and Perks to have Active Effects
 - [#503] Add the Quickstart Rules and "Machine Frequency" adventure to the system *(many thanks to Modiphius for allowing us to include this material)*
 - [#504] Add new Tranquilize X weapon effect
@@ -11,6 +15,7 @@
 	* Disease items now contain fields for tracking whether they are active (character experiencing symptoms), and how many days the infection has been active for as well as the duration.
 
 - [#513] Indicate on hit location model when an actor is immune to radiation or poison
+- [#525] Add new source "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
 
 #### Bugs
 - [#500] Knuckles missing weight value
@@ -21,6 +26,8 @@
 - [#499] Merge new French translation updates from Crowdin
 - [#506] Update source titles to include newly released books/PDFs
 - [#511] Migrate Active Effects interfaces to use the non-legacy interfaces
+
+*Please welcome QckSilverDragon to the Fallout system development team*
 
 ---
 
