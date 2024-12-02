@@ -325,8 +325,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		});
 
 		// * Active Effect management
-		html
-			.find(".effect-control")
+		html.find(".effect-control")
 			.click(ev => onManageActiveEffect(ev, this.actor));
 
 		// * ROLL WEAPON SKILL
@@ -360,11 +359,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// Disable any fields that have been overridden by Active Effects and
 		// add a tooltip explaining why
 		//
-		const overridden = Object.keys(
-			foundry.utils.flattenObject(this.actor.overrides)
-		);
-
-		for (const override of overridden) {
+		for (const override of this.actor.overriddenFields) {
 			html.find(
 				`input[name="${override}"],select[name="${override}"]`
 			).each((i, el) => {

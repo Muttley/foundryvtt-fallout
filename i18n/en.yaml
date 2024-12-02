@@ -412,6 +412,8 @@ FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Duration
 FALLOUT.TEMPLATES.Edit_Item: Edit Item
+FALLOUT.TEMPLATES.Edit: Edit
+FALLOUT.TEMPLATES.Edit_SPECIAL: Edit SPECIAL
 FALLOUT.TEMPLATES.Effect: Effect
 FALLOUT.TEMPLATES.Effects: Effects
 FALLOUT.TEMPLATES.Encumbrance_Level: Encumbrance Level

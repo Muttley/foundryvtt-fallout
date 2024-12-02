@@ -1,3 +1,13 @@
+<h5 class="upperC">
+	<a
+		data-action="edit-special"
+		data-tooltip="{{localize 'FALLOUT.TEMPLATES.Edit_SPECIAL'}}"
+	>
+		<i class="fa-solid fa-pen-to-square"></i>
+		{{localize "FALLOUT.TEMPLATES.Edit"}}
+	</a>
+</h5>
+
 <div class="attributes-list">
 	{{#each FALLOUT.ATTRIBUTES as |attribute key|}}
 		{{> specialAttribute
@@ -11,20 +21,21 @@
 {{#*inline "specialAttribute"}}
 	<div class="attribute special-letter">
 		<label
-			for="system.attributes.{{key}}.value"
 			class="resource-label align-left"
 			data-label="{{attributeName}}"
 			data-tooltip="{{attributeName}}"
+			for="system.attributes.{{key}}.value"
 		>
 			{{subString attributeName 0 1}}
 		</label>
 		<div class='special-number'>
 			<input
-				type="number"
-				name="system.attributes.{{key}}.value"
-				value={{attribute.value}}
 				data-dtype="Number"
+				disabled
 				min="0"
+				name="system.attributes.{{key}}.value"
+				type="number"
+				value={{attribute.value}}
 			/>
 		</div>
 	</div>

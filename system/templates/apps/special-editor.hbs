@@ -1,0 +1,66 @@
+<div autocomplete="off">
+	<div class="attributes-list">
+		{{#each FALLOUT.ATTRIBUTES as |attribute key|}}
+			{{> specialAttribute
+				attributeName=(localize attribute)
+				attribute=(lookup ../system.attributes key)
+				key=key
+			}}
+		{{/each}}
+	</div>
+</div>
+
+{{#*inline "specialAttribute"}}
+	<div class="attribute special-letter">
+		<label
+			class="resource-label align-left"
+			data-label="{{attributeName}}"
+			data-tooltip="{{attributeName}}"
+			for="system.attributes.{{key}}.current"
+		>
+			{{subString attributeName 0 1}}
+		</label>
+		<div class='special-number'>
+			<input
+				data-dtype="Number"
+				disabled
+				min="0"
+				name="system.attributes.{{key}}.current"
+				type="number"
+				value={{attribute.current}}
+			/>
+		</div>
+		<div class="grid-2-columns" style="grid-template-columns: min-content 1fr; align-items: center;">
+			<label
+				class="upperC"
+				for="system.attributes.{{key}}.value"
+				style="font-size: 15px;"
+			>
+				Base
+			</label>
+			<input
+				data-dtype="Number"
+				class="num-short-2"
+				type="number"
+				name="system.attributes.{{key}}.value"
+				value="{{attribute.value}}"
+			>
+		</div>
+		<div class="grid-2-columns" style="grid-template-columns: min-content 1fr; align-items: center;">
+			<label
+				class="upperC"
+				for="system.attributes.{{key}}.bonus"
+				style="font-size: 15px;"
+			>
+				Bonus
+			</label>
+			<input
+				data-dtype="Number"
+				class="num-short-2"
+				type="number"
+				name="system.attributes.{{key}}.bonus"
+				value="{{attribute.bonus}}"
+			>
+		</div>
+	</div>
+{{/inline}}

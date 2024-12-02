@@ -12,9 +12,9 @@
 			"chemDoses": {},
 			"templates": [
 				"base",
+				"body",
 				"derived",
 				"encumbrance",
-				"body",
 				"stats",
 				"valuables"
 			]
@@ -482,6 +482,13 @@
 						"max": 10,
 						"min": 4,
 						"value": 5
+					}
+				},
+				"skill": {
+					"tags": {
+						"additionalTags": [],
+						"bonus": 0,
+						"max": 3
 					}
 				}
 			},

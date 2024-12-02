@@ -31,6 +31,28 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+
+	get attributeTotals() {
+		const totals = {
+			bonus: 0,
+			max: CONFIG.FALLOUT.DEFAULT_ATTRIBUTES_TOTAL,
+			total: 0,
+		};
+
+		for (const key in this.system.attributes) {
+			const attribute = this.system.attributes[key];
+
+			totals.bonus += attribute.bonus;
+			totals.max += attribute.bonus;
+			totals.total += attribute.value + attribute.bonus;
+		}
+
+		totals.diff = totals.max - totals.total;
+
+		return totals;
+	}
+
+
 	get isCreature() {
 		return this.type === "creature";
 	}
@@ -61,6 +83,12 @@ export default class FalloutActor extends Actor {
 		return this.type === "character" && this.system.conditions.wellRested;
 	}
 
+	get overriddenFields() {
+		return Object.keys(
+			foundry.utils.flattenObject(this.overrides)
+		);
+	}
+
 	get ownerIsOffline() {
 		return !this.ownerIsOnline;
 	}
@@ -84,6 +112,10 @@ export default class FalloutActor extends Actor {
 		return hasActiveOwner;
 	}
 
+	get shouldHaveSkillsAdded() {
+		return ["character", "npc", "robot"].includes(this.type);
+	}
+
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -94,11 +126,7 @@ export default class FalloutActor extends Actor {
 	}
 
 	isFieldOverridden(fieldName) {
-		const overridden = Object.keys(
-			foundry.utils.flattenObject(this.overrides)
-		);
-
-		return overridden.includes(fieldName);
+		return this.overriddenFields.includes(fieldName);
 	}
 
 	// Returns the current perk level, or zero if the player doesn't have the
@@ -136,6 +164,7 @@ export default class FalloutActor extends Actor {
 		// things organized.
 
 		if (this.type === "character" || this.type === "robot") {
+			this._calculateAttributes();
 			this._calculateDefense();
 			this._calculateInitiative();
 			this._calculateMaxHp();
@@ -330,6 +359,13 @@ export default class FalloutActor extends Actor {
 		}
 		// ADD OUTFITED LIST FOR DISPLAY
 		this.system.outfittedLocations = outfittedLocations;
+	}
+
+	_calculateAttributes() {
+		for (const key in this.system.attributes) {
+			const attribute = this.system.attributes[key];
+			attribute.current = attribute.value + attribute.bonus;
+		}
 	}
 
 	_calculateDefense() {
@@ -768,7 +804,7 @@ export default class FalloutActor extends Actor {
 		}
 
 		// Add Skills to Characters, NPCs and Robots
-		if (this.type !== "creature") {
+		if (this.shouldHaveSkillsAdded) {
 			// If the Actor data already contains skill items then this is an
 			// Actor being duplicated and we don't want to touch their
 			// items at all

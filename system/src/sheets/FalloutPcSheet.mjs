@@ -45,6 +45,11 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 
+		html.find("[data-action='edit-special']").click(event => {
+			event.preventDefault();
+			new fallout.apps.FalloutSpecialEditor({actor: this.actor}).render(true);
+		});
+
 		html.find(".availability-roll").click(async event => {
 			event.preventDefault();
 			this.actor.rollAvailabilityCheck();
