@@ -114,6 +114,26 @@ FALLOUT.BodyTypes.robot.label: Roboter
 FALLOUT.BodyTypes.robot.legL: Arm 3
 FALLOUT.BodyTypes.robot.legR: Hauptkörper
 FALLOUT.BodyTypes.robot.torso: Hauptkörper
+FALLOUT.BodyTypes.vehicle.chassis: Chassis
+FALLOUT.BodyTypes.vehicle.engine: Engine
+FALLOUT.BodyTypes.vehicle.engineL: Left Engine
+FALLOUT.BodyTypes.vehicle.engineR: Right Engine
+FALLOUT.BodyTypes.vehicle.weaponDG: Weapon (Door Gun)
+FALLOUT.BodyTypes.vehicle.weaponNG: Weapon (Nose Guns)
+FALLOUT.BodyTypes.vehicle.wheelF: Front Wheel
+FALLOUT.BodyTypes.vehicle.wheelFL: Front Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelFR: Front Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelML: Middle Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelMR: Middle Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelR: Rear Wheel
+FALLOUT.BodyTypes.vehicle.wheelRL: Rear Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelRL1: Rear Left Wheel 1
+FALLOUT.BodyTypes.vehicle.wheelRL2: Rear Left Wheel 2
+FALLOUT.BodyTypes.vehicle.wheelRR: Rear Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelRR1: Rear Right Wheel 1
+FALLOUT.BodyTypes.vehicle.wheelRR2: Rear Right Wheel 2
+FALLOUT.BodyTypes.vehicle.wingL: Left Wing
+FALLOUT.BodyTypes.vehicle.wingR: Right Wing
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} wird von {itemName} abhängig"
 FALLOUT.CHAT_MESSAGE.addiction.title: Chem Sucht
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} wird aus dem Konsum von {itemName} ein Alkoholiker"
@@ -163,6 +183,9 @@ FALLOUT.EffectDelete: Effekt entfernen
 FALLOUT.EffectEdit: Effekt bearbeiten
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
+FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
+FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
+FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
 FALLOUT.ERRORS.ThisWeaponIsBroken: Diese Waffe ist kaputt und kann nicht länger genutzt werden.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Attribut für die Waffe kann nicht ermittelt werden.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Fertigkeit für die Waffe kann nicht ermittelt werden.
@@ -187,15 +210,15 @@ FALLOUT.Form.SourceFilters.title: Quellen Filter
 FALLOUT.HEALTH.current: Aktuelle Gesundheit
 FALLOUT.HEALTH.health: Gesundheit
 FALLOUT.HEALTH.max: Maximale Gesundheit
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.Item.PowerArmor.Attach: Hinzufügen
 FALLOUT.Item.PowerArmor.Attached: Hinzugefügt
 FALLOUT.Item.PowerArmor.AttachedToFrame: An Powerrüstung-Gestell befestigt
 FALLOUT.Item.PowerArmor.Frame: Powerrüstung-Gestell
 FALLOUT.Item.PowerArmor.IsFrame: Ist ein Powerrüstung-Gestell
 FALLOUT.Item.PowerArmor.Pieces: Powerrrüstungsteile
-FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
-FALLOUT.Item.Origin.Traits.label: Origin Traits
-FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
@@ -310,6 +333,7 @@ FALLOUT.SKILL.Throwing: Wurfwaffen
 FALLOUT.SKILL.Unarmed: Waffenlos
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
 FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
 FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
 FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
@@ -400,7 +424,6 @@ FALLOUT.TEMPLATES.DAMAGE_TYPE: SCHADENSART
 FALLOUT.TEMPLATES.DAMAGE: SCHADEN
 FALLOUT.TEMPLATES.Data: Daten
 FALLOUT.TEMPLATES.DaysInfected: Days Infected
-FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.Default_Attribute: Standardattribut
 FALLOUT.TEMPLATES.DEFENSE: VERTEIDIGUNG
 FALLOUT.TEMPLATES.Degree: Degree
@@ -409,6 +432,7 @@ FALLOUT.TEMPLATES.Delete: Entfernen
 FALLOUT.TEMPLATES.DERIVED: ABGELEITET
 FALLOUT.TEMPLATES.Description: Beschreibung
 FALLOUT.TEMPLATES.Details: Details
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
 FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Dauer
 FALLOUT.TEMPLATES.Edit_Item: Bearbeite Gegenstand
@@ -508,6 +532,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Nutze Intelligenz
 FALLOUT.TEMPLATES.Use_Luck: Nutze Glück
 FALLOUT.TEMPLATES.Use_Perception: Nutze Wahrnehmung
 FALLOUT.TEMPLATES.Use_Strength: Nutze Stärke
+FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
 FALLOUT.TEMPLATES.Wealth: Reichtum
 FALLOUT.TEMPLATES.Weapon_Qualities: Waffenqualiät
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: WAFFENEIGENSCHAFTEN
@@ -533,8 +558,18 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Für jeden gewürfelten Effekt verursacht 
 FALLOUT.TOOLTIPS.DamageEffect.stun: Wenn ein oder mehrere Effekte gewürfelt werden, kann das Ziel in seinem nächsten Zug nicht seine normalen Aktionen ausführen. Ein betäubter Charakter oder eine betäubte Kreatur kann immer noch AP ausgeben, um wie üblich zusätzliche Aktionen auszuführen.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: Der Angriff verursacht +1 Schaden für jeden gewürfelten Effekt.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
+FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Wenn du die Nebenaktion Zielen ausführst, bevor du mit einer Präzisen Waffe angreifst, darfst du bis zu 3 AP ausgeben, um +1 @fos[DC] pro ausgegebenen AP zum Schaden des Angriffs hinzuzufügen. Wenn du den Schaden auf diese Weise erhöhst, kannst du keine Munition für zusätzlichen Schaden ausgeben. Eine Waffe kann nicht gleichzeitig Präzise und Ungenau sein.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: 'Diese Waffe verschießt ihre Munition in einer deutlich höheren Feuerrate wie normale Waffen: Wann immer du einen Schuss Munition ausgeben würdest, verschießt sie stattdessen eine Serie von X Schüssen. Wann immer du X Munition ausgibst, um den Schaden dieser Waffe zu erhöhen, füge +1CD (bis zu einer maximalen Anzahl an Feuerstößen, die der Feuerrate der Waffe entspricht) hinzu. Zusätzliche Verwendung von Munition, wie beim Streuschaden Effekt, verbraucht X Munition für jede 1 Munition die normalerweise verwendet wird.'
+FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Wenn du einen Angriff mit einer Explosivwaffe ausführst, zielst du nicht auf einen einzelnen Gegner. Stattdessen wählst du eine einzelne Zone, die du sehen kannst, und legst die entsprechende Fertigkeitsprobe für den Angriff ab, mit einer grundlegenden Schwierigkeit von 2 (wie üblich an die Reichweite angepasst). Wenn du erfolgreich bist, erleidet jede Kreatur (sowie alle sonstigen Ziele, die Schaden erleiden können) in dieser Zone den Schaden der Waffe. Wenn du scheiterst, ist dein fehlgegangener Angriff weniger wirksam: würfle nur die Hälfte der @fos[DC] Waffe, um den Schaden zu bestimmen, den die Kreaturen in der Zielzone erleiden, und ignoriere die normalen Schadenseffekte der Waffe."
 FALLOUT.TOOLTIPS.WeaponQuality.bombard: "Die Waffe kann eine Reihe von Explosionen in einem großen Bereich auslösen. Die Funktionsweise ist identisch mit der der Explosionsqualität, mit einem Zusatz: Bei einem Angriff mit der Waffe kann man zusätzliche Munition ausgeben, um weitere Zonen zu treffen. Für jede zusätzliche Zone müssen 2 Stück Munition ausgegeben werden, und die zusätzlichen Zonen müssen an die ursprüngliche Zielzone angrenzen. Die Munition, die für zusätzliche Zonen ausgegeben wird, ist durch die Feuerrate der Waffe begrenzt."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Eine Waffe für beengte Verhältnisse ist leicht auf kurze Distanz zu verwenden und erleidet keine Schwierigkeitserhöhung, wenn sie in Armlänge zu einem Gegner eingesetzt wird.
@@ -594,12 +629,35 @@ FALLOUT.UI.ROBOT_MODULES: Roboter Module
 FALLOUT.UI.SaveChanges: Änderungen speichern
 FALLOUT.UI.Special_Abilities: Spezialfertigkeiten
 FALLOUT.UI.SPECIAL_ABILITY: Sonderfähigkeit
+FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Verstaut
 FALLOUT.UI.Type: Art
 FALLOUT.UI.UNSORTED: Unsortiert
 FALLOUT.UI.WEAPON_MODS: Waffen Mods
 FALLOUT.UI.Weight: Gewicht
 FALLOUT.UI.Yes: Yes
+FALLOUT.VEHICLE_TYPES.apc: APC
+FALLOUT.VEHICLE_TYPES.armored: Armored
+FALLOUT.VEHICLE_TYPES.bus: Bus
+FALLOUT.VEHICLE_TYPES.carTruck: Car/Truck
+FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
+FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
+FALLOUT.VEHICLE.cover: Cover
+FALLOUT.VEHICLE.impact: Impact
+FALLOUT.VEHICLE.passengers: Passengers
+FALLOUT.VEHICLE.scale: Scale
+FALLOUT.VEHICLE.travel_speed: Travel
+FALLOUT.VEHICLE.vehicleQuality.cargo_x: Cargo
+FALLOUT.VEHICLE.vehicleQuality.cumbersome: Cumbersome
+FALLOUT.VEHICLE.vehicleQuality.enclosed: Enclosed
+FALLOUT.VEHICLE.vehicleQuality.exposed: Exposed
+FALLOUT.VEHICLE.vehicleQuality.flying: Flying
+FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
+FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
+FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
+FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
+FALLOUT.VEHICLE.zone_speed: Zone
 FALLOUT.WEAPONS.damageEffect.arc: Bogen
 FALLOUT.WEAPONS.damageEffect.breaking: Durchschlagend
 FALLOUT.WEAPONS.damageEffect.burst: Feuerstoß
@@ -617,6 +675,7 @@ FALLOUT.WEAPONS.damageType.poison: Gift
 FALLOUT.WEAPONS.damageType.radiation: Strahlung
 FALLOUT.WEAPONS.weaponQuality.accurate: Präzise
 FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Munitions-Hungrig
+FALLOUT.WEAPONS.weaponQuality.aquatic: Aquatic
 FALLOUT.WEAPONS.weaponQuality.blast: Explosiv
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombardement
 FALLOUT.WEAPONS.weaponQuality.close_quarters: Beengte Verhältnisse
@@ -658,6 +717,7 @@ TYPES.Actor.npc: NSC
 TYPES.Actor.robot: Roboter
 TYPES.Actor.scavenging_location: Schauplatz
 TYPES.Actor.settlement: Siedlung
+TYPES.Actor.vehicle: Vehicle
 TYPES.Item.addiction: Abhängigkeit
 TYPES.Item.ammo: Munition
 TYPES.Item.apparel_mod: Kleidung Mod
