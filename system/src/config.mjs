@@ -542,6 +542,7 @@ FALLOUT.VEHICLE_VERTIBIRD_VALUES = {
 FALLOUT.WEAPON_QUALITIES = {
 	accurate: "FALLOUT.WEAPONS.weaponQuality.accurate",
 	ammo_hungry_x: "FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x",
+	aquatic: "FALLOUT.WEAPONS.weaponQuality.aquatic",
 	blast: "FALLOUT.WEAPONS.weaponQuality.blast",
 	bombard: "FALLOUT.WEAPONS.weaponQuality.bombard",
 	close_quarters: "FALLOUT.WEAPONS.weaponQuality.close_quarters",

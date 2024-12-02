@@ -16,6 +16,7 @@
 
 - [#513] Indicate on hit location model when an actor is immune to radiation or poison
 - [#525] Add new source "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
+- [#526] Add new Aquatic weapon quality
 
 #### Bugs
 - [#500] Knuckles missing weight value

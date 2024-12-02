@@ -1324,6 +1324,10 @@
 						"rank": 0,
 						"value": false
 					},
+					"aquatic": {
+						"rank": 0,
+						"value": false
+					},
 					"ammo_hungry_x": {
 						"rank": 1,
 						"value": false
