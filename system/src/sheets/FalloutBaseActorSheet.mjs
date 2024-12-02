@@ -72,6 +72,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			isNPC: this.actor.type === "npc",
 			isRobot: this.actor.type === "robot",
 			isSettlement: this.actor.type === "settlement",
+			isVehicle: this.actor.type === "vehicle",
 			items: this.actor.items,
 			limited: this.actor.limited,
 			options: this.options,
@@ -324,9 +325,64 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		});
 
+		// * Toggle Favorite Inventory Item
+		html.find(".item-favorite").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("item-id"));
+
+			item.update({"system.favorite": !item.system.favorite});
+		});
+
+		// * Toggle Stash Inventory Item
+		html.find(".item-stash").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const attachedToId = li.data("item-attached") ?? "";
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			const newValue = !item.system.stashed;
+
+			const isFrame = item.system.powerArmor?.isFrame ?? false;
+
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
+
+				const updateData = [{
+					"_id": myFrameId,
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				}];
+
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
+
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.stashed": newValue,
+						"system.equipped": newValue ? false : item.system.equipped,
+					});
+				}
+
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				});
+			}
+		});
+
 		// * Active Effect management
-		html
-			.find(".effect-control")
+		html.find(".effect-control")
 			.click(ev => onManageActiveEffect(ev, this.actor));
 
 		// * ROLL WEAPON SKILL
@@ -546,6 +602,46 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			diceNum: numOfDice,
 			actor: actorUUID,
 			weapon: item,
+		});
+	}
+
+	async _onVehicleCoverRoll(event) {
+
+		const numOfDice = this.actor.system.cover.value;
+
+		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.cover")}`;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
+		});
+	}
+
+	async _onVehicleImpactRoll(event) {
+
+		const numOfDice = this.actor.system.impact.value;
+
+		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.impact")}`;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
 		});
 	}
 

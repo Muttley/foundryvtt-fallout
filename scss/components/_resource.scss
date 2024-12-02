@@ -129,6 +129,7 @@ input.chk-btn:checked + label {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	color: white;
+
 	.label {
 		font-family: $font-lobster;
 		font-size: 24px;
@@ -143,8 +144,10 @@ input.chk-btn:checked + label {
 	&.robot-header {
 		@include element-color($c-char-header, 3);
 	}
+
 	&.npc-header,
 	&.creature-header,
+	&.vehicle-header,
 	&.settlement-header {
 		@include element-color($c-npc-header, 3);
 	}
@@ -153,55 +156,71 @@ input.chk-btn:checked + label {
 		&-beds {
 			background-image: url(../assets/ui/plate-header-beds.svg);
 		}
+
 		&-defense {
 			background-image: url(../assets/ui/plate-header-defense.svg);
 		}
+
 		&-food {
 			background-image: url(../assets/ui/plate-header-food.svg);
 		}
+
 		&-people {
 			background-image: url(../assets/ui/plate-header-people.svg);
 		}
+
 		&-power {
 			background-image: url(../assets/ui/plate-header-power.svg);
 		}
+
 		&-water {
 			background-image: url(../assets/ui/plate-header-water.svg);
 		}
 	}
+
 	&.plate-1-g {
 		background-image: url(../assets/ui/plate-header-1-g.svg);
 	}
+
 	&.plate-2-o {
 		background-image: url(../assets/ui/plate-header-2-o.svg);
 	}
+
 	&.plate-2 {
 		@include element-color(#605274, 2);
 		//@include element-color($fa-purple, 2);
 	}
+
 	&.plate-3 {
 		//@include element-color($f-blue, 3);
 		@include element-color($c-char-header, 3);
 	}
+
 	&.plate-3-g {
 		background-image: url(../assets/ui/plate-header-3-g.svg);
 	}
+
 	&.plate-3-b {
 		@include element-color(#b1c0d3, 3);
 		//background-image: url(../assets/ui/plate-header-3-b.svg);
 	}
+
 	&.plate-3-o {
 		@include element-color(#7490b3, 3);
 	}
+
 	&.plate-31-o {
 		background-image: url(../assets/ui/plate-header-31-o.svg);
 	}
+
 	&.plate-3-r {
 		background-image: url(../assets/ui/plate-header-3-r.svg);
 	}
+
 	&.plate-4-o {
 		background-image: url(../assets/ui/plate-header-4-o.svg);
 	}
+
 	&.plate-4-r {
 		background-image: url(../assets/ui/plate-header-4-r.svg);
 	}

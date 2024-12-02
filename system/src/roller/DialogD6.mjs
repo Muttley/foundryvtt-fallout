@@ -63,7 +63,7 @@ export class DialogD6 extends Dialog {
 					_actor = fromUuidSync(this.actor).actor;
 				}
 
-				if (_actor.type === "character" || _actor.type === "robot") {
+				if (_actor.type === "character" || _actor.type === "robot" || _actor.type === "vehicle") {
 					if (additionalAmmo > 0) {
 						await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo);
 					}
@@ -80,7 +80,7 @@ export class DialogD6 extends Dialog {
 
 	}
 
-	static async createDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor= null, weapon = null } = {}) {
+	static async createDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor = null, weapon = null } = {}) {
 		let dialogData = {};
 
 		dialogData.rollName = rollName;
@@ -129,7 +129,7 @@ export class DialogD6 extends Dialog {
 
 		if (!_actor) return 0;
 
-		if (_actor.type !== "character" && _actor.type !== "robot") return 0;
+		if (_actor.type !== "character" && _actor.type !== "robot" && _actor.type !== "vehicle") return 0;
 
 		const [ammoItems, shotsAvailable] =
 			_actor._getAvailableAmmoType(
