@@ -156,5 +156,10 @@ function registerDocumentSheets() {
 		types: ["settlement"],
 	});
 
+	Actors.registerSheet("fallout", sheets.FalloutVehicleSheet, {
+		makeDefault: true,
+		types: ["vehicle"],
+	});
+
 	Items.registerSheet("fallout", sheets.FalloutItemSheet, { makeDefault: true });
 }

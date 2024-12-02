@@ -6,7 +6,8 @@
 			"npc",
 			"robot",
 			"scavenging_location",
-			"settlement"
+			"settlement",
+			"vehicle"
 		],
 		"character": {
 			"chemDoses": {},
@@ -17,6 +18,110 @@
 				"body",
 				"stats",
 				"valuables"
+			]
+		},
+		"vehicle": {
+			"scale": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"health": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"cover": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"zone_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"travel_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"passengers": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"impact": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"injuries": "",
+			"locations": [],
+			"resistance": {
+				"energy": {
+					"locations": "",
+					"value": 0
+				},
+				"physical": {
+					"locations": "",
+					"value": 0
+				}
+			},
+			"salvage": {
+				"tn": 0
+			},
+			"vehicleQuality": {
+				"cargo_x": {
+					"rank": 25,
+					"value": false
+				},
+				"cumbersome": {
+					"rank": 0,
+					"value": false
+				},
+				"enclosed": {
+					"rank": 0,
+					"value": false
+				},
+				"exposed": {
+					"rank": 0,
+					"value": false
+				},
+				"high_performance": {
+					"rank": 0,
+					"value": false
+				},
+				"rugged": {
+					"rank": 0,
+					"value": false
+				},
+				"single_seat": {
+					"rank": 0,
+					"value": false
+				},
+				"flying": {
+					"rank": 1,
+					"value": false
+				},
+				"watercraft": {
+					"rank": 0,
+					"value": false
+				}
+			},
+			"templates": [
+				"base",
+				"encumbrance",
+				"valuables",
+				"body_vehicle",
+				"npc_shared"
 			]
 		},
 		"creature": {
@@ -495,6 +600,391 @@
 					"common": 0,
 					"rare": 0,
 					"uncommon": 0
+				}
+			},
+			"body_vehicle": {
+				"body_parts": {
+					"chassis": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"engine": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"engineL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"engineR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelF": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelFL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelFR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy",
+						"wheelFR": {
+							"injuries": [
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"injuryOpenCount": 0,
+							"injuryTreatedCount": 0,
+							"resistance": {
+								"energy": 0,
+								"physical": 0
+							},
+							"status": "healthy"
+						}
+					},
+					"wheelML": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelMR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRL1": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRR1": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRL2": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wheelRR2": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wingL": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"wingR": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"weaponNG": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					},
+					"weaponDG": {
+						"injuries": [
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						"injuryOpenCount": 0,
+						"injuryTreatedCount": 0,
+						"resistance": {
+							"energy": 0,
+							"physical": 0,
+							"poison": 0,
+							"radiation": 0
+						},
+						"status": "healthy"
+					}
+				},
+				"bodyType": "carTruck",
+				"immunities": {
+					"poison": true,
+					"radiation": true
 				}
 			}
 		}

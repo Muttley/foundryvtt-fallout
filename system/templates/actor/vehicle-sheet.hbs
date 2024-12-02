@@ -1,0 +1,33 @@
+<form class="{{cssClass}} {{actor.type}} flexcol theme-wrapper" autocomplete="off">
+
+	{{> actor/vehicle/partials/header }}
+
+	{{!-- Sheet Tab Navigation --}}
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="abilities">
+			{{localize "FALLOUT.TEMPLATES.Abilities"}}
+		</a>
+
+		<a class="item" data-tab="weapons">
+			{{localize "FALLOUT.TEMPLATES.Weapons"}}
+		</a>
+
+		<a class="item" data-tab="cargo">
+			{{localize "FALLOUT.VEHICLE.vehicleQuality.cargo_x"}}
+		</a>
+
+		<a class="item" data-tab="data">
+			{{localize "FALLOUT.TEMPLATES.Data"}}
+		</a>
+	</nav>
+
+
+	{{!-- Sheet Body --}}
+<section class="sheet-body">
+	{{> actor/vehicle/tabs/abilities }}
+	{{> actor/vehicle/tabs/cargo }}
+	{{> actor/vehicle/tabs/weapons }}
+	{{> actor/_shared-partials/data-tab }}
+</section>
+</form>
+

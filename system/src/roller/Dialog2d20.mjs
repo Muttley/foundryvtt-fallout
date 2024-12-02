@@ -63,7 +63,7 @@ export class Dialog2d20 extends Dialog {
 
 		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
 			const actorType = this.actor?.type;
-			if (actorType !== "character" && actorType !== "robot") return;
+			if (actorType !== "character" && actorType !== "robot" && actorType !== "vehicle") return;
 
 			// REDUCE AMMO
 			if (this.actor && this.item?.system.ammo !== "") {

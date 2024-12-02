@@ -40,6 +40,13 @@ export default class FalloutActor extends Actor {
 		return !this.isCreature;
 	}
 
+	get isVehicle() {
+		return this.type === "vehicle";
+	}
+
+	get isNotVehicle() {
+		return !this.isVehicle;
+	}
 
 	get isNotRobot() {
 		return !this.isRobot;
@@ -653,7 +660,7 @@ export default class FalloutActor extends Actor {
    * Prepare NPC type specific data.
    */
 	_prepareNpcData() {
-		if (!["creature", "npc"].includes(this.type)) return;
+		if (!["creature", "npc", "vehicle"].includes(this.type)) return;
 
 		const disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"
@@ -666,12 +673,22 @@ export default class FalloutActor extends Actor {
 			this.system.category
 		);
 
-		if (this.isCreature) {
+		if (this.isCreature || this.isVehicle) {
 			this.system.carryWeight.total = this._getItemsTotalWeight();
 		}
 		else {
 			this._calculateEncumbrance();
 		}
+
+		if (this.isVehicle) {
+			if (this.system.vehicleQuality.cargo_x.value) {
+				this.system.carryWeight.base = this.system.vehicleQuality.cargo_x.rank;
+			}
+			else {
+				this.system.carryWeight.base = 0;
+			}
+		}
+
 	}
 
 	getLastConditionChanges() {
@@ -768,7 +785,7 @@ export default class FalloutActor extends Actor {
 		}
 
 		// Add Skills to Characters, NPCs and Robots
-		if (this.type !== "creature") {
+		if (this.type !== "creature" && this.type !== "vehicle") {
 			// If the Actor data already contains skill items then this is an
 			// Actor being duplicated and we don't want to touch their
 			// items at all
