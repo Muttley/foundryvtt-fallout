@@ -91,6 +91,10 @@ export default class FalloutActor extends Actor {
 		return hasActiveOwner;
 	}
 
+	get shouldHaveSkillsAdded() {
+		return ["character", "npc", "robot"].includes(this.type);
+	}
+
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -785,7 +789,7 @@ export default class FalloutActor extends Actor {
 		}
 
 		// Add Skills to Characters, NPCs and Robots
-		if (this.type !== "creature" && this.type !== "vehicle") {
+		if (this.shouldHaveSkillsAdded) {
 			// If the Actor data already contains skill items then this is an
 			// Actor being duplicated and we don't want to touch their
 			// items at all
