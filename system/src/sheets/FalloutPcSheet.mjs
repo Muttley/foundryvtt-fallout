@@ -1,8 +1,5 @@
 import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 
-/**
- * @extends {ActorSheet}
- */
 export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 	chemDoseManager;

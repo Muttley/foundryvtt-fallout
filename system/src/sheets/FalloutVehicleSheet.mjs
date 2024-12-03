@@ -1,8 +1,6 @@
 import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 
-/**
- * @extends {FalloutBaseActorSheet}
- */export default class FalloutVehicleSheet extends FalloutBaseActorSheet {
+export default class FalloutVehicleSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
@@ -20,10 +18,12 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		});
 	}
 
+
 	/** @override */
 	get initialTab() {
 		return "abilities";
 	}
+
 
 	/** @override */
 	get inventorySections() {
@@ -33,10 +33,12 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		];
 	}
 
+
 	/** @override */
 	get template() {
 		return "systems/fallout/templates/actor/vehicle-sheet.hbs";
 	}
+
 
 	/** @override */
 	activateListeners(html) {
@@ -55,6 +57,7 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		);
 
 	}
+
 
 	async getData(options) {
 		const context = await super.getData(options);
@@ -130,8 +133,8 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 		return context;
 	}
 
-	async _updateObject(event, formData) {
 
+	async _updateObject(event, formData) {
 		for (const resistanceType of ["energy", "physical"]) {
 			const key = `_all_${resistanceType}`;
 			const val = formData[key] ?? null;
@@ -151,8 +154,8 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 
 	}
 
-	async _getVehicleQualities(context, actor) {
 
+	async _getVehicleQualities(context, actor) {
 		const vehicleQualities = [];
 		for (const key in CONFIG.FALLOUT.VEHICLE_QUALITIES) {
 			vehicleQualities.push({
@@ -168,6 +171,47 @@ import FalloutBaseActorSheet from "./FalloutBaseActorSheet.mjs";
 			(a, b) => a.label.localeCompare(b.label)
 		);
 	}
+
+
+	async _onVehicleCoverRoll(event) {
+		const numOfDice = this.actor.system.cover.value;
+
+		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.cover")}`;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
+		});
+	}
+
+
+	async _onVehicleImpactRoll(event) {
+		const numOfDice = this.actor.system.impact.value;
+
+		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.impact")}`;
+
+		let actorUUID;
+		let _token = this.actor.token;
+		if (_token) actorUUID = this.actor.token.uuid;
+		else actorUUID = this.actor.uuid;
+
+		// console.warn(fromUuidSync(actorUUID).actor)
+
+		fallout.DialogD6.createDialog({
+			rollName: rollName,
+			diceNum: numOfDice,
+			actor: actorUUID,
+		});
+	}
+
 
 	async _onVehicleWeaponRoll(event) {
 		const li = $(event.currentTarget).parents(".item");
