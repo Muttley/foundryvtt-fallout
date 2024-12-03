@@ -19,55 +19,55 @@
 				<i class="fas fa-comment"></i>
 			</div>
         </div>
-        {{#if system.weight includeZero=true}}
-			<div class="grid grid-4col">
+		{{#if system.weight includeZero=true}}
+			<div class="grid-4-columns">
 				<div class="resource">
 					<label class="resource-label">
 						{{localize "FALLOUT.UI.Quantity"}}
+						<input
+							class="num-short-3"
+							data-dtype="Number"
+							name="system.quantity"
+							type="number"
+							value="{{system.quantity}}"
+						/>
 					</label>
-					<input
-						class="num-short-3"
-						data-dtype="Number"
-						name="system.quantity"
-						type="number"
-						value="{{system.quantity}}"
-					/>
 				</div>
 				<div class="resource">
 					<label class="resource-label">
 						{{localize "FALLOUT.UI.Weight"}}
+						<input
+							class="num-short-3"
+							data-dtype="Number"
+							name="system.weight"
+							type="number"
+							value="{{system.weight}}"
+						/>
 					</label>
-					<input
-						class="num-short-3"
-						data-dtype="Number"
-						name="system.weight"
-						type="number"
-						value="{{system.weight}}"
-					/>
 				</div>
 				<div class="resource">
 					<label class="resource-label">
 						{{localize "FALLOUT.UI.Cost"}}
+						<input
+							class="num-short-3"
+							data-dtype="Number"
+							name="system.cost"
+							type="number"
+							value="{{system.cost}}"
+						/>
 					</label>
-					<input
-						class="num-short-3"
-						data-dtype="Number"
-						name="system.cost"
-						type="number"
-						value="{{system.cost}}"
-					/>
 				</div>
 				<div class="resource">
 					<label class="resource-label">
 						{{localize "FALLOUT.UI.Rarity"}}
+						<input
+							class="num-short-3"
+							data-dtype="Number"
+							name="system.rarity"
+							type="number"
+							value="{{system.rarity}}"
+						/>
 					</label>
-					<input
-						class="num-short-3"
-						data-dtype="Number"
-						name="system.rarity"
-						type="number"
-						value="{{system.rarity}}"
-					/>
 				</div>
 			</div>
         {{/if}}

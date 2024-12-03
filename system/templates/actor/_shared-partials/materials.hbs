@@ -1,16 +1,14 @@
-<div class="box padding5">
-	<ol class="items-list">
-		<li class="item consumable flexrow items-header">
-			<div class="flexrow flexlarge item-name upperC">
-				{{localize 'FALLOUT.actor.inventory.materials.label'}}
-			</div>
-		</li>
-		{{#each materials}}
-			{{>
-				actor/_shared-partials/material
-				material=this
-				isPlayerCharacter=../isPlayerCharacter
-			}}
-		{{/each}}
-	</ol>
-</div>
+<ol class="items-list">
+	<li class="consumable flexrow items-header">
+		<div class="flexrow flexlarge item-name upperC">
+			{{localize 'FALLOUT.actor.inventory.materials.label'}}
+		</div>
+	</li>
+	{{#each materials}}
+		{{>
+			actor/_shared-partials/material
+			material=this
+			isPlayerCharacter=../isPlayerCharacter
+		}}
+	{{/each}}
+</ol>

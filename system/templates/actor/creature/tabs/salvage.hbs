@@ -1,0 +1,16 @@
+<div class="tab gear" data-group="primary" data-tab="gear">
+	<div class="flexrow">
+		{{!-- LEFT --}}
+		<div style="padding-right: 5px;">
+			{{> actor/creature/partials/salvage}}
+			{{> actor/npc/partials/carried-weight}}
+		</div>
+
+		{{!-- RIGHT --}}
+		<div>
+			{{> actor/_shared-partials/materials
+				materials=inventoryMaterials
+			}}
+		</div>
+	</div>
+</div>

@@ -12,6 +12,7 @@ FALLOUT.EIGHT_HOURS_IN_SECONDS = 60 * 60 * 8;
 FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
 FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
 
+FALLOUT.DEFAULT_ATTRIBUTES_TOTAL = 40;
 FALLOUT.DEFAULT_CONSUMABLE_RAD_DICE = 1;
 FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
 
@@ -128,6 +129,7 @@ FALLOUT.DAMAGE_EFFECTS = {
 	radioactive: "FALLOUT.WEAPONS.damageEffect.radioactive",
 	spread: "FALLOUT.WEAPONS.damageEffect.spread",
 	stun: "FALLOUT.WEAPONS.damageEffect.stun",
+	tranquilize_x: "FALLOUT.WEAPONS.damageEffect.tranquilize_x",
 	vicious: "FALLOUT.WEAPONS.damageEffect.vicious",
 };
 
@@ -148,6 +150,7 @@ FALLOUT.DEFAULT_ICONS = {
 	disease: "systems/fallout/assets/icons/items/disease.svg",
 	miscellany: "systems/fallout/assets/icons/items/miscellany.svg",
 	object_or_structure: "systems/fallout/assets/icons/items/object_or_structure.svg",
+	origin: "systems/fallout/assets/icons/items/origin.svg",
 	perk: "systems/fallout/assets/icons/items/perk.svg",
 	robot_armor: "systems/fallout/assets/icons/items/robot_armor.svg",
 	robot_mod: "systems/fallout/assets/icons/items/robot_mod.svg",
@@ -165,6 +168,7 @@ FALLOUT.DEFAULT_TOKENS = {
 	robot: "systems/fallout/assets/tokens/robot.webp",
 	scavenging_location: "systems/fallout/assets/tokens/scavenging_location.webp",
 	settlement: "systems/fallout/assets/tokens/settlement.webp",
+	vehicle: "systems/fallout/assets/tokens/vehicle.webp",
 };
 
 FALLOUT.HUNGER_BY_NUMBER = {
@@ -313,13 +317,18 @@ FALLOUT.NPC_CATEGORIES = {
 FALLOUT.OFFICIAL_SOURCES = {
 	aat_fully_operational: "FALLOUT.SOURCE_TITLE.aat_fully_operational",
 	aat_hunted: "FALLOUT.SOURCE_TITLE.aat_hunted",
+	aat_into_the_abyss: "FALLOUT.SOURCE_TITLE.aat_into_the_abyss",
+	aat_one_to_four: "FALLOUT.SOURCE_TITLE.aat_one_to_four",
 	aat_orange_sky: "FALLOUT.SOURCE_TITLE.aat_orange_sky",
 	aat_skull_canyon: "FALLOUT.SOURCE_TITLE.aat_skull_canyon",
 	core_rulebook: "FALLOUT.SOURCE_TITLE.core_rulebook",
 	enclave_remnants: "FALLOUT.SOURCE_TITLE.enclave_remnants",
 	gm_toolkit: "FALLOUT.SOURCE_TITLE.gm_toolkit",
+	hollywood_heroes: "FALLOUT.SOURCE_TITLE.hollywood_heroes",
 	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
+	map_pack_wasteland_locales: "FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales",
 	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
+	reillys_rangers: "FALLOUT.SOURCE_TITLE.reillys_rangers",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
 	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
@@ -433,9 +442,107 @@ FALLOUT.THIRST_BY_NUMBER = {
 	3: "FALLOUT.TEMPLATES.conditions.dehydrated",
 };
 
+FALLOUT.VEHICLE_QUALITIES = {
+	cargo_x: "FALLOUT.VEHICLE.vehicleQuality.cargo_x",
+	cumbersome: "FALLOUT.VEHICLE.vehicleQuality.cumbersome",
+	enclosed: "FALLOUT.VEHICLE.vehicleQuality.enclosed",
+	exposed: "FALLOUT.VEHICLE.vehicleQuality.exposed",
+	high_performance: "FALLOUT.VEHICLE.vehicleQuality.high_performance",
+	rugged: "FALLOUT.VEHICLE.vehicleQuality.rugged",
+	single_seat: "FALLOUT.VEHICLE.vehicleQuality.single_seat",
+	flying: "FALLOUT.VEHICLE.vehicleQuality.flying",
+	watercraft: "FALLOUT.VEHICLE.vehicleQuality.watercraft",
+};
+
+FALLOUT.VEHICLE_ATTRIBUTES = {
+	zone_speed: "FALLOUT.VEHICLE.zone_speed",
+	travel_speed: "FALLOUT.VEHICLE.travel_speed",
+	scale: "FALLOUT.VEHICLE.scale",
+	cover: "FALLOUT.VEHICLE.cover",
+	impact: "FALLOUT.VEHICLE.impact",
+	passengers: "FALLOUT.VEHICLE.passengers",
+};
+
+FALLOUT.VEHICLE_CATEGORIES = {
+	apc: "FALLOUT.VEHICLE_TYPES.apc",
+	armored: "FALLOUT.VEHICLE_TYPES.armored",
+	bus: "FALLOUT.VEHICLE_TYPES.bus",
+	carTruck: "FALLOUT.VEHICLE_TYPES.carTruck",
+	motorcycle: "FALLOUT.VEHICLE_TYPES.motorcycle",
+	sportsCar: "FALLOUT.VEHICLE_TYPES.sportsCar",
+	vertibird: "FALLOUT.VEHICLE_TYPES.vertibird",
+};
+
+FALLOUT.VEHICLE_CARTRUCK_VALUES = {
+	chassis: "1-8",
+	wheelFL: "9-10",
+	wheelFR: "11-12",
+	engine: "13-16",
+	wheelRL: "17-18",
+	wheelRR: "19-20",
+};
+
+FALLOUT.VEHICLE_MOTORCYCLE_VALUES = {
+	chassis: "1-7",
+	wheelF: "8-11",
+	engine: "12-16",
+	wheelR: "17-20",
+};
+
+FALLOUT.VEHICLE_SPORTSCAR_VALUES = {
+	chassis: "1-7",
+	wheelFL: "8-9",
+	wheelFR: "10-11",
+	engine: "12-16",
+	wheelRL: "17-18",
+	wheelRR: "19-20",
+};
+
+FALLOUT.VEHICLE_BUS_VALUES = {
+	chassis: "1-8",
+	wheelFL: "9-10",
+	wheelFR: "11-12",
+	engine: "13-16",
+	wheelRL1: "17",
+	wheelRR1: "18",
+	wheelRL2: "19",
+	wheelRR2: "20",
+};
+
+FALLOUT.VEHICLE_ARMORED_VALUES = {
+	chassis: "1-8",
+	wheelFL: "9-10",
+	wheelFR: "11-12",
+	engine: "13-16",
+	wheelRL: "17-18",
+	wheelRR: "19-20",
+};
+
+FALLOUT.VEHICLE_APC_VALUES = {
+	chassis: "1-10",
+	wheelFL: "11",
+	wheelFR: "12",
+	engine: "13-16",
+	wheelML: "17",
+	wheelMR: "18",
+	wheelRL: "19",
+	wheelRR: "20",
+};
+
+FALLOUT.VEHICLE_VERTIBIRD_VALUES = {
+	engineL: "1-2",
+	engineR: "3-4",
+	chassis: "5-10",
+	wingL: "11-13",
+	wingR: "14-16",
+	weaponNG: "17-18",
+	weaponDG: "19-20",
+};
+
 FALLOUT.WEAPON_QUALITIES = {
 	accurate: "FALLOUT.WEAPONS.weaponQuality.accurate",
 	ammo_hungry_x: "FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x",
+	aquatic: "FALLOUT.WEAPONS.weaponQuality.aquatic",
 	blast: "FALLOUT.WEAPONS.weaponQuality.blast",
 	bombard: "FALLOUT.WEAPONS.weaponQuality.bombard",
 	close_quarters: "FALLOUT.WEAPONS.weaponQuality.close_quarters",
@@ -459,6 +566,7 @@ FALLOUT.WEAPON_QUALITIES = {
 	two_handed: "FALLOUT.WEAPONS.weaponQuality.two_handed",
 	unreliable: "FALLOUT.WEAPONS.weaponQuality.unreliable",
 	unstable_radiation: "FALLOUT.WEAPONS.weaponQuality.unstable_radiation",
+	wrangle: "FALLOUT.WEAPONS.weaponQuality.wrangle",
 };
 
 FALLOUT.WEAPON_ATTRIBUTE_OVERRIDE = {
@@ -534,6 +642,17 @@ export async function generateEnrichedTooltips() {
 			)
 		);
 		CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key] = key.endsWith("_x");
+	}
+
+	CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS = {};
+	CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK = {};
+	for (const key in CONFIG.FALLOUT.VEHICLE_QUALITIES) {
+		CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
+			game.i18n.localize(
+				`FALLOUT.TOOLTIPS.VehicleQuality.${key}`
+			)
+		);
+		CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK[key] = key.endsWith("_x");
 	}
 
 	CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK = {};

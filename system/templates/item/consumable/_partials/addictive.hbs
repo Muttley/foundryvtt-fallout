@@ -1,0 +1,25 @@
+<div class="flexrow resource-row">
+	<label for="system.addictive" class="field-label">
+		{{localize "FALLOUT.TEMPLATES.Addictive"}}
+	</label>
+	<input
+		name="system.addictive"
+		type="checkbox"
+		{{#if system.addictive}}
+			checked
+		{{/if}}
+	>
+</div>
+
+{{#if system.addictive}}
+	<div class="flexrow resource-row">
+		<label for="system.addiction" class="field-label">
+			{{localize "FALLOUT.TEMPLATES.AddictionNumber"}}
+		</label>
+		<input
+			name="system.addiction"
+			type="number"
+			value="{{system.addiction}}"
+		>
+	</div>
+{{/if}}

@@ -21,6 +21,15 @@
 	@import "components/resource";
 	@import "components/items";
 	@import "components/effects";
+
+	h5 {
+		text-align: center;
+		font-weight: bold;
+		background: #2d3f5e;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		margin: 0;
+	}
 }
 
 .fallout.sheet.actor {
@@ -29,6 +38,10 @@
 
 .fallout.sheet.creature {
 	min-width: 690px;
+}
+
+.fallout.sheet.vehicle {
+	min-width: 700px;
 }
 
 .fallout.sheet.item {

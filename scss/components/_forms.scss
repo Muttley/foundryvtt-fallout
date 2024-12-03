@@ -357,8 +357,20 @@
 	background-color: #e5e8ea1f;
 	color: $c-font-prim;
 
+	&.padding1 {
+		padding: 1px;
+	}
+	&.padding2 {
+		padding: 2px;
+	}
+	&.padding3 {
+		padding: 3px;
+	}
+	&.padding4 {
+		padding: 4px;
+	}
 	&.padding5 {
-		padding: 5px 5px 5px 5px;
+		padding: 5px;
 	}
 	.items-list .item.items-header {
 		margin-top: 0px !important;

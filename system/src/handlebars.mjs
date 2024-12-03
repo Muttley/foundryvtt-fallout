@@ -18,6 +18,18 @@ export default function registerHandlebarsHelpers() {
 		return outStr;
 	});
 
+	Handlebars.registerHelper("diseaseStatus", function(disease) {
+		if (disease.system.infectionActive) {
+			return game.i18n.format("FALLOUT.TEMPLATES.DiseaseProgress", {
+				day: disease.system.daysInfected,
+				days: disease.system.duration,
+			});
+		}
+		else {
+			return game.i18n.localize("FALLOUT.TEMPLATES.DiseaseIncubating");
+		}
+	});
+
 	Handlebars.registerHelper("listDamageEffects", function(effects) {
 		const elements = [];
 
@@ -173,6 +185,10 @@ export default function registerHandlebarsHelpers() {
 
 	Handlebars.registerHelper("fromSettings", function(arg1) {
 		return game.settings.get(SYSTEM_ID, arg1);
+	});
+
+	Handlebars.registerHelper("log", function(something) {
+		console.log(something);
 	});
 
 	// Handlebars.registerHelper("incrementCounter", function(counter) {

@@ -75,12 +75,13 @@
 		color: white;
 		margin: 16px;
 
-		h1 {
+		.header {
 			background: none;
 			color: rgb(252, 229, 61);
 			font-family: $font-oswald;
 			font-weight: 700;
 			font-size: 2.2em;
+			margin: 0 0 0.5rem;
 		}
 	}
 
@@ -167,6 +168,7 @@
 	p {
 		font-style: normal;
 		font-size: 1.1em;
+		line-height: 1.5;
 	}
 
 	table {

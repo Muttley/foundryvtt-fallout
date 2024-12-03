@@ -1,10 +1,11 @@
 export default class FalloutActor extends Actor {
 
+	isSleeping = false;
+
 	constructor(object, options={}) {
 		super(object, options);
-
-		this.isSleeping = false;
 	}
+
 
 	/**
 	 * Update any settlement sheets that may be linked to the deleted Actor
@@ -31,6 +32,33 @@ export default class FalloutActor extends Actor {
 		}
 	}
 
+
+	get attributeTotals() {
+		const totals = {
+			bonus: 0,
+			max: CONFIG.FALLOUT.DEFAULT_ATTRIBUTES_TOTAL,
+			total: 0,
+		};
+
+		for (const key in this.system.attributes) {
+			const attribute = this.system.attributes[key];
+
+			totals.bonus += attribute.bonus;
+			totals.max += attribute.bonus;
+			totals.total += attribute.value + attribute.bonus;
+		}
+
+		totals.diff = totals.max - totals.total;
+
+		return totals;
+	}
+
+
+	get isAlcoholic() {
+		return this.system.conditions.alcoholic;
+	}
+
+
 	get isCreature() {
 		return this.type === "creature";
 	}
@@ -40,6 +68,13 @@ export default class FalloutActor extends Actor {
 		return !this.isCreature;
 	}
 
+	get isVehicle() {
+		return this.type === "vehicle";
+	}
+
+	get isNotVehicle() {
+		return !this.isVehicle;
+	}
 
 	get isNotRobot() {
 		return !this.isRobot;
@@ -59,6 +94,12 @@ export default class FalloutActor extends Actor {
 
 	get isWellRested() {
 		return this.type === "character" && this.system.conditions.wellRested;
+	}
+
+	get overriddenFields() {
+		return Object.keys(
+			foundry.utils.flattenObject(this.overrides)
+		);
 	}
 
 	get ownerIsOffline() {
@@ -84,6 +125,10 @@ export default class FalloutActor extends Actor {
 		return hasActiveOwner;
 	}
 
+	get shouldHaveSkillsAdded() {
+		return ["character", "npc", "robot"].includes(this.type);
+	}
+
 	get useKgs() {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
@@ -94,11 +139,7 @@ export default class FalloutActor extends Actor {
 	}
 
 	isFieldOverridden(fieldName) {
-		const overridden = Object.keys(
-			foundry.utils.flattenObject(this.overrides)
-		);
-
-		return overridden.includes(fieldName);
+		return this.overriddenFields.includes(fieldName);
 	}
 
 	// Returns the current perk level, or zero if the player doesn't have the
@@ -653,7 +694,7 @@ export default class FalloutActor extends Actor {
    * Prepare NPC type specific data.
    */
 	_prepareNpcData() {
-		if (!["creature", "npc"].includes(this.type)) return;
+		if (!["creature", "npc", "vehicle"].includes(this.type)) return;
 
 		const disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"
@@ -666,12 +707,22 @@ export default class FalloutActor extends Actor {
 			this.system.category
 		);
 
-		if (this.isCreature) {
+		if (this.isCreature || this.isVehicle) {
 			this.system.carryWeight.total = this._getItemsTotalWeight();
 		}
 		else {
 			this._calculateEncumbrance();
 		}
+
+		if (this.isVehicle) {
+			if (this.system.vehicleQuality.cargo_x.value) {
+				this.system.carryWeight.base = this.system.vehicleQuality.cargo_x.rank;
+			}
+			else {
+				this.system.carryWeight.base = 0;
+			}
+		}
+
 	}
 
 	getLastConditionChanges() {
@@ -767,9 +818,8 @@ export default class FalloutActor extends Actor {
 			}
 		}
 
-
-		// Add Skills to Characters and Robots
-		if (this.type === "character" || this.type === "robot") {
+		// Add Skills to Characters, NPCs and Robots
+		if (this.shouldHaveSkillsAdded) {
 			// If the Actor data already contains skill items then this is an
 			// Actor being duplicated and we don't want to touch their
 			// items at all
@@ -1328,13 +1378,19 @@ export default class FalloutActor extends Actor {
 			}
 
 			if (consumableType === "chem" && item.system.addictive) {
-				const alreadyAddicted = await this.isAddictedToChem(item);
+				const addictionName = item.system.consumableGroup !== ""
+					? item.system.consumableGroup
+					: item.name;
+
+				const alreadyAddicted = await this.isAddictedToChem(addictionName);
 
 				const chemId = item.name.slugify();
 				const dosageKey = `system.chemDoses.${chemId}`;
 
+				let scenes = item.system.duration === "lasting" ? 2 : 1;
+
 				let	newDosage = this.system.chemDoses[chemId]?.doses ?? 0;
-				newDosage++;
+				newDosage = alreadyAddicted ? 1 : newDosage + 1;
 
 				const addictionNumberExceeded =
 					newDosage >= item.system.addiction;
@@ -1348,16 +1404,30 @@ export default class FalloutActor extends Actor {
 					fallout.Roller2D20.showDiceSoNice(addictedRoll);
 
 					if (parseInt(roll.result) >= item.system.addiction) {
+						newDosage = 1;
 
-						const addictionName = item.system.consumableGroup !== ""
-							? item.system.consumableGroup
-							: item.name;
+						// Automatically add Addiction item of the correct type
+						// to the character
+						//
+						const addiction = (
+							await fallout.compendiums.addictions()
+						).find(
+							a => a.name === addictionName
+						);
+
+						if (addiction) {
+							this.createEmbeddedDocuments("Item", [addiction]);
+						}
+						else {
+							fallout.logger.warn(`Unable to fund addiction with the name ${addictionName}`);
+						}
 
 						fallout.chat.renderGeneralMessage(
 							this,
 							{
 								title: game.i18n.localize("FALLOUT.CHAT_MESSAGE.addiction.title"),
-								body: game.i18n.format("FALLOUT.CHAT_MESSAGE.addiction.body",
+								body: game.i18n.format(
+									"FALLOUT.CHAT_MESSAGE.addiction.body",
 									{
 										actorName: this.name,
 										itemName: addictionName,
@@ -1371,9 +1441,11 @@ export default class FalloutActor extends Actor {
 
 				actorUpdateData[dosageKey] = {
 					addiction: item.system.addiction,
+					addictionName,
 					doses: newDosage,
 					id: chemId,
 					name: item.name,
+					scenes,
 				};
 
 			}
@@ -1534,15 +1606,11 @@ export default class FalloutActor extends Actor {
 		);
 	}
 
-	async isAddictedToChem(item) {
-		const chemName = item.system.consumableGroup !== ""
-			? item.system.consumableGroup
-			: item.name;
-
+	async isAddictedToChem(addictionName) {
 		const addiction = this.items.filter(
 			i => i.type === "addiction"
 		).find(
-			i => i.name === chemName
+			i => i.name === addictionName
 		);
 
 		return addiction ? true : false;
@@ -1596,6 +1664,39 @@ export default class FalloutActor extends Actor {
 				"system.quantity": newQuantity,
 			}]);
 		}
+	}
+
+	async updateAddictions() {
+		const updateData = {};
+
+		if (this.isAlcoholic) {
+			updateData["system.conditions.intoxication"] = 0;
+		}
+
+		for (const doseKey in this.system.chemDoses) {
+			const dose = this.system.chemDoses[doseKey];
+
+			const isAddicted = await this.isAddictedToChem(
+				dose.addictionName
+			);
+
+			const scenesRemaining = dose.scenes - 1;
+
+			if (isAddicted) {
+				if (scenesRemaining <= 0) {
+					updateData[`system.chemDoses.-=${doseKey}`] = null;
+				}
+				else {
+					dose.scenes = scenesRemaining;
+					updateData[`system.chemDoses.${doseKey}`] = dose;
+				}
+			}
+			else {
+				updateData[`system.chemDoses.${doseKey}`] = dose;
+			}
+		}
+
+		this.update(updateData);
 	}
 
 	async resetChemDoses() {
@@ -1663,6 +1764,8 @@ export default class FalloutActor extends Actor {
 			"system.conditions.sleep": newSleepStatus,
 			"system.conditions.wellRested": newWellRested,
 		};
+
+		await this.updateAddictions();
 
 		if (newWellRested && this.isNotWellRested) {
 			updateData["system.health.value"] = this.system.health.value + 2;

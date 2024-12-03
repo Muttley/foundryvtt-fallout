@@ -1,0 +1,12 @@
+{{#ifCond system.consumableType '===' 'food' }}
+	{{> item/consumable/_partials/hp-healed}}
+	{{> item/consumable/_partials/radiation-healed}}
+	{{> item/consumable/_partials/thirst-reduction}}
+	{{> item/consumable/_partials/irradiated}}
+
+	{{#if system.irradiated}}
+		{{> item/consumable/_partials/irradiated-damage}}
+	{{/if}}
+
+	{{> item/consumable/_partials/prepared}}
+{{/ifCond}}

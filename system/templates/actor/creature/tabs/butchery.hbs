@@ -1,0 +1,15 @@
+<div class="tab butchery" data-group="primary" data-tab="butchery">
+	<div class="flexrow">
+		{{!-- LEFT --}}
+		<div style="padding-right: 5px;">
+			{{> actor/creature/partials/butchery }}
+		</div>
+
+		{{!-- RIGHT --}}
+		<div>
+			{{> actor/_shared-partials/materials
+				materials=butcheryMaterials
+			}}
+		</div>
+	</div>
+</div>

@@ -1,32 +1,30 @@
-<div class="box padding5">
-	<ol class="settlers-list">
-		<li class="settler consumable flexrow settlers-header">
-			<div class="flexrow flexlarge settler-name upperC">
-				{{localize 'FALLOUT.TEMPLATES.CurrentLeader'}}
+<ol class="settlers-list">
+	<li class="flexrow settlers-header">
+		<div class="flexrow flexlarge settler-name upperC">
+			{{localize 'FALLOUT.TEMPLATES.CurrentLeader'}}
+		</div>
+	</li>
+	<li class="settler" data-settler-id="{{settler._id}}">
+		<div class="flexrow">
+			<div>
+				<select
+					data-dtype="String"
+					name="system.leader"
+					style="font-size: 0.75rem; width: 100%"
+				>
+					<option value="">&nbsp;</option>
+					{{#each candidates}}
+						<option
+							value="{{this.uuid}}"
+							{{#ifCond ../system.leader "===" this.uuid}}
+								selected
+							{{/ifCond}}
+						>
+							{{this.name}}
+						</option>
+					{{/each}}
+				</select>
 			</div>
-		</li>
-		<li class="settler" data-settler-id="{{settler._id}}">
-			<div class="flexrow">
-				<div>
-					<select
-						data-dtype="String"
-						name="system.leader"
-						style="font-size: 0.75rem; width: 100%"
-					>
-						<option value="">&nbsp;</option>
-						{{#each candidates}}
-							<option
-								value="{{this.uuid}}"
-								{{#ifCond ../system.leader "===" this.uuid}}
-									selected
-								{{/ifCond}}
-							>
-								{{this.name}}
-							</option>
-						{{/each}}
-					</select>
-				</div>
-			</div>
-		</li>
-	</ol>
-</div>
+		</div>
+	</li>
+</ol>

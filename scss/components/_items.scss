@@ -3,7 +3,7 @@
 .settlers-header {
 	height: 28px;
 	margin: 2px 0;
-	padding: 0;
+	padding: 0 5px;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.05);
 	border: $border-groove;
@@ -112,6 +112,13 @@
 			background-color: rgba(0, 0, 0, 0.2);
 			flex-wrap: wrap;
 		}
+		&:nth-child(odd) {
+			background-color: $f-list-green-1;
+		}
+
+		&:nth-child(even) {
+			background-color: $f-list-green-2;
+		}
 	}
 
 	.item-prop {
@@ -126,10 +133,8 @@
 	.settlers-header {
 		height: 28px;
 		margin: 2px 0;
-		padding: 0;
+		padding: 0 5px;
 		align-items: center;
-		//background: rgba(0, 0, 0, 0.05);
-		//border: $border-groove;
 		background: rgb(0, 0, 0);
 		border: none;
 		font-weight: bold;

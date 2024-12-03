@@ -1,42 +1,35 @@
-<div class="tab data" data-group="primary" data-tab="abilities">
-	<section class="grid grid-2col">
+<div class="tab abilities" data-group="primary" data-tab="abilities">
+	<section class="grid-2-columns">
 		<div class="left-column">
-			{{#if isCreature}}
-				{{> actor/npc/partials/attributes_creature }}
-			{{else}}
-				{{> actor/npc/partials/attributes_npc }}
+			{{> actor/npc/partials/attributes}}
+
+			{{#if isVehicle}}
+			<div class="flexrow resource-row">
+				{{> actor/_shared-partials/npc_hp }}
+				{{> actor/_shared-partials/npc_initiative }}
+				{{> actor/_shared-partials/npc_defense }}
+			</div>
 			{{/if}}
 
 			<div class="flexrow resource-row">
-				{{> actor/npc/partials/hp }}
-				{{> actor/npc/partials/initiative }}
-				{{> actor/npc/partials/defense }}
+				{{> actor/npc/partials/carry-weight }}
+				{{> actor/npc/partials/melee-bonus }}
 			</div>
 
-			{{#if isNPC}}
-				<div class="flexrow resource-row">
-					{{> actor/npc/partials/carry-weight }}
-					{{> actor/npc/partials/melee-bonus }}
-				</div>
-			{{/if}}
-
-			{{> actor/npc/partials/body
+			{{> actor/_shared-partials/npc_body
 				FALLOUT=FALLOUT
 			}}
 
-			{{#unless isCreature}}
-				{{> actor/npc/partials/settlement }}
-			{{/unless}}
+			{{> actor/npc/partials/settlement }}
 		</div>
 
 		<div class="right-column">
-			{{> actor/npc/partials/attacks }}
+			{{> actor/_shared-partials/weapons
+				nameLabel=(localize "FALLOUT.TEMPLATES.Attack")
+				basicControlsOnly=true
+			}}
 
-			{{#if isCreature}}
-				{{> actor/npc/partials/special-abilities }}
-			{{else}}
-				{{> actor/npc/partials/skills }}
-			{{/if}}
+			{{> actor/_shared-partials/npc_special-abilities }}
 		</div>
 
 	</section>

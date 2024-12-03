@@ -1,0 +1,131 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+	{{#if isEmbedded}}
+		<div class="flexrow resource-row">
+			<label class="field-label">
+				{{localize "FALLOUT.TEMPLATES.ParentItem"}}
+			</label>
+
+			{{#select system.parentItem}}
+				<select name="system.parentItem">
+					<option value="">
+						&nbsp;
+					</option>
+					{{#each parentChoices}}
+						<option value="{{this.id}}">
+							{{this.name}}
+						</option>
+					{{/each}}
+				</select>
+			{{/select}}
+		</div>
+	{{/if}}
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Type"}}
+		</label>
+
+		<select name="system.itemType">
+			{{selectOptions FALLOUT.SETTLEMENT_ITEMS
+				selected=system.itemType
+			}}
+		</select>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.UI.Rarity"}}
+		</label>
+
+		<select name="system.rarity">
+			{{selectOptions FALLOUT.RARITIES
+				selected=system.rarity
+			}}
+		</select>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Skill"}}
+		</label>
+
+		<input
+			name="system.skills"
+			type="text"
+			value="{{system.skills}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.UI.Perks"}}
+		</label>
+
+		<input
+			name="system.perks"
+			type="text"
+			value="{{system.perks}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.ConstructionTime"}}
+		</label>
+
+		<input
+			name="system.constructionTime"
+			type="number"
+			value="{{system.constructionTime}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label
+			class="field-label"
+			style="align-self: baseline;"
+		>
+			{{localize "FALLOUT.TEMPLATES.MaterialsRequired"}}
+		</label>
+		<div>
+			<ol class="items-list">
+				{{#each materials}}
+					<li style="padding: 5px; border-bottom: 1px solid #637294; background-color: rgba(0, 0, 0, 0.2);">
+						<div class="flexrow">
+							<input
+								class="num-short-3"
+								min="0"
+								name="{{this.key}}"
+								type="number"
+								value="{{this.value}}"
+							/>
+							&nbsp;&nbsp;
+							<div class="item-name flexlarge">
+								<h4>
+									<p class="field-label">
+										{{this.label}}
+									</p>
+								</h4>
+							</div>
+						</div>
+					</li>
+				{{/each}}
+			</ol>
+		</div>
+	</div>
+
+	<div class="resource-row">
+		<h3 class="resource-label">
+			{{localize "FALLOUT.TEMPLATES.Effect"}}
+		</h3>
+		<div class="description-field">
+			{{editor effectHTML
+				button=true
+				editable=editable
+				owner=owner
+				target="system.effect"
+			}}
+		</div>
+	</div>
+
+</div>

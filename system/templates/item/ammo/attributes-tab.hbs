@@ -1,77 +1,84 @@
 <div class="attributes tab" data-group="primary" data-tab="attributes">
-	<div
-		class="grid grid-3col resource-row"
-		style="grid-template-columns: 1fr 2fr 2fr; align-items: center;"
-	>
 
-		<div class="flex align-mid">
-			<label for="system.shots.current">
-				{{localize "FALLOUT.TEMPLATES.Ammo.Multishot"}}
-			</label>
-			<input
-				class="input-checkbox"
-				data-dtype="Boolean"
-				name="system.multishot"
-				type="checkbox"
-				{{checked system.multishot}}
-			/>
-		</div>
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.shots.current">
+			{{localize "FALLOUT.TEMPLATES.Ammo.Multishot"}}
+		</label>
 
-		<div class="flex align-mid">
-			<label for="system.shots.current">
-				{{localize "FALLOUT.TEMPLATES.Ammo.Current"}}
-			</label>
-			<input
-				class="num-short-2"
-				type="Number"
-				name="system.shots.current"
-				style="margin-left: 8px;"
-				value="{{system.shots.current}}"
-			/>
-			<p>&nbsp;/</p>
-			<input
-				class="num-short-2"
-				type="Number"
-				name="system.shots.max"
-				style="margin-left: 8px;"
-				value="{{system.shots.max}}"
-			/>
-		</div>
-
-		{{#if isGM}}
-			<div class="flex align-mid">
-				<label
-					for="system.quantityRoll"
-					style="flex: 0 0 auto;"
-				>
-					{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
-					<a class="ammo-quantity-roll">
-						<i class="fa-solid fa-dice"></i>
-					</a>
-				</label>
-				<input
-					type="text"
-					data-dtype="String"
-					name="system.quantityRoll"
-					style="margin-left: 8px;"
-					value="{{system.quantityRoll}}"
-				/>
-			</div>
-		{{/if}}
-
+		<input
+			class="input-checkbox"
+			data-dtype="Boolean"
+			name="system.multishot"
+			type="checkbox"
+			{{checked system.multishot}}
+		/>
 	</div>
 
+	{{#if system.multishot}}
+		<div class="flexrow resource-row">
+			<label class="field-label" for="system.shots.current">
+				{{localize "FALLOUT.TEMPLATES.Ammo.Current"}}
+			</label>
+
+			<span class="align-right">
+				<label class="field-label" for="system.mods.current">
+					{{localize "FALLOUT.TEMPLATES.current"}}
+				</label>
+				<input
+					class="num-short-2"
+					name="system.shots.current"
+					type="Number"
+					value="{{system.shots.current}}"
+				/>
+				&sol;
+				<input
+					class="num-short-2"
+					name="system.shots.max"
+					type="Number"
+					value="{{system.shots.max}}"
+				/>
+				<label class="field-label" for="system.mods.max">
+					{{localize "FALLOUT.TEMPLATES.max"}}
+				</label>
+			</span>
+		</div>
+	{{/if}}
+
+	{{#if isGM}}
+		<div class="flexrow resource-row">
+			<label
+				class="field-label"
+				for="system.quantityRoll"
+			>
+				{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
+				<a class="ammo-quantity-roll">
+					<i class="fa-solid fa-dice"></i>
+				</a>
+			</label>
+
+			<input
+				data-dtype="String"
+				name="system.quantityRoll"
+				style="margin-left: 8px;"
+				type="text"
+				value="{{system.quantityRoll}}"
+			/>
+		</div>
+	{{/if}}
+
 	<div class="resource-row">
-		<h3 style="border-bottom: none;">
+		<h3 class="resource-label">
 			{{localize "FALLOUT.TEMPLATES.Effect"}}
 		</h3>
+
 		<div class="description-field">
 			{{editor effectHTML
-				target="system.effect"
 				button=true
-				owner=owner
 				editable=editable
+				owner=owner
+				target="system.effect"
 			}}
 		</div>
 	</div>
+
 </div>

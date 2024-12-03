@@ -1,0 +1,50 @@
+<div class="tab attributes" data-group="primary" data-tab="attributes">
+
+	<div class="flexrow resource-row align-mid">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Ranks"}}
+		</label>
+
+		<div class="flexrow align-right">
+			<div>
+				<label class="field-label">
+					{{localize "FALLOUT.TEMPLATES.current"}}
+					&nbsp;
+				</label>
+
+				<input
+					class="text-center num-short-3"
+					name="system.rank.value"
+					type="number"
+					value="{{system.rank.value}}"
+				/>
+
+				<label class="field-label">
+					&nbsp;
+					{{localize "FALLOUT.TEMPLATES.max"}}
+					&nbsp;
+				</label>
+
+				<input
+					class="text-center num-short-3"
+					name="system.rank.max"
+					type="number"
+					value="{{system.rank.max}}"
+				/>
+			</div>
+		</div>
+	</div>
+
+	<div class="flexrow resource-row align-mid">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Requirements"}}
+		</label>
+
+		<input
+			type="text"
+			name="system.requirements"
+			value="{{system.requirements}}"
+		>
+	</div>
+
+</div>

@@ -77,6 +77,83 @@ export default class FalloutUtils {
 		return majorVersion >= version;
 	}
 
+	// Attempts to get the current actor for a user.  If the current user is the
+	// GM then the currently selected token actor will be used if possible,
+	// otherwise
+	static async getActorForUser() {
+		let actor = null;
+
+		if (game.user.isGM) {
+			const controlledTokenCount = canvas.tokens.controlled.length;
+			if (controlledTokenCount > 0) {
+				if (controlledTokenCount !== 1) {
+					ui.notifications.warn(
+						game.i18n.format("FALLOUT.MACRO.Error.TooManyTokensSelected", {
+							max: 1,
+						})
+					);
+				}
+				else {
+					actor = canvas.tokens.controlled[0].actor;
+				}
+			}
+			else {
+				ui.notifications.warn(
+					game.i18n.format("FALLOUT.ERRORS.NoCharacterTokenSelected")
+				);
+			}
+		}
+		else if (game.user.character) {
+			actor = game.user.character;
+		}
+		else {
+			ui.notifications.warn(
+				game.i18n.format("FALLOUT.ERRORS.NoPLayerCharacterAssigned")
+			);
+		}
+
+		return actor;
+	}
+
+
+	/**
+	 * Creates de-duplicated lists of Selected and Unselected Items.
+	 *
+	 * @param {allItems} Array A list of all available items
+	 * @param {items} Array A list of currently selected items
+	 *
+	 * @returns {Promise} Promise which represents an array containing both the
+	 * selected and unselected item arrays
+	 */
+	static async getDedupedSelectedItems(allItems, items) {
+		const unselectedItems = [];
+		const selectedItems = [];
+
+		allItems.forEach(item => {
+			if (!items.includes(item.uuid)) {
+				unselectedItems.push(item);
+			}
+		});
+
+		for (const itemUuid of items) {
+			selectedItems.push(await this.getFromUuid(itemUuid));
+		}
+
+		selectedItems.sort((a, b) => a.name.localeCompare(b.name));
+
+		return [selectedItems, unselectedItems];
+	}
+
+	static async getFromUuid(uuid) {
+		const itemObj = await fromUuid(uuid);
+		if (itemObj) {
+			return itemObj;
+		}
+		else {
+			return {name: "[Invalid ID]", uuid: uuid};
+		}
+	}
+
 	static getLocalizedSkillAttribute(skill) {
 		return game.i18n.localize(
 			`FALLOUT.AbilityAbbr.${skill.system.defaultAttribute}`

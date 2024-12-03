@@ -13,7 +13,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			width: 760,
+			width: 795,
 			height: 955,
 			tabs: [
 				{
@@ -63,7 +63,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		const context = {
 			actor: actorData,
 			editable: this.isEditable,
-			effects: prepareActiveEffectCategories(this.actor.effects),
+			effects: prepareActiveEffectCategories(this.actor.allApplicableEffects()),
 			FALLOUT: CONFIG.FALLOUT,
 			hasCategory: ["creature", "npc"].includes(this.actor.type),
 			isPlayerCharacter: ["character", "robot"].includes(this.actor.type),
@@ -72,6 +72,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			isNPC: this.actor.type === "npc",
 			isRobot: this.actor.type === "robot",
 			isSettlement: this.actor.type === "settlement",
+			isVehicle: this.actor.type === "vehicle",
 			items: this.actor.items,
 			limited: this.actor.limited,
 			options: this.options,
@@ -272,6 +273,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		).each((i, el) => {
 			el.title = game.i18n.localize("FALLOUT.Form.SelectCompendiumItem.tooltip");
 		});
+
 		html.find(".find-from-compendium").click(this._onFindFromCompendium.bind(this));
 
 		html.find(".find-any-from-compendium").click(this._onFindAnyFromCompendium.bind(this));
@@ -324,9 +326,64 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		});
 
+		// * Toggle Favorite Inventory Item
+		html.find(".item-favorite").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("item-id"));
+
+			item.update({"system.favorite": !item.system.favorite});
+		});
+
+		// * Toggle Stash Inventory Item
+		html.find(".item-stash").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const attachedToId = li.data("item-attached") ?? "";
+
+			const itemId = li.data("item-id") ?? "";
+			const item = this.actor.items.get(itemId);
+
+			const newValue = !item.system.stashed;
+
+			const isFrame = item.system.powerArmor?.isFrame ?? false;
+
+			if (attachedToId !== "" || isFrame) {
+				const myFrameId = isFrame ? itemId : attachedToId;
+
+				const updateData = [{
+					"_id": myFrameId,
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				}];
+
+				const attachments = this.actor.items.filter(
+					i => i.type === "apparel"
+						&& i.system.powerArmor.frameId === myFrameId
+				).map(i => i._id);
+
+				for (const attachmentId of attachments) {
+					updateData.push({
+						"_id": attachmentId,
+						"system.stashed": newValue,
+						"system.equipped": newValue ? false : item.system.equipped,
+					});
+				}
+
+				await Item.updateDocuments(updateData, {parent: this.actor});
+
+				if (item.type === "apparel") {
+					this.actor._calculateCharacterBodyResistance();
+				}
+			}
+			else {
+				item.update({
+					"system.stashed": newValue,
+					"system.equipped": newValue ? false : item.system.equipped,
+				});
+			}
+		});
+
 		// * Active Effect management
-		html
-			.find(".effect-control")
+		html.find(".effect-control")
 			.click(ev => onManageActiveEffect(ev, this.actor));
 
 		// * ROLL WEAPON SKILL
@@ -360,11 +417,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		// Disable any fields that have been overridden by Active Effects and
 		// add a tooltip explaining why
 		//
-		const overridden = Object.keys(
-			foundry.utils.flattenObject(this.actor.overrides)
-		);
-
-		for (const override of overridden) {
+		for (const override of this.actor.overriddenFields) {
 			html.find(
 				`input[name="${override}"],select[name="${override}"]`
 			).each((i, el) => {

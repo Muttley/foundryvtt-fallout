@@ -11,20 +11,20 @@
 {{#*inline "specialAttribute"}}
 	<div class="attribute special-letter">
 		<label
-			for="system.attributes.{{key}}.value"
 			class="resource-label align-left"
 			data-label="{{attributeName}}"
 			data-tooltip="{{attributeName}}"
+			for="system.attributes.{{key}}.value"
 		>
 			{{subString attributeName 0 1}}
 		</label>
 		<div class='special-number'>
 			<input
-				type="number"
-				name="system.attributes.{{key}}.value"
-				value={{attribute.value}}
 				data-dtype="Number"
 				min="0"
+				name="system.attributes.{{key}}.value"
+				type="number"
+				value={{attribute.value}}
 			/>
 		</div>
 	</div>

@@ -114,6 +114,26 @@ FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Arm 3
 FALLOUT.BodyTypes.robot.legR: Main Body
 FALLOUT.BodyTypes.robot.torso: Main Body
+FALLOUT.BodyTypes.vehicle.chassis: Chassis
+FALLOUT.BodyTypes.vehicle.engine: Engine
+FALLOUT.BodyTypes.vehicle.engineL: Left Engine
+FALLOUT.BodyTypes.vehicle.engineR: Right Engine
+FALLOUT.BodyTypes.vehicle.weaponDG: Weapon (Door Gun)
+FALLOUT.BodyTypes.vehicle.weaponNG: Weapon (Nose Guns)
+FALLOUT.BodyTypes.vehicle.wheelF: Front Wheel
+FALLOUT.BodyTypes.vehicle.wheelFL: Front Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelFR: Front Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelML: Middle Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelMR: Middle Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelR: Rear Wheel
+FALLOUT.BodyTypes.vehicle.wheelRL: Rear Left Wheel
+FALLOUT.BodyTypes.vehicle.wheelRL1: Rear Left Wheel 1
+FALLOUT.BodyTypes.vehicle.wheelRL2: Rear Left Wheel 2
+FALLOUT.BodyTypes.vehicle.wheelRR: Rear Right Wheel
+FALLOUT.BodyTypes.vehicle.wheelRR1: Rear Right Wheel 1
+FALLOUT.BodyTypes.vehicle.wheelRR2: Rear Right Wheel 2
+FALLOUT.BodyTypes.vehicle.wingL: Left Wing
+FALLOUT.BodyTypes.vehicle.wingR: Right Wing
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
 FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
@@ -163,6 +183,9 @@ FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
+FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
+FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
+FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
 FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
@@ -187,6 +210,9 @@ FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Current Health
 FALLOUT.HEALTH.health: Health
 FALLOUT.HEALTH.max: Max Health
+FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
+FALLOUT.Item.Origin.Traits.label: Origin Traits
+FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.Item.PowerArmor.Attach: Attach
 FALLOUT.Item.PowerArmor.Attached: Attached
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
@@ -218,6 +244,7 @@ FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to 
 FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
 FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
 FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
+FALLOUT.MACRO.NewScene.name: New Scene
 FALLOUT.MACRO.NewSession.name: New Session
 FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
 FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
@@ -233,10 +260,10 @@ FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
 FALLOUT.OTHER: Other
 FALLOUT.powered: Powered
-FALLOUT.RANGE.close: C
-FALLOUT.RANGE.extreme: E
-FALLOUT.RANGE.long: L
-FALLOUT.RANGE.medium: M
+FALLOUT.RANGE.close: Close
+FALLOUT.RANGE.extreme: Extreme
+FALLOUT.RANGE.long: Long
+FALLOUT.RANGE.medium: Medium
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
 FALLOUT.RESISTANCE.energy: Energy
 FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
@@ -305,16 +332,21 @@ FALLOUT.SKILL.Speech: Speech
 FALLOUT.SKILL.Survival: Survival
 FALLOUT.SKILL.Throwing: Throwing
 FALLOUT.SKILL.Unarmed: Unarmed
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales #2: Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales #4: Hunted!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales #1: Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales #3: Showdown in Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: Core Rulebook
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2: Enclave Remnants"
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
 FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack #1: Vault"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1: The Rust Devils"
+FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
@@ -340,7 +372,6 @@ FALLOUT.TEMPLATES.Attack: Attack
 FALLOUT.TEMPLATES.ATTACKS: ATTACKS
 FALLOUT.TEMPLATES.Attribute: Attribute
 FALLOUT.TEMPLATES.Attributes: Attributes
-FALLOUT.TEMPLATES.Base_Damage: Base Damage
 FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Category: Category
@@ -393,6 +424,7 @@ FALLOUT.TEMPLATES.DAMAGE_EFFECTS: DAMAGE EFFECTS
 FALLOUT.TEMPLATES.DAMAGE_TYPE: DAMAGE TYPE
 FALLOUT.TEMPLATES.DAMAGE: DAMAGE
 FALLOUT.TEMPLATES.Data: Data
+FALLOUT.TEMPLATES.DaysInfected: Days Infected
 FALLOUT.TEMPLATES.Default_Attribute: Default Attribute
 FALLOUT.TEMPLATES.DEFENSE: DEFENSE
 FALLOUT.TEMPLATES.Degree: Degree
@@ -401,8 +433,11 @@ FALLOUT.TEMPLATES.Delete: Delete
 FALLOUT.TEMPLATES.DERIVED: DERIVED
 FALLOUT.TEMPLATES.Description: Description
 FALLOUT.TEMPLATES.Details: Details
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
+FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
 FALLOUT.TEMPLATES.Duration: Duration
 FALLOUT.TEMPLATES.Edit_Item: Edit Item
+FALLOUT.TEMPLATES.Edit: Edit
 FALLOUT.TEMPLATES.Effect: Effect
 FALLOUT.TEMPLATES.Effects: Effects
 FALLOUT.TEMPLATES.Encumbrance_Level: Encumbrance Level
@@ -417,6 +452,7 @@ FALLOUT.TEMPLATES.Healthy: Healthy
 FALLOUT.TEMPLATES.HitLocationLabel: Hit Location
 FALLOUT.TEMPLATES.HP_Healed: HP Healed
 FALLOUT.TEMPLATES.HP: HP
+FALLOUT.TEMPLATES.InfectionActive: Infection Active
 FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
 FALLOUT.TEMPLATES.Injuries: Injuries
 FALLOUT.TEMPLATES.INJURIES: INJURIES
@@ -463,6 +499,7 @@ FALLOUT.TEMPLATES.Range: Range
 FALLOUT.TEMPLATES.RANGE: RANGE
 FALLOUT.TEMPLATES.Rank: Rank
 FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [current/maximum]
+FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Re-roll
 FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
 FALLOUT.TEMPLATES.Requirements: Requirements
@@ -473,17 +510,15 @@ FALLOUT.TEMPLATES.Salvage: Salvage
 FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
 FALLOUT.TEMPLATES.Scale: Scale
 FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
-FALLOUT.TEMPLATES.Skill_Tag: Skill Tag
-FALLOUT.TEMPLATES.Skill_Value: Skill Value
 FALLOUT.TEMPLATES.Skill: Skill
-FALLOUT.TEMPLATES.SKILL: SKILL
-FALLOUT.TEMPLATES.SKILLS: SKILLS
+FALLOUT.TEMPLATES.Skills: Skills
 FALLOUT.TEMPLATES.Source: Source
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Stockpile
 FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
 FALLOUT.TEMPLATES.Successes: Successes
 FALLOUT.TEMPLATES.Tag: Tag
+FALLOUT.TEMPLATES.Tagged: Tagged
 FALLOUT.TEMPLATES.Tear: Wear & Tear
 FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
 FALLOUT.TEMPLATES.TimeTaken: Time Taken
@@ -499,6 +534,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Use Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Use Luck
 FALLOUT.TEMPLATES.Use_Perception: Use Perception
 FALLOUT.TEMPLATES.Use_Strength: Use Strength
+FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
 FALLOUT.TEMPLATES.Wealth: Wealth
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: WEAPON QUALITIES
@@ -522,9 +558,20 @@ FALLOUT.TOOLTIPS.DamageEffect.piercing_x:  Ignore X points of the target’s DR 
 FALLOUT.TOOLTIPS.DamageEffect.radioactive: For every Effect rolled, the target also suffers 1 point of radiation damage. This radiation damage is totalled and applied separately, after a character has suffered the normal damage from the attack.
 FALLOUT.TOOLTIPS.DamageEffect.spread: For each Effect rolled, your attack inflicts one additional hit on the target. Each additional hit inflicts half the rolled damage (rounded down) and hits a random location even if a specific location was targeted for the initial attack.
 FALLOUT.TOOLTIPS.DamageEffect.stun:  If one or more Effects are rolled, the target cannot take their normal actions on their next turn. A stunned character or creature can still spend AP to take additional actions as normal.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x:  Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: The attack inflicts +1 damage for each Effect rolled.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
+FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 @fos[DC] per AP spent to the attack’s damage. If you gain damage in this way, you may not spend ammunition for extra damage. A weapon cannot be both Accurate and Inaccurate.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: The weapon consumes ammo at a much higher rate than other weapons. Each time the weapon is fired, it spends X ammo, rather than 1. In addition, extra damage requires spending X ammo per +1CD, with a maximum number of CD equal to the weapon’s Fire Rate. Additional uses of ammunition, such as the Burst damage effect, also spend X ammo for every 1 ammo that would normally be spent.
+FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "When you make an attack with a Blast weapon, you do not target a single opponent. Instead, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2 (adjusted for range as normal). If you succeed, every creature (and other damageable target) in that zone suffers the weapon’s damage. If you fail, your misplaced attack is less effective: roll only half the weapon’s @fos[DC] to determine the damage inflicted to creatures in the target zone and ignore the weapon’s normal damage effects."
 FALLOUT.TOOLTIPS.WeaponQuality.bombard: "The weapon can deliver a series of explosions over a wide area. This functions identically to the Blast quality, with one addition: When an attack is made with the weapon, you may spend additional ammunition to target additional zones. Each additional zone requires that 2 ammunition be spent, and additional zones must be adjacent to the initial target zone. Ammunition spent to target additional zones is limited by the weapon’s Fire Rate."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
@@ -548,6 +595,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a r
 FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
@@ -583,12 +631,35 @@ FALLOUT.UI.ROBOT_MODULES: Robot Modules
 FALLOUT.UI.SaveChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Special Ability
+FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Stashed
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
 FALLOUT.UI.Weight: Weight
 FALLOUT.UI.Yes: Yes
+FALLOUT.VEHICLE_TYPES.apc: APC
+FALLOUT.VEHICLE_TYPES.armored: Armored
+FALLOUT.VEHICLE_TYPES.bus: Bus
+FALLOUT.VEHICLE_TYPES.carTruck: Car/Truck
+FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
+FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
+FALLOUT.VEHICLE.cover: Cover
+FALLOUT.VEHICLE.impact: Impact
+FALLOUT.VEHICLE.passengers: Passengers
+FALLOUT.VEHICLE.scale: Scale
+FALLOUT.VEHICLE.travel_speed: Travel
+FALLOUT.VEHICLE.vehicleQuality.cargo_x: Cargo
+FALLOUT.VEHICLE.vehicleQuality.cumbersome: Cumbersome
+FALLOUT.VEHICLE.vehicleQuality.enclosed: Enclosed
+FALLOUT.VEHICLE.vehicleQuality.exposed: Exposed
+FALLOUT.VEHICLE.vehicleQuality.flying: Flying
+FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
+FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
+FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
+FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
+FALLOUT.VEHICLE.zone_speed: Zone
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Breaking
 FALLOUT.WEAPONS.damageEffect.burst: Burst
@@ -598,6 +669,7 @@ FALLOUT.WEAPONS.damageEffect.piercing_x: Piercing
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactive
 FALLOUT.WEAPONS.damageEffect.spread: Spread
 FALLOUT.WEAPONS.damageEffect.stun: Stun
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
 FALLOUT.WEAPONS.damageEffect.vicious: Vicious
 FALLOUT.WEAPONS.damageType.energy: Energy
 FALLOUT.WEAPONS.damageType.physical: Physical
@@ -605,6 +677,7 @@ FALLOUT.WEAPONS.damageType.poison: Poison
 FALLOUT.WEAPONS.damageType.radiation: Radiation
 FALLOUT.WEAPONS.weaponQuality.accurate: Accurate
 FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
+FALLOUT.WEAPONS.weaponQuality.aquatic: Aquatic
 FALLOUT.WEAPONS.weaponQuality.blast: Blast
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
 FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
@@ -628,6 +701,7 @@ FALLOUT.WEAPONS.weaponQuality.thrown: Thrown
 FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
 FALLOUT.WEAPONS.weaponQuality.unreliable: Unreliable
 FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
+FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
 FALLOUT.WEAPONS.weaponType.bigGuns: Big Guns
 FALLOUT.WEAPONS.weaponType.bows: Bows
 FALLOUT.WEAPONS.weaponType.creatureAttack: Creature Attack
@@ -645,6 +719,7 @@ TYPES.Actor.npc: NPC
 TYPES.Actor.robot: Robot
 TYPES.Actor.scavenging_location: Scavenging Location
 TYPES.Actor.settlement: Settlement
+TYPES.Actor.vehicle: Vehicle
 TYPES.Item.addiction: Addiction
 TYPES.Item.ammo: Ammo
 TYPES.Item.apparel_mod: Apparel Mod
@@ -654,6 +729,7 @@ TYPES.Item.consumable: Consumable
 TYPES.Item.disease: Disease
 TYPES.Item.miscellany: Miscellany
 TYPES.Item.object_or_structure: Object/Structure
+TYPES.Item.origin: Origin
 TYPES.Item.perk: Perk
 TYPES.Item.robot_armor: Robot Armor
 TYPES.Item.robot_mod: Robot Module

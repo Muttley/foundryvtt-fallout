@@ -8,25 +8,13 @@
 			{{localize "FALLOUT.TEMPLATES.Abilities"}}
 		</a>
 
-		{{#if isCreature}}
-			<a class="item" data-tab="butchery">
-				{{localize "FALLOUT.TEMPLATES.Butchery"}}
-			</a>
-		{{else}}
-			<a class="item" data-tab="special-abilities">
-				{{localize "FALLOUT.UI.Special_Abilities"}}
-			</a>
-		{{/if}}
+		<a class="item" data-tab="skills">
+			{{localize "FALLOUT.TEMPLATES.Skills"}}
+		</a>
 
-		{{#if isCreature}}
-			<a class="item" data-tab="gear">
-				{{localize "FALLOUT.TEMPLATES.Salvage"}}
-			</a>
-		{{else}}
-			<a class="item" data-tab="gear">
-				{{localize "FALLOUT.TEMPLATES.Gear"}}
-			</a>
-		{{/if}}
+		<a class="item" data-tab="gear">
+			{{localize "FALLOUT.TEMPLATES.Gear"}}
+		</a>
 
 		<a class="item" data-tab="data">
 			{{localize "FALLOUT.TEMPLATES.Data"}}
@@ -36,8 +24,7 @@
 	{{!-- Sheet Body --}}
 	<section class="sheet-body">
 		{{> actor/npc/tabs/abilities }}
-		{{> actor/npc/tabs/butchery }}
-		{{> actor/npc/tabs/special-abilities }}
+		{{> actor/npc/tabs/skills }}
 		{{> actor/npc/tabs/gear }}
 		{{> actor/_shared-partials/data-tab }}
 	</section>

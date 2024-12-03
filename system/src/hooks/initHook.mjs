@@ -60,6 +60,8 @@ export async function initHook() {
 		decimals: 0,
 	};
 
+	CONFIG.ActiveEffect.legacyTransferral = false;
+
 	registerDocumentClasses();
 	registerDocumentSheets();
 
@@ -152,6 +154,11 @@ function registerDocumentSheets() {
 	Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
 		makeDefault: true,
 		types: ["settlement"],
+	});
+
+	Actors.registerSheet("fallout", sheets.FalloutVehicleSheet, {
+		makeDefault: true,
+		types: ["vehicle"],
 	});
 
 	Items.registerSheet("fallout", sheets.FalloutItemSheet, { makeDefault: true });

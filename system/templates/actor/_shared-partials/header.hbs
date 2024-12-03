@@ -49,20 +49,20 @@
             </span>
         </div>
 
-        <div class="resources grid right-side">
+        <div class="resources grid-2-columns actor-header-fields">
             <div class="flexcol resource-plate-header plate-2">
                 <div class="resource flexrow align-mid">
                     <label
-						class="resource-label"
+						class="label"
 						for="system.level.value"
-                        style="font-size: 18px; color: white;"
+                        {{!-- style="font-size: 18px; color: white;" --}}
 					>
 						{{localize "FALLOUT.LEVEL.Level"}}
 					</label>
                     <input
 						data-dtype="Number"
 						min="0"
-						style="font-size:18px; max-width:2rem;text-align: center; margin-right: 20px;"
+						style="font-size: 18px; max-width: 3rem; text-align: center; margin-right: 20px;"
 						type="number"
 						value="{{system.level.value}}"
                         name="system.level.value"
@@ -73,7 +73,7 @@
 			{{#if isCreature}}
 				<div></div>
 			{{else}}
-				<div class="flexrow resource-row align-mid resource-plate-header plate-3-g">
+				<div class="flexrow align-mid resource-plate-header plate-3-g">
 					<div>
 						{{#if isPlayerCharacter}}
 							<a
@@ -102,7 +102,7 @@
 				</div>
 			{{/if}}
 
-            <div class="flexrow grid-span-2" style="font-size:12px">
+            <div class="flexrow grid-colspan-2" style="font-size:12px">
                 {{#if (or (eq actor.type "character") (eq actor.type "robot"))}}
 					<div
 						class="resource flex-group-left"

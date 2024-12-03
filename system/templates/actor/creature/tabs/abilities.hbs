@@ -1,0 +1,27 @@
+<div class="tab abilities" data-group="primary" data-tab="abilities">
+	<section class="grid-2-columns">
+		<div class="left-column">
+			{{> actor/creature/partials/attributes }}
+
+			<div class="flexrow resource-row">
+				{{> actor/_shared-partials/npc_hp }}
+				{{> actor/_shared-partials/npc_initiative }}
+				{{> actor/_shared-partials/npc_defense }}
+			</div>
+
+			{{> actor/_shared-partials/npc_body
+				FALLOUT=FALLOUT
+			}}
+		</div>
+
+		<div class="right-column">
+			{{> actor/_shared-partials/weapons
+				nameLabel=(localize "FALLOUT.TEMPLATES.Attack")
+				basicControlsOnly=true
+			}}
+
+			{{> actor/_shared-partials/npc_special-abilities }}
+		</div>
+
+	</section>
+</div>
