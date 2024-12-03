@@ -986,7 +986,6 @@
 			"disease",
 			"miscellany",
 			"object_or_structure",
-			"origin",
 			"perk",
 			"robot_armor",
 			"robot_mod",
@@ -1135,23 +1134,6 @@
 			"perks": "",
 			"rarity": "common",
 			"skills": ""
-		},
-		"origin": {
-			"templates": [
-				"base"
-			],
-			"bonus": {
-				"taggedSkills": 0
-			},
-			"equipment": {
-				"selectCount": 1,
-				"choices": []
-			},
-			"traits": {
-				"choiceCount": 0,
-				"choices": [],
-				"fixed": []
-			}
 		},
 		"perk": {
 			"rank": {
