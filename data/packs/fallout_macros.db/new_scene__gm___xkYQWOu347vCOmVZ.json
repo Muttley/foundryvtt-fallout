@@ -1,0 +1,11 @@
+{
+	"_id": "xkYQWOu347vCOmVZ",
+	"_key": "!macros!xkYQWOu347vCOmVZ",
+	"author": "bomrP4c8hBGiCnut",
+	"command": "/**\n ***************************************************************\n * This macro can be used to perform the following housekeeping\n * tasks at the beginning of a new scene:\n *\n *    - Reset alcoholic characters' alcoholic drink counters to\n *      zero.\n *\n *    - If a character suffers from one or more addictions,\n *      processes the chem doses taken and removes them if\n *      they have expired\n *\n * NOTE: Only users with the Game Master user role can run this\n * macro.\n **************************************************************/\n\nfallout.macros.newScene();",
+	"folder": null,
+	"img": "systems/fallout/assets/icons/macro/new-scene.svg",
+	"name": "New Scene (GM)",
+	"scope": "global",
+	"type": "script"
+}
