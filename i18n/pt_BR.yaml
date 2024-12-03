@@ -244,6 +244,7 @@ FALLOUT.MACRO.Error.GameMasterRoleRequired: O macro '{macro}' necessita que voc�
 FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: Para executar este macro jogadores devem ter um caractere atribuído.
 FALLOUT.MACRO.Error.NoTokensSelected: Você deve ter pelo menos um token selecionado ao executar este macro.
 FALLOUT.MACRO.Error.TooManyTokensSelected: Você só pode ter um máximo de {max} tokens selecionados ao executar este macro.
+FALLOUT.MACRO.NewScene.name: New Scene
 FALLOUT.MACRO.NewSession.name: Nova Sessão
 FALLOUT.MACRO.Success: O macro '{macro}' foi usado com sucesso
 FALLOUT.MIGRATION.begin_migration: Realizando atualizações de arquivos para Fallout 2d20
@@ -436,6 +437,7 @@ FALLOUT.TEMPLATES.DiseaseIncubating: Incubando
 FALLOUT.TEMPLATES.DiseaseProgress: Dia {day} de {days}
 FALLOUT.TEMPLATES.Duration: Duração
 FALLOUT.TEMPLATES.Edit_Item: Editar Item
+FALLOUT.TEMPLATES.Edit: Edit
 FALLOUT.TEMPLATES.Effect: Efeito
 FALLOUT.TEMPLATES.Effects: Efeitos
 FALLOUT.TEMPLATES.Encumbrance_Level: Nível de Sobrecarga
