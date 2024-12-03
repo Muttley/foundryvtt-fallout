@@ -601,46 +601,6 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		});
 	}
 
-	async _onVehicleCoverRoll(event) {
-
-		const numOfDice = this.actor.system.cover.value;
-
-		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.cover")}`;
-
-		let actorUUID;
-		let _token = this.actor.token;
-		if (_token) actorUUID = this.actor.token.uuid;
-		else actorUUID = this.actor.uuid;
-
-		// console.warn(fromUuidSync(actorUUID).actor)
-
-		fallout.DialogD6.createDialog({
-			rollName: rollName,
-			diceNum: numOfDice,
-			actor: actorUUID,
-		});
-	}
-
-	async _onVehicleImpactRoll(event) {
-
-		const numOfDice = this.actor.system.impact.value;
-
-		let rollName = `${game.i18n.localize("TYPES.Actor.vehicle")} ${game.i18n.localize("FALLOUT.VEHICLE.impact")}`;
-
-		let actorUUID;
-		let _token = this.actor.token;
-		if (_token) actorUUID = this.actor.token.uuid;
-		else actorUUID = this.actor.uuid;
-
-		// console.warn(fromUuidSync(actorUUID).actor)
-
-		fallout.DialogD6.createDialog({
-			rollName: rollName,
-			diceNum: numOfDice,
-			actor: actorUUID,
-		});
-	}
-
 	async _onWeaponRoll(event) {
 		const li = $(event.currentTarget).parents(".item");
 		const item = this.actor.items.get(li.data("item-id"));
