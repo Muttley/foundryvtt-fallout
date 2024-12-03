@@ -10,13 +10,13 @@ keys.
 
 | Key | Description |
 |---|---|
-| `system.attributes.agi.bonus` | Can be used to adjust the player's SPECIAL Agility score |
-| `system.attributes.cha.bonus` | Can be used to adjust the player's SPECIAL Charisma score |
-| `system.attributes.end.bonus` | Can be used to adjust the player's SPECIAL Endurance score |
-| `system.attributes.int.bonus` | Can be used to adjust the player's SPECIAL Intelligence score |
-| `system.attributes.luc.bonus` | Can be used to adjust the player's SPECIAL Luck score |
-| `system.attributes.per.bonus` | Can be used to adjust the player's SPECIAL Perception score |
-| `system.attributes.str.bonus` | Can be used to adjust the player's SPECIAL Strength score |
+| `system.attributes.agi.value` | Can be used to adjust the player's SPECIAL Agility score |
+| `system.attributes.cha.value` | Can be used to adjust the player's SPECIAL Charisma score |
+| `system.attributes.end.value` | Can be used to adjust the player's SPECIAL Endurance score |
+| `system.attributes.int.value` | Can be used to adjust the player's SPECIAL Intelligence score |
+| `system.attributes.luc.value` | Can be used to adjust the player's SPECIAL Luck score |
+| `system.attributes.per.value` | Can be used to adjust the player's SPECIAL Perception score |
+| `system.attributes.str.value` | Can be used to adjust the player's SPECIAL Strength score |
 | `system.defense.bonus` | Can be used to adjust the player's Defense score |
 | `system.health.bonus` | Can be used to adjust the player's Health |
 | `system.initiative.bonus` | Can be used to adjust the player's Initiative |

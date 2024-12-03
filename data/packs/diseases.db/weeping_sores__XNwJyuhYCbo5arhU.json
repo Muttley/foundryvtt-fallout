@@ -7,9 +7,11 @@
 	"img": "systems/fallout/assets/icons/items/disease.svg",
 	"name": "Weeping Sores",
 	"system": {
+		"daysInfected": 0,
 		"description": "<p>Whenever you suffer Physical damage, you suffer +1 Physical damage at the start of your next turn, ignoring damage resistance</p>",
 		"duration": 3,
 		"favorite": false,
+		"infectionActive": false,
 		"source": "core_rulebook"
 	},
 	"type": "disease"

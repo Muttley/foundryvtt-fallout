@@ -17,11 +17,14 @@
 - [#513] Indicate on hit location model when an actor is immune to radiation or poison
 - [#525] Add new source "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
 - [#526] Add new Aquatic weapon quality
+- [#532] Add a New Scene macro which handles reduction of intoxication and chem dose levels for alcoholic/addicted characters
+- [#533] Automatically add new Addiction items to character when needed
 
 #### Bugs
 - [#500] Knuckles missing weight value
 - [#510] Addictions and Diseases should not show stash controls
 - [#512] Fix inconsistent typography between different item sheets
+- [#531] Intoxication levels should be reset for Alcoholic characters when sleeping
 
 #### Chores
 - [#499] Merge new French translation updates from Crowdin

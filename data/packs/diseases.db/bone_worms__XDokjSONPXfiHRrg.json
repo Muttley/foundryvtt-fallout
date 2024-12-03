@@ -7,9 +7,11 @@
 	"img": "systems/fallout/assets/icons/items/disease.svg",
 	"name": "Bone Worms",
 	"system": {
+		"daysInfected": 0,
 		"description": "<p>Attacks against you which hit your arms or legs inflict +4CD damage</p>",
 		"duration": "1",
 		"favorite": false,
+		"infectionActive": false,
 		"source": "core_rulebook"
 	},
 	"type": "disease"

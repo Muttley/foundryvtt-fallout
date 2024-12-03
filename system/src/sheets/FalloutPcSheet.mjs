@@ -42,11 +42,6 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 
-		html.find("[data-action='edit-special']").click(event => {
-			event.preventDefault();
-			new fallout.apps.FalloutSpecialEditor({actor: this.actor}).render(true);
-		});
-
 		html.find(".availability-roll").click(async event => {
 			event.preventDefault();
 			this.actor.rollAvailabilityCheck();
@@ -465,6 +460,7 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		).list = newPowerArmorList;
 	}
 
+
 	async _updateChemDoseManager() {
 		if (this.actor.isRobot) return;
 
@@ -474,4 +470,5 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 		this.chemDoseManager.render(false);
 	}
+
 }

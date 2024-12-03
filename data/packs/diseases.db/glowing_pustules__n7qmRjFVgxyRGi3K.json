@@ -7,9 +7,11 @@
 	"img": "systems/fallout/assets/icons/items/disease.svg",
 	"name": "Glowing Pustules",
 	"system": {
+		"daysInfected": 0,
 		"description": "<p>Whenever you suffer an Injury, anyone within Reach suffers 1CD Radiation damage</p>",
 		"duration": 1,
 		"favorite": false,
+		"infectionActive": false,
 		"source": "core_rulebook"
 	},
 	"type": "disease"

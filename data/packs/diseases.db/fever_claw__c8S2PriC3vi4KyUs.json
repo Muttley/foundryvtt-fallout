@@ -7,9 +7,11 @@
 	"img": "systems/fallout/assets/icons/items/disease.svg",
 	"name": "Fever Claw",
 	"system": {
+		"daysInfected": 0,
 		"description": "<p>Your ranged attacks inflict 2CD less damage (minimum 1CD)</p>",
 		"duration": 1,
 		"favorite": false,
+		"infectionActive": false,
 		"source": "core_rulebook"
 	},
 	"type": "disease"

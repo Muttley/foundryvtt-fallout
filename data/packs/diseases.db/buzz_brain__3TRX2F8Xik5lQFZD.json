@@ -7,9 +7,11 @@
 	"img": "systems/fallout/assets/icons/items/disease.svg",
 	"name": "Buzz Brain",
 	"system": {
+		"daysInfected": 0,
 		"description": "<p>INT tests suffer +1 difficulty</p>",
 		"duration": 4,
 		"favorite": false,
+		"infectionActive": false,
 		"source": "core_rulebook"
 	},
 	"type": "disease"

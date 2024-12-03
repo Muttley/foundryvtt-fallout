@@ -3,7 +3,7 @@
 		{{#each FALLOUT.ATTRIBUTES as |attribute key|}}
 			{{> specialAttribute
 				attributeName=(localize attribute)
-				attribute=(lookup ../system.attributes key)
+				attribute=(lookup ../attributes key)
 				key=key
 			}}
 		{{/each}}
@@ -24,7 +24,8 @@
 			<input
 				data-dtype="Number"
 				disabled
-				min="0"
+				max="10"
+				min="4"
 				name="system.attributes.{{key}}.current"
 				type="number"
 				value={{attribute.current}}
@@ -39,10 +40,12 @@
 				Base
 			</label>
 			<input
-				data-dtype="Number"
 				class="num-short-2"
-				type="number"
+				data-dtype="Number"
+				max="10"
+				min="4"
 				name="system.attributes.{{key}}.value"
+				type="number"
 				value="{{attribute.value}}"
 			>
 		</div>
@@ -56,6 +59,7 @@
 			</label>
 			<input
 				data-dtype="Number"
+				disabled
 				class="num-short-2"
 				type="number"
 				name="system.attributes.{{key}}.bonus"

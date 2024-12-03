@@ -1,6 +1,5 @@
 export {default as FalloutChemDoses} from "./FalloutChemDoses.mjs";
 export {default as FalloutPartySleep} from "./FalloutPartySleep.mjs";
-export {default as FalloutSpecialEditor} from "./FalloutSpecialEditor.mjs";
 export {default as ItemSelector} from "./CompendiumItemSelectors/ItemSelector.mjs";
 export {default as ItemTypeMenu} from "./ItemTypeMenu.mjs";
 export {default as SalvageJunk} from "./SalvageJunk.mjs";

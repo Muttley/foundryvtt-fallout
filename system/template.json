@@ -547,45 +547,24 @@
 			"stats": {
 				"attributes": {
 					"agi": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					},
 					"cha": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					},
 					"end": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					},
 					"int": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					},
 					"luc": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					},
 					"per": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					},
 					"str": {
-						"bonus": 0,
-						"max": 10,
-						"min": 4,
 						"value": 5
 					}
 				},

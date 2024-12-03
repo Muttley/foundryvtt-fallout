@@ -273,6 +273,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		).each((i, el) => {
 			el.title = game.i18n.localize("FALLOUT.Form.SelectCompendiumItem.tooltip");
 		});
+
 		html.find(".find-from-compendium").click(this._onFindFromCompendium.bind(this));
 
 		html.find(".find-any-from-compendium").click(this._onFindAnyFromCompendium.bind(this));

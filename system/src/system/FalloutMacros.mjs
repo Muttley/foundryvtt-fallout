@@ -41,6 +41,7 @@ export default class FalloutMacros {
 		return actor;
 	}
 
+
 	// Work out which actors to use.  GMs need at least one token selected.
 	//
 	// Players always use their own character Actor.
@@ -73,6 +74,7 @@ export default class FalloutMacros {
 		return actors;
 	}
 
+
 	static async drinkDirtyWater() {
 		const actor = await FalloutMacros._getMacroActor();
 
@@ -101,6 +103,45 @@ export default class FalloutMacros {
 			}).render(true);
 		});
 	}
+
+
+	static async newScene() {
+		const macroName = game.i18n.localize("FALLOUT.MACRO.NewScene.name");
+
+		if (!game.user.isGM) {
+			return ui.notifications.error(
+				game.i18n.format("FALLOUT.MACRO.Error.GameMasterRoleRequired", {
+					macro: macroName,
+				})
+			);
+		}
+		else {
+			try {
+				const players = game.users.players;
+
+				for (const player of players) {
+					const actor = player.character;
+
+					if (actor) actor.updateAddictions();
+				}
+
+				return ui.notifications.info(
+					game.i18n.format("FALLOUT.MACRO.Success", {
+						macro: macroName,
+					})
+				);
+			}
+			catch(e) {
+				return ui.notifications.error(
+					game.i18n.format("FALLOUT.MACRO.Error.CaughtError", {
+						macro: macroName,
+						error: e,
+					})
+				);
+			}
+		}
+	}
+
 
 	static async newSession() {
 		const macroName = game.i18n.localize("FALLOUT.MACRO.NewSession.name");
@@ -155,6 +196,7 @@ export default class FalloutMacros {
 			}
 		}
 	}
+
 
 	static async partySleep() {
 		const macroName = game.i18n.localize("FALLOUT.APP.PartySleep.title");
