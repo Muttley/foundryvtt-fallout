@@ -30,6 +30,7 @@
 - [#499] Merge new French translation updates from Crowdin
 - [#506] Update source titles to include newly released books/PDFs
 - [#511] Migrate Active Effects interfaces to use the non-legacy interfaces
+- [#534] Merge new French translation updates from Crowdin
 
 *Please welcome QckSilverDragon to the Fallout system development team*
 

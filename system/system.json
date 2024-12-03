@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout: The Roleplaying Game",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "11.13.0",
+	"version": "11.14.0",
 	"compatibility": {
 		"minimum": "12",
 		"verified": "12"
@@ -16,6 +16,11 @@
 		},
 		{
 			"name": "HappySteve"
+		},
+		{
+			"name": "QckSilverDragon",
+			"discord": "qcksilverdragon",
+			"email": "qcksilverdragon@gmail.com"
 		}
 	],
 	"esmodules": [
