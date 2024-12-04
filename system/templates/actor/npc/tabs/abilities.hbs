@@ -3,13 +3,11 @@
 		<div class="left-column">
 			{{> actor/npc/partials/attributes}}
 
-			{{#if isVehicle}}
 			<div class="flexrow resource-row">
 				{{> actor/_shared-partials/npc_hp }}
 				{{> actor/_shared-partials/npc_initiative }}
 				{{> actor/_shared-partials/npc_defense }}
 			</div>
-			{{/if}}
 
 			<div class="flexrow resource-row">
 				{{> actor/npc/partials/carry-weight }}
