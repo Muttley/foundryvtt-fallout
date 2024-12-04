@@ -1,3 +1,10 @@
+# v11.14.1
+
+#### Bugs
+- [#537] NPCs missing Health, Initiative and Defense fields
+
+---
+
 # v11.14.0
 
 #### Enhancements
