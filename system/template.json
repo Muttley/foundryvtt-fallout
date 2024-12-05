@@ -1142,7 +1142,38 @@
 				"max": 1,
 				"value": 0
 			},
-			"requirements": "",
+			"requirements": {
+				"legacy": "",
+				"attributes": {
+					"agi": {
+						"value": 0
+					},
+					"cha": {
+						"value": 0
+					},
+					"end": {
+						"value": 0
+					},
+					"int": {
+						"value": 0
+					},
+					"luc": {
+						"value": 0
+					},
+					"per": {
+						"value": 0
+					},
+					"str": {
+						"value": 0
+					}
+				},
+				"noCompanion": false,
+				"notGhoul": false,
+				"notHuman": false,
+				"notRadiationImmune": false,
+				"notRobot": false,
+				"notSupermutant": false
+			},
 			"templates": [
 				"base"
 			]

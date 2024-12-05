@@ -1,0 +1,141 @@
+<div class="tab requirements" data-group="primary" data-tab="requirements">
+
+	{{> item/perk/attributes}}
+
+	<section class="grid-2-columns">
+		<div class="left-column">
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.LEVEL.Level"}}
+				</label>
+
+				<div class="flexrow align-right">
+					<input class="text-center num-short-2"
+						   name="system.rank.levelStart"
+						   type="number"
+						   value="{{system.rank.levelStart}}" />
+				</div>
+			</div>
+
+			{{#if (gt system.rank.max 1)}}
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.TEMPLATES.LevelIncrease"}}
+				</label>
+
+				<div class="flexrow align-right">
+					<input class="text-center num-short-2"
+						   name="system.rank.value"
+						   type="number"
+						   value="{{system.rank.levelIncrease}}" />
+				</div>
+			</div>
+			{{/if}}
+
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.TEMPLATES.Ranks"}}
+				</label>
+
+				<div class="flexrow align-right">
+					<div>
+						<label class="field-label">
+							{{localize "FALLOUT.TEMPLATES.current"}}
+							&nbsp;
+						</label>
+
+						<input class="text-center num-short-2"
+							   name="system.rank.value"
+							   type="number"
+							   value="{{system.rank.value}}" />
+
+						<label class="field-label">
+							&nbsp;
+							{{localize "FALLOUT.TEMPLATES.max"}}
+							&nbsp;
+						</label>
+
+						<input class="text-center num-short-2"
+							   name="system.rank.max"
+							   type="number"
+							   value="{{system.rank.max}}" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="right-column">
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirements.notGhoul">
+					{{localize "FALLOUT.Item.Perk.not_ghoul"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirements.notGhoul"
+					   type="checkbox"
+					   {{checked system.requirements.notGhoul}} />
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirements.notHuman">
+					{{localize "FALLOUT.Item.Perk.not_human"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirements.notHuman"
+					   type="checkbox"
+					   {{checked system.requirements.notHuman}} />
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirements.notRobot">
+					{{localize "FALLOUT.Item.Perk.not_robot"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirements.notRobot"
+					   type="checkbox"
+					   {{checked system.requirements.notRobot}} />
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirements.notSupermutant">
+					{{localize "FALLOUT.Item.Perk.not_supermutant"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirements.notSupermutant"
+					   type="checkbox"
+					   {{checked system.requirements.notSupermutant}} />
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirements.notRadiationImmune">
+					{{localize "FALLOUT.Item.Perk.not_radiation_immune"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirements.notRadiationImmune"
+					   type="checkbox"
+					   {{checked system.requirements.notRadiationImmune}} />
+			</div>
+		</div>
+	</section>
+
+	<div class="flexrow resource-row align-mid">
+		<label class="field-label">
+			{{localize "FALLOUT.Item.Perk.legacy"}}
+		</label>
+
+		<input type="text"
+			   data-tooltip="{{localize 'FALLOUT.Item.Perk.Warning.legacy'}}"
+			   name="system.requirements.legacy"
+			   value="{{system.requirements.legacy}}">
+	</div>
+</div>
