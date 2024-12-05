@@ -1,0 +1,80 @@
+<div class="tab requirements" data-group="primary" data-tab="requirements">
+
+	{{> item/perk/attributes}}
+
+	<section class="grid-2-columns">
+		<div class="left-column">
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.LEVEL.Level"}}
+				</label>
+
+				<div class="flexrow align-right">
+					<input class="text-center num-short-2"
+						   name="system.rank.levelStart"
+						   type="number"
+						   value="{{system.rank.levelStart}}" />
+				</div>
+			</div>
+
+			{{#if (gt system.rank.max 1)}}
+			<div class="flexrow resource-row align-mid">
+				<div class="flexrow align-right">
+					<label class="field-label">
+						{{localize "FALLOUT.TEMPLATES.LevelIncrease"}}
+						&nbsp;
+					</label>
+
+					<input class="text-center num-short-2"
+						   name="system.rank.value"
+						   type="number"
+						   value="{{system.rank.levelIncrease}}" />
+				</div>
+			</div>
+			{{/if}}
+		</div>
+
+
+		<div class="right-column">
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.TEMPLATES.Ranks"}}
+				</label>
+
+				<div class="flexrow align-right">
+					<div>
+						<label class="field-label">
+							{{localize "FALLOUT.TEMPLATES.current"}}
+							&nbsp;
+						</label>
+
+						<input class="text-center num-short-2"
+							   name="system.rank.value"
+							   type="number"
+							   value="{{system.rank.value}}" />
+
+						<label class="field-label">
+							&nbsp;
+							{{localize "FALLOUT.TEMPLATES.max"}}
+							&nbsp;
+						</label>
+
+						<input class="text-center num-short-2"
+							   name="system.rank.max"
+							   type="number"
+							   value="{{system.rank.max}}" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--<div class="flexrow resource-row align-mid">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Requirements"}}
+		</label>
+
+		<input type="text"
+			   name="system.requirements.legacy"
+			   value="{{system.requirements.legacy}}">
+	</div>-->
+</div>
