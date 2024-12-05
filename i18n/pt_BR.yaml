@@ -114,8 +114,8 @@ FALLOUT.BodyTypes.robot.label: Robô
 FALLOUT.BodyTypes.robot.legL: Braço 3
 FALLOUT.BodyTypes.robot.legR: Corpo
 FALLOUT.BodyTypes.robot.torso: Corpo
-FALLOUT.BodyTypes.vehicle.chassis: Chassis
-FALLOUT.BodyTypes.vehicle.engine: Engine
+FALLOUT.BodyTypes.vehicle.chassis: Chassi
+FALLOUT.BodyTypes.vehicle.engine: Motor
 FALLOUT.BodyTypes.vehicle.engineL: Left Engine
 FALLOUT.BodyTypes.vehicle.engineR: Right Engine
 FALLOUT.BodyTypes.vehicle.weaponDG: Weapon (Door Gun)
