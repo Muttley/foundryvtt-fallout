@@ -1,4 +1,7 @@
-# vX.X.X
+# v11.14.2
+
+#### Bugs
+- [#543] Trying to load non-existant template
 
 #### Chores
 - [#540] Merge new French and Portuguese/Brazilian translation updates from Crowdin
