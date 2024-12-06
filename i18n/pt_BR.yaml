@@ -334,7 +334,7 @@ FALLOUT.SKILL.Throwing: Arremesso
 FALLOUT.SKILL.Unarmed: Desarmado
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Contos Impressionantemente Incríveis, Edição No. 2 - Totalmente Operacional"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Contos Impressionantemente Incríveis, Edição No. 4 - Caçado!"
-FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Contos Impressionantemente Incríveis, Edição No. 6 - No Fundo do Abismo!"
 FALLOUT.SOURCE_TITLE.aat_one_to_four: "Contos Impressionantemente Incríveis, Edição #1-4 - Edição Bônus #5 dentro!"
 FALLOUT.SOURCE_TITLE.aat_orange_sky: "Contos Impressionantemente Incríveis, Edição No. 1 - Céu Alaranjado"
 FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Contos Impressionantemente Incríveis, Edição No. 3 - Confronto em Skull Canyon"
@@ -560,10 +560,10 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque inflig
 FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá realizar suas ações normais no próximo turno. Um personagem ou criatura atordoada ainda pode gastar PA para realizar ações adicionais normalmente.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante inflingir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste VIG + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de HP ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano por cada Efeito rolado.
-FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
-FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
-FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
-FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: O veículo pode transportar até X kgs de carga adicional.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: O veículo é maciço e desajeitado, e aumenta os testes de dificuldade para se mover em +1.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: O veículo é completamente fechado, protegendo a tripulação e os passageiros dentro dele. A tripulação e os passageiros não podem ser alvos de ataques de fora do veículo, mas também não podem usar seu próprio armamento. Os passageiros e a tripulação dentro do veículo não sofrem dano de Radiação de efeitos ambientais.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: O passageiro e a tripulação de um veículo exposto podem ser alvos de ataques de fora do veículo e podem atacar com suas próprias armas.
 FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
 FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
