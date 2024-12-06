@@ -244,7 +244,7 @@ FALLOUT.MACRO.Error.GameMasterRoleRequired: La macro '{macro}' nécessite que vo
 FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: Pour exécuter cette macro les joueurs doivent avoir un personnage assigné.
 FALLOUT.MACRO.Error.NoTokensSelected: Vous devez avoir au moins un token sélectionné lors de l'exécution de cette macro.
 FALLOUT.MACRO.Error.TooManyTokensSelected: Vous ne pouvez avoir qu'un maximum de {max} tokens sélectionnés lors de l'exécution de cette macro.
-FALLOUT.MACRO.NewScene.name: New Scene
+FALLOUT.MACRO.NewScene.name: Nouvelle scène
 FALLOUT.MACRO.NewSession.name: Nouvelle session
 FALLOUT.MACRO.Success: La macro '{macro}' s'est exécutée avec succès
 FALLOUT.MIGRATION.begin_migration: Effectuer des mises à niveau de données pour Fallout 2d20
@@ -437,7 +437,7 @@ FALLOUT.TEMPLATES.DiseaseIncubating: Incubation
 FALLOUT.TEMPLATES.DiseaseProgress: Jour {day} de {days}
 FALLOUT.TEMPLATES.Duration: Durée
 FALLOUT.TEMPLATES.Edit_Item: Editer Objet
-FALLOUT.TEMPLATES.Edit: Edit
+FALLOUT.TEMPLATES.Edit: Éditer
 FALLOUT.TEMPLATES.Effect: Effet
 FALLOUT.TEMPLATES.Effects: Effets
 FALLOUT.TEMPLATES.Encumbrance_Level: Niveau d'Encombrement
@@ -565,13 +565,13 @@ FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: Le véhicule est lourd et non réact
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: Le véhicule est entièrement fermé, protégeant les membres d'équipage et les passagers à l'intérieur. Ils ne peuvent pas être visés par des attaques de l'extérieur du véhicule, mais ne peuvent pas non plus utiliser leur propre arme. Ils ne subissent pas non plus les radiations dû à l'environnement.
 FALLOUT.TOOLTIPS.VehicleQuality.exposed: Le passager et l'équipage d'un véhicule exposé peuvent être pris pour cible par des attaques de l'extérieur du véhicule et peuvent attaquer avec leurs propres armes.
 FALLOUT.TOOLTIPS.VehicleQuality.flying: Le véhicule vole à travers les airs, à travers des zones « vides » au-dessus du sol du champ de bataille. Si le véhicule échappe à tout contrôle, lancez 1CD – il tombe un certain nombre de zones égal au nombre lancé, et s'écrasera si cela le ramenait au niveau du sol ou si un effet est obtenu. Il s'écrasera également si la vitesse du véhicule est réduite à zéro. Si l'avion s'écrase, il s'endommagera à hauteur de 8 Dc Perforant 2 de dégats physique.
-FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
-FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
-FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
-FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: Le véhicule est puissant et finement réglé. Le pilote peut dépenser 2 PA après un test réussi pour déplacer le véhicule d'une zone supplémentaire. Tout test pour réparer le véhicule augmente de +1 la difficulté, en raison de sa nature finement ajustée.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Effectuer des tests pour réparer les véhicules robustes réduit de 1 la difficulté.
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Un véhicule à siège unique est conçu pour être conduit par un seul pilote, en assumant également le rôle de fusilleur sans la pénalité normale.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: Le véhicule circule seulement sur l'eau et ne peut absolument pas se déplacer le long du sol. Si ce véhicule subit un coup critique sur le châssis, il commence à prendre de l'eau, et coulera après un nombre de tours égal au double de l'échelle du véhicule.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: L'arme utilise beaucoup plus de munitions que la plupart des armes. A chaque tir l'arme dépense X munitions à la place d'une seule. De plus chaque tir supplémentaire coute X munitions toujours limité par la cadence de tir. Cela compte également pour En Rafale.
-FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.
+FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Quand vous lancez une attaque avec cette arme sous l'eau, l'attaque ne subit pas de malus normaux aux attaques sous-marines.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quand vous portez une attaque avec une arme à Zone d'impact, vous ne prenez pas pour cible un seul adversaire. Au lieu de cela, choisissez une seule zone dans votre champ de vision et faites le test de compétence approprié pour attaquer, avec une difficulté de base de 2 (ajustée par la portée normalement). Si vous réussissez, toutes les créatures (et autres cibles pouvant subir des dégâts) présentes dans la zone subissent les dégâts de l'arme. Si vous échouez, votre attaque mal ciblée est moins efficace: ne lancez que la moitié des @fos[DC] de l'arme pour déterminer les dégâts infligés aux créatures dans la zone ciblée et ignorez les effets de dégâts normaux de l'arme."
 FALLOUT.TOOLTIPS.WeaponQuality.bombard: "L'arme délivre une série d'explosions sur une grande zone. Cela fonctionne comme la qualité Zone d'impact à une exception près : vous pouvez dépenser 2 munitions pour cibler une zone supplémentaire adjacente. Le tout limité par la cadence de tir."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Une arme de combat rapproché est facile à utiliser à proximité de l'ennemi et ne subit pas d'augmentation de difficulté si elle est employée quand un ennemi est à portée de main.
