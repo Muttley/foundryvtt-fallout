@@ -180,7 +180,8 @@ export default class FalloutPartySleep extends Application {
 
 		fallout.chat.renderPartySleepMessage({
 			title: this.title,
-			body: game.i18n.format("FALLOUT.APP.PartySleep.chat_message",
+			body: game.i18n.format(
+				"FALLOUT.APP.PartySleep.chat_message",
 				{
 					duration: this._durationText(),
 				}

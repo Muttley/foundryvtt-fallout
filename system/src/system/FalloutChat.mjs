@@ -26,13 +26,6 @@ export default class FalloutChat {
 
 		ChatMessage.applyRollMode(chatData, mode);
 
-		// if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-		// 	chatData.whisper = ChatMessage.getWhisperRecipients("GM");
-		// }
-		// else if (chatData.rollMode === "selfroll") {
-		// 	chatData.whisper = [game.user];
-		// }
-
 		await ChatMessage.create(chatData);
 	}
 
@@ -60,6 +53,13 @@ export default class FalloutChat {
 	static async renderPartySleepMessage(data, mode) {
 		this._renderChatMessage(null, data,
 			"systems/fallout/templates/chat/party-sleep.hbs",
+			mode
+		);
+	}
+
+	static async renderResetLuckPointsMessage(data, mode) {
+		this._renderChatMessage(null, data,
+			"systems/fallout/templates/chat/reset-luck-points.hbs",
 			mode
 		);
 	}

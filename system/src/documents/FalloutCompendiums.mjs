@@ -61,7 +61,7 @@ export default class FalloutCompendiums {
 			fallout.logger.debug(`[FalloutCompendiums] ${docs.length} documents remain after applying source filters`);
 		}
 		else {
-			fallout.logger.debug("[FalloutCompendiums] Compendium documents will unfiltered");
+			fallout.logger.debug("[FalloutCompendiums] Compendium documents will be unfiltered");
 		}
 
 		// De-duplicate and sort the list alphabetically

@@ -212,6 +212,63 @@ export default class FalloutMacros {
 			return new fallout.apps.FalloutPartySleep().render(true);
 		}
 	}
+
+
+	static async resetLuckPoints() {
+		const macroName = game.i18n.localize("FALLOUT.MACRO.ResetLuckPoints.name");
+
+		if (!game.user.isGM) {
+			return ui.notifications.error(
+				game.i18n.format("FALLOUT.MACRO.Error.GameMasterRoleRequired", {
+					macro: macroName,
+				})
+			);
+		}
+		else {
+			try {
+				const affectedActors = [];
+				for (const actor of fallout.utils.getPlayerCharacters()) {
+					const newLuckPoints =
+						actor.system?.attributes?.luc?.value ?? 0;
+
+					affectedActors.push(
+						{
+							name: actor.name,
+							newLuckPoints,
+						}
+					);
+
+					actor.update({
+						"system.luckPoints": newLuckPoints,
+					});
+				}
+
+				if (affectedActors.length > 0) {
+					fallout.chat.renderResetLuckPointsMessage(
+						{
+							title: game.i18n.localize("FALLOUT.MACRO.ResetLuckPoints.name"),
+							actors: affectedActors,
+						},
+						CONST.DICE_ROLL_MODES.PUBLIC
+					);
+				}
+
+				return ui.notifications.info(
+					game.i18n.format("FALLOUT.MACRO.Success", {
+						macro: macroName,
+					})
+				);
+			}
+			catch(e) {
+				return ui.notifications.error(
+					game.i18n.format("FALLOUT.MACRO.Error.CaughtError", {
+						macro: macroName,
+						error: e,
+					})
+				);
+			}
+		}
+	}
 }
 
 export async function createItemMacro(data, slot) {

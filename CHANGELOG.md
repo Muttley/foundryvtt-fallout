@@ -1,5 +1,8 @@
 # v11.14.2
 
+#### Enhancements
+- [#544] Add new GM only macro for resetting player luck points
+
 #### Bugs
 - [#543] Trying to load non-existant template
 
