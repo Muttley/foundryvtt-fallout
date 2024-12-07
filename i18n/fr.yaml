@@ -246,6 +246,8 @@ FALLOUT.MACRO.Error.NoTokensSelected: Vous devez avoir au moins un token sélect
 FALLOUT.MACRO.Error.TooManyTokensSelected: Vous ne pouvez avoir qu'un maximum de {max} tokens sélectionnés lors de l'exécution de cette macro.
 FALLOUT.MACRO.NewScene.name: Nouvelle scène
 FALLOUT.MACRO.NewSession.name: Nouvelle session
+FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage: now has {luckPoints} luck points
+FALLOUT.MACRO.ResetLuckPoints.name: Reset Luck Points
 FALLOUT.MACRO.Success: La macro '{macro}' s'est exécutée avec succès
 FALLOUT.MIGRATION.begin_migration: Effectuer des mises à niveau de données pour Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Application des mises à jour pour le schéma de Fallout 2d20 v{version}
