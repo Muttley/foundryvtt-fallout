@@ -784,6 +784,11 @@ export default class FalloutActor extends Actor {
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
+		// If prototypeToken already exists in data then we are copying an
+		// actor and really shouldn't mess with any values
+		//
+		if (data.prototypeToken) return;
+
 		const update = {};
 
 		const prototypeToken = {

@@ -5,6 +5,7 @@
 
 #### Bugs
 - [#543] Trying to load non-existant template
+- [#546] Don't override token properties when duplicating an Actor
 
 #### Chores
 - [#540] Merge new French and Portuguese/Brazilian translation updates from Crowdin
