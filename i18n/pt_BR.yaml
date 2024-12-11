@@ -114,26 +114,26 @@ FALLOUT.BodyTypes.robot.label: Robô
 FALLOUT.BodyTypes.robot.legL: Braço 3
 FALLOUT.BodyTypes.robot.legR: Corpo
 FALLOUT.BodyTypes.robot.torso: Corpo
-FALLOUT.BodyTypes.vehicle.chassis: Chassis
-FALLOUT.BodyTypes.vehicle.engine: Engine
-FALLOUT.BodyTypes.vehicle.engineL: Left Engine
-FALLOUT.BodyTypes.vehicle.engineR: Right Engine
-FALLOUT.BodyTypes.vehicle.weaponDG: Weapon (Door Gun)
-FALLOUT.BodyTypes.vehicle.weaponNG: Weapon (Nose Guns)
-FALLOUT.BodyTypes.vehicle.wheelF: Front Wheel
-FALLOUT.BodyTypes.vehicle.wheelFL: Front Left Wheel
-FALLOUT.BodyTypes.vehicle.wheelFR: Front Right Wheel
-FALLOUT.BodyTypes.vehicle.wheelML: Middle Left Wheel
-FALLOUT.BodyTypes.vehicle.wheelMR: Middle Right Wheel
-FALLOUT.BodyTypes.vehicle.wheelR: Rear Wheel
-FALLOUT.BodyTypes.vehicle.wheelRL: Rear Left Wheel
-FALLOUT.BodyTypes.vehicle.wheelRL1: Rear Left Wheel 1
-FALLOUT.BodyTypes.vehicle.wheelRL2: Rear Left Wheel 2
-FALLOUT.BodyTypes.vehicle.wheelRR: Rear Right Wheel
-FALLOUT.BodyTypes.vehicle.wheelRR1: Rear Right Wheel 1
-FALLOUT.BodyTypes.vehicle.wheelRR2: Rear Right Wheel 2
-FALLOUT.BodyTypes.vehicle.wingL: Left Wing
-FALLOUT.BodyTypes.vehicle.wingR: Right Wing
+FALLOUT.BodyTypes.vehicle.chassis: Chassi
+FALLOUT.BodyTypes.vehicle.engine: Motor
+FALLOUT.BodyTypes.vehicle.engineL: Motor Esquerdo
+FALLOUT.BodyTypes.vehicle.engineR: Motor Direito
+FALLOUT.BodyTypes.vehicle.weaponDG: Armamento (Arma Lateral)
+FALLOUT.BodyTypes.vehicle.weaponNG: Armamento (Armas Frontais)
+FALLOUT.BodyTypes.vehicle.wheelF: Roda Frontal
+FALLOUT.BodyTypes.vehicle.wheelFL: Roda Frontal Esquerda
+FALLOUT.BodyTypes.vehicle.wheelFR: Roda Frontal Direita
+FALLOUT.BodyTypes.vehicle.wheelML: Roda Central Esquerda
+FALLOUT.BodyTypes.vehicle.wheelMR: Roda Central Direita
+FALLOUT.BodyTypes.vehicle.wheelR: Roda Traseira
+FALLOUT.BodyTypes.vehicle.wheelRL: Roda Traseira Esquerda
+FALLOUT.BodyTypes.vehicle.wheelRL1: Roda Traseira Esquerda 1
+FALLOUT.BodyTypes.vehicle.wheelRL2: Roda Traseira Esquerda 2
+FALLOUT.BodyTypes.vehicle.wheelRR: Roda Traseira Direita
+FALLOUT.BodyTypes.vehicle.wheelRR1: Roda Traseira Direita 1
+FALLOUT.BodyTypes.vehicle.wheelRR2: Roda Traseira Direita 2
+FALLOUT.BodyTypes.vehicle.wingL: Asa Esquerda
+FALLOUT.BodyTypes.vehicle.wingR: Asa Direita
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} se tornou viciado em {itemName}"
 FALLOUT.CHAT_MESSAGE.addiction.title: Vício em Drogas
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} se tornou um alcoólatra ao consumir {itemName}"
@@ -183,9 +183,9 @@ FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
 FALLOUT.EffectToggle: Alternar Efeito
 FALLOUT.equipped: Equipado
-FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
-FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
-FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
+FALLOUT.ERRORS.NoCharacterTokenSelected: Nenhum token de personagem selecionado
+FALLOUT.ERRORS.NoPLayerCharacterAssigned: Esse jogador não possui um personagem principal designado
+FALLOUT.ERRORS.NoUsableCharacterFound: Nenhum personagem usável encontrado para essa ação
 FALLOUT.ERRORS.ThisWeaponIsBroken: Esta arma está quebrada e não pode mais ser usada.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o Atributo usado nessa arma.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
@@ -244,8 +244,10 @@ FALLOUT.MACRO.Error.GameMasterRoleRequired: O macro '{macro}' necessita que voc�
 FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: Para executar este macro jogadores devem ter um caractere atribuído.
 FALLOUT.MACRO.Error.NoTokensSelected: Você deve ter pelo menos um token selecionado ao executar este macro.
 FALLOUT.MACRO.Error.TooManyTokensSelected: Você só pode ter um máximo de {max} tokens selecionados ao executar este macro.
-FALLOUT.MACRO.NewScene.name: New Scene
+FALLOUT.MACRO.NewScene.name: Nova Cena
 FALLOUT.MACRO.NewSession.name: Nova Sessão
+FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage: now has {luckPoints} luck points
+FALLOUT.MACRO.ResetLuckPoints.name: Reset Luck Points
 FALLOUT.MACRO.Success: O macro '{macro}' foi usado com sucesso
 FALLOUT.MIGRATION.begin_migration: Realizando atualizações de arquivos para Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Aplicando atualizações para Fallout 2d20 schema v{version}
@@ -334,7 +336,7 @@ FALLOUT.SKILL.Throwing: Arremesso
 FALLOUT.SKILL.Unarmed: Desarmado
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Contos Impressionantemente Incríveis, Edição No. 2 - Totalmente Operacional"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Contos Impressionantemente Incríveis, Edição No. 4 - Caçado!"
-FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Contos Impressionantemente Incríveis, Edição No. 6 - No Fundo do Abismo!"
 FALLOUT.SOURCE_TITLE.aat_one_to_four: "Contos Impressionantemente Incríveis, Edição #1-4 - Edição Bônus #5 dentro!"
 FALLOUT.SOURCE_TITLE.aat_orange_sky: "Contos Impressionantemente Incríveis, Edição No. 1 - Céu Alaranjado"
 FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Contos Impressionantemente Incríveis, Edição No. 3 - Confronto em Skull Canyon"
@@ -437,7 +439,7 @@ FALLOUT.TEMPLATES.DiseaseIncubating: Incubando
 FALLOUT.TEMPLATES.DiseaseProgress: Dia {day} de {days}
 FALLOUT.TEMPLATES.Duration: Duração
 FALLOUT.TEMPLATES.Edit_Item: Editar Item
-FALLOUT.TEMPLATES.Edit: Edit
+FALLOUT.TEMPLATES.Edit: Editar
 FALLOUT.TEMPLATES.Effect: Efeito
 FALLOUT.TEMPLATES.Effects: Efeitos
 FALLOUT.TEMPLATES.Encumbrance_Level: Nível de Sobrecarga
@@ -534,7 +536,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Usar Inteligência
 FALLOUT.TEMPLATES.Use_Luck: Usar Sorte
 FALLOUT.TEMPLATES.Use_Perception: Usar Percepção
 FALLOUT.TEMPLATES.Use_Strength: Usar Força
-FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
+FALLOUT.TEMPLATES.VEHICLE_QUALITIES: QUALIDADES DOS VEÍCULOS
 FALLOUT.TEMPLATES.Wealth: Riqueza
 FALLOUT.TEMPLATES.Weapon_Qualities: Qualidades da Arma
 FALLOUT.TEMPLATES.WEAPON_QUALITIES: QUALIDADES DA ARMA
@@ -560,18 +562,18 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque inflig
 FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá realizar suas ações normais no próximo turno. Um personagem ou criatura atordoada ainda pode gastar PA para realizar ações adicionais normalmente.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante inflingir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste VIG + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de HP ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano por cada Efeito rolado.
-FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
-FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
-FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
-FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
-FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
-FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
-FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
-FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
-FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: O veículo pode transportar até X kgs de carga adicional.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: O veículo é maciço e desajeitado, e aumenta os testes de dificuldade para se mover em +1.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: O veículo é completamente fechado, protegendo a tripulação e os passageiros dentro dele. A tripulação e os passageiros não podem ser alvos de ataques de fora do veículo, mas também não podem usar seu próprio armamento. Os passageiros e a tripulação dentro do veículo não sofrem dano de Radiação de efeitos ambientais.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: O passageiro e a tripulação de um veículo exposto podem ser alvos de ataques de fora do veículo e podem atacar com suas próprias armas.
+FALLOUT.TOOLTIPS.VehicleQuality.flying: O veículo voa pelo ar, através de zonas "vazias" acima do nível do solo do campo de batalha. Se o veículo sair do controle, role 1DC – ele cai um número de zonas igual ao número rolado, e irá colidir se isso o levar ao nível do solo ou se um Efeito for rolado. Ele também irá colidir se a Velocidade do veículo for reduzida a 0. Se a aeronave colidir, ela sofre 8DC com Perfurante 2 de dano Físico.
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: O veículo é poderoso e bem ajustado. O piloto pode gastar 2 PA após um teste bem-sucedido para mover o veículo para mover 1 zona adicional. Qualquer teste para consertar o veículo aumenta a dificuldade em +1, devido à sua natureza bem ajustada.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Os testes de operação para reparar veículos Robustos têm a dificuldade reduzida em 1.
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Um veículo de assento único é projetado para ser operado por um único piloto, que também assume a função de artilheiro, sem a penalidade normal.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: O veículo viaja somente na água e não pode viajar pelo chão. Se este veículo sofrer um golpe crítico no Chassi, água começará a entrar nele e afundará após um número de rodadas igual ao dobro da Escala do veículo.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você realizar a Ação Menor de Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 @fos[DC] por PA gasto ao dano do ataque. Se você adicionar dano dessa maneira, você não pode gastar munição para adicionar mais dano. Uma arma não pode ser Precisa e Imprecisa.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: A arma consome munição a uma taxa muito maior do que outras armas. Cada vez que a arma é disparada, ela gasta X munição, em vez de 1. Além disso, dano extra requer gastar X munição por +1CD, com um número máximo de CD igual à Cadência de Tiro da arma. Usos adicionais de munição, como o efeito de dano Rajada, também gastam X munição para cada 1 munição que normalmente seria gasta.
-FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.
+FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Quando você faz um ataque com esta arma enquanto estiver debaixo d'água, o ataque não sofre as penalidades normais de ataques subaquáticos.
 FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quando você ataca com uma arma de Explosão, você não atinge um único oponente. Em vez disso, selecione uma única zona que você possa ver e faça o teste de habilidade apropriado para atacar, com uma dificuldade básica de 2 (ajustada para o alcance normalmente). Se você tiver sucesso, todas as criaturas (e outros alvos passíveis de dano) naquela zona sofrem o dano da arma. Se você falhar, seu ataque mal direcionado será menos eficaz: role apenas metade do @fos[DC] da arma para determinar o dano infligido às criaturas na zona alvo e ignore os efeitos de dano normais da arma."
 FALLOUT.TOOLTIPS.WeaponQuality.bombard: "A arma pode causar uma série de explosões em uma ampla área. Funciona de forma idêntica à qualidade Explosão, com uma adição: quando um ataque é feito com a arma, você pode gastar munição adicional para atingir zonas adicionais. Cada zona adicional requer que 2 munições sejam gastas e zonas adicionais devem ser adjacentes à zona alvo inicial. A munição gasta para atingir zonas adicionais é limitada pela Cadência de Tiro da arma."
 FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Uma arma Curto Alcance é fácil de usar de perto, e não sofre nenhum aumento de dificuldade por ser usada quando está ao alcance de um inimigo.
@@ -631,7 +633,7 @@ FALLOUT.UI.ROBOT_MODULES: Módulos Robóticos
 FALLOUT.UI.SaveChanges: Salvar Mudanças
 FALLOUT.UI.Special_Abilities: Habilidades Especiais
 FALLOUT.UI.SPECIAL_ABILITY: HABILIDADES ESPECIAIS
-FALLOUT.UI.speed: Speed
+FALLOUT.UI.speed: Velocidade
 FALLOUT.UI.stashed: Guardado
 FALLOUT.UI.Type: Tipo
 FALLOUT.UI.UNSORTED: Não Triado
@@ -639,27 +641,27 @@ FALLOUT.UI.WEAPON_MODS: Modificações de Arma
 FALLOUT.UI.Weight: Peso
 FALLOUT.UI.Yes: Yes
 FALLOUT.VEHICLE_TYPES.apc: APC
-FALLOUT.VEHICLE_TYPES.armored: Armored
-FALLOUT.VEHICLE_TYPES.bus: Bus
-FALLOUT.VEHICLE_TYPES.carTruck: Car/Truck
-FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
-FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.armored: Blindado
+FALLOUT.VEHICLE_TYPES.bus: Ônibus
+FALLOUT.VEHICLE_TYPES.carTruck: Carro/Caminhão
+FALLOUT.VEHICLE_TYPES.motorcycle: Motocicleta
+FALLOUT.VEHICLE_TYPES.sportsCar: Carro Esportivo
 FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
-FALLOUT.VEHICLE.cover: Cover
-FALLOUT.VEHICLE.impact: Impact
-FALLOUT.VEHICLE.passengers: Passengers
-FALLOUT.VEHICLE.scale: Scale
-FALLOUT.VEHICLE.travel_speed: Travel
-FALLOUT.VEHICLE.vehicleQuality.cargo_x: Cargo
-FALLOUT.VEHICLE.vehicleQuality.cumbersome: Cumbersome
-FALLOUT.VEHICLE.vehicleQuality.enclosed: Enclosed
-FALLOUT.VEHICLE.vehicleQuality.exposed: Exposed
-FALLOUT.VEHICLE.vehicleQuality.flying: Flying
-FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
-FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
-FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
-FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
-FALLOUT.VEHICLE.zone_speed: Zone
+FALLOUT.VEHICLE.cover: Cobertura
+FALLOUT.VEHICLE.impact: Impacto
+FALLOUT.VEHICLE.passengers: Passageiros
+FALLOUT.VEHICLE.scale: Escala
+FALLOUT.VEHICLE.travel_speed: Viagem
+FALLOUT.VEHICLE.vehicleQuality.cargo_x: Carga
+FALLOUT.VEHICLE.vehicleQuality.cumbersome: Desajeitado
+FALLOUT.VEHICLE.vehicleQuality.enclosed: Fechado
+FALLOUT.VEHICLE.vehicleQuality.exposed: Exposto
+FALLOUT.VEHICLE.vehicleQuality.flying: Voador
+FALLOUT.VEHICLE.vehicleQuality.high_performance: Alta Performance
+FALLOUT.VEHICLE.vehicleQuality.rugged: Robusto
+FALLOUT.VEHICLE.vehicleQuality.single_seat: Assento Único
+FALLOUT.VEHICLE.vehicleQuality.watercraft: Embarcações
+FALLOUT.VEHICLE.zone_speed: Zona
 FALLOUT.WEAPONS.damageEffect.arc: Arco
 FALLOUT.WEAPONS.damageEffect.breaking: Quebrar
 FALLOUT.WEAPONS.damageEffect.burst: Rajada
@@ -677,7 +679,7 @@ FALLOUT.WEAPONS.damageType.poison: Veneno
 FALLOUT.WEAPONS.damageType.radiation: Radiação
 FALLOUT.WEAPONS.weaponQuality.accurate: Precisa
 FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Come-Bala
-FALLOUT.WEAPONS.weaponQuality.aquatic: Aquatic
+FALLOUT.WEAPONS.weaponQuality.aquatic: Aquático
 FALLOUT.WEAPONS.weaponQuality.blast: Explosão
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombardeio
 FALLOUT.WEAPONS.weaponQuality.close_quarters: Curto Alcance
@@ -719,7 +721,7 @@ TYPES.Actor.npc: NPJ
 TYPES.Actor.robot: Robô
 TYPES.Actor.scavenging_location: Local de Pilhagem
 TYPES.Actor.settlement: Assentamento
-TYPES.Actor.vehicle: Vehicle
+TYPES.Actor.vehicle: Veículo
 TYPES.Item.addiction: Vício
 TYPES.Item.ammo: Munição
 TYPES.Item.apparel_mod: Modificação de Visual

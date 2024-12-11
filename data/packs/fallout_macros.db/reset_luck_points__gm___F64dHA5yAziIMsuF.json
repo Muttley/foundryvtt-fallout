@@ -1,0 +1,11 @@
+{
+	"_id": "F64dHA5yAziIMsuF",
+	"_key": "!macros!F64dHA5yAziIMsuF",
+	"author": "bomrP4c8hBGiCnut",
+	"command": "/**\n ***************************************************************\n * This macro can be used to reset the luck points of all\n * characters set as the user's main character.\n *\n * NOTE: Only users with the Game Master user role can run this\n * macro.\n **************************************************************/\n\nfallout.macros.resetLuckPoints();",
+	"folder": null,
+	"img": "systems/fallout/assets/icons/macro/reset-luck-points.svg",
+	"name": "Reset Luck Points (GM)",
+	"scope": "global",
+	"type": "script"
+}
