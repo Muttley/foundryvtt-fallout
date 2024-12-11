@@ -1136,43 +1136,43 @@
 			"skills": ""
 		},
 		"perk": {
+			"isCompanion": false,
 			"rank": {
-				"levelIncrease": 0,
-				"levelStart": 1,
 				"max": 1,
 				"value": 0
 			},
 			"requirements": {
-				"legacy": "",
+				"level": 1,
+				"levelIncrease": 0,
 				"attributes": {
-					"agi": {
-						"value": 0
-					},
-					"cha": {
-						"value": 0
-					},
-					"end": {
-						"value": 0
-					},
-					"int": {
-						"value": 0
-					},
-					"luc": {
+					"str": {
 						"value": 0
 					},
 					"per": {
 						"value": 0
 					},
-					"str": {
+					"end": {
+						"value": 0
+					},
+					"cha": {
+						"value": 0
+					},
+					"int": {
+						"value": 0
+					},
+					"agi": {
+						"value": 0
+					},
+					"luc": {
 						"value": 0
 					}
 				},
-				"noCompanion": false,
 				"notGhoul": false,
 				"notHuman": false,
 				"notRadiationImmune": false,
 				"notRobot": false,
-				"notSupermutant": false
+				"notSupermutant": false,
+				"legacy": ""
 			},
 			"templates": [
 				"base"

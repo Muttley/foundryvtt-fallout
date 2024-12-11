@@ -215,12 +215,15 @@ FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.Item.PowerArmor.Attach: Attach
 FALLOUT.Item.PowerArmor.Attached: Attached
+FALLOUT.Item.Perk.isCompanion: Is a Companion
 FALLOUT.Item.Perk.legacy: Legacy Requirements
-FALLOUT.Item.Perk.not_ghoul: Not a Ghoul
-FALLOUT.Item.Perk.not_human: Not a Human
-FALLOUT.Item.Perk.not_radiation_immune: Not Immune to Radiation
-FALLOUT.Item.Perk.not_robot: Not a Robot
-FALLOUT.Item.Perk.not_supermutant: Not a Supermutant
+FALLOUT.Item.Perk.level: Level
+FALLOUT.Item.Perk.levelIncrease: Level Increase
+FALLOUT.Item.Perk.notGhoul: Not a Ghoul
+FALLOUT.Item.Perk.notHuman: Not a Human
+FALLOUT.Item.Perk.notRadiationImmune: Not Immune to Radiation
+FALLOUT.Item.Perk.notRobot: Not a Robot
+FALLOUT.Item.Perk.notSupermutant: Not a Supermutant
 FALLOUT.Item.Perk.Warning.legacy: This is the original requirments info. Will be removed at a later update.
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
@@ -472,7 +475,6 @@ FALLOUT.TEMPLATES.Junk: Junk
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Learned
-FALLOUT.TEMPLATES.LevelIncrease: Level Increase
 FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCATIONS & INJURIES
 FALLOUT.TEMPLATES.Locations: Locations
 FALLOUT.TEMPLATES.Luck: Luck

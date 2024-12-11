@@ -6,69 +6,38 @@
 		<div class="left-column">
 			<div class="flexrow resource-row align-mid">
 				<label class="field-label">
-					{{localize "FALLOUT.LEVEL.Level"}}
+					{{localize "FALLOUT.Item.Perk.level"}}
 				</label>
 
 				<div class="flexrow align-right">
 					<input class="text-center num-short-2"
-						   name="system.rank.levelStart"
+						   name="system.requirements.level"
 						   type="number"
-						   value="{{system.rank.levelStart}}" />
+						   value="{{system.requirements.level}}" />
 				</div>
 			</div>
 
 			{{#if (gt system.rank.max 1)}}
 			<div class="flexrow resource-row align-mid">
-					<label class="field-label">
-						{{localize "FALLOUT.TEMPLATES.LevelIncrease"}}
-					</label>
-
-				<div class="flexrow align-right">
-					<input class="text-center num-short-2"
-						   name="system.rank.value"
-						   type="number"
-						   value="{{system.rank.levelIncrease}}" />
-				</div>
-			</div>
-			{{/if}}
-
-			<div class="flexrow resource-row align-mid">
 				<label class="field-label">
-					{{localize "FALLOUT.TEMPLATES.Ranks"}}
+					{{localize "FALLOUT.Item.Perk.levelIncrease"}}
 				</label>
 
 				<div class="flexrow align-right">
-					<div>
-						<label class="field-label">
-							{{localize "FALLOUT.TEMPLATES.current"}}
-							&nbsp;
-						</label>
-
-						<input class="text-center num-short-2"
-							   name="system.rank.value"
-							   type="number"
-							   value="{{system.rank.value}}" />
-
-						<label class="field-label">
-							&nbsp;
-							{{localize "FALLOUT.TEMPLATES.max"}}
-							&nbsp;
-						</label>
-
-						<input class="text-center num-short-2"
-							   name="system.rank.max"
-							   type="number"
-							   value="{{system.rank.max}}" />
-					</div>
+					<input class="text-center num-short-2"
+						   name="system.requirements.levelIncrease"
+						   type="number"
+						   value="{{system.requirements.levelIncrease}}" />
 				</div>
 			</div>
+			{{/if}}
 		</div>
 
 
 		<div class="right-column">
 			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirements.notGhoul">
-					{{localize "FALLOUT.Item.Perk.not_ghoul"}}
+					{{localize "FALLOUT.Item.Perk.notGhoul"}}
 				</label>
 
 				<input class="input-checkbox"
@@ -80,7 +49,7 @@
 
 			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirements.notHuman">
-					{{localize "FALLOUT.Item.Perk.not_human"}}
+					{{localize "FALLOUT.Item.Perk.notHuman"}}
 				</label>
 
 				<input class="input-checkbox"
@@ -92,7 +61,7 @@
 
 			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirements.notRobot">
-					{{localize "FALLOUT.Item.Perk.not_robot"}}
+					{{localize "FALLOUT.Item.Perk.notRobot"}}
 				</label>
 
 				<input class="input-checkbox"
@@ -104,7 +73,7 @@
 
 			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirements.notSupermutant">
-					{{localize "FALLOUT.Item.Perk.not_supermutant"}}
+					{{localize "FALLOUT.Item.Perk.notSupermutant"}}
 				</label>
 
 				<input class="input-checkbox"
@@ -116,7 +85,7 @@
 
 			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirements.notRadiationImmune">
-					{{localize "FALLOUT.Item.Perk.not_radiation_immune"}}
+					{{localize "FALLOUT.Item.Perk.notRadiationImmune"}}
 				</label>
 
 				<input class="input-checkbox"
@@ -125,6 +94,18 @@
 					   type="checkbox"
 					   {{checked system.requirements.notRadiationImmune}} />
 			</div>
+
+			<!--<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirements.isCompanion">
+					{{localize "FALLOUT.Item.Perk.isCompanion"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirements.isCompanion"
+					   type="checkbox"
+					   {{checked system.requirements.isCompanion}} />
+			</div>-->
 		</div>
 	</section>
 

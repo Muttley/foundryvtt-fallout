@@ -1,0 +1,62 @@
+<div class="tab description" data-group="primary" data-tab="description">
+	{{!-- Want to list the perk requirements above the descriptions for easy view. --}}
+	<div class="flexrow resource-row align-mid">
+		<label class="field-label flexlarge">
+			{{localize "FALLOUT.TEMPLATES.Ranks"}}:
+		</label>
+
+		<label class="field-label align-right" style="margin-right: 5px;">
+			{{localize "FALLOUT.TEMPLATES.current"}}
+		</label>
+
+		<input class="text-center num-short-2 "
+			   name="system.rank.value"
+			   type="number"
+			   value="{{system.rank.value}}" />
+
+		<label class="field-label align-right" style="margin-right: 5px;">
+			{{localize "FALLOUT.TEMPLATES.max"}}
+		</label>
+
+		<input class="text-center num-short-2 "
+			   name="system.rank.max"
+			   type="number"
+			   value="{{system.rank.max}}" />
+
+	</div>
+	<div class="item-sub-info">
+		<span>
+			<strong>
+				{{localize 'FALLOUT.TEMPLATES.Requirements'}}:
+			</strong>
+			{{{listPerkRequirements system.requirements}}}
+		</span>
+	</div>
+
+	<div class="box no-padding bgEven">
+		<h4 class="box-header upperC">{{localize "FALLOUT.TEMPLATES.Description"}}</h4>
+		{{
+editor descriptionHTML
+		button=true
+		editable=editable
+		owner=owner
+		rollData=rollData
+		target="system.description"
+		}}
+	</div>
+</div>
+
+
+
+
+
+{{#*inline "specialAttribute"}}
+<div class="box flexshrink">
+	<div class="box-header text-center upperC resource-label" style="background-color: darkslategrey;">
+		{{subString key 0 1}}
+	</div>
+	<div class="text-center">
+		<label>{{attribute.value}}</label>
+	</div>
+</div>
+{{/inline}}
