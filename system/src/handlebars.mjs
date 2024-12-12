@@ -160,6 +160,14 @@ export default function registerHandlebarsHelpers() {
 		}[operator];
 	});
 
+	Handlebars.registerHelper("range", function(start, stop) {
+		let result = [];
+		for (let i = start; i <= stop; i++) {
+			result.push(i);
+		}
+		return result;
+	});
+
 	/* -------------------------------------------- */
 	/*  FALLOUT HELPERS                             */
 	/* -------------------------------------------- */
