@@ -1,7 +1,7 @@
 <div class="flexrow resource-row">
 	{{#each FALLOUT.ATTRIBUTES as |attribute key|}}
 	{{> specialAttribute
-			attribute=(lookup ../system.requirements.attributes key)
+			attribute=(lookup ../system.requirementsEx.attributes key)
 			key=key
 	}}
 	{{/each}}
@@ -16,7 +16,7 @@
 			<input
 				class="text-center"
 				type="number"
-				name="system.requirements.attributes.{{key}}.value"
+				name="system.requirementsEx.attributes.{{key}}.value"
 				value="{{attribute.value}}"
 			>
 		</div>

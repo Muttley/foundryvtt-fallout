@@ -1,6 +1,6 @@
 <div class="tab requirements" data-group="primary" data-tab="requirements">
 
-	{{> item/perk/attributes}}
+	{{> item/perk/_partials/attributes}}
 
 	<section class="grid-2-columns">
 		<div class="left-column">
@@ -11,9 +11,9 @@
 
 				<div class="flexrow align-right">
 					<input class="text-center num-short-2"
-						   name="system.requirements.level"
+						   name="system.requirementsEx.level"
 						   type="number"
-						   value="{{system.requirements.level}}" />
+						   value="{{system.requirementsEx.level}}" />
 				</div>
 			</div>
 
@@ -25,9 +25,9 @@
 
 				<div class="flexrow align-right">
 					<input class="text-center num-short-2"
-						   name="system.requirements.levelIncrease"
+						   name="system.requirementsEx.levelIncrease"
 						   type="number"
-						   value="{{system.requirements.levelIncrease}}" />
+						   value="{{system.requirementsEx.levelIncrease}}" />
 				</div>
 			</div>
 			{{/if}}
@@ -36,87 +36,76 @@
 
 		<div class="right-column">
 			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirements.notGhoul">
+				<label class="field-label" for="system.requirementsEx.notGhoul">
 					{{localize "FALLOUT.Item.Perk.notGhoul"}}
 				</label>
 
 				<input class="input-checkbox"
 					   data-dtype="Boolean"
-					   name="system.requirements.notGhoul"
+					   name="system.requirementsEx.notGhoul"
 					   type="checkbox"
-					   {{checked system.requirements.notGhoul}} />
+					   {{checked system.requirementsEx.notGhoul}} />
 			</div>
 
 			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirements.notHuman">
+				<label class="field-label" for="system.requirementsEx.notHuman">
 					{{localize "FALLOUT.Item.Perk.notHuman"}}
 				</label>
 
 				<input class="input-checkbox"
 					   data-dtype="Boolean"
-					   name="system.requirements.notHuman"
+					   name="system.requirementsEx.notHuman"
 					   type="checkbox"
-					   {{checked system.requirements.notHuman}} />
+					   {{checked system.requirementsEx.notHuman}} />
 			</div>
 
 			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirements.notRobot">
+				<label class="field-label" for="system.requirementsEx.notRobot">
 					{{localize "FALLOUT.Item.Perk.notRobot"}}
 				</label>
 
 				<input class="input-checkbox"
 					   data-dtype="Boolean"
-					   name="system.requirements.notRobot"
+					   name="system.requirementsEx.notRobot"
 					   type="checkbox"
-					   {{checked system.requirements.notRobot}} />
+					   {{checked system.requirementsEx.notRobot}} />
 			</div>
 
 			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirements.notSupermutant">
+				<label class="field-label" for="system.requirementsEx.notSupermutant">
 					{{localize "FALLOUT.Item.Perk.notSupermutant"}}
 				</label>
 
 				<input class="input-checkbox"
 					   data-dtype="Boolean"
-					   name="system.requirements.notSupermutant"
+					   name="system.requirementsEx.notSupermutant"
 					   type="checkbox"
-					   {{checked system.requirements.notSupermutant}} />
+					   {{checked system.requirementsEx.notSupermutant}} />
 			</div>
 
 			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirements.notRadiationImmune">
+				<label class="field-label" for="system.requirementsEx.notRadiationImmune">
 					{{localize "FALLOUT.Item.Perk.notRadiationImmune"}}
 				</label>
 
 				<input class="input-checkbox"
 					   data-dtype="Boolean"
-					   name="system.requirements.notRadiationImmune"
+					   name="system.requirementsEx.notRadiationImmune"
 					   type="checkbox"
-					   {{checked system.requirements.notRadiationImmune}} />
+					   {{checked system.requirementsEx.notRadiationImmune}} />
 			</div>
 
-			<!--<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirements.isCompanion">
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirementsEx.isCompanion">
 					{{localize "FALLOUT.Item.Perk.isCompanion"}}
 				</label>
 
 				<input class="input-checkbox"
 					   data-dtype="Boolean"
-					   name="system.requirements.isCompanion"
+					   name="system.requirementsEx.isCompanion"
 					   type="checkbox"
-					   {{checked system.requirements.isCompanion}} />
-			</div>-->
+					   {{checked system.requirementsEx.isCompanion}} />
+			</div>
 		</div>
 	</section>
-
-	<div class="flexrow resource-row align-mid">
-		<label class="field-label">
-			{{localize "FALLOUT.Item.Perk.legacy"}}
-		</label>
-
-		<input type="text"
-			   data-tooltip="{{localize 'FALLOUT.Item.Perk.Warning.legacy'}}"
-			   name="system.requirements.legacy"
-			   value="{{system.requirements.legacy}}">
-	</div>
 </div>
