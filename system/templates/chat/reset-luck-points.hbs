@@ -1,0 +1,15 @@
+<div class="fallout-chat-message">
+	<div class="content">
+		<h2>{{title}}</h2>
+		<div style="font-size: 0.75rem;">
+			{{#each actors}}
+				<div>
+					<b>{{this.name}}</b>
+					{{localize "FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage"
+						luckPoints=this.newLuckPoints
+					}}
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

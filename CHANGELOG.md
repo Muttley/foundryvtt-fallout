@@ -1,3 +1,19 @@
+# v11.14.2
+
+#### Enhancements
+- [#544] Add new GM only macro for resetting player luck points
+
+#### Bugs
+- [#543] Trying to load non-existant template
+- [#546] Don't override token properties when duplicating an Actor
+
+#### Chores
+- [#540] Merge new French and Portuguese/Brazilian translation updates from Crowdin
+- [#542] Merge new Portuguese/Brazilian translation updates from Crowdin
+- [#548] Merge new French and Portuguese/Brazilian translation updates from Crowdin
+
+---
+
 # v11.14.1
 
 #### Bugs

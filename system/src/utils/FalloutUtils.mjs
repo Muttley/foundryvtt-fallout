@@ -181,6 +181,28 @@ export default class FalloutUtils {
 		return messageStyles;
 	}
 
+	static getPlayerCharacters() {
+		const characters = [];
+
+		for (const player of game.users.players) {
+			const actor = player.character;
+
+			if (!actor) {
+				fallout.logger.warn(
+					`[FalloutUtils::getPlayerCharacters] ${player.name} does not have an associated character`
+				);
+
+				continue;
+			}
+
+			characters.push(actor);
+		}
+
+		characters.sort((a, b) => a.name.localeCompare(b.name));
+
+		return characters;
+	}
+
 	static isCompendiumTableResult(result) {
 		return this.foundryMinVersion(12)
 			? result.type === "pack"
