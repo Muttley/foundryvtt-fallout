@@ -19,6 +19,9 @@ export class DialogD6 extends Dialog {
 
 		html.on("click", ".roll", async event => {
 			let diceNum = html.find(".d-number")[0].value;
+			let fireRate = html.find(".fr-number")[0].value;
+
+
 			let additionalAmmo = 0;
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
@@ -89,12 +92,17 @@ export class DialogD6 extends Dialog {
 		dialogData.weapon = weapon;
 		dialogData.actor = actor;
 
-		const html = `<div class="flexrow fallout-dialog">
+		let html;
+		if (weapon) {
+			html = await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
+		}
+		else {
+			html = `<div class="flexrow fallout-dialog">
 		<div class="flexrow resource" style="padding:5px">
 		<label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="${diceNum}">
 		</div>
 		</div>`;
-
+		}
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, {
 			title: rollName,
 			content: html,
@@ -109,7 +117,7 @@ export class DialogD6 extends Dialog {
 		d.render(true);
 	}
 
-	async checkAmmo(diceNum, initDmg) {
+	async checkAmmo(diceNum, fireRate, initDmg) {
 		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
 
 		if (!this.actor) return 0;
