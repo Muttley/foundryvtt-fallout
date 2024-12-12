@@ -1136,12 +1136,12 @@
 			"skills": ""
 		},
 		"perk": {
-			"isCompanion": false,
 			"rank": {
 				"max": 1,
 				"value": 0
 			},
-			"requirements": {
+			"requirements": "",
+			"requirementsEx": {
 				"level": 1,
 				"levelIncrease": 0,
 				"attributes": {
@@ -1167,12 +1167,12 @@
 						"value": 0
 					}
 				},
+				"isCompanion": false,
 				"notGhoul": false,
 				"notHuman": false,
 				"notRadiationImmune": false,
 				"notRobot": false,
-				"notSupermutant": false,
-				"legacy": ""
+				"notSupermutant": false
 			},
 			"templates": [
 				"base"
