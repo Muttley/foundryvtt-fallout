@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Armorer",
 	"system": {
-		"description": "<p>You can modify armor with armor mods. Each rank in this perk unlocks an additional rank of mods: rank 1 unlocks rank 1 mods, rank 2 unlocks rank 2 mods, etc.</p>\n<p>Each time you take this perk, the level requirement increases by 4.</p>",
+		"description": "<p>You can modify armor with armor mods. Each rank in this perk unlocks an additional rank of mods: rank 1 unlocks rank 1 mods, rank 2 unlocks rank 2 mods, etc.</p>\n<p>Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: STR 5, INT 6</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 4,
 			"value": 0
 		},
-		"requirements": "STR 5, INT 6",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

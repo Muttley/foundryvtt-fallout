@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Entomologist",
 	"system": {
-		"description": "<p>When you make an attack against an NPC with the Insect keyword, your attack gains the Piercing 1 damage effect, or improves the rating of any Piercing X effect the weapon has by +1.</p>",
+		"description": "<p>When you make an attack against an NPC with the Insect keyword, your attack gains the Piercing 1 damage effect, or improves the rating of any Piercing X effect the weapon has by +1.</p>\n<p><strong>Requirements</strong>: INT 7</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 1,
 			"value": 0
 		},
-		"requirements": "INT 7",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

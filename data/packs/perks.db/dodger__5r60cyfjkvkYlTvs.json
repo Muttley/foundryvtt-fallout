@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Dodger",
 	"system": {
-		"description": "<p>At rank 1, when you take the Defend major action, you reduce the difficulty of the skill test by 1. At rank 2, the AP cost to further increase your Defense is reduced to 1 AP. Each time you take this perk, the level requirement increases by 6.</p>",
+		"description": "<p>At rank 1, when you take the Defend major action, you reduce the difficulty of the skill test by 1. At rank 2, the AP cost to further increase your Defense is reduced to 1 AP. Each time you take this perk, the level requirement increases by 6.</p>\n<p><strong>Requirements</strong>: AGI 6, Level 4</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 2,
 			"value": 0
 		},
-		"requirements": "AGI 6, Level 4",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

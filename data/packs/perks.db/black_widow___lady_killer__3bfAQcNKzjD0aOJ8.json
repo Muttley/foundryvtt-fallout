@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Black Widow / Lady Killer",
 	"system": {
-		"description": "<p>The Black Widow perk affects men and masculine characters, while the Lady Killer perk affects women and feminine characters&mdash;they are otherwise identical. When you attempt a CHA based skill test to influence a character of the chosen gender, you may re-roll 1d20. In addition, your attacks inflict +1DCD additional damage against characters of the chosen gender.</p>",
+		"description": "<p>The Black Widow perk affects men and masculine characters, while the Lady Killer perk affects women and feminine characters&mdash;they are otherwise identical. When you attempt a CHA based skill test to influence a character of the chosen gender, you may re-roll 1d20. In addition, your attacks inflict +1DCD additional damage against characters of the chosen gender.</p>\n<p><strong>Requirements</strong>: CHA 6</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 1,
 			"value": 0
 		},
-		"requirements": "CHA 6",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

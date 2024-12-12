@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Rifleman",
 	"system": {
-		"description": "<p>When you make a ranged attack with any two-handed weapon with a Fire Rate of 2 or lower (except heavy weapons), you add +1 CD to the weapon&rsquo;s damage per rank.</p>\n<p>At rank 2, you also add the Piercing 1 damage effect, or add +1 to the rating of any Piercing X damage effect the weapon already had. Each time you take this perk, the level requirement increases by 4.</p>",
+		"description": "<p>When you make a ranged attack with any two-handed weapon with a Fire Rate of 2 or lower (except heavy weapons), you add +1 CD to the weapon&rsquo;s damage per rank.</p>\n<p>At rank 2, you also add the Piercing 1 damage effect, or add +1 to the rating of any Piercing X damage effect the weapon already had. Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: AGI 7, Level 2+</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 2,
 			"value": 0
 		},
-		"requirements": "AGI 7, Level 2+",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

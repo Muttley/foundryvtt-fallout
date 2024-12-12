@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Terrifying Presence",
 	"system": {
-		"description": "<p>When you make a Speech test to threaten or scare someone, you may re-roll 1d20.</p>\n<p>At rank 2, you may use a major action in combat to threaten an enemy within Medium range, using a STR + Speech test with a difficulty of 2. If you succeed, that enemy must move away from you during their next turn (though they can take any other actions they wish). Each time you take this perk, the level requirement increases by 5.</p>",
+		"description": "<p>When you make a Speech test to threaten or scare someone, you may re-roll 1d20.</p>\n<p>At rank 2, you may use a major action in combat to threaten an enemy within Medium range, using a STR + Speech test with a difficulty of 2. If you succeed, that enemy must move away from you during their next turn (though they can take any other actions they wish). Each time you take this perk, the level requirement increases by 5.</p>\n<p><strong>Requirements</strong>: STR 6, CHA 8, Level 3+</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 2,
 			"value": 0
 		},
-		"requirements": "STR 6, CHA 8, Level 3+",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

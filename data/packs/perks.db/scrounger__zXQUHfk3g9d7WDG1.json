@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Scrounger",
 	"system": {
-		"description": "<p>Whenever you roll to determine how much ammunition you find, you find more.</p>\n<p>At rank 1, you find +3CD additional shots. At rank 2, you find +6CCD additional shots. At rank 3, you find +10 CD additional shots. The additional ammo you find is the same as initially found, for example, if you find 10mm ammunition, this perk increases how much 10mm ammo you find. If you find multiple types of ammunition, Scrounger applies to the ammunition with the lowest rarity (GM&rsquo;s choice if there is a tie).</p>\n<p>Each time you take this perk, the level requirement increases by 5.</p>",
+		"description": "<p>Whenever you roll to determine how much ammunition you find, you find more.</p>\n<p>At rank 1, you find +3CD additional shots. At rank 2, you find +6CCD additional shots. At rank 3, you find +10 CD additional shots. The additional ammo you find is the same as initially found, for example, if you find 10mm ammunition, this perk increases how much 10mm ammo you find. If you find multiple types of ammunition, Scrounger applies to the ammunition with the lowest rarity (GM&rsquo;s choice if there is a tie).</p>\n<p>Each time you take this perk, the level requirement increases by 5.</p>\n<p><strong>Requirements</strong>: LCK 6, Level 1+</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 3,
 			"value": 0
 		},
-		"requirements": "LCK 6, Level 1+",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

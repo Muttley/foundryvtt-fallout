@@ -7,7 +7,7 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Mysterious Stranger",
 	"system": {
-		"description": "<p>From time to time, a Mysterious Stranger comes to your aid, with lethal results. At the start of a combat encounter, you may spend 1 Luck point. If you do so, then at any point during the scene, the GM may have the Mysterious Stranger appear, make a single ranged attack against an enemy you attacked, or who just attacked you, and then vanish. If you spend a Luck point and the Mysterious Stranger does not appear, the GM must refund the Luck point you spent.</p>\n<p>The stranger has an AGI of 10, a Small Guns skill of 6, and counts Small Guns as a Tag skill. They always roll 3d20 for attacks, rather than 2d20, and their attack&mdash;using a custom .44 Magnum revolver&mdash;inflicts 8CD Piercing 1, Vicious physical damage. They always appear within their weapon&rsquo;s ideal range. Any attempt to find where the Stranger went after their attack fails.</p>",
+		"description": "<p>From time to time, a Mysterious Stranger comes to your aid, with lethal results. At the start of a combat encounter, you may spend 1 Luck point. If you do so, then at any point during the scene, the GM may have the Mysterious Stranger appear, make a single ranged attack against an enemy you attacked, or who just attacked you, and then vanish. If you spend a Luck point and the Mysterious Stranger does not appear, the GM must refund the Luck point you spent.</p>\n<p>The stranger has an AGI of 10, a Small Guns skill of 6, and counts Small Guns as a Tag skill. They always roll 3d20 for attacks, rather than 2d20, and their attack&mdash;using a custom .44 Magnum revolver&mdash;inflicts 8CD Piercing 1, Vicious physical damage. They always appear within their weapon&rsquo;s ideal range. Any attempt to find where the Stranger went after their attack fails.</p>\n<p><strong>Requirements</strong>: LCK 7</p>",
 		"favorite": false,
 		"rank": {
 			"levelIncrease": 0,
@@ -15,7 +15,40 @@
 			"max": 1,
 			"value": 0
 		},
-		"requirements": "LCK 7",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"
