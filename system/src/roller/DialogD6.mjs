@@ -18,9 +18,15 @@ export class DialogD6 extends Dialog {
 		// })
 
 		html.on("click", ".roll", async event => {
-			let diceNum = html.find(".d-number")[0].value;
-			let fireRate = html.find(".fr-number")[0].value;
+			let extraDiceNum = html.find(".xd-number")[0]?.value ?? "0";
+			let fireRate = html.find(".fr-number")[0]?.value;
+			let diceNum = html.find(".d-number")[0]?.value;
 
+			if (!diceNum) diceNum = this.diceNum;
+
+			if (fireRate && fireRate !== "0") {
+				diceNum += parseInt(fireRate);
+			}
 
 			let additionalAmmo = 0;
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
@@ -39,7 +45,7 @@ export class DialogD6 extends Dialog {
 			if (!this.falloutRoll) {
 				fallout.Roller2D20.rollD6({
 					rollname: this.rollName,
-					dicenum: parseInt(diceNum),
+					dicenum: parseInt(diceNum) + parseInt(extraDiceNum),
 					weapon: this.weapon,
 					actor: this.actor,
 				});
@@ -47,7 +53,7 @@ export class DialogD6 extends Dialog {
 			else {
 				fallout.Roller2D20.addD6({
 					rollname: this.rollName,
-					dicenum: parseInt(diceNum),
+					dicenum: parseInt(diceNum) + parseInt(extraDiceNum),
 					weapon: this.weapon,
 					actor: this.actor,
 					falloutRoll: this.falloutRoll,
@@ -117,7 +123,7 @@ export class DialogD6 extends Dialog {
 		d.render(true);
 	}
 
-	async checkAmmo(diceNum, fireRate, initDmg) {
+	async checkAmmo(diceNum, initDmg) {
 		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
 
 		if (!this.actor) return 0;
