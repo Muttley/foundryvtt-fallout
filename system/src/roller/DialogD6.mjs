@@ -99,7 +99,7 @@ export class DialogD6 extends Dialog {
 		dialogData.actor = actor;
 
 		let html;
-		if (weapon) {
+		if (weapon && !falloutRoll) {
 			html = await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
 		}
 		else {
