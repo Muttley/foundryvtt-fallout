@@ -99,8 +99,10 @@ export class DialogD6 extends Dialog {
 		dialogData.actor = actor;
 
 		let html;
+		let dialogWidth = 300;
 		if (weapon && !falloutRoll) {
 			html = await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
+			dialogWidth = 465;
 		}
 		else {
 			html = `<div class="flexrow fallout-dialog">
@@ -119,7 +121,7 @@ export class DialogD6 extends Dialog {
 				},
 			},
 			close: () => { },
-		});
+		}, {width: dialogWidth});
 		d.render(true);
 	}
 
