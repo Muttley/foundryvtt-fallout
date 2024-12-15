@@ -8,11 +8,13 @@
 		</label>
 		<input
 			class="num-short-2"
-			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			name="system.meleeDamage.value"
 			type="number"
 			value="{{system.meleeDamage.value}}"
+			{{#unless disableAutoDerivedStats}}
+			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			disabled
+			{{/unless}}
 		>
 	</div>
 	<div class="flexrow resource-row align-mid">
@@ -21,11 +23,13 @@
 		</label>
 		<input
 			class="num-short-2"
-			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			type="number"
 			name="system.defense.value"
 			value="{{system.defense.value}}"
+			{{#unless disableAutoDerivedStats}}
+			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			disabled
+			{{/unless}}
 		>
 	</div>
 	<div class="flexrow resource-row align-mid">
@@ -34,11 +38,13 @@
 		</label>
 		<input
 			class="num-short-2"
-			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			type="number"
 			name="system.initiative.value"
 			value="{{system.initiative.value}}"
+			{{#unless disableAutoDerivedStats}}
+			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			disabled
+			{{/unless}}
 		>
 	</div>
 </div>

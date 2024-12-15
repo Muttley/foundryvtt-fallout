@@ -222,6 +222,16 @@ export default function registerSettings() {
 		requiresReload: true,
 	});
 
+	game.settings.register(SYSTEM_ID, "disableAutoDerivedStats", {
+		name: "Disable Auto-calculated Player Derived Stats",
+		hint: "By default the system will auto-calculate derived stats for player characters based on the core rulebook.  Check this if would prefer to populate these values manually.",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: true,
+	});
+
 	game.settings.register(SYSTEM_ID, "disableAutoXpReward", {
 		name: "Disable Auto-calculated NPC XP Reward",
 		hint: "By default the system will auto-calculate the XP reward level of an NPC based on the core rulebook.  Check this if would prefer to populate these values manually.",

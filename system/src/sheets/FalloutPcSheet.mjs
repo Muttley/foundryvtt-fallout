@@ -300,6 +300,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			SYSTEM_ID, "disableAutoXpTarget"
 		);
 
+		context.disableAutoDerivedStats = game.settings.get(
+			SYSTEM_ID, "disableAutoDerivedStats"
+		);
+
 		this._updateChemDoseManager();
 
 		// ADD FAVOURITE ITEMS
