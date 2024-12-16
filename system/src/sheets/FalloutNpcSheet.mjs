@@ -31,6 +31,7 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		return [
 			"skill",
 			"special_ability",
+			"perk",
 			"weapon",
 		];
 	}

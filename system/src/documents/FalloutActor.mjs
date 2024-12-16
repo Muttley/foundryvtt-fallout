@@ -146,7 +146,7 @@ export default class FalloutActor extends Actor {
 	// perk (or can't have perks)
 	//
 	perkLevel(perkName) {
-		if (!["character", "robot"].includes(this.type)) return 0;
+		if (!["character", "robot", "npc"].includes(this.type)) return 0;
 
 		const perk = this.items.find(i => {
 			const hasBabeleTranslation = i.flags?.babele?.hasTranslation === true;

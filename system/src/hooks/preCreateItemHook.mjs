@@ -27,7 +27,7 @@ export const preCreateItemHook = {
 						warningMessage = "ONLY SETTLEMENTS CAN HAVE OBJECTS OR STRUCTURES";
 						break;
 					case "perk":
-						if (["character", "robot"].includes(parentType)) return true;
+						if (["character", "robot", "npc"].includes(parentType)) return true;
 						warningMessage = "ONLY PLAYERS CAN HAVE PERKS";
 						break;
 					case "trait":
