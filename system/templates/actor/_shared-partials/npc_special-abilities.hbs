@@ -1,7 +1,8 @@
 <ol class="items-list">
+	{{> actor/pc/partials/perks }}
 	<li class="consumable flexrow items-header">
 		<div class="flexrow flexlarge item-name upperC">
-			{{localize 'FALLOUT.UI.SPECIAL_ABILITY'}}/{{localize 'FALLOUT.TEMPLATES.PERK'}}
+			{{localize 'FALLOUT.UI.SPECIAL_ABILITY'}}
 		</div>
 		<div class="item-controls">
 			<a
@@ -20,12 +21,6 @@
 			</a>
 		</div>
 	</li>
-	{{#each itemsByType.perk}}
-		{{> actor/_shared-partials/simple-expandable-item
-			item=this
-			basicControlsOnly=true
-		}}
-	{{/each}}
 	{{#each itemsByType.special_ability}}
 		{{> actor/_shared-partials/simple-expandable-item
 			item=this
