@@ -10,8 +10,6 @@
 		"description": "<p>When you succeed at a <strong>Sneak</strong> test to avoid notice, you may spend 1 AP to create a distraction somewhere within Medium range; the character who failed the opposed test to detect you heads towards the distraction you created. If you learn this perk, you may use it once per scene.</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -43,6 +41,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.9Z4Asa5c915hem9w"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

@@ -10,8 +10,6 @@
 		"description": "<p>When you make a ranged attack with any weapon with a Fire Rate of 3 or higher (except heavy weapons), you add +1DCD per rank to the weapon&rsquo;s damage. Each time you take this perk, the level requirement increases by 3.</p>\n<p><strong>Requirements</strong>: AGI 8, Level 2+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 2,
 			"value": 0
 		},
@@ -19,7 +17,7 @@
 		"requirementsEx": {
 			"attributes": {
 				"agi": {
-					"value": 0
+					"value": 8
 				},
 				"cha": {
 					"value": 0
@@ -41,8 +39,10 @@
 				}
 			},
 			"isCompanion": false,
-			"level": 1,
-			"levelIncrease": 0,
+			"level": 2,
+			"levelIncrease": 3,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

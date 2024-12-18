@@ -10,8 +10,6 @@
 		"description": "<p>When you make an attack with a ranged energy weapon, the damage is increased by +1DDCD per rank in this perk. Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: PER 8, Level 2+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 2,
 			"value": 0
 		},
@@ -34,15 +32,17 @@
 					"value": 0
 				},
 				"per": {
-					"value": 0
+					"value": 8
 				},
 				"str": {
 					"value": 0
 				}
 			},
 			"isCompanion": false,
-			"level": 1,
-			"levelIncrease": 0,
+			"level": 2,
+			"levelIncrease": 4,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

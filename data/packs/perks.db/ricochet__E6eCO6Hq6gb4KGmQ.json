@@ -10,8 +10,6 @@
 		"description": "<p>If an enemy makes a ranged attack against you and rolls a complication, you may spend one Luck point to have their ricochet hit them. Resolve the damage roll against the attacking enemy instead.</p>\n<p><strong>Requirements</strong>: LCK 10, Level 5+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -31,7 +29,7 @@
 					"value": 0
 				},
 				"luc": {
-					"value": 0
+					"value": 10
 				},
 				"per": {
 					"value": 0
@@ -41,8 +39,10 @@
 				}
 			},
 			"isCompanion": false,
-			"level": 1,
+			"level": 5,
 			"levelIncrease": 0,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

@@ -10,8 +10,6 @@
 		"description": "<p>Once, when you attempt to repair an item, halve the amounts of the materials needed to complete the repair (round up). If you later learn this perk, you may use this whenever you attempt repairs.</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -43,6 +41,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.mBOgGCUFastqsi1c"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

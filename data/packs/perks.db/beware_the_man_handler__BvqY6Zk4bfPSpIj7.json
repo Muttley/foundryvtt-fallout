@@ -10,8 +10,6 @@
 		"description": "<p>The group AP pool may contain 1 AP more than normal for one scene</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -43,6 +41,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.hCRQEWSkpgvFluXe"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

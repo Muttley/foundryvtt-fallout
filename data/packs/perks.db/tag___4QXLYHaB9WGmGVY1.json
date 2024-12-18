@@ -10,8 +10,6 @@
 		"description": "<p>You may select one additional Tag skill. Increase the skill&rsquo;s rank by 2, to a maximum of 6, and mark it as a Tag skill, allowing you to roll a critical success with a d20 result equal or under the skill&rsquo;s rank.</p>\n<p><strong>Requirements</strong>: Level 5+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -41,8 +39,10 @@
 				}
 			},
 			"isCompanion": false,
-			"level": 1,
+			"level": 5,
 			"levelIncrease": 0,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

@@ -10,8 +10,6 @@
 		"description": "<p>One successful melee attack you make inflicts +2CD damage</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -43,6 +41,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.qx4yMqnLv4ZI6Ppx"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

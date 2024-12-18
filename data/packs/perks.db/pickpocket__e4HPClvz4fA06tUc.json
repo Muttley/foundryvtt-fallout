@@ -10,8 +10,6 @@
 		"description": "<p>At rank 1, you can ignore the first complication you roll when you make an AGI + Sneak test to steal an object from someone else&rsquo;s person or to plant something on them.</p>\n<p>At rank 2, you can re-roll 1d20 in your dice pool when attempting to pick someone&rsquo;s pocket.</p>\n<p>At rank 3, you reduce the difficulty of attempts to pick someone&rsquo;s pocket by 1.</p>\n<p>Each time you take this perk, the level requirement increases by 3.</p>\n<p><strong>Requirements</strong>: PER 8, AGI 8, Level 1+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 3,
 			"value": 0
 		},
@@ -19,7 +17,7 @@
 		"requirementsEx": {
 			"attributes": {
 				"agi": {
-					"value": 0
+					"value": 8
 				},
 				"cha": {
 					"value": 0
@@ -34,7 +32,7 @@
 					"value": 0
 				},
 				"per": {
-					"value": 0
+					"value": 8
 				},
 				"str": {
 					"value": 0
@@ -42,7 +40,9 @@
 			},
 			"isCompanion": false,
 			"level": 1,
-			"levelIncrease": 0,
+			"levelIncrease": 3,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

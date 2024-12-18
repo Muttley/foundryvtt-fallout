@@ -10,8 +10,6 @@
 		"description": "<p>When you spend a Luck point to re-roll a d20 on an AGI test, instead count that die as if it had rolled a 1</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -43,6 +41,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.vAtCC2CaGrGOgnSL"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

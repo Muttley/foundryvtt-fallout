@@ -10,8 +10,6 @@
 		"description": "<p>When you make a sneak attack with a silenced or suppressed weapon, the damage is increased by +2CD. You cannot gain this benefit while in Power Armor.</p>\n<p><strong>Requirements</strong>: AGI 9</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -19,7 +17,7 @@
 		"requirementsEx": {
 			"attributes": {
 				"agi": {
-					"value": 0
+					"value": 9
 				},
 				"cha": {
 					"value": 0
@@ -43,6 +41,8 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

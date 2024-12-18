@@ -10,8 +10,6 @@
 		"description": "<p>At rank 1, roll one fewer CD when determining if you become addicted to chems,<br>to a minimum of 0.</p>\n<p>At rank 2, you cannot become addicted to chems. Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: END 7, Level 1+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 2,
 			"value": 0
 		},
@@ -25,7 +23,7 @@
 					"value": 0
 				},
 				"end": {
-					"value": 0
+					"value": 7
 				},
 				"int": {
 					"value": 0
@@ -42,7 +40,9 @@
 			},
 			"isCompanion": false,
 			"level": 1,
-			"levelIncrease": 0,
+			"levelIncrease": 4,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

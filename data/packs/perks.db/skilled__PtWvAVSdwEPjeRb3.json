@@ -10,8 +10,6 @@
 		"description": "<p>Add +1 rank to two skills or add +2 ranks to one skill. No skill may have more than 6 ranks. Each time you take this perk, the level requirement increases by 3.</p>\n<p><strong>Requirements</strong>: Level 3+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 10,
 			"value": 0
 		},
@@ -41,8 +39,10 @@
 				}
 			},
 			"isCompanion": false,
-			"level": 1,
-			"levelIncrease": 0,
+			"level": 3,
+			"levelIncrease": 3,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

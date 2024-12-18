@@ -10,8 +10,6 @@
 		"description": "<p>You can modify energy weapons with weapon mods, and you can also craft certain advanced armor mods. Each rank in this perk unlocks an additional rank of mods: rank 1 unlocks rank 1 mods, rank 2 unlocks rank 2 mods, etc.</p>\n<p>Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: INT 6, Level 2+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 3,
 			"value": 0
 		},
@@ -28,7 +26,7 @@
 					"value": 0
 				},
 				"int": {
-					"value": 0
+					"value": 6
 				},
 				"luc": {
 					"value": 0
@@ -41,8 +39,10 @@
 				}
 			},
 			"isCompanion": false,
-			"level": 1,
-			"levelIncrease": 0,
+			"level": 2,
+			"levelIncrease": 4,
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

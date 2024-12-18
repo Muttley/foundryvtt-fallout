@@ -10,8 +10,6 @@
 		"description": "<p>Consuming a fruit or vegetable food item heals twice as many HP</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
@@ -43,6 +41,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.0GXqsrMeNMoA9iCS"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,
