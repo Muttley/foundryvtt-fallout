@@ -16,6 +16,7 @@
 				"body",
 				"derived",
 				"encumbrance",
+				"pc_shared",
 				"stats",
 				"valuables"
 			]
@@ -226,9 +227,10 @@
 		"robot": {
 			"templates": [
 				"base",
+				"body",
 				"derived",
 				"encumbrance",
-				"body",
+				"pc_shared",
 				"stats",
 				"valuables"
 			]
@@ -537,6 +539,9 @@
 			},
 			"npc_shared": {
 				"category": "normal"
+			},
+			"pc_shared": {
+				"readMagazines": []
 			},
 			"settler": {
 				"settlement": {
@@ -1073,10 +1078,12 @@
 		},
 		"books_and_magz": {
 			"effect": "",
-			"issue": "",
-			"learned": false,
-			"perk": "",
 			"publication": "",
+			"read": false,
+			"uses": {
+				"max": 1,
+				"value": 0
+			},
 			"templates": [
 				"base",
 				"physical"
@@ -1168,6 +1175,7 @@
 					}
 				},
 				"isCompanion": false,
+				"magazineUuids": [],
 				"notGhoul": false,
 				"notHuman": false,
 				"notRadiationImmune": false,

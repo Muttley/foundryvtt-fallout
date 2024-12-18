@@ -3,7 +3,7 @@
 	{{> item/perk/_partials/attributes}}
 
 	<section class="grid-2-columns">
-		<div class="left-column">
+		<div class="left-side">
 			<div class="flexrow resource-row">
 				<label class="field-label">
 					{{localize "FALLOUT.TEMPLATES.Ranks"}}
@@ -11,53 +11,21 @@
 
 				<span class="align-right">
 					<input
-						class="text-center num-short-3"
+						class="num-short-3"
 						name="system.rank.value"
-						type="number"
+						type="Number"
 						value="{{system.rank.value}}"
 					/>
 					&sol;
-
 					<input
-						class="text-center num-short-3"
+						class="num-short-3"
 						name="system.rank.max"
-						type="number"
+						type="Number"
 						value="{{system.rank.max}}"
 					/>
 				</span>
 			</div>
 
-			<div class="flexrow resource-row align-mid">
-				<label class="field-label">
-					{{localize "FALLOUT.Item.Perk.level"}}
-				</label>
-
-				<div class="flexrow align-right">
-					<input class="text-center num-short-2"
-						   name="system.requirementsEx.level"
-						   type="number"
-						   value="{{system.requirementsEx.level}}" />
-				</div>
-			</div>
-
-			{{#if (gt system.rank.max 1)}}
-			<div class="flexrow resource-row align-mid">
-				<label class="field-label">
-					{{localize "FALLOUT.Item.Perk.levelIncrease"}}
-				</label>
-
-				<div class="flexrow align-right">
-					<input class="text-center num-short-2"
-						   name="system.requirementsEx.levelIncrease"
-						   type="number"
-						   value="{{system.requirementsEx.levelIncrease}}" />
-				</div>
-			</div>
-			{{/if}}
-		</div>
-
-
-		<div class="right-column">
 			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirementsEx.notGhoul">
 					{{localize "FALLOUT.Item.Perk.notGhoul"}}
@@ -68,18 +36,6 @@
 					   name="system.requirementsEx.notGhoul"
 					   type="checkbox"
 					   {{checked system.requirementsEx.notGhoul}} />
-			</div>
-
-			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirementsEx.notHuman">
-					{{localize "FALLOUT.Item.Perk.notHuman"}}
-				</label>
-
-				<input class="input-checkbox"
-					   data-dtype="Boolean"
-					   name="system.requirementsEx.notHuman"
-					   type="checkbox"
-					   {{checked system.requirementsEx.notHuman}} />
 			</div>
 
 			<div class="flexrow resource-row">
@@ -95,18 +51,6 @@
 			</div>
 
 			<div class="flexrow resource-row">
-				<label class="field-label" for="system.requirementsEx.notSupermutant">
-					{{localize "FALLOUT.Item.Perk.notSupermutant"}}
-				</label>
-
-				<input class="input-checkbox"
-					   data-dtype="Boolean"
-					   name="system.requirementsEx.notSupermutant"
-					   type="checkbox"
-					   {{checked system.requirementsEx.notSupermutant}} />
-			</div>
-
-			<div class="flexrow resource-row">
 				<label class="field-label" for="system.requirementsEx.notRadiationImmune">
 					{{localize "FALLOUT.Item.Perk.notRadiationImmune"}}
 				</label>
@@ -116,6 +60,54 @@
 					   name="system.requirementsEx.notRadiationImmune"
 					   type="checkbox"
 					   {{checked system.requirementsEx.notRadiationImmune}} />
+			</div>
+		</div>
+		<div class="right-side">
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
+					{{localize "FALLOUT.Item.Perk.level"}}
+				</label>
+
+				<span class="align-right">
+					<input
+						class="text-center num-short-3"
+						name="system.requirementsEx.level"
+						type="number"
+						value="{{system.requirementsEx.level}}"
+					/>
+					{{#ifCond system.rank.max ">" 1}}
+						&sol;
+						<input class="text-center num-short-3"
+							name="system.requirementsEx.levelIncrease"
+							type="number"
+							value="{{system.requirementsEx.levelIncrease}}"
+						/>
+					{{/ifCond}}
+				</span>
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirementsEx.notHuman">
+					{{localize "FALLOUT.Item.Perk.notHuman"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirementsEx.notHuman"
+					   type="checkbox"
+					   {{checked system.requirementsEx.notHuman}} />
+			</div>
+
+			<div class="flexrow resource-row">
+				<label class="field-label" for="system.requirementsEx.notSupermutant">
+					{{localize "FALLOUT.Item.Perk.notSupermutant"}}
+				</label>
+
+				<input class="input-checkbox"
+					   data-dtype="Boolean"
+					   name="system.requirementsEx.notSupermutant"
+					   type="checkbox"
+					   {{checked system.requirementsEx.notSupermutant}} />
 			</div>
 
 			<div class="flexrow resource-row">
@@ -130,5 +122,12 @@
 					   {{checked system.requirementsEx.isCompanion}} />
 			</div>
 		</div>
+
 	</section>
+
+	{{> item/_shared-partials/choice-selector
+		config=magazineSelectionConfig
+		editable=editable
+		label=(localize "FALLOUT.Item.Perk.readMagazines")
+	}}
 </div>

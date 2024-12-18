@@ -213,18 +213,18 @@ FALLOUT.HEALTH.max: Max Health
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
 FALLOUT.Item.Perk.isCompanion: Is a Companion
-FALLOUT.Item.Perk.legacy: Legacy Requirements
 FALLOUT.Item.Perk.level: Level
-FALLOUT.Item.Perk.levelIncrease: Level Increase
+FALLOUT.Item.Perk.Magazine.label: Magazines
+FALLOUT.Item.Perk.Magazine.prompt: Select Magazine...
 FALLOUT.Item.Perk.notGhoul: Not a Ghoul
 FALLOUT.Item.Perk.notHuman: Not a Human
 FALLOUT.Item.Perk.notRadiationImmune: Not Immune to Radiation
 FALLOUT.Item.Perk.notRobot: Not a Robot
 FALLOUT.Item.Perk.notSupermutant: Not a Supermutant
-FALLOUT.Item.Perk.Warning.legacy: This is the original requirments info. Will be removed at a later update.
+FALLOUT.Item.Perk.readMagazines: Read Magazines
+FALLOUT.Item.PowerArmor.Attach: Attach
+FALLOUT.Item.PowerArmor.Attached: Attached
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
@@ -485,6 +485,7 @@ FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PARTY AP
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.MaxRanks: Max Ranks
 FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
 FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Mod Type
