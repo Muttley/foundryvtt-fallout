@@ -1,65 +1,65 @@
 FALLOUT.AbilityAbbr.agi: agi
-FALLOUT.AbilityAbbr.cha: cha
-FALLOUT.AbilityAbbr.end: end
+FALLOUT.AbilityAbbr.cha: car
+FALLOUT.AbilityAbbr.end: res
 FALLOUT.AbilityAbbr.int: int
-FALLOUT.AbilityAbbr.luc: luc
+FALLOUT.AbilityAbbr.luc: sue
 FALLOUT.AbilityAbbr.per: per
-FALLOUT.AbilityAbbr.str: str
-FALLOUT.AbilityAgi: Agility
-FALLOUT.AbilityCha: Charisma
-FALLOUT.AbilityEnd: Endurance
-FALLOUT.AbilityInt: Intelligence
-FALLOUT.AbilityLuc: Luck
-FALLOUT.AbilityPer: Perception
-FALLOUT.AbilityStr: Strength
-FALLOUT.actor.inventory.materials.common: Common
-FALLOUT.actor.inventory.materials.junk: Junk
-FALLOUT.actor.inventory.materials.junkSalvageControl: Salvage Junk
-FALLOUT.actor.inventory.materials.label: Materials
-FALLOUT.actor.inventory.materials.rare: Rare
-FALLOUT.actor.inventory.materials.uncommon: Uncommon
+FALLOUT.AbilityAbbr.str: fue
+FALLOUT.AbilityAgi: Agilidad
+FALLOUT.AbilityCha: Carisma
+FALLOUT.AbilityEnd: Resistencia
+FALLOUT.AbilityInt: Inteligencia
+FALLOUT.AbilityLuc: Suerte
+FALLOUT.AbilityPer: Percepción
+FALLOUT.AbilityStr: Fuerza
+FALLOUT.actor.inventory.materials.common: Común
+FALLOUT.actor.inventory.materials.junk: Chatarra
+FALLOUT.actor.inventory.materials.junkSalvageControl: Recuperar chatarra
+FALLOUT.actor.inventory.materials.label: Materiales
+FALLOUT.actor.inventory.materials.rare: Raro
+FALLOUT.actor.inventory.materials.uncommon: Infrecuente
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Este valor está siendo modificado por un Efecto Activo y no puede editarse. Desactiva el efecto para editarlo.
-FALLOUT.Actor.Warnings.DerivedValue: This is an auto-calculated value that cannot be edited.
-FALLOUT.Actor.Warnings.NpcAlreadyResident: That NPC is already a resident of {settlementName}
-FALLOUT.Actor.Warnings.NpcMissing: A settler with Actor UUID {uuid} could not be found so it has been removed from {settlementName}
-FALLOUT.Add: Add
-FALLOUT.APP.ChemDoseManager.ResetAllButton: Reset All
-FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reset All Chem Doses
-FALLOUT.APP.ChemDoseManager.title: Chem Doses
-FALLOUT.APP.ItemTypeMenu.title: Select Item Type
-FALLOUT.APP.Loading.body: Searching the Wastelands...
-FALLOUT.APP.Loading.title: Loading
-FALLOUT.APP.ModuleArtConfig.items: Items
-FALLOUT.APP.ModuleArtConfig.title: Configure Art
-FALLOUT.APP.PartySleep.chat_message: The party sleeps for {duration}.
-FALLOUT.APP.PartySleep.description: How Long?
-FALLOUT.APP.PartySleep.hour: 1 hour
+FALLOUT.Actor.Warnings.DerivedValue: Este campo se calcula automáticamente y no puede ser editado.
+FALLOUT.Actor.Warnings.NpcAlreadyResident: Ese PNJ ya es un residente de {settlementName}
+FALLOUT.Actor.Warnings.NpcMissing: No se ha podido encontrar un colono con el UUID de Actor {uuid}, por lo que ha sido eliminado de {settlementName}
+FALLOUT.Add: Añadir
+FALLOUT.APP.ChemDoseManager.ResetAllButton: Reiniciar todo
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reiniciar todas las dosis de drogas
+FALLOUT.APP.ChemDoseManager.title: Dosis de drogas
+FALLOUT.APP.ItemTypeMenu.title: Seleccionar tipo de objeto
+FALLOUT.APP.Loading.body: Buscando en el Yermo
+FALLOUT.APP.Loading.title: Cargando
+FALLOUT.APP.ModuleArtConfig.items: Objetos
+FALLOUT.APP.ModuleArtConfig.title: Configurar arte
+FALLOUT.APP.PartySleep.chat_message: El grupo duerme durante {duration}.
+FALLOUT.APP.PartySleep.description: '¿Cuánto tiempo?'
+FALLOUT.APP.PartySleep.hour: 1 hora
 FALLOUT.APP.PartySleep.hours: "{length} Horas"
 FALLOUT.APP.PartySleep.safe_location: '¿Ubicación segura?'
-FALLOUT.APP.PartySleep.title: Party Sleep
+FALLOUT.APP.PartySleep.title: El grupo duerme
 FALLOUT.APP.SalvageJunk.AdvanceGameTime: Avanzar el tiempo de juego
-FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: You don't have any junk to salvage
-FALLOUT.APP.SalvageJunk.gameTimeAdvanced: Game time advanced by {time}
-FALLOUT.APP.SalvageJunk.Items: Items
-FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
-FALLOUT.APP.SalvageJunk.start: Start Salvaging
-FALLOUT.APP.SalvageJunk.time: This will take {time}
-FALLOUT.APP.SalvageJunk.title: Salvage Junk
-FALLOUT.APPAREL.armor: Armor
-FALLOUT.APPAREL.clothing: Clothing
-FALLOUT.APPAREL.headgear: Headgear
-FALLOUT.APPAREL.outfit: Outfit
+FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: No tienes chatarra para recuperar
+FALLOUT.APP.SalvageJunk.gameTimeAdvanced: El tiempo de juego ha avanzado {time}
+FALLOUT.APP.SalvageJunk.Items: Objetos
+FALLOUT.APP.SalvageJunk.selectedAmount: Recuperando {amount} de {max} Chatarra
+FALLOUT.APP.SalvageJunk.start: Empezar a recuperar
+FALLOUT.APP.SalvageJunk.time: Esto llevará {time}
+FALLOUT.APP.SalvageJunk.title: Recuperar chatarra
+FALLOUT.APPAREL.armor: Armadura
+FALLOUT.APPAREL.clothing: Ropa
+FALLOUT.APPAREL.headgear: Casco
+FALLOUT.APPAREL.outfit: Traje
 FALLOUT.APPAREL.plating: Plating
-FALLOUT.APPAREL.powerArmor: Power Armor
-FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
-FALLOUT.AvailabilityRoll.result.title: Availability Roll
-FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
-FALLOUT.BEVERAGE: Beverage
-FALLOUT.BODYLOCATION_ABBR.character.armL: AL
-FALLOUT.BODYLOCATION_ABBR.character.armR: AR
-FALLOUT.BODYLOCATION_ABBR.character.head: H
-FALLOUT.BODYLOCATION_ABBR.character.legL: LL
-FALLOUT.BODYLOCATION_ABBR.character.legR: LR
+FALLOUT.APPAREL.powerArmor: Servoarmadura
+FALLOUT.AvailabilityRoll.result.body: La rareza máxima disponible es {rarity}
+FALLOUT.AvailabilityRoll.result.title: Disponibilidad
+FALLOUT.AvailabilityRoll.tooltip: Tira para ver la disponibilidad
+FALLOUT.BEVERAGE: Bebida
+FALLOUT.BODYLOCATION_ABBR.character.armL: BI
+FALLOUT.BODYLOCATION_ABBR.character.armR: BD
+FALLOUT.BODYLOCATION_ABBR.character.head: C
+FALLOUT.BODYLOCATION_ABBR.character.legL: PI
+FALLOUT.BODYLOCATION_ABBR.character.legR: PD
 FALLOUT.BODYLOCATION_ABBR.character.torso: T
 FALLOUT.BODYLOCATION_ABBR.robot.armL: A1
 FALLOUT.BODYLOCATION_ABBR.robot.armR: A2
@@ -67,237 +67,237 @@ FALLOUT.BODYLOCATION_ABBR.robot.head: O
 FALLOUT.BODYLOCATION_ABBR.robot.legL: A3
 FALLOUT.BODYLOCATION_ABBR.robot.legR: TH
 FALLOUT.BODYLOCATION_ABBR.robot.torso: MB
-FALLOUT.BODYLOCATION.character.armL: Left Arm
-FALLOUT.BODYLOCATION.character.armR: Right Arm
-FALLOUT.BODYLOCATION.character.head: Head
-FALLOUT.BODYLOCATION.character.legL: Left Leg
-FALLOUT.BODYLOCATION.character.legR: Right Leg
+FALLOUT.BODYLOCATION.character.armL: Brazo Izquierdo
+FALLOUT.BODYLOCATION.character.armR: Brazo Derecho
+FALLOUT.BODYLOCATION.character.head: Cabeza
+FALLOUT.BODYLOCATION.character.legL: Pierna Izquierda
+FALLOUT.BODYLOCATION.character.legR: Pierna Derecha
 FALLOUT.BODYLOCATION.character.torso: Torso
-FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Head | Optics | Head | Head
-FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Left Arm | Arm 1 | Left Front Leg | Left Wing (as Leg)
-FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Left Leg | Arm 3 | Left Hind Leg | Legs
-FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Right Arm | Arm 2 | Right Front Leg | Right Wing (as Leg)
-FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Right Leg | Thruster | Right Hind Leg | Legs
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Main Body | Torso | Torso
-FALLOUT.BODYLOCATION.robot.armL: Arm 1
-FALLOUT.BODYLOCATION.robot.armR: Arm 2
-FALLOUT.BODYLOCATION.robot.head: Optics
-FALLOUT.BODYLOCATION.robot.legL: Arm 3
-FALLOUT.BODYLOCATION.robot.legR: Thruster
-FALLOUT.BODYLOCATION.robot.torso: Main Body
-FALLOUT.BodyTypes.BodyType: Body Type
-FALLOUT.BodyTypes.flyingInsect.armL: Left Wing (as leg)
-FALLOUT.BodyTypes.flyingInsect.armR: Right Wing (as leg)
-FALLOUT.BodyTypes.flyingInsect.head: Head
-FALLOUT.BodyTypes.flyingInsect.label: Flying Insect
-FALLOUT.BodyTypes.flyingInsect.legL: Legs
-FALLOUT.BodyTypes.flyingInsect.legR: Legs
+FALLOUT.BODYLOCATION.labels.Head_Optics_Head_Head: Cabeza | Óptica | Cabeza | Cabeza
+FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Brazo izquierdo | Brazo 1 | Pata delantera izquierda | Ala izquierda (como Pierna)
+FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Pierna izquierda | Brazo 3 | Pierna izquierda | Piernas
+FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Brazo Derecho | Brazo 2 | Pata Derecha | Ala Derecha (como Pierna)
+FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Pierna Derecha | Propulsor | Pierna Derecha | Piernas
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Cuerpo Principal | Torso | Torso
+FALLOUT.BODYLOCATION.robot.armL: Brazo 1
+FALLOUT.BODYLOCATION.robot.armR: Brazo 2
+FALLOUT.BODYLOCATION.robot.head: Óptica
+FALLOUT.BODYLOCATION.robot.legL: Brazo 3
+FALLOUT.BODYLOCATION.robot.legR: Propulsor
+FALLOUT.BODYLOCATION.robot.torso: Cuerpo Principal
+FALLOUT.BodyTypes.BodyType: Tipo de cuerpo
+FALLOUT.BodyTypes.flyingInsect.armL: Ala Izquierda (como pierna)
+FALLOUT.BodyTypes.flyingInsect.armR: Ala Derecha (como pierna)
+FALLOUT.BodyTypes.flyingInsect.head: Cabeza
+FALLOUT.BodyTypes.flyingInsect.label: Insecto Volador
+FALLOUT.BodyTypes.flyingInsect.legL: Piernas
+FALLOUT.BodyTypes.flyingInsect.legR: Piernas
 FALLOUT.BodyTypes.flyingInsect.torso: Torso
-FALLOUT.BodyTypes.humanoid.armL: Arm Left
-FALLOUT.BodyTypes.humanoid.armR: Arm Right
-FALLOUT.BodyTypes.humanoid.head: Head
-FALLOUT.BodyTypes.humanoid.label: Humanoid
-FALLOUT.BodyTypes.humanoid.legL: Leg Left
-FALLOUT.BodyTypes.humanoid.legR: Leg Right
+FALLOUT.BodyTypes.humanoid.armL: Brazo Izquierdo
+FALLOUT.BodyTypes.humanoid.armR: Brazo Derecho
+FALLOUT.BodyTypes.humanoid.head: Cabeza
+FALLOUT.BodyTypes.humanoid.label: Humanoide
+FALLOUT.BodyTypes.humanoid.legL: Pierna Izquierda
+FALLOUT.BodyTypes.humanoid.legR: Pierna Derecha
 FALLOUT.BodyTypes.humanoid.torso: Torso
-FALLOUT.BodyTypes.quadruped.armL: Left Front Leg
-FALLOUT.BodyTypes.quadruped.armR: Right Front Leg
-FALLOUT.BodyTypes.quadruped.head: Head
-FALLOUT.BodyTypes.quadruped.label: Quadruped
-FALLOUT.BodyTypes.quadruped.legL: Left Hind Leg
-FALLOUT.BodyTypes.quadruped.legR: Right Hind Leg
+FALLOUT.BodyTypes.quadruped.armL: Pata frontal Izquierda
+FALLOUT.BodyTypes.quadruped.armR: Pata frontal Derecha
+FALLOUT.BodyTypes.quadruped.head: Cabeza
+FALLOUT.BodyTypes.quadruped.label: Cuadrupedo
+FALLOUT.BodyTypes.quadruped.legL: Pata trasera izquierda
+FALLOUT.BodyTypes.quadruped.legR: Pata Trasera Derecha
 FALLOUT.BodyTypes.quadruped.torso: Torso
-FALLOUT.BodyTypes.robot.armL: Arm 1
-FALLOUT.BodyTypes.robot.armR: Arm 2
-FALLOUT.BodyTypes.robot.head: Optics
+FALLOUT.BodyTypes.robot.armL: Brazo 1
+FALLOUT.BodyTypes.robot.armR: Brazo 2
+FALLOUT.BodyTypes.robot.head: Óptica
 FALLOUT.BodyTypes.robot.label: Robot
-FALLOUT.BodyTypes.robot.legL: Arm 3
-FALLOUT.BodyTypes.robot.legR: Main Body
-FALLOUT.BodyTypes.robot.torso: Main Body
-FALLOUT.BodyTypes.vehicle.chassis: Chassis
-FALLOUT.BodyTypes.vehicle.engine: Engine
-FALLOUT.BodyTypes.vehicle.engineL: Left Engine
-FALLOUT.BodyTypes.vehicle.engineR: Right Engine
+FALLOUT.BodyTypes.robot.legL: Brazo 3
+FALLOUT.BodyTypes.robot.legR: Cuerpo principal
+FALLOUT.BodyTypes.robot.torso: Cuerpo principal
+FALLOUT.BodyTypes.vehicle.chassis: Chasis
+FALLOUT.BodyTypes.vehicle.engine: Motor
+FALLOUT.BodyTypes.vehicle.engineL: Motor izquierdo
+FALLOUT.BodyTypes.vehicle.engineR: Motor derecho
 FALLOUT.BodyTypes.vehicle.weaponDG: Weapon (Door Gun)
 FALLOUT.BodyTypes.vehicle.weaponNG: Weapon (Nose Guns)
-FALLOUT.BodyTypes.vehicle.wheelF: Front Wheel
-FALLOUT.BodyTypes.vehicle.wheelFL: Front Left Wheel
-FALLOUT.BodyTypes.vehicle.wheelFR: Front Right Wheel
-FALLOUT.BodyTypes.vehicle.wheelML: Middle Left Wheel
-FALLOUT.BodyTypes.vehicle.wheelMR: Middle Right Wheel
-FALLOUT.BodyTypes.vehicle.wheelR: Rear Wheel
-FALLOUT.BodyTypes.vehicle.wheelRL: Rear Left Wheel
-FALLOUT.BodyTypes.vehicle.wheelRL1: Rear Left Wheel 1
-FALLOUT.BodyTypes.vehicle.wheelRL2: Rear Left Wheel 2
-FALLOUT.BodyTypes.vehicle.wheelRR: Rear Right Wheel
-FALLOUT.BodyTypes.vehicle.wheelRR1: Rear Right Wheel 1
-FALLOUT.BodyTypes.vehicle.wheelRR2: Rear Right Wheel 2
-FALLOUT.BodyTypes.vehicle.wingL: Left Wing
-FALLOUT.BodyTypes.vehicle.wingR: Right Wing
-FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} becomes addicted to {itemName}"
-FALLOUT.CHAT_MESSAGE.addiction.title: Chem Addiction
-FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} becomes an alcoholic from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcohol Dependency
-FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} is now {hungerLevel}, {thirstLevel} and {sleepLevel}"
-FALLOUT.CHAT_MESSAGE.condition-change.title: Condition Change
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Your fatigue has increased by +{level} due to your {condition} level
-FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Fatigue Level
-FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
-FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
-FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
-FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
-FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
-FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
-FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
-FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
-FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
-FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
-FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
-FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
-FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
-FALLOUT.CHEM: Chem
-FALLOUT.ChemDuration.brief: Brief
-FALLOUT.ChemDuration.instant: Instant
-FALLOUT.ChemDuration.lasting: Lasting
-FALLOUT.CREATURE.body: Body
-FALLOUT.CREATURE.guns: Guns
-FALLOUT.CREATURE.melee: Melee
-FALLOUT.CREATURE.mind: Mind
-FALLOUT.CREATURE.other: Other
-FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
-FALLOUT.dialog.roll_ammo.button.create: Create New
-FALLOUT.dialog.roll_ammo.button.update: Update Item
+FALLOUT.BodyTypes.vehicle.wheelF: Rueda delantera
+FALLOUT.BodyTypes.vehicle.wheelFL: Rueda delantera izquierda
+FALLOUT.BodyTypes.vehicle.wheelFR: Rueda delantera derecha
+FALLOUT.BodyTypes.vehicle.wheelML: Rueda central izquierda
+FALLOUT.BodyTypes.vehicle.wheelMR: Rueda central derecha
+FALLOUT.BodyTypes.vehicle.wheelR: Rueda trasera
+FALLOUT.BodyTypes.vehicle.wheelRL: Rueda trasera izquierda
+FALLOUT.BodyTypes.vehicle.wheelRL1: Rueda trasera izquierda 1
+FALLOUT.BodyTypes.vehicle.wheelRL2: Rueda trasera izquierda 2
+FALLOUT.BodyTypes.vehicle.wheelRR: Rueda trasera derecha
+FALLOUT.BodyTypes.vehicle.wheelRR1: Rueda trasera derecha 1
+FALLOUT.BodyTypes.vehicle.wheelRR2: Rueda trasera derecha 2
+FALLOUT.BodyTypes.vehicle.wingL: Ala Izquierda
+FALLOUT.BodyTypes.vehicle.wingR: Ala Derecha
+FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} se hace adicto de {itemName}"
+FALLOUT.CHAT_MESSAGE.addiction.title: Adicción a las drogas
+FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} se convierte en un alcohólico al consumir {itemName}"
+FALLOUT.CHAT_MESSAGE.alcoholic.title: Dependencia del Alcohol
+FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} ahora tiene {hungerLevel}, {thirstLevel} y {sleepLevel}"
+FALLOUT.CHAT_MESSAGE.condition-change.title: Cambio de condición
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_change: Tu fatiga ha aumentado en +{level} debido a tu nivel de {condition}
+FALLOUT.CHAT_MESSAGE.conditions.fatigue_level: Nivel de Fatiga
+FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Nivel de hambre
+FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Nivel de sueño
+FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nivel de sed
+FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} ha bebido Agua Sucia"
+FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida consumida
+FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} ha consumido {itemName}"
+FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga consumida
+FALLOUT.CHAT_MESSAGE.consumed.food.title: Comida Consumida
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Ya estás lleno y no puedes comer más
+FALLOUT.CHAT_MESSAGE.consumed.other.title: Otros consumos
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiación Resistida
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} recibe daño de radiación {radsTaken} al consumir {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Daño por radiación
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recibe daño de radiación {radsTaken} al consumir {itemName}"
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Chatarrero
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} ha sido rebuscada, y ha llevado {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Ubicación de Recuperación
+FALLOUT.CHEM: Droga
+FALLOUT.ChemDuration.brief: Resumen
+FALLOUT.ChemDuration.instant: Instantáneo
+FALLOUT.ChemDuration.lasting: duración
+FALLOUT.CREATURE.body: Cuerpo
+FALLOUT.CREATURE.guns: Armas
+FALLOUT.CREATURE.melee: Cuerpo a Cuerpo
+FALLOUT.CREATURE.mind: Mente
+FALLOUT.CREATURE.other: Otro
+FALLOUT.dialog.roll_ammo.button.chat: Enviar al chat
+FALLOUT.dialog.roll_ammo.button.create: Crear nuevo(a)
+FALLOUT.dialog.roll_ammo.button.update: Actualizar objeto
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
-FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
-FALLOUT.dialog.roll_ammo.title: Roll Ammunition
-FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
-FALLOUT.EffectCreate: Create Effect
-FALLOUT.EffectDelete: Delete Effect
-FALLOUT.EffectEdit: Edit Effect
-FALLOUT.EffectToggle: Toggle Effect
-FALLOUT.equipped: Equipped
-FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
-FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
-FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
-FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
-FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
-FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
-FALLOUT.FOOD: Food
-FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
-FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
-FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
-FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
-FALLOUT.Form.ScavengingSettings.title: Scavenging Settings
-FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
-FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
-FALLOUT.Form.SelectCompendiumItem.prompt: Select Item...
-FALLOUT.Form.SelectCompendiumItem.title: Choose Items
-FALLOUT.Form.SelectCompendiumItem.tooltip: Add From Compendiums
-FALLOUT.Form.SelectItem.title: Choose {type}
-FALLOUT.Form.SourceFilters.AllUsed: All sources are currently allowed
-FALLOUT.Form.SourceFilters.hint: If populated, only sources included in this list will be used by any part of the system which automatically pulls items from Compendiums.
-FALLOUT.Form.SourceFilters.prompt: Select Source...
-FALLOUT.Form.SourceFilters.TheseUsed: Only the following sources will be allowed
-FALLOUT.Form.SourceFilters.title: Source Filters
-FALLOUT.HEALTH.current: Current Health
-FALLOUT.HEALTH.health: Health
-FALLOUT.HEALTH.max: Max Health
-FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
-FALLOUT.Item.Origin.Traits.label: Origin Traits
-FALLOUT.Item.Origin.Traits.prompt: Select Trait...
-FALLOUT.Item.PowerArmor.Attach: Attach
-FALLOUT.Item.PowerArmor.Attached: Attached
-FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
-FALLOUT.Item.PowerArmor.Frame: Frame
-FALLOUT.Item.PowerArmor.IsFrame: Is Frame
-FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
-FALLOUT.LEVEL.CurrentXP: Current XP
-FALLOUT.LEVEL.Level: Level
-FALLOUT.LEVEL.NextXP: Next Level XP
-FALLOUT.LEVEL.RewardXP: XP Reward
-FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
-FALLOUT.LOCATION_CATEGORY.commercial: Commercial
-FALLOUT.LOCATION_CATEGORY.custom: Custom
-FALLOUT.LOCATION_CATEGORY.industry: Industry
-FALLOUT.LOCATION_CATEGORY.medical: Medical
-FALLOUT.LOCATION_CATEGORY.military: Military
-FALLOUT.LOCATION_CATEGORY.residential: Residential
-FALLOUT.LOCATION_SCALE.average: Average
-FALLOUT.LOCATION_SCALE.large: Large
-FALLOUT.LOCATION_SCALE.small: Small
-FALLOUT.LOCATION_SCALE.tiny: Tiny
-FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutes
-FALLOUT.LOCATION_TIME_TAKEN.large: 2 hours
-FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutes
-FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minute
-FALLOUT.MACRO.DrinkDirtyWater.name: Drink Dirty Water
-FALLOUT.MACRO.Error.CaughtError: "The '{macro}' macro failed with the following error: {error}"
-FALLOUT.MACRO.Error.GameMasterRoleRequired: The '{macro}' macro requires you to have the 'Game Master' user role
-FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: To run this macro players must have a character assigned.
-FALLOUT.MACRO.Error.NoTokensSelected: You must have at least one token selected when executing this macro.
-FALLOUT.MACRO.Error.TooManyTokensSelected: You can only have a maximum of {max} tokens selected when executing this macro.
-FALLOUT.MACRO.NewScene.name: New Scene
-FALLOUT.MACRO.NewSession.name: New Session
-FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage: now has {luckPoints} luck points
-FALLOUT.MACRO.ResetLuckPoints.name: Reset Luck Points
-FALLOUT.MACRO.Success: The '{macro}' macro completed successfully
-FALLOUT.MIGRATION.begin_migration: Performing data upgrades for Fallout 2d20
-FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{version}
-FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
-FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
+FALLOUT.dialog.roll_ammo.chat.details: Esto mostrará la tirada de munición como un mensaje en el chat
+FALLOUT.dialog.roll_ammo.create.details: Esto creará un nuevo objeto de munición con la cantidad obtenida. Si el objeto del que estás tirando es propiedad de un Actor, el nuevo objeto será creará en el inventario del Actor.
+FALLOUT.dialog.roll_ammo.title: Tirada de munición
+FALLOUT.dialog.roll_ammo.update.details: Esto actualizará este elemento de munición con la cantidad de una tirada de munición nueva.
+FALLOUT.EffectCreate: Crear efecto
+FALLOUT.EffectDelete: Borrar efecto
+FALLOUT.EffectEdit: Editar efecto
+FALLOUT.EffectToggle: Alternar efecto
+FALLOUT.equipped: Equipado
+FALLOUT.ERRORS.NoCharacterTokenSelected: No se ha seleccionado ningún token de personaje
+FALLOUT.ERRORS.NoPLayerCharacterAssigned: Este jugador no tiene ningún personaje principal asignado
+FALLOUT.ERRORS.NoUsableCharacterFound: No se ha encontrado ningún personaje utilizable para esta acción
+FALLOUT.ERRORS.ThisWeaponIsBroken: Esta arma está rota y ya no se puede utilizar.
+FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: No se puede determinar el atributo a usar para esta arma.
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: No se puede determinar la habilidad a usar para esta arma.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Esta arma no tiene un Atributo de Criatura y/o Habilidad de Criatura especificada.
+FALLOUT.FOOD: Comida
+FALLOUT.Form.ScavengingCategoryTables.hint: Aquí puede especificar las tablas de tiradas predeterminadas a usar para cada categoría de saqueo.
+FALLOUT.Form.ScavengingCategoryTables.title: Tablas de categoría por defecto
+FALLOUT.Form.ScavengingCompendium.hint: Si se selecciona solo tablas de tiradas almacenadas en el compendio especificado estarán disponibles para la selección como fuentes de resultado de búsqueda.
+FALLOUT.Form.ScavengingCompendium.title: Compendio de saqueo
+FALLOUT.Form.ScavengingSettings.title: Configuración de Saqueo
+FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Solo puedes seleccionar un máximo de {maxChoices} de este tipo de objeto.
+FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: No se pueden encontrar elementos del tipo correcto en los compendios disponibles.
+FALLOUT.Form.SelectCompendiumItem.prompt: Seleccione objeto...
+FALLOUT.Form.SelectCompendiumItem.title: Seleccionar objetos
+FALLOUT.Form.SelectCompendiumItem.tooltip: Añadir desde Compendio
+FALLOUT.Form.SelectItem.title: Elige {type}
+FALLOUT.Form.SourceFilters.AllUsed: Se permiten todas las fuentes
+FALLOUT.Form.SourceFilters.hint: Si se completa esta información, solo las fuentes incluidas en esta lista serán utilizadas por cualquier parte del sistema que extraiga automáticamente elementos de los compendios.
+FALLOUT.Form.SourceFilters.prompt: Seleccionar origen...
+FALLOUT.Form.SourceFilters.TheseUsed: Sólo se permitirán las siguientes fuentes
+FALLOUT.Form.SourceFilters.title: Filtros de origen
+FALLOUT.HEALTH.current: Salud actual
+FALLOUT.HEALTH.health: Salud
+FALLOUT.HEALTH.max: Salud máxima
+FALLOUT.Item.Origin.FixedTraits.label: Rasgos corregidos
+FALLOUT.Item.Origin.Traits.label: Rasgos Originales
+FALLOUT.Item.Origin.Traits.prompt: Seleccionar Rasgo...
+FALLOUT.Item.PowerArmor.Attach: Conectar
+FALLOUT.Item.PowerArmor.Attached: Conectado
+FALLOUT.Item.PowerArmor.AttachedToFrame: Conectado al marco
+FALLOUT.Item.PowerArmor.Frame: Marco
+FALLOUT.Item.PowerArmor.IsFrame: Es un marco
+FALLOUT.Item.PowerArmor.Pieces: Piezas de Servoarmadura
+FALLOUT.LEVEL.CurrentXP: XP Actual
+FALLOUT.LEVEL.Level: Nivel
+FALLOUT.LEVEL.NextXP: Siguiente nivel XP
+FALLOUT.LEVEL.RewardXP: Recompensa de XP
+FALLOUT.LOCATION_CATEGORY.agriculture: Agricultura
+FALLOUT.LOCATION_CATEGORY.commercial: Comercio
+FALLOUT.LOCATION_CATEGORY.custom: Personalizado
+FALLOUT.LOCATION_CATEGORY.industry: Industria
+FALLOUT.LOCATION_CATEGORY.medical: Médico
+FALLOUT.LOCATION_CATEGORY.military: Militar
+FALLOUT.LOCATION_CATEGORY.residential: Residencial
+FALLOUT.LOCATION_SCALE.average: Promedio
+FALLOUT.LOCATION_SCALE.large: Grande
+FALLOUT.LOCATION_SCALE.small: Pequeño
+FALLOUT.LOCATION_SCALE.tiny: Muy pequeño
+FALLOUT.LOCATION_TIME_TAKEN.average: 30 minutos
+FALLOUT.LOCATION_TIME_TAKEN.large: 2 horas
+FALLOUT.LOCATION_TIME_TAKEN.small: 10 minutos
+FALLOUT.LOCATION_TIME_TAKEN.tiny: 1 minuto
+FALLOUT.MACRO.DrinkDirtyWater.name: Beber agua sucia
+FALLOUT.MACRO.Error.CaughtError: "La '{macro}' macro ha fallado por el siguiente error: {error}"
+FALLOUT.MACRO.Error.GameMasterRoleRequired: La '{macro}' macro requiere que tengas el rol de 'Game Master'
+FALLOUT.MACRO.Error.NoPLayerCharacterAssigned: Para ejecutar esta macro los jugadores deben tener un personaje asignado.
+FALLOUT.MACRO.Error.NoTokensSelected: Debes tener al menos un token seleccionado cuando ejecutes esta macro.
+FALLOUT.MACRO.Error.TooManyTokensSelected: Solo puedes tener un máximo de {max} tokens seleccionados cuando ejecutas esta macro.
+FALLOUT.MACRO.NewScene.name: Nueva escena
+FALLOUT.MACRO.NewSession.name: Nueva Sesión
+FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage: Ahora tienes {luckPoints} puntos de suerte
+FALLOUT.MACRO.ResetLuckPoints.name: Restablecer puntos de suerte
+FALLOUT.MACRO.Success: La '{macro}' macro se ha ejecutado con éxito
+FALLOUT.MIGRATION.begin_migration: Realizando actualizaciones de datos para Fallout 2d20
+FALLOUT.MIGRATION.begin_schema: Aplicando actualizaciones para Fallout 2d20 v{version}
+FALLOUT.MIGRATION.completed_migration: Competada la actualización para Fallout 2d20
+FALLOUT.MIGRATION.completed_schema: Se han completado las actualizaciones de Fallout 2d20 y{version}
 FALLOUT.MODS.mods: Mods
-FALLOUT.NPC_TYPES.legendary: Legendary
-FALLOUT.NPC_TYPES.major: Major
-FALLOUT.NPC_TYPES.mighty: Mighty
-FALLOUT.NPC_TYPES.minion: Minion
+FALLOUT.NPC_TYPES.legendary: Legendario
+FALLOUT.NPC_TYPES.major: Mayor
+FALLOUT.NPC_TYPES.mighty: Poderoso
+FALLOUT.NPC_TYPES.minion: Esbirro
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notable
-FALLOUT.OTHER: Other
-FALLOUT.powered: Powered
-FALLOUT.RANGE.close: Close
-FALLOUT.RANGE.extreme: Extreme
-FALLOUT.RANGE.long: Long
-FALLOUT.RANGE.medium: Medium
-FALLOUT.RESISTANCE.ClickToToggleImmunity: Click to Toggle Immunity
-FALLOUT.RESISTANCE.energy: Energy
-FALLOUT.RESISTANCE.Immunity.poison: Immune to Poison Damage
-FALLOUT.RESISTANCE.Immunity.radiation: Immune to Radiation Damage
-FALLOUT.RESISTANCE.physical: Physical
-FALLOUT.RESISTANCE.poison: Poison
-FALLOUT.RESISTANCE.radiation: Radiation
-FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Ammunition
-FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armor
-FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Beverages
-FALLOUT.SCAVENGING_ITEM_TYPE.chems: Chems
-FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Clothing
-FALLOUT.SCAVENGING_ITEM_TYPE.food: Food
-FALLOUT.SCAVENGING_ITEM_TYPE.junk: Junk
-FALLOUT.SCAVENGING_ITEM_TYPE.other: Other
-FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Weapons
-FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
-FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
-FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
-FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
-FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
-FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
-FALLOUT.SEARCHED_DEGREE.partly_searched: Partly Searched (D1)
-FALLOUT.SEARCHED_DEGREE.untouched: Untouched (D0)
-FALLOUT.SETTINGS.sourceFilters.hint: If populated, only book sources included in this list will be available for selection in relevant places. Items with no book source set will always be available.
-FALLOUT.SETTINGS.sourceFilters.title: Book Source Filters
-FALLOUT.SETTLEMENT_ACTION.Build: Build
-FALLOUT.SETTLEMENT_ACTION.Business: Business
-FALLOUT.SETTLEMENT_ACTION.Guard: Guard
-FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Hunting and Gathering
-FALLOUT.SETTLEMENT_ACTION.Scavenging: Scavenging
+FALLOUT.OTHER: Otro
+FALLOUT.powered: Potenciado
+FALLOUT.RANGE.close: Cerrado
+FALLOUT.RANGE.extreme: Extremo
+FALLOUT.RANGE.long: Largo
+FALLOUT.RANGE.medium: Medio
+FALLOUT.RESISTANCE.ClickToToggleImmunity: Clic para alternar inmunidad
+FALLOUT.RESISTANCE.energy: Enegía
+FALLOUT.RESISTANCE.Immunity.poison: Inmune al Daño por Veneno
+FALLOUT.RESISTANCE.Immunity.radiation: Inmune al daño por radiación
+FALLOUT.RESISTANCE.physical: Físico
+FALLOUT.RESISTANCE.poison: Veneno
+FALLOUT.RESISTANCE.radiation: Radiación
+FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Munición
+FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armadura
+FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Bebidas
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Droga
+FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Ropa
+FALLOUT.SCAVENGING_ITEM_TYPE.food: Comida
+FALLOUT.SCAVENGING_ITEM_TYPE.junk: Chatarra
+FALLOUT.SCAVENGING_ITEM_TYPE.other: Otro
+FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armas
+FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Borrar resultados
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Ubicación de Saqueo
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Se han borrado todos los resultados del saqueo.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Borrar resultados del saqueo
+FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No se ha establecido ninguna tabla de objetos para los elementos {category}.
+FALLOUT.SEARCHED_DEGREE.heavily_searched: Saqueo Completo (D3)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: Mayormente Rebuscado (D2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Parcialmente Rrebuscado (D1)
+FALLOUT.SEARCHED_DEGREE.untouched: Sin tocar (D0)
+FALLOUT.SETTINGS.sourceFilters.hint: Si se completa, solo las fuentes de libros incluidas en esta lista estarán disponibles para su selección en los lugares pertinentes. Los elementos que no tengan una fuente de libros establecida siempre estarán disponibles.
+FALLOUT.SETTINGS.sourceFilters.title: Filtros de origen de Libros
+FALLOUT.SETTLEMENT_ACTION.Build: Construir
+FALLOUT.SETTLEMENT_ACTION.Business: Negocios
+FALLOUT.SETTLEMENT_ACTION.Guard: Guardia
+FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Caza y Recolecta
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Saqueo
 FALLOUT.SETTLEMENT_ACTION.TendCrops: Tend Crops
 FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Trade Caravan
 FALLOUT.SETTLEMENT_ACTION.Unnasigned: Unnasigned
