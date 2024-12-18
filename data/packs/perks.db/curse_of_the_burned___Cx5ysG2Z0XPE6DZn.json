@@ -10,12 +10,46 @@
 		"description": "<h2>Astoundingly Awesome Tales</h2>\n<p><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, granting bonus damage or bonus damage resistance against a single foe or<br>type of attack.</p>\n<ul>\n<li>+1 @fos[DC] on attacks vs Ghouls</li>\n</ul>\n<p>&nbsp;</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
 		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.jPdCfq2T6pELwzbK"
+			],
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

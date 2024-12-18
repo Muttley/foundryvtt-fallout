@@ -119,6 +119,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -337,6 +341,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": true
@@ -553,6 +561,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -1334,6 +1346,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -1736,6 +1752,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -2330,6 +2350,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -3084,6 +3108,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -3302,6 +3330,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -3518,6 +3550,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -4329,6 +4365,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -4731,6 +4771,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -5323,6 +5367,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -6664,6 +6712,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -6882,6 +6934,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -7098,6 +7154,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -7541,6 +7601,39 @@
 							"value": 1
 						},
 						"requirements": "CHA 7",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -7579,6 +7672,39 @@
 							"value": 0
 						},
 						"requirements": "LCK 7",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -8027,6 +8153,14 @@
 					"physical": 0,
 					"poison": 0,
 					"radiation": 0
+				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
 				},
 				"trait": ""
 			},
@@ -8725,6 +8859,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -8943,6 +9081,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -9159,6 +9301,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -9853,6 +9999,39 @@
 							"value": 1
 						},
 						"requirements": "INT 8",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -9891,6 +10070,39 @@
 							"value": 0
 						},
 						"requirements": "Pip-Boy",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -10199,6 +10411,14 @@
 					"physical": 0,
 					"poison": 0,
 					"radiation": 0
+				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
 				},
 				"trait": ""
 			},
@@ -10866,6 +11086,39 @@
 							"value": 1
 						},
 						"requirements": "END 6, not a robot",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -10964,6 +11217,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -11184,6 +11441,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -11400,6 +11661,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -11661,6 +11926,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -12517,6 +12786,14 @@
 					"poison": 0,
 					"radiation": 0
 				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
+				},
 				"trait": ""
 			},
 			"type": "character"
@@ -13214,6 +13491,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -13432,6 +13713,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -13665,6 +13950,39 @@
 							"value": 1
 						},
 						"requirements": "INT 7, Level 1+",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -14386,6 +14704,14 @@
 					"poison": 0,
 					"radiation": 0
 				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
+				},
 				"trait": ""
 			},
 			"type": "character"
@@ -15083,6 +15409,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -15299,6 +15629,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -15519,6 +15853,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -15735,6 +16073,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -16191,6 +16533,39 @@
 							"value": 1
 						},
 						"requirements": "STR 8",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -16497,6 +16872,14 @@
 					"physical": 0,
 					"poison": 0,
 					"radiation": 0
+				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
 				},
 				"trait": ""
 			},
@@ -17164,6 +17547,39 @@
 							"value": 1
 						},
 						"requirements": "INT 6",
+						"requirementsEx": {
+							"attributes": {
+								"agi": {
+									"value": 0
+								},
+								"cha": {
+									"value": 0
+								},
+								"end": {
+									"value": 0
+								},
+								"int": {
+									"value": 0
+								},
+								"luc": {
+									"value": 0
+								},
+								"per": {
+									"value": 0
+								},
+								"str": {
+									"value": 0
+								}
+							},
+							"isCompanion": false,
+							"level": 1,
+							"levelIncrease": 0,
+							"notGhoul": false,
+							"notHuman": false,
+							"notRadiationImmune": false,
+							"notRobot": false,
+							"notSupermutant": false
+						},
 						"source": "core_rulebook"
 					},
 					"type": "perk"
@@ -17262,6 +17678,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -17482,6 +17902,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -17698,6 +18122,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -17920,6 +18348,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -18136,6 +18568,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -18933,6 +19369,14 @@
 					"poison": 0,
 					"radiation": 0
 				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
+				},
 				"trait": ""
 			},
 			"type": "character"
@@ -19106,6 +19550,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -19703,6 +20151,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -20453,6 +20905,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -21171,6 +21627,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -21389,6 +21849,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -22398,6 +22862,14 @@
 					"action": "unnasigned",
 					"uuid": ""
 				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
+				},
 				"trait": "",
 				"wealth": "1"
 			},
@@ -22518,6 +22990,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -23273,6 +23749,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -23489,6 +23969,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -23709,6 +24193,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": true
@@ -23925,6 +24413,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -24968,6 +25460,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"aquatic": {
+									"rank": 0,
+									"value": false
+								},
 								"blast": {
 									"rank": 0,
 									"value": false
@@ -25285,6 +25781,10 @@
 								},
 								"ammo_hungry_x": {
 									"rank": 1,
+									"value": false
+								},
+								"aquatic": {
+									"rank": 0,
 									"value": false
 								},
 								"blast": {
@@ -25762,6 +26262,14 @@
 				"settlement": {
 					"action": "unnasigned",
 					"uuid": ""
+				},
+				"skill": {
+					"tags": {
+						"additionalTags": [
+						],
+						"bonus": 0,
+						"max": 3
+					}
 				},
 				"trait": "",
 				"wealth": "1"
