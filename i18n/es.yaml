@@ -159,8 +159,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Daño por radiación
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recibe daño de radiación {radsTaken} al consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Chatarrero
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} ha sido rebuscada, y ha llevado {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Ubicación de Recuperación
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} ha sido saqueada, y ha llevado {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Ubicación de Saqueo
 FALLOUT.CHEM: Droga
 FALLOUT.ChemDuration.brief: Resumen
 FALLOUT.ChemDuration.instant: Instantáneo
@@ -298,237 +298,237 @@ FALLOUT.SETTLEMENT_ACTION.Business: Negocios
 FALLOUT.SETTLEMENT_ACTION.Guard: Guardia
 FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Caza y Recolecta
 FALLOUT.SETTLEMENT_ACTION.Scavenging: Saqueo
-FALLOUT.SETTLEMENT_ACTION.TendCrops: Tend Crops
-FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Trade Caravan
-FALLOUT.SETTLEMENT_ACTION.Unnasigned: Unnasigned
-FALLOUT.SETTLEMENT_ITEM.CraftingTable: Crafting Table
-FALLOUT.SETTLEMENT_ITEM.Defense: Defense
-FALLOUT.SETTLEMENT_ITEM.Power: Power
-FALLOUT.SETTLEMENT_ITEM.Resource: Resource
-FALLOUT.SETTLEMENT_ITEM.Room: Room
-FALLOUT.SETTLEMENT_ITEM.Store: Store
-FALLOUT.SETTLEMENT_ITEM.Structure: Structure
-FALLOUT.SETTLEMENT.Beds.label: Beds
-FALLOUT.SETTLEMENT.Defense.label: Defense
-FALLOUT.SETTLEMENT.Food.label: Food
-FALLOUT.SETTLEMENT.Happiness.label: Happiness
-FALLOUT.SETTLEMENT.Income.label: Income
-FALLOUT.SETTLEMENT.MaxPeople.tooltip: Max with Current Leader
-FALLOUT.SETTLEMENT.People.label: People
-FALLOUT.SETTLEMENT.Power.label: Power
-FALLOUT.SETTLEMENT.Water.label: Water
-FALLOUT.SKILL.Athletics: Athletics
-FALLOUT.SKILL.Barter: Barter
-FALLOUT.SKILL.Big Guns: Big Guns
-FALLOUT.SKILL.Energy Weapons: Energy Weapons
-FALLOUT.SKILL.Explosives: Explosives
-FALLOUT.SKILL.Lockpick: Lockpick
-FALLOUT.SKILL.Medicine: Medicine
-FALLOUT.SKILL.Melee Weapons: Melee Weapons
-FALLOUT.SKILL.Pilot: Pilot
-FALLOUT.SKILL.Repair: Repair
-FALLOUT.SKILL.Science: Science
-FALLOUT.SKILL.Small Guns: Small Guns
-FALLOUT.SKILL.Sneak: Sneak
-FALLOUT.SKILL.Speech: Speech
-FALLOUT.SKILL.Survival: Survival
-FALLOUT.SKILL.Throwing: Throwing
-FALLOUT.SKILL.Unarmed: Unarmed
-FALLOUT.SOURCE_TITLE.aat_fully_operational: "Astoundingly Awesome Tales, Issue No. 2 - Fully Operational"
-FALLOUT.SOURCE_TITLE.aat_hunted: "Astoundingly Awesome Tales, Issue No. 4 - Hunted!"
-FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Astoundingly Awesome Tales, Issue No. 6 - Into the Abyss"
-FALLOUT.SOURCE_TITLE.aat_one_to_four: "Astoundingly Awesome Tales, Issues #1-4 - Bonus Issue #5 Inside!"
-FALLOUT.SOURCE_TITLE.aat_orange_sky: "Astoundingly Awesome Tales, Issue No. 1 - Orange Colored Sky"
-FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Astoundingly Awesome Tales, Issue No. 3 - Showdown in Skull Canyon"
-FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: The Roleplaying Game"
-FALLOUT.SOURCE_TITLE.enclave_remnants: "NPC Pack #2 - Enclave Remnants"
-FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
-FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
-FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
-FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
-FALLOUT.SOURCE_TITLE.quickstart: Quickstart
-FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
-FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
-FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
-FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
-FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
-FALLOUT.TEMPLATES.Abilities: Abilities
-FALLOUT.TEMPLATES.Add_Perk: Add Perk
-FALLOUT.TEMPLATES.Add_Trait: Add Trait
-FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
-FALLOUT.TEMPLATES.Addictive: Addictive
-FALLOUT.TEMPLATES.Alcoholic: Alcoholic
-FALLOUT.TEMPLATES.AllLocations: All Locations
-FALLOUT.TEMPLATES.AMMO: AMMO
-FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
-FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
-FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
-FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
-FALLOUT.TEMPLATES.AmmoName: Ammo Name
-FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: For Armor Upgrades. Leg, Arm, etc.
-FALLOUT.TEMPLATES.Apparel_Type: Apparel Type
-FALLOUT.TEMPLATES.Apparel: Apparel
-FALLOUT.TEMPLATES.APPAREL: APPAREL
-FALLOUT.TEMPLATES.Armor_Type: Armor Type
-FALLOUT.TEMPLATES.Attack: Attack
-FALLOUT.TEMPLATES.ATTACKS: ATTACKS
-FALLOUT.TEMPLATES.Attribute: Attribute
-FALLOUT.TEMPLATES.Attributes: Attributes
-FALLOUT.TEMPLATES.Butchery: Butchery
+FALLOUT.SETTLEMENT_ACTION.TendCrops: Cultivar
+FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Caravana Comerciante
+FALLOUT.SETTLEMENT_ACTION.Unnasigned: Sin asignar
+FALLOUT.SETTLEMENT_ITEM.CraftingTable: Mesa de trabajo
+FALLOUT.SETTLEMENT_ITEM.Defense: Defensa
+FALLOUT.SETTLEMENT_ITEM.Power: Energía
+FALLOUT.SETTLEMENT_ITEM.Resource: Recurso
+FALLOUT.SETTLEMENT_ITEM.Room: Habitación
+FALLOUT.SETTLEMENT_ITEM.Store: Tienda
+FALLOUT.SETTLEMENT_ITEM.Structure: Estructura
+FALLOUT.SETTLEMENT.Beds.label: Camas
+FALLOUT.SETTLEMENT.Defense.label: Defensa
+FALLOUT.SETTLEMENT.Food.label: Comida
+FALLOUT.SETTLEMENT.Happiness.label: Felicidad
+FALLOUT.SETTLEMENT.Income.label: Ingreso
+FALLOUT.SETTLEMENT.MaxPeople.tooltip: Máximo con el líder actual
+FALLOUT.SETTLEMENT.People.label: Personas
+FALLOUT.SETTLEMENT.Power.label: Energía
+FALLOUT.SETTLEMENT.Water.label: Agua
+FALLOUT.SKILL.Athletics: Atletismo
+FALLOUT.SKILL.Barter: Trueque
+FALLOUT.SKILL.Big Guns: Armas Grandes
+FALLOUT.SKILL.Energy Weapons: Armas de energía
+FALLOUT.SKILL.Explosives: Explosivos
+FALLOUT.SKILL.Lockpick: Ganzúa
+FALLOUT.SKILL.Medicine: Medicina
+FALLOUT.SKILL.Melee Weapons: Armas cuerpo a cuerpo
+FALLOUT.SKILL.Pilot: Piloto
+FALLOUT.SKILL.Repair: Reparar
+FALLOUT.SKILL.Science: Ciencia
+FALLOUT.SKILL.Small Guns: Armas pequeñas
+FALLOUT.SKILL.Sneak: Acechar
+FALLOUT.SKILL.Speech: Discurso
+FALLOUT.SKILL.Survival: Supervivencia
+FALLOUT.SKILL.Throwing: Arrojado
+FALLOUT.SKILL.Unarmed: Desarmado
+FALLOUT.SOURCE_TITLE.aat_fully_operational: "Historias Asombrosamente Impresionantes, número 2 - Plenamente Operativo"
+FALLOUT.SOURCE_TITLE.aat_hunted: "Historias Asombrosamente Impresionantes, número 4 - ¡Cazado!"
+FALLOUT.SOURCE_TITLE.aat_into_the_abyss: "Historias Asombrosamente Impresionantes, número 6 - En el Abismo"
+FALLOUT.SOURCE_TITLE.aat_one_to_four: "Historias Asombrosamente Impresionantes, Números #1-4 -Bomus #5 dentro!"
+FALLOUT.SOURCE_TITLE.aat_orange_sky: "Historias Asombrosamente Impresionantes, número 1 - Cielo Anaranjado"
+FALLOUT.SOURCE_TITLE.aat_skull_canyon: "Historias Asombrosamente Impresionantes, número 3 - Enfrentamiento en el cañón de la calavera"
+FALLOUT.SOURCE_TITLE.core_rulebook: "Fallout: El Juego del Rol"
+FALLOUT.SOURCE_TITLE.enclave_remnants: "Paquete NPC #2 - Remanentes de Enclave"
+FALLOUT.SOURCE_TITLE.gm_toolkit: "Herramientas del Director de Juego"
+FALLOUT.SOURCE_TITLE.hollywood_heroes: "Paquete NPC - Héroes de Hollywood"
+FALLOUT.SOURCE_TITLE.map_pack_vault: "Paquete de mapa 1 - Refugio"
+FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Paquete de mapas 2 - Sitios del Yermo"
+FALLOUT.SOURCE_TITLE.quickstart: Inicio rápido
+FALLOUT.SOURCE_TITLE.reillys_rangers: "Paquete NPC #3 - Los Rangers de Reilly"
+FALLOUT.SOURCE_TITLE.rust_devils: "Paquete NPC #1 - Los Diablos del Óxido"
+FALLOUT.SOURCE_TITLE.settlers_guide: Libro Guía del colono
+FALLOUT.SOURCE_TITLE.wanderers_guide: Libro Guía del vagabundo
+FALLOUT.SOURCE_TITLE.winter_of_atom: Invierno Nuclear
+FALLOUT.TEMPLATES.Abilities: Habilidades
+FALLOUT.TEMPLATES.Add_Perk: Añadir cualidad
+FALLOUT.TEMPLATES.Add_Trait: Añadir rasgo
+FALLOUT.TEMPLATES.AddictionNumber: Número de addicción
+FALLOUT.TEMPLATES.Addictive: Adictivo
+FALLOUT.TEMPLATES.Alcoholic: Alcohólico
+FALLOUT.TEMPLATES.AllLocations: Todas las ubicaciones
+FALLOUT.TEMPLATES.AMMO: MUNICIÓN
+FALLOUT.TEMPLATES.Ammo.Current: Disparos Restantes
+FALLOUT.TEMPLATES.Ammo.Max: Disparo por objeto
+FALLOUT.TEMPLATES.Ammo.Multishot: Multidisparo
+FALLOUT.TEMPLATES.Ammo.QuantityRoll: Tirada de Cantidad
+FALLOUT.TEMPLATES.AmmoName: Nombre de la munición
+FALLOUT.TEMPLATES.Apparel_Mod_Placeholder: Para mejorar armaduras. Pierna, armadura, etc.
+FALLOUT.TEMPLATES.Apparel_Type: Tipo de ropa
+FALLOUT.TEMPLATES.Apparel: Ropa
+FALLOUT.TEMPLATES.APPAREL: ROPA
+FALLOUT.TEMPLATES.Armor_Type: Tipo de armadura
+FALLOUT.TEMPLATES.Attack: Ataque
+FALLOUT.TEMPLATES.ATTACKS: ATAQUES
+FALLOUT.TEMPLATES.Attribute: Atributo
+FALLOUT.TEMPLATES.Attributes: Atributos
+FALLOUT.TEMPLATES.Butchery: Carnicería
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
-FALLOUT.TEMPLATES.Category: Category
+FALLOUT.TEMPLATES.Category: Categoría
 FALLOUT.TEMPLATES.Compl: Compl.
-FALLOUT.TEMPLATES.Complications: Complications
-FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
-FALLOUT.TEMPLATES.conditions.dehydrated: Dehydrated
-FALLOUT.TEMPLATES.conditions.exhausted: Exhausted
-FALLOUT.TEMPLATES.conditions.fatigue: fatigue
-FALLOUT.TEMPLATES.conditions.full: Full
-FALLOUT.TEMPLATES.conditions.hunger: hunger
-FALLOUT.TEMPLATES.conditions.hungry: Hungry
-FALLOUT.TEMPLATES.conditions.hydrated: Hydrated
-FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxication
-FALLOUT.TEMPLATES.conditions.intoxication.tooltip: The number of alcoholic beverages consumed
-FALLOUT.TEMPLATES.conditions.peckish: Peckish
-FALLOUT.TEMPLATES.conditions.quenched: Quenched
-FALLOUT.TEMPLATES.conditions.rested: Rested
-FALLOUT.TEMPLATES.conditions.sated: Sated
-FALLOUT.TEMPLATES.conditions.sleep: sleep
-FALLOUT.TEMPLATES.conditions.starving: Starving
-FALLOUT.TEMPLATES.conditions.thirst: thirst
-FALLOUT.TEMPLATES.conditions.thirsty: Thirsty
-FALLOUT.TEMPLATES.conditions.tired: Tired
-FALLOUT.TEMPLATES.conditions.weary: Weary
-FALLOUT.TEMPLATES.ConstructionTime: Construction Time
-FALLOUT.TEMPLATES.Consumable_Group: Group
-FALLOUT.TEMPLATES.Consumable_Type: Type
-FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
-FALLOUT.TEMPLATES.Create_Ammo: Create Ammo
-FALLOUT.TEMPLATES.Create_Apparel_Mod: Create Apparel Mod
-FALLOUT.TEMPLATES.Create_books_and_magz: Create Book/Magazine
-FALLOUT.TEMPLATES.Create_Consumable: Create Consumable
-FALLOUT.TEMPLATES.Create_Disease: Create Disease
-FALLOUT.TEMPLATES.Create_Miscellany: Create Miscellany
-FALLOUT.TEMPLATES.Create_Robot_Module: Create Robot Module
-FALLOUT.TEMPLATES.Create_Special_Ability: Create Special Ability
-FALLOUT.TEMPLATES.Create_Weapon_Mod: Create Weapon Mod
-FALLOUT.TEMPLATES.Create_Weapon: Create Weapon
-FALLOUT.TEMPLATES.CreateNpc: Create NPC
-FALLOUT.TEMPLATES.CreateStructuresAndRooms: Create Structures and Rooms
-FALLOUT.TEMPLATES.Creature_Attribute: Creature Attribute
-FALLOUT.TEMPLATES.Creature_Skill: Creature Skill
-FALLOUT.TEMPLATES.current: current
-FALLOUT.TEMPLATES.CurrentLeader: Current Leader
-FALLOUT.TEMPLATES.CustomAttribute: Custom Attribute
-FALLOUT.TEMPLATES.CustomSkill: Custom Skill
-FALLOUT.TEMPLATES.Damage_Effects: Damage Effects
-FALLOUT.TEMPLATES.DAMAGE_EFFECTS: DAMAGE EFFECTS
-FALLOUT.TEMPLATES.DAMAGE_TYPE: DAMAGE TYPE
-FALLOUT.TEMPLATES.DAMAGE: DAMAGE
-FALLOUT.TEMPLATES.Data: Data
-FALLOUT.TEMPLATES.DaysInfected: Days Infected
-FALLOUT.TEMPLATES.Default_Attribute: Default Attribute
-FALLOUT.TEMPLATES.DEFENSE: DEFENSE
-FALLOUT.TEMPLATES.Degree: Degree
-FALLOUT.TEMPLATES.Delete_Item: Delete Item
-FALLOUT.TEMPLATES.Delete: Delete
-FALLOUT.TEMPLATES.DERIVED: DERIVED
-FALLOUT.TEMPLATES.Description: Description
-FALLOUT.TEMPLATES.Details: Details
-FALLOUT.TEMPLATES.DiseaseIncubating: Incubating
-FALLOUT.TEMPLATES.DiseaseProgress: Day {day} of {days}
-FALLOUT.TEMPLATES.Duration: Duration
-FALLOUT.TEMPLATES.Edit_Item: Edit Item
-FALLOUT.TEMPLATES.Edit: Edit
-FALLOUT.TEMPLATES.Effect: Effect
-FALLOUT.TEMPLATES.Effects: Effects
-FALLOUT.TEMPLATES.Encumbrance_Level: Encumbrance Level
-FALLOUT.TEMPLATES.ENG: ENG
-FALLOUT.TEMPLATES.FAVORITE_WEAPONS: FAVORITE WEAPONS
-FALLOUT.TEMPLATES.Fire_Rate: Fire Rate
-FALLOUT.TEMPLATES.FIRE_RATE: FIRE RATE
-FALLOUT.TEMPLATES.FoundItems: Found Items
-FALLOUT.TEMPLATES.Gear: Gear
+FALLOUT.TEMPLATES.Complications: Complicaciones
+FALLOUT.TEMPLATES.CONDITIONS: CONDICIONES
+FALLOUT.TEMPLATES.conditions.dehydrated: Deshidratado
+FALLOUT.TEMPLATES.conditions.exhausted: Exhausto
+FALLOUT.TEMPLATES.conditions.fatigue: fatiga
+FALLOUT.TEMPLATES.conditions.full: Completo
+FALLOUT.TEMPLATES.conditions.hunger: hambre
+FALLOUT.TEMPLATES.conditions.hungry: Hambriento
+FALLOUT.TEMPLATES.conditions.hydrated: Hidratado
+FALLOUT.TEMPLATES.conditions.intoxication.label: Intoxicación
+FALLOUT.TEMPLATES.conditions.intoxication.tooltip: El número de bebidas alcohólicas consumidas
+FALLOUT.TEMPLATES.conditions.peckish: Algo Hambriento
+FALLOUT.TEMPLATES.conditions.quenched: Satisfecho
+FALLOUT.TEMPLATES.conditions.rested: Descansado
+FALLOUT.TEMPLATES.conditions.sated: Saciado
+FALLOUT.TEMPLATES.conditions.sleep: dormir
+FALLOUT.TEMPLATES.conditions.starving: Famélico
+FALLOUT.TEMPLATES.conditions.thirst: sed
+FALLOUT.TEMPLATES.conditions.thirsty: Sediento
+FALLOUT.TEMPLATES.conditions.tired: Cansado
+FALLOUT.TEMPLATES.conditions.weary: Cansado
+FALLOUT.TEMPLATES.ConstructionTime: Tiempo de construcción
+FALLOUT.TEMPLATES.Consumable_Group: Grupo
+FALLOUT.TEMPLATES.Consumable_Type: Tipo
+FALLOUT.TEMPLATES.Create_Addiction: Crear adición
+FALLOUT.TEMPLATES.Create_Ammo: Crear munición
+FALLOUT.TEMPLATES.Create_Apparel_Mod: Crear Mod de ropa
+FALLOUT.TEMPLATES.Create_books_and_magz: Crear libro/revista
+FALLOUT.TEMPLATES.Create_Consumable: Crear Consumible
+FALLOUT.TEMPLATES.Create_Disease: Crear Enfermedad
+FALLOUT.TEMPLATES.Create_Miscellany: Crear Miscelánea
+FALLOUT.TEMPLATES.Create_Robot_Module: Crear módulo de Robot
+FALLOUT.TEMPLATES.Create_Special_Ability: Crear Habilidad Especial
+FALLOUT.TEMPLATES.Create_Weapon_Mod: Crear Mod de Armas
+FALLOUT.TEMPLATES.Create_Weapon: Crear arma
+FALLOUT.TEMPLATES.CreateNpc: Crear NPC
+FALLOUT.TEMPLATES.CreateStructuresAndRooms: Crear estructuras y habitaciones
+FALLOUT.TEMPLATES.Creature_Attribute: Atributo de Criatura
+FALLOUT.TEMPLATES.Creature_Skill: Habilidad de Criatura
+FALLOUT.TEMPLATES.current: actual
+FALLOUT.TEMPLATES.CurrentLeader: Líder actual
+FALLOUT.TEMPLATES.CustomAttribute: Atributo personalizado
+FALLOUT.TEMPLATES.CustomSkill: Habilidad personalizada
+FALLOUT.TEMPLATES.Damage_Effects: Efectos de daño
+FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFECTOS DE DAÑO
+FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DE DAÑO
+FALLOUT.TEMPLATES.DAMAGE: DAÑO
+FALLOUT.TEMPLATES.Data: Datos
+FALLOUT.TEMPLATES.DaysInfected: Días Infectado
+FALLOUT.TEMPLATES.Default_Attribute: Atributo por defecto
+FALLOUT.TEMPLATES.DEFENSE: DEFENSA
+FALLOUT.TEMPLATES.Degree: Grado
+FALLOUT.TEMPLATES.Delete_Item: Eliminar objeto
+FALLOUT.TEMPLATES.Delete: Eliminar
+FALLOUT.TEMPLATES.DERIVED: DERIVADO
+FALLOUT.TEMPLATES.Description: Descripción
+FALLOUT.TEMPLATES.Details: Detalles
+FALLOUT.TEMPLATES.DiseaseIncubating: Incubando
+FALLOUT.TEMPLATES.DiseaseProgress: Día {day} de {days}
+FALLOUT.TEMPLATES.Duration: Duración
+FALLOUT.TEMPLATES.Edit_Item: Editar objeto
+FALLOUT.TEMPLATES.Edit: Editar
+FALLOUT.TEMPLATES.Effect: Efecto
+FALLOUT.TEMPLATES.Effects: Efectos
+FALLOUT.TEMPLATES.Encumbrance_Level: Nivel de carga
+FALLOUT.TEMPLATES.ENG: ING
+FALLOUT.TEMPLATES.FAVORITE_WEAPONS: ARMAS FAVORITAS
+FALLOUT.TEMPLATES.Fire_Rate: Cadencia de Fuego
+FALLOUT.TEMPLATES.FIRE_RATE: CADENCIA DE FUEGO
+FALLOUT.TEMPLATES.FoundItems: Objetos encontrados
+FALLOUT.TEMPLATES.Gear: Equipo
 FALLOUT.TEMPLATES.GENERAL: GENERAL
-FALLOUT.TEMPLATES.Healthy: Healthy
-FALLOUT.TEMPLATES.HitLocationLabel: Hit Location
-FALLOUT.TEMPLATES.HP_Healed: HP Healed
-FALLOUT.TEMPLATES.HP: HP
-FALLOUT.TEMPLATES.InfectionActive: Infection Active
-FALLOUT.TEMPLATES.INITIATIVE: INITIATIVE
-FALLOUT.TEMPLATES.Injuries: Injuries
-FALLOUT.TEMPLATES.INJURIES: INJURIES
-FALLOUT.TEMPLATES.Injury_Left_Click: Injury (Left Click)
-FALLOUT.TEMPLATES.Irradiated: Irradiated
-FALLOUT.TEMPLATES.IrradiatedDamageDice: Irradiated Damage Dice
-FALLOUT.TEMPLATES.Issue: Issue
-FALLOUT.TEMPLATES.Items: Items
-FALLOUT.TEMPLATES.Junk: Junk
+FALLOUT.TEMPLATES.Healthy: Saludable
+FALLOUT.TEMPLATES.HitLocationLabel: Localización de impacto
+FALLOUT.TEMPLATES.HP_Healed: PV curados
+FALLOUT.TEMPLATES.HP: PV
+FALLOUT.TEMPLATES.InfectionActive: Infección activa
+FALLOUT.TEMPLATES.INITIATIVE: INICIATIVA
+FALLOUT.TEMPLATES.Injuries: Heridas
+FALLOUT.TEMPLATES.INJURIES: HERIDAS
+FALLOUT.TEMPLATES.Injury_Left_Click: Herida (Click Izquierdo)
+FALLOUT.TEMPLATES.Irradiated: Irradiado
+FALLOUT.TEMPLATES.IrradiatedDamageDice: Dado de Daño Irradiación
+FALLOUT.TEMPLATES.Issue: Problema
+FALLOUT.TEMPLATES.Items: Objetos
+FALLOUT.TEMPLATES.Junk: Chatarra
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
-FALLOUT.TEMPLATES.Learned: Learned
-FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCATIONS & INJURIES
-FALLOUT.TEMPLATES.Locations: Locations
-FALLOUT.TEMPLATES.Luck: Luck
-FALLOUT.TEMPLATES.MaterialsRecoverd: Materials Recovered
-FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
-FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PARTY AP
-FALLOUT.TEMPLATES.max: max
-FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
-FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
-FALLOUT.TEMPLATES.Mod_Type: Mod Type
-FALLOUT.TEMPLATES.MODULES: MODULES
-FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
-FALLOUT.TEMPLATES.Notes: Notes
-FALLOUT.TEMPLATES.Origin: Origin
+FALLOUT.TEMPLATES.Learned: Aprendido
+FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCACIONES Y HERIDAS
+FALLOUT.TEMPLATES.Locations: Localizaciones
+FALLOUT.TEMPLATES.Luck: Suerte
+FALLOUT.TEMPLATES.MaterialsRecoverd: Materiales recuperados
+FALLOUT.TEMPLATES.MaterialsRequired: Materiales necesarios
+FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PA DEL GRUPO
+FALLOUT.TEMPLATES.max: máx
+FALLOUT.TEMPLATES.MAX: MÁX
+FALLOUT.TEMPLATES.Melee_Bonus: Bonificador cuerpo a cuerpo
+FALLOUT.TEMPLATES.Melee_Damage: Daño cuerpo a cuerpo
+FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
+FALLOUT.TEMPLATES.MODULES: MÓDULOS
+FALLOUT.TEMPLATES.Name_Prefix: Prefijo del nombre
+FALLOUT.TEMPLATES.Notes: Notas
+FALLOUT.TEMPLATES.Origin: Origen
 FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
-FALLOUT.TEMPLATES.ParentItem: Parent Item
-FALLOUT.TEMPLATES.PARTY_AP: PARTY AP
+FALLOUT.TEMPLATES.ParentItem: Objeto Padre
+FALLOUT.TEMPLATES.PARTY_AP: PA GRUPO
 FALLOUT.TEMPLATES.PERK: PERK
-FALLOUT.TEMPLATES.PHYS: PHYS
-FALLOUT.TEMPLATES.Points: Points
-FALLOUT.TEMPLATES.POISON: POISON
-FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: POWER ARMOR HEALTH
-FALLOUT.TEMPLATES.Prepared: Prepared
-FALLOUT.TEMPLATES.Publication: Publication
-FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
-FALLOUT.TEMPLATES.Qualities: Qualities
+FALLOUT.TEMPLATES.PHYS: FIS
+FALLOUT.TEMPLATES.Points: Puntos
+FALLOUT.TEMPLATES.POISON: VENENO
+FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: SALUD DE LA SERVOARMADURA
+FALLOUT.TEMPLATES.Prepared: Preparado
+FALLOUT.TEMPLATES.Publication: Publicación
+FALLOUT.TEMPLATES.Qualities_and_Effects: Calidades y Efectos
+FALLOUT.TEMPLATES.Qualities: Calidades
 FALLOUT.TEMPLATES.RAD: RAD
-FALLOUT.TEMPLATES.Radiation_Healed: Radiation Healed
-FALLOUT.TEMPLATES.RADIATION: RADIATION
-FALLOUT.TEMPLATES.Range: Range
+FALLOUT.TEMPLATES.Radiation_Healed: Radiación curada
+FALLOUT.TEMPLATES.RADIATION: RADIACIÓN
+FALLOUT.TEMPLATES.Range: Rango
 FALLOUT.TEMPLATES.RANGE: RANGE
-FALLOUT.TEMPLATES.Rank: Rank
-FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [current/maximum]
-FALLOUT.TEMPLATES.Ranks: Ranks
-FALLOUT.TEMPLATES.Re_roll: Re-roll
-FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
-FALLOUT.TEMPLATES.Requirements: Requirements
-FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
-FALLOUT.TEMPLATES.Resistances: Resistances
-FALLOUT.TEMPLATES.RESISTANCES: RESISTANCES
-FALLOUT.TEMPLATES.Salvage: Salvage
-FALLOUT.TEMPLATES.SalvageTooltip: Salvage Check TN
-FALLOUT.TEMPLATES.Scale: Scale
-FALLOUT.TEMPLATES.SettlersAndJobs: Settlers and Jobs
-FALLOUT.TEMPLATES.Skill: Skill
-FALLOUT.TEMPLATES.Skills: Skills
-FALLOUT.TEMPLATES.Source: Source
-FALLOUT.TEMPLATES.Status: Status
-FALLOUT.TEMPLATES.Stockpile: Stockpile
-FALLOUT.TEMPLATES.StructuresAndRooms: Structures and Rooms
-FALLOUT.TEMPLATES.Successes: Successes
-FALLOUT.TEMPLATES.Tag: Tag
-FALLOUT.TEMPLATES.Tagged: Tagged
-FALLOUT.TEMPLATES.Tear: Wear & Tear
-FALLOUT.TEMPLATES.Thirst_Reduction: Thirst Reduction
-FALLOUT.TEMPLATES.TimeTaken: Time Taken
+FALLOUT.TEMPLATES.Rank: Rango
+FALLOUT.TEMPLATES.Ranks_current_maximum: Rangos [actual/máximo]
+FALLOUT.TEMPLATES.Ranks: Rangos
+FALLOUT.TEMPLATES.Re_roll: Volver a tirar
+FALLOUT.TEMPLATES.RemoveSettler: Eliminar colono
+FALLOUT.TEMPLATES.Requirements: Requisitos
+FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BONUS DE RESISTENCIA
+FALLOUT.TEMPLATES.Resistances: Resistencias
+FALLOUT.TEMPLATES.RESISTANCES: RESISTENCIAS
+FALLOUT.TEMPLATES.Salvage: Saquear
+FALLOUT.TEMPLATES.SalvageTooltip: Comprobación de Saqueo TN
+FALLOUT.TEMPLATES.Scale: Escala
+FALLOUT.TEMPLATES.SettlersAndJobs: Colonos y Empleos
+FALLOUT.TEMPLATES.Skill: Habilidad
+FALLOUT.TEMPLATES.Skills: Habilidades
+FALLOUT.TEMPLATES.Source: Fuente
+FALLOUT.TEMPLATES.Status: Estatus
+FALLOUT.TEMPLATES.Stockpile: Pila de Almacenamiento
+FALLOUT.TEMPLATES.StructuresAndRooms: Estructuras y habitaciones
+FALLOUT.TEMPLATES.Successes: Éxitos
+FALLOUT.TEMPLATES.Tag: Etiqueta
+FALLOUT.TEMPLATES.Tagged: Etiquetado
+FALLOUT.TEMPLATES.Tear: Desgaste y deterioro
+FALLOUT.TEMPLATES.Thirst_Reduction: Reducción de la sed
+FALLOUT.TEMPLATES.TimeTaken: Tiempo empleado
 FALLOUT.TEMPLATES.TN: TN
 FALLOUT.TEMPLATES.TRAIT: TRAIT
-FALLOUT.TEMPLATES.Treated_injury_Right_Click: Treated injury (Right Click)
-FALLOUT.TEMPLATES.TreatedInjuries: Treated Injuries
-FALLOUT.TEMPLATES.Type: Type
+FALLOUT.TEMPLATES.Treated_injury_Right_Click: Herida tratada (Click Derecho)
+FALLOUT.TEMPLATES.TreatedInjuries: Heridas tratadas
+FALLOUT.TEMPLATES.Type: Tipo
 FALLOUT.TEMPLATES.Use_Agility: Use Agility
 FALLOUT.TEMPLATES.Use_Charisma: Use Charisma
 FALLOUT.TEMPLATES.Use_Endurance: Use Endurance
