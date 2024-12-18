@@ -135,7 +135,6 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/item/object_or_structure/attributes-tab.hbs",
 		"systems/fallout/templates/item/origin/attributes-tab.hbs",
 		"systems/fallout/templates/item/perk/attributes-tab.hbs",
-		"systems/fallout/templates/item/perk/requirements-tab.hbs",
 		"systems/fallout/templates/item/perk/_partials/attributes.hbs",
 		"systems/fallout/templates/item/robot_armor/attributes-tab.hbs",
 		"systems/fallout/templates/item/robot_mod/attributes-tab.hbs",
