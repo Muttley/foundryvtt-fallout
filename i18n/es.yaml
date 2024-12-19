@@ -529,28 +529,28 @@ FALLOUT.TEMPLATES.TRAIT: TRAIT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Herida tratada (Click Derecho)
 FALLOUT.TEMPLATES.TreatedInjuries: Heridas tratadas
 FALLOUT.TEMPLATES.Type: Tipo
-FALLOUT.TEMPLATES.Use_Agility: Use Agility
-FALLOUT.TEMPLATES.Use_Charisma: Use Charisma
-FALLOUT.TEMPLATES.Use_Endurance: Use Endurance
-FALLOUT.TEMPLATES.Use_Intelligence: Use Intelligence
-FALLOUT.TEMPLATES.Use_Luck: Use Luck
-FALLOUT.TEMPLATES.Use_Perception: Use Perception
-FALLOUT.TEMPLATES.Use_Strength: Use Strength
-FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
-FALLOUT.TEMPLATES.Wealth: Wealth
-FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
-FALLOUT.TEMPLATES.WEAPON_QUALITIES: WEAPON QUALITIES
-FALLOUT.TEMPLATES.Weapon_Type: Weapon Type
-FALLOUT.TEMPLATES.Weapon: Weapon
-FALLOUT.TEMPLATES.WeaponName: Weapon Name
-FALLOUT.TEMPLATES.Weapons: Weapons
-FALLOUT.TEMPLATES.WellRested: Well Rested
-FALLOUT.TIME.DAYS_PLURAL: "{days} Days"
-FALLOUT.TIME.DAYS_SINGULAR: "{days} Day"
-FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
-FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
-FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
-FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
+FALLOUT.TEMPLATES.Use_Agility: Usar Agilidad
+FALLOUT.TEMPLATES.Use_Charisma: Usar Carisma
+FALLOUT.TEMPLATES.Use_Endurance: Usar Resistencia
+FALLOUT.TEMPLATES.Use_Intelligence: Usar Inteligencia
+FALLOUT.TEMPLATES.Use_Luck: Usar Suerte
+FALLOUT.TEMPLATES.Use_Perception: Usar Percepción
+FALLOUT.TEMPLATES.Use_Strength: Usar Fuerza
+FALLOUT.TEMPLATES.VEHICLE_QUALITIES: CALIDADES DE VEHÍCULOS
+FALLOUT.TEMPLATES.Wealth: Riqueza
+FALLOUT.TEMPLATES.Weapon_Qualities: Calidades de armas
+FALLOUT.TEMPLATES.WEAPON_QUALITIES: CALIDADES DE ARMA
+FALLOUT.TEMPLATES.Weapon_Type: Tipo de arma
+FALLOUT.TEMPLATES.Weapon: Arma
+FALLOUT.TEMPLATES.WeaponName: Nombre del arma
+FALLOUT.TEMPLATES.Weapons: Armas
+FALLOUT.TEMPLATES.WellRested: Bien descansado
+FALLOUT.TIME.DAYS_PLURAL: "{días} Días"
+FALLOUT.TIME.DAYS_SINGULAR: "{days} Día"
+FALLOUT.TIME.HOURS_PLURAL: "{hours} Horas"
+FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hora"
+FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutos"
+FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minuto"
 FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
 FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
