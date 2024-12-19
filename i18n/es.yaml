@@ -485,7 +485,7 @@ FALLOUT.TEMPLATES.Origin: Origen
 FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
 FALLOUT.TEMPLATES.ParentItem: Objeto Padre
 FALLOUT.TEMPLATES.PARTY_AP: PA GRUPO
-FALLOUT.TEMPLATES.PERK: PERK
+FALLOUT.TEMPLATES.PERK: RASGO
 FALLOUT.TEMPLATES.PHYS: FIS
 FALLOUT.TEMPLATES.Points: Puntos
 FALLOUT.TEMPLATES.POISON: VENENO
@@ -525,7 +525,7 @@ FALLOUT.TEMPLATES.Tear: Desgaste y deterioro
 FALLOUT.TEMPLATES.Thirst_Reduction: Reducción de la sed
 FALLOUT.TEMPLATES.TimeTaken: Tiempo empleado
 FALLOUT.TEMPLATES.TN: TN
-FALLOUT.TEMPLATES.TRAIT: TRAIT
+FALLOUT.TEMPLATES.TRAIT: CUALIDAD
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Herida tratada (Click Derecho)
 FALLOUT.TEMPLATES.TreatedInjuries: Heridas tratadas
 FALLOUT.TEMPLATES.Type: Tipo
@@ -551,19 +551,19 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Horas"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hora"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutos"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minuto"
-FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
-FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
-FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
-FALLOUT.TOOLTIPS.DamageEffect.freeze: Enemies hit by this attack will be Frozen if the number of Effects rolled are equal or more than half the target’s END (or half the target’s BODY for Creatures). A Frozen creature cannot take actions on its next turn.
-FALLOUT.TOOLTIPS.DamageEffect.persistent: "If one or more Effects are rolled, the target suffers the weapon’s damage again at the end of their next and subsequent turns, for a number of rounds equal to the number of Effects rolled. The target can spend a major action to make a test to stop persistent damage early, with the difficulty equal to the number of Effects rolled, and the attribute + skill chosen by the GM. Some Persistent weapons may inflict a different type of damage to the weapon, and where this is the case, it will be noted in brackets, for example: Persistent (Poison)."
-FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignore X points of the target’s DR for each Effect rolled, where X is the rating of this damage effect.
-FALLOUT.TOOLTIPS.DamageEffect.radioactive: For every Effect rolled, the target also suffers 1 point of radiation damage. This radiation damage is totalled and applied separately, after a character has suffered the normal damage from the attack.
-FALLOUT.TOOLTIPS.DamageEffect.spread: For each Effect rolled, your attack inflicts one additional hit on the target. Each additional hit inflicts half the rolled damage (rounded down) and hits a random location even if a specific location was targeted for the initial attack.
+FALLOUT.TOOLTIPS.DamageEffect.arc: Cada efecto obtenido golpea automáticamente a un objetivo adicional dentro del rango cercano del objetivo principal. Cada objetivo adicional sufre la mitad del daño obtenido (redondeado hacia arriba). A diferencia de Explosión, esto no cuesta munición adicional.
+FALLOUT.TOOLTIPS.DamageEffect.breaking: 'Por cada Efecto enrollado, reduce el número de @fos[DC] que proporciona la cobertura de un objetivo en 1, permanentemente. Si el objetivo no está cubierto, en su lugar reduce el DR de la ubicación golpeada por 1, según el tipo de daño del arma: el daño físico solo reduce el DR físico, por ejemplo.'
+FALLOUT.TOOLTIPS.DamageEffect.burst: El ataque alcanza a un objetivo adicional dentro del alcance cercano del objetivo principal por cada efecto obtenido. Cada objetivo adicional gasta 1 unidad adicional de munición del arma.
+FALLOUT.TOOLTIPS.DamageEffect.freeze: Los enemigos golpeados por este ataque quedarán congelados si la cantidad de efectos obtenidos es igual o mayor que la mitad de la RES del objetivo (o la mitad del CUERPO del objetivo en el caso de criaturas). Una criatura congelada no puede realizar acciones en su siguiente turno.
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "Si se obtienen uno o más Efectos, el objetivo sufre el daño del arma nuevamente al final de su siguiente turno y de los siguientes, durante un número de rondas igual al número de Efectos obtenidos. El objetivo puede gastar una acción mayor para realizar una prueba para detener el daño persistente antes, con una dificultad igual al número de Efectos obtenidos y el atributo + habilidad elegidos por el DJ. Algunas armas persistentes pueden infligir un tipo de daño diferente al arma, y ​​cuando este sea el caso, se indicará entre paréntesis, por ejemplo: Persistente (Veneno)."
+FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignora X puntos de la RD del objetivo por cada Efecto obtenido, donde X es la calificación de este efecto de daño.
+FALLOUT.TOOLTIPS.DamageEffect.radioactive: Por cada efecto obtenido, el objetivo también sufre 1 punto de daño por radiación. Este daño por radiación se suma y aplica por separado, después de que el personaje haya sufrido el daño normal del ataque.
+FALLOUT.TOOLTIPS.DamageEffect.spread: Por cada efecto obtenido, tu ataque inflige un golpe adicional al objetivo. Cada golpe adicional inflige la mitad del daño obtenido (redondeado hacia abajo) y golpea una ubicación aleatoria, incluso si se eligió una ubicación específica para el ataque inicial.
 FALLOUT.TOOLTIPS.DamageEffect.stun: If one or more Effects are rolled, the target cannot take their normal actions on their next turn. A stunned character or creature can still spend AP to take additional actions as normal.
-FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Las armas con el efecto Tranquilizar causan daño pero no Heridas. Si un ataque con un arma Tranquilizar causa suficiente daño como para causar una Herida, en su lugar el objetivo dañado debe pasar una prueba de RES + Supervivencia o Cuerpo + OTROS con una dificultad de X. Si tiene éxito, el ataque no tiene ningún otro efecto, pero si falla, queda inconsciente durante 1 hora. Si un objetivo queda reducido a 0 PV al mismo tiempo que sufriría una Herida, falla automáticamente la prueba y queda inconsciente durante 1 hora en lugar de cualquier otro efecto. Los personajes inmunes al daño por veneno o con una servoarmadura son inmunes a este efecto.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: The attack inflicts +1 damage for each Effect rolled.
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
-FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
+FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: El vehículo es voluminoso y tiene poca respuesta. Aumenta la dificultad de las pruebas para moverse en +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
 FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
 FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
