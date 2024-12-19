@@ -591,13 +591,13 @@ FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: Esta arma tiene un "retroceso" particul
 FALLOUT.TOOLTIPS.WeaponQuality.recon: Cuando apuntas con un arma de reconocimiento, puedes marcar el objetivo al que apuntaste. El próximo aliado que ataque ese objetivo puede volver a tirar un d20 en su ataque.
 FALLOUT.TOOLTIPS.WeaponQuality.reliable: Durante cada combate, un arma fiable ignora la primera complicación que obtengas en una prueba para usar esa arma. Un arma no puede ser fiable y poco fiable al mismo tiempo.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: El arma se carga con especial lentitud. Después de disparar, debes realizar una acción menor para recargarla antes de poder dispararla nuevamente.
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
-FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
-FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in two hands to be used effectively; attempting to attack with a Two-Handed weapon in one hand increases the difficulty by +2.
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
-FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Si un enemigo no se da cuenta de tu presencia cuando atacas con un arma con silenciador, no se dará cuenta del ataque a menos que sea el objetivo o pase una prueba de PER + Supervivencia con una dificultad de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.surge: El arma es especialmente dañina para máquinas como robots y servoarmaduras. El arma obtiene el efecto de daño violento contra robots, enemigos con servoarmaduras y otros objetivos mecánicos o electrónicos (como torretas).
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: Un arma arrojadiza (C) puede ser lanzada, como un ataque a distancia con un alcance ideal de Cercano. Un arma arrojadiza (M) puede ser lanzada, como un ataque a distancia con un alcance ideal de Medio. Realizas una prueba de AGI + Lanzamiento para atacar con el arma, dependiendo del tipo de arma.
+FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Un arma de dos manos debe sostenerse con dos manos para usarse con eficacia; intentar atacar con un arma de dos manos con una mano aumenta la dificultad en +2.
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Cuando realizas un ataque con un arma no confiable, aumenta el rango de complicación del ataque en 1. Un arma no puede ser confiable y no confiable al mismo tiempo.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Esta arma nunca fue diseñada para usarse como arma de mano. Al atacar con un arma, cada complicación que infliges hace 2DC de daño por radiación debido a la retroalimentación radiactiva. Un arma no puede tener radiación confiable e inestable.
+FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Si un ataque con un arma de Lazo tiene éxito, puedes gastar 2 PA para mover al objetivo a una zona superior. En los turnos siguientes, tanto tú como el objetivo podéis intentar una prueba opuesta de FUE o AGI + Atletismo para mover al personaje que está al otro extremo del lazo o liberarse.
 FALLOUT.UI.Add: Añadir
 FALLOUT.UI.Addictions: Adicciones
 FALLOUT.UI.APPAREL_MODS: Modos de ropa
@@ -616,7 +616,7 @@ FALLOUT.UI.CONSUMABLES: Consumibles
 FALLOUT.UI.Consume: Consumir
 FALLOUT.UI.Cost: Coste
 FALLOUT.UI.Damage: Daño
-FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.message: '¿Te gustaría eliminar o convertir en chatarra este objeto?'
 FALLOUT.UI.DeleteOrJunk.title: '¿Borrar o convertir en chatarra?'
 FALLOUT.UI.DISEASES: Enfermedades
 FALLOUT.UI.favorite: Favorito
@@ -656,87 +656,87 @@ FALLOUT.VEHICLE.vehicleQuality.cargo_x: Carga
 FALLOUT.VEHICLE.vehicleQuality.cumbersome: Incómodo
 FALLOUT.VEHICLE.vehicleQuality.enclosed: Encerrado
 FALLOUT.VEHICLE.vehicleQuality.exposed: Expuesto
-FALLOUT.VEHICLE.vehicleQuality.flying: Flying
-FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
-FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
-FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
-FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
-FALLOUT.VEHICLE.zone_speed: Zone
-FALLOUT.WEAPONS.damageEffect.arc: Arc
-FALLOUT.WEAPONS.damageEffect.breaking: Breaking
-FALLOUT.WEAPONS.damageEffect.burst: Burst
-FALLOUT.WEAPONS.damageEffect.freeze: Freeze
-FALLOUT.WEAPONS.damageEffect.persistent: Persistent
-FALLOUT.WEAPONS.damageEffect.piercing_x: Piercing
-FALLOUT.WEAPONS.damageEffect.radioactive: Radioactive
-FALLOUT.WEAPONS.damageEffect.spread: Spread
-FALLOUT.WEAPONS.damageEffect.stun: Stun
-FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilize
-FALLOUT.WEAPONS.damageEffect.vicious: Vicious
-FALLOUT.WEAPONS.damageType.energy: Energy
-FALLOUT.WEAPONS.damageType.physical: Physical
-FALLOUT.WEAPONS.damageType.poison: Poison
-FALLOUT.WEAPONS.damageType.radiation: Radiation
-FALLOUT.WEAPONS.weaponQuality.accurate: Accurate
-FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Ammo-Hungry
-FALLOUT.WEAPONS.weaponQuality.aquatic: Aquatic
-FALLOUT.WEAPONS.weaponQuality.blast: Blast
-FALLOUT.WEAPONS.weaponQuality.bombard: Bombard
-FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
-FALLOUT.WEAPONS.weaponQuality.concealed: Concealed
-FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitating
-FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
+FALLOUT.VEHICLE.vehicleQuality.flying: Volando
+FALLOUT.VEHICLE.vehicleQuality.high_performance: Alto rendimiento
+FALLOUT.VEHICLE.vehicleQuality.rugged: Áspero
+FALLOUT.VEHICLE.vehicleQuality.single_seat: Monoplaza
+FALLOUT.VEHICLE.vehicleQuality.watercraft: Embarcación
+FALLOUT.VEHICLE.zone_speed: Zona
+FALLOUT.WEAPONS.damageEffect.arc: Arco
+FALLOUT.WEAPONS.damageEffect.breaking: Rompiendo
+FALLOUT.WEAPONS.damageEffect.burst: Ráfaga
+FALLOUT.WEAPONS.damageEffect.freeze: Congelar
+FALLOUT.WEAPONS.damageEffect.persistent: Persistente
+FALLOUT.WEAPONS.damageEffect.piercing_x: Perforante
+FALLOUT.WEAPONS.damageEffect.radioactive: Radioactivo
+FALLOUT.WEAPONS.damageEffect.spread: Dispersión
+FALLOUT.WEAPONS.damageEffect.stun: Aturdir
+FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilizante
+FALLOUT.WEAPONS.damageEffect.vicious: Cruel
+FALLOUT.WEAPONS.damageType.energy: Energía
+FALLOUT.WEAPONS.damageType.physical: Físico
+FALLOUT.WEAPONS.damageType.poison: Veneno
+FALLOUT.WEAPONS.damageType.radiation: Radiación
+FALLOUT.WEAPONS.weaponQuality.accurate: Preciso
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Hambre de munición
+FALLOUT.WEAPONS.weaponQuality.aquatic: Acuático
+FALLOUT.WEAPONS.weaponQuality.blast: Explosivo
+FALLOUT.WEAPONS.weaponQuality.bombard: Bombardear
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Bocajarro
+FALLOUT.WEAPONS.weaponQuality.concealed: Oculto
+FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitante
+FALLOUT.WEAPONS.weaponQuality.delay_x: Retraso
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
-FALLOUT.WEAPONS.weaponQuality.inaccurate: Inaccurate
-FALLOUT.WEAPONS.weaponQuality.limited: Limited
-FALLOUT.WEAPONS.weaponQuality.mine: Mine
-FALLOUT.WEAPONS.weaponQuality.night_vision: Night Vision
-FALLOUT.WEAPONS.weaponQuality.parry: Parry
-FALLOUT.WEAPONS.weaponQuality.placed: Placed
-FALLOUT.WEAPONS.weaponQuality.recoil_x: Recoil
-FALLOUT.WEAPONS.weaponQuality.recon: Recon
-FALLOUT.WEAPONS.weaponQuality.reliable: Reliable
-FALLOUT.WEAPONS.weaponQuality.slow_load: Slow Load
-FALLOUT.WEAPONS.weaponQuality.suppressed: Suppressed
+FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprecisa
+FALLOUT.WEAPONS.weaponQuality.limited: Limitada
+FALLOUT.WEAPONS.weaponQuality.mine: Mina
+FALLOUT.WEAPONS.weaponQuality.night_vision: Visión nocturna
+FALLOUT.WEAPONS.weaponQuality.parry: Parada
+FALLOUT.WEAPONS.weaponQuality.placed: Colocado
+FALLOUT.WEAPONS.weaponQuality.recoil_x: Retroceso
+FALLOUT.WEAPONS.weaponQuality.recon: Reconocimiento
+FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
+FALLOUT.WEAPONS.weaponQuality.slow_load: Recarga lenta
+FALLOUT.WEAPONS.weaponQuality.suppressed: Suprimido
 FALLOUT.WEAPONS.weaponQuality.surge: Surge
-FALLOUT.WEAPONS.weaponQuality.thrown: Thrown
-FALLOUT.WEAPONS.weaponQuality.two_handed: Two-Handed
-FALLOUT.WEAPONS.weaponQuality.unreliable: Unreliable
-FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Unstable Radiation
-FALLOUT.WEAPONS.weaponQuality.wrangle: Wrangle
-FALLOUT.WEAPONS.weaponType.bigGuns: Big Guns
-FALLOUT.WEAPONS.weaponType.bows: Bows
-FALLOUT.WEAPONS.weaponType.creatureAttack: Creature Attack
-FALLOUT.WEAPONS.weaponType.custom: Custom
-FALLOUT.WEAPONS.weaponType.energyWeapons: Energy Weapons
-FALLOUT.WEAPONS.weaponType.explosives: Explosives
-FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
-FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
-FALLOUT.WEAPONS.weaponType.throwing: Throwing
-FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
-ITEM.AmmoPerShot: Ammo Per Shot
-TYPES.Actor.character: Character
-TYPES.Actor.creature: Creature
-TYPES.Actor.npc: NPC
+FALLOUT.WEAPONS.weaponQuality.thrown: Arrojadiza
+FALLOUT.WEAPONS.weaponQuality.two_handed: A dos manos
+FALLOUT.WEAPONS.weaponQuality.unreliable: Poco fiable
+FALLOUT.WEAPONS.weaponQuality.unstable_radiation: Radiación inestable
+FALLOUT.WEAPONS.weaponQuality.wrangle: Lazo
+FALLOUT.WEAPONS.weaponType.bigGuns: Armas Grandes
+FALLOUT.WEAPONS.weaponType.bows: Arcos
+FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
+FALLOUT.WEAPONS.weaponType.custom: Personalizado
+FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de energía
+FALLOUT.WEAPONS.weaponType.explosives: Explosivos
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas cuerpo a cuerpo
+FALLOUT.WEAPONS.weaponType.smallGuns: Armas pequeñas
+FALLOUT.WEAPONS.weaponType.throwing: Lanzando
+FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
+ITEM.AmmoPerShot: Munición por Disparo
+TYPES.Actor.character: Personaje
+TYPES.Actor.creature: Criatura
+TYPES.Actor.npc: PNJ
 TYPES.Actor.robot: Robot
-TYPES.Actor.scavenging_location: Scavenging Location
-TYPES.Actor.settlement: Settlement
-TYPES.Actor.vehicle: Vehicle
-TYPES.Item.addiction: Addiction
-TYPES.Item.ammo: Ammo
-TYPES.Item.apparel_mod: Apparel Mod
-TYPES.Item.apparel: Apparel
-TYPES.Item.books_and_magz: Book/Magazine
-TYPES.Item.consumable: Consumable
-TYPES.Item.disease: Disease
-TYPES.Item.miscellany: Miscellany
-TYPES.Item.object_or_structure: Object/Structure
-TYPES.Item.origin: Origin
-TYPES.Item.perk: Perk
-TYPES.Item.robot_armor: Robot Armor
-TYPES.Item.robot_mod: Robot Module
-TYPES.Item.skill: Skill
-TYPES.Item.special_ability: Special Ability
-TYPES.Item.trait: Trait
-TYPES.Item.weapon_mod: Weapon Mod
-TYPES.Item.weapon: Weapon
+TYPES.Actor.scavenging_location: Ubicación de Saqueo
+TYPES.Actor.settlement: Asentamiento
+TYPES.Actor.vehicle: Vehículo
+TYPES.Item.addiction: Adicción
+TYPES.Item.ammo: Munición
+TYPES.Item.apparel_mod: Modos de ropa
+TYPES.Item.apparel: Ropa
+TYPES.Item.books_and_magz: Libro/Revista
+TYPES.Item.consumable: Consumible
+TYPES.Item.disease: Enfermedad
+TYPES.Item.miscellany: Miscelánea
+TYPES.Item.object_or_structure: Objeto/Estructura
+TYPES.Item.origin: Origen
+TYPES.Item.perk: Extra
+TYPES.Item.robot_armor: Armadura de Robot
+TYPES.Item.robot_mod: Módulo de Robot
+TYPES.Item.skill: Habilidad
+TYPES.Item.special_ability: Habilidad especial
+TYPES.Item.trait: Rasgo
+TYPES.Item.weapon_mod: Mod de arma
+TYPES.Item.weapon: Arma
