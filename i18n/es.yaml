@@ -482,7 +482,7 @@ FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Prefijo del nombre
 FALLOUT.TEMPLATES.Notes: Notas
 FALLOUT.TEMPLATES.Origin: Origen
-FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
+FALLOUT.TEMPLATES.OVERSEER_AP: PA SUPERVISOR
 FALLOUT.TEMPLATES.ParentItem: Objeto Padre
 FALLOUT.TEMPLATES.PARTY_AP: PA GRUPO
 FALLOUT.TEMPLATES.PERK: RASGO
@@ -564,33 +564,33 @@ FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Las armas con el efecto Tranquiliza
 FALLOUT.TOOLTIPS.DamageEffect.vicious: El ataque inflige +1 de daño por cada efecto obtenido.
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: El vehículo puede transportar hasta X libras de carga adicional.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: El vehículo es voluminoso y tiene poca respuesta. Aumenta la dificultad de las pruebas para moverse en +1.
-FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
-FALLOUT.TOOLTIPS.VehicleQuality.exposed: The passenger and crew of an exposed vehicle can be targeted by attacks from outside the vehicle and may attack with their own weapons.
-FALLOUT.TOOLTIPS.VehicleQuality.flying: The vehicle flies through the air, through ‘empty’ zones above the ground level of the battlefield. If the vehicle goes out of control, roll 1CD – it falls a number of zones equal to the number rolled, and will crash if that would bring it to ground level or if an Effect is rolled. It will also crash if the vehicle’s Speed is reduced to 0. If the aircraft crashes, it suffers 8CD Piercing 2 Physical damage.
-FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and finely-tuned. The pilot may spend 2 AP after a successful test to move the vehicle to move 1 additional zone. Any test to repair the vehicle increase in difficulty by +1, due to its finely-tuned nature.
-FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
-FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
-FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
-FALLOUT.TOOLTIPS.WeaponQuality.accurate: If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 @fos[DC] per AP spent to the attack’s damage. If you gain damage in this way, you may not spend ammunition for extra damage. A weapon cannot be both Accurate and Inaccurate.
-FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: The weapon consumes ammo at a much higher rate than other weapons. Each time the weapon is fired, it spends X ammo, rather than 1. In addition, extra damage requires spending X ammo per +1CD, with a maximum number of CD equal to the weapon’s Fire Rate. Additional uses of ammunition, such as the Burst damage effect, also spend X ammo for every 1 ammo that would normally be spent.
-FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.
-FALLOUT.TOOLTIPS.WeaponQuality.blast: "When you make an attack with a Blast weapon, you do not target a single opponent. Instead, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2 (adjusted for range as normal). If you succeed, every creature (and other damageable target) in that zone suffers the weapon’s damage. If you fail, your misplaced attack is less effective: roll only half the weapon’s @fos[DC] to determine the damage inflicted to creatures in the target zone and ignore the weapon’s normal damage effects."
-FALLOUT.TOOLTIPS.WeaponQuality.bombard: "The weapon can deliver a series of explosions over a wide area. This functions identically to the Blast quality, with one addition: When an attack is made with the weapon, you may spend additional ammunition to target additional zones. Each additional zone requires that 2 ammunition be spent, and additional zones must be adjacent to the initial target zone. Ammunition spent to target additional zones is limited by the weapon’s Fire Rate."
-FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: A Close Quarters weapon is easy to use up-close, and suffers no difficulty increase for being used when within Reach of an enemy.
-FALLOUT.TOOLTIPS.WeaponQuality.concealed: A Concealed weapon is small, or otherwise easy to hide on your person. Enemies do not spot a Concealed weapon unless you’re wielding it, or if they make a thorough search and succeed at a PER + Survival test with a difficulty of 2.
-FALLOUT.TOOLTIPS.WeaponQuality.debilitating: The difficulty of any skill test to treat injuries inflicted by a Debilitating weapon increase by +1.
-FALLOUT.TOOLTIPS.WeaponQuality.delay_x: The weapon operates on a timer or fuse, and will not detonate immediately. A Thrown Delay weapon can be thrown normally to the target location, while other Delay weapons may be placed in their desired location. A Delay (1) weapon detonates at the start of the first round after it is thrown or otherwise triggered. A Delay (2) weapon detonates at the start of the round after that, and so on.
-FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Ammunition is spent at ten times the normal rate by Gatling weapons: whenever you would spend one shot of ammunition, a Gatling weapon instead spends a burst of 10 shots. Whenever you spend ammunition to increase this weapon’s damage, add +2 @fos[DC] per ten-shot burst (to a maximum number of bursts equal to the weapon’s Fire Rate), rather than +1 @fos[DC] per shot."
-FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: When making an attack with an Inaccurate weapon, you gain no benefit from the Aim minor action. A weapon may not be both Accurate and Inaccurate.
-FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to make an attack at its ideal range.
-FALLOUT.TOOLTIPS.WeaponQuality.mine: When a Mine is placed onto a surface and primed, it becomes a dangerous object, inflicting its damage upon anyone who comes within Reach of it (and upon additional characters, if it has the Blast quality).
-FALLOUT.TOOLTIPS.WeaponQuality.night_vision: The sights of a weapon with Night Vision have been made to allow you to see more clearly in the dark. When you Aim with a Night Vision weapon, you ignore any increase in the difficulty of an attack due to darkness.
-FALLOUT.TOOLTIPS.WeaponQuality.parry: When an enemy attempts a melee attack against you, and you are wielding a Parry weapon, you may spend 1 AP to add +1 to your Defense against that attack.
-FALLOUT.TOOLTIPS.WeaponQuality.placed: The explosive device is placed in a specific location and set to detonate, often either with the Delay (X) quality or the Remote quality. Placing the explosive requires a PER + Explosives test with a difficulty of 1; this increases to 2 if you’ve been attacked since your last turn. Failure means the bomb hasn’t been set properly and will not detonate (or, if a complication is rolled, may have been set improperly, and may detonate unexpectedly). Success means the bomb has been set up properly.
-FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: This weapon has a particularly ferocious ‘kick’ when it fires, which might be too much for weaker users. If the user’s STR score is less than X, then all attacks with the weapon increase in difficulty by 1. You may ignore this effect if you wield the weapon two-handed, or if the weapon is already two-handed, by bracing it against a solid object or a bipod.
-FALLOUT.TOOLTIPS.WeaponQuality.recon: When you Aim with a Recon weapon, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack.
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: During each combat encounter, a Reliable weapon ignores the first complication you roll on a test to use that weapon. A weapon may not be both Reliable and Unreliable.
-FALLOUT.TOOLTIPS.WeaponQuality.slow_load: The weapon loads especially slowly. After this weapon has been fired, you must spend a minor action to reload the weapon before it can be fired again.
+FALLOUT.TOOLTIPS.VehicleQuality.enclosed: El vehículo está completamente cerrado, lo que protege a la tripulación y a los pasajeros que se encuentran en su interior. La tripulación y los pasajeros no pueden ser blanco de ataques desde el exterior del vehículo, pero tampoco pueden utilizar sus propias armas. Los pasajeros y la tripulación que se encuentran en el interior de los vehículos cerrados no sufren daños por radiación debido a los efectos ambientales.
+FALLOUT.TOOLTIPS.VehicleQuality.exposed: Los pasajeros y la tripulación de un vehículo expuesto pueden ser blanco de ataques desde fuera del vehículo y pueden atacar con sus propias armas.
+FALLOUT.TOOLTIPS.VehicleQuality.flying: 'El vehículo vuela por el aire, atravesando zonas "vacías" por encima del nivel del suelo del campo de batalla. Si el vehículo pierde el control, tira 1CD: cae una cantidad de zonas igual al número obtenido y se estrellará si eso lo lleva al nivel del suelo o si se obtiene un Efecto. También se estrellará si la Velocidad del vehículo se reduce a 0. Si la aeronave se estrella, sufre 8CD de daño físico penetrante 2.'
+FALLOUT.TOOLTIPS.VehicleQuality.high_performance: El vehículo es potente y está perfectamente calibrado. El piloto puede gastar 2 PA después de una prueba exitosa para mover el vehículo una zona adicional. Cualquier prueba para reparar el vehículo aumenta la dificultad en +1, debido a su naturaleza finamente calibrada.
+FALLOUT.TOOLTIPS.VehicleQuality.rugged: Las pruebas para reparar vehículos robustos reducen su dificultad en 1.
+FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Un vehículo monoplaza está diseñado para ser conducido por un solo piloto que también asume el papel de artillero sin la penalización normal.
+FALLOUT.TOOLTIPS.VehicleQuality.watercraft: El vehículo solo se desplaza sobre el agua y no puede desplazarse por el suelo. Si este vehículo sufre un impacto crítico en el chasis, comienza a llenarse de agua y se hundirá después de una cantidad de rondas igual al doble de la escala del vehículo.
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si realizas la acción menor Apuntar antes de atacar con un arma precisa, puedes gastar hasta 3 PA para agregar +1 @fos[DC] por PA gastado al daño del ataque. Si obtienes daño de esta manera, no puedes gastar munición para causar daño adicional. Un arma no puede ser precisa e imprecisa al mismo tiempo.
+FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: El arma consume munición a un ritmo mucho mayor que otras armas. Cada vez que se dispara, gasta X munición en lugar de 1. Además, el daño adicional requiere gastar X munición por cada +1CD, con un número máximo de CD igual a la Cadencia de fuego del arma. Los usos adicionales de munición, como el efecto de daño por Ráfaga, también gastan X munición por cada 1 munición que se gastaría normalmente.
+FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Cuando realizas un ataque con esta arma mientras estás bajo el agua, el ataque no sufre las penalizaciones normales de los ataques bajo el agua.
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Cuando realizas un ataque con un arma Explosiva, no apuntas a un solo oponente. En su lugar, seleccionas una única zona que puedas ver y realizas la prueba de habilidad adecuada para atacar, con una dificultad básica de 2 (ajustada al alcance de manera normal). Si tienes éxito, todas las criaturas (y otros objetivos que puedan sufrir daño) en esa zona sufren el daño del arma. Si fallas, tu ataque eestá mal ubicado y es menos efectivo: tira solo la mitad de la @fos[DC] del arma para determinar el daño infligido a las criaturas en la zona objetivo e ignora los efectos de daño normales del arma."
+FALLOUT.TOOLTIPS.WeaponQuality.bombard: "El arma puede lanzar una serie de explosiones en un área amplia. Funciona de manera idéntica a la cualidad Explosión, con un añadido: cuando se realiza un ataque con el arma, puedes gastar munición adicional para apuntar a zonas adicionales. Cada zona adicional requiere que se gasten 2 municiones, y las zonas adicionales deben estar adyacentes a la zona objetivo inicial. La munición gastada para apuntar a zonas adicionales está limitada por la cadencia de fuego del arma."
+FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Un arma de combate cuerpo a cuerpo es fácil de usar de cerca y no sufre ningún aumento de dificultad por usarse cuando se está dentro del alcance de un enemigo.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Un arma oculta es pequeña y fácil de llevar encima. Los enemigos no detectan un arma oculta a menos que la empuñes o si realizan una búsqueda exhaustiva y superan una prueba de PER + Supervivencia con una dificultad de 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: La dificultad de cualquier prueba de habilidad para tratar heridas infligidas por un arma debilitante aumenta en +1.
+FALLOUT.TOOLTIPS.WeaponQuality.delay_x: El arma funciona con un temporizador o una mecha y no detona inmediatamente. Un arma con Demora Lanzada puede lanzarse normalmente a la ubicación del objetivo, mientras que otras armas con Demora pueden colocarse en la ubicación deseada. Un arma con Demora (1) detona al comienzo de la primera ronda después de que se la lanza o se activa de otra manera. Un arma con Demora (2) detona al comienzo de la ronda siguiente, y así sucesivamente.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Las armas Gatling gastan munición diez veces más rápido de lo normal: siempre que gastarías un disparo de munición, un arma Gatling gasta una ráfaga de diez disparos. Siempre que gastes munición para aumentar el daño de esta arma, añade +2 @fos[DC] por cada ráfaga de diez disparos (hasta un número máximo de ráfagas igual a la cadencia de fuego del arma), en lugar de +1 @fos[DC] por disparo."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Al realizar un ataque con un arma imprecisa, no obtienes ningún beneficio de la acción menor Apuntar. Un arma no puede ser precisa e imprecisa al mismo tiempo.
+FALLOUT.TOOLTIPS.WeaponQuality.limited: Un arma limitada sólo puede usarse para realizar un ataque en su alcance ideal.
+FALLOUT.TOOLTIPS.WeaponQuality.mine: Cuando se coloca una mina sobre una superficie y se prepara, se convierte en un objeto peligroso que inflige daño a cualquiera que se encuentre dentro de su alcance (y a personajes adicionales, si tiene la cualidad Explosión).
+FALLOUT.TOOLTIPS.WeaponQuality.night_vision: Las miras de un arma con visión nocturna se han diseñado para permitirte ver con más claridad en la oscuridad. Cuando apuntas con un arma con visión nocturna, ignoras cualquier aumento en la dificultad de un ataque debido a la oscuridad.
+FALLOUT.TOOLTIPS.WeaponQuality.parry: Cuando un enemigo intenta un ataque cuerpo a cuerpo contra ti y estás usando un arma con Parada, puedes gastar 1 PA para agregar +1 a tu Defensa contra ese ataque.
+FALLOUT.TOOLTIPS.WeaponQuality.placed: El dispositivo explosivo se coloca en una ubicación específica y se configura para detonar, a menudo con la cualidad Retraso (X) o la cualidad Remoto. Colocar el explosivo requiere una prueba PER + Explosivos con una dificultad de 1; aumenta a 2 si has sido atacado desde tu último turno. Un fallo significa que la bomba no se ha colocado correctamente y no detonará (o, si se obtiene una complicación, puede que se haya colocado incorrectamente y puede detonar inesperadamente). Un éxito significa que la bomba se ha colocado correctamente.
+FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: Esta arma tiene un "retroceso" particularmente feroz cuando se dispara, que puede ser demasiado para los usuarios más débiles. Si la puntuación de FUE del usuario es menor a X, entonces todos los ataques con el arma aumentan en dificultad en 1. Puedes ignorar este efecto si manejas el arma con dos manos, o si el arma ya es de dos manos, apoyándola contra un objeto sólido o un bípode.
+FALLOUT.TOOLTIPS.WeaponQuality.recon: Cuando apuntas con un arma de reconocimiento, puedes marcar el objetivo al que apuntaste. El próximo aliado que ataque ese objetivo puede volver a tirar un d20 en su ataque.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: Durante cada combate, un arma fiable ignora la primera complicación que obtengas en una prueba para usar esa arma. Un arma no puede ser fiable y poco fiable al mismo tiempo.
+FALLOUT.TOOLTIPS.WeaponQuality.slow_load: El arma se carga con especial lentitud. Después de disparar, debes realizar una acción menor para recargarla antes de poder dispararla nuevamente.
 FALLOUT.TOOLTIPS.WeaponQuality.suppressed: If an enemy is not aware of you when you attack with a Suppressed weapon, they do not notice the attack unless they are the target or they pass a PER + Survival test with a difficulty of 2.
 FALLOUT.TOOLTIPS.WeaponQuality.surge: The weapon is especially damaging to machines like robots and powered Armor. The weapon gains the Vicious damage effect against Robots, enemies in Power Armor, and other mechanical or electronic targets (like turrets).
 FALLOUT.TOOLTIPS.WeaponQuality.thrown: A Thrown (C) weapon can be thrown, as a ranged attack with an ideal range of Close. A Thrown (M) weapon can be thrown, as a ranged attack with an ideal range of Medium. You make an AGI + Throwing test to attack with the weapon, depending on the type of weapon.
@@ -598,64 +598,64 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in t
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
-FALLOUT.UI.Add: Add
-FALLOUT.UI.Addictions: Addictions
-FALLOUT.UI.APPAREL_MODS: Apparel Mods
-FALLOUT.UI.AreYouSure: Are You Sure?
-FALLOUT.UI.BaseDamage: Base Damage
-FALLOUT.UI.BOOKS_AND_MAGZS: Books and Magazines
-FALLOUT.UI.Cancel: Cancel
-FALLOUT.UI.CAPS: Caps
-FALLOUT.UI.CapsRoll: Caps Roll
-FALLOUT.UI.CarryWeight: Carry Weight
-FALLOUT.UI.ChemDoses.ConfirmReset: Reset All Chem Doses
-FALLOUT.UI.ChemDoses.Delete: Delete Chem Doses
-FALLOUT.UI.ChemDoses.title: Chem Doses Taken
-FALLOUT.UI.ChemDoses.tooltip: View Chem Doses Taken
-FALLOUT.UI.CONSUMABLES: Consumables
-FALLOUT.UI.Consume: Consume
-FALLOUT.UI.Cost: Cost
-FALLOUT.UI.Damage: Damage
+FALLOUT.UI.Add: Añadir
+FALLOUT.UI.Addictions: Adicciones
+FALLOUT.UI.APPAREL_MODS: Modos de ropa
+FALLOUT.UI.AreYouSure: '¿Estás seguro?'
+FALLOUT.UI.BaseDamage: Daño base
+FALLOUT.UI.BOOKS_AND_MAGZS: Libros y Revistas
+FALLOUT.UI.Cancel: Cancelar
+FALLOUT.UI.CAPS: Chapas
+FALLOUT.UI.CapsRoll: Tirada de Chapas
+FALLOUT.UI.CarryWeight: Peso acarreado
+FALLOUT.UI.ChemDoses.ConfirmReset: Reiniciar todas las dosis de drogas
+FALLOUT.UI.ChemDoses.Delete: Eliminar todas las dosis de drogas
+FALLOUT.UI.ChemDoses.title: Dosis de Drogas recogidas
+FALLOUT.UI.ChemDoses.tooltip: Ver Dosis de Drogas recogidas
+FALLOUT.UI.CONSUMABLES: Consumibles
+FALLOUT.UI.Consume: Consumir
+FALLOUT.UI.Cost: Coste
+FALLOUT.UI.Damage: Daño
 FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
-FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
-FALLOUT.UI.DISEASES: Diseases
-FALLOUT.UI.favorite: Favorite
-FALLOUT.UI.INVENTORY: Inventory
-FALLOUT.UI.MISCELLANY: Miscellany
-FALLOUT.UI.Name: Name
-FALLOUT.UI.OTHER: Other
-FALLOUT.UI.Perks: Perks
-FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
-FALLOUT.UI.Qty: Qty
-FALLOUT.UI.Quantity: Quantity
-FALLOUT.UI.Rarity: Rarity
-FALLOUT.UI.ROBOT_MODULES: Robot Modules
-FALLOUT.UI.SaveChanges: Save Changes
-FALLOUT.UI.Special_Abilities: Special Abilities
-FALLOUT.UI.SPECIAL_ABILITY: Special Ability
-FALLOUT.UI.speed: Speed
-FALLOUT.UI.stashed: Stashed
-FALLOUT.UI.Type: Type
-FALLOUT.UI.UNSORTED: Unsorted
-FALLOUT.UI.WEAPON_MODS: Weapon Mods
-FALLOUT.UI.Weight: Weight
+FALLOUT.UI.DeleteOrJunk.title: '¿Borrar o convertir en chatarra?'
+FALLOUT.UI.DISEASES: Enfermedades
+FALLOUT.UI.favorite: Favorito
+FALLOUT.UI.INVENTORY: Inventario
+FALLOUT.UI.MISCELLANY: Miscelánea
+FALLOUT.UI.Name: Nombre
+FALLOUT.UI.OTHER: Otro
+FALLOUT.UI.Perks: Extras
+FALLOUT.UI.PreWarMoneyRoll: Tirada de dinero de antes de la guerra
+FALLOUT.UI.Qty: Cant.
+FALLOUT.UI.Quantity: Cantidad
+FALLOUT.UI.Rarity: Rareza
+FALLOUT.UI.ROBOT_MODULES: Módulos de Robot
+FALLOUT.UI.SaveChanges: Guardar cambios
+FALLOUT.UI.Special_Abilities: Habilidades especiales
+FALLOUT.UI.SPECIAL_ABILITY: Habilidad especial
+FALLOUT.UI.speed: Velocidad
+FALLOUT.UI.stashed: Guardado
+FALLOUT.UI.Type: Tipo
+FALLOUT.UI.UNSORTED: Desordenado
+FALLOUT.UI.WEAPON_MODS: Mods de arma
+FALLOUT.UI.Weight: Peso
 FALLOUT.UI.Yes: Yes
 FALLOUT.VEHICLE_TYPES.apc: APC
-FALLOUT.VEHICLE_TYPES.armored: Armored
-FALLOUT.VEHICLE_TYPES.bus: Bus
-FALLOUT.VEHICLE_TYPES.carTruck: Car/Truck
-FALLOUT.VEHICLE_TYPES.motorcycle: Motorcycle
-FALLOUT.VEHICLE_TYPES.sportsCar: Sports Car
+FALLOUT.VEHICLE_TYPES.armored: Blindado
+FALLOUT.VEHICLE_TYPES.bus: Autobús
+FALLOUT.VEHICLE_TYPES.carTruck: Coche/Camión
+FALLOUT.VEHICLE_TYPES.motorcycle: Motocicleta
+FALLOUT.VEHICLE_TYPES.sportsCar: Coche deportivo
 FALLOUT.VEHICLE_TYPES.vertibird: Vertibird
-FALLOUT.VEHICLE.cover: Cover
-FALLOUT.VEHICLE.impact: Impact
-FALLOUT.VEHICLE.passengers: Passengers
-FALLOUT.VEHICLE.scale: Scale
-FALLOUT.VEHICLE.travel_speed: Travel
-FALLOUT.VEHICLE.vehicleQuality.cargo_x: Cargo
-FALLOUT.VEHICLE.vehicleQuality.cumbersome: Cumbersome
-FALLOUT.VEHICLE.vehicleQuality.enclosed: Enclosed
-FALLOUT.VEHICLE.vehicleQuality.exposed: Exposed
+FALLOUT.VEHICLE.cover: Cobertura
+FALLOUT.VEHICLE.impact: Impacto
+FALLOUT.VEHICLE.passengers: Pasajeros
+FALLOUT.VEHICLE.scale: Escala
+FALLOUT.VEHICLE.travel_speed: Viaje
+FALLOUT.VEHICLE.vehicleQuality.cargo_x: Carga
+FALLOUT.VEHICLE.vehicleQuality.cumbersome: Incómodo
+FALLOUT.VEHICLE.vehicleQuality.enclosed: Encerrado
+FALLOUT.VEHICLE.vehicleQuality.exposed: Expuesto
 FALLOUT.VEHICLE.vehicleQuality.flying: Flying
 FALLOUT.VEHICLE.vehicleQuality.high_performance: High Performance
 FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
