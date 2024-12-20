@@ -19,7 +19,7 @@ FALLOUT.actor.inventory.materials.label: Materiales
 FALLOUT.actor.inventory.materials.rare: Raro
 FALLOUT.actor.inventory.materials.uncommon: Infrecuente
 FALLOUT.Actor.Warnings.ActiveEffectOverride: Este valor está siendo modificado por un Efecto Activo y no puede editarse. Desactiva el efecto para editarlo.
-FALLOUT.Actor.Warnings.DerivedValue: Este campo se calcula automáticamente y no puede ser editado.
+FALLOUT.Actor.Warnings.DerivedValue: Este campo se calcula automáticamente y no puede editarse.
 FALLOUT.Actor.Warnings.NpcAlreadyResident: Ese PNJ ya es un residente de {settlementName}
 FALLOUT.Actor.Warnings.NpcMissing: No se ha podido encontrar un colono con el UUID de Actor {uuid}, por lo que ha sido eliminado de {settlementName}
 FALLOUT.Add: Añadir
@@ -27,7 +27,7 @@ FALLOUT.APP.ChemDoseManager.ResetAllButton: Reiniciar todo
 FALLOUT.APP.ChemDoseManager.ResetAllHeader: Reiniciar todas las dosis de drogas
 FALLOUT.APP.ChemDoseManager.title: Dosis de drogas
 FALLOUT.APP.ItemTypeMenu.title: Seleccionar tipo de objeto
-FALLOUT.APP.Loading.body: Buscando en el Yermo
+FALLOUT.APP.Loading.body: Buscando en el Yermo...
 FALLOUT.APP.Loading.title: Cargando
 FALLOUT.APP.ModuleArtConfig.items: Objetos
 FALLOUT.APP.ModuleArtConfig.title: Configurar arte
@@ -42,9 +42,9 @@ FALLOUT.APP.SalvageJunk.error.noJunkToSalvage: No tienes chatarra para recuperar
 FALLOUT.APP.SalvageJunk.gameTimeAdvanced: El tiempo de juego ha avanzado {time}
 FALLOUT.APP.SalvageJunk.Items: Objetos
 FALLOUT.APP.SalvageJunk.selectedAmount: Recuperando {amount} de {max} Chatarra
-FALLOUT.APP.SalvageJunk.start: Empezar a recuperar
+FALLOUT.APP.SalvageJunk.start: Empezar a saquear
 FALLOUT.APP.SalvageJunk.time: Esto llevará {time}
-FALLOUT.APP.SalvageJunk.title: Recuperar chatarra
+FALLOUT.APP.SalvageJunk.title: Saquear chatarra
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Ropa
 FALLOUT.APPAREL.headgear: Casco
@@ -103,7 +103,7 @@ FALLOUT.BodyTypes.humanoid.torso: Torso
 FALLOUT.BodyTypes.quadruped.armL: Pata frontal Izquierda
 FALLOUT.BodyTypes.quadruped.armR: Pata frontal Derecha
 FALLOUT.BodyTypes.quadruped.head: Cabeza
-FALLOUT.BodyTypes.quadruped.label: Cuadrupedo
+FALLOUT.BodyTypes.quadruped.label: Cuadrúpedo
 FALLOUT.BodyTypes.quadruped.legL: Pata trasera izquierda
 FALLOUT.BodyTypes.quadruped.legR: Pata Trasera Derecha
 FALLOUT.BodyTypes.quadruped.torso: Torso
@@ -150,31 +150,31 @@ FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} ha consumido {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Comida Consumida
-FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Ya estás lleno y no puedes comer más
+FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Ya estás saciado y no puedes comer más
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Otros consumos
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiación Resistida
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} recibe daño de radiación {radsTaken} al consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Daño por radiación
-FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir {itemName}"
-FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recibe daño de radiación {radsTaken} al consumir {itemName}"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir Agua Sucia"
+FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recibe daño de radiación {radsTaken} al consumir Agua Sucia"
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Chatarrero
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} ha sido saqueada, y ha llevado {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Ubicación de Saqueo
 FALLOUT.CHEM: Droga
 FALLOUT.ChemDuration.brief: Resumen
 FALLOUT.ChemDuration.instant: Instantáneo
-FALLOUT.ChemDuration.lasting: duración
+FALLOUT.ChemDuration.lasting: Duración
 FALLOUT.CREATURE.body: Cuerpo
 FALLOUT.CREATURE.guns: Armas
 FALLOUT.CREATURE.melee: Cuerpo a Cuerpo
 FALLOUT.CREATURE.mind: Mente
 FALLOUT.CREATURE.other: Otro
 FALLOUT.dialog.roll_ammo.button.chat: Enviar al chat
-FALLOUT.dialog.roll_ammo.button.create: Crear nuevo(a)
+FALLOUT.dialog.roll_ammo.button.create: Crear nuevo/a
 FALLOUT.dialog.roll_ammo.button.update: Actualizar objeto
 FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: Esto mostrará la tirada de munición como un mensaje en el chat
+FALLOUT.dialog.roll_ammo.chat.details: Esto mostrará la tirada de munición como un mensaje en el chat.
 FALLOUT.dialog.roll_ammo.create.details: Esto creará un nuevo objeto de munición con la cantidad obtenida. Si el objeto del que estás tirando es propiedad de un Actor, el nuevo objeto será creará en el inventario del Actor.
 FALLOUT.dialog.roll_ammo.title: Tirada de munición
 FALLOUT.dialog.roll_ammo.update.details: Esto actualizará este elemento de munición con la cantidad de una tirada de munición nueva.
@@ -205,7 +205,7 @@ FALLOUT.Form.SelectItem.title: Elige {type}
 FALLOUT.Form.SourceFilters.AllUsed: Se permiten todas las fuentes
 FALLOUT.Form.SourceFilters.hint: Si se completa esta información, solo las fuentes incluidas en esta lista serán utilizadas por cualquier parte del sistema que extraiga automáticamente elementos de los compendios.
 FALLOUT.Form.SourceFilters.prompt: Seleccionar origen...
-FALLOUT.Form.SourceFilters.TheseUsed: Sólo se permitirán las siguientes fuentes
+FALLOUT.Form.SourceFilters.TheseUsed: Solo se permitirán las siguientes fuentes
 FALLOUT.Form.SourceFilters.title: Filtros de origen
 FALLOUT.HEALTH.current: Salud actual
 FALLOUT.HEALTH.health: Salud
@@ -246,7 +246,7 @@ FALLOUT.MACRO.Error.NoTokensSelected: Debes tener al menos un token seleccionado
 FALLOUT.MACRO.Error.TooManyTokensSelected: Solo puedes tener un máximo de {max} tokens seleccionados cuando ejecutas esta macro.
 FALLOUT.MACRO.NewScene.name: Nueva escena
 FALLOUT.MACRO.NewSession.name: Nueva Sesión
-FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage: Ahora tienes {luckPoints} puntos de suerte
+FALLOUT.MACRO.ResetLuckPoints.actorUpdateMessage: ahora tienes {luckPoints} puntos de suerte
 FALLOUT.MACRO.ResetLuckPoints.name: Restablecer puntos de suerte
 FALLOUT.MACRO.Success: La '{macro}' macro se ha ejecutado con éxito
 FALLOUT.MIGRATION.begin_migration: Realizando actualizaciones de datos para Fallout 2d20
