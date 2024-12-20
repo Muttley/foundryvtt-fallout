@@ -3,13 +3,17 @@ import {
 	prepareActiveEffectCategories,
 } from "../effects.mjs";
 
+
 /**
  * @extends {ItemSheet}
  */
 export default class FalloutItemSheet extends ItemSheet {
 
+
 	/** @override */
 	static get defaultOptions() {
+
+
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "item"],
 			width: 600,
@@ -34,6 +38,39 @@ export default class FalloutItemSheet extends ItemSheet {
 		return `[${type}] ${this.item.name}`;
 	}
 
+	/** @inheritdoc */
+	_canDragDrop(selector) {
+		return this.isEditable;
+	}
+
+	dragstart(event) {
+		const itemId = event.currentTarget.dataset.itemId;
+		const dragData = { type: "Item", id: itemId };
+		event.dataTransfer.setData("text/plain", JSON.stringify(dragData));
+		console.log("Drag started with data:", dragData);
+	}
+
+	_onDrop(event) {
+		const data = TextEditor.getDragEventData(event);
+
+		switch (data.type) {
+			case "Item":
+				return this._onDropItem(event, data);
+			default:
+				return super._onDrop();
+		}
+	}
+
+	async _onDropItem(event, data) {
+		const myType = this.item.type;
+
+		// Allow the dropping of spells onto the followin Item types to make
+		// creating them easier
+		//
+		// const allowedType = ["Potion", "Scroll", "Wand"].includes(myType);
+
+		const droppedItem = await fromUuid(data.uuid);
+	}
 	/* -------------------------------------------- */
 
 	/** @override */
@@ -284,6 +321,17 @@ export default class FalloutItemSheet extends ItemSheet {
 		// Everything below here is only needed if the sheet is editable
 		if (!this.isEditable) return;
 
+		// Initialize DragDrop
+		const dragDrop = new DragDrop({
+			// dragSelector: ".item",
+			dropSelector: ".items",
+			permissions: { dragdrop: () => true },
+			callbacks: { drop: this._onDrop.bind(this) }, // Bind to the instance
+		});
+
+		dragDrop.bind(html[0]);
+
+
 		html.find(".ammo-quantity-roll").click(this._rollAmmoQuantity.bind(this));
 
 		// Effects.
@@ -325,8 +373,8 @@ export default class FalloutItemSheet extends ItemSheet {
 
 			const frames = this.actor.items.filter(i =>
 				i.type === "apparel"
-					&& i.system.apparelType === "powerArmor"
-					&& i.system.powerArmor.isFrame
+				&& i.system.apparelType === "powerArmor"
+				&& i.system.powerArmor.isFrame
 			);
 
 			for (const frame of frames) {
@@ -354,7 +402,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		// handles cases where choicesKey is nested property.
 		let currentChoices = choicesKey
 			.split(".")
-			.reduce((obj, path) => obj ? obj[path]: [], this.item.system);
+			.reduce((obj, path) => obj ? obj[path] : [], this.item.system);
 
 		if (currentChoices.includes(uuid)) return; // No duplicates
 
@@ -381,7 +429,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			? choiceItems.map(item => item.uuid)
 			: choiceItems;
 
-		return this.item.update({[event.target.name]: sortedChoiceUuids});
+		return this.item.update({ [event.target.name]: sortedChoiceUuids });
 	}
 
 	async _onChangeInput(event) {
@@ -470,4 +518,5 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (mode) await this.item.rollAmmoQuantity(mode);
 	}
+
 }
