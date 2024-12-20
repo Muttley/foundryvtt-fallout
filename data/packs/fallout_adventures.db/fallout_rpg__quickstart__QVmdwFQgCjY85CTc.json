@@ -7628,6 +7628,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -7699,6 +7701,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -8148,6 +8152,8 @@
 				},
 				"origin": "Survivor",
 				"radiation": 0,
+				"readMagazines": [
+				],
 				"resistance": {
 					"energy": 0,
 					"physical": 0,
@@ -10026,6 +10032,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -10097,6 +10105,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -10406,6 +10416,8 @@
 				},
 				"origin": "Vault Dweller",
 				"radiation": 0,
+				"readMagazines": [
+				],
 				"resistance": {
 					"energy": 0,
 					"physical": 0,
@@ -11113,6 +11125,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -12780,6 +12794,8 @@
 				},
 				"origin": "Ghoul",
 				"radiation": 0,
+				"readMagazines": [
+				],
 				"resistance": {
 					"energy": 0,
 					"physical": 0,
@@ -13977,6 +13993,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -14698,6 +14716,8 @@
 				},
 				"origin": "Brotherhood Initiate",
 				"radiation": 0,
+				"readMagazines": [
+				],
 				"resistance": {
 					"energy": 0,
 					"physical": 0,
@@ -16560,6 +16580,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -16867,6 +16889,8 @@
 				},
 				"origin": "Mister Handy",
 				"radiation": 0,
+				"readMagazines": [
+				],
 				"resistance": {
 					"energy": 0,
 					"physical": 0,
@@ -17574,6 +17598,8 @@
 							"isCompanion": false,
 							"level": 1,
 							"levelIncrease": 0,
+							"magazineUuids": [
+							],
 							"notGhoul": false,
 							"notHuman": false,
 							"notRadiationImmune": false,
@@ -19363,6 +19389,8 @@
 				},
 				"origin": "Super Mutant",
 				"radiation": 0,
+				"readMagazines": [
+				],
 				"resistance": {
 					"energy": 0,
 					"physical": 0,

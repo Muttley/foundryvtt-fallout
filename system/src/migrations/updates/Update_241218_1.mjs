@@ -5,7 +5,7 @@ export default class Update_241218_1 extends FalloutUpdateBase {
 	static version = 241218.1;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "perk") return;
+		if (itemData.type !== "books_and_magz") return;
 
 		const updateData = {
 			"system.-=issue": null,

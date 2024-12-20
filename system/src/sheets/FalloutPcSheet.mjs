@@ -206,6 +206,15 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			if (allUsed) li.slideUp(200, () => this.render(false));
 		});
 
+		html.find("[data-action='readMagazine']").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("itemId"));
+
+			const allUsed = await this.actor.readMagazine(item);
+
+			if (allUsed) li.slideUp(200, () => this.render(false));
+		});
+
 		html.find(".injury-mark").contextmenu(async ev => {
 			let status = parseInt(ev.currentTarget.dataset.status);
 			// if (status === 0)

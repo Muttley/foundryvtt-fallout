@@ -1,0 +1,15 @@
+<div class="fallout-chat-message">
+	<div class="content">
+		<h2>{{title}}</h2>
+		<p>{{body}}</p>
+		{{#if comprehensionSuccess}}
+			<em>
+				{{localize "FALLOUT.CHAT_MESSAGE.readMagazine.comprehension"}}
+			</em>
+		{{/if}}
+		<hr>
+		<div style="font-size: 0.75rem;">
+			<em>{{{benefit}}}</em>
+		</div>
+	</div>
+</div>
