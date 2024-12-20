@@ -251,7 +251,7 @@ FALLOUT.MACRO.ResetLuckPoints.name: Restablecer puntos de suerte
 FALLOUT.MACRO.Success: La '{macro}' macro se ha ejecutado con éxito
 FALLOUT.MIGRATION.begin_migration: Realizando actualizaciones de datos para Fallout 2d20
 FALLOUT.MIGRATION.begin_schema: Aplicando actualizaciones para Fallout 2d20 v{version}
-FALLOUT.MIGRATION.completed_migration: Competada la actualización para Fallout 2d20
+FALLOUT.MIGRATION.completed_migration: Completada la actualización para Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Se han completado las actualizaciones de Fallout 2d20 y{version}
 FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Legendario
@@ -267,7 +267,7 @@ FALLOUT.RANGE.extreme: Extremo
 FALLOUT.RANGE.long: Largo
 FALLOUT.RANGE.medium: Medio
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Clic para alternar inmunidad
-FALLOUT.RESISTANCE.energy: Enegía
+FALLOUT.RESISTANCE.energy: Energía
 FALLOUT.RESISTANCE.Immunity.poison: Inmune al Daño por Veneno
 FALLOUT.RESISTANCE.Immunity.radiation: Inmune al daño por radiación
 FALLOUT.RESISTANCE.physical: Físico
@@ -288,8 +288,8 @@ FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Se han borrado todos los result
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Borrar resultados del saqueo
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No se ha establecido ninguna tabla de objetos para los elementos {category}.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Saqueo Completo (D3)
-FALLOUT.SEARCHED_DEGREE.mostly_searched: Mayormente Rebuscado (D2)
-FALLOUT.SEARCHED_DEGREE.partly_searched: Parcialmente Rrebuscado (D1)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: Mayormente Saqueado (D2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Parcialmente Saqueado (D1)
 FALLOUT.SEARCHED_DEGREE.untouched: Sin tocar (D0)
 FALLOUT.SETTINGS.sourceFilters.hint: Si se completa, solo las fuentes de libros incluidas en esta lista estarán disponibles para su selección en los lugares pertinentes. Los elementos que no tengan una fuente de libros establecida siempre estarán disponibles.
 FALLOUT.SETTINGS.sourceFilters.title: Filtros de origen de Libros
