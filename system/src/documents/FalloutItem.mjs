@@ -107,18 +107,12 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 
 		switch (this.type) {
-			// case "ammo":
-			// 	this._prepareAmmoData();
-			// 	break;
 			case "consumable":
 				this._prepareConsumableData();
 				break;
 			case "skill":
 				this._prepareSkillData();
 				break;
-			// case "weapon":
-			// 	this._prepareWeaponData();
-			// 	break;
 		}
 	}
 

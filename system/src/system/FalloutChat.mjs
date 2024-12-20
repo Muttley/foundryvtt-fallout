@@ -57,6 +57,13 @@ export default class FalloutChat {
 		);
 	}
 
+	static async renderReadMagazineMessage(actor, data, mode) {
+		this._renderChatMessage(actor, data,
+			"systems/fallout/templates/chat/read-magazine.hbs",
+			mode
+		);
+	}
+
 	static async renderResetLuckPointsMessage(data, mode) {
 		this._renderChatMessage(null, data,
 			"systems/fallout/templates/chat/reset-luck-points.hbs",

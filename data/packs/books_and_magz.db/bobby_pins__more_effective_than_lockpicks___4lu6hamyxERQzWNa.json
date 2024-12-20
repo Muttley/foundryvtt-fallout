@@ -11,14 +11,16 @@
 		"description": "<p>Tumblers Today is a pre-War magazine containing information about the clandestine art of lockpicking and the latest in mechanical locks found in safes, footlockers, and doors. The cover art for the magazine depicts imagery from each issue, highlighting the topic and technique of the issue.</p>\n<ul>\n<li><strong>Perk:</strong> Depending on the individual issue found, you receive a different perk, which you may benefit from once. If you later learn the perk, you may use that benefit once per scene. Roll to determine the issue found:</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.Q6MhXT1qvcpX6fxU]{Bobby Pins: More Effective Than Lockpicks?}</p>",
 		"effect": "<p>When using a Bobby Pin, reduce the difficulty of a Lockpicking test by a further 1 (minimum 0)</p>",
 		"favorite": false,
-		"issue": "",
-		"learned": false,
-		"perk": "",
 		"publication": "Tumblers Today",
 		"quantity": 1,
 		"rarity": 3,
+		"read": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"uses": {
+			"max": 1,
+			"value": 0
+		},
 		"weight": 0
 	},
 	"type": "books_and_magz"
