@@ -104,6 +104,8 @@ export default class FalloutItemSheet extends ItemSheet {
 	async getPowerArmorPieceData(context) {
 		if (!this.item.isOwned) return;
 
+		const item = context.item;
+
 		let availablePieces = foundry.utils.duplicate(
 			this.item.actor.items.filter(
 				i => i.system.apparelType === "powerArmor"
