@@ -77,6 +77,7 @@ export default class FalloutUtils {
 		return majorVersion >= version;
 	}
 
+
 	// Attempts to get the current actor for a user.  If the current user is the
 	// GM then the currently selected token actor will be used if possible,
 	// otherwise

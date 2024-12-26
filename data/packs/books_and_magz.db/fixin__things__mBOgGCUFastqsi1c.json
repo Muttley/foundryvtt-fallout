@@ -11,14 +11,16 @@
 		"description": "<p>A magazine for those dedicated to fixing things themselves, each issue contains a wealth of information on how to mend and repair a variety of objects and materials, reviews of the best tools to use, and examples of repairs sent in by readers.</p>\n<ul>\n<li><strong>Perk:</strong> Once, when you attempt to repair an item, halve the amounts of the materials needed to complete the repair (round up). If you later learn this perk, you may use this whenever you attempt repairs.</li>\n</ul>\n<p>@UUID[Compendium.fallout.perks.Item.7gsRBEPt328MaEyI]{Fixin' Things}</p>",
 		"effect": "<p>Once, when you attempt to repair an item, halve the amounts of the materials needed to complete the repair (round up).</p>",
 		"favorite": false,
-		"issue": "",
-		"learned": false,
-		"perk": "",
 		"publication": "",
 		"quantity": 1,
 		"rarity": 3,
+		"read": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"uses": {
+			"max": 1,
+			"value": 0
+		},
 		"weight": 0
 	},
 	"type": "books_and_magz"

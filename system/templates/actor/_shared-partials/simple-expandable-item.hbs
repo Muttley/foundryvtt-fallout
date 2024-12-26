@@ -46,6 +46,15 @@
 						</a>
 					{{/unless}}
 				{{/ifCond}}
+				{{#ifCond item.type '===' 'books_and_magz'}}
+					<a
+						class="item-control"
+						data-action="readMagazine"
+						title='{{localize "FALLOUT.UI.Read"}}'
+					>
+						<i class="fas fa-glasses"></i>
+					</a>
+				{{/ifCond}}
 				{{#if item.canBeEquipped}}
 					<a
 						{{#if item.system.equipped}}
