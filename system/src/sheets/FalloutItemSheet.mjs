@@ -23,6 +23,7 @@ export default class FalloutItemSheet extends ItemSheet {
 				contentSelector: ".sheet-body",
 				initial: "attributes",
 			}],
+			dragDrop: [{ /* dragSelector: ".item",*/ dropSelector: "form.itemDrop" }],
 		});
 	}
 
@@ -43,14 +44,16 @@ export default class FalloutItemSheet extends ItemSheet {
 		return this.isEditable;
 	}
 
-	dragstart(event) {
+	/** @inheritdoc */
+	_onDragStart(event) {
 		const itemId = event.currentTarget.dataset.itemId;
 		const dragData = { type: "Item", id: itemId };
 		event.dataTransfer.setData("text/plain", JSON.stringify(dragData));
-		console.log("Drag started with data:", dragData);
+		console.log("_onDragStart data:", dragData);
 	}
 
-	_onDrop(event) {
+	/** @inheritdoc */
+	async _onDrop(event) {
 		const data = TextEditor.getDragEventData(event);
 
 		switch (data.type) {
@@ -62,6 +65,7 @@ export default class FalloutItemSheet extends ItemSheet {
 	}
 
 	async _onDropItem(event, data) {
+
 		const myType = this.item.type;
 
 		// Allow the dropping of spells onto the followin Item types to make
@@ -69,7 +73,34 @@ export default class FalloutItemSheet extends ItemSheet {
 		//
 		// const allowedType = ["Potion", "Scroll", "Wand"].includes(myType);
 
+		// Get dropped item
 		const droppedItem = await fromUuid(data.uuid);
+
+		switch (droppedItem.type) {
+
+			case "apparel_mod":
+				if (["apparel", "robot_armor"]) break;
+			case "perk":
+				break;
+			case "robot_mod":
+				break;
+			case "weapon_mod":
+				break;
+			default:
+		}
+
+
+		// Saves a new item to the database.
+		// const clonedItemData = duplicate(droppedItem);
+		// clonedItemData.name = "Weapon (3)";
+		// const clonedItem = await Item.create(clonedItemData);
+
+		// Results in new item not saved to a database and cant be edited.
+		// let clonedItem = droppedItem.clone();
+		// clonedItem.id = randomID();
+		// clonedItem.name = "Weapon (3)";
+
+		// clonedItem.sheet.render(true);
 	}
 	/* -------------------------------------------- */
 
@@ -131,6 +162,9 @@ export default class FalloutItemSheet extends ItemSheet {
 				break;
 			case "weapon":
 				await this.getWeaponData(context, item);
+				break;
+			case "weapon_mod":
+				await this.getWeaponModData(context, item);
 				break;
 			default:
 		}
@@ -307,6 +341,74 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 	}
 
+	async getWeaponModData(context, item) {
+
+
+		for (const [uuid, name] of Object.entries(CONFIG.FALLOUT.AMMO_BY_UUID)) {
+			if (name === this.item.system.modEffects.ammo) {
+				context.weaponAmmo = await fromUuid(uuid);
+				break;
+			}
+		}
+		context.ammoTypes = CONFIG.FALLOUT.AMMO_TYPES;
+
+		context.damageTypes = [];
+		for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
+			context.damageTypes.push({
+				active: item.system?.modEffects?.damage?.damageType[key] ?? 0,
+				key,
+				label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
+			});
+		}
+
+		const weaponQualities = [];
+		for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
+			weaponQualities.push({
+				active: item.system?.modEffects?.damage?.weaponQuality[key].value ?? 0,
+				hasRank: CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key],
+				rank: item.system?.modEffects?.damage?.weaponQuality[key].rank,
+				key,
+				label: CONFIG.FALLOUT.WEAPON_QUALITIES[key],
+			});
+		}
+
+		context.weaponQualities = weaponQualities.sort(
+			(a, b) => a.label.localeCompare(b.label)
+		);
+
+		const damageEffects = [];
+		for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
+			damageEffects.push({
+				active: item.system?.modEffects?.damage?.damageEffect[key].value ?? 0,
+				hasRank: CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key],
+				rank: item.system?.modEffects?.damage?.damageEffect[key].rank,
+				key,
+				label: CONFIG.FALLOUT.DAMAGE_EFFECTS[key],
+			});
+		}
+
+		context.damageEffects = damageEffects.sort(
+			(a, b) => a.label.localeCompare(b.label)
+		);
+
+		const allSkills = await fallout.compendiums.skills();
+		context.availableSkills = {};
+
+		let availableSkillNames = [];
+		for (const skill of allSkills) {
+			availableSkillNames.push(skill.name);
+		}
+
+		availableSkillNames = availableSkillNames.sort(
+			(a, b) => a.localeCompare(b)
+		);
+
+		for (const skillName of availableSkillNames) {
+			context.availableSkills[skillName] = skillName;
+		}
+		context.overrideDamage = item.system.modEffects.damage.overrideDamage;
+	}
+
 	/* -------------------------------------------- */
 
 	/** @override */
@@ -320,17 +422,6 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// Everything below here is only needed if the sheet is editable
 		if (!this.isEditable) return;
-
-		// Initialize DragDrop
-		const dragDrop = new DragDrop({
-			// dragSelector: ".item",
-			dropSelector: ".items",
-			permissions: { dragdrop: () => true },
-			callbacks: { drop: this._onDrop.bind(this) }, // Bind to the instance
-		});
-
-		dragDrop.bind(html[0]);
-
 
 		html.find(".ammo-quantity-roll").click(this._rollAmmoQuantity.bind(this));
 
@@ -383,6 +474,55 @@ export default class FalloutItemSheet extends ItemSheet {
 
 			this.actor.sheet.render(false);
 		});
+
+
+		// * Mods
+		html.find(".toggle-label").click(async ev => {
+			if (!this.item.type === "weapon_mod") return;
+			if (ev.target.className === "num-short-2") return;
+
+			const dataSets = ev.currentTarget.dataset;
+
+			let active = parseInt(dataSets.active) ?? 0;
+			const name = dataSets.name;
+			const type = dataSets.type;
+
+			active = active === 1 ? 0 : 1;
+
+			let dataPath = type === "quality"
+				? `system.modEffects.damage.weaponQuality.${name}.value`
+				: `system.modEffects.damage.damageEffect.${name}.value`;
+
+
+			let dataUpdate = {};
+			dataUpdate[dataPath] = active;
+
+			await this.item.update(dataUpdate);
+		});
+
+		html.find(".toggle-label").contextmenu(async ev => {
+			if (!this.item.type === "weapon_mod") return;
+			if (ev.target.className === "num-short-2") return;
+
+			const dataSets = ev.currentTarget.dataset;
+
+			let active = parseInt(dataSets.active) ?? 0;
+			const name = dataSets.name;
+			const type = dataSets.type;
+
+			active = active === 2 ? 0 : 2;
+
+			let dataPath = type === "quality"
+				? `system.modEffects.damage.weaponQuality.${name}.value`
+				: `system.modEffects.damage.damageEffect.${name}.value`;
+
+
+			let dataUpdate = {};
+			dataUpdate[dataPath] = active;
+
+			await this.item.update(dataUpdate);
+		});
+		// * END MODS
 	}
 
 	async _onChangeChoiceList(event, choicesKey, isItem) {

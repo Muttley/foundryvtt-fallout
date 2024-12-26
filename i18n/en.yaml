@@ -353,6 +353,7 @@ FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Abilities
+FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Add_Perk: Add Perk
 FALLOUT.TEMPLATES.Add_Trait: Add Trait
 FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
@@ -377,6 +378,7 @@ FALLOUT.TEMPLATES.Attributes: Attributes
 FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Category: Category
+FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
@@ -402,6 +404,7 @@ FALLOUT.TEMPLATES.conditions.weary: Weary
 FALLOUT.TEMPLATES.ConstructionTime: Construction Time
 FALLOUT.TEMPLATES.Consumable_Group: Group
 FALLOUT.TEMPLATES.Consumable_Type: Type
+FALLOUT.TEMPLATES.Crafting: Crafting
 FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Create Ammo
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Create Apparel Mod
@@ -504,6 +507,7 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [current/maximum]
 FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Re-roll
 FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
+FALLOUT.TEMPLATES.RemoveWeaponQualityEffect: Remove Weapon Quality/Effect (Right Click)
 FALLOUT.TEMPLATES.Requirements: Requirements
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistances
@@ -622,8 +626,10 @@ FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
+FALLOUT.UI.Modify: Modify
 FALLOUT.UI.Name: Name
 FALLOUT.UI.OTHER: Other
+FALLOUT.UI.Override: Override
 FALLOUT.UI.Perks: Perks
 FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
 FALLOUT.UI.Qty: Qty
@@ -714,6 +720,21 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
 FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
+FALLOUT.WEAPONS.weaponModType.receiver: Receiver
+FALLOUT.WEAPONS.weaponModType.barrel: Barrel
+FALLOUT.WEAPONS.weaponModType.capacitor: Capacitor
+FALLOUT.WEAPONS.weaponModType.magazine: Magazine
+FALLOUT.WEAPONS.weaponModType.grip: Grip
+FALLOUT.WEAPONS.weaponModType.stock: Stock
+FALLOUT.WEAPONS.weaponModType.sight: Sight
+FALLOUT.WEAPONS.weaponModType.muzzle: Muzzle
+FALLOUT.WEAPONS.weaponModType.concentrate: Concentrate
+FALLOUT.WEAPONS.weaponModType.container: Container
+FALLOUT.WEAPONS.weaponModType.melee: Melee
+FALLOUT.WEAPONS.weaponModType.dish: Dish
+FALLOUT.WEAPONS.weaponModType.fuel: Fuel
+FALLOUT.WEAPONS.weaponModType.propellantTank: Propellant Tank
+FALLOUT.WEAPONS.weaponModType.nozzle: Nozzle
 ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
