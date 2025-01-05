@@ -19,6 +19,10 @@
 						{{#if this.active}}
 							checked
 						{{/if}}
+						{{#if modded}}
+						   disable
+						   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+						{{/if}}
 					>
 					{{this.label}}
 				</label>
@@ -28,6 +32,10 @@
 						name="system.damage.weaponQuality.{{this.key}}.rank"
 						type="number"
 						value="{{this.rank}}"
+						{{#if modded}}
+						   disable
+						   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+						{{/if}}
 					>
 				{{/if}}
 			</div>

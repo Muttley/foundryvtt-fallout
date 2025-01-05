@@ -84,12 +84,10 @@
 		<label class="field-label" for="system.modEffects.range">
 			{{localize "FALLOUT.TEMPLATES.RANGE"}}
 		</label>
-		<select name="system.modEffects.range">
-			<option value="">&mdash;</option>
-			{{selectOptions FALLOUT.RANGES
-			selected=system.modEffects.range
-			}}
-		</select>
+		<input data-dtype="Number"
+			   name="system.modEffects.range"
+			   type="number"
+			   value="{{system.modEffects.range}}">
 	</div>
 
 	<div class="flexrow resource-row">
@@ -161,15 +159,16 @@
 	</div>
 
 	<div class="resource-row">
-		<h3 class="resource-label">
+		<h3 class="field-label">
 			{{localize "FALLOUT.TEMPLATES.Effect"}}
 		</h3>
+
 		<div class="description-field">
 			{{editor effectHTML
-				target="system.modEffects.effect"
 				button=true
-				owner=owner
 				editable=editable
+				owner=owner
+				target="system.modEffects.effect"
 			}}
 		</div>
 	</div>

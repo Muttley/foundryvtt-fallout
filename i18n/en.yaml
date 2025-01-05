@@ -219,6 +219,7 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
 FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
+FALLOUT.Item.Warnings.Modded: This item had been modded. Disable all mods to edit.
 FALLOUT.LEVEL.CurrentXP: Current XP
 FALLOUT.LEVEL.Level: Level
 FALLOUT.LEVEL.NextXP: Next Level XP

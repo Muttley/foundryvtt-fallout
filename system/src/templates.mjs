@@ -146,8 +146,11 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/item/weapon_mod/crafting-tab.hbs",
 		"systems/fallout/templates/item/weapon_mod/qualities-and-effects-tab.hbs",
 		"systems/fallout/templates/item/weapon/_partials/effects.hbs",
+		"systems/fallout/templates/item/weapon/_partials/mod.hbs",
+		"systems/fallout/templates/item/weapon/_partials/mod-item-row.hbs",
 		"systems/fallout/templates/item/weapon/_partials/qualities.hbs",
 		"systems/fallout/templates/item/weapon/attributes-tab.hbs",
+		"systems/fallout/templates/item/weapon/mods-tab.hbs",
 		"systems/fallout/templates/item/weapon/qualities-and-effects-tab.hbs",
 	];
 

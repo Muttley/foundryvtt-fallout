@@ -1403,7 +1403,8 @@
 			"mods": {
 				"current": 0,
 				"list": "",
-				"max": 0
+				"max": 0,
+				"modded": false
 			},
 			"range": "",
 			"skill": "",
@@ -1479,7 +1480,7 @@
 						"poison": false,
 						"radiation": false
 					},
-					"overrideDamage": "",
+					"overrideDamage": "modify",
 					"rating": 0,
 					"weaponQuality": {
 						"accurate": {
@@ -1595,7 +1596,8 @@
 				"effect": "",
 				"fireRate": 0,
 				"info": "",
-				"range": ""
+				"range": 0,
+				"summary": ""
 			},
 			"modType": "",
 			"namePrefix": "",

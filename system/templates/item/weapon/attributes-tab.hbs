@@ -5,7 +5,8 @@
 		</label>
 		<select name="system.weaponType">
 			<option value="">&mdash;</option>
-			{{selectOptions FALLOUT.WEAPON_TYPES
+			{{
+selectOptions FALLOUT.WEAPON_TYPES
 				selected=system.weaponType
 			}}
 		</select>
@@ -13,29 +14,27 @@
 
 	<div class="resource-row flexrow">
 
-		<label
-			class="field-label"
-			for="system.attribute"
-		>
+		<label class="field-label"
+			   for="system.attribute">
 			{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
 		</label>
 		<select name="system.creatureAttribute">
 			<option value="">&mdash;</option>
-			{{selectOptions FALLOUT.CREATURE_ATTRIBUTES
+			{{
+selectOptions FALLOUT.CREATURE_ATTRIBUTES
 				selected=system.creatureAttribute
 			}}
 		</select>
 	</div>
 	<div class="resource-row flexrow">
-		<label
-			class="field-label"
-			for="system.skill"
-		>
+		<label class="field-label"
+			   for="system.skill">
 			{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
 		</label>
 		<select name="system.creatureSkill">
 			<option value="">&mdash;</option>
-			{{selectOptions FALLOUT.CREATURE_SKILLS
+			{{
+selectOptions FALLOUT.CREATURE_SKILLS
 				selected=system.creatureSkill
 			}}
 		</select>
@@ -43,46 +42,46 @@
 
 
 	{{#ifCond system.weaponType "===" "custom"}}
-		<div class="resource-row flexrow">
-			<label
-				class="field-label"
-				for="system.attribute"
-			>
-				{{localize "FALLOUT.TEMPLATES.CustomAttribute"}}
-			</label>
-			<select name="system.attribute">
-				<option value="">&mdash;</option>
-				{{selectOptions FALLOUT.ATTRIBUTES
+	<div class="resource-row flexrow">
+		<label class="field-label"
+			   for="system.attribute">
+			{{localize "FALLOUT.TEMPLATES.CustomAttribute"}}
+		</label>
+		<select name="system.attribute">
+			<option value="">&mdash;</option>
+			{{
+selectOptions FALLOUT.ATTRIBUTES
 					selected=system.attribute
-				}}
-			</select>
-		</div>
-		<div class="resource-row flexrow">
-			<label
-				class="field-label"
-				for="system.skill"
-			>
-				{{localize "FALLOUT.TEMPLATES.CustomSkill"}}
-			</label>
-			<select name="system.skill">
-				<option value="">&mdash;</option>
-				{{selectOptions availableSkills
+			}}
+		</select>
+	</div>
+	<div class="resource-row flexrow">
+		<label class="field-label"
+			   for="system.skill">
+			{{localize "FALLOUT.TEMPLATES.CustomSkill"}}
+		</label>
+		<select name="system.skill">
+			<option value="">&mdash;</option>
+			{{
+selectOptions availableSkills
 					selected=system.skill
-				}}
-			</select>
-		</div>
+			}}
+		</select>
+	</div>
 	{{/ifCond}}
 
 	<div class="resource-row flexrow">
 		<label class="field-label" for="system.damage.rating">
 			{{localize "FALLOUT.UI.BaseDamage"}}
 		</label>
-		<input
-			data-dtype="Number"
-			name="system.damage.rating"
-			type="number"
-			value="{{system.damage.rating}}"
-		>
+		<input data-dtype="Number"
+			   name="system.damage.rating"
+			   type="number"
+			   value="{{system.damage.rating}}"
+			   {{#if modded}}
+			   disable
+			   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+			   {{/if}}>
 	</div>
 
 	<div class="flexrow resource-row">
@@ -91,19 +90,21 @@
 		</label>
 		<div class="grid-2-columns">
 			{{#each damageTypes}}
-				<div class="flexrow toggle-label {{#if this.active}}active{{/if}}">
-					<label class="font-size-13">
-						<input
-							type="checkbox"
-							name="system.damage.damageType.{{this.key}}"
-							{{#if this.active}}
-								checked
-							{{/if}}
-						>
-						{{this.label}}
-						<i class="fo-{{key}}"></i>
-					</label>
-				</div>
+			<div class="flexrow toggle-label {{#if this.active}}active{{/if}}">
+				<label class="font-size-13">
+					<input type="checkbox"
+						   name="system.damage.damageType.{{this.key}}"
+						   {{#if this.active}}
+						   checked
+						   {{/if}}
+						   {{#if modded}}
+						   disable
+						   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+						   {{/if}}>
+					{{this.label}}
+					<i class="fo-{{key}}"></i>
+				</label>
+			</div>
 			{{/each}}
 		</div>
 	</div>
@@ -112,8 +113,13 @@
 		<label class="field-label" for="system.range">
 			{{localize "FALLOUT.TEMPLATES.RANGE"}}
 		</label>
-		<select name="system.range">
-			{{selectOptions FALLOUT.RANGES
+		<select name="system.range"
+				{{#if modded}}
+				disable
+				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+				{{/if}}>
+			{{
+selectOptions FALLOUT.RANGES
 				selected=system.range
 			}}
 		</select>
@@ -123,83 +129,82 @@
 		<label class="field-label" for="system.ammo">
 			{{localize "TYPES.Item.ammo"}}
 			{{#if weaponAmmo}}
-				<a
-					aria-describedby="tooltip"
-					class="content-link"
-					data-id="{{weaponAmmo._id}}"
-					data-link
-					data-pack="{{weaponAmmo.pack}}"
-					data-tooltip="Ammo Item"
-					data-type="Item"
-					data-uuid="{{weaponAmmo.uuid}}"
-					draggable="true"
-				><i class="fas fa-suitcase"></i></a>
+			<a aria-describedby="tooltip"
+			   class="content-link"
+			   data-id="{{weaponAmmo._id}}"
+			   data-link
+			   data-pack="{{weaponAmmo.pack}}"
+			   data-tooltip="Ammo Item"
+			   data-type="Item"
+			   data-uuid="{{weaponAmmo.uuid}}"
+			   draggable="true"><i class="fas fa-suitcase"></i></a>
 			{{/if}}
 		</label>
-		<select name="system.ammo" data-dtype="String">
+		<select name="system.ammo" data-dtype="String"
+				{{#if modded}}
+				disable
+				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+				{{/if}}>
 			<option value="">&mdash;</option>
 			{{#each ammoTypes}}
-				<option
-					value="{{this}}"
+			<option value="{{this}}"
 					{{#ifCond ../system.ammo "===" this}}
-						selected
-					{{/ifCond}}
-				>
-					{{this}}
-				</option>
+					selected
+					{{/ifCond}}>
+				{{this}}
+			</option>
 			{{/each}}
 		</select>
 	</div>
 
 	{{#if weaponAmmo}}
-		<div class="flexrow resource-row">
-			<label class="field-label" for="system.ammo">
-				{{localize "ITEM.AmmoPerShot"}}
-			</label>
-			<input
-				data-dtype="Number"
-				type="number"
-				name="system.ammoPerShot"
-				value="{{system.ammoPerShot}}"
-			>
-		</div>
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.ammo">
+			{{localize "ITEM.AmmoPerShot"}}
+		</label>
+		<input data-dtype="Number"
+			   type="number"
+			   name="system.ammoPerShot"
+			   value="{{system.ammoPerShot}}"
+			   {{#if modded}}
+			   disable
+			   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+			   {{/if}}>
+	</div>
 
-		<div class="flexrow resource-row">
-			<label class="field-label" for="system.fireRate">
-				{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}
-			</label>
-			<input
-				data-dtype="Number"
-				type="number"
-				name="system.fireRate"
-				value="{{system.fireRate}}"
-			>
-		</div>
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.fireRate">
+			{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}
+		</label>
+		<input data-dtype="Number"
+			   type="number"
+			   name="system.fireRate"
+			   value="{{system.fireRate}}"
+			   {{#if modded}}
+			   disable
+			   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+			   {{/if}}>
+	</div>
 	{{/if}}
 
 	<div class="flexrow resource-row">
 		<label class="field-label" for="system.tear">
 			{{localize "FALLOUT.TEMPLATES.Tear"}}
 		</label>
-		<input
-			data-dtype="Number"
-			name="system.tear"
-			type="number"
-			value="{{system.tear}}"
-		>
+		<input data-dtype="Number"
+			   name="system.tear"
+			   type="number"
+			   value="{{system.tear}}">
 	</div>
 
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.actor.inventory.materials.junk"}}
 		</label>
-		<input
-			class="input-checkbox"
-			data-dtype="Boolean"
-			name="system.isJunk"
-			type="checkbox"
-			{{checked system.isJunk}}
-		/>
+		<input class="input-checkbox"
+			   data-dtype="Boolean"
+			   name="system.isJunk"
+			   type="checkbox"
+			   {{checked system.isJunk}} />
 	</div>
-
 </div>

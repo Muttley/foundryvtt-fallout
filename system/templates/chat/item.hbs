@@ -99,13 +99,9 @@
 
 	<!-- * WEAPON MODS -->
 	{{#if isWeaponMod}}
-		<p>
-			<strong class="upperC">{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}:</strong>
-			{{fromConfig "WEAPON_TYPES" weaponType}}
-		</p>
-		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Mod_Type"}}: </strong>{{modType}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Mod_Type"}}: </strong>{{fromConfig "WEAPON_MOD_TYPES" modType}}</p>
 		<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Name_Prefix"}}: </strong>{{namePrefix}}</p>
-		<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{perks}}</p>
+		<p><strong class="upperC">{{localize "FALLOUT.UI.Perks"}}: </strong>{{crafting.perks}}</p>
 	{{/if}}
 
 	<!-- * APPAREL MODS -->
