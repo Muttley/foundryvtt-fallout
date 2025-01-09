@@ -246,7 +246,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			});
 		}
 
-		const __getDescendants = function (output, actor, item) {
+		const __getDescendants = function(output, actor, item) {
 			const descendants = actor.items.filter(
 				i => i.system.parentItem === item._id
 			);
@@ -477,8 +477,8 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// DON't LET NUMBER FIELDS EMPTY
 		const numInputs = document.querySelectorAll("input[type=number]");
-		numInputs.forEach(function (input) {
-			input.addEventListener("change", function (e) {
+		numInputs.forEach(function(input) {
+			input.addEventListener("change", function(e) {
 				if (e.target.value === "") {
 					e.target.value = 0;
 				}
@@ -576,8 +576,6 @@ export default class FalloutItemSheet extends ItemSheet {
 		html.find(".item-delete").click(async ev => {
 			ev.preventDefault();
 
-			const me = this;
-
 			let li = $(ev.currentTarget).parents(".weapon_mod");
 			li.slideUp(200, () => this.render(false));
 
@@ -598,64 +596,100 @@ export default class FalloutItemSheet extends ItemSheet {
 		let mod = this.item.system.mods[li.data("itemId")];
 		const updateData = {};
 
-		const enabled = !mod.system.attached;
-		updateData[`system.mods.${mod._id}.system.attached`] = enabled;
+		const installed = !mod.system.attached;
+		updateData[`system.mods.${mod._id}.system.attached`] = installed;
 
 		if (mod.system.modEffects.damage.rating !== 0) {
-			if (mod.system.modEffects.damage.overrideDamage === "modify") updateData["system.damage.rating"] = this.item.system.damage.rating + mod.system.modEffects.damage.rating;
-			else updateData["system.damage.rating"] = mod.system.modEffects.damage.rating;
-
+			if (installed) {
+				updateData["system.damage.originalRating"] = this.item.system.damage.rating;
+				if (mod.system.modEffects.damage.overrideDamage === "modify") updateData["system.damage.rating"] = this.item.system.damage.rating + mod.system.modEffects.damage.rating;
+				else updateData["system.damage.rating"] = mod.system.modEffects.damage.rating;
+			}
+			else updateData["system.damage.rating"] = this.item.system.damage.originalRating;
 		}
 
 		if (mod.system.modEffects.ammo !== "") updateData["system.ammo"] = mod.system.modEffects.ammo;
 
-		if (mod.system.modEffects.ammoPerShot !== 0) updateData["system.ammoPerShot"] = this.item.system.ammoPerShot + mod.system.modEffects.ammoPerShot;
+		if (mod.system.modEffects.ammoPerShot !== 0) {
+			if (installed) updateData["system.ammoPerShot"] = this.item.system.ammoPerShot + mod.system.modEffects.ammoPerShot;
+			else updateData["system.ammoPerShot"] = this.item.system.ammoPerShot - mod.system.modEffects.ammoPerShot;
+		}
 
-		if (mod.system.modEffects.fireRate !== 0) updateData["system.fireRate"] = this.item.system.fireRate + mod.system.modEffects.fireRate;
+		if (mod.system.modEffects.fireRate !== 0) {
+			if (installed) updateData["system.fireRate"] = this.item.system.fireRate + mod.system.modEffects.fireRate;
+			else updateData["system.fireRate"] = this.item.system.fireRate - mod.system.modEffects.fireRate;
+		}
 
-		if (mod.system.modEffects.range !== 0) modSummary.push(`Increase range by ${mod.system.modEffects.range} step`);
+		if (mod.system.modEffects.range !== 0) {
+			if (installed) updateData["system.range"] = this._updateRange(this.item.system.range, mod.system.modEffects.range);
+			else updateData["system.range"] = this._updateRange(this.item.system.range, -mod.system.modEffects.range);
+		}
 
 
 		// Damage type
 		if (mod.system.modEffects.damage.damageType.energy || mod.system.modEffects.damage.damageType.physical || mod.system.modEffects.damage.damageType.poison || mod.system.modEffects.damage.damageType.radiation) {
-			updateData["system.damage.damageType.energy"] = mod.system.modEffects.damage.damageType.energy;
-			updateData["system.damage.damageType.physical"] = mod.system.modEffects.damage.damageType.physical;
-			updateData["system.damage.damageType.poison"] = mod.system.modEffects.damage.damageType.poison;
-			updateData["system.damage.damageType.radiation"] = mod.system.modEffects.damage.damageType.radiation;
+			if (installed) {
+				updateData["system.damage.originalDamageType"] = this.item.system.damage.damageType;
+				updateData["system.damage.damageType"] = mod.system.modEffects.damage.damageType;
+			}
+			else updateData["system.damage.damageType"] = this.item.system.damage.originalDamageType;
+			// updateData["system.damage.damageType.energy"] = mod.system.modEffects.damage.damageType.energy;
+			// updateData["system.damage.damageType.physical"] = mod.system.modEffects.damage.damageType.physical;
+			// updateData["system.damage.damageType.poison"] = mod.system.modEffects.damage.damageType.poison;
+			// updateData["system.damage.damageType.radiation"] = mod.system.modEffects.damage.damageType.radiation;
 		}
 
 		// Damage Effects
-		let damageEffects = [];
 		for (const key in mod.system.modEffects.damage.damageEffect) {
 			const tmpDamageEffect = mod.system.modEffects.damage.damageEffect[key];
-			if (tmpDamageEffect.value === 1) damageEffects.push(`Gain ${key}${tmpDamageEffect.rank > 0 ? ` ${tmpDamageEffect.rank}` : ""}`);
-			else if (tmpDamageEffect.value === -1) damageEffects.push(`Remove ${key}`);
+			if (installed) {
+				updateData[`system.damage.damageEffect.${key}.value`] = this.item.system.damage.damageEffect[key].value + tmpDamageEffect.value;
+				updateData[`system.damage.damageEffect.${key}.rank`] = this.item.system.damage.damageEffect[key].rank + tmpDamageEffect.rank;
+			}
+			else {
+				updateData[`system.damage.damageEffect.${key}.value`] = this.item.system.damage.damageEffect[key].value - tmpDamageEffect.value;
+				updateData[`system.damage.damageEffect.${key}.rank`] = this.item.system.damage.damageEffect[key].rank - tmpDamageEffect.rank;
+			}
 		}
-		if (damageEffects.length > 0) modSummary.push(`${damageEffects.join(", ")}`);
 
 
 		// Weapon Qualities
-		let weaponQuality = [];
 		for (const key in mod.system.modEffects.damage.weaponQuality) {
 			const tmpWeaponQualities = mod.system.modEffects.damage.weaponQuality[key];
-			if (tmpWeaponQualities.value === 1) weaponQuality.push(`Gain ${key}${tmpWeaponQualities.rank > 0 ? ` Rank ${tmpWeaponQualities.rank} ` : ""}`);
-			else if (tmpWeaponQualities.value === -1) weaponQuality.push(`Remove ${key}`);
+			if (installed) {
+				updateData[`system.damage.weaponQuality.${key}.value`] = this.item.system.damage.weaponQuality[key].value + tmpWeaponQualities.value;
+				updateData[`system.damage.weaponQuality.${key}.rank`] = this.item.system.damage.weaponQuality[key].rank + tmpWeaponQualities.rank;
+			}
+			else {
+				updateData[`system.damage.weaponQuality.${key}.value`] = this.item.system.damage.weaponQuality[key].value - tmpWeaponQualities.value;
+				updateData[`system.damage.weaponQuality.${key}.rank`] = this.item.system.damage.weaponQuality[key].rank - tmpWeaponQualities.rank;
+			}
 		}
-		if (weaponQuality.length > 0) modSummary.push(`${weaponQuality.join(", ")}`);
 
-		//Lock if mod is attached.
-		if (enabled) updateData['system.mods.modded'] = true;
+
+		// Lock if mod is attached.
+		if (installed) updateData["system.mods.modded"] = true;
 		else {
-			//Unlock if all mods removed.
-			updateData['system.mods.modded'] = false;
+			// Unlock if all mods removed.
+			updateData["system.mods.modded"] = false;
 			for (const key in this.item.system.mods) {
 				if (this.item.system.mods[key].system?.attached) {
-					updateData['system.mods.modded'] = true;
+					updateData["system.mods.modded"] = true;
 					break;
 				}
 			}
 		}
 		this.item.update(updateData);
+	}
+
+	_updateRange(currentRange, step) {
+		const keys = Object.keys(CONFIG.FALLOUT.RANGES);
+		let currentIndex = keys.indexOf(currentRange);
+
+		// Compute the new index, clamping to bounds
+		let newIndex = Math.min(Math.max(currentIndex + step, 0), keys.length - 1);
+
+		return keys[newIndex];
 	}
 
 	async _onModSummary(event) {
@@ -823,11 +857,11 @@ export default class FalloutItemSheet extends ItemSheet {
 				if (weaponType !== this.item.system.weaponType) {
 					updateData["system.creatureAttribute"] =
 						CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE[
-						weaponType
+							weaponType
 						];
 					updateData["system.creatureSkill"] =
 						CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL[
-						weaponType
+							weaponType
 						];
 				}
 
