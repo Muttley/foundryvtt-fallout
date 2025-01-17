@@ -95,18 +95,6 @@ export default class FalloutItemSheet extends ItemSheet {
 			default:
 		}
 
-
-		// Saves a new item to the database.
-		// const clonedItemData = duplicate(droppedItem);
-		// clonedItemData.name = "Weapon (3)";
-		// const clonedItem = await Item.create(clonedItemData);
-
-		// Results in new item not saved to a database and cant be edited.
-		// let clonedItem = droppedItem.clone();
-		// clonedItem.id = randomID();
-		// clonedItem.name = "Weapon (3)";
-
-		// clonedItem.sheet.render(true);
 	}
 	/* -------------------------------------------- */
 
@@ -246,7 +234,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			});
 		}
 
-		const __getDescendants = function(output, actor, item) {
+		const __getDescendants = function (output, actor, item) {
 			const descendants = actor.items.filter(
 				i => i.system.parentItem === item._id
 			);
@@ -311,7 +299,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		const weaponQualities = [];
 		for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
 			weaponQualities.push({
-				active: item.system?.damage?.weaponQuality[key].value ?? false,
+				active: item.system?.damage?.weaponQuality[key].value ?? 0,
 				hasRank: CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key],
 				rank: item.system?.damage?.weaponQuality[key].rank,
 				key,
@@ -326,7 +314,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		const damageEffects = [];
 		for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
 			damageEffects.push({
-				active: item.system?.damage?.damageEffect[key].value ?? false,
+				active: item.system?.damage?.damageEffect[key].value ?? 0,
 				hasRank: CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key],
 				rank: item.system?.damage?.damageEffect[key].rank,
 				key,
@@ -357,22 +345,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		// Weapon Mods
-		let modsByType = {};
-
-		for (let mod in item.system.mods) {
-			if (item.system.mods[mod].system?.modType in CONFIG.FALLOUT.WEAPON_MOD_TYPES) {
-				if (!(item.system.mods[mod].system?.modType in modsByType)) modsByType[item.system.mods[mod].system?.modType] = [];
-				item.system.mods[mod].system.modEffects.summary = this._getWeaponModSummary(item.system.mods[mod]);
-				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
-			}
-		}
-
-
-		for (let key in modsByType) {
-			modsByType[key] = modsByType[key].sort(
-				(a, b) => a.name.localeCompare(b.name)
-			);
-		}
+		let modsByType = await this._getModsByType(item);
 
 
 		context.modsByType = modsByType;
@@ -449,6 +422,8 @@ export default class FalloutItemSheet extends ItemSheet {
 		context.overrideDamage = item.system.modEffects.damage.overrideDamage;
 
 		context.modSummary = this._getWeaponModSummary(item);
+
+
 	}
 
 	/* -------------------------------------------- */
@@ -477,8 +452,8 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// DON't LET NUMBER FIELDS EMPTY
 		const numInputs = document.querySelectorAll("input[type=number]");
-		numInputs.forEach(function(input) {
-			input.addEventListener("change", function(e) {
+		numInputs.forEach(function (input) {
+			input.addEventListener("change", function (e) {
 				if (e.target.value === "") {
 					e.target.value = 0;
 				}
@@ -520,8 +495,9 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// * MODS
 		html.find(".toggle-label").click(async ev => {
-			if (!this.item.type === "weapon_mod") return;
+			if (!["weapon_mod", "weapon"].includes(this.item.type)) return;
 			if (ev.target.className === "num-short-2") return;
+			if (this.item.system.mods?.modded) return;
 
 			const dataSets = ev.currentTarget.dataset;
 
@@ -531,14 +507,17 @@ export default class FalloutItemSheet extends ItemSheet {
 
 			active = active === 1 ? 0 : 1;
 
-			let dataPath = type === "quality"
+			let dataPath = "";
+			if (this.item.type === "weapon_mod") dataPath = type === "quality"
 				? `system.modEffects.damage.weaponQuality.${name}.value`
 				: `system.modEffects.damage.damageEffect.${name}.value`;
+			else dataPath = type === "quality"
+				? `system.damage.weaponQuality.${name}.value`
+				: `system.damage.damageEffect.${name}.value`;
 
 
 			let dataUpdate = {};
 			dataUpdate[dataPath] = active;
-			// dataUpdate["system.modEffects.summary"] = _getWeaponModSummary(this.item);
 
 			await this.item.update(dataUpdate);
 		});
@@ -590,6 +569,34 @@ export default class FalloutItemSheet extends ItemSheet {
 
 	}
 
+
+	async _getModsByType(item) {
+
+		// Weapon Mods
+		let modsByType = {};
+
+		for (let mod in item.system.mods) {
+			if (item.system.mods[mod].system?.modType in CONFIG.FALLOUT.WEAPON_MOD_TYPES) {
+				if (!(item.system.mods[mod].system?.modType in modsByType)) {
+					modsByType[item.system.mods[mod].system?.modType] = [];
+					modsByType[item.system.mods[mod].system?.modType].installed = false;
+				}
+				item.system.mods[mod].system.modEffects.summary = this._getWeaponModSummary(item.system.mods[mod]);
+				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
+				if (item.system.mods[mod].system.attached) modsByType[item.system.mods[mod].system?.modType].installed = true;
+			}
+		}
+
+
+		for (let key in modsByType) {
+			modsByType[key] = modsByType[key].sort(
+				(a, b) => a.name.localeCompare(b.name)
+			);
+		}
+
+		return modsByType;
+	}
+
 	async _onToggleMod(event) {
 		event.preventDefault();
 		let li = $(event.currentTarget).parents(".weapon_mod");
@@ -597,6 +604,14 @@ export default class FalloutItemSheet extends ItemSheet {
 		const updateData = {};
 
 		const installed = !mod.system.attached;
+
+		// Check if this type is already installed.
+		let modsByType = await this._getModsByType(this.item);
+		if (modsByType[mod.system.modType].installed && installed) {
+			ui.notifications.warn("Only one mod per type allowed to be installed.");
+			return;
+		}
+
 		updateData[`system.mods.${mod._id}.system.attached`] = installed;
 
 		if (mod.system.modEffects.damage.rating !== 0) {
@@ -673,7 +688,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			// Unlock if all mods removed.
 			updateData["system.mods.modded"] = false;
 			for (const key in this.item.system.mods) {
-				if (this.item.system.mods[key].system?.attached) {
+				if (this.item.system.mods[key].system?.attached && mod._id !== key) {
 					updateData["system.mods.modded"] = true;
 					break;
 				}
@@ -701,12 +716,9 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		const html = await renderTemplate("systems/fallout/templates/item/weapon/_partials/mod-desc.hbs", {
 			mod: mod,
-			modSummary: mod.modSummary,
+			modExtraEffect: mod.system.modEffects.effect,
 			crafting: mod.system.crafting,
 		});
-
-		// <p>&nbsp;</p>
-		// \n
 
 
 		// Toggle summary
@@ -730,19 +742,21 @@ export default class FalloutItemSheet extends ItemSheet {
 		let modSummary = [];
 		let modEffects = mod.system.modEffects;
 		// game.i18n.localize()
+		//game.i18n.format("MYSYSTEM.NewItem", {itemType: type})
 
 		if (modEffects.damage.rating !== 0) {
-			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD damage`);
-			else modSummary.push(`Change damage to ${modEffects.damage.rating} CD`);
+
+			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD ${game.i18n.localize("FALLOUT.UI.Damage")}`);
+			else modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.damageRatingOverride", { rating: modEffects.damage.rating }));
 		}
 
-		if (modEffects.ammo !== "") modSummary.push(`Ammo changes to ${modEffects.ammo}`);
+		if (modEffects.ammo !== "") modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.ammo", { ammo: modEffects.ammo }));
 
-		if (modEffects.ammoPerShot !== 0) modSummary.push(`consumes ${modEffects.ammoPerShot} shots per attack`);
+		if (modEffects.ammoPerShot !== 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.ammoPerShot", { ammoPerShot: modEffects.ammoPerShot }));
 
-		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} Fire Rate`);
+		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 
-		if (modEffects.range !== 0) modSummary.push(`Increase range by ${modEffects.range} step`);
+		if (modEffects.range !== 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.range", { range: modEffects.range })); 
 
 
 		// Damage type
@@ -753,15 +767,15 @@ export default class FalloutItemSheet extends ItemSheet {
 			if (modEffects.damage.damageType.poison) damageTypes.push("Poison");
 			if (modEffects.damage.damageType.radiation) damageTypes.push("Radiation");
 
-			modSummary.push(`Change damage type to ${damageTypes.join(", ")}`);
+			modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.damageType", { damageType: damageTypes.join(", ") }));
 		}
 
 		// Damage Effects
 		let damageEffects = [];
 		for (const key in modEffects.damage.damageEffect) {
 			const tmpDamageEffect = modEffects.damage.damageEffect[key];
-			if (tmpDamageEffect.value === 1) damageEffects.push(`Gain ${key}${tmpDamageEffect.rank > 0 ? ` ${tmpDamageEffect.rank}` : ""}`);
-			else if (tmpDamageEffect.value === -1) damageEffects.push(`Remove ${key}`);
+			if (tmpDamageEffect.value === 1) damageEffects.push(`${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.gain")} ${key}${tmpDamageEffect.rank > 0 ? ` ${tmpDamageEffect.rank}` : ""}`);
+			else if (tmpDamageEffect.value === -1) damageEffects.push(`${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.remove")} ${key}`);
 		}
 		if (damageEffects.length > 0) modSummary.push(`${damageEffects.join(", ")}`);
 
@@ -770,8 +784,8 @@ export default class FalloutItemSheet extends ItemSheet {
 		let weaponQuality = [];
 		for (const key in modEffects.damage.weaponQuality) {
 			const tmpWeaponQualities = modEffects.damage.weaponQuality[key];
-			if (tmpWeaponQualities.value === 1) weaponQuality.push(`Gain ${key}${tmpWeaponQualities.rank > 0 ? ` Rank ${tmpWeaponQualities.rank} ` : ""}`);
-			else if (tmpWeaponQualities.value === -1) weaponQuality.push(`Remove ${key}`);
+			if (tmpWeaponQualities.value === 1) weaponQuality.push(`${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.gain")} ${key}${tmpWeaponQualities.rank > 0 ? ` Rank ${tmpWeaponQualities.rank} ` : ""}`);
+			else if (tmpWeaponQualities.value === -1) weaponQuality.push(`${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.remove")} ${key}`);
 		}
 		if (weaponQuality.length > 0) modSummary.push(`${weaponQuality.join(", ")}`);
 
@@ -857,11 +871,11 @@ export default class FalloutItemSheet extends ItemSheet {
 				if (weaponType !== this.item.system.weaponType) {
 					updateData["system.creatureAttribute"] =
 						CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_ATTRIBUTE[
-							weaponType
+						weaponType
 						];
 					updateData["system.creatureSkill"] =
 						CONFIG.FALLOUT.DEFAULT_CREATURE_WEAPON_SKILL[
-							weaponType
+						weaponType
 						];
 				}
 

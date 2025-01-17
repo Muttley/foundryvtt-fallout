@@ -619,21 +619,21 @@ FALLOUT.WEAPON_TYPES = {
 };
 
 FALLOUT.WEAPON_MOD_TYPES = {
-	barrel:	"FALLOUT.WEAPONS.weaponModType.barrel",
-	capacitor:	"FALLOUT.WEAPONS.weaponModType.capacitor",
-	concentrate:	"FALLOUT.WEAPONS.weaponModType.concentrate",
-	container:	"FALLOUT.WEAPONS.weaponModType.container",
-	dish:	"FALLOUT.WEAPONS.weaponModType.dish",
-	fuel:	"FALLOUT.WEAPONS.weaponModType.fuel",
-	grip:	"FALLOUT.WEAPONS.weaponModType.grip",
-	magazine:	"FALLOUT.WEAPONS.weaponModType.magazine",
-	melee:	"FALLOUT.WEAPONS.weaponModType.melee",
-	muzzle:	"FALLOUT.WEAPONS.weaponModType.muzzle",
-	nozzle:	"FALLOUT.WEAPONS.weaponModType.nozzle",
-	propellantTank: "FALLOUT.WEAPONS.weaponModType.propellantTank",
-	receiver:	"FALLOUT.WEAPONS.weaponModType.receiver",
-	sight:	"FALLOUT.WEAPONS.weaponModType.sight",
-	stock:	"FALLOUT.WEAPONS.weaponModType.stock",
+	barrel:	"FALLOUT.WEAPON_MOD.type.barrel",
+	capacitor:	"FALLOUT.WEAPON_MOD.type.capacitor",
+	concentrate:	"FALLOUT.WEAPON_MOD.type.concentrate",
+	container:	"FALLOUT.WEAPON_MOD.type.container",
+	dish:	"FALLOUT.WEAPON_MOD.type.dish",
+	fuel:	"FALLOUT.WEAPON_MOD.type.fuel",
+	grip:	"FALLOUT.WEAPON_MOD.type.grip",
+	magazine:	"FALLOUT.WEAPON_MOD.type.magazine",
+	melee:	"FALLOUT.WEAPON_MOD.type.melee",
+	muzzle:	"FALLOUT.WEAPON_MOD.type.muzzle",
+	nozzle:	"FALLOUT.WEAPON_MOD.type.nozzle",
+	propellantTank: "FALLOUT.WEAPON_MOD.type.propellantTank",
+	receiver:	"FALLOUT.WEAPON_MOD.type.receiver",
+	sight:	"FALLOUT.WEAPON_MOD.type.sight",
+	stock:	"FALLOUT.WEAPON_MOD.type.stock",
 };
 
 

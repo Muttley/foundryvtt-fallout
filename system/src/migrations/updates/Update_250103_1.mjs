@@ -11,7 +11,7 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 		const updateData = {};
 
 		// Damage Effects
-		for (const key in itemData.system.modEffects.damage.damageEffect) {
+		for (const key in itemData.system.damage.damageEffect) {
 
 			if (itemData.system.damage.damageEffect[key].value === true) {
 				updateData[`system.damage.damageEffect.${key}.value`] = 1;
@@ -23,7 +23,7 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 
 
 		// Weapon Qualities
-		for (const key in itemData.system.modEffects.damage.weaponQuality) {
+		for (const key in itemData.system.damage.weaponQuality) {
 			if (itemData.system.damage.weaponQuality[key].value === true) {
 				updateData[`system.damage.weaponQuality.${key}.value`] = 1;
 			}
@@ -32,7 +32,7 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 			}
 		}
 
-		//const updateData = {
+		// const updateData = {
 		//	// "system.crafting.perks": perks,
 		//	// "system.-=perks": null,
 		//	// "system.modEffects.effect": effect,
@@ -40,7 +40,7 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 		//	// "system.modType": modType,
 		//	// "system.-=canBeScrapped": null,
 		//	// "system.-=isJunk": null,
-		//};
+		// };
 
 		return updateData;
 	}

@@ -721,21 +721,29 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
 FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
-FALLOUT.WEAPONS.weaponModType.receiver: Receiver
-FALLOUT.WEAPONS.weaponModType.barrel: Barrel
-FALLOUT.WEAPONS.weaponModType.capacitor: Capacitor
-FALLOUT.WEAPONS.weaponModType.magazine: Magazine
-FALLOUT.WEAPONS.weaponModType.grip: Grip
-FALLOUT.WEAPONS.weaponModType.stock: Stock
-FALLOUT.WEAPONS.weaponModType.sight: Sight
-FALLOUT.WEAPONS.weaponModType.muzzle: Muzzle
-FALLOUT.WEAPONS.weaponModType.concentrate: Concentrate
-FALLOUT.WEAPONS.weaponModType.container: Container
-FALLOUT.WEAPONS.weaponModType.melee: Melee
-FALLOUT.WEAPONS.weaponModType.dish: Dish
-FALLOUT.WEAPONS.weaponModType.fuel: Fuel
-FALLOUT.WEAPONS.weaponModType.propellantTank: Propellant Tank
-FALLOUT.WEAPONS.weaponModType.nozzle: Nozzle
+FALLOUT.WEAPON_MOD.type.receiver: Receiver
+FALLOUT.WEAPON_MOD.type.barrel: Barrel
+FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
+FALLOUT.WEAPON_MOD.type.magazine: Magazine
+FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.stock: Stock
+FALLOUT.WEAPON_MOD.type.sight: Sight
+FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
+FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
+FALLOUT.WEAPON_MOD.type.container: Container
+FALLOUT.WEAPON_MOD.type.melee: Melee
+FALLOUT.WEAPON_MOD.type.dish: Dish
+FALLOUT.WEAPON_MOD.type.fuel: Fuel
+FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
+FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
+FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
+FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
+FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
+FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
+FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.gain: Gain
+FALLOUT.WEAPON_MOD.summary.remove: Remove
+FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
