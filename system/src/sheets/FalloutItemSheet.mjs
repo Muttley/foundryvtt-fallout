@@ -78,7 +78,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		switch (droppedItem.type) {
 
-			case "apparel_mod":				
+			case "apparel_mod":
 				break;
 			case "perk":
 				break;
@@ -613,6 +613,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		updateData[`system.mods.${mod._id}.system.attached`] = installed;
 
+		// weapon damage
 		if (mod.system.modEffects.damage.rating !== 0) {
 			if (installed) {
 				updateData["system.damage.originalRating"] = this.item.system.damage.rating;
@@ -622,18 +623,22 @@ export default class FalloutItemSheet extends ItemSheet {
 			else updateData["system.damage.rating"] = this.item.system.damage.originalRating;
 		}
 
+		// ammo type
 		if (mod.system.modEffects.ammo !== "") updateData["system.ammo"] = mod.system.modEffects.ammo;
 
+		// ammo per shot
 		if (mod.system.modEffects.ammoPerShot !== 0) {
 			if (installed) updateData["system.ammoPerShot"] = this.item.system.ammoPerShot + mod.system.modEffects.ammoPerShot;
 			else updateData["system.ammoPerShot"] = this.item.system.ammoPerShot - mod.system.modEffects.ammoPerShot;
 		}
 
+		// sire rate
 		if (mod.system.modEffects.fireRate !== 0) {
 			if (installed) updateData["system.fireRate"] = this.item.system.fireRate + mod.system.modEffects.fireRate;
 			else updateData["system.fireRate"] = this.item.system.fireRate - mod.system.modEffects.fireRate;
 		}
 
+		// weapon range
 		if (mod.system.modEffects.range !== 0) {
 			if (installed) updateData["system.range"] = this._updateRange(this.item.system.range, mod.system.modEffects.range);
 			else updateData["system.range"] = this._updateRange(this.item.system.range, -mod.system.modEffects.range);
@@ -674,6 +679,18 @@ export default class FalloutItemSheet extends ItemSheet {
 				updateData[`system.damage.weaponQuality.${key}.value`] = this.item.system.damage.weaponQuality[key].value - tmpWeaponQualities.value;
 				updateData[`system.damage.weaponQuality.${key}.rank`] = this.item.system.damage.weaponQuality[key].rank - tmpWeaponQualities.rank;
 			}
+		}
+
+		// cost
+		if (mod.system.cost !== 0) {
+			if (installed) updateData["system.cost"] = this.item.system.cost + mod.system.cost;
+			else updateData["system.cost"] = this.item.system.cost - mod.system.cost;
+		}
+
+		// weight
+		if (mod.system.weight !== 0) {
+			if (installed) updateData["system.weight"] = this.item.system.weight + mod.system.weight;
+			else updateData["system.weight"] = this.item.system.weight - mod.system.weight;
 		}
 
 
