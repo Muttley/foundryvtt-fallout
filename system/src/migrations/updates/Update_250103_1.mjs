@@ -24,6 +24,8 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 			}
 		}
 
+		updateData["system.mods.installedMods"] = "";
+
 		return updateData;
 	}
 }

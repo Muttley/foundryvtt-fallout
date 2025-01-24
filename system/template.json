@@ -1409,6 +1409,7 @@
 			"melee": false,
 			"mods": {
 				"current": 0,
+				"installedMods": "",
 				"list": "",
 				"max": 0,
 				"modded": false

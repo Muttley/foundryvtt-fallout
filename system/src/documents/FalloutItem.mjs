@@ -193,6 +193,10 @@ export default class FalloutItem extends Item {
 		itemData.isWeapon = this.type === "weapon";
 		itemData.isWeaponMod = this.type === "weapon_mod";
 
+		if (itemData.isWeaponMod) {
+			itemData.modSummary = this._sheet.getWeaponModSummary(this);
+		}
+
 		itemData.name = this.name;
 		itemData.showQuantity = showQuantity;
 		itemData.type = this.type;

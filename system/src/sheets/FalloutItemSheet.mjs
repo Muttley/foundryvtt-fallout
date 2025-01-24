@@ -143,7 +143,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		// Enrich Weapon Mod Effect Text
-		if (item.system.modEffects.effect) {
+		if (item.system.modEffects?.effect) {
 			foundry.utils.mergeObject(context, {
 				effectHTML: await TextEditor.enrichHTML(item.system.modEffects.effect, {
 					secrets: item.isOwner,
@@ -420,7 +420,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		context.overrideDamage = item.system.modEffects.damage.overrideDamage;
 
-		context.modSummary = this._getWeaponModSummary(item);
+		context.modSummary = this.getWeaponModSummary(item);
 
 
 	}
@@ -580,7 +580,7 @@ export default class FalloutItemSheet extends ItemSheet {
 					modsByType[item.system.mods[mod].system?.modType] = [];
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
 				}
-				item.system.mods[mod].system.modEffects.summary = this._getWeaponModSummary(item.system.mods[mod]);
+				item.system.mods[mod].system.modEffects.summary = this.getWeaponModSummary(item.system.mods[mod]);
 				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
 				if (item.system.mods[mod].system.attached) modsByType[item.system.mods[mod].system?.modType].installed = true;
 			}
@@ -613,6 +613,24 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		updateData[`system.mods.${mod._id}.system.attached`] = installed;
 
+		// Keep track of the name of installed mods for the chat output.
+		if (installed) {
+			// Add mod.system.name if it's not already in the list
+			updateData["system.mods.installedMods"] = this.item.system.mods.installedMods
+				? `${this.item.system.mods.installedMods}, ${mod.name}`.split(", ")
+					.filter((item, index, arr) => arr.indexOf(item) === index)
+					.join(", ")
+				: mod.name;
+		}
+		else {
+			// Remove mod.system.name if it exists
+			updateData["system.mods.installedMods"] = this.item.system.mods.installedMods
+				.split(", ")
+				.filter(item => item.trim() !== mod.name)
+				.join(", ");
+		}
+
+
 		// weapon damage
 		if (mod.system.modEffects.damage.rating !== 0) {
 			if (installed) {
@@ -632,7 +650,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			else updateData["system.ammoPerShot"] = this.item.system.ammoPerShot - mod.system.modEffects.ammoPerShot;
 		}
 
-		// sire rate
+		// fire rate
 		if (mod.system.modEffects.fireRate !== 0) {
 			if (installed) updateData["system.fireRate"] = this.item.system.fireRate + mod.system.modEffects.fireRate;
 			else updateData["system.fireRate"] = this.item.system.fireRate - mod.system.modEffects.fireRate;
@@ -657,7 +675,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		// Damage Effects
 		for (const key in mod.system.modEffects.damage.damageEffect) {
 			const tmpDamageEffect = mod.system.modEffects.damage.damageEffect[key];
-			if (installed) {
+			if (tmpDamageEffect.value > 0) if (installed) {
 				updateData[`system.damage.damageEffect.${key}.value`] = this.item.system.damage.damageEffect[key].value + tmpDamageEffect.value;
 				updateData[`system.damage.damageEffect.${key}.rank`] = this.item.system.damage.damageEffect[key].rank + tmpDamageEffect.rank;
 			}
@@ -671,7 +689,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		// Weapon Qualities
 		for (const key in mod.system.modEffects.damage.weaponQuality) {
 			const tmpWeaponQualities = mod.system.modEffects.damage.weaponQuality[key];
-			if (installed) {
+			if (tmpWeaponQualities.value > 0) if (installed) {
 				updateData[`system.damage.weaponQuality.${key}.value`] = this.item.system.damage.weaponQuality[key].value + tmpWeaponQualities.value;
 				updateData[`system.damage.weaponQuality.${key}.rank`] = this.item.system.damage.weaponQuality[key].rank + tmpWeaponQualities.rank;
 			}
@@ -747,7 +765,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		li.toggleClass("expanded");
 	}
 
-	_getWeaponModSummary(mod) {
+	getWeaponModSummary(mod) {
 		let modSummary = [];
 		let modEffects = mod.system.modEffects;
 

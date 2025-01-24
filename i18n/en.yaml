@@ -219,7 +219,7 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
 FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
-FALLOUT.Item.Warnings.Modded: This item had been modded. Disable all mods to edit.
+FALLOUT.Item.Warnings.Modded: This item has been modded. Disable all mods to edit.
 FALLOUT.LEVEL.CurrentXP: Current XP
 FALLOUT.LEVEL.Level: Level
 FALLOUT.LEVEL.NextXP: Next Level XP
@@ -255,6 +255,7 @@ FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{versi
 FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
+FALLOUT.MODS.installedMods: Installed Mods
 FALLOUT.NPC_TYPES.legendary: Legendary
 FALLOUT.NPC_TYPES.major: Major
 FALLOUT.NPC_TYPES.mighty: Mighty
@@ -642,6 +643,7 @@ FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Special Ability
 FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Stashed
+FALLOUT.UI.summary: Summary
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
 FALLOUT.UI.WEAPON_MODS: Weapon Mods

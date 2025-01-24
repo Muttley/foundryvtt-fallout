@@ -77,7 +77,7 @@ export default function registerHandlebarsHelpers() {
 			if (!quality.value) continue;
 
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
-			if (quality.rank > 0) qualityName += ` ${quality.rank}`;
+			if (quality.rank > 0) qualityName += `&nbsp;${quality.rank}`;
 
 			const tooltip = CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key];
 
@@ -86,6 +86,34 @@ export default function registerHandlebarsHelpers() {
 			resultHtml.dataset.key = key;
 			resultHtml.dataset.tooltip = tooltip;
 			resultHtml.innerHTML = qualityName;
+
+			elements.push(resultHtml.outerHTML);
+		}
+
+		let listString = "";
+
+		if (elements.length > 0) {
+			listString = elements.join(", ");
+		}
+		else {
+			listString = "&mdash;";
+		}
+
+		return listString;
+	});
+
+	Handlebars.registerHelper("listWeaponMods", function(weaponMods) {
+		const elements = [];
+
+		for (const key in weaponMods) {
+			if (!weaponMods[key].system?.attached) continue;
+
+
+			const resultHtml = document.createElement("span");
+			resultHtml.classList.add("effect", "hover");
+			resultHtml.dataset.key = key;
+			resultHtml.dataset.tooltip = weaponMods[key].system.modEffects.summary;
+			resultHtml.innerHTML = weaponMods[key].name;
 
 			elements.push(resultHtml.outerHTML);
 		}
