@@ -141,9 +141,11 @@
 								name="system.level.nextLevelXP"
 								type="text"
 								value="{{system.level.nextLevelXP}}"
-								{{#unless disableAutoXpTarget}}
-									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
-									disabled
+								{{#unless disableAutoDerivedStats}}
+									{{#unless disableAutoXpTarget}}
+										data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+										disabled
+									{{/unless}}
 								{{/unless}}
 							/>
 						</div>
