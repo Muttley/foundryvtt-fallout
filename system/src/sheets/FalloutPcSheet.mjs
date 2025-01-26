@@ -42,6 +42,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 
+		html.find("[data-action='levelUp']").click(
+			async event => this._openlevelUpTool(event)
+		);
+
 		html.find(".availability-roll").click(async event => {
 			event.preventDefault();
 			this.actor.rollAvailabilityCheck();
@@ -329,6 +333,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	}
 
 
+	async _openlevelUpTool(event) {
+		return new fallout.apps.FalloutLevelUp(this.actor).render(true);
+	}
+
 	/**
 	 * Organize and classify Items for Character sheets.
 	 *
@@ -344,6 +352,9 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 		context.treatedInjuriesCount = allInjuries.filter(i => i === 1).length;
 		context.openInjuriesCount = allInjuries.filter(i => i === 2).length;
+
+		context.levelUp = this.actor.system.level.currentXP
+			>= this.actor.system.level.nextLevelXP;
 	}
 
 

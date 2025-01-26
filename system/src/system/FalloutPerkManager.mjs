@@ -1,11 +1,22 @@
 export default class FalloutPerkManager {
 	constructor(actor, options={}) {
+		this.actor = actor;
 		this.actorOwnedPerksLut = {};
 		this.actorAttributes = [];
-		this.actorSkills = [];
+		this.actorReadMagazines = [];
 	}
 
-	async getAvailablePerks() {
+	async getAvailablePerks(nextLevel=true) {
+		this.actorAttributes = foundry.utils.duplicate(
+			this.actor.system.attributes
+		);
+
+		this.actorReadMagazines = foundry.utils.duplicate(
+			this.actor.system.readMagazines
+		);
+
+		await this.getKnownPerks();
+
 		const selectedPerks = new Collection();
 
 		const allPerks = await fallout.compendiums.perks();
@@ -14,7 +25,7 @@ export default class FalloutPerkManager {
 			perk.system.perkIdentifier = perk.name.slugify();
 
 			// Make sure we meet the requirements
-			const meetsRequirements = await this._meetsRequirements(perk);
+			const meetsRequirements = await this._meetsRequirements(perk, nextLevel);
 
 			if (meetsRequirements) {
 				let rank = 1;
@@ -36,8 +47,22 @@ export default class FalloutPerkManager {
 		return selectedPerks;
 	}
 
+	async getKnownPerks() {
+		this.actorOwnedPerksLut = {};
+
+		for (const item of this.actor.items) {
+			if (item.type === "perk") {
+				this.actorOwnedPerksLut[item.name.slugify()] = item.system.rank.value;
+			}
+		}
+	}
+
 	async setActorAttributes(attributes) {
 		this.actorAttributes = attributes;
+	}
+
+	async setActorReadMagazines(readMagazines) {
+		this.actorReadMagazines = readMagazines;
 	}
 
 	async setKnownPerks(perks) {
@@ -48,8 +73,10 @@ export default class FalloutPerkManager {
 		}
 	}
 
-	async _meetsRequirements(perk) {
+	async _meetsRequirements(perk, nextLevel) {
 		let requirementsMet = true;
+
+		const requirements = perk.system.requirementsEx;
 
 		// First make sure that if the character already knows the talent that
 		// they have not maxed it out
@@ -65,29 +92,42 @@ export default class FalloutPerkManager {
 
 		// Are we the correct level for the next rank of the perk?
 		//
-		const playerLevel = this.actor?.system?.level?.value ?? 1;
+		const currentLevel = this.actor.system.level.value;
+		const playerLevel = nextLevel ? currentLevel + 1 : currentLevel;
+
 		if (perk.system.multiRank) {
 			const nextPerkRank = (knownTalent ?? 0) + 1;
 
-			const startLevel = perk.system?.requirementsEx?.level ?? 1;
-			const rankLevelStep = perk.system?.requirementsEx?.levelIncrease ?? 1;
+			const startLevel = requirements.level ?? 1;
+			const rankLevelStep = requirements.levelIncrease ?? 1;
 
 			const levelRequired = startLevel + ((nextPerkRank - 1) * rankLevelStep);
 
 			if (playerLevel < levelRequired) requirementsMet = false;
 		}
-		else if (playerLevel < perk.system?.requirementsEx?.level ?? 1) {
+		else if (playerLevel < requirements.level ?? 1) {
 			requirementsMet = false;
 		}
 
 
 		// Do we meet the attribute requirements?
 		//
-		for (const attribute of perk.system.requirementsEx.attributes) {
+		for (const attribute in requirements.attributes) {
 			const actorValue = this.actorAttributes[attribute].value ?? 0;
-			const perkValue = perk.system.requirementsEx.attributes[attribute] ?? 0;
+			const perkValue = requirements.attributes[attribute].value ?? 0;
 
-			if (actorValue < perkValue) requirementsMet = false;
+			if (actorValue < perkValue) {
+				requirementsMet = false;
+				break;
+			}
+		}
+
+		// Have we read any required magazines?
+		for (const uuid of requirements.magazineUuids ?? []) {
+			if (!this.actorReadMagazines.includes(uuid)) {
+				requirementsMet = false;
+				break;
+			}
 		}
 
 		return requirementsMet;

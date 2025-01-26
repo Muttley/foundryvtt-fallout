@@ -883,22 +883,26 @@ export default class FalloutActor extends Actor {
 	_preparePerkManager() {
 		this.perkManager = new FalloutPerkManager(this);
 
-		this.perkManager.setActorAttributes(
-			foundry.utils.duplicate(this.system.attributes)
-		);
+		// this.perkManager.setActorAttributes(
+		// 	foundry.utils.duplicate(this.system.attributes)
+		// );
 
-		const knownPerks = [];
+		// const knownPerks = [];
 
-		for (const item of this.items) {
-			if (item.type === "perk") {
-				knownPerks.push({
-					identifier: item.name.slugify(),
-					rank: item.system.rank.value,
-				});
-			}
-		}
+		// for (const item of this.items) {
+		// 	if (item.type === "perk") {
+		// 		knownPerks.push({
+		// 			identifier: item.name.slugify(),
+		// 			rank: item.system.rank.value,
+		// 		});
+		// 	}
+		// }
 
-		this.perkManager.setKnownPerks(knownPerks);
+		// this.perkManager.setKnownPerks(knownPerks);
+
+		// this.perkManager.setActorReadMagazines(
+		// 	foundry.utils.duplicate(this.system.readMagazines)
+		// );
 	}
 
 	async _toggleImmunity(type) {

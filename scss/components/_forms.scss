@@ -35,6 +35,11 @@
 			}
 		}
 	}
+
+	.level-up-label {
+		text-shadow: 0 0 8px var(--color-shadow-primary);
+	}
+
 	.chaty{
 		cursor: pointer;
 		width:1.2rem;

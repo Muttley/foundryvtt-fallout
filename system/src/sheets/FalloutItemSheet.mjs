@@ -463,7 +463,7 @@ export default class FalloutItemSheet extends ItemSheet {
 			case "perk": {
 				const updateData = this._getSubmitData();
 
-				delete updateData["system.requirementsEx.magazineUuid"];
+				delete updateData["system.requirementsEx.magazineUuids"];
 
 				this.item.update(updateData);
 				break;

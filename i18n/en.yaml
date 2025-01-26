@@ -758,3 +758,4 @@ TYPES.Item.special_ability: Special Ability
 TYPES.Item.trait: Trait
 TYPES.Item.weapon_mod: Weapon Mod
 TYPES.Item.weapon: Weapon
+FALLOUT.LevelUp.AppTitle: Level Up
