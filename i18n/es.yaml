@@ -159,8 +159,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Daño por radiación
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir Agua Sucia"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recibe daño de radiación {radsTaken} al consumir Agua Sucia"
 FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} reads a magazine entitled \"{itemName}\""
-FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
+FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Chatarrero
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} ha sido saqueada, y ha llevado {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Ubicación de Saqueo
@@ -239,6 +239,7 @@ FALLOUT.LEVEL.CurrentXP: XP Actual
 FALLOUT.LEVEL.Level: Nivel
 FALLOUT.LEVEL.NextXP: Siguiente nivel XP
 FALLOUT.LEVEL.RewardXP: Recompensa de XP
+FALLOUT.LevelUp.AppTitle: Level Up
 FALLOUT.LOCATION_CATEGORY.agriculture: Agricultura
 FALLOUT.LOCATION_CATEGORY.commercial: Comercio
 FALLOUT.LOCATION_CATEGORY.custom: Personalizado
@@ -269,8 +270,8 @@ FALLOUT.MIGRATION.begin_migration: Realizando actualizaciones de datos para Fall
 FALLOUT.MIGRATION.begin_schema: Aplicando actualizaciones para Fallout 2d20 v{version}
 FALLOUT.MIGRATION.completed_migration: Completada la actualización para Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Se han completado las actualizaciones de Fallout 2d20 y{version}
-FALLOUT.MODS.mods: Mods
 FALLOUT.MODS.installedMods: Installed Mods
+FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Legendario
 FALLOUT.NPC_TYPES.major: Mayor
 FALLOUT.NPC_TYPES.mighty: Poderoso
@@ -370,11 +371,11 @@ FALLOUT.SOURCE_TITLE.settlers_guide: Libro Guía del colono
 FALLOUT.SOURCE_TITLE.wanderers_guide: Libro Guía del vagabundo
 FALLOUT.SOURCE_TITLE.winter_of_atom: Invierno Nuclear
 FALLOUT.TEMPLATES.Abilities: Atributo
-FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Add_Perk: Añadir cualidad
 FALLOUT.TEMPLATES.Add_Trait: Añadir rasgo
 FALLOUT.TEMPLATES.AddictionNumber: Número de addicción
 FALLOUT.TEMPLATES.Addictive: Adictivo
+FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Alcoholic: Alcohólico
 FALLOUT.TEMPLATES.AllLocations: Todas las ubicaciones
 FALLOUT.TEMPLATES.AMMO: MUNICIÓN
@@ -395,8 +396,8 @@ FALLOUT.TEMPLATES.Attributes: Atributos
 FALLOUT.TEMPLATES.Butchery: Carnicería
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Category: Categoría
-FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Compl: Compl.
+FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Complications: Complicaciones
 FALLOUT.TEMPLATES.CONDITIONS: CONDICIONES
 FALLOUT.TEMPLATES.conditions.dehydrated: Deshidratado
@@ -689,6 +690,29 @@ FALLOUT.VEHICLE.vehicleQuality.rugged: Áspero
 FALLOUT.VEHICLE.vehicleQuality.single_seat: Monoplaza
 FALLOUT.VEHICLE.vehicleQuality.watercraft: Embarcación
 FALLOUT.VEHICLE.zone_speed: Zona
+FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
+FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
+FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
+FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
+FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
+FALLOUT.WEAPON_MOD.summary.gain: Gain
+FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.remove: Remove
+FALLOUT.WEAPON_MOD.type.barrel: Barrel
+FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
+FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
+FALLOUT.WEAPON_MOD.type.container: Container
+FALLOUT.WEAPON_MOD.type.dish: Dish
+FALLOUT.WEAPON_MOD.type.fuel: Fuel
+FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.magazine: Magazine
+FALLOUT.WEAPON_MOD.type.melee: Melee
+FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
+FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
+FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
+FALLOUT.WEAPON_MOD.type.receiver: Receiver
+FALLOUT.WEAPON_MOD.type.sight: Sight
+FALLOUT.WEAPON_MOD.type.stock: Stock
 FALLOUT.WEAPONS.damageEffect.arc: Arco
 FALLOUT.WEAPONS.damageEffect.breaking: Rompiendo
 FALLOUT.WEAPONS.damageEffect.burst: Ráfaga
@@ -741,29 +765,6 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas cuerpo a cuerpo
 FALLOUT.WEAPONS.weaponType.smallGuns: Armas pequeñas
 FALLOUT.WEAPONS.weaponType.throwing: Lanzando
 FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
-FALLOUT.WEAPON_MOD.type.receiver: Receiver
-FALLOUT.WEAPON_MOD.type.barrel: Barrel
-FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
-FALLOUT.WEAPON_MOD.type.magazine: Magazine
-FALLOUT.WEAPON_MOD.type.grip: Grip
-FALLOUT.WEAPON_MOD.type.stock: Stock
-FALLOUT.WEAPON_MOD.type.sight: Sight
-FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
-FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
-FALLOUT.WEAPON_MOD.type.container: Container
-FALLOUT.WEAPON_MOD.type.melee: Melee
-FALLOUT.WEAPON_MOD.type.dish: Dish
-FALLOUT.WEAPON_MOD.type.fuel: Fuel
-FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
-FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
-FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
-FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
-FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
-FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
-FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
-FALLOUT.WEAPON_MOD.summary.gain: Gain
-FALLOUT.WEAPON_MOD.summary.remove: Remove
-FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 ITEM.AmmoPerShot: Munición por Disparo
 TYPES.Actor.character: Personaje
 TYPES.Actor.creature: Criatura
@@ -790,4 +791,3 @@ TYPES.Item.special_ability: Habilidad especial
 TYPES.Item.trait: Rasgo
 TYPES.Item.weapon_mod: Mod de arma
 TYPES.Item.weapon: Arma
-FALLOUT.LevelUp.AppTitle: Level Up
