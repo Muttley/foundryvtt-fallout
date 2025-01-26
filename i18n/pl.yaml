@@ -159,8 +159,8 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Obrażenia Radiacyjne
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} reads a magazine entitled \"{itemName}\""
-FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
+FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Złomiarz
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} została oszabrowana, zajęło to {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Szabrowanie lokacji
@@ -239,6 +239,7 @@ FALLOUT.LEVEL.CurrentXP: Obecne PD
 FALLOUT.LEVEL.Level: Poziom
 FALLOUT.LEVEL.NextXP: PD na następny poziom
 FALLOUT.LEVEL.RewardXP: Nagroda w PD
+FALLOUT.LevelUp.AppTitle: Level Up
 FALLOUT.LOCATION_CATEGORY.agriculture: Rolniczy
 FALLOUT.LOCATION_CATEGORY.commercial: Handlowy
 FALLOUT.LOCATION_CATEGORY.custom: Dowolny
@@ -269,8 +270,8 @@ FALLOUT.MIGRATION.begin_migration: Wykonywanie aktualizacji danych dla Fallout 2
 FALLOUT.MIGRATION.begin_schema: Wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
 FALLOUT.MIGRATION.completed_migration: Zakończono aktualizacje danych dla Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Zakończono wdrażanie aktualizacji dla schematu Fallout 2d20 v{version}
-FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.MODS.installedMods: Installed Mods
+FALLOUT.MODS.mods: Modyfikacje
 FALLOUT.NPC_TYPES.legendary: Legendarny
 FALLOUT.NPC_TYPES.major: Główny
 FALLOUT.NPC_TYPES.mighty: Potężny
@@ -370,11 +371,11 @@ FALLOUT.SOURCE_TITLE.settlers_guide: Przewodnik Osadnika
 FALLOUT.SOURCE_TITLE.wanderers_guide: Przewodnik Wędrowca
 FALLOUT.SOURCE_TITLE.winter_of_atom: Atomowa Zima
 FALLOUT.TEMPLATES.Abilities: Umiejętności
-FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Add_Perk: Dodaj Profit
 FALLOUT.TEMPLATES.Add_Trait: Dodaj Atut
 FALLOUT.TEMPLATES.AddictionNumber: Liczba uzależnień
 FALLOUT.TEMPLATES.Addictive: Uzależniające
+FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Alcoholic: Alkoholik
 FALLOUT.TEMPLATES.AllLocations: Wszystkie lokacje
 FALLOUT.TEMPLATES.AMMO: Amunicja
@@ -395,8 +396,8 @@ FALLOUT.TEMPLATES.Attributes: Cechy
 FALLOUT.TEMPLATES.Butchery: Mięso
 FALLOUT.TEMPLATES.ButcheryTooltip: PT testu rzeźnictwa
 FALLOUT.TEMPLATES.Category: Kategoria
-FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Compl: Komp.
+FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Complications: Komplikacje
 FALLOUT.TEMPLATES.CONDITIONS: Stany
 FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
@@ -689,6 +690,29 @@ FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
 FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
 FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
 FALLOUT.VEHICLE.zone_speed: Zone
+FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
+FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
+FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
+FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
+FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
+FALLOUT.WEAPON_MOD.summary.gain: Gain
+FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.remove: Remove
+FALLOUT.WEAPON_MOD.type.barrel: Barrel
+FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
+FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
+FALLOUT.WEAPON_MOD.type.container: Container
+FALLOUT.WEAPON_MOD.type.dish: Dish
+FALLOUT.WEAPON_MOD.type.fuel: Fuel
+FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.magazine: Magazine
+FALLOUT.WEAPON_MOD.type.melee: Melee
+FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
+FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
+FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
+FALLOUT.WEAPON_MOD.type.receiver: Receiver
+FALLOUT.WEAPON_MOD.type.sight: Sight
+FALLOUT.WEAPON_MOD.type.stock: Stock
 FALLOUT.WEAPONS.damageEffect.arc: Łuk
 FALLOUT.WEAPONS.damageEffect.breaking: Niszczące
 FALLOUT.WEAPONS.damageEffect.burst: Seria
@@ -741,29 +765,6 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Broń Biała
 FALLOUT.WEAPONS.weaponType.smallGuns: Broń palna
 FALLOUT.WEAPONS.weaponType.throwing: Rzucana
 FALLOUT.WEAPONS.weaponType.unarmed: Bijatyka
-FALLOUT.WEAPON_MOD.type.receiver: Receiver
-FALLOUT.WEAPON_MOD.type.barrel: Barrel
-FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
-FALLOUT.WEAPON_MOD.type.magazine: Magazine
-FALLOUT.WEAPON_MOD.type.grip: Grip
-FALLOUT.WEAPON_MOD.type.stock: Stock
-FALLOUT.WEAPON_MOD.type.sight: Sight
-FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
-FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
-FALLOUT.WEAPON_MOD.type.container: Container
-FALLOUT.WEAPON_MOD.type.melee: Melee
-FALLOUT.WEAPON_MOD.type.dish: Dish
-FALLOUT.WEAPON_MOD.type.fuel: Fuel
-FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
-FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
-FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
-FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
-FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
-FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
-FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
-FALLOUT.WEAPON_MOD.summary.gain: Gain
-FALLOUT.WEAPON_MOD.summary.remove: Remove
-FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 ITEM.AmmoPerShot: Amunicja na strzał
 TYPES.Actor.character: Postać
 TYPES.Actor.creature: Stworzenie
@@ -790,4 +791,3 @@ TYPES.Item.special_ability: Zdolności Specjalne
 TYPES.Item.trait: Atut
 TYPES.Item.weapon_mod: Modyfikacje Broni
 TYPES.Item.weapon: Broń
-FALLOUT.LevelUp.AppTitle: Level Up
