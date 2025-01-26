@@ -57,6 +57,11 @@ select {
 		color: greenyellow;
 		background-color: black;
 	}
+
+	&.disable {
+		color: indianred;
+		background-color: black;
+	}
 }
 
 .wpn-tag-toggler {

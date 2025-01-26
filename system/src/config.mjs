@@ -620,6 +620,25 @@ FALLOUT.WEAPON_TYPES = {
 	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
 
+FALLOUT.WEAPON_MOD_TYPES = {
+	barrel:	"FALLOUT.WEAPON_MOD.type.barrel",
+	capacitor:	"FALLOUT.WEAPON_MOD.type.capacitor",
+	concentrate:	"FALLOUT.WEAPON_MOD.type.concentrate",
+	container:	"FALLOUT.WEAPON_MOD.type.container",
+	dish:	"FALLOUT.WEAPON_MOD.type.dish",
+	fuel:	"FALLOUT.WEAPON_MOD.type.fuel",
+	grip:	"FALLOUT.WEAPON_MOD.type.grip",
+	magazine:	"FALLOUT.WEAPON_MOD.type.magazine",
+	melee:	"FALLOUT.WEAPON_MOD.type.melee",
+	muzzle:	"FALLOUT.WEAPON_MOD.type.muzzle",
+	nozzle:	"FALLOUT.WEAPON_MOD.type.nozzle",
+	propellantTank: "FALLOUT.WEAPON_MOD.type.propellantTank",
+	receiver:	"FALLOUT.WEAPON_MOD.type.receiver",
+	sight:	"FALLOUT.WEAPON_MOD.type.sight",
+	stock:	"FALLOUT.WEAPON_MOD.type.stock",
+};
+
+
 export async function discoverAvailableAmmoTypes() {
 	const ammo = await fallout.compendiums.ammo();
 

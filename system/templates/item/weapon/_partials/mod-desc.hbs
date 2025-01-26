@@ -1,0 +1,35 @@
+<div class="upperC">
+	{{{modExtraEffect}}}
+</div>
+
+{{#ifCond crafting.complexity '!==' ""}}
+<div class="box">
+	<div class="flexrow items-header upperC" style="margin: 0;">
+		<p>{{localize "FALLOUT.TEMPLATES.Crafting"}}</p>
+	</div>
+	<div class="flexrow items-header" style="margin: 0;">
+		<div class="text-center upperC flex3">
+			<p>{{localize "FALLOUT.TEMPLATES.complexity"}}</p>
+		</div>
+		<div class="text-center upperC flex3">
+			<p>{{localize "FALLOUT.UI.Perks"}}</p>
+		</div>
+		<div class="text-center upperC flex3">
+			<p>{{localize "FALLOUT.TEMPLATES.Skill"}}</p>
+		</div>
+	</div>
+	<div class="flexrow item-info">
+		<div class="text-center upperC flex3">
+			<p>{{crafting.complexity}}</p>
+		</div>
+		<div class="text-center flex3">
+			<p>{{crafting.perks}}</p>
+		</div>
+		<div class="text-center flex3">
+			<p>{{crafting.skill}}</p>
+		</div>
+	</div>
+</div>
+{{/ifCond}}
+
+

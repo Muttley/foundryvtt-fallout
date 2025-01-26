@@ -1,0 +1,24 @@
+Mod Types:
+	MATERIAL MOD
+	UPGRADE MOD
+	SYSTEM MOD
+	PLATING MOD
+	
+Effects:
+	modify damage resist
+	?Shadowed
+	Carry Weight
+	description
+
+Other Params:
+	Name Prefix
+	Weight
+	Cost
+	Perk
+	Crafting:
+		Complexity
+		Skill
+		Rarity
+
+Special Notes:
+	

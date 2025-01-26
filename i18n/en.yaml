@@ -234,6 +234,7 @@ FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
 FALLOUT.Item.PowerArmor.Frame: Frame
 FALLOUT.Item.PowerArmor.IsFrame: Is Frame
 FALLOUT.Item.PowerArmor.Pieces: Power Armor Pieces
+FALLOUT.Item.Warnings.Modded: This item has been modded. Disable all mods to edit.
 FALLOUT.LEVEL.CurrentXP: Current XP
 FALLOUT.LEVEL.Level: Level
 FALLOUT.LEVEL.NextXP: Next Level XP
@@ -269,6 +270,7 @@ FALLOUT.MIGRATION.begin_schema: Applying updates for Fallout 2d20 schema v{versi
 FALLOUT.MIGRATION.completed_migration: Completed data updgrades for Fallout 2d20
 FALLOUT.MIGRATION.completed_schema: Completed applying updates for Fallout 2d20 schema v{version}
 FALLOUT.MODS.mods: Mods
+FALLOUT.MODS.installedMods: Installed Mods
 FALLOUT.NPC_TYPES.legendary: Legendary
 FALLOUT.NPC_TYPES.major: Major
 FALLOUT.NPC_TYPES.mighty: Mighty
@@ -368,6 +370,7 @@ FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Abilities
+FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Add_Perk: Add Perk
 FALLOUT.TEMPLATES.Add_Trait: Add Trait
 FALLOUT.TEMPLATES.AddictionNumber: Addiction Number
@@ -392,6 +395,7 @@ FALLOUT.TEMPLATES.Attributes: Attributes
 FALLOUT.TEMPLATES.Butchery: Butchery
 FALLOUT.TEMPLATES.ButcheryTooltip: Butchery Check TN
 FALLOUT.TEMPLATES.Category: Category
+FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
@@ -417,6 +421,7 @@ FALLOUT.TEMPLATES.conditions.weary: Weary
 FALLOUT.TEMPLATES.ConstructionTime: Construction Time
 FALLOUT.TEMPLATES.Consumable_Group: Group
 FALLOUT.TEMPLATES.Consumable_Type: Type
+FALLOUT.TEMPLATES.Crafting: Crafting
 FALLOUT.TEMPLATES.Create_Addiction: Create Addiction
 FALLOUT.TEMPLATES.Create_Ammo: Create Ammo
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Create Apparel Mod
@@ -520,6 +525,7 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Ranks [current/maximum]
 FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Re-roll
 FALLOUT.TEMPLATES.RemoveSettler: Remove Settler
+FALLOUT.TEMPLATES.RemoveWeaponQualityEffect: Remove Weapon Quality/Effect (Right Click)
 FALLOUT.TEMPLATES.Requirements: Requirements
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: RESISTANCE BONUSES
 FALLOUT.TEMPLATES.Resistances: Resistances
@@ -639,8 +645,10 @@ FALLOUT.UI.DISEASES: Diseases
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
+FALLOUT.UI.Modify: Modify
 FALLOUT.UI.Name: Name
 FALLOUT.UI.OTHER: Other
+FALLOUT.UI.Override: Override
 FALLOUT.UI.Perks: Perks
 FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
 FALLOUT.UI.Qty: Qty
@@ -653,6 +661,7 @@ FALLOUT.UI.Special_Abilities: Special Abilities
 FALLOUT.UI.SPECIAL_ABILITY: Special Ability
 FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Stashed
+FALLOUT.UI.summary: Summary
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Unsorted
 FALLOUT.UI.WEAPON_MODS: Weapon Mods
@@ -732,6 +741,29 @@ FALLOUT.WEAPONS.weaponType.meleeWeapons: Melee Weapons
 FALLOUT.WEAPONS.weaponType.smallGuns: Small Guns
 FALLOUT.WEAPONS.weaponType.throwing: Throwing
 FALLOUT.WEAPONS.weaponType.unarmed: Unarmed
+FALLOUT.WEAPON_MOD.type.receiver: Receiver
+FALLOUT.WEAPON_MOD.type.barrel: Barrel
+FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
+FALLOUT.WEAPON_MOD.type.magazine: Magazine
+FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.stock: Stock
+FALLOUT.WEAPON_MOD.type.sight: Sight
+FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
+FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
+FALLOUT.WEAPON_MOD.type.container: Container
+FALLOUT.WEAPON_MOD.type.melee: Melee
+FALLOUT.WEAPON_MOD.type.dish: Dish
+FALLOUT.WEAPON_MOD.type.fuel: Fuel
+FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
+FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
+FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
+FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
+FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
+FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
+FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.gain: Gain
+FALLOUT.WEAPON_MOD.summary.remove: Remove
+FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 ITEM.AmmoPerShot: Ammo Per Shot
 TYPES.Actor.character: Character
 TYPES.Actor.creature: Creature
