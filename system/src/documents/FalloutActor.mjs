@@ -1,3 +1,5 @@
+import FalloutPerkManager from "../system/FalloutPerkManager.mjs";
+
 export default class FalloutActor extends Actor {
 
 	isSleeping = false;
@@ -159,6 +161,10 @@ export default class FalloutActor extends Actor {
 
 	prepareData() {
 		super.prepareData();
+
+		if (this.isPlayerCharacter) {
+			this._preparePerkManager();
+		}
 
 		this.system.currency.caps = Math.round(this.system.currency.caps);
 	}
@@ -877,6 +883,31 @@ export default class FalloutActor extends Actor {
 
 	}
 
+	_preparePerkManager() {
+		this.perkManager = new FalloutPerkManager(this);
+
+		// this.perkManager.setActorAttributes(
+		// 	foundry.utils.duplicate(this.system.attributes)
+		// );
+
+		// const knownPerks = [];
+
+		// for (const item of this.items) {
+		// 	if (item.type === "perk") {
+		// 		knownPerks.push({
+		// 			identifier: item.name.slugify(),
+		// 			rank: item.system.rank.value,
+		// 		});
+		// 	}
+		// }
+
+		// this.perkManager.setKnownPerks(knownPerks);
+
+		// this.perkManager.setActorReadMagazines(
+		// 	foundry.utils.duplicate(this.system.readMagazines)
+		// );
+	}
+
 	async _toggleImmunity(type) {
 		if (!["poison", "radiation"].includes(type)) return;
 
@@ -1492,7 +1523,7 @@ export default class FalloutActor extends Actor {
 				this,
 				{
 					title: game.i18n.localize(
-						`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
+						"FALLOUT.CHAT_MESSAGE.readMagazine.title"
 					),
 					body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
 						{
@@ -1624,6 +1655,89 @@ export default class FalloutActor extends Actor {
 		return addiction ? true : false;
 	}
 
+
+	async readMagazine(item) {
+		if (!this.isPlayerCharacter) return;
+
+		const compendiumVersion =
+			(await fallout.compendiums.books_and_magz(false)).find(
+				i => i.name.slugify() === item.name.slugify()
+			);
+
+		if (!compendiumVersion) {
+			return ui.notifications.error(
+				game.i18n.format(
+					"FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem",
+					{
+						itemType: item.type,
+						name: item.name,
+					}
+				)
+			);
+		}
+
+		if (item.system.uses.value >= item.system.uses.max) {
+			return ui.notifications.warn(
+				game.i18n.localize("FALLOUT.ERRORS.MagazineUsedMaximumTimes")
+			);
+		}
+
+		const itemUpdate = {
+			"system.uses.value": item.system.uses.value + 1,
+			"system.read": true,
+		};
+
+		// Roll to see if this benefit can be used one extra time if the
+		// character has the Comprehension perk
+		//
+		const comprehensionLevel = this.perkLevel("comprehension");
+		let comprehensionSuccess = false;
+		if (comprehensionLevel > 0
+			&& item.system.uses.max < CONFIG.FALLOUT.DEFAULT_MAX_MAGAZINE_USES
+		) {
+			const comprehensionDice = CONFIG.FALLOUT.DEFAULT_COMPREHENSION_DICE;
+
+			let formula = `${comprehensionDice}dccs>=5`;
+			let roll = new Roll(formula);
+
+			let comprehensionRoll = await roll.evaluate();
+
+			fallout.Roller2D20.showDiceSoNice(comprehensionRoll);
+
+			const result = parseInt(roll.result);
+			if (result > 0) {
+				comprehensionSuccess = true;
+				itemUpdate["system.uses.max"] = item.system.uses.max + 1;
+			}
+		}
+
+		item.update(itemUpdate);
+
+		const readMagazines = this.system.readMagazines ?? [];
+
+		if (!readMagazines.includes(compendiumVersion.uuid)) {
+			readMagazines.push(compendiumVersion.uuid);
+		}
+
+		fallout.chat.renderReadMagazineMessage(
+			this,
+			{
+				title: game.i18n.localize(
+					"FALLOUT.CHAT_MESSAGE.readMagazine.title"
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.readMagazine.body",
+					{
+						actorName: this.name,
+						itemName: item.name,
+					}
+				),
+				benefit: item.system.effect,
+				comprehensionSuccess,
+			}
+		);
+
+		this.update({"system.readMagazines": readMagazines});
+	}
 
 	// Reduce Ammo
 	async reduceAmmo(ammoName = "", roundsToUse = 0) {

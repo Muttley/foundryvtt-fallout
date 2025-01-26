@@ -7,15 +7,48 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Refractor",
 	"system": {
-		"description": "<p>Your energy Damage Resistance to all hit locations increases by +1 per rank in this perk. Each time you take this perk, the level requirement increases by 4.</p>",
+		"description": "<p>Your energy Damage Resistance to all hit locations increases by +1 per rank in this perk. Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: PER 6, LCK 7, Level 1+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 2,
 			"value": 0
 		},
-		"requirements": "PER 6, LCK 7, Level 1+",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 7
+				},
+				"per": {
+					"value": 6
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 4,
+			"magazineUuids": [
+			],
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

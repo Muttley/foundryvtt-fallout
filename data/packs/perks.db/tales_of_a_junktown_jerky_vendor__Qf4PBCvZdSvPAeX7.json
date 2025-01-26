@@ -10,12 +10,46 @@
 		"description": "<p>Once, when you succeed or fail at a Barter test to haggle on the price of a trade, you may spend 1 Luck point to shift the price 10% in your favor.</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
 		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.IB9mafYkrD1E7EuV"
+			],
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"
