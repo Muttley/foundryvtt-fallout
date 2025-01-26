@@ -607,9 +607,13 @@ export default class FalloutItemSheet extends ItemSheet {
 					modsByType[item.system.mods[mod].system?.modType] = [];
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
 				}
-				item.system.mods[mod].system.modEffects.summary = this.getWeaponModSummary(item.system.mods[mod]);
+				item.system.mods[mod].system.modEffects.summary =
+					this.getWeaponModSummary(item.system.mods[mod]);
 				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
-				if (item.system.mods[mod].system.attached) modsByType[item.system.mods[mod].system?.modType].installed = true;
+
+				if (item.system.mods[mod].system.attached) {
+					modsByType[item.system.mods[mod].system?.modType].installed = true;
+				}
 			}
 		}
 
@@ -691,7 +695,11 @@ export default class FalloutItemSheet extends ItemSheet {
 
 
 		// Damage type
-		if (mod.system.modEffects.damage.damageType.energy || mod.system.modEffects.damage.damageType.physical || mod.system.modEffects.damage.damageType.poison || mod.system.modEffects.damage.damageType.radiation) {
+		if (mod.system.modEffects.damage.damageType.energy
+			|| mod.system.modEffects.damage.damageType.physical
+			|| mod.system.modEffects.damage.damageType.poison
+			|| mod.system.modEffects.damage.damageType.radiation
+		) {
 			if (installed) {
 				updateData["system.damage.originalDamageType"] = this.item.system.damage.damageType;
 				updateData["system.damage.damageType"] = mod.system.modEffects.damage.damageType;
@@ -812,7 +820,11 @@ export default class FalloutItemSheet extends ItemSheet {
 
 
 		// Damage type
-		if (modEffects.damage.damageType.energy || modEffects.damage.damageType.physical || modEffects.damage.damageType.poison || modEffects.damage.damageType.radiation) {
+		if (modEffects.damage.damageType.energy
+			|| modEffects.damage.damageType.physical
+			|| modEffects.damage.damageType.poison
+			|| modEffects.damage.damageType.radiation
+		) {
 			let damageTypes = [];
 			if (modEffects.damage.damageType.energy) damageTypes.push("Energy");
 			if (modEffects.damage.damageType.physical) damageTypes.push("Physical");
