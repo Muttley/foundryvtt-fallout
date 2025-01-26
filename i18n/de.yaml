@@ -158,6 +158,9 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} nimmt aus dem 
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Strahlungsschaden
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} widerstand {baseRadDamage} Strahlungsschaden aus dem Trinken von schmutzigem Wasser"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} erhält {radsTaken} Strahlungsschaden aus dem Trinken von schmutzigem Wasser"
+FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} reads a magazine entitled \"{itemName}\""
+FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
+FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Wiederverwerter
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Schauplatz plündern
@@ -183,12 +186,14 @@ FALLOUT.EffectDelete: Effekt entfernen
 FALLOUT.EffectEdit: Effekt bearbeiten
 FALLOUT.EffectToggle: Effekt umschalten
 FALLOUT.equipped: Ausgerüstet
+FALLOUT.ERRORS.MagazineUsedMaximumTimes: That magazine benefit has already been used the maximum amount of times
 FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
 FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
 FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
 FALLOUT.ERRORS.ThisWeaponIsBroken: Diese Waffe ist kaputt und kann nicht länger genutzt werden.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Attribut für die Waffe kann nicht ermittelt werden.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Fertigkeit für die Waffe kann nicht ermittelt werden.
+FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem: Unable to locate compendium version of {itemType} named "{name}"
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Kreaturen-Attribut und/oder Kreaturen-Fertigkeit für diese Waffe nicht definiert.
 FALLOUT.FOOD: Nahrung
 FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
@@ -213,16 +218,28 @@ FALLOUT.HEALTH.max: Maximale Gesundheit
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
+FALLOUT.Item.Perk.isCompanion: Is a Companion
+FALLOUT.Item.Perk.level: Level
+FALLOUT.Item.Perk.Magazine.label: Magazines
+FALLOUT.Item.Perk.Magazine.prompt: Select Magazine...
+FALLOUT.Item.Perk.notGhoul: Not a Ghoul
+FALLOUT.Item.Perk.notHuman: Not a Human
+FALLOUT.Item.Perk.notRadiationImmune: Not Immune to Radiation
+FALLOUT.Item.Perk.notRobot: Not a Robot
+FALLOUT.Item.Perk.notSupermutant: Not a Supermutant
+FALLOUT.Item.Perk.readMagazines: Read Magazines
 FALLOUT.Item.PowerArmor.Attach: Hinzufügen
 FALLOUT.Item.PowerArmor.Attached: Hinzugefügt
 FALLOUT.Item.PowerArmor.AttachedToFrame: An Powerrüstung-Gestell befestigt
 FALLOUT.Item.PowerArmor.Frame: Powerrüstung-Gestell
 FALLOUT.Item.PowerArmor.IsFrame: Ist ein Powerrüstung-Gestell
 FALLOUT.Item.PowerArmor.Pieces: Powerrrüstungsteile
+FALLOUT.Item.Warnings.Modded: This item has been modded. Disable all mods to edit.
 FALLOUT.LEVEL.CurrentXP: Aktuelle EP
 FALLOUT.LEVEL.Level: Stufe
 FALLOUT.LEVEL.NextXP: EP zur nächsten Stufe
 FALLOUT.LEVEL.RewardXP: EP Belohnung
+FALLOUT.LevelUp.AppTitle: Level Up
 FALLOUT.LOCATION_CATEGORY.agriculture: Landwirtschaft
 FALLOUT.LOCATION_CATEGORY.commercial: Gewerbe
 FALLOUT.LOCATION_CATEGORY.custom: Custom
@@ -253,6 +270,7 @@ FALLOUT.MIGRATION.begin_migration: Führen Daten-Updates für Fallout 2d20 durch
 FALLOUT.MIGRATION.begin_schema: Wende Updates für Fallout 2d20 v{version} an
 FALLOUT.MIGRATION.completed_migration: Daten Updates für Fallout 2d20 abgeschlossen
 FALLOUT.MIGRATION.completed_schema: Anwenden der Updates für Fallout 2d20 v{version} abgeschlossen
+FALLOUT.MODS.installedMods: Installed Mods
 FALLOUT.MODS.mods: Mods
 FALLOUT.NPC_TYPES.legendary: Legendär
 FALLOUT.NPC_TYPES.major: Bedeutend
@@ -357,6 +375,7 @@ FALLOUT.TEMPLATES.Add_Perk: Extra hinzufügen
 FALLOUT.TEMPLATES.Add_Trait: Merkmal hinzuf
 FALLOUT.TEMPLATES.AddictionNumber: Suchtwert
 FALLOUT.TEMPLATES.Addictive: Süchtigmachend
+FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
 FALLOUT.TEMPLATES.AllLocations: Alle Standorte
 FALLOUT.TEMPLATES.AMMO: MUNI
@@ -378,6 +397,7 @@ FALLOUT.TEMPLATES.Butchery: Gemetzel
 FALLOUT.TEMPLATES.ButcheryTooltip: Gemetzel Probe TN
 FALLOUT.TEMPLATES.Category: Category
 FALLOUT.TEMPLATES.Compl: Kompl.
+FALLOUT.TEMPLATES.complexity: Complexity
 FALLOUT.TEMPLATES.Complications: Komplikationen
 FALLOUT.TEMPLATES.CONDITIONS: ZUSTÄNDE
 FALLOUT.TEMPLATES.conditions.dehydrated: Dehydriert
@@ -402,6 +422,7 @@ FALLOUT.TEMPLATES.conditions.weary: Abgekämpft
 FALLOUT.TEMPLATES.ConstructionTime: Herstellungszeit
 FALLOUT.TEMPLATES.Consumable_Group: Gruppe
 FALLOUT.TEMPLATES.Consumable_Type: Typ
+FALLOUT.TEMPLATES.Crafting: Crafting
 FALLOUT.TEMPLATES.Create_Addiction: Sucht erstellen
 FALLOUT.TEMPLATES.Create_Ammo: Erstelle Munition
 FALLOUT.TEMPLATES.Create_Apparel_Mod: Erstelle Kleidungsmod
@@ -475,6 +496,7 @@ FALLOUT.TEMPLATES.MaterialsRequired: Benötigte Materialien
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX GRUPPEN AP
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.MaxRanks: Max Ranks
 FALLOUT.TEMPLATES.Melee_Bonus: Nahkampfbonus
 FALLOUT.TEMPLATES.Melee_Damage: Nahkampfschaden
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
@@ -504,6 +526,7 @@ FALLOUT.TEMPLATES.Ranks_current_maximum: Ränge [aktuell/maximum]
 FALLOUT.TEMPLATES.Ranks: Ranks
 FALLOUT.TEMPLATES.Re_roll: Wiederholungswurf
 FALLOUT.TEMPLATES.RemoveSettler: Siedler entfernen
+FALLOUT.TEMPLATES.RemoveWeaponQualityEffect: Remove Weapon Quality/Effect (Right Click)
 FALLOUT.TEMPLATES.Requirements: Voraussetzungen
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: Bonusresistenz
 FALLOUT.TEMPLATES.Resistances: Resistenzen
@@ -536,6 +559,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Nutze Intelligenz
 FALLOUT.TEMPLATES.Use_Luck: Nutze Glück
 FALLOUT.TEMPLATES.Use_Perception: Nutze Wahrnehmung
 FALLOUT.TEMPLATES.Use_Strength: Nutze Stärke
+FALLOUT.TEMPLATES.Uses: Uses
 FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
 FALLOUT.TEMPLATES.Wealth: Reichtum
 FALLOUT.TEMPLATES.Weapon_Qualities: Waffenqualiät
@@ -622,19 +646,23 @@ FALLOUT.UI.DISEASES: Krankheiten
 FALLOUT.UI.favorite: Favorit
 FALLOUT.UI.INVENTORY: Inventar
 FALLOUT.UI.MISCELLANY: Verschiedenes
+FALLOUT.UI.Modify: Modify
 FALLOUT.UI.Name: Name
 FALLOUT.UI.OTHER: Anderes
+FALLOUT.UI.Override: Override
 FALLOUT.UI.Perks: Extras
 FALLOUT.UI.PreWarMoneyRoll: Rolle Vorkriegsgeld
 FALLOUT.UI.Qty: Menge
 FALLOUT.UI.Quantity: Anzahl
 FALLOUT.UI.Rarity: Seltenheit
+FALLOUT.UI.Read: Read
 FALLOUT.UI.ROBOT_MODULES: Roboter Module
 FALLOUT.UI.SaveChanges: Änderungen speichern
 FALLOUT.UI.Special_Abilities: Spezialfertigkeiten
 FALLOUT.UI.SPECIAL_ABILITY: Sonderfähigkeit
 FALLOUT.UI.speed: Speed
 FALLOUT.UI.stashed: Verstaut
+FALLOUT.UI.summary: Summary
 FALLOUT.UI.Type: Art
 FALLOUT.UI.UNSORTED: Unsortiert
 FALLOUT.UI.WEAPON_MODS: Waffen Mods
@@ -662,6 +690,29 @@ FALLOUT.VEHICLE.vehicleQuality.rugged: Rugged
 FALLOUT.VEHICLE.vehicleQuality.single_seat: Single Seat
 FALLOUT.VEHICLE.vehicleQuality.watercraft: Watercraft
 FALLOUT.VEHICLE.zone_speed: Zone
+FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
+FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
+FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
+FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
+FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
+FALLOUT.WEAPON_MOD.summary.gain: Gain
+FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.remove: Remove
+FALLOUT.WEAPON_MOD.type.barrel: Barrel
+FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
+FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
+FALLOUT.WEAPON_MOD.type.container: Container
+FALLOUT.WEAPON_MOD.type.dish: Dish
+FALLOUT.WEAPON_MOD.type.fuel: Fuel
+FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.magazine: Magazine
+FALLOUT.WEAPON_MOD.type.melee: Melee
+FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
+FALLOUT.WEAPON_MOD.type.nozzle: Nozzle
+FALLOUT.WEAPON_MOD.type.propellantTank: Propellant Tank
+FALLOUT.WEAPON_MOD.type.receiver: Receiver
+FALLOUT.WEAPON_MOD.type.sight: Sight
+FALLOUT.WEAPON_MOD.type.stock: Stock
 FALLOUT.WEAPONS.damageEffect.arc: Bogen
 FALLOUT.WEAPONS.damageEffect.breaking: Durchschlagend
 FALLOUT.WEAPONS.damageEffect.burst: Feuerstoß
