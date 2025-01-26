@@ -41,7 +41,8 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
-			"magazineUuids": [],
+			"magazineUuids": [
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,

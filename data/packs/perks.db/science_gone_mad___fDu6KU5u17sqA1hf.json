@@ -42,7 +42,9 @@
 			"isCompanion": false,
 			"level": 1,
 			"levelIncrease": 0,
-			"magazineUuids": [],
+			"magazineUuids": [
+				"Compendium.fallout.books_and_magz.Item.zpcKGtIDvZn8Z1ut"
+			],
 			"notGhoul": false,
 			"notHuman": false,
 			"notRadiationImmune": false,
