@@ -107,18 +107,12 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 
 		switch (this.type) {
-			// case "ammo":
-			// 	this._prepareAmmoData();
-			// 	break;
 			case "consumable":
 				this._prepareConsumableData();
 				break;
 			case "skill":
 				this._prepareSkillData();
 				break;
-			// case "weapon":
-			// 	this._prepareWeaponData();
-			// 	break;
 		}
 	}
 
@@ -192,6 +186,10 @@ export default class FalloutItem extends Item {
 		itemData.isSkill = this.type === "skill";
 		itemData.isWeapon = this.type === "weapon";
 		itemData.isWeaponMod = this.type === "weapon_mod";
+
+		if (itemData.isWeaponMod) {
+			itemData.modSummary = this._sheet.getWeaponModSummary(this);
+		}
 
 		itemData.name = this.name;
 		itemData.showQuantity = showQuantity;

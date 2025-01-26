@@ -1,3 +1,32 @@
+# v11.15.0
+
+#### Enhancements
+- [#340] Allow drag/drop of player perks that can be used on NPCs
+- [#483] Add a way to toggle off the auto-calculate for derived stats
+- [#541] Improve perk requirements
+- [#559] Improvements to Books and Magazines
+
+	* New control added to magazine items in the inventory to "read" a magazine.  This automatically rolls and extends the uses remaining if needed for characters with the Comprehension perk.
+
+- [#569] Improve handling of Mods
+
+#### Chores
+- [#564] Merge new Spanish translation updates from Crowdin
+
+---
+
+# v11.14.3
+
+#### Enhancements
+- [#557] Add support for the Spanish language
+
+#### Bugs
+- [#561] Can't open power armor when on an actor sheet
+
+*Many thanks to **Quarel** for contributing the Spanish language translations*
+
+---
+
 # v11.14.2
 
 #### Enhancements

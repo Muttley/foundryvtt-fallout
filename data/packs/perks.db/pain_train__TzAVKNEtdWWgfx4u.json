@@ -7,15 +7,48 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Pain Train",
 	"system": {
-		"description": "<p>You may Charge as a major action if you are wearing Power Armor or are a super mutant. This is a movement action, and you may not Move or Sprint in the same turn. When you take this action, you move into reach of an enemy within Medium range (1 zone) and make a STR + Athletics test with a difficulty of 2. If you succeed, the enemy suffers damage equal to your normal unarmed damage, and is knocked prone.</p>\n<p>At rank 2, you add +1DCD and the Stun damage effect to the damage inflicted. At the GM&rsquo;s discretion, especially large or sturdy creatures cannot be knocked prone by this action. Each time you take this perk, the level requirement increases by 5.</p>",
+		"description": "<p>You may Charge as a major action if you are wearing Power Armor or are a super mutant. This is a movement action, and you may not Move or Sprint in the same turn. When you take this action, you move into reach of an enemy within Medium range (1 zone) and make a STR + Athletics test with a difficulty of 2. If you succeed, the enemy suffers damage equal to your normal unarmed damage, and is knocked prone.</p>\n<p>At rank 2, you add +1DCD and the Stun damage effect to the damage inflicted. At the GM&rsquo;s discretion, especially large or sturdy creatures cannot be knocked prone by this action. Each time you take this perk, the level requirement increases by 5.</p>\n<p><strong>Requirements</strong>: STR 9, END 7, Level 1+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 2,
 			"value": 0
 		},
-		"requirements": "STR 9, END 7, Level 1+",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 7
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 9
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 5,
+			"magazineUuids": [
+			],
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

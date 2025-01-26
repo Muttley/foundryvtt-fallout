@@ -1,8 +1,10 @@
+import FalloutPerkManager from "../system/FalloutPerkManager.mjs";
+
 export default class FalloutActor extends Actor {
 
 	isSleeping = false;
 
-	constructor(object, options={}) {
+	constructor(object, options = {}) {
 		super(object, options);
 	}
 
@@ -26,7 +28,7 @@ export default class FalloutActor extends Actor {
 		const settlement = await fromUuid(settlementUuid);
 		if (settlement) {
 			if (settlement.system.leader === actor.uuid) {
-				await settlement.update({"system.leader": ""});
+				await settlement.update({ "system.leader": "" });
 				settlement.sheet.render(false);
 			}
 		}
@@ -135,7 +137,7 @@ export default class FalloutActor extends Actor {
 
 	incrementJunk() {
 		const newJunk = this.system.materials.junk + 1;
-		this.update({"system.materials.junk": newJunk});
+		this.update({ "system.materials.junk": newJunk });
 	}
 
 	isFieldOverridden(fieldName) {
@@ -146,7 +148,7 @@ export default class FalloutActor extends Actor {
 	// perk (or can't have perks)
 	//
 	perkLevel(perkName) {
-		if (!["character", "robot"].includes(this.type)) return 0;
+		if (!["character", "robot", "npc"].includes(this.type)) return 0;
 
 		const perk = this.items.find(i => {
 			const hasBabeleTranslation = i.flags?.babele?.hasTranslation === true;
@@ -159,6 +161,10 @@ export default class FalloutActor extends Actor {
 
 	prepareData() {
 		super.prepareData();
+
+		if (this.isPlayerCharacter) {
+			this._preparePerkManager();
+		}
 
 		this.system.currency.caps = Math.round(this.system.currency.caps);
 	}
@@ -175,8 +181,11 @@ export default class FalloutActor extends Actor {
 	prepareDerivedData() {
 		// Make separate methods for each Actor type (character, npc, etc.) to keep
 		// things organized.
+		const disableAutoDerivedStats = game.settings.get(
+			SYSTEM_ID, "disableAutoDerivedStats"
+		);
 
-		if (this.type === "character" || this.type === "robot") {
+		if (!disableAutoDerivedStats && (this.type === "character" || this.type === "robot")) {
 			this._calculateDefense();
 			this._calculateInitiative();
 			this._calculateMaxHp();
@@ -295,8 +304,8 @@ export default class FalloutActor extends Actor {
 			let outfit = this.items.find(
 				i =>
 					i.type === "apparel"
-              && i.system.apparelType === "outfit"
-              && i.system.equipped
+					&& i.system.apparelType === "outfit"
+					&& i.system.equipped
 			);
 			if (outfit) {
 				for (let [k, v] of Object.entries(outfit.system.location)) {
@@ -323,8 +332,8 @@ export default class FalloutActor extends Actor {
 		let clothing = this.items.find(
 			i =>
 				i.type === "apparel"
-            && i.system.apparelType === "clothing"
-            && i.system.equipped
+				&& i.system.apparelType === "clothing"
+				&& i.system.equipped
 		);
 
 		if (clothing) {
@@ -354,14 +363,14 @@ export default class FalloutActor extends Actor {
 		for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
 			if (outfittedLocations[k]) {
 				bodyPart.resistance.physical =
-            parseInt(outfittedLocations[k].system.resistance.physical)
-            + parseInt(this.system.resistance.physical);
+					parseInt(outfittedLocations[k].system.resistance.physical)
+					+ parseInt(this.system.resistance.physical);
 				bodyPart.resistance.energy =
-            parseInt(outfittedLocations[k].system.resistance.energy)
-            + parseInt(this.system.resistance.energy);
+					parseInt(outfittedLocations[k].system.resistance.energy)
+					+ parseInt(this.system.resistance.energy);
 				bodyPart.resistance.radiation =
-            parseInt(outfittedLocations[k].system.resistance.radiation)
-            + parseInt(this.system.resistance.radiation);
+					parseInt(outfittedLocations[k].system.resistance.radiation)
+					+ parseInt(this.system.resistance.radiation);
 			}
 			else {
 				bodyPart.resistance.physical = parseInt(this.system.resistance.physical);
@@ -541,8 +550,8 @@ export default class FalloutActor extends Actor {
 		}
 		// ADD PLATING AND RESISTANCE BONUSES
 		let plating = this.items.find(i => i.type === "robot_armor"
-            && i.system.apparelType === "plating"
-            && i.system.equipped
+			&& i.system.apparelType === "plating"
+			&& i.system.equipped
 		);
 
 		if (plating) {
@@ -550,14 +559,14 @@ export default class FalloutActor extends Actor {
 				if (outfittedLocations[k] && v) {
 					outfittedLocations[k].name += ` over ${plating.name}`;
 					outfittedLocations[k].system.resistance.physical =
-              parseInt(outfittedLocations[k].system.resistance.physical)
-              + parseInt(plating.system.resistance.physical);
+						parseInt(outfittedLocations[k].system.resistance.physical)
+						+ parseInt(plating.system.resistance.physical);
 					outfittedLocations[k].system.resistance.energy =
-              parseInt(outfittedLocations[k].system.resistance.energy)
-              + parseInt(plating.system.resistance.energy);
+						parseInt(outfittedLocations[k].system.resistance.energy)
+						+ parseInt(plating.system.resistance.energy);
 					outfittedLocations[k].system.resistance.radiation =
-              parseInt(outfittedLocations[k].system.resistance.radiation)
-              + parseInt(plating.system.resistance.radiation);
+						parseInt(outfittedLocations[k].system.resistance.radiation)
+						+ parseInt(plating.system.resistance.radiation);
 				}
 				else if (!outfittedLocations[k] && v) {
 					outfittedLocations[k] = foundry.utils.duplicate(plating.toObject());
@@ -569,14 +578,14 @@ export default class FalloutActor extends Actor {
 		for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
 			if (outfittedLocations[k]) {
 				bodyPart.resistance.physical =
-            parseInt(outfittedLocations[k].system.resistance.physical)
-            + parseInt(this.system.resistance.physical);
+					parseInt(outfittedLocations[k].system.resistance.physical)
+					+ parseInt(this.system.resistance.physical);
 				bodyPart.resistance.energy =
-            parseInt(outfittedLocations[k].system.resistance.energy)
-            + parseInt(this.system.resistance.energy);
+					parseInt(outfittedLocations[k].system.resistance.energy)
+					+ parseInt(this.system.resistance.energy);
 				bodyPart.resistance.radiation =
-            parseInt(outfittedLocations[k].system.resistance.radiation)
-            + parseInt(this.system.resistance.radiation);
+					parseInt(outfittedLocations[k].system.resistance.radiation)
+					+ parseInt(this.system.resistance.radiation);
 			}
 			else {
 				bodyPart.resistance.physical = parseInt(this.system.resistance.physical);
@@ -779,7 +788,7 @@ export default class FalloutActor extends Actor {
 	/**
    * Prepare NPC roll data.
    */
-	_getNpcRollData(data) {}
+	_getNpcRollData(data) { }
 
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
@@ -866,12 +875,37 @@ export default class FalloutActor extends Actor {
 
 			for (const category of Object.keys(categoryTableDefaults)) {
 				const key = `system.item_types.${category}.table`;
-				scavengingLocationUpdate[key] =	categoryTableDefaults[category];
+				scavengingLocationUpdate[key] = categoryTableDefaults[category];
 			}
 
 			await this.updateSource(scavengingLocationUpdate);
 		}
 
+	}
+
+	_preparePerkManager() {
+		this.perkManager = new FalloutPerkManager(this);
+
+		// this.perkManager.setActorAttributes(
+		// 	foundry.utils.duplicate(this.system.attributes)
+		// );
+
+		// const knownPerks = [];
+
+		// for (const item of this.items) {
+		// 	if (item.type === "perk") {
+		// 		knownPerks.push({
+		// 			identifier: item.name.slugify(),
+		// 			rank: item.system.rank.value,
+		// 		});
+		// 	}
+		// }
+
+		// this.perkManager.setKnownPerks(knownPerks);
+
+		// this.perkManager.setActorReadMagazines(
+		// 	foundry.utils.duplicate(this.system.readMagazines)
+		// );
 	}
 
 	async _toggleImmunity(type) {
@@ -1394,7 +1428,7 @@ export default class FalloutActor extends Actor {
 
 				let scenes = item.system.duration === "lasting" ? 2 : 1;
 
-				let	newDosage = this.system.chemDoses[chemId]?.doses ?? 0;
+				let newDosage = this.system.chemDoses[chemId]?.doses ?? 0;
 				newDosage = alreadyAddicted ? 1 : newDosage + 1;
 
 				const addictionNumberExceeded =
@@ -1489,7 +1523,7 @@ export default class FalloutActor extends Actor {
 				this,
 				{
 					title: game.i18n.localize(
-						`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
+						"FALLOUT.CHAT_MESSAGE.readMagazine.title"
 					),
 					body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
 						{
@@ -1622,8 +1656,91 @@ export default class FalloutActor extends Actor {
 	}
 
 
+	async readMagazine(item) {
+		if (!this.isPlayerCharacter) return;
+
+		const compendiumVersion =
+			(await fallout.compendiums.books_and_magz(false)).find(
+				i => i.name.slugify() === item.name.slugify()
+			);
+
+		if (!compendiumVersion) {
+			return ui.notifications.error(
+				game.i18n.format(
+					"FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem",
+					{
+						itemType: item.type,
+						name: item.name,
+					}
+				)
+			);
+		}
+
+		if (item.system.uses.value >= item.system.uses.max) {
+			return ui.notifications.warn(
+				game.i18n.localize("FALLOUT.ERRORS.MagazineUsedMaximumTimes")
+			);
+		}
+
+		const itemUpdate = {
+			"system.uses.value": item.system.uses.value + 1,
+			"system.read": true,
+		};
+
+		// Roll to see if this benefit can be used one extra time if the
+		// character has the Comprehension perk
+		//
+		const comprehensionLevel = this.perkLevel("comprehension");
+		let comprehensionSuccess = false;
+		if (comprehensionLevel > 0
+			&& item.system.uses.max < CONFIG.FALLOUT.DEFAULT_MAX_MAGAZINE_USES
+		) {
+			const comprehensionDice = CONFIG.FALLOUT.DEFAULT_COMPREHENSION_DICE;
+
+			let formula = `${comprehensionDice}dccs>=5`;
+			let roll = new Roll(formula);
+
+			let comprehensionRoll = await roll.evaluate();
+
+			fallout.Roller2D20.showDiceSoNice(comprehensionRoll);
+
+			const result = parseInt(roll.result);
+			if (result > 0) {
+				comprehensionSuccess = true;
+				itemUpdate["system.uses.max"] = item.system.uses.max + 1;
+			}
+		}
+
+		item.update(itemUpdate);
+
+		const readMagazines = this.system.readMagazines ?? [];
+
+		if (!readMagazines.includes(compendiumVersion.uuid)) {
+			readMagazines.push(compendiumVersion.uuid);
+		}
+
+		fallout.chat.renderReadMagazineMessage(
+			this,
+			{
+				title: game.i18n.localize(
+					"FALLOUT.CHAT_MESSAGE.readMagazine.title"
+				),
+				body: game.i18n.format("FALLOUT.CHAT_MESSAGE.readMagazine.body",
+					{
+						actorName: this.name,
+						itemName: item.name,
+					}
+				),
+				benefit: item.system.effect,
+				comprehensionSuccess,
+			}
+		);
+
+		this.update({"system.readMagazines": readMagazines});
+	}
+
 	// Reduce Ammo
-	async reduceAmmo(ammoName="", roundsToUse=0) {
+	async reduceAmmo(ammoName = "", roundsToUse = 0) {
 		const [ammoItems, shotsAvailable] = this._getAvailableAmmoType(ammoName);
 
 		if (shotsAvailable <= 0) return;
@@ -1730,7 +1847,7 @@ export default class FalloutActor extends Actor {
 			this,
 			{
 				title: game.i18n.localize("FALLOUT.AvailabilityRoll.result.title"),
-				body: game.i18n.format("FALLOUT.AvailabilityRoll.result.body", {rarity}),
+				body: game.i18n.format("FALLOUT.AvailabilityRoll.result.body", { rarity }),
 			},
 			CONST.DICE_ROLL_MODES.PRIVATE
 		);

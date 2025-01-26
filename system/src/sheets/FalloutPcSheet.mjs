@@ -42,6 +42,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 
+		html.find("[data-action='levelUp']").click(
+			async event => this._openlevelUpTool(event)
+		);
+
 		html.find(".availability-roll").click(async event => {
 			event.preventDefault();
 			this.actor.rollAvailabilityCheck();
@@ -206,6 +210,15 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			if (allUsed) li.slideUp(200, () => this.render(false));
 		});
 
+		html.find("[data-action='readMagazine']").click(async ev => {
+			const li = $(ev.currentTarget).parents(".item");
+			const item = this.actor.items.get(li.data("itemId"));
+
+			const allUsed = await this.actor.readMagazine(item);
+
+			if (allUsed) li.slideUp(200, () => this.render(false));
+		});
+
 		html.find(".injury-mark").contextmenu(async ev => {
 			let status = parseInt(ev.currentTarget.dataset.status);
 			// if (status === 0)
@@ -300,6 +313,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 			SYSTEM_ID, "disableAutoXpTarget"
 		);
 
+		context.disableAutoDerivedStats = game.settings.get(
+			SYSTEM_ID, "disableAutoDerivedStats"
+		);
+
 		this._updateChemDoseManager();
 
 		// ADD FAVOURITE ITEMS
@@ -320,6 +337,10 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	}
 
 
+	async _openlevelUpTool(event) {
+		return new fallout.apps.FalloutLevelUp(this.actor).render(true);
+	}
+
 	/**
 	 * Organize and classify Items for Character sheets.
 	 *
@@ -335,6 +356,9 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 		context.treatedInjuriesCount = allInjuries.filter(i => i === 1).length;
 		context.openInjuriesCount = allInjuries.filter(i => i === 2).length;
+
+		context.levelUp = this.actor.system.level.currentXP
+			>= this.actor.system.level.nextLevelXP;
 	}
 
 

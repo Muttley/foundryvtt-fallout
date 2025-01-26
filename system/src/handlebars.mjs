@@ -66,6 +66,55 @@ export default function registerHandlebarsHelpers() {
 		return listString;
 	});
 
+	Handlebars.registerHelper("listPerkRequirements", function(requirements) {
+		const elements = [];
+
+		for (const key in requirements) {
+			const resultHtml = document.createElement("span");
+			if (key === "attributes") {
+				for (const att in requirements[key]) {
+					if (requirements[key][att].value <= 0) continue;
+
+					let attAbbrName = game.i18n.localize(
+						`FALLOUT.AbilityAbbr.${att}`
+					);
+
+
+					resultHtml.dataset.key = key;
+					resultHtml.innerHTML = `${attAbbrName.toUpperCase()}&nbsp${requirements[key][att].value}`;
+					elements.push(resultHtml.outerHTML);
+				}
+			}
+			else {
+				const requirement = requirements[key];
+
+				if (!requirement) continue;
+
+				let requirementName = game.i18n.localize(
+					`FALLOUT.Item.Perk.${key}`
+				);
+
+				if ((typeof requirement) === "number" && requirement >= 1) requirementName += ` ${requirement}`;
+
+
+				resultHtml.dataset.key = key;
+				resultHtml.innerHTML = requirementName;
+				elements.push(resultHtml.outerHTML);
+			}
+		}
+
+		let listString = "";
+
+		if (elements.length > 0) {
+			listString = elements.join(",&nbsp;");
+		}
+		else {
+			listString = "&mdash;";
+		}
+
+		return listString;
+	});
+
 	Handlebars.registerHelper("listWeaponQualities", function(qualities) {
 		const elements = [];
 
@@ -77,7 +126,7 @@ export default function registerHandlebarsHelpers() {
 			if (!quality.value) continue;
 
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
-			if (quality.rank > 0) qualityName += ` ${quality.rank}`;
+			if (quality.rank > 0) qualityName += `&nbsp;${quality.rank}`;
 
 			const tooltip = CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key];
 
@@ -93,6 +142,34 @@ export default function registerHandlebarsHelpers() {
 		let listString = "";
 
 		if (elements.length > 0) {
+			listString = elements.join(", ");
+		}
+		else {
+			listString = "&mdash;";
+		}
+
+		return listString;
+	});
+
+	Handlebars.registerHelper("listWeaponMods", function(weaponMods) {
+		const elements = [];
+
+		for (const key in weaponMods) {
+			if (!weaponMods[key].system?.attached) continue;
+
+
+			const resultHtml = document.createElement("span");
+			resultHtml.classList.add("effect", "hover");
+			resultHtml.dataset.key = key;
+			resultHtml.dataset.tooltip = weaponMods[key].system.modEffects.summary;
+			resultHtml.innerHTML = weaponMods[key].name;
+
+			elements.push(resultHtml.outerHTML);
+		}
+
+		let listString = "";
+
+		if (elements.length > 0) {
 			listString = elements.join(",&nbsp;");
 		}
 		else {
@@ -101,6 +178,7 @@ export default function registerHandlebarsHelpers() {
 
 		return listString;
 	});
+
 
 	Handlebars.registerHelper("toLowerCase", function(str) {
 		return str.toLowerCase();
@@ -211,7 +289,7 @@ export default function registerHandlebarsHelpers() {
 	// });
 
 	Handlebars.registerHelper("isWeaponUsingMeleeBonus", function(weapon, actor) {
-		if ((weapon.system.weaponType === "unarmed" || weapon.system.weaponType === "meleeWeapons") &&  actor?.type !== "creature") {
+		if ((weapon.system.weaponType === "unarmed" || weapon.system.weaponType === "meleeWeapons") && actor?.type !== "creature") {
 			return true;
 		}
 		else {
@@ -246,7 +324,7 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("enrichHtmlHelper", function(rawText) {
-		return TextEditor.enrichHTML(rawText, {async: false});
+		return TextEditor.enrichHTML(rawText, { async: false });
 	});
 
 	// coloring input fields

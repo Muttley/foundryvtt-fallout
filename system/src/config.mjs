@@ -13,8 +13,10 @@ FALLOUT.SIXTEEN_HOURS_IN_SECONDS = 60 * 60 * 16;
 FALLOUT.ONE_DAY_IN_SECONDS = 60 * 60 * 24;
 
 FALLOUT.DEFAULT_ATTRIBUTES_TOTAL = 40;
+FALLOUT.DEFAULT_COMPREHENSION_DICE = 1;
 FALLOUT.DEFAULT_CONSUMABLE_RAD_DICE = 1;
 FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
+FALLOUT.DEFAULT_MAX_MAGAZINE_USES = 2;
 
 FALLOUT.APPAREL_TYPES = {
 	armor: "FALLOUT.APPAREL.armor",
@@ -617,6 +619,25 @@ FALLOUT.WEAPON_TYPES = {
 	throwing: "FALLOUT.WEAPONS.weaponType.throwing",
 	unarmed: "FALLOUT.WEAPONS.weaponType.unarmed",
 };
+
+FALLOUT.WEAPON_MOD_TYPES = {
+	barrel:	"FALLOUT.WEAPON_MOD.type.barrel",
+	capacitor:	"FALLOUT.WEAPON_MOD.type.capacitor",
+	concentrate:	"FALLOUT.WEAPON_MOD.type.concentrate",
+	container:	"FALLOUT.WEAPON_MOD.type.container",
+	dish:	"FALLOUT.WEAPON_MOD.type.dish",
+	fuel:	"FALLOUT.WEAPON_MOD.type.fuel",
+	grip:	"FALLOUT.WEAPON_MOD.type.grip",
+	magazine:	"FALLOUT.WEAPON_MOD.type.magazine",
+	melee:	"FALLOUT.WEAPON_MOD.type.melee",
+	muzzle:	"FALLOUT.WEAPON_MOD.type.muzzle",
+	nozzle:	"FALLOUT.WEAPON_MOD.type.nozzle",
+	propellantTank: "FALLOUT.WEAPON_MOD.type.propellantTank",
+	receiver:	"FALLOUT.WEAPON_MOD.type.receiver",
+	sight:	"FALLOUT.WEAPON_MOD.type.sight",
+	stock:	"FALLOUT.WEAPON_MOD.type.stock",
+};
+
 
 export async function discoverAvailableAmmoTypes() {
 	const ammo = await fallout.compendiums.ammo();
