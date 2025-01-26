@@ -7,15 +7,48 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Light Step",
 	"system": {
-		"description": "<p>When you roll to generate any complications on an Agility-based skill test, you may ignore one complication for every 1 AP spent. In addition, you may re-roll 1d20 on any AGI + Athletics test to avoid traps triggered by pressure plates or similar mechanisms.</p>",
+		"description": "<p>When you roll to generate any complications on an Agility-based skill test, you may ignore one complication for every 1 AP spent. In addition, you may re-roll 1d20 on any AGI + Athletics test to avoid traps triggered by pressure plates or similar mechanisms.</p>\n<p><strong>Requirements</strong>: None</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 1,
 			"value": 0
 		},
-		"requirements": "None",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 0
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 1,
+			"levelIncrease": 0,
+			"magazineUuids": [
+			],
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

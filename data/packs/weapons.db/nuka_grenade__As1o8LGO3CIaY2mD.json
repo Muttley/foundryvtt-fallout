@@ -78,6 +78,10 @@
 					"rank": 1,
 					"value": false
 				},
+				"aquatic": {
+					"rank": 0,
+					"value": false
+				},
 				"blast": {
 					"rank": 0,
 					"value": true

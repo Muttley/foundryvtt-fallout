@@ -1,3 +1,24 @@
+# v11.15.0
+
+#### Enhancements
+- [#559] Improvements to Books and Magazines
+
+	* New control added to magazine items in the inventory to "read" a magazine.  This automatically rolls and extends the uses remaining if needed for characters with the Comprehension perk.
+
+---
+
+# v11.14.3
+
+#### Enhancements
+- [#557] Add support for the Spanish language
+
+#### Bugs
+- [#561] Can't open power armor when on an actor sheet
+
+*Many thanks to **Quarel** for contributing the Spanish language translations*
+
+---
+
 # v11.14.2
 
 #### Enhancements

@@ -158,6 +158,9 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTak
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Radiation Damage
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming Dirty Water"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} takes {radsTaken} radiation damage from consuming Dirty Water"
+FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} reads a magazine entitled \"{itemName}\""
+FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
+FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Scrapper
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} has been scavenged, taking {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Location Scavenging
@@ -183,12 +186,14 @@ FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
 FALLOUT.EffectToggle: Toggle Effect
 FALLOUT.equipped: Equipped
+FALLOUT.ERRORS.MagazineUsedMaximumTimes: That magazine benefit has already been used the maximum amount of times
 FALLOUT.ERRORS.NoCharacterTokenSelected: No character token selected
 FALLOUT.ERRORS.NoPLayerCharacterAssigned: This player has no main character assigned
 FALLOUT.ERRORS.NoUsableCharacterFound: No useable character was found for this action
 FALLOUT.ERRORS.ThisWeaponIsBroken: This weapon is broken and can no longer be used.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Unable to determine the attribute to use for this weapon.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Unable to determine the skill to use for this weapon.
+FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem: Unable to locate compendium version of {itemType} named "{name}"
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: This weapon does not have a Creature Attribute and/or Creature Skill specified.
 FALLOUT.FOOD: Food
 FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default RollTables to use for each category of scavenging result.
@@ -213,6 +218,16 @@ FALLOUT.HEALTH.max: Max Health
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
+FALLOUT.Item.Perk.isCompanion: Is a Companion
+FALLOUT.Item.Perk.level: Level
+FALLOUT.Item.Perk.Magazine.label: Magazines
+FALLOUT.Item.Perk.Magazine.prompt: Select Magazine...
+FALLOUT.Item.Perk.notGhoul: Not a Ghoul
+FALLOUT.Item.Perk.notHuman: Not a Human
+FALLOUT.Item.Perk.notRadiationImmune: Not Immune to Radiation
+FALLOUT.Item.Perk.notRobot: Not a Robot
+FALLOUT.Item.Perk.notSupermutant: Not a Supermutant
+FALLOUT.Item.Perk.readMagazines: Read Magazines
 FALLOUT.Item.PowerArmor.Attach: Attach
 FALLOUT.Item.PowerArmor.Attached: Attached
 FALLOUT.Item.PowerArmor.AttachedToFrame: Attached to Frame
@@ -480,6 +495,7 @@ FALLOUT.TEMPLATES.MaterialsRequired: Materials Required
 FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PARTY AP
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
+FALLOUT.TEMPLATES.MaxRanks: Max Ranks
 FALLOUT.TEMPLATES.Melee_Bonus: Melee Bonus
 FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Mod Type
@@ -542,6 +558,7 @@ FALLOUT.TEMPLATES.Use_Intelligence: Use Intelligence
 FALLOUT.TEMPLATES.Use_Luck: Use Luck
 FALLOUT.TEMPLATES.Use_Perception: Use Perception
 FALLOUT.TEMPLATES.Use_Strength: Use Strength
+FALLOUT.TEMPLATES.Uses: Uses
 FALLOUT.TEMPLATES.VEHICLE_QUALITIES: VEHICLE QUALITIES
 FALLOUT.TEMPLATES.Wealth: Wealth
 FALLOUT.TEMPLATES.Weapon_Qualities: Weapon Qualities
@@ -637,6 +654,7 @@ FALLOUT.UI.PreWarMoneyRoll: Pre-War Money Roll
 FALLOUT.UI.Qty: Qty
 FALLOUT.UI.Quantity: Quantity
 FALLOUT.UI.Rarity: Rarity
+FALLOUT.UI.Read: Read
 FALLOUT.UI.ROBOT_MODULES: Robot Modules
 FALLOUT.UI.SaveChanges: Save Changes
 FALLOUT.UI.Special_Abilities: Special Abilities
@@ -772,3 +790,4 @@ TYPES.Item.special_ability: Special Ability
 TYPES.Item.trait: Trait
 TYPES.Item.weapon_mod: Weapon Mod
 TYPES.Item.weapon: Weapon
+FALLOUT.LevelUp.AppTitle: Level Up

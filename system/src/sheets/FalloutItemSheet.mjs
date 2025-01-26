@@ -163,6 +163,9 @@ export default class FalloutItemSheet extends ItemSheet {
 			case "origin":
 				await this.getOriginSelectorConfigs(context);
 				break;
+			case "perk":
+				await this.getPerkSelectorConfigs(context);
+				break;
 			case "weapon":
 				await this.getWeaponData(context, item);
 				break;
@@ -177,6 +180,8 @@ export default class FalloutItemSheet extends ItemSheet {
 
 	async getPowerArmorPieceData(context) {
 		if (!this.item.isOwned) return;
+
+		const item = context.item;
 
 		let availablePieces = foundry.utils.duplicate(
 			this.item.actor.items.filter(
@@ -273,6 +278,24 @@ export default class FalloutItemSheet extends ItemSheet {
 				(a, b) => a.name.localeCompare(b.name)
 			);
 		}
+	}
+
+	async getPerkSelectorConfigs(context) {
+		const [selectedMagazines, availableMagazines] =
+			await fallout.utils.getDedupedSelectedItems(
+				await fallout.compendiums.books_and_magz(false),
+				this.item.system.requirementsEx.magazineUuids ?? []
+			);
+
+		context.magazineSelectionConfig = {
+			availableItems: availableMagazines,
+			choicesKey: "requirementsEx.magazineUuids",
+			isItem: true,
+			label: game.i18n.localize("FALLOUT.Item.Perk.Magazine.label"),
+			name: "system.requirementsEx.magazineUuids",
+			prompt: game.i18n.localize("FALLOUT.Item.Perk.Magazine.prompt"),
+			selectedItems: selectedMagazines,
+		};
 	}
 
 	async getWeaponData(context, item) {
@@ -430,6 +453,10 @@ export default class FalloutItemSheet extends ItemSheet {
 	/** @override */
 	activateListeners(html) {
 		super.activateListeners(html);
+
+		html.find("[data-action='delete-choice']").click(
+			async event => this._deleteChoiceItem(event)
+		);
 
 		// Send To Chat
 		html.find(".chaty").click(ev => {
@@ -819,6 +846,31 @@ export default class FalloutItemSheet extends ItemSheet {
 		else return modSummary;
 	}
 
+	async _deleteChoiceItem(event) {
+		event.preventDefault();
+		event.stopPropagation();
+
+		const deleteUuid = event.currentTarget.dataset.uuid;
+		const choicesKey = event.currentTarget.dataset.choicesKey;
+
+		let currentChoices = choicesKey
+			.split(".")
+			.reduce((obj, path) => obj ? obj[path]: [], this.item.system);
+
+		const newChoices = [];
+		for (const itemUuid of currentChoices) {
+			if (itemUuid === deleteUuid) continue;
+			newChoices.push(itemUuid);
+		}
+
+		const updateData = {};
+		updateData[`system.${choicesKey}`] = newChoices;
+
+		await this.item.update(updateData);
+
+		return this.render(true);
+	}
+
 	async _onChangeChoiceList(event, choicesKey, isItem) {
 		const options = event.target.list.options;
 		const value = event.target.value;
@@ -886,6 +938,14 @@ export default class FalloutItemSheet extends ItemSheet {
 				delete updateData["system.traits.fixed"];
 				delete updateData["system.traits.selectOptions"];
 				delete updateData["system.traits"];
+
+				this.item.update(updateData);
+				break;
+			}
+			case "perk": {
+				const updateData = this._getSubmitData();
+
+				delete updateData["system.requirementsEx.magazineUuids"];
 
 				this.item.update(updateData);
 				break;

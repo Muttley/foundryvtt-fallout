@@ -105,7 +105,7 @@ export class DialogD6 extends Dialog {
 				},
 			},
 			close: () => { },
-		});
+		}, {width: 1000});
 		d.render(true);
 	}
 

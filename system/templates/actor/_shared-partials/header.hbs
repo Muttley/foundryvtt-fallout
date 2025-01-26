@@ -53,19 +53,29 @@
             <div class="flexcol resource-plate-header plate-2">
                 <div class="resource flexrow align-mid">
                     <label
-						class="label"
+						{{#if levelUp}}
+							class="label level-up-label fa-beat"
+						{{else}}
+							class="label"
+						{{/if}}
 						for="system.level.value"
-                        {{!-- style="font-size: 18px; color: white;" --}}
+						style="text-align: center;"
 					>
-						{{localize "FALLOUT.LEVEL.Level"}}
+						{{#if levelUp}}
+							<a data-action="levelUp" data-tooltip="Click to Level Up">
+								{{localize "FALLOUT.LEVEL.Level"}}
+							</a>
+						{{else}}
+							{{localize "FALLOUT.LEVEL.Level"}}
+						{{/if}}
 					</label>
-                    <input
+					<input
 						data-dtype="Number"
 						min="0"
+						name="system.level.value"
 						style="font-size: 18px; max-width: 3rem; text-align: center; margin-right: 20px;"
 						type="number"
 						value="{{system.level.value}}"
-                        name="system.level.value"
 					/>
                 </div>
             </div>
@@ -74,7 +84,7 @@
 				<div></div>
 			{{else}}
 				<div class="flexrow align-mid resource-plate-header plate-3-g">
-					<div>
+					<div style="text-align: center;">
 						{{#if isPlayerCharacter}}
 							<a
 								class="availability-roll"
@@ -141,9 +151,11 @@
 								name="system.level.nextLevelXP"
 								type="text"
 								value="{{system.level.nextLevelXP}}"
-								{{#unless disableAutoXpTarget}}
-									data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
-									disabled
+								{{#unless disableAutoDerivedStats}}
+									{{#unless disableAutoXpTarget}}
+										data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+										disabled
+									{{/unless}}
 								{{/unless}}
 							/>
 						</div>
