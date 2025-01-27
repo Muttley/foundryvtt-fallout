@@ -267,6 +267,18 @@
 			"flags": {}
 		}
 	],
+	"flags": {
+		"hotReload": {
+			"extensions": [
+				"css", "hbs", "json"
+			],
+			"paths": [
+				"css",
+				"i18n",
+				"templates"
+			]
+		}
+	},
 	"socket": true,
 	"url": "https://github.com/Muttley/foundryvtt-fallout",
 	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
