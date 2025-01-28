@@ -646,7 +646,7 @@ FALLOUT.UI.DISEASES: Maladies
 FALLOUT.UI.favorite: Favori
 FALLOUT.UI.INVENTORY: Inventaire
 FALLOUT.UI.MISCELLANY: Bric-A-Brac
-FALLOUT.UI.Modify: Modify
+FALLOUT.UI.Modify: Modifier
 FALLOUT.UI.Name: Nom
 FALLOUT.UI.OTHER: Autre
 FALLOUT.UI.Override: Override
@@ -694,7 +694,7 @@ FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
 FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
 FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
-FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
+FALLOUT.WEAPON_MOD.summary.fireRate: Cadence de Tir
 FALLOUT.WEAPON_MOD.summary.gain: Gain
 FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remove
