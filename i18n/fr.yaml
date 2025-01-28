@@ -397,7 +397,7 @@ FALLOUT.TEMPLATES.Butchery: Dépeçage
 FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
 FALLOUT.TEMPLATES.Category: Catégorie
 FALLOUT.TEMPLATES.Compl: Compl.
-FALLOUT.TEMPLATES.complexity: Complexity
+FALLOUT.TEMPLATES.complexity: Complexité
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
 FALLOUT.TEMPLATES.conditions.dehydrated: Déshydraté
@@ -496,7 +496,7 @@ FALLOUT.TEMPLATES.MaterialsRequired: Composants requis
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.MaxRanks: Max Ranks
+FALLOUT.TEMPLATES.MaxRanks: Rangs maximum
 FALLOUT.TEMPLATES.Melee_Bonus: Bonus de Mêlée
 FALLOUT.TEMPLATES.Melee_Damage: Dégâts de Mêlée
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
