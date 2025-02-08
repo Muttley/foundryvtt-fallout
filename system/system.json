@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout: The Roleplaying Game",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "11.14.3",
+	"version": "11.14.4",
 	"compatibility": {
 		"minimum": "12",
 		"verified": "12"
@@ -280,8 +280,8 @@
 		}
 	},
 	"socket": true,
-	"url": "https://github.com/Muttley/foundryvtt-fallout",
-	"manifest": "https://raw.githubusercontent.com/Muttley/foundryvtt-fallout/main/system/system.json",
-	"download": "https://github.com/Muttley/foundryvtt-fallout/releases/latest/download/fallout.zip",
+	"url": "https://github.com/DioxiT/foundryvtt-fallout",
+	"manifest": "https://raw.githubusercontent.com/DioxiT/foundryvtt-fallout/main/system/system.json",
+	"download": "https://github.com/DioxiT/foundryvtt-fallout/releases/latest/download/fallout.zip",
 	"background": "systems/fallout/assets/images/please-stand-by.webp"
 }
