@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 20,
 		"crafting": {
-			"complexity": "",
+			"complexity": "3",
 			"perks": "Gun Nut 1",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "barrel",
 		"namePrefix": "Long",
 		"qualities": "",
 		"quantity": 1,

@@ -11,16 +11,16 @@
 		"attached": false,
 		"cost": 12,
 		"crafting": {
-			"complexity": "",
+			"complexity": "4",
 			"perks": "Science! 2",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
 			"ammo": "",
-			"ammoPerShot": 0,
+			"ammoPerShot": 5,
 			"damage": {
 				"damageEffect": {
 					"arc": {
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 3,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+3 @fos[DC]</p>\n<p>Consumes 5 shots per attack</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "capacitor",
 		"namePrefix": "Five-Crank",
 		"qualities": "",
 		"quantity": 1,

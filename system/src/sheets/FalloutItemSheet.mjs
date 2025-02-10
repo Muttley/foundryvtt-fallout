@@ -443,7 +443,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		context.overrideDamage = item.system.modEffects.damage.overrideDamage;
 
-		context.modSummary = this.getWeaponModSummary(item);
+		context.modSummary = await this.getWeaponModSummary(item);
 
 
 	}
@@ -608,7 +608,7 @@ export default class FalloutItemSheet extends ItemSheet {
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
 				}
 				item.system.mods[mod].system.modEffects.summary =
-					this.getWeaponModSummary(item.system.mods[mod]);
+					await this.getWeaponModSummary(item.system.mods[mod]);
 				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
 
 				if (item.system.mods[mod].system.attached) {
@@ -677,8 +677,11 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// ammo per shot
 		if (mod.system.modEffects.ammoPerShot !== 0) {
-			if (installed) updateData["system.ammoPerShot"] = this.item.system.ammoPerShot + mod.system.modEffects.ammoPerShot;
-			else updateData["system.ammoPerShot"] = this.item.system.ammoPerShot - mod.system.modEffects.ammoPerShot;
+			if (installed) {
+				updateData["system.originalAmmoPerShot"] = this.item.system.ammoPerShot;
+				updateData["system.ammoPerShot"] = mod.system.modEffects.ammoPerShot;
+			}
+			else updateData["system.ammoPerShot"] = this.item.system.originalAmmoPerShot;
 		}
 
 		// fire rate
@@ -800,7 +803,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		li.toggleClass("expanded");
 	}
 
-	getWeaponModSummary(mod) {
+	async getWeaponModSummary(mod) {
 		let modSummary = [];
 		let modEffects = mod.system.modEffects;
 
@@ -816,6 +819,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 
+		// TODO: for negative use "Reduce range by"
 		if (modEffects.range !== 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.range", { range: modEffects.range }));
 
 
@@ -854,6 +858,11 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		if (weaponQuality.length > 0) modSummary.push(`${weaponQuality.join(", ")}`);
 
+		// Extra Effects
+		if (modEffects.effect !== "") modSummary.push(await TextEditor.enrichHTML(modEffects.effect, {
+			async: true,
+		}));
+
 		if (modSummary.length > 1) return modSummary.join(", ");
 		else return modSummary;
 	}
@@ -867,7 +876,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		let currentChoices = choicesKey
 			.split(".")
-			.reduce((obj, path) => obj ? obj[path]: [], this.item.system);
+			.reduce((obj, path) => obj ? obj[path] : [], this.item.system);
 
 		const newChoices = [];
 		for (const itemUuid of currentChoices) {

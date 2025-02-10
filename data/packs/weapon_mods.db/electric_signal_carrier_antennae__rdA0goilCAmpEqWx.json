@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 30,
 		"crafting": {
-			"complexity": "",
+			"complexity": "6",
 			"perks": "Science! 4",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -49,7 +49,7 @@
 					},
 					"radioactive": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"spread": {
 						"rank": 0,
@@ -63,19 +63,22 @@
 						"rank": 0,
 						"value": 0
 					},
+					"undefined": {
+						"value": 1
+					},
 					"vicious": {
 						"rank": 0,
 						"value": 0
 					}
 				},
 				"damageType": {
-					"energy": false,
+					"energy": true,
 					"physical": false,
 					"poison": false,
 					"radiation": false
 				},
-				"overrideDamage": "modify",
-				"rating": 0,
+				"overrideDamage": "override",
+				"rating": 7,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +192,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Change damage to 7 @fos[DC]</p>\n<p>Change damage type to Energy</p>\n<p>Gain Radioactive</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "muzzle",
 		"namePrefix": "Electrified",
 		"qualities": "",
 		"quantity": 1,

@@ -11,16 +11,16 @@
 		"attached": false,
 		"cost": 16,
 		"crafting": {
-			"complexity": "",
+			"complexity": "5",
 			"perks": "Science! 3",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
 			"ammo": "",
-			"ammoPerShot": 0,
+			"ammoPerShot": 6,
 			"damage": {
 				"damageEffect": {
 					"arc": {
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 4,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+4 @fos[DC]</p>\n<p>Consumes 6 shots per attack</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "capacitor",
 		"namePrefix": "Six-Crank",
 		"qualities": "",
 		"quantity": 1,

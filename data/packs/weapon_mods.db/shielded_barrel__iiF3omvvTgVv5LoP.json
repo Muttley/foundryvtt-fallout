@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 37,
 		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 3; Repair",
-			"rarity": "",
-			"skill": ""
+			"complexity": "5",
+			"perks": "Gun Nut 3",
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC] damage</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

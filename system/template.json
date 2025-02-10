@@ -1453,6 +1453,7 @@
 				"max": 0,
 				"modded": false
 			},
+			"originalAmmoPerShot": 0,
 			"range": "",
 			"skill": "",
 			"tear": 0,

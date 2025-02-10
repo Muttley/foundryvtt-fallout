@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 75,
 		"crafting": {
-			"complexity": "",
+			"complexity": "5",
 			"perks": "Blacksmith 3, Science! 1",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -41,7 +41,7 @@
 					},
 					"persistent": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"piercing_x": {
 						"rank": 0,
@@ -63,19 +63,22 @@
 						"rank": 0,
 						"value": 0
 					},
+					"undefined": {
+						"value": 1
+					},
 					"vicious": {
 						"rank": 0,
 						"value": 0
 					}
 				},
 				"damageType": {
-					"energy": false,
+					"energy": true,
 					"physical": false,
 					"poison": false,
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +192,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC]</p>\n<p>Damage type becomed Energy</p>\n<p>Gain Persistent (Physical)</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Persistent (Physical)</p>\n<p>&nbsp;</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Electrified Serrated",
 		"qualities": "",
 		"quantity": 1,

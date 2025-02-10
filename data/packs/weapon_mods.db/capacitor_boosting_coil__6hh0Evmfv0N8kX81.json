@@ -1,18 +1,18 @@
 {
-	"_id": "aCMBNHf2jilKz2Zg",
-	"_key": "!items!aCMBNHf2jilKz2Zg",
+	"_id": "6hh0Evmfv0N8kX81",
+	"_key": "!items!6hh0Evmfv0N8kX81",
 	"effects": [
 	],
-	"folder": "FyM7apyr7UNUi2nF",
+	"folder": "FsftjyUpE5iKkHY3",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
-	"name": "Finned",
+	"name": "Capacitor Boosting Coil",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 15,
+		"cost": 82,
 		"crafting": {
-			"complexity": "4",
-			"perks": "Gun Nut 2",
+			"complexity": "6",
+			"perks": "Gun Nut 4; Science! 3",
 			"rarity": "uncommon",
 			"skill": "Repair"
 		},
@@ -65,7 +65,7 @@
 					},
 					"vicious": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					}
 				},
 				"damageType": {
@@ -192,11 +192,11 @@
 			"effect": "",
 			"fireRate": 0,
 			"info": "",
-			"range": 1,
+			"range": 0,
 			"summary": ""
 		},
-		"modType": "barrel",
-		"namePrefix": "Finned",
+		"modType": "capacitor",
+		"namePrefix": "Maximum Capacity",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

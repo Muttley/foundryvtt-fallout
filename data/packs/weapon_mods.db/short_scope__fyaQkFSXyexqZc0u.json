@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 11,
 		"crafting": {
-			"complexity": "",
+			"complexity": "2",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -79,7 +79,7 @@
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"ammo_hungry_x": {
 						"rank": 0,
@@ -119,7 +119,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Accurate</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

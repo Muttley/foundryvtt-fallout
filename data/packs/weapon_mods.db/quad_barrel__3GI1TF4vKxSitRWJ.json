@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 218,
 		"crafting": {
-			"complexity": "",
+			"complexity": "5",
 			"perks": "Gun Nut 3",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 Fire Rate</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 2,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "barrel",
 		"namePrefix": "Quad Barrel",
 		"qualities": "",
 		"quantity": 1,

@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 94,
 		"crafting": {
-			"complexity": "",
+			"complexity": "4",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC]</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "capacitor",
 		"namePrefix": "Boosted",
 		"qualities": "",
 		"quantity": 1,

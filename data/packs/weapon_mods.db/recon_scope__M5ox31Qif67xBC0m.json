@@ -1,18 +1,18 @@
 {
-	"_id": "aCMBNHf2jilKz2Zg",
-	"_key": "!items!aCMBNHf2jilKz2Zg",
+	"_id": "M5ox31Qif67xBC0m",
+	"_key": "!items!M5ox31Qif67xBC0m",
 	"effects": [
 	],
-	"folder": "FyM7apyr7UNUi2nF",
+	"folder": "Brw4U78MHdGIsy7A",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
-	"name": "Finned",
+	"name": "Recon Scope",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 15,
+		"cost": 59,
 		"crafting": {
-			"complexity": "4",
-			"perks": "Gun Nut 2",
+			"complexity": "5",
+			"perks": "Science! 3",
 			"rarity": "uncommon",
 			"skill": "Repair"
 		},
@@ -75,11 +75,11 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 1,
+				"rating": 0,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"ammo_hungry_x": {
 						"rank": 0,
@@ -119,7 +119,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -147,7 +147,7 @@
 					},
 					"recon": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"reliable": {
 						"rank": 0,
@@ -192,18 +192,18 @@
 			"effect": "",
 			"fireRate": 0,
 			"info": "",
-			"range": 1,
+			"range": 0,
 			"summary": ""
 		},
-		"modType": "barrel",
-		"namePrefix": "Finned",
+		"modType": "sight",
+		"namePrefix": "Recon",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "smallGuns",
-		"weight": 2
+		"weaponType": "energyWeapons",
+		"weight": 1
 	},
 	"type": "weapon_mod"
 }

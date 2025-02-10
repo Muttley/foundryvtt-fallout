@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 70,
 		"crafting": {
-			"complexity": "",
+			"complexity": "6",
 			"perks": "Gun Nut 2; Science! 1",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -63,13 +63,16 @@
 						"rank": 0,
 						"value": 0
 					},
+					"undefined": {
+						"value": 1
+					},
 					"vicious": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					}
 				},
 				"damageType": {
-					"energy": false,
+					"energy": true,
 					"physical": false,
 					"poison": false,
 					"radiation": false
@@ -189,13 +192,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Vicious</p>\n<p>Change damage type to Energy</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "muzzle",
 		"namePrefix": "Electrified",
 		"qualities": "",
 		"quantity": 1,

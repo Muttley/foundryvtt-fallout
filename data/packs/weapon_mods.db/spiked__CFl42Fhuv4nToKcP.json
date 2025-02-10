@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 3,
 		"crafting": {
-			"complexity": "",
+			"complexity": "1",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -44,8 +44,8 @@
 						"value": 0
 					},
 					"piercing_x": {
-						"rank": 0,
-						"value": 0
+						"rank": 1,
+						"value": 1
 					},
 					"radioactive": {
 						"rank": 0,
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Piercing 1</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Spiked",
 		"qualities": "",
 		"quantity": 1,

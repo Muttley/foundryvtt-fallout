@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 10,
 		"crafting": {
-			"complexity": "",
+			"complexity": "2",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -44,8 +44,8 @@
 						"value": 0
 					},
 					"piercing_x": {
-						"rank": 0,
-						"value": 0
+						"rank": 1,
+						"value": 1
 					},
 					"radioactive": {
 						"rank": 0,
@@ -99,7 +99,7 @@
 					},
 					"close_quarters": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"concealed": {
 						"rank": 0,
@@ -171,7 +171,7 @@
 					},
 					"two_handed": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"unreliable": {
 						"rank": 0,
@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Two-Handed</p>\n<p>Gain Piercing 1</p>\n<p>Remove Close Quarters</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

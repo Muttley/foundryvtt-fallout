@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 40,
 		"crafting": {
-			"complexity": "",
+			"complexity": "2",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "stock",
 		"namePrefix": "Recoil Compensated",
 		"qualities": "",
 		"quantity": 1,

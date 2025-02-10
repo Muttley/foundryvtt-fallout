@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 68,
 		"crafting": {
-			"complexity": "",
+			"complexity": "2",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -119,7 +119,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Remove Inaccurate</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "sight",
 		"namePrefix": "Tactical",
 		"qualities": "",
 		"quantity": 1,

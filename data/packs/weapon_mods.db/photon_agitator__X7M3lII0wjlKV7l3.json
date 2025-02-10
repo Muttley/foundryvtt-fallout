@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 35,
 		"crafting": {
-			"complexity": "",
+			"complexity": "4",
 			"perks": "Science! 2",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -65,7 +65,7 @@
 					},
 					"vicious": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					}
 				},
 				"damageType": {
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Vicious</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

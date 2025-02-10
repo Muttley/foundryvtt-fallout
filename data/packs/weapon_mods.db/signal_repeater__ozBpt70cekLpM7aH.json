@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 60,
 		"crafting": {
-			"complexity": "",
+			"complexity": "6",
 			"perks": "Science! 4",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -33,7 +33,7 @@
 					},
 					"burst": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"freeze": {
 						"rank": 0,
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 2,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -91,7 +91,7 @@
 					},
 					"blast": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"bombard": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 Fire Rate</p>\n<p>Gain Burst</p>\n<p>Remove Blast</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "muzzle",
 		"namePrefix": "Automatic",
 		"qualities": "",
 		"quantity": 1,

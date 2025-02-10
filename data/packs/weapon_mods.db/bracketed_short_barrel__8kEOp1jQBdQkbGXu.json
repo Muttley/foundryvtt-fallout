@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 6,
 		"crafting": {
-			"complexity": "",
+			"complexity": "3",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,

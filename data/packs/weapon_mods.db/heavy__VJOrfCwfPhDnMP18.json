@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 11,
 		"crafting": {
-			"complexity": "",
+			"complexity": "3",
 			"perks": "Blacksmith 2",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 2,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 @fos[DC]</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Heavy",
 		"qualities": "",
 		"quantity": 1,

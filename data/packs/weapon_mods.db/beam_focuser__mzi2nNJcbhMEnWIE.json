@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 20,
 		"crafting": {
-			"complexity": "",
+			"complexity": "4",
 			"perks": "Science! 1",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -189,10 +189,10 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
 		"modType": "muzzle",

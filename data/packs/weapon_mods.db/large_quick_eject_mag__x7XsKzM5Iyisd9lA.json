@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 23,
 		"crafting": {
-			"complexity": "",
+			"complexity": "5",
 			"perks": "Gun Nut 2",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -189,8 +189,8 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
 			"range": 0,
 			"summary": ""

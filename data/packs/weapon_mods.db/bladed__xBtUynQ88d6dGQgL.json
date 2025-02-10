@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 12,
 		"crafting": {
-			"complexity": "",
+			"complexity": "3",
 			"perks": "Blacksmith 2",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -41,7 +41,7 @@
 					},
 					"persistent": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"piercing_x": {
 						"rank": 0,
@@ -75,7 +75,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Bladed",
 		"qualities": "",
 		"quantity": 1,

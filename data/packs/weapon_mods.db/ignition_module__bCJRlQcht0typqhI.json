@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 130,
 		"crafting": {
-			"complexity": "",
+			"complexity": "7",
 			"perks": "Gun Nut 3; Science! 1",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -41,7 +41,7 @@
 					},
 					"persistent": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"piercing_x": {
 						"rank": 0,
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Persistent (Energy)</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Persistent (Energy)</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "muzzle",
 		"namePrefix": "Flaming",
 		"qualities": "",
 		"quantity": 1,

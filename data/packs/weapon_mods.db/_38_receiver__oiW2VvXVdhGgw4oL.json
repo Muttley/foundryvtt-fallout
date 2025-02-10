@@ -11,15 +11,15 @@
 		"attached": false,
 		"cost": 20,
 		"crafting": {
-			"complexity": "",
+			"complexity": "6",
 			"perks": "Gun Nut 4",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
-			"ammo": "",
+			"ammo": ".38 Round",
 			"ammoPerShot": 0,
 			"damage": {
 				"damageEffect": {
@@ -74,8 +74,8 @@
 					"poison": false,
 					"radiation": false
 				},
-				"overrideDamage": "modify",
-				"rating": 0,
+				"overrideDamage": "override",
+				"rating": 4,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Change damage to 4 @fos[DC]</p>\n<p>Ammo changes to @UUID[Item.YthgQHCfKPTHC3I9]{.38 Round}</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

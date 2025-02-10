@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 19,
 		"crafting": {
-			"complexity": "",
+			"complexity": "6",
 			"perks": "Science! 3",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -65,7 +65,7 @@
 					},
 					"vicious": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					}
 				},
 				"damageType": {
@@ -189,13 +189,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Vicious</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "capacitor",
 		"namePrefix": "Excited",
 		"qualities": "",
 		"quantity": 1,

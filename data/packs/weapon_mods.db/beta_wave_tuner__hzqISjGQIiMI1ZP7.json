@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 30,
 		"crafting": {
-			"complexity": "",
+			"complexity": "2",
 			"perks": "",
-			"rarity": "",
-			"skill": ""
+			"rarity": "common",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -41,7 +41,7 @@
 					},
 					"persistent": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"piercing_x": {
 						"rank": 0,
@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 100,
 		"crafting": {
-			"complexity": "",
+			"complexity": "4",
 			"perks": "Blacksmith 3",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -63,19 +63,22 @@
 						"rank": 0,
 						"value": 0
 					},
+					"undefined": {
+						"value": 1
+					},
 					"vicious": {
 						"rank": 0,
 						"value": 0
 					}
 				},
 				"damageType": {
-					"energy": false,
+					"energy": true,
 					"physical": false,
 					"poison": false,
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 2,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,13 +192,13 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 @fos[DC]</p>\n<p>Change Damage Type to Energy</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Puncturing",
 		"qualities": "",
 		"quantity": 1,

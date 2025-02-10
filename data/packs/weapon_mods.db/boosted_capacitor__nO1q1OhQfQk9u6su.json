@@ -1,20 +1,20 @@
 {
-	"_id": "aCMBNHf2jilKz2Zg",
-	"_key": "!items!aCMBNHf2jilKz2Zg",
+	"_id": "nO1q1OhQfQk9u6su",
+	"_key": "!items!nO1q1OhQfQk9u6su",
 	"effects": [
 	],
-	"folder": "FyM7apyr7UNUi2nF",
+	"folder": "YtRXRKCnP8THWkTL",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
-	"name": "Finned",
+	"name": "Boosted Capacitor",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 15,
+		"cost": 94,
 		"crafting": {
-			"complexity": "4",
-			"perks": "Gun Nut 2",
-			"rarity": "uncommon",
-			"skill": "Repair"
+			"complexity": "2",
+			"perks": "",
+			"rarity": "common",
+			"skill": "Science"
 		},
 		"description": "",
 		"favorite": false,
@@ -190,20 +190,20 @@
 			"damageEffect": "",
 			"damageRating": 0,
 			"effect": "",
-			"fireRate": 0,
+			"fireRate": -1,
 			"info": "",
-			"range": 1,
+			"range": 0,
 			"summary": ""
 		},
-		"modType": "barrel",
-		"namePrefix": "Finned",
+		"modType": "capacitor",
+		"namePrefix": "Boosted",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "smallGuns",
-		"weight": 2
+		"weaponType": "energyWeapons",
+		"weight": 1
 	},
 	"type": "weapon_mod"
 }

@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 8,
 		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 2",
-			"rarity": "",
-			"skill": ""
+			"complexity": "4",
+			"perks": "Gun Nut 1",
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -151,7 +151,7 @@
 					},
 					"reliable": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"slow_load": {
 						"rank": 0,
@@ -175,7 +175,7 @@
 					},
 					"unreliable": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"unstable_radiation": {
 						"rank": 0,
@@ -189,8 +189,8 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 fire rate</p>\n<p>Gain Unreliable</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
 			"range": 0,
 			"summary": ""

@@ -11,10 +11,10 @@
 		"attached": false,
 		"cost": 36,
 		"crafting": {
-			"complexity": "",
+			"complexity": "6",
 			"perks": "Gun Nut 4",
-			"rarity": "",
-			"skill": ""
+			"rarity": "uncommon",
+			"skill": "Repair"
 		},
 		"description": "",
 		"favorite": false,
@@ -151,7 +151,7 @@
 					},
 					"reliable": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"slow_load": {
 						"rank": 0,
@@ -175,7 +175,7 @@
 					},
 					"unreliable": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"unstable_radiation": {
 						"rank": 0,
@@ -189,10 +189,10 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Increase Range by 1 step</p>\n<p>+1 fire rate</p>\n<p>Gain Reliable</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
 		"modType": "barrel",
