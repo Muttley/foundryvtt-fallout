@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Allows the weapon to take a Muzzle mod</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Allows the weapon to take a Muzzle mod</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 1,

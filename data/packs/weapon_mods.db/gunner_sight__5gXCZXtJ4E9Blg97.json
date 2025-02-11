@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>May re-roll hit location die</p>\n<p>&nbsp;</p>",
+			"effect": "<p>May re-roll hit location die</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

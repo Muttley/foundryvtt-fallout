@@ -195,7 +195,7 @@
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "barrel",
+		"modType": "nozzle",
 		"namePrefix": "Vaporizing",
 		"qualities": "",
 		"quantity": 1,

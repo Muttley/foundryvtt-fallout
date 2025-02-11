@@ -189,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Melee weapon,</p>\n<p>Deals @fos[DC] of Physical damage equal to Fire Rate</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Melee weapon,&nbsp;Deals @fos[DC] of Physical damage equal to Fire Rate</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
