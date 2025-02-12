@@ -63,9 +63,6 @@
 						"rank": 0,
 						"value": 0
 					},
-					"undefined": {
-						"value": 1
-					},
 					"vicious": {
 						"rank": 0,
 						"value": 0
@@ -192,7 +189,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Persistent (Physical)</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Persistent (Physical)</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

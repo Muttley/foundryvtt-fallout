@@ -195,12 +195,909 @@
 		"isJunk": false,
 		"melee": false,
 		"mods": {
+			"AS0Amn04UTnwJOgG": {
+				"_id": "AS0Amn04UTnwJOgG",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1739335834508,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "sFnAMjOd2fTxG5bA",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"name": "Hooked",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"attachable": true,
+					"attached": false,
+					"cost": 9,
+					"crafting": {
+						"complexity": "1",
+						"perks": "",
+						"rarity": "common",
+						"skill": "Repair"
+					},
+					"description": "",
+					"favorite": false,
+					"modEffects": {
+						"ammo": "",
+						"ammoPerShot": 0,
+						"damage": {
+							"damageEffect": {
+								"arc": {
+									"rank": 0,
+									"value": 0
+								},
+								"breaking": {
+									"rank": 0,
+									"value": 0
+								},
+								"burst": {
+									"rank": 0,
+									"value": 0
+								},
+								"freeze": {
+									"rank": 0,
+									"value": 0
+								},
+								"persistent": {
+									"rank": 0,
+									"value": 0
+								},
+								"piercing_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"radioactive": {
+									"rank": 0,
+									"value": 0
+								},
+								"spread": {
+									"rank": 0,
+									"value": 0
+								},
+								"stun": {
+									"rank": 0,
+									"value": 0
+								},
+								"tranquilize_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"vicious": {
+									"rank": 0,
+									"value": 0
+								}
+							},
+							"damageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"overrideDamage": "modify",
+							"rating": 1,
+							"weaponQuality": {
+								"accurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"ammo_hungry_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"aquatic": {
+									"rank": 0,
+									"value": 0
+								},
+								"blast": {
+									"rank": 0,
+									"value": 0
+								},
+								"bombard": {
+									"rank": 0,
+									"value": 0
+								},
+								"close_quarters": {
+									"rank": 0,
+									"value": 0
+								},
+								"concealed": {
+									"rank": 0,
+									"value": 0
+								},
+								"debilitating": {
+									"rank": 0,
+									"value": 0
+								},
+								"delay_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"gatling": {
+									"rank": 0,
+									"value": 0
+								},
+								"inaccurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"limited": {
+									"rank": 0,
+									"value": 0
+								},
+								"mine": {
+									"rank": 0,
+									"value": 0
+								},
+								"night_vision": {
+									"rank": 0,
+									"value": 0
+								},
+								"parry": {
+									"rank": 0,
+									"value": 0
+								},
+								"placed": {
+									"rank": 0,
+									"value": 0
+								},
+								"recoil_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"recon": {
+									"rank": 0,
+									"value": 0
+								},
+								"reliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"slow_load": {
+									"rank": 0,
+									"value": 0
+								},
+								"suppressed": {
+									"rank": 0,
+									"value": 0
+								},
+								"surge": {
+									"rank": 0,
+									"value": 0
+								},
+								"thrown": {
+									"rank": 0,
+									"value": 0
+								},
+								"two_handed": {
+									"rank": 0,
+									"value": 0
+								},
+								"unreliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"unstable_radiation": {
+									"rank": 0,
+									"value": 0
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": 0
+								}
+							}
+						},
+						"damageEffect": "",
+						"damageRating": 0,
+						"effect": "<p>An successful attack, spend 2 AP to disarm opponent, knocking one held weapon away</p>",
+						"fireRate": 0,
+						"info": "",
+						"range": 0,
+						"summary": ""
+					},
+					"modType": "melee",
+					"namePrefix": "Hooked",
+					"qualities": "",
+					"quantity": 1,
+					"rarity": 0,
+					"source": "core_rulebook",
+					"stashed": false,
+					"weaponType": "meleeWeapons",
+					"weight": 0
+				},
+				"type": "weapon_mod"
+			},
+			"D8hF1RjpOMVHjlHp": {
+				"_id": "D8hF1RjpOMVHjlHp",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1738818819474,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "sFnAMjOd2fTxG5bA",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"name": "Heavy",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"attachable": true,
+					"attached": false,
+					"cost": 12,
+					"crafting": {
+						"complexity": "2",
+						"perks": "Blacksmith 1",
+						"rarity": "uncommon",
+						"skill": "Repair"
+					},
+					"description": "",
+					"favorite": false,
+					"modEffects": {
+						"ammo": "",
+						"ammoPerShot": 0,
+						"damage": {
+							"damageEffect": {
+								"arc": {
+									"rank": 0,
+									"value": 0
+								},
+								"breaking": {
+									"rank": 0,
+									"value": 0
+								},
+								"burst": {
+									"rank": 0,
+									"value": 0
+								},
+								"freeze": {
+									"rank": 0,
+									"value": 0
+								},
+								"persistent": {
+									"rank": 0,
+									"value": 0
+								},
+								"piercing_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"radioactive": {
+									"rank": 0,
+									"value": 0
+								},
+								"spread": {
+									"rank": 0,
+									"value": 0
+								},
+								"stun": {
+									"rank": 0,
+									"value": 0
+								},
+								"tranquilize_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"vicious": {
+									"rank": 0,
+									"value": 0
+								}
+							},
+							"damageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"overrideDamage": "modify",
+							"rating": 2,
+							"weaponQuality": {
+								"accurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"ammo_hungry_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"aquatic": {
+									"rank": 0,
+									"value": 0
+								},
+								"blast": {
+									"rank": 0,
+									"value": 0
+								},
+								"bombard": {
+									"rank": 0,
+									"value": 0
+								},
+								"close_quarters": {
+									"rank": 0,
+									"value": 0
+								},
+								"concealed": {
+									"rank": 0,
+									"value": 0
+								},
+								"debilitating": {
+									"rank": 0,
+									"value": 0
+								},
+								"delay_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"gatling": {
+									"rank": 0,
+									"value": 0
+								},
+								"inaccurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"limited": {
+									"rank": 0,
+									"value": 0
+								},
+								"mine": {
+									"rank": 0,
+									"value": 0
+								},
+								"night_vision": {
+									"rank": 0,
+									"value": 0
+								},
+								"parry": {
+									"rank": 0,
+									"value": 0
+								},
+								"placed": {
+									"rank": 0,
+									"value": 0
+								},
+								"recoil_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"recon": {
+									"rank": 0,
+									"value": 0
+								},
+								"reliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"slow_load": {
+									"rank": 0,
+									"value": 0
+								},
+								"suppressed": {
+									"rank": 0,
+									"value": 0
+								},
+								"surge": {
+									"rank": 0,
+									"value": 0
+								},
+								"thrown": {
+									"rank": 0,
+									"value": 0
+								},
+								"two_handed": {
+									"rank": 0,
+									"value": 0
+								},
+								"unreliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"unstable_radiation": {
+									"rank": 0,
+									"value": 0
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": 0
+								}
+							}
+						},
+						"damageEffect": "",
+						"damageRating": 0,
+						"effect": "",
+						"fireRate": 0,
+						"info": "",
+						"range": 0,
+						"summary": ""
+					},
+					"modType": "melee",
+					"namePrefix": "Weighted",
+					"qualities": "",
+					"quantity": 1,
+					"rarity": 0,
+					"source": "core_rulebook",
+					"stashed": false,
+					"weaponType": "meleeWeapons",
+					"weight": 7
+				},
+				"type": "weapon_mod"
+			},
+			"Fa2RBTtGci73smRF": {
+				"_id": "Fa2RBTtGci73smRF",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1738818829027,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "sFnAMjOd2fTxG5bA",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"name": "Puncturing",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"attachable": true,
+					"attached": false,
+					"cost": 13,
+					"crafting": {
+						"complexity": "2",
+						"perks": "Blacksmith 1",
+						"rarity": "uncommon",
+						"skill": "Repair"
+					},
+					"description": "",
+					"favorite": false,
+					"modEffects": {
+						"ammo": "",
+						"ammoPerShot": 0,
+						"damage": {
+							"damageEffect": {
+								"arc": {
+									"rank": 0,
+									"value": 0
+								},
+								"breaking": {
+									"rank": 0,
+									"value": 0
+								},
+								"burst": {
+									"rank": 0,
+									"value": 0
+								},
+								"freeze": {
+									"rank": 0,
+									"value": 0
+								},
+								"persistent": {
+									"rank": 0,
+									"value": 0
+								},
+								"piercing_x": {
+									"rank": 1,
+									"value": 1
+								},
+								"radioactive": {
+									"rank": 0,
+									"value": 0
+								},
+								"spread": {
+									"rank": 0,
+									"value": 0
+								},
+								"stun": {
+									"rank": 0,
+									"value": 0
+								},
+								"tranquilize_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"vicious": {
+									"rank": 0,
+									"value": 0
+								}
+							},
+							"damageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"overrideDamage": "modify",
+							"rating": 2,
+							"weaponQuality": {
+								"accurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"ammo_hungry_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"aquatic": {
+									"rank": 0,
+									"value": 0
+								},
+								"blast": {
+									"rank": 0,
+									"value": 0
+								},
+								"bombard": {
+									"rank": 0,
+									"value": 0
+								},
+								"close_quarters": {
+									"rank": 0,
+									"value": 0
+								},
+								"concealed": {
+									"rank": 0,
+									"value": 0
+								},
+								"debilitating": {
+									"rank": 0,
+									"value": 0
+								},
+								"delay_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"gatling": {
+									"rank": 0,
+									"value": 0
+								},
+								"inaccurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"limited": {
+									"rank": 0,
+									"value": 0
+								},
+								"mine": {
+									"rank": 0,
+									"value": 0
+								},
+								"night_vision": {
+									"rank": 0,
+									"value": 0
+								},
+								"parry": {
+									"rank": 0,
+									"value": 0
+								},
+								"placed": {
+									"rank": 0,
+									"value": 0
+								},
+								"recoil_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"recon": {
+									"rank": 0,
+									"value": 0
+								},
+								"reliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"slow_load": {
+									"rank": 0,
+									"value": 0
+								},
+								"suppressed": {
+									"rank": 0,
+									"value": 0
+								},
+								"surge": {
+									"rank": 0,
+									"value": 0
+								},
+								"thrown": {
+									"rank": 0,
+									"value": 0
+								},
+								"two_handed": {
+									"rank": 0,
+									"value": 0
+								},
+								"unreliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"unstable_radiation": {
+									"rank": 0,
+									"value": 0
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": 0
+								}
+							}
+						},
+						"damageEffect": "",
+						"damageRating": 0,
+						"effect": "",
+						"fireRate": 0,
+						"info": "",
+						"range": 0,
+						"summary": ""
+					},
+					"modType": "melee",
+					"namePrefix": "Puncturing",
+					"qualities": "",
+					"quantity": 1,
+					"rarity": 0,
+					"source": "core_rulebook",
+					"stashed": false,
+					"weaponType": "meleeWeapons",
+					"weight": 1
+				},
+				"type": "weapon_mod"
+			},
+			"J4QJRw5GkCdMirdr": {
+				"_id": "J4QJRw5GkCdMirdr",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1738818839272,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "sFnAMjOd2fTxG5bA",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"name": "Extra Heavy",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"attachable": true,
+					"attached": false,
+					"cost": 22,
+					"crafting": {
+						"complexity": "3",
+						"perks": "Blacksmith 2",
+						"rarity": "uncommon",
+						"skill": "Repair"
+					},
+					"description": "",
+					"favorite": false,
+					"modEffects": {
+						"ammo": "",
+						"ammoPerShot": 0,
+						"damage": {
+							"damageEffect": {
+								"arc": {
+									"rank": 0,
+									"value": 0
+								},
+								"breaking": {
+									"rank": 0,
+									"value": 0
+								},
+								"burst": {
+									"rank": 0,
+									"value": 0
+								},
+								"freeze": {
+									"rank": 0,
+									"value": 0
+								},
+								"persistent": {
+									"rank": 0,
+									"value": 0
+								},
+								"piercing_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"radioactive": {
+									"rank": 0,
+									"value": 0
+								},
+								"spread": {
+									"rank": 0,
+									"value": 0
+								},
+								"stun": {
+									"rank": 0,
+									"value": 0
+								},
+								"tranquilize_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"vicious": {
+									"rank": 0,
+									"value": 0
+								}
+							},
+							"damageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"overrideDamage": "modify",
+							"rating": 3,
+							"weaponQuality": {
+								"accurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"ammo_hungry_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"aquatic": {
+									"rank": 0,
+									"value": 0
+								},
+								"blast": {
+									"rank": 0,
+									"value": 0
+								},
+								"bombard": {
+									"rank": 0,
+									"value": 0
+								},
+								"close_quarters": {
+									"rank": 0,
+									"value": 0
+								},
+								"concealed": {
+									"rank": 0,
+									"value": 0
+								},
+								"debilitating": {
+									"rank": 0,
+									"value": 0
+								},
+								"delay_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"gatling": {
+									"rank": 0,
+									"value": 0
+								},
+								"inaccurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"limited": {
+									"rank": 0,
+									"value": 0
+								},
+								"mine": {
+									"rank": 0,
+									"value": 0
+								},
+								"night_vision": {
+									"rank": 0,
+									"value": 0
+								},
+								"parry": {
+									"rank": 0,
+									"value": 0
+								},
+								"placed": {
+									"rank": 0,
+									"value": 0
+								},
+								"recoil_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"recon": {
+									"rank": 0,
+									"value": 0
+								},
+								"reliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"slow_load": {
+									"rank": 0,
+									"value": 0
+								},
+								"suppressed": {
+									"rank": 0,
+									"value": 0
+								},
+								"surge": {
+									"rank": 0,
+									"value": 0
+								},
+								"thrown": {
+									"rank": 0,
+									"value": 0
+								},
+								"two_handed": {
+									"rank": 0,
+									"value": 0
+								},
+								"unreliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"unstable_radiation": {
+									"rank": 0,
+									"value": 0
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": 0
+								}
+							}
+						},
+						"damageEffect": "",
+						"damageRating": 0,
+						"effect": "",
+						"fireRate": 0,
+						"info": "",
+						"range": 0,
+						"summary": ""
+					},
+					"modType": "melee",
+					"namePrefix": "Heavy",
+					"qualities": "",
+					"quantity": 1,
+					"rarity": 0,
+					"source": "core_rulebook",
+					"stashed": false,
+					"weaponType": "meleeWeapons",
+					"weight": 2
+				},
+				"type": "weapon_mod"
+			},
 			"current": 0,
 			"installedMods": "",
 			"list": "",
 			"max": 0,
 			"modded": false
 		},
+		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",
 		"rarity": 1,

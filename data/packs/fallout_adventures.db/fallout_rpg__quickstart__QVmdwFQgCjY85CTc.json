@@ -109,6 +109,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -230,8 +237,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -331,6 +340,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 6,
 							"weaponQuality": {
 								"accurate": {
@@ -452,8 +468,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -553,6 +571,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -674,8 +699,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -1336,6 +1363,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -1457,8 +1491,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -1744,6 +1780,13 @@
 								"poison": false,
 								"radiation": true
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -1865,8 +1908,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -2342,6 +2387,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 1,
 							"weaponQuality": {
 								"accurate": {
@@ -2463,8 +2515,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -3098,6 +3152,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -3219,8 +3280,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -3320,6 +3383,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -3441,8 +3511,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -3542,6 +3614,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -3663,8 +3742,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -4355,6 +4436,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -4476,8 +4564,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -4763,6 +4853,13 @@
 								"poison": false,
 								"radiation": true
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -4884,8 +4981,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -5359,6 +5458,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -5480,8 +5586,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -6702,6 +6810,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -6823,8 +6938,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"quantity": 2,
 						"range": "close",
@@ -6924,6 +7041,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -7045,8 +7169,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 7
+							"max": 7,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -7146,6 +7272,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -7267,8 +7400,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -8855,6 +8990,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -8976,8 +9118,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -9077,6 +9221,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -9198,8 +9349,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 6
+							"max": 6,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -9299,6 +9452,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -9420,8 +9580,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -11223,6 +11385,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -11344,8 +11513,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -11445,6 +11616,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -11566,8 +11744,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 7
+							"max": 7,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -11667,6 +11847,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -11788,8 +11975,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -11932,6 +12121,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -12053,8 +12249,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -13497,6 +13695,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -13618,8 +13823,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -13721,6 +13928,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -13842,8 +14056,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 6
+							"max": 6,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -15419,6 +15635,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -15540,8 +15763,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -15641,6 +15866,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -15762,8 +15994,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -15863,6 +16097,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -15984,8 +16225,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 4
+							"max": 4,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -16085,6 +16328,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -16206,8 +16456,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -17696,6 +17948,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -17817,8 +18076,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -17918,6 +18179,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -18039,8 +18307,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -18140,6 +18410,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -18261,8 +18538,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -18364,6 +18643,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -18485,8 +18771,10 @@
 						"melee": false,
 						"mods": {
 							"current": 1,
+							"installedMods": "",
 							"list": "<p>@UUID[Compendium.fallout.weapon_mods.Item.op1VoOjGnziZ2S8V]{Standard Stock}</p>\n<p>@UUID[Compendium.fallout.weapon_mods.Item.RyggZv9PwKChzJwB]{Long}</p>",
-							"max": 7
+							"max": 7,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -18586,6 +18874,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -18707,8 +19002,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -19570,6 +19867,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -19691,8 +19995,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -20171,6 +20477,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -20292,8 +20605,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -20923,6 +21238,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -21044,8 +21366,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -21645,6 +21969,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -21766,8 +22097,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -21869,6 +22202,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -21990,8 +22330,10 @@
 						"melee": false,
 						"mods": {
 							"current": 2,
+							"installedMods": "",
 							"list": "<p>@UUID[Compendium.fallout.weapon_mods.Item.MIMSkUavfShkeY8x]{Long Barrel}</p>\n<p>@UUID[Compendium.fallout.weapon_mods.Item.op1VoOjGnziZ2S8V]{Standard Stock}</p>",
-							"max": 6
+							"max": 6,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -23010,6 +23352,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -23131,8 +23480,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -23767,6 +24118,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -23888,8 +24246,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "medium",
@@ -23989,6 +24349,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 8,
 							"weaponQuality": {
 								"accurate": {
@@ -24110,8 +24477,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -24211,6 +24580,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 11,
 							"weaponQuality": {
 								"accurate": {
@@ -24332,8 +24708,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "long",
@@ -24433,6 +24811,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 6,
 							"weaponQuality": {
 								"accurate": {
@@ -24554,8 +24939,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -25478,6 +25865,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -25599,8 +25993,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",
@@ -25801,6 +26197,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 6,
 							"weaponQuality": {
 								"accurate": {
@@ -25922,8 +26325,10 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 4
+							"max": 4,
+							"modded": false
 						},
 						"quantity": 1,
 						"range": "close",

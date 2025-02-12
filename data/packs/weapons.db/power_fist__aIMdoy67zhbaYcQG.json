@@ -195,12 +195,461 @@
 		"isJunk": false,
 		"melee": false,
 		"mods": {
+			"LANB6wzhO8pIEsxK": {
+				"_id": "LANB6wzhO8pIEsxK",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1738904965961,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "aNsaQUScN2tDCYZ3",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"name": "Puncturing",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"attachable": true,
+					"attached": false,
+					"cost": 45,
+					"crafting": {
+						"complexity": "3",
+						"perks": "Blacksmith 2",
+						"rarity": "uncommon",
+						"skill": "Repair"
+					},
+					"description": "",
+					"favorite": false,
+					"modEffects": {
+						"ammo": "",
+						"ammoPerShot": 0,
+						"damage": {
+							"damageEffect": {
+								"arc": {
+									"rank": 0,
+									"value": 0
+								},
+								"breaking": {
+									"rank": 0,
+									"value": 0
+								},
+								"burst": {
+									"rank": 0,
+									"value": 0
+								},
+								"freeze": {
+									"rank": 0,
+									"value": 0
+								},
+								"persistent": {
+									"rank": 0,
+									"value": 0
+								},
+								"piercing_x": {
+									"rank": 1,
+									"value": 1
+								},
+								"radioactive": {
+									"rank": 0,
+									"value": 0
+								},
+								"spread": {
+									"rank": 0,
+									"value": 0
+								},
+								"stun": {
+									"rank": 0,
+									"value": 0
+								},
+								"tranquilize_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"vicious": {
+									"rank": 0,
+									"value": 0
+								}
+							},
+							"damageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"overrideDamage": "modify",
+							"rating": 2,
+							"weaponQuality": {
+								"accurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"ammo_hungry_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"aquatic": {
+									"rank": 0,
+									"value": 0
+								},
+								"blast": {
+									"rank": 0,
+									"value": 0
+								},
+								"bombard": {
+									"rank": 0,
+									"value": 0
+								},
+								"close_quarters": {
+									"rank": 0,
+									"value": 0
+								},
+								"concealed": {
+									"rank": 0,
+									"value": 0
+								},
+								"debilitating": {
+									"rank": 0,
+									"value": 0
+								},
+								"delay_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"gatling": {
+									"rank": 0,
+									"value": 0
+								},
+								"inaccurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"limited": {
+									"rank": 0,
+									"value": 0
+								},
+								"mine": {
+									"rank": 0,
+									"value": 0
+								},
+								"night_vision": {
+									"rank": 0,
+									"value": 0
+								},
+								"parry": {
+									"rank": 0,
+									"value": 0
+								},
+								"placed": {
+									"rank": 0,
+									"value": 0
+								},
+								"recoil_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"recon": {
+									"rank": 0,
+									"value": 0
+								},
+								"reliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"slow_load": {
+									"rank": 0,
+									"value": 0
+								},
+								"suppressed": {
+									"rank": 0,
+									"value": 0
+								},
+								"surge": {
+									"rank": 0,
+									"value": 0
+								},
+								"thrown": {
+									"rank": 0,
+									"value": 0
+								},
+								"two_handed": {
+									"rank": 0,
+									"value": 0
+								},
+								"unreliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"unstable_radiation": {
+									"rank": 0,
+									"value": 0
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": 0
+								}
+							}
+						},
+						"damageEffect": "",
+						"damageRating": 0,
+						"effect": "",
+						"fireRate": 0,
+						"info": "",
+						"range": 0,
+						"summary": ""
+					},
+					"modType": "melee",
+					"namePrefix": "Puncturing",
+					"qualities": "",
+					"quantity": 1,
+					"rarity": 0,
+					"source": "core_rulebook",
+					"stashed": false,
+					"weaponType": "meleeWeapons",
+					"weight": 1
+				},
+				"type": "weapon_mod"
+			},
+			"MvrQv0wg5FE6j7TR": {
+				"_id": "MvrQv0wg5FE6j7TR",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1739336137511,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "aNsaQUScN2tDCYZ3",
+				"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
+				"name": "Heating Coil",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"attachable": true,
+					"attached": false,
+					"cost": 100,
+					"crafting": {
+						"complexity": "4",
+						"perks": "Blacksmith 3",
+						"rarity": "uncommon",
+						"skill": "Repair"
+					},
+					"description": "",
+					"favorite": false,
+					"modEffects": {
+						"ammo": "",
+						"ammoPerShot": 0,
+						"damage": {
+							"damageEffect": {
+								"arc": {
+									"rank": 0,
+									"value": 0
+								},
+								"breaking": {
+									"rank": 0,
+									"value": 0
+								},
+								"burst": {
+									"rank": 0,
+									"value": 0
+								},
+								"freeze": {
+									"rank": 0,
+									"value": 0
+								},
+								"persistent": {
+									"rank": 0,
+									"value": 0
+								},
+								"piercing_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"radioactive": {
+									"rank": 0,
+									"value": 0
+								},
+								"spread": {
+									"rank": 0,
+									"value": 0
+								},
+								"stun": {
+									"rank": 0,
+									"value": 0
+								},
+								"tranquilize_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"vicious": {
+									"rank": 0,
+									"value": 0
+								}
+							},
+							"damageType": {
+								"energy": true,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"overrideDamage": "modify",
+							"rating": 2,
+							"weaponQuality": {
+								"accurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"ammo_hungry_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"aquatic": {
+									"rank": 0,
+									"value": 0
+								},
+								"blast": {
+									"rank": 0,
+									"value": 0
+								},
+								"bombard": {
+									"rank": 0,
+									"value": 0
+								},
+								"close_quarters": {
+									"rank": 0,
+									"value": 0
+								},
+								"concealed": {
+									"rank": 0,
+									"value": 0
+								},
+								"debilitating": {
+									"rank": 0,
+									"value": 0
+								},
+								"delay_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"gatling": {
+									"rank": 0,
+									"value": 0
+								},
+								"inaccurate": {
+									"rank": 0,
+									"value": 0
+								},
+								"limited": {
+									"rank": 0,
+									"value": 0
+								},
+								"mine": {
+									"rank": 0,
+									"value": 0
+								},
+								"night_vision": {
+									"rank": 0,
+									"value": 0
+								},
+								"parry": {
+									"rank": 0,
+									"value": 0
+								},
+								"placed": {
+									"rank": 0,
+									"value": 0
+								},
+								"recoil_x": {
+									"rank": 0,
+									"value": 0
+								},
+								"recon": {
+									"rank": 0,
+									"value": 0
+								},
+								"reliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"slow_load": {
+									"rank": 0,
+									"value": 0
+								},
+								"suppressed": {
+									"rank": 0,
+									"value": 0
+								},
+								"surge": {
+									"rank": 0,
+									"value": 0
+								},
+								"thrown": {
+									"rank": 0,
+									"value": 0
+								},
+								"two_handed": {
+									"rank": 0,
+									"value": 0
+								},
+								"unreliable": {
+									"rank": 0,
+									"value": 0
+								},
+								"unstable_radiation": {
+									"rank": 0,
+									"value": 0
+								},
+								"wrangle": {
+									"rank": 0,
+									"value": 0
+								}
+							}
+						},
+						"damageEffect": "",
+						"damageRating": 0,
+						"effect": "",
+						"fireRate": 0,
+						"info": "",
+						"range": 0,
+						"summary": ""
+					},
+					"modType": "melee",
+					"namePrefix": "Puncturing",
+					"qualities": "",
+					"quantity": 1,
+					"rarity": 0,
+					"source": "core_rulebook",
+					"stashed": false,
+					"weaponType": "meleeWeapons",
+					"weight": 0
+				},
+				"type": "weapon_mod"
+			},
 			"current": 0,
 			"installedMods": "",
 			"list": "",
 			"max": 0,
 			"modded": false
 		},
+		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",
 		"rarity": 2,
