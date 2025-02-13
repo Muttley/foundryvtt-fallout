@@ -819,7 +819,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 
-		// TODO: for negative use "Reduce range by"
+		
 		if (modEffects.range > 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeIncrease", { range: modEffects.range }));
 		else if (modEffects.range < 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeDecrease", { range: modEffects.range }));
 
