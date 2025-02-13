@@ -809,7 +809,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (modEffects.damage.rating !== 0) {
 
-			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD ${game.i18n.localize("FALLOUT.UI.Damage")}`);
+			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD`);
 			else modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.damageRatingOverride", { rating: modEffects.damage.rating }));
 		}
 
@@ -820,8 +820,8 @@ export default class FalloutItemSheet extends ItemSheet {
 		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 
 		// TODO: for negative use "Reduce range by"
-		if (modEffects.range !== 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.range", { range: modEffects.range }));
-
+		if (modEffects.range > 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeIncrease", { range: modEffects.range }));
+		else if (modEffects.range < 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeDecrease", { range: modEffects.range }));
 
 		// Damage type
 		if (modEffects.damage.damageType.energy
@@ -859,12 +859,16 @@ export default class FalloutItemSheet extends ItemSheet {
 		if (weaponQuality.length > 0) modSummary.push(`${weaponQuality.join(", ")}`);
 
 		// Extra Effects
-		if (modEffects.effect !== "") modSummary.push(await TextEditor.enrichHTML(modEffects.effect, {
-			async: true,
-		}));
+		if (modEffects.effect !== "") modSummary.push(modEffects.effect);
 
-		if (modSummary.length > 1) return modSummary.join(", ");
-		else return modSummary;
+
+		if (modSummary.length > 1) return await TextEditor.enrichHTML(modSummary.join(", "), {
+			async: true,
+		});
+
+		else return await TextEditor.enrichHTML(modSummary, {
+			async: true,
+		});
 	}
 
 	async _deleteChoiceItem(event) {
