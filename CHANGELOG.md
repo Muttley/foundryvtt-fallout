@@ -1,6 +1,7 @@
 # v11.15.0
 
 #### Enhancements
+- [#148] Separate out Fire Rate from Damage for guns
 - [#340] Allow drag/drop of player perks that can be used on NPCs
 - [#483] Add a way to toggle off the auto-calculate for derived stats
 - [#541] Improve perk requirements
@@ -12,6 +13,7 @@
 
 #### Chores
 - [#564] Merge new Spanish translation updates from Crowdin
+- [#572] Merge new French and Portuguese/Brazilian translation updates from Crowdin
 
 ---
 
