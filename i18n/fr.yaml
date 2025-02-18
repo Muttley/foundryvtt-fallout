@@ -158,7 +158,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dég
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} a résisté aux dégâts de radiations de {baseRadDamage} en consommant Eau Sale"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} subit {radsTaken} dégâts de radiations en consommant Eau Sale"
-FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} reads a magazine entitled \"{itemName}\""
+FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} lit un magazine intitulé \"{itemName}\""
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
 FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Recycleur
@@ -219,7 +219,7 @@ FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.Item.Perk.isCompanion: Is a Companion
-FALLOUT.Item.Perk.level: Level
+FALLOUT.Item.Perk.level: Niveau
 FALLOUT.Item.Perk.Magazine.label: Magazines
 FALLOUT.Item.Perk.Magazine.prompt: Select Magazine...
 FALLOUT.Item.Perk.notGhoul: Not a Ghoul
@@ -239,7 +239,7 @@ FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
-FALLOUT.LevelUp.AppTitle: Level Up
+FALLOUT.LevelUp.AppTitle: Niveau supérieur
 FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
 FALLOUT.LOCATION_CATEGORY.commercial: Commerciale
 FALLOUT.LOCATION_CATEGORY.custom: Personnalisée
