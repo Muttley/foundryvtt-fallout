@@ -1,16 +1,33 @@
 <div class="tab attributes" data-group="primary" data-tab="attributes">
+
+	{{#if isGM}}
+	<div class="flexrow resource-row">
+		<label class="field-label"
+			   for="system.quantityRoll">
+			{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
+			<a class="quantity-roll">
+				<i class="fa-solid fa-dice"></i>
+			</a>
+		</label>
+
+		<input data-dtype="String"
+			   name="system.quantityRoll"
+			   style="margin-left: 8px;"
+			   type="text"
+			   value="{{system.quantityRoll}}" />
+	</div>
+	{{/if}}
+
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.actor.inventory.materials.junk"}}
 		</label>
 
-		<input
-			class="input-checkbox"
-			data-dtype="Boolean"
-			name="system.isJunk"
-			type="checkbox"
-			{{checked system.isJunk}}
-		/>
+		<input class="input-checkbox"
+			   data-dtype="Boolean"
+			   name="system.isJunk"
+			   type="checkbox"
+			   {{checked system.isJunk}} />
 	</div>
 
 	<div class="resource-row">
@@ -19,7 +36,8 @@
 		</h3>
 
 		<div class="description-field">
-			{{editor effectHTML
+			{{
+editor effectHTML
 				button=true
 				editable=editable
 				owner=owner
