@@ -1531,6 +1531,7 @@ export default class FalloutActor extends Actor {
 							itemName: item.name,
 						}
 					),
+					effect: item.system.effect,
 					showHungerAndThirst: ["beverage", "food"].includes(consumableType),
 					hunger: this.system.conditions.hunger,
 					thirst: this.system.conditions.thirst,
