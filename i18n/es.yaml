@@ -625,7 +625,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Esta arma nunca fue diseñada
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Si un ataque con un arma de Lazo tiene éxito, puedes gastar 2 PA para mover al objetivo a una zona superior. En los turnos siguientes, tanto tú como el objetivo podéis intentar una prueba opuesta de FUE o AGI + Atletismo para mover al personaje que está al otro extremo del lazo o liberarse.
 FALLOUT.UI.Add: Añadir
 FALLOUT.UI.Addictions: Adicciones
-FALLOUT.UI.APPAREL_MODS: Modos de ropa
+FALLOUT.UI.APPAREL_MODS: Mods de ropa
 FALLOUT.UI.AreYouSure: '¿Estás seguro?'
 FALLOUT.UI.BaseDamage: Daño base
 FALLOUT.UI.BOOKS_AND_MAGZS: Libros y Revistas
@@ -776,7 +776,7 @@ TYPES.Actor.settlement: Asentamiento
 TYPES.Actor.vehicle: Vehículo
 TYPES.Item.addiction: Adicción
 TYPES.Item.ammo: Munición
-TYPES.Item.apparel_mod: Modos de ropa
+TYPES.Item.apparel_mod: Mods de ropa
 TYPES.Item.apparel: Ropa
 TYPES.Item.books_and_magz: Libro/Revista
 TYPES.Item.consumable: Consumible
