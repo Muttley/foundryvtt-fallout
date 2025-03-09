@@ -1,6 +1,7 @@
 # v11.15.0
 
 #### Bugs
+- [#577] Fixed a bug with the consumed action chat card title
 - [#580] Poison bonus resistance doesn't get displayed in body location elements
 - [#581] Immunity/Infinity symbol overflows input element in resistance bonuses section of character sheet
 
@@ -14,10 +15,12 @@
 	* New control added to magazine items in the inventory to "read" a magazine.  This automatically rolls and extends the uses remaining if needed for characters with the Comprehension perk.
 
 - [#569] Improve handling of Mods
+- [#576] When a consumable is used, display any effect it causes on the resultant chat message
 
 #### Chores
 - [#564] Merge new Spanish translation updates from Crowdin
 - [#572] Merge new French and Portuguese/Brazilian translation updates from Crowdin
+- [#575] Merge new French, Portuguese/Brazilian, and Spanish translation updates from Crowdin
 
 ---
 
