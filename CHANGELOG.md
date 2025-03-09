@@ -1,5 +1,8 @@
 # v11.15.0
 
+#### Bugs
+- [#580] Poison bonus resistance doesn't get displayed in body location elements
+
 #### Enhancements
 - [#148] Separate out Fire Rate from Damage for guns
 - [#340] Allow drag/drop of player perks that can be used on NPCs

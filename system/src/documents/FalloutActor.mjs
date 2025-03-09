@@ -361,6 +361,11 @@ export default class FalloutActor extends Actor {
 
 		// ! SET BODY PARTS TO OUTFIT ADD CHARACTER BONUSES
 		for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
+			// Armor can't provide poison resistance, so this should always be
+			// set to the base character resistance
+			//
+			bodyPart.resistance.poison = parseInt(this.system.resistance.poison);
+
 			if (outfittedLocations[k]) {
 				bodyPart.resistance.physical =
 					parseInt(outfittedLocations[k].system.resistance.physical)
