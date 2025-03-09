@@ -2,6 +2,7 @@
 
 #### Bugs
 - [#580] Poison bonus resistance doesn't get displayed in body location elements
+- [#581] Immunity/Infinity symbol overflows input element in resistance bonuses section of character sheet
 
 #### Enhancements
 - [#148] Separate out Fire Rate from Damage for guns
