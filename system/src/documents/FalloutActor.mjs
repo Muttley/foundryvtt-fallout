@@ -1528,7 +1528,7 @@ export default class FalloutActor extends Actor {
 				this,
 				{
 					title: game.i18n.localize(
-						"FALLOUT.CHAT_MESSAGE.readMagazine.title"
+						`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
 					),
 					body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
 						{
