@@ -193,7 +193,7 @@ FALLOUT.ERRORS.NoUsableCharacterFound: Nenhum personagem usável encontrado para
 FALLOUT.ERRORS.ThisWeaponIsBroken: Esta arma está quebrada e não pode mais ser usada.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o Atributo usado nessa arma.
 FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
-FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem: Unable to locate compendium version of {itemType} named "{name}"
+FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem: Não foi possível localizar a versão do compêndio de {itemType} chamada "{name}"
 FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Artibuto e/ou Habilidade de Criatura especificada.
 FALLOUT.FOOD: Comida
 FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode especificar as Tabelas para serem usadas para cada categoria de resultado de pilhagem.
@@ -309,7 +309,7 @@ FALLOUT.SEARCHED_DEGREE.heavily_searched: Pesadamente Vasculhado (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Majoritariamente Vasculhado (D2)
 FALLOUT.SEARCHED_DEGREE.partly_searched: Parcialmente Vasculhado (D1)
 FALLOUT.SEARCHED_DEGREE.untouched: Intocado (D0)
-FALLOUT.SETTINGS.sourceFilters.hint: Somente livros fonte inclusos nessa lista estarão disponíveis para seleção em lugares relevantes. Itens sem livro fonte estarão sempre disponíveis.
+FALLOUT.SETTINGS.sourceFilters.hint: Se preenchido, apenas as fontes de livros incluídas nesta lista estarão disponíveis para seleção em locais relevantes. Itens sem fonte de livro definida sempre estarão disponíveis.
 FALLOUT.SETTINGS.sourceFilters.title: Filtros de Livros Fonte
 FALLOUT.SETTLEMENT_ACTION.Build: Construir
 FALLOUT.SETTLEMENT_ACTION.Business: Negócios
@@ -595,6 +595,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: O veículo é poderoso e bem a
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Os testes de operação para reparar veículos Robustos têm a dificuldade reduzida em 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Um veículo de assento único é projetado para ser operado por um único piloto, que também assume a função de artilheiro, sem a penalidade normal.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: O veículo viaja somente na água e não pode viajar pelo chão. Se este veículo sofrer um golpe crítico no Chassi, água começará a entrar nele e afundará após um número de rodadas igual ao dobro da Escala do veículo.
+FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Não consumirá munição extra.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você realizar a Ação Menor de Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 @fos[DC] por PA gasto ao dano do ataque. Se você adicionar dano dessa maneira, você não pode gastar munição para adicionar mais dano. Uma arma não pode ser Precisa e Imprecisa.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: A arma consome munição a uma taxa muito maior do que outras armas. Cada vez que a arma é disparada, ela gasta X munição, em vez de 1. Além disso, dano extra requer gastar X munição por +1CD, com um número máximo de CD igual à Cadência de Tiro da arma. Usos adicionais de munição, como o efeito de dano Rajada, também gastam X munição para cada 1 munição que normalmente seria gasta.
 FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Quando você faz um ataque com esta arma enquanto estiver debaixo d'água, o ataque não sofre as penalidades normais de ataques subaquáticos.
