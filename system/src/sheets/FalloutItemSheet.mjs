@@ -185,7 +185,8 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		let availablePieces = foundry.utils.duplicate(
 			this.item.actor.items.filter(
-				i => i.system.apparelType === "powerArmor"
+				i => i.type === "apparel"
+					&& i.system.apparelType === "powerArmor"
 					&& (i.system.powerArmor.frameId === ""
 						|| i.system.powerArmor.frameId === this.item._id
 					)
