@@ -476,7 +476,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		if (item.type === "apparel" && item.system.powerArmor.isFrame) {
 			const attachedItems = this.actor.items.filter(
 				i => i.type === "apparel"
-						&& i.system.powerArmor.frameId === itemId
+						&& i.system.powerArmor.frameId === item.id
 			);
 
 			const updateData = [];

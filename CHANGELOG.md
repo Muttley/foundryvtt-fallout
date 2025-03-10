@@ -4,6 +4,8 @@
 - [#577] Fixed a bug with the consumed action chat card title
 - [#580] Poison bonus resistance doesn't get displayed in body location elements
 - [#581] Immunity/Infinity symbol overflows input element in resistance bonuses section of character sheet
+- [#584] Unable to delete Power Armor Frame from character sheet
+- [#585] Should not try to expand details of power armor pieces within power armor frame attachment item tab
 
 #### Enhancements
 - [#148] Separate out Fire Rate from Damage for guns
