@@ -986,7 +986,7 @@ export default class FalloutItemSheet extends ItemSheet {
 	}
 
 	async _rollQuantity(event) {
-		if (!["ammo", "consumable", "miscellany","weapon"].includes(this.item.type)) return;
+		if (!["ammo", "consumable", "miscellany", "weapon"].includes(this.item.type)) return;
 
 		event.preventDefault();
 
