@@ -1,18 +1,36 @@
 <div class="tab attributes" data-group="primary" data-tab="attributes">
 
+	{{#if isGM}}
+	<div class="flexrow resource-row">
+		<label class="field-label"
+			   for="system.quantityRoll">
+			{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
+			<a class="quantity-roll">
+				<i class="fa-solid fa-dice"></i>
+			</a>
+		</label>
+
+		<input data-dtype="String"
+			   name="system.quantityRoll"
+			   style="margin-left: 8px;"
+			   type="text"
+			   value="{{system.quantityRoll}}" />
+	</div>
+	{{/if}}
+
 	<div class="flexrow resource-row">
 		<label class="field-label" for="system.consumableType">
 			{{localize "FALLOUT.TEMPLATES.Consumable_Type"}}
 		</label>
 
 		{{#select system.consumableType}}
-			<select name="system.consumableType">
-				{{#each FALLOUT.CONSUMABLE_TYPES as |type key|}}
-					<option value="{{key}}">
-						{{localize type}}
-					</option>
-				{{/each}}
-			</select>
+		<select name="system.consumableType">
+			{{#each FALLOUT.CONSUMABLE_TYPES as |type key|}}
+			<option value="{{key}}">
+				{{localize type}}
+			</option>
+			{{/each}}
+		</select>
 		{{/select}}
 	</div>
 
@@ -21,11 +39,9 @@
 			{{localize "FALLOUT.TEMPLATES.Consumable_Group"}}
 		</label>
 
-		<input
-			name="system.consumableGroup"
-			type="text"
-			value="{{system.consumableGroup}}"
-		>
+		<input name="system.consumableGroup"
+			   type="text"
+			   value="{{system.consumableGroup}}">
 	</div>
 
 	{{> item/consumable/type/beverage}}
@@ -38,7 +54,8 @@
 			{{localize "FALLOUT.TEMPLATES.Effect"}}
 		</h3>
 		<div class="description-field">
-			{{editor effectHTML
+			{{
+editor effectHTML
 				button=true
 				editable=editable
 				owner=owner

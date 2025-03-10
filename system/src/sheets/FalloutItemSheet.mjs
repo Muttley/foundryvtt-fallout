@@ -466,7 +466,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		// Everything below here is only needed if the sheet is editable
 		if (!this.isEditable) return;
 
-		html.find(".ammo-quantity-roll").click(this._rollAmmoQuantity.bind(this));
+		html.find(".quantity-roll").click(this._rollQuantity.bind(this));
 
 		// Effects.
 		html.find(".effect-control").click(ev => {
@@ -985,34 +985,34 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 	}
 
-	async _rollAmmoQuantity(event) {
-		if (this.item.type !== "ammo") return;
+	async _rollQuantity(event) {
+		if (!["ammo", "consumable", "miscellany","weapon"].includes(this.item.type)) return;
 
 		event.preventDefault();
 
 		if (this.item.system.quantityRoll === "") {
-			return ui.notifications.warn(`No roll formula set on Ammo item ${this.item.name}`);
+			return ui.notifications.warn(`No roll formula set on item ${this.item.name}`);
 		}
 
 
 		const content = await renderTemplate(
-			"systems/fallout/templates/dialogs/roll-ammo.hbs"
+			"systems/fallout/templates/dialogs/roll-quantity.hbs"
 		);
 
 		const dialogData = {
-			title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
+			title: game.i18n.localize("FALLOUT.dialog.roll_quantity.title"),
 			content,
 			buttons: {
 				create: {
-					label: game.i18n.localize("FALLOUT.dialog.roll_ammo.button.create"),
+					label: game.i18n.localize("FALLOUT.dialog.roll_quantity.button.create"),
 					callback: () => "create",
 				},
 				update: {
-					label: game.i18n.localize("FALLOUT.dialog.roll_ammo.button.update"),
+					label: game.i18n.localize("FALLOUT.dialog.roll_quantity.button.update"),
 					callback: () => "update",
 				},
 				chat: {
-					label: game.i18n.localize("FALLOUT.dialog.roll_ammo.button.chat"),
+					label: game.i18n.localize("FALLOUT.dialog.roll_quantity.button.chat"),
 					callback: () => "chat",
 				},
 			},
@@ -1022,7 +1022,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		const mode = await Dialog.wait(dialogData);
 
-		if (mode) await this.item.rollAmmoQuantity(mode);
+		if (mode) await this.item.rollQuantity(mode);
 	}
 
 }
