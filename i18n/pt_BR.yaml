@@ -173,14 +173,14 @@ FALLOUT.CREATURE.guns: Armas
 FALLOUT.CREATURE.melee: Corpo-a-Corpo
 FALLOUT.CREATURE.mind: Mente
 FALLOUT.CREATURE.other: Outro
-FALLOUT.dialog.roll_ammo.button.chat: Enviar à Conversa
-FALLOUT.dialog.roll_ammo.button.create: Criar Novo
-FALLOUT.dialog.roll_ammo.button.update: Atualizar Item
-FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: Isso vai postar a rolagem de munição na conversa como uma mensagem.
-FALLOUT.dialog.roll_ammo.create.details: Isso vai criar um novo item de Munição com a quantidade rolada. Se um Ator possui o Item pelo qual está rolando, o nvo item será criado no inventário desse Ator.
-FALLOUT.dialog.roll_ammo.title: Rolar Munição
-FALLOUT.dialog.roll_ammo.update.details: Isso vai atualizar esse item de Munição com uma quantidade nova.
+FALLOUT.dialog.roll_quantity.button.chat: Send to Chat
+FALLOUT.dialog.roll_quantity.button.create: Create New
+FALLOUT.dialog.roll_quantity.button.update: Update Item
+FALLOUT.dialog.roll_quantity.chat.body: "{itemName} x {quantity}"
+FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll result as a chat message.
+FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_quantity.title: Roll Quantity
+FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
 FALLOUT.EffectCreate: Criar Efeito
 FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
