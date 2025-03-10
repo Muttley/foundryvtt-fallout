@@ -9,7 +9,9 @@
 
 #### Enhancements
 - [#148] Separate out Fire Rate from Damage for guns
+- [#253] Support butchery items that have roll formula instead of just a fixed quantity
 - [#340] Allow drag/drop of player perks that can be used on NPCs
+- [#479] Add Quantity Roll field to more item types
 - [#483] Add a way to toggle off the auto-calculate for derived stats
 - [#541] Improve perk requirements
 - [#559] Improvements to Books and Magazines
@@ -23,6 +25,7 @@
 - [#564] Merge new Spanish translation updates from Crowdin
 - [#572] Merge new French and Portuguese/Brazilian translation updates from Crowdin
 - [#575] Merge new French, Portuguese/Brazilian, and Spanish translation updates from Crowdin
+- [#582] Merge new French updates from Crowdin
 
 ---
 
