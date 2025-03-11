@@ -780,10 +780,11 @@ export default class FalloutItemSheet extends ItemSheet {
 		let li = $(event.currentTarget).parents(".weapon_mod");
 		let mod = this.item.system.mods[li.data("itemId")];
 
+		if (mod.system.modEffects.effect === "") return;
+
 		const html = await renderTemplate("systems/fallout/templates/item/weapon/_partials/mod-desc.hbs", {
-			mod: mod,
+			// mod: mod,
 			modExtraEffect: mod.system.modEffects.effect,
-			crafting: mod.system.crafting,
 		});
 
 		// Toggle summary
@@ -819,7 +820,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 
-		
+
 		if (modEffects.range > 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeIncrease", { range: modEffects.range }));
 		else if (modEffects.range < 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeDecrease", { range: modEffects.range }));
 
@@ -847,7 +848,6 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		if (damageEffects.length > 0) modSummary.push(`${damageEffects.join(", ")}`);
 
-		// CONFIG.FALLOUT.DAMAGE_EFFECTS[key]
 
 		// Weapon Qualities
 		let weaponQuality = [];
@@ -860,7 +860,6 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// Extra Effects
 		if (modEffects.effect !== "") modSummary.push(modEffects.effect);
-
 
 		if (modSummary.length > 1) return await TextEditor.enrichHTML(modSummary.join(", "), {
 			async: true,

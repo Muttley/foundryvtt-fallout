@@ -1466,12 +1466,6 @@
 			"weaponType": ""
 		},
 		"weapon_mod": {
-			"crafting": {
-				"complexity": "",
-				"perks": "",
-				"rarity": "",
-				"skill": ""
-			},
 			"modEffects": {
 				"ammo": "",
 				"ammoPerShot": 0,
@@ -1649,6 +1643,7 @@
 			},
 			"modType": "",
 			"namePrefix": "",
+			"perks": "",
 			"templates": [
 				"base",
 				"attachable",

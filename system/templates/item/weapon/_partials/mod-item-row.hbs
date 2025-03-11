@@ -11,8 +11,11 @@
 				{{item.name}}
 			</h4>
 		</div>
-		<div class="item-info" style="flex: 1 1 auto;">
+		<div class="item-info" style="flex: 0 0 40%;">
 			<span>{{{item.system.modEffects.summary}}}</span>
+		</div>
+		<div class="item-info" style="flex: 1 1 auto;">
+			<span>{{{item.system.perks}}}</span>
 		</div>
 		<div class=" item-controls" style="flex: 1 0 5%;">
 			<a {{#if item.system.attached}}
