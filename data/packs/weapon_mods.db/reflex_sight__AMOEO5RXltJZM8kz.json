@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 169,
-		"crafting": {
-			"complexity": "7",
-			"perks": "Science! 4",
-			"rarity": "uncommon",
-			"skill": "Science"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "sight",
 		"namePrefix": "Tactical",
+		"perks": "Science! 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

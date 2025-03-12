@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 28,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Gun Nut 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Long",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 59,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Gun Nut 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "fuel",
 					"namePrefix": "Napalmer",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -675,12 +665,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 22,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Gun Nut 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -862,6 +846,7 @@
 					},
 					"modType": "nozzle",
 					"namePrefix": "Compressed",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -899,12 +884,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 28,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Gun Nut 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1086,6 +1065,7 @@
 					},
 					"modType": "propellantTank",
 					"namePrefix": "High Capacity",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1123,12 +1103,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 47,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Gun Nut 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1310,6 +1284,7 @@
 					},
 					"modType": "nozzle",
 					"namePrefix": "Vaporizing",
+					"perks": "Gun Nut 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1347,12 +1322,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 34,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Gun Nut 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1534,6 +1503,7 @@
 					},
 					"modType": "propellantTank",
 					"namePrefix": "Max. Capactiy",
+					"perks": "Gun Nut 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

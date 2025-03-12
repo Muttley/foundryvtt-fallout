@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 19,
-		"crafting": {
-			"complexity": "6",
-			"perks": "Science! 3",
-			"rarity": "uncommon",
-			"skill": "Science"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "capacitor",
 		"namePrefix": "Excited",
+		"perks": "Science! 3",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

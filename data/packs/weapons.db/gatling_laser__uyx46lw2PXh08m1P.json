@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 132,
-					"crafting": {
-						"complexity": "6",
-						"perks": "Science! 3",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Agitated",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 169,
-					"crafting": {
-						"complexity": "7",
-						"perks": "Science! 4",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Tactical",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -670,12 +660,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 22,
-					"crafting": {
-						"complexity": "4",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -857,6 +841,7 @@
 					},
 					"modType": "nozzle",
 					"namePrefix": "Focused",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -894,12 +879,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 94,
-					"crafting": {
-						"complexity": "4",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1081,6 +1060,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Boosted",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1118,12 +1098,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 357,
-					"crafting": {
-						"complexity": "7",
-						"perks": "Science! 4",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1305,6 +1279,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Charging",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1346,12 +1321,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 19,
-					"crafting": {
-						"complexity": "6",
-						"perks": "Science! 3",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1533,6 +1502,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Excited",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1571,12 +1541,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 57,
-					"crafting": {
-						"complexity": "4",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1758,6 +1722,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Incendiary",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

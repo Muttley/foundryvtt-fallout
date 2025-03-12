@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 30,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Blacksmith 2, Science! 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Stun",
+					"perks": "Blacksmith 2, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -451,12 +446,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 30,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Blacksmith 2, Science! 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -638,6 +627,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Shock",
+					"perks": "Blacksmith 2, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 75,
-					"crafting": {
-						"complexity": "6",
-						"perks": "Gun Nut 4",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "High-Powered",
+					"perks": "Gun Nut 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 68,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Tactical",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -670,12 +660,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 5,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Gun Nut 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -857,6 +841,7 @@
 					},
 					"modType": "muzzle",
 					"namePrefix": "Bayoneted Shredding",
+					"perks": "Gun Nut 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -894,12 +879,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 45,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Gun Nut 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1081,6 +1060,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "High-Speed",
+					"perks": "Gun Nut 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

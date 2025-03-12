@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 26,
-		"crafting": {
-			"complexity": "4",
-			"perks": "Science! 1",
-			"rarity": "uncommon",
-			"skill": "Science"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "Improved",
+		"perks": "Science! 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

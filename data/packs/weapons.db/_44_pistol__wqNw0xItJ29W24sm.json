@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 25,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Gun Nut 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "receiver",
 					"namePrefix": "Powerful",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -447,12 +442,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 59,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Science! 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -634,6 +623,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Recon",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -671,12 +661,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 6,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -858,6 +842,7 @@
 					},
 					"modType": "grip",
 					"namePrefix": "Comfort",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -895,12 +880,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 0,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1082,6 +1061,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Snubnosed",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1119,12 +1099,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 11,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1306,6 +1280,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Scoped",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1343,12 +1318,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 10,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Gun Nut 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1530,6 +1499,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Bull Barrel",
+					"perks": "Gun Nut 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1572,12 +1542,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 35,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Gun Nut 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1759,6 +1723,7 @@
 					},
 					"modType": "receiver",
 					"namePrefix": "Advanced",
+					"perks": "Gun Nut 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1796,12 +1761,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 14,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1983,6 +1942,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Tactical",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -2020,12 +1980,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 20,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -2207,6 +2161,7 @@
 					},
 					"modType": "receiver",
 					"namePrefix": "Hardened",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

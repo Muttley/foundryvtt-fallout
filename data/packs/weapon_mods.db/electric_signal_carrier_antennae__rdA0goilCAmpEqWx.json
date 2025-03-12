@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 30,
-		"crafting": {
-			"complexity": "6",
-			"perks": "Science! 4",
-			"rarity": "uncommon",
-			"skill": "Science"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -200,6 +194,7 @@
 		},
 		"modType": "muzzle",
 		"namePrefix": "Electrified",
+		"perks": "Science! 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

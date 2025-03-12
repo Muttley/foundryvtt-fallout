@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 23,
-		"crafting": {
-			"complexity": "5",
-			"perks": "Gun Nut 2",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "magazine",
 		"namePrefix": "Quick High Capacity",
+		"perks": "Gun Nut 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

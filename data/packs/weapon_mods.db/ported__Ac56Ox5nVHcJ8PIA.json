@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 35,
-		"crafting": {
-			"complexity": "6",
-			"perks": "Gun Nut 4",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "Ported",
+		"perks": "Gun Nut 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

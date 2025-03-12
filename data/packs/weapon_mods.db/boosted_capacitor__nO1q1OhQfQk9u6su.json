@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 94,
-		"crafting": {
-			"complexity": "2",
-			"perks": "",
-			"rarity": "common",
-			"skill": "Science"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "capacitor",
 		"namePrefix": "Boosted",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

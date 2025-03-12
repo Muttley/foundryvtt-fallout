@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 35,
-		"crafting": {
-			"complexity": "4",
-			"perks": "Science! 2",
-			"rarity": "uncommon",
-			"skill": "Science"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "capacitor",
 		"namePrefix": "Agitated",
+		"perks": "Science! 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

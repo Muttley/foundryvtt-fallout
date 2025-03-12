@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 45,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Blacksmith 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 100,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Blacksmith 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
+					"perks": "Blacksmith 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

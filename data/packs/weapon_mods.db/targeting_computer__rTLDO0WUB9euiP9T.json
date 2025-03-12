@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 293,
-		"crafting": {
-			"complexity": "6",
-			"perks": "Gun Nut 2; Science! 2",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "sight",
 		"namePrefix": "Targeting",
+		"perks": "Gun Nut 2; Science! 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 9,
-					"crafting": {
-						"complexity": "2",
-						"perks": "Blacksmith 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -447,12 +442,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 6,
-					"crafting": {
-						"complexity": "1",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -634,6 +623,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Spiked",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -675,12 +665,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 10,
-					"crafting": {
-						"complexity": "2",
-						"perks": "Blacksmith 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -862,6 +846,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Bladed",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 15,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Curved",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 25,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Blacksmith 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Extended",
+					"perks": "Blacksmith 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

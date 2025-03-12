@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 47,
-		"crafting": {
-			"complexity": "4",
-			"perks": "Gun Nut 2",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "nozzle",
 		"namePrefix": "Vaporizing",
+		"perks": "Gun Nut 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

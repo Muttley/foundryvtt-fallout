@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 3,
-					"crafting": {
-						"complexity": "1",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Sharp",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -448,12 +443,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 3,
-					"crafting": {
-						"complexity": "1",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -635,6 +624,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Barbed",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

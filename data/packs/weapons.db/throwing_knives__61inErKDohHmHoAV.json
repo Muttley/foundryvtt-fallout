@@ -201,6 +201,7 @@
 			"max": 0,
 			"modded": false
 		},
+		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",
 		"rarity": 1,

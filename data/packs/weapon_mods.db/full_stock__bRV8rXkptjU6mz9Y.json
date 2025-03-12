@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 10,
-		"crafting": {
-			"complexity": "2",
-			"perks": "",
-			"rarity": "common",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "stock",
 		"namePrefix": "",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

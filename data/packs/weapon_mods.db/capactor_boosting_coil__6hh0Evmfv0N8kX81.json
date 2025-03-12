@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 82,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 4; Science! 3",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "capacitor",
 		"namePrefix": "Maximum Capacity",
+		"perks": "Gun Nut 4; Science! 3",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

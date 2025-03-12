@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 59,
-		"crafting": {
-			"complexity": "3",
-			"perks": "Gun Nut 1",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "fuel",
 		"namePrefix": "Napalmer",
+		"perks": "Gun Nut 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

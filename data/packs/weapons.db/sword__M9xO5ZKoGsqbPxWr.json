@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 100,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Blacksmith 3, Science! 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Stunning",
+					"perks": "Blacksmith 3, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 75,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Blacksmith 3, Science! 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Electrified Serrated",
+					"perks": "Blacksmith 3, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -675,12 +665,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 50,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Blacksmith 2, Science! 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -862,6 +846,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Electrified",
+					"perks": "Blacksmith 2, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -899,12 +884,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 25,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Blacksmith 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1086,6 +1065,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Serrated",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 12,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Blacksmith 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Bladed",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 7,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Spiked",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -670,12 +660,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 5,
-					"crafting": {
-						"complexity": "1",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -857,6 +841,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Barbed",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -895,12 +880,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 7,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1082,6 +1061,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Sharp",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1123,12 +1103,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 10,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Blacksmith 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1310,6 +1284,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Chain-Wrapped",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

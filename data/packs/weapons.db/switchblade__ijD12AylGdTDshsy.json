@@ -227,12 +227,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 0,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Blacksmith 1",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -414,6 +408,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Serrated",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

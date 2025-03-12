@@ -222,12 +222,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 15,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 1",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -409,6 +403,7 @@
 					},
 					"modType": "muzzle",
 					"namePrefix": "Scattered",
+					"perks": "Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -446,12 +441,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 20,
-					"crafting": {
-						"complexity": "3",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -633,6 +622,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Long",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -670,12 +660,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 25,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 1",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -857,6 +841,7 @@
 					},
 					"modType": "muzzle",
 					"namePrefix": "Targetting",
+					"perks": "Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -894,12 +879,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 26,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 1",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1081,6 +1060,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Improved",
+					"perks": "Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1118,12 +1098,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 29,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1305,6 +1279,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Scoped",
+					"perks": "Science! 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1342,12 +1317,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 35,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 2",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1529,6 +1498,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Agitated",
+					"perks": "Science! 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1567,12 +1537,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 59,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Science! 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1754,6 +1718,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Recon",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1791,12 +1756,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 11,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -1978,6 +1937,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Scoped",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -2015,12 +1975,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 30,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -2202,6 +2156,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Incendiary",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -2239,12 +2194,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 30,
-					"crafting": {
-						"complexity": "3",
-						"perks": "Science! 1",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -2426,6 +2375,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Excited",
+					"perks": "Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -2467,12 +2417,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 20,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 1",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -2654,6 +2598,7 @@
 					},
 					"modType": "muzzle",
 					"namePrefix": "Focused",
+					"perks": "Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -2691,12 +2636,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 50,
-					"crafting": {
-						"complexity": "5",
-						"perks": "Science! 3",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -2878,6 +2817,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Night Vision",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -2916,12 +2856,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 94,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -3103,6 +3037,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Boosted",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -3140,12 +3075,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 15,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -3327,6 +3256,7 @@
 					},
 					"modType": "stock",
 					"namePrefix": "",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -3364,12 +3294,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 14,
-					"crafting": {
-						"complexity": "2",
-						"perks": "",
-						"rarity": "common",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -3551,6 +3475,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Tactical",
+					"perks": "",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -3588,12 +3513,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 38,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 2",
-						"rarity": "uncommon",
-						"skill": "Repair"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -3775,6 +3694,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Night Vision",
+					"perks": "Science! 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -3812,12 +3732,6 @@
 					"attachable": true,
 					"attached": false,
 					"cost": 24,
-					"crafting": {
-						"complexity": "4",
-						"perks": "Science! 1",
-						"rarity": "uncommon",
-						"skill": "Science"
-					},
 					"description": "",
 					"favorite": false,
 					"modEffects": {
@@ -3999,6 +3913,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Automatic",
+					"perks": "Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

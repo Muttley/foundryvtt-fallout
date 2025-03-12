@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 10,
-		"crafting": {
-			"complexity": "5",
-			"perks": "Gun Nut 3",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "Bull Barrel",
+		"perks": "Gun Nut 3",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

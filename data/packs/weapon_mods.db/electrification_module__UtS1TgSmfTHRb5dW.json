@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 70,
-		"crafting": {
-			"complexity": "6",
-			"perks": "Gun Nut 2; Science! 1",
-			"rarity": "uncommon",
-			"skill": "Repair"
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -200,6 +194,7 @@
 		},
 		"modType": "muzzle",
 		"namePrefix": "Electrified",
+		"perks": "Gun Nut 2; Science! 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
