@@ -1,4 +1,23 @@
 <div class="tab attributes" data-group="primary" data-tab="attributes">
+
+	{{#if isGM}}
+		<div class="flexrow resource-row">
+			<label class="field-label" for="system.quantityRoll">
+				{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
+				<a class="quantity-roll">
+					<i class="fa-solid fa-dice"></i>
+				</a>
+			</label>
+
+			<input
+				data-dtype="String"
+				name="system.quantityRoll"
+				type="text"
+				value="{{system.quantityRoll}}"
+			/>
+		</div>
+	{{/if}}
+
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.actor.inventory.materials.junk"}}

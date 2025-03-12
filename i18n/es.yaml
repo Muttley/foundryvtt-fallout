@@ -173,14 +173,14 @@ FALLOUT.CREATURE.guns: Armas
 FALLOUT.CREATURE.melee: Cuerpo a Cuerpo
 FALLOUT.CREATURE.mind: Mente
 FALLOUT.CREATURE.other: Otro
-FALLOUT.dialog.roll_ammo.button.chat: Enviar al chat
-FALLOUT.dialog.roll_ammo.button.create: Crear nuevo/a
-FALLOUT.dialog.roll_ammo.button.update: Actualizar objeto
-FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: Esto mostrará la tirada de munición como un mensaje en el chat.
-FALLOUT.dialog.roll_ammo.create.details: Esto creará un nuevo objeto de munición con la cantidad obtenida. Si el objeto del que estás tirando es propiedad de un Actor, el nuevo objeto será creará en el inventario del Actor.
-FALLOUT.dialog.roll_ammo.title: Tirada de munición
-FALLOUT.dialog.roll_ammo.update.details: Esto actualizará este elemento de munición con la cantidad de una tirada de munición nueva.
+FALLOUT.dialog.roll_quantity.button.chat: Send to Chat
+FALLOUT.dialog.roll_quantity.button.create: Create New
+FALLOUT.dialog.roll_quantity.button.update: Update Item
+FALLOUT.dialog.roll_quantity.chat.body: "{itemName} x {quantity}"
+FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll result as a chat message.
+FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_quantity.title: Roll Quantity
+FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
 FALLOUT.EffectCreate: Crear efecto
 FALLOUT.EffectDelete: Borrar efecto
 FALLOUT.EffectEdit: Editar efecto
@@ -595,6 +595,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: El vehículo es potente y est�
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Las pruebas para reparar vehículos robustos reducen su dificultad en 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Un vehículo monoplaza está diseñado para ser conducido por un solo piloto que también asume el papel de artillero sin la penalización normal.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: El vehículo solo se desplaza sobre el agua y no puede desplazarse por el suelo. Si este vehículo sufre un impacto crítico en el chasis, comienza a llenarse de agua y se hundirá después de una cantidad de rondas igual al doble de la escala del vehículo.
+FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Will not consume extra ammo.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si realizas la acción menor Apuntar antes de atacar con un arma precisa, puedes gastar hasta 3 PA para agregar +1 @fos[DC] por PA gastado al daño del ataque. Si obtienes daño de esta manera, no puedes gastar munición para causar daño adicional. Un arma no puede ser precisa e imprecisa al mismo tiempo.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: El arma consume munición a un ritmo mucho mayor que otras armas. Cada vez que se dispara, gasta X munición en lugar de 1. Además, el daño adicional requiere gastar X munición por cada +1CD, con un número máximo de CD igual a la Cadencia de fuego del arma. Los usos adicionales de munición, como el efecto de daño por Ráfaga, también gastan X munición por cada 1 munición que se gastaría normalmente.
 FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Cuando realizas un ataque con esta arma mientras estás bajo el agua, el ataque no sufre las penalizaciones normales de los ataques bajo el agua.
@@ -624,7 +625,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Esta arma nunca fue diseñada
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Si un ataque con un arma de Lazo tiene éxito, puedes gastar 2 PA para mover al objetivo a una zona superior. En los turnos siguientes, tanto tú como el objetivo podéis intentar una prueba opuesta de FUE o AGI + Atletismo para mover al personaje que está al otro extremo del lazo o liberarse.
 FALLOUT.UI.Add: Añadir
 FALLOUT.UI.Addictions: Adicciones
-FALLOUT.UI.APPAREL_MODS: Modos de ropa
+FALLOUT.UI.APPAREL_MODS: Mods de ropa
 FALLOUT.UI.AreYouSure: '¿Estás seguro?'
 FALLOUT.UI.BaseDamage: Daño base
 FALLOUT.UI.BOOKS_AND_MAGZS: Libros y Revistas
@@ -775,7 +776,7 @@ TYPES.Actor.settlement: Asentamiento
 TYPES.Actor.vehicle: Vehículo
 TYPES.Item.addiction: Adicción
 TYPES.Item.ammo: Munición
-TYPES.Item.apparel_mod: Modos de ropa
+TYPES.Item.apparel_mod: Mods de ropa
 TYPES.Item.apparel: Ropa
 TYPES.Item.books_and_magz: Libro/Revista
 TYPES.Item.consumable: Consumible

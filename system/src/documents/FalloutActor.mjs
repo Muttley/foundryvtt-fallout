@@ -361,6 +361,11 @@ export default class FalloutActor extends Actor {
 
 		// ! SET BODY PARTS TO OUTFIT ADD CHARACTER BONUSES
 		for (let [k, bodyPart] of Object.entries(this.system.body_parts)) {
+			// Armor can't provide poison resistance, so this should always be
+			// set to the base character resistance
+			//
+			bodyPart.resistance.poison = parseInt(this.system.resistance.poison);
+
 			if (outfittedLocations[k]) {
 				bodyPart.resistance.physical =
 					parseInt(outfittedLocations[k].system.resistance.physical)
@@ -1523,7 +1528,7 @@ export default class FalloutActor extends Actor {
 				this,
 				{
 					title: game.i18n.localize(
-						"FALLOUT.CHAT_MESSAGE.readMagazine.title"
+						`FALLOUT.CHAT_MESSAGE.consumed.${consumableType}.title`
 					),
 					body: game.i18n.format("FALLOUT.CHAT_MESSAGE.consumed.body",
 						{
@@ -1531,6 +1536,7 @@ export default class FalloutActor extends Actor {
 							itemName: item.name,
 						}
 					),
+					effect: item.system.effect,
 					showHungerAndThirst: ["beverage", "food"].includes(consumableType),
 					hunger: this.system.conditions.hunger,
 					thirst: this.system.conditions.thirst,

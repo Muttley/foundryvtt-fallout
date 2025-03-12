@@ -173,14 +173,14 @@ FALLOUT.CREATURE.guns: Schusswaffen
 FALLOUT.CREATURE.melee: Nahkampf
 FALLOUT.CREATURE.mind: Geist
 FALLOUT.CREATURE.other: Anderes
-FALLOUT.dialog.roll_ammo.button.chat: An den Chat senden
-FALLOUT.dialog.roll_ammo.button.create: Neu erstellen
-FALLOUT.dialog.roll_ammo.button.update: Item aktualisieren
-FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: Dies wird das Ergebnis der Munition als Chat-Nachricht veröffentlichen.
-FALLOUT.dialog.roll_ammo.create.details: Dies wird einen neuen Munitionsgegenstand erstellen, mit zufällig gewürfelter Menge. Wenn der Gegenstand von dem gewürfelt wird, einem Akteur gehört, wird der neue Gegenstand im Inventar erstellt.
-FALLOUT.dialog.roll_ammo.title: Munition würfeln
-FALLOUT.dialog.roll_ammo.update.details: Dies wird die Munition mit der gewürfelten Menge updaten.
+FALLOUT.dialog.roll_quantity.button.chat: Send to Chat
+FALLOUT.dialog.roll_quantity.button.create: Create New
+FALLOUT.dialog.roll_quantity.button.update: Update Item
+FALLOUT.dialog.roll_quantity.chat.body: "{itemName} x {quantity}"
+FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll result as a chat message.
+FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_quantity.title: Roll Quantity
+FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
 FALLOUT.EffectCreate: Effekt erzeugen
 FALLOUT.EffectDelete: Effekt entfernen
 FALLOUT.EffectEdit: Effekt bearbeiten
@@ -595,6 +595,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and fi
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
+FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Will not consume extra ammo.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Wenn du die Nebenaktion Zielen ausführst, bevor du mit einer Präzisen Waffe angreifst, darfst du bis zu 3 AP ausgeben, um +1 @fos[DC] pro ausgegebenen AP zum Schaden des Angriffs hinzuzufügen. Wenn du den Schaden auf diese Weise erhöhst, kannst du keine Munition für zusätzlichen Schaden ausgeben. Eine Waffe kann nicht gleichzeitig Präzise und Ungenau sein.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: 'Diese Waffe verschießt ihre Munition in einer deutlich höheren Feuerrate wie normale Waffen: Wann immer du einen Schuss Munition ausgeben würdest, verschießt sie stattdessen eine Serie von X Schüssen. Wann immer du X Munition ausgibst, um den Schaden dieser Waffe zu erhöhen, füge +1CD (bis zu einer maximalen Anzahl an Feuerstößen, die der Feuerrate der Waffe entspricht) hinzu. Zusätzliche Verwendung von Munition, wie beim Streuschaden Effekt, verbraucht X Munition für jede 1 Munition die normalerweise verwendet wird.'
 FALLOUT.TOOLTIPS.WeaponQuality.aquatic: When you make an attack with this weapon while underwater, the attack does not suffer normal penalties to underwater attacks.

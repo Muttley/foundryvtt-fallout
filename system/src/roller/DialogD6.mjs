@@ -18,7 +18,16 @@ export class DialogD6 extends Dialog {
 		// })
 
 		html.on("click", ".roll", async event => {
-			let diceNum = html.find(".d-number")[0].value;
+			let extraDiceNum = html.find(".xd-number")[0]?.value ?? "0";
+			let fireRate = html.find(".fr-number")[0]?.value;
+			let diceNum = html.find(".d-number")[0]?.value;
+
+			if (!diceNum) diceNum = this.diceNum;
+
+			if (fireRate && fireRate !== "0") {
+				diceNum += parseInt(fireRate);
+			}
+
 			let additionalAmmo = 0;
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
@@ -36,7 +45,7 @@ export class DialogD6 extends Dialog {
 			if (!this.falloutRoll) {
 				fallout.Roller2D20.rollD6({
 					rollname: this.rollName,
-					dicenum: parseInt(diceNum),
+					dicenum: parseInt(diceNum) + parseInt(extraDiceNum),
 					weapon: this.weapon,
 					actor: this.actor,
 				});
@@ -44,7 +53,7 @@ export class DialogD6 extends Dialog {
 			else {
 				fallout.Roller2D20.addD6({
 					rollname: this.rollName,
-					dicenum: parseInt(diceNum),
+					dicenum: parseInt(diceNum) + parseInt(extraDiceNum),
 					weapon: this.weapon,
 					actor: this.actor,
 					falloutRoll: this.falloutRoll,
@@ -89,12 +98,19 @@ export class DialogD6 extends Dialog {
 		dialogData.weapon = weapon;
 		dialogData.actor = actor;
 
-		const html = `<div class="flexrow fallout-dialog">
+		let html;
+		let dialogWidth = 300;
+		if (weapon && !falloutRoll) {
+			html = await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
+			dialogWidth = 465;
+		}
+		else {
+			html = `<div class="flexrow fallout-dialog">
 		<div class="flexrow resource" style="padding:5px">
 		<label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="${diceNum}">
 		</div>
 		</div>`;
-
+		}
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, {
 			title: rollName,
 			content: html,
@@ -105,7 +121,7 @@ export class DialogD6 extends Dialog {
 				},
 			},
 			close: () => { },
-		}, {width: 1000});
+		}, {width: dialogWidth});
 		d.render(true);
 	}
 

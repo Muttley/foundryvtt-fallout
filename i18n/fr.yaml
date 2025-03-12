@@ -158,7 +158,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dég
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} a résisté aux dégâts de radiations de {baseRadDamage} en consommant Eau Sale"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} subit {radsTaken} dégâts de radiations en consommant Eau Sale"
-FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} reads a magazine entitled \"{itemName}\""
+FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} lit un magazine intitulé \"{itemName}\""
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
 FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine Read
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Recycleur
@@ -173,14 +173,14 @@ FALLOUT.CREATURE.guns: Distance
 FALLOUT.CREATURE.melee: Corps-à-Corps
 FALLOUT.CREATURE.mind: Esprit
 FALLOUT.CREATURE.other: Autres
-FALLOUT.dialog.roll_ammo.button.chat: Envoyer dans la conversation
-FALLOUT.dialog.roll_ammo.button.create: Créer nouvelle
-FALLOUT.dialog.roll_ammo.button.update: Mettre à jour l'objet
-FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: Cela affichera le résultat du jet de munitions sous forme de message dans le chat.
-FALLOUT.dialog.roll_ammo.create.details: Ceci va créer un nouvel objet de munition avec la quantité lancée. Si l'objet à partir duquel vous roulez appartient à un acteur, le nouvel objet sera créé dans l'inventaire de cet acteur.
-FALLOUT.dialog.roll_ammo.title: Lancer de munitions
-FALLOUT.dialog.roll_ammo.update.details: Cela va mettre à jour la munition avec un nouveau lancer de quantité de munitions.
+FALLOUT.dialog.roll_quantity.button.chat: Send to Chat
+FALLOUT.dialog.roll_quantity.button.create: Create New
+FALLOUT.dialog.roll_quantity.button.update: Update Item
+FALLOUT.dialog.roll_quantity.chat.body: "{itemName} x {quantity}"
+FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll result as a chat message.
+FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_quantity.title: Roll Quantity
+FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
 FALLOUT.EffectCreate: Créer Effet
 FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
@@ -219,7 +219,7 @@ FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
 FALLOUT.Item.Perk.isCompanion: Is a Companion
-FALLOUT.Item.Perk.level: Level
+FALLOUT.Item.Perk.level: Niveau
 FALLOUT.Item.Perk.Magazine.label: Magazines
 FALLOUT.Item.Perk.Magazine.prompt: Select Magazine...
 FALLOUT.Item.Perk.notGhoul: Not a Ghoul
@@ -239,7 +239,7 @@ FALLOUT.LEVEL.CurrentXP: PE Actuels
 FALLOUT.LEVEL.Level: Niveau
 FALLOUT.LEVEL.NextXP: PE Prochain niveau
 FALLOUT.LEVEL.RewardXP: PE Gagnés
-FALLOUT.LevelUp.AppTitle: Level Up
+FALLOUT.LevelUp.AppTitle: Niveau supérieur
 FALLOUT.LOCATION_CATEGORY.agriculture: Agriculture
 FALLOUT.LOCATION_CATEGORY.commercial: Commerciale
 FALLOUT.LOCATION_CATEGORY.custom: Personnalisée
@@ -397,7 +397,7 @@ FALLOUT.TEMPLATES.Butchery: Dépeçage
 FALLOUT.TEMPLATES.ButcheryTooltip: Contrôle SR Dépeçage
 FALLOUT.TEMPLATES.Category: Catégorie
 FALLOUT.TEMPLATES.Compl: Compl.
-FALLOUT.TEMPLATES.complexity: Complexity
+FALLOUT.TEMPLATES.complexity: Complexité
 FALLOUT.TEMPLATES.Complications: Complications
 FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
 FALLOUT.TEMPLATES.conditions.dehydrated: Déshydraté
@@ -496,7 +496,7 @@ FALLOUT.TEMPLATES.MaterialsRequired: Composants requis
 FALLOUT.TEMPLATES.MAX_PARTY_AP: RÉSERVE GROUPE PA Max
 FALLOUT.TEMPLATES.max: max
 FALLOUT.TEMPLATES.MAX: MAX
-FALLOUT.TEMPLATES.MaxRanks: Max Ranks
+FALLOUT.TEMPLATES.MaxRanks: Rangs maximum
 FALLOUT.TEMPLATES.Melee_Bonus: Bonus de Mêlée
 FALLOUT.TEMPLATES.Melee_Damage: Dégâts de Mêlée
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
@@ -595,6 +595,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: Le véhicule est puissant et f
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Effectuer des tests pour réparer les véhicules robustes réduit de 1 la difficulté.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Un véhicule à siège unique est conçu pour être conduit par un seul pilote, en assumant également le rôle de fusilleur sans la pénalité normale.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: Le véhicule circule seulement sur l'eau et ne peut absolument pas se déplacer le long du sol. Si ce véhicule subit un coup critique sur le châssis, il commence à prendre de l'eau, et coulera après un nombre de tours égal au double de l'échelle du véhicule.
+FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Will not consume extra ammo.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: L'arme utilise beaucoup plus de munitions que la plupart des armes. A chaque tir l'arme dépense X munitions à la place d'une seule. De plus chaque tir supplémentaire coute X munitions toujours limité par la cadence de tir. Cela compte également pour En Rafale.
 FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Quand vous lancez une attaque avec cette arme sous l'eau, l'attaque ne subit pas de malus normaux aux attaques sous-marines.
@@ -646,7 +647,7 @@ FALLOUT.UI.DISEASES: Maladies
 FALLOUT.UI.favorite: Favori
 FALLOUT.UI.INVENTORY: Inventaire
 FALLOUT.UI.MISCELLANY: Bric-A-Brac
-FALLOUT.UI.Modify: Modify
+FALLOUT.UI.Modify: Modifier
 FALLOUT.UI.Name: Nom
 FALLOUT.UI.OTHER: Autre
 FALLOUT.UI.Override: Override
@@ -694,8 +695,8 @@ FALLOUT.WEAPON_MOD.summary.ammo: Ammo changes to {ammo}
 FALLOUT.WEAPON_MOD.summary.ammoPerShot: Consumes {ammoPerShot} shots per attack
 FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
-FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
-FALLOUT.WEAPON_MOD.summary.gain: Gain
+FALLOUT.WEAPON_MOD.summary.fireRate: Cadence de Tir
+FALLOUT.WEAPON_MOD.summary.gain: Gagne
 FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remove
 FALLOUT.WEAPON_MOD.type.barrel: Barrel

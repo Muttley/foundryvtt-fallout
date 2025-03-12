@@ -116,7 +116,7 @@ export default class FalloutItem extends Item {
 		}
 	}
 
-	async rollAmmoQuantity(mode) {
+	async rollQuantity(mode) {
 		const formula = this.system.quantityRoll;
 
 		const roll = new Roll(formula);
@@ -150,10 +150,10 @@ export default class FalloutItem extends Item {
 				return fallout.chat.renderGeneralMessage(
 					this,
 					{
-						title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
-						body: game.i18n.format("FALLOUT.dialog.roll_ammo.chat.body",
+						title: game.i18n.localize("FALLOUT.dialog.roll_quantity.title"),
+						body: game.i18n.format("FALLOUT.dialog.roll_quantity.chat.body",
 							{
-								ammoName: this.name,
+								itemName: this.name,
 								quantity,
 							}
 						),

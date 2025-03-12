@@ -1,7 +1,18 @@
 # v11.15.0
 
+#### Bugs
+- [#577] Fixed a bug with the consumed action chat card title
+- [#580] Poison bonus resistance doesn't get displayed in body location elements
+- [#581] Immunity/Infinity symbol overflows input element in resistance bonuses section of character sheet
+- [#584] Unable to delete Power Armor Frame from character sheet
+- [#585] Should not try to expand details of power armor pieces within power armor frame attachment item tab
+- [#587] FalloutItemSheet::getPowerArmorPieceData() matches on apparel_mod items when it should only be looking at apparel items
+
 #### Enhancements
+- [#148] Separate out Fire Rate from Damage for guns
+- [#253] Support butchery items that have roll formula instead of just a fixed quantity
 - [#340] Allow drag/drop of player perks that can be used on NPCs
+- [#479] Add Quantity Roll field to more item types
 - [#483] Add a way to toggle off the auto-calculate for derived stats
 - [#541] Improve perk requirements
 - [#559] Improvements to Books and Magazines
@@ -9,9 +20,13 @@
 	* New control added to magazine items in the inventory to "read" a magazine.  This automatically rolls and extends the uses remaining if needed for characters with the Comprehension perk.
 
 - [#569] Improve handling of Mods
+- [#576] When a consumable is used, display any effect it causes on the resultant chat message
 
 #### Chores
 - [#564] Merge new Spanish translation updates from Crowdin
+- [#572] Merge new French and Portuguese/Brazilian translation updates from Crowdin
+- [#575] Merge new French, Portuguese/Brazilian, and Spanish translation updates from Crowdin
+- [#582] Merge new French updates from Crowdin
 
 ---
 
