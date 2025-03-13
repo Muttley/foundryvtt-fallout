@@ -571,9 +571,6 @@ export default class FalloutItemSheet extends ItemSheet {
 			await this.item.update(dataUpdate);
 		});
 
-		// CLICK TO EXPAND
-		html.find(".expandable-info").click(async event => this._onModSummary(event));
-
 		// Install mod
 		html.find(".toggle-mod").click(async event => this._onToggleMod(event));
 
@@ -773,35 +770,6 @@ export default class FalloutItemSheet extends ItemSheet {
 		let newIndex = Math.min(Math.max(currentIndex + step, 0), keys.length - 1);
 
 		return keys[newIndex];
-	}
-
-	async _onModSummary(event) {
-		event.preventDefault();
-		let li = $(event.currentTarget).parents(".weapon_mod");
-		let mod = this.item.system.mods[li.data("itemId")];
-
-		if (mod.system.modEffects.effect === "") return;
-
-		const html = await renderTemplate("systems/fallout/templates/item/weapon/_partials/mod-desc.hbs", {
-			// mod: mod,
-			modExtraEffect: mod.system.modEffects.effect,
-		});
-
-		// Toggle summary
-		if (li.hasClass("expanded")) {
-			let summary = li.children(".item-summary");
-			summary.slideUp(200, () => {
-				summary.remove();
-			});
-		}
-		else {
-			let div = $(
-				`<div class="item-summary"><div class="item-summary-wrapper"><div>${html}</div></div></div>`
-			);
-			li.append(div.hide());
-			div.slideDown(200);
-		}
-		li.toggleClass("expanded");
 	}
 
 	async getWeaponModSummary(mod) {
