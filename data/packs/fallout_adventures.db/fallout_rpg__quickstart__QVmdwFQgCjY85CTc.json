@@ -242,6 +242,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -473,6 +474,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -704,6 +706,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -1496,6 +1499,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -1913,6 +1917,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -2520,6 +2525,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -3285,6 +3291,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -3516,6 +3523,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -3747,6 +3755,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -4569,6 +4578,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -4986,6 +4996,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -5591,6 +5602,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -6943,6 +6955,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 2,
 						"range": "close",
 						"rarity": 1,
@@ -7174,6 +7187,7 @@
 							"max": 7,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -7405,6 +7419,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -9123,6 +9138,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -9354,6 +9370,7 @@
 							"max": 6,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -9585,6 +9602,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -11518,6 +11536,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -11749,6 +11768,7 @@
 							"max": 7,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -11980,6 +12000,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 1,
@@ -12254,6 +12275,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -13828,6 +13850,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -14061,6 +14084,7 @@
 							"max": 6,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 2,
@@ -15768,6 +15792,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -15999,6 +16024,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -16230,6 +16256,7 @@
 							"max": 4,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 3,
@@ -16461,6 +16488,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -18081,6 +18109,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -18312,6 +18341,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -18543,6 +18573,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -18776,6 +18807,7 @@
 							"max": 7,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -19007,6 +19039,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 2,
@@ -20000,6 +20033,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -20610,6 +20644,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -21371,6 +21406,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -22102,6 +22138,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -22335,6 +22372,7 @@
 							"max": 6,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 2,
@@ -23485,6 +23523,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -24251,6 +24290,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -24482,6 +24522,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -24713,6 +24754,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "long",
 						"rarity": 0,
@@ -24944,6 +24986,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -25998,6 +26041,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -26330,6 +26374,7 @@
 							"max": 4,
 							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 3,
