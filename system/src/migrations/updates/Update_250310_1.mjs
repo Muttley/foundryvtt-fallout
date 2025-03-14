@@ -6,33 +6,30 @@ export default class Update_250310_1 extends FalloutUpdateBase {
 
 	async updateItem(itemData, actorData) {
 		if (itemData.type === "weapon_mod") {
+			const perks = itemData?.system?.crafting?.perks ?? undefined;
 
-			const perks = itemData.system.crafting.perks;
+			if (perks) {
+				const updateData = {
+					"system.perks": perks,
+					"system.-=crafting": null,
+				};
 
-
-			const updateData = {
-				"system.perks": perks,
-				"system.-=crafting": null,
-			};
-
-			return updateData;
-
+				return updateData;
+			}
 		}
 		else if (itemData.type === "weapon") {
-
-			const weapon_mods = itemData.system.mods;
+			const weapon_mods = itemData?.system?.mods ?? {};
 			const updateData = {};
 
 			Object.entries(weapon_mods).forEach(([key, mod]) => {
 				if (mod && mod.hasOwnProperty("_id")) {
-					const perks = mod.system.crafting?.perks;
+					const perks = mod?.system?.crafting?.perks;
 					updateData[`system.mods.${mod._id}.system.perks`] = perks ?? "";
 					updateData[`system.mods.${mod._id}.system.-=crafting`] = null;
 				}
 			});
 
 			return updateData;
-
 		}
 	}
 }
