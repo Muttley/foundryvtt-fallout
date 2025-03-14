@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 30,
-		"crafting": {
-			"complexity": "",
-			"perks": "Blacksmith 2, Science! 1",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -69,13 +63,13 @@
 					}
 				},
 				"damageType": {
-					"energy": false,
+					"energy": true,
 					"physical": false,
 					"poison": false,
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 2,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 @fos[DC]</p>\n<p>Damage type becomes Energy</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Shock",
+		"perks": "Blacksmith 2, Science! 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

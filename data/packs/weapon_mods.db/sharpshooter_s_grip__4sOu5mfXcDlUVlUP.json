@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 10,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 1",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -44,8 +38,8 @@
 						"value": 0
 					},
 					"piercing_x": {
-						"rank": 0,
-						"value": 0
+						"rank": 1,
+						"value": 1
 					},
 					"radioactive": {
 						"rank": 0,
@@ -119,7 +113,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Remove Inaccurate</p>\n<p>Add Piercing 1</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "grip",
 		"namePrefix": "Sharpshooter's",
+		"perks": "Gun Nut 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

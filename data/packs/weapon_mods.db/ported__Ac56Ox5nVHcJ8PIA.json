@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 35,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 4",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Increase Range by 1 step</p>\n<p>+1 fire rate</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
 		"modType": "barrel",
 		"namePrefix": "Ported",
+		"perks": "Gun Nut 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

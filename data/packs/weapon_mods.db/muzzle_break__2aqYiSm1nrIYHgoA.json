@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 30,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 1",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -119,7 +113,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Remove Inaccurate</p>\n<p>+1 Fire Rate</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
 		"modType": "muzzle",
 		"namePrefix": "Muzzled",
+		"perks": "Gun Nut 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

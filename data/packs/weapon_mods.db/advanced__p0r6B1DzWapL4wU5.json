@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 35,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -75,7 +69,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 3,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+3 @fos[DC] damage</p>\n<p>+1 fire rate</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
 		"modType": "receiver",
 		"namePrefix": "Advanced",
+		"perks": "Gun Nut 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

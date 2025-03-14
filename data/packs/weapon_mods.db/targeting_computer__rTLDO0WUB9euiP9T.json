@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 293,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 2; Science! 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>When you Aim at a target, the target does not benefit from being in cover, and the bonus for aiming applies to the next attack on any subsequent turn during the scene.</p>\n<p>&nbsp;</p>",
+			"effect": "<p>When you Aim at a target, the target does not benefit from being in cover, and the bonus for aiming applies to the next attack on any subsequent turn during the scene.</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "sight",
 		"namePrefix": "Targeting",
+		"perks": "Gun Nut 2; Science! 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

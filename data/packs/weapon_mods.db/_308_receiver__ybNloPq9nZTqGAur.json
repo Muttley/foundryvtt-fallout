@@ -10,16 +10,10 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 40,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 4",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
-			"ammo": "",
+			"ammo": ".308 Round",
 			"ammoPerShot": 0,
 			"damage": {
 				"damageEffect": {
@@ -74,8 +68,8 @@
 					"poison": false,
 					"radiation": false
 				},
-				"overrideDamage": "modify",
-				"rating": 0,
+				"overrideDamage": "override",
+				"rating": 7,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Change damage to 7 @fos[DC]</p>\n<p>Ammo changes to @UUID[Item.i4CuRrtBhO2mWeDz]{.308 Round}</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "receiver",
 		"namePrefix": ".308",
+		"perks": "Gun Nut 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

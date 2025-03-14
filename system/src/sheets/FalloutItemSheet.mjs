@@ -444,7 +444,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		context.overrideDamage = item.system.modEffects.damage.overrideDamage;
 
-		context.modSummary = this.getWeaponModSummary(item);
+		context.modSummary = await this.getWeaponModSummary(item);
 
 
 	}
@@ -572,9 +572,6 @@ export default class FalloutItemSheet extends ItemSheet {
 			await this.item.update(dataUpdate);
 		});
 
-		// CLICK TO EXPAND
-		html.find(".expandable-info").click(async event => this._onModSummary(event));
-
 		// Install mod
 		html.find(".toggle-mod").click(async event => this._onToggleMod(event));
 
@@ -609,7 +606,7 @@ export default class FalloutItemSheet extends ItemSheet {
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
 				}
 				item.system.mods[mod].system.modEffects.summary =
-					this.getWeaponModSummary(item.system.mods[mod]);
+					await this.getWeaponModSummary(item.system.mods[mod]);
 				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
 
 				if (item.system.mods[mod].system.attached) {
@@ -678,8 +675,11 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// ammo per shot
 		if (mod.system.modEffects.ammoPerShot !== 0) {
-			if (installed) updateData["system.ammoPerShot"] = this.item.system.ammoPerShot + mod.system.modEffects.ammoPerShot;
-			else updateData["system.ammoPerShot"] = this.item.system.ammoPerShot - mod.system.modEffects.ammoPerShot;
+			if (installed) {
+				updateData["system.originalAmmoPerShot"] = this.item.system.ammoPerShot;
+				updateData["system.ammoPerShot"] = mod.system.modEffects.ammoPerShot;
+			}
+			else updateData["system.ammoPerShot"] = this.item.system.originalAmmoPerShot;
 		}
 
 		// fire rate
@@ -773,41 +773,13 @@ export default class FalloutItemSheet extends ItemSheet {
 		return keys[newIndex];
 	}
 
-	async _onModSummary(event) {
-		event.preventDefault();
-		let li = $(event.currentTarget).parents(".weapon_mod");
-		let mod = this.item.system.mods[li.data("itemId")];
-
-		const html = await renderTemplate("systems/fallout/templates/item/weapon/_partials/mod-desc.hbs", {
-			mod: mod,
-			modExtraEffect: mod.system.modEffects.effect,
-			crafting: mod.system.crafting,
-		});
-
-		// Toggle summary
-		if (li.hasClass("expanded")) {
-			let summary = li.children(".item-summary");
-			summary.slideUp(200, () => {
-				summary.remove();
-			});
-		}
-		else {
-			let div = $(
-				`<div class="item-summary"><div class="item-summary-wrapper"><div>${html}</div></div></div>`
-			);
-			li.append(div.hide());
-			div.slideDown(200);
-		}
-		li.toggleClass("expanded");
-	}
-
-	getWeaponModSummary(mod) {
+	async getWeaponModSummary(mod) {
 		let modSummary = [];
 		let modEffects = mod.system.modEffects;
 
 		if (modEffects.damage.rating !== 0) {
 
-			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD ${game.i18n.localize("FALLOUT.UI.Damage")}`);
+			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD`);
 			else modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.damageRatingOverride", { rating: modEffects.damage.rating }));
 		}
 
@@ -817,8 +789,9 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (modEffects.fireRate !== 0) modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 
-		if (modEffects.range !== 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.range", { range: modEffects.range }));
 
+		if (modEffects.range > 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeIncrease", { range: modEffects.range }));
+		else if (modEffects.range < 0) modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeDecrease", { range: modEffects.range }));
 
 		// Damage type
 		if (modEffects.damage.damageType.energy
@@ -844,7 +817,6 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		if (damageEffects.length > 0) modSummary.push(`${damageEffects.join(", ")}`);
 
-		// CONFIG.FALLOUT.DAMAGE_EFFECTS[key]
 
 		// Weapon Qualities
 		let weaponQuality = [];
@@ -855,8 +827,16 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 		if (weaponQuality.length > 0) modSummary.push(`${weaponQuality.join(", ")}`);
 
-		if (modSummary.length > 1) return modSummary.join(", ");
-		else return modSummary;
+		// Extra Effects
+		if (modEffects.effect !== "") modSummary.push(modEffects.effect);
+
+		if (modSummary.length > 1) return await TextEditor.enrichHTML(modSummary.join(", "), {
+			async: true,
+		});
+
+		else return await TextEditor.enrichHTML(modSummary, {
+			async: true,
+		});
 	}
 
 	async _deleteChoiceItem(event) {
@@ -868,7 +848,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		let currentChoices = choicesKey
 			.split(".")
-			.reduce((obj, path) => obj ? obj[path]: [], this.item.system);
+			.reduce((obj, path) => obj ? obj[path] : [], this.item.system);
 
 		const newChoices = [];
 		for (const itemUuid of currentChoices) {

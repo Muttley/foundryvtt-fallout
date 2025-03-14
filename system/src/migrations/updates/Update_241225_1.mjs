@@ -31,6 +31,7 @@ export default class Update_241225_1 extends FalloutUpdateBase {
 			"system.modType": modType,
 			"system.-=canBeScrapped": null,
 			"system.-=isJunk": null,
+			"system.modEffects.damage.damageEffect.-=undefined": null,
 		};
 
 		return updateData;

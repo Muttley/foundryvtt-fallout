@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 31,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -53,7 +47,7 @@
 					},
 					"spread": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"stun": {
 						"rank": 0,
@@ -75,11 +69,11 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": -1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"ammo_hungry_x": {
 						"rank": 0,
@@ -119,7 +113,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"limited": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>-1 @fos[DC]</p>\n<p>Gain Spread</p>\n<p>Gain Inaccurate</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "Scattergun",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

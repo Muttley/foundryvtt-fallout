@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 100,
-		"crafting": {
-			"complexity": "",
-			"perks": "Blacksmith 3",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -41,7 +35,7 @@
 					},
 					"persistent": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"piercing_x": {
 						"rank": 0,
@@ -75,7 +69,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 1,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+1 @fos[DC]</p>\n<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Searing",
+		"perks": "Blacksmith 3",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

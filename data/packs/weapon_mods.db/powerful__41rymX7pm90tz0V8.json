@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 25,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 1",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -75,7 +69,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 2,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 @fos[DC] damage</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "receiver",
 		"namePrefix": "Powerful",
+		"perks": "Gun Nut 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
