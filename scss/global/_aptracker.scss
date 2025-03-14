@@ -1,3 +1,6 @@
+@use '../utils/colors' as *;
+@use '../utils/mixins' as *;
+
 .fallout.ap-tracker {
 	position: absolute;
 	display: block;
