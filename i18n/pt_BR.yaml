@@ -697,7 +697,8 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Altera o dano para {rating} DC
 FALLOUT.WEAPON_MOD.summary.damageType: Altera o tipo de dano para {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Cadência de Tiro
 FALLOUT.WEAPON_MOD.summary.gain: Ganho
-FALLOUT.WEAPON_MOD.summary.range: Aumenta o alcance em {range}
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remover
 FALLOUT.WEAPON_MOD.type.barrel: Cano
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor

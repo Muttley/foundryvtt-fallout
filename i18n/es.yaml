@@ -697,7 +697,8 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Cambia el daño a {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Cambia el tipo de daño a {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Cadencia de Fuego
 FALLOUT.WEAPON_MOD.summary.gain: Ganancia
-FALLOUT.WEAPON_MOD.summary.range: Incrementa el rango en {range} pasos
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Quitar
 FALLOUT.WEAPON_MOD.type.barrel: Barril
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
