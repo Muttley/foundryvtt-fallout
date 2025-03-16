@@ -23,7 +23,7 @@ export default class FalloutItemSheet extends ItemSheet {
 				contentSelector: ".sheet-body",
 				initial: "attributes",
 			}],
-			dragDrop: [{ /* dragSelector: ".item",*/ dropSelector: "form.itemDrop" }],
+			dragDrop: [{ dropSelector: "form.itemDrop" }],
 		});
 	}
 
