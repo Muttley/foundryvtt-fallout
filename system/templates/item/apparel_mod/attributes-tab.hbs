@@ -5,48 +5,66 @@
 			{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}
 		</label>
 
+		{{#select system.modType}}
+		<select name="system.modType">
+			{{#each FALLOUT.APPAREL_MOD_TYPES as |item key|}}
+			<option value="{{key}}">
+				{{localize item}}
+			</option>
+			{{/each}}
+		</select>
+		{{/select}}
+
 		{{#select system.apparelType}}
-			<select name="system.apparelType">
-				{{#each FALLOUT.APPAREL_TYPES as |item key|}}
-					<option value="{{key}}">
-						{{localize item}}
-					</option>
-				{{/each}}
-			</select>
+		<select name="system.apparelType">
+			{{#each FALLOUT.APPAREL_TYPES as |item key|}}
+			<option value="{{key}}">
+				{{localize item}}
+			</option>
+			{{/each}}
+		</select>
 		{{/select}}
 	</div>
 
 	<div class="flexrow resource-row">
-		<label
-			class="field-label"
-			style="align-self: baseline;"
-		>
+		<label class="field-label"
+			   style="align-self: baseline;">
 			{{localize "FALLOUT.TEMPLATES.Resistances"}}
 		</label>
 
 		<div>
 			<ol class="items-list">
 				{{#each system.resistance as |item key|}}
-					<li style="padding: 5px; border-bottom: 1px solid #637294; background-color: rgba(0, 0, 0, 0.2);">
-						<div class="flexrow">
-							<input
-								class="num-short-3"
-								name="system.resistance.{{key}}"
-								type="number"
-								value="{{item}}"
-							>
-							&nbsp;&nbsp;
-							<div class="item-name flexlarge">
-								<label class="field-label">
-									<span class="fo-{{key}}"></span>
-									{{localize (concat "FALLOUT.RESISTANCE." key)}}
-								</label>
-							</div>
+				<li style="padding: 5px; border-bottom: 1px solid #637294; background-color: rgba(0, 0, 0, 0.2);">
+					<div class="flexrow">
+						<input class="num-short-3"
+							   name="system.resistance.{{key}}"
+							   type="number"
+							   value="{{item}}">
+						&nbsp;&nbsp;
+						<div class="item-name flexlarge">
+							<label class="field-label">
+								<span class="fo-{{key}}"></span>
+								{{localize (concat "FALLOUT.RESISTANCE." key)}}
+							</label>
 						</div>
-					</li>
+					</div>
+				</li>
 				{{/each}}
 			</ol>
 		</div>
+	</div>
+
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.APPAREL_MOD.shadowed"}}
+		</label>
+		<input class="input-checkbox"
+			   data-dtype="Boolean"
+			   name="system.shadowed"
+			   type="checkbox"
+			   {{checked system.shadowed}} />
 	</div>
 
 	<div class="flexrow resource-row">
@@ -54,49 +72,41 @@
 			{{localize "FALLOUT.TEMPLATES.Locations"}}
 		</label>
 
-		<input
-			class="localization"
-			name="system.location"
-			placeholder="{{localize "FALLOUT.TEMPLATES.Apparel_Mod_Placeholder"}}"
-			type="text"
-			value="{{system.location}}"
-		>
+		<input class="localization"
+			   name="system.location"
+			   placeholder="{{localize "FALLOUT.TEMPLATES.Apparel_Mod_Placeholder"}}"
+			   type="text"
+			   value="{{system.location}}">
 	</div>
 
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.HEALTH.health"}}
 		</label>
-		<input
-			class=""
-			name="system.health.value"
-			type="number"
-			value="{{system.health.value}}"
-		>
+		<input class=""
+			   name="system.health.value"
+			   type="number"
+			   value="{{system.health.value}}">
 	</div>
 
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.UI.Perks"}}
 		</label>
-		<input
-			name="system.perks"
-			type="text"
-			value="{{system.perks}}"
-		>
+		<input name="system.perks"
+			   type="text"
+			   value="{{system.perks}}">
 	</div>
 
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.actor.inventory.materials.junk"}}
 		</label>
-		<input
-			class="input-checkbox"
-			data-dtype="Boolean"
-			name="system.isJunk"
-			type="checkbox"
-			{{checked system.isJunk}}
-		/>
+		<input class="input-checkbox"
+			   data-dtype="Boolean"
+			   name="system.isJunk"
+			   type="checkbox"
+			   {{checked system.isJunk}} />
 	</div>
 
 	<div class="resource-row">

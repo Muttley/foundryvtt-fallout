@@ -19,6 +19,13 @@ FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
 FALLOUT.DEFAULT_MAX_MAGAZINE_USES = 2;
 
 FALLOUT.APPAREL_TYPES = {
+	material: "FALLOUT.APPAREL.armor",
+	plating: "FALLOUT.APPAREL.outfit",
+	system: "FALLOUT.APPAREL.headgear",
+	upgrade: "FALLOUT.APPAREL.clothing",
+};
+
+FALLOUT.APPAREL_MOD_TYPES = {
 	armor: "FALLOUT.APPAREL.armor",
 	clothing: "FALLOUT.APPAREL.clothing",
 	headgear: "FALLOUT.APPAREL.headgear",

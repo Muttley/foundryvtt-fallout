@@ -1036,8 +1036,10 @@
 			},
 			"mods": {
 				"current": 0,
+				"installedMods": "",
 				"list": "",
-				"max": 0
+				"max": 0,
+				"modded": false
 			},
 			"powerArmor": {
 				"frameId": "",
@@ -1063,12 +1065,15 @@
 				"value": 0
 			},
 			"location": "",
+			"modType": "",
 			"perks": "",
 			"resistance": {
 				"energy": 0,
 				"physical": 0,
 				"radiation": 0
 			},
+			"shadowed": false,
+			"summary": "",
 			"templates": [
 				"base",
 				"physical",
@@ -1465,12 +1470,6 @@
 			"weaponType": ""
 		},
 		"weapon_mod": {
-			"crafting": {
-				"complexity": "",
-				"perks": "",
-				"rarity": "",
-				"skill": ""
-			},
 			"modEffects": {
 				"ammo": "",
 				"ammoPerShot": 0,
@@ -1648,6 +1647,7 @@
 			},
 			"modType": "",
 			"namePrefix": "",
+			"perks": "",
 			"templates": [
 				"base",
 				"attachable",

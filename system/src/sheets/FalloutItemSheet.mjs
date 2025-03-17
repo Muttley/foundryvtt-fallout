@@ -77,8 +77,12 @@ export default class FalloutItemSheet extends ItemSheet {
 		const droppedItem = await fromUuid(data.uuid);
 
 		switch (droppedItem.type) {
-
 			case "apparel_mod":
+				if (myType === "apparel") {
+					const updateData = {};
+					updateData[`system.mods.${droppedItem._id}`] = foundry.utils.duplicate(droppedItem);
+					this.item.update(updateData);
+				}
 				break;
 			case "perk":
 				break;
@@ -157,6 +161,9 @@ export default class FalloutItemSheet extends ItemSheet {
 			case "apparel":
 				await this.getPowerArmorPieceData(context);
 				break;
+			case "apparel_mod":
+				await this.getApparelModData(context);
+				break;
 			case "object_or_structure":
 				await this.getObjectOrStructureData(context, source, item);
 				break;
@@ -208,6 +215,23 @@ export default class FalloutItemSheet extends ItemSheet {
 		);
 
 		context.powerArmorPieces = availablePieces;
+	}
+
+	async getApparelModData(context, item) {
+
+
+		context.damageTypes = [];
+		for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
+			context.damageTypes.push({
+				active: item.system?.modEffects?.damage?.damageType[key] ?? 0,
+				key,
+				label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
+			});
+		}
+
+
+		context.modSummary = this.getWeaponModSummary(item);
+
 	}
 
 	async getOriginSelectorConfigs(context) {
@@ -368,7 +392,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		// Weapon Mods
-		let modsByType = await this._getModsByType(item);
+		let modsByType = await this._getWeaponModsByType(item);
 
 
 		context.modsByType = modsByType;
@@ -596,8 +620,38 @@ export default class FalloutItemSheet extends ItemSheet {
 
 	}
 
+	async _getApparelModsByType(item) {
 
-	async _getModsByType(item) {
+		// Weapon Mods
+		let modsByType = {};
+
+		for (let mod in item.system.mods) {
+			if (item.system.mods[mod].system?.modType in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
+				if (!(item.system.mods[mod].system?.modType in modsByType)) {
+					modsByType[item.system.mods[mod].system?.modType] = [];
+					modsByType[item.system.mods[mod].system?.modType].installed = false;
+				}
+				item.system.mods[mod].system.summary =
+					this.getApparelModSummary(item.system.mods[mod]);
+				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
+
+				if (item.system.mods[mod].system.attached) {
+					modsByType[item.system.mods[mod].system?.modType].installed = true;
+				}
+			}
+		}
+
+
+		for (let key in modsByType) {
+			modsByType[key] = modsByType[key].sort(
+				(a, b) => a.name.localeCompare(b.name)
+			);
+		}
+
+		return modsByType;
+	}
+
+	async _getWeaponModsByType(item) {
 
 		// Weapon Mods
 		let modsByType = {};
@@ -637,7 +691,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		const installed = !mod.system.attached;
 
 		// Check if this type is already installed.
-		let modsByType = await this._getModsByType(this.item);
+		let modsByType = await this._getWeaponModsByType(this.item);
 		if (modsByType[mod.system.modType].installed && installed) {
 			ui.notifications.warn("Only one mod per type allowed to be installed.");
 			return;
@@ -799,6 +853,14 @@ export default class FalloutItemSheet extends ItemSheet {
 			div.slideDown(200);
 		}
 		li.toggleClass("expanded");
+	}
+
+	getApparelModSummary(mod) {
+		let modSummary = [];
+		
+
+		if (modSummary.length > 1) return modSummary.join(", ");
+		else return modSummary;
 	}
 
 	getWeaponModSummary(mod) {
