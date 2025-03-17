@@ -28,7 +28,7 @@
 		"markdown": "^0.5.0",
 		"merge-stream": "^2.0.0",
 		"nedb-promises": "^6.2.3",
-		"rollup": "^4.35.0",
+		"rollup": "^4.36.0",
 		"sass": "^1.85.1",
 		"yaml": "^2.7.0",
 		"yargs": "^17.7.2"
