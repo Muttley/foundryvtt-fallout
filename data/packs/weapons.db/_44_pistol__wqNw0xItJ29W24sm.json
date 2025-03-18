@@ -74,7 +74,7 @@
 				"poison": false,
 				"radiation": false
 			},
-			"originalRating": 0,
+			"originalRating": 6,
 			"rating": 6,
 			"weaponQuality": {
 				"accurate": {
@@ -2175,6 +2175,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "close",
 		"rarity": 2,
 		"skill": "",

@@ -3927,6 +3927,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "close",
 		"rarity": 1,
 		"skill": "",

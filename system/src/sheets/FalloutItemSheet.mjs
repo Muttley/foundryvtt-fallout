@@ -710,28 +710,42 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		// Damage Effects
 		for (const key in mod.system.modEffects.damage.damageEffect) {
-			const tmpDamageEffect = mod.system.modEffects.damage.damageEffect[key];
-			if (tmpDamageEffect.value > 0) if (installed) {
-				updateData[`system.damage.damageEffect.${key}.value`] = this.item.system.damage.damageEffect[key].value + tmpDamageEffect.value;
-				updateData[`system.damage.damageEffect.${key}.rank`] = this.item.system.damage.damageEffect[key].rank + tmpDamageEffect.rank;
-			}
-			else {
-				updateData[`system.damage.damageEffect.${key}.value`] = this.item.system.damage.damageEffect[key].value - tmpDamageEffect.value;
-				updateData[`system.damage.damageEffect.${key}.rank`] = this.item.system.damage.damageEffect[key].rank - tmpDamageEffect.rank;
+			const modDamageEffect = mod.system.modEffects.damage.damageEffect[key];
+			const weaponDamageEffect = this.item.system.damage.damageEffect[key];
+			if (modDamageEffect.value !== 0) { // Only run if enabling or disabling a damage effect. (value = 1 for enable. value = -1 for disable)
+				if (installed) {
+					const newValue = weaponDamageEffect.value + modDamageEffect.value;
+					updateData[`system.damage.damageEffect.${key}.value`] = newValue;
+					if (newValue === 1) updateData[`system.damage.damageEffect.${key}.rank`] = modDamageEffect.rank;
+					else updateData[`system.damage.damageEffect.${key}.rank`] = weaponDamageEffect.rank + modDamageEffect.rank;
+				}
+				else {
+					const newValue = weaponDamageEffect.value - modDamageEffect.value;
+					updateData[`system.damage.damageEffect.${key}.value`] = newValue;
+					if (newValue === 0) updateData[`system.damage.damageEffect.${key}.rank`] = 1;
+					else updateData[`system.damage.damageEffect.${key}.rank`] = weaponDamageEffect.rank - modDamageEffect.rank;
+				}
 			}
 		}
 
 
 		// Weapon Qualities
 		for (const key in mod.system.modEffects.damage.weaponQuality) {
-			const tmpWeaponQualities = mod.system.modEffects.damage.weaponQuality[key];
-			if (tmpWeaponQualities.value > 0) if (installed) {
-				updateData[`system.damage.weaponQuality.${key}.value`] = this.item.system.damage.weaponQuality[key].value + tmpWeaponQualities.value;
-				updateData[`system.damage.weaponQuality.${key}.rank`] = this.item.system.damage.weaponQuality[key].rank + tmpWeaponQualities.rank;
-			}
-			else {
-				updateData[`system.damage.weaponQuality.${key}.value`] = this.item.system.damage.weaponQuality[key].value - tmpWeaponQualities.value;
-				updateData[`system.damage.weaponQuality.${key}.rank`] = this.item.system.damage.weaponQuality[key].rank - tmpWeaponQualities.rank;
+			const modWeaponQualities = mod.system.modEffects.damage.weaponQuality[key];
+			const weaponWeaponQualities = this.item.system.damage.weaponQuality[key];
+			if (modWeaponQualities.value !== 0) {// Only run if enabling or disabling a weapon quality. (value = 1 for enable. value = -1 for disable)
+				if (installed) {
+					const newValue = weaponWeaponQualities.value + modWeaponQualities.value;
+					updateData[`system.damage.weaponQuality.${key}.value`] = newValue;
+					if (newValue === 1) updateData[`system.damage.weaponQuality.${key}.rank`] = modWeaponQualities.rank;
+					else updateData[`system.damage.weaponQuality.${key}.rank`] = weaponWeaponQualities.rank + modWeaponQualities.rank;
+				}
+				else {
+					const newValue = weaponWeaponQualities.value - modWeaponQualities.value;
+					updateData[`system.damage.weaponQuality.${key}.value`] = newValue;
+					if (newValue === 0) updateData[`system.damage.weaponQuality.${key}.rank`] = 1;
+					else updateData[`system.damage.weaponQuality.${key}.rank`] = weaponWeaponQualities.rank - modWeaponQualities.rank;
+				}
 			}
 		}
 
