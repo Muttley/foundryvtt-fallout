@@ -58,7 +58,7 @@
 					"value": 0
 				},
 				"vicious": {
-					"rank": 0,
+					"rank": 1,
 					"value": 0
 				}
 			},
@@ -5024,6 +5024,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "medium",
 		"rarity": 2,
 		"skill": "",

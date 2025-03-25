@@ -12,7 +12,7 @@
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
-		"cost": 32,
+		"cost": 39,
 		"creatureAttribute": "body",
 		"creatureSkill": "melee",
 		"damage": {
@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": 0
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -74,8 +74,8 @@
 				"poison": false,
 				"radiation": false
 			},
-			"originalRating": 0,
-			"rating": 5,
+			"originalRating": 5,
+			"rating": 6,
 			"weaponQuality": {
 				"accurate": {
 					"rank": 0,
@@ -221,7 +221,7 @@
 				"sort": 300000,
 				"system": {
 					"attachable": true,
-					"attached": false,
+					"attached": true,
 					"cost": 7,
 					"description": "",
 					"favorite": false,
@@ -1076,10 +1076,10 @@
 				},
 				"type": "weapon_mod"
 			},
-			"installedMods": "",
+			"installedMods": "Spiked",
 			"list": "",
 			"max": 0,
-			"modded": false,
+			"modded": true,
 			"uaOXQJwoub6ZmUdc": {
 				"_id": "uaOXQJwoub6ZmUdc",
 				"_stats": {
@@ -1311,7 +1311,7 @@
 		"stashed": false,
 		"tear": 0,
 		"weaponType": "meleeWeapons",
-		"weight": 2
+		"weight": 3
 	},
 	"type": "weapon"
 }
