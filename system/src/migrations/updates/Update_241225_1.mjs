@@ -5,7 +5,9 @@ export default class Update_241225_1 extends FalloutUpdateBase {
 	static version = 241225.1;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "weapon_mod") return;
+		if (itemData.type !== "weapon_mod") {
+			return;
+		}
 
 		const effect = itemData.system.effect;
 		const perks = itemData.system.perks;

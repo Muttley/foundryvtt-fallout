@@ -5,7 +5,9 @@ export default class Update_240218_2 extends FalloutUpdateBase {
 	static version = 240218.2;
 
 	async updateActor(actorData) {
-		if (!["creature", "npc"].includes(actorData.type)) return;
+		if (!["creature", "npc"].includes(actorData.type)) {
+			return;
+		}
 
 		const updateData = {};
 

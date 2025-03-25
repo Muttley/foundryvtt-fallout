@@ -66,7 +66,9 @@ export default class SourceFilterSettings extends FormApplication {
 
 		const newChoices = [];
 		for (const itemUuid of this.filtered) {
-			if (itemUuid === deleteUuid) continue;
+			if (itemUuid === deleteUuid) {
+				continue;
+			}
 			newChoices.push(itemUuid);
 		}
 
@@ -87,9 +89,13 @@ export default class SourceFilterSettings extends FormApplication {
 			}
 		}
 
-		if (uuid === null) return;
+		if (uuid === null) {
+			return;
+		}
 
-		if (this.filtered.includes(uuid)) return; // No duplicates
+		if (this.filtered.includes(uuid)) {
+			return;
+		} // No duplicates
 
 		this.filtered.push(uuid);
 

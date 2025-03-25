@@ -5,8 +5,12 @@ export default class Update_240311_1 extends FalloutUpdateBase {
 	static version = 240311.1;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "ammo") return;
-		if (itemData.system.quantityRoll !== "") return;
+		if (itemData.type !== "ammo") {
+			return;
+		}
+		if (itemData.system.quantityRoll !== "") {
+			return;
+		}
 
 		const ammoMap = {
 			".308 Round": "6+3dc",

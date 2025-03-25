@@ -22,7 +22,9 @@ export class DialogD6 extends Dialog {
 			let fireRate = html.find(".fr-number")[0]?.value;
 			let diceNum = html.find(".d-number")[0]?.value;
 
-			if (!diceNum) diceNum = this.diceNum;
+			if (!diceNum) {
+				diceNum = this.diceNum;
+			}
 
 			if (fireRate && fireRate !== "0") {
 				diceNum += parseInt(fireRate);
@@ -38,7 +40,9 @@ export class DialogD6 extends Dialog {
 
 					additionalAmmo = await this.checkAmmo(diceNum, initDmg);
 
-					if (additionalAmmo < 0) return;
+					if (additionalAmmo < 0) {
+						return;
+					}
 				}
 			}
 
@@ -62,7 +66,9 @@ export class DialogD6 extends Dialog {
 
 			// REDUCE AMMO FOR CHARACTER AND ROBOT
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				if (!this.actor) return;
+				if (!this.actor) {
+					return;
+				}
 
 				let _actor;
 				if (this.actor.startsWith("Actor")) {
@@ -126,13 +132,21 @@ export class DialogD6 extends Dialog {
 	}
 
 	async checkAmmo(diceNum, initDmg) {
-		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
+		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) {
+			return 0;
+		}
 
-		if (!this.actor) return 0;
+		if (!this.actor) {
+			return 0;
+		}
 
-		if (!this.weapon) return 0;
+		if (!this.weapon) {
+			return 0;
+		}
 
-		if (this.weapon.system.ammo === "") return 0;
+		if (this.weapon.system.ammo === "") {
+			return 0;
+		}
 
 		// Check if there is ammo at all
 		let _actor;
@@ -143,9 +157,13 @@ export class DialogD6 extends Dialog {
 			_actor = fromUuidSync(this.actor).actor;
 		}
 
-		if (!_actor) return 0;
+		if (!_actor) {
+			return 0;
+		}
 
-		if (_actor.type !== "character" && _actor.type !== "robot" && _actor.type !== "vehicle") return 0;
+		if (_actor.type !== "character" && _actor.type !== "robot" && _actor.type !== "vehicle") {
+			return 0;
+		}
 
 		const [ammoItems, shotsAvailable] =
 			_actor._getAvailableAmmoType(

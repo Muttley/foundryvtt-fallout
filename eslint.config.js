@@ -19,6 +19,7 @@ export default [{
 		"comma-style": "warn",
 		"computed-property-spacing": "warn",
 		"constructor-super": "error",
+		"curly": "error",
 		"default-param-last": "warn",
 		"disallowTabs": 0,
 		"dot-location": ["warn", "property"],

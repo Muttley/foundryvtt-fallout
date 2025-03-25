@@ -35,7 +35,9 @@ export default class FalloutCompendiums {
 		let docs = [];
 
 		for (let pack of game.packs) {
-			if (pack.metadata.type !== type) continue;
+			if (pack.metadata.type !== type) {
+				continue;
+			}
 
 			let documents = await pack.getIndex({fields: ["system"]});
 
@@ -223,7 +225,9 @@ export default class FalloutCompendiums {
 
 		let moduleSourceCount = 0;
 		for (const module of game.modules) {
-			if (!module.active) continue;
+			if (!module.active) {
+				continue;
+			}
 
 			const flags = module.flags?.[module.id];
 			const moduleSources = flags?.["fallout-sources"] ?? {};

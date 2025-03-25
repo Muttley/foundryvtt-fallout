@@ -66,11 +66,19 @@ export default class FalloutPartySleep extends Application {
 
 			let currentValue = this.lengthOfSleep;
 
-			if (event.originalEvent.deltaY > 0) currentValue--;
-			if (event.originalEvent.deltaY < 0) currentValue++;
+			if (event.originalEvent.deltaY > 0) {
+				currentValue--;
+			}
+			if (event.originalEvent.deltaY < 0) {
+				currentValue++;
+			}
 
-			if (currentValue < 1) currentValue = 1;
-			if (currentValue > 24) currentValue = 24;
+			if (currentValue < 1) {
+				currentValue = 1;
+			}
+			if (currentValue > 24) {
+				currentValue = 24;
+			}
 
 			if (currentValue !== this.lengthOfSleep) {
 				this.lengthOfSleep = currentValue;
@@ -151,7 +159,9 @@ export default class FalloutPartySleep extends Application {
 		for (const actor of actors) {
 			let actorCanBeProcessed = true;
 
-			if (skipMissingPlayers) actorCanBeProcessed = actor.ownerIsOnline;
+			if (skipMissingPlayers) {
+				actorCanBeProcessed = actor.ownerIsOnline;
+			}
 
 			if (actorCanBeProcessed) {
 				await actor.sleep(

@@ -35,7 +35,9 @@ export default class FalloutMigrationRunner {
 	async migrateCompendium(pack) {
 		const documentName = pack.documentName;
 
-		if (!["Actor", "Item"].includes(documentName)) return;
+		if (!["Actor", "Item"].includes(documentName)) {
+			return;
+		}
 
 		// Unlock the pack for editing
 		const wasLocked = pack.locked;
@@ -60,7 +62,9 @@ export default class FalloutMigrationRunner {
 				}
 
 				// Save the entry if data was updated
-				if (foundry.utils.isEmpty(updateData)) continue;
+				if (foundry.utils.isEmpty(updateData)) {
+					continue;
+				}
 
 				await doc.update(updateData);
 
@@ -82,7 +86,9 @@ export default class FalloutMigrationRunner {
 		for (const token of scene.tokens) {
 			try {
 				// if the token is linked or has no actor, we don"t need to do anything
-				if (token.actorLink || !game.actors.has(token.actorId)) continue;
+				if (token.actorLink || !game.actors.has(token.actorId)) {
+					continue;
+				}
 
 				const actorData = foundry.utils.duplicate(game.actors.get(token.actorId));
 
@@ -131,7 +137,9 @@ export default class FalloutMigrationRunner {
 			// enabled
 			//
 			if (!this.migrateSystemCompendiumsEnabled) {
-				if (pack.metadata.packageType !== "world") continue;
+				if (pack.metadata.packageType !== "world") {
+					continue;
+				}
 			}
 
 			await this.migrateCompendium(pack);
@@ -256,7 +264,9 @@ export default class FalloutMigrationRunner {
 			);
 		}
 
-		if (!this.needsMigration()) return;
+		if (!this.needsMigration()) {
+			return;
+		}
 
 		const startMessage = game.i18n.localize("FALLOUT.MIGRATION.begin_migration");
 

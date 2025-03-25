@@ -34,7 +34,9 @@ export class FalloutModuleArtConfig extends FormApplication {
 		context.config = [];
 
 		for (const module of game.modules) {
-			if (!FalloutModuleArt.getModuleArtPath(module)) continue;
+			if (!FalloutModuleArt.getModuleArtPath(module)) {
+				continue;
+			}
 			const settings = this.object[module.id] ?? {portraits: true, tokens: true};
 			context.config.push({label: module.title, id: module.id, ...settings});
 		}

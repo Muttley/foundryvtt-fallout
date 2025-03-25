@@ -5,7 +5,9 @@ export default class Update_240425_2 extends FalloutUpdateBase {
 	static version = 240425.2;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "weapon") return;
+		if (itemData.type !== "weapon") {
+			return;
+		}
 
 		const updateData = {};
 

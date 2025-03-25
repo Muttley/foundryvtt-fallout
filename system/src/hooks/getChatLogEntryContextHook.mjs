@@ -20,7 +20,9 @@ export const getChatLogEntryContextHook = {
 					const message = game.messages.get(li.attr("data-message-id"));
 					const messageData = message.flags.data;
 
-					if (messageData.type !== "salvage-junk") return;
+					if (messageData.type !== "salvage-junk") {
+						return;
+					}
 
 					game.time.advance(messageData.timeToSalvageMins * 60);
 

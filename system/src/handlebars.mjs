@@ -34,14 +34,20 @@ export default function registerHandlebarsHelpers() {
 		const elements = [];
 
 		for (const key in effects) {
-			if (!CONFIG.FALLOUT.DAMAGE_EFFECTS.hasOwnProperty(key)) continue;
+			if (!CONFIG.FALLOUT.DAMAGE_EFFECTS.hasOwnProperty(key)) {
+				continue;
+			}
 
 			const effect = effects[key];
 
-			if (!effect.value) continue;
+			if (!effect.value) {
+				continue;
+			}
 
 			let effectName = CONFIG.FALLOUT.DAMAGE_EFFECTS[key];
-			if (effect.rank > 0) effectName += ` ${effect.rank}`;
+			if (effect.rank > 0) {
+				effectName += ` ${effect.rank}`;
+			}
 
 			const tooltip = CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key];
 
@@ -73,7 +79,9 @@ export default function registerHandlebarsHelpers() {
 			const resultHtml = document.createElement("span");
 			if (key === "attributes") {
 				for (const att in requirements[key]) {
-					if (requirements[key][att].value <= 0) continue;
+					if (requirements[key][att].value <= 0) {
+						continue;
+					}
 
 					let attAbbrName = game.i18n.localize(
 						`FALLOUT.AbilityAbbr.${att}`
@@ -88,13 +96,17 @@ export default function registerHandlebarsHelpers() {
 			else {
 				const requirement = requirements[key];
 
-				if (!requirement) continue;
+				if (!requirement) {
+					continue;
+				}
 
 				let requirementName = game.i18n.localize(
 					`FALLOUT.Item.Perk.${key}`
 				);
 
-				if ((typeof requirement) === "number" && requirement >= 1) requirementName += ` ${requirement}`;
+				if ((typeof requirement) === "number" && requirement >= 1) {
+					requirementName += ` ${requirement}`;
+				}
 
 
 				resultHtml.dataset.key = key;
@@ -119,14 +131,20 @@ export default function registerHandlebarsHelpers() {
 		const elements = [];
 
 		for (const key in qualities) {
-			if (!CONFIG.FALLOUT.WEAPON_QUALITIES.hasOwnProperty(key)) continue;
+			if (!CONFIG.FALLOUT.WEAPON_QUALITIES.hasOwnProperty(key)) {
+				continue;
+			}
 
 			const quality = qualities[key];
 
-			if (!quality.value) continue;
+			if (!quality.value) {
+				continue;
+			}
 
 			let qualityName = CONFIG.FALLOUT.WEAPON_QUALITIES[key];
-			if (quality.rank > 0) qualityName += `&nbsp;${quality.rank}`;
+			if (quality.rank > 0) {
+				qualityName += `&nbsp;${quality.rank}`;
+			}
 
 			const tooltip = CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key];
 
@@ -155,7 +173,9 @@ export default function registerHandlebarsHelpers() {
 		const elements = [];
 
 		for (const key in weaponMods) {
-			if (!weaponMods[key].system?.attached) continue;
+			if (!weaponMods[key].system?.attached) {
+				continue;
+			}
 
 
 			const resultHtml = document.createElement("span");
@@ -298,8 +318,12 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("isWeaponDamaged", function(weapon) {
-		if (!weapon.tear) return false;
-		else return true;
+		if (!weapon.tear) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	});
 
 	// * Use with #if

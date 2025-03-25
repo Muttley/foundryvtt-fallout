@@ -34,10 +34,16 @@ export class DieFalloutDamage extends foundry.dice.terms.Die {
 	};
 
 	get total() {
-		if (!this._evaluated) return null;
+		if (!this._evaluated) {
+			return null;
+		}
 		return this.results.reduce((t, r) => {
-			if (!r.active) return t;
-			if (r.count !== undefined) return t + r.count;
+			if (!r.active) {
+				return t;
+			}
+			if (r.count !== undefined) {
+				return t + r.count;
+			}
 			return t + DieFalloutDamage.getValue(r.result);
 		}, 0);
 	}

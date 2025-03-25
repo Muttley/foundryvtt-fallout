@@ -62,7 +62,9 @@ export default class ScavengingTableSettings extends FormApplication {
 
 		data.compendiums = {};
 		for (let pack of game.packs) {
-			if (pack.metadata.type !== "RollTable") continue;
+			if (pack.metadata.type !== "RollTable") {
+				continue;
+			}
 
 			data.compendiums[pack.metadata.id] =
 				`[${pack.metadata.packageName}] ${pack.metadata.label}`;

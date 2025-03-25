@@ -1,7 +1,9 @@
 export default class FalloutItem extends Item {
 
 	get currentWeaponDamage() {
-		if (this.type !== "weapon") return undefined;
+		if (this.type !== "weapon") {
+			return undefined;
+		}
 
 		let damageDice = parseInt(this.system.damage?.rating ?? 0);
 
@@ -12,7 +14,9 @@ export default class FalloutItem extends Item {
 
 		if (game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) {
 			let wearAndTear = Number(this.system.tear);
-			if (isNaN(wearAndTear)) wearAndTear = 0;
+			if (isNaN(wearAndTear)) {
+				wearAndTear = 0;
+			}
 
 			damageDice -= wearAndTear;
 		}
@@ -25,13 +29,19 @@ export default class FalloutItem extends Item {
 	}
 
 	get isWeaponBroken() {
-		if (this.type !== "weapon") return false;
-		if (!game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) return false;
+		if (this.type !== "weapon") {
+			return false;
+		}
+		if (!game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) {
+			return false;
+		}
 
 		let damageDice = parseInt(this.system.damage?.rating ?? 0);
 
 		let wearAndTear = Number(this.system.tear);
-		if (isNaN(wearAndTear)) wearAndTear = 0;
+		if (isNaN(wearAndTear)) {
+			wearAndTear = 0;
+		}
 
 		damageDice -= wearAndTear;
 
@@ -39,7 +49,9 @@ export default class FalloutItem extends Item {
 	}
 
 	get shotsAvailable() {
-		if (!this.actor) return null;
+		if (!this.actor) {
+			return null;
+		}
 
 		if (this.type === "ammo") {
 			let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
@@ -63,7 +75,9 @@ export default class FalloutItem extends Item {
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
-		if (data.img) return; // Already had an image set so we won"t change it
+		if (data.img) {
+			return;
+		} // Already had an image set so we won"t change it
 
 		const img = CONFIG.FALLOUT.DEFAULT_ICONS[data.type] ?? undefined;
 
@@ -73,7 +87,9 @@ export default class FalloutItem extends Item {
 	}
 
 	async deleteSettlementStructure() {
-		if (!this.actor) return null;
+		if (!this.actor) {
+			return null;
+		}
 
 		const directDescendants = this.actor.items.filter(
 			i => i.system.parentItem === this._id
@@ -91,7 +107,9 @@ export default class FalloutItem extends Item {
 	 */
 	getRollData() {
 		// If present, return the actor's roll data.
-		if (!this.actor) return null;
+		if (!this.actor) {
+			return null;
+		}
 		const rollData = this.actor.getRollData();
 		rollData.item = foundry.utils.deepClone(this.system);
 
@@ -225,7 +243,9 @@ export default class FalloutItem extends Item {
 	}
 
 	weaponQualitiesString() {
-		if (this.type !== "weapon") return "";
+		if (this.type !== "weapon") {
+			return "";
+		}
 
 		const qualities = [];
 		for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
@@ -245,12 +265,14 @@ export default class FalloutItem extends Item {
 			return source;
 		}
 
-		const uuid = `Compendium.${options.pack}.${source._id}`;
+		const uuid = `Compendium.${options.pack}.Item.${source._id}`;
 
 		const art = fallout.moduleArt.map.get(uuid);
 
 		if (art?.img) {
-			if (art.img) source.img = art.img;
+			if (art.img) {
+				source.img = art.img;
+			}
 		}
 		return source;
 	}
