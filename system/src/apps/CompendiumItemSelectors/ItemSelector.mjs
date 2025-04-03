@@ -52,7 +52,11 @@ export default class ItemSelector extends CompendiumItemSelector {
 					item.system.apparelType
 				];
 
-				return `${item.name} (${apparelType})`;
+				const modType = CONFIG.FALLOUT.APPAREL_MOD_TYPES[
+					item.system.modType
+				];
+
+				return `${item.name} (${apparelType} ${modType})`;
 			}
 			case "books_and_magz": {
 				if (item.system.publication !== "") {

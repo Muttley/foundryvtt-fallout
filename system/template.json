@@ -1051,6 +1051,7 @@
 				"physical": 0,
 				"radiation": 0
 			},
+			"shadowed": false,
 			"templates": [
 				"base",
 				"physical",

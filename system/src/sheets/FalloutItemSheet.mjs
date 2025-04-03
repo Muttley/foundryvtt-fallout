@@ -160,9 +160,10 @@ export default class FalloutItemSheet extends ItemSheet {
 		switch (item.type) {
 			case "apparel":
 				await this.getPowerArmorPieceData(context);
+				await this.getApparelData(context, item);
 				break;
 			case "apparel_mod":
-				await this.getApparelModData(context);
+				await this.getApparelModData(context, item);
 				break;
 			case "object_or_structure":
 				await this.getObjectOrStructureData(context, source, item);
@@ -183,6 +184,18 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		return context;
+	}
+
+	async getApparelData(context, item) {
+		// Add all apparel data to context
+
+		// Get apparel mods attached to the apparel. Group by modType
+		let modsByType = await this._getApparelModsByType(item);
+
+
+		context.modsByType = modsByType;
+		context.modded = item.system.mods.modded;
+
 	}
 
 	async getPowerArmorPieceData(context) {
@@ -218,19 +231,19 @@ export default class FalloutItemSheet extends ItemSheet {
 	}
 
 	async getApparelModData(context, item) {
+		// Add all apparel mod data to context
+
+		// context.damageTypes = [];
+		// for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
+		//	context.damageTypes.push({
+		//		active: item.system?.modEffects?.damage?.damageType[key] ?? 0,
+		//		key,
+		//		label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
+		//	});
+		// }
 
 
-		context.damageTypes = [];
-		for (const key in CONFIG.FALLOUT.DAMAGE_TYPES) {
-			context.damageTypes.push({
-				active: item.system?.modEffects?.damage?.damageType[key] ?? 0,
-				key,
-				label: CONFIG.FALLOUT.DAMAGE_TYPES[key],
-			});
-		}
-
-
-		context.modSummary = this.getWeaponModSummary(item);
+		context.modSummary = this.getApparelModSummary(item);
 
 	}
 
@@ -599,14 +612,20 @@ export default class FalloutItemSheet extends ItemSheet {
 		// CLICK TO EXPAND
 		html.find(".expandable-info").click(async event => this._onModSummary(event));
 
-		// Install mod
-		html.find(".toggle-mod").click(async event => this._onToggleMod(event));
+		// Install weapon mod
+		html.find(".toggle-weapon-mod").click(async event => this._onToggleWeaponMod(event));
+
+		// Install weapon mod
+		html.find(".toggle-apparel-mod").click(async event => this._onToggleApparelMod(event));
 
 		// Delete mod
 		html.find(".item-delete").click(async ev => {
 			ev.preventDefault();
+			let li;
+			if (this.item.type === "weapon") li = $(ev.currentTarget).parents(".weapon_mod");
+			else if (this.item.type === "apparel") li = $(ev.currentTarget).parents(".apparel_mod");
+			else return;
 
-			let li = $(ev.currentTarget).parents(".weapon_mod");
 			li.slideUp(200, () => this.render(false));
 
 			const updateData = {};
@@ -622,7 +641,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 	async _getApparelModsByType(item) {
 
-		// Weapon Mods
+		// Apparel Mods
 		let modsByType = {};
 
 		for (let mod in item.system.mods) {
@@ -641,14 +660,19 @@ export default class FalloutItemSheet extends ItemSheet {
 			}
 		}
 
-
 		for (let key in modsByType) {
 			modsByType[key] = modsByType[key].sort(
 				(a, b) => a.name.localeCompare(b.name)
 			);
 		}
 
-		return modsByType;
+		let sortedModsByType = {};
+
+		for (const key in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
+			if (modsByType.hasOwnProperty(key)) sortedModsByType[key] = modsByType[key];
+		}
+
+		return sortedModsByType;
 	}
 
 	async _getWeaponModsByType(item) {
@@ -682,7 +706,110 @@ export default class FalloutItemSheet extends ItemSheet {
 		return modsByType;
 	}
 
-	async _onToggleMod(event) {
+	async _onToggleApparelMod(event) {
+		event.preventDefault();
+		let li = $(event.currentTarget).parents(".apparel_mod");
+		let mod = this.item.system.mods[li.data("itemId")];
+		const updateData = {};
+
+		const installed = !mod.system.attached;
+
+		// Check if this type is already installed.
+		let modsByType = await this._getApparelModsByType(this.item);
+		if (modsByType[mod.system.modType].installed && installed) {
+			ui.notifications.warn("Only one mod per type allowed to be installed.");
+			return;
+		}
+
+		updateData[`system.mods.${mod._id}.system.attached`] = installed;
+
+		// Keep track of the name of installed mods for the chat output.
+		if (installed) {
+			// Add mod.system.name if it's not already in the list
+			updateData["system.mods.installedMods"] = this.item.system.mods.installedMods
+				? `${this.item.system.mods.installedMods}, ${mod.name}`.split(", ")
+					.filter((item, index, arr) => arr.indexOf(item) === index)
+					.join(", ")
+				: mod.name;
+		}
+		else {
+			// Remove mod.system.name if it exists
+			updateData["system.mods.installedMods"] = this.item.system.mods.installedMods
+				.split(", ")
+				.filter(item => item.trim() !== mod.name)
+				.join(", ");
+		}
+
+		// Health
+		if (mod.system.health.value !== 0) {
+			if (installed) {
+				updateData["system.health.value"] = this.item.system.health.value + mod.system.health.value;
+			}
+			else updateData["system.health.value"] = this.item.system.health.value - mod.system.health.value;
+		}
+
+		// Resistances
+		if (mod.system.resistance.energy !== 0) {
+			if (installed) {
+				updateData["system.resistance.energy"] = this.item.system.resistance.energy + mod.system.resistance.energy;
+			}
+			else updateData["system.resistance.energy"] = this.item.system.resistance.energy - mod.system.resistance.energy;
+		}
+
+		if (mod.system.resistance.physical !== 0) {
+			if (installed) {
+				updateData["system.resistance.physical"] = this.item.system.resistance.physical + mod.system.resistance.physical;
+			}
+			else updateData["system.resistance.physical"] = this.item.system.resistance.physical - mod.system.resistance.physical;
+		}
+
+		if (mod.system.resistance.radiation !== 0) {
+			if (installed) {
+				updateData["system.resistance.radiation"] = this.item.system.resistance.radiation + mod.system.resistance.radiation;
+			}
+			else updateData["system.resistance.radiation"] = this.item.system.resistance.radiation - mod.system.resistance.radiation;
+		}
+
+		// Shadowed
+		if (mod.system.shadowed) {
+			if (installed) {
+				updateData["system.shadowed"] = true;
+			}
+			else updateData["system.shadowed"] = false;
+		}
+
+		// Cost
+		if (mod.system.cost > 0) {
+			if (installed) {
+				updateData["system.cost"] = this.item.system.cost + mod.system.cost;
+			}
+			else updateData["system.cost"] = this.item.system.cost - mod.system.cost;
+		}
+
+		// Weight
+		if (mod.system.weight > 0) {
+			if (installed) {
+				updateData["system.weight"] = this.item.system.weight + mod.system.weight;
+			}
+			else updateData["system.weight"] = this.item.system.weight - mod.system.weight;
+		}
+
+		// Lock if mod is attached.
+		if (installed) updateData["system.mods.modded"] = true;
+		else {
+			// Unlock if all mods removed.
+			updateData["system.mods.modded"] = false;
+			for (const key in this.item.system.mods) {
+				if (this.item.system.mods[key].system?.attached && mod._id !== key) {
+					updateData["system.mods.modded"] = true;
+					break;
+				}
+			}
+		}
+		this.item.update(updateData);
+	}
+
+	async _onToggleWeaponMod(event) {
 		event.preventDefault();
 		let li = $(event.currentTarget).parents(".weapon_mod");
 		let mod = this.item.system.mods[li.data("itemId")];
@@ -857,7 +984,30 @@ export default class FalloutItemSheet extends ItemSheet {
 
 	getApparelModSummary(mod) {
 		let modSummary = [];
-		
+
+
+		// Health
+		if (mod.system.health.value !== 0) modSummary.push(`${game.i18n.localize("FALLOUT.HEALTH.health")} ${mod.system.health.value > 0 ? "+" : ""}${mod.system.health.value}`);
+
+
+		// Resistances
+		let resistances = [];
+		if (mod.system.resistance.energy !== 0) resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.energy")} ${mod.system.resistance.energy > 0 ? "+" : ""}${mod.system.resistance.energy}`);
+
+		if (mod.system.resistance.physical !== 0) resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.physical")} ${mod.system.resistance.physical > 0 ? "+" : ""}${mod.system.resistance.physical}`);
+
+
+		if (mod.system.resistance.radiation !== 0) resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.radiation")} ${mod.system.resistance.radiation > 0 ? "+" : ""}${mod.system.resistance.radiation}`);
+
+
+		if (resistances.length > 1) modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances.join(", ")}`);
+
+
+		// Shadowed
+		if (mod.system.shadowed) modSummary.push(game.i18n.localize("FALLOUT.APPAREL_MOD.shadowed"));
+
+
+		modSummary.push(mod.system.effect);
 
 		if (modSummary.length > 1) return modSummary.join(", ");
 		else return modSummary;
@@ -930,7 +1080,7 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		let currentChoices = choicesKey
 			.split(".")
-			.reduce((obj, path) => obj ? obj[path]: [], this.item.system);
+			.reduce((obj, path) => obj ? obj[path] : [], this.item.system);
 
 		const newChoices = [];
 		for (const itemUuid of currentChoices) {

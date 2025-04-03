@@ -2,7 +2,7 @@
 
 	<div class="flexrow resource-row">
 		<label class="field-label">
-			{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}
+			{{localize "FALLOUT.TEMPLATES.Mod_Type"}}
 		</label>
 
 		{{#select system.modType}}
@@ -14,6 +14,38 @@
 			{{/each}}
 		</select>
 		{{/select}}
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.UI.Rarity"}}
+		</label>
+		<select name="system.rarity">
+			<option value="common"
+					{{#ifCond system.rarity "===" "common"}}
+					selected
+					{{/ifCond}}>
+				{{localize "FALLOUT.actor.inventory.materials.common"}}
+			</option>
+			<option value="uncommon"
+					{{#ifCond system.rarity "===" "uncommon"}}
+					selected
+					{{/ifCond}}>
+				{{localize "FALLOUT.actor.inventory.materials.uncommon"}}
+			</option>
+			<option value="rare"
+					{{#ifCond system.rarity "===" "rare"}}
+					selected
+					{{/ifCond}}>
+				{{localize "FALLOUT.actor.inventory.materials.rare"}}
+			</option>
+		</select>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Apparel_Type"}}
+		</label>
 
 		{{#select system.apparelType}}
 		<select name="system.apparelType">
@@ -114,7 +146,8 @@
 			{{localize "FALLOUT.TEMPLATES.Effects"}}
 		</h3>
 		<div class="description-field">
-			{{editor effectHTML
+			{{
+editor effectHTML
 				target="system.effect"
 				button=true
 				owner=owner

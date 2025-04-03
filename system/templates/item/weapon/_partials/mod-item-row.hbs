@@ -16,16 +16,17 @@
 		</div>
 		<div class=" item-controls" style="flex: 1 0 5%;">
 			<a {{#if item.system.attached}}
-			   class="item-control toggle-mod"
+			   class="item-control toggle-weapon-mod"
+			   title='{{localize "FALLOUT.WEAPON_MOD.summary.remove"}}'
 			   {{else}}
-			   class="item-control toggle-mod item-unequipped"
-			   {{/if}}
-			   title='{{localize "FALLOUT.attached"}}'>
+			   class="item-control toggle-weapon-mod item-unequipped"
+			   title='{{localize "FALLOUT.Item.PowerArmor.Attach"}}'
+			   {{/if}}>
 				<i class="fa-solid fa-gun"></i>
 			</a>
 			{{#unless item.system.attached}}
 			<a class="item-control item-delete"
-			   title="Delete Item">
+			   title={{localize "FALLOUT.TEMPLATES.Delete"}}>
 				<i class="fas fa-trash"></i>
 			</a>
 			{{/unless}}
