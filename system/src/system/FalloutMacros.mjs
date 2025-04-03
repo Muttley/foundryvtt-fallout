@@ -78,7 +78,9 @@ export default class FalloutMacros {
 	static async drinkDirtyWater() {
 		const actor = await FalloutMacros._getMacroActor();
 
-		if (!actor) return;
+		if (!actor) {
+			return;
+		}
 
 		renderTemplate(
 			"systems/fallout/templates/dialogs/are-you-sure.hbs"
@@ -122,7 +124,9 @@ export default class FalloutMacros {
 				for (const player of players) {
 					const actor = player.character;
 
-					if (actor) actor.updateAddictions();
+					if (actor) {
+						actor.updateAddictions();
+					}
 				}
 
 				return ui.notifications.info(
@@ -162,7 +166,9 @@ export default class FalloutMacros {
 				for (const player of players) {
 					const actor = player.character;
 
-					if (!actor) continue; // Player doesn't own a character
+					if (!actor) {
+						continue;
+					} // Player doesn't own a character
 
 					const updateData = {
 						"system.conditions.intoxication": 0,

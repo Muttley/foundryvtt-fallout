@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 45,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -159,7 +153,7 @@
 					},
 					"suppressed": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"surge": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Suppressed</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "muzzle",
 		"namePrefix": "Suppressed",
+		"perks": "Gun Nut 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

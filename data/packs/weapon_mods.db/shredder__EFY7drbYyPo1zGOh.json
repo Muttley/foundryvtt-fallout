@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 5,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Melee weapon,</p>\n<p>Deals @fos[DC] of Physical damage equal to Fire Rate</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Melee weapon,&nbsp;Deals @fos[DC] of Physical damage equal to Fire Rate</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "muzzle",
 		"namePrefix": "Bayoneted Shredding",
+		"perks": "Gun Nut 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

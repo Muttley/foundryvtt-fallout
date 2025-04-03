@@ -1,35 +1,10 @@
-// Add custom fonts by visiting and search https://fonts.google.com
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-// Import utilities.
-@import "utils/typography";
-@import "utils/colors";
-@import "utils/mixins";
-@import "utils/variables";
-
-/* Global styles */
-@import "global/window";
-@import "global/grid";
-@import "global/flex";
-@import "global/buttons";
-@import "global/journal";
-@import "components/aptracker";
+@use "sass:meta";
+@use "global";
+@use "utils";
 
 /* Styles limited to fallout sheets */
 .fallout {
-	@import "components/forms";
-	@import "components/resource";
-	@import "components/items";
-	@import "components/effects";
-
-	h5 {
-		text-align: center;
-		font-weight: bold;
-		background: #2d3f5e;
-		padding-top: 4px;
-		padding-bottom: 4px;
-		margin: 0;
-	}
+	@include meta.load-css('components');
 }
 
 .fallout.sheet.actor {

@@ -72,6 +72,9 @@ export async function initHook() {
 
 	preloadHandlebarsTemplates();
 
+	// FalloutUtils.loadLegacyArtMappings();
+	// fallout.moduleArt.registerModuleArt();
+
 	FalloutHooks.attach();
 }
 

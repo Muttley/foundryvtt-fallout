@@ -6,7 +6,9 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 
 	async updateItem(itemData, actorData) {
 
-		if (itemData.type !== "weapon") return;
+		if (itemData.type !== "weapon") {
+			return;
+		}
 
 		const updateData = {};
 

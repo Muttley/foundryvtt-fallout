@@ -5,7 +5,9 @@ export default class Update_240217_4 extends FalloutUpdateBase {
 	static version = 240217.4;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "weapon") return;
+		if (itemData.type !== "weapon") {
+			return;
+		}
 
 		const badQualities = [
 			"arc",

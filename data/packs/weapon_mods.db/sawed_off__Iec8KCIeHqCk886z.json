@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 3,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -99,7 +93,7 @@
 					},
 					"close_quarters": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"concealed": {
 						"rank": 0,
@@ -171,7 +165,7 @@
 					},
 					"two_handed": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"unreliable": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Remove Two-Handed</p>\n<p>Gain Close Quarters</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "Sawed Off",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

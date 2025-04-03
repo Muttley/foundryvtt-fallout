@@ -21,7 +21,9 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 		// -------------------------------------------------------------
 		// ! Everything below here is only needed if the sheet is editable
-		if (!this.isEditable) return;
+		if (!this.isEditable) {
+			return;
+		}
 
 		html.find(".reset-ap-spend").click(event => {
 			event.preventDefault();
@@ -137,7 +139,9 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 					r => fallout.utils.isCompendiumTableResult(r)
 				);
 
-				if (!result) continue;
+				if (!result) {
+					continue;
+				}
 
 				const itemUuid = [
 					"Compendium",
@@ -184,7 +188,9 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 			const rollCount = categoryDetails.min + categoryDetails.spend;
 
-			if (rollCount <= 0) continue;
+			if (rollCount <= 0) {
+				continue;
+			}
 
 			if (categoryDetails.table === "" && category !== "junk") {
 				ui.notifications.warn(
@@ -202,7 +208,9 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 		// Update ammo counts if needed
 		for (const item of this.actor.items) {
-			if (item.type === "ammo") item.rollQuantity("update");
+			if (item.type === "ammo") {
+				item.rollQuantity("update");
+			}
 		}
 
 		// Roll for caps if necessary
@@ -312,7 +320,9 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 							Math.min((max - min), (itemTypes[category]?.spend ?? 0));
 					}
 
-					if (reduction === 0) break;
+					if (reduction === 0) {
+						break;
+					}
 				}
 			}
 

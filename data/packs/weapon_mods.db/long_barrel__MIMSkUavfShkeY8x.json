@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 20,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -99,7 +93,7 @@
 					},
 					"close_quarters": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"concealed": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Remove Close Quarters</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
 		"modType": "barrel",
 		"namePrefix": "Long",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

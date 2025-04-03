@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 6,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Allows the weapon to take a Muzzle mod</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Allows the weapon to take a Muzzle mod</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

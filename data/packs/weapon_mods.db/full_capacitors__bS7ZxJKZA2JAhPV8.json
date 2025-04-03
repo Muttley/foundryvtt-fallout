@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 37,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 3; Science! 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -65,7 +59,7 @@
 					},
 					"vicious": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					}
 				},
 				"damageType": {
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Vicious</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "capacitor",
 		"namePrefix": "High Capacity",
+		"perks": "Gun Nut 3; Science! 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

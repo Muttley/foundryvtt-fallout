@@ -42,8 +42,12 @@ export default class FalloutConditionTracker {
 	}
 
 	onUpdateWorldTime(worldTime, worldDelta) {
-		if (this.isDisabled) return;
-		if (!game.user.isGM) return;
+		if (this.isDisabled) {
+			return;
+		}
+		if (!game.user.isGM) {
+			return;
+		}
 
 		const secondsSinceLastTick = Math.abs(worldTime - this.lastWorldTime);
 

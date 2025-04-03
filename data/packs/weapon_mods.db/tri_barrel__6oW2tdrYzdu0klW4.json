@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 75,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 4",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -75,7 +69,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 2,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+2 @fos[DC]</p>\n<p>-2 Fire Rate</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": -2,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "barrel",
 		"namePrefix": "High-Powered",
+		"perks": "Gun Nut 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

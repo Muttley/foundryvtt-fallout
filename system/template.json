@@ -1301,7 +1301,7 @@
 						"value": 0
 					},
 					"piercing_x": {
-						"rank": 0,
+						"rank": 1,
 						"value": 0
 					},
 					"radioactive": {
@@ -1317,7 +1317,7 @@
 						"value": 0
 					},
 					"tranquilize_x": {
-						"rank": 0,
+						"rank": 1,
 						"value": 0
 					},
 					"vicious": {
@@ -1349,7 +1349,7 @@
 						"value": 0
 					},
 					"ammo_hungry_x": {
-						"rank": 0,
+						"rank": 1,
 						"value": 0
 					},
 					"blast": {
@@ -1373,7 +1373,7 @@
 						"value": 0
 					},
 					"delay_x": {
-						"rank": 0,
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {
@@ -1405,7 +1405,7 @@
 						"value": 0
 					},
 					"recoil_x": {
-						"rank": 0,
+						"rank": 1,
 						"value": 0
 					},
 					"recon": {
@@ -1459,6 +1459,7 @@
 				"max": 0,
 				"modded": false
 			},
+			"originalAmmoPerShot": 0,
 			"range": "",
 			"skill": "",
 			"tear": 0,

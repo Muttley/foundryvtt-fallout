@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 0,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -79,7 +73,7 @@
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"ammo_hungry_x": {
 						"rank": 0,
@@ -119,7 +113,7 @@
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"limited": {
 						"rank": 0,
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Inaccurate</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "barrel",
 		"namePrefix": "Snubnosed",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

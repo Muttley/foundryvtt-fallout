@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 14,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>May re-roll hit location die</p>\n<p>&nbsp;</p>",
+			"effect": "<p>May re-roll hit location die</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "sight",
 		"namePrefix": "Tactical",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

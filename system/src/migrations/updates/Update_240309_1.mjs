@@ -5,8 +5,12 @@ export default class Update_240309_1 extends FalloutUpdateBase {
 	static version = 240309.1;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "weapon") return;
-		if (itemData.system.ammo === "") return;
+		if (itemData.type !== "weapon") {
+			return;
+		}
+		if (itemData.system.ammo === "") {
+			return;
+		}
 
 		const ammo = await fallout.compendiums.ammo();
 

@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 25,
-		"crafting": {
-			"complexity": "",
-			"perks": "Blacksmith 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -41,7 +35,7 @@
 					},
 					"persistent": {
 						"rank": 0,
-						"value": 0
+						"value": 1
 					},
 					"piercing_x": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Gain Persistent</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "melee",
 		"namePrefix": "Serrated",
+		"perks": "Blacksmith 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

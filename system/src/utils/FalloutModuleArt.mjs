@@ -18,7 +18,9 @@ export class FalloutModuleArt {
 	static getModuleArtPath(module) {
 		const flags = module.flags?.[module.id];
 		const artPath = flags?.["fallout-art"];
-		if (!artPath || !module.active) return null;
+		if (!artPath || !module.active) {
+			return null;
+		}
 		return artPath;
 	}
 
@@ -32,12 +34,16 @@ export class FalloutModuleArt {
 		for (const [packName, items] of Object.entries(mapping)) {
 			const pack = game.packs.get(packName);
 
-			if (!pack) continue;
+			if (!pack) {
+				continue;
+			}
 
 			for (let [itemId, info] of Object.entries(items))  {
 				const entry = pack.index.get(itemId);
 
-				if (!entry) continue;
+				if (!entry) {
+					continue;
+				}
 
 				if (settings.items) {
 					entry.img = info.img;
@@ -48,13 +54,13 @@ export class FalloutModuleArt {
 
 				delete info.__ITEM_NAME__;
 
-				const uuid = `Compendium.${packName}.${itemId}`;
+				const uuid = pack.getUuid(itemId);
 
 				info = foundry.utils.mergeObject(
 					this.map.get(uuid) ?? {}, info, {inplace: false}
 				);
 
-				this.map.set(`Compendium.${packName}.${itemId}`, info);
+				this.map.set(uuid, info);
 			}
 		}
 	}
@@ -65,7 +71,9 @@ export class FalloutModuleArt {
 		for (const module of game.modules) {
 			const artPath = this.constructor.getModuleArtPath(module);
 
-			if (!artPath) continue;
+			if (!artPath) {
+				continue;
+			}
 
 			try {
 				const mapping = await foundry.utils.fetchJsonWithTimeout(artPath);

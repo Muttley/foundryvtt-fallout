@@ -5,7 +5,9 @@ export default class Update_240105_1 extends FalloutUpdateBase {
 	static version = 240105.1;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "consumable") return;
+		if (itemData.type !== "consumable") {
+			return;
+		}
 
 		const updateData = {};
 

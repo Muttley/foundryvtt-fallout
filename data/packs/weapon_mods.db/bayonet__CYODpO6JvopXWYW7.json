@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 10,
-		"crafting": {
-			"complexity": "",
-			"perks": "",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,7 +183,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Melee weapon, deals 4 @fos[DC] Piercing 1 physical damage</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+			"effect": "<p>Melee weapon, deals 4DC Piercing 1 physical damage</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -197,6 +191,7 @@
 		},
 		"modType": "muzzle",
 		"namePrefix": "Bayoneted",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

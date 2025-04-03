@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 20,
-		"crafting": {
-			"complexity": "",
-			"perks": "Science! 1",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
 		"modType": "muzzle",
 		"namePrefix": "Focused",
+		"perks": "Science! 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

@@ -103,7 +103,9 @@ export default class FalloutPerkManager {
 
 			const levelRequired = startLevel + ((nextPerkRank - 1) * rankLevelStep);
 
-			if (playerLevel < levelRequired) requirementsMet = false;
+			if (playerLevel < levelRequired) {
+				requirementsMet = false;
+			}
 		}
 		else if (playerLevel < requirements.level ?? 1) {
 			requirementsMet = false;

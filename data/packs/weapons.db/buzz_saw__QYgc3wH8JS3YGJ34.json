@@ -142,7 +142,7 @@
 					"value": 0
 				},
 				"recoil_x": {
-					"rank": 0,
+					"rank": 1,
 					"value": 0
 				},
 				"recon": {
@@ -201,6 +201,7 @@
 			"max": 0,
 			"modded": false
 		},
+		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",
 		"rarity": 0,

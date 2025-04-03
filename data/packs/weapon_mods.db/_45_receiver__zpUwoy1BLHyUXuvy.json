@@ -10,16 +10,10 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 19,
-		"crafting": {
-			"complexity": "",
-			"perks": "Gun Nut 2",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
-			"ammo": "",
+			"ammo": ".45 Round",
 			"ammoPerShot": 0,
 			"damage": {
 				"damageEffect": {
@@ -74,8 +68,8 @@
 					"poison": false,
 					"radiation": false
 				},
-				"overrideDamage": "modify",
-				"rating": 0,
+				"overrideDamage": "override",
+				"rating": 4,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>Change damage to 4 @fos[DC]</p>\n<p>+1 fire rate</p>\n<p>Ammo changes to @UUID[Item.sNuUqfuwQTubAOi4]{.45 Round}</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": 1,
 			"info": "",
 			"range": 0,
 			"summary": ""
 		},
 		"modType": "receiver",
 		"namePrefix": ".45",
+		"perks": "Gun Nut 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

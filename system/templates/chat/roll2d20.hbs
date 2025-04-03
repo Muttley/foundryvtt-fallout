@@ -23,37 +23,46 @@
 		</div>
 
 		{{#if (ne item null)}}
-		<div class="hit-location-label" style="color: grey">
-			<span>
-				<strong>
-					{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
-				</strong>
-				{{{listWeaponQualities item.system.damage.weaponQuality}}}
-			</span>
+	<div class="hit-location-label" style="color: grey">
+		<span>
+			<strong>
+				{{localize 'FALLOUT.TEMPLATES.Qualities'}}:
+			</strong>
+			{{{listWeaponQualities item.system.damage.weaponQuality}}}
+		</span>
 
-			<span>
-				<strong>
-					{{localize 'FALLOUT.TEMPLATES.Effects'}}:
-				</strong>
-				{{{listDamageEffects item.system.damage.damageEffect}}}
-			</span>
+		<span>
+			<strong>
+				{{localize 'FALLOUT.TEMPLATES.Effects'}}:
+			</strong>
+			{{{listDamageEffects item.system.damage.damageEffect}}}
+		</span>
 
-			{{#ifCond item.system.ammo '!==' ""}}
-				<span>
-					<strong>
-						{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
-					</strong>
-					{{item.system.fireRate}}
-				</span>
-			{{/ifCond}}
+		{{#ifCond item.system.ammo '!==' ""}}
+		<span>
+			<strong>
+				{{localize 'FALLOUT.TEMPLATES.Fire_Rate'}}:
+			</strong>
+			{{item.system.fireRate}}
+		</span>
+		{{/ifCond}}
 
-			<span>
-				<strong>
-					{{localize 'FALLOUT.TEMPLATES.Range'}}:
-				</strong>
-				{{fromConfig "RANGES" item.system.range}}
-			</span>
-		</div>
+		{{#if item.system.mods.modded}}
+		<span>
+			<strong>
+				{{localize 'FALLOUT.MODS.installedMods'}}:
+			</strong>
+			{{{listWeaponMods item.system.mods}}}
+		</span>
+		{{/if}}
+
+		<span>
+			<strong>
+				{{localize 'FALLOUT.TEMPLATES.Range'}}:
+			</strong>
+			{{fromConfig "RANGES" item.system.range}}
+		</span>
+	</div>
 		{{/if}}
 
 		{{#if (ne hitLocation null)}}

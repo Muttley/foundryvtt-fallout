@@ -10,12 +10,6 @@
 		"attachable": true,
 		"attached": false,
 		"cost": 357,
-		"crafting": {
-			"complexity": "",
-			"perks": "Science! 4",
-			"rarity": "",
-			"skill": ""
-		},
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -75,7 +69,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 0,
+				"rating": 4,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -189,14 +183,15 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>+4 @fos[DC]</p>\n<p>-3 Fire Rate</p>\n<p>Increase Range by 1 step</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
-			"fireRate": 0,
+			"effect": "",
+			"fireRate": -3,
 			"info": "",
-			"range": 0,
+			"range": 1,
 			"summary": ""
 		},
-		"modType": "",
+		"modType": "barrel",
 		"namePrefix": "Charging",
+		"perks": "Science! 4",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

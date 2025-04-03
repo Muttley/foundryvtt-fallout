@@ -25,7 +25,9 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 		// -------------------------------------------------------------
 		// ! Everything below here is only needed if the sheet is editable
-		if (!this.isEditable) return;
+		if (!this.isEditable) {
+			return;
+		}
 
 		html.find(".settler-create").click(this._onSettlerCreate.bind(this));
 
@@ -37,7 +39,9 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 			const settlerUuid = $(event.currentTarget).data("settlerId");
 			const actor = await fromUuid(settlerUuid);
 
-			if (actor) actor.sheet.render(true);
+			if (actor) {
+				actor.sheet.render(true);
+			}
 		});
 	}
 
@@ -105,12 +109,16 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	async _onDropActor(event, data) {
-		if (!game.user.isGM) return;
+		if (!game.user.isGM) {
+			return;
+		}
 
 		const droppedActor = data?.uuid ? await fromUuid(data.uuid) : null;
 
 		// Only NPCs can be dropped
-		if (droppedActor.type !== "npc") return;
+		if (droppedActor.type !== "npc") {
+			return;
+		}
 
 		if (droppedActor) {
 			this._addSettler(droppedActor);
@@ -120,7 +128,9 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 
 	/** @override */
 	async _onDropItem(event, data) {
-		if (!this.actor.isOwner) return false;
+		if (!this.actor.isOwner) {
+			return false;
+		}
 
 		const item = await Item.implementation.fromDropData(data);
 		const source = item.toObject();
@@ -134,7 +144,9 @@ export default class FalloutSettlementSheet extends FalloutBaseActorSheet {
 		}
 
 		const dropTarget = event.target.closest("[data-item-id]");
-		if (!dropTarget) return super._onDropItem(event, data);
+		if (!dropTarget) {
+			return super._onDropItem(event, data);
+		}
 
 		const target = this.actor.items.get(dropTarget.dataset.itemId);
 

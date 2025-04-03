@@ -5,9 +5,13 @@ export const initiativeHooks = {
 		Hooks.on("createCombatant", (combatant, options, userId) => {
 			fallout.logger.debug("Running createCombatant hook");
 
-			if (!game.user.isGM) return;
+			if (!game.user.isGM) {
+				return;
+			}
 
-			if (game.settings.get(SYSTEM_ID, "useVariableInitiative")) return;
+			if (game.settings.get(SYSTEM_ID, "useVariableInitiative")) {
+				return;
+			}
 
 			combatant.combat.setInitiative(
 				combatant._id,
@@ -18,10 +22,16 @@ export const initiativeHooks = {
 		fallout.logger.debug("Attaching updateActor hook");
 
 		Hooks.on("updateActor", (actor, updateData, options, userId) => {
-			if (!game.user.isGM) return;
-			if (!actor.inCombat) return;
+			if (!game.user.isGM) {
+				return;
+			}
+			if (!actor.inCombat) {
+				return;
+			}
 
-			if (game.settings.get(SYSTEM_ID, "useVariableInitiative")) return;
+			if (game.settings.get(SYSTEM_ID, "useVariableInitiative")) {
+				return;
+			}
 
 			let newInitiative = updateData.system?.initiative?.value ?? null;
 

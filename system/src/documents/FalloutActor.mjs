@@ -18,12 +18,18 @@ export default class FalloutActor extends Actor {
 	 * @param {*} userId
 	 */
 	static async updateLinkedSettlementSheets(actor, options, userId) {
-		if (!game.user.isGM) return;
-		if (actor.type !== "npc") return;
+		if (!game.user.isGM) {
+			return;
+		}
+		if (actor.type !== "npc") {
+			return;
+		}
 
 		const settlementUuid = actor.system.settlement.uuid;
 
-		if (settlementUuid === "") return;
+		if (settlementUuid === "") {
+			return;
+		}
 
 		const settlement = await fromUuid(settlementUuid);
 		if (settlement) {
@@ -135,6 +141,10 @@ export default class FalloutActor extends Actor {
 		return game.settings.get("fallout", "carryUnit") === "kgs";
 	}
 
+	// _initializeSource(source, options={}) {
+	// 	source = super._initializeSource(source, options);
+	// }
+
 	incrementJunk() {
 		const newJunk = this.system.materials.junk + 1;
 		this.update({ "system.materials.junk": newJunk });
@@ -148,7 +158,9 @@ export default class FalloutActor extends Actor {
 	// perk (or can't have perks)
 	//
 	perkLevel(perkName) {
-		if (!["character", "robot", "npc"].includes(this.type)) return 0;
+		if (!["character", "robot", "npc"].includes(this.type)) {
+			return 0;
+		}
 
 		const perk = this.items.find(i => {
 			const hasBabeleTranslation = i.flags?.babele?.hasTranslation === true;
@@ -222,7 +234,9 @@ export default class FalloutActor extends Actor {
 
 	// CHARACTER
 	_prepareCharacterData() {
-		if (!["character"].includes(this.type)) return;
+		if (!["character"].includes(this.type)) {
+			return;
+		}
 
 		this._calculateCharacterBodyResistance();
 		this._calculateEncumbrance();
@@ -442,7 +456,9 @@ export default class FalloutActor extends Actor {
 			SYSTEM_ID, "disableAutoXpTarget"
 		);
 
-		if (disableAutoXpTarget) return;
+		if (disableAutoXpTarget) {
+			return;
+		}
 
 		const currentLevel = parseInt(this.system.level.value);
 
@@ -457,7 +473,9 @@ export default class FalloutActor extends Actor {
 	}
 
 	_prepareRobotData() {
-		if (this.type !== "robot") return;
+		if (this.type !== "robot") {
+			return;
+		}
 
 		this._calculateRobotBodyResistance();
 
@@ -494,7 +512,9 @@ export default class FalloutActor extends Actor {
 	}
 
 	_prepareSettlementData() {
-		if (this.type !== "settlement") return;
+		if (this.type !== "settlement") {
+			return;
+		}
 
 		this.system.storage.base =
 			parseInt(game.settings.get("fallout", "baseSettlementStorage"));
@@ -519,14 +539,20 @@ export default class FalloutActor extends Actor {
 		let happiness = 10;
 		for (const attribute of ["beds", "defense", "food", "water"]) {
 			this.system[attribute].min = people;
-			if (this.system[attribute].value < people) happiness--;
+			if (this.system[attribute].value < people) {
+				happiness--;
+			}
 		}
 
 		this.system.happiness.value = happiness;
 		this.system.happiness.total = this.system.happiness.value + this.system.happiness.mod;
 
-		if (this.system.happiness.total < 1) this.system.happiness.total = 1;
-		if (this.system.happiness.total > 20) this.system.happiness.total = 20;
+		if (this.system.happiness.total < 1) {
+			this.system.happiness.total = 1;
+		}
+		if (this.system.happiness.total > 20) {
+			this.system.happiness.total = 20;
+		}
 
 		this.system.storage.total = this._getItemsTotalWeight();
 	}
@@ -708,13 +734,17 @@ export default class FalloutActor extends Actor {
    * Prepare NPC type specific data.
    */
 	_prepareNpcData() {
-		if (!["creature", "npc", "vehicle"].includes(this.type)) return;
+		if (!["creature", "npc", "vehicle"].includes(this.type)) {
+			return;
+		}
 
 		const disableAutoXpReward = game.settings.get(
 			SYSTEM_ID, "disableAutoXpReward"
 		);
 
-		if (disableAutoXpReward) return;
+		if (disableAutoXpReward) {
+			return;
+		}
 
 		this.system.level.rewardXP = fallout.utils.calculateXpReward(
 			this.system.level.value,
@@ -801,7 +831,9 @@ export default class FalloutActor extends Actor {
 		// If prototypeToken already exists in data then we are copying an
 		// actor and really shouldn't mess with any values
 		//
-		if (data.prototypeToken) return;
+		if (data.prototypeToken) {
+			return;
+		}
 
 		const update = {};
 
@@ -914,7 +946,9 @@ export default class FalloutActor extends Actor {
 	}
 
 	async _toggleImmunity(type) {
-		if (!["poison", "radiation"].includes(type)) return;
+		if (!["poison", "radiation"].includes(type)) {
+			return;
+		}
 
 		const currentValue = this.system.immunities[type];
 		const updateData = {};
@@ -928,7 +962,9 @@ export default class FalloutActor extends Actor {
 		let timeElapsed = currentWorldTime - Math.abs(lastChange);
 		let changed = false;
 
-		if (lastChange < 0 || timeElapsed <= 0) return changed;
+		if (lastChange < 0 || timeElapsed <= 0) {
+			return changed;
+		}
 
 		let hunger = this.system.conditions.hunger;
 		let fatigue = this.system.conditions.fatigue;
@@ -1030,7 +1066,9 @@ export default class FalloutActor extends Actor {
 		let timeElapsed = currentWorldTime - Math.abs(lastChange);
 		let changed = false;
 
-		if (timeElapsed <= 0) return changed;
+		if (timeElapsed <= 0) {
+			return changed;
+		}
 
 		let thirst = this.system.conditions.thirst;
 		let fatigue = this.system.conditions.fatigue;
@@ -1120,7 +1158,9 @@ export default class FalloutActor extends Actor {
 		let timeElapsed = currentWorldTime - Math.abs(lastChange);
 		let changed = false;
 
-		if (timeElapsed <= 0) return changed;
+		if (timeElapsed <= 0) {
+			return changed;
+		}
 
 		let sleep = this.system.conditions.sleep;
 		let fatigue = this.system.conditions.fatigue;
@@ -1154,7 +1194,9 @@ export default class FalloutActor extends Actor {
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
 						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Tired > Weary`);
 						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.weary;
-						if (!this.isSleeping) fatigue++;
+						if (!this.isSleeping) {
+							fatigue++;
+						}
 						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
 						changed = true;
 						timeElapsed -= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
@@ -1228,7 +1270,9 @@ export default class FalloutActor extends Actor {
 
 		let sleepChanged = false;
 		currentFatigue = this.system.conditions.fatigue;
-		if (!this.isSleeping) sleepChanged = await this._updateSleep(currentWorldTime);
+		if (!this.isSleeping) {
+			sleepChanged = await this._updateSleep(currentWorldTime);
+		}
 		const sleepFatigueChange = this.system.conditions.fatigue - currentFatigue;
 
 		const fatigueChanged = hungerFatigueChange > 0 || thirstFatigueChange > 0;
@@ -1276,7 +1320,9 @@ export default class FalloutActor extends Actor {
 	}
 
 	async consumeItem(item) {
-		if (this.type !== "character") return false;
+		if (this.type !== "character") {
+			return false;
+		}
 
 		let consumed = true;
 
@@ -1560,7 +1606,9 @@ export default class FalloutActor extends Actor {
 	}
 
 	async drinkDirtyWater() {
-		if (this.type !== "character") return false;
+		if (this.type !== "character") {
+			return false;
+		}
 
 		const currentWorldTime = game.time.worldTime;
 
@@ -1663,7 +1711,9 @@ export default class FalloutActor extends Actor {
 
 
 	async readMagazine(item) {
-		if (!this.isPlayerCharacter) return;
+		if (!this.isPlayerCharacter) {
+			return;
+		}
 
 		const compendiumVersion =
 			(await fallout.compendiums.books_and_magz(false)).find(
@@ -1749,10 +1799,14 @@ export default class FalloutActor extends Actor {
 	async reduceAmmo(ammoName = "", roundsToUse = 0) {
 		const [ammoItems, shotsAvailable] = this._getAvailableAmmoType(ammoName);
 
-		if (shotsAvailable <= 0) return;
+		if (shotsAvailable <= 0) {
+			return;
+		}
 
 		for (const ammoItem of ammoItems) {
-			if (roundsToUse === 0) break;
+			if (roundsToUse === 0) {
+				break;
+			}
 
 			const current = ammoItem.system.shots.current;
 			const quantity = ammoItem.system.quantity;
@@ -1874,7 +1928,9 @@ export default class FalloutActor extends Actor {
 		let newSleepStatus = currentSleepStatus;
 		let newWellRested = false;
 
-		if (hours >= 8 && safe) newWellRested = true;
+		if (hours >= 8 && safe) {
+			newWellRested = true;
+		}
 
 		if (hours >= 6) {
 			newSleepStatus = CONFIG.FALLOUT.CONDITIONS.sleep.rested;
@@ -1883,7 +1939,9 @@ export default class FalloutActor extends Actor {
 			newFatigue = hasActiveFatigue ? currentFatigue : 0;
 		}
 		else if (hours >= 1) {
-			if (newSleepStatus > 0) newSleepStatus--;
+			if (newSleepStatus > 0) {
+				newSleepStatus--;
+			}
 		}
 
 		const updateData = {
