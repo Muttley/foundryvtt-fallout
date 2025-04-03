@@ -11,7 +11,9 @@ export default class Update_250325_1 extends FalloutUpdateBase {
 
 
 			let modType = itemData.system.modType ?? "material";
-			if (modType === "") modType = "material";
+			if (modType === "") {
+				modType = "material";
+			}
 
 			updateData["system.modType"] = modType;
 

@@ -242,7 +242,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		// }
 
 
-		context.modSummary = this.getApparelModSummary(item);
+		context.modSummary = await this.getApparelModSummary(item);
 
 	}
 
@@ -636,9 +636,15 @@ export default class FalloutItemSheet extends ItemSheet {
 		html.find(".item-delete").click(async ev => {
 			ev.preventDefault();
 			let li;
-			if (this.item.type === "weapon") li = $(ev.currentTarget).parents(".weapon_mod");
-			else if (this.item.type === "apparel") li = $(ev.currentTarget).parents(".apparel_mod");
-			else return;
+			if (this.item.type === "weapon") {
+				li = $(ev.currentTarget).parents(".weapon_mod");
+			}
+			else if (this.item.type === "apparel") {
+				li = $(ev.currentTarget).parents(".apparel_mod");
+			}
+			else {
+				return;
+			}
 
 			li.slideUp(200, () => this.render(false));
 
@@ -665,7 +671,7 @@ export default class FalloutItemSheet extends ItemSheet {
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
 				}
 				item.system.mods[mod].system.summary =
-					this.getApparelModSummary(item.system.mods[mod]);
+					await this.getApparelModSummary(item.system.mods[mod]);
 				modsByType[item.system.mods[mod].system?.modType].push(item.system.mods[mod]);
 
 				if (item.system.mods[mod].system.attached) {
@@ -683,7 +689,9 @@ export default class FalloutItemSheet extends ItemSheet {
 		let sortedModsByType = {};
 
 		for (const key in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
-			if (modsByType.hasOwnProperty(key)) sortedModsByType[key] = modsByType[key];
+			if (modsByType.hasOwnProperty(key)) {
+				sortedModsByType[key] = modsByType[key];
+			}
 		}
 
 		return sortedModsByType;
@@ -759,7 +767,9 @@ export default class FalloutItemSheet extends ItemSheet {
 			if (installed) {
 				updateData["system.health.value"] = this.item.system.health.value + mod.system.health.value;
 			}
-			else updateData["system.health.value"] = this.item.system.health.value - mod.system.health.value;
+			else {
+				updateData["system.health.value"] = this.item.system.health.value - mod.system.health.value;
+			}
 		}
 
 		// Resistances
@@ -767,21 +777,27 @@ export default class FalloutItemSheet extends ItemSheet {
 			if (installed) {
 				updateData["system.resistance.energy"] = this.item.system.resistance.energy + mod.system.resistance.energy;
 			}
-			else updateData["system.resistance.energy"] = this.item.system.resistance.energy - mod.system.resistance.energy;
+			else {
+				updateData["system.resistance.energy"] = this.item.system.resistance.energy - mod.system.resistance.energy;
+			}
 		}
 
 		if (mod.system.resistance.physical !== 0) {
 			if (installed) {
 				updateData["system.resistance.physical"] = this.item.system.resistance.physical + mod.system.resistance.physical;
 			}
-			else updateData["system.resistance.physical"] = this.item.system.resistance.physical - mod.system.resistance.physical;
+			else {
+				updateData["system.resistance.physical"] = this.item.system.resistance.physical - mod.system.resistance.physical;
+			}
 		}
 
 		if (mod.system.resistance.radiation !== 0) {
 			if (installed) {
 				updateData["system.resistance.radiation"] = this.item.system.resistance.radiation + mod.system.resistance.radiation;
 			}
-			else updateData["system.resistance.radiation"] = this.item.system.resistance.radiation - mod.system.resistance.radiation;
+			else {
+				updateData["system.resistance.radiation"] = this.item.system.resistance.radiation - mod.system.resistance.radiation;
+			}
 		}
 
 		// Shadowed
@@ -789,7 +805,9 @@ export default class FalloutItemSheet extends ItemSheet {
 			if (installed) {
 				updateData["system.shadowed"] = true;
 			}
-			else updateData["system.shadowed"] = false;
+			else {
+				updateData["system.shadowed"] = false;
+			}
 		}
 
 		// Cost
@@ -797,7 +815,9 @@ export default class FalloutItemSheet extends ItemSheet {
 			if (installed) {
 				updateData["system.cost"] = this.item.system.cost + mod.system.cost;
 			}
-			else updateData["system.cost"] = this.item.system.cost - mod.system.cost;
+			else {
+				updateData["system.cost"] = this.item.system.cost - mod.system.cost;
+			}
 		}
 
 		// Weight
@@ -805,11 +825,15 @@ export default class FalloutItemSheet extends ItemSheet {
 			if (installed) {
 				updateData["system.weight"] = this.item.system.weight + mod.system.weight;
 			}
-			else updateData["system.weight"] = this.item.system.weight - mod.system.weight;
+			else {
+				updateData["system.weight"] = this.item.system.weight - mod.system.weight;
+			}
 		}
 
 		// Lock if mod is attached.
-		if (installed) updateData["system.mods.modded"] = true;
+		if (installed) {
+			updateData["system.mods.modded"] = true;
+		}
 		else {
 			// Unlock if all mods removed.
 			updateData["system.mods.modded"] = false;
@@ -1037,73 +1061,69 @@ export default class FalloutItemSheet extends ItemSheet {
 		return keys[newIndex];
 	}
 
-	async _onModSummary(event) {
-		event.preventDefault();
-		let li = $(event.currentTarget).parents(".weapon_mod");
-		let mod = this.item.system.mods[li.data("itemId")];
-
-		const html = await renderTemplate("systems/fallout/templates/item/weapon/_partials/mod-desc.hbs", {
-			mod: mod,
-			modExtraEffect: mod.system.modEffects.effect,
-			crafting: mod.system.crafting,
-		});
-
-		// Toggle summary
-		if (li.hasClass("expanded")) {
-			let summary = li.children(".item-summary");
-			summary.slideUp(200, () => {
-				summary.remove();
-			});
-		}
-		else {
-			let div = $(
-				`<div class="item-summary"><div class="item-summary-wrapper"><div>${html}</div></div></div>`
-			);
-			li.append(div.hide());
-			div.slideDown(200);
-		}
-		li.toggleClass("expanded");
-	}
-
-	getApparelModSummary(mod) {
+	async getApparelModSummary(mod) {
 		let modSummary = [];
 
-
 		// Health
-		if (mod.system.health.value !== 0) modSummary.push(`${game.i18n.localize("FALLOUT.HEALTH.health")} ${mod.system.health.value > 0 ? "+" : ""}${mod.system.health.value}`);
-
+		if (mod.system.health.value !== 0) {
+			modSummary.push(`${game.i18n.localize("FALLOUT.HEALTH.health")} ${mod.system.health.value > 0 ? "+" : ""}${mod.system.health.value}`);
+		}
 
 		// Resistances
 		let resistances = [];
-		if (mod.system.resistance.energy !== 0) resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.energy")} ${mod.system.resistance.energy > 0 ? "+" : ""}${mod.system.resistance.energy}`);
+		if (mod.system.resistance.energy !== 0) {
+			resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.energy")} ${mod.system.resistance.energy > 0 ? "+" : ""}${mod.system.resistance.energy}`);
+		}
 
-		if (mod.system.resistance.physical !== 0) resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.physical")} ${mod.system.resistance.physical > 0 ? "+" : ""}${mod.system.resistance.physical}`);
+		if (mod.system.resistance.physical !== 0) {
+			resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.physical")} ${mod.system.resistance.physical > 0 ? "+" : ""}${mod.system.resistance.physical}`);
+		}
 
 
-		if (mod.system.resistance.radiation !== 0) resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.radiation")} ${mod.system.resistance.radiation > 0 ? "+" : ""}${mod.system.resistance.radiation}`);
+		if (mod.system.resistance.radiation !== 0) {
+			resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.radiation")} ${mod.system.resistance.radiation > 0 ? "+" : ""}${mod.system.resistance.radiation}`);
+		}
 
 
-		if (resistances.length > 1) modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances.join(", ")}`);
-
+		if (resistances.length > 1) {
+			modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances.join(", ")}`);
+		}
 
 		// Shadowed
-		if (mod.system.shadowed) modSummary.push(game.i18n.localize("FALLOUT.APPAREL_MOD.shadowed"));
+		if (mod.system.shadowed) {
+			modSummary.push(game.i18n.localize("FALLOUT.APPAREL_MOD.shadowed"));
+		}
 
+		// Extra Effects
+		if (mod.system.effect !== "") {
+			modSummary.push(mod.system.effect);
+		}
 
-		modSummary.push(mod.system.effect);
+		if (modSummary.length > 1) {
+			return await TextEditor.enrichHTML(modSummary.join(", "), {
+				async: true,
+			});
+		}
 
-		if (modSummary.length > 1) return modSummary.join(", ");
-		else return modSummary;
+		else {
+			return await TextEditor.enrichHTML(modSummary, {
+				async: true,
+			});
+		}
 	}
 
-	getWeaponModSummary(mod) {
+	async getWeaponModSummary(mod) {
 		let modSummary = [];
 		let modEffects = mod.system.modEffects;
 
 		if (modEffects.damage.rating !== 0) {
 
-			if (modEffects.damage.overrideDamage === "modify") modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD ${game.i18n.localize("FALLOUT.UI.Damage")}`);
-			else modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.damageRatingOverride", { rating: modEffects.damage.rating }));
+			if (modEffects.damage.overrideDamage === "modify") {
+				modSummary.push(`${modEffects.damage.rating > 0 ? "+" : ""}${modEffects.damage.rating} CD ${game.i18n.localize("FALLOUT.UI.Damage")}`);
+			}
+			else {
+				modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.damageRatingOverride", { rating: modEffects.damage.rating }));
+			}
 		}
 
 		if (modEffects.ammo !== "") {
