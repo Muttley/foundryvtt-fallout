@@ -20,6 +20,15 @@ FALLOUT.DEFAULT_CONSUMABLE_RAD_DICE = 1;
 FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
 FALLOUT.DEFAULT_MAX_MAGAZINE_USES = 2;
 
+FALLOUT.APPAREL_MOD_TYPES = {
+	ballistic: "FALLOUT.APPAREL_MOD.type.ballistic",
+	lining: "FALLOUT.APPAREL_MOD.type.lining",
+	material: "FALLOUT.APPAREL_MOD.type.material",
+	plating: "FALLOUT.APPAREL_MOD.type.plating",
+	system: "FALLOUT.APPAREL_MOD.type.system",
+	upgrade: "FALLOUT.APPAREL_MOD.type.upgrade",
+};
+
 FALLOUT.APPAREL_TYPES = {
 	armor: "FALLOUT.APPAREL.armor",
 	clothing: "FALLOUT.APPAREL.clothing",

@@ -1036,8 +1036,10 @@
 			},
 			"mods": {
 				"current": 0,
+				"installedMods": "",
 				"list": "",
-				"max": 0
+				"max": 0,
+				"modded": false
 			},
 			"powerArmor": {
 				"frameId": "",
@@ -1049,6 +1051,7 @@
 				"physical": 0,
 				"radiation": 0
 			},
+			"shadowed": false,
 			"templates": [
 				"base",
 				"physical",
@@ -1063,12 +1066,15 @@
 				"value": 0
 			},
 			"location": "",
+			"modType": "",
 			"perks": "",
 			"resistance": {
 				"energy": 0,
 				"physical": 0,
 				"radiation": 0
 			},
+			"shadowed": false,
+			"summary": "",
 			"templates": [
 				"base",
 				"physical",

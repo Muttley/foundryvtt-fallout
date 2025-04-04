@@ -1,35 +1,37 @@
-<li class="item weapon_mod"
+<li class="item apparel_mod"
 	data-item-id="{{item._id}}">
 	<div class="flexrow" style="flex-wrap: nowrap;">
-		<div class="item-name flexshrink" style="flex: 0 0 30%;">
+		<div class="item-name flexshrink expandable-info" style="flex: 0 0 30%;">
 			<div class="item-image" style="max-width: 24px;max-height: 24px;">
 				<img src="{{item.img}}"
 					 title="{{item.name}}"
 					 style="width: 100%;height: auto;" />
 			</div>
 			<h4 class="resource-label">
-				{{item.name}}
+				{{item.name}}&nbsp;
 			</h4>
-		</div>
-		<div class="item-info" style="flex: 0 0 40%;">
-			<span>{{{item.system.modEffects.summary}}}</span>
+			{{#if item.system.shadowed}}
+			<i class="fa-solid fa-eye-slash" style="color: white;"
+				data-tooltip="{{localize 'FALLOUT.TOOLTIPS.Apparel.shadowed'}}">
+			</i>
+			{{/if}}
 		</div>
 		<div class="item-info" style="flex: 1 1 auto;">
-			<span>{{{item.system.perks}}}</span>
+			<span>{{{item.system.summary}}}</span>
 		</div>
 		<div class=" item-controls" style="flex: 1 0 5%;">
 			<a {{#if item.system.attached}}
-			   class="item-control toggle-weapon-mod"
-			   title='{{localize "FALLOUT.WEAPON_MOD.summary.remove"}}'
+			   class="item-control toggle-apparel-mod"
+			   	title='{{localize "FALLOUT.WEAPON_MOD.summary.remove"}}'
 			   {{else}}
-			   class="item-control toggle-weapon-mod item-unequipped"
+			   class="item-control toggle-apparel-mod item-unequipped"
 			   title='{{localize "FALLOUT.Item.PowerArmor.Attach"}}'
 			   {{/if}}>
-				<i class="fa-solid fa-gun"></i>
+				<i class="fa-solid fa-shirt"></i>
 			</a>
 			{{#unless item.system.attached}}
 			<a class="item-control item-delete"
-			   title={{localize "FALLOUT.TEMPLATES.Delete"}}>
+			   title="Delete Item">
 				<i class="fas fa-trash"></i>
 			</a>
 			{{/unless}}
