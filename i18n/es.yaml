@@ -51,6 +51,13 @@ FALLOUT.APPAREL.headgear: Casco
 FALLOUT.APPAREL.outfit: Traje
 FALLOUT.APPAREL.plating: Blindaje
 FALLOUT.APPAREL.powerArmor: Servoarmadura
+FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.ballistic: Ballistic
+FALLOUT.APPAREL_MOD.type.lining: Lining
+FALLOUT.APPAREL_MOD.type.material: Material
+FALLOUT.APPAREL_MOD.type.plating: Plating
+FALLOUT.APPAREL_MOD.type.system: System
+FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.AvailabilityRoll.result.body: La rareza máxima disponible es {rarity}
 FALLOUT.AvailabilityRoll.result.title: Tirada de Disponibilidad
 FALLOUT.AvailabilityRoll.tooltip: Tira para ver la disponibilidad
@@ -152,6 +159,7 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Comida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Ya estás saciado y no puedes comer más
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Otros consumos
+FALLOUT.CHAT_MESSAGE.consumed.warn_none_available: You don't have any {itemName} available to consume
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resistió al daño de radiación {baseRadDamage} al consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiación Resistida
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} recibe daño de radiación {radsTaken} al consumir {itemName}"
@@ -575,6 +583,7 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Horas"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hora"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutos"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minuto"
+FALLOUT.TOOLTIPS.Apparel.shadowed: Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.
 FALLOUT.TOOLTIPS.DamageEffect.arc: Cada efecto obtenido golpea automáticamente a un objetivo adicional dentro del rango cercano del objetivo principal. Cada objetivo adicional sufre la mitad del daño obtenido (redondeado hacia arriba). A diferencia de Ráfaga, esto no cuesta munición adicional.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: 'Por cada Efecto obtenido, reduce el número de @fos[DC] que proporciona la cobertura de un objetivo en 1, permanentemente. Si el objetivo no está cubierto, en su lugar reduce el DR de la ubicación golpeada por 1, según el tipo de daño del arma: el daño físico solo reduce el DR físico, por ejemplo.'
 FALLOUT.TOOLTIPS.DamageEffect.burst: El ataque alcanza a un objetivo adicional dentro del alcance cercano del objetivo principal por cada efecto obtenido. Cada objetivo adicional gasta 1 unidad adicional de munición del arma.
@@ -697,8 +706,8 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Cambia el daño a {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Cambia el tipo de daño a {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Cadencia de Fuego
 FALLOUT.WEAPON_MOD.summary.gain: Ganancia
-FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Quitar
 FALLOUT.WEAPON_MOD.type.barrel: Barril
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor

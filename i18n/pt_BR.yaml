@@ -51,6 +51,13 @@ FALLOUT.APPAREL.headgear: Equip. Cabeça
 FALLOUT.APPAREL.outfit: Traje
 FALLOUT.APPAREL.plating: Chapeamento
 FALLOUT.APPAREL.powerArmor: Armadura Potente
+FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.ballistic: Ballistic
+FALLOUT.APPAREL_MOD.type.lining: Lining
+FALLOUT.APPAREL_MOD.type.material: Material
+FALLOUT.APPAREL_MOD.type.plating: Plating
+FALLOUT.APPAREL_MOD.type.system: System
+FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.AvailabilityRoll.result.body: A raridade máxima disponível é {rarity}
 FALLOUT.AvailabilityRoll.result.title: Rolagem de Disponibilidade
 FALLOUT.AvailabilityRoll.tooltip: Role para Disponibilidade
@@ -152,6 +159,7 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga Consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Comida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Você ja está cheio e não pode comer mais
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Outros Consumido
+FALLOUT.CHAT_MESSAGE.consumed.warn_none_available: You don't have any {itemName} available to consume
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resistiu a {baseRadDamage} dano de radiação ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Resistiu à Radiação
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} sofre {radsTaken} dano de radiação ao consumir {itemName}"
@@ -575,6 +583,7 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Horas"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hora"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutos"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minutos"
+FALLOUT.TOOLTIPS.Apparel.shadowed: Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.
 FALLOUT.TOOLTIPS.DamageEffect.arc: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional sofre metade do dano rolado (arredondado para cima). Diferente da Rajada, isso não custa munção adicional.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Por cada Efeito rolado, reduz o número de @fos[DC] que a cobertura fornece ao alvo em 1, permanentemente. Se o alvo não está em cobertura, reduza a RD do local atingido em 1, dependendo do dano que a arma inflinge.
 FALLOUT.TOOLTIPS.DamageEffect.burst: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional gasta 1 munição adicional da arma.
@@ -697,8 +706,8 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Altera o dano para {rating} DC
 FALLOUT.WEAPON_MOD.summary.damageType: Altera o tipo de dano para {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Cadência de Tiro
 FALLOUT.WEAPON_MOD.summary.gain: Ganho
-FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remover
 FALLOUT.WEAPON_MOD.type.barrel: Cano
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
