@@ -365,8 +365,9 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		context.treatedInjuriesCount = allInjuries.filter(i => i === 1).length;
 		context.openInjuriesCount = allInjuries.filter(i => i === 2).length;
 
-		context.levelUp = this.actor.system.level.currentXP
-			>= this.actor.system.level.nextLevelXP;
+		context.levelUp = CONFIG.FALLOUT.LEVEL_UP_TOOL_ENABLED
+			&& this.actor.system.level.currentXP
+				>= this.actor.system.level.nextLevelXP;
 	}
 
 

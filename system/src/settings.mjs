@@ -212,6 +212,16 @@ export default function registerSettings() {
 		requiresReload: true,
 	});
 
+	game.settings.register(SYSTEM_ID, "deleteExhaustedConsumables", {
+		name: "Delete consumed items that are reduced to quantity zero",
+		hint: "By default the system will not delete items that are reduced to a quantity of zero when consumed.  Check this option if you prefer the old behaviour of deleting exhausted items.",
+		scope: "world",
+		type: Boolean,
+		config: true,
+		default: false,
+		requiresReload: false,
+	});
+
 	game.settings.register(SYSTEM_ID, "disableAutoXpTarget", {
 		name: "Disable Auto-calculated Player Level XP",
 		hint: "By default the system will auto-calculate the next level target XP for player characters based on the core rulebook.  Check this if would prefer to populate these values manually.",

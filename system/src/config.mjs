@@ -3,6 +3,8 @@ export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
+FALLOUT.LEVEL_UP_TOOL_ENABLED = false;
+
 // Some consts used for timing purposes
 //
 FALLOUT.ONE_HOUR_IN_SECONDS = 60 * 60;

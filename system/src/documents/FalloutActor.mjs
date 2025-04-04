@@ -62,6 +62,11 @@ export default class FalloutActor extends Actor {
 	}
 
 
+	get deleteExhaustedConsumables() {
+		return game.settings.get("fallout", "deleteExhaustedConsumables");
+	}
+
+
 	get isAlcoholic() {
 		return this.system.conditions.alcoholic;
 	}
@@ -1324,6 +1329,17 @@ export default class FalloutActor extends Actor {
 			return false;
 		}
 
+		if (item.system.quantity <= 0) {
+			ui.notifications.warn(
+				game.i18n.format(
+					"FALLOUT.CHAT_MESSAGE.consumed.warn_none_available",
+					{ itemName: item.name }
+				)
+			);
+
+			return false;
+		}
+
 		let consumed = true;
 
 		const consumableType = item.system.consumableType;
@@ -1589,12 +1605,12 @@ export default class FalloutActor extends Actor {
 				}
 			);
 
-			if (allUsed) {
+			if (allUsed && this.deleteExhaustedConsumables) {
 				await item.delete();
 			}
 			else {
 				await item.update({
-					"system.quantity": newQuantity,
+					"system.quantity": Math.max(0, newQuantity),
 				});
 			}
 

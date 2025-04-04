@@ -7,6 +7,7 @@
 - [#584] Unable to delete Power Armor Frame from character sheet
 - [#585] Should not try to expand details of power armor pieces within power armor frame attachment item tab
 - [#587] FalloutItemSheet::getPowerArmorPieceData() matches on apparel_mod items when it should only be looking at apparel items
+- [#597] Consuming an item with a quantity of zero should do nothing and give a warning notification
 
 #### Enhancements
 - [#148] Separate out Fire Rate from Damage for guns
@@ -21,6 +22,7 @@
 
 - [#569] Improve handling of Mods
 - [#576] When a consumable is used, display any effect it causes on the resultant chat message
+- [#598] Make the deletion of exhausted consumables an optional setting and default to not deleting them
 
 #### Chores
 - [#564] Merge new Spanish translation updates from Crowdin
