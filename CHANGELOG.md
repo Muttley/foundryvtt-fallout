@@ -10,6 +10,7 @@
 - [#597] Consuming an item with a quantity of zero should do nothing and give a warning notification
 
 #### Enhancements
+- [#106] Better way to handle mods
 - [#148] Separate out Fire Rate from Damage for guns
 - [#253] Support butchery items that have roll formula instead of just a fixed quantity
 - [#340] Allow drag/drop of player perks that can be used on NPCs
