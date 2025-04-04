@@ -51,6 +51,13 @@ FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Blindage
 FALLOUT.APPAREL.powerArmor: Armure Assistée
+FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.ballistic: Ballistic
+FALLOUT.APPAREL_MOD.type.lining: Lining
+FALLOUT.APPAREL_MOD.type.material: Material
+FALLOUT.APPAREL_MOD.type.plating: Plating
+FALLOUT.APPAREL_MOD.type.system: System
+FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.AvailabilityRoll.result.body: La rareté maximale disponible est de {rarity}
 FALLOUT.AvailabilityRoll.result.title: Lancer de disponibilité
 FALLOUT.AvailabilityRoll.tooltip: Lancé pour la disponibilité
@@ -152,6 +159,7 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Nourriture consommée
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Vous êtes déjà rassasié et ne pouvez plus manger
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Autre consommation
+FALLOUT.CHAT_MESSAGE.consumed.warn_none_available: You don't have any {itemName} available to consume
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} a résisté aux dégâts de radiations {baseRadDamage} en consommant {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Résistance aux radiations
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} subit des dégâts de radiation de {radsTaken} en consommant {itemName}"
@@ -575,6 +583,7 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Heures"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Heure"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
+FALLOUT.TOOLTIPS.Apparel.shadowed: Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.
 FALLOUT.TOOLTIPS.DamageEffect.arc: Chaque Effet obtenu permet de toucher une cible supplémentaire à courte portée de la cible initiale. Chaque cible supplémentaire subit la moitié des dégâts (arrondi au supérieur). Mais contrairement à En rafale, cela ne coute pas de munitions supplémentaires.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: Pour chaque Effet obtenu sur le jet de dégâts, réduisez de 1 le nombre de @fos[DC] d'abri fournis par un abri, de manière permanente. Si la cible n'a pas d'abri, réduisez de 1 la résistance aux dégâts sur la localisation touchée, selon le type de dégâts de l'arme (les dégâts balistiques réduisent la résistance aux dégâts balistiques et les dégâts énergétiques réduisent la résistance aux dégâts énergétiques).
 FALLOUT.TOOLTIPS.DamageEffect.burst: L'attaque peut toucher une cible supplémentaire à portée courte de la cible principale pour chaque Effet obtenu sur le jet de dégâts. Chaque cible supplémentaire coûte 1 munition de plus.
@@ -697,8 +706,8 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Cadence de Tir
 FALLOUT.WEAPON_MOD.summary.gain: Gagne
-FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remove
 FALLOUT.WEAPON_MOD.type.barrel: Barrel
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
