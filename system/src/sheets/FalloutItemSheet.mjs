@@ -828,6 +828,15 @@ export default class FalloutItemSheet extends ItemSheet {
 			}
 		}
 
+		// Weapon name prefix
+		if (mod.system.namePrefix !== "") {
+			if (installed) {
+				updateData.name = `${mod.system.namePrefix} ${this.item.name}`;
+			}
+			else {
+				updateData.name = this.item.name.replace(`${mod.system.namePrefix} `, "");
+			}
+		}
 
 		// Lock if mod is attached.
 		if (installed) {
