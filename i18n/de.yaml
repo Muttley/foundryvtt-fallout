@@ -51,6 +51,13 @@ FALLOUT.APPAREL.headgear: Kopfbedeckung
 FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Beschichtung
 FALLOUT.APPAREL.powerArmor: Powerrüstung
+FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.ballistic: Ballistic
+FALLOUT.APPAREL_MOD.type.lining: Lining
+FALLOUT.APPAREL_MOD.type.material: Material
+FALLOUT.APPAREL_MOD.type.plating: Plating
+FALLOUT.APPAREL_MOD.type.system: System
+FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.AvailabilityRoll.result.body: Die maximal verfügbare Seltenheit ist {rarity}
 FALLOUT.AvailabilityRoll.result.title: Verfügbarkeits-Wurf
 FALLOUT.AvailabilityRoll.tooltip: Würfle für Verfügbarkeit
@@ -152,6 +159,7 @@ FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem verbraucht
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Essen gegessen
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Du bist bereits satt und kannst nichts mehr essen
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Sonstiges verbraucht
+FALLOUT.CHAT_MESSAGE.consumed.warn_none_available: You don't have any {itemName} available to consume
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} widerstand {baseRadDamage} Strahlungsschaden aus dem Konsum von {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Strahlung widerstanden
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} nimmt aus dem Konsum von {itemName} {radsTaken} Strahlungsschaden"
@@ -575,6 +583,7 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Stunden"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Stunde"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minuten"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minuten"
+FALLOUT.TOOLTIPS.Apparel.shadowed: Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.
 FALLOUT.TOOLTIPS.DamageEffect.arc: Für jeden gewürfelten Effekt wird ein zusätzliches Ziel in naher Reichweite vom Hauptziel getroffen. Jedes zusätzliche Ziel erleidet den halben Schaden (aufgerundet). Im Gegensatz zur Streuung, kostet es dies keine zusätzliche Munition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: 'Für jeden gewürfelten Effekt wird die Anzahl der @fos[DC], die die Deckung eines Ziels bietet, permanent um –1 reduziert. Befindet sich das Ziel nicht in Deckung, reduziere stattdessen die SR der getroffenen Trefferstelle um –1, gemäß der Schadensart der Waffe (sprich: Physischer Schaden reduziert nur Physische Schadensresistenz, Energieschaden reduziert nur Energie Schadensresistenz usw.).'
 FALLOUT.TOOLTIPS.DamageEffect.burst: Für jeden gewürfelten Effekt verursacht dein Angriff beim Ziel einen zusätzlichen Treffer. Jeder zusätzliche Treffer verursacht die Hälfte des gewürfelten Schadens (abgerundet) und trifft eine zufällige Trefferstelle, auch wenn eine bestimmte Stelle das Ziel des ursprünglichen Angriffs war.
@@ -697,8 +706,8 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
 FALLOUT.WEAPON_MOD.summary.gain: Gain
-FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remove
 FALLOUT.WEAPON_MOD.type.barrel: Barrel
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
