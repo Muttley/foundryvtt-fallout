@@ -52,6 +52,8 @@ FALLOUT.APPAREL.outfit: Outfit
 FALLOUT.APPAREL.plating: Plating
 FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.ballistic: Ballistic
+FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
 FALLOUT.APPAREL_MOD.type.system: System
