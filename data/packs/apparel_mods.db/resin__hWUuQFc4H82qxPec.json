@@ -20,16 +20,19 @@
 		},
 		"isJunk": false,
 		"location": "",
+		"modType": "material",
 		"perks": "Armorer 1",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 2,
 			"physical": 2,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 1
 	},
 	"type": "apparel_mod"
