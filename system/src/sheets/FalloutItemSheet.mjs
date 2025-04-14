@@ -1097,10 +1097,10 @@ export default class FalloutItemSheet extends ItemSheet {
 
 
 		if (resistances.length > 1) {
-			modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances.join(", ")}`);
+			modSummary.push(`${resistances.join(", ")}`);
 		}
 		else if (resistances.length === 1) {
-			modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances}`);
+			modSummary.push(`${resistances}`);
 		}
 
 		// Shadowed
