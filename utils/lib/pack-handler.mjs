@@ -20,7 +20,9 @@ export default class PackHandler {
 	}
 
 	async pack() {
-		if (!this._settingsOk("pack")) return;
+		if (!this._settingsOk("pack")) {
+			return;
+		}
 
 		switch (this.outputFormat) {
 			case "leveldb":
@@ -31,7 +33,9 @@ export default class PackHandler {
 	}
 
 	async unpack() {
-		if (!this._settingsOk("unpack")) return;
+		if (!this._settingsOk("unpack")) {
+			return;
+		}
 
 		switch (this.inputFormat) {
 			case "leveldb":

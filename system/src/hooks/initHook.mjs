@@ -131,38 +131,40 @@ function registerDocumentClasses() {
 }
 
 function registerDocumentSheets() {
-	Actors.unregisterSheet("core", ActorSheet);
-	Items.unregisterSheet("core", ItemSheet);
+	const documentCollections = foundry.documents.collections;
 
-	Actors.registerSheet("fallout", sheets.FalloutCreatureSheet, {
+	documentCollections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
+	documentCollections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
+
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutCreatureSheet, {
 		makeDefault: true,
 		types: ["creature"],
 	});
 
-	Actors.registerSheet("fallout", sheets.FalloutNpcSheet, {
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutNpcSheet, {
 		makeDefault: true,
 		types: ["npc"],
 	});
 
-	Actors.registerSheet("fallout", sheets.FalloutPcSheet, {
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutPcSheet, {
 		makeDefault: true,
 		types: ["character", "robot"],
 	});
 
-	Actors.registerSheet("fallout", sheets.FalloutScavengingLocationSheet, {
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutScavengingLocationSheet, {
 		makeDefault: true,
 		types: ["scavenging_location"],
 	});
 
-	Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutSettlementSheet, {
 		makeDefault: true,
 		types: ["settlement"],
 	});
 
-	Actors.registerSheet("fallout", sheets.FalloutVehicleSheet, {
+	documentCollections.Actors.registerSheet("fallout", sheets.FalloutVehicleSheet, {
 		makeDefault: true,
 		types: ["vehicle"],
 	});
 
-	Items.registerSheet("fallout", sheets.FalloutItemSheet, { makeDefault: true });
+	documentCollections.Items.registerSheet("fallout", sheets.FalloutItemSheet, { makeDefault: true });
 }

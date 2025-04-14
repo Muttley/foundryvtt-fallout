@@ -118,17 +118,17 @@ FALLOUT.CREATURE_ATTRIBUTES = {
 	mind: "FALLOUT.CREATURE.mind",
 };
 
-FALLOUT.CREATURE_SKILLS = {
-	melee: "FALLOUT.CREATURE.melee",
-	guns: "FALLOUT.CREATURE.guns",
-	other: "FALLOUT.CREATURE.other",
-};
-
 FALLOUT.CREATURE_CATEGORIES = {
 	minion: "FALLOUT.NPC_TYPES.minion",
 	normal: "FALLOUT.NPC_TYPES.normal",
 	mighty: "FALLOUT.NPC_TYPES.mighty",
 	legendary: "FALLOUT.NPC_TYPES.legendary",
+};
+
+FALLOUT.CREATURE_SKILLS = {
+	melee: "FALLOUT.CREATURE.melee",
+	guns: "FALLOUT.CREATURE.guns",
+	other: "FALLOUT.CREATURE.other",
 };
 
 FALLOUT.DAMAGE_EFFECTS = {
@@ -181,6 +181,155 @@ FALLOUT.DEFAULT_TOKENS = {
 	scavenging_location: "systems/fallout/assets/tokens/scavenging_location.webp",
 	settlement: "systems/fallout/assets/tokens/settlement.webp",
 	vehicle: "systems/fallout/assets/tokens/vehicle.webp",
+};
+
+FALLOUT.HIT_LOCATIONS = {
+	flyingInsect: [
+		{
+			min: 1,
+			max: 2,
+			name: "FALLOUT.HitLocation.Head",
+			pos: "",
+		},
+		{
+			min: 3,
+			max: 8,
+			name: "FALLOUT.HitLocation.Torso",
+			pos: "",
+		},
+		{
+			min: 9,
+			max: 11,
+			name: "FALLOUT.HitLocation.LeftWing",
+			pos: "",
+		},
+		{
+			min: 12,
+			max: 14,
+			name: "FALLOUT.HitLocation.RightWing",
+			pos: "",
+		},
+		{
+			min: 15,
+			max: 20,
+			name: "FALLOUT.HitLocation.Legs",
+			pos: "",
+		},
+	],
+	humanoid: [
+		{
+			min: 1,
+			max: 2,
+			name: "FALLOUT.HitLocation.Head",
+			pos: "left: 50px; top: 30px;",
+		},
+		{
+			min: 3,
+			max: 8,
+			name: "FALLOUT.HitLocation.Torso",
+			pos: "left: 170px; top: 110px;",
+		},
+		{
+			min: 9,
+			max: 11,
+			name: "FALLOUT.HitLocation.LeftArm",
+			pos: "left: 10px; top: 190px;",
+		},
+		{
+			min: 12,
+			max: 14,
+			name: "FALLOUT.HitLocation.RightArm",
+			pos: "right: 10px; top: 190px;",
+		},
+		{
+			min: 15,
+			max: 17,
+			name: "FALLOUT.HitLocation.LeftLeg",
+			pos: "left: 10px; top: 300px;",
+		},
+		{
+			min: 18,
+			max: 20,
+			name: "FALLOUT.HitLocation.RightLeg",
+			pos: "right: 10px; top: 300px;",
+		},
+	],
+	mr_handy: [
+		{
+			min: 1,
+			max: 2,
+			name: "FALLOUT.HitLocation.Optics",
+			pos: "left: 50px; top: 30px;",
+		},
+		{
+			min: 3,
+			max: 8,
+			name: "FALLOUT.HitLocation.MainBody",
+			pos: "left: 170px; top: 110px;",
+		},
+		{
+			min: 9,
+			max: 11,
+			name: "FALLOUT.HitLocation.Arm1",
+			pos: "left: 10px; top: 190px;",
+		},
+		{
+			min: 12,
+			max: 14,
+			name: "FALLOUT.HitLocation.Arm2",
+			pos: "left: 140px; top: 210px;",
+		},
+		{
+			min: 15,
+			max: 17,
+			name: "FALLOUT.HitLocation.Arm3",
+			pos: "right: 10px; top: 190px;",
+		},
+		{
+			min: 18,
+			max: 20,
+			name: "FALLOUT.HitLocation.Thruster",
+			pos: "left: 140px; top: 300px;",
+		},
+	],
+	quadruped: [
+		{
+			min: 1,
+			max: 2,
+			name: "FALLOUT.HitLocation.Head",
+			pos: "",
+		},
+		{
+			min: 3,
+			max: 8,
+			name: "FALLOUT.HitLocation.Torso",
+			pos: "",
+		},
+		{
+			min: 9,
+			max: 11,
+			name: "FALLOUT.HitLocation.LeftFrontLeg",
+			pos: "",
+		},
+		{
+			min: 12,
+			max: 14,
+			name: "FALLOUT.HitLocation.RightFrontLeg",
+			pos: "",
+		},
+		{
+			min: 15,
+			max: 17,
+			name: "FALLOUT.HitLocation.LeftHindLeg",
+			pos: "",
+		},
+		{
+			min: 18,
+			max: 20,
+			name: "FALLOUT.HitLocation.RightHindLeg",
+			pos: "",
+		},
+	],
 };
 
 FALLOUT.HUNGER_BY_NUMBER = {
@@ -363,6 +512,13 @@ FALLOUT.RARITIES = {
 FALLOUT.ROBOT_APPAREL_TYPE = {
 	armor: "FALLOUT.APPAREL.armor",
 	plating: "FALLOUT.APPAREL.plating",
+};
+
+FALLOUT.ROBOT_BODY_TYPES = {
+	humanoid: "",
+	mr_handy: "",
+	robobrain: "",
+	securitron: "",
 };
 
 FALLOUT.SCAVENGING_ITEM_TYPES = {

@@ -7,7 +7,8 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export default class FalloutBaseActorSheet extends ActorSheet {
+export default class FalloutBaseActorSheet
+	extends foundry.appv1.sheets.ActorSheet {
 
 	/** @override */
 	static get defaultOptions() {

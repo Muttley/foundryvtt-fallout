@@ -7,7 +7,8 @@ import {
 /**
  * @extends {ItemSheet}
  */
-export default class FalloutItemSheet extends ItemSheet {
+export default class FalloutItemSheet
+	extends foundry.appv1.sheets.ItemSheet {
 
 	/** @override */
 	static get defaultOptions() {

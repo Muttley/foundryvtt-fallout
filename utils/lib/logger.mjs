@@ -9,12 +9,16 @@ export default class Logger {
 	}
 
 	static info(message) {
-		if (!this.verbose) return;
+		if (!this.verbose) {
+			return;
+		}
 		console.log(chalk.cyan(message));
 	}
 
 	static log(message) {
-		if (!this.verbose) return;
+		if (!this.verbose) {
+			return;
+		}
 		console.log(message);
 	}
 
