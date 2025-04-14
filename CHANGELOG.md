@@ -8,6 +8,7 @@
 - [#585] Should not try to expand details of power armor pieces within power armor frame attachment item tab
 - [#587] FalloutItemSheet::getPowerArmorPieceData() matches on apparel_mod items when it should only be looking at apparel items
 - [#597] Consuming an item with a quantity of zero should do nothing and give a warning notification
+- [#604] Available mods installed in weapons do not have required Perk information from weapon_mod items
 
 #### Enhancements
 - [#106] Better way to handle mods
