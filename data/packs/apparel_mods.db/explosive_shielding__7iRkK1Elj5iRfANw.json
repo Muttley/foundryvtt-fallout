@@ -1,0 +1,39 @@
+{
+	"_id": "7iRkK1Elj5iRfANw",
+	"_key": "!items!7iRkK1Elj5iRfANw",
+	"effects": [
+	],
+	"folder": "0sZTfWE1J7mKvvnK",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Explosive Shielding",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 10,
+		"description": "<p>Installed with the <strong>Science</strong> skill.</p>",
+		"effect": "<p>+2 to all damage resistances vs Blast weapons.</p>",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Helm, Arms, Legs",
+		"modType": "plating",
+		"perks": "Science! 1",
+		"quantity": 1,
+		"rarity": "common",
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 1
+	},
+	"type": "apparel_mod"
+}

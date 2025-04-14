@@ -30,9 +30,1151 @@
 			"torso": true
 		},
 		"mods": {
+			"7IO8gCf1f2bCK4a0": {
+				"_id": "7IO8gCf1f2bCK4a0",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744526767170,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Lead Plating (Torso)",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 300000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "plating",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 2
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 4
+				},
+				"type": "apparel_mod"
+			},
+			"908vI94cQ4wdtSaI": {
+				"_id": "908vI94cQ4wdtSaI",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Tesla Coils",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>While armor is powered, whenever an enemy makes a melee attack against you, they suffer 4 @fos[DC] Energy damage</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"Fi4sOOvTpfCKlBVS": {
+				"_id": "Fi4sOOvTpfCKlBVS",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Kinetic Dynamo",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>While armor is powered, when you suffer any damage (after reductions for damage resistances), add +1 to the group AP pool</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"Fov5IU0CbgDuZUuO": {
+				"_id": "Fov5IU0CbgDuZUuO",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Blood Cleanser",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>Re-roll addiction roll for addictive chems while armor is powered</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"G1BevsRBcrOLIkSf": {
+				"_id": "G1BevsRBcrOLIkSf",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "U9QdR1SJ8Q85o6wa",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "T-45d Chest Piece",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 21,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 5
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "upgrade",
+					"perks": "3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 3
+				},
+				"type": "apparel_mod"
+			},
+			"HdcX4nu2ZKYDf9hG": {
+				"_id": "HdcX4nu2ZKYDf9hG",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Jetpack",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 500,
+					"description": "<p>Installed with the <b>Repair</b> skill</p>",
+					"effect": "<p>When you move you may activate a jetpack by spending 1 charge; this allows you to move one additional zone (horizontally or vertically) or gain enough height for an impact landing</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Armorer 4, Science! 4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"HlZVuMrkMKwSx0gT": {
+				"_id": "HlZVuMrkMKwSx0gT",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Stealth Boy",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>You may activate a Stealth Boy (p.171) once per scene by spending 1 charge</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"JAN0jzOhkMyI3U1w": {
+				"_id": "JAN0jzOhkMyI3U1w",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744526770409,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Prism Shielding (Torso)",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 400000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "plating",
+					"perks": "Science! 2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 3,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 4
+				},
+				"type": "apparel_mod"
+			},
+			"JCala9JIwLsgpDig": {
+				"_id": "JCala9JIwLsgpDig",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Reactive Plates",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Repair</b> skill</p>",
+					"effect": "<p>While armor is powered, when you suffer damage from a melee or unarmed attack, you inflict Physical damage back to the attacker equal to half the damage total rolled</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Armorer 4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"MYF3miuCrGR3jUjb": {
+				"_id": "MYF3miuCrGR3jUjb",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "U9QdR1SJ8Q85o6wa",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "T-45b Chest Piece",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 7,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 1
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "upgrade",
+					"perks": "1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
 			"current": 0,
+			"dCYE8deU6qI7GARe": {
+				"_id": "dCYE8deU6qI7GARe",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Emergency Protocols",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>While armor is powered, if your current HP is below 1/4 of your maximum, add +1 to Defense and +3 to all damage resistances</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"faqvoA7iZx90tXnH": {
+				"_id": "faqvoA7iZx90tXnH",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744526773337,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526773337,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Winterized Coating (Torso)",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p>Installed with the <strong>Repair</strong> skill.</p>\n<p>Cannot be installed on <strong>X-01 Power Armor</strong>.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "plating",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"gCQROCvacrax9ukk": {
+				"_id": "gCQROCvacrax9ukk",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Medic Pump",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>While armor is powered, when yourHP are reduced to below 1/2 of your maximum, you immediately use a Stimpak, regaining 3 HP or treating one Injury.</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"hJDcOKYapml78um8": {
+				"_id": "hJDcOKYapml78um8",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744526771719,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526771719,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Titanium Plating (Torso)",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 2
+					},
+					"isJunk": false,
+					"location": "Helm, Arms, Legs",
+					"modType": "plating",
+					"perks": "Armorer 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"installedMods": "",
+			"j49aEIpiBTjvbGbO": {
+				"_id": "j49aEIpiBTjvbGbO",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "U9QdR1SJ8Q85o6wa",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "T-45f Chest Piece",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 35,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 8
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "upgrade",
+					"perks": "5",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 5
+				},
+				"type": "apparel_mod"
+			},
 			"list": "",
-			"max": 2
+			"lqvdGQ6axRjBfNoe": {
+				"_id": "lqvdGQ6axRjBfNoe",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744526768587,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Photovoltaic Plating (Torso)",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 500000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
+					"effect": "<p>+1 AP at the start of a scene if in direct sunlight (only applies once)</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "plating",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"max": 2,
+			"modded": false,
+			"qWlZAyV7iemeqrmU": {
+				"_id": "qWlZAyV7iemeqrmU",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "U9QdR1SJ8Q85o6wa",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "T-45e Chest Piece",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 28,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 7
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "upgrade",
+					"perks": "4",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 4
+				},
+				"type": "apparel_mod"
+			},
+			"t2wGFT9GqqzS3Qt9": {
+				"_id": "t2wGFT9GqqzS3Qt9",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Core Assembly",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>While armor is powered, if you begin your turn and there is no AP in the group pool, add +1 AP</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"vZs57HCeBc9iOVUR": {
+				"_id": "vZs57HCeBc9iOVUR",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744526765771,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Explosive Shielding (Torso)",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 200000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p>Installed with the <strong>Science</strong> skill.</p>",
+					"effect": "<p>+2 to all damage resistances vs Blast weapons.</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "plating",
+					"perks": "Science! 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"vuySzeWEI174mwLc": {
+				"_id": "vuySzeWEI174mwLc",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Motion-Assist Servos",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>Increase STR of armor frame to 13 while armor is powered</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "system",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"wLaFI7WPiiBEFiN9": {
+				"_id": "wLaFI7WPiiBEFiN9",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "U9QdR1SJ8Q85o6wa",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "T-45c Chest Piece",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 14,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 4
+					},
+					"isJunk": false,
+					"location": "Torso",
+					"modType": "upgrade",
+					"perks": "2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			}
 		},
 		"powerArmor": {
 			"frameId": "",
@@ -46,6 +1188,7 @@
 			"physical": 8,
 			"radiation": 9
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 20

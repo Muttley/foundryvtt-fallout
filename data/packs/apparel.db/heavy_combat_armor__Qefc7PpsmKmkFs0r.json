@@ -30,9 +30,497 @@
 			"torso": true
 		},
 		"mods": {
+			"DSrje3suQ5wYyMYp": {
+				"_id": "DSrje3suQ5wYyMYp",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "3txykwrcDDfTdRcH",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Reinforced",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 15,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "material",
+					"perks": "",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"EBkTneYU3Usezhgt": {
+				"_id": "EBkTneYU3Usezhgt",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744168857770,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "3txykwrcDDfTdRcH",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Shadowed",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 15,
+					"description": "<h2><span class=\"fontstyle0\">Shadowed Armor</span></h2>\n<p><span class=\"fontstyle2\">Many of the armor types listed in this section can be modified to become&nbsp;</span><span class=\"fontstyle3\">Shadowed</span><span class=\"fontstyle2\">. Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.</span></p>\n<ul>\n<li><span class=\"fontstyle2\">If you are wearing one or two pieces of Shadowed </span><span class=\"fontstyle2\">armor, you may ignore the first complication rolled on a </span><span class=\"fontstyle3\"><strong>Sneak</strong> </span><span class=\"fontstyle2\">test you attempt while in dim light or darkness.</span></li>\n<li><span class=\"fontstyle2\">If you are wearing three or more pieces of Shadowed </span><span class=\"fontstyle2\">armor, you may re-roll a single d20 on one </span><span class=\"fontstyle3\"><strong>Sneak</strong> </span><span class=\"fontstyle2\">test </span><span class=\"fontstyle2\">you attempt each scene while in dim light or darkness.</span></li>\n<li><span class=\"fontstyle2\">If you are wearing five or more pieces of Shadowed </span><span class=\"fontstyle2\">armor, you may re-roll a single d20 on any </span><span class=\"fontstyle3\"><strong>Sneak</strong> </span><span class=\"fontstyle2\">test </span><span class=\"fontstyle2\">you attempt while in dim light or darkness.</span></li>\n</ul>\n<p><span class=\"fontstyle2\">Torso armor counts as two pieces towards this. Shadowed armor does not provide any bonus if you are in a suit of Power Armor.</span> <br><br></p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "material",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": true,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"FRPz5uD3tZ7hMjir": {
+				"_id": "FRPz5uD3tZ7hMjir",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "3txykwrcDDfTdRcH",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Polymer",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 45,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "material",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 3,
+						"physical": 3,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"FySCG1SWS7SABvE7": {
+				"_id": "FySCG1SWS7SABvE7",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "4o4WqT1kVgccjvmx",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Deep Pocketed",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 5,
+					"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "<p>+20 Carry Weight</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "All Locations",
+					"modType": "upgrade",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"KRuKJ0eR46ZycdGM": {
+				"_id": "KRuKJ0eR46ZycdGM",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "4o4WqT1kVgccjvmx",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Pocketed",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 1,
+					"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "<p>+10 Carry Weight</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "All Locations",
+					"modType": "upgrade",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
 			"current": 0,
+			"gW3K5z7MFRZoBDQa": {
+				"_id": "gW3K5z7MFRZoBDQa",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "3txykwrcDDfTdRcH",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Fiberglass",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 30,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "material",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 2,
+						"physical": 2,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"iigJa7Sxwi1um5tb": {
+				"_id": "iigJa7Sxwi1um5tb",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "4o4WqT1kVgccjvmx",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Ultra Light Build",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 7,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "upgrade",
+					"perks": "Armorer 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": -3
+				},
+				"type": "apparel_mod"
+			},
+			"installedMods": "",
+			"lRwdket2A4FxBzpQ": {
+				"_id": "lRwdket2A4FxBzpQ",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "4o4WqT1kVgccjvmx",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Lead Lined",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 5,
+					"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "All Locations",
+					"modType": "upgrade",
+					"perks": "Armorer 3, Science! 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 3
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
 			"list": "",
-			"max": 2
+			"max": 2,
+			"modded": false,
+			"vCzArLcyEN25Awf3": {
+				"_id": "vCzArLcyEN25Awf3",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "4o4WqT1kVgccjvmx",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Lighter Build",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "armor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 1,
+					"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "All Locations",
+					"modType": "upgrade",
+					"perks": "",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": -1
+				},
+				"type": "apparel_mod"
+			}
 		},
 		"powerArmor": {
 			"frameId": "",
@@ -46,6 +534,7 @@
 			"physical": 4,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 51

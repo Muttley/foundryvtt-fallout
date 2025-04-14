@@ -13,27 +13,27 @@
 		"canBeScrapped": true,
 		"cost": 10,
 		"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
-		"effect": "<p>+2 damage resistances vs Blast weapons</p>",
+		"effect": "",
 		"favorite": false,
 		"health": {
 			"value": 0
 		},
 		"isJunk": false,
-		"location": "Any",
+		"location": "Helm, Arms, Legs",
 		"modType": "plating",
-		"perks": "Science! 1",
+		"perks": "Science! 2",
 		"quantity": 1,
 		"rarity": "common",
 		"resistance": {
-			"energy": 2,
-			"physical": 2,
-			"radiation": 2
+			"energy": 3,
+			"physical": 0,
+			"radiation": 0
 		},
 		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
 		"summary": "",
-		"weight": 1
+		"weight": 2
 	},
 	"type": "apparel_mod"
 }

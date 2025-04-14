@@ -13,13 +13,13 @@
 		"canBeScrapped": true,
 		"cost": 10,
 		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
-		"effect": "<p>+1 HP to Armor Piece (+2 to Torso)</p>",
+		"effect": "",
 		"favorite": false,
 		"health": {
-			"value": 0
+			"value": 1
 		},
 		"isJunk": false,
-		"location": "Any",
+		"location": "Helm, Arms, Legs",
 		"modType": "plating",
 		"perks": "Armorer 3",
 		"quantity": 1,

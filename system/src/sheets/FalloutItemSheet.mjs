@@ -766,9 +766,11 @@ export default class FalloutItemSheet extends ItemSheet {
 		if (mod.system.health.value !== 0) {
 			if (installed) {
 				updateData["system.health.value"] = this.item.system.health.value + mod.system.health.value;
+				updateData["system.health.max"] = this.item.system.health.max + mod.system.health.value;
 			}
 			else {
 				updateData["system.health.value"] = this.item.system.health.value - mod.system.health.value;
+				updateData["system.health.max"] = this.item.system.health.max - mod.system.health.value;
 			}
 		}
 
@@ -1087,6 +1089,9 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		if (resistances.length > 1) {
 			modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances.join(", ")}`);
+		}
+		else if (resistances.length === 1) {
+			modSummary.push(`${game.i18n.localize("FALLOUT.TEMPLATES.RESISTANCE_BONUSES")}: ${resistances}`);
 		}
 
 		// Shadowed

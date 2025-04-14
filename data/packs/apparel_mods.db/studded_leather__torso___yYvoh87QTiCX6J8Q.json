@@ -1,0 +1,39 @@
+{
+	"_id": "yYvoh87QTiCX6J8Q",
+	"_key": "!items!yYvoh87QTiCX6J8Q",
+	"effects": [
+	],
+	"folder": "xPcGgoBMaLSZ2Rxg",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Studded Leather (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 50,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": "common",
+		"resistance": {
+			"energy": 4,
+			"physical": 4,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}
