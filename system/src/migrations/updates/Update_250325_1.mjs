@@ -7,7 +7,7 @@ export default class Update_250325_1 extends FalloutUpdateBase {
 	async updateItem(itemData, actorData) {
 
 		const updateData = {};
-		if (itemData.type !== "apparel_mod") {
+		if (itemData.type === "apparel_mod") {
 
 
 			let modType = itemData.system.modType ?? "material";
@@ -24,7 +24,7 @@ export default class Update_250325_1 extends FalloutUpdateBase {
 			return updateData;
 
 		}
-		else if (itemData.type !== "apparel") {
+		else if (itemData.type === "apparel") {
 
 			let shadowed = itemData.system.shadowed ?? false;
 			updateData["system.shadowed"] = shadowed;

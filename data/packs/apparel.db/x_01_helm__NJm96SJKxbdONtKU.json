@@ -30,9 +30,822 @@
 			"torso": false
 		},
 		"mods": {
+			"143I7SjRcQBq9sht": {
+				"_id": "143I7SjRcQBq9sht",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744525557428,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "mMrg0X7SR8UJDXyE",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "EMP Shielding",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "plating",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 2,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"20FKglk8LkB8A1c0": {
+				"_id": "20FKglk8LkB8A1c0",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "e7NADGE4ZuOSX2mA",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Mk IV Helm",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 21,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 2
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "upgrade",
+					"perks": "2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"2SqnqGHd7D3y4O5E": {
+				"_id": "2SqnqGHd7D3y4O5E",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Rad Scrubber",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>Ignore radiation from Irradiated food or drink consumed while armor is powered</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "system",
+					"perks": "Science! 2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"42Qe82QKBhubp9xU": {
+				"_id": "42Qe82QKBhubp9xU",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Targeting HUD",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>When you take the Aim minor action, you may take a second minor action for 0 AP while armor is powered</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "system",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"7iRkK1Elj5iRfANw": {
+				"_id": "7iRkK1Elj5iRfANw",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": 1744525993555,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Explosive Shielding",
+				"ownership": {
+					"LbffuJGmFEdJvA7X": 3,
+					"default": 0
+				},
+				"sort": 900000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 10,
+					"description": "<p>Installed with the <strong>Science</strong> skill.</p>",
+					"effect": "<p>+2 to all damage resistances vs Blast weapons.</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Helm, Arms, Legs",
+					"modType": "plating",
+					"perks": "Science! 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"8fvlLrbWjODf6BCe": {
+				"_id": "8fvlLrbWjODf6BCe",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Lead Plating",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 600000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 10,
+					"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Helm, Arms, Legs",
+					"modType": "plating",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 2
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"Aqhxp38UDkBJ1EJ0": {
+				"_id": "Aqhxp38UDkBJ1EJ0",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "e7NADGE4ZuOSX2mA",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Mk VI Helm",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 35,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 3
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "upgrade",
+					"perks": "3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 2,
+						"physical": 2,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 3
+				},
+				"type": "apparel_mod"
+			},
+			"DxewSX1ooPKoNPPs": {
+				"_id": "DxewSX1ooPKoNPPs",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Photovoltaic Plating",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 700000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 10,
+					"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
+					"effect": "<p>+1 AP at the start of a scene if in direct sunlight (only applies once)</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Helm, Arms, Legs",
+					"modType": "plating",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"En57MQ3hn0DkcHJy": {
+				"_id": "En57MQ3hn0DkcHJy",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Sensor Array",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>Re-roll 1d20 on all PER tests while armor is powered</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "system",
+					"perks": "Science! 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"Su9jHSoBdvTPSMD8": {
+				"_id": "Su9jHSoBdvTPSMD8",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "e7NADGE4ZuOSX2mA",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Mk V Helm",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 28,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 2
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "upgrade",
+					"perks": "2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 1,
+						"physical": 2,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
+			"WKklumSE0xUCXFmc": {
+				"_id": "WKklumSE0xUCXFmc",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Prism Shielding",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 800000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 10,
+					"description": "<p>Installed with the <strong>Science </strong>skill.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Helm, Arms, Legs",
+					"modType": "plating",
+					"perks": "Science! 2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 3,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 2
+				},
+				"type": "apparel_mod"
+			},
 			"current": 0,
+			"installedMods": "",
+			"jQN0cvQRoPLzNwi5": {
+				"_id": "jQN0cvQRoPLzNwi5",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "e7NADGE4ZuOSX2mA",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Mk III Helm",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 14,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 1
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "upgrade",
+					"perks": "1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 1,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"kGts8ZQ6Lr4bkF9M": {
+				"_id": "kGts8ZQ6Lr4bkF9M",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": "LbffuJGmFEdJvA7X",
+					"modifiedTime": 1744526770450,
+					"systemId": "fallout",
+					"systemVersion": "11.14.3"
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "0sZTfWE1J7mKvvnK",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Titanium Plating",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 1000000,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 10,
+					"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 1
+					},
+					"isJunk": false,
+					"location": "Helm, Arms, Legs",
+					"modType": "plating",
+					"perks": "Armorer 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
 			"list": "",
-			"max": 3
+			"max": 3,
+			"modded": false,
+			"qIO7j6PYi4ocPi9h": {
+				"_id": "qIO7j6PYi4ocPi9h",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "e7NADGE4ZuOSX2mA",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Mk II Helm",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 7,
+					"description": "",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 1
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "upgrade",
+					"perks": "1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			},
+			"zALOB7gLXndAThjj": {
+				"_id": "zALOB7gLXndAThjj",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "JpQJNevV3gGYvAgY",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Internal Database",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "powerArmor",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 100,
+					"description": "<p>Installed with the <b>Science</b> skill</p>",
+					"effect": "<p>Re-roll 1d20 on all INT tests while armor is powered</p>",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "Head",
+					"modType": "system",
+					"perks": "Science! 2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 0,
+						"physical": 0,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 1
+				},
+				"type": "apparel_mod"
+			}
 		},
 		"powerArmor": {
 			"frameId": "",
@@ -46,6 +859,7 @@
 			"physical": 8,
 			"radiation": 7
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 12

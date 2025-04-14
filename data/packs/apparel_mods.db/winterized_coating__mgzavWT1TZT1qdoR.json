@@ -13,23 +13,26 @@
 		"canBeScrapped": true,
 		"cost": 10,
 		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>\n<p>Cannot be installed on <strong>X-01 Power Armor</strong>.</p>",
-		"effect": "<p>+1 Energy damage resistance</p>",
+		"effect": "",
 		"favorite": false,
 		"health": {
 			"value": 0
 		},
 		"isJunk": false,
-		"location": "Any",
+		"location": "Helm, Arms, Legs",
+		"modType": "plating",
 		"perks": "Armorer 1",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 1,
 			"physical": 0,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 1
 	},
 	"type": "apparel_mod"

@@ -20,16 +20,19 @@
 		},
 		"isJunk": false,
 		"location": "Arms",
+		"modType": "upgrade",
 		"perks": "Armorer 3",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 0,
 			"physical": 0,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 0
 	},
 	"type": "apparel_mod"

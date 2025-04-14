@@ -1,0 +1,39 @@
+{
+	"_id": "Kt14LMMm7zn0V5w2",
+	"_key": "!items!Kt14LMMm7zn0V5w2",
+	"effects": [
+	],
+	"folder": "3PYKStGfDNV2sWN9",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Polished Metal (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 80,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 2",
+		"quantity": 1,
+		"rarity": "common",
+		"resistance": {
+			"energy": 4,
+			"physical": 4,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 8
+	},
+	"type": "apparel_mod"
+}

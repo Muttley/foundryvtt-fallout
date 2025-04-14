@@ -13,23 +13,26 @@
 		"canBeScrapped": true,
 		"cost": 10,
 		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
-		"effect": "<p>+1 HP to Armor Piece (+2 to Torso)</p>",
+		"effect": "",
 		"favorite": false,
 		"health": {
-			"value": 0
+			"value": 1
 		},
 		"isJunk": false,
-		"location": "Any",
+		"location": "Helm, Arms, Legs",
+		"modType": "plating",
 		"perks": "Armorer 3",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 0,
 			"physical": 0,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 1
 	},
 	"type": "apparel_mod"

@@ -20,16 +20,19 @@
 		},
 		"isJunk": false,
 		"location": "Torso",
+		"modType": "upgrade",
 		"perks": "Armorer 1",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 3,
 			"physical": 0,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 4
 	},
 	"type": "apparel_mod"

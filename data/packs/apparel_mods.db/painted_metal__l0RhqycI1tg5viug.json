@@ -20,16 +20,19 @@
 		},
 		"isJunk": false,
 		"location": "",
+		"modType": "material",
 		"perks": "",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 1,
 			"physical": 1,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 1
 	},
 	"type": "apparel_mod"

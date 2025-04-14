@@ -7,6 +7,7 @@
 		"css": "gulp compileCss",
 		"docs": "gulp compileDocs",
 		"export": "./utils/smelter.mjs unpack -i leveldb -s system/packs -d ./data/packs",
+		"export:win": "node ./utils/smelter.mjs unpack -i leveldb -s system/packs -d ./data/packs",
 		"lang": "gulp compileLang",
 		"lint": "gulp lintJs",
 		"packs": "gulp compilePacks"

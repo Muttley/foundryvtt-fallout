@@ -16,20 +16,23 @@
 		"effect": "",
 		"favorite": false,
 		"health": {
-			"value": "7"
+			"value": 7
 		},
 		"isJunk": false,
 		"location": "Torso",
+		"modType": "upgrade",
 		"perks": "5",
 		"quantity": 1,
-		"rarity": 0,
+		"rarity": "common",
 		"resistance": {
 			"energy": 2,
 			"physical": 2,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 5
 	},
 	"type": "apparel_mod"

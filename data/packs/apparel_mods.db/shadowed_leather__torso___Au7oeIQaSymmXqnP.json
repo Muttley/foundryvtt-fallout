@@ -1,0 +1,39 @@
+{
+	"_id": "Au7oeIQaSymmXqnP",
+	"_key": "!items!Au7oeIQaSymmXqnP",
+	"effects": [
+	],
+	"folder": "xPcGgoBMaLSZ2Rxg",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Shadowed Leather (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 40,
+		"description": "<h2><span class=\"fontstyle0\">Shadowed Armor</span></h2>\n<p><span class=\"fontstyle2\">Many of the armor types listed in this section can be modified to become&nbsp;</span><span class=\"fontstyle3\">Shadowed</span><span class=\"fontstyle2\">. Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.</span></p>\n<ul>\n<li><span class=\"fontstyle2\">If you are wearing one or two pieces of Shadowed </span><span class=\"fontstyle2\">armor, you may ignore the first complication rolled on a </span><span class=\"fontstyle3\"><strong>Sneak</strong> </span><span class=\"fontstyle2\">test you attempt while in dim light or darkness.</span></li>\n<li><span class=\"fontstyle2\">If you are wearing three or more pieces of Shadowed </span><span class=\"fontstyle2\">armor, you may re-roll a single d20 on one </span><span class=\"fontstyle3\"><strong>Sneak</strong> </span><span class=\"fontstyle2\">test </span><span class=\"fontstyle2\">you attempt each scene while in dim light or darkness.</span></li>\n<li><span class=\"fontstyle2\">If you are wearing five or more pieces of Shadowed </span><span class=\"fontstyle2\">armor, you may re-roll a single d20 on any </span><span class=\"fontstyle3\"><strong>Sneak</strong> </span><span class=\"fontstyle2\">test </span><span class=\"fontstyle2\">you attempt while in dim light or darkness.</span></li>\n</ul>\n<p><span class=\"fontstyle2\">Torso armor counts as two pieces towards this. Shadowed armor does not provide any bonus if you are in a suit of Power Armor.</span> <br><br></p>",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": "common",
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"shadowed": true,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

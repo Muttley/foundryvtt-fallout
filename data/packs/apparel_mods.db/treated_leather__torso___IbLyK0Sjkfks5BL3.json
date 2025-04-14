@@ -1,0 +1,39 @@
+{
+	"_id": "IbLyK0Sjkfks5BL3",
+	"_key": "!items!IbLyK0Sjkfks5BL3",
+	"effects": [
+	],
+	"folder": "xPcGgoBMaLSZ2Rxg",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Treated Leather (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 30,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": "common",
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

@@ -1,0 +1,39 @@
+{
+	"_id": "SUBvV0XNUQzeCfOH",
+	"_key": "!items!SUBvV0XNUQzeCfOH",
+	"effects": [
+	],
+	"folder": "sZsnd4w6meoCfPDE",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Microcarbon (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 30,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": "common",
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}
