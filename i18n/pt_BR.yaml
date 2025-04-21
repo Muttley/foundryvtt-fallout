@@ -1,14 +1,14 @@
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: car
-FALLOUT.AbilityAbbr.end: vig
+FALLOUT.AbilityAbbr.end: res
 FALLOUT.AbilityAbbr.int: int
 FALLOUT.AbilityAbbr.luc: sor
 FALLOUT.AbilityAbbr.per: per
 FALLOUT.AbilityAbbr.str: for
 FALLOUT.AbilityAgi: A Agilidade
 FALLOUT.AbilityCha: C Carisma
-FALLOUT.AbilityEnd: E Vigor
-FALLOUT.AbilityInt: I Inteligêcia
+FALLOUT.AbilityEnd: E Resistência
+FALLOUT.AbilityInt: I Inteligência
 FALLOUT.AbilityLuc: L Sorte
 FALLOUT.AbilityPer: P Percepção
 FALLOUT.AbilityStr: S Força
@@ -24,8 +24,8 @@ FALLOUT.Actor.Warnings.NpcAlreadyResident: Esse PNJ já é um residente de {sett
 FALLOUT.Actor.Warnings.NpcMissing: Um colono com a Ator UUID {uuid} não pôde ser encontrado então foi removido do {settlementName}
 FALLOUT.Add: Adicionar
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Restaurar Tudo
-FALLOUT.APP.ChemDoseManager.ResetAllHeader: Redefinir Doses de Droga
-FALLOUT.APP.ChemDoseManager.title: Doses de Droga
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Redefinir Doses de Narcos
+FALLOUT.APP.ChemDoseManager.title: Doses de Narcos
 FALLOUT.APP.ItemTypeMenu.title: Selecionar Tipo de Item
 FALLOUT.APP.Loading.body: Buscando nos Ermos...
 FALLOUT.APP.Loading.title: Carregando
@@ -141,7 +141,7 @@ FALLOUT.BodyTypes.vehicle.wheelRR2: Roda Traseira Direita 2
 FALLOUT.BodyTypes.vehicle.wingL: Asa Esquerda
 FALLOUT.BodyTypes.vehicle.wingR: Asa Direita
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} se tornou viciado em {itemName}"
-FALLOUT.CHAT_MESSAGE.addiction.title: Vício em Drogas
+FALLOUT.CHAT_MESSAGE.addiction.title: Vício em Narcos
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} se tornou um alcoólatra ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcoolismo
 FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} agora está {hungerLevel}, {thirstLevel} e {sleepLevel}"
@@ -154,7 +154,7 @@ FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nível de Sede
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumiu Água Suja"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumiu {itemName}"
-FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga Consumida
+FALLOUT.CHAT_MESSAGE.consumed.chem.title: Narco Consumido
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Comida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Você ja está cheio e não pode comer mais
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Outros Consumido
@@ -168,11 +168,11 @@ FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recebe {radsT
 FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} está lendo uma revista chamada \"{itemName}\""
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: O teste de Compreensão foi um sucesso, então o benefício dessa revista pode ser usado mais uma vez ao ler a revista novamente
 FALLOUT.CHAT_MESSAGE.readMagazine.title: Revista Lida
-FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Desmanchador
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Pilhando Local
-FALLOUT.CHEM: Drogas
-FALLOUT.ChemDuration.brief: Curto
+FALLOUT.CHAT_MESSAGE.scavenging.title: Vasculhando Local
+FALLOUT.CHEM: Narcos
+FALLOUT.ChemDuration.brief: Breve
 FALLOUT.ChemDuration.instant: Instantâneo
 FALLOUT.ChemDuration.lasting: Duradouro
 FALLOUT.CREATURE.body: Corpo
@@ -199,9 +199,9 @@ FALLOUT.ERRORS.NoPLayerCharacterAssigned: Esse jogador não possui um personagem
 FALLOUT.ERRORS.NoUsableCharacterFound: Nenhum personagem usável encontrado para essa ação
 FALLOUT.ERRORS.ThisWeaponIsBroken: Esta arma está quebrada e não pode mais ser usada.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o Atributo usado nessa arma.
-FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Perícia usada nessa arma.
 FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem: Não foi possível localizar a versão do compêndio de {itemType} chamada "{name}"
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Artibuto e/ou Habilidade de Criatura especificada.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Atributo e/ou Perícia de Criatura especificada.
 FALLOUT.FOOD: Comida
 FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode especificar as Tabelas para serem usadas para cada categoria de resultado de pilhagem.
 FALLOUT.Form.ScavengingCategoryTables.title: Tabelas de Categoria Padrão
@@ -212,9 +212,9 @@ FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Você só pode seleci
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Não foi possível achar itens do tipo correto nos compendios disponíveis.
 FALLOUT.Form.SelectCompendiumItem.prompt: Selecione Itens...
 FALLOUT.Form.SelectCompendiumItem.title: Escolha Itens
-FALLOUT.Form.SelectCompendiumItem.tooltip: Adicionar dos Compendios
+FALLOUT.Form.SelectCompendiumItem.tooltip: Adicionar dos Compêndios
 FALLOUT.Form.SelectItem.title: Escolha {type}
-FALLOUT.Form.SourceFilters.AllUsed: Todas as fotes são permitidas atualmente.
+FALLOUT.Form.SourceFilters.AllUsed: Todas as fontes são permitidas atualmente.
 FALLOUT.Form.SourceFilters.hint: Somente livros fonte inclusos nessa lista serão usados por qualquer parte do sistema que puxa itens do Compêndio automaticamente.
 FALLOUT.Form.SourceFilters.prompt: Selecione Fonte...
 FALLOUT.Form.SourceFilters.TheseUsed: Somente as seguintes fontes serão permitidas.
