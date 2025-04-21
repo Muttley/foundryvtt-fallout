@@ -169,7 +169,7 @@ FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} está lendo uma revista cha
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: O teste de Compreensão foi um sucesso, então o benefício dessa revista pode ser usado mais uma vez ao ler a revista novamente
 FALLOUT.CHAT_MESSAGE.readMagazine.title: Revista Lida
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Desmanchador
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi vasculhado, levando {time}"
 FALLOUT.CHAT_MESSAGE.scavenging.title: Vasculhando Local
 FALLOUT.CHEM: Narcos
 FALLOUT.ChemDuration.brief: Breve
@@ -308,7 +308,7 @@ FALLOUT.SCAVENGING_ITEM_TYPE.junk: Sucata
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Outro
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armas
 FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Limpar Resultados
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Pilhar Local
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Vasculhar Local
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados obtidos ao vasculhar foram removidos.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Vasculha
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Nenhuma tabela de itens foi definida para itens do tipo {category}.
