@@ -1090,11 +1090,9 @@ export default class FalloutItemSheet extends ItemSheet {
 			resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.physical")} ${mod.system.resistance.physical > 0 ? "+" : ""}${mod.system.resistance.physical}`);
 		}
 
-
 		if (mod.system.resistance.radiation !== 0) {
 			resistances.push(`${game.i18n.localize("FALLOUT.RESISTANCE.radiation")} ${mod.system.resistance.radiation > 0 ? "+" : ""}${mod.system.resistance.radiation}`);
 		}
-
 
 		if (resistances.length > 1) {
 			modSummary.push(`${resistances.join(", ")}`);
@@ -1151,7 +1149,6 @@ export default class FalloutItemSheet extends ItemSheet {
 		if (modEffects.fireRate !== 0) {
 			modSummary.push(`${modEffects.fireRate > 0 ? "+" : ""}${modEffects.fireRate} ${game.i18n.localize("FALLOUT.WEAPON_MOD.summary.fireRate")}`);
 		}
-
 
 		if (modEffects.range > 0) {
 			modSummary.push(game.i18n.format("FALLOUT.WEAPON_MOD.summary.rangeIncrease", { range: modEffects.range }));

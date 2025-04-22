@@ -32,6 +32,7 @@
 - [#575] Merge new French, Portuguese/Brazilian, and Spanish translation updates from Crowdin
 - [#582] Merge new French updates from Crowdin
 - [#601] Merge new French and Portuguese/Brazilian updates from Crowdin
+- [#603] Merge new Portuguese/Brazilian updates from Crowdin
 
 ---
 
