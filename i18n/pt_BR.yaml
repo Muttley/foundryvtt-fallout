@@ -1,14 +1,14 @@
 FALLOUT.AbilityAbbr.agi: agi
 FALLOUT.AbilityAbbr.cha: car
-FALLOUT.AbilityAbbr.end: vig
+FALLOUT.AbilityAbbr.end: res
 FALLOUT.AbilityAbbr.int: int
 FALLOUT.AbilityAbbr.luc: sor
 FALLOUT.AbilityAbbr.per: per
 FALLOUT.AbilityAbbr.str: for
 FALLOUT.AbilityAgi: A Agilidade
 FALLOUT.AbilityCha: C Carisma
-FALLOUT.AbilityEnd: E Vigor
-FALLOUT.AbilityInt: I Inteligêcia
+FALLOUT.AbilityEnd: E Resistência
+FALLOUT.AbilityInt: I Inteligência
 FALLOUT.AbilityLuc: L Sorte
 FALLOUT.AbilityPer: P Percepção
 FALLOUT.AbilityStr: S Força
@@ -24,8 +24,8 @@ FALLOUT.Actor.Warnings.NpcAlreadyResident: Esse PNJ já é um residente de {sett
 FALLOUT.Actor.Warnings.NpcMissing: Um colono com a Ator UUID {uuid} não pôde ser encontrado então foi removido do {settlementName}
 FALLOUT.Add: Adicionar
 FALLOUT.APP.ChemDoseManager.ResetAllButton: Restaurar Tudo
-FALLOUT.APP.ChemDoseManager.ResetAllHeader: Redefinir Doses de Droga
-FALLOUT.APP.ChemDoseManager.title: Doses de Droga
+FALLOUT.APP.ChemDoseManager.ResetAllHeader: Redefinir Doses de Narcos
+FALLOUT.APP.ChemDoseManager.title: Doses de Narcos
 FALLOUT.APP.ItemTypeMenu.title: Selecionar Tipo de Item
 FALLOUT.APP.Loading.body: Buscando nos Ermos...
 FALLOUT.APP.Loading.title: Carregando
@@ -44,15 +44,14 @@ FALLOUT.APP.SalvageJunk.Items: Itens
 FALLOUT.APP.SalvageJunk.selectedAmount: Reciclando {amount} de {max} Sucata
 FALLOUT.APP.SalvageJunk.start: Começar a Reciclar
 FALLOUT.APP.SalvageJunk.time: Isso levará {time}
-FALLOUT.APP.SalvageJunk.title: Reciclar Lixo
+FALLOUT.APP.SalvageJunk.title: Reciclar Sucata
 FALLOUT.APPAREL.armor: Armadura
 FALLOUT.APPAREL.clothing: Roupa
 FALLOUT.APPAREL.headgear: Equip. Cabeça
 FALLOUT.APPAREL.outfit: Traje
 FALLOUT.APPAREL.plating: Chapeamento
 FALLOUT.APPAREL.powerArmor: Armadura Potente
-FALLOUT.APPAREL_MOD.shadowed: Sombreado
-FALLOUT.APPAREL_MOD.type.ballistic: Balística
+FALLOUT.APPAREL_MOD.shadowed: Escurecido
 FALLOUT.APPAREL_MOD.type.lining: Forro
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Chapeamento
@@ -142,7 +141,7 @@ FALLOUT.BodyTypes.vehicle.wheelRR2: Roda Traseira Direita 2
 FALLOUT.BodyTypes.vehicle.wingL: Asa Esquerda
 FALLOUT.BodyTypes.vehicle.wingR: Asa Direita
 FALLOUT.CHAT_MESSAGE.addiction.body: "{actorName} se tornou viciado em {itemName}"
-FALLOUT.CHAT_MESSAGE.addiction.title: Vício em Drogas
+FALLOUT.CHAT_MESSAGE.addiction.title: Vício em Narcos
 FALLOUT.CHAT_MESSAGE.alcoholic.body: "{actorName} se tornou um alcoólatra ao consumir {itemName}"
 FALLOUT.CHAT_MESSAGE.alcoholic.title: Alcoolismo
 FALLOUT.CHAT_MESSAGE.condition-change.body: "{actorName} agora está {hungerLevel}, {thirstLevel} e {sleepLevel}"
@@ -155,7 +154,7 @@ FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nível de Sede
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumiu Água Suja"
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumiu {itemName}"
-FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga Consumida
+FALLOUT.CHAT_MESSAGE.consumed.chem.title: Narco Consumido
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Comida Consumida
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: Você ja está cheio e não pode comer mais
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Outros Consumido
@@ -169,11 +168,11 @@ FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} recebe {radsT
 FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} está lendo uma revista chamada \"{itemName}\""
 FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: O teste de Compreensão foi um sucesso, então o benefício dessa revista pode ser usado mais uma vez ao ler a revista novamente
 FALLOUT.CHAT_MESSAGE.readMagazine.title: Revista Lida
-FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Sucateador
-FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi pilhado, levando {time}"
-FALLOUT.CHAT_MESSAGE.scavenging.title: Pilhando Local
-FALLOUT.CHEM: Drogas
-FALLOUT.ChemDuration.brief: Curto
+FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Desmanchador
+FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} foi vasculhado, levando {time}"
+FALLOUT.CHAT_MESSAGE.scavenging.title: Vasculhando Local
+FALLOUT.CHEM: Narcos
+FALLOUT.ChemDuration.brief: Breve
 FALLOUT.ChemDuration.instant: Instantâneo
 FALLOUT.ChemDuration.lasting: Duradouro
 FALLOUT.CREATURE.body: Corpo
@@ -200,22 +199,22 @@ FALLOUT.ERRORS.NoPLayerCharacterAssigned: Esse jogador não possui um personagem
 FALLOUT.ERRORS.NoUsableCharacterFound: Nenhum personagem usável encontrado para essa ação
 FALLOUT.ERRORS.ThisWeaponIsBroken: Esta arma está quebrada e não pode mais ser usada.
 FALLOUT.ERRORS.UnableToDetermineWeaponAttribute: Não foi possível determinar o Atributo usado nessa arma.
-FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Habilidade usada nessa arma
+FALLOUT.ERRORS.UnableToDetermineWeaponSkill: Não foi possível determinar a Perícia usada nessa arma.
 FALLOUT.ERRORS.UnableToFindCompendiumVersionOfItem: Não foi possível localizar a versão do compêndio de {itemType} chamada "{name}"
-FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Artibuto e/ou Habilidade de Criatura especificada.
+FALLOUT.ERRORS.WeaponHasMissingCreatureConfiguration: Essa arma não possui um Atributo e/ou Perícia de Criatura especificada.
 FALLOUT.FOOD: Comida
-FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode especificar as Tabelas para serem usadas para cada categoria de resultado de pilhagem.
+FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode definir as Tabelas que serão usadas para cada categoria de resultado ao Vasculhar.
 FALLOUT.Form.ScavengingCategoryTables.title: Tabelas de Categoria Padrão
-FALLOUT.Form.ScavengingCompendium.hint: Se selecionado apenas as tabelas de rolagem armazenadas no compêndio especificado estarão disponíveis para seleção como fontes de resultado de Pilhagem.
-FALLOUT.Form.ScavengingCompendium.title: Compêndio de Pilhagem
-FALLOUT.Form.ScavengingSettings.title: Configurações de Pilhagem
+FALLOUT.Form.ScavengingCompendium.hint: Se selecionado, apenas as Tabelas de Rolagem do compêndio escolhido poderão ser usadas como fontes de resultados ao Vasculhar.
+FALLOUT.Form.ScavengingCompendium.title: Compêndio de Vasculha
+FALLOUT.Form.ScavengingSettings.title: Configurações de Vasculha
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Você só pode selecionar um máximo de {maxChoices} desse tipo de Item.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Não foi possível achar itens do tipo correto nos compendios disponíveis.
 FALLOUT.Form.SelectCompendiumItem.prompt: Selecione Itens...
 FALLOUT.Form.SelectCompendiumItem.title: Escolha Itens
-FALLOUT.Form.SelectCompendiumItem.tooltip: Adicionar dos Compendios
+FALLOUT.Form.SelectCompendiumItem.tooltip: Adicionar dos Compêndios
 FALLOUT.Form.SelectItem.title: Escolha {type}
-FALLOUT.Form.SourceFilters.AllUsed: Todas as fotes são permitidas atualmente.
+FALLOUT.Form.SourceFilters.AllUsed: Todas as fontes são permitidas atualmente.
 FALLOUT.Form.SourceFilters.hint: Somente livros fonte inclusos nessa lista serão usados por qualquer parte do sistema que puxa itens do Compêndio automaticamente.
 FALLOUT.Form.SourceFilters.prompt: Selecione Fonte...
 FALLOUT.Form.SourceFilters.TheseUsed: Somente as seguintes fontes serão permitidas.
@@ -245,7 +244,7 @@ FALLOUT.Item.PowerArmor.Pieces: Peças de Armadura Potente
 FALLOUT.Item.Warnings.Modded: Esse item foi modificado. Desabilite todas as modificações para editar.
 FALLOUT.LEVEL.CurrentXP: XP Atual
 FALLOUT.LEVEL.Level: Nível
-FALLOUT.LEVEL.NextXP: XP Prox. Nível
+FALLOUT.LEVEL.NextXP: XP Próx. Nível
 FALLOUT.LEVEL.RewardXP: Recompensa XP
 FALLOUT.LevelUp.AppTitle: Subir de Nível
 FALLOUT.LOCATION_CATEGORY.agriculture: Agricultura
@@ -281,53 +280,53 @@ FALLOUT.MIGRATION.completed_schema: Aplicação de atualuzações para Fallout 2
 FALLOUT.MODS.installedMods: Modificações Instaladas
 FALLOUT.MODS.mods: Modificações
 FALLOUT.NPC_TYPES.legendary: Lendário
-FALLOUT.NPC_TYPES.major: Importante
+FALLOUT.NPC_TYPES.major: Principal
 FALLOUT.NPC_TYPES.mighty: Poderoso
 FALLOUT.NPC_TYPES.minion: Lacaio
 FALLOUT.NPC_TYPES.normal: Normal
 FALLOUT.NPC_TYPES.notable: Notável
 FALLOUT.OTHER: Outro
 FALLOUT.powered: Energizado
-FALLOUT.RANGE.close: Curto
+FALLOUT.RANGE.close: Próximo
 FALLOUT.RANGE.extreme: Extremo
 FALLOUT.RANGE.long: Longo
 FALLOUT.RANGE.medium: Médio
 FALLOUT.RESISTANCE.ClickToToggleImmunity: Clique para alternar Imunidade
-FALLOUT.RESISTANCE.energy: RD Energia
+FALLOUT.RESISTANCE.energy: RD Energético
 FALLOUT.RESISTANCE.Immunity.poison: Imunidade a Veneno
 FALLOUT.RESISTANCE.Immunity.radiation: Imunidade a Radiação
-FALLOUT.RESISTANCE.physical: RD Física
-FALLOUT.RESISTANCE.poison: RD Veneno
-FALLOUT.RESISTANCE.radiation: RD Radiação
+FALLOUT.RESISTANCE.physical: RD Físico
+FALLOUT.RESISTANCE.poison: RD Venenoso
+FALLOUT.RESISTANCE.radiation: RD Radiativo
 FALLOUT.SCAVENGING_ITEM_TYPE.ammunition: Munição
 FALLOUT.SCAVENGING_ITEM_TYPE.armor: Armadura
 FALLOUT.SCAVENGING_ITEM_TYPE.beverages: Bebidas
-FALLOUT.SCAVENGING_ITEM_TYPE.chems: Drogas
+FALLOUT.SCAVENGING_ITEM_TYPE.chems: Narcos
 FALLOUT.SCAVENGING_ITEM_TYPE.clothing: Roupas
 FALLOUT.SCAVENGING_ITEM_TYPE.food: Comida
 FALLOUT.SCAVENGING_ITEM_TYPE.junk: Sucata
 FALLOUT.SCAVENGING_ITEM_TYPE.other: Outro
 FALLOUT.SCAVENGING_ITEM_TYPE.weapons: Armas
 FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Limpar Resultados
-FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Pilhar Local
-FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados de pilhagem foram limpos.
-FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Pilhagem
+FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Vasculhar Local
+FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados obtidos ao vasculhar foram removidos.
+FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Vasculha
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Nenhuma tabela de itens foi definida para itens do tipo {category}.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Pesadamente Vasculhado (D3)
-FALLOUT.SEARCHED_DEGREE.mostly_searched: Majoritariamente Vasculhado (D2)
-FALLOUT.SEARCHED_DEGREE.partly_searched: Parcialmente Vasculhado (D1)
-FALLOUT.SEARCHED_DEGREE.untouched: Intocado (D0)
+FALLOUT.SEARCHED_DEGREE.mostly_searched: Parcialmente Vasculhado (D2)
+FALLOUT.SEARCHED_DEGREE.partly_searched: Ligeiramente Vasculhado (D1)
+FALLOUT.SEARCHED_DEGREE.untouched: Intacto (D0)
 FALLOUT.SETTINGS.sourceFilters.hint: Se preenchido, apenas as fontes de livros incluídas nesta lista estarão disponíveis para seleção em locais relevantes. Itens sem fonte de livro definida sempre estarão disponíveis.
 FALLOUT.SETTINGS.sourceFilters.title: Filtros de Livros Fonte
 FALLOUT.SETTLEMENT_ACTION.Build: Construir
 FALLOUT.SETTLEMENT_ACTION.Business: Negócios
 FALLOUT.SETTLEMENT_ACTION.Guard: Guarda
 FALLOUT.SETTLEMENT_ACTION.HuntingAndGathering: Caça e Coleta
-FALLOUT.SETTLEMENT_ACTION.Scavenging: Pilhando
+FALLOUT.SETTLEMENT_ACTION.Scavenging: Vasculhando
 FALLOUT.SETTLEMENT_ACTION.TendCrops: Cultivo
 FALLOUT.SETTLEMENT_ACTION.TradeCaravan: Caravana de Comércio
 FALLOUT.SETTLEMENT_ACTION.Unnasigned: Sem Função
-FALLOUT.SETTLEMENT_ITEM.CraftingTable: Mesa de Trabalho
+FALLOUT.SETTLEMENT_ITEM.CraftingTable: Bancada de Trabalho
 FALLOUT.SETTLEMENT_ITEM.Defense: Defesa
 FALLOUT.SETTLEMENT_ITEM.Power: Energia
 FALLOUT.SETTLEMENT_ITEM.Resource: Recurso
@@ -344,19 +343,19 @@ FALLOUT.SETTLEMENT.People.label: Pessoas
 FALLOUT.SETTLEMENT.Power.label: Energia
 FALLOUT.SETTLEMENT.Water.label: Água
 FALLOUT.SKILL.Athletics: Atletismo
-FALLOUT.SKILL.Barter: Negociar
+FALLOUT.SKILL.Barter: Barganha
 FALLOUT.SKILL.Big Guns: Armas Grandes
 FALLOUT.SKILL.Energy Weapons: Armas de Energia
 FALLOUT.SKILL.Explosives: Explosivos
-FALLOUT.SKILL.Lockpick: Arrombar
+FALLOUT.SKILL.Lockpick: Arrombamento
 FALLOUT.SKILL.Medicine: Medicina
-FALLOUT.SKILL.Melee Weapons: Armas Brancas
-FALLOUT.SKILL.Pilot: Pilotar
+FALLOUT.SKILL.Melee Weapons: Armas Corpo a Corpo
+FALLOUT.SKILL.Pilot: Pilotagem
 FALLOUT.SKILL.Repair: Reparo
-FALLOUT.SKILL.Science: Ciência
-FALLOUT.SKILL.Small Guns: Armas Leves
+FALLOUT.SKILL.Science: Ciências
+FALLOUT.SKILL.Small Guns: Armas Pequenas
 FALLOUT.SKILL.Sneak: Furtividade
-FALLOUT.SKILL.Speech: Lábia
+FALLOUT.SKILL.Speech: Retórica
 FALLOUT.SKILL.Survival: Sobrevivência
 FALLOUT.SKILL.Throwing: Arremesso
 FALLOUT.SKILL.Unarmed: Desarmado
@@ -379,7 +378,7 @@ FALLOUT.SOURCE_TITLE.settlers_guide: Livro Guia dos Colonos
 FALLOUT.SOURCE_TITLE.wanderers_guide: Livro Guia dos Andarilhos
 FALLOUT.SOURCE_TITLE.winter_of_atom: Inverno de Átom
 FALLOUT.TEMPLATES.Abilities: Habilidades
-FALLOUT.TEMPLATES.Add_Perk: Adicionar Talento
+FALLOUT.TEMPLATES.Add_Perk: Adicionar Vantagem
 FALLOUT.TEMPLATES.Add_Trait: Adicionar Traço
 FALLOUT.TEMPLATES.AddictionNumber: Número de Vício
 FALLOUT.TEMPLATES.Addictive: Viciante
@@ -401,15 +400,15 @@ FALLOUT.TEMPLATES.Attack: Ataque
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
-FALLOUT.TEMPLATES.Butchery: Talhar
-FALLOUT.TEMPLATES.ButcheryTooltip: Número Alvo de Talhar
+FALLOUT.TEMPLATES.Butchery: Abate
+FALLOUT.TEMPLATES.ButcheryTooltip: Número Alvo de Abate
 FALLOUT.TEMPLATES.Category: Categoria
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.complexity: Complexidade
 FALLOUT.TEMPLATES.Complications: Complicações
 FALLOUT.TEMPLATES.CONDITIONS: CONDIÇÕES
 FALLOUT.TEMPLATES.conditions.dehydrated: Desidratado
-FALLOUT.TEMPLATES.conditions.exhausted: Exausto
+FALLOUT.TEMPLATES.conditions.exhausted: Esgotado
 FALLOUT.TEMPLATES.conditions.fatigue: Fadiga
 FALLOUT.TEMPLATES.conditions.full: Cheio
 FALLOUT.TEMPLATES.conditions.hunger: Fome
@@ -418,15 +417,15 @@ FALLOUT.TEMPLATES.conditions.hydrated: Hidratado
 FALLOUT.TEMPLATES.conditions.intoxication.label: Alcoolismo
 FALLOUT.TEMPLATES.conditions.intoxication.tooltip: O número de bebidas alcoólicas consumidas
 FALLOUT.TEMPLATES.conditions.peckish: Com Fome
-FALLOUT.TEMPLATES.conditions.quenched: Satisfeito
+FALLOUT.TEMPLATES.conditions.quenched: Estufado
 FALLOUT.TEMPLATES.conditions.rested: Descansado
 FALLOUT.TEMPLATES.conditions.sated: Saciado
 FALLOUT.TEMPLATES.conditions.sleep: Sono
-FALLOUT.TEMPLATES.conditions.starving: Faminto
-FALLOUT.TEMPLATES.conditions.thirst: Sede
-FALLOUT.TEMPLATES.conditions.thirsty: Com Sede
+FALLOUT.TEMPLATES.conditions.starving: Em Inanição
+FALLOUT.TEMPLATES.conditions.thirst: Com Sede
+FALLOUT.TEMPLATES.conditions.thirsty: Sedento
 FALLOUT.TEMPLATES.conditions.tired: Cansado
-FALLOUT.TEMPLATES.conditions.weary: Fraco
+FALLOUT.TEMPLATES.conditions.weary: Exausto
 FALLOUT.TEMPLATES.ConstructionTime: Tempo de Construção
 FALLOUT.TEMPLATES.Consumable_Group: Grupo
 FALLOUT.TEMPLATES.Consumable_Type: Tipo
@@ -445,11 +444,11 @@ FALLOUT.TEMPLATES.Create_Weapon: Criar Arma
 FALLOUT.TEMPLATES.CreateNpc: Criar NPJ
 FALLOUT.TEMPLATES.CreateStructuresAndRooms: Criar Estruturas e Quartos
 FALLOUT.TEMPLATES.Creature_Attribute: Atributo da Criatura
-FALLOUT.TEMPLATES.Creature_Skill: Habilidade da Criatura
+FALLOUT.TEMPLATES.Creature_Skill: Perícia da Criatura
 FALLOUT.TEMPLATES.current: atual
 FALLOUT.TEMPLATES.CurrentLeader: Líder Atual
 FALLOUT.TEMPLATES.CustomAttribute: Atributo Personalizado
-FALLOUT.TEMPLATES.CustomSkill: Habilidade Personalizada
+FALLOUT.TEMPLATES.CustomSkill: Perícia Personalizada
 FALLOUT.TEMPLATES.Damage_Effects: Efeitos de Dano
 FALLOUT.TEMPLATES.DAMAGE_EFFECTS: EFEITOS DE DANO
 FALLOUT.TEMPLATES.DAMAGE_TYPE: TIPO DO DANO
@@ -485,9 +484,9 @@ FALLOUT.TEMPLATES.HP_Healed: PV Restaurado
 FALLOUT.TEMPLATES.HP: PV
 FALLOUT.TEMPLATES.InfectionActive: Infecção Ativa
 FALLOUT.TEMPLATES.INITIATIVE: INICIATIVA
-FALLOUT.TEMPLATES.Injuries: Feridas
-FALLOUT.TEMPLATES.INJURIES: FERIDAS
-FALLOUT.TEMPLATES.Injury_Left_Click: Ferida (Botão Esq.)
+FALLOUT.TEMPLATES.Injuries: Ferimentos
+FALLOUT.TEMPLATES.INJURIES: FERIMENTOS
+FALLOUT.TEMPLATES.Injury_Left_Click: Ferimento (Botão Esq.)
 FALLOUT.TEMPLATES.Irradiated: Irradiado
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Dados de Dano de Radiação
 FALLOUT.TEMPLATES.Issue: Problema
@@ -496,7 +495,7 @@ FALLOUT.TEMPLATES.Junk: Sucata
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Aprendido
-FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCAIS & FERIDAS
+FALLOUT.TEMPLATES.LOCATIONS_INJURIES: LOCAIS & FERIMENTOS
 FALLOUT.TEMPLATES.Locations: Locais
 FALLOUT.TEMPLATES.Luck: Sorte
 FALLOUT.TEMPLATES.MaterialsRecoverd: Materiais Recuperados
@@ -504,18 +503,18 @@ FALLOUT.TEMPLATES.MaterialsRequired: Materiais Necessários
 FALLOUT.TEMPLATES.MAX_PARTY_AP: PA MÁXIMO DO GRUPO
 FALLOUT.TEMPLATES.max: máx
 FALLOUT.TEMPLATES.MAX: MÁX
-FALLOUT.TEMPLATES.MaxRanks: Máximo de Ranques
+FALLOUT.TEMPLATES.MaxRanks: Máximo de Graus
 FALLOUT.TEMPLATES.Melee_Bonus: Bônus Corpo a Corpo
 FALLOUT.TEMPLATES.Melee_Damage: Dano Corpo a Corpo
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Modificação
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
-FALLOUT.TEMPLATES.Name_Prefix: Prefixos
+FALLOUT.TEMPLATES.Name_Prefix: Sufixo
 FALLOUT.TEMPLATES.Notes: Anotações
 FALLOUT.TEMPLATES.Origin: Origem
 FALLOUT.TEMPLATES.OVERSEER_AP: PA DO SUPERVISOR
 FALLOUT.TEMPLATES.ParentItem: Item Originário
 FALLOUT.TEMPLATES.PARTY_AP: PA MÁXIMO DO GRUPO
-FALLOUT.TEMPLATES.PERK: TALENTO
+FALLOUT.TEMPLATES.PERK: VANTAGEM
 FALLOUT.TEMPLATES.PHYS: FÍSICO
 FALLOUT.TEMPLATES.Points: Pontos
 FALLOUT.TEMPLATES.POISON: VENENO
@@ -529,22 +528,22 @@ FALLOUT.TEMPLATES.Radiation_Healed: Radiação Curada
 FALLOUT.TEMPLATES.RADIATION: RADIAÇÃO
 FALLOUT.TEMPLATES.Range: Alcance
 FALLOUT.TEMPLATES.RANGE: Alcance
-FALLOUT.TEMPLATES.Rank: Ranque
-FALLOUT.TEMPLATES.Ranks_current_maximum: Ranques [atual/máximo]
-FALLOUT.TEMPLATES.Ranks: Ranques
-FALLOUT.TEMPLATES.Re_roll: Re-rolar
+FALLOUT.TEMPLATES.Rank: Grau
+FALLOUT.TEMPLATES.Ranks_current_maximum: Graus [atual/máximo]
+FALLOUT.TEMPLATES.Ranks: Graus
+FALLOUT.TEMPLATES.Re_roll: Rejogar
 FALLOUT.TEMPLATES.RemoveSettler: Remover Colono
 FALLOUT.TEMPLATES.RemoveWeaponQualityEffect: Remover Qualidade/Efeito da Arma (Clique Direito)
 FALLOUT.TEMPLATES.Requirements: Requisitos
 FALLOUT.TEMPLATES.RESISTANCE_BONUSES: BÔNUS DE RESISTÊNCIA
 FALLOUT.TEMPLATES.Resistances: Resistências
 FALLOUT.TEMPLATES.RESISTANCES: RESISTÊNCIAS
-FALLOUT.TEMPLATES.Salvage: Sucatear
-FALLOUT.TEMPLATES.SalvageTooltip: NA de Sucatear
+FALLOUT.TEMPLATES.Salvage: Espoliar
+FALLOUT.TEMPLATES.SalvageTooltip: NA de Espoliar
 FALLOUT.TEMPLATES.Scale: Escala
 FALLOUT.TEMPLATES.SettlersAndJobs: Colonos e Profissões
-FALLOUT.TEMPLATES.Skill: Habilidade
-FALLOUT.TEMPLATES.Skills: Habilidades
+FALLOUT.TEMPLATES.Skill: Perícia
+FALLOUT.TEMPLATES.Skills: Perícias
 FALLOUT.TEMPLATES.Source: Fonte
 FALLOUT.TEMPLATES.Status: Status
 FALLOUT.TEMPLATES.Stockpile: Estoque
@@ -557,12 +556,12 @@ FALLOUT.TEMPLATES.Thirst_Reduction: Redução da Sede
 FALLOUT.TEMPLATES.TimeTaken: Tempo Gasto
 FALLOUT.TEMPLATES.TN: NA
 FALLOUT.TEMPLATES.TRAIT: TRAÇO
-FALLOUT.TEMPLATES.Treated_injury_Right_Click: Ferida Tratada (Botão Dir.)
-FALLOUT.TEMPLATES.TreatedInjuries: Feridas Tratadas
+FALLOUT.TEMPLATES.Treated_injury_Right_Click: Ferimento Tratado (Botão Dir.)
+FALLOUT.TEMPLATES.TreatedInjuries: Ferimentos Tratados
 FALLOUT.TEMPLATES.Type: Tipo
 FALLOUT.TEMPLATES.Use_Agility: Usar Agilidade
 FALLOUT.TEMPLATES.Use_Charisma: Usar Carisma
-FALLOUT.TEMPLATES.Use_Endurance: Usar Tolerância
+FALLOUT.TEMPLATES.Use_Endurance: Usar Resistência
 FALLOUT.TEMPLATES.Use_Intelligence: Usar Inteligência
 FALLOUT.TEMPLATES.Use_Luck: Usar Sorte
 FALLOUT.TEMPLATES.Use_Perception: Usar Percepção
@@ -583,19 +582,19 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Horas"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hora"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutos"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minutos"
-FALLOUT.TOOLTIPS.Apparel.shadowed: A armadura sombreada tem uma superfície mais escura e menos refletiva, o que dificulta a visão do usuário em ambientes com pouca luz ou na escuridão.
-FALLOUT.TOOLTIPS.DamageEffect.arc: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional sofre metade do dano rolado (arredondado para cima). Diferente da Rajada, isso não custa munção adicional.
-FALLOUT.TOOLTIPS.DamageEffect.breaking: Por cada Efeito rolado, reduz o número de @fos[DC] que a cobertura fornece ao alvo em 1, permanentemente. Se o alvo não está em cobertura, reduza a RD do local atingido em 1, dependendo do dano que a arma inflinge.
-FALLOUT.TOOLTIPS.DamageEffect.burst: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional gasta 1 munição adicional da arma.
-FALLOUT.TOOLTIPS.DamageEffect.freeze: Inimigos acertados pelo ataque serão Congeladosse o número de Efeitos rolados for igual ou maior que metade que o Vigor do alvo (ou Corpo para Criaturas). Uma criatura Congelada não pode realizar ações no seu próximo turno.
-FALLOUT.TOOLTIPS.DamageEffect.persistent: "Se um ou mais efeitos forem rolados, o alvo sofre o dano da arma novamente no final de seus próximos turno, por um número de rodadas igual ao número de Efeitos rolados. O alvo pode gastar uma Ação Maior para fazer um teste para parar o dano persistente antecipadamente, com a dificuldade igual a quantidade de Efeitos rolados, e o Atributo + Habildiade escolhido pelo Mestre. Algumas armas Persistentes podem infligir um tipo diferente de dano da arma e, quando for o caso, será indicado entre colchetes, por exemplo: Persistente (Veneno)."
-FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignora X pontos da RD do alvo para cada Efeito rolado, onde X é o nível desse efeito de dano.
-FALLOUT.TOOLTIPS.DamageEffect.radioactive: Por cada Efeito rolado, o alvo também sofre 1 ponto de dano de radiação. Esse dano de radiação é rolado e aplicado separadamente, logo após o alvo sofrer o dano normal do ataque.
-FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque inflige um acerto adicional no alvo. Cada acerto adicional inflige metade do dano rolado (arredondado para baixo) e atinge um local aleatório, mesmo que um local específico tenha sido alvo do ataque inicial.
-FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá realizar suas ações normais no próximo turno. Um personagem ou criatura atordoada ainda pode gastar PA para realizar ações adicionais normalmente.
-FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante inflingir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste VIG + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de HP ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
-FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano por cada Efeito rolado.
-FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: O veículo pode transportar até X kgs de carga adicional.
+FALLOUT.TOOLTIPS.Apparel.shadowed: A armadura Escurecida tem uma superfície mais escura e menos reflexiva, tornando o usuário mais difícil de ser visto na penumbra ou na escuridão.
+FALLOUT.TOOLTIPS.DamageEffect.arc: Cada Efeito rolado automaticamente acerta um alvo adicional em alcance Próximo do alvo principal. Cada alvo adicional sofre metade do dano rolado (arredondado para cima). Diferente da Rajada, isso não custa munição adicional.
+FALLOUT.TOOLTIPS.DamageEffect.breaking: Para cada Efeito rolado, reduza permanentemente o número de @fos[DC] que a cobertura de um alvo fornece em 1. Se o alvo não estiver em cobertura, reduza o Redutor de Dano da área atingida em 1, conforme o tipo de dano da arma (dano Físico reduz RD Físico, dano Energético reduz RD Energético etc.).
+FALLOUT.TOOLTIPS.DamageEffect.burst: O ataque pode atingir um alvo extra à distância Próxima do alvo principal para cada Efeito rolado. Cada alvo extra gasta 1 disparo a mais.
+FALLOUT.TOOLTIPS.DamageEffect.freeze: Inimigos acertados pelo ataque serão Congelados se o número de Efeitos rolados for igual ou maior que metade que a Resistência do alvo (ou Corpo para Criaturas). Uma criatura Congelada não pode realizar ações no seu próximo turno.
+FALLOUT.TOOLTIPS.DamageEffect.persistent: "Se um ou mais Efeitos forem rolados, o alvo sofre o dano da arma novamente no final de seus próximos e subsequentes turnos, por um número de rodadas igual ao número de Efeitos rolados. O alvo pode gastar uma ação maior para fazer um teste e estancar o dano Persistente mais cedo, sendo a dificuldade igual ao número de Efeitos rolados pelo atacante e o atributo + perícia escolhidos pelo mestre. Algumas armas Persistentes podem causar um tipo de dano diferente do da arma. Quando for esse o caso, o dano será descrito entre parênteses como no exemplo a seguir: Persistente (Venenoso)."
+FALLOUT.TOOLTIPS.DamageEffect.piercing_x: Ignore X pontos do RD do alvo para cada Efeito rolado, sendo X o valor desse efeito de dano.
+FALLOUT.TOOLTIPS.DamageEffect.radioactive: Para cada Efeito rolado, o alvo também sofre 1 de dano Radiativo. Esse dano de radiação é contabilizado e aplicado separadamente, após uma personagem ter sofrido o dano normal do ataque.
+FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque causa um acerto extra no alvo. Cada acerto extra causa metade do dano rolado (arredondado para baixo) e atinge uma área aleatória, mesmo que uma área específica tenha sido alvo do ataque inicial.
+FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá fazer suas ações normais no próximo turno. Uma personagem ou criatura atordoada ainda pode gastar PA para realizar ações extras como de costume.
+FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante Infligir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste RES + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de PV ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
+FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano extra para cada Efeito rolado.
+FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: O veículo pode transportar até X lbs de carga adicional.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: O veículo é maciço e desajeitado, e aumenta os testes de dificuldade para se mover em +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: O veículo é completamente fechado, protegendo a tripulação e os passageiros dentro dele. A tripulação e os passageiros não podem ser alvos de ataques de fora do veículo, mas também não podem usar seu próprio armamento. Os passageiros e a tripulação dentro do veículo não sofrem dano de Radiação de efeitos ambientais.
 FALLOUT.TOOLTIPS.VehicleQuality.exposed: O passageiro e a tripulação de um veículo exposto podem ser alvos de ataques de fora do veículo e podem atacar com suas próprias armas.
@@ -605,32 +604,32 @@ FALLOUT.TOOLTIPS.VehicleQuality.rugged: Os testes de operação para reparar ve�
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Um veículo de assento único é projetado para ser operado por um único piloto, que também assume a função de artilheiro, sem a penalidade normal.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: O veículo viaja somente na água e não pode viajar pelo chão. Se este veículo sofrer um golpe crítico no Chassi, água começará a entrar nele e afundará após um número de rodadas igual ao dobro da Escala do veículo.
 FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Não consumirá munição extra.
-FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você realizar a Ação Menor de Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 @fos[DC] por PA gasto ao dano do ataque. Se você adicionar dano dessa maneira, você não pode gastar munição para adicionar mais dano. Uma arma não pode ser Precisa e Imprecisa.
+FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você fizer a ação menor Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 CD por PA gasto ao dano do ataque. Se você ganhar dano dessa maneira, você não pode gastar munição para dano extra. Uma arma não pode ser Precisa e Imprecisa ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: A arma consome munição a uma taxa muito maior do que outras armas. Cada vez que a arma é disparada, ela gasta X munição, em vez de 1. Além disso, dano extra requer gastar X munição por +1CD, com um número máximo de CD igual à Cadência de Tiro da arma. Usos adicionais de munição, como o efeito de dano Rajada, também gastam X munição para cada 1 munição que normalmente seria gasta.
 FALLOUT.TOOLTIPS.WeaponQuality.aquatic: Quando você faz um ataque com esta arma enquanto estiver debaixo d'água, o ataque não sofre as penalidades normais de ataques subaquáticos.
-FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quando você ataca com uma arma de Explosão, você não atinge um único oponente. Em vez disso, selecione uma única zona que você possa ver e faça o teste de habilidade apropriado para atacar, com uma dificuldade básica de 2 (ajustada para o alcance normalmente). Se você tiver sucesso, todas as criaturas (e outros alvos passíveis de dano) naquela zona sofrem o dano da arma. Se você falhar, seu ataque mal direcionado será menos eficaz: role apenas metade do @fos[DC] da arma para determinar o dano infligido às criaturas na zona alvo e ignore os efeitos de dano normais da arma."
+FALLOUT.TOOLTIPS.WeaponQuality.blast: "Quando você faz um ataque com uma arma Explosiva, você não tem como alvo um único oponente. Em vez disso, selecione uma única zona que você possa ver e faça o teste de perícia apropriado para atacar, com uma dificuldade básica 2 (ajustada pela distância, como de costume). Se você for bem-sucedido, todas as criaturas (e outros alvos danificáveis) nessa zona sofrem o dano da arma. Se você falhar, seu ataque mal colocado é menos eficaz: jogue apenas metade dos CD da arma para determinar o dano causado às criaturas na zona alvo e ignore os efeitos de dano normais da arma."
 FALLOUT.TOOLTIPS.WeaponQuality.bombard: "A arma pode causar uma série de explosões em uma ampla área. Funciona de forma idêntica à qualidade Explosão, com uma adição: quando um ataque é feito com a arma, você pode gastar munição adicional para atingir zonas adicionais. Cada zona adicional requer que 2 munições sejam gastas e zonas adicionais devem ser adjacentes à zona alvo inicial. A munição gasta para atingir zonas adicionais é limitada pela Cadência de Tiro da arma."
-FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Uma arma Curto Alcance é fácil de usar de perto, e não sofre nenhum aumento de dificuldade por ser usada quando está ao alcance de um inimigo.
-FALLOUT.TOOLTIPS.WeaponQuality.concealed: Uma arma Oculta é pequena, ou de outra forma fácil de esconder em sua pessoa. Os inimigos não conseguem ver a arma Oculta a menos que você a esteja empunhando, ou se eles fizerem uma busca completa e tiverem sucesso em um teste de PER + Sobrevivência com dificuldade 2.
-FALLOUT.TOOLTIPS.WeaponQuality.debilitating: A dificuldade de qualquer teste de habildiade para tratar ferimentos inflingidos por uma arma Debilitante aumenta em +1.
+FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Uma arma Queima-Roupa é fácil de usar de perto e não sofre aumento de dificuldade por ser usada quando está à distância Curta de um inimigo.
+FALLOUT.TOOLTIPS.WeaponQuality.concealed: Uma arma Ocultável é pequena ou fácil de esconder consigo. Inimigos não avistam uma arma Ocultável a menos que você a esteja empunhando, ou que façam uma busca completa e sejam bem-sucedidos em um teste de PER + Sobrevivência com dificuldade 2.
+FALLOUT.TOOLTIPS.WeaponQuality.debilitating: A dificuldade de qualquer teste de perícia para tratar ferimentos causados por uma arma Debilitante aumenta em 1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: A arma opera em um temporizador ou fusível, e não detonará imediatamente. Uma arma de Arremesso e Atraso pode ser lançada normalmente para o local alvo, enquanto outras armas de Atraso podem ser colocadas no local desejado. Uma arma de Atraso (1) detona no início do primeiro round depois de ser lançada ou acionada de outra forma. Uma arma de Atraso (2) detona no início da rodada depois disso, e assim por diante.
-FALLOUT.TOOLTIPS.WeaponQuality.gatling: "A munição é gasta a dez vezes a taxa normal pelas armas com Metralhar: sempre que você gastaria um tiro de munição, uma arma com Metralhar gasta uma rajada de 10 tiros. Sempre que você gastar munição para aumentar o dano desta arma, adicione +2 @fos[DC] por rajada de dez tiros (para um número máximo de rajadas igual à Cadência da arma), em vez de +1 @fos[DC] por tiro."
-FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Quando realiza um ataque com uma arma Imprecisa, você não se beneficia da Ação Menor 'Mirar'. Uma arma não pode ser Precisa e Imprecisa ao mesmo tempo.
+FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Armas Gatling gastam dez vezes a taxa normal de munição — sempre que você realiza um disparo, uma arma Gatling realiza uma rajada de 10 tiros. Sempre que você gastar munição para aumentar o dano desta arma, adicione +2CD por rajada de dez tiros (até um número máximo de rajadas igual à CdT da arma), em vez de +1CD por disparo."
+FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Ao fazer um ataque com uma arma Imprecisa, você não ganha nenhum benefício com a ação menor Mirar. Uma arma não pode ser Precisa e Imprecisa ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Uma arma Limitada só pode ser usada para realizar um ataque dentro do seu alcance ideal.
-FALLOUT.TOOLTIPS.WeaponQuality.mine: Quando uma Mina é colocada em uma superfície e preparada, ela se torna um objeto perigoso, infligindo seu dano a qualquer um que esteja ao alcance dela (e a personagens adicionais, se tiver a qualidade Explosão).
+FALLOUT.TOOLTIPS.WeaponQuality.mine: Quando uma Mina é colocada em uma superfície e preparada, ela se torna um objeto perigoso, causando seu dano a qualquer um que esteja à distância Curta dela (também atinge personagens adicionais se tiver a qualidade Explosiva).
 FALLOUT.TOOLTIPS.WeaponQuality.night_vision: As miras de uma arma com Visão Noturna foram feitas para permitir que você veja mais claramente no escuro. Quando você Mira com uma arma de Visão Noturna, você ignora qualquer aumento na dificuldade do ataque devido à escuridão.
-FALLOUT.TOOLTIPS.WeaponQuality.parry: Quando um inimigo tenta um ataque corpo a corpo contra você, e você está empunhando uma arma de Aparar, você pode gastar 1 PA para adicionar +1 à sua Defesa contra esse ataque.
+FALLOUT.TOOLTIPS.WeaponQuality.parry: Quando um inimigo faz um ataque corpo a corpo contra você e você está empunhando uma arma com Aparar, você pode gastar 1 PA para aumentar sua Defesa em 1 contra esse ataque.
 FALLOUT.TOOLTIPS.WeaponQuality.placed: O dispositivo explosivo é colocado em um local específico e configurado para detonar, muitas vezes com a qualidade Atraso (X) ou a qualidade Remoto. Colocar o explosivo requer um teste PER + Explosivos com dificuldade 1; Isso aumenta para 2 se você tiver sido atacado desde o seu último turno. Falhar significa que a bomba não foi ajustada corretamente e não detonará (ou, se uma complicação for rolada, pode ter sido ajustada incorretamente e pode detonar inesperadamente). Sucesso significa que a bomba foi montada corretamente.
 FALLOUT.TOOLTIPS.WeaponQuality.recoil_x: Esta arma tem um 'coice' particularmente feroz quando dispara, o que pode ser demais para usuários mais fracos. Se a pontuação de FOR do usuário for menor que X, todos os ataques com a arma aumentam a dificuldade em 1. Você pode ignorar esse efeito se você empunhar a arma com duas mãos, ou se a arma já for de duas mãos, apoiando-a contra um objeto sólido ou um bipé.
-FALLOUT.TOOLTIPS.WeaponQuality.recon: Quando você Mira com uma arma de Reconhecimento, você pode marcar o alvo que você mirou. O próximo aliado a atacar esse alvo pode rolar novamente um d20 em seu ataque.
-FALLOUT.TOOLTIPS.WeaponQuality.reliable: Durante cada encontro de combate, uma arma Confiável ignora a primeira complicação que você rola em um teste para usar essa arma. Uma arma pode não ser Confiável e Não Confiável.
+FALLOUT.TOOLTIPS.WeaponQuality.recon: Ao fazer a ação menor Mirar com uma arma com Reconhecimento, você pode marcar o alvo no qual você mirou. O próximo aliado a atacar esse alvo pode rejogar 1d20 em seu ataque.
+FALLOUT.TOOLTIPS.WeaponQuality.reliable: Durante cada encontro de combate, uma arma Confiável ignora a primeira complicação rolada em um teste usando essa arma. Uma arma não pode ser Confiável e Não Confiável ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.slow_load: A arma carrega especialmente devagar. Depois que essa arma for disparada, você deve gastar uma Ação Menor para recarregar a arma antes que ela possa ser disparada novamente.
-FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Se um inimigo não estiver ciente de você quando você ataca com uma arma Silenciosa, ele não percebe o ataque, a menos que seja o alvo ou passe em um teste PER + Sobrevivência com uma dificuldade 2.
-FALLOUT.TOOLTIPS.WeaponQuality.surge: A arma é especialmente prejudicial para máquinas como Robôs e Armaduras Potentes. A arma ganha o efeito de dano Cruel contra Robôs, inimigos em Armaduras Potentes, e outros alvos mecânicos ou eletrônicos (como torretas).
-FALLOUT.TOOLTIPS.WeaponQuality.thrown: Uma arma de Arremesso (C) pode ser arremessada como um ataque à distância com o alcance ideal Próximo. Uma arma de Arremesso (M) pode ser arremessada como um ataque à distância com o alcance ideal Médio. Você faz um teste de AGI + Arremesso para atacar com a arma, dependendo do estilo da arma.
-FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Uma arma de Duas Mãos deve ser usada com as duas mãos; tentar atacar com uma arma de Duas Mãos com apenas uma mão aumentará a dificulade em +2.
-FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quando você faz um ataque com uma arma Não Confiável, aumente o alcance de complicação do ataque em 1. Uma arma pode não ser Confiável e Não Confiável.
-FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Isso nunca foi projetado para ser usado como uma arma portátil. Ao atacar com uma arma dessas, cada complicação inflinge em você 2DC de dano de radiação. Uma arma pode não ser Radioativamente Instável e Confiável.
+FALLOUT.TOOLTIPS.WeaponQuality.suppressed: Se um inimigo não estiver ciente de sua presença quando você ataca com uma arma Silenciada, ele não percebe o ataque, a menos que seja o alvo ou bem-sucedido em um teste de PER + Sobrevivência com dificuldade 2.
+FALLOUT.TOOLTIPS.WeaponQuality.surge: A arma é especialmente prejudicial para máquinas como Robôs e Armaduras Potentes. A arma ganha o efeito de dano Brutal contra Robôs, inimigos em Armaduras Potentes, e outros alvos mecânicos ou eletrônicos (como torretas).
+FALLOUT.TOOLTIPS.WeaponQuality.thrown: Uma arma Arremessável (P) pode ser lançada em um ataque à distância com uma distância ideal Próxima. Uma arma Arremessável (M) pode ser lançada em um ataque à distância com uma distância ideal Média. Você faz um teste de AGI + Arremesso para atacar com a arma, dependendo do tipo de arma.
+FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Uma arma de Duas Mãos deve ser empunhada com ambas as mãos para ser usada eficazmente; tentar usá-la com apenas uma mão aumenta a dificuldade em 2.
+FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quando você faz um ataque com uma arma Não Confiável, o intervalo de complicação do ataque é aumentado em 1. Uma arma não pode ser Confiável e Não Confiável ao mesmo tempo.
+FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Isso nunca foi projetado para ser usado como uma arma portátil. Ao atacar com uma arma dessas, cada complicação inflige em você 2DC de dano de radiação. Uma arma pode não ser Radioativamente Instável e Confiável.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Se um ataque com uma arma com Laçar for bem-sucedido, você pode gastar 2 PA para mover o alvo para até uma zona. Nas rodadas subsequentes, você ou o alvo, podem tentar um teste FOR ou AGI + Atletismo para mover o personagem no outro extremo do laço ou se libertar.
 FALLOUT.UI.Add: Adicionar
 FALLOUT.UI.Addictions: Vícios
@@ -642,10 +641,10 @@ FALLOUT.UI.Cancel: Cancelar
 FALLOUT.UI.CAPS: Tampinhas
 FALLOUT.UI.CapsRoll: Rolar Tampinhas
 FALLOUT.UI.CarryWeight: Peso da Carga
-FALLOUT.UI.ChemDoses.ConfirmReset: Repor Doses Químicas
-FALLOUT.UI.ChemDoses.Delete: Deletar Doses Químicas
-FALLOUT.UI.ChemDoses.title: Dosas Químicas Consumidas
-FALLOUT.UI.ChemDoses.tooltip: Ver Doses Químicas Consumidas
+FALLOUT.UI.ChemDoses.ConfirmReset: Repor Doses de Narcos
+FALLOUT.UI.ChemDoses.Delete: Deletar Doses de Narcos
+FALLOUT.UI.ChemDoses.title: Doses de Narcos Consumidas
+FALLOUT.UI.ChemDoses.tooltip: Ver Doses de Narcos Consumidas
 FALLOUT.UI.CONSUMABLES: Consumíveis
 FALLOUT.UI.Consume: Consumir
 FALLOUT.UI.Cost: Custo
@@ -660,7 +659,7 @@ FALLOUT.UI.Modify: Modificar
 FALLOUT.UI.Name: Nome
 FALLOUT.UI.OTHER: Outro
 FALLOUT.UI.Override: Sobrescrever
-FALLOUT.UI.Perks: Talentos
+FALLOUT.UI.Perks: Vantagens
 FALLOUT.UI.PreWarMoneyRoll: Rolar Dinheiro Pré-Guerra
 FALLOUT.UI.Qty: Qnt
 FALLOUT.UI.Quantity: Quantidade
@@ -715,40 +714,40 @@ FALLOUT.WEAPON_MOD.type.concentrate: Concentrado
 FALLOUT.WEAPON_MOD.type.container: Contêiner
 FALLOUT.WEAPON_MOD.type.dish: Prato
 FALLOUT.WEAPON_MOD.type.fuel: Combustível
-FALLOUT.WEAPON_MOD.type.grip: Empunhadura
+FALLOUT.WEAPON_MOD.type.grip: Cabo
 FALLOUT.WEAPON_MOD.type.magazine: Carregador
 FALLOUT.WEAPON_MOD.type.melee: Corpo-a-Corpo
-FALLOUT.WEAPON_MOD.type.muzzle: Bocal
+FALLOUT.WEAPON_MOD.type.muzzle: Boca
 FALLOUT.WEAPON_MOD.type.nozzle: Bico
 FALLOUT.WEAPON_MOD.type.propellantTank: Tanque de Propelente
-FALLOUT.WEAPON_MOD.type.receiver: Armação
+FALLOUT.WEAPON_MOD.type.receiver: Caixa
 FALLOUT.WEAPON_MOD.type.sight: Mira
 FALLOUT.WEAPON_MOD.type.stock: Coronha
 FALLOUT.WEAPONS.damageEffect.arc: Arco
-FALLOUT.WEAPONS.damageEffect.breaking: Quebrar
+FALLOUT.WEAPONS.damageEffect.breaking: Destruidor
 FALLOUT.WEAPONS.damageEffect.burst: Rajada
 FALLOUT.WEAPONS.damageEffect.freeze: Congelar
 FALLOUT.WEAPONS.damageEffect.persistent: Persistente
-FALLOUT.WEAPONS.damageEffect.piercing_x: Perfuração
-FALLOUT.WEAPONS.damageEffect.radioactive: Radioativo
-FALLOUT.WEAPONS.damageEffect.spread: Propagação
-FALLOUT.WEAPONS.damageEffect.stun: Atordoar
+FALLOUT.WEAPONS.damageEffect.piercing_x: Perfurante
+FALLOUT.WEAPONS.damageEffect.radioactive: Irradiante
+FALLOUT.WEAPONS.damageEffect.spread: Dispersão
+FALLOUT.WEAPONS.damageEffect.stun: Atordoante
 FALLOUT.WEAPONS.damageEffect.tranquilize_x: Tranquilizante
-FALLOUT.WEAPONS.damageEffect.vicious: Cruel
-FALLOUT.WEAPONS.damageType.energy: Energia
+FALLOUT.WEAPONS.damageEffect.vicious: Brutal
+FALLOUT.WEAPONS.damageType.energy: Energético
 FALLOUT.WEAPONS.damageType.physical: Físico
-FALLOUT.WEAPONS.damageType.poison: Veneno
-FALLOUT.WEAPONS.damageType.radiation: Radiação
+FALLOUT.WEAPONS.damageType.poison: Venenoso
+FALLOUT.WEAPONS.damageType.radiation: Radiativo
 FALLOUT.WEAPONS.weaponQuality.accurate: Precisa
 FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Come-Bala
 FALLOUT.WEAPONS.weaponQuality.aquatic: Aquático
-FALLOUT.WEAPONS.weaponQuality.blast: Explosão
+FALLOUT.WEAPONS.weaponQuality.blast: Explosiva
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombardeio
-FALLOUT.WEAPONS.weaponQuality.close_quarters: Curto Alcance
-FALLOUT.WEAPONS.weaponQuality.concealed: Oculta
+FALLOUT.WEAPONS.weaponQuality.close_quarters: Queima-Roupa
+FALLOUT.WEAPONS.weaponQuality.concealed: Ocultável
 FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitante
 FALLOUT.WEAPONS.weaponQuality.delay_x: Atraso
-FALLOUT.WEAPONS.weaponQuality.gatling: Metralhar
+FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprecisa
 FALLOUT.WEAPONS.weaponQuality.limited: Limitada
 FALLOUT.WEAPONS.weaponQuality.mine: Mina
@@ -759,7 +758,7 @@ FALLOUT.WEAPONS.weaponQuality.recoil_x: Recuo
 FALLOUT.WEAPONS.weaponQuality.recon: Reconhecimento
 FALLOUT.WEAPONS.weaponQuality.reliable: Confiável
 FALLOUT.WEAPONS.weaponQuality.slow_load: Recarga Lenta
-FALLOUT.WEAPONS.weaponQuality.suppressed: Silenciosa
+FALLOUT.WEAPONS.weaponQuality.suppressed: Silenciada
 FALLOUT.WEAPONS.weaponQuality.surge: Surto
 FALLOUT.WEAPONS.weaponQuality.thrown: Arremessável
 FALLOUT.WEAPONS.weaponQuality.two_handed: Duas Mãos
@@ -772,8 +771,8 @@ FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
 FALLOUT.WEAPONS.weaponType.custom: Personalizado
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de Energia
 FALLOUT.WEAPONS.weaponType.explosives: Explosivos
-FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas Brancas
-FALLOUT.WEAPONS.weaponType.smallGuns: Armas Leves
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas Corpo a Corpo
+FALLOUT.WEAPONS.weaponType.smallGuns: Armas Pequenas
 FALLOUT.WEAPONS.weaponType.throwing: Arremesso
 FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
 ITEM.AmmoPerShot: Munição Por Tiro
@@ -781,7 +780,7 @@ TYPES.Actor.character: Personagem
 TYPES.Actor.creature: Criatura
 TYPES.Actor.npc: NPJ
 TYPES.Actor.robot: Robô
-TYPES.Actor.scavenging_location: Local de Pilhagem
+TYPES.Actor.scavenging_location: Local de Vasculha
 TYPES.Actor.settlement: Assentamento
 TYPES.Actor.vehicle: Veículo
 TYPES.Item.addiction: Vício
@@ -797,7 +796,7 @@ TYPES.Item.origin: Origem
 TYPES.Item.perk: Talento
 TYPES.Item.robot_armor: Armadura Robótica
 TYPES.Item.robot_mod: Módulo Robótico
-TYPES.Item.skill: Habilidade
+TYPES.Item.skill: Perícia
 TYPES.Item.special_ability: Habilidade Especial
 TYPES.Item.trait: Traço
 TYPES.Item.weapon_mod: Modificação de Arma
