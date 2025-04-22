@@ -47,7 +47,7 @@
 				},
 				"spread": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"stun": {
 					"rank": 0,
@@ -59,7 +59,7 @@
 				},
 				"vicious": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				}
 			},
 			"damageType": {
@@ -119,7 +119,7 @@
 				},
 				"inaccurate": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"limited": {
 					"rank": 0,
@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,

@@ -27,7 +27,7 @@
 				},
 				"burst": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"freeze": {
 					"rank": 0,
@@ -99,7 +99,7 @@
 				},
 				"close_quarters": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"concealed": {
 					"rank": 0,
@@ -119,7 +119,7 @@
 				},
 				"inaccurate": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"limited": {
 					"rank": 0,

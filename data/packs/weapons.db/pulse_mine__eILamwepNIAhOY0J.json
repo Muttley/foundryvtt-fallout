@@ -51,7 +51,7 @@
 				},
 				"stun": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"tranquilize_x": {
 					"rank": 1,
@@ -91,7 +91,7 @@
 				},
 				"blast": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"bombard": {
 					"rank": 0,
@@ -127,7 +127,7 @@
 				},
 				"mine": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"night_vision": {
 					"rank": 0,

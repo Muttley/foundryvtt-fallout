@@ -27,7 +27,7 @@
 				},
 				"burst": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"freeze": {
 					"rank": 0,
@@ -35,7 +35,7 @@
 				},
 				"persistent": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"piercing_x": {
 					"rank": 1,
@@ -47,7 +47,7 @@
 				},
 				"spread": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"stun": {
 					"rank": 0,
@@ -107,7 +107,7 @@
 				},
 				"debilitating": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"delay_x": {
 					"rank": 1,
@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,

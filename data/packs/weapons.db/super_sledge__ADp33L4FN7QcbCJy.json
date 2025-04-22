@@ -23,7 +23,7 @@
 				},
 				"breaking": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"burst": {
 					"rank": 0,
@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,

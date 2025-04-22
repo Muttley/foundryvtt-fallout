@@ -51,7 +51,7 @@
 				},
 				"stun": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"tranquilize_x": {
 					"rank": 1,

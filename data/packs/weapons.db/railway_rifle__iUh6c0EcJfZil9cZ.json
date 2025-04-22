@@ -23,7 +23,7 @@
 				},
 				"breaking": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"burst": {
 					"rank": 0,
@@ -107,7 +107,7 @@
 				},
 				"debilitating": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"delay_x": {
 					"rank": 1,
@@ -171,11 +171,11 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unstable_radiation": {
 					"rank": 0,

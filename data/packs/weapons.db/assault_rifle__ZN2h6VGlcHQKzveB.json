@@ -27,7 +27,7 @@
 				},
 				"burst": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"freeze": {
 					"rank": 0,
@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,

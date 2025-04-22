@@ -99,7 +99,7 @@
 				},
 				"close_quarters": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"concealed": {
 					"rank": 0,
@@ -151,7 +151,7 @@
 				},
 				"reliable": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"slow_load": {
 					"rank": 0,

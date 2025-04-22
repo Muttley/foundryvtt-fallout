@@ -23,7 +23,7 @@
 				},
 				"breaking": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"burst": {
 					"rank": 0,
@@ -43,7 +43,7 @@
 				},
 				"radioactive": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"spread": {
 					"rank": 0,
@@ -59,7 +59,7 @@
 				},
 				"vicious": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				}
 			},
 			"damageType": {
@@ -91,7 +91,7 @@
 				},
 				"blast": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"bombard": {
 					"rank": 0,
@@ -127,7 +127,7 @@
 				},
 				"mine": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"night_vision": {
 					"rank": 0,

@@ -1066,7 +1066,7 @@
 				"value": 0
 			},
 			"location": "",
-			"modType": "",
+			"modType": "material",
 			"perks": "",
 			"resistance": {
 				"energy": 0,

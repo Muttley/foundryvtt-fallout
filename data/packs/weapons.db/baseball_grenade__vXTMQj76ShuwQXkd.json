@@ -91,7 +91,7 @@
 				},
 				"blast": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"bombard": {
 					"rank": 0,
@@ -167,7 +167,7 @@
 				},
 				"thrown": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"two_handed": {
 					"rank": 0,

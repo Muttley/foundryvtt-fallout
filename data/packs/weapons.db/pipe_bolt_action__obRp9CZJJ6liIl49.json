@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -175,7 +175,7 @@
 				},
 				"unreliable": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unstable_radiation": {
 					"rank": 0,

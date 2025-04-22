@@ -59,7 +59,7 @@
 				},
 				"vicious": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				}
 			},
 			"damageType": {
@@ -167,7 +167,7 @@
 				},
 				"thrown": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"two_handed": {
 					"rank": 0,

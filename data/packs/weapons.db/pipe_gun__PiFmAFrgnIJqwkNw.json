@@ -99,7 +99,7 @@
 				},
 				"close_quarters": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"concealed": {
 					"rank": 0,
@@ -175,7 +175,7 @@
 				},
 				"unreliable": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unstable_radiation": {
 					"rank": 0,
