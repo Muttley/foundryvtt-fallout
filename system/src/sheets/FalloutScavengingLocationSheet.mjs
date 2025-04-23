@@ -226,7 +226,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 				});
 			}
 			catch(e) {
-				fallout.logger.error(e);
+				fallout.error(e);
 			}
 		}
 
@@ -249,7 +249,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 				}
 			}
 			catch(e) {
-				fallout.logger.error(e);
+				fallout.error(e);
 			}
 		}
 

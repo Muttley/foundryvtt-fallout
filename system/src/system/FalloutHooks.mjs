@@ -10,7 +10,7 @@ import { setupHook } from "../hooks/setupHook.mjs";
 
 export const FalloutHooks = {
 	attach: () => {
-		fallout.logger.debug("Attaching hooks");
+		fallout.debug("Attaching hooks");
 
 		const listeners = [
 			conditionTrackerHook,

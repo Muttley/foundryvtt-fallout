@@ -117,7 +117,7 @@ export default class FalloutPartySleep extends Application {
 	}
 
 	async _applyPartySleep() {
-		fallout.logger.debug(`Party Sleep: The party sleeps for ${this.lengthOfSleep} hours`);
+		fallout.debug(`Party Sleep: The party sleeps for ${this.lengthOfSleep} hours`);
 
 		const actors = game.actors.filter(
 			a => a.hasPlayerOwner && a.type === "character"
@@ -180,7 +180,7 @@ export default class FalloutPartySleep extends Application {
 				});
 			}
 			else {
-				fallout.logger.debug(
+				fallout.debug(
 					`Party Sleep: The owner of ${actor.name} is not online so they will not sleep.`
 				);
 			}

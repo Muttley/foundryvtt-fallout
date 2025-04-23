@@ -1,12 +1,12 @@
 export const preCreateItemHook = {
 	attach: () => {
-		fallout.logger.debug("Attaching preCreateItem hook");
+		fallout.debug("Attaching preCreateItem hook");
 
 		/* -------------------------------------------- */
 		/*  Omit Specific Items on Specific Actors      */
 		/* -------------------------------------------- */
 		Hooks.on("preCreateItem", item => {
-			fallout.logger.debug("Running preCreateItem hook");
+			fallout.debug("Running preCreateItem hook");
 
 			if (item.parent) {
 				const parentType = item.parent.type;
