@@ -708,7 +708,18 @@ export default class FalloutActor extends Actor {
 
 		let physicalItemsMap = physicalItems.map(i => i.toObject());
 
-		let totalWeight = 0;
+		let junkWeight = this.system.materials.junk * 2;
+		let materialWeight = 0;
+		for (const material of ["common", "uncommon", "rare"]) {
+			materialWeight += this.system.materials[material] ?? 0;
+		}
+
+		if (this.useKgs) {
+			junkWeight = fallout.utils.lbsToKgs(junkWeight);
+			materialWeight = fallout.utils.lbsToKgs(materialWeight);
+		}
+
+		let itemsWeight = 0;
 
 		for (let i of physicalItemsMap) {
 			let itemWeight = parseFloat(i.system.weight);
@@ -717,20 +728,21 @@ export default class FalloutActor extends Actor {
 			let itemQuantity = parseFloat(i.system.quantity);
 			itemQuantity = isNaN(itemQuantity) ? 0 : itemQuantity;
 
-			totalWeight += itemWeight * itemQuantity;
+			if (i.system.isJunk) {
+				junkWeight += itemWeight * itemQuantity;
+			}
+			else {
+				itemsWeight += itemWeight * itemQuantity;
+			}
 		}
 
-		let materialWeight = 0;
-		for (const material of ["common", "uncommon", "rare"]) {
-			materialWeight += this.system.materials[material] ?? 0;
-		}
-		materialWeight += (this.system.materials.junk * 2);
-
-		if (this.useKgs) {
-			materialWeight = fallout.utils.lbsToKgs(materialWeight);
+		if (this.perkLevel("Pack Rat") > 0) {
+			// Junk counts as half weight for players with the "Pack Rat"
+			// perk
+			junkWeight /= 2;
 		}
 
-		totalWeight += materialWeight;
+		const totalWeight = itemsWeight + junkWeight + materialWeight;
 
 		return parseFloat(totalWeight.toFixed(2));
 	}
