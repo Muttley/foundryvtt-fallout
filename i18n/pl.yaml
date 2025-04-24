@@ -45,18 +45,18 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Rozbierasz {amount} z {max} śmieci
 FALLOUT.APP.SalvageJunk.start: Rozpocznij odzyskiwanie
 FALLOUT.APP.SalvageJunk.time: Zajmie Ci to {time}
 FALLOUT.APP.SalvageJunk.title: Odzyskaj śmieci
-FALLOUT.APPAREL.armor: Pancerz
-FALLOUT.APPAREL.clothing: Odzież
-FALLOUT.APPAREL.headgear: Nakrycie głowy
-FALLOUT.APPAREL.outfit: Strój
-FALLOUT.APPAREL.plating: Poszycie
-FALLOUT.APPAREL.powerArmor: Pancerz wspomagany
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
 FALLOUT.APPAREL_MOD.type.system: System
 FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
+FALLOUT.APPAREL.armor: Pancerz
+FALLOUT.APPAREL.clothing: Odzież
+FALLOUT.APPAREL.headgear: Nakrycie głowy
+FALLOUT.APPAREL.outfit: Strój
+FALLOUT.APPAREL.plating: Poszycie
+FALLOUT.APPAREL.powerArmor: Pancerz wspomagany
 FALLOUT.AvailabilityRoll.result.body: Maksymalna dostępna rzadkość to {rarity}
 FALLOUT.AvailabilityRoll.result.title: Rzut na dostępność
 FALLOUT.AvailabilityRoll.tooltip: Rzut w celu ustalenia dostępności
@@ -311,6 +311,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Wyczyść wyniki
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Oszabruj lokacje
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Wszystkie wyniki szabrowania zostały wyczyszczone.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Wyczyść wyniki szabrowania
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Żadna tabela przedmiotów nie została ustawiona dla przedmiotów typu {category}.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Mocno rozszabrowane (T3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: W większości rozszabrowane(T2)
