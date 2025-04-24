@@ -1107,6 +1107,7 @@
 			"hp": 0,
 			"irradiated": false,
 			"prepared": false,
+			"providesCap": false,
 			"radiation": 0,
 			"radiationDamage": 1,
 			"thirstReduction": 0,

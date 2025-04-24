@@ -1569,6 +1569,11 @@ export default class FalloutActor extends Actor {
 
 				actorUpdateData["system.conditions.thirst"] =
 					Math.max(currentThirst - thirstReduction, 0);
+
+				if (item.system.providesCap) {
+					actorUpdateData["system.currency.caps"] =
+						this.system.currency.caps + 1;
+				}
 			}
 		}
 
@@ -1599,6 +1604,7 @@ export default class FalloutActor extends Actor {
 						}
 					),
 					effect: item.system.effect,
+					gainedCap: item.system.providesCap,
 					showHungerAndThirst: ["beverage", "food"].includes(consumableType),
 					hunger: this.system.conditions.hunger,
 					thirst: this.system.conditions.thirst,

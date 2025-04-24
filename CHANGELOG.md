@@ -27,6 +27,9 @@
 - [#576] When a consumable is used, display any effect it causes on the resultant chat message
 - [#598] Make the deletion of exhausted consumables an optional setting and default to not deleting them
 - [#605] Improve error reporting for misconfigured scavenging tables
+- [#608] Beverage items can provide cap upon consumption
+
+	* Adds a new boolean field to beverage consumables to indicate that consuming provides a cap. When consumed automatically add one cap to player's total.
 
 #### Chores
 - [#564] Merge new Spanish translation updates from Crowdin

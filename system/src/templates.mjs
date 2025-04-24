@@ -126,6 +126,7 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/item/consumable/_partials/irradiated-damage.hbs",
 		"systems/fallout/templates/item/consumable/_partials/irradiated.hbs",
 		"systems/fallout/templates/item/consumable/_partials/prepared.hbs",
+		"systems/fallout/templates/item/consumable/_partials/provides-cap.hbs",
 		"systems/fallout/templates/item/consumable/_partials/radiation-healed.hbs",
 		"systems/fallout/templates/item/consumable/_partials/thirst-reduction.hbs",
 		"systems/fallout/templates/item/consumable/attributes-tab.hbs",
