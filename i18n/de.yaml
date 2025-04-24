@@ -152,6 +152,7 @@ FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hungerzustand
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Schlafzustand
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Durstzustand
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} trank schmutziges Wasser"
+FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gains one bottlecap
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Getränk verbraucht
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} verbrauchte {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem verbraucht
@@ -522,6 +523,7 @@ FALLOUT.TEMPLATES.Points: Punkte
 FALLOUT.TEMPLATES.POISON: GIFT
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: POWERRÜSTUNG GESUNDHEIT
 FALLOUT.TEMPLATES.Prepared: Vorbereitet
+FALLOUT.TEMPLATES.ProvidesCap: Provides Cap
 FALLOUT.TEMPLATES.Publication: Publikation
 FALLOUT.TEMPLATES.Qualities_and_Effects: Qualitäten & Effekte
 FALLOUT.TEMPLATES.Qualities: Eigenschaften
