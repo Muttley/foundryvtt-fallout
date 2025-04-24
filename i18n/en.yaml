@@ -45,18 +45,18 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Start Salvaging
 FALLOUT.APP.SalvageJunk.time: This will take {time}
 FALLOUT.APP.SalvageJunk.title: Salvage Junk
-FALLOUT.APPAREL.armor: Armor
-FALLOUT.APPAREL.clothing: Clothing
-FALLOUT.APPAREL.headgear: Headgear
-FALLOUT.APPAREL.outfit: Outfit
-FALLOUT.APPAREL.plating: Plating
-FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
 FALLOUT.APPAREL_MOD.type.system: System
 FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
+FALLOUT.APPAREL.armor: Armor
+FALLOUT.APPAREL.clothing: Clothing
+FALLOUT.APPAREL.headgear: Headgear
+FALLOUT.APPAREL.outfit: Outfit
+FALLOUT.APPAREL.plating: Plating
+FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
 FALLOUT.AvailabilityRoll.result.title: Availability Roll
 FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
@@ -311,6 +311,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)

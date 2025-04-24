@@ -9,6 +9,7 @@
 - [#587] FalloutItemSheet::getPowerArmorPieceData() matches on apparel_mod items when it should only be looking at apparel items
 - [#597] Consuming an item with a quantity of zero should do nothing and give a warning notification
 - [#604] Available mods installed in weapons do not have required Perk information from weapon_mod items
+- [#606] Allow selection of non-compendium items from scavenging tables
 
 #### Enhancements
 - [#106] Better way to handle mods
@@ -25,6 +26,7 @@
 - [#569] Improve handling of Mods
 - [#576] When a consumable is used, display any effect it causes on the resultant chat message
 - [#598] Make the deletion of exhausted consumables an optional setting and default to not deleting them
+- [#605] Improve error reporting for misconfigured scavenging tables
 
 #### Chores
 - [#564] Merge new Spanish translation updates from Crowdin
