@@ -45,18 +45,18 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Reciclando {amount} de {max} Sucata
 FALLOUT.APP.SalvageJunk.start: Começar a Reciclar
 FALLOUT.APP.SalvageJunk.time: Isso levará {time}
 FALLOUT.APP.SalvageJunk.title: Reciclar Sucata
-FALLOUT.APPAREL.armor: Armadura
-FALLOUT.APPAREL.clothing: Roupa
-FALLOUT.APPAREL.headgear: Equip. Cabeça
-FALLOUT.APPAREL.outfit: Traje
-FALLOUT.APPAREL.plating: Chapeamento
-FALLOUT.APPAREL.powerArmor: Armadura Potente
 FALLOUT.APPAREL_MOD.shadowed: Escurecido
 FALLOUT.APPAREL_MOD.type.lining: Forro
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Chapeamento
 FALLOUT.APPAREL_MOD.type.system: Sistema
 FALLOUT.APPAREL_MOD.type.upgrade: Aprimoração
+FALLOUT.APPAREL.armor: Armadura
+FALLOUT.APPAREL.clothing: Roupa
+FALLOUT.APPAREL.headgear: Equip. Cabeça
+FALLOUT.APPAREL.outfit: Traje
+FALLOUT.APPAREL.plating: Chapeamento
+FALLOUT.APPAREL.powerArmor: Armadura Potente
 FALLOUT.AvailabilityRoll.result.body: A raridade máxima disponível é {rarity}
 FALLOUT.AvailabilityRoll.result.title: Rolagem de Disponibilidade
 FALLOUT.AvailabilityRoll.tooltip: Role para Disponibilidade
@@ -311,6 +311,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Limpar Resultados
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Vasculhar Local
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Todos os resultados obtidos ao vasculhar foram removidos.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Limpar resultados de Vasculha
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Nenhuma tabela de itens foi definida para itens do tipo {category}.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Pesadamente Vasculhado (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Parcialmente Vasculhado (D2)

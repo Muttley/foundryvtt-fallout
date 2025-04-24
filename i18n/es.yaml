@@ -45,18 +45,18 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Desarmando {amount} de {max} Chatarra
 FALLOUT.APP.SalvageJunk.start: Empezar a saquear
 FALLOUT.APP.SalvageJunk.time: Esto llevará {time}
 FALLOUT.APP.SalvageJunk.title: Desarmar chatarra
-FALLOUT.APPAREL.armor: Armadura
-FALLOUT.APPAREL.clothing: Ropa
-FALLOUT.APPAREL.headgear: Casco
-FALLOUT.APPAREL.outfit: Traje
-FALLOUT.APPAREL.plating: Blindaje
-FALLOUT.APPAREL.powerArmor: Servoarmadura
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
 FALLOUT.APPAREL_MOD.type.system: System
 FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
+FALLOUT.APPAREL.armor: Armadura
+FALLOUT.APPAREL.clothing: Ropa
+FALLOUT.APPAREL.headgear: Casco
+FALLOUT.APPAREL.outfit: Traje
+FALLOUT.APPAREL.plating: Blindaje
+FALLOUT.APPAREL.powerArmor: Servoarmadura
 FALLOUT.AvailabilityRoll.result.body: La rareza máxima disponible es {rarity}
 FALLOUT.AvailabilityRoll.result.title: Tirada de Disponibilidad
 FALLOUT.AvailabilityRoll.tooltip: Tira para ver la disponibilidad
@@ -311,6 +311,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Borrar resultados
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Ubicación de Saqueo
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Se han borrado todos los resultados del saqueo.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Borrar resultados del saqueo
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No se ha establecido ninguna tabla de objetos para los elementos {category}.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Muy Saqueado (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mayormente Saqueado (D2)
