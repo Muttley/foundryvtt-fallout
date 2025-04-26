@@ -11,6 +11,7 @@
 - [#604] Available mods installed in weapons do not have required Perk information from weapon_mod items
 - [#606] Allow selection of non-compendium items from scavenging tables
 - [#610] Migration scripts skipping module compendiums
+- [#611] Power Fist Heating Coil mod name prefix wrong
 
 #### Enhancements
 - [#82] Token status effects for easy visual reference (Persistent, Irradiated, Injured, etc.)
