@@ -189,6 +189,20 @@ FALLOUT.dialog.roll_quantity.chat.details: Esto publicará el resultado como un 
 FALLOUT.dialog.roll_quantity.create.details: Esto creará un nuevo artículo con la cantidad obtenida. Si el objeto del que estás usando es propiedad de un Actor, el nuevo objeto se creará en el inventario de ese Actor.
 FALLOUT.dialog.roll_quantity.title: Lanzar Cantidad
 FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
+FALLOUT.EFFECT.StatusBleeding: Bleeding
+FALLOUT.EFFECT.StatusBlind: Blind
+FALLOUT.EFFECT.StatusBurning: Burning
+FALLOUT.EFFECT.StatusDead: Dead
+FALLOUT.EFFECT.StatusDeaf: Deaf
+FALLOUT.EFFECT.StatusDiseased: Diseased
+FALLOUT.EFFECT.StatusDrugged: Drugged
+FALLOUT.EFFECT.StatusInjured: Injured
+FALLOUT.EFFECT.StatusPoisoned: Poisoned
+FALLOUT.EFFECT.StatusProne: Prone
+FALLOUT.EFFECT.StatusRadiation: Radiation
+FALLOUT.EFFECT.StatusRestrained: Restrained
+FALLOUT.EFFECT.StatusStunned: Stunned
+FALLOUT.EFFECT.StatusUnconscious: Unconscious
 FALLOUT.EffectCreate: Crear efecto
 FALLOUT.EffectDelete: Borrar efecto
 FALLOUT.EffectEdit: Editar efecto
