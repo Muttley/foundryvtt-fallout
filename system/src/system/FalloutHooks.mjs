@@ -5,6 +5,7 @@ import { initiativeHooks } from "../hooks/initiativeHooks.mjs";
 import { preCreateItemHook } from "../hooks/preCreateItemHook.mjs";
 import { readyHook } from "../hooks/readyHook.mjs";
 import { renderChatMessageHook } from "../hooks/renderChatMessageHook.mjs";
+import { renderSidebarSettingsTab } from "../hooks/renderSidebarSettingsTab.mjs";
 import { settlementActorUpdateHooks } from "../hooks/settlementActorUpdateHooks.mjs";
 import { setupHook } from "../hooks/setupHook.mjs";
 
@@ -20,6 +21,7 @@ export const FalloutHooks = {
 			preCreateItemHook,
 			readyHook,
 			renderChatMessageHook,
+			renderSidebarSettingsTab,
 			settlementActorUpdateHooks,
 			setupHook,
 		];
