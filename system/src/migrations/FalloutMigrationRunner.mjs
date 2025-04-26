@@ -127,6 +127,10 @@ export default class FalloutMigrationRunner {
 		await this.currentMigrationTask.updateSettings();
 	}
 
+	get migrateSystemCompendiumsDisabled() {
+		return !this.migrateSystemCompendiumsEnabled;
+	}
+
 	get migrateSystemCompendiumsEnabled() {
 		return game.settings.get(SYSTEM_ID, "migrateSystemCompendiums");
 	}
@@ -136,8 +140,8 @@ export default class FalloutMigrationRunner {
 			// Don't migrate system packs unless the proper debug setting is
 			// enabled
 			//
-			if (!this.migrateSystemCompendiumsEnabled) {
-				if (pack.metadata.packageType !== "world") {
+			if (this.migrateSystemCompendiumsDisabled) {
+				if (pack.metadata.packageType === "system") {
 					continue;
 				}
 			}
