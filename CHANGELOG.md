@@ -23,7 +23,10 @@
 - [#479] Add Quantity Roll field to more item types
 - [#483] Add a way to toggle off the auto-calculate for derived stats
 - [#518] Add custom fallout themed status effects to replace the defaults
-- [#541] Improve perk requirements
+- [#541] Improve Perk requirements
+
+	* During the upgrade process the system will try to update core book Perks owned by Actors with the new requirements format.  This will likely fail if Perks have been renamed, but failures will be logged to the output and also a notification will she shown so they can be fixed up manually.
+
 - [#559] Improvements to Books and Magazines
 
 	* New control added to magazine items in the inventory to "read" a magazine.  This automatically rolls and extends the uses remaining if needed for characters with the Comprehension perk.
