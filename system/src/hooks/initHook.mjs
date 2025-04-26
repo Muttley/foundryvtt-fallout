@@ -31,6 +31,9 @@ export async function initHook() {
 	// Add custom constants for configuration.
 	CONFIG.FALLOUT = FALLOUT;
 
+	// Override the default status effects
+	CONFIG.statusEffects = CONFIG.FALLOUT.statusEffects;
+
 	globalThis.SYSTEM_ID = SYSTEM_ID;
 	globalThis.SYSTEM_NAME = SYSTEM_NAME;
 

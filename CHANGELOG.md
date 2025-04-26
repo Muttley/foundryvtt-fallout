@@ -10,8 +10,10 @@
 - [#597] Consuming an item with a quantity of zero should do nothing and give a warning notification
 - [#604] Available mods installed in weapons do not have required Perk information from weapon_mod items
 - [#606] Allow selection of non-compendium items from scavenging tables
+- [#610] Migration scripts skipping module compendiums
 
 #### Enhancements
+- [#82] Token status effects for easy visual reference (Persistent, Irradiated, Injured, etc.)
 - [#106] Better way to handle mods
 - [#146] Junk weight should be reduced by Pack Rat perk
 - [#148] Separate out Fire Rate from Damage for guns
@@ -19,6 +21,7 @@
 - [#340] Allow drag/drop of player perks that can be used on NPCs
 - [#479] Add Quantity Roll field to more item types
 - [#483] Add a way to toggle off the auto-calculate for derived stats
+- [#518] Add custom fallout themed status effects to replace the defaults
 - [#541] Improve perk requirements
 - [#559] Improvements to Books and Magazines
 
