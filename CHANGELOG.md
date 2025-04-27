@@ -1,3 +1,10 @@
+# v11.15.1
+
+#### Bugs
+- [#613] Badge image URL broken
+
+---
+
 # v11.15.0
 
 #### Bugs
