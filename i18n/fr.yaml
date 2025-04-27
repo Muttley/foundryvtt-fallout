@@ -196,13 +196,13 @@ FALLOUT.EFFECT.StatusDead: Dead
 FALLOUT.EFFECT.StatusDeaf: Deaf
 FALLOUT.EFFECT.StatusDiseased: Diseased
 FALLOUT.EFFECT.StatusDrugged: Drugged
-FALLOUT.EFFECT.StatusInjured: Injured
-FALLOUT.EFFECT.StatusPoisoned: Poisoned
-FALLOUT.EFFECT.StatusProne: Prone
+FALLOUT.EFFECT.StatusInjured: Blessé
+FALLOUT.EFFECT.StatusPoisoned: Empoisonné
+FALLOUT.EFFECT.StatusProne: À terre
 FALLOUT.EFFECT.StatusRadiation: Radiation
-FALLOUT.EFFECT.StatusRestrained: Restrained
-FALLOUT.EFFECT.StatusStunned: Stunned
-FALLOUT.EFFECT.StatusUnconscious: Unconscious
+FALLOUT.EFFECT.StatusRestrained: Entravé
+FALLOUT.EFFECT.StatusStunned: Étourdi
+FALLOUT.EFFECT.StatusUnconscious: Inconscient
 FALLOUT.EffectCreate: Créer Effet
 FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
