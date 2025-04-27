@@ -603,6 +603,79 @@ FALLOUT.SLEEP_BY_NUMBER = {
 	3: "FALLOUT.TEMPLATES.conditions.exhausted",
 };
 
+FALLOUT.statusEffects = [
+	{
+		id: "bleeding",
+		img: "systems/fallout/assets/icons/conditions/bleeding.svg",
+		name: "FALLOUT.EFFECT.StatusBleeding",
+	},
+	{
+		id: "blind",
+		img: "systems/fallout/assets/icons/conditions/blind.svg",
+		name: "FALLOUT.EFFECT.StatusBlind",
+	},
+	{
+		id: "burning",
+		img: "systems/fallout/assets/icons/conditions/burning.svg",
+		name: "FALLOUT.EFFECT.StatusBurning",
+	},
+	{
+		id: "dead",
+		img: "systems/fallout/assets/icons/conditions/dead.svg",
+		name: "FALLOUT.EFFECT.StatusDead",
+	},
+	{
+		id: "deaf",
+		img: "systems/fallout/assets/icons/conditions/deaf.svg",
+		name: "FALLOUT.EFFECT.StatusDeaf",
+	},
+	{
+		id: "diseased",
+		img: "systems/fallout/assets/icons/conditions/diseased.svg",
+		name: "FALLOUT.EFFECT.StatusDiseased",
+	},
+	{
+		id: "drugged",
+		img: "systems/fallout/assets/icons/conditions/drugged.svg",
+		name: "FALLOUT.EFFECT.StatusDrugged",
+	},
+	{
+		id: "injured",
+		img: "systems/fallout/assets/icons/conditions/injured.svg",
+		name: "FALLOUT.EFFECT.StatusInjured",
+	},
+	{
+		id: "poisoned",
+		img: "systems/fallout/assets/icons/conditions/poisoned.svg",
+		name: "FALLOUT.EFFECT.StatusPoisoned",
+	},
+	{
+		id: "prone",
+		img: "systems/fallout/assets/icons/conditions/prone.svg",
+		name: "FALLOUT.EFFECT.StatusProne",
+	},
+	{
+		id: "radiation",
+		img: "systems/fallout/assets/icons/conditions/radiation.svg",
+		name: "FALLOUT.EFFECT.StatusRadiation",
+	},
+	{
+		id: "restrained",
+		img: "systems/fallout/assets/icons/conditions/restrained.svg",
+		name: "FALLOUT.EFFECT.StatusRestrained",
+	},
+	{
+		id: "stunned",
+		img: "systems/fallout/assets/icons/conditions/stunned.svg",
+		name: "FALLOUT.EFFECT.StatusStunned",
+	},
+	{
+		id: "unconscious",
+		img: "systems/fallout/assets/icons/conditions/unconscious.svg",
+		name: "FALLOUT.EFFECT.StatusUnconscious",
+	},
+];
+
 FALLOUT.THIRST_BY_NUMBER = {
 	0: "FALLOUT.TEMPLATES.conditions.quenched",
 	1: "FALLOUT.TEMPLATES.conditions.hydrated",

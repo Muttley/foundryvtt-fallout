@@ -31,25 +31,31 @@ export async function initHook() {
 	// Add custom constants for configuration.
 	CONFIG.FALLOUT = FALLOUT;
 
+	// Override the default status effects
+	CONFIG.statusEffects = CONFIG.FALLOUT.statusEffects;
+
 	globalThis.SYSTEM_ID = SYSTEM_ID;
 	globalThis.SYSTEM_NAME = SYSTEM_NAME;
 
 	// Add utility classes to the global game object so that they're more easily
 	// accessible in global contexts.
 	globalThis.fallout = {
-		apps,
 		APTracker,
-		chat: FalloutChat,
-		compendiums: FalloutCompendiums,
-		conditionTracker: new FalloutConditionTracker(),
 		Dialog2d20,
 		DialogD6,
 		FalloutLoading,
-		logger: Logger,
+		Roller2D20,
+		apps,
+		chat: FalloutChat,
+		compendiums: FalloutCompendiums,
+		conditionTracker: new FalloutConditionTracker(),
+		debug: Logger.debug,
+		error: Logger.error,
+		log: Logger.log,
 		macros: FalloutMacros,
 		moduleArt: new FalloutModuleArt(),
-		Roller2D20,
 		utils: FalloutUtils,
+		warn: Logger.warn,
 	};
 
 	registerSettings();
@@ -71,9 +77,6 @@ export async function initHook() {
 	registerTextEditorEnrichers();
 
 	preloadHandlebarsTemplates();
-
-	// FalloutUtils.loadLegacyArtMappings();
-	// fallout.moduleArt.registerModuleArt();
 
 	FalloutHooks.attach();
 }

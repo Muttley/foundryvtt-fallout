@@ -101,7 +101,7 @@ export class APTracker extends Application {
 			return;
 		}
 
-		fallout.logger.debug("Initialising APTracker");
+		fallout.debug("Initialising APTracker");
 		new APTracker();
 
 		this.renderApTracker();
@@ -110,7 +110,7 @@ export class APTracker extends Application {
 
 
 	static async registerSocketEvents() {
-		fallout.logger.debug("Registering APTracker socket events");
+		fallout.debug("Registering APTracker socket events");
 
 		game.socket.on("system.fallout", ev => {
 			if (ev.operation === "adjustAP") {

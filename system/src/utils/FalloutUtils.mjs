@@ -197,7 +197,7 @@ export default class FalloutUtils {
 			const actor = player.character;
 
 			if (!actor) {
-				fallout.logger.warn(
+				fallout.warn(
 					`[FalloutUtils::getPlayerCharacters] ${player.name} does not have an associated character`
 				);
 

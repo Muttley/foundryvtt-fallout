@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,
@@ -408,7 +408,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
-					"perks": "",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -627,7 +627,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Heavy",
-					"perks": "",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

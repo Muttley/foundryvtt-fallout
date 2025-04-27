@@ -129,25 +129,36 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 	async _rollLocationItemsForCategory(category, count, tableUuid) {
 		const table = await fromUuid(tableUuid);
 
+		if (!table) {
+			const message = game.i18n.format(
+				"FALLOUT.SCAVENGING_LOCATION.Error.MissingTable",
+				{ category, tableUuid }
+			);
+
+			fallout.error(message);
+			ui.notifications.error(message);
+		}
+
 		const items = [];
 
 		if (table) {
 			for (let i = 0; i < count; i++) {
 				const draw = await table.draw({displayChat: false});
 				const result = draw.results.find(
-					// TODO remove use of this method once v11 support dropped
-					r => fallout.utils.isCompendiumTableResult(r)
+					r => r.type === "pack" || r.type === "document"
 				);
 
 				if (!result) {
 					continue;
 				}
 
-				const itemUuid = [
-					"Compendium",
-					result.documentCollection,
-					result.documentId,
-				].join(".");
+				const uuidElements = [];
+				if (result.type === "pack") {
+					uuidElements.push("Compendium");
+				}
+				uuidElements.push(result.documentCollection, result.documentId);
+
+				const itemUuid = uuidElements.join(".");
 
 				this.drawItemsLut[itemUuid] = true;
 
@@ -157,6 +168,18 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 					const itemData = item.toObject();
 					itemData._stats.compendiumSource = itemUuid;
 					items.push(itemData);
+				}
+				else {
+					const message = game.i18n.format(
+						"FALLOUT.SCAVENGING_LOCATION.Error.MissingItem",
+						{
+							itemUuid,
+							name: result.text,
+						}
+					);
+
+					fallout.error(message);
+					ui.notifications.error(message);
 				}
 			}
 		}
@@ -193,9 +216,13 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 			}
 
 			if (categoryDetails.table === "" && category !== "junk") {
-				ui.notifications.warn(
-					game.i18n.format("FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet", {category})
+				const message = game.i18n.format(
+					"FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet",
+					{ category }
 				);
+
+				fallout.warn(message);
+				ui.notifications.warn(message);
 			}
 			else {
 				await this._rollLocationItemsForCategory(
@@ -226,7 +253,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 				});
 			}
 			catch(e) {
-				fallout.logger.error(e);
+				fallout.error(e);
 			}
 		}
 
@@ -249,7 +276,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 				}
 			}
 			catch(e) {
-				fallout.logger.error(e);
+				fallout.error(e);
 			}
 		}
 

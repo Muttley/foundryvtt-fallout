@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,
@@ -403,7 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Bladed",
-					"perks": "",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1284,7 +1284,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Chain-Wrapped",
-					"perks": "",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

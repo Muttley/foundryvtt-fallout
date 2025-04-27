@@ -51,7 +51,7 @@
 				},
 				"stun": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"tranquilize_x": {
 					"rank": 1,
@@ -403,7 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Lead-Lined",
-					"perks": "",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -841,7 +841,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
-					"perks": "",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

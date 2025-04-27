@@ -90,7 +90,7 @@ export default class ScavengingTableSettings extends FormApplication {
 		const name = currentTarget.name;
 		const value = currentTarget.value;
 
-		console.log(`${name} :: ${value}`);
+		fallout.debug(`${name} :: ${value}`);
 		if (name === "scavenging_compendium") {
 			await game.settings.set(SYSTEM_ID, "scavengingCompendium", value);
 

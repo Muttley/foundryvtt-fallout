@@ -68,7 +68,7 @@ export default class FalloutMigrationRunner {
 
 				await doc.update(updateData);
 
-				fallout.logger.log(`Migrated ${documentName} document "${doc.name}" in Compendium "${pack.collection}"`);
+				fallout.log(`Migrated ${documentName} document "${doc.name}" in Compendium "${pack.collection}"`);
 			}
 			catch(err) {
 				err.message = `Failed system migration for document "${doc.name}" in pack "${pack.collection}": ${err.message}`;
@@ -79,7 +79,7 @@ export default class FalloutMigrationRunner {
 		// Apply the original locked status for the pack
 		await pack.configure({locked: wasLocked});
 
-		fallout.logger.log(`Migrated all "${documentName}" documents from Compendium "${pack.collection}"`);
+		fallout.log(`Migrated all "${documentName}" documents from Compendium "${pack.collection}"`);
 	}
 
 	async migrateSceneTokens(scene) {
@@ -105,7 +105,7 @@ export default class FalloutMigrationRunner {
 				const updateData = await this.currentMigrationTask.updateActor(actorData);
 
 				if (!foundry.utils.isEmpty(updateData)) {
-					fallout.logger.log(`Migrating Token document "${token.name}"`);
+					fallout.log(`Migrating Token document "${token.name}"`);
 
 					updateData._id = token.id;
 
@@ -118,13 +118,17 @@ export default class FalloutMigrationRunner {
 			}
 			catch(err) {
 				err.message = `Failed system migration for Token "${token.name}": ${err.message}`;
-				fallout.logger.error(err);
+				fallout.error(err);
 			}
 		}
 	}
 
 	async migrateSettings() {
 		await this.currentMigrationTask.updateSettings();
+	}
+
+	get migrateSystemCompendiumsDisabled() {
+		return !this.migrateSystemCompendiumsEnabled;
 	}
 
 	get migrateSystemCompendiumsEnabled() {
@@ -136,8 +140,8 @@ export default class FalloutMigrationRunner {
 			// Don't migrate system packs unless the proper debug setting is
 			// enabled
 			//
-			if (!this.migrateSystemCompendiumsEnabled) {
-				if (pack.metadata.packageType !== "world") {
+			if (this.migrateSystemCompendiumsDisabled) {
+				if (pack.metadata.packageType === "system") {
 					continue;
 				}
 			}
@@ -161,7 +165,7 @@ export default class FalloutMigrationRunner {
 				const updateData = await this.currentMigrationTask.updateActor(actorSource);
 
 				if (!foundry.utils.isEmpty(updateData)) {
-					fallout.logger.log(`Migrating Actor document "${actor.name}"`);
+					fallout.log(`Migrating Actor document "${actor.name}"`);
 					await actor.update(updateData);
 				}
 
@@ -181,7 +185,7 @@ export default class FalloutMigrationRunner {
 					);
 
 					if (!foundry.utils.isEmpty(updateData)) {
-						fallout.logger.log(`Migrating Actor Item document "${item.name}"`);
+						fallout.log(`Migrating Actor Item document "${item.name}"`);
 						await item.update(updateData);
 					}
 				}
@@ -208,7 +212,7 @@ export default class FalloutMigrationRunner {
 				const updateData = await this.currentMigrationTask.updateItem(source);
 
 				if (!foundry.utils.isEmpty(updateData)) {
-					fallout.logger.log(`Migrating Item document "${item.name}"`);
+					fallout.log(`Migrating Item document "${item.name}"`);
 					item.update(updateData);
 				}
 			}
@@ -230,7 +234,7 @@ export default class FalloutMigrationRunner {
 
 		const startMessage = game.i18n.format("FALLOUT.MIGRATION.begin_schema", {version});
 
-		fallout.logger.log(startMessage);
+		fallout.log(startMessage);
 		ui.notifications.info(startMessage, {permanent: false});
 
 		await this.migrateSettings();
@@ -239,7 +243,7 @@ export default class FalloutMigrationRunner {
 		await this.migrateWorldScenes();
 		await this.migrateWorldCompendiums();
 
-		fallout.logger.log(
+		fallout.log(
 			game.i18n.format("FALLOUT.MIGRATION.completed_schema", {version})
 		);
 	}
@@ -249,14 +253,14 @@ export default class FalloutMigrationRunner {
 	}
 
 	async run() {
-		fallout.logger.log(`Current schema version ${this.currentVersion}`);
+		fallout.log(`Current schema version ${this.currentVersion}`);
 
 		await this.buildMigrations();
 
 		// If this is a brand new world then we don't need to do any migrations.
 		//
 		if (game.world.playtime === 0) {
-			fallout.logger.log(`Setting new world schema version to ${this.latestVersion}`);
+			fallout.log(`Setting new world schema version to ${this.latestVersion}`);
 
 			await game.settings.set(
 				SYSTEM_ID, "worldSchemaVersion",
@@ -270,7 +274,7 @@ export default class FalloutMigrationRunner {
 
 		const startMessage = game.i18n.localize("FALLOUT.MIGRATION.begin_migration");
 
-		fallout.logger.log(startMessage);
+		fallout.log(startMessage);
 		ui.notifications.info(startMessage, {permanent: false});
 
 		for (const migration of this.allMigrations) {
@@ -285,7 +289,7 @@ export default class FalloutMigrationRunner {
 
 		const endMessage = game.i18n.localize("FALLOUT.MIGRATION.completed_migration");
 
-		fallout.logger.log(endMessage);
+		fallout.log(endMessage);
 		ui.notifications.info(endMessage, {permanent: false});
 	}
 }

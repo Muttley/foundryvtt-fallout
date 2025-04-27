@@ -51,7 +51,7 @@
 				},
 				"stun": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"tranquilize_x": {
 					"rank": 1,
@@ -403,7 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
-					"perks": "",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -421,8 +421,8 @@
 					"coreVersion": "12.331",
 					"createdTime": null,
 					"duplicateSource": null,
-					"lastModifiedBy": "LbffuJGmFEdJvA7X",
-					"modifiedTime": 1739336137511,
+					"lastModifiedBy": "2qpaXtqvDMZiBblN",
+					"modifiedTime": 1745675124182,
 					"systemId": "fallout",
 					"systemVersion": "11.14.3"
 				},
@@ -621,8 +621,8 @@
 						"summary": ""
 					},
 					"modType": "melee",
-					"namePrefix": "Puncturing",
-					"perks": "",
+					"namePrefix": "Heated",
+					"perks": "Blacksmith 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -641,6 +641,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "close",
 		"rarity": 2,
 		"skill": "",

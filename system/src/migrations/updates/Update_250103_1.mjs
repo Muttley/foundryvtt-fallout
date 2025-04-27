@@ -13,20 +13,30 @@ export default class Update_250103_1 extends FalloutUpdateBase {
 		const updateData = {};
 
 		// Damage Effects
-		for (const key in itemData.system.damage.damageEffect) {
-			if (itemData.system.damage.damageEffect[key].value === false) {
-				updateData[`system.damage.damageEffect.${key}.value`] = 0;
+		for (const key in itemData.system.damage?.damageEffect) {
+			const value = itemData.system.damage?.damageEffect[key]?.value ?? false;
+
+			if (Number.isInteger(value)) {
+				continue;
 			}
+
+			const newValue = value === true ? 1 : 0;
+
+			updateData[`system.damage.damageEffect.${key}.value`] = newValue;
 		}
 
 		// Weapon Qualities
-		for (const key in itemData.system.damage.weaponQuality) {
-			if (itemData.system.damage.weaponQuality[key].value === false) {
-				updateData[`system.damage.weaponQuality.${key}.value`] = 0;
-			}
-		}
+		for (const key in itemData.system.damage?.weaponQuality) {
+			const value = itemData.system.damage?.weaponQuality[key]?.value;
 
-		updateData["system.mods.installedMods"] = "";
+			if (Number.isInteger(value)) {
+				continue;
+			}
+
+			const newValue = value === true ? 1 : 0;
+
+			updateData[`system.damage.weaponQuality.${key}.value`] = newValue;
+		}
 
 		return updateData;
 	}

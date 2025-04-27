@@ -13,7 +13,7 @@ export default class FalloutConditionTracker {
 	}
 
 	_checkConditions(worldTime) {
-		fallout.logger.debug("Condition Tracker: running checks");
+		fallout.debug("Condition Tracker: running checks");
 
 		const actors = game.actors.filter(
 			a => a.hasPlayerOwner && a.type === "character"
@@ -27,16 +27,16 @@ export default class FalloutConditionTracker {
 		const skipStatus = skipMissingPlayers ? "will" : "will not";
 
 		if (skipMissingPlayers) {
-			fallout.logger.debug(`Condition Tracker: ${skipStatus} skip missing players`);
+			fallout.debug(`Condition Tracker: ${skipStatus} skip missing players`);
 		}
 
 		for (const actor of actors) {
 			if (skipMissingPlayers && actor.ownerIsOffline) {
-				fallout.logger.log(`Condition Tracker: skipping character ${actor.name} as owner is offline`);
+				fallout.log(`Condition Tracker: skipping character ${actor.name} as owner is offline`);
 				continue;
 			}
 
-			fallout.logger.log(`Condition Tracker: checking conditions for character ${actor.name}`);
+			fallout.log(`Condition Tracker: checking conditions for character ${actor.name}`);
 			actor.checkConditions(worldTime);
 		}
 	}

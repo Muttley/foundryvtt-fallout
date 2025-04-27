@@ -45,18 +45,18 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Start Salvaging
 FALLOUT.APP.SalvageJunk.time: This will take {time}
 FALLOUT.APP.SalvageJunk.title: Salvage Junk
-FALLOUT.APPAREL.armor: Armor
-FALLOUT.APPAREL.clothing: Clothing
-FALLOUT.APPAREL.headgear: Headgear
-FALLOUT.APPAREL.outfit: Outfit
-FALLOUT.APPAREL.plating: Plating
-FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
 FALLOUT.APPAREL_MOD.type.system: System
 FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
+FALLOUT.APPAREL.armor: Armor
+FALLOUT.APPAREL.clothing: Clothing
+FALLOUT.APPAREL.headgear: Headgear
+FALLOUT.APPAREL.outfit: Outfit
+FALLOUT.APPAREL.plating: Plating
+FALLOUT.APPAREL.powerArmor: Power Armor
 FALLOUT.AvailabilityRoll.result.body: The maximum rarity available is {rarity}
 FALLOUT.AvailabilityRoll.result.title: Availability Roll
 FALLOUT.AvailabilityRoll.tooltip: Roll for Availability
@@ -152,6 +152,7 @@ FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
+FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gains one bottlecap
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
@@ -188,6 +189,20 @@ FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll resu
 FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
 FALLOUT.dialog.roll_quantity.title: Roll Quantity
 FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
+FALLOUT.EFFECT.StatusBleeding: Bleeding
+FALLOUT.EFFECT.StatusBlind: Blind
+FALLOUT.EFFECT.StatusBurning: Burning
+FALLOUT.EFFECT.StatusDead: Dead
+FALLOUT.EFFECT.StatusDeaf: Deaf
+FALLOUT.EFFECT.StatusDiseased: Diseased
+FALLOUT.EFFECT.StatusDrugged: Drugged
+FALLOUT.EFFECT.StatusInjured: Injured
+FALLOUT.EFFECT.StatusPoisoned: Poisoned
+FALLOUT.EFFECT.StatusProne: Prone
+FALLOUT.EFFECT.StatusRadiation: Radiation
+FALLOUT.EFFECT.StatusRestrained: Restrained
+FALLOUT.EFFECT.StatusStunned: Stunned
+FALLOUT.EFFECT.StatusUnconscious: Unconscious
 FALLOUT.EffectCreate: Create Effect
 FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
@@ -329,6 +344,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
@@ -538,6 +555,7 @@ FALLOUT.TEMPLATES.Points: Points
 FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: POWER ARMOR HEALTH
 FALLOUT.TEMPLATES.Prepared: Prepared
+FALLOUT.TEMPLATES.ProvidesCap: Provides Cap
 FALLOUT.TEMPLATES.Publication: Publication
 FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
 FALLOUT.TEMPLATES.Qualities: Qualities

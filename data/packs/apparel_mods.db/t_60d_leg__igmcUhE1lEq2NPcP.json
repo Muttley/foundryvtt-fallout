@@ -23,7 +23,7 @@
 		"modType": "upgrade",
 		"perks": "2",
 		"quantity": 1,
-		"rarity": "common",
+		"rarity": 0,
 		"resistance": {
 			"energy": 2,
 			"physical": 1,

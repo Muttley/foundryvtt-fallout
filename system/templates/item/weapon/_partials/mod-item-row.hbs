@@ -3,10 +3,10 @@
 		<div class="item-name flexshrink" style="flex: 0 0 30%;">
 			<div class="item-image">
 				<img
-					src="{{item.img}}"
-					width="24"
 					height="24"
+					src="{{item.img}}"
 					title="{{item.name}}"
+					width="24"
 				/>
 			</div>
 			<h4 class="resource-label">
@@ -26,11 +26,11 @@
 		<div class="item-controls" style="align-self: center; flex: 1 0 5%;">
 			<a
 				{{#if item.system.attached}}
-					class="item-control toggle-mod"
-					title='{{localize "FALLOUT.TOOLTIPS.Mod.detach"}}'
+					class="item-control toggle-weapon-mod"
+					title='{{localize "FALLOUT.WEAPON_MOD.summary.remove"}}'
 				{{else}}
-					class="item-control toggle-mod item-unequipped"
-					title='{{localize "FALLOUT.TOOLTIPS.Mod.attach"}}'
+					class="item-control toggle-weapon-mod item-unequipped"
+					title='{{localize "FALLOUT.Item.PowerArmor.Attach"}}'
 				{{/if}}
 			>
 				<i class="fa-solid fa-plug"></i>
@@ -38,7 +38,7 @@
 			{{#unless item.system.attached}}
 				<a
 					class="item-control item-delete"
-					title="Delete Item"
+					title={{localize "FALLOUT.TEMPLATES.Delete"}}
 				>
 					<i class="fas fa-trash"></i>
 				</a>

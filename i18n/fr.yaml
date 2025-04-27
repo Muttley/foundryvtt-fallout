@@ -45,19 +45,18 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Récupération de {amount} sur {max} Bri
 FALLOUT.APP.SalvageJunk.start: Commencer la récupération
 FALLOUT.APP.SalvageJunk.time: Cela prendra {time}
 FALLOUT.APP.SalvageJunk.title: Récupération du Bric-à-brac
+FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.lining: Lining
+FALLOUT.APPAREL_MOD.type.material: Material
+FALLOUT.APPAREL_MOD.type.plating: Plating
+FALLOUT.APPAREL_MOD.type.system: System
+FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.APPAREL.armor: Armure
 FALLOUT.APPAREL.clothing: Vêtement
 FALLOUT.APPAREL.headgear: Couvre-chefs
 FALLOUT.APPAREL.outfit: Tenue
 FALLOUT.APPAREL.plating: Blindage
 FALLOUT.APPAREL.powerArmor: Armure Assistée
-FALLOUT.APPAREL_MOD.shadowed: Shadowed
-FALLOUT.APPAREL_MOD.type.ballistic: Ballistic
-FALLOUT.APPAREL_MOD.type.lining: Lining
-FALLOUT.APPAREL_MOD.type.material: Material
-FALLOUT.APPAREL_MOD.type.plating: Plating
-FALLOUT.APPAREL_MOD.type.system: System
-FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.AvailabilityRoll.result.body: La rareté maximale disponible est de {rarity}
 FALLOUT.AvailabilityRoll.result.title: Lancer de disponibilité
 FALLOUT.AvailabilityRoll.tooltip: Lancé pour la disponibilité
@@ -153,6 +152,7 @@ FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Niveau de faim
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Niveau de sommeil
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Niveau de soif
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} a consommé Eau Sale"
+FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gagne une capsule
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Boisson consommée
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} a consommé {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Drogue consommée
@@ -189,6 +189,20 @@ FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll resu
 FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
 FALLOUT.dialog.roll_quantity.title: Roll Quantity
 FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
+FALLOUT.EFFECT.StatusBleeding: Bleeding
+FALLOUT.EFFECT.StatusBlind: Blind
+FALLOUT.EFFECT.StatusBurning: Burning
+FALLOUT.EFFECT.StatusDead: Dead
+FALLOUT.EFFECT.StatusDeaf: Deaf
+FALLOUT.EFFECT.StatusDiseased: Diseased
+FALLOUT.EFFECT.StatusDrugged: Drugged
+FALLOUT.EFFECT.StatusInjured: Injured
+FALLOUT.EFFECT.StatusPoisoned: Poisoned
+FALLOUT.EFFECT.StatusProne: Prone
+FALLOUT.EFFECT.StatusRadiation: Radiation
+FALLOUT.EFFECT.StatusRestrained: Restrained
+FALLOUT.EFFECT.StatusStunned: Stunned
+FALLOUT.EFFECT.StatusUnconscious: Unconscious
 FALLOUT.EffectCreate: Créer Effet
 FALLOUT.EffectDelete: Effacer Effet
 FALLOUT.EffectEdit: Editer Effet
@@ -312,6 +326,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Effacer les résultats
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Fouille du lieu
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: Tous les résultats de récupération ont été effacés.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Effacer les résultats de récupération
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: Aucune table d'objet n'a été définie pour la {category} d'objets.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Nettoyé par le vide (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Fouillé avec attention (D2)
@@ -521,6 +537,7 @@ FALLOUT.TEMPLATES.Points: Points
 FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: PV ARMURE ASSISTÉE
 FALLOUT.TEMPLATES.Prepared: Préparé
+FALLOUT.TEMPLATES.ProvidesCap: Provides Cap
 FALLOUT.TEMPLATES.Publication: Publication
 FALLOUT.TEMPLATES.Qualities_and_Effects: Qualités et Effets
 FALLOUT.TEMPLATES.Qualities: Qualités

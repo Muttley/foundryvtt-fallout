@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -135,7 +135,7 @@
 				},
 				"parry": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"placed": {
 					"rank": 0,
@@ -404,7 +404,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Searing",
-					"perks": "",
+					"perks": "Blacksmith 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

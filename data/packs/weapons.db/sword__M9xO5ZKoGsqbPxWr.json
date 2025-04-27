@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -135,7 +135,7 @@
 				},
 				"parry": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"placed": {
 					"rank": 0,
@@ -403,7 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Stunning",
-					"perks": "",
+					"perks": "Blacksmith 3, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -622,7 +622,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Electrified Serrated",
-					"perks": "",
+					"perks": "Blacksmith 3, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -846,7 +846,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Electrified",
-					"perks": "",
+					"perks": "Blacksmith 2, Science! 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1065,7 +1065,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Serrated",
-					"perks": "",
+					"perks": "Blacksmith 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

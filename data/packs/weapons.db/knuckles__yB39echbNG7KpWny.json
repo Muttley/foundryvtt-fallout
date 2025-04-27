@@ -103,7 +103,7 @@
 				},
 				"concealed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"debilitating": {
 					"rank": 0,
@@ -403,7 +403,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Puncturing",
-					"perks": "",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -622,7 +622,7 @@
 					},
 					"modType": "melee",
 					"namePrefix": "Bladed",
-					"perks": "",
+					"perks": "Blacksmith 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

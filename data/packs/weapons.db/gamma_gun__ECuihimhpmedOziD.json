@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -51,7 +51,7 @@
 				},
 				"stun": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"tranquilize_x": {
 					"rank": 1,
@@ -91,7 +91,7 @@
 				},
 				"blast": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"bombard": {
 					"rank": 0,
@@ -119,7 +119,7 @@
 				},
 				"inaccurate": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"limited": {
 					"rank": 0,
@@ -403,7 +403,7 @@
 					},
 					"modType": "dish",
 					"namePrefix": "Long",
-					"perks": "",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -627,7 +627,7 @@
 					},
 					"modType": "muzzle",
 					"namePrefix": "Automatic",
-					"perks": "",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -849,7 +849,7 @@
 					},
 					"modType": "muzzle",
 					"namePrefix": "Electrified",
-					"perks": "",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

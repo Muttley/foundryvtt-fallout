@@ -23,7 +23,7 @@
 		"modType": "lining",
 		"perks": "Armorer 4",
 		"quantity": 1,
-		"rarity": "common",
+		"rarity": 0,
 		"resistance": {
 			"energy": 6,
 			"physical": 6,

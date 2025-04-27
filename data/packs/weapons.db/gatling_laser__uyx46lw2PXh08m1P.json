@@ -27,7 +27,7 @@
 				},
 				"burst": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"freeze": {
 					"rank": 0,
@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -115,11 +115,11 @@
 				},
 				"gatling": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"inaccurate": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"limited": {
 					"rank": 0,
@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,
@@ -403,7 +403,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Agitated",
-					"perks": "",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -622,7 +622,7 @@
 					},
 					"modType": "sight",
 					"namePrefix": "Tactical",
-					"perks": "",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1279,7 +1279,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Charging",
-					"perks": "",
+					"perks": "Science! 4",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1502,7 +1502,7 @@
 					},
 					"modType": "capacitor",
 					"namePrefix": "Excited",
-					"perks": "",
+					"perks": "Science! 3",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,

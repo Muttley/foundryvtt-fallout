@@ -708,7 +708,18 @@ export default class FalloutActor extends Actor {
 
 		let physicalItemsMap = physicalItems.map(i => i.toObject());
 
-		let totalWeight = 0;
+		let junkWeight = this.system.materials.junk * 2;
+		let materialWeight = 0;
+		for (const material of ["common", "uncommon", "rare"]) {
+			materialWeight += this.system.materials[material] ?? 0;
+		}
+
+		if (this.useKgs) {
+			junkWeight = fallout.utils.lbsToKgs(junkWeight);
+			materialWeight = fallout.utils.lbsToKgs(materialWeight);
+		}
+
+		let itemsWeight = 0;
 
 		for (let i of physicalItemsMap) {
 			let itemWeight = parseFloat(i.system.weight);
@@ -717,20 +728,21 @@ export default class FalloutActor extends Actor {
 			let itemQuantity = parseFloat(i.system.quantity);
 			itemQuantity = isNaN(itemQuantity) ? 0 : itemQuantity;
 
-			totalWeight += itemWeight * itemQuantity;
+			if (i.system.isJunk) {
+				junkWeight += itemWeight * itemQuantity;
+			}
+			else {
+				itemsWeight += itemWeight * itemQuantity;
+			}
 		}
 
-		let materialWeight = 0;
-		for (const material of ["common", "uncommon", "rare"]) {
-			materialWeight += this.system.materials[material] ?? 0;
-		}
-		materialWeight += (this.system.materials.junk * 2);
-
-		if (this.useKgs) {
-			materialWeight = fallout.utils.lbsToKgs(materialWeight);
+		if (this.perkLevel("Pack Rat") > 0) {
+			// Junk counts as half weight for players with the "Pack Rat"
+			// perk
+			junkWeight /= 2;
 		}
 
-		totalWeight += materialWeight;
+		const totalWeight = itemsWeight + junkWeight + materialWeight;
 
 		return parseFloat(totalWeight.toFixed(2));
 	}
@@ -979,7 +991,7 @@ export default class FalloutActor extends Actor {
 			switch (hunger) {
 				case CONFIG.FALLOUT.CONDITIONS.hunger.full:
 					if (timeElapsed >= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Full > Sated`);
+						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Full > Sated`);
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.sated;
 						lastChange += CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
 						changed = true;
@@ -991,7 +1003,7 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.sated:
 					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Sated > Peckish`);
+						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Sated > Peckish`);
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.peckish;
 						lastChange += CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS;
 						changed = true;
@@ -1003,7 +1015,7 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.peckish:
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Peckish > Hungry`);
+						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Peckish > Hungry`);
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.hungry;
 						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
 						changed = true;
@@ -1016,9 +1028,9 @@ export default class FalloutActor extends Actor {
 				case CONFIG.FALLOUT.CONDITIONS.hunger.hungry:
 					if (timeElapsed >= CONFIG.FALLOUT.SIXTEEN_HOURS_IN_SECONDS) {
 						hunger = CONFIG.FALLOUT.CONDITIONS.hunger.starving;
-						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Hungry > Starving`);
+						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Hungry > Starving`);
 						if (!this.isSleeping) {
-							fallout.logger.debug(
+							fallout.debug(
 								`Condition Tracker: [Hunger] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
 							);
 							fatigue++;
@@ -1033,9 +1045,9 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.hunger.starving:
 					if (timeElapsed >= CONFIG.FALLOUT.ONE_DAY_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Hunger] ${this.name} Starving`);
+						fallout.debug(`Condition Tracker: [Hunger] ${this.name} Starving`);
 						if (!this.isSleeping) {
-							fallout.logger.debug(
+							fallout.debug(
 								`Condition Tracker: [Hunger] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
 							);
 							fatigue++;
@@ -1083,7 +1095,7 @@ export default class FalloutActor extends Actor {
 			switch (thirst) {
 				case CONFIG.FALLOUT.CONDITIONS.thirst.quenched:
 					if (timeElapsed >= CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Quenched > Hydrated`);
+						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Quenched > Hydrated`);
 						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.hydrated;
 						lastChange += CONFIG.FALLOUT.ONE_HOUR_IN_SECONDS;
 						changed = true;
@@ -1095,7 +1107,7 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.thirst.hydrated:
 					if (timeElapsed >= CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Hydrated > Thirsty`);
+						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Hydrated > Thirsty`);
 						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.thirsty;
 						lastChange += CONFIG.FALLOUT.TWO_HOURS_IN_SECONDS;
 						changed = true;
@@ -1107,10 +1119,10 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.thirst.thirsty:
 					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Thirsty > Dehydrated`);
+						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Thirsty > Dehydrated`);
 						thirst = CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated;
 						if (!this.isSleeping) {
-							fallout.logger.debug(
+							fallout.debug(
 								`Condition Tracker: [Thirst] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
 							);
 							fatigue++;
@@ -1125,9 +1137,9 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.thirst.dehydrated:
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Thirst] ${this.name} Dehydrated`);
+						fallout.debug(`Condition Tracker: [Thirst] ${this.name} Dehydrated`);
 						if (!this.isSleeping) {
-							fallout.logger.debug(
+							fallout.debug(
 								`Condition Tracker: [Thirst] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
 							);
 							fatigue++;
@@ -1176,16 +1188,16 @@ export default class FalloutActor extends Actor {
 		while (keepChecking) {
 			iterations++;
 			if (iterations > maxIterations) {
-				fallout.logger.error(`Condition Tracker: [Sleep] Actor ${this.name} exceeded maximum iterations.`);
+				fallout.error(`Condition Tracker: [Sleep] Actor ${this.name} exceeded maximum iterations.`);
 				console.log(`currentWorldTime: ${currentWorldTime}`);
 				console.log(`timeElapsed: ${timeElapsed}`);
-				fallout.logger.error(this.system.conditions);
+				fallout.error(this.system.conditions);
 				break;
 			}
 			switch (sleep) {
 				case CONFIG.FALLOUT.CONDITIONS.sleep.rested:
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Rested > Tired`);
+						fallout.debug(`Condition Tracker: [Sleep] ${this.name} Rested > Tired`);
 						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.tired;
 						lastChange += CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS;
 						changed = true;
@@ -1197,7 +1209,7 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.sleep.tired:
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Tired > Weary`);
+						fallout.debug(`Condition Tracker: [Sleep] ${this.name} Tired > Weary`);
 						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.weary;
 						if (!this.isSleeping) {
 							fatigue++;
@@ -1212,10 +1224,10 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.sleep.weary:
 					if (timeElapsed >= CONFIG.FALLOUT.EIGHT_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Weary > Exhausted`);
+						fallout.debug(`Condition Tracker: [Sleep] ${this.name} Weary > Exhausted`);
 						sleep = CONFIG.FALLOUT.CONDITIONS.sleep.exhausted;
 						if (!this.isSleeping) {
-							fallout.logger.debug(
+							fallout.debug(
 								`Condition Tracker: [Sleep] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
 							);
 							fatigue++;
@@ -1230,9 +1242,9 @@ export default class FalloutActor extends Actor {
 					break;
 				case CONFIG.FALLOUT.CONDITIONS.sleep.exhausted:
 					if (timeElapsed >= CONFIG.FALLOUT.FOUR_HOURS_IN_SECONDS) {
-						fallout.logger.debug(`Condition Tracker: [Sleep] ${this.name} Exhausted`);
+						fallout.debug(`Condition Tracker: [Sleep] ${this.name} Exhausted`);
 						if (!this.isSleeping) {
-							fallout.logger.debug(
+							fallout.debug(
 								`Condition Tracker: [Sleep] ${this.name} Fatigue ${fatigue} > ${fatigue + 1}`
 							);
 							fatigue++;
@@ -1314,7 +1326,7 @@ export default class FalloutActor extends Actor {
 			);
 
 			if (wasTimeJump) {
-				fallout.logger.log(`Condition Tracker: ${this.name} max time jump exceeded for ${condition}, updating lastChange value`);
+				fallout.log(`Condition Tracker: ${this.name} max time jump exceeded for ${condition}, updating lastChange value`);
 				const key = `system.conditions.lastChanged.${condition}`;
 				updateData[key] = currentWorldTime;
 			}
@@ -1525,7 +1537,7 @@ export default class FalloutActor extends Actor {
 							this.createEmbeddedDocuments("Item", [addiction]);
 						}
 						else {
-							fallout.logger.warn(`Unable to fund addiction with the name ${addictionName}`);
+							fallout.warn(`Unable to fund addiction with the name ${addictionName}`);
 						}
 
 						fallout.chat.renderGeneralMessage(
@@ -1569,6 +1581,11 @@ export default class FalloutActor extends Actor {
 
 				actorUpdateData["system.conditions.thirst"] =
 					Math.max(currentThirst - thirstReduction, 0);
+
+				if (item.system.providesCap) {
+					actorUpdateData["system.currency.caps"] =
+						this.system.currency.caps + 1;
+				}
 			}
 		}
 
@@ -1599,6 +1616,7 @@ export default class FalloutActor extends Actor {
 						}
 					),
 					effect: item.system.effect,
+					gainedCap: item.system.providesCap,
 					showHungerAndThirst: ["beverage", "food"].includes(consumableType),
 					hunger: this.system.conditions.hunger,
 					thirst: this.system.conditions.thirst,
@@ -1933,7 +1951,7 @@ export default class FalloutActor extends Actor {
 		const currentSleepStatus = this.system.conditions?.sleep ?? 0;
 
 		if (hasActiveFatigue) {
-			fallout.logger.debug(
+			fallout.debug(
 				`Party Sleep: Actor ${this.name} has currently active fatigue sources`
 			);
 		}

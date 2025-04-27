@@ -27,7 +27,7 @@
 				},
 				"burst": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"freeze": {
 					"rank": 0,
@@ -35,7 +35,7 @@
 				},
 				"persistent": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"piercing_x": {
 					"rank": 1,
@@ -47,7 +47,7 @@
 				},
 				"spread": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"stun": {
 					"rank": 0,
@@ -107,7 +107,7 @@
 				},
 				"debilitating": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"delay_x": {
 					"rank": 1,
@@ -119,7 +119,7 @@
 				},
 				"inaccurate": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"limited": {
 					"rank": 0,
@@ -171,7 +171,7 @@
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"unreliable": {
 					"rank": 0,
@@ -403,7 +403,7 @@
 					},
 					"modType": "barrel",
 					"namePrefix": "Long",
-					"perks": "",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -622,7 +622,7 @@
 					},
 					"modType": "fuel",
 					"namePrefix": "Napalmer",
-					"perks": "",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -846,7 +846,7 @@
 					},
 					"modType": "nozzle",
 					"namePrefix": "Compressed",
-					"perks": "",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1065,7 +1065,7 @@
 					},
 					"modType": "propellantTank",
 					"namePrefix": "High Capacity",
-					"perks": "",
+					"perks": "Gun Nut 1",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1284,7 +1284,7 @@
 					},
 					"modType": "nozzle",
 					"namePrefix": "Vaporizing",
-					"perks": "",
+					"perks": "Gun Nut 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
@@ -1503,7 +1503,7 @@
 					},
 					"modType": "propellantTank",
 					"namePrefix": "Max. Capactiy",
-					"perks": "",
+					"perks": "Gun Nut 2",
 					"qualities": "",
 					"quantity": 1,
 					"rarity": 0,
