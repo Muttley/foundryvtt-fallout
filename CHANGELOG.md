@@ -1,3 +1,9 @@
+# v11.15.2
+
+#### Bugs
+- [#614] Badge image URL broken (the revenge)
+
+---
 # v11.15.1
 
 #### Bugs
