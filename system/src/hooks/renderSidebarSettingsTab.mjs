@@ -12,6 +12,7 @@ export const renderSidebarSettingsTab = {
 				const rendered = await renderTemplate(template);
 
 				gameDetails.find(".system").append(rendered);
+				gameDetails.find(".modules").prepend("<hr>");
 			}
 		});
 	},
