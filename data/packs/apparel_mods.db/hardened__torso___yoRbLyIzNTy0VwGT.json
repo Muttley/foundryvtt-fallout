@@ -1,0 +1,39 @@
+{
+	"_id": "yoRbLyIzNTy0VwGT",
+	"_key": "!items!yoRbLyIzNTy0VwGT",
+	"effects": [
+	],
+	"folder": "Zh7U1bCmTwNjIFm6",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Hardened (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 18,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

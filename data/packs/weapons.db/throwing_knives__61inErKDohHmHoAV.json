@@ -19,47 +19,47 @@
 			"damageEffect": {
 				"arc": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"breaking": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"burst": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"freeze": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"persistent": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"spread": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"stun": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"tranquilize_x": {
 					"rank": 1,
-					"value": false
+					"value": 0
 				},
 				"vicious": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				}
 			},
 			"damageType": {
@@ -68,111 +68,122 @@
 				"poison": false,
 				"radiation": false
 			},
+			"originalDamageType": {
+				"energy": false,
+				"physical": false,
+				"poison": false,
+				"radiation": false
+			},
+			"originalRating": 0,
 			"rating": 3,
 			"weaponQuality": {
 				"accurate": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"ammo_hungry_x": {
 					"rank": 1,
-					"value": false
+					"value": 0
+				},
+				"aquatic": {
+					"rank": 0,
+					"value": 0
 				},
 				"blast": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"bombard": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"close_quarters": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"concealed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"debilitating": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"delay_x": {
 					"rank": 1,
-					"value": false
+					"value": 0
 				},
 				"gatling": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"inaccurate": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"limited": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"mine": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"night_vision": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"parry": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"placed": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"recoil_x": {
 					"rank": 1,
-					"value": false
+					"value": 0
 				},
 				"recon": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"reliable": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"slow_load": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"suppressed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"surge": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"thrown": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"two_handed": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"unreliable": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"unstable_radiation": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				},
 				"wrangle": {
 					"rank": 0,
-					"value": false
+					"value": 0
 				}
 			}
 		},
@@ -185,9 +196,12 @@
 		"melee": false,
 		"mods": {
 			"current": 0,
+			"installedMods": "",
 			"list": "",
-			"max": 0
+			"max": 0,
+			"modded": false
 		},
+		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",
 		"rarity": 1,

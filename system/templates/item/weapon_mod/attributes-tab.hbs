@@ -2,27 +2,14 @@
 
 	<div class="flexrow resource-row">
 		<label class="field-label">
-			{{localize "FALLOUT.TEMPLATES.Weapon_Type"}}
-		</label>
-
-		<select name="system.weaponType">
-			{{selectOptions FALLOUT.WEAPON_TYPES
-				selected=system.weaponType
-			}}
-		</select>
-	</div>
-
-	<div class="flexrow resource-row">
-		<label class="field-label">
 			{{localize "FALLOUT.TEMPLATES.Mod_Type"}}
 		</label>
 
-		<input
-			name="system.modType"
-			placeholder="Receiver Mod, Grip Mod, .etc"
-			type="text"
-			value="{{system.modType}}"
-		/>
+		<select name="system.modType">
+			{{selectOptions FALLOUT.WEAPON_MOD_TYPES
+				selected=system.modType
+			}}
+		</select>
 	</div>
 
 	<div class="flexrow resource-row">
@@ -37,43 +24,150 @@
 		/>
 	</div>
 
+	<div class="resource-row flexrow">
+		<label class="field-label" for="system.modEffects.damage.rating">
+			{{localize "FALLOUT.UI.Damage"}}
+		</label>
+		<select name="system.modEffects.damage.overrideDamage">
+			<option value="modify"
+				{{#ifCond system.modEffects.damage.overrideDamage "===" "modify"}}
+					selected
+				{{/ifCond}}>
+				{{localize "FALLOUT.UI.Modify"}}
+			</option>
+			<option value="override"
+				{{#ifCond system.modEffects.damage.overrideDamage "===" "override"}}
+					selected
+				{{/ifCond}}>
+				{{localize "FALLOUT.UI.Override"}}
+			</option>
+		</select>
+		&nbsp;
+		<input
+			data-dtype="Number"
+			name="system.modEffects.damage.rating"
+			type="number"
+			value="{{system.modEffects.damage.rating}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.modEffects.damage.damageType">
+			{{localize "FALLOUT.TEMPLATES.DAMAGE_TYPE"}}
+		</label>
+		<div class="grid-2-columns">
+			{{#each damageTypes}}
+				<div class="flexrow toggle-label {{#if this.active}}active{{/if}}">
+					<label class="font-size-13">
+						<input
+							type="checkbox"
+							name="system.modEffects.damage.damageType.{{this.key}}"
+							{{#if this.active}}
+								checked
+							{{/if}}
+						/>
+						{{this.label}}
+						<i class="fo-{{key}}"></i>
+					</label>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+
+	<div class="resource-row flexrow">
+		<label class="field-label" for="system.modEffects.range">
+			{{localize "FALLOUT.TEMPLATES.RANGE"}}
+		</label>
+		<input
+			data-dtype="Number"
+			name="system.modEffects.range"
+			type="number"
+			value="{{system.modEffects.range}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.modEffects.ammo">
+			{{localize "TYPES.Item.ammo"}}
+			{{#if weaponAmmo}}
+				<a
+					aria-describedby="tooltip"
+					class="content-link"
+					data-id="{{weaponAmmo._id}}"
+					data-link
+					data-pack="{{weaponAmmo.pack}}"
+					data-tooltip="Ammo Item"
+					data-type="Item"
+					data-uuid="{{weaponAmmo.uuid}}"
+					draggable="true"
+				>
+					<i class="fas fa-suitcase"></i>
+				</a>
+			{{/if}}
+		</label>
+		<select name="system.modEffects.ammo" data-dtype="String">
+			<option value="">&mdash;</option>
+			{{#each ammoTypes}}
+			<option
+				value="{{this}}"
+				{{#ifCond ../system.modEffects.ammo "===" this}}
+					selected
+				{{/ifCond}}
+			>
+				{{this}}
+			</option>
+			{{/each}}
+		</select>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.modEffects.ammo">
+			{{localize "ITEM.AmmoPerShot"}}
+		</label>
+		<input
+			data-dtype="Number"
+			type="number"
+			name="system.modEffects.ammoPerShot"
+			value="{{system.modEffects.ammoPerShot}}"
+		/>
+	</div>
+
+	<div class="flexrow resource-row">
+		<label class="field-label" for="system.modEffects.fireRate">
+			{{localize "FALLOUT.TEMPLATES.FIRE_RATE"}}
+		</label>
+		<input
+			data-dtype="Number"
+			type="number"
+			name="system.modEffects.fireRate"
+			value="{{system.modEffects.fireRate}}"
+		/>
+	</div>
+
 	<div class="flexrow resource-row">
 		<label class="field-label">
 			{{localize "FALLOUT.UI.Perks"}}
 		</label>
 
 		<input
-			type="text"
 			name="system.perks"
+			type="text"
 			value="{{system.perks}}"
 		/>
 	</div>
 
-	<div class="flexrow resource-row">
-		<label class="field-label">
-			{{localize "FALLOUT.actor.inventory.materials.junk"}}
-		</label>
-		<input
-			class="input-checkbox"
-			data-dtype="Boolean"
-			name="system.isJunk"
-			type="checkbox"
-			{{checked system.isJunk}}
-		/>
-	</div>
-
 	<div class="resource-row">
-		<h3 class="resource-label">
+		<h3 class="field-label">
 			{{localize "FALLOUT.TEMPLATES.Effect"}}
 		</h3>
+
 		<div class="description-field">
 			{{editor effectHTML
-				target="system.effect"
 				button=true
-				owner=owner
 				editable=editable
+				owner=owner
+				target="system.modEffects.effect"
 			}}
 		</div>
 	</div>
-
 </div>

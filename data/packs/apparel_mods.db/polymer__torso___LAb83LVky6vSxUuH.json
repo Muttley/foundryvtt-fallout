@@ -1,0 +1,39 @@
+{
+	"_id": "LAb83LVky6vSxUuH",
+	"_key": "!items!LAb83LVky6vSxUuH",
+	"effects": [
+	],
+	"folder": "3txykwrcDDfTdRcH",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Polymer (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 90,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 3,
+			"physical": 3,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

@@ -12,21 +12,21 @@ export default class FalloutCompendiums {
 		let sources = [];
 
 		if (subtype === null) {
-			fallout.logger.debug(`[FalloutCompendiums] Collecting '${type}' objects from compendiums`);
+			fallout.debug(`[FalloutCompendiums] Collecting '${type}' objects from compendiums`);
 		}
 		else {
-			fallout.logger.debug(`[FalloutCompendiums] Collecting '${type}' objects with subtype '${subtype}' from compendiums`);
+			fallout.debug(`[FalloutCompendiums] Collecting '${type}' objects with subtype '${subtype}' from compendiums`);
 		}
 
 		if (filterSources === true) {
 			sources = game.settings.get("fallout", "sourceFilters") ?? [];
 
 			if (sources.length > 0) {
-				fallout.logger.debug("[FalloutCompendiums] Compendium documents will be filtered by source");
-				fallout.logger.debug(`[FalloutCompendiums] ${sources.length} source filters currently configured:`, sources.join(", "));
+				fallout.debug("[FalloutCompendiums] Compendium documents will be filtered by source");
+				fallout.debug(`[FalloutCompendiums] ${sources.length} source filters currently configured:`, sources.join(", "));
 			}
 			else {
-				fallout.logger.debug("[FalloutCompendiums] No source filters have been configured");
+				fallout.debug("[FalloutCompendiums] No source filters have been configured");
 			}
 		}
 
@@ -35,7 +35,9 @@ export default class FalloutCompendiums {
 		let docs = [];
 
 		for (let pack of game.packs) {
-			if (pack.metadata.type !== type) continue;
+			if (pack.metadata.type !== type) {
+				continue;
+			}
 
 			let documents = await pack.getIndex({fields: ["system"]});
 
@@ -48,7 +50,7 @@ export default class FalloutCompendiums {
 			}
 		}
 
-		fallout.logger.debug(`[FalloutCompendiums] ${docs.length} total documents found`);
+		fallout.debug(`[FalloutCompendiums] ${docs.length} total documents found`);
 
 		if (sourcesSet) {
 			docs = docs.filter(
@@ -58,22 +60,22 @@ export default class FalloutCompendiums {
 				}
 			);
 
-			fallout.logger.debug(`[FalloutCompendiums] ${docs.length} documents remain after applying source filters`);
+			fallout.debug(`[FalloutCompendiums] ${docs.length} documents remain after applying source filters`);
 		}
 		else {
-			fallout.logger.debug("[FalloutCompendiums] Compendium documents will be unfiltered");
+			fallout.debug("[FalloutCompendiums] Compendium documents will be unfiltered");
 		}
 
 		// De-duplicate and sort the list alphabetically
 		if (docs.length > 0) {
-			fallout.logger.debug("[FalloutCompendiums] De-duplicating and sorting documents");
+			fallout.debug("[FalloutCompendiums] De-duplicating and sorting documents");
 
 			docs = Array.from(new Set(docs)).sort(
 				(a, b) => a.name.localeCompare(b.name)
 			);
 		}
 
-		fallout.logger.debug(`[FalloutCompendiums] ${docs.length} documents being returned`);
+		fallout.debug(`[FalloutCompendiums] ${docs.length} documents being returned`);
 
 		return this._collectionFromArray(docs);
 	}
@@ -223,7 +225,9 @@ export default class FalloutCompendiums {
 
 		let moduleSourceCount = 0;
 		for (const module of game.modules) {
-			if (!module.active) continue;
+			if (!module.active) {
+				continue;
+			}
 
 			const flags = module.flags?.[module.id];
 			const moduleSources = flags?.["fallout-sources"] ?? {};
@@ -233,7 +237,7 @@ export default class FalloutCompendiums {
 
 				const name = game.i18n.localize(moduleSources[moduleSource]);
 
-				fallout.logger.debug(`[FalloutCompendiums] Adding source '${name}' with id '${moduleSource} from module '${module.id}'`);
+				fallout.debug(`[FalloutCompendiums] Adding source '${name}' with id '${moduleSource} from module '${module.id}'`);
 
 				allSources.push({
 					name,
@@ -242,7 +246,7 @@ export default class FalloutCompendiums {
 			}
 		}
 
-		fallout.logger.debug(`[FalloutCompendiums] ${moduleSourceCount} custom source/s found in enabled modules`);
+		fallout.debug(`[FalloutCompendiums] ${moduleSourceCount} custom source/s found in enabled modules`);
 
 		CONFIG.FALLOUT.ALL_SOURCES = allSources.sort(
 			(a, b) => a.name.localeCompare(b.name)

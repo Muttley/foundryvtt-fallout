@@ -3,7 +3,9 @@ const LBS_TO_KGS = 0.4535924;
 export default class FalloutUtils {
 
 	static calculateXpReward(level=1, category="normal") {
-		if (level <= 0) return 0;
+		if (level <= 0) {
+			return 0;
+		}
 
 		let base;
 		let levelAdjust;
@@ -56,10 +58,13 @@ export default class FalloutUtils {
 
 		let xpReward = base + (perLevel * (level - levelAdjust));
 
-		if (category === "minion") xpReward = Math.round(xpReward / 3);
+		if (category === "minion") {
+			xpReward = Math.round(xpReward / 3);
+		}
 
 		return xpReward;
 	}
+
 
 	static checkForTimeJump(lastChange) {
 		const maxConditionCheckTimeJump = game.settings.get(
@@ -72,10 +77,12 @@ export default class FalloutUtils {
 		return Math.abs(game.time.worldTime - lastChange) > maxTimeSkip;
 	}
 
+
 	static foundryMinVersion(version) {
 		const majorVersion = parseInt(game.version.split(".")[0]);
 		return majorVersion >= version;
 	}
+
 
 	// Attempts to get the current actor for a user.  If the current user is the
 	// GM then the currently selected token actor will be used if possible,
@@ -168,7 +175,9 @@ export default class FalloutUtils {
 		const nameKey = `FALLOUT.SKILL.${skill.name}`;
 		let localizedName = game.i18n.localize(nameKey);
 
-		if (localizedName === nameKey) localizedName = skill.name;
+		if (localizedName === nameKey) {
+			localizedName = skill.name;
+		}
 
 		return localizedName;
 	}
@@ -188,7 +197,7 @@ export default class FalloutUtils {
 			const actor = player.character;
 
 			if (!actor) {
-				fallout.logger.warn(
+				fallout.warn(
 					`[FalloutUtils::getPlayerCharacters] ${player.name} does not have an associated character`
 				);
 
@@ -212,6 +221,25 @@ export default class FalloutUtils {
 	static lbsToKgs(value) {
 		return value * LBS_TO_KGS;
 	}
+
+
+	static async loadLegacyArtMappings() {
+		// search modules for legacy art mappings and convert to new format
+		for (const module of game.modules) {
+			if (!module.active) {
+				continue;
+			}
+			const flags = module.flags?.[module.id];
+			if (flags?.["fallout-art"]) {
+				module.flags.compendiumArtMappings = {
+					fallout: {
+						mapping: flags["fallout-art"],
+					},
+				};
+			}
+		}
+	}
+
 
 	static minsToString(mins) {
 		const MINS_PER_DAY = 1440;

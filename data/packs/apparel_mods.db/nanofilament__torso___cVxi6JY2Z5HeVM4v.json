@@ -1,0 +1,39 @@
+{
+	"_id": "cVxi6JY2Z5HeVM4v",
+	"_key": "!items!cVxi6JY2Z5HeVM4v",
+	"effects": [
+	],
+	"folder": "sZsnd4w6meoCfPDE",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Nanofilament (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 40,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 4,
+			"physical": 4,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 6
+	},
+	"type": "apparel_mod"
+}

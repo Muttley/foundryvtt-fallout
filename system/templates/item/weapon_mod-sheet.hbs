@@ -1,12 +1,14 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form class="{{cssClass}} itemDrop" autocomplete="off">
 
 	{{> item/_shared-partials/header}}
 
 	<nav class="sheet-tabs tabs" data-group="primary">
 		<a class="item" data-tab="attributes">
-			{{localize "FALLOUT.TEMPLATES.Attributes"}}
+			{{localize "FALLOUT.MODS.mods"}}
 		</a>
-
+		<a class="item" data-tab="qualities">
+			{{localize "FALLOUT.TEMPLATES.Qualities_and_Effects"}}
+		</a>
 		<a class="item" data-tab="description">
 			{{localize "FALLOUT.TEMPLATES.Description"}}
 		</a>
@@ -18,6 +20,7 @@
 
 	<section class="sheet-body">
 		{{> item/weapon_mod/attributes-tab}}
+		{{> item/weapon_mod/qualities-and-effects-tab}}
 		{{> item/_shared-partials/description-tab}}
 		{{> item/_shared-partials/source}}
 	</section>

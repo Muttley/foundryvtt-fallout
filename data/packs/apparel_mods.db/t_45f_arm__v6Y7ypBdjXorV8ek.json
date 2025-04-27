@@ -16,10 +16,11 @@
 		"effect": "",
 		"favorite": false,
 		"health": {
-			"value": "4"
+			"value": 4
 		},
 		"isJunk": false,
 		"location": "Arm",
+		"modType": "upgrade",
 		"perks": "4",
 		"quantity": 1,
 		"rarity": 0,
@@ -28,8 +29,10 @@
 			"physical": 3,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 4
 	},
 	"type": "apparel_mod"

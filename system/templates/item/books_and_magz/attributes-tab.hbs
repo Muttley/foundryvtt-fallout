@@ -12,15 +12,37 @@
 		>
 	</div>
 
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Uses"}}
+		</label>
+
+		<span class="align-right">
+			<input
+				class="num-short-3"
+				name="system.uses.value"
+				type="Number"
+				value="{{system.uses.value}}"
+			/>
+			&sol;
+			<input
+				class="num-short-3"
+				name="system.uses.max"
+				type="Number"
+				value="{{system.uses.max}}"
+			/>
+		</span>
+	</div>
+
 	<div class="flexrow align-left resource-row">
 		<label class="field-label" for="system.learned">
-			{{localize "FALLOUT.TEMPLATES.Learned"}}
+			{{localize "FALLOUT.UI.Read"}}
 		</label>
 
 		<input
-			name="system.learned"
+			name="system.read"
 			type="checkbox"
-			{{checked system.learned}}
+			{{checked system.read}}
 		>
 	</div>
 

@@ -1,0 +1,39 @@
+{
+	"_id": "6Auqz8lwvuB7UFdy",
+	"_key": "!items!6Auqz8lwvuB7UFdy",
+	"effects": [
+	],
+	"folder": "4o4WqT1kVgccjvmx",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Lighter Build (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 2,
+		"description": "<p><span class=\"fontstyle0\">Armor Upgrades apply to all the types of armor except for Vault-Tec Security armor.&nbsp; All Armor Upgrades are </span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "upgrade",
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": -2
+	},
+	"type": "apparel_mod"
+}

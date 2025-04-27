@@ -1,3 +1,7 @@
+@use '../global/typography' as *;
+@use '../utils/colors' as *;
+@use '../utils/variables' as *;
+
 // Section Header
 .items-header,
 .settlers-header {

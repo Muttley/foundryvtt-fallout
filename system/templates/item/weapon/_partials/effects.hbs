@@ -4,31 +4,31 @@
 	</label>
 	<div class="grid-4-columns item-list" style="margin: 4px;">
 		{{#each damageEffects}}
-			<div
-				{{#if this.active}}
+			<div {{#ifCond this.active '>' 0}}
 					class="flexrow toggle-label active"
-				{{else}}
+				 {{else}}
 					class="flexrow toggle-label"
-				{{/if}}
-				data-tooltip="{{fromConfig "DAMAGE_EFFECT_TOOLTIPS" this.key}}"
-			>
+				 {{/ifCond}}
+				 {{#if ../modded}}
+					data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
+				 {{else}}
+					data-tooltip="{{fromConfig "DAMAGE_EFFECT_TOOLTIPS" this.key}}"
+				 {{/if}}
+				 data-active="{{this.active}}"
+				 data-name="{{this.key}}"
+				 data-type="effects">
 				<label style="align-self: center;">
-					<input
-						name="system.damage.damageEffect.{{this.key}}.value"
-						type="checkbox"
-						{{#if this.active}}
-							checked
-						{{/if}}
-					>
 					{{this.label}}
 				</label>
 				{{#if this.hasRank}}
-					<input
-						class="num-short-2"
-						name="system.damage.damageEffect.{{this.key}}.rank"
-						type="number"
-						value="{{this.rank}}"
-					>
+				<input class="num-short-2"
+					   name="system.damage.damageEffect.{{this.key}}.rank"
+					   type="number"
+					   value="{{this.rank}}"
+						   {{#if ../modded}}
+						   disabled
+						   {{/if}}
+					   >
 				{{/if}}
 			</div>
 		{{/each}}

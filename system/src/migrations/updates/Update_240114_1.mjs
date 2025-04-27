@@ -5,7 +5,9 @@ export default class Update_240114_1 extends FalloutUpdateBase {
 	static version = 240114.1;
 
 	async updateActor(actorData) {
-		if (actorData.type !== "settlement") return;
+		if (actorData.type !== "settlement") {
+			return;
+		}
 
 		const settlement = game.actors.find(a => a._id === "Sqm5Z8qgg9y8iXZk");
 

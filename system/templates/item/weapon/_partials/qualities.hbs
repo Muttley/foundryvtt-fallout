@@ -5,21 +5,21 @@
 	<div class="grid-4-columns item-list" style="margin: 4px;">
 		{{#each weaponQualities}}
 			<div
-				{{#if this.active}}
+				{{#ifCond this.active '>' 0}}
 					class="flexrow toggle-label active"
 				{{else}}
 					class="flexrow toggle-label"
+				{{/ifCond}}
+				{{#if ../modded}}
+					data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
+				{{else}}
+					data-tooltip="{{fromConfig "WEAPON_QUALITY_TOOLTIPS" this.key}}"
 				{{/if}}
-				data-tooltip="{{fromConfig "WEAPON_QUALITY_TOOLTIPS" this.key}}"
+				data-active="{{this.active}}"
+				data-name="{{this.key}}"
+				data-type="quality"
 			>
 				<label style="align-self: center;">
-					<input
-						type="checkbox"
-						name="system.damage.weaponQuality.{{this.key}}.value"
-						{{#if this.active}}
-							checked
-						{{/if}}
-					>
 					{{this.label}}
 				</label>
 				{{#if this.hasRank}}
@@ -28,6 +28,9 @@
 						name="system.damage.weaponQuality.{{this.key}}.rank"
 						type="number"
 						value="{{this.rank}}"
+						   {{#if ../modded}}
+						   disabled
+						   {{/if}}
 					>
 				{{/if}}
 			</div>

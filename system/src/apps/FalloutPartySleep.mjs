@@ -66,11 +66,19 @@ export default class FalloutPartySleep extends Application {
 
 			let currentValue = this.lengthOfSleep;
 
-			if (event.originalEvent.deltaY > 0) currentValue--;
-			if (event.originalEvent.deltaY < 0) currentValue++;
+			if (event.originalEvent.deltaY > 0) {
+				currentValue--;
+			}
+			if (event.originalEvent.deltaY < 0) {
+				currentValue++;
+			}
 
-			if (currentValue < 1) currentValue = 1;
-			if (currentValue > 24) currentValue = 24;
+			if (currentValue < 1) {
+				currentValue = 1;
+			}
+			if (currentValue > 24) {
+				currentValue = 24;
+			}
 
 			if (currentValue !== this.lengthOfSleep) {
 				this.lengthOfSleep = currentValue;
@@ -109,7 +117,7 @@ export default class FalloutPartySleep extends Application {
 	}
 
 	async _applyPartySleep() {
-		fallout.logger.debug(`Party Sleep: The party sleeps for ${this.lengthOfSleep} hours`);
+		fallout.debug(`Party Sleep: The party sleeps for ${this.lengthOfSleep} hours`);
 
 		const actors = game.actors.filter(
 			a => a.hasPlayerOwner && a.type === "character"
@@ -151,7 +159,9 @@ export default class FalloutPartySleep extends Application {
 		for (const actor of actors) {
 			let actorCanBeProcessed = true;
 
-			if (skipMissingPlayers) actorCanBeProcessed = actor.ownerIsOnline;
+			if (skipMissingPlayers) {
+				actorCanBeProcessed = actor.ownerIsOnline;
+			}
 
 			if (actorCanBeProcessed) {
 				await actor.sleep(
@@ -170,7 +180,7 @@ export default class FalloutPartySleep extends Application {
 				});
 			}
 			else {
-				fallout.logger.debug(
+				fallout.debug(
 					`Party Sleep: The owner of ${actor.name} is not online so they will not sleep.`
 				);
 			}

@@ -144,7 +144,9 @@ export default class CompendiumItemSelector extends FormApplication {
 		const newItemUuids = [];
 
 		for (let i = 0; i < this.currentItems.length; i++) {
-			if (itemIndex === i) continue;
+			if (itemIndex === i) {
+				continue;
+			}
 			newItemUuids.push(this.currentItems[i].uuid);
 		}
 
@@ -191,6 +193,8 @@ export default class CompendiumItemSelector extends FormApplication {
 			return this.render(true);
 		}
 
-		if (this.closeOnSelection) return this.close({force: true});
+		if (this.closeOnSelection) {
+			return this.close({force: true});
+		}
 	}
 }

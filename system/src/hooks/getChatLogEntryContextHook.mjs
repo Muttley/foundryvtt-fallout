@@ -1,9 +1,9 @@
 export const getChatLogEntryContextHook = {
 	attach: () => {
-		fallout.logger.debug("Attaching getChatLogEntryContext hook");
+		fallout.debug("Attaching getChatLogEntryContext hook");
 
 		Hooks.on("getChatLogEntryContext", (html, options) => {
-			fallout.logger.debug("Running getChatLogEntryContext hook");
+			fallout.debug("Running getChatLogEntryContext hook");
 
 			const canAdvanceTime = function(li) {
 				const message = game.messages.get(li.attr("data-message-id"));
@@ -20,7 +20,9 @@ export const getChatLogEntryContextHook = {
 					const message = game.messages.get(li.attr("data-message-id"));
 					const messageData = message.flags.data;
 
-					if (messageData.type !== "salvage-junk") return;
+					if (messageData.type !== "salvage-junk") {
+						return;
+					}
 
 					game.time.advance(messageData.timeToSalvageMins * 60);
 

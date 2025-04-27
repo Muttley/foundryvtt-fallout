@@ -20,6 +20,7 @@
 		},
 		"isJunk": false,
 		"location": "",
+		"modType": "lining",
 		"perks": "Armorer 4; Science! 2",
 		"quantity": 1,
 		"rarity": 0,
@@ -28,8 +29,10 @@
 			"physical": 0,
 			"radiation": 2
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 1
 	},
 	"type": "apparel_mod"

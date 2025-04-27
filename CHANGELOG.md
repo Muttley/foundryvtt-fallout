@@ -1,3 +1,54 @@
+# v11.15.0
+
+#### Bugs
+- [#577] Fixed a bug with the consumed action chat card title
+- [#580] Poison bonus resistance doesn't get displayed in body location elements
+- [#581] Immunity/Infinity symbol overflows input element in resistance bonuses section of character sheet
+- [#584] Unable to delete Power Armor Frame from character sheet
+- [#585] Should not try to expand details of power armor pieces within power armor frame attachment item tab
+- [#587] FalloutItemSheet::getPowerArmorPieceData() matches on apparel_mod items when it should only be looking at apparel items
+- [#597] Consuming an item with a quantity of zero should do nothing and give a warning notification
+- [#604] Available mods installed in weapons do not have required Perk information from weapon_mod items
+- [#606] Allow selection of non-compendium items from scavenging tables
+- [#610] Migration scripts skipping module compendiums
+- [#611] Power Fist Heating Coil mod name prefix wrong
+
+#### Enhancements
+- [#82] Token status effects for easy visual reference (Persistent, Irradiated, Injured, etc.)
+- [#106] Better way to handle mods
+- [#146] Junk weight should be reduced by Pack Rat perk
+- [#148] Separate out Fire Rate from Damage for guns
+- [#253] Support butchery items that have roll formula instead of just a fixed quantity
+- [#340] Allow drag/drop of player perks that can be used on NPCs
+- [#479] Add Quantity Roll field to more item types
+- [#483] Add a way to toggle off the auto-calculate for derived stats
+- [#518] Add custom fallout themed status effects to replace the defaults
+- [#541] Improve Perk requirements
+
+	* During the upgrade process the system will try to update core book Perks owned by Actors with the new requirements format.  This will likely fail if Perks have been renamed, but failures will be logged to the output and also a notification will she shown so they can be fixed up manually.
+
+- [#559] Improvements to Books and Magazines
+
+	* New control added to magazine items in the inventory to "read" a magazine.  This automatically rolls and extends the uses remaining if needed for characters with the Comprehension perk.
+
+- [#569] Improve handling of Mods
+- [#576] When a consumable is used, display any effect it causes on the resultant chat message
+- [#598] Make the deletion of exhausted consumables an optional setting and default to not deleting them
+- [#605] Improve error reporting for misconfigured scavenging tables
+- [#608] Beverage items can provide cap upon consumption
+
+	* Adds a new boolean field to beverage consumables to indicate that consuming provides a cap. When consumed automatically add one cap to player's total.
+
+#### Chores
+- [#564] Merge new Spanish translation updates from Crowdin
+- [#572] Merge new French and Portuguese/Brazilian translation updates from Crowdin
+- [#575] Merge new French, Portuguese/Brazilian, and Spanish translation updates from Crowdin
+- [#582] Merge new French updates from Crowdin
+- [#601] Merge new French and Portuguese/Brazilian updates from Crowdin
+- [#603] Merge new Portuguese/Brazilian updates from Crowdin
+
+---
+
 # v11.14.3
 
 #### Enhancements

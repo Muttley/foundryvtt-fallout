@@ -180,8 +180,12 @@ export default class FalloutVehicleSheet extends FalloutBaseActorSheet {
 
 		let actorUUID;
 		let _token = this.actor.token;
-		if (_token) actorUUID = this.actor.token.uuid;
-		else actorUUID = this.actor.uuid;
+		if (_token) {
+			actorUUID = this.actor.token.uuid;
+		}
+		else {
+			actorUUID = this.actor.uuid;
+		}
 
 		// console.warn(fromUuidSync(actorUUID).actor)
 
@@ -200,8 +204,12 @@ export default class FalloutVehicleSheet extends FalloutBaseActorSheet {
 
 		let actorUUID;
 		let _token = this.actor.token;
-		if (_token) actorUUID = this.actor.token.uuid;
-		else actorUUID = this.actor.uuid;
+		if (_token) {
+			actorUUID = this.actor.token.uuid;
+		}
+		else {
+			actorUUID = this.actor.uuid;
+		}
 
 		// console.warn(fromUuidSync(actorUUID).actor)
 

@@ -97,9 +97,11 @@ export class APTracker extends Application {
 
 
 	static async initialise() {
-		if (this._instance) return;
+		if (this._instance) {
+			return;
+		}
 
-		fallout.logger.debug("Initialising APTracker");
+		fallout.debug("Initialising APTracker");
 		new APTracker();
 
 		this.renderApTracker();
@@ -108,7 +110,7 @@ export class APTracker extends Application {
 
 
 	static async registerSocketEvents() {
-		fallout.logger.debug("Registering APTracker socket events");
+		fallout.debug("Registering APTracker socket events");
 
 		game.socket.on("system.fallout", ev => {
 			if (ev.operation === "adjustAP") {
@@ -123,13 +125,17 @@ export class APTracker extends Application {
 				}
 			}
 
-			if (ev.operation === "updateAP") this.updateAP();
+			if (ev.operation === "updateAP") {
+				this.updateAP();
+			}
 		});
 	}
 
 
 	static renderApTracker() {
-		if (APTracker._instance) APTracker._instance.render(true);
+		if (APTracker._instance) {
+			APTracker._instance.render(true);
+		}
 	}
 
 
@@ -147,7 +153,9 @@ export class APTracker extends Application {
 
 		const maxAP = await game.settings.get(SYSTEM_ID, "maxAP");
 
-		if (type === "partyAP") value = Math.min(value, maxAP);
+		if (type === "partyAP") {
+			value = Math.min(value, maxAP);
+		}
 
 		if (type === "maxAP") {
 			const currentPartyAP =

@@ -1,0 +1,29 @@
+{{#each weaponModGroups  as |value key|}}
+	<ol class="items-list">
+		<li class="apparel flexrow items-header">
+			<div class="flexrow item-name upperC" style="flex: 0 0 30%;">
+				{{localize (concat 'FALLOUT.WEAPON_MOD.type.' key)}}
+			</div>
+			<div class="flexrow item-info" style="flex: 0 0 40%; text-align: left;">
+				<p>
+					{{localize "FALLOUT.TEMPLATES.Effects"}}
+				</p>
+			</div>
+			<div class="flexrow item-info" style="text-align: left;">
+				<p>
+					{{localize "FALLOUT.UI.Perks"}}
+				</p>
+			</div>
+			<div class="item-controls">
+				<a class="find-from-compendium" data-type="weapon_mod">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</a>
+			</div>
+		</li>
+		{{#each value}}
+			{{> item/weapon/_partials/mod-item-row
+				item=this
+			}}
+		{{/each}}
+	</ol>
+{{/each}}

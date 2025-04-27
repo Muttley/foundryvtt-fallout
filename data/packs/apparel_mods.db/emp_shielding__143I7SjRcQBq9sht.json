@@ -7,19 +7,20 @@
 	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
 	"name": "EMP Shielding",
 	"system": {
-		"apparelType": "clothing",
+		"apparelType": "powerArmor",
 		"attachable": true,
 		"attached": false,
 		"canBeScrapped": true,
 		"cost": 20,
 		"description": "",
-		"effect": "<p>+2 Energy damage resistance</p>",
+		"effect": "",
 		"favorite": false,
 		"health": {
 			"value": 0
 		},
 		"isJunk": false,
 		"location": "",
+		"modType": "plating",
 		"perks": "Armorer 1",
 		"quantity": 1,
 		"rarity": 0,
@@ -28,8 +29,10 @@
 			"physical": 0,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
+		"summary": "",
 		"weight": 1
 	},
 	"type": "apparel_mod"

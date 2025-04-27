@@ -1,0 +1,48 @@
+<li class="item weapon_mod" data-item-id="{{item._id}}">
+	<div class="flexrow" style="flex-wrap: nowrap;">
+		<div class="item-name flexshrink" style="flex: 0 0 30%;">
+			<div class="item-image">
+				<img
+					height="24"
+					src="{{item.img}}"
+					title="{{item.name}}"
+					width="24"
+				/>
+			</div>
+			<h4 class="resource-label">
+				{{item.name}}
+			</h4>
+		</div>
+		<div class="item-info" style="align-self: center; flex: 0 0 40%;">
+			<span>
+				{{{item.system.modEffects.summary}}}
+			</span>
+		</div>
+		<div class="item-info" style="align-self: center; flex: 1 1 auto;">
+			<span>
+				{{{item.system.perks}}}
+			</span>
+		</div>
+		<div class="item-controls" style="align-self: center; flex: 1 0 5%;">
+			<a
+				{{#if item.system.attached}}
+					class="item-control toggle-weapon-mod"
+					title='{{localize "FALLOUT.WEAPON_MOD.summary.remove"}}'
+				{{else}}
+					class="item-control toggle-weapon-mod item-unequipped"
+					title='{{localize "FALLOUT.Item.PowerArmor.Attach"}}'
+				{{/if}}
+			>
+				<i class="fa-solid fa-plug"></i>
+			</a>
+			{{#unless item.system.attached}}
+				<a
+					class="item-control item-delete"
+					title={{localize "FALLOUT.TEMPLATES.Delete"}}
+				>
+					<i class="fas fa-trash"></i>
+				</a>
+			{{/unless}}
+		</div>
+	</div>
+</li>

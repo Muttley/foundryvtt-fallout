@@ -7,15 +7,48 @@
 	"img": "systems/fallout/assets/icons/items/perk.svg",
 	"name": "Gun Nut",
 	"system": {
-		"description": "<p>You can modify small guns and heavy weapons with weapon mods. Each rank in this perk unlocks an additional rank of weapon mods: rank 1 unlocks rank 1 mods, rank 2 unlocks rank 2 mods, etc. Each time you take this perk, the level requirement increases by 4.</p>",
+		"description": "<p>You can modify small guns and heavy weapons with weapon mods. Each rank in this perk unlocks an additional rank of weapon mods: rank 1 unlocks rank 1 mods, rank 2 unlocks rank 2 mods, etc. Each time you take this perk, the level requirement increases by 4.</p>\n<p><strong>Requirements</strong>: INT 6, Level 2+</p>",
 		"favorite": false,
 		"rank": {
-			"levelIncrease": 0,
-			"levelStart": 1,
 			"max": 4,
 			"value": 0
 		},
-		"requirements": "INT 6, Level 2+",
+		"requirements": "",
+		"requirementsEx": {
+			"attributes": {
+				"agi": {
+					"value": 0
+				},
+				"cha": {
+					"value": 0
+				},
+				"end": {
+					"value": 0
+				},
+				"int": {
+					"value": 6
+				},
+				"luc": {
+					"value": 0
+				},
+				"per": {
+					"value": 0
+				},
+				"str": {
+					"value": 0
+				}
+			},
+			"isCompanion": false,
+			"level": 2,
+			"levelIncrease": 4,
+			"magazineUuids": [
+			],
+			"notGhoul": false,
+			"notHuman": false,
+			"notRadiationImmune": false,
+			"notRobot": false,
+			"notSupermutant": false
+		},
 		"source": "core_rulebook"
 	},
 	"type": "perk"

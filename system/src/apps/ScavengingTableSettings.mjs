@@ -62,7 +62,9 @@ export default class ScavengingTableSettings extends FormApplication {
 
 		data.compendiums = {};
 		for (let pack of game.packs) {
-			if (pack.metadata.type !== "RollTable") continue;
+			if (pack.metadata.type !== "RollTable") {
+				continue;
+			}
 
 			data.compendiums[pack.metadata.id] =
 				`[${pack.metadata.packageName}] ${pack.metadata.label}`;
@@ -88,7 +90,7 @@ export default class ScavengingTableSettings extends FormApplication {
 		const name = currentTarget.name;
 		const value = currentTarget.value;
 
-		console.log(`${name} :: ${value}`);
+		fallout.debug(`${name} :: ${value}`);
 		if (name === "scavenging_compendium") {
 			await game.settings.set(SYSTEM_ID, "scavengingCompendium", value);
 

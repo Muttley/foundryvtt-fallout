@@ -134,7 +134,9 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			// Make sure Robots can't equip Character armor, and vice-versa
 			//
 			i.canBeEquipped = i.system.equippable ?? false;
-			if (i.type === "apparel" && this.actor.isRobot) i.canBeEquipped = false;
+			if (i.type === "apparel" && this.actor.isRobot) {
+				i.canBeEquipped = false;
+			}
 
 			if (i.type === "consumable" && this.actor.isCreature) {
 				if (i.system.butchery) {
@@ -143,8 +145,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				}
 			}
 
-			if (i.type === "robot_armor" && this.actor.isNotRobot) i.canBeEquipped = false;
-			if (i.type === "robot_mod" && this.actor.isNotRobot) i.canBeEquipped = false;
+			if (i.type === "robot_armor" && this.actor.isNotRobot) {
+				i.canBeEquipped = false;
+			}
+			if (i.type === "robot_mod" && this.actor.isNotRobot) {
+				i.canBeEquipped = false;
+			}
 
 			if (i.type === "skill") {
 				i.localizedName = fallout.utils.getLocalizedSkillName(i);
@@ -218,7 +224,9 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		// -------------------------------------------------------------
 		// ! Everything below here is only needed if the sheet is editable
-		if (!this.isEditable) return;
+		if (!this.isEditable) {
+			return;
+		}
 
 		// * SKILLS LISTENERS [clic, right-click, value change, tag ]
 		// Click Skill Item
@@ -396,8 +404,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		if (this.actor.isOwner) {
 			let handler = ev => this._onDragStart(ev);
 			html.find("li.item").each((i, li) => {
-				if (li.classList.contains("inventory-header")) return;
-				if (li.classList.contains("skill")) return;
+				if (li.classList.contains("inventory-header")) {
+					return;
+				}
+				if (li.classList.contains("skill")) {
+					return;
+				}
 				li.setAttribute("draggable", true);
 				li.addEventListener("dragstart", handler, false);
 			});
@@ -469,14 +481,16 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		delete itemData.system.type;
 		// Finally, create the item!
 		const newItem = await Item.create(itemData, { parent: this.actor });
-		if (newItem) newItem.sheet.render(true);
+		if (newItem) {
+			newItem.sheet.render(true);
+		}
 	}
 
 	async _onItemDelete(item) {
 		if (item.type === "apparel" && item.system.powerArmor.isFrame) {
 			const attachedItems = this.actor.items.filter(
 				i => i.type === "apparel"
-						&& i.system.powerArmor.frameId === itemId
+						&& i.system.powerArmor.frameId === item.id
 			);
 
 			const updateData = [];
@@ -589,8 +603,12 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		let actorUUID;
 		let _token = this.actor.token;
-		if (_token) actorUUID = this.actor.token.uuid;
-		else actorUUID = this.actor.uuid;
+		if (_token) {
+			actorUUID = this.actor.token.uuid;
+		}
+		else {
+			actorUUID = this.actor.uuid;
+		}
 
 		// console.warn(fromUuidSync(actorUUID).actor)
 

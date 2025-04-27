@@ -1,0 +1,39 @@
+{
+	"_id": "WCywfTr7TSWsWCPm",
+	"_key": "!items!WCywfTr7TSWsWCPm",
+	"effects": [
+	],
+	"folder": "3txykwrcDDfTdRcH",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Reinforced (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 30,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 1,
+			"physical": 1,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

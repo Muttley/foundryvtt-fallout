@@ -1,0 +1,39 @@
+{
+	"_id": "hJDcOKYapml78um8",
+	"_key": "!items!hJDcOKYapml78um8",
+	"effects": [
+	],
+	"folder": "0sZTfWE1J7mKvvnK",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Titanium Plating (Torso)",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 20,
+		"description": "<p>Installed with the <strong>Repair</strong> skill.</p>",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 2
+		},
+		"isJunk": false,
+		"location": "Helm, Arms, Legs",
+		"modType": "plating",
+		"perks": "Armorer 3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

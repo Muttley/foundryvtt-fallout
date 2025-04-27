@@ -1,3 +1,5 @@
+@use "sass:string";
+
 @mixin element-invisible {
 	position: absolute;
 
@@ -16,7 +18,7 @@
 }
 
 @function url-friendly-colour($colour) {
-	@return "%23" + str-slice("#{$colour}", 2, -1);
+	@return "%23" + string.slice("#{$colour}", 2, -1);
 }
 
 @mixin element-color($color, $shape) {

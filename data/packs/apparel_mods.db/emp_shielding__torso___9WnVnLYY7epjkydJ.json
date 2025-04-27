@@ -1,0 +1,39 @@
+{
+	"_id": "9WnVnLYY7epjkydJ",
+	"_key": "!items!9WnVnLYY7epjkydJ",
+	"effects": [
+	],
+	"folder": "mMrg0X7SR8UJDXyE",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "EMP Shielding (Torso)",
+	"system": {
+		"apparelType": "powerArmor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 40,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "plating",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 0,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 2
+	},
+	"type": "apparel_mod"
+}

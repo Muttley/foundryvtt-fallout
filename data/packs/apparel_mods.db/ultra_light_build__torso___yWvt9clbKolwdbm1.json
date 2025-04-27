@@ -1,0 +1,39 @@
+{
+	"_id": "yWvt9clbKolwdbm1",
+	"_key": "!items!yWvt9clbKolwdbm1",
+	"effects": [
+	],
+	"folder": "4o4WqT1kVgccjvmx",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Ultra Light Build (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 14,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "upgrade",
+		"perks": "Armorer 3",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 0,
+			"physical": 0,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": -6
+	},
+	"type": "apparel_mod"
+}

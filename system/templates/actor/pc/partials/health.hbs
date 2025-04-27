@@ -21,12 +21,15 @@
 		<span class="text-center">/</span>
 		<input
 			class="num-short-3"
-			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
 			style="font-size:18px; background-color: beige; color: black;"
 			type="number"
 			name="system.health.max"
 			value="{{system.health.max}}"
-			min="0" disabled
+			min="0"
+			{{#unless disableAutoDerivedStats}}
+			disabled
+			data-tooltip="{{localize 'FALLOUT.Actor.Warnings.DerivedValue'}}"
+			{{/unless}}
 		>
 	</div>
 </div>

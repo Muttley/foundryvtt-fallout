@@ -5,7 +5,9 @@ export default class Update_231230_1 extends FalloutUpdateBase {
 	static version = 231230.1;
 
 	async updateItem(itemData, actorData) {
-		if (itemData.type !== "consumable") return;
+		if (itemData.type !== "consumable") {
+			return;
+		}
 
 		let newAddictive = itemData.system.addictive !== ""
 			? parseInt(itemData.system.addictive)

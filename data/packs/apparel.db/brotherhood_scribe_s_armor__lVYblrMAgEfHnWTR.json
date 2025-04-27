@@ -30,9 +30,227 @@
 			"torso": true
 		},
 		"mods": {
+			"8JID23VwOdXqwESb": {
+				"_id": "8JID23VwOdXqwESb",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "zV91jOW1G58krnbG",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Ballistic Weave Mk II",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "clothing",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 30,
+					"description": "<p><span class=\"fontstyle0\">Ballistic polymer weave is an armor mod which improves the defensive abilities of some clothing items. A layer of this tough artificial fabric can be used as a lining in a variety of garments, giving them a limited ability to resist impacts, bullets, and energy blasts.</span></p>\n<p><span class=\"fontstyle0\">Knowledge of this recipe is possessed only by a few, and they share these secrets only occasionally. All ballistic weave mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "lining",
+					"perks": "Armorer 1",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 3,
+						"physical": 3,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 0
+				},
+				"type": "apparel_mod"
+			},
+			"R0OekXuLrtHf0j8f": {
+				"_id": "R0OekXuLrtHf0j8f",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "zV91jOW1G58krnbG",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Ballistic Weave",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "clothing",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 20,
+					"description": "<p><span class=\"fontstyle0\">Ballistic polymer weave is an armor mod which improves the defensive abilities of some clothing items. A layer of this tough artificial fabric can be used as a lining in a variety of garments, giving them a limited ability to resist impacts, bullets, and energy blasts.</span></p>\n<p><span class=\"fontstyle0\">Knowledge of this recipe is possessed only by a few, and they share these secrets only occasionally. All ballistic weave mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span> </p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "lining",
+					"perks": "",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 2,
+						"physical": 2,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 0
+				},
+				"type": "apparel_mod"
+			},
 			"current": 0,
+			"fGvLq6Ku80a5cTSg": {
+				"_id": "fGvLq6Ku80a5cTSg",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "zV91jOW1G58krnbG",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Ballistic Weave Mk IV",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "clothing",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 50,
+					"description": "<p><span class=\"fontstyle0\">Ballistic polymer weave is an armor mod which improves the defensive abilities of some clothing items. A layer of this tough artificial fabric can be used as a lining in a variety of garments, giving them a limited ability to resist impacts, bullets, and energy blasts.</span></p>\n<p><span class=\"fontstyle0\">Knowledge of this recipe is possessed only by a few, and they share these secrets only occasionally. All ballistic weave mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "lining",
+					"perks": "Armorer 3",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 5,
+						"physical": 5,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 0
+				},
+				"type": "apparel_mod"
+			},
+			"installedMods": "",
+			"kRuMVjqK0tr5aZDY": {
+				"_id": "kRuMVjqK0tr5aZDY",
+				"_stats": {
+					"compendiumSource": null,
+					"coreVersion": "12.331",
+					"createdTime": null,
+					"duplicateSource": null,
+					"lastModifiedBy": null,
+					"modifiedTime": null,
+					"systemId": null,
+					"systemVersion": null
+				},
+				"effects": [
+				],
+				"flags": {
+				},
+				"folder": "zV91jOW1G58krnbG",
+				"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+				"name": "Ballistic Weave Mk III",
+				"ownership": {
+					"default": 0
+				},
+				"sort": 0,
+				"system": {
+					"apparelType": "clothing",
+					"attachable": true,
+					"attached": false,
+					"canBeScrapped": true,
+					"cost": 40,
+					"description": "<p><span class=\"fontstyle0\">Ballistic polymer weave is an armor mod which improves the defensive abilities of some clothing items. A layer of this tough artificial fabric can be used as a lining in a variety of garments, giving them a limited ability to resist impacts, bullets, and energy blasts.</span></p>\n<p><span class=\"fontstyle0\">Knowledge of this recipe is possessed only by a few, and they share these secrets only occasionally. All ballistic weave mods are&nbsp;</span><span class=\"fontstyle2\">installed with the Repair skill</span><span class=\"fontstyle0\">.</span></p>",
+					"effect": "",
+					"favorite": false,
+					"health": {
+						"value": 0
+					},
+					"isJunk": false,
+					"location": "",
+					"modType": "lining",
+					"perks": "Armorer 2",
+					"quantity": 1,
+					"rarity": "common",
+					"resistance": {
+						"energy": 4,
+						"physical": 4,
+						"radiation": 0
+					},
+					"shadowed": false,
+					"source": "core_rulebook",
+					"stashed": false,
+					"summary": "",
+					"weight": 0
+				},
+				"type": "apparel_mod"
+			},
 			"list": "",
-			"max": 0
+			"max": 0,
+			"modded": false
 		},
 		"powerArmor": {
 			"frameId": "",
@@ -46,6 +264,7 @@
 			"physical": 1,
 			"radiation": 2
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 4

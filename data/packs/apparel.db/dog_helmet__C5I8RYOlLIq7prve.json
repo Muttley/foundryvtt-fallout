@@ -31,8 +31,10 @@
 		},
 		"mods": {
 			"current": 0,
+			"installedMods": "",
 			"list": "",
-			"max": 0
+			"max": 0,
+			"modded": false
 		},
 		"powerArmor": {
 			"frameId": "",
@@ -46,6 +48,7 @@
 			"physical": 2,
 			"radiation": 0
 		},
+		"shadowed": false,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weight": 1

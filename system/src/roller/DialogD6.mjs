@@ -18,7 +18,18 @@ export class DialogD6 extends Dialog {
 		// })
 
 		html.on("click", ".roll", async event => {
-			let diceNum = html.find(".d-number")[0].value;
+			let extraDiceNum = html.find(".xd-number")[0]?.value ?? "0";
+			let fireRate = html.find(".fr-number")[0]?.value;
+			let diceNum = html.find(".d-number")[0]?.value;
+
+			if (!diceNum) {
+				diceNum = this.diceNum;
+			}
+
+			if (fireRate && fireRate !== "0") {
+				diceNum += parseInt(fireRate);
+			}
+
 			let additionalAmmo = 0;
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
@@ -29,14 +40,16 @@ export class DialogD6 extends Dialog {
 
 					additionalAmmo = await this.checkAmmo(diceNum, initDmg);
 
-					if (additionalAmmo < 0) return;
+					if (additionalAmmo < 0) {
+						return;
+					}
 				}
 			}
 
 			if (!this.falloutRoll) {
 				fallout.Roller2D20.rollD6({
 					rollname: this.rollName,
-					dicenum: parseInt(diceNum),
+					dicenum: parseInt(diceNum) + parseInt(extraDiceNum),
 					weapon: this.weapon,
 					actor: this.actor,
 				});
@@ -44,7 +57,7 @@ export class DialogD6 extends Dialog {
 			else {
 				fallout.Roller2D20.addD6({
 					rollname: this.rollName,
-					dicenum: parseInt(diceNum),
+					dicenum: parseInt(diceNum) + parseInt(extraDiceNum),
 					weapon: this.weapon,
 					actor: this.actor,
 					falloutRoll: this.falloutRoll,
@@ -53,7 +66,9 @@ export class DialogD6 extends Dialog {
 
 			// REDUCE AMMO FOR CHARACTER AND ROBOT
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				if (!this.actor) return;
+				if (!this.actor) {
+					return;
+				}
 
 				let _actor;
 				if (this.actor.startsWith("Actor")) {
@@ -89,12 +104,19 @@ export class DialogD6 extends Dialog {
 		dialogData.weapon = weapon;
 		dialogData.actor = actor;
 
-		const html = `<div class="flexrow fallout-dialog">
+		let html;
+		let dialogWidth = 300;
+		if (weapon && !falloutRoll) {
+			html = await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
+			dialogWidth = 465;
+		}
+		else {
+			html = `<div class="flexrow fallout-dialog">
 		<div class="flexrow resource" style="padding:5px">
 		<label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="${diceNum}">
 		</div>
 		</div>`;
-
+		}
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, {
 			title: rollName,
 			content: html,
@@ -105,18 +127,26 @@ export class DialogD6 extends Dialog {
 				},
 			},
 			close: () => { },
-		});
+		}, {width: dialogWidth});
 		d.render(true);
 	}
 
 	async checkAmmo(diceNum, initDmg) {
-		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
+		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) {
+			return 0;
+		}
 
-		if (!this.actor) return 0;
+		if (!this.actor) {
+			return 0;
+		}
 
-		if (!this.weapon) return 0;
+		if (!this.weapon) {
+			return 0;
+		}
 
-		if (this.weapon.system.ammo === "") return 0;
+		if (this.weapon.system.ammo === "") {
+			return 0;
+		}
 
 		// Check if there is ammo at all
 		let _actor;
@@ -127,9 +157,13 @@ export class DialogD6 extends Dialog {
 			_actor = fromUuidSync(this.actor).actor;
 		}
 
-		if (!_actor) return 0;
+		if (!_actor) {
+			return 0;
+		}
 
-		if (_actor.type !== "character" && _actor.type !== "robot" && _actor.type !== "vehicle") return 0;
+		if (_actor.type !== "character" && _actor.type !== "robot" && _actor.type !== "vehicle") {
+			return 0;
+		}
 
 		const [ammoItems, shotsAvailable] =
 			_actor._getAvailableAmmoType(

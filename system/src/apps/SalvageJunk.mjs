@@ -73,7 +73,9 @@ export default class SalvageJunk extends FormApplication {
 
 		this.junkedItems = 0;
 		for (const junkItem of junkItems) {
-			if (this.junkedItems >= this.junkToProcess) break;
+			if (this.junkedItems >= this.junkToProcess) {
+				break;
+			}
 
 			this.junkedItems++;
 

@@ -1,7 +1,21 @@
 <div class="fallout-chat-message">
 	<div class="content">
-		<h2>{{title}}</h2>
-		<p>{{body}}</p>
+		<h2>
+			{{title}}
+		</h2>
+
+		<p>
+			{{body}}
+		</p>
+
+		{{{effect}}}
+
+		{{#if gainedCap}}
+			<p>
+				{{localize "FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap"}}
+			</p>
+		{{/if}}
+
 		{{#if showHungerAndThirst}}
 			<div style="font-size: 0.75rem;">
 				<div>

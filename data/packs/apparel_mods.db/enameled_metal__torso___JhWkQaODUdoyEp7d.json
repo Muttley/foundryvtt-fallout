@@ -1,0 +1,39 @@
+{
+	"_id": "JhWkQaODUdoyEp7d",
+	"_key": "!items!JhWkQaODUdoyEp7d",
+	"effects": [
+	],
+	"folder": "3PYKStGfDNV2sWN9",
+	"img": "systems/fallout/assets/icons/items/apparel_mod.svg",
+	"name": "Enameled Metal (Torso)",
+	"system": {
+		"apparelType": "armor",
+		"attachable": true,
+		"attached": false,
+		"canBeScrapped": true,
+		"cost": 40,
+		"description": "",
+		"effect": "",
+		"favorite": false,
+		"health": {
+			"value": 0
+		},
+		"isJunk": false,
+		"location": "Torso",
+		"modType": "material",
+		"perks": "Armorer 1",
+		"quantity": 1,
+		"rarity": 0,
+		"resistance": {
+			"energy": 2,
+			"physical": 2,
+			"radiation": 0
+		},
+		"shadowed": false,
+		"source": "core_rulebook",
+		"stashed": false,
+		"summary": "",
+		"weight": 4
+	},
+	"type": "apparel_mod"
+}

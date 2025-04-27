@@ -1,3 +1,16 @@
+@use '../global/typography' as *;
+@use '../utils/colors' as *;
+@use '../utils/variables' as *;
+
+h5 {
+	text-align: center;
+	font-weight: bold;
+	background: #2d3f5e;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin: 0;
+}
+
 .item-form {
 	font-family: $font-primary;
 }
@@ -22,7 +35,7 @@
 	//   flex: 1;
 	// }
 
-	h1{
+	h1 {
 		.charname {
 			height: 50px;
 			padding: 0px;
@@ -35,6 +48,11 @@
 			}
 		}
 	}
+
+	.level-up-label {
+		text-shadow: 0 0 8px var(--color-shadow-primary);
+	}
+
 	.chaty{
 		cursor: pointer;
 		width:1.2rem;

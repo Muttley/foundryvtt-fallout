@@ -21,6 +21,7 @@
 		"hp": 6,
 		"irradiated": true,
 		"prepared": false,
+		"providesCap": false,
 		"quantity": 1,
 		"radiation": 0,
 		"radiationDamage": 2,
