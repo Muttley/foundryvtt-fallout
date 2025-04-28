@@ -1,6 +1,17 @@
 # v11.15.2
 
 #### Bugs
+- [#618] Some Apparel items won't open
+- [#621] Some Weapon Mods polluted with bad damageEffect data
+
+#### Chores
+- [#619] Merge new French updates from Crowdin
+
+---
+
+# v11.15.2
+
+#### Bugs
 - [#616] Badge image URL broken (the revenge)
 
 ---
