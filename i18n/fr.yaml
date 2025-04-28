@@ -167,7 +167,7 @@ FALLOUT.CHAT_MESSAGE.radiation_from_consumable.title: Dégât de radiation
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water_resisted.body: "{actorName} a résisté aux dégâts de radiations de {baseRadDamage} en consommant Eau Sale"
 FALLOUT.CHAT_MESSAGE.radiation_from_dirty_water.body: "{actorName} subit {radsTaken} dégâts de radiations en consommant Eau Sale"
 FALLOUT.CHAT_MESSAGE.readMagazine.body: "{actorName} lit un magazine intitulé \"{itemName}\""
-FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: The Comprehension roll was successful, so this magazine's benefit can be used an additional time by rereading the magazine
+FALLOUT.CHAT_MESSAGE.readMagazine.comprehension: Le lancer de compréhension a été un succès, donc les bénéfices du magazine peuvent être utilisés une fois supplémentaire en relisant ce magazine
 FALLOUT.CHAT_MESSAGE.readMagazine.title: Magazine lu
 FALLOUT.CHAT_MESSAGE.SalvageJunk.Scrapper: Recycleur
 FALLOUT.CHAT_MESSAGE.scavenging.body: "{location} a été nettoyé, prenant {time}"
@@ -185,10 +185,10 @@ FALLOUT.dialog.roll_quantity.button.chat: Envoyer dans le chat
 FALLOUT.dialog.roll_quantity.button.create: Créer un nouveau
 FALLOUT.dialog.roll_quantity.button.update: Objet mis à jour
 FALLOUT.dialog.roll_quantity.chat.body: "{itemName} x {quantity}"
-FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll result as a chat message.
-FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
-FALLOUT.dialog.roll_quantity.title: Roll Quantity
-FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
+FALLOUT.dialog.roll_quantity.chat.details: Cela affichera le lancer de quantité sous forme de message dans le chat.
+FALLOUT.dialog.roll_quantity.create.details: Cela va créer un nouvel objet avec la quantité lancée. Si l'objet que vous lancez appartient à un joueur, le nouvel objet sera créer dans l'inventaire du joueur.
+FALLOUT.dialog.roll_quantity.title: Lancer de quantité
+FALLOUT.dialog.roll_quantity.update.details: Cela va mettre à jour cet objet avec une quantité nouvellement lancée.
 FALLOUT.EFFECT.StatusBleeding: Hémorragie
 FALLOUT.EFFECT.StatusBlind: Aveugle
 FALLOUT.EFFECT.StatusBurning: Enflammé
@@ -676,7 +676,7 @@ FALLOUT.UI.MISCELLANY: Bric-A-Brac
 FALLOUT.UI.Modify: Modifier
 FALLOUT.UI.Name: Nom
 FALLOUT.UI.OTHER: Autre
-FALLOUT.UI.Override: Override
+FALLOUT.UI.Override: Forcer
 FALLOUT.UI.Perks: Aptitudes
 FALLOUT.UI.PreWarMoneyRoll: Lancer d'argent d'avant-guerre
 FALLOUT.UI.Qty: Qttés
@@ -689,7 +689,7 @@ FALLOUT.UI.Special_Abilities: Capacités spéciales
 FALLOUT.UI.SPECIAL_ABILITY: Capacités spéciales
 FALLOUT.UI.speed: Vitesse
 FALLOUT.UI.stashed: Caché
-FALLOUT.UI.summary: Summary
+FALLOUT.UI.summary: Résumé
 FALLOUT.UI.Type: Type
 FALLOUT.UI.UNSORTED: Non trié
 FALLOUT.UI.WEAPON_MODS: Mods Armes
