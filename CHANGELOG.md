@@ -4,6 +4,7 @@
 - [#618] Some Apparel items won't open
 - [#621] Some Weapon Mods polluted with bad damageEffect data
 - [#623] Modded Weapons and Apparel do not correctly have their modifiable attributes disabled when mods are enabled
+- [#627] Shadowed checkbox missing from Apparel item sheet
 
 #### Enhancements
 - [#625] Apparel with shadowed effect applied either directly of via mods should reflect that in the character inventory screen
