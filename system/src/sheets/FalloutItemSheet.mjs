@@ -665,7 +665,7 @@ export default class FalloutItemSheet extends ItemSheet {
 		let modsByType = {};
 
 		for (let mod in item.system.mods) {
-			if (item.system.mods[mod].system?.modType in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
+			if (item.system.mods[mod]?.system?.modType in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
 				if (!(item.system.mods[mod].system?.modType in modsByType)) {
 					modsByType[item.system.mods[mod].system?.modType] = [];
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
