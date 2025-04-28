@@ -4,20 +4,24 @@
 			{{localize "FALLOUT.TEMPLATES.Armor_Type"}}
 			&nbsp;
 		</label>
-		<select name="system.apparelType"
-				{{#if modded}}
-				disable
+		<select
+			name="system.apparelType"
+			{{#if modded}}
+				disabled
 				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
-				{{/if}}>
+			{{/if}}>
 			{{#select system.apparelType}}
-			{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
-			<option class="capitalized flo-option" value="{{key}}">{{localize apparelType}}</option>
-			{{/each}}
+				{{#each FALLOUT.APPAREL_TYPES as |apparelType key |}}
+					<option
+						class="capitalized flo-option"
+						value="{{key}}"
+					>
+						{{localize apparelType}}
+					</option>
+				{{/each}}
 			{{/select}}
 		</select>
 	</div>
-
-	<hr />
 
 	<div class="grid-3-columns">
 
@@ -30,15 +34,17 @@
 				<label class="field-label">
 					{{localize (concat 'FALLOUT.BODYLOCATION.character.' key)}}
 				</label>
-				<input class="input-checkbox"
-					   data-dtype="Boolean"
-					   name="system.location.{{key}}"
-					   type="checkbox"
-					   {{#if modded}}
-					   disable
-					   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
-					   {{/if}}
-					   {{checked isChecked}} />
+				<input
+					class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.location.{{key}}"
+					type="checkbox"
+					{{#if modded}}
+						disabled
+						data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+					{{/if}}
+					{{checked isChecked}}
+				/>
 			</div>
 			{{/each}}
 		</div>
@@ -48,21 +54,22 @@
 				{{localize "FALLOUT.TEMPLATES.Resistances"}}
 			</h4>
 			{{#each system.resistance as |resistance key|}}
-			<div class="flexrow resource-row align-mid">
-				<label class="field-label"
-					   for="system.resistance.{{key}}">
-					{{localize (concat 'FALLOUT.RESISTANCE.'key)}}
-				</label>
-				<input class="num-short-2"
-					   data-dtype="Number"
-					   name="system.resistance.{{key}}"
-					   type="number"
-					   value="{{resistance}}"
-					   {{#if modded}}
-					   disable
-					   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
-					   {{/if}} />
-			</div>
+				<div class="flexrow resource-row align-mid">
+					<label class="field-label"
+						for="system.resistance.{{key}}">
+						{{localize (concat 'FALLOUT.RESISTANCE.'key)}}
+					</label>
+					<input
+						class="num-short-2"
+						data-dtype="Number"
+						name="system.resistance.{{key}}"
+						type="number"
+						value="{{resistance}}"
+						{{#if modded}}
+							disabled
+							data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+						{{/if}} />
+				</div>
 			{{/each}}
 		</div>
 
@@ -73,17 +80,30 @@
 
 			<div class="flexrow resource-row align-mid">
 				<label class="field-label">
+					{{localize "FALLOUT.APPAREL_MOD.shadowed"}}
+				</label>
+				<input class="input-checkbox"
+					data-dtype="Boolean"
+					name="system.shadowed"
+					type="checkbox"
+					{{checked system.shadowed}}
+					{{#if modded}}
+						disabled
+						data-tooltip="{{localize FALLOUT.Item.Warnings.Modded}}"
+					{{/if}}
+				/>
+			</div>
+
+			<div class="flexrow resource-row align-mid">
+				<label class="field-label">
 					{{localize "FALLOUT.equipped"}}
 				</label>
 				<input class="input-checkbox"
-					   data-dtype="Boolean"
-					   name="system.equipped"
-					   type="checkbox"
-					   {{checked system.equipped}}
-					   {{#if modded}}
-					   disable
-					   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
-					   {{/if}} />
+					data-dtype="Boolean"
+					name="system.equipped"
+					type="checkbox"
+					{{checked system.equipped}}
+				/>
 			</div>
 
 			<div class="flexrow resource-row align-mid">
@@ -91,19 +111,16 @@
 					{{localize "FALLOUT.actor.inventory.materials.junk"}}
 				</label>
 				<input class="input-checkbox"
-					   data-dtype="Boolean"
-					   name="system.isJunk"
-					   type="checkbox"
-					   {{checked system.isJunk}}
-					   {{#if modded}}
-					   disable
-					   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
-					   {{/if}} />
+					data-dtype="Boolean"
+					name="system.isJunk"
+					type="checkbox"
+					{{checked system.isJunk}}
+				/>
 			</div>
 
 			{{#ifCond system.apparelType '===' 'powerArmor'}}
-			<br>
-			{{> item/apparel/_partials/power-armor}}
+				<br>
+				{{> item/apparel/_partials/power-armor}}
 			{{/ifCond}}
 		</div>
 	</div>
