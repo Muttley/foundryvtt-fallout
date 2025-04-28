@@ -3,9 +3,14 @@
 #### Bugs
 - [#618] Some Apparel items won't open
 - [#621] Some Weapon Mods polluted with bad damageEffect data
+- [#623] Modded Weapons and Apparel do not correctly have their modifiable attributes disabled when mods are enabled
+
+#### Enhancements
+- [#625] Apparel with shadowed effect applied either directly of via mods should reflect that in the character inventory screen
 
 #### Chores
 - [#619] Merge new French updates from Crowdin
+- [#624] Spaces incorrectly used for indentation in some places in Handlebars templates
 
 ---
 
