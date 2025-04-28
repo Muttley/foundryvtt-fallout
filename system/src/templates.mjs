@@ -104,7 +104,6 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/item/_shared-partials/description-tab.hbs",
 		"systems/fallout/templates/item/_shared-partials/effects-tab.hbs",
 		"systems/fallout/templates/item/_shared-partials/header.hbs",
-		"systems/fallout/templates/item/_shared-partials/mods-tab.hbs",
 		"systems/fallout/templates/item/_shared-partials/source.hbs",
 		"systems/fallout/templates/item/addiction/attributes-tab.hbs",
 		"systems/fallout/templates/item/ammo/attributes-tab.hbs",

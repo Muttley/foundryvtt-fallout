@@ -11,6 +11,7 @@
 #### Chores
 - [#619] Merge new French updates from Crowdin
 - [#624] Spaces incorrectly used for indentation in some places in Handlebars templates
+- [#626] Remove dead template code that's no longer needed
 
 ---
 
