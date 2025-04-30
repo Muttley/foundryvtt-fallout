@@ -1,4 +1,4 @@
-# v11.15.2
+# v11.15.3
 
 #### Bugs
 - [#618] Some Apparel items won't open
