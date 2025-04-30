@@ -7,12 +7,13 @@
 - [#627] Shadowed checkbox missing from Apparel item sheet
 
 #### Enhancements
-- [#625] Apparel with shadowed effect applied either directly of via mods should reflect that in the character inventory screen
+- [#625] Apparel with shadowed effect applied either directly or via mods should reflect that in the character inventory screen
 
 #### Chores
 - [#619] Merge new French updates from Crowdin
 - [#624] Spaces incorrectly used for indentation in some places in Handlebars templates
 - [#626] Remove dead template code that's no longer needed
+- [#631] "NPC Pack #4 - Mariposa Military Base" missing from source list
 
 ---
 
