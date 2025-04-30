@@ -7,11 +7,15 @@
 	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": "Nuke Mine",
 	"system": {
+		"charges": {
+			"current": 1,
+			"max": 1
+		},
 		"cost": 100,
 		"description": "<p><span class=\"fontstyle0\">It is a nuclear variant of a landmine. The Nuke mine operates in all respects as other mines do although its explosion is more akin to that of a mini-nuke. Naturally, this means that they inflict damage from both the explosion and from the radiation the blast emits.</span></p>",
 		"effect": "",
 		"favorite": false,
-		"multishot": false,
+		"fusionCore": false,
 		"quantity": 1,
 		"quantityRoll": "1",
 		"rarity": 4,

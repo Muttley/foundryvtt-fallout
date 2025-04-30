@@ -1842,33 +1842,42 @@ export default class FalloutActor extends Actor {
 				break;
 			}
 
-			const current = ammoItem.system.shots.current;
+			const currentShots = ammoItem.system.shots.current;
+			const currentCharges = ammoItem.system.charges.current;
 			const quantity = ammoItem.system.quantity;
 
 			const max = ammoItem.system.shots.max > 0
 				? ammoItem.system.shots.max
 				: 1;
 
-			const quantityShots = ((quantity - 1) * max) + current;
+			const shotsAvailable = ((quantity - 1) * max) + currentShots;
 
-			let newCurrent = current;
+			let newCurrentShots = currentShots;
+			let newCurrentCharges = currentCharges;
 			let newQuantity = ammoItem.system.quantity;
 
-			if (roundsToUse >= quantityShots) {
-				roundsToUse -= quantityShots;
+			if (roundsToUse >= shotsAvailable) {
+				roundsToUse -= shotsAvailable;
 
 				this.deleteEmbeddedDocuments("Item", [ammoItem._id]);
 				continue;
 			}
 			else {
-				newCurrent -= roundsToUse;
+				newCurrentShots -= roundsToUse;
 
-				if (newCurrent <= 0) {
-					const overflow = Math.abs(newCurrent);
+				if (newCurrentShots <= 0) {
+					const overflow = Math.abs(newCurrentShots);
 					const usedQuantity = Math.floor(overflow / max) + 1;
 
 					newQuantity -= usedQuantity;
-					newCurrent = max - (overflow % max);
+					newCurrentShots = max - (overflow % max);
+
+					if (ammoItem.system.fusionCore) {
+						newCurrentCharges = Math.min(
+							ammoItem.system.charges.max,
+							Math.ceil(newCurrentShots / 50)
+						);
+					}
 				}
 
 				roundsToUse = 0;
@@ -1876,7 +1885,8 @@ export default class FalloutActor extends Actor {
 
 			await this.updateEmbeddedDocuments("Item", [{
 				"_id": ammoItem._id,
-				"system.shots.current": newCurrent,
+				"system.charges.current": newCurrentCharges,
+				"system.shots.current": newCurrentShots,
 				"system.quantity": newQuantity,
 			}]);
 		}

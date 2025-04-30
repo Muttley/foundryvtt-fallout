@@ -388,6 +388,7 @@ FALLOUT.SOURCE_TITLE.gm_toolkit: "Werkzeuge der Spielleiterin"
 FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
 FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
+FALLOUT.SOURCE_TITLE.mariposa_military_base: "NPC Pack #4 - Mariposa Military Base"
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
 FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
@@ -403,7 +404,10 @@ FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Alcoholic: Alkoholisch
 FALLOUT.TEMPLATES.AllLocations: Alle Standorte
 FALLOUT.TEMPLATES.AMMO: MUNI
+FALLOUT.TEMPLATES.Ammo.ChargesRemaining: Charges Remaining
 FALLOUT.TEMPLATES.Ammo.Current: Verbleibende Schüsse
+FALLOUT.TEMPLATES.Ammo.FusionCore: Fusion Core
+FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip: Fusion Cores provide 50 shots per charge
 FALLOUT.TEMPLATES.Ammo.Max: Schüsse je Item
 FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Anzahl Würfeln

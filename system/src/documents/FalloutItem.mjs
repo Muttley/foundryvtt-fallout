@@ -24,9 +24,11 @@ export default class FalloutItem extends Item {
 		return damageDice;
 	}
 
+
 	get isOwnedByCreature() {
 		return this.isOwned && this.actor.type === "creature";
 	}
+
 
 	get isWeaponBroken() {
 		if (this.type !== "weapon") {
@@ -116,6 +118,16 @@ export default class FalloutItem extends Item {
 		return rollData;
 	}
 
+
+	hasWeaponQuality(quality) {
+		if (this.type !== "weapon") {
+			return false;
+		}
+
+		return this.system.damage.weaponQuality[quality].value > 0;
+	}
+
+
 	/**
 	 * Augment the basic Item data model with additional dynamic data.
 	 */
@@ -125,6 +137,9 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 
 		switch (this.type) {
+			case "ammo":
+				this._prepareAmmoData();
+				break;
 			case "consumable":
 				this._prepareConsumableData();
 				break;
@@ -276,6 +291,25 @@ export default class FalloutItem extends Item {
 		}
 		return source;
 	}
+
+	_prepareAmmoData() {
+		if (this.system.fusionCore) {
+			// Fusion Cores provide 50 shots per charge
+			this.system.shots.max = this.system.charges.max * 50;
+
+			this.system.shots.current = Math.min(
+				this.system.shots.max,
+				this.system.shots.current
+			);
+
+			this.system.charges.current = Math.min(
+				this.system.charges.max,
+				this.system.charges.current,
+				Math.ceil(this.system.shots.current / 50)
+			);
+		}
+	}
+
 
 	_prepareConsumableData() {
 		this.system.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[

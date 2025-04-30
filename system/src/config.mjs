@@ -339,6 +339,7 @@ FALLOUT.OFFICIAL_SOURCES = {
 	hollywood_heroes: "FALLOUT.SOURCE_TITLE.hollywood_heroes",
 	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
 	map_pack_wasteland_locales: "FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales",
+	mariposa_military_base: "FALLOUT.SOURCE_TITLE.mariposa_military_base",
 	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
 	reillys_rangers: "FALLOUT.SOURCE_TITLE.reillys_rangers",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
