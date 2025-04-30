@@ -25,6 +25,13 @@
 					&nbsp;
 				{{/if}}
 				{{item.name}}
+				{{#if item.system.shadowed}}
+					&nbsp;
+					<i
+						class="fa-solid fa-eye-slash"
+						data-tooltip="{{localize 'FALLOUT.TOOLTIPS.Apparel.shadowed'}}"
+					></i>
+				{{/if}}
 			</h4>
 		</div>
 		<div class="flexrow flexlarge item-info align-mid">

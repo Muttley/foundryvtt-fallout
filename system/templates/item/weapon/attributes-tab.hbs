@@ -2,9 +2,7 @@
 
 	{{#if isGM}}
 		<div class="flexrow resource-row">
-			<label class="field-label"
-				for="system.quantityRoll"
-			>
+			<label class="field-label" for="system.quantityRoll">
 				{{localize "FALLOUT.TEMPLATES.Ammo.QuantityRoll"}}
 				<a class="quantity-roll">
 					<i class="fa-solid fa-dice"></i>
@@ -33,9 +31,7 @@
 	</div>
 
 	<div class="resource-row flexrow">
-
-		<label class="field-label"
-			   for="system.attribute">
+		<label class="field-label" for="system.attribute">
 			{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}
 		</label>
 		<select name="system.creatureAttribute">
@@ -45,9 +41,9 @@
 			}}
 		</select>
 	</div>
+
 	<div class="resource-row flexrow">
-		<label class="field-label"
-			   for="system.skill">
+		<label class="field-label" for="system.skill">
 			{{localize "FALLOUT.TEMPLATES.Creature_Skill"}}
 		</label>
 		<select name="system.creatureSkill">
@@ -57,7 +53,6 @@
 			}}
 		</select>
 	</div>
-
 
 	{{#ifCond system.weaponType "===" "custom"}}
 		<div class="resource-row flexrow">
@@ -71,9 +66,9 @@
 				}}
 			</select>
 		</div>
+
 		<div class="resource-row flexrow">
-			<label class="field-label"
-				for="system.skill">
+			<label class="field-label" for="system.skill">
 				{{localize "FALLOUT.TEMPLATES.CustomSkill"}}
 			</label>
 			<select name="system.skill">
@@ -93,7 +88,7 @@
 			type="number"
 			value="{{system.damage.rating}}"
 			{{#if modded}}
-				disable
+				disabled
 				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
 			{{/if}}
 		>
@@ -107,15 +102,15 @@
 			{{#each damageTypes}}
 			<div class="flexrow toggle-label {{#if this.active}}active{{/if}}">
 				<label class="font-size-13">
-					<input type="checkbox"
-						   name="system.damage.damageType.{{this.key}}"
-						   {{#if this.active}}
-						   checked
-						   {{/if}}
-						   {{#if modded}}
-						   disable
-						   data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
-						   {{/if}}>
+					<input
+						name="system.damage.damageType.{{this.key}}"
+						type="checkbox"
+						{{checked this.active}}
+						{{#if modded}}
+							disabled
+							data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+						{{/if}}
+					/>
 					{{this.label}}
 					<i class="fo-{{key}}"></i>
 				</label>
@@ -131,7 +126,7 @@
 		<select
 			name="system.range"
 			{{#if modded}}
-				disable
+				disabled
 				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
 			{{/if}}
 		>
@@ -162,13 +157,14 @@
 			name="system.ammo"
 			data-dtype="String"
 			{{#if modded}}
-				disable
+				disabled
 				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
 			{{/if}}
 		>
 			<option value="">&mdash;</option>
 			{{#each ammoTypes}}
-				<option value="{{this}}"
+				<option
+					value="{{this}}"
 					{{#ifCond ../system.ammo "===" this}}
 						selected
 					{{/ifCond}}
@@ -190,7 +186,7 @@
 				name="system.ammoPerShot"
 				value="{{system.ammoPerShot}}"
 				{{#if modded}}
-					disable
+					disabled
 					data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
 				{{/if}}
 			>
@@ -206,7 +202,7 @@
 				name="system.fireRate"
 				value="{{system.fireRate}}"
 				{{#if modded}}
-					disable
+					disabled
 					data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
 				{{/if}}
 			>

@@ -7,11 +7,15 @@
 	"img": "systems/fallout/assets/icons/items/ammo.svg",
 	"name": "Tomahawk",
 	"system": {
+		"charges": {
+			"current": 1,
+			"max": 1
+		},
 		"cost": 15,
 		"description": "<p>A small, short-handled axe, akin to a small hatchet. Less subtle than a throwing knife, a hurled tomahawk can certainly make an impression in an enemy.</p>",
 		"effect": "",
 		"favorite": false,
-		"multishot": false,
+		"fusionCore": false,
 		"quantity": 1,
 		"quantityRoll": "1",
 		"rarity": 2,

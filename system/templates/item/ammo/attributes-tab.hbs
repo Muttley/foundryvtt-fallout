@@ -1,48 +1,84 @@
 <div class="attributes tab" data-group="primary" data-tab="attributes">
 
 	<div class="flexrow resource-row">
-		<label class="field-label" for="system.shots.current">
-			{{localize "FALLOUT.TEMPLATES.Ammo.Multishot"}}
+		<label class="field-label" for="system.fusionCore">
+			{{localize "FALLOUT.TEMPLATES.Ammo.FusionCore"}}
 		</label>
 
 		<input
 			class="input-checkbox"
 			data-dtype="Boolean"
-			name="system.multishot"
+			name="system.fusionCore"
 			type="checkbox"
-			{{checked system.multishot}}
+			{{checked system.fusionCore}}
 		/>
 	</div>
 
-	{{#if system.multishot}}
+	{{#if system.fusionCore}}
 		<div class="flexrow resource-row">
-			<label class="field-label" for="system.shots.current">
-				{{localize "FALLOUT.TEMPLATES.Ammo.Current"}}
+			<label class="field-label">
+				{{localize "FALLOUT.TEMPLATES.Ammo.ChargesRemaining"}}
 			</label>
 
 			<span class="align-right">
-				<label class="field-label" for="system.mods.current">
+				<label class="field-label" for="system.charges.current">
 					{{localize "FALLOUT.TEMPLATES.current"}}
 				</label>
+				&nbsp;
 				<input
-					class="num-short-2"
-					name="system.shots.current"
+					class="num-short-3"
+					name="system.charges.current"
 					type="Number"
-					value="{{system.shots.current}}"
+					value="{{system.charges.current}}"
 				/>
 				&sol;
 				<input
-					class="num-short-2"
-					name="system.shots.max"
+					class="num-short-3"
+					name="system.charges.max"
 					type="Number"
-					value="{{system.shots.max}}"
+					value="{{system.charges.max}}"
 				/>
-				<label class="field-label" for="system.mods.max">
+				&nbsp;
+				<label class="field-label" for="system.charges.max">
 					{{localize "FALLOUT.TEMPLATES.max"}}
 				</label>
 			</span>
 		</div>
 	{{/if}}
+
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.Ammo.Current"}}
+		</label>
+
+		<span class="align-right">
+			<label class="field-label" for="system.shots.current">
+				{{localize "FALLOUT.TEMPLATES.current"}}
+			</label>
+			&nbsp;
+			<input
+				class="num-short-3"
+				name="system.shots.current"
+				type="Number"
+				value="{{system.shots.current}}"
+			/>
+			&sol;
+			<input
+				class="num-short-3"
+				name="system.shots.max"
+				type="Number"
+				value="{{system.shots.max}}"
+				{{#if system.fusionCore}}
+					data-tooltip="{{localize 'FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip'}}"
+					disabled
+				{{/if}}
+			/>
+			&nbsp;
+			<label class="field-label" for="system.shots.max">
+				{{localize "FALLOUT.TEMPLATES.max"}}
+			</label>
+		</span>
+	</div>
 
 	{{#if isGM}}
 		<div class="flexrow resource-row">

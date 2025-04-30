@@ -124,16 +124,6 @@ export default class FalloutItemSheet
 
 		context.allSources = await fallout.compendiums.sources();
 
-		// Enrich Mods Text
-		if (item.system.mods) {
-			foundry.utils.mergeObject(context, {
-				modsListHTML: await TextEditor.enrichHTML(item.system.mods.list, {
-					secrets: item.isOwner,
-					async: true,
-				}),
-			});
-		}
-
 		// Enrich Effect Text
 		if (item.system.effect) {
 			foundry.utils.mergeObject(context, {
@@ -193,7 +183,6 @@ export default class FalloutItemSheet
 
 		context.modsByType = modsByType;
 		context.modded = item.system.mods.modded;
-
 	}
 
 	async getPowerArmorPieceData(context) {
@@ -666,7 +655,7 @@ export default class FalloutItemSheet
 		let modsByType = {};
 
 		for (let mod in item.system.mods) {
-			if (item.system.mods[mod].system?.modType in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
+			if (item.system.mods[mod]?.system?.modType in CONFIG.FALLOUT.APPAREL_MOD_TYPES) {
 				if (!(item.system.mods[mod].system?.modType in modsByType)) {
 					modsByType[item.system.mods[mod].system?.modType] = [];
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
@@ -704,7 +693,7 @@ export default class FalloutItemSheet
 		let modsByType = {};
 
 		for (let mod in item.system.mods) {
-			if (item.system.mods[mod].system?.modType in CONFIG.FALLOUT.WEAPON_MOD_TYPES) {
+			if (item.system.mods[mod]?.system?.modType in CONFIG.FALLOUT.WEAPON_MOD_TYPES) {
 				if (!(item.system.mods[mod].system?.modType in modsByType)) {
 					modsByType[item.system.mods[mod].system?.modType] = [];
 					modsByType[item.system.mods[mod].system?.modType].installed = false;
@@ -847,7 +836,8 @@ export default class FalloutItemSheet
 				}
 			}
 		}
-		this.item.update(updateData);
+
+		await this.item.update(updateData);
 	}
 
 	async _onToggleWeaponMod(event) {
@@ -939,14 +929,16 @@ export default class FalloutItemSheet
 
 
 		// Damage type
-		if (mod.system.modEffects.damage.damageType.energy
-			|| mod.system.modEffects.damage.damageType.physical
-			|| mod.system.modEffects.damage.damageType.poison
-			|| mod.system.modEffects.damage.damageType.radiation
+		const modDamageType = mod.system?.modEffects?.damage?.damageType ?? {};
+
+		if (modDamageType.energy
+			|| modDamageType.physical
+			|| modDamageType.poison
+			|| modDamageType.radiation
 		) {
 			if (installed) {
 				updateData["system.damage.originalDamageType"] = this.item.system.damage.damageType;
-				updateData["system.damage.damageType"] = mod.system.modEffects.damage.damageType;
+				updateData["system.damage.damageType"] = modDamageType;
 			}
 			else {
 				updateData["system.damage.damageType"] = this.item.system.damage.originalDamageType;
@@ -1060,7 +1052,8 @@ export default class FalloutItemSheet
 				}
 			}
 		}
-		this.item.update(updateData);
+
+		await this.item.update(updateData);
 	}
 
 	_updateRange(currentRange, step) {
@@ -1324,6 +1317,38 @@ export default class FalloutItemSheet
 		}
 
 		switch (this.item.type) {
+			case "ammo": {
+				if (!this.item.system.fusionCore) {
+					super._onSubmit(event);
+				}
+
+				const updateData = this._getSubmitData();
+
+				const sourceCharges = this.item.system.charges;
+
+				updateData["system.shots.max"] =
+					updateData["system.charges.max"] * 50;
+
+				const diff = updateData["system.charges.current"] - sourceCharges.current;
+
+				if (diff !== 0) {
+					updateData["system.shots.current"] += diff * 50;
+				}
+
+				updateData["system.charges.current"] = Math.ceil(
+					updateData["system.shots.current"] / 50
+				);
+
+				updateData["system.shots.current"] = Math.min(
+					updateData["system.shots.current"],
+					updateData["system.charges.current"] * 50,
+					updateData["system.charges.max"] * 50
+				);
+
+				this.item.update(updateData);
+
+				break;
+			}
 			case "origin": {
 				const updateData = this._getSubmitData();
 
@@ -1332,6 +1357,7 @@ export default class FalloutItemSheet
 				delete updateData["system.traits"];
 
 				this.item.update(updateData);
+
 				break;
 			}
 			case "perk": {
