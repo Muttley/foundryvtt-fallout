@@ -1316,6 +1316,38 @@ export default class FalloutItemSheet extends ItemSheet {
 		}
 
 		switch (this.item.type) {
+			case "ammo": {
+				if (!this.item.system.fusionCore) {
+					super._onSubmit(event);
+				}
+
+				const updateData = this._getSubmitData();
+
+				const sourceCharges = this.item.system.charges;
+
+				updateData["system.shots.max"] =
+					updateData["system.charges.max"] * 50;
+
+				const diff = updateData["system.charges.current"] - sourceCharges.current;
+
+				if (diff !== 0) {
+					updateData["system.shots.current"] += diff * 50;
+				}
+
+				updateData["system.charges.current"] = Math.ceil(
+					updateData["system.shots.current"] / 50
+				);
+
+				updateData["system.shots.current"] = Math.min(
+					updateData["system.shots.current"],
+					updateData["system.charges.current"] * 50,
+					updateData["system.charges.max"] * 50
+				);
+
+				this.item.update(updateData);
+
+				break;
+			}
 			case "origin": {
 				const updateData = this._getSubmitData();
 
@@ -1324,6 +1356,7 @@ export default class FalloutItemSheet extends ItemSheet {
 				delete updateData["system.traits"];
 
 				this.item.update(updateData);
+
 				break;
 			}
 			case "perk": {

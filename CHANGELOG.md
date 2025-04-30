@@ -3,11 +3,13 @@
 #### Bugs
 - [#618] Some Apparel items won't open
 - [#621] Some Weapon Mods polluted with bad damageEffect data
+- [#622] Gatling weapons don't roll extra Combat Dice per used Fire Rate or expend the correct amount of ammo
 - [#623] Modded Weapons and Apparel do not correctly have their modifiable attributes disabled when mods are enabled
 - [#627] Shadowed checkbox missing from Apparel item sheet
 
 #### Enhancements
 - [#625] Apparel with shadowed effect applied either directly or via mods should reflect that in the character inventory screen
+- [#629] Better support for Fusion Cores being used as ammo for Gatling Laser
 
 #### Chores
 - [#619] Merge new French updates from Crowdin
