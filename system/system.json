@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout: The Roleplaying Game",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "11.15.3",
+	"version": "11.15.4",
 	"compatibility": {
 		"maximum": "12",
 		"minimum": "12",

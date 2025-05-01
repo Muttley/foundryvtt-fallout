@@ -1,3 +1,10 @@
+# v11.15.4
+
+#### Bugs
+- [#635] Issue setting shot count for non-Fusion Core ammo
+
+---
+
 # v11.15.3
 
 #### Bugs

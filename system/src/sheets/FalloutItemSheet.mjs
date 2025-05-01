@@ -1317,32 +1317,38 @@ export default class FalloutItemSheet extends ItemSheet {
 
 		switch (this.item.type) {
 			case "ammo": {
-				if (!this.item.system.fusionCore) {
-					super._onSubmit(event);
-				}
-
 				const updateData = this._getSubmitData();
 
-				const sourceCharges = this.item.system.charges;
+				if (this.item.system.fusionCore) {
+					const sourceCharges = this.item.system.charges;
 
-				updateData["system.shots.max"] =
-					updateData["system.charges.max"] * 50;
+					updateData["system.shots.max"] =
+						updateData["system.charges.max"] * 50;
 
-				const diff = updateData["system.charges.current"] - sourceCharges.current;
+					const diff = updateData["system.charges.current"] - sourceCharges.current;
 
-				if (diff !== 0) {
-					updateData["system.shots.current"] += diff * 50;
+					if (diff !== 0) {
+						updateData["system.shots.current"] += diff * 50;
+					}
+
+					updateData["system.charges.current"] = Math.ceil(
+						updateData["system.shots.current"] / 50
+					);
+
+					updateData["system.shots.current"] = Math.min(
+						updateData["system.shots.current"],
+						updateData["system.charges.current"] * 50,
+						updateData["system.charges.max"] * 50
+					);
 				}
-
-				updateData["system.charges.current"] = Math.ceil(
-					updateData["system.shots.current"] / 50
-				);
-
-				updateData["system.shots.current"] = Math.min(
-					updateData["system.shots.current"],
-					updateData["system.charges.current"] * 50,
-					updateData["system.charges.max"] * 50
-				);
+				else {
+					if (!updateData["system.shots.max"]) {
+						updateData["system.shots.max"] = 1;
+					}
+					if (!updateData["system.shots.current"]) {
+						updateData["system.shots.current"] = 1;
+					}
+				}
 
 				this.item.update(updateData);
 
