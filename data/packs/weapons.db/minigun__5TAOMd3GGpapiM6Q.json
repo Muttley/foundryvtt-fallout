@@ -8,7 +8,7 @@
 	"name": "Minigun",
 	"system": {
 		"ammo": "5mm Round",
-		"ammoPerShot": 1,
+		"ammoPerShot": 10,
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
@@ -191,7 +191,7 @@
 		"equippable": true,
 		"equipped": false,
 		"favorite": false,
-		"fireRate": 0,
+		"fireRate": 5,
 		"isJunk": false,
 		"melee": false,
 		"mods": {
@@ -1079,6 +1079,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "medium",
 		"rarity": 2,
 		"skill": "",

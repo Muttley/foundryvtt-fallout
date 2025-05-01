@@ -8,7 +8,7 @@
 	"name": "Gatling Laser",
 	"system": {
 		"ammo": "Fusion Core",
-		"ammoPerShot": 1,
+		"ammoPerShot": 10,
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
@@ -1736,6 +1736,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "medium",
 		"rarity": 3,
 		"skill": "",
