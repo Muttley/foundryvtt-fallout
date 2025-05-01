@@ -184,11 +184,12 @@ export class DialogD6 extends Dialog {
 		const totalDice = parseInt(diceNum);
 		const weaponDmg = parseInt(initDmg);
 
-		let additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
+		let additionalAmmo = Math.max(0, totalDice - weaponDmg)
+			* this.weapon.system.ammoPerShot;
 
 		// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
 		if (this.weapon.hasWeaponQuality("gatling")) {
-			additionalAmmo = Math.floor(additionalAmmo * 0.5) * 10;
+			additionalAmmo = Math.floor(additionalAmmo * 0.5);
 		}
 
 		if (shotsAvailable < additionalAmmo) {

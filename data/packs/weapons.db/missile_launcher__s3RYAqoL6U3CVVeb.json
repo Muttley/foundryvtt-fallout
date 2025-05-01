@@ -8,7 +8,7 @@
 	"name": "Missile Launcher",
 	"system": {
 		"ammo": "Missile",
-		"ammoPerShot": 0,
+		"ammoPerShot": 1,
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
@@ -1736,6 +1736,7 @@
 		},
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "",
 		"range": "long",
 		"rarity": 4,
 		"skill": "",
