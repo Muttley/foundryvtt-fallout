@@ -1,3 +1,9 @@
+# v11.15.5
+
+- [#638] Gatling weapons using too much ammo when rolling additional damage
+
+---
+
 # v11.15.4
 
 #### Bugs
