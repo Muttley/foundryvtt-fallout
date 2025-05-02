@@ -1,5 +1,16 @@
+# v11.15.6
+
+#### Bugs
+- [#645] Location specified for some armor pieces in compendium incorrect
+- [#647] Mod type Cannister missing from types available
+
+#### Chores
+
+---
+
 # v11.15.5
 
+#### Bugs
 - [#638] Gatling weapons using too much ammo when rolling additional damage
 
 ---
