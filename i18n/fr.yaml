@@ -731,11 +731,12 @@ FALLOUT.WEAPON_MOD.summary.rangeDecrease: Réduit la portée d' {range} niveau
 FALLOUT.WEAPON_MOD.summary.rangeIncrease: Augmente la portée d' {range} niveau
 FALLOUT.WEAPON_MOD.summary.remove: Retirer
 FALLOUT.WEAPON_MOD.type.barrel: Canon
-FALLOUT.WEAPON_MOD.type.capacitor: Condensateur
 FALLOUT.WEAPON_MOD.type.cannister: Cannister
+FALLOUT.WEAPON_MOD.type.capacitor: Condensateur
 FALLOUT.WEAPON_MOD.type.concentrate: Concentré
 FALLOUT.WEAPON_MOD.type.container: Contenant
 FALLOUT.WEAPON_MOD.type.dish: Parabole
+FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Carburant
 FALLOUT.WEAPON_MOD.type.grip: Poignée
 FALLOUT.WEAPON_MOD.type.magazine: Chargeur
