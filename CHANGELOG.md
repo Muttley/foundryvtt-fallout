@@ -3,7 +3,8 @@
 #### Bugs
 - [#643] Combat Dice macro fails
 - [#645] Location specified for some armor pieces in compendium incorrect
-- [#647] Mod type Cannister missing from types available
+- [#647] Weapon Mod type Cannister missing from types available
+- [#648] Weapon Mod type Frame missing from types available
 
 ---
 
