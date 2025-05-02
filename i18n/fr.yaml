@@ -404,10 +404,10 @@ FALLOUT.TEMPLATES.AddWeaponQualityEffect: Ajouter une qualité/effet d'arme (cli
 FALLOUT.TEMPLATES.Alcoholic: Alcoolisé
 FALLOUT.TEMPLATES.AllLocations: Toutes les localisations
 FALLOUT.TEMPLATES.AMMO: MUN
-FALLOUT.TEMPLATES.Ammo.ChargesRemaining: Charges Remaining
+FALLOUT.TEMPLATES.Ammo.ChargesRemaining: Charges restantes
 FALLOUT.TEMPLATES.Ammo.Current: Tirs restants
-FALLOUT.TEMPLATES.Ammo.FusionCore: Fusion Core
-FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip: Fusion Cores provide 50 shots per charge
+FALLOUT.TEMPLATES.Ammo.FusionCore: Réacteur à fusion
+FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip: Les Réacteurs à fusion fournissent 50 tirs par charge
 FALLOUT.TEMPLATES.Ammo.Max: Tirs par objet
 FALLOUT.TEMPLATES.Ammo.Multishot: Tir multiple
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Lancer de quantité
@@ -731,11 +731,12 @@ FALLOUT.WEAPON_MOD.summary.rangeDecrease: Réduit la portée d' {range} niveau
 FALLOUT.WEAPON_MOD.summary.rangeIncrease: Augmente la portée d' {range} niveau
 FALLOUT.WEAPON_MOD.summary.remove: Retirer
 FALLOUT.WEAPON_MOD.type.barrel: Canon
+FALLOUT.WEAPON_MOD.type.cannister: Boîte
 FALLOUT.WEAPON_MOD.type.capacitor: Condensateur
-FALLOUT.WEAPON_MOD.type.cannister: Cannister
 FALLOUT.WEAPON_MOD.type.concentrate: Concentré
 FALLOUT.WEAPON_MOD.type.container: Contenant
 FALLOUT.WEAPON_MOD.type.dish: Parabole
+FALLOUT.WEAPON_MOD.type.frame: Cadre
 FALLOUT.WEAPON_MOD.type.fuel: Carburant
 FALLOUT.WEAPON_MOD.type.grip: Poignée
 FALLOUT.WEAPON_MOD.type.magazine: Chargeur
