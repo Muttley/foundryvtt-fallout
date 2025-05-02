@@ -732,6 +732,7 @@ FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remove
 FALLOUT.WEAPON_MOD.type.barrel: Barrel
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
+FALLOUT.WEAPON_MOD.type.cannister: Cannister
 FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
 FALLOUT.WEAPON_MOD.type.container: Container
 FALLOUT.WEAPON_MOD.type.dish: Dish

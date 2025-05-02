@@ -707,6 +707,7 @@ FALLOUT.WEAPON_TYPES = {
 FALLOUT.WEAPON_MOD_TYPES = {
 	barrel:	"FALLOUT.WEAPON_MOD.type.barrel",
 	capacitor:	"FALLOUT.WEAPON_MOD.type.capacitor",
+	cannister:	"FALLOUT.WEAPON_MOD.type.cannister",
 	concentrate:	"FALLOUT.WEAPON_MOD.type.concentrate",
 	container:	"FALLOUT.WEAPON_MOD.type.container",
 	dish:	"FALLOUT.WEAPON_MOD.type.dish",
