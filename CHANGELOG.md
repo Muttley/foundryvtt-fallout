@@ -1,10 +1,9 @@
 # v11.15.6
 
 #### Bugs
+- [#643] Combat Dice macro fails
 - [#645] Location specified for some armor pieces in compendium incorrect
 - [#647] Mod type Cannister missing from types available
-
-#### Chores
 
 ---
 

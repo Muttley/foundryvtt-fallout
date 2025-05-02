@@ -24,7 +24,7 @@ export class DialogD6 extends Dialog {
 			let fireRate = html.find(".fr-number")[0]?.value;
 			let diceNum = html.find(".d-number")[0]?.value;
 
-			const gatlingWeapon = me.weapon.hasWeaponQuality("gatling");
+			const gatlingWeapon = me.weapon?.hasWeaponQuality("gatling") ?? false;
 			let multiplier = gatlingWeapon ? 2 : 1;
 
 			if (!diceNum) {
@@ -188,7 +188,7 @@ export class DialogD6 extends Dialog {
 			* this.weapon.system.ammoPerShot;
 
 		// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
-		if (this.weapon.hasWeaponQuality("gatling")) {
+		if (this.weapon && this.weapon.hasWeaponQuality("gatling")) {
 			additionalAmmo = Math.floor(additionalAmmo * 0.5);
 		}
 
