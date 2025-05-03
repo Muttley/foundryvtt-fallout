@@ -9,6 +9,9 @@
 - [#651] Apparel attributes not locking when modded.
 - [#652] Damage type on modded weapons does not lock.
 
+#### Enhancements
+- [#653] Show weapon qualities & effects desriptions when modded.
+
 ---
 
 # v11.15.5
