@@ -22,10 +22,10 @@
 		},
 		"isJunk": false,
 		"location": {
-			"armL": true,
+			"armL": false,
 			"armR": false,
 			"head": false,
-			"legL": false,
+			"legL": true,
 			"legR": false,
 			"torso": false
 		},

@@ -731,10 +731,12 @@ FALLOUT.WEAPON_MOD.summary.rangeDecrease: Diminui o alcance em {range}
 FALLOUT.WEAPON_MOD.summary.rangeIncrease: Aumenta o alcance em {range}
 FALLOUT.WEAPON_MOD.summary.remove: Remover
 FALLOUT.WEAPON_MOD.type.barrel: Cano
+FALLOUT.WEAPON_MOD.type.cannister: Cannister
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
 FALLOUT.WEAPON_MOD.type.concentrate: Concentrado
 FALLOUT.WEAPON_MOD.type.container: Contêiner
 FALLOUT.WEAPON_MOD.type.dish: Prato
+FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Combustível
 FALLOUT.WEAPON_MOD.type.grip: Cabo
 FALLOUT.WEAPON_MOD.type.magazine: Carregador

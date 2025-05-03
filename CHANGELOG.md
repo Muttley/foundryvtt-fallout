@@ -1,5 +1,22 @@
+# v11.15.6
+
+#### Bugs
+- [#643] Combat Dice macro fails
+- [#645] Location specified for some armor pieces in compendium incorrect
+- [#647] Weapon Mod type Cannister missing from types available
+- [#648] Weapon Mod type Frame missing from types available
+- [#650] Apparel type always displays "Armor"
+- [#651] Apparel attributes not locking when modded.
+- [#652] Damage type on modded weapons does not lock.
+
+#### Enhancements
+- [#653] Show weapon qualities & effects desriptions when modded.
+
+---
+
 # v11.15.5
 
+#### Bugs
 - [#638] Gatling weapons using too much ammo when rolling additional damage
 
 ---

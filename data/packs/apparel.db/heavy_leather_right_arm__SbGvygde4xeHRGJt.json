@@ -23,10 +23,10 @@
 		"isJunk": false,
 		"location": {
 			"armL": false,
-			"armR": false,
+			"armR": true,
 			"head": false,
 			"legL": false,
-			"legR": true,
+			"legR": false,
 			"torso": false
 		},
 		"mods": {

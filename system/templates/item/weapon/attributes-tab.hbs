@@ -89,7 +89,7 @@
 			value="{{system.damage.rating}}"
 			{{#if modded}}
 				disabled
-				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+				data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
 			{{/if}}
 		>
 	</div>
@@ -106,9 +106,9 @@
 						name="system.damage.damageType.{{this.key}}"
 						type="checkbox"
 						{{checked this.active}}
-						{{#if modded}}
+						{{#if ../modded}}
 							disabled
-							data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+							data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
 						{{/if}}
 					/>
 					{{this.label}}
@@ -127,7 +127,7 @@
 			name="system.range"
 			{{#if modded}}
 				disabled
-				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+				data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
 			{{/if}}
 		>
 			{{selectOptions FALLOUT.RANGES selected=system.range}}
@@ -158,7 +158,7 @@
 			data-dtype="String"
 			{{#if modded}}
 				disabled
-				data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+				data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
 			{{/if}}
 		>
 			<option value="">&mdash;</option>
@@ -187,7 +187,7 @@
 				value="{{system.ammoPerShot}}"
 				{{#if modded}}
 					disabled
-					data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+					data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
 				{{/if}}
 			>
 		</div>
@@ -203,7 +203,7 @@
 				value="{{system.fireRate}}"
 				{{#if modded}}
 					disabled
-					data-tooltip={{localize FALLOUT.Item.Warnings.Modded}}
+					data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
 				{{/if}}
 			>
 		</div>
