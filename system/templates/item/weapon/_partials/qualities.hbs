@@ -11,7 +11,7 @@
 					class="flexrow toggle-label"
 				{{/ifCond}}
 				{{#if ../modded}}
-					data-tooltip="{{localize "FALLOUT.Item.Warnings.Modded"}}"
+					data-tooltip="-{{localize "FALLOUT.Item.Warnings.Modded"}}-<br><br>{{fromConfig "WEAPON_QUALITY_TOOLTIPS" this.key}}"
 				{{else}}
 					data-tooltip="{{fromConfig "WEAPON_QUALITY_TOOLTIPS" this.key}}"
 				{{/if}}

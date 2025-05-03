@@ -1311,7 +1311,7 @@ export default class FalloutItemSheet
 		await super._onChangeInput(event);
 	}
 
-	_onSubmit(event) {
+	async _onSubmit(event) {
 		if (!this.isEditable) {
 			return;
 		}
