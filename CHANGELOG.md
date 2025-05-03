@@ -6,6 +6,7 @@
 - [#647] Weapon Mod type Cannister missing from types available
 - [#648] Weapon Mod type Frame missing from types available
 - [#650] Apparel type always displays "Armor"
+- [#651] Apparel attributes not locking when modded.
 
 ---
 
