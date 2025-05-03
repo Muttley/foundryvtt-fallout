@@ -241,7 +241,6 @@ FALLOUT.HitLocation.Arm1: Arm 1
 FALLOUT.HitLocation.Arm2: Arm 2
 FALLOUT.HitLocation.Arm3: Arm 3
 FALLOUT.HitLocation.Head: Head
-FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.HitLocation.LeftArm: Left Arm
 FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
 FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
@@ -255,6 +254,7 @@ FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
 FALLOUT.HitLocation.RightLeg: Right Leg
 FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
 FALLOUT.HitLocation.Torso: Torso
+FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
