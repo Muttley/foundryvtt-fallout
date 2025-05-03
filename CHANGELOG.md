@@ -5,6 +5,7 @@
 - [#645] Location specified for some armor pieces in compendium incorrect
 - [#647] Weapon Mod type Cannister missing from types available
 - [#648] Weapon Mod type Frame missing from types available
+- [#650] Apparel type always displays "Armor"
 
 ---
 
