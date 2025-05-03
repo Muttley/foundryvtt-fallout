@@ -7,6 +7,7 @@
 - [#648] Weapon Mod type Frame missing from types available
 - [#650] Apparel type always displays "Armor"
 - [#651] Apparel attributes not locking when modded.
+- [#652] Damage type on modded weapons does not lock.
 
 ---
 
