@@ -1,3 +1,11 @@
+# v11.16.0
+
+#### Chores
+- [#656] Global "TextEditor" is now namespaced under foundry.applications.ux.TextEditor.implementation
+- [#664] Global "renderTemplate" is now namespaced under foundry.applications.handlebars.renderTemplate
+
+---
+
 # v11.15.6
 
 #### Bugs

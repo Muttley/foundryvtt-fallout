@@ -9,7 +9,7 @@ export const renderSidebarSettingsTab = {
 				const gameDetails = html.find("#game-details");
 
 				const template = "systems/fallout/templates/ui/system-details.hbs";
-				const rendered = await renderTemplate(template);
+				const rendered = await foundry.applications.handlebars.renderTemplate(template);
 
 				gameDetails.find(".system").append(rendered);
 				gameDetails.find(".modules").prepend("<hr>");

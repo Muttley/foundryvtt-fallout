@@ -112,7 +112,7 @@ export class DialogD6 extends Dialog {
 		let html;
 		let dialogWidth = 300;
 		if (weapon && !falloutRoll) {
-			html = await renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
+			html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/dialogs/dialogd6.hbs", dialogData);
 			dialogWidth = 465;
 		}
 		else {

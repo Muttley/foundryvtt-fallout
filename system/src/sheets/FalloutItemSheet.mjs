@@ -1409,7 +1409,7 @@ export default class FalloutItemSheet
 		}
 
 
-		const content = await renderTemplate(
+		const content = await foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/dialogs/roll-quantity.hbs"
 		);
 

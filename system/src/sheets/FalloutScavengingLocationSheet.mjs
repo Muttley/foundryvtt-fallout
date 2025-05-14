@@ -89,7 +89,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 
 	async _clearResults() {
-		renderTemplate(
+		foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/dialogs/are-you-sure.hbs"
 		).then(html => {
 			new Dialog({

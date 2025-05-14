@@ -14,7 +14,7 @@ export default class FalloutBaseActorSheet
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			width: 795,
+			width: 865,
 			height: 955,
 			tabs: [
 				{
@@ -163,7 +163,7 @@ export default class FalloutBaseActorSheet
 				i.currentWeaponDamage = weapon.currentWeaponDamage;
 				i.shotsAvailable = weapon.shotsAvailable;
 
-				i.damageTooltip = await renderTemplate(
+				i.damageTooltip = await foundry.applications.handlebars.renderTemplate(
 					"systems/fallout/templates/ui/weapon-damage-tooltip.hbs",
 					{
 						actor: this.actor,
@@ -298,7 +298,7 @@ export default class FalloutBaseActorSheet
 			const item = this.actor.items.get(itemId);
 
 			if (item.canBeScrapped) {
-				const html = await renderTemplate(
+				const html = await foundry.applications.handlebars.renderTemplate(
 					"systems/fallout/templates/dialogs/delete-or-junk.hbs"
 				);
 

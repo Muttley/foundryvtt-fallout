@@ -242,7 +242,7 @@ export default class FalloutItem extends Item {
 			}
 		}
 
-		const html = await renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
+		const html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
 		const chatData = {
 			user: game.user.id,
 			rollMode: game.settings.get("core", "rollMode"),
