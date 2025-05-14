@@ -3,6 +3,7 @@
 #### Chores
 - [#656] Global "TextEditor" is now namespaced under foundry.applications.ux.TextEditor.implementation
 - [#664] Global "renderTemplate" is now namespaced under foundry.applications.handlebars.renderTemplate
+- [#665] Action Point tracker needs to move in Foundry V13 due to Foundry UI changes
 
 ---
 

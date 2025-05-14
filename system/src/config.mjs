@@ -899,33 +899,39 @@ export async function generateEnrichedTooltips() {
 	CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS = {};
 	CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK = {};
 	for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
-		CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
-			game.i18n.localize(
-				`FALLOUT.TOOLTIPS.WeaponQuality.${key}`
-			)
-		);
+		CONFIG.FALLOUT.WEAPON_QUALITY_TOOLTIPS[key] =
+			await foundry.applications.ux.TextEditor.enrichHTML(
+				game.i18n.localize(
+					`FALLOUT.TOOLTIPS.WeaponQuality.${key}`
+				)
+			);
+
 		CONFIG.FALLOUT.WEAPON_QUALITY_HAS_RANK[key] = key.endsWith("_x");
 	}
 
 	CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS = {};
 	CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK = {};
 	for (const key in CONFIG.FALLOUT.VEHICLE_QUALITIES) {
-		CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS[key] = await TextEditor.enrichHTML(
-			game.i18n.localize(
-				`FALLOUT.TOOLTIPS.VehicleQuality.${key}`
-			)
-		);
+		CONFIG.FALLOUT.VEHICLE_QUALITY_TOOLTIPS[key] =
+			await foundry.applications.ux.TextEditor.enrichHTML(
+				game.i18n.localize(
+					`FALLOUT.TOOLTIPS.VehicleQuality.${key}`
+				)
+			);
+
 		CONFIG.FALLOUT.VEHICLE_QUALITY_HAS_RANK[key] = key.endsWith("_x");
 	}
 
 	CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK = {};
 	CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS = [];
 	for (const key in CONFIG.FALLOUT.DAMAGE_EFFECTS) {
-		CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key] = await TextEditor.enrichHTML(
-			game.i18n.localize(
-				`FALLOUT.TOOLTIPS.DamageEffect.${key}`
-			)
-		);
+		CONFIG.FALLOUT.DAMAGE_EFFECT_TOOLTIPS[key] =
+			await foundry.applications.ux.TextEditor.enrichHTML(
+				game.i18n.localize(
+					`FALLOUT.TOOLTIPS.DamageEffect.${key}`
+				)
+			);
+
 		CONFIG.FALLOUT.DAMAGE_EFFECT_HAS_RANK[key] = key.endsWith("_x");
 	}
 }
