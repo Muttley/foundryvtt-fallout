@@ -200,9 +200,9 @@ FALLOUT.EFFECT.StatusInjured: Injured
 FALLOUT.EFFECT.StatusPoisoned: Poisoned
 FALLOUT.EFFECT.StatusProne: Prone
 FALLOUT.EFFECT.StatusRadiation: Radiation
-FALLOUT.EFFECT.StatusRestrained: Restrained
-FALLOUT.EFFECT.StatusStunned: Stunned
-FALLOUT.EFFECT.StatusUnconscious: Unconscious
+FALLOUT.EFFECT.StatusRestrained: Contido
+FALLOUT.EFFECT.StatusStunned: Atordoado
+FALLOUT.EFFECT.StatusUnconscious: Inconsciente
 FALLOUT.EffectCreate: Criar Efeito
 FALLOUT.EffectDelete: Apagar Efeito
 FALLOUT.EffectEdit: Editar Efeito
@@ -404,10 +404,10 @@ FALLOUT.TEMPLATES.AddWeaponQualityEffect: Adicionar Qualidade/Efeito da Arma (Cl
 FALLOUT.TEMPLATES.Alcoholic: "Alcoólatra\n"
 FALLOUT.TEMPLATES.AllLocations: Todas as Áreas
 FALLOUT.TEMPLATES.AMMO: MUNIÇÃO
-FALLOUT.TEMPLATES.Ammo.ChargesRemaining: Charges Remaining
+FALLOUT.TEMPLATES.Ammo.ChargesRemaining: Cargas Restantes
 FALLOUT.TEMPLATES.Ammo.Current: Tiros Restantes
-FALLOUT.TEMPLATES.Ammo.FusionCore: Fusion Core
-FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip: Fusion Cores provide 50 shots per charge
+FALLOUT.TEMPLATES.Ammo.FusionCore: Núcleo de Fusão
+FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip: Núcleos de Fusão fornecem 50 disparos por carga
 FALLOUT.TEMPLATES.Ammo.Max: Tiros por Item
 FALLOUT.TEMPLATES.Ammo.Multishot: Tiro Múltiplo
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Rolar Quantidade
@@ -541,7 +541,7 @@ FALLOUT.TEMPLATES.Points: Pontos
 FALLOUT.TEMPLATES.POISON: VENENO
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: VIDA DA ARMADURA POTENTE
 FALLOUT.TEMPLATES.Prepared: Preparado
-FALLOUT.TEMPLATES.ProvidesCap: Provides Cap
+FALLOUT.TEMPLATES.ProvidesCap: Fornece Tampa
 FALLOUT.TEMPLATES.Publication: Publicado
 FALLOUT.TEMPLATES.Qualities_and_Effects: Qualidades & Efeitos
 FALLOUT.TEMPLATES.Qualities: Qualidades
