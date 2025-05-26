@@ -95,7 +95,6 @@ export default class FalloutChat {
 
 				let falloutRoll = message.flags.falloutroll;
 
-
 				if (falloutRoll.diceFace === "d20") {
 					fallout.Roller2D20.rerollD20({
 						complicationTreshold: falloutRoll.complicationTreshold,

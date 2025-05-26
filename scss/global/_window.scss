@@ -226,6 +226,10 @@
 		}
 	}
 
+	button {
+		color: black;
+	}
+
 	.content-link {
 		background: $f-vault-dark-blue;
 		border: unset;
@@ -271,6 +275,12 @@
     padding: 1rem;
     border-radius: 12px;
     border: 2px solid #38550f;
+
+	h2 {
+		font-family: var(--font-primary);
+		color: #6aff06;
+		font-size: 1.5em;
+	}
 
 	img {
 		width: 50%;

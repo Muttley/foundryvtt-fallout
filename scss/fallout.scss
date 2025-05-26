@@ -1,5 +1,5 @@
-@use "sass:meta";
 @use "global";
+@use "sass:meta";
 @use "utils";
 
 /* Styles limited to fallout sheets */
@@ -8,15 +8,11 @@
 }
 
 .fallout.sheet.actor {
-	min-width: 760px;
+	min-width: 865px;
 }
 
 .fallout.sheet.creature {
 	min-width: 690px;
-}
-
-.fallout.sheet.vehicle {
-	min-width: 700px;
 }
 
 .fallout.sheet.item {
@@ -24,5 +20,9 @@
 }
 
 .fallout.sheet.npc {
-	min-width: 750px;
+	min-width: 815px;
+}
+
+.fallout.sheet.vehicle {
+	min-width: 700px;
 }

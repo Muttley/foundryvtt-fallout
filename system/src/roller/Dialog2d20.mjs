@@ -130,6 +130,8 @@ export class Dialog2d20 extends Dialog {
 				},
 			}
 		);
+		d.options.classes.push("themed", "themed-light");
+
 		d.render(true);
 		return d.deferred.promise;
 	}
