@@ -1,30 +1,40 @@
 <div class="flexrow fallout-dialog">
-	<div class="flexrow resource" style="padding:5px">
+	<div class="flexrow resource" style="padding: 4px;">
 		<label class="title-label">
-			Weapon Damage: {{diceNum}}
+			{{localize "FALLOUT.UI.Damage"}}
 		</label>
+		<input
+			class="damage-dice"
+			data-dtype="Number"
+			type="number"
+			value="{{diceNum}}"
+			disabled
+		/>
 	</div>
+
 	{{#if (gt weapon.system.fireRate 0)}}
-		<div class="flexrow resource" style="padding:5px">
+		<div class="flexrow resource" style="padding: 4px;">
 			<label class="title-label">
-				Fire Rate:
+				{{localize "FALLOUT.TEMPLATES.Fire_Rate"}}
 			</label>
-			<select name="fireRate" class="fr-number">
+			<select class="fire-rate">
 				{{#each (range 0 weapon.system.fireRate)}}
-					<option value={{this}}>{{this}}</option>
+					<option value={{this}}>
+						{{this}}
+					</option>
 				{{/each}}
 			</select>
 		</div>
 	{{/if}}
 
-	<div class="flexrow resource" style="padding:5px">
+	<div class="flexrow resource" style="padding: 4px;">
 		<label
 			class="title-label"
 			data-tooltip="{{localize 'FALLOUT.TOOLTIPS.WeaponDamage.extraDice'}}"
 		>
-			Extra Dice:
+			{{localize "FALLOUT.UI.ExtraDice"}}
 		</label>
-		<input type="number" class="xd-number" value="0">
+		<input class="extra-dice" data-dtype="Number" type="number" value="0">
 	</div>
 
 </div>
