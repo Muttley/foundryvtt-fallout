@@ -4,10 +4,13 @@
 - [#656] Global "TextEditor" is now namespaced under foundry.applications.ux.TextEditor.implementation
 - [#664] Global "renderTemplate" is now namespaced under foundry.applications.handlebars.renderTemplate
 - [#665] Action Point tracker needs to move in Foundry V13 due to Foundry UI changes
+- [#667] Various CSS issues with Foundry v13
 - [#669] Merge new Portuguese/Brazilian updates from Crowdin
 - [#672] ContextMenu is changing to no longer transact jQuery objects for menu item callbacks
 - [#673] ContextMenu is changing to no longer transact jQuery objects. You must begin passing an HTMLElement instead
+- [#676] Removed the Open Scavenging Help Website macro
 
+	* ***BREAKING CHANGE***: This relied on the Foundry FrameViewer which was removed as of v13, but is no longer needed as we have our own scavenging tools now.
 
 ---
 
