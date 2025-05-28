@@ -700,6 +700,7 @@ FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
 FALLOUT.UI.Modify: Modify
 FALLOUT.UI.Name: Name
+FALLOUT.UI.NumberOfDice: Number of Dice
 FALLOUT.UI.OTHER: Other
 FALLOUT.UI.Override: Override
 FALLOUT.UI.Perks: Perks

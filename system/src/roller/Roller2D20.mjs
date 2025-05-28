@@ -420,8 +420,8 @@ export class Roller2D20 {
 		falloutRoll.rerollIndexes = rerollIndexes;
 		falloutRoll.rollname = rollname;
 
-		const weaponData = foundry.utils.duplicate(weapon);
-		weaponData.uuid = weapon.uuid;
+		const weaponData = foundry.utils.duplicate(weapon) ?? {};
+		weaponData.uuid = weapon?.uuid;
 
 		const flags = {
 			actor,

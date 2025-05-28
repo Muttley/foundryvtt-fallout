@@ -20,9 +20,9 @@ export class DialogD6 extends Dialog {
 		// })
 
 		html.on("click", ".roll", async event => {
-			let extraDiceNum = parseInt(html.find(".extra-dice")[0]?.value) ?? 0;
-			let fireRate = parseInt(html.find(".fire-rate")[0]?.value);
-			let diceNum = parseInt(html.find(".damage-dice")[0]?.value);
+			let extraDiceNum = parseInt(html.find(".extra-dice")[0]?.value ?? 0);
+			let fireRate = parseInt(html.find(".fire-rate")[0]?.value ?? 0);
+			let diceNum = parseInt(html.find(".damage-dice")[0]?.value ?? 1);
 
 			const gatlingWeapon = me.weapon?.hasWeaponQuality("gatling") ?? false;
 			let multiplier = gatlingWeapon ? 2 : 1;
@@ -100,7 +100,13 @@ export class DialogD6 extends Dialog {
 
 	}
 
-	static async createDialog({ rollName = "DC Roll", diceNum = 2, falloutRoll = null, actor = null, weapon = null } = {}) {
+	static async createDialog({
+		rollName = "DC Roll",
+		diceNum = 2,
+		falloutRoll = null,
+		actor = null,
+		weapon = null,
+	} = {}) {
 		let dialogData = {};
 
 		dialogData.rollName = rollName;
@@ -116,12 +122,9 @@ export class DialogD6 extends Dialog {
 			dialogWidth = 465;
 		}
 		else {
-			html = `<div class="flexrow fallout-dialog">
-		<div class="flexrow resource" style="padding:5px">
-		<label class="title-label">Number of Dice:</label><input type="number" class="d-number" value="${diceNum}">
-		</div>
-		</div>`;
+			html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/dialogs/dialogd6-simple.hbs", dialogData);
 		}
+
 		let d = new DialogD6(rollName, diceNum, actor, weapon, falloutRoll, {
 			title: rollName,
 			content: html,
