@@ -237,6 +237,24 @@ FALLOUT.Form.SourceFilters.title: Filtros de origen
 FALLOUT.HEALTH.current: Salud actual
 FALLOUT.HEALTH.health: Salud
 FALLOUT.HEALTH.max: Salud máxima
+FALLOUT.HitLocation.Arm1: Arm 1
+FALLOUT.HitLocation.Arm2: Arm 2
+FALLOUT.HitLocation.Arm3: Arm 3
+FALLOUT.HitLocation.Head: Head
+FALLOUT.HitLocation.LeftArm: Left Arm
+FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
+FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
+FALLOUT.HitLocation.LeftWing: Left Wing (as Leg)
+FALLOUT.HitLocation.Legs: Legs
+FALLOUT.HitLocation.MainBody: Main Body
+FALLOUT.HitLocation.Optics: Optics
+FALLOUT.HitLocation.RightArm: Right Arm
+FALLOUT.HitLocation.RightFrontLeg: Right Front Leg
+FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
+FALLOUT.HitLocation.RightLeg: Right Leg
+FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
+FALLOUT.HitLocation.Torso: Torso
+FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.Item.Origin.FixedTraits.label: Rasgos fijos
 FALLOUT.Item.Origin.Traits.label: Rasgos de origen
 FALLOUT.Item.Origin.Traits.prompt: Seleccionar Rasgo...
@@ -616,6 +634,8 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Por cada efecto obtenido, tu ataque inflig
 FALLOUT.TOOLTIPS.DamageEffect.stun: Si se obtienen uno o más efectos, el objetivo no puede realizar sus acciones normales en su próximo turno. Un personaje o criatura aturdido aún puede gastar PA para realizar acciones adicionales de manera normal.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Las armas Tranquilizantes causan daño pero no Heridas. Si un ataque con un arma Tranquilizante causa suficiente daño como para causar una Herida, en su lugar el objetivo dañado debe pasar una prueba de RES + Supervivencia o Cuerpo + OTROS con una dificultad de X. Si tiene éxito, el ataque no tiene ningún otro efecto, pero si falla, queda inconsciente durante 1 hora. Si un objetivo queda reducido a 0 PV al mismo tiempo que sufriría una Herida, falla automáticamente la prueba y queda inconsciente durante 1 hora en lugar de cualquier otro efecto. Los personajes inmunes al daño por veneno o con una servoarmadura son inmunes a este efecto.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: El ataque inflige +1 de daño por cada efecto obtenido.
+FALLOUT.TOOLTIPS.Mod.attach: Attach
+FALLOUT.TOOLTIPS.Mod.detach: Detach
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: El vehículo puede transportar hasta X libras de carga adicional.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: El vehículo es voluminoso y tiene poca respuesta. Aumenta la dificultad de las pruebas para moverse en +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: El vehículo está completamente cerrado, lo que protege a la tripulación y a los pasajeros que se encuentran en su interior. La tripulación y los pasajeros no pueden ser blanco de ataques desde el exterior del vehículo, pero tampoco pueden utilizar sus propias armas. Los pasajeros y la tripulación que se encuentran en el interior de los vehículos cerrados no sufren daños por radiación debido a los efectos ambientales.
@@ -674,11 +694,13 @@ FALLOUT.UI.Damage: Daño
 FALLOUT.UI.DeleteOrJunk.message: '¿Te gustaría eliminar o convertir en chatarra este objeto?'
 FALLOUT.UI.DeleteOrJunk.title: '¿Eliminar o convertir en chatarra?'
 FALLOUT.UI.DISEASES: Enfermedades
+FALLOUT.UI.ExtraDice: Extra Dice
 FALLOUT.UI.favorite: Favorito
 FALLOUT.UI.INVENTORY: Inventario
 FALLOUT.UI.MISCELLANY: Miscelánea
 FALLOUT.UI.Modify: Modificar
 FALLOUT.UI.Name: Nombre
+FALLOUT.UI.NumberOfDice: Number of Dice
 FALLOUT.UI.OTHER: Otro
 FALLOUT.UI.Override: Reemplazar
 FALLOUT.UI.Perks: Extras
