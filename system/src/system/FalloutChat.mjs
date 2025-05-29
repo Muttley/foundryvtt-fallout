@@ -6,7 +6,7 @@ export default class FalloutChat {
 		template,
 		mode
 	) {
-		const html = await renderTemplate(template, data);
+		const html = await foundry.applications.handlebars.renderTemplate(template, data);
 
 		if (!mode) {
 			mode = game.settings.get("core", "rollMode");
@@ -71,16 +71,16 @@ export default class FalloutChat {
 		);
 	}
 
-	static async onRenderChatMessage(message, html, data) {
+	static async onRenderChatMessageHTML(message, html, context) {
 		fallout.debug("Running renderChatMessage hook");
 
-		const rerollButton = html.find(".reroll-button");
+		html.querySelectorAll(".reroll-button").forEach(element => {
+			element.setAttribute("data-messageId", message.id);
 
-		if (rerollButton.length > 0) {
-			rerollButton[0].setAttribute("data-messageId", message.id);
+			element.addEventListener("click", async event => {
+				const selectedDiceForReroll =
+					html.querySelectorAll(".dice-selected");
 
-			rerollButton.click(el => {
-				const selectedDiceForReroll = html.find(".dice-selected");
 				const rerollIndex = [];
 
 				for (let d of selectedDiceForReroll) {
@@ -106,35 +106,42 @@ export default class FalloutChat {
 					});
 				}
 				else if (falloutRoll.diceFace === "d6") {
+					let weapon = message.flags.weapon;
+					if (message.flags.weapon) {
+						weapon = await fromUuid(message.flags.weapon.uuid);
+					}
+
 					fallout.Roller2D20.rerollD6({
 						actor: message.flags.actor,
 						dicesRolled: falloutRoll.dicesRolled,
 						rerollIndexes: rerollIndex,
 						rollname: falloutRoll.rollname,
-						weapon: message.flags.weapon,
+						weapon,
 					});
 				}
 				else {
 					ui.notifications.notify("No dice face recognised");
 				}
-			});
-		}
 
-		html.find(".dice-icon").click(el => {
-			if ($(el.currentTarget).hasClass("dice-selected")) {
-				$(el.currentTarget).removeClass("dice-selected");
-			}
-			else {
-				$(el.currentTarget).addClass("dice-selected");
-			}
+			});
 		});
 
-		const addButton = html.find(".add-button");
+		html.querySelectorAll(".dice-icon").forEach(element => {
+			element.addEventListener("click", event => {
+				const target = event.currentTarget;
+				if (target.classList.contains("dice-selected")) {
+					target.classList.remove("dice-selected");
+				}
+				else {
+					target.classList.add("dice-selected");
+				}
+			});
+		});
 
-		if (addButton.length > 0) {
-			addButton[0].setAttribute("data-messageId", message.id);
+		html.querySelectorAll(".add-button").forEach(element => {
+			element.setAttribute("data-messageId", message.id);
 
-			addButton.click(ev => {
+			element.addEventListener("click", ev => {
 				const actor = message.flags.actor;
 				const falloutRoll = message.flags.falloutroll;
 				const weapon = message.flags.weapon;
@@ -147,6 +154,6 @@ export default class FalloutChat {
 					actor: actor,
 				});
 			});
-		}
+		});
 	}
 }

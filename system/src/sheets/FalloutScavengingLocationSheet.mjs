@@ -59,11 +59,13 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 			context.itemTables[rollTable.uuid] = rollTable.name;
 		}
 
-		context.notesHTML = await TextEditor.enrichHTML(context.system.notes, {
-			secrets: this.actor.isOwner,
-			rollData: context.rollData,
-			async: true,
-		});
+		context.notesHTML = await foundry.applications.ux.TextEditor.enrichHTML(
+			context.system.notes, {
+				secrets: this.actor.isOwner,
+				rollData: context.rollData,
+				async: true,
+			}
+		);
 
 		return context;
 	}
@@ -89,7 +91,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 
 	async _clearResults() {
-		renderTemplate(
+		foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/dialogs/are-you-sure.hbs"
 		).then(html => {
 			new Dialog({

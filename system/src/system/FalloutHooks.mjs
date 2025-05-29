@@ -4,8 +4,7 @@ import { hotbarDropHook } from "../hooks/hotbarDropHook.mjs";
 import { initiativeHooks } from "../hooks/initiativeHooks.mjs";
 import { preCreateItemHook } from "../hooks/preCreateItemHook.mjs";
 import { readyHook } from "../hooks/readyHook.mjs";
-import { renderChatMessageHook } from "../hooks/renderChatMessageHook.mjs";
-import { renderSidebarSettingsTab } from "../hooks/renderSidebarSettingsTab.mjs";
+import { renderChatMessageHTMLHook } from "../hooks/renderChatMessageHTMLHook.mjs";
 import { settlementActorUpdateHooks } from "../hooks/settlementActorUpdateHooks.mjs";
 import { setupHook } from "../hooks/setupHook.mjs";
 
@@ -20,8 +19,7 @@ export const FalloutHooks = {
 			initiativeHooks,
 			preCreateItemHook,
 			readyHook,
-			renderChatMessageHook,
-			renderSidebarSettingsTab,
+			renderChatMessageHTMLHook,
 			settlementActorUpdateHooks,
 			setupHook,
 		];

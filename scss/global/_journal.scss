@@ -1,6 +1,12 @@
 @use '../global/typography' as *;
 @use '../utils/colors' as *;
 
+.system-fallout .sheet.journal-entry {
+	font-family: $font-roboto;
+	font-size: 1em;
+	color: #191813;
+}
+
 .system-fallout .sheet.journal-entry .journal-entry-content {
 	background: url(../assets/ui/journal/journal-bg.webp);
 };

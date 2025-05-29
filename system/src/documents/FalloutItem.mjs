@@ -242,7 +242,7 @@ export default class FalloutItem extends Item {
 			}
 		}
 
-		const html = await renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
+		const html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
 		const chatData = {
 			user: game.user.id,
 			rollMode: game.settings.get("core", "rollMode"),
@@ -297,6 +297,7 @@ export default class FalloutItem extends Item {
 			// Fusion Cores provide 50 shots per charge
 			this.system.shots.max = this.system.charges.max * 50;
 
+			// Cap current shots to max in case it's changed
 			this.system.shots.current = Math.min(
 				this.system.shots.max,
 				this.system.shots.current

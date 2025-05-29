@@ -6,5 +6,6 @@ system/i18n/
 system/packs/
 
 *.code-workspace
+.env
 fallout-compiled*
 /.vs

@@ -145,19 +145,24 @@
 }
 
 .fallout-dialog {
+
 	.resource {
 		margin: 0 2px 5px;
 		padding: 0 5px 0 0;
 		background-color: $f-blue;
+
 		&.tile {
 			background-color: $f-tile;
 		}
+
 		&.green {
 			background-color: $f-green;
 		}
+
 		&.red {
 			background-color: $f-red;
 		}
+
 		.title-label {
 			padding: 5px;
 			font-family: $font-lobster;
@@ -167,11 +172,19 @@
 				font-size: var(--font-size-18);
 			}
 		}
+
+		input[type="checkbox"],
 		input[type="number"] {
 			text-align: center;
 			background-color: beige;
+			color-scheme: light;
+		}
+
+		select {
+			background-color: beige;
 		}
 	}
+
 	ul {
 		list-style: none;
 		padding: 5px 20px;
@@ -206,7 +219,6 @@
 }
 
 .fallout .window-content {
-	//background-image: url(../assets/ui/window-bg.webp);
 	background: none;
 	padding: 0;
 	color: $c-font-prim;
@@ -271,6 +283,12 @@
     padding: 1rem;
     border-radius: 12px;
     border: 2px solid #38550f;
+
+	h2 {
+		font-family: var(--font-primary);
+		color: #6aff06;
+		font-size: 1.5em;
+	}
 
 	img {
 		width: 50%;

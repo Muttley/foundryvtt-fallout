@@ -82,7 +82,7 @@ export default class FalloutMacros {
 			return;
 		}
 
-		renderTemplate(
+		foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/dialogs/are-you-sure.hbs"
 		).then(html => {
 			new Dialog({

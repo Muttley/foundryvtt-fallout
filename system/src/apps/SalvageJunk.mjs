@@ -181,7 +181,7 @@ export default class SalvageJunk extends FormApplication {
 		this.actor.update({"system.materials": actorMaterials});
 
 		// Send a chat message
-		const content = await renderTemplate(
+		const content = await foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/chat/salvage-results.hbs",
 			rollData
 		);

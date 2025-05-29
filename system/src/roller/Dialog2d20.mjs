@@ -107,7 +107,7 @@ export class Dialog2d20 extends Dialog {
 		dialogData.actor = actor;
 		dialogData.item = item;
 
-		const html = await renderTemplate("systems/fallout/templates/dialogs/dialog2d20.hbs", dialogData);
+		const html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/dialogs/dialog2d20.hbs", dialogData);
 
 		let d = new Dialog2d20(
 			rollName,
@@ -130,6 +130,8 @@ export class Dialog2d20 extends Dialog {
 				},
 			}
 		);
+		d.options.classes.push("themed", "themed-light");
+
 		d.render(true);
 		return d.deferred.promise;
 	}

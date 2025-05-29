@@ -44,7 +44,7 @@ export default class FalloutChemDoses extends FormApplication {
 		);
 
 		html.find(".reset-all-button").click(
-			event => this._onResetAllDoses(event)
+			async event => this._onResetAllDoses(event)
 		);
 
 		super.activateListeners(html);
@@ -73,31 +73,31 @@ export default class FalloutChemDoses extends FormApplication {
 		this.actor.update(updateData);
 	}
 
-	_onResetAllDoses(event) {
+	async _onResetAllDoses(event) {
 		event.preventDefault();
 
-		renderTemplate(
+		const html = await foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/dialogs/are-you-sure.hbs"
-		).then(html => {
-			new Dialog({
-				title: `${game.i18n.localize("FALLOUT.UI.ChemDoses.ConfirmReset")}`,
-				content: html,
-				buttons: {
-					Yes: {
-						icon: '<i class="fa fa-check"></i>',
-						label: `${game.i18n.localize("FALLOUT.UI.Yes")}`,
-						callback: async () => {
-							this.actor.resetChemDoses();
-						},
-					},
-					Cancel: {
-						icon: '<i class="fa fa-times"></i>',
-						label: `${game.i18n.localize("FALLOUT.UI.Cancel")}`,
+		);
+
+		new Dialog({
+			title: `${game.i18n.localize("FALLOUT.UI.ChemDoses.ConfirmReset")}`,
+			content: html,
+			buttons: {
+				Yes: {
+					icon: '<i class="fa fa-check"></i>',
+					label: `${game.i18n.localize("FALLOUT.UI.Yes")}`,
+					callback: async () => {
+						this.actor.resetChemDoses();
 					},
 				},
-				default: "Yes",
-			}).render(true);
-		});
+				Cancel: {
+					icon: '<i class="fa fa-times"></i>',
+					label: `${game.i18n.localize("FALLOUT.UI.Cancel")}`,
+				},
+			},
+			default: "Yes",
+		}).render(true);
 	}
 
 }
