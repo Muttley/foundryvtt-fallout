@@ -237,6 +237,24 @@ FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
+FALLOUT.HitLocation.Arm1: Arm 1
+FALLOUT.HitLocation.Arm2: Arm 2
+FALLOUT.HitLocation.Arm3: Arm 3
+FALLOUT.HitLocation.Head: Head
+FALLOUT.HitLocation.LeftArm: Left Arm
+FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
+FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
+FALLOUT.HitLocation.LeftWing: Left Wing (as Leg)
+FALLOUT.HitLocation.Legs: Legs
+FALLOUT.HitLocation.MainBody: Main Body
+FALLOUT.HitLocation.Optics: Optics
+FALLOUT.HitLocation.RightArm: Right Arm
+FALLOUT.HitLocation.RightFrontLeg: Right Front Leg
+FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
+FALLOUT.HitLocation.RightLeg: Right Leg
+FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
+FALLOUT.HitLocation.Torso: Torso
+FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
@@ -616,6 +634,8 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Pour chaque Effet obtenu sur le jet de dé
 FALLOUT.TOOLTIPS.DamageEffect.stun: Si vous obtenez un ou plusieurs Effets sur le jet de dégâts, la cible perd ses actions normales à son tour suivant. Une créature ou un personnage étourdi peut toujours dépenser des PA pour effectuer des actions supplémentaires normalement.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Les armes ayant l'effet Tranquilisant infligent des dégâts mais n'infligent pas de blessures. Si une attaque avec une arme Tranquilisant inflige suffisamment de dégâts pour causer des blessures, au lieu de cela, la cible blessée doit réussir un test END + Survie ou Corps + AUTRE avec une difficulté de X. S'ils réussissent, l'attaque n'a pas d'autre effet, s'ils échouent, ils sont rendus inconscients pendant 1 heure. Si une cible est réduite à 0 PV en même temps qu'elle subirait une blessure, ils échouent automatiquement au test et sont rendus inconscients pendant 1 heure au lieu de tout autre effet. Les personnages immunisés contre les dégâts de posion ou en Armure Assistée complète sont immunisés contre cet effet.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: L'attaque inflige +1 point de dégâts pour chaque Effet obtenu sur le jet de dégâts.
+FALLOUT.TOOLTIPS.Mod.attach: Attach
+FALLOUT.TOOLTIPS.Mod.detach: Detach
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: Le véhicule peut transporter jusqu'à X kg de chargement supplémentaire.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: Le véhicule est lourd et non réactif ce qui augmente les tests de difficulté pour se déplacer de +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: Le véhicule est entièrement fermé, protégeant les membres d'équipage et les passagers à l'intérieur. Ils ne peuvent pas être visés par des attaques de l'extérieur du véhicule, mais ne peuvent pas non plus utiliser leur propre arme. Ils ne subissent pas non plus les radiations dû à l'environnement.
@@ -674,11 +694,13 @@ FALLOUT.UI.Damage: Dégâts
 FALLOUT.UI.DeleteOrJunk.message: Voulez-vous supprimer ou recycler cet objet ?
 FALLOUT.UI.DeleteOrJunk.title: Supprimer ou recycler ?
 FALLOUT.UI.DISEASES: Maladies
+FALLOUT.UI.ExtraDice: Extra Dice
 FALLOUT.UI.favorite: Favori
 FALLOUT.UI.INVENTORY: Inventaire
 FALLOUT.UI.MISCELLANY: Bric-A-Brac
 FALLOUT.UI.Modify: Modifier
 FALLOUT.UI.Name: Nom
+FALLOUT.UI.NumberOfDice: Number of Dice
 FALLOUT.UI.OTHER: Autre
 FALLOUT.UI.Override: Forcer
 FALLOUT.UI.Perks: Aptitudes
