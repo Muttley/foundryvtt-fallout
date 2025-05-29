@@ -59,11 +59,13 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 			context.itemTables[rollTable.uuid] = rollTable.name;
 		}
 
-		context.notesHTML = await TextEditor.enrichHTML(context.system.notes, {
-			secrets: this.actor.isOwner,
-			rollData: context.rollData,
-			async: true,
-		});
+		context.notesHTML = await foundry.applications.ux.TextEditor.enrichHTML(
+			context.system.notes, {
+				secrets: this.actor.isOwner,
+				rollData: context.rollData,
+				async: true,
+			}
+		);
 
 		return context;
 	}

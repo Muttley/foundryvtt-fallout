@@ -348,7 +348,7 @@ export default function registerHandlebarsHelpers() {
 	});
 
 	Handlebars.registerHelper("enrichHtmlHelper", function(rawText) {
-		return TextEditor.enrichHTML(rawText, { async: false });
+		return foundry.applications.ux.TextEditor.enrichHTML(rawText, { async: false });
 	});
 
 	// coloring input fields

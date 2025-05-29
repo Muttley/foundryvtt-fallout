@@ -52,7 +52,7 @@ export default class FalloutItemSheet
 
 	/** @inheritdoc */
 	async _onDrop(event) {
-		const data = TextEditor.getDragEventData(event);
+		const data = foundry.applications.ux.TextEditor.getDragEventData(event);
 
 		switch (data.type) {
 			case "Item":
@@ -107,10 +107,13 @@ export default class FalloutItemSheet
 		const source = item.toObject();
 
 		foundry.utils.mergeObject(context, {
-			descriptionHTML: await TextEditor.enrichHTML(item.system.description, {
-				secrets: item.isOwner,
-				async: true,
-			}),
+			descriptionHTML: await foundry.applications.ux.TextEditor.enrichHTML(
+				item.system.description,
+				{
+					secrets: item.isOwner,
+					async: true,
+				}
+			),
 			effects: prepareActiveEffectCategories(item.transferredEffects),
 			FALLOUT: CONFIG.FALLOUT,
 			flags: item.flags,
@@ -127,7 +130,7 @@ export default class FalloutItemSheet
 		// Enrich Effect Text
 		if (item.system.effect) {
 			foundry.utils.mergeObject(context, {
-				effectHTML: await TextEditor.enrichHTML(item.system.effect, {
+				effectHTML: await foundry.applications.ux.TextEditor.enrichHTML(item.system.effect, {
 					secrets: item.isOwner,
 					async: true,
 				}),
@@ -137,7 +140,7 @@ export default class FalloutItemSheet
 		// Enrich Weapon Mod Effect Text
 		if (item.system.modEffects?.effect) {
 			foundry.utils.mergeObject(context, {
-				effectHTML: await TextEditor.enrichHTML(item.system.modEffects.effect, {
+				effectHTML: await foundry.applications.ux.TextEditor.enrichHTML(item.system.modEffects.effect, {
 					secrets: item.isOwner,
 					async: true,
 				}),
@@ -1106,13 +1109,13 @@ export default class FalloutItemSheet
 		}
 
 		if (modSummary.length > 1) {
-			return await TextEditor.enrichHTML(modSummary.join(", "), {
+			return await foundry.applications.ux.TextEditor.enrichHTML(modSummary.join(", "), {
 				async: true,
 			});
 		}
 
 		else {
-			return await TextEditor.enrichHTML(modSummary, {
+			return await foundry.applications.ux.TextEditor.enrichHTML(modSummary, {
 				async: true,
 			});
 		}
@@ -1211,13 +1214,13 @@ export default class FalloutItemSheet
 		}
 
 		if (modSummary.length > 1) {
-			return await TextEditor.enrichHTML(modSummary.join(", "), {
+			return await foundry.applications.ux.TextEditor.enrichHTML(modSummary.join(", "), {
 				async: true,
 			});
 		}
 
 		else {
-			return await TextEditor.enrichHTML(modSummary, {
+			return await foundry.applications.ux.TextEditor.enrichHTML(modSummary, {
 				async: true,
 			});
 		}

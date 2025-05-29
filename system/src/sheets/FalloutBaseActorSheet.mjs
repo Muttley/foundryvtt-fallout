@@ -90,11 +90,14 @@ export default class FalloutBaseActorSheet
 
 		// Biography HTML enrichment
 		if (context.system.biography) {
-			context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
-				secrets: this.actor.isOwner,
-				rollData: context.rollData,
-				async: true,
-			});
+			context.biographyHTML = await foundry.applications.ux.TextEditor.enrichHTML(
+				context.system.biography,
+				{
+					secrets: this.actor.isOwner,
+					rollData: context.rollData,
+					async: true,
+				}
+			);
 		}
 
 		return context;
@@ -560,16 +563,22 @@ export default class FalloutBaseActorSheet
 		let moreInfo = "";
 
 		if (item.system.effect && item.system.effect !== "") {
-			moreInfo = await TextEditor.enrichHTML(item.system.effect, {
-				secrets: item.isOwner,
-				async: true,
-			});
+			moreInfo = await foundry.applications.ux.TextEditor.enrichHTML(
+				item.system.effect,
+				{
+					secrets: item.isOwner,
+					async: true,
+				}
+			);
 		}
 		else {
-			moreInfo = await TextEditor.enrichHTML(item.system.description, {
-				secrets: item.isOwner,
-				async: true,
-			});
+			moreInfo = await foundry.applications.ux.TextEditor.enrichHTML(
+				item.system.description,
+				{
+					secrets: item.isOwner,
+					async: true,
+				}
+			);
 		}
 		// Toggle summary
 		if (li.hasClass("expanded")) {
