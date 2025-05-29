@@ -7,13 +7,14 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export default class FalloutBaseActorSheet extends ActorSheet {
+export default class FalloutBaseActorSheet
+	extends foundry.appv1.sheets.ActorSheet {
 
 	/** @override */
 	static get defaultOptions() {
 		return foundry.utils.mergeObject(super.defaultOptions, {
 			classes: ["fallout", "sheet", "actor"],
-			width: 795,
+			width: 865,
 			height: 955,
 			tabs: [
 				{
@@ -89,11 +90,14 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 
 		// Biography HTML enrichment
 		if (context.system.biography) {
-			context.biographyHTML = await TextEditor.enrichHTML(context.system.biography, {
-				secrets: this.actor.isOwner,
-				rollData: context.rollData,
-				async: true,
-			});
+			context.biographyHTML = await foundry.applications.ux.TextEditor.enrichHTML(
+				context.system.biography,
+				{
+					secrets: this.actor.isOwner,
+					rollData: context.rollData,
+					async: true,
+				}
+			);
 		}
 
 		return context;
@@ -162,7 +166,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 				i.currentWeaponDamage = weapon.currentWeaponDamage;
 				i.shotsAvailable = weapon.shotsAvailable;
 
-				i.damageTooltip = await renderTemplate(
+				i.damageTooltip = await foundry.applications.handlebars.renderTemplate(
 					"systems/fallout/templates/ui/weapon-damage-tooltip.hbs",
 					{
 						actor: this.actor,
@@ -297,7 +301,7 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 			const item = this.actor.items.get(itemId);
 
 			if (item.canBeScrapped) {
-				const html = await renderTemplate(
+				const html = await foundry.applications.handlebars.renderTemplate(
 					"systems/fallout/templates/dialogs/delete-or-junk.hbs"
 				);
 
@@ -559,16 +563,22 @@ export default class FalloutBaseActorSheet extends ActorSheet {
 		let moreInfo = "";
 
 		if (item.system.effect && item.system.effect !== "") {
-			moreInfo = await TextEditor.enrichHTML(item.system.effect, {
-				secrets: item.isOwner,
-				async: true,
-			});
+			moreInfo = await foundry.applications.ux.TextEditor.enrichHTML(
+				item.system.effect,
+				{
+					secrets: item.isOwner,
+					async: true,
+				}
+			);
 		}
 		else {
-			moreInfo = await TextEditor.enrichHTML(item.system.description, {
-				secrets: item.isOwner,
-				async: true,
-			});
+			moreInfo = await foundry.applications.ux.TextEditor.enrichHTML(
+				item.system.description,
+				{
+					secrets: item.isOwner,
+					async: true,
+				}
+			);
 		}
 		// Toggle summary
 		if (li.hasClass("expanded")) {

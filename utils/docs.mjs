@@ -1,5 +1,5 @@
 import fs from "fs";
-import { markdown } from "markdown";
+import { marked } from "marked";
 
 import stringify from "json-stable-stringify-pretty";
 
@@ -30,7 +30,7 @@ function compileDocs(cb) {
 			`[**[#$1](${issueUrl}/$1)**]`
 		);
 
-		const html = markdown.toHTML(enhancedSource, "Maruku");
+		const html = marked.parse(enhancedSource);
 
 		const journalJson = fs.readFileSync(doc.dst, "utf8");
 		const journal = JSON.parse(journalJson);

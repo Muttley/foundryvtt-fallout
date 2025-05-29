@@ -1,3 +1,4 @@
+@use '../global/typography' as *;
 @use '../utils/colors' as *;
 @use '../utils/mixins' as *;
 
@@ -5,8 +6,8 @@
 	position: absolute;
 	display: block;
 	margin: 5px;
-	bottom: 20px !important;
-	right: 320px !important;
+	bottom: 250px;
+	left: 10px;
 
 	.ap-resource {
 		position: relative;
@@ -41,6 +42,9 @@
 		h4 {
 			margin: 0 0 2px 0;
 			color: bisque;
+			font-size: 14px;
+			font-family: $font-primary;
+
 		}
 
 		input[type="number"] {
@@ -56,6 +60,7 @@
 			justify-content: center;
 			align-items: center;
 			background-color: bisque;
+			color: black;
 			border-radius: 6px;
 		}
 	}

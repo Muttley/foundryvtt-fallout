@@ -194,7 +194,7 @@ export class Roller2D20 {
 			successTreshold,
 		};
 
-		const html = await renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
+		const html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/chat/roll2d20.hbs", rollData);
 
 		let falloutRoll = {};
 		falloutRoll.complicationTreshold = complicationTreshold;
@@ -407,7 +407,7 @@ export class Roller2D20 {
 			weaponDamageTypesList,
 		};
 
-		const html = await renderTemplate(
+		const html = await foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/chat/rollD6.hbs",
 			rollData
 		);
@@ -420,10 +420,13 @@ export class Roller2D20 {
 		falloutRoll.rerollIndexes = rerollIndexes;
 		falloutRoll.rollname = rollname;
 
+		const weaponData = foundry.utils.duplicate(weapon) ?? {};
+		weaponData.uuid = weapon?.uuid;
+
 		const flags = {
 			actor,
 			falloutroll: falloutRoll,
-			weapon,
+			weapon: weaponData,
 		};
 
 		const { whisper, blind } = this.getRollModeSettings();

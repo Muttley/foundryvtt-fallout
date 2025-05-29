@@ -4,11 +4,12 @@ export const hotbarDropHook = {
 	attach: () => {
 		fallout.debug("Attaching hotbarDrop hook");
 
-		Hooks.on("hotbarDrop", async (bar, data, slot) => {
+		Hooks.on("hotbarDrop", (bar, data, slot) => {
 			fallout.debug("Running hotbarDrop hook");
 
 			if (data.type === "Item") {
-				return await createItemMacro(data, slot);
+				createItemMacro(data, slot);
+				return false;
 			}
 		});
 	},

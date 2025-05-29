@@ -9,7 +9,9 @@ export class FalloutHovers {
 		const content = await jsonFile.json();
 
 		for await (const key of Object.keys(content)) {
-			let qEnriched = await TextEditor.enrichHTML(content[key], {async: true});
+			let qEnriched = await foundry.applications.ux.TextEditor.enrichHTML(
+				content[key], {async: true}
+			);
 
 			content[key] = qEnriched
 				.replaceAll("&", "&amp;")

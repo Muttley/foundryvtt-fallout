@@ -237,6 +237,24 @@ FALLOUT.Form.SourceFilters.title: Source Filters
 FALLOUT.HEALTH.current: Current Health
 FALLOUT.HEALTH.health: Health
 FALLOUT.HEALTH.max: Max Health
+FALLOUT.HitLocation.Arm1: Arm 1
+FALLOUT.HitLocation.Arm2: Arm 2
+FALLOUT.HitLocation.Arm3: Arm 3
+FALLOUT.HitLocation.Head: Head
+FALLOUT.HitLocation.LeftArm: Left Arm
+FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
+FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
+FALLOUT.HitLocation.LeftWing: Left Wing (as Leg)
+FALLOUT.HitLocation.Legs: Legs
+FALLOUT.HitLocation.MainBody: Main Body
+FALLOUT.HitLocation.Optics: Optics
+FALLOUT.HitLocation.RightArm: Right Arm
+FALLOUT.HitLocation.RightFrontLeg: Right Front Leg
+FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
+FALLOUT.HitLocation.RightLeg: Right Leg
+FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
+FALLOUT.HitLocation.Torso: Torso
+FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
@@ -616,6 +634,8 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: For each Effect rolled, your attack inflic
 FALLOUT.TOOLTIPS.DamageEffect.stun:  If one or more Effects are rolled, the target cannot take their normal actions on their next turn. A stunned character or creature can still spend AP to take additional actions as normal.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x:  Weapons with the Tranquilize effect deal damage but do not deal Injuries. If an attack with a Tranquilize weapon would deal enough damage to cause an Injury, instead the damaged target must pass a END + Survival or Body + OTHER test with a difficulty of X. If they succeed, the attack has no other effect, if they fail however, they are rendered unconscious for 1 hour. If a target is reduced to 0 HP at the same time as they would suffer an Injury, they automatically fail the test and are rendered unconscious for 1 hour instead of any other effects. Characters immune to poison damage or in a full suit of Power Armor are immune to this Effect.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: The attack inflicts +1 damage for each Effect rolled.
+FALLOUT.TOOLTIPS.Mod.attach: Attach
+FALLOUT.TOOLTIPS.Mod.detach: Detach
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: The vehicle may carry up to X lbs of additional cargo.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: The vehicle is bulky and unresponsive and increases the difficulty tests to move by +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: The vehicle is completely enclosed, protecting crew and passengers within. Crew and passengers cannot be targeted by attacks from outside the vehicle, but also cannot use their own weaponry. Passengers and crew inside of Enclosed vehicles do not suffer Radiation damage from environmental effects.
@@ -674,11 +694,13 @@ FALLOUT.UI.Damage: Damage
 FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
 FALLOUT.UI.DeleteOrJunk.title: Delete or Junk?
 FALLOUT.UI.DISEASES: Diseases
+FALLOUT.UI.ExtraDice: Extra Dice
 FALLOUT.UI.favorite: Favorite
 FALLOUT.UI.INVENTORY: Inventory
 FALLOUT.UI.MISCELLANY: Miscellany
 FALLOUT.UI.Modify: Modify
 FALLOUT.UI.Name: Name
+FALLOUT.UI.NumberOfDice: Number of Dice
 FALLOUT.UI.OTHER: Other
 FALLOUT.UI.Override: Override
 FALLOUT.UI.Perks: Perks
