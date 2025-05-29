@@ -1,3 +1,10 @@
+# v11.16.1
+
+#### Chores
+- [#680] Merge new translation updates from Crowdin
+
+---
+
 # v11.16.0
 
 #### Chores
