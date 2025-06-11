@@ -75,16 +75,12 @@ export default class FalloutChat {
 		fallout.debug("Running renderChatMessage hook");
 
 		html.querySelectorAll(".reroll-button").forEach(element => {
-			element.setAttribute("data-messageId", message.id);
-
 			element.addEventListener("click", async event => {
-				const selectedDiceForReroll =
-					html.querySelectorAll(".dice-selected");
-
 				const rerollIndex = [];
 
-				for (let d of selectedDiceForReroll) {
-					rerollIndex.push($(d).data("index"));
+				const selectedDice = html.querySelectorAll(".dice-selected");
+				for (const die of selectedDice) {
+					rerollIndex.push(die.dataset.index);
 				}
 
 				if (!rerollIndex.length) {
@@ -127,7 +123,7 @@ export default class FalloutChat {
 		});
 
 		html.querySelectorAll(".dice-icon").forEach(element => {
-			element.addEventListener("click", event => {
+			element.addEventListener("click", async event => {
 				const target = event.currentTarget;
 				if (target.classList.contains("dice-selected")) {
 					target.classList.remove("dice-selected");

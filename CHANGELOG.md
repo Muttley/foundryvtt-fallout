@@ -1,3 +1,10 @@
+# v11.16.2
+
+#### Enhancements
+- [#689] Integrate support for Item Piles
+
+---
+
 # v11.16.1
 
 #### Chores
