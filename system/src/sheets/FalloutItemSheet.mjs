@@ -130,20 +130,26 @@ export default class FalloutItemSheet
 		// Enrich Effect Text
 		if (item.system.effect) {
 			foundry.utils.mergeObject(context, {
-				effectHTML: await foundry.applications.ux.TextEditor.enrichHTML(item.system.effect, {
-					secrets: item.isOwner,
-					async: true,
-				}),
+				effectHTML: await foundry.applications.ux.TextEditor.enrichHTML(
+					item.system.effect,
+					{
+						secrets: item.isOwner,
+						async: true,
+					}
+				),
 			});
 		}
 
 		// Enrich Weapon Mod Effect Text
 		if (item.system.modEffects?.effect) {
 			foundry.utils.mergeObject(context, {
-				effectHTML: await foundry.applications.ux.TextEditor.enrichHTML(item.system.modEffects.effect, {
-					secrets: item.isOwner,
-					async: true,
-				}),
+				effectHTML: await foundry.applications.ux.TextEditor.enrichHTML(
+					item.system.modEffects.effect,
+					{
+						secrets: item.isOwner,
+						async: true,
+					}
+				),
 			});
 		}
 
@@ -570,6 +576,10 @@ export default class FalloutItemSheet
 			let active = parseInt(dataSets.active) ?? 0;
 			const name = dataSets.name;
 			const type = dataSets.type;
+
+			if (name === undefined) {
+				return;
+			}
 
 			active = active === 1 ? 0 : 1;
 

@@ -1,3 +1,15 @@
+# v11.16.2
+
+#### Enhancements
+- [#689] Integrate support for v13 compatible Item Piles directly into the system
+
+#### Bugs
+- [#685] Unable to add new Active Effects to Actors and Items
+- [#686] Creature sheet won't allow adding Perks
+- [#687] Weapon item summaries incorrectly including specifically disabled weapon and damage qualities
+
+---
+
 # v11.16.1
 
 #### Chores

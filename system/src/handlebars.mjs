@@ -40,7 +40,7 @@ export default function registerHandlebarsHelpers() {
 
 			const effect = effects[key];
 
-			if (!effect.value) {
+			if (effect.value <= 0) {
 				continue;
 			}
 
@@ -137,7 +137,7 @@ export default function registerHandlebarsHelpers() {
 
 			const quality = qualities[key];
 
-			if (!quality.value) {
+			if (quality.value <= 0) {
 				continue;
 			}
 
