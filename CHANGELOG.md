@@ -1,7 +1,7 @@
 # v11.16.2
 
 #### Enhancements
-- [#689] Integrate support for Item Piles
+- [#689] Integrate support for v13 compatible Item Piles directly into the system
 
 #### Bugs
 - [#685] Unable to add new Active Effects to Actors and Items
