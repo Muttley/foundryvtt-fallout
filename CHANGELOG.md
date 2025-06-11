@@ -4,6 +4,7 @@
 - [#689] Integrate support for Item Piles
 
 #### Bugs
+- [#685] Unable to add new Active Effects to Actors and Items
 - [#686] Creature sheet won't allow adding Perks
 
 ---

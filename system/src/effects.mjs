@@ -28,7 +28,7 @@ export function onManageActiveEffect(event, owner) {
 				"disabled": li.dataset.effectType === "inactive",
 				"duration.rounds": li.dataset.effectType === "temporary" ? 1 : undefined,
 				"icon": "icons/svg/aura.svg",
-				"label": "New Effect",
+				"name": "New Effect",
 				"origin": owner.uuid,
 			}]);
 		case "edit":
