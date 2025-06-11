@@ -3,6 +3,9 @@
 #### Enhancements
 - [#689] Integrate support for Item Piles
 
+#### Bugs
+- [#686] Creature sheet won't allow adding Perks
+
 ---
 
 # v11.16.1
