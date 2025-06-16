@@ -870,6 +870,7 @@ FALLOUT.WEAPON_MOD_TYPES = {
 	frame: "FALLOUT.WEAPON_MOD.type.frame",
 	fuel: "FALLOUT.WEAPON_MOD.type.fuel",
 	grip: "FALLOUT.WEAPON_MOD.type.grip",
+	legendary: "FALLOUT.WEAPON_MOD.type.legendary",
 	magazine: "FALLOUT.WEAPON_MOD.type.magazine",
 	melee: "FALLOUT.WEAPON_MOD.type.melee",
 	muzzle: "FALLOUT.WEAPON_MOD.type.muzzle",
