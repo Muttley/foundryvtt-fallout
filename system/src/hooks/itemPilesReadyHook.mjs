@@ -9,7 +9,7 @@ export const itemPilesReadyHook = {
 			// https://github.com/fantasycalendar/FoundryVTT-ItemPiles/blob/master/docs/api.md
 			game.itempiles.API.addSystemIntegration({
 
-				VERSION: "1.0.4",
+				VERSION: "1.0.5",
 
 				// The actor class type is the type of actor that will be used
 				// for the default item pile actor that is created on first item drop.
@@ -30,6 +30,10 @@ export const itemPilesReadyHook = {
 					{
 						path: "type",
 						filters: "addiction,disease,perk,skill,special_ability,trait",
+					},
+					{
+						path: "system.naturalWeapon",
+						filters: "true",
 					},
 				],
 

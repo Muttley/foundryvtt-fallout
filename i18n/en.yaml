@@ -548,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Mod Type
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Notes
 FALLOUT.TEMPLATES.Origin: Origin
 FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
@@ -673,6 +674,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in t
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
