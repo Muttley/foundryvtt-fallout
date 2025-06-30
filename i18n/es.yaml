@@ -761,6 +761,7 @@ FALLOUT.WEAPON_MOD.type.dish: Reflector
 FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Combustible
 FALLOUT.WEAPON_MOD.type.grip: Empuñadura
+FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Cargador
 FALLOUT.WEAPON_MOD.type.melee: Cuerpo a Cuerpo
 FALLOUT.WEAPON_MOD.type.muzzle: Boca

@@ -237,6 +237,24 @@ FALLOUT.Form.SourceFilters.title: Filtrar Fontes
 FALLOUT.HEALTH.current: Vida Atual
 FALLOUT.HEALTH.health: Pontos de Vida
 FALLOUT.HEALTH.max: Vida máxima
+FALLOUT.HitLocation.Arm1: Arm 1
+FALLOUT.HitLocation.Arm2: Arm 2
+FALLOUT.HitLocation.Arm3: Arm 3
+FALLOUT.HitLocation.Head: Head
+FALLOUT.HitLocation.LeftArm: Left Arm
+FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
+FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
+FALLOUT.HitLocation.LeftWing: Left Wing (as Leg)
+FALLOUT.HitLocation.Legs: Legs
+FALLOUT.HitLocation.MainBody: Main Body
+FALLOUT.HitLocation.Optics: Optics
+FALLOUT.HitLocation.RightArm: Right Arm
+FALLOUT.HitLocation.RightFrontLeg: Right Front Leg
+FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
+FALLOUT.HitLocation.RightLeg: Right Leg
+FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
+FALLOUT.HitLocation.Torso: Torso
+FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.Item.Origin.FixedTraits.label: Traço Fixo
 FALLOUT.Item.Origin.Traits.label: Traços de Origem
 FALLOUT.Item.Origin.Traits.prompt: Selecionar Traço...
@@ -616,6 +634,8 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque causa 
 FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá fazer suas ações normais no próximo turno. Uma personagem ou criatura atordoada ainda pode gastar PA para realizar ações extras como de costume.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante Infligir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste RES + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de PV ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano extra para cada Efeito rolado.
+FALLOUT.TOOLTIPS.Mod.attach: Attach
+FALLOUT.TOOLTIPS.Mod.detach: Detach
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: O veículo pode transportar até X lbs de carga adicional.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: O veículo é maciço e desajeitado, e aumenta os testes de dificuldade para se mover em +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: O veículo é completamente fechado, protegendo a tripulação e os passageiros dentro dele. A tripulação e os passageiros não podem ser alvos de ataques de fora do veículo, mas também não podem usar seu próprio armamento. Os passageiros e a tripulação dentro do veículo não sofrem dano de Radiação de efeitos ambientais.
@@ -674,11 +694,13 @@ FALLOUT.UI.Damage: Dano
 FALLOUT.UI.DeleteOrJunk.message: Gostaria de Deletar ou Sucatear este item?
 FALLOUT.UI.DeleteOrJunk.title: Deletar ou Sucatear?
 FALLOUT.UI.DISEASES: Doenças
+FALLOUT.UI.ExtraDice: Extra Dice
 FALLOUT.UI.favorite: Favorito
 FALLOUT.UI.INVENTORY: Inventário
 FALLOUT.UI.MISCELLANY: Geral
 FALLOUT.UI.Modify: Modificar
 FALLOUT.UI.Name: Nome
+FALLOUT.UI.NumberOfDice: Number of Dice
 FALLOUT.UI.OTHER: Outro
 FALLOUT.UI.Override: Sobrescrever
 FALLOUT.UI.Perks: Vantagens
@@ -739,6 +761,7 @@ FALLOUT.WEAPON_MOD.type.dish: Prato
 FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Combustível
 FALLOUT.WEAPON_MOD.type.grip: Cabo
+FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Carregador
 FALLOUT.WEAPON_MOD.type.melee: Corpo-a-Corpo
 FALLOUT.WEAPON_MOD.type.muzzle: Boca
