@@ -1,6 +1,7 @@
 # v11.16.3
 
 #### Enhancements
+- [#692] Add check box for "natural weapon" and filter in item piles
 - [#696] New "Fuel X" weapon quality
 
 #### Chores
