@@ -548,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Dano Corpo a Corpo
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Modificação
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Sufixo
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Anotações
 FALLOUT.TEMPLATES.Origin: Origem
 FALLOUT.TEMPLATES.OVERSEER_AP: PA DO SUPERVISOR
@@ -655,6 +656,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Uma arma Queima-Roupa é fácil d
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Uma arma Ocultável é pequena ou fácil de esconder consigo. Inimigos não avistam uma arma Ocultável a menos que você a esteja empunhando, ou que façam uma busca completa e sejam bem-sucedidos em um teste de PER + Sobrevivência com dificuldade 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: A dificuldade de qualquer teste de perícia para tratar ferimentos causados por uma arma Debilitante aumenta em 1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: A arma opera em um temporizador ou fusível, e não detonará imediatamente. Uma arma de Arremesso e Atraso pode ser lançada normalmente para o local alvo, enquanto outras armas de Atraso podem ser colocadas no local desejado. Uma arma de Atraso (1) detona no início do primeiro round depois de ser lançada ou acionada de outra forma. Uma arma de Atraso (2) detona no início da rodada depois disso, e assim por diante.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Armas Gatling gastam dez vezes a taxa normal de munição — sempre que você realiza um disparo, uma arma Gatling realiza uma rajada de 10 tiros. Sempre que você gastar munição para aumentar o dano desta arma, adicione +2CD por rajada de dez tiros (até um número máximo de rajadas igual à CdT da arma), em vez de +1CD por disparo."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Ao fazer um ataque com uma arma Imprecisa, você não ganha nenhum benefício com a ação menor Mirar. Uma arma não pode ser Precisa e Imprecisa ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Uma arma Limitada só pode ser usada para realizar um ataque dentro do seu alcance ideal.
@@ -673,6 +675,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Uma arma de Duas Mãos deve ser empun
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quando você faz um ataque com uma arma Não Confiável, o intervalo de complicação do ataque é aumentado em 1. Uma arma não pode ser Confiável e Não Confiável ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Isso nunca foi projetado para ser usado como uma arma portátil. Ao atacar com uma arma dessas, cada complicação inflige em você 2DC de dano de radiação. Uma arma pode não ser Radioativamente Instável e Confiável.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Se um ataque com uma arma com Laçar for bem-sucedido, você pode gastar 2 PA para mover o alvo para até uma zona. Nas rodadas subsequentes, você ou o alvo, podem tentar um teste FOR ou AGI + Atletismo para mover o personagem no outro extremo do laço ou se libertar.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Adicionar
 FALLOUT.UI.Addictions: Vícios
 FALLOUT.UI.APPAREL_MODS: Modificações de Vestuário
@@ -794,6 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Queima-Roupa
 FALLOUT.WEAPONS.weaponQuality.concealed: Ocultável
 FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitante
 FALLOUT.WEAPONS.weaponQuality.delay_x: Atraso
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprecisa
 FALLOUT.WEAPONS.weaponQuality.limited: Limitada

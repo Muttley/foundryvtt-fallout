@@ -548,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Dégâts de Mêlée
 FALLOUT.TEMPLATES.Mod_Type: Type de Mod
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Ajout au Nom
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Notes
 FALLOUT.TEMPLATES.Origin: Origine
 FALLOUT.TEMPLATES.OVERSEER_AP: RÉSERVE MJ PA
@@ -655,6 +656,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Une arme de combat rapproché est
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Une arme avec la qualité Dissimulé est petite ou facile à dissimuler sur vous pour une autre raison. Les ennemis ne voient l'arme que si vous êtes en train de la manier, ou s'ils vous fouillent méthodiquement et réussissent un test de PER + Survie avec une difficulté de 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: La difficulté de tout test de compétence pour guérir les blessures infligées par une arme Invalidante augmente de +1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: L'arme fonctionne avec une minuterie ou une mèche. Il faut les placer à un endroit spécifique. Une arme avec délai(1) explose au début du prochain tour. Une arme avec délai(2) explose deux tours après.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Les armes Gatling dépensent des munitions à 10 fois le rythme normal ; quand vous devriez dépenser 1 munition, une arme Gatling en dépense une rafale de 10 à la place. Chaque fois que vous dépensez des munitions pour augmenter les dégâts de cette arme, ajoutez +2 @fos[DC] par rafale de 10 (jusqu'à un nombre maximum de rafales égal à la cadence de tir de l'arme) au lieu de +1 @fos[DC] par tir."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Quand vous portez une attaque avec une arme Imprécise, vous ne pouvez pas gagner les bénéfices de l'action mineure viser. Une arme ne peut pas être à la fois Précise et Imprécise.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: L'arme ne peut que s'utiliser à sa portée idéale.
@@ -673,6 +675,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Une arme à Deux mains doit être man
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quand vous portez une attaque avec une arme Imprévisible, augmentez la marge de complication de l'attaque de 1. Une arme ne peut pas être à la fois Fiable et Imprévisible.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Cette arme n'a jamais été conçu pour être utilisée comme arme de poing. Lorsque vous attaquez avec, la moindre complication vous inflige 2DC de dégâts dû au retour de radiation. Une arme ne peut pas être à la fois Fiable et Radiation instable.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Si une attaque avec une arme Bataille est réussie, vous pouvez dépenser 2 PA pour déplacer la cible d'une zone. Lors des tours suivants, vous ou la cible, peut essayer un test d'opposition de FOR ou AGI + Athlétisme pour déplacer le personnage à l'autre extrémité du lasso ou se libérer.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
@@ -761,6 +764,7 @@ FALLOUT.WEAPON_MOD.type.dish: Parabole
 FALLOUT.WEAPON_MOD.type.frame: Cadre
 FALLOUT.WEAPON_MOD.type.fuel: Carburant
 FALLOUT.WEAPON_MOD.type.grip: Poignée
+FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Chargeur
 FALLOUT.WEAPON_MOD.type.melee: Corps-à-Corps
 FALLOUT.WEAPON_MOD.type.muzzle: Bouche
@@ -793,6 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Combat rapproché
 FALLOUT.WEAPONS.weaponQuality.concealed: Dissimulé
 FALLOUT.WEAPONS.weaponQuality.debilitating: Invalidant
 FALLOUT.WEAPONS.weaponQuality.delay_x: Délai
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprécis
 FALLOUT.WEAPONS.weaponQuality.limited: Limité
