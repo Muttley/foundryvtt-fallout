@@ -11,6 +11,7 @@
 #### Chores
 - [#694] Merge new translation updates from Crowdin
 - [#698] Merge new translation updates from Crowdin
+- [#700] Accessing the global "Hotbar" which is now namespaced under foundry.applications.ui.Hotbar
 
 ---
 

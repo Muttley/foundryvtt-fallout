@@ -313,7 +313,7 @@ export default class FalloutUtils {
 			const systemVersion = game.system.version;
 
 			if (systemVersion !== savedVersion) {
-				Hotbar.toggleDocumentSheet(
+				this.toggleDocumentSheet(
 					CONFIG.FALLOUT.JOURNAL_UUIDS.releaseNotes
 				);
 
@@ -322,6 +322,22 @@ export default class FalloutUtils {
 					systemVersion
 				);
 			}
+		}
+	}
+
+
+	static async toggleDocumentSheet(uuid) {
+		const document = await fromUuid(uuid);
+
+		if (!document) {
+			return fallout.error(`Unable to find document with uuid '${uuid}'`);
+		}
+
+		if (document.sheet.rendered) {
+			await document.sheet.close();
+		}
+		else {
+			await document.sheet.render(true);
 		}
 	}
 }
