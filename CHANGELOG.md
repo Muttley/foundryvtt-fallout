@@ -3,6 +3,9 @@
 #### Enhancements
 - [#696] New "Fuel X" weapon quality
 
+#### Chores
+- [#694] Merge new translation updates from Crowdin
+
 ---
 
 # v11.16.2
