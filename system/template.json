@@ -1468,6 +1468,7 @@
 				"max": 0,
 				"modded": false
 			},
+			"naturalWeapon":  false,
 			"originalAmmoPerShot": 0,
 			"range": "",
 			"skill": "",
