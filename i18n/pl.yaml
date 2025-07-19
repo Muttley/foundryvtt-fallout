@@ -548,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Obrażenia Wręcz
 FALLOUT.TEMPLATES.Mod_Type: Typ Modyfikacji
 FALLOUT.TEMPLATES.MODULES: Modyfikacje
 FALLOUT.TEMPLATES.Name_Prefix: Element nazwy
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Notatki
 FALLOUT.TEMPLATES.Origin: Pochodzenie
 FALLOUT.TEMPLATES.OVERSEER_AP: PA Nadzorcy
@@ -655,6 +656,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Broń jest poręczna w zasięgu b
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Broń ma niewielkie rozmiary lub można ją łatwo ukryć. Przeciwnik zdoła ją zauważyć tylko wtedy, kiedy trzymasz ją w dłoni lub cię przeszuka i wykona udany test PER + Przetrwania o trudności 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Trudność testów leczenia ran spowodowanych przez tę broń wzrasta o +1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: Broń działa na timer lub bezpiecznik i nie wybucha natychmiast. Broń Opóźnioną można normalnie rzucić w wybrane miejsce, podczas gdy inną broń opóźniającą można umieścić w wybranym miejscu. Broń opóźniająca (1) wybucha na początku pierwszej rundy po rzuceniu lub uruchomieniu w inny sposób. Broń opóźniająca (2) wybucha na początku następnej rundy i tak dalej.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Broń zużywa dziesięć razy więcej amunicji niż normalnie – zamiast 1 jednostki amunicji broń Gatlinga strzela serią 10 pocisków. Jeśli zużywasz amunicję, żeby zwiększyć obrażenia, dodajesz +2 @fos[DC](a nie +1 @fos[DC]) do puli kości za każdą serię dziesięciu jednostek (maksymalnie tyle serii, ile wynosi szybkostrzelność broni)."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Kiedy atakujesz taką bronią, nie odnosisz żadnych korzyści z pomniejszej akcji celowania. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Ograniczona broń może być użyta tylko do ataku w idealnym zasięgu.
@@ -673,6 +675,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią s
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: To nigdy nie było przeznaczone do użycia jako broń ręczna. Kiedy atakujesz bronią, każda komplikacja, którą zadajesz, zadaje 2KW obrażeń od promieniowania w wyniku radioaktywnego sprzężenia zwrotnego. Broń nie może posiadać zarówno stabilnego, jak i niestabilnego promieniowania.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży
@@ -794,6 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Zwarcie
 FALLOUT.WEAPONS.weaponQuality.concealed: Ukryta
 FALLOUT.WEAPONS.weaponQuality.debilitating: Wyniszczająca
 FALLOUT.WEAPONS.weaponQuality.delay_x: Opóźniona
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Niecelna
 FALLOUT.WEAPONS.weaponQuality.limited: Z ograniczeniem
