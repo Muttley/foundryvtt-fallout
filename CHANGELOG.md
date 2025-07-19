@@ -4,8 +4,12 @@
 - [#692] Add check box for "natural weapon" and filter in item piles
 - [#696] New "Fuel X" weapon quality
 
+#### Bugs
+- [#699] Item icon SVGs missing Width and Height parameters which can cause issues when being added to the canvas in some browsers
+
 #### Chores
 - [#694] Merge new translation updates from Crowdin
+- [#698] Merge new translation updates from Crowdin
 
 ---
 
