@@ -5,6 +5,7 @@
 - [#696] New "Fuel X" weapon quality
 
 #### Bugs
+- [#695] Resource values in Settlement Status screen should only display values rounded to the nearest whole number
 - [#699] Item icon SVGs missing Width and Height parameters which can cause issues when being added to the canvas in some browsers
 
 #### Chores
