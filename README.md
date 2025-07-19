@@ -17,7 +17,7 @@ This community contributed and maintained system for playing [Fallout: The Rolep
 
 All copyright assets included in the system are used with the explicit consent of [Modiphius Entertainment][3]. The system developers hold no claims to these underlying copyrighted assets.
 
-*Many thanks to Modiphius for allowing the inclusion of many player facing item compendiums which contain various classes of item from the core rulebook. Their generosity means the system comes with compendiums containing 1031 items from the core rulebook.*
+*Many thanks to Modiphius for allowing the inclusion of many player facing item compendiums, which contain various classes of item from the core rulebook. Their generosity means the system comes with compendiums containing 1031 items from the core rulebook.*
 
 ---
 

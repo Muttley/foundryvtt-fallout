@@ -3,7 +3,7 @@
 	"_key": "!items!8nHC8z4vEY4yX7bM",
 	"effects": [
 	],
-	"folder": "vnStsIp1P4oNrgWt",
+	"folder": "DNGfd7QeFaSwX9WC",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Full Stock",
 	"system": {
@@ -38,8 +38,8 @@
 						"value": 0
 					},
 					"piercing_x": {
-						"rank": 1,
-						"value": 1
+						"rank": 0,
+						"value": 0
 					},
 					"radioactive": {
 						"rank": 0,
@@ -93,7 +93,7 @@
 					},
 					"close_quarters": {
 						"rank": 0,
-						"value": -1
+						"value": 0
 					},
 					"concealed": {
 						"rank": 0,
@@ -107,13 +107,17 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -197,7 +201,7 @@
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "energyWeapons",
+		"weaponType": "smallGuns",
 		"weight": 1
 	},
 	"type": "weapon_mod"

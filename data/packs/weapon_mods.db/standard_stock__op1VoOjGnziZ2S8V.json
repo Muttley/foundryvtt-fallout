@@ -3,7 +3,7 @@
 	"_key": "!items!op1VoOjGnziZ2S8V",
 	"effects": [
 	],
-	"folder": "vnStsIp1P4oNrgWt",
+	"folder": "DNGfd7QeFaSwX9WC",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Standard Stock",
 	"system": {
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {

@@ -1385,6 +1385,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"inaccurate": {
 						"rank": 0,
 						"value": 0
@@ -1570,6 +1574,10 @@
 						},
 						"delay_x": {
 							"rank": 0,
+							"value": 0
+						},
+						"fuel_x": {
+							"rank": 1,
 							"value": 0
 						},
 						"gatling": {

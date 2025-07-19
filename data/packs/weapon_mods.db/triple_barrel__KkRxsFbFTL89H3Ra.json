@@ -3,7 +3,7 @@
 	"_key": "!items!KkRxsFbFTL89H3Ra",
 	"effects": [
 	],
-	"folder": "NFL68qcVw45xA7h0",
+	"folder": "FyM7apyr7UNUi2nF",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Triple Barrel",
 	"system": {
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {

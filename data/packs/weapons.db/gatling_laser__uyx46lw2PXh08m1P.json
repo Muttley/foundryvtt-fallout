@@ -113,6 +113,10 @@
 					"rank": 1,
 					"value": 0
 				},
+				"fuel_x": {
+					"rank": 1,
+					"value": 0
+				},
 				"gatling": {
 					"rank": 0,
 					"value": 1

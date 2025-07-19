@@ -3,7 +3,7 @@
 	"_key": "!items!EuJw4xP1fRt5hdCy",
 	"effects": [
 	],
-	"folder": "5xnlOjZqwEDGq9KM",
+	"folder": "LTVXHvKPOvOunXCb",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Sharp",
 	"system": {
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {

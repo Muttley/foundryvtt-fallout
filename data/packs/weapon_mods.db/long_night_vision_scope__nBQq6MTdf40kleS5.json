@@ -3,7 +3,7 @@
 	"_key": "!items!nBQq6MTdf40kleS5",
 	"effects": [
 	],
-	"folder": "fMIRovgs2p0cBYIe",
+	"folder": "8Uav0KQF8s6bGnC5",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Long Night Vision Scope",
 	"system": {
@@ -107,6 +107,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
@@ -197,7 +201,7 @@
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "energyWeapons",
+		"weaponType": "smallGuns",
 		"weight": 1
 	},
 	"type": "weapon_mod"

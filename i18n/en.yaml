@@ -655,6 +655,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: A Close Quarters weapon is easy t
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: A Concealed weapon is small, or otherwise easy to hide on your person. Enemies do not spot a Concealed weapon unless you’re wielding it, or if they make a thorough search and succeed at a PER + Survival test with a difficulty of 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: The difficulty of any skill test to treat injuries inflicted by a Debilitating weapon increase by +1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: The weapon operates on a timer or fuse, and will not detonate immediately. A Thrown Delay weapon can be thrown normally to the target location, while other Delay weapons may be placed in their desired location. A Delay (1) weapon detonates at the start of the first round after it is thrown or otherwise triggered. A Delay (2) weapon detonates at the start of the round after that, and so on.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Ammunition is spent at ten times the normal rate by Gatling weapons: whenever you would spend one shot of ammunition, a Gatling weapon instead spends a burst of 10 shots. Whenever you spend ammunition to increase this weapon’s damage, add +2 @fos[DC] per ten-shot burst (to a maximum number of bursts equal to the weapon’s Fire Rate), rather than +1 @fos[DC] per shot."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: When making an attack with an Inaccurate weapon, you gain no benefit from the Aim minor action. A weapon may not be both Accurate and Inaccurate.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to make an attack at its ideal range.
@@ -794,6 +795,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
 FALLOUT.WEAPONS.weaponQuality.concealed: Concealed
 FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitating
 FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Inaccurate
 FALLOUT.WEAPONS.weaponQuality.limited: Limited

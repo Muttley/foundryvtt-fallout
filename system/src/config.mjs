@@ -791,6 +791,7 @@ FALLOUT.WEAPON_QUALITIES = {
 	concealed: "FALLOUT.WEAPONS.weaponQuality.concealed",
 	debilitating: "FALLOUT.WEAPONS.weaponQuality.debilitating",
 	delay_x: "FALLOUT.WEAPONS.weaponQuality.delay_x",
+	fuel_x: "FALLOUT.WEAPONS.weaponQuality.fuel_x",
 	gatling: "FALLOUT.WEAPONS.weaponQuality.gatling",
 	inaccurate: "FALLOUT.WEAPONS.weaponQuality.inaccurate",
 	limited: "FALLOUT.WEAPONS.weaponQuality.limited",

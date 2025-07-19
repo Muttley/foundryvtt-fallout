@@ -3,13 +3,13 @@
 	"_key": "!items!D8hF1RjpOMVHjlHp",
 	"effects": [
 	],
-	"folder": "sFnAMjOd2fTxG5bA",
+	"folder": "7Copn089hVoAYonJ",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Heavy",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 12,
+		"cost": 30,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -107,6 +107,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
@@ -190,15 +194,15 @@
 			"summary": ""
 		},
 		"modType": "melee",
-		"namePrefix": "Weighted",
-		"perks": "Blacksmith 1",
+		"namePrefix": "Heavy",
+		"perks": "Blacksmith 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weaponType": "meleeWeapons",
-		"weight": 7
+		"weight": 9
 	},
 	"type": "weapon_mod"
 }

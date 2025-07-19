@@ -1,3 +1,10 @@
+# v11.16.3
+
+#### Enhancements
+- [#696] New "Fuel X" weapon quality
+
+---
+
 # v11.16.2
 
 #### Enhancements
