@@ -237,6 +237,24 @@ FALLOUT.Form.SourceFilters.title: Filtrar Fontes
 FALLOUT.HEALTH.current: Vida Atual
 FALLOUT.HEALTH.health: Pontos de Vida
 FALLOUT.HEALTH.max: Vida máxima
+FALLOUT.HitLocation.Arm1: Arm 1
+FALLOUT.HitLocation.Arm2: Arm 2
+FALLOUT.HitLocation.Arm3: Arm 3
+FALLOUT.HitLocation.Head: Head
+FALLOUT.HitLocation.LeftArm: Left Arm
+FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
+FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
+FALLOUT.HitLocation.LeftWing: Left Wing (as Leg)
+FALLOUT.HitLocation.Legs: Legs
+FALLOUT.HitLocation.MainBody: Main Body
+FALLOUT.HitLocation.Optics: Optics
+FALLOUT.HitLocation.RightArm: Right Arm
+FALLOUT.HitLocation.RightFrontLeg: Right Front Leg
+FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
+FALLOUT.HitLocation.RightLeg: Right Leg
+FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
+FALLOUT.HitLocation.Torso: Torso
+FALLOUT.HitLocation.Wheel: Wheel
 FALLOUT.Item.Origin.FixedTraits.label: Traço Fixo
 FALLOUT.Item.Origin.Traits.label: Traços de Origem
 FALLOUT.Item.Origin.Traits.prompt: Selecionar Traço...
@@ -530,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Dano Corpo a Corpo
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Modificação
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Sufixo
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Anotações
 FALLOUT.TEMPLATES.Origin: Origem
 FALLOUT.TEMPLATES.OVERSEER_AP: PA DO SUPERVISOR
@@ -616,6 +635,8 @@ FALLOUT.TOOLTIPS.DamageEffect.spread: Para cada Efeito rolado, seu ataque causa 
 FALLOUT.TOOLTIPS.DamageEffect.stun: Se um ou mais Efeitos forem rolados, o alvo não poderá fazer suas ações normais no próximo turno. Uma personagem ou criatura atordoada ainda pode gastar PA para realizar ações extras como de costume.
 FALLOUT.TOOLTIPS.DamageEffect.tranquilize_x: Armas com o efeito Tranquilizante causam dano, mas não causam Ferimentos. Se um ataque com uma arma Tranquilizante Infligir dano suficiente para causar um Ferimento, em vez disso, o alvo deve passar um teste RES + Sobrevivência ou Corpo + OUTRO com uma dificuldade de X. Se for bem sucedido, o ataque não terá nenhum Efeito, se falhar, o alvo fica inconsciente por 1 hora. Se um alvo for reduzido para 0 de PV ao mesmo tempo que sofreria um Ferimento, eles falham automaticamente no teste e ficam inconscientes por 1 hora em vez de quaisquer outros efeitos. Personagens imunes a dano venenoso ou em um traje completo de Armadura Potente são imunes a este efeito.
 FALLOUT.TOOLTIPS.DamageEffect.vicious: O ataque causa +1 de dano extra para cada Efeito rolado.
+FALLOUT.TOOLTIPS.Mod.attach: Attach
+FALLOUT.TOOLTIPS.Mod.detach: Detach
 FALLOUT.TOOLTIPS.VehicleQuality.cargo_x: O veículo pode transportar até X lbs de carga adicional.
 FALLOUT.TOOLTIPS.VehicleQuality.cumbersome: O veículo é maciço e desajeitado, e aumenta os testes de dificuldade para se mover em +1.
 FALLOUT.TOOLTIPS.VehicleQuality.enclosed: O veículo é completamente fechado, protegendo a tripulação e os passageiros dentro dele. A tripulação e os passageiros não podem ser alvos de ataques de fora do veículo, mas também não podem usar seu próprio armamento. Os passageiros e a tripulação dentro do veículo não sofrem dano de Radiação de efeitos ambientais.
@@ -635,6 +656,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Uma arma Queima-Roupa é fácil d
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Uma arma Ocultável é pequena ou fácil de esconder consigo. Inimigos não avistam uma arma Ocultável a menos que você a esteja empunhando, ou que façam uma busca completa e sejam bem-sucedidos em um teste de PER + Sobrevivência com dificuldade 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: A dificuldade de qualquer teste de perícia para tratar ferimentos causados por uma arma Debilitante aumenta em 1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: A arma opera em um temporizador ou fusível, e não detonará imediatamente. Uma arma de Arremesso e Atraso pode ser lançada normalmente para o local alvo, enquanto outras armas de Atraso podem ser colocadas no local desejado. Uma arma de Atraso (1) detona no início do primeiro round depois de ser lançada ou acionada de outra forma. Uma arma de Atraso (2) detona no início da rodada depois disso, e assim por diante.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Armas Gatling gastam dez vezes a taxa normal de munição — sempre que você realiza um disparo, uma arma Gatling realiza uma rajada de 10 tiros. Sempre que você gastar munição para aumentar o dano desta arma, adicione +2CD por rajada de dez tiros (até um número máximo de rajadas igual à CdT da arma), em vez de +1CD por disparo."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Ao fazer um ataque com uma arma Imprecisa, você não ganha nenhum benefício com a ação menor Mirar. Uma arma não pode ser Precisa e Imprecisa ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Uma arma Limitada só pode ser usada para realizar um ataque dentro do seu alcance ideal.
@@ -653,6 +675,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Uma arma de Duas Mãos deve ser empun
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quando você faz um ataque com uma arma Não Confiável, o intervalo de complicação do ataque é aumentado em 1. Uma arma não pode ser Confiável e Não Confiável ao mesmo tempo.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Isso nunca foi projetado para ser usado como uma arma portátil. Ao atacar com uma arma dessas, cada complicação inflige em você 2DC de dano de radiação. Uma arma pode não ser Radioativamente Instável e Confiável.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Se um ataque com uma arma com Laçar for bem-sucedido, você pode gastar 2 PA para mover o alvo para até uma zona. Nas rodadas subsequentes, você ou o alvo, podem tentar um teste FOR ou AGI + Atletismo para mover o personagem no outro extremo do laço ou se libertar.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Adicionar
 FALLOUT.UI.Addictions: Vícios
 FALLOUT.UI.APPAREL_MODS: Modificações de Vestuário
@@ -674,11 +697,13 @@ FALLOUT.UI.Damage: Dano
 FALLOUT.UI.DeleteOrJunk.message: Gostaria de Deletar ou Sucatear este item?
 FALLOUT.UI.DeleteOrJunk.title: Deletar ou Sucatear?
 FALLOUT.UI.DISEASES: Doenças
+FALLOUT.UI.ExtraDice: Extra Dice
 FALLOUT.UI.favorite: Favorito
 FALLOUT.UI.INVENTORY: Inventário
 FALLOUT.UI.MISCELLANY: Geral
 FALLOUT.UI.Modify: Modificar
 FALLOUT.UI.Name: Nome
+FALLOUT.UI.NumberOfDice: Number of Dice
 FALLOUT.UI.OTHER: Outro
 FALLOUT.UI.Override: Sobrescrever
 FALLOUT.UI.Perks: Vantagens
@@ -739,6 +764,7 @@ FALLOUT.WEAPON_MOD.type.dish: Prato
 FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Combustível
 FALLOUT.WEAPON_MOD.type.grip: Cabo
+FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Carregador
 FALLOUT.WEAPON_MOD.type.melee: Corpo-a-Corpo
 FALLOUT.WEAPON_MOD.type.muzzle: Boca
@@ -771,6 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Queima-Roupa
 FALLOUT.WEAPONS.weaponQuality.concealed: Ocultável
 FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitante
 FALLOUT.WEAPONS.weaponQuality.delay_x: Atraso
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprecisa
 FALLOUT.WEAPONS.weaponQuality.limited: Limitada

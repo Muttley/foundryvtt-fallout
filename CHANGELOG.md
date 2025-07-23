@@ -1,3 +1,20 @@
+# v11.16.3
+
+#### Enhancements
+- [#692] Add check box for "natural weapon" and filter in item piles
+- [#696] New "Fuel X" weapon quality
+
+#### Bugs
+- [#695] Resource values in Settlement Status screen should only display values rounded to the nearest whole number
+- [#699] Item icon SVGs missing Width and Height parameters which can cause issues when being added to the canvas in some browsers
+
+#### Chores
+- [#694] Merge new translation updates from Crowdin
+- [#698] Merge new translation updates from Crowdin
+- [#700] Accessing the global "Hotbar" which is now namespaced under foundry.applications.ui.Hotbar
+
+---
+
 # v11.16.2
 
 #### Enhancements

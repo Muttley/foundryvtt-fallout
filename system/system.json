@@ -2,7 +2,7 @@
 	"id": "fallout",
 	"title": "Fallout: The Roleplaying Game",
 	"description": "An unofficial system for playing the Fallout RPG from Modiphius Entertainment Ltd.",
-	"version": "11.16.2",
+	"version": "11.16.3",
 	"compatibility": {
 		"minimum": "13",
 		"verified": "13"
@@ -12,7 +12,8 @@
 			"name": "Paul Maskelyne",
 			"discord": "muttley",
 			"email": "mu77ley@gmail.com",
-			"mastodon": "@muttley@dice.camp"
+			"mastodon": "@muttley@dice.camp",
+			"url": "https://www.patreon.com/muttley"
 		},
 		{
 			"name": "HappySteve"

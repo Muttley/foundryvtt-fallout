@@ -3,13 +3,13 @@
 	"_key": "!items!IT15FDgwEelj1LYg",
 	"effects": [
 	],
-	"folder": "wN9h6LxBvefZhQyc",
+	"folder": "Htqdrwq1W92U4qPP",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Beam Focuser",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 22,
+		"cost": 20,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -38,8 +38,8 @@
 						"value": 0
 					},
 					"piercing_x": {
-						"rank": 1,
-						"value": 1
+						"rank": 0,
+						"value": 0
 					},
 					"radioactive": {
 						"rank": 0,
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {
@@ -189,16 +193,16 @@
 			"range": 1,
 			"summary": ""
 		},
-		"modType": "nozzle",
+		"modType": "muzzle",
 		"namePrefix": "Focused",
-		"perks": "",
+		"perks": "Science! 1",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "bigGuns",
-		"weight": 0
+		"weaponType": "energyWeapons",
+		"weight": 1
 	},
 	"type": "weapon_mod"
 }

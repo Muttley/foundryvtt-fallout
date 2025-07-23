@@ -3,13 +3,13 @@
 	"_key": "!items!5TezV1CMuZiRXrKU",
 	"effects": [
 	],
-	"folder": "XtgWC9Ev4cxCj2nq",
+	"folder": "FsftjyUpE5iKkHY3",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Photon Agitator",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 132,
+		"cost": 35,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -107,6 +107,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
@@ -191,14 +195,14 @@
 		},
 		"modType": "capacitor",
 		"namePrefix": "Agitated",
-		"perks": "Science! 3",
+		"perks": "Science! 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "bigGuns",
-		"weight": 3
+		"weaponType": "energyWeapons",
+		"weight": 1
 	},
 	"type": "weapon_mod"
 }

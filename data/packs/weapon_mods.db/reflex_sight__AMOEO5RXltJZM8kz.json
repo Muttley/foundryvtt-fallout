@@ -3,13 +3,13 @@
 	"_key": "!items!AMOEO5RXltJZM8kz",
 	"effects": [
 	],
-	"folder": "rBxwC4kGr3U3mShx",
+	"folder": "8Uav0KQF8s6bGnC5",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Reflex Sight",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 169,
+		"cost": 14,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -107,13 +107,17 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": -1
+						"value": 0
 					},
 					"limited": {
 						"rank": 0,
@@ -183,7 +187,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "",
+			"effect": "<p>May re-roll hit location die</p>",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,
@@ -191,14 +195,14 @@
 		},
 		"modType": "sight",
 		"namePrefix": "Tactical",
-		"perks": "Science! 4",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "bigGuns",
-		"weight": 1
+		"weaponType": "smallGuns",
+		"weight": 0
 	},
 	"type": "weapon_mod"
 }

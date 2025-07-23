@@ -3,7 +3,7 @@
 	"_key": "!items!4sOu5mfXcDlUVlUP",
 	"effects": [
 	],
-	"folder": "enLFbKZ7j9OhhYoD",
+	"folder": "6UzbK9PPHiwhf29b",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Sharpshooter's Grip",
 	"system": {
@@ -107,6 +107,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
@@ -197,7 +201,7 @@
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "energyWeapons",
+		"weaponType": "smallGuns",
 		"weight": 0
 	},
 	"type": "weapon_mod"

@@ -3,7 +3,7 @@
 	"_key": "!items!ULmvHBqIQuMGNg1o",
 	"effects": [
 	],
-	"folder": "XtgWC9Ev4cxCj2nq",
+	"folder": "FsftjyUpE5iKkHY3",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Boosted Capacitor",
 	"system": {
@@ -107,6 +107,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
@@ -184,7 +188,7 @@
 			"damageEffect": "",
 			"damageRating": 0,
 			"effect": "",
-			"fireRate": 0,
+			"fireRate": -1,
 			"info": "",
 			"range": 0,
 			"summary": ""

@@ -3,7 +3,7 @@
 	"_key": "!items!H5uajcZl8MICYwfy",
 	"effects": [
 	],
-	"folder": "vnStsIp1P4oNrgWt",
+	"folder": "DNGfd7QeFaSwX9WC",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Recoil Compensating Stock",
 	"system": {
@@ -93,7 +93,7 @@
 					},
 					"close_quarters": {
 						"rank": 0,
-						"value": -1
+						"value": 0
 					},
 					"concealed": {
 						"rank": 0,
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {
@@ -197,7 +201,7 @@
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
-		"weaponType": "energyWeapons",
+		"weaponType": "smallGuns",
 		"weight": 2
 	},
 	"type": "weapon_mod"

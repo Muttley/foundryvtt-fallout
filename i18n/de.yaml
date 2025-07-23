@@ -548,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Nahkampfschaden
 FALLOUT.TEMPLATES.Mod_Type: Mod Typ
 FALLOUT.TEMPLATES.MODULES: MODULE
 FALLOUT.TEMPLATES.Name_Prefix: Namespräfix
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Notes
 FALLOUT.TEMPLATES.Origin: Herkunft
 FALLOUT.TEMPLATES.OVERSEER_AP: SPIELLEITERIN AP
@@ -655,6 +656,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: Eine Waffe für beengte Verhältn
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: Eine Verborgene Waffe ist klein oder anderweitig leicht an der eigenen Person zu verstecken. Feinde entdecken eine Verborgene Waffe nicht, solange du sie nicht in der Hand hältst. Sie können sie entdecken, wenn sie eine gründliche Suche durchführen und eine erfolgreiche Probe auf WAH + Überleben mit einer Schwierigkeit von 2 ablegen.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: Die Schwierigkeit einer Fertigkeitsprobe zur Behandlung von Verletzungen, die durch eine schwächende Waffe verursacht wurden, ist um +1 erhöht.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: Die Waffe arbeitet mit einem Timer oder einer Zündschnur und wird nicht sofort gezündet. Eine geworfene Verzögerungswaffe kann normal zum Zielort geworfen werden, während andere Verzögerungswaffen am gewünschten Ort platziert werden können. Eine Verzögerungswaffe (1) detoniert zu Beginn der ersten Runde, nachdem sie geworfen oder anderweitig ausgelöst wurde. Eine Delay (2)-Waffe detoniert zu Beginn der darauf folgenden Runde usw.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Gatling-Waffen verschießen ihre Munition mit dem Zehnfachen der normalen Feuerrate: Wann immer du einen Schuss Munition ausgeben würdest, verschießt eine Gatling-Waffe stattdessen eine Serie von 10 Schüssen. Wann immer du Munition ausgibst, um den Schaden dieser Waffe zu erhöhen, füge +2 @fos[DC] pro Zehn-Schuss-Salve hinzu (bis zu einer maximalen Anzahl an Feuerstößen, die der Feuerrate der Waffe entspricht), statt der üblichen +1 @fos[DC] pro Schuss."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: Wenn du einen Angriff mit einer Ungenauen Waffe ausführst, erhältst du keinen Vorteil durch die Nebenaktion Zielen. Eine Waffe kann nicht gleichzeitig Präzise und Ungenau sein.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: Eine begrenzte Waffe kann nur für einen Angriff in ihrer idealen Reichweite verwendet werden.
@@ -673,6 +675,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Eine Zweihändige Waffe muss in zwei 
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Wenn du einen Angriff mit einer Unzuverlässigen Waffe ausführst, erhöht sich der Komplikationsbereich des Angriffs um 1. Eine Waffe kann nicht gleichzeitig Zuverlässig und Unzuverlässig sein.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Diese Waffe war nie als Handwaffe gedacht. Wenn du mit einer Waffe angreifst, fügt dir jede Komplikation 2DC Strahlungsschaden durch radioaktive Rückstrahlung zu. Eine Waffe darf nicht gleichzeitig über zuverlässige und unstabile Strahlung verfügen.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Hinzufügen
 FALLOUT.UI.Addictions: Sucht
 FALLOUT.UI.APPAREL_MODS: Kleidung Mods
@@ -761,6 +764,7 @@ FALLOUT.WEAPON_MOD.type.dish: Dish
 FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Fuel
 FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Magazine
 FALLOUT.WEAPON_MOD.type.melee: Melee
 FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
@@ -793,6 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Beengte Verhältnisse
 FALLOUT.WEAPONS.weaponQuality.concealed: Verborgen
 FALLOUT.WEAPONS.weaponQuality.debilitating: Schwächend
 FALLOUT.WEAPONS.weaponQuality.delay_x: Verzögerung
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Ungenau
 FALLOUT.WEAPONS.weaponQuality.limited: Eingeschränkt

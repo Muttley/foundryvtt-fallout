@@ -548,6 +548,7 @@ FALLOUT.TEMPLATES.Melee_Damage: Melee Damage
 FALLOUT.TEMPLATES.Mod_Type: Mod Type
 FALLOUT.TEMPLATES.MODULES: MODULES
 FALLOUT.TEMPLATES.Name_Prefix: Name Prefix
+FALLOUT.TEMPLATES.naturalWeapon: Natural Weapon
 FALLOUT.TEMPLATES.Notes: Notes
 FALLOUT.TEMPLATES.Origin: Origin
 FALLOUT.TEMPLATES.OVERSEER_AP: OVERSEER AP
@@ -655,6 +656,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.close_quarters: A Close Quarters weapon is easy t
 FALLOUT.TOOLTIPS.WeaponQuality.concealed: A Concealed weapon is small, or otherwise easy to hide on your person. Enemies do not spot a Concealed weapon unless you’re wielding it, or if they make a thorough search and succeed at a PER + Survival test with a difficulty of 2.
 FALLOUT.TOOLTIPS.WeaponQuality.debilitating: The difficulty of any skill test to treat injuries inflicted by a Debilitating weapon increase by +1.
 FALLOUT.TOOLTIPS.WeaponQuality.delay_x: The weapon operates on a timer or fuse, and will not detonate immediately. A Thrown Delay weapon can be thrown normally to the target location, while other Delay weapons may be placed in their desired location. A Delay (1) weapon detonates at the start of the first round after it is thrown or otherwise triggered. A Delay (2) weapon detonates at the start of the round after that, and so on.
+FALLOUT.TOOLTIPS.WeaponQuality.fuel_x: Weapons with the Fuel quality require loading with the ammunition type noted on the Quality. The weapon requires loading with a number of units of ammunition equivalent to its base damage rating to operate. When rolling a complication with this weapon, it runs out of fuel and will require reloading with a Minor action before it can be used again.
 FALLOUT.TOOLTIPS.WeaponQuality.gatling: "Ammunition is spent at ten times the normal rate by Gatling weapons: whenever you would spend one shot of ammunition, a Gatling weapon instead spends a burst of 10 shots. Whenever you spend ammunition to increase this weapon’s damage, add +2 @fos[DC] per ten-shot burst (to a maximum number of bursts equal to the weapon’s Fire Rate), rather than +1 @fos[DC] per shot."
 FALLOUT.TOOLTIPS.WeaponQuality.inaccurate: When making an attack with an Inaccurate weapon, you gain no benefit from the Aim minor action. A weapon may not be both Accurate and Inaccurate.
 FALLOUT.TOOLTIPS.WeaponQuality.limited: A limited weapon can only be used to make an attack at its ideal range.
@@ -673,6 +675,7 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: A Two-Handed weapon must be held in t
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: When you make an attack with an Unreliable weapon, increase the complication range of the attack by 1. A weapon may not be both Reliable and Unreliable.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: This was never designed to be used as a handheld weapon. When attacking with a weapon, each complication you inflicts 2DC Radiation damage from radioactive feedback. A weapon may not have both Reliable and Unstable Radiation.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Add
 FALLOUT.UI.Addictions: Addictions
 FALLOUT.UI.APPAREL_MODS: Apparel Mods
@@ -761,6 +764,7 @@ FALLOUT.WEAPON_MOD.type.dish: Dish
 FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Fuel
 FALLOUT.WEAPON_MOD.type.grip: Grip
+FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Magazine
 FALLOUT.WEAPON_MOD.type.melee: Melee
 FALLOUT.WEAPON_MOD.type.muzzle: Muzzle
@@ -793,6 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Close Quarters
 FALLOUT.WEAPONS.weaponQuality.concealed: Concealed
 FALLOUT.WEAPONS.weaponQuality.debilitating: Debilitating
 FALLOUT.WEAPONS.weaponQuality.delay_x: Delay
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Inaccurate
 FALLOUT.WEAPONS.weaponQuality.limited: Limited

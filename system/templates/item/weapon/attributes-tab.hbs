@@ -30,6 +30,18 @@
 		</select>
 	</div>
 
+	<div class="flexrow resource-row">
+		<label class="field-label">
+			{{localize "FALLOUT.TEMPLATES.naturalWeapon"}}
+		</label>
+		<input class="input-checkbox"
+			   data-dtype="Boolean"
+			   name="system.naturalWeapon"
+			   type="checkbox"
+			   data-tooltip="{{localize "FALLOUT.TOOLTIPS.Weapon.naturalWeapon"}}"
+			   {{checked system.naturalWeapon}} />
+	</div>
+
 	<div class="resource-row flexrow">
 		<label class="field-label" for="system.attribute">
 			{{localize "FALLOUT.TEMPLATES.Creature_Attribute"}}

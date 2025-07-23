@@ -3,13 +3,13 @@
 	"_key": "!items!7hxh0xRNMyflfbJp",
 	"effects": [
 	],
-	"folder": "5yHGwteuEGVE1Vrk",
+	"folder": "36UsRm4n8Pr0UaUy",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Serrated Blade",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 12,
+		"cost": 25,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -69,7 +69,7 @@
 					"radiation": false
 				},
 				"overrideDamage": "modify",
-				"rating": 1,
+				"rating": 0,
 				"weaponQuality": {
 					"accurate": {
 						"rank": 0,
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {
@@ -191,7 +195,7 @@
 		},
 		"modType": "melee",
 		"namePrefix": "Serrated",
-		"perks": "Blacksmith 1",
+		"perks": "Blacksmith 2",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,

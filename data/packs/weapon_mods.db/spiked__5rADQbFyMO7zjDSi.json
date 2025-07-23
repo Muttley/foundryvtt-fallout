@@ -3,13 +3,13 @@
 	"_key": "!items!5rADQbFyMO7zjDSi",
 	"effects": [
 	],
-	"folder": "Pq7KJHHyHnmMte4R",
+	"folder": "tKXXYXVZLrhcX4yZ",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Spiked",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 7,
+		"cost": 3,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -107,6 +107,10 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
@@ -191,14 +195,14 @@
 		},
 		"modType": "melee",
 		"namePrefix": "Spiked",
-		"perks": "Blacksmith 1",
+		"perks": "",
 		"qualities": "",
 		"quantity": 1,
 		"rarity": 0,
 		"source": "core_rulebook",
 		"stashed": false,
 		"weaponType": "meleeWeapons",
-		"weight": 1
+		"weight": 0
 	},
 	"type": "weapon_mod"
 }

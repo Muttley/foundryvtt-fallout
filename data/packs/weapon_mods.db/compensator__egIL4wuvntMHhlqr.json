@@ -3,7 +3,7 @@
 	"_key": "!items!egIL4wuvntMHhlqr",
 	"effects": [
 	],
-	"folder": "KFg4RIFxfyGL2Afb",
+	"folder": "Htqdrwq1W92U4qPP",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Compensator",
 	"system": {
@@ -105,6 +105,10 @@
 					},
 					"delay_x": {
 						"rank": 0,
+						"value": 0
+					},
+					"fuel_x": {
+						"rank": 1,
 						"value": 0
 					},
 					"gatling": {

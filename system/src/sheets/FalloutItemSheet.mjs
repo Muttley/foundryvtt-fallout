@@ -728,7 +728,15 @@ export default class FalloutItemSheet
 			);
 		}
 
-		return modsByType;
+		let sortedModsByType = {};
+
+		for (const key in CONFIG.FALLOUT.WEAPON_MOD_TYPES) {
+			if (modsByType.hasOwnProperty(key)) {
+				sortedModsByType[key] = modsByType[key];
+			}
+		}
+
+		return sortedModsByType;
 	}
 
 	async _onToggleApparelMod(event) {

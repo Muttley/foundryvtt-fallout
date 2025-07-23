@@ -3,13 +3,13 @@
 	"_key": "!items!5gXCZXtJ4E9Blg97",
 	"effects": [
 	],
-	"folder": "IEE570d0qQIojCKB",
+	"folder": "8Uav0KQF8s6bGnC5",
 	"img": "systems/fallout/assets/icons/items/weapon_mod.svg",
 	"name": "Gunner Sight",
 	"system": {
 		"attachable": true,
 		"attached": false,
-		"cost": 5,
+		"cost": 68,
 		"description": "",
 		"favorite": false,
 		"modEffects": {
@@ -107,13 +107,17 @@
 						"rank": 0,
 						"value": 0
 					},
+					"fuel_x": {
+						"rank": 1,
+						"value": 0
+					},
 					"gatling": {
 						"rank": 0,
 						"value": 0
 					},
 					"inaccurate": {
 						"rank": 0,
-						"value": 0
+						"value": -1
 					},
 					"limited": {
 						"rank": 0,
@@ -183,7 +187,7 @@
 			},
 			"damageEffect": "",
 			"damageRating": 0,
-			"effect": "<p>May re-roll hit location die</p>",
+			"effect": "",
 			"fireRate": 0,
 			"info": "",
 			"range": 0,

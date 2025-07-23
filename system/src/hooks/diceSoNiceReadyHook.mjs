@@ -1,6 +1,6 @@
 export const diceSoNiceReadyHook = {
 	attach: () => {
-		fallout.debug("Attaching ready hook");
+		fallout.debug("Attaching diceSoNiceReadyHook hook");
 
 		Hooks.once("diceSoNiceReady", async dice3d => {
 			fallout.debug("Running diceSoNiceReady hook");
