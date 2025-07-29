@@ -154,13 +154,14 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 					continue;
 				}
 
+				let itemUuid = result.documentUuid;
+
 				const uuidElements = [];
 				if (result.type === "pack") {
 					uuidElements.push("Compendium");
+					uuidElements.push(result.documentCollection, result.documentId);
+					itemUuid = uuidElements.join(".");
 				}
-				uuidElements.push(result.documentCollection, result.documentId);
-
-				const itemUuid = uuidElements.join(".");
 
 				this.drawItemsLut[itemUuid] = true;
 
