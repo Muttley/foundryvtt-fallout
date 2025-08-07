@@ -1,3 +1,13 @@
+# v11.16.4
+
+#### Bugs
+- [#704] Scavenging feature not working
+
+#### Chores
+- [#701] Merge new French translation updates from Crowdin
+
+---
+
 # v11.16.3
 
 #### Enhancements
