@@ -764,7 +764,7 @@ FALLOUT.WEAPON_MOD.type.dish: Parabole
 FALLOUT.WEAPON_MOD.type.frame: Cadre
 FALLOUT.WEAPON_MOD.type.fuel: Carburant
 FALLOUT.WEAPON_MOD.type.grip: Poignée
-FALLOUT.WEAPON_MOD.type.legendary: Legendary
+FALLOUT.WEAPON_MOD.type.legendary: Légendaire
 FALLOUT.WEAPON_MOD.type.magazine: Chargeur
 FALLOUT.WEAPON_MOD.type.melee: Corps-à-Corps
 FALLOUT.WEAPON_MOD.type.muzzle: Bouche
@@ -797,7 +797,7 @@ FALLOUT.WEAPONS.weaponQuality.close_quarters: Combat rapproché
 FALLOUT.WEAPONS.weaponQuality.concealed: Dissimulé
 FALLOUT.WEAPONS.weaponQuality.debilitating: Invalidant
 FALLOUT.WEAPONS.weaponQuality.delay_x: Délai
-FALLOUT.WEAPONS.weaponQuality.fuel_x: Fuel
+FALLOUT.WEAPONS.weaponQuality.fuel_x: Carburant
 FALLOUT.WEAPONS.weaponQuality.gatling: Gatling
 FALLOUT.WEAPONS.weaponQuality.inaccurate: Imprécis
 FALLOUT.WEAPONS.weaponQuality.limited: Limité

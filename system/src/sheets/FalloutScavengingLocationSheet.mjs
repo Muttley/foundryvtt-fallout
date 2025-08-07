@@ -131,7 +131,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 	async _rollLocationItemsForCategory(category, count, tableUuid) {
 		const table = await fromUuid(tableUuid);
 
-		if (!table) {
+		if (!table && category !== "junk") {
 			const message = game.i18n.format(
 				"FALLOUT.SCAVENGING_LOCATION.Error.MissingTable",
 				{ category, tableUuid }
@@ -146,21 +146,13 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 		if (table) {
 			for (let i = 0; i < count; i++) {
 				const draw = await table.draw({displayChat: false});
-				const result = draw.results.find(
-					r => r.type === "pack" || r.type === "document"
-				);
+				const result = draw.results.find(r => r.type === "document");
 
 				if (!result) {
 					continue;
 				}
 
-				const uuidElements = [];
-				if (result.type === "pack") {
-					uuidElements.push("Compendium");
-				}
-				uuidElements.push(result.documentCollection, result.documentId);
-
-				const itemUuid = uuidElements.join(".");
+				let itemUuid = result.documentUuid;
 
 				this.drawItemsLut[itemUuid] = true;
 
