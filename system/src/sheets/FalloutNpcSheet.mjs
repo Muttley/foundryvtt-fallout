@@ -41,6 +41,68 @@ export default class FalloutNpcSheet extends FalloutBaseActorSheet {
 		super.activateListeners(html);
 
 		html.find(".roll-wealth").click(this._onRollWealth.bind(this));
+
+		let menuSkills = [
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Strength",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "str");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Perception",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "per");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Endurance",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "end");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Charisma",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "cha");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Intelligence",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "int");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Agility",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "agi");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Luck",
+				callback: t => {
+					this._onRightClickSkill(t.data("itemId"), "luc");
+				},
+			},
+			{
+				icon: '<i class="fas fa-trash" style="color:red"></i>',
+				name: "FALLOUT.TEMPLATES.Delete",
+				callback: t => {
+					this._onRightClickDelete(t.data("itemId"));
+				},
+			},
+		];
+
+		new ContextMenu(html, ".skill", menuSkills);
+		// * END SKILLS
 	}
 
 	async getData(options) {
