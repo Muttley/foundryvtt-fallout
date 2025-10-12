@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "8HBxoFI4IGjaL6eX",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon_knife.svg",
 	"name": "Combat Knife",
 	"system": {
 		"ammo": "",

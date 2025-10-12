@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "wuijs0qVP74GkECb",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon_pistol.svg",
 	"name": "10mm Auto Pistol",
 	"system": {
 		"ammo": "10mm Round",

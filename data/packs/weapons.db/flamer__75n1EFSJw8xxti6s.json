@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "wuijs0qVP74GkECb",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon_flamer.svg",
 	"name": "Flamer",
 	"system": {
 		"ammo": "Flamer Fuel",

@@ -4,7 +4,7 @@
 	"effects": [
 	],
 	"folder": "zXkvl0ffMYUzEMkw",
-	"img": "systems/fallout/assets/icons/items/weapon.svg",
+	"img": "systems/fallout/assets/icons/items/weapon_flamer.svg",
 	"name": "Heavy Incinerator",
 	"system": {
 		"ammo": "Flamer Fuel",
