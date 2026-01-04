@@ -46,6 +46,7 @@ FALLOUT.APP.SalvageJunk.start: Commencer la récupération
 FALLOUT.APP.SalvageJunk.time: Cela prendra {time}
 FALLOUT.APP.SalvageJunk.title: Récupération du Bric-à-brac
 FALLOUT.APPAREL_MOD.shadowed: Ombrées
+FALLOUT.APPAREL_MOD.type.legendary: Legendary
 FALLOUT.APPAREL_MOD.type.lining: Revêtement
 FALLOUT.APPAREL_MOD.type.material: Matériau
 FALLOUT.APPAREL_MOD.type.plating: Blindage
@@ -646,6 +647,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: Le véhicule est puissant et f
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Effectuer des tests pour réparer les véhicules robustes réduit de 1 la difficulté.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Un véhicule à siège unique est conçu pour être conduit par un seul pilote, en assumant également le rôle de fusilleur sans la pénalité normale.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: Le véhicule circule seulement sur l'eau et ne peut absolument pas se déplacer le long du sol. Si ce véhicule subit un coup critique sur le châssis, il commence à prendre de l'eau, et coulera après un nombre de tours égal au double de l'échelle du véhicule.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Ne consommera pas de munitions supplémentaires.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si vous effectuez l'action mineure viser avant d'attaquer avec une arme Précise, vous pouvez dépenser jusqu'à 3 PA pour ajouter +1 @fos[DC] par PA dépensé aux dégâts de l'attaque. Si vous gagnez des dégâts de cette manière, vous ne pouvez pas dépenser de munitions pour gagner des dégâts supplémentaires. Une arme ne peut pas être à la fois Précise et Imprécise.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: L'arme utilise beaucoup plus de munitions que la plupart des armes. A chaque tir l'arme dépense X munitions à la place d'une seule. De plus chaque tir supplémentaire coute X munitions toujours limité par la cadence de tir. Cela compte également pour En Rafale.
@@ -675,7 +677,6 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Une arme à Deux mains doit être man
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Quand vous portez une attaque avec une arme Imprévisible, augmentez la marge de complication de l'attaque de 1. Une arme ne peut pas être à la fois Fiable et Imprévisible.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: Cette arme n'a jamais été conçu pour être utilisée comme arme de poing. Lorsque vous attaquez avec, la moindre complication vous inflige 2DC de dégâts dû au retour de radiation. Une arme ne peut pas être à la fois Fiable et Radiation instable.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: Si une attaque avec une arme Bataille est réussie, vous pouvez dépenser 2 PA pour déplacer la cible d'une zone. Lors des tours suivants, vous ou la cible, peut essayer un test d'opposition de FOR ou AGI + Athlétisme pour déplacer le personnage à l'autre extrémité du lasso ou se libérer.
-FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Ajouter
 FALLOUT.UI.Addictions: Dépendances
 FALLOUT.UI.APPAREL_MODS: Mods Habillement
