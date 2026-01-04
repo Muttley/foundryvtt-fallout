@@ -441,6 +441,69 @@ export default class FalloutBaseActorSheet
 				el.dataset.tooltip = "FALLOUT.Actor.Warnings.ActiveEffectOverride";
 			});
 		}
+
+		let menuSkills = [
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Strength",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "str");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Perception",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "per");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Endurance",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "end");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Charisma",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "cha");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Intelligence",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "int");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Agility",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "agi");
+				},
+			},
+			{
+				icon: '<i class="fas fa-dice"></i>',
+				name: "FALLOUT.TEMPLATES.Use_Luck",
+				callback: t => {
+					this._onRightClickSkill(t.dataset?.itemId, "luc");
+				},
+			},
+			{
+				icon: '<i class="fas fa-trash" style="color:red"></i>',
+				name: "FALLOUT.TEMPLATES.Delete",
+				callback: t => {
+					this._onRightClickDelete(t.dataset?.itemId);
+				},
+			},
+		];
+
+		new foundry.applications.ux.ContextMenu.implementation(
+			html.get(0), ".skill", menuSkills, {jQuery: false}
+		);
 	}
 
 	async _onImmunityToggle(event) {

@@ -1,5 +1,8 @@
 # v11.16.5
 
+#### Enhancements
+- [#709] Let NPCs use other special attributes for skill rolls
+
 #### Bugs
 - [#712] Can't add additional damage dice
 
