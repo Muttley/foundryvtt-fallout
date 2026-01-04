@@ -424,7 +424,7 @@ export class Roller2D20 {
 		weaponData.uuid = weapon?.uuid;
 
 		const flags = {
-			actor,
+			actor: {actor},
 			falloutroll: falloutRoll,
 			weapon: weaponData,
 		};

@@ -293,17 +293,20 @@ export default class FalloutUtils {
 		return stringParts.join(", ");
 	}
 
+
 	static playDiceSound() {
 		const sounds = [CONFIG.sounds.dice];
 		const src = sounds[0];
 		game.audio.play(src);
 	}
 
+
 	static async sleep(millisecs=1000) {
 		return new Promise((resolve, reject) => {
   			setTimeout(resolve, millisecs);
 		});
 	}
+
 
 	// If this is a new release, show the release notes to the GM the first time
 	// they login

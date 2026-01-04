@@ -147,7 +147,7 @@ export default class FalloutChat {
 					diceNum: 1,
 					falloutRoll: falloutRoll,
 					weapon: weapon,
-					actor: actor,
+					actor: actor.actor,
 				});
 			});
 		});

@@ -1,3 +1,10 @@
+# v11.16.5
+
+#### Bugs
+- [#712] Can't add additional damage dice
+
+---
+
 # v11.16.4
 
 #### Bugs

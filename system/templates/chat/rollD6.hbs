@@ -25,9 +25,15 @@
 				<span class="dice-icon d6 face-{{dice.face}}{{#if reroll}} reroll{{/if}}{{#ifCond effect '==' 1}} effect{{/ifCond}}" data-index="{{@index}}">&nbsp;</span>
 			{{/each}}
 		</div>
-		<div class="flexrow">
-			<button class="reroll-button">{{localize "FALLOUT.TEMPLATES.Re_roll"}} <span class="fo-pip-boy fo-blue"></span></button>
-			<button class="add-button">{{localize "FALLOUT.UI.Add"}} <span class="fo-pip-boy fo-blue"></span></button>
+		<div class="flexrow" style="gap: 4px;">
+			<button class="reroll-button">
+				{{localize "FALLOUT.TEMPLATES.Re_roll"}}
+				<span class="fo-pip-boy fo-blue"></span>
+			</button>
+			<button class="add-button">
+				{{localize "FALLOUT.UI.Add"}}
+				<span class="fo-pip-boy fo-blue"></span>
+			</button>
 		</div>
 	</div>
 </div>
