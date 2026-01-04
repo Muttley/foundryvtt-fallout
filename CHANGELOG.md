@@ -5,6 +5,7 @@
 
 #### Bugs
 - [#712] Can't add additional damage dice
+- [#714] Legendary Armor Mod type is missing
 
 ---
 

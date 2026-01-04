@@ -21,6 +21,7 @@ FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
 FALLOUT.DEFAULT_MAX_MAGAZINE_USES = 2;
 
 FALLOUT.APPAREL_MOD_TYPES = {
+	legendary: "FALLOUT.APPAREL_MOD.type.legendary",
 	lining: "FALLOUT.APPAREL_MOD.type.lining",
 	material: "FALLOUT.APPAREL_MOD.type.material",
 	plating: "FALLOUT.APPAREL_MOD.type.plating",
