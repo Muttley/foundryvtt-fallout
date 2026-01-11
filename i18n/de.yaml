@@ -13,8 +13,8 @@ FALLOUT.AbilityLuc: Glück
 FALLOUT.AbilityPer: Wahrnehmung
 FALLOUT.AbilityStr: Stärke
 FALLOUT.actor.inventory.materials.common: Gewöhnlich
-FALLOUT.actor.inventory.materials.junk: Müll
-FALLOUT.actor.inventory.materials.junkSalvageControl: Verwerte Müll
+FALLOUT.actor.inventory.materials.junk: Schrott
+FALLOUT.actor.inventory.materials.junkSalvageControl: Verwerte Schrott
 FALLOUT.actor.inventory.materials.label: Materialien
 FALLOUT.actor.inventory.materials.rare: Selten
 FALLOUT.actor.inventory.materials.uncommon: Ungewöhnlich
