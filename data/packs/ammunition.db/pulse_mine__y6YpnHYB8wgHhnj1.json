@@ -8,8 +8,8 @@
 	"name": "Pulse Mine",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 100,
 		"description": "<p>The mine consists of a powerful EMP device wired to a proximity fuse and then secured inside a heavy metal casing. While only mildly harmful to organic targets, these mines deal severe damage to robotic enemies, stunning or even permanently disabling them.</p>\n<p><strong>Special:</strong> Pulse mines only inflict damage to robots, synths, Power Armor (though not the wearer within) and other mechanical or technological targets. Any computers in the blast are also damaged by the grenade. Against any other target, pulse mines inflict 0 damage.</p>",

@@ -1007,8 +1007,8 @@
 		},
 		"ammo": {
 			"charges": {
-				"current": 1,
-				"max": 1
+				"current": 0,
+				"max": 0
 			},
 			"effect": "",
 			"fusionCore": false,

@@ -8,8 +8,8 @@
 	"name": ".308 Round",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 3,
 		"description": "<p><span class=\"fontstyle0\">A high-powered rifle round normally used in hunting rifles and some bolt-action pipe rifles. They&rsquo;re a common enough sight in the wastelands that a weapon using .308 rounds is unlikely to run out of ammunition too often.</span></p>\n<p><strong>Quantity Found: </strong>[[/r 6+3dc # .308 Round]]</p>",

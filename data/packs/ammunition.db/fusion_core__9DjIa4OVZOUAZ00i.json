@@ -8,11 +8,11 @@
 	"name": "Fusion Core",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 10,
+			"max": 10
 		},
 		"cost": 200,
-		"description": "<p><span class=\"fontstyle0\">Pre-War fusion cores are high-grade, long-term nuclear batteries. A single core can power a small building for a long time or provide a lot of power for something very quickly. Most suits of Power Armor accept a fusion core power source, which lasts for several hours of activity. They can also be used as the ammunition supply for a Gatling laser.</span></p>\n<p><span class=\"fontstyle0\">When discovered, a fusion core contains a number of charges equal to 10 plus the user&rsquo;s Science skill (people with more scientific knowledge can utilize the power more efficiently; the Nuclear Physicist perk also adds extra charges, see p.68). How these charges are used or depleted depends on what they&rsquo;re plugged into (see Power Armor, p.123).</span></p>\n<p><span class=\"fontstyle0\">When used as the ammunition for a Gatling laser, each charge a fusion core contains translates to 50 shots for a Gatling laser. As a Gatling weapon, the Gatling laser consumes ammunition ten times as quickly as most weapon (see </span><span class=\"fontstyle2\">Gatling</span><span class=\"fontstyle0\">, p.90).</span></p>\n<p><span class=\"fontstyle0\">The Scavenger perk cannot increase the number of fusion cores found.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 1 # Fusion Core]]</p>",
+		"description": "<p>Pre-War fusion cores are high-grade, long-term nuclear batteries. A single core can power a small building for a long time or provide a lot of power for something very quickly. Most suits of Power Armor accept a fusion core power source, which lasts for several hours of activity. They can also be used as the ammunition supply for a Gatling laser.</p> <p>When discovered, a fusion core contains a number of charges equal to 10 plus the user's Science skill (people with more scientific knowledge can utilize the power more efficiently; the Nuclear Physicist perk also adds extra charges, see p.68). How these charges are used or depleted depends on what they're plugged into (see Power Armor, p.123).</p> <p>When used as the ammunition for a Gatling laser, each charge a fusion core contains translates to 50 shots for a Gatling laser. As a Gatling weapon, the Gatling laser consumes ammunition ten times as quickly as most weapon (see Gatling, p.90).</p> <p>The Scavenger perk cannot increase the number of fusion cores found.</p> <p><strong>Quantity Found:</strong> [[/r 1 # Fusion Core]]</p> <p><em>(item defaults to a default base charge level of 10, this should be adjusted by the player's Perks and science slill if required)</em></p>",
 		"effect": "",
 		"favorite": false,
 		"fusionCore": true,

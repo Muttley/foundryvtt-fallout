@@ -27,15 +27,17 @@
 				&nbsp;
 				<input
 					class="num-short-3"
+					min="0"
 					name="system.charges.current"
-					type="Number"
+					type="number"
 					value="{{system.charges.current}}"
 				/>
 				&sol;
 				<input
 					class="num-short-3"
+					min="0"
 					name="system.charges.max"
-					type="Number"
+					type="number"
 					value="{{system.charges.max}}"
 				/>
 				&nbsp;
@@ -58,15 +60,17 @@
 			&nbsp;
 			<input
 				class="num-short-3"
+				min="0"
 				name="system.shots.current"
-				type="Number"
+				type="number"
 				value="{{system.shots.current}}"
 			/>
 			&sol;
 			<input
 				class="num-short-3"
+				min="0"
 				name="system.shots.max"
-				type="Number"
+				type="number"
 				value="{{system.shots.max}}"
 				{{#if system.fusionCore}}
 					data-tooltip="{{localize 'FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip'}}"

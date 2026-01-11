@@ -8,8 +8,8 @@
 	"name": "Plasma Mine",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 135,
 		"description": "<p><span class=\"fontstyle0\">These magnetically sealed mines unleash a blast of energized plasma upon being triggered, searing those who tripped the mine&rsquo;s sensors.</span></p>\n<p><span class=\"fontstyle2\"><strong>Special:</strong>&nbsp;</span><span class=\"fontstyle0\">Plasma minflict both Physical and Energy damage. Roll damage as normal, and then reduce the total by whichever of the target&rsquo;s damage resistances is lower out of Physical or Energy.</span></p>",

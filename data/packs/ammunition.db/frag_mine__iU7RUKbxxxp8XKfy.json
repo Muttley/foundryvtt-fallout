@@ -8,8 +8,8 @@
 	"name": "Frag Mine",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 50,
 		"description": "<p><span class=\"fontstyle0\">Similar in design and construction to a frag grenade, a fragmentation mine is instead placed on the ground and uses a pressure plate or proximity sensor to trigger detonation when someone gets too close.</span></p>",

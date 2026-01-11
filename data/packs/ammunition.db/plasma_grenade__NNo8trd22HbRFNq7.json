@@ -8,8 +8,8 @@
 	"name": "Plasma Grenade",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 135,
 		"description": "<p>A canister containing chemicals which are rapidly transformed into superheated ionized gas&mdash;or plasma&mdash;upon detonation. The blast of a plasma grenade generates vast amounts of heat which more than makes up for the lack of shrapnel or concussive shockwaves.</p>\n<p>Special: Plasma grenades inflict both physical and energy damage. Roll damage as normal, and then reduce the total by whichever of the target&rsquo;s damage resistances is lower out of Physical or Energy.</p>\n<p>&nbsp;</p>",

@@ -7,6 +7,7 @@
 #### Bugs
 - [#712] Can't add additional damage dice
 - [#714] Legendary Armor Mod type is missing
+- [#717] Some Ammo Types not being recognized as Ammo
 
 ---
 

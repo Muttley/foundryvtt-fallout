@@ -8,8 +8,8 @@
 	"name": "Throwing Knife",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 10,
 		"description": "<p>A small, sharp knife, specially balanced for throwing. Normally made of a lightweight metal, with the grip hollowed out to reduce weight. They do little damage by themselves, but are light, quiet, and quick to handle.</p>",
