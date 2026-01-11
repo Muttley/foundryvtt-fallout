@@ -590,7 +590,6 @@ export default class FalloutBaseActorSheet
 			frame.sheet.render(false);
 		}
 
-
 	}
 
 	async _onRightClickDelete(itemId) {

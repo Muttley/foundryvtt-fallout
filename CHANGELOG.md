@@ -2,6 +2,7 @@
 
 #### Enhancements
 - [#709] Let NPCs use other special attributes for skill rolls
+- [#716] Improve positioning of AP tracker and update it to an ApplicationV2 app
 
 #### Bugs
 - [#712] Can't add additional damage dice

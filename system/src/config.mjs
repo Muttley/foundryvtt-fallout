@@ -3,6 +3,9 @@ export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
+globalThis.systemPath = path => `systems/${SYSTEM_ID}/${path ?? ""}`;
+globalThis.templatePath = path => path ? systemPath(`templates/${path}.hbs`) : systemPath("templates");
+
 FALLOUT.LEVEL_UP_TOOL_ENABLED = false;
 
 // Some consts used for timing purposes

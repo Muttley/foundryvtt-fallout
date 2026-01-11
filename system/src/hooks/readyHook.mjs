@@ -11,7 +11,7 @@ export const readyHook = {
 				await new FalloutMigrationRunner().run();
 			}
 
-			fallout.APTracker.initialise();
+			fallout.APTrackerV2.initialise();
 			fallout.utils.showNewReleaseNotes();
 		});
 	},

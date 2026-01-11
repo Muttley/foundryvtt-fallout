@@ -4,7 +4,6 @@ import * as apps from "../apps/_module.mjs";
 import * as documents from "../documents/_module.mjs";
 import * as sheets from "../sheets/_module.mjs";
 
-import { APTracker } from "../apps/APTracker.mjs";
 import { Dialog2d20 } from "../roller/Dialog2d20.mjs";
 import { DialogD6 } from "../roller/DialogD6.mjs";
 import { DieFalloutDamage } from "../roller/DieFalloutDamage.mjs";
@@ -12,6 +11,7 @@ import { DieFalloutLocation } from "../roller/DieFalloutLocation.mjs";
 import { FalloutHooks } from "../system/FalloutHooks.mjs";
 import { FalloutModuleArt } from "../utils/FalloutModuleArt.mjs";
 import { Roller2D20 } from "../roller/Roller2D20.mjs";
+import APTrackerV2 from "../apps/APTrackerV2.mjs";
 import FalloutChat from "../system/FalloutChat.mjs";
 import FalloutCompendiums from "../documents/FalloutCompendiums.mjs";
 import FalloutConditionTracker from "../system/FalloutConditionTracker.mjs";
@@ -42,7 +42,7 @@ export async function initHook() {
 	// Add utility classes to the global game object so that they're more easily
 	// accessible in global contexts.
 	globalThis.fallout = {
-		APTracker,
+		APTrackerV2,
 		Dialog2d20,
 		DialogD6,
 		FalloutLoading,

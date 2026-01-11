@@ -3,21 +3,20 @@
 @use '../utils/mixins' as *;
 
 .fallout.ap-tracker {
-	position: absolute;
-	display: block;
-	margin: 5px;
-	bottom: 250px;
-	left: 10px;
+	display: flex;
+	margin-bottom: 16px;
+	pointer-events: all;
 
 	.ap-resource {
-		position: relative;
 		padding: 10px 20px;
-		margin-bottom: 10px;
+		margin-left: 8px;
+		margin-right: 8px;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 
 		&.gm {
 			@include element-color($c-action-points-gm, 2);
+			margin-left: 0px;
 		}
 
 		&.maxAP-box {
@@ -26,12 +25,12 @@
 
 		&.party {
 			@include element-color($c-action-points-party, 3);
+			margin-right: 0px;
 		}
 
 		.toggle-maxAp {
-			position: absolute;
-			top: 8px;
-			right: 5px;
+			position: relative;
+			left: 35px;
 			color: beige;
 		}
 
@@ -53,8 +52,8 @@
 		}
 
 		.ap-btn {
-			min-width: 24px;
 			min-height: 24px;
+			min-width: 24px;
 			max-width: 24px;
 			display: flex;
 			justify-content: center;
