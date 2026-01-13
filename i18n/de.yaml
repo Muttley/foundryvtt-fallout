@@ -531,7 +531,7 @@ FALLOUT.TEMPLATES.Irradiated: Verstrahlt
 FALLOUT.TEMPLATES.IrradiatedDamageDice: Verstrahlter Schaden Würfel
 FALLOUT.TEMPLATES.Issue: Ausgabe
 FALLOUT.TEMPLATES.Items: Items
-FALLOUT.TEMPLATES.Junk: Junk
+FALLOUT.TEMPLATES.Junk: Schrott
 FALLOUT.TEMPLATES.kgs: kg
 FALLOUT.TEMPLATES.lbs: lb
 FALLOUT.TEMPLATES.Learned: Erlernt
@@ -695,7 +695,7 @@ FALLOUT.UI.CONSUMABLES: Verbrauchsgegenstände
 FALLOUT.UI.Consume: Verbrauchen
 FALLOUT.UI.Cost: Kosten
 FALLOUT.UI.Damage: Schaden
-FALLOUT.UI.DeleteOrJunk.message: Would you like to Delete or Junk this Item?
+FALLOUT.UI.DeleteOrJunk.message: Möchten Sie dieses Element löschen oder verschrotten?
 FALLOUT.UI.DeleteOrJunk.title: Löschen oder verschrotten?
 FALLOUT.UI.DISEASES: Krankheiten
 FALLOUT.UI.ExtraDice: Extra Dice
