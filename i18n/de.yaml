@@ -450,6 +450,7 @@ FALLOUT.TEMPLATES.CONDITIONS: ZUSTÄNDE
 FALLOUT.TEMPLATES.conditions.dehydrated: Dehydriert
 FALLOUT.TEMPLATES.conditions.exhausted: Erschöpft
 FALLOUT.TEMPLATES.conditions.fatigue: Erschöpfung
+FALLOUT.TEMPLATES.conditions.fuel: Fuel
 FALLOUT.TEMPLATES.conditions.full: Satt
 FALLOUT.TEMPLATES.conditions.hunger: Hunger
 FALLOUT.TEMPLATES.conditions.hungry: Hungrig
