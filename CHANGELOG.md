@@ -10,6 +10,9 @@
 - [#714] Legendary Armor Mod type is missing
 - [#717] Some Ammo Types not being recognized as Ammo
 
+#### Chores
+- [#722] Merge new German and French translation updates from Crowdin
+
 ---
 
 # v11.16.4
