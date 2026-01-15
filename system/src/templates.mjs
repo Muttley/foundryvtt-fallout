@@ -61,6 +61,7 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/actor/pc/partials/radiation.hbs",
 		"systems/fallout/templates/actor/pc/partials/resistances.hbs",
 		"systems/fallout/templates/actor/pc/partials/robot-mods.hbs",
+		"systems/fallout/templates/actor/pc/partials/statuses-robot.hbs",
 		"systems/fallout/templates/actor/pc/partials/statuses.hbs",
 		"systems/fallout/templates/actor/pc/partials/traits.hbs",
 		"systems/fallout/templates/actor/pc/tabs/abilities.hbs",

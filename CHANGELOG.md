@@ -1,6 +1,7 @@
 # v11.16.5
 
 #### Enhancements
+- [#675] Add Tinkered With status toggle to Robot character sheet and increase max HP when checked
 - [#709] Let NPCs use other special attributes for skill rolls
 - [#716] Improve positioning of AP tracker and update it to an ApplicationV2 app
 - [#718] Fuel track for the Vehicle character sheet (identical to player Thirst track as per Wanderer's Guide Book)

@@ -234,7 +234,10 @@
 				"pc_shared",
 				"stats",
 				"valuables"
-			]
+			],
+			"conditions": {
+				"tinkeredWith": false
+			}
 		},
 		"scavenging_location": {
 			"templates": [

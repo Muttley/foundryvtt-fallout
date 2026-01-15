@@ -5,9 +5,11 @@
 			{{> actor/pc/partials/derived }}
 			{{> actor/pc/partials/resistances }}
 
-			{{#unless isRobot}}
+			{{#if isRobot}}
+				{{> actor/pc/partials/statuses-robot }}
+			{{else}}
 				{{> actor/pc/partials/statuses }}
-			{{/unless}}
+			{{/if}}
 		</div>
 
 		{{!-- MIDDLE COLUMN --}}
