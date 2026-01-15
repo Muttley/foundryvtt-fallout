@@ -450,6 +450,7 @@ FALLOUT.TEMPLATES.CONDITIONS: CONDIÇÕES
 FALLOUT.TEMPLATES.conditions.dehydrated: Desidratado
 FALLOUT.TEMPLATES.conditions.exhausted: Esgotado
 FALLOUT.TEMPLATES.conditions.fatigue: Fadiga
+FALLOUT.TEMPLATES.conditions.fuel: Fuel
 FALLOUT.TEMPLATES.conditions.full: Cheio
 FALLOUT.TEMPLATES.conditions.hunger: Fome
 FALLOUT.TEMPLATES.conditions.hungry: Faminto
