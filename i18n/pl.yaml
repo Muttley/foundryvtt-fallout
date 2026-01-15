@@ -450,6 +450,7 @@ FALLOUT.TEMPLATES.CONDITIONS: Stany
 FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
 FALLOUT.TEMPLATES.conditions.exhausted: Wyczerpany
 FALLOUT.TEMPLATES.conditions.fatigue: zmęczenie
+FALLOUT.TEMPLATES.conditions.fuel: Fuel
 FALLOUT.TEMPLATES.conditions.full: Pełen
 FALLOUT.TEMPLATES.conditions.hunger: głód
 FALLOUT.TEMPLATES.conditions.hungry: Głodny

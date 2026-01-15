@@ -450,6 +450,7 @@ FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
 FALLOUT.TEMPLATES.conditions.dehydrated: Déshydraté
 FALLOUT.TEMPLATES.conditions.exhausted: Epuisé
 FALLOUT.TEMPLATES.conditions.fatigue: fatigue
+FALLOUT.TEMPLATES.conditions.fuel: Fuel
 FALLOUT.TEMPLATES.conditions.full: Repu
 FALLOUT.TEMPLATES.conditions.hunger: faim
 FALLOUT.TEMPLATES.conditions.hungry: Faim
@@ -777,7 +778,7 @@ FALLOUT.WEAPON_MOD.type.stock: Crosse
 FALLOUT.WEAPONS.damageEffect.arc: Arc
 FALLOUT.WEAPONS.damageEffect.breaking: Destructeur
 FALLOUT.WEAPONS.damageEffect.burst: Rafale
-FALLOUT.WEAPONS.damageEffect.freeze: Gel
+FALLOUT.WEAPONS.damageEffect.freeze: Glacial
 FALLOUT.WEAPONS.damageEffect.persistent: Persistant
 FALLOUT.WEAPONS.damageEffect.piercing_x: Perforant
 FALLOUT.WEAPONS.damageEffect.radioactive: Radioactif
@@ -790,7 +791,7 @@ FALLOUT.WEAPONS.damageType.physical: balistiques
 FALLOUT.WEAPONS.damageType.poison: Poison
 FALLOUT.WEAPONS.damageType.radiation: Radiation
 FALLOUT.WEAPONS.weaponQuality.accurate: Précis
-FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Dévoreuse de munitions
+FALLOUT.WEAPONS.weaponQuality.ammo_hungry_x: Gourmand en munitions
 FALLOUT.WEAPONS.weaponQuality.aquatic: Aquatique
 FALLOUT.WEAPONS.weaponQuality.blast: Zone d'impact
 FALLOUT.WEAPONS.weaponQuality.bombard: Bombardement
@@ -805,11 +806,11 @@ FALLOUT.WEAPONS.weaponQuality.limited: Limité
 FALLOUT.WEAPONS.weaponQuality.mine: Mine
 FALLOUT.WEAPONS.weaponQuality.night_vision: Vision nocturne
 FALLOUT.WEAPONS.weaponQuality.parry: Parade
-FALLOUT.WEAPONS.weaponQuality.placed: Placé
+FALLOUT.WEAPONS.weaponQuality.placed: Installé
 FALLOUT.WEAPONS.weaponQuality.recoil_x: Recul
 FALLOUT.WEAPONS.weaponQuality.recon: Reco
 FALLOUT.WEAPONS.weaponQuality.reliable: Fiable
-FALLOUT.WEAPONS.weaponQuality.slow_load: Chargement lent
+FALLOUT.WEAPONS.weaponQuality.slow_load: Rechargement lent
 FALLOUT.WEAPONS.weaponQuality.suppressed: Silencieux
 FALLOUT.WEAPONS.weaponQuality.surge: Surtension
 FALLOUT.WEAPONS.weaponQuality.thrown: Lancer
