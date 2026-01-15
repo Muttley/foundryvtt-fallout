@@ -3,6 +3,7 @@
 #### Enhancements
 - [#709] Let NPCs use other special attributes for skill rolls
 - [#716] Improve positioning of AP tracker and update it to an ApplicationV2 app
+- [#718] Fuel track for the Vehicle character sheet (identical to player Thirst track as per Wanderer's Guide Book)
 
 #### Bugs
 - [#712] Can't add additional damage dice

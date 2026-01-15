@@ -1,0 +1,26 @@
+<div class="flexrow resource-row">
+	<ol class="items-list">
+		<li class="consumable flexrow items-header">
+			<div class="flexrow flexlarge item-name upperC">
+				{{localize 'FALLOUT.TEMPLATES.CONDITIONS'}}
+			</div>
+		</li>
+
+		<li class="item" style="padding: 0.25rem;">
+			<div class="condition-meters text-center">
+				<i class="fa-solid fa-gas-pump" title="{{localize 'FALLOUT.TEMPLATES.conditions.fuel'}}"></i>
+				{{#select system.fuel}}
+					<select name="system.conditions.thirst" data-dtype="Number">
+						{{#each FALLOUT.CONDITIONS.fuel as |value key|}}
+							<option value="{{value}}">
+								{{localize (concat 'FALLOUT.TEMPLATES.conditions.' key)}}
+							</option>
+						{{/each}}
+					</select>
+				{{/select}}
+			</div>
+		</li>
+
+	</ol>
+
+</div>

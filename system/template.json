@@ -22,37 +22,14 @@
 			]
 		},
 		"vehicle": {
-			"scale": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
-			"health": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
 			"cover": {
 				"max": 1,
 				"min": 0,
 				"mod": 0,
 				"value": 0
 			},
-			"zone_speed": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
-			"travel_speed": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
-			"passengers": {
+			"fuel": 0,
+			"health": {
 				"max": 1,
 				"min": 0,
 				"mod": 0,
@@ -66,6 +43,12 @@
 			},
 			"injuries": "",
 			"locations": [],
+			"passengers": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
 			"resistance": {
 				"energy": {
 					"locations": "",
@@ -78,6 +61,18 @@
 			},
 			"salvage": {
 				"tn": 0
+			},
+			"scale": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"travel_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
 			},
 			"vehicleQuality": {
 				"cargo_x": {
@@ -116,6 +111,12 @@
 					"rank": 0,
 					"value": false
 				}
+			},
+			"zone_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
 			},
 			"templates": [
 				"base",

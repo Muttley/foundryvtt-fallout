@@ -91,6 +91,7 @@ export default async function preloadHandlebarsTemplates() {
 		"systems/fallout/templates/actor/vehicle/partials/attributes.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/body.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/carried-weight.hbs",
+		"systems/fallout/templates/actor/vehicle/partials/conditions.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/favorite-weapons.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/header.hbs",
 		"systems/fallout/templates/actor/vehicle/partials/inventory.hbs",

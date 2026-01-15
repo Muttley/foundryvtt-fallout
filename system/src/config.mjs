@@ -82,6 +82,12 @@ FALLOUT.CHEM_DURATIONS = {
 };
 
 FALLOUT.CONDITIONS = {
+	fuel: {
+		quenched: 0,
+		hydrated: 1,
+		thirsty: 2,
+		dehydrated: 3,
+	},
 	hunger: {
 		full: 0,
 		sated: 1,
@@ -185,6 +191,13 @@ FALLOUT.DEFAULT_TOKENS = {
 	scavenging_location: "systems/fallout/assets/tokens/scavenging_location.webp",
 	settlement: "systems/fallout/assets/tokens/settlement.webp",
 	vehicle: "systems/fallout/assets/tokens/vehicle.webp",
+};
+
+FALLOUT.FUEL_BY_NUMBER = {
+	0: "FALLOUT.TEMPLATES.conditions.quenched",
+	1: "FALLOUT.TEMPLATES.conditions.hydrated",
+	2: "FALLOUT.TEMPLATES.conditions.thirsty",
+	3: "FALLOUT.TEMPLATES.conditions.dehydrated",
 };
 
 FALLOUT.HIT_LOCATIONS = {
