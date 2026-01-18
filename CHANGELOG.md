@@ -7,6 +7,7 @@
 - [#718] Fuel track for the Vehicle character sheet (identical to player Thirst track as per Wanderer's Guide Book)
 
 #### Bugs
+- [#659] Melee weapons that use ammo use too much ammo due to strength based melee bonus damage
 - [#712] Can't add additional damage dice
 - [#714] Legendary Armor Mod type is missing
 - [#717] Some Ammo Types not being recognized as Ammo

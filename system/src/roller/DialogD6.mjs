@@ -13,11 +13,7 @@ export class DialogD6 extends Dialog {
 	activateListeners(html) {
 		const me = this;
 
-		// Check when the box is changed if actor has enough ammo
 		super.activateListeners(html);
-		// html.on('change', '.d-number', async (e, i, a) => {
-		//     await this.checkAmmo(html)
-		// })
 
 		html.on("click", ".roll", async event => {
 			let extraDiceNum = parseInt(html.find(".extra-dice")[0]?.value ?? 0);
@@ -187,11 +183,18 @@ export class DialogD6 extends Dialog {
 			return -1;
 		}
 
+		const weaponType = this.weapon?.system?.weaponType ?? "";
+
 		// Check if there is enough ammo
 		const totalDice = parseInt(diceNum);
 		const weaponDmg = parseInt(initDmg);
 
-		let additionalAmmo = Math.max(0, totalDice - weaponDmg)
+		// Don't include bonus melee damage dice in the calculation
+		const bonusDamage = ["meleeWeapons", "unarmed"].includes(weaponType)
+			? _actor.system.meleeDamage.value
+			: 0;
+
+		let additionalAmmo = Math.max(0, totalDice - weaponDmg - bonusDamage)
 			* this.weapon.system.ammoPerShot;
 
 		// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
