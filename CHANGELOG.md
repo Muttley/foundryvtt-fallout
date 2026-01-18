@@ -11,6 +11,7 @@
 - [#712] Can't add additional damage dice
 - [#714] Legendary Armor Mod type is missing
 - [#717] Some Ammo Types not being recognized as Ammo
+- [#725] Body location infinite immunity symbol user interface element too large
 
 #### Chores
 - [#722] Merge new German and French translation updates from Crowdin
