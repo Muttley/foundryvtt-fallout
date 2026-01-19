@@ -6,9 +6,10 @@
 			"_id": "XgxI2k1X7FzmOmqc",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.lOdick5Joub8lKTY",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727432088560,
 				"systemId": "fallout",
@@ -27,9 +28,10 @@
 					"_id": "u4UWh9iWgJvsiDNI",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -154,6 +156,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -242,6 +248,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -259,9 +266,10 @@
 					"_id": "7UXABLtPzeS7j40X",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -386,6 +394,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -474,6 +486,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -491,9 +504,10 @@
 					"_id": "kbu47VaasuqG8wHw",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -618,6 +632,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -706,6 +724,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -723,9 +742,10 @@
 					"_id": "UWMG5jdo5D5tagSe",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -754,9 +774,10 @@
 					"_id": "s7hKKApmb9gOHbOj",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -785,9 +806,10 @@
 					"_id": "ljwl4EuIbpL5yrr8",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -816,9 +838,10 @@
 					"_id": "fTDbWTvnBTM2dei2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -847,9 +870,10 @@
 					"_id": "pNf8oDA2dWZPgrXm",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -878,9 +902,10 @@
 					"_id": "hO3hxnnnXTaUoJG4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -909,9 +934,10 @@
 					"_id": "GNepw15dxen7SBst",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -961,7 +987,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -988,6 +1013,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Protectron",
 				"occludable": {
 					"radius": 0
@@ -1030,6 +1056,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/robot.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -1265,9 +1297,10 @@
 			"_id": "9I9xHPbk9yxVg5N5",
 			"_stats": {
 				"compendiumSource": "Actor.pf4C1xVVWGbgcuT8",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": "Actor.pf4C1xVVWGbgcuT8",
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -1284,9 +1317,10 @@
 					"_id": "KGRkntGxWsK465uD",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1411,6 +1445,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -1499,6 +1537,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -1516,9 +1555,10 @@
 					"_id": "5bP3s2itICt3wfjM",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.s7hKKApmb9gOHbOj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1547,9 +1587,10 @@
 					"_id": "M18DRzn2eDNibffz",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.ljwl4EuIbpL5yrr8",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1578,9 +1619,10 @@
 					"_id": "PV0srq6xbWTw8MXF",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1609,9 +1651,10 @@
 					"_id": "OX26Ful5VjNfsyo1",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1640,9 +1683,10 @@
 					"_id": "wZ0jUJ1WSGvxS7We",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1671,9 +1715,10 @@
 					"_id": "zbGky0hmgybD3ffJ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1702,9 +1747,10 @@
 					"_id": "J7tFu6Mf7I2QLZ7L",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1829,6 +1875,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -1917,6 +1967,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -1934,9 +1985,10 @@
 					"_id": "JtJzXYa9GdE29Ybf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -1986,7 +2038,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -2013,6 +2064,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Putrid Glowing One",
 				"occludable": {
 					"radius": 0
@@ -2055,6 +2107,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -2289,9 +2347,10 @@
 			"_id": "vTfD6jMJdtp8qdUx",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.9XbZuVgwKuGZVMcU",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -2310,9 +2369,10 @@
 					"_id": "QNvq7a9t5WZIvZpk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -2437,6 +2497,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -2525,6 +2589,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -2542,9 +2607,10 @@
 					"_id": "ZaspEn86i1aGXkuB",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.i1BhSDEcs5JNub1v",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -2554,7 +2620,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.consumables.Item.i1BhSDEcs5JNub1v"
 						}
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
@@ -2597,9 +2662,10 @@
 					"_id": "xCCekD24Rhj5eluz",
 					"_stats": {
 						"compendiumSource": "Actor.Bemt9lVV6hUaLprS.Item.nVOs7OeiKmtBA5jU",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -2609,7 +2675,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.Bemt9lVV6hUaLprS.Item.nVOs7OeiKmtBA5jU"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -2631,9 +2696,10 @@
 					"_id": "Mcrq4qM9zVjNzGP4",
 					"_stats": {
 						"compendiumSource": "Actor.Bemt9lVV6hUaLprS.Item.BJQpFXbz5lUuNXH3",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -2643,7 +2709,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.Bemt9lVV6hUaLprS.Item.BJQpFXbz5lUuNXH3"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -2665,9 +2730,10 @@
 					"_id": "zxZNtBBpSd8k7aVK",
 					"_stats": {
 						"compendiumSource": "Actor.ikSMYnTHYeYeYi2Z.Item.JsVPxxPyWcVMOGJg",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -2677,7 +2743,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.ikSMYnTHYeYeYi2Z.Item.JsVPxxPyWcVMOGJg"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -2699,9 +2764,10 @@
 					"_id": "k6DvH3nOeabRTA7y",
 					"_stats": {
 						"compendiumSource": "Actor.9XbZuVgwKuGZVMcU.Item.13mCgZ6uWE4vk7Co",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -2711,7 +2777,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.9XbZuVgwKuGZVMcU.Item.13mCgZ6uWE4vk7Co"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -2754,7 +2819,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -2781,6 +2845,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Radroach",
 				"occludable": {
 					"radius": 0
@@ -2823,6 +2888,12 @@
 					"scaleY": 0.5,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -3058,9 +3129,10 @@
 			"_id": "UWJmd8cR6PuHUv0H",
 			"_stats": {
 				"compendiumSource": "Actor.UWJmd8cR6PuHUv0H",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727432107460,
 				"systemId": "fallout",
@@ -3077,9 +3149,10 @@
 					"_id": "4YpS229BMWDjUCDW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3204,6 +3277,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -3292,6 +3369,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -3309,9 +3387,10 @@
 					"_id": "YLs9HsQ2wHAKUxfJ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3436,6 +3515,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -3524,6 +3607,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -3541,9 +3625,10 @@
 					"_id": "HbDM0WJCearFlJDx",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3668,6 +3753,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -3756,6 +3845,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -3773,9 +3863,10 @@
 					"_id": "0OFhH1gNj9io05Oq",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3804,9 +3895,10 @@
 					"_id": "kVabYTIzcMzYslms",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3835,9 +3927,10 @@
 					"_id": "BZ8s8DJcnJjSMSFC",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3866,9 +3959,10 @@
 					"_id": "TmgI6bpEsei5iAyS",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3897,9 +3991,10 @@
 					"_id": "yYwtLAYVqLqmo4sp",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3928,9 +4023,10 @@
 					"_id": "aQrn6DCk9cDQeEVp",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3959,9 +4055,10 @@
 					"_id": "DcyuaKrKhJeAEtYl",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -3990,9 +4087,10 @@
 					"_id": "vogtE8iTfYTdhdeL",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4042,7 +4140,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -4069,6 +4166,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Robot-Trestridge",
 				"occludable": {
 					"radius": 0
@@ -4111,6 +4209,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/robot.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -4345,9 +4449,10 @@
 			"_id": "RJgSwnT1bmKL5EQx",
 			"_stats": {
 				"compendiumSource": "Actor.pf4C1xVVWGbgcuT8",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": "Actor.9I9xHPbk9yxVg5N5",
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -4364,9 +4469,10 @@
 					"_id": "KGRkntGxWsK465uD",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4491,6 +4597,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -4579,6 +4689,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -4596,9 +4707,10 @@
 					"_id": "5bP3s2itICt3wfjM",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.s7hKKApmb9gOHbOj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4627,9 +4739,10 @@
 					"_id": "M18DRzn2eDNibffz",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.ljwl4EuIbpL5yrr8",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4658,9 +4771,10 @@
 					"_id": "PV0srq6xbWTw8MXF",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4689,9 +4803,10 @@
 					"_id": "OX26Ful5VjNfsyo1",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4720,9 +4835,10 @@
 					"_id": "wZ0jUJ1WSGvxS7We",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4751,9 +4867,10 @@
 					"_id": "zbGky0hmgybD3ffJ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4782,9 +4899,10 @@
 					"_id": "J7tFu6Mf7I2QLZ7L",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -4909,6 +5027,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -4997,6 +5119,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -5014,9 +5137,10 @@
 					"_id": "R1PmdIxFRjVDrbW0",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5066,7 +5190,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -5093,6 +5216,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Toughened Glowing One",
 				"occludable": {
 					"radius": 0
@@ -5135,6 +5259,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -5369,9 +5499,10 @@
 			"_id": "pf4C1xVVWGbgcuT8",
 			"_stats": {
 				"compendiumSource": "Actor.pf4C1xVVWGbgcuT8",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372559378,
 				"systemId": "fallout",
@@ -5388,9 +5519,10 @@
 					"_id": "KGRkntGxWsK465uD",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5515,6 +5647,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -5603,6 +5739,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -5620,9 +5757,10 @@
 					"_id": "5bP3s2itICt3wfjM",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.s7hKKApmb9gOHbOj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5651,9 +5789,10 @@
 					"_id": "M18DRzn2eDNibffz",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.ljwl4EuIbpL5yrr8",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5682,9 +5821,10 @@
 					"_id": "PV0srq6xbWTw8MXF",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5713,9 +5853,10 @@
 					"_id": "OX26Ful5VjNfsyo1",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5744,9 +5885,10 @@
 					"_id": "wZ0jUJ1WSGvxS7We",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -5796,7 +5938,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -5823,6 +5964,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Weakened Feral Ghoul",
 				"occludable": {
 					"radius": 0
@@ -5865,6 +6007,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -6099,9 +6247,10 @@
 			"_id": "hlKSuTUMbth14shY",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -6112,9 +6261,10 @@
 					"_id": "7PyuiD6Ua6ZMzQBW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6163,9 +6313,10 @@
 					"_id": "5xAG0eRrcvDeJAFk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6197,9 +6348,10 @@
 					"_id": "F4uIprrKWh9ApMaU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6231,9 +6383,10 @@
 					"_id": "G3mN15diMiTCDZ0U",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6265,9 +6418,10 @@
 					"_id": "HEegw2EUmmEzfdDM",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6299,9 +6453,10 @@
 					"_id": "PEN70F6ovA3g5HI2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6333,9 +6488,10 @@
 					"_id": "R8YnBNUwhZhG89iQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6367,9 +6523,10 @@
 					"_id": "SH09XavazYU9CqY4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6401,9 +6558,10 @@
 					"_id": "UQ4TLtVUR2kRlYkb",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6435,9 +6593,10 @@
 					"_id": "UZDBirrZeUxrAk7b",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6469,9 +6628,10 @@
 					"_id": "UrVd0BmoXkAxmrvv",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6503,9 +6663,10 @@
 					"_id": "ZQw4TLZbaLm5F0BW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6537,9 +6698,10 @@
 					"_id": "dOTrlwZ60XWqegQA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6571,9 +6733,10 @@
 					"_id": "ejKiqeUyjkahCjQf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6605,9 +6768,10 @@
 					"_id": "jAJPNJpHYawNBp2h",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6639,9 +6803,10 @@
 					"_id": "kCGaEuF27yXyE04i",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6673,9 +6838,10 @@
 					"_id": "p3GhRmIwrYTJmuhr",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6707,9 +6873,10 @@
 					"_id": "vf1Qszkq1om2Xgmn",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6741,9 +6908,10 @@
 					"_id": "t9A3oiT2dPRMuqua",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.yB39echbNG7KpWny",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -6868,6 +7036,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -6956,6 +7128,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 2,
 						"range": "close",
@@ -6973,9 +7146,10 @@
 					"_id": "TBn7C1CYhf2Ix633",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.PiFmAFrgnIJqwkNw",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7100,6 +7274,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -7188,6 +7366,7 @@
 							"max": 7,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -7205,9 +7384,10 @@
 					"_id": "tQeSsh15wC02jn11",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.QuYxQccl5EHdXTcT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7332,6 +7512,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -7420,6 +7604,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -7437,9 +7622,10 @@
 					"_id": "9Xvv73VGenxbd3SX",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.UJQaP4A50u2tSG6G",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7486,9 +7672,10 @@
 					"_id": "YTytlxB0LdOAx8yF",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.DxWJxT0MuxkbCofe",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7559,9 +7746,10 @@
 					"_id": "Y8ZWEK2Z0iUAHeQ5",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.WeHTP6Gw6Sr6HN8N",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7632,9 +7820,10 @@
 					"_id": "yNblRCqLWFdMxX0x",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.RWHypmbHATEbfGdU",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7705,9 +7894,10 @@
 					"_id": "HyuSBUh8zAyOeE7S",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.traits.Item.Brw3U4pjSy5MBp6D",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7736,9 +7926,10 @@
 					"_id": "5J5yabYMXND2z9Lv",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.j4XUYfEZwmvkfXBe",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7809,9 +8000,10 @@
 					"_id": "viDT8lTj84sG5TvL",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.VTtncpMUhGBxjmlQ",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7882,9 +8074,10 @@
 					"_id": "sHcIfMfqNbZWMD4B",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.gezE6P44AYqRQvim",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7934,9 +8127,10 @@
 					"_id": "FEToWJHCDHRmmJTn",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.6Y5Gv5LAizj0KDUw",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -7985,9 +8179,10 @@
 					"_id": "wraLULPebZPGF4HQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8045,7 +8240,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -8072,6 +8266,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "\"Happy\" Tommy Doyle",
 				"occludable": {
 					"radius": 0
@@ -8114,6 +8309,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/character.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -8343,9 +8544,10 @@
 			"_id": "2CQ2wR4kkHFkPsrH",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -8362,9 +8564,10 @@
 					"_id": "5xAG0eRrcvDeJAFk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8396,9 +8599,10 @@
 					"_id": "F4uIprrKWh9ApMaU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8430,9 +8634,10 @@
 					"_id": "G3mN15diMiTCDZ0U",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8464,9 +8669,10 @@
 					"_id": "HEegw2EUmmEzfdDM",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8498,9 +8704,10 @@
 					"_id": "PEN70F6ovA3g5HI2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8532,9 +8739,10 @@
 					"_id": "R8YnBNUwhZhG89iQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8566,9 +8774,10 @@
 					"_id": "SH09XavazYU9CqY4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8600,9 +8809,10 @@
 					"_id": "UQ4TLtVUR2kRlYkb",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8634,9 +8844,10 @@
 					"_id": "UZDBirrZeUxrAk7b",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8668,9 +8879,10 @@
 					"_id": "UrVd0BmoXkAxmrvv",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8702,9 +8914,10 @@
 					"_id": "ZQw4TLZbaLm5F0BW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8736,9 +8949,10 @@
 					"_id": "dOTrlwZ60XWqegQA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8770,9 +8984,10 @@
 					"_id": "ejKiqeUyjkahCjQf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8804,9 +9019,10 @@
 					"_id": "jAJPNJpHYawNBp2h",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8838,9 +9054,10 @@
 					"_id": "kCGaEuF27yXyE04i",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8872,9 +9089,10 @@
 					"_id": "p3GhRmIwrYTJmuhr",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8906,9 +9124,10 @@
 					"_id": "vf1Qszkq1om2Xgmn",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -8940,9 +9159,10 @@
 					"_id": "cZ8MO6y9RL3u0Czg",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.ijD12AylGdTDshsy",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9067,6 +9287,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -9155,6 +9379,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -9172,9 +9397,10 @@
 					"_id": "oMwpc0ADpM6VuYGW",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.mRB3W7wrHDbWhb9i",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9299,6 +9525,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -9387,6 +9617,7 @@
 							"max": 6,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -9404,9 +9635,10 @@
 					"_id": "2Cy93ivt4BPv6KoA",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.QuYxQccl5EHdXTcT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9531,6 +9763,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -9619,6 +9855,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -9636,9 +9873,10 @@
 					"_id": "cOPvD5YIuAv9H3BD",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.1Mku27VQTcwBCwOF",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9685,9 +9923,10 @@
 					"_id": "l6w3zngl4hYdInJS",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.aOmUGU0KhxIusQzy",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9758,9 +9997,10 @@
 					"_id": "ursQPnuCtG1K7z1p",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.cdwX7EVolnIWRaZi",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9831,9 +10071,10 @@
 					"_id": "hW34N6Pv1o8M8Jp2",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.xuXzlEC3V0co3w3h",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9883,9 +10124,10 @@
 					"_id": "Ej5ZXnaH6gvtPK4z",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.860ofdvpufUzSqE7",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9935,9 +10177,10 @@
 					"_id": "NmyvKJnsYW00Q8k2",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.miscellany.Item.17BGbljBgFJ3IUS4",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -9974,9 +10217,10 @@
 					"_id": "f1gsMOKEGFhzGmaJ",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.hc8DSkMGN2GxugAF",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10026,9 +10270,10 @@
 					"_id": "Q8jPv3hJdWZzBjAO",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10065,9 +10310,10 @@
 					"_id": "dml38aa53h73ZR75",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.miscellany.Item.Fkgwa1FrCdfQPvhl",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10104,9 +10350,10 @@
 					"_id": "eqyR0Iffy6kKDnNv",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.MW9UpIocnupsmcFt",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10156,9 +10403,10 @@
 					"_id": "8c0vWVxDP0Xre1zL",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.traits.Item.XbVNgNTQ9MLaAWEx",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10187,9 +10435,10 @@
 					"_id": "hPd2s9o3IpVRPIRw",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.NMrJsMFjSLAYtHAU",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10260,9 +10509,10 @@
 					"_id": "fWTTbk6JlUeil38S",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.7S2hb1uaJWjo1VSk",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10354,7 +10604,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -10381,6 +10630,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Augusta Byron",
 				"occludable": {
 					"radius": 0
@@ -10423,6 +10673,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/character.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -10652,9 +10908,10 @@
 			"_id": "QVrSTLrs6a4YX2a5",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -10671,9 +10928,10 @@
 					"_id": "5xAG0eRrcvDeJAFk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10705,9 +10963,10 @@
 					"_id": "F4uIprrKWh9ApMaU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10739,9 +10998,10 @@
 					"_id": "G3mN15diMiTCDZ0U",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10773,9 +11033,10 @@
 					"_id": "HEegw2EUmmEzfdDM",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10807,9 +11068,10 @@
 					"_id": "PEN70F6ovA3g5HI2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10841,9 +11103,10 @@
 					"_id": "R8YnBNUwhZhG89iQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10875,9 +11138,10 @@
 					"_id": "SH09XavazYU9CqY4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10909,9 +11173,10 @@
 					"_id": "UQ4TLtVUR2kRlYkb",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10943,9 +11208,10 @@
 					"_id": "UZDBirrZeUxrAk7b",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -10977,9 +11243,10 @@
 					"_id": "UrVd0BmoXkAxmrvv",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11011,9 +11278,10 @@
 					"_id": "ZQw4TLZbaLm5F0BW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11045,9 +11313,10 @@
 					"_id": "dOTrlwZ60XWqegQA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11079,9 +11348,10 @@
 					"_id": "ejKiqeUyjkahCjQf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11113,9 +11383,10 @@
 					"_id": "jAJPNJpHYawNBp2h",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11147,9 +11418,10 @@
 					"_id": "kCGaEuF27yXyE04i",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11181,9 +11453,10 @@
 					"_id": "p3GhRmIwrYTJmuhr",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11215,9 +11488,10 @@
 					"_id": "vf1Qszkq1om2Xgmn",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11249,9 +11523,10 @@
 					"_id": "CMhPMPbO2d9CpBAD",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.traits.Item.yova9LubVGA18nar",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11280,9 +11555,10 @@
 					"_id": "KkMX0is8BuK7wP0w",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.TTCwoZV141ZGuMjs",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11353,9 +11629,10 @@
 					"_id": "sACyjmkftjcyhzLT",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.ehsLCAMtk39LFHVa",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11480,6 +11757,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -11568,6 +11849,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -11585,9 +11867,10 @@
 					"_id": "gGc6U5D73wfTELWQ",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.PiFmAFrgnIJqwkNw",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11712,6 +11995,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -11800,6 +12087,7 @@
 							"max": 7,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -11817,9 +12105,10 @@
 					"_id": "b3rL8Merkd2Rf6dZ",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.vXTMQj76ShuwQXkd",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -11944,6 +12233,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -12032,6 +12325,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -12049,9 +12343,10 @@
 					"_id": "QiO47AnnkNtf4fq6",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.XNBEI7ZW5HSaKSGr",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12097,9 +12392,10 @@
 					"_id": "RLkxVAOlplrzyUCR",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.QuYxQccl5EHdXTcT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12224,6 +12520,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -12312,6 +12612,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -12329,9 +12630,10 @@
 					"_id": "Wds6cptPrGwJYXZV",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.UJQaP4A50u2tSG6G",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12378,9 +12680,10 @@
 					"_id": "GaSUNlOOto3dOuWA",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.QX9YgFGANsHkpTQd",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12451,9 +12754,10 @@
 					"_id": "YDyRxlMJ8XlAvgJ9",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.mGCVgHtv7btlXFcj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12524,9 +12828,10 @@
 					"_id": "LQCn0NCBTncsfEe7",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.Bomq1g7X0eVXrssc",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12576,9 +12881,10 @@
 					"_id": "7VcnY8Bnh6SK5YJ9",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.o0at3QFpM8FKxvZj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12628,9 +12934,10 @@
 					"_id": "t60be3Tcn8vSTYHQ",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.uxikQYkupNqpmTyR",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12680,9 +12987,10 @@
 					"_id": "0mJgQuR02t2FMe7o",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.xuXzlEC3V0co3w3h",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12732,9 +13040,10 @@
 					"_id": "mMvEidRGjl3TU03Q",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -12792,7 +13101,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -12819,6 +13127,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Bailey Bigsmile",
 				"occludable": {
 					"radius": 0
@@ -12861,6 +13170,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/character.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -13090,9 +13405,10 @@
 			"_id": "s0i6rrf58N0dtmpx",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -13109,9 +13425,10 @@
 					"_id": "5xAG0eRrcvDeJAFk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13143,9 +13460,10 @@
 					"_id": "F4uIprrKWh9ApMaU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13177,9 +13495,10 @@
 					"_id": "G3mN15diMiTCDZ0U",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13211,9 +13530,10 @@
 					"_id": "HEegw2EUmmEzfdDM",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13245,9 +13565,10 @@
 					"_id": "PEN70F6ovA3g5HI2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13279,9 +13600,10 @@
 					"_id": "R8YnBNUwhZhG89iQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13313,9 +13635,10 @@
 					"_id": "SH09XavazYU9CqY4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13347,9 +13670,10 @@
 					"_id": "UQ4TLtVUR2kRlYkb",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13381,9 +13705,10 @@
 					"_id": "UZDBirrZeUxrAk7b",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13415,9 +13740,10 @@
 					"_id": "UrVd0BmoXkAxmrvv",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13449,9 +13775,10 @@
 					"_id": "ZQw4TLZbaLm5F0BW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13483,9 +13810,10 @@
 					"_id": "dOTrlwZ60XWqegQA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13517,9 +13845,10 @@
 					"_id": "ejKiqeUyjkahCjQf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13551,9 +13880,10 @@
 					"_id": "jAJPNJpHYawNBp2h",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13585,9 +13915,10 @@
 					"_id": "kCGaEuF27yXyE04i",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13619,9 +13950,10 @@
 					"_id": "p3GhRmIwrYTJmuhr",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13653,9 +13985,10 @@
 					"_id": "vf1Qszkq1om2Xgmn",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13687,9 +14020,10 @@
 					"_id": "AvkATnnICZQeDutw",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.6xbkky55saFOXZSk",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -13814,6 +14148,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -13902,6 +14240,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -13919,9 +14258,10 @@
 					"_id": "jm7En7XmNTQpq8KJ",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout-data.items-and-equipment.Item.RDJIvXRINnctm5J5",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14048,6 +14388,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -14136,6 +14480,7 @@
 							"max": 6,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -14153,9 +14498,10 @@
 					"_id": "k16rBatEZuFwAjKd",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.Oc7xNpMREJ8N5u3v",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14202,9 +14548,10 @@
 					"_id": "YrTydcKBDIwlvFQU",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.traits.Item.OKkyUlhBYtuHCOJt",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14233,9 +14580,10 @@
 					"_id": "aXWo6Rm9lC86y0ZF",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.LzDGf5TGlzcOBgFd",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14306,9 +14654,10 @@
 					"_id": "ZjYmKLyUT5yxabdH",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.lVYblrMAgEfHnWTR",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14379,9 +14728,10 @@
 					"_id": "rzCTG2NgXv3snSaL",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.1t9ZfJxVs14n5wTX",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14452,9 +14802,10 @@
 					"_id": "85T4sGjm6ZevWl2G",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.miscellany.Item.WyjtxDmxyBdGcD6n",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14491,9 +14842,10 @@
 					"_id": "AsC41Ff4aU5GYXVB",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.miscellany.Item.1wxcXIYvgK4GTYUf",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14530,9 +14882,10 @@
 					"_id": "zd8l6f1tBFvy1eFT",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout-data.items-and-equipment.Item.8oDszrNPgPkAhKab",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14571,9 +14924,10 @@
 					"_id": "ML912MHSvnY5Ewor",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.860ofdvpufUzSqE7",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14623,9 +14977,10 @@
 					"_id": "DCHvsOTdbCAKLaOe",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.xuXzlEC3V0co3w3h",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14675,9 +15030,10 @@
 					"_id": "oNkmzfohVFJ9mm2Q",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.uxikQYkupNqpmTyR",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -14748,7 +15104,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -14775,6 +15130,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Hazel Johnson",
 				"occludable": {
 					"radius": 0
@@ -14817,6 +15173,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/character.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -15046,9 +15408,10 @@
 			"_id": "6YpXwZtzb152o92A",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -15065,9 +15428,10 @@
 					"_id": "5xAG0eRrcvDeJAFk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15099,9 +15463,10 @@
 					"_id": "F4uIprrKWh9ApMaU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15133,9 +15498,10 @@
 					"_id": "G3mN15diMiTCDZ0U",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15167,9 +15533,10 @@
 					"_id": "HEegw2EUmmEzfdDM",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15201,9 +15568,10 @@
 					"_id": "PEN70F6ovA3g5HI2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15235,9 +15603,10 @@
 					"_id": "R8YnBNUwhZhG89iQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15269,9 +15638,10 @@
 					"_id": "SH09XavazYU9CqY4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15303,9 +15673,10 @@
 					"_id": "UQ4TLtVUR2kRlYkb",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15337,9 +15708,10 @@
 					"_id": "UZDBirrZeUxrAk7b",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15371,9 +15743,10 @@
 					"_id": "UrVd0BmoXkAxmrvv",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15405,9 +15778,10 @@
 					"_id": "ZQw4TLZbaLm5F0BW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15439,9 +15813,10 @@
 					"_id": "dOTrlwZ60XWqegQA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15473,9 +15848,10 @@
 					"_id": "ejKiqeUyjkahCjQf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15507,9 +15883,10 @@
 					"_id": "jAJPNJpHYawNBp2h",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15541,9 +15918,10 @@
 					"_id": "kCGaEuF27yXyE04i",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15575,9 +15953,10 @@
 					"_id": "p3GhRmIwrYTJmuhr",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15609,9 +15988,10 @@
 					"_id": "vf1Qszkq1om2Xgmn",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15643,9 +16023,10 @@
 					"_id": "HRIG9xfywSUTGEaB",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.VFRfwbor9PwEKdRZ",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -15770,6 +16151,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -15858,6 +16243,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -15875,9 +16261,10 @@
 					"_id": "hvDZA3wVrmsUZ1tN",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.QYgc3wH8JS3YGJ34",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16002,6 +16389,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -16090,6 +16481,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -16107,9 +16499,10 @@
 					"_id": "XegGM8C7KRNmnJxW",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.75n1EFSJw8xxti6s",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16234,6 +16627,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -16322,6 +16719,7 @@
 							"max": 4,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -16339,9 +16737,10 @@
 					"_id": "oR68awAKQXpbByIe",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.d0qmxHsuKN14qmua",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16466,6 +16865,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -16554,6 +16957,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -16571,9 +16975,10 @@
 					"_id": "D5ZGrSS3pzVMMz9K",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.0Ci0Jcpuca6rSqkL",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16620,9 +17025,10 @@
 					"_id": "0DZ2BcHafrJAteo5",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.BDGcAACYaQF0qXxX",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16680,9 +17086,10 @@
 					"_id": "OwdxrjnmiJloF6MS",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.RXpTSDERvwv1nuZ5",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16732,9 +17139,10 @@
 					"_id": "fRixmhHlTBiYBThS",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.robot_modules.Item.bzUxVWw6gLP5ZgNq",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16774,9 +17182,10 @@
 					"_id": "JFQGqz19VV2J8ZZj",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.WeHTP6Gw6Sr6HN8N",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16847,9 +17256,10 @@
 					"_id": "jXK5rAEglQlHLxFv",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.traits.Item.GGY5C3vOlzctf76N",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16878,9 +17288,10 @@
 					"_id": "9Vs2xTk8zO2VOcN3",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.6U2ulr6F0lUbJoYl",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -16972,7 +17383,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -16999,6 +17409,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Marvin",
 				"occludable": {
 					"radius": 0
@@ -17041,6 +17452,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/robot.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -17260,6 +17677,7 @@
 						"max": 3
 					}
 				},
+				"tinkeredWith": false,
 				"trait": ""
 			},
 			"type": "robot"
@@ -17268,9 +17686,10 @@
 			"_id": "3hihvsNT3tXeh2hv",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333089,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333089,
 				"systemId": "fallout",
@@ -17287,9 +17706,10 @@
 					"_id": "5xAG0eRrcvDeJAFk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17321,9 +17741,10 @@
 					"_id": "F4uIprrKWh9ApMaU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17355,9 +17776,10 @@
 					"_id": "G3mN15diMiTCDZ0U",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17389,9 +17811,10 @@
 					"_id": "HEegw2EUmmEzfdDM",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17423,9 +17846,10 @@
 					"_id": "PEN70F6ovA3g5HI2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17457,9 +17881,10 @@
 					"_id": "R8YnBNUwhZhG89iQ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17491,9 +17916,10 @@
 					"_id": "SH09XavazYU9CqY4",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17525,9 +17951,10 @@
 					"_id": "UQ4TLtVUR2kRlYkb",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17559,9 +17986,10 @@
 					"_id": "UZDBirrZeUxrAk7b",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17593,9 +18021,10 @@
 					"_id": "UrVd0BmoXkAxmrvv",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17627,9 +18056,10 @@
 					"_id": "ZQw4TLZbaLm5F0BW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17661,9 +18091,10 @@
 					"_id": "dOTrlwZ60XWqegQA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17695,9 +18126,10 @@
 					"_id": "ejKiqeUyjkahCjQf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17729,9 +18161,10 @@
 					"_id": "jAJPNJpHYawNBp2h",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17763,9 +18196,10 @@
 					"_id": "kCGaEuF27yXyE04i",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17797,9 +18231,10 @@
 					"_id": "p3GhRmIwrYTJmuhr",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17831,9 +18266,10 @@
 					"_id": "vf1Qszkq1om2Xgmn",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17865,9 +18301,10 @@
 					"_id": "Z3CEyjn01cXJmliq",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.traits.Item.3W3LSN9wwD48gaaL",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17896,9 +18333,10 @@
 					"_id": "zInXSpDSRAl9XxB4",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.perks.Item.51j1AqLl4zHqoVsN",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -17969,9 +18407,10 @@
 					"_id": "oY9EA6257hdn4osR",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.uGNGa0KBcJq3YFvc",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -18096,6 +18535,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -18184,6 +18627,7 @@
 							"max": 1,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -18201,9 +18645,10 @@
 					"_id": "kyRs0SqvZy0c13l9",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.QuYxQccl5EHdXTcT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -18328,6 +18773,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -18416,6 +18865,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -18433,9 +18883,10 @@
 					"_id": "cqkeLWTGtNqCKl6L",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.d0qmxHsuKN14qmua",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -18560,6 +19011,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -18648,6 +19103,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -18665,9 +19121,10 @@
 					"_id": "Lj2owRHQ0gJMrc60",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout-data.items-and-equipment.Item.8gk8QJxruRPeu7KA",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -18794,6 +19251,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -18882,6 +19343,7 @@
 							"max": 7,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -18899,9 +19361,10 @@
 					"_id": "uwSeedPVmeu6801E",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.pYMfuytsOCR3mxW8",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19026,6 +19489,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -19114,6 +19581,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -19131,9 +19599,10 @@
 					"_id": "Z9QmJ8YcVQpmdRx9",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.UJQaP4A50u2tSG6G",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19180,9 +19649,10 @@
 					"_id": "4RHiPTIre5re652h",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.7iEwQEnDwjtbdVtO",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19228,9 +19698,10 @@
 					"_id": "gEV6qwm6XED3eepO",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.F15SCdqO8m3rhpkc",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19301,9 +19772,10 @@
 					"_id": "mjnRiu7Z8O6JAyNS",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.CCrzErrpyLp7Ruz4",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19374,9 +19846,10 @@
 					"_id": "DaUefknSyQVKb0nL",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19413,9 +19886,10 @@
 					"_id": "abDpYRfKre1Ua4zU",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.uxikQYkupNqpmTyR",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19465,9 +19939,10 @@
 					"_id": "kZg5661BmBwN7XUA",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.xuXzlEC3V0co3w3h",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19538,7 +20013,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -19565,6 +20039,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Old Tallman",
 				"occludable": {
 					"radius": 0
@@ -19607,6 +20082,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/character.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -19836,9 +20317,10 @@
 			"_id": "pfw3hZcU9X05J65h",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.M3ZsJ6T2KnK1BQ0Y",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727373225281,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727373280325,
 				"systemId": "fallout",
@@ -19857,9 +20339,10 @@
 					"_id": "w6chPO9hxHxVpy5d",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.7MwNIxhzzbQUGbX4",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -19869,7 +20352,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.consumables.Item.7MwNIxhzzbQUGbX4"
 						}
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
@@ -19912,9 +20394,10 @@
 					"_id": "oip8QssMxIkHYycO",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20039,6 +20522,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -20127,6 +20614,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -20144,9 +20632,10 @@
 					"_id": "8tiMnuOfKjjgwEta",
 					"_stats": {
 						"compendiumSource": "Actor.mUf3q6oarv7qDTJV.Item.N1L9H9RYCX0okCVT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20156,7 +20645,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.mUf3q6oarv7qDTJV.Item.N1L9H9RYCX0okCVT"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -20198,7 +20686,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -20225,6 +20712,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Dog",
 				"occludable": {
 					"radius": 0
@@ -20267,6 +20755,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -20502,9 +20996,10 @@
 			"_id": "IhSW7DEgaLWQ66vK",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.LmNXIp3137HGkk9N",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727373906813,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727432062975,
 				"systemId": "fallout",
@@ -20523,9 +21018,10 @@
 					"_id": "Zj75qXiYlnuAb4eD",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20650,6 +21146,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -20738,6 +21238,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -20755,9 +21256,10 @@
 					"_id": "ZAGmlmfz3XeoQtgf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20786,9 +21288,10 @@
 					"_id": "WzWXKIVqNXuMZbc5",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20817,9 +21320,10 @@
 					"_id": "hiZg8Zxsuib78KaB",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20848,9 +21352,10 @@
 					"_id": "tjriI195ObuqfBrU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20879,9 +21384,10 @@
 					"_id": "oPslAbOt7zPKjD8C",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20910,9 +21416,10 @@
 					"_id": "898UbjNjjHz8Lgkx",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -20962,7 +21469,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -20989,6 +21495,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Eyebot",
 				"occludable": {
 					"radius": 0
@@ -21031,6 +21538,12 @@
 					"scaleY": 0.5,
 					"src": "systems/fallout/assets/tokens/robot.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -21266,9 +21779,10 @@
 			"_id": "a7yyO9YDGXYbPe5j",
 			"_stats": {
 				"compendiumSource": "Actor.pf4C1xVVWGbgcuT8",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372480146,
 				"duplicateSource": "Actor.pf4C1xVVWGbgcuT8",
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372793862,
 				"systemId": "fallout",
@@ -21285,9 +21799,10 @@
 					"_id": "KGRkntGxWsK465uD",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -21412,6 +21927,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -21500,6 +22019,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -21517,9 +22037,10 @@
 					"_id": "5bP3s2itICt3wfjM",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.s7hKKApmb9gOHbOj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -21548,9 +22069,10 @@
 					"_id": "M18DRzn2eDNibffz",
 					"_stats": {
 						"compendiumSource": "Actor.XgxI2k1X7FzmOmqc.Item.ljwl4EuIbpL5yrr8",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -21579,9 +22101,10 @@
 					"_id": "PV0srq6xbWTw8MXF",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -21610,9 +22133,10 @@
 					"_id": "OX26Ful5VjNfsyo1",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -21641,9 +22165,10 @@
 					"_id": "wZ0jUJ1WSGvxS7We",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -21693,7 +22218,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -21720,6 +22244,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Feral Ghoul",
 				"occludable": {
 					"radius": 0
@@ -21762,6 +22287,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -21996,9 +22527,10 @@
 			"_id": "YaAqTmWwuwnhXAcs",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.gmrGwhXOZ6I9F9m9",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727374325463,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727434405736,
 				"systemId": "fallout",
@@ -22017,9 +22549,10 @@
 					"_id": "o8mlmUkEDAdkucEd",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22144,6 +22677,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -22232,6 +22769,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -22249,9 +22787,10 @@
 					"_id": "smkoMSuHIbVcpR46",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22378,6 +22917,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -22466,6 +23009,7 @@
 							"max": 6,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -22483,9 +23027,10 @@
 					"_id": "vRLZS8RssxerZlZK",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.F4uIprrKWh9ApMaU",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22495,7 +23040,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.skills.Item.F4uIprrKWh9ApMaU"
 						}
 					},
 					"folder": null,
@@ -22521,9 +23065,10 @@
 					"_id": "xZ7HfvDzyXbMHoyr",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.jAJPNJpHYawNBp2h",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22533,7 +23078,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.skills.Item.jAJPNJpHYawNBp2h"
 						}
 					},
 					"folder": null,
@@ -22559,9 +23103,10 @@
 					"_id": "kBpiyEOsu5rEyhe6",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.PEN70F6ovA3g5HI2",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22571,7 +23116,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.skills.Item.PEN70F6ovA3g5HI2"
 						}
 					},
 					"folder": null,
@@ -22597,9 +23141,10 @@
 					"_id": "ozwkeIjyy5EEW76C",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.ZQw4TLZbaLm5F0BW",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22609,7 +23154,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.skills.Item.ZQw4TLZbaLm5F0BW"
 						}
 					},
 					"folder": null,
@@ -22635,9 +23179,10 @@
 					"_id": "uDdmhkNK9FAchtHM",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.G3mN15diMiTCDZ0U",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22647,7 +23192,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.skills.Item.G3mN15diMiTCDZ0U"
 						}
 					},
 					"folder": null,
@@ -22673,9 +23217,10 @@
 					"_id": "eiUpEjhexS6uXL7v",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22704,9 +23249,10 @@
 					"_id": "0NnOe3nCwj4bHJGi",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22777,9 +23323,10 @@
 					"_id": "OiMf79AR4Tdw3tNx",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22812,9 +23359,10 @@
 					"_id": "S7Oz5WWr445N7oZZ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22847,9 +23395,10 @@
 					"_id": "Q4iBDa40XODLDFNk",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22882,9 +23431,10 @@
 					"_id": "KRPGsz11TGnCFyld",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22917,9 +23467,10 @@
 					"_id": "uXje52qFMgq1lmIK",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -22948,9 +23499,10 @@
 					"_id": "kwvkzZlNplGHmvCA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23021,9 +23573,10 @@
 					"_id": "odKtNt58AdSYMJHC",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout-data.items-and-equipment.Item.8oDszrNPgPkAhKab",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23033,7 +23586,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout-data.items-and-equipment.Item.8oDszrNPgPkAhKab"
 						}
 					},
 					"folder": "8BNqzgcrzxAs23wX",
@@ -23084,7 +23636,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -23111,6 +23662,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Knight Helen Layton",
 				"occludable": {
 					"radius": 0
@@ -23153,6 +23705,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/npc.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -23387,9 +23945,10 @@
 			"_id": "C1OoGjf78VSD5UWj",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.bzYozcdWvQ66lvHa",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727373228174,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727373251420,
 				"systemId": "fallout",
@@ -23408,9 +23967,10 @@
 					"_id": "oip8QssMxIkHYycO",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23535,6 +24095,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -23623,6 +24187,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -23640,9 +24205,10 @@
 					"_id": "lYRfvFTf6MAd5m8z",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.consumables.Item.7MwNIxhzzbQUGbX4",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23652,7 +24218,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.consumables.Item.7MwNIxhzzbQUGbX4"
 						}
 					},
 					"folder": "9QCCOyxmiCDBRWbX",
@@ -23695,9 +24260,10 @@
 					"_id": "rGoKycK4WcfnAE4W",
 					"_stats": {
 						"compendiumSource": "Actor.fNPC91CTKSCZgWdO.Item.gKf2fRYyMuDjvg5T",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23707,7 +24273,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.fNPC91CTKSCZgWdO.Item.gKf2fRYyMuDjvg5T"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -23729,9 +24294,10 @@
 					"_id": "GQR8J4QVIYJh7AHR",
 					"_stats": {
 						"compendiumSource": "Actor.Bemt9lVV6hUaLprS.Item.nVOs7OeiKmtBA5jU",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23741,7 +24307,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.Bemt9lVV6hUaLprS.Item.nVOs7OeiKmtBA5jU"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -23763,9 +24328,10 @@
 					"_id": "mYy2vpv4ApgC602T",
 					"_stats": {
 						"compendiumSource": "Actor.mUf3q6oarv7qDTJV.Item.N1L9H9RYCX0okCVT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23775,7 +24341,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.mUf3q6oarv7qDTJV.Item.N1L9H9RYCX0okCVT"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -23797,9 +24362,10 @@
 					"_id": "70APdci34RYsyoHq",
 					"_stats": {
 						"compendiumSource": "Actor.gZdHn0Uy72xMOXU5.Item.kX9XZ8txrih14iRp",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -23809,7 +24375,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.gZdHn0Uy72xMOXU5.Item.kX9XZ8txrih14iRp"
 						}
 					},
 					"folder": "iDuO1JvotWNUCVuW",
@@ -23851,7 +24416,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -23878,6 +24442,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Mongrel Dog",
 				"occludable": {
 					"radius": 0
@@ -23920,6 +24485,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/creature.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -24155,9 +24726,10 @@
 			"_id": "FNNi95REJMlInOzp",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.denizens.Actor.aLu16ZpJv60mzvxB",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727374045349,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727432121872,
 				"systemId": "fallout",
@@ -24176,9 +24748,10 @@
 					"_id": "5kDAHscOQonXGaES",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -24303,6 +24876,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -24391,6 +24968,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
@@ -24408,9 +24986,10 @@
 					"_id": "4xDL10ANj397NCah",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -24535,6 +25114,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -24623,6 +25206,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -24640,9 +25224,10 @@
 					"_id": "tzwCUxbM5WKIYW3N",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -24767,6 +25352,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -24855,6 +25444,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "long",
@@ -24872,9 +25462,10 @@
 					"_id": "6eOkG5u4XVLCsVYi",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -24999,6 +25590,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -25087,6 +25682,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -25104,9 +25700,10 @@
 					"_id": "zW07I32YgeQxw1bB",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25135,9 +25732,10 @@
 					"_id": "q02DW05F7wrO4Ub3",
 					"_stats": {
 						"compendiumSource": "Actor.RvvyQEGQHldlbNEa.Item.TqtXQu4kgs4v4WPE",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25147,7 +25745,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.RvvyQEGQHldlbNEa.Item.TqtXQu4kgs4v4WPE"
 						}
 					},
 					"folder": null,
@@ -25169,9 +25766,10 @@
 					"_id": "DXhKRULvZfdP7TK9",
 					"_stats": {
 						"compendiumSource": "Actor.RvvyQEGQHldlbNEa.Item.FJGlyOpmqRrKIWPj",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25181,7 +25779,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.RvvyQEGQHldlbNEa.Item.FJGlyOpmqRrKIWPj"
 						}
 					},
 					"folder": null,
@@ -25203,9 +25800,10 @@
 					"_id": "B3gYKbqn2VhNExyn",
 					"_stats": {
 						"compendiumSource": "Actor.RvvyQEGQHldlbNEa.Item.TvtwV94bAlCiFvx5",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25215,7 +25813,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Actor.RvvyQEGQHldlbNEa.Item.TvtwV94bAlCiFvx5"
 						}
 					},
 					"folder": null,
@@ -25237,9 +25834,10 @@
 					"_id": "hzkO05HvDiqRZsIU",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25268,9 +25866,10 @@
 					"_id": "n9HayPd8DaqlZ8Y1",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25299,9 +25898,10 @@
 					"_id": "pEpjlkWsIVrLCoBg",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25330,9 +25930,10 @@
 					"_id": "wP7vrycFLwoTDHw8",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25361,9 +25962,10 @@
 					"_id": "TOud8fnJmVHZrVKt",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.9DjIa4OVZOUAZ00i",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
@@ -25373,7 +25975,6 @@
 					],
 					"flags": {
 						"core": {
-							"sourceId": "Compendium.fallout.ammunition.Item.9DjIa4OVZOUAZ00i"
 						}
 					},
 					"folder": null,
@@ -25434,7 +26035,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -25461,6 +26061,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Wrecked Sentry Bot",
 				"occludable": {
 					"radius": 0
@@ -25503,6 +26104,12 @@
 					"scaleY": 1.5,
 					"src": "systems/fallout/assets/tokens/robot.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -25738,9 +26345,10 @@
 			"_id": "uWdoa90XB5BM7PiB",
 			"_stats": {
 				"compendiumSource": "Actor.uWdoa90XB5BM7PiB",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727432383972,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727443761022,
 				"systemId": "fallout",
@@ -25757,9 +26365,10 @@
 					"_id": "qCjFmAfHOlETWhFB",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.jAJPNJpHYawNBp2h",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432513506,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432540577,
 						"systemId": "fallout",
@@ -25792,9 +26401,10 @@
 					"_id": "oDA1yNy0Ti7CudXP",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.UrVd0BmoXkAxmrvv",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432516598,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432543495,
 						"systemId": "fallout",
@@ -25827,9 +26437,10 @@
 					"_id": "EwQph6YvLgniRJ5e",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.ZQw4TLZbaLm5F0BW",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432519868,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432550524,
 						"systemId": "fallout",
@@ -25862,9 +26473,10 @@
 					"_id": "jSUjUkG8u8syeqJd",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.G3mN15diMiTCDZ0U",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432522946,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432556450,
 						"systemId": "fallout",
@@ -25897,9 +26509,10 @@
 					"_id": "AA5FtnzetDn2yh4L",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.skills.Item.dOTrlwZ60XWqegQA",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432527201,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432565617,
 						"systemId": "fallout",
@@ -25932,9 +26545,10 @@
 					"_id": "WG2AcSUYfwhogSyH",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.QuYxQccl5EHdXTcT",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432586202,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432586202,
 						"systemId": "fallout",
@@ -26059,6 +26673,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -26147,6 +26765,7 @@
 							"max": 0,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -26164,9 +26783,10 @@
 					"_id": "xRPsnepuUFsujCnf",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432626450,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432666731,
 						"systemId": "fallout",
@@ -26195,9 +26815,10 @@
 					"_id": "cs1Y9AafS4vtfVla",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.apparel.Item.cdwX7EVolnIWRaZi",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432685706,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432685706,
 						"systemId": "fallout",
@@ -26268,9 +26889,10 @@
 					"_id": "zw2OQ2Yn0g90AZJp",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.weapons.Item.M4xWjxuABTWOefg2",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432797412,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432797412,
 						"systemId": "fallout",
@@ -26395,6 +27017,10 @@
 									"rank": 1,
 									"value": false
 								},
+								"fuel_x": {
+									"rank": 1,
+									"value": 0
+								},
 								"gatling": {
 									"rank": 0,
 									"value": false
@@ -26483,6 +27109,7 @@
 							"max": 4,
 							"modded": false
 						},
+						"naturalWeapon": false,
 						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
@@ -26500,9 +27127,10 @@
 					"_id": "k7toaVAQJ5yMPuw4",
 					"_stats": {
 						"compendiumSource": "Compendium.fallout.ammunition.Item.aYG2QbgizqTfxAiy",
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": 1727432819553,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727432826653,
 						"systemId": "fallout",
@@ -26569,7 +27197,6 @@
 				"flags": {
 				},
 				"height": 1,
-				"hexagonalShape": 0,
 				"light": {
 					"alpha": 0.5,
 					"angle": 360,
@@ -26596,6 +27223,7 @@
 					"shadows": 0
 				},
 				"lockRotation": false,
+				"movementAction": null,
 				"name": "Dr. Trestridge",
 				"occludable": {
 					"radius": 0
@@ -26638,6 +27266,12 @@
 					"scaleY": 1,
 					"src": "systems/fallout/assets/tokens/npc.webp",
 					"tint": "#ffffff"
+				},
+				"turnMarker": {
+					"animation": null,
+					"disposition": false,
+					"mode": 1,
+					"src": null
 				},
 				"width": 1
 			},
@@ -26881,9 +27515,10 @@
 			"_id": "p71As1ocgrbKYOQq",
 			"_stats": {
 				"compendiumSource": "Folder.p71As1ocgrbKYOQq",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333309,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333309,
 				"systemId": "fallout",
@@ -26903,9 +27538,10 @@
 			"_id": "LEEmSQTcIfBNsDTh",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": null,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": null,
 				"modifiedTime": null,
 				"systemId": "fallout",
@@ -26925,9 +27561,10 @@
 			"_id": "oHCkMvCY32ngMEET",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": null,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": null,
 				"modifiedTime": null,
 				"systemId": "fallout",
@@ -26947,9 +27584,10 @@
 			"_id": "txNrNpq0KQbDdpHq",
 			"_stats": {
 				"compendiumSource": "Folder.txNrNpq0KQbDdpHq",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333309,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333309,
 				"systemId": "fallout",
@@ -26969,9 +27607,10 @@
 			"_id": "9EpstDNcnZ7lAjDd",
 			"_stats": {
 				"compendiumSource": "Folder.9EpstDNcnZ7lAjDd",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333309,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333309,
 				"systemId": "fallout",
@@ -26996,14 +27635,17 @@
 			"_id": "0HaBGBiAIwUVT30x",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.journals.JournalEntry.PkuFNwWNvMAhi9KQ",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333206,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333206,
 				"systemId": "fallout",
 				"systemVersion": "11.13.0"
 			},
+			"categories": [
+			],
 			"flags": {
 			},
 			"folder": "txNrNpq0KQbDdpHq",
@@ -27018,14 +27660,16 @@
 					"_id": "j4ekNCPQblsMze5Q",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27057,14 +27701,16 @@
 					"_id": "XRWGwFttn7rZSmEe",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727443838868,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27096,14 +27742,16 @@
 					"_id": "rle4Q403xhfSircO",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": "UujBouV9gKRvnbZW",
 						"modifiedTime": 1727378820432,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27135,14 +27783,16 @@
 					"_id": "vayVrvhbL1xM8yRd",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27177,14 +27827,17 @@
 			"_id": "jGxX8IQgE11C1xlD",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.journals.JournalEntry.g6L7dzLWwhc4xKpB",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333206,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333206,
 				"systemId": "fallout",
 				"systemVersion": "11.13.0"
 			},
+			"categories": [
+			],
 			"flags": {
 				"core": {
 				}
@@ -27201,14 +27854,16 @@
 					"_id": "hIfJTqhB7aFzn8lV",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27241,14 +27896,16 @@
 					"_id": "MmWCZVVuDf2twijW",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27280,14 +27937,16 @@
 					"_id": "erDcSSuoEbiXgPG2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27319,14 +27978,16 @@
 					"_id": "UpoOcNeGVzFbLvU2",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27361,14 +28022,17 @@
 			"_id": "nZ5c1lOktXdAO6xj",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.journals.JournalEntry.IZiheUFgnjSFQaQp",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333206,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333206,
 				"systemId": "fallout",
 				"systemVersion": "11.13.0"
 			},
+			"categories": [
+			],
 			"flags": {
 			},
 			"folder": "txNrNpq0KQbDdpHq",
@@ -27383,14 +28047,16 @@
 					"_id": "eYXUP7D0jFHw2Sos",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27422,14 +28088,16 @@
 					"_id": "wf3qmf6m906umfCR",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27464,14 +28132,17 @@
 			"_id": "tR3y1BKZuhacPTM3",
 			"_stats": {
 				"compendiumSource": "Compendium.fallout-data.journals.JournalEntry.9hiXcSzOL5RkcrJp",
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333206,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372333206,
 				"systemId": "fallout",
 				"systemVersion": "11.13.0"
 			},
+			"categories": [
+			],
 			"flags": {
 				"core": {
 				}
@@ -27488,14 +28159,16 @@
 					"_id": "uG4GTjCcNigbBcMJ",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27527,14 +28200,16 @@
 					"_id": "wJ7xH0F86Xtl8Z41",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27567,14 +28242,16 @@
 					"_id": "tzrNoii32MjUT0sA",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27607,14 +28284,16 @@
 					"_id": "SpudgOzNyfWDDE8Y",
 					"_stats": {
 						"compendiumSource": null,
-						"coreVersion": "12.331",
+						"coreVersion": "13.351",
 						"createdTime": null,
 						"duplicateSource": null,
+						"exportSource": null,
 						"lastModifiedBy": null,
 						"modifiedTime": null,
 						"systemId": "fallout",
 						"systemVersion": "11.13.0"
 					},
+					"category": null,
 					"flags": {
 					},
 					"image": {
@@ -27658,9 +28337,10 @@
 			"_id": "sZBFCjLHoSX331Da",
 			"_stats": {
 				"compendiumSource": null,
-				"coreVersion": "12.331",
+				"coreVersion": "13.351",
 				"createdTime": 1727372333261,
 				"duplicateSource": null,
+				"exportSource": null,
 				"lastModifiedBy": "UujBouV9gKRvnbZW",
 				"modifiedTime": 1727372356723,
 				"systemId": "fallout",
@@ -27683,76 +28363,131 @@
 			"results": [
 				{
 					"_id": "g8wk0epW75UHJzbc",
-					"documentId": null,
+					"_stats": {
+						"compendiumSource": null,
+						"coreVersion": "13.351",
+						"createdTime": null,
+						"duplicateSource": null,
+						"exportSource": null,
+						"lastModifiedBy": null,
+						"modifiedTime": null,
+						"systemId": null,
+						"systemVersion": null
+					},
+					"description": "No Encounter",
 					"drawn": false,
 					"flags": {
 					},
 					"img": "icons/svg/d20-black.svg",
+					"name": "",
 					"range": [
 						1,
 						5
 					],
-					"text": "No Encounter",
 					"type": "text",
 					"weight": 1
 				},
 				{
 					"_id": "HQ223vwiTorfW5l0",
-					"documentId": null,
+					"_stats": {
+						"compendiumSource": null,
+						"coreVersion": "13.351",
+						"createdTime": null,
+						"duplicateSource": null,
+						"exportSource": null,
+						"lastModifiedBy": null,
+						"modifiedTime": null,
+						"systemId": null,
+						"systemVersion": null
+					},
+					"description": "Weak feral ghouls",
 					"drawn": false,
 					"flags": {
 					},
 					"img": "icons/svg/d20-black.svg",
+					"name": "",
 					"range": [
 						6,
 						10
 					],
-					"text": "Weak feral ghouls",
 					"type": "text",
 					"weight": 1
 				},
 				{
 					"_id": "3Lwo7ayJ66lI6xjY",
-					"documentId": null,
+					"_stats": {
+						"compendiumSource": null,
+						"coreVersion": "13.351",
+						"createdTime": null,
+						"duplicateSource": null,
+						"exportSource": null,
+						"lastModifiedBy": null,
+						"modifiedTime": null,
+						"systemId": null,
+						"systemVersion": null
+					},
+					"description": "Feral ghouls",
 					"drawn": false,
 					"flags": {
 					},
 					"img": "icons/svg/d20-black.svg",
+					"name": "",
 					"range": [
 						11,
 						15
 					],
-					"text": "Feral ghouls",
 					"type": "text",
 					"weight": 1
 				},
 				{
 					"_id": "XBnODxOEbYZDGuu5",
-					"documentId": null,
+					"_stats": {
+						"compendiumSource": null,
+						"coreVersion": "13.351",
+						"createdTime": null,
+						"duplicateSource": null,
+						"exportSource": null,
+						"lastModifiedBy": null,
+						"modifiedTime": null,
+						"systemId": null,
+						"systemVersion": null
+					},
+					"description": "Putrid glowing one",
 					"drawn": false,
 					"flags": {
 					},
 					"img": "icons/svg/d20-black.svg",
+					"name": "",
 					"range": [
 						16,
 						18
 					],
-					"text": "Putrid glowing one",
 					"type": "text",
 					"weight": 1
 				},
 				{
 					"_id": "z4SpipXoht7YAEMM",
-					"documentId": null,
+					"_stats": {
+						"compendiumSource": null,
+						"coreVersion": "13.351",
+						"createdTime": null,
+						"duplicateSource": null,
+						"exportSource": null,
+						"lastModifiedBy": null,
+						"modifiedTime": null,
+						"systemId": null,
+						"systemVersion": null
+					},
+					"description": "Toughened glowing one",
 					"drawn": false,
 					"flags": {
 					},
 					"img": "icons/svg/d20-black.svg",
+					"name": "",
 					"range": [
 						19,
 						20
 					],
-					"text": "Toughened glowing one",
 					"type": "text",
 					"weight": 1
 				}

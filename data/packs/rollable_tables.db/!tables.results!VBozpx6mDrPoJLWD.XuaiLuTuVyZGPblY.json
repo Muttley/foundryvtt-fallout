@@ -1,14 +1,14 @@
 {
 	"_id": "XuaiLuTuVyZGPblY",
 	"_key": "!tables.results!VBozpx6mDrPoJLWD.XuaiLuTuVyZGPblY",
-	"documentId": null,
+	"description": "Left Leg",
 	"drawn": false,
 	"img": "icons/svg/d20-black.svg",
+	"name": "",
 	"range": [
 		15,
 		17
 	],
-	"text": "Left Leg",
 	"type": "text",
 	"weight": 1
 }

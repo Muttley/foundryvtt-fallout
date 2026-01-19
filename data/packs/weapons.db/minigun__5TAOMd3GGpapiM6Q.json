@@ -12,6 +12,7 @@
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
+		"consumedOnUse": false,
 		"cost": 382,
 		"creatureAttribute": "body",
 		"creatureSkill": "guns",
@@ -1081,6 +1082,7 @@
 			"max": 3,
 			"modded": false
 		},
+		"naturalWeapon": false,
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"quantityRoll": "",
