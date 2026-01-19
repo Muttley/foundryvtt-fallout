@@ -28,7 +28,7 @@
 		"json-stable-stringify-pretty": "^1.2.0",
 		"merge-stream": "^2.0.0",
 		"nedb-promises": "^6.2.3",
-		"rollup": "^4.55.1",
+		"rollup": "^4.55.2",
 		"sass": "^1.97.2",
 		"yaml": "^2.8.2",
 		"yargs": "^18.0.0"
