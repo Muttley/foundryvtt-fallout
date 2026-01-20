@@ -470,6 +470,7 @@ FALLOUT.TEMPLATES.conditions.weary: Exausto
 FALLOUT.TEMPLATES.ConstructionTime: Tempo de Construção
 FALLOUT.TEMPLATES.Consumable_Group: Grupo
 FALLOUT.TEMPLATES.Consumable_Type: Tipo
+FALLOUT.TEMPLATES.consumedOnUse: Consumed on Use
 FALLOUT.TEMPLATES.Crafting: Criação
 FALLOUT.TEMPLATES.Create_Addiction: Criar Vício
 FALLOUT.TEMPLATES.Create_Ammo: Criar Munição
@@ -649,6 +650,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: O veículo é poderoso e bem a
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Os testes de operação para reparar veículos Robustos têm a dificuldade reduzida em 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Um veículo de assento único é projetado para ser operado por um único piloto, que também assume a função de artilheiro, sem a penalidade normal.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: O veículo viaja somente na água e não pode viajar pelo chão. Se este veículo sofrer um golpe crítico no Chassi, água começará a entrar nele e afundará após um número de rodadas igual ao dobro da Escala do veículo.
+FALLOUT.TOOLTIPS.Weapon.consumedOnUse: If checked then this weapon itself is consumed when used instead of using ammo.
 FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Não consumirá munição extra.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Se você fizer a ação menor Mirar antes de atacar com uma arma Precisa, você pode gastar até 3 PA para adicionar +1 CD por PA gasto ao dano do ataque. Se você ganhar dano dessa maneira, você não pode gastar munição para dano extra. Uma arma não pode ser Precisa e Imprecisa ao mesmo tempo.
