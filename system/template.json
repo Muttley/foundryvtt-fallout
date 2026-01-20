@@ -1285,6 +1285,7 @@
 			"ammoPerShot": 1,
 			"attribute": "",
 			"condition": "",
+			"consumedOnUse": false,
 			"creatureAttribute": "",
 			"creatureSkill": "",
 			"damage": {

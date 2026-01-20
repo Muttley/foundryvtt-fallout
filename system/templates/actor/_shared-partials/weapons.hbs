@@ -6,6 +6,7 @@
 		<div class="flexrow flexlarge item-info">
 			<p>{{localize 'FALLOUT.UI.Damage'}}</p>
 			<p>{{localize 'FALLOUT.UI.Type'}}</p>
+			<p>{{localize 'FALLOUT.UI.Quantity'}}</p>
 		</div>
 		<div class="item-controls">
 			<a
@@ -67,6 +68,16 @@
 								</i>
 							{{/ifCond}}
 						{{/each}}
+					</div>
+					<div class="text-center">
+						{{#if item.system.consumedOnUse}}
+							<input
+								type="number"
+								class="item-quantity num-short-3"
+								value="{{item.system.quantity}}"
+								min="0"
+							>
+						{{/if}}
 					</div>
 				</div>
 				<div class="item-controls">

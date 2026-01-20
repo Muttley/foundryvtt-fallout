@@ -791,6 +791,10 @@ export default class FalloutBaseActorSheet
 				return;
 			}
 		}
+		else if (item.system.consumedOnUse && item.system.quantity < 1) {
+			ui.notifications.warn(`You don't have any ${item.name}'s left`);
+			return;
+		}
 
 		// Check for unreliable weapon quality
 		let complication = parseInt(this.actor.system.complication);

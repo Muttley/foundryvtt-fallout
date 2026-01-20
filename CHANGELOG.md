@@ -1,6 +1,32 @@
 # v11.16.5
 
 #### Enhancements
+- [#628] Better support for single use weapons
+
+	**NOTE**: Weapons now have a "Consumed on Use" checkbox to handle weapons
+	such as Grenades, Mines, etc. without having to use special Ammunition items for them.  When these weapons are used, the quantity of the Weapon carried is reduced instead of ammo.
+
+	The following is a list of affected Weapons:
+
+	* Baseball Grenade
+	* Bottlecap Mine
+	* Frag Grenade
+	* Frag Mine
+	* Javelin
+	* Molotov Cocktail
+	* Nuka Grenade
+	* Nuke Mine
+	* Plasma Grenade
+	* Plasma Mine
+	* Pulse Grenade
+	* Pulse Mine
+	* Throwing Knives
+	* Tomahawk
+
+	A data migration step is run as part of this release which will update all weapons accordingly (including those owned by characters) and then remove the retired Ammunition items.  This is a best-effort migration which relies on these specific Weapon names, so if you have renamed or created new items that should be handled this way, you may have to edit those manually.
+
+	**IMPORTANT**: As always, we recommend you take a backup of any worlds before migration in case of any issues with the migration process.
+
 - [#675] Add Tinkered With status toggle to Robot character sheet and increase max HP when checked
 - [#709] Let NPCs use other special attributes for skill rolls
 - [#716] Improve positioning of AP tracker and update it to an ApplicationV2 app
