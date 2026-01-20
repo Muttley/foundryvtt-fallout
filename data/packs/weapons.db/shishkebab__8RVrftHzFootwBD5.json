@@ -12,6 +12,7 @@
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
+		"consumedOnUse": false,
 		"cost": 200,
 		"creatureAttribute": "body",
 		"creatureSkill": "melee",
@@ -424,6 +425,7 @@
 			"max": 1,
 			"modded": false
 		},
+		"naturalWeapon": false,
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",

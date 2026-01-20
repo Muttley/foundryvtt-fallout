@@ -1,42 +1,83 @@
 <div class="fallout ap-tracker">
-    {{#if (eq showGMMomentumToPlayers true)}}
-    <div class="ap-resource gm" data-type="gmAP">
-        <div class="flexcol">
-            <h4>{{localize "FALLOUT.TEMPLATES.OVERSEER_AP"}}</h4>
-        </div>
-        <div class="flexrow align-mid">
-            <a class="ap-btn {{#if (eq isGM true)}}ap-sub{{/if}}">-</a>
-            <input type="number" class="ap-input num-short-3" value={{gmAP}}>
-            <a class="ap-btn {{#if (eq isGM true)}}ap-add{{/if}}">+</a>
-        </div>
-    </div>
+
+    {{#if showGMMomentumToPlayers}}
+		<div class="ap-resource gm">
+			<div class="flexcol">
+				<h4>
+					{{localize "FALLOUT.TEMPLATES.OVERSEER_AP"}}
+				</h4>
+			</div>
+			<div class="flexrow align-mid">
+				<a
+					class="ap-btn"
+					{{#if isGM}}
+						data-action="decrementPool"
+						data-type="gmAP"
+					{{/if}}
+				>
+					<i class="fa-solid fa-minus"></i>
+				</a>
+				<input
+					class="ap-input num-short-3"
+					data-type="gmAP"
+					{{#unless isGM}}
+						disabled
+					{{/unless}}
+					type="number"
+					value={{gmAP}}
+				>
+				<a
+					class="ap-btn"
+					{{#if isGM}}
+						data-action="incrementPool"
+						data-type="gmAP"
+					{{/if}}
+				>
+					<i class="fa-solid fa-plus"></i>
+				</a>
+			</div>
+		</div>
     {{/if}}
 
-    {{#if (eq maxAppShowToPlayers true)}}
-    <div class="ap-resource maxAP-box" data-type="maxAP">
+    <div class="ap-resource party">
         <div class="flexcol">
-            <h4>{{localize "FALLOUT.TEMPLATES.MAX_PARTY_AP"}}</h4>
+            <h4>
+				{{localize "FALLOUT.TEMPLATES.PARTY_AP"}}
+				{{#if maxAppShowToPlayers}}
+					<a data-action="toggleMaxAP" class='toggle-maxAp'>
+						<i class="fas fa-cog"></i>
+					</a>
+				{{/if}}
+			</h4>
         </div>
         <div class="flexrow align-mid">
-            <a class="ap-btn ap-sub">-</a>
-            <input type="number" class="ap-input num-short-3" value="{{maxAP}}">
-            <a class="ap-btn ap-add">+</a>
+            <a class="ap-btn" data-action="decrementPool" data-type="partyAP">
+				<i class="fa-solid fa-minus"></i>
+			</a>
+            <input  data-type="partyAP" type="number" class="ap-input num-short-3" value="{{partyAP}}">
+            <a class="ap-btn" data-action="incrementPool" data-type="partyAP">
+				<i class="fa-solid fa-plus"></i>
+			</a>
         </div>
     </div>
-    {{/if}}
 
-    <div class="ap-resource party" data-type="partyAP">
-        {{#if (eq maxAppShowToPlayers true)}}
-        <a class='toggle-maxAp'><i class="fas fa-cog"></i></a>
-        {{/if}}
-        <div class="flexcol">
-            <h4>{{localize "FALLOUT.TEMPLATES.PARTY_AP"}}</h4>
-        </div>
-        <div class="flexrow align-mid">
-            <a class="ap-btn ap-sub">-</a>
-            <input type="number" class="ap-input num-short-3" value="{{partyAP}}">
-            <a class="ap-btn ap-add">+</a>
-        </div>
-    </div>
+    {{#if maxAppShowToPlayers}}
+		<div class="ap-resource maxAP-box">
+			<div class="flexcol">
+				<h4>
+					{{localize "FALLOUT.TEMPLATES.MAX_PARTY_AP"}}
+				</h4>
+			</div>
+			<div class="flexrow align-mid">
+				<a class="ap-btn" data-action="decrementPool" data-type="maxAP">
+					<i class="fa-solid fa-minus"></i>
+				</a>
+				<input data-type="maxAP" type="number" class="ap-input num-short-3" value="{{maxAP}}">
+				<a class="ap-btn" data-action="incrementPool" data-type="maxAP">
+					<i class="fa-solid fa-plus"></i>
+				</a>
+			</div>
+		</div>
+    {{/if}}
 
 </div>

@@ -12,6 +12,7 @@
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
+		"consumedOnUse": false,
 		"cost": 50,
 		"creatureAttribute": "body",
 		"creatureSkill": "guns",
@@ -3929,6 +3930,7 @@
 				"type": "weapon_mod"
 			}
 		},
+		"naturalWeapon": false,
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",

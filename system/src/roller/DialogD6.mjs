@@ -13,22 +13,22 @@ export class DialogD6 extends Dialog {
 	activateListeners(html) {
 		const me = this;
 
-		// Check when the box is changed if actor has enough ammo
 		super.activateListeners(html);
-		// html.on('change', '.d-number', async (e, i, a) => {
-		//     await this.checkAmmo(html)
-		// })
 
 		html.on("click", ".roll", async event => {
 			let extraDiceNum = parseInt(html.find(".extra-dice")[0]?.value ?? 0);
 			let fireRate = parseInt(html.find(".fire-rate")[0]?.value ?? 0);
 			let diceNum = parseInt(html.find(".damage-dice")[0]?.value ?? 1);
 
-			const gatlingWeapon = me.weapon?.hasWeaponQuality("gatling") ?? false;
+			me.weapon = me.weapon.constructor.name === "Object"
+				? await fromUuid(me.weapon.uuid)
+				: me.weapon;
+
+			const gatlingWeapon = me.weapon.hasWeaponQuality("gatling") ?? false;
 			let multiplier = gatlingWeapon ? 2 : 1;
 
 			if (!diceNum) {
-				diceNum = this.diceNum;
+				diceNum = me.diceNum;
 			}
 
 			if (fireRate && fireRate > 0) {
@@ -38,12 +38,12 @@ export class DialogD6 extends Dialog {
 			let additionalAmmo = 0;
 			// CHECK IF THERE IS ENOUGH AMMO TO TRIGGER THE ROLL
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				if (this.weapon?.system.ammo) {
-					let initDmg = this.falloutRoll
+				if (me.weapon?.system.ammo) {
+					let initDmg = me.falloutRoll
 						? 0
-						: this.weapon.system.damage.rating;
+						: me.weapon.system.damage.rating;
 
-					additionalAmmo = await this.checkAmmo(diceNum, initDmg);
+					additionalAmmo = await me.checkAmmo(diceNum, initDmg);
 
 					if (additionalAmmo < 0) {
 						return;
@@ -51,41 +51,41 @@ export class DialogD6 extends Dialog {
 				}
 			}
 
-			if (!this.falloutRoll) {
+			if (!me.falloutRoll) {
 				fallout.Roller2D20.rollD6({
-					rollname: this.rollName,
+					rollname: me.rollName,
 					dicenum: diceNum + extraDiceNum,
-					weapon: this.weapon,
-					actor: this.actor,
+					weapon: me.weapon,
+					actor: me.actor,
 				});
 			}
 			else {
 				fallout.Roller2D20.addD6({
-					rollname: this.rollName,
+					rollname: me.rollName,
 					dicenum: diceNum + extraDiceNum,
-					weapon: this.weapon,
-					actor: this.actor,
-					falloutRoll: this.falloutRoll,
+					weapon: me.weapon,
+					actor: me.actor,
+					falloutRoll: me.falloutRoll,
 				});
 			}
 
 			// REDUCE AMMO FOR CHARACTER AND ROBOT
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				if (!this.actor) {
+				if (!me.actor) {
 					return;
 				}
 
 				let _actor;
-				if (this.actor.startsWith("Actor")) {
-					_actor = fromUuidSync(this.actor);
+				if (me.actor.startsWith("Actor")) {
+					_actor = fromUuidSync(me.actor);
 				}
-				else if (this.actor.startsWith("Scene")) {
-					_actor = fromUuidSync(this.actor).actor;
+				else if (me.actor.startsWith("Scene")) {
+					_actor = fromUuidSync(me.actor).actor;
 				}
 
 				if (["character", "robot", "vehicle"].includes(_actor.type)) {
 					if (additionalAmmo > 0) {
-						await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo);
+						await _actor.reduceAmmo(me.weapon.system.ammo, additionalAmmo);
 					}
 				}
 			}
@@ -183,11 +183,18 @@ export class DialogD6 extends Dialog {
 			return -1;
 		}
 
+		const weaponType = this.weapon?.system?.weaponType ?? "";
+
 		// Check if there is enough ammo
 		const totalDice = parseInt(diceNum);
 		const weaponDmg = parseInt(initDmg);
 
-		let additionalAmmo = Math.max(0, totalDice - weaponDmg)
+		// Don't include bonus melee damage dice in the calculation
+		const bonusDamage = ["meleeWeapons", "unarmed"].includes(weaponType)
+			? _actor.system.meleeDamage.value
+			: 0;
+
+		let additionalAmmo = Math.max(0, totalDice - weaponDmg - bonusDamage)
 			* this.weapon.system.ammoPerShot;
 
 		// Gatling weird shit where you need to add 2DC and spend 10 ammmo...

@@ -183,8 +183,8 @@ export default class FalloutMacros {
 					startingAp++;
 				}
 
-				fallout.APTracker.setAP("partyAP", 0);
-				fallout.APTracker.setAP("gmAP", startingAp);
+				fallout.APTrackerV2.setAP("partyAP", 0);
+				fallout.APTrackerV2.setAP("gmAP", startingAp);
 
 				return ui.notifications.info(
 					game.i18n.format("FALLOUT.MACRO.Success", {

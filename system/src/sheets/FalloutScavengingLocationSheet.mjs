@@ -229,7 +229,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 
 		// Update ammo counts if needed
 		for (const item of this.actor.items) {
-			if (item.type === "ammo") {
+			if (item.system.quantityRoll && item.system.quantityRoll !== "") {
 				item.rollQuantity("update");
 			}
 		}

@@ -61,14 +61,14 @@ export class Dialog2d20 extends Dialog {
 			actor: this.actor,
 		}).then(result => this.deferred.resolve(result));
 
-		if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
+		if (this.actor && game.settings.get("fallout", "automaticAmmunitionCalculation")) {
 			const actorType = this.actor?.type;
 			if (actorType !== "character" && actorType !== "robot" && actorType !== "vehicle") {
 				return;
 			}
 
 			// REDUCE AMMO
-			if (this.actor && this.item?.system.ammo !== "") {
+			if (this.item?.system?.ammo !== "") {
 				try {
 					this.actor.reduceAmmo(
 						this.item.system.ammo,
@@ -78,6 +78,13 @@ export class Dialog2d20 extends Dialog {
 				catch(er) {
 					console.warn(er);
 				}
+			}
+			else if (this.item?.system?.consumedOnUse) {
+				const newQuantity = parseInt(this.item.system.quantity) - 1;
+
+				this.item.update({
+					"system.quantity": newQuantity,
+				});
 			}
 		}
 	}

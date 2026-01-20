@@ -1,3 +1,50 @@
+# v11.16.5
+
+#### Enhancements
+- [#628] Better support for single use weapons
+
+	**NOTE**: Weapons now have a "Consumed on Use" checkbox to handle weapons
+	such as Grenades, Mines, etc. without having to use special Ammunition items for them.  When these weapons are used, the quantity of the Weapon carried is reduced instead of ammo.
+
+	The following is a list of affected Weapons:
+
+	* Baseball Grenade
+	* Bottlecap Mine
+	* Frag Grenade
+	* Frag Mine
+	* Javelin
+	* Molotov Cocktail
+	* Nuka Grenade
+	* Nuke Mine
+	* Plasma Grenade
+	* Plasma Mine
+	* Pulse Grenade
+	* Pulse Mine
+	* Throwing Knives
+	* Tomahawk
+
+	A data migration step is run as part of this release which will update all weapons accordingly (including those owned by characters) and then remove the retired Ammunition items.  This is a best-effort migration which relies on these specific Weapon names, so if you have renamed or created new items that should be handled this way, you may have to edit those manually.
+
+	**IMPORTANT**: As always, we recommend you take a backup of any worlds before migration in case of any issues with the migration process.
+
+- [#675] Add Tinkered With status toggle to Robot character sheet and increase max HP when checked
+- [#709] Let NPCs use other special attributes for skill rolls
+- [#716] Improve positioning of AP tracker and update it to an ApplicationV2 app
+- [#718] Fuel track for the Vehicle character sheet (identical to player Thirst track as per Wanderer's Guide Book)
+
+#### Bugs
+- [#659] Melee weapons that use ammo use too much ammo due to strength based melee bonus damage
+- [#712] Can't add additional damage dice
+- [#714] Legendary Armor Mod type is missing
+- [#717] Some Ammo Types not being recognized as Ammo
+- [#724] Quantity Roll not updating automatically in scavenging location UI
+- [#725] Body location infinite immunity symbol user interface element too large
+
+#### Chores
+- [#722] Merge new German and French translation updates from Crowdin
+
+---
+
 # v11.16.4
 
 #### Bugs

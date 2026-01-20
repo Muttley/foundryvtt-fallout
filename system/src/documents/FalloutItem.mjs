@@ -61,11 +61,18 @@ export default class FalloutItem extends Item {
 
 			return shotsAvailable;
 		}
-		else if (this.type === "weapon" && this.system.ammo !== "") {
-			const [, shotsAvailable] =
-				this.actor._getAvailableAmmoType(
-					this.system.ammo
-				);
+		else if (this.type === "weapon") {
+			let shotsAvailable = 0;
+
+			if (this.system.ammo !== "") {
+				[, shotsAvailable] =
+					this.actor._getAvailableAmmoType(
+						this.system.ammo
+					);
+			}
+			else if (this.system.consumedOnUse) {
+				shotsAvailable = this.system.quantity;
+			}
 
 			return shotsAvailable;
 		}

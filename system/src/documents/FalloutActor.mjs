@@ -105,6 +105,10 @@ export default class FalloutActor extends Actor {
 		return this.type === "robot";
 	}
 
+	get isTinkeredWith() {
+		return this.type === "robot" && this.system.conditions.tinkeredWith;
+	}
+
 	get isWellRested() {
 		return this.type === "character" && this.system.conditions.wellRested;
 	}
@@ -427,7 +431,7 @@ export default class FalloutActor extends Actor {
 			- this.system.radiation
 			+ this.system.health.bonus;
 
-		if (this.isWellRested) {
+		if (this.isWellRested || this.isTinkeredWith) {
 			this.system.health.max += 2;
 		}
 

@@ -22,37 +22,14 @@
 			]
 		},
 		"vehicle": {
-			"scale": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
-			"health": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
 			"cover": {
 				"max": 1,
 				"min": 0,
 				"mod": 0,
 				"value": 0
 			},
-			"zone_speed": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
-			"travel_speed": {
-				"max": 1,
-				"min": 0,
-				"mod": 0,
-				"value": 0
-			},
-			"passengers": {
+			"fuel": 0,
+			"health": {
 				"max": 1,
 				"min": 0,
 				"mod": 0,
@@ -66,6 +43,12 @@
 			},
 			"injuries": "",
 			"locations": [],
+			"passengers": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
 			"resistance": {
 				"energy": {
 					"locations": "",
@@ -78,6 +61,18 @@
 			},
 			"salvage": {
 				"tn": 0
+			},
+			"scale": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
+			},
+			"travel_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
 			},
 			"vehicleQuality": {
 				"cargo_x": {
@@ -116,6 +111,12 @@
 					"rank": 0,
 					"value": false
 				}
+			},
+			"zone_speed": {
+				"max": 1,
+				"min": 0,
+				"mod": 0,
+				"value": 0
 			},
 			"templates": [
 				"base",
@@ -233,7 +234,10 @@
 				"pc_shared",
 				"stats",
 				"valuables"
-			]
+			],
+			"conditions": {
+				"tinkeredWith": false
+			}
 		},
 		"scavenging_location": {
 			"templates": [
@@ -1007,8 +1011,8 @@
 		},
 		"ammo": {
 			"charges": {
-				"current": 1,
-				"max": 1
+				"current": 0,
+				"max": 0
 			},
 			"effect": "",
 			"fusionCore": false,
@@ -1112,6 +1116,7 @@
 			"irradiated": false,
 			"prepared": false,
 			"providesCap": false,
+			"quantityRoll": "",
 			"radiation": 0,
 			"radiationDamage": 1,
 			"thirstReduction": 0,
@@ -1130,6 +1135,7 @@
 		},
 		"miscellany": {
 			"effect": "",
+			"quantityRoll": "",
 			"templates": [
 				"base",
 				"physical",
@@ -1281,6 +1287,7 @@
 			"ammoPerShot": 1,
 			"attribute": "",
 			"condition": "",
+			"consumedOnUse": false,
 			"creatureAttribute": "",
 			"creatureSkill": "",
 			"damage": {
@@ -1470,6 +1477,7 @@
 			},
 			"naturalWeapon":  false,
 			"originalAmmoPerShot": 0,
+			"quantityRoll": "",
 			"range": "",
 			"skill": "",
 			"tear": 0,

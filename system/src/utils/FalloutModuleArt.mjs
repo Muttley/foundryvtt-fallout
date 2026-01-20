@@ -56,9 +56,7 @@ export class FalloutModuleArt {
 
 				const uuid = pack.getUuid(itemId);
 
-				info = foundry.utils.mergeObject(
-					this.map.get(uuid) ?? {}, info, {inplace: false}
-				);
+				info = Object.assign(this.map.get(uuid) ?? {}, info);
 
 				this.map.set(uuid, info);
 			}

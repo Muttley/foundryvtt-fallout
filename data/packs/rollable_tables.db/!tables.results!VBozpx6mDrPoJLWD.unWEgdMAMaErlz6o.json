@@ -1,14 +1,14 @@
 {
 	"_id": "unWEgdMAMaErlz6o",
 	"_key": "!tables.results!VBozpx6mDrPoJLWD.unWEgdMAMaErlz6o",
-	"documentId": null,
+	"description": "Left Arm",
 	"drawn": false,
 	"img": "icons/svg/d20-black.svg",
+	"name": "",
 	"range": [
 		9,
 		11
 	],
-	"text": "Left Arm",
 	"type": "text",
 	"weight": 1
 }

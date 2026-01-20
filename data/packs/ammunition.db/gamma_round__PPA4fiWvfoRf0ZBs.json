@@ -8,8 +8,8 @@
 	"name": "Gamma Round",
 	"system": {
 		"charges": {
-			"current": 1,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 10,
 		"description": "<p><span class=\"fontstyle0\">A large, plastic-coated battery, capable of containing the charge needed to power a Gamma Gun.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 4+2dc # Gamma Round]]</p>",

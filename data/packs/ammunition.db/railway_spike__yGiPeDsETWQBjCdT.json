@@ -8,8 +8,8 @@
 	"name": "Railway Spike",
 	"system": {
 		"charges": {
-			"current": null,
-			"max": 1
+			"current": 0,
+			"max": 0
 		},
 		"cost": 1,
 		"description": "<p><span class=\"fontstyle0\">Iron spikes designed for fastening railway tracks in place. Not as easy to find as you might think, given their mundane origins.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 6+3dc # Railway Spike]]</p>",
@@ -20,8 +20,8 @@
 		"quantityRoll": "6+3dc",
 		"rarity": 2,
 		"shots": {
-			"current": null,
-			"max": null
+			"current": 1,
+			"max": 1
 		},
 		"source": "core_rulebook",
 		"stashed": false,

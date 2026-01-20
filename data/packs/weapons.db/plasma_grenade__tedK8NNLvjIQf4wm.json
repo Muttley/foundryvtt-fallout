@@ -7,11 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Plasma Grenade",
 	"system": {
-		"ammo": "Plasma Grenade",
+		"ammo": "",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
+		"consumedOnUse": true,
 		"cost": 135,
 		"creatureAttribute": "body",
 		"creatureSkill": "melee",
@@ -205,8 +206,10 @@
 			"max": 0,
 			"modded": false
 		},
+		"naturalWeapon": false,
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "1",
 		"range": "medium",
 		"rarity": 3,
 		"skill": "",
@@ -214,7 +217,7 @@
 		"stashed": false,
 		"tear": 0,
 		"weaponType": "explosives",
-		"weight": 0
+		"weight": 0.5
 	},
 	"type": "weapon"
 }

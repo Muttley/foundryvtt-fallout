@@ -46,6 +46,7 @@ FALLOUT.APP.SalvageJunk.start: Rozpocznij odzyskiwanie
 FALLOUT.APP.SalvageJunk.time: Zajmie Ci to {time}
 FALLOUT.APP.SalvageJunk.title: Odzyskaj śmieci
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.legendary: Legendary
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
@@ -449,6 +450,7 @@ FALLOUT.TEMPLATES.CONDITIONS: Stany
 FALLOUT.TEMPLATES.conditions.dehydrated: Odwodniony
 FALLOUT.TEMPLATES.conditions.exhausted: Wyczerpany
 FALLOUT.TEMPLATES.conditions.fatigue: zmęczenie
+FALLOUT.TEMPLATES.conditions.fuel: Fuel
 FALLOUT.TEMPLATES.conditions.full: Pełen
 FALLOUT.TEMPLATES.conditions.hunger: głód
 FALLOUT.TEMPLATES.conditions.hungry: Głodny
@@ -468,6 +470,7 @@ FALLOUT.TEMPLATES.conditions.weary: Zmęczony
 FALLOUT.TEMPLATES.ConstructionTime: Czas budowy
 FALLOUT.TEMPLATES.Consumable_Group: Grupa
 FALLOUT.TEMPLATES.Consumable_Type: Typ
+FALLOUT.TEMPLATES.consumedOnUse: Consumed on Use
 FALLOUT.TEMPLATES.Crafting: Crafting
 FALLOUT.TEMPLATES.Create_Addiction: Stwórz uzależnienie
 FALLOUT.TEMPLATES.Create_Ammo: Stwórz Amunicje
@@ -595,6 +598,7 @@ FALLOUT.TEMPLATES.Tagged: Tagged
 FALLOUT.TEMPLATES.Tear: Zużycie i ścieranie
 FALLOUT.TEMPLATES.Thirst_Reduction: Redukcja pragnienia
 FALLOUT.TEMPLATES.TimeTaken: Czas wykonania
+FALLOUT.TEMPLATES.TinkeredWith: Tinkered With
 FALLOUT.TEMPLATES.TN: CEL
 FALLOUT.TEMPLATES.TRAIT: ATUT
 FALLOUT.TEMPLATES.Treated_injury_Right_Click: Wylecz Ranę (Kliknij Prawym)
@@ -646,6 +650,8 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and fi
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
+FALLOUT.TOOLTIPS.Weapon.consumedOnUse: If checked then this weapon itself is consumed when used instead of using ammo.
+FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Will not consume extra ammo.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.
 FALLOUT.TOOLTIPS.WeaponQuality.ammo_hungry_x: Broń zużywa amunicję znacznie szybciej niż inne bronie. Za każdym razem, gdy strzelasz z broni, zużywa ona X amunicji zamiast 1. Dodatkowo, obrażenia wymagają wydania X amunicji na każdy +1KW, z maksymalną liczbą CD równą szybkostrzelności broni. Dodatkowe użycie amunicji, takie jak efekt obrażeń Seria, również wymaga X amunicji na każde 1 amunicji, która byłaby normalnie wydana.
@@ -675,7 +681,6 @@ FALLOUT.TOOLTIPS.WeaponQuality.two_handed: Wymaga obydwu rąk, żeby się nią s
 FALLOUT.TOOLTIPS.WeaponQuality.unreliable: Kiedy wykonujesz atak taką bronią, zwiększasz o +1 zakres komplikacji. Broń nie może być jednocześnie Zawodna i Niezawodna.
 FALLOUT.TOOLTIPS.WeaponQuality.unstable_radiation: To nigdy nie było przeznaczone do użycia jako broń ręczna. Kiedy atakujesz bronią, każda komplikacja, którą zadajesz, zadaje 2KW obrażeń od promieniowania w wyniku radioaktywnego sprzężenia zwrotnego. Broń nie może posiadać zarówno stabilnego, jak i niestabilnego promieniowania.
 FALLOUT.TOOLTIPS.WeaponQuality.wrangle: If an attack with a Wrangle weapon is successful, you may spend 2 AP to move the target up to one zone. On subsequent turns, either you or the target, may attempt an opposed STR or AGI + Athletics test to move the character on the other end of the lasso or break free.
-FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.UI.Add: Dodaj
 FALLOUT.UI.Addictions: Uzależnienia
 FALLOUT.UI.APPAREL_MODS: Modyfikacje Odzieży

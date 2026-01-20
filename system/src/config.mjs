@@ -3,6 +3,9 @@ export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
+globalThis.systemPath = path => `systems/${SYSTEM_ID}/${path ?? ""}`;
+globalThis.templatePath = path => path ? systemPath(`templates/${path}.hbs`) : systemPath("templates");
+
 FALLOUT.LEVEL_UP_TOOL_ENABLED = false;
 
 // Some consts used for timing purposes
@@ -21,6 +24,7 @@ FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
 FALLOUT.DEFAULT_MAX_MAGAZINE_USES = 2;
 
 FALLOUT.APPAREL_MOD_TYPES = {
+	legendary: "FALLOUT.APPAREL_MOD.type.legendary",
 	lining: "FALLOUT.APPAREL_MOD.type.lining",
 	material: "FALLOUT.APPAREL_MOD.type.material",
 	plating: "FALLOUT.APPAREL_MOD.type.plating",
@@ -78,6 +82,12 @@ FALLOUT.CHEM_DURATIONS = {
 };
 
 FALLOUT.CONDITIONS = {
+	fuel: {
+		quenched: 0,
+		hydrated: 1,
+		thirsty: 2,
+		dehydrated: 3,
+	},
 	hunger: {
 		full: 0,
 		sated: 1,
@@ -181,6 +191,13 @@ FALLOUT.DEFAULT_TOKENS = {
 	scavenging_location: "systems/fallout/assets/tokens/scavenging_location.webp",
 	settlement: "systems/fallout/assets/tokens/settlement.webp",
 	vehicle: "systems/fallout/assets/tokens/vehicle.webp",
+};
+
+FALLOUT.FUEL_BY_NUMBER = {
+	0: "FALLOUT.TEMPLATES.conditions.quenched",
+	1: "FALLOUT.TEMPLATES.conditions.hydrated",
+	2: "FALLOUT.TEMPLATES.conditions.thirsty",
+	3: "FALLOUT.TEMPLATES.conditions.dehydrated",
 };
 
 FALLOUT.HIT_LOCATIONS = {

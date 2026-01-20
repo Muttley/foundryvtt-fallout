@@ -7,11 +7,12 @@
 	"img": "systems/fallout/assets/icons/items/weapon.svg",
 	"name": "Tomahawk",
 	"system": {
-		"ammo": "Tomahawk",
+		"ammo": "",
 		"ammoPerShot": 1,
 		"attribute": "",
 		"canBeScrapped": true,
 		"condition": "",
+		"consumedOnUse": true,
 		"cost": 15,
 		"creatureAttribute": "body",
 		"creatureSkill": "guns",
@@ -205,8 +206,10 @@
 			"max": 0,
 			"modded": false
 		},
+		"naturalWeapon": false,
 		"originalAmmoPerShot": 0,
 		"quantity": 1,
+		"quantityRoll": "2+1dc",
 		"range": "close",
 		"rarity": 2,
 		"skill": "",
@@ -214,7 +217,7 @@
 		"stashed": false,
 		"tear": 0,
 		"weaponType": "throwing",
-		"weight": 0
+		"weight": 0.5
 	},
 	"type": "weapon"
 }
