@@ -470,6 +470,7 @@ FALLOUT.TEMPLATES.conditions.weary: Zmęczony
 FALLOUT.TEMPLATES.ConstructionTime: Czas budowy
 FALLOUT.TEMPLATES.Consumable_Group: Grupa
 FALLOUT.TEMPLATES.Consumable_Type: Typ
+FALLOUT.TEMPLATES.consumedOnUse: Consumed on Use
 FALLOUT.TEMPLATES.Crafting: Crafting
 FALLOUT.TEMPLATES.Create_Addiction: Stwórz uzależnienie
 FALLOUT.TEMPLATES.Create_Ammo: Stwórz Amunicje
@@ -649,6 +650,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: The vehicle is powerful and fi
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Operate tests to repair Rugged vehicles are reduced by difficulty by 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: A single-seat vehicle is designed to be operated by a single pilot also assuming the role of a gunner without the normal penalty.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: The vehicle travels only on water and cannot travel along the ground at all. If this vehicle suffers a Chassis critical hit, it begins to take on water, and will sink after a number of rounds equal to twice the vehicle’s Scale.
+FALLOUT.TOOLTIPS.Weapon.consumedOnUse: If checked then this weapon itself is consumed when used instead of using ammo.
 FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.TOOLTIPS.WeaponDamage.extraDice: Will not consume extra ammo.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Jeśli przed atakiem z użyciem takiej broni wykonasz pomniejszą akcję celowania, możesz wydać od 1 do 3 PA, żeby za każdy wydany punkt zwiększyć o +1 @fos[DC] pulę kości przy rzucie na obrażenia. W takim przypadku nie możesz dodatkowo zużyć więcej amunicji, żeby zwiększyć obrażenia. Broń nie może być jednocześnie Celna i Niecelna.

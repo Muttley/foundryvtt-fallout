@@ -470,6 +470,7 @@ FALLOUT.TEMPLATES.conditions.weary: Agotado
 FALLOUT.TEMPLATES.ConstructionTime: Tiempo de construcción
 FALLOUT.TEMPLATES.Consumable_Group: Grupo
 FALLOUT.TEMPLATES.Consumable_Type: Tipo
+FALLOUT.TEMPLATES.consumedOnUse: Consumed on Use
 FALLOUT.TEMPLATES.Crafting: Fabricar
 FALLOUT.TEMPLATES.Create_Addiction: Crear Adicción
 FALLOUT.TEMPLATES.Create_Ammo: Crear Munición
@@ -649,6 +650,7 @@ FALLOUT.TOOLTIPS.VehicleQuality.high_performance: El vehículo es potente y est�
 FALLOUT.TOOLTIPS.VehicleQuality.rugged: Las pruebas para reparar vehículos robustos reducen su dificultad en 1.
 FALLOUT.TOOLTIPS.VehicleQuality.single_seat: Un vehículo monoplaza está diseñado para ser conducido por un solo piloto que también asume el papel de artillero sin la penalización normal.
 FALLOUT.TOOLTIPS.VehicleQuality.watercraft: El vehículo solo se desplaza sobre el agua y no puede desplazarse por el suelo. Si este vehículo sufre un impacto crítico en el chasis, comienza a llenarse de agua y se hundirá después de una cantidad de rondas igual al doble de la escala del vehículo.
+FALLOUT.TOOLTIPS.Weapon.consumedOnUse: If checked then this weapon itself is consumed when used instead of using ammo.
 FALLOUT.TOOLTIPS.Weapon.naturalWeapon: Check if the weapon is a part of the creature (i.e. Claw, Sting, etc.)
 FALLOUT.TOOLTIPS.WeaponDamage.extraDice: No consume munición adicional.
 FALLOUT.TOOLTIPS.WeaponQuality.accurate: Si realizas la acción menor Apuntar antes de atacar con un arma precisa, puedes gastar hasta 3 PA para agregar +1 @fos[DC] por PA gastado al daño del ataque. Si obtienes daño de esta manera, no puedes gastar munición para causar daño adicional. Un arma no puede ser precisa e imprecisa al mismo tiempo.
