@@ -1116,6 +1116,7 @@
 			"irradiated": false,
 			"prepared": false,
 			"providesCap": false,
+			"quantityRoll": "",
 			"radiation": 0,
 			"radiationDamage": 1,
 			"thirstReduction": 0,
@@ -1134,6 +1135,7 @@
 		},
 		"miscellany": {
 			"effect": "",
+			"quantityRoll": "",
 			"templates": [
 				"base",
 				"physical",
@@ -1475,6 +1477,7 @@
 			},
 			"naturalWeapon":  false,
 			"originalAmmoPerShot": 0,
+			"quantityRoll": "",
 			"range": "",
 			"skill": "",
 			"tear": 0,
