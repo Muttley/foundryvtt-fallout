@@ -20,11 +20,11 @@ export class DialogD6 extends Dialog {
 			let fireRate = parseInt(html.find(".fire-rate")[0]?.value ?? 0);
 			let diceNum = parseInt(html.find(".damage-dice")[0]?.value ?? 1);
 
-			me.weapon = me.weapon.constructor.name === "Object"
+			me.weapon = me.weapon?.constructor.name === "Object"
 				? await fromUuid(me.weapon.uuid)
 				: me.weapon;
 
-			const gatlingWeapon = me.weapon.hasWeaponQuality("gatling") ?? false;
+			const gatlingWeapon = me.weapon?.hasWeaponQuality("gatling") ?? false;
 			let multiplier = gatlingWeapon ? 2 : 1;
 
 			if (!diceNum) {
