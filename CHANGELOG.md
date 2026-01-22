@@ -1,3 +1,10 @@
+# v11.16.6
+
+#### Bugs
+- [#730] The D6 Roller macro triggers error in DialogD6
+
+---
+
 # v11.16.5
 
 #### Enhancements
