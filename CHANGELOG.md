@@ -1,5 +1,14 @@
 # v11.16.6
 
+#### Enhancements
+- [#736] Add new Sources to system so they can be selected
+	* Royal Flush
+	* Wasteland Wanderer: A Solo Roleplaying Game
+
+---
+
+# v11.16.6
+
 #### Bugs
 - [#730] The D6 Roller macro triggers error in DialogD6
 

@@ -508,9 +508,11 @@ FALLOUT.OFFICIAL_SOURCES = {
 	mariposa_military_base: "FALLOUT.SOURCE_TITLE.mariposa_military_base",
 	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
 	reillys_rangers: "FALLOUT.SOURCE_TITLE.reillys_rangers",
+	royal_flush: "FALLOUT.SOURCE_TITLE.royal_flush",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
 	settlers_guide: "FALLOUT.SOURCE_TITLE.settlers_guide",
 	wanderers_guide: "FALLOUT.SOURCE_TITLE.wanderers_guide",
+	wasteland_wanderer: "FALLOUT.SOURCE_TITLE.wasteland_wanderer",
 	winter_of_atom: "FALLOUT.SOURCE_TITLE.winter_of_atom",
 };
 
