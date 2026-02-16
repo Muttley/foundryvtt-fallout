@@ -85,13 +85,13 @@ FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Brazo izqui
 FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Pierna izquierda | Brazo 3 | Pierna izquierda | Piernas
 FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Brazo Derecho | Brazo 2 | Pata Derecha | Ala Derecha (como Pierna)
 FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Pierna Derecha | Propulsor | Pierna Derecha | Piernas
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Cuerpo Principal | Torso | Torso
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Carcasa Principal | Torso | Torso
 FALLOUT.BODYLOCATION.robot.armL: Brazo 1
 FALLOUT.BODYLOCATION.robot.armR: Brazo 2
 FALLOUT.BODYLOCATION.robot.head: Óptica
 FALLOUT.BODYLOCATION.robot.legL: Brazo 3
 FALLOUT.BODYLOCATION.robot.legR: Propulsor
-FALLOUT.BODYLOCATION.robot.torso: Cuerpo Principal
+FALLOUT.BODYLOCATION.robot.torso: Carcasa Principal
 FALLOUT.BodyTypes.BodyType: Tipo de cuerpo
 FALLOUT.BodyTypes.flyingInsect.armL: Ala Izquierda (como pierna)
 FALLOUT.BodyTypes.flyingInsect.armR: Ala Derecha (como pierna)
@@ -119,8 +119,8 @@ FALLOUT.BodyTypes.robot.armR: Brazo 2
 FALLOUT.BodyTypes.robot.head: Óptica
 FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Brazo 3
-FALLOUT.BodyTypes.robot.legR: Cuerpo principal
-FALLOUT.BodyTypes.robot.torso: Cuerpo principal
+FALLOUT.BodyTypes.robot.legR: Carcasa principal
+FALLOUT.BodyTypes.robot.torso: Carcasa principal
 FALLOUT.BodyTypes.vehicle.chassis: Chasis
 FALLOUT.BodyTypes.vehicle.engine: Motor
 FALLOUT.BodyTypes.vehicle.engineL: Motor izquierdo
@@ -179,7 +179,7 @@ FALLOUT.ChemDuration.instant: Instantáneo
 FALLOUT.ChemDuration.lasting: Duración
 FALLOUT.CREATURE.body: Cuerpo
 FALLOUT.CREATURE.guns: Armas
-FALLOUT.CREATURE.melee: Cuerpo a Cuerpo
+FALLOUT.CREATURE.melee: c/c
 FALLOUT.CREATURE.mind: Mente
 FALLOUT.CREATURE.other: Otro
 FALLOUT.dialog.roll_quantity.button.chat: Enviar al chat
@@ -385,7 +385,7 @@ FALLOUT.SKILL.Energy Weapons: Armas de energía
 FALLOUT.SKILL.Explosives: Explosivos
 FALLOUT.SKILL.Lockpick: Abrir Cerraduras
 FALLOUT.SKILL.Medicine: Medicina
-FALLOUT.SKILL.Melee Weapons: Armas cuerpo a cuerpo
+FALLOUT.SKILL.Melee Weapons: Armas c/c
 FALLOUT.SKILL.Pilot: Pilotar
 FALLOUT.SKILL.Repair: Reparar
 FALLOUT.SKILL.Science: Ciencia
@@ -549,7 +549,7 @@ FALLOUT.TEMPLATES.max: máx
 FALLOUT.TEMPLATES.MAX: MÁX
 FALLOUT.TEMPLATES.MaxRanks: Rango máximo
 FALLOUT.TEMPLATES.Melee_Bonus: Bonificador c/c
-FALLOUT.TEMPLATES.Melee_Damage: Daño cuerpo a cuerpo
+FALLOUT.TEMPLATES.Melee_Damage: Daño c/c
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Prefijo del nombre
@@ -773,7 +773,7 @@ FALLOUT.WEAPON_MOD.type.fuel: Combustible
 FALLOUT.WEAPON_MOD.type.grip: Empuñadura
 FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Cargador
-FALLOUT.WEAPON_MOD.type.melee: Cuerpo a Cuerpo
+FALLOUT.WEAPON_MOD.type.melee: c/c
 FALLOUT.WEAPON_MOD.type.muzzle: Boca
 FALLOUT.WEAPON_MOD.type.nozzle: Inyector
 FALLOUT.WEAPON_MOD.type.propellantTank: Depósitos de Combustible
@@ -829,7 +829,7 @@ FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
 FALLOUT.WEAPONS.weaponType.custom: Personalizado
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de energía
 FALLOUT.WEAPONS.weaponType.explosives: Explosivos
-FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas cuerpo a cuerpo
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas c/c
 FALLOUT.WEAPONS.weaponType.smallGuns: Armas pequeñas
 FALLOUT.WEAPONS.weaponType.throwing: Arrojadiza
 FALLOUT.WEAPONS.weaponType.unarmed: Desarmado
