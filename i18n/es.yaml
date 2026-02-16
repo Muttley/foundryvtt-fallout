@@ -442,8 +442,8 @@ FALLOUT.TEMPLATES.Attack: Ataque
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
-FALLOUT.TEMPLATES.Butchery: Carnicería
-FALLOUT.TEMPLATES.ButcheryTooltip: Dificultad Tirada de Carnicería
+FALLOUT.TEMPLATES.Butchery: Despiece
+FALLOUT.TEMPLATES.ButcheryTooltip: Dificultad Tirada de Despiece
 FALLOUT.TEMPLATES.Category: Categoría
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.complexity: Complejidad
@@ -548,7 +548,7 @@ FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PA DEL GRUPO
 FALLOUT.TEMPLATES.max: máx
 FALLOUT.TEMPLATES.MAX: MÁX
 FALLOUT.TEMPLATES.MaxRanks: Rango máximo
-FALLOUT.TEMPLATES.Melee_Bonus: Bonificador cuerpo a cuerpo
+FALLOUT.TEMPLATES.Melee_Bonus: Bonificador c/c
 FALLOUT.TEMPLATES.Melee_Damage: Daño cuerpo a cuerpo
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
