@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: Percepción
 FALLOUT.AbilityStr: Fuerza
 FALLOUT.actor.inventory.materials.common: Común
 FALLOUT.actor.inventory.materials.junk: Chatarra
-FALLOUT.actor.inventory.materials.junkSalvageControl: Recuperar chatarra
+FALLOUT.actor.inventory.materials.junkSalvageControl: Chatarrear
 FALLOUT.actor.inventory.materials.label: Materiales
 FALLOUT.actor.inventory.materials.rare: Raro
 FALLOUT.actor.inventory.materials.uncommon: Infrecuente
@@ -383,7 +383,7 @@ FALLOUT.SKILL.Barter: Regateo
 FALLOUT.SKILL.Big Guns: Armas Grandes
 FALLOUT.SKILL.Energy Weapons: Armas de energía
 FALLOUT.SKILL.Explosives: Explosivos
-FALLOUT.SKILL.Lockpick: Abrir Cerraduras
+FALLOUT.SKILL.Lockpick: Cerraduras
 FALLOUT.SKILL.Medicine: Medicina
 FALLOUT.SKILL.Melee Weapons: Armas c/c
 FALLOUT.SKILL.Pilot: Pilotar
@@ -391,9 +391,9 @@ FALLOUT.SKILL.Repair: Reparar
 FALLOUT.SKILL.Science: Ciencia
 FALLOUT.SKILL.Small Guns: Armas pequeñas
 FALLOUT.SKILL.Sneak: Sigilo
-FALLOUT.SKILL.Speech: Discurso
+FALLOUT.SKILL.Speech: Conversación
 FALLOUT.SKILL.Survival: Supervivencia
-FALLOUT.SKILL.Throwing: Arrojadizas
+FALLOUT.SKILL.Throwing: Lanzar
 FALLOUT.SKILL.Unarmed: Desarmado
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Historias Asombrosamente Impresionantes, número 2 - Plenamente Operativo"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Historias Asombrosamente Impresionantes, número 4 - ¡Cazado!"
