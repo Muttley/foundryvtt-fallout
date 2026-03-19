@@ -46,7 +46,7 @@ FALLOUT.APP.SalvageJunk.start: Empezar a saquear
 FALLOUT.APP.SalvageJunk.time: Esto llevará {time}
 FALLOUT.APP.SalvageJunk.title: Desarmar chatarra
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
-FALLOUT.APPAREL_MOD.type.legendary: Legendary
+FALLOUT.APPAREL_MOD.type.legendary: Legendario
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
@@ -153,7 +153,7 @@ FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Nivel de hambre
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Nivel de sueño
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nivel de sed
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} ha bebido Agua Sucia"
-FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gains one bottlecap
+FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gana una Chapa
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} ha consumido {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga consumida
@@ -200,7 +200,7 @@ FALLOUT.EFFECT.StatusDrugged: Drugged
 FALLOUT.EFFECT.StatusInjured: Injured
 FALLOUT.EFFECT.StatusPoisoned: Poisoned
 FALLOUT.EFFECT.StatusProne: Prone
-FALLOUT.EFFECT.StatusRadiation: Radiation
+FALLOUT.EFFECT.StatusRadiation: Radiación
 FALLOUT.EFFECT.StatusRestrained: Restrained
 FALLOUT.EFFECT.StatusStunned: Stunned
 FALLOUT.EFFECT.StatusUnconscious: Unconscious
