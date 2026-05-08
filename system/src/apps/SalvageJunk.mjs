@@ -189,6 +189,9 @@ export default class SalvageJunk extends FormApplication {
 		let chatData = {
 			content,
 			"flags.data": rollData,
+			"speaker": {
+				actor: this.actor,
+			},
 			"user": game.user.id,
 		};
 

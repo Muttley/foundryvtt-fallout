@@ -12,15 +12,12 @@ export default class FalloutChat {
 			mode = game.settings.get("core", "messageMode");
 		}
 
-		const messageStyles = fallout.utils.getMessageStyles();
-
 		const chatData = {
 			user: game.user.id,
 			speaker: ChatMessage.getSpeaker({
 				actor: actor,
 			}),
 			content: html,
-			type: messageStyles.OTHER,
 		};
 
 		ChatMessage.applyMode(chatData, mode);
