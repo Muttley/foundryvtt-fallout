@@ -175,7 +175,7 @@ export default class FalloutMacros {
 					};
 
 					for (const doseKey in actor.system.chemDoses) {
-						updateData[`system.chemDoses.-=${doseKey}`] = null;
+						updateData[`system.chemDoses.${doseKey}`] = foundry.data.operators.ForcedDeletion;
 					}
 
 					actor.update(updateData);

@@ -6,6 +6,8 @@
 - [#745] The core.rollMode client setting is deprecated in favor of core.messageMode *(Foundry v14 compatibility)*
 - [#746] "0" is not a valid type for the ChatMessage Document class  *(Foundry v14 compatibility)*
 - [#749] Add New Vegas Setting Guide as a new source
+- [#751] Legacy syntax for forced deletion/replacement key should be replaced with foundry.data.operators.ForcedDeletion
+
 
 ---
 

@@ -1914,7 +1914,7 @@ export default class FalloutActor extends Actor {
 
 			if (isAddicted) {
 				if (scenesRemaining <= 0) {
-					updateData[`system.chemDoses.-=${doseKey}`] = null;
+					updateData[`system.chemDoses.${doseKey}`] = foundry.data.operators.ForcedDeletion;
 				}
 				else {
 					dose.scenes = scenesRemaining;
@@ -1933,7 +1933,7 @@ export default class FalloutActor extends Actor {
 		const updateData = {};
 
 		for (const chemId in this.system.chemDoses) {
-			updateData[`system.chemDoses.-=${chemId}`] = null;
+			updateData[`system.chemDoses.${chemId}`] = foundry.data.operators.ForcedDeletion;
 		}
 
 		this.update(updateData);
