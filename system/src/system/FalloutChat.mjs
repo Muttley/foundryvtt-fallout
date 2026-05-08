@@ -24,7 +24,7 @@ export default class FalloutChat {
 			type: messageStyles.OTHER,
 		};
 
-		ChatMessage.applyRollMode(chatData, mode);
+		ChatMessage.applyMode(chatData, mode);
 
 		await ChatMessage.create(chatData);
 	}

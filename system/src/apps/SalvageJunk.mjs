@@ -193,7 +193,7 @@ export default class SalvageJunk extends FormApplication {
 			"user": game.user.id,
 		};
 
-		ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
+		ChatMessage.applyMode(chatData, game.settings.get("core", "rollMode"));
 
 		await ChatMessage.create(chatData);
 
