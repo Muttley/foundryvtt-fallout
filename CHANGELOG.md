@@ -8,7 +8,7 @@
 - [#749] Add New Vegas Setting Guide as a new source
 - [#751] Legacy syntax for forced deletion/replacement key should be replaced with foundry.data.operators.ForcedDeletion
 - [#752] Bump node packages used at build time
-
+- [#753] Bump GitHub build scripts to latest recommended
 
 ---
 
