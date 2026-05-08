@@ -211,12 +211,11 @@ export class Roller2D20 {
 			content: html,
 			flags: { falloutroll: falloutRoll },
 			roll,
-			rollMode: game.settings.get("core", "rollMode"),
 			speaker: ChatMessage.getSpeaker({actor: actor}),
 			user: game.user.id,
 		};
 
-		ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
+		ChatMessage.applyMode(chatData, game.settings.get("core", "messageMode"));
 
 		await ChatMessage.create(chatData);
 	}
@@ -436,7 +435,6 @@ export class Roller2D20 {
 			content: html,
 			flags,
 			roll,
-			rollMode: game.settings.get("core", "rollMode"),
 			speaker: ChatMessage.getSpeaker({actor: actor}),
 			user: game.user.id,
 			whisper,
@@ -461,7 +459,7 @@ export class Roller2D20 {
 	}
 
 	static getRollModeSettings() {
-		const rollMode = game.settings.get("core", "rollMode");
+		const rollMode = game.settings.get("core", "messageMode");
 
 		let blind = false;
 		let whisper = null;

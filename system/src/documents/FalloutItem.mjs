@@ -252,15 +252,9 @@ export default class FalloutItem extends Item {
 		const html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
 		const chatData = {
 			user: game.user.id,
-			rollMode: game.settings.get("core", "rollMode"),
 			content: html,
 		};
-		if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-			chatData.whisper = ChatMessage.getWhisperRecipients("GM");
-		}
-		else if (chatData.rollMode === "selfroll") {
-			chatData.whisper = [game.user];
-		}
+		ChatMessage.applyMode(chatData, game.settings.get("core", "messageMode"));
 		ChatMessage.create(chatData);
 	}
 

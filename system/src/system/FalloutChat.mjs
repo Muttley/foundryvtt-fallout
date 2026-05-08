@@ -9,7 +9,7 @@ export default class FalloutChat {
 		const html = await foundry.applications.handlebars.renderTemplate(template, data);
 
 		if (!mode) {
-			mode = game.settings.get("core", "rollMode");
+			mode = game.settings.get("core", "messageMode");
 		}
 
 		const messageStyles = fallout.utils.getMessageStyles();
@@ -19,7 +19,6 @@ export default class FalloutChat {
 			speaker: ChatMessage.getSpeaker({
 				actor: actor,
 			}),
-			rollMode: mode,
 			content: html,
 			type: messageStyles.OTHER,
 		};

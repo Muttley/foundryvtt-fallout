@@ -2,7 +2,8 @@
 
 #### Chores
 - [#737] Merge new German, French, Spanish, Polish and Portuguese (Brazilian) translation updates from Crowdin
-- [#744] ChatMessage.applyRollMode is deprecated in favor of ChatMessage.applyMode (*Foundry v14 compatibility*)
+- [#744] ChatMessage.applyRollMode is deprecated in favor of ChatMessage.applyMode *(Foundry v14 compatibility)*
+- [#745] The core.rollMode client setting is deprecated in favor of core.messageMode *(Foundry v14 compatibility)*
 - [#749] Add New Vegas Setting Guide as a new source
 
 ---
