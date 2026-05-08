@@ -506,6 +506,7 @@ FALLOUT.OFFICIAL_SOURCES = {
 	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
 	map_pack_wasteland_locales: "FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales",
 	mariposa_military_base: "FALLOUT.SOURCE_TITLE.mariposa_military_base",
+	new_vegas_guide: "FALLOUT.SOURCE_TITLE.new_vegas_guide",
 	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
 	reillys_rangers: "FALLOUT.SOURCE_TITLE.reillys_rangers",
 	royal_flush: "FALLOUT.SOURCE_TITLE.royal_flush",

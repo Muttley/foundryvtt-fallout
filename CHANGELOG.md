@@ -1,3 +1,11 @@
+# v11.17.0
+
+#### Chores
+- [#737] Merge new German, French, Spanish, Polish and Portuguese (Brazilian) translation updates from Crowdin
+- [#749] Add New Vegas Setting Guide as a new source
+
+---
+
 # v11.16.6
 
 #### Enhancements
