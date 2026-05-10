@@ -4,6 +4,7 @@
 		"build:watch": "gulp",
 		"build": "gulp build",
 		"clean": "gulp clean",
+		"createSymlinks": "./utils/create-symlinks.mjs",
 		"css": "gulp compileCss",
 		"docs": "gulp compileDocs",
 		"export": "./utils/smelter.mjs unpack -i leveldb -s system/packs -d ./data/packs",

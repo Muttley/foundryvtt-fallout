@@ -1434,7 +1434,7 @@ export default class FalloutActor extends Actor {
 									}
 								),
 							},
-							CONST.DICE_ROLL_MODES.PRIVATE
+							"gm"
 						);
 					}
 				}
@@ -1476,7 +1476,7 @@ export default class FalloutActor extends Actor {
 										}
 									),
 								},
-								CONST.DICE_ROLL_MODES.PRIVATE
+								"gm"
 							);
 						}
 						else {
@@ -1492,7 +1492,7 @@ export default class FalloutActor extends Actor {
 										}
 									),
 								},
-								CONST.DICE_ROLL_MODES.PRIVATE
+								"gm"
 							);
 						}
 					}
@@ -1556,7 +1556,7 @@ export default class FalloutActor extends Actor {
 									}
 								),
 							},
-							CONST.DICE_ROLL_MODES.PRIVATE
+							"gm"
 						);
 					}
 				}
@@ -1696,7 +1696,7 @@ export default class FalloutActor extends Actor {
 							}
 						),
 					},
-					CONST.DICE_ROLL_MODES.PRIVATE
+					"gm"
 				);
 			}
 			else {
@@ -1712,7 +1712,7 @@ export default class FalloutActor extends Actor {
 							}
 						),
 					},
-					CONST.DICE_ROLL_MODES.PRIVATE
+					"gm"
 				);
 			}
 		}
@@ -1957,7 +1957,7 @@ export default class FalloutActor extends Actor {
 				title: game.i18n.localize("FALLOUT.AvailabilityRoll.result.title"),
 				body: game.i18n.format("FALLOUT.AvailabilityRoll.result.body", { rarity }),
 			},
-			CONST.DICE_ROLL_MODES.PRIVATE
+			"gm"
 		);
 	}
 

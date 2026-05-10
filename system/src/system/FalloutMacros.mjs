@@ -255,7 +255,7 @@ export default class FalloutMacros {
 							title: game.i18n.localize("FALLOUT.MACRO.ResetLuckPoints.name"),
 							actors: affectedActors,
 						},
-						CONST.DICE_ROLL_MODES.PUBLIC
+						"public"
 					);
 				}
 

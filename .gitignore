@@ -1,11 +1,12 @@
 .vscode/
+foundry/
 node_modules/
 scratch/
 system/css/
 system/i18n/
 system/packs/
 
-*.code-workspace
 .env
+*.code-workspace
 fallout-compiled*
-/.vs
+foundry-config.yaml
