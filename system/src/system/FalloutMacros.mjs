@@ -91,14 +91,14 @@ export default class FalloutMacros {
 				buttons: {
 					Yes: {
 						icon: '<i class="fa fa-check"></i>',
-						label: `${game.i18n.localize("FALLOUT.UI.Yes")}`,
+						label: game.i18n.localize("FALLOUT.UI.Yes"),
 						callback: async () => {
 							actor.drinkDirtyWater();
 						},
 					},
 					Cancel: {
 						icon: '<i class="fa fa-times"></i>',
-						label: `${game.i18n.localize("FALLOUT.UI.Cancel")}`,
+						label: game.i18n.localize("FALLOUT.UI.Cancel"),
 					},
 				},
 				default: "Yes",

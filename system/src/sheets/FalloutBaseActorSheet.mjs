@@ -300,36 +300,37 @@ export default class FalloutBaseActorSheet
 			const itemId = li.data("item-id") ?? "";
 			const item = this.actor.items.get(itemId);
 
-			if (item.canBeScrapped) {
+			if (item.system.canBeScrapped) {
 				const html = await foundry.applications.handlebars.renderTemplate(
 					"systems/fallout/templates/dialogs/delete-or-junk.hbs"
 				);
 
-				const dialog = new Dialog({
-					title: `${game.i18n.localize("FALLOUT.UI.DeleteOrJunk.title")}`,
+				new foundry.applications.api.DialogV2({
+					window: {
+						title: `${game.i18n.localize("FALLOUT.UI.DeleteOrJunk.title")}`,
+					},
 					content: html,
-					buttons: {
-						Delete: {
-							icon: '<i class="fa fa-trash"></i>',
-							label: `${game.i18n.localize("FALLOUT.TEMPLATES.Delete")}`,
-							callback: async () => {
-								await me._onItemDelete(item);
-								li.slideUp(200, () => me.render(false));
-							},
-						},
-						Junk: {
-							icon: '<i class="fa fa-screwdriver-wrench"></i>',
-							label: `${game.i18n.localize("FALLOUT.TEMPLATES.Junk")}`,
-							callback: async () => {
-								me.actor.incrementJunk();
-								await me._onItemDelete(item);
-								li.slideUp(200, () => me.render(false));
-							},
+					buttons: [{
+						action: "delete",
+						label: game.i18n.localize("FALLOUT.TEMPLATES.Delete"),
+						icon: "fa fa-trash",
+						default: true,
+						callback: async () => {
+							await me._onItemDelete(item);
+							li.slideUp(200, () => me.render(false));
 						},
 					},
-					default: "Delete",
-				});
-				dialog.render(true);
+					{
+						action: "junk",
+						icon: "fa fa-screwdriver-wrench",
+						label: game.i18n.localize("FALLOUT.TEMPLATES.Junk"),
+						callback: async () => {
+							me.actor.incrementJunk();
+							await me._onItemDelete(item);
+							li.slideUp(200, () => me.render(false));
+						},
+					}],
+				}).render({force: true});
 			}
 			else {
 				await this._onItemDelete(item);
@@ -445,58 +446,58 @@ export default class FalloutBaseActorSheet
 		let menuSkills = [
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Strength",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "str");
+				label: "FALLOUT.TEMPLATES.Use_Strength",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "str");
 				},
 			},
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Perception",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "per");
+				label: "FALLOUT.TEMPLATES.Use_Perception",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "per");
 				},
 			},
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Endurance",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "end");
+				label: "FALLOUT.TEMPLATES.Use_Endurance",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "end");
 				},
 			},
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Charisma",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "cha");
+				label: "FALLOUT.TEMPLATES.Use_Charisma",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "cha");
 				},
 			},
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Intelligence",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "int");
+				label: "FALLOUT.TEMPLATES.Use_Intelligence",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "int");
 				},
 			},
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Agility",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "agi");
+				label: "FALLOUT.TEMPLATES.Use_Agility",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "agi");
 				},
 			},
 			{
 				icon: '<i class="fas fa-dice"></i>',
-				name: "FALLOUT.TEMPLATES.Use_Luck",
-				callback: t => {
-					this._onRightClickSkill(t.dataset?.itemId, "luc");
+				label: "FALLOUT.TEMPLATES.Use_Luck",
+				onClick: (event, target) => {
+					this._onRightClickSkill(target.dataset?.itemId, "luc");
 				},
 			},
 			{
 				icon: '<i class="fas fa-trash" style="color:red"></i>',
-				name: "FALLOUT.TEMPLATES.Delete",
-				callback: t => {
-					this._onRightClickDelete(t.dataset?.itemId);
+				label: "FALLOUT.TEMPLATES.Delete",
+				onClick: (event, target) => {
+					this._onRightClickDelete(target.dataset?.itemId);
 				},
 			},
 		];
