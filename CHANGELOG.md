@@ -11,6 +11,8 @@
 - [#744] ChatMessage.applyRollMode is deprecated in favor of ChatMessage.applyMode *(Foundry v14 compatibility)*
 - [#745] The core.rollMode client setting is deprecated in favor of core.messageMode *(Foundry v14 compatibility)*
 - [#746] "0" is not a valid type for the ChatMessage Document class  *(Foundry v14 compatibility)*
+- [#747] ContextMenuEntry#name is deprecated. Use ContextMenuEntry#label instead  *(Foundry v14 compatibility)*
+- [#748] ContextMenuEntry#callback is deprecated. Use ContextMenuEntry#onClick instead  *(Foundry v14 compatibility)*
 - [#751] Legacy syntax for forced deletion/replacement key should be replaced with foundry.data.operators.ForcedDeletion
 - [#752] Bump node packages used at build time
 - [#753] Bump GitHub build scripts to latest recommended
