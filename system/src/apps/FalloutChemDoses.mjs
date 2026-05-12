@@ -55,7 +55,7 @@ export default class FalloutChemDoses extends FormApplication {
 		const chemId = $(event.currentTarget).data("chemId");
 
 		const updateData = {};
-		updateData[`system.chemDoses.${chemId}`] = foundry.data.operators.ForcedDeletion;
+		updateData[`system.chemDoses.${chemId}`] = _del;
 
 		this.actor.update(updateData);
 	}
