@@ -1,14 +1,20 @@
 # v11.17.0
 
+#### Enhancements
+- [#749] Add New Vegas Setting Guide as a new source
+
+#### Bugs
+- [#755] Consume Dirty Water macro doesn't show correct resisted message if needed
+
 #### Chores
 - [#737] Merge new German, French, Spanish, Polish and Portuguese (Brazilian) translation updates from Crowdin
 - [#744] ChatMessage.applyRollMode is deprecated in favor of ChatMessage.applyMode *(Foundry v14 compatibility)*
 - [#745] The core.rollMode client setting is deprecated in favor of core.messageMode *(Foundry v14 compatibility)*
 - [#746] "0" is not a valid type for the ChatMessage Document class  *(Foundry v14 compatibility)*
-- [#749] Add New Vegas Setting Guide as a new source
 - [#751] Legacy syntax for forced deletion/replacement key should be replaced with foundry.data.operators.ForcedDeletion
 - [#752] Bump node packages used at build time
 - [#753] Bump GitHub build scripts to latest recommended
+- [#754] Switch Delete/Junk dialog box to DialogV2
 
 ---
 

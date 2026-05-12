@@ -1682,7 +1682,7 @@ export default class FalloutActor extends Actor {
 				? 0
 				: this.system.radiation + radsTaken;
 
-			if (newRadiation > 0) {
+			if (radsTaken > 0) {
 				actorUpdateData["system.radiation"] = newRadiation;
 
 				fallout.chat.renderGeneralMessage(
@@ -1708,7 +1708,6 @@ export default class FalloutActor extends Actor {
 							{
 								actorName: this.name,
 								baseRadDamage,
-								itemName: item.name,
 							}
 						),
 					},
