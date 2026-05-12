@@ -1,6 +1,7 @@
 # v11.17.0
 
 #### Enhancements
+- [#739] Show consumable Butcher checkbox on Food type Consumables, not just Other type
 - [#749] Add New Vegas Setting Guide as a new source
 
 #### Bugs
