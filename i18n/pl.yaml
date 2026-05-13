@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Tutaj możesz określić domyślne t
 FALLOUT.Form.ScavengingCategoryTables.title: Domyślna kategoria tabel
 FALLOUT.Form.ScavengingCompendium.hint: Jeśli zaznaczone, tylko tabele przechowywane w określonym kompendium będą dostępne do wyboru jako źródła wyników szabrowania.
 FALLOUT.Form.ScavengingCompendium.title: Kompendium szabrowania
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Ustawienia szabrowania
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Możesz wybrać maksymalnie {maxChoices} przedmiotów tego typu.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Nie można znaleźć przedmiotów odpowiedniego typu w dostępnych kompendiach.
