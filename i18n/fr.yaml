@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Ici, vous pouvez spécifier les tabl
 FALLOUT.Form.ScavengingCategoryTables.title: Tables de catégories par défaut
 FALLOUT.Form.ScavengingCompendium.hint: Si sélectionné, seuls les tables de lancer stockés dans le compendium spécifié seront disponibles pour la sélection en tant que sources de résultats de récupération.
 FALLOUT.Form.ScavengingCompendium.title: Compendium de récupération
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Paramètres de récupération
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Vous ne pouvez sélectionner qu'un maximum de {maxChoices} de ce type d'objet.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Impossible de trouver des objets du bon type dans les compendiums disponibles.
