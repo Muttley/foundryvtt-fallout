@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Aquí puede especificar las tablas d
 FALLOUT.Form.ScavengingCategoryTables.title: Tablas de categoría por defecto
 FALLOUT.Form.ScavengingCompendium.hint: Si se selecciona solo tablas de tiradas almacenadas en el compendio especificado estarán disponibles para la selección como fuentes de resultado de búsqueda.
 FALLOUT.Form.ScavengingCompendium.title: Compendio de saqueo
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Configuración de Saqueo
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Solo puedes seleccionar un máximo de {maxChoices} de este tipo de objeto.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: No se pueden encontrar elementos del tipo correcto en los compendios disponibles.

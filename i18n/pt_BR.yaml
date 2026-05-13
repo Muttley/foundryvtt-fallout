@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Aqui você pode definir as Tabelas q
 FALLOUT.Form.ScavengingCategoryTables.title: Tabelas de Categoria Padrão
 FALLOUT.Form.ScavengingCompendium.hint: Se selecionado, apenas as Tabelas de Rolagem do compêndio escolhido poderão ser usadas como fontes de resultados ao Vasculhar.
 FALLOUT.Form.ScavengingCompendium.title: Compêndio de Vasculha
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Configurações de Vasculha
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Você só pode selecionar um máximo de {maxChoices} desse tipo de Item.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Não foi possível achar itens do tipo correto nos compendios disponíveis.
