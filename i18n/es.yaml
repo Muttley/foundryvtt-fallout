@@ -14,7 +14,7 @@ FALLOUT.AbilityPer: Percepción
 FALLOUT.AbilityStr: Fuerza
 FALLOUT.actor.inventory.materials.common: Común
 FALLOUT.actor.inventory.materials.junk: Chatarra
-FALLOUT.actor.inventory.materials.junkSalvageControl: Recuperar chatarra
+FALLOUT.actor.inventory.materials.junkSalvageControl: Chatarrear
 FALLOUT.actor.inventory.materials.label: Materiales
 FALLOUT.actor.inventory.materials.rare: Raro
 FALLOUT.actor.inventory.materials.uncommon: Infrecuente
@@ -46,7 +46,7 @@ FALLOUT.APP.SalvageJunk.start: Empezar a saquear
 FALLOUT.APP.SalvageJunk.time: Esto llevará {time}
 FALLOUT.APP.SalvageJunk.title: Desarmar chatarra
 FALLOUT.APPAREL_MOD.shadowed: Shadowed
-FALLOUT.APPAREL_MOD.type.legendary: Legendary
+FALLOUT.APPAREL_MOD.type.legendary: Legendario
 FALLOUT.APPAREL_MOD.type.lining: Lining
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Plating
@@ -85,13 +85,13 @@ FALLOUT.BODYLOCATION.labels.LeftArm_Arm1_LeftFrontLeg_LeftWingAsLeg: Brazo izqui
 FALLOUT.BODYLOCATION.labels.LeftLeg_Arm3_LeftHindLeg_Legs: Pierna izquierda | Brazo 3 | Pierna izquierda | Piernas
 FALLOUT.BODYLOCATION.labels.RightArm_Arm2_RightFrontLeg_RightWingAsLeg: Brazo Derecho | Brazo 2 | Pata Derecha | Ala Derecha (como Pierna)
 FALLOUT.BODYLOCATION.labels.RightLeg_Thruster_RightHindLeg_Legs: Pierna Derecha | Propulsor | Pierna Derecha | Piernas
-FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Cuerpo Principal | Torso | Torso
+FALLOUT.BODYLOCATION.labels.Torso_MainBody_Torso_Torso: Torso | Carcasa Principal | Torso | Torso
 FALLOUT.BODYLOCATION.robot.armL: Brazo 1
 FALLOUT.BODYLOCATION.robot.armR: Brazo 2
 FALLOUT.BODYLOCATION.robot.head: Óptica
 FALLOUT.BODYLOCATION.robot.legL: Brazo 3
 FALLOUT.BODYLOCATION.robot.legR: Propulsor
-FALLOUT.BODYLOCATION.robot.torso: Cuerpo Principal
+FALLOUT.BODYLOCATION.robot.torso: Carcasa Principal
 FALLOUT.BodyTypes.BodyType: Tipo de cuerpo
 FALLOUT.BodyTypes.flyingInsect.armL: Ala Izquierda (como pierna)
 FALLOUT.BodyTypes.flyingInsect.armR: Ala Derecha (como pierna)
@@ -119,8 +119,8 @@ FALLOUT.BodyTypes.robot.armR: Brazo 2
 FALLOUT.BodyTypes.robot.head: Óptica
 FALLOUT.BodyTypes.robot.label: Robot
 FALLOUT.BodyTypes.robot.legL: Brazo 3
-FALLOUT.BodyTypes.robot.legR: Cuerpo principal
-FALLOUT.BodyTypes.robot.torso: Cuerpo principal
+FALLOUT.BodyTypes.robot.legR: Carcasa principal
+FALLOUT.BodyTypes.robot.torso: Carcasa principal
 FALLOUT.BodyTypes.vehicle.chassis: Chasis
 FALLOUT.BodyTypes.vehicle.engine: Motor
 FALLOUT.BodyTypes.vehicle.engineL: Motor izquierdo
@@ -153,7 +153,7 @@ FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Nivel de hambre
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Nivel de sueño
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Nivel de sed
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} ha bebido Agua Sucia"
-FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gains one bottlecap
+FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gana una Chapa
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Bebida consumida
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} ha consumido {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Droga consumida
@@ -179,7 +179,7 @@ FALLOUT.ChemDuration.instant: Instantáneo
 FALLOUT.ChemDuration.lasting: Duración
 FALLOUT.CREATURE.body: Cuerpo
 FALLOUT.CREATURE.guns: Armas
-FALLOUT.CREATURE.melee: Cuerpo a Cuerpo
+FALLOUT.CREATURE.melee: c/c
 FALLOUT.CREATURE.mind: Mente
 FALLOUT.CREATURE.other: Otro
 FALLOUT.dialog.roll_quantity.button.chat: Enviar al chat
@@ -200,7 +200,7 @@ FALLOUT.EFFECT.StatusDrugged: Drugged
 FALLOUT.EFFECT.StatusInjured: Injured
 FALLOUT.EFFECT.StatusPoisoned: Poisoned
 FALLOUT.EFFECT.StatusProne: Prone
-FALLOUT.EFFECT.StatusRadiation: Radiation
+FALLOUT.EFFECT.StatusRadiation: Radiación
 FALLOUT.EFFECT.StatusRestrained: Restrained
 FALLOUT.EFFECT.StatusStunned: Stunned
 FALLOUT.EFFECT.StatusUnconscious: Unconscious
@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Aquí puede especificar las tablas d
 FALLOUT.Form.ScavengingCategoryTables.title: Tablas de categoría por defecto
 FALLOUT.Form.ScavengingCompendium.hint: Si se selecciona solo tablas de tiradas almacenadas en el compendio especificado estarán disponibles para la selección como fuentes de resultado de búsqueda.
 FALLOUT.Form.ScavengingCompendium.title: Compendio de saqueo
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Configuración de Saqueo
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Solo puedes seleccionar un máximo de {maxChoices} de este tipo de objeto.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: No se pueden encontrar elementos del tipo correcto en los compendios disponibles.
@@ -383,17 +384,17 @@ FALLOUT.SKILL.Barter: Regateo
 FALLOUT.SKILL.Big Guns: Armas Grandes
 FALLOUT.SKILL.Energy Weapons: Armas de energía
 FALLOUT.SKILL.Explosives: Explosivos
-FALLOUT.SKILL.Lockpick: Abrir Cerraduras
+FALLOUT.SKILL.Lockpick: Cerraduras
 FALLOUT.SKILL.Medicine: Medicina
-FALLOUT.SKILL.Melee Weapons: Armas cuerpo a cuerpo
+FALLOUT.SKILL.Melee Weapons: Armas c/c
 FALLOUT.SKILL.Pilot: Pilotar
 FALLOUT.SKILL.Repair: Reparar
 FALLOUT.SKILL.Science: Ciencia
 FALLOUT.SKILL.Small Guns: Armas pequeñas
 FALLOUT.SKILL.Sneak: Sigilo
-FALLOUT.SKILL.Speech: Discurso
+FALLOUT.SKILL.Speech: Conversación
 FALLOUT.SKILL.Survival: Supervivencia
-FALLOUT.SKILL.Throwing: Arrojadizas
+FALLOUT.SKILL.Throwing: Lanzar
 FALLOUT.SKILL.Unarmed: Desarmado
 FALLOUT.SOURCE_TITLE.aat_fully_operational: "Historias Asombrosamente Impresionantes, número 2 - Plenamente Operativo"
 FALLOUT.SOURCE_TITLE.aat_hunted: "Historias Asombrosamente Impresionantes, número 4 - ¡Cazado!"
@@ -408,11 +409,14 @@ FALLOUT.SOURCE_TITLE.hollywood_heroes: "Paquete NPC - Héroes de Hollywood"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Paquete de mapa 1 - Refugio"
 FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Paquete de mapas 2 - Sitios del Yermo"
 FALLOUT.SOURCE_TITLE.mariposa_military_base: "NPC Pack #4 - Mariposa Military Base"
+FALLOUT.SOURCE_TITLE.new_vegas_guide: New Vegas Setting Guide
 FALLOUT.SOURCE_TITLE.quickstart: Inicio rápido
 FALLOUT.SOURCE_TITLE.reillys_rangers: "Paquete NPC #3 - Los Rangers de Reilly"
+FALLOUT.SOURCE_TITLE.royal_flush: Royal Flush
 FALLOUT.SOURCE_TITLE.rust_devils: "Paquete NPC #1 - Los Diablos del Óxido"
 FALLOUT.SOURCE_TITLE.settlers_guide: Libro Guía del colono
 FALLOUT.SOURCE_TITLE.wanderers_guide: Libro Guía del vagabundo
+FALLOUT.SOURCE_TITLE.wasteland_wanderer: "Wasteland Wanderer: A Solo Roleplaying Game"
 FALLOUT.SOURCE_TITLE.winter_of_atom: Invierno Nuclear
 FALLOUT.TEMPLATES.Abilities: Atributo
 FALLOUT.TEMPLATES.Add_Perk: Añadir cualidad
@@ -440,8 +444,8 @@ FALLOUT.TEMPLATES.Attack: Ataque
 FALLOUT.TEMPLATES.ATTACKS: ATAQUES
 FALLOUT.TEMPLATES.Attribute: Atributo
 FALLOUT.TEMPLATES.Attributes: Atributos
-FALLOUT.TEMPLATES.Butchery: Carnicería
-FALLOUT.TEMPLATES.ButcheryTooltip: Dificultad Tirada de Carnicería
+FALLOUT.TEMPLATES.Butchery: Despiece
+FALLOUT.TEMPLATES.ButcheryTooltip: Dificultad Tirada de Despiece
 FALLOUT.TEMPLATES.Category: Categoría
 FALLOUT.TEMPLATES.Compl: Compl.
 FALLOUT.TEMPLATES.complexity: Complejidad
@@ -546,8 +550,8 @@ FALLOUT.TEMPLATES.MAX_PARTY_AP: MAX PA DEL GRUPO
 FALLOUT.TEMPLATES.max: máx
 FALLOUT.TEMPLATES.MAX: MÁX
 FALLOUT.TEMPLATES.MaxRanks: Rango máximo
-FALLOUT.TEMPLATES.Melee_Bonus: Bonificador cuerpo a cuerpo
-FALLOUT.TEMPLATES.Melee_Damage: Daño cuerpo a cuerpo
+FALLOUT.TEMPLATES.Melee_Bonus: Bonificador c/c
+FALLOUT.TEMPLATES.Melee_Damage: Daño c/c
 FALLOUT.TEMPLATES.Mod_Type: Tipo de Mod
 FALLOUT.TEMPLATES.MODULES: MÓDULOS
 FALLOUT.TEMPLATES.Name_Prefix: Prefijo del nombre
@@ -771,7 +775,7 @@ FALLOUT.WEAPON_MOD.type.fuel: Combustible
 FALLOUT.WEAPON_MOD.type.grip: Empuñadura
 FALLOUT.WEAPON_MOD.type.legendary: Legendary
 FALLOUT.WEAPON_MOD.type.magazine: Cargador
-FALLOUT.WEAPON_MOD.type.melee: Cuerpo a Cuerpo
+FALLOUT.WEAPON_MOD.type.melee: c/c
 FALLOUT.WEAPON_MOD.type.muzzle: Boca
 FALLOUT.WEAPON_MOD.type.nozzle: Inyector
 FALLOUT.WEAPON_MOD.type.propellantTank: Depósitos de Combustible
@@ -827,7 +831,7 @@ FALLOUT.WEAPONS.weaponType.creatureAttack: Ataque de Criatura
 FALLOUT.WEAPONS.weaponType.custom: Personalizado
 FALLOUT.WEAPONS.weaponType.energyWeapons: Armas de energía
 FALLOUT.WEAPONS.weaponType.explosives: Explosivos
-FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas cuerpo a cuerpo
+FALLOUT.WEAPONS.weaponType.meleeWeapons: Armas c/c
 FALLOUT.WEAPONS.weaponType.smallGuns: Armas pequeñas
 FALLOUT.WEAPONS.weaponType.throwing: Arrojadiza
 FALLOUT.WEAPONS.weaponType.unarmed: Desarmado

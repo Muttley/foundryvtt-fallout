@@ -1,3 +1,37 @@
+# v11.17.0
+
+#### Enhancements
+- [#739] Show consumable Butcher checkbox on Food type Consumables, not just Other type
+- [#749] Add New Vegas Setting Guide as a new source
+
+#### Bugs
+- [#733] Perks not showing Requirements in chat Cards
+- [#743] Can no longer edit Scavenging Settings after I deleted a rolltable
+- [#755] Consume Dirty Water macro doesn't show correct resisted message if needed
+
+#### Chores
+- [#737] Merge new German, French, Spanish, Polish and Portuguese (Brazilian) translation updates from Crowdin
+- [#744] ChatMessage.applyRollMode is deprecated in favor of ChatMessage.applyMode *(Foundry v14 compatibility)*
+- [#745] The core.rollMode client setting is deprecated in favor of core.messageMode *(Foundry v14 compatibility)*
+- [#746] "0" is not a valid type for the ChatMessage Document class  *(Foundry v14 compatibility)*
+- [#747] ContextMenuEntry#name is deprecated. Use ContextMenuEntry#label instead  *(Foundry v14 compatibility)*
+- [#748] ContextMenuEntry#callback is deprecated. Use ContextMenuEntry#onClick instead  *(Foundry v14 compatibility)*
+- [#751] Legacy syntax for forced deletion/replacement key should be replaced with foundry.data.operators.ForcedDeletion
+- [#752] Bump node packages used at build time
+- [#753] Bump GitHub build scripts to latest recommended
+- [#754] Switch Delete/Junk dialog box to DialogV2
+
+---
+
+# v11.16.6
+
+#### Enhancements
+- [#736] Add new Sources to system so they can be selected
+	* Royal Flush
+	* Wasteland Wanderer: A Solo Roleplaying Game
+
+---
+
 # v11.16.6
 
 #### Bugs

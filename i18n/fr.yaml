@@ -46,7 +46,7 @@ FALLOUT.APP.SalvageJunk.start: Commencer la récupération
 FALLOUT.APP.SalvageJunk.time: Cela prendra {time}
 FALLOUT.APP.SalvageJunk.title: Récupération du Bric-à-brac
 FALLOUT.APPAREL_MOD.shadowed: Ombrées
-FALLOUT.APPAREL_MOD.type.legendary: Legendary
+FALLOUT.APPAREL_MOD.type.legendary: Légendaire
 FALLOUT.APPAREL_MOD.type.lining: Revêtement
 FALLOUT.APPAREL_MOD.type.material: Matériau
 FALLOUT.APPAREL_MOD.type.plating: Blindage
@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Ici, vous pouvez spécifier les tabl
 FALLOUT.Form.ScavengingCategoryTables.title: Tables de catégories par défaut
 FALLOUT.Form.ScavengingCompendium.hint: Si sélectionné, seuls les tables de lancer stockés dans le compendium spécifié seront disponibles pour la sélection en tant que sources de résultats de récupération.
 FALLOUT.Form.ScavengingCompendium.title: Compendium de récupération
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Paramètres de récupération
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: Vous ne pouvez sélectionner qu'un maximum de {maxChoices} de ce type d'objet.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Impossible de trouver des objets du bon type dans les compendiums disponibles.
@@ -408,11 +409,14 @@ FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
 FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
 FALLOUT.SOURCE_TITLE.mariposa_military_base: "NPC Pack #4 - Mariposa Military Base"
+FALLOUT.SOURCE_TITLE.new_vegas_guide: New Vegas Setting Guide
 FALLOUT.SOURCE_TITLE.quickstart: Démarrage rapide
 FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
+FALLOUT.SOURCE_TITLE.royal_flush: Royal Flush
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
 FALLOUT.SOURCE_TITLE.settlers_guide: Settler's Guide Book
 FALLOUT.SOURCE_TITLE.wanderers_guide: Wanderer's Guide Book
+FALLOUT.SOURCE_TITLE.wasteland_wanderer: "Wasteland Wanderer: A Solo Roleplaying Game"
 FALLOUT.SOURCE_TITLE.winter_of_atom: Winter of Atom
 FALLOUT.TEMPLATES.Abilities: Capacités
 FALLOUT.TEMPLATES.Add_Perk: Ajouter Aptitude

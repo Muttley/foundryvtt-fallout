@@ -231,6 +231,53 @@ export default class FalloutItem extends Item {
 			itemData.modSummary = await this._sheet.getWeaponModSummary(this);
 		}
 
+		if (itemData.isPerk) {
+			const requirements = this.system.requirementsEx ?? {};
+			const levels = [];
+			for (let i = 0; i < this.system.rank.max; i++) {
+				levels.push(requirements.level + (i * requirements.levelIncrease));
+			}
+			itemData.perkLevels = levels.join(", ");
+
+			const attributes = [];
+			for (const attr in requirements.attributes) {
+				if (requirements.attributes[attr].value > 0) {
+					attributes.push(`${attr} ${requirements.attributes[attr].value}`.toUpperCase());
+				}
+			}
+			itemData.attributes = attributes.join(", ");
+
+			const keys = [
+				"isCompanion",
+				"notGhoul",
+				"notHuman",
+				"notRadiationImmune",
+				"notRobot",
+				"notSupermutant",
+			];
+			const requiredBools = [];
+			for (const key of keys) {
+				if (requirements[key]) {
+					requiredBools.push(
+						game.i18n.localize(`FALLOUT.Item.Perk.${key}`)
+					);
+				}
+			}
+			itemData.requiredBools = requiredBools.join(", ");
+
+			const readMagazines = [];
+			for (const uuid of requirements.magazineUuids) {
+				const magazine = await fromUuid(uuid);
+				if (magazine) {
+					readMagazines.push(magazine.name);
+				}
+				else {
+					readMagazines.push("[MISSING MAGAZINE");
+				}
+			}
+			itemData.magazines = readMagazines.join(", ");
+		}
+
 		itemData.name = this.name;
 		itemData.showQuantity = showQuantity;
 		itemData.type = this.type;
@@ -252,15 +299,9 @@ export default class FalloutItem extends Item {
 		const html = await foundry.applications.handlebars.renderTemplate("systems/fallout/templates/chat/item.hbs", itemData);
 		const chatData = {
 			user: game.user.id,
-			rollMode: game.settings.get("core", "rollMode"),
 			content: html,
 		};
-		if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
-			chatData.whisper = ChatMessage.getWhisperRecipients("GM");
-		}
-		else if (chatData.rollMode === "selfroll") {
-			chatData.whisper = [game.user];
-		}
+		ChatMessage.applyMode(chatData, game.settings.get("core", "messageMode"));
 		ChatMessage.create(chatData);
 	}
 

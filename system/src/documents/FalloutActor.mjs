@@ -1434,7 +1434,7 @@ export default class FalloutActor extends Actor {
 									}
 								),
 							},
-							CONST.DICE_ROLL_MODES.PRIVATE
+							"gm"
 						);
 					}
 				}
@@ -1476,7 +1476,7 @@ export default class FalloutActor extends Actor {
 										}
 									),
 								},
-								CONST.DICE_ROLL_MODES.PRIVATE
+								"gm"
 							);
 						}
 						else {
@@ -1492,7 +1492,7 @@ export default class FalloutActor extends Actor {
 										}
 									),
 								},
-								CONST.DICE_ROLL_MODES.PRIVATE
+								"gm"
 							);
 						}
 					}
@@ -1556,7 +1556,7 @@ export default class FalloutActor extends Actor {
 									}
 								),
 							},
-							CONST.DICE_ROLL_MODES.PRIVATE
+							"gm"
 						);
 					}
 				}
@@ -1682,7 +1682,7 @@ export default class FalloutActor extends Actor {
 				? 0
 				: this.system.radiation + radsTaken;
 
-			if (newRadiation > 0) {
+			if (radsTaken > 0) {
 				actorUpdateData["system.radiation"] = newRadiation;
 
 				fallout.chat.renderGeneralMessage(
@@ -1696,7 +1696,7 @@ export default class FalloutActor extends Actor {
 							}
 						),
 					},
-					CONST.DICE_ROLL_MODES.PRIVATE
+					"gm"
 				);
 			}
 			else {
@@ -1708,11 +1708,10 @@ export default class FalloutActor extends Actor {
 							{
 								actorName: this.name,
 								baseRadDamage,
-								itemName: item.name,
 							}
 						),
 					},
-					CONST.DICE_ROLL_MODES.PRIVATE
+					"gm"
 				);
 			}
 		}
@@ -1914,7 +1913,7 @@ export default class FalloutActor extends Actor {
 
 			if (isAddicted) {
 				if (scenesRemaining <= 0) {
-					updateData[`system.chemDoses.-=${doseKey}`] = null;
+					updateData[`system.chemDoses.${doseKey}`] = foundry.data.operators.ForcedDeletion;
 				}
 				else {
 					dose.scenes = scenesRemaining;
@@ -1933,7 +1932,7 @@ export default class FalloutActor extends Actor {
 		const updateData = {};
 
 		for (const chemId in this.system.chemDoses) {
-			updateData[`system.chemDoses.-=${chemId}`] = null;
+			updateData[`system.chemDoses.${chemId}`] = foundry.data.operators.ForcedDeletion;
 		}
 
 		this.update(updateData);
@@ -1957,7 +1956,7 @@ export default class FalloutActor extends Actor {
 				title: game.i18n.localize("FALLOUT.AvailabilityRoll.result.title"),
 				body: game.i18n.format("FALLOUT.AvailabilityRoll.result.body", { rarity }),
 			},
-			CONST.DICE_ROLL_MODES.PRIVATE
+			"gm"
 		);
 	}
 

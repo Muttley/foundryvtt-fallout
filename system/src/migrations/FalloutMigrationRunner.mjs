@@ -115,6 +115,42 @@ export default class FalloutMigrationRunner {
 						{enforceTypes: false}
 					);
 				}
+
+				// Migrate token delta actor items in one update
+				if (delta) {
+					const deltaItems = delta.items.map(i => [i, true])
+						.concat(Array.from(delta.items.invalidDocumentIds).map(
+							id => [delta.items.getInvalid(id), false]
+						));
+
+					const deltaItemUpdates = [];
+
+					for (const [item, validItem] of deltaItems) {
+						const itemSource = validItem
+							? item.toObject()
+							: item._source;
+
+						const itemUpdateData = await this.currentMigrationTask.updateItem(
+							itemSource,
+							actorData
+						);
+
+						if (!foundry.utils.isEmpty(itemUpdateData)) {
+							deltaItemUpdates.push(
+								{_id: itemSource._id, ...itemUpdateData}
+							);
+						}
+					}
+
+					if (deltaItemUpdates.length > 0) {
+						fallout.log(`Migrating ${deltaItemUpdates.length} Token Delta Item(s) in Token "${token.name}"`);
+						await delta.updateEmbeddedDocuments(
+							"Item",
+							deltaItemUpdates,
+							{enforceTypes: false}
+						);
+					}
+				}
 			}
 			catch(err) {
 				err.message = `Failed system migration for Token "${token.name}": ${err.message}`;
@@ -259,7 +295,7 @@ export default class FalloutMigrationRunner {
 
 		// If this is a brand new world then we don't need to do any migrations.
 		//
-		if (game.world.playtime === 0) {
+		if (this.currentVersion === -1) {
 			fallout.log(`Setting new world schema version to ${this.latestVersion}`);
 
 			await game.settings.set(

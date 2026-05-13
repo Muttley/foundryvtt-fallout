@@ -182,14 +182,6 @@ export default class FalloutUtils {
 		return localizedName;
 	}
 
-	static getMessageStyles() {
-		const messageStyles = this.foundryMinVersion(12)
-			? CONST.CHAT_MESSAGE_STYLES
-			: CONST.CHAT_MESSAGE_TYPES;
-
-		return messageStyles;
-	}
-
 	static getPlayerCharacters() {
 		const characters = [];
 

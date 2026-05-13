@@ -189,11 +189,13 @@ export default class SalvageJunk extends FormApplication {
 		let chatData = {
 			content,
 			"flags.data": rollData,
-			"rollMode": game.settings.get("core", "rollMode"),
+			"speaker": {
+				actor: this.actor,
+			},
 			"user": game.user.id,
 		};
 
-		ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
+		ChatMessage.applyMode(chatData, game.settings.get("core", "messageMode"));
 
 		await ChatMessage.create(chatData);
 

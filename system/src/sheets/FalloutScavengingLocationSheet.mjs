@@ -285,7 +285,7 @@ export default class FalloutScavengingLocationSheet extends FalloutBaseActorShee
 					}
 				),
 			},
-			CONST.DICE_ROLL_MODES.PUBLIC
+			"public"
 		);
 	}
 
