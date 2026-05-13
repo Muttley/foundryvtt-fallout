@@ -194,9 +194,20 @@ export default class FalloutCompendiums {
 		if (compendiumId !== "") {
 			const compendium = game.packs.get(compendiumId);
 
-			let documents = await compendium.getIndex({fields: ["system"]});
+			if (compendium) {
+				let documents = await compendium.getIndex({fields: ["system"]});
 
-			return documents.contents;
+				return documents.contents;
+			}
+			else {
+				game.settings.set(SYSTEM_ID, "scavengingCompendium", "");
+
+				ui.notifications.error(
+					game.i18n.localize("FALLOUT.Form.ScavengingSettings.Error.MissingCompendium")
+				);
+
+				return this.rolltables();
+			}
 		}
 		else {
 			return this.rolltables();

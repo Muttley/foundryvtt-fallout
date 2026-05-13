@@ -6,6 +6,7 @@
 
 #### Bugs
 - [#733] Perks not showing Requirements in chat Cards
+- [#743] Can no longer edit Scavenging Settings after I deleted a rolltable
 - [#755] Consume Dirty Water macro doesn't show correct resisted message if needed
 
 #### Chores

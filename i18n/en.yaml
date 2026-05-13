@@ -223,6 +223,7 @@ FALLOUT.Form.ScavengingCategoryTables.hint: Here you can specify the default Rol
 FALLOUT.Form.ScavengingCategoryTables.title: Default Category Tables
 FALLOUT.Form.ScavengingCompendium.hint: If selected only RollTables stored in the specified compendium will be available for selection as Scavenging result sources.
 FALLOUT.Form.ScavengingCompendium.title: Scavenging Compendium
+FALLOUT.Form.ScavengingSettings.Error.MissingCompendium: Unable to load the configured Scavenging Compendium
 FALLOUT.Form.ScavengingSettings.title: Scavenging Settings
 FALLOUT.Form.SelectCompendiumItem.Error.MaxChoicesReached: You can only select a maximum of {maxChoices} of this Item type.
 FALLOUT.Form.SelectCompendiumItem.Error.NoItemsFound: Unable to find items of the correct type in the available compendiums.
