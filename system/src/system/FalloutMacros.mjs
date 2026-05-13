@@ -85,23 +85,25 @@ export default class FalloutMacros {
 		foundry.applications.handlebars.renderTemplate(
 			"systems/fallout/templates/dialogs/are-you-sure.hbs"
 		).then(html => {
-			new Dialog({
-				title: `${game.i18n.localize("FALLOUT.MACRO.DrinkDirtyWater.name")}`,
+			new foundry.applications.api.DialogV2({
+				window: {
+					title: `${game.i18n.localize("FALLOUT.MACRO.DrinkDirtyWater.name")}`,
+				},
 				content: html,
-				buttons: {
-					Yes: {
-						icon: '<i class="fa fa-check"></i>',
-						label: game.i18n.localize("FALLOUT.UI.Yes"),
-						callback: async () => {
-							actor.drinkDirtyWater();
-						},
-					},
-					Cancel: {
-						icon: '<i class="fa fa-times"></i>',
-						label: game.i18n.localize("FALLOUT.UI.Cancel"),
+				buttons: [{
+					action: "yes",
+					icon: "fa fa-check",
+					label: game.i18n.localize("FALLOUT.UI.Yes"),
+					default: true,
+					callback: async () => {
+						actor.drinkDirtyWater();
 					},
 				},
-				default: "Yes",
+				{
+					action: "cancel",
+					icon: "fa fa-times",
+					label: game.i18n.localize("FALLOUT.UI.Cancel"),
+				}],
 			}).render(true);
 		});
 	}

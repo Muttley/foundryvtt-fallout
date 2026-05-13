@@ -5,6 +5,7 @@
 - [#749] Add New Vegas Setting Guide as a new source
 
 #### Bugs
+- [#733] Perks not showing Requirements in chat Cards
 - [#755] Consume Dirty Water macro doesn't show correct resisted message if needed
 
 #### Chores

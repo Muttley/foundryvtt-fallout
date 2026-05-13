@@ -7,7 +7,15 @@
 	{{/if}}
 
 	<div class="item-name">
-		<h2 style="border-bottom: none;"><strong>{{name}}</strong></h2>
+		<h2 style="border-bottom: none;">
+			<strong>
+				{{name}}
+				{{#if isPerk}}
+					<br>
+					({{rank.value}}/{{rank.max}})
+				{{/if}}
+			</strong>
+		</h2>
 	</div>
 
 	{{#ifCond description '!==' ''}}
@@ -26,8 +34,43 @@
 
 	<!-- * PERK * -->
 	{{#if isPerk}}
-	<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Rank"}}: </strong>{{rank.value}}/{{rank.max}}</p>
-	<p><strong class="upperC">{{localize "FALLOUT.TEMPLATES.Requirements"}}: </strong>{{requirements}}</p>
+	<p>
+		<strong class="upperC underline">
+			{{localize "FALLOUT.TEMPLATES.Requirements"}}
+		</strong>
+		{{#if perkLevels}}
+			<p>
+				<strong class="upperC">
+					{{localize "FALLOUT.Item.Perk.level"}}:
+				</strong>
+				{{perkLevels}}
+			</p>
+		{{/if}}
+		{{#if attributes}}
+			<p>
+				<strong class="upperC">
+					{{localize "FALLOUT.TEMPLATES.Attributes"}}:
+				</strong>
+				{{attributes}}
+			</p>
+		{{/if}}
+		{{#if requiredBools}}
+			<p>
+				<strong class="upperC">
+					{{localize "FALLOUT.TEMPLATES.Status"}}:
+				</strong>
+				{{requiredBools}}
+			</p>
+		{{/if}}
+		{{#if magazines}}
+			<p>
+				<strong class="upperC">
+					{{localize "FALLOUT.Item.Perk.readMagazines"}}:
+				</strong>
+				{{magazines}}
+			</p>
+		{{/if}}
+	</p>
 	{{/if}}
 
 	<!-- * WEAPONS * -->
