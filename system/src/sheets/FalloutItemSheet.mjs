@@ -654,7 +654,7 @@ export default class FalloutItemSheet
 			const updateData = {};
 
 			let mod = this.item.system.mods[li.data("itemId")];
-			updateData[`system.mods.${mod._id}`] = foundry.data.operators.ForcedDeletion;
+			updateData[`system.mods.${mod._id}`] = _del;
 
 			await this.item.update(updateData);
 		});
