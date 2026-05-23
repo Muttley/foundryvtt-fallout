@@ -1,3 +1,13 @@
+# v11.17.1
+
+#### Bugs
+- [#759] Unable to delete mods from a weapon/apparel item page
+
+#### Chores
+- [#758] Merge new French translation updates from Crowdin
+
+---
+
 # v11.17.0
 
 #### Enhancements
