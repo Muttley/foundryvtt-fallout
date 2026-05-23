@@ -239,24 +239,24 @@ FALLOUT.Form.SourceFilters.title: Filtres sources
 FALLOUT.HEALTH.current: PV Actuels
 FALLOUT.HEALTH.health: Points de vie
 FALLOUT.HEALTH.max: PV Max
-FALLOUT.HitLocation.Arm1: Arm 1
-FALLOUT.HitLocation.Arm2: Arm 2
-FALLOUT.HitLocation.Arm3: Arm 3
-FALLOUT.HitLocation.Head: Head
-FALLOUT.HitLocation.LeftArm: Left Arm
+FALLOUT.HitLocation.Arm1: Bras 1
+FALLOUT.HitLocation.Arm2: Bras 2
+FALLOUT.HitLocation.Arm3: Bras 3
+FALLOUT.HitLocation.Head: Tête
+FALLOUT.HitLocation.LeftArm: Bras Gauche
 FALLOUT.HitLocation.LeftFrontLeg: Left Front Leg
 FALLOUT.HitLocation.LeftHindLeg: Left Hind Leg
 FALLOUT.HitLocation.LeftWing: Left Wing (as Leg)
 FALLOUT.HitLocation.Legs: Legs
-FALLOUT.HitLocation.MainBody: Main Body
-FALLOUT.HitLocation.Optics: Optics
-FALLOUT.HitLocation.RightArm: Right Arm
+FALLOUT.HitLocation.MainBody: Corps
+FALLOUT.HitLocation.Optics: Optique
+FALLOUT.HitLocation.RightArm: Bras droit
 FALLOUT.HitLocation.RightFrontLeg: Right Front Leg
 FALLOUT.HitLocation.RightHindLeg: Right Hind Leg
-FALLOUT.HitLocation.RightLeg: Right Leg
+FALLOUT.HitLocation.RightLeg: Jambe droite
 FALLOUT.HitLocation.RightWing: Right Wing (as Leg)
-FALLOUT.HitLocation.Torso: Torso
-FALLOUT.HitLocation.Wheel: Wheel
+FALLOUT.HitLocation.Torso: Torse
+FALLOUT.HitLocation.Wheel: Roue
 FALLOUT.Item.Origin.FixedTraits.label: Fixed Traits
 FALLOUT.Item.Origin.Traits.label: Origin Traits
 FALLOUT.Item.Origin.Traits.prompt: Select Trait...
@@ -454,7 +454,7 @@ FALLOUT.TEMPLATES.CONDITIONS: CONDITIONS
 FALLOUT.TEMPLATES.conditions.dehydrated: Déshydraté
 FALLOUT.TEMPLATES.conditions.exhausted: Epuisé
 FALLOUT.TEMPLATES.conditions.fatigue: fatigue
-FALLOUT.TEMPLATES.conditions.fuel: Fuel
+FALLOUT.TEMPLATES.conditions.fuel: Carburant
 FALLOUT.TEMPLATES.conditions.full: Repu
 FALLOUT.TEMPLATES.conditions.hunger: faim
 FALLOUT.TEMPLATES.conditions.hungry: Faim
