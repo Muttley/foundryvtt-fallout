@@ -46,7 +46,7 @@ FALLOUT.APP.SalvageJunk.start: Começar a Reciclar
 FALLOUT.APP.SalvageJunk.time: Isso levará {time}
 FALLOUT.APP.SalvageJunk.title: Reciclar Sucata
 FALLOUT.APPAREL_MOD.shadowed: Escurecido
-FALLOUT.APPAREL_MOD.type.legendary: Legendary
+FALLOUT.APPAREL_MOD.type.legendary:
 FALLOUT.APPAREL_MOD.type.lining: Forro
 FALLOUT.APPAREL_MOD.type.material: Material
 FALLOUT.APPAREL_MOD.type.plating: Chapeamento
